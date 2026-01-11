@@ -52,7 +52,7 @@ class CGraphicTextInstance
 		void SetVerticalAlign(int vAlign);
 		void SetMax(int iMax);
 		void SetTextPointer(CGraphicText* pText);
-		void SetValueString(const string& c_stValue);
+		void SetValueString(const std::string& c_stValue);
 		void SetValue(const char* c_szValue, size_t len = -1);
 		void SetPosition(float fx, float fy, float fz = 0.0f);
 		void SetSecret(bool Value);

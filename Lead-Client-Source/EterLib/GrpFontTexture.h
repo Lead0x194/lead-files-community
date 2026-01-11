@@ -10,7 +10,7 @@
 class CGraphicFontTexture : public CGraphicTexture
 {
 public:
-	typedef pair<WORD,wchar_t> TCharacterKey;
+	typedef std::pair<WORD,wchar_t> TCharacterKey;
 
 	typedef struct SCharacterInfomation
 	{

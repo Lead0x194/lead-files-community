@@ -31,12 +31,11 @@
 #include "ResourceManager.h"
 
 #include <math.h>
-using namespace std;
 
 ///////////////////////////////////////////////////////////////////////  
 //	Variables
 
-static string g_strFiles[] = 
+static std::string g_strFiles[] =
 {
 	"flare2.dds",
 	"flare1.dds",
@@ -293,7 +292,7 @@ void CLensFlare::DrawAfterFlare()
 ///////////////////////////////////////////////////////////////////////  
 //	CLensFlare::SetMainFlare
 
-void CLensFlare::SetMainFlare(string strSunFile, float fSunSize)
+void CLensFlare::SetMainFlare(std::string strSunFile, float fSunSize)
 {
 	if (m_bEnabled && m_bShowMainFlare)
 	{
@@ -512,7 +511,7 @@ void CFlare::Init(std::string strPath)
 
 	while (g_strFiles[i] != "")
 	{
-		CResource * pResource = CResourceManager::Instance().GetResourcePointer((strPath + "/" + string(g_strFiles[i])).c_str());
+		CResource * pResource = CResourceManager::Instance().GetResourcePointer((strPath + "/" + std::string(g_strFiles[i])).c_str());
 		
 		if (!pResource->IsType(CGraphicImage::Type()))
 			assert(false);

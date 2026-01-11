@@ -32,8 +32,6 @@
 //#include "../Common Source/Random.h"
 //#include "TextureLayers.h"
 
-using namespace std;
-
 #ifdef USE_SPEEDGRASS
 
 

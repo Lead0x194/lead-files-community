@@ -28,7 +28,7 @@ void stl_lowers(std::string& rstRet)
 		rstRet[i] = korean_tolower(rstRet[i]);
 }
 
-int split_string(const string& input, const string& delimiter, vector<string>& results, bool includeEmpties)
+int split_string(const std::string& input, const std::string& delimiter, std::vector<std::string>& results, bool includeEmpties)
 {
 	int iPos = 0;
 	int newPos = -1;
@@ -40,7 +40,7 @@ int split_string(const string& input, const string& delimiter, vector<string>& r
 		return 0;
 	}
 
-	vector<int> positions;
+	std::vector<int> positions;
 
 	newPos = input.find(delimiter, 0);
 
@@ -62,7 +62,7 @@ int split_string(const string& input, const string& delimiter, vector<string>& r
 
 	for (UINT i = 0; i <= positions.size(); ++i)
 	{
-		string s("");
+		std::string s("");
 		if (i == 0) 
 		{ 
 			s = input.substr(i, positions[i]); 

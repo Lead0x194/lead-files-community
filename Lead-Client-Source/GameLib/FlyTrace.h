@@ -19,7 +19,7 @@ class CFlyTrace : public CScreen
 		void __Initialize();
 
 	protected:
-		typedef pair<float, D3DXVECTOR3> TTimePosition;
+		typedef std::pair<float, D3DXVECTOR3> TTimePosition;
 		typedef std::deque<TTimePosition> TTimePositionDeque;
 
 		//CGraphicImageInstance m_ImageInstance;

@@ -34,8 +34,6 @@ inline float VecInterpolate(float fStart, float fEnd, float fPercent)
 #define VectorSinD(x)       sinf((x) / 57.29578f)
 #define VectorCosD(x)       cosf((x) / 57.29578f)
 
-using namespace std;
-
 // macros
 #ifndef max
 #define max(a, b)  (((a) > (b)) ? (a) : (b)) 

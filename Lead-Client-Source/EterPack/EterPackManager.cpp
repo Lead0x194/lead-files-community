@@ -461,7 +461,7 @@ void CEterPackManager::RetrieveHybridCryptPackKeys(const BYTE *pStream)
 		TEterPackMap::const_iterator cit;
 		for( cit = m_PackMap.begin(); cit != m_PackMap.end(); ++cit )
 		{
-			std::string noPathName = CFileNameHelper::NoPath(string(cit->first));
+			std::string noPathName = CFileNameHelper::NoPath(std::string(cit->first));
 			if( dwPackageNameHash == stringhash().GetHash(noPathName) )
 			{
 				EterPackPolicy_CSHybridCrypt* pCryptPolicy = cit->second->GetPackPolicy_HybridCrypt();
@@ -499,7 +499,7 @@ void CEterPackManager::RetrieveHybridCryptPackSDB( const BYTE* pStream )
 		TEterPackMap::const_iterator cit;
 		for( cit = m_PackMap.begin(); cit != m_PackMap.end(); ++cit )
 		{
-			std::string noPathName = CFileNameHelper::NoPath(string(cit->first));
+			std::string noPathName = CFileNameHelper::NoPath(std::string(cit->first));
 			if( dwPackgeIdentifier == stringhash().GetHash(noPathName) )
 			{
 				EterPackPolicy_CSHybridCrypt* pCryptPolicy = cit->second->GetPackPolicy_HybridCrypt();
@@ -563,7 +563,7 @@ void CEterPackManager::WriteHybridCryptPackInfo(const char* pFileName)
 
 		iKeyPackageCount++;
 
-		std::string noPathName = CFileNameHelper::NoPath(string(cit->first));
+		std::string noPathName = CFileNameHelper::NoPath(std::string(cit->first));
 
 		DWORD dwPackNamehash = stringhash().GetHash(noPathName);
 
@@ -587,7 +587,7 @@ void CEterPackManager::WriteHybridCryptPackInfo(const char* pFileName)
 
 		iSDBPackageCnt++;
 
-		std::string noPathName = CFileNameHelper::NoPath(string(cit->first));
+		std::string noPathName = CFileNameHelper::NoPath(std::string(cit->first));
 
 		DWORD dwPackNamehash = stringhash().GetHash(noPathName);
 		keyFile.Write( &dwPackNamehash, sizeof(DWORD) );

@@ -291,7 +291,7 @@ BOOL CEffectManager::SelectEffectInstance(DWORD dwInstanceIndex)
 	return TRUE;
 }
 
-void CEffectManager::SetEffectTextures(DWORD dwID,vector<string> textures)
+void CEffectManager::SetEffectTextures(DWORD dwID, std::vector<std::string> textures)
 {
 	CEffectData * pEffectData;
 	if (!GetEffectData(dwID, &pEffectData))

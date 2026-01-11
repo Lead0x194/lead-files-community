@@ -48,7 +48,7 @@ class CEffectManager : public CScreen, public CSingleton<CEffectManager>
 		bool DestroyEffectInstance(DWORD dwInstanceIndex);
 		void DeactiveEffectInstance(DWORD dwInstanceIndex);
 
-		void SetEffectTextures(DWORD dwID,vector<string> textures);
+		void SetEffectTextures(DWORD dwID, std::vector<std::string> textures);
 		void SetEffectInstancePosition(const D3DXVECTOR3 & c_rv3Position);
 		void SetEffectInstanceRotation(const D3DXVECTOR3 & c_rv3Rotation);
 		void SetEffectInstanceGlobalMatrix(const D3DXMATRIX & c_rmatGlobal);

@@ -1,0 +1,31 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="ERROR" enabled_by_default="true" editorAttributes="ERRORS_ATTRIBUTES">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="SCREEN_WIDTH" />
+          <option value="SCREEN_HEIGHT" />
+          <option value="X_SCALE" />
+          <option value="Y_SCALE" />
+          <option value="old_open" />
+          <option value="old_len" />
+          <option value="localeinfo.*" />
+          <option value="CHRACTER_NAME_MAX_LEN" />
+          <option value="Abort" />
+          <option value="LogBox" />
+          <option value="AppendChat" />
+          <option value="TraceError" />
+          <option value="NEW_PACK_FILE" />
+          <option value="__USE_EXTRA_CYTHON__" />
+          <option value="__USE_CYTHON__" />
+          <option value="__DEBUG__" />
+          <option value="__COMMAND_LINE__" />
+          <option value="CHARACTER_NAME_MAX_LEN" />
+          <option value="LOCALE_PATH" />
+          <option value="rootlib" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

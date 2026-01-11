@@ -71,7 +71,7 @@ bool CFlyingManager::RegisterFlyingData(const char* c_szFilename)
 		return false;
 	}
 
-	m_kMap_pkFlyData.insert(make_pair(dwRetCRC,pFlyingData));	
+	m_kMap_pkFlyData.insert(std::make_pair(dwRetCRC,pFlyingData));
 	return true;
 }
 
@@ -96,7 +96,7 @@ bool CFlyingManager::RegisterFlyingData(const char* c_szFilename, DWORD & r_dwRe
 		
 	}
 
-	m_kMap_pkFlyData.insert(make_pair(r_dwRetCRC,pFlyingData));
+	m_kMap_pkFlyData.insert(std::make_pair(r_dwRetCRC,pFlyingData));
 	return true;
 }
 
@@ -160,7 +160,7 @@ bool CFlyingManager::RegisterIndexedFlyData(DWORD dwIndex, BYTE byType, const ch
 	TIndexFlyData IndexFlyData;
 	IndexFlyData.byType = byType;
 	IndexFlyData.dwCRC = dwCRC;
-	m_kMap_dwIndexFlyData.insert(make_pair(dwIndex, IndexFlyData));
+	m_kMap_dwIndexFlyData.insert(std::make_pair(dwIndex, IndexFlyData));
 
 	return true;
 }

@@ -7,8 +7,6 @@
 #include <cctype>
 #include <cstdlib>
 
-using namespace std;
-
 double _random()
 {
     return rand() / (RAND_MAX + 1.0);
@@ -60,7 +58,7 @@ CPoly::~CPoly()
     Clear();
 }
 
-void CPoly::SetStr(const string & str)
+void CPoly::SetStr(const std::string & str)
 {
     strData = str;
 }
@@ -79,8 +77,8 @@ float CPoly::Eval()
     //TEST
     //list<int>::iterator pos = tokenBase.begin();
     //list<double>::iterator posn = numBase.begin();
-    vector<int>::iterator pos = tokenBase.begin();
-    vector<double>::iterator posn = numBase.begin();
+    std::vector<int>::iterator pos = tokenBase.begin();
+    std::vector<double>::iterator posn = numBase.begin();
     while (pos != tokenBase.end())
     {
 
@@ -355,7 +353,7 @@ int CPoly::lexan()
 	}
 	else if (isalpha(strData[uiLookPos]))
 	{
-	    string localSymbol("");
+	    std::string localSymbol("");
 	    while (uiLookPos<strData.size() && isalpha(strData[uiLookPos]))
 	    {
 		localSymbol+=strData[uiLookPos];
@@ -523,7 +521,7 @@ void CPoly::emit(int t, int tval)
     }
 }
 
-int CPoly::find(const string & s)
+int CPoly::find(const std::string & s)
 {
     int l, m, r;
 
@@ -544,7 +542,7 @@ int CPoly::find(const string & s)
     return -1;
 }
 
-int CPoly::insert(const string & s, int tok)
+int CPoly::insert(const std::string & s, int tok)
 {
     int i;
     bool bAdded=false;
@@ -568,7 +566,7 @@ int CPoly::insert(const string & s, int tok)
     return STSize-1;
 }
 
-int CPoly::SetVar(const string & strName, double dVar)
+int CPoly::SetVar(const std::string & strName, double dVar)
 {
 
     if (ErrorOccur) return false;

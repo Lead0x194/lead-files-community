@@ -96,7 +96,7 @@ const char* FindToken(const char* begin, const char* end)
 {
 	while(begin < end)
 	{
-		begin = find(begin, end, '@');
+		begin = std::find(begin, end, '@');
 
 		if(end-begin>5 && IsValidToken(begin))
 		{
@@ -1013,7 +1013,7 @@ void CGraphicTextInstance::SetLimitWidth(float fWidth)
 	m_fLimitWidth = fWidth;
 }
 
-void CGraphicTextInstance::SetValueString(const string& c_stValue)
+void CGraphicTextInstance::SetValueString(const std::string& c_stValue)
 {
 	if (0 == m_stText.compare(c_stValue))
 		return;

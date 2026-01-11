@@ -14,8 +14,6 @@
 #include "SpeedTreeConfig.h"
 #include <cfloat>
 
-using namespace std;
-
 ///////////////////////////////////////////////////////////////////////  
 //	CSpeedTreeForest constructor
 

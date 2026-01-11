@@ -148,7 +148,7 @@ CRaceData* CRaceManager::__LoadRaceData(DWORD dwRaceIndex)
 
 		stFullPathName+="/";
 
-		string stMSMFileName=stFullPathName;
+		std::string stMSMFileName=stFullPathName;
 		stMSMFileName+=c_rstRaceName;
 		stMSMFileName+=".msm";
 

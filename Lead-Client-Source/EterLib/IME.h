@@ -144,7 +144,7 @@ protected:
 
 	BOOL			m_bOnlyNumberMode;
 
-	vector<wchar_t>	m_exceptKey;
+	std::vector<wchar_t>	m_exceptKey;
 
 	bool			m_bEnablePaste;
 	bool			m_bUseDefaultIME;
@@ -187,7 +187,7 @@ public:
 	static bool				ms_bReadingInformation;
 	static int				ms_iReadingError;
 	static bool				ms_bHorizontalReading;
-	static vector<wchar_t>	ms_wstrReading;
+	static std::vector<wchar_t>	ms_wstrReading;
 
 	// Indicator
 	static 	wchar_t*		ms_wszCurrentIndicator;

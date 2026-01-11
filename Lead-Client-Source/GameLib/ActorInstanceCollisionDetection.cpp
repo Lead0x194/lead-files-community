@@ -310,7 +310,7 @@ BOOL CActorInstance::__SplashAttackProcess(CActorInstance & rVictim)
 	D3DXVECTOR3 v3HitPosition;
 	if (rVictim.CheckCollisionDetection(&m_kSplashArea.SphereInstanceVector, &v3HitPosition))
 	{
-		rHittedInstanceMap.insert(make_pair(&rVictim, GetLocalTime()+c_rAttackData.fInvisibleTime));
+		rHittedInstanceMap.insert(std::make_pair(&rVictim, GetLocalTime()+c_rAttackData.fInvisibleTime));
 
 		int iCurrentHitCount = rHittedInstanceMap.size();
 		int iMaxHitCount = (0 == c_rAttackData.iHitLimitCount ? 16 : c_rAttackData.iHitLimitCount);
@@ -423,15 +423,15 @@ BOOL CActorInstance::__NormalAttackProcess(CActorInstance & rVictim)
 						if (itHitData == m_HitDataMap.end())
 						{
 							THittedInstanceMap HittedInstanceMap;
-							HittedInstanceMap.insert(make_pair(&rVictim, GetLocalTime()+pad->fInvisibleTime));
+							HittedInstanceMap.insert(std::make_pair(&rVictim, GetLocalTime()+pad->fInvisibleTime));
 							//HittedInstanceMap.insert(make_pair(&rVictim, GetLocalTime()+HIT_COOL_TIME));
-							m_HitDataMap.insert(make_pair(&c_rHitData, HittedInstanceMap));
+							m_HitDataMap.insert(std::make_pair(&c_rHitData, HittedInstanceMap));
 
 							//Tracef(" ----------- First Hit\n");
 						}
 						else
 						{
-							itHitData->second.insert(make_pair(&rVictim, GetLocalTime()+pad->fInvisibleTime));
+							itHitData->second.insert(std::make_pair(&rVictim, GetLocalTime()+pad->fInvisibleTime));
 							//itHitData->second.insert(make_pair(&rVictim, GetLocalTime()+HIT_COOL_TIME));
 
 							//Tracef(" ----------- Next Hit : %d\n", itHitData->second.size());

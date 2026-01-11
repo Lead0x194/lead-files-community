@@ -291,7 +291,7 @@ bool PropertyDungeonBlockStringToData(CProperty * pProperty, TPropertyDungeonBlo
 		return false;
 
 	pData->strFileName = c_pszDungeonBlockFileName;
-	pData->strAttributeDataFileName = CFileNameHelper::NoExtension(pData->strFileName) + string(".mdatr");
+	pData->strAttributeDataFileName = CFileNameHelper::NoExtension(pData->strFileName) + std::string(".mdatr");
 
 	return true;
 }

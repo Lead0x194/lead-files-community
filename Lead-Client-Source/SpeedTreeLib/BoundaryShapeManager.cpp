@@ -27,8 +27,6 @@
 #include "../eterbase/Random.h"
 #include "BoundaryShapeManager.h"
 
-using namespace std;
-
 ///////////////////////////////////////////////////////////////////////  
 //	CBoundaryShapeManager::CBoundaryShapeManager
 CBoundaryShapeManager::CBoundaryShapeManager()
@@ -70,7 +68,7 @@ bool CBoundaryShapeManager::LoadBsfFile(const char* pszFilename)
 						for (unsigned int j = 0; j < nNumContours && bSuccess; ++j)
 						{
 							// number of points in this contour
-							vector<SPoint> vPoints;
+							std::vector<SPoint> vPoints;
 							unsigned int nNumPoints;
 							if (fread(&nNumPoints, sizeof(unsigned int), 1, pFile) == 1)
 							{
@@ -136,7 +134,7 @@ bool CBoundaryShapeManager::LoadBsfFile(const char* pszFilename)
 		}
 		else
 		{
-			m_strCurrentError = string("Error in CBoundaryShapeManager::LoadBsfFile(): Could not open ") + string(pszFilename);
+			m_strCurrentError = std::string("Error in CBoundaryShapeManager::LoadBsfFile(): Could not open ") + std::string(pszFilename);
 			bSuccess = false;
 		}
 	}
