@@ -47,7 +47,7 @@ void CGrannyModelInstance::UpdateTransform(D3DXMATRIX * pMatrix, float fSecondsE
 		TraceError("CGrannyModelIstance::UpdateTransform - m_pgrnModelInstance = NULL");
 		return;
 	}
-	GrannyUpdateModelMatrix(m_pgrnModelInstance, fSecondsElapsed, (const float *) pMatrix, (float *) pMatrix);
+	GrannyUpdateModelMatrix(m_pgrnModelInstance, fSecondsElapsed, (const float *) pMatrix, (float *) pMatrix, false);
 	//Tracef("%f %f %f",pMatrix->_41,pMatrix->_42,pMatrix->_43);
 	
 }
@@ -176,7 +176,7 @@ void CGrannyModelInstance::UpdateWorldMatrices(const D3DXMATRIX* c_pWorldMatrix)
 		const CGrannyMesh * pMesh = m_pModel->GetMeshPointer(i);
 
 		// WORK
-		int * boneIndices = __GetMeshBoneIndices(i);
+		const granny_int32x* boneIndices = __GetMeshBoneIndices(i);
 		// END_OF_WORK
 
 		if (pMesh->CanDeformPNTVertices())

@@ -50,7 +50,7 @@ class CGrannyMesh
 		int						GetVertexCount() const;
 		
 		// WORK
-		int *					GetDefaultBoneIndices() const;
+		const granny_int32x *					GetDefaultBoneIndices() const;
 		// END_OF_WORK
 
 		int						GetVertexBasePosition() const; 

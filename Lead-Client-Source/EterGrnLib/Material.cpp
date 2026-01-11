@@ -247,10 +247,11 @@ bool CGrannyMaterial::CreateFromGrannyMaterialPointer(granny_material * pgrnMate
 				{GrannyEndMember},
 			};
 
-			granny_variant twoSideResult = GrannyFindMatchingMember(pgrnMaterial->ExtendedData.Type, pgrnMaterial->ExtendedData.Object, "Two-sided");
+			granny_variant twoSideResult;
 
-			if (NULL != twoSideResult.Type)
-				GrannyConvertSingleObject(twoSideResult.Type, twoSideResult.Object, TwoSidedFieldType, &twoSided);
+			if (GrannyFindMatchingMember(pgrnMaterial->ExtendedData.Type, pgrnMaterial->ExtendedData.Object, "Two-sided", &twoSideResult)
+				&& twoSideResult.Type != nullptr)
+				GrannyConvertSingleObject(twoSideResult.Type, twoSideResult.Object, TwoSidedFieldType, &twoSided, nullptr);
 
 			m_bTwoSideRender = 1 == twoSided;
 		}

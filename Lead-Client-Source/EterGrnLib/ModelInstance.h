@@ -132,7 +132,7 @@ class CGrannyModelInstance : public CGraphicCollisionObject
 		bool	__CreateMeshBindingVector(CGrannyModelInstance* pkDstModelInst);
 		void	__DestroyMeshBindingVector();
 		
-		int*	__GetMeshBoneIndices(unsigned int iMeshBinding) const;		
+		const granny_int32x*	__GetMeshBoneIndices(unsigned int iMeshBinding) const;
 
 		bool	__IsDeformableVertexBuffer();
 		void	__SetSharedDeformableVertexBuffer(CGraphicVertexBuffer* pkSharedDeformableVertexBuffer);

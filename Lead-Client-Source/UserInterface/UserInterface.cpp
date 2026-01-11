@@ -691,9 +691,14 @@ Clean:
 
 static void GrannyError(granny_log_message_type Type,
 						granny_log_message_origin Origin,
+						char const *File,
+						granny_int32x Line,
 						char const *Error,
 						void *UserData)
 {
+	if (Origin == GrannyFileReadingLogMessage || Origin == GrannyControlLogMessage || Origin == GrannyMeshBindingLogMessage)
+		return;
+
     TraceError("GRANNY: %s", Error);
 }
 

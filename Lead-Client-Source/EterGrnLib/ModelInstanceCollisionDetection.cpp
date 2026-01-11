@@ -195,7 +195,7 @@ void CGrannyModelInstance::GetBoundBox(D3DXVECTOR3* vtMin, D3DXVECTOR3* vtMax)
 		const granny_mesh* pgrnMesh = m_pModel->GetGrannyModelPointer()->MeshBindings[m].Mesh;
 
 		// WORK
-		int* boneIndices = __GetMeshBoneIndices(m);
+		const granny_int32x* boneIndices = __GetMeshBoneIndices(m);
 		// END_OF_WORK
 		for (int b = 0; b < pgrnMesh->BoneBindingCount; ++b)
 		{
@@ -225,43 +225,3 @@ bool CGrannyModelInstance::GetMeshMatrixPointer(int iMesh, const D3DXMATRIX ** c
 
 	return true;
 }
-
-/*
-void CGraphicThingInstance::DrawBoundBox()
-{
-	if (!mc_pMeshVector)
-		return;
-
-	if (!m_pgrnWorldPose)
-		return;
-
-	D3DXVECTOR3 vtMin;
-	D3DXVECTOR3 vtMax;
-
-	SetDiffuseColor(0.0f, 1.0f, 0.0f);
-	// 캐릭터 꽉차는 바운딩 박스
-	//GetBoundBox(&vtMin, &vtMax);
-	//DrawLineCube(vtMin.x, vtMin.y, vtMin.z, vtMax.x, vtMax.y, vtMax.z);
-	//const CThing::TMeshVector& rmeshVector=mc_pModel->meshVector;    
-	ms_lpd3dMatStack->LoadMatrix(&m_Matrix);
-
-    for (size_t m=0; m<mc_pMeshVector->size(); ++m)
-    {
-        const CThing::TMesh& rmesh=mc_pMeshVector->at(m);
-
-		for (int b=0; b<rmesh.pgrnMesh->BoneBindingCount; ++b)
-		{
-			granny_bone_binding& rgrnBoneBinding=rmesh.pgrnMesh->BoneBindings[b];
-
-			int* toBoneIndices=GrannyGetMeshBindingToBoneIndices(rmesh.pgrnMeshBinding);
-
-			D3DXMATRIX* pmat=(D3DXMATRIX*)GrannyGetWorldPose4x4(m_pgrnWorldPose, toBoneIndices[b]);
-
-			D3DXVec3TransformCoord(&vtMin, &D3DXVECTOR3(rgrnBoneBinding.OBBMin), pmat);
-			D3DXVec3TransformCoord(&vtMax, &D3DXVECTOR3(rgrnBoneBinding.OBBMax), pmat);
-
-			DrawLineCube(vtMin.x, vtMin.y, vtMin.z, vtMax.x, vtMax.y, vtMax.z);
-		}		
-	}
-}
-*/
