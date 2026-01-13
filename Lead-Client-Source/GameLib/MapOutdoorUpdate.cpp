@@ -195,7 +195,11 @@ struct FPCBlockerDistanceSort
 
 	bool operator () (CGraphicObjectInstance * plhs, CGraphicObjectInstance * prhs) const
 	{
-		return D3DXVec3LengthSq(&(plhs->GetPosition() - m_v3Eye)) > D3DXVec3LengthSq(&(prhs->GetPosition() - m_v3Eye));
+		const D3DXVECTOR3 lhsVec = plhs->GetPosition() - m_v3Eye;
+		const D3DXVECTOR3 rhsVec = prhs->GetPosition() - m_v3Eye;
+
+		return D3DXVec3LengthSq(&lhsVec) > D3DXVec3LengthSq(&rhsVec);
+1
 	}
 };
 

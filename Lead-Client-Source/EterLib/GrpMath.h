@@ -77,22 +77,31 @@ inline D3DXQUATERNION RotationArc(const D3DXVECTOR3 & vFrom , const D3DXVECTOR3 
 	return RotationNormalizedArc(vnFrom, vnTo);
 }
 
-inline float square_distance_between_linesegment_and_point(const D3DXVECTOR3& p1,const D3DXVECTOR3& p2,const D3DXVECTOR3& x)
+inline float square_distance_between_linesegment_and_point(
+	const D3DXVECTOR3& p1,
+	const D3DXVECTOR3& p2,
+	const D3DXVECTOR3& x)
 {
-	float l = D3DXVec3LengthSq(&(p2-p1));
-	float d = D3DXVec3Dot(&(x-p1),&(p2-p1));
-	if (d<=0.0f)
+	D3DXVECTOR3 seg = p2 - p1;
+	D3DXVECTOR3 px  = x - p1;
+
+	const float l = D3DXVec3LengthSq(&seg);
+	const float d = D3DXVec3Dot(&px, &seg);
+
+	if (d <= 0.0f)
 	{
-		return D3DXVec3LengthSq(&(x-p1));
+		return D3DXVec3LengthSq(&px);
 	}
-	else if (d>=l)
+	else if (d >= l)
 	{
-		return D3DXVec3LengthSq(&(x-p2));
+		D3DXVECTOR3 xp2 = x - p2;
+		return D3DXVec3LengthSq(&xp2);
 	}
 	else
 	{
 		D3DXVECTOR3 c;
-		return D3DXVec3LengthSq(D3DXVec3Cross(&c,&(x-p1),&(p2-p1)))/l;
+		D3DXVec3Cross(&c, &px, &seg);
+		return D3DXVec3LengthSq(&c) / l;
 	}
 }
 
