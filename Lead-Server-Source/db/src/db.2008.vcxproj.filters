@@ -55,9 +55,6 @@
     <ClCompile Include="GuildManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HB.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ItemAwardManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -130,9 +127,6 @@
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="GuildManager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="HB.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="ItemAwardManager.h">
