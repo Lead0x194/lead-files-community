@@ -87,7 +87,7 @@ bool CDXTCImage::LoadFromFile(const char * filename)
 {
 	// only understands .dds files for now
 	// return true if success
-	char * exts[] = { ".DDS" };
+	const char * exts[] = { ".DDS" };
 	int next = 1;
 	
 	static char fileupper[MAX_PATH+1];
