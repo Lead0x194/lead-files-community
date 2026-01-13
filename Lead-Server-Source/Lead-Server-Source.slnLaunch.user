@@ -1,0 +1,27 @@
+[
+  {
+    "Name": "m2server",
+    "Projects": [
+      {
+        "Path": "db\\src\\db.2008.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "channel1_core1\\channel1_core1.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "channel1_core2\\channel1_core2.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "channel99\\channel99.vcxproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "auth\\auth.vcxproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
