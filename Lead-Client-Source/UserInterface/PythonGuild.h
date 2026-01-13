@@ -73,7 +73,7 @@ class CPythonGuild : public CSingleton<CPythonGuild>
 		void EnableGuild();
 		void SetGuildMoney(DWORD dwMoney);
 		void SetGuildEXP(BYTE byLevel, DWORD dwEXP);
-		void SetGradeData(BYTE byGradeNumber, TGuildGradeData & rGuildGradeData);
+		void SetGradeData(BYTE byGradeNumber, const TGuildGradeData & rGuildGradeData);
 		void SetGradeName(BYTE byGradeNumber, const char * c_szName);
 		void SetGradeAuthority(BYTE byGradeNumber, BYTE byAuthority);
 		void ClearComment();

@@ -1,11 +1,11 @@
 #include "StdAfx.h"
 #include "NetPacketHeaderMap.h"
 
-void CNetworkPacketHeaderMap::Set(int header, TPacketType & rPacketType)
+void CNetworkPacketHeaderMap::Set(int header, const TPacketType& rPacketType)
 {
 	m_headerMap[header] = rPacketType;
 }
-bool CNetworkPacketHeaderMap::Get(int header, TPacketType * pPacketType)
+bool CNetworkPacketHeaderMap::Get(int header, TPacketType* pPacketType)
 {
 	std::map<int, TPacketType>::iterator f=m_headerMap.find(header);
 	

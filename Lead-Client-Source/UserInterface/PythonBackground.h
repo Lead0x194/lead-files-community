@@ -166,7 +166,7 @@ private:
 	struct FFindWarpMapName
 	{
 		DWORD m_dwX, m_dwY;
-		FFindWarpMapName::FFindWarpMapName(DWORD dwX, DWORD dwY)
+		FFindWarpMapName(DWORD dwX, DWORD dwY)
 		{
 			m_dwX = dwX;
 			m_dwY = dwY;

@@ -42,7 +42,8 @@ void CCamera::ProcessTerrainCollision()
 	if (rPythonBackground.GetPickingPointWithRayOnlyTerrain(m_kCameraBottomToTerrainRay, &v3CollisionPoint))
 	{
 		SetCameraState(CAMERA_STATE_CANTGODOWN);
-		if (D3DXVec3Length(&(m_v3Eye - v3CollisionPoint)) < 2.0f * m_fTerrainCollisionRadius)
+		auto x = m_v3Eye - v3CollisionPoint;
+		if (D3DXVec3Length(&x) < 2.0f * m_fTerrainCollisionRadius)
 		{
 			D3DXVECTOR3 v3NewEye = v3CollisionPoint + 2.0f * m_fTerrainCollisionRadius * m_v3Up;
 			//printf("CameraBottomToTerrain new %f > old %f", v3NewEye.z, m_v3Eye.z);
@@ -165,7 +166,8 @@ void CCamera::ProcessBuildingCollision()
 			}
 			else
 			{
-				D3DXVec3Cross(&v3CheckVector, &(kVct_kPosition[0] - m_v3Eye), &m_v3View);
+				auto x = kVct_kPosition[0] - m_v3Eye;
+				D3DXVec3Cross(&v3CheckVector, &x, &m_v3View);
 				float fDot = D3DXVec3Dot(&v3CheckVector, &m_v3Up);
 				if (fDot < 0)
 				{
@@ -288,7 +290,8 @@ void CCamera::ProcessBuildingCollision()
 			}
 			else
 			{
-				D3DXVec3Cross(&v3CheckVector, &(kVct_kPosition[0] - m_v3Eye), &m_v3View);
+				auto x = kVct_kPosition[0] - m_v3Eye;
+				D3DXVec3Cross(&v3CheckVector, &x, &m_v3View);
 				float fDot = D3DXVec3Dot(&v3CheckVector, &m_v3Up);
 				if (fDot < 0)
 				{

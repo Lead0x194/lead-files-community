@@ -38,7 +38,8 @@ bool DetectCollisionDynamicZCylinderVSDynamicZCylinder(const CDynamicSphereInsta
 	IntersectLineSegments(c_rCylinder1.v3LastPosition, c_rCylinder1.v3Position,
 		c_rCylinder2.v3LastPosition, c_rCylinder2.v3Position,
 		vA, vB);
-	return (D3DXVec3LengthSq(&(vA-vB))<=rsq);
+	auto x = vA-vB;
+	return (D3DXVec3LengthSq(&x)<=rsq);
 }
 
 bool DetectCollisionDynamicSphereVSDynamicSphere(const CDynamicSphereInstance & c_rSphere1, const CDynamicSphereInstance & c_rSphere2)
@@ -142,7 +143,8 @@ bool DetectCollisionDynamicSphereVSDynamicSphere(const CDynamicSphereInstance & 
 	IntersectLineSegments(c_rSphere1.v3LastPosition, c_rSphere1.v3Position,
 		c_rSphere2.v3LastPosition, c_rSphere2.v3Position,
 		vA, vB);
-	return (D3DXVec3LengthSq(&(vA-vB))<=rsq);
+	auto x = vA-vB;
+	return (D3DXVec3LengthSq(&x)<=rsq);
 	//*/
 
 	/*

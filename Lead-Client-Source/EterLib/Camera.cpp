@@ -267,7 +267,8 @@ void CCamera::SetViewMatrix()
     D3DXVec3Cross(&m_v3Up, &m_v3View, &m_v3Cross);
 	D3DXVec3Normalize(&m_v3Up, &m_v3Up);
 
-	m_fPitch = D3DXVec3Dot(&m_v3Up, &D3DXVECTOR3(0.0f, 0.0f, 1.0f));// / D3DXVec2Length(&v2ViewYZ);
+	D3DXVECTOR3 d_3dxvector3(0.0f, 0.0f, 1.0f);
+	m_fPitch = D3DXVec3Dot(&m_v3Up, &d_3dxvector3);// / D3DXVec2Length(&v2ViewYZ);
 	if (m_fPitch >= 1)
 		m_fPitch = 1;
 	else if (m_fPitch <= -1)
@@ -302,22 +303,27 @@ void CCamera::SetViewMatrix()
 	m_kCameraBackToTerrainRay.SetDirection(-m_v3View, m_fTerrainCollisionRadius);
 	m_kCameraLeftToTerrainRay.SetDirection(-m_v3Cross, 3.0f * m_fTerrainCollisionRadius);
 	m_kCameraRightToTerrainRay.SetDirection(m_v3Cross, 3.0f * m_fTerrainCollisionRadius);
-	m_kTargetToCameraBottomRay.SetDirection(v3CenterRay - m_fTerrainCollisionRadius * m_v3Up,
-		D3DXVec3Length(&(v3CenterRay - m_fTerrainCollisionRadius * m_v3Up)));
+
+	auto v_3dir3 = v3CenterRay - m_fTerrainCollisionRadius * m_v3Up;
+	m_kTargetToCameraBottomRay.SetDirection(v_3dir3,
+	                                        D3DXVec3Length(&v_3dir3));
 
 	m_kLeftObjectCollisionRay.SetStartPoint(m_v3Target);
 	m_kTopObjectCollisionRay.SetStartPoint(m_v3Target);
 	m_kRightObjectCollisionRay.SetStartPoint(m_v3Target);
 	m_kBottomObjectCollisionRay.SetStartPoint(m_v3Target);
 
-	m_kLeftObjectCollisionRay.SetDirection(v3CenterRay + m_fObjectCollisionRadius * m_v3Cross,
-		D3DXVec3Length(&(v3CenterRay + m_fObjectCollisionRadius * m_v3Cross)));
-	m_kRightObjectCollisionRay.SetDirection(v3CenterRay - m_fObjectCollisionRadius * m_v3Cross,
-		D3DXVec3Length(&(v3CenterRay - m_fObjectCollisionRadius * m_v3Cross)));
-	m_kTopObjectCollisionRay.SetDirection(v3CenterRay + m_fObjectCollisionRadius * m_v3Up,
-		D3DXVec3Length(&(v3CenterRay + m_fObjectCollisionRadius * m_v3Up)));
+	auto v_3dir = v3CenterRay + m_fObjectCollisionRadius * m_v3Cross;
+	m_kLeftObjectCollisionRay.SetDirection(v_3dir,
+	                                       D3DXVec3Length(&v_3dir));
+	auto v_3dir1 = v3CenterRay - m_fObjectCollisionRadius * m_v3Cross;
+	m_kRightObjectCollisionRay.SetDirection(v_3dir1,
+	                                        D3DXVec3Length(&v_3dir1));
+	auto v_3dir2 = v3CenterRay + m_fObjectCollisionRadius * m_v3Up;
+	m_kTopObjectCollisionRay.SetDirection(v_3dir2,
+	                                      D3DXVec3Length(&v_3dir2));
 	m_kBottomObjectCollisionRay.SetDirection(v3CenterRay - m_fObjectCollisionRadius * m_v3Up,
-		D3DXVec3Length(&(v3CenterRay + m_fObjectCollisionRadius * m_v3Up)));
+		D3DXVec3Length(&v_3dir2));
 }
 
 void CCamera::Move(const D3DXVECTOR3 & v3Displacement)
@@ -482,8 +488,9 @@ void CCamera::RotateEyeAroundPoint(const D3DXVECTOR3 & v3Point, float fPitchDegr
 	D3DXVECTOR3 v3Temp = m_v3Eye - v3Point;
 	D3DXVec3TransformCoord(&m_v3Eye, &v3Temp, &matRot);
 	m_v3Eye += v3Point;
-	
-	D3DXVec3TransformCoord(&m_v3Up, &(v3Temp + m_v3Up), &matRot);
+
+	auto x = v3Temp + m_v3Up;
+	D3DXVec3TransformCoord(&m_v3Up, &x, &matRot);
 	m_v3Up -= (m_v3Eye - v3Point);
 	
 	v3Temp = m_v3Target - v3Point;
@@ -523,14 +530,16 @@ void CCamera::CalculateRoll()
 	v2ViewXY.x = m_v3View.x;
 	v2ViewXY.y = m_v3View.y;
  	D3DXVec2Normalize(&v2ViewXY, &v2ViewXY);
-	float fDot = D3DXVec2Dot(&v2ViewXY, &D3DXVECTOR2(0.0f, 1.0f));
+
+	D3DXVECTOR2 d_3dxvector2(0.0f, 1.0f);
+	float fDot = D3DXVec2Dot(&v2ViewXY, &d_3dxvector2);
 	if (fDot >= 1)
 		fDot = 1;
 	else if (fDot <= -1)
 		fDot = -1;
 	fDot = acosf(fDot);
 	fDot *= (180.0f / D3DX_PI);
-	float fCross = D3DXVec2CCW (&v2ViewXY, &D3DXVECTOR2(0.0f, 1.0f));
+	float fCross = D3DXVec2CCW (&v2ViewXY, &d_3dxvector2);
 	if ( 0 > fCross)
 	{
 		fDot = -fDot;

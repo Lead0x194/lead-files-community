@@ -253,13 +253,18 @@ bool CSphereCollisionInstance::OnCollisionDynamicSphere(const CDynamicSphereInst
 
 D3DXVECTOR3 CSphereCollisionInstance::OnGetCollisionMovementAdjust(const CDynamicSphereInstance & s) const
 {
-	if (D3DXVec3LengthSq(&(s.v3Position-m_attribute.v3Position))>=(s.fRadius+m_attribute.fRadius)*(m_attribute.fRadius+s.fRadius))
+	auto x = s.v3Position-m_attribute.v3Position;
+	if (D3DXVec3LengthSq(&x)>=(s.fRadius+m_attribute.fRadius)*(m_attribute.fRadius+s.fRadius))
 		return D3DXVECTOR3(0.0f,0.0f,0.0f);
+
 	D3DXVECTOR3 c;
-	D3DXVec3Cross(&c, &(s.v3Position-s.v3LastPosition), &D3DXVECTOR3(0.0f,0.0f,1.0f) );
+	auto x1 = s.v3Position-s.v3LastPosition;
+
+	D3DXVECTOR3 d_3dxvector3(0.0f,0.0f,1.0f);
+	D3DXVec3Cross(&c, &x1, &d_3dxvector3 );
 	
-	float sum = - D3DXVec3Dot(&c,&(s.v3Position-m_attribute.v3Position));
-	float mul = (s.fRadius+m_attribute.fRadius)*(s.fRadius+m_attribute.fRadius)-D3DXVec3LengthSq(&(s.v3Position-m_attribute.v3Position));
+	float sum = - D3DXVec3Dot(&c,&x);
+	float mul = (s.fRadius+m_attribute.fRadius)*(s.fRadius+m_attribute.fRadius)-D3DXVec3LengthSq(&x);
 
 	if (sum*sum-4*mul<=0)
 		return D3DXVECTOR3(0.0f,0.0f,0.0f);
@@ -304,8 +309,11 @@ const TPlaneData & CPlaneCollisionInstance::GetAttribute() const
 
 bool CPlaneCollisionInstance::OnMovementCollisionDynamicSphere(const CDynamicSphereInstance & s) const
 {
-	D3DXVECTOR3 v3SpherePosition = s.v3Position - m_attribute.v3Position;
-	D3DXVECTOR3 v3SphereLastPosition = s.v3LastPosition - m_attribute.v3Position;
+	auto pos = s.v3Position - m_attribute.v3Position;
+	auto lastPos = s.v3LastPosition - m_attribute.v3Position;
+
+	D3DXVECTOR3 v3SpherePosition = pos;
+	D3DXVECTOR3 v3SphereLastPosition = lastPos;
 
 	float fPosition1 = D3DXVec3Dot(&m_attribute.v3Normal, &v3SpherePosition);
 	float fPosition2 = D3DXVec3Dot(&m_attribute.v3Normal, &v3SphereLastPosition);
@@ -322,8 +330,8 @@ bool CPlaneCollisionInstance::OnMovementCollisionDynamicSphere(const CDynamicSph
 					if (D3DXVec3Dot(&v3QuadPosition2, &m_attribute.v3InsideVector[3]) > - s.fRadius/*0.0f*/)
 					{
 						// NOTE : 거리가 가까워 졌을때만.. - [levites]
-						if (fabs(D3DXVec3Dot(&(s.v3Position - m_attribute.v3Position), &m_attribute.v3Normal)) <
-							fabs(D3DXVec3Dot(&(s.v3LastPosition - m_attribute.v3Position), &m_attribute.v3Normal)))
+						if (fabs(D3DXVec3Dot(&pos, &m_attribute.v3Normal)) <
+							fabs(D3DXVec3Dot(&lastPos, &m_attribute.v3Normal)))
 							return true;
 					}
 	}
@@ -366,7 +374,9 @@ D3DXVECTOR3 CPlaneCollisionInstance::OnGetCollisionMovementAdjust(const CDynamic
 	float d = D3DXVec3Dot(&m_attribute.v3Normal, &advance);
 	if (d>=-0.0001 && d<=0.0001)
 		return D3DXVECTOR3(0.0f,0.0f,0.0f);
-	float t= - D3DXVec3Dot(&m_attribute.v3Normal, &(s.v3Position-m_attribute.v3Position))/d;
+
+	auto x = s.v3Position-m_attribute.v3Position;
+	float t= - D3DXVec3Dot(&m_attribute.v3Normal, &x)/d;
 
 	//D3DXVECTOR3 onplane = s.v3Position+t*advance;
 
@@ -464,7 +474,9 @@ bool CCylinderCollisionInstance::CollideCylinderVSDynamicSphere(const TCylinderD
 
 	D3DXVECTOR3 oa, ob;
 	IntersectLineSegments(c_rattribute.v3Position, D3DXVECTOR3(c_rattribute.v3Position.x,c_rattribute.v3Position.y,c_rattribute.v3Position.z+c_rattribute.fHeight), s.v3LastPosition, s.v3Position, oa, ob);
-	return (D3DXVec3LengthSq(&(oa-ob))<=(c_rattribute.fRadius+s.fRadius)*(c_rattribute.fRadius+s.fRadius));
+
+	auto x = oa-ob;
+	return (D3DXVec3LengthSq(&x)<=(c_rattribute.fRadius+s.fRadius)*(c_rattribute.fRadius+s.fRadius));
 }
 
 bool CCylinderCollisionInstance::OnMovementCollisionDynamicSphere(const CDynamicSphereInstance & s) const
@@ -515,15 +527,18 @@ D3DXVECTOR3 CCylinderCollisionInstance::OnGetCollisionMovementAdjust(const CDyna
 {
 	D3DXVECTOR3 v3Position = m_attribute.v3Position;
 	v3Position.z = s.v3Position.z;
-	if (D3DXVec3LengthSq(&(s.v3Position-v3Position))>=(s.fRadius+m_attribute.fRadius)*(m_attribute.fRadius+s.fRadius))
+	auto position = s.v3Position-v3Position;
+	if (D3DXVec3LengthSq(&position)>=(s.fRadius+m_attribute.fRadius)*(m_attribute.fRadius+s.fRadius))
 		return D3DXVECTOR3(0.0f,0.0f,0.0f);
 	D3DXVECTOR3 c;
 	D3DXVECTOR3 advance = s.v3Position - s.v3LastPosition;
 	advance.z = 0;
-	D3DXVec3Cross(&c, &advance, &D3DXVECTOR3(0.0f,0.0f,1.0f) );
+
+	D3DXVECTOR3 d_3dxvector3(0.0f,0.0f,1.0f);
+	D3DXVec3Cross(&c, &advance, &d_3dxvector3 );
 	
-	float sum = - D3DXVec3Dot(&c,&(s.v3Position-v3Position));
-	float mul = (s.fRadius+m_attribute.fRadius)*(s.fRadius+m_attribute.fRadius)-D3DXVec3LengthSq(&(s.v3Position-v3Position));
+	float sum = - D3DXVec3Dot(&c,&position);
+	float mul = (s.fRadius+m_attribute.fRadius)*(s.fRadius+m_attribute.fRadius)-D3DXVec3LengthSq(&position);
 
 	if (sum*sum-4*mul<=0)
 		return D3DXVECTOR3(0.0f,0.0f,0.0f);
@@ -703,8 +718,9 @@ D3DXVECTOR3 CAABBCollisionInstance::OnGetCollisionMovementAdjust(const CDynamicS
 	else if(s.v3Position.z + s.fRadius >= m_attribute.v3Min.z && s.v3Position.z + s.fRadius <= m_attribute.v3Max.z) { v3Temp.z = s.v3Position.z + s.fRadius; }
 	else																											{ v3Temp.z = s.v3Position.z - s.fRadius; }
 
-	
-	if(D3DXVec3LengthSq(&(v3Temp - s.v3Position)) < s.fRadius * s.fRadius)
+
+	auto x = v3Temp - s.v3Position;
+	if(D3DXVec3LengthSq(&x) < s.fRadius * s.fRadius)
 		return D3DXVECTOR3(.0f, .0f, .0f);
 	
 	return D3DXVECTOR3(.0f, .0f, .0f);

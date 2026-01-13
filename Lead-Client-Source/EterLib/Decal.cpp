@@ -54,7 +54,9 @@ void CDecal::ClipMesh(DWORD dwPrimitiveCount, const D3DXVECTOR3 *c_pv3Vertex, co
 		const D3DXVECTOR3 & v3_3 = c_pv3Vertex[3 * dwi + 2];
 		
 		D3DXVECTOR3 v3Cross;
-		D3DXVec3Cross(&v3Cross, &(v3_2 - v3_1), &(v3_3 - v3_1));
+		auto x = v3_2 - v3_1;
+		auto y = v3_3 - v3_1;
+		D3DXVec3Cross(&v3Cross, &x, &y);
 		if (D3DXVec3Dot(&m_v3Normal, &v3Cross) > ( m_cfDecalEpsilon ) * D3DXVec3Length(&v3Cross))
 		{
 			v3NewVertex[0] = v3_1;

@@ -63,7 +63,7 @@ ViewState Frustum::ViewVolumeTest(const Vector3d &c_v3Center,const float c_fRadi
 	return VS_INSIDE;
 }
 
-void Frustum::BuildViewFrustum(D3DXMATRIX & mat)
+void Frustum::BuildViewFrustum(const D3DXMATRIX & mat)
 {
 	m_bUsingSphere = false;
 	m_plane[0] = D3DXPLANE(          mat._13,           mat._23,           mat._33,           mat._43);
@@ -78,7 +78,7 @@ void Frustum::BuildViewFrustum(D3DXMATRIX & mat)
 		D3DXPlaneNormalize(&m_plane[i],&m_plane[i]);
 }
 
-void Frustum::BuildViewFrustum2(D3DXMATRIX & mat, float fNear, float fFar, float fFov, float fAspect, const D3DXVECTOR3 & vCamera, const D3DXVECTOR3 & vLook)
+void Frustum::BuildViewFrustum2(const D3DXMATRIX & mat, float fNear, float fFar, float fFov, float fAspect, const D3DXVECTOR3 & vCamera, const D3DXVECTOR3 & vLook)
 {
 	float fViewLen = fFar-fNear;
 	float fH = fViewLen * tan(fFov*0.5f);

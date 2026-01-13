@@ -927,6 +927,7 @@
     <ClInclude Include="XTrapManager.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="check_server.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="any_function.inc">

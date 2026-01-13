@@ -524,7 +524,10 @@ bool CMapOutdoor::GetPickingPointWithRay(const CRay & rRay, D3DXVECTOR3 * v3Inte
 	
 	if (bObjectPick && bTerrainPick)
 	{
-		if ( D3DXVec3Length( &(v3ObjectPick - v3Start) ) >= D3DXVec3Length( &(v3TerrainPick - v3Start) ) )
+		auto x = v3ObjectPick - v3Start;
+		auto y = v3TerrainPick - v3Start;
+
+		if ( D3DXVec3Length( &x ) >= D3DXVec3Length( &y ) )
 			*v3IntersectPt = v3TerrainPick;
 		else
 			*v3IntersectPt = v3ObjectPick;

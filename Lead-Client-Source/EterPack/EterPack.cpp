@@ -19,7 +19,6 @@
 #include <cryptopp/whrlpool.h>
 #include <cryptopp/panama.h>
 
-#include <cryptopp/cryptoppLibLink.h>
 #pragma warning(pop)
 
 #include "../EterBase/utils.h"
@@ -589,10 +588,11 @@ bool CEterPack::Get(CMappedFile& out_file, const char * filename, LPCVOID * data
 #ifdef __THEMIDA__
 		VM_START
 #endif
-	
+
+		auto stFilename = std::string(filename);
 		CLZObject * zObj = new CLZObject;
 
-		if( !m_pCSHybridCryptPolicy->DecryptMemory(std::string(filename), static_cast<const BYTE*>(*data), index->data_size, *zObj) )
+		if( !m_pCSHybridCryptPolicy->DecryptMemory(stFilename, static_cast<const BYTE*>(*data), index->data_size, *zObj) )
 		{
 			return false;
 		}
@@ -603,7 +603,7 @@ bool CEterPack::Get(CMappedFile& out_file, const char * filename, LPCVOID * data
 			BYTE* pSDBData;
 			int   iSDBSize;
 
-			if( !m_pCSHybridCryptPolicy->GetSupplementaryDataBlock(std::string(filename), pSDBData, iSDBSize) )
+			if( !m_pCSHybridCryptPolicy->GetSupplementaryDataBlock(stFilename, pSDBData, iSDBSize) )
 			{
 				return false;
 			}
@@ -703,9 +703,10 @@ bool CEterPack::Get2(CMappedFile& out_file, const char * filename, TEterPackInde
 		VM_START
 #endif
 
+		auto stFilename = std::string(filename);
 		CLZObject * zObj = new CLZObject;
 
-		if( !m_pCSHybridCryptPolicy->DecryptMemory(std::string(filename), static_cast<const BYTE*>(*data), index->data_size, *zObj) )
+		if( !m_pCSHybridCryptPolicy->DecryptMemory(stFilename, static_cast<const BYTE*>(*data), index->data_size, *zObj) )
 		{
 			return false;
 		}
@@ -717,7 +718,7 @@ bool CEterPack::Get2(CMappedFile& out_file, const char * filename, TEterPackInde
 			BYTE* pSDBData;
 			int   iSDBSize;
 			
-			if( !m_pCSHybridCryptPolicy->GetSupplementaryDataBlock(std::string(filename), pSDBData, iSDBSize) )
+			if( !m_pCSHybridCryptPolicy->GetSupplementaryDataBlock(stFilename, pSDBData, iSDBSize) )
 			{
 				return false;
 			}
@@ -814,7 +815,8 @@ bool CEterPack::Extract()
 #ifdef __THEMIDA__
 			VM_START
 #endif
-			if( !m_pCSHybridCryptPolicy->DecryptMemory(std::string(index->filename), (const BYTE *) data + index->data_position, index->data_size, zObj) )
+			auto stFilename = std::string(index->filename);
+			if( !m_pCSHybridCryptPolicy->DecryptMemory(stFilename, (const BYTE *) data + index->data_position, index->data_size, zObj) )
 				return false;
 
 			if( COMPRESSED_TYPE_HYBRIDCRYPT_WITHSDB == index->compressed_type)
@@ -824,7 +826,7 @@ bool CEterPack::Extract()
 				BYTE* pSDBData;
 				int   iSDBSize;
 
-				if( !m_pCSHybridCryptPolicy->GetSupplementaryDataBlock(std::string(index->filename), pSDBData, iSDBSize) )
+				if( !m_pCSHybridCryptPolicy->GetSupplementaryDataBlock(stFilename, pSDBData, iSDBSize) )
 					return false;
 
 				dataMapFile.AppendDataBlock( pSDBData, iSDBSize );
@@ -890,16 +892,18 @@ bool CEterPack::Put(const char * filename, const char * sourceFilename, BYTE pac
 	BYTE*  pMappedData    = (BYTE*)data;
 	int	   iMappedDataSize = mapFile.Size();
 
+	auto stFilename = std::string(filename);
+
 	if( packType == COMPRESSED_TYPE_HYBRIDCRYPT || packType == COMPRESSED_TYPE_HYBRIDCRYPT_WITHSDB )
 	{
 #ifdef __THEMIDA__
 		VM_START
 #endif
-		m_pCSHybridCryptPolicy->GenerateCryptKey( std::string(filename) );
+		m_pCSHybridCryptPolicy->GenerateCryptKey(stFilename);
 
 		if( packType == COMPRESSED_TYPE_HYBRIDCRYPT_WITHSDB )
 		{
-			if( !m_pCSHybridCryptPolicy->GenerateSupplementaryDataBlock( std::string(filename), strRelateMapName, (const BYTE*)data, mapFile.Size(), pMappedData, iMappedDataSize ))
+			if( !m_pCSHybridCryptPolicy->GenerateSupplementaryDataBlock(stFilename, strRelateMapName, (const BYTE*)data, mapFile.Size(), pMappedData, iMappedDataSize ))
 			{
 				return false;
 			}
@@ -999,7 +1003,8 @@ bool CEterPack::Put(const char * filename, LPCVOID data, long len, BYTE packType
 		VM_START
 #endif
 
-		if( !m_pCSHybridCryptPolicy->EncryptMemory( std::string(filename), (const BYTE *)data, len, zObj ) )
+		auto stFilename = std::string(filename);
+		if( !m_pCSHybridCryptPolicy->EncryptMemory(stFilename, (const BYTE *)data, len, zObj ) )
 		{
 			return false;
 		}

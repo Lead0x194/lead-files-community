@@ -254,7 +254,8 @@ void CMapOutdoor::SetInverseViewAndDynamicShaodwMatrices()
 						   v3Target.y - 1250.0f,
 						   v3Target.z + 2.0f * 1.732f * 1250.0f);
 
-	D3DXMatrixLookAtRH(&m_matLightView, &v3LightEye, &v3Target, &D3DXVECTOR3(0.0f, 0.0f, 1.0f));
+	D3DXVECTOR3 d_3dxvector3(0.0f, 0.0f, 1.0f);
+	D3DXMatrixLookAtRH(&m_matLightView, &v3LightEye, &v3Target, &d_3dxvector3);
 	m_matDynamicShadow = m_matViewInverse * m_matLightView * m_matDynamicShadowScale;
 }
 
@@ -359,7 +360,9 @@ struct CMapOutdoor_LessThingInstancePtrRenderOrder
 		const D3DXVECTOR3 & c_v3LeftPos  = pkLeft->GetPosition();
 		const D3DXVECTOR3 & c_v3RightPos = pkRight->GetPosition();
 
-		return D3DXVec3LengthSq(&D3DXVECTOR3(c_rv3CameraPos - c_v3LeftPos)) < D3DXVec3LengthSq(&D3DXVECTOR3(c_rv3CameraPos - c_v3RightPos) );	
+		auto d_3dxvector3 = D3DXVECTOR3(c_rv3CameraPos - c_v3LeftPos);
+		auto d_3dxvector4 = D3DXVECTOR3(c_rv3CameraPos - c_v3RightPos);
+		return D3DXVec3LengthSq(&d_3dxvector3) < D3DXVec3LengthSq(&d_3dxvector4 );
 	}
 };
 

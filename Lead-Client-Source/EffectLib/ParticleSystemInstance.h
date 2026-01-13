@@ -21,7 +21,7 @@ class CParticleSystemInstance : public CEffectElementBaseInstance
 
 	public:
 		template <typename T>
-		inline void ForEachParticleRendering(const T& FunObj)
+		inline void ForEachParticleRendering(T& FunObj)
 		{
 			DWORD dwFrameIndex;
 			for(dwFrameIndex=0; dwFrameIndex<m_kVct_pkImgInst.size(); dwFrameIndex++)

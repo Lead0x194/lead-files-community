@@ -199,7 +199,6 @@ struct FPCBlockerDistanceSort
 		const D3DXVECTOR3 rhsVec = prhs->GetPosition() - m_v3Eye;
 
 		return D3DXVec3LengthSq(&lhsVec) > D3DXVec3LengthSq(&rhsVec);
-1
 	}
 };
 

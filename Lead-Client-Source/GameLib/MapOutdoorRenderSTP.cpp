@@ -538,10 +538,12 @@ void CMapOutdoor::__SoftwareTransformPatch_BuildPipeline(SoftwareTransformPatch_
 	rkTPRS.m_m4DynamicShadow = m_matLightView * m_matDynamicShadowScale;
 
 	D3DXVECTOR3 kFogNearVector;
-	D3DXVec3TransformCoord(&kFogNearVector, &D3DXVECTOR3(0.0f, 0.0f, -rkTPRS.m_fFogNearDistance), &rkTPRS.m_m4Proj);
+	D3DXVECTOR3 d_3dxvector4(0.0f, 0.0f, -rkTPRS.m_fFogNearDistance);
+	D3DXVec3TransformCoord(&kFogNearVector, &d_3dxvector4, &rkTPRS.m_m4Proj);
 
 	D3DXVECTOR3 kFogFarVector;
-	D3DXVec3TransformCoord(&kFogFarVector, &D3DXVECTOR3(0.0f, 0.0f, -rkTPRS.m_fFogFarDistance), &rkTPRS.m_m4Proj);
+	D3DXVECTOR3 d_3dxvector3(0.0f, 0.0f, -rkTPRS.m_fFogFarDistance);
+	D3DXVec3TransformCoord(&kFogFarVector, &d_3dxvector3, &rkTPRS.m_m4Proj);
 	
 	float fFogNear = kFogNearVector.z;
 	float fFogFar = kFogFarVector.z;

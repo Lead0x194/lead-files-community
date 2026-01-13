@@ -387,11 +387,13 @@ bool CWeaponTrace::SetWeaponInstance(CGraphicThingInstance * pInstance, DWORD dw
 	pInstance->GetBoneMatrix(dwModelIndex, 0, &pmat);
 	D3DXVECTOR3 v3Bone(pmat->_41,pmat->_42,pmat->_43);
 
-	m_fLength = 
+	auto x = v3Bone-v3Min;
+	auto y = v3Bone-v3Max;
+	m_fLength =
 		sqrtf(
 			fMAX(
-				D3DXVec3LengthSq(&(v3Bone-v3Min)),
-				D3DXVec3LengthSq(&(v3Bone-v3Max))
+				D3DXVec3LengthSq(&x),
+				D3DXVec3LengthSq(&y)
 				)
 			); 
 

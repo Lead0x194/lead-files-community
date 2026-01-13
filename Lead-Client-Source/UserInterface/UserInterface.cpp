@@ -45,7 +45,6 @@ volatile int _AVOID_FLOATING_POINT_LIBRARY_BUG = _fltused;
 #pragma comment( lib, "dmoguids.lib" )
 //#pragma comment( lib, "wsock32.lib" )
 #include <stdlib.h>
-#include <cryptopp/cryptoppLibLink.h>
 bool __IS_TEST_SERVER_MODE__=false;
 
 extern bool SetDefaultCodePage(DWORD codePage);

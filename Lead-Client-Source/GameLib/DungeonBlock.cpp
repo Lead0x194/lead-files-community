@@ -158,7 +158,9 @@ void CDungeonBlock::BuildBoundingSphere()
 	for_each(m_ModelInstanceContainer.begin(), m_ModelInstanceContainer.end(), FBoundBox(&v3Min, &v3Max));
 
 	m_v3Center = (v3Min+v3Max) * 0.5f;
-	m_fRadius = D3DXVec3Length(&(v3Max-v3Min))*0.5f + 150.0f; // extra length for attached objects
+
+	auto x = v3Max-v3Min;
+	m_fRadius = D3DXVec3Length(&x)*0.5f + 150.0f; // extra length for attached objects
 }
 
 bool CDungeonBlock::Intersect(float * pfu, float * pfv, float * pft)

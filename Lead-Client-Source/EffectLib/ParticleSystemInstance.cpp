@@ -310,7 +310,8 @@ bool CParticleSystemInstance::OnUpdate(float fElapsedTime)
 	
 	if (fAngularVelocity && !m_pParticleProperty->m_bAttachFlag)
 	{
-		D3DXVec3TransformNormal(&m_pParticleProperty->m_v3ZAxis,&D3DXVECTOR3(0.0f,0.0f,1.0f),mc_pmatLocal);
+		auto vec = D3DXVECTOR3(0.0f, 0.0f, 1.0f);
+		D3DXVec3TransformNormal(&m_pParticleProperty->m_v3ZAxis,&vec,mc_pmatLocal);
 	}
 
 	for (dwFrameIndex = 0; dwFrameIndex < dwFrameCount; dwFrameIndex++)
@@ -424,33 +425,39 @@ void CParticleSystemInstance::OnRender()
 	{
 		if (!m_pParticleProperty->m_bAttachFlag)
 		{
-			ForEachParticleRendering(NParticleRenderer::NormalRenderer());
+			auto func = NParticleRenderer::NormalRenderer();
+			ForEachParticleRendering(func);
 		}
 		else
 		{
-			ForEachParticleRendering(NParticleRenderer::AttachRenderer(mc_pmatLocal));
+			auto func = NParticleRenderer::AttachRenderer(mc_pmatLocal);
+			ForEachParticleRendering(func);
 		}
 	}
 	else if (m_pParticleProperty->m_byBillboardType == BILLBOARD_TYPE_2FACE)
 	{
 		if (!m_pParticleProperty->m_bAttachFlag)
 		{
-			ForEachParticleRendering(NParticleRenderer::TwoSideRenderer());
+			auto func = NParticleRenderer::TwoSideRenderer();
+			ForEachParticleRendering(func);
 		}
 		else
 		{
-			ForEachParticleRendering(NParticleRenderer::TwoSideRenderer(mc_pmatLocal));
+			auto func = NParticleRenderer::TwoSideRenderer(mc_pmatLocal);
+			ForEachParticleRendering(func);
 		}
 	}
 	else if (m_pParticleProperty->m_byBillboardType == BILLBOARD_TYPE_3FACE)
 	{
 		if (!m_pParticleProperty->m_bAttachFlag)
 		{
-			ForEachParticleRendering(NParticleRenderer::ThreeSideRenderer());
+			auto func = NParticleRenderer::ThreeSideRenderer();
+			ForEachParticleRendering(func);
 		}
 		else
 		{
-			ForEachParticleRendering(NParticleRenderer::ThreeSideRenderer(mc_pmatLocal));
+			auto func = NParticleRenderer::ThreeSideRenderer(mc_pmatLocal);
+			ForEachParticleRendering(func);
 		}
 	}
 }

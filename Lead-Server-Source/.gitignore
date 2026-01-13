@@ -16,6 +16,9 @@ UpgradeLog.htm
 /game/game_d.*
 /game/src/quest/qc.exe
 
+# Ignore installed dependencies
+vcpkg_installed
+
 # Generated log files
 /**/packet_info.txt
 /**/p2p_packet_info.txt

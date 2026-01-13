@@ -149,7 +149,8 @@ void CFlyingInstance::AdjustDirectionForHoming(const D3DXVECTOR3 & v3TargetPosit
 	D3DXVECTOR3 vVel;
 	D3DXVec3Normalize(&vVel, &m_v3Velocity);
 
-	if (D3DXVec3LengthSq(&(vVel - vTargetDir)) < 0.001f)
+	auto x = vVel - vTargetDir;
+	if (D3DXVec3LengthSq(&x) < 0.001f)
 		return;
 	
 	D3DXQUATERNION q = SafeRotationNormalizedArc(vVel,vTargetDir);
@@ -579,8 +580,11 @@ void CFlyingInstance::__SetDataPointer(CFlyingData * pData, const D3DXVECTOR3 & 
 	if (pData->m_bSpreading)
 	{
 		D3DXQUATERNION q1, q2;
-		D3DXQuaternionRotationAxis(&q2, &D3DXVECTOR3(0.0f,0.0f,1.0f),(frandom(-3.141592f/3,+3.141592f/3)+frandom(-3.141592f/3,+3.141592f/3))/2);
-		D3DXQuaternionRotationAxis(&q1, &D3DXVECTOR3(0.0f,-1.0f,0.0f), frandom(0,2*3.1415926535897931f));
+		D3DXVECTOR3 d_3dxvector3(0.0f,0.0f,1.0f);
+		D3DXQuaternionRotationAxis(&q2, &d_3dxvector3,(frandom(-3.141592f/3,+3.141592f/3)+frandom(-3.141592f/3,+3.141592f/3))/2);
+
+		D3DXVECTOR3 d_3dxvector4(0.0f,-1.0f,0.0f);
+		D3DXQuaternionRotationAxis(&q1, &d_3dxvector4, frandom(0,2*3.1415926535897931f));
 		D3DXQuaternionMultiply(&q1,&q2,&q1);
 		D3DXQuaternionMultiply(&m_qRot,&q1,&m_qRot);
 	}

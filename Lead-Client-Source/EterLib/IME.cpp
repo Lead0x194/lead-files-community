@@ -687,7 +687,7 @@ void CIME::FinalizeString(bool bSend)
 	if (ms_bUILessMode)
 	{
 		// For some reason ImmNotifyIME doesn't work on DaYi and Array CHT IMEs. Cancel composition string by setting zero-length string.
-		ImmSetCompositionStringW(himc, SCS_SETSTR, L"", sizeof(wchar_t), L"", sizeof(wchar_t));
+		ImmSetCompositionStringW(himc, SCS_SETSTR, nullptr, sizeof(wchar_t), nullptr, sizeof(wchar_t));
 	}
 	// the following line is necessary as Korean IME doesn't close cand list when comp string is cancelled.
 	ImmNotifyIME( himc, NI_CLOSECANDIDATE, 0, 0 );	

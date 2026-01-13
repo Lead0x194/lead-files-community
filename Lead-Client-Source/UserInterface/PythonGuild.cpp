@@ -21,7 +21,7 @@ void CPythonGuild::SetGuildEXP(BYTE byLevel, DWORD dwEXP)
 	m_GuildInfo.dwCurrentExperience = dwEXP;
 }
 
-void CPythonGuild::SetGradeData(BYTE byGradeNumber, TGuildGradeData & rGuildGradeData)
+void CPythonGuild::SetGradeData(BYTE byGradeNumber, const TGuildGradeData & rGuildGradeData)
 {
 	m_GradeDataMap[byGradeNumber] = rGuildGradeData;
 }

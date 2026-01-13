@@ -21,7 +21,7 @@ class CNetworkPacketHeaderMap
 		CNetworkPacketHeaderMap();
 		virtual ~CNetworkPacketHeaderMap();
 
-		void Set(int header, TPacketType & rPacketType);
+		void Set(int header, const TPacketType& rPacketType);
 		bool Get(int header, TPacketType * pPacketType);
 
 	protected:

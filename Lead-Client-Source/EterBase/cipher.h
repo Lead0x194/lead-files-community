@@ -32,7 +32,7 @@ class Cipher {
     if (!activated_) {
       return;
     }
-    encoder_->ProcessData((byte*)buffer, (const byte*)buffer, length);
+    encoder_->ProcessData((CryptoPP::byte*)buffer, (const CryptoPP::byte*)buffer, length);
   }
   // Decrypts the given block of data. (no padding required)
   void Decrypt(void* buffer, size_t length) {
@@ -40,7 +40,7 @@ class Cipher {
     if (!activated_) {
       return;
     }
-    decoder_->ProcessData((byte*)buffer, (const byte*)buffer, length);
+    decoder_->ProcessData((CryptoPP::byte*)buffer, (const CryptoPP::byte*)buffer, length);
   }
 
   bool activated() const { return activated_; }

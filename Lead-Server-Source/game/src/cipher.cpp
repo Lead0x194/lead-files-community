@@ -29,9 +29,6 @@
 #include <cryptopp/shacal2.h>
 #include <cryptopp/skipjack.h>
 #include <cryptopp/tea.h>
-#include <cryptopp/cryptoppLibLink.h>
-
-using namespace CryptoPP;
 
 // Block cipher algorithm selector abstract base class.
 struct BlockCipherAlgorithm {
@@ -67,10 +64,10 @@ struct BlockCipherAlgorithm {
   virtual int GetDefaultKeyLength() const = 0;
   virtual int GetIVLength() const = 0;
 
-  virtual SymmetricCipher* CreateEncoder(const byte* key, size_t keylen,
-                                         const byte* iv) const = 0;
-  virtual SymmetricCipher* CreateDecoder(const byte* key, size_t keylen,
-                                         const byte* iv) const = 0;
+  virtual CryptoPP::SymmetricCipher* CreateEncoder(const CryptoPP::byte* key, size_t keylen,
+                                         const CryptoPP::byte* iv) const = 0;
+  virtual CryptoPP::SymmetricCipher* CreateDecoder(const CryptoPP::byte* key, size_t keylen,
+                                         const CryptoPP::byte* iv) const = 0;
 };
 
 // Block cipher (with CTR mode) algorithm selector template class.
@@ -83,13 +80,13 @@ struct BlockCipherDetail : public BlockCipherAlgorithm {
   virtual int GetDefaultKeyLength() const { return T::DEFAULT_KEYLENGTH; }
   virtual int GetIVLength() const { return T::IV_LENGTH; }
 
-  virtual SymmetricCipher* CreateEncoder(const byte* key, size_t keylen,
-                                         const byte* iv) const {
-    return new typename CTR_Mode<T>::Encryption(key, keylen, iv);
+  virtual CryptoPP::SymmetricCipher* CreateEncoder(const CryptoPP::byte* key, size_t keylen,
+                                         const CryptoPP::byte* iv) const {
+    return new typename CryptoPP::CTR_Mode<T>::Encryption(key, keylen, iv);
   }
-  virtual SymmetricCipher* CreateDecoder(const byte* key, size_t keylen,
-                                         const byte* iv) const {
-    return new typename CTR_Mode<T>::Decryption(key, keylen, iv);
+  virtual CryptoPP::SymmetricCipher* CreateDecoder(const CryptoPP::byte* key, size_t keylen,
+                                         const CryptoPP::byte* iv) const {
+    return new typename CryptoPP::CTR_Mode<T>::Decryption(key, keylen, iv);
   }
 };
 
@@ -102,10 +99,10 @@ class KeyAgreement {
   virtual size_t Prepare(void* buffer, size_t* length) = 0;
   virtual bool Agree(size_t agreed_length, const void* buffer, size_t length) = 0;
 
-  const SecByteBlock& shared() const { return shared_; }
+  const CryptoPP::SecByteBlock& shared() const { return shared_; }
 
  protected:
-  SecByteBlock shared_;
+  CryptoPP::SecByteBlock shared_;
 };
 
 // Crypto++ Unified Diffie-Hellman key agreement scheme implementation.
@@ -118,10 +115,10 @@ class DH2KeyAgreement : public KeyAgreement {
   virtual bool Agree(size_t agreed_length, const void* buffer, size_t length);
 
  private:
-  DH dh_;
-  DH2 dh2_;
-  SecByteBlock spriv_key_;
-  SecByteBlock epriv_key_;
+  CryptoPP::DH dh_;
+  CryptoPP::DH2 dh2_;
+  CryptoPP::SecByteBlock spriv_key_;
+  CryptoPP::SecByteBlock epriv_key_;
 };
 
 Cipher::Cipher()
@@ -179,7 +176,7 @@ bool Cipher::Activate(bool polarity, size_t agreed_length,
 
 bool Cipher::SetUp(bool polarity) {
   assert(key_agreement_ != NULL);
-  const SecByteBlock& shared = key_agreement_->shared();
+  const CryptoPP::SecByteBlock& shared = key_agreement_->shared();
 
   // Pick a block cipher algorithm
 
@@ -208,8 +205,8 @@ bool Cipher::SetUp(bool polarity) {
 
   // Pick encryption keys and initial vectors
 
-  SecByteBlock key_0(key_length_0), iv_0(iv_length_0);
-  SecByteBlock key_1(key_length_1), iv_1(iv_length_1);
+  CryptoPP::SecByteBlock key_0(key_length_0), iv_0(iv_length_0);
+  CryptoPP::SecByteBlock key_1(key_length_1), iv_1(iv_length_1);
 
   size_t offset;
 
@@ -249,50 +246,50 @@ BlockCipherAlgorithm* BlockCipherAlgorithm::Pick(int hint) {
 //      detail = new BlockCipherDetail<AES>();
       break;
     case kRC6:
-      detail = new BlockCipherDetail<RC6>();
+      detail = new BlockCipherDetail<CryptoPP::RC6>();
       break;
     case kMARS:
-      detail = new BlockCipherDetail<MARS>();
+      detail = new BlockCipherDetail<CryptoPP::MARS>();
       break;
     case kTwofish:
-      detail = new BlockCipherDetail<Twofish>();
+      detail = new BlockCipherDetail<CryptoPP::Twofish>();
       break;
     case kSerpent:
-      detail = new BlockCipherDetail<Serpent>();
+      detail = new BlockCipherDetail<CryptoPP::Serpent>();
       break;
     case kCAST256:
-      detail = new BlockCipherDetail<CAST256>();
+      detail = new BlockCipherDetail<CryptoPP::CAST256>();
       break;
     case kIDEA:
-      detail = new BlockCipherDetail<IDEA>();
+      detail = new BlockCipherDetail<CryptoPP::IDEA>();
       break;
     case k3DES:
-      detail = new BlockCipherDetail<DES_EDE2>();
+      detail = new BlockCipherDetail<CryptoPP::DES_EDE2>();
       break;
     case kCamellia:
-      detail = new BlockCipherDetail<Camellia>();
+      detail = new BlockCipherDetail<CryptoPP::Camellia>();
       break;
     case kSEED:
-      detail = new BlockCipherDetail<SEED>();
+      detail = new BlockCipherDetail<CryptoPP::SEED>();
       break;
     case kRC5:
-      detail = new BlockCipherDetail<RC5>();
+      detail = new BlockCipherDetail<CryptoPP::RC5>();
       break;
     case kBlowfish:
-      detail = new BlockCipherDetail<Blowfish>();
+      detail = new BlockCipherDetail<CryptoPP::Blowfish>();
       break;
     case kTEA:
-      detail = new BlockCipherDetail<TEA>();
+      detail = new BlockCipherDetail<CryptoPP::TEA>();
       break;
 //    case kSKIPJACK:
 //      detail = new BlockCipherDetail<SKIPJACK>();
 //      break;
     case kSHACAL2:
-      detail = new BlockCipherDetail<SHACAL2>();
+      detail = new BlockCipherDetail<CryptoPP::SHACAL2>();
       break;
     case kDefault:
     default:
-      detail = new BlockCipherDetail<Twofish>(); // default algorithm
+      detail = new BlockCipherDetail<CryptoPP::Twofish>(); // default algorithm
       break;
   }
   return detail;
@@ -307,21 +304,21 @@ DH2KeyAgreement::~DH2KeyAgreement() {
 size_t DH2KeyAgreement::Prepare(void* buffer, size_t* length) {
   // RFC 5114, 1024-bit MODP Group with 160-bit Prime Order Subgroup
   // http://tools.ietf.org/html/rfc5114#section-2.1
-  Integer p("0xB10B8F96A080E01DDE92DE5EAE5D54EC52C99FBCFB06A3C6"
+  CryptoPP::Integer p("0xB10B8F96A080E01DDE92DE5EAE5D54EC52C99FBCFB06A3C6"
     "9A6A9DCA52D23B616073E28675A23D189838EF1E2EE652C0"
     "13ECB4AEA906112324975C3CD49B83BFACCBDD7D90C4BD70"
     "98488E9C219A73724EFFD6FAE5644738FAA31A4FF55BCCC0"
     "A151AF5F0DC8B4BD45BF37DF365C1A65E68CFDA76D4DA708"
     "DF1FB2BC2E4A4371");
 
-  Integer g("0xA4D1CBD5C3FD34126765A442EFB99905F8104DD258AC507F"
+  CryptoPP::Integer g("0xA4D1CBD5C3FD34126765A442EFB99905F8104DD258AC507F"
     "D6406CFF14266D31266FEA1E5C41564B777E690F5504F213"
     "160217B4B01B886A5E91547F9E2749F4D7FBD7D3B9A92EE1"
     "909D0D2263F80A76A6A24C087A091F531DBF0A0169B6A28A"
     "D662A4D18E73AFA32D779D5918D08BC8858F4DCEF97C2A24"
     "855E6EEB22B3B2E5");
 
-  Integer q("0xF518AA8781A8DF278ABA4E7D64B7CB9D49462353");
+  CryptoPP::Integer q("0xF518AA8781A8DF278ABA4E7D64B7CB9D49462353");
 
   // Schnorr Group primes are of the form p = rq + 1, p and q prime. They
   // provide a subgroup order. In the case of 1024-bit MODP Group, the
@@ -331,7 +328,7 @@ size_t DH2KeyAgreement::Prepare(void* buffer, size_t* length) {
   // dh-unified.zip. Also see http://www.cryptopp.com/wiki/Diffie-Hellman
   // and http://www.cryptopp.com/wiki/Security_level .
 
-  AutoSeededRandomPool rnd;
+  CryptoPP::AutoSeededRandomPool rnd;
 
   dh_.AccessGroupParameters().Initialize(p, q, g);
 
@@ -345,8 +342,8 @@ size_t DH2KeyAgreement::Prepare(void* buffer, size_t* length) {
   g = dh_.GetGroupParameters().GetGenerator();
 
   // http://groups.google.com/group/sci.crypt/browse_thread/thread/7dc7eeb04a09f0ce
-  Integer v = ModularExponentiation(g, q, p);
-  if(v != Integer::One()) {
+  CryptoPP::Integer v = ModularExponentiation(g, q, p);
+  if(v != CryptoPP::Integer::One()) {
     // Failed to verify order of the subgroup
     return 0;
   }
@@ -355,8 +352,8 @@ size_t DH2KeyAgreement::Prepare(void* buffer, size_t* length) {
 
   spriv_key_.New(dh2_.StaticPrivateKeyLength());
   epriv_key_.New(dh2_.EphemeralPrivateKeyLength());
-  SecByteBlock spub_key(dh2_.StaticPublicKeyLength());
-  SecByteBlock epub_key(dh2_.EphemeralPublicKeyLength());
+  CryptoPP::SecByteBlock spub_key(dh2_.StaticPublicKeyLength());
+  CryptoPP::SecByteBlock epub_key(dh2_.EphemeralPublicKeyLength());
 
   dh2_.GenerateStaticKeyPair(rnd, spriv_key_, spub_key);
   dh2_.GenerateEphemeralKeyPair(rnd, epriv_key_, epub_key);
@@ -370,7 +367,7 @@ size_t DH2KeyAgreement::Prepare(void* buffer, size_t* length) {
     return 0;
   }
   *length = data_length;
-  byte* buf = (byte*)buffer;
+  CryptoPP::byte* buf = (CryptoPP::byte*)buffer;
   memcpy(buf, spub_key.BytePtr(), spub_key_length);
   memcpy(buf + spub_key_length, epub_key.BytePtr(), epub_key_length);
 
@@ -389,7 +386,7 @@ bool DH2KeyAgreement::Agree(size_t agreed_length, const void* buffer, size_t len
     return false;
   }
   shared_.New(dh2_.AgreedValueLength());
-  const byte* buf = (const byte*)buffer;
+  const CryptoPP::byte* buf = (const CryptoPP::byte*)buffer;
   if (!dh2_.Agree(shared_, spriv_key_, epriv_key_, buf, buf + spub_key_length)) {
     // Failed to reach shared secret
     return false;
