@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../eterBase/Debug.h"
+#include <algorithm>
 
 //#define DYNAMIC_POOL_STRICT
 
