@@ -503,7 +503,7 @@ void CActorInstance::UseTextureWeaponTrace()
 	for_each(
 			m_WeaponTraceVector.begin(),
 			m_WeaponTraceVector.end(),
-			std::void_mem_fun(&CWeaponTrace::UseTexture)
+			std::mem_fn(&CWeaponTrace::UseTexture)
 			);
 }
 
@@ -512,7 +512,7 @@ void CActorInstance::UseAlphaWeaponTrace()
 	for_each(
 			m_WeaponTraceVector.begin(),
 			m_WeaponTraceVector.end(),
-			std::void_mem_fun(&CWeaponTrace::UseAlpha)
+			std::mem_fn(&CWeaponTrace::UseAlpha)
 			);
 }
 

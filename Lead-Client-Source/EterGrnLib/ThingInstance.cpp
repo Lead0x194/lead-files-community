@@ -53,7 +53,7 @@ void CGraphicThingInstance::Delete(CGraphicThingInstance* pkThingInst)
 
 void CGraphicThingInstance::SetMotionAtEnd()
 {
-	std::for_each(m_LODControllerVector.begin(), m_LODControllerVector.end(), std::void_mem_fun(&CGrannyLODController::SetMotionAtEnd));	
+	std::for_each(m_LODControllerVector.begin(), m_LODControllerVector.end(), std::mem_fn(&CGrannyLODController::SetMotionAtEnd));
 }
 
 bool CGraphicThingInstance::Picking(const D3DXVECTOR3 & v, const D3DXVECTOR3 & dir, float & out_x, float & out_y)

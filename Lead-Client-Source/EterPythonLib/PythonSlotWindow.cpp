@@ -986,7 +986,7 @@ void CSlotWindow::OnRender()
 			break;
 	}
 
-	std::for_each(m_pChildList.begin(), m_pChildList.end(), std::void_mem_fun(&CWindow::OnRender));
+	std::for_each(m_pChildList.begin(), m_pChildList.end(), std::mem_fn(&CWindow::OnRender));
 
 	TSlotListIterator itor;
 

@@ -141,7 +141,7 @@ void CFlyingManager::Update()
 
 void CFlyingManager::Render()
 {
-	std::for_each(m_kLst_pkFlyInst.begin(), m_kLst_pkFlyInst.end(), std::void_mem_fun(&CFlyingInstance::Render));
+	std::for_each(m_kLst_pkFlyInst.begin(), m_kLst_pkFlyInst.end(), std::mem_fn(&CFlyingInstance::Render));
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////

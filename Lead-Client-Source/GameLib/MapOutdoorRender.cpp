@@ -518,7 +518,7 @@ void CMapOutdoor::RenderArea(bool bRenderAmbience)
 	// Shadow Receiver
 	if (m_bDrawShadow && m_bDrawChrShadow)
 	{
-		std::for_each(m_ShadowReceiverVector.begin(), m_ShadowReceiverVector.end(), std::void_mem_fun(&CGraphicObjectInstance::Show));
+		std::for_each(m_ShadowReceiverVector.begin(), m_ShadowReceiverVector.end(), std::mem_fn(&CGraphicObjectInstance::Show));
 	}
 #endif
 }

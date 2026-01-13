@@ -108,8 +108,8 @@ void CEffectInstance::OnRender()
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAARG2, D3DTA_TEXTURE);
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAOP,   D3DTOP_MODULATE);
 	STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_TEX1);
-	std::for_each(m_ParticleInstanceVector.begin(),m_ParticleInstanceVector.end(),std::void_mem_fun(&CEffectElementBaseInstance::Render));
-	std::for_each(m_MeshInstanceVector.begin(),m_MeshInstanceVector.end(),std::void_mem_fun(&CEffectElementBaseInstance::Render));
+	std::for_each(m_ParticleInstanceVector.begin(),m_ParticleInstanceVector.end(),std::mem_fn(&CEffectElementBaseInstance::Render));
+	std::for_each(m_MeshInstanceVector.begin(),m_MeshInstanceVector.end(),std::mem_fn(&CEffectElementBaseInstance::Render));
 
 	/////
 	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MINFILTER);
@@ -139,15 +139,15 @@ void CEffectInstance::SetActive()
 	std::for_each(
 		m_ParticleInstanceVector.begin(),
 		m_ParticleInstanceVector.end(),
-		std::void_mem_fun(&CEffectElementBaseInstance::SetActive));
+		std::mem_fn(&CEffectElementBaseInstance::SetActive));
 	std::for_each(
 		m_MeshInstanceVector.begin(),
 		m_MeshInstanceVector.end(),
-		std::void_mem_fun(&CEffectElementBaseInstance::SetActive));
+		std::mem_fn(&CEffectElementBaseInstance::SetActive));
 	std::for_each(
 		m_LightInstanceVector.begin(),
 		m_LightInstanceVector.end(),
-		std::void_mem_fun(&CEffectElementBaseInstance::SetActive));
+		std::mem_fn(&CEffectElementBaseInstance::SetActive));
 }
 
 void CEffectInstance::SetDeactive()
@@ -155,15 +155,15 @@ void CEffectInstance::SetDeactive()
 	std::for_each(
 		m_ParticleInstanceVector.begin(),
 		m_ParticleInstanceVector.end(),
-		std::void_mem_fun(&CEffectElementBaseInstance::SetDeactive));
+		std::mem_fn(&CEffectElementBaseInstance::SetDeactive));
 	std::for_each(
 		m_MeshInstanceVector.begin(),
 		m_MeshInstanceVector.end(),
-		std::void_mem_fun(&CEffectElementBaseInstance::SetDeactive));
+		std::mem_fn(&CEffectElementBaseInstance::SetDeactive));
 	std::for_each(
 		m_LightInstanceVector.begin(),
 		m_LightInstanceVector.end(),
-		std::void_mem_fun(&CEffectElementBaseInstance::SetDeactive));
+		std::mem_fn(&CEffectElementBaseInstance::SetDeactive));
 }
 
 void CEffectInstance::__SetParticleData(CParticleSystemData * pData)

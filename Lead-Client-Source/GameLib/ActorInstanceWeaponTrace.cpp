@@ -19,7 +19,7 @@ void CActorInstance::TraceProcess()
 
 void CActorInstance::RenderTrace()
 {
-	for_each(m_WeaponTraceVector.begin(), m_WeaponTraceVector.end(), std::void_mem_fun(&CWeaponTrace::Render));
+	for_each(m_WeaponTraceVector.begin(), m_WeaponTraceVector.end(), std::mem_fn(&CWeaponTrace::Render));
 }
 
 void CActorInstance::__DestroyWeaponTrace()
@@ -30,11 +30,11 @@ void CActorInstance::__DestroyWeaponTrace()
 
 void CActorInstance::__ShowWeaponTrace()
 {
-	for_each(m_WeaponTraceVector.begin(), m_WeaponTraceVector.end(), std::void_mem_fun(&CWeaponTrace::TurnOn));
+	for_each(m_WeaponTraceVector.begin(), m_WeaponTraceVector.end(), std::mem_fn(&CWeaponTrace::TurnOn));
 }
 
 void CActorInstance::__HideWeaponTrace()
 {
-	for_each(m_WeaponTraceVector.begin(), m_WeaponTraceVector.end(), std::void_mem_fun(&CWeaponTrace::TurnOff));
+	for_each(m_WeaponTraceVector.begin(), m_WeaponTraceVector.end(), std::mem_fn(&CWeaponTrace::TurnOff));
 }
 
