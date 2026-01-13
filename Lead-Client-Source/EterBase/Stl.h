@@ -29,58 +29,6 @@ extern std::string& stl_static_string(const char* c_sz);
 extern void stl_lowers(std::string& rstRet);
 extern int split_string(const std::string & input, const std::string & delimiter, std::vector<std::string>& results, bool includeEmpties);
 
-namespace std
-{
-	template <class _Ty>
-	class void_mem_fun_t
-		: public unary_function<_Ty *, void> {
-	public:
-		explicit void_mem_fun_t(void (_Ty::*_Pm)())
-			: _Ptr(_Pm) {}
-		void operator()(_Ty *_P) const
-		{((_P->*_Ptr)()); }
-	private:
-		void (_Ty::*_Ptr)();
-		};
-	template<class _Ty> inline
-	void_mem_fun_t<_Ty> void_mem_fun(void (_Ty::*_Pm)())
-	{return (void_mem_fun_t<_Ty>(_Pm)); }
-
-	template<class _Ty>
-	class void_mem_fun_ref_t : public unary_function<_Ty, void> {
-	public:
-		explicit void_mem_fun_ref_t(void (_Ty::*_Pm)())
-			: _Ptr(_Pm) {}
-		void operator()(_Ty& _X) const
-		{return ((_X.*_Ptr)()); }
-	private:
-		void (_Ty::*_Ptr)();
-	};
-
-	template<class _Ty> inline
-	void_mem_fun_ref_t<_Ty> void_mem_fun_ref(void (_Ty::*_Pm)())
-	{return (void_mem_fun_ref_t< _Ty>(_Pm)); }
-
-
-		// TEMPLATE CLASS mem_fun1_t
-template<class _R, class _Ty, class _A>
-	class void_mem_fun1_t : public binary_function<_Ty *, _A, _R> {
-public:
-	explicit void_mem_fun1_t(_R (_Ty::*_Pm)(_A))
-		: _Ptr(_Pm) {}
-	_R operator()(_Ty *_P, _A _Arg) const
-		{return ((_P->*_Ptr)(_Arg)); }
-private:
-	_R (_Ty::*_Ptr)(_A);
-	};
-		// TEMPLATE FUNCTION mem_fun1
-template<class _R, class _Ty, class _A> inline
-	void_mem_fun1_t<_R, _Ty, _A> void_mem_fun1(_R (_Ty::*_Pm)(_A))
-	{return (void_mem_fun1_t<_R, _Ty, _A>(_Pm)); }
-
-
-}
-
 struct stl_sz_less
 {
 	bool operator() (char * const & left, char * const & right) const
