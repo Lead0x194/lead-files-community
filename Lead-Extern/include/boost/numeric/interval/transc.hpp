@@ -1,7 +1,7 @@
 /* Boost interval/transc.hpp template implementation file
  *
  * Copyright 2000 Jens Maurer
- * Copyright 2002 Hervé Brönnimann, Guillaume Melquiond, Sylvain Pion
+ * Copyright 2002 HervÃ© BrÃ¶nnimann, Guillaume Melquiond, Sylvain Pion
  *
  * Distributed under the Boost Software License, Version 1.0.
  * (See accompanying file LICENSE_1_0.txt or
@@ -176,7 +176,7 @@ interval<T, Policies> cosh(const interval<T, Policies>& x)
   else if (!interval_lib::user::is_neg(x.lower()))
     return I(rnd.cosh_down(x.lower()), rnd.cosh_up(x.upper()), true);
   else
-    return I(static_cast<T>(0), rnd.cosh_up(-x.lower() > x.upper() ? x.lower() : x.upper()), true);
+    return I(static_cast<T>(1), rnd.cosh_up(-x.lower() > x.upper() ? x.lower() : x.upper()), true);
 }
 
 template<class T, class Policies> inline

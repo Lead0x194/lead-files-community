@@ -2,7 +2,7 @@
 // time_traits.hpp
 // ~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,24 +15,29 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
 #include <boost/asio/detail/socket_types.hpp> // Must come before posix_time.
 
-#include <boost/asio/detail/push_options.hpp>
+#if !defined(BOOST_ASIO_NO_DEPRECATED)
+
+#if defined(BOOST_ASIO_HAS_BOOST_DATE_TIME) \
+  || defined(GENERATING_DOCUMENTATION)
+
 #include <boost/date_time/posix_time/posix_time_types.hpp>
-#include <boost/asio/detail/pop_options.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
 
-/// Time traits suitable for use with the deadline timer.
+/// (Deprecated) Time traits suitable for use with the deadline timer.
 template <typename Time>
-struct time_traits;
+struct BOOST_ASIO_DEPRECATED_MSG("Use basic_waitable_timer and wait_traits")
+  time_traits;
 
-/// Time traits specialised for posix_time.
+/// (Deprecated) Time traits specialised for posix_time.
 template <>
-struct time_traits<boost::posix_time::ptime>
+struct BOOST_ASIO_DEPRECATED_MSG("Use basic_waitable_timer and wait_traits")
+  time_traits<boost::posix_time::ptime>
 {
   /// The time type.
   typedef boost::posix_time::ptime time_type;
@@ -80,5 +85,10 @@ struct time_traits<boost::posix_time::ptime>
 } // namespace boost
 
 #include <boost/asio/detail/pop_options.hpp>
+
+#endif // defined(BOOST_ASIO_HAS_BOOST_DATE_TIME)
+       // || defined(GENERATING_DOCUMENTATION)
+
+#endif // !defined(BOOST_ASIO_NO_DEPRECATED)
 
 #endif // BOOST_ASIO_TIME_TRAITS_HPP

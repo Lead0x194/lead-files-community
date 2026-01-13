@@ -68,6 +68,43 @@ namespace boost {
             { return io::detail::feed<CharT, Tr, Alloc, T&>(*this,x); }
 #endif
 
+        template<class T>
+        basic_format& operator%(volatile const T& x)
+            { /* make a non-volatile copy */ const T v(x);
+              /* pass the copy along      */ return io::detail::feed<CharT, Tr, Alloc, const T&>(*this, v); }
+
+#ifndef BOOST_NO_OVERLOAD_FOR_NON_CONST
+        template<class T>
+        basic_format& operator%(volatile T& x)
+            { /* make a non-volatile copy */ T v(x);
+              /* pass the copy along      */ return io::detail::feed<CharT, Tr, Alloc, T&>(*this, v); }
+#endif
+
+#if defined(__GNUC__)
+        // GCC can't handle anonymous enums without some help
+        // ** arguments passing ** //
+        basic_format&   operator%(const int& x)
+            { return io::detail::feed<CharT, Tr, Alloc, const int&>(*this,x); }
+
+#ifndef BOOST_NO_OVERLOAD_FOR_NON_CONST
+        basic_format&   operator%(int& x)
+            { return io::detail::feed<CharT, Tr, Alloc, int&>(*this,x); }
+#endif
+#endif
+
+        // The total number of arguments expected to be passed to the format objectt
+        int expected_args() const
+            { return num_args_; }
+        // The number of arguments currently bound (see bind_arg(..) )
+        int bound_args() const;
+        // The number of arguments currently fed to the format object
+        int fed_args() const;
+        // The index (1-based) of the current argument (i.e. next to be formatted)
+        int cur_arg() const;
+        // The number of arguments still required to be fed
+        int remaining_args() const; // same as expected_args() - bound_args() - fed_args()
+
+
         // ** object modifying **//
         template<class T>
         basic_format&  bind_arg(int argN, const T& val) 
@@ -82,7 +119,7 @@ namespace boost {
         unsigned char exceptions(unsigned char newexcept);
 
 #if !defined( BOOST_NO_MEMBER_TEMPLATE_FRIENDS )  \
-    && !BOOST_WORKAROUND(__BORLANDC__, <= 0x570) \
+    && !BOOST_WORKAROUND(BOOST_BORLANDC, <= 0x570) \
     && !BOOST_WORKAROUND( _CRAYC, != 0) \
     && !BOOST_WORKAROUND(__DECCXX_VER, BOOST_TESTED_AT(60590042))
         // use friend templates and private members only if supported
@@ -101,7 +138,7 @@ namespace boost {
 
         template<class Ch2, class Tr2, class Alloc2, class T>  
         friend basic_format<Ch2, Tr2, Alloc2>&  
-        io::detail::feed (basic_format<Ch2, Tr2, Alloc2>&, T);
+        io::detail::feed_impl (basic_format<Ch2, Tr2, Alloc2>&, T);
 
         template<class Ch2, class Tr2, class Alloc2, class T>  friend   
         void io::detail::distribute (basic_format<Ch2, Tr2, Alloc2>&, T);

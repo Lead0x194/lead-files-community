@@ -20,17 +20,14 @@
 //  to reduce coupling to other boost libraries.
 #include <string>             // for string
 #include <new>                // for bad_alloc
+#include <ostream>            // for ostream
 #include <typeinfo>           // for bad_cast, bad_typeid
 #include <exception>          // for exception, bad_exception
 #include <stdexcept>          // for std exception hierarchy
+#include <boost/config.hpp>
 #include <boost/cstdlib.hpp>  // for exit codes
-# if __GNUC__ != 2 || __GNUC_MINOR__ > 96
-#   include <ostream>         // for ostream
-# else
-#   include <iostream> // workaround GNU missing ostream header
-# endif
 
-# if defined(__BORLANDC__) && (__BORLANDC__ <= 0x0551)
+# if defined(BOOST_BORLANDC) && (__BORLANDC__ <= 0x0551)
 #   define BOOST_BUILT_IN_EXCEPTIONS_MISSING_WHAT 
 # endif
 

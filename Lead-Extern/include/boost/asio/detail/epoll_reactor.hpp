@@ -1,8 +1,8 @@
 //
-// epoll_reactor.hpp
-// ~~~~~~~~~~~~~~~~~
+// detail/epoll_reactor.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,407 +15,200 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/epoll_reactor_fwd.hpp>
+#include <boost/asio/detail/config.hpp>
 
 #if defined(BOOST_ASIO_HAS_EPOLL)
 
-#include <boost/asio/detail/push_options.hpp>
-#include <cstddef>
-#include <sys/epoll.h>
-#include <boost/config.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/system/system_error.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
-#include <boost/asio/error.hpp>
-#include <boost/asio/io_service.hpp>
-#include <boost/asio/detail/hash_map.hpp>
-#include <boost/asio/detail/mutex.hpp>
+#include <boost/asio/detail/atomic_count.hpp>
+#include <boost/asio/detail/conditionally_enabled_mutex.hpp>
+#include <boost/asio/detail/limits.hpp>
+#include <boost/asio/detail/object_pool.hpp>
 #include <boost/asio/detail/op_queue.hpp>
 #include <boost/asio/detail/reactor_op.hpp>
+#include <boost/asio/detail/scheduler_task.hpp>
 #include <boost/asio/detail/select_interrupter.hpp>
-#include <boost/asio/detail/service_base.hpp>
 #include <boost/asio/detail/socket_types.hpp>
-#include <boost/asio/detail/timer_op.hpp>
 #include <boost/asio/detail/timer_queue_base.hpp>
-#include <boost/asio/detail/timer_queue_fwd.hpp>
 #include <boost/asio/detail/timer_queue_set.hpp>
-
-#if (__GLIBC__ > 2) || (__GLIBC__ == 2 && __GLIBC_MINOR__ >= 8)
-# define BOOST_ASIO_HAS_TIMERFD 1
-#endif // (__GLIBC__ > 2) || (__GLIBC__ == 2 && __GLIBC_MINOR__ >= 8)
+#include <boost/asio/detail/wait_op.hpp>
+#include <boost/asio/execution_context.hpp>
 
 #if defined(BOOST_ASIO_HAS_TIMERFD)
-# include <boost/asio/detail/push_options.hpp>
 # include <sys/timerfd.h>
-# include <boost/asio/detail/pop_options.hpp>
 #endif // defined(BOOST_ASIO_HAS_TIMERFD)
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
 namespace detail {
 
 class epoll_reactor
-  : public boost::asio::detail::service_base<epoll_reactor>
+  : public execution_context_service_base<epoll_reactor>,
+    public scheduler_task
 {
+private:
+  // The mutex type used by this reactor.
+  typedef conditionally_enabled_mutex mutex;
+
 public:
-  enum { read_op = 0, write_op = 1,
+  enum op_types { read_op = 0, write_op = 1,
     connect_op = 1, except_op = 2, max_ops = 3 };
 
   // Per-descriptor queues.
-  struct descriptor_state
+  struct descriptor_state : operation
   {
-    descriptor_state() {}
-    descriptor_state(const descriptor_state&) {}
-    void operator=(const descriptor_state&) {}
+    descriptor_state* next_;
+    descriptor_state* prev_;
 
     mutex mutex_;
+    epoll_reactor* reactor_;
+    int descriptor_;
+    uint32_t registered_events_;
     op_queue<reactor_op> op_queue_[max_ops];
+    bool try_speculative_[max_ops];
     bool shutdown_;
+
+    BOOST_ASIO_DECL descriptor_state(bool locking, int spin_count);
+    void set_ready_events(uint32_t events) { task_result_ = events; }
+    void add_ready_events(uint32_t events) { task_result_ |= events; }
+    BOOST_ASIO_DECL operation* perform_io(uint32_t events);
+    BOOST_ASIO_DECL static void do_complete(
+        void* owner, operation* base,
+        const boost::system::error_code& ec, std::size_t bytes_transferred);
   };
 
   // Per-descriptor data.
   typedef descriptor_state* per_descriptor_data;
 
   // Constructor.
-  epoll_reactor(boost::asio::io_service& io_service)
-    : boost::asio::detail::service_base<epoll_reactor>(io_service),
-      io_service_(use_service<io_service_impl>(io_service)),
-      mutex_(),
-      epoll_fd_(do_epoll_create()),
-#if defined(BOOST_ASIO_HAS_TIMERFD)
-      timer_fd_(timerfd_create(CLOCK_MONOTONIC, 0)),
-#else // defined(BOOST_ASIO_HAS_TIMERFD)
-      timer_fd_(-1),
-#endif // defined(BOOST_ASIO_HAS_TIMERFD)
-      interrupter_(),
-      shutdown_(false)
-  {
-    // Add the interrupter's descriptor to epoll.
-    epoll_event ev = { 0, { 0 } };
-    ev.events = EPOLLIN | EPOLLERR | EPOLLET;
-    ev.data.ptr = &interrupter_;
-    epoll_ctl(epoll_fd_, EPOLL_CTL_ADD, interrupter_.read_descriptor(), &ev);
-    interrupter_.interrupt();
-
-    // Add the timer descriptor to epoll.
-    if (timer_fd_ != -1)
-    {
-      ev.events = EPOLLIN | EPOLLERR;
-      ev.data.ptr = &timer_fd_;
-      epoll_ctl(epoll_fd_, EPOLL_CTL_ADD, timer_fd_, &ev);
-    }
-  }
+  BOOST_ASIO_DECL epoll_reactor(boost::asio::execution_context& ctx);
 
   // Destructor.
-  ~epoll_reactor()
-  {
-    close(epoll_fd_);
-    if (timer_fd_ != -1)
-      close(timer_fd_);
-  }
+  BOOST_ASIO_DECL ~epoll_reactor();
 
   // Destroy all user-defined handler objects owned by the service.
-  void shutdown_service()
-  {
-    mutex::scoped_lock lock(mutex_);
-    shutdown_ = true;
-    lock.unlock();
+  BOOST_ASIO_DECL void shutdown();
 
-    op_queue<operation> ops;
-
-    descriptor_map::iterator iter = registered_descriptors_.begin();
-    descriptor_map::iterator end = registered_descriptors_.end();
-    while (iter != end)
-    {
-      for (int i = 0; i < max_ops; ++i)
-        ops.push(iter->second.op_queue_[i]);
-      iter->second.shutdown_ = true;
-      ++iter;
-    }
-
-    timer_queues_.get_all_timers(ops);
-  }
+  // Recreate internal descriptors following a fork.
+  BOOST_ASIO_DECL void notify_fork(
+      boost::asio::execution_context::fork_event fork_ev);
 
   // Initialise the task.
-  void init_task()
-  {
-    io_service_.init_task();
-  }
+  BOOST_ASIO_DECL void init_task();
 
   // Register a socket with the reactor. Returns 0 on success, system error
   // code on failure.
-  int register_descriptor(socket_type descriptor,
-      per_descriptor_data& descriptor_data)
-  {
-    mutex::scoped_lock lock(registered_descriptors_mutex_);
+  BOOST_ASIO_DECL int register_descriptor(socket_type descriptor,
+      per_descriptor_data& descriptor_data);
 
-    descriptor_map::iterator new_entry = registered_descriptors_.insert(
-          std::make_pair(descriptor, descriptor_state())).first;
-    descriptor_data = &new_entry->second;
+  // Register a descriptor with an associated single operation. Returns 0 on
+  // success, system error code on failure.
+  BOOST_ASIO_DECL int register_internal_descriptor(
+      int op_type, socket_type descriptor,
+      per_descriptor_data& descriptor_data, reactor_op* op);
 
-    epoll_event ev = { 0, { 0 } };
-    ev.events = EPOLLIN | EPOLLERR | EPOLLHUP | EPOLLOUT | EPOLLPRI | EPOLLET;
-    ev.data.ptr = descriptor_data;
-    int result = epoll_ctl(epoll_fd_, EPOLL_CTL_ADD, descriptor, &ev);
-    if (result != 0)
-      return errno;
+  // Move descriptor registration from one descriptor_data object to another.
+  BOOST_ASIO_DECL void move_descriptor(socket_type descriptor,
+      per_descriptor_data& target_descriptor_data,
+      per_descriptor_data& source_descriptor_data);
 
-    descriptor_data->shutdown_ = false;
+  // Post a reactor operation for immediate completion.
+  void post_immediate_completion(operation* op, bool is_continuation) const;
 
-    return 0;
-  }
+  // Post a reactor operation for immediate completion.
+  BOOST_ASIO_DECL static void call_post_immediate_completion(
+      operation* op, bool is_continuation, const void* self);
+
+  // Start a new operation. The reactor operation will be performed when the
+  // given descriptor is flagged as ready, or an error has occurred.
+  BOOST_ASIO_DECL void start_op(int op_type, socket_type descriptor,
+      per_descriptor_data& descriptor_data, reactor_op* op,
+      bool is_continuation, bool allow_speculative,
+      void (*on_immediate)(operation*, bool, const void*),
+      const void* immediate_arg);
 
   // Start a new operation. The reactor operation will be performed when the
   // given descriptor is flagged as ready, or an error has occurred.
   void start_op(int op_type, socket_type descriptor,
-      per_descriptor_data& descriptor_data,
-      reactor_op* op, bool allow_speculative)
+      per_descriptor_data& descriptor_data, reactor_op* op,
+      bool is_continuation, bool allow_speculative)
   {
-    mutex::scoped_lock descriptor_lock(descriptor_data->mutex_);
-    if (descriptor_data->shutdown_)
-      return;
-
-    if (descriptor_data->op_queue_[op_type].empty())
-    {
-      if (allow_speculative
-          && (op_type != read_op
-            || descriptor_data->op_queue_[except_op].empty()))
-      {
-        if (op->perform())
-        {
-          descriptor_lock.unlock();
-          io_service_.post_immediate_completion(op);
-          return;
-        }
-      }
-      else
-      {
-        epoll_event ev = { 0, { 0 } };
-        ev.events = EPOLLIN | EPOLLERR | EPOLLHUP
-          | EPOLLOUT | EPOLLPRI | EPOLLET;
-        ev.data.ptr = descriptor_data;
-        epoll_ctl(epoll_fd_, EPOLL_CTL_MOD, descriptor, &ev);
-      }
-    }
-
-    descriptor_data->op_queue_[op_type].push(op);
-    io_service_.work_started();
+    start_op(op_type, descriptor, descriptor_data,
+        op, is_continuation, allow_speculative,
+        &epoll_reactor::call_post_immediate_completion, this);
   }
 
   // Cancel all operations associated with the given descriptor. The
   // handlers associated with the descriptor will be invoked with the
   // operation_aborted error.
-  void cancel_ops(socket_type descriptor, per_descriptor_data& descriptor_data)
-  {
-    mutex::scoped_lock descriptor_lock(descriptor_data->mutex_);
+  BOOST_ASIO_DECL void cancel_ops(socket_type descriptor,
+      per_descriptor_data& descriptor_data);
 
-    op_queue<operation> ops;
-    for (int i = 0; i < max_ops; ++i)
-    {
-      while (reactor_op* op = descriptor_data->op_queue_[i].front())
-      {
-        op->ec_ = boost::asio::error::operation_aborted;
-        descriptor_data->op_queue_[i].pop();
-        ops.push(op);
-      }
-    }
-
-    descriptor_lock.unlock();
-
-    io_service_.post_deferred_completions(ops);
-  }
+  // Cancel all operations associated with the given descriptor and key. The
+  // handlers associated with the descriptor will be invoked with the
+  // operation_aborted error.
+  BOOST_ASIO_DECL void cancel_ops_by_key(socket_type descriptor,
+      per_descriptor_data& descriptor_data,
+      int op_type, void* cancellation_key);
 
   // Cancel any operations that are running against the descriptor and remove
-  // its registration from the reactor.
-  void close_descriptor(socket_type descriptor,
-      per_descriptor_data& descriptor_data)
-  {
-    mutex::scoped_lock descriptor_lock(descriptor_data->mutex_);
-    mutex::scoped_lock descriptors_lock(registered_descriptors_mutex_);
+  // its registration from the reactor. The reactor resources associated with
+  // the descriptor must be released by calling cleanup_descriptor_data.
+  BOOST_ASIO_DECL void deregister_descriptor(socket_type descriptor,
+      per_descriptor_data& descriptor_data, bool closing);
 
-    // Remove the descriptor from the set of known descriptors. The descriptor
-    // will be automatically removed from the epoll set when it is closed.
-    descriptor_data->shutdown_ = true;
+  // Remove the descriptor's registration from the reactor. The reactor
+  // resources associated with the descriptor must be released by calling
+  // cleanup_descriptor_data.
+  BOOST_ASIO_DECL void deregister_internal_descriptor(
+      socket_type descriptor, per_descriptor_data& descriptor_data);
 
-    op_queue<operation> ops;
-    for (int i = 0; i < max_ops; ++i)
-    {
-      while (reactor_op* op = descriptor_data->op_queue_[i].front())
-      {
-        op->ec_ = boost::asio::error::operation_aborted;
-        descriptor_data->op_queue_[i].pop();
-        ops.push(op);
-      }
-    }
-
-    descriptor_lock.unlock();
-
-    registered_descriptors_.erase(descriptor);
-
-    descriptors_lock.unlock();
-
-    io_service_.post_deferred_completions(ops);
-  }
+  // Perform any post-deregistration cleanup tasks associated with the
+  // descriptor data.
+  BOOST_ASIO_DECL void cleanup_descriptor_data(
+      per_descriptor_data& descriptor_data);
 
   // Add a new timer queue to the reactor.
-  template <typename Time_Traits>
-  void add_timer_queue(timer_queue<Time_Traits>& timer_queue)
-  {
-    mutex::scoped_lock lock(mutex_);
-    timer_queues_.insert(&timer_queue);
-  }
+  template <typename TimeTraits, typename Allocator>
+  void add_timer_queue(timer_queue<TimeTraits, Allocator>& timer_queue);
 
   // Remove a timer queue from the reactor.
-  template <typename Time_Traits>
-  void remove_timer_queue(timer_queue<Time_Traits>& timer_queue)
-  {
-    mutex::scoped_lock lock(mutex_);
-    timer_queues_.erase(&timer_queue);
-  }
+  template <typename TimeTraits, typename Allocator>
+  void remove_timer_queue(timer_queue<TimeTraits, Allocator>& timer_queue);
 
   // Schedule a new operation in the given timer queue to expire at the
   // specified absolute time.
-  template <typename Time_Traits>
-  void schedule_timer(timer_queue<Time_Traits>& timer_queue,
-      const typename Time_Traits::time_type& time, timer_op* op, void* token)
-  {
-    mutex::scoped_lock lock(mutex_);
-    if (!shutdown_)
-    {
-      bool earliest = timer_queue.enqueue_timer(time, op, token);
-      io_service_.work_started();
-      if (earliest)
-      {
-#if defined(BOOST_ASIO_HAS_TIMERFD)
-        if (timer_fd_ != -1)
-        {
-          itimerspec new_timeout;
-          itimerspec old_timeout;
-          int flags = get_timeout(new_timeout);
-          timerfd_settime(timer_fd_, flags, &new_timeout, &old_timeout);
-          return;
-        }
-#endif // defined(BOOST_ASIO_HAS_TIMERFD)
-        interrupter_.interrupt();
-      }
-    }
-  }
+  template <typename TimeTraits, typename Allocator>
+  void schedule_timer(timer_queue<TimeTraits, Allocator>& queue,
+      const typename TimeTraits::time_type& time,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data& timer,
+      wait_op* op);
 
   // Cancel the timer operations associated with the given token. Returns the
   // number of operations that have been posted or dispatched.
-  template <typename Time_Traits>
-  std::size_t cancel_timer(timer_queue<Time_Traits>& timer_queue, void* token)
-  {
-    mutex::scoped_lock lock(mutex_);
-    op_queue<operation> ops;
-    std::size_t n = timer_queue.cancel_timer(token, ops);
-    lock.unlock();
-    io_service_.post_deferred_completions(ops);
-    return n;
-  }
+  template <typename TimeTraits, typename Allocator>
+  std::size_t cancel_timer(timer_queue<TimeTraits, Allocator>& queue,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data& timer,
+      std::size_t max_cancelled = (std::numeric_limits<std::size_t>::max)());
+
+  // Cancel the timer operations associated with the given key.
+  template <typename TimeTraits, typename Allocator>
+  void cancel_timer_by_key(timer_queue<TimeTraits, Allocator>& queue,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data* timer,
+      void* cancellation_key);
+
+  // Move the timer operations associated with the given timer.
+  template <typename TimeTraits, typename Allocator>
+  void move_timer(timer_queue<TimeTraits, Allocator>& queue,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data& target,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data& source);
 
   // Run epoll once until interrupted or events are ready to be dispatched.
-  void run(bool block, op_queue<operation>& ops)
-  {
-    // Calculate a timeout only if timerfd is not used.
-    int timeout;
-    if (timer_fd_ != -1)
-      timeout = block ? -1 : 0;
-    else
-    {
-      mutex::scoped_lock lock(mutex_);
-      timeout = block ? get_timeout() : 0;
-    }
-
-    // Block on the epoll descriptor.
-    epoll_event events[128];
-    int num_events = epoll_wait(epoll_fd_, events, 128, timeout);
-
-#if defined(BOOST_ASIO_HAS_TIMERFD)
-    bool check_timers = (timer_fd_ == -1);
-#else // defined(BOOST_ASIO_HAS_TIMERFD)
-    bool check_timers = true;
-#endif // defined(BOOST_ASIO_HAS_TIMERFD)
-
-    // Dispatch the waiting events.
-    for (int i = 0; i < num_events; ++i)
-    {
-      void* ptr = events[i].data.ptr;
-      if (ptr == &interrupter_)
-      {
-        // No need to reset the interrupter since we're leaving the descriptor
-        // in a ready-to-read state and relying on edge-triggered notifications
-        // to make it so that we only get woken up when the descriptor's epoll
-        // registration is updated.
-
-#if defined(BOOST_ASIO_HAS_TIMERFD)
-        if (timer_fd_ == -1)
-          check_timers = true;
-#else // defined(BOOST_ASIO_HAS_TIMERFD)
-        check_timers = true;
-#endif // defined(BOOST_ASIO_HAS_TIMERFD)
-      }
-#if defined(BOOST_ASIO_HAS_TIMERFD)
-      else if (ptr == &timer_fd_)
-      {
-        check_timers = true;
-      }
-#endif // defined(BOOST_ASIO_HAS_TIMERFD)
-      else
-      {
-        descriptor_state* descriptor_data = static_cast<descriptor_state*>(ptr);
-        mutex::scoped_lock descriptor_lock(descriptor_data->mutex_);
-
-        // Exception operations must be processed first to ensure that any
-        // out-of-band data is read before normal data.
-        static const int flag[max_ops] = { EPOLLIN, EPOLLOUT, EPOLLPRI };
-        for (int j = max_ops - 1; j >= 0; --j)
-        {
-          if (events[i].events & (flag[j] | EPOLLERR | EPOLLHUP))
-          {
-            while (reactor_op* op = descriptor_data->op_queue_[j].front())
-            {
-              if (op->perform())
-              {
-                descriptor_data->op_queue_[j].pop();
-                ops.push(op);
-              }
-              else
-                break;
-            }
-          }
-        }
-      }
-    }
-
-    if (check_timers)
-    {
-      mutex::scoped_lock common_lock(mutex_);
-      timer_queues_.get_ready_timers(ops);
-
-#if defined(BOOST_ASIO_HAS_TIMERFD)
-      if (timer_fd_ != -1)
-      {
-        itimerspec new_timeout;
-        itimerspec old_timeout;
-        int flags = get_timeout(new_timeout);
-        timerfd_settime(timer_fd_, flags, &new_timeout, &old_timeout);
-      }
-#endif // defined(BOOST_ASIO_HAS_TIMERFD)
-    }
-  }
+  BOOST_ASIO_DECL void run(long usec, op_queue<operation>& ops);
 
   // Interrupt the select loop.
-  void interrupt()
-  {
-    epoll_event ev = { 0, { 0 } };
-    ev.events = EPOLLIN | EPOLLERR | EPOLLET;
-    ev.data.ptr = &interrupter_;
-    epoll_ctl(epoll_fd_, EPOLL_CTL_MOD, interrupter_.read_descriptor(), &ev);
-  }
+  BOOST_ASIO_DECL void interrupt();
 
 private:
   // The hint to pass to epoll_create to size its data structures.
@@ -423,51 +216,45 @@ private:
 
   // Create the epoll file descriptor. Throws an exception if the descriptor
   // cannot be created.
-  static int do_epoll_create()
-  {
-    int fd = epoll_create(epoll_size);
-    if (fd == -1)
-    {
-      boost::throw_exception(
-          boost::system::system_error(
-            boost::system::error_code(errno,
-              boost::asio::error::get_system_category()),
-            "epoll"));
-    }
-    return fd;
-  }
+  BOOST_ASIO_DECL static int do_epoll_create();
+
+  // Create the timerfd file descriptor. Does not throw.
+  BOOST_ASIO_DECL static int do_timerfd_create();
+
+  // Allocate a new descriptor state object.
+  BOOST_ASIO_DECL descriptor_state* allocate_descriptor_state();
+
+  // Free an existing descriptor state object.
+  BOOST_ASIO_DECL void free_descriptor_state(descriptor_state* s);
+
+  // Helper function to add a new timer queue.
+  BOOST_ASIO_DECL void do_add_timer_queue(timer_queue_base& queue);
+
+  // Helper function to remove a timer queue.
+  BOOST_ASIO_DECL void do_remove_timer_queue(timer_queue_base& queue);
+
+  // Called to recalculate and update the timeout.
+  BOOST_ASIO_DECL void update_timeout();
 
   // Get the timeout value for the epoll_wait call. The timeout value is
   // returned as a number of milliseconds. A return value of -1 indicates
   // that epoll_wait should block indefinitely.
-  int get_timeout()
-  {
-    // By default we will wait no longer than 5 minutes. This will ensure that
-    // any changes to the system clock are detected after no longer than this.
-    return timer_queues_.wait_duration_msec(5 * 60 * 1000);
-  }
+  BOOST_ASIO_DECL int get_timeout(int msec);
 
 #if defined(BOOST_ASIO_HAS_TIMERFD)
   // Get the timeout value for the timer descriptor. The return value is the
   // flag argument to be used when calling timerfd_settime.
-  int get_timeout(itimerspec& ts)
-  {
-    ts.it_interval.tv_sec = 0;
-    ts.it_interval.tv_nsec = 0;
-
-    long usec = timer_queues_.wait_duration_usec(5 * 60 * 1000 * 1000);
-    ts.it_value.tv_sec = usec / 1000000;
-    ts.it_value.tv_nsec = usec ? (usec % 1000000) * 1000 : 1;
-
-    return usec ? 0 : TFD_TIMER_ABSTIME;
-  }
+  BOOST_ASIO_DECL int get_timeout(itimerspec& ts);
 #endif // defined(BOOST_ASIO_HAS_TIMERFD)
 
-  // The io_service implementation used to post completions.
-  io_service_impl& io_service_;
+  // The scheduler implementation used to post completions.
+  scheduler& scheduler_;
 
   // Mutex to protect access to internal data.
   mutex mutex_;
+
+  // The interrupter is used to break a blocking epoll_wait call.
+  select_interrupter interrupter_;
 
   // The epoll file descriptor.
   int epoll_fd_;
@@ -475,35 +262,41 @@ private:
   // The timer file descriptor.
   int timer_fd_;
 
-  // The interrupter is used to break a blocking epoll_wait call.
-  select_interrupter interrupter_;
-
   // The timer queues.
   timer_queue_set timer_queues_;
 
   // Whether the service has been shut down.
   bool shutdown_;
 
+  // Whether I/O locking is enabled.
+  const bool io_locking_;
+
+  // How any times to spin waiting for the I/O mutex.
+  const int io_locking_spin_count_;
+
   // Mutex to protect access to the registered descriptors.
   mutex registered_descriptors_mutex_;
 
-  // Keep track of all registered descriptors. This code relies on the fact that
-  // the hash_map implementation pools deleted nodes, meaning that we can assume
-  // our descriptor_state pointer remains valid even after the entry is removed.
-  // Technically this is not true for C++98, as that standard says that spliced
-  // elements in a list are invalidated. However, C++0x fixes this shortcoming
-  // so we'll just assume that C++98 std::list implementations will do the right
-  // thing anyway.
-  typedef detail::hash_map<socket_type, descriptor_state> descriptor_map;
-  descriptor_map registered_descriptors_;
+  // Keep track of all registered descriptors.
+  object_pool<descriptor_state, execution_context::allocator<void>>
+    registered_descriptors_;
+
+  // Helper class to do post-perform_io cleanup.
+  struct perform_io_cleanup_on_block_exit;
+  friend struct perform_io_cleanup_on_block_exit;
 };
 
 } // namespace detail
 } // namespace asio
 } // namespace boost
 
-#endif // defined(BOOST_ASIO_HAS_EPOLL)
-
 #include <boost/asio/detail/pop_options.hpp>
+
+#include <boost/asio/detail/impl/epoll_reactor.hpp>
+#if defined(BOOST_ASIO_HEADER_ONLY)
+# include <boost/asio/detail/impl/epoll_reactor.ipp>
+#endif // defined(BOOST_ASIO_HEADER_ONLY)
+
+#endif // defined(BOOST_ASIO_HAS_EPOLL)
 
 #endif // BOOST_ASIO_DETAIL_EPOLL_REACTOR_HPP

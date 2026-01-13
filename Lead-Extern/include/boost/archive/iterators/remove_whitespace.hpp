@@ -2,36 +2,30 @@
 #define BOOST_ARCHIVE_ITERATORS_REMOVE_WHITESPACE_HPP
 
 // MS compatible compilers support #pragma once
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
 /////////1/////////2/////////3/////////4/////////5/////////6/////////7/////////8
 // remove_whitespace.hpp
 
-// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com . 
+// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com .
 // Use, modification and distribution is subject to the Boost Software
 // License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 
 //  See http://www.boost.org for updates, documentation, and revision history.
 
-#include <cassert>
-
-#include <boost/config.hpp> // for BOOST_DEDUCED_TYPENAME
-
-#include <boost/serialization/pfto.hpp>
+#include <boost/assert.hpp>
 
 #include <boost/iterator/iterator_adaptor.hpp>
 #include <boost/iterator/filter_iterator.hpp>
-
-//#include <boost/detail/workaround.hpp>
-//#if ! BOOST_WORKAROUND(BOOST_MSVC, <=1300)
+#include <boost/iterator/iterator_traits.hpp>
 
 // here is the default standard implementation of the functor used
 // by the filter iterator to remove spaces.  Unfortunately usage
 // of this implementation in combination with spirit trips a bug
-// VC 6.5.  The only way I can find to work around it is to 
+// VC 6.5.  The only way I can find to work around it is to
 // implement a special non-standard version for this platform
 
 #ifndef BOOST_NO_CWCTYPE
@@ -51,8 +45,6 @@ namespace std{ using ::isspace; }
 #undef isspace
 #undef iswspace
 #endif
-
-//#endif // BOOST_WORKAROUND
 
 namespace { // anonymous
 
@@ -82,7 +74,7 @@ struct remove_whitespace_predicate<wchar_t>
 /////////1/////////2/////////3/////////4/////////5/////////6/////////7/////////8
 // convert base64 file data (including whitespace and padding) to binary
 
-namespace boost { 
+namespace boost {
 namespace archive {
 namespace iterators {
 
@@ -99,14 +91,14 @@ class filter_iterator
     >
 {
     friend class boost::iterator_core_access;
-    typedef BOOST_DEDUCED_TYPENAME boost::iterator_adaptor<
+    typedef typename boost::iterator_adaptor<
         filter_iterator<Predicate, Base>,
         Base,
         use_default,
         single_pass_traversal_tag
     > super_t;
     typedef filter_iterator<Predicate, Base> this_t;
-    typedef BOOST_DEDUCED_TYPENAME super_t::reference reference_type;
+    typedef typename super_t::reference reference_type;
 
     reference_type dereference_impl(){
         if(! m_full){
@@ -130,34 +122,40 @@ public:
         m_full = false;
         ++(this->base_reference());
     }
-    filter_iterator(Base start) : 
-        super_t(start), 
+    filter_iterator(Base start) :
+        super_t(start),
         m_full(false)
     {}
     filter_iterator(){}
 };
 
 template<class Base>
-class remove_whitespace : 
+class remove_whitespace :
     public filter_iterator<
-        remove_whitespace_predicate<BOOST_DEDUCED_TYPENAME Base::value_type>,
+        remove_whitespace_predicate<
+            typename boost::iterator_value<Base>::type
+            //typename Base::value_type
+        >,
         Base
     >
 {
     friend class boost::iterator_core_access;
     typedef filter_iterator<
-        remove_whitespace_predicate<BOOST_DEDUCED_TYPENAME Base::value_type>,
+        remove_whitespace_predicate<
+            typename boost::iterator_value<Base>::type
+            //typename Base::value_type
+        >,
         Base
     > super_t;
 public:
 //    remove_whitespace(){} // why is this needed?
-    // make composible buy using templated constructor
+    // make composable by using templated constructor
     template<class T>
-    remove_whitespace(BOOST_PFTO_WRAPPER(T) start) :
-        super_t(Base(BOOST_MAKE_PFTO_WRAPPER(static_cast<T>(start))))
+    remove_whitespace(T start) :
+        super_t(Base(static_cast< T >(start)))
     {}
     // intel 7.1 doesn't like default copy constructor
-    remove_whitespace(const remove_whitespace & rhs) : 
+    remove_whitespace(const remove_whitespace & rhs) :
         super_t(rhs.base_reference())
     {}
 };

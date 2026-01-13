@@ -7,7 +7,7 @@
  *
  * See http://www.boost.org for most recent version including documentation.
  *
- * $Id: config.hpp 52492 2009-04-19 14:55:57Z steven_watanabe $
+ * $Id$
  */
 
 #include <boost/config.hpp>
@@ -15,4 +15,8 @@
 #if (defined(BOOST_NO_OPERATORS_IN_NAMESPACE) || defined(BOOST_NO_MEMBER_TEMPLATE_FRIENDS)) \
     && !defined(BOOST_MSVC)
     #define BOOST_RANDOM_NO_STREAM_OPERATORS
+#endif
+
+#if ((defined(__cplusplus) && __cplusplus >= 201703L) || (defined(_MSVC_LANG) && _MSVC_LANG >= 201703L)) && (defined(__cpp_hex_float) && __cpp_hex_float >= 201603L)
+#  define BOOST_RANDOM_HAS_HEX_FLOAT
 #endif

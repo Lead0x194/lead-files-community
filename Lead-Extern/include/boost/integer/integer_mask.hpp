@@ -3,9 +3,9 @@
 //  (C) Copyright Daryle Walker 2001.
 //  Distributed under the Boost Software License, Version 1.0. (See
 //  accompanying file LICENSE_1_0.txt or copy at
-//  http://www.boost.org/LICENSE_1_0.txt)
+//  https://www.boost.org/LICENSE_1_0.txt)
 
-//  See http://www.boost.org for updates, documentation, and revision history. 
+//  See https://www.boost.org for updates, documentation, and revision history. 
 
 #ifndef BOOST_INTEGER_INTEGER_MASK_HPP
 #define BOOST_INTEGER_INTEGER_MASK_HPP
@@ -20,6 +20,17 @@
 
 #include <boost/limits.hpp>  // for std::numeric_limits
 
+//
+// We simply cannot include this header on gcc without getting copious warnings of the kind:
+//
+// boost/integer/integer_mask.hpp:93:35: warning: use of C99 long long integer constant
+//
+// And yet there is no other reasonable implementation, so we declare this a system header
+// to suppress these warnings.
+//
+#if defined(__GNUC__) && (__GNUC__ >= 4)
+#pragma GCC system_header
+#endif
 
 namespace boost
 {
@@ -46,19 +57,27 @@ struct high_bit_mask_t
 //  Makes masks for the lowest N bits
 //  (Specializations are needed when N fills up a type.)
 
+#ifdef BOOST_MSVC
+#pragma warning(push)
+#pragma warning(disable:4310)  // cast truncates constant value
+#endif
+
 template < std::size_t Bits >
 struct low_bits_mask_t
 {
     typedef typename uint_t<Bits>::least  least;
     typedef typename uint_t<Bits>::fast   fast;
 
-    BOOST_STATIC_CONSTANT( least, sig_bits = (~( ~(least( 0u )) << Bits )) );
+    BOOST_STATIC_CONSTANT( least, sig_bits = least(~(least(~(least( 0u ))) << Bits )) );
     BOOST_STATIC_CONSTANT( fast, sig_bits_fast = fast(sig_bits) );
 
     BOOST_STATIC_CONSTANT( std::size_t, bit_count = Bits );
 
 };  // boost::low_bits_mask_t
 
+#ifdef BOOST_MSVC
+#pragma warning(pop)
+#endif
 
 #define BOOST_LOW_BITS_MASK_SPECIALIZE( Type )                                  \
   template <  >  struct low_bits_mask_t< std::numeric_limits<Type>::digits >  { \
@@ -87,6 +106,19 @@ BOOST_LOW_BITS_MASK_SPECIALIZE( unsigned int );
 
 #if ULONG_MAX > UINT_MAX
 BOOST_LOW_BITS_MASK_SPECIALIZE( unsigned long );
+#endif
+
+#if defined(BOOST_HAS_LONG_LONG)
+    #if ((defined(ULLONG_MAX) && (ULLONG_MAX > ULONG_MAX)) ||\
+        (defined(ULONG_LONG_MAX) && (ULONG_LONG_MAX > ULONG_MAX)) ||\
+        (defined(ULONGLONG_MAX) && (ULONGLONG_MAX > ULONG_MAX)) ||\
+        (defined(_ULLONG_MAX) && (_ULLONG_MAX > ULONG_MAX)))
+    BOOST_LOW_BITS_MASK_SPECIALIZE( boost::ulong_long_type );
+    #endif
+#elif defined(BOOST_HAS_MS_INT64)
+    #if 18446744073709551615ui64 > ULONG_MAX
+    BOOST_LOW_BITS_MASK_SPECIALIZE( unsigned __int64 );
+    #endif
 #endif
 
 #ifdef BOOST_MSVC

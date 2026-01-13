@@ -24,7 +24,7 @@
 #include <boost/regex/config.hpp>
 #endif
 
-#include <boost/regex/v4/regex_fwd.hpp>
+#include <boost/regex/v5/regex_fwd.hpp>
 
 #endif
 

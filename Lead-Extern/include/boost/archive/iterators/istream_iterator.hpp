@@ -2,14 +2,14 @@
 #define BOOST_ARCHIVE_ITERATORS_ISTREAM_ITERATOR_HPP
 
 // MS compatible compilers support #pragma once
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
 /////////1/////////2/////////3/////////4/////////5/////////6/////////7/////////8
 // istream_iterator.hpp
 
-// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com . 
+// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com .
 // Use, modification and distribution is subject to the Boost Software
 // License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
@@ -25,13 +25,13 @@
 #include <istream>
 #include <boost/iterator/iterator_facade.hpp>
 
-namespace boost { 
+namespace boost {
 namespace archive {
 namespace iterators {
 
 // given a type, make an input iterator based on a pointer to that type
 template<class Elem = char>
-class istream_iterator :  
+class istream_iterator :
     public boost::iterator_facade<
         istream_iterator<Elem>,
         Elem,
@@ -41,30 +41,27 @@ class istream_iterator :
 {
     friend class boost::iterator_core_access;
     typedef istream_iterator this_t ;
-    typedef BOOST_DEDUCED_TYPENAME boost::iterator_facade<
+    typedef typename boost::iterator_facade<
         istream_iterator<Elem>,
         Elem,
         std::input_iterator_tag,
         Elem
     > super_t;
-    typedef BOOST_DEDUCED_TYPENAME std::basic_istream<Elem> istream_type;
- 
-    //Access the value referred to 
-    Elem dereference() const {
-        return m_current_value;
-    }
+    typedef typename std::basic_istream<Elem> istream_type;
 
     bool equal(const this_t & rhs) const {
         // note: only  works for comparison against end of stream
         return m_istream == rhs.m_istream;
     }
 
+    //Access the value referred to
+    Elem dereference() const {
+        return static_cast<Elem>(m_istream->peek());
+    }
+
     void increment(){
         if(NULL != m_istream){
-            m_current_value = static_cast<Elem>(m_istream->get());
-            if(! m_istream->good()){
-                const_cast<this_t *>(this)->m_istream = NULL;
-            }
+            m_istream->ignore(1);
         }
     }
 
@@ -74,18 +71,18 @@ public:
     istream_iterator(istream_type & is) :
         m_istream(& is)
     {
-        increment();
+        //increment();
     }
 
     istream_iterator() :
-        m_istream(NULL)
+        m_istream(NULL),
+        m_current_value(NULL)
     {}
 
     istream_iterator(const istream_iterator<Elem> & rhs) :
         m_istream(rhs.m_istream),
         m_current_value(rhs.m_current_value)
     {}
-
 };
 
 } // namespace iterators

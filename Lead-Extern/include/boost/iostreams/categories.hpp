@@ -11,7 +11,7 @@
 #ifndef BOOST_IOSTREAMS_CATEGORIES_HPP_INCLUDED
 #define BOOST_IOSTREAMS_CATEGORIES_HPP_INCLUDED 
 
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
@@ -90,8 +90,8 @@ struct multichar_seekable_filter_tag
       seekable_filter_tag
     { };
 struct multichar_dual_use_filter_tag 
-    : filter_tag, 
-      dual_use
+    : multichar_tag, 
+      dual_use_filter_tag
     { };
 
     //

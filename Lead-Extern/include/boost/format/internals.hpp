@@ -17,6 +17,7 @@
 
 #include <string>
 #include <boost/assert.hpp>
+#include <boost/core/ignore_unused.hpp>
 #include <boost/optional.hpp>
 #include <boost/limits.hpp>
 #include <boost/format/detail/compat_workarounds.hpp>
@@ -104,6 +105,15 @@ namespace detail {
     template<class Ch, class Tr>
     void stream_format_state<Ch,Tr>:: apply_on (basic_ios & os,
                       boost::io::detail::locale_t * loc_default) const {
+    // If a locale is available, set it first. "os.fill(fill_);" may chrash otherwise. 
+#if !defined(BOOST_NO_STD_LOCALE)
+        if(loc_)
+            os.imbue(loc_.get());
+        else if(loc_default)
+            os.imbue(*loc_default);
+#else
+        ignore_unused(loc_default);
+#endif        
         // set the state of this stream according to our params
         if(width_ != -1)
             os.width(width_);
@@ -114,14 +124,6 @@ namespace detail {
         os.flags(flags_);
         os.clear(rdstate_);
         os.exceptions(exceptions_);
-#if !defined(BOOST_NO_STD_LOCALE)
-        if(loc_)
-            os.imbue(loc_.get());
-        else if(loc_default)
-            os.imbue(*loc_default);
-#else
-        (void) loc_default; // keep compiler quiet if we don't support locales
-#endif        
     }
 
     template<class Ch, class Tr>
@@ -148,7 +150,7 @@ namespace detail {
 
     template<class Ch, class Tr> inline
     void stream_format_state<Ch,Tr>:: reset(Ch fill) {
-        // set our params to standard's default state.   cf § 27.4.4.1 of the C++ norm
+        // set our params to standard's default state.   cf 27.4.4.1 of the C++ norm
         width_=0; precision_=6; 
         fill_=fill; // default is widen(' '), but we cant compute it without the locale
         flags_ = std::ios_base::dec | std::ios_base::skipws; 

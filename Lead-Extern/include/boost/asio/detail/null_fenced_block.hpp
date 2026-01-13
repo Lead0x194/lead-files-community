@@ -1,8 +1,8 @@
 //
-// null_fenced_block.hpp
-// ~~~~~~~~~~~~~~~~~~~~~
+// detail/null_fenced_block.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,6 +15,8 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
+#include <boost/asio/detail/noncopyable.hpp>
+
 #include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
@@ -25,8 +27,10 @@ class null_fenced_block
   : private noncopyable
 {
 public:
+  enum half_or_full_t { half, full };
+
   // Constructor.
-  null_fenced_block()
+  explicit null_fenced_block(half_or_full_t)
   {
   }
 

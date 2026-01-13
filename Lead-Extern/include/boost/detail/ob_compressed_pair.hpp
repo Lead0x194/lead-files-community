@@ -20,9 +20,10 @@
       - John Maddock Jan 2000.
 */
 
-
+#ifndef BOOST_UTILITY_DOCS
 #ifndef BOOST_OB_COMPRESSED_PAIR_HPP
 #define BOOST_OB_COMPRESSED_PAIR_HPP
+
 
 #include <algorithm>
 #ifndef BOOST_OBJECT_TYPE_TRAITS_HPP
@@ -166,17 +167,6 @@ public:
 
    compressed_pair_1(const ::boost::compressed_pair<T1,T2>& x)
       : T2(x.second()), _first(x.first()) {}
-
-#if defined(BOOST_MSVC) && BOOST_MSVC <= 1300
-  // Total weirdness. If the assignment to _first is moved after
-  // the call to the inherited operator=, then this breaks graph/test/graph.cpp
-  // by way of iterator_adaptor.
-  compressed_pair_1& operator=(const compressed_pair_1& x) {
-    _first = x._first;
-    T2::operator=(x);
-    return *this;
-  }
-#endif
 
    first_reference       first()       { return _first; }
    first_const_reference first() const { return _first; }
@@ -505,6 +495,4 @@ inline void swap(compressed_pair<T1, T2>& x, compressed_pair<T1, T2>& y)
 } // boost
 
 #endif // BOOST_OB_COMPRESSED_PAIR_HPP
-
-
-
+#endif // BOOST_UTILITY_DOCS

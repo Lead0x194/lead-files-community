@@ -2,14 +2,14 @@
 #define BOOST_ARCHIVE_ITERATORS_BASE64_EXCEPTION_HPP
 
 // MS compatible compilers support #pragma once
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
 /////////1/////////2/////////3/////////4/////////5/////////6/////////7/////////8
 // base64_exception.hpp:
 
-// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com . 
+// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com .
 // Use, modification and distribution is subject to the Boost Software
 // License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
@@ -20,7 +20,7 @@
 #ifndef BOOST_NO_EXCEPTIONS
 #include <exception>
 
-#include <cassert>
+#include <boost/assert.hpp>
 
 namespace boost {
 namespace archive {
@@ -42,7 +42,7 @@ public:
     base64_exception(exception_code c = other_exception) : code(c)
     {}
 
-    virtual const char *what( ) const throw( )
+    virtual const char *what( ) const BOOST_NOEXCEPT_OR_NOTHROW
     {
         const char *msg = "unknown exception code";
         switch(code){
@@ -53,7 +53,7 @@ public:
             msg = "attempt to decode a value not in base64 char set";
             break;
         default:
-            assert(false);
+            BOOST_ASSERT(false);
             break;
         }
         return msg;

@@ -15,12 +15,13 @@
 #pragma once
 #endif
 
-#include <boost/config/no_tr1/cmath.hpp>
-#include <boost/config.hpp>
+#include <cmath>
 #include <boost/math/tools/precision.hpp>
 #include <boost/math/policies/error_handling.hpp>
 #include <boost/math/special_functions/math_fwd.hpp>
 #include <boost/math/special_functions/log1p.hpp>
+#include <boost/math/constants/constants.hpp>
+#include <boost/math/special_functions/fpclassify.hpp>
 
 // This is the inverse of the hyperbolic cosine function.
 
@@ -30,27 +31,14 @@ namespace boost
     {
        namespace detail
        {
-#if defined(__GNUC__) && (__GNUC__ < 3)
-        // gcc 2.x ignores function scope using declarations,
-        // put them in the scope of the enclosing namespace instead:
-        
-        using    ::std::abs;
-        using    ::std::sqrt;
-        using    ::std::log;
-        
-        using    ::std::numeric_limits;
-#endif
-        
         template<typename T, typename Policy>
         inline T    acosh_imp(const T x, const Policy& pol)
         {
             BOOST_MATH_STD_USING
             
-            if(x < 1)
+            if((x < 1) || (boost::math::isnan)(x))
             {
-               return policies::raise_domain_error<T>(
-                  "boost::math::acosh<%1%>(%1%)",
-                  "acosh requires x >= 1, but got x = %1%.", x, pol);
+               return policies::raise_domain_error<T>("boost::math::acosh<%1%>(%1%)", "acosh requires x >= 1, but got x = %1%.", x, pol);
             }
             else if    ((x - 1) >= tools::root_epsilon<T>())
             {
@@ -58,12 +46,12 @@ namespace boost
                 {
                     // http://functions.wolfram.com/ElementaryFunctions/ArcCosh/06/01/06/01/0001/
                     // approximation by laurent series in 1/x at 0+ order from -1 to 0
-                    return( log( x * 2) );
+                    return log(x) + constants::ln_two<T>();
                 }
                 else if(x < 1.5f)
                 {
                    // This is just a rearrangement of the standard form below
-                   // devised to minimse loss of precision when x ~ 1:
+                   // devised to minimise loss of precision when x ~ 1:
                    T y = x - 1;
                    return boost::math::log1p(y + sqrt(y * y + 2 * y), pol);
                 }
@@ -79,7 +67,7 @@ namespace boost
                 T y = x - 1;
                 
                 // approximation by taylor series in y at 0 up to order 2
-                T result = sqrt(2 * y) * (1 + y /12 + 3 * y * y / 160);
+                T result = sqrt(2 * y) * (1 - y /12 + 3 * y * y / 160);
                 return result;
             }
         }

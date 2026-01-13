@@ -1,8 +1,8 @@
 //
-// null_event.hpp
-// ~~~~~~~~~~~~~~
+// detail/null_event.hpp
+// ~~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,15 +15,10 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/push_options.hpp>
-#include <boost/config.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
-#if !defined(BOOST_HAS_THREADS) || defined(BOOST_ASIO_DISABLE_THREADS)
-
+#include <boost/asio/detail/config.hpp>
 #include <boost/asio/detail/noncopyable.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -43,16 +38,35 @@ public:
   {
   }
 
-  // Signal the event.
+  // Signal the event. (Retained for backward compatibility.)
   template <typename Lock>
   void signal(Lock&)
   {
   }
 
-  // Signal the event and unlock the mutex.
+  // Signal all waiters.
   template <typename Lock>
-  void signal_and_unlock(Lock&)
+  void signal_all(Lock&)
   {
+  }
+
+  // Unlock the mutex and signal one waiter.
+  template <typename Lock>
+  void unlock_and_signal_one(Lock&)
+  {
+  }
+
+  // Unlock the mutex and signal one waiter who may destroy us.
+  template <typename Lock>
+  void unlock_and_signal_one_for_destruction(Lock&)
+  {
+  }
+
+  // If there's a waiter, unlock the mutex and signal it.
+  template <typename Lock>
+  bool maybe_unlock_and_signal_one(Lock&)
+  {
+    return false;
   }
 
   // Reset the event.
@@ -65,15 +79,30 @@ public:
   template <typename Lock>
   void wait(Lock&)
   {
+    do_wait();
   }
+
+  // Timed wait for the event to become signalled.
+  template <typename Lock>
+  bool wait_for_usec(Lock&, long usec)
+  {
+    do_wait_for_usec(usec);
+    return true;
+  }
+
+private:
+  BOOST_ASIO_DECL static void do_wait();
+  BOOST_ASIO_DECL static void do_wait_for_usec(long usec);
 };
 
 } // namespace detail
 } // namespace asio
 } // namespace boost
 
-#endif // !defined(BOOST_HAS_THREADS) || defined(BOOST_ASIO_DISABLE_THREADS)
-
 #include <boost/asio/detail/pop_options.hpp>
+
+#if defined(BOOST_ASIO_HEADER_ONLY)
+# include <boost/asio/detail/impl/null_event.ipp>
+#endif // defined(BOOST_ASIO_HEADER_ONLY)
 
 #endif // BOOST_ASIO_DETAIL_NULL_EVENT_HPP

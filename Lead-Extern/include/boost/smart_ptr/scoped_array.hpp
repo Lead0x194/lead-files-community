@@ -8,28 +8,19 @@
 //  accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt)
 //
-//  http://www.boost.org/libs/smart_ptr/scoped_array.htm
-//
+//  See http://www.boost.org/libs/smart_ptr/ for documentation.
 
+#include <boost/smart_ptr/detail/sp_noexcept.hpp>
+#include <boost/smart_ptr/detail/deprecated_macros.hpp>
+#include <boost/core/checked_delete.hpp>
 #include <boost/assert.hpp>
-#include <boost/checked_delete.hpp>
-#include <boost/config.hpp>   // in case ptrdiff_t not in std
-
-#include <boost/detail/workaround.hpp>
+#include <boost/config.hpp>
+#include <boost/config/workaround.hpp>
 
 #include <cstddef>            // for std::ptrdiff_t
 
 namespace boost
 {
-
-// Debug hooks
-
-#if defined(BOOST_SP_ENABLE_DEBUG_HOOKS)
-
-void sp_array_constructor_hook(void * p);
-void sp_array_destructor_hook(void * p);
-
-#endif
 
 //  scoped_array extends scoped_ptr to arrays. Deletion of the array pointed to
 //  is guaranteed, either on destruction of the scoped_array or via an explicit
@@ -53,43 +44,39 @@ public:
 
     typedef T element_type;
 
-    explicit scoped_array( T * p = 0 ) : px( p ) // never throws
+    explicit scoped_array( T * p = 0 ) noexcept : px( p )
     {
-#if defined(BOOST_SP_ENABLE_DEBUG_HOOKS)
-        boost::sp_array_constructor_hook( px );
-#endif
     }
 
-    ~scoped_array() // never throws
+    ~scoped_array() noexcept
     {
-#if defined(BOOST_SP_ENABLE_DEBUG_HOOKS)
-        boost::sp_array_destructor_hook( px );
-#endif
         boost::checked_array_delete( px );
     }
 
-    void reset(T * p = 0) // never throws
+    void reset(T * p = 0) BOOST_SP_NOEXCEPT_WITH_ASSERT
     {
         BOOST_ASSERT( p == 0 || p != px ); // catch self-reset errors
         this_type(p).swap(*this);
     }
 
-    T & operator[](std::ptrdiff_t i) const // never throws
+    T & operator[](std::ptrdiff_t i) const BOOST_SP_NOEXCEPT_WITH_ASSERT
     {
         BOOST_ASSERT( px != 0 );
         BOOST_ASSERT( i >= 0 );
         return px[i];
     }
 
-    T * get() const // never throws
+    T * get() const noexcept
     {
         return px;
     }
 
-// implicit conversion to "bool"
-#include <boost/smart_ptr/detail/operator_bool.hpp>
+    explicit operator bool () const noexcept
+    {
+        return px != 0;
+    }
 
-    void swap(scoped_array & b) // never throws
+    void swap(scoped_array & b) noexcept
     {
         T * tmp = b.px;
         b.px = px;
@@ -97,7 +84,27 @@ public:
     }
 };
 
-template<class T> inline void swap(scoped_array<T> & a, scoped_array<T> & b) // never throws
+template<class T> inline bool operator==( scoped_array<T> const & p, std::nullptr_t ) noexcept
+{
+    return p.get() == 0;
+}
+
+template<class T> inline bool operator==( std::nullptr_t, scoped_array<T> const & p ) noexcept
+{
+    return p.get() == 0;
+}
+
+template<class T> inline bool operator!=( scoped_array<T> const & p, std::nullptr_t ) noexcept
+{
+    return p.get() != 0;
+}
+
+template<class T> inline bool operator!=( std::nullptr_t, scoped_array<T> const & p ) noexcept
+{
+    return p.get() != 0;
+}
+
+template<class T> inline void swap(scoped_array<T> & a, scoped_array<T> & b) noexcept
 {
     a.swap(b);
 }

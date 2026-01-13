@@ -1,8 +1,8 @@
 //
-// win_iocp_serial_port_service.hpp
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// detail/win_iocp_serial_port_service.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 // Copyright (c) 2008 Rep Invariant Systems, Inc. (info@repinvariant.com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
@@ -16,159 +16,94 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
+#include <boost/asio/detail/config.hpp>
 
-#include <boost/asio/detail/push_options.hpp>
-#include <cstring>
+#if defined(BOOST_ASIO_HAS_IOCP) && defined(BOOST_ASIO_HAS_SERIAL_PORT)
+
 #include <string>
-#include <boost/asio/detail/pop_options.hpp>
-
-#include <boost/asio/detail/win_iocp_io_service_fwd.hpp>
-
-#if defined(BOOST_ASIO_HAS_IOCP)
-
 #include <boost/asio/error.hpp>
-#include <boost/asio/io_service.hpp>
+#include <boost/asio/execution_context.hpp>
 #include <boost/asio/detail/win_iocp_handle_service.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
 namespace detail {
 
 // Extend win_iocp_handle_service to provide serial port support.
-class win_iocp_serial_port_service
+class win_iocp_serial_port_service :
+  public execution_context_service_base<win_iocp_serial_port_service>
 {
 public:
-  // The native type of a stream handle.
-  typedef win_iocp_handle_service::native_type native_type;
+  // The native type of a serial port.
+  typedef win_iocp_handle_service::native_handle_type native_handle_type;
 
-  // The implementation type of the stream handle.
+  // The implementation type of the serial port.
   typedef win_iocp_handle_service::implementation_type implementation_type;
 
-  win_iocp_serial_port_service(boost::asio::io_service& io_service)
-    : handle_service_(io_service)
-  {
-  }
+  // Constructor.
+  BOOST_ASIO_DECL win_iocp_serial_port_service(execution_context& context);
 
   // Destroy all user-defined handler objects owned by the service.
-  void shutdown_service()
-  {
-  }
+  BOOST_ASIO_DECL void shutdown();
 
-  // Construct a new handle implementation.
+  // Construct a new serial port implementation.
   void construct(implementation_type& impl)
   {
     handle_service_.construct(impl);
   }
 
-  // Destroy a handle implementation.
+  // Move-construct a new serial port implementation.
+  void move_construct(implementation_type& impl,
+      implementation_type& other_impl)
+  {
+    handle_service_.move_construct(impl, other_impl);
+  }
+
+  // Move-assign from another serial port implementation.
+  void move_assign(implementation_type& impl,
+      win_iocp_serial_port_service& other_service,
+      implementation_type& other_impl)
+  {
+    handle_service_.move_assign(impl,
+        other_service.handle_service_, other_impl);
+  }
+
+  // Destroy a serial port implementation.
   void destroy(implementation_type& impl)
   {
     handle_service_.destroy(impl);
   }
 
   // Open the serial port using the specified device name.
-  boost::system::error_code open(implementation_type& impl,
-      const std::string& device, boost::system::error_code& ec)
-  {
-    if (is_open(impl))
-    {
-      ec = boost::asio::error::already_open;
-      return ec;
-    }
+  BOOST_ASIO_DECL boost::system::error_code open(implementation_type& impl,
+      const std::string& device, boost::system::error_code& ec);
 
-    // For convenience, add a leading \\.\ sequence if not already present.
-    std::string name = (device[0] == '\\') ? device : "\\\\.\\" + device;
-
-    // Open a handle to the serial port.
-    ::HANDLE handle = ::CreateFileA(name.c_str(),
-        GENERIC_READ | GENERIC_WRITE, 0, 0,
-        OPEN_EXISTING, FILE_FLAG_OVERLAPPED, 0);
-    if (handle == INVALID_HANDLE_VALUE)
-    {
-      DWORD last_error = ::GetLastError();
-      ec = boost::system::error_code(last_error,
-          boost::asio::error::get_system_category());
-      return ec;
-    }
-
-    // Determine the initial serial port parameters.
-    using namespace std; // For memcpy.
-    ::DCB dcb;
-    memset(&dcb, 0, sizeof(DCB));
-    dcb.DCBlength = sizeof(DCB);
-    if (!::GetCommState(handle, &dcb))
-    {
-      DWORD last_error = ::GetLastError();
-      ::CloseHandle(handle);
-      ec = boost::system::error_code(last_error,
-          boost::asio::error::get_system_category());
-      return ec;
-    }
-
-    // Set some default serial port parameters. This implementation does not
-    // support changing these, so they might as well be in a known state.
-    dcb.fBinary = TRUE; // Win32 only supports binary mode.
-    dcb.fDsrSensitivity = FALSE;
-    dcb.fNull = FALSE; // Do not ignore NULL characters.
-    dcb.fAbortOnError = FALSE; // Ignore serial framing errors.
-    if (!::SetCommState(handle, &dcb))
-    {
-      DWORD last_error = ::GetLastError();
-      ::CloseHandle(handle);
-      ec = boost::system::error_code(last_error,
-          boost::asio::error::get_system_category());
-      return ec;
-    }
-
-    // Set up timeouts so that the serial port will behave similarly to a
-    // network socket. Reads wait for at least one byte, then return with
-    // whatever they have. Writes return once everything is out the door.
-    ::COMMTIMEOUTS timeouts;
-    timeouts.ReadIntervalTimeout = 1;
-    timeouts.ReadTotalTimeoutMultiplier = 0;
-    timeouts.ReadTotalTimeoutConstant = 0;
-    timeouts.WriteTotalTimeoutMultiplier = 0;
-    timeouts.WriteTotalTimeoutConstant = 0;
-    if (!::SetCommTimeouts(handle, &timeouts))
-    {
-      DWORD last_error = ::GetLastError();
-      ::CloseHandle(handle);
-      ec = boost::system::error_code(last_error,
-          boost::asio::error::get_system_category());
-      return ec;
-    }
-
-    // We're done. Take ownership of the serial port handle.
-    if (handle_service_.assign(impl, handle, ec))
-      ::CloseHandle(handle);
-    return ec;
-  }
-
-  // Assign a native handle to a handle implementation.
+  // Assign a native handle to a serial port implementation.
   boost::system::error_code assign(implementation_type& impl,
-      const native_type& native_handle, boost::system::error_code& ec)
+      const native_handle_type& handle, boost::system::error_code& ec)
   {
-    return handle_service_.assign(impl, native_handle, ec);
+    return handle_service_.assign(impl, handle, ec);
   }
 
-  // Determine whether the handle is open.
+  // Determine whether the serial port is open.
   bool is_open(const implementation_type& impl) const
   {
     return handle_service_.is_open(impl);
   }
 
-  // Destroy a handle implementation.
+  // Destroy a serial port implementation.
   boost::system::error_code close(implementation_type& impl,
       boost::system::error_code& ec)
   {
     return handle_service_.close(impl, ec);
   }
 
-  // Get the native handle representation.
-  native_type native(implementation_type& impl)
+  // Get the native serial port representation.
+  native_handle_type native_handle(implementation_type& impl)
   {
-    return handle_service_.native(impl);
+    return handle_service_.native_handle(impl);
   }
 
   // Cancel all operations associated with the handle.
@@ -183,32 +118,9 @@ public:
   boost::system::error_code set_option(implementation_type& impl,
       const SettableSerialPortOption& option, boost::system::error_code& ec)
   {
-    using namespace std; // For memcpy.
-
-    ::DCB dcb;
-    memset(&dcb, 0, sizeof(DCB));
-    dcb.DCBlength = sizeof(DCB);
-    if (!::GetCommState(handle_service_.native(impl), &dcb))
-    {
-      DWORD last_error = ::GetLastError();
-      ec = boost::system::error_code(last_error,
-          boost::asio::error::get_system_category());
-      return ec;
-    }
-
-    if (option.store(dcb, ec))
-      return ec;
-
-    if (!::SetCommState(handle_service_.native(impl), &dcb))
-    {
-      DWORD last_error = ::GetLastError();
-      ec = boost::system::error_code(last_error,
-          boost::asio::error::get_system_category());
-      return ec;
-    }
-
-    ec = boost::system::error_code();
-    return ec;
+    return do_set_option(impl,
+        &win_iocp_serial_port_service::store_option<SettableSerialPortOption>,
+        &option, ec);
   }
 
   // Get an option from the serial port.
@@ -216,20 +128,9 @@ public:
   boost::system::error_code get_option(const implementation_type& impl,
       GettableSerialPortOption& option, boost::system::error_code& ec) const
   {
-    using namespace std; // For memcpy.
-
-    ::DCB dcb;
-    memset(&dcb, 0, sizeof(DCB));
-    dcb.DCBlength = sizeof(DCB);
-    if (!::GetCommState(handle_service_.native(impl), &dcb))
-    {
-      DWORD last_error = ::GetLastError();
-      ec = boost::system::error_code(last_error,
-          boost::asio::error::get_system_category());
-      return ec;
-    }
-
-    return option.load(dcb, ec);
+    return do_get_option(impl,
+        &win_iocp_serial_port_service::load_option<GettableSerialPortOption>,
+        &option, ec);
   }
 
   // Send a break sequence to the serial port.
@@ -237,6 +138,7 @@ public:
       boost::system::error_code& ec)
   {
     ec = boost::asio::error::operation_not_supported;
+    BOOST_ASIO_ERROR_LOCATION(ec);
     return ec;
   }
 
@@ -250,11 +152,12 @@ public:
 
   // Start an asynchronous write. The data being written must be valid for the
   // lifetime of the asynchronous operation.
-  template <typename ConstBufferSequence, typename Handler>
+  template <typename ConstBufferSequence, typename Handler, typename IoExecutor>
   void async_write_some(implementation_type& impl,
-      const ConstBufferSequence& buffers, Handler handler)
+      const ConstBufferSequence& buffers,
+      Handler& handler, const IoExecutor& io_ex)
   {
-    handle_service_.async_write_some(impl, buffers, handler);
+    handle_service_.async_write_some(impl, buffers, handler, io_ex);
   }
 
   // Read some data. Returns the number of bytes received.
@@ -267,14 +170,52 @@ public:
 
   // Start an asynchronous read. The buffer for the data being received must be
   // valid for the lifetime of the asynchronous operation.
-  template <typename MutableBufferSequence, typename Handler>
+  template <typename MutableBufferSequence,
+      typename Handler, typename IoExecutor>
   void async_read_some(implementation_type& impl,
-      const MutableBufferSequence& buffers, Handler handler)
+      const MutableBufferSequence& buffers,
+      Handler& handler, const IoExecutor& io_ex)
   {
-    handle_service_.async_read_some(impl, buffers, handler);
+    handle_service_.async_read_some(impl, buffers, handler, io_ex);
   }
 
 private:
+  // Function pointer type for storing a serial port option.
+  typedef boost::system::error_code (*store_function_type)(
+      const void*, ::DCB&, boost::system::error_code&);
+
+  // Helper function template to store a serial port option.
+  template <typename SettableSerialPortOption>
+  static boost::system::error_code store_option(const void* option,
+      ::DCB& storage, boost::system::error_code& ec)
+  {
+    static_cast<const SettableSerialPortOption*>(option)->store(storage, ec);
+    return ec;
+  }
+
+  // Helper function to set a serial port option.
+  BOOST_ASIO_DECL boost::system::error_code do_set_option(
+      implementation_type& impl, store_function_type store,
+      const void* option, boost::system::error_code& ec);
+
+  // Function pointer type for loading a serial port option.
+  typedef boost::system::error_code (*load_function_type)(
+      void*, const ::DCB&, boost::system::error_code&);
+
+  // Helper function template to load a serial port option.
+  template <typename GettableSerialPortOption>
+  static boost::system::error_code load_option(void* option,
+      const ::DCB& storage, boost::system::error_code& ec)
+  {
+    static_cast<GettableSerialPortOption*>(option)->load(storage, ec);
+    return ec;
+  }
+
+  // Helper function to get a serial port option.
+  BOOST_ASIO_DECL boost::system::error_code do_get_option(
+      const implementation_type& impl, load_function_type load,
+      void* option, boost::system::error_code& ec) const;
+
   // The implementation used for initiating asynchronous operations.
   win_iocp_handle_service handle_service_;
 };
@@ -283,8 +224,12 @@ private:
 } // namespace asio
 } // namespace boost
 
-#endif // defined(BOOST_ASIO_HAS_IOCP)
-
 #include <boost/asio/detail/pop_options.hpp>
+
+#if defined(BOOST_ASIO_HEADER_ONLY)
+# include <boost/asio/detail/impl/win_iocp_serial_port_service.ipp>
+#endif // defined(BOOST_ASIO_HEADER_ONLY)
+
+#endif // defined(BOOST_ASIO_HAS_IOCP) && defined(BOOST_ASIO_HAS_SERIAL_PORT)
 
 #endif // BOOST_ASIO_DETAIL_WIN_IOCP_SERIAL_PORT_SERVICE_HPP

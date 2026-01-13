@@ -7,6 +7,8 @@
 #  *                                                                          *
 #  ************************************************************************** */
 #
+# /* Revised by Edward Diener (2020) */
+#
 # /* See http://www.boost.org for most recent version. */
 #
 # if defined(BOOST_PP_ITERATION_LIMITS)
@@ -17,7 +19,7 @@
 #    include <boost/preprocessor/iteration/detail/bounds/lower5.hpp>
 #    define BOOST_PP_VALUE BOOST_PP_TUPLE_ELEM(2, 1, BOOST_PP_ITERATION_LIMITS)
 #    include <boost/preprocessor/iteration/detail/bounds/upper5.hpp>
-#    define BOOST_PP_ITERATION_FLAGS_5 0
+#    define BOOST_PP_ITERATION_FLAGS_5() 0
 #    undef BOOST_PP_ITERATION_LIMITS
 # elif defined(BOOST_PP_ITERATION_PARAMS_5)
 #    define BOOST_PP_VALUE BOOST_PP_ARRAY_ELEM(0, BOOST_PP_ITERATION_PARAMS_5)
@@ -26,9 +28,9 @@
 #    include <boost/preprocessor/iteration/detail/bounds/upper5.hpp>
 #    define BOOST_PP_FILENAME_5 BOOST_PP_ARRAY_ELEM(2, BOOST_PP_ITERATION_PARAMS_5)
 #    if BOOST_PP_ARRAY_SIZE(BOOST_PP_ITERATION_PARAMS_5) >= 4
-#        define BOOST_PP_ITERATION_FLAGS_5 BOOST_PP_ARRAY_ELEM(3, BOOST_PP_ITERATION_PARAMS_5)
+#        define BOOST_PP_ITERATION_FLAGS_5() BOOST_PP_ARRAY_ELEM(3, BOOST_PP_ITERATION_PARAMS_5)
 #    else
-#        define BOOST_PP_ITERATION_FLAGS_5 0
+#        define BOOST_PP_ITERATION_FLAGS_5() 0
 #    endif
 # else
 #    error BOOST_PP_ERROR:  depth #5 iteration boundaries or filename not defined
@@ -40,6 +42,11 @@
 # if (BOOST_PP_ITERATION_START_5) > (BOOST_PP_ITERATION_FINISH_5)
 #    include <boost/preprocessor/iteration/detail/iter/reverse5.hpp>
 # else
+#
+# include <boost/preprocessor/config/config.hpp>
+#
+# if ~BOOST_PP_CONFIG_FLAGS() & BOOST_PP_CONFIG_STRICT()
+#
 #    if BOOST_PP_ITERATION_START_5 <= 0 && BOOST_PP_ITERATION_FINISH_5 >= 0
 #        define BOOST_PP_ITERATION_5 0
 #        include BOOST_PP_FILENAME_5
@@ -1325,6 +1332,26 @@
 #        include BOOST_PP_FILENAME_5
 #        undef BOOST_PP_ITERATION_5
 #    endif
+#
+# else
+#
+# include <boost/preprocessor/config/limits.hpp>
+#
+#    if BOOST_PP_LIMIT_ITERATION == 256
+#    include <boost/preprocessor/iteration/detail/iter/limits/forward5_256.hpp>
+#    elif BOOST_PP_LIMIT_ITERATION == 512
+#    include <boost/preprocessor/iteration/detail/iter/limits/forward5_256.hpp>
+#    include <boost/preprocessor/iteration/detail/iter/limits/forward5_512.hpp>
+#    elif BOOST_PP_LIMIT_ITERATION == 1024
+#    include <boost/preprocessor/iteration/detail/iter/limits/forward5_256.hpp>
+#    include <boost/preprocessor/iteration/detail/iter/limits/forward5_512.hpp>
+#    include <boost/preprocessor/iteration/detail/iter/limits/forward5_1024.hpp>
+#    else
+#    error Incorrect value for the BOOST_PP_LIMIT_ITERATION limit
+#    endif
+#
+# endif
+#
 # endif
 #
 # undef BOOST_PP_ITERATION_DEPTH

@@ -23,7 +23,7 @@
 #include <boost/iostreams/detail/config/windows_posix.hpp>
 
 // Handle open, close, read, and write
-#ifdef __BORLANDC__
+#ifdef BOOST_BORLANDC
 # define BOOST_IOSTREAMS_RTL(x) BOOST_JOIN(_rtl_, x)
 #elif defined BOOST_IOSTREAMS_WINDOWS
 # define BOOST_IOSTREAMS_RTL(x) BOOST_JOIN(_, x)
@@ -45,7 +45,7 @@
 #  define BOOST_IOSTREAMS_FD_OFFSET  long
 # endif
 #else // Non-windows
-# if defined(_LARGEFILE64_SOURCE) && \
+# if defined(_LARGEFILE64_SOURCE) && !defined(__APPLE__) && \
          (!defined(_FILE_OFFSET_BITS) || _FILE_OFFSET_BITS != 64) || \
      defined(_AIX) && !defined(_LARGE_FILES) || \
      defined(BOOST_IOSTREAMS_HAS_LARGE_FILE_EXTENSIONS)

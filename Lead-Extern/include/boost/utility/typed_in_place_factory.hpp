@@ -5,7 +5,7 @@
 // License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 //
-// See http://www.boost.org/lib/optional for documentation.
+// See http://www.boost.org/libs/optional for documentation.
 //
 // You are welcome to contact the author at:
 //  fernando_cacciola@hotmail.com
@@ -19,15 +19,20 @@ namespace boost {
 
 class typed_in_place_factory_base {} ;
 
+#ifndef BOOST_UTILITY_DOCS
 #define  BOOST_PP_ITERATION_LIMITS (0, BOOST_MAX_INPLACE_FACTORY_ARITY)
 #define  BOOST_PP_FILENAME_1 <boost/utility/typed_in_place_factory.hpp>
-#include BOOST_PP_ITERATE()
+#endif // BOOST_UTILITY_DOCS
 
+#include BOOST_PP_ITERATE()
 } // namespace boost
 
 #include <boost/utility/detail/in_place_factory_suffix.hpp>
 
+#ifndef BOOST_UTILITY_DOCS
 #define BOOST_UTILITY_TYPED_INPLACE_FACTORY_04APR2007_HPP
+#endif // BOOST_UTILITY_DOCS
+
 #else 
 #define N BOOST_PP_ITERATION()
 

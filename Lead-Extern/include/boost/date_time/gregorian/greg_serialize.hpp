@@ -6,43 +6,52 @@
  * Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland, Bart Garst
- * $Date: 2008-11-12 14:37:53 -0500 (Wed, 12 Nov 2008) $
+ * $Date$
  */
 
 #include "boost/date_time/gregorian/gregorian_types.hpp"
 #include "boost/date_time/gregorian/parsers.hpp"
-#include "boost/serialization/split_free.hpp"
+#include "boost/core/nvp.hpp"
 
-  
-// macros to split serialize functions into save & load functions
-// An expanded version is below for gregorian::date
-// NOTE: these macros define template functions in the boost::serialization namespace.
-// They must be expanded *outside* of any namespace
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::date_duration)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::date_duration::duration_rep)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::date_period)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::greg_month)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::greg_day)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::greg_weekday)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::partial_date)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::nth_kday_of_month)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::first_kday_of_month)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::last_kday_of_month)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::first_kday_before)
-BOOST_SERIALIZATION_SPLIT_FREE(::boost::gregorian::first_kday_after)
 
 namespace boost {
+
+  namespace gregorian {
+    std::string to_iso_string(const date&);
+  }
+
 namespace serialization {
+
+// A macro to split serialize functions into save & load functions.
+// It is here to avoid dependency on Boost.Serialization just for the
+// BOOST_SERIALIZATION_SPLIT_FREE macro
+#define BOOST_DATE_TIME_SPLIT_FREE(T)                                         \
+template<class Archive>                                                       \
+inline void serialize(Archive & ar,                                           \
+                      T & t,                                                  \
+                      const unsigned int file_version)                        \
+{                                                                             \
+    split_free(ar, t, file_version);                                          \
+}
 
 /*! Method that does serialization for gregorian::date -- splits to load/save
  */
-template<class Archive>                         
-inline void serialize(Archive & ar,                               
-                      ::boost::gregorian::date & d,
-                      const unsigned int file_version)
-{
-  split_free(ar, d, file_version);              
-}                                               
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::date)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::date_duration)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::date_duration::duration_rep)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::date_period)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::greg_year)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::greg_month)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::greg_day)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::greg_weekday)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::partial_date)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::nth_kday_of_month)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::first_kday_of_month)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::last_kday_of_month)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::first_kday_before)
+BOOST_DATE_TIME_SPLIT_FREE(::boost::gregorian::first_kday_after)
+
+#undef BOOST_DATE_TIME_SPLIT_FREE
 
 //! Function to save gregorian::date objects using serialization lib
 /*! Dates are serialized into a string for transport and storage. 
@@ -86,7 +95,7 @@ void load(Archive & ar,
 
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, 
+inline void load_construct_data(Archive & /*ar*/, 
                                 ::boost::gregorian::date* dp, 
                                 const unsigned int /*file_version*/)
 {
@@ -115,7 +124,7 @@ void load(Archive & ar, gregorian::date_duration & dd, unsigned int /*version*/)
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, gregorian::date_duration* dd, 
+inline void load_construct_data(Archive & /*ar*/, gregorian::date_duration* dd, 
                                 const unsigned int /*file_version*/)
 {
   ::new(dd) gregorian::date_duration(gregorian::not_a_date_time);
@@ -141,7 +150,7 @@ void load(Archive & ar, gregorian::date_duration::duration_rep & dr, unsigned in
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, gregorian::date_duration::duration_rep* dr, 
+inline void load_construct_data(Archive & /*ar*/, gregorian::date_duration::duration_rep* dr, 
                                 const unsigned int /*file_version*/)
 {
   ::new(dr) gregorian::date_duration::duration_rep(0);
@@ -177,12 +186,38 @@ void load(Archive & ar, gregorian::date_period& dp, unsigned int /*version*/)
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, gregorian::date_period* dp, 
+inline void load_construct_data(Archive & /*ar*/, gregorian::date_period* dp, 
                                 const unsigned int /*file_version*/)
 {
   gregorian::date d(gregorian::not_a_date_time);
   gregorian::date_duration dd(1);
   ::new(dp) gregorian::date_period(d,dd);
+}
+
+/**** greg_year ****/
+
+//! Function to save gregorian::greg_year objects using serialization lib
+template<class Archive>
+void save(Archive & ar, const gregorian::greg_year& gy, 
+          unsigned int /*version*/)
+{
+  unsigned short us = gy;
+  ar & make_nvp("greg_year", us);
+}
+//! Function to load gregorian::greg_year objects using serialization lib
+template<class Archive>
+void load(Archive & ar, gregorian::greg_year& gy, unsigned int /*version*/)
+{
+  unsigned short us;
+  ar & make_nvp("greg_year", us);
+  gy = gregorian::greg_year(us);
+}
+//!override needed b/c no default constructor
+template<class Archive>
+inline void load_construct_data(Archive & /*ar*/, gregorian::greg_year* gy, 
+                                const unsigned int /*file_version*/)
+{
+  ::new(gy) gregorian::greg_year(1900);
 }
 
 /**** greg_month ****/
@@ -205,7 +240,7 @@ void load(Archive & ar, gregorian::greg_month& gm, unsigned int /*version*/)
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, gregorian::greg_month* gm, 
+inline void load_construct_data(Archive & /*ar*/, gregorian::greg_month* gm, 
                                 const unsigned int /*file_version*/)
 {
   ::new(gm) gregorian::greg_month(1);
@@ -231,7 +266,7 @@ void load(Archive & ar, gregorian::greg_day& gd, unsigned int /*version*/)
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, gregorian::greg_day* gd, 
+inline void load_construct_data(Archive & /*ar*/, gregorian::greg_day* gd, 
                                 const unsigned int /*file_version*/)
 {
   ::new(gd) gregorian::greg_day(1);
@@ -257,7 +292,7 @@ void load(Archive & ar, gregorian::greg_weekday& gd, unsigned int /*version*/)
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, gregorian::greg_weekday* gd, 
+inline void load_construct_data(Archive & /*ar*/, gregorian::greg_weekday* gd, 
                                 const unsigned int /*file_version*/)
 {
   ::new(gd) gregorian::greg_weekday(1);
@@ -295,7 +330,7 @@ void load(Archive & ar, gregorian::partial_date& pd, unsigned int /*version*/)
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, gregorian::partial_date* pd, 
+inline void load_construct_data(Archive & /*ar*/, gregorian::partial_date* pd, 
                                 const unsigned int /*file_version*/)
 {
   gregorian::greg_month gm(1);
@@ -338,7 +373,7 @@ void load(Archive & ar, gregorian::nth_kday_of_month& nkd, unsigned int /*versio
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, 
+inline void load_construct_data(Archive & /*ar*/, 
                                 gregorian::nth_kday_of_month* nkd, 
                                 const unsigned int /*file_version*/)
 {
@@ -378,7 +413,7 @@ void load(Archive & ar, gregorian::first_kday_of_month& fkd, unsigned int /*vers
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, 
+inline void load_construct_data(Archive & /*ar*/, 
                                 gregorian::first_kday_of_month* fkd, 
                                 const unsigned int /*file_version*/)
 {
@@ -417,7 +452,7 @@ void load(Archive & ar, gregorian::last_kday_of_month& lkd, unsigned int /*versi
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, 
+inline void load_construct_data(Archive & /*ar*/, 
                                 gregorian::last_kday_of_month* lkd, 
                                 const unsigned int /*file_version*/)
 {
@@ -446,7 +481,7 @@ void load(Archive & ar, gregorian::first_kday_before& fkdb, unsigned int /*versi
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, 
+inline void load_construct_data(Archive & /*ar*/, 
                                 gregorian::first_kday_before* fkdb, 
                                 const unsigned int /*file_version*/)
 {
@@ -475,7 +510,7 @@ void load(Archive & ar, gregorian::first_kday_after& fkda, unsigned int /*versio
 }
 //!override needed b/c no default constructor
 template<class Archive>
-inline void load_construct_data(Archive & ar, 
+inline void load_construct_data(Archive & /*ar*/, 
                                 gregorian::first_kday_after* fkda, 
                                 const unsigned int /*file_version*/)
 {

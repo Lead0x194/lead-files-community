@@ -9,11 +9,17 @@
 //  See http://www.boost.org for updates, documentation, and revision history.
 
 #include <cstddef> // NULL
-#include <boost/serialization/pfto.hpp>
+#include <algorithm> // std::copy
+#include <boost/config.hpp>
+#if defined(BOOST_NO_STDC_NAMESPACE)
+namespace std{ 
+    using ::size_t; 
+} // namespace std
+#endif
+
+#include <boost/core/uncaught_exceptions.hpp>
 
 #include <boost/archive/basic_text_oprimitive.hpp>
-#include <boost/archive/codecvt_null.hpp>
-#include <boost/archive/add_facet.hpp>
 
 #include <boost/archive/iterators/base64_from_binary.hpp>
 #include <boost/archive/iterators/insert_linebreaks.hpp>
@@ -25,19 +31,19 @@ namespace archive {
 
 // translate to base64 and copy in to buffer.
 template<class OStream>
-BOOST_ARCHIVE_OR_WARCHIVE_DECL(void)
+BOOST_ARCHIVE_OR_WARCHIVE_DECL void
 basic_text_oprimitive<OStream>::save_binary(
     const void *address, 
     std::size_t count
 ){
-    typedef BOOST_DEDUCED_TYPENAME OStream::char_type CharType;
+    typedef typename OStream::char_type CharType;
     
     if(0 == count)
         return;
     
     if(os.fail())
         boost::serialization::throw_exception(
-            archive_exception(archive_exception::stream_error)
+            archive_exception(archive_exception::output_stream_error)
         );
         
     os.put('\n');
@@ -51,16 +57,16 @@ basic_text_oprimitive<OStream>::save_binary(
                     8
                 >
             > 
-            ,72
+            ,76
             ,const char // cwpro8 needs this
         > 
         base64_text;
 
     boost::archive::iterators::ostream_iterator<CharType> oi(os);
     std::copy(
-        base64_text(BOOST_MAKE_PFTO_WRAPPER(static_cast<const char *>(address))),
+        base64_text(static_cast<const char *>(address)),
         base64_text(
-            BOOST_MAKE_PFTO_WRAPPER(static_cast<const char *>(address) + count)
+            static_cast<const char *>(address) + count
         ),
         oi
     );
@@ -74,39 +80,36 @@ basic_text_oprimitive<OStream>::save_binary(
 }
 
 template<class OStream>
-BOOST_ARCHIVE_OR_WARCHIVE_DECL(BOOST_PP_EMPTY())
+BOOST_ARCHIVE_OR_WARCHIVE_DECL
 basic_text_oprimitive<OStream>::basic_text_oprimitive(
     OStream & os_,
     bool no_codecvt
 ) : 
-#ifndef BOOST_NO_STD_LOCALE
     os(os_),
     flags_saver(os_),
+#ifndef BOOST_NO_STD_LOCALE
     precision_saver(os_),
-    archive_locale(NULL),
-    locale_saver(* os_.rdbuf())
+    codecvt_null_facet(1),
+    archive_locale(os.getloc(), & codecvt_null_facet),
+    locale_saver(os)
 {
     if(! no_codecvt){
-        archive_locale.reset(
-            add_facet(
-                std::locale::classic(), 
-                new codecvt_null<BOOST_DEDUCED_TYPENAME OStream::char_type>
-            )
-        );
-        os.imbue(* archive_locale);
+        os_.flush();
+        os_.imbue(archive_locale);
     }
-    os << std::noboolalpha;
+    os_ << std::noboolalpha;
 }
 #else
-    os(os_),
-    flags_saver(os_),
     precision_saver(os_)
 {}
 #endif
 
+
 template<class OStream>
-BOOST_ARCHIVE_OR_WARCHIVE_DECL(BOOST_PP_EMPTY())
+BOOST_ARCHIVE_OR_WARCHIVE_DECL
 basic_text_oprimitive<OStream>::~basic_text_oprimitive(){
+    if(boost::core::uncaught_exceptions() > 0)
+        return;
     os << std::endl;
 }
 

@@ -2,7 +2,7 @@
 // buffered_stream.hpp
 // ~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,19 +15,16 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/push_options.hpp>
+#include <boost/asio/detail/config.hpp>
 #include <cstddef>
-#include <boost/config.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
+#include <boost/asio/async_result.hpp>
 #include <boost/asio/buffered_read_stream.hpp>
 #include <boost/asio/buffered_write_stream.hpp>
 #include <boost/asio/buffered_stream_fwd.hpp>
-#include <boost/asio/error.hpp>
-#include <boost/asio/io_service.hpp>
 #include <boost/asio/detail/noncopyable.hpp>
+#include <boost/asio/error.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -50,24 +47,27 @@ class buffered_stream
 {
 public:
   /// The type of the next layer.
-  typedef typename boost::remove_reference<Stream>::type next_layer_type;
+  typedef remove_reference_t<Stream> next_layer_type;
 
   /// The type of the lowest layer.
   typedef typename next_layer_type::lowest_layer_type lowest_layer_type;
 
+  /// The type of the executor associated with the object.
+  typedef typename lowest_layer_type::executor_type executor_type;
+
   /// Construct, passing the specified argument to initialise the next layer.
   template <typename Arg>
-  explicit buffered_stream(Arg& a)
-    : inner_stream_impl_(a),
+  explicit buffered_stream(Arg&& a)
+    : inner_stream_impl_(static_cast<Arg&&>(a)),
       stream_impl_(inner_stream_impl_)
   {
   }
 
   /// Construct, passing the specified argument to initialise the next layer.
   template <typename Arg>
-  explicit buffered_stream(Arg& a, std::size_t read_buffer_size,
-      std::size_t write_buffer_size)
-    : inner_stream_impl_(a, write_buffer_size),
+  explicit buffered_stream(Arg&& a,
+      std::size_t read_buffer_size, std::size_t write_buffer_size)
+    : inner_stream_impl_(static_cast<Arg&&>(a), write_buffer_size),
       stream_impl_(inner_stream_impl_, read_buffer_size)
   {
   }
@@ -90,17 +90,10 @@ public:
     return stream_impl_.lowest_layer();
   }
 
-  /// (Deprecated: use get_io_service().) Get the io_service associated with
-  /// the object.
-  boost::asio::io_service& io_service()
+  /// Get the executor associated with the object.
+  executor_type get_executor() noexcept
   {
-    return stream_impl_.get_io_service();
-  }
-
-  /// Get the io_service associated with the object.
-  boost::asio::io_service& get_io_service()
-  {
-    return stream_impl_.get_io_service();
+    return stream_impl_.lowest_layer().get_executor();
   }
 
   /// Close the stream.
@@ -110,9 +103,10 @@ public:
   }
 
   /// Close the stream.
-  boost::system::error_code close(boost::system::error_code& ec)
+  BOOST_ASIO_SYNC_OP_VOID close(boost::system::error_code& ec)
   {
-    return stream_impl_.close(ec);
+    stream_impl_.close(ec);
+    BOOST_ASIO_SYNC_OP_VOID_RETURN(ec);
   }
 
   /// Flush all data from the buffer to the next layer. Returns the number of
@@ -132,10 +126,21 @@ public:
   }
 
   /// Start an asynchronous flush.
-  template <typename WriteHandler>
-  void async_flush(WriteHandler handler)
+  /**
+   * @par Completion Signature
+   * @code void(boost::system::error_code, std::size_t) @endcode
+   */
+  template <
+      BOOST_ASIO_COMPLETION_TOKEN_FOR(void (boost::system::error_code,
+        std::size_t)) WriteHandler = default_completion_token_t<executor_type>>
+  auto async_flush(
+      WriteHandler&& handler = default_completion_token_t<executor_type>())
+    -> decltype(
+      declval<buffered_write_stream<Stream>&>().async_flush(
+        static_cast<WriteHandler&&>(handler)))
   {
-    return stream_impl_.next_layer().async_flush(handler);
+    return stream_impl_.next_layer().async_flush(
+        static_cast<WriteHandler&&>(handler));
   }
 
   /// Write the given data to the stream. Returns the number of bytes written.
@@ -157,11 +162,21 @@ public:
 
   /// Start an asynchronous write. The data being written must be valid for the
   /// lifetime of the asynchronous operation.
-  template <typename ConstBufferSequence, typename WriteHandler>
-  void async_write_some(const ConstBufferSequence& buffers,
-      WriteHandler handler)
+  /**
+   * @par Completion Signature
+   * @code void(boost::system::error_code, std::size_t) @endcode
+   */
+  template <typename ConstBufferSequence,
+      BOOST_ASIO_COMPLETION_TOKEN_FOR(void (boost::system::error_code,
+        std::size_t)) WriteHandler = default_completion_token_t<executor_type>>
+  auto async_write_some(const ConstBufferSequence& buffers,
+      WriteHandler&& handler = default_completion_token_t<executor_type>())
+    -> decltype(
+      declval<Stream&>().async_write_some(buffers,
+        static_cast<WriteHandler&&>(handler)))
   {
-    stream_impl_.async_write_some(buffers, handler);
+    return stream_impl_.async_write_some(buffers,
+        static_cast<WriteHandler&&>(handler));
   }
 
   /// Fill the buffer with some data. Returns the number of bytes placed in the
@@ -179,10 +194,21 @@ public:
   }
 
   /// Start an asynchronous fill.
-  template <typename ReadHandler>
-  void async_fill(ReadHandler handler)
+  /**
+   * @par Completion Signature
+   * @code void(boost::system::error_code, std::size_t) @endcode
+   */
+  template <
+      BOOST_ASIO_COMPLETION_TOKEN_FOR(void (boost::system::error_code,
+        std::size_t)) ReadHandler = default_completion_token_t<executor_type>>
+  auto async_fill(
+      ReadHandler&& handler = default_completion_token_t<executor_type>())
+    -> decltype(
+      declval<buffered_read_stream<
+        buffered_write_stream<Stream>>&>().async_fill(
+          static_cast<ReadHandler&&>(handler)))
   {
-    stream_impl_.async_fill(handler);
+    return stream_impl_.async_fill(static_cast<ReadHandler&&>(handler));
   }
 
   /// Read some data from the stream. Returns the number of bytes read. Throws
@@ -204,11 +230,21 @@ public:
 
   /// Start an asynchronous read. The buffer into which the data will be read
   /// must be valid for the lifetime of the asynchronous operation.
-  template <typename MutableBufferSequence, typename ReadHandler>
-  void async_read_some(const MutableBufferSequence& buffers,
-      ReadHandler handler)
+  /**
+   * @par Completion Signature
+   * @code void(boost::system::error_code, std::size_t) @endcode
+   */
+  template <typename MutableBufferSequence,
+      BOOST_ASIO_COMPLETION_TOKEN_FOR(void (boost::system::error_code,
+        std::size_t)) ReadHandler = default_completion_token_t<executor_type>>
+  auto async_read_some(const MutableBufferSequence& buffers,
+      ReadHandler&& handler = default_completion_token_t<executor_type>())
+    -> decltype(
+      declval<Stream&>().async_read_some(buffers,
+        static_cast<ReadHandler&&>(handler)))
   {
-    stream_impl_.async_read_some(buffers, handler);
+    return stream_impl_.async_read_some(buffers,
+        static_cast<ReadHandler&&>(handler));
   }
 
   /// Peek at the incoming data on the stream. Returns the number of bytes read.

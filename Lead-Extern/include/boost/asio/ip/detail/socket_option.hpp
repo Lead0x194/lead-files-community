@@ -1,8 +1,8 @@
 //
-// socket_option.hpp
-// ~~~~~~~~~~~~~~~~~
+// detail/socket_option.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,18 +15,16 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/push_options.hpp>
+#include <boost/asio/detail/config.hpp>
 #include <cstddef>
 #include <cstring>
-#include <boost/config.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
-#include <boost/asio/ip/address.hpp>
+#include <stdexcept>
 #include <boost/asio/detail/socket_ops.hpp>
 #include <boost/asio/detail/socket_types.hpp>
+#include <boost/asio/detail/throw_exception.hpp>
+#include <boost/asio/ip/address.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -42,7 +40,7 @@ public:
 #if defined(__sun) || defined(__osf__)
   typedef unsigned char ipv4_value_type;
   typedef unsigned char ipv6_value_type;
-#elif defined(_AIX) || defined(__hpux) || defined(__QNXNTO__) 
+#elif defined(_AIX) || defined(__hpux) || defined(__QNXNTO__)
   typedef unsigned char ipv4_value_type;
   typedef unsigned int ipv6_value_type;
 #else
@@ -144,7 +142,7 @@ public:
       if (s != sizeof(ipv6_value_))
       {
         std::length_error ex("multicast_enable_loopback socket option resize");
-        boost::throw_exception(ex);
+        boost::asio::detail::throw_exception(ex);
       }
       ipv4_value_ = ipv6_value_ ? 1 : 0;
     }
@@ -153,7 +151,7 @@ public:
       if (s != sizeof(ipv4_value_))
       {
         std::length_error ex("multicast_enable_loopback socket option resize");
-        boost::throw_exception(ex);
+        boost::asio::detail::throw_exception(ex);
       }
       ipv6_value_ = ipv4_value_ ? 1 : 0;
     }
@@ -240,7 +238,7 @@ public:
     if (s != sizeof(value_))
     {
       std::length_error ex("unicast hops socket option resize");
-      boost::throw_exception(ex);
+      boost::asio::detail::throw_exception(ex);
     }
 #if defined(__hpux)
     if (value_ < 0)
@@ -257,7 +255,7 @@ template <int IPv4_Level, int IPv4_Name, int IPv6_Level, int IPv6_Name>
 class multicast_hops
 {
 public:
-#if defined(BOOST_WINDOWS) && defined(UNDER_CE)
+#if defined(BOOST_ASIO_WINDOWS) && defined(UNDER_CE)
   typedef int ipv4_value_type;
 #else
   typedef unsigned char ipv4_value_type;
@@ -277,7 +275,7 @@ public:
     if (v < 0 || v > 255)
     {
       std::out_of_range ex("multicast hops value out of range");
-      boost::throw_exception(ex);
+      boost::asio::detail::throw_exception(ex);
     }
     ipv4_value_ = (ipv4_value_type)v;
     ipv6_value_ = v;
@@ -289,7 +287,7 @@ public:
     if (v < 0 || v > 255)
     {
       std::out_of_range ex("multicast hops value out of range");
-      boost::throw_exception(ex);
+      boost::asio::detail::throw_exception(ex);
     }
     ipv4_value_ = (ipv4_value_type)v;
     ipv6_value_ = v;
@@ -356,7 +354,7 @@ public:
       if (s != sizeof(ipv6_value_))
       {
         std::length_error ex("multicast hops socket option resize");
-        boost::throw_exception(ex);
+        boost::asio::detail::throw_exception(ex);
       }
       if (ipv6_value_ < 0)
         ipv4_value_ = 0;
@@ -370,7 +368,7 @@ public:
       if (s != sizeof(ipv4_value_))
       {
         std::length_error ex("multicast hops socket option resize");
-        boost::throw_exception(ex);
+        boost::asio::detail::throw_exception(ex);
       }
       ipv6_value_ = ipv4_value_;
     }
@@ -388,87 +386,61 @@ class multicast_request
 public:
   // Default constructor.
   multicast_request()
+    : ipv4_value_(), // Zero-initialisation gives the "any" address.
+      ipv6_value_() // Zero-initialisation gives the "any" address.
   {
-    ipv4_value_.imr_multiaddr.s_addr =
-      boost::asio::detail::socket_ops::host_to_network_long(
-          boost::asio::ip::address_v4::any().to_ulong());
-    ipv4_value_.imr_interface.s_addr =
-      boost::asio::detail::socket_ops::host_to_network_long(
-          boost::asio::ip::address_v4::any().to_ulong());
-
-    boost::asio::detail::in6_addr_type tmp_addr = IN6ADDR_ANY_INIT;
-    ipv6_value_.ipv6mr_multiaddr = tmp_addr;
-    ipv6_value_.ipv6mr_interface = 0;
   }
 
   // Construct with multicast address only.
-  explicit multicast_request(const boost::asio::ip::address& multicast_address)
+  explicit multicast_request(const address& multicast_address)
+    : ipv4_value_(), // Zero-initialisation gives the "any" address.
+      ipv6_value_() // Zero-initialisation gives the "any" address.
   {
     if (multicast_address.is_v6())
     {
-      ipv4_value_.imr_multiaddr.s_addr =
-        boost::asio::detail::socket_ops::host_to_network_long(
-            boost::asio::ip::address_v4::any().to_ulong());
-      ipv4_value_.imr_interface.s_addr =
-        boost::asio::detail::socket_ops::host_to_network_long(
-            boost::asio::ip::address_v4::any().to_ulong());
-
       using namespace std; // For memcpy.
-      boost::asio::ip::address_v6 ipv6_address = multicast_address.to_v6();
-      boost::asio::ip::address_v6::bytes_type bytes = ipv6_address.to_bytes();
-      memcpy(ipv6_value_.ipv6mr_multiaddr.s6_addr, bytes.elems, 16);
-      ipv6_value_.ipv6mr_interface = 0;
+      address_v6 ipv6_address = multicast_address.to_v6();
+      address_v6::bytes_type bytes = ipv6_address.to_bytes();
+      memcpy(ipv6_value_.ipv6mr_multiaddr.s6_addr, bytes.data(), 16);
+      ipv6_value_.ipv6mr_interface = ipv6_address.scope_id();
     }
     else
     {
       ipv4_value_.imr_multiaddr.s_addr =
         boost::asio::detail::socket_ops::host_to_network_long(
-            multicast_address.to_v4().to_ulong());
+            multicast_address.to_v4().to_uint());
       ipv4_value_.imr_interface.s_addr =
         boost::asio::detail::socket_ops::host_to_network_long(
-            boost::asio::ip::address_v4::any().to_ulong());
-
-      boost::asio::detail::in6_addr_type tmp_addr = IN6ADDR_ANY_INIT;
-      ipv6_value_.ipv6mr_multiaddr = tmp_addr;
-      ipv6_value_.ipv6mr_interface = 0;
+            address_v4::any().to_uint());
     }
   }
 
   // Construct with multicast address and IPv4 address specifying an interface.
-  explicit multicast_request(
-      const boost::asio::ip::address_v4& multicast_address,
-      const boost::asio::ip::address_v4& network_interface
-        = boost::asio::ip::address_v4::any())
+  explicit multicast_request(const address_v4& multicast_address,
+      const address_v4& network_interface = address_v4::any())
+    : ipv6_value_() // Zero-initialisation gives the "any" address.
   {
     ipv4_value_.imr_multiaddr.s_addr =
       boost::asio::detail::socket_ops::host_to_network_long(
-          multicast_address.to_ulong());
+          multicast_address.to_uint());
     ipv4_value_.imr_interface.s_addr =
       boost::asio::detail::socket_ops::host_to_network_long(
-          network_interface.to_ulong());
-
-    boost::asio::detail::in6_addr_type tmp_addr = IN6ADDR_ANY_INIT;
-    ipv6_value_.ipv6mr_multiaddr = tmp_addr;
-    ipv6_value_.ipv6mr_interface = 0;
+          network_interface.to_uint());
   }
 
   // Construct with multicast address and IPv6 network interface index.
   explicit multicast_request(
-      const boost::asio::ip::address_v6& multicast_address,
+      const address_v6& multicast_address,
       unsigned long network_interface = 0)
+    : ipv4_value_() // Zero-initialisation gives the "any" address.
   {
-    ipv4_value_.imr_multiaddr.s_addr =
-      boost::asio::detail::socket_ops::host_to_network_long(
-          boost::asio::ip::address_v4::any().to_ulong());
-    ipv4_value_.imr_interface.s_addr =
-      boost::asio::detail::socket_ops::host_to_network_long(
-          boost::asio::ip::address_v4::any().to_ulong());
-
     using namespace std; // For memcpy.
-    boost::asio::ip::address_v6::bytes_type bytes =
-      multicast_address.to_bytes();
-    memcpy(ipv6_value_.ipv6mr_multiaddr.s6_addr, bytes.elems, 16);
-    ipv6_value_.ipv6mr_interface = network_interface;
+    address_v6::bytes_type bytes = multicast_address.to_bytes();
+    memcpy(ipv6_value_.ipv6mr_multiaddr.s6_addr, bytes.data(), 16);
+    if (network_interface)
+      ipv6_value_.ipv6mr_interface = network_interface;
+    else
+      ipv6_value_.ipv6mr_interface = multicast_address.scope_id();
   }
 
   // Get the level of the socket option.
@@ -522,16 +494,16 @@ public:
   {
     ipv4_value_.s_addr =
       boost::asio::detail::socket_ops::host_to_network_long(
-          boost::asio::ip::address_v4::any().to_ulong());
+          address_v4::any().to_uint());
     ipv6_value_ = 0;
   }
 
   // Construct with IPv4 interface.
-  explicit network_interface(const boost::asio::ip::address_v4& ipv4_interface)
+  explicit network_interface(const address_v4& ipv4_interface)
   {
     ipv4_value_.s_addr =
       boost::asio::detail::socket_ops::host_to_network_long(
-          ipv4_interface.to_ulong());
+          ipv4_interface.to_uint());
     ipv6_value_ = 0;
   }
 
@@ -540,7 +512,7 @@ public:
   {
     ipv4_value_.s_addr =
       boost::asio::detail::socket_ops::host_to_network_long(
-          boost::asio::ip::address_v4::any().to_ulong());
+          address_v4::any().to_uint());
     ipv6_value_ = ipv6_interface;
   }
 

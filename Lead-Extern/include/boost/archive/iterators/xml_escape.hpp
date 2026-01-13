@@ -2,28 +2,24 @@
 #define BOOST_ARCHIVE_ITERATORS_XML_ESCAPE_HPP
 
 // MS compatible compilers support #pragma once
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
 /////////1/////////2/////////3/////////4/////////5/////////6/////////7/////////8
 // xml_escape.hpp
 
-// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com . 
+// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com .
 // Use, modification and distribution is subject to the Boost Software
 // License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 
 //  See http://www.boost.org for updates, documentation, and revision history.
 
-#include <cassert>
-
-#include <boost/config.hpp> // for BOOST_DEDUCED_TYPENAME
-#include <boost/serialization/pfto.hpp>
-
+#include <boost/assert.hpp>
 #include <boost/archive/iterators/escape.hpp>
 
-namespace boost { 
+namespace boost {
 namespace archive {
 namespace iterators {
 
@@ -31,7 +27,7 @@ namespace iterators {
 // insert escapes into xml text
 
 template<class Base>
-class xml_escape 
+class xml_escape
     : public escape<xml_escape<Base>, Base>
 {
     friend class boost::iterator_core_access;
@@ -43,18 +39,18 @@ public:
     wchar_t fill(const wchar_t * & bstart, const wchar_t * & bend);
 
     template<class T>
-    xml_escape(BOOST_PFTO_WRAPPER(T) start) :
-        super_t(Base(BOOST_MAKE_PFTO_WRAPPER(static_cast<T>(start))))
+    xml_escape(T start) :
+        super_t(Base(static_cast< T >(start)))
     {}
     // intel 7.1 doesn't like default copy constructor
-    xml_escape(const xml_escape & rhs) : 
+    xml_escape(const xml_escape & rhs) :
         super_t(rhs.base_reference())
     {}
 };
 
 template<class Base>
 char xml_escape<Base>::fill(
-    const char * & bstart, 
+    const char * & bstart,
     const char * & bend
 ){
     char current_value = * this->base_reference();
@@ -80,6 +76,8 @@ char xml_escape<Base>::fill(
         bend = bstart + 6;
         break;
     default:
+        bstart="";
+        bend=bstart;
         return current_value;
     }
     return *bstart;
@@ -87,7 +85,7 @@ char xml_escape<Base>::fill(
 
 template<class Base>
 wchar_t xml_escape<Base>::fill(
-    const wchar_t * & bstart, 
+    const wchar_t * & bstart,
     const wchar_t * & bend
 ){
     wchar_t current_value = * this->base_reference();

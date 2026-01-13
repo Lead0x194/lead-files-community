@@ -1,8 +1,8 @@
 //
-// win_iocp_overlapped_ptr.hpp
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// detail/win_iocp_overlapped_ptr.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,16 +15,19 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/win_iocp_io_service_fwd.hpp>
+#include <boost/asio/detail/config.hpp>
 
 #if defined(BOOST_ASIO_HAS_IOCP)
 
-#include <boost/asio/detail/fenced_block.hpp>
+#include <boost/asio/io_context.hpp>
+#include <boost/asio/query.hpp>
+#include <boost/asio/detail/handler_alloc_helpers.hpp>
+#include <boost/asio/detail/memory.hpp>
 #include <boost/asio/detail/noncopyable.hpp>
-#include <boost/asio/detail/win_iocp_io_service.hpp>
-#include <boost/asio/detail/win_iocp_operation.hpp>
+#include <boost/asio/detail/win_iocp_overlapped_op.hpp>
+#include <boost/asio/detail/win_iocp_io_context.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -43,13 +46,13 @@ public:
   }
 
   // Construct an win_iocp_overlapped_ptr to contain the specified handler.
-  template <typename Handler>
-  explicit win_iocp_overlapped_ptr(
-      boost::asio::io_service& io_service, Handler handler)
+  template <typename Executor, typename Handler>
+  explicit win_iocp_overlapped_ptr(const Executor& ex,
+      Handler&& handler)
     : ptr_(0),
       iocp_service_(0)
   {
-    this->reset(io_service, handler);
+    this->reset(ex, static_cast<Handler&&>(handler));
   }
 
   // Destructor automatically frees the OVERLAPPED object unless released.
@@ -72,17 +75,24 @@ public:
 
   // Reset to contain the specified handler, freeing any current OVERLAPPED
   // object.
-  template <typename Handler>
-  void reset(boost::asio::io_service& io_service, Handler handler)
+  template <typename Executor, typename Handler>
+  void reset(const Executor& ex, Handler handler)
   {
-    typedef overlapped_op<Handler> value_type;
-    typedef handler_alloc_traits<Handler, value_type> alloc_traits;
-    raw_handler_ptr<alloc_traits> raw_ptr(handler);
-    handler_ptr<alloc_traits> ptr(raw_ptr, handler);
-    io_service.impl_.work_started();
+    win_iocp_io_context* iocp_service = this->get_iocp_service(ex);
+
+    typedef win_iocp_overlapped_op<Handler, Executor> op;
+    typename op::ptr p = { boost::asio::detail::addressof(handler),
+      op::ptr::allocate(handler), 0 };
+    p.p = new (p.v) op(handler, ex);
+
+    BOOST_ASIO_HANDLER_CREATION((ex.context(), *p.p,
+          "iocp_service", iocp_service, 0, "overlapped"));
+
+    iocp_service->work_started();
     reset();
-    ptr_ = ptr.release();
-    iocp_service_ = &io_service.impl_;
+    ptr_ = p.p;
+    p.v = p.p = 0;
+    iocp_service_ = iocp_service;
   }
 
   // Get the contained OVERLAPPED object.
@@ -123,54 +133,41 @@ public:
   }
 
 private:
-  template <typename Handler>
-  struct overlapped_op : public win_iocp_operation
+  template <typename Executor>
+  static win_iocp_io_context* get_iocp_service(const Executor& ex,
+      enable_if_t<
+        can_query<const Executor&, execution::context_t>::value
+      >* = 0)
   {
-    overlapped_op(Handler handler)
-      : win_iocp_operation(&overlapped_op::do_complete),
-        handler_(handler)
-    {
-    }
+    return &use_service<win_iocp_io_context>(
+        boost::asio::query(ex, execution::context));
+  }
 
-    static void do_complete(io_service_impl* owner, operation* base,
-        boost::system::error_code ec, std::size_t bytes_transferred)
-    {
-      // Take ownership of the operation object.
-      overlapped_op* o(static_cast<overlapped_op*>(base));
-      typedef handler_alloc_traits<Handler, overlapped_op> alloc_traits;
-      handler_ptr<alloc_traits> ptr(o->handler_, o);
+  template <typename Executor>
+  static win_iocp_io_context* get_iocp_service(const Executor& ex,
+      enable_if_t<
+        !can_query<const Executor&, execution::context_t>::value
+      >* = 0)
+  {
+    return &use_service<win_iocp_io_context>(ex.context());
+  }
 
-      // Make the upcall if required.
-      if (owner)
-      {
-        // Make a copy of the handler so that the memory can be deallocated
-        // before the upcall is made. Even if we're not about to make an
-        // upcall, a sub-object of the handler may be the true owner of the
-        // memory associated with the handler. Consequently, a local copy of
-        // the handler is required to ensure that any owning sub-object remains
-        // valid until after we have deallocated the memory here.
-        detail::binder2<Handler, boost::system::error_code, std::size_t>
-          handler(o->handler_, ec, bytes_transferred);
-        ptr.reset();
-        boost::asio::detail::fenced_block b;
-        boost_asio_handler_invoke_helpers::invoke(handler, handler);
-      }
-    }
-
-  private:
-    Handler handler_;
-  };
+  static win_iocp_io_context* get_iocp_service(
+      const io_context::executor_type& ex)
+  {
+    return &boost::asio::query(ex, execution::context).impl_;
+  }
 
   win_iocp_operation* ptr_;
-  win_iocp_io_service* iocp_service_;
+  win_iocp_io_context* iocp_service_;
 };
 
 } // namespace detail
 } // namespace asio
 } // namespace boost
 
-#endif // defined(BOOST_ASIO_HAS_IOCP)
-
 #include <boost/asio/detail/pop_options.hpp>
+
+#endif // defined(BOOST_ASIO_HAS_IOCP)
 
 #endif // BOOST_ASIO_DETAIL_WIN_IOCP_OVERLAPPED_PTR_HPP

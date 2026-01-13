@@ -7,11 +7,12 @@
  * Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland
- * $Date: 2008-02-27 15:00:24 -0500 (Wed, 27 Feb 2008) $
+ * $Date$
  */
 
 #include <vector>
 #include <string>
+#include <iterator>
 #include "boost/date_time/special_defs.hpp"
 
 namespace boost { namespace date_time {

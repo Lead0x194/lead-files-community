@@ -1,7 +1,7 @@
 /* Boost interval/detail/c99_rounding_control.hpp file
  *
  * Copyright 2000 Jens Maurer
- * Copyright 2002 Hervé Brönnimann, Guillaume Melquiond, Sylvain Pion
+ * Copyright 2002 HervÃ© BrÃ¶nnimann, Guillaume Melquiond, Sylvain Pion
  *
  * Distributed under the Boost Software License, Version 1.0.
  * (See accompanying file LICENSE_1_0.txt or
@@ -16,27 +16,30 @@
 namespace boost {
 namespace numeric {
 namespace interval_lib {
-namespace detail {
-
-struct c99_rounding_control: c99_rounding
-{
-  template<class T>
-  static T force_rounding(const T& r) { volatile T r_ = r; return r_; }
-};
-
-} // namespace detail
 
 template<>
 struct rounding_control<float>:
-  detail::c99_rounding_control { };
+  detail::c99_rounding_control
+{
+  static float force_rounding(float const &r)
+  { volatile float r_ = r; return r_; }
+};
 
 template<>
 struct rounding_control<double>:
-  detail::c99_rounding_control { };
+  detail::c99_rounding_control
+{
+  static double force_rounding(double const &r)
+  { volatile double r_ = r; return r_; }
+};
 
 template<>
 struct rounding_control<long double>:
-  detail::c99_rounding_control { };
+  detail::c99_rounding_control
+{
+  static long double force_rounding(long double const &r)
+  { volatile long double r_ = r; return r_; }
+};
 
 } // namespace interval_lib
 } // namespace numeric

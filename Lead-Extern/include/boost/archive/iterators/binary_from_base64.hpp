@@ -2,31 +2,29 @@
 #define BOOST_ARCHIVE_ITERATORS_BINARY_FROM_BASE64_HPP
 
 // MS compatible compilers support #pragma once
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
 /////////1/////////2/////////3/////////4/////////5/////////6/////////7/////////8
 // binary_from_base64.hpp
 
-// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com . 
+// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com .
 // Use, modification and distribution is subject to the Boost Software
 // License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 
 //  See http://www.boost.org for updates, documentation, and revision history.
 
-#include <cassert>
+#include <boost/assert.hpp>
 
-#include <boost/config.hpp> // for BOOST_DEDUCED_TYPENAME
 #include <boost/serialization/throw_exception.hpp>
-#include <boost/serialization/pfto.hpp>
 #include <boost/static_assert.hpp>
 
 #include <boost/iterator/transform_iterator.hpp>
 #include <boost/archive/iterators/dataflow_exception.hpp>
 
-namespace boost { 
+namespace boost {
 namespace archive {
 namespace iterators {
 
@@ -39,11 +37,11 @@ template<class CharType>
 struct to_6_bit {
     typedef CharType result_type;
     CharType operator()(CharType t) const{
-        const char lookup_table[] = {
+        static const signed char lookup_table[] = {
             -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
             -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,
             -1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,62,-1,-1,-1,63,
-            52,53,54,55,56,57,58,59,60,61,-1,-1,-1,-1,-1,-1,
+            52,53,54,55,56,57,58,59,60,61,-1,-1,-1, 0,-1,-1, // render '=' as 0
             -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,10,11,12,13,14,
             15,16,17,18,19,20,21,22,23,24,25,-1,-1,-1,-1,-1,
             -1,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,
@@ -67,7 +65,7 @@ struct to_6_bit {
 } // namespace detail
 
 // note: what we would like to do is
-// template<class Base, class CharType = BOOST_DEDUCED_TYPENAME Base::value_type>
+// template<class Base, class CharType = typename Base::value_type>
 //  typedef transform_iterator<
 //      from_6_bit<CharType>,
 //      transform_width<Base, 6, sizeof(Base::value_type) * 8, CharType>
@@ -80,8 +78,8 @@ struct to_6_bit {
 // ideal.  This is also addressed here.
 
 template<
-    class Base, 
-    class CharType = BOOST_DEDUCED_TYPENAME boost::iterator_value<Base>::type
+    class Base,
+    class CharType = typename boost::iterator_value<Base>::type
 >
 class binary_from_base64 : public
     transform_iterator<
@@ -95,16 +93,16 @@ class binary_from_base64 : public
         Base
     > super_t;
 public:
-    // make composible buy using templated constructor
+    // make composable by using templated constructor
     template<class T>
-    binary_from_base64(BOOST_PFTO_WRAPPER(T)  start) :
+    binary_from_base64(T  start) :
         super_t(
-            Base(BOOST_MAKE_PFTO_WRAPPER(static_cast<T>(start))), 
+            Base(static_cast< T >(start)),
             detail::to_6_bit<CharType>()
         )
     {}
     // intel 7.1 doesn't like default copy constructor
-    binary_from_base64(const binary_from_base64 & rhs) : 
+    binary_from_base64(const binary_from_base64 & rhs) :
         super_t(
             Base(rhs.base_reference()),
             detail::to_6_bit<CharType>()

@@ -2,14 +2,14 @@
 #define BOOST_SERIALIZATION_FORCE_INCLUDE_HPP
 
 // MS compatible compilers support #pragma once
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
 /////////1/////////2/////////3/////////4/////////5/////////6/////////7/////////8
 // force_include.hpp:
 
-// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com . 
+// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com .
 // Use, modification and distribution is subject to the Boost Software
 // License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
@@ -18,7 +18,7 @@
 
 #include <boost/config.hpp>
 
-// the following help macro is to guarentee that certain coded
+// the following help macro is to guarantee that certain coded
 // is not removed by over-eager linker optimiser.  In certain cases
 // we create static objects must be created but are actually never
 // referenced - creation has a side-effect such as global registration
@@ -31,18 +31,16 @@
 // release mode.
 
 #if defined(BOOST_HAS_DECLSPEC) && !defined(__COMO__)
-#   if defined(__BORLANDC__)
-#       define BOOST_DLLEXPORT __export
-#   else
-#       define BOOST_DLLEXPORT __declspec(dllexport)
-#   endif
+#   define BOOST_DLLEXPORT __declspec(dllexport)
 #elif ! defined(_WIN32) && ! defined(_WIN64)
 #   if defined(__MWERKS__)
 #       define BOOST_DLLEXPORT __declspec(dllexport)
 #   elif defined(__GNUC__) && (__GNUC__ >= 3)
-#       define BOOST_USED __attribute__ ((used))
+#       define BOOST_USED __attribute__ ((__used__))
+#   elif defined(__IBMCPP__) && (__IBMCPP__ >= 1110)
+#       define BOOST_USED __attribute__ ((__used__))
 #   elif defined(__INTEL_COMPILER) && (BOOST_INTEL_CXX_VERSION >= 800)
-#       define BOOST_USED __attribute__ ((used))
+#       define BOOST_USED __attribute__ ((__used__))
 #   endif
 #endif
 

@@ -1,8 +1,8 @@
 //
-// scoped_lock.hpp
-// ~~~~~~~~~~~~~~~
+// detail/scoped_lock.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,9 +15,9 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
 #include <boost/asio/detail/noncopyable.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -29,8 +29,18 @@ class scoped_lock
   : private noncopyable
 {
 public:
+  // Tag type used to distinguish constructors.
+  enum adopt_lock_t { adopt_lock };
+
+  // Constructor adopts a lock that is already held.
+  scoped_lock(Mutex& m, adopt_lock_t)
+    : mutex_(m),
+      locked_(true)
+  {
+  }
+
   // Constructor acquires the lock.
-  scoped_lock(Mutex& m)
+  explicit scoped_lock(Mutex& m)
     : mutex_(m)
   {
     mutex_.lock();

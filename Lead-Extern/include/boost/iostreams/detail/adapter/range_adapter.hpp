@@ -8,22 +8,22 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_RANGE_ADAPTER_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_RANGE_ADAPTER_HPP_INCLUDED
 
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
-#endif              
+#endif
 
 #include <algorithm>                             // min.
-#include <cassert>
+#include <boost/assert.hpp>
 #include <cstddef>                               // ptrdiff_t.
 #include <iosfwd>                                // streamsize, streamoff.
-#include <boost/detail/iterator.hpp>             // boost::iterator_traits.
+#include <iterator>                              // iterator_traits.
 #include <boost/iostreams/categories.hpp>
 #include <boost/iostreams/detail/error.hpp>
 #include <boost/iostreams/positioning.hpp>
 #include <boost/mpl/if.hpp>
 #include <boost/throw_exception.hpp>
 #include <boost/type_traits/is_convertible.hpp>
-#include <boost/utility/enable_if.hpp>
+#include <boost/core/enable_if.hpp>
 
 // Must come last.
 #include <boost/iostreams/detail/config/disable_warnings.hpp>  // MSVC.
@@ -36,7 +36,7 @@ template<typename Traversal> struct range_adapter_impl;
 //
 // Template name: range_adapter
 // Description: Device based on an instance of boost::iterator_range.
-// Template paramters:
+// Template parameters:
 //     Mode - A mode tag.
 //     Range - An instance of iterator_range.
 //
@@ -44,7 +44,7 @@ template<typename Mode, typename Range>
 class range_adapter {
 private:
     typedef typename Range::iterator                  iterator;
-    typedef boost::detail::iterator_traits<iterator>  iter_traits;
+    typedef std::iterator_traits<iterator>            iter_traits;
     typedef typename iter_traits::iterator_category   iter_cat;
 public:
     typedef typename Range::value_type                char_type;
@@ -175,7 +175,7 @@ struct range_adapter_impl<std::random_access_iterator_tag> {
             cur = last + off;
             break;
         default:
-            assert(0);
+            BOOST_ASSERT(0);
         }
     }
 };

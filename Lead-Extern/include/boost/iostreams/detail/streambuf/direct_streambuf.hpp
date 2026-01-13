@@ -8,15 +8,15 @@
 #ifndef BOOST_IOSTREAMS_DETAIL_DIRECT_STREAMBUF_HPP_INCLUDED
 #define BOOST_IOSTREAMS_DETAIL_DIRECT_STREAMBUF_HPP_INCLUDED
 
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif              
 
-#include <cassert>
+#include <boost/assert.hpp>
 #include <cstddef>
-#include <typeinfo>
 #include <utility>                                 // pair.
 #include <boost/config.hpp>                        // BOOST_DEDUCED_TYPENAME, 
+#include <boost/core/typeinfo.hpp>
 #include <boost/iostreams/detail/char_traits.hpp>  // member template friends.
 #include <boost/iostreams/detail/config/wide_streams.hpp>
 #include <boost/iostreams/detail/error.hpp>
@@ -67,16 +67,14 @@ public: // stream needs access.
     // Declared in linked_streambuf.
     T* component() { return storage_.get(); }
 protected:
-#if !BOOST_WORKAROUND(__GNUC__, == 2)
     BOOST_IOSTREAMS_USING_PROTECTED_STREAMBUF_MEMBERS(base_type)
-#endif
     direct_streambuf();
 
     //--------------Virtual functions-----------------------------------------//
 
     // Declared in linked_streambuf.
     void close_impl(BOOST_IOS::openmode m);
-    const std::type_info& component_type() const { return typeid(T); }
+    const boost::core::typeinfo& component_type() const { return BOOST_CORE_TYPEID(T); }
     void* component_impl() { return component(); } 
 #ifdef BOOST_IOSTREAMS_NO_STREAM_TEMPLATES
     public:
@@ -121,6 +119,7 @@ void direct_streambuf<T, Tr>::open
     init_output(category());
     setg(0, 0, 0);
     setp(0, 0);
+    this->set_needs_close();
 }
 
 template<typename T, typename Tr>
@@ -233,7 +232,7 @@ typename direct_streambuf<T, Tr>::pos_type direct_streambuf<T, Tr>::seek_impl
         case BOOST_IOS::beg: next = off; break;
         case BOOST_IOS::cur: next = (gptr() - ibeg_) + off; break;
         case BOOST_IOS::end: next = (iend_ - ibeg_) + off; break;
-        default: assert(0);
+        default: BOOST_ASSERT(0);
         }
         if (next < 0 || next > (iend_ - ibeg_))
             boost::throw_exception(bad_seek());
@@ -247,7 +246,7 @@ typename direct_streambuf<T, Tr>::pos_type direct_streambuf<T, Tr>::seek_impl
         case BOOST_IOS::beg: next = off; break;
         case BOOST_IOS::cur: next = (pptr() - obeg_) + off; break;
         case BOOST_IOS::end: next = (oend_ - obeg_) + off; break;
-        default: assert(0);
+        default: BOOST_ASSERT(0);
         }
         if (next < 0 || next > (oend_ - obeg_))
             boost::throw_exception(bad_seek());

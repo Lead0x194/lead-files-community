@@ -12,7 +12,7 @@
 #define BOOST_STRING_FORMATTER_DETAIL_HPP
 
 
-#include <boost/range/iterator_range.hpp>
+#include <boost/range/iterator_range_core.hpp>
 #include <boost/range/begin.hpp>
 #include <boost/range/end.hpp>
 #include <boost/range/const_iterator.hpp>
@@ -42,7 +42,7 @@ namespace boost {
                     m_Format(::boost::begin(Format), ::boost::end(Format)) {}
 
                 // Operation
-#if BOOST_WORKAROUND(__BORLANDC__, BOOST_TESTED_AT(0x564))
+#if BOOST_WORKAROUND(BOOST_BORLANDC, BOOST_TESTED_AT(0x564))
                 template<typename Range2T>
                 result_type& operator()(const Range2T&)
                 {
@@ -86,6 +86,31 @@ namespace boost {
                     return empty_container<CharT>();
                 }
             };
+
+//  dissect format functor ----------------------------------------------------//
+
+            // dissect format functor
+            template<typename FinderT>
+            struct dissect_formatF
+            {
+            public:
+                // Construction
+                dissect_formatF(FinderT Finder) :
+                  m_Finder(Finder) {}
+
+                  // Operation
+                  template<typename RangeT>
+                  inline iterator_range< 
+                      BOOST_STRING_TYPENAME range_const_iterator<RangeT>::type>
+                  operator()(const RangeT& Replace) const
+                  {
+                      return m_Finder(::boost::begin(Replace), ::boost::end(Replace));
+                  }
+
+            private:
+                FinderT m_Finder;
+            };
+
 
         } // namespace detail
     } // namespace algorithm

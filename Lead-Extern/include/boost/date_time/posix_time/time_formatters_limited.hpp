@@ -6,7 +6,7 @@
  * Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland, Bart Garst
- * $Date: 2010-01-10 14:17:23 -0500 (Sun, 10 Jan 2010) $
+ * $Date$
  */
 
 #include <boost/date_time/gregorian/gregorian.hpp>
@@ -82,7 +82,7 @@ namespace posix_time {
     return ss.str();
   }
 
-  //! Time duration in iso format -hhmmss,fffffff Example: 10:09:03,0123456
+  //! Time duration in ISO 8601 format -hhmmss.fffffff. Example: 10:09:03.0123456
   /*!\ingroup time_format
    */
   inline
@@ -173,7 +173,7 @@ namespace posix_time {
     return std::string("[" + d1 + "/" + d2 +"]");
   }
 
-  //! Convert iso short form YYYYMMDDTHHMMSS where T is the date-time separator
+  //! Convert ISO 8601 short form YYYYMMDDTHHMMSS where T is the date-time separator
   /*!\ingroup time_format
    */
   inline

@@ -1,7 +1,7 @@
 /* Boost interval/detail/c99sub_rounding_control.hpp file
  *
  * Copyright 2000 Jens Maurer
- * Copyright 2002 Hervé Brönnimann, Guillaume Melquiond, Sylvain Pion
+ * Copyright 2002 HervÃ© BrÃ¶nnimann, Guillaume Melquiond, Sylvain Pion
  *
  * Distributed under the Boost Software License, Version 1.0.
  * (See accompanying file LICENSE_1_0.txt or
@@ -11,7 +11,7 @@
 #ifndef BOOST_NUMERIC_INTERVAL_DETAIL_C99SUB_ROUNDING_CONTROL_HPP
 #define BOOST_NUMERIC_INTERVAL_DETAIL_C99SUB_ROUNDING_CONTROL_HPP
 
-#include <fenv.h>      // ISO C 99 rounding mode control
+#include <boost/detail/fenv.hpp>      // ISO C 99 rounding mode control
 
 namespace boost {
 namespace numeric {
@@ -20,11 +20,11 @@ namespace detail {
 
 extern "C" { double rint(double); }
 
-struct c99_rounding
+struct c99_rounding_control
 {
   typedef int rounding_mode;
 
-  static void set_rounding_mode(const rounding_mode mode) { fesetround(mode); }
+  static void set_rounding_mode(rounding_mode mode)  { fesetround(mode); }
   static void get_rounding_mode(rounding_mode &mode) { mode = fegetround(); }
   static void downward()    { set_rounding_mode(FE_DOWNWARD);   }
   static void upward()      { set_rounding_mode(FE_UPWARD);     }

@@ -1,6 +1,6 @@
 //
-//  Copyright (c) 2000-2002
-//  Joerg Walter, Mathias Koch
+//  Copyright (c) 2000-2010
+//  Joerg Walter, Mathias Koch, David Bellot
 //
 //  Distributed under the Boost Software License, Version 1.0. (See
 //  accompanying file LICENSE_1_0.txt or copy at
@@ -10,10 +10,16 @@
 //  GeNeSys mbH & Co. KG in producing this work.
 //
 
+/// \file fwd.hpp is essentially used to forward declare the main types
+
 #ifndef BOOST_UBLAS_FWD_H
 #define BOOST_UBLAS_FWD_H
 
 #include <memory>
+
+#ifdef BOOST_UBLAS_CPP_GE_2011
+#include <array>
+#endif
 
 namespace boost { namespace numeric { namespace ublas {
 
@@ -86,6 +92,10 @@ namespace boost { namespace numeric { namespace ublas {
 
     template<class T, class A = unbounded_array<T> >
     class vector;
+#ifdef BOOST_UBLAS_CPP_GE_2011
+    template<class T, std::size_t N, class A = std::array<T, N> >
+    class fixed_vector;
+#endif
     template<class T, std::size_t N>
     class bounded_vector;
 
@@ -123,6 +133,10 @@ namespace boost { namespace numeric { namespace ublas {
 
     template<class T, class L = row_major, class A = unbounded_array<T> >
     class matrix;
+#ifdef BOOST_UBLAS_CPP_GE_2011
+    template<class T, std::size_t M, std::size_t N, class L = row_major, class A = std::array<T, M*N> >
+    class fixed_matrix;
+#endif
     template<class T, std::size_t M, std::size_t N, class L = row_major>
     class bounded_matrix;
 

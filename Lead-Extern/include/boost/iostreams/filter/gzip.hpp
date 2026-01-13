@@ -12,14 +12,14 @@
 #ifndef BOOST_IOSTREAMS_GZIP_HPP_INCLUDED
 #define BOOST_IOSTREAMS_GZIP_HPP_INCLUDED
 
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
 #include <boost/config.hpp> // STATIC_CONSTANT, STDC_NAMESPACE, 
                             // DINKUMWARE_STDLIB, __STL_CONFIG_H.
 #include <algorithm>                      // min.
-#include <cassert>
+#include <boost/assert.hpp>
 #include <cstdio>                         // EOF.
 #include <cstddef>                        // size_t.
 #include <ctime>                          // std::time_t.
@@ -27,11 +27,12 @@
 #include <boost/config.hpp>               // Put size_t in std.
 #include <boost/detail/workaround.hpp>
 #include <boost/cstdint.hpp>              // uint8_t, uint32_t.
+#include <boost/iostreams/checked_operations.hpp>
 #include <boost/iostreams/constants.hpp>  // buffer size.
 #include <boost/iostreams/detail/adapter/non_blocking_adapter.hpp>
 #include <boost/iostreams/detail/adapter/range_adapter.hpp>
 #include <boost/iostreams/detail/char_traits.hpp>
-#include <boost/iostreams/detail/ios.hpp> // failure.
+#include <boost/iostreams/detail/ios.hpp> // failure, streamsize.
 #include <boost/iostreams/detail/error.hpp>
 #include <boost/iostreams/operations.hpp>
 #include <boost/iostreams/device/back_inserter.hpp>
@@ -43,7 +44,9 @@
 // Must come last.
 #if defined(BOOST_MSVC)
 # pragma warning(push)
-# pragma warning(disable: 4309)    // Truncation of constant value.
+# pragma warning(disable:4244)    // Possible truncation
+# pragma warning(disable:4251)    // Missing DLL interface for std::string
+# pragma warning(disable:4309)    // Truncation of constant value.
 #endif
 
 #ifdef BOOST_NO_STDC_NAMESPACE
@@ -135,16 +138,16 @@ const int os_unknown        = 255;
 struct gzip_params : zlib_params {
 
     // Non-explicit constructor.
-    gzip_params( int level              = gzip::default_compression,
-                 int method             = gzip::deflated,
-                 int window_bits        = gzip::default_window_bits,
-                 int mem_level          = gzip::default_mem_level,
-                 int strategy           = gzip::default_strategy,
-                 std::string file_name  = "",
-                 std::string comment    = "",
-                 std::time_t mtime      = 0 )
-        : zlib_params(level, method, window_bits, mem_level, strategy),
-          file_name(file_name), comment(comment), mtime(mtime)
+    gzip_params( int level_              = gzip::default_compression,
+                 int method_             = gzip::deflated,
+                 int window_bits_        = gzip::default_window_bits,
+                 int mem_level_          = gzip::default_mem_level,
+                 int strategy_           = gzip::default_strategy,
+                 std::string file_name_  = "",
+                 std::string comment_    = "",
+                 std::time_t mtime_      = 0 )
+        : zlib_params(level_, method_, window_bits_, mem_level_, strategy_),
+          file_name(file_name_), comment(comment_), mtime(mtime_)
         { }
     std::string  file_name;
     std::string  comment;
@@ -194,7 +197,7 @@ public:
           closable_tag
         { };
     basic_gzip_compressor( const gzip_params& = gzip::default_compression,
-                           int buffer_size = default_device_buffer_size );
+                           std::streamsize buffer_size = default_device_buffer_size );
 
     template<typename Source>
     std::streamsize read(Source& src, char_type* s, std::streamsize n)
@@ -235,7 +238,7 @@ public:
         if (!(flags_ & f_header_done)) {
             std::streamsize amt = 
                 static_cast<std::streamsize>(header_.size() - offset_);
-            offset_ += boost::iostreams::write(snk, header_.data() + offset_, amt);
+            offset_ += boost::iostreams::write_if(snk, header_.data() + offset_, amt);
             if (offset_ == header_.size())
                 flags_ |= f_header_done;
             else
@@ -247,27 +250,26 @@ public:
     template<typename Sink>
     void close(Sink& snk, BOOST_IOS::openmode m)
     {
-        if (m == BOOST_IOS::out) {
-            try {
+        try {
+            if (m == BOOST_IOS::out && !(flags_ & f_header_done))
+                this->write(snk, 0, 0);
 
-                // Close zlib compressor.
-                base_type::close(snk, BOOST_IOS::out);
+            // Close zlib compressor.
+            base_type::close(snk, m);
 
+            if (m == BOOST_IOS::out) {
                 if (flags_ & f_header_done) {
 
                     // Write final fields of gzip file format.
                     write_long(this->crc(), snk);
                     write_long(this->total_in(), snk);
                 }
-
-            } catch (...) {
-                close_impl();
-                throw;
             }
+        } catch(...) {
             close_impl();
-        } else {
-            close_impl();
+            throw;
         }
+        close_impl();
     }
 private:
     static gzip_params normalize_params(gzip_params p);
@@ -275,23 +277,28 @@ private:
     std::streamsize read_string(char* s, std::streamsize n, std::string& str);
 
     template<typename Sink>
-    static void write_long(long n, Sink& next)
+    static void write_long(long n, Sink& next, boost::mpl::true_)
     {
         boost::iostreams::put(next, static_cast<char>(0xFF & n));
         boost::iostreams::put(next, static_cast<char>(0xFF & (n >> 8)));
         boost::iostreams::put(next, static_cast<char>(0xFF & (n >> 16)));
         boost::iostreams::put(next, static_cast<char>(0xFF & (n >> 24)));
     }
+    template<typename Sink>
+    static void write_long(long, Sink&, boost::mpl::false_)
+    {
+    }
+    template<typename Sink>
+    static void write_long(long n, Sink& next)
+    {
+        typedef typename category_of<Sink>::type category;
+        typedef is_convertible<category, output> can_write;
+        write_long(n, next, can_write());
+    }
 
     void close_impl()
     {
-        #if BOOST_WORKAROUND(__GNUC__, == 2) && defined(__STL_CONFIG_H) || \
-            BOOST_WORKAROUND(BOOST_DINKUMWARE_STDLIB, == 1) \
-            /**/
-            footer_.erase(0, std::string::npos);
-        #else
-            footer_.clear();
-        #endif
+        footer_.clear();
         offset_ = 0;
         flags_ = 0;
     }
@@ -398,11 +405,57 @@ private:
 public:
     typedef char char_type;
     struct category
-        : multichar_input_filter_tag,
+        : dual_use,
+          filter_tag,
+          multichar_tag,
           closable_tag
         { };
     basic_gzip_decompressor( int window_bits = gzip::default_window_bits,
-                             int buffer_size = default_device_buffer_size );
+                             std::streamsize buffer_size = default_device_buffer_size );
+
+    template<typename Sink>
+    std::streamsize write(Sink& snk, const char_type* s, std::streamsize n)
+    {
+        std::streamsize result = 0;
+        while(result < n) {
+            if(state_ == s_start) {
+                state_ = s_header;
+                header_.reset();
+                footer_.reset();
+            }
+            if (state_ == s_header) {
+                int c = s[result++];
+                header_.process(c);
+                if (header_.done())
+                    state_ = s_body;
+            } else if (state_ == s_body) {
+                try {
+                    std::streamsize amt = 
+                        base_type::write(snk, s + result, n - result);
+                    result += amt;
+                    if (!this->eof()) {
+                        break;
+                    } else {
+                        state_ = s_footer;
+                    }
+                } catch (const zlib_error& e) {
+                    boost::throw_exception(gzip_error(e));
+                }
+            } else { // state_ == s_footer
+                if (footer_.done()) {
+                    if (footer_.crc() != this->crc())
+                        boost::throw_exception(gzip_error(gzip::bad_crc));
+
+                    base_type::close(snk, BOOST_IOS::out);
+                    state_ = s_start;
+                } else {
+                    int c = s[result++];
+                    footer_.process(c);
+                }
+            }
+        }
+        return result;
+    }
 
     template<typename Source>
     std::streamsize read(Source& src, char_type* s, std::streamsize n)
@@ -452,7 +505,7 @@ public:
                 if (footer_.done()) {
                     if (footer_.crc() != this->crc())
                         boost::throw_exception(gzip_error(gzip::bad_crc));
-                    int c = boost::iostreams::get(peek);
+                    c = boost::iostreams::get(peek);
                     if (traits_type::is_eof(c)) {
                         state_ = s_done;
                     } else {
@@ -476,15 +529,27 @@ public:
     }
 
     template<typename Source>
-    void close(Source& src)
+    void close(Source& src, BOOST_IOS::openmode m)
     {
         try {
-            base_type::close(src, BOOST_IOS::in);
+            base_type::close(src, m);
         } catch (const zlib_error& e) {
             state_ = s_start;
-            header_.reset();
-            footer_.reset();
             boost::throw_exception(gzip_error(e));
+        }
+        if (m == BOOST_IOS::out) {
+            if (state_ == s_start || state_ == s_header)
+                boost::throw_exception(gzip_error(gzip::bad_header));
+            else if (state_ == s_body)
+                boost::throw_exception(gzip_error(gzip::bad_footer));
+            else if (state_ == s_footer) {
+                if (!footer_.done())
+                    boost::throw_exception(gzip_error(gzip::bad_footer));
+                else if(footer_.crc() != this->crc())
+                    boost::throw_exception(gzip_error(gzip::bad_crc));
+            } else {
+                BOOST_ASSERT(!"Bad state");
+            }
         }
         state_ = s_start;
     }
@@ -580,7 +645,7 @@ typedef basic_gzip_decompressor<> gzip_decompressor;
 
 template<typename Alloc>
 basic_gzip_compressor<Alloc>::basic_gzip_compressor
-    (const gzip_params& p, int buffer_size)
+    (const gzip_params& p, std::streamsize buffer_size)
     : base_type(normalize_params(p), buffer_size),
       offset_(0), flags_(0)
 {
@@ -606,7 +671,7 @@ basic_gzip_compressor<Alloc>::basic_gzip_compressor
               0 );
     header_.reserve(length);
     header_ += gzip::magic::id1;                         // ID1.
-    header_ += gzip::magic::id2;                         // ID2.
+    header_ += static_cast<char>(gzip::magic::id2);      // ID2.
     header_ += gzip::method::deflate;                    // CM.
     header_ += static_cast<char>(flags);                 // FLG.
     header_ += static_cast<char>(0xFF & p.mtime);        // MTIME.
@@ -666,7 +731,7 @@ std::streamsize basic_gzip_compressor<Alloc>::read_string
 
 template<typename Alloc>
 basic_gzip_decompressor<Alloc>::basic_gzip_decompressor
-    (int window_bits, int buffer_size)
+    (int window_bits, std::streamsize buffer_size)
     : base_type(make_params(window_bits), buffer_size),
       state_(s_start)
     { }

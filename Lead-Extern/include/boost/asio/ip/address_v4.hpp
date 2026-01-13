@@ -1,8 +1,8 @@
 //
-// address_v4.hpp
-// ~~~~~~~~~~~~~~
+// ip/address_v4.hpp
+// ~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,24 +15,21 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/push_options.hpp>
-#include <boost/config.hpp>
-#if !defined(BOOST_NO_IOSTREAM)
-# include <iosfwd>
-#endif // !defined(BOOST_NO_IOSTREAM)
-#include <climits>
+#include <boost/asio/detail/config.hpp>
+#include <functional>
 #include <string>
-#include <stdexcept>
-#include <boost/array.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
-#include <boost/asio/error.hpp>
-#include <boost/asio/detail/socket_ops.hpp>
+#include <boost/asio/detail/array.hpp>
+#include <boost/asio/detail/cstdint.hpp>
 #include <boost/asio/detail/socket_types.hpp>
-#include <boost/asio/detail/throw_error.hpp>
+#include <boost/asio/detail/string_view.hpp>
+#include <boost/asio/detail/winsock_init.hpp>
+#include <boost/system/error_code.hpp>
+
+#if !defined(BOOST_ASIO_NO_IOSTREAM)
+# include <iosfwd>
+#endif // !defined(BOOST_ASIO_NO_IOSTREAM)
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -50,221 +47,207 @@ namespace ip {
 class address_v4
 {
 public:
+  /// The type used to represent an address as an unsigned integer.
+  typedef uint_least32_t uint_type;
+
   /// The type used to represent an address as an array of bytes.
-  typedef boost::array<unsigned char, 4> bytes_type;
+  /**
+   * @note This type is defined in terms of the C++0x template @c std::array
+   * when it is available. Otherwise, it uses @c boost:array.
+   */
+#if defined(GENERATING_DOCUMENTATION)
+  typedef array<unsigned char, 4> bytes_type;
+#else
+  typedef boost::asio::detail::array<unsigned char, 4> bytes_type;
+#endif
 
   /// Default constructor.
-  address_v4()
+  /**
+   * Initialises the @c address_v4 object such that:
+   * @li <tt>to_bytes()</tt> yields <tt>{0, 0, 0, 0}</tt>; and
+   * @li <tt>to_uint() == 0</tt>.
+   */
+  address_v4() noexcept
   {
     addr_.s_addr = 0;
   }
 
   /// Construct an address from raw bytes.
-  explicit address_v4(const bytes_type& bytes)
-  {
-#if UCHAR_MAX > 0xFF
-    if (bytes[0] > 0xFF || bytes[1] > 0xFF
-        || bytes[2] > 0xFF || bytes[3] > 0xFF)
-    {
-      std::out_of_range ex("address_v4 from bytes_type");
-      boost::throw_exception(ex);
-    }
-#endif // UCHAR_MAX > 0xFF
+  /**
+   * Initialises the @c address_v4 object such that <tt>to_bytes() ==
+   * bytes</tt>.
+   *
+   * @throws out_of_range Thrown if any element in @c bytes is not in the range
+   * <tt>0 - 0xFF</tt>. Note that no range checking is required for platforms
+   * where <tt>std::numeric_limits<unsigned char>::max()</tt> is <tt>0xFF</tt>.
+   */
+  BOOST_ASIO_DECL explicit address_v4(const bytes_type& bytes);
 
-    using namespace std; // For memcpy.
-    memcpy(&addr_.s_addr, bytes.elems, 4);
-  }
-
-  /// Construct an address from a unsigned long in host byte order.
-  explicit address_v4(unsigned long addr)
-  {
-#if ULONG_MAX > 0xFFFFFFFF
-    if (addr > 0xFFFFFFFF)
-    {
-      std::out_of_range ex("address_v4 from unsigned long");
-      boost::throw_exception(ex);
-    }
-#endif // ULONG_MAX > 0xFFFFFFFF
-
-    addr_.s_addr = boost::asio::detail::socket_ops::host_to_network_long(addr);
-  }
+  /// Construct an address from an unsigned integer in host byte order.
+  /**
+   * Initialises the @c address_v4 object such that <tt>to_uint() == addr</tt>.
+   */
+  BOOST_ASIO_DECL explicit address_v4(uint_type addr);
 
   /// Copy constructor.
-  address_v4(const address_v4& other)
+  address_v4(const address_v4& other) noexcept
+    : addr_(other.addr_)
+  {
+  }
+
+  /// Move constructor.
+  address_v4(address_v4&& other) noexcept
     : addr_(other.addr_)
   {
   }
 
   /// Assign from another address.
-  address_v4& operator=(const address_v4& other)
+  address_v4& operator=(const address_v4& other) noexcept
+  {
+    addr_ = other.addr_;
+    return *this;
+  }
+
+  /// Move-assign from another address.
+  address_v4& operator=(address_v4&& other) noexcept
   {
     addr_ = other.addr_;
     return *this;
   }
 
   /// Get the address in bytes, in network byte order.
-  bytes_type to_bytes() const
-  {
-    using namespace std; // For memcpy.
-    bytes_type bytes;
-    memcpy(bytes.elems, &addr_.s_addr, 4);
-    return bytes;
-  }
+  BOOST_ASIO_DECL bytes_type to_bytes() const noexcept;
 
-  /// Get the address as an unsigned long in host byte order
-  unsigned long to_ulong() const
-  {
-    return boost::asio::detail::socket_ops::network_to_host_long(addr_.s_addr);
-  }
+  /// Get the address as an unsigned integer in host byte order.
+  BOOST_ASIO_DECL uint_type to_uint() const noexcept;
 
   /// Get the address as a string in dotted decimal format.
-  std::string to_string() const
-  {
-    boost::system::error_code ec;
-    std::string addr = to_string(ec);
-    boost::asio::detail::throw_error(ec);
-    return addr;
-  }
+  BOOST_ASIO_DECL std::string to_string() const;
 
-  /// Get the address as a string in dotted decimal format.
-  std::string to_string(boost::system::error_code& ec) const
-  {
-    char addr_str[boost::asio::detail::max_addr_v4_str_len];
-    const char* addr =
-      boost::asio::detail::socket_ops::inet_ntop(AF_INET, &addr_, addr_str,
-          boost::asio::detail::max_addr_v4_str_len, 0, ec);
-    if (addr == 0)
-      return std::string();
-    return addr;
-  }
+  /// Determine whether the address is a loopback address.
+  /**
+   * This function tests whether the address is in the address block
+   * <tt>127.0.0.0/8</tt>, which corresponds to the address range
+   * <tt>127.0.0.0 - 127.255.255.255</tt>.
+   *
+   * @returns <tt>(to_uint() & 0xFF000000) == 0x7F000000</tt>.
+   */
+  BOOST_ASIO_DECL bool is_loopback() const noexcept;
 
-  /// Create an address from an IP address string in dotted decimal form.
-  static address_v4 from_string(const char* str)
-  {
-    boost::system::error_code ec;
-    address_v4 addr = from_string(str, ec);
-    boost::asio::detail::throw_error(ec);
-    return addr;
-  }
-
-  /// Create an address from an IP address string in dotted decimal form.
-  static address_v4 from_string(const char* str, boost::system::error_code& ec)
-  {
-    address_v4 tmp;
-    if (boost::asio::detail::socket_ops::inet_pton(
-          AF_INET, str, &tmp.addr_, 0, ec) <= 0)
-      return address_v4();
-    return tmp;
-  }
-
-  /// Create an address from an IP address string in dotted decimal form.
-  static address_v4 from_string(const std::string& str)
-  {
-    return from_string(str.c_str());
-  }
-
-  /// Create an address from an IP address string in dotted decimal form.
-  static address_v4 from_string(const std::string& str,
-      boost::system::error_code& ec)
-  {
-    return from_string(str.c_str(), ec);
-  }
-
-  /// Determine whether the address is a class A address.
-  bool is_class_a() const
-  {
-    return IN_CLASSA(to_ulong());
-  }
-
-  /// Determine whether the address is a class B address.
-  bool is_class_b() const
-  {
-    return IN_CLASSB(to_ulong());
-  }
-
-  /// Determine whether the address is a class C address.
-  bool is_class_c() const
-  {
-    return IN_CLASSC(to_ulong());
-  }
+  /// Determine whether the address is unspecified.
+  /**
+   * This function tests whether the address is the unspecified address
+   * <tt>0.0.0.0</tt>.
+   *
+   * @returns <tt>to_uint() == 0</tt>.
+   */
+  BOOST_ASIO_DECL bool is_unspecified() const noexcept;
 
   /// Determine whether the address is a multicast address.
-  bool is_multicast() const
-  {
-    return IN_MULTICAST(to_ulong());
-  }
+  /**
+   * This function tests whether the address is in the multicast address block
+   * <tt>224.0.0.0/4</tt>, which corresponds to the address range
+   * <tt>224.0.0.0 - 239.255.255.255</tt>.
+   *
+   * @returns <tt>(to_uint() & 0xF0000000) == 0xE0000000</tt>.
+   */
+  BOOST_ASIO_DECL bool is_multicast() const noexcept;
 
   /// Compare two addresses for equality.
-  friend bool operator==(const address_v4& a1, const address_v4& a2)
+  friend bool operator==(const address_v4& a1,
+      const address_v4& a2) noexcept
   {
     return a1.addr_.s_addr == a2.addr_.s_addr;
   }
 
   /// Compare two addresses for inequality.
-  friend bool operator!=(const address_v4& a1, const address_v4& a2)
+  friend bool operator!=(const address_v4& a1,
+      const address_v4& a2) noexcept
   {
     return a1.addr_.s_addr != a2.addr_.s_addr;
   }
 
   /// Compare addresses for ordering.
-  friend bool operator<(const address_v4& a1, const address_v4& a2)
+  /**
+   * Compares two addresses in host byte order.
+   *
+   * @returns <tt>a1.to_uint() < a2.to_uint()</tt>.
+   */
+  friend bool operator<(const address_v4& a1,
+      const address_v4& a2) noexcept
   {
-    return a1.to_ulong() < a2.to_ulong();
+    return a1.to_uint() < a2.to_uint();
   }
 
   /// Compare addresses for ordering.
-  friend bool operator>(const address_v4& a1, const address_v4& a2)
+  /**
+   * Compares two addresses in host byte order.
+   *
+   * @returns <tt>a1.to_uint() > a2.to_uint()</tt>.
+   */
+  friend bool operator>(const address_v4& a1,
+      const address_v4& a2) noexcept
   {
-    return a1.to_ulong() > a2.to_ulong();
+    return a1.to_uint() > a2.to_uint();
   }
 
   /// Compare addresses for ordering.
-  friend bool operator<=(const address_v4& a1, const address_v4& a2)
+  /**
+   * Compares two addresses in host byte order.
+   *
+   * @returns <tt>a1.to_uint() <= a2.to_uint()</tt>.
+   */
+  friend bool operator<=(const address_v4& a1,
+      const address_v4& a2) noexcept
   {
-    return a1.to_ulong() <= a2.to_ulong();
+    return a1.to_uint() <= a2.to_uint();
   }
 
   /// Compare addresses for ordering.
-  friend bool operator>=(const address_v4& a1, const address_v4& a2)
+  /**
+   * Compares two addresses in host byte order.
+   *
+   * @returns <tt>a1.to_uint() >= a2.to_uint()</tt>.
+   */
+  friend bool operator>=(const address_v4& a1,
+      const address_v4& a2) noexcept
   {
-    return a1.to_ulong() >= a2.to_ulong();
+    return a1.to_uint() >= a2.to_uint();
   }
 
   /// Obtain an address object that represents any address.
-  static address_v4 any()
+  /**
+   * This functions returns an address that represents the "any" address
+   * <tt>0.0.0.0</tt>.
+   *
+   * @returns A default-constructed @c address_v4 object.
+   */
+  static address_v4 any() noexcept
   {
-    return address_v4(static_cast<unsigned long>(INADDR_ANY));
+    return address_v4();
   }
 
   /// Obtain an address object that represents the loopback address.
-  static address_v4 loopback()
+  /**
+   * This function returns an address that represents the well-known loopback
+   * address <tt>127.0.0.1</tt>.
+   *
+   * @returns <tt>address_v4(0x7F000001)</tt>.
+   */
+  static address_v4 loopback() noexcept
   {
-    return address_v4(static_cast<unsigned long>(INADDR_LOOPBACK));
+    return address_v4(0x7F000001);
   }
 
   /// Obtain an address object that represents the broadcast address.
-  static address_v4 broadcast()
+  /**
+   * This function returns an address that represents the broadcast address
+   * <tt>255.255.255.255</tt>.
+   *
+   * @returns <tt>address_v4(0xFFFFFFFF)</tt>.
+   */
+  static address_v4 broadcast() noexcept
   {
-    return address_v4(static_cast<unsigned long>(INADDR_BROADCAST));
-  }
-
-  /// Obtain an address object that represents the broadcast address that
-  /// corresponds to the specified address and netmask.
-  static address_v4 broadcast(const address_v4& addr, const address_v4& mask)
-  {
-    return address_v4(addr.to_ulong() | ~mask.to_ulong());
-  }
-
-  /// Obtain the netmask that corresponds to the address, based on its address
-  /// class.
-  static address_v4 netmask(const address_v4& addr)
-  {
-    if (addr.is_class_a())
-      return address_v4(0xFF000000);
-    if (addr.is_class_b())
-      return address_v4(0xFFFF0000);
-    if (addr.is_class_c())
-      return address_v4(0xFFFFFF00);
     return address_v4(0xFFFFFFFF);
   }
 
@@ -273,7 +256,70 @@ private:
   boost::asio::detail::in4_addr_type addr_;
 };
 
-#if !defined(BOOST_NO_IOSTREAM)
+/// Create an IPv4 address from raw bytes in network order.
+/**
+ * @relates address_v4
+ */
+inline address_v4 make_address_v4(const address_v4::bytes_type& bytes)
+{
+  return address_v4(bytes);
+}
+
+/// Create an IPv4 address from an unsigned integer in host byte order.
+/**
+ * @relates address_v4
+ */
+inline address_v4 make_address_v4(address_v4::uint_type addr)
+{
+  return address_v4(addr);
+}
+
+/// Create an IPv4 address from an IP address string in dotted decimal form.
+/**
+ * @relates address_v4
+ */
+BOOST_ASIO_DECL address_v4 make_address_v4(const char* str);
+
+/// Create an IPv4 address from an IP address string in dotted decimal form.
+/**
+ * @relates address_v4
+ */
+BOOST_ASIO_DECL address_v4 make_address_v4(const char* str,
+    boost::system::error_code& ec) noexcept;
+
+/// Create an IPv4 address from an IP address string in dotted decimal form.
+/**
+ * @relates address_v4
+ */
+BOOST_ASIO_DECL address_v4 make_address_v4(const std::string& str);
+
+/// Create an IPv4 address from an IP address string in dotted decimal form.
+/**
+ * @relates address_v4
+ */
+BOOST_ASIO_DECL address_v4 make_address_v4(const std::string& str,
+    boost::system::error_code& ec) noexcept;
+
+#if defined(BOOST_ASIO_HAS_STRING_VIEW) \
+  || defined(GENERATING_DOCUMENTATION)
+
+/// Create an IPv4 address from an IP address string in dotted decimal form.
+/**
+ * @relates address_v4
+ */
+BOOST_ASIO_DECL address_v4 make_address_v4(string_view str);
+
+/// Create an IPv4 address from an IP address string in dotted decimal form.
+/**
+ * @relates address_v4
+ */
+BOOST_ASIO_DECL address_v4 make_address_v4(string_view str,
+    boost::system::error_code& ec) noexcept;
+
+#endif // defined(BOOST_ASIO_HAS_STRING_VIEW)
+       //  || defined(GENERATING_DOCUMENTATION)
+
+#if !defined(BOOST_ASIO_NO_IOSTREAM)
 
 /// Output an address as a string.
 /**
@@ -289,29 +335,33 @@ private:
  */
 template <typename Elem, typename Traits>
 std::basic_ostream<Elem, Traits>& operator<<(
-    std::basic_ostream<Elem, Traits>& os, const address_v4& addr)
-{
-  boost::system::error_code ec;
-  std::string s = addr.to_string(ec);
-  if (ec)
-  {
-    if (os.exceptions() & std::ios::failbit)
-      boost::asio::detail::throw_error(ec);
-    else
-      os.setstate(std::ios_base::failbit);
-  }
-  else
-    for (std::string::iterator i = s.begin(); i != s.end(); ++i)
-      os << os.widen(*i);
-  return os;
-}
+    std::basic_ostream<Elem, Traits>& os, const address_v4& addr);
 
-#endif // !defined(BOOST_NO_IOSTREAM)
+#endif // !defined(BOOST_ASIO_NO_IOSTREAM)
 
 } // namespace ip
 } // namespace asio
 } // namespace boost
 
+namespace std {
+
+template <>
+struct hash<boost::asio::ip::address_v4>
+{
+  std::size_t operator()(const boost::asio::ip::address_v4& addr)
+    const noexcept
+  {
+    return std::hash<unsigned int>()(addr.to_uint());
+  }
+};
+
+} // namespace std
+
 #include <boost/asio/detail/pop_options.hpp>
+
+#include <boost/asio/ip/impl/address_v4.hpp>
+#if defined(BOOST_ASIO_HEADER_ONLY)
+# include <boost/asio/ip/impl/address_v4.ipp>
+#endif // defined(BOOST_ASIO_HEADER_ONLY)
 
 #endif // BOOST_ASIO_IP_ADDRESS_V4_HPP

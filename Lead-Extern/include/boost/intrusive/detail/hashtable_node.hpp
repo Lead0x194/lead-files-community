@@ -1,6 +1,6 @@
 /////////////////////////////////////////////////////////////////////////////
 //
-// (C) Copyright Ion Gaztanaga  2007-2009
+// (C) Copyright Ion Gaztanaga  2007-2014
 //
 // Distributed under the Boost Software License, Version 1.0.
 //    (See accompanying file LICENSE_1_0.txt or copy at
@@ -13,197 +13,362 @@
 #ifndef BOOST_INTRUSIVE_HASHTABLE_NODE_HPP
 #define BOOST_INTRUSIVE_HASHTABLE_NODE_HPP
 
-#include <boost/intrusive/detail/config_begin.hpp>
-#include <iterator>
+#ifndef BOOST_CONFIG_HPP
+#  include <boost/config.hpp>
+#endif
+
+#if defined(BOOST_HAS_PRAGMA_ONCE)
+#  pragma once
+#endif
+
+#include <boost/intrusive/detail/workaround.hpp>
 #include <boost/intrusive/detail/assert.hpp>
-#include <boost/intrusive/detail/pointer_to_other.hpp>
-#include <boost/intrusive/circular_list_algorithms.hpp>
+#include <boost/intrusive/pointer_traits.hpp>
 #include <boost/intrusive/detail/mpl.hpp>
-#include <boost/intrusive/detail/utilities.hpp>
-#include <boost/intrusive/detail/slist_node.hpp> //remove-me
+#include <boost/intrusive/trivial_value_traits.hpp>
+#include <boost/intrusive/detail/common_slist_algorithms.hpp>
+#include <boost/intrusive/detail/iiterator.hpp>
+#include <boost/intrusive/detail/slist_iterator.hpp>
+#include <boost/move/detail/to_raw_pointer.hpp>
 #include <cstddef>
+#include <climits>
+#include <boost/move/core.hpp>
+
 
 namespace boost {
 namespace intrusive {
-namespace detail {
 
-template<int Dummy = 0>
-struct prime_list_holder
+template <class NodeTraits>
+struct bucket_impl
+   : public NodeTraits::node
 {
-   static const std::size_t prime_list[];
-   static const std::size_t prime_list_size;
-};
-
-template<int Dummy>
-const std::size_t prime_list_holder<Dummy>::prime_list[] = {
-   53ul, 97ul, 193ul, 389ul, 769ul,
-   1543ul, 3079ul, 6151ul, 12289ul, 24593ul,
-   49157ul, 98317ul, 196613ul, 393241ul, 786433ul,
-   1572869ul, 3145739ul, 6291469ul, 12582917ul, 25165843ul,
-   50331653ul, 100663319ul, 201326611ul, 402653189ul, 805306457ul,
-   1610612741ul, 3221225473ul, 4294967291ul };
-
-template<int Dummy>
-const std::size_t prime_list_holder<Dummy>::prime_list_size
-   = sizeof(prime_list)/sizeof(std::size_t);
-
-template <class Slist>
-struct bucket_impl : public Slist
-{
-   typedef Slist slist_type;
-   bucket_impl()
-   {}
-
-   bucket_impl(const bucket_impl &)
-   {}
-
-   ~bucket_impl()
-   {
-      //This bucket is still being used!
-      BOOST_INTRUSIVE_INVARIANT_ASSERT(Slist::empty());
-   }
-
-   bucket_impl &operator=(const bucket_impl&)
-   {
-      //This bucket is still in use!
-      BOOST_INTRUSIVE_INVARIANT_ASSERT(Slist::empty());
-      //Slist::clear();
-      return *this;
-   }
-};
-
-template<class Slist>
-struct bucket_traits_impl
-{
-   /// @cond
-   typedef typename boost::pointer_to_other
-      < typename Slist::pointer, bucket_impl<Slist> >::type bucket_ptr;
-   typedef typename Slist::size_type size_type;
-   /// @endcond
-
-   bucket_traits_impl(bucket_ptr buckets, size_type len)
-      :  buckets_(buckets), buckets_len_(len)
-   {}
-
-   bucket_ptr bucket_begin() const
-   {  return buckets_;  }
-
-   size_type  bucket_count() const
-   {  return buckets_len_;  }
+   public:
+   typedef NodeTraits node_traits;
 
    private:
-   bucket_ptr  buckets_;
-   size_type   buckets_len_;
+   typedef typename node_traits::node_ptr          node_ptr;
+   typedef typename node_traits::const_node_ptr    const_node_ptr;
+
+   typedef detail::common_slist_algorithms<NodeTraits> algo_t;
+
+   public:
+   inline bucket_impl()
+   {}
+
+   inline bucket_impl(const bucket_impl &)
+   {}
+
+   inline ~bucket_impl()
+   {}
+
+   inline bucket_impl &operator=(const bucket_impl&)
+   {  return *this;  }
+
+   inline node_ptr get_node_ptr()
+   {  return pointer_traits<node_ptr>::pointer_to(*this);  }
+
+   inline const_node_ptr get_node_ptr() const
+   {  return pointer_traits<const_node_ptr>::pointer_to(*this);  }
+
+   inline node_ptr begin_ptr()
+   {  return node_traits::get_next(get_node_ptr());  }
 };
 
-template<class Container, bool IsConst>
-class hashtable_iterator
-   :  public std::iterator
-         < std::forward_iterator_tag
-         , typename Container::value_type
-         , typename std::iterator_traits<typename Container::value_type*>::difference_type
-         , typename detail::add_const_if_c
-                     <typename Container::value_type, IsConst>::type *
-         , typename detail::add_const_if_c
-                     <typename Container::value_type, IsConst>::type &
-         >
-{
-   typedef typename Container::real_value_traits                  real_value_traits;
-   typedef typename Container::siterator                          siterator;
-   typedef typename Container::const_siterator                    const_siterator;
-   typedef typename Container::bucket_type                        bucket_type;
-   typedef typename boost::pointer_to_other
-      < typename Container::pointer, const Container>::type       const_cont_ptr;
-   typedef typename Container::size_type                          size_type;
 
-   static typename Container::node_ptr downcast_bucket(typename bucket_type::node_ptr p)
-   {  return typename Container::node_ptr(&static_cast<typename Container::node&>(*p));   }
+
+template <class NodeTraits>
+struct hash_reduced_slist_node_traits
+{
+   template <class U> static detail::no_type test(...);
+   template <class U> static detail::yes_type test(typename U::reduced_slist_node_traits*);
+   static const bool value = sizeof(test<NodeTraits>(0)) == sizeof(detail::yes_type);
+};
+
+template <class NodeTraits>
+struct apply_reduced_slist_node_traits
+{
+   typedef typename NodeTraits::reduced_slist_node_traits type;
+};
+
+template <class NodeTraits>
+struct reduced_slist_node_traits
+{
+   typedef typename detail::eval_if_c
+      < hash_reduced_slist_node_traits<NodeTraits>::value
+      , apply_reduced_slist_node_traits<NodeTraits>
+      , detail::identity<NodeTraits>
+      >::type type;
+};
+
+template<class BucketValueTraits, bool LinearBuckets, bool IsConst>
+class hashtable_iterator
+{
+   typedef typename BucketValueTraits::value_traits            value_traits;
+   typedef typename BucketValueTraits::bucket_traits           bucket_traits;
+
+   typedef iiterator< value_traits, IsConst
+                    , std::forward_iterator_tag>   types_t;
+   public:
+   typedef typename types_t::iterator_type::difference_type    difference_type;
+   typedef typename types_t::iterator_type::value_type         value_type;
+   typedef typename types_t::iterator_type::pointer            pointer;
+   typedef typename types_t::iterator_type::reference          reference;
+   typedef typename types_t::iterator_type::iterator_category  iterator_category;
+
+   private:
+   typedef typename value_traits::node_traits                  node_traits;
+   typedef typename node_traits::node_ptr                      node_ptr;
+   typedef typename BucketValueTraits::bucket_type             bucket_type;
+   typedef typename bucket_type::node_traits                   slist_node_traits;
+   typedef typename slist_node_traits::node_ptr                slist_node_ptr;
+   typedef trivial_value_traits
+      <slist_node_traits, normal_link>                         slist_value_traits;
+   typedef slist_iterator<slist_value_traits, false>           siterator;
+   typedef slist_iterator<slist_value_traits, true>            const_siterator;
+   typedef circular_slist_algorithms<slist_node_traits>        slist_node_algorithms;
+
+   typedef typename pointer_traits
+      <pointer>::template rebind_pointer
+         < const BucketValueTraits >::type                     const_bucketvaltraits_ptr;
+   class nat;
+   typedef typename
+      detail::if_c< IsConst
+                  , hashtable_iterator<BucketValueTraits, LinearBuckets, false>
+                  , nat>::type                                 nonconst_iterator;
+
+   inline static node_ptr downcast_bucket(typename bucket_type::node_traits::node_ptr p)
+   {
+      return pointer_traits<node_ptr>::
+         pointer_to(static_cast<typename node_traits::node&>(*p));
+   }
 
    public:
-   typedef typename Container::value_type    value_type;
-   typedef  typename detail::add_const_if_c
-                     <typename Container::value_type, IsConst>::type *pointer;
-   typedef typename detail::add_const_if_c
-                     <typename Container::value_type, IsConst>::type &reference;
 
-   hashtable_iterator ()
+   inline hashtable_iterator ()
+      : slist_it_()  //Value initialization to achieve "null iterators" (N3644)
    {}
 
-   explicit hashtable_iterator(siterator ptr, const Container *cont)
-      :  slist_it_ (ptr),   cont_ (cont)
+   inline explicit hashtable_iterator(siterator ptr, const BucketValueTraits *cont)
+      : slist_it_ (ptr)
+      , traitsptr_ (cont ? pointer_traits<const_bucketvaltraits_ptr>::pointer_to(*cont) : const_bucketvaltraits_ptr() )
    {}
 
-   hashtable_iterator(const hashtable_iterator<Container, false> &other)
-      :  slist_it_(other.slist_it()), cont_(other.get_container())
+   inline hashtable_iterator(const hashtable_iterator &other)
+      :  slist_it_(other.slist_it()), traitsptr_(other.get_bucket_value_traits())
    {}
 
-   const siterator &slist_it() const
+   inline hashtable_iterator(const nonconst_iterator &other)
+      :  slist_it_(other.slist_it()), traitsptr_(other.get_bucket_value_traits())
+   {}
+
+   inline const siterator &slist_it() const
    { return slist_it_; }
 
-   hashtable_iterator<Container, false> unconst() const
-   {  return hashtable_iterator<Container, false>(this->slist_it(), this->get_container());   }
+   inline hashtable_iterator<BucketValueTraits, LinearBuckets, false> unconst() const
+   {  return hashtable_iterator<BucketValueTraits, LinearBuckets, false>(this->slist_it(), this->get_bucket_value_traits());   }
 
-   public:
-   hashtable_iterator& operator++() 
+   inline hashtable_iterator& operator++()
    {  this->increment();   return *this;   }
-   
-   hashtable_iterator operator++(int)
+
+   inline hashtable_iterator &operator=(const hashtable_iterator &other)
+   {  slist_it_ = other.slist_it(); traitsptr_ = other.get_bucket_value_traits();   return *this;  }
+
+   inline hashtable_iterator operator++(int)
    {
       hashtable_iterator result (*this);
       this->increment();
       return result;
    }
 
-   friend bool operator== (const hashtable_iterator& i, const hashtable_iterator& i2)
+   inline friend bool operator== (const hashtable_iterator& i, const hashtable_iterator& i2)
    { return i.slist_it_ == i2.slist_it_; }
 
-   friend bool operator!= (const hashtable_iterator& i, const hashtable_iterator& i2)
+   inline friend bool operator!= (const hashtable_iterator& i, const hashtable_iterator& i2)
    { return !(i == i2); }
 
-   reference operator*() const
+   inline reference operator*() const
    { return *this->operator ->(); }
 
-   pointer operator->() const
-   { return detail::get_pointer(this->get_real_value_traits()->to_value_ptr(downcast_bucket(slist_it_.pointed_node()))); }
+   inline pointer operator->() const
+   {
+      return this->priv_value_traits().to_value_ptr
+         (downcast_bucket(slist_it_.pointed_node()));
+   }
 
-   const Container *get_container() const
-   {  return detail::get_pointer(cont_);  }
+   inline const_bucketvaltraits_ptr get_bucket_value_traits() const
+   {  return traitsptr_;  }
 
-   const real_value_traits *get_real_value_traits() const
-   {  return &this->get_container()->get_real_value_traits();  }
+   inline const value_traits &priv_value_traits() const
+   {  return traitsptr_->priv_value_traits();  }
 
    private:
+
    void increment()
    {
-      const Container *cont =  detail::get_pointer(cont_);
-      bucket_type* buckets = detail::get_pointer(cont->bucket_pointer());
-      size_type   buckets_len    = cont->bucket_count();
+      bucket_type* const buckets = boost::movelib::to_raw_pointer(traitsptr_->priv_bucket_traits().bucket_begin());
+      const std::size_t buckets_len = traitsptr_->priv_bucket_traits().bucket_count();
 
       ++slist_it_;
-      if(buckets[0].cend().pointed_node()    <= slist_it_.pointed_node() && 
-         slist_it_.pointed_node()<= buckets[buckets_len].cend().pointed_node()      ){
-         //Now get the bucket_impl from the iterator
-         const bucket_type &b = static_cast<const bucket_type&>
-            (bucket_type::slist_type::container_from_end_iterator(slist_it_));
+      const slist_node_ptr n = slist_it_.pointed_node();
+      const siterator first_bucket_bbegin(buckets->get_node_ptr());
+      if(first_bucket_bbegin.pointed_node() <= n && n <= buckets[buckets_len-1].get_node_ptr()){
+         //If one-past the node is inside the bucket then look for the next non-empty bucket
+         //1. get the bucket_impl from the iterator
+         const bucket_type &b = static_cast<const bucket_type&>(*n);
 
-         //Now just calculate the index b has in the bucket array
-         size_type n_bucket = static_cast<size_type>(&b - &buckets[0]);
+         //2. Now just calculate the index b has in the bucket array
+         std::size_t n_bucket = static_cast<std::size_t>(&b - buckets);
+
+         //3. Iterate until a non-empty bucket is found
+         slist_node_ptr bucket_nodeptr = buckets->get_node_ptr();
          do{
-            if (++n_bucket == buckets_len){
-               slist_it_ = (&buckets[0] + buckets_len)->end();
-               break;
+            if (++n_bucket >= buckets_len){  //bucket overflow, return end() iterator
+               slist_it_ = first_bucket_bbegin;
+               return;
             }
-            slist_it_ = buckets[n_bucket].begin();
+            bucket_nodeptr = buckets[n_bucket].get_node_ptr();
          }
-         while (slist_it_ == buckets[n_bucket].end());
+         while (slist_node_algorithms::is_empty(bucket_nodeptr));
+         slist_it_ = siterator(bucket_nodeptr);
+         ++slist_it_;
+      }
+      else{
+         //++slist_it_ yield to a valid object
       }
    }
 
-   siterator      slist_it_;
-   const_cont_ptr cont_;
+   siterator                  slist_it_;
+   const_bucketvaltraits_ptr  traitsptr_;
 };
 
-}  //namespace detail {
+template<class BucketValueTraits, bool IsConst>
+class hashtable_iterator<BucketValueTraits, true, IsConst>
+{
+   typedef typename BucketValueTraits::value_traits            value_traits;
+   typedef typename BucketValueTraits::bucket_traits           bucket_traits;
+
+   typedef iiterator< value_traits, IsConst
+                    , std::forward_iterator_tag>   types_t;
+   public:
+   typedef typename types_t::iterator_type::difference_type    difference_type;
+   typedef typename types_t::iterator_type::value_type         value_type;
+   typedef typename types_t::iterator_type::pointer            pointer;
+   typedef typename types_t::iterator_type::reference          reference;
+   typedef typename types_t::iterator_type::iterator_category  iterator_category;
+
+   private:
+   typedef typename value_traits::node_traits                  node_traits;
+   typedef typename node_traits::node_ptr                      node_ptr;
+   typedef typename BucketValueTraits::bucket_type             bucket_type;
+   typedef typename BucketValueTraits::bucket_ptr              bucket_ptr;
+   typedef typename bucket_type::node_traits                   slist_node_traits;
+   typedef linear_slist_algorithms<slist_node_traits>          slist_node_algorithms;
+   typedef typename slist_node_traits::node_ptr                slist_node_ptr;
+   typedef trivial_value_traits
+      <slist_node_traits, normal_link>                         slist_value_traits;
+   typedef slist_iterator<slist_value_traits, false>           siterator;
+   typedef slist_iterator<slist_value_traits, true>            const_siterator;
+
+   static const bool stateful_value_traits =
+      detail::is_stateful_value_traits<value_traits>::value;
+
+   typedef typename pointer_traits
+      <pointer>::template rebind_pointer
+         < const value_traits >::type                          const_value_traits_ptr;
+   class nat;
+   typedef typename
+      detail::if_c< IsConst
+                  , hashtable_iterator<BucketValueTraits, true, false>
+                  , nat>::type                                 nonconst_iterator;
+
+   inline static node_ptr downcast_bucket(slist_node_ptr p)
+   {
+      return pointer_traits<node_ptr>::
+         pointer_to(static_cast<typename node_traits::node&>(*p));
+   }
+
+   public:
+
+   inline hashtable_iterator ()
+      : slist_it_()  //Value initialization to achieve "null iterators" (N3644)
+      , members_()
+   {}
+
+   inline explicit hashtable_iterator(siterator ptr, bucket_ptr bp, const_value_traits_ptr traits_ptr)
+      : slist_it_ (ptr)
+      , members_ (bp, traits_ptr)
+   {}
+
+   inline hashtable_iterator(const hashtable_iterator &other)
+      :  slist_it_(other.slist_it()), members_(other.get_bucket_ptr(), other.get_value_traits())
+   {}
+
+   inline hashtable_iterator(const nonconst_iterator &other)
+      :  slist_it_(other.slist_it()), members_(other.get_bucket_ptr(), other.get_value_traits())
+   {}
+
+   inline const siterator &slist_it() const
+   { return slist_it_; }
+
+   inline hashtable_iterator<BucketValueTraits, true, false> unconst() const
+   {  return hashtable_iterator<BucketValueTraits, true, false>(this->slist_it(), members_.nodeptr_, members_.get_ptr());   }
+
+   inline hashtable_iterator& operator++()
+   {  this->increment();   return *this;   }
+
+   inline hashtable_iterator &operator=(const hashtable_iterator &other)
+   {  slist_it_ = other.slist_it(); members_ = other.members_;  return *this;  }
+
+   inline hashtable_iterator operator++(int)
+   {
+      hashtable_iterator result (*this);
+      this->increment();
+      return result;
+   }
+
+   inline friend bool operator== (const hashtable_iterator& i, const hashtable_iterator& i2)
+   { return i.slist_it_ == i2.slist_it_; }
+
+   inline friend bool operator!= (const hashtable_iterator& i, const hashtable_iterator& i2)
+   { return i.slist_it_ != i2.slist_it_; }
+
+   inline reference operator*() const
+   { return *this->operator ->(); }
+
+   inline pointer operator->() const
+   { return this->operator_arrow(detail::bool_<stateful_value_traits>()); }
+
+   inline const_value_traits_ptr get_value_traits() const
+   {  return members_.get_ptr(); }
+
+   inline bucket_ptr get_bucket_ptr() const
+   {  return members_.nodeptr_; }
+
+   private:
+
+   inline pointer operator_arrow(detail::false_) const
+   { return value_traits::to_value_ptr(downcast_bucket(slist_it_.pointed_node())); }
+
+   inline pointer operator_arrow(detail::true_) const
+   { return this->get_value_traits()->to_value_ptr(downcast_bucket(slist_it_.pointed_node())); }
+
+   void increment()
+   {
+      ++slist_it_;
+      if (slist_it_ == siterator()){
+         slist_node_ptr bucket_nodeptr;
+         do {
+            ++members_.nodeptr_;
+             bucket_nodeptr = members_.nodeptr_->get_node_ptr();
+         }while(slist_node_algorithms::is_empty(bucket_nodeptr));
+         slist_it_ = siterator(slist_node_traits::get_next(bucket_nodeptr));
+      }
+   }
+
+   siterator   slist_it_;
+   iiterator_members<bucket_ptr, const_value_traits_ptr, stateful_value_traits> members_;
+};
+
 }  //namespace intrusive {
 }  //namespace boost {
 

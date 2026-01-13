@@ -3,21 +3,51 @@
 //Distributed under the Boost Software License, Version 1.0. (See accompanying
 //file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
 
-#ifndef UUID_63EE924290FB11DC87BB856555D89593
-#define UUID_63EE924290FB11DC87BB856555D89593
-#if defined(__GNUC__) && !defined(BOOST_EXCEPTION_ENABLE_WARNINGS)
-#pragma GCC system_header
-#endif
-#if defined(_MSC_VER) && !defined(BOOST_EXCEPTION_ENABLE_WARNINGS)
-#pragma warning(push,1)
-#endif
+#ifndef BOOST_EXCEPTION_63EE924290FB11DC87BB856555D89593
+#define BOOST_EXCEPTION_63EE924290FB11DC87BB856555D89593
 
 #include <boost/exception/info.hpp>
 #include <boost/tuple/tuple.hpp>
 
+#ifndef BOOST_EXCEPTION_ENABLE_WARNINGS
+#if defined(__GNUC__) && __GNUC__*100+__GNUC_MINOR__>301
+#pragma GCC system_header
+#endif
+#ifdef __clang__
+#pragma clang system_header
+#endif
+#ifdef _MSC_VER
+#pragma warning(push,1)
+#endif
+#endif
+
 namespace
 boost
     {
+    template <
+        class E >
+    inline
+    E const &
+    operator<<(
+        E const & x,
+        tuple< > const & v )
+        {
+        return x;
+        }
+
+    template <
+        class E,
+        class Tag1,class T1 >
+    inline
+    E const &
+    operator<<(
+        E const & x,
+        tuple<
+            error_info<Tag1,T1> > const & v )
+        {
+        return x << v.template get<0>();
+        }
+
     template <
         class E,
         class Tag1,class T1,

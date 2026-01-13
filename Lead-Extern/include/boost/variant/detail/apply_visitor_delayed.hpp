@@ -13,10 +13,13 @@
 #ifndef BOOST_VARIANT_DETAIL_APPLY_VISITOR_DELAYED_HPP
 #define BOOST_VARIANT_DETAIL_APPLY_VISITOR_DELAYED_HPP
 
-#include "boost/variant/detail/generic_result_type.hpp"
+#include <boost/variant/detail/apply_visitor_unary.hpp>
+#include <boost/variant/detail/apply_visitor_binary.hpp>
+#include <boost/variant/variant_fwd.hpp>
 
-#include "boost/variant/detail/apply_visitor_unary.hpp"
-#include "boost/variant/detail/apply_visitor_binary.hpp"
+
+#include <boost/variant/detail/has_result_type.hpp>
+#include <boost/core/enable_if.hpp>
 
 namespace boost {
 
@@ -49,36 +52,70 @@ private: // representation
 
 public: // structors
 
-    explicit apply_visitor_delayed_t(Visitor& visitor)
+    explicit apply_visitor_delayed_t(Visitor& visitor) BOOST_NOEXCEPT
       : visitor_(visitor)
     {
     }
 
-public: // unary visitor interface
-
-    template <typename Visitable>
-        BOOST_VARIANT_AUX_GENERIC_RESULT_TYPE(result_type)
-    operator()(Visitable& visitable)
+public: // N-ary visitor interface
+    template <typename... Visitables>
+    result_type operator()(Visitables&... visitables) const
     {
-        return apply_visitor(visitor_, visitable);
+        return apply_visitor(visitor_, visitables...);
     }
 
-public: // binary visitor interface
-
-    template <typename Visitable1, typename Visitable2>
-        BOOST_VARIANT_AUX_GENERIC_RESULT_TYPE(result_type)
-    operator()(Visitable1& visitable1, Visitable2& visitable2)
-    {
-        return apply_visitor(visitor_, visitable1, visitable2);
-    }
+private:
+    apply_visitor_delayed_t& operator=(const apply_visitor_delayed_t&);
 
 };
 
 template <typename Visitor>
-inline apply_visitor_delayed_t<Visitor> apply_visitor(Visitor& visitor)
+inline typename boost::enable_if<
+        boost::detail::variant::has_result_type<Visitor>,
+        apply_visitor_delayed_t<Visitor>
+    >::type apply_visitor(Visitor& visitor)
 {
     return apply_visitor_delayed_t<Visitor>(visitor);
 }
+
+#if !defined(BOOST_NO_CXX14_DECLTYPE_AUTO)
+
+template <typename Visitor>
+class apply_visitor_delayed_cpp14_t
+{
+private: // representation
+    Visitor& visitor_;
+
+public: // structors
+
+    explicit apply_visitor_delayed_cpp14_t(Visitor& visitor) BOOST_NOEXCEPT
+      : visitor_(visitor)
+    {
+    }
+
+public: // N-ary visitor interface
+    template <typename... Visitables>
+    decltype(auto) operator()(Visitables&... visitables) const
+    {
+        return apply_visitor(visitor_, visitables...);
+    }
+
+private:
+    apply_visitor_delayed_cpp14_t& operator=(const apply_visitor_delayed_cpp14_t&);
+
+};
+
+template <typename Visitor>
+inline  typename boost::disable_if<
+        boost::detail::variant::has_result_type<Visitor>,
+        apply_visitor_delayed_cpp14_t<Visitor>
+    >::type apply_visitor(Visitor& visitor)
+{
+    return apply_visitor_delayed_cpp14_t<Visitor>(visitor);
+}
+
+#endif // !defined(BOOST_NO_CXX14_DECLTYPE_AUTO)
+
 
 } // namespace boost
 

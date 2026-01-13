@@ -13,10 +13,12 @@
 
 #include <boost/algorithm/string/config.hpp>
 #include <algorithm>
+#include <cstring>
 #include <functional>
 #include <locale>
 
 #include <boost/range/begin.hpp>
+#include <boost/range/distance.hpp>
 #include <boost/range/end.hpp>
 
 #include <boost/algorithm/string/predicate_facade.hpp>
@@ -32,8 +34,8 @@ namespace boost {
             struct is_classifiedF :
                 public predicate_facade<is_classifiedF>
             {
-                // Boost.Lambda support
-                template <class Args> struct sig { typedef bool type; };
+                // Boost.ResultOf support
+                typedef bool result_type;
 
                 // Constructor from a locale
                 is_classifiedF(std::ctype_base::mask Type, std::locale const & Loc = std::locale()) :
@@ -45,7 +47,7 @@ namespace boost {
                     return std::use_facet< std::ctype<CharT> >(m_Locale).is( m_Type, Ch );
                 }
 
-                #if defined(__BORLANDC__) && (__BORLANDC__ >= 0x560) && (__BORLANDC__ <= 0x582) && !defined(_USE_OLD_RW_STL)
+                #if defined(BOOST_BORLANDC) && (BOOST_BORLANDC >= 0x560) && (BOOST_BORLANDC <= 0x582) && !defined(_USE_OLD_RW_STL)
                     template<>
                     bool operator()( char const Ch ) const
                     {
@@ -72,8 +74,8 @@ namespace boost {
                 typedef typename ::boost::remove_const<CharT>::type set_value_type;
 
             public:     
-                // Boost.Lambda support
-                template <class Args> struct sig { typedef bool type; };
+                // Boost.ResultOf support
+                typedef bool result_type;
 
                 // Constructor
                 template<typename RangeT>
@@ -126,7 +128,7 @@ namespace boost {
                     }
 
                     // Use fixed storage
-                    ::memcpy(DestStorage, SrcStorage, sizeof(set_value_type)*m_Size);
+                    ::std::memcpy(DestStorage, SrcStorage, sizeof(set_value_type)*m_Size);
                 }
 
                 // Destructor
@@ -206,7 +208,7 @@ namespace boost {
                     }
 
                     // Copy the data
-                    ::memcpy(DestStorage, SrcStorage, sizeof(set_value_type)*m_Size);
+                    ::std::memcpy(DestStorage, SrcStorage, sizeof(set_value_type)*m_Size);
 
                     return *this;
                 }
@@ -253,8 +255,8 @@ namespace boost {
             struct is_from_rangeF :
                 public predicate_facade< is_from_rangeF<CharT> >
             {
-                // Boost.Lambda support
-                template <class Args> struct sig { typedef bool type; };
+                // Boost.ResultOf support
+                typedef bool result_type;
 
                 // Constructor
                 is_from_rangeF( CharT From, CharT To ) : m_From(From), m_To(To) {}
@@ -278,8 +280,8 @@ namespace boost {
             {
             public:
 
-                // Boost.Lambda support
-                template <class Args> struct sig { typedef bool type; };
+                // Boost.ResultOf support
+                typedef bool result_type;
 
                 // Constructor
                 pred_andF( Pred1T Pred1, Pred2T Pred2 ) :
@@ -303,8 +305,8 @@ namespace boost {
                 public predicate_facade< pred_orF<Pred1T,Pred2T> >
             {
             public:
-                // Boost.Lambda support
-                template <class Args> struct sig { typedef bool type; };
+                // Boost.ResultOf support
+                typedef bool result_type;
 
                 // Constructor
                 pred_orF( Pred1T Pred1, Pred2T Pred2 ) :
@@ -328,8 +330,8 @@ namespace boost {
                 public predicate_facade< pred_notF<PredT> >
             {
             public:
-                // Boost.Lambda support
-                template <class Args> struct sig { typedef bool type; };
+                // Boost.ResultOf support
+                typedef bool result_type;
 
                 // Constructor
                 pred_notF( PredT Pred ) : m_Pred(Pred) {}

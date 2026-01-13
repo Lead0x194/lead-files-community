@@ -2,7 +2,7 @@
 #define BOOST_SERIALIZATION_EXPORT_HPP
 
 // MS compatible compilers support #pragma once
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
@@ -32,7 +32,7 @@
 #include <boost/mpl/assert.hpp>
 #include <boost/mpl/and.hpp>
 #include <boost/mpl/not.hpp>
-#include <boost/mpl/bool.hpp>
+#include <boost/mpl/bool_fwd.hpp>
 
 #include <boost/serialization/extended_type_info.hpp> // for guid_defined only
 #include <boost/serialization/static_warning.hpp>
@@ -41,8 +41,6 @@
 #include <boost/serialization/singleton.hpp>
 
 #include <boost/archive/detail/register_archive.hpp>
-
-#include <iostream>
 
 namespace boost {
 namespace archive {
@@ -62,14 +60,14 @@ struct export_impl
     static const basic_pointer_iserializer &
     enable_load(mpl::true_){
         return boost::serialization::singleton<
-            pointer_iserializer<Archive, Serializable> 
+            pointer_iserializer<Archive, Serializable>
         >::get_const_instance();
     }
 
     static const basic_pointer_oserializer &
     enable_save(mpl::true_){
         return boost::serialization::singleton<
-            pointer_oserializer<Archive, Serializable> 
+            pointer_oserializer<Archive, Serializable>
         >::get_const_instance();
     }
     inline static void enable_load(mpl::false_) {}
@@ -86,9 +84,6 @@ struct ptr_serialization_support
 {
 # if defined(BOOST_MSVC) || defined(__SUNPRO_CC)
     virtual BOOST_DLLEXPORT void instantiate() BOOST_USED;
-# elif defined(__BORLANDC__)   
-    static BOOST_DLLEXPORT void instantiate() BOOST_USED;
-    enum { x = sizeof(instantiate(),3) };
 # else
     static BOOST_DLLEXPORT void instantiate() BOOST_USED;
     typedef instantiate_function<
@@ -98,21 +93,15 @@ struct ptr_serialization_support
 };
 
 template <class Archive, class Serializable>
-BOOST_DLLEXPORT void 
+BOOST_DLLEXPORT void
 ptr_serialization_support<Archive,Serializable>::instantiate()
 {
     export_impl<Archive,Serializable>::enable_save(
-        #if ! defined(__BORLANDC__)
-        BOOST_DEDUCED_TYPENAME 
-        #endif
-        Archive::is_saving()
+        typename Archive::is_saving()
     );
 
     export_impl<Archive,Serializable>::enable_load(
-        #if ! defined(__BORLANDC__)
-        BOOST_DEDUCED_TYPENAME 
-        #endif
-        Archive::is_loading()
+        typename Archive::is_loading()
     );
 }
 
@@ -120,26 +109,26 @@ ptr_serialization_support<Archive,Serializable>::instantiate()
 // This was made this way so that export.hpp could be included
 // in other headers.  This is still under study.
 
-namespace {
+namespace extra_detail {
 
 template<class T>
 struct guid_initializer
-{  
+{
     void export_guid(mpl::false_) const {
         // generates the statically-initialized objects whose constructors
         // register the information allowing serialization of T objects
         // through pointers to their base classes.
         instantiate_ptr_serialization((T*)0, 0, adl_tag());
     }
-    const void export_guid(mpl::true_) const {
+    void export_guid(mpl::true_) const {
     }
     guid_initializer const & export_guid() const {
-        BOOST_STATIC_WARNING(boost::is_polymorphic<T>::value);
+        BOOST_STATIC_WARNING(boost::is_polymorphic< T >::value);
         // note: exporting an abstract base class will have no effect
-        // and cannot be used to instantitiate serialization code
+        // and cannot be used to instantiate serialization code
         // (one might be using this in a DLL to instantiate code)
-        //BOOST_STATIC_WARNING(! boost::serialization::is_abstract<T>::value);
-        export_guid(boost::serialization::is_abstract<T>());
+        //BOOST_STATIC_WARNING(! boost::serialization::is_abstract< T >::value);
+        export_guid(boost::serialization::is_abstract< T >());
         return *this;
     }
 };
@@ -156,7 +145,7 @@ struct init_guid;
     namespace boost {                                        \
     namespace archive {                                      \
     namespace detail {                                       \
-    namespace {                                              \
+    namespace extra_detail {                                 \
     template<>                                               \
     struct init_guid< T > {                                  \
         static guid_initializer< T > const & g;              \
@@ -172,9 +161,9 @@ struct init_guid;
 namespace boost {                              \
 namespace serialization {                      \
 template<>                                     \
-struct guid_defined<T> : boost::mpl::true_ {}; \
+struct guid_defined< T > : boost::mpl::true_ {}; \
 template<>                                     \
-inline const char * guid<T>(){                 \
+inline const char * guid< T >(){                 \
     return K;                                  \
 }                                              \
 } /* serialization */                          \
@@ -210,7 +199,7 @@ namespace {                                                                    \
 
 # define BOOST_SERIALIZATION_MWERKS_BASE_AND_DERIVED(Base,Derived)
 
-#endif 
+#endif
 
 // check for unnecessary export.  T isn't polymorphic so there is no
 // need to export it.

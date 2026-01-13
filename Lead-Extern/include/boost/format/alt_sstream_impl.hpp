@@ -37,7 +37,12 @@ namespace boost {
         str (const string_type& s) {
             size_type sz=s.size();
             if(sz != 0 && mode_ & (::std::ios_base::in | ::std::ios_base::out) ) {
-                Ch *new_ptr = alloc_.allocate(sz, is_allocated_? eback() : 0);
+#ifdef _RWSTD_NO_CLASS_PARTIAL_SPEC
+                void *vd_ptr = boost::allocator_allocate(alloc_, sz, is_allocated_? eback() : 0);
+                Ch *new_ptr = static_cast<Ch *>(vd_ptr);
+#else
+                Ch *new_ptr = boost::allocator_allocate(alloc_, sz, is_allocated_? eback() : 0);
+#endif
                 // if this didnt throw, we're safe, update the buffer
                 dealloc();
                 sz = s.copy(new_ptr, sz);
@@ -121,7 +126,7 @@ namespace boost {
                     off += static_cast<off_type>(putend_ - pptr());
                 else if(way == ::std::ios_base::beg)
                     off += static_cast<off_type>(pbase() - pptr());
-                else if(way != ::std::ios_base::beg)
+                else
                     return pos_type(off_type(-1));                    
                 if(pbase() <= off+pptr() && off+pptr() <= putend_)
                     // set pptr
@@ -140,7 +145,7 @@ namespace boost {
         typename basic_altstringbuf<Ch, Tr, Alloc>::pos_type 
         basic_altstringbuf<Ch, Tr, Alloc>:: 
         seekpos (pos_type pos, ::std::ios_base::openmode which) {
-            off_type off = off_type(pos); // operation guaranteed by §27.4.3.2 table 88
+            off_type off = off_type(pos); // operation guaranteed by fpos.operations table 127
             if(pptr() != NULL && putend_ < pptr())
                 putend_ = pptr();
             if(off != off_type(-1)) {
@@ -168,7 +173,7 @@ namespace boost {
                 return (pos_type(off));
             }
             else {
-                BOOST_ASSERT(0); // §27.4.3.2 allows undefined-behaviour here
+                BOOST_ASSERT(0); // fpos.operations allows undefined-behaviour here
                 return pos_type(off_type(-1));
             }
         }
@@ -249,7 +254,12 @@ namespace boost {
                     add_size /= 2;
                 if(0 < add_size) {
                     new_size += add_size;
-                    newptr = alloc_.allocate(new_size, is_allocated_? oldptr : 0);
+#ifdef _RWSTD_NO_CLASS_PARTIAL_SPEC
+                    void *vdptr = boost::allocator_allocate(alloc_, new_size, is_allocated_? oldptr : 0);
+                    newptr = static_cast<Ch *>(vdptr);
+#else
+                    newptr = boost::allocator_allocate(alloc_, new_size, is_allocated_? oldptr : 0);
+#endif
                 }
 
                 if(0 < prev_size)

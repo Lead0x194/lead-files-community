@@ -3,90 +3,66 @@
 // accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 #ifndef ITERATOR_TRAITS_DWA200347_HPP
-# define ITERATOR_TRAITS_DWA200347_HPP
+#define ITERATOR_TRAITS_DWA200347_HPP
 
-# include <boost/detail/iterator.hpp>
-# include <boost/detail/workaround.hpp>
+#include <iterator>
 
-namespace boost { 
+namespace boost {
+namespace iterators {
 
-// Unfortunately, g++ 2.95.x chokes when we define a class template
-// iterator_category which has the same name as its
-// std::iterator_category() function, probably due in part to the
-// "std:: is visible globally" hack it uses.  Use
-// BOOST_ITERATOR_CATEGORY to write code that's portable to older
-// GCCs.
+template< typename Iterator >
+using iterator_value_t = typename std::iterator_traits< Iterator >::value_type;
 
-# if BOOST_WORKAROUND(__GNUC__, <= 2)
-#  define BOOST_ITERATOR_CATEGORY iterator_category_
-# else
-#  define BOOST_ITERATOR_CATEGORY iterator_category
-# endif
-
-
-template <class Iterator>
+template< typename Iterator >
 struct iterator_value
 {
-    typedef typename boost::detail::iterator_traits<Iterator>::value_type type;
+    using type = iterator_value_t< Iterator >;
 };
-  
-template <class Iterator>
+
+template< typename Iterator >
+using iterator_reference_t = typename std::iterator_traits< Iterator >::reference;
+
+template< typename Iterator >
 struct iterator_reference
 {
-    typedef typename boost::detail::iterator_traits<Iterator>::reference type;
+    using type = iterator_reference_t< Iterator >;
 };
-  
-  
-template <class Iterator>
+
+template< typename Iterator >
+using iterator_pointer_t = typename std::iterator_traits< Iterator >::pointer;
+
+template< typename Iterator >
 struct iterator_pointer
 {
-    typedef typename boost::detail::iterator_traits<Iterator>::pointer type;
+    using type = iterator_pointer_t< Iterator >;
 };
-  
-template <class Iterator>
+
+template< typename Iterator >
+using iterator_difference_t = typename std::iterator_traits< Iterator >::difference_type;
+
+template< typename Iterator >
 struct iterator_difference
 {
-    typedef typename boost::detail::iterator_traits<Iterator>::difference_type type;
+    using type = iterator_difference_t< Iterator >;
 };
 
-template <class Iterator>
-struct BOOST_ITERATOR_CATEGORY
+template< typename Iterator >
+using iterator_category_t = typename std::iterator_traits< Iterator >::iterator_category;
+
+template< typename Iterator >
+struct iterator_category
 {
-    typedef typename boost::detail::iterator_traits<Iterator>::iterator_category type;
+    using type = iterator_category_t< Iterator >;
 };
 
-# if BOOST_WORKAROUND(BOOST_MSVC, < 1300)
-template <>
-struct iterator_value<int>
-{
-    typedef void type;
-};
-  
-template <>
-struct iterator_reference<int>
-{
-    typedef void type;
-};
+} // namespace iterators
 
-template <>
-struct iterator_pointer<int>
-{
-    typedef void type;
-};
-  
-template <>
-struct iterator_difference<int>
-{
-    typedef void type;
-};
-  
-template <>
-struct BOOST_ITERATOR_CATEGORY<int>
-{
-    typedef void type;
-};
-# endif
+using iterators::iterator_value;
+using iterators::iterator_reference;
+using iterators::iterator_pointer;
+using iterators::iterator_difference;
+using iterators::iterator_category;
 
-} // namespace boost::iterator
+} // namespace boost
 
 #endif // ITERATOR_TRAITS_DWA200347_HPP

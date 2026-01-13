@@ -28,7 +28,7 @@
 #include <boost/regex/config.hpp>
 #endif
 
-#include <boost/regex/v4/regex.hpp>
+#include <boost/regex/v5/regex.hpp>
 
 #endif  // include
 

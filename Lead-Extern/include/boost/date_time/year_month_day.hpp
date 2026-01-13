@@ -6,18 +6,22 @@
  * Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland 
- * $Date: 2008-02-27 15:00:24 -0500 (Wed, 27 Feb 2008) $
+ * $Date$
  */
+
+#include <boost/date_time/compiler_config.hpp>
 
 namespace boost {
 namespace date_time {
 
   //! Allow rapid creation of ymd triples of different types
   template<typename YearType, typename MonthType, typename DayType>
-  struct year_month_day_base {
-    year_month_day_base(YearType  year, 
+  struct BOOST_SYMBOL_VISIBLE year_month_day_base {
+    BOOST_CXX14_CONSTEXPR
+    year_month_day_base(YearType  year,
                         MonthType month,
                         DayType   day);
+
     YearType year;
     MonthType month;
     DayType day;
@@ -25,11 +29,11 @@ namespace date_time {
     typedef MonthType month_type;
     typedef DayType   day_type;
   };
-  
-  
+
+
   //! A basic constructor
   template<typename YearType, typename MonthType, typename DayType>
-  inline
+  inline BOOST_CXX14_CONSTEXPR
   year_month_day_base<YearType,MonthType,DayType>::year_month_day_base(YearType y, 
                                                                        MonthType m,
                                                                        DayType d) :
@@ -37,7 +41,7 @@ namespace date_time {
     month(m),
     day(d)
   {}
-  
+
 } }//namespace date_time
 
 

@@ -1,8 +1,8 @@
 //
-// kqueue_reactor.hpp
-// ~~~~~~~~~~~~~~~~~~
+// detail/kqueue_reactor.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 // Copyright (c) 2005 Stefan Arentz (stefan at soze dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
@@ -16,48 +16,49 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/kqueue_reactor_fwd.hpp>
+#include <boost/asio/detail/config.hpp>
 
 #if defined(BOOST_ASIO_HAS_KQUEUE)
 
-#include <boost/asio/detail/push_options.hpp>
 #include <cstddef>
 #include <sys/types.h>
 #include <sys/event.h>
 #include <sys/time.h>
-#include <boost/config.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/system/system_error.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
-#include <boost/asio/error.hpp>
-#include <boost/asio/io_service.hpp>
-#include <boost/asio/detail/hash_map.hpp>
-#include <boost/asio/detail/mutex.hpp>
+#include <boost/asio/detail/conditionally_enabled_mutex.hpp>
+#include <boost/asio/detail/limits.hpp>
+#include <boost/asio/detail/object_pool.hpp>
 #include <boost/asio/detail/op_queue.hpp>
 #include <boost/asio/detail/reactor_op.hpp>
+#include <boost/asio/detail/scheduler_task.hpp>
 #include <boost/asio/detail/select_interrupter.hpp>
-#include <boost/asio/detail/service_base.hpp>
 #include <boost/asio/detail/socket_types.hpp>
-#include <boost/asio/detail/timer_op.hpp>
 #include <boost/asio/detail/timer_queue_base.hpp>
-#include <boost/asio/detail/timer_queue_fwd.hpp>
 #include <boost/asio/detail/timer_queue_set.hpp>
+#include <boost/asio/detail/wait_op.hpp>
+#include <boost/asio/error.hpp>
+#include <boost/asio/execution_context.hpp>
 
 // Older versions of Mac OS X may not define EV_OOBAND.
 #if !defined(EV_OOBAND)
 # define EV_OOBAND EV_FLAG1
 #endif // !defined(EV_OOBAND)
 
+#include <boost/asio/detail/push_options.hpp>
+
 namespace boost {
 namespace asio {
 namespace detail {
 
+class scheduler;
+
 class kqueue_reactor
-  : public boost::asio::detail::service_base<kqueue_reactor>
+  : public execution_context_service_base<kqueue_reactor>,
+    public scheduler_task
 {
+private:
+  // The mutex type used by this reactor.
+  typedef conditionally_enabled_mutex mutex;
+
 public:
   enum op_types { read_op = 0, write_op = 1,
     connect_op = 1, except_op = 2, max_ops = 3 };
@@ -65,11 +66,15 @@ public:
   // Per-descriptor queues.
   struct descriptor_state
   {
-    descriptor_state() {}
-    descriptor_state(const descriptor_state&) {}
-    void operator=(const descriptor_state&) {}
+    descriptor_state(bool locking, int spin_count)
+      : mutex_(locking, spin_count) {}
+
+    descriptor_state* next_;
+    descriptor_state* prev_;
 
     mutex mutex_;
+    int descriptor_;
+    int num_kevents_; // 1 == read only, 2 == read and write
     op_queue<reactor_op> op_queue_[max_ops];
     bool shutdown_;
   };
@@ -78,374 +83,156 @@ public:
   typedef descriptor_state* per_descriptor_data;
 
   // Constructor.
-  kqueue_reactor(boost::asio::io_service& io_service)
-    : boost::asio::detail::service_base<kqueue_reactor>(io_service),
-      io_service_(use_service<io_service_impl>(io_service)),
-      mutex_(),
-      kqueue_fd_(do_kqueue_create()),
-      interrupter_(),
-      shutdown_(false)
-  {
-    // The interrupter is put into a permanently readable state. Whenever we
-    // want to interrupt the blocked kevent call we register a one-shot read
-    // operation against the descriptor.
-    interrupter_.interrupt();
-  }
+  BOOST_ASIO_DECL kqueue_reactor(boost::asio::execution_context& ctx);
 
   // Destructor.
-  ~kqueue_reactor()
-  {
-    close(kqueue_fd_);
-  }
+  BOOST_ASIO_DECL ~kqueue_reactor();
 
   // Destroy all user-defined handler objects owned by the service.
-  void shutdown_service()
-  {
-    mutex::scoped_lock lock(mutex_);
-    shutdown_ = true;
-    lock.unlock();
+  BOOST_ASIO_DECL void shutdown();
 
-    op_queue<operation> ops;
-
-    descriptor_map::iterator iter = registered_descriptors_.begin();
-    descriptor_map::iterator end = registered_descriptors_.end();
-    while (iter != end)
-    {
-      for (int i = 0; i < max_ops; ++i)
-        ops.push(iter->second.op_queue_[i]);
-      iter->second.shutdown_ = true;
-      ++iter;
-    }
-
-    timer_queues_.get_all_timers(ops);
-  }
+  // Recreate internal descriptors following a fork.
+  BOOST_ASIO_DECL void notify_fork(
+      boost::asio::execution_context::fork_event fork_ev);
 
   // Initialise the task.
-  void init_task()
-  {
-    io_service_.init_task();
-  }
+  BOOST_ASIO_DECL void init_task();
 
   // Register a socket with the reactor. Returns 0 on success, system error
   // code on failure.
-  int register_descriptor(socket_type descriptor,
-      per_descriptor_data& descriptor_data)
-  {
-    mutex::scoped_lock lock(registered_descriptors_mutex_);
+  BOOST_ASIO_DECL int register_descriptor(socket_type descriptor,
+      per_descriptor_data& descriptor_data);
 
-    descriptor_map::iterator new_entry = registered_descriptors_.insert(
-          std::make_pair(descriptor, descriptor_state())).first;
-    descriptor_data = &new_entry->second;
+  // Register a descriptor with an associated single operation. Returns 0 on
+  // success, system error code on failure.
+  BOOST_ASIO_DECL int register_internal_descriptor(
+      int op_type, socket_type descriptor,
+      per_descriptor_data& descriptor_data, reactor_op* op);
 
-    descriptor_data->shutdown_ = false;
+  // Move descriptor registration from one descriptor_data object to another.
+  BOOST_ASIO_DECL void move_descriptor(socket_type descriptor,
+      per_descriptor_data& target_descriptor_data,
+      per_descriptor_data& source_descriptor_data);
 
-    return 0;
-  }
+  // Post a reactor operation for immediate completion.
+  void post_immediate_completion(operation* op, bool is_continuation) const;
+
+  // Post a reactor operation for immediate completion.
+  BOOST_ASIO_DECL static void call_post_immediate_completion(
+      operation* op, bool is_continuation, const void* self);
+
+  // Start a new operation. The reactor operation will be performed when the
+  // given descriptor is flagged as ready, or an error has occurred.
+  BOOST_ASIO_DECL void start_op(int op_type, socket_type descriptor,
+      per_descriptor_data& descriptor_data, reactor_op* op,
+      bool is_continuation, bool allow_speculative,
+      void (*on_immediate)(operation*, bool, const void*),
+      const void* immediate_arg);
 
   // Start a new operation. The reactor operation will be performed when the
   // given descriptor is flagged as ready, or an error has occurred.
   void start_op(int op_type, socket_type descriptor,
-      per_descriptor_data& descriptor_data,
-      reactor_op* op, bool allow_speculative)
+      per_descriptor_data& descriptor_data, reactor_op* op,
+      bool is_continuation, bool allow_speculative)
   {
-    mutex::scoped_lock descriptor_lock(descriptor_data->mutex_);
-    if (descriptor_data->shutdown_)
-      return;
-
-    bool first = descriptor_data->op_queue_[op_type].empty();
-    if (first)
-    {
-      if (allow_speculative)
-      {
-        if (op_type != read_op || descriptor_data->op_queue_[except_op].empty())
-        {
-          if (op->perform())
-          {
-            descriptor_lock.unlock();
-            io_service_.post_immediate_completion(op);
-            return;
-          }
-        }
-      }
-    }
-
-    descriptor_data->op_queue_[op_type].push(op);
-    io_service_.work_started();
-
-    if (first)
-    {
-      struct kevent event;
-      switch (op_type)
-      {
-      case read_op:
-        EV_SET(&event, descriptor, EVFILT_READ,
-            EV_ADD | EV_ONESHOT, 0, 0, descriptor_data);
-        break;
-      case write_op:
-        EV_SET(&event, descriptor, EVFILT_WRITE,
-            EV_ADD | EV_ONESHOT, 0, 0, descriptor_data);
-        break;
-      case except_op:
-        if (!descriptor_data->op_queue_[read_op].empty())
-          return; // Already registered for read events.
-        EV_SET(&event, descriptor, EVFILT_READ,
-            EV_ADD | EV_ONESHOT, EV_OOBAND, 0, descriptor_data);
-        break;
-      }
-
-      if (::kevent(kqueue_fd_, &event, 1, 0, 0, 0) == -1)
-      {
-        op->ec_ = boost::system::error_code(errno,
-            boost::asio::error::get_system_category());
-        descriptor_data->op_queue_[op_type].pop();
-        io_service_.post_deferred_completion(op);
-      }
-    }
+    start_op(op_type, descriptor, descriptor_data,
+        op, is_continuation, allow_speculative,
+        &kqueue_reactor::call_post_immediate_completion, this);
   }
 
   // Cancel all operations associated with the given descriptor. The
   // handlers associated with the descriptor will be invoked with the
   // operation_aborted error.
-  void cancel_ops(socket_type descriptor, per_descriptor_data& descriptor_data)
-  {
-    mutex::scoped_lock descriptor_lock(descriptor_data->mutex_);
+  BOOST_ASIO_DECL void cancel_ops(socket_type descriptor,
+      per_descriptor_data& descriptor_data);
 
-    op_queue<operation> ops;
-    for (int i = 0; i < max_ops; ++i)
-    {
-      while (reactor_op* op = descriptor_data->op_queue_[i].front())
-      {
-        op->ec_ = boost::asio::error::operation_aborted;
-        descriptor_data->op_queue_[i].pop();
-        ops.push(op);
-      }
-    }
-
-    descriptor_lock.unlock();
-
-    io_service_.post_deferred_completions(ops);
-  }
+  // Cancel all operations associated with the given descriptor and key. The
+  // handlers associated with the descriptor will be invoked with the
+  // operation_aborted error.
+  BOOST_ASIO_DECL void cancel_ops_by_key(socket_type descriptor,
+      per_descriptor_data& descriptor_data,
+      int op_type, void* cancellation_key);
 
   // Cancel any operations that are running against the descriptor and remove
-  // its registration from the reactor.
-  void close_descriptor(socket_type descriptor,
-      per_descriptor_data& descriptor_data)
-  {
-    mutex::scoped_lock descriptor_lock(descriptor_data->mutex_);
-    mutex::scoped_lock descriptors_lock(registered_descriptors_mutex_);
+  // its registration from the reactor. The reactor resources associated with
+  // the descriptor must be released by calling cleanup_descriptor_data.
+  BOOST_ASIO_DECL void deregister_descriptor(socket_type descriptor,
+      per_descriptor_data& descriptor_data, bool closing);
 
-    // Remove the descriptor from the set of known descriptors. The descriptor
-    // will be automatically removed from the kqueue set when it is closed.
-    descriptor_data->shutdown_ = true;
+  // Remove the descriptor's registration from the reactor. The reactor
+  // resources associated with the descriptor must be released by calling
+  // cleanup_descriptor_data.
+  BOOST_ASIO_DECL void deregister_internal_descriptor(
+      socket_type descriptor, per_descriptor_data& descriptor_data);
 
-    op_queue<operation> ops;
-    for (int i = 0; i < max_ops; ++i)
-    {
-      while (reactor_op* op = descriptor_data->op_queue_[i].front())
-      {
-        op->ec_ = boost::asio::error::operation_aborted;
-        descriptor_data->op_queue_[i].pop();
-        ops.push(op);
-      }
-    }
-
-    descriptor_lock.unlock();
-
-    registered_descriptors_.erase(descriptor);
-
-    descriptors_lock.unlock();
-
-    io_service_.post_deferred_completions(ops);
-  }
+  // Perform any post-deregistration cleanup tasks associated with the
+  // descriptor data.
+  BOOST_ASIO_DECL void cleanup_descriptor_data(
+      per_descriptor_data& descriptor_data);
 
   // Add a new timer queue to the reactor.
-  template <typename Time_Traits>
-  void add_timer_queue(timer_queue<Time_Traits>& timer_queue)
-  {
-    mutex::scoped_lock lock(mutex_);
-    timer_queues_.insert(&timer_queue);
-  }
+  template <typename TimeTraits, typename Allocator>
+  void add_timer_queue(timer_queue<TimeTraits, Allocator>& timer_queue);
 
   // Remove a timer queue from the reactor.
-  template <typename Time_Traits>
-  void remove_timer_queue(timer_queue<Time_Traits>& timer_queue)
-  {
-    mutex::scoped_lock lock(mutex_);
-    timer_queues_.erase(&timer_queue);
-  }
+  template <typename TimeTraits, typename Allocator>
+  void remove_timer_queue(timer_queue<TimeTraits, Allocator>& timer_queue);
 
   // Schedule a new operation in the given timer queue to expire at the
   // specified absolute time.
-  template <typename Time_Traits>
-  void schedule_timer(timer_queue<Time_Traits>& timer_queue,
-      const typename Time_Traits::time_type& time, timer_op* op, void* token)
-  {
-    mutex::scoped_lock lock(mutex_);
-    if (!shutdown_)
-    {
-      bool earliest = timer_queue.enqueue_timer(time, op, token);
-      io_service_.work_started();
-      if (earliest)
-        interrupt();
-    }
-  }
+  template <typename TimeTraits, typename Allocator>
+  void schedule_timer(timer_queue<TimeTraits, Allocator>& queue,
+      const typename TimeTraits::time_type& time,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data& timer,
+      wait_op* op);
 
   // Cancel the timer operations associated with the given token. Returns the
   // number of operations that have been posted or dispatched.
-  template <typename Time_Traits>
-  std::size_t cancel_timer(timer_queue<Time_Traits>& timer_queue, void* token)
-  {
-    mutex::scoped_lock lock(mutex_);
-    op_queue<operation> ops;
-    std::size_t n = timer_queue.cancel_timer(token, ops);
-    lock.unlock();
-    io_service_.post_deferred_completions(ops);
-    return n;
-  }
+  template <typename TimeTraits, typename Allocator>
+  std::size_t cancel_timer(timer_queue<TimeTraits, Allocator>& queue,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data& timer,
+      std::size_t max_cancelled = (std::numeric_limits<std::size_t>::max)());
+
+  // Cancel the timer operations associated with the given key.
+  template <typename TimeTraits, typename Allocator>
+  void cancel_timer_by_key(timer_queue<TimeTraits, Allocator>& queue,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data* timer,
+      void* cancellation_key);
+
+  // Move the timer operations associated with the given timer.
+  template <typename TimeTraits, typename Allocator>
+  void move_timer(timer_queue<TimeTraits, Allocator>& queue,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data& target,
+      typename timer_queue<TimeTraits, Allocator>::per_timer_data& source);
 
   // Run the kqueue loop.
-  void run(bool block, op_queue<operation>& ops)
-  {
-    mutex::scoped_lock lock(mutex_);
-
-    // Determine how long to block while waiting for events.
-    timespec timeout_buf = { 0, 0 };
-    timespec* timeout = block ? get_timeout(timeout_buf) : &timeout_buf;
-
-    lock.unlock();
-
-    // Block on the kqueue descriptor.
-    struct kevent events[128];
-    int num_events = kevent(kqueue_fd_, 0, 0, events, 128, timeout);
-
-    // Dispatch the waiting events.
-    for (int i = 0; i < num_events; ++i)
-    {
-      int descriptor = events[i].ident;
-      void* ptr = events[i].udata;
-      if (ptr == &interrupter_)
-      {
-        // No need to reset the interrupter since we're leaving the descriptor
-        // in a ready-to-read state and relying on one-shot notifications.
-      }
-      else
-      {
-        descriptor_state* descriptor_data = static_cast<descriptor_state*>(ptr);
-        mutex::scoped_lock descriptor_lock(descriptor_data->mutex_);
-
-        // Exception operations must be processed first to ensure that any
-        // out-of-band data is read before normal data.
-        static const int filter[max_ops] =
-          { EVFILT_READ, EVFILT_WRITE, EVFILT_READ };
-        for (int j = max_ops - 1; j >= 0; --j)
-        {
-          if (events[i].filter == filter[j])
-          {
-            if (j != except_op || events[i].flags & EV_OOBAND)
-            {
-              while (reactor_op* op = descriptor_data->op_queue_[j].front())
-              {
-                if (events[i].flags & EV_ERROR)
-                {
-                  op->ec_ = boost::system::error_code(events[i].data,
-                      boost::asio::error::get_system_category());
-                  descriptor_data->op_queue_[j].pop();
-                  ops.push(op);
-                }
-                if (op->perform())
-                {
-                  descriptor_data->op_queue_[j].pop();
-                  ops.push(op);
-                }
-                else
-                  break;
-              }
-            }
-          }
-        }
-
-        // Renew registration for event notifications.
-        struct kevent event;
-        switch (events[i].filter)
-        {
-        case EVFILT_READ:
-          if (!descriptor_data->op_queue_[read_op].empty())
-            EV_SET(&event, descriptor, EVFILT_READ,
-                EV_ADD | EV_ONESHOT, 0, 0, descriptor_data);
-          else if (!descriptor_data->op_queue_[except_op].empty())
-            EV_SET(&event, descriptor, EVFILT_READ,
-                EV_ADD | EV_ONESHOT, EV_OOBAND, 0, descriptor_data);
-          else
-            continue;
-        case EVFILT_WRITE:
-          if (!descriptor_data->op_queue_[write_op].empty())
-            EV_SET(&event, descriptor, EVFILT_WRITE,
-                EV_ADD | EV_ONESHOT, 0, 0, descriptor_data);
-          else
-            continue;
-        default:
-          break;
-        }
-        if (::kevent(kqueue_fd_, &event, 1, 0, 0, 0) == -1)
-        {
-          boost::system::error_code error(errno,
-              boost::asio::error::get_system_category());
-          for (int j = 0; j < max_ops; ++j)
-          {
-            while (reactor_op* op = descriptor_data->op_queue_[j].front())
-            {
-              op->ec_ = error;
-              descriptor_data->op_queue_[j].pop();
-              ops.push(op);
-            }
-          }
-        }
-      }
-    }
-
-    lock.lock();
-    timer_queues_.get_ready_timers(ops);
-  }
+  BOOST_ASIO_DECL void run(long usec, op_queue<operation>& ops);
 
   // Interrupt the kqueue loop.
-  void interrupt()
-  {
-    struct kevent event;
-    EV_SET(&event, interrupter_.read_descriptor(),
-        EVFILT_READ, EV_ADD | EV_ONESHOT, 0, 0, &interrupter_);
-    ::kevent(kqueue_fd_, &event, 1, 0, 0, 0);
-  }
+  BOOST_ASIO_DECL void interrupt();
 
 private:
   // Create the kqueue file descriptor. Throws an exception if the descriptor
   // cannot be created.
-  static int do_kqueue_create()
-  {
-    int fd = kqueue();
-    if (fd == -1)
-    {
-      boost::throw_exception(
-          boost::system::system_error(
-            boost::system::error_code(errno,
-              boost::asio::error::get_system_category()),
-            "kqueue"));
-    }
-    return fd;
-  }
+  BOOST_ASIO_DECL static int do_kqueue_create();
+
+  // Allocate a new descriptor state object.
+  BOOST_ASIO_DECL descriptor_state* allocate_descriptor_state();
+
+  // Free an existing descriptor state object.
+  BOOST_ASIO_DECL void free_descriptor_state(descriptor_state* s);
+
+  // Helper function to add a new timer queue.
+  BOOST_ASIO_DECL void do_add_timer_queue(timer_queue_base& queue);
+
+  // Helper function to remove a timer queue.
+  BOOST_ASIO_DECL void do_remove_timer_queue(timer_queue_base& queue);
 
   // Get the timeout value for the kevent call.
-  timespec* get_timeout(timespec& ts)
-  {
-    // By default we will wait no longer than 5 minutes. This will ensure that
-    // any changes to the system clock are detected after no longer than this.
-    long usec = timer_queues_.wait_duration_usec(5 * 60 * 1000 * 1000);
-    ts.tv_sec = usec / 1000000;
-    ts.tv_nsec = (usec % 1000000) * 1000;
-    return &ts;
-  }
+  BOOST_ASIO_DECL timespec* get_timeout(long usec, timespec& ts);
 
-  // The io_service implementation used to post completions.
-  io_service_impl& io_service_;
+  // The scheduler used to post completions.
+  scheduler& scheduler_;
 
   // Mutex to protect access to internal data.
   mutex mutex_;
@@ -462,26 +249,35 @@ private:
   // Whether the service has been shut down.
   bool shutdown_;
 
+  // Whether I/O locking is enabled.
+  const bool io_locking_;
+
+  // How any times to spin waiting for the I/O mutex.
+  const int io_locking_spin_count_;
+
   // Mutex to protect access to the registered descriptors.
   mutex registered_descriptors_mutex_;
 
-  // Keep track of all registered descriptors. This code relies on the fact that
-  // the hash_map implementation pools deleted nodes, meaning that we can assume
-  // our descriptor_state pointer remains valid even after the entry is removed.
-  // Technically this is not true for C++98, as that standard says that spliced
-  // elements in a list are invalidated. However, C++0x fixes this shortcoming
-  // so we'll just assume that C++98 std::list implementations will do the right
-  // thing anyway.
-  typedef detail::hash_map<socket_type, descriptor_state> descriptor_map;
-  descriptor_map registered_descriptors_;
+  // Keep track of all registered descriptors.
+  object_pool<descriptor_state, execution_context::allocator<void>>
+    registered_descriptors_;
+
+  // Atomic used to create a happens-before relationship between allocation of
+  // a new descriptor state and that state being received via a kqueue event.
+  atomic_count allocation_counter_;
 };
 
 } // namespace detail
 } // namespace asio
 } // namespace boost
 
-#endif // defined(BOOST_ASIO_HAS_KQUEUE)
-
 #include <boost/asio/detail/pop_options.hpp>
+
+#include <boost/asio/detail/impl/kqueue_reactor.hpp>
+#if defined(BOOST_ASIO_HEADER_ONLY)
+# include <boost/asio/detail/impl/kqueue_reactor.ipp>
+#endif // defined(BOOST_ASIO_HEADER_ONLY)
+
+#endif // defined(BOOST_ASIO_HAS_KQUEUE)
 
 #endif // BOOST_ASIO_DETAIL_KQUEUE_REACTOR_HPP

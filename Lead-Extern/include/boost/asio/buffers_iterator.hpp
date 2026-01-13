@@ -2,7 +2,7 @@
 // buffers_iterator.hpp
 // ~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,19 +15,14 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/push_options.hpp>
+#include <boost/asio/detail/config.hpp>
 #include <cstddef>
-#include <boost/assert.hpp>
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/iterator.hpp>
-#include <boost/type_traits/is_convertible.hpp>
-#include <boost/type_traits/add_const.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
+#include <iterator>
 #include <boost/asio/buffer.hpp>
+#include <boost/asio/detail/assert.hpp>
+#include <boost/asio/detail/type_traits.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -44,7 +39,7 @@ namespace detail
     template <typename ByteType>
     struct byte_type
     {
-      typedef typename boost::add_const<ByteType>::type type;
+      typedef add_const_t<ByteType> type;
     };
   };
 
@@ -64,30 +59,80 @@ namespace detail
   {
     enum
     {
-      is_mutable = boost::is_convertible<
-        typename BufferSequence::value_type, mutable_buffer>::value
+      is_mutable = is_convertible<
+          typename BufferSequence::value_type,
+          mutable_buffer>::value
     };
     typedef buffers_iterator_types_helper<is_mutable> helper;
     typedef typename helper::buffer_type buffer_type;
     typedef typename helper::template byte_type<ByteType>::type byte_type;
+    typedef typename BufferSequence::const_iterator const_iterator;
   };
-}
+
+  template <typename ByteType>
+  struct buffers_iterator_types<mutable_buffer, ByteType>
+  {
+    typedef mutable_buffer buffer_type;
+    typedef ByteType byte_type;
+    typedef const mutable_buffer* const_iterator;
+  };
+
+  template <typename ByteType>
+  struct buffers_iterator_types<const_buffer, ByteType>
+  {
+    typedef const_buffer buffer_type;
+    typedef add_const_t<ByteType> byte_type;
+    typedef const const_buffer* const_iterator;
+  };
+} // namespace detail
 
 /// A random access iterator over the bytes in a buffer sequence.
 template <typename BufferSequence, typename ByteType = char>
 class buffers_iterator
-  : public boost::iterator<
-      std::random_access_iterator_tag,
-      typename detail::buffers_iterator_types<
-        BufferSequence, ByteType>::byte_type>
 {
 private:
   typedef typename detail::buffers_iterator_types<
       BufferSequence, ByteType>::buffer_type buffer_type;
-  typedef typename detail::buffers_iterator_types<
-      BufferSequence, ByteType>::byte_type byte_type;
+
+  typedef typename detail::buffers_iterator_types<BufferSequence,
+          ByteType>::const_iterator buffer_sequence_iterator_type;
 
 public:
+  /// The type used for the distance between two iterators.
+  typedef std::ptrdiff_t difference_type;
+
+  /// The type of the value pointed to by the iterator.
+  typedef ByteType value_type;
+
+#if defined(GENERATING_DOCUMENTATION)
+  /// The type of the result of applying operator->() to the iterator.
+  /**
+   * If the buffer sequence stores buffer objects that are convertible to
+   * mutable_buffer, this is a pointer to a non-const ByteType. Otherwise, a
+   * pointer to a const ByteType.
+   */
+  typedef const_or_non_const_ByteType* pointer;
+#else // defined(GENERATING_DOCUMENTATION)
+  typedef typename detail::buffers_iterator_types<
+      BufferSequence, ByteType>::byte_type* pointer;
+#endif // defined(GENERATING_DOCUMENTATION)
+
+#if defined(GENERATING_DOCUMENTATION)
+  /// The type of the result of applying operator*() to the iterator.
+  /**
+   * If the buffer sequence stores buffer objects that are convertible to
+   * mutable_buffer, this is a reference to a non-const ByteType. Otherwise, a
+   * reference to a const ByteType.
+   */
+  typedef const_or_non_const_ByteType& reference;
+#else // defined(GENERATING_DOCUMENTATION)
+  typedef typename detail::buffers_iterator_types<
+      BufferSequence, ByteType>::byte_type& reference;
+#endif // defined(GENERATING_DOCUMENTATION)
+
+  /// The iterator category.
+  typedef std::random_access_iterator_tag iterator_category;
+
   /// Default constructor. Creates an iterator in an undefined state.
   buffers_iterator()
     : current_buffer_(),
@@ -101,18 +146,18 @@ public:
 
   /// Construct an iterator representing the beginning of the buffers' data.
   static buffers_iterator begin(const BufferSequence& buffers)
-#if BOOST_WORKAROUND(__GNUC__, == 4) && BOOST_WORKAROUND(__GNUC_MINOR__, == 3)
-    __attribute__ ((noinline))
-#endif
+#if defined(__GNUC__) && (__GNUC__ == 4) && (__GNUC_MINOR__ == 3)
+    __attribute__ ((__noinline__))
+#endif // defined(__GNUC__) && (__GNUC__ == 4) && (__GNUC_MINOR__ == 3)
   {
     buffers_iterator new_iter;
-    new_iter.begin_ = buffers.begin();
-    new_iter.current_ = buffers.begin();
-    new_iter.end_ = buffers.end();
+    new_iter.begin_ = boost::asio::buffer_sequence_begin(buffers);
+    new_iter.current_ = boost::asio::buffer_sequence_begin(buffers);
+    new_iter.end_ = boost::asio::buffer_sequence_end(buffers);
     while (new_iter.current_ != new_iter.end_)
     {
       new_iter.current_buffer_ = *new_iter.current_;
-      if (boost::asio::buffer_size(new_iter.current_buffer_) > 0)
+      if (new_iter.current_buffer_.size() > 0)
         break;
       ++new_iter.current_;
     }
@@ -121,37 +166,37 @@ public:
 
   /// Construct an iterator representing the end of the buffers' data.
   static buffers_iterator end(const BufferSequence& buffers)
-#if BOOST_WORKAROUND(__GNUC__, == 4) && BOOST_WORKAROUND(__GNUC_MINOR__, == 3)
-    __attribute__ ((noinline))
-#endif
+#if defined(__GNUC__) && (__GNUC__ == 4) && (__GNUC_MINOR__ == 3)
+    __attribute__ ((__noinline__))
+#endif // defined(__GNUC__) && (__GNUC__ == 4) && (__GNUC_MINOR__ == 3)
   {
     buffers_iterator new_iter;
-    new_iter.begin_ = buffers.begin();
-    new_iter.current_ = buffers.begin();
-    new_iter.end_ = buffers.end();
+    new_iter.begin_ = boost::asio::buffer_sequence_begin(buffers);
+    new_iter.current_ = boost::asio::buffer_sequence_begin(buffers);
+    new_iter.end_ = boost::asio::buffer_sequence_end(buffers);
     while (new_iter.current_ != new_iter.end_)
     {
       buffer_type buffer = *new_iter.current_;
-      new_iter.position_ += boost::asio::buffer_size(buffer);
+      new_iter.position_ += buffer.size();
       ++new_iter.current_;
     }
     return new_iter;
   }
 
   /// Dereference an iterator.
-  byte_type& operator*() const
+  reference operator*() const
   {
     return dereference();
   }
 
   /// Dereference an iterator.
-  byte_type* operator->() const
+  pointer operator->() const
   {
     return &dereference();
   }
 
   /// Access an individual element.
-  byte_type& operator[](std::ptrdiff_t difference) const
+  reference operator[](std::ptrdiff_t difference) const
   {
     buffers_iterator tmp(*this);
     tmp.advance(difference);
@@ -205,6 +250,15 @@ public:
   /// Addition operator.
   friend buffers_iterator operator+(const buffers_iterator& iter,
       std::ptrdiff_t difference)
+  {
+    buffers_iterator tmp(iter);
+    tmp.advance(difference);
+    return tmp;
+  }
+
+  /// Addition operator.
+  friend buffers_iterator operator+(std::ptrdiff_t difference,
+      const buffers_iterator& iter)
   {
     buffers_iterator tmp(iter);
     tmp.advance(difference);
@@ -265,9 +319,10 @@ public:
 
 private:
   // Dereference the iterator.
-  byte_type& dereference() const
+  reference dereference() const
   {
-    return buffer_cast<byte_type*>(current_buffer_)[current_buffer_position_];
+    return static_cast<pointer>(
+        current_buffer_.data())[current_buffer_position_];
   }
 
   // Compare two iterators for equality.
@@ -279,12 +334,12 @@ private:
   // Increment the iterator.
   void increment()
   {
-    BOOST_ASSERT(current_ != end_ && "iterator out of bounds");
+    BOOST_ASIO_ASSERT(current_ != end_ && "iterator out of bounds");
     ++position_;
 
     // Check if the increment can be satisfied by the current buffer.
     ++current_buffer_position_;
-    if (current_buffer_position_ != boost::asio::buffer_size(current_buffer_))
+    if (current_buffer_position_ != current_buffer_.size())
       return;
 
     // Find the next non-empty buffer.
@@ -293,7 +348,7 @@ private:
     while (current_ != end_)
     {
       current_buffer_ = *current_;
-      if (boost::asio::buffer_size(current_buffer_) > 0)
+      if (current_buffer_.size() > 0)
         return;
       ++current_;
     }
@@ -302,7 +357,7 @@ private:
   // Decrement the iterator.
   void decrement()
   {
-    BOOST_ASSERT(position_ > 0 && "iterator out of bounds");
+    BOOST_ASIO_ASSERT(position_ > 0 && "iterator out of bounds");
     --position_;
 
     // Check if the decrement can be satisfied by the current buffer.
@@ -313,12 +368,12 @@ private:
     }
 
     // Find the previous non-empty buffer.
-    typename BufferSequence::const_iterator iter = current_;
+    buffer_sequence_iterator_type iter = current_;
     while (iter != begin_)
     {
       --iter;
       buffer_type buffer = *iter;
-      std::size_t buffer_size = boost::asio::buffer_size(buffer);
+      std::size_t buffer_size = buffer.size();
       if (buffer_size > 0)
       {
         current_ = iter;
@@ -334,12 +389,11 @@ private:
   {
     if (n > 0)
     {
-      BOOST_ASSERT(current_ != end_ && "iterator out of bounds");
+      BOOST_ASIO_ASSERT(current_ != end_ && "iterator out of bounds");
       for (;;)
       {
         std::ptrdiff_t current_buffer_balance
-          = boost::asio::buffer_size(current_buffer_)
-          - current_buffer_position_;
+          = current_buffer_.size() - current_buffer_position_;
 
         // Check if the advance can be satisfied by the current buffer.
         if (current_buffer_balance > n)
@@ -357,7 +411,7 @@ private:
         // next iteration of this loop.
         if (++current_ == end_)
         {
-          BOOST_ASSERT(n == 0 && "iterator out of bounds");
+          BOOST_ASIO_ASSERT(n == 0 && "iterator out of bounds");
           current_buffer_ = buffer_type();
           current_buffer_position_ = 0;
           return;
@@ -369,7 +423,7 @@ private:
     else if (n < 0)
     {
       std::size_t abs_n = -n;
-      BOOST_ASSERT(position_ >= abs_n && "iterator out of bounds");
+      BOOST_ASIO_ASSERT(position_ >= abs_n && "iterator out of bounds");
       for (;;)
       {
         // Check if the advance can be satisfied by the current buffer.
@@ -387,18 +441,18 @@ private:
         // Check if we've reached the beginning of the buffers.
         if (current_ == begin_)
         {
-          BOOST_ASSERT(abs_n == 0 && "iterator out of bounds");
+          BOOST_ASIO_ASSERT(abs_n == 0 && "iterator out of bounds");
           current_buffer_position_ = 0;
           return;
         }
 
         // Find the previous non-empty buffer.
-        typename BufferSequence::const_iterator iter = current_;
+        buffer_sequence_iterator_type iter = current_;
         while (iter != begin_)
         {
           --iter;
           buffer_type buffer = *iter;
-          std::size_t buffer_size = boost::asio::buffer_size(buffer);
+          std::size_t buffer_size = buffer.size();
           if (buffer_size > 0)
           {
             current_ = iter;
@@ -419,9 +473,9 @@ private:
 
   buffer_type current_buffer_;
   std::size_t current_buffer_position_;
-  typename BufferSequence::const_iterator begin_;
-  typename BufferSequence::const_iterator current_;
-  typename BufferSequence::const_iterator end_;
+  buffer_sequence_iterator_type begin_;
+  buffer_sequence_iterator_type current_;
+  buffer_sequence_iterator_type end_;
   std::size_t position_;
 };
 

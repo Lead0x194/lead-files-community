@@ -1,8 +1,8 @@
 //
-// icmp.hpp
-// ~~~~~~~~
+// ip/icmp.hpp
+// ~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,14 +15,15 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
+#include <boost/asio/detail/config.hpp>
+#include <boost/asio/detail/socket_types.hpp>
 #include <boost/asio/basic_raw_socket.hpp>
 #include <boost/asio/ip/basic_endpoint.hpp>
 #include <boost/asio/ip/basic_resolver.hpp>
 #include <boost/asio/ip/basic_resolver_iterator.hpp>
 #include <boost/asio/ip/basic_resolver_query.hpp>
-#include <boost/asio/detail/socket_types.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -45,38 +46,34 @@ public:
   /// The type of a ICMP endpoint.
   typedef basic_endpoint<icmp> endpoint;
 
-  /// (Deprecated: use resolver::query.) The type of a resolver query.
-  typedef basic_resolver_query<icmp> resolver_query;
-
-  /// (Deprecated: use resolver::iterator.) The type of a resolver iterator.
-  typedef basic_resolver_iterator<icmp> resolver_iterator;
-
   /// Construct to represent the IPv4 ICMP protocol.
-  static icmp v4()
+  static icmp v4() noexcept
   {
-    return icmp(IPPROTO_ICMP, PF_INET);
+    return icmp(BOOST_ASIO_OS_DEF(IPPROTO_ICMP),
+        BOOST_ASIO_OS_DEF(AF_INET));
   }
 
   /// Construct to represent the IPv6 ICMP protocol.
-  static icmp v6()
+  static icmp v6() noexcept
   {
-    return icmp(IPPROTO_ICMPV6, PF_INET6);
+    return icmp(BOOST_ASIO_OS_DEF(IPPROTO_ICMPV6),
+        BOOST_ASIO_OS_DEF(AF_INET6));
   }
 
   /// Obtain an identifier for the type of the protocol.
-  int type() const
+  int type() const noexcept
   {
-    return SOCK_RAW;
+    return BOOST_ASIO_OS_DEF(SOCK_RAW);
   }
 
   /// Obtain an identifier for the protocol.
-  int protocol() const
+  int protocol() const noexcept
   {
     return protocol_;
   }
 
   /// Obtain an identifier for the protocol family.
-  int family() const
+  int family() const noexcept
   {
     return family_;
   }
@@ -101,9 +98,9 @@ public:
 
 private:
   // Construct with a specific family.
-  explicit icmp(int protocol, int family)
-    : protocol_(protocol),
-      family_(family)
+  explicit icmp(int protocol_id, int protocol_family) noexcept
+    : protocol_(protocol_id),
+      family_(protocol_family)
   {
   }
 

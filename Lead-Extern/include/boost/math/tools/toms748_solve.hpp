@@ -1,4 +1,5 @@
 //  (C) Copyright John Maddock 2006.
+//  (C) Copyright Matt Borland 2024.
 //  Use, modification and distribution are subject to the
 //  Boost Software License, Version 1.0. (See accompanying file
 //  LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -10,12 +11,21 @@
 #pragma once
 #endif
 
-#include <boost/math/tools/precision.hpp>
-#include <boost/math/policies/error_handling.hpp>
 #include <boost/math/tools/config.hpp>
+#include <boost/math/tools/precision.hpp>
+#include <boost/math/tools/numeric_limits.hpp>
+#include <boost/math/tools/tuple.hpp>
+#include <boost/math/tools/cstdint.hpp>
+#include <boost/math/policies/error_handling.hpp>
 #include <boost/math/special_functions/sign.hpp>
-#include <boost/cstdint.hpp>
-#include <limits>
+
+#ifdef BOOST_MATH_LOG_ROOT_ITERATIONS
+#  define BOOST_MATH_LOGGER_INCLUDE <boost/math/tools/iteration_logger.hpp>
+#  include BOOST_MATH_LOGGER_INCLUDE
+#  undef BOOST_MATH_LOGGER_INCLUDE
+#else
+#  define BOOST_MATH_LOG_COUNT(count)
+#endif
 
 namespace boost{ namespace math{ namespace tools{
 
@@ -23,57 +33,74 @@ template <class T>
 class eps_tolerance
 {
 public:
-   eps_tolerance(unsigned bits)
+   BOOST_MATH_GPU_ENABLED eps_tolerance() : eps(4 * tools::epsilon<T>())
    {
-      BOOST_MATH_STD_USING
-      eps = (std::max)(T(ldexp(1.0F, 1-bits)), T(2 * tools::epsilon<T>()));
+
    }
-   bool operator()(const T& a, const T& b)
+   BOOST_MATH_GPU_ENABLED eps_tolerance(unsigned bits)
    {
       BOOST_MATH_STD_USING
-      return (fabs(a - b) / (std::min)(fabs(a), fabs(b))) <= eps;
+      eps = BOOST_MATH_GPU_SAFE_MAX(T(ldexp(1.0F, 1-bits)), T(4 * tools::epsilon<T>()));
+   }
+   BOOST_MATH_GPU_ENABLED bool operator()(const T& a, const T& b)
+   {
+      BOOST_MATH_STD_USING
+      return fabs(a - b) <= (eps * BOOST_MATH_GPU_SAFE_MIN(fabs(a), fabs(b)));
    }
 private:
    T eps;
 };
 
+// CUDA warns about __host__ __device__ marker on defaulted constructor
+// but the warning is benign 
+#ifdef BOOST_MATH_ENABLE_CUDA
+#  pragma nv_diag_suppress 20012
+#endif
+
 struct equal_floor
 {
-   equal_floor(){}
+   BOOST_MATH_GPU_ENABLED equal_floor() = default;
+   
    template <class T>
-   bool operator()(const T& a, const T& b)
+   BOOST_MATH_GPU_ENABLED bool operator()(const T& a, const T& b)
    {
       BOOST_MATH_STD_USING
-      return floor(a) == floor(b);
+      return (floor(a) == floor(b)) || (fabs((b-a)/b) < boost::math::tools::epsilon<T>() * 2);
    }
 };
 
 struct equal_ceil
 {
-   equal_ceil(){}
+   BOOST_MATH_GPU_ENABLED equal_ceil() = default;
+   
    template <class T>
-   bool operator()(const T& a, const T& b)
+   BOOST_MATH_GPU_ENABLED bool operator()(const T& a, const T& b)
    {
       BOOST_MATH_STD_USING
-      return ceil(a) == ceil(b);
+      return (ceil(a) == ceil(b)) || (fabs((b - a) / b) < boost::math::tools::epsilon<T>() * 2);
    }
 };
 
 struct equal_nearest_integer
 {
-   equal_nearest_integer(){}
+   BOOST_MATH_GPU_ENABLED equal_nearest_integer() = default;
+   
    template <class T>
-   bool operator()(const T& a, const T& b)
+   BOOST_MATH_GPU_ENABLED bool operator()(const T& a, const T& b)
    {
       BOOST_MATH_STD_USING
-      return floor(a + 0.5f) == floor(b + 0.5f);
+      return (floor(a + 0.5f) == floor(b + 0.5f)) || (fabs((b - a) / b) < boost::math::tools::epsilon<T>() * 2);
    }
 };
+
+#ifdef BOOST_MATH_ENABLE_CUDA
+#  pragma nv_diag_default 20012
+#endif
 
 namespace detail{
 
 template <class F, class T>
-void bracket(F f, T& a, T& b, T c, T& fa, T& fb, T& d, T& fd)
+BOOST_MATH_GPU_ENABLED void bracket(F f, T& a, T& b, T c, T& fa, T& fb, T& d, T& fd)
 {
    //
    // Given a point c inside the existing enclosing interval
@@ -100,7 +127,7 @@ void bracket(F f, T& a, T& b, T c, T& fa, T& fb, T& d, T& fd)
    }
    else if(c >= b - fabs(b) * tol)
    {
-      c = b - fabs(a) * tol;
+      c = b - fabs(b) * tol;
    }
    //
    // OK, lets invoke f(c):
@@ -137,7 +164,7 @@ void bracket(F f, T& a, T& b, T c, T& fa, T& fb, T& d, T& fd)
 }
 
 template <class T>
-inline T safe_div(T num, T denom, T r)
+BOOST_MATH_GPU_ENABLED inline T safe_div(T num, T denom, T r)
 {
    //
    // return num / denom without overflow,
@@ -154,7 +181,7 @@ inline T safe_div(T num, T denom, T r)
 }
 
 template <class T>
-inline T secant_interpolate(const T& a, const T& b, const T& fa, const T& fb)
+BOOST_MATH_GPU_ENABLED inline T secant_interpolate(const T& a, const T& b, const T& fa, const T& fb)
 {
    //
    // Performs standard secant interpolation of [a,b] given
@@ -175,9 +202,9 @@ inline T secant_interpolate(const T& a, const T& b, const T& fa, const T& fb)
 }
 
 template <class T>
-T quadratic_interpolate(const T& a, const T& b, T const& d,
-                           const T& fa, const T& fb, T const& fd, 
-                           unsigned count)
+BOOST_MATH_GPU_ENABLED T quadratic_interpolate(const T& a, const T& b, T const& d,
+                                               const T& fa, const T& fb, T const& fd, 
+                                               unsigned count)
 {
    //
    // Performs quadratic interpolation to determine the next point,
@@ -187,7 +214,7 @@ T quadratic_interpolate(const T& a, const T& b, T const& d,
    // Point d must lie outside of the interval [a,b], it is the third
    // best approximation to the root, after a and b.
    //
-   // Note: this does not guarentee to find a root
+   // Note: this does not guarantee to find a root
    // inside [a, b], so we fall back to a secant step should
    // the result be out of range.
    //
@@ -197,7 +224,7 @@ T quadratic_interpolate(const T& a, const T& b, T const& d,
    T A = safe_div(T(fd - fb), T(d - b), tools::max_value<T>());
    A = safe_div(T(A - B), T(d - a), T(0));
 
-   if(a == 0)
+   if(A == 0)
    {
       // failure to determine coefficients, try a secant step:
       return secant_interpolate(a, b, fa, fb);
@@ -231,9 +258,9 @@ T quadratic_interpolate(const T& a, const T& b, T const& d,
 }
 
 template <class T>
-T cubic_interpolate(const T& a, const T& b, const T& d, 
-                    const T& e, const T& fa, const T& fb, 
-                    const T& fd, const T& fe)
+BOOST_MATH_GPU_ENABLED T cubic_interpolate(const T& a, const T& b, const T& d, 
+                                           const T& e, const T& fa, const T& fb, 
+                                           const T& fd, const T& fe)
 {
    //
    // Uses inverse cubic interpolation of f(x) at points 
@@ -242,7 +269,7 @@ T cubic_interpolate(const T& a, const T& b, const T& d,
    // and are the third and forth best approximations
    // to the root that we have found so far.
    //
-   // Note: this does not guarentee to find a root
+   // Note: this does not guarantee to find a root
    // inside [a, b], so we fall back to quadratic
    // interpolation in case of an erroneous result.
    //
@@ -280,7 +307,7 @@ T cubic_interpolate(const T& a, const T& b, const T& d,
 } // namespace detail
 
 template <class F, class T, class Tol, class Policy>
-std::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, const T& fax, const T& fbx, Tol tol, boost::uintmax_t& max_iter, const Policy& pol)
+BOOST_MATH_GPU_ENABLED boost::math::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, const T& fax, const T& fbx, Tol tol, boost::math::uintmax_t& max_iter, const Policy& pol)
 {
    //
    // Main entry point and logic for Toms Algorithm 748
@@ -288,9 +315,15 @@ std::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, const T& fax, const
    //
    BOOST_MATH_STD_USING  // For ADL of std math functions
 
-   static const char* function = "boost::math::tools::toms748_solve<%1%>";
+   constexpr auto function = "boost::math::tools::toms748_solve<%1%>";
 
-   boost::uintmax_t count = max_iter;
+   //
+   // Sanity check - are we allowed to iterate at all?
+   //
+   if (max_iter == 0)
+      return boost::math::make_pair(ax, bx);
+
+   boost::math::uintmax_t count = max_iter;
    T a, b, fa, fb, c, u, fu, a0, b0, d, fd, e, fe;
    static const T mu = 0.5f;
 
@@ -298,9 +331,9 @@ std::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, const T& fax, const
    a = ax;
    b = bx;
    if(a >= b)
-      policies::raise_domain_error(
+      return boost::math::detail::pair_from_single(policies::raise_domain_error(
          function, 
-         "Parameters a and b out of order: a=%1%", a, pol);
+         "Parameters a and b out of order: a=%1%", a, pol));
    fa = fax;
    fb = fbx;
 
@@ -311,13 +344,13 @@ std::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, const T& fax, const
          b = a;
       else if(fb == 0)
          a = b;
-      return std::make_pair(a, b);
+      return boost::math::make_pair(a, b);
    }
 
    if(boost::math::sign(fa) * boost::math::sign(fb) > 0)
-      policies::raise_domain_error(
+      return boost::math::detail::pair_from_single(policies::raise_domain_error(
          function, 
-         "Parameters a and b do not bracket the root: a=%1%", a, pol);
+         "Parameters a and b do not bracket the root: a=%1%", a, pol));
    // dummy value for fd, e and fe:
    fe = e = fd = 1e5F;
 
@@ -422,9 +455,10 @@ std::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, const T& fax, const
       e = d;
       fe = fd;
       detail::bracket(f, a, b, c, fa, fb, d, fd);
+      BOOST_MATH_INSTRUMENT_CODE(" a = " << a << " b = " << b);
+      BOOST_MATH_INSTRUMENT_CODE(" tol = " << T((fabs(a) - fabs(b)) / fabs(a)));
       if((0 == --count) || (fa == 0) || tol(a, b))
          break;
-      BOOST_MATH_INSTRUMENT_CODE(" a = " << a << " b = " << b);
       //
       // And finally... check to see if an additional bisection step is 
       // to be taken, we do this if we're not converging fast enough:
@@ -451,37 +485,40 @@ std::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, const T& fax, const
    {
       a = b;
    }
-   return std::make_pair(a, b);
+   BOOST_MATH_LOG_COUNT(max_iter)
+   return boost::math::make_pair(a, b);
 }
 
 template <class F, class T, class Tol>
-inline std::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, const T& fax, const T& fbx, Tol tol, boost::uintmax_t& max_iter)
+BOOST_MATH_GPU_ENABLED inline boost::math::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, const T& fax, const T& fbx, Tol tol, boost::math::uintmax_t& max_iter)
 {
    return toms748_solve(f, ax, bx, fax, fbx, tol, max_iter, policies::policy<>());
 }
 
 template <class F, class T, class Tol, class Policy>
-inline std::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, Tol tol, boost::uintmax_t& max_iter, const Policy& pol)
+BOOST_MATH_GPU_ENABLED inline boost::math::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, Tol tol, boost::math::uintmax_t& max_iter, const Policy& pol)
 {
+   if (max_iter <= 2)
+      return boost::math::make_pair(ax, bx);
    max_iter -= 2;
-   std::pair<T, T> r = toms748_solve(f, ax, bx, f(ax), f(bx), tol, max_iter, pol);
+   boost::math::pair<T, T> r = toms748_solve(f, ax, bx, f(ax), f(bx), tol, max_iter, pol);
    max_iter += 2;
    return r;
 }
 
 template <class F, class T, class Tol>
-inline std::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, Tol tol, boost::uintmax_t& max_iter)
+BOOST_MATH_GPU_ENABLED inline boost::math::pair<T, T> toms748_solve(F f, const T& ax, const T& bx, Tol tol, boost::math::uintmax_t& max_iter)
 {
    return toms748_solve(f, ax, bx, tol, max_iter, policies::policy<>());
 }
 
 template <class F, class T, class Tol, class Policy>
-std::pair<T, T> bracket_and_solve_root(F f, const T& guess, T factor, bool rising, Tol tol, boost::uintmax_t& max_iter, const Policy& pol)
+BOOST_MATH_GPU_ENABLED boost::math::pair<T, T> bracket_and_solve_root(F f, const T& guess, T factor, bool rising, Tol tol, boost::math::uintmax_t& max_iter, const Policy& pol)
 {
    BOOST_MATH_STD_USING
-   static const char* function = "boost::math::tools::bracket_and_solve_root<%1%>";
+   constexpr auto function = "boost::math::tools::bracket_and_solve_root<%1%>";
    //
-   // Set up inital brackets:
+   // Set up initial brackets:
    //
    T a = guess;
    T b = a;
@@ -490,7 +527,9 @@ std::pair<T, T> bracket_and_solve_root(F f, const T& guess, T factor, bool risin
    //
    // Set up invocation count:
    //
-   boost::uintmax_t count = max_iter - 1;
+   boost::math::uintmax_t count = max_iter - 1;
+
+   int step = 32;
 
    if((fa < 0) == (guess < 0 ? !rising : rising))
    {
@@ -501,13 +540,19 @@ std::pair<T, T> bracket_and_solve_root(F f, const T& guess, T factor, bool risin
       while((boost::math::sign)(fb) == (boost::math::sign)(fa))
       {
          if(count == 0)
-            policies::raise_evaluation_error(function, "Unable to bracket root, last nearest value was %1%", b, pol);
+            return boost::math::detail::pair_from_single(policies::raise_evaluation_error(function, "Unable to bracket root, last nearest value was %1%", b, pol));
          //
-         // Heuristic: every 20 iterations we double the growth factor in case the
-         // initial guess was *really* bad !
+         // Heuristic: normally it's best not to increase the step sizes as we'll just end up
+         // with a really wide range to search for the root.  However, if the initial guess was *really*
+         // bad then we need to speed up the search otherwise we'll take forever if we're orders of
+         // magnitude out.  This happens most often if the guess is a small value (say 1) and the result
+         // we're looking for is close to std::numeric_limits<T>::min().
          //
-         if((max_iter - count) % 20 == 0)
+         if((max_iter - count) % static_cast<unsigned>(step) == 0u)
+         {
             factor *= 2;
+            if(step > 1) step /= 2;
+         }
          //
          // Now go ahead and move our guess by "factor":
          //
@@ -532,16 +577,22 @@ std::pair<T, T> bracket_and_solve_root(F f, const T& guess, T factor, bool risin
             // Escape route just in case the answer is zero!
             max_iter -= count;
             max_iter += 1;
-            return a > 0 ? std::make_pair(T(0), T(a)) : std::make_pair(T(a), T(0)); 
+            return a > 0 ? boost::math::make_pair(T(0), T(a)) : boost::math::make_pair(T(a), T(0)); 
          }
          if(count == 0)
-            policies::raise_evaluation_error(function, "Unable to bracket root, last nearest value was %1%", a, pol);
+            return boost::math::detail::pair_from_single(policies::raise_evaluation_error(function, "Unable to bracket root, last nearest value was %1%", a, pol));
          //
-         // Heuristic: every 20 iterations we double the growth factor in case the
-         // initial guess was *really* bad !
+         // Heuristic: normally it's best not to increase the step sizes as we'll just end up
+         // with a really wide range to search for the root.  However, if the initial guess was *really*
+         // bad then we need to speed up the search otherwise we'll take forever if we're orders of
+         // magnitude out.  This happens most often if the guess is a small value (say 1) and the result
+         // we're looking for is close to std::numeric_limits<T>::min().
          //
-         if((max_iter - count) % 20 == 0)
+         if((max_iter - count) % static_cast<unsigned>(step) == 0u)
+         {
             factor *= 2;
+            if(step > 1) step /= 2;
+         }
          //
          // Now go ahead and move are guess by "factor":
          //
@@ -555,7 +606,7 @@ std::pair<T, T> bracket_and_solve_root(F f, const T& guess, T factor, bool risin
    }
    max_iter -= count;
    max_iter += 1;
-   std::pair<T, T> r = toms748_solve(
+   boost::math::pair<T, T> r = toms748_solve(
       f, 
       (a < 0 ? b : a), 
       (a < 0 ? a : b), 
@@ -566,11 +617,12 @@ std::pair<T, T> bracket_and_solve_root(F f, const T& guess, T factor, bool risin
       pol);
    max_iter += count;
    BOOST_MATH_INSTRUMENT_CODE("max_iter = " << max_iter << " count = " << count);
+   BOOST_MATH_LOG_COUNT(max_iter)
    return r;
 }
 
 template <class F, class T, class Tol>
-inline std::pair<T, T> bracket_and_solve_root(F f, const T& guess, const T& factor, bool rising, Tol tol, boost::uintmax_t& max_iter)
+BOOST_MATH_GPU_ENABLED inline boost::math::pair<T, T> bracket_and_solve_root(F f, const T& guess, const T& factor, bool rising, Tol tol, boost::math::uintmax_t& max_iter)
 {
    return bracket_and_solve_root(f, guess, factor, rising, tol, max_iter, policies::policy<>());
 }

@@ -8,7 +8,7 @@
 
 // For more information, see http://www.boost.org
 
-// ----------------------------------------------------------------- 
+// -----------------------------------------------------------------
 
 #ifndef BOOST_TUPLE_HPP
 #define BOOST_TUPLE_HPP
@@ -20,28 +20,22 @@
 namespace boost { namespace python { class tuple; }}
 #endif
 
-#include "boost/config.hpp"
-#include "boost/static_assert.hpp"
+#include <boost/config.hpp>
+#include <boost/static_assert.hpp>
 
-#if defined(BOOST_NO_TEMPLATE_PARTIAL_SPECIALIZATION)
-// The MSVC version
-#include "boost/tuple/detail/tuple_basic_no_partial_spec.hpp"
-
-#else
 // other compilers
-#include "boost/ref.hpp"
-#include "boost/tuple/detail/tuple_basic.hpp"
+#include <boost/core/ref.hpp>
+#include <boost/tuple/detail/tuple_basic.hpp>
 
-#endif // BOOST_NO_TEMPLATE_PARTIAL_SPECIALIZATION
 
-namespace boost {    
+namespace boost {
 
 using tuples::tuple;
 using tuples::make_tuple;
 using tuples::tie;
 #if !defined(BOOST_NO_USING_TEMPLATE)
 using tuples::get;
-#elif !defined(BOOST_NO_TEMPLATE_PARTIAL_SPECIALIZATION)
+#else
 //
 // The "using tuples::get" statement causes the
 // Borland compiler to ICE, use forwarding
@@ -53,7 +47,7 @@ inline typename tuples::access_traits<
                 >::non_const_type
 get(tuples::cons<HT, TT>& c) {
   return tuples::get<N,HT,TT>(c);
-} 
+}
 // get function for const cons-lists, returns a const reference to
 // the element. If the element is a reference, returns the reference
 // as such (that is, can return a non-const reference)
@@ -64,27 +58,61 @@ inline typename tuples::access_traits<
 get(const tuples::cons<HT, TT>& c) {
   return tuples::get<N,HT,TT>(c);
 }
-#else  // BOOST_NO_TEMPLATE_PARTIAL_SPECIALIZATION
-//
-// MSVC, using declarations don't mix with templates well,
-// so use forwarding functions instead:
-//
-template<int N, typename Head, typename Tail>
-typename tuples::detail::element_ref<N, tuples::cons<Head, Tail> >::RET
-get(tuples::cons<Head, Tail>& t, tuples::detail::workaround_holder<N>* = 0)
-{
-   return tuples::detail::get_class<N>::get(t);
-}
 
-template<int N, typename Head, typename Tail>
-typename tuples::detail::element_const_ref<N, tuples::cons<Head, Tail> >::RET
-get(const tuples::cons<Head, Tail>& t, tuples::detail::workaround_holder<N>* = 0)
-{
-   return tuples::detail::get_class<N>::get(t);
-}
 #endif // BOOST_NO_USING_TEMPLATE
-   
+
 } // end namespace boost
 
+#if !defined(BOOST_NO_CXX11_HDR_TUPLE)
+
+#include <tuple>
+#include <cstddef>
+
+namespace std
+{
+
+#if defined(BOOST_CLANG)
+# pragma clang diagnostic push
+# pragma clang diagnostic ignored "-Wmismatched-tags"
+#endif
+
+// std::tuple_size
+
+template<class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8, class T9, class T10>
+    class tuple_size< boost::tuples::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> >:
+        public boost::tuples::length< boost::tuples::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> >
+{
+};
+
+template<class H, class T> class tuple_size< boost::tuples::cons<H, T> >:
+    public boost::tuples::length< boost::tuples::cons<H, T> >
+{
+};
+
+template<> class tuple_size< boost::tuples::null_type >:
+    public boost::tuples::length< boost::tuples::null_type >
+{
+};
+
+// std::tuple_element
+
+template<std::size_t I, class T1, class T2, class T3, class T4, class T5, class T6, class T7, class T8, class T9, class T10>
+    class tuple_element< I, boost::tuples::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> >:
+        public boost::tuples::element< I, boost::tuples::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> >
+{
+};
+
+template<std::size_t I, class H, class T> class tuple_element< I, boost::tuples::cons<H, T> >:
+    public boost::tuples::element< I, boost::tuples::cons<H, T> >
+{
+};
+
+#if defined(BOOST_CLANG)
+# pragma clang diagnostic pop
+#endif
+
+} // namespace std
+
+#endif // !defined(BOOST_NO_CXX11_HDR_TUPLE)
 
 #endif // BOOST_TUPLE_HPP

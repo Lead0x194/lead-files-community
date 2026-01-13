@@ -20,45 +20,140 @@
 #include <boost/numeric/ublas/detail/config.hpp>
 #include <boost/numeric/ublas/detail/iterator.hpp>
 #include <boost/numeric/ublas/detail/returntype_deduction.hpp>
+#ifdef BOOST_UBLAS_USE_INTERVAL
+#include <boost/numeric/interval.hpp>
+#endif
 
 #include <boost/type_traits.hpp>
 #include <complex>
+#include <boost/typeof/typeof.hpp>
+#include <boost/utility/enable_if.hpp>
+#include <boost/type_traits/is_float.hpp>
+#include <boost/type_traits/is_integral.hpp>
+#include <boost/type_traits/is_unsigned.hpp>
+#include <boost/mpl/and.hpp>
+#include <boost/mpl/if.hpp>
+#include <boost/typeof/typeof.hpp>
+
 
 // anonymous namespace to avoid ADL issues
 namespace {
-  template<class T> T boost_numeric_ublas_sqrt (const T& t) {
+  template<class T>
+    typename boost::mpl::if_c<boost::is_integral<T>::value,
+                              double,
+                              T>::type
+  boost_numeric_ublas_sqrt (const T& t) {
     using namespace std;
     // we'll find either std::sqrt or else another version via ADL:
     return sqrt (t);
   }
-  template<class T> T boost_numeric_ublas_abs (const T& t) {
-    using namespace std;
-    // we'll find either std::abs or else another version via ADL:
-    return abs (t);
-  }
+
+template<typename T>
+inline typename boost::disable_if<
+    boost::is_unsigned<T>, T >::type
+    boost_numeric_ublas_abs (const T &t ) {
+        using namespace std;
+        // force a type conversion back to T for char and short types
+        return static_cast<T>(abs( t ));
+    }
+
+template<typename T>
+inline typename boost::enable_if<
+    boost::is_unsigned<T>, T >::type
+    boost_numeric_ublas_abs (const T &t ) {
+        return t;
+    }
 }
 
 namespace boost { namespace numeric { namespace ublas {
 
-    // Use Joel de Guzman's return type deduction
+
+    template<typename R, typename I>
+    typename boost::enable_if<
+      mpl::and_<
+        boost::is_float<R>,
+        boost::is_integral<I>
+        >,
+      std::complex<R> >::type inline operator+ (I in1, std::complex<R> const& in2 ) {
+      return R (in1) + in2;
+    }
+
+    template<typename R, typename I>
+    typename boost::enable_if<
+      mpl::and_<
+        boost::is_float<R>,
+        boost::is_integral<I>
+        >,
+      std::complex<R> >::type inline operator+ (std::complex<R> const& in1, I in2) {
+      return in1 + R (in2);
+    }
+
+    template<typename R, typename I>
+    typename boost::enable_if<
+      mpl::and_<
+        boost::is_float<R>,
+        boost::is_integral<I>
+        >,
+      std::complex<R> >::type inline operator- (I in1, std::complex<R> const& in2) {
+      return R (in1) - in2;
+    }
+
+    template<typename R, typename I>
+    typename boost::enable_if<
+      mpl::and_<
+        boost::is_float<R>,
+        boost::is_integral<I>
+        >,
+      std::complex<R> >::type inline operator- (std::complex<R> const& in1, I in2) {
+      return in1 - R (in2);
+    }
+
+    template<typename R, typename I>
+    typename boost::enable_if<
+      mpl::and_<
+        boost::is_float<R>,
+        boost::is_integral<I>
+        >,
+      std::complex<R> >::type inline operator* (I in1, std::complex<R> const& in2) {
+      return R (in1) * in2;
+    }
+
+    template<typename R, typename I>
+    typename boost::enable_if<
+      mpl::and_<
+        boost::is_float<R>,
+        boost::is_integral<I>
+        >,
+      std::complex<R> >::type inline operator* (std::complex<R> const& in1, I in2) {
+      return in1 * R(in2);
+    }
+
+    template<typename R, typename I>
+    typename boost::enable_if<
+      mpl::and_<
+        boost::is_float<R>,
+        boost::is_integral<I>
+        >,
+      std::complex<R> >::type inline operator/ (I in1, std::complex<R> const& in2) {
+      return R(in1) / in2;
+    }
+
+    template<typename R, typename I>
+    typename boost::enable_if<
+      mpl::and_<
+        boost::is_float<R>,
+        boost::is_integral<I>
+        >,
+      std::complex<R> >::type inline operator/ (std::complex<R> const& in1, I in2) {
+      return in1 / R (in2);
+    }
+
     // uBLAS assumes a common return type for all binary arithmetic operators
     template<class X, class Y>
     struct promote_traits {
-        typedef type_deduction_detail::base_result_of<X, Y> base_type;
-        static typename base_type::x_type x;
-        static typename base_type::y_type y;
-        static const std::size_t size = sizeof (
-                type_deduction_detail::test<
-                    typename base_type::x_type
-                  , typename base_type::y_type
-                >(x + y)     // Use x+y to stand of all the arithmetic actions
-            );
-
-        static const std::size_t index = (size / sizeof (char)) - 1;
-        typedef typename mpl::at_c<
-            typename base_type::types, index>::type id;
-        typedef typename id::type promote_type;
+        typedef BOOST_TYPEOF_TPL(X() + Y()) promote_type;
     };
+
 
 
     // Type traits - generic numeric properties and functions
@@ -508,10 +603,10 @@ namespace boost { namespace numeric { namespace ublas {
         struct has_trivial_destructor : public boost::has_trivial_destructor<T> {};
 
         template<typename FLT>
-        struct has_trivial_constructor<std::complex<FLT> > : public boost::true_type {};
+        struct has_trivial_constructor<std::complex<FLT> > : public has_trivial_constructor<FLT> {};
         
         template<typename FLT>
-        struct has_trivial_destructor<std::complex<FLT> > : public boost::true_type {};
+        struct has_trivial_destructor<std::complex<FLT> > : public has_trivial_destructor<FLT> {};
 
     }
 
@@ -555,7 +650,7 @@ namespace boost { namespace numeric { namespace ublas {
      */
     template < class E >
     struct container_traits 
-	: container_view_traits<E>, mutable_container_traits<E> {
+        : container_view_traits<E>, mutable_container_traits<E> {
 
     };
 
@@ -581,7 +676,7 @@ namespace boost { namespace numeric { namespace ublas {
      */
     template < class MATRIX >
     struct mutable_matrix_traits 
-	: mutable_container_traits <MATRIX> {
+        : mutable_container_traits <MATRIX> {
 
         /// row iterator for the matrix
         typedef typename MATRIX::iterator1  iterator1;
@@ -596,7 +691,7 @@ namespace boost { namespace numeric { namespace ublas {
      */
     template < class MATRIX >
     struct matrix_traits 
-	: matrix_view_traits <MATRIX>, mutable_matrix_traits <MATRIX> {
+        : matrix_view_traits <MATRIX>, mutable_matrix_traits <MATRIX> {
     };
 
     /**  \brief Traits class to extract type information from a VECTOR.
@@ -608,16 +703,16 @@ namespace boost { namespace numeric { namespace ublas {
         /// iterator for the VECTOR
         typedef typename VECTOR::const_iterator  const_iterator;
 
-	/// iterator pointing to the first element
-	static
-	const_iterator begin(const VECTOR & v) {
-	    return v.begin();
-	}
-	/// iterator pointing behind the last element
-	static
-	const_iterator end(const VECTOR & v) {
-	    return v.end();
-	}
+        /// iterator pointing to the first element
+        static
+        const_iterator begin(const VECTOR & v) {
+            return v.begin();
+        }
+        /// iterator pointing behind the last element
+        static
+        const_iterator end(const VECTOR & v) {
+            return v.end();
+        }
 
     };
 
@@ -629,17 +724,17 @@ namespace boost { namespace numeric { namespace ublas {
         /// iterator for the VECTOR
         typedef typename VECTOR::iterator  iterator;
 
-	/// iterator pointing to the first element
-	static
-	iterator begin(VECTOR & v) {
-	    return v.begin();
-	}
+        /// iterator pointing to the first element
+        static
+        iterator begin(VECTOR & v) {
+            return v.begin();
+        }
 
-	/// iterator pointing behind the last element
-	static
-	iterator end(VECTOR & v) {
-	    return v.end();
-	}
+        /// iterator pointing behind the last element
+        static
+        iterator end(VECTOR & v) {
+            return v.end();
+        }
     };
 
     /**  \brief Traits class to extract type information from a VECTOR.
@@ -647,7 +742,7 @@ namespace boost { namespace numeric { namespace ublas {
      */
     template < class VECTOR >
     struct vector_traits 
-	: vector_view_traits <VECTOR>, mutable_vector_traits <VECTOR> {
+        : vector_view_traits <VECTOR>, mutable_vector_traits <VECTOR> {
     };
 
 

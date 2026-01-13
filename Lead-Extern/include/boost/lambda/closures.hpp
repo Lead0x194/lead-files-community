@@ -11,8 +11,8 @@
     URL: http://spirit.sourceforge.net/
 
 ==============================================================================*/
-#ifndef PHOENIX_CLOSURES_HPP
-#define PHOENIX_CLOSURES_HPP
+#ifndef BOOST_LAMBDA_CLOSURES_HPP
+#define BOOST_LAMBDA_CLOSURES_HPP
 
 ///////////////////////////////////////////////////////////////////////////////
 #include "boost/lambda/core.hpp"
@@ -251,7 +251,7 @@ private:
     closure& operator=(closure const&); // no assign
 
     template <int N, typename ClosureT>
-    friend struct closure_member;
+    friend class closure_member;
 
     template <typename ClosureT>
     friend class closure_frame;

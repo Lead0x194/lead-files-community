@@ -1,7 +1,7 @@
 /* Boost interval/detail/x86_rounding_control.hpp file
  *
  * Copyright 2000 Jens Maurer
- * Copyright 2002 Hervé Brönnimann, Guillaume Melquiond, Sylvain Pion
+ * Copyright 2002 HervÃ© BrÃ¶nnimann, Guillaume Melquiond, Sylvain Pion
  *
  * Distributed under the Boost Software License, Version 1.0.
  * (See accompanying file LICENSE_1_0.txt or
@@ -11,13 +11,13 @@
 #ifndef BOOST_NUMERIC_INTERVAL_DETAIL_X86_ROUNDING_CONTROL_HPP
 #define BOOST_NUMERIC_INTERVAL_DETAIL_X86_ROUNDING_CONTROL_HPP
 
-#ifdef __GNUC__
+#if defined(__GNUC__) || defined(__BORLANDC__) && defined(__clang__)
 #  include <boost/numeric/interval/detail/x86gcc_rounding_control.hpp>
 #elif defined(__BORLANDC__)
 #  include <boost/numeric/interval/detail/bcc_rounding_control.hpp>
 #elif defined(_MSC_VER)
 #  include <boost/numeric/interval/detail/msvc_rounding_control.hpp>
-#elif defined(__MWERKS__) || defined(__ICC)
+#elif defined(__MWERKS__) || defined(__ICC) || defined (__SUNPRO_CC)
 #  define BOOST_NUMERIC_INTERVAL_USE_C99_SUBSYSTEM
 #  include <boost/numeric/interval/detail/c99sub_rounding_control.hpp>
 #else
@@ -31,7 +31,7 @@ namespace interval_lib {
 namespace detail {
 
 #ifdef BOOST_NUMERIC_INTERVAL_USE_C99_SUBSYSTEM
-typedef c99_rounding x86_rounding_control;
+typedef c99_rounding_control x86_rounding_control;
 #undef BOOST_NUMERIC_INTERVAL_USE_C99_SUBSYSTEM
 #else
 struct fpu_rounding_modes

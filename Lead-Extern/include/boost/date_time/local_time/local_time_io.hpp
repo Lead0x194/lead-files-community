@@ -5,15 +5,18 @@
  * Subject to the Boost Software License, Version 1.0.
  * (See accompanying file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland, Bart Garst
- * $Date: 2008-11-13 14:05:31 -0500 (Thu, 13 Nov 2008) $
+ * $Date$
  */
 
+#include <string>
 #include <locale>
 #include <iostream>
 #include <iterator> // i/ostreambuf_iterator
 #include <boost/io/ios_state.hpp>
+#include <boost/date_time/special_defs.hpp>
 #include <boost/date_time/time_facet.hpp>
 #include <boost/date_time/string_convert.hpp>
+#include <boost/date_time/local_time/local_time_types.hpp>
 #include <boost/date_time/local_time/local_date_time.hpp>
 #include <boost/date_time/local_time/posix_time_zone.hpp>
 #include <boost/date_time/local_time/conversion.hpp> // to_tm will be needed in the facets
@@ -36,7 +39,6 @@ namespace local_time {
     boost::io::ios_flags_saver iflags(os);
     typedef local_date_time time_type;//::utc_time_type typename 
     typedef date_time::time_facet<time_type, CharT> custom_time_facet;
-    typedef std::time_put<CharT> std_time_facet;
     std::ostreambuf_iterator<CharT> oitr(os);
 
     if(std::has_facet<custom_time_facet>(os.getloc())) {
@@ -123,7 +125,6 @@ namespace local_time {
              const boost::local_time::local_time_period& p) {
     boost::io::ios_flags_saver iflags(os);
     typedef boost::date_time::time_facet<local_date_time, CharT> custom_facet;
-    typedef std::time_put<CharT> std_time_facet;
     std::ostreambuf_iterator<CharT> oitr(os);
     if (std::has_facet<custom_facet>(os.getloc())) {
       std::use_facet<custom_facet>(os.getloc()).put(oitr, os, os.fill(), p);

@@ -2,7 +2,7 @@
 #ifndef BOOST_MPL_BITOR_HPP_INCLUDED
 #define BOOST_MPL_BITOR_HPP_INCLUDED
 
-// Copyright Aleksey Gurtovoy 2000-2004
+// Copyright Aleksey Gurtovoy 2000-2009
 // Copyright Jaap Suter 2003
 //
 // Distributed under the Boost Software License, Version 1.0. 
@@ -11,13 +11,31 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Id: bitor.hpp 49267 2008-10-11 06:19:02Z agurtovoy $
-// $Date: 2008-10-11 02:19:02 -0400 (Sat, 11 Oct 2008) $
-// $Revision: 49267 $
+// $Id$
+// $Date$
+// $Revision$
+
+// agurt, 23/jan/10: workaround a conflict with <iso646.h> header's 
+// macros, see http://tinyurl.com/ycwdxco; 'defined(bitor)'
+// has to be checked in a separate condition, otherwise GCC complains 
+// about 'bitor' being an alternative token
+#if defined(_MSC_EXTENSIONS)
+#if defined(bitor)
+#   pragma push_macro("bitor")
+#   undef bitor
+#   define bitor(x)
+#endif
+#endif
 
 #define AUX778076_OP_NAME   bitor_
 #define AUX778076_OP_PREFIX bitor
 #define AUX778076_OP_TOKEN  |
 #include <boost/mpl/aux_/arithmetic_op.hpp>
+
+#if defined(_MSC_EXTENSIONS)
+#if defined(bitor)
+#   pragma pop_macro("bitor")
+#endif
+#endif
 
 #endif // BOOST_MPL_BITOR_HPP_INCLUDED

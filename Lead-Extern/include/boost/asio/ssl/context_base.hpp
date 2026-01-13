@@ -1,8 +1,8 @@
 //
-// context_base.hpp
-// ~~~~~~~~~~~~~~~~
+// ssl/context_base.hpp
+// ~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2005-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,14 +15,10 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/push_options.hpp>
-#include <boost/config.hpp>
-#include <boost/detail/workaround.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
+#include <boost/asio/detail/config.hpp>
 #include <boost/asio/ssl/detail/openssl_types.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -70,33 +66,101 @@ public:
     sslv23_client,
 
     /// SSL/TLS server.
-    sslv23_server
+    sslv23_server,
+
+    /// Generic TLS version 1.1.
+    tlsv11,
+
+    /// TLS version 1.1 client.
+    tlsv11_client,
+
+    /// TLS version 1.1 server.
+    tlsv11_server,
+
+    /// Generic TLS version 1.2.
+    tlsv12,
+
+    /// TLS version 1.2 client.
+    tlsv12_client,
+
+    /// TLS version 1.2 server.
+    tlsv12_server,
+
+    /// Generic TLS version 1.3.
+    tlsv13,
+
+    /// TLS version 1.3 client.
+    tlsv13_client,
+
+    /// TLS version 1.3 server.
+    tlsv13_server,
+
+    /// Generic TLS.
+    tls,
+
+    /// TLS client.
+    tls_client,
+
+    /// TLS server.
+    tls_server
   };
 
   /// Bitmask type for SSL options.
-  typedef int options;
+  typedef uint64_t options;
 
 #if defined(GENERATING_DOCUMENTATION)
   /// Implement various bug workarounds.
-  static const int default_workarounds = implementation_defined;
+  static const uint64_t default_workarounds = implementation_defined;
 
   /// Always create a new key when using tmp_dh parameters.
-  static const int single_dh_use = implementation_defined;
+  static const uint64_t single_dh_use = implementation_defined;
 
   /// Disable SSL v2.
-  static const int no_sslv2 = implementation_defined;
+  static const uint64_t no_sslv2 = implementation_defined;
 
   /// Disable SSL v3.
-  static const int no_sslv3 = implementation_defined;
+  static const uint64_t no_sslv3 = implementation_defined;
 
   /// Disable TLS v1.
-  static const int no_tlsv1 = implementation_defined;
+  static const uint64_t no_tlsv1 = implementation_defined;
+
+  /// Disable TLS v1.1.
+  static const uint64_t no_tlsv1_1 = implementation_defined;
+
+  /// Disable TLS v1.2.
+  static const uint64_t no_tlsv1_2 = implementation_defined;
+
+  /// Disable TLS v1.3.
+  static const uint64_t no_tlsv1_3 = implementation_defined;
+
+  /// Disable compression. Compression is disabled by default.
+  static const uint64_t no_compression = implementation_defined;
 #else
-  BOOST_STATIC_CONSTANT(int, default_workarounds = SSL_OP_ALL);
-  BOOST_STATIC_CONSTANT(int, single_dh_use = SSL_OP_SINGLE_DH_USE);
-  BOOST_STATIC_CONSTANT(int, no_sslv2 = SSL_OP_NO_SSLv2);
-  BOOST_STATIC_CONSTANT(int, no_sslv3 = SSL_OP_NO_SSLv3);
-  BOOST_STATIC_CONSTANT(int, no_tlsv1 = SSL_OP_NO_TLSv1);
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, default_workarounds = SSL_OP_ALL);
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, single_dh_use = SSL_OP_SINGLE_DH_USE);
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_sslv2 = SSL_OP_NO_SSLv2);
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_sslv3 = SSL_OP_NO_SSLv3);
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_tlsv1 = SSL_OP_NO_TLSv1);
+# if defined(SSL_OP_NO_TLSv1_1)
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_tlsv1_1 = SSL_OP_NO_TLSv1_1);
+# else // defined(SSL_OP_NO_TLSv1_1)
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_tlsv1_1 = 0x10000000L);
+# endif // defined(SSL_OP_NO_TLSv1_1)
+# if defined(SSL_OP_NO_TLSv1_2)
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_tlsv1_2 = SSL_OP_NO_TLSv1_2);
+# else // defined(SSL_OP_NO_TLSv1_2)
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_tlsv1_2 = 0x08000000L);
+# endif // defined(SSL_OP_NO_TLSv1_2)
+# if defined(SSL_OP_NO_TLSv1_3)
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_tlsv1_3 = SSL_OP_NO_TLSv1_3);
+# else // defined(SSL_OP_NO_TLSv1_3)
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_tlsv1_3 = 0x20000000L);
+# endif // defined(SSL_OP_NO_TLSv1_3)
+# if defined(SSL_OP_NO_COMPRESSION)
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_compression = SSL_OP_NO_COMPRESSION);
+# else // defined(SSL_OP_NO_COMPRESSION)
+  BOOST_ASIO_STATIC_CONSTANT(uint64_t, no_compression = 0x20000L);
+# endif // defined(SSL_OP_NO_COMPRESSION)
 #endif
 
   /// File format types.
@@ -109,29 +173,16 @@ public:
     pem
   };
 
-  /// Bitmask type for peer verification.
+#if !defined(GENERATING_DOCUMENTATION)
+  // The following types and constants are preserved for backward compatibility.
+  // New programs should use the equivalents of the same names that are defined
+  // in the boost::asio::ssl namespace.
   typedef int verify_mode;
-
-#if defined(GENERATING_DOCUMENTATION)
-  /// No verification.
-  static const int verify_none = implementation_defined;
-
-  /// Verify the peer.
-  static const int verify_peer = implementation_defined;
-
-  /// Fail verification if the peer has no certificate. Ignored unless
-  /// verify_peer is set.
-  static const int verify_fail_if_no_peer_cert = implementation_defined;
-
-  /// Do not request client certificate on renegotiation. Ignored unless
-  /// verify_peer is set.
-  static const int verify_client_once = implementation_defined;
-#else
-  BOOST_STATIC_CONSTANT(int, verify_none = SSL_VERIFY_NONE);
-  BOOST_STATIC_CONSTANT(int, verify_peer = SSL_VERIFY_PEER);
-  BOOST_STATIC_CONSTANT(int,
+  BOOST_ASIO_STATIC_CONSTANT(int, verify_none = SSL_VERIFY_NONE);
+  BOOST_ASIO_STATIC_CONSTANT(int, verify_peer = SSL_VERIFY_PEER);
+  BOOST_ASIO_STATIC_CONSTANT(int,
       verify_fail_if_no_peer_cert = SSL_VERIFY_FAIL_IF_NO_PEER_CERT);
-  BOOST_STATIC_CONSTANT(int, verify_client_once = SSL_VERIFY_CLIENT_ONCE);
+  BOOST_ASIO_STATIC_CONSTANT(int, verify_client_once = SSL_VERIFY_CLIENT_ONCE);
 #endif
 
   /// Purpose of PEM password.
@@ -149,12 +200,6 @@ protected:
   ~context_base()
   {
   }
-
-#if BOOST_WORKAROUND(__BORLANDC__, BOOST_TESTED_AT(0x564))
-private:
-  // Workaround to enable the empty base optimisation with Borland C++.
-  char dummy_;
-#endif
 };
 
 } // namespace ssl

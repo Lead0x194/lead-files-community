@@ -2,27 +2,24 @@
 #define BOOST_ARCHIVE_ITERATORS_DATAFLOW_HPP
 
 // MS compatible compilers support #pragma once
-#if defined(_MSC_VER) && (_MSC_VER >= 1020)
+#if defined(_MSC_VER)
 # pragma once
 #endif
 
 /////////1/////////2/////////3/////////4/////////5/////////6/////////7/////////8
 // dataflow.hpp
 
-// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com . 
+// (C) Copyright 2002 Robert Ramey - http://www.rrsd.com .
 // Use, modification and distribution is subject to the Boost Software
 // License, Version 1.0. (See accompanying file LICENSE_1_0.txt or copy at
 // http://www.boost.org/LICENSE_1_0.txt)
 
 //  See http://www.boost.org for updates, documentation, and revision history.
 
-#include <cassert>
-
-#include <boost/config.hpp> // for BOOST_DEDUCED_TYPENAME
+#include <boost/assert.hpp>
 
 #include <boost/mpl/eval_if.hpp>
 #include <boost/mpl/if.hpp>
-#include <boost/mpl/bool.hpp>
 #include <boost/mpl/apply.hpp>
 #include <boost/mpl/plus.hpp>
 #include <boost/mpl/int.hpp>
@@ -34,7 +31,7 @@
 #include <boost/iterator/iterator_traits.hpp>
 #include <boost/static_assert.hpp>
 
-namespace boost { 
+namespace boost {
 namespace archive {
 namespace iterators {
 
@@ -47,7 +44,7 @@ struct tri_state {
     } m_state;
     // convert to bool
     operator bool (){
-        assert(is_indeterminant != m_state);
+        BOOST_ASSERT(is_indeterminant != m_state);
         return is_true == m_state ? true : false;
     }
     // assign from bool

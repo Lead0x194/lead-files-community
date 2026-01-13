@@ -2,9 +2,9 @@
 
 //  (C) Copyright Dave Abrahams and Daryle Walker 2001. Distributed under the Boost
 //  Software License, Version 1.0. (See accompanying file
-//  LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
+//  LICENSE_1_0.txt or copy at https://www.boost.org/LICENSE_1_0.txt)
 
-//  See http://www.boost.org/libs/integer for documentation.
+//  See https://www.boost.org/libs/integer for documentation.
 
 #ifndef BOOST_INTEGER_FWD_HPP
 #define BOOST_INTEGER_FWD_HPP
@@ -77,12 +77,18 @@ template <  >
 template <  >
     class integer_traits< unsigned long >;
 
-#if !defined(BOOST_NO_INTEGRAL_INT64_T) && !defined(BOOST_NO_INT64_T) && (defined(BOOST_HAS_LONG_LONG) || defined(BOOST_HAS_MS_INT64))
+#if !defined(BOOST_NO_INTEGRAL_INT64_T) && !defined(BOOST_NO_INT64_T) && defined(BOOST_HAS_LONG_LONG)
 template <  >
-    class integer_traits<  ::boost::long_long_type>;
+class integer_traits<  ::boost::long_long_type>;
 
 template <  >
-    class integer_traits<  ::boost::ulong_long_type >;
+class integer_traits<  ::boost::ulong_long_type >;
+#elif !defined(BOOST_NO_INTEGRAL_INT64_T) && !defined(BOOST_NO_INT64_T) && defined(BOOST_HAS_MS_INT64)
+template <  >
+class integer_traits<__int64>;
+
+template <  >
+class integer_traits<unsigned __int64>;
 #endif
 
 
@@ -130,22 +136,6 @@ template < std::size_t Bits >
 template <  >
     struct low_bits_mask_t< ::std::numeric_limits<unsigned char>::digits >;
 
-#if USHRT_MAX > UCHAR_MAX
-template <  >
-    struct low_bits_mask_t< ::std::numeric_limits<unsigned short>::digits >;
-#endif
-
-#if UINT_MAX > USHRT_MAX
-template <  >
-    struct low_bits_mask_t< ::std::numeric_limits<unsigned int>::digits >;
-#endif
-
-#if ULONG_MAX > UINT_MAX
-template <  >
-    struct low_bits_mask_t< ::std::numeric_limits<unsigned long>::digits >;
-#endif
-
-
 //  From <boost/integer/static_log2.hpp>  ------------------------------------//
 
 template <static_log2_argument_type Value >
@@ -167,6 +157,32 @@ template <static_min_max_unsigned_type Value1, static_min_max_unsigned_type Valu
 
 template <static_min_max_unsigned_type Value1, static_min_max_unsigned_type Value2>
     struct static_unsigned_max;
+
+
+namespace integer
+{
+//  From <boost/integer/common_factor_ct.hpp>
+
+#ifdef BOOST_NO_INTEGRAL_INT64_T
+     typedef unsigned long static_gcd_type;
+#else
+     typedef boost::uintmax_t static_gcd_type;
+#endif
+
+template < static_gcd_type Value1, static_gcd_type Value2 >
+    struct static_gcd;
+template < static_gcd_type Value1, static_gcd_type Value2 >
+    struct static_lcm;
+
+
+//  From <boost/integer/common_factor_rt.hpp>
+
+template < typename IntegerType >
+    class gcd_evaluator;
+template < typename IntegerType >
+    class lcm_evaluator;
+
+} // namespace integer
 
 }  // namespace boost
 

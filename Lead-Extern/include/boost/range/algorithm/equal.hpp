@@ -31,7 +31,7 @@ namespace boost
                                 IteratorCategoryTag1,
                                 IteratorCategoryTag2 )
         {
-            do
+            for (;;)
             {
                 // If we have reached the end of the left range then this is
                 // the end of the loop. They are equal if and only if we have
@@ -46,7 +46,12 @@ namespace boost
                     return false;
 
                 // continue looping if and only if the values are equal
-            } while(*first1++ == *first2++);
+                if (*first1 != *first2)
+                    break;
+
+                ++first1;
+                ++first2;
+            }
 
             // Reaching this line in the algorithm indicates that a value
             // inequality has been detected.
@@ -66,7 +71,7 @@ namespace boost
                                 IteratorCategoryTag1,
                                 IteratorCategoryTag2 )
         {
-            do
+            for (;;)
             {
                 // If we have reached the end of the left range then this is
                 // the end of the loop. They are equal if and only if we have
@@ -81,7 +86,12 @@ namespace boost
                     return false;
 
                 // continue looping if and only if the values are equal
-            } while(pred(*first1++, *first2++));
+                if (!pred(*first1, *first2))
+                    break;
+
+                ++first1;
+                ++first2;
+            }
 
             // Reaching this line in the algorithm indicates that a value
             // inequality has been detected.
@@ -110,7 +120,9 @@ namespace boost
                                 RandomAccessTraversalReadableIterator1 last1,
                                 RandomAccessTraversalReadableIterator2 first2,
                                 RandomAccessTraversalReadableIterator2 last2,
-                                BinaryPredicate                        pred )
+                                BinaryPredicate                        pred,
+                                std::random_access_iterator_tag,
+                                std::random_access_iterator_tag )
         {
             return ((last1 - first1) == (last2 - first2))
                 && std::equal(first1, last1, first2, pred);
@@ -159,8 +171,8 @@ namespace boost
         template< class SinglePassRange1, class SinglePassRange2 >
         inline bool equal( const SinglePassRange1& rng1, const SinglePassRange2& rng2 )
         {
-            BOOST_RANGE_CONCEPT_ASSERT(( SinglePassRangeConcept<SinglePassRange1> ));
-            BOOST_RANGE_CONCEPT_ASSERT(( SinglePassRangeConcept<SinglePassRange2> ));
+            BOOST_RANGE_CONCEPT_ASSERT(( SinglePassRangeConcept<const SinglePassRange1> ));
+            BOOST_RANGE_CONCEPT_ASSERT(( SinglePassRangeConcept<const SinglePassRange2> ));
 
             return ::boost::range_detail::equal(
                 ::boost::begin(rng1), ::boost::end(rng1),
@@ -172,8 +184,8 @@ namespace boost
         inline bool equal( const SinglePassRange1& rng1, const SinglePassRange2& rng2,
                            BinaryPredicate pred )
         {
-            BOOST_RANGE_CONCEPT_ASSERT(( SinglePassRangeConcept<SinglePassRange1> ));
-            BOOST_RANGE_CONCEPT_ASSERT(( SinglePassRangeConcept<SinglePassRange2> ));
+            BOOST_RANGE_CONCEPT_ASSERT(( SinglePassRangeConcept<const SinglePassRange1> ));
+            BOOST_RANGE_CONCEPT_ASSERT(( SinglePassRangeConcept<const SinglePassRange2> ));
 
             return ::boost::range_detail::equal(
                 ::boost::begin(rng1), ::boost::end(rng1),
@@ -182,7 +194,7 @@ namespace boost
         }
 
     } // namespace range
-    using range::equal;
+    using ::boost::range::equal;
 } // namespace boost
 
 #endif // include guard

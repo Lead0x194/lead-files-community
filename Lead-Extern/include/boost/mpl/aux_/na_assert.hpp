@@ -10,9 +10,9 @@
 //
 // See http://www.boost.org/libs/mpl for documentation.
 
-// $Id: na_assert.hpp 49267 2008-10-11 06:19:02Z agurtovoy $
-// $Date: 2008-10-11 02:19:02 -0400 (Sat, 11 Oct 2008) $
-// $Revision: 49267 $
+// $Id$
+// $Date$
+// $Revision$
 
 #include <boost/mpl/aux_/na.hpp>
 #include <boost/mpl/aux_/config/msvc.hpp>
@@ -22,7 +22,7 @@
     && !BOOST_WORKAROUND(__EDG_VERSION__, <= 243)
 #   include <boost/mpl/assert.hpp>
 #   define BOOST_MPL_AUX_ASSERT_NOT_NA(x) \
-    BOOST_MPL_ASSERT_NOT((boost::mpl::is_na<type>)) \
+    BOOST_MPL_ASSERT_NOT((boost::mpl::is_na<x>)) \
 /**/
 #else
 #   include <boost/static_assert.hpp>

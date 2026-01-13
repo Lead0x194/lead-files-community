@@ -1,8 +1,8 @@
 //
-// basic_endpoint.hpp
-// ~~~~~~~~~~~~~~~~~~
+// local/basic_endpoint.hpp
+// ~~~~~~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 // Derived from a public domain implementation written by Daniel Casimiro.
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
@@ -16,30 +16,18 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
-
-#include <boost/asio/detail/push_options.hpp>
-#include <boost/throw_exception.hpp>
-#include <cstddef>
-#include <cstring>
-#include <ostream>
-#include <boost/system/system_error.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
-#include <boost/asio/error.hpp>
-#include <boost/asio/detail/socket_ops.hpp>
-#include <boost/asio/detail/socket_types.hpp>
-#include <boost/asio/detail/throw_error.hpp>
-
-#if !defined(BOOST_ASIO_DISABLE_LOCAL_SOCKETS)
-# if !defined(BOOST_WINDOWS) && !defined(__CYGWIN__)
-#  define BOOST_ASIO_HAS_LOCAL_SOCKETS 1
-# endif // !defined(BOOST_WINDOWS) && !defined(__CYGWIN__)
-#endif // !defined(BOOST_ASIO_DISABLE_LOCAL_SOCKETS)
+#include <boost/asio/detail/config.hpp>
 
 #if defined(BOOST_ASIO_HAS_LOCAL_SOCKETS) \
   || defined(GENERATING_DOCUMENTATION)
 
+#include <boost/asio/local/detail/endpoint.hpp>
+
+#if !defined(BOOST_ASIO_NO_IOSTREAM)
+# include <iosfwd>
+#endif // !defined(BOOST_ASIO_NO_IOSTREAM)
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -73,165 +61,155 @@ public:
 #endif
 
   /// Default constructor.
-  basic_endpoint()
+  basic_endpoint() noexcept
   {
-    init("", 0);
   }
 
   /// Construct an endpoint using the specified path name.
-  basic_endpoint(const char* path)
+  basic_endpoint(const char* path_name)
+    : impl_(path_name)
   {
-    using namespace std; // For strlen.
-    init(path, strlen(path));
   }
 
   /// Construct an endpoint using the specified path name.
-  basic_endpoint(const std::string& path)
+  basic_endpoint(const std::string& path_name)
+    : impl_(path_name)
   {
-    init(path.data(), path.length());
   }
+
+  #if defined(BOOST_ASIO_HAS_STRING_VIEW)
+  /// Construct an endpoint using the specified path name.
+  basic_endpoint(string_view path_name)
+    : impl_(path_name)
+  {
+  }
+  #endif // defined(BOOST_ASIO_HAS_STRING_VIEW)
 
   /// Copy constructor.
-  basic_endpoint(const basic_endpoint& other)
-    : data_(other.data_),
-      path_length_(other.path_length_)
+  basic_endpoint(const basic_endpoint& other) noexcept
+    : impl_(other.impl_)
+  {
+  }
+
+  /// Move constructor.
+  basic_endpoint(basic_endpoint&& other) noexcept
+    : impl_(other.impl_)
   {
   }
 
   /// Assign from another endpoint.
-  basic_endpoint& operator=(const basic_endpoint& other)
+  basic_endpoint& operator=(const basic_endpoint& other) noexcept
   {
-    data_ = other.data_;
-    path_length_ = other.path_length_;
+    impl_ = other.impl_;
+    return *this;
+  }
+
+  /// Move-assign from another endpoint.
+  basic_endpoint& operator=(basic_endpoint&& other) noexcept
+  {
+    impl_ = other.impl_;
     return *this;
   }
 
   /// The protocol associated with the endpoint.
-  protocol_type protocol() const
+  protocol_type protocol() const noexcept
   {
     return protocol_type();
   }
 
   /// Get the underlying endpoint in the native type.
-  data_type* data()
+  data_type* data() noexcept
   {
-    return &data_.base;
+    return impl_.data();
   }
 
   /// Get the underlying endpoint in the native type.
-  const data_type* data() const
+  const data_type* data() const noexcept
   {
-    return &data_.base;
+    return impl_.data();
   }
 
   /// Get the underlying size of the endpoint in the native type.
-  std::size_t size() const
+  std::size_t size() const noexcept
   {
-    return path_length_
-      + offsetof(boost::asio::detail::sockaddr_un_type, sun_path);
+    return impl_.size();
   }
 
   /// Set the underlying size of the endpoint in the native type.
-  void resize(std::size_t size)
+  void resize(std::size_t new_size)
   {
-    if (size > sizeof(boost::asio::detail::sockaddr_un_type))
-    {
-      boost::system::system_error e(boost::asio::error::invalid_argument);
-      boost::throw_exception(e);
-    }
-    else if (size == 0)
-    {
-      path_length_ = 0;
-    }
-    else
-    {
-      path_length_ = size
-        - offsetof(boost::asio::detail::sockaddr_un_type, sun_path);
-
-      // The path returned by the operating system may be NUL-terminated.
-      if (path_length_ > 0 && data_.local.sun_path[path_length_ - 1] == 0)
-        --path_length_;
-    }
+    impl_.resize(new_size);
   }
 
   /// Get the capacity of the endpoint in the native type.
-  std::size_t capacity() const
+  std::size_t capacity() const noexcept
   {
-    return sizeof(boost::asio::detail::sockaddr_un_type);
+    return impl_.capacity();
   }
 
   /// Get the path associated with the endpoint.
   std::string path() const
   {
-    return std::string(data_.local.sun_path, path_length_);
+    return impl_.path();
   }
 
   /// Set the path associated with the endpoint.
   void path(const char* p)
   {
-    using namespace std; // For strlen.
-    init(p, strlen(p));
+    impl_.path(p);
   }
 
   /// Set the path associated with the endpoint.
   void path(const std::string& p)
   {
-    init(p.data(), p.length());
+    impl_.path(p);
   }
 
   /// Compare two endpoints for equality.
   friend bool operator==(const basic_endpoint<Protocol>& e1,
-      const basic_endpoint<Protocol>& e2)
+      const basic_endpoint<Protocol>& e2) noexcept
   {
-    return e1.path() == e2.path();
+    return e1.impl_ == e2.impl_;
   }
 
   /// Compare two endpoints for inequality.
   friend bool operator!=(const basic_endpoint<Protocol>& e1,
-      const basic_endpoint<Protocol>& e2)
+      const basic_endpoint<Protocol>& e2) noexcept
   {
-    return e1.path() != e2.path();
+    return !(e1.impl_ == e2.impl_);
   }
 
   /// Compare endpoints for ordering.
   friend bool operator<(const basic_endpoint<Protocol>& e1,
-      const basic_endpoint<Protocol>& e2)
+      const basic_endpoint<Protocol>& e2) noexcept
   {
-    return e1.path() < e2.path();
+    return e1.impl_ < e2.impl_;
+  }
+
+  /// Compare endpoints for ordering.
+  friend bool operator>(const basic_endpoint<Protocol>& e1,
+      const basic_endpoint<Protocol>& e2) noexcept
+  {
+    return e2.impl_ < e1.impl_;
+  }
+
+  /// Compare endpoints for ordering.
+  friend bool operator<=(const basic_endpoint<Protocol>& e1,
+      const basic_endpoint<Protocol>& e2) noexcept
+  {
+    return !(e2 < e1);
+  }
+
+  /// Compare endpoints for ordering.
+  friend bool operator>=(const basic_endpoint<Protocol>& e1,
+      const basic_endpoint<Protocol>& e2) noexcept
+  {
+    return !(e1 < e2);
   }
 
 private:
-  // The underlying UNIX socket address.
-  union data_union
-  {
-    boost::asio::detail::socket_addr_type base;
-    boost::asio::detail::sockaddr_un_type local;
-  } data_;
-
-  // The length of the path associated with the endpoint.
-  std::size_t path_length_;
-
-  // Initialise with a specified path.
-  void init(const char* path, std::size_t path_length)
-  {
-    if (path_length > sizeof(data_.local.sun_path) - 1)
-    {
-      // The buffer is not large enough to store this address.
-      boost::system::error_code ec(boost::asio::error::name_too_long);
-      boost::asio::detail::throw_error(ec);
-    }
-
-    using namespace std; // For memcpy.
-    data_.local = boost::asio::detail::sockaddr_un_type();
-    data_.local.sun_family = AF_UNIX;
-    memcpy(data_.local.sun_path, path, path_length);
-    path_length_ = path_length;
-
-    // NUL-terminate normal path names. Names that start with a NUL are in the
-    // UNIX domain protocol's "abstract namespace" and are not NUL-terminated.
-    if (path_length > 0 && data_.local.sun_path[0] == 0)
-      data_.local.sun_path[path_length] = 0;
-  }
+  // The underlying UNIX domain endpoint.
+  boost::asio::local::detail::endpoint impl_;
 };
 
 /// Output an endpoint as a string.
@@ -259,9 +237,9 @@ std::basic_ostream<Elem, Traits>& operator<<(
 } // namespace asio
 } // namespace boost
 
+#include <boost/asio/detail/pop_options.hpp>
+
 #endif // defined(BOOST_ASIO_HAS_LOCAL_SOCKETS)
        //   || defined(GENERATING_DOCUMENTATION)
-
-#include <boost/asio/detail/pop_options.hpp>
 
 #endif // BOOST_ASIO_LOCAL_BASIC_ENDPOINT_HPP

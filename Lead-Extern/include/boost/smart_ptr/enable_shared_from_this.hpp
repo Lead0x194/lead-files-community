@@ -10,13 +10,12 @@
 //  See accompanying file LICENSE_1_0.txt or copy at
 //  http://www.boost.org/LICENSE_1_0.txt
 //
-//  http://www.boost.org/libs/smart_ptr/enable_shared_from_this.html
+//  See http://www.boost.org/libs/smart_ptr/ for documentation.
 //
 
 #include <boost/smart_ptr/weak_ptr.hpp>
 #include <boost/smart_ptr/shared_ptr.hpp>
 #include <boost/assert.hpp>
-#include <boost/config.hpp>
 
 namespace boost
 {
@@ -25,20 +24,20 @@ template<class T> class enable_shared_from_this
 {
 protected:
 
-    enable_shared_from_this()
+    constexpr enable_shared_from_this() noexcept
     {
     }
 
-    enable_shared_from_this(enable_shared_from_this const &)
+    constexpr enable_shared_from_this(enable_shared_from_this const &) noexcept
     {
     }
 
-    enable_shared_from_this & operator=(enable_shared_from_this const &)
+    enable_shared_from_this & operator=(enable_shared_from_this const &) noexcept
     {
         return *this;
     }
 
-    ~enable_shared_from_this()
+    ~enable_shared_from_this() noexcept // ~weak_ptr<T> newer throws, so this call also must not throw
     {
     }
 
@@ -58,10 +57,20 @@ public:
         return p;
     }
 
+    weak_ptr<T> weak_from_this() noexcept
+    {
+        return weak_this_;
+    }
+
+    weak_ptr<T const> weak_from_this() const noexcept
+    {
+        return weak_this_;
+    }
+
 public: // actually private, but avoids compiler template friendship issues
 
     // Note: invoked automatically by shared_ptr; do not call
-    template<class X, class Y> void _internal_accept_owner( shared_ptr<X> const * ppx, Y * py ) const
+    template<class X, class Y> void _internal_accept_owner( shared_ptr<X> const * ppx, Y * py ) const noexcept
     {
         if( weak_this_.expired() )
         {

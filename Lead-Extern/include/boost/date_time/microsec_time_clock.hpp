@@ -6,7 +6,7 @@
  * Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland, Bart Garst
- * $Date: 2009-06-04 07:36:43 -0400 (Thu, 04 Jun 2009) $
+ * $Date$
  */
 
 
@@ -20,7 +20,9 @@
 #include <boost/date_time/compiler_config.hpp>
 #include <boost/date_time/c_time.hpp>
 #include <boost/date_time/time_clock.hpp>
-#include <boost/date_time/filetime_functions.hpp>
+#if defined(BOOST_HAS_FTIME)
+#include <boost/winapi/time.hpp>
+#endif
 
 #ifdef BOOST_DATE_TIME_HAS_HIGH_PRECISION_CLOCK
 
@@ -85,12 +87,21 @@ namespace date_time {
       std::time_t t = tv.tv_sec;
       boost::uint32_t sub_sec = tv.tv_usec;
 #elif defined(BOOST_HAS_FTIME)
-      winapi::file_time ft;
-      winapi::get_system_time_as_file_time(ft);
-      uint64_t micros = winapi::file_time_to_microseconds(ft); // it will not wrap, since ft is the current time
-                                                               // and cannot be before 1970-Jan-01
+      boost::winapi::FILETIME_ ft;
+      boost::winapi::GetSystemTimeAsFileTime(&ft);
+#if BOOST_WORKAROUND(__MWERKS__, BOOST_TESTED_AT(0x3205))
+      // Some runtime library implementations expect local times as the norm for ctime functions.
+      {
+        boost::winapi::FILETIME_ local_ft;
+        boost::winapi::FileTimeToLocalFileTime(&ft, &local_ft);
+        ft = local_ft;
+      }
+#endif
+
+      boost::uint64_t micros = file_time_to_microseconds(ft); // it will not wrap, since ft is the current time
+                                                              // and cannot be before 1970-Jan-01
       std::time_t t = static_cast<std::time_t>(micros / 1000000UL); // seconds since epoch
-      // microseconds -- static casts supress warnings
+      // microseconds -- static casts suppress warnings
       boost::uint32_t sub_sec = static_cast<boost::uint32_t>(micros % 1000000UL);
 #else
 #error Internal Boost.DateTime error: BOOST_DATE_TIME_HAS_HIGH_PRECISION_CLOCK is defined, however neither gettimeofday nor FILETIME support is detected.
@@ -98,9 +109,9 @@ namespace date_time {
 
       std::tm curr;
       std::tm* curr_ptr = converter(&t, &curr);
-      date_type d(curr_ptr->tm_year + 1900,
-                  curr_ptr->tm_mon + 1,
-                  curr_ptr->tm_mday);
+      date_type d(static_cast< typename date_type::year_type::value_type >(curr_ptr->tm_year + 1900),
+                  static_cast< typename date_type::month_type::value_type >(curr_ptr->tm_mon + 1),
+                  static_cast< typename date_type::day_type::value_type >(curr_ptr->tm_mday));
 
       //The following line will adjust the fractional second tick in terms
       //of the current time system.  For example, if the time system
@@ -108,13 +119,33 @@ namespace date_time {
       //and all the fractional seconds return 0.
       int adjust = static_cast< int >(resolution_traits_type::res_adjust() / 1000000);
 
-      time_duration_type td(curr_ptr->tm_hour,
-                            curr_ptr->tm_min,
-                            curr_ptr->tm_sec,
+      time_duration_type td(static_cast< typename time_duration_type::hour_type >(curr_ptr->tm_hour),
+                            static_cast< typename time_duration_type::min_type >(curr_ptr->tm_min),
+                            static_cast< typename time_duration_type::sec_type >(curr_ptr->tm_sec),
                             sub_sec * adjust);
 
       return time_type(d,td);
     }
+
+#if defined(BOOST_HAS_FTIME)
+    /*!
+     * The function converts file_time into number of microseconds elapsed since 1970-Jan-01
+     *
+     * \note Only dates after 1970-Jan-01 are supported. Dates before will be wrapped.
+     */
+    static boost::uint64_t file_time_to_microseconds(boost::winapi::FILETIME_ const& ft)
+    {
+      // shift is difference between 1970-Jan-01 & 1601-Jan-01
+      // in 100-nanosecond units
+      const boost::uint64_t shift = 116444736000000000ULL; // (27111902 << 32) + 3577643008
+
+      // 100-nanos since 1601-Jan-01
+      boost::uint64_t ft_as_integer = (static_cast< boost::uint64_t >(ft.dwHighDateTime) << 32) | static_cast< boost::uint64_t >(ft.dwLowDateTime);
+
+      ft_as_integer -= shift; // filetime is now 100-nanos since 1970-Jan-01
+      return (ft_as_integer / 10U); // truncate to microseconds
+    }
+#endif
   };
 
 

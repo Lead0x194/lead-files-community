@@ -5,7 +5,7 @@
  * Subject to the Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland, Bart Garst
- * $Date: 2010-01-10 14:17:23 -0500 (Sun, 10 Jan 2010) $
+ * $Date$
  */
 
 #include <string>
@@ -13,6 +13,7 @@
 #include <stdexcept>
 #include <boost/tokenizer.hpp>
 #include <boost/throw_exception.hpp>
+#include <boost/date_time/compiler_config.hpp>
 #include <boost/date_time/gregorian/gregorian.hpp>
 #include <boost/date_time/time_zone_names.hpp>
 #include <boost/date_time/time_zone_base.hpp>
@@ -25,13 +26,13 @@ namespace boost{
 namespace local_time{
 
   //! simple exception for UTC and Daylight savings start/end offsets
-  struct bad_offset : public std::out_of_range
+  struct BOOST_SYMBOL_VISIBLE bad_offset : public std::out_of_range
   {
     bad_offset(std::string const& msg = std::string()) :
       std::out_of_range(std::string("Offset out of range: " + msg)) {}
   };
   //! simple exception for UTC daylight savings adjustment
-  struct bad_adjustment : public std::out_of_range
+  struct BOOST_SYMBOL_VISIBLE bad_adjustment : public std::out_of_range
   {
     bad_adjustment(std::string const& msg = std::string()) :
       std::out_of_range(std::string("Adjustment out of range: " + msg)) {}
@@ -67,7 +68,7 @@ namespace local_time{
    * http://www.worldtimezone.com/utc/utc+1200.html
    */
   template<class CharT>
-  class posix_time_zone_base : public date_time::time_zone_base<posix_time::ptime,CharT> {
+  class BOOST_SYMBOL_VISIBLE posix_time_zone_base : public date_time::time_zone_base<posix_time::ptime,CharT> {
   public:
     typedef boost::posix_time::time_duration time_duration_type;
     typedef date_time::time_zone_names_base<CharT> time_zone_names;
@@ -79,9 +80,7 @@ namespace local_time{
     typedef boost::tokenizer<char_separator_type,
                              typename string_type::const_iterator,
                              string_type> tokenizer_type;
-    typedef typename boost::tokenizer<char_separator_type,
-                             typename string_type::const_iterator,
-                             string_type>::iterator tokenizer_iterator_type;
+    typedef typename tokenizer_type::iterator tokenizer_iterator_type;
 
     //! Construct from a POSIX time zone string
     posix_time_zone_base(const string_type& s) :
@@ -101,14 +100,23 @@ namespace local_time{
 #endif
       char_separator_type sep(sep_chars);
       tokenizer_type tokens(s, sep);
-      tokenizer_iterator_type it = tokens.begin();
+      tokenizer_iterator_type it = tokens.begin(), end = tokens.end();
+      if (it == end)
+        BOOST_THROW_EXCEPTION(std::invalid_argument("Could not parse time zone name"));
       calc_zone(*it++);
-      if(has_dst_){
-        string_type tmp_str = *it++;
-        calc_rules(tmp_str, *it);
+      if(has_dst_)
+      {
+        if (it == end)
+          BOOST_THROW_EXCEPTION(std::invalid_argument("Could not parse DST begin time"));
+        string_type dst_begin = *it++;
+
+        if (it == end)
+          BOOST_THROW_EXCEPTION(std::invalid_argument("Could not parse DST end time"));
+        string_type dst_end = *it;
+        calc_rules(dst_begin, dst_end);
       }
     }
-    virtual ~posix_time_zone_base() {};
+    virtual ~posix_time_zone_base() {}
     //!String for the zone when not in daylight savings (eg: EST)
     virtual string_type std_zone_abbrev()const
     {
@@ -423,9 +431,9 @@ namespace local_time{
       dst_calc_rules_ = shared_ptr<dst_calc_rule>(
         new partial_date_dst_rule(
           partial_date_dst_rule::start_rule(
-            sd, static_cast<date_time::months_of_year>(sm)),
+            static_cast<unsigned short>(sd), static_cast<date_time::months_of_year>(sm)),
           partial_date_dst_rule::end_rule(
-            ed, static_cast<date_time::months_of_year>(em))
+            static_cast<unsigned short>(ed), static_cast<date_time::months_of_year>(em))
           )
       );
     }

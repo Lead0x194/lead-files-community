@@ -2,7 +2,7 @@
 // basic_streambuf.hpp
 // ~~~~~~~~~~~~~~~~~~~
 //
-// Copyright (c) 2003-2010 Christopher M. Kohlhoff (chris at kohlhoff dot com)
+// Copyright (c) 2003-2025 Christopher M. Kohlhoff (chris at kohlhoff dot com)
 //
 // Distributed under the Boost Software License, Version 1.0. (See accompanying
 // file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)
@@ -15,27 +15,22 @@
 # pragma once
 #endif // defined(_MSC_VER) && (_MSC_VER >= 1200)
 
-#include <boost/asio/detail/push_options.hpp>
+#include <boost/asio/detail/config.hpp>
 
-#include <boost/asio/detail/push_options.hpp>
-#include <boost/config.hpp>
-#include <boost/asio/detail/pop_options.hpp>
+#if !defined(BOOST_ASIO_NO_IOSTREAM)
 
-#if !defined(BOOST_NO_IOSTREAM)
-
-#include <boost/asio/detail/push_options.hpp>
 #include <algorithm>
 #include <cstring>
-#include <memory>
 #include <stdexcept>
 #include <streambuf>
 #include <vector>
-#include <boost/limits.hpp>
-#include <boost/throw_exception.hpp>
-#include <boost/asio/detail/pop_options.hpp>
-
+#include <boost/asio/basic_streambuf_fwd.hpp>
 #include <boost/asio/buffer.hpp>
+#include <boost/asio/detail/limits.hpp>
 #include <boost/asio/detail/noncopyable.hpp>
+#include <boost/asio/detail/throw_exception.hpp>
+
+#include <boost/asio/detail/push_options.hpp>
 
 namespace boost {
 namespace asio {
@@ -108,7 +103,11 @@ namespace asio {
  * is >> s;
  * @endcode
  */
-template <typename Allocator = std::allocator<char> >
+#if defined(GENERATING_DOCUMENTATION)
+template <typename Allocator = std::allocator<char>>
+#else
+template <typename Allocator>
+#endif
 class basic_streambuf
   : public std::streambuf,
     private noncopyable
@@ -121,8 +120,8 @@ public:
   /// The type used to represent the output sequence as a list of buffers.
   typedef implementation_defined mutable_buffers_type;
 #else
-  typedef boost::asio::const_buffers_1 const_buffers_type;
-  typedef boost::asio::mutable_buffers_1 mutable_buffers_type;
+  typedef const_buffer const_buffers_type;
+  typedef mutable_buffer mutable_buffers_type;
 #endif
 
   /// Construct a basic_streambuf object.
@@ -131,9 +130,9 @@ public:
    * of the streambuf's input sequence is 0.
    */
   explicit basic_streambuf(
-      std::size_t max_size = (std::numeric_limits<std::size_t>::max)(),
+      std::size_t maximum_size = (std::numeric_limits<std::size_t>::max)(),
       const Allocator& allocator = Allocator())
-    : max_size_(max_size),
+    : max_size_(maximum_size),
       buffer_(allocator)
   {
     std::size_t pend = (std::min<std::size_t>)(max_size_, buffer_delta);
@@ -153,11 +152,11 @@ public:
    * while (i != bufs.end())
    * {
    *   const_buffer buf(*i++);
-   *   s += buffer_size(buf);
+   *   s += buf.size();
    * }
    * @endcode
    */
-  std::size_t size() const
+  std::size_t size() const noexcept
   {
     return pptr() - gptr();
   }
@@ -167,9 +166,19 @@ public:
    * @returns The allowed maximum of the sum of the sizes of the input sequence
    * and output sequence.
    */
-  std::size_t max_size() const
+  std::size_t max_size() const noexcept
   {
     return max_size_;
+  }
+
+  /// Get the current capacity of the basic_streambuf.
+  /**
+   * @returns The current total capacity of the streambuf, i.e. for both the
+   * input sequence and output sequence.
+   */
+  std::size_t capacity() const noexcept
+  {
+    return buffer_.capacity();
   }
 
   /// Get a list of buffers that represents the input sequence.
@@ -181,7 +190,7 @@ public:
    * @note The returned object is invalidated by any @c basic_streambuf member
    * function that modifies the input sequence or output sequence.
    */
-  const_buffers_type data() const
+  const_buffers_type data() const noexcept
   {
     return boost::asio::buffer(boost::asio::const_buffer(gptr(),
           (pptr() - gptr()) * sizeof(char_type)));
@@ -219,13 +228,12 @@ public:
    * Requires a preceding call <tt>prepare(x)</tt> where <tt>x >= n</tt>, and
    * no intervening operations that modify the input or output sequence.
    *
-   * @throws std::length_error If @c n is greater than the size of the output
-   * sequence.
+   * @note If @c n is greater than the size of the output sequence, the entire
+   * output sequence is moved to the input sequence and no error is issued.
    */
   void commit(std::size_t n)
   {
-    if (pptr() + n > epptr())
-      n = epptr() - pptr();
+    n = std::min<std::size_t>(n, epptr() - pptr());
     pbump(static_cast<int>(n));
     setg(eback(), gptr(), pptr());
   }
@@ -234,10 +242,13 @@ public:
   /**
    * Removes @c n characters from the beginning of the input sequence.
    *
-   * @throws std::length_error If <tt>n > size()</tt>.
+   * @note If @c n is greater than the size of the input sequence, the entire
+   * input sequence is consumed and no error is issued.
    */
   void consume(std::size_t n)
   {
+    if (egptr() < pptr())
+      setg(&buffer_[0], gptr(), pptr());
     if (gptr() + n > pptr())
       n = pptr() - gptr();
     gbump(static_cast<int>(n));
@@ -326,7 +337,7 @@ protected:
       else
       {
         std::length_error ex("boost::asio::streambuf too long");
-        boost::throw_exception(ex);
+        boost::asio::detail::throw_exception(ex);
       }
     }
 
@@ -338,6 +349,97 @@ protected:
 private:
   std::size_t max_size_;
   std::vector<char_type, Allocator> buffer_;
+
+  // Helper function to get the preferred size for reading data.
+  friend std::size_t read_size_helper(
+      basic_streambuf& sb, std::size_t max_size)
+  {
+    return std::min<std::size_t>(
+        std::max<std::size_t>(512, sb.buffer_.capacity() - sb.size()),
+        std::min<std::size_t>(max_size, sb.max_size() - sb.size()));
+  }
+};
+
+/// Adapts basic_streambuf to the dynamic buffer sequence type requirements.
+#if defined(GENERATING_DOCUMENTATION)
+template <typename Allocator = std::allocator<char>>
+#else
+template <typename Allocator>
+#endif
+class basic_streambuf_ref
+{
+public:
+  /// The type used to represent the input sequence as a list of buffers.
+  typedef typename basic_streambuf<Allocator>::const_buffers_type
+    const_buffers_type;
+
+  /// The type used to represent the output sequence as a list of buffers.
+  typedef typename basic_streambuf<Allocator>::mutable_buffers_type
+    mutable_buffers_type;
+
+  /// Construct a basic_streambuf_ref for the given basic_streambuf object.
+  explicit basic_streambuf_ref(basic_streambuf<Allocator>& sb)
+    : sb_(sb)
+  {
+  }
+
+  /// Copy construct a basic_streambuf_ref.
+  basic_streambuf_ref(const basic_streambuf_ref& other) noexcept
+    : sb_(other.sb_)
+  {
+  }
+
+  /// Move construct a basic_streambuf_ref.
+  basic_streambuf_ref(basic_streambuf_ref&& other) noexcept
+    : sb_(other.sb_)
+  {
+  }
+
+  /// Get the size of the input sequence.
+  std::size_t size() const noexcept
+  {
+    return sb_.size();
+  }
+
+  /// Get the maximum size of the dynamic buffer.
+  std::size_t max_size() const noexcept
+  {
+    return sb_.max_size();
+  }
+
+  /// Get the current capacity of the dynamic buffer.
+  std::size_t capacity() const noexcept
+  {
+    return sb_.capacity();
+  }
+
+  /// Get a list of buffers that represents the input sequence.
+  const_buffers_type data() const noexcept
+  {
+    return sb_.data();
+  }
+
+  /// Get a list of buffers that represents the output sequence, with the given
+  /// size.
+  mutable_buffers_type prepare(std::size_t n)
+  {
+    return sb_.prepare(n);
+  }
+
+  /// Move bytes from the output sequence to the input sequence.
+  void commit(std::size_t n)
+  {
+    return sb_.commit(n);
+  }
+
+  /// Remove characters from the input sequence.
+  void consume(std::size_t n)
+  {
+    return sb_.consume(n);
+  }
+
+private:
+  basic_streambuf<Allocator>& sb_;
 };
 
 } // namespace asio
@@ -345,6 +447,6 @@ private:
 
 #include <boost/asio/detail/pop_options.hpp>
 
-#endif // !defined(BOOST_NO_IOSTREAM)
+#endif // !defined(BOOST_ASIO_NO_IOSTREAM)
 
 #endif // BOOST_ASIO_BASIC_STREAMBUF_HPP

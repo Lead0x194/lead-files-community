@@ -6,7 +6,7 @@
  * Boost Software License, Version 1.0. (See accompanying
  * file LICENSE_1_0.txt or http://www.boost.org/LICENSE_1_0.txt)
  * Author: Jeff Garland, Bart Garst
- * $Date: 2010-01-10 14:17:23 -0500 (Sun, 10 Jan 2010) $
+ * $Date$
  */
 
 #include <boost/date_time/gregorian/gregorian.hpp>
@@ -157,7 +157,7 @@ namespace posix_time {
     }// else
     return ss.str();
   }
-  //! Time duration in iso format -hhmmss,fffffff Example: 10:09:03,0123456
+  //! Time duration in ISO 8601 format -hhmmss.fffffff. Example: 10:09:03.0123456
   /*!\ingroup time_format
    */
   inline std::string to_iso_string(time_duration td){
@@ -215,7 +215,7 @@ namespace posix_time {
       return ts;
     }
   }
-  //! Convert iso short form YYYYMMDDTHHMMSS where T is the date-time separator
+  //! Convert ISO 8601 short form YYYYMMDDTHHMMSS where T is the date-time separator
   /*!\ingroup time_format
    */
   inline std::string to_iso_string(ptime t){
@@ -251,7 +251,7 @@ namespace posix_time {
   inline std::wstring to_simple_wstring(time_duration td) {
     return to_simple_string_type<wchar_t>(td);
   }
-  //! Time duration in iso format -hhmmss,fffffff Example: 10:09:03,0123456
+  //! Time duration in ISO 8601 format -hhmmss.fffffff. Example: 10:09:03.0123456
   /*!\ingroup time_format
    */
   inline std::wstring to_iso_wstring(time_duration td){
@@ -266,7 +266,7 @@ namespace posix_time {
   inline std::wstring to_simple_wstring(time_period tp){
     return to_simple_string_type<wchar_t>(tp);
   }
-  //! Convert iso short form YYYYMMDDTHHMMSS where T is the date-time separator
+  //! Convert ISO 8601 short form YYYYMMDDTHHMMSS where T is the date-time separator
   /*!\ingroup time_format
    */
   inline std::wstring to_iso_wstring(ptime t){
