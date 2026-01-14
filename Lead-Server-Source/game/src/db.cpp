@@ -689,7 +689,7 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 					MYSQL_ROW row = mysql_fetch_row(pMsg->Get()->pSQLResult);
 					int col = 0;
 
-					// PASSWORD('%s'), password, securitycode, social_id, id, status
+					// PASSWORD('%s'), password, social_id, id, status
 					char szEncrytPassword[45 + 1];
 					char szPassword[45 + 1];
 					char szSocialID[SOCIAL_ID_MAX_LEN + 1];
@@ -902,7 +902,7 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 					MYSQL_ROW row = mysql_fetch_row(pMsg->Get()->pSQLResult);
 					int col = 0;
 
-					// PASSWORD('%s'), password, securitycode, social_id, id, status
+					// PASSWORD('%s'), password, social_id, id, status
 					char szEncrytPassword[45 + 1];
 					char szPassword[45 + 1];
 					char szSocialID[SOCIAL_ID_MAX_LEN + 1];
@@ -1363,7 +1363,7 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 					sys_log(0, "[AUTH_BRAZIL] : Succeed to create a new account %s", pinfo->login) ;
 
 					ReturnQuery(QID_AUTH_LOGIN, qi->dwIdent, pinfo,
-							"SELECT PASSWORD('%s'),password,securitycode,social_id,id,status,availDt - NOW() > 0,"
+							"SELECT PASSWORD('%s'),password,social_id,id,status,availDt - NOW() > 0,"
 							"UNIX_TIMESTAMP(silver_expire),"
 							"UNIX_TIMESTAMP(gold_expire),"
 							"UNIX_TIMESTAMP(safebox_expire),"
@@ -1394,7 +1394,7 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 					sys_log(0, "[AUTH_JAPAN] : Succeed to create a new account %s", pinfo->login) ;
 
 					ReturnQuery(QID_AUTH_LOGIN_OPENID, qi->dwIdent, pinfo,
-							"SELECT PASSWORD('%s'),password,securitycode,social_id,id,status,availDt - NOW() > 0,"
+							"SELECT PASSWORD('%s'),password,social_id,id,status,availDt - NOW() > 0,"
 							"UNIX_TIMESTAMP(silver_expire),"
 							"UNIX_TIMESTAMP(gold_expire),"
 							"UNIX_TIMESTAMP(safebox_expire),"
