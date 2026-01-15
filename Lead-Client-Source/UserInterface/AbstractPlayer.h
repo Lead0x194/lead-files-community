@@ -31,9 +31,6 @@ class IAbstractPlayer : public TAbstractSingleton<IAbstractPlayer>
 		virtual void	SetItemCount(TItemPos itemPos, BYTE byCount) = 0;
 		virtual void	SetItemMetinSocket(TItemPos itemPos, DWORD dwMetinSocketIndex, DWORD dwMetinNumber) = 0;
 		virtual void	SetItemAttribute(TItemPos itemPos, DWORD dwAttrIndex, BYTE byType, short sValue) = 0;
-#if defined(GAIDEN)
-		virtual void	SetItemUnbindTime(DWORD dwItemSlotIndex, DWORD dwUnbindSecondsLeft) = 0;
-#endif
 
 		virtual DWORD	GetItemIndex(TItemPos itemPos) = 0;
 		virtual DWORD	GetItemFlags(TItemPos itemPos) = 0;

@@ -1408,16 +1408,6 @@ PyObject * playerGetItemGrade(PyObject* poSelf, PyObject* poArgs)
 	return Py_BuildValue("i", GetItemGrade(pItemData->GetName()));
 }
 
-#if defined(GAIDEN)
-PyObject * playerGetItemUnbindTime(PyObject* poSelf, PyObject* poArgs)
-{
-	int iSlotIndex;
-	if (!PyTuple_GetInteger(poArgs, 0, &iSlotIndex))
-		return Py_BuildException();
-
-	return Py_BuildValue("i", (int) CPythonPlayer::instance().GetItemUnbindTime(iSlotIndex));
-}
-#endif
 
 enum
 {
@@ -2230,9 +2220,6 @@ void initPlayer()
 		{ "GetItemCountByVnum",					playerGetItemCountByVnum,					METH_VARARGS },
 		{ "GetItemMetinSocket",					playerGetItemMetinSocket,					METH_VARARGS },
 		{ "GetItemAttribute",					playerGetItemAttribute,						METH_VARARGS },
-#if defined(GAIDEN)
-		{ "GetItemUnbindTime",					playerGetItemUnbindTime,					METH_VARARGS },
-#endif
 		{ "GetISellItemPrice",					playerGetISellItemPrice,					METH_VARARGS },
 		{ "MoveItem",							playerMoveItem,								METH_VARARGS },
 		{ "SendClickItemPacket",				playerSendClickItemPacket,					METH_VARARGS },

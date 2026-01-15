@@ -169,13 +169,8 @@ enum
 	HEADER_GC_PLAYER_POINT_CHANGE				= 17,
 	HEADER_GC_CHANGE_SPEED						= 18,
 	HEADER_GC_CHARACTER_UPDATE                  = 19,
-#if defined(GAIDEN)
-	HEADER_GC_ITEM_DEL							= 20, // 아이템 창에 추가
-	HEADER_GC_ITEM_SET							= 21, // 아이템 창에 추가
-#else
 	HEADER_GC_ITEM_SET							= 20, // 아이템 창에 추가
 	HEADER_GC_ITEM_SET2							= 21, // 아이템 창에 추가
-#endif
 	HEADER_GC_ITEM_USE							= 22, // 아이템 사용 (주위 사람들에게 보여주기 위해)
 	HEADER_GC_ITEM_DROP							= 23, // 아이템 버리기
 	HEADER_GC_ITEM_UPDATE						= 25, // 아이템 수치 업데이트
@@ -261,15 +256,9 @@ enum
 	HEADER_GC_WALK_MODE							= 111, 
 	HEADER_GC_CHANGE_SKILL_GROUP				= 112,
 
-#if defined(GAIDEN)
-	HEADER_GC_MAIN_CHARACTER					= 113,
-	HEADER_GC_MAIN_CHARACTER3_BGM				= 137,
-	HEADER_GC_MAIN_CHARACTER4_BGM_VOL			= 138,
-#else
 	// SUPPORT_BGM
 	HEADER_GC_MAIN_CHARACTER2_EMPIRE			= 113,
 	// END_OF_SUPPORT_BGM
-#endif
 
     HEADER_GC_SEPCIAL_EFFECT                    = 114,
 	HEADER_GC_NPC_POSITION						= 115,
@@ -318,16 +307,6 @@ enum
 	HEADER_GC_RUNUP_MATRIX_QUIZ                 = 201,
 	HEADER_GC_NEWCIBN_PASSPOD_REQUEST			= 202,
 	HEADER_GC_NEWCIBN_PASSPOD_FAILURE			= 203,
-#if defined(GAIDEN)
-	HEADER_GC_ONTIME							= 204,
-	HEADER_GC_RESET_ONTIME						= 205,
-
-	// AUTOBAN
-	HEADER_GC_AUTOBAN_QUIZ						= 206,
-	// END_OF_AUTOBAN
-
-#else
-#endif
 
 #ifdef __AUCTION__
 	HEADER_GC_AUCTOIN_ITEM_LIST					= 206,
@@ -1679,44 +1658,6 @@ typedef struct packet_motion
 	WORD		motion;
 } TPacketGCMotion;
 
-#if defined(GAIDEN)
-struct TPacketGCItemDelDeprecate
-{
-    TPacketGCItemDelDeprecate() :
-        header(HEADER_GC_ITEM_DEL),
-        pos(0),
-        vnum(0),
-        count(0)
-    {
-        memset(&alSockets, 0, sizeof(alSockets));
-        memset(&aAttr, 0, sizeof(aAttr));
-    }
-
-    BYTE    header;
-    BYTE    pos;
-    DWORD   vnum;
-    BYTE    count;
-    long    alSockets[ITEM_SOCKET_SLOT_MAX_NUM];
-    TPlayerItemAttribute aAttr[ITEM_ATTRIBUTE_SLOT_MAX_NUM];
-};
-
-typedef struct packet_set_item
-{
-	BYTE		header;
-	BYTE		pos;
-	DWORD		vnum;
-	BYTE		count;
-	DWORD		flags;	// 플래그 추가
-	long		alSockets[ITEM_SOCKET_SLOT_MAX_NUM];
-    TPlayerItemAttribute aAttr[ITEM_ATTRIBUTE_SLOT_MAX_NUM];
-} TPacketGCItemSet;
-
-typedef struct packet_item_del
-{
-    BYTE        header;
-    BYTE        pos;
-} TPacketGCItemDel;
-#else
 typedef struct packet_set_item
 {
 	BYTE		header;
@@ -1739,7 +1680,6 @@ typedef struct packet_set_item2
 	long		alSockets[ITEM_SOCKET_SLOT_MAX_NUM];
     TPlayerItemAttribute aAttr[ITEM_ATTRIBUTE_SLOT_MAX_NUM];
 } TPacketGCItemSet2;
-#endif
 
 typedef struct packet_item_del
 {
