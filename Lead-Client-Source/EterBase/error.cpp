@@ -56,7 +56,7 @@ LONG __stdcall EterExceptionFilter(_EXCEPTION_POINTERS* pExceptionInfo)
 		module_time = (time_t)GetTimestampForLoadedLibrary(hModule);
 		
 		fprintf(fException, "Module Name: %s\n", module_name);
-		fprintf(fException, "Time Stamp: 0x%08x - %s\n", module_time, ctime(&module_time));
+		fprintf(fException, "Time Stamp: 0x%08x - %s\n", (unsigned int)module_time, ctime(&module_time));
 		fprintf(fException, "\n");
 		fprintf(fException, "Exception Type: 0x%08x\n", pExceptionInfo->ExceptionRecord->ExceptionCode);
 		fprintf(fException, "\n");

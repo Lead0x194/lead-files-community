@@ -443,7 +443,7 @@ void CTerrain::CalculateNormal(long x, long y)
 	normal.x = -m_fHeightScale * ((float)GetHeightMapValue((x-1),y)-(float)GetHeightMapValue((x+1),y));
 	normal.y = -m_fHeightScale * ((float)GetHeightMapValue(x,(y-1))-(float)GetHeightMapValue(x,(y+1)));
 
-	normal.z = 2.0f * CELLSCALE;
+	normal.z = 2.0f * (float)CELLSCALE;
 	normal *= 127.0f / D3DXVec3Length(&normal);
 
 	int ix, iy, iz;

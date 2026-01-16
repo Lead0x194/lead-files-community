@@ -769,7 +769,7 @@ void CWhisper::Render(float fx, float fy)
 		iStartLine = iLineCount - 1;
 	}
 
-	RECT Rect = { fx, fy, fx+m_fWidth, fy+m_fHeight };
+	RECT Rect = { (LONG)fx, (LONG)fy, (LONG)(fx + m_fWidth), (LONG)(fy + m_fHeight) };
 
 	for (int i = iStartLine; i >= 0; --i)
 	{

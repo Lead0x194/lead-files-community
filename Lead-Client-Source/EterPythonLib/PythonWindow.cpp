@@ -1514,7 +1514,7 @@ namespace UI
 
 		m_ImageVector.push_back(pImageInstance);
 
-		m_bycurIndex = rand() % m_ImageVector.size();
+		m_bycurIndex = (BYTE)(rand() % m_ImageVector.size());
 //		SetSize(pImageInstance->GetWidth(), pImageInstance->GetHeight());
 //		UpdateRect();
 	}

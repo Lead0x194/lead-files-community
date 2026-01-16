@@ -903,8 +903,8 @@ bool CPythonMiniMap::LoadAtlas()
 	short sTerrainCountX, sTerrainCountY;  
 	rkMap.GetBaseXY(&m_dwAtlasBaseX, &m_dwAtlasBaseY);
 	rkMap.GetTerrainCount(&sTerrainCountX, &sTerrainCountY);
-	m_fAtlasMaxX = (float) sTerrainCountX * CTerrainImpl::TERRAIN_XSIZE;
-	m_fAtlasMaxY = (float) sTerrainCountY * CTerrainImpl::TERRAIN_YSIZE;
+	m_fAtlasMaxX = (float)sTerrainCountX * (float)CTerrainImpl::TERRAIN_XSIZE;
+	m_fAtlasMaxY = (float)sTerrainCountY * (float)CTerrainImpl::TERRAIN_YSIZE;
 
 	m_fAtlasImageSizeX = (float) m_AtlasImageInstance.GetWidth();
 	m_fAtlasImageSizeY = (float) m_AtlasImageInstance.GetHeight();

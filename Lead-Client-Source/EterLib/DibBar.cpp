@@ -4,7 +4,7 @@
 
 void CDibBar::Invalidate()
 {
-	RECT rect = {0, 0, m_dwWidth, m_dwHeight};
+	RECT rect = { 0, 0, (LONG)m_dwWidth, (LONG)m_dwHeight };
 
 	std::vector<CBlockTexture *>::iterator itor = m_kVec_pkBlockTexture.begin();
 	for (; itor != m_kVec_pkBlockTexture.end(); ++itor)
@@ -78,7 +78,7 @@ CBlockTexture * CDibBar::__BuildTextureBlock(DWORD dwxPos, DWORD dwyPos, DWORD d
 	if (dwTextureWidth == 0 || dwTextureHeight == 0)
 		return NULL;
 
-	RECT posRect = {dwxPos, dwyPos, dwxPos+dwImageWidth, dwyPos+dwImageHeight};
+	RECT posRect = { (LONG)dwxPos, (LONG)dwyPos, (LONG)(dwxPos + dwImageWidth), (LONG)(dwyPos + dwImageHeight) };
 
 	CBlockTexture * pBlockTexture = new CBlockTexture;
 	if (!pBlockTexture->Create(&m_dib, posRect, dwTextureWidth, dwTextureHeight))

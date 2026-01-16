@@ -580,8 +580,8 @@ bool CMapOutdoor::__SoftwareTransformPatch_SetTransform(SoftwareTransformPatch_S
 	float fAlphaPatternY=m_matSplatAlpha._22;
 	float fAlphaBiasX=m_matSplatAlpha._41;
 	float fAlphaBiasY=m_matSplatAlpha._42;	
-	float fShadowPatternX=+m_fTerrainTexCoordBase * ((float) CTerrainImpl::PATCH_XSIZE / (CTerrainImpl::XSIZE));		
-	float fShadowPatternY=-m_fTerrainTexCoordBase * ((float) CTerrainImpl::PATCH_YSIZE / (CTerrainImpl::YSIZE));	
+	float fShadowPatternX=+m_fTerrainTexCoordBase * ((float) CTerrainImpl::PATCH_XSIZE / (float)(CTerrainImpl::XSIZE));
+	float fShadowPatternY=-m_fTerrainTexCoordBase * ((float) CTerrainImpl::PATCH_YSIZE / (float)(CTerrainImpl::YSIZE));
 
 	D3DXMATRIX m4Frustum=rkTPRS.m_m4Frustum;
 	

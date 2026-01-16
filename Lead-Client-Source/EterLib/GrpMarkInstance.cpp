@@ -74,8 +74,8 @@ void CGraphicMarkInstance::OnRender()
 	float eu = kRect.right * texReverseWidth;
 	float ev = kRect.bottom * texReverseHeight;
 
-	float fRenderWidth=MARK_WIDTH*m_fScale;
-	float fRenderHeight=MARK_HEIGHT*m_fScale;
+	float fRenderWidth = (float)MARK_WIDTH * m_fScale;
+	float fRenderHeight = (float)MARK_HEIGHT * m_fScale;
 
 	TPDTVertex vertices[4];
 	vertices[0].position.x	= m_v2Position.x-0.5f;

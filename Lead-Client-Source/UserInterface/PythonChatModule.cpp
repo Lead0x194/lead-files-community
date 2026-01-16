@@ -428,9 +428,9 @@ PyObject * chatGetLinkFromHyperlink(PyObject * poSelf, PyObject * poArgs)
 			{
 				for (int i = 6; i < results.size(); i += 2)
 				{
-					len += snprintf(itemlink + len, sizeof(itemlink) - len, ":%x:%d", 
-							htoi(results[i].c_str()),
-							atoi(results[i+1].c_str()));
+					len += snprintf(itemlink + len, sizeof(itemlink) - len, ":%x:%d",
+						(unsigned int)htoi(results[i].c_str()),
+						(int)atoi(results[i + 1].c_str()));
 					isAttr = true;
 				}
 			}

@@ -349,7 +349,7 @@ bool CPythonGraphic::SaveScreenShot(const char * c_pszFileName)
 				0x1,
 				0x2,
 				0x0,
-				imgDescLen, // textLen[0],
+				(unsigned char)imgDescLen, // textLen[0],
 				0, // textLen[1],
 				0, // textLen[2],
 				0, // textLen[3],

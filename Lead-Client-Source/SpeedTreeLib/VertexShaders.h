@@ -168,7 +168,7 @@ static DWORD LoadBranchShader(LPDIRECT3DDEVICE8 pDx)
 	else
     {
         char szError[1024];
-	    sprintf(szError, "Failed to assemble branch vertex shader.\nThe error reported is [ %s ].\n", pError->GetBufferPointer( ));
+		sprintf(szError, "Failed to assemble branch vertex shader.\nThe error reported is [ %s ].\n", (const char*)pError->GetBufferPointer());
 	    MessageBox(NULL, szError, "Vertex Shader Error", MB_ICONSTOP);
     }
 
@@ -310,7 +310,7 @@ static DWORD LoadLeafShader(LPDIRECT3DDEVICE8 pDx)
 		}
 		else
 		{
-			Tracef("Failed to assemble leaf vertex shader. The error reported is [ %s ].\n", pError->GetBufferPointer( ));
+			Tracef("Failed to assemble leaf vertex shader. The error reported is [ %s ].\n", (const char*)pError->GetBufferPointer());
 			/*
 			char szError[1024];
 			sprintf(szError, "Failed to assemble leaf vertex shader. The error reported is [ %s ].\n", pError->GetBufferPointer( ));

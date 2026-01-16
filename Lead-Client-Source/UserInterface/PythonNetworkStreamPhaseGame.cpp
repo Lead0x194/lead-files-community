@@ -1709,15 +1709,15 @@ bool CPythonNetworkStream::RecvShopPacket()
 					TPacketGCShopStartEx::TSubPacketShopTab* pPackTab = (TPacketGCShopStartEx::TSubPacketShopTab*)&vecBuffer[read_point];
 					read_point += sizeof(TPacketGCShopStartEx::TSubPacketShopTab);
 					
-					CPythonShop::instance().SetTabCoinType(i, pPackTab->coin_type);
-					CPythonShop::instance().SetTabName(i, pPackTab->name);
+					CPythonShop::instance().SetTabCoinType((BYTE)i, pPackTab->coin_type);
+					CPythonShop::instance().SetTabName((BYTE)i, pPackTab->name);
 
 					struct packet_shop_item* item = &pPackTab->items[0];
-					
+
 					for (BYTE j = 0; j < SHOP_HOST_ITEM_MAX_NUM; j++)
 					{
 						TShopItemData* itemData = (item + j);
-						CPythonShop::Instance().SetItemData(i, j, *itemData);
+						CPythonShop::Instance().SetItemData((BYTE)i, j, *itemData);
 					}
 				}
 
@@ -3888,7 +3888,7 @@ bool CPythonNetworkStream::SendBuildPrivateShopPacket(const char * c_szName, con
 	TPacketCGMyShop packet;
 	packet.bHeader = HEADER_CG_MYSHOP;
 	strncpy(packet.szSign, c_szName, SHOP_SIGN_MAX_LEN);
-	packet.bCount = c_rSellingItemStock.size();
+	packet.bCount = static_cast<BYTE>(c_rSellingItemStock.size());
 	if (!Send(sizeof(packet), &packet))
 		return false;
 

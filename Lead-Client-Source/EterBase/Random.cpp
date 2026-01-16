@@ -16,7 +16,7 @@ void srandom(unsigned long seed)
  */
 unsigned long random()
 {       
-	register long x, hi, lo, t;
+	long x, hi, lo, t;
 	
 	/*
 	* Compute x[n + 1] = (7^5 * x[n]) mod (2^31 - 1).

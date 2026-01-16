@@ -716,10 +716,10 @@ void CScreen::Show(HWND hWnd)
 
 	if (g_isBrowserMode)
 	{
-		RECT rcTop={0, 0, ms_d3dPresentParameter.BackBufferWidth, g_rcBrowser.top};	
-		RECT rcBottom={0, g_rcBrowser.bottom, ms_d3dPresentParameter.BackBufferWidth, ms_d3dPresentParameter.BackBufferHeight};	
-		RECT rcLeft={0, g_rcBrowser.top, g_rcBrowser.left, g_rcBrowser.bottom};	
-		RECT rcRight={g_rcBrowser.right, g_rcBrowser.top, ms_d3dPresentParameter.BackBufferWidth, g_rcBrowser.bottom};		
+		RECT rcTop = { 0, 0, (LONG)ms_d3dPresentParameter.BackBufferWidth, g_rcBrowser.top };
+		RECT rcBottom = { 0, g_rcBrowser.bottom, (LONG)ms_d3dPresentParameter.BackBufferWidth, (LONG)ms_d3dPresentParameter.BackBufferHeight };
+		RECT rcLeft = { 0, g_rcBrowser.top, g_rcBrowser.left, g_rcBrowser.bottom };
+		RECT rcRight = { g_rcBrowser.right, g_rcBrowser.top, (LONG)ms_d3dPresentParameter.BackBufferWidth, g_rcBrowser.bottom };
 		
 		ms_lpd3dDevice->Present(&rcTop, &rcTop, hWnd, NULL);
 		ms_lpd3dDevice->Present(&rcBottom, &rcBottom, hWnd, NULL);

@@ -470,7 +470,7 @@ void CGrannyLODController::UpdateLODLevel(float fDistanceFromCenter, float fDist
 		float fLODFactor = fMINMAX(0.0f, (m_fLODDistance-fDistanceFromCamera), m_fLODDistance);
 		
 		if (m_fLODDistance>0.0f)
-			m_dwLODAniFPS = (DWORD) ((CGrannyModelInstance::ANIFPS_MAX - CGrannyModelInstance::ANIFPS_MIN) * fLODFactor / m_fLODDistance + CGrannyModelInstance::ANIFPS_MIN);
+			m_dwLODAniFPS = (DWORD)((CGrannyModelInstance::ANIFPS_MAX - CGrannyModelInstance::ANIFPS_MIN) * fLODFactor / m_fLODDistance + static_cast<float>(CGrannyModelInstance::ANIFPS_MIN));
 		else
 			m_dwLODAniFPS = CGrannyModelInstance::ANIFPS_MIN;
 		

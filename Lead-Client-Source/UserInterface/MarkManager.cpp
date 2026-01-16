@@ -1,14 +1,10 @@
 #include "stdafx.h"
 #include "MarkManager.h"
 
-#if _MSC_VER < 1200
-#include "crc32.h"
-#else
 #define sys_err TraceError
-#define sys_log // (n, format, ...) Tracenf(format, __VA_ARGS__)
+#define sys_log(n, format, ...) Tracenf(format, __VA_ARGS__)
 #define thecore_memcpy memcpy
 #define itertype(cont) typeof((cont).begin())
-#endif
 
 CGuildMarkImage * CGuildMarkManager::__NewImage()
 {
