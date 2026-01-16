@@ -45,7 +45,7 @@ LIBS += -lmysqlclient -lz
 # Miscellaneous external libraries
 INCDIR += -I../../../Extern/include
 LIBDIR += -L../../../Extern/lib
-LIBS += -lcryptopp -lgtest
+LIBS += -lcryptopp
 
 # openssl
 #INCDIR += -I/usr/include
