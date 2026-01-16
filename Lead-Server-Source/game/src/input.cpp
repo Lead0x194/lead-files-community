@@ -13,7 +13,6 @@
 #include "questmanager.h"
 #include "desc_client.h"
 #include "fishing.h"
-#include "TrafficProfiler.h"
 #include "priv_manager.h"
 #include "dev_log.h"
 
@@ -102,11 +101,6 @@ bool CInputProcessor::Process(LPDESC lpDesc, const void * c_pvOrig, int iBytes, 
 			lpDesc->Log("%s %d", c_pszName, iPacketLen);
 			m_pPacketInfo->End();
 		}
-
-		// TRAFFIC_PROFILER
-		if (g_bTrafficProfileOn)
-			TrafficProfiler::instance().Report(TrafficProfiler::IODIR_INPUT, bHeader, iPacketLen);
-		// END_OF_TRAFFIC_PROFILER
 
 		if (bHeader == HEADER_CG_PONG)
 			sys_log(0, "PONG! %u %u", m_pPacketInfo->IsSequence(bHeader), *(BYTE *) (c_pData + iPacketLen - sizeof(BYTE)));

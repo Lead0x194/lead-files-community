@@ -231,7 +231,6 @@
     <ClCompile Include="target.cpp" />
     <ClCompile Include="text_file_loader.cpp" />
     <ClCompile Include="threeway_war.cpp" />
-    <ClCompile Include="TrafficProfiler.cpp" />
     <ClCompile Include="trigger.cpp" />
     <ClCompile Include="utils.cpp" />
     <ClCompile Include="vector.cpp" />
@@ -361,7 +360,6 @@
     <ClInclude Include="target.h" />
     <ClInclude Include="text_file_loader.h" />
     <ClInclude Include="threeway_war.h" />
-    <ClInclude Include="TrafficProfiler.h" />
     <ClInclude Include="typedef.h" />
     <ClInclude Include="unique_item.h" />
     <ClInclude Include="utils.h" />

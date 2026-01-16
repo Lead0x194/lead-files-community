@@ -32,8 +32,6 @@ extern bool	distribution_test_server;
 extern bool	g_bNoMoreClient;
 extern bool	g_bNoRegen;
 
-extern bool	g_bTrafficProfileOn;		///< true ÀÌ¸é TrafficProfiler ¸¦ ÄÒ´Ù.
-
 extern BYTE	g_bChannel;
 
 extern bool	map_allow_find(int index);

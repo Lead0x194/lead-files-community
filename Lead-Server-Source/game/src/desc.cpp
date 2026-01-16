@@ -14,7 +14,6 @@
 #include "sequence.h"
 #include "guild.h"
 #include "guild_manager.h"
-#include "TrafficProfiler.h"
 #include "locale_service.h"
 #include "log.h"
 
@@ -448,11 +447,6 @@ void DESC::Packet(const void * c_pvData, int iSize)
 			c_pvData = buffer_read_peek(m_lpBufferedOutputBuffer);
 			iSize = buffer_size(m_lpBufferedOutputBuffer);
 		}
-
-		// TRAFFIC_PROFILE
-		if (g_bTrafficProfileOn)
-			TrafficProfiler::instance().Report(TrafficProfiler::IODIR_OUTPUT, *(BYTE *) c_pvData, iSize);
-		// END_OF_TRAFFIC_PROFILER
 
 #ifdef _IMPROVED_PACKET_ENCRYPTION_
 		void* buf = buffer_write_peek(m_lpOutputBuffer);
