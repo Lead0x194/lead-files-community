@@ -2,6 +2,10 @@
 pack/*.epk
 pack/*.eix
 
+# Log files
+log.txt
+syserr.txt
+
 # Generated build files
 *.exe
 *.bsc
@@ -9,3 +13,6 @@ pack/*.eix
 
 # Generated config files
 channel.inf
+
+# Screenshots
+screenshot/*
