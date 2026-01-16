@@ -660,8 +660,6 @@ enum SPECIAL_EFFECT
 	SE_EQUIP_LOVE_PENDANT,		// 발렌타인 사랑의 팬던트(71145) 착용할 때 이펙트 (발동이펙트임, 지속이펙트 아님)
 } ;
 
-};
-
 #include "item_length.h"
 
 // inventory의 position을 나타내는 구조체
