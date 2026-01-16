@@ -2111,9 +2111,6 @@ void CClientManager::ProcessPackets(CPeer * peer)
 				QUERY_BOOT(peer, (TPacketGDBoot *) data);
 				break;
 
-			case HEADER_GD_HAMMER_OF_TOR:
-				break;
-
 			case HEADER_GD_LOGIN_BY_KEY:
 				QUERY_LOGIN_BY_KEY(peer, dwHandle, (TPacketGDLoginByKey *) data);
 				break;
