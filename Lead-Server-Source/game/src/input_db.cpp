@@ -223,48 +223,6 @@ void CInputDB::PlayerCreateSuccess(LPDESC d, const char * data)
 	TPlayerItem t;
 	memset(&t, 0, sizeof(t));
 
-	if (china_event_server)
-	{
-		t.window	= INVENTORY;
-		t.count	= 1;
-		t.owner	= r_Tab.players[pPacketDB->bAccountCharacterIndex].dwID;
-
-		//무사: 자인갑+3,철편투구+3,금편신발+3,남만도+3,백금목걸이+3, 흑단귀걸이+3, 소산부+3, 오각패+3, 흑단팔찌+3 
-		//자객：영린+3,연환두건+3,금편신발+3,마안도+3,화안궁+3,옥목걸이+3, 옥귀걸이+3, 오각패+3, 흑단팔찌+3 
-		//수라：음양갑+3,애희투구+3,금편신발+3,남만도+3,진주목걸이+3, 백금귀걸이+3, 오각패+3, 흑단팔찌+3
-		//무당：서천의+3,태을모+3,금편신발+3,자린선+3,매화령+3,진주목걸이+3, 백금귀걸이+3, 오각패+3, 흑단팔찌+3
-
-		struct SInitialItem
-		{
-			DWORD dwVnum;
-			BYTE pos;
-		};
-
-		const int MAX_INITIAL_ITEM = 9;
-
-		static SInitialItem initialItems[JOB_MAX_NUM][MAX_INITIAL_ITEM] = 
-		{
-			{ {11243,	2}, {12223,	3}, {15103,	4}, {   93,	1}, {16143,	8}, {17103,	9}, { 3083,	0}, {13193,	11}, {14103, 12}, },
-			{ {11443,	0}, {12363,	3}, {15103,	4}, { 1053,	2}, { 2083,	1}, {16083,	7}, {17083,	8}, {13193,	9}, {14103,	10}, },
-			{ {11643,	0}, {12503,	2}, {15103,	3}, {   93,	1}, {16123,	4}, {17143,	7}, {13193,	8}, {14103,	9}, {    0,	0}, },
-			{ {11843,	0}, {12643,	1}, {15103,	2}, { 7083,	3}, { 5053,	4}, {16123,	6}, {17143,	7}, {13193,	8}, {14103,	9}, },
-		};
-
-		int job = pPacketDB->player.byJob;
-		for (int i=0; i < MAX_INITIAL_ITEM; i++)
-		{
-			if (initialItems[job][i].dwVnum == 0)
-				continue;
-
-			t.id	= ITEM_MANAGER::instance().GetNewID();
-			t.pos	= initialItems[job][i].pos;
-			t.vnum	= initialItems[job][i].dwVnum;
-
-			db_clientdesc->DBPacketHeader(HEADER_GD_ITEM_SAVE, 0, sizeof(TPlayerItem));
-			db_clientdesc->Packet(&t, sizeof(TPlayerItem));
-		}
-	}
-
 	LogManager::instance().CharLog(pack.player.dwID, 0, 0, 0, "CREATE PLAYER", "", d->GetHostName());
 }
 

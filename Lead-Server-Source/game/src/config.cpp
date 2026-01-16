@@ -45,7 +45,6 @@ int			speed_server = 0;
 int			auction_server = 0;
 #endif
 bool		distribution_test_server = false;
-bool		china_event_server = false;
 bool		guild_mark_server = true;
 BYTE		guild_mark_min_level = 3;
 bool		no_wander = false;
@@ -821,12 +820,6 @@ void config_init(const string& st_localeServiceName)
 		TOKEN("distribution_test_server")
 		{
 			str_to_number(distribution_test_server, value_string);
-			continue;
-		}
-
-		TOKEN("china_event_server")
-		{
-			str_to_number(china_event_server, value_string);
 			continue;
 		}
 

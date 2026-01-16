@@ -272,27 +272,7 @@ bool NewPlayerTable(TPlayerTable * table,
 	table->dir	= 0;
 	table->playtime = 0;
 	table->gold 	= 0;
-
 	table->skill_group = 0;
-
-	if (china_event_server)
-	{
-		table->level = 35;
-
-		for (int i = 1; i < 35; ++i)
-		{
-			int iHP = number(JobInitialPoints[job].hp_per_lv_begin, JobInitialPoints[job].hp_per_lv_end);
-			int iSP = number(JobInitialPoints[job].sp_per_lv_begin, JobInitialPoints[job].sp_per_lv_end);
-			table->sRandomHP += iHP;
-			table->sRandomSP += iSP;
-			table->stat_point += 3;
-		}
-
-		table->hp += table->sRandomHP;
-		table->sp += table->sRandomSP;
-
-		table->gold = 1000000;
-	}
 
 	return true;
 }

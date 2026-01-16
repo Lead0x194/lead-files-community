@@ -28,7 +28,6 @@ extern int test_server;
 extern bool	guild_mark_server;
 extern BYTE guild_mark_min_level;
 extern bool	distribution_test_server;
-extern bool	china_event_server;
 
 extern bool	g_bNoMoreClient;
 extern bool	g_bNoRegen;
