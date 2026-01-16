@@ -580,10 +580,8 @@
     <ClInclude Include="debug_allocator.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="debug_allocator_adapter.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="debug_ptr.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="desc.h">
@@ -628,7 +626,6 @@
     <ClInclude Include="exchange.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="fifo_allocator.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="file_loader.h">
@@ -658,7 +655,6 @@
     <ClInclude Include="horsename_manager.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="IFileMonitor.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="input.h">
