@@ -79,7 +79,6 @@
     <ClCompile Include="affect.cpp" />
     <ClCompile Include="ani.cpp" />
     <ClCompile Include="arena.cpp" />
-    <ClCompile Include="auction_manager.cpp" />
     <ClCompile Include="auth_brazil.cpp" />
     <ClCompile Include="banword.cpp" />
     <ClCompile Include="battle.cpp" />
@@ -245,8 +244,6 @@
     <ClInclude Include="ani.h" />
     <ClInclude Include="any_function.h" />
     <ClInclude Include="arena.h" />
-    <ClInclude Include="auction_manager.h" />
-    <ClInclude Include="auction_packet.h" />
     <ClInclude Include="auth_brazil.h" />
     <ClInclude Include="banword.h" />
     <ClInclude Include="battle.h" />

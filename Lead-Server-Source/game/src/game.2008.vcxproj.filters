@@ -16,7 +16,6 @@
     <ClCompile Include="arena.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="auction_manager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="auth_brazil.cpp">
@@ -506,10 +505,8 @@
     <ClInclude Include="arena.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="auction_manager.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="auction_packet.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="auth_brazil.h">

@@ -7,7 +7,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="AuctionManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Cache.cpp">
@@ -96,7 +95,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AuctionManager.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Cache.h">

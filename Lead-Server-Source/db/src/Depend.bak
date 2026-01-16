@@ -466,7 +466,6 @@
 .obj/NetBase.o: /usr/include/boost/unordered_set.hpp
 .obj/NetBase.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/NetBase.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/NetBase.o: ../../common/building.h ../../common/auction_table.h
 .obj/NetBase.o: ../../common/tables.h Peer.h PeerBase.h DBManager.h
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/NetBase.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -1058,7 +1057,6 @@
 .obj/Main.o: /usr/include/boost/unordered_set.hpp
 .obj/Main.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/Main.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/Main.o: ../../common/building.h ../../common/auction_table.h
 .obj/Main.o: ../../common/tables.h LoginData.h GuildManager.h
 .obj/Main.o: ../../libsql/libsql.h ../../libsql/AsyncSQL.h
 .obj/Main.o: ../../libpoly/Poly.h ../../libpoly/SymTable.h ItemAwardManager.h
@@ -1539,7 +1537,6 @@
 .obj/DBManager.o: /usr/include/boost/unordered_set.hpp
 .obj/DBManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/DBManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/DBManager.o: ../../common/building.h ../../common/auction_table.h
 .obj/DBManager.o: ../../common/tables.h Peer.h PeerBase.h NetBase.h
 .obj/DBManager.o: LoginData.h
 .obj/Cache.o: stdafx.h ../../libthecore/include/stdafx.h /usr/include/stdio.h
@@ -1650,7 +1647,6 @@
 .obj/Cache.o: /usr/include/c++/4.2/bits/stl_set.h
 .obj/Cache.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/Cache.o: /usr/include/c++/4.2/ext/functional ../../common/service.h
-.obj/Cache.o: Cache.h ../../common/cache.h ../../common/auction_table.h
 .obj/Cache.o: ../../common/tables.h QID.h ClientManager.h
 .obj/Cache.o: /usr/include/boost/unordered_map.hpp
 .obj/Cache.o: /usr/include/boost/unordered/unordered_map.hpp
@@ -2266,7 +2262,6 @@
 .obj/LoginData.o: /usr/include/boost/unordered_set.hpp
 .obj/LoginData.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/LoginData.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/LoginData.o: ../../common/building.h ../../common/auction_table.h
 .obj/LoginData.o: ../../common/tables.h Peer.h PeerBase.h NetBase.h
 .obj/LoginData.o: DBManager.h ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/LoginData.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -2647,7 +2642,6 @@
 .obj/ClientManager.o: /usr/include/boost/unordered_set.hpp
 .obj/ClientManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ClientManager.o: ../../common/auction_table.h ../../common/tables.h
 .obj/ClientManager.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -3049,7 +3043,6 @@
 .obj/ClientManagerPlayer.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerPlayer.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
 .obj/ClientManagerPlayer.o: ../../common/building.h
-.obj/ClientManagerPlayer.o: ../../common/auction_table.h
 .obj/ClientManagerPlayer.o: ../../common/tables.h Peer.h PeerBase.h NetBase.h
 .obj/ClientManagerPlayer.o: DBManager.h
 .obj/ClientManagerPlayer.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
@@ -3446,7 +3439,6 @@
 .obj/ClientManagerLogin.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerLogin.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
 .obj/ClientManagerLogin.o: ../../common/building.h
-.obj/ClientManagerLogin.o: ../../common/auction_table.h ../../common/tables.h
 .obj/ClientManagerLogin.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManagerLogin.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerLogin.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -3837,7 +3829,6 @@
 .obj/ClientManagerBoot.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerBoot.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
 .obj/ClientManagerBoot.o: ../../common/building.h
-.obj/ClientManagerBoot.o: ../../common/auction_table.h ../../common/tables.h
 .obj/ClientManagerBoot.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManagerBoot.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerBoot.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -4233,7 +4224,6 @@
 .obj/ClientManagerParty.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerParty.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
 .obj/ClientManagerParty.o: ../../common/building.h
-.obj/ClientManagerParty.o: ../../common/auction_table.h ../../common/tables.h
 .obj/ClientManagerParty.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManagerParty.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerParty.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -4628,7 +4618,6 @@
 .obj/ClientManagerGuild.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerGuild.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
 .obj/ClientManagerGuild.o: ../../common/building.h
-.obj/ClientManagerGuild.o: ../../common/auction_table.h ../../common/tables.h
 .obj/ClientManagerGuild.o: Peer.h PeerBase.h NetBase.h DBManager.h
 .obj/ClientManagerGuild.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/ClientManagerGuild.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -5014,7 +5003,6 @@
 .obj/GuildManager.o: /usr/include/boost/unordered_set.hpp
 .obj/GuildManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/GuildManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/GuildManager.o: ../../common/building.h ../../common/auction_table.h
 .obj/GuildManager.o: ../../common/tables.h DBManager.h
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/GuildManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -5502,7 +5490,6 @@
 .obj/PrivManager.o: /usr/include/boost/unordered_set.hpp
 .obj/PrivManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/PrivManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/PrivManager.o: ../../common/building.h ../../common/auction_table.h
 .obj/PrivManager.o: ../../common/tables.h DBManager.h
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/PrivManager.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -5873,7 +5860,6 @@
 .obj/MoneyLog.o: /usr/include/boost/unordered_set.hpp
 .obj/MoneyLog.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/MoneyLog.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/MoneyLog.o: ../../common/building.h ../../common/auction_table.h
 .obj/MoneyLog.o: ../../common/tables.h Peer.h PeerBase.h NetBase.h
 .obj/MoneyLog.o: DBManager.h ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/MoneyLog.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -6276,7 +6262,6 @@
 .obj/ItemAwardManager.o: /usr/include/boost/unordered_set.hpp
 .obj/ItemAwardManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ItemAwardManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/ItemAwardManager.o: ../../common/building.h ../../common/auction_table.h
 .obj/ItemAwardManager.o: ../../common/tables.h LoginData.h
 .obj/ClientManagerEventFlag.o: stdafx.h ../../libthecore/include/stdafx.h
 .obj/ClientManagerEventFlag.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
@@ -6664,7 +6649,6 @@
 .obj/ClientManagerEventFlag.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerEventFlag.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
 .obj/ClientManagerEventFlag.o: ../../common/building.h
-.obj/ClientManagerEventFlag.o: ../../common/auction_table.h
 .obj/ClientManagerEventFlag.o: ../../common/tables.h Peer.h PeerBase.h
 .obj/ClientManagerEventFlag.o: NetBase.h DBManager.h
 .obj/ClientManagerEventFlag.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
@@ -7054,7 +7038,6 @@
 .obj/Marriage.o: /usr/include/boost/unordered_set.hpp
 .obj/Marriage.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/Marriage.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
-.obj/Marriage.o: ../../common/building.h ../../common/auction_table.h
 .obj/Marriage.o: ../../common/tables.h LoginData.h
 .obj/Monarch.o: Monarch.h ../../libthecore/include/stdafx.h
 .obj/Monarch.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
@@ -7409,7 +7392,6 @@
 .obj/Monarch.o: /usr/include/c++/4.2/set /usr/include/c++/4.2/bits/stl_set.h
 .obj/Monarch.o: /usr/include/c++/4.2/bits/stl_multiset.h
 .obj/Monarch.o: /usr/include/c++/4.2/ext/functional ../../common/building.h
-.obj/Monarch.o: ../../common/auction_table.h ../../common/tables.h Peer.h
 .obj/Monarch.o: PeerBase.h NetBase.h DBManager.h
 .obj/Monarch.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h
 .obj/Monarch.o: ../../libmysql/7.x-5.1.35/mysql/mysql_version.h
@@ -7951,7 +7933,6 @@
 .obj/ItemIDRangeManager.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ItemIDRangeManager.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
 .obj/ItemIDRangeManager.o: ../../common/building.h
-.obj/ItemIDRangeManager.o: ../../common/auction_table.h ../../common/tables.h
 .obj/ItemIDRangeManager.o: Peer.h PeerBase.h NetBase.h LoginData.h
 .obj/ClientManagerHorseName.o: stdafx.h ../../libthecore/include/stdafx.h
 .obj/ClientManagerHorseName.o: /usr/include/stdio.h /usr/include/sys/cdefs.h
@@ -8339,7 +8320,6 @@
 .obj/ClientManagerHorseName.o: /usr/include/boost/unordered/unordered_set.hpp
 .obj/ClientManagerHorseName.o: /usr/include/boost/unordered/unordered_set_fwd.hpp
 .obj/ClientManagerHorseName.o: ../../common/building.h
-.obj/ClientManagerHorseName.o: ../../common/auction_table.h
 .obj/ClientManagerHorseName.o: ../../common/tables.h Peer.h PeerBase.h
 .obj/ClientManagerHorseName.o: NetBase.h DBManager.h
 .obj/ClientManagerHorseName.o: ../../libmysql/7.x-5.1.35/mysql/mysql.h

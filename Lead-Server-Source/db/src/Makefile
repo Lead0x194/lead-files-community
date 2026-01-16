@@ -41,7 +41,6 @@ SRCS =	Config.cpp NetBase.cpp Peer.cpp PeerBase.cpp Main.cpp DBManager.cpp \
 		ClientManagerBoot.cpp ClientManagerParty.cpp ClientManagerGuild.cpp GuildManager.cpp \
 		PrivManager.cpp MoneyLog.cpp ItemAwardManager.cpp ClientManagerEventFlag.cpp Marriage.cpp \
 		Monarch.cpp BlockCountry.cpp ItemIDRangeManager.cpp ClientManagerHorseName.cpp version.cpp \
-		AuctionManager.cpp ProtoReader.cpp CsvReader.cpp 
 
 OBJS = $(SRCS:%.cpp=$(OBJDIR)/%.o)
 

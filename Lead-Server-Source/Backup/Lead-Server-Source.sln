@@ -9,7 +9,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servers", "Servers", "{A168
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{FDF84DB5-1EE3-4A4D-A452-A941ED4B8F13}"
 	ProjectSection(SolutionItems) = preProject
-		common\auction_table.h = common\auction_table.h
 		common\building.h = common\building.h
 		common\cache.h = common\cache.h
 		common\d3dtype.h = common\d3dtype.h
