@@ -76,19 +76,6 @@
 #include "check_server.h"
 
 extern void WriteVersion();
-//extern const char * _malloc_options;
-#if defined(__FreeBSD__) && defined(DEBUG_ALLOC)
-extern void (*_malloc_message)(const char* p1, const char* p2, const char* p3, const char* p4);
-// FreeBSD _malloc_message replacement
-void WriteMallocMessage(const char* p1, const char* p2, const char* p3, const char* p4) {
-	FILE* fp = ::fopen(DBGALLOC_LOG_FILENAME, "a");
-	if (fp == NULL) {
-		return;
-	}
-	::fprintf(fp, "%s %s %s %s\n", p1, p2, p3, p4);
-	::fclose(fp);
-}
-#endif
 
 // TRAFFIC_PROFILER
 static const DWORD	TRAFFIC_PROFILE_FLUSH_CYCLE = 3600;	///< TrafficProfiler 의 Flush cycle. 1시간 간격
@@ -383,9 +370,6 @@ static void CleanUpForEarlyExit() {
 
 int main(int argc, char **argv)
 {
-#ifdef DEBUG_ALLOC
-	DebugAllocator::StaticSetUp();
-#endif
 
 #ifndef __WIN32__
 	// <Factor> start unit tests if option is set
@@ -558,9 +542,6 @@ int main(int argc, char **argv)
 
 	destroy();
 
-#ifdef DEBUG_ALLOC
-	DebugAllocator::StaticTearDown();
-#endif
 
 	return 1;
 }
@@ -583,9 +564,6 @@ int start(int argc, char **argv)
 	char ch;
 
 	//_malloc_options = "A";
-#if defined(__FreeBSD__) && defined(DEBUG_ALLOC)
-	_malloc_message = WriteMallocMessage;
-#endif
 
 	while ((ch = getopt(argc, argv, const_cast<char*>("npverltI"))) != -1)
 	{

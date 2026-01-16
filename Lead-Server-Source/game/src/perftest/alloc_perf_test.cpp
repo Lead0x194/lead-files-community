@@ -7,10 +7,8 @@
 #elif defined(CASE_ALLOC_MALLOC_FREE)
 #define REPLACE_CRT_MALLOC_FREE
 #elif defined(CASE_DEBUG_NEW_DELETE)
-#define DEBUG_ALLOC
 #define REPLACE_GLOBAL_NEW_DELETE
 #elif defined(CASE_DEBUG_MALLOC_FREE)
-#define DEBUG_ALLOC
 #define REPLACE_CRT_MALLOC_FREE
 #endif
 

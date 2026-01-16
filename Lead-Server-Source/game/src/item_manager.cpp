@@ -38,11 +38,7 @@ void ITEM_MANAGER::Destroy()
 {
 	itertype(m_VIDMap) it = m_VIDMap.begin();
 	for ( ; it != m_VIDMap.end(); ++it) {
-#ifdef M2_USE_POOL
-		pool_.Destroy(it->second);
-#else
 		M2_DELETE(it->second);
-#endif
 	}
 	m_VIDMap.clear();
 }
@@ -195,11 +191,7 @@ LPITEM ITEM_MANAGER::CreateItem(DWORD vnum, DWORD count, DWORD id, bool bTryMagi
 	}
 
 	//아이템 하나 할당하고
-#ifdef M2_USE_POOL
-	item = pool_.Construct();
-#else
 	item = M2_NEW CItem(vnum);
-#endif
 
 	bool bIsNewItem = (0 == id);
 
@@ -518,11 +510,7 @@ void ITEM_MANAGER::RemoveItem(LPITEM item, const char * c_pszReason)
 	M2_DESTROY_ITEM(item);
 }
 
-#ifndef DEBUG_ALLOC
 void ITEM_MANAGER::DestroyItem(LPITEM item)
-#else
-void ITEM_MANAGER::DestroyItem(LPITEM item, const char* file, size_t line)
-#endif
 {
 	if (item->GetSectree())
 		item->RemoveFromGround();
@@ -566,15 +554,7 @@ void ITEM_MANAGER::DestroyItem(LPITEM item, const char* file, size_t line)
 
 	m_VIDMap.erase(item->GetVID());
 
-#ifdef M2_USE_POOL
-	pool_.Destroy(item);
-#else
-#ifndef DEBUG_ALLOC
 	M2_DELETE(item);
-#else
-	M2_DELETE_EX(item, file, line);
-#endif
-#endif
 }
 
 LPITEM ITEM_MANAGER::Find(DWORD id)

@@ -1,9 +1,6 @@
 #ifndef __INC_METIN_II_GAME_CHARACTER_MANAGER_H__
 #define __INC_METIN_II_GAME_CHARACTER_MANAGER_H__
 
-#ifdef M2_USE_POOL
-#include "pool.h"
-#endif
 
 #include "../../common/stl.h"
 #include "../../common/length.h"
@@ -29,11 +26,7 @@ class CHARACTER_MANAGER : public singleton<CHARACTER_MANAGER>
 		DWORD			AllocVID();
 
 		LPCHARACTER             CreateCharacter(const char * name, DWORD dwPID = 0);
-#ifndef DEBUG_ALLOC
 		void DestroyCharacter(LPCHARACTER ch);
-#else
-		void DestroyCharacter(LPCHARACTER ch, const char* file, size_t line);
-#endif
 
 		void			Update(int iPulse);
 
@@ -138,9 +131,6 @@ class CHARACTER_MANAGER : public singleton<CHARACTER_MANAGER>
 		bool				m_bUsePendingDestroy;
 		CHARACTER_SET		m_set_pkChrPendingDestroy;
 
-#ifdef M2_USE_POOL
-		ObjectPool<CHARACTER> pool_;
-#endif
 };
 
 	template<class Func>	
@@ -166,10 +156,6 @@ class CharacterVectorInteractor : public CHARACTER_VECTOR
 		bool m_bMyBegin;
 };
 
-#ifndef DEBUG_ALLOC
 #define M2_DESTROY_CHARACTER(ptr) CHARACTER_MANAGER::instance().DestroyCharacter(ptr)
-#else
-#define M2_DESTROY_CHARACTER(ptr) CHARACTER_MANAGER::instance().DestroyCharacter(ptr, __FILE__, __LINE__)
-#endif
 
 #endif
