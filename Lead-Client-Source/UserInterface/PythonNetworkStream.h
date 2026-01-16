@@ -295,8 +295,6 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 		// Login Phase
 		bool SendLoginPacket(const char * c_szName, const char * c_szPassword);
 		bool SendLoginPacketNew(const char * c_szName, const char * c_szPassword);
-		bool SendChinaMatrixCardPacket(const char * c_szMatrixCardString);
-		bool SendRunupMatrixAnswerPacket(const char * c_szMatrixCardString);
 		bool SendNEWCIBNPasspodAnswerPacket(const char * answer);
 		bool SendDirectEnterPacket(const char * c_szName, const char * c_szPassword, UINT uChrSlot);
 
@@ -399,8 +397,6 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 		bool __RecvLoginSuccessPacket4();
 		bool __RecvLoginFailurePacket();
 		bool __RecvEmpirePacket();
-		bool __RecvChinaMatrixCardPacket();
-		bool __RecvRunupMatrixQuizPacket();
 		bool __RecvNEWCIBNPasspodRequestPacket();
 		bool __RecvNEWCIBNPasspodFailurePacket();
 		bool __RecvLoginKeyPacket();

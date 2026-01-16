@@ -17,7 +17,6 @@ import serverCommandParser
 import ime
 import uiScriptLocale
 
-RUNUP_MATRIX_AUTH = False
 NEWCIBN_PASSPOD_AUTH = False
 
 LOGIN_DELAY_SEC = 0.0
@@ -60,7 +59,6 @@ elif localeInfo.IsYMIR() or localeInfo.IsCHEONMA():
 
 elif localeInfo.IsHONGKONG():
 	FULL_BACK_IMAGE = True
-	RUNUP_MATRIX_AUTH = True 
 	PASSPOD_MSG_DICT = {
 		"NOTELE"	: localeInfo.LOGIN_FAILURE_NOTELEBLOCK,
 	}
@@ -81,10 +79,6 @@ def IsLoginDelay():
 		return True
 	else:
 		return False
-
-def IsRunupMatrixAuth():
-	global RUNUP_MATRIX_AUTH
-	return RUNUP_MATRIX_AUTH	
 
 def IsNEWCIBNPassPodAuth():
 	global NEWCIBN_PASSPOD_AUTH
@@ -171,7 +165,6 @@ class LoginWindow(ui.ScriptWindow):
 		net.SetPhaseWindow(net.PHASE_WINDOW_LOGIN, self)
 		net.SetAccountConnectorHandler(self)
 
-		self.matrixInputChanceCount = 0
 		self.lastLoginTime = 0
 		self.inputDialog = None
 		self.connectingDialog = None
@@ -210,8 +203,6 @@ class LoginWindow(ui.ScriptWindow):
 			"SHUTDOWN"	: localeInfo.LOGIN_FAILURE_SHUTDOWN,
 			"REPAIR"	: localeInfo.LOGIN_FAILURE_REPAIR_ID,
 			"BLOCK"		: localeInfo.LOGIN_FAILURE_BLOCK_ID,
-			"WRONGMAT"	: localeInfo.LOGIN_FAILURE_WRONG_MATRIX_CARD_NUMBER,
-			"QUIT"		: localeInfo.LOGIN_FAILURE_WRONG_MATRIX_CARD_NUMBER_TRIPLE,
 			"BESAMEKEY"	: localeInfo.LOGIN_FAILURE_BE_SAME_KEY,
 			"NOTAVAIL"	: localeInfo.LOGIN_FAILURE_NOT_AVAIL,
 			"NOBILL"	: localeInfo.LOGIN_FAILURE_NOBILL,
@@ -223,7 +214,6 @@ class LoginWindow(ui.ScriptWindow):
 
 		self.loginFailureFuncDict = {
 			"WRONGPWD"	: self.__DisconnectAndInputPassword,
-			"WRONGMAT"	: self.__DisconnectAndInputMatrix,
 			"QUIT"		: app.Exit,
 		}
 
@@ -297,13 +287,13 @@ class LoginWindow(ui.ScriptWindow):
 
 		print "---------------------------------------------------------------------------- CLOSE LOGIN WINDOW "
 		#
-		# selectMusicÀÌ ¾øÀ¸¸é BGMÀÌ ²÷±â¹Ç·Î µÎ°³ ´Ù Ã¼Å©ÇÑ´Ù. 
+		# selectMusicï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ BGMï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ ï¿½Î°ï¿½ ï¿½ï¿½ Ã¼Å©ï¿½Ñ´ï¿½. 
 		#
 		if musicInfo.loginMusic != "" and musicInfo.selectMusic != "":
 			snd.FadeOutMusic("BGM/"+musicInfo.loginMusic)
 
-		## NOTE : idEditLine¿Í pwdEditLineÀº ÀÌº¥Æ®°¡ ¼­·Î ¿¬°á µÇ¾îÀÖ¾î¼­
-		##        Event¸¦ °­Á¦·Î ÃÊ±âÈ­ ÇØÁÖ¾î¾ß¸¸ ÇÕ´Ï´Ù - [levites]
+		## NOTE : idEditLineï¿½ï¿½ pwdEditLineï¿½ï¿½ ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¾ï¿½ï¿½Ö¾î¼­
+		##        Eventï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½ï¿½ï¿½Ö¾ï¿½ß¸ï¿½ ï¿½Õ´Ï´ï¿½ - [levites]
 		self.idEditLine.SetTabEvent(0)
 		self.idEditLine.SetReturnEvent(0)
 		self.pwdEditLine.SetReturnEvent(0)
@@ -320,13 +310,6 @@ class LoginWindow(ui.ScriptWindow):
 		self.serverBoard				= None
 		self.serverList					= None
 		self.channelList				= None
-
-		# RUNUP_MATRIX_AUTH
-		self.matrixQuizBoard	= None
-		self.matrixAnswerInput	= None
-		self.matrixAnswerOK	= None
-		self.matrixAnswerCancel	= None
-		# RUNUP_MATRIX_AUTH_END
 
 		# NEWCIBN_PASSPOD_AUTH
 		self.passpodBoard	= None
@@ -403,11 +386,11 @@ class LoginWindow(ui.ScriptWindow):
 
 	def SetPasswordEditLineFocus(self):
 		if localeInfo.IsEUROPE():
-			if self.idEditLine != None: #0000862: [M2EU] ·Î±×ÀÎÃ¢ ÆË¾÷ ¿¡·¯: Á¾·á½Ã ¸ÕÀú None ¼³Á¤µÊ
+			if self.idEditLine != None: #0000862: [M2EU] ï¿½Î±ï¿½ï¿½ï¿½Ã¢ ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ None ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				self.idEditLine.SetText("")
-				self.idEditLine.SetFocus() #0000685: [M2EU] ¾ÆÀÌµð/ºñ¹Ð¹øÈ£ À¯Ãß °¡´É ¹ö±× ¼öÁ¤: ¹«Á¶°Ç ¾ÆÀÌµð·Î Æ÷Ä¿½º°¡ °¡°Ô ¸¸µç´Ù
+				self.idEditLine.SetFocus() #0000685: [M2EU] ï¿½ï¿½ï¿½Ìµï¿½/ï¿½ï¿½Ð¹ï¿½È£ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 
-			if self.pwdEditLine != None: #0000862: [M2EU] ·Î±×ÀÎÃ¢ ÆË¾÷ ¿¡·¯: Á¾·á½Ã ¸ÕÀú None ¼³Á¤µÊ
+			if self.pwdEditLine != None: #0000862: [M2EU] ï¿½Î±ï¿½ï¿½ï¿½Ã¢ ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ None ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 				self.pwdEditLine.SetText("")
 		else:
 			if self.pwdEditLine != None:
@@ -465,7 +448,7 @@ class LoginWindow(ui.ScriptWindow):
 				loginFailureMsg = localeInfo.LOGIN_FAILURE_UNKNOWN  + error
 
 
-		#0000685: [M2EU] ¾ÆÀÌµð/ºñ¹Ð¹øÈ£ À¯Ãß °¡´É ¹ö±× ¼öÁ¤: ¹«Á¶°Ç ÆÐ½º¿öµå·Î Æ÷Ä¿½º°¡ °¡°Ô ¸¸µç´Ù
+		#0000685: [M2EU] ï¿½ï¿½ï¿½Ìµï¿½/ï¿½ï¿½Ð¹ï¿½È£ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
 		loginFailureFunc=self.loginFailureFuncDict.get(error, self.SetPasswordEditLineFocus)
 
 		if app.loggined:
@@ -490,20 +473,6 @@ class LoginWindow(ui.ScriptWindow):
 
 		self.SetPasswordEditLineFocus()
 		net.Disconnect()
-
-	def __DisconnectAndInputMatrix(self):
-		if self.connectingDialog:
-			self.connectingDialog.Close()
-		self.connectingDialog = None
-
-		self.stream.popupWindow.Close()
-		self.matrixInputChanceCount -= 1
-
-		if self.matrixInputChanceCount <= 0:
-			self.__OnCloseInputDialog()
-
-		elif self.inputDialog:
-			self.inputDialog.Show()
 
 	def __LoadScript(self, fileName):
 		import dbg
@@ -532,14 +501,6 @@ class LoginWindow(ui.ScriptWindow):
 			if localeInfo.IsVIETNAM():
 				self.checkButton = GetObject("CheckButton")				
 				self.checkButton.Down()
-			
-			# RUNUP_MATRIX_AUTH
-			if IsRunupMatrixAuth():
-				self.matrixQuizBoard	= GetObject("RunupMatrixQuizBoard")
-				self.matrixAnswerInput	= GetObject("RunupMatrixAnswerInput")
-				self.matrixAnswerOK	= GetObject("RunupMatrixAnswerOK")
-				self.matrixAnswerCancel	= GetObject("RunupMatrixAnswerCancel")
-			# RUNUP_MATRIX_AUTH_END
 
 			# NEWCIBN_PASSPOD_AUTH
 			if IsNEWCIBNPassPodAuth():
@@ -594,13 +555,6 @@ class LoginWindow(ui.ScriptWindow):
 
 		self.pwdEditLine.SetReturnEvent(ui.__mem_func__(self.__OnClickLoginButton))
 		self.pwdEditLine.SetTabEvent(ui.__mem_func__(self.idEditLine.SetFocus))
-
-		# RUNUP_MATRIX_AUTH
-		if IsRunupMatrixAuth():			
-			self.matrixAnswerOK.SAFE_SetEvent(self.__OnClickMatrixAnswerOK)
-			self.matrixAnswerCancel.SAFE_SetEvent(self.__OnClickMatrixAnswerCancel)
-			self.matrixAnswerInput.SAFE_SetReturnEvent(self.__OnClickMatrixAnswerOK)
-		# RUNUP_MATRIX_AUTH_END
 
 		# NEWCIBN_PASSPOD_AUTH
 		if IsNEWCIBNPassPodAuth():
@@ -727,18 +681,18 @@ class LoginWindow(ui.ScriptWindow):
 			execfile(loginInfoFileName, loginInfo)
 		except IOError:
 			print(\
-				"ÀÚµ¿ ·Î±×ÀÎÀ» ÇÏ½Ã·Á¸é" + loginInfoFileName + "ÆÄÀÏÀ» ÀÛ¼ºÇØÁÖ¼¼¿ä\n"\
+				"ï¿½Úµï¿½ ï¿½Î±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï½Ã·ï¿½ï¿½ï¿½" + loginInfoFileName + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½\n"\
 				"\n"\
-				"³»¿ë:\n"\
+				"ï¿½ï¿½ï¿½ï¿½:\n"\
 				"================================================================\n"\
-				"addr=ÁÖ¼Ò\n"\
-				"port=Æ÷Æ®\n"\
-				"id=¾ÆÀÌµð\n"\
-				"pwd=ºñ¹Ð¹øÈ£\n"\
-				"slot=Ä³¸¯ÅÍ ¼±ÅÃ ÀÎµ¦½º (¾ø°Å³ª -1ÀÌ¸é ÀÚµ¿ ¼±ÅÃ ¾ÈÇÔ)\n"\
-				"autoLogin=ÀÚµ¿ Á¢¼Ó ¿©ºÎ\n"
-				"autoSelect=ÀÚµ¿ Á¢¼Ó ¿©ºÎ\n"
-				"locale=(ymir) LC_Ymir ÀÏ°æ¿ì ymir·Î ÀÛµ¿. ÁöÁ¤ÇÏÁö ¾ÊÀ¸¸é korea·Î ÀÛµ¿\n"
+				"addr=ï¿½Ö¼ï¿½\n"\
+				"port=ï¿½ï¿½Æ®\n"\
+				"id=ï¿½ï¿½ï¿½Ìµï¿½\n"\
+				"pwd=ï¿½ï¿½Ð¹ï¿½È£\n"\
+				"slot=Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½Å³ï¿½ -1ï¿½Ì¸ï¿½ ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)\n"\
+				"autoLogin=ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n"
+				"autoSelect=ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n"
+				"locale=(ymir) LC_Ymir ï¿½Ï°ï¿½ï¿½ ymirï¿½ï¿½ ï¿½Ûµï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ koreaï¿½ï¿½ ï¿½Ûµï¿½\n"
 			);
 
 		id=loginInfo.get("id", "")
@@ -762,7 +716,7 @@ class LoginWindow(ui.ScriptWindow):
 					self.__SetServerInfo(locale.CHANNEL_TEST_SERVER)
 				except:
 					import exception
-					exception.Abort("LoginWindow.__LoadLoginInfo - Å×½ºÆ®¼­¹ö ÁÖ¼Ò°¡ ¾ø½À´Ï´Ù")
+					exception.Abort("LoginWindow.__LoadLoginInfo - ï¿½×½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼Ò°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½")
 
 		else:
 			addr=loginInfo.get("addr", "")
@@ -776,7 +730,7 @@ class LoginWindow(ui.ScriptWindow):
 				net.SetMarkServer(addr, port)
 
 				if locale == "ymir" :
-					net.SetServerInfo("Ãµ¸¶ ¼­¹ö")
+					net.SetServerInfo("Ãµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½")
 					self.serverInfo.SetText("Y:"+addr+":"+str(port))
 				else:
 					net.SetServerInfo(addr+":"+str(port))
@@ -807,7 +761,7 @@ class LoginWindow(ui.ScriptWindow):
 			self.Connect(id, pwd)
 			
 			print "=================================================================================="
-			print "ÀÚµ¿ ·Î±×ÀÎ: %s - %s:%d %s" % (loginInfoFileName, addr, port, id)
+			print "ï¿½Úµï¿½ ï¿½Î±ï¿½ï¿½ï¿½: %s - %s:%d %s" % (loginInfoFileName, addr, port, id)
 			print "=================================================================================="
 
 		
@@ -821,51 +775,6 @@ class LoginWindow(ui.ScriptWindow):
 
 		self.stream.popupWindow.Close()
 		self.stream.popupWindow.Open(msg, func, localeInfo.UI_OK)
-
-	# RUNUP_MATRIX_AUTH
-	def BINARY_OnRunupMatrixQuiz(self, quiz):
-		if not IsRunupMatrixAuth():
-			return
-
-		id		= self.GetChild("RunupMatrixID")
-		id.SetText(self.idEditLine.GetText())
-		
-		code	= self.GetChild("RunupMatrixCode")
-		
-		code.SetText("".join(["[%c,%c]" % (quiz[i], quiz[i+1]) for i in xrange(0, len(quiz), 2)]))
-
-		self.stream.popupWindow.Close()
-		self.serverBoard.Hide()
-		self.connectBoard.Hide()
-		self.loginBoard.Hide()
-		self.matrixQuizBoard.Show()
-		self.matrixAnswerInput.SetFocus()
-
-	def __OnClickMatrixAnswerOK(self):
-		answer = self.matrixAnswerInput.GetText()
-
-		print "matrix_quiz.ok"
-		net.SendRunupMatrixCardPacket(answer)
-		self.matrixQuizBoard.Hide()	
-
-		self.stream.popupWindow.Close()
-		self.stream.popupWindow.Open("WAITING FOR MATRIX AUTHENTICATION", 
-			self.__OnClickMatrixAnswerCancel, 
-			localeInfo.UI_CANCEL)
-
-	def __OnClickMatrixAnswerCancel(self):
-		print "matrix_quiz.cancel"
-
-		if self.matrixQuizBoard:
-			self.matrixQuizBoard.Hide()	
-
-		if self.connectBoard:
-			self.connectBoard.Show()	
-
-		if self.loginBoard:
-			self.loginBoard.Show()
-
-	# RUNUP_MATRIX_AUTH_END
 
 	# NEWCIBN_PASSPOD_AUTH
 	def BINARY_OnNEWCIBNPasspodRequest(self):
@@ -914,64 +823,6 @@ class LoginWindow(ui.ScriptWindow):
 
 	# NEWCIBN_PASSPOD_AUTH_END
 
-
-	def OnMatrixCard(self, row1, row2, row3, row4, col1, col2, col3, col4):
-
-		if self.connectingDialog:
-			self.connectingDialog.Close()
-		self.connectingDialog = None
-
-		self.matrixInputChanceCount = 3
-
-		self.stream.popupWindow.Close()
-
-		# CHINA_MATRIX_CARD_BUG_FIX
-		## A~Z ±îÁö 26 ÀÌ³»ÀÇ °ªÀÌ µé¾îÀÖ¾î¾ß¸¸ ÇÑ´Ù.
-		## Python Exception Log ¿¡¼­ ±× ÀÌ»óÀÇ °ªÀÌ µé¾îÀÖ¾î¼­ ¿¡·¯ ¹æÁö
-		## Çåµ¥ ¿Ö ÇÑ±¹ÂÊ ·Î±×¿¡¼­ ÀÌ°Ô È°¿ëµÇ´ÂÁö´Â ¸ð¸£°ÚÀ½
-		row1 = min(30, row1)
-		row2 = min(30, row2)
-		row3 = min(30, row3)
-		row4 = min(30, row4)
-		# END_OF_CHINA_MATRIX_CARD_BUG_FIX
-
-		row1 = chr(row1 + ord('A'))
-		row2 = chr(row2 + ord('A'))
-		row3 = chr(row3 + ord('A'))
-		row4 = chr(row4 + ord('A'))
-		col1 = col1 + 1
-		col2 = col2 + 1
-		col3 = col3 + 1
-		col4 = col4 + 1
-
-		inputDialog = uiCommon.InputDialogWithDescription2()
-		inputDialog.SetMaxLength(8)
-		inputDialog.SetAcceptEvent(ui.__mem_func__(self.__OnAcceptMatrixCardData))
-		inputDialog.SetCancelEvent(ui.__mem_func__(self.__OnCancelMatrixCardData))
-		inputDialog.SetTitle(localeInfo.INPUT_MATRIX_CARD_TITLE)
-		inputDialog.SetDescription1(localeInfo.INPUT_MATRIX_CARD_NUMBER)
-		inputDialog.SetDescription2("%c%d %c%d %c%d %c%d" % (row1, col1,
-															row2, col2,
-															row3, col3,
-															row4, col4))
-
-		inputDialog.Open()
-		self.inputDialog = inputDialog
-
-	def __OnAcceptMatrixCardData(self):
-		text = self.inputDialog.GetText()
-		net.SendChinaMatrixCardPacket(text)
-		if self.inputDialog:
-			self.inputDialog.Hide()
-		self.PopupNotifyMessage(localeInfo.LOGIN_PROCESSING)
-		return True
-
-	def __OnCancelMatrixCardData(self):
-		self.SetPasswordEditLineFocus()
-		self.__OnCloseInputDialog()
-		self.__DisconnectAndInputPassword()
-		return True
-
 	def __OnCloseInputDialog(self):
 		if self.inputDialog:
 			self.inputDialog.Close()
@@ -985,7 +836,6 @@ class LoginWindow(ui.ScriptWindow):
 
 	def OnExit(self):
 		self.stream.popupWindow.Close()
-		self.stream.popupWindow.Open(localeInfo.LOGIN_FAILURE_WRONG_MATRIX_CARD_NUMBER_TRIPLE, app.Exit, localeInfo.UI_OK)
 
 	def OnUpdate(self):
 		ServerStateChecker.Update()
@@ -1036,11 +886,6 @@ class LoginWindow(ui.ScriptWindow):
 		
 		serverIndex = self.__ServerIDToServerIndex(loadRegionID, loadServerID)
 		channelIndex = self.__ChannelIDToChannelIndex(loadChannelID)
-		
-		# RUNUP_MATRIX_AUTH
-		if IsRunupMatrixAuth():
-			self.matrixQuizBoard.Hide()
-		# RUNUP_MATRIX_AUTH_END
 
 		# NEWCIBN_PASSPOD_AUTH
 		if IsNEWCIBNPassPodAuth():
@@ -1056,7 +901,7 @@ class LoginWindow(ui.ScriptWindow):
 			if channelIndex >= 0:
 				self.channelList.SelectItem(channelIndex)
 
-		## Show/Hide ÄÚµå¿¡ ¹®Á¦°¡ ÀÖ¾î¼­ ÀÓ½Ã - [levites]
+		## Show/Hide ï¿½Úµå¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾î¼­ ï¿½Ó½ï¿½ - [levites]
 		self.serverBoard.SetPosition(self.xServerBoard, self.yServerBoard)
 		self.serverBoard.Show()
 		self.connectBoard.Hide()
@@ -1074,11 +919,6 @@ class LoginWindow(ui.ScriptWindow):
 
 		# self.serverExitButton.SetEvent(ui.__mem_func__(self.__OnClickExitServerButton))
 		self.serverExitButton.SetText(localeInfo.UI_CLOSE)
-
-		# RUNUP_MATRIX_AUTH
-		if IsRunupMatrixAuth():
-			self.matrixQuizBoard.Hide()
-		# RUNUP_MATRIX_AUTH_END
 
 		# NEWCIBN_PASSPOD_AUTH
 		if IsNEWCIBNPassPodAuth():
@@ -1290,7 +1130,7 @@ class LoginWindow(ui.ScriptWindow):
 			self.PopupNotifyMessage(localeInfo.CHANNEL_SELECT_CHANNEL)
 			return
 
-		# »óÅÂ°¡ FULL °ú °°À¸¸é ÁøÀÔ ±ÝÁö
+		# ï¿½ï¿½ï¿½Â°ï¿½ FULL ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		if state == serverInfo.STATE_DICT[3]: 
 			self.PopupNotifyMessage(localeInfo.CHANNEL_NOTIFY_FULL)
 			return
@@ -1302,9 +1142,9 @@ class LoginWindow(ui.ScriptWindow):
 			channelName = serverInfo.REGION_DICT[regionID][serverID]["channel"][channelID]["name"]
 			addrKey = serverInfo.REGION_DICT[regionID][serverID]["channel"][channelID]["key"]
 			
-			if "Ãµ¸¶ ¼­¹ö" == serverName:			
+			if "Ãµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½" == serverName:			
 				app.ForceSetLocale("ymir", "locale/ymir")
-			elif "Äèµµ ¼­¹ö" == serverName:			
+			elif "ï¿½èµµ ï¿½ï¿½ï¿½ï¿½" == serverName:			
 				app.ForceSetLocale("we_korea", "locale/we_korea")				
 				
 		except:
@@ -1319,7 +1159,7 @@ class LoginWindow(ui.ScriptWindow):
 			tcp_port = serverInfo.REGION_DICT[regionID][serverID]["channel"][channelID]["tcp_port"]
 		except:
 			import exception
-			exception.Abort("LoginWindow.__OnClickSelectServerButton - ¼­¹ö ¼±ÅÃ ½ÇÆÐ")
+			exception.Abort("LoginWindow.__OnClickSelectServerButton - ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½")
 
 		try:
 			account_ip = serverInfo.REGION_AUTH_SERVER_DICT[regionID][serverID]["ip"]
@@ -1339,13 +1179,13 @@ class LoginWindow(ui.ScriptWindow):
 
 		except:
 			import exception
-			exception.Abort("LoginWindow.__OnClickSelectServerButton - ¸¶Å© Á¤º¸ ¾øÀ½")
+			exception.Abort("LoginWindow.__OnClickSelectServerButton - ï¿½ï¿½Å© ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½")
 
 
 		if app.USE_OPENID and not app.OPENID_TEST :
-			## 2012.07.19 OpenID : ±è¿ë¿í
-			# Ã¤³Î ¼±ÅÃ È­¸é¿¡¼­ "È®ÀÎ"(SelectServerButton) À» ´­·¶À»¶§,
-			# ·Î±×ÀÎ È­¸éÀ¸·Î ³Ñ¾î°¡Áö ¾Ê°í ¹Ù·Î ¼­¹ö¿¡ OpenID ÀÎÁõÅ°¸¦ º¸³»µµ·Ï ¼öÁ¤
+			## 2012.07.19 OpenID : ï¿½ï¿½ï¿½ï¿½
+			# Ã¤ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½é¿¡ï¿½ï¿½ "È®ï¿½ï¿½"(SelectServerButton) ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,
+			# ï¿½Î±ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½ ï¿½Ê°ï¿½ ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ OpenID ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 			self.stream.SetConnectInfo(ip, tcp_port, account_ip, account_port)
 			self.Connect(0, 0)
 		else :

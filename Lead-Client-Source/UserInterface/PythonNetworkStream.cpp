@@ -147,8 +147,6 @@ class CMainPacketHeaderMap : public CNetworkPacketHeaderMap
 			Set(HEADER_GC_NPC_POSITION, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCNPCPosition), DYNAMIC_SIZE_PACKET));
 			Set(HEADER_GC_CHANGE_NAME, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCChangeName), STATIC_SIZE_PACKET));
 
-			Set(HEADER_GC_CHINA_MATRIX_CARD, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCChinaMatrixCard), STATIC_SIZE_PACKET));
-			Set(HEADER_GC_RUNUP_MATRIX_QUIZ, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCRunupMatrixQuiz), STATIC_SIZE_PACKET));
 			Set(HEADER_GC_NEWCIBN_PASSPOD_REQUEST, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCNEWCIBNPasspodRequest), STATIC_SIZE_PACKET));
 			Set(HEADER_GC_NEWCIBN_PASSPOD_FAILURE, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCNEWCIBNPasspodFailure), STATIC_SIZE_PACKET));
 			Set(HEADER_GC_LOGIN_KEY, CNetworkPacketHeaderMap::TPacketType(sizeof(TPacketGCLoginKey), STATIC_SIZE_PACKET));

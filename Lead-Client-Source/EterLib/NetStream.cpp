@@ -558,7 +558,6 @@ const char * GetSendHeaderName(BYTE header)
 		stringList[105] = "HEADER_CG_HACK";
 		stringList[106] = "HEADER_CG_CHANGE_NAME";
 		stringList[107] = "HEADER_CG_SMS";
-		stringList[108] = "HEADER_CG_MATRIX_CARD";
 		stringList[109] = "HEADER_CG_LOGIN2";
 		stringList[110] = "HEADER_CG_DUNGEON";
 		stringList[111] = "HEADER_CG_LOGIN3";
@@ -676,7 +675,6 @@ const char * GetRecvHeaderName(BYTE header)
 		stringList[113] = "HEADER_GC_MAIN_CHARACTER_NEW";
 		stringList[114] = "HEADER_GC_USE_POTION";
 		stringList[115] = "HEADER_GC_NPC_POSITION";
-		stringList[116] = "HEADER_GC_MATRIX_CARD";
 		stringList[117] = "HEADER_GC_CHARACTER_UPDATE2";
 		stringList[118] = "HEADER_GC_LOGIN_KEY";
 		stringList[119] = "HEADER_GC_REFINE_INFORMATION_NEW";

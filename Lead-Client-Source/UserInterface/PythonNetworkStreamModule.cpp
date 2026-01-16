@@ -418,28 +418,6 @@ PyObject* netSendLoginPacket(PyObject* poSelf, PyObject* poArgs)
 	return Py_BuildNone();
 }
 
-PyObject* netSendChinaMatrixCardPacket(PyObject* poSelf, PyObject* poArgs)
-{
-	char* szMatrixCardString;
-	if (!PyTuple_GetString(poArgs, 0, &szMatrixCardString))
-		return Py_BuildException();
-
-	CAccountConnector & rkAccountConnector = CAccountConnector::Instance();
-	rkAccountConnector.SendChinaMatrixCardPacket(szMatrixCardString);
-	return Py_BuildNone();
-}
-
-PyObject* netSendRunupMatrixCardPacket(PyObject* poSelf, PyObject* poArgs)
-{
-	char* szMatrixCardString;
-	if (!PyTuple_GetString(poArgs, 0, &szMatrixCardString))
-		return Py_BuildException();
-
-	CAccountConnector & rkAccountConnector = CAccountConnector::Instance();
-	rkAccountConnector.SendRunupMatrixCardPacket(szMatrixCardString);
-	return Py_BuildNone();
-}
-
 PyObject* netSendNEWCIBNPasspodAnswerPacket(PyObject* poSelf, PyObject* poArgs)
 {
 	char* szMatrixCardString;
@@ -1762,8 +1740,6 @@ void initnet()
 		{ "ConnectToAccountServer",				netConnectToAccountServer,				METH_VARARGS },
 
 		{ "SendLoginPacket",					netSendLoginPacket,						METH_VARARGS },
-		{ "SendChinaMatrixCardPacket",			netSendChinaMatrixCardPacket,			METH_VARARGS },
-		{ "SendRunupMatrixCardPacket",			netSendRunupMatrixCardPacket,			METH_VARARGS },
 		{ "SendNEWCIBNPasspodAnswerPacket",		netSendNEWCIBNPasspodAnswerPacket,		METH_VARARGS },
 		{ "SendSelectEmpirePacket",				netSendSelectEmpirePacket,				METH_VARARGS },
 		{ "SendSelectCharacterPacket",			netSendSelectCharacterPacket,			METH_VARARGS },

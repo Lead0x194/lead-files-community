@@ -170,7 +170,6 @@
     <ClCompile Include="MarkImage.cpp" />
     <ClCompile Include="MarkManager.cpp" />
     <ClCompile Include="marriage.cpp" />
-    <ClCompile Include="matrix_card.cpp" />
     <ClCompile Include="messenger_manager.cpp" />
     <ClCompile Include="minilzo.c">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
@@ -328,7 +327,6 @@
     <ClInclude Include="MarkImage.h" />
     <ClInclude Include="MarkManager.h" />
     <ClInclude Include="marriage.h" />
-    <ClInclude Include="matrix_card.h" />
     <ClInclude Include="messenger_manager.h" />
     <ClInclude Include="minilzo.h" />
     <ClInclude Include="mining.h" />

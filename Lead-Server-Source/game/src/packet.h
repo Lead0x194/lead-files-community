@@ -95,8 +95,6 @@ enum
 	HEADER_CG_LOGIN5_OPENID			= 116,	//OpenID : 클라이언트로부터 OpenID 인증키를 받는다.
 
 //	HEADER_CG_ROULETTE				= 200,
-//	HEADER_CG_RUNUP_MATRIX_ANSWER	= 201,
-
 	//
 	HEADER_CG_PASSPOD_ANSWER		= 202,
 
@@ -235,7 +233,6 @@ enum
 
 	HEADER_GC_NPC_POSITION			= 115,
 
-	HEADER_GC_MATRIX_CARD			= 116,
 	HEADER_GC_LOGIN_KEY				= 118,
 	HEADER_GC_REFINE_INFORMATION		= 119,
 	HEADER_GC_CHANNEL				= 121,
@@ -559,19 +556,6 @@ typedef struct command_login5
 	char	authKey[OPENID_AUTHKEY_LEN + 1];
 	DWORD	adwClientKey[4];
 } TPacketCGLogin5;
-
-typedef struct command_matrix_card
-{
-	BYTE	bHeader;
-	char	szAnswer[MATRIX_ANSWER_MAX_LEN + 1];
-} TPacketCGMatrixCard;
-
-typedef struct packet_matrix_card
-{
-	BYTE	bHeader;
-	DWORD	dwRows;
-	DWORD	dwCols;
-} TPacketGCMatrixCard;
 
 typedef struct packet_login_key
 {
@@ -2143,25 +2127,6 @@ typedef struct packet_damage_info
 	BYTE flag;
 	int damage;
 } TPacketGCDamageInfo;
-
-enum 
-{
-	RUNUP_MATRIX_ANSWER_MAX_LEN = 4,
-	RUNUP_MATRIX_QUIZ_MAX_LEN = 8 ,
-	
-};
-
-typedef struct packet_runup_matrix_quiz
-{
-	BYTE    bHeader;
-	char    szQuiz[RUNUP_MATRIX_QUIZ_MAX_LEN + 1];
-} TPacketGCRunupMatrixQuiz;
-
-typedef struct command_runup_matrix_answer
-{
-	BYTE    bHeader;
-	char    szAnswer[RUNUP_MATRIX_ANSWER_MAX_LEN + 1];
-} TPacketCGRunupMatrixAnswer;
 
 typedef struct packet_passpod 
 {
