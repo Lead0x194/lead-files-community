@@ -56,7 +56,6 @@
 #include "auth_brazil.h"
 #include "DragonLair.h"
 #include "skill_power.h"
-#include "SpeedServer.h"
 #include "DragonSoul.h"
 #include <boost/bind.hpp>
 
@@ -432,7 +431,6 @@ int main(int argc, char **argv)
 	CThreeWayWar	threeway_war;
 	CDragonLairManager	dl_manager;
 
-	CSpeedServerManager SSManager;
 	DSManager dsManager;
 
 
@@ -453,7 +451,6 @@ int main(int argc, char **argv)
 	fishing::Initialize();
 	OXEvent_manager.Initialize();
 	if (speed_server)
-		CSpeedServerManager::instance().Initialize();
 
 	Cube_init();
 	Blend_Item_init();

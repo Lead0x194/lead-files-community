@@ -458,7 +458,6 @@ namespace quest
 		RegisterMgmtFunctionTable();
 		RegisterBattleArenaFunctionTable();
 		RegisterDragonLairFunctionTable();
-		RegisterSpeedServerFunctionTable();
 		RegisterDragonSoulFunctionTable();
 
 		{

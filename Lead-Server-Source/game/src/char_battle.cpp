@@ -2458,7 +2458,6 @@ static void GiveExp(LPCHARACTER from, LPCHARACTER to, int iExp)
 
 /*	if (speed_server)
 	{
-		iExp += iExp * CSpeedServerManager::ExpBonus();
 
 	}
 */

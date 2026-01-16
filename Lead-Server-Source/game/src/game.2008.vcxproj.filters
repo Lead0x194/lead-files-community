@@ -398,7 +398,6 @@
     <ClCompile Include="questlua_quest.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="questlua_speedserver.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="questlua_target.cpp">
@@ -446,7 +445,6 @@
     <ClCompile Include="skill_power.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="SpeedServer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="start_position.cpp">
@@ -821,7 +819,6 @@
     <ClInclude Include="spam.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="SpeedServer.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="stable_priority_queue.h">
