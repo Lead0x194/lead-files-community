@@ -54,7 +54,6 @@ DWORD AdjustExpByLevel(const LPCHARACTER ch, const DWORD exp)
 				factor /= 2.0;
 
 			ret *= 1.0 - factor;
-		}
 
 		ret = ret * static_cast<double>(exp);
 
@@ -135,9 +134,7 @@ void CHARACTER::DistributeSP(LPCHARACTER pkKiller, int iMethod)
 					CreateFly(FLY_SP_SMALL, pkKiller);
 
 				pkKiller->PointChange(POINT_SP, iAmount);
-			}
 		}
-	}
 	else
 	{
 		if (pkKiller->GetJob() == JOB_SHAMAN || (pkKiller->GetJob() == JOB_SURA && pkKiller->GetSkillGroup() == 2))
@@ -239,7 +236,6 @@ bool CHARACTER::Attack(LPCHARACTER pkVictim, BYTE bType)
 				iRet = BATTLE_NONE;
 				break;
 		}
-	}
 	else
 	{
 		if (IsPC() == true)
@@ -674,7 +670,6 @@ void CHARACTER::RewardGold(LPCHARACTER pkAttacker)
 				iTotalGold += iGold; // Total gold
 			}
 		}
-	}
 	else
 	{
 		//
@@ -907,7 +902,6 @@ void CHARACTER::Reward(bool bItemDrop)
 
 					sys_log(0, "DROP_ITEM: %s %d %d by %s", item->GetName(), pos.x, pos.y, GetName());
 				}
-			}
 			else
 			{
 				// 데미지 많이 준 사람들 끼리만 소유권 나눠가짐
@@ -1220,7 +1214,6 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 	bool isAgreedPVP = false;
 	bool isUnderGuildWar = false;
 	bool isDuel = false;
-	bool isForked = false;
 
 	if (pkKiller && pkKiller->IsPC())
 	{
@@ -1248,19 +1241,12 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 		}
 	}
 
-	//CHECK_FORKEDROAD_WAR
-	if (IsPC())
-	{
-			isForked = true;
-	}
-	//END_CHECK_FORKEDROAD_WAR
 
 	if (pkKiller &&
 			!isAgreedPVP &&
 			!isUnderGuildWar &&
 			IsPC() &&
-			!isDuel &&
-			!isForked)
+			!isDuel)
 	{
 		if (GetGMLevel() == GM_PLAYER || test_server)
 		{
@@ -1269,9 +1255,6 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 	}
 
 
-	if (true == isForked)
-	{
-	}
 
 	SetPosition(POS_DEAD);
 	ClearAffect(true);
@@ -1280,13 +1263,10 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 	{
 		if (!pkKiller->IsPC())
 		{
-			if (!isForked)
-			{
 				sys_log(1, "DEAD: %s %p WITH PENALTY", GetName(), this);
 				SET_BIT(m_pointsInstant.instant_flag, INSTANT_FLAG_DEATH_PENALTY);
 				LogManager::instance().CharLog(this, pkKiller->GetRaceNum(), "DEAD_BY_NPC", pkKiller->GetName());
 			}
-		}
 		else
 		{
 			sys_log(1, "DEAD_BY_PC: %s %p KILLER %s %p", GetName(), this, pkKiller->GetName(), get_pointer(pkKiller));
@@ -1314,7 +1294,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 			}
 			else
 			{
-				if (!isAgreedPVP && !isUnderGuildWar && !IsKillerMode() && GetAlignment() >= 0 && !isDuel && !isForked)
+				if (!isAgreedPVP && !isUnderGuildWar && !IsKillerMode() && GetAlignment() >= 0 && !isDuel)
 				{
 					int iNoPenaltyProb = 0;
 
@@ -1344,7 +1324,6 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 								f.m_iStep = 1;
 								pkKiller->GetParty()->ForEachOnlineMember(f);
 							}
-						}
 						else
 							pkKiller->UpdateAlignment(-20000);
 					}
@@ -1359,7 +1338,6 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				LogManager::instance().CharLog(this, pkKiller->GetPlayerID(), "DEAD_BY_PC", buf);
 			}
 		}
-	}
 	else
 	{
 		sys_log(1, "DEAD: %s %p", GetName(), this);
@@ -1405,7 +1383,6 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				{
 					Reward(true); // Drops gold, item, etc..
 				}
-			}
 			else
 			{
 				if (pkKiller->m_dwUnderGuildWarInfoMessageTime < get_dword_time())
@@ -2683,7 +2660,6 @@ LPCHARACTER CHARACTER::DistributeExp()
 			{
 				it->second.iDam += iDam;
 			}
-		}
 		else
 		{
 			TDamageInfo di;
@@ -3270,7 +3246,6 @@ void CHARACTER::ShowAlignment(bool bShow)
 			m_iAlignment = m_iRealAlignment;
 			UpdatePacket();
 		}
-	}
 	else
 	{
 		if (m_iAlignment != 0)
@@ -3621,7 +3596,6 @@ void CHARACTER::ChangeVictimByAggro(int iNewAggro, LPCHARACTER pNewVictim)
 			SetVictim(CHARACTER_MANAGER::instance().Find(itFind->first));
 			m_dwStateDuration = 1;
 		}
-	}
 	else
 	{
 		if (m_iMaxAggro < iNewAggro)
