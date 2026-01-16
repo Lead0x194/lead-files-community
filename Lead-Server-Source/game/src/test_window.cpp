@@ -55,7 +55,6 @@ int g_bx;
 int g_by;
 
 LPFDWATCH   main_fdw = NULL;
-socket_t	udp_socket = 0;
 
 bool g_bShutdown = false;
 

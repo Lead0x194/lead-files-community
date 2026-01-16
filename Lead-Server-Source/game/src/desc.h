@@ -111,8 +111,6 @@ class DESC
 
 		const struct sockaddr_in & GetAddr()		{ return m_SockAddr;	}
 
-		void			   UDPGrant(const struct sockaddr_in & c_rSockAddr);
-		const struct sockaddr_in & GetUDPAddr()		{ return m_UDPSockAddr; }
 
 		void			Log(const char * format, ...);
 
@@ -213,7 +211,6 @@ class DESC
 		TAccountTable		m_accountTable;
 
 		struct sockaddr_in	m_SockAddr;
-		struct sockaddr_in 	m_UDPSockAddr;
 
 		FILE *			m_pLogFile;
 		std::string		m_stRelayName;

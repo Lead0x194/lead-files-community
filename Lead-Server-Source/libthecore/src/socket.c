@@ -14,15 +14,7 @@ void socket_timeout(socket_t s, long sec, long usec);
 void socket_reuse(socket_t s);
 void socket_keepalive(socket_t s);
 
-int socket_udp_read(socket_t desc, char * read_point, size_t space_left, struct sockaddr * from, socklen_t * fromlen)
-{
-    /*
-       ssize_t recvfrom(int s, void * buf, size_t len, int flags, struct sockaddr * from, socklen_t * fromlen);
-     */
-    ssize_t ret;
-    ret = recvfrom(desc, read_point, space_left, 0, from, fromlen);
-    return (ret);
-}
+
 
 int socket_read(socket_t desc, char* read_point, size_t space_left)
 {
@@ -191,8 +183,6 @@ int socket_bind(const char * ip, int port, int protocol)
 	sys_log(0, "SYSTEM: BINDING TCP PORT ON [%d] (fd %d)", port, s);
 	listen(s, SOMAXCONN);
     }
-    else
-	sys_log(0, "SYSTEM: BINDING UDP PORT ON [%d] (fd %d)", port, s);
 
     return s;
 }
@@ -202,10 +192,7 @@ int socket_tcp_bind(const char * ip, int port)
     return socket_bind(ip, port, SOCK_STREAM);
 }
 
-int socket_udp_bind(const char * ip, int port)
-{
-    return socket_bind(ip, port, SOCK_DGRAM);
-}
+
 
 void socket_close(socket_t s)
 {

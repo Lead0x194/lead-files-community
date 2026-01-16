@@ -21,9 +21,7 @@ typedef int socklen_t;
     extern int		socket_read(socket_t desc, char* read_point, size_t space_left);
     extern int		socket_write(socket_t desc, const char *data, size_t length);
 
-    extern int		socket_udp_read(socket_t desc, char * read_point, size_t space_left, struct sockaddr * from, socklen_t * fromlen);
     extern int		socket_tcp_bind(const char * ip, int port);
-    extern int		socket_udp_bind(const char * ip, int port);
 
     extern socket_t	socket_accept(socket_t s, struct sockaddr_in *peer);
     extern void		socket_close(socket_t s);

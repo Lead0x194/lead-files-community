@@ -61,7 +61,6 @@ void DESC::Initialize()
 	memset( &m_accountTable, 0, sizeof(m_accountTable) );
 
 	memset( &m_SockAddr, 0, sizeof(m_SockAddr) );
-	memset( &m_UDPSockAddr, 0, sizeof(m_UDPSockAddr) );
 
 	m_pLogFile = NULL;
 
@@ -579,18 +578,6 @@ void DESC::BindAccountTable(TAccountTable * pAccountTable)
 	DESC_MANAGER::instance().ConnectAccount(m_accountTable.login, this);
 }
 
-void DESC::UDPGrant(const struct sockaddr_in & c_rSockAddr)
-{
-	m_UDPSockAddr = c_rSockAddr;
-
-	TPacketGCBindUDP pack;
-
-	pack.header	= HEADER_GC_BINDUDP;
-	pack.addr	= m_UDPSockAddr.sin_addr.s_addr;
-	pack.port	= m_UDPSockAddr.sin_port;
-
-	Packet(&pack, sizeof(TPacketGCBindUDP));
-}
 
 void DESC::Log(const char * format, ...)
 {
