@@ -35,7 +35,6 @@
 #include "arena.h"
 #include "dev_log.h"
 #include "pcbang.h"
-#include "threeway_war.h"
 
 #include "safebox.h"
 #include "shop.h"
@@ -5191,7 +5190,6 @@ bool CHARACTER::UseItem(TItemPos Cell, TItemPos DestCell)
 		// 경혼반지 사용지 상대방이 SUMMONABLE_ZONE에 있는가는 WarpToPC()에서 체크
 		
 		//삼거리 관려 맵에서는 귀환부를 막아버린다.
-		if (CThreeWayWar::instance().IsThreeWayWarMapIndex(GetMapIndex()))
 		{
 			ChatPacket(CHAT_TYPE_INFO, LC_TEXT("삼거리 전투 참가중에는 귀환부,귀환기억부를 사용할수 없습니다."));
 			return false;

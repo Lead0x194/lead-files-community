@@ -185,8 +185,6 @@ ACMD(do_oxevent_log);
 ACMD(do_oxevent_get_attender);
 
 ACMD(do_effect);
-ACMD(do_threeway_war_info );
-ACMD(do_threeway_war_myinfo );
 //
 //군주 전용기능
 ACMD(do_monarch_warpto);
@@ -480,8 +478,6 @@ struct command_info cmd_info[] =
 
 	{ "effect",				do_effect,				0,	POS_DEAD,	GM_LOW_WIZARD	},
 
-	{ "threeway_info",		do_threeway_war_info,	0,	POS_DEAD,	GM_LOW_WIZARD},
-	{ "threeway_myinfo",	do_threeway_war_myinfo, 0,	POS_DEAD,	GM_LOW_WIZARD},
 	{ "mto",				do_monarch_warpto,		0, 	POS_DEAD,	GM_PLAYER},
 	{ "mtr",				do_monarch_transfer,	0,	POS_DEAD,	GM_PLAYER},
 	{ "minfo",		do_monarch_info,		0,  POS_DEAD,   GM_PLAYER},	

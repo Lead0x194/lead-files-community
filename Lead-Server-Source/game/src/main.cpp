@@ -52,7 +52,6 @@
 #include "MarkManager.h"
 #include "spam.h"
 #include "panama.h"
-#include "threeway_war.h"
 #include "auth_brazil.h"
 #include "DragonLair.h"
 #include "skill_power.h"
@@ -421,7 +420,6 @@ int main(int argc, char **argv)
 	CProfiler		profiler;
 	CBattleArena	ba;
 	SpamManager		spam_mgr;
-	CThreeWayWar	threeway_war;
 	CDragonLairManager	dl_manager;
 
 	DSManager dsManager;
@@ -643,11 +641,9 @@ int start(int argc, char **argv)
 		exit(0);
 	}
 
-	if (false == CThreeWayWar::instance().LoadSetting("forkedmapindex.txt"))
 	{
 		if (false == g_bAuthServer)
 		{
-			fprintf(stderr, "Could not Load ThreeWayWar Setting file");
 			exit(0);
 		}
 	}

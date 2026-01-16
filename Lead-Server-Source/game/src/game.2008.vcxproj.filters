@@ -353,7 +353,6 @@
     <ClCompile Include="questlua_dungeon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="questlua_forked.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="questlua_game.cpp">
@@ -456,7 +455,6 @@
     <ClCompile Include="text_file_loader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="threeway_war.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="TrafficProfiler.cpp">
@@ -839,7 +837,6 @@
     <ClInclude Include="text_file_loader.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="threeway_war.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="TrafficProfiler.h">

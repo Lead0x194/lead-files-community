@@ -190,7 +190,6 @@
     <ClCompile Include="questlua_dragonlair.cpp" />
     <ClCompile Include="questlua_dragonsoul.cpp" />
     <ClCompile Include="questlua_dungeon.cpp" />
-    <ClCompile Include="questlua_forked.cpp" />
     <ClCompile Include="questlua_game.cpp" />
     <ClCompile Include="questlua_global.cpp" />
     <ClCompile Include="questlua_guild.cpp" />
@@ -226,7 +225,6 @@
     </ClCompile>
     <ClCompile Include="target.cpp" />
     <ClCompile Include="text_file_loader.cpp" />
-    <ClCompile Include="threeway_war.cpp" />
     <ClCompile Include="TrafficProfiler.cpp" />
     <ClCompile Include="trigger.cpp" />
     <ClCompile Include="utils.cpp" />
@@ -349,7 +347,6 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="target.h" />
     <ClInclude Include="text_file_loader.h" />
-    <ClInclude Include="threeway_war.h" />
     <ClInclude Include="TrafficProfiler.h" />
     <ClInclude Include="typedef.h" />
     <ClInclude Include="unique_item.h" />

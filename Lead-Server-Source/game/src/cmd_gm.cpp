@@ -32,7 +32,6 @@
 #include "xmas_event.h"
 #include "log.h"
 #include "pcbang.h"
-#include "threeway_war.h"
 #include "unique_item.h"
 #include "DragonSoul.h"
 
@@ -3571,11 +3570,9 @@ struct FCountInMap
 	int GetCount(BYTE bEmpire) { return m_Count[bEmpire]; } 
 };
 
-ACMD(do_threeway_war_info)
 {
 	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("각제국 진행 정보"));
 	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("선택 맵 정보 성지 %d 통로 %d %d %d"), GetSungziMapIndex(), GetPassMapIndex(1), GetPassMapIndex(2), GetPassMapIndex(3)); 
-	ch->ChatPacket(CHAT_TYPE_INFO, "ThreewayPhase %d", CThreeWayWar::instance().GetRegenFlag());
 
 	for (int n = 1; n < 4; ++n)
 	{
@@ -3590,16 +3587,13 @@ ACMD(do_threeway_war_info)
 
 		ch->ChatPacket(CHAT_TYPE_INFO, "%s killscore %d usercount %d",
 				EMPIRE_NAME(n),
-			   	CThreeWayWar::instance().GetKillScore(n),
 				c.GetCount(n));
 	}
 }
 
-ACMD(do_threeway_war_myinfo)
 {
 	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("나의 삼거리 진행정보"));
 	ch->ChatPacket(CHAT_TYPE_INFO, "Deadcount %d",
-			CThreeWayWar::instance().GetReviveTokenForPlayer(ch->GetPlayerID()));
 }
 
 ACMD(do_rmcandidacy)
