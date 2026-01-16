@@ -515,7 +515,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	SetDefaultCodePage(LocaleService_GetCodePage());	
 
 		return 0;
-#endif
 
 #if defined(CHECK_LATEST_DATA_FILES)
 	if (!CheckLatestFiles())
@@ -645,7 +644,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 	Main(hInstance, lpCmdLine);
 
-#endif
 
 	WebBrowser_Cleanup();
 

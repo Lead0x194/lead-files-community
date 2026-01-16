@@ -450,7 +450,6 @@ bool CPythonApplication::Process()
 	m_kGuildMarkUploader.Process();
 
 		return false;
-#endif
 
 	m_kGuildMarkDownloader.Process();
 	m_kAccountConnector.Process();
@@ -1101,7 +1100,6 @@ bool CPythonApplication::Create(PyObject * poSelf, const char * c_szName, int wi
 	}
 
 		return false;
-#endif
 
 	if (m_pySystem.IsUseDefaultIME())
 	{
