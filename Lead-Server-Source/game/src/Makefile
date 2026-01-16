@@ -116,10 +116,6 @@ $(OBJDIR)/%.o: %.cpp
 	@echo compile $<
 	@$(CC) $(CFLAGS) $(INCDIR) -c $< -o $@
 
-limit_time:
-	@echo update limit time
-	@python update_limit_time.py
-
 $(TARGET): $(CPPOBJS) $(COBJS) $(MAINOBJ)
 	@echo linking $(TARGET)....
 	@$(CC) $(CFLAGS) $(LIBDIR) $(COBJS) $(CPPOBJS) $(MAINOBJ) $(LIBS) -o $(TARGET)

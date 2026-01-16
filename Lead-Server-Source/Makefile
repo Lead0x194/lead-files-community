@@ -53,7 +53,6 @@ game: .
 	@touch $@/src/Depend
 	$(MAKE) -C $@/src dep
 	$(MAKE) -C $@/src clean
-	$(MAKE) -C $@/src limit_time
 #	$(MAKE) -C $@/src
 
 db: .
@@ -93,7 +92,6 @@ all:
 	@touch game/src/Depend
 	$(MAKE) -C game/src dep
 	$(MAKE) -C game/src clean
-	$(MAKE) -C game/src limit_time
 #	$(MAKE) -C game/src
 
 	@touch db/src/Depend
