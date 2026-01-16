@@ -529,8 +529,6 @@ bool CHARACTER::IsDead() const
 	return false;
 }
 
-#define GetGoldMultipler() (distribution_test_server ? 3 : 1)
-
 void CHARACTER::RewardGold(LPCHARACTER pkAttacker)
 {
 	// ADD_PREMIUM
@@ -545,6 +543,7 @@ void CHARACTER::RewardGold(LPCHARACTER pkAttacker)
 	if (!isAutoLoot)
 		if (!SECTREE_MANAGER::instance().GetMovablePosition(GetMapIndex(), GetX(), GetY(), pos))
 			return;
+
 
 	int iTotalGold = 0;
 	//
@@ -580,7 +579,7 @@ void CHARACTER::RewardGold(LPCHARACTER pkAttacker)
 	if (number(1, 100) > iPercent)
 		return;
 
-	int iGoldMultipler = GetGoldMultipler();
+	int iGoldMultipler = 1;
 
 	if (1 == number(1, 50000)) // 1/50000 확률로 돈이 10배
 		iGoldMultipler *= 10;
@@ -736,7 +735,6 @@ void CHARACTER::Reward(bool bItemDrop)
 		LPITEM item;
 		int iGold = number(GetMobTable().dwGoldMin, GetMobTable().dwGoldMax);
 		iGold = iGold * CHARACTER_MANAGER::instance().GetMobGoldAmountRate(NULL) / 100;
-		iGold *= GetGoldMultipler();
 		int iSplitCount = number(25, 35);
 
 		sys_log(0, "WAEGU Dead gold %d split %d", iGold, iSplitCount);
@@ -2326,10 +2324,6 @@ static void GiveExp(LPCHARACTER from, LPCHARACTER to, int iExp)
 {
 	// 레벨차 경험치 가감비율
 	iExp = CALCULATE_VALUE_LVDELTA(to->GetLevel(), from->GetLevel(), iExp);
-
-	// 외부 테스트 서버 경험치 3배 보너스
-	if (distribution_test_server)
-		iExp *= 3;
 
 	int iBaseExp = iExp;
 
