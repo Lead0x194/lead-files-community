@@ -7,7 +7,6 @@
 #include "start_position.h"
 #include "config.h"
 #include "mob_manager.h"
-#include "dev_log.h"
 #include "char.h"
 #include "char_manager.h"
 #include "utils.h"

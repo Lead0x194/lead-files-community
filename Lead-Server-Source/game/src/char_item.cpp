@@ -33,7 +33,6 @@
 #include "blend_item.h"
 #include "BattleArena.h"
 #include "arena.h"
-#include "dev_log.h"
 #include "pcbang.h"
 
 #include "safebox.h"

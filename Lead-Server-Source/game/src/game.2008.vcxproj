@@ -118,7 +118,6 @@
     <ClCompile Include="desc_client.cpp" />
     <ClCompile Include="desc_manager.cpp" />
     <ClCompile Include="desc_p2p.cpp" />
-    <ClCompile Include="dev_log.cpp" />
     <ClCompile Include="DragonLair.cpp" />
     <ClCompile Include="DragonSoul.cpp" />
     <ClCompile Include="dragon_soul_table.cpp" />
@@ -268,7 +267,6 @@
     <ClInclude Include="desc_client.h" />
     <ClInclude Include="desc_manager.h" />
     <ClInclude Include="desc_p2p.h" />
-    <ClInclude Include="dev_log.h" />
     <ClInclude Include="DragonLair.h" />
     <ClInclude Include="DragonSoul.h" />
     <ClInclude Include="dragon_soul_table.h" />

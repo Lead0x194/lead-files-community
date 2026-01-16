@@ -45,7 +45,6 @@
 #include "mining.h"
 #include "monarch.h"
 #include "arena.h"
-#include "dev_log.h"
 #include "horsename_manager.h"
 #include "pcbang.h"
 #include "gm.h"
@@ -3034,17 +3033,14 @@ void CHARACTER::PointChange(BYTE type, int amount, bool bAmount, bool bBroadcast
 				{
 					if (IsOverTime(OT_NONE))
 					{
-						dev_log(LOG_DEB0, "<EXP_LOG> %s = NONE", GetName());
 					}
 					else if (IsOverTime(OT_3HOUR))
 					{
 						amount = (amount / 2);
-						dev_log(LOG_DEB0, "<EXP_LOG> %s = 3HOUR", GetName());
 					}
 					else if (IsOverTime(OT_5HOUR))
 					{
 						amount = 0;
-						dev_log(LOG_DEB0, "<EXP_LOG> %s = 5HOUR", GetName());
 					}
 				}
 
@@ -3308,17 +3304,14 @@ void CHARACTER::PointChange(BYTE type, int amount, bool bAmount, bool bBroadcast
 				{
 					if (IsOverTime(OT_NONE))
 					{
-						dev_log(LOG_DEB0, "<GOLD_LOG> %s = NONE", GetName());
 					}
 					else if (IsOverTime(OT_3HOUR))
 					{
 						amount = (amount / 2);
-						dev_log(LOG_DEB0, "<GOLD_LOG> %s = 3HOUR", GetName());
 					}
 					else if (IsOverTime(OT_5HOUR))
 					{
 						amount = 0;
-						dev_log(LOG_DEB0, "<GOLD_LOG> %s = 5HOUR", GetName());
 					}
 				}
 

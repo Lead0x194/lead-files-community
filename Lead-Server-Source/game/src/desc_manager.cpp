@@ -11,7 +11,6 @@
 #include "messenger_manager.h"
 #include "p2p.h"
 #include "ip_ban.h"
-#include "dev_log.h"
 #include "ClientPackageCryptInfo.h"
 
 struct valid_ip
@@ -227,13 +226,11 @@ LPDESC DESC_MANAGER::AcceptP2PDesc(LPFDWATCH fdw, socket_t bind_fd)
 
 void DESC_MANAGER::ConnectAccount(const std::string& login, LPDESC d)
 {
-dev_log(LOG_DEB0, "BBBB ConnectAccount(%s)", login.c_str());
 	m_map_loginName.insert(DESC_LOGINNAME_MAP::value_type(login,d));
 }
 
 void DESC_MANAGER::DisconnectAccount(const std::string& login)
 {
-dev_log(LOG_DEB0, "BBBB DisConnectAccount(%s)", login.c_str());
 	m_map_loginName.erase(login);
 }
 
