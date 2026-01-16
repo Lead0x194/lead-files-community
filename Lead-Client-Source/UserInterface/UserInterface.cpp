@@ -16,7 +16,6 @@
 
 #include "CheckLatestFiles.h"
 
-#include "NProtectGameGuard.h"
 
 extern "C" {  
 extern int _fltused;  
@@ -515,8 +514,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	LocaleService_LoadConfig("locale.cfg");
 	SetDefaultCodePage(LocaleService_GetCodePage());	
 
-#ifdef USE_NPROTECT_GAMEGUARD
-	if (!GameGuard_Init())
 		return 0;
 #endif
 
@@ -648,8 +645,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 	Main(hInstance, lpCmdLine);
 
-#ifdef USE_NPROTECT_GAMEGUARD
-	GameGuard_NoticeMessage();
 #endif
 
 	WebBrowser_Cleanup();

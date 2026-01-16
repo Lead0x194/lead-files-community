@@ -302,7 +302,6 @@
     <ClCompile Include="CheckLatestFiles.cpp">
       <Filter>Security</Filter>
     </ClCompile>
-    <ClCompile Include="NProtectGameGuard.cpp">
       <Filter>Security</Filter>
     </ClCompile>
     <ClCompile Include="GameType.cpp" />
@@ -484,7 +483,6 @@
     <ClInclude Include="CRC32_inc.h">
       <Filter>Security</Filter>
     </ClInclude>
-    <ClInclude Include="NProtectGameGuard.h">
       <Filter>Security</Filter>
     </ClInclude>
     <ClInclude Include="GameType.h" />

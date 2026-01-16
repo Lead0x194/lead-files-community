@@ -12,7 +12,6 @@
 
 #include "ProcessScanner.h"
 
-#include "NProtectGameGuard.h"
 #include "CheckLatestFiles.h"
 
 extern void GrannyCreateSharedDeformBuffer();
@@ -450,8 +449,6 @@ bool CPythonApplication::Process()
 
 	m_kGuildMarkUploader.Process();
 
-#ifdef USE_NPROTECT_GAMEGUARD
-	if (GameGuard_IsError())
 		return false;
 #endif
 
@@ -1103,8 +1100,6 @@ bool CPythonApplication::Create(PyObject * poSelf, const char * c_szName, int wi
 		return false;
 	}
 
-#ifdef USE_NPROTECT_GAMEGUARD
-	if (!GameGuard_Run(CMSWindow::GetWindowHandle()))
 		return false;
 #endif
 
