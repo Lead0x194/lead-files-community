@@ -89,8 +89,6 @@ string g_stBlockDate = "30000705";
 
 extern string g_stLocale;
 
-char	teen_addr[ADDRESS_MAX_LEN + 1] = {0};
-WORD	teen_port	= 0;
 
 int SPEEDHACK_LIMIT_COUNT   = 50;
 int SPEEDHACK_LIMIT_BONUS   = 80;
@@ -949,23 +947,10 @@ void config_init(const string& st_localeServiceName)
 			}
 		}
 
-		TOKEN("teen_addr")
-		{
-			strlcpy(teen_addr, value_string, sizeof(teen_addr));
-
-			for (int n =0; n < ADDRESS_MAX_LEN; ++n)
-			{
-				if (teen_addr[n] == ' ')
-					teen_addr[n] = '\0';
-			}
 
 			continue;
 		}
 
-		TOKEN("teen_port")
-		{
-			str_to_number(teen_port, value_string);
-		}
 
 		TOKEN("synchack_limit_count")
 		{

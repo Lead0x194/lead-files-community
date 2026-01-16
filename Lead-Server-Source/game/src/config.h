@@ -17,8 +17,6 @@ extern WORD p2p_port;
 extern char db_addr[ADDRESS_MAX_LEN + 1];
 extern WORD db_port;
 
-extern char teen_addr[ADDRESS_MAX_LEN + 1];
-extern WORD teen_port;
 
 
 extern int passes_per_sec;

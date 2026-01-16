@@ -40,13 +40,11 @@ class CLIENT_DESC : public DESC
 
 		CInputDB 	m_inputDB;
 		CInputP2P 	m_inputP2P;
-		CInputTeen	m_inputTeen;
 };
 
 
 extern LPCLIENT_DESC db_clientdesc;
 extern LPCLIENT_DESC g_pkAuthMasterDesc;
 extern LPCLIENT_DESC g_NetmarbleDBDesc;
-extern LPCLIENT_DESC g_TeenDesc;
 
 #endif

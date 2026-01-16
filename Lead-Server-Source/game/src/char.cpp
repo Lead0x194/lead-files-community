@@ -1,6 +1,5 @@
 #include "stdafx.h"
 
-#include "../../common/teen_packet.h"
 #include "../../common/VnumHelper.h"
 
 #include "char.h"
@@ -1367,23 +1366,6 @@ void CHARACTER::Disconnect(const char * c_pszReason)
 
 	MessengerManager::instance().Logout(GetName());
 
-	if (g_TeenDesc)
-	{
-		int		offset = 0;
-		char	buf[245] = {0};
-
-		buf[0] = HEADER_GT_LOGOUT;
-		offset += 1;
-
-		memset(buf+offset, 0x00, 2);
-		offset += 2;
-
-		TAccountTable	&acc_table = GetDesc()->GetAccountTable();
-		memcpy(buf+offset, &acc_table.id, 4);
-		offset += 4;
-
-		g_TeenDesc->Packet(buf, offset);
-	}
 
 	if (GetDesc())
 	{
@@ -4922,12 +4904,10 @@ void CHARACTER::OnClick(LPCHARACTER pkChrCauser)
 	{
 		if (pkChrCauser->IsOverTime(OT_3HOUR))
 		{
-			sys_log(0, "Teen OverTime : name = %s, hour = %d)", pkChrCauser->GetName(), 3);
 			return;
 		}
 		else if (pkChrCauser->IsOverTime(OT_5HOUR))
 		{
-			sys_log(0, "Teen OverTime : name = %s, hour = %d)", pkChrCauser->GetName(), 5);
 			return;
 		}
 	}
