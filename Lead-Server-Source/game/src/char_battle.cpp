@@ -2389,13 +2389,6 @@ static void GiveExp(LPCHARACTER from, LPCHARACTER to, int iExp)
 			iExp += (iExp * 50 / 100);
 		}
 
-		// PC방 아템 경치 보너스
-		if (to->GetPoint(POINT_PC_BANG_EXP_BONUS) > 0)
-		{
-			if (to->IsPCBang() == true)
-				iExp += (iExp * to->GetPoint(POINT_PC_BANG_EXP_BONUS)/100);
-		}
-
 		// 결혼 보너스
 		iExp += iExp * to->GetMarriageBonus(UNIQUE_ITEM_MARRIAGE_EXP_BONUS) / 100;
 	}
@@ -2410,13 +2403,6 @@ static void GiveExp(LPCHARACTER from, LPCHARACTER to, int iExp)
 		if (to->IsEquipUniqueGroup(UNIQUE_GROUP_RING_OF_EXP) == true)
 		{
 			iExp += (iExp * 20 / 100);
-		}
-
-		// PC방 아템 경치 보너스
-		if (to->GetPoint(POINT_PC_BANG_EXP_BONUS) > 0)
-		{
-			if (to->IsPCBang() == true)
-				iExp += (iExp * to->GetPoint(POINT_PC_BANG_EXP_BONUS)/100);
 		}
 
 		// 결혼 보너스

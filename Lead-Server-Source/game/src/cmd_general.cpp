@@ -1998,8 +1998,6 @@ static const char* FN_point_string(int apply_number)
 		case POINT_NORMAL_HIT_DAMAGE_BONUS:	return LC_TEXT("평타 데미지 %d%%");
 		case POINT_SKILL_DEFEND_BONUS:		return LC_TEXT("스킬 데미지 저항 %d%%");
 		case POINT_NORMAL_HIT_DEFEND_BONUS:	return LC_TEXT("평타 데미지 저항 %d%%");
-//		case POINT_PC_BANG_EXP_BONUS:	return LC_TEXT("");
-//		case POINT_PC_BANG_DROP_BONUS:	return LC_TEXT("");
 //		case POINT_EXTRACT_HP_PCT:	return LC_TEXT("");
 		case POINT_RESIST_WARRIOR:	return LC_TEXT("무사공격에 %d%% 저항");
 		case POINT_RESIST_ASSASSIN:	return LC_TEXT("자객공격에 %d%% 저항");

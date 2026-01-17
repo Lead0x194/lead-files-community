@@ -48,7 +48,6 @@
 #include "arena.h"
 #include "dev_log.h"
 #include "horsename_manager.h"
-#include "pcbang.h"
 #include "gm.h"
 #include "map_location.h"
 #include "BlueDragon_Binder.h"
@@ -306,8 +305,6 @@ void CHARACTER::Initialize()
 	// MOB_SKILL_COOLTIME
 	memset(m_adwMobSkillCooltime, 0, sizeof(m_adwMobSkillCooltime));
 	// END_OF_MOB_SKILL_COOLTIME
-
-	m_isinPCBang = false;
 
 	// ARENA
 	m_pArena = NULL;
@@ -2236,11 +2233,6 @@ void CHARACTER::ComputePoints()
 	SetPoint(POINT_HP_RECOVERY, lHPRecovery);
 	SetPoint(POINT_SP_RECOVERY, lSPRecovery);
 
-	// PC_BANG_ITEM_ADD
-	SetPoint(POINT_PC_BANG_EXP_BONUS, 0);
-	SetPoint(POINT_PC_BANG_DROP_BONUS, 0);
-	// END_PC_BANG_ITEM_ADD
-
 	int iMaxHP, iMaxSP;
 	int iMaxStamina;
 
@@ -3438,14 +3430,10 @@ void CHARACTER::PointChange(BYTE type, int amount, bool bAmount, bool bBroadcast
 			val = GetPoint(type);
 			break;
 
-			// PC_BANG_ITEM_ADD		
-		case POINT_PC_BANG_EXP_BONUS :
-		case POINT_PC_BANG_DROP_BONUS :
 		case POINT_RAMADAN_CANDY_BONUS_EXP:
 			SetPoint(type, amount);
 			val = GetPoint(type);
 			break;
-			// END_PC_BANG_ITEM_ADD		
 
 		case POINT_EXP_DOUBLE_BONUS:	// 71  
 		case POINT_GOLD_DOUBLE_BONUS:	// 72  
@@ -3719,9 +3707,6 @@ void CHARACTER::ApplyPoint(BYTE bApplyType, int iVal)
 		case APPLY_SKILL_DEFEND_BONUS:
 		case APPLY_NORMAL_HIT_DEFEND_BONUS:
 			// END_OF_DEPEND_BONUS_ATTRIBUTES
-
-		case APPLY_PC_BANG_EXP_BONUS :
-		case APPLY_PC_BANG_DROP_BONUS :
 
 		case APPLY_RESIST_WARRIOR :
 		case APPLY_RESIST_ASSASSIN :

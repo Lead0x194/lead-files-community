@@ -260,10 +260,6 @@ enum EPointTypes
 	POINT_NORMAL_HIT_DEFEND_BONUS,	// 124 평타 방어 데미지
 	// END_OF_DEFEND_BONUS_ATTRIBUTES
 
-	// PC_BANG_ITEM_ADD 
-	POINT_PC_BANG_EXP_BONUS,		// 125 PC방 전용 경험치 보너스
-	POINT_PC_BANG_DROP_BONUS,		// 126 PC방 전용 드롭률 보너스
-	// END_PC_BANG_ITEM_ADD
 	POINT_RAMADAN_CANDY_BONUS_EXP,			// 라마단 사탕 경험치 증가용
 
 	POINT_ENERGY = 128,					// 128 기력
@@ -1744,15 +1740,6 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 		static const char		msc_szLastChangeItemAttrFlag[];		///< 최근 아이템 속성을 변경한 시간의 Quest Flag 이름
 		static const char		msc_szChangeItemAttrCycleFlag[];		///< 아이템 속성병경 가능 주기의 Quest Flag 이름
 		// END_OF_CHANGE_ITEM_ATTRIBUTES
-
-		// PC_BANG_ITEM_ADD
-	private :
-		bool m_isinPCBang;
-
-	public :
-		bool SetPCBang(bool flag) { m_isinPCBang = flag; return m_isinPCBang; }
-		bool IsPCBang() const { return m_isinPCBang; }
-		// END_PC_BANG_ITEM_ADD
 
 		// NEW_HAIR_STYLE_ADD
 	public :

@@ -38,7 +38,6 @@
 #include "log.h"
 
 #include "horsename_manager.h"
-#include "pcbang.h"
 #include "gm.h"
 #include "panama.h"
 #include "map_location.h"
@@ -939,8 +938,6 @@ void CInputDB::Boot(const char* data)
 	{
 		CMobManager::instance().DumpRegenCount("mob_count");
 	}
-
-	CPCBangManager::instance().RequestUpdateIPList(0);
 }
 
 EVENTINFO(quest_login_event_info)

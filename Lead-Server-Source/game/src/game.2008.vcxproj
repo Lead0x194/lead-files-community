@@ -176,7 +176,6 @@
     <ClCompile Include="packet_info.cpp" />
     <ClCompile Include="panama.cpp" />
     <ClCompile Include="party.cpp" />
-    <ClCompile Include="pcbang.cpp" />
     <ClCompile Include="PetSystem.cpp" />
     <ClCompile Include="polymorph.cpp" />
     <ClCompile Include="priv_manager.cpp" />
@@ -322,7 +321,6 @@
     <ClInclude Include="packet_info.h" />
     <ClInclude Include="panama.h" />
     <ClInclude Include="party.h" />
-    <ClInclude Include="pcbang.h" />
     <ClInclude Include="PetSystem.h" />
     <ClInclude Include="polymorph.h" />
     <ClInclude Include="pool.h" />
