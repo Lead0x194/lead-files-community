@@ -266,13 +266,13 @@ class LoginWindow(ui.ScriptWindow):
 
 		print "---------------------------------------------------------------------------- CLOSE LOGIN WINDOW "
 		#
-		# selectMusicï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ BGMï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ ï¿½Î°ï¿½ ï¿½ï¿½ Ã¼Å©ï¿½Ñ´ï¿½. 
+		# selectMusic¿¿ ¿¿¿¿¿¿ BGM¿¿ ¿¿¿¿¿¿ ¿¿¿ ¿¿ ü¿¿¿¿. 
 		#
 		if musicInfo.loginMusic != "" and musicInfo.selectMusic != "":
 			snd.FadeOutMusic("BGM/"+musicInfo.loginMusic)
 
-		## NOTE : idEditLineï¿½ï¿½ pwdEditLineï¿½ï¿½ ï¿½Ìºï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ç¾ï¿½ï¿½Ö¾î¼­
-		##        Eventï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê±ï¿½È­ ï¿½ï¿½ï¿½Ö¾ï¿½ß¸ï¿½ ï¿½Õ´Ï´ï¿½ - [levites]
+		## NOTE : idEditLine¿¿ pwdEditLine¿¿ ¿¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿¿
+		##        Event¿¿ ¿¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿¿¿ ¿¿¿¿ - [levites]
 		self.idEditLine.SetTabEvent(0)
 		self.idEditLine.SetReturnEvent(0)
 		self.pwdEditLine.SetReturnEvent(0)
@@ -358,11 +358,11 @@ class LoginWindow(ui.ScriptWindow):
 
 	def SetPasswordEditLineFocus(self):
 		if localeInfo.IsEUROPE():
-			if self.idEditLine != None: #0000862: [M2EU] ï¿½Î±ï¿½ï¿½ï¿½Ã¢ ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ None ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			if self.idEditLine != None: #0000862: [M2EU] ¿¿¿¿¿â ¿¿¿ ¿¿¿¿: ¿¿¿¿¿ ¿¿¿¿ None ¿¿¿¿¿¿
 				self.idEditLine.SetText("")
-				self.idEditLine.SetFocus() #0000685: [M2EU] ï¿½ï¿½ï¿½Ìµï¿½/ï¿½ï¿½Ð¹ï¿½È£ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+				self.idEditLine.SetFocus() #0000685: [M2EU] ¿¿¿¿¿/¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿¿: ¿¿¿¿¿¿ ¿¿¿¿¿¿ ¿¿¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿
 
-			if self.pwdEditLine != None: #0000862: [M2EU] ï¿½Î±ï¿½ï¿½ï¿½Ã¢ ï¿½Ë¾ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ None ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+			if self.pwdEditLine != None: #0000862: [M2EU] ¿¿¿¿¿â ¿¿¿ ¿¿¿¿: ¿¿¿¿¿ ¿¿¿¿ None ¿¿¿¿¿¿
 				self.pwdEditLine.SetText("")
 		else:
 			if self.pwdEditLine != None:
@@ -417,7 +417,7 @@ class LoginWindow(ui.ScriptWindow):
 				loginFailureMsg = localeInfo.LOGIN_FAILURE_UNKNOWN  + error
 
 
-		#0000685: [M2EU] ï¿½ï¿½ï¿½Ìµï¿½/ï¿½ï¿½Ð¹ï¿½È£ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ð½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+		#0000685: [M2EU] ¿¿¿¿¿/¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿¿ ¿¿¿¿: ¿¿¿¿¿¿ ¿¿¿¿¿¿¿¿ ¿¿¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿
 		loginFailureFunc=self.loginFailureFuncDict.get(error, self.SetPasswordEditLineFocus)
 
 		if app.loggined:
@@ -621,18 +621,18 @@ class LoginWindow(ui.ScriptWindow):
 			execfile(loginInfoFileName, loginInfo)
 		except IOError:
 			print(\
-				"ï¿½Úµï¿½ ï¿½Î±ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ï½Ã·ï¿½ï¿½ï¿½" + loginInfoFileName + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½ï¿½ï¿½Ö¼ï¿½ï¿½ï¿½\n"\
+				"¿¿¿ ¿¿¿¿¿¿¿ ¿¿÷¿¿¿" + loginInfoFileName + "¿¿¿¿¿¿ ¿¿¿¿¿¿¿¿¿¿\n"\
 				"\n"\
-				"ï¿½ï¿½ï¿½ï¿½:\n"\
+				"¿¿¿¿:\n"\
 				"================================================================\n"\
-				"addr=ï¿½Ö¼ï¿½\n"\
-				"port=ï¿½ï¿½Æ®\n"\
-				"id=ï¿½ï¿½ï¿½Ìµï¿½\n"\
-				"pwd=ï¿½ï¿½Ð¹ï¿½È£\n"\
-				"slot=Ä³ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ (ï¿½ï¿½ï¿½Å³ï¿½ -1ï¿½Ì¸ï¿½ ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½)\n"\
-				"autoLogin=ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n"
-				"autoSelect=ï¿½Úµï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½\n"
-				"locale=(ymir) LC_Ymir ï¿½Ï°ï¿½ï¿½ ymirï¿½ï¿½ ï¿½Ûµï¿½. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ koreaï¿½ï¿½ ï¿½Ûµï¿½\n"
+				"addr=¿¿¿\n"\
+				"port=¿¿¿\n"\
+				"id=¿¿¿¿¿\n"\
+				"pwd=¿¿¿¿¿\n"\
+				"slot=¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿ (¿¿¿¿¿ -1¿¿¿ ¿¿¿ ¿¿¿¿ ¿¿¿¿)\n"\
+				"autoLogin=¿¿¿ ¿¿¿¿ ¿¿¿¿\n"
+				"autoSelect=¿¿¿ ¿¿¿¿ ¿¿¿¿\n"
+				"locale=(ymir) LC_Ymir ¿¿¿¿ ymir¿¿ ¿¿¿. ¿¿¿¿¿¿¿¿ ¿¿¿¿¿¿ korea¿¿ ¿¿¿\n"
 			);
 
 		id=loginInfo.get("id", "")
@@ -656,7 +656,7 @@ class LoginWindow(ui.ScriptWindow):
 					self.__SetServerInfo(locale.CHANNEL_TEST_SERVER)
 				except:
 					import exception
-					exception.Abort("LoginWindow.__LoadLoginInfo - ï¿½×½ï¿½Æ®ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¼Ò°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½")
+					exception.Abort("LoginWindow.__LoadLoginInfo - ¿¿¿¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿¿¿¿")
 
 		else:
 			addr=loginInfo.get("addr", "")
@@ -670,7 +670,7 @@ class LoginWindow(ui.ScriptWindow):
 				net.SetMarkServer(addr, port)
 
 				if locale == "ymir" :
-					net.SetServerInfo("Ãµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½")
+					net.SetServerInfo("õ¿¿ ¿¿¿¿")
 					self.serverInfo.SetText("Y:"+addr+":"+str(port))
 				else:
 					net.SetServerInfo(addr+":"+str(port))
@@ -701,7 +701,7 @@ class LoginWindow(ui.ScriptWindow):
 			self.Connect(id, pwd)
 			
 			print "=================================================================================="
-			print "ï¿½Úµï¿½ ï¿½Î±ï¿½ï¿½ï¿½: %s - %s:%d %s" % (loginInfoFileName, addr, port, id)
+			print "¿¿¿ ¿¿¿¿¿: %s - %s:%d %s" % (loginInfoFileName, addr, port, id)
 			print "=================================================================================="
 
 		
@@ -788,7 +788,7 @@ class LoginWindow(ui.ScriptWindow):
 			if channelIndex >= 0:
 				self.channelList.SelectItem(channelIndex)
 
-		## Show/Hide ï¿½Úµå¿¡ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾î¼­ ï¿½Ó½ï¿½ - [levites]
+		## Show/Hide ¿¿¿ ¿¿¿¿¿¿ ¿¿¿ ¿¿¿ - [levites]
 		self.serverBoard.SetPosition(self.xServerBoard, self.yServerBoard)
 		self.serverBoard.Show()
 		self.connectBoard.Hide()
@@ -1000,7 +1000,7 @@ class LoginWindow(ui.ScriptWindow):
 			self.PopupNotifyMessage(localeInfo.CHANNEL_SELECT_CHANNEL)
 			return
 
-		# ï¿½ï¿½ï¿½Â°ï¿½ FULL ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+		# ¿¿¿°¿ FULL ¿¿ ¿¿¿¿¿¿ ¿¿¿¿ ¿¿¿¿
 		if state == serverInfo.STATE_DICT[3]: 
 			self.PopupNotifyMessage(localeInfo.CHANNEL_NOTIFY_FULL)
 			return
@@ -1012,9 +1012,9 @@ class LoginWindow(ui.ScriptWindow):
 			channelName = serverInfo.REGION_DICT[regionID][serverID]["channel"][channelID]["name"]
 			addrKey = serverInfo.REGION_DICT[regionID][serverID]["channel"][channelID]["key"]
 			
-			if "Ãµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½" == serverName:			
+			if "õ¿¿ ¿¿¿¿" == serverName:			
 				app.ForceSetLocale("ymir", "locale/ymir")
-			elif "ï¿½èµµ ï¿½ï¿½ï¿½ï¿½" == serverName:			
+			elif "¿¿ ¿¿¿¿" == serverName:			
 				app.ForceSetLocale("we_korea", "locale/we_korea")				
 				
 		except:
@@ -1029,7 +1029,7 @@ class LoginWindow(ui.ScriptWindow):
 			tcp_port = serverInfo.REGION_DICT[regionID][serverID]["channel"][channelID]["tcp_port"]
 		except:
 			import exception
-			exception.Abort("LoginWindow.__OnClickSelectServerButton - ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½")
+			exception.Abort("LoginWindow.__OnClickSelectServerButton - ¿¿¿¿ ¿¿¿¿ ¿¿¿¿")
 
 		try:
 			account_ip = serverInfo.REGION_AUTH_SERVER_DICT[regionID][serverID]["ip"]
@@ -1049,13 +1049,13 @@ class LoginWindow(ui.ScriptWindow):
 
 		except:
 			import exception
-			exception.Abort("LoginWindow.__OnClickSelectServerButton - ï¿½ï¿½Å© ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½")
+			exception.Abort("LoginWindow.__OnClickSelectServerButton - ¿¿¿ ¿¿¿¿ ¿¿¿¿")
 
 
 		if app.USE_OPENID and not app.OPENID_TEST :
-			## 2012.07.19 OpenID : ï¿½ï¿½ï¿½ï¿½
-			# Ã¤ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ È­ï¿½é¿¡ï¿½ï¿½ "È®ï¿½ï¿½"(SelectServerButton) ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,
-			# ï¿½Î±ï¿½ï¿½ï¿½ È­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ñ¾î°¡ï¿½ï¿½ ï¿½Ê°ï¿½ ï¿½Ù·ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ OpenID ï¿½ï¿½ï¿½ï¿½Å°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+			## 2012.07.19 OpenID : ¿¿¿¿
+			# ä¿¿ ¿¿¿¿ ¿¿¿¿¿ "¿¿¿"(SelectServerButton) ¿¿ ¿¿¿¿¿¿¿¿,
+			# ¿¿¿¿¿ ¿¿¿¿¿¿¿ ¿¿¿¿¿ ¿¿¿ ¿¿¿ ¿¿¿¿¿¿ OpenID ¿¿¿¿¿¿¿ ¿¿¿¿¿¿¿¿ ¿¿¿¿
 			self.stream.SetConnectInfo(ip, tcp_port, account_ip, account_port)
 			self.Connect(0, 0)
 		else :
