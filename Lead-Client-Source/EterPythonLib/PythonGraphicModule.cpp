@@ -1,4 +1,7 @@
 #include "StdAfx.h"
+
+#include <chrono>
+
 #include "../eterlib/Camera.h"
 #include "../EterLib/TextBar.h"
 
@@ -817,20 +820,21 @@ PyObject * grpSaveScreenShotToPath(PyObject * poSelf, PyObject * poArgs)
 	if (!PyTuple_GetString(poArgs, 0, &szBasePath))
 		return Py_BuildException();
 
-	struct tm * tmNow;
-	time_t ct;
+	using clock = std::chrono::system_clock;
+	std::time_t seconds = clock::to_time_t(clock::now());
 
-	ct = time(0);
-	tmNow = localtime(&ct);
+	std::tm tmNow{};
+	if (localtime_s(&tmNow, &seconds) != 0)
+		return Py_BuildException();
 
 	char szPath[MAX_PATH + 256];
 	snprintf(szPath, sizeof(szPath), "%s%02d%02d_%02d%02d%02d.jpg", 
 			szBasePath,
-			tmNow->tm_mon + 1,
-			tmNow->tm_mday,
-			tmNow->tm_hour,
-			tmNow->tm_min,
-			tmNow->tm_sec);
+			tmNow.tm_mon + 1,
+			tmNow.tm_mday,
+			tmNow.tm_hour,
+			tmNow.tm_min,
+			tmNow.tm_sec);
 
 	BOOL bResult = CPythonGraphic::Instance().SaveScreenShot(szPath);
 	return Py_BuildValue("(is)", bResult, szPath);
@@ -839,11 +843,12 @@ PyObject * grpSaveScreenShotToPath(PyObject * poSelf, PyObject * poArgs)
 
 PyObject * grpSaveScreenShot(PyObject * poSelf, PyObject * poArgs)
 {
-	struct tm * tmNow;
-	time_t ct;
+	using clock = std::chrono::system_clock;
+	std::time_t seconds = clock::to_time_t(clock::now());
 
-	ct = time(0);
-	tmNow = localtime(&ct);
+	std::tm tmNow{};
+	if (localtime_s(&tmNow, &seconds) != 0)
+		return Py_BuildException();
 
 	char szPath[MAX_PATH + 256];
 	SHGetSpecialFolderPath(NULL, szPath, CSIDL_PERSONAL, TRUE);
@@ -858,11 +863,11 @@ PyObject * grpSaveScreenShot(PyObject * poSelf, PyObject * poArgs)
 		}
 
 	sprintf(szPath + strlen(szPath), "%02d%02d_%02d%02d%02d.jpg", 
-			tmNow->tm_mon + 1,
-			tmNow->tm_mday,
-			tmNow->tm_hour,
-			tmNow->tm_min,
-			tmNow->tm_sec);
+			tmNow.tm_mon + 1,
+			tmNow.tm_mday,
+			tmNow.tm_hour,
+			tmNow.tm_min,
+			tmNow.tm_sec);
 
 	BOOL bResult = CPythonGraphic::Instance().SaveScreenShot(szPath);
 	return Py_BuildValue("(is)", bResult, szPath);

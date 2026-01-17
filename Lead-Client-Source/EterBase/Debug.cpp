@@ -3,6 +3,9 @@
 #include <time.h>
 #include <stdio.h>
 #include "Debug.h"
+
+#include <chrono>
+
 #include "Singleton.h"
 #include "Timer.h"
 
@@ -36,8 +39,12 @@ class CLogFile : public CSingleton<CLogFile>
 			if (!m_fp)
 				return;
 
-			time_t ct = time(0);
-			struct tm ctm = *localtime(&ct);
+			using clock = std::chrono::system_clock;
+			std::time_t seconds = clock::to_time_t(clock::now());
+
+			std::tm ctm{};
+			if (localtime_s(&ctm, &seconds) != 0)
+				return;
 
 			fprintf(m_fp, "%02d%02d %02d:%02d:%05d :: %s", 
 				ctm.tm_mon + 1, 
@@ -213,8 +220,12 @@ void TraceError(const char* c_szFormat, ...)
 	szBuf[len] = '\n';
 	szBuf[len + 1] = '\0';
 
-	time_t ct = time(0);
-	struct tm ctm = *localtime(&ct);
+	using clock = std::chrono::system_clock;
+	std::time_t seconds = clock::to_time_t(clock::now());
+
+	std::tm ctm{};
+	if (localtime_s(&ctm, &seconds) != 0)
+		return;
 
 	fprintf(stderr, "%02d%02d %02d:%02d:%05d :: %s", 
 					ctm.tm_mon + 1, 
@@ -247,8 +258,12 @@ void TraceErrorWithoutEnter(const char* c_szFormat, ...)
 	_vsnprintf(szBuf, sizeof(szBuf), c_szFormat, args);
 	va_end(args);
 
-	time_t ct = time(0);
-	struct tm ctm = *localtime(&ct);
+	using clock = std::chrono::system_clock;
+	std::time_t seconds = clock::to_time_t(clock::now());
+
+	std::tm ctm{};
+	if (localtime_s(&ctm, &seconds) != 0)
+		return;
 
 	fprintf(stderr, "%02d%02d %02d:%02d:%05d :: %s", 
 					ctm.tm_mon + 1, 

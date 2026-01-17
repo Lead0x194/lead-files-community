@@ -4,6 +4,8 @@
 
 #include "PropertyManager.h"
 #include "Property.h"
+
+#include <chrono>
 /*
  *	CProperty 파일 포맷
  *
@@ -124,8 +126,12 @@ void CProperty::PutVector(const char * c_pszKey, const CTokenVector & c_rTokenVe
 
 void GetTimeString(char * str, time_t ct)
 {
-    struct tm tm;
-    tm = *localtime(&ct);
+	using clock = std::chrono::system_clock;
+	std::time_t seconds = clock::to_time_t(clock::now());
+
+	std::tm tm{};
+	if (localtime_s(&tm, &seconds) != 0)
+		return;
 
     _snprintf(str, 15, "%04d%02d%02d%02d%02d%02d",
             tm.tm_year + 1900,
