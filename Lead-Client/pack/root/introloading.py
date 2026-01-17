@@ -17,7 +17,7 @@ import stringCommander
 import emotion
 
 ####################################
-# ºü¸¥ ½ÇÇàÀ» À§ÇÑ ¸ðµâ ·Îµù ºÐ´ã
+# ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Îµï¿½ ï¿½Ð´ï¿½
 ####################################
 import uiRefine
 import uiToolTip
@@ -63,7 +63,7 @@ class LoadingWindow(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 			
-			if localeInfo.IsYMIR() or localeInfo.IsWE_KOREA() or localeInfo.IsCANADA() or localeInfo.IsBRAZIL() or localeInfo.IsEUROPE() or localeInfo.IsJAPAN():
+			if localeInfo.IsYMIR() or localeInfo.IsWE_KOREA() or localeInfo.IsCANADA() or localeInfo.IsEUROPE() or localeInfo.IsJAPAN():
 				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "LoadingWindow.py")
 			else:			
 				pyScrLoader.LoadScriptFile(self, "UIScript/LoadingWindow.py")
@@ -80,53 +80,6 @@ class LoadingWindow(ui.ScriptWindow):
 			exception.Abort("LodingWindow.Open - LoadScriptFile Error")
 
 		self.errMsg.Hide()
-
-		# if localeInfo.IsHONGKONG():
-			# imgFileNameDict = {
-				# 0 : app.GetLocalePath() + "/ui/loading/loading0.sub",
-				# 1 : app.GetLocalePath() + "/ui/loading/loading1.sub",
-				# 2 : app.GetLocalePath() + "/ui/loading/loading2.sub",
-				# 3 : app.GetLocalePath() + "/ui/loading/loading3.sub",
-				# 4 : app.GetLocalePath() + "/ui/loading/loading4.sub",
-				# 5 : app.GetLocalePath() + "/ui/loading/loading5.sub",
-				# 6 : app.GetLocalePath() + "/ui/loading/loading6.sub"
-			# }
-		# elif localeInfo.IsCIBN10():
-			# imgFileNameDict = {
-				# 0 : app.GetLocalePath() + "/ui/loading/loading0.jpg",
-				# 1 : app.GetLocalePath() + "/ui/loading/loading1.jpg",
-				# 2 : app.GetLocalePath() + "/ui/loading/loading2.jpg",
-				# 3 : app.GetLocalePath() + "/ui/loading/loading3.jpg",
-				# 4 : app.GetLocalePath() + "/ui/loading/loading4.jpg",
-				# 5 : app.GetLocalePath() + "/ui/loading/loading5.jpg",
-				# 6 : app.GetLocalePath() + "/ui/loading/loading6.jpg",
-				# 7 : app.GetLocalePath() + "/ui/loading/loading7.jpg",
-			# }
-		# elif localeInfo.IsYMIR() or localeInfo.IsWE_KOREA() or localeInfo.IsCANADA() or localeInfo.IsBRAZIL() or localeInfo.IsEUROPE() or localeInfo.IsJAPAN():
-			# imgFileNameDict = {
-				# 0 : uiScriptLocale.LOCALE_UISCRIPT_PATH + "loading/loading0.sub",
-				# 1 : uiScriptLocale.LOCALE_UISCRIPT_PATH + "loading/loading1.sub",
-				# 2 : uiScriptLocale.LOCALE_UISCRIPT_PATH + "loading/loading2.sub",
-				# 3 : uiScriptLocale.LOCALE_UISCRIPT_PATH + "loading/loading3.sub",
-
-			# }
-		# elif constInfo.SUB2_LOADING_ENABLE:
-			# imgFileNameDict = {
-				# 0 : "d:/ymir work/uiloading/background_loading_warrior.sub",
-				# 1 : "d:/ymir work/uiloading/background_loading_assassin.sub",
-				# 2 : "d:/ymir work/uiloading/background_loading_shaman.sub",
-				# 3 : "d:/ymir work/uiloading/background_loading_sura.sub",
-				# 4 : "d:/ymir work/uiloading/background_loading_assassin2.sub",
-				# 5 : "d:/ymir work/uiloading/background_loading_sura2.sub",
-				# 6 : "d:/ymir work/uiloading/background_loading_assassin3.sub",
-				# 7 : "d:/ymir work/uiloading/background_loading_assassin3.sub",
-			# }
-		# else:
-			# imgFileNameDict = {
-				# 0 : "d:/ymir work/ui/intro/pattern/background_loading_warrior.jpg",
-				# 1 : "d:/ymir work/ui/intro/pattern/background_loading_assassin.jpg",
-				# 2 : "d:/ymir work/ui/intro/pattern/background_loading_shaman.jpg",
-			# }
 			
 		# Loading merged together
 		imgFileNameDict = {
@@ -213,7 +166,7 @@ class LoadingWindow(ui.ScriptWindow):
 		self.playerX=playerX
 		self.playerY=playerY
 
-		self.__RegisterSkill() ## ·Îµù Áß°£¿¡ ½ÇÇà ÇÏ¸é ¹®Á¦ ¹ß»ý
+		self.__RegisterSkill() ## ï¿½Îµï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
 		self.__RegisterTitleName()
 		self.__RegisterColor()
 		self.__InitData()
@@ -234,7 +187,7 @@ class LoadingWindow(ui.ScriptWindow):
 		self.playerY=playerY
 
 		self.__RegisterDungeonMapName()
-		self.__RegisterSkill() ## ·Îµù Áß°£¿¡ ½ÇÇà ÇÏ¸é ¹®Á¦ ¹ß»ý
+		self.__RegisterSkill() ## ï¿½Îµï¿½ ï¿½ß°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
 		self.__RegisterTitleName()
 		self.__RegisterColor()
 		self.__RegisterEmotionIcon()
@@ -272,7 +225,7 @@ class LoadingWindow(ui.ScriptWindow):
 				self.errMsg.Show()
 				self.loadStepList=[]
 
-				## ÀÌ°÷¿¡¼­ syserr.txt ¸¦ º¸³½´Ù.
+				## ï¿½Ì°ï¿½ï¿½ï¿½ï¿½ï¿½ syserr.txt ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.
 
 				import dbg
 				dbg.TraceError(" !!! Failed to load game data : STEP [%d]" % (progress))
