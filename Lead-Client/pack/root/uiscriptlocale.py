@@ -60,8 +60,6 @@ else:
 		name = "locale/japan"
 	elif "TAIWAN" == app.GetLocaleServiceName():
 		name = "locale/taiwan"
-	elif "NEWCIBN" == app.GetLocaleServiceName():
-		name = "locale/newcibn"
 	elif "EUROPE" == app.GetLocaleServiceName():
 		name = app.GetLocalePath()
 	else:

@@ -345,15 +345,10 @@ def __LoadGameEffect():
 	chrmgr.RegisterEffect(chrmgr.EFFECT_LEVELUP, "", "d:/ymir work/effect/etc/levelup_1/level_up.mse")
 	chrmgr.RegisterEffect(chrmgr.EFFECT_SKILLUP, "", "d:/ymir work/effect/etc/skillup/skillup_1.mse")
 
-	if localeInfo.IsNEWCIBN():
-		chrmgr.RegisterEffect(chrmgr.EFFECT_EMPIRE+1, "Bip01", "locale/newcibn/effect/empire/empire_A.mse")
-		chrmgr.RegisterEffect(chrmgr.EFFECT_EMPIRE+2, "Bip01", "locale/newcibn/effect/empire/empire_B.mse")
-		chrmgr.RegisterEffect(chrmgr.EFFECT_EMPIRE+3, "Bip01", "locale/newcibn/effect/empire/empire_C.mse")
-	else :
-		chrmgr.RegisterEffect(chrmgr.EFFECT_EMPIRE+1, "Bip01", "d:/ymir work/effect/etc/empire/empire_A.mse")
-		chrmgr.RegisterEffect(chrmgr.EFFECT_EMPIRE+2, "Bip01", "d:/ymir work/effect/etc/empire/empire_B.mse")
-		chrmgr.RegisterEffect(chrmgr.EFFECT_EMPIRE+3, "Bip01", "d:/ymir work/effect/etc/empire/empire_C.mse")
- 
+	chrmgr.RegisterEffect(chrmgr.EFFECT_EMPIRE+1, "Bip01", "d:/ymir work/effect/etc/empire/empire_A.mse")
+	chrmgr.RegisterEffect(chrmgr.EFFECT_EMPIRE+2, "Bip01", "d:/ymir work/effect/etc/empire/empire_B.mse")
+	chrmgr.RegisterEffect(chrmgr.EFFECT_EMPIRE+3, "Bip01", "d:/ymir work/effect/etc/empire/empire_C.mse")
+
 	chrmgr.RegisterEffect(chrmgr.EFFECT_WEAPON+1, "equip_right_hand", "d:/ymir work/pc/warrior/effect/geom_sword_loop.mse")
 	chrmgr.RegisterEffect(chrmgr.EFFECT_WEAPON+2, "equip_right_hand", "d:/ymir work/pc/warrior/effect/geom_spear_loop.mse")
 

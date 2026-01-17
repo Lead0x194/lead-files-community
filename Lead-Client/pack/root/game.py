@@ -63,10 +63,6 @@ SCREENSHOT_DIR = None
 if localeInfo.IsEUROPE():
 	SCREENSHOT_CWDSAVE = True
 
-if localeInfo.IsCIBN10():
-	SCREENSHOT_CWDSAVE = False
-	SCREENSHOT_DIR = "YT2W"
-
 cameraDistance = 1550.0
 cameraPitch = 27.0
 cameraRotation = 0.0

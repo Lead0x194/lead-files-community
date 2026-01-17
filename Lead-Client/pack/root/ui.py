@@ -2405,31 +2405,16 @@ class ListBox(Window):
 	def OnRender(self):
 		xRender, yRender = self.GetGlobalPosition()
 		yRender -= self.TEMPORARY_PLACE
-		widthRender = self.width
-		heightRender = self.height + self.TEMPORARY_PLACE*2
 
-		if localeInfo.IsCIBN10:
-			if -1 != self.overLine and self.keyDict[self.overLine] != -1:
-				grp.SetColor(HALF_WHITE_COLOR)
-				grp.RenderBar(xRender + 2, yRender + self.overLine*self.stepSize + 4, self.width - 3, self.stepSize)				
+		if -1 != self.overLine:
+			grp.SetColor(HALF_WHITE_COLOR)
+			grp.RenderBar(xRender + 2, yRender + self.overLine*self.stepSize + 4, self.width - 3, self.stepSize)
 
-			if -1 != self.selectedLine and self.keyDict[self.selectedLine] != -1:
-				if self.selectedLine >= self.basePos:
-					if self.selectedLine - self.basePos < self.showLineCount:
-						grp.SetColor(SELECT_COLOR)
-						grp.RenderBar(xRender + 2, yRender + (self.selectedLine-self.basePos)*self.stepSize + 4, self.width - 3, self.stepSize)
-
-		else:		
-			if -1 != self.overLine:
-				grp.SetColor(HALF_WHITE_COLOR)
-				grp.RenderBar(xRender + 2, yRender + self.overLine*self.stepSize + 4, self.width - 3, self.stepSize)				
-
-			if -1 != self.selectedLine:
-				if self.selectedLine >= self.basePos:
-					if self.selectedLine - self.basePos < self.showLineCount:
-						grp.SetColor(SELECT_COLOR)
-						grp.RenderBar(xRender + 2, yRender + (self.selectedLine-self.basePos)*self.stepSize + 4, self.width - 3, self.stepSize)
-
+		if -1 != self.selectedLine:
+			if self.selectedLine >= self.basePos:
+				if self.selectedLine - self.basePos < self.showLineCount:
+					grp.SetColor(SELECT_COLOR)
+					grp.RenderBar(xRender + 2, yRender + (self.selectedLine-self.basePos)*self.stepSize + 4, self.width - 3, self.stepSize)
 
 
 class ListBox2(ListBox):
