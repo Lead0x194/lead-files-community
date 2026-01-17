@@ -327,7 +327,6 @@ enum ELimitTypes
 	LIMIT_DEX,
 	LIMIT_INT,
 	LIMIT_CON,
-	LIMIT_PCBANG,
 
 	/// 착용 여부와 상관 없이 실시간으로 시간 차감 (socket0에 소멸 시간이 박힘: unix_timestamp 타입)
 	LIMIT_REAL_TIME,						

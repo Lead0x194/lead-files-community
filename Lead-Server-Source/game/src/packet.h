@@ -312,7 +312,6 @@ enum
 
 	HEADER_GG_MONARCH_NOTICE		= 26,
 	HEADER_GG_MONARCH_TRANSFER		= 27,
-	HEADER_GG_PCBANG_UPDATE			= 28,
 
 	HEADER_GG_CHECK_AWAKENESS		= 29,
 };
@@ -2118,12 +2117,6 @@ typedef struct SPacketGGMonarchTransfer
 	long	x;
 	long	y;
 } TPacketMonarchGGTransfer;
-
-typedef struct SPacketGGPCBangUpdate
-{
-	BYTE bHeader;
-	unsigned long ulPCBangID;
-} TPacketPCBangUpdate;
 
 typedef struct SPacketGGCheckAwakeness
 {

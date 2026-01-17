@@ -1,884 +1,290 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
+    <ClCompile Include="affect.cpp" />
+    <ClCompile Include="ani.cpp" />
+    <ClCompile Include="arena.cpp" />
+    <ClCompile Include="auction_manager.cpp" />
+    <ClCompile Include="banword.cpp" />
+    <ClCompile Include="battle.cpp" />
+    <ClCompile Include="BattleArena.cpp" />
+    <ClCompile Include="blend_item.cpp" />
+    <ClCompile Include="BlueDragon.cpp" />
+    <ClCompile Include="BlueDragon_Binder.cpp" />
+    <ClCompile Include="buffer_manager.cpp" />
+    <ClCompile Include="buff_on_attributes.cpp" />
+    <ClCompile Include="building.cpp" />
+    <ClCompile Include="char.cpp" />
+    <ClCompile Include="char_affect.cpp" />
+    <ClCompile Include="char_battle.cpp" />
+    <ClCompile Include="char_change_empire.cpp" />
+    <ClCompile Include="char_dragonsoul.cpp" />
+    <ClCompile Include="char_horse.cpp" />
+    <ClCompile Include="char_item.cpp" />
+    <ClCompile Include="char_manager.cpp" />
+    <ClCompile Include="char_quickslot.cpp" />
+    <ClCompile Include="char_resist.cpp" />
+    <ClCompile Include="char_skill.cpp" />
+    <ClCompile Include="char_state.cpp" />
+    <ClCompile Include="cipher.cpp" />
+    <ClCompile Include="ClientPackageCryptInfo.cpp" />
+    <ClCompile Include="cmd.cpp" />
+    <ClCompile Include="cmd_emotion.cpp" />
+    <ClCompile Include="cmd_general.cpp" />
+    <ClCompile Include="cmd_gm.cpp" />
+    <ClCompile Include="cmd_oxevent.cpp" />
+    <ClCompile Include="config.cpp" />
+    <ClCompile Include="constants.cpp" />
+    <ClCompile Include="crc32.cpp" />
+    <ClCompile Include="cube.cpp" />
+    <ClCompile Include="db.cpp" />
+    <ClCompile Include="desc.cpp" />
+    <ClCompile Include="desc_client.cpp" />
+    <ClCompile Include="desc_manager.cpp" />
+    <ClCompile Include="desc_p2p.cpp" />
+    <ClCompile Include="dev_log.cpp" />
+    <ClCompile Include="DragonLair.cpp" />
+    <ClCompile Include="DragonSoul.cpp" />
+    <ClCompile Include="dragon_soul_table.cpp" />
+    <ClCompile Include="dungeon.cpp" />
+    <ClCompile Include="empire_text_convert.cpp" />
+    <ClCompile Include="entity.cpp" />
+    <ClCompile Include="entity_view.cpp" />
+    <ClCompile Include="event.cpp" />
+    <ClCompile Include="event_queue.cpp" />
+    <ClCompile Include="exchange.cpp" />
+    <ClCompile Include="file_loader.cpp" />
+    <ClCompile Include="fishing.cpp" />
+    <ClCompile Include="FSM.cpp" />
+    <ClCompile Include="gm.cpp" />
+    <ClCompile Include="group_text_parse_tree.cpp" />
+    <ClCompile Include="guild.cpp" />
+    <ClCompile Include="guild_manager.cpp" />
+    <ClCompile Include="guild_war.cpp" />
+    <ClCompile Include="horsename_manager.cpp" />
+    <ClCompile Include="horse_rider.cpp" />
+    <ClCompile Include="input.cpp" />
+    <ClCompile Include="input_auth.cpp" />
+    <ClCompile Include="input_db.cpp" />
+    <ClCompile Include="input_login.cpp" />
+    <ClCompile Include="input_main.cpp" />
+    <ClCompile Include="input_p2p.cpp" />
+    <ClCompile Include="input_teen.cpp" />
+    <ClCompile Include="ip_ban.cpp" />
+    <ClCompile Include="item.cpp" />
+    <ClCompile Include="item_addon.cpp" />
+    <ClCompile Include="item_attribute.cpp" />
+    <ClCompile Include="item_manager.cpp" />
+    <ClCompile Include="item_manager_idrange.cpp" />
+    <ClCompile Include="item_manager_read_tables.cpp" />
+    <ClCompile Include="locale.cpp" />
+    <ClCompile Include="locale_service.cpp" />
+    <ClCompile Include="log.cpp" />
+    <ClCompile Include="login_data.cpp" />
+    <ClCompile Include="lzo_manager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="map_location.cpp" />
+    <ClCompile Include="MarkConvert.cpp" />
+    <ClCompile Include="MarkImage.cpp" />
+    <ClCompile Include="MarkManager.cpp" />
+    <ClCompile Include="marriage.cpp" />
+    <ClCompile Include="messenger_manager.cpp" />
+    <ClCompile Include="minilzo.c" />
+    <ClCompile Include="mining.cpp" />
+    <ClCompile Include="mob_manager.cpp" />
+    <ClCompile Include="monarch.cpp" />
+    <ClCompile Include="motion.cpp" />
+    <ClCompile Include="OXEvent.cpp" />
+    <ClCompile Include="p2p.cpp" />
+    <ClCompile Include="packet_info.cpp" />
+    <ClCompile Include="panama.cpp" />
+    <ClCompile Include="party.cpp" />
+    <ClCompile Include="PetSystem.cpp" />
+    <ClCompile Include="polymorph.cpp" />
+    <ClCompile Include="priv_manager.cpp" />
+    <ClCompile Include="pvp.cpp" />
+    <ClCompile Include="questevent.cpp" />
+    <ClCompile Include="questlua.cpp" />
+    <ClCompile Include="questlua_affect.cpp" />
+    <ClCompile Include="questlua_arena.cpp" />
+    <ClCompile Include="questlua_ba.cpp" />
+    <ClCompile Include="questlua_building.cpp" />
+    <ClCompile Include="questlua_dragonlair.cpp" />
+    <ClCompile Include="questlua_dragonsoul.cpp" />
+    <ClCompile Include="questlua_dungeon.cpp" />
+    <ClCompile Include="questlua_forked.cpp" />
+    <ClCompile Include="questlua_game.cpp" />
+    <ClCompile Include="questlua_global.cpp" />
+    <ClCompile Include="questlua_guild.cpp" />
+    <ClCompile Include="questlua_horse.cpp" />
+    <ClCompile Include="questlua_item.cpp" />
+    <ClCompile Include="questlua_marriage.cpp" />
+    <ClCompile Include="questlua_mgmt.cpp" />
+    <ClCompile Include="questlua_monarch.cpp" />
+    <ClCompile Include="questlua_npc.cpp" />
+    <ClCompile Include="questlua_oxevent.cpp" />
+    <ClCompile Include="questlua_party.cpp" />
+    <ClCompile Include="questlua_pc.cpp" />
+    <ClCompile Include="questlua_pet.cpp" />
+    <ClCompile Include="questlua_quest.cpp" />
+    <ClCompile Include="questlua_speedserver.cpp" />
+    <ClCompile Include="questlua_target.cpp" />
+    <ClCompile Include="questmanager.cpp" />
+    <ClCompile Include="questnpc.cpp" />
+    <ClCompile Include="questpc.cpp" />
+    <ClCompile Include="refine.cpp" />
+    <ClCompile Include="regen.cpp" />
+    <ClCompile Include="safebox.cpp" />
+    <ClCompile Include="sectree.cpp" />
+    <ClCompile Include="sectree_manager.cpp" />
+    <ClCompile Include="sequence.cpp" />
+    <ClCompile Include="shop.cpp" />
+    <ClCompile Include="shopEx.cpp" />
+    <ClCompile Include="shop_manager.cpp" />
+    <ClCompile Include="skill.cpp" />
+    <ClCompile Include="skill_power.cpp" />
+    <ClCompile Include="SpeedServer.cpp" />
+    <ClCompile Include="start_position.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="target.cpp" />
+    <ClCompile Include="text_file_loader.cpp" />
+    <ClCompile Include="threeway_war.cpp" />
+    <ClCompile Include="trigger.cpp" />
+    <ClCompile Include="utils.cpp" />
+    <ClCompile Include="vector.cpp" />
+    <ClCompile Include="version.cpp" />
+    <ClCompile Include="war_map.cpp" />
+    <ClCompile Include="wedding.cpp" />
+    <ClCompile Include="xmas_event.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="affect.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ani.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="arena.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="auction_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="banword.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="battle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BattleArena.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="blend_item.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BlueDragon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BlueDragon_Binder.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="buff_on_attributes.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="buffer_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="building.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_affect.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_battle.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_change_empire.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_dragonsoul.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_horse.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_item.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_quickslot.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_resist.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_skill.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="char_state.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="check_server.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cipher.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ClientPackageCryptInfo.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cmd.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cmd_emotion.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cmd_general.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cmd_gm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cmd_oxevent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="config.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="constants.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="crc32.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="cube.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="db.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="desc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="desc_client.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="desc_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="desc_p2p.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dev_log.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dragon_soul_table.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DragonLair.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DragonSoul.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="dungeon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="empire_text_convert.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="entity.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="entity_view.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="event.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="event_queue.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="exchange.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="file_loader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="fishing.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="FSM.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="gm.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="group_text_parse_tree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="guild.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="guild_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="guild_war.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="horse_rider.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="horsename_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="input.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="input_auth.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="input_db.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="input_login.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="input_main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="input_p2p.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="input_teen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ip_ban.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="item.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="item_addon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="item_attribute.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="item_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="item_manager_idrange.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="item_manager_read_tables.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="locale.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="locale_service.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="log.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="login_data.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="lzo_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="map_location.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MarkConvert.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MarkImage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MarkManager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="marriage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="messenger_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="minilzo.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mining.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mob_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="monarch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="motion.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="OXEvent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="p2p.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="packet_info.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="panama.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="party.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pcbang.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PetSystem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="polymorph.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="priv_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pvp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questevent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_affect.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_arena.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_ba.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_building.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_dragonlair.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_dragonsoul.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_dungeon.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_forked.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_game.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_global.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_guild.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_horse.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_item.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_marriage.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_mgmt.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_monarch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_npc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_oxevent.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_party.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_pc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_pet.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_quest.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_speedserver.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questlua_target.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questmanager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questnpc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="questpc.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="refine.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="regen.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="safebox.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sectree.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sectree_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="sequence.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="shop.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="shop_manager.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="shopEx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="skill.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="skill_power.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SpeedServer.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="start_position.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="target.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="text_file_loader.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="threeway_war.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TrafficProfiler.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="trigger.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="utils.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="vector.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="version.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="war_map.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="wedding.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="xmas_event.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="stdafx.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
+    <ClInclude Include="affect.h" />
+    <ClInclude Include="affect_flag.h" />
+    <ClInclude Include="ani.h" />
+    <ClInclude Include="any_function.h" />
+    <ClInclude Include="arena.h" />
+    <ClInclude Include="auction_manager.h" />
+    <ClInclude Include="auction_packet.h" />
+    <ClInclude Include="banword.h" />
+    <ClInclude Include="battle.h" />
+    <ClInclude Include="BattleArena.h" />
+    <ClInclude Include="belt_inventory_helper.h" />
+    <ClInclude Include="blend_item.h" />
+    <ClInclude Include="BlueDragon.h" />
+    <ClInclude Include="BlueDragon_Binder.h" />
+    <ClInclude Include="BlueDragon_Skill.h" />
+    <ClInclude Include="buffer_manager.h" />
+    <ClInclude Include="buff_on_attributes.h" />
+    <ClInclude Include="building.h" />
+    <ClInclude Include="char.h" />
+    <ClInclude Include="char_manager.h" />
+    <ClInclude Include="cipher.h" />
+    <ClInclude Include="ClientPackageCryptInfo.h" />
+    <ClInclude Include="cmd.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="constants.h" />
+    <ClInclude Include="crc32.h" />
+    <ClInclude Include="cube.h" />
+    <ClInclude Include="db.h" />
+    <ClInclude Include="debug_allocator.h" />
+    <ClInclude Include="debug_allocator_adapter.h" />
+    <ClInclude Include="debug_ptr.h" />
+    <ClInclude Include="desc.h" />
+    <ClInclude Include="desc_client.h" />
+    <ClInclude Include="desc_manager.h" />
+    <ClInclude Include="desc_p2p.h" />
+    <ClInclude Include="dev_log.h" />
+    <ClInclude Include="DragonLair.h" />
+    <ClInclude Include="DragonSoul.h" />
+    <ClInclude Include="dragon_soul_table.h" />
+    <ClInclude Include="dungeon.h" />
+    <ClInclude Include="empire_text_convert.h" />
+    <ClInclude Include="entity.h" />
+    <ClInclude Include="event.h" />
+    <ClInclude Include="event_queue.h" />
+    <ClInclude Include="exchange.h" />
+    <ClInclude Include="fifo_allocator.h" />
+    <ClInclude Include="file_loader.h" />
+    <ClInclude Include="fishing.h" />
+    <ClInclude Include="FSM.h" />
+    <ClInclude Include="gm.h" />
+    <ClInclude Include="group_text_parse_tree.h" />
+    <ClInclude Include="guild.h" />
+    <ClInclude Include="guild_manager.h" />
+    <ClInclude Include="horsename_manager.h" />
+    <ClInclude Include="horse_rider.h" />
+    <ClInclude Include="IFileMonitor.h" />
+    <ClInclude Include="input.h" />
+    <ClInclude Include="ip_ban.h" />
+    <ClInclude Include="item.h" />
+    <ClInclude Include="item_addon.h" />
+    <ClInclude Include="item_manager.h" />
+    <ClInclude Include="item_manager_private_types.h" />
+    <ClInclude Include="locale.hpp" />
+    <ClInclude Include="locale_service.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="login_data.h" />
+    <ClInclude Include="lua_incl.h" />
+    <ClInclude Include="lzo_manager.h" />
+    <ClInclude Include="map_location.h" />
+    <ClInclude Include="MarkImage.h" />
+    <ClInclude Include="MarkManager.h" />
+    <ClInclude Include="marriage.h" />
+    <ClInclude Include="messenger_manager.h" />
+    <ClInclude Include="minilzo.h" />
+    <ClInclude Include="mining.h" />
+    <ClInclude Include="mob_manager.h" />
+    <ClInclude Include="monarch.h" />
+    <ClInclude Include="motion.h" />
+    <ClInclude Include="OXEvent.h" />
+    <ClInclude Include="p2p.h" />
+    <ClInclude Include="packet.h" />
+    <ClInclude Include="packet_info.h" />
+    <ClInclude Include="panama.h" />
+    <ClInclude Include="party.h" />
+    <ClInclude Include="PetSystem.h" />
+    <ClInclude Include="polymorph.h" />
+    <ClInclude Include="pool.h" />
+    <ClInclude Include="priv_manager.h" />
+    <ClInclude Include="profiler.h" />
+    <ClInclude Include="protocol.h" />
+    <ClInclude Include="pvp.h" />
+    <ClInclude Include="quest.h" />
+    <ClInclude Include="questevent.h" />
+    <ClInclude Include="questlua.h" />
+    <ClInclude Include="questmanager.h" />
+    <ClInclude Include="questnpc.h" />
+    <ClInclude Include="questpc.h" />
+    <ClInclude Include="refine.h" />
+    <ClInclude Include="regen.h" />
+    <ClInclude Include="safebox.h" />
+    <ClInclude Include="sectree.h" />
+    <ClInclude Include="sectree_manager.h" />
+    <ClInclude Include="sequence.h" />
+    <ClInclude Include="shop.h" />
+    <ClInclude Include="shopEx.h" />
+    <ClInclude Include="shop_manager.h" />
+    <ClInclude Include="skill.h" />
+    <ClInclude Include="skill_power.h" />
+    <ClInclude Include="spam.h" />
+    <ClInclude Include="SpeedServer.h" />
+    <ClInclude Include="stable_priority_queue.h" />
+    <ClInclude Include="start_position.h" />
+    <ClInclude Include="state.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="target.h" />
+    <ClInclude Include="text_file_loader.h" />
+    <ClInclude Include="threeway_war.h" />
+    <ClInclude Include="typedef.h" />
+    <ClInclude Include="unique_item.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="vector.h" />
+    <ClInclude Include="vid.h" />
+    <ClInclude Include="war_map.h" />
+    <ClInclude Include="wedding.h" />
+    <ClInclude Include="xmas_event.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="affect.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="affect_flag.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ani.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="any_function.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="arena.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="auction_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="auction_packet.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="banword.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="battle.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BattleArena.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="belt_inventory_helper.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="blend_item.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BlueDragon.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BlueDragon_Binder.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="BlueDragon_Skill.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="buff_on_attributes.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="buffer_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="building.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="char.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="char_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cipher.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ClientPackageCryptInfo.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cmd.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="config.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="constants.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="crc32.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="cube.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="db.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="debug_allocator.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="debug_allocator_adapter.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="debug_ptr.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="desc.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="desc_client.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="desc_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="desc_p2p.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dev_log.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dragon_soul_table.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DragonLair.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DragonSoul.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="dungeon.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="empire_text_convert.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="entity.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="event.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="event_queue.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="exchange.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="fifo_allocator.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="file_loader.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="fishing.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="FSM.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="gm.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="group_text_parse_tree.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="guild.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="guild_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="horse_rider.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="horsename_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="IFileMonitor.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="input.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ip_ban.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="item.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="item_addon.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="item_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="item_manager_private_types.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="locale.hpp">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="locale_service.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="log.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="login_data.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lua_incl.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="lzo_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="map_location.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MarkImage.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MarkManager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="marriage.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="messenger_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="minilzo.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mining.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="mob_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="monarch.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="motion.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="OXEvent.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="p2p.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="packet.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="packet_info.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="panama.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="party.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pcbang.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PetSystem.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="polymorph.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pool.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="priv_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="profiler.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="protocol.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pvp.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="quest.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="questevent.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="questlua.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="questmanager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="questnpc.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="questpc.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="refine.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="regen.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="safebox.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="sectree.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="sectree_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="sequence.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="shop.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="shop_manager.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="shopEx.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="skill.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="skill_power.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="spam.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SpeedServer.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="stable_priority_queue.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="start_position.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="state.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="stdafx.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="target.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="text_file_loader.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="threeway_war.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TrafficProfiler.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="typedef.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="unique_item.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="utils.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="vector.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="vid.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="war_map.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="wedding.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="xmas_event.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="check_server.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="any_function.inc">
-      <Filter>Source Files</Filter>
-    </None>
+    <None Include="any_function.inc" />
   </ItemGroup>
 </Project>

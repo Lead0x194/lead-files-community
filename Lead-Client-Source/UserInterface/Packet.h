@@ -1575,8 +1575,6 @@ enum EPointTypes
    
     POINT_SKILL_DEFEND_BONUS,       // 123 스킬 방어 데미지
     POINT_NORMAL_HIT_DEFEND_BONUS,  // 124 평타 방어 데미지
-    POINT_PC_BANG_EXP_BONUS,        // 125
-	POINT_PC_BANG_DROP_BONUS,       // 126 PC방 전용 드롭률 보너스
 
 	POINT_ENERGY = 128,				// 128 기력
 

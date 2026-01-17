@@ -34,7 +34,6 @@
 #include "BattleArena.h"
 #include "arena.h"
 #include "dev_log.h"
-#include "pcbang.h"
 #include "threeway_war.h"
 
 #include "safebox.h"
@@ -2216,19 +2215,6 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 							}
 							else
 							{
-								// PC_BANG_ITEM_ADD
-								if (item->IsPCBangItem() == true)
-								{
-									// PC방인지 체크해서 처리
-									if (CPCBangManager::instance().IsPCBangIP(GetDesc()->GetHostName()) == false)
-									{
-										// PC방이 아님!
-										ChatPacket(CHAT_TYPE_INFO, LC_TEXT("이 아이템은 PC방에서만 사용할 수 있습니다."));
-										return false;
-									}
-								}
-								// END_PC_BANG_ITEM_ADD
-
 								AddAffect(AFFECT_EXP_BONUS_EURO_FREE, aApplyInfo[item->GetValue(1)].bPointType, item->GetValue(2), 0, item->GetValue(3), 0, false, true);
 								item->SetCount(item->GetCount() - 1);
 							}
@@ -4848,19 +4834,6 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 							}
 							else
 							{
-								// PC_BANG_ITEM_ADD
-								if (item->IsPCBangItem() == true)
-								{
-									// PC방인지 체크해서 처리
-									if (CPCBangManager::instance().IsPCBangIP(GetDesc()->GetHostName()) == false)
-									{
-										// PC방이 아님!
-										ChatPacket(CHAT_TYPE_INFO, LC_TEXT("이 아이템은 PC방에서만 사용할 수 있습니다."));
-										return false;
-									}
-								}
-								// END_PC_BANG_ITEM_ADD
-
 								AddAffect(item->GetValue(0), aApplyInfo[item->GetValue(1)].bPointType, item->GetValue(2), 0, item->GetValue(3), 0, false);
 								item->SetCount(item->GetCount() - 1);
 							}

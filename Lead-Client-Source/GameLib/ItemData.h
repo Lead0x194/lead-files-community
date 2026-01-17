@@ -166,7 +166,6 @@ class CItemData
 			LIMIT_DEX,
 			LIMIT_INT,
 			LIMIT_CON,
-			LIMIT_PCBANG,
 
 			/// 착용 여부와 상관 없이 실시간으로 시간 차감 (socket0에 소멸 시간이 박힘: unix_timestamp 타입)
 			LIMIT_REAL_TIME,						
@@ -331,8 +330,6 @@ class CItemData
 			APPLY_SKILL_DEFEND_BONUS,   // 73 스킬 데미지 방어 * (100-x)%
 			APPLY_NORMAL_HIT_DEFEND_BONUS,      // 74 평타 데미지 방어 * (100-x)%
 			APPLY_EXTRACT_HP_PCT,		//75
-			APPLY_PC_BANG_EXP_BONUS,		//76
-			APPLY_PC_BANG_DROP_BONUS,		//77
 			APPLY_RESIST_WARRIOR,			//78
 			APPLY_RESIST_ASSASSIN ,			//79
 			APPLY_RESIST_SURA,				//80
