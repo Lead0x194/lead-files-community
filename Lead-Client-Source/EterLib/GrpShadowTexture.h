@@ -17,19 +17,19 @@ class CGraphicShadowTexture : public CGraphicTexture
 		void Set(int stage = 0) const;
 
 		const D3DXMATRIX& GetLightVPMatrixReference() const;
-		LPDIRECT3DTEXTURE8 GetD3DTexture() const;
+		LPDIRECT3DTEXTURE9 GetD3DTexture() const;
 
 	protected:
 		void Initialize();
 		
 	protected:
 		D3DXMATRIX			m_d3dLightVPMatrix;
-		D3DVIEWPORT8		m_d3dOldViewport;
+		D3DVIEWPORT9		m_d3dOldViewport;
 		
-		LPDIRECT3DTEXTURE8	m_lpd3dShadowTexture;
-		LPDIRECT3DSURFACE8	m_lpd3dShadowSurface;
-		LPDIRECT3DSURFACE8	m_lpd3dDepthSurface;
+		LPDIRECT3DTEXTURE9	m_lpd3dShadowTexture;
+		LPDIRECT3DSURFACE9	m_lpd3dShadowSurface;
+		LPDIRECT3DSURFACE9	m_lpd3dDepthSurface;
 
-		LPDIRECT3DSURFACE8	m_lpd3dOldBackBufferSurface;
-		LPDIRECT3DSURFACE8	m_lpd3dOldDepthBufferSurface;
+		LPDIRECT3DSURFACE9	m_lpd3dOldBackBufferSurface;
+		LPDIRECT3DSURFACE9	m_lpd3dOldDepthBufferSurface;
 };

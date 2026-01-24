@@ -78,7 +78,7 @@ class CTerrain : public CTerrainImpl, public CGraphicBase
 
 		// MiniMap
 		void						LoadMiniMapTexture(const char * c_pszFileName);
-		inline LPDIRECT3DTEXTURE8	GetMiniMapTexture() { return m_lpMiniMapTexture; }
+		inline LPDIRECT3DTEXTURE9	GetMiniMapTexture() { return m_lpMiniMapTexture; }
 
 		// Marked Area
 		BOOL						IsMarked() { return m_bMarked; }
@@ -107,7 +107,7 @@ class CTerrain : public CTerrainImpl, public CGraphicBase
 		void	RAW_DeallocateSplats(bool bBGLoading = false);
 		virtual void RAW_CountTiles();
 
-		LPDIRECT3DTEXTURE8 AddTexture32(BYTE byImageNum, BYTE * pbyImage, long lTextureWidth, long lTextureHeight);
+		LPDIRECT3DTEXTURE9 AddTexture32(BYTE byImageNum, BYTE * pbyImage, long lTextureWidth, long lTextureHeight);
 		void PutImage32(BYTE * pbySrc, BYTE * pbyDst, long src_pitch, long dst_pitch, long lTextureWidth, long lTextureHeight, bool bResize = false);
 		void PutImage16(BYTE * pbySrc, BYTE * pbyDst, long src_pitch, long dst_pitch, long lTextureWidth, long lTextureHeight, bool bResize = false);
 
@@ -126,7 +126,7 @@ class CTerrain : public CTerrainImpl, public CGraphicBase
 
 		//MiniMap
 		CGraphicImageInstance	m_MiniMapGraphicImageInstance;
-		LPDIRECT3DTEXTURE8		m_lpMiniMapTexture;
+		LPDIRECT3DTEXTURE9		m_lpMiniMapTexture;
 
 
 		// Owner COutdoorMap poineter
@@ -142,7 +142,7 @@ class CTerrain : public CTerrainImpl, public CGraphicBase
 
 		BOOL					m_bMarked;
 		TTerrainSplatPatch		m_MarkedSplatPatch;
-		LPDIRECT3DTEXTURE8		m_lpMarkedTexture;
+		LPDIRECT3DTEXTURE9		m_lpMarkedTexture;
 
 	public:
 		CTerrainPatch *	GetTerrainPatchPtr(BYTE byPatchNumX, BYTE byPatchNumY);

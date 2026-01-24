@@ -126,56 +126,10 @@ static const char g_achSimpleVertexProgram[] =
 ///////////////////////////////////////////////////////////////////////  
 //	LoadBranchShader
 
-static DWORD LoadBranchShader(LPDIRECT3DDEVICE8 pDx)
+static DWORD LoadBranchShader(LPDIRECT3DDEVICE9 pDx)
 {
-	#ifndef WRAPPER_USE_GPU_WIND
-		return D3DFVF_SPEEDTREE_BRANCH_VERTEX;
-	#endif
-
-	// branch shader declaration
-    DWORD pBranchShaderDecl[] = 
-    {
-			D3DVSD_STREAM(0),
-			D3DVSD_REG(D3DVSDE_POSITION,        D3DVSDT_FLOAT3),
-		#ifdef WRAPPER_USE_DYNAMIC_LIGHTING
-			D3DVSD_REG(D3DVSDE_NORMAL,			D3DVSDT_FLOAT3),
-		#else
-			D3DVSD_REG(D3DVSDE_DIFFUSE,			D3DVSDT_D3DCOLOR),
-		#endif
-			D3DVSD_REG(D3DVSDE_TEXCOORD0,		D3DVSDT_FLOAT2),
-		#ifdef WRAPPER_RENDER_SELF_SHADOWS
-			D3DVSD_REG(D3DVSDE_TEXCOORD1,		D3DVSDT_FLOAT2),
-		#endif
-		#ifdef WRAPPER_USE_GPU_WIND
-			D3DVSD_REG(D3DVSDE_TEXCOORD2,		D3DVSDT_FLOAT2),
-		#endif
-			D3DVSD_END( )
-    };
-
-    // assemble shader
-	DWORD dwShader;
-	LPD3DXBUFFER pCode, pError;
-
-    if (D3DXAssembleShader(g_achSimpleVertexProgram, sizeof(g_achSimpleVertexProgram) - 1, 0, NULL, &pCode, &pError) == D3D_OK)
-	{
-		if (pDx->CreateVertexShader(pBranchShaderDecl, (DWORD*) pCode->GetBufferPointer( ), &dwShader, 0) != D3D_OK)
-		{
-			char szError[1024];
-			sprintf_s(szError, sizeof(szError), "Failed to create branch vertex shader.");
-			MessageBox(NULL, szError, "Vertex Shader Error", MB_ICONSTOP);
-		}
-	}
-	else
-	{
-		char szError[1024];
-		sprintf_s(szError, sizeof(szError), "Failed to assemble branch vertex shader.\nThe error reported is [ %s ].\n", (const char*)pError->GetBufferPointer());
-		MessageBox(NULL, szError, "Vertex Shader Error", MB_ICONSTOP);
-	}
-
-	if (pCode)
-    	pCode->Release();
-
-	return dwShader;
+	UNREFERENCED_PARAMETER(pDx);
+	return NULL;
 }
 
 ///////////////////////////////////////////////////////////////////////  
@@ -272,7 +226,7 @@ static const char g_achLeafVertexProgram[] =
 ///////////////////////////////////////////////////////////////////////  
 //	LoadLeafShader
 
-static DWORD LoadLeafShader(LPDIRECT3DDEVICE8 pDx)
+static DWORD LoadLeafShader(LPDIRECT3DDEVICE9 pDx)
 {
 	DWORD dwShader = D3DFVF_SPEEDTREE_LEAF_VERTEX;
 

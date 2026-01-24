@@ -78,9 +78,9 @@ void CGraphicDevice::EnableWebBrowserMode(const RECT& c_rcWebPage)
 	//rkD3DPP.Windowed=TRUE;
 	rkD3DPP.SwapEffect=D3DSWAPEFFECT_COPY;
 	rkD3DPP.BackBufferCount = 1;
-	rkD3DPP.FullScreen_PresentationInterval = D3DPRESENT_INTERVAL_IMMEDIATE;
+	rkD3DPP.PresentationInterval = D3DPRESENT_INTERVAL_IMMEDIATE;
 	
-	IDirect3DDevice8& rkD3DDev=*ms_lpd3dDevice;
+	IDirect3DDevice9& rkD3DDev=*ms_lpd3dDevice;
 	HRESULT hr=rkD3DDev.Reset(&rkD3DPP);
 	if (FAILED(hr))
 		return;
@@ -99,7 +99,7 @@ void CGraphicDevice::DisableWebBrowserMode()
 
 	rkD3DPP=g_kD3DPP;
 
-	IDirect3DDevice8& rkD3DDev=*ms_lpd3dDevice;
+	IDirect3DDevice9& rkD3DDev=*ms_lpd3dDevice;
 	HRESULT hr=rkD3DDev.Reset(&rkD3DPP);
 	if (FAILED(hr))
 		return;
@@ -120,7 +120,7 @@ bool CGraphicDevice::ResizeBackBuffer(UINT uWidth, UINT uHeight)
 			rkD3DPP.BackBufferWidth=uWidth;
 			rkD3DPP.BackBufferHeight=uHeight;
 
-			IDirect3DDevice8& rkD3DDev=*ms_lpd3dDevice;
+			IDirect3DDevice9& rkD3DDev=*ms_lpd3dDevice;
 
 			HRESULT hr=rkD3DDev.Reset(&rkD3DPP);
 			if (FAILED(hr))
@@ -138,91 +138,13 @@ bool CGraphicDevice::ResizeBackBuffer(UINT uWidth, UINT uHeight)
 DWORD CGraphicDevice::CreatePNTStreamVertexShader()
 {
 	assert(ms_lpd3dDevice != NULL);
-	
-	DWORD declVector[] =
-	{
-		D3DVSD_STREAM(0),
-		D3DVSD_REG(0, D3DVSDT_FLOAT3),
-		D3DVSD_REG(3, D3DVSDT_FLOAT3),
-		D3DVSD_REG(7, D3DVSDT_FLOAT2),
-		D3DVSD_END()
-	};
-	
-	DWORD ret;
-	
-	if (FAILED(ms_lpd3dDevice->CreateVertexShader(&declVector[0], NULL, &ret, 0)))
-		return 0;
-	
-	return ret;
+	return D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1;
 }
 
 DWORD CGraphicDevice::CreatePNT2StreamVertexShader()
 {
 	assert(ms_lpd3dDevice != NULL);
-
-	DWORD declVector[] =
-	{
-		D3DVSD_STREAM(0),
-		D3DVSD_REG(0, D3DVSDT_FLOAT3),
-		D3DVSD_REG(3, D3DVSDT_FLOAT3),
-		D3DVSD_REG(7, D3DVSDT_FLOAT2),
-		D3DVSD_REG(D3DVSDE_TEXCOORD1, D3DVSDT_FLOAT2),
-//		D3DVSD_STREAM(1),
-		D3DVSD_END()
-	};
-
-	DWORD ret;
-
-	if (FAILED(ms_lpd3dDevice->CreateVertexShader(&declVector[0], NULL, &ret, 0)))
-		return 0;
-
-	return ret;
-}
-
-DWORD CGraphicDevice::CreatePTStreamVertexShader()
-{
-	assert(ms_lpd3dDevice != NULL);
-
-	DWORD declVector[] = 
-	{
-		D3DVSD_STREAM(0),
-		D3DVSD_REG(0, D3DVSDT_FLOAT3),
-		D3DVSD_STREAM(1),
-		D3DVSD_REG(7, D3DVSDT_FLOAT2),
-		D3DVSD_END()
-	};
-
-	DWORD ret;
-
-	if (FAILED(ms_lpd3dDevice->CreateVertexShader(&declVector[0], NULL, &ret, 0)))
-		return 0;
-
-	return (ret);
-}
-
-DWORD CGraphicDevice::CreateDoublePNTStreamVertexShader()
-{
-	assert(ms_lpd3dDevice != NULL);
-
-	DWORD declVector[] = 
-	{
-		D3DVSD_STREAM(0),
-		D3DVSD_REG(0, D3DVSDT_FLOAT3),
-		D3DVSD_REG(3, D3DVSDT_FLOAT3),
-		D3DVSD_REG(7, D3DVSDT_FLOAT2),
-		D3DVSD_STREAM(1),
-		D3DVSD_REG(D3DVSDE_POSITION2, D3DVSDT_FLOAT3),
-		D3DVSD_REG(D3DVSDE_NORMAL2, D3DVSDT_FLOAT3),
-		D3DVSD_REG(D3DVSDE_TEXCOORD1, D3DVSDT_FLOAT2),
-		D3DVSD_END()
-	};
-
-	DWORD ret;
-
-	if (FAILED(ms_lpd3dDevice->CreateVertexShader(&declVector[0], NULL, &ret, 0)))
-		return 0;
-
-	return ret;
+	return D3DFVF_XYZ | D3DFVF_NORMAL | D3DFVF_TEX1 | D3DFVF_TEX2;
 }
 
 CGraphicDevice::EDeviceState CGraphicDevice::GetDeviceState()
@@ -256,10 +178,10 @@ bool CGraphicDevice::Reset()
 	return true;
 }
 
-static LPDIRECT3DSURFACE8 s_lpStencil;
+static LPDIRECT3DSURFACE9 s_lpStencil;
 static DWORD   s_MaxTextureWidth, s_MaxTextureHeight;
 
-BOOL EL3D_ConfirmDevice(D3DCAPS8& rkD3DCaps, UINT uBehavior, D3DFORMAT /*eD3DFmt*/)
+BOOL EL3D_ConfirmDevice(D3DCAPS9& rkD3DCaps, UINT uBehavior, D3DFORMAT /*eD3DFmt*/)
 {
 	// PUREDEVICE는 GetTransform / GetViewport 등이 되지 않는다.
 	if (uBehavior & D3DCREATE_PUREDEVICE) 
@@ -307,7 +229,7 @@ DWORD GetMaxTextureHeight()
 
 bool CGraphicDevice::__IsInDriverBlackList(D3D_CAdapterInfo& rkD3DAdapterInfo)
 {
-	D3DADAPTER_IDENTIFIER8& rkD3DAdapterIdentifier=rkD3DAdapterInfo.GetIdentifier();
+	D3DADAPTER_IDENTIFIER9& rkD3DAdapterIdentifier=rkD3DAdapterInfo.GetIdentifier();
 
 	char szSrcDriver[256];
 	strncpy(szSrcDriver, rkD3DAdapterIdentifier.Driver, sizeof(szSrcDriver)-1);
@@ -356,7 +278,7 @@ int CGraphicDevice::Create(HWND hWnd, int iHres, int iVres, bool Windowed, int /
 
 	ms_hWnd		= hWnd;
 	ms_hDC		= GetDC(hWnd);
-	ms_lpd3d	= Direct3DCreate8(D3D_SDK_VERSION);
+	ms_lpd3d	= Direct3DCreate9(D3D_SDK_VERSION);
 
 	if (!ms_lpd3d)
 		return CREATE_NO_DIRECTX;
@@ -393,7 +315,7 @@ int CGraphicDevice::Create(HWND hWnd, int iHres, int iVres, bool Windowed, int /
 		return CREATE_DETECT;
 	}
 
-	D3DADAPTER_IDENTIFIER8& rkD3DAdapterId=pkD3DAdapterInfo->GetIdentifier();
+	D3DADAPTER_IDENTIFIER9& rkD3DAdapterId=pkD3DAdapterInfo->GetIdentifier();
 	if (Windowed &&
 		strnicmp(rkD3DAdapterId.Driver, "3dfx", 4)==0 &&
 		22 == pkD3DAdapterInfo->GetDesktopD3DDisplayModer().Format)
@@ -530,7 +452,6 @@ RETRY:
 	D3DXCreateMatrixStack(0, &ms_lpd3dMatStack);
 	ms_lpd3dMatStack->LoadIdentity();
 
-	ms_ptVS	= CreatePTStreamVertexShader();
 	ms_pntVS = CreatePNTStreamVertexShader();
 	ms_pnt2VS = CreatePNT2StreamVertexShader();
 
@@ -580,7 +501,7 @@ RETRY:
 	else
 		GRAPHICS_CAPS_CAN_NOT_TEXTURE_ADDRESS_BORDER=true;
 
-	//D3DADAPTER_IDENTIFIER8& rkD3DAdapterId=pkD3DAdapterInfo->GetIdentifier();
+	//D3DADAPTER_IDENTIFIER9& rkD3DAdapterId=pkD3DAdapterInfo->GetIdentifier();
 	if (strnicmp(rkD3DAdapterId.Driver, "SIS", 3) == 0)
 	{
 		GRAPHICS_CAPS_CAN_NOT_DRAW_LINE = true;
@@ -626,7 +547,7 @@ bool CGraphicDevice::__CreatePDTVertexBufferList()
 			D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY, 
 			D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1, 
 			D3DPOOL_SYSTEMMEM, 
-			&ms_alpd3dPDTVB[i])
+			&ms_alpd3dPDTVB[i], nullptr)
 		))
 		return false;
 	}
@@ -659,12 +580,13 @@ bool CGraphicDevice::__CreateDefaultIndexBuffer(UINT eDefIB, UINT uIdxCount, con
 			D3DUSAGE_WRITEONLY, 
 			D3DFMT_INDEX16,
 			D3DPOOL_MANAGED,
-			&ms_alpd3dDefIB[eDefIB])
+			&ms_alpd3dDefIB[eDefIB],
+			NULL)
 	)) return false;
 	
 	WORD* dstIndices;
 	if (FAILED(
-		ms_alpd3dDefIB[eDefIB]->Lock(0, 0, (BYTE**)&dstIndices, 0)
+		ms_alpd3dDefIB[eDefIB]->Lock(0, 0, (void**)&dstIndices, 0)
 	)) return false;
 
 	memcpy(dstIndices, c_awIndices, sizeof(WORD)*uIdxCount);
@@ -729,21 +651,13 @@ void CGraphicDevice::Destroy()
 		ms_hDC = NULL;
 	}
 
-	if (ms_ptVS)
-	{	
-		ms_lpd3dDevice->DeleteVertexShader(ms_ptVS);
-		ms_ptVS = 0;;
-	}
-
 	if (ms_pntVS)
-	{	
-		ms_lpd3dDevice->DeleteVertexShader(ms_pntVS);
+	{
 		ms_pntVS = 0;
 	}
 
 	if (ms_pnt2VS)
-	{	
-		ms_lpd3dDevice->DeleteVertexShader(ms_pnt2VS);
+	{
 		ms_pnt2VS = 0;
 	}
 

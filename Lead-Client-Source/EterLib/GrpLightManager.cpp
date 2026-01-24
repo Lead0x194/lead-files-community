@@ -32,7 +32,7 @@ void CLightManager::Initialize()
 	m_LightPool.FreeAll();
 }
 
-void CLightManager::RegisterLight(ELightType /*LightType*/, TLightID * poutLightID, D3DLIGHT8 & LightData)
+void CLightManager::RegisterLight(ELightType /*LightType*/, TLightID * poutLightID, D3DLIGHT9 & LightData)
 {
 	CLight * pLight = m_LightPool.Alloc();
 	TLightID ID = NewLightID();
@@ -212,7 +212,7 @@ void CLight::SetDeviceLight(BOOL bActive)
 	}
 }
 
-void CLight::SetParameter(TLightID id, const D3DLIGHT8 & c_rLight)
+void CLight::SetParameter(TLightID id, const D3DLIGHT9 & c_rLight)
 {
 	m_LightID	= id;
 	m_d3dLight	= c_rLight;

@@ -32,7 +32,7 @@ void CActorInstance::SetMaterialAlpha(DWORD dwAlpha)
 
 void CActorInstance::OnRender()
 {
-	D3DMATERIAL8 kMtrl;
+	D3DMATERIAL9 kMtrl;
 	STATEMANAGER.GetMaterial(&kMtrl);
 
 	kMtrl.Diffuse=D3DXCOLOR(m_dwMtrlColor);	

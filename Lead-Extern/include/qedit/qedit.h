@@ -508,7 +508,7 @@ typedef struct DxtKey DxtKey;
 /* header files for imported files */
 #include "oaidl.h"
 #include "ocidl.h"
-#include "dxtrans.h"
+#include <directx/dxtrans.h>
 #include "amstream.h"
 
 #ifdef __cplusplus

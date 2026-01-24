@@ -18,7 +18,7 @@ class CPythonGraphic : public CScreen, public CSingleton<CPythonGraphic>
 		void PushState();
 		void PopState();
 
-		LPDIRECT3D8 GetD3D();
+		LPDIRECT3D9 GetD3D();
 
 		float GetOrthoDepth();
 		void SetInterfaceRenderState();
@@ -62,7 +62,7 @@ class CPythonGraphic : public CScreen, public CSingleton<CPythonGraphic>
 
 		CCullingManager							m_CullingManager;
 
-		D3DVIEWPORT8							m_backupViewport;
+		D3DVIEWPORT9							m_backupViewport;
 
 		float									m_fOrthoDepth;
 };

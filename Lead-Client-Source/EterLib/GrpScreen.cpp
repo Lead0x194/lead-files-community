@@ -29,7 +29,7 @@ void CScreen::RenderLine3d(float sx, float sy, float sz, float ex, float ey, flo
 	{	
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.DrawPrimitive(D3DPT_LINELIST, 0, 1);
 	}
 }
@@ -61,7 +61,7 @@ void CScreen::RenderBox3d(float sx, float sy, float sz, float ex, float ey, floa
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.DrawPrimitive(D3DPT_LINELIST, 0, 4);
 	}
 }
@@ -84,7 +84,7 @@ void CScreen::RenderBar3d(float sx, float sy, float sz, float ex, float ey, floa
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
 	}
 }
@@ -106,7 +106,7 @@ void CScreen::RenderBar3d(const D3DXVECTOR3 * c_pv3Positions)
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
 	}
 }
@@ -129,7 +129,7 @@ void CScreen::RenderGradationBar3d(float sx, float sy, float sz, float ex, float
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
 	}
 }
@@ -153,7 +153,7 @@ void CScreen::RenderLineCube(float sx, float sy, float sz, float ex, float ey, f
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.SetTransform(D3DTS_WORLD, ms_lpd3dMatStack->GetTop());
 		SetDefaultIndexBuffer(DEFAULT_IB_LINE_CUBE);
 
@@ -180,7 +180,7 @@ void CScreen::RenderCube(float sx, float sy, float sz, float ex, float ey, float
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.SetTransform(D3DTS_WORLD, ms_lpd3dMatStack->GetTop());
 
 		SetDefaultIndexBuffer(DEFAULT_IB_FILL_CUBE);
@@ -220,7 +220,7 @@ void CScreen::RenderCube(float sx, float sy, float sz, float ex, float ey, float
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.SetTransform(D3DTS_WORLD, ms_lpd3dMatStack->GetTop());
 
 		SetDefaultIndexBuffer(DEFAULT_IB_FILL_CUBE);
@@ -315,7 +315,7 @@ public:
 	
 	CD3DXMeshRenderingOption(D3DFILLMODE d3dFillMode, const D3DXMATRIX & c_rmatWorld)
 	{
-		ms_lpd3dDevice->GetVertexShader(&m_dwVS);
+		ms_lpd3dDevice->GetFVF(&m_dwVS);
 
 		STATEMANAGER.SaveTextureStageState(0, D3DTSS_COLORARG1, D3DTA_TFACTOR);
 		STATEMANAGER.SaveTextureStageState(0, D3DTSS_COLOROP, D3DTOP_SELECTARG1);
@@ -329,7 +329,7 @@ public:
 	
 	virtual ~CD3DXMeshRenderingOption()
 	{
-		ms_lpd3dDevice->SetVertexShader(m_dwVS);
+		ms_lpd3dDevice->SetFVF(m_dwVS);
 
 		STATEMANAGER.RestoreTransform(D3DTS_WORLD);
 		STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLORARG1);
@@ -356,11 +356,11 @@ void CScreen::RenderD3DXMesh(LPD3DXMESH lpMesh, const D3DXMATRIX * c_pmatWorld, 
 	}
 
 	CD3DXMeshRenderingOption SetRenderingOption(d3dFillMode, matWorld);
-	LPDIRECT3DINDEXBUFFER8 lpIndexBuffer;
-	LPDIRECT3DVERTEXBUFFER8 lpVertexBuffer;
+	LPDIRECT3DINDEXBUFFER9 lpIndexBuffer;
+	LPDIRECT3DVERTEXBUFFER9 lpVertexBuffer;
 	lpMesh->GetIndexBuffer(&lpIndexBuffer);
 	lpMesh->GetVertexBuffer(&lpVertexBuffer);
-	STATEMANAGER.SetVertexShader(lpMesh->GetFVF());
+	STATEMANAGER.SetFVF(lpMesh->GetFVF());
 	STATEMANAGER.SetIndices(lpIndexBuffer, 0);
 	STATEMANAGER.SetStreamSource(0, lpVertexBuffer, 24);
 	STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, lpMesh->GetNumVertices(), 0, lpMesh->GetNumFaces());
@@ -401,7 +401,7 @@ void CScreen::RenderTextureBox(float sx, float sy, float ex, float ey, float z, 
 #ifdef WORLD_EDITOR
 	STATEMANAGER.SetTransform(D3DTS_WORLD, ms_lpd3dMatStack->GetTop());
 #endif
-	STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+	STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 
 	// 2004.11.18.myevan.DrawIndexPrimitiveUP -> DynamicVertexBuffer
 	SetDefaultIndexBuffer(DEFAULT_IB_FILL_RECT);
@@ -432,7 +432,7 @@ void CScreen::RenderBillboard(D3DXVECTOR3 * Position, D3DXCOLOR & Color)
 	vertices[3].diffuse = Color;
 	vertices[3].texCoord = TTextureCoordinate(1, 1);
 	
-	STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+	STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 
 	// 2004.11.18.myevan.DrawIndexPrimitiveUP -> DynamicVertexBuffer
 	SetDefaultIndexBuffer(DEFAULT_IB_FILL_RECT);
@@ -631,7 +631,7 @@ BOOL CScreen::IsLostDevice()
 	if (!ms_lpd3dDevice)
 		return TRUE;
 
-	IDirect3DDevice8 & rkD3DDev = *ms_lpd3dDevice;
+	IDirect3DDevice9 & rkD3DDev = *ms_lpd3dDevice;
 	HRESULT hrTestCooperativeLevel = rkD3DDev.TestCooperativeLevel();
 	if (FAILED(hrTestCooperativeLevel))
 		return TRUE;		
@@ -645,8 +645,8 @@ BOOL CScreen::RestoreDevice()
 		return FALSE;
 
 	UINT iD3DAdapterInfo = ms_iD3DAdapterInfo;
-	IDirect3D8 & rkD3D = *ms_lpd3d;
-	IDirect3DDevice8 & rkD3DDev = *ms_lpd3dDevice;
+	IDirect3D9 & rkD3D = *ms_lpd3d;
+	IDirect3DDevice9 & rkD3DDev = *ms_lpd3dDevice;
 	D3DPRESENT_PARAMETERS & rkD3DPP = ms_d3dPresentParameter;
 	D3D_CDisplayModeAutoDetector & rkD3DDetector = ms_kD3DDetector;
 	

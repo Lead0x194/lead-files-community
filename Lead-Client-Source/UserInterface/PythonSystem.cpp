@@ -36,21 +36,21 @@ void CPythonSystem::GetDisplaySettings()
 	memset(m_ResolutionList, 0, sizeof(TResolution) * RESOLUTION_MAX_NUM);
 	m_ResolutionCount = 0;
 
-	LPDIRECT3D8 lpD3D = CPythonGraphic::Instance().GetD3D();
+	LPDIRECT3D9 lpD3D = CPythonGraphic::Instance().GetD3D();
 
-	D3DADAPTER_IDENTIFIER8 d3dAdapterIdentifier;
+	D3DADAPTER_IDENTIFIER9 d3dAdapterIdentifier;
 	D3DDISPLAYMODE d3ddmDesktop;
 
-	lpD3D->GetAdapterIdentifier(0, D3DENUM_NO_WHQL_LEVEL, &d3dAdapterIdentifier);
+	lpD3D->GetAdapterIdentifier(0, D3DENUM_WHQL_LEVEL, &d3dAdapterIdentifier);
 	lpD3D->GetAdapterDisplayMode(0, &d3ddmDesktop);
 
 	// 이 어뎁터가 가지고 있는 디스플래이 모드갯수를 나열한다..
-	DWORD dwNumAdapterModes = lpD3D->GetAdapterModeCount(0);
+	DWORD dwNumAdapterModes = lpD3D->GetAdapterModeCount(0, d3ddmDesktop.Format);
 
 	for (UINT iMode = 0; iMode < dwNumAdapterModes; iMode++)
 	{
 		D3DDISPLAYMODE DisplayMode;
-		lpD3D->EnumAdapterModes(0, iMode, &DisplayMode);
+		lpD3D->EnumAdapterModes(0, d3ddmDesktop.Format, iMode, &DisplayMode);
 		DWORD bpp = 0;
 
 		// 800 600 이상만 걸러낸다.

@@ -34,7 +34,7 @@ void CGraphicTexture::SetTextureStage(int stage) const
 	STATEMANAGER.SetTexture(stage, m_lpd3dTexture);	
 }
 
-LPDIRECT3DTEXTURE8 CGraphicTexture::GetD3DTexture() const
+LPDIRECT3DTEXTURE9 CGraphicTexture::GetD3DTexture() const
 {
 	return m_lpd3dTexture;
 }

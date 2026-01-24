@@ -106,7 +106,7 @@ bool CMapOutdoor::Update(float fX, float fY, float fZ)
 
 		Tracenf("Update::Load spent %d ms\n", ELTimer_GetMSec() - t1);
 	}
-	CSpeedTreeForestDirectX8::Instance().UpdateSystem(CTimer::Instance().GetCurrentSecond());
+	CSpeedTreeForestDirectX9::Instance().UpdateSystem(CTimer::Instance().GetCurrentSecond());
 
 	__UpdateGarvage();
 

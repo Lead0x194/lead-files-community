@@ -45,7 +45,7 @@ bool CGraphicImageTexture::CreateDeviceObjects()
 	if (m_stFileName.empty())
 	{
 		// 폰트 텍스쳐
-		if (FAILED(ms_lpd3dDevice->CreateTexture(m_width, m_height, 1, 0, m_d3dFmt, D3DPOOL_MANAGED, &m_lpd3dTexture)))
+		if (FAILED(ms_lpd3dDevice->CreateTexture(m_width, m_height, 1, 0, m_d3dFmt, D3DPOOL_MANAGED, &m_lpd3dTexture, NULL)))
 			return false;
 	}
 	else
@@ -96,7 +96,7 @@ bool CGraphicImageTexture::CreateDDSTexture(CDXTCImage & image, const BYTE * /*c
 	int mipmapCount = image.m_dwMipMapCount == 0 ? 1 : image.m_dwMipMapCount;
 
 	D3DFORMAT format;
-	LPDIRECT3DTEXTURE8 lpd3dTexture;
+	LPDIRECT3DTEXTURE9 lpd3dTexture;
 	D3DPOOL pool = ms_bSupportDXT ? D3DPOOL_MANAGED : D3DPOOL_SCRATCH;;
 
 	if(image.m_CompFormat == PF_DXT5)
@@ -173,13 +173,13 @@ bool CGraphicImageTexture::CreateDDSTexture(CDXTCImage & image, const BYTE * /*c
 				return false;
 		}
 
-		IDirect3DTexture8* pkTexSrc=lpd3dTexture;
-		IDirect3DTexture8* pkTexDst=m_lpd3dTexture;
+		IDirect3DTexture9* pkTexSrc=lpd3dTexture;
+		IDirect3DTexture9* pkTexDst=m_lpd3dTexture;
 
 		for(int i=0; i<mipmapCount; ++i) {
 
-			IDirect3DSurface8* ppsSrc = NULL;
-			IDirect3DSurface8* ppsDst = NULL;
+			IDirect3DSurface9* ppsSrc = NULL;
+			IDirect3DSurface9* ppsDst = NULL;
 
 			if (SUCCEEDED(pkTexSrc->GetSurfaceLevel(i, &ppsSrc)))
 			{
@@ -261,8 +261,8 @@ bool CGraphicImageTexture::CreateFromMemoryFile(UINT bufSize, const void * c_pvB
 		if (IsLowTextureMemory())
 		if (uTexBias || format!=imageInfo.Format)
 		{
-			IDirect3DTexture8* pkTexSrc=m_lpd3dTexture;
-			IDirect3DTexture8* pkTexDst;
+			IDirect3DTexture9* pkTexSrc=m_lpd3dTexture;
+			IDirect3DTexture9* pkTexDst;
 			
 			
 			if (SUCCEEDED(D3DXCreateTexture(	
@@ -279,8 +279,8 @@ bool CGraphicImageTexture::CreateFromMemoryFile(UINT bufSize, const void * c_pvB
 				
 				for(int i=0; i<imageInfo.MipLevels; ++i) {
 
-					IDirect3DSurface8* ppsSrc = NULL;
-					IDirect3DSurface8* ppsDst = NULL;
+					IDirect3DSurface9* ppsSrc = NULL;
+					IDirect3DSurface9* ppsDst = NULL;
 
 					if (SUCCEEDED(pkTexSrc->GetSurfaceLevel(i, &ppsSrc)))
 					{

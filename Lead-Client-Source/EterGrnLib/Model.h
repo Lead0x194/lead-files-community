@@ -38,8 +38,8 @@ class CGrannyModel : public CReferenceObject
 		granny_model * GetGrannyModelPointer();
 		const CGrannyMesh* GetMeshPointer(int iMesh) const;
 
-		LPDIRECT3DVERTEXBUFFER8 GetPNTD3DVertexBuffer() const;
-		LPDIRECT3DINDEXBUFFER8 GetD3DIndexBuffer() const;
+		LPDIRECT3DVERTEXBUFFER9 GetPNTD3DVertexBuffer() const;
+		LPDIRECT3DINDEXBUFFER9 GetD3DIndexBuffer() const;
 
 		const CGrannyModel::TMeshNode*  GetMeshNodeList(CGrannyMesh::EType eMeshType, CGrannyMaterial::EType eMtrlType) const;
 

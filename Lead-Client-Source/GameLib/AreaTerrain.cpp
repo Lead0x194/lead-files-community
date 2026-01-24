@@ -757,7 +757,7 @@ void CTerrain::RAW_GenerateSplat(bool bBGLoading)
 	}
 }
 
-LPDIRECT3DTEXTURE8 CTerrain::AddTexture32(BYTE byImageNum, BYTE * pbyImage, long lTextureWidth, long lTextureHeight)
+LPDIRECT3DTEXTURE9 CTerrain::AddTexture32(BYTE byImageNum, BYTE * pbyImage, long lTextureWidth, long lTextureHeight)
 {
 	assert(NULL==m_lpAlphaTexture[byImageNum]);
 
@@ -777,13 +777,13 @@ LPDIRECT3DTEXTURE8 CTerrain::AddTexture32(BYTE byImageNum, BYTE * pbyImage, long
 
 	bool bResizedAndSuccess = false;
 
-	IDirect3DTexture8* pkTex=NULL;
+	IDirect3DTexture9* pkTex=NULL;
 
 	UINT uiNewWidth = 256;
 	UINT uiNewHeight = 256;
 	hr = ms_lpd3dDevice->CreateTexture(
 		uiNewWidth, uiNewHeight, 5, 0, 
-		format, D3DPOOL_MANAGED, &pkTex);
+		format, D3DPOOL_MANAGED, &pkTex, nullptr);
 	if (FAILED(hr))
 	{
 		TraceError("CTerrain::AddTexture32 - CreateTexture Error");
@@ -1153,7 +1153,7 @@ void CTerrain::AllocateMarkedSplats(BYTE * pbyAlphaMap)
 
 	do
 	{
-		hr = ms_lpd3dDevice->CreateTexture(ATTRMAP_XSIZE, ATTRMAP_YSIZE, 1, 0, D3DFMT_A8R8G8B8, D3DPOOL_MANAGED, &m_lpMarkedTexture);
+		hr = ms_lpd3dDevice->CreateTexture(ATTRMAP_XSIZE, ATTRMAP_YSIZE, 1, 0, D3DFMT_A8R8G8B8, D3DPOOL_MANAGED, &m_lpMarkedTexture, nullptr);
 	} while(FAILED(hr));
 
 	D3DLOCKED_RECT d3dlr;

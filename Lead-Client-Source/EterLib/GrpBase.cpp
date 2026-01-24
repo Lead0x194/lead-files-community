@@ -27,11 +27,11 @@ D3D_CDisplayModeAutoDetector				CGraphicBase::ms_kD3DDetector;
 HWND CGraphicBase::ms_hWnd;
 HDC CGraphicBase::ms_hDC;
 
-LPDIRECT3D8				CGraphicBase::ms_lpd3d = NULL;
-LPDIRECT3DDEVICE8		CGraphicBase::ms_lpd3dDevice = NULL;
+LPDIRECT3D9				CGraphicBase::ms_lpd3d = NULL;
+LPDIRECT3DDEVICE9		CGraphicBase::ms_lpd3dDevice = NULL;
 ID3DXMatrixStack *		CGraphicBase::ms_lpd3dMatStack = NULL;
 D3DPRESENT_PARAMETERS	CGraphicBase::ms_d3dPresentParameter;
-D3DVIEWPORT8			CGraphicBase::ms_Viewport;
+D3DVIEWPORT9			CGraphicBase::ms_Viewport;
 
 HRESULT					CGraphicBase::ms_hLastResult = NULL;
 
@@ -40,11 +40,10 @@ int						CGraphicBase::ms_iHeight;
 
 DWORD					CGraphicBase::ms_faceCount = 0;
 
-D3DCAPS8				CGraphicBase::ms_d3dCaps;
+D3DCAPS9				CGraphicBase::ms_d3dCaps;
 
 DWORD					CGraphicBase::ms_dwD3DBehavior = 0;
 
-DWORD					CGraphicBase::ms_ptVS = 0;
 DWORD					CGraphicBase::ms_pntVS = 0;
 DWORD					CGraphicBase::ms_pnt2VS = 0;
 
@@ -96,9 +95,9 @@ std::vector<TIndex>		CGraphicBase::ms_fillCubeIdxVector;
 LPD3DXMESH				CGraphicBase::ms_lpSphereMesh = NULL;
 LPD3DXMESH				CGraphicBase::ms_lpCylinderMesh = NULL;
 
-LPDIRECT3DVERTEXBUFFER8	CGraphicBase::ms_alpd3dPDTVB[PDT_VERTEXBUFFER_NUM];
+LPDIRECT3DVERTEXBUFFER9	CGraphicBase::ms_alpd3dPDTVB[PDT_VERTEXBUFFER_NUM];
 
-LPDIRECT3DINDEXBUFFER8	CGraphicBase::ms_alpd3dDefIB[DEFAULT_IB_NUM];
+LPDIRECT3DINDEXBUFFER9	CGraphicBase::ms_alpd3dDefIB[DEFAULT_IB_NUM];
 
 bool CGraphicBase::IsLowTextureMemory()
 {
@@ -158,7 +157,7 @@ bool CGraphicBase::SetPDTStream(SPDTVertexRaw* pSrcVertices, UINT uVtxCount)
 	if (s_dwVBPos>=PDT_VERTEXBUFFER_NUM)
 		s_dwVBPos=0;
 
-	IDirect3DVertexBuffer8* plpd3dFillRectVB=ms_alpd3dPDTVB[s_dwVBPos];
+	IDirect3DVertexBuffer9* plpd3dFillRectVB=ms_alpd3dPDTVB[s_dwVBPos];
 	++s_dwVBPos;
 
 	assert(PDT_VERTEX_NUM>=uVtxCount);
@@ -167,7 +166,7 @@ bool CGraphicBase::SetPDTStream(SPDTVertexRaw* pSrcVertices, UINT uVtxCount)
 
 	TPDTVertex* pDstVertices;
 	if (FAILED(
-		plpd3dFillRectVB->Lock(0, sizeof(TPDTVertex)*uVtxCount, (BYTE**)&pDstVertices, D3DLOCK_DISCARD)
+		plpd3dFillRectVB->Lock(0, sizeof(TPDTVertex)*uVtxCount, (void**)&pDstVertices, D3DLOCK_DISCARD)
 	)) 
 	{
 		STATEMANAGER.SetStreamSource(0, NULL, 0);

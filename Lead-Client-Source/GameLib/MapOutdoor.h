@@ -100,7 +100,7 @@ class CMapOutdoor : public CMapBase
 
 		bool			LoadSetting(const char * c_szFileName);
 
-		void			ApplyLight(DWORD dwVersion, const D3DLIGHT8& c_rkLight);
+		void			ApplyLight(DWORD dwVersion, const D3DLIGHT9& c_rkLight);
 		void			SetEnvironmentScreenFilter();
 		void			SetEnvironmentSkyBox();
 		void			SetEnvironmentLensFlare();
@@ -431,16 +431,16 @@ class CMapOutdoor : public CMapBase
 
 		//////////////////////////////////////////////////////////////////////////
 		// Character Shadow
-		LPDIRECT3DTEXTURE8		m_lpCharacterShadowMapTexture;
-		LPDIRECT3DSURFACE8		m_lpCharacterShadowMapRenderTargetSurface;
-		LPDIRECT3DSURFACE8		m_lpCharacterShadowMapDepthSurface;
-		D3DVIEWPORT8			m_ShadowMapViewport;
+		LPDIRECT3DTEXTURE9		m_lpCharacterShadowMapTexture;
+		LPDIRECT3DSURFACE9		m_lpCharacterShadowMapRenderTargetSurface;
+		LPDIRECT3DSURFACE9		m_lpCharacterShadowMapDepthSurface;
+		D3DVIEWPORT9			m_ShadowMapViewport;
 		WORD					m_wShadowMapSize;
 
 		// Backup Device Context
-		LPDIRECT3DSURFACE8		m_lpBackupRenderTargetSurface;
-		LPDIRECT3DSURFACE8		m_lpBackupDepthSurface;
-		D3DVIEWPORT8			m_BackupViewport;
+		LPDIRECT3DSURFACE9		m_lpBackupRenderTargetSurface;
+		LPDIRECT3DSURFACE9		m_lpBackupDepthSurface;
+		D3DVIEWPORT9			m_BackupViewport;
 
 		// Character Shadow
 		//////////////////////////////////////////////////////////////////////////
@@ -593,8 +593,8 @@ class CMapOutdoor : public CMapBase
 				NONE_VB_NUM = 8,
 			};
 
-			IDirect3DVertexBuffer8* m_pkVBSplat[SPLAT_VB_NUM];
-			IDirect3DVertexBuffer8* m_pkVBNone[NONE_VB_NUM];
+			IDirect3DVertexBuffer9* m_pkVBSplat[SPLAT_VB_NUM];
+			IDirect3DVertexBuffer9* m_pkVBNone[NONE_VB_NUM];
 			DWORD m_dwSplatPos;
 			DWORD m_dwNonePos;
 			DWORD m_dwLightVersion;
@@ -604,8 +604,8 @@ class CMapOutdoor : public CMapBase
 			D3DXMATRIX m_m4Proj;
 			D3DXMATRIX m_m4Frustum;
 			D3DXMATRIX m_m4DynamicShadow;
-			D3DLIGHT8  m_kLight;
-			D3DMATERIAL8 m_kMtrl;
+			D3DLIGHT9  m_kLight;
+			D3DMATERIAL9 m_kMtrl;
 			D3DXVECTOR3 m_v3Player;
 			DWORD m_dwFogColor;
 			float m_fScreenHalfWidth;

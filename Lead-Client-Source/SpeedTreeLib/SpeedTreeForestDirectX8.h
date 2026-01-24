@@ -41,23 +41,23 @@
 
 ///////////////////////////////////////////////////////////////////////  
 //	class CSpeedTreeForestDirectX8 declaration
-class CSpeedTreeForestDirectX8 : public CSpeedTreeForest, public CGraphicBase, public CSingleton<CSpeedTreeForestDirectX8>
+class CSpeedTreeForestDirectX9 : public CSpeedTreeForest, public CGraphicBase, public CSingleton<CSpeedTreeForestDirectX9>
 {
 	public:
-		CSpeedTreeForestDirectX8();
-		virtual ~CSpeedTreeForestDirectX8();
+		CSpeedTreeForestDirectX9();
+		virtual ~CSpeedTreeForestDirectX9();
 
 		void			UploadWindMatrix(unsigned int uiLocation, const float* pMatrix) const;
 		void			UpdateCompundMatrix(const D3DXVECTOR3 & c_rEyeVec, const D3DXMATRIX & c_rmatView, const D3DXMATRIX & c_rmatProj);
 
 		void			Render(unsigned long ulRenderBitVector = Forest_RenderAll);
-		bool			SetRenderingDevice(LPDIRECT3DDEVICE8 pDevice);
+		bool			SetRenderingDevice(LPDIRECT3DDEVICE9 pDevice);
 		
 	private:
 		bool			InitVertexShaders();
 		
 	private:
-		LPDIRECT3DDEVICE8		m_pDx;							// the rendering context
+		LPDIRECT3DDEVICE9		m_pDx;							// the rendering context
 
 		DWORD					m_dwBranchVertexShader;			// branch/frond vertex shaders		
 		DWORD					m_dwLeafVertexShader;			// leaf vertex shader

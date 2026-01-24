@@ -258,7 +258,7 @@ void CLensFlare::DrawBeforeFlare()
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAOP, D3DTOP_SELECTARG1);
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_COLORARG1, D3DTA_TEXTURE);
 	
-	STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+	STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 	STATEMANAGER.DrawPrimitiveUP(D3DPT_TRIANGLESTRIP, 2, vertices, sizeof(SVertex));
 
 	STATEMANAGER.RestoreRenderState(D3DRS_LIGHTING);
@@ -444,7 +444,7 @@ void CLensFlare::AdjustBrightness()
 void CLensFlare::ReadDepthPixels(float * /*pPixels*/)
 {
 	/*
-	LPDIRECT3DSURFACE8 lpSurface;
+	LPDIRECT3DSURFACE9 lpSurface;
 	if (FAILED(ms_lpd3dDevice->GetDepthStencilSurface(&lpSurface)))
 		assert(false);
 
@@ -539,7 +539,7 @@ void CFlare::Draw(float fBrightScale, int nWidth, int nHeight, int nX, int nY)
 	float fDY = float(nY) - float(nHeight) / 2.0f;
 
 	STATEMANAGER.SetTexture(1, NULL);
-	STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+	STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_COLORARG1,	D3DTA_TEXTURE);
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_COLORARG2,	D3DTA_DIFFUSE);

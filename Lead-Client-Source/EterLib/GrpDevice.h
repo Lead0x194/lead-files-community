@@ -62,10 +62,8 @@ protected:
 	void __DestroyPDTVertexBufferList();
 	bool __CreatePDTVertexBufferList();
 
-	DWORD CreatePTStreamVertexShader();
 	DWORD CreatePNTStreamVertexShader();
 	DWORD CreatePNT2StreamVertexShader();
-	DWORD CreateDoublePNTStreamVertexShader();
 
 protected:
 	DWORD						m_uBackBufferCount;

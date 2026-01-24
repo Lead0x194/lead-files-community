@@ -264,17 +264,17 @@ void CPythonMiniMap::Render(float fScreenX, float fScreenY)
 		__SetPosition();
 	}
 
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_MIPFILTER, D3DTEXF_POINT);
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_MINFILTER, D3DTEXF_POINT);
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_MAGFILTER, D3DTEXF_POINT);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_MIPFILTER, D3DTEXF_POINT);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_POINT);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_POINT);
 
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_ADDRESSU, D3DTADDRESS_CLAMP);
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_ADDRESSV, D3DTADDRESS_CLAMP);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_ADDRESSU, D3DTADDRESS_CLAMP);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_ADDRESSV, D3DTADDRESS_CLAMP);
 
 	STATEMANAGER.SaveTextureStageState(1, D3DTSS_TEXCOORDINDEX, D3DTSS_TCI_CAMERASPACEPOSITION);
 	STATEMANAGER.SaveTextureStageState(1, D3DTSS_TEXTURETRANSFORMFLAGS, D3DTTFF_COUNT2);
-	STATEMANAGER.SaveTextureStageState(1, D3DTSS_ADDRESSU, D3DTADDRESS_CLAMP);
-	STATEMANAGER.SaveTextureStageState(1, D3DTSS_ADDRESSV, D3DTADDRESS_CLAMP);
+	STATEMANAGER.SaveSamplerState(1, D3DSAMP_ADDRESSU, D3DTADDRESS_CLAMP);
+	STATEMANAGER.SaveSamplerState(1, D3DSAMP_ADDRESSV, D3DTADDRESS_CLAMP);
 
 	STATEMANAGER.SaveTextureStageState(0, D3DTSS_COLORARG1, D3DTA_TEXTURE);
 	STATEMANAGER.SaveTextureStageState(0, D3DTSS_COLORARG2, D3DTA_DIFFUSE);
@@ -295,14 +295,14 @@ void CPythonMiniMap::Render(float fScreenX, float fScreenY)
 	STATEMANAGER.SetTexture(1, m_MiniMapFilterGraphicImageInstance.GetTexturePointer()->GetD3DTexture());
 	STATEMANAGER.SetTransform(D3DTS_TEXTURE1, &m_matMiniMapCover);
 
-	STATEMANAGER.SetVertexShader(D3DFVF_XYZ | D3DFVF_TEX1);
+	STATEMANAGER.SetFVF(D3DFVF_XYZ | D3DFVF_TEX1);
 	STATEMANAGER.SetStreamSource(0, m_VertexBuffer.GetD3DVertexBuffer(), 20);
 	STATEMANAGER.SetIndices(m_IndexBuffer.GetD3DIndexBuffer(), 0);
 	STATEMANAGER.SetTransform(D3DTS_WORLD, &m_matWorld);
 
 	for (BYTE byTerrainNum = 0; byTerrainNum < AROUND_AREA_NUM; ++byTerrainNum)
 	{
-		LPDIRECT3DTEXTURE8 pMiniMapTexture = m_lpMiniMapTexture[byTerrainNum];
+		LPDIRECT3DTEXTURE9 pMiniMapTexture = m_lpMiniMapTexture[byTerrainNum];
 		STATEMANAGER.SetTexture(0, pMiniMapTexture);
 		if (pMiniMapTexture)
 		{
@@ -333,12 +333,12 @@ void CPythonMiniMap::Render(float fScreenX, float fScreenY)
 	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLORARG2);
 	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLOROP);
 
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_ADDRESSU);
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_ADDRESSV);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_ADDRESSU);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_ADDRESSV);
 	STATEMANAGER.RestoreTextureStageState(1, D3DTSS_TEXCOORDINDEX);
 	STATEMANAGER.RestoreTextureStageState(1, D3DTSS_TEXTURETRANSFORMFLAGS);
-	STATEMANAGER.RestoreTextureStageState(1, D3DTSS_ADDRESSU);
-	STATEMANAGER.RestoreTextureStageState(1, D3DTSS_ADDRESSV);
+	STATEMANAGER.RestoreSamplerState(1, D3DSAMP_ADDRESSU);
+	STATEMANAGER.RestoreSamplerState(1, D3DSAMP_ADDRESSV);
 
 	SetDiffuseOperation();
 	STATEMANAGER.SetTransform(D3DTS_WORLD, &m_matIdentity);
@@ -427,12 +427,11 @@ void CPythonMiniMap::Render(float fScreenX, float fScreenY)
 	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLORARG2);
 	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLOROP);
 
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MIPFILTER);
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MINFILTER);
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MAGFILTER);
-
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_MINFILTER, D3DTEXF_LINEAR);
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_MAGFILTER, D3DTEXF_LINEAR);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MIPFILTER);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MINFILTER);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MAGFILTER);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_LINEAR);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_LINEAR);
 
 	// 캐릭터 마크
 	CInstanceBase * pkInst = CPythonCharacterManager::Instance().GetMainInstancePtr();
@@ -476,8 +475,8 @@ void CPythonMiniMap::Render(float fScreenX, float fScreenY)
 		m_MiniMapCameraraphicImageInstance.SetRotation(pkCmrCur->GetRoll());
 		m_MiniMapCameraraphicImageInstance.Render();
 	}
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MINFILTER);
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MAGFILTER);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MINFILTER);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MAGFILTER);
 }
 
 void CPythonMiniMap::SetScale(float fScale)
@@ -969,8 +968,8 @@ void CPythonMiniMap::RenderAtlas(float fScreenX, float fScreenY)
 	}
 
 	STATEMANAGER.SetTransform(D3DTS_WORLD, &m_matWorldAtlas);
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_MINFILTER, D3DTEXF_POINT);
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_MAGFILTER, D3DTEXF_POINT);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_POINT);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_POINT);
 	m_AtlasImageInstance.Render();
 
 	STATEMANAGER.SaveRenderState(D3DRS_TEXTUREFACTOR, 0xFFFFFFFF);
@@ -998,8 +997,8 @@ void CPythonMiniMap::RenderAtlas(float fScreenX, float fScreenY)
 		++m_AtlasMarkInfoVectorIterator;
 	}
 
-	STATEMANAGER.SetTextureStageState(0, D3DTSS_MINFILTER, D3DTEXF_LINEAR);
-	STATEMANAGER.SetTextureStageState(0, D3DTSS_MAGFILTER, D3DTEXF_LINEAR);
+	STATEMANAGER.SetSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_LINEAR);
+	STATEMANAGER.SetSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_LINEAR);
 	STATEMANAGER.SetRenderState(D3DRS_TEXTUREFACTOR, CInstanceBase::GetIndexedNameColor(CInstanceBase::NAMECOLOR_WAYPOINT));
 	m_AtlasMarkInfoVectorIterator = m_AtlasWayPointInfoVector.begin();
 	for (; m_AtlasMarkInfoVectorIterator != m_AtlasWayPointInfoVector.end(); ++m_AtlasMarkInfoVectorIterator)
@@ -1030,8 +1029,8 @@ void CPythonMiniMap::RenderAtlas(float fScreenX, float fScreenY)
 	if ((ELTimer_GetMSec() / 500) % 2)
 		m_AtlasPlayerMark.Render();
 
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MINFILTER);
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MAGFILTER);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MINFILTER);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MAGFILTER);
 	STATEMANAGER.SetTransform(D3DTS_WORLD, &m_matIdentity);
 
 	{

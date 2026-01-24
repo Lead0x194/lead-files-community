@@ -280,7 +280,7 @@ void CCamera::SetViewMatrix()
 
 	D3DXMatrixLookAtRH(&m_matView, &m_v3Eye, &m_v3Target, &m_v3Up);
 
-	float fDeterminantD3DMatView = D3DXMatrixfDeterminant(&m_matView);
+	float fDeterminantD3DMatView = D3DXMatrixDeterminant(&m_matView);
     D3DXMatrixInverse(&m_matInverseView, &fDeterminantD3DMatView, &m_matView);
 
 	m_matBillboard = m_matInverseView;

@@ -744,7 +744,7 @@ void CActorInstance::__CreateTree(const char * c_szFileName)
 {
 	__DestroyTree();
 
-	CSpeedTreeForestDirectX8& rkForest=CSpeedTreeForestDirectX8::Instance();
+	CSpeedTreeForestDirectX9& rkForest=CSpeedTreeForestDirectX9::Instance();
 	m_pkTree=rkForest.CreateInstance(m_x, m_y, m_z, GetCaseCRC32(c_szFileName, strlen(c_szFileName)), c_szFileName);
 	m_pkTree->SetPosition(m_x, m_y, m_z);
 	m_pkTree->UpdateBoundingSphere();
@@ -756,7 +756,7 @@ void CActorInstance::__DestroyTree()
 	if (!m_pkTree)
 		return;
 
-	CSpeedTreeForestDirectX8::Instance().DeleteInstance(m_pkTree);
+	CSpeedTreeForestDirectX9::Instance().DeleteInstance(m_pkTree);
 }
 
 void CActorInstance::__SetTreePosition(float fx, float fy, float fz)

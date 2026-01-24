@@ -4,8 +4,8 @@
 //#define SPHERELIB_STRICT
 //#include <crtdbg.h>
 
-#include <d3d8.h>
-#include <d3dx8.h>
+#include <directx/d3d9.h>
+#include <directx/d3dx9.h>
 
 #include <stdio.h>
 #include <stdlib.h>

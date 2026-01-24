@@ -33,9 +33,9 @@
 ///////////////////////////////////////////////////////////////////////  
 //	Include Files
 
-#include <d3d8.h>
-#include <d3d8types.h>
-#include <d3dx8.h>
+#include <directx/d3d9.h>
+#include <directx/d3d9types.h>
+#include <directx/d3dx9.h>
 
 ///////////////////////////////////////////////////////////////////////  
 //	class CSpeedTreeMaterial declaration/definiton
@@ -69,11 +69,11 @@ class CSpeedTreeMaterial
 			m_cMaterial.Power = pMaterialArray[12];
 		}
 		
-		D3DMATERIAL8 * Get()
+		D3DMATERIAL9 * Get()
 		{
 			return &m_cMaterial;
 		}
 		
 	private:
-		D3DMATERIAL8 m_cMaterial;	// the material object
+		D3DMATERIAL9 m_cMaterial;	// the material object
 };

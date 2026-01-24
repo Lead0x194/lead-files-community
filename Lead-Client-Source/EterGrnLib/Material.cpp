@@ -139,7 +139,7 @@ bool CGrannyMaterial::IsEqual(granny_material* pgrnMaterial) const
 }
 
 
-LPDIRECT3DTEXTURE8 CGrannyMaterial::GetD3DTexture(int iStage) const
+LPDIRECT3DTEXTURE9 CGrannyMaterial::GetD3DTexture(int iStage) const
 {
 	const CGraphicImage::TRef & ratImage = m_roImage[iStage];
 
@@ -334,8 +334,8 @@ void CGrannyMaterial::__ApplySpecularRenderState()
 
 	STATEMANAGER.SetTransform(D3DTS_TEXTURE1, &ms_matSpecular);
 	STATEMANAGER.SaveTextureStageState(1, D3DTSS_TEXTURETRANSFORMFLAGS, D3DTTFF_COUNT2);
-	STATEMANAGER.SaveTextureStageState(1, D3DTSS_ADDRESSU, D3DTADDRESS_WRAP);
-	STATEMANAGER.SaveTextureStageState(1, D3DTSS_ADDRESSV, D3DTADDRESS_WRAP);
+	STATEMANAGER.SaveSamplerState(1, D3DSAMP_ADDRESSU, D3DTADDRESS_WRAP);
+	STATEMANAGER.SaveSamplerState(1, D3DSAMP_ADDRESSV, D3DTADDRESS_WRAP);
 }
 
 void CGrannyMaterial::__RestoreSpecularRenderState()
@@ -347,8 +347,8 @@ void CGrannyMaterial::__RestoreSpecularRenderState()
 	}
 
 	STATEMANAGER.RestoreTextureStageState(1, D3DTSS_TEXTURETRANSFORMFLAGS);
-	STATEMANAGER.RestoreTextureStageState(1, D3DTSS_ADDRESSU);
-	STATEMANAGER.RestoreTextureStageState(1, D3DTSS_ADDRESSV);
+	STATEMANAGER.RestoreSamplerState(1, D3DSAMP_ADDRESSU);
+	STATEMANAGER.RestoreSamplerState(1, D3DSAMP_ADDRESSV);
 
 	STATEMANAGER.RestoreTextureStageState(1, D3DTSS_TEXCOORDINDEX);
 	STATEMANAGER.SetTextureStageState(1, D3DTSS_COLOROP, D3DTOP_DISABLE);

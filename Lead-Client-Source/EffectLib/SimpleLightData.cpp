@@ -145,7 +145,7 @@ float CLightData::GetDuration()
 {
 	return m_fDuration;
 }
-void CLightData::InitializeLight(D3DLIGHT8& light)
+void CLightData::InitializeLight(D3DLIGHT9& light)
 {
 	light.Type = D3DLIGHT_POINT;
 	

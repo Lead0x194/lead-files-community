@@ -13,7 +13,7 @@ typedef struct
 {
 	long					Active;
 	long					NeedsUpdate;
-	LPDIRECT3DTEXTURE8		pd3dTexture;
+	LPDIRECT3DTEXTURE9		pd3dTexture;
 } TTerainSplat;
 
 typedef struct

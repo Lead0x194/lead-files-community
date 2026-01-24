@@ -22,8 +22,6 @@ void CPixelShader::Destroy()
 {
 	if (m_handle)
 	{
-		if (ms_lpd3dDevice)
-			ms_lpd3dDevice->DeletePixelShader(m_handle);
 		m_handle=0;
 	}
 }
@@ -36,14 +34,14 @@ bool CPixelShader::CreateFromDiskFile(const char* c_szFileName)
 	LPD3DXBUFFER lpd3dxErrorBuffer;
 	
 	if (FAILED(
-		D3DXAssembleShaderFromFile(c_szFileName, 0, NULL, &lpd3dxShaderBuffer, &lpd3dxErrorBuffer)
+		D3DXAssembleShaderFromFile(c_szFileName, 0, NULL, 0, &lpd3dxShaderBuffer, &lpd3dxErrorBuffer)
 	))
 		return false;
 
 	CDirect3DXBuffer shaderBuffer(lpd3dxShaderBuffer);
 	CDirect3DXBuffer errorBuffer(lpd3dxErrorBuffer);
 
-	if (FAILED(ms_lpd3dDevice->CreatePixelShader((DWORD*)shaderBuffer.GetPointer(), &m_handle)))
+	if (FAILED(ms_lpd3dDevice->CreatePixelShader((const DWORD*)shaderBuffer.GetPointer(), &m_handle)))
 		return false;
 
 	return true;

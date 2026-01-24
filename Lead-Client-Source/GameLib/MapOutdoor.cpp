@@ -218,7 +218,7 @@ bool CMapOutdoor::Destroy()
 	m_kPool_kMonsterAreaInfo.Destroy();
 	m_AlphaFogImageInstance.Destroy();
 
-	CSpeedTreeForestDirectX8::Instance().Clear();
+	CSpeedTreeForestDirectX9::Instance().Clear();
 
 	return true;
 }
@@ -248,13 +248,13 @@ void CMapOutdoor::OnBeginEnvironment()
 	if (!mc_pEnvironmentData)
 		return;
 
-	CSpeedTreeForestDirectX8& rkForest=CSpeedTreeForestDirectX8::Instance();
+	CSpeedTreeForestDirectX9& rkForest=CSpeedTreeForestDirectX9::Instance();
 	rkForest.SetFog(
 		mc_pEnvironmentData->GetFogNearDistance(), 
 		mc_pEnvironmentData->GetFogFarDistance()
 	);
 
-	const D3DLIGHT8& c_rkLight = mc_pEnvironmentData->DirLights[ENV_DIRLIGHT_CHARACTER];
+	const D3DLIGHT9& c_rkLight = mc_pEnvironmentData->DirLights[ENV_DIRLIGHT_CHARACTER];
 	rkForest.SetLight(
 		(const float *)&c_rkLight.Direction,
 		(const float *)&c_rkLight.Ambient, 
@@ -1071,8 +1071,8 @@ void CMapOutdoor::SaveAlphaFogOperation()
 	STATEMANAGER.SetTextureStageState(1, D3DTSS_ALPHAOP,	D3DTOP_MODULATE);
 	STATEMANAGER.SetTextureStageState(1, D3DTSS_TEXTURETRANSFORMFLAGS, D3DTTFF_COUNT2);
 	STATEMANAGER.SetTextureStageState(1, D3DTSS_TEXCOORDINDEX, D3DTSS_TCI_CAMERASPACEPOSITION);
-	STATEMANAGER.SetTextureStageState(1, D3DTSS_ADDRESSU, D3DTADDRESS_CLAMP);
-	STATEMANAGER.SetTextureStageState(1, D3DTSS_ADDRESSV, D3DTADDRESS_CLAMP);
+	STATEMANAGER.SetSamplerState(1, D3DSAMP_ADDRESSU, D3DTADDRESS_CLAMP);
+	STATEMANAGER.SetSamplerState(1, D3DSAMP_ADDRESSV, D3DTADDRESS_CLAMP);
 
 	STATEMANAGER.SetTransform(D3DTS_TEXTURE1, &m_matAlphaFogTexture);
 	STATEMANAGER.SaveRenderState(D3DRS_ALPHABLENDENABLE, TRUE);
@@ -1353,7 +1353,7 @@ void CMapOutdoor::XMasTree_Destroy()
 {
 	if (m_kXMas.m_pkTree)
 	{
-		CSpeedTreeForestDirectX8& rkForest=CSpeedTreeForestDirectX8::Instance();
+		CSpeedTreeForestDirectX9& rkForest=CSpeedTreeForestDirectX9::Instance();
 		m_kXMas.m_pkTree->Clear();
 		rkForest.DeleteInstance(m_kXMas.m_pkTree);
 		m_kXMas.m_pkTree=NULL;
@@ -1371,7 +1371,7 @@ void CMapOutdoor::__XMasTree_Create(float x, float y, float z, const char* c_szT
 	assert(NULL==m_kXMas.m_pkTree);
 	assert(-1==m_kXMas.m_iEffectID);
 
-	CSpeedTreeForestDirectX8& rkForest=CSpeedTreeForestDirectX8::Instance();
+	CSpeedTreeForestDirectX9& rkForest=CSpeedTreeForestDirectX9::Instance();
 	DWORD dwCRC32 = GetCaseCRC32(c_szTreeName, strlen(c_szTreeName));
 	m_kXMas.m_pkTree=rkForest.CreateInstance(x, y, z, dwCRC32, c_szTreeName);
 

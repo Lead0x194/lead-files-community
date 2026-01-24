@@ -17,5 +17,5 @@ class CVertexShader : public CGraphicBase
 		void Initialize();
 
 	protected:
-		DWORD m_handle;
+		LPDIRECT3DVERTEXSHADER9 m_handle;
 };

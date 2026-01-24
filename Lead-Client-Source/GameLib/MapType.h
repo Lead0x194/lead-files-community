@@ -127,10 +127,10 @@ typedef struct SEnvironmentData
 {
 	// Light
 	BOOL		bDirLightsEnable[ENV_DIRLIGHT_NUM];
-	D3DLIGHT8	DirLights[ENV_DIRLIGHT_NUM];
+	D3DLIGHT9	DirLights[ENV_DIRLIGHT_NUM];
 
 	// Material
-	D3DMATERIAL8 Material;
+	D3DMATERIAL9 Material;
 
 	// Fog
 	BOOL bFogEnable;

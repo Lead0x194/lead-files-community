@@ -30,7 +30,7 @@ class CGraphicVertexBuffer : public CGraphicBase
 		int		GetVertexStride() const;
 		DWORD	GetFlexibleVertexFormat() const;
 
-		inline	LPDIRECT3DVERTEXBUFFER8 GetD3DVertexBuffer() const	{ return m_lpd3dVB; }
+		inline	LPDIRECT3DVERTEXBUFFER9 GetD3DVertexBuffer() const	{ return m_lpd3dVB; }
 		inline	DWORD GetBufferSize() const	{ return m_dwBufferSize; }
 
 		bool	IsEmpty() const;
@@ -39,7 +39,7 @@ class CGraphicVertexBuffer : public CGraphicBase
 		void	Initialize();
 
 	protected:
-		LPDIRECT3DVERTEXBUFFER8 m_lpd3dVB;
+		LPDIRECT3DVERTEXBUFFER9 m_lpd3dVB;
 
 		DWORD					m_dwBufferSize;
 		DWORD					m_dwFVF;

@@ -3,7 +3,7 @@
 #include "GrpIndexBuffer.h"
 #include "StateManager.h"
 
-LPDIRECT3DINDEXBUFFER8 CGraphicIndexBuffer::GetD3DIndexBuffer() const
+LPDIRECT3DINDEXBUFFER9 CGraphicIndexBuffer::GetD3DIndexBuffer() const
 {
 	assert(m_lpd3dIdxBuf!=NULL);
 	return m_lpd3dIdxBuf;
@@ -20,7 +20,7 @@ bool CGraphicIndexBuffer::Lock(void** pretIndices) const
 {
 	assert(m_lpd3dIdxBuf!=NULL);
 
-	if (FAILED(m_lpd3dIdxBuf->Lock(0, 0, (BYTE**)pretIndices, 0)))
+	if (FAILED(m_lpd3dIdxBuf->Lock(0, 0, (void**)pretIndices, 0)))
 		return false;
 
 	return true;
@@ -37,7 +37,7 @@ bool CGraphicIndexBuffer::Lock(void** pretIndices)
 {
 	assert(m_lpd3dIdxBuf!=NULL);
 
-	if (FAILED(m_lpd3dIdxBuf->Lock(0, 0, (BYTE**)pretIndices, 0)))
+	if (FAILED(m_lpd3dIdxBuf->Lock(0, 0, (void**)pretIndices, 0)))
 		return false;
 
 	return true;
@@ -55,7 +55,7 @@ bool CGraphicIndexBuffer::Copy(int bufSize, const void* srcIndices)
 	assert(m_lpd3dIdxBuf!=NULL);
 
 	BYTE* dstIndices;
-	if (FAILED(m_lpd3dIdxBuf->Lock(0, 0, &dstIndices, 0)))
+	if (FAILED(m_lpd3dIdxBuf->Lock(0, 0, (void**)&dstIndices, 0)))
 		return false;
 
 	memcpy(dstIndices, srcIndices, bufSize);
@@ -73,7 +73,7 @@ bool CGraphicIndexBuffer::Create(int faceCount, TFace* faces)
 		return false;
 
 	WORD* dstIndices;
-	if (FAILED(m_lpd3dIdxBuf->Lock(0, 0, (BYTE**)&dstIndices, 0)))
+	if (FAILED(m_lpd3dIdxBuf->Lock(0, 0, (void**)&dstIndices, 0)))
 		return false;
 
 	for (int i = 0; i<faceCount; ++i, dstIndices+=3)
@@ -95,7 +95,8 @@ bool CGraphicIndexBuffer::CreateDeviceObjects()
 		D3DUSAGE_WRITEONLY, 
 		m_d3dFmt,
 		D3DPOOL_MANAGED, 
-		&m_lpd3dIdxBuf)
+		&m_lpd3dIdxBuf,
+		NULL)
 		))
 		return false;
 

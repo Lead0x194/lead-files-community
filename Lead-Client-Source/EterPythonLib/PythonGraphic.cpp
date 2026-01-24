@@ -9,7 +9,7 @@ void CPythonGraphic::Destroy()
 {	
 }
 
-LPDIRECT3D8 CPythonGraphic::GetD3D()
+LPDIRECT3D9 CPythonGraphic::GetD3D()
 {
 	return ms_lpd3d;
 }
@@ -25,9 +25,9 @@ void CPythonGraphic::SetInterfaceRenderState()
  	STATEMANAGER.SetTransform(D3DTS_VIEW, &ms_matIdentity);
 	STATEMANAGER.SetTransform(D3DTS_WORLD, &ms_matIdentity);
 
-	STATEMANAGER.SetTextureStageState(0, D3DTSS_MINFILTER, D3DTEXF_NONE);
-	STATEMANAGER.SetTextureStageState(0, D3DTSS_MAGFILTER, D3DTEXF_NONE);
-	STATEMANAGER.SetTextureStageState(0, D3DTSS_MIPFILTER, D3DTEXF_NONE);
+	STATEMANAGER.SetSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_NONE);
+	STATEMANAGER.SetSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_NONE);
+	STATEMANAGER.SetSamplerState(0, D3DSAMP_MIPFILTER, D3DTEXF_NONE);
 
 	STATEMANAGER.SetRenderState(D3DRS_ALPHABLENDENABLE, TRUE);
 	STATEMANAGER.SetRenderState(D3DRS_SRCBLEND,	D3DBLEND_SRCALPHA);
@@ -41,9 +41,9 @@ void CPythonGraphic::SetInterfaceRenderState()
 
 void CPythonGraphic::SetGameRenderState()
 {
-	STATEMANAGER.SetTextureStageState(0, D3DTSS_MINFILTER, D3DTEXF_LINEAR);
-	STATEMANAGER.SetTextureStageState(0, D3DTSS_MAGFILTER, D3DTEXF_LINEAR);
-	STATEMANAGER.SetTextureStageState(0, D3DTSS_MIPFILTER, D3DTEXF_LINEAR);
+	STATEMANAGER.SetSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_LINEAR);
+	STATEMANAGER.SetSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_LINEAR);
+	STATEMANAGER.SetSamplerState(0, D3DSAMP_MIPFILTER, D3DTEXF_LINEAR);
 
 	STATEMANAGER.SetRenderState(D3DRS_ALPHABLENDENABLE, FALSE);
 	STATEMANAGER.SetRenderState(D3DRS_LIGHTING, TRUE);
@@ -57,13 +57,13 @@ void CPythonGraphic::SetCursorPosition(int x, int y)
 void CPythonGraphic::SetOmniLight()
 {
     // Set up a material
-    D3DMATERIAL8 Material;
+    D3DMATERIAL9 Material;
 	Material.Ambient = D3DXCOLOR(0.3f, 0.3f, 0.3f, 1.0f);
 	Material.Diffuse = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
 	Material.Emissive = D3DXCOLOR(0.1f, 0.1f, 0.1f, 1.0f);
     STATEMANAGER.SetMaterial(&Material);
 
-	D3DLIGHT8 Light;
+	D3DLIGHT9 Light;
 	Light.Type = D3DLIGHT_SPOT;
     Light.Position = D3DXVECTOR3(50.0f, 150.0f, 350.0f);
     Light.Direction = D3DXVECTOR3(-0.15f, -0.3f, -0.9f);
@@ -98,7 +98,7 @@ void CPythonGraphic::SetViewport(float fx, float fy, float fWidth, float fHeight
 {
 	ms_lpd3dDevice->GetViewport(&m_backupViewport);
 
-	D3DVIEWPORT8 ViewPort;
+	D3DVIEWPORT9 ViewPort;
 	ViewPort.X = fx;
 	ViewPort.Y = fy;
 	ViewPort.Width = fWidth;
@@ -123,7 +123,7 @@ void CPythonGraphic::RestoreViewport()
 
 void CPythonGraphic::SetGamma(float fGammaFactor)
 {
-	D3DCAPS8		d3dCaps;
+	D3DCAPS9		d3dCaps;
 	D3DGAMMARAMP	NewRamp;
 	int				ui, val;
 	
@@ -151,7 +151,7 @@ void CPythonGraphic::SetGamma(float fGammaFactor)
 		NewRamp.blue[i] = (WORD) (val | (32768 * ui));
 	}
 
-	ms_lpd3dDevice->SetGammaRamp(D3DSGR_NO_CALIBRATION, &NewRamp);
+	ms_lpd3dDevice->SetGammaRamp(0, D3DSGR_NO_CALIBRATION, &NewRamp);
 }
 
 void GenScreenShotTag(const char* src, DWORD crc32, char* leaf, size_t leafLen)
@@ -172,10 +172,10 @@ bool CPythonGraphic::SaveJPEG(const char * pszFileName, LPBYTE pbyBuffer, UINT u
 bool CPythonGraphic::SaveScreenShot(const char * c_pszFileName)
 {
 	HRESULT hr;
-	LPDIRECT3DSURFACE8 lpSurface;
+	LPDIRECT3DSURFACE9 lpSurface;
 	D3DSURFACE_DESC stSurfaceDesc;
 
-	if (FAILED(hr = ms_lpd3dDevice->GetBackBuffer(0, D3DBACKBUFFER_TYPE_MONO, &lpSurface)))
+	if (FAILED(hr = ms_lpd3dDevice->GetBackBuffer(0, 0, D3DBACKBUFFER_TYPE_MONO, &lpSurface)))
 	{
 		TraceError("Failed to get back buffer (0x%08x)", hr);
 		return false;
@@ -481,7 +481,7 @@ void CPythonGraphic::RenderAlphaImage(CGraphicImageInstance* pImageInstance, flo
 	vertices[3].diffuse = DiffuseColor2;
 	vertices[3].texCoord = TTextureCoordinate(eu, ev);
 
-	STATEMANAGER.SetVertexShader(ms_pntVS);
+	STATEMANAGER.SetFVF(ms_pntVS);
 	// 2004.11.18.myevan.DrawIndexPrimitiveUP -> DynamicVertexBuffer
 	CGraphicBase::SetDefaultIndexBuffer(DEFAULT_IB_FILL_RECT);
 	if (CGraphicBase::SetPDTStream(vertices, 4))
@@ -563,7 +563,7 @@ void CPythonGraphic::RenderCoolTimeBox(float fxCenter, float fyCenter, float fRa
 		STATEMANAGER.SaveTextureStageState(0, D3DTSS_ALPHAOP,	D3DTOP_SELECTARG1);
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLEFAN, 0, iTriCount);
 		STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLORARG1);
 		STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLOROP);
@@ -613,7 +613,7 @@ CPythonGraphic::CPythonGraphic()
 	m_lightColor = GetColor(1.0f, 1.0f, 1.0f);
 	m_darkColor = GetColor(0.0f, 0.0f, 0.0f);
 	
-	memset(&m_backupViewport, 0, sizeof(D3DVIEWPORT8));
+	memset(&m_backupViewport, 0, sizeof(D3DVIEWPORT9));
 
 	m_fOrthoDepth = 1000.0f;
 }

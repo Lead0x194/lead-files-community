@@ -181,7 +181,7 @@ class CPythonMiniMap : public CScreen, public CSingleton<CPythonMiniMap>
 		float							m_fMiniMapRadius;
 
 		// ¸Ê ±×¸²...
-		LPDIRECT3DTEXTURE8				m_lpMiniMapTexture[AROUND_AREA_NUM];
+		LPDIRECT3DTEXTURE9				m_lpMiniMapTexture[AROUND_AREA_NUM];
 
 		// ¹Ì´Ï¸Ê Ä¿¹ö
 		CGraphicImageInstance			m_MiniMapFilterGraphicImageInstance;

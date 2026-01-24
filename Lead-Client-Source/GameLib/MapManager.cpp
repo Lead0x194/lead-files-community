@@ -259,7 +259,7 @@ void CMapManager::BeginEnvironment()
 		}
 		else
 		{
-			CSpeedTreeForestDirectX8& rkForest=CSpeedTreeForestDirectX8::Instance();
+			CSpeedTreeForestDirectX9& rkForest=CSpeedTreeForestDirectX9::Instance();
 			rkForest.SetFog(
 				mc_pcurEnvironmentData->GetFogNearDistance(), 
 				mc_pcurEnvironmentData->GetFogFarDistance()

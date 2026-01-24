@@ -37,9 +37,9 @@
 #include "SpeedTreeMaterial.h"
 #include <speedtree/SpeedTreeRT.h>
 
-#include <d3d8.h>
-#include <d3d8types.h>
-#include <d3dx8.h>
+#include <directx/d3d9.h>
+#include <directx/d3d9types.h>
+#include <directx/d3dx9.h>
 #include <vector>
 
 #include "../eterLib/GrpObjectInstance.h"
@@ -141,7 +141,7 @@ public:
 	void						Advance(void);
 	
 	// utility
-	LPDIRECT3DTEXTURE8			GetBranchTexture(void) const;
+	LPDIRECT3DTEXTURE9			GetBranchTexture(void) const;
 	void						CleanUpMemory(void);
 	
 private:
@@ -166,20 +166,20 @@ private:
 	CSpeedTreeRT::SGeometry*		m_pGeometryCache;				// cache for pulling geometry from SpeedTree avoids lots of reallocation
 
 	// branch buffers
-	LPDIRECT3DVERTEXBUFFER8			m_pBranchVertexBuffer;			// branch vertex buffer
+	LPDIRECT3DVERTEXBUFFER9			m_pBranchVertexBuffer;			// branch vertex buffer
 	unsigned int					m_unBranchVertexCount;			// number of vertices in branches
-	LPDIRECT3DINDEXBUFFER8			m_pBranchIndexBuffer;			// branch index buffer
+	LPDIRECT3DINDEXBUFFER9			m_pBranchIndexBuffer;			// branch index buffer
 	unsigned short*					m_pBranchIndexCounts;			// number of indexes per branch LOD level
 	
 	// frond buffers
-	LPDIRECT3DVERTEXBUFFER8			m_pFrondVertexBuffer;			// frond vertex buffer
+	LPDIRECT3DVERTEXBUFFER9			m_pFrondVertexBuffer;			// frond vertex buffer
 	unsigned int					m_unFrondVertexCount;			// number of vertices in frond
-	LPDIRECT3DINDEXBUFFER8			m_pFrondIndexBuffer;			// frond index buffer
+	LPDIRECT3DINDEXBUFFER9			m_pFrondIndexBuffer;			// frond index buffer
 	unsigned short*					m_pFrondIndexCounts;			// number of indexes per frond LOD level
 	
 	// leaf buffers
 	unsigned short					m_usNumLeafLods;				// the number of leaf LODs
-	LPDIRECT3DVERTEXBUFFER8*		m_pLeafVertexBuffer;			// leaf vertex buffer
+	LPDIRECT3DVERTEXBUFFER9*		m_pLeafVertexBuffer;			// leaf vertex buffer
 	bool*							m_pLeavesUpdatedByCpu;			// stores which LOD's have been updated already per frame
 	
 	// tree properties

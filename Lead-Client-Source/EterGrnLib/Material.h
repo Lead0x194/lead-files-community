@@ -2,7 +2,7 @@
 
 #include <granny/granny.h>
 #include <windows.h>
-#include <d3d8.h>
+#include <directx/d3d9.h>
 
 #include "../eterlib/ReferenceObject.h"
 #include "../eterlib/Ref.h"
@@ -58,7 +58,7 @@ class CGrannyMaterial : public CReferenceObject
 		const CGraphicTexture * GetDiffuseTexture() const;
 		const CGraphicTexture * GetOpacityTexture() const;
 
-		LPDIRECT3DTEXTURE8		GetD3DTexture(int iStage) const;
+		LPDIRECT3DTEXTURE9		GetD3DTexture(int iStage) const;
 
 		bool					IsTwoSided() const		{ return m_bTwoSideRender; }
 

@@ -168,7 +168,7 @@ void CEffectMeshInstance::OnRender()
 
 		Color.a = fAlpha * rFrameData.fVisibility;
 		STATEMANAGER.SetRenderState(D3DRS_TEXTUREFACTOR, DWORD(Color));
-		STATEMANAGER.SetVertexShader(D3DFVF_XYZ | D3DFVF_TEX1);
+		STATEMANAGER.SetFVF(D3DFVF_XYZ | D3DFVF_TEX1);
 		STATEMANAGER.DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 									 rFrameData.dwIndexCount/3,
 									 &rFrameData.PDTVertexVector[0],

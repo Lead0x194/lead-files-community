@@ -17,5 +17,5 @@ class CPixelShader : public CGraphicBase
 		void Initialize();
 
 	protected:
-		DWORD m_handle;
+		LPDIRECT3DPIXELSHADER9 m_handle;
 };

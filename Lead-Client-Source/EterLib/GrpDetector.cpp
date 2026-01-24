@@ -67,7 +67,7 @@ const D3DFORMAT&		D3D_CAdapterDisplayModeList::GetPixelFormatr(UINT iD3DFmt)
 	return m_aeD3DFmt[iD3DFmt];
 }
 
-VOID D3D_CAdapterDisplayModeList::Build(IDirect3D8& rkD3D, D3DFORMAT eD3DFmtDefault, UINT iD3DAdapterInfo)
+VOID D3D_CAdapterDisplayModeList::Build(IDirect3D9& rkD3D, D3DFORMAT eD3DFmtDefault, UINT iD3DAdapterInfo)
 {
 	D3DDISPLAYMODE* akD3DDM=m_akD3DDM;
 	D3DFORMAT* aeD3DFmt=m_aeD3DFmt;	
@@ -77,11 +77,11 @@ VOID D3D_CAdapterDisplayModeList::Build(IDirect3D8& rkD3D, D3DFORMAT eD3DFmtDefa
 
 	aeD3DFmt[uD3DFmtNum++]=eD3DFmtDefault;
 
-	UINT uAdapterModeNum=rkD3D.GetAdapterModeCount(iD3DAdapterInfo);
+	UINT uAdapterModeNum=rkD3D.GetAdapterModeCount(iD3DAdapterInfo, eD3DFmtDefault);
 	for (UINT iD3DAdapterInfoMode=0; iD3DAdapterInfoMode<uAdapterModeNum; iD3DAdapterInfoMode++)
 	{			
 		D3DDISPLAYMODE kD3DDMCur;
-		rkD3D.EnumAdapterModes(iD3DAdapterInfo, iD3DAdapterInfoMode, &kD3DDMCur);
+		rkD3D.EnumAdapterModes(iD3DAdapterInfo, eD3DFmtDefault, iD3DAdapterInfoMode, &kD3DDMCur);
 
 		// IsFilterOutLowResolutionMode
 		if( kD3DDMCur.Width  < FILTEROUT_LOWRESOLUTION_WIDTH || kD3DDMCur.Height < FILTEROUT_LOWRESOLUTION_HEIGHT )
@@ -178,7 +178,7 @@ D3D_SModeInfo* D3D_CDeviceInfo::GetD3DModeInfop(UINT iD3D_SModeInfo)
 	return &m_akD3DModeInfo[iD3D_SModeInfo];
 }
 
-BOOL D3D_CDeviceInfo::FindDepthStencilFormat(IDirect3D8& rkD3D, UINT iD3DAdapterInfo, D3DDEVTYPE DeviceType, D3DFORMAT TargetFormat, D3DFORMAT* pDepthStencilFormat )
+BOOL D3D_CDeviceInfo::FindDepthStencilFormat(IDirect3D9& rkD3D, UINT iD3DAdapterInfo, D3DDEVTYPE DeviceType, D3DFORMAT TargetFormat, D3DFORMAT* pDepthStencilFormat )
 {
     UINT m_dwMinDepthBits    = 16;
     UINT m_dwMinStencilBits  = 0;
@@ -270,7 +270,7 @@ BOOL D3D_CDeviceInfo::FindDepthStencilFormat(IDirect3D8& rkD3D, UINT iD3DAdapter
     return FALSE;
 }
 
-BOOL D3D_CDeviceInfo::Build(IDirect3D8& rkD3D, UINT iD3DAdapterInfo, UINT iDevType, D3D_CAdapterDisplayModeList& rkD3DADMList, BOOL (*pfnConfirmDevice)(D3DCAPS8& rkD3DCaps, UINT uBehavior, D3DFORMAT eD3DFmt))
+BOOL D3D_CDeviceInfo::Build(IDirect3D9& rkD3D, UINT iD3DAdapterInfo, UINT iDevType, D3D_CAdapterDisplayModeList& rkD3DADMList, BOOL (*pfnConfirmDevice)(D3DCAPS9& rkD3DCaps, UINT uBehavior, D3DFORMAT eD3DFmt))
 {	
 	assert(pfnConfirmDevice!=NULL && "D3D_CDeviceInfo::Build");
 
@@ -290,11 +290,6 @@ BOOL D3D_CDeviceInfo::Build(IDirect3D8& rkD3D, UINT iD3DAdapterInfo, UINT iDevTy
 	BOOL  aisFormatConfirmed[20];
 	DWORD adwD3DBehavior[20];
 	D3DFORMAT aeD3DFmtDepthStencil[20];
-	
-    BOOL isHALExists = FALSE;
-    BOOL isHALWindowedCompatible = FALSE;
-    BOOL isHALDesktopCompatible = FALSE;
-    BOOL isHALSampleCompatible = FALSE;
 
 	// GetFlagInfo
 	{
@@ -311,20 +306,6 @@ BOOL D3D_CDeviceInfo::Build(IDirect3D8& rkD3D, UINT iD3DAdapterInfo, UINT iDevTy
 			// SkipNoRenderTargetFormat;
 			if (FAILED(rkD3D.CheckDeviceType(iD3DAdapterInfo, m_eD3DDevType, eD3DFmtPixel, eD3DFmtPixel, FALSE)))
 				continue;
-
-			if (D3DDEVTYPE_HAL==m_eD3DDevType)
-			{
-				isHALExists=TRUE;
-				
-				if (m_kD3DCaps.Caps2 & D3DCAPS2_CANRENDERWINDOWED)
-				{
-					isHALWindowedCompatible=TRUE;
-
-					if (iFmt==0)
-						isHALDesktopCompatible=TRUE;
-                
-				}
-			}
 
 			// Confirm the device/format for HW vertex processing
 			if (m_kD3DCaps.DevCaps & D3DDEVCAPS_HWTRANSFORMANDLIGHT)
@@ -396,9 +377,6 @@ BOOL D3D_CDeviceInfo::Build(IDirect3D8& rkD3D, UINT iD3DAdapterInfo, UINT iDevTy
 						rkModeInfo.m_eD3DFmtPixel=c_rkD3DDM.Format;
 						rkModeInfo.m_dwD3DBehavior=adwD3DBehavior[iFmt];
 						rkModeInfo.m_eD3DFmtDepthStencil=aeD3DFmtDepthStencil[iFmt];
-						
-						if( m_eD3DDevType == D3DDEVTYPE_HAL )
-							isHALSampleCompatible = TRUE;
 					}
 				}
 			}
@@ -407,7 +385,7 @@ BOOL D3D_CDeviceInfo::Build(IDirect3D8& rkD3D, UINT iD3DAdapterInfo, UINT iDevTy
 
 	// Check if the device is compatible with the desktop display mode
 	// (which was added initially as formats[0])
-	if (aisFormatConfirmed[0] && (m_kD3DCaps.Caps2 & D3DCAPS2_CANRENDERWINDOWED) )
+	if (aisFormatConfirmed[0])
 	{
 		m_canDoWindowed=TRUE;
 		m_isWindowed=TRUE;
@@ -523,13 +501,13 @@ BOOL D3D_CAdapterInfo::Find(UINT uScrWidth, UINT uScrHeight, UINT uScrDepthBits,
 	return FALSE;
 }
 
-BOOL D3D_CAdapterInfo::Build(IDirect3D8& rkD3D, UINT iD3DAdapterInfo, PFNCONFIRMDEVICE pfnConfirmDevice)
+BOOL D3D_CAdapterInfo::Build(IDirect3D9& rkD3D, UINT iD3DAdapterInfo, PFNCONFIRMDEVICE pfnConfirmDevice)
 {
 	D3DDISPLAYMODE& rkD3DDMDesktop=m_kD3DDMDesktop;
 	if (FAILED(rkD3D.GetAdapterDisplayMode(iD3DAdapterInfo, &rkD3DDMDesktop)))
 		return FALSE;
 
-	rkD3D.GetAdapterIdentifier(iD3DAdapterInfo, D3DENUM_NO_WHQL_LEVEL, &m_kD3DAdapterIdentifier);
+	rkD3D.GetAdapterIdentifier(iD3DAdapterInfo, 0, &m_kD3DAdapterIdentifier);
 	
 	m_iCurD3DDevInfo=0;
 	m_uD3DDevInfoNum=0;
@@ -613,7 +591,7 @@ BOOL D3D_CDisplayModeAutoDetector::Find(UINT uScrWidth, UINT uScrHeight, UINT uS
 	return FALSE;
 }
 
-BOOL D3D_CDisplayModeAutoDetector::Build(IDirect3D8& rkD3D, PFNCONFIRMDEVICE pfnConfirmDevice)
+BOOL D3D_CDisplayModeAutoDetector::Build(IDirect3D9& rkD3D, PFNCONFIRMDEVICE pfnConfirmDevice)
 {
 	m_uD3DAdapterInfoCount=0;
 

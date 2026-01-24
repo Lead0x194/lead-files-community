@@ -91,8 +91,8 @@ void CEffectInstance::OnUpdate()
 
 void CEffectInstance::OnRender()
 {
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_MINFILTER, D3DTEXF_NONE);
-	STATEMANAGER.SaveTextureStageState(0, D3DTSS_MAGFILTER, D3DTEXF_NONE);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_MINFILTER, D3DTEXF_NONE);
+	STATEMANAGER.SaveSamplerState(0, D3DSAMP_MAGFILTER, D3DTEXF_NONE);
 	STATEMANAGER.SaveRenderState(D3DRS_ALPHABLENDENABLE, TRUE);
 	STATEMANAGER.SaveRenderState(D3DRS_SRCBLEND, D3DBLEND_SRCALPHA);
 	STATEMANAGER.SaveRenderState(D3DRS_DESTBLEND, D3DBLEND_INVSRCALPHA);
@@ -107,13 +107,13 @@ void CEffectInstance::OnRender()
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAARG1, D3DTA_TFACTOR);
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAARG2, D3DTA_TEXTURE);
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_ALPHAOP,   D3DTOP_MODULATE);
-	STATEMANAGER.SetVertexShader(D3DFVF_XYZ|D3DFVF_TEX1);
+	STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_TEX1);
 	std::for_each(m_ParticleInstanceVector.begin(),m_ParticleInstanceVector.end(),std::mem_fn(&CEffectElementBaseInstance::Render));
 	std::for_each(m_MeshInstanceVector.begin(),m_MeshInstanceVector.end(),std::mem_fn(&CEffectElementBaseInstance::Render));
 
 	/////
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MINFILTER);
-	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_MAGFILTER);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MINFILTER);
+	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MAGFILTER);
 	STATEMANAGER.RestoreRenderState(D3DRS_ALPHABLENDENABLE);
 	STATEMANAGER.RestoreRenderState(D3DRS_SRCBLEND);
 	STATEMANAGER.RestoreRenderState(D3DRS_DESTBLEND);

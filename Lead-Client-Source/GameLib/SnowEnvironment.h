@@ -28,19 +28,19 @@ class CSnowEnvironment : public CScreen
 		void __ApplyBlur();
 
 	protected:
-		LPDIRECT3DSURFACE8 m_lpOldSurface;
-		LPDIRECT3DSURFACE8 m_lpOldDepthStencilSurface;
+		LPDIRECT3DSURFACE9 m_lpOldSurface;
+		LPDIRECT3DSURFACE9 m_lpOldDepthStencilSurface;
 
-		LPDIRECT3DTEXTURE8 m_lpSnowTexture;
-		LPDIRECT3DSURFACE8 m_lpSnowRenderTargetSurface;
-		LPDIRECT3DSURFACE8 m_lpSnowDepthSurface;
+		LPDIRECT3DTEXTURE9 m_lpSnowTexture;
+		LPDIRECT3DSURFACE9 m_lpSnowRenderTargetSurface;
+		LPDIRECT3DSURFACE9 m_lpSnowDepthSurface;
 
-		LPDIRECT3DTEXTURE8 m_lpAccumTexture;
-		LPDIRECT3DSURFACE8 m_lpAccumRenderTargetSurface;
-		LPDIRECT3DSURFACE8 m_lpAccumDepthSurface;
+		LPDIRECT3DTEXTURE9 m_lpAccumTexture;
+		LPDIRECT3DSURFACE9 m_lpAccumRenderTargetSurface;
+		LPDIRECT3DSURFACE9 m_lpAccumDepthSurface;
 
-		LPDIRECT3DVERTEXBUFFER8 m_pVB;
-		LPDIRECT3DINDEXBUFFER8 m_pIB;
+		LPDIRECT3DVERTEXBUFFER9 m_pVB;
+		LPDIRECT3DINDEXBUFFER9 m_pIB;
 
 		D3DXVECTOR3 m_v3Center;
 

@@ -21,7 +21,7 @@ typedef struct STerrainTexture
 	}
 
 	std::string					stFilename;
-	LPDIRECT3DTEXTURE8			pd3dTexture;
+	LPDIRECT3DTEXTURE9			pd3dTexture;
 	CGraphicImageInstance 		ImageInstance;
 	float						UScale;
 	float						VScale;

@@ -1,9 +1,9 @@
 #pragma once
 
-#include <d3d8.h>
+#include <directx/d3d9.h>
 #include <string>
 
-typedef BOOL (*PFNCONFIRMDEVICE) (D3DCAPS8& rkD3DCaps, UINT uBehavior, D3DFORMAT eD3DFmt);
+typedef BOOL (*PFNCONFIRMDEVICE) (D3DCAPS9& rkD3DCaps, UINT uBehavior, D3DFORMAT eD3DFmt);
 
 enum
 {
@@ -29,7 +29,7 @@ class D3D_CAdapterDisplayModeList
 	public:
 		D3D_CAdapterDisplayModeList() {}
 		~D3D_CAdapterDisplayModeList() {}
-		VOID Build(IDirect3D8& rkD3D, D3DFORMAT eD3DFmtDefault, UINT iAdapter);
+		VOID Build(IDirect3D9& rkD3D, D3DFORMAT eD3DFmtDefault, UINT iAdapter);
 
 		UINT GetDisplayModeNum();
 		UINT GetPixelFormatNum();
@@ -61,14 +61,14 @@ class D3D_CDeviceInfo
 	public:
 		D3D_CDeviceInfo() {}
 		~D3D_CDeviceInfo() {}
-		BOOL Build(IDirect3D8& rkD3D, UINT iAdapter, UINT iDevType, D3D_CAdapterDisplayModeList& rkD3DADMList, PFNCONFIRMDEVICE pfnConfirmDevice);
+		BOOL Build(IDirect3D9& rkD3D, UINT iAdapter, UINT iDevType, D3D_CAdapterDisplayModeList& rkD3DADMList, PFNCONFIRMDEVICE pfnConfirmDevice);
 		BOOL Find(UINT uScrWidth, UINT uScrHeight, UINT uScrDepthBits, BOOL isWindowed, UINT* piD3DModeInfo);	
 
 		UINT GetD3DModeInfoNum();
 		
 		VOID GetString(std::string* pstEnumList);
 		
-		BOOL FindDepthStencilFormat(IDirect3D8& rkD3D, UINT iAdapter, D3DDEVTYPE DeviceType, D3DFORMAT TargetFormat, D3DFORMAT* pDepthStencilFormat);
+		BOOL FindDepthStencilFormat(IDirect3D9& rkD3D, UINT iAdapter, D3DDEVTYPE DeviceType, D3DFORMAT TargetFormat, D3DFORMAT* pDepthStencilFormat);
 
 		D3D_SModeInfo& GetD3DModeInfor(UINT iD3DModeInfo);
 		D3D_SModeInfo* GetD3DModeInfop(UINT iD3DModeInfo);
@@ -84,7 +84,7 @@ class D3D_CDeviceInfo
 		const TCHAR* m_szDevDesc;
 
 		D3DDEVTYPE	m_eD3DDevType;
-		D3DCAPS8	m_kD3DCaps; 			
+		D3DCAPS9	m_kD3DCaps;
 		BOOL		m_canDoWindowed;
 
 		UINT		m_iCurD3DModeInfo;
@@ -110,10 +110,10 @@ class D3D_CAdapterInfo
 		~D3D_CAdapterInfo() {}
 		BOOL Find(UINT uScrWidth, UINT uScrHeight, UINT uScrDepthBits, BOOL isWindowed, UINT* piD3DModeInfo, UINT* piD3DDevInfo);
 
-		BOOL Build(IDirect3D8& rkD3D, UINT iAdapter, PFNCONFIRMDEVICE pfnConfirmDevice);
+		BOOL Build(IDirect3D9& rkD3D, UINT iAdapter, PFNCONFIRMDEVICE pfnConfirmDevice);
 		VOID GetString(std::string* pstEnumList);
 
-		D3DADAPTER_IDENTIFIER8& GetIdentifier()
+		D3DADAPTER_IDENTIFIER9& GetIdentifier()
 		{
 			return m_kD3DAdapterIdentifier;
 		}
@@ -132,7 +132,7 @@ class D3D_CAdapterInfo
 		
 		
 	protected:
-		D3DADAPTER_IDENTIFIER8	m_kD3DAdapterIdentifier;
+		D3DADAPTER_IDENTIFIER9	m_kD3DAdapterIdentifier;
 		D3DDISPLAYMODE			m_kD3DDMDesktop;
 
 		UINT			m_iCurD3DDevInfo;
@@ -148,7 +148,7 @@ class D3D_CDisplayModeAutoDetector
 		~D3D_CDisplayModeAutoDetector();
 
 		BOOL Find(UINT uScrWidth, UINT uScrHeight, UINT uScrDepthBits, BOOL isWindowed, UINT* piD3DModeInfo, UINT* piD3DDevInfo, UINT* piD3DAdapterInfo);
-		BOOL Build(IDirect3D8& rkD3D, PFNCONFIRMDEVICE pfnConfirmDevice);
+		BOOL Build(IDirect3D9& rkD3D, PFNCONFIRMDEVICE pfnConfirmDevice);
 
 		D3D_CAdapterInfo*	GetD3DAdapterInfop(UINT iD3DAdapterInfo);
 		D3D_SModeInfo*		GetD3DModeInfop(UINT iD3DAdapterInfo, UINT iD3DDevInfo, UINT iD3DModeInfo);
