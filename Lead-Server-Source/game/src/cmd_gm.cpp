@@ -258,39 +258,39 @@ bool CHARACTER_GoToName(LPCHARACTER ch, BYTE empire, int mapIndex, const char* g
 
 /*
    = {
-   { "A1|¿µ¾ÈÀ¾¼º",		0, 1,  4693, 9642 },
-   { "A3|ÀÚ¾çÇö",		0, 3,  3608, 8776 },
+   { "A1|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",		0, 1,  4693, 9642 },
+   { "A3|ï¿½Ú¾ï¿½ï¿½ï¿½",		0, 3,  3608, 8776 },
 
-   { "B1|Á¶¾ÈÀ¾¼º",		0, 21,  557, 1579 },
-   { "B3|º¹Á¤Çö",		0, 23, 1385, 2349 },
+   { "B1|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",		0, 21,  557, 1579 },
+   { "B3|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",		0, 23, 1385, 2349 },
 
-   { "C1|Æò¹«À¾¼º",		0, 41, 9696, 2784 },
-   { "C3|¹Ú¶óÇö",		0, 43, 8731, 2426 },
+   { "C1|ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½",		0, 41, 9696, 2784 },
+   { "C3|ï¿½Ú¶ï¿½ï¿½ï¿½",		0, 43, 8731, 2426 },
 
 // Snow
-{ "Snow|¼­ÇÑ»ê",		1, 61, 4342, 2906 },
-{ "Snow|¼­ÇÑ»ê",		2, 61, 3752, 1749 },
-{ "Snow|¼­ÇÑ»ê",		3, 61, 4918, 1736 },
+{ "Snow|ï¿½ï¿½ï¿½Ñ»ï¿½",		1, 61, 4342, 2906 },
+{ "Snow|ï¿½ï¿½ï¿½Ñ»ï¿½",		2, 61, 3752, 1749 },
+{ "Snow|ï¿½ï¿½ï¿½Ñ»ï¿½",		3, 61, 4918, 1736 },
 
 // Flame
-{ "Flame|µµ¿°È­Áö|È­¿°",	1, 62, 5994, 7563 },
-{ "Flame|µµ¿°È­Áö|È­¿°",	2, 62, 5978, 6222 },
-{ "Flame|µµ¿°È­Áö|È­¿°",	3, 62, 7307, 6898 },
+{ "Flame|ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½|È­ï¿½ï¿½",	1, 62, 5994, 7563 },
+{ "Flame|ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½|È­ï¿½ï¿½",	2, 62, 5978, 6222 },
+{ "Flame|ï¿½ï¿½ï¿½ï¿½È­ï¿½ï¿½|È­ï¿½ï¿½",	3, 62, 7307, 6898 },
 
 // Desert
-{ "Desert|¿µºñ»ç¸·|»ç¸·",	1, 63, 2178, 6272 },
-{ "Desert|¿µºñ»ç¸·|»ç¸·",	2, 63, 2219, 5027 },
-{ "Desert|¿µºñ»ç¸·|»ç¸·",	3, 63, 3440, 5025 },
+{ "Desert|ï¿½ï¿½ï¿½ï¿½ç¸·|ï¿½ç¸·",	1, 63, 2178, 6272 },
+{ "Desert|ï¿½ï¿½ï¿½ï¿½ç¸·|ï¿½ç¸·",	2, 63, 2219, 5027 },
+{ "Desert|ï¿½ï¿½ï¿½ï¿½ç¸·|ï¿½ç¸·",	3, 63, 3440, 5025 },
 
-// ¹Ð±³»ç¿ø
-{ "Milgyo|¹Ð±³»ç¿ø",	1, 65, 5536, 1436 },
-{ "Milgyo|¹Ð±³»ç¿ø",	2, 65, 5536, 1436 },
-{ "Milgyo|¹Ð±³»ç¿ø",	3, 65, 5536, 1436 },
+// ï¿½Ð±ï¿½ï¿½ï¿½ï¿½
+{ "Milgyo|ï¿½Ð±ï¿½ï¿½ï¿½ï¿½",	1, 65, 5536, 1436 },
+{ "Milgyo|ï¿½Ð±ï¿½ï¿½ï¿½ï¿½",	2, 65, 5536, 1436 },
+{ "Milgyo|ï¿½Ð±ï¿½ï¿½ï¿½ï¿½",	3, 65, 5536, 1436 },
 
-// »ç±ÍÅ¸¿öÀÔ±¸
-{ "»ç±ÍÅ¸¿öÀÔ±¸",		1, 65, 5905, 1108 },
-{ "»ç±ÍÅ¸¿öÀÔ±¸",		2, 65, 5905, 1108 },
-{ "»ç±ÍÅ¸¿öÀÔ±¸",		3, 65, 5905, 1108 },
+// ï¿½ï¿½ï¿½Å¸ï¿½ï¿½ï¿½Ô±ï¿½
+{ "ï¿½ï¿½ï¿½Å¸ï¿½ï¿½ï¿½Ô±ï¿½",		1, 65, 5905, 1108 },
+{ "ï¿½ï¿½ï¿½Å¸ï¿½ï¿½ï¿½Ô±ï¿½",		2, 65, 5905, 1108 },
+{ "ï¿½ï¿½ï¿½Å¸ï¿½ï¿½ï¿½Ô±ï¿½",		3, 65, 5905, 1108 },
 
 { NULL,			0,  0,    0,    0 },
 };
@@ -834,7 +834,7 @@ struct FuncPurge
 
 		int iDist = DISTANCE_APPROX(pkChr->GetX() - m_pkGM->GetX(), pkChr->GetY() - m_pkGM->GetY());
 
-		if (!m_bAll && iDist >= 1000)	// 10¹ÌÅÍ ÀÌ»ó¿¡ ÀÖ´Â °ÍµéÀº purge ÇÏÁö ¾Ê´Â´Ù.
+		if (!m_bAll && iDist >= 1000)	// 10ï¿½ï¿½ï¿½ï¿½ ï¿½Ì»ï¿½ ï¿½Ö´ï¿½ ï¿½Íµï¿½ï¿½ï¿½ purge ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½.
 			return;
 
 		sys_log(0, "PURGE: %s %d", pkChr->GetName(), iDist);
@@ -902,163 +902,308 @@ ACMD(do_state)
 	{
 		if (arg1[0] == '#')
 		{
-			tch = CHARACTER_MANAGER::instance().Find(strtoul(arg1+1, NULL, 10));
+			tch = CHARACTER_MANAGER::instance().Find(strtoul(arg1 + 1, NULL, 10));
 		}
 		else
 		{
 			LPDESC d = DESC_MANAGER::instance().FindByCharacterName(arg1);
 
 			if (!d)
+			{
 				tch = NULL;
+			}
 			else
+			{
 				tch = d->GetCharacter();
+			}
 		}
 	}
 	else
+	{
 		tch = ch;
+	}
 
 	if (!tch)
-		return;
+	{
+		CCI* pkCCI = P2P_MANAGER::instance().Find(arg1);
+		if (!pkCCI || !pkCCI->pkDesc)
+		{
+			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Player %s isn't currently online."), arg1);
+			return;
+		}
 
+		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Player %s is on channel %d."), arg1, (int)pkCCI->bChannel);
+		return;
+	}
 	char buf[256];
 
-	snprintf(buf, sizeof(buf), "%s's State: ", tch->GetName());
+	snprintf(buf, sizeof(buf), "%s's VID:(%u) CH:(%d) State: ", tch->GetName(), (DWORD)tch->GetVID(), g_bChannel);
 
 	if (tch->IsPosition(POS_FIGHTING))
+	{
 		strlcat(buf, "Battle", sizeof(buf));
+	}
 	else if (tch->IsPosition(POS_DEAD))
+	{
 		strlcat(buf, "Dead", sizeof(buf));
+	}
+	else if (tch->IsPosition(POS_FISHING))
+	{
+		strlcat(buf, "Fishing", sizeof(buf));
+	}
+
 	else
+	{
 		strlcat(buf, "Standing", sizeof(buf));
+	}
 
 	if (ch->GetShop())
+	{
 		strlcat(buf, ", Shop", sizeof(buf));
+	}
 
 	if (ch->GetExchange())
+	{
 		strlcat(buf, ", Exchange", sizeof(buf));
+	}
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s"), buf);
+	ch->ChatPacket(CHAT_TYPE_INFO, "%s", buf);
 
 	int len;
-	len = snprintf(buf, sizeof(buf), "Coordinate %ldx%ld (%ldx%ld)", 
-			tch->GetX(), tch->GetY(), tch->GetX() / 100, tch->GetY() / 100);
+	len = snprintf(buf, sizeof(buf), "Coordinate %ldx%ld (%ldx%ld)", tch->GetX(), tch->GetY(), tch->GetX() / 100, tch->GetY() / 100);
 
-	if (len < 0 || len >= (int) sizeof(buf))
+	if (len < 0 || len >= (int)sizeof(buf))
+	{
 		len = sizeof(buf) - 1;
+	}
 
 	LPSECTREE pSec = SECTREE_MANAGER::instance().Get(tch->GetMapIndex(), tch->GetX(), tch->GetY());
 
 	if (pSec)
 	{
 		TMapSetting& map_setting = SECTREE_MANAGER::instance().GetMap(tch->GetMapIndex())->m_setting;
-		snprintf(buf + len, sizeof(buf) - len, " MapIndex %ld Attribute %08X Local Position (%ld x %ld)", 
-			tch->GetMapIndex(), pSec->GetAttribute(tch->GetX(), tch->GetY()), (tch->GetX() - map_setting.iBaseX)/100, (tch->GetY() - map_setting.iBaseY)/100);
+		snprintf(buf + len, sizeof(buf) - len, " MapIndex %ld Attribute %08X Local Position (%ld x %ld)", tch->GetMapIndex(), pSec->GetAttribute(tch->GetX(), tch->GetY()), (tch->GetX() - map_setting.iBaseX) / 100, (tch->GetY() - map_setting.iBaseY) / 100);
 	}
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s"), buf);
+	ch->ChatPacket(CHAT_TYPE_INFO, "%s", buf);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("LEV %d"), tch->GetLevel());
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("HP %d/%d"), tch->GetHP(), tch->GetMaxHP());
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("SP %d/%d"), tch->GetSP(), tch->GetMaxSP());
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%"),
-			tch->GetPoint(POINT_ATT_GRADE),
-			tch->GetPoint(POINT_MAGIC_ATT_GRADE),
-			tch->GetPoint(POINT_ATT_SPEED),
-			tch->GetPoint(POINT_CRITICAL_PCT),
-			tch->GetPoint(POINT_PENETRATE_PCT),
-			tch->GetPoint(POINT_ATT_BONUS));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%"), 
-			tch->GetPoint(POINT_DEF_GRADE),
-			tch->GetPoint(POINT_MAGIC_DEF_GRADE),
-			tch->GetPoint(POINT_BLOCK),
-			tch->GetPoint(POINT_DODGE),
-			tch->GetPoint(POINT_DEF_BONUS));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("RESISTANCES:"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%"),
-			tch->GetPoint(POINT_RESIST_WARRIOR),
-			tch->GetPoint(POINT_RESIST_ASSASSIN),
-			tch->GetPoint(POINT_RESIST_SURA),
-			tch->GetPoint(POINT_RESIST_SHAMAN));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%"),
-			tch->GetPoint(POINT_RESIST_SWORD),
-			tch->GetPoint(POINT_RESIST_TWOHAND),
-			tch->GetPoint(POINT_RESIST_DAGGER),
-			tch->GetPoint(POINT_RESIST_BELL),
-			tch->GetPoint(POINT_RESIST_FAN),
-			tch->GetPoint(POINT_RESIST_BOW));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%"),
-			tch->GetPoint(POINT_RESIST_FIRE),
-			tch->GetPoint(POINT_RESIST_ELEC),
-			tch->GetPoint(POINT_RESIST_MAGIC),
-			tch->GetPoint(POINT_RESIST_WIND),
-			tch->GetPoint(POINT_RESIST_CRITICAL),
-			tch->GetPoint(POINT_RESIST_PENETRATE));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("ICE:%3d%% EARTH:%3d%% DARK:%3d%%"),
-			tch->GetPoint(POINT_RESIST_ICE),
-			tch->GetPoint(POINT_RESIST_EARTH),
-			tch->GetPoint(POINT_RESIST_DARK));
+	ch->ChatPacket(CHAT_TYPE_INFO, "Level %d", tch->GetLevel());
+	ch->ChatPacket(CHAT_TYPE_INFO, "HP %d/%d", tch->GetHP(), tch->GetMaxHP());
+	ch->ChatPacket(CHAT_TYPE_INFO, "SP %d/%d", tch->GetSP(), tch->GetMaxSP());
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("MALL:"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d"),
-			tch->GetPoint(POINT_MALL_ATTBONUS),
-			tch->GetPoint(POINT_MALL_DEFBONUS),
-			tch->GetPoint(POINT_MALL_EXPBONUS),
-			tch->GetPoint(POINT_MALL_ITEMBONUS) / 10,
-			tch->GetPoint(POINT_MALL_GOLDBONUS) / 10);
+	const std::vector<std::pair<std::string, std::vector<std::pair<std::string, int>>>> point_map =
+	{
+		{
+			"GENERAL OFF:",
+			{
+				{ "ATT", POINT_ATT_GRADE },
+				{ "MAGIC_ATT", POINT_MAGIC_ATT_GRADE },
+				{ "SPD", POINT_ATT_SPEED },
+				{ "CRIT", POINT_CRITICAL_PCT },
+				{ "PENE", POINT_PENETRATE_PCT },
+				{ "ATT_BONUS", POINT_ATT_BONUS },
+			}
+		},
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("BONUS:"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%"),
-			tch->GetPoint(POINT_SKILL_DAMAGE_BONUS),
-			tch->GetPoint(POINT_NORMAL_HIT_DAMAGE_BONUS),
-			tch->GetPoint(POINT_SKILL_DEFEND_BONUS),
-			tch->GetPoint(POINT_NORMAL_HIT_DEFEND_BONUS));
+		{
+			"GENERAL DEF:",
+			{
+				{ "DEF", POINT_DEF_GRADE },
+				{ "MAGIC_DEF", POINT_MAGIC_DEF_GRADE },
+				{ "BLOCK", POINT_BLOCK },
+				{ "DODGE", POINT_DODGE },
+				{ "DEF_BONUS", POINT_DEF_BONUS },
+			}
+		},
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%"),
-			tch->GetPoint(POINT_ATTBONUS_HUMAN),
-			tch->GetPoint(POINT_ATTBONUS_ANIMAL),
-			tch->GetPoint(POINT_ATTBONUS_ORC),
-			tch->GetPoint(POINT_ATTBONUS_MILGYO),
-			tch->GetPoint(POINT_ATTBONUS_UNDEAD));
+		{
+			"RESISTANCES (PvP):",
+			{
+				{ "WARRIOR", POINT_RESIST_WARRIOR },
+				{ "ASSASSIN", POINT_RESIST_ASSASSIN },
+				{ "SURA", POINT_RESIST_SURA },
+				{ "SHAMAN", POINT_RESIST_SURA },
+#ifdef ENABLE_WOLFMAN_CHARACTER
+				{ "WOLFMAN", POINT_RESIST_WOLFMAN },
+#endif
+#ifdef ADDITIONAL_BONUS
+				{ "HUMAN", POINT_RESIST_HUMAN },
+#endif
+			}
+		},
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%"),
-			tch->GetPoint(POINT_ATTBONUS_DEVIL),
-			tch->GetPoint(POINT_ATTBONUS_INSECT),
-			tch->GetPoint(POINT_ATTBONUS_FIRE),
-			tch->GetPoint(POINT_ATTBONUS_ICE),
-			tch->GetPoint(POINT_ATTBONUS_DESERT));
+		{
+			"RESISTANCES (Weapons):",
+			{
+				{ "SWORD", POINT_RESIST_SWORD },
+				{ "TWOHAND", POINT_RESIST_TWOHAND },
+				{ "DAGGER", POINT_RESIST_DAGGER },
+				{ "BOW", POINT_RESIST_BOW },
+				{ "BELL", POINT_RESIST_BELL },
+				{ "FAN", POINT_RESIST_FAN },
+#ifdef ENABLE_WOLFMAN_CHARACTER
+				{ "CLAW", POINT_RESIST_CLAW },
+#endif
+			}
+		},
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("TREE:%3d%% MONSTER:%3d%%"),
-			tch->GetPoint(POINT_ATTBONUS_TREE),
-			tch->GetPoint(POINT_ATTBONUS_MONSTER));
+		{
+			"RESISTANCES (Elements):",
+			{
+				{ "FIRE", POINT_RESIST_FIRE },
+				{ "ELEC", POINT_RESIST_ELEC },
+				{ "ICE", POINT_RESIST_ICE },
+				{ "WIND", POINT_RESIST_WIND },
+				{ "EARTH", POINT_RESIST_EARTH },
+				{ "DARK", POINT_RESIST_DARK },
+			}
+		},
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%"),
-			tch->GetPoint(POINT_ATTBONUS_WARRIOR),
-			tch->GetPoint(POINT_ATTBONUS_ASSASSIN),
-			tch->GetPoint(POINT_ATTBONUS_SURA),
-			tch->GetPoint(POINT_ATTBONUS_SHAMAN));
+		{
+			"RESISTANCES (Misc.):",
+			{
+				{ "MAGIC", POINT_RESIST_MAGIC },
+				{ "CRITICAL", POINT_RESIST_CRITICAL },
+				{ "PENETRATE", POINT_RESIST_PENETRATE },
+			}
+		},
+
+		{
+			"MALL:",
+			{
+				{ "ATT", POINT_MALL_ATTBONUS },
+				{ "DEF", POINT_MALL_DEFBONUS },
+				{ "EXP", POINT_MALL_EXPBONUS },
+				{ "ITEM", POINT_MALL_ITEMBONUS },
+				{ "GOLD", POINT_MALL_GOLDBONUS },
+			}
+		},
+
+		{
+			"BONUS (Misc.):",
+			{
+				{ "DSS", POINT_NORMAL_HIT_DAMAGE_BONUS },
+				{ "FKS", POINT_SKILL_DAMAGE_BONUS },
+				{ "NORMAL_DEF", POINT_NORMAL_HIT_DEFEND_BONUS },
+				{ "SKILL_DEF", POINT_SKILL_DEFEND_BONUS },
+			}
+		},
+
+		{
+			"BONUS (Races):",
+			{
+				{ "HUMAN", POINT_ATTBONUS_HUMAN },
+				{ "ANIMAL", POINT_ATTBONUS_ANIMAL },
+				{ "ORC", POINT_ATTBONUS_ORC },
+				{ "MILGYO", POINT_ATTBONUS_MILGYO },
+				{ "UNDEAD", POINT_ATTBONUS_UNDEAD },
+				{ "DEVIL", POINT_ATTBONUS_DEVIL },
+#ifdef ADDITIONAL_BONUS
+				{ "LEGEND", POINT_ATTBONUS_LEGENDS },
+				{ "STONE", 	POINT_ATTBONUS_STONE },
+				{ "DESERT", 	POINT_ATTBONUS_DESERT },
+				{ "INSECT", 	POINT_ATTBONUS_INSECT },
+#endif
+
+			}
+		},
+
+		{
+			"BONUS (Misc.):",
+			{
+				{ "MONSTER", POINT_ATTBONUS_MONSTER },
+				{ "FIRE", POINT_ATTBONUS_FIRE },
+				{ "ICE", POINT_ATTBONUS_ICE },
+#ifdef ENABLE_ELEMENT_SYSTEM
+				{ "WIND", POINT_ATTBONUS_WIND },
+				{ "ELEC", POINT_ATTBONUS_ELEC },
+				{ "EARTH", POINT_ATTBONUS_EARTH },
+				{ "DARK", POINT_ATTBONUS_DARK },
+#endif
+			}
+		},
+
+		{
+			"BONUS (PvP):",
+			{
+				{ "WARRIOR", POINT_ATTBONUS_WARRIOR },
+				{ "ASSASSIN", POINT_ATTBONUS_ASSASSIN },
+				{ "SURA", POINT_ATTBONUS_SURA },
+				{ "SHAMAN", POINT_ATTBONUS_SHAMAN },
+#ifdef ENABLE_WOLFMAN_CHARACTER
+				{ "WOLFMAN", POINT_ATTBONUS_WOLFMAN },
+#endif
+			}
+		},
+
+		{
+			"IMMUNE:",
+			{
+				{ "STUN", POINT_IMMUNE_STUN },
+				{ "SLOW", POINT_IMMUNE_SLOW },
+				{ "FALL", POINT_IMMUNE_FALL },
+			}
+		},
+		};
+
+	for (const auto& it : point_map)
+	{
+		ch->ChatPacket(CHAT_TYPE_GUILD, it.first.c_str());
+
+		std::string strBuf;
+
+		for (const auto& it2 : it.second)
+		{
+			long long value = ch->GetPoint(it2.second);
+
+			switch (it2.second)
+			{
+			case POINT_MALL_ITEMBONUS:
+			case POINT_MALL_GOLDBONUS:
+				value /= 10;
+				break;
+
+			default:
+				break;
+			}
+
+			strBuf.append(it2.first + ": " + std::to_string(value) + " | ");
+		}
+
+		ch->ChatPacket(CHAT_TYPE_INFO, strBuf.c_str());
+	}
 
 	for (int i = 0; i < MAX_PRIV_NUM; ++i)
+	{
 		if (CPrivManager::instance().GetPriv(tch, i))
 		{
 			int iByEmpire = CPrivManager::instance().GetPrivByEmpire(tch->GetEmpire(), i);
 			int iByGuild = 0;
 
 			if (tch->GetGuild())
+			{
 				iByGuild = CPrivManager::instance().GetPrivByGuild(tch->GetGuild()->GetID(), i);
+			}
 
 			int iByPlayer = CPrivManager::instance().GetPrivByCharacter(tch->GetPlayerID(), i);
 
 			if (iByEmpire)
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s for empire : %d"), LC_TEXT(c_apszPrivNames[i]), iByEmpire);
+			{
+				ch->ChatPacket(CHAT_TYPE_INFO, "%s for empire : %d", LC_TEXT(c_apszPrivNames[i]), iByEmpire);
+			}
 
 			if (iByGuild)
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s for guild : %d"), LC_TEXT(c_apszPrivNames[i]), iByGuild);
+			{
+				ch->ChatPacket(CHAT_TYPE_INFO, "%s for guild : %d", LC_TEXT(c_apszPrivNames[i]), iByGuild);
+			}
 
 			if (iByPlayer)
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s for player : %d"), LC_TEXT(c_apszPrivNames[i]), iByPlayer);
+			{
+				ch->ChatPacket(CHAT_TYPE_INFO, "%s for player : %d", LC_TEXT(c_apszPrivNames[i]), iByPlayer);
+			}
 		}
+	}
 }
-
 struct notice_packet_func
 {
 	const char * m_str;
@@ -1708,7 +1853,7 @@ LPCHARACTER chHori, chForge, chLib, chTemple, chTraining, chTree, chPortal, chBa
 
 ACMD(do_b1)
 {
-	//È£¸®º´ 478 579
+	//È£ï¿½ï¿½ï¿½ï¿½ 478 579
 	chHori = CHARACTER_MANAGER::instance().SpawnMobRange(14017, ch->GetMapIndex(), 304222, 742858, 304222, 742858, true, false);
 	chHori->AddAffect(AFFECT_DUNGEON_UNIQUE, POINT_NONE, 0, AFF_BUILDING_CONSTRUCTION_SMALL, 65535, 0, true);
 	chHori->AddAffect(AFFECT_DUNGEON_UNIQUE, POINT_NONE, 0, AFF_DUNGEON_UNIQUE, 65535, 0, true);
@@ -1755,25 +1900,25 @@ ACMD(do_b2)
 
 ACMD(do_b3)
 {
-	// Æ÷Áö 492 547
+	// ï¿½ï¿½ï¿½ï¿½ 492 547
 	chForge = CHARACTER_MANAGER::instance().SpawnMobRange(14003, ch->GetMapIndex(), 307500, 746300, 307500, 746300, true, false);
 	chForge->AddAffect(AFFECT_DUNGEON_UNIQUE, POINT_NONE, 0, AFF_DUNGEON_UNIQUE, 65535, 0, true);
-	//³ôÀºÅ¾ 509 589 -> µµ¼­°ü
+	//ï¿½ï¿½ï¿½ï¿½Å¾ 509 589 -> ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	chLib = CHARACTER_MANAGER::instance().SpawnMobRange(14007, ch->GetMapIndex(), 307900, 744500, 307900, 744500, true, false);
 	chLib->AddAffect(AFFECT_DUNGEON_UNIQUE, POINT_NONE, 0, AFF_DUNGEON_UNIQUE, 65535, 0, true);
-	//¿åÁ¶ 513 606 -> ÈûÀÇ½ÅÀü
+	//ï¿½ï¿½ï¿½ï¿½ 513 606 -> ï¿½ï¿½ï¿½Ç½ï¿½ï¿½ï¿½
 	chTemple = CHARACTER_MANAGER::instance().SpawnMobRange(14004, ch->GetMapIndex(), 307700, 741600, 307700, 741600, true, false);
 	chTemple->AddAffect(AFFECT_DUNGEON_UNIQUE, POINT_NONE, 0, AFF_DUNGEON_UNIQUE, 65535, 0, true);
-	//±ÇÅõÀå 490 625
+	//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 490 625
 	chTraining= CHARACTER_MANAGER::instance().SpawnMobRange(14010, ch->GetMapIndex(), 307100, 739500, 307100, 739500, true, false);
 	chTraining->AddAffect(AFFECT_DUNGEON_UNIQUE, POINT_NONE, 0, AFF_DUNGEON_UNIQUE, 65535, 0, true);
-	//³ª¹« 466 614
+	//ï¿½ï¿½ï¿½ï¿½ 466 614
 	chTree= CHARACTER_MANAGER::instance().SpawnMobRange(14013, ch->GetMapIndex(), 300800, 741600, 300800, 741600, true, false);
 	chTree->AddAffect(AFFECT_DUNGEON_UNIQUE, POINT_NONE, 0, AFF_DUNGEON_UNIQUE, 65535, 0, true);
-	//Æ÷Å» 439 615
+	//ï¿½ï¿½Å» 439 615
 	chPortal= CHARACTER_MANAGER::instance().SpawnMobRange(14001, ch->GetMapIndex(), 300900, 744500, 300900, 744500, true, false);
 	chPortal->AddAffect(AFFECT_DUNGEON_UNIQUE, POINT_NONE, 0, AFF_DUNGEON_UNIQUE, 65535, 0, true);
-	// ±¸½½ 436 600
+	// ï¿½ï¿½ï¿½ï¿½ 436 600
 	chBall = CHARACTER_MANAGER::instance().SpawnMobRange(14012, ch->GetMapIndex(), 302500, 746600, 302500, 746600, true, false);
 	chBall->AddAffect(AFFECT_DUNGEON_UNIQUE, POINT_NONE, 0, AFF_DUNGEON_UNIQUE, 65535, 0, true);
 }
@@ -2193,7 +2338,7 @@ struct FuncWeaken
 
 		int iDist = DISTANCE_APPROX(pkChr->GetX() - m_pkGM->GetX(), pkChr->GetY() - m_pkGM->GetY());
 
-		if (!m_bAll && iDist >= 1000)	// 10¹ÌÅÍ ÀÌ»ó¿¡ ÀÖ´Â °ÍµéÀº purge ÇÏÁö ¾Ê´Â´Ù.
+		if (!m_bAll && iDist >= 1000)	// 10ï¿½ï¿½ï¿½ï¿½ ï¿½Ì»ï¿½ ï¿½Ö´ï¿½ ï¿½Íµï¿½ï¿½ï¿½ purge ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½.
 			return;
 
 		if (pkChr->IsNPC())
@@ -2475,7 +2620,7 @@ ACMD(do_priv_empire)
 	if (duration < 0)
 		goto USAGE;
 
-	// ½Ã°£ ´ÜÀ§·Î º¯°æ
+	// ï¿½Ã°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	duration = duration * (60*60);
 
 	sys_log(0, "_give_empire_privileage(empire=%d, type=%d, value=%d, duration=%d) by command", 
@@ -2492,8 +2637,8 @@ USAGE:
 }
 
 /**
- * @version 05/06/08	Bang2ni - ±æµå º¸³Ê½º Äù½ºÆ® ÁøÇà ¾ÈµÇ´Â ¹®Á¦ ¼öÁ¤.(½ºÅ©¸³Æ®°¡ ÀÛ¼º¾ÈµÊ.)
- * 			          quest/priv_guild.quest ·Î ºÎÅÍ ½ºÅ©¸³Æ® ÀÐ¾î¿À°Ô ¼öÁ¤µÊ
+ * @version 05/06/08	Bang2ni - ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ê½ï¿½ ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½ ï¿½ÈµÇ´ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.(ï¿½ï¿½Å©ï¿½ï¿½Æ®ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Èµï¿½.)
+ * 			          quest/priv_guild.quest ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Å©ï¿½ï¿½Æ® ï¿½Ð¾ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 ACMD(do_priv_guild)
 {
@@ -2626,7 +2771,7 @@ ACMD(do_xmas)
 // BLOCK_CHAT
 ACMD(do_block_chat_list)
 {
-	// GMÀÌ ¾Æ´Ï°Å³ª block_chat_privilege°¡ ¾ø´Â »ç¶÷Àº ¸í·É¾î »ç¿ë ºÒ°¡
+	// GMï¿½ï¿½ ï¿½Æ´Ï°Å³ï¿½ block_chat_privilegeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½É¾ï¿½ ï¿½ï¿½ï¿½ ï¿½Ò°ï¿½
 	if (!ch || (ch->GetGMLevel() < GM_HIGH_WIZARD && ch->GetQuestFlag("chat_privilege.block") <= 0))
 	{
 		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no such command"));
@@ -2692,7 +2837,7 @@ ACMD(do_vote_block_chat)
 
 ACMD(do_block_chat)
 {
-	// GMÀÌ ¾Æ´Ï°Å³ª block_chat_privilege°¡ ¾ø´Â »ç¶÷Àº ¸í·É¾î »ç¿ë ºÒ°¡
+	// GMï¿½ï¿½ ï¿½Æ´Ï°Å³ï¿½ block_chat_privilegeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½É¾ï¿½ ï¿½ï¿½ï¿½ ï¿½Ò°ï¿½
 	if (ch && (ch->GetGMLevel() < GM_HIGH_WIZARD && ch->GetQuestFlag("chat_privilege.block") <= 0))
 	{
 		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no such command"));
@@ -2771,8 +2916,8 @@ ACMD(do_build)
 
 	CLand * pkLand = CManager::instance().FindLand(ch->GetMapIndex(), ch->GetX(), ch->GetY());
 
-	// NOTE: Á¶°Ç Ã¼Å©µéÀº Å¬¶óÀÌ¾ðÆ®¿Í ¼­¹ö°¡ ÇÔ²² ÇÏ±â ¶§¹®¿¡ ¹®Á¦°¡ ÀÖÀ» ¶§´Â
-	//       ¸Þ¼¼Áö¸¦ Àü¼ÛÇÏÁö ¾Ê°í ¿¡·¯¸¦ Ãâ·ÂÇÑ´Ù.
+	// NOTE: ï¿½ï¿½ï¿½ï¿½ Ã¼Å©ï¿½ï¿½ï¿½ï¿½ Å¬ï¿½ï¿½ï¿½Ì¾ï¿½Æ®ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ô²ï¿½ ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	//       ï¿½Þ¼ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½.
 	if (!pkLand)
 	{
 		sys_err("%s trying to build on not buildable area.", ch->GetName());
@@ -2785,17 +2930,17 @@ ACMD(do_build)
 		return;
 	}
 
-	// °Ç¼³ ±ÇÇÑ Ã¼Å©
+	// ï¿½Ç¼ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¼Å©
 	if (GMLevel == GM_PLAYER)
 	{
-		// ÇÃ·¹ÀÌ¾î°¡ ÁýÀ» ÁöÀ» ¶§´Â ¶¥ÀÌ ³»²«Áö È®ÀÎÇØ¾ß ÇÑ´Ù.
+		// ï¿½Ã·ï¿½ï¿½Ì¾î°¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È®ï¿½ï¿½ï¿½Ø¾ï¿½ ï¿½Ñ´ï¿½.
 		if ((!ch->GetGuild() || ch->GetGuild()->GetID() != pkLand->GetOwner()))
 		{
 			sys_err("%s trying to build on not owned land.", ch->GetName());
 			return;
 		}
 
-		// ³»°¡ ±æ¸¶ÀÎ°¡?
+		// ï¿½ï¿½ï¿½ï¿½ ï¿½æ¸¶ï¿½Î°ï¿½?
 		if (ch->GetGuild()->GetMasterPID() != ch->GetPlayerID())
 		{
 			sys_err("%s trying to build while not the guild master.", ch->GetName());
@@ -2841,13 +2986,13 @@ ACMD(do_build)
 					}
 				}
 
-				// °Ç¹° Á¾¼Ó¼º Ã¼Å© (ÀÌ °Ç¹°ÀÌ Áö¾îÁ® ÀÖ¾î¾ßÇÔ)
+				// ï¿½Ç¹ï¿½ ï¿½ï¿½ï¿½Ó¼ï¿½ Ã¼Å© (ï¿½ï¿½ ï¿½Ç¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½)
 				if (t->dwDependOnGroupVnum)
 				{
 					//		const TObjectProto * dependent = CManager::instance().GetObjectProto(dwVnum);
 					//		if (dependent)
 					{
-						// Áö¾îÁ®ÀÖ´Â°¡?
+						// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö´Â°ï¿½?
 						if (!pkLand->FindObjectByGroup(t->dwDependOnGroupVnum))
 						{
 							ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The buildings required for construction have not been built."));
@@ -2858,8 +3003,8 @@ ACMD(do_build)
 
 				if (test_server || GMLevel == GM_PLAYER)
 				{
-					// GMÀÌ ¾Æ´Ò°æ¿ì¸¸ (Å×¼·¿¡¼­´Â GMµµ ¼Ò¸ð)
-					// °Ç¼³ ºñ¿ë Ã¼Å©
+					// GMï¿½ï¿½ ï¿½Æ´Ò°ï¿½ì¸¸ (ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ GMï¿½ï¿½ ï¿½Ò¸ï¿½)
+					// ï¿½Ç¼ï¿½ ï¿½ï¿½ï¿½ Ã¼Å©
 					if (t->dwPrice > BUILDING_MAX_PRICE)
 					{
 						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The construction task failed beyond the building cost information."));
@@ -2872,7 +3017,7 @@ ACMD(do_build)
 						return;
 					}
 
-					// ¾ÆÀÌÅÛ ÀÚÀç °³¼ö Ã¼Å©
+					// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¼Å©
 
 					int i;
 					for (i = 0; i < OBJECT_MATERIAL_MAX_NUM; ++i)
@@ -2894,7 +3039,7 @@ ACMD(do_build)
 				float x_rot = atof(arg4);
 				float y_rot = atof(arg5);
 				float z_rot = atof(arg6);
-				// 20050811.myevan.°Ç¹° È¸Àü ±â´É ºÀÀÎ ÇØÁ¦
+				// 20050811.myevan.ï¿½Ç¹ï¿½ È¸ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 				/*
 				   if (x_rot != 0.0f || y_rot != 0.0f || z_rot != 0.0f)
 				   {
@@ -2924,12 +3069,12 @@ ACMD(do_build)
 				}
 
 				if (test_server || GMLevel == GM_PLAYER)
-					// °Ç¼³ Àç·á ¼Ò¸ðÇÏ±â (Å×¼·¿¡¼­´Â GMµµ ¼Ò¸ð)
+					// ï¿½Ç¼ï¿½ ï¿½ï¿½ï¿½ ï¿½Ò¸ï¿½ï¿½Ï±ï¿½ (ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ GMï¿½ï¿½ ï¿½Ò¸ï¿½)
 				{
-					// °Ç¼³ ºñ¿ë ¼Ò¸ð
+					// ï¿½Ç¼ï¿½ ï¿½ï¿½ï¿½ ï¿½Ò¸ï¿½
 					ch->PointChange(POINT_GOLD, -t->dwPrice);
 
-					// ¾ÆÀÌÅÛ ÀÚÀç »ç¿ëÇÏ±â 
+					// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï±ï¿½ 
 					{
 						int i;
 						for (i = 0; i < OBJECT_MATERIAL_MAX_NUM; ++i)
@@ -3008,8 +3153,8 @@ ACMD(do_build)
 			break;
 
 		case 'W' :
-			// ´ãÀå ¼¼¿ì±â
-			// build (w)all ´ãÀå¹øÈ£ ´ãÀåÅ©±â ´ë¹®µ¿ ´ë¹®¼­ ´ë¹®³² ´ë¹®ºÏ
+			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+			// build (w)all ï¿½ï¿½ï¿½ï¿½ï¿½È£ ï¿½ï¿½ï¿½ï¿½Å©ï¿½ï¿½ ï¿½ë¹®ï¿½ï¿½ ï¿½ë¹®ï¿½ï¿½ ï¿½ë¹®ï¿½ï¿½ ï¿½ë¹®ï¿½ï¿½
 
 			if (GMLevel >  GM_PLAYER) 
 			{
@@ -3043,8 +3188,8 @@ ACMD(do_build)
 			break;
 
 		case 'E' :
-			// ´ãÀå Áö¿ì±â
-			// build (e)rase ´ãÀå¼ÂID
+			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½
+			// build (e)rase ï¿½ï¿½ï¿½ï¿½ï¿½ID
 			if (GMLevel > GM_PLAYER) 
 			{
 				one_argument(line, arg1, sizeof(arg1));
@@ -3417,28 +3562,28 @@ ACMD(do_stat_plus_amount)
 	
 	switch (subcmd)
 	{
-		case POINT_HT : // Ã¼·Â
+		case POINT_HT : // Ã¼ï¿½ï¿½
 			if (nPoint + ch->GetPoint(POINT_HT) > 90)
 			{
 				nPoint = 90 - ch->GetPoint(POINT_HT);
 			}
 			break;
 
-		case POINT_IQ : // Áö´É
+		case POINT_IQ : // ï¿½ï¿½ï¿½ï¿½
 			if (nPoint + ch->GetPoint(POINT_IQ) > 90)
 			{
 				nPoint = 90 - ch->GetPoint(POINT_IQ);
 			}
 			break;
 			
-		case POINT_ST : // ±Ù·Â
+		case POINT_ST : // ï¿½Ù·ï¿½
 			if (nPoint + ch->GetPoint(POINT_ST) > 90)
 			{
 				nPoint = 90 - ch->GetPoint(POINT_ST);
 			}
 			break;
 			
-		case POINT_DX : // ¹ÎÃ¸
+		case POINT_DX : // ï¿½ï¿½Ã¸
 			if (nPoint + ch->GetPoint(POINT_DX) > 90)
 			{
 				nPoint = 90 - ch->GetPoint(POINT_DX);
@@ -4012,8 +4157,8 @@ ACMD (do_attr_full_set)
 	case JOB_SURA:
 	case JOB_SHAMAN:
 		{
-			// ¹«»ç ¸ö»§ ¼ÂÆÃ.
-			// ÀÌ°Í¸¸ ³ª¿Í ÀÖ¾î¼­ ÀÓ½Ã·Î ¸ðµç Á÷±º ´Ù ÀÌ·± ¼Ó¼º µû¸§.
+			// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½.
+			// ï¿½Ì°Í¸ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ö¾î¼­ ï¿½Ó½Ã·ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ì·ï¿½ ï¿½Ó¼ï¿½ ï¿½ï¿½ï¿½ï¿½.
 			item = ch->GetWear(WEAR_HEAD);
 			if (item != NULL)
 			{
