@@ -940,6 +940,37 @@ void CClientManager::__QUERY_PLAYER_DELETE(CPeer* peer, DWORD dwHandle, TPlayerD
 
 	TAccountTable & r = ld->GetAccountRef();
 
+	const uint8_t length = strlen(r.social_id);
+
+	if (length < 7 || strncmp(packet->private_code, r.social_id + length - 7, 7))
+	{
+		sys_log(0, "PLAYER_DELETE FAILED len({})", strlen(r.social_id));
+		peer->EncodeHeader(HEADER_DG_PLAYER_DELETE_FAILED, dwHandle, 1);
+		peer->EncodeBYTE(packet->account_index);
+		return;
+	}
+
+	CPlayerTableCache *pkPlayerCache = GetPlayerCache(packet->player_id);
+	if (pkPlayerCache)
+	{
+		TPlayerTable *pTab = pkPlayerCache->Get();
+
+		if (pTab->level >= m_iPlayerDeleteLevelLimit)
+		{
+			sys_log(0, "PLAYER_DELETE FAILED LEVEL {} >= DELETE LIMIT {}", pTab->level, m_iPlayerDeleteLevelLimit);
+			peer->EncodeHeader(HEADER_DG_PLAYER_DELETE_FAILED, dwHandle, 1);
+			peer->EncodeBYTE(packet->account_index);
+			return;
+		}
+
+		if (pTab->level < m_iPlayerDeleteLevelLimitLower)
+		{
+			sys_log(0, "PLAYER_DELETE FAILED LEVEL {} < DELETE LIMIT {}", pTab->level, m_iPlayerDeleteLevelLimitLower);
+			peer->EncodeHeader(HEADER_DG_PLAYER_DELETE_FAILED, dwHandle, 1);
+			peer->EncodeBYTE(packet->account_index);
+			return;
+		}
+	}
 
 	char szQuery[128];
 	snprintf(szQuery, sizeof(szQuery), "SELECT p.id, p.level, p.name FROM player_index%s AS i, player%s AS p WHERE pid%u=%u AND pid%u=p.id", 
