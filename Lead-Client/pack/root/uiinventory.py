@@ -710,10 +710,10 @@ class InventoryWindow(ui.ScriptWindow):
 		if mouseModule.mouseController.isAttached():
 			attachedSlotType = mouseModule.mouseController.GetAttachedType()
 			attachedSlotPos = mouseModule.mouseController.GetAttachedSlotNumber()
-			attachedItemVID = mouseModule.mouseController.GetAttachedItemIndex()
+			attachedItemIndex = mouseModule.mouseController.GetAttachedItemIndex()
 
 			if player.SLOT_TYPE_INVENTORY == attachedSlotType:
-				self.__DropSrcItemToDestItemInInventory(attachedItemVID, attachedSlotPos, itemSlotIndex)
+				self.__DropSrcItemToDestItemInInventory(attachedItemIndex, attachedSlotPos, itemSlotIndex)
 
 			mouseModule.mouseController.DeattachObject()
 
@@ -738,9 +738,6 @@ class InventoryWindow(ui.ScriptWindow):
 					self.dlgPickMoney.SetAcceptEvent(ui.__mem_func__(self.OnPickItem))
 					self.dlgPickMoney.Open(itemCount)
 					self.dlgPickMoney.itemGlobalSlotIndex = itemSlotIndex
-				#else:
-					#selectedItemVNum = player.GetItemIndex(itemSlotIndex)
-					#mouseModule.mouseController.AttachObject(self, player.SLOT_TYPE_INVENTORY, itemSlotIndex, selectedItemVNum)
 
 			elif app.IsPressed(app.DIK_LCONTROL):
 				itemIndex = player.GetItemIndex(itemSlotIndex)
@@ -755,49 +752,46 @@ class InventoryWindow(ui.ScriptWindow):
 				itemCount = player.GetItemCount(itemSlotIndex)
 				mouseModule.mouseController.AttachObject(self, player.SLOT_TYPE_INVENTORY, itemSlotIndex, selectedItemVNum, itemCount)
 				
-				if self.__IsUsableItemToItem(selectedItemVNum, itemSlotIndex):				
+				if self.__IsUsableItemToItem(selectedItemVNum, itemSlotIndex):
 					self.wndItem.SetUseMode(True)
-				else:					
+				else:
 					self.wndItem.SetUseMode(False)
 
 				snd.PlaySound("sound/ui/pick.wav")
 
-	def __DropSrcItemToDestItemInInventory(self, srcItemVID, srcItemSlotPos, dstItemSlotPos):
+	def __DropSrcItemToDestItemInInventory(self, srcItemIndex, srcItemSlotPos, dstItemSlotPos):
 		if srcItemSlotPos == dstItemSlotPos:
 			return
-	         	
-		elif item.IsRefineScroll(srcItemVID):
+
+		elif srcItemIndex == player.GetItemIndex(player.INVENTORY, dstItemSlotPos):
+			self.__SendMoveItemPacket(srcItemSlotPos, dstItemSlotPos, 0)
+			self.wndItem.SetUseMode(False)
+
+		elif item.IsRefineScroll(srcItemIndex):
 			self.RefineItem(srcItemSlotPos, dstItemSlotPos)
 			self.wndItem.SetUseMode(False)
 
-		elif item.IsMetin(srcItemVID):
+		elif item.IsMetin(srcItemIndex):
 			self.AttachMetinToItem(srcItemSlotPos, dstItemSlotPos)
 
-		elif item.IsDetachScroll(srcItemVID):
+		elif item.IsDetachScroll(srcItemIndex):
 			self.DetachMetinFromItem(srcItemSlotPos, dstItemSlotPos)
 
-		elif item.IsKey(srcItemVID):
+		elif item.IsKey(srcItemIndex):
 			self.__SendUseItemToItemPacket(srcItemSlotPos, dstItemSlotPos)			
 
 		elif (player.GetItemFlags(srcItemSlotPos) & ITEM_FLAG_APPLICABLE) == ITEM_FLAG_APPLICABLE:
 			self.__SendUseItemToItemPacket(srcItemSlotPos, dstItemSlotPos)
 
-		elif item.GetUseType(srcItemVID) in self.USE_TYPE_TUPLE:
+		elif item.GetUseType(srcItemIndex) in self.USE_TYPE_TUPLE:
 			self.__SendUseItemToItemPacket(srcItemSlotPos, dstItemSlotPos)			
 
 		else:
-			#snd.PlaySound("sound/ui/drop.wav")
-
-			## 이동시킨 곳이 장착 슬롯일 경우 아이템을 사용해서 장착 시킨다 - [levites]
 			if player.IsEquipmentSlot(dstItemSlotPos):
-
-				## 들고 있는 아이템이 장비일때만
-				if item.IsEquipmentVID(srcItemVID):
+				if item.IsEquipmentVID(srcItemIndex):
 					self.__UseItem(srcItemSlotPos)
-
 			else:
 				self.__SendMoveItemPacket(srcItemSlotPos, dstItemSlotPos, 0)
-				#net.SendItemMovePacket(srcItemSlotPos, dstItemSlotPos, 0)
 
 	def __SellItem(self, itemSlotPos):
 		if not player.IsEquipmentSlot(itemSlotPos):
@@ -960,8 +954,6 @@ class InventoryWindow(ui.ScriptWindow):
 
 
 	def __IsUsableItemToItem(self, srcItemVNum, srcSlotPos):
-		"다른 아이템에 사용할 수 있는 아이템인가?"
-
 		if item.IsRefineScroll(srcItemVNum):
 			return True
 		elif item.IsMetin(srcItemVNum):
@@ -978,30 +970,32 @@ class InventoryWindow(ui.ScriptWindow):
 			
 		return False
 
-	def __CanUseSrcItemToDstItem(self, srcItemVNum, srcSlotPos, dstSlotPos):
+	def __CanUseSrcItemToDstItem(self, srcItemVnum, srcSlotPos, dstSlotPos):
 		"대상 아이템에 사용할 수 있는가?"
 
 		if srcSlotPos == dstSlotPos:
 			return False
 
-		if item.IsRefineScroll(srcItemVNum):
-			if player.REFINE_OK == player.CanRefine(srcItemVNum, dstSlotPos):
+		if srcItemVnum == player.GetItemIndex(player.INVENTORY, dstSlotPos):
+			return True
+		elif item.IsRefineScroll(srcItemVnum):
+			if player.REFINE_OK == player.CanRefine(srcItemVnum, dstSlotPos):
 				return True
-		elif item.IsMetin(srcItemVNum):
-			if player.ATTACH_METIN_OK == player.CanAttachMetin(srcItemVNum, dstSlotPos):
+		elif item.IsMetin(srcItemVnum):
+			if player.ATTACH_METIN_OK == player.CanAttachMetin(srcItemVnum, dstSlotPos):
 				return True
-		elif item.IsDetachScroll(srcItemVNum):
-			if player.DETACH_METIN_OK == player.CanDetach(srcItemVNum, dstSlotPos):
+		elif item.IsDetachScroll(srcItemVnum):
+			if player.DETACH_METIN_OK == player.CanDetach(srcItemVnum, dstSlotPos):
 				return True
-		elif item.IsKey(srcItemVNum):
-			if player.CanUnlock(srcItemVNum, dstSlotPos):
+		elif item.IsKey(srcItemVnum):
+			if player.CanUnlock(srcItemVnum, dstSlotPos):
 				return True
 
 		elif (player.GetItemFlags(srcSlotPos) & ITEM_FLAG_APPLICABLE) == ITEM_FLAG_APPLICABLE:
 			return True
 
 		else:
-			useType=item.GetUseType(srcItemVNum)
+			useType=item.GetUseType(srcItemVnum)
 
 			if "USE_CLEAN_SOCKET" == useType:
 				if self.__CanCleanBrokenMetinStone(dstSlotPos):
@@ -1019,11 +1013,11 @@ class InventoryWindow(ui.ScriptWindow):
 				if self.__CanAddAccessorySocket(dstSlotPos):
 					return True
 			elif "USE_PUT_INTO_ACCESSORY_SOCKET" == useType:								
-				if self.__CanPutAccessorySocket(dstSlotPos, srcItemVNum):
+				if self.__CanPutAccessorySocket(dstSlotPos, srcItemVnum):
 					return TRUE;
 			elif "USE_PUT_INTO_BELT_SOCKET" == useType:								
 				dstItemVNum = player.GetItemIndex(dstSlotPos)
-				print "USE_PUT_INTO_BELT_SOCKET", srcItemVNum, dstItemVNum
+				print "USE_PUT_INTO_BELT_SOCKET", srcItemVnum, dstItemVNum
 
 				item.SelectItem(dstItemVNum)
 		

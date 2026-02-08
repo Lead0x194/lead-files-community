@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 #include "../eterBase/CRC32.h"
 #include "PythonGridSlotWindow.h"
+#include <common/length.h>
 
 using namespace UI;
 
@@ -27,7 +28,9 @@ void CGridSlotWindow::OnRenderPickingSlot()
 			if (GetSlotPointer(pSlot->dwCenterSlotNumber, &pCenterSlot))
 			if (pCenterSlot->isItem)
 			{
-				if (m_isUsableItem)
+				if (CheckGridCollisionByVnum(dwSlotNumber, dwItemIndex, SlotList))
+					CPythonGraphic::Instance().SetDiffuseColor(1.0f, 1.0f, 1.0f, 0.5f);
+				else if (m_isUsableItem)
 					CPythonGraphic::Instance().SetDiffuseColor(1.0f, 1.0f, 0.0f, 0.5f);
 				else
 					CPythonGraphic::Instance().SetDiffuseColor(1.0f, 0.0f, 0.0f, 0.5f);
@@ -41,7 +44,7 @@ void CGridSlotWindow::OnRenderPickingSlot()
 		}
 
 		// 아니면 그냥 옮기기
-		if (CheckMoving(dwSlotNumber, dwItemIndex, SlotList))
+		if (CheckGridCollisionByVnum(dwSlotNumber, dwItemIndex, SlotList))
 			CPythonGraphic::Instance().SetDiffuseColor(1.0f, 1.0f, 1.0f, 0.5f);
 		else
 			CPythonGraphic::Instance().SetDiffuseColor(1.0f, 0.0f, 0.0f, 0.5f);
@@ -340,10 +343,12 @@ void CGridSlotWindow::OnRefreshSlot()
 	}
 }
 
-BOOL CGridSlotWindow::CheckMoving(DWORD dwSlotNumber, DWORD dwItemIndex, const std::list<TSlot*> & c_rSlotList)
+BOOL CGridSlotWindow::CheckGridCollisionByVnum(DWORD dwSlotNumber, DWORD dwItemIndex, const std::list<TSlot*> & c_rSlotList)
 {
 	if (m_dwSlotStyle != SLOT_STYLE_PICK_UP)
 		return TRUE;
+
+	dwSlotNumber %= INVENTORY_SLOT_PER_PAGE;
 
 	for (std::list<TSlot*>::const_iterator itor = c_rSlotList.begin(); itor != c_rSlotList.end(); ++itor)
 	{

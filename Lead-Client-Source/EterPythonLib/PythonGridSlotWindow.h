@@ -24,7 +24,7 @@ namespace UI
 			BOOL GetPickedSlotList(int iWidth, int iHeight, std::list<TSlot*> * pSlotPointerList);
 			BOOL GetGridSlotPointer(int ix, int iy, TSlot ** ppSlot);
 			BOOL GetPickedGridSlotPosition(int ixLocal, int iyLocal, int * pix, int * piy);
-			BOOL CheckMoving(DWORD dwSlotNumber, DWORD dwItemIndex, const std::list<TSlot*> & c_rSlotList);
+			BOOL CheckGridCollisionByVnum(DWORD dwSlotNumber, DWORD dwItemIndex, const std::list<TSlot*> & c_rSlotList);
 
 			BOOL OnIsType(DWORD dwType);
 
