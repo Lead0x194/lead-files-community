@@ -1,0 +1,5 @@
+# FreeBSD packaging: server-side shell, manifests, configs and CI scripts must
+# stay LF or they break when executed on FreeBSD (a CRLF shebang is fatal).
+# Scoped to the new packaging paths so the rest of the repo is untouched.
+Lead-Tools/freebsd-pkg/**            text eol=lf
+.github/workflows/freebsd-pkg.yml text eol=lf

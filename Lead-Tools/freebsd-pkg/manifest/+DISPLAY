@@ -1,0 +1,35 @@
+================================================================================
+  Lead game server installed under /usr/local/lead
+
+  The post-install step has already (best effort):
+    * created the dedicated 'lead' user/group (home = /usr/local/lead)
+    * built the in-tree symlinks + runtime dirs
+    * autodiscovered this host's IP and wrote it as bind_ip in the core configs
+    * enabled & started MariaDB and created the databases + migrations
+    * enabled the service (lead_enable=YES)
+
+  Everything is driven by ONE command: lead-ctl (in /usr/local/sbin, on PATH).
+
+      lead-ctl start            # start everything (db, auth, mark, ch1-4, ch99)
+      lead-ctl start ch2        # start ONLY channel 2
+      lead-ctl stop ch4         # stop ONLY channel 4
+      lead-ctl restart ch1
+      lead-ctl status
+      lead-ctl backup [dir]     # full backup: all DBs + serverfiles (-> /var/backups/lead)
+      lead-ctl migrate          # create DBs + apply new migrations (idempotent)
+      lead-ctl configure        # re-autodiscover the host IP into the configs
+      lead-ctl update           # update to a newer GitHub release if available
+
+  Core configs are @config files (preserved across upgrades); review the
+  autodetected address / DB credentials if needed:
+
+      /usr/local/lead/auth/CONFIG
+      /usr/local/lead/channel1/game1/CONFIG   (and game2, channel2-4, channel99)
+      /usr/local/lead/db/conf.txt
+
+  At boot, the rc service uses lead_channels from rc.conf (default "1 2 3 4"):
+
+      sysrc lead_enable=YES ; service lead start
+
+  Logs live under /usr/local/lead/<core>/{syserr.txt,log/}.
+================================================================================

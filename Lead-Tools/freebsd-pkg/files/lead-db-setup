@@ -1,0 +1,177 @@
+#!/bin/sh
+#
+# lead-db-setup - idempotent MariaDB/MySQL bootstrap for the Lead server.
+#
+# Replaces Lead-Database-Scripts/setup.py. Safe to run any number of times:
+#   * creates the databases (account, common, log, player, hotbackup)
+#   * creates the application SQL user and grants
+#   * loads the base schema ONLY into databases that are still empty
+#   * applies every migration exactly once, tracked in common.schema_migrations
+#
+# It is invoked automatically by the package post-install script, and can be
+# re-run by hand at any time:
+#
+#   lead-db-setup                       # use defaults below
+#   LEAD_DB_ADMIN_PASSWORD=secret lead-db-setup
+#   lead-db-setup --scripts /path/to/db-scripts
+#
+# Admin connection (account used to CREATE databases/users) is configured via
+# environment; the application account it provisions matches the server CONFIGs.
+#
+set -eu
+
+# --- configuration (override via environment) --------------------------------
+LEAD_DB_HOST="${LEAD_DB_HOST:-127.0.0.1}"
+LEAD_DB_PORT="${LEAD_DB_PORT:-3306}"
+LEAD_DB_ADMIN_USER="${LEAD_DB_ADMIN_USER:-root}"
+# Empty admin password -> rely on local unix_socket auth (FreeBSD default for root).
+LEAD_DB_ADMIN_PASSWORD="${LEAD_DB_ADMIN_PASSWORD:-}"
+
+# Application account the server CONFIG/conf.txt files use (metin2 / password).
+LEAD_DB_USER="${LEAD_DB_USER:-metin2}"
+LEAD_DB_PASSWORD="${LEAD_DB_PASSWORD:-password}"
+
+SCRIPTS_DIR="${LEAD_DB_SCRIPTS:-/usr/local/share/lead/db-scripts}"
+
+# Databases in load order. Charset for loading the base dumps is latin1: the
+# dumps declare per-table CHARSET explicitly (latin1/big5/ascii), and player.sql
+# is latin1 -- loading it as utf-8 corrupts it (this was setup.py's bug).
+DATABASES="account common log player hotbackup"
+
+# -----------------------------------------------------------------------------
+while [ $# -gt 0 ]; do
+	case "$1" in
+		--scripts) SCRIPTS_DIR="$2"; shift 2 ;;
+		--host)    LEAD_DB_HOST="$2"; shift 2 ;;
+		--port)    LEAD_DB_PORT="$2"; shift 2 ;;
+		--admin-user)     LEAD_DB_ADMIN_USER="$2"; shift 2 ;;
+		--admin-password) LEAD_DB_ADMIN_PASSWORD="$2"; shift 2 ;;
+		-h|--help)
+			grep '^#' "$0" | sed 's/^# \{0,1\}//'
+			exit 0 ;;
+		*) echo "lead-db-setup: unknown argument: $1" >&2; exit 2 ;;
+	esac
+done
+
+log()  { echo "lead-db-setup: $*"; }
+fail() { echo "lead-db-setup: ERROR: $*" >&2; exit 1; }
+
+# Locate a client binary (mariadb preferred, mysql as fallback).
+CLIENT=""
+for c in mariadb mysql; do
+	if command -v "$c" >/dev/null 2>&1; then CLIENT="$c"; break; fi
+done
+[ -n "$CLIENT" ] || fail "no 'mariadb' or 'mysql' client found in PATH (install databases/mariadb-client)"
+
+[ -d "$SCRIPTS_DIR" ] || fail "db-scripts directory not found: $SCRIPTS_DIR"
+
+# Build the admin connection argument list once.
+# For a LOCAL server (default host) connect over the unix socket: a fresh MariaDB
+# allows passwordless root only via the socket (unix_socket auth), not via TCP.
+# For an explicit/remote host, connect over TCP with host/port/password.
+case "$LEAD_DB_HOST" in
+	""|localhost|127.0.0.1)
+		set -- --user="$LEAD_DB_ADMIN_USER"
+		[ -n "$LEAD_DB_ADMIN_PASSWORD" ] && set -- "$@" --password="$LEAD_DB_ADMIN_PASSWORD"
+		;;
+	*)
+		set -- --host="$LEAD_DB_HOST" --port="$LEAD_DB_PORT" --user="$LEAD_DB_ADMIN_USER" --protocol=tcp
+		[ -n "$LEAD_DB_ADMIN_PASSWORD" ] && set -- "$@" --password="$LEAD_DB_ADMIN_PASSWORD"
+		;;
+esac
+ADMIN_ARGS="$*"
+
+# admin_sql "<sql>" [extra client args...]   -- run SQL on the server (no default db)
+admin_sql() {
+	_sql="$1"; shift
+	printf '%s\n' "$_sql" | $CLIENT $ADMIN_ARGS "$@"
+}
+
+# admin_load_file <db> <file> [charset]      -- pipe a .sql file into <db>
+admin_load_file() {
+	_db="$1"; _file="$2"; _cs="${3:-latin1}"
+	$CLIENT $ADMIN_ARGS --default-character-set="$_cs" "$_db" < "$_file"
+}
+
+# --- wait for the server to accept connections -------------------------------
+# 180s: MariaDB's first start initialises the data directory, which is slow on
+# constrained/emulated hosts.
+log "waiting for $CLIENT (admin) to accept connections ..."
+_tries=0
+until admin_sql "SELECT 1;" >/dev/null 2>&1; do
+	_tries=$((_tries + 1))
+	[ "$_tries" -ge 180 ] && fail "database not reachable after 180s (check admin credentials / that the server is running)"
+	sleep 1
+done
+log "connected as '$LEAD_DB_ADMIN_USER'."
+
+# --- create databases --------------------------------------------------------
+for db in $DATABASES; do
+	admin_sql "CREATE DATABASE IF NOT EXISTS \`$db\` CHARACTER SET latin1 COLLATE latin1_swedish_ci;"
+done
+log "databases ensured: $DATABASES"
+
+# --- application user + grants ----------------------------------------------
+# Created for localhost, 127.0.0.1 and % so any core (local socket or TCP) connects.
+for host in localhost 127.0.0.1 '%'; do
+	admin_sql "CREATE USER IF NOT EXISTS '$LEAD_DB_USER'@'$host' IDENTIFIED BY '$LEAD_DB_PASSWORD';"
+	admin_sql "ALTER USER '$LEAD_DB_USER'@'$host' IDENTIFIED BY '$LEAD_DB_PASSWORD';"
+	for db in $DATABASES; do
+		admin_sql "GRANT ALL PRIVILEGES ON \`$db\`.* TO '$LEAD_DB_USER'@'$host';"
+	done
+done
+admin_sql "FLUSH PRIVILEGES;"
+log "application user '$LEAD_DB_USER' ensured with grants on all databases."
+
+# --- load base schema into still-empty databases -----------------------------
+# NOTE: the schema_migrations tracking table is created AFTER this loop, so it
+# does not make `common` look non-empty and skip loading common.sql.
+table_count() {
+	admin_sql "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='$1';" \
+		--skip-column-names --batch 2>/dev/null | tr -d '[:space:]'
+}
+
+for db in $DATABASES; do
+	_base="$SCRIPTS_DIR/base/$db.sql"
+	[ -f "$_base" ] || { log "no base file for '$db' (skipping)"; continue; }
+	_n="$(table_count "$db")"
+	if [ "${_n:-0}" -gt 0 ]; then
+		log "base [$db]: already has $_n table(s), not reloading."
+	else
+		log "base [$db]: loading $(basename "$_base") ..."
+		admin_load_file "$db" "$_base" latin1
+	fi
+done
+
+# --- migration tracking table (created after the base load) ------------------
+admin_sql "CREATE TABLE IF NOT EXISTS common.schema_migrations (
+	filename   VARCHAR(255) NOT NULL PRIMARY KEY,
+	applied_at TIMESTAMP    NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=Aria;"
+
+# --- apply migrations in lexicographic order ---------------------------------
+is_applied() {
+	_r="$(admin_sql "SELECT 1 FROM common.schema_migrations WHERE filename='$1';" \
+		--skip-column-names --batch 2>/dev/null | tr -d '[:space:]')"
+	[ "$_r" = "1" ]
+}
+
+_applied=0 _skipped=0
+if [ -d "$SCRIPTS_DIR/migrations" ]; then
+	for mig in $(ls "$SCRIPTS_DIR/migrations"/*.sql 2>/dev/null | sort); do
+		_name="$(basename "$mig")"
+		if is_applied "$_name"; then
+			_skipped=$((_skipped + 1))
+			continue
+		fi
+		log "migration: applying $_name ..."
+		# Migrations use fully-qualified table names (player.*, log.*, ...), so no
+		# default database is needed; run against the server directly.
+		$CLIENT $ADMIN_ARGS --default-character-set=latin1 < "$mig"
+		admin_sql "INSERT INTO common.schema_migrations (filename) VALUES ('$_name');"
+		_applied=$((_applied + 1))
+	done
+fi
+log "migrations: $_applied applied, $_skipped already present."
+
+log "done. Databases are ready for the Lead server."

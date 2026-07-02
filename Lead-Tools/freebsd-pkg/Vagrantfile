@@ -1,0 +1,44 @@
+# Vagrantfile - build the FreeBSD lead-server package locally on Windows/macOS/Linux
+# using VirtualBox. `vagrant up` spins a FreeBSD VM, installs the build deps and
+# produces the .pkg inside the VM.
+#
+#   cd Lead-Tools/freebsd-pkg
+#   vagrant up                 # creates the VM and builds the package
+#   vagrant plugin install vagrant-scp     # one-time, to copy the result out
+#   vagrant scp default:/repo/Lead-Tools/freebsd-pkg/dist/lead-server-0.1.0.pkg .
+#   vagrant destroy -f         # when done
+#
+# Requirements on the host: VirtualBox, Vagrant, and rsync on PATH (Git-for-Windows
+# users: install rsync via MSYS2/cwRsync, or just use the GitHub Actions build).
+
+repo_root = File.expand_path("../../..", __FILE__)
+
+Vagrant.configure("2") do |config|
+  # FreeBSD box for the virtualbox provider. To target a newer FreeBSD, set
+  # LEAD_FREEBSD_BOX (e.g. `set LEAD_FREEBSD_BOX=generic/freebsd16` on Windows,
+  # `export LEAD_FREEBSD_BOX=...` elsewhere) or edit the default below. Use a box
+  # that actually exists on Vagrant Cloud for the virtualbox provider.
+  config.vm.box = ENV["LEAD_FREEBSD_BOX"] || "generic/freebsd15"
+  config.vm.hostname = "lead-build"
+  config.ssh.shell = "/bin/sh"
+
+  # FreeBSD boxes have no VirtualBox guest additions -> use rsync, not vboxsf.
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+  config.vm.synced_folder repo_root, "/repo", type: "rsync",
+    rsync__exclude: [".git/", "Lead-Client/", "Miles-9.3/",
+                     "Lead-Tools/freebsd-pkg/dist/", "Lead-Tools/freebsd-pkg/repo-out/"]
+
+  config.vm.provider "virtualbox" do |vb|
+    vb.memory = 4096
+    vb.cpus = 2
+  end
+
+  # Build the package as part of `vagrant up`.
+  config.vm.provision "shell", inline: <<-SHELL
+    set -e
+    echo "==> building lead-server package ..."
+    sh /repo/Lead-Tools/freebsd-pkg/build.sh --install-deps --version 0.1.0
+    echo "==> package(s):"
+    ls -la /repo/Lead-Tools/freebsd-pkg/dist/*.pkg
+  SHELL
+end

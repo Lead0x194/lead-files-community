@@ -1,0 +1,77 @@
+#!/bin/sh
+#
+# Lead server post-install: provision the OS account, build the in-tree symlinks,
+# autodiscover + write the host IP into the configs, bootstrap MariaDB + apply
+# migrations, and enable the service.
+#
+# Everything that touches external state (services, the database) is best-effort:
+# a failure here prints a warning but never aborts the package installation, so
+# `pkg install` always succeeds and the admin can re-run the steps by hand.
+#
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
+export PATH
+
+PREFIX="${PKG_PREFIX:-/usr/local}"
+LEAD_USER=lead
+LEAD_GROUP=lead
+LEAD_ROOT="${PREFIX}/lead"
+LIBEXEC="${PREFIX}/libexec/lead"
+
+note() { echo "===> lead-server: $*"; }
+warn() { echo "===> lead-server: WARNING: $*" >&2; }
+
+# --- 1. OS account (dedicated service user; home = the serverfiles tree) -----
+if ! pw groupshow "$LEAD_GROUP" >/dev/null 2>&1; then
+	pw groupadd "$LEAD_GROUP" && note "created group '$LEAD_GROUP'"
+fi
+if ! pw usershow "$LEAD_USER" >/dev/null 2>&1; then
+	pw useradd "$LEAD_USER" -g "$LEAD_GROUP" -d "$LEAD_ROOT" \
+		-s /usr/sbin/nologin -c "Lead game server" \
+		&& note "created user '$LEAD_USER'"
+fi
+
+# --- 2. in-tree symlinks + runtime dirs ------------------------------------
+if [ -x "${LIBEXEC}/lead-layout" ]; then
+	LEAD_ROOT="$LEAD_ROOT" LEAD_USER="$LEAD_USER" LEAD_GROUP="$LEAD_GROUP" \
+		"${LIBEXEC}/lead-layout" || warn "lead-layout reported an error"
+fi
+
+# --- 3. autodiscover + write the advertised IP into the core configs --------
+if [ -x "${LIBEXEC}/lead-configure" ]; then
+	LEAD_ROOT="$LEAD_ROOT" "${LIBEXEC}/lead-configure" || warn "lead-configure reported an error"
+fi
+
+# --- 4. MariaDB: enable, start, seed ---------------------------------------
+if service -e 2>/dev/null | grep -q mysql-server || [ -f /usr/local/etc/rc.d/mysql-server ]; then
+	sysrc mysql_enable=YES >/dev/null 2>&1 || true
+	if ! service mysql-server status >/dev/null 2>&1; then
+		note "starting MariaDB (first start initialises the data directory) ..."
+		# onestart forces a start regardless of how mysql_enable is read inside the
+		# pkg post-install environment (avoids the '$mysql_enable not set properly'
+		# race that left MariaDB down).
+		service mysql-server onestart >/dev/null 2>&1 || service mysql-server start >/dev/null 2>&1 || warn "could not start MariaDB"
+	fi
+	# Wait until MariaDB actually accepts connections before seeding -- the first
+	# boot creates the data dir + InnoDB logs and can be slow (up to ~5 min on a
+	# slow/emulated disk).
+	_w=0
+	until mariadb -u root -e 'SELECT 1' >/dev/null 2>&1 || [ "$_w" -ge 300 ]; do sleep 3; _w=$((_w + 3)); done
+
+	if [ -x "${LIBEXEC}/lead-db-setup" ]; then
+		note "bootstrapping databases + migrations ..."
+		if "${LIBEXEC}/lead-db-setup"; then
+			note "database is ready."
+		else
+			warn "lead-db-setup failed; run it manually once MariaDB is reachable:"
+			warn "    ${LIBEXEC}/lead-db-setup"
+		fi
+	fi
+else
+	warn "MariaDB rc script not found; skipping DB bootstrap."
+	warn "Install/configure the DB, then run: ${LIBEXEC}/lead-db-setup"
+fi
+
+# --- 5. enable the service --------------------------------------------------
+sysrc lead_enable=YES >/dev/null 2>&1 || true
+
+exit 0

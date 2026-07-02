@@ -1,0 +1,43 @@
+#!/bin/sh
+#
+# PROVIDE: lead
+# REQUIRE: LOGIN mysql
+# KEYWORD: shutdown
+#
+# Boot integration for the Lead game server. Delegates to lead-ctl (the admin
+# tool) so there is a single implementation of start/stop/status.
+#
+# Enable and tune in /etc/rc.conf:
+#   lead_enable="YES"
+#   lead_user="lead"
+#   lead_root="/usr/local/lead"
+#   lead_channels="1 2 3 4"     # which channels 'service lead start' brings up
+#
+
+. /etc/rc.subr
+
+name="lead"
+rcvar="lead_enable"
+load_rc_config "$name"
+
+: ${lead_enable:="NO"}
+: ${lead_user:="lead"}
+: ${lead_root:="/usr/local/lead"}
+: ${lead_channels:="1 2 3 4"}
+
+_ctl="/usr/local/sbin/lead-ctl"
+
+start_cmd="lead_start"
+stop_cmd="lead_stop"
+status_cmd="lead_status"
+restart_cmd="lead_restart"
+extra_commands="status restart"
+
+_env() { LEAD_ROOT="$lead_root" LEAD_USER="$lead_user" LEAD_CHANNELS="$lead_channels" "$_ctl" "$@"; }
+
+lead_start()   { _env start all; }
+lead_stop()    { _env stop all; }
+lead_status()  { _env status; }
+lead_restart() { _env stop all; sleep 1; _env start all; }
+
+run_rc_command "$1"

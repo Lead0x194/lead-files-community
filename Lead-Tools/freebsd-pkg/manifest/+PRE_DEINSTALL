@@ -1,0 +1,9 @@
+#!/bin/sh
+# Stop the Lead cores before files are removed. Best-effort.
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
+export PATH
+
+if [ -f /usr/local/etc/rc.d/lead ]; then
+	service lead stop >/dev/null 2>&1 || true
+fi
+exit 0

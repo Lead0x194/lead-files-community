@@ -1,0 +1,97 @@
+#!/bin/sh
+#
+# lead-update - update lead-server from a GitHub Release, locally, no pkg repo.
+#
+# Looks at the latest GitHub Release, and if it is NEWER than the installed
+# lead-server, downloads the .pkg matching THIS host's FreeBSD version + CPU
+# architecture and upgrades in place. If nothing is installed yet it installs it
+# (dependencies must already be present for a local .pkg; see --help).
+#
+# GitHub is used ONLY as a file host (the release asset). No gh-pages / pkg repo
+# is required. Uses base tools only (fetch, pkg).
+#
+#   lead-update            # upgrade if a newer release exists
+#   lead-update --check    # only report installed vs latest, do nothing
+#   lead-update --force    # (re)install the latest even if not newer
+#   LEAD_REPO=owner/name lead-update
+#
+set -eu
+
+REPO="${LEAD_REPO:-Index-s/lead-files-community}"
+PKGNAME="lead-server"
+MODE="update"
+
+while [ $# -gt 0 ]; do
+	case "$1" in
+		--check) MODE="check"; shift ;;
+		--force) MODE="force"; shift ;;
+		--repo)  REPO="$2"; shift 2 ;;
+		-h|--help) grep '^#' "$0" | sed 's/^# \{0,1\}//'; exit 0 ;;
+		*) echo "lead-update: unknown argument: $1" >&2; exit 2 ;;
+	esac
+done
+
+log()  { echo "lead-update: $*"; }
+fail() { echo "lead-update: ERROR: $*" >&2; exit 1; }
+
+command -v pkg   >/dev/null 2>&1 || fail "pkg not found"
+command -v fetch >/dev/null 2>&1 || fail "fetch not found (base system)"
+
+# This host's ABI -> asset name, e.g. FreeBSD:15:amd64 -> lead-server-FreeBSD15-amd64.pkg
+ABI="$(pkg config ABI)"
+OSMAJOR="$(echo "$ABI" | cut -d: -f2)"
+ARCH="$(echo "$ABI" | cut -d: -f3)"
+ASSET="${PKGNAME}-FreeBSD${OSMAJOR}-${ARCH}.pkg"
+API="https://api.github.com/repos/${REPO}/releases/latest"
+DL="https://github.com/${REPO}/releases/latest/download/${ASSET}"
+
+# Latest release version (tag like v0.1.2 -> 0.1.2). No token needed (public repo).
+latest="$(fetch -qo - "$API" 2>/dev/null \
+	| sed -n 's/.*"tag_name":[ ]*"v\{0,1\}\([^"]*\)".*/\1/p' | head -1)"
+[ -n "$latest" ] || fail "could not read the latest release from $API"
+
+installed="$(pkg query '%v' "$PKGNAME" 2>/dev/null || true)"
+
+log "host ABI       : $ABI"
+log "asset          : $ASSET"
+log "installed      : ${installed:-<none>}"
+log "latest release : $latest"
+
+newer=0
+if [ -z "$installed" ]; then
+	newer=1   # nothing installed -> treat latest as installable
+elif [ "$(pkg version -t "$installed" "$latest")" = "<" ]; then
+	newer=1
+fi
+
+if [ "$MODE" = "check" ]; then
+	[ "$newer" = "1" ] && log "an update is available." || log "up to date."
+	exit 0
+fi
+
+if [ "$newer" != "1" ] && [ "$MODE" != "force" ]; then
+	log "already up to date; nothing to do (use --force to reinstall)."
+	exit 0
+fi
+
+tmp="$(mktemp -t lead-server).pkg"
+trap 'rm -f "$tmp"' EXIT
+log "downloading $DL ..."
+fetch -o "$tmp" "$DL" || fail "download failed (no $ASSET on the latest release for this arch?)"
+
+# Sanity: confirm the downloaded package really is newer (or forced).
+dlver="$(pkg query -F "$tmp" '%v' 2>/dev/null || true)"
+log "downloaded ver : ${dlver:-?}"
+if [ -n "$installed" ] && [ "$MODE" != "force" ] \
+   && [ "$(pkg version -t "$installed" "${dlver:-0}")" != "<" ]; then
+	log "downloaded package is not newer than installed; aborting."
+	exit 0
+fi
+
+# Stop the service across the swap, upgrade, then start again.
+if [ -f /usr/local/etc/rc.d/lead ]; then service lead stop >/dev/null 2>&1 || true; fi
+log "installing $tmp ..."
+ASSUME_ALWAYS_YES=yes pkg add -f "$tmp" || fail "pkg add failed (are dependencies installed? see --help)"
+if [ -f /usr/local/etc/rc.d/lead ]; then service lead start >/dev/null 2>&1 || true; fi
+
+log "done: lead-server is now $(pkg query '%v' "$PKGNAME" 2>/dev/null)."

@@ -1,0 +1,13 @@
+name: lead-server
+version: "%%VERSION%%"
+origin: games/lead-server
+comment: "Lead (Metin2-class) game server: cores, content, DB tooling and rc service"
+maintainer: %%MAINTAINER%%
+www: %%WWW%%
+prefix: /usr/local
+categories: [games]
+licenselogic: single
+desc: "Lead game server for FreeBSD/amd64. Ships the db + game cores, the shared content tree, an idempotent database bootstrapper (creates databases, user and applies migrations) and an rc.d service that runs every core. Installing this package also pulls in and starts MariaDB and seeds the schema."
+deps: {
+%%DEPS%%
+}

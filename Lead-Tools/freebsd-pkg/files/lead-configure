@@ -1,0 +1,51 @@
+#!/bin/sh
+#
+# lead-configure - autodiscover this host's IP and write it as the advertised
+# address (bind_ip) into the game-core CONFIGs. Idempotent; safe to re-run (e.g.
+# after the host IP changes). The DB/SQL addresses stay local (127.0.0.1) since
+# MariaDB runs on the same box.
+#
+#   lead-configure                 # detect + apply
+#   LEAD_PUBLIC_IP=1.2.3.4 lead-configure   # force a specific advertised IP
+#
+set -eu
+
+LEAD_ROOT="${LEAD_ROOT:-/usr/local/lead}"
+GAME_CORES="${LEAD_GAME_CORES:-auth markserver \
+	channel1/game1 channel1/game2 channel2/game1 channel2/game2 \
+	channel3/game1 channel3/game2 channel4/game1 channel4/game2 channel99}"
+
+log() { echo "lead-configure: $*"; }
+
+# --- determine the advertised IP -------------------------------------------
+ip="${LEAD_PUBLIC_IP:-}"
+if [ -z "$ip" ]; then
+	iface="$(route -n get default 2>/dev/null | awk '/interface:/{print $2; exit}')"
+	[ -n "$iface" ] && ip="$(ifconfig "$iface" inet 2>/dev/null | awk '/inet /{print $2; exit}')"
+fi
+# fallback: first non-loopback IPv4
+[ -n "$ip" ] || ip="$(ifconfig 2>/dev/null | awk '/inet /{print $2}' | grep -v '^127\.' | head -1)"
+[ -n "$ip" ] || { log "could not determine an IP; leaving CONFIGs unchanged."; exit 0; }
+log "advertised IP = $ip"
+
+# --- set/replace a "token: value" line in a CONFIG --------------------------
+set_token() {
+	_f="$1"; _t="$2"; _v="$3"
+	[ -f "$_f" ] || return 0
+	if grep -qE "^[[:space:]]*${_t}[[:space:]]*:" "$_f"; then
+		sed -i '' -E "s|^[[:space:]]*${_t}[[:space:]]*:.*|${_t}: ${_v}|" "$_f"
+	else
+		printf '%s: %s\n' "$_t" "$_v" >> "$_f"
+	fi
+}
+
+for core in $GAME_CORES; do
+	cfg="${LEAD_ROOT}/${core}/CONFIG"
+	[ -f "$cfg" ] || continue
+	# bind_ip sets g_szPublicIP = the address advertised to clients; the socket
+	# still binds all interfaces, so port-forwards/NAT keep working.
+	set_token "$cfg" "bind_ip" "$ip"
+	log "set bind_ip in ${core}/CONFIG"
+done
+
+log "done."

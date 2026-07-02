@@ -1,0 +1,184 @@
+#!/bin/sh
+#
+# lead-ctl - the single command to manage the Lead game server.
+#
+#   lead-ctl start   [target]    start the server (default: all)
+#   lead-ctl stop    [target]    stop it
+#   lead-ctl restart [target]    stop then start
+#   lead-ctl status              show every core's state
+#   lead-ctl backup  [dir]       full backup: all databases + serverfiles
+#   lead-ctl migrate             create DBs + apply migrations (idempotent)
+#   lead-ctl configure           autodiscover this host's IP into the configs
+#   lead-ctl update              update to a newer GitHub release if available
+#
+# target (for start/stop/restart):
+#   all                          db, auth, markserver, channels 1-4, channel99
+#   db | auth | mark | ch99      a single base core
+#   ch1 ch2 ch3 ch4 (chN)        one whole channel (game1 + game2)
+#   channel2/game1 ...           one specific core
+#
+# Examples:
+#   lead-ctl start ch2           start only channel 2
+#   lead-ctl stop ch4            stop only channel 4
+#   lead-ctl backup /mnt/backups
+#   lead-ctl migrate             apply new DB migrations after an update
+#
+set -eu
+
+LEAD_ROOT="${LEAD_ROOT:-/usr/local/lead}"
+LEAD_USER="${LEAD_USER:-lead}"
+LEAD_CHANNELS="${LEAD_CHANNELS:-1 2 3 4}"     # channels that 'all' manages
+LEAD_STARTDELAY="${LEAD_STARTDELAY:-2}"
+BIN="${LEAD_ROOT}/share/bin"
+PIDDIR=/var/run/lead
+LIBEXEC=/usr/local/libexec/lead
+BACKUP_DIR_DEFAULT="${LEAD_BACKUP_DIR:-/var/backups/lead}"
+DATABASES="account common log player hotbackup"
+
+note() { echo "lead-ctl: $*"; }
+err()  { echo "lead-ctl: ERROR: $*" >&2; }
+
+pidfile()    { echo "${PIDDIR}/$(echo "$1" | tr '/' '_').pid"; }
+is_running() { _p="$(pidfile "$1")"; [ -f "$_p" ] && kill -0 "$(cat "$_p" 2>/dev/null)" 2>/dev/null; }
+
+# Map a target to a list of "corepath:binary" entries (in start order).
+cores_for() {
+	case "$1" in
+		all)
+			printf 'db:db auth:game markserver:game '
+			for ch in $LEAD_CHANNELS; do printf 'channel%s/game1:game channel%s/game2:game ' "$ch" "$ch"; done
+			printf 'channel99:game' ;;
+		db)               printf 'db:db' ;;
+		auth)             printf 'auth:game' ;;
+		mark|markserver)  printf 'markserver:game' ;;
+		ch99|channel99)   printf 'channel99:game' ;;
+		ch[0-9]*|channel[0-9]*)
+			_n="$(echo "$1" | tr -dc '0-9')"
+			printf 'channel%s/game1:game channel%s/game2:game' "$_n" "$_n" ;;
+		*/game[0-9]*)     printf '%s:game' "$1" ;;
+		*) return 1 ;;
+	esac
+}
+
+start_core() {  # <corepath> <binary>
+	_core="$1"; _bin="$2"; _dir="${LEAD_ROOT}/${_core}"; _exe="${BIN}/${_bin}"; _pf="$(pidfile "$_core")"
+	if is_running "$_core"; then note "${_core} already running (pid $(cat "$_pf"))"; return 0; fi
+	[ -x "$_exe" ] || { err "missing binary ${_exe}"; return 1; }
+	[ -d "$_dir" ] || { err "missing core dir ${_dir}"; return 1; }
+	note "starting ${_core} ..."
+	/usr/sbin/daemon -f -u "$LEAD_USER" -p "$_pf" /bin/sh -c "cd '${_dir}' && exec '${_exe}'"
+	sleep "$LEAD_STARTDELAY"
+}
+
+stop_core() {  # <corepath>
+	_core="$1"; _pf="$(pidfile "$_core")"
+	[ -f "$_pf" ] || return 0
+	_p="$(cat "$_pf")"
+	if kill -0 "$_p" 2>/dev/null; then
+		note "stopping ${_core} (pid ${_p}) ..."
+		kill -TERM "$_p" 2>/dev/null
+		_n=0; while kill -0 "$_p" 2>/dev/null && [ "$_n" -lt 15 ]; do sleep 1; _n=$((_n + 1)); done
+		kill -0 "$_p" 2>/dev/null && kill -KILL "$_p" 2>/dev/null
+	fi
+	rm -f "$_pf"
+}
+
+wait_listen() {  # <port> [max_seconds] -- wait until something listens on the port
+	_port="$1"; _max="${2:-60}"; _w=0
+	while ! sockstat -4l 2>/dev/null | grep -q ":${_port} "; do
+		[ "$_w" -ge "$_max" ] && return 1
+		sleep 2; _w=$((_w + 2))
+	done
+	return 0
+}
+
+cmd_start() {
+	_t="${1:-all}"; _list="$(cores_for "$_t")" || { err "unknown target: $_t"; exit 2; }
+	mkdir -p "$PIDDIR"
+	[ -x "${LIBEXEC}/lead-layout" ] && LEAD_ROOT="$LEAD_ROOT" LEAD_USER="$LEAD_USER" "${LIBEXEC}/lead-layout" >/dev/null 2>&1 || true
+	# The cores exit instantly if they can't reach MariaDB, so make sure it is up
+	# (and accepting connections) before starting anything.
+	if [ -f /usr/local/etc/rc.d/mysql-server ] && ! service mysql-server status >/dev/null 2>&1; then
+		note "MariaDB is not running; starting it ..."
+		service mysql-server onestart >/dev/null 2>&1 || service mysql-server start >/dev/null 2>&1 || err "could not start MariaDB"
+		_n=0
+		until mariadb -u root -e 'SELECT 1' >/dev/null 2>&1 || [ "$_n" -ge 60 ]; do sleep 1; _n=$((_n + 1)); done
+	fi
+	# Self-heal: if the schema isn't there (e.g. a post-install hiccup), bootstrap
+	# it now (idempotent) so the cores always have a database to connect to.
+	if [ -x "${LIBEXEC}/lead-db-setup" ]; then
+		_seeded="$(mariadb -u root -N -e "SELECT COUNT(*) FROM information_schema.tables WHERE table_schema='player'" 2>/dev/null | tr -d '[:space:]')"
+		if [ "${_seeded:-0}" -lt 1 ] 2>/dev/null; then
+			note "databases not initialised; bootstrapping ..."
+			"${LIBEXEC}/lead-db-setup" >/dev/null 2>&1 || note "WARNING: db bootstrap failed; run 'lead-ctl migrate'"
+		fi
+	fi
+	# db and auth are prerequisites for every game core and MUST come up first, in
+	# order, and be READY (listening) before channels start - else the channels
+	# can't reach the db cache / login master and exit immediately.
+	if ! is_running db; then note "starting db core ..."; start_core db db; fi
+	wait_listen 15000 90 || note "WARNING: db core did not open :15000 in time (proto still loading?)"
+	if ! is_running auth; then note "starting auth ..."; start_core auth game; fi
+	wait_listen 11000 30 || true
+	# Now start whatever was requested (db/auth get skipped if already running).
+	for _e in $_list; do start_core "${_e%%:*}" "${_e##*:}" || true; done
+	note "start ($_t) complete."
+}
+
+cmd_stop() {
+	_t="${1:-all}"; _list="$(cores_for "$_t")" || { err "unknown target: $_t"; exit 2; }
+	_rev=""; for _e in $_list; do _rev="$_e $_rev"; done
+	for _e in $_rev; do stop_core "${_e%%:*}"; done
+	note "stop ($_t) complete."
+}
+
+cmd_status() {
+	for _e in $(cores_for all); do
+		_core="${_e%%:*}"
+		if is_running "$_core"; then echo "  RUNNING  ${_core} (pid $(cat "$(pidfile "$_core")"))"
+		else echo "  stopped  ${_core}"; fi
+	done
+}
+
+cmd_backup() {
+	_out="${1:-$BACKUP_DIR_DEFAULT}"
+	_ts="$(date +%Y%m%d-%H%M%S)"
+	_dest="${_out}/lead-backup-${_ts}"
+	mkdir -p "$_dest"
+	if command -v mariadb-dump >/dev/null 2>&1; then _dump=mariadb-dump; else _dump=mysqldump; fi
+	note "dumping databases ($DATABASES) ..."
+	if $_dump --user=root --routines --events --databases $DATABASES 2>/dev/null | gzip > "${_dest}/databases.sql.gz"; then
+		note "  -> ${_dest}/databases.sql.gz"
+	else
+		err "database dump failed (is MariaDB running / root socket available?)"
+	fi
+	note "archiving serverfiles (excluding logs/cores) ..."
+	# tar may exit 1 on benign warnings (e.g. a file changing while a core runs);
+	# judge success by whether a non-empty archive was produced.
+	tar czf "${_dest}/serverfiles.tar.gz" -C "$(dirname "$LEAD_ROOT")" "$(basename "$LEAD_ROOT")" \
+		--exclude='*/log' --exclude='*/cores' >/dev/null 2>&1 || true
+	if [ -s "${_dest}/serverfiles.tar.gz" ]; then
+		note "  -> ${_dest}/serverfiles.tar.gz"
+	else
+		err "serverfiles archive failed"
+	fi
+	note "full backup complete: ${_dest}"
+}
+
+[ $# -ge 1 ] || { grep '^#' "$0" | sed 's/^# \{0,1\}//'; exit 0; }
+_cmd="$1"; shift || true
+case "$_cmd" in
+	start)   cmd_start "${1:-all}" ;;
+	stop)    cmd_stop  "${1:-all}" ;;
+	restart) cmd_stop "${1:-all}"; sleep 1; cmd_start "${1:-all}" ;;
+	status)  cmd_status ;;
+	backup)  cmd_backup "${1:-}" ;;
+	# DB setup + migrations, IP autodiscovery, and self-update are exposed here so
+	# everything is driven through this one on-PATH command. The implementations
+	# live in libexec (internal helpers, not meant to be run by hand).
+	migrate|db-setup) LEAD_ROOT="$LEAD_ROOT" exec "${LIBEXEC}/lead-db-setup" "$@" ;;
+	configure)        LEAD_ROOT="$LEAD_ROOT" exec "${LIBEXEC}/lead-configure" "$@" ;;
+	update)           exec "${LIBEXEC}/lead-update" "$@" ;;
+	-h|--help|help) grep '^#' "$0" | sed 's/^# \{0,1\}//' ;;
+	*) err "unknown command: $_cmd (try: start|stop|restart|status|backup|migrate|configure|update)"; exit 2 ;;
+esac

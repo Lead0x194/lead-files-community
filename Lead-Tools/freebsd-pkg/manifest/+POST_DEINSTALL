@@ -1,0 +1,20 @@
+#!/bin/sh
+# Lead server post-deinstall.
+#
+# We deliberately PRESERVE state that is expensive/irreversible to lose: the
+# runtime bits inside /usr/local/lead (logs, cores, guild marks, edited configs)
+# and the MariaDB databases. We also keep the 'lead' user. Removing them is left
+# to the admin so an upgrade or reinstall never destroys player data.
+PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin
+export PATH
+
+cat <<'EOM'
+===> lead-server has been removed.
+     Preserved (remove manually if you really want them gone):
+       * serverfiles tree : /usr/local/lead  (logs, cores, marks, edited CONFIGs)
+       * databases        : account common log player hotbackup
+       * OS account       : pw userdel lead ; pw groupdel lead
+     The 'lead_enable' line in /etc/rc.conf was left in place; remove with:
+       sysrc -x lead_enable
+EOM
+exit 0

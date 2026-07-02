@@ -1,0 +1,58 @@
+#!/bin/sh
+#
+# lead-layout - (re)create the per-core symlinks and runtime dirs INSIDE the
+# single serverfiles tree (default /usr/local/lead), idempotently. All symlinks
+# are RELATIVE and point within the same tree (../share/...), mirroring the
+# original Lead-Serverfiles layout. Replaces the per-core install.sh scripts.
+#
+# CONFIG / conf.txt are real (pkg @config) files in each core dir, so they are
+# NOT symlinked here. Run by post-install and by the rc.d start_precmd, so a lost
+# symlink self-heals on the next start.
+#
+set -eu
+
+LEAD_ROOT="${LEAD_ROOT:-/usr/local/lead}"
+LEAD_USER="${LEAD_USER:-lead}"
+LEAD_GROUP="${LEAD_GROUP:-lead}"
+
+# Cores using the "game" binary (auth is the same binary, different CONFIG).
+GAME_CORES="${LEAD_GAME_CORES:-auth markserver \
+	channel1/game1 channel1/game2 channel2/game1 channel2/game2 \
+	channel3/game1 channel3/game2 channel4/game1 channel4/game2 channel99}"
+DB_CORE="db"
+
+ln_rel() { rm -f "$2"; ln -s "$1" "$2"; }   # ln_rel <relative-target> <linkpath>
+ensure()  { [ -d "$1" ] || mkdir -p "$1"; }
+# "channel1/game1" -> "../../" ; "auth" -> "../"
+relprefix() { echo "$1" | awk -F/ '{p=""; for(i=1;i<=NF;i++) p=p"../"; printf "%s", p}'; }
+
+[ -d "${LEAD_ROOT}/share" ] || { echo "lead-layout: ${LEAD_ROOT}/share missing"; exit 1; }
+
+# --- db core ----------------------------------------------------------------
+d="${LEAD_ROOT}/${DB_CORE}"; pfx="$(relprefix "$DB_CORE")"
+ensure "$d"
+ln_rel "${pfx}share/bin/db"              "$d/db"
+ln_rel "${pfx}share/conf/item_proto.txt" "$d/item_proto.txt"
+ln_rel "${pfx}share/conf/mob_proto.txt"  "$d/mob_proto.txt"
+ln_rel "${pfx}share/conf/item_names.txt" "$d/item_names.txt"
+ln_rel "${pfx}share/conf/mob_names.txt"  "$d/mob_names.txt"
+ensure "$d/log"; ensure "$d/cores"
+
+# --- game cores -------------------------------------------------------------
+for core in $GAME_CORES; do
+	d="${LEAD_ROOT}/${core}"; pfx="$(relprefix "$core")"
+	ensure "$d"
+	ln_rel "${pfx}share/bin/game" "$d/game"
+	ln_rel "${pfx}share/data"     "$d/data"
+	ln_rel "${pfx}share/locale"   "$d/locale"
+	ln_rel "${pfx}share/package"  "$d/package"
+	ln_rel "${pfx}share/conf/CMD" "$d/CMD"
+	ensure "$d/mark"; ensure "$d/log"; ensure "$d/cores"
+done
+
+# --- ownership --------------------------------------------------------------
+if id "$LEAD_USER" >/dev/null 2>&1; then
+	chown -RH "$LEAD_USER:$LEAD_GROUP" "$LEAD_ROOT" 2>/dev/null || true
+fi
+
+echo "lead-layout: symlinks + runtime dirs ready under ${LEAD_ROOT}"
