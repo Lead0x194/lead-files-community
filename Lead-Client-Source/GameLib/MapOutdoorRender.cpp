@@ -46,10 +46,7 @@ void CMapOutdoor::RenderTerrain()
 	std::sort(m_PatchVector.begin(),m_PatchVector.end());
 
 	// Vector settings for drawing
-	if (CTerrainPatch::SOFTWARE_TRANSFORM_PATCH_ENABLE)
-		__RenderTerrain_RenderSoftwareTransformPatch();
-	else
-		__RenderTerrain_RenderHardwareTransformPatch();
+	__RenderTerrain_RenderHardwareTransformPatch();
 }
 
 void CMapOutdoor::__RenderTerrain_RecurseRenderQuadTree(CTerrainQuadtreeNode *Node, bool bCullCheckNeed)
@@ -129,7 +126,6 @@ void CMapOutdoor::__RenderTerrain_AppendPatch(const D3DXVECTOR3& c_rv3Center, fl
 
 void CMapOutdoor::ApplyLight(DWORD_PTR dwVersion, const D3DLIGHT9& c_rkLight)
 {
-	m_kSTPD.m_dwLightVersion=dwVersion;
 	STATEMANAGER.SetLight(0, &c_rkLight);
 }
 

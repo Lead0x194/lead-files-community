@@ -576,87 +576,12 @@ class CMapOutdoor : public CMapBase
 
 		void __RenderTerrain_AppendPatch(const D3DXVECTOR3& c_rv3Center, float fDistance, long lPatchNum);
 
-		void __RenderTerrain_RenderSoftwareTransformPatch();
 		void __RenderTerrain_RenderHardwareTransformPatch();
 
 	protected:
 		void __HardwareTransformPatch_RenderPatchSplat(long patchnum, WORD wPrimitiveCount, D3DPRIMITIVETYPE ePrimitiveType);
 		void __HardwareTransformPatch_RenderPatchNone(long patchnum, WORD wPrimitiveCount, D3DPRIMITIVETYPE ePrimitiveType);
 
-
-	protected:
-		struct SoftwareTransformPatch_SData
-		{
-			enum
-			{
-				SPLAT_VB_NUM = 8,
-				NONE_VB_NUM = 8,
-			};
-
-			IDirect3DVertexBuffer9* m_pkVBSplat[SPLAT_VB_NUM];
-			IDirect3DVertexBuffer9* m_pkVBNone[NONE_VB_NUM];
-			DWORD m_dwSplatPos;
-			DWORD m_dwNonePos;
-			DWORD_PTR m_dwLightVersion;
-		} m_kSTPD;
-
-		struct SoftwareTransformPatch_SRenderState {
-			D3DXMATRIX m_m4Proj;
-			D3DXMATRIX m_m4Frustum;
-			D3DXMATRIX m_m4DynamicShadow;
-			D3DLIGHT9  m_kLight;
-			D3DMATERIAL9 m_kMtrl;
-			D3DXVECTOR3 m_v3Player;
-			DWORD m_dwFogColor;
-			float m_fScreenHalfWidth;
-			float m_fScreenHalfHeight;
-
-			float m_fFogNearDistance;
-			float m_fFogFarDistance;
-			float m_fFogNearTransZ;
-			float m_fFogFarTransZ;
-			float m_fFogLenInv;
-		};
-
-		struct SoftwareTransformPatch_STVertex
-		{
-			D3DXVECTOR4 kPosition;
-		};
-
-		struct SoftwareTransformPatch_STLVertex
-		{
-			D3DXVECTOR4 kPosition;
-			DWORD dwDiffuse;
-			DWORD dwFog;
-			D3DXVECTOR2 kTexTile;
-			D3DXVECTOR2 kTexAlpha;
-			D3DXVECTOR2 kTexStaticShadow;
-			D3DXVECTOR2 kTexDynamicShadow;
-		};
-
-
-		void __SoftwareTransformPatch_ApplyRenderState();
-		void __SoftwareTransformPatch_RestoreRenderState(DWORD dwFogEnable);
-
-		void __SoftwareTransformPatch_Initialize();
-		bool __SoftwareTransformPatch_Create();
-		void __SoftwareTransformPatch_Destroy();
-		void __SoftwareTransformPatch_BuildPipeline(SoftwareTransformPatch_SRenderState& rkTPRS);
-		void __SoftwareTransformPatch_BuildPipeline_BuildFogFuncTable(SoftwareTransformPatch_SRenderState& rkTPRS);
-		bool __SoftwareTransformPatch_SetTransform(SoftwareTransformPatch_SRenderState& rkTPRS, SoftwareTransformPatch_STLVertex* akTransVertex, CTerrainPatchProxy& rkTerrainPatchProxy, UINT uTerrainX, UINT uTerrainY, bool isFogEnable, bool isDynamicShadow);
-
-		bool __SoftwareTransformPatch_SetSplatStream(SoftwareTransformPatch_STLVertex* akTransVertex);
-		bool __SoftwareTransformPatch_SetShadowStream(SoftwareTransformPatch_STLVertex* akTransVertex);
-
-		void __SoftwareTransformPatch_ApplyStaticShadowRenderState();
-		void __SoftwareTransformPatch_RestoreStaticShadowRenderState();
-
-		void __SoftwareTransformPatch_ApplyFogShadowRenderState();
-		void __SoftwareTransformPatch_RestoreFogShadowRenderState();
-		void __SoftwareTransformPatch_ApplyDynamicShadowRenderState();
-		void __SoftwareTransformPatch_RestoreDynamicShadowRenderState();
-		void __SoftwareTransformPatch_RenderPatchSplat(SoftwareTransformPatch_SRenderState& rkTPRS, long patchnum, WORD wPrimitiveCount, D3DPRIMITIVETYPE ePrimitiveType, bool isFogEnable);
-		void __SoftwareTransformPatch_RenderPatchNone(SoftwareTransformPatch_SRenderState& rkTPRS, long patchnum, WORD wPrimitiveCount, D3DPRIMITIVETYPE ePrimitiveType);
 
 
 	protected:

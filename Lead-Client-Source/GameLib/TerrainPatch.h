@@ -21,13 +21,6 @@ struct HardwareTransformPatch_SSourceVertex
 	D3DXVECTOR3 kNormal;
 };
 
-struct SoftwareTransformPatch_SSourceVertex
-{
-	D3DXVECTOR3 kPosition;
-	D3DXVECTOR3 kNormal;
-	DWORD		dwDiffuse;
-};
-
 struct SWaterVertex
 {
     float x, y, z;          // position
@@ -50,8 +43,6 @@ public:
 		TERRAIN_VERTEX_COUNT = (CTerrainImpl::PATCH_XSIZE+1)*(CTerrainImpl::PATCH_YSIZE+1)
 	};
 
-	static bool SOFTWARE_TRANSFORM_PATCH_ENABLE;
-	
 public:
 	CTerrainPatch()									{ Clear(); }
 	~CTerrainPatch()									{ Clear(); }
@@ -95,14 +86,11 @@ public:
 
 	UINT GetWaterFaceCount();
 
-	void SoftwareTransformPatch_UpdateTerrainLighting(DWORD_PTR dwVersion, const D3DLIGHT9& c_rkLight, const D3DMATERIAL9& c_rkMtrl);
-	
 	void BuildTerrainVertexBuffer(HardwareTransformPatch_SSourceVertex* akSrcVertex);
 	void BuildWaterVertexBuffer(SWaterVertex* akSrcVertex, UINT uWaterVertexCount);
 	
 protected:
 	void __BuildHardwareTerrainVertexBuffer(HardwareTransformPatch_SSourceVertex* akSrcVertex);
-	void __BuildSoftwareTerrainVertexBuffer(HardwareTransformPatch_SSourceVertex* akSrcVertex);
 	
 private:
 	float					m_fMinX;
@@ -133,25 +121,6 @@ protected:
 	{
 		CGraphicVertexBuffer	m_kVB;
 	} m_kHT;
-
-
-public:
-	SoftwareTransformPatch_SSourceVertex* SoftwareTransformPatch_GetTerrainVertexDataPtr()	
-	{return m_kST.m_akTerrainVertex;}
-
-protected:
-	struct SSoftwareTransformPatch
-	{
-		SoftwareTransformPatch_SSourceVertex*	m_akTerrainVertex;
-		
-		SSoftwareTransformPatch();
-		~SSoftwareTransformPatch();
-
-		void Create();
-		void Destroy();
-
-		void __Initialize();
-	} m_kST;
 
 };
 
@@ -191,11 +160,8 @@ public:
 
 	// Vertex Buffer
 	CGraphicVertexBuffer * GetWaterVertexBufferPointer();
-	SoftwareTransformPatch_SSourceVertex* SoftwareTransformPatch_GetTerrainVertexDataPtr();
 	CGraphicVertexBuffer* HardwareTransformPatch_GetVertexBufferPtr();
 
-	void SoftwareTransformPatch_UpdateTerrainLighting(DWORD_PTR dwVersion, const D3DLIGHT9& c_rkLight, const D3DMATERIAL9& c_rkMtrl);
-	
 protected:
 	bool					m_bUsed;
 	short					m_sPatchNum;	// Patch Number

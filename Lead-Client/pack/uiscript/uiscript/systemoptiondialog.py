@@ -208,58 +208,6 @@ window = {
 					"down_image" : ROOT_PATH + "small_Button_03.sub",
 				},
 
-				## 타일 가속
-				{
-					"name" : "tiling_mode",
-					"type" : "text",
-
-					"x" : 40 + TEXT_TEMPORARY_X,
-					"y" : 185+2,
-
-					"text" : uiScriptLocale.OPTION_TILING,
-				},
-				
-				{
-					"name" : "tiling_cpu",
-					"type" : "radio_button",
-
-					"x" : 110,
-					"y" : 185,
-
-					"text" : uiScriptLocale.OPTION_TILING_CPU,
-
-					"default_image" : ROOT_PATH + "small_Button_01.sub",
-					"over_image" : ROOT_PATH + "small_Button_02.sub",
-					"down_image" : ROOT_PATH + "small_Button_03.sub",
-				},
-				
-				{
-					"name" : "tiling_gpu",
-					"type" : "radio_button",
-
-					"x" : 110+50,
-					"y" : 185,
-
-					"text" : uiScriptLocale.OPTION_TILING_GPU,
-
-					"default_image" : ROOT_PATH + "small_Button_01.sub",
-					"over_image" : ROOT_PATH + "small_Button_02.sub",
-					"down_image" : ROOT_PATH + "small_Button_03.sub",
-				},
-				
-				{
-					"name" : "tiling_apply",
-					"type" : "button",
-
-					"x" : 110+100,
-					"y" : 185,
-
-					"text" : uiScriptLocale.OPTION_TILING_APPLY,
-
-					"default_image" : ROOT_PATH + "middle_Button_01.sub",
-					"over_image" : ROOT_PATH + "middle_Button_02.sub",
-					"down_image" : ROOT_PATH + "middle_Button_03.sub",
-				},
 
 
 				## 그림자

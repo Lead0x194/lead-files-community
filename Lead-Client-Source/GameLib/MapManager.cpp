@@ -41,7 +41,7 @@ CMapManager::~CMapManager()
 
 bool CMapManager::IsSoftwareTilingEnable()
 {
-	return CTerrainPatch::SOFTWARE_TRANSFORM_PATCH_ENABLE;
+	return false;
 }
 
 void CMapManager::ReserveSoftwareTilingEnable(bool isEnable)
@@ -64,8 +64,6 @@ void CMapManager::Create()
 		Clear();
 		return;
 	}
-
-	CTerrainPatch::SOFTWARE_TRANSFORM_PATCH_ENABLE=m_isSoftwareTilingEnableReserved;
 
 	m_pkMap = (CMapOutdoor*)AllocMap();
 

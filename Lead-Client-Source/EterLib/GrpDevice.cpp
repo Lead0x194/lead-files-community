@@ -261,18 +261,9 @@ BOOL EL3D_ConfirmDevice(D3DCAPS9& rkD3DCaps, UINT uBehavior, D3DFORMAT /*eD3DFmt
 		if (!(rkD3DCaps.VertexProcessingCaps & D3DVTXPCAPS_POSITIONALLIGHTS))
 			return FALSE;
 
-		// Software T&L Support - ATI NOT SUPPORT CLIP, USE DIRECTX SOFTWARE PROCESSING CLIPPING
-		if (GRAPHICS_CAPS_SOFTWARE_TILING)
-		{
-			if (!(rkD3DCaps.PrimitiveMiscCaps & D3DPMISCCAPS_CLIPTLVERTS))
-				return FALSE;
-		}
-		else
-		{
-			// Shadow/Terrain
-			if (!(rkD3DCaps.VertexProcessingCaps & D3DVTXPCAPS_TEXGEN))
-				return FALSE;
-		}
+		// Shadow/Terrain
+		if (!(rkD3DCaps.VertexProcessingCaps & D3DVTXPCAPS_TEXGEN))
+			return FALSE;
 	}
 
 	s_MaxTextureWidth = rkD3DCaps.MaxTextureWidth;

@@ -825,32 +825,11 @@ bool CPythonApplication::Create(PyObject * poSelf, const char * c_szName, int wi
 			}
 		}
 
-		extern bool GRAPHICS_CAPS_SOFTWARE_TILING;
-
-		if (!m_pySystem.IsAutoTiling())
-			GRAPHICS_CAPS_SOFTWARE_TILING = m_pySystem.IsSoftwareTiling();
-
 		// Device
 		if (!CreateDevice(m_pySystem.GetWidth(), m_pySystem.GetHeight(), Windowed, m_pySystem.GetBPP(), m_pySystem.GetFrequency()))
 			return false;
 
 		GrannyCreateSharedDeformBuffer();
-
-		if (m_pySystem.IsAutoTiling())
-		{
-			if (m_grpDevice.IsFastTNL())
-			{
-				m_pyBackground.ReserveSoftwareTilingEnable(false);
-			}
-			else
-			{
-				m_pyBackground.ReserveSoftwareTilingEnable(true);
-			}
-		}
-		else
-		{
-			m_pyBackground.ReserveSoftwareTilingEnable(m_pySystem.IsSoftwareTiling());
-		}
 
 		SetVisibleMode(true);
 

@@ -324,11 +324,6 @@
       <BasicRuntimeChecks Condition="'$(Configuration)|x64'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
       <BrowseInformation Condition="'$(Configuration)|x64'=='Debug|x64'">true</BrowseInformation>
     </ClCompile>
-    <ClCompile Include="MapOutdoorRenderSTP.cpp">
-      <Optimization Condition="'$(Configuration)|x64'=='Debug|x64'">Disabled</Optimization>
-      <BasicRuntimeChecks Condition="'$(Configuration)|x64'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
-      <BrowseInformation Condition="'$(Configuration)|x64'=='Debug|x64'">true</BrowseInformation>
-    </ClCompile>
     <ClCompile Include="MapOutdoorUpdate.cpp">
       <Optimization Condition="'$(Configuration)|x64'=='Debug|x64'">Disabled</Optimization>
       <BasicRuntimeChecks Condition="'$(Configuration)|x64'=='Debug|x64'">EnableFastChecks</BasicRuntimeChecks>
