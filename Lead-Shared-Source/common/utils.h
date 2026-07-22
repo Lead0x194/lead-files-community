@@ -1,5 +1,7 @@
 #pragma once
 
+#include <type_traits>
+
 /*----- atoi function -----*/
 inline bool str_to_number (bool& out, const char *in)
 {

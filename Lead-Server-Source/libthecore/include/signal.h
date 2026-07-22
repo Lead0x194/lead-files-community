@@ -1,6 +1,12 @@
 #ifndef __INC_LIBTHECORE_SIGNAL_H__
 #define __INC_LIBTHECORE_SIGNAL_H__
 
+#ifdef __LINUX__
+// This project header shadows the C library header on Linux. Pull in the next
+// signal.h before declaring the libthecore signal helpers.
+#include_next <signal.h>
+#endif
+
 #ifdef __cplusplus
 extern "C"
 {

@@ -11,7 +11,7 @@
 void signal_setup() {}
 void signal_timer_disable() {}
 void signal_timer_enable(int timeout_seconds) {}
-#elif __FreeBSD__
+#elif defined(__FreeBSD__) || defined(__LINUX__)
 #define RETSIGTYPE void
 
 RETSIGTYPE reap(int sig)

@@ -1,7 +1,7 @@
 #ifndef __INC_LIBTHECORE_FDWATCH_H__
 #define __INC_LIBTHECORE_FDWATCH_H__
 
-#ifndef __WIN32__
+#if defined(__FreeBSD__)
 
     typedef struct fdwatch	FDWATCH;
     typedef struct fdwatch *	LPFDWATCH;
@@ -33,6 +33,39 @@
 
 	void **		fd_data;
 	int *		fd_rw;
+    };
+
+#elif defined(__LINUX__)
+
+    typedef struct fdwatch	FDWATCH;
+    typedef struct fdwatch *	LPFDWATCH;
+
+    enum EFdwatch
+    {
+	FDW_NONE		= 0,
+	FDW_READ		= 1,
+	FDW_WRITE		= 2,
+	FDW_WRITE_ONESHOT	= 4,
+	FDW_EOF			= 8,
+    };
+
+    typedef struct fdwatch_event
+    {
+	socket_t fd;
+	int event;
+    } FDWATCH_EVENT;
+
+    struct fdwatch
+    {
+	int epoll_fd;
+	int nfiles;
+
+	struct epoll_event * epoll_events;
+	FDWATCH_EVENT * events;
+	int event_count;
+
+	void ** fd_data;
+	int * fd_rw;
     };
 
 #else
@@ -68,7 +101,7 @@
 	int* fd_rw;
     };
 
-#endif // WIN32
+#endif
 
 #ifdef __cplusplus
 extern "C"

@@ -516,6 +516,12 @@ void usage()
 			"-r           : do not load regen tables\n");
 }
 
+#ifdef __LINUX__
+#define RESET_GETOPT() ((void)0)
+#else
+#define RESET_GETOPT() (optreset = 1)
+#endif
+
 int start(int argc, char **argv)
 {
 	std::string st_localeServiceName;
@@ -537,7 +543,7 @@ int start(int argc, char **argv)
 				printf("IP %s\n", g_szPublicIP);
 
 				optind++;
-				optreset = 1;
+				RESET_GETOPT();
 				break;
 
 			case 'p': // port
@@ -552,7 +558,7 @@ int start(int argc, char **argv)
 				printf("port %d\n", mother_port);
 
 				optind++;
-				optreset = 1;
+				RESET_GETOPT();
 				break;
 
 			case 'l':
@@ -562,7 +568,7 @@ int start(int argc, char **argv)
 					log_set_level(l);
 
 					optind++;
-					optreset = 1;
+					RESET_GETOPT();
 				}
 				break;
 
@@ -572,7 +578,7 @@ int start(int argc, char **argv)
 					if (optind < argc)
 					{
 						st_localeServiceName = argv[optind++];
-						optreset = 1;
+						RESET_GETOPT();
 					}
 				}
 				break;
@@ -868,4 +874,3 @@ int io_loop(LPFDWATCH fdw)
 
 	return 1;
 }
-

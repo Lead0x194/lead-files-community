@@ -52,6 +52,8 @@ int thecore_init(int fps, HEARTFUNC heartbeat_func)
 {
 #ifdef __WIN32__
     srand((unsigned int) time(0));
+#elif defined(__LINUX__)
+    srandom(time(0) + getpid() + getuid());
 #else
     srandom(time(0) + getpid() + getuid());
     srandomdev();

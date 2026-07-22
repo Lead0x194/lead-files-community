@@ -1,4 +1,5 @@
 CXX = clang++
+include ../../platform.mk
 BINDIR = ..
 OBJDIR = .obj
 TARGET = $(BINDIR)/db
@@ -20,14 +21,22 @@ LIBDIR = -L../../libthecore/lib -L../../libsql -L../../libpoly -L../../libgame/l
 LIBDIR += -L/usr/local/lib/mysql/
 
 #CFLAGS = -m64 -g -Wall -O2 -pipe -fno-rtti -fno-exceptions -pthread -D_THREAD_SAFE
-CFLAGS = -m64 -g -O1 -pipe -frtti -fexceptions -pthread -D_THREAD_SAFE -fno-stack-protector -fno-strict-aliasing
+CFLAGS = -m64 -g -O1 -pipe -frtti -fexceptions -pthread -D_THREAD_SAFE -fno-stack-protector -fno-strict-aliasing $(PLATFORM_CFLAGS) $(PLATFORM_CXXFLAGS)
 
+ifeq ($(HOST_OS),Linux)
+LIBS = ../../libsql/libsql.a \
+       ../../libpoly/libpoly.a \
+       ../../libgame/lib/libgame.a \
+       ../../libthecore/lib/libthecore.a \
+       -lmariadb -lssl -lcrypto -lm -lz -pthread
+else
 LIBS = ../../libsql/libsql.a \
        ../../libpoly/libpoly.a \
        ../../libgame/lib/libgame.a \
        /usr/lib/libssl.a /usr/lib/libcrypto.a \
        ../../libthecore/lib/libthecore.a \
        -lmariadbclient -lm -lz
+endif
 
 SRCS = $(filter-out version.cpp, $(wildcard *.cpp))
 OBJS = $(SRCS:%.cpp=$(OBJDIR)/%.o)

@@ -90,7 +90,7 @@ inline double rint(double x)
 
 #else
 
-#ifndef __FreeBSD__
+#if !defined(__FreeBSD__) && !defined(__LINUX__)
 #define __USE_SELECT__
 #ifdef __CYGWIN__
 #define _POSIX_SOURCE 1
@@ -127,6 +127,10 @@ inline double rint(double x)
 
 #ifdef __FreeBSD__
 #include <sys/event.h>
+#endif
+
+#ifdef __LINUX__
+#include <sys/epoll.h>
 #endif
 
 // Compatibility for code that calls MSVC CRT names directly. The Windows
