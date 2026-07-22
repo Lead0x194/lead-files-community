@@ -4,7 +4,9 @@ CXX=g++
 PLATFORM = $(shell file /bin/ls | cut -d' ' -f3 | cut -d'-' -f1)
 BSD_VERSION = $(shell uname -v 2>&1 | cut -d' ' -f2 | cut -d'.' -f1)
 
-default: libthecore libpoly libgame liblua libsql game db
+.PHONY: default libthecore libpoly libgame liblua libsql game db all
+
+default: game db
 	@echo "--------------------------------------"
 	@echo "Build Done"
 	@echo "--------------------------------------"
@@ -29,11 +31,11 @@ libthecore: .
 	$(MAKE) -C $@/src clean
 	$(MAKE) -C $@/src
 
-game: .
+game: libthecore libpoly libgame liblua libsql
 	$(MAKE) -C $@/src clean
 	$(MAKE) -C $@/src
 
-db: .
+db: libthecore libpoly libgame libsql
 	$(MAKE) -C $@/src clean
 	$(MAKE) -C $@/src
 

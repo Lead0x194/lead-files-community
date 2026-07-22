@@ -1141,7 +1141,15 @@ void CClientManager::QUERY_SETUP(CPeer * peer, DWORD dwHandle, const char * c_pD
 	TPacketDGP2P p2pSetupPacket;
 	p2pSetupPacket.wPort = peer->GetP2PPort();
 	p2pSetupPacket.bChannel = peer->GetChannel();
+#ifdef __LINUX__
+	char szP2PHost[MAX_HOST_LENGTH + 1];
+	if (CConfig::instance().GetValue("P2P_HOST", szP2PHost, sizeof(szP2PHost)))
+		strlcpy(p2pSetupPacket.szHost, szP2PHost, sizeof(p2pSetupPacket.szHost));
+	else
+		strlcpy(p2pSetupPacket.szHost, peer->GetPublicIP(), sizeof(p2pSetupPacket.szHost));
+#else
 	strlcpy(p2pSetupPacket.szHost, peer->GetPublicIP(), sizeof(p2pSetupPacket.szHost));
+#endif
 
 	for (itertype(m_peerList) i = m_peerList.begin(); i != m_peerList.end();++i)
 	{

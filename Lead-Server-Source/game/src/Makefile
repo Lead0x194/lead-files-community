@@ -1,5 +1,6 @@
 CXX = clang++
 CC = clang
+include ../../platform.mk
 BINDIR = ..
 OBJDIR = .obj
 TARGET = $(BINDIR)/game
@@ -29,9 +30,18 @@ LIBDIR = -L$(EXTERN_DIR)/lib \
 LIBDIR += -L/usr/local/lib/mysql/
 
 #CFLAGS = -m64 -g -Wall -O2 -pipe -fexceptions -fno-stack-protector -pthread -D_THREAD_SAFE -DNDEBUG
-CFLAGS = -m64 -g -O1 -pipe -frtti -fexceptions -pthread -D_THREAD_SAFE -DBOOST_BIND_GLOBAL_PLACEHOLDERS -fno-stack-protector -fno-strict-aliasing
+CFLAGS = -m64 -g -O1 -pipe -frtti -fexceptions -pthread -D_THREAD_SAFE -DBOOST_BIND_GLOBAL_PLACEHOLDERS -fno-stack-protector -fno-strict-aliasing $(PLATFORM_CFLAGS) $(PLATFORM_CXXFLAGS)
 
 # RE-ORDERED LIBS: Higher level libs first, base libs last
+ifeq ($(HOST_OS),Linux)
+LIBS = ../../liblua/lib/liblua.a \
+       ../../liblua/lib/liblualib.a \
+       ../../libsql/libsql.a \
+       ../../libgame/lib/libgame.a \
+       ../../libpoly/libpoly.a \
+       ../../libthecore/lib/libthecore.a \
+       -lmariadb -lcryptopp -lIL -llzo2 -lssl -lcrypto -lz -lm -pthread
+else
 LIBS = -L/usr/local/lib -llzo2 \
        ../../liblua/lib/liblua.a \
        ../../liblua/lib/liblualib.a \
@@ -41,6 +51,7 @@ LIBS = -L/usr/local/lib -llzo2 \
        /usr/lib/libssl.a /usr/lib/libcrypto.a \
        ../../libthecore/lib/libthecore.a \
        -lmariadbclient -lcryptopp -lIL -lz -lm -lmd -pthread
+endif
 
 CPP_SRCS = $(wildcard *.cpp)
 C_SRCS = $(wildcard *.c)

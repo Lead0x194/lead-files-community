@@ -1,7 +1,7 @@
 #define __LIBTHECORE__
 #include "stdafx.h"
 
-#ifndef __USE_SELECT__
+#if defined(__FreeBSD__)
 
 LPFDWATCH fdwatch_new(int nfiles)
 {
@@ -231,7 +231,218 @@ void * fdwatch_get_client_data(LPFDWATCH fdw, unsigned int event_idx)
 
     return (fdw->fd_data[fd]);
 }
-#else	// ifndef __USE_SELECT__
+
+#elif defined(__LINUX__)
+
+static uint32_t fdwatch_linux_events(int rw)
+{
+    uint32_t events = EPOLLERR | EPOLLHUP | EPOLLRDHUP;
+
+    if (rw & FDW_READ)
+	events |= EPOLLIN;
+    if (rw & FDW_WRITE)
+	events |= EPOLLOUT;
+
+    return events;
+}
+
+static void fdwatch_linux_update(LPFDWATCH fdw, socket_t fd, int operation)
+{
+    struct epoll_event event;
+
+    memset(&event, 0, sizeof(event));
+    event.events = fdwatch_linux_events(fdw->fd_rw[fd]);
+    event.data.fd = fd;
+
+    if (epoll_ctl(fdw->epoll_fd, operation, fd, &event) == -1)
+	sys_err("epoll_ctl(%d, %d): %s", operation, fd, strerror(errno));
+}
+
+LPFDWATCH fdwatch_new(int nfiles)
+{
+    LPFDWATCH fdw;
+    int epoll_fd = epoll_create1(EPOLL_CLOEXEC);
+
+    if (epoll_fd == -1)
+    {
+	sys_err("epoll_create1: %s", strerror(errno));
+	return NULL;
+    }
+
+    CREATE(fdw, FDWATCH, 1);
+    fdw->epoll_fd = epoll_fd;
+    fdw->nfiles = nfiles;
+
+    CREATE(fdw->epoll_events, struct epoll_event, nfiles);
+    CREATE(fdw->events, FDWATCH_EVENT, nfiles * 2);
+    CREATE(fdw->fd_rw, int, nfiles);
+    CREATE(fdw->fd_data, void *, nfiles);
+
+    return fdw;
+}
+
+void fdwatch_delete(LPFDWATCH fdw)
+{
+    close(fdw->epoll_fd);
+    free(fdw->fd_data);
+    free(fdw->fd_rw);
+    free(fdw->events);
+    free(fdw->epoll_events);
+    free(fdw);
+}
+
+void fdwatch_clear_fd(LPFDWATCH fdw, socket_t fd)
+{
+    if (fd < 0 || fd >= fdw->nfiles)
+	return;
+
+    fdw->fd_data[fd] = NULL;
+    fdw->fd_rw[fd] = 0;
+}
+
+void fdwatch_add_fd(LPFDWATCH fdw, socket_t fd, void * client_data, int rw, int oneshot)
+{
+    int old_rw;
+
+    if (fd < 0 || fd >= fdw->nfiles)
+    {
+	sys_err("fd overflow %d", fd);
+	return;
+    }
+
+    old_rw = fdw->fd_rw[fd];
+    fdw->fd_rw[fd] |= rw;
+
+    if (oneshot && (rw & FDW_WRITE))
+	fdw->fd_rw[fd] |= FDW_WRITE_ONESHOT;
+
+    fdw->fd_data[fd] = client_data;
+    fdwatch_linux_update(fdw, fd, old_rw == FDW_NONE ? EPOLL_CTL_ADD : EPOLL_CTL_MOD);
+}
+
+void fdwatch_del_fd(LPFDWATCH fdw, socket_t fd)
+{
+    if (fd < 0 || fd >= fdw->nfiles || fdw->fd_rw[fd] == FDW_NONE)
+	return;
+
+    if (epoll_ctl(fdw->epoll_fd, EPOLL_CTL_DEL, fd, NULL) == -1 && errno != ENOENT && errno != EBADF)
+	sys_err("epoll_ctl(DEL, %d): %s", fd, strerror(errno));
+
+    fdwatch_clear_fd(fdw, fd);
+}
+
+int fdwatch(LPFDWATCH fdw, struct timeval * timeout)
+{
+    int timeout_ms = 0;
+    int ready;
+    int i;
+
+    if (timeout)
+    {
+	long milliseconds = timeout->tv_sec * 1000L + timeout->tv_usec / 1000L;
+	timeout_ms = milliseconds > INT_MAX ? INT_MAX : (int)milliseconds;
+    }
+
+    ready = epoll_wait(fdw->epoll_fd, fdw->epoll_events, fdw->nfiles, timeout_ms);
+    if (ready == -1)
+	return -1;
+
+    fdw->event_count = 0;
+
+    for (i = 0; i < ready; ++i)
+    {
+	struct epoll_event * event = &fdw->epoll_events[i];
+	socket_t fd = event->data.fd;
+
+	if (event->events & (EPOLLERR | EPOLLHUP))
+	{
+	    fdw->events[fdw->event_count].fd = fd;
+	    fdw->events[fdw->event_count++].event = FDW_EOF;
+	    continue;
+	}
+
+	if (event->events & (EPOLLIN | EPOLLRDHUP))
+	{
+	    fdw->events[fdw->event_count].fd = fd;
+	    fdw->events[fdw->event_count++].event = FDW_READ;
+	}
+
+	if (event->events & EPOLLOUT)
+	{
+	    fdw->events[fdw->event_count].fd = fd;
+	    fdw->events[fdw->event_count++].event = FDW_WRITE;
+	}
+    }
+
+    return fdw->event_count;
+}
+
+int fdwatch_check_fd(LPFDWATCH fdw, socket_t fd)
+{
+    int result = FDW_NONE;
+    int i;
+
+    for (i = 0; i < fdw->event_count; ++i)
+	if (fdw->events[i].fd == fd)
+	    result |= fdw->events[i].event;
+
+    return result;
+}
+
+void * fdwatch_get_client_data(LPFDWATCH fdw, unsigned int event_idx)
+{
+    socket_t fd;
+
+    if (event_idx >= (unsigned int)fdw->event_count)
+	return NULL;
+
+    fd = fdw->events[event_idx].fd;
+    if (fd < 0 || fd >= fdw->nfiles)
+	return NULL;
+
+    return fdw->fd_data[fd];
+}
+
+int fdwatch_get_ident(LPFDWATCH fdw, unsigned int event_idx)
+{
+    if (event_idx >= (unsigned int)fdw->event_count)
+	return 0;
+
+    return fdw->events[event_idx].fd;
+}
+
+void fdwatch_clear_event(LPFDWATCH fdw, socket_t fd, unsigned int event_idx)
+{
+    if (event_idx < (unsigned int)fdw->event_count && fdw->events[event_idx].fd == fd)
+	fdw->events[event_idx].event = FDW_NONE;
+}
+
+int fdwatch_check_event(LPFDWATCH fdw, socket_t fd, unsigned int event_idx)
+{
+    int event;
+
+    if (event_idx >= (unsigned int)fdw->event_count || fdw->events[event_idx].fd != fd)
+	return FDW_NONE;
+
+    event = fdw->events[event_idx].event;
+
+    if (event == FDW_WRITE && (fdw->fd_rw[fd] & FDW_WRITE_ONESHOT))
+    {
+	fdw->fd_rw[fd] &= ~(FDW_WRITE | FDW_WRITE_ONESHOT);
+	fdwatch_linux_update(fdw, fd, EPOLL_CTL_MOD);
+    }
+
+    return event;
+}
+
+int fdwatch_get_buffer_size(LPFDWATCH fdw, socket_t fd)
+{
+    (void)fdw;
+    (void)fd;
+    return INT_MAX;
+}
+
+#else
 
 #ifdef __WIN32__
 static int win32_init_refcount = 0;

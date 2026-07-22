@@ -1,0 +1,71 @@
+# syntax=docker/dockerfile:1
+FROM ubuntu:24.04 AS builder
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        clang \
+        ccache \
+        make \
+        pkg-config \
+        libboost-dev \
+        libcrypto++-dev \
+        libdevil-dev \
+        liblzo2-dev \
+        libmariadb-dev \
+        libmariadb-dev-compat \
+        libssl-dev \
+        zlib1g-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /build
+
+ENV PATH=/usr/lib/ccache:${PATH}
+
+COPY Lead-Extern ./Lead-Extern
+COPY Lead-Shared-Source ./Lead-Shared-Source
+COPY Lead-Server-Source ./Lead-Server-Source
+
+RUN --mount=type=cache,target=/root/.cache/ccache \
+    make -C Lead-Server-Source -j"$(nproc)"
+
+FROM ubuntu:24.04 AS runtime
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+        libcrypto++8t64 \
+        libdevil1c2 \
+        liblzo2-2 \
+        libmariadb3 \
+        libssl3t64 \
+        zlib1g \
+    && rm -rf /var/lib/apt/lists/* \
+    && useradd --create-home --uid 10001 --shell /usr/sbin/nologin lead \
+    && install -d -o lead -g lead /opt/lead/bin /opt/lead/serverfiles /srv/lead
+
+COPY --from=builder --chown=lead:lead /build/Lead-Server-Source/game/game /opt/lead/bin/game
+COPY --from=builder --chown=lead:lead /build/Lead-Server-Source/db/db /opt/lead/bin/db
+
+COPY --chown=lead:lead Lead-Serverfiles/share/conf /opt/lead/serverfiles/share/conf
+COPY --chown=lead:lead Lead-Serverfiles/share/data /opt/lead/serverfiles/share/data
+COPY --chown=lead:lead Lead-Serverfiles/share/locale /opt/lead/serverfiles/share/locale
+COPY --chown=lead:lead Lead-Serverfiles/db /opt/lead/serverfiles/db
+COPY --chown=lead:lead Lead-Serverfiles/auth /opt/lead/serverfiles/auth
+COPY --chown=lead:lead Lead-Serverfiles/channel1/game1 /opt/lead/serverfiles/channel1/game1
+COPY --chown=lead:lead Lead-Serverfiles/channel1/game2 /opt/lead/serverfiles/channel1/game2
+COPY --chown=lead:lead Lead-Serverfiles/channel99 /opt/lead/serverfiles/channel99
+COPY --chown=lead:lead Lead-Serverfiles/markserver /opt/lead/serverfiles/markserver
+
+COPY --chmod=755 docker/lead-server-entrypoint.sh /usr/local/bin/lead-server-entrypoint
+COPY --chmod=755 docker/lead-server-healthcheck.sh /usr/local/bin/lead-server-healthcheck
+
+USER lead
+WORKDIR /srv/lead
+
+EXPOSE 11000 12000 13000 13001 13002 13099 14000 14001 14002 14099 15000
+
+STOPSIGNAL SIGTERM
+ENTRYPOINT ["/usr/local/bin/lead-server-entrypoint"]

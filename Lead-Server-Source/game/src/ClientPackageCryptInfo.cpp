@@ -2,7 +2,7 @@
 #include "ClientPackageCryptInfo.h"
 #include "common/stl.h"
 
-#ifndef __FreeBSD__
+#ifdef __WIN32__
 #include "../../libthecore/include/xdirent.h"
 #endif
 
@@ -222,4 +222,3 @@ bool CClientPackageCryptInfo::GetRelatedMapSDBStreams(const char* pMapName, BYTE
 
 	return true;
 }
-
