@@ -1,0 +1,59 @@
+name: lead-linux
+
+services:
+  db-lead:
+    extends:
+      file: Lead-Database-Scripts/compose.yml
+      service: db-lead
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 30
+
+  db-setup:
+    build:
+      context: Lead-Database-Scripts
+      dockerfile: Dockerfile.setup
+    command:
+      - --host
+      - db-lead
+      - --user
+      - root
+      - --password
+      - password
+    depends_on:
+      db-lead:
+        condition: service_healthy
+    restart: "no"
+
+  server:
+    platform: linux/amd64
+    build:
+      context: .
+      dockerfile: Dockerfile.linux
+      target: runtime
+    environment:
+      MARIADB_HOST: db-lead
+      SQL_USER: root
+      SQL_PASSWORD: password
+      LEAD_PUBLIC_IP: ${LEAD_PUBLIC_IP:-127.0.0.1}
+      LEAD_P2P_HOST: 127.0.0.1
+    depends_on:
+      db-setup:
+        condition: service_completed_successfully
+    ports:
+      - "11000:11000"
+      - "13000:13000"
+      - "13001:13001"
+      - "13002:13002"
+      - "13099:13099"
+    healthcheck:
+      test: ["CMD", "/usr/local/bin/lead-server-healthcheck"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    restart: on-failure:3
+
+volumes:
+  lead-dbdata:
