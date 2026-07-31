@@ -529,6 +529,24 @@ bool CPythonNetworkStream::SendItemDropPacket(TItemPos pos, GoldType elk, DWORD 
 	return SendSequence();
 }
 
+bool CPythonNetworkStream::SendItemDestroyPacket(TItemPos pos)
+{
+	if (!__CanActMainInstance())
+		return true;
+
+	TPacketCGItemDestroy itemDestroyPacket;
+	itemDestroyPacket.header = HEADER_CG_ITEM_DESTROY;
+	itemDestroyPacket.Cell = pos;
+
+	if (!Send(sizeof(itemDestroyPacket), &itemDestroyPacket))
+	{
+		Tracen("SendItemDestroyPacket Error");
+		return false;
+	}
+
+	return SendSequence();
+}
+
 bool CPythonNetworkStream::__IsEquipItemInSlot(TItemPos uSlotPos)
 {
 	IAbstractPlayer& rkPlayer=IAbstractPlayer::GetSingleton();

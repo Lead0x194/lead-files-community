@@ -272,6 +272,31 @@ class QuestionDialog(ui.ScriptWindow):
 		self.Close()
 		return True
 
+class QuestionDialogItem(QuestionDialog):
+
+	def __init__(self):
+		QuestionDialog.__init__(self)
+		self.__CreateDialog()
+
+	def __del__(self):
+		QuestionDialog.__del__(self)
+
+	def __CreateDialog(self):
+		pyScrLoader = ui.PythonScriptLoader()
+		pyScrLoader.LoadScriptFile(self, "uiscript/questiondialogitem.py")
+
+		self.board = self.GetChild("board")
+		self.textLine = self.GetChild("message")
+		self.acceptButton = self.GetChild("accept")
+		self.destroyButton = self.GetChild("destroy")
+		self.cancelButton = self.GetChild("cancel")
+
+	def SetDestroyEvent(self, event):
+		self.destroyButton.SetEvent(event)
+
+	def SetDestroyText(self, text):
+		self.destroyButton.SetText(text)
+
 class QuestionDialog2(QuestionDialog):
 
 	def __init__(self):

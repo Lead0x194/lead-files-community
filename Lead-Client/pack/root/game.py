@@ -1335,9 +1335,10 @@ class GameWindow(ui.ScriptWindow):
 				questionText = localeInfo.HOW_MANY_ITEM_DO_YOU_DROP(dropItemName, attachedItemCount)
 
 				## Dialog
-				itemDropQuestionDialog = uiCommon.QuestionDialog()
+				itemDropQuestionDialog = uiCommon.QuestionDialogItem()
 				itemDropQuestionDialog.SetText(questionText)
 				itemDropQuestionDialog.SetAcceptEvent(lambda arg=True: self.RequestDropItem(arg))
+				itemDropQuestionDialog.SetDestroyEvent(lambda: self.RequestDestroyItem())
 				itemDropQuestionDialog.SetCancelEvent(lambda arg=False: self.RequestDropItem(arg))
 				itemDropQuestionDialog.Open()
 				itemDropQuestionDialog.dropType = attachedType
@@ -1403,6 +1404,28 @@ class GameWindow(ui.ScriptWindow):
 
 		net.SendItemDropPacket(itemInvenType, itemVNum, itemCount)
 	# END_OF_PRIVATESHOP_DISABLE_ITEM_DROP
+
+	def RequestDestroyItem(self):
+		if not self.itemDropQuestionDialog:
+			return
+
+		dropType = self.itemDropQuestionDialog.dropType
+		dropNumber = self.itemDropQuestionDialog.dropNumber
+
+		if player.SLOT_TYPE_INVENTORY == dropType and dropNumber != player.ITEM_MONEY:
+			self.__SendDestroyItemPacket(dropNumber)
+
+		self.itemDropQuestionDialog.Close()
+		self.itemDropQuestionDialog = None
+
+		constInfo.SET_ITEM_QUESTION_DIALOG_STATUS(0)
+
+	def __SendDestroyItemPacket(self, itemSlotPos, itemInvenType = player.INVENTORY):
+		if uiPrivateShopBuilder.IsBuildingPrivateShop():
+			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.DROP_ITEM_FAILURE_PRIVATE_SHOP)
+			return
+
+		net.SendItemDestroyPacket(itemInvenType, itemSlotPos)
 
 	def OnMouseRightButtonDown(self):
 

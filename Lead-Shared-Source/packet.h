@@ -30,6 +30,7 @@ enum
 	HEADER_CG_QUICKSLOT_SWAP			= 18,
 	HEADER_CG_WHISPER				= 19,
 	HEADER_CG_ITEM_DROP			= 20,
+	HEADER_CG_ITEM_DESTROY			= 21,
 
 	HEADER_CG_ON_CLICK				= 26,
 	HEADER_CG_EXCHANGE				= 27,
@@ -633,6 +634,12 @@ typedef struct command_item_drop
 	GoldType gold;
 	ItemStackType	count;
 } TPacketCGItemDrop;
+
+typedef struct command_item_destroy
+{
+	BYTE		header;
+	TItemPos	Cell;
+} TPacketCGItemDestroy;
 
 typedef struct command_item_move
 {

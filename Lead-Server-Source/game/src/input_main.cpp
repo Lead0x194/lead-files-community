@@ -871,6 +871,13 @@ void CInputMain::ItemDrop(LPCHARACTER ch, const char * data)
 		ch->DropItem(pinfo->Cell, pinfo->count);
 }
 
+void CInputMain::ItemDestroy(LPCHARACTER ch, const char * data)
+{
+	const TPacketCGItemDestroy * pinfo = reinterpret_cast<const TPacketCGItemDestroy *>(data);
+
+	ch->DestroyItem(pinfo->Cell);
+}
+
 void CInputMain::ItemMove(LPCHARACTER ch, const char * data)
 {
 	struct command_item_move * pinfo = (struct command_item_move *) data;
@@ -2999,6 +3006,11 @@ int CInputMain::Analyze(LPDESC d, BYTE bHeader, const char * c_pData)
 		case HEADER_CG_ITEM_DROP:
 			if (!ch->IsObserverMode())
 				ItemDrop(ch, c_pData);
+			break;
+
+		case HEADER_CG_ITEM_DESTROY:
+			if (!ch->IsObserverMode())
+				ItemDestroy(ch, c_pData);
 			break;
 
 		case HEADER_CG_ITEM_MOVE:

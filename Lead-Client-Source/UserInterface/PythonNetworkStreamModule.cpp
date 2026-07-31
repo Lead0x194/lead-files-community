@@ -669,6 +669,31 @@ PyObject* netSendItemUseToItemPacket(PyObject* poSelf, PyObject* poArgs)
 	return Py_BuildNone();
 }
 
+PyObject* netSendItemDestroyPacket(PyObject* poSelf, PyObject* poArgs)
+{
+	int iWindow = INVENTORY;
+	int iCell = 0;
+
+	if (2 == PyTuple_Size(poArgs))
+	{
+		if (!PyTuple_GetInteger(poArgs, 0, &iWindow))
+			return Py_BuildException();
+
+		if (!PyTuple_GetInteger(poArgs, 1, &iCell))
+			return Py_BuildException();
+	}
+	else if (!PyTuple_GetInteger(poArgs, 0, &iCell))
+		return Py_BuildException();
+
+	TItemPos Cell;
+	Cell.window_type = static_cast<BYTE>(iWindow);
+	Cell.cell = static_cast<ItemCellType>(iCell);
+
+	CPythonNetworkStream& rkNetStream = CPythonNetworkStream::Instance();
+	rkNetStream.SendItemDestroyPacket(Cell);
+	return Py_BuildNone();
+}
+
 PyObject* netSendItemDropPacket(PyObject* poSelf, PyObject* poArgs)
 {
 	TItemPos Cell;
@@ -1647,6 +1672,7 @@ void initnet()
 		{ "SendItemUsePacket",					netSendItemUsePacket,					METH_VARARGS },
 		{ "SendItemUseToItemPacket",			netSendItemUseToItemPacket,				METH_VARARGS },
 		{ "SendItemDropPacket",				netSendItemDropPacket,				METH_VARARGS },
+		{ "SendItemDestroyPacket",			netSendItemDestroyPacket,			METH_VARARGS },
 		{ "SendGoldDropPacket",				netSendGoldDropPacket,				METH_VARARGS },
 		{ "SendItemMovePacket",					netSendItemMovePacket,					METH_VARARGS },
 		{ "SendItemPickUpPacket",				netSendItemPickUpPacket,				METH_VARARGS },

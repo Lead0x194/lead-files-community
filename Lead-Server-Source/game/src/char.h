@@ -878,6 +878,7 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 		// END_OF_ADD_REFINE_BUILDING
 
 		bool			RefineItem(LPITEM pkItem, LPITEM pkTarget);
+		bool			DestroyItem(TItemPos Cell);
 		bool			DropItem(TItemPos Cell,  ItemStackType bCount=0);
 		bool			GiveRecallItem(LPITEM item);
 		void			ProcessRecallItem(LPITEM item);

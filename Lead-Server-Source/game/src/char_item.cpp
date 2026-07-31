@@ -5218,6 +5218,31 @@ bool CHARACTER::UseItem(TItemPos Cell, TItemPos DestCell)
 		return UseItemEx(item, DestCell);
 }
 
+bool CHARACTER::DestroyItem(TItemPos Cell)
+{
+	if (!CanHandleItem() || IsDead())
+		return false;
+
+	if (INVENTORY != Cell.window_type || Cell.cell >= INVENTORY_MAX_NUM)
+		return false;
+
+	LPITEM item = GetItem(Cell);
+
+	if (!item || 0 == item->GetCount())
+		return false;
+
+	if (item->IsExchanging() || item->isLocked())
+		return false;
+
+	if (quest::CQuestManager::instance().GetPCForce(GetPlayerID())->IsRunning())
+		return false;
+
+	ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have destroyed %s."), item->GetName());
+
+	ITEM_MANAGER::instance().RemoveItem(item, "DESTROY");
+	return true;
+}
+
 bool CHARACTER::DropItem(TItemPos Cell, ItemStackType bCount)
 {
 	LPITEM item = NULL; 
