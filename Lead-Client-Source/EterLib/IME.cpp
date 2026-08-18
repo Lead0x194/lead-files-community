@@ -631,8 +631,26 @@ void CIME::PasteTextFromClipBoard()
 	if (!OpenClipboard(NULL))
 		return;
 
+	if (!IsClipboardFormatAvailable(CF_TEXT))
+	{
+		CloseClipboard();
+		return;
+	}
+
 	HANDLE handle = GetClipboardData(CF_TEXT);
+	if (!handle)
+	{
+		CloseClipboard();
+		return;
+	}
+
 	char * buffer = (char*)GlobalLock(handle);
+	if (!buffer)
+	{
+		CloseClipboard();
+		return;
+	}
+
 	std::string strClipboard = buffer;
 	GlobalUnlock(handle);
 	CloseClipboard();
@@ -2299,4 +2317,3 @@ LRESULT CIME::WMChar(HWND /*hWnd*/, UINT /*uiMsg*/, WPARAM wParam, LPARAM lParam
 
 	return 0;
 }
-
