@@ -1,0 +1,40 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyAttributeOutsideInitInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyByteLiteralInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyMethodMayBeStaticInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyNonAsciiCharInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyShadowingBuiltinsInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="ERROR" enabled_by_default="true" editorAttributes="ERRORS_ATTRIBUTES">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="CHARACTER_NAME_MAX_LEN" />
+          <option value="LOCALE_PATH" />
+          <option value="X_SCALE" />
+          <option value="Y_SCALE" />
+          <option value="SCREEN_WIDTH" />
+          <option value="SCREEN_HEIGHT" />
+          <option value="Abort" />
+          <option value="LogBox" />
+          <option value="TraceError" />
+          <option value="AppendChat" />
+          <option value="Tracenf" />
+          <option value="__USE_CYTHON__" />
+          <option value="__COMMAND_LINE__" />
+          <option value="old_open" />
+          <option value="old_len" />
+          <option value="NEW_PACK_FILE" />
+          <option value="__DEBUG__" />
+          <option value="__USE_EXTRA_CYTHON__" />
+          <option value="uiscriptlib" />
+          <option value="localeinfo.*" />
+          <option value="tlog" />
+          <option value="tchat" />
+          <option value="ENABLE_USE_CYTHON" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
