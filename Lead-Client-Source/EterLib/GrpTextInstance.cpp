@@ -540,7 +540,9 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 	STATEMANAGER.SetRenderState(D3DRS_FOGENABLE, FALSE);
 	STATEMANAGER.SetRenderState(D3DRS_LIGHTING, FALSE);
 
-	STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+	const bool bShaderPipeline = CGraphicBase::BeginPDTShader();
+	if (!bShaderPipeline)
+		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_COLORARG1,	D3DTA_TEXTURE);
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_COLORARG2,	D3DTA_DIFFUSE);
 	STATEMANAGER.SetTextureStageState(0, D3DTSS_COLOROP,	D3DTOP_MODULATE);
@@ -822,7 +824,8 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 		vertices[3].position = TPosition(ex, ey, 0.0f);
 
 		STATEMANAGER.SetTexture(0, NULL);
-
+		if (bShaderPipeline)
+			CGraphicBase::BeginPDTDiffuseShader();	// NULL-texture quad: FFP passes diffuse through
 
 		// 2004.11.18.myevan.DrawIndexPrimitiveUP -> DynamicVertexBuffer
 		CGraphicBase::SetDefaultIndexBuffer(CGraphicBase::DEFAULT_IB_FILL_RECT);
@@ -852,8 +855,11 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 			vertices[3].position = TPosition(ex, ey, 0.0f);
 
 			STATEMANAGER.DrawIndexedPrimitiveUP(D3DPT_TRIANGLELIST, 0, 4, 2, c_FillRectIndices, D3DFMT_INDEX16, vertices, sizeof(TPDTVertex));
-		}		
+		}
 	}
+
+	if (bShaderPipeline)
+		CGraphicBase::EndPDTShader();
 
 	STATEMANAGER.RestoreRenderState(D3DRS_SRCBLEND);
 	STATEMANAGER.RestoreRenderState(D3DRS_DESTBLEND);
