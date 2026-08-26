@@ -4711,6 +4711,11 @@ void CHARACTER::OnMove(bool bIsAttack)
 	// MINING
 	mining_cancel();
 	// END_OF_MINING
+
+#ifdef ENABLE_PARTY_MAP
+	if (IsPC() && GetParty())
+		GetParty()->SendPartyPositionOneToAll(this);
+#endif
 }
 
 void CHARACTER::OnClick(LPCHARACTER pkChrCauser)

@@ -127,7 +127,7 @@ class CPythonPlayer : public CSingleton<CPythonPlayer>, public IAbstractPlayer
 
 		typedef struct SPartyMemberInfo
 		{
-			SPartyMemberInfo(DWORD _dwPID, const char * c_szName) : dwPID(_dwPID), strName(c_szName), dwVID(0) {}
+			SPartyMemberInfo(DWORD _dwPID, const char * c_szName) : dwVID(0), dwPID(_dwPID), strName(c_szName), byState(0), byHPPercentage(0), sAffects{} {}
 
 			DWORD dwVID;
 			DWORD dwPID;

@@ -204,6 +204,7 @@ enum
 
 	HEADER_GC_MARK_BLOCK			= 100,
 	HEADER_GC_MARK_IDXLIST			= 102,
+	HEADER_GC_PARTY_POSITION_INFO		= 105,
 
 	HEADER_GC_TIME					= 106,
 	HEADER_GC_CHANGE_NAME			= 107,
@@ -1519,6 +1520,15 @@ typedef struct packet_party_add
 	DWORD	pid;
 	char	name[CHARACTER_NAME_MAX_LEN+1];
 } TPacketGCPartyAdd;
+
+typedef struct packet_party_position_info
+{
+	BYTE	header;
+	DWORD	pid;
+	DWORD	x;
+	DWORD	y;
+	float	rot;
+} TPacketGCPartyPositionInfo;
 
 typedef struct command_party_invite
 {

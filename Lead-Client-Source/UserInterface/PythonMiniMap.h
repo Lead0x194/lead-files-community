@@ -65,6 +65,13 @@ class CPythonMiniMap : public CScreen, public CSingleton<CPythonMiniMap>
 		bool GetAtlasInfo(float fScreenX, float fScreenY, std::string & rReturnString, float * pReturnPosX, float * pReturnPosY, DWORD * pdwTextColor, DWORD * pdwGuildID);
 		bool GetAtlasSize(float * pfSizeX, float * pfSizeY);
 
+#ifdef ENABLE_PARTY_MAP
+		void AddPartyMember(DWORD dwPID, const char* szName);
+		void MovePartyMember(DWORD dwPID, long lX, long lY, float fRot);
+		void RemovePartyMember(DWORD dwPID);
+		void ClearPartyMember();
+#endif
+
 		void AddObserver(DWORD dwVID, float fSrcX, float fSrcY);
 		void MoveObserver(DWORD dwVID, float fDstX, float fDstY);
 		void RemoveObserver(DWORD dwVID);
@@ -148,6 +155,20 @@ class CPythonMiniMap : public CScreen, public CSingleton<CPythonMiniMap>
 			DWORD dwDstTime;
 		};
 
+#ifdef ENABLE_PARTY_MAP
+		struct TPartyMember
+		{
+			DWORD pid = 0;
+			std::string strName;
+
+			long lX = 0;
+			long lY = 0;
+			float fScreenX = 0.0f;
+			float fScreenY = 0.0f;
+			bool bHasPosition = false;
+		};
+#endif
+
 		// Character list
 		typedef struct 
 		{
@@ -198,6 +219,10 @@ class CPythonMiniMap : public CScreen, public CSingleton<CPythonMiniMap>
 		TInstanceMarkPositionVector		m_WarpPositionVector;
 		std::map<DWORD, SObserver>		m_kMap_dwVID_kObserver;
 
+#ifdef ENABLE_PARTY_MAP
+		std::map<DWORD, TPartyMember>	m_kMap_dwPID_kPartyMember;
+#endif
+
 		bool							m_bAtlas;
 		bool							m_bShow;
 
@@ -212,6 +237,10 @@ class CPythonMiniMap : public CScreen, public CSingleton<CPythonMiniMap>
 		CGraphicImageInstance			m_AtlasImageInstance;
 		D3DXMATRIX						m_matWorldAtlas;
 		CGraphicExpandedImageInstance	m_AtlasPlayerMark;
+
+#ifdef ENABLE_PARTY_MAP
+		CGraphicExpandedImageInstance	m_AtlasPartyMark;
+#endif
 
 		float							m_fAtlasScreenX;
 		float							m_fAtlasScreenY;
