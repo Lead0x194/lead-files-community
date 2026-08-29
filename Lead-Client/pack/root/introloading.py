@@ -1,3 +1,4 @@
+from __future__ import print_function
 import ui
 import uiScriptLocale
 import net
@@ -37,7 +38,7 @@ import uiRestart
 
 class LoadingWindow(ui.ScriptWindow):
 	def __init__(self, stream):
-		print "NEW LOADING WINDOW -------------------------------------------------------------------------------"
+		print("NEW LOADING WINDOW -------------------------------------------------------------------------------")
 		ui.Window.__init__(self)
 		net.SetPhaseWindow(net.PHASE_WINDOW_LOAD, self)
 
@@ -51,12 +52,12 @@ class LoadingWindow(ui.ScriptWindow):
 		self.loadStepList=[]
 
 	def __del__(self):
-		print "---------------------------------------------------------------------------- DELETE LOADING WINDOW"
+		print("---------------------------------------------------------------------------- DELETE LOADING WINDOW")
 		net.SetPhaseWindow(net.PHASE_WINDOW_LOAD, 0)
 		ui.Window.__del__(self)
 
 	def Open(self):
-		print "OPEN LOADING WINDOW -------------------------------------------------------------------------------"
+		print("OPEN LOADING WINDOW -------------------------------------------------------------------------------")
 
 		#app.HideCursor()
 
@@ -118,7 +119,7 @@ class LoadingWindow(ui.ScriptWindow):
 			self.loadingImage.LoadImage(imgFileName)
 
 		except:
-			print "LoadingWindow.Open.LoadImage - %s File Load Error" % (imgFileName)
+			print("LoadingWindow.Open.LoadImage - %s File Load Error" % (imgFileName))
 			self.loadingImage.Hide()
 
 
@@ -136,7 +137,7 @@ class LoadingWindow(ui.ScriptWindow):
 		app.SetFrameSkip(0)
 
 	def Close(self):
-		print "---------------------------------------------------------------------------- CLOSE LOADING WINDOW"
+		print("---------------------------------------------------------------------------- CLOSE LOADING WINDOW")
 
 		app.SetFrameSkip(1)
 
@@ -260,7 +261,7 @@ class LoadingWindow(ui.ScriptWindow):
 		playerSettingModule.RegisterSkill(race, group, empire)
 
 	def __RegisterTitleName(self):
-		for i in xrange(len(localeInfo.TITLE_NAME_LIST)):
+		for i in range(len(localeInfo.TITLE_NAME_LIST)):
 			chrmgr.RegisterTitleName(i, localeInfo.TITLE_NAME_LIST[i])
 
 	def __RegisterColor(self):

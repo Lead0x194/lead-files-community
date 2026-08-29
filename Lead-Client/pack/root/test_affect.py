@@ -1,3 +1,4 @@
+from __future__ import print_function
 from interfaceModule import *
 
 import app
@@ -33,7 +34,7 @@ class TestGame(ui.Window):
 		ui.Window.__del__(self)
 
 	def OnKeyUp(self, key):
-		print key
+		print(key)
 		return True
 
 	def OnUpdate(self):

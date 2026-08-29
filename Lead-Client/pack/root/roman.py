@@ -25,5 +25,5 @@ def IntegerToRoman(num):
 
 
 def GenerateRomanNumerals(length):
-    roman_numerals = [IntegerToRoman(i + 1) for i in xrange(length)]
+    roman_numerals = [IntegerToRoman(i + 1) for i in range(length)]
     return roman_numerals

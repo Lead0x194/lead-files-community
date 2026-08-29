@@ -1,3 +1,4 @@
+from __future__ import print_function
 import net
 import background
 import stringCommander
@@ -28,9 +29,9 @@ class ServerCommandParser(object):
 
 	def BINARY_ServerCommand_Run(self, line):
 		try:
-			print " BINARY_ServerCommand_Reserve", line
+			print(" BINARY_ServerCommand_Reserve", line)
 			return self.serverCommander.Run(line)
-		except RuntimeError, msg:
+		except RuntimeError as msg:
 			import dbg
 			dbg.TraceError(msg)
 			return 0

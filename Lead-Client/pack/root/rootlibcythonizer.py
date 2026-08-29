@@ -1,3 +1,4 @@
+from __future__ import print_function
 import sys
 libpath = '..\\..\\Extern\\Py2Lib\\lib'
 sys.path.append(libpath)
@@ -24,7 +25,7 @@ for m in moduleLst:
 import sourceWriter
 
 sourceFileName = sourceWriter.run(moduleNameLst, 'rootlib')
-print "%s create successful." % sourceFileName
+print("%s create successful." % sourceFileName)
 
 # not yet implemented.
 #from distutils.dist import Distribution

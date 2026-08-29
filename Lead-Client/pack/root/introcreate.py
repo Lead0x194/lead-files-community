@@ -1,3 +1,4 @@
+from __future__ import print_function
 import chr
 import grp
 import app
@@ -104,20 +105,20 @@ class CreateCharacterWindow(ui.Window):
 			grp.SetInterfaceRenderState()
 
 	def __init__(self, stream):
-		print "NEW CREATE WINDOW ----------------------------------------------------------------------------"
+		print("NEW CREATE WINDOW ----------------------------------------------------------------------------")
 		ui.Window.__init__(self)
 		net.SetPhaseWindow(net.PHASE_WINDOW_CREATE, self)
 
 		self.stream=stream
 
 	def __del__(self):
-		print "---------------------------------------------------------------------------- DELETE CREATE WINDOW"
+		print("---------------------------------------------------------------------------- DELETE CREATE WINDOW")
 
 		net.SetPhaseWindow(net.PHASE_WINDOW_CREATE, 0)
 		ui.Window.__del__(self)
 
 	def Open(self):
-		print "OPEN CREATE WINDOW ----------------------------------------------------------------------------"
+		print("OPEN CREATE WINDOW ----------------------------------------------------------------------------")
 
 		playerSettingModule.LoadGameData("INIT")
 
@@ -266,7 +267,7 @@ class CreateCharacterWindow(ui.Window):
 		app.ShowCursor()
 
 	def Close(self):
-		print "---------------------------------------------------------------------------- CLOSE CREATE WINDOW"
+		print("---------------------------------------------------------------------------- CLOSE CREATE WINDOW")
 
 		self.editCharacterName.Enable()
 		self.dlgBoard.ClearDictionary()
@@ -286,7 +287,7 @@ class CreateCharacterWindow(ui.Window):
 		if musicInfo.createMusic != "":
 			snd.FadeOutMusic("BGM/"+musicInfo.createMusic)
 
-		for id in xrange(BASE_CHR_ID + SLOT_COUNT * PAGE_COUNT):
+		for id in range(BASE_CHR_ID + SLOT_COUNT * PAGE_COUNT):
 			chr.DeleteInstance(id)
 
 		self.dlgBoard.Hide()
@@ -308,8 +309,8 @@ class CreateCharacterWindow(ui.Window):
 		self.editCharacterName.SetFocus()
 		self.editCharacterName.Enable()
 
-		for page in xrange(PAGE_COUNT):
-			for slot in xrange(SLOT_COUNT):
+		for page in range(PAGE_COUNT):
+			for slot in range(SLOT_COUNT):
 				chr_id = self.__GetSlotChrID(page, slot)
 				chr.SelectInstance(chr_id)
 				chr.BlendLoopMotion(chr.MOTION_INTRO_WAIT, 0.1)
@@ -357,17 +358,17 @@ class CreateCharacterWindow(ui.Window):
 		self.gender = gender
 
 		if gender == MAN:
-			for i in xrange(SLOT_COUNT):
+			for i in range(SLOT_COUNT):
 				chr.SelectInstance(self.__GetSlotChrID(0, i))
 				chr.Show()
-			for i in xrange(SLOT_COUNT):
+			for i in range(SLOT_COUNT):
 				chr.SelectInstance(self.__GetSlotChrID(1, i))
 				chr.Hide()
 		else:
-			for i in xrange(SLOT_COUNT):
+			for i in range(SLOT_COUNT):
 				chr.SelectInstance(self.__GetSlotChrID(0, i))
 				chr.Hide()
-			for i in xrange(SLOT_COUNT):
+			for i in range(SLOT_COUNT):
 				chr.SelectInstance(self.__GetSlotChrID(1, i))
 				chr.Show()			
 
@@ -397,7 +398,7 @@ class CreateCharacterWindow(ui.Window):
 								float(self.stat[3])/float(statSummary),
 							)
 
-		for i in xrange(4):
+		for i in range(4):
 			self.statValue[i].SetText(str(self.stat[i]))
 
 	def __SelectSlot(self, slot):
@@ -414,12 +415,12 @@ class CreateCharacterWindow(ui.Window):
 		self.slot = slot
 		self.ResetStat()
 
-		for i in xrange(SLOT_COUNT):
+		for i in range(SLOT_COUNT):
 			self.destNameAlpha[i] = 0.0
 
 		self.destNameAlpha[slot] = 1.0
 
-		for i in xrange(SLOT_COUNT):
+		for i in range(SLOT_COUNT):
 			self.destRotation[(i+self.slot)%SLOT_COUNT] = self.SLOT_ROTATION[i]
 
 		if self.IsShow():
@@ -460,7 +461,7 @@ class CreateCharacterWindow(ui.Window):
 		self.reservingShapeIndex = self.shapeList[self.gender][self.slot]
 		self.reservingStartTime = app.GetTime()
 
-		for eachSlot in xrange(SLOT_COUNT):
+		for eachSlot in range(SLOT_COUNT):
 
 			sel_id = self.__GetSlotChrID(self.gender, eachSlot)
 
@@ -513,7 +514,7 @@ class CreateCharacterWindow(ui.Window):
 		return True		
 
 	def ResetStat(self):
-		for i in xrange(4):
+		for i in range(4):
 			self.stat[i] = self.START_STAT[self.slot][i]
 		self.lastStatPoint = self.CREATE_STAT_POINT
 		self.RefreshStat()
@@ -558,18 +559,18 @@ class CreateCharacterWindow(ui.Window):
 		event.UpdateEventSet(self.descIndex, xposEventSet+7, -(yposEventSet+7))
 		self.descriptionBox.SetIndex(self.descIndex)
 
-		for i in xrange(4):
+		for i in range(4):
 			self.curNameAlpha[i] += (self.destNameAlpha[i] - self.curNameAlpha[i]) / 10.0
 			self.NameList[i].SetAlpha(self.curNameAlpha[i])
 
-		for i in xrange(4):
+		for i in range(4):
 			self.curGauge[i] += (self.destGauge[i] - self.curGauge[i]) / 10.0
 			if abs(self.curGauge[i] - self.destGauge[i]) < 0.005:
 				self.curGauge[i] = self.destGauge[i]
 			self.GaugeList[i].SetPercentage(self.curGauge[i], 1.0)
 
-		for page in xrange(PAGE_COUNT):
-			for i in xrange(SLOT_COUNT):
+		for page in range(PAGE_COUNT):
+			for i in range(SLOT_COUNT):
 				chr.SelectInstance(self.__GetSlotChrID(page, i))
 
 				distance = 50.0
@@ -627,7 +628,7 @@ class CreateCharacterWindow(ui.Window):
 		return True
 
 	def OverInStatButton(self, stat):
-		if not self.STAT_DESCRIPTION.has_key(stat):
+		if stat not in self.STAT_DESCRIPTION:
 			return
 
 		self.toolTip.ClearToolTip()

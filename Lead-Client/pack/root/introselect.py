@@ -110,7 +110,7 @@ class SelectCharacterWindow(ui.Window):
 
 		self.curNameAlpha = []
 		self.destNameAlpha = []
-		for i in xrange(self.CHARACTER_TYPE_COUNT):
+		for i in range(self.CHARACTER_TYPE_COUNT):
 			self.curNameAlpha.append(0.0)
 			self.destNameAlpha.append(0.0)
 
@@ -216,7 +216,7 @@ class SelectCharacterWindow(ui.Window):
 
 	def SetEmpire(self, id):
 		self.empireName.SetText(self.EMPIRE_NAME.get(id, ""))
-		if self.flagDict.has_key(id):
+		if id in self.flagDict:
 			self.flagDict[id].Show()
 		
 	def HideAllFlag(self):
@@ -405,7 +405,7 @@ class SelectCharacterWindow(ui.Window):
 		self.startIndex = self.slot
 		self.startReservingTime = app.GetTime()
 
-		for i in xrange(self.SLOT_COUNT):
+		for i in range(self.SLOT_COUNT):
 
 			if False == chr.HasInstance(i):
 				continue
@@ -477,7 +477,7 @@ class SelectCharacterWindow(ui.Window):
 				self.stream.SetCreateCharacterPhase()
 
 	def __AreAllSlotEmpty(self):
-		for iSlot in xrange(self.SLOT_COUNT):
+		for iSlot in range(self.SLOT_COUNT):
 			if 0!=net.GetAccountCharacterSlotDataInteger(iSlot, net.ACCOUNT_CHARACTER_SLOT_ID):
 				return 0
 		return 1
@@ -588,10 +588,10 @@ class SelectCharacterWindow(ui.Window):
 
 		chr.SelectInstance(self.slot)
 
-		for i in xrange(self.CHARACTER_TYPE_COUNT):
+		for i in range(self.CHARACTER_TYPE_COUNT):
 			self.destNameAlpha[i] = 0.0
 
-		for i in xrange(self.SLOT_COUNT):
+		for i in range(self.SLOT_COUNT):
 			self.destRotation[(i+self.slot)%self.SLOT_COUNT] = self.SLOT_ROTATION[i]
 
 		self.destGauge = [0.0, 0.0, 0.0, 0.0]
@@ -706,17 +706,17 @@ class SelectCharacterWindow(ui.Window):
 	def OnUpdate(self):
 		chr.Update()
 
-		for i in xrange(4):
+		for i in range(4):
 			self.curGauge[i] += (self.destGauge[i] - self.curGauge[i]) / 10.0
 			if abs(self.curGauge[i] - self.destGauge[i]) < 0.005:
 				self.curGauge[i] = self.destGauge[i]
 			self.GaugeList[i].SetPercentage(self.curGauge[i], 1.0)
 
-		for i in xrange(self.CHARACTER_TYPE_COUNT):
+		for i in range(self.CHARACTER_TYPE_COUNT):
 			self.curNameAlpha[i] += (self.destNameAlpha[i] - self.curNameAlpha[i]) / 10.0
 			self.NameList[i].SetAlpha(self.curNameAlpha[i])
 
-		for i in xrange(self.SLOT_COUNT):
+		for i in range(self.SLOT_COUNT):
 
 			if False == chr.HasInstance(i):
 				continue

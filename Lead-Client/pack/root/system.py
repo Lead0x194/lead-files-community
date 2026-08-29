@@ -58,7 +58,7 @@ class pack_file(object):
 	def __init__(self, filename, mode = 'rb'):
 		assert mode in ('r', 'rb')
 		if not pack.Exist(filename):
-			raise IOError, 'No file or directory'
+			raise IOError('No file or directory')
 		self.data = pack.Get(filename)
 		if mode == 'r':
 			self.data=_chr(10).join(self.data.split(_chr(13)+_chr(10)))
@@ -107,7 +107,7 @@ def _process_result(code, fqname):
 
 	# execute the code within the module's namespace
 	if not is_module:
-		exec code in module.__dict__
+		exec(code, module.__dict__)
 
 	# fetch from sys.modules instead of returning module directly.
 	# also make module's __name__ agree with fqname, in case
@@ -271,7 +271,7 @@ def ShowException(excTitle):
 def RunMainScript(name):
 	try:		
 		execfile(name, __main__.__dict__)
-	except RuntimeError, msg:
+	except RuntimeError as msg:
 		msg = str(msg)
 
 		import locale

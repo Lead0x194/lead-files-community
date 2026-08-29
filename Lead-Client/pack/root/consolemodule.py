@@ -1,3 +1,4 @@
+from __future__ import print_function
 import app
 import grp
 import wndMgr
@@ -226,14 +227,14 @@ class Console(object):
 		if (len(self.dirNameList)>iDir):
 			return self.dirNameList[iDir]
 		else:
-			print len(self.dirNameList)
+			print(len(self.dirNameList))
 			return ""
 
 	def GetFileName(self, iFile):	
 		if (len(self.fileNameList)>iFile):
 			return self.fileNameList[iFile]
 		else:
-			print len(self.fileNameList)
+			print(len(self.fileNameList))
 			return ""
 
 	def	MoveParentPath(self):
@@ -516,27 +517,27 @@ class Console(object):
 
 	def SetCharacterRenderModeTypeAdd(self, color):
 		vid = player.GetTargetVID()
-		print " -> SetCharacterRenderModeTypeAdd", vid, color
+		print(" -> SetCharacterRenderModeTypeAdd", vid, color)
 		chr.testSetAddRenderMode(vid, int(color,16))
 
 	def SetCharacterRenderModeTypeMod(self, color):
 		vid = player.GetTargetVID()
-		print " -> SetCharacterRenderModeTypeMod", vid, color, int(color,16)
+		print(" -> SetCharacterRenderModeTypeMod", vid, color, int(color,16))
 		chr.testSetModulateRenderMode(vid, int(color,16))
 
 	def SetCharacterRenderModeTypeAddRGB(self, r, g, b):
 		vid = player.GetTargetVID()
-		print " -> SetCharacterRenderModeTypeAddRGB", vid, r, g, b
+		print(" -> SetCharacterRenderModeTypeAddRGB", vid, r, g, b)
 		chr.testSetAddRenderModeRGB(vid, float(r)/255.0, float(g)/255.0, float(b)/255.0)
 
 	def SetCharacterRenderModeTypeModRGB(self, r, g, b):
 		vid = player.GetTargetVID()
-		print " -> SetCharacterRenderModeTypeModRGB", vid, r, g, b
+		print(" -> SetCharacterRenderModeTypeModRGB", vid, r, g, b)
 		chr.testSetModulateRenderModeRGB(vid, float(r)/255.0, float(g)/255.0, float(b)/255.0)
 
 	def SetCharacterRenderModeSpecular(self, alpha):
 		vid = player.GetTargetVID()
-		print " -> SetCharacterRenderModeSpecular", vid, alpha
+		print(" -> SetCharacterRenderModeSpecular", vid, alpha)
 		chr.testSetSpecularRenderMode(vid, float(alpha))
 
 	def RestoreCharacterRenderModeType(self):
@@ -716,7 +717,7 @@ class ConsoleWindow(ui.Window):
 		yPosition = (self.height-20) - self.LINE_STEP
 		ItemCount = len(self.TextList)
 
-		for i in xrange(ItemCount):
+		for i in range(ItemCount):
 			TextLine = self.TextList[ItemCount-i-1]
 
 			TextLine.SetPosition(10, yPosition)
@@ -753,10 +754,10 @@ class ConsoleWindow(ui.Window):
 
 		sCmd=lstsArg[0]
 
-		if self.functionDict.has_key(sCmd):
+		if sCmd in self.functionDict:
 			try:
 				self.functionDict[sCmd](self.Console, *lstsArg[1:])
-			except Exception, e:
+			except Exception as e:
 				Console.Print(str(e))
 				#self.Console.Print(e)
 				#self.Console.Print(self.functionDict[sCmd].__doc__)
@@ -765,19 +766,19 @@ class ConsoleWindow(ui.Window):
 				try:
 					k = lstsArg[1]
 					v = self.functionDict[k]
-					argcount = v.im_func.func_code.co_argcount - 1 # -1 for self
-					if v.im_func.func_code.co_flags & 4:
+					argcount = v.__func__.__code__.co_argcount - 1 # -1 for self
+					if v.__func__.__code__.co_flags & 4:
 						argcount+=1
-					argnames = v.im_func.func_code.co_varnames[1:argcount+1]
+					argnames = v.__func__.__code__.co_varnames[1:argcount+1]
 					if argcount:
 						Console.Print("%s(%s) : %s" % (k,argcount, v.__doc__))
 						Console.Print("   arg : %s" % argnames)
 					else:
 						Console.Print("%s : %s" % (k,v.__doc__))
 				except:
-					for k,v in self.functionDict.iteritems():
-						argcount = v.im_func.func_code.co_argcount - 1 # -1 for self
-						if v.im_func.func_code.co_flags & 4:
+					for k,v in self.functionDict.items():
+						argcount = v.__func__.__code__.co_argcount - 1 # -1 for self
+						if v.__func__.__code__.co_flags & 4:
 							argcount+=1
 						if argcount:
 							Console.Print("%s(%s) : %s" % (k,argcount, v.__doc__))
@@ -789,8 +790,7 @@ class ConsoleWindow(ui.Window):
 
 				Console.Print("")
 			elif sCmd == '?':
-				list = self.functionDict.keys()
-				list.sort()
+				list = sorted(self.functionDict.keys())
 				Console.ShowNameList(list)
 			pass
 
@@ -893,7 +893,7 @@ class ConsoleWindow(ui.Window):
 
 		count = len(self.TextList)
 		if count > self.MAX_LINE_COUNT:
-			for i in xrange(count - self.MAX_LINE_COUNT):
+			for i in range(count - self.MAX_LINE_COUNT):
 				del self.TextList[0]
 
 		self.UpdatePosition()

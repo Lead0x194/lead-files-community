@@ -1,3 +1,4 @@
+from __future__ import print_function
 import os
 import app
 import dbg
@@ -303,7 +304,7 @@ class GameWindow(ui.ScriptWindow):
 		self.KillFocus()
 		app.HideCursor()
 
-		print "---------------------------------------------------------------------------- CLOSE GAME WINDOW"
+		print("---------------------------------------------------------------------------- CLOSE GAME WINDOW")
 
 	def __BuildKeyDict(self):
 		onPressKeyDict = {}
@@ -437,7 +438,7 @@ class GameWindow(ui.ScriptWindow):
 			else:
 				#net.SendChatPacket("/user_horse_ride")
 				if not uiPrivateShopBuilder.IsBuildingPrivateShop():
-					for i in xrange(player.INVENTORY_PAGE_SIZE):
+					for i in range(player.INVENTORY_PAGE_SIZE):
 						if player.GetItemIndex(i) in (71114, 71116, 71118, 71120):
 							net.SendItemUsePacket(i)
 							break
@@ -594,7 +595,7 @@ class GameWindow(ui.ScriptWindow):
 			nextPKMode = 0
 
 		net.SendChatPacket("/PKMode " + str(nextPKMode))
-		print "/PKMode " + str(nextPKMode)
+		print("/PKMode " + str(nextPKMode))
 
 	def OnChangePKMode(self):
 
@@ -603,7 +604,7 @@ class GameWindow(ui.ScriptWindow):
 		try:
 			self.__NotifyError(localeInfo.OPTION_PVPMODE_MESSAGE_DICT[player.GetPKMode()])
 		except KeyError:
-			print "UNKNOWN PVPMode[%d]" % (player.GetPKMode())
+			print("UNKNOWN PVPMode[%d]" % (player.GetPKMode()))
 
 		if constInfo.PVPMODE_TEST_ENABLE:
 			curPKMode = player.GetPKMode()
@@ -859,7 +860,7 @@ class GameWindow(ui.ScriptWindow):
 		self.interface.RecvWhisper(name)
 
 	def OnRecvWhisperError(self, mode, name, line):
-		if localeInfo.WHISPER_ERROR.has_key(mode):
+		if mode in localeInfo.WHISPER_ERROR:
 			chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, name, localeInfo.WHISPER_ERROR[mode](name))
 		else:
 			chat.AppendWhisper(chat.WHISPER_TYPE_SYSTEM, name, "Whisper Unknown Error(mode=%d, name=%s)" % (mode, name))
@@ -906,10 +907,10 @@ class GameWindow(ui.ScriptWindow):
 	# END_OF_MINING
 
 	def OnCannotUseSkill(self, vid, type):
-		if localeInfo.USE_SKILL_ERROR_TAIL_DICT.has_key(type):
+		if type in localeInfo.USE_SKILL_ERROR_TAIL_DICT:
 			textTail.RegisterInfoTail(vid, localeInfo.USE_SKILL_ERROR_TAIL_DICT[type])
 
-		if localeInfo.USE_SKILL_ERROR_CHAT_DICT.has_key(type):
+		if type in localeInfo.USE_SKILL_ERROR_CHAT_DICT:
 			chat.AppendChat(chat.CHAT_TYPE_INFO, localeInfo.USE_SKILL_ERROR_CHAT_DICT[type])
 
 	def	OnCannotShotError(self, vid, type):
@@ -1089,7 +1090,7 @@ class GameWindow(ui.ScriptWindow):
 			self.SetFocus()
 
 	def SaveScreen(self):
-		print "save screen"
+		print("save screen")
 
 		# SCREENSHOT_CWDSAVE
 		if SCREENSHOT_CWDSAVE:
@@ -1484,7 +1485,7 @@ class GameWindow(ui.ScriptWindow):
 
 		#(dwRenderedThing, dwRenderedCRC) = background.GetRenderedGraphicThingInstanceNum()
 
-		self.PrintCoord.SetText("Coordinate: %.2f %.2f %.2f ATM: %d" % (x, y, z, app.GetAvailableTextureMemory()/(1024*1024)))
+		self.PrintCoord.SetText("Coordinate: %.2f %.2f %.2f ATM: %d" % (x, y, z, app.GetAvailableTextureMemory()//(1024*1024)))
 		xMouse, yMouse = wndMgr.GetMousePosition()
 		self.PrintMousePos.SetText("MousePosition: %d %d" % (xMouse, yMouse))			
 
@@ -1607,7 +1608,7 @@ class GameWindow(ui.ScriptWindow):
 
 		for curItem in curList:
 			if isUpgradeable:
-				if curItem.has_key("vnum_list"):
+				if "vnum_list" in curItem:
 					vList = curItem["vnum_list"]
 					if (itemVnum >= min(vList) - 1 and itemVnum <= max(vList) + 1):
 						item.SelectItem(vList[0])
@@ -1617,15 +1618,15 @@ class GameWindow(ui.ScriptWindow):
 								vList.sort()
 							return
 			elif isMetin:
-				if curItem.has_key("vnum_list"):
+				if "vnum_list" in curItem:
 					vList = curItem["vnum_list"]
-					if (vList[0] / 100) == (itemVnum / 100):
+					if (vList[0] // 100) == (itemVnum // 100):
 						if not (itemVnum in vList):
 							vList.append(itemVnum)
 							vList.sort()
 						return
 			else:
-				if curItem.has_key("vnum") and curItem["vnum"] == itemVnum and curItem["count"] == itemCount:
+				if "vnum" in curItem and curItem["vnum"] == itemVnum and curItem["count"] == itemCount:
 					return
 
 		if isUpgradeable or isMetin:
@@ -1688,12 +1689,12 @@ class GameWindow(ui.ScriptWindow):
 		self.interface.UpdateCubeInfo(gold, itemVnum, count)
 		
 	def BINARY_Cube_Succeed(self, itemVnum, count):
-		print "ť�� ���� ����"
+		print("ť�� ���� ����")
 		self.interface.SucceedCubeWork(itemVnum, count)
 		pass
 
 	def BINARY_Cube_Failed(self):
-		print "ť�� ���� ����"
+		print("ť�� ���� ����")
 		self.interface.FailedCubeWork()
 		pass
 
@@ -1717,8 +1718,8 @@ class GameWindow(ui.ScriptWindow):
 			resultCount = len(self.cubeInformation[npcVNUM])
 			requestCount = 7
 			modCount = resultCount % requestCount
-			splitCount = resultCount / requestCount
-			for i in xrange(splitCount):
+			splitCount = resultCount // requestCount
+			for i in range(splitCount):
 				#print("/cube r_info %d %d" % (i * requestCount, requestCount))
 				net.SendChatPacket("/cube r_info %d %d" % (i * requestCount, requestCount))
 				
@@ -1726,7 +1727,7 @@ class GameWindow(ui.ScriptWindow):
 				#print("/cube r_info %d %d" % (splitCount * requestCount, modCount))				
 				net.SendChatPacket("/cube r_info %d %d" % (splitCount * requestCount, modCount))
 
-		except RuntimeError, msg:
+		except RuntimeError as msg:
 			dbg.TraceError(msg)
 			return 0
 			
@@ -1790,7 +1791,7 @@ class GameWindow(ui.ScriptWindow):
 			self.interface.wndCube.Refresh()
 			
 				
-		except RuntimeError, msg:
+		except RuntimeError as msg:
 			dbg.TraceError(msg)
 			return 0
 			
@@ -1964,7 +1965,7 @@ class GameWindow(ui.ScriptWindow):
 		try:
 			#print " BINARY_ServerCommand_Run", line
 			return self.serverCommander.Run(line)
-		except RuntimeError, msg:
+		except RuntimeError as msg:
 			dbg.TraceError(msg)
 			return 0
 
@@ -1972,10 +1973,10 @@ class GameWindow(ui.ScriptWindow):
 		try:
 			command = net.GetPreservedServerCommand()
 			while command:
-				print " __ProcessPreservedServerCommand", command
+				print(" __ProcessPreservedServerCommand", command)
 				self.serverCommander.Run(command)
 				command = net.GetPreservedServerCommand()
-		except RuntimeError, msg:
+		except RuntimeError as msg:
 			dbg.TraceError(msg)
 			return 0
 
@@ -2038,11 +2039,11 @@ class GameWindow(ui.ScriptWindow):
 			if not self.__IsXMasMap():
 				return
 
-			print "XMAS_SNOW ON"
+			print("XMAS_SNOW ON")
 			background.EnableSnow(1)
 
 		else:
-			print "XMAS_SNOW OFF"
+			print("XMAS_SNOW OFF")
 			background.EnableSnow(0)
 
 	def __XMasBoom_Enable(self, mode):
@@ -2051,23 +2052,23 @@ class GameWindow(ui.ScriptWindow):
 			if not self.__IsXMasMap():
 				return
 
-			print "XMAS_BOOM ON"
+			print("XMAS_BOOM ON")
 			self.__DayMode_Update("dark")
 			self.enableXMasBoom = True
 			self.startTimeXMasBoom = app.GetTime()
 		else:
-			print "XMAS_BOOM OFF"
+			print("XMAS_BOOM OFF")
 			self.__DayMode_Update("light")
 			self.enableXMasBoom = False
 
 	def __XMasTree_Enable(self, grade):
 
-		print "XMAS_TREE ", grade
+		print("XMAS_TREE ", grade)
 		background.SetXMasTree(int(grade))
 
 	def __XMasSong_Enable(self, mode):
 		if "1"==mode:
-			print "XMAS_SONG ON"
+			print("XMAS_SONG ON")
 
 			XMAS_BGM = "xmas.mp3"
 
@@ -2079,7 +2080,7 @@ class GameWindow(ui.ScriptWindow):
 				snd.FadeInMusic("BGM/" + musicInfo.fieldMusic)
 
 		else:
-			print "XMAS_SONG OFF"
+			print("XMAS_SONG OFF")
 
 			if musicInfo.fieldMusic != "":
 				snd.FadeOutMusic("BGM/" + musicInfo.fieldMusic)
@@ -2151,7 +2152,7 @@ class GameWindow(ui.ScriptWindow):
 
 			self.indexXMasBoom += 1
 
-			for i in xrange(boomCount):
+			for i in range(boomCount):
 				self.__XMasBoom_Boom()
 
 	def __XMasBoom_Boom(self):

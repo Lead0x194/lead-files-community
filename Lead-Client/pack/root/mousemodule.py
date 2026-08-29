@@ -233,13 +233,13 @@ class CMouseController(object):
 				self.DeattachObject()
 				return
 
-			self.AttachedIconHalfWidth = grpImage.GetWidth(self.AttachedIconHandle) / 2
-			self.AttachedIconHalfHeight = grpImage.GetHeight(self.AttachedIconHandle) / 2
-			self.AttachedIconHalfWidth = grpImage.GetWidth(self.AttachedIconHandle) / 2
-			self.AttachedIconHalfHeight = grpImage.GetHeight(self.AttachedIconHandle) / 2
+			self.AttachedIconHalfWidth = grpImage.GetWidth(self.AttachedIconHandle) // 2
+			self.AttachedIconHalfHeight = grpImage.GetHeight(self.AttachedIconHandle) // 2
+			self.AttachedIconHalfWidth = grpImage.GetWidth(self.AttachedIconHandle) // 2
+			self.AttachedIconHalfHeight = grpImage.GetHeight(self.AttachedIconHandle) // 2
 			wndMgr.AttachIcon(self.AttachedType, self.AttachedItemIndex, self.AttachedSlotNumber, width, height)
 
-		except Exception, e:
+		except Exception as e:
 			dbg.TraceError("mouseModule.py: AttachObject : " + str(e))
 			self.AttachedIconHandle = 0
 
@@ -267,8 +267,8 @@ class CMouseController(object):
 		self.AttachedItemIndex = player.ITEM_MONEY
 		self.AttachedCount = count
 		self.AttachedIconHandle = grpImage.Generate("icon/item/money.tga")
-		self.AttachedIconHalfWidth = grpImage.GetWidth(self.AttachedIconHandle) / 2
-		self.AttachedIconHalfHeight = grpImage.GetHeight(self.AttachedIconHandle) / 2
+		self.AttachedIconHalfWidth = grpImage.GetWidth(self.AttachedIconHandle) // 2
+		self.AttachedIconHalfHeight = grpImage.GetHeight(self.AttachedIconHandle) // 2
 		wndMgr.AttachIcon(self.AttachedType, self.AttachedItemIndex, self.AttachedSlotNumber, 1, 1)
 
 		if count > 1:
@@ -389,7 +389,7 @@ class CMouseController(object):
 
 	def RunCallBack(self, type, *arg):
 
-		if not self.callbackDict.has_key(type):
+		if type not in self.callbackDict:
 			self.DeattachObject()
 			return
 

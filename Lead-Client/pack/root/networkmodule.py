@@ -1,3 +1,4 @@
+from __future__ import print_function
 ###################################################################################################
 # Network
 
@@ -21,12 +22,12 @@ import localeInfo
 class PopupDialog(ui.ScriptWindow):
 
 	def __init__(self):
-		print "NEW POPUP DIALOG ----------------------------------------------------------------------------"
+		print("NEW POPUP DIALOG ----------------------------------------------------------------------------")
 		ui.ScriptWindow.__init__(self)
 		self.CloseEvent = 0
 
 	def __del__(self):
-		print "---------------------------------------------------------------------------- DELETE POPUP DIALOG "
+		print("---------------------------------------------------------------------------- DELETE POPUP DIALOG ")
 		ui.ScriptWindow.__del__(self)
 
 	def LoadDialog(self):
@@ -81,7 +82,7 @@ class MainStream(object):
 	isChrData=0	
 
 	def __init__(self):
-		print "NEWMAIN STREAM ----------------------------------------------------------------------------"
+		print("NEWMAIN STREAM ----------------------------------------------------------------------------")
 		net.SetHandler(self)
 		net.SetTCPRecvBufferSize(128*1024)
 		net.SetTCPSendBufferSize(4096)
@@ -101,7 +102,7 @@ class MainStream(object):
 		self.newPhaseWindow = 0
 
 	def __del__(self):
-		print "---------------------------------------------------------------------------- DELETE MAIN STREAM "
+		print("---------------------------------------------------------------------------- DELETE MAIN STREAM ")
 
 	def Destroy(self):
 		if self.curPhaseWindow:

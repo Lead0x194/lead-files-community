@@ -1,3 +1,4 @@
+from __future__ import print_function
 import ui
 import net
 import wndMgr
@@ -42,7 +43,7 @@ class SelectEmpireWindow(ui.ScriptWindow):
 			event.RenderEventSet(self.descIndex)
 
 	def __init__(self, stream):
-		print "NEW EMPIRE WINDOW  ----------------------------------------------------------------------------"
+		print("NEW EMPIRE WINDOW  ----------------------------------------------------------------------------")
 		ui.ScriptWindow.__init__(self)
 		net.SetPhaseWindow(net.PHASE_WINDOW_EMPIRE, self)
 
@@ -63,10 +64,10 @@ class SelectEmpireWindow(ui.ScriptWindow):
 	def __del__(self):
 		ui.ScriptWindow.__del__(self)
 		net.SetPhaseWindow(net.PHASE_WINDOW_EMPIRE, 0)
-		print "---------------------------------------------------------------------------- DELETE EMPIRE WINDOW"
+		print("---------------------------------------------------------------------------- DELETE EMPIRE WINDOW")
 
 	def Close(self):
-		print "---------------------------------------------------------------------------- CLOSE EMPIRE WINDOW"		
+		print("---------------------------------------------------------------------------- CLOSE EMPIRE WINDOW")
 
 		self.ClearDictionary()
 		self.leftButton = None
@@ -85,7 +86,7 @@ class SelectEmpireWindow(ui.ScriptWindow):
 		event.Destroy()
 
 	def Open(self):
-		print "OPEN EMPIRE WINDOW ----------------------------------------------------------------------------"
+		print("OPEN EMPIRE WINDOW ----------------------------------------------------------------------------")
 
 		self.SetSize(wndMgr.GetScreenWidth(), wndMgr.GetScreenHeight())
 		self.SetWindowName("SelectEmpireWindow")
@@ -135,7 +136,7 @@ class SelectEmpireWindow(ui.ScriptWindow):
 		self.empireID = arg
 		
 		event.ClearEventSet(self.descIndex)
-		if self.EMPIRE_DESCRIPTION_TEXT_FILE_NAME.has_key(arg):
+		if arg in self.EMPIRE_DESCRIPTION_TEXT_FILE_NAME:
 			self.descIndex = event.RegisterEventSet(self.EMPIRE_DESCRIPTION_TEXT_FILE_NAME[arg])
 
 			if localeInfo.IsARABIC():

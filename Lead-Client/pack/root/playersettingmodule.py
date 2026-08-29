@@ -1,3 +1,4 @@
+from __future__ import print_function
 import chr
 import chrmgr
 import skill
@@ -112,13 +113,13 @@ def RegisterSkill(race, group, empire=0):
 	job = chr.RaceToJob(race)
 
 	## Character Skill
-	if SKILL_INDEX_DICT.has_key(job):
+	if job in SKILL_INDEX_DICT:
 
-		if SKILL_INDEX_DICT[job].has_key(group):
+		if group in SKILL_INDEX_DICT[job]:
 		
 			activeSkillList = SKILL_INDEX_DICT[job][group]
 
-			for i in xrange(len(activeSkillList)):
+			for i in range(len(activeSkillList)):
 				skillIndex = activeSkillList[i]
 				
 				## Skills 7 and 8 must not be set here
@@ -127,23 +128,23 @@ def RegisterSkill(race, group, empire=0):
 
 			supportSkillList = SKILL_INDEX_DICT[job]["SUPPORT"]
 
-			for i in xrange(len(supportSkillList)):
+			for i in range(len(supportSkillList)):
 				player.SetSkill(i+100+1, supportSkillList[i])
 
 	## Language Skill
 	if 0 != empire:
 		languageSkillList = []
-		for i in xrange(3):
+		for i in range(3):
 			if (i+1) != empire:
 				languageSkillList.append(player.SKILL_INDEX_LANGUAGE1+i)
-		for i in xrange(len(languageSkillList)):
+		for i in range(len(languageSkillList)):
 			player.SetSkill(107+i, languageSkillList[i])
 
 	## Guild Skill
-	for i in xrange(len(PASSIVE_GUILD_SKILL_INDEX_LIST)):
+	for i in range(len(PASSIVE_GUILD_SKILL_INDEX_LIST)):
 		player.SetSkill(200+i, PASSIVE_GUILD_SKILL_INDEX_LIST[i])
 
-	for i in xrange(len(ACTIVE_GUILD_SKILL_INDEX_LIST)):
+	for i in range(len(ACTIVE_GUILD_SKILL_INDEX_LIST)):
 		player.SetSkill(210+i, ACTIVE_GUILD_SKILL_INDEX_LIST[i])
 
 def RegisterSkillAt(race, group, pos, num):
@@ -504,7 +505,7 @@ def __LoadGameWarriorEx(race, path):
 
 	## SKILL
 	chrmgr.SetPathName(path + "skill/")
-	for i in xrange(skill.SKILL_EFFECT_COUNT):
+	for i in range(skill.SKILL_EFFECT_COUNT):
 		END_STRING = ""
 		if i != 0: END_STRING = "_%d" % (i+1)
 		chrmgr.RegisterCacheMotionData(chr.MOTION_MODE_GENERAL, chr.MOTION_SKILL+(i*skill.SKILL_GRADEGAP)+1, "samyeon" + END_STRING + ".msa")
@@ -689,7 +690,7 @@ def __LoadGameAssassinEx(race, path):
 
 	## SKILL
 	chrmgr.SetPathName(path + "skill/")
-	for i in xrange(skill.SKILL_EFFECT_COUNT):
+	for i in range(skill.SKILL_EFFECT_COUNT):
 		END_STRING = ""
 		if i != 0: END_STRING = "_%d" % (i+1)
 		chrmgr.RegisterCacheMotionData(chr.MOTION_MODE_GENERAL, chr.MOTION_SKILL+(i*skill.SKILL_GRADEGAP)+1, "amseup" + END_STRING + ".msa")
@@ -902,7 +903,7 @@ def __LoadGameSuraEx(race, path):
 	chrmgr.SetPathName(path + "skill/")
 	# chrmgr.RegisterCacheMotionData(chr.MOTION_MODE_GENERAL, chr.MOTION_SKILL+4, "geongon.msa")
 
-	for i in xrange(skill.SKILL_EFFECT_COUNT):
+	for i in range(skill.SKILL_EFFECT_COUNT):
 		END_STRING = ""
 		if i != 0: END_STRING = "_%d" % (i+1)
 		chrmgr.RegisterCacheMotionData(chr.MOTION_MODE_GENERAL, chr.MOTION_SKILL+(i*skill.SKILL_GRADEGAP)+1, "swaeryeong" + END_STRING + ".msa")
@@ -1252,7 +1253,7 @@ def LoadGuildBuildingList(filename):
 
 	handle = app.OpenTextFile(filename)
 	count = app.GetTextFileLineCount(handle)
-	for i in xrange(count):
+	for i in range(count):
 		line = app.GetTextFileLine(handle, i)
 		tokens = line.split("\t")
 
@@ -1397,7 +1398,7 @@ def LoadGameData(name):
 		try:
 			load()
 		except:
-			print name
+			print(name)
 			import exception
 			exception.Abort("LoadGameData")
 			raise
@@ -1556,7 +1557,7 @@ def OLD_SetNPC():
 	SetGuard(20347, "jinno_patrol_spear")
 
 	## Warp
-	for i in xrange(18):
+	for i in range(18):
 		SetWarp(10001 + i)
 
 	SetGuard(11000, "gangyo_patrol_spear")
