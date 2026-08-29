@@ -37,7 +37,7 @@ class ShopDialog(ui.ScriptWindow):
 		getItemID=shop.GetItemID
 		getItemCount=shop.GetItemCount
 		setItemID=self.itemSlotWindow.SetItemSlot
-		for i in xrange(shop.SHOP_SLOT_COUNT):
+		for i in range(shop.SHOP_SLOT_COUNT):
 			idx = self.__GetRealIndex(i)
 			itemCount = getItemCount(idx)
 			if itemCount <= 1:
@@ -310,9 +310,9 @@ class ShopDialog(ui.ScriptWindow):
 				itemPrice = item.GetISellItemPrice()
 
 				if item.Is1GoldItem():
-					itemPrice = attachedCount / itemPrice / 5
+					itemPrice = attachedCount // itemPrice // 5
 				else:
-					itemPrice = itemPrice * max(1, attachedCount) / 5
+					itemPrice = itemPrice * max(1, attachedCount) // 5
 
 				itemName = item.GetItemName()
 

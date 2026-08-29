@@ -1,3 +1,4 @@
+from __future__ import print_function
 import app
 import os
 import net
@@ -111,18 +112,18 @@ class AutoBanQuizWindow(ui.ScriptWindow):
 		self.selButtons[index].Down()
 		self.answer = index + 1
 		
-		print "autoban_select: %d" % (self.answer)
+		print("autoban_select: %d" % (self.answer))
 
 	def __OnClickAnswerButton(self):
 		if self.answer:
-			print "autoban_answer: %d" % (self.answer)
+			print("autoban_answer: %d" % (self.answer))
 			net.SendChatPacket("/autoban_answer %d" % (self.answer))
 			self.Close()
 		else:
-			print "autoban_noanswer"
+			print("autoban_noanswer")
 		
 	def __OnClickRefreshButton(self):
-		print "autoban_refresh"
+		print("autoban_refresh")
 		net.SendChatPacket("/autoban_refresh")				
 
 	def OnPressEscapeKey(self):

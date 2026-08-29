@@ -1,3 +1,4 @@
+from __future__ import print_function
 import app
 
 AUTOBAN_QUIZ_ANSWER = "ANSWER"
@@ -29,7 +30,7 @@ def LoadLocaleFile(srcFileName, localeDict):
 			localeDict[tokens[0]] = tokens[1]			
 			
 		else:
-			print len(tokens), lines.index(line), line
+			print(len(tokens), lines.index(line), line)
 
 
 if "locale/ymir" == app.GetLocalePath():

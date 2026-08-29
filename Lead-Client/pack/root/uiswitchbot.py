@@ -11,7 +11,7 @@ import player
 import mouseModule
 import localeInfo
 import wndMgr
-import cPickle as pickle
+import pickle
 import switchbot
 
 COLOR_INACTIVE = grp.GenerateColor(1.0, 0.0, 0.0, 0.2)
@@ -31,7 +31,7 @@ BORDER_SPACE_TOP = 30
 
 ITEM_TAB_NAME_BOX_HEIGHT = 20
 ITEM_TAB_SPACE = 2
-ITEM_TAB_WIDTH = (BOARD_WIDTH - BORDER_SPACE * 2) / switchbot.SLOT_COUNT + 1 - ITEM_TAB_SPACE
+ITEM_TAB_WIDTH = (BOARD_WIDTH - BORDER_SPACE * 2) // switchbot.SLOT_COUNT + 1 - ITEM_TAB_SPACE
 	
 TOP_PANEL_HEIGHT = (BORDER_SPACE * 2) + (3 * 32) + ITEM_TAB_NAME_BOX_HEIGHT
 TOP_PANEL_WIDTH = BOARD_WIDTH - (BORDER_SPACE * 2)
@@ -148,8 +148,8 @@ class SwitchbotItemTab(ui.ThinBoardCircle):
 		self.tooltipItem.ClearToolTip()
 
 		itemVnum = player.GetItemIndex(player.SWITCHBOT, self.slot_num)
-		metinSlot = [player.GetItemMetinSocket(player.SWITCHBOT, self.slot_num, i) for i in xrange(player.METIN_SOCKET_MAX_NUM)]
-		attrSlot = [player.GetItemAttribute(player.SWITCHBOT, self.slot_num, i) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+		metinSlot = [player.GetItemMetinSocket(player.SWITCHBOT, self.slot_num, i) for i in range(player.METIN_SOCKET_MAX_NUM)]
+		attrSlot = [player.GetItemAttribute(player.SWITCHBOT, self.slot_num, i) for i in range(player.ATTRIBUTE_SLOT_MAX_NUM)]
 		
 		self.tooltipItem.AddItemData(itemVnum, metinSlot, attrSlot)	
 		self.tooltipItem.ShowToolTip()
@@ -172,10 +172,10 @@ class SwitchbotItemTab(ui.ThinBoardCircle):
 
 			if player.SLOT_TYPE_INVENTORY == attachedSlotType:
 				attachedCount = mouseModule.mouseController.GetAttachedItemCount()
-				net.SendItemMovePacket(player.INVENTORY, attachedSlotPos, player.SWITCHBOT, self.slot_num, long(attachedItemCount))
+				net.SendItemMovePacket(player.INVENTORY, attachedSlotPos, player.SWITCHBOT, self.slot_num, int(attachedItemCount))
 			elif player.SLOT_TYPE_SWITCHBOT == attachedSlotType:
 				attachedCount = mouseModule.mouseController.GetAttachedItemCount()
-				net.SendItemMovePacket(player.SWITCHBOT, attachedSlotPos, player.SWITCHBOT, self.slot_num, long(attachedItemCount))
+				net.SendItemMovePacket(player.SWITCHBOT, attachedSlotPos, player.SWITCHBOT, self.slot_num, int(attachedItemCount))
 				
 			mouseModule.mouseController.DeattachObject()
 
@@ -425,7 +425,7 @@ class SwitchbotAttribute(ui.Window):
 			(curType, curValue) = switchbot.GetAttribute(self.selectedSlot, self.alternative, self.index)
 			
 			maxValue = 0
-			if not ADDON_TYPES.has_key(curType):
+			if curType not in ADDON_TYPES:
 				maxValue = switchbot.GetAttributeMaxValue(self.selectedSlot, curType)
 				
 			value = int(text)
@@ -520,7 +520,7 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 		self.topPanel.SetPosition(BORDER_SPACE, BORDER_SPACE_TOP)
 		self.topPanel.Show()
 		
-		for i in xrange(switchbot.SLOT_COUNT):	
+		for i in range(switchbot.SLOT_COUNT):	
 			itemTab = SwitchbotItemTab(i)
 			itemTab.SetParent(self.topPanel)
 			itemTab.SetPosition((ITEM_TAB_WIDTH + ITEM_TAB_SPACE) * i, 0)
@@ -550,7 +550,7 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 		self.alternativeTextLine.SetText("Alternativen:")
 		self.alternativeTextLine.Show()
 		
-		for i in xrange(switchbot.ALTERNATIVE_COUNT):
+		for i in range(switchbot.ALTERNATIVE_COUNT):
 			alternativeButton = ui.RadioButton()
 			alternativeButton.SetParent(self.alternativePanel)
 			alternativeButton.SetUpVisual("d:/ymir work/ui/switchbot/btn_small_01.sub")
@@ -565,7 +565,7 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 			
 			self.alternativeButtons[i] = alternativeButton
 		
-		for i in xrange(ATTR_SLOT_COUNT):
+		for i in range(ATTR_SLOT_COUNT):
 			attr = SwitchbotAttribute()
 			attr.SetParent(self.mainPanel)
 			attr.Create(MAIN_PANEL_WIDTH, i)
@@ -602,7 +602,7 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 		self.startButton.SetDisableVisual("d:/ymir work/ui/switchbot/btn_big_03.sub")
 		self.startButton.SetWindowVerticalAlignCenter()
 		self.startButton.SetWindowHorizontalAlignCenter()
-		self.startButton.SetPosition(-self.startButton.GetWidth() / 2, 0)
+		self.startButton.SetPosition(-self.startButton.GetWidth() // 2, 0)
 		self.startButton.SetText(localeInfo.SWITCHBOT_START)
 		self.startButton.Show()	
 		
@@ -614,7 +614,7 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 		self.stopButton.SetDisableVisual("d:/ymir work/ui/switchbot/btn_big_03.sub")
 		self.stopButton.SetWindowVerticalAlignCenter()
 		self.stopButton.SetWindowHorizontalAlignCenter()
-		self.stopButton.SetPosition(self.stopButton.GetWidth() / 2 + 20, 0)
+		self.stopButton.SetPosition(self.stopButton.GetWidth() // 2 + 20, 0)
 		self.stopButton.SetText(localeInfo.SWITCHBOT_STOP)
 		self.stopButton.Show()		
 		
@@ -691,12 +691,12 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 			self.configurationSaveWindow.Open()
 			
 	def SetItemToolTip(self, tooltipItem):
-		for i in xrange(switchbot.SLOT_COUNT):
+		for i in range(switchbot.SLOT_COUNT):
 			self.itemTabs[i].SetItemToolTip(tooltipItem)
 			
 	def __AnyAttributeConfigured(self):
-		for i in xrange(switchbot.ALTERNATIVE_COUNT):
-			for j in xrange(ATTR_SLOT_COUNT):
+		for i in range(switchbot.ALTERNATIVE_COUNT):
+			for j in range(ATTR_SLOT_COUNT):
 				(type, value) = switchbot.GetAttribute(self.selectedSlot, i, j)
 				if type and value:
 					return True
@@ -717,7 +717,7 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 		itemTab.RefreshItemSlot()
 		
 	def __RefreshItemSlots(self):
-		for i in xrange(switchbot.SLOT_COUNT):
+		for i in range(switchbot.SLOT_COUNT):
 			itemTab = self.itemTabs.get(i, None)
 			if not itemTab:
 				continue
@@ -731,7 +731,7 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 			self.alternativePanel.Show()
 			
 	def __RefreshAttributeRows(self):
-		for i in xrange(ATTR_SLOT_COUNT):
+		for i in range(ATTR_SLOT_COUNT):
 			row = self.attrDict.get(i, None)
 			if not row:
 				continue
@@ -763,8 +763,8 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 	def __ClearAttributes(self):
 		
 	
-		for index, row in self.attrDict.iteritems():
-			for alternative in xrange(switchbot.ALTERNATIVE_COUNT):
+		for index, row in self.attrDict.items():
+			for alternative in range(switchbot.ALTERNATIVE_COUNT):
 				row.RefreshAttributeRow(self.selectedSlot, alternative, index)
 		
 	def __OnAttributeUpdate(self, attrIdx):
@@ -791,20 +791,20 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 		elif mouseX - width/2 < 0:
 			xPos = 0
 		else:
-			xPos = mouseX - width/2
+			xPos = mouseX - width//2
 			
 		if mouseY + height/2 > wndMgr.GetScreenHeight():
 			yPos = wndMgr.GetScreenHeight() - height
 		elif mouseY - height/2 < 0:
 			yPos = 0
 		else:
-			yPos = mouseY - height/2
+			yPos = mouseY - height//2
 
 		wnd.SetPosition(xPos, yPos)	
 				
 		firstAttrType = player.GetItemAttribute(player.SWITCHBOT, self.selectedSlot, 0)[0]
 		if firstAttrType in ADDON_TYPES.keys():
-			for addonType, maxValue in ADDON_TYPES.iteritems():
+			for addonType, maxValue in ADDON_TYPES.items():
 				affectString = GetAffectString(addonType, maxValue)
 				if not affectString:
 					continue
@@ -813,7 +813,7 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 		
 		attributes = switchbot.GetAttributesForSet(self.selectedSlot)
 		
-		selectedAttributes = [switchbot.GetAttribute(self.selectedSlot, self.alternative, attrIndex)[0] for attrIndex in xrange(ATTR_SLOT_COUNT)]
+		selectedAttributes = [switchbot.GetAttribute(self.selectedSlot, self.alternative, attrIndex)[0] for attrIndex in range(ATTR_SLOT_COUNT)]
 		
 		for (type, value) in attributes:
 			if type in selectedAttributes:
@@ -864,7 +864,7 @@ class SwitchbotWindow(ui.BoardWithTitleBar):
 			return
 			
 		var = switchbot.GetAttributesForSet(slot)
-		attributes = [var[i][0] for i in xrange(len(var))]
+		attributes = [var[i][0] for i in range(len(var))]
 		
 		firstAttrType = player.GetItemAttribute(player.SWITCHBOT, slot, 0)[0]
 		if firstAttrType in ADDON_TYPES.keys():
@@ -1047,7 +1047,7 @@ class SearchListWindow(ui.BoardWithTitleBar):
 		self.listBox.SetScrollBar(self.scrollBar)
 		self.listBox.Show()
 		
-		buttonWidth = width / 2 - 20
+		buttonWidth = width // 2 - 20
 		
 		self.acceptButton = ui.Button()
 		self.acceptButton.SetParent(self)
@@ -1057,7 +1057,7 @@ class SearchListWindow(ui.BoardWithTitleBar):
 		self.acceptButton.SetDisableVisual("d:/ymir work/ui/public/large_button_03.sub")
 		self.acceptButton.SetWindowVerticalAlignBottom()
 		self.acceptButton.SetWindowHorizontalAlignCenter()
-		self.acceptButton.SetPosition(-buttonWidth / 2 - 5, 29)
+		self.acceptButton.SetPosition(-buttonWidth // 2 - 5, 29)
 		self.acceptButton.SetText(localeInfo.UI_ACCEPT)
 		self.acceptButton.SetEvent(ui.__mem_func__(self.__OnAccept))
 		self.acceptButton.Show()
@@ -1070,7 +1070,7 @@ class SearchListWindow(ui.BoardWithTitleBar):
 		self.cancelButton.SetDisableVisual("d:/ymir work/ui/public/large_button_03.sub")
 		self.cancelButton.SetWindowVerticalAlignBottom()
 		self.cancelButton.SetWindowHorizontalAlignCenter()
-		self.cancelButton.SetPosition(buttonWidth / 2 - 5, 29)
+		self.cancelButton.SetPosition(buttonWidth // 2 - 5, 29)
 		self.cancelButton.SetText(localeInfo.UI_CANCEL)
 		self.cancelButton.SetEvent(ui.__mem_func__(self.__OnCancel))
 		self.cancelButton.Show()
@@ -1082,7 +1082,7 @@ class SearchListWindow(ui.BoardWithTitleBar):
 		self.__RefreshListBox()
 		
 	def __GetViewItemCount(self):
-		return self.container.GetHeight() / self.SearchListItem.LIST_ITEM_HEIGHT
+		return self.container.GetHeight() // self.SearchListItem.LIST_ITEM_HEIGHT
 		
 	def __AdjustScrollbar(self):
 		if len(self.listBox.GetItems()) > self.__GetViewItemCount():
@@ -1106,7 +1106,7 @@ class SearchListWindow(ui.BoardWithTitleBar):
 		self.listBox.RemoveAllItems()		
 		
 	def AppendItem(self, key, value = ""):
-		if self.listItems.has_key(key):
+		if key in self.listItems:
 			return
 			
 		if not value:
@@ -1118,7 +1118,7 @@ class SearchListWindow(ui.BoardWithTitleBar):
 	def __RefreshListBox(self):
 		self.listBox.RemoveAllItems()
 		
-		keys = sorted(self.listItems.iterkeys())
+		keys = sorted(self.listItems.keys())
 		
 		for key in keys:
 			dict = self.listItems.get(key, None)
@@ -1377,7 +1377,7 @@ class ConfigurationWindow(ui.BoardWithTitleBar):
 			
 		self.__AdjustScrollbar()
 			
-		for key in self.dict.iterkeys():
+		for key in self.dict.keys():
 			config = self.dict.get(key, None)
 			if not config:
 				continue
@@ -1403,9 +1403,9 @@ class ConfigurationWindow(ui.BoardWithTitleBar):
 			return
 			
 		selectedSlot = self.wndSwitchbot.GetSelectedSlot()			
-		for alternativeIdx in xrange(len(config["alternatives"])):
+		for alternativeIdx in range(len(config["alternatives"])):
 			alternative = config["alternatives"][alternativeIdx]
-			for attrIdx in xrange(len(alternative)):
+			for attrIdx in range(len(alternative)):
 				(attrType, attrValue) = alternative[attrIdx]
 				self.wndSwitchbot.SetSavedAttribute(selectedSlot, alternativeIdx, attrIdx, attrType, attrValue)
 		
@@ -1435,7 +1435,7 @@ class ConfigurationWindow(ui.BoardWithTitleBar):
 		self.SetPosition(x - self.GetWidth(), y)
 		
 	def __GetViewItemCount(self):
-		return self.container.GetHeight() / (self.ConfigurationLine.LIST_ITEM_HEIGHT + 1)
+		return self.container.GetHeight() // (self.ConfigurationLine.LIST_ITEM_HEIGHT + 1)
 		
 	def __AdjustScrollbar(self):
 		if len(self.dict) > self.__GetViewItemCount():
@@ -1459,7 +1459,7 @@ class ConfigurationWindow(ui.BoardWithTitleBar):
 		
 	def __GetNewKey(self):
 		key = 0
-		while self.dict.has_key(key):
+		while key in self.dict:
 			key += 1
 			
 		return key
@@ -1467,8 +1467,8 @@ class ConfigurationWindow(ui.BoardWithTitleBar):
 	def __BuildDict(self, slot, name):	
 		key = self.__GetNewKey()
 		alternatives = []
-		for alternative in xrange(switchbot.ALTERNATIVE_COUNT):
-			attributes = [switchbot.GetAttribute(slot, alternative, i) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+		for alternative in range(switchbot.ALTERNATIVE_COUNT):
+			attributes = [switchbot.GetAttribute(slot, alternative, i) for i in range(player.ATTRIBUTE_SLOT_MAX_NUM)]
 			alternatives.append(attributes)
 		
 		new_dict = {

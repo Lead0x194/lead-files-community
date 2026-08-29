@@ -1,3 +1,4 @@
+from __future__ import print_function
 import ui
 import localeInfo
 import chr
@@ -49,7 +50,7 @@ class LovePointImage(ui.ExpandedImageBox):
 		if 0 == self.lovePoint:
 			loveGrade = 0
 		else:
-			loveGrade = self.lovePoint / 25 + 1
+			loveGrade = self.lovePoint // 25 + 1
 		fileName = self.FILE_DICT.get(loveGrade, self.FILE_PATH+"00.dds")
 
 		try:
@@ -79,9 +80,9 @@ class HorseImage(ui.ExpandedImageBox):
 
 	FILE_DICT = {
 		00 : FILE_PATH+"00.dds",
-		01 : FILE_PATH+"00.dds",
-		02 : FILE_PATH+"00.dds",
-		03 : FILE_PATH+"00.dds",
+		1 : FILE_PATH+"00.dds",
+		2 : FILE_PATH+"00.dds",
+		3 : FILE_PATH+"00.dds",
 		10 : FILE_PATH+"10.dds",
 		11 : FILE_PATH+"11.dds",
 		12 : FILE_PATH+"12.dds",
@@ -107,7 +108,7 @@ class HorseImage(ui.ExpandedImageBox):
 		if 0 == level:
 			return 0
 
-		return (level-1)/10 + 1
+		return (level-1)//10 + 1
 
 	def SetState(self, level, health, battery):
 		#self.textLineList=[]
@@ -119,7 +120,7 @@ class HorseImage(ui.ExpandedImageBox):
 				grade = self.__GetHorseGrade(level)
 				self.__AppendText(localeInfo.LEVEL_LIST[grade])
 			except IndexError:
-				print "HorseImage.SetState(level=%d, health=%d, battery=%d) - Unknown Index" % (level, health, battery)
+				print("HorseImage.SetState(level=%d, health=%d, battery=%d) - Unknown Index" % (level, health, battery))
 				return
 
 			try:
@@ -127,7 +128,7 @@ class HorseImage(ui.ExpandedImageBox):
 				if len(healthName)>0:
 					self.__AppendText(healthName)
 			except IndexError:
-				print "HorseImage.SetState(level=%d, health=%d, battery=%d) - Unknown Index" % (level, health, battery)
+				print("HorseImage.SetState(level=%d, health=%d, battery=%d) - Unknown Index" % (level, health, battery))
 				return
 
 			if health>0:
@@ -137,12 +138,12 @@ class HorseImage(ui.ExpandedImageBox):
 			try:
 				fileName=self.FILE_DICT[health*10+battery]
 			except KeyError:
-				print "HorseImage.SetState(level=%d, health=%d, battery=%d) - KeyError" % (level, health, battery)
+				print("HorseImage.SetState(level=%d, health=%d, battery=%d) - KeyError" % (level, health, battery))
 
 			try:
 				self.LoadImage(fileName)
 			except:
-				print "HorseImage.SetState(level=%d, health=%d, battery=%d) - LoadError %s" % (level, health, battery, fileName)
+				print("HorseImage.SetState(level=%d, health=%d, battery=%d) - LoadError %s" % (level, health, battery, fileName))
 
 		self.SetScale(0.7, 0.7)
 
@@ -207,7 +208,7 @@ class AutoPotionImage(ui.ExpandedImageBox):
 		self.__Refresh()
 
 	def __Refresh(self):
-		print "__Refresh"
+		print("__Refresh")
 	
 		isActivated, currentAmount, totalAmount, slotIndex = player.GetAutoPotionInfo(self.potionType)
 		
@@ -225,7 +226,7 @@ class AutoPotionImage(ui.ExpandedImageBox):
 		fmt = self.filePath + "%.2d.dds"
 		fileName = fmt % grade
 		
-		print self.potionType, amountPercent, fileName
+		print(self.potionType, amountPercent, fileName)
 
 		try:
 			self.LoadImage(fileName)
@@ -283,7 +284,7 @@ class AffectImage(ui.ExpandedImageBox):
 			
 		self.toolTipText.SetText(text)
 		w, h = self.toolTipText.GetTextSize()
-		self.toolTipText.SetPosition(max(0, x + self.GetWidth()/2 - w/2), y)
+		self.toolTipText.SetPosition(max(0, x + self.GetWidth()//2 - w//2), y)
 
 	def SetDescription(self, description):
 		self.description = description
@@ -456,7 +457,7 @@ class AffectShower(ui.Window):
 
 	def BINARY_NEW_AddAffect(self, type, pointIdx, value, duration):
 
-		print "BINARY_NEW_AddAffect", type, pointIdx, value, duration
+		print("BINARY_NEW_AddAffect", type, pointIdx, value, duration)
 
 		if type < 500:
 			return
@@ -466,10 +467,10 @@ class AffectShower(ui.Window):
 		else:
 			affect = type
 
-		if self.affectImageDict.has_key(affect):
+		if affect in self.affectImageDict:
 			return
 
-		if not self.AFFECT_DATA_DICT.has_key(affect):
+		if affect not in self.AFFECT_DATA_DICT:
 			return
 
 		## For Dragon God's Blessing and Sage's Lesson, set Duration to 0.
@@ -512,8 +513,8 @@ class AffectShower(ui.Window):
 				self.affectImageDict[affect] = image
 				self.__ArrangeImageList()
 				
-			except Exception, e:
-				print "except Aff auto potion affect ", e
+			except Exception as e:
+				print("except Aff auto potion affect ", e)
 				pass				
 			
 		else:
@@ -521,7 +522,7 @@ class AffectShower(ui.Window):
 				description = description(float(value))
 
 			try:
-				print "Add affect %s" % affect
+				print("Add affect %s" % affect)
 				image = AffectImage()
 				image.SetParent(self)
 				image.LoadImage(filename)
@@ -546,8 +547,8 @@ class AffectShower(ui.Window):
 				image.Show()
 				self.affectImageDict[affect] = image
 				self.__ArrangeImageList()
-			except Exception, e:
-				print "except Aff affect ", e
+			except Exception as e:
+				print("except Aff affect ", e)
 				pass
 
 	def BINARY_NEW_RemoveAffect(self, type, pointIdx):
@@ -556,7 +557,7 @@ class AffectShower(ui.Window):
 		else:
 			affect = type
 	
-		print "Remove Affect %s %s" % ( type , pointIdx )
+		print("Remove Affect %s %s" % ( type , pointIdx ))
 		self.__RemoveAffect(affect)
 		self.__ArrangeImageList()
 
@@ -620,7 +621,7 @@ class AffectShower(ui.Window):
 
 	def __AppendAffect(self, affect):
 
-		if self.affectImageDict.has_key(affect):
+		if affect in self.affectImageDict:
 			return
 
 		try:
@@ -658,11 +659,11 @@ class AffectShower(ui.Window):
 			self.autoPotionImageHP.Hide()
 		"""
 			
-		if not self.affectImageDict.has_key(affect):
-			print "__RemoveAffect %s ( No Affect )" % affect
+		if affect not in self.affectImageDict:
+			print("__RemoveAffect %s ( No Affect )" % affect)
 			return
 
-		print "__RemoveAffect %s ( Affect )" % affect
+		print("__RemoveAffect %s ( Affect )" % affect)
 		del self.affectImageDict[affect]
 		
 		self.__ArrangeImageList()
@@ -705,6 +706,6 @@ class AffectShower(ui.Window):
 						
 					if not image.IsSkillAffect():
 						image.UpdateDescription()
-		except Exception, e:
-			print "AffectShower::OnUpdate error : ", e
+		except Exception as e:
+			print("AffectShower::OnUpdate error : ", e)
 

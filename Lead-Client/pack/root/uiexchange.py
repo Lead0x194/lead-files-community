@@ -1,3 +1,4 @@
+from __future__ import print_function
 import player
 import exchange
 import net
@@ -65,7 +66,7 @@ class ExchangeDialog(ui.ScriptWindow):
 		self.GetChild("TitleBar").SetCloseEvent(net.SendExchangeExitPacket)
 
 	def Destroy(self):
-		print "---------------------------------------------------------------------------- DESTROY EXCHANGE"
+		print("---------------------------------------------------------------------------- DESTROY EXCHANGE")
 		self.ClearDictionary()
 		self.dlgPickMoney.Destroy()
 		self.dlgPickMoney = 0
@@ -151,7 +152,7 @@ class ExchangeDialog(ui.ScriptWindow):
 			net.SendExchangeElkAddPacket(money)
 
 	def RefreshOwnerSlot(self):
-		for i in xrange(exchange.EXCHANGE_ITEM_MAX_NUM):
+		for i in range(exchange.EXCHANGE_ITEM_MAX_NUM):
 			itemIndex = exchange.GetItemVnumFromSelf(i)
 			itemCount = exchange.GetItemCountFromSelf(i)
 			if 1 == itemCount:
@@ -160,7 +161,7 @@ class ExchangeDialog(ui.ScriptWindow):
 		self.OwnerSlot.RefreshSlot()
 
 	def RefreshTargetSlot(self):
-		for i in xrange(exchange.EXCHANGE_ITEM_MAX_NUM):
+		for i in range(exchange.EXCHANGE_ITEM_MAX_NUM):
 			itemIndex = exchange.GetItemVnumFromTarget(i)
 			itemCount = exchange.GetItemCountFromTarget(i)
 			if 1 == itemCount:

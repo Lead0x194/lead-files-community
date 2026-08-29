@@ -1,3 +1,4 @@
+from __future__ import print_function
 import ui
 import snd
 import systemSetting
@@ -27,7 +28,7 @@ class OptionDialog(ui.ScriptWindow):
 
 	def __del__(self):
 		ui.ScriptWindow.__del__(self)
-		print " -------------------------------------- DELETE GAME OPTION DIALOG"
+		print(" -------------------------------------- DELETE GAME OPTION DIALOG")
 
 	def __Initialize(self):
 		self.titleBar = 0
@@ -44,7 +45,7 @@ class OptionDialog(ui.ScriptWindow):
 		self.ClearDictionary()
 
 		self.__Initialize()
-		print " -------------------------------------- DESTROY GAME OPTION DIALOG"
+		print(" -------------------------------------- DESTROY GAME OPTION DIALOG")
 	
 	def __Load_LoadScript(self, fileName):
 		try:
@@ -253,7 +254,7 @@ class OptionDialog(ui.ScriptWindow):
 	def __SetPKMode(self, mode):
 		for btn in self.pvpModeButtonDict.values():
 			btn.SetUp()
-		if self.pvpModeButtonDict.has_key(mode):
+		if mode in self.pvpModeButtonDict:
 			self.pvpModeButtonDict[mode].Down()
 
 	def __SetPeacePKMode(self):
@@ -329,7 +330,7 @@ class OptionDialog(ui.ScriptWindow):
 
 	def RefreshBlock(self):
 		global blockMode
-		for i in xrange(len(self.blockButtonList)):
+		for i in range(len(self.blockButtonList)):
 			if 0 != (blockMode & (1 << i)):
 				self.blockButtonList[i].Down()
 			else:
