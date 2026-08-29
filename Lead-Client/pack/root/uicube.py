@@ -1,3 +1,5 @@
+# -*- coding: latin-1 -*-
+from __future__ import print_function
 import ui
 import net
 import mouseModule
@@ -219,10 +221,10 @@ class CubeWindow(ui.ScriptWindow):
 		self.tooltipItem.SetCannotUseItemForceSetDisableColor(True)
 
 		metinSlot = []
-		for i in xrange(player.METIN_SOCKET_MAX_NUM):
+		for i in range(player.METIN_SOCKET_MAX_NUM):
 			metinSlot.append(0)
 		attrSlot = []
-		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+		for i in range(player.ATTRIBUTE_SLOT_MAX_NUM):
 			attrSlot.append((0, 0))
 
 		#print "resultIndex, firstSlotIndex", resultIndex, self.firstSlotIndex
@@ -250,7 +252,7 @@ class CubeWindow(ui.ScriptWindow):
 			itemSizeX, itemSizeY = item.GetItemSize()
 
 			if player.GetItemCountByVnum(itemVnum) >= itemCount:
-				for i in xrange(player.INVENTORY_SLOT_COUNT):
+				for i in range(player.INVENTORY_SLOT_COUNT):
 					vnum = player.GetItemIndex(i)
 					count= player.GetItemCount(i)
 
@@ -266,10 +268,10 @@ class CubeWindow(ui.ScriptWindow):
 						#print "Cube Status : ", self.cubeItemInfo
 
 						bCanAddSlot = False
-						for slotPos in xrange(self.cubeSlot.GetSlotCount()):
+						for slotPos in range(self.cubeSlot.GetSlotCount()):
 							if not slotPos in self.cubeItemInfo:
 								upperColumnItemSizeY = -1
-								currentSlotLine = int(slotPos / self.CUBE_SLOT_COUNTX)
+								currentSlotLine = int(slotPos // self.CUBE_SLOT_COUNTX)
 								cubeColumn = int(slotPos % self.CUBE_SLOT_COUNTX)
 
 
@@ -391,7 +393,7 @@ class CubeWindow(ui.ScriptWindow):
 		[[x.ClearSlot(0) for x in i] for i in self.materialSlots]
 
 	def Refresh(self):
-		for slotPos in xrange(self.cubeSlot.GetSlotCount()):
+		for slotPos in range(self.cubeSlot.GetSlotCount()):
 
 			if not slotPos in self.cubeItemInfo:
 				self.cubeSlot.ClearSlot(slotPos)
@@ -423,7 +425,7 @@ class CubeWindow(ui.ScriptWindow):
 
 			adjustLocalY = 0
 			if sizeY < 3:
-				adjustLocalY = int(32 / sizeY)
+				adjustLocalY = int(32 // sizeY)
 
 			currentSlot.SetPosition(localX, 0 + adjustLocalY)
 
@@ -433,7 +435,7 @@ class CubeWindow(ui.ScriptWindow):
 
 		#print "self.cubeMaterialInfos : ", self.cubeMaterialInfos
 		if self.firstSlotIndex in self.cubeMaterialInfos:
-			for i in xrange(self.RESULT_SLOT_COUNT):
+			for i in range(self.RESULT_SLOT_COUNT):
 				materialList = self.cubeMaterialInfos[self.firstSlotIndex + i]
 				#print "Refresh ::: ", materialList
 				j = 0
@@ -453,11 +455,11 @@ class CubeWindow(ui.ScriptWindow):
 
 						adjustLocalY = 0
 						if sizeY < 3:
-							adjustLocalY = int(32 / sizeY)
+							adjustLocalY = int(32 // sizeY)
 
 						currentSlot.SetPosition(localX, 0 + adjustLocalY)
 
-				for k in xrange(5):
+				for k in range(5):
 					if k >= j:
 						self.materialSlots[i][k].ClearSlot(0)
 
@@ -470,7 +472,7 @@ class CubeWindow(ui.ScriptWindow):
 		if self.isUsable:
 			self.isUsable = False
 
-			print "ť�� �ݱ�"
+			print("ť�� �ݱ�")
 			net.SendChatPacket("/cube close")
 
 		self.Close()
@@ -480,7 +482,7 @@ class CubeWindow(ui.ScriptWindow):
 			"�� ť��"
 			return
 		
-		print "ť�� ���� ����"		
+		print("ť�� ���� ����")		
 		#for invenPos in self.cubeItemInfo.values():
 		#	net.SendChatPacket("/cube add " + str(invenPos))
 		net.SendChatPacket("/cube make")			
@@ -496,7 +498,7 @@ class CubeWindow(ui.ScriptWindow):
 			if player.SLOT_TYPE_INVENTORY != attachedSlotType:
 				return
 
-			for slotPos, invenPos in self.cubeItemInfo.items():
+			for slotPos, invenPos in list(self.cubeItemInfo.items()):
 				if invenPos == attachedSlotPos:
 					del self.cubeItemInfo[slotPos]
 			
@@ -525,7 +527,7 @@ class CubeWindow(ui.ScriptWindow):
 
 	def __OnOverInItem(self, slotIndex):
 		if self.tooltipItem:
-			if self.cubeItemInfo.has_key(slotIndex):
+			if slotIndex in self.cubeItemInfo:
 				self.tooltipItem.SetInventoryItem(self.cubeItemInfo[slotIndex])
 
 	def __OnOverOutItem(self):

@@ -236,13 +236,13 @@ class BigBoard(ui.Bar):
 		if len(self.tipList) == 1:
 			checkTime, text = self.tipList[0]
 			(text_width, text_height) = self.textBar.GetTextExtent(text)
-			self.textBar.TextOut((500-text_width)/2, (self.STEP_HEIGHT-8-text_height)/2, text)
+			self.textBar.TextOut((500-text_width)//2, (self.STEP_HEIGHT-8-text_height)//2, text)
 
 		else:
 			index = 0
 			for checkTime, text in self.tipList:			
 				(text_width, text_height) = self.textBar.GetTextExtent(text)	 
-				self.textBar.TextOut((500-text_width)/2, index*self.LINE_HEIGHT, text)
+				self.textBar.TextOut((500-text_width)//2, index*self.LINE_HEIGHT, text)
 				index += 1
 
 	def SetTip(self, text):

@@ -29,7 +29,7 @@ def InsertChatInputSetWindow(wnd):
 	chatInputSetList.append(wnd)
 def RefreshChatMode():
 	global chatInputSetList
-	map(lambda wnd:wnd.OnRefreshChatMode(), chatInputSetList)
+	list(map(lambda wnd:wnd.OnRefreshChatMode(), chatInputSetList))
 def DestroyChatInputSetWindow():
 	global chatInputSetList
 	chatInputSetList = []
@@ -803,7 +803,7 @@ class ChatWindow(ui.Window):
 			self.Refresh()
 
 		if self.curHeightBar != self.heightBar:
-			self.curHeightBar += (self.heightBar - self.curHeightBar) / 10
+			self.curHeightBar += (self.heightBar - self.curHeightBar) // 10
 
 		if self.boardState == chat.BOARD_STATE_EDIT:
 			grp.SetColor(self.BOARD_MIDDLE_COLOR)
@@ -1093,7 +1093,7 @@ class ChatLogWindow(ui.Window):
 			
 		self.chatInputSet.SetSize(self.GetWidth() - 20, 20)
 		self.chatInputSet.RefreshPosition()
-		self.chatInputSet.SetChatMax(self.GetWidth() / 8)
+		self.chatInputSet.SetChatMax(self.GetWidth() // 8)
 
 	def OnScroll(self):
 		self.scrollBarPos = self.scrollBar.GetPos()

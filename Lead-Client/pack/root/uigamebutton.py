@@ -1,3 +1,4 @@
+from __future__ import print_function
 import app
 import ui
 import player
@@ -15,7 +16,7 @@ class GameButtonWindow(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 			pyScrLoader.LoadScriptFile(self, filename)
-		except Exception, msg:
+		except Exception as msg:
 			import dbg
 			dbg.TraceError("GameButtonWindow.LoadScript - %s" % (msg))
 			app.Abort()
@@ -33,7 +34,7 @@ class GameButtonWindow(ui.ScriptWindow):
 
 			self.gameButtonDict["EXIT_OBSERVER"].SetEvent(ui.__mem_func__(self.__OnClickExitObserver))
 
-		except Exception, msg:
+		except Exception as msg:
 			import dbg
 			dbg.TraceError("GameButtonWindow.LoadScript - %s" % (msg))
 			app.Abort()
@@ -52,8 +53,8 @@ class GameButtonWindow(ui.ScriptWindow):
 	def SetButtonEvent(self, name, event):
 		try:
 			self.gameButtonDict[name].SetEvent(event)
-		except Exception, msg:
-			print "GameButtonWindow.LoadScript - %s" % (msg)
+		except Exception as msg:
+			print("GameButtonWindow.LoadScript - %s" % (msg))
 			app.Abort()
 			return
 

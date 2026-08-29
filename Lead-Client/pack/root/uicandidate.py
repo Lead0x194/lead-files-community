@@ -30,7 +30,7 @@ class VerticalCandidateBoard(ui.Board):
 		self.numberList = []
 		self.slotList = []
 
-		for y in xrange(yCount):
+		for y in range(yCount):
 
 			number = ui.ImageBox()
 			number.SetParent(self.BaseBar)
@@ -83,7 +83,7 @@ class VerticalCandidateBoard(ui.Board):
 		maxTextLength = 0
 		yCount = ime.GetCandidateCount()
 
-		for i in xrange(yCount):
+		for i in range(yCount):
 			text, length = ime.GetCandidate(i)
 			self.Append(text)
 
@@ -117,7 +117,7 @@ class KORCandidateWindow(ui.ScriptWindow):
 		self.candidateListBox.AppendItem(ui.CandidateListBox.Item(text))
 
 	def Refresh(self):
-		for i in xrange(9):
+		for i in range(9):
 			text, length = ime.GetCandidate(i)
 			self.Append(text)
 

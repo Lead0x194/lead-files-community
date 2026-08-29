@@ -1,3 +1,4 @@
+from __future__ import print_function
 import app
 import ui
 import localeInfo
@@ -37,7 +38,7 @@ class Item(ui.ListBoxEx.Item):
 
 class PopupDialog(ui.ScriptWindow):
 	def __init__(self, parent):
-		print "NEW POPUP WINDOW   ----------------------------------------------------------------------------"	
+		print("NEW POPUP WINDOW   ----------------------------------------------------------------------------")
 		ui.ScriptWindow.__init__(self)
 
 		self.__Load()
@@ -45,7 +46,7 @@ class PopupDialog(ui.ScriptWindow):
 
 	def __del__(self):
 		ui.ScriptWindow.__del__(self)
-		print "---------------------------------------------------------------------------- DELETE POPUP WINDOW"
+		print("---------------------------------------------------------------------------- DELETE POPUP WINDOW")
 
 	def __Load(self):
 		try:
@@ -76,7 +77,7 @@ class PopupDialog(ui.ScriptWindow):
 
 class FileListDialog(ui.ScriptWindow):
 	def __init__(self):
-		print "NEW LIST DIALOG   ----------------------------------------------------------------------------"
+		print("NEW LIST DIALOG   ----------------------------------------------------------------------------")
 		ui.ScriptWindow.__init__(self)
 
 		self.isLoaded=0
@@ -85,7 +86,7 @@ class FileListDialog(ui.ScriptWindow):
 
 	def __del__(self):
 		ui.ScriptWindow.__del__(self)
-		print "---------------------------------------------------------------------------- DELETE LIST DIALOG"
+		print("---------------------------------------------------------------------------- DELETE LIST DIALOG")
 
 	def Show(self):
 		if self.isLoaded==0:
