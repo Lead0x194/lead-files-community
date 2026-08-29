@@ -9,11 +9,6 @@ void CPythonGraphic::Destroy()
 {	
 }
 
-LPDIRECT3D9EX CPythonGraphic::GetD3D()
-{
-	return ms_lpd3d;
-}
-
 float CPythonGraphic::GetOrthoDepth()
 {
 	return m_fOrthoDepth;
@@ -123,13 +118,10 @@ void CPythonGraphic::RestoreViewport()
 
 void CPythonGraphic::SetGamma(float fGammaFactor)
 {
-	D3DCAPS9		d3dCaps;
 	D3DGAMMARAMP	NewRamp;
 	int				ui, val;
-	
-	ms_lpd3dDevice->GetDeviceCaps(&d3dCaps);
 
-	if (D3DCAPS2_FULLSCREENGAMMA != (d3dCaps.Caps2 & D3DCAPS2_FULLSCREENGAMMA))
+	if (!SupportsFullscreenGamma())
 		return;
 
 	for (int i = 0; i < 256; ++i)
@@ -151,7 +143,7 @@ void CPythonGraphic::SetGamma(float fGammaFactor)
 		NewRamp.blue[i] = (WORD) (val | (32768 * ui));
 	}
 
-	ms_lpd3dDevice->SetGammaRamp(0, D3DSGR_NO_CALIBRATION, &NewRamp);
+	SetDeviceGammaRamp(&NewRamp);
 }
 
 void GenScreenShotTag(const char* src, DWORD crc32, char* leaf, size_t leafLen)
@@ -607,7 +599,7 @@ void CPythonGraphic::RenderUpButton(float sx, float sy, float ex, float ey)
 
 DWORD CPythonGraphic::GetAvailableMemory()
 {
-	return ms_lpd3dDevice->GetAvailableTextureMem();
+	return GetAvailableTextureMemory();
 }
 
 CPythonGraphic::CPythonGraphic()
