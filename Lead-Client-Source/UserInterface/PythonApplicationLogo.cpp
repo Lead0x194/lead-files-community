@@ -113,19 +113,19 @@ int CPythonApplication::OnLogoUpdate()
 	{
 		m_bLogoError = true;
 
-		LPDIRECT3DTEXTURE9 tex = m_pLogoTex->GetD3DTexture();
-		D3DLOCKED_RECT rt;
-		ZeroMemory(&rt, sizeof(rt));
+		int iPitch = 0;
+		void* pvPixels = NULL;
 
 		// In case of failure, the texture is blanked out in black.
-		tex->LockRect(0, &rt, 0, 0);
-		BYTE* destb = static_cast<byte*>(rt.pBits);
+		if (!m_pLogoTex->Lock(&iPitch, &pvPixels, 0))
+			return 1;
+		BYTE* destb = static_cast<byte*>(pvPixels);
 		for(int a = 0; a < 4; a+= 4)
 		{
 			BYTE* dest = &destb[a];
 			dest[0] = 0; dest[1] = 0; dest[2] = 0; dest[3] = 0xff;
 		}
-		tex->UnlockRect(0);
+		m_pLogoTex->Unlock(0);
 
 		return 1;
 	}
@@ -158,18 +158,18 @@ int CPythonApplication::OnLogoUpdate()
 	}
 
 	// Are you ready? Copy it from the buffer to the texture.
-	LPDIRECT3DTEXTURE9 tex = m_pLogoTex->GetD3DTexture();
-	D3DLOCKED_RECT rt;
-	ZeroMemory(&rt, sizeof(rt));
+	int iPitch = 0;
+	void* pvPixels = NULL;
 
-	tex->LockRect(0, &rt, 0, 0);
-	BYTE* destb = static_cast<byte*>(rt.pBits);
+	if (!m_pLogoTex->Lock(&iPitch, &pvPixels, 0))
+		return 1;
+	BYTE* destb = static_cast<byte*>(pvPixels);
 	for(int a = 0; a < lBufferSize; a+= 4)
 	{
 		BYTE* src = &m_pCaptureBuffer[a]; BYTE* dest = &destb[a];
 		dest[0] = src[0]; dest[1] = src[1]; dest[2] = src[2]; dest[3] = 0xff;
 	}
-	tex->UnlockRect(0);
+	m_pLogoTex->Unlock(0);
 
 	// Check the status of the video (whether it is finished)
 	long evCode; LONG_PTR param1, param2;
