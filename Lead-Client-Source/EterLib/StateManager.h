@@ -252,9 +252,14 @@ class CStateManager : public CSingleton<CStateManager>
 		void	RestoreMaterial();
 		void	SetMaterial(const D3DMATERIAL9 * pMaterial);
 		void	GetMaterial(D3DMATERIAL9 * pMaterial);
+		BOOL	GetLightEnable(DWORD index);
 
 		void	SetLight(DWORD index, CONST D3DLIGHT9* pLight);
 		void	GetLight(DWORD index, D3DLIGHT9* pLight);
+
+		HRESULT	CreateVertexShader(CONST DWORD* pFunction, LPDIRECT3DVERTEXSHADER9* ppShader);
+		HRESULT	CreateVertexDeclaration(CONST D3DVERTEXELEMENT9* pVertexElements, LPDIRECT3DVERTEXDECLARATION9* ppDecl);
+		HRESULT	CreatePixelShader(CONST DWORD* pFunction, LPDIRECT3DPIXELSHADER9* ppShader);
 
 		// Renderstates
 		void	SaveRenderState(D3DRENDERSTATETYPE Type, DWORD dwValue);
@@ -331,6 +336,7 @@ class CStateManager : public CSingleton<CStateManager>
 		void SaveStreamSource(UINT StreamNumber, LPDIRECT3DVERTEXBUFFER9 pStreamData, UINT Stride);
 		void RestoreStreamSource(UINT StreamNumber);
 		void SetStreamSource(UINT StreamNumber, LPDIRECT3DVERTEXBUFFER9 pStreamData, UINT Stride);
+		UINT GetStreamStride(UINT StreamNumber) const { return m_CurrentState.m_StreamData[StreamNumber].m_Stride; }
 
 		void SaveIndices(LPDIRECT3DINDEXBUFFER9 pIndexData, UINT BaseVertexIndex);
 		void RestoreIndices();

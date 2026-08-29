@@ -13,6 +13,7 @@
     <ClCompile Include="EnvironmentMap.cpp" />
     <ClCompile Include="FileLoaderThread.cpp" />
     <ClCompile Include="GrpBase.cpp" />
+    <ClCompile Include="GraphicShaderPool.cpp" />
     <ClCompile Include="GrpCollisionObject.cpp" />
     <ClCompile Include="GrpColor.cpp" />
     <ClCompile Include="GrpColorInstance.cpp" />
@@ -85,6 +86,7 @@
     <ClInclude Include="FileLoaderThread.h" />
     <ClInclude Include="FuncObject.h" />
     <ClInclude Include="GrpBase.h" />
+    <ClInclude Include="GraphicShaderPool.h" />
     <ClInclude Include="GrpCollisionObject.h" />
     <ClInclude Include="GrpColor.h" />
     <ClInclude Include="GrpColorInstance.h" />
