@@ -322,8 +322,29 @@ bool CGraphicDevice::__IsInDriverBlackList(D3D_CAdapterInfo& rkD3DAdapterInfo)
 	return ret;
 }
 
+static CGraphicDevice::EBackend gs_eRequestedBackend = CGraphicDevice::BACKEND_DX9;
+static CGraphicDevice::EBackend gs_eActiveBackend = CGraphicDevice::BACKEND_DX9;
+
+void CGraphicDevice::SetRequestedBackend(EBackend eBackend)
+{
+	gs_eRequestedBackend = eBackend;
+}
+
+CGraphicDevice::EBackend CGraphicDevice::GetBackend()
+{
+	return gs_eActiveBackend;
+}
+
 int CGraphicDevice::Create(HWND hWnd, int iHres, int iVres, bool Windowed, int /*iBit*/, int iReflashRate)
 {
+	if (BACKEND_DX12 == gs_eRequestedBackend)
+	{
+		// The DX12 backend is not implemented yet; stay on DX9 so a stray
+		// config entry can never leave the player without a device.
+		TraceError("RENDERER dx12 requested but the DX12 backend is not available yet; using dx9.");
+	}
+	gs_eActiveBackend = BACKEND_DX9;
+
 	int iRet = CREATE_OK;
 
 	Destroy();
