@@ -554,10 +554,20 @@ void CPythonGraphic::RenderCoolTimeBox(float fxCenter, float fyCenter, float fRa
 		++iTriCount;
 	}
 
-	if (vertices.empty())
+	if (vertices.size() < 3)
 		return;
 
-	if (SetPDTStream(&vertices[0], static_cast<UINT>(vertices.size())))
+	// Fan expanded to a triangle list (DX12 has no fan topology).
+	std::vector<TPDTVertex> kListVertices;
+	kListVertices.reserve(3 * (vertices.size() - 2));
+	for (size_t k = 1; k + 1 < vertices.size(); ++k)
+	{
+		kListVertices.push_back(vertices[0]);
+		kListVertices.push_back(vertices[k]);
+		kListVertices.push_back(vertices[k + 1]);
+	}
+
+	if (SetPDTStream(&kListVertices[0], static_cast<UINT>(kListVertices.size())))
 	{
 		STATEMANAGER.SaveTextureStageState(0, D3DTSS_COLORARG1,	D3DTA_DIFFUSE);
 		STATEMANAGER.SaveTextureStageState(0, D3DTSS_COLOROP,	D3DTOP_SELECTARG1);
@@ -566,7 +576,7 @@ void CPythonGraphic::RenderCoolTimeBox(float fxCenter, float fyCenter, float fRa
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
 		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
-		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLEFAN, 0, iTriCount);
+		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLELIST, 0, static_cast<UINT>(kListVertices.size() / 3));
 		STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLORARG1);
 		STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLOROP);
 		STATEMANAGER.RestoreTextureStageState(0, D3DTSS_ALPHAARG1);
