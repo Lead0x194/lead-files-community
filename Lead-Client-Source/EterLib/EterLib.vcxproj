@@ -165,7 +165,6 @@
     <ClCompile Include="GrpObjectInstance.cpp" />
     <ClCompile Include="GrpRatioInstance.cpp" />
     <ClCompile Include="GrpScreen.cpp" />
-    <ClCompile Include="GrpShadowTexture.cpp" />
     <ClCompile Include="GrpSubImage.cpp" />
     <ClCompile Include="GrpText.cpp" />
     <ClCompile Include="GrpTextInstance.cpp" />
@@ -240,7 +239,6 @@
     <ClInclude Include="GrpObjectInstance.h" />
     <ClInclude Include="GrpRatioInstance.h" />
     <ClInclude Include="GrpScreen.h" />
-    <ClInclude Include="GrpShadowTexture.h" />
     <ClInclude Include="GrpSubImage.h" />
     <ClInclude Include="GrpText.h" />
     <ClInclude Include="GrpTextInstance.h" />
