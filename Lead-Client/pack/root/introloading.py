@@ -16,6 +16,18 @@ import playerSettingModule
 import stringCommander
 import emotion
 
+# Register at import time: when logging in directly on a dungeon map the map is
+# loaded before LoadData() runs, so registering there is too late for that login.
+background.RegisterDungeonMapName("metin2_map_spiderdungeon")
+background.RegisterDungeonMapName("metin2_map_monkeydungeon")
+background.RegisterDungeonMapName("metin2_map_monkeydungeon_02")
+background.RegisterDungeonMapName("metin2_map_monkeydungeon_03")
+background.RegisterDungeonMapName("metin2_map_deviltower1")
+# Block-built dungeons: hide the terrain under the blocks but keep object
+# heights - their floors are dungeon-block geometry above the heightmap.
+background.RegisterBlockDungeonMapName("metin2_map_spiderdungeon_02")
+background.RegisterBlockDungeonMapName("metin2_map_spiderdungeon_03")
+
 ####################################
 # Module loading distribution for faster execution
 ####################################

@@ -699,6 +699,11 @@ void CPythonBackground::RegisterDungeonMapName(const char * c_szMapName)
 	m_kSet_strDungeonMapName.insert(c_szMapName);
 }
 
+void CPythonBackground::RegisterBlockDungeonMapName(const char * c_szMapName)
+{
+	m_kSet_strBlockDungeonMapName.insert(c_szMapName);
+}
+
 CPythonBackground::TMapInfo* CPythonBackground::GlobalPositionToMapInfo(DWORD dwGlobalX, DWORD dwGlobalY)
 {
 	TMapInfoVector::iterator f = std::find_if(m_kVct_kMapInfo.begin(), m_kVct_kMapInfo.end(), FFindWarpMapName(dwGlobalX, dwGlobalY));
@@ -744,6 +749,15 @@ void CPythonBackground::Warp(DWORD dwX, DWORD dwY)
 
 		CMapOutdoor& rkMap=GetMapOutdoorRef();
 		rkMap.EnablePortal(TRUE);
+	}
+	else if (m_kSet_strBlockDungeonMapName.end() != m_kSet_strBlockDungeonMapName.find(m_strMapName))
+	{
+		// Block-built dungeon: the visible map is dungeon-block geometry laid over
+		// the heightmap, so hide the terrain (its dark shadow overlay leaks through
+		// at the room margins) but keep object heights - the floors are blocks
+		// sitting above the terrain, unlike the classic dungeon maps above.
+		CMapOutdoor& rkMap=GetMapOutdoorRef();
+		rkMap.SetVisiblePart(CMapOutdoor::PART_TERRAIN, false);
 	}
 
 	m_kSet_iShowingPortalID.clear();

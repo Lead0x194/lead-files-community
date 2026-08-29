@@ -511,6 +511,16 @@ PyObject * backgroundRegisterDungeonMapName(PyObject * poSelf, PyObject * poArgs
 	return Py_BuildNone();
 }
 
+PyObject * backgroundRegisterBlockDungeonMapName(PyObject * poSelf, PyObject * poArgs)
+{
+	char * szName;
+	if (!PyTuple_GetString(poArgs, 0, &szName))
+		return Py_BadArgument();
+
+	CPythonBackground::Instance().RegisterBlockDungeonMapName(szName);
+	return Py_BuildNone();
+}
+
 PyObject * backgroundVisibleGuildArea(PyObject * poSelf, PyObject * poArgs)
 {
 	CPythonBackground::Instance().VisibleGuildArea();
@@ -576,6 +586,7 @@ void initBackground()
 		{ "SetTransparentTree",					backgroundSetTransparentTree,				METH_VARARGS },
 		{ "SetXMasTree",						backgroundSetXMasTree,						METH_VARARGS },
 		{ "RegisterDungeonMapName",				backgroundRegisterDungeonMapName,			METH_VARARGS },
+		{ "RegisterBlockDungeonMapName",		backgroundRegisterBlockDungeonMapName,		METH_VARARGS },
 
 		{ "VisibleGuildArea",					backgroundVisibleGuildArea,					METH_VARARGS },
 		{ "DisableGuildArea",					backgroundDisableGuildArea,					METH_VARARGS },
