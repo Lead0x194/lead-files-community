@@ -1,16 +1,10 @@
-﻿#include "StdAfx.h"
-#include <algorithm>
-#include "../eterBase/Timer.h"
+#include "StdAfx.h"
 
 #include "GrpLightManager.h"
 #include "StateManager.h"
 
-float CLightBase::ms_fCurTime = 0.0f;
-
 CLightManager::CLightManager()
 {
-	m_v3CenterPosition			= D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-	m_dwLimitLightCount			= LIGHT_LIMIT_DEFAULT;
 }
 
 CLightManager::~CLightManager()
@@ -25,7 +19,7 @@ void CLightManager::Destroy()
 void CLightManager::Initialize()
 {
 	SetSkipIndex(1);
-	
+
 	m_NonUsingLightIDDeque.clear();
 
 	m_LightMap.clear();
@@ -74,73 +68,9 @@ CLight * CLightManager::GetLight(TLightID LightID)
 	return itor->second;
 }
 
-void CLightManager::SetCenterPosition(const D3DXVECTOR3 & c_rv3Position)
-{
-	m_v3CenterPosition = c_rv3Position;
-}
-
-void CLightManager::SetLimitLightCount(DWORD dwLightCount)
-{
-	m_dwLimitLightCount = dwLightCount;
-}
-
 void CLightManager::SetSkipIndex(DWORD dwSkipIndex)
 {
 	m_dwSkipIndex = dwSkipIndex;
-}
-
-struct LightComp
-{
-	bool operator () (const CLight * l, const CLight * r) const
-	{
-		return l->GetDistance() < r->GetDistance();
-	}
-};
-
-// NOTE: Rendering after FlushLight
-// After that, you must perform RestoreLight.
-void CLightManager::FlushLight()
-{
-	Update();
-
-	m_LightSortVector.clear();
-
-	// NOTE: Separate Dynamic and Static and use only Static whenever CenterPosition changes.
-	// It can be optimized by flushing again. - [levites]
-
-	// Extract the distance of lights and sort them.
-	TLightMap::iterator itor = m_LightMap.begin();
-
-	for (; itor != m_LightMap.end(); ++itor)
-	{
-		CLight * pLight = itor->second;
-
-		D3DXVECTOR3 v3LightPos(pLight->GetPosition());
-		D3DXVECTOR3 v3Distance(v3LightPos - m_v3CenterPosition);
-		pLight->SetDistance(D3DXVec3Length(&v3Distance));
-		m_LightSortVector.push_back(pLight);
-	}
-
-	// quick sort lights
-	std::sort(m_LightSortVector.begin(), m_LightSortVector.end(), LightComp());
-
-	// NOTE - Lights sorted by distance are limited to the number of limits and turned on.
-	STATEMANAGER.SaveRenderState(D3DRS_LIGHTING, TRUE);
-
-	for (DWORD k = 0; k < min(m_dwLimitLightCount, m_LightSortVector.size()); ++k)
-	{
-		m_LightSortVector[k]->Update();
-		m_LightSortVector[k]->SetDeviceLight(TRUE);
-
-	}
-}
-
-void CLightManager::RestoreLight()
-{
-	STATEMANAGER.RestoreRenderState(D3DRS_LIGHTING);
-
-	for (DWORD k = 0; k < min(m_dwLimitLightCount, m_LightSortVector.size()); ++k)
-		m_LightSortVector[k]->SetDeviceLight(FALSE);
 }
 
 TLightID CLightManager::NewLightID()
@@ -160,13 +90,6 @@ void CLightManager::ReleaseLightID(TLightID LightID)
 	m_NonUsingLightIDDeque.push_back(LightID);
 }
 
-void CLightManager::Update()
-{
-	//static DWORD s_dwStartTime = ELTimer_GetMSec();
-	//ms_fCurTime = float(ELTimer_GetMSec() - s_dwStartTime) / 1000.0f;
-	ms_fCurTime = CTimer::Instance().GetCurrentSecond();
-}
-
 //////////////////////////////////////////////////////////////////////////
 CLight::CLight()
 {
@@ -182,7 +105,6 @@ void CLight::Initialize()
 {
 	m_LightID	= 0;
 	m_isEdited	= TRUE;
-	m_fDistance	= 0.0f;
 
 	memset(&m_d3dLight, 0, sizeof(m_d3dLight));
 
@@ -194,7 +116,7 @@ void CLight::Initialize()
 
 void CLight::Clear()
 {
-	if (m_LightID) 
+	if (m_LightID)
 		SetDeviceLight(FALSE);
 	Initialize();
 }
@@ -225,7 +147,7 @@ void CLight::SetDiffuseColor(float fr, float fg, float fb, float fa)
 		&& m_d3dLight.Diffuse.b == fb
 		&& m_d3dLight.Diffuse.a == fa
 		)
-		return;	
+		return;
 	m_d3dLight.Diffuse.r = fr;
 	m_d3dLight.Diffuse.g = fg;
 	m_d3dLight.Diffuse.b = fb;
@@ -252,7 +174,7 @@ void CLight::SetRange(float fRange)
 {
 	if (m_d3dLight.Range == fRange)
 		return;
-	
+
 	m_d3dLight.Range = fRange;
 	m_isEdited = TRUE;
 }
@@ -271,75 +193,4 @@ void CLight::SetPosition(float fx, float fy, float fz)
 	m_d3dLight.Position.y = fy;
 	m_d3dLight.Position.z = fz;
 	m_isEdited = TRUE;
-}
-
-void CLight::SetDistance(float fDistance)
-{
-	m_fDistance = fDistance;
-}
-
-void CLight::BlendDiffuseColor(const D3DXCOLOR & c_rColor, float fBlendTime, float fDelayTime)
-{
-	D3DXCOLOR Color(m_d3dLight.Diffuse);
-	m_DiffuseColorTransitor.SetTransition(Color, c_rColor, ms_fCurTime + fDelayTime, fBlendTime);
-}
-
-void CLight::BlendAmbientColor(const D3DXCOLOR & c_rColor, float fBlendTime, float fDelayTime)
-{
-	D3DXCOLOR Color(m_d3dLight.Ambient);
-	m_AmbientColorTransitor.SetTransition(Color, c_rColor, ms_fCurTime + fDelayTime, fBlendTime);
-}
-
-void CLight::BlendRange(float fRange, float fBlendTime, float fDelayTime)
-{
-	m_RangeTransitor.SetTransition(m_d3dLight.Range, fRange, ms_fCurTime + fDelayTime, fBlendTime);
-}
-
-void CLight::Update()
-{
-	if (m_AmbientColorTransitor.isActiveTime(ms_fCurTime))
-	{
-		if (!m_AmbientColorTransitor.isActive())
-		{
-			m_AmbientColorTransitor.SetActive();
-			m_AmbientColorTransitor.SetSourceValue(m_d3dLight.Ambient);
-		}
-		else
-		{
-			D3DXCOLOR Color;
-
-			m_AmbientColorTransitor.GetValue(ms_fCurTime, &Color);
-			SetAmbientColor(Color.r, Color.g, Color.b, Color.a);
-		}
-	}
-
-	if (m_DiffuseColorTransitor.isActiveTime(ms_fCurTime))
-	{
-		if (!m_DiffuseColorTransitor.isActive())
-		{
-			m_DiffuseColorTransitor.SetActive();
-			m_DiffuseColorTransitor.SetSourceValue(m_d3dLight.Diffuse);
-		}
-		else
-		{
-			D3DXCOLOR Color;
-			m_DiffuseColorTransitor.GetValue(ms_fCurTime, &Color);
-			SetDiffuseColor(Color.r, Color.g, Color.b, Color.a);
-		}
-	}
-
-	if (m_RangeTransitor.isActiveTime(ms_fCurTime))
-	{
-		if (!m_RangeTransitor.isActive())
-		{
-			m_RangeTransitor.SetActive();
-			m_RangeTransitor.SetSourceValue(m_d3dLight.Range);
-		}
-		else
-		{
-			float fRange;
-			m_RangeTransitor.GetValue(ms_fCurTime, &fRange);
-			SetRange(fRange);
-		}
-	}
 }
