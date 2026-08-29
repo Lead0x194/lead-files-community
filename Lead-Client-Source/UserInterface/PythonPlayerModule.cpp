@@ -2119,7 +2119,7 @@ PyObject* playerSendDragonSoulRefine(PyObject* poSelf, PyObject* poArgs)
 
 			while (PyDict_Next(pDic, &pos, &key, &value))
 			{
-				int i = PyInt_AsLong(key);
+				int i = PyLong_AsLong(key);
 				if (i > DRAGON_SOUL_REFINE_WINDOW_MAX_NUM)
 					return Py_BuildException();
 

@@ -67,6 +67,12 @@ bool PyTuple_GetLong(PyObject* poArgs, int pos, long* ret)
 	if (!poItem)
 		return false;
 
+	if (PyFloat_Check(poItem))
+	{
+		*ret = (long)PyFloat_AsDouble(poItem);
+		return true;
+	}
+
 	*ret = PyLong_AsLong(poItem);
 	return true;
 }
@@ -133,11 +139,17 @@ bool PyTuple_GetInteger(PyObject* poArgs, int pos, int* ret)
 	if (!poItem)
 		return false;
 
+	if (PyFloat_Check(poItem))
+	{
+		*ret = (int)PyFloat_AsDouble(poItem);
+		return true;
+	}
+
 	// LLP64: C long is 32-bit on Win64, so PyLong_AsLong raises OverflowError for any
 	// Python int/long > LONG_MAX (e.g. 0x80000000-0xFFFFFFFF window-style flags and ARGB
 	// colors, which are normal 32-bit values). Read the low 32 bits with the masking
 	// variant (never raises) to match the 32-bit client's behavior for genuine ints.
-	*ret = (int)PyInt_AsUnsignedLongMask(poItem);
+	*ret = (int)PyLong_AsUnsignedLongMask(poItem);
 	return true;
 }
 
@@ -150,6 +162,12 @@ bool PyTuple_GetUnsignedLong(PyObject* poArgs, int pos, unsigned long* ret)
 	
 	if (!poItem)
 		return false;
+
+	if (PyFloat_Check(poItem))
+	{
+		*ret = (unsigned long)(long long)PyFloat_AsDouble(poItem);
+		return true;
+	}
 	
 	*ret = PyLong_AsUnsignedLong(poItem);
 	return true;
@@ -165,6 +183,12 @@ bool PyTuple_GetLongLong(PyObject* poArgs, int pos, long long* ret)
 	if (!poItem)
 		return false;
 
+	if (PyFloat_Check(poItem))
+	{
+		*ret = (long long)PyFloat_AsDouble(poItem);
+		return true;
+	}
+
 	*ret = PyLong_AsLongLong(poItem);
 	return true;
 }
@@ -178,9 +202,65 @@ bool PyTuple_GetUnsignedInteger(PyObject* poArgs, int pos, unsigned int* ret)
 	
 	if (!poItem)
 		return false;
+
+	if (PyFloat_Check(poItem))
+	{
+		*ret = (unsigned int)(long long)PyFloat_AsDouble(poItem);
+		return true;
+	}
 	
 	*ret = PyLong_AsUnsignedLong(poItem);
 	return true;
+}
+
+extern DWORD GetDefaultCodePage();
+
+static const char* __PyUnicode_AsCodePage(PyObject* poUnicode)
+{
+	static std::string s_astBuffer[16];
+	static int s_nBufferIndex = 0;
+
+	Py_ssize_t nWideLen = 0;
+	wchar_t* pwszText = PyUnicode_AsWideCharString(poUnicode, &nWideLen);
+	if (!pwszText)
+		return NULL;
+
+	std::string& rstBuffer = s_astBuffer[s_nBufferIndex];
+	s_nBufferIndex = (s_nBufferIndex + 1) % 16;
+
+	int nLen = WideCharToMultiByte(GetDefaultCodePage(), 0, pwszText, (int)nWideLen, NULL, 0, NULL, NULL);
+	rstBuffer.assign(nLen, '\0');
+	if (nLen > 0)
+		WideCharToMultiByte(GetDefaultCodePage(), 0, pwszText, (int)nWideLen, &rstBuffer[0], nLen, NULL, NULL);
+
+	PyMem_Free(pwszText);
+	return rstBuffer.c_str();
+}
+
+PyObject* PyUnicode_FromCodePage(const char* c_szText)
+{
+	if (!c_szText || !c_szText[0])
+		return PyUnicode_FromString("");
+
+	int nWideLen = MultiByteToWideChar(GetDefaultCodePage(), 0, c_szText, -1, NULL, 0);
+	if (nWideLen <= 1)
+		return PyUnicode_FromString("");
+
+	std::wstring stWide(nWideLen - 1, L'\0');
+	MultiByteToWideChar(GetDefaultCodePage(), 0, c_szText, -1, &stWide[0], nWideLen - 1);
+	return PyUnicode_FromWideChar(stWide.c_str(), nWideLen - 1);
+}
+
+PyObject* Py_InitModule(const char* c_szName, PyMethodDef* pMethodDef)
+{
+	PyObject* poModule = PyImport_AddModule(c_szName);
+	if (!poModule)
+		return NULL;
+
+	if (pMethodDef)
+		PyModule_AddFunctions(poModule, pMethodDef);
+
+	return poModule;
 }
 
 bool PyTuple_GetString(PyObject* poArgs, int pos, char** ret)
@@ -193,10 +273,14 @@ bool PyTuple_GetString(PyObject* poArgs, int pos, char** ret)
 	if (!poItem)
 		return false;
 
-	if (!PyString_Check(poItem)) 
+	if (!PyUnicode_Check(poItem))
 		return false;
 
-	*ret = PyString_AsString(poItem);
+	const char* c_szText = __PyUnicode_AsCodePage(poItem);
+	if (!c_szText)
+		return false;
+
+	*ret = (char*)c_szText;
 	return true;
 }
 
@@ -209,6 +293,12 @@ bool PyTuple_GetBoolean(PyObject* poArgs, int pos, bool* ret)
 
 	if (!poItem)
 		return false;
+
+	if (PyFloat_Check(poItem))
+	{
+		*ret = PyFloat_AsDouble(poItem) != 0.0;
+		return true;
+	}
 
 	*ret = PyLong_AsLong(poItem) ? true : false;
 	return true;

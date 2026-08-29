@@ -67,7 +67,7 @@ PyObject * packGet(PyObject * poSelf, PyObject * poArgs)
 			const void * pData = NULL;
 
 			if (CEterPackManager::Instance().Get(file,strFileName,&pData))
-				return Py_BuildValue("s#",pData, file.Size());
+				return Py_BuildValue("y#",pData, file.Size());
 		}
 	}
 

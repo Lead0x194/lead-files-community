@@ -7,11 +7,15 @@ sys.path.append("lib")
 class TraceFile:
 	def write(self, msg):
 		dbg.Trace(msg)
+	def flush(self):
+		pass
 
 class TraceErrorFile:
 	def write(self, msg):
 		dbg.TraceError(msg)
 		dbg.RegisterExceptionString(msg)
+	def flush(self):
+		pass
 
 class LogBoxFile:
 	def __init__(self):
@@ -38,14 +42,23 @@ sys.stderr = TraceErrorFile()
 #
 
 import marshal
-import imp
+import importlib.util
 import pack
+
+import time
+if not hasattr(time, 'clock'):
+	time.clock = time.perf_counter
+
+import builtins
+if not hasattr(builtins, 'reload'):
+	import importlib
+	builtins.reload = importlib.reload
 
 class pack_file_iterator(object):
 	def __init__(self, packfile):
 		self.pack_file = packfile
-		
-	def next(self):
+
+	def __next__(self):
 		tmp = self.pack_file.readline()
 		if tmp:
 			return tmp
@@ -58,9 +71,10 @@ class pack_file(object):
 	def __init__(self, filename, mode = 'rb'):
 		assert mode in ('r', 'rb')
 		if not pack.Exist(filename):
-			raise IOError, 'No file or directory'
+			raise IOError('No file or directory')
 		self.data = pack.Get(filename)
 		if mode == 'r':
+			self.data = self.data.decode('utf-8', 'replace')
 			self.data=_chr(10).join(self.data.split(_chr(13)+_chr(10)))
 
 	def __iter__(self):
@@ -68,18 +82,19 @@ class pack_file(object):
 
 	def read(self, len = None):
 		if not self.data:
-			return ''
+			return self.data[:0]
 		if len:
 			tmp = self.data[:len]
 			self.data = self.data[len:]
 			return tmp
 		else:
 			tmp = self.data
-			self.data = ''
+			self.data = self.data[:0]
 			return tmp
 
 	def readline(self):
-		return self.read(self.data.find(_chr(10))+1)
+		sep = _chr(10) if isinstance(self.data, str) else bytes((10,))
+		return self.read(self.data.find(sep)+1)
 
 	def readlines(self):
 		return [x for x in self]
@@ -97,7 +112,7 @@ def _process_result(code, fqname):
 	if is_module:
 		module = code
 	else:
-		module = imp.new_module(fqname)
+		module = _ModuleType(fqname)
 
 	# insert additional values into the module (before executing the code)
 	#module.__dict__.update(values)
@@ -107,7 +122,7 @@ def _process_result(code, fqname):
 
 	# execute the code within the module's namespace
 	if not is_module:
-		exec code in module.__dict__
+		exec(code, module.__dict__)
 
 	# fetch from sys.modules instead of returning module directly.
 	# also make module's __name__ agree with fqname, in case
@@ -118,23 +133,24 @@ def _process_result(code, fqname):
 
 module_do = lambda x:None
 
-def __pack_import(name,globals=None,locals=None,fromlist=None,level=-1):
-	if name in sys.modules:
-		return sys.modules[name]
+def __pack_import(name,globals=None,locals=None,fromlist=(),level=0):
+	if level > 0 or '.' in name:
+		return old_import(name,globals,locals,fromlist,level)
 
 	filename = name + '.py'
 
 	if pack.Exist(filename):
+		if name in sys.modules:
+			return sys.modules[name]
 		dbg.Trace('importing from pack %s\\n' % name)
 
-		newmodule = _process_result(compile(pack_file(filename,'r').read(),filename,'exec'),name)		
+		newmodule = _process_result(compile(pack_file(filename,'rb').read(),filename,'exec'),name)
 
 		module_do(newmodule)
 		return newmodule
-		#return imp.load_module(name, pack_file(filename,'r'),filename,('.py','r',imp.PY_SOURCE))
 	else:
 		dbg.Trace('importing from lib %s\\n' % name)
-		return old_import(name,globals,locals,fromlist)
+		return old_import(name,globals,locals,fromlist,level)
 
 def splitext(p):
 	root, ext = '', ''
@@ -172,20 +188,20 @@ class PythonExecutioner:
 		else: 
 			return 0 
 
-	def __LoadTextFile__(kPESelf, sFileName): 
-		sText=pack_open(sFileName,'r').read() 
-		return compile(sText, sFileName, "exec") 
+	def __LoadTextFile__(kPESelf, sFileName):
+		sText=pack_open(sFileName,'rb').read()
+		return compile(sText, sFileName, "exec")
 
-	def __LoadCompiledFile__(kPESelf, sFileName): 
+	def __LoadCompiledFile__(kPESelf, sFileName):
 		kFile=pack_open(sFileName)
 
-		if kFile.read(4)!=imp.get_magic(): 
-			raise 
+		if kFile.read(4)!=importlib.util.MAGIC_NUMBER:
+			raise
 
-		kFile.read(4) 
+		kFile.read(12)
 
-		kData=kFile.read() 
-		return marshal.loads(kData) 
+		kData=kFile.read()
+		return marshal.loads(kData)
 
 def execfile(fileName, dict): 
 	kPE=PythonExecutioner() 
@@ -195,8 +211,8 @@ def exec_add_module_do(mod):
 	global execfile
 	mod.__dict__['execfile'] = execfile
 
-import __builtin__
-__builtin__.__import__ = __pack_import
+import builtins
+builtins.__import__ = __pack_import
 module_do = exec_add_module_do
 
 """
@@ -271,7 +287,7 @@ def ShowException(excTitle):
 def RunMainScript(name):
 	try:		
 		execfile(name, __main__.__dict__)
-	except RuntimeError, msg:
+	except RuntimeError as msg:
 		msg = str(msg)
 
 		import locale

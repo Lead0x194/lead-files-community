@@ -19,10 +19,10 @@ PyObject* appShowWebPage(PyObject* poSelf, PyObject* poArgs)
 		return Py_BuildException();	
 
 	RECT rcWebPage;
-	rcWebPage.left=PyInt_AsLong(PyTuple_GetItem(poRect, 0));
-	rcWebPage.top=PyInt_AsLong(PyTuple_GetItem(poRect, 1));
-	rcWebPage.right=PyInt_AsLong(PyTuple_GetItem(poRect, 2));
-	rcWebPage.bottom=PyInt_AsLong(PyTuple_GetItem(poRect, 3));
+	rcWebPage.left=PyLong_AsLong(PyTuple_GetItem(poRect, 0));
+	rcWebPage.top=PyLong_AsLong(PyTuple_GetItem(poRect, 1));
+	rcWebPage.right=PyLong_AsLong(PyTuple_GetItem(poRect, 2));
+	rcWebPage.bottom=PyLong_AsLong(PyTuple_GetItem(poRect, 3));
 
 	CPythonApplication::Instance().ShowWebPage(
 		szWebPage,
@@ -38,10 +38,10 @@ PyObject* appMoveWebPage(PyObject* poSelf, PyObject* poArgs)
 		return Py_BuildException();	
 
 	RECT rcWebPage;
-	rcWebPage.left=PyInt_AsLong(PyTuple_GetItem(poRect, 0));
-	rcWebPage.top=PyInt_AsLong(PyTuple_GetItem(poRect, 1));
-	rcWebPage.right=PyInt_AsLong(PyTuple_GetItem(poRect, 2));
-	rcWebPage.bottom=PyInt_AsLong(PyTuple_GetItem(poRect, 3));
+	rcWebPage.left=PyLong_AsLong(PyTuple_GetItem(poRect, 0));
+	rcWebPage.top=PyLong_AsLong(PyTuple_GetItem(poRect, 1));
+	rcWebPage.right=PyLong_AsLong(PyTuple_GetItem(poRect, 2));
+	rcWebPage.bottom=PyLong_AsLong(PyTuple_GetItem(poRect, 3));
 
 	CPythonApplication::Instance().MoveWebPage(rcWebPage);
 	return Py_BuildNone();
@@ -353,7 +353,7 @@ PyObject* appGetFileList(PyObject* poSelf, PyObject* poArgs)
 	{	
 		do
 		{
-			PyObject* poFileName=PyString_FromString(wfd.cFileName) ;
+			PyObject* poFileName=PyUnicode_DecodeFSDefault(wfd.cFileName) ;
 			PyList_Append(poList, poFileName);
 		} 			
 		while (FindNextFile(hFind, &wfd));
