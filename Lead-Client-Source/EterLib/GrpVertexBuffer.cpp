@@ -134,13 +134,12 @@ bool CGraphicVertexBuffer::CreateDeviceObjects()
 	assert(m_lpd3dVB == NULL);
 
 	if (FAILED(
-		ms_lpd3dDevice->CreateVertexBuffer(
-		m_dwBufferSize, 
-		m_dwUsage, 
-		m_dwFVF, 
-		m_d3dPool, 
-		&m_lpd3dVB,
-		NULL)
+		CreateDeviceVertexBuffer(
+		m_dwBufferSize,
+		m_dwUsage,
+		m_dwFVF,
+		m_d3dPool,
+		&m_lpd3dVB)
 		))
 		return false;
 

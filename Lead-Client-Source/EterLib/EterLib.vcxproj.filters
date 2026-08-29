@@ -25,6 +25,7 @@
     <ClCompile Include="GrpImage.cpp" />
     <ClCompile Include="GrpImageInstance.cpp" />
     <ClCompile Include="GrpImageTexture.cpp" />
+    <ClCompile Include="ImageFileDecoder.cpp" />
     <ClCompile Include="GrpIndexBuffer.cpp" />
     <ClCompile Include="GrpLightManager.cpp" />
     <ClCompile Include="GrpMarkInstance.cpp" />
@@ -97,6 +98,7 @@
     <ClInclude Include="GrpImage.h" />
     <ClInclude Include="GrpImageInstance.h" />
     <ClInclude Include="GrpImageTexture.h" />
+    <ClInclude Include="ImageFileDecoder.h" />
     <ClInclude Include="GrpIndexBuffer.h" />
     <ClInclude Include="GrpLightManager.h" />
     <ClInclude Include="GrpMarkInstance.h" />
