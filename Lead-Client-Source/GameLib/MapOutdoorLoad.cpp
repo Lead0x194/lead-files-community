@@ -37,7 +37,7 @@ bool CMapOutdoor::Load(float x, float y, float z)
 	m_lOldReadX = -1;
 
 	// TODO: In SetRenderingDevice, you must pass the light properties from the Environment for the static light to work properly.
-	CSpeedTreeForestDirectX8::Instance().SetRenderingDevice(ms_lpd3dDevice);
+	CSpeedTreeForestDirectX8::Instance().SetRenderingDevice();
 
 	Update(x, y, z);
 
