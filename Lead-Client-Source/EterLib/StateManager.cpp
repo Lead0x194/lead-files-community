@@ -23,6 +23,31 @@ void CStateManager::SetLight(DWORD index, CONST D3DLIGHT9* pLight)
 	m_lpD3DDev->SetLight(index, pLight);
 }
 
+HRESULT CStateManager::Clear(DWORD Flags, D3DCOLOR Color, float Z, DWORD Stencil)
+{
+	return m_lpD3DDev->Clear(0, NULL, Flags, Color, Z, Stencil);
+}
+
+HRESULT CStateManager::SetViewport(const D3DVIEWPORT9* pViewport)
+{
+	return m_lpD3DDev->SetViewport(pViewport);
+}
+
+HRESULT CStateManager::GetViewport(D3DVIEWPORT9* pViewport)
+{
+	return m_lpD3DDev->GetViewport(pViewport);
+}
+
+void CStateManager::SaveViewport()
+{
+	m_lpD3DDev->GetViewport(&m_SavedViewport);
+}
+
+void CStateManager::RestoreViewport()
+{
+	m_lpD3DDev->SetViewport(&m_SavedViewport);
+}
+
 void CStateManager::GetLight(DWORD index, D3DLIGHT9* pLight)
 {
 	assert(index<8);

@@ -96,7 +96,7 @@ void CPythonGraphic::SetOmniLight()
 
 void CPythonGraphic::SetViewport(float fx, float fy, float fWidth, float fHeight)
 {
-	ms_lpd3dDevice->GetViewport(&m_backupViewport);
+	STATEMANAGER.SaveViewport();
 
 	D3DVIEWPORT9 ViewPort;
 	ViewPort.X = static_cast<DWORD>(fx);
@@ -106,10 +106,10 @@ void CPythonGraphic::SetViewport(float fx, float fy, float fWidth, float fHeight
 	ViewPort.MinZ = 0.0f;
 	ViewPort.MaxZ = 1.0f;
 	if (FAILED(
-		ms_lpd3dDevice->SetViewport(&ViewPort)
+		STATEMANAGER.SetViewport(&ViewPort)
 	))
 	{
-		Tracef("CPythonGraphic::SetViewport(%d, %d, %d, %d) - Error", 
+		Tracef("CPythonGraphic::SetViewport(%d, %d, %d, %d) - Error",
 			ViewPort.X, ViewPort.Y,
 			ViewPort.Width, ViewPort.Height
 		);
@@ -118,7 +118,7 @@ void CPythonGraphic::SetViewport(float fx, float fy, float fWidth, float fHeight
 
 void CPythonGraphic::RestoreViewport()
 {
-	ms_lpd3dDevice->SetViewport(&m_backupViewport);
+	STATEMANAGER.RestoreViewport();
 }
 
 void CPythonGraphic::SetGamma(float fGammaFactor)
@@ -614,8 +614,6 @@ CPythonGraphic::CPythonGraphic()
 {
 	m_lightColor = GetColor(1.0f, 1.0f, 1.0f);
 	m_darkColor = GetColor(0.0f, 0.0f, 0.0f);
-	
-	memset(&m_backupViewport, 0, sizeof(D3DVIEWPORT9));
 
 	m_fOrthoDepth = 1000.0f;
 }

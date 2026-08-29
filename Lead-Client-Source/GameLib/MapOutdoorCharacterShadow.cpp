@@ -116,19 +116,19 @@ bool CMapOutdoor::BeginRenderCharacterShadowToTexture()
 		bSuccess = false;
 	}
 
-	if (FAILED(ms_lpd3dDevice->Clear(0L, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, D3DCOLOR_XRGB(0xFF, 0xFF, 0xFF), 1.0f, 0)))
+	if (FAILED(STATEMANAGER.Clear(D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, D3DCOLOR_XRGB(0xFF, 0xFF, 0xFF), 1.0f, 0)))
 	{
 		TraceError("CMapOutdoor::BeginRenderCharacterShadowToTexture : Unable to Clear Render Target");
 		bSuccess = false;
 	}
 
-	if (FAILED(ms_lpd3dDevice->GetViewport(&m_BackupViewport)))
+	if (FAILED(STATEMANAGER.GetViewport(&m_BackupViewport)))
 	{
 		TraceError("CMapOutdoor::BeginRenderCharacterShadowToTexture : Unable to Save Window Viewport\n");
 		bSuccess = false;
 	}
 
-	if (FAILED(ms_lpd3dDevice->SetViewport(&m_ShadowMapViewport)))
+	if (FAILED(STATEMANAGER.SetViewport(&m_ShadowMapViewport)))
 	{
 		TraceError("CMapOutdoor::BeginRenderCharacterShadowToTexture : Unable to Set Shadow Map viewport\n");
 		bSuccess = false;
@@ -139,7 +139,7 @@ bool CMapOutdoor::BeginRenderCharacterShadowToTexture()
 
 void CMapOutdoor::EndRenderCharacterShadowToTexture()
 {
-	ms_lpd3dDevice->SetViewport(&m_BackupViewport);
+	STATEMANAGER.SetViewport(&m_BackupViewport);
 
 	ms_lpd3dDevice->SetDepthStencilSurface(m_lpBackupDepthSurface);
 	ms_lpd3dDevice->SetRenderTarget(0, m_lpBackupRenderTargetSurface);

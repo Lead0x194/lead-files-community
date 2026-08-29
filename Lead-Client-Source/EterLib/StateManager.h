@@ -256,6 +256,12 @@ class CStateManager : public CSingleton<CStateManager>
 		void	SetLight(DWORD index, CONST D3DLIGHT9* pLight);
 		void	GetLight(DWORD index, D3DLIGHT9* pLight);
 
+		HRESULT	Clear(DWORD Flags, D3DCOLOR Color, float Z, DWORD Stencil);
+		HRESULT	SetViewport(const D3DVIEWPORT9* pViewport);
+		HRESULT	GetViewport(D3DVIEWPORT9* pViewport);
+		void	SaveViewport();
+		void	RestoreViewport();
+
 		// Renderstates
 		void	SaveRenderState(D3DRENDERSTATETYPE Type, DWORD dwValue);
 		void	RestoreRenderState(D3DRENDERSTATETYPE Type);
@@ -354,6 +360,7 @@ class CStateManager : public CSingleton<CStateManager>
 		TStateID			m_DirtyStates;
 		bool				m_bForce;
 		bool				m_bScene;
+		D3DVIEWPORT9		m_SavedViewport;
 		DWORD				m_dwBestMinFilter;
 		DWORD				m_dwBestMagFilter;
 		LPDIRECT3DDEVICE9EX	m_lpD3DDev;
