@@ -168,11 +168,17 @@ void CEffectMeshInstance::OnRender()
 
 		Color.a = fAlpha * rFrameData.fVisibility;
 		STATEMANAGER.SetRenderState(D3DRS_TEXTUREFACTOR, DWORD(Color));
-		STATEMANAGER.SetFVF(D3DFVF_XYZ | D3DFVF_TEX1);
+		DWORD dwColorOp;
+		STATEMANAGER.GetTextureStageState(0, D3DTSS_COLOROP, &dwColorOp);
+		const bool bShaderPipeline = CGraphicBase::BeginEffectShader(dwColorOp);
+		if (!bShaderPipeline)
+			STATEMANAGER.SetFVF(D3DFVF_XYZ | D3DFVF_TEX1);
 		STATEMANAGER.DrawPrimitiveUP(D3DPT_TRIANGLELIST,
 									 rFrameData.dwIndexCount/3,
 									 &rFrameData.PDTVertexVector[0],
 									 sizeof(TPTVertex));
+		if (bShaderPipeline)
+			CGraphicBase::EndPDTShader();
 		// Render //
 	}
 }

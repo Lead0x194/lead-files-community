@@ -421,6 +421,7 @@ void CParticleSystemInstance::OnRender()
 	STATEMANAGER.SetRenderState(D3DRS_SRCBLEND, m_pParticleProperty->m_bySrcBlendType);
 	STATEMANAGER.SetRenderState(D3DRS_DESTBLEND, m_pParticleProperty->m_byDestBlendType);
 	STATEMANAGER.SetTextureStageState(0,D3DTSS_COLOROP,m_pParticleProperty->m_byColorOperationType);
+	const bool bShaderPipeline = CGraphicBase::BeginEffectShader(m_pParticleProperty->m_byColorOperationType);
 	if (m_pParticleProperty->m_byBillboardType < BILLBOARD_TYPE_2FACE)
 	{
 		if (!m_pParticleProperty->m_bAttachFlag)
@@ -460,6 +461,9 @@ void CParticleSystemInstance::OnRender()
 			ForEachParticleRendering(func);
 		}
 	}
+
+	if (bShaderPipeline)
+		CGraphicBase::EndPDTShader();
 }
 
 void CParticleSystemInstance::OnSetDataPointer(CEffectElementBase * pElement)
