@@ -220,8 +220,16 @@ void CSnowEnvironment::Render()
 	m_pImageInstance->GetGraphicImagePointer()->GetTextureReference().SetTextureStage(0);
 	STATEMANAGER.SetIndices(m_pIB, 0);
 	STATEMANAGER.SetStreamSource(0, m_pVB, sizeof(SParticleVertex));
-	STATEMANAGER.SetFVF(D3DFVF_XYZ | D3DFVF_TEX1);
-	STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, dwParticleCount*4, 0, dwParticleCount*2);
+	if (CGraphicBase::BeginPTTextureShader())
+	{
+		STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, dwParticleCount*4, 0, dwParticleCount*2);
+		CGraphicBase::EndPDTShader();
+	}
+	else
+	{
+		STATEMANAGER.SetFVF(D3DFVF_XYZ | D3DFVF_TEX1);
+		STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, dwParticleCount*4, 0, dwParticleCount*2);
+	}
 	STATEMANAGER.RestoreRenderState(D3DRS_ALPHABLENDENABLE);
 	STATEMANAGER.RestoreRenderState(D3DRS_ZWRITEENABLE);
 	STATEMANAGER.RestoreRenderState(D3DRS_CULLMODE);
