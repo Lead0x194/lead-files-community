@@ -5,7 +5,7 @@
 //#include <crtdbg.h>
 
 #include <dx9/d3d9.h>
-#include <dx9/d3dx9.h>
+#include <d3dx9math_shim.h>
 
 #include <stdio.h>
 #include <stdlib.h>
