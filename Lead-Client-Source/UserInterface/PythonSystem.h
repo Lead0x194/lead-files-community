@@ -75,6 +75,7 @@ class CPythonSystem : public CSingleton<CPythonSystem>
 			bool			bAlwaysShowName;
 			bool			bShowDamage;
 			bool			bShowSalesText;
+			BYTE			byRendererBackend;
 		} TConfig;
 
 	public:
