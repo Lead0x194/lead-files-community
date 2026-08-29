@@ -4,17 +4,39 @@
 extern "C" {
 #endif
 
-PyAPI_FUNC(void) _PyWarnings_Init(void);
+PyAPI_FUNC(int) PyErr_WarnEx(
+    PyObject *category,
+    const char *message,        /* UTF-8 encoded string */
+    Py_ssize_t stack_level);
 
-PyAPI_FUNC(int) PyErr_WarnEx(PyObject *, const char *, Py_ssize_t);
-PyAPI_FUNC(int) PyErr_WarnExplicit(PyObject *, const char *, const char *, int,
-                                    const char *, PyObject *);
+PyAPI_FUNC(int) PyErr_WarnFormat(
+    PyObject *category,
+    Py_ssize_t stack_level,
+    const char *format,         /* ASCII-encoded string  */
+    ...);
 
-#define PyErr_WarnPy3k(msg, stacklevel) \
-  (Py_Py3kWarningFlag ? PyErr_WarnEx(PyExc_DeprecationWarning, msg, stacklevel) : 0)
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 >= 0x03060000
+/* Emit a ResourceWarning warning */
+PyAPI_FUNC(int) PyErr_ResourceWarning(
+    PyObject *source,
+    Py_ssize_t stack_level,
+    const char *format,         /* ASCII-encoded string  */
+    ...);
+#endif
 
-/* DEPRECATED: Use PyErr_WarnEx() instead. */
-#define PyErr_Warn(category, msg) PyErr_WarnEx(category, msg, 1)
+PyAPI_FUNC(int) PyErr_WarnExplicit(
+    PyObject *category,
+    const char *message,        /* UTF-8 encoded string */
+    const char *filename,       /* decoded from the filesystem encoding */
+    int lineno,
+    const char *module,         /* UTF-8 encoded string */
+    PyObject *registry);
+
+#ifndef Py_LIMITED_API
+#  define Py_CPYTHON_WARNINGS_H
+#  include "cpython/warnings.h"
+#  undef Py_CPYTHON_WARNINGS_H
+#endif
 
 #ifdef __cplusplus
 }
