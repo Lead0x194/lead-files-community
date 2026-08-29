@@ -1,5 +1,6 @@
 ﻿#include "StdAfx.h"
 #include "PythonSystem.h"
+#include "../EterLib/GrpDevice.h"
 #include "PythonApplication.h"
 
 #define DEFAULT_VALUE_ALWAYS_SHOW_NAME		true
@@ -307,6 +308,7 @@ void CPythonSystem::SetDefaultConfig()
 	m_Config.bAlwaysShowName	= DEFAULT_VALUE_ALWAYS_SHOW_NAME;
 	m_Config.bShowDamage		= true;
 	m_Config.bShowSalesText		= true;
+	m_Config.byRendererBackend = 0;
 }
 
 bool CPythonSystem::IsWindowed()
@@ -456,7 +458,12 @@ bool CPythonSystem::LoadConfig()
 			m_Config.bShowDamage = atoi(value) == 1 ? true : false;
 		else if (!_stricmp(command, "SHOW_SALESTEXT"))
 			m_Config.bShowSalesText = atoi(value) == 1 ? true : false;
+		else if (!_stricmp(command, "RENDERER"))
+			m_Config.byRendererBackend = _stricmp(value, "dx12") ? 0 : 1;
 	}
+
+	CGraphicDevice::SetRequestedBackend(
+		1 == m_Config.byRendererBackend ? CGraphicDevice::BACKEND_DX12 : CGraphicDevice::BACKEND_DX9);
 
 	if (m_Config.bWindowed)
 	{
