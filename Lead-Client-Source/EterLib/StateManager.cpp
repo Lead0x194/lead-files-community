@@ -54,6 +54,16 @@ void CStateManager::EndScene()
 	m_bScene=false;
 }
 
+HRESULT CStateManager::Present(CONST RECT* pSourceRect, CONST RECT* pDestRect, HWND hDestWindowOverride)
+{
+	return m_lpD3DDev->PresentEx(pSourceRect, pDestRect, hDestWindowOverride, NULL, 0);
+}
+
+HRESULT CStateManager::GetBackBuffer(UINT iSwapChain, UINT iBackBuffer, D3DBACKBUFFER_TYPE eType, LPDIRECT3DSURFACE9* ppBackBuffer)
+{
+	return m_lpD3DDev->GetBackBuffer(iSwapChain, iBackBuffer, eType, ppBackBuffer);
+}
+
 CStateManager::CStateManager(LPDIRECT3DDEVICE9EX lpDevice) : m_lpD3DDev(NULL)
 {
 	m_bScene = false;

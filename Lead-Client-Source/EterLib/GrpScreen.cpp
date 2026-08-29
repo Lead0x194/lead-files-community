@@ -676,27 +676,27 @@ void CScreen::Show(HWND hWnd)
 		RECT rcLeft = { 0, g_rcBrowser.top, g_rcBrowser.left, g_rcBrowser.bottom };
 		RECT rcRight = { g_rcBrowser.right, g_rcBrowser.top, (LONG)ms_d3dPresentParameter.BackBufferWidth, g_rcBrowser.bottom };
 		
-		ms_lpd3dDevice->PresentEx(&rcTop, &rcTop, hWnd, NULL, 0);
-		ms_lpd3dDevice->PresentEx(&rcBottom, &rcBottom, hWnd, NULL, 0);
-		ms_lpd3dDevice->PresentEx(&rcLeft, &rcLeft, hWnd, NULL, 0);	
-		ms_lpd3dDevice->PresentEx(&rcRight, &rcRight, hWnd, NULL, 0);
+		STATEMANAGER.Present(&rcTop, &rcTop, hWnd);
+		STATEMANAGER.Present(&rcBottom, &rcBottom, hWnd);
+		STATEMANAGER.Present(&rcLeft, &rcLeft, hWnd);
+		STATEMANAGER.Present(&rcRight, &rcRight, hWnd);
 	}
 	else
 	{
-		ms_lpd3dDevice->PresentEx(NULL, NULL, hWnd, NULL, 0);
+		STATEMANAGER.Present(NULL, NULL, hWnd);
 	}	
 }
 
 void CScreen::Show(RECT * pSrcRect)
 {
 	assert(ms_lpd3dDevice != NULL);
-	ms_lpd3dDevice->PresentEx(pSrcRect, NULL, NULL, NULL, 0);
+	STATEMANAGER.Present(pSrcRect, NULL, NULL);
 }
 
 void CScreen::Show(RECT * pSrcRect, HWND hWnd)
 {
 	assert(ms_lpd3dDevice != NULL);
-	ms_lpd3dDevice->PresentEx(pSrcRect, NULL, hWnd, NULL, 0);
+	STATEMANAGER.Present(pSrcRect, NULL, hWnd);
 }
 
 void CScreen::ProjectPosition(float x, float y, float z, float * pfX, float * pfY)
