@@ -201,7 +201,7 @@ class ShopDialog(ui.ScriptWindow):
 				self.__HideMiddleTabs()
 				self.__ShowSmallTabs()
 				self.__SetTabNames()
-				self.middleRadioButtonGroup.OnClick(1)
+				self.smallRadioButtonGroup.OnClick(0)
 
 		self.Refresh()
 		self.SetTop()
