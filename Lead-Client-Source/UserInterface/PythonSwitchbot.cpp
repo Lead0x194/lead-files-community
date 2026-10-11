@@ -42,6 +42,11 @@ void CPythonSwitchbot::SetAttribute(BYTE slot, BYTE alternative, BYTE attrIdx, B
 		return;
 	}
 
+	if (attrIdx >= MAX_NORM_ATTR_NUM)
+	{
+		return;
+	}
+
 	m_SwitchbotTable.alternatives[slot][alternative].attributes[attrIdx].bType = attrType;
 	m_SwitchbotTable.alternatives[slot][alternative].attributes[attrIdx].sValue = attrValue;
 }
@@ -56,6 +61,11 @@ TPlayerItemAttribute CPythonSwitchbot::GetAttribute(BYTE slot, BYTE alternative,
 	}
 
 	if (alternative >= SWITCHBOT_ALTERNATIVE_COUNT)
+	{
+		return attr;
+	}
+
+	if (attrIdx >= MAX_NORM_ATTR_NUM)
 	{
 		return attr;
 	}

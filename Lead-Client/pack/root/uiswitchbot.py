@@ -1468,7 +1468,7 @@ class ConfigurationWindow(ui.BoardWithTitleBar):
 		key = self.__GetNewKey()
 		alternatives = []
 		for alternative in xrange(switchbot.ALTERNATIVE_COUNT):
-			attributes = [switchbot.GetAttribute(slot, alternative, i) for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM)]
+			attributes = [switchbot.GetAttribute(slot, alternative, i) for i in xrange(ATTR_SLOT_COUNT)]
 			alternatives.append(attributes)
 		
 		new_dict = {
