@@ -545,9 +545,9 @@ class CreateCharacterWindow(ui.Window):
 			self.__IncreaseSlotIndex()
 
 		if 59 == key:
-			self.__SelectGender(MAN_PAGE)
+			self.__SelectGender(MAN)
 		if 60 == key:
-			self.__SelectGender(WOMAN_PAGE)
+			self.__SelectGender(WOMAN)
 
 		return True
 
