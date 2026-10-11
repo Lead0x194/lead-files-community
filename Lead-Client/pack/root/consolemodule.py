@@ -98,7 +98,7 @@ class Console(object):
 	def SetCharacterEmoticon(self, EmoticonNum):
 		"Show emoticon (number)"
 		chrmgr.SetEmoticon(-1, int(EmoticonNum))
-		self.Print("Emoticon %d: %d" % (int(EmoticonNum), int(isVisible)))
+		self.Print("Emoticon %d" % int(EmoticonNum))
 
 	def ShowPickedCharacterInfo(self):
 		"Show information of picked character"
