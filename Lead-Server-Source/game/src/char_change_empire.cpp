@@ -29,7 +29,7 @@ int CHARACTER::ChangeEmpire(BYTE empire)
 	{
 		// 1. everything in my account pid get it
 		snprintf(szQuery, sizeof(szQuery), 
-				"SELECT id, pid1, pid2, pid3, pid4 FROM player_index%s WHERE pid1=%u OR pid2=%u OR pid3=%u OR pid4=%u AND empire=%u", 
+				"SELECT id, pid1, pid2, pid3, pid4 FROM player_index%s WHERE (pid1=%u OR pid2=%u OR pid3=%u OR pid4=%u) AND empire=%u",
 				get_table_postfix(), GetPlayerID(), GetPlayerID(), GetPlayerID(), GetPlayerID(), GetEmpire());
 
 		std::unique_ptr<SQLMsg> msg(DBManager::instance().DirectQuery(szQuery));
@@ -102,7 +102,7 @@ int CHARACTER::ChangeEmpire(BYTE empire)
 	
 	{
 		// 4. db Update the empire information of .
-		snprintf(szQuery, sizeof(szQuery), "UPDATE player_index%s SET empire=%u WHERE pid1=%u OR pid2=%u OR pid3=%u OR pid4=%u AND empire=%u", 
+		snprintf(szQuery, sizeof(szQuery), "UPDATE player_index%s SET empire=%u WHERE (pid1=%u OR pid2=%u OR pid3=%u OR pid4=%u) AND empire=%u",
 				get_table_postfix(), empire, GetPlayerID(), GetPlayerID(), GetPlayerID(), GetPlayerID(), GetEmpire());
 
 		std::unique_ptr<SQLMsg> msg(DBManager::instance().DirectQuery(szQuery));
@@ -181,7 +181,7 @@ DWORD CHARACTER::GetAID() const
 	char szQuery[1024+1];
 	DWORD dwAID = 0;
 
-	snprintf(szQuery, sizeof(szQuery), "SELECT id FROM player_index%s WHERE pid1=%u OR pid2=%u OR pid3=%u OR pid4=%u AND empire=%u", 
+	snprintf(szQuery, sizeof(szQuery), "SELECT id FROM player_index%s WHERE (pid1=%u OR pid2=%u OR pid3=%u OR pid4=%u) AND empire=%u",
 			get_table_postfix(), GetPlayerID(), GetPlayerID(), GetPlayerID(), GetPlayerID(), GetEmpire());
 
 	SQLMsg* pMsg = DBManager::instance().DirectQuery(szQuery);
