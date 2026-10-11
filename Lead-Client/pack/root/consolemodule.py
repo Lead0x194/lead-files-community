@@ -281,7 +281,7 @@ class Console(object):
 		else:
 			effectFileName = arg
 
-		effectFullPathFileName=self.GetFullPathName(EffectFileName)
+		effectFullPathFileName=self.GetFullPathName(effectFileName)
 		chrmgr.RegisterEffect(chrmgr.EFFECT_HIT, "", effectFullPathFileName)
 
 		self.Print("Hit effect: "+effectFullPathFileName)
