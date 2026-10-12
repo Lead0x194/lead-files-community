@@ -99,7 +99,7 @@ int CPythonSwitchbot::GetAttibuteSet(BYTE slot)
 	TItemPos pos(SWITCHBOT, slot);
 
 	CItemData* pItemDataPtr = NULL;
-	BYTE item_type, item_subtype = 0;
+	BYTE item_type = 0, item_subtype = 0;
 
 	if (CItemManager::Instance().GetItemDataPointer(CPythonPlayer::Instance().GetItemIndex(pos), &pItemDataPtr))
 	{
