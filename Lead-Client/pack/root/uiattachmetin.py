@@ -90,7 +90,10 @@ class AttachMetinDialog(ui.ScriptWindow):
 		metinSlot = []
 		for i in xrange(player.METIN_SOCKET_MAX_NUM):
 			metinSlot.append(player.GetItemMetinSocket(targetItemPos, i))
-		self.oldToolTip.AddItemData(itemIndex, metinSlot)
+		attrSlot = []
+		for i in xrange(player.ATTRIBUTE_SLOT_MAX_NUM):
+			attrSlot.append(player.GetItemAttribute(targetItemPos, i))
+		self.oldToolTip.AddItemData(itemIndex, metinSlot, attrSlot)
 
 		## New Item ToolTip
 		item.SelectItem(metinIndex)
@@ -104,7 +107,7 @@ class AttachMetinDialog(ui.ScriptWindow):
 			if self.CanAttachMetin(slotData, metinSubType):
 				metinSlot[i] = metinIndex
 				break
-		self.newToolTip.AddItemData(itemIndex, metinSlot)
+		self.newToolTip.AddItemData(itemIndex, metinSlot, attrSlot)
 
 		self.UpdateDialog()
 		self.SetTop()
