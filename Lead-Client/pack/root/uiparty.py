@@ -345,9 +345,10 @@ class PartyMemberInfoBoard(ui.ScriptWindow):
 			player.OpenCharacterMenu(self.vid)
 
 			if mouseModule.mouseController.isAttached():
+				attachedInvenType = player.SlotTypeToInvenType(mouseModule.mouseController.GetAttachedType())
 				attachedSlotPos = mouseModule.mouseController.GetAttachedSlotNumber()
 				net.SendExchangeStartPacket(self.vid)
-				net.SendExchangeItemAddPacket(attachedSlotPos, 0)
+				net.SendExchangeItemAddPacket(attachedInvenType, attachedSlotPos, 0)
 				mouseModule.mouseController.DeattachObject()
 				return
 
@@ -367,9 +368,10 @@ class PartyMemberInfoBoard(ui.ScriptWindow):
 			player.OpenCharacterMenu(self.vid)
 
 			if mouseModule.mouseController.isAttached():
+				attachedInvenType = player.SlotTypeToInvenType(mouseModule.mouseController.GetAttachedType())
 				attachedSlotPos = mouseModule.mouseController.GetAttachedSlotNumber()
 				net.SendExchangeStartPacket(self.vid)
-				net.SendExchangeItemAddPacket(attachedSlotPos, 0)
+				net.SendExchangeItemAddPacket(attachedInvenType, attachedSlotPos, 0)
 				mouseModule.mouseController.DeattachObject()
 
 	def OnMouseRightButtonDown(self):
