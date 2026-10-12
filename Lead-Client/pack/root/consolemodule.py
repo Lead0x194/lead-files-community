@@ -537,7 +537,7 @@ class Console(object):
 	def SetCharacterRenderModeSpecular(self, alpha):
 		vid = player.GetTargetVID()
 		print " -> SetCharacterRenderModeSpecular", vid, alpha
-		chr.testSetSpecularRenderMode(vid, float(alpha))
+		chr.testSetSpecularRenderMode(vid, 0, float(alpha))
 
 	def RestoreCharacterRenderModeType(self):
 		vid = player.GetTargetVID()
