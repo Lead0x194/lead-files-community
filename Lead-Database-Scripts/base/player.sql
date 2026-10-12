@@ -327,9 +327,9 @@ DROP TABLE IF EXISTS `item`;
 CREATE TABLE `item` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `owner_id` int(11) unsigned NOT NULL DEFAULT 0,
-  `window` enum('INVENTORY','EQUIPMENT','SAFEBOX','MALL','DRAGON_SOUL_INVENTORY','BELT_INVENTORY') NOT NULL DEFAULT 'INVENTORY',
+  `window` enum('INVENTORY','EQUIPMENT','SAFEBOX','MALL','DRAGON_SOUL_INVENTORY','BELT_INVENTORY','SWITCHBOT') NOT NULL DEFAULT 'INVENTORY',
   `pos` smallint(5) unsigned NOT NULL DEFAULT 0,
-  `count` tinyint(3) unsigned NOT NULL DEFAULT 0,
+  `count` int(11) unsigned NOT NULL DEFAULT 0,
   `vnum` int(11) unsigned NOT NULL DEFAULT 0,
   `socket0` int(10) unsigned NOT NULL DEFAULT 0,
   `socket1` int(10) unsigned NOT NULL DEFAULT 0,
@@ -1146,7 +1146,7 @@ DROP TABLE IF EXISTS `shop_item`;
 CREATE TABLE `shop_item` (
   `shop_vnum` int(11) NOT NULL DEFAULT 0,
   `item_vnum` int(11) NOT NULL DEFAULT 0,
-  `count` tinyint(4) unsigned NOT NULL DEFAULT 1,
+  `count` int(11) unsigned NOT NULL DEFAULT 1,
   UNIQUE KEY `vnum_unique` (`shop_vnum`,`item_vnum`,`count`) USING BTREE
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci ROW_FORMAT=FIXED;
 /*!40101 SET character_set_client = @saved_cs_client */;

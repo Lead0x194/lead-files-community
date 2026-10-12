@@ -39,7 +39,8 @@ def get_connection(host, port, user, password, db=None):
         password=password,
         database=db,
         autocommit=True,
-        charset="utf8mb4"
+        charset="utf8mb4",
+        client_flag=pymysql.constants.CLIENT.MULTI_STATEMENTS
     )
 
 
@@ -68,7 +69,7 @@ def create_databases(conn):
 
 
 def execute_sql_file(conn_params, db, filepath):
-    print(f"→ [{db}] {os.path.basename(filepath)}")
+    print(f"→ [{db or 'migrations'}] {os.path.basename(filepath)}")
 
     with open(filepath, "r", encoding="utf-8") as f:
         sql = f.read()
@@ -76,10 +77,9 @@ def execute_sql_file(conn_params, db, filepath):
     conn = get_connection(**conn_params, db=db)
     cursor = conn.cursor()
 
-    for statement in sql.split(";"):
-        stmt = statement.strip()
-        if stmt:
-            cursor.execute(stmt)
+    cursor.execute(sql)
+    while cursor.nextset():
+        pass
 
     conn.close()
 
@@ -99,10 +99,7 @@ def run_migrations(conn_params, migrations_path):
 
         filepath = os.path.join(migrations_path, file)
 
-        for db in DATABASES:
-            if db in file.lower():
-                execute_sql_file(conn_params, db, filepath)
-                break
+        execute_sql_file(conn_params, None, filepath)
 
 
 def main():
