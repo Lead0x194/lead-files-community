@@ -25,7 +25,7 @@ window = {
 			"children" :
 			(
 
-				#³»¿ë
+				#ë‚´ìš©
 				{
 					"name" : "Desc1",
 					"type" : "text",
@@ -36,7 +36,7 @@ window = {
 					"text" : uiScriptLocale.PASSWORD_DESC_1,
 					"text_horizontal_align":"center"
 				},
-				#³»¿ë2
+				#ë‚´ìš©2
 				{
 					"name" : "Desc2",
 					"type" : "text",

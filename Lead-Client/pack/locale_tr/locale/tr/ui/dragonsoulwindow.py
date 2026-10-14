@@ -3,7 +3,7 @@ import uiScriptLocale
 window = {
 	"name" : "InventoryWindow",
 
-	## 600 - (width + ©ю╦╔бйю╦╥н ╨нем ╤Г©Л╠Б 24 px)
+	## 600 - (width + Л≤╓К╔╦Л╙╫Л°╪К║° К╤─М└╟ К²└Л ╟Й╦╟ 24 px)
 	"x" : SCREEN_WIDTH - 176 - 287 - 10,
 	"y" : SCREEN_HEIGHT - 37 - 505,
 
