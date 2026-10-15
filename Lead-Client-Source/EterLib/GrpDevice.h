@@ -26,6 +26,17 @@ public:
 	CGraphicDevice();
 	virtual ~CGraphicDevice();
 
+	// Renderer backend selection seam: the DX12 backend plugs in here;
+	// until it exists every request resolves to DX9.
+	enum EBackend
+	{
+		BACKEND_DX9,
+		BACKEND_DX12,
+	};
+
+	static void		SetRequestedBackend(EBackend eBackend);
+	static EBackend	GetBackend();
+
 	void			InitBackBufferCount(UINT uBackBufferCount);
 
 	void			Destroy();
