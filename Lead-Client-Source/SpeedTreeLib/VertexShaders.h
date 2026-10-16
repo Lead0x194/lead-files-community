@@ -31,6 +31,7 @@
 
 #pragma once
 #include "SpeedTreeConfig.h"
+#include "../eterlib/StateManager.h"
 #include <map>
 #include <string>
 
@@ -126,7 +127,7 @@ static const char g_achSimpleVertexProgram[] =
 ///////////////////////////////////////////////////////////////////////  
 //	LoadBranchShader
 
-static LPDIRECT3DVERTEXDECLARATION9 LoadBranchShader(LPDIRECT3DDEVICE9 pDx)
+static LPDIRECT3DVERTEXDECLARATION9 LoadBranchShader()
 {
 	// branch shader declaration
 	D3DVERTEXELEMENT9 pBranchShaderDecl[] = {
@@ -140,7 +141,7 @@ static LPDIRECT3DVERTEXDECLARATION9 LoadBranchShader(LPDIRECT3DDEVICE9 pDx)
 	// assemble shader
 	LPDIRECT3DVERTEXDECLARATION9 dwShader = NULL;
 
-	if (pDx->CreateVertexDeclaration(pBranchShaderDecl, &dwShader) != D3D_OK)
+	if (STATEMANAGER.CreateVertexDeclaration(pBranchShaderDecl, &dwShader) != D3D_OK)
 	{
 		char szError[1024];
 		sprintf_s(szError, "Failed to create branch vertex shader.");
@@ -257,7 +258,7 @@ static const char g_achLeafVertexProgram[] =
 ///////////////////////////////////////////////////////////////////////  
 //	LoadLeafShader
 
-static void LoadLeafShader(LPDIRECT3DDEVICE9 pDx, LPDIRECT3DVERTEXDECLARATION9& pVertexDecl, LPDIRECT3DVERTEXSHADER9& pVertexShader)
+static void LoadLeafShader(LPDIRECT3DVERTEXDECLARATION9& pVertexDecl, LPDIRECT3DVERTEXSHADER9& pVertexShader)
 {
     SAFE_RELEASE(pVertexDecl);
     SAFE_RELEASE(pVertexShader);
@@ -282,7 +283,7 @@ static void LoadLeafShader(LPDIRECT3DDEVICE9 pDx, LPDIRECT3DVERTEXDECLARATION9& 
 
     LPD3DXBUFFER pCode = nullptr, pError = nullptr;
     if (D3DXAssembleShader(g_achLeafVertexProgram, sizeof(g_achLeafVertexProgram) - 1, nullptr, nullptr, 0, &pCode, &pError) == D3D_OK) {
-        if (pDx->CreateVertexShader((DWORD*)pCode->GetBufferPointer(), &pVertexShader) != D3D_OK) {
+        if (STATEMANAGER.CreateVertexShader((DWORD*)pCode->GetBufferPointer(), &pVertexShader) != D3D_OK) {
             TraceError("Failed to create leaf vertex shader.");
         }
     }
@@ -290,7 +291,7 @@ static void LoadLeafShader(LPDIRECT3DDEVICE9 pDx, LPDIRECT3DVERTEXDECLARATION9& 
         TraceError("Failed to assemble leaf vertex shader. The error reported is [ %s ].", pError->GetBufferPointer());
     }
 
-    if (FAILED(pDx->CreateVertexDeclaration(leafVertexDecl, &pVertexDecl))) {
+    if (FAILED(STATEMANAGER.CreateVertexDeclaration(leafVertexDecl, &pVertexDecl))) {
         TraceError("Failed to create leaf vertex declaration");
     }
 

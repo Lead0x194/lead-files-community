@@ -164,7 +164,17 @@ void CMapOutdoor::DrawWater(long patchnum)
 		return;
 	
 	STATEMANAGER.SetStreamSource(0, pkVB->GetD3DVertexBuffer(), sizeof(SWaterVertex));
-	STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLELIST, 0, uPriCount);
+	LPDIRECT3DBASETEXTURE9 pkTexture = NULL;
+	STATEMANAGER.GetTexture(0, &pkTexture);
+	if (CGraphicBase::BeginWaterShader(NULL != pkTexture))
+	{
+		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLELIST, 0, uPriCount);
+		CGraphicBase::EndPDTShader();
+	}
+	else
+	{
+		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLELIST, 0, uPriCount);
+	}
 
 	ms_faceCount += uPriCount;
 }
