@@ -831,6 +831,8 @@ void CSkyBox::Render()
 		STATEMANAGER.SaveSamplerState(0, D3DSAMP_ADDRESSU,	D3DTADDRESS_CLAMP);
 		STATEMANAGER.SaveSamplerState(0, D3DSAMP_ADDRESSV,	D3DTADDRESS_CLAMP);
 
+		const bool bShaderPipeline = CGraphicBase::BeginPDTTextureShader();
+
 		for (unsigned int i = 0; i < 6; ++i)
 		{
 			CGraphicImageInstance * pFaceImageInstance = m_GraphicImageInstanceMap[m_Faces[i].m_strFaceTextureFileName];
@@ -841,6 +843,8 @@ void CSkyBox::Render()
 
 			m_Faces[i].Render();
 		}
+		if (bShaderPipeline)
+			CGraphicBase::EndPDTShader();
 
 		//STATEMANAGER.SetTexture( 0, NULL );
 
@@ -849,10 +853,15 @@ void CSkyBox::Render()
 	}
 	else
 	{
+		const bool bShaderPipeline = CGraphicBase::BeginPDTDiffuseShader();
+
 		for (unsigned int i = 0; i < 6; ++i)
 		{
 			m_Faces[i].Render();
 		}
+
+		if (bShaderPipeline)
+			CGraphicBase::EndPDTShader();
 	}
 
 	STATEMANAGER.RestoreRenderState(D3DRS_LIGHTING);
@@ -911,7 +920,13 @@ void CSkyBox::RenderCloud()
 	STATEMANAGER.SetTransform(D3DTS_WORLD, &m_matWorldCloud);
 	STATEMANAGER.SaveTransform(D3DTS_PROJECTION, &matProjCloud);
 	STATEMANAGER.SetTexture(0, pCloudGraphicImageInstance->GetTexturePointer()->GetD3DTexture());
-	m_FaceCloud.Render();
+	if (CGraphicBase::BeginPDTCloudShader())
+	{
+		m_FaceCloud.Render();
+		CGraphicBase::EndPDTShader();
+	}
+	else
+		m_FaceCloud.Render();
 	STATEMANAGER.RestoreTransform(D3DTS_PROJECTION);
 	
 	STATEMANAGER.RestoreTransform(D3DTS_TEXTURE0);

@@ -456,6 +456,8 @@ bool CPythonSystem::LoadConfig()
 			m_Config.bShowDamage = atoi(value) == 1 ? true : false;
 		else if (!_stricmp(command, "SHOW_SALESTEXT"))
 			m_Config.bShowSalesText = atoi(value) == 1 ? true : false;
+		else if (!_stricmp(command, "SHADER_FFP"))
+			CGraphicBase::SetUseShaderFFP(atoi(value) == 1 ? true : false);
 	}
 
 	if (m_Config.bWindowed)
