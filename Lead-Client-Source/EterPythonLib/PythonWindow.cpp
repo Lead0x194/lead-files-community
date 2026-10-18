@@ -164,7 +164,7 @@ namespace UI
 		if (!IsShow())
 			return;
 
-		static PyObject* poFuncName_OnUpdate = PyString_InternFromString("OnUpdate");
+		static PyObject* poFuncName_OnUpdate = PyUnicode_InternFromString("OnUpdate");
 
 		//PyCallClassMemberFunc(m_poHandler, "OnUpdate", BuildEmptyTuple());
 		PyCallClassMemberFunc_ByPyString(m_poHandler, poFuncName_OnUpdate, BuildEmptyTuple());

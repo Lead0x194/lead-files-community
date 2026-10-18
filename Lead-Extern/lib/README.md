@@ -30,7 +30,7 @@ ones above. Built/fetched VS 2026 (v145), x64, `/MTd` to match the client.
 |---|---|---|
 | `d3dx9.lib` (+ `d3dx9d.lib`) | `Microsoft.DXSDK.D3DX` NuGet (Walbourn's repackage of the DXSDK June 2010 D3DX) | `nuget`/REST fetch the nupkg, copy `build/native/release/lib/x64/d3dx9.lib`. The legacy DXSDK installer itself fails headlessly (S1023 redist conflict) — the NuGet avoids it. Runtime: `d3dx9_43.dll` next to the exe. |
 | `d3d9.lib` | Windows 10 SDK | copy `…\Windows Kits\10\Lib\<ver>\um\x64\d3d9.lib` here so it wins over the Win32 `lib/d3d9.lib` on the search path (needed for `Direct3DCreate9Ex`). |
-| `python27.lib` (+ headers) | Python 2.7.18 (python.org) | `msiexec /a python-2.7.18.msi /qn TARGETDIR=…`; copy `libs/python27.lib`. ABI-compatible with the repo's vendored 2.7 headers — do NOT overwrite `Lead-Extern/include/python` (its 2.7.18 copy uses `register` ⇒ C5033). Runtime: `python27.dll`. |
+| `python314.lib` (+ headers) | Python 3.14.3 x64 (python.org) | install python-3.14.3-amd64; copy `libs/python314.lib` and `include/` (flat headers + `cpython/`, `internal/` not needed) into `Lead-Extern/include/python`. Auto-linked by the `pyconfig.h` pragma; ScriptLib's `StdAfx.h` `#undef _DEBUG` trick makes Debug builds link the release lib. Runtime: `python314.dll`. |
 | `mss64.lib` | Miles Sound System 9.3 SDK — [download](https://metin2.download/file/9jmaB37Fci6nXF6qbJTY8Q3RwIT3dmAF/) | extract `lib/mss64.lib`. Header `mss.h`+`rrcore.h` replace the Miles-6 header in `Lead-Extern/include/miles`. MilesLib was ported to the 9.3 API. Runtime: `mss64.dll`. |
 | `granny2_x64.lib` | Granny 2.11.8.0 SDK — [download](https://metin2.download/file/uRynyND42I1Cw0hP4b2t5p9IJRvX3mVj/) | copy from `lib/win64`. Client pragma is `_WIN64`-conditional (`granny2_x64.lib`). Runtime: `granny2_x64.dll`. |
 | `WebView2Loader.lib` | `Microsoft.Web.WebView2` NuGet | copy `build/native/x64/WebView2Loader.dll.lib` → `WebView2Loader.lib`. Runtime: `WebView2Loader.dll`. |
@@ -38,7 +38,7 @@ ones above. Built/fetched VS 2026 (v145), x64, `/MTd` to match the client.
 | `libjpeg-9fMT_d.lib` | IJG libjpeg 9f (`ijg.org/files/jpegsr9f.zip`) | `jconfig.vc`→`jconfig.h`, then `cl /c /MTd` the `j*.c` core (minus `jpegtran.c` + the alternate `jmem*` managers, keep `jmemnobs`) and `lib` into this exact name (the `jpegLibLink.h` pragma builds `libjpeg-9f` + runtime-model + `_d`). |
 
 Runtime DLLs are staged next to the exe in `Lead-Client/`: granny2_x64, mss64,
-python27, WebView2Loader, D3DX9_43, DevIL.
+python314, WebView2Loader, D3DX9_43, DevIL.
 
 ## Release (`/MT`) client libs
 
@@ -46,7 +46,7 @@ The **Release\|x64** client (`metin2client.exe`) is built with the non-debug sta
 CRT (`/MT`, `NDEBUG`, `_ITERATOR_DEBUG_LEVEL=0`). A `/MT` object cannot link against a
 `/MTd` static lib (`LNK2038`), so the few **statically-linked** third-party libs need a
 `/MT` Release counterpart alongside the `/MTd` Debug one. The import-lib deps (granny2,
-mss64, python27, DevIL, WebView2Loader, d3d9/d3dx9) are CRT-isolated and unchanged. All
+mss64, python314, DevIL, WebView2Loader, d3d9/d3dx9) are CRT-isolated and unchanged. All
 four below are x64, `/MT`, `NDEBUG`; verified with `dumpbin -directives` ⇒ `LIBCMT`
 (never `LIBCMTD`/`MSVCRT`). They live in this same `lib/` dir with distinct names so the
 config-specific `#pragma comment(lib,…)` / auto-link headers pick the right one per

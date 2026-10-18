@@ -24,7 +24,7 @@ volatile int _AVOID_FLOATING_POINT_LIBRARY_BUG = _fltused;
 #pragma comment(linker, "/NODEFAULTLIB:libci.lib")
 
 #pragma comment( lib, "version.lib" )
-#pragma comment( lib, "python27.lib" )
+#pragma comment( lib, "python314.lib" )
 #pragma comment( lib, "imagehlp.lib" )
 #pragma comment( lib, "devil.lib" )
 #ifdef _WIN64
@@ -63,17 +63,17 @@ extern bool SetDefaultCodePage(DWORD codePage);
 
 static const char * sc_apszPythonLibraryFilenames[] =
 {
-	"UserDict.pyc",
-	"__future__.pyc",
-	"copy_reg.pyc",
-	"linecache.pyc",
-	"ntpath.pyc",
-	"os.pyc",
-	"site.pyc",
-	"stat.pyc",
-	"string.pyc",
-	"traceback.pyc",
-	"types.pyc",
+	"abc.py",
+	"codecs.py",
+	"encodings\\__init__.py",
+	"io.py",
+	"linecache.py",
+	"ntpath.py",
+	"os.py",
+	"stat.py",
+	"string\\__init__.py",
+	"traceback.py",
+	"types.py",
 	"\n",
 };
 

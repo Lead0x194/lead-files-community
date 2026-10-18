@@ -33,3 +33,6 @@ PyObject * Py_BuildException(const char * c_pszErr = NULL, ...);
 PyObject * Py_BadArgument();
 PyObject * Py_BuildNone();
 PyObject * Py_BuildEmptyTuple();
+
+PyObject* Py_InitModule(const char* c_szName, PyMethodDef* pMethodDef);
+PyObject* PyUnicode_FromCodePage(const char* c_szText);

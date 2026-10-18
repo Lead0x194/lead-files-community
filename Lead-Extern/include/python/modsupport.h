@@ -1,3 +1,4 @@
+// Module support interface
 
 #ifndef Py_MODSUPPORT_H
 #define Py_MODSUPPORT_H
@@ -5,43 +6,55 @@
 extern "C" {
 #endif
 
-/* Module support interface */
-
-#include <stdarg.h>
-
-/* If PY_SSIZE_T_CLEAN is defined, each functions treats #-specifier
-   to mean Py_ssize_t */
-#ifdef PY_SSIZE_T_CLEAN
-#define PyArg_Parse			_PyArg_Parse_SizeT
-#define PyArg_ParseTuple		_PyArg_ParseTuple_SizeT
-#define PyArg_ParseTupleAndKeywords	_PyArg_ParseTupleAndKeywords_SizeT
-#define PyArg_VaParse			_PyArg_VaParse_SizeT
-#define PyArg_VaParseTupleAndKeywords	_PyArg_VaParseTupleAndKeywords_SizeT
-#define Py_BuildValue			_Py_BuildValue_SizeT
-#define Py_VaBuildValue			_Py_VaBuildValue_SizeT
-#else
-PyAPI_FUNC(PyObject *) _Py_VaBuildValue_SizeT(const char *, va_list);
-#endif
-
 PyAPI_FUNC(int) PyArg_Parse(PyObject *, const char *, ...);
-PyAPI_FUNC(int) PyArg_ParseTuple(PyObject *, const char *, ...) Py_FORMAT_PARSETUPLE(PyArg_ParseTuple, 2, 3);
+PyAPI_FUNC(int) PyArg_ParseTuple(PyObject *, const char *, ...);
 PyAPI_FUNC(int) PyArg_ParseTupleAndKeywords(PyObject *, PyObject *,
-                                                  const char *, char **, ...);
-PyAPI_FUNC(int) PyArg_UnpackTuple(PyObject *, const char *, Py_ssize_t, Py_ssize_t, ...);
-PyAPI_FUNC(PyObject *) Py_BuildValue(const char *, ...);
-PyAPI_FUNC(PyObject *) _Py_BuildValue_SizeT(const char *, ...);
-PyAPI_FUNC(int) _PyArg_NoKeywords(const char *funcname, PyObject *kw);
-
+                                            const char *, PY_CXX_CONST char * const *, ...);
 PyAPI_FUNC(int) PyArg_VaParse(PyObject *, const char *, va_list);
 PyAPI_FUNC(int) PyArg_VaParseTupleAndKeywords(PyObject *, PyObject *,
-                                                  const char *, char **, va_list);
+                                              const char *, PY_CXX_CONST char * const *, va_list);
+
+PyAPI_FUNC(int) PyArg_ValidateKeywordArguments(PyObject *);
+PyAPI_FUNC(int) PyArg_UnpackTuple(PyObject *, const char *, Py_ssize_t, Py_ssize_t, ...);
+PyAPI_FUNC(PyObject *) Py_BuildValue(const char *, ...);
 PyAPI_FUNC(PyObject *) Py_VaBuildValue(const char *, va_list);
 
-PyAPI_FUNC(int) PyModule_AddObject(PyObject *, const char *, PyObject *);
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 >= 0x030a0000
+// Add an attribute with name 'name' and value 'obj' to the module 'mod.
+// On success, return 0.
+// On error, raise an exception and return -1.
+PyAPI_FUNC(int) PyModule_AddObjectRef(PyObject *mod, const char *name, PyObject *value);
+#endif   /* Py_LIMITED_API */
+
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 >= 0x030d0000
+// Similar to PyModule_AddObjectRef() but steal a reference to 'value'.
+PyAPI_FUNC(int) PyModule_Add(PyObject *mod, const char *name, PyObject *value);
+#endif   /* Py_LIMITED_API */
+
+// Similar to PyModule_AddObjectRef() and PyModule_Add() but steal
+// a reference to 'value' on success and only on success.
+// Errorprone. Should not be used in new code.
+PyAPI_FUNC(int) PyModule_AddObject(PyObject *mod, const char *, PyObject *value);
+
 PyAPI_FUNC(int) PyModule_AddIntConstant(PyObject *, const char *, long);
 PyAPI_FUNC(int) PyModule_AddStringConstant(PyObject *, const char *, const char *);
-#define PyModule_AddIntMacro(m, c) PyModule_AddIntConstant(m, #c, c)
-#define PyModule_AddStringMacro(m, c) PyModule_AddStringConstant(m, #c, c)
+
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 >= 0x03090000
+/* New in 3.9 */
+PyAPI_FUNC(int) PyModule_AddType(PyObject *module, PyTypeObject *type);
+#endif /* Py_LIMITED_API */
+
+#define PyModule_AddIntMacro(m, c) PyModule_AddIntConstant((m), #c, (c))
+#define PyModule_AddStringMacro(m, c) PyModule_AddStringConstant((m), #c, (c))
+
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 >= 0x03050000
+/* New in 3.5 */
+PyAPI_FUNC(int) PyModule_SetDocString(PyObject *, const char *);
+PyAPI_FUNC(int) PyModule_AddFunctions(PyObject *, PyMethodDef *);
+PyAPI_FUNC(int) PyModule_ExecDef(PyObject *module, PyModuleDef *def);
+#endif
+
+#define Py_CLEANUP_SUPPORTED 0x20000
 
 #define PYTHON_API_VERSION 1013
 #define PYTHON_API_STRING "1013"
@@ -58,75 +71,74 @@ PyAPI_FUNC(int) PyModule_AddStringConstant(PyObject *, const char *, const char 
    Please add a line or two to the top of this log for each API
    version change:
 
-   22-Feb-2006  MvL	1013	PEP 353 - long indices for sequence lengths
+   22-Feb-2006  MvL     1013    PEP 353 - long indices for sequence lengths
 
-   19-Aug-2002  GvR	1012	Changes to string object struct for
-   				interning changes, saving 3 bytes.
+   19-Aug-2002  GvR     1012    Changes to string object struct for
+                                interning changes, saving 3 bytes.
 
-   17-Jul-2001	GvR	1011	Descr-branch, just to be on the safe side
+   17-Jul-2001  GvR     1011    Descr-branch, just to be on the safe side
 
    25-Jan-2001  FLD     1010    Parameters added to PyCode_New() and
                                 PyFrame_New(); Python 2.1a2
 
    14-Mar-2000  GvR     1009    Unicode API added
 
-   3-Jan-1999	GvR	1007	Decided to change back!  (Don't reuse 1008!)
+   3-Jan-1999   GvR     1007    Decided to change back!  (Don't reuse 1008!)
 
-   3-Dec-1998	GvR	1008	Python 1.5.2b1
+   3-Dec-1998   GvR     1008    Python 1.5.2b1
 
-   18-Jan-1997	GvR	1007	string interning and other speedups
+   18-Jan-1997  GvR     1007    string interning and other speedups
 
-   11-Oct-1996	GvR	renamed Py_Ellipses to Py_Ellipsis :-(
+   11-Oct-1996  GvR     renamed Py_Ellipses to Py_Ellipsis :-(
 
-   30-Jul-1996	GvR	Slice and ellipses syntax added
+   30-Jul-1996  GvR     Slice and ellipses syntax added
 
-   23-Jul-1996	GvR	For 1.4 -- better safe than sorry this time :-)
+   23-Jul-1996  GvR     For 1.4 -- better safe than sorry this time :-)
 
-   7-Nov-1995	GvR	Keyword arguments (should've been done at 1.3 :-( )
+   7-Nov-1995   GvR     Keyword arguments (should've been done at 1.3 :-( )
 
-   10-Jan-1995	GvR	Renamed globals to new naming scheme
+   10-Jan-1995  GvR     Renamed globals to new naming scheme
 
-   9-Jan-1995	GvR	Initial version (incompatible with older API)
+   9-Jan-1995   GvR     Initial version (incompatible with older API)
 */
 
-#ifdef MS_WINDOWS
-/* Special defines for Windows versions used to live here.  Things
-   have changed, and the "Version" is now in a global string variable.
-   Reason for this is that this for easier branding of a "custom DLL"
-   without actually needing a recompile.  */
-#endif /* MS_WINDOWS */
+/* The PYTHON_ABI_VERSION is introduced in PEP 384. For the lifetime of
+   Python 3, it will stay at the value of 3; changes to the limited API
+   must be performed in a strictly backwards-compatible manner. */
+#define PYTHON_ABI_VERSION 3
+#define PYTHON_ABI_STRING "3"
 
-#if SIZEOF_SIZE_T != SIZEOF_INT
-/* On a 64-bit system, rename the Py_InitModule4 so that 2.4
-   modules cannot get loaded into a 2.5 interpreter */
-#define Py_InitModule4 Py_InitModule4_64
+PyAPI_FUNC(PyObject *) PyModule_Create2(PyModuleDef*, int apiver);
+
+#ifdef Py_LIMITED_API
+#define PyModule_Create(module) \
+        PyModule_Create2((module), PYTHON_ABI_VERSION)
+#else
+#define PyModule_Create(module) \
+        PyModule_Create2((module), PYTHON_API_VERSION)
 #endif
 
-#ifdef Py_TRACE_REFS
- /* When we are tracing reference counts, rename Py_InitModule4 so
-    modules compiled with incompatible settings will generate a
-    link-time error. */
- #if SIZEOF_SIZE_T != SIZEOF_INT
- #undef Py_InitModule4
- #define Py_InitModule4 Py_InitModule4TraceRefs_64
- #else
- #define Py_InitModule4 Py_InitModule4TraceRefs
- #endif
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 >= 0x03050000
+/* New in 3.5 */
+PyAPI_FUNC(PyObject *) PyModule_FromDefAndSpec2(PyModuleDef *def,
+                                                PyObject *spec,
+                                                int module_api_version);
+
+#ifdef Py_LIMITED_API
+#define PyModule_FromDefAndSpec(module, spec) \
+    PyModule_FromDefAndSpec2((module), (spec), PYTHON_ABI_VERSION)
+#else
+#define PyModule_FromDefAndSpec(module, spec) \
+    PyModule_FromDefAndSpec2((module), (spec), PYTHON_API_VERSION)
+#endif /* Py_LIMITED_API */
+
+#endif /* New in 3.5 */
+
+#ifndef Py_LIMITED_API
+#  define Py_CPYTHON_MODSUPPORT_H
+#  include "cpython/modsupport.h"
+#  undef Py_CPYTHON_MODSUPPORT_H
 #endif
-
-PyAPI_FUNC(PyObject *) Py_InitModule4(const char *name, PyMethodDef *methods,
-                                      const char *doc, PyObject *self,
-                                      int apiver);
-
-#define Py_InitModule(name, methods) \
-	Py_InitModule4(name, methods, (char *)NULL, (PyObject *)NULL, \
-		       PYTHON_API_VERSION)
-
-#define Py_InitModule3(name, methods, doc) \
-	Py_InitModule4(name, methods, doc, (PyObject *)NULL, \
-		       PYTHON_API_VERSION)
-
-PyAPI_DATA(char *) _Py_PackageContext;
 
 #ifdef __cplusplus
 }

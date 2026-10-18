@@ -136,7 +136,6 @@
   <ItemGroup>
     <ClCompile Include="PythonDebugModule.cpp" />
     <ClCompile Include="PythonLauncher.cpp" />
-    <ClCompile Include="PythonMarshal.cpp" />
     <ClCompile Include="PythonUtils.cpp" />
     <ClCompile Include="Resource.cpp" />
     <ClCompile Include="StdAfx.cpp">
@@ -149,7 +148,6 @@
   <ItemGroup>
     <ClInclude Include="PythonDebugModule.h" />
     <ClInclude Include="PythonLauncher.h" />
-    <ClInclude Include="PythonMarshal.h" />
     <ClInclude Include="PythonUtils.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="StdAfx.h" />

@@ -17,9 +17,6 @@
     <ClCompile Include="PythonLauncher.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="PythonMarshal.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="PythonUtils.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -35,9 +32,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PythonLauncher.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="PythonMarshal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="PythonUtils.h">

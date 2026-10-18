@@ -1,178 +1,155 @@
+// Entry point of the Python C API.
+// C extensions should only #include <Python.h>, and not include directly
+// the other Python header files included by <Python.h>.
+
 #ifndef Py_PYTHON_H
 #define Py_PYTHON_H
-/* Since this is a "meta-include" file, no #ifdef __cplusplus / extern "C" { */
 
-/* Include nearly all Python header files */
+// Since this is a "meta-include" file, "#ifdef __cplusplus / extern "C" {"
+// is not needed.
 
+
+// Include Python header files
 #include "patchlevel.h"
 #include "pyconfig.h"
 #include "pymacconfig.h"
 
-/* Cyclic gc is always enabled, starting with release 2.3a1.  Supply the
- * old symbol for the benefit of extension modules written before then
- * that may be conditionalizing on it.  The core doesn't use it anymore.
- */
-#ifndef WITH_CYCLE_GC
-#define WITH_CYCLE_GC 1
+
+// Include standard header files
+// When changing these files, remember to update Doc/extending/extending.rst.
+#include <assert.h>               // assert()
+#include <inttypes.h>             // uintptr_t
+#include <limits.h>               // INT_MAX
+#include <math.h>                 // HUGE_VAL
+#include <stdarg.h>               // va_list
+#include <wchar.h>                // wchar_t
+#ifdef HAVE_SYS_TYPES_H
+#  include <sys/types.h>          // ssize_t
 #endif
 
-#include <limits.h>
-
-#ifndef UCHAR_MAX
-#error "Something's broken.  UCHAR_MAX should be defined in limits.h."
+// <errno.h>, <stdio.h>, <stdlib.h> and <string.h> headers are no longer used
+// by Python, but kept for the backward compatibility of existing third party C
+// extensions. They are not included by limited C API version 3.11 and newer.
+//
+// The <ctype.h> and <unistd.h> headers are not included by limited C API
+// version 3.13 and newer.
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 < 0x030b0000
+#  include <errno.h>              // errno
+#  include <stdio.h>              // FILE*
+#  include <stdlib.h>             // getenv()
+#  include <string.h>             // memcpy()
+#endif
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 < 0x030d0000
+#  include <ctype.h>              // tolower()
+#  ifndef MS_WINDOWS
+#    include <unistd.h>           // close()
+#  endif
 #endif
 
-#if UCHAR_MAX != 255
-#error "Python's source code assumes C's unsigned char is an 8-bit type."
+// gh-111506: The free-threaded build is not compatible with the limited API
+// or the stable ABI.
+#if defined(Py_LIMITED_API) && defined(Py_GIL_DISABLED)
+#  error "The limited API is not currently supported in the free-threaded build"
 #endif
 
-#if defined(__sgi) && defined(WITH_THREAD) && !defined(_SGI_MP_SOURCE)
-#define _SGI_MP_SOURCE
+#if defined(Py_GIL_DISABLED) && defined(_MSC_VER)
+#  include <intrin.h>             // __readgsqword()
 #endif
 
-#include <stdio.h>
-#ifndef NULL
-#   error "Python.h requires that stdio.h define NULL."
+#if defined(Py_GIL_DISABLED) && defined(__MINGW32__)
+#  include <intrin.h>             // __readgsqword()
 #endif
 
-#include <string.h>
-#ifdef HAVE_ERRNO_H
-#include <errno.h>
-#endif
-#include <stdlib.h>
-#ifdef HAVE_UNISTD_H
-#include <unistd.h>
-#endif
-
-/* For size_t? */
-#ifdef HAVE_STDDEF_H
-#include <stddef.h>
+// Suppress known warnings in Python header files.
+#if defined(_MSC_VER)
+// Warning that alignas behaviour has changed. Doesn't affect us, because we
+// never relied on the old behaviour.
+#pragma warning(push)
+#pragma warning(disable: 5274)
 #endif
 
-/* CAUTION:  Build setups should ensure that NDEBUG is defined on the
- * compiler command line when building Python in release mode; else
- * assert() calls won't be removed.
- */
-#include <assert.h>
-
+// Include Python header files
 #include "pyport.h"
-
-/* pyconfig.h or pyport.h may or may not define DL_IMPORT */
-#ifndef DL_IMPORT	/* declarations for DLL import/export */
-#define DL_IMPORT(RTYPE) RTYPE
-#endif
-#ifndef DL_EXPORT	/* declarations for DLL import/export */
-#define DL_EXPORT(RTYPE) RTYPE
-#endif
-
-/* Debug-mode build with pymalloc implies PYMALLOC_DEBUG.
- *  PYMALLOC_DEBUG is in error if pymalloc is not in use.
- */
-#if defined(Py_DEBUG) && defined(WITH_PYMALLOC) && !defined(PYMALLOC_DEBUG)
-#define PYMALLOC_DEBUG
-#endif
-#if defined(PYMALLOC_DEBUG) && !defined(WITH_PYMALLOC)
-#error "PYMALLOC_DEBUG requires WITH_PYMALLOC"
-#endif
+#include "pymacro.h"
 #include "pymath.h"
 #include "pymem.h"
-
+#include "pytypedefs.h"
+#include "pybuffer.h"
+#include "pystats.h"
+#include "pyatomic.h"
+#include "lock.h"
+#include "critical_section.h"
 #include "object.h"
+#include "refcount.h"
 #include "objimpl.h"
-
-#include "pydebug.h"
-
-#include "unicodeobject.h"
-#include "intobject.h"
-#include "boolobject.h"
-#include "longobject.h"
-#include "floatobject.h"
-#ifndef WITHOUT_COMPLEX
-#include "complexobject.h"
-#endif
-#include "rangeobject.h"
-#include "stringobject.h"
-#include "memoryobject.h"
-#include "bufferobject.h"
-#include "bytesobject.h"
+#include "typeslots.h"
+#include "pyhash.h"
+#include "cpython/pydebug.h"
 #include "bytearrayobject.h"
+#include "bytesobject.h"
+#include "unicodeobject.h"
+#include "pyerrors.h"
+#include "longobject.h"
+#include "cpython/longintrepr.h"
+#include "boolobject.h"
+#include "floatobject.h"
+#include "complexobject.h"
+#include "rangeobject.h"
+#include "memoryobject.h"
 #include "tupleobject.h"
 #include "listobject.h"
 #include "dictobject.h"
+#include "cpython/odictobject.h"
 #include "enumobject.h"
 #include "setobject.h"
 #include "methodobject.h"
 #include "moduleobject.h"
-#include "funcobject.h"
-#include "classobject.h"
+#include "monitoring.h"
+#include "cpython/funcobject.h"
+#include "cpython/classobject.h"
 #include "fileobject.h"
-#include "cobject.h"
 #include "pycapsule.h"
+#include "cpython/code.h"
+#include "pyframe.h"
 #include "traceback.h"
 #include "sliceobject.h"
-#include "cellobject.h"
+#include "cpython/cellobject.h"
 #include "iterobject.h"
-#include "genobject.h"
+#include "cpython/initconfig.h"
+#include "pystate.h"
+#include "cpython/genobject.h"
 #include "descrobject.h"
+#include "genericaliasobject.h"
 #include "warnings.h"
 #include "weakrefobject.h"
-
+#include "structseq.h"
+#include "cpython/picklebufobject.h"
+#include "cpython/pytime.h"
 #include "codecs.h"
-#include "pyerrors.h"
-
-#include "pystate.h"
-
-#include "pyarena.h"
+#include "pythread.h"
+#include "cpython/context.h"
 #include "modsupport.h"
+#include "compile.h"
 #include "pythonrun.h"
+#include "pylifecycle.h"
 #include "ceval.h"
 #include "sysmodule.h"
+#include "audit.h"
+#include "osmodule.h"
 #include "intrcheck.h"
 #include "import.h"
-
 #include "abstract.h"
-
-#include "compile.h"
-#include "eval.h"
-
-#include "pyctype.h"
+#include "bltinmodule.h"
+#include "cpython/pyctype.h"
 #include "pystrtod.h"
 #include "pystrcmp.h"
-#include "dtoa.h"
+#include "fileutils.h"
+#include "cpython/pyfpe.h"
+#include "cpython/tracemalloc.h"
 
-/* _Py_Mangle is defined in compile.c */
-PyAPI_FUNC(PyObject*) _Py_Mangle(PyObject *p, PyObject *name);
-
-/* PyArg_GetInt is deprecated and should not be used, use PyArg_Parse(). */
-#define PyArg_GetInt(v, a)	PyArg_Parse((v), "i", (a))
-
-/* PyArg_NoArgs should not be necessary.
-   Set ml_flags in the PyMethodDef to METH_NOARGS. */
-#define PyArg_NoArgs(v)		PyArg_Parse(v, "")
-
-/* Argument must be a char or an int in [-128, 127] or [0, 255]. */
-#define Py_CHARMASK(c)		((unsigned char)((c) & 0xff))
-
-#include "pyfpe.h"
-
-/* These definitions must match corresponding definitions in graminit.h.
-   There's code in compile.c that checks that they are the same. */
-#define Py_single_input 256
-#define Py_file_input 257
-#define Py_eval_input 258
-
-#ifdef HAVE_PTH
-/* GNU pth user-space thread support */
-#include <pth.h>
-#endif
-
-/* Define macros for inline documentation. */
-#define PyDoc_VAR(name) static char name[]
-#define PyDoc_STRVAR(name,str) PyDoc_VAR(name) = PyDoc_STR(str)
-#ifdef WITH_DOC_STRINGS
-#define PyDoc_STR(str) str
-#else
-#define PyDoc_STR(str) ""
+// Restore warning filter
+#ifdef _MSC_VER
+#pragma warning(pop)
 #endif
 
 #endif /* !Py_PYTHON_H */

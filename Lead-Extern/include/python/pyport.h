@@ -1,17 +1,82 @@
 #ifndef Py_PYPORT_H
 #define Py_PYPORT_H
 
-#include "pyconfig.h" /* include for defines */
-
-/* Some versions of HP-UX & Solaris need inttypes.h for int32_t,
-   INT32_MAX, etc. */
-#ifdef HAVE_INTTYPES_H
-#include <inttypes.h>
+#ifndef UCHAR_MAX
+#  error "<limits.h> header must define UCHAR_MAX"
+#endif
+#if UCHAR_MAX != 255
+#  error "Python's source code assumes C's unsigned char is an 8-bit type"
 #endif
 
-#ifdef HAVE_STDINT_H
-#include <stdint.h>
+
+// Preprocessor check for a builtin preprocessor function. Always return 0
+// if __has_builtin() macro is not defined.
+//
+// __has_builtin() is available on clang and GCC 10.
+#ifdef __has_builtin
+#  define _Py__has_builtin(x) __has_builtin(x)
+#else
+#  define _Py__has_builtin(x) 0
 #endif
+
+// Preprocessor check for a compiler __attribute__. Always return 0
+// if __has_attribute() macro is not defined.
+#ifdef __has_attribute
+#  define _Py__has_attribute(x) __has_attribute(x)
+#else
+#  define _Py__has_attribute(x) 0
+#endif
+
+// Macro to use C++ static_cast<> in the Python C API.
+#ifdef __cplusplus
+#  define _Py_STATIC_CAST(type, expr) static_cast<type>(expr)
+#else
+#  define _Py_STATIC_CAST(type, expr) ((type)(expr))
+#endif
+// Macro to use the more powerful/dangerous C-style cast even in C++.
+#define _Py_CAST(type, expr) ((type)(expr))
+
+// Cast a function to another function type T.
+//
+// The macro first casts the function to the "void func(void)" type
+// to prevent compiler warnings.
+//
+// Note that using this cast only prevents the compiler from emitting
+// warnings, but does not prevent an undefined behavior at runtime if
+// the original function signature is not respected.
+#define _Py_FUNC_CAST(T, func) _Py_CAST(T, _Py_CAST(void(*)(void), (func)))
+
+// Static inline functions should use _Py_NULL rather than using directly NULL
+// to prevent C++ compiler warnings. On C23 and newer and on C++11 and newer,
+// _Py_NULL is defined as nullptr.
+#if !defined(_MSC_VER) && \
+    ((defined (__STDC_VERSION__) && __STDC_VERSION__ >= 202311L) \
+        || (defined(__cplusplus) && __cplusplus >= 201103))
+#  define _Py_NULL nullptr
+#else
+#  define _Py_NULL NULL
+#endif
+
+
+/* Defines to build Python and its standard library:
+ *
+ * - Py_BUILD_CORE: Build Python core. Give access to Python internals, but
+ *   should not be used by third-party modules.
+ * - Py_BUILD_CORE_BUILTIN: Build a Python stdlib module as a built-in module.
+ * - Py_BUILD_CORE_MODULE: Build a Python stdlib module as a dynamic library.
+ *
+ * Py_BUILD_CORE_BUILTIN and Py_BUILD_CORE_MODULE imply Py_BUILD_CORE.
+ *
+ * On Windows, Py_BUILD_CORE_MODULE exports "PyInit_xxx" symbol, whereas
+ * Py_BUILD_CORE_BUILTIN does not.
+ */
+#if defined(Py_BUILD_CORE_BUILTIN) && !defined(Py_BUILD_CORE)
+#  define Py_BUILD_CORE
+#endif
+#if defined(Py_BUILD_CORE_MODULE) && !defined(Py_BUILD_CORE)
+#  define Py_BUILD_CORE
+#endif
+
 
 /**************************************************************************
 Symbols and macros to supply platform-independent interfaces to basic
@@ -31,26 +96,7 @@ Py_DEBUG
 Meaning:  Extra checks compiled in for debug mode.
 Used in:  Py_SAFE_DOWNCAST
 
-HAVE_UINTPTR_T
-Meaning:  The C9X type uintptr_t is supported by the compiler
-Used in:  Py_uintptr_t
-
-HAVE_LONG_LONG
-Meaning:  The compiler supports the C type "long long"
-Used in:  PY_LONG_LONG
-
 **************************************************************************/
-
-
-/* For backward compatibility only. Obsolete, do not use. */
-#ifdef HAVE_PROTOTYPES
-#define Py_PROTO(x) x
-#else
-#define Py_PROTO(x) ()
-#endif
-#ifndef Py_FPROTO
-#define Py_FPROTO(x) Py_PROTO(x)
-#endif
 
 /* typedefs for some C9X-defined synonyms for integral types.
  *
@@ -64,77 +110,31 @@ Used in:  PY_LONG_LONG
  * integral synonyms.  Only define the ones we actually need.
  */
 
-#ifdef HAVE_LONG_LONG
+/* long long is required. Ensure HAVE_LONG_LONG is defined for compatibility. */
+#ifndef HAVE_LONG_LONG
+#define HAVE_LONG_LONG 1
+#endif
 #ifndef PY_LONG_LONG
 #define PY_LONG_LONG long long
-#if defined(LLONG_MAX)
 /* If LLONG_MAX is defined in limits.h, use that. */
 #define PY_LLONG_MIN LLONG_MIN
 #define PY_LLONG_MAX LLONG_MAX
 #define PY_ULLONG_MAX ULLONG_MAX
-#elif defined(__LONG_LONG_MAX__)
-/* Otherwise, if GCC has a builtin define, use that. */
-#define PY_LLONG_MAX __LONG_LONG_MAX__
-#define PY_LLONG_MIN (-PY_LLONG_MAX-1)
-#define PY_ULLONG_MAX (__LONG_LONG_MAX__*2ULL + 1ULL)
-#else
-/* Otherwise, rely on two's complement. */
-#define PY_ULLONG_MAX (~0ULL)
-#define PY_LLONG_MAX  ((long long)(PY_ULLONG_MAX>>1))
-#define PY_LLONG_MIN (-PY_LLONG_MAX-1)
-#endif /* LLONG_MAX */
 #endif
-#endif /* HAVE_LONG_LONG */
 
-/* a build with 30-bit digits for Python long integers needs an exact-width
- * 32-bit unsigned integer type to store those digits.  (We could just use
- * type 'unsigned long', but that would be wasteful on a system where longs
- * are 64-bits.)  On Unix systems, the autoconf macro AC_TYPE_UINT32_T defines
- * uint32_t to be such a type unless stdint.h or inttypes.h defines uint32_t.
- * However, it doesn't set HAVE_UINT32_T, so we do that here.
- */
-#if (defined UINT32_MAX || defined uint32_t)
-#ifndef PY_UINT32_T
-#define HAVE_UINT32_T 1
 #define PY_UINT32_T uint32_t
-#endif
-#endif
-
-/* Macros for a 64-bit unsigned integer type; used for type 'twodigits' in the
- * long integer implementation, when 30-bit digits are enabled.
- */
-#if (defined UINT64_MAX || defined uint64_t)
-#ifndef PY_UINT64_T
-#define HAVE_UINT64_T 1
 #define PY_UINT64_T uint64_t
-#endif
-#endif
 
 /* Signed variants of the above */
-#if (defined INT32_MAX || defined int32_t)
-#ifndef PY_INT32_T
-#define HAVE_INT32_T 1
 #define PY_INT32_T int32_t
-#endif
-#endif
-#if (defined INT64_MAX || defined int64_t)
-#ifndef PY_INT64_T
-#define HAVE_INT64_T 1
 #define PY_INT64_T int64_t
-#endif
-#endif
 
-/* If PYLONG_BITS_IN_DIGIT is not defined then we'll use 30-bit digits if all
-   the necessary integer types are available, and we're on a 64-bit platform
-   (as determined by SIZEOF_VOID_P); otherwise we use 15-bit digits. */
-
+/* PYLONG_BITS_IN_DIGIT describes the number of bits per "digit" (limb) in the
+ * PyLongObject implementation (longintrepr.h). It's currently either 30 or 15,
+ * defaulting to 30. The 15-bit digit option may be removed in the future.
+ */
 #ifndef PYLONG_BITS_IN_DIGIT
-#if (defined HAVE_UINT64_T && defined HAVE_INT64_T && \
-     defined HAVE_UINT32_T && defined HAVE_INT32_T && SIZEOF_VOID_P >= 8)
 #define PYLONG_BITS_IN_DIGIT 30
-#else
-#define PYLONG_BITS_IN_DIGIT 15
-#endif
 #endif
 
 /* uintptr_t is the C9X name for an unsigned integral type such that a
@@ -142,107 +142,49 @@ Used in:  PY_LONG_LONG
  * without loss of information.  Similarly for intptr_t, wrt a signed
  * integral type.
  */
-#ifdef HAVE_UINTPTR_T
 typedef uintptr_t       Py_uintptr_t;
 typedef intptr_t        Py_intptr_t;
-
-#elif SIZEOF_VOID_P <= SIZEOF_INT
-typedef unsigned int    Py_uintptr_t;
-typedef int             Py_intptr_t;
-
-#elif SIZEOF_VOID_P <= SIZEOF_LONG
-typedef unsigned long   Py_uintptr_t;
-typedef long            Py_intptr_t;
-
-#elif defined(HAVE_LONG_LONG) && (SIZEOF_VOID_P <= SIZEOF_LONG_LONG)
-typedef unsigned PY_LONG_LONG   Py_uintptr_t;
-typedef PY_LONG_LONG            Py_intptr_t;
-
-#else
-#   error "Python needs a typedef for Py_uintptr_t in pyport.h."
-#endif /* HAVE_UINTPTR_T */
 
 /* Py_ssize_t is a signed integral type such that sizeof(Py_ssize_t) ==
  * sizeof(size_t).  C99 doesn't define such a thing directly (size_t is an
  * unsigned integral type).  See PEP 353 for details.
+ * PY_SSIZE_T_MAX is the largest positive value of type Py_ssize_t.
  */
-#ifdef HAVE_SSIZE_T
+#ifdef HAVE_PY_SSIZE_T
+
+#elif HAVE_SSIZE_T
 typedef ssize_t         Py_ssize_t;
+#   define PY_SSIZE_T_MAX SSIZE_MAX
 #elif SIZEOF_VOID_P == SIZEOF_SIZE_T
 typedef Py_intptr_t     Py_ssize_t;
+#   define PY_SSIZE_T_MAX INTPTR_MAX
 #else
 #   error "Python needs a typedef for Py_ssize_t in pyport.h."
 #endif
 
-/* Largest possible value of size_t.
-   SIZE_MAX is part of C99, so it might be defined on some
-   platforms. If it is not defined, (size_t)-1 is a portable
-   definition for C89, due to the way signed->unsigned
-   conversion is defined. */
-#ifdef SIZE_MAX
-#define PY_SIZE_MAX SIZE_MAX
-#else
-#define PY_SIZE_MAX ((size_t)-1)
-#endif
-
-/* Largest positive value of type Py_ssize_t. */
-#define PY_SSIZE_T_MAX ((Py_ssize_t)(((size_t)-1)>>1))
 /* Smallest negative value of type Py_ssize_t. */
 #define PY_SSIZE_T_MIN (-PY_SSIZE_T_MAX-1)
 
-#if SIZEOF_PID_T > SIZEOF_LONG
-#   error "Python doesn't support sizeof(pid_t) > sizeof(long)"
-#endif
+/* Py_hash_t is the same size as a pointer. */
+#define SIZEOF_PY_HASH_T SIZEOF_SIZE_T
+typedef Py_ssize_t Py_hash_t;
+/* Py_uhash_t is the unsigned equivalent needed to calculate numeric hash. */
+#define SIZEOF_PY_UHASH_T SIZEOF_SIZE_T
+typedef size_t Py_uhash_t;
 
-/* PY_FORMAT_SIZE_T is a platform-specific modifier for use in a printf
- * format to convert an argument with the width of a size_t or Py_ssize_t.
- * C99 introduced "z" for this purpose, but not all platforms support that;
- * e.g., MS compilers use "I" instead.
+/* Now PY_SSIZE_T_CLEAN is mandatory. This is just for backward compatibility. */
+typedef Py_ssize_t Py_ssize_clean_t;
+
+/* Largest possible value of size_t. */
+#define PY_SIZE_MAX SIZE_MAX
+
+/* Macro kept for backward compatibility: use directly "z" in new code.
  *
- * These "high level" Python format functions interpret "z" correctly on
- * all platforms (Python interprets the format string itself, and does whatever
- * the platform C requires to convert a size_t/Py_ssize_t argument):
- *
- *     PyString_FromFormat
- *     PyErr_Format
- *     PyString_FromFormatV
- *
- * Lower-level uses require that you interpolate the correct format modifier
- * yourself (e.g., calling printf, fprintf, sprintf, PyOS_snprintf); for
- * example,
- *
- *     Py_ssize_t index;
- *     fprintf(stderr, "index %" PY_FORMAT_SIZE_T "d sucks\n", index);
- *
- * That will expand to %ld, or %Id, or to something else correct for a
- * Py_ssize_t on the platform.
+ * PY_FORMAT_SIZE_T is a modifier for use in a printf format to convert an
+ * argument with the width of a size_t or Py_ssize_t: "z" (C99).
  */
 #ifndef PY_FORMAT_SIZE_T
-#   if SIZEOF_SIZE_T == SIZEOF_INT && !defined(__APPLE__)
-#       define PY_FORMAT_SIZE_T ""
-#   elif SIZEOF_SIZE_T == SIZEOF_LONG
-#       define PY_FORMAT_SIZE_T "l"
-#   elif defined(MS_WINDOWS)
-#       define PY_FORMAT_SIZE_T "I"
-#   else
-#       error "This platform's pyconfig.h needs to define PY_FORMAT_SIZE_T"
-#   endif
-#endif
-
-/* PY_FORMAT_LONG_LONG is analogous to PY_FORMAT_SIZE_T above, but for
- * the long long type instead of the size_t type.  It's only available
- * when HAVE_LONG_LONG is defined. The "high level" Python format
- * functions listed above will interpret "lld" or "llu" correctly on
- * all platforms.
- */
-#ifdef HAVE_LONG_LONG
-#   ifndef PY_FORMAT_LONG_LONG
-#       if defined(MS_WIN64) || defined(MS_WINDOWS)
-#           define PY_FORMAT_LONG_LONG "I64"
-#       else
-#           error "This platform's pyconfig.h needs to define PY_FORMAT_LONG_LONG"
-#       endif
-#   endif
+#   define PY_FORMAT_SIZE_T "z"
 #endif
 
 /* Py_LOCAL can be used instead of static to get the fastest possible calling
@@ -251,147 +193,26 @@ typedef Py_intptr_t     Py_ssize_t;
  * Py_LOCAL_INLINE does the same thing, and also explicitly requests inlining,
  * for platforms that support that.
  *
- * If PY_LOCAL_AGGRESSIVE is defined before python.h is included, more
- * "aggressive" inlining/optimizaion is enabled for the entire module.  This
- * may lead to code bloat, and may slow things down for those reasons.  It may
- * also lead to errors, if the code relies on pointer aliasing.  Use with
- * care.
- *
  * NOTE: You can only use this for functions that are entirely local to a
  * module; functions that are exported via method tables, callbacks, etc,
  * should keep using static.
  */
 
-#undef USE_INLINE /* XXX - set via configure? */
-
 #if defined(_MSC_VER)
-#if defined(PY_LOCAL_AGGRESSIVE)
-/* enable more aggressive optimization for visual studio */
-#pragma optimize("agtw", on)
-#endif
-/* ignore warnings if the compiler decides not to inline a function */
-#pragma warning(disable: 4710)
-/* fastest possible local call under MSVC */
-#define Py_LOCAL(type) static type __fastcall
-#define Py_LOCAL_INLINE(type) static __inline type __fastcall
-#elif defined(USE_INLINE)
-#define Py_LOCAL(type) static type
-#define Py_LOCAL_INLINE(type) static inline type
+   /* ignore warnings if the compiler decides not to inline a function */
+#  pragma warning(disable: 4710)
+   /* fastest possible local call under MSVC */
+#  define Py_LOCAL(type) static type __fastcall
+#  define Py_LOCAL_INLINE(type) static __inline type __fastcall
 #else
-#define Py_LOCAL(type) static type
-#define Py_LOCAL_INLINE(type) static type
+#  define Py_LOCAL(type) static type
+#  define Py_LOCAL_INLINE(type) static inline type
 #endif
 
-/* Py_MEMCPY can be used instead of memcpy in cases where the copied blocks
- * are often very short.  While most platforms have highly optimized code for
- * large transfers, the setup costs for memcpy are often quite high.  MEMCPY
- * solves this by doing short copies "in line".
- */
-
-#if defined(_MSC_VER)
-#define Py_MEMCPY(target, source, length) do {                          \
-        size_t i_, n_ = (length);                                       \
-        char *t_ = (void*) (target);                                    \
-        const char *s_ = (void*) (source);                              \
-        if (n_ >= 16)                                                   \
-            memcpy(t_, s_, n_);                                         \
-        else                                                            \
-            for (i_ = 0; i_ < n_; i_++)                                 \
-                t_[i_] = s_[i_];                                        \
-    } while (0)
-#else
-#define Py_MEMCPY memcpy
+// Soft deprecated since Python 3.14, use memcpy() instead.
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 < 0x030b0000
+#  define Py_MEMCPY memcpy
 #endif
-
-#include <stdlib.h>
-
-#ifdef HAVE_IEEEFP_H
-#include <ieeefp.h>  /* needed for 'finite' declaration on some platforms */
-#endif
-
-#include <math.h> /* Moved here from the math section, before extern "C" */
-
-/********************************************
- * WRAPPER FOR <time.h> and/or <sys/time.h> *
- ********************************************/
-
-#ifdef TIME_WITH_SYS_TIME
-#include <sys/time.h>
-#include <time.h>
-#else /* !TIME_WITH_SYS_TIME */
-#ifdef HAVE_SYS_TIME_H
-#include <sys/time.h>
-#else /* !HAVE_SYS_TIME_H */
-#include <time.h>
-#endif /* !HAVE_SYS_TIME_H */
-#endif /* !TIME_WITH_SYS_TIME */
-
-
-/******************************
- * WRAPPER FOR <sys/select.h> *
- ******************************/
-
-/* NB caller must include <sys/types.h> */
-
-#ifdef HAVE_SYS_SELECT_H
-
-#include <sys/select.h>
-
-#endif /* !HAVE_SYS_SELECT_H */
-
-/*******************************
- * stat() and fstat() fiddling *
- *******************************/
-
-/* We expect that stat and fstat exist on most systems.
- *  It's confirmed on Unix, Mac and Windows.
- *  If you don't have them, add
- *      #define DONT_HAVE_STAT
- * and/or
- *      #define DONT_HAVE_FSTAT
- * to your pyconfig.h. Python code beyond this should check HAVE_STAT and
- * HAVE_FSTAT instead.
- * Also
- *      #define HAVE_SYS_STAT_H
- * if <sys/stat.h> exists on your platform, and
- *      #define HAVE_STAT_H
- * if <stat.h> does.
- */
-#ifndef DONT_HAVE_STAT
-#define HAVE_STAT
-#endif
-
-#ifndef DONT_HAVE_FSTAT
-#define HAVE_FSTAT
-#endif
-
-#ifdef RISCOS
-#include <sys/types.h>
-#include "unixstuff.h"
-#endif
-
-#ifdef HAVE_SYS_STAT_H
-#if defined(PYOS_OS2) && defined(PYCC_GCC)
-#include <sys/types.h>
-#endif
-#include <sys/stat.h>
-#elif defined(HAVE_STAT_H)
-#include <stat.h>
-#endif
-
-#if defined(PYCC_VACPP)
-/* VisualAge C/C++ Failed to Define MountType Field in sys/stat.h */
-#define S_IFMT (S_IFDIR|S_IFCHR|S_IFREG)
-#endif
-
-#ifndef S_ISREG
-#define S_ISREG(x) (((x) & S_IFMT) == S_IFREG)
-#endif
-
-#ifndef S_ISDIR
-#define S_ISDIR(x) (((x) & S_IFMT) == S_IFDIR)
-#endif
-
 
 #ifdef __cplusplus
 /* Move this down here since some C++ #include's don't like to be included
@@ -439,382 +260,141 @@ extern "C" {
  *    VALUE may be evaluated more than once.
  */
 #ifdef Py_DEBUG
-#define Py_SAFE_DOWNCAST(VALUE, WIDE, NARROW) \
-    (assert((WIDE)(NARROW)(VALUE) == (VALUE)), (NARROW)(VALUE))
+#  define Py_SAFE_DOWNCAST(VALUE, WIDE, NARROW) \
+       (assert(_Py_STATIC_CAST(WIDE, _Py_STATIC_CAST(NARROW, (VALUE))) == (VALUE)), \
+        _Py_STATIC_CAST(NARROW, (VALUE)))
 #else
-#define Py_SAFE_DOWNCAST(VALUE, WIDE, NARROW) (NARROW)(VALUE)
+#  define Py_SAFE_DOWNCAST(VALUE, WIDE, NARROW) _Py_STATIC_CAST(NARROW, (VALUE))
 #endif
 
-/* Py_SET_ERRNO_ON_MATH_ERROR(x)
- * If a libm function did not set errno, but it looks like the result
- * overflowed or not-a-number, set errno to ERANGE or EDOM.  Set errno
- * to 0 before calling a libm function, and invoke this macro after,
- * passing the function result.
- * Caution:
- *    This isn't reliable.  See Py_OVERFLOWED comments.
- *    X is evaluated more than once.
- */
-#if defined(__FreeBSD__) || defined(__OpenBSD__) || (defined(__hpux) && defined(__ia64))
-#define _Py_SET_EDOM_FOR_NAN(X) if (isnan(X)) errno = EDOM;
-#else
-#define _Py_SET_EDOM_FOR_NAN(X) ;
-#endif
-#define Py_SET_ERRNO_ON_MATH_ERROR(X) \
-    do { \
-        if (errno == 0) { \
-            if ((X) == Py_HUGE_VAL || (X) == -Py_HUGE_VAL) \
-                errno = ERANGE; \
-            else _Py_SET_EDOM_FOR_NAN(X) \
-        } \
-    } while(0)
-
-/* Py_SET_ERANGE_ON_OVERFLOW(x)
- * An alias of Py_SET_ERRNO_ON_MATH_ERROR for backward-compatibility.
- */
-#define Py_SET_ERANGE_IF_OVERFLOW(X) Py_SET_ERRNO_ON_MATH_ERROR(X)
-
-/* Py_ADJUST_ERANGE1(x)
- * Py_ADJUST_ERANGE2(x, y)
- * Set errno to 0 before calling a libm function, and invoke one of these
- * macros after, passing the function result(s) (Py_ADJUST_ERANGE2 is useful
- * for functions returning complex results).  This makes two kinds of
- * adjustments to errno:  (A) If it looks like the platform libm set
- * errno=ERANGE due to underflow, clear errno. (B) If it looks like the
- * platform libm overflowed but didn't set errno, force errno to ERANGE.  In
- * effect, we're trying to force a useful implementation of C89 errno
- * behavior.
- * Caution:
- *    This isn't reliable.  See Py_OVERFLOWED comments.
- *    X and Y may be evaluated more than once.
- */
-#define Py_ADJUST_ERANGE1(X)                                            \
-    do {                                                                \
-        if (errno == 0) {                                               \
-            if ((X) == Py_HUGE_VAL || (X) == -Py_HUGE_VAL)              \
-                errno = ERANGE;                                         \
-        }                                                               \
-        else if (errno == ERANGE && (X) == 0.0)                         \
-            errno = 0;                                                  \
-    } while(0)
-
-#define Py_ADJUST_ERANGE2(X, Y)                                         \
-    do {                                                                \
-        if ((X) == Py_HUGE_VAL || (X) == -Py_HUGE_VAL ||                \
-            (Y) == Py_HUGE_VAL || (Y) == -Py_HUGE_VAL) {                \
-                        if (errno == 0)                                 \
-                                errno = ERANGE;                         \
-        }                                                               \
-        else if (errno == ERANGE)                                       \
-            errno = 0;                                                  \
-    } while(0)
-
-/*  The functions _Py_dg_strtod and _Py_dg_dtoa in Python/dtoa.c (which are
- *  required to support the short float repr introduced in Python 3.1) require
- *  that the floating-point unit that's being used for arithmetic operations
- *  on C doubles is set to use 53-bit precision.  It also requires that the
- *  FPU rounding mode is round-half-to-even, but that's less often an issue.
- *
- *  If your FPU isn't already set to 53-bit precision/round-half-to-even, and
- *  you want to make use of _Py_dg_strtod and _Py_dg_dtoa, then you should
- *
- *     #define HAVE_PY_SET_53BIT_PRECISION 1
- *
- *  and also give appropriate definitions for the following three macros:
- *
- *    _PY_SET_53BIT_PRECISION_START : store original FPU settings, and
- *        set FPU to 53-bit precision/round-half-to-even
- *    _PY_SET_53BIT_PRECISION_END : restore original FPU settings
- *    _PY_SET_53BIT_PRECISION_HEADER : any variable declarations needed to
- *        use the two macros above.
- *
- * The macros are designed to be used within a single C function: see
- * Python/pystrtod.c for an example of their use.
- */
-
-/* get and set x87 control word for gcc/x86 */
-#ifdef HAVE_GCC_ASM_FOR_X87
-#define HAVE_PY_SET_53BIT_PRECISION 1
-/* _Py_get/set_387controlword functions are defined in Python/pymath.c */
-#define _Py_SET_53BIT_PRECISION_HEADER                          \
-    unsigned short old_387controlword, new_387controlword
-#define _Py_SET_53BIT_PRECISION_START                                   \
-    do {                                                                \
-        old_387controlword = _Py_get_387controlword();                  \
-        new_387controlword = (old_387controlword & ~0x0f00) | 0x0200; \
-        if (new_387controlword != old_387controlword)                   \
-            _Py_set_387controlword(new_387controlword);                 \
-    } while (0)
-#define _Py_SET_53BIT_PRECISION_END                             \
-    if (new_387controlword != old_387controlword)               \
-        _Py_set_387controlword(old_387controlword)
-#endif
-
-/* default definitions are empty */
-#ifndef HAVE_PY_SET_53BIT_PRECISION
-#define _Py_SET_53BIT_PRECISION_HEADER
-#define _Py_SET_53BIT_PRECISION_START
-#define _Py_SET_53BIT_PRECISION_END
-#endif
-
-/* If we can't guarantee 53-bit precision, don't use the code
-   in Python/dtoa.c, but fall back to standard code.  This
-   means that repr of a float will be long (17 sig digits).
-
-   Realistically, there are two things that could go wrong:
-
-   (1) doubles aren't IEEE 754 doubles, or
-   (2) we're on x86 with the rounding precision set to 64-bits
-       (extended precision), and we don't know how to change
-       the rounding precision.
- */
-
-#if !defined(DOUBLE_IS_LITTLE_ENDIAN_IEEE754) && \
-    !defined(DOUBLE_IS_BIG_ENDIAN_IEEE754) && \
-    !defined(DOUBLE_IS_ARM_MIXED_ENDIAN_IEEE754)
-#define PY_NO_SHORT_FLOAT_REPR
-#endif
-
-/* double rounding is symptomatic of use of extended precision on x86.  If
-   we're seeing double rounding, and we don't have any mechanism available for
-   changing the FPU rounding precision, then don't use Python/dtoa.c. */
-#if defined(X87_DOUBLE_ROUNDING) && !defined(HAVE_PY_SET_53BIT_PRECISION)
-#define PY_NO_SHORT_FLOAT_REPR
-#endif
 
 /* Py_DEPRECATED(version)
  * Declare a variable, type, or function deprecated.
+ * The macro must be placed before the declaration.
  * Usage:
- *    extern int old_var Py_DEPRECATED(2.3);
- *    typedef int T1 Py_DEPRECATED(2.4);
- *    extern int x() Py_DEPRECATED(2.5);
+ *    Py_DEPRECATED(3.3) extern int old_var;
+ *    Py_DEPRECATED(3.4) typedef int T1;
+ *    Py_DEPRECATED(3.8) PyAPI_FUNC(int) Py_OldFunction(void);
  */
-#if defined(__GNUC__) && ((__GNUC__ >= 4) || \
-              (__GNUC__ == 3) && (__GNUC_MINOR__ >= 1))
+#if defined(__GNUC__) \
+    && ((__GNUC__ >= 4) || (__GNUC__ == 3) && (__GNUC_MINOR__ >= 1))
 #define Py_DEPRECATED(VERSION_UNUSED) __attribute__((__deprecated__))
+#elif defined(_MSC_VER)
+#define Py_DEPRECATED(VERSION) __declspec(deprecated( \
+                                          "deprecated in " #VERSION))
 #else
 #define Py_DEPRECATED(VERSION_UNUSED)
 #endif
 
-/**************************************************************************
-Prototypes that are missing from the standard include files on some systems
-(and possibly only some versions of such systems.)
-
-Please be conservative with adding new ones, document them and enclose them
-in platform-specific #ifdefs.
-**************************************************************************/
-
-#ifdef SOLARIS
-/* Unchecked */
-extern int gethostname(char *, int);
+// _Py_DEPRECATED_EXTERNALLY(version)
+// Deprecated outside CPython core.
+#ifdef Py_BUILD_CORE
+#define _Py_DEPRECATED_EXTERNALLY(VERSION_UNUSED)
+#else
+#define _Py_DEPRECATED_EXTERNALLY(version) Py_DEPRECATED(version)
 #endif
 
-#ifdef __BEOS__
-/* Unchecked */
-/* It's in the libs, but not the headers... - [cjh] */
-int shutdown( int, int );
+
+#if defined(__clang__)
+#define _Py_COMP_DIAG_PUSH _Pragma("clang diagnostic push")
+#define _Py_COMP_DIAG_IGNORE_DEPR_DECLS \
+    _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"")
+#define _Py_COMP_DIAG_POP _Pragma("clang diagnostic pop")
+#elif defined(__GNUC__) \
+    && ((__GNUC__ >= 5) || (__GNUC__ == 4) && (__GNUC_MINOR__ >= 6))
+#define _Py_COMP_DIAG_PUSH _Pragma("GCC diagnostic push")
+#define _Py_COMP_DIAG_IGNORE_DEPR_DECLS \
+    _Pragma("GCC diagnostic ignored \"-Wdeprecated-declarations\"")
+#define _Py_COMP_DIAG_POP _Pragma("GCC diagnostic pop")
+#elif defined(_MSC_VER)
+#define _Py_COMP_DIAG_PUSH __pragma(warning(push))
+#define _Py_COMP_DIAG_IGNORE_DEPR_DECLS __pragma(warning(disable: 4996))
+#define _Py_COMP_DIAG_POP __pragma(warning(pop))
+#else
+#define _Py_COMP_DIAG_PUSH
+#define _Py_COMP_DIAG_IGNORE_DEPR_DECLS
+#define _Py_COMP_DIAG_POP
 #endif
 
-#ifdef HAVE__GETPTY
-#include <sys/types.h>          /* we need to import mode_t */
-extern char * _getpty(int *, int, mode_t, int);
-#endif
-
-/* On QNX 6, struct termio must be declared by including sys/termio.h
-   if TCGETA, TCSETA, TCSETAW, or TCSETAF are used.  sys/termio.h must
-   be included before termios.h or it will generate an error. */
-#ifdef HAVE_SYS_TERMIO_H
-#include <sys/termio.h>
-#endif
-
-#if defined(HAVE_OPENPTY) || defined(HAVE_FORKPTY)
-#if !defined(HAVE_PTY_H) && !defined(HAVE_LIBUTIL_H) && !defined(HAVE_UTIL_H)
-/* BSDI does not supply a prototype for the 'openpty' and 'forkpty'
-   functions, even though they are included in libutil. */
-#include <termios.h>
-extern int openpty(int *, int *, char *, struct termios *, struct winsize *);
-extern pid_t forkpty(int *, char *, struct termios *, struct winsize *);
-#endif /* !defined(HAVE_PTY_H) && !defined(HAVE_LIBUTIL_H) */
-#endif /* defined(HAVE_OPENPTY) || defined(HAVE_FORKPTY) */
-
-
-/* These are pulled from various places. It isn't obvious on what platforms
-   they are necessary, nor what the exact prototype should look like (which
-   is likely to vary between platforms!) If you find you need one of these
-   declarations, please move them to a platform-specific block and include
-   proper prototypes. */
-#if 0
-
-/* From Modules/resource.c */
-extern int getrusage();
-extern int getpagesize();
-
-/* From Python/sysmodule.c and Modules/posixmodule.c */
-extern int fclose(FILE *);
-
-/* From Modules/posixmodule.c */
-extern int fdatasync(int);
-#endif /* 0 */
-
-
-/* On 4.4BSD-descendants, ctype functions serves the whole range of
- * wchar_t character set rather than single byte code points only.
- * This characteristic can break some operations of string object
- * including str.upper() and str.split() on UTF-8 locales.  This
- * workaround was provided by Tim Robbins of FreeBSD project.
+/* _Py_HOT_FUNCTION
+ * The hot attribute on a function is used to inform the compiler that the
+ * function is a hot spot of the compiled program. The function is optimized
+ * more aggressively and on many target it is placed into special subsection of
+ * the text section so all hot functions appears close together improving
+ * locality.
+ *
+ * Usage:
+ *    int _Py_HOT_FUNCTION x(void) { return 3; }
+ *
+ * Issue #28618: This attribute must not be abused, otherwise it can have a
+ * negative effect on performance. Only the functions were Python spend most of
+ * its time must use it. Use a profiler when running performance benchmark
+ * suite to find these functions.
  */
-
-#ifdef __FreeBSD__
-#include <osreldate.h>
-#if __FreeBSD_version > 500039
-# define _PY_PORT_CTYPE_UTF8_ISSUE
-#endif
-#endif
-
-
-#if defined(__APPLE__)
-# define _PY_PORT_CTYPE_UTF8_ISSUE
+#if defined(__GNUC__) \
+    && ((__GNUC__ >= 5) || (__GNUC__ == 4) && (__GNUC_MINOR__ >= 3))
+#define _Py_HOT_FUNCTION __attribute__((hot))
+#else
+#define _Py_HOT_FUNCTION
 #endif
 
-#ifdef _PY_PORT_CTYPE_UTF8_ISSUE
-#include <ctype.h>
-#include <wctype.h>
-#undef isalnum
-#define isalnum(c) iswalnum(btowc(c))
-#undef isalpha
-#define isalpha(c) iswalpha(btowc(c))
-#undef islower
-#define islower(c) iswlower(btowc(c))
-#undef isspace
-#define isspace(c) iswspace(btowc(c))
-#undef isupper
-#define isupper(c) iswupper(btowc(c))
-#undef tolower
-#define tolower(c) towlower(btowc(c))
-#undef toupper
-#define toupper(c) towupper(btowc(c))
+// Ask the compiler to always inline a static inline function. The compiler can
+// ignore it and decides to not inline the function.
+//
+// It can be used to inline performance critical static inline functions when
+// building Python in debug mode with function inlining disabled. For example,
+// MSC disables function inlining when building in debug mode.
+//
+// Marking blindly a static inline function with Py_ALWAYS_INLINE can result in
+// worse performances (due to increased code size for example). The compiler is
+// usually smarter than the developer for the cost/benefit analysis.
+//
+// If Python is built in debug mode (if the Py_DEBUG macro is defined), the
+// Py_ALWAYS_INLINE macro does nothing.
+//
+// It must be specified before the function return type. Usage:
+//
+//     static inline Py_ALWAYS_INLINE int random(void) { return 4; }
+#if defined(Py_DEBUG)
+   // If Python is built in debug mode, usually compiler optimizations are
+   // disabled. In this case, Py_ALWAYS_INLINE can increase a lot the stack
+   // memory usage. For example, forcing inlining using gcc -O0 increases the
+   // stack usage from 6 KB to 15 KB per Python function call.
+#  define Py_ALWAYS_INLINE
+#elif defined(__GNUC__) || defined(__clang__) || defined(__INTEL_COMPILER)
+#  define Py_ALWAYS_INLINE __attribute__((always_inline))
+#elif defined(_MSC_VER)
+#  define Py_ALWAYS_INLINE __forceinline
+#else
+#  define Py_ALWAYS_INLINE
 #endif
 
-
-/* Declarations for symbol visibility.
-
-  PyAPI_FUNC(type): Declares a public Python API function and return type
-  PyAPI_DATA(type): Declares public Python data and its type
-  PyMODINIT_FUNC:   A Python module init function.  If these functions are
-                    inside the Python core, they are private to the core.
-                    If in an extension module, it may be declared with
-                    external linkage depending on the platform.
-
-  As a number of platforms support/require "__declspec(dllimport/dllexport)",
-  we support a HAVE_DECLSPEC_DLL macro to save duplication.
-*/
-
-/*
-  All windows ports, except cygwin, are handled in PC/pyconfig.h.
-
-  BeOS and cygwin are the only other autoconf platform requiring special
-  linkage handling and both of these use __declspec().
-*/
-#if defined(__CYGWIN__) || defined(__BEOS__)
-#       define HAVE_DECLSPEC_DLL
+// Py_NO_INLINE
+// Disable inlining on a function. For example, it reduces the C stack
+// consumption: useful on LTO+PGO builds which heavily inline code (see
+// bpo-33720).
+//
+// Usage:
+//
+//    Py_NO_INLINE static int random(void) { return 4; }
+#if defined(__GNUC__) || defined(__clang__) || defined(__INTEL_COMPILER)
+#  define Py_NO_INLINE __attribute__ ((noinline))
+#elif defined(_MSC_VER)
+#  define Py_NO_INLINE __declspec(noinline)
+#else
+#  define Py_NO_INLINE
 #endif
 
-/* only get special linkage if built as shared or platform is Cygwin */
-#if defined(Py_ENABLE_SHARED) || defined(__CYGWIN__)
-#       if defined(HAVE_DECLSPEC_DLL)
-#               ifdef Py_BUILD_CORE
-#                       define PyAPI_FUNC(RTYPE) __declspec(dllexport) RTYPE
-#                       define PyAPI_DATA(RTYPE) extern __declspec(dllexport) RTYPE
-        /* module init functions inside the core need no external linkage */
-        /* except for Cygwin to handle embedding (FIXME: BeOS too?) */
-#                       if defined(__CYGWIN__)
-#                               define PyMODINIT_FUNC __declspec(dllexport) void
-#                       else /* __CYGWIN__ */
-#                               define PyMODINIT_FUNC void
-#                       endif /* __CYGWIN__ */
-#               else /* Py_BUILD_CORE */
-        /* Building an extension module, or an embedded situation */
-        /* public Python functions and data are imported */
-        /* Under Cygwin, auto-import functions to prevent compilation */
-        /* failures similar to those described at the bottom of 4.1: */
-        /* http://docs.python.org/extending/windows.html#a-cookbook-approach */
-#                       if !defined(__CYGWIN__)
-#                               define PyAPI_FUNC(RTYPE) __declspec(dllimport) RTYPE
-#                       endif /* !__CYGWIN__ */
-#                       define PyAPI_DATA(RTYPE) extern __declspec(dllimport) RTYPE
-        /* module init functions outside the core must be exported */
-#                       if defined(__cplusplus)
-#                               define PyMODINIT_FUNC extern "C" __declspec(dllexport) void
-#                       else /* __cplusplus */
-#                               define PyMODINIT_FUNC __declspec(dllexport) void
-#                       endif /* __cplusplus */
-#               endif /* Py_BUILD_CORE */
-#       endif /* HAVE_DECLSPEC */
-#endif /* Py_ENABLE_SHARED */
+#include "exports.h"
 
-/* If no external linkage macros defined by now, create defaults */
-#ifndef PyAPI_FUNC
-#       define PyAPI_FUNC(RTYPE) RTYPE
+#ifdef Py_LIMITED_API
+   // The internal C API must not be used with the limited C API: make sure
+   // that Py_BUILD_CORE macro is not defined in this case. These 3 macros are
+   // used by exports.h, so only undefine them afterwards.
+#  undef Py_BUILD_CORE
+#  undef Py_BUILD_CORE_BUILTIN
+#  undef Py_BUILD_CORE_MODULE
 #endif
-#ifndef PyAPI_DATA
-#       define PyAPI_DATA(RTYPE) extern RTYPE
-#endif
-#ifndef PyMODINIT_FUNC
-#       if defined(__cplusplus)
-#               define PyMODINIT_FUNC extern "C" void
-#       else /* __cplusplus */
-#               define PyMODINIT_FUNC void
-#       endif /* __cplusplus */
-#endif
-
-/* Deprecated DL_IMPORT and DL_EXPORT macros */
-#if defined(Py_ENABLE_SHARED) && defined (HAVE_DECLSPEC_DLL)
-#       if defined(Py_BUILD_CORE)
-#               define DL_IMPORT(RTYPE) __declspec(dllexport) RTYPE
-#               define DL_EXPORT(RTYPE) __declspec(dllexport) RTYPE
-#       else
-#               define DL_IMPORT(RTYPE) __declspec(dllimport) RTYPE
-#               define DL_EXPORT(RTYPE) __declspec(dllexport) RTYPE
-#       endif
-#endif
-#ifndef DL_EXPORT
-#       define DL_EXPORT(RTYPE) RTYPE
-#endif
-#ifndef DL_IMPORT
-#       define DL_IMPORT(RTYPE) RTYPE
-#endif
-/* End of deprecated DL_* macros */
-
-/* If the fd manipulation macros aren't defined,
-   here is a set that should do the job */
-
-#if 0 /* disabled and probably obsolete */
-
-#ifndef FD_SETSIZE
-#define FD_SETSIZE      256
-#endif
-
-#ifndef FD_SET
-
-typedef long fd_mask;
-
-#define NFDBITS (sizeof(fd_mask) * NBBY)        /* bits per mask */
-#ifndef howmany
-#define howmany(x, y)   (((x)+((y)-1))/(y))
-#endif /* howmany */
-
-typedef struct fd_set {
-    fd_mask     fds_bits[howmany(FD_SETSIZE, NFDBITS)];
-} fd_set;
-
-#define FD_SET(n, p)    ((p)->fds_bits[(n)/NFDBITS] |= (1 << ((n) % NFDBITS)))
-#define FD_CLR(n, p)    ((p)->fds_bits[(n)/NFDBITS] &= ~(1 << ((n) % NFDBITS)))
-#define FD_ISSET(n, p)  ((p)->fds_bits[(n)/NFDBITS] & (1 << ((n) % NFDBITS)))
-#define FD_ZERO(p)      memset((char *)(p), '\0', sizeof(*(p)))
-
-#endif /* FD_SET */
-
-#endif /* fd manipulation macros */
-
 
 /* limits.h constants that may be missing */
 
@@ -857,20 +437,10 @@ typedef struct fd_set {
  * Hide GCC attributes from compilers that don't support them.
  */
 #if (!defined(__GNUC__) || __GNUC__ < 2 || \
-     (__GNUC__ == 2 && __GNUC_MINOR__ < 7) ) && \
-    !defined(RISCOS)
+     (__GNUC__ == 2 && __GNUC_MINOR__ < 7) )
 #define Py_GCC_ATTRIBUTE(x)
 #else
 #define Py_GCC_ATTRIBUTE(x) __attribute__(x)
-#endif
-
-/*
- * Add PyArg_ParseTuple format where available.
- */
-#ifdef HAVE_ATTRIBUTE_FORMAT_PARSETUPLE
-#define Py_FORMAT_PARSETUPLE(func,p1,p2) __attribute__((format(func,p1,p2)))
-#else
-#define Py_FORMAT_PARSETUPLE(func,p1,p2)
 #endif
 
 /*
@@ -889,10 +459,6 @@ typedef struct fd_set {
 #pragma error_messages (off,E_END_OF_LOOP_CODE_NOT_REACHED)
 #endif
 
-/*
- * Older Microsoft compilers don't support the C99 long long literal suffixes,
- * so these will be defined in PC/pyconfig.h for those compilers.
- */
 #ifndef Py_LL
 #define Py_LL(x) x##LL
 #endif
@@ -900,5 +466,245 @@ typedef struct fd_set {
 #ifndef Py_ULL
 #define Py_ULL(x) Py_LL(x##U)
 #endif
+
+#define Py_VA_COPY va_copy
+
+/*
+ * Convenient macros to deal with endianness of the platform. WORDS_BIGENDIAN is
+ * detected by configure and defined in pyconfig.h. The code in pyconfig.h
+ * also takes care of Apple's universal builds.
+ */
+
+#ifdef WORDS_BIGENDIAN
+#  define PY_BIG_ENDIAN 1
+#  define PY_LITTLE_ENDIAN 0
+#else
+#  define PY_BIG_ENDIAN 0
+#  define PY_LITTLE_ENDIAN 1
+#endif
+
+#ifdef __ANDROID__
+   /* The Android langinfo.h header is not used. */
+#  undef HAVE_LANGINFO_H
+#  undef CODESET
+#endif
+
+/* Maximum value of the Windows DWORD type */
+#define PY_DWORD_MAX 4294967295U
+
+/* This macro used to tell whether Python was built with multithreading
+ * enabled.  Now multithreading is always enabled, but keep the macro
+ * for compatibility.
+ */
+#ifndef WITH_THREAD
+#  define WITH_THREAD
+#endif
+
+/* Some WebAssembly platforms do not provide a working pthread implementation.
+ * Thread support is stubbed and any attempt to create a new thread fails.
+ */
+#if (!defined(HAVE_PTHREAD_STUBS) && \
+      (!defined(__EMSCRIPTEN__) || defined(__EMSCRIPTEN_PTHREADS__)))
+#  define Py_CAN_START_THREADS 1
+#endif
+
+#ifdef WITH_THREAD
+#  ifdef Py_BUILD_CORE
+#    ifdef HAVE_THREAD_LOCAL
+#      error "HAVE_THREAD_LOCAL is already defined"
+#    endif
+#    define HAVE_THREAD_LOCAL 1
+#    ifdef thread_local
+#      define _Py_thread_local thread_local
+#    elif __STDC_VERSION__ >= 201112L && !defined(__STDC_NO_THREADS__)
+#      define _Py_thread_local _Thread_local
+#    elif defined(_MSC_VER)  /* AKA NT_THREADS */
+#      define _Py_thread_local __declspec(thread)
+#    elif defined(__GNUC__)  /* includes clang */
+#      define _Py_thread_local __thread
+#    else
+       // fall back to the PyThread_tss_*() API, or ignore.
+#      undef HAVE_THREAD_LOCAL
+#    endif
+#  endif
+#endif
+
+#if defined(__ANDROID__) || defined(__VXWORKS__)
+   // Use UTF-8 as the locale encoding, ignore the LC_CTYPE locale.
+   // See _Py_GetLocaleEncoding(), PyUnicode_DecodeLocale()
+   // and PyUnicode_EncodeLocale().
+#  define _Py_FORCE_UTF8_LOCALE
+#endif
+
+#if defined(_Py_FORCE_UTF8_LOCALE) || defined(__APPLE__)
+   // Use UTF-8 as the filesystem encoding.
+   // See PyUnicode_DecodeFSDefaultAndSize(), PyUnicode_EncodeFSDefault(),
+   // Py_DecodeLocale() and Py_EncodeLocale().
+#  define _Py_FORCE_UTF8_FS_ENCODING
+#endif
+
+/* Mark a function which cannot return. Example:
+   PyAPI_FUNC(void) _Py_NO_RETURN PyThread_exit_thread(void);
+
+   XLC support is intentionally omitted due to bpo-40244 */
+#ifndef _Py_NO_RETURN
+#if defined(__clang__) || \
+    (defined(__GNUC__) && \
+     ((__GNUC__ >= 3) || \
+      (__GNUC__ == 2) && (__GNUC_MINOR__ >= 5)))
+#  define _Py_NO_RETURN __attribute__((__noreturn__))
+#elif defined(_MSC_VER)
+#  define _Py_NO_RETURN __declspec(noreturn)
+#else
+#  define _Py_NO_RETURN
+#endif
+#endif
+
+
+// _Py_TYPEOF(expr) gets the type of an expression.
+//
+// Example: _Py_TYPEOF(x) x_copy = (x);
+//
+// The macro is only defined if GCC or clang compiler is used.
+#if defined(__GNUC__) || defined(__clang__)
+#  define _Py_TYPEOF(expr) __typeof__(expr)
+#endif
+
+
+/* A convenient way for code to know if sanitizers are enabled. */
+#if defined(__has_feature)
+#  if __has_feature(memory_sanitizer)
+#    if !defined(_Py_MEMORY_SANITIZER)
+#      define _Py_MEMORY_SANITIZER
+#      define _Py_NO_SANITIZE_MEMORY __attribute__((no_sanitize_memory))
+#    endif
+#  endif
+#  if __has_feature(address_sanitizer)
+#    if !defined(_Py_ADDRESS_SANITIZER)
+#      define _Py_ADDRESS_SANITIZER
+#      define _Py_NO_SANITIZE_ADDRESS __attribute__((no_sanitize_address))
+#    endif
+#  endif
+#  if __has_feature(thread_sanitizer)
+#    if !defined(_Py_THREAD_SANITIZER)
+#      define _Py_THREAD_SANITIZER
+#      define _Py_NO_SANITIZE_THREAD __attribute__((no_sanitize_thread))
+#    endif
+#  endif
+#elif defined(__GNUC__)
+#  if defined(__SANITIZE_ADDRESS__)
+#    define _Py_ADDRESS_SANITIZER
+#    define _Py_NO_SANITIZE_ADDRESS __attribute__((no_sanitize_address))
+#  endif
+#  if defined(__SANITIZE_THREAD__)
+#    define _Py_THREAD_SANITIZER
+#    define _Py_NO_SANITIZE_THREAD __attribute__((no_sanitize_thread))
+#  elif  __GNUC__ > 5 || (__GNUC__ == 5 && __GNUC_MINOR__ >= 1)
+     // TSAN is supported since GCC 5.1, but __SANITIZE_THREAD__ macro
+     // is provided only since GCC 7.
+#    define _Py_NO_SANITIZE_THREAD __attribute__((no_sanitize_thread))
+#  endif
+#endif
+
+#ifndef _Py_NO_SANITIZE_ADDRESS
+#  define _Py_NO_SANITIZE_ADDRESS
+#endif
+#ifndef _Py_NO_SANITIZE_THREAD
+#  define _Py_NO_SANITIZE_THREAD
+#endif
+#ifndef _Py_NO_SANITIZE_MEMORY
+#  define _Py_NO_SANITIZE_MEMORY
+#endif
+
+/* AIX has __bool__ redefined in it's system header file. */
+#if defined(_AIX) && defined(__bool__)
+#undef __bool__
+#endif
+
+// Make sure we have maximum alignment, even if the current compiler
+// does not support max_align_t. Note that:
+// - Autoconf reports alignment of unknown types to 0.
+// - 'long double' has maximum alignment on *most* platforms,
+//   looks like the best we can do for pre-C11 compilers.
+// - The value is tested, see test_alignof_max_align_t
+#if !defined(ALIGNOF_MAX_ALIGN_T) || ALIGNOF_MAX_ALIGN_T == 0
+#   undef ALIGNOF_MAX_ALIGN_T
+#   define ALIGNOF_MAX_ALIGN_T _Alignof(long double)
+#endif
+
+#ifndef PY_CXX_CONST
+#  ifdef __cplusplus
+#    define PY_CXX_CONST const
+#  else
+#    define PY_CXX_CONST
+#  endif
+#endif
+
+#if defined(__sgi) && !defined(_SGI_MP_SOURCE)
+#  define _SGI_MP_SOURCE
+#endif
+
+// Explicit fallthrough in switch case to avoid warnings
+// with compiler flag -Wimplicit-fallthrough.
+//
+// Usage example:
+//
+//     switch (value) {
+//     case 1: _Py_FALLTHROUGH;
+//     case 2: code; break;
+//     }
+//
+// __attribute__((fallthrough)) was introduced in GCC 7 and Clang 10 /
+// Apple Clang 12.0. Earlier Clang versions support only the C++11
+// style fallthrough attribute, not the GCC extension syntax used here,
+// and __has_attribute(fallthrough) evaluates to 1.
+#if _Py__has_attribute(fallthrough) && (!defined(__clang__) || \
+    (!defined(__apple_build_version__) && __clang_major__ >= 10) || \
+    (defined(__apple_build_version__) && __clang_major__ >= 12))
+#  define _Py_FALLTHROUGH __attribute__((fallthrough))
+#else
+#  define _Py_FALLTHROUGH do { } while (0)
+#endif
+
+
+// _Py_NO_SANITIZE_UNDEFINED(): Disable Undefined Behavior sanitizer (UBsan)
+// on a function.
+//
+// Clang and GCC 9.0+ use __attribute__((no_sanitize("undefined"))).
+// GCC 4.9+ uses __attribute__((no_sanitize_undefined)).
+#if defined(__has_feature)
+#  if __has_feature(undefined_behavior_sanitizer)
+#    define _Py_NO_SANITIZE_UNDEFINED __attribute__((no_sanitize("undefined")))
+#  endif
+#endif
+#if !defined(_Py_NO_SANITIZE_UNDEFINED) && defined(__GNUC__) \
+    && ((__GNUC__ >= 5) || (__GNUC__ == 4) && (__GNUC_MINOR__ >= 9))
+#  define _Py_NO_SANITIZE_UNDEFINED __attribute__((no_sanitize_undefined))
+#endif
+#ifndef _Py_NO_SANITIZE_UNDEFINED
+#  define _Py_NO_SANITIZE_UNDEFINED
+#endif
+
+
+// _Py_NONSTRING: The nonstring variable attribute specifies that an object or
+// member declaration with type array of char, signed char, or unsigned char,
+// or pointer to such a type is intended to store character arrays that do not
+// necessarily contain a terminating NUL.
+//
+// Usage:
+//
+//   char name [8] _Py_NONSTRING;
+#if _Py__has_attribute(nonstring)
+#  define _Py_NONSTRING __attribute__((nonstring))
+#else
+#  define _Py_NONSTRING
+#endif
+
+
+// Assume the stack grows down unless specified otherwise
+#ifndef _Py_STACK_GROWS_DOWN
+#  define _Py_STACK_GROWS_DOWN 1
+#endif
+
 
 #endif /* Py_PYPORT_H */

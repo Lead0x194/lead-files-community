@@ -6,68 +6,39 @@
 extern "C" {
 #endif
 
-
 typedef struct _PyWeakReference PyWeakReference;
-
-/* PyWeakReference is the base struct for the Python ReferenceType, ProxyType,
- * and CallableProxyType.
- */
-struct _PyWeakReference {
-    PyObject_HEAD
-
-    /* The object to which this is a weak reference, or Py_None if none.
-     * Note that this is a stealth reference:  wr_object's refcount is
-     * not incremented to reflect this pointer.
-     */
-    PyObject *wr_object;
-
-    /* A callable to invoke when wr_object dies, or NULL if none. */
-    PyObject *wr_callback;
-
-    /* A cache for wr_object's hash code.  As usual for hashes, this is -1
-     * if the hash code isn't known yet.
-     */
-    long hash;
-
-    /* If wr_object is weakly referenced, wr_object has a doubly-linked NULL-
-     * terminated list of weak references to it.  These are the list pointers.
-     * If wr_object goes away, wr_object is set to Py_None, and these pointers
-     * have no meaning then.
-     */
-    PyWeakReference *wr_prev;
-    PyWeakReference *wr_next;
-};
 
 PyAPI_DATA(PyTypeObject) _PyWeakref_RefType;
 PyAPI_DATA(PyTypeObject) _PyWeakref_ProxyType;
 PyAPI_DATA(PyTypeObject) _PyWeakref_CallableProxyType;
 
-#define PyWeakref_CheckRef(op) PyObject_TypeCheck(op, &_PyWeakref_RefType)
+#define PyWeakref_CheckRef(op) PyObject_TypeCheck((op), &_PyWeakref_RefType)
 #define PyWeakref_CheckRefExact(op) \
-        (Py_TYPE(op) == &_PyWeakref_RefType)
+        Py_IS_TYPE((op), &_PyWeakref_RefType)
 #define PyWeakref_CheckProxy(op) \
-        ((Py_TYPE(op) == &_PyWeakref_ProxyType) || \
-         (Py_TYPE(op) == &_PyWeakref_CallableProxyType))
+        (Py_IS_TYPE((op), &_PyWeakref_ProxyType) \
+         || Py_IS_TYPE((op), &_PyWeakref_CallableProxyType))
 
-/* This macro calls PyWeakref_CheckRef() last since that can involve a
-   function call; this makes it more likely that the function call
-   will be avoided. */
 #define PyWeakref_Check(op) \
         (PyWeakref_CheckRef(op) || PyWeakref_CheckProxy(op))
 
 
 PyAPI_FUNC(PyObject *) PyWeakref_NewRef(PyObject *ob,
-                                              PyObject *callback);
+                                        PyObject *callback);
 PyAPI_FUNC(PyObject *) PyWeakref_NewProxy(PyObject *ob,
-                                                PyObject *callback);
-PyAPI_FUNC(PyObject *) PyWeakref_GetObject(PyObject *ref);
+                                          PyObject *callback);
+Py_DEPRECATED(3.13) PyAPI_FUNC(PyObject *) PyWeakref_GetObject(PyObject *ref);
 
-PyAPI_FUNC(Py_ssize_t) _PyWeakref_GetWeakrefCount(PyWeakReference *head);
+#if !defined(Py_LIMITED_API) || Py_LIMITED_API+0 >= 0x030D0000
+PyAPI_FUNC(int) PyWeakref_GetRef(PyObject *ref, PyObject **pobj);
+#endif
 
-PyAPI_FUNC(void) _PyWeakref_ClearRef(PyWeakReference *self);
 
-#define PyWeakref_GET_OBJECT(ref) (((PyWeakReference *)(ref))->wr_object)
-
+#ifndef Py_LIMITED_API
+#  define Py_CPYTHON_WEAKREFOBJECT_H
+#  include "cpython/weakrefobject.h"
+#  undef Py_CPYTHON_WEAKREFOBJECT_H
+#endif
 
 #ifdef __cplusplus
 }
