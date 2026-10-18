@@ -94,7 +94,7 @@ void CSpeedTreeWrapper::OnRenderPCBlocker()
 {
 	if (ms_dwBranchVertexShader == 0)
 	{
-		ms_dwBranchVertexShader = LoadBranchShader(ms_lpd3dDevice);
+		ms_dwBranchVertexShader = LoadBranchShader();
 		//LogBox("Vertex Shader not assigned. You must call CSpeedTreeWrapper::SetVertexShader for this");
 	}
 	
@@ -237,7 +237,7 @@ void CSpeedTreeWrapper::OnRender()
 {
 	if (ms_dwBranchVertexShader == 0)
 	{
-		ms_dwBranchVertexShader = LoadBranchShader(ms_lpd3dDevice);
+		ms_dwBranchVertexShader = LoadBranchShader();
 		//LogBox("Vertex Shader not assigned. You must call CSpeedTreeWrapper::SetVertexShader for this");
 	}
 	
