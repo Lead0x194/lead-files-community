@@ -471,6 +471,9 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 		bool RecvPartyInvite();
 		bool RecvPartyAdd();
 		bool RecvPartyUpdate();
+#ifdef ENABLE_PARTY_MAP
+		bool RecvPartyPositionInfo();
+#endif
 		bool RecvPartyRemove();
 		bool RecvPartyLink();
 		bool RecvPartyUnlink();
