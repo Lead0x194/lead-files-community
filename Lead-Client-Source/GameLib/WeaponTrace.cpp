@@ -326,10 +326,13 @@ void CWeaponTrace::Render()
 	STATEMANAGER.SetRenderState(D3DRS_LIGHTING, FALSE);
 	STATEMANAGER.SetTexture(0, lpTexture);
 	STATEMANAGER.SetTexture(1, NULL);
+	const bool bShaderPipeline = m_bUseTexture ? CGraphicBase::BeginPDTTextureShader() : CGraphicBase::BeginPDTDiffuseShader();
 	STATEMANAGER.DrawPrimitiveUP(D3DPT_TRIANGLESTRIP,
 								 int(m_PDTVertexVector.size() - 2),
 								 &m_PDTVertexVector[0],
 								 sizeof(TPDTVertex));
+	if (bShaderPipeline)
+		CGraphicBase::EndPDTShader();
 	
 	STATEMANAGER.SetRenderState(D3DRS_LIGHTING, TRUE);
 

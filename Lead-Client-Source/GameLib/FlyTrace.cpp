@@ -272,7 +272,13 @@ void CFlyTrace::Render()
 
 	for(TFlyVertexSetVector::iterator it = VSVector.begin();it!=VSVector.end();++it)
 	{
-		STATEMANAGER.DrawPrimitiveUP(D3DPT_TRIANGLESTRIP, 4, it->second.v, sizeof(TVertex));
+		if (CGraphicBase::BeginPDTDiffuseShader())
+		{
+			STATEMANAGER.DrawPrimitiveUP(D3DPT_TRIANGLESTRIP, 4, it->second.v, sizeof(TVertex));
+			CGraphicBase::EndPDTShader();
+		}
+		else
+			STATEMANAGER.DrawPrimitiveUP(D3DPT_TRIANGLESTRIP, 4, it->second.v, sizeof(TVertex));
 	}
 	STATEMANAGER.RestoreRenderState(D3DRS_DESTBLEND);
 	STATEMANAGER.RestoreRenderState(D3DRS_SRCBLEND);
