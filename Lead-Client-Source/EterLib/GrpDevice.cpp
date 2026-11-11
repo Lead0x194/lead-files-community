@@ -595,21 +595,6 @@ RETRY:
 	else
 		GRAPHICS_CAPS_CAN_NOT_TEXTURE_ADDRESS_BORDER=true;
 
-	//D3DADAPTER_IDENTIFIER8& d3dAdapterId=pkD3DAdapterInfo->GetIdentifier();
-	if (strnicmp(d3dAdapterId.Driver, "SIS", 3) == 0)
-	{
-		GRAPHICS_CAPS_CAN_NOT_DRAW_LINE = true;
-		GRAPHICS_CAPS_CAN_NOT_DRAW_SHADOW = true;
-		GRAPHICS_CAPS_HALF_SIZE_IMAGE = true;
-		ms_isLowTextureMemory = true;
-	}
-	else if (strnicmp(d3dAdapterId.Driver, "3dfx", 4) == 0)
-	{
-		GRAPHICS_CAPS_CAN_NOT_DRAW_SHADOW = true;
-		GRAPHICS_CAPS_HALF_SIZE_IMAGE = true;
-		ms_isLowTextureMemory = true;
-	}
-
 	return (iRet);
 }
 
