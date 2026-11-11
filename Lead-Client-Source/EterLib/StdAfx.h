@@ -14,7 +14,7 @@
 #endif
 
 #include <dx9/d3d9.h>
-#include <dx9/d3dx9.h>
+#include <d3dx9math_shim.h>
 
 #define DIRECTINPUT_VERSION 0x0800
 

@@ -6,7 +6,7 @@
 #include <map>
 #include <vector>
 
-#include <dx9/d3dx9.h>
+#include <d3dx9math_shim.h>
 
 template<typename T>
 class CTransitor

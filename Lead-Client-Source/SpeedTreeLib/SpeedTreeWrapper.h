@@ -40,7 +40,7 @@
 
 #include <dx9/d3d9.h>
 #include <dx9/d3d9types.h>
-#include <dx9/d3dx9.h>
+#include <d3dx9math_shim.h>
 #include <vector>
 
 #include "../eterLib/GrpObjectInstance.h"
