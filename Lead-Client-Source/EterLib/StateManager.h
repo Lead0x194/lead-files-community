@@ -256,6 +256,11 @@ class CStateManager : public CSingleton<CStateManager>
 		void	SetLight(DWORD index, CONST D3DLIGHT9* pLight);
 		void	GetLight(DWORD index, D3DLIGHT9* pLight);
 
+		HRESULT	GetRenderTarget(DWORD RenderTargetIndex, LPDIRECT3DSURFACE9* ppRenderTarget);
+		HRESULT	SetRenderTarget(DWORD RenderTargetIndex, LPDIRECT3DSURFACE9 pRenderTarget);
+		HRESULT	GetDepthStencilSurface(LPDIRECT3DSURFACE9* ppZStencilSurface);
+		HRESULT	SetDepthStencilSurface(LPDIRECT3DSURFACE9 pNewZStencil);
+
 		// Renderstates
 		void	SaveRenderState(D3DRENDERSTATETYPE Type, DWORD dwValue);
 		void	RestoreRenderState(D3DRENDERSTATETYPE Type);

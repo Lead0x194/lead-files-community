@@ -23,6 +23,26 @@ void CStateManager::SetLight(DWORD index, CONST D3DLIGHT9* pLight)
 	m_lpD3DDev->SetLight(index, pLight);
 }
 
+HRESULT CStateManager::GetRenderTarget(DWORD RenderTargetIndex, LPDIRECT3DSURFACE9* ppRenderTarget)
+{
+	return m_lpD3DDev->GetRenderTarget(RenderTargetIndex, ppRenderTarget);
+}
+
+HRESULT CStateManager::SetRenderTarget(DWORD RenderTargetIndex, LPDIRECT3DSURFACE9 pRenderTarget)
+{
+	return m_lpD3DDev->SetRenderTarget(RenderTargetIndex, pRenderTarget);
+}
+
+HRESULT CStateManager::GetDepthStencilSurface(LPDIRECT3DSURFACE9* ppZStencilSurface)
+{
+	return m_lpD3DDev->GetDepthStencilSurface(ppZStencilSurface);
+}
+
+HRESULT CStateManager::SetDepthStencilSurface(LPDIRECT3DSURFACE9 pNewZStencil)
+{
+	return m_lpD3DDev->SetDepthStencilSurface(pNewZStencil);
+}
+
 void CStateManager::GetLight(DWORD index, D3DLIGHT9* pLight)
 {
 	assert(index<8);

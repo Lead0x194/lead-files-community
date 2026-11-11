@@ -92,25 +92,25 @@ bool CMapOutdoor::BeginRenderCharacterShadowToTexture()
 	bool bSuccess = true;
 
 	// Backup Device Context
-	if (FAILED(ms_lpd3dDevice->GetRenderTarget(0, &m_lpBackupRenderTargetSurface)))
+	if (FAILED(STATEMANAGER.GetRenderTarget(0, &m_lpBackupRenderTargetSurface)))
 	{
 		TraceError("CMapOutdoor::BeginRenderCharacterShadowToTexture : Unable to Save Window Render Target\n");
 		bSuccess = false;
 	}
 
-	if (FAILED(ms_lpd3dDevice->GetDepthStencilSurface(&m_lpBackupDepthSurface)))
+	if (FAILED(STATEMANAGER.GetDepthStencilSurface(&m_lpBackupDepthSurface)))
 	{
 		TraceError("CMapOutdoor::BeginRenderCharacterShadowToTexture : Unable to Save Window Depth Surface\n");
 		bSuccess = false;
 	}
 
-	if (FAILED(ms_lpd3dDevice->SetRenderTarget(0, m_lpCharacterShadowMapRenderTargetSurface)))
+	if (FAILED(STATEMANAGER.SetRenderTarget(0, m_lpCharacterShadowMapRenderTargetSurface)))
 	{
 		TraceError("CMapOutdoor::BeginRenderCharacterShadowToTexture : Unable to Set Shadow Map Render Target\n");
 		bSuccess = false;
 	}
 
-	if (FAILED(ms_lpd3dDevice->SetDepthStencilSurface(m_lpCharacterShadowMapDepthSurface)))
+	if (FAILED(STATEMANAGER.SetDepthStencilSurface(m_lpCharacterShadowMapDepthSurface)))
 	{
 		TraceError("CMapOutdoor::BeginRenderCharacterShadowToTexture : Unable to Set Shadow Map Render Target\n");
 		bSuccess = false;
@@ -141,8 +141,8 @@ void CMapOutdoor::EndRenderCharacterShadowToTexture()
 {
 	ms_lpd3dDevice->SetViewport(&m_BackupViewport);
 
-	ms_lpd3dDevice->SetDepthStencilSurface(m_lpBackupDepthSurface);
-	ms_lpd3dDevice->SetRenderTarget(0, m_lpBackupRenderTargetSurface);
+	STATEMANAGER.SetDepthStencilSurface(m_lpBackupDepthSurface);
+	STATEMANAGER.SetRenderTarget(0, m_lpBackupRenderTargetSurface);
 
 	SAFE_RELEASE(m_lpBackupDepthSurface);
 	SAFE_RELEASE(m_lpBackupRenderTargetSurface);
