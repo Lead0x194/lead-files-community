@@ -36,21 +36,19 @@ void CPythonSystem::GetDisplaySettings()
 	memset(m_ResolutionList, 0, sizeof(TResolution) * RESOLUTION_MAX_NUM);
 	m_ResolutionCount = 0;
 
-	LPDIRECT3D9EX lpD3D = CPythonGraphic::Instance().GetD3D();
-
 	D3DADAPTER_IDENTIFIER9 d3dAdapterIdentifier;
 	D3DDISPLAYMODE d3ddmDesktop;
 
-	lpD3D->GetAdapterIdentifier(0, 0, &d3dAdapterIdentifier);
-	lpD3D->GetAdapterDisplayMode(0, &d3ddmDesktop);
+	CGraphicBase::GetAdapterIdentifier(&d3dAdapterIdentifier);
+	CGraphicBase::GetAdapterDisplayMode(&d3ddmDesktop);
 
 	// AI ¾iμªAI°¡ °¡Ao°i AO´A μ?½ºCA·¡AI ¸?μa°¹¼o¸| ³ª¿­CN´U..
-	DWORD dwNumAdapterModes = lpD3D->GetAdapterModeCount(0, d3ddmDesktop.Format);
+	DWORD dwNumAdapterModes = CGraphicBase::GetAdapterModeCount(d3ddmDesktop.Format);
 
 	for (UINT iMode = 0; iMode < dwNumAdapterModes; iMode++)
 	{
 		D3DDISPLAYMODE DisplayMode;
-		lpD3D->EnumAdapterModes(0, d3ddmDesktop.Format, iMode, &DisplayMode);
+		CGraphicBase::EnumAdapterModes(d3ddmDesktop.Format, iMode, &DisplayMode);
 		DWORD bpp = 0;
 
 		// Filters out only those above 800 and 600.

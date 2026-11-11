@@ -208,6 +208,12 @@ class CGraphicBase
 		
 		void		SetViewport(DWORD dwX, DWORD dwY, DWORD dwWidth, DWORD dwHeight, float fMinZ, float fMaxZ);
 		static void		GetBackBufferSize(UINT* puWidth, UINT* puHeight);
+		static bool		SupportsFullscreenGamma();
+		static void		SetDeviceGammaRamp(CONST D3DGAMMARAMP* pRamp);
+		static HRESULT	GetAdapterIdentifier(D3DADAPTER_IDENTIFIER9* pIdentifier);
+		static HRESULT	GetAdapterDisplayMode(D3DDISPLAYMODE* pMode);
+		static UINT		GetAdapterModeCount(D3DFORMAT eFormat);
+		static HRESULT	EnumAdapterModes(D3DFORMAT eFormat, UINT uMode, D3DDISPLAYMODE* pMode);
 		static bool		IsTLVertexClipping();
 		static bool		IsFastTNL();
 		static bool		IsLowTextureMemory();
