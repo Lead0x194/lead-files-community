@@ -19,6 +19,9 @@
     <ClCompile Include="GrpD3DXBuffer.cpp" />
     <ClCompile Include="GrpDetector.cpp" />
     <ClCompile Include="GrpDevice.cpp" />
+    <ClCompile Include="GrpDeviceDX12.cpp" />
+    <ClCompile Include="GrpUploadRingDX12.cpp" />
+    <ClCompile Include="GrpConstantShadowDX12.cpp" />
     <ClCompile Include="GrpDIB.cpp" />
     <ClCompile Include="GrpExpandedImageInstance.cpp" />
     <ClCompile Include="GrpFontTexture.cpp" />
@@ -91,6 +94,9 @@
     <ClInclude Include="GrpD3DXBuffer.h" />
     <ClInclude Include="GrpDetector.h" />
     <ClInclude Include="GrpDevice.h" />
+    <ClInclude Include="GrpDeviceDX12.h" />
+    <ClInclude Include="GrpUploadRingDX12.h" />
+    <ClInclude Include="GrpConstantShadowDX12.h" />
     <ClInclude Include="GrpDIB.h" />
     <ClInclude Include="GrpExpandedImageInstance.h" />
     <ClInclude Include="GrpFontTexture.h" />
