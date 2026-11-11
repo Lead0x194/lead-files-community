@@ -62,7 +62,5 @@ class CPythonGraphic : public CScreen, public CSingleton<CPythonGraphic>
 
 		CCullingManager							m_CullingManager;
 
-		D3DVIEWPORT9							m_backupViewport;
-
 		float									m_fOrthoDepth;
 };

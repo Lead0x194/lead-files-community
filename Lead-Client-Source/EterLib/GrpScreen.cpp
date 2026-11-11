@@ -618,13 +618,13 @@ void CScreen::SetClearStencil(DWORD stencil)
 void CScreen::ClearDepthBuffer()
 {
 	assert(ms_lpd3dDevice != NULL);
-	ms_lpd3dDevice->Clear(0L, NULL, D3DCLEAR_ZBUFFER, ms_clearColor, ms_clearDepth, ms_clearStencil);
+	STATEMANAGER.Clear(D3DCLEAR_ZBUFFER, ms_clearColor, ms_clearDepth, ms_clearStencil);
 }
 
 void CScreen::Clear()
 {
 	assert(ms_lpd3dDevice != NULL);
-	ms_lpd3dDevice->Clear(0L, NULL, D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, ms_clearColor, ms_clearDepth, ms_clearStencil);
+	STATEMANAGER.Clear(D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER, ms_clearColor, ms_clearDepth, ms_clearStencil);
 }
 
 BOOL CScreen::IsLostDevice()
