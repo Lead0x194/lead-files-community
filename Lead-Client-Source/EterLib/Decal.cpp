@@ -229,15 +229,29 @@ void CDecal::Render()
 	
 	STATEMANAGER.SetFVF(D3DFVF_XYZ | D3DFVF_DIFFUSE | D3DFVF_TEX1);
 	
+	// Fans expanded to one triangle list (DX12 has no fan topology).
+	static std::vector<WORD> s_kListIndices;
+	s_kListIndices.clear();
 	for (DWORD dwi = 0; dwi < m_TriangleFanStructVector.size(); ++dwi)
-		STATEMANAGER.DrawIndexedPrimitiveUP(D3DPT_TRIANGLEFAN,
-		m_TriangleFanStructVector[dwi].m_wMinIndex,
-		m_TriangleFanStructVector[dwi].m_dwVertexCount,
-		m_TriangleFanStructVector[dwi].m_dwPrimitiveCount,
-		m_Indices + m_TriangleFanStructVector[dwi].m_wMinIndex,
-		D3DFMT_INDEX16,
-		m_Vertices,
-		sizeof(TPDTVertex));
+	{
+		const TTRIANGLEFANSTRUCT& c_rkFan = m_TriangleFanStructVector[dwi];
+		const WORD* c_pwFan = m_Indices + c_rkFan.m_wMinIndex;
+		for (DWORD dwk = 1; dwk + 1 < c_rkFan.m_dwVertexCount; ++dwk)
+		{
+			s_kListIndices.push_back(c_pwFan[0]);
+			s_kListIndices.push_back(c_pwFan[dwk]);
+			s_kListIndices.push_back(c_pwFan[dwk + 1]);
+		}
+	}
+	if (!s_kListIndices.empty())
+		STATEMANAGER.DrawIndexedPrimitiveUP(D3DPT_TRIANGLELIST,
+			0,
+			m_dwVertexCount,
+			static_cast<DWORD>(s_kListIndices.size() / 3),
+			&s_kListIndices[0],
+			D3DFMT_INDEX16,
+			m_Vertices,
+			sizeof(TPDTVertex));
 }
 
 /*
