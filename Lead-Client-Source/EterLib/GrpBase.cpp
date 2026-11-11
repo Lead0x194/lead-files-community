@@ -239,7 +239,7 @@ void CGraphicBase::SetSimpleCamera(float x, float y, float z, float pitch, float
 	UpdateViewMatrix();
 
 	// This is levites's virtual(?) code which you should not trust.
-	ms_lpd3dDevice->GetTransform(D3DTS_WORLD, &ms_matWorld);
+	STATEMANAGER.GetTransform(D3DTS_WORLD, &ms_matWorld);
 	D3DXMatrixMultiply(&ms_matWorldView, &ms_matWorld, &ms_matView);
 }
 
@@ -256,7 +256,7 @@ void CGraphicBase::SetAroundCamera(float distance, float pitch, float roll, floa
 	UpdateViewMatrix();
 
 	// This is levites's virtual(?) code which you should not trust.
-	ms_lpd3dDevice->GetTransform(D3DTS_WORLD, &ms_matWorld);
+	STATEMANAGER.GetTransform(D3DTS_WORLD, &ms_matWorld);
 	D3DXMatrixMultiply(&ms_matWorldView, &ms_matWorld, &ms_matView);
 }
 
@@ -504,6 +504,31 @@ void CGraphicBase::ResetFaceCount()
 HRESULT CGraphicBase::GetLastResult()
 {
 	return ms_hLastResult;
+}
+
+HRESULT CGraphicBase::CreateDeviceTexture(UINT uWidth, UINT uHeight, UINT uLevels, DWORD dwUsage, D3DFORMAT eFormat, D3DPOOL ePool, LPDIRECT3DTEXTURE9* ppTexture)
+{
+	return ms_lpd3dDevice->CreateTexture(uWidth, uHeight, uLevels, dwUsage, eFormat, ePool, ppTexture, NULL);
+}
+
+HRESULT CGraphicBase::CreateDeviceVertexBuffer(UINT uLength, DWORD dwUsage, DWORD dwFVF, D3DPOOL ePool, LPDIRECT3DVERTEXBUFFER9* ppVertexBuffer)
+{
+	return ms_lpd3dDevice->CreateVertexBuffer(uLength, dwUsage, dwFVF, ePool, ppVertexBuffer, NULL);
+}
+
+HRESULT CGraphicBase::CreateDeviceIndexBuffer(UINT uLength, DWORD dwUsage, D3DFORMAT eFormat, D3DPOOL ePool, LPDIRECT3DINDEXBUFFER9* ppIndexBuffer)
+{
+	return ms_lpd3dDevice->CreateIndexBuffer(uLength, dwUsage, eFormat, ePool, ppIndexBuffer, NULL);
+}
+
+HRESULT CGraphicBase::CreateDeviceDepthStencilSurface(UINT uWidth, UINT uHeight, D3DFORMAT eFormat, D3DMULTISAMPLE_TYPE eMultiSample, DWORD dwMultisampleQuality, BOOL bDiscard, LPDIRECT3DSURFACE9* ppSurface)
+{
+	return ms_lpd3dDevice->CreateDepthStencilSurface(uWidth, uHeight, eFormat, eMultiSample, dwMultisampleQuality, bDiscard, ppSurface, NULL);
+}
+
+HRESULT CGraphicBase::UpdateDeviceTexture(LPDIRECT3DBASETEXTURE9 pSourceTexture, LPDIRECT3DBASETEXTURE9 pDestinationTexture)
+{
+	return ms_lpd3dDevice->UpdateTexture(pSourceTexture, pDestinationTexture);
 }
 
 CGraphicBase::CGraphicBase()
