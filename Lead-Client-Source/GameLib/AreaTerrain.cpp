@@ -781,9 +781,9 @@ LPDIRECT3DTEXTURE9 CTerrain::AddTexture32(BYTE byImageNum, BYTE * pbyImage, long
 
 	UINT uiNewWidth = 256;
 	UINT uiNewHeight = 256;
-	hr = ms_lpd3dDevice->CreateTexture(
-		uiNewWidth, uiNewHeight, 5, D3DUSAGE_DYNAMIC, 
-		format, D3DPOOL_DEFAULT, &pkTex, NULL);
+	hr = CreateDeviceTexture(
+		uiNewWidth, uiNewHeight, 5, D3DUSAGE_DYNAMIC,
+		format, D3DPOOL_DEFAULT, &pkTex);
 	if (FAILED(hr))
 	{
 		TraceError("CTerrain::AddTexture32 - CreateTexture failed hr=0x%08X w=%u h=%u levels=%u usage=%u fmt=%u pool=%u", hr, uiNewWidth, uiNewHeight, 5u, (unsigned)D3DUSAGE_DYNAMIC, (unsigned)format, (unsigned)D3DPOOL_DEFAULT);
@@ -1151,23 +1151,26 @@ void CTerrain::AllocateMarkedSplats(BYTE * pbyAlphaMap)
 		} while(ulRef > 0);
 	}
 
-	do
+	hr = CreateDeviceTexture(ATTRMAP_XSIZE, ATTRMAP_YSIZE, 1, D3DUSAGE_DYNAMIC, D3DFMT_A8R8G8B8, D3DPOOL_DEFAULT, &m_lpMarkedTexture);
+	if (FAILED(hr))
 	{
-		hr = ms_lpd3dDevice->CreateTexture(ATTRMAP_XSIZE, ATTRMAP_YSIZE, 1, D3DUSAGE_DYNAMIC, D3DFMT_A8R8G8B8, D3DPOOL_DEFAULT, &m_lpMarkedTexture, NULL);
-	} while(FAILED(hr));
+		TraceError("CTerrain::AllocateMarkedSplats - CreateTexture failed hr=0x%08X", hr);
+		return;
+	}
 
 	D3DLOCKED_RECT d3dlr;
-	do
+	hr = m_lpMarkedTexture->LockRect(0, &d3dlr, 0, 0);
+	if (FAILED(hr))
 	{
-		hr = m_lpMarkedTexture->LockRect(0, &d3dlr, 0, 0);
-	} while(FAILED(hr));
+		TraceError("CTerrain::AllocateMarkedSplats - LockRect failed hr=0x%08X", hr);
+		m_lpMarkedTexture->Release();
+		m_lpMarkedTexture = NULL;
+		return;
+	}
 
 	PutImage32(pbyAlphaMap, (BYTE*) d3dlr.pBits, ATTRMAP_XSIZE, d3dlr.Pitch, ATTRMAP_XSIZE, ATTRMAP_YSIZE);
 
-	do
-	{
-		hr = m_lpMarkedTexture->UnlockRect(0);
-	} while(FAILED(hr));
+	m_lpMarkedTexture->UnlockRect(0);
 
 	rAttrSplat.pd3dTexture = m_lpMarkedTexture;
 	m_bMarked = true;

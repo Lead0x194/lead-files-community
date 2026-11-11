@@ -32,9 +32,28 @@ void CMapOutdoor::CreateCharacterShadowTexture()
 	m_ShadowMapViewport.MinZ = 0.0f;
 	m_ShadowMapViewport.MaxZ = 1.0f;
 
-	ms_lpd3dDevice->CreateTexture(m_wShadowMapSize, m_wShadowMapSize, 1, D3DUSAGE_RENDERTARGET, D3DFMT_R5G6B5, D3DPOOL_DEFAULT, &m_lpCharacterShadowMapTexture, NULL);
-	m_lpCharacterShadowMapTexture->GetSurfaceLevel(0, &m_lpCharacterShadowMapRenderTargetSurface);
-	ms_lpd3dDevice->CreateDepthStencilSurface(m_wShadowMapSize, m_wShadowMapSize, D3DFMT_D16, D3DMULTISAMPLE_NONE, 0, TRUE, &m_lpCharacterShadowMapDepthSurface, NULL);
+	HRESULT hr = CreateDeviceTexture(m_wShadowMapSize, m_wShadowMapSize, 1, D3DUSAGE_RENDERTARGET, D3DFMT_R5G6B5, D3DPOOL_DEFAULT, &m_lpCharacterShadowMapTexture);
+	if (FAILED(hr))
+	{
+		TraceError("CMapOutdoor::CreateCharacterShadowTexture - CreateTexture failed hr=0x%08X", hr);
+		return;
+	}
+
+	hr = m_lpCharacterShadowMapTexture->GetSurfaceLevel(0, &m_lpCharacterShadowMapRenderTargetSurface);
+	if (FAILED(hr))
+	{
+		TraceError("CMapOutdoor::CreateCharacterShadowTexture - GetSurfaceLevel failed hr=0x%08X", hr);
+		ReleaseCharacterShadowTexture();
+		return;
+	}
+
+	hr = CreateDeviceDepthStencilSurface(m_wShadowMapSize, m_wShadowMapSize, D3DFMT_D16, D3DMULTISAMPLE_NONE, 0, TRUE, &m_lpCharacterShadowMapDepthSurface);
+	if (FAILED(hr))
+	{
+		TraceError("CMapOutdoor::CreateCharacterShadowTexture - CreateDepthStencilSurface failed hr=0x%08X", hr);
+		ReleaseCharacterShadowTexture();
+		return;
+	}
 }
 
 void CMapOutdoor::ReleaseCharacterShadowTexture()

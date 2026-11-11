@@ -234,11 +234,11 @@ bool CSnowEnvironment::__CreateBlurTexture()
 	if (!m_bBlurEnable)
 		return true;
 
-	if (FAILED(ms_lpd3dDevice->CreateTexture(m_wBlurTextureSize, m_wBlurTextureSize, 1, D3DUSAGE_RENDERTARGET, D3DFMT_X8R8G8B8, D3DPOOL_DEFAULT, &m_lpSnowTexture, NULL)))
+	if (FAILED(CreateDeviceTexture(m_wBlurTextureSize, m_wBlurTextureSize, 1, D3DUSAGE_RENDERTARGET, D3DFMT_X8R8G8B8, D3DPOOL_DEFAULT, &m_lpSnowTexture)))
 		return false;
 	if (FAILED(m_lpSnowTexture->GetSurfaceLevel(0, &m_lpSnowRenderTargetSurface)))
 		return false;
-	if (FAILED(ms_lpd3dDevice->CreateDepthStencilSurface(m_wBlurTextureSize, m_wBlurTextureSize, D3DFMT_D16, D3DMULTISAMPLE_NONE, 0, TRUE, &m_lpSnowDepthSurface, NULL)))
+	if (FAILED(CreateDeviceDepthStencilSurface(m_wBlurTextureSize, m_wBlurTextureSize, D3DFMT_D16, D3DMULTISAMPLE_NONE, 0, TRUE, &m_lpSnowDepthSurface)))
 		return false;
 
 	if (FAILED(ms_lpd3dDevice->CreateTexture(m_wBlurTextureSize, m_wBlurTextureSize, 1, D3DUSAGE_RENDERTARGET, D3DFMT_X8R8G8B8, D3DPOOL_DEFAULT, &m_lpAccumTexture, NULL)))
@@ -253,18 +253,18 @@ bool CSnowEnvironment::__CreateBlurTexture()
 
 bool CSnowEnvironment::__CreateGeometry()
 {
-	if (FAILED(ms_lpd3dDevice->CreateVertexBuffer(sizeof(SParticleVertex)*m_dwParticleMaxNum*4,
+	if (FAILED(CreateDeviceVertexBuffer(sizeof(SParticleVertex)*m_dwParticleMaxNum*4,
 											D3DUSAGE_DYNAMIC|D3DUSAGE_WRITEONLY,
 											D3DFVF_XYZ | D3DFVF_TEX1,
 											D3DPOOL_DEFAULT,
-											&m_pVB, NULL)))
+											&m_pVB)))
 		return false;
 
-	if (FAILED(ms_lpd3dDevice->CreateIndexBuffer(sizeof(WORD)*m_dwParticleMaxNum*6,
+	if (FAILED(CreateDeviceIndexBuffer(sizeof(WORD)*m_dwParticleMaxNum*6,
 										   D3DUSAGE_DYNAMIC,
 										   D3DFMT_INDEX16,
 										   D3DPOOL_DEFAULT,
-										   &m_pIB, NULL)))
+										   &m_pIB)))
 		return false;
 
 	WORD* dstIndices;
