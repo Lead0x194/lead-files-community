@@ -26,11 +26,19 @@ void CScreen::RenderLine3d(float sx, float sy, float sz, float ex, float ey, flo
 	
 	// 2004.11.18.myevan.DrawIndexPrimitiveUP -> DynamicVertexBuffer
 	if (SetPDTStream(vertices, 2))
-	{	
+	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
-		STATEMANAGER.DrawPrimitive(D3DPT_LINELIST, 0, 1);
+		if (BeginPDTDiffuseShader())
+		{
+			STATEMANAGER.DrawPrimitive(D3DPT_LINELIST, 0, 1);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawPrimitive(D3DPT_LINELIST, 0, 1);
+		}
 	}
 }
 
@@ -61,8 +69,16 @@ void CScreen::RenderBox3d(float sx, float sy, float sz, float ex, float ey, floa
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
-		STATEMANAGER.DrawPrimitive(D3DPT_LINELIST, 0, 4);
+		if (BeginPDTDiffuseShader())
+		{
+			STATEMANAGER.DrawPrimitive(D3DPT_LINELIST, 0, 4);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawPrimitive(D3DPT_LINELIST, 0, 4);
+		}
 	}
 }
 
@@ -84,8 +100,16 @@ void CScreen::RenderBar3d(float sx, float sy, float sz, float ex, float ey, floa
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
-		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+		if (BeginPDTDiffuseShader())
+		{
+			STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+		}
 	}
 }
 
@@ -106,8 +130,16 @@ void CScreen::RenderBar3d(const D3DXVECTOR3 * c_pv3Positions)
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
-		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+		if (BeginPDTDiffuseShader())
+		{
+			STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+		}
 	}
 }
 
@@ -129,8 +161,16 @@ void CScreen::RenderGradationBar3d(float sx, float sy, float sz, float ex, float
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
-		STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+		if (BeginPDTDiffuseShader())
+		{
+			STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawPrimitive(D3DPT_TRIANGLESTRIP, 0, 2);
+		}
 	}
 }
 
@@ -153,11 +193,19 @@ void CScreen::RenderLineCube(float sx, float sy, float sz, float ex, float ey, f
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.SetTransform(D3DTS_WORLD, ms_lpd3dMatStack->GetTop());
 		SetDefaultIndexBuffer(DEFAULT_IB_LINE_CUBE);
 
-		STATEMANAGER.DrawIndexedPrimitive(D3DPT_LINELIST, 0, 8, 0, 4*3);
+		if (BeginPDTDiffuseShader())
+		{
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_LINELIST, 0, 8, 0, 4*3);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_LINELIST, 0, 8, 0, 4*3);
+		}
 	}
 }
 
@@ -180,11 +228,19 @@ void CScreen::RenderCube(float sx, float sy, float sz, float ex, float ey, float
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.SetTransform(D3DTS_WORLD, ms_lpd3dMatStack->GetTop());
 
 		SetDefaultIndexBuffer(DEFAULT_IB_FILL_CUBE);
-		STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 8, 0, 4*3);
+		if (BeginPDTDiffuseShader())
+		{
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 8, 0, 4*3);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 8, 0, 4*3);
+		}
 	}
 }
 
@@ -220,11 +276,19 @@ void CScreen::RenderCube(float sx, float sy, float sz, float ex, float ey, float
 	{
 		STATEMANAGER.SetTexture(0, NULL);
 		STATEMANAGER.SetTexture(1, NULL);
-		STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 		STATEMANAGER.SetTransform(D3DTS_WORLD, ms_lpd3dMatStack->GetTop());
 
 		SetDefaultIndexBuffer(DEFAULT_IB_FILL_CUBE);
-		STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 8, 0, 4*3);
+		if (BeginPDTDiffuseShader())
+		{
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 8, 0, 4*3);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 8, 0, 4*3);
+		}
 	}
 }
 
@@ -402,12 +466,22 @@ void CScreen::RenderTextureBox(float sx, float sy, float ex, float ey, float z, 
 #ifdef WORLD_EDITOR
 	STATEMANAGER.SetTransform(D3DTS_WORLD, ms_lpd3dMatStack->GetTop());
 #endif
-	STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
 
 	// 2004.11.18.myevan.DrawIndexPrimitiveUP -> DynamicVertexBuffer
 	SetDefaultIndexBuffer(DEFAULT_IB_FILL_RECT);
 	if (SetPDTStream(vertices, 4))
-		STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 4, 0, 2);
+	{
+		if (BeginPDTShader())
+		{
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 4, 0, 2);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 4, 0, 2);
+		}
+	}
 	//OLD: STATEMANAGER.DrawIndexedPrimitiveUP(D3DPT_TRIANGLELIST, 0, 4, 2, &ms_fillRectIdxVector[0], D3DFMT_INDEX16, vertices, sizeof(TPDTVertex));
 }
 
@@ -433,12 +507,21 @@ void CScreen::RenderBillboard(D3DXVECTOR3 * Position, D3DXCOLOR & Color)
 	vertices[3].diffuse = Color;
 	vertices[3].texCoord = TTextureCoordinate(1, 1);
 	
-	STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
-
 	// 2004.11.18.myevan.DrawIndexPrimitiveUP -> DynamicVertexBuffer
 	SetDefaultIndexBuffer(DEFAULT_IB_FILL_RECT);
 	if (SetPDTStream(vertices, 4))
-		STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 4, 0, 2);
+	{
+		if (BeginPDTShader())
+		{
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 4, 0, 2);
+			EndPDTShader();
+		}
+		else
+		{
+			STATEMANAGER.SetFVF(D3DFVF_XYZ|D3DFVF_DIFFUSE|D3DFVF_TEX1);
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 4, 0, 2);
+		}
+	}
 	//OLD: STATEMANAGER.DrawIndexedPrimitiveUP(D3DPT_TRIANGLELIST, 0, 4, 2, &ms_fillRectIdxVector[0], D3DFMT_INDEX16, vertices, sizeof(TPDTVertex));
 }
 
