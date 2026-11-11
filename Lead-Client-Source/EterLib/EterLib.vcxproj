@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+﻿<?xml version='1.0' encoding='utf-8'?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="Current">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|x64">
@@ -152,6 +152,8 @@
     <ClCompile Include="GrpD3DXBuffer.cpp" />
     <ClCompile Include="GrpDetector.cpp" />
     <ClCompile Include="GrpDevice.cpp" />
+    <ClCompile Include="GrpPipelineKeyDX12.cpp" />
+    <ClCompile Include="GrpPipelineCacheDX12.cpp" />
     <ClCompile Include="GrpDIB.cpp" />
     <ClCompile Include="GrpExpandedImageInstance.cpp" />
     <ClCompile Include="GrpFontTexture.cpp" />
@@ -227,6 +229,8 @@
     <ClInclude Include="GrpD3DXBuffer.h" />
     <ClInclude Include="GrpDetector.h" />
     <ClInclude Include="GrpDevice.h" />
+    <ClInclude Include="GrpPipelineKeyDX12.h" />
+    <ClInclude Include="GrpPipelineCacheDX12.h" />
     <ClInclude Include="GrpDIB.h" />
     <ClInclude Include="GrpExpandedImageInstance.h" />
     <ClInclude Include="GrpFontTexture.h" />
