@@ -2,6 +2,131 @@
 #include "../eterBase/MappedFile.h"
 #include "../eterPack/EterPackManager.h"
 #include "GrpImageTexture.h"
+#include "ImageFileDecoder.h"
+
+namespace
+{
+	// D3DX-style colorkey: pixels matching the ARGB key become transparent black.
+	void ApplyColorKey(SDecodedImage& rkImage, DWORD dwARGBColorKey)
+	{
+		const BYTE byA = BYTE(dwARGBColorKey >> 24);
+		const BYTE byR = BYTE(dwARGBColorKey >> 16);
+		const BYTE byG = BYTE(dwARGBColorKey >> 8);
+		const BYTE byB = BYTE(dwARGBColorKey);
+
+		BYTE* pbyPixel = rkImage.kPixels.data();
+		BYTE* pbyEnd = pbyPixel + rkImage.kPixels.size();
+		for (; pbyPixel < pbyEnd; pbyPixel += 4)
+		{
+			if (pbyPixel[0] == byB && pbyPixel[1] == byG && pbyPixel[2] == byR && pbyPixel[3] == byA)
+			{
+				pbyPixel[0] = 0;
+				pbyPixel[1] = 0;
+				pbyPixel[2] = 0;
+				pbyPixel[3] = 0;
+			}
+		}
+	}
+
+	// 2x2 box filter (clamped at odd edges) - equivalent of D3DX_FILTER_LINEAR mips.
+	void DownsampleBox(const std::vector<BYTE>& c_rkSrc, UINT uSrcWidth, UINT uSrcHeight,
+					   std::vector<BYTE>& rkDst, UINT uDstWidth, UINT uDstHeight)
+	{
+		rkDst.resize(size_t(uDstWidth) * uDstHeight * 4);
+
+		for (UINT y = 0; y < uDstHeight; ++y)
+		{
+			const UINT uSrcY0 = y * 2;
+			const UINT uSrcY1 = (uSrcY0 + 1 < uSrcHeight) ? uSrcY0 + 1 : uSrcY0;
+			for (UINT x = 0; x < uDstWidth; ++x)
+			{
+				const UINT uSrcX0 = x * 2;
+				const UINT uSrcX1 = (uSrcX0 + 1 < uSrcWidth) ? uSrcX0 + 1 : uSrcX0;
+
+				const BYTE* pbySrc00 = &c_rkSrc[(size_t(uSrcY0) * uSrcWidth + uSrcX0) * 4];
+				const BYTE* pbySrc01 = &c_rkSrc[(size_t(uSrcY0) * uSrcWidth + uSrcX1) * 4];
+				const BYTE* pbySrc10 = &c_rkSrc[(size_t(uSrcY1) * uSrcWidth + uSrcX0) * 4];
+				const BYTE* pbySrc11 = &c_rkSrc[(size_t(uSrcY1) * uSrcWidth + uSrcX1) * 4];
+
+				BYTE* pbyDst = &rkDst[(size_t(y) * uDstWidth + x) * 4];
+				for (UINT c = 0; c < 4; ++c)
+					pbyDst[c] = BYTE((UINT(pbySrc00[c]) + pbySrc01[c] + pbySrc10[c] + pbySrc11[c] + 2) / 4);
+			}
+		}
+	}
+
+	// Full-mip-chain A8R8G8B8 texture from decoded pixels (staging -> default, like the DDS path).
+	LPDIRECT3DTEXTURE9 CreateTextureFromDecodedImage(const SDecodedImage& c_rkImage)
+	{
+		UINT uMipCount = 1;
+		{
+			UINT uWidth = c_rkImage.uWidth;
+			UINT uHeight = c_rkImage.uHeight;
+			while (uWidth > 1 || uHeight > 1)
+			{
+				uWidth = uWidth > 1 ? uWidth / 2 : 1;
+				uHeight = uHeight > 1 ? uHeight / 2 : 1;
+				++uMipCount;
+			}
+		}
+
+		LPDIRECT3DTEXTURE9 lpd3dStaging = NULL;
+		LPDIRECT3DTEXTURE9 lpd3dTexture = NULL;
+
+		if (FAILED(CGraphicBase::CreateDeviceTexture(c_rkImage.uWidth, c_rkImage.uHeight,
+										   uMipCount, 0, D3DFMT_A8R8G8B8, D3DPOOL_SYSTEMMEM, &lpd3dStaging)))
+			return NULL;
+
+		if (FAILED(CGraphicBase::CreateDeviceTexture(c_rkImage.uWidth, c_rkImage.uHeight,
+										   uMipCount, 0, D3DFMT_A8R8G8B8, D3DPOOL_DEFAULT, &lpd3dTexture)))
+		{
+			lpd3dStaging->Release();
+			return NULL;
+		}
+
+		std::vector<BYTE> kLevelPixels = c_rkImage.kPixels;
+		std::vector<BYTE> kNextPixels;
+		UINT uLevelWidth = c_rkImage.uWidth;
+		UINT uLevelHeight = c_rkImage.uHeight;
+
+		for (UINT uLevel = 0; uLevel < uMipCount; ++uLevel)
+		{
+			D3DLOCKED_RECT lockedRect;
+			if (SUCCEEDED(lpd3dStaging->LockRect(uLevel, &lockedRect, NULL, 0)))
+			{
+				const BYTE* pbySrcRow = kLevelPixels.data();
+				BYTE* pbyDstRow = (BYTE*)lockedRect.pBits;
+				for (UINT y = 0; y < uLevelHeight; ++y)
+				{
+					memcpy(pbyDstRow, pbySrcRow, size_t(uLevelWidth) * 4);
+					pbySrcRow += size_t(uLevelWidth) * 4;
+					pbyDstRow += lockedRect.Pitch;
+				}
+				lpd3dStaging->UnlockRect(uLevel);
+			}
+
+			if (uLevel + 1 < uMipCount)
+			{
+				const UINT uNextWidth = uLevelWidth > 1 ? uLevelWidth / 2 : 1;
+				const UINT uNextHeight = uLevelHeight > 1 ? uLevelHeight / 2 : 1;
+				DownsampleBox(kLevelPixels, uLevelWidth, uLevelHeight, kNextPixels, uNextWidth, uNextHeight);
+				kLevelPixels.swap(kNextPixels);
+				uLevelWidth = uNextWidth;
+				uLevelHeight = uNextHeight;
+			}
+		}
+
+		if (FAILED(CGraphicBase::UpdateDeviceTexture(lpd3dStaging, lpd3dTexture)))
+		{
+			lpd3dStaging->Release();
+			lpd3dTexture->Release();
+			return NULL;
+		}
+
+		lpd3dStaging->Release();
+		return lpd3dTexture;
+	}
+}
 
 bool CGraphicImageTexture::Lock(int* pRetPitch, void** ppRetPixels, int level)
 {
@@ -52,7 +177,7 @@ bool CGraphicImageTexture::CreateDeviceObjects()
 
 	if (m_stFileName.empty())
 	{
-		if (FAILED(ms_lpd3dDevice->CreateTexture(m_width, m_height, 1, D3DUSAGE_DYNAMIC, m_d3dFmt, D3DPOOL_DEFAULT, &m_lpd3dTexture, NULL)))
+		if (FAILED(CreateDeviceTexture(m_width, m_height, 1, D3DUSAGE_DYNAMIC, m_d3dFmt, D3DPOOL_DEFAULT, &m_lpd3dTexture)))
 			return false;
 	}
 	else
@@ -111,40 +236,23 @@ bool CGraphicImageTexture::CreateDDSTexture(CDXTCImage & image, const BYTE * /*c
 	D3DFORMAT format;
 	LPDIRECT3DTEXTURE9 lpd3dTexture = NULL;
 	LPDIRECT3DTEXTURE9 lpd3dStaging = NULL;
-	D3DPOOL pool = D3DPOOL_DEFAULT;
 
 	if(image.m_CompFormat == PF_DXT5)
-		format = D3DFMT_DXT5;	
+		format = D3DFMT_DXT5;
 	else if(image.m_CompFormat == PF_DXT3)
-		format = D3DFMT_DXT3;	
+		format = D3DFMT_DXT3;
 	else
-		format = D3DFMT_DXT1;	
+		format = D3DFMT_DXT1;
 
-	UINT uTexBias=0;
-	if (IsLowTextureMemory())
-		uTexBias=1;
-
-	UINT uMinMipMapIndex=0;
-	if (uTexBias>0)
-	{
-		if (mipmapCount>uTexBias)
-		{
-			uMinMipMapIndex=uTexBias;
-			image.m_nWidth>>=uTexBias;
-			image.m_nHeight>>=uTexBias;
-			mipmapCount-=uTexBias;
-		}
-	}
-
-	if (FAILED(D3DXCreateTexture(	ms_lpd3dDevice, image.m_nWidth, image.m_nHeight,
+	if (FAILED(CreateDeviceTexture(	image.m_nWidth, image.m_nHeight,
 										mipmapCount, 0, format, D3DPOOL_SYSTEMMEM, &lpd3dStaging)))
 	{
 		TraceError("CreateDDSTexture: Cannot creatre texture" );
 		return false;
 	}
 
-	if (FAILED(D3DXCreateTexture(	ms_lpd3dDevice, image.m_nWidth, image.m_nHeight,
-									mipmapCount, 0, format, pool, &lpd3dTexture)))
+	if (FAILED(CreateDeviceTexture(	image.m_nWidth, image.m_nHeight,
+									mipmapCount, 0, format, D3DPOOL_DEFAULT, &lpd3dTexture)))
 	{
 		TraceError("CreateDDSTexture: Cannot creatre texture");
 		lpd3dStaging->Release();
@@ -165,12 +273,12 @@ bool CGraphicImageTexture::CreateDDSTexture(CDXTCImage & image, const BYTE * /*c
 		}
 		else
 		{
-			image.Copy(i+uMinMipMapIndex, (BYTE*)lockedRect.pBits, lockedRect.Pitch);
+			image.Copy(i, (BYTE*)lockedRect.pBits, lockedRect.Pitch);
 			lpd3dStaging->UnlockRect(i);
 		}
 	}
 
-	HRESULT hrUpdate = ms_lpd3dDevice->UpdateTexture(lpd3dStaging, lpd3dTexture);
+	HRESULT hrUpdate = UpdateDeviceTexture(lpd3dStaging, lpd3dTexture);
 	if (FAILED(hrUpdate))
 	{
 		TraceError("CreateDDSTexture: UpdateTexture failed hr=0x%08X", hrUpdate);
@@ -181,56 +289,7 @@ bool CGraphicImageTexture::CreateDDSTexture(CDXTCImage & image, const BYTE * /*c
 
 	lpd3dStaging->Release();
 
-	if(ms_bSupportDXT)
-	{
-		m_lpd3dTexture = lpd3dTexture;
-	}
-	else
-	{
-		if(image.m_CompFormat == PF_DXT3 || image.m_CompFormat == PF_DXT5)
-			format = D3DFMT_A4R4G4B4;
-		else
-			format = D3DFMT_A1R5G5B5;
-
-		UINT imgWidth=image.m_nWidth;
-		UINT imgHeight=image.m_nHeight;
-
-		extern bool GRAPHICS_CAPS_HALF_SIZE_IMAGE;
-
-		if (GRAPHICS_CAPS_HALF_SIZE_IMAGE && uTexBias>0 && mipmapCount==0)
-		{
-			imgWidth>>=uTexBias;
-			imgHeight>>=uTexBias;		
-		}
-
-		if (FAILED(D3DXCreateTexture(	ms_lpd3dDevice, imgWidth, imgHeight, 
-									mipmapCount, 0, format, D3DPOOL_DEFAULT, &m_lpd3dTexture)))
-		{
-				TraceError("CreateDDSTexture: Cannot creatre texture");
-				return false;
-		}
-
-		IDirect3DTexture9* pkTexSrc=lpd3dTexture;
-		IDirect3DTexture9* pkTexDst=m_lpd3dTexture;
-
-		for(int i=0; i<mipmapCount; ++i) {
-
-			IDirect3DSurface9* ppsSrc = NULL;
-			IDirect3DSurface9* ppsDst = NULL;
-
-			if (SUCCEEDED(pkTexSrc->GetSurfaceLevel(i, &ppsSrc)))
-			{
-				if (SUCCEEDED(pkTexDst->GetSurfaceLevel(i, &ppsDst)))
-				{
-					D3DXLoadSurfaceFromSurface(ppsDst, NULL, NULL, ppsSrc, NULL, NULL, D3DX_FILTER_NONE, 0);
-					ppsDst->Release();
-				}
-				ppsSrc->Release();
-			}
-		}
-
-		lpd3dTexture->Release();
-	}
+	m_lpd3dTexture = lpd3dTexture;
 
 	m_width = image.m_nWidth;
 	m_height = image.m_nHeight;
@@ -252,87 +311,30 @@ bool CGraphicImageTexture::CreateFromMemoryFile(UINT bufSize, const void * c_pvB
 	}
 	else
 	{
-		D3DXIMAGE_INFO imageInfo;
-		if (FAILED(D3DXCreateTextureFromFileInMemoryEx(
-					ms_lpd3dDevice,
-					c_pvBuf,
-					bufSize,
-						D3DX_DEFAULT_NONPOW2,
-						D3DX_DEFAULT_NONPOW2,
-					D3DX_DEFAULT,
-					0,
-					d3dFmt,
-						D3DPOOL_DEFAULT,
-					dwFilter,
-					dwFilter,
-					0xffff00ff,
-					&imageInfo,
-					NULL,
-					&m_lpd3dTexture)))
+		if (D3DFMT_UNKNOWN != d3dFmt && D3DFMT_A8R8G8B8 != d3dFmt)
+		{
+			TraceError("CreateFromMemoryFile: Unsupported format request %u", d3dFmt);
+			return false;
+		}
+
+		SDecodedImage kImage;
+		if (!DecodeImageFileFromMemory(c_pvBuf, bufSize, &kImage))
 		{
 			TraceError("CreateFromMemoryFile: Cannot create texture");
 			return false;
 		}
 
-		m_width = imageInfo.Width;
-		m_height = imageInfo.Height;
+		ApplyColorKey(kImage, 0xffff00ff);
 
-		D3DFORMAT format=imageInfo.Format;
-		switch(imageInfo.Format) {
-			case D3DFMT_A8R8G8B8:
-				format = D3DFMT_A4R4G4B4;
-				break;
-
-			case D3DFMT_X8R8G8B8:
-			case D3DFMT_R8G8B8:
-				format = D3DFMT_A1R5G5B5;
-				break;
-		}
-
-		UINT uTexBias=0;
-
-		extern bool GRAPHICS_CAPS_HALF_SIZE_IMAGE;
-		if (GRAPHICS_CAPS_HALF_SIZE_IMAGE)
-			uTexBias=1;
-
-		if (IsLowTextureMemory())
-		if (uTexBias || format!=imageInfo.Format)
+		m_lpd3dTexture = CreateTextureFromDecodedImage(kImage);
+		if (!m_lpd3dTexture)
 		{
-			IDirect3DTexture9* pkTexSrc=m_lpd3dTexture;
-			IDirect3DTexture9* pkTexDst;
-			
-			
-			if (SUCCEEDED(D3DXCreateTexture(	
-				ms_lpd3dDevice, 
-				imageInfo.Width>>uTexBias, 
-				imageInfo.Height>>uTexBias, 
-				imageInfo.MipLevels, 
-				0, 
-				format, 
-				D3DPOOL_DEFAULT,
-				&pkTexDst)))
-			{
-				m_lpd3dTexture=pkTexDst;
-				
-				for(int i=0; i<imageInfo.MipLevels; ++i) {
-
-					IDirect3DSurface9* ppsSrc = NULL;
-					IDirect3DSurface9* ppsDst = NULL;
-
-					if (SUCCEEDED(pkTexSrc->GetSurfaceLevel(i, &ppsSrc)))
-					{
-						if (SUCCEEDED(pkTexDst->GetSurfaceLevel(i, &ppsDst)))
-						{
-							D3DXLoadSurfaceFromSurface(ppsDst, NULL, NULL, ppsSrc, NULL, NULL, D3DX_FILTER_LINEAR, 0);
-							ppsDst->Release();
-						}
-						ppsSrc->Release();
-					}
-				}
-
-				pkTexSrc->Release();
-			}
+			TraceError("CreateFromMemoryFile: Cannot create texture");
+			return false;
 		}
+
+		m_width = kImage.uWidth;
+		m_height = kImage.uHeight;
 	}
 
 	m_bEmpty = false;

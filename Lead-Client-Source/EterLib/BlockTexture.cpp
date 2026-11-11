@@ -155,7 +155,7 @@ void CBlockTexture::InvalidateRect(const RECT & c_rsrcRect)
 
 bool CBlockTexture::Create(CGraphicDib * pDIB, const RECT & c_rRect, DWORD dwWidth, DWORD dwHeight)
 {	
-	if (FAILED(ms_lpd3dDevice->CreateTexture(dwWidth, dwHeight, 0, D3DUSAGE_DYNAMIC, D3DFMT_A8R8G8B8, D3DPOOL_DEFAULT, &m_lpd3dTexture, NULL)))
+	if (FAILED(CreateDeviceTexture(dwWidth, dwHeight, 0, D3DUSAGE_DYNAMIC, D3DFMT_A8R8G8B8, D3DPOOL_DEFAULT, &m_lpd3dTexture)))
 	{
 		Tracef("Failed to create block texture %u, %u\n", dwWidth, dwHeight);
 		return false;

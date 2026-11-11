@@ -106,13 +106,12 @@ bool CGraphicIndexBuffer::Create(int faceCount, TFace* faces)
 
 bool CGraphicIndexBuffer::CreateDeviceObjects()
 {
-	if (FAILED(ms_lpd3dDevice->CreateIndexBuffer(
-			m_dwBufferSize, 
-			D3DUSAGE_WRITEONLY, 
+	if (FAILED(CreateDeviceIndexBuffer(
+			m_dwBufferSize,
+			D3DUSAGE_WRITEONLY,
 			m_d3dFmt,
-			D3DPOOL_DEFAULT, 
-			&m_lpd3dIdxBuf,
-			NULL)
+			D3DPOOL_DEFAULT,
+			&m_lpd3dIdxBuf)
 			))
 			return false;
 
