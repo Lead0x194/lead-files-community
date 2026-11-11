@@ -29,6 +29,16 @@ void CStateManager::GetLight(DWORD index, D3DLIGHT9* pLight)
 	*pLight=m_kLightData.m_akD3DLight[index];
 }
 
+HRESULT CStateManager::CreateVertexShader(CONST DWORD* pFunction, LPDIRECT3DVERTEXSHADER9* ppShader)
+{
+	return m_lpD3DDev->CreateVertexShader(pFunction, ppShader);
+}
+
+HRESULT CStateManager::CreateVertexDeclaration(CONST D3DVERTEXELEMENT9* pVertexElements, LPDIRECT3DVERTEXDECLARATION9* ppDecl)
+{
+	return m_lpD3DDev->CreateVertexDeclaration(pVertexElements, ppDecl);
+}
+
 bool CStateManager::BeginScene()
 {
 	m_bScene=true;
