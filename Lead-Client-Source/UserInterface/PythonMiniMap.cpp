@@ -304,7 +304,12 @@ void CPythonMiniMap::Render(float fScreenX, float fScreenY)
 	{
 		LPDIRECT3DTEXTURE9 pMiniMapTexture = m_lpMiniMapTexture[byTerrainNum];
 		STATEMANAGER.SetTexture(0, pMiniMapTexture);
-		if (pMiniMapTexture)
+		if (CGraphicBase::BeginMiniMapShader(NULL != pMiniMapTexture))
+		{
+			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 4, byTerrainNum * 6, 2);
+			CGraphicBase::EndPDTShader();
+		}
+		else if (pMiniMapTexture)
 		{
 			CStateManager& rkSttMgr=CStateManager::Instance();
 			rkSttMgr.DrawIndexedPrimitive(D3DPT_TRIANGLELIST, 0, 4, byTerrainNum * 6, 2);
