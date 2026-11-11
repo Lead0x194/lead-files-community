@@ -216,6 +216,28 @@ class CGraphicBase
 		static void SetDefaultIndexBuffer(UINT eDefIB);
 		static bool SetPDTStream(SPDTVertexRaw* pVertices, UINT uVtxCount);
 		static bool SetPDTStream(SPDTVertex* pVertices, UINT uVtxCount);
+
+		// Fixed-function replacement shaders (DX12 migration); default off.
+		static void SetUseShaderFFP(bool bEnable);
+		static bool IsUseShaderFFP();
+		static bool BeginPDTShader();		// true = shader pipeline bound; else use the FVF path
+		static bool BeginPDTDiffuseShader();	// variant for NULL-texture draws (diffuse passthrough)
+		static bool BeginPTTextureShader();	// XYZ|TEX1 draws (texture passthrough)
+		static bool BeginPDTTextureShader();	// XYZ|DIFFUSE|TEX1 draws where FFP selects TEXTURE only
+		static bool BeginPDTModulateTexAlphaShader();	// rgb = texture*diffuse, alpha = texture
+		static bool BeginPDTCloudShader();	// scrolling-UV cloud layer (MODULATEINVALPHA_ADDCOLOR)
+		static bool BeginEffectShader(DWORD dwColorOp);	// effect COLOROP(TFACTOR, TEXTURE); false = unsupported op, use FFP
+		static bool BeginGrannyMeshShader();	// lit PNT mesh w/ base modulate cascade; false = keep FFP
+		static bool BeginTerrainSplatShader(bool bBase);	// terrain patch splat layers; false = keep FFP
+		static bool BeginTerrainFogFlatShader();	// beyond-fog terrain patches (TFACTOR fill)
+		static bool BeginTerrainShadowShader(bool bChrShadow);	// terrain shadow multiply overlay; false = keep FFP
+		static void EndPDTShader();		// call only after a successful Begin*Shader
+		static void DestroyShaderPool();
+
+	private:
+		static void __UploadGrannyLightingConstants();
+		static void __UploadOmniLightingConstants();
+	public:
 		
 	protected:
 		static D3DXMATRIX				ms_matIdentity;
@@ -239,6 +261,8 @@ class CGraphicBase
 
 	protected:
 		static HRESULT					ms_hLastResult;
+
+		static bool						ms_bUseShaderFFP;
 
 		static int						ms_iWidth;
 		static int						ms_iHeight;
