@@ -245,6 +245,8 @@ class CStateManager : public CSingleton<CStateManager>
 
 		bool	BeginScene();
 		void	EndScene();
+		HRESULT	Present(CONST RECT* pSourceRect, CONST RECT* pDestRect, HWND hDestWindowOverride);
+		HRESULT	GetBackBuffer(UINT iSwapChain, UINT iBackBuffer, D3DBACKBUFFER_TYPE eType, LPDIRECT3DSURFACE9* ppBackBuffer);
 
 		// Material
 		void	SaveMaterial();

@@ -175,7 +175,7 @@ bool CPythonGraphic::SaveScreenShot(const char * c_pszFileName)
 	LPDIRECT3DSURFACE9 lpSurface;
 	D3DSURFACE_DESC stSurfaceDesc;
 
-	if (FAILED(hr = ms_lpd3dDevice->GetBackBuffer(0, 0, D3DBACKBUFFER_TYPE_MONO, &lpSurface)))
+	if (FAILED(hr = STATEMANAGER.GetBackBuffer(0, 0, D3DBACKBUFFER_TYPE_MONO, &lpSurface)))
 	{
 		TraceError("Failed to get back buffer (0x%08x)", hr);
 		return false;
