@@ -931,6 +931,14 @@ void CMapOutdoor::DrawPatchAttr(long patchnum)
 #ifdef WORLD_EDITOR
 	STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_iPatchTerrainVertexCount, 0, m_wNumIndices - 2);
 #else
-	STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_iPatchTerrainVertexCount, 0, m_wNumIndices[0] - 2);
+	if (CGraphicBase::BeginTerrainAttrShader())
+	{
+		STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_iPatchTerrainVertexCount, 0, m_wNumIndices[0] - 2);
+		CGraphicBase::EndPDTShader();
+	}
+	else
+	{
+		STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_iPatchTerrainVertexCount, 0, m_wNumIndices[0] - 2);
+	}
 #endif
 }
