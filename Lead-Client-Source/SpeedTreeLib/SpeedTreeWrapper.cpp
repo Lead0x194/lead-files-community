@@ -94,7 +94,7 @@ void CSpeedTreeWrapper::OnRenderPCBlocker()
 {
 	if (ms_dwBranchVertexShader == 0)
 	{
-		ms_dwBranchVertexShader = LoadBranchShader(ms_lpd3dDevice);
+		ms_dwBranchVertexShader = LoadBranchShader();
 		//LogBox("Vertex Shader not assigned. You must call CSpeedTreeWrapper::SetVertexShader for this");
 	}
 	
@@ -237,7 +237,7 @@ void CSpeedTreeWrapper::OnRender()
 {
 	if (ms_dwBranchVertexShader == 0)
 	{
-		ms_dwBranchVertexShader = LoadBranchShader(ms_lpd3dDevice);
+		ms_dwBranchVertexShader = LoadBranchShader();
 		//LogBox("Vertex Shader not assigned. You must call CSpeedTreeWrapper::SetVertexShader for this");
 	}
 	
@@ -900,7 +900,17 @@ void CSpeedTreeWrapper::RenderBranches(void) const
 			m_pBranchIndexCounts[m_pGeometryCache->m_sBranches.m_nDiscreteLodLevel] > 0)
 		{
 			ms_faceCount += m_pBranchIndexCounts[m_pGeometryCache->m_sBranches.m_nDiscreteLodLevel] - 2;
-			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_pGeometryCache->m_sBranches.m_usVertexCount, 0, m_pBranchIndexCounts[m_pGeometryCache->m_sBranches.m_nDiscreteLodLevel] - 2);
+			LPDIRECT3DBASETEXTURE9 pkShadowTexture = NULL;
+			STATEMANAGER.GetTexture(1, &pkShadowTexture);
+			if (CGraphicBase::BeginSpeedTreeBranchShader(NULL != pkShadowTexture))
+			{
+				STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_pGeometryCache->m_sBranches.m_usVertexCount, 0, m_pBranchIndexCounts[m_pGeometryCache->m_sBranches.m_nDiscreteLodLevel] - 2);
+				CGraphicBase::EndPDTShader();
+			}
+			else
+			{
+				STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_pGeometryCache->m_sBranches.m_usVertexCount, 0, m_pBranchIndexCounts[m_pGeometryCache->m_sBranches.m_nDiscreteLodLevel] - 2);
+			}
 		}
 	}
 }
@@ -973,7 +983,19 @@ void CSpeedTreeWrapper::RenderFronds(void) const
 			m_pFrondIndexCounts[m_pGeometryCache->m_sFronds.m_nDiscreteLodLevel] > 0)
 		{
 			ms_faceCount += m_pFrondIndexCounts[m_pGeometryCache->m_sFronds.m_nDiscreteLodLevel] - 2;
-			STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_pGeometryCache->m_sFronds.m_usVertexCount, 0, m_pFrondIndexCounts[m_pGeometryCache->m_sFronds.m_nDiscreteLodLevel] - 2);
+			{
+				LPDIRECT3DBASETEXTURE9 pkShadowTexture = NULL;
+				STATEMANAGER.GetTexture(1, &pkShadowTexture);
+				if (CGraphicBase::BeginSpeedTreeBranchShader(NULL != pkShadowTexture))
+				{
+					STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_pGeometryCache->m_sFronds.m_usVertexCount, 0, m_pFrondIndexCounts[m_pGeometryCache->m_sFronds.m_nDiscreteLodLevel] - 2);
+					CGraphicBase::EndPDTShader();
+				}
+				else
+				{
+					STATEMANAGER.DrawIndexedPrimitive(D3DPT_TRIANGLESTRIP, 0, m_pGeometryCache->m_sFronds.m_usVertexCount, 0, m_pFrondIndexCounts[m_pGeometryCache->m_sFronds.m_nDiscreteLodLevel] - 2);
+				}
+			}
 		}
 	}
 }
