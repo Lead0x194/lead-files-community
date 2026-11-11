@@ -608,6 +608,11 @@ void CMapOutdoor::__HardwareTransformPatch_RenderPatchSplat(long patchnum, WORD 
 		STATEMANAGER.SetRenderState(D3DRS_FOGCOLOR, 0xFFFFFFFF);
 		STATEMANAGER.SetRenderState(D3DRS_SRCBLEND, D3DBLEND_ZERO);
 		STATEMANAGER.SetRenderState(D3DRS_DESTBLEND, D3DBLEND_SRCCOLOR);
+		// This overlay re-rasterizes the terrain mesh, so it must darken only the
+		// terrain's own pixels (bit-identical depths). With LESSEQUAL it also wins
+		// marginal depth fights against dungeon-block geometry lying on the
+		// terrain and multiplies whole blocks toward black for single frames.
+		STATEMANAGER.SaveRenderState(D3DRS_ZFUNC, D3DCMP_EQUAL);
 
 		D3DXMATRIX matShadowTexTransform;
 		D3DXMatrixMultiply(&matShadowTexTransform, &matTexTransform, &m_matStaticShadow);
@@ -662,6 +667,7 @@ void CMapOutdoor::__HardwareTransformPatch_RenderPatchSplat(long patchnum, WORD 
 		STATEMANAGER.SetSamplerState(0, D3DSAMP_ADDRESSV,  D3DTADDRESS_WRAP);
 		
 		
+		STATEMANAGER.RestoreRenderState(D3DRS_ZFUNC);
 		STATEMANAGER.SetRenderState(D3DRS_SRCBLEND, D3DBLEND_SRCALPHA);
 		STATEMANAGER.SetRenderState(D3DRS_DESTBLEND, D3DBLEND_INVSRCALPHA);
 		STATEMANAGER.SetRenderState(D3DRS_FOGCOLOR, dwFogColor);

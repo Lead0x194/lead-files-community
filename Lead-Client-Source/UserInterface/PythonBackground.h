@@ -124,6 +124,7 @@ public:
 	void DisableGuildArea();
 
 	void RegisterDungeonMapName(const char * c_szMapName);
+	void RegisterBlockDungeonMapName(const char * c_szMapName);
 	TMapInfo* GlobalPositionToMapInfo(DWORD dwGlobalX, DWORD dwGlobalY);
 	const char* GetWarpMapName();
 
@@ -154,6 +155,7 @@ private:
 
 	std::set<int> m_kSet_iShowingPortalID;
 	std::set<std::string> m_kSet_strDungeonMapName;
+	std::set<std::string> m_kSet_strBlockDungeonMapName;
 	std::map<DWORD, DWORD> m_kMap_dwTargetID_dwChrID;
 
 	struct SReserveTargetEffect
