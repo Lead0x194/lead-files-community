@@ -5,13 +5,14 @@
 # what you are doing.
 
 # Delete the files if they're already present
-rm -f vrunner game data locale package CMD 
+rm -f vrunner game data locale package CMD conf
 
 # Create the symbolic links
 ln -s ../../share/bin/game game
 ln -s ../../share/data data
 ln -s ../../share/locale locale
 ln -s ../../share/package package
+ln -s ../../conf conf
 ln -s ../../share/conf/CMD CMD
 
 if [ ! -d mark ]; then mkdir mark; fi

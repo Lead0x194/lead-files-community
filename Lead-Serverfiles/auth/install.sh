@@ -5,13 +5,14 @@
 # what you are doing.
 
 # Delete the files if they're already present
-rm -f auth data locale package
+rm -f auth data locale package conf
 
 # Create the symbolic links
 ln -s ../share/bin/game auth
 ln -s ../share/data data
 ln -s ../share/locale locale
 ln -s ../share/package package
+ln -s ../conf conf
 
 if [ ! -d log ]; then mkdir log; fi
 if [ ! -d cores ]; then mkdir cores; fi

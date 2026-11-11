@@ -9,6 +9,11 @@
 
 ROOT=$PWD
 
+if [ ! -f "$ROOT/conf/GENERAL_CONFIG" ]; then
+	echo "Missing shared configuration: $ROOT/conf/GENERAL_CONFIG" >&2
+	exit 1
+fi
+
 chmod u=rwx,g=r,o=r $ROOT/share/bin/game
 chmod u=rwx,g=r,o=r $ROOT/share/bin/db
 
