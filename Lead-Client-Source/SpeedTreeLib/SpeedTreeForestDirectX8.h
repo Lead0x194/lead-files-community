@@ -51,14 +51,12 @@ class CSpeedTreeForestDirectX8 : public CSpeedTreeForest, public CGraphicBase, p
 		void			UpdateCompundMatrix(const D3DXVECTOR3 & c_rEyeVec, const D3DXMATRIX & c_rmatView, const D3DXMATRIX & c_rmatProj);
 
 		void			Render(unsigned long ulRenderBitVector = Forest_RenderAll);
-		bool			SetRenderingDevice(LPDIRECT3DDEVICE9 pDevice);
+		bool			SetRenderingDevice();
 		
 	private:
 		bool			InitVertexShaders();
 		
 	private:
-		LPDIRECT3DDEVICE9		m_pDx;							// the rendering context
-
 		LPDIRECT3DVERTEXDECLARATION9 m_dwBranchVertexShader;			// branch/frond vertex shaders	
 		LPDIRECT3DVERTEXDECLARATION9 m_pLeafVertexShaderDecl;			// leaf vertex shader declaration
 		LPDIRECT3DVERTEXSHADER9		 m_pLeafVertexShader;			// leaf vertex shader
