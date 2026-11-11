@@ -65,10 +65,10 @@ bool CSpeedTreeForestDirectX8::InitVertexShaders(void)
 	NANOBEGIN
 	// load the vertex shaders
 	if (!m_dwBranchVertexShader)
-		m_dwBranchVertexShader = LoadBranchShader(m_pDx);
+		m_dwBranchVertexShader = LoadBranchShader();
 
 	if (!m_pLeafVertexShaderDecl || !m_pLeafVertexShader)
-		LoadLeafShader(m_pDx, m_pLeafVertexShaderDecl, m_pLeafVertexShader);
+		LoadLeafShader(m_pLeafVertexShaderDecl, m_pLeafVertexShader);
 
 	if (m_dwBranchVertexShader && m_pLeafVertexShaderDecl && m_pLeafVertexShader)
 	{
@@ -80,10 +80,8 @@ bool CSpeedTreeForestDirectX8::InitVertexShaders(void)
 	return false;
 }
 
-bool CSpeedTreeForestDirectX8::SetRenderingDevice(LPDIRECT3DDEVICE9 lpDevice)
+bool CSpeedTreeForestDirectX8::SetRenderingDevice()
 {
-	m_pDx = lpDevice;
-
 	if (!InitVertexShaders())
 		return false;
 
