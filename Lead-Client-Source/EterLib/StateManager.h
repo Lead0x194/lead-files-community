@@ -255,6 +255,7 @@ class CStateManager : public CSingleton<CStateManager>
 
 		void	SetLight(DWORD index, CONST D3DLIGHT9* pLight);
 		void	GetLight(DWORD index, D3DLIGHT9* pLight);
+		void	LightEnable(DWORD index, BOOL bEnable);
 
 		// Renderstates
 		void	SaveRenderState(D3DRENDERSTATETYPE Type, DWORD dwValue);

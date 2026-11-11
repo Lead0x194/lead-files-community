@@ -11,6 +11,7 @@ struct SLightData
 		LIGHT_NUM = 8,
 	};
 	D3DLIGHT9 m_akD3DLight[LIGHT_NUM];
+	BOOL m_abLightEnable[LIGHT_NUM];
 } m_kLightData;
 
 
@@ -21,6 +22,14 @@ void CStateManager::SetLight(DWORD index, CONST D3DLIGHT9* pLight)
 	m_kLightData.m_akD3DLight[index]=*pLight;
 
 	m_lpD3DDev->SetLight(index, pLight);
+}
+
+void CStateManager::LightEnable(DWORD index, BOOL bEnable)
+{
+	assert(index<SLightData::LIGHT_NUM);
+	m_kLightData.m_abLightEnable[index]=bEnable;
+
+	m_lpD3DDev->LightEnable(index, bEnable);
 }
 
 void CStateManager::GetLight(DWORD index, D3DLIGHT9* pLight)

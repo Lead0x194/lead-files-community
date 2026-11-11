@@ -208,7 +208,7 @@ void CLight::SetDeviceLight(BOOL bActive)
 	}
 	if (ms_lpd3dDevice)
 	{
-		ms_lpd3dDevice->LightEnable(m_LightID, bActive);
+		STATEMANAGER.LightEnable(m_LightID, bActive);
 	}
 }
 
