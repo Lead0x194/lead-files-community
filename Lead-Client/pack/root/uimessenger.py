@@ -538,18 +538,18 @@ class MessengerWindow(ui.ScriptWindow):
 			if self.selectedItem.CanRemove():
 				self.questionDialog = uiCommon.QuestionDialog()
 				self.questionDialog.SetText(localeInfo.MESSENGER_DO_YOU_DELETE)
-				self.questionDialog.SetAcceptEvent(ui.__mem_func__(self.OnRemove))
+				self.questionDialog.SetAcceptEvent(lambda item=self.selectedItem, event=ui.__mem_func__(self.OnRemove): event(item))
 				self.questionDialog.SetCancelEvent(ui.__mem_func__(self.OnCloseQuestionDialog))
 				self.questionDialog.Open()
 
-	def OnRemove(self):
-		if self.selectedItem:
-			if self.selectedItem.CanRemove():
-				map(lambda arg, argDeletingItem=self.selectedItem: arg.RemoveMember(argDeletingItem), self.groupList)
-				self.selectedItem.OnRemove()
-				self.selectedItem.UnSelect()
+	def OnRemove(self, item):
+		if item.CanRemove():
+			map(lambda arg, argDeletingItem=item: arg.RemoveMember(argDeletingItem), self.groupList)
+			item.OnRemove()
+			item.UnSelect()
+			if self.selectedItem == item:
 				self.selectedItem = None
-				self.OnRefreshList()
+			self.OnRefreshList()
 
 		self.OnCloseQuestionDialog()
 
