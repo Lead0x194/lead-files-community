@@ -1819,7 +1819,7 @@ ACMD(do_ride)
 	    return;
 	}
 
-	if (ch->GetMountVnum())
+	if (ch->GetMountVnum() || ch->GetEquippedRideItem())
 	{
 	    dev_log(LOG_DEB0, "[DO_RIDE] unmount");
 	    do_unmount(ch, NULL, 0, 0);

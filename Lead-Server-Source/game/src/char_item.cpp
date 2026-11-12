@@ -7110,28 +7110,23 @@ bool CHARACTER::CanDoCube() const
 	return true;
 }
 
+LPITEM CHARACTER::GetEquippedRideItem() const
+{
+	// The shared item proto equips ride seals in the shield slot.
+	for (const auto slot : {WEAR_UNIQUE1, WEAR_UNIQUE2, WEAR_SHIELD})
+	{
+		LPITEM item = GetWear(slot);
+		if (item && item->IsRideItem())
+			return item;
+	}
+
+	return nullptr;
+}
+
 bool CHARACTER::UnEquipSpecialRideUniqueItem()
 {
-	LPITEM Unique1 = GetWear(WEAR_UNIQUE1);
-	LPITEM Unique2 = GetWear(WEAR_UNIQUE2);
-
-	if( NULL != Unique1 )
-	{
-		if( UNIQUE_GROUP_SPECIAL_RIDE == Unique1->GetSpecialGroup() )
-		{
-			return UnequipItem(Unique1);
-		}
-	}
-
-	if( NULL != Unique2 )
-	{
-		if( UNIQUE_GROUP_SPECIAL_RIDE == Unique2->GetSpecialGroup() )
-		{
-			return UnequipItem(Unique2);
-		}
-	}
-
-	return true;
+	LPITEM item = GetEquippedRideItem();
+	return !item || UnequipItem(item);
 }
 
 void CHARACTER::AutoRecoveryItemProcess(const EAffectTypes type)

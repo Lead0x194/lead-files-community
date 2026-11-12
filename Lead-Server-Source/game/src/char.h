@@ -1678,6 +1678,7 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 		DWORD GetLogOffInterval() const { return m_dwLogOffInterval; }
 
 	public:
+		LPITEM GetEquippedRideItem() const;
 		bool UnEquipSpecialRideUniqueItem ();
 
 		bool CanWarp () const;
