@@ -1,3 +1,4 @@
+from __future__ import print_function
 import ui
 import uiScriptLocale
 import net
@@ -64,11 +65,11 @@ class WebWindow(ui.ScriptWindow):
 		pass
 
 	def __OnCloseButtonClick(self):
-		print "close_web:click_close_button"
+		print("close_web:click_close_button")
 		self.Close()
 
 	def OnPressEscapeKey(self):
-		print "close_web:esc_key"
+		print("close_web:esc_key")
 		self.Close()
 		return True
 

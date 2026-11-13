@@ -69,7 +69,7 @@ class PickMoneyDialog(ui.ScriptWindow):
 		elif mouseX - width/2 < 0:
 			xPos = 0
 		else:
-			xPos = mouseX - width/2
+			xPos = mouseX - width//2
 
 		self.SetPosition(xPos, mouseY - self.GetHeight() - 20)
 
@@ -98,7 +98,7 @@ class PickMoneyDialog(ui.ScriptWindow):
 
 		if len(text) > 0 and text.isdigit():
 
-			money = long(text)
+			money = int(text)
 			money = min(money, self.maxValue)
 
 			if money > 0:

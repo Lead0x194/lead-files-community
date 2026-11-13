@@ -18,7 +18,7 @@ class RestartDialog(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 			pyScrLoader.LoadScriptFile(self, "uiscript/restartdialog.py")
-		except Exception, msg:
+		except Exception as msg:
 			import sys
 			(type, msg, tb)=sys.exc_info()
 			dbg.TraceError("RestartDialog.LoadDialog - %s:%s" % (type, msg))

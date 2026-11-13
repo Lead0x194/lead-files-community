@@ -1,3 +1,4 @@
+from __future__ import print_function
 import grp
 import ui
 import wndMgr
@@ -6,7 +7,7 @@ import app
 class PhaseCurtain(ui.Bar):
 
 	def __init__(self):
-		print "NEW CURTAIN  ----------------------------------------------------------------------------"
+		print("NEW CURTAIN  ----------------------------------------------------------------------------")
 		ui.Bar.__init__(self, "CURTAIN")
 		self.speed = 0.1
 		self.curAlpha = 0.0
@@ -17,7 +18,7 @@ class PhaseCurtain(ui.Bar):
 		self.AddFlag("float")
 
 	def __del__(self):
-		print "---------------------------------------------------------------------------- DELETE CURTAIN"
+		print("---------------------------------------------------------------------------- DELETE CURTAIN")
 		ui.Bar.__del__(self)
 
 	def SAFE_FadeOut(self, event, args = -1):

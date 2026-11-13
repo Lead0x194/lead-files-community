@@ -1,3 +1,4 @@
+from __future__ import print_function
 import app
 import ui
 import uiScriptLocale
@@ -156,8 +157,8 @@ class MapNameShower(ui.ExpandedImageBox):
 			return 7
 		return	0
 	def ShowMapName(self, mapName, x, y):
-		if not self.MAP_NAME_IMAGE.has_key(mapName):
-			print " [ERROR] - There is no map name image", mapName
+		if not mapName in self.MAP_NAME_IMAGE:
+			print(" [ERROR] - There is no map name image", mapName)
 			return
 
 		try:
@@ -179,7 +180,7 @@ class MapNameShower(ui.ExpandedImageBox):
 			# Map name (ex: Agui Cave) image loading & display			
 			try:
 				floor = self.__GetDevilTowerFloor(x, y)
-				print x, y, floor
+				print(x, y, floor)
 				self.floorImage.LoadImage(LOCALE_PATH+"devil1_%df.tga" % floor)
 			except RuntimeError:
 				self.SetPosition(0, 80)
@@ -198,7 +199,7 @@ class MapNameShower(ui.ExpandedImageBox):
 				# For dungeons it is hard to avoid hardcoding because of the part that finds out the current floor...
 				try:
 					floor = self.__GetDevilTowerFloor(x, y)
-					print x, y, floor
+					print(x, y, floor)
 					self.objectiveImage.LoadImage(LOCALE_PATH + mapName + "/obj_%02df.tga" % floor)
 				except RuntimeError:
 					self.SetPosition(0, 80)
@@ -218,7 +219,7 @@ class MapNameShower(ui.ExpandedImageBox):
 			# Map name (ex: Agui Cave) image loading & display
 			try:
 				floor = self.__GetDevilBase(x, y)
-				print x, y, floor
+				print(x, y, floor)
 				self.floorImage.LoadImage(LOCALE_PATH+"devil1_%df.tga" % floor)
 			except RuntimeError:
 				self.SetPosition(0, 80)
@@ -237,7 +238,7 @@ class MapNameShower(ui.ExpandedImageBox):
 				# For dungeons it is hard to avoid hardcoding because of the part that finds out the current floor...
 				try:
 					floor = self.__GetDevilBase(x, y)
-					print x, y, floor
+					print(x, y, floor)
 					self.objectiveImage.LoadImage(LOCALE_PATH + mapName + "/obj_%02df.tga" % floor)
 				except RuntimeError:
 					self.SetPosition(0, 80)

@@ -1,3 +1,4 @@
+from __future__ import print_function
 import ui
 import net
 import item
@@ -33,13 +34,13 @@ def LoadMouseButtonSettings():
 	tokens = open("mouse.cfg", "r").read().split()
 
 	if len(tokens) != 2:
-		raise RuntimeError, "MOUSE_SETTINGS_FILE_ERROR"
+		raise RuntimeError("MOUSE_SETTINGS_FILE_ERROR")
 
 	MOUSE_SETTINGS[0] = int(tokens[0])
 	MOUSE_SETTINGS[1] = int(tokens[1])
 
 def unsigned32(n):
-	return n & 0xFFFFFFFFL
+	return n & 0xFFFFFFFF
 
 #-------------------Giftbox Begin------------------------------
 
@@ -447,7 +448,7 @@ class TaskBar(ui.ScriptWindow):
 			if systemButton.ToolTipText:
 				tx, ty = systemButton.ToolTipText.GetLocalPosition()
 				tw = systemButton.ToolTipText.GetWidth() 
-				systemButton.ToolTipText.SetPosition(-tw/2, ty)
+				systemButton.ToolTipText.SetPosition(-tw//2, ty)
 
 
 		expGauge = []
@@ -514,7 +515,7 @@ class TaskBar(ui.ScriptWindow):
 			self.rampageGauge2 = self.GetChild("RampageGauge2")
 			self.rampageGauge2.OnMouseOverOut = ui.__mem_func__(self.__RampageGauge_OverOut)
 			self.rampageGauge2.OnMouseLeftButtonUp = ui.__mem_func__(self.__RampageGauge_Click)
-			print "[DEBUG]: constInfo.IN_GAME_SHOP_ENABLE / self.rampageGauge1",constInfo.IN_GAME_SHOP_ENABLE, self.rampageGauge1
+			print("[DEBUG]: constInfo.IN_GAME_SHOP_ENABLE / self.rampageGauge1",constInfo.IN_GAME_SHOP_ENABLE, self.rampageGauge1)
 			self.__RampageGauge_OverOut()
 
 		self.hpGauge = self.GetChild("HPGauge")
@@ -538,17 +539,17 @@ class TaskBar(ui.ScriptWindow):
 		self.RefreshQuickSlot()
 
 	def __RampageGauge_OverIn(self):
-		print "rampage_over_in"
+		print("rampage_over_in")
 		self.rampageGauge2.Show()
 		self.rampageGauge1.Hide()
 
 	def __RampageGauge_OverOut(self):
-		print "rampage_over_out"
+		print("rampage_over_out")
 		self.rampageGauge2.Hide()
 		self.rampageGauge1.Show()
 
 	def __RampageGauge_Click(self):
-		print "rampage_up"
+		print("rampage_up")
 		net.SendChatPacket("/in_game_mall")
 		# gift icon hide when click mall icon
 		self.wndGiftBox.Hide()	
@@ -558,7 +559,7 @@ class TaskBar(ui.ScriptWindow):
 			LoadMouseButtonSettings()
 			(mouseLeftButtonEvent, mouseRightButtonEvent) = GetMouseButtonSettings()
 			if not self.__IsInSafeMouseButtonSettingRange(mouseLeftButtonEvent) or not self.__IsInSafeMouseButtonSettingRange(mouseRightButtonEvent):
-					raise RuntimeError, "INVALID_MOUSE_BUTTON_SETTINGS"
+					raise RuntimeError("INVALID_MOUSE_BUTTON_SETTINGS")
 		except:
 			InitMouseButtonSettings(self.EVENT_MOVE_AND_ATTACK, self.EVENT_CAMERA)
 			(mouseLeftButtonEvent, mouseRightButtonEvent) = GetMouseButtonSettings()
@@ -707,16 +708,16 @@ class TaskBar(ui.ScriptWindow):
 		curPoint = max(curPoint, 0)
 		maxPoint = max(maxPoint, 0)
 
-		quarterPoint = maxPoint / 4
+		quarterPoint = maxPoint // 4
 		FullCount = 0
 
 		if 0 != quarterPoint:
-			FullCount = min(4, curPoint / quarterPoint)
+			FullCount = min(4, curPoint // quarterPoint)
 
-		for i in xrange(4):
+		for i in range(4):
 			self.expGauge[i].Hide()
 
-		for i in xrange(FullCount):
+		for i in range(FullCount):
 			self.expGauge[i].SetRenderingRect(0.0, 0.0, 0.0, 0.0)
 			self.expGauge[i].Show()
 
@@ -743,7 +744,7 @@ class TaskBar(ui.ScriptWindow):
 		startNumber = 0
 		for slot in self.quickslot:
 
-			for i in xrange(4):
+			for i in range(4):
 
 				slotNumber = i+startNumber
 
@@ -761,7 +762,7 @@ class TaskBar(ui.ScriptWindow):
 						itemCount = 0
 					
 					if constInfo.IS_AUTO_POTION(itemIndex):
-						metinSocket = [player.GetItemMetinSocket(Position, j) for j in xrange(player.METIN_SOCKET_MAX_NUM)]
+						metinSocket = [player.GetItemMetinSocket(Position, j) for j in range(player.METIN_SOCKET_MAX_NUM)]
 						
 						if 0 != int(metinSocket[0]):
 							slot.ActivateSlot(slotNumber)
@@ -874,7 +875,7 @@ class TaskBar(ui.ScriptWindow):
 		## Quick Slot
 		for slotWindow in self.quickslot:
 
-			for i in xrange(QUICK_SLOT_SLOT_COUNT):
+			for i in range(QUICK_SLOT_SLOT_COUNT):
 
 				(Type, Position) = player.GetLocalQuickSlot(slotIndex)
 
@@ -895,7 +896,7 @@ class TaskBar(ui.ScriptWindow):
 		## Quick Slot
 		for slotWindow in self.quickslot:
 
-			for i in xrange(4):
+			for i in range(4):
 
 				(Type, Position) = player.GetLocalQuickSlot(slotIndex)
 
@@ -916,7 +917,7 @@ class TaskBar(ui.ScriptWindow):
 		## Quick Slot
 		for slotWindow in self.quickslot:
 
-			for i in xrange(4):
+			for i in range(4):
 
 				(Type, Position) = player.GetLocalQuickSlot(slotIndex)
 
@@ -1026,7 +1027,7 @@ class TaskBar(ui.ScriptWindow):
 
 			getSkillIndex=player.GetSkillIndex
 			getSkillLevel=player.GetSkillLevel
-			for i in xrange(PAGE_SLOT_COUNT):
+			for i in range(PAGE_SLOT_COUNT):
 
 				skillIndex = getSkillIndex(startNumber+i)
 				skillLevel = getSkillLevel(startNumber+i)

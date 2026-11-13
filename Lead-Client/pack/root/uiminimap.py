@@ -189,7 +189,7 @@ class AtlasWindow(ui.ScriptWindow):
 		ui.ScriptWindow.Show(self)
 
 	def SetCenterPositionAdjust(self, x, y):
-		self.SetPosition((wndMgr.GetScreenWidth() - self.GetWidth()) / 2 + x, (wndMgr.GetScreenHeight() - self.GetHeight()) / 2 + y)
+		self.SetPosition((wndMgr.GetScreenWidth() - self.GetWidth()) // 2 + x, (wndMgr.GetScreenHeight() - self.GetHeight()) // 2 + y)
 
 	def OnPressEscapeKey(self):
 		self.Hide()
@@ -284,7 +284,7 @@ class MiniMap(ui.ScriptWindow):
 		self.mapName=mapName
 		self.AtlasWindow.SetMapName(mapName)
 
-		if self.CANNOT_SEE_INFO_MAP_DICT.has_key(mapName):
+		if mapName in self.CANNOT_SEE_INFO_MAP_DICT:
 			self.canSeeInfo = False
 			self.HideMiniMap()
 			self.tooltipMiniMapOpen.SetText(localeInfo.MINIMAP_CANNOT_SEE)

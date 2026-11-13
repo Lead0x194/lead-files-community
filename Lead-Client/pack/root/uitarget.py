@@ -1,3 +1,4 @@
+from __future__ import print_function
 import app
 import ui
 import player
@@ -45,8 +46,8 @@ class TargetBoard(ui.ThinBoard):
 				calculatedHeight = max(32, imgHeight) + 5
 				self.SetSize(self.GetWidth(), calculatedHeight)
 				
-				self.image.SetPosition(0, (calculatedHeight - imgHeight) / 2)
-				self.baseTextY = (calculatedHeight - 15) / 2
+				self.image.SetPosition(0, (calculatedHeight - imgHeight) // 2)
+				self.baseTextY = (calculatedHeight - 15) // 2
 				
 				if name != None:
 					self.SetText(name)
@@ -152,7 +153,7 @@ class TargetBoard(ui.ThinBoard):
 			ui.ThinBoard.__del__(self)
 
 		def __UpdatePosition(self, targetBoard):
-			self.SetPosition(targetBoard.GetLeft() + (targetBoard.GetWidth() - self.GetWidth()) / 2, targetBoard.GetBottom() - 17)
+			self.SetPosition(targetBoard.GetLeft() + (targetBoard.GetWidth() - self.GetWidth()) // 2, targetBoard.GetBottom() - 17)
 
 		def Open(self, targetBoard, race):
 			self.__LoadInformation(race)
@@ -225,8 +226,8 @@ class TargetBoard(ui.ThinBoard):
 			self_dx = player.GetStatus(player.DX)
 			self_level = player.GetStatus(player.LEVEL)
 
-			iARSrc = min(90, (attacker_dx * 4 + attacker_level * 2) / 6)
-			iERSrc = min(90, (self_dx * 4 + self_level * 2) / 6)
+			iARSrc = min(90, (attacker_dx * 4 + attacker_level * 2) // 6)
+			iERSrc = min(90, (self_dx * 4 + self_level * 2) // 6)
 
 			fAR = (float(iARSrc) + 210.0) / 300.0
 			fER = (float(iERSrc) * 2 + 5) / (float(iERSrc) + 95) * 3.0 / 10.0
@@ -249,7 +250,7 @@ class TargetBoard(ui.ThinBoard):
 			iDamMin, iDamMax = nonplayer.GetMonsterDamage(race)
 			iDamMin = int((iDamMin + nonplayer.GetMonsterST(race)) * 2 * fHitRate) + monsterLevel * 2
 			iDamMax = int((iDamMax + nonplayer.GetMonsterST(race)) * 2 * fHitRate) + monsterLevel * 2
-			iDef = player.GetStatus(player.DEF_GRADE) * (100 + player.GetStatus(player.DEF_BONUS)) / 100
+			iDef = player.GetStatus(player.DEF_GRADE) * (100 + player.GetStatus(player.DEF_BONUS)) // 100
 			fDamMulti = nonplayer.GetMonsterDamageMultiply(race)
 			iDamMin = int(max(0, iDamMin - iDef) * fDamMulti)
 			iDamMax = int(max(0, iDamMax - iDef) * fDamMulti)
@@ -260,7 +261,7 @@ class TargetBoard(ui.ThinBoard):
 			self.AppendTextLine(localeInfo.TARGET_INFO_DAMAGE % (str(iDamMin), str(iDamMax)))
 
 			idx = min(len(self.EXP_BASE_LVDELTA) - 1, max(0, (monsterLevel + 15) - player.GetStatus(player.LEVEL)))
-			iExp = nonplayer.GetMonsterExp(race) * self.EXP_BASE_LVDELTA[idx] / 100
+			iExp = nonplayer.GetMonsterExp(race) * self.EXP_BASE_LVDELTA[idx] // 100
 			self.AppendTextLine(localeInfo.TARGET_INFO_EXP % localeInfo.DottedNumber(iExp))
 
 			self.AppendTextLine(localeInfo.TARGET_INFO_GOLD_MIN_MAX % (localeInfo.DottedNumber(nonplayer.GetMonsterGoldMin(race)), localeInfo.DottedNumber(nonplayer.GetMonsterGoldMax(race))))
@@ -301,7 +302,7 @@ class TargetBoard(ui.ThinBoard):
 					itemListBox.SetSize(self.GetWidth() - 15 * 2 - ui.ScrollBar.SCROLLBAR_WIDTH, (32 + 5) * self.MAX_ITEM_COUNT)
 					height = 0
 					for curItem in MONSTER_INFO_DATA[race]["items"]:
-						if curItem.has_key("vnum_list"):
+						if "vnum_list" in curItem:
 							height += self.AppendItem(itemListBox, curItem["vnum_list"], curItem["count"])
 						else:
 							height += self.AppendItem(itemListBox, curItem["vnum"], curItem["count"])
@@ -376,7 +377,7 @@ class TargetBoard(ui.ThinBoard):
 			if item.GetItemType() == item.ITEM_TYPE_METIN:
 				self.stoneImg = myItem
 				self.stoneVnum = vnums
-				self.lastStoneVnum = self.STONE_LAST_VNUM + vnums[-1] % 1000 / 100 * 100
+				self.lastStoneVnum = self.STONE_LAST_VNUM + vnums[-1] % 1000 // 100 * 100
 
 			return myItem.GetHeight()
 
@@ -400,7 +401,7 @@ class TargetBoard(ui.ThinBoard):
 
 			wnd.SetParent(self)
 			if x == 0:
-				wnd.SetPosition((self.GetWidth() - width) / 2, self.yPos)
+				wnd.SetPosition((self.GetWidth() - width) // 2, self.yPos)
 			else:
 				wnd.SetPosition(x, self.yPos)
 			wnd.Show()
@@ -559,7 +560,7 @@ class TargetBoard(ui.ThinBoard):
 	def __del__(self):
 		ui.ThinBoard.__del__(self)
 
-		print "===================================================== DESTROYED TARGET BOARD"
+		print("===================================================== DESTROYED TARGET BOARD")
 
 	def __Initialize(self):
 		self.nameString = ""
@@ -671,7 +672,7 @@ class TargetBoard(ui.ThinBoard):
 		self.eventWhisper = event
 
 	def UpdatePosition(self):
-		self.SetPosition(wndMgr.GetScreenWidth()/2 - self.GetWidth()/2, 10)
+		self.SetPosition(wndMgr.GetScreenWidth()//2 - self.GetWidth()//2, 10)
 
 	def ResetTargetBoard(self):
 
@@ -703,7 +704,7 @@ class TargetBoard(ui.ThinBoard):
 		nameFront = ""
 		if -1 != level:
 			nameFront += "Lv." + str(level) + " "
-		if self.GRADE_NAME.has_key(grade):
+		if grade in self.GRADE_NAME:
 			nameFront += "(" + self.GRADE_NAME[grade] + ") "
 
 		self.SetTargetName(nameFront + name)
@@ -762,7 +763,7 @@ class TargetBoard(ui.ThinBoard):
 
 	def __ShowButton(self, name):
 
-		if not self.buttonDict.has_key(name):
+		if name not in self.buttonDict:
 			return
 
 		self.buttonDict[name].Show()
@@ -770,7 +771,7 @@ class TargetBoard(ui.ThinBoard):
 
 	def __HideButton(self, name):
 
-		if not self.buttonDict.has_key(name):
+		if name not in self.buttonDict:
 			return
 
 		button = self.buttonDict[name]
@@ -904,7 +905,7 @@ class TargetBoard(ui.ThinBoard):
 	def __ArrangeButtonPosition(self):
 		showingButtonCount = len(self.showingButtonList)
 
-		pos = -(showingButtonCount / 2) * 68
+		pos = -(showingButtonCount // 2) * 68
 		if 0 == showingButtonCount % 2:
 			pos += 34
 
