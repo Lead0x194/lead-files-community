@@ -40,7 +40,6 @@ const char *	get_table_postfix();
 
 extern std::string	g_stHostname;
 extern std::string	g_stLocale;
-extern std::string	g_stLocaleFilename;
 
 extern char		g_szPublicIP[16];
 extern char		g_szInternalIP[16];

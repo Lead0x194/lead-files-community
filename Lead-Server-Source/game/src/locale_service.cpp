@@ -18,7 +18,6 @@ string g_stServiceBasePath = ".";
 string g_stServiceMapPath = "data/map";
 
 string g_stLocale = "euckr";
-string g_stLocaleFilename;
 
 BYTE PK_PROTECT_LEVEL = 30;
 
@@ -85,19 +84,6 @@ int check_name_euckr(const char * str)
 	return check_name_independent(str);
 }
 
-void LocaleService_LoadLocaleStringFile()
-{
-	if (g_stLocaleFilename.empty())
-		return;
-
-	if (g_bAuthServer)
-		return;
-
-	fprintf(stderr, "LocaleService %s\n", g_stLocaleFilename.c_str());
-
-	locale_init(g_stLocaleFilename.c_str());
-}
-
 void LocaleService_LoadEmpireTextConvertTables()
 {
 	char szFileName[256];
@@ -113,8 +99,6 @@ void LocaleService_LoadEmpireTextConvertTables()
 
 static void __LocaleService_Init_DEFAULT()
 {
-	g_stLocaleFilename = "";
-
 	g_stServiceBasePath = "locale/" + g_stServiceName;
 	g_stServiceMapPath = g_stServiceBasePath + "/map";
 	g_stQuestDir = g_stServiceBasePath + "/quest";
