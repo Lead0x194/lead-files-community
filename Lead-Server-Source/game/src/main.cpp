@@ -652,7 +652,7 @@ int start(int argc, char **argv)
 		}
 		else
 		{
-			fprintf(stderr, "MasterAuth %d", LC_GetLocalType());
+			fprintf(stderr, "MasterAuth 0");
 		}
 	}
 	else

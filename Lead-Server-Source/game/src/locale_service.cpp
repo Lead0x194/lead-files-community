@@ -22,12 +22,8 @@ string g_stLocaleFilename;
 
 BYTE PK_PROTECT_LEVEL = 30;
 
-string 			g_stLocal = "";
-eLocalization 	g_eLocalType = LC_NOSET;
-
 int (*check_name) (const char * str) = NULL;
 int (*is_twobyte) (const char * str) = NULL;
-bool LC_InitLocalization( const std::string& szLocal );
 
 int is_twobyte_euckr(const char * str)
 {
@@ -152,9 +148,6 @@ bool LocaleService_Init(const std::string& c_rstServiceName)
 
 	__CheckPlayerSlot(g_stServiceName);
 
-	if (false == LC_InitLocalization(c_rstServiceName))
-		return false;
-	
 	return true;
 }
 
@@ -195,22 +188,5 @@ const std::string& LocaleService_GetMapPath()
 const std::string& LocaleService_GetQuestPath()
 {
 	return g_stQuestDir;
-}
-
-bool LC_InitLocalization( const std::string& szLocal )
-{
-	g_stLocal = szLocal;
-
-	return true;
-}
-
-eLocalization LC_GetLocalType() 
-{
-	return g_eLocalType;
-}
-
-bool LC_IsLocale( const eLocalization t ) 
-{
-	return LC_GetLocalType() == t ? true : false;
 }
 
