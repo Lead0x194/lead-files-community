@@ -6,15 +6,15 @@
 /**/db_d.*
 /**/game_d.*
 /db/data*
-/db/locale*
+/db/common*
 /db/conf*
 /auth/public*
 /auth/data*
-/auth/locale*
+/auth/common*
 /auth/conf*
 /channel*/**/public*
 /channel*/**/data*
-/channel*/**/locale*
+/channel*/**/common*
 /channel*/**/conf*
 !/**/CONFIG
 !/**/conf.txt
@@ -40,5 +40,5 @@
 !/markserver/mark/.gitkeep
 
 # Quest objects
-/share/locale/english/quest/__pycache__
-/share/locale/english/quest/qc.*
+/share/common/quest/__pycache__
+/share/common/quest/qc.*
