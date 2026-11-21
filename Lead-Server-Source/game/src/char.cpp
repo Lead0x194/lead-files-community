@@ -1854,10 +1854,7 @@ void CHARACTER::SetProto(const CMob * pkMob)
 	if (GetRaceNum() == xmas::MOB_SANTA_VNUM)
 	{
 		SetPoint(POINT_ATT_GRADE_BONUS, 10);
-		if (g_iUseLocale)
-			SetPoint(POINT_DEF_GRADE_BONUS, 6);
-		else
-			SetPoint(POINT_DEF_GRADE_BONUS, 15);
+		SetPoint(POINT_DEF_GRADE_BONUS, 15);
 
 		// For Santa
 		//m_dwPlayStartTime = get_dword_time() + 10 * 60 * 1000;
@@ -5600,10 +5597,7 @@ bool CHARACTER::BuildUpdatePartyPacket(TPacketGCPartyUpdate & out)
 
 	if (l && DISTANCE_APPROX(GetX() - l->GetX(), GetY() - l->GetY()) < PARTY_DEFAULT_RANGE)
 	{
-		if (g_iUseLocale)
-			out.affects[0] = GetParty()->GetPartyBonusExpPercent();
-		else
-			out.affects[0] = GetParty()->GetExpBonusPercent();
+		out.affects[0] = GetParty()->GetExpBonusPercent();
 		out.affects[1] = static_cast<short>(GetPoint(POINT_PARTY_ATTACKER_BONUS));
 		out.affects[2] = static_cast<short>(GetPoint(POINT_PARTY_TANKER_BONUS));
 		out.affects[3] = static_cast<short>(GetPoint(POINT_PARTY_BUFFER_BONUS));

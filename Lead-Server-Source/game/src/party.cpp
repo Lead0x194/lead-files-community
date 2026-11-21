@@ -1361,7 +1361,7 @@ void CParty::Update()
 	bool bLongTimeExpBonusChanged = false;
 
 	// After sufficient time has passed after forming a party, you will receive an experience bonus. .
-	if (!m_iLongTimeExpBonus && (get_dword_time() - m_dwPartyStartTime > static_cast<DWORD>(PARTY_ENOUGH_MINUTE_FOR_EXP_BONUS * 60 * 1000 / (g_iUseLocale?1:2))))
+	if (!m_iLongTimeExpBonus && (get_dword_time() - m_dwPartyStartTime > static_cast<DWORD>(PARTY_ENOUGH_MINUTE_FOR_EXP_BONUS * 60 * 1000 / 2)))
 	{
 		bLongTimeExpBonusChanged = true;
 		m_iLongTimeExpBonus = 5;
@@ -1690,20 +1690,10 @@ int CParty::ComputePartyBonusExpPercent()
 		|| leader->IsEquipUniqueItem(UNIQUE_ITEM_PARTY_BONUS_EXP_GIFT) || leader->IsEquipUniqueGroup(10010)))
 	{
 		// Application of Chinese land islands must be confirmed. .
-		if (g_iUseLocale)
-		{
-			iBonusPartyExpFromItem = 30;
-		}
-		else
-		{
-			iBonusPartyExpFromItem = KOR_aiUniqueItemPartyBonusExpPercentByMemberCount[iMemberCount];
-		}
+		iBonusPartyExpFromItem = KOR_aiUniqueItemPartyBonusExpPercentByMemberCount[iMemberCount];
 	}
 
-	if (g_iUseLocale)
-		return iBonusPartyExpFromItem + CHN_aiPartyBonusExpPercentByMemberCount[iMemberCount];
-	else
-		return iBonusPartyExpFromItem + KOR_aiPartyBonusExpPercentByMemberCount[iMemberCount];
+	return iBonusPartyExpFromItem + KOR_aiPartyBonusExpPercentByMemberCount[iMemberCount];
 	// END_OF_UPGRADE_PARTY_BONUS
 }
 
