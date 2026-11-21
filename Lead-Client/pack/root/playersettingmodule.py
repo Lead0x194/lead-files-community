@@ -57,7 +57,6 @@ def DefineSkillIndexDict():
 	global NEW_678TH_SKILL_ENABLE
 	global SKILL_INDEX_DICT
 	
-	NEW_678TH_SKILL_ENABLE = localeInfo.IsYMIR()
 	if NEW_678TH_SKILL_ENABLE:
 		SKILL_INDEX_DICT = {
 			JOB_WARRIOR : { 

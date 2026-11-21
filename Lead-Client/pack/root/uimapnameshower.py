@@ -185,26 +185,7 @@ class MapNameShower(ui.ExpandedImageBox):
 				self.SetPosition(0, 80)
 				self.floorImage.Hide()
 				self.floorImage = None
-							
-			if localeInfo.IsYMIR():	
-				self.objectiveImage = ui.ExpandedImageBox()
-				self.objectiveImage.AddFlag("not_pick")
-				self.objectiveImage.SetWindowHorizontalAlignCenter()
-				self.objectiveImage.SetPosition(0, 200)
-				self.objectiveImage.SetAlpha(0.0)
-				self.objectiveImage.Show()
-			
-				# Per-floor objective image loading & display
-				# For dungeons it is hard to avoid hardcoding because of the part that finds out the current floor...
-				try:
-					floor = self.__GetDevilTowerFloor(x, y)
-					print x, y, floor
-					self.objectiveImage.LoadImage(LOCALE_PATH + mapName + "/obj_%02df.tga" % floor)
-				except RuntimeError:
-					self.SetPosition(0, 80)
-					self.objectiveImage.Hide()
-					self.objectiveImage = None
-				
+
 		if mapName == "metin2_map_devilsCatacomb":
 			self.SetPosition(-75, 80)
 
@@ -224,26 +205,7 @@ class MapNameShower(ui.ExpandedImageBox):
 				self.SetPosition(0, 80)
 				self.floorImage.Hide()
 				self.floorImage = None
-			if localeInfo.IsYMIR():	
-				self.objectiveImage = ui.ExpandedImageBox()
-				self.objectiveImage.AddFlag("not_pick")
-				self.objectiveImage.SetWindowHorizontalAlignCenter()
-				self.objectiveImage.SetPosition(0, 200)
-				self.objectiveImage.SetAlpha(0.0)
-				self.objectiveImage.Show()
-				
 
-				# Per-floor objective image loading & display
-				# For dungeons it is hard to avoid hardcoding because of the part that finds out the current floor...
-				try:
-					floor = self.__GetDevilBase(x, y)
-					print x, y, floor
-					self.objectiveImage.LoadImage(LOCALE_PATH + mapName + "/obj_%02df.tga" % floor)
-				except RuntimeError:
-					self.SetPosition(0, 80)
-					self.objectiveImage.Hide()
-					self.objectiveImage = None
-								
 		self.state = self.STATE_FADE_IN
 		self.fadeStartTime = app.GetTime() + 1.0
 		self.Show()

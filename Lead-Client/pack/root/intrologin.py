@@ -41,9 +41,6 @@ def Suffle(src):
 	else:
 		return src
 
-if localeInfo.IsYMIR() or localeInfo.IsCHEONMA():
-	FULL_BACK_IMAGE = True
-
 def IsFullBackImage():
 	global FULL_BACK_IMAGE
 	return FULL_BACK_IMAGE

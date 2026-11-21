@@ -58,9 +58,6 @@ class PickMoneyDialog(ui.ScriptWindow):
 
 	def Open(self, maxValue, unitValue=1):
 
-		if localeInfo.IsYMIR() or localeInfo.IsCHEONMA():
-			unitValue = ""
-
 		width = self.GetWidth()
 		(mouseX, mouseY) = wndMgr.GetMousePosition()
 

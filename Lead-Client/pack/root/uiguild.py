@@ -1933,13 +1933,7 @@ class GuildWindow(ui.ScriptWindow):
 
 class BuildGuildBuildingWindow(ui.ScriptWindow):
 
-	if localeInfo.IsYMIR():
-		GUILD_CATEGORY_LIST = (
-				("HEADQUARTER", "Main Building"),
-				("FACILITY", "Facility Building"),
-				("OBJECT", "Landscaping"),
-			)
-	elif localeInfo.IsEUROPE():
+	if localeInfo.IsEUROPE():
 		GUILD_CATEGORY_LIST = (
 				("HEADQUARTER", localeInfo.GUILD_HEADQUARTER),
 				("FACILITY", 	localeInfo.GUILD_FACILITY),
