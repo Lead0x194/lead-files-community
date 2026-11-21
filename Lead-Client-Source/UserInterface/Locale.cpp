@@ -195,11 +195,6 @@ void LocaleService_ForceSetLocale(const char* name, const char* localePath)
 		__SECURITY_KEY_STRING__ = "1234abcd5678efgh";
 }
 
-bool LocaleService_LoadGlobal(HINSTANCE hInstance)
-{
-	return false;
-}
-
 bool LocaleService_IsYMIR()		{ return (_stricmp( LocaleService_GetName(), LSS_YMIR ) == 0) || (_stricmp( LocaleService_GetLocaleName(), "ymir" ) == 0);	}
 bool LocaleService_IsJAPAN()	{ return (_stricmp( LocaleService_GetName(), LSS_JAPAN ) == 0) || (_stricmp( LocaleService_GetLocaleName(), "japan" ) == 0);	}
 bool LocaleService_IsENGLISH()	{ return (_stricmp( LocaleService_GetName(), LSS_ENGLISH ) == 0);	}

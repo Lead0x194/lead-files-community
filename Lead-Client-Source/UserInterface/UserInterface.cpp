@@ -393,9 +393,6 @@ bool Main(HINSTANCE hInstance, LPSTR lpCmdLine)
 		return false;
 	}
 
-	if(LocaleService_LoadGlobal(hInstance))
-		SetDefaultCodePage(LocaleService_GetCodePage());
-
 	CPythonApplication * app = new CPythonApplication;
 
 	app->Initialize(hInstance);

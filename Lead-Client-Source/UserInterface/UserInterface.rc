@@ -70,21 +70,6 @@ LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
 #pragma code_page(949)
 #endif //_WIN32
 
-/////////////////////////////////////////////////////////////////////////////
-//
-// Dialog
-//
-
-IDD_SELECT_LOCALE DIALOGEX 0, 0, 182, 142
-STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION
-CAPTION "SELECT LOCALE"
-FONT 10, "Arial", 0, 0, 0x0
-BEGIN
-    PUSHBUTTON      "START",IDC_START,44,123,40,13
-    PUSHBUTTON      "EXIT",IDC_EXIT,96,123,40,13
-    LISTBOX         IDC_LOCALE_LIST,6,5,170,114,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-END
-
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -139,11 +124,6 @@ IDC_CURSOR_HVSIZE       CURSOR                  "Cursors\\cursor_hvsize.cur"
 #ifdef APSTUDIO_INVOKED
 GUIDELINES DESIGNINFO 
 BEGIN
-    IDD_SELECT_LOCALE, DIALOG
-    BEGIN
-        RIGHTMARGIN, 102
-        BOTTOMMARGIN, 141
-    END
 END
 #endif    // APSTUDIO_INVOKED
 
