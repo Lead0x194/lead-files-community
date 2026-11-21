@@ -3,15 +3,7 @@
 #include "PythonApplication.h"
 #include "../eterBase/CRC32.h"
 
-const char* LSS_YMIR		= "YMIR";
-const char* LSS_JAPAN		= "JAPAN";
-const char* LSS_ENGLISH		= "ENGLISH";
-const char* LSS_HONGKONG	= "HONGKONG";
-const char* LSS_TAIWAN		= "TAIWAN";
 const char* LSS_EUROPE		= "EUROPE";
-const char* LSS_GLOBAL		= "GLOBAL";
-
-static bool IS_CHEONMA = false;
 
 #ifndef LSS_SECURITY_KEY
 #define LSS_SECURITY_KEY	"1234abcd5678efgh"
@@ -55,38 +47,6 @@ unsigned LocaleService_GetLastExp(int level)
 {
 	static const int GUILD_LEVEL_MAX = 20;
 
-	if (LocaleService_IsCHEONMA())
-	{
-		static DWORD CHEONMA_GUILDEXP_LIST[GUILD_LEVEL_MAX+1] = 
-		{
-			0,			// 0
-			15000ul,	// 1
-			45000ul,	// 2
-			90000ul,	// 3
-			160000ul,	// 4
-			235000ul,	// 5
-			325000ul,	// 6
-			430000ul,	// 7
-			550000ul,	// 8
-			685000ul,	// 9
-			835000ul,	// 10
-			1000000ul,	// 11
-			1500000ul,	// 12
-			2100000ul,	// 13
-			2800000ul,	// 14
-			3600000ul,	// 15
-			4500000ul,	// 16
-			6500000ul,	// 17
-			8000000ul,	// 18
-			10000000ul,	// 19			
-			42000000UL	// 20
-		};
-		if (level < 0 && level >= GUILD_LEVEL_MAX)
-			return 0;
-		
-		return CHEONMA_GUILDEXP_LIST[level];
-	}
-	
 	static DWORD INTERNATIONAL_GUILDEXP_LIST[GUILD_LEVEL_MAX+1] = 
 	{
 		0,			// 0
@@ -125,24 +85,6 @@ int LocaleService_GetSkillPower(unsigned level)
 	if (level >= SKILL_POWER_NUM)
 		return 0;
 
-	if (LocaleService_IsCHEONMA())
-	{
-		static unsigned CHEONMA_SKILL_POWERS[SKILL_POWER_NUM]=
-		{
-			0,  
-				5,  7,  9, 11, 13, 
-				15, 17, 19, 20, 22, 
-				24, 26, 28, 30, 32, 
-				34, 36, 38, 40, 50, // master
-				52, 55, 58, 61, 63,
-				66, 69, 72, 75, 80, // grand_master
-				82, 84, 87, 90, 95,
-				100,110,120,130,150,// perfect_master
-				150,
-		};
-		return CHEONMA_SKILL_POWERS[level];		
-	}
-	
 	// 0 5 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 50 52 54 56 58 60 63 66 69 72 82 85 88 91 94 98 102 106 110 115 125 125 125 125 125
 	static unsigned INTERNATIONAL_SKILL_POWERS[SKILL_POWER_NUM]=
 	{
@@ -165,19 +107,6 @@ const char*	LocaleService_GetSecurityKey()
 	return __SECURITY_KEY_STRING__.c_str();
 }
 
-// CHEONMA
-void LocaleService_SetCHEONMA(bool isEnable)
-{
-	IS_CHEONMA = isEnable;
-}
-
-bool LocaleService_IsCHEONMA()
-{
-	return LocaleService_IsYMIR();
-}
-
-// END_OF_CHEONMA
-
 const char* LocaleService_GetName()				{ return LSS_EUROPE; }
 unsigned int LocaleService_GetCodePage()		{ return MULTI_LOCALE_CODE; }
 const char*	LocaleService_GetLocaleName()		{ return MULTI_LOCALE_NAME; }
@@ -187,20 +116,9 @@ void LocaleService_ForceSetLocale(const char* name, const char* localePath)
 {
 	strcpy_s(MULTI_LOCALE_NAME, sizeof(MULTI_LOCALE_NAME), name);
 	strcpy_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), localePath);
-
-	// When connecting to an existing Cheonma server, change the security key (to access the WE version Claro Cheonma server)
-	if (0 == _stricmp(name, "ymir"))
-		__SECURITY_KEY_STRING__ = "testtesttesttest";
-	if (0 == _stricmp(name, "we_korea"))
-		__SECURITY_KEY_STRING__ = "1234abcd5678efgh";
 }
 
-bool LocaleService_IsYMIR()		{ return (_stricmp( LocaleService_GetName(), LSS_YMIR ) == 0) || (_stricmp( LocaleService_GetLocaleName(), "ymir" ) == 0);	}
-bool LocaleService_IsJAPAN()	{ return (_stricmp( LocaleService_GetName(), LSS_JAPAN ) == 0) || (_stricmp( LocaleService_GetLocaleName(), "japan" ) == 0);	}
-bool LocaleService_IsENGLISH()	{ return (_stricmp( LocaleService_GetName(), LSS_ENGLISH ) == 0);	}
 bool LocaleService_IsEUROPE()	{ return (_stricmp( LocaleService_GetName(), LSS_EUROPE ) == 0);		}
-bool LocaleService_IsHONGKONG()	{ return (_stricmp( LocaleService_GetName(), LSS_HONGKONG ) == 0);	}
-bool LocaleService_IsTAIWAN()	{ return (_stricmp( LocaleService_GetName(), LSS_TAIWAN ) == 0);		}
 
 BOOL LocaleService_IsLeadByte( const char chByte )
 {

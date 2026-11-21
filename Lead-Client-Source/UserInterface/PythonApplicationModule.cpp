@@ -221,21 +221,6 @@ PyObject* appGetLocaleServiceName(PyObject* poSelf, PyObject* poArgs)
 // 
 bool LoadLocaleData(const char* localePath);
 
-PyObject* appSetCHEONMA(PyObject* poSelf, PyObject* poArgs)
-{
-	int enable;
-	if (!PyTuple_GetInteger(poArgs, 0, &enable))
-		return Py_BuildException();
-	
-	LocaleService_SetCHEONMA(enable ? true : false);
-	return Py_BuildNone();
-}
-
-PyObject* appIsCHEONMA(PyObject* poSelf, PyObject* poArgs)
-{
-	return Py_BuildValue("i", LocaleService_IsCHEONMA());
-}
-
 #include "../eterBase/tea.h"
 
 PyObject* appLoadLocaleAddr(PyObject* poSelf, PyObject* poArgs)
@@ -1268,12 +1253,8 @@ void initapp()
 		{ "ForceSetLocale",				appForceSetLocale,				METH_VARARGS },
 		// END_OF_LOCALE
 
-		// CHEONMA
 		{ "LoadLocaleAddr",				appLoadLocaleAddr,				METH_VARARGS },
 		{ "LoadLocaleData",				appLoadLocaleData,				METH_VARARGS },
-		{ "SetCHEONMA",					appSetCHEONMA,					METH_VARARGS },
-		{ "IsCHEONMA",					appIsCHEONMA,					METH_VARARGS },
-		// END_OF_CHEONMA
 		
 		{ "GetDefaultCodePage",			appGetDefaultCodePage,			METH_VARARGS },
 		{ "SetControlFP",				appSetControlFP,				METH_VARARGS },

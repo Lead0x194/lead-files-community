@@ -384,33 +384,16 @@ DWORD CPythonPlayer::__GetTotalAtk(DWORD dwWeaponPower, DWORD dwRefineBonus)
 	DWORD dwWepAtk;
 	DWORD dwTotalAtk;	
 
-	if (LocaleService_IsCHEONMA())
-	{
-		dwWepAtk = __GetWeaponAtk(dwWeaponPower+dwRefineBonus);
-		dwTotalAtk = dwLvAtk+(dwStAtk+dwWepAtk)*(GetStatus(POINT_DX)+210)/300;		
-	}
-	else
-	{
-		int hr = __GetHitRate();
-		dwWepAtk = __GetWeaponAtk(dwWeaponPower+dwRefineBonus);
-		dwTotalAtk = dwLvAtk+(dwStAtk+dwWepAtk)*hr/100;	
-	}
+	int hr = __GetHitRate();
+	dwWepAtk = __GetWeaponAtk(dwWeaponPower+dwRefineBonus);
+	dwTotalAtk = dwLvAtk+(dwStAtk+dwWepAtk)*hr/100;
 
 	return dwTotalAtk;
 }
 
 DWORD CPythonPlayer::__GetHitRate()
 {
-	int src = 0;
-
-	if (LocaleService_IsCHEONMA())
-	{
-		src = GetStatus(POINT_DX);
-	}
-	else
-	{
-		src = (GetStatus(POINT_DX) * 4 + GetStatus(POINT_LEVEL) * 2)/6;
-	}
+	int src = (GetStatus(POINT_DX) * 4 + GetStatus(POINT_LEVEL) * 2)/6;
 
 	return 100*(min(90, src)+210)/300;
 }

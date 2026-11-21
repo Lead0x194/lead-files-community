@@ -175,7 +175,7 @@ bool CPythonSkill::RegisterSkillTable(const char * c_szFileName)
 		const std::string & c_strPointPoly = TokenVector[TABLE_TOKEN_TYPE_POINT_POLY];
 
 		// OVERWRITE_SKILLPROTO_POLY
-		bool USE_SKILL_PROTO = LocaleService_IsCHEONMA() ? false : true;
+		bool USE_SKILL_PROTO = true;
 
 		switch (iVnum)
 		{

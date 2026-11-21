@@ -725,19 +725,6 @@ bool LoadLocaleData(const char* localePath)
 		Tracenf("CPythonApplication - CPythonNetworkStream::LoadInsultList(%s)", szInsultList);				
 	}
 
-	if (LocaleService_IsYMIR())
-	{	
-		char szEmpireTextConvFile[256];
-		for (DWORD dwEmpireID=1; dwEmpireID<=3; ++dwEmpireID)
-		{			
-			sprintf_s(szEmpireTextConvFile, sizeof(szEmpireTextConvFile), "%s/lang%d.cvt", localePath, dwEmpireID);
-			if (!rkNetStream.LoadConvertTable(dwEmpireID, szEmpireTextConvFile))
-			{
-				TraceError("LoadLocaleData - CPythonNetworkStream::LoadConvertTable(%d, %s) FAILURE", dwEmpireID, szEmpireTextConvFile);			
-			}
-		}
-	}
-
 	NANOEND
 		return true;
 }
