@@ -6,8 +6,6 @@ typedef std::map< std::string, std::string > LocaleStringMapType;
 
 LocaleStringMapType localeString;
 
-int g_iUseLocale = 0;
-
 void locale_add(const char **strings)
 {
 	LocaleStringMapType::const_iterator iter = localeString.find( strings[0] );
@@ -20,10 +18,7 @@ void locale_add(const char **strings)
 
 const char * locale_find(const char *string)
 {
-	if (0 == g_iUseLocale)
-	{
-		return (string);
-	}
+	return (string);
 
 	LocaleStringMapType::const_iterator iter = localeString.find( string );
 

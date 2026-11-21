@@ -861,7 +861,6 @@ void DESC::SetSecurityKey(const DWORD * c_pdwKey)
 {
 	const BYTE * c_pszKey = (const BYTE *) "JyTxtHljHJlVJHorRM301vf@4fvj10-v";
 
-	//if (g_iUseLocale)
 	c_pszKey = GetKey_20050304Myevan() + 37;
 
 	thecore_memcpy(&m_adwDecryptionKey, c_pdwKey, 16);
