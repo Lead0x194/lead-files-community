@@ -17,10 +17,7 @@ BACKGROUND_COLOR = grp.GenerateColor(0.0, 0.0, 0.0, 1.0)
 DARK_COLOR = grp.GenerateColor(0.2, 0.2, 0.2, 1.0)
 BRIGHT_COLOR = grp.GenerateColor(0.7, 0.7, 0.7, 1.0)
 
-if localeInfo.IsCANADA():
-	SELECT_COLOR = grp.GenerateColor(0.9, 0.03, 0.01, 0.4)
-else:
-	SELECT_COLOR = grp.GenerateColor(0.0, 0.0, 0.5, 0.3)
+SELECT_COLOR = grp.GenerateColor(0.0, 0.0, 0.5, 0.3)
 
 WHITE_COLOR = grp.GenerateColor(1.0, 1.0, 1.0, 0.5)
 HALF_WHITE_COLOR = grp.GenerateColor(1.0, 1.0, 1.0, 0.2)

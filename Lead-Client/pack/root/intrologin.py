@@ -44,12 +44,6 @@ def Suffle(src):
 if localeInfo.IsYMIR() or localeInfo.IsCHEONMA():
 	FULL_BACK_IMAGE = True
 
-elif localeInfo.IsHONGKONG():
-	FULL_BACK_IMAGE = True
-	PASSPOD_MSG_DICT = {
-		"NOTELE"	: localeInfo.LOGIN_FAILURE_NOTELEBLOCK,
-	}
-
 def IsFullBackImage():
 	global FULL_BACK_IMAGE
 	return FULL_BACK_IMAGE
@@ -455,10 +449,6 @@ class LoginWindow(ui.ScriptWindow):
 			self.loginButton			= GetObject("LoginButton")
 			self.loginExitButton		= GetObject("LoginExitButton")
 			
-			if localeInfo.IsVIETNAM():
-				self.checkButton = GetObject("CheckButton")				
-				self.checkButton.Down()
-
 			self.virtualKeyboard		= self.GetChild2("VirtualKeyboard")
 
 			if self.virtualKeyboard:

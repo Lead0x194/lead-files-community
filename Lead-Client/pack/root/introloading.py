@@ -63,7 +63,7 @@ class LoadingWindow(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 			
-			if localeInfo.IsYMIR() or localeInfo.IsWE_KOREA() or localeInfo.IsCANADA() or localeInfo.IsEUROPE():
+			if localeInfo.IsYMIR() or localeInfo.IsEUROPE():
 				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "LoadingWindow.py")
 			else:			
 				pyScrLoader.LoadScriptFile(self, "UIScript/LoadingWindow.py")

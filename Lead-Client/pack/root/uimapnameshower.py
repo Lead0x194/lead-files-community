@@ -186,7 +186,7 @@ class MapNameShower(ui.ExpandedImageBox):
 				self.floorImage.Hide()
 				self.floorImage = None
 							
-			if localeInfo.IsYMIR() or localeInfo.IsWE_KOREA():	
+			if localeInfo.IsYMIR():	
 				self.objectiveImage = ui.ExpandedImageBox()
 				self.objectiveImage.AddFlag("not_pick")
 				self.objectiveImage.SetWindowHorizontalAlignCenter()
@@ -224,7 +224,7 @@ class MapNameShower(ui.ExpandedImageBox):
 				self.SetPosition(0, 80)
 				self.floorImage.Hide()
 				self.floorImage = None
-			if localeInfo.IsYMIR() or localeInfo.IsWE_KOREA():	
+			if localeInfo.IsYMIR():	
 				self.objectiveImage = ui.ExpandedImageBox()
 				self.objectiveImage.AddFlag("not_pick")
 				self.objectiveImage.SetWindowHorizontalAlignCenter()

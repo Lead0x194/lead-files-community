@@ -393,7 +393,7 @@ class CharacterWindow(ui.ScriptWindow):
 		self.isLoaded = 1
 
 		try:
-			if localeInfo.IsARABIC() or localeInfo.IsVIETNAM():
+			if localeInfo.IsARABIC():
 				self.__LoadScript(uiScriptLocale.LOCALE_UISCRIPT_PATH + "CharacterWindow.py")
 			else:
 				self.__LoadScript("UIScript/CharacterWindow.py")

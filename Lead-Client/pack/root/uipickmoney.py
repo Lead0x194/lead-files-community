@@ -58,7 +58,7 @@ class PickMoneyDialog(ui.ScriptWindow):
 
 	def Open(self, maxValue, unitValue=1):
 
-		if localeInfo.IsYMIR() or localeInfo.IsCHEONMA() or localeInfo.IsHONGKONG():
+		if localeInfo.IsYMIR() or localeInfo.IsCHEONMA():
 			unitValue = ""
 
 		width = self.GetWidth()

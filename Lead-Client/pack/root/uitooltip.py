@@ -779,14 +779,9 @@ class ItemToolTip(ToolTip):
 		return 0
 
 	def __SetPolymorphItemTitle(self, monsterVnum):
-		if localeInfo.IsVIETNAM():
-			itemName =item.GetItemName()
-			itemName+=" "
-			itemName+=nonplayer.GetMonsterName(monsterVnum)
-		else:
-			itemName =nonplayer.GetMonsterName(monsterVnum)
-			itemName+=" "
-			itemName+=item.GetItemName()
+		itemName =nonplayer.GetMonsterName(monsterVnum)
+		itemName+=" "
+		itemName+=item.GetItemName()
 		self.SetTitle(itemName)
 
 	def __SetNormalItemTitle(self):
@@ -801,11 +796,6 @@ class ItemToolTip(ToolTip):
 		self.AppendTextLine(item.GetItemName(), self.SPECIAL_TITLE_COLOR)
 
 	def __SetItemTitle(self, itemVnum, metinSlot, attrSlot):
-		if localeInfo.IsCANADA():
-			if 72726 == itemVnum or 72730 == itemVnum:
-				self.AppendTextLine(item.GetItemName(), grp.GenerateColor(1.0, 0.7843, 0.0, 1.0))
-				return
-			
 		if self.__IsPolymorphItem(itemVnum):
 			self.__SetPolymorphItemTitle(metinSlot[0])
 		else:
@@ -1315,10 +1305,7 @@ class ItemToolTip(ToolTip):
 		if not skillName:
 			return
 
-		if localeInfo.IsVIETNAM():
-			itemName = bookName + " " + skillName
-		else:
-			itemName = skillName + " " + bookName
+		itemName = skillName + " " + bookName
 		self.SetTitle(itemName)
 
 	def __AppendPickInformation(self, curLevel, curEXP, maxEXP):

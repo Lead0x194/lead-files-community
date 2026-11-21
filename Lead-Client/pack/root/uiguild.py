@@ -82,10 +82,7 @@ class DeclareGuildWarDialog(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 
-			if localeInfo.IsVIETNAM() :
-				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "declareguildwardialog.py")
-			else:
-				pyScrLoader.LoadScriptFile(self, "uiscript/declareguildwardialog.py")
+			pyScrLoader.LoadScriptFile(self, "uiscript/declareguildwardialog.py")
 
 		except:
 			import exception
@@ -822,15 +819,6 @@ class GuildWindow(ui.ScriptWindow):
 			pyScrLoader.LoadScriptFile(self.changeGradeNameDialog, "uiscript/changegradenamedialog.py")
 
 			if localeInfo.IsARABIC():
-				self.pageWindow = {
-					"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage_eu.py"),
-					"BOARD"			: self.PageWindow(self, "uiscript/guildwindow_boardpage.py"),
-					"MEMBER"		: self.PageWindow(self, "uiscript/guildwindow_memberpage.py"),
-					"BASE_INFO"		: self.PageWindow(self, "uiscript/guildwindow_baseinfopage.py"),
-					"SKILL"			: self.PageWindow(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "guildwindow_guildskillpage.py"),
-					"GRADE"			: self.PageWindow(self, "uiscript/guildwindow_gradepage.py"),
-				}
-			elif localeInfo.IsVIETNAM() :   # multi display 
 				self.pageWindow = {
 					"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage_eu.py"),
 					"BOARD"			: self.PageWindow(self, "uiscript/guildwindow_boardpage.py"),
@@ -1945,13 +1933,13 @@ class GuildWindow(ui.ScriptWindow):
 
 class BuildGuildBuildingWindow(ui.ScriptWindow):
 
-	if localeInfo.IsYMIR() or localeInfo.IsWE_KOREA():
+	if localeInfo.IsYMIR():
 		GUILD_CATEGORY_LIST = (
 				("HEADQUARTER", "Main Building"),
 				("FACILITY", "Facility Building"),
 				("OBJECT", "Landscaping"),
 			)
-	elif localeInfo.IsEUROPE() or localeInfo.IsHONGKONG():
+	elif localeInfo.IsEUROPE():
 		GUILD_CATEGORY_LIST = (
 				("HEADQUARTER", localeInfo.GUILD_HEADQUARTER),
 				("FACILITY", 	localeInfo.GUILD_FACILITY),
@@ -2025,8 +2013,6 @@ class BuildGuildBuildingWindow(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 			if localeInfo.IsARABIC():
-				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "buildguildbuildingwindow.py")
-			elif localeInfo.IsVIETNAM():
 				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "buildguildbuildingwindow.py")
 			else:
 				pyScrLoader.LoadScriptFile(self, "uiscript/buildguildbuildingwindow.py")

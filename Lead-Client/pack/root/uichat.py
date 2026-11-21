@@ -14,14 +14,8 @@ ENABLE_CHAT_COMMAND = True
 ENABLE_LAST_SENTENCE_STACK = True
 ENABLE_INSULT_CHECK = True
 
-if localeInfo.IsHONGKONG():
-	ENABLE_LAST_SENTENCE_STACK = True
-
 if localeInfo.IsEUROPE():
 	ENABLE_CHAT_COMMAND = False
-
-if localeInfo.IsCANADA():
-	ENABLE_LAST_SENTENCE_STACK = False
 
 chatInputSetList = []
 def InsertChatInputSetWindow(wnd):
