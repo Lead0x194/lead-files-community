@@ -1087,27 +1087,18 @@ PyObject * appSetGuildMarkPath(PyObject * poSelf, PyObject * poArgs)
 PyObject* appIsDevStage(PyObject* poSelf, PyObject* poArgs)
 {
 	int nIsDevelopmentStage = 0;
-#if defined(LOCALE_SERVICE_STAGE_DEVELOPMENT)
-	nIsDevelopmentStage = 1;
-#endif
 	return Py_BuildValue("i", nIsDevelopmentStage);
 }
 
 PyObject* appIsTestStage(PyObject* poSelf, PyObject* poArgs)
 {
 	int nIsTestStage = 0;
-#if defined(LOCALE_SERVICE_STAGE_TEST)
-	nIsTestStage = 1;
-#endif
 	return Py_BuildValue("i", nIsTestStage);
 }
 
 PyObject* appIsLiveStage(PyObject* poSelf, PyObject* poArgs)
 {
-	int nIsLiveStage = 0;
-#if !defined(LOCALE_SERVICE_STAGE_TEST) && !defined(LOCALE_SERVICE_STAGE_DEVELOPMENT)
-	nIsLiveStage = 1;
-#endif
+	int nIsLiveStage = 1;
 	return Py_BuildValue("i", nIsLiveStage);
 }
 

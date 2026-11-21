@@ -286,11 +286,7 @@ void CPythonSystem::SetDefaultConfig()
 	m_Config.height				= 768;
 	m_Config.bpp				= 32;
 
-#if defined( LOCALE_SERVICE_WE_JAPAN )
-	m_Config.bWindowed			= true;
-#else
 	m_Config.bWindowed			= false;
-#endif
 
 	m_Config.is_software_cursor	= false;
 	m_Config.is_object_culling	= true;
