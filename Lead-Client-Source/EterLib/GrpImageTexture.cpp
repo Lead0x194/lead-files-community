@@ -114,11 +114,15 @@ bool CGraphicImageTexture::CreateDDSTexture(CDXTCImage & image, const BYTE * /*c
 	D3DPOOL pool = D3DPOOL_DEFAULT;
 
 	if(image.m_CompFormat == PF_DXT5)
-		format = D3DFMT_DXT5;	
+		format = D3DFMT_DXT5;
+	else if(image.m_CompFormat == PF_DXT4)
+		format = D3DFMT_DXT4;
 	else if(image.m_CompFormat == PF_DXT3)
-		format = D3DFMT_DXT3;	
+		format = D3DFMT_DXT3;
+	else if(image.m_CompFormat == PF_DXT2)
+		format = D3DFMT_DXT2;
 	else
-		format = D3DFMT_DXT1;	
+		format = D3DFMT_DXT1;
 
 	UINT uTexBias=0;
 	if (IsLowTextureMemory())
@@ -187,7 +191,8 @@ bool CGraphicImageTexture::CreateDDSTexture(CDXTCImage & image, const BYTE * /*c
 	}
 	else
 	{
-		if(image.m_CompFormat == PF_DXT3 || image.m_CompFormat == PF_DXT5)
+		if(image.m_CompFormat == PF_DXT2 || image.m_CompFormat == PF_DXT3 ||
+		   image.m_CompFormat == PF_DXT4 || image.m_CompFormat == PF_DXT5)
 			format = D3DFMT_A4R4G4B4;
 		else
 			format = D3DFMT_A1R5G5B5;

@@ -59,6 +59,67 @@ struct Color565
 				((DWORD)(BYTE) (ch2) << 16) | ((DWORD)(BYTE) (ch3) << 24))
 #endif // defined(MAKEFOURCC)
 
+// On-disk DDS header (the 124 bytes after the "DDS " magic). The layout is
+// fixed and 32-bit; ddraw's DDSURFACEDESC2 must not be used to parse it
+// because its LPVOID member grows on x64 and shifts every following field.
+#pragma pack(push, 1)
+struct SDDSFileHeader
+{
+	DWORD dwSize;
+	DWORD dwFlags;
+	DWORD dwHeight;
+	DWORD dwWidth;
+	DWORD dwPitchOrLinearSize;
+	DWORD dwDepth;
+	DWORD dwMipMapCount;
+	DWORD adwReserved1[11];
+	struct
+	{
+		DWORD dwSize;
+		DWORD dwFlags;
+		DWORD dwFourCC;
+		DWORD dwRGBBitCount;
+		DWORD dwRBitMask;
+		DWORD dwGBitMask;
+		DWORD dwBBitMask;
+		DWORD dwRGBAlphaBitMask;
+	} ddpfPixelFormat;
+	DWORD adwCaps[4];
+	DWORD dwReserved2;
+};
+#pragma pack(pop)
+static_assert(sizeof(SDDSFileHeader) == 124, "DDS header must match the on-disk layout");
+
+// Byte layout of one mip level. DXTn levels are stored as 4x4 blocks with a
+// floor of one block per dimension; a plain ">>2 per level" progression
+// undersizes the tail levels.
+static void GetDDSLevelLayout(EPixFormat eFormat, DWORD dwRGBBitCount, int nWidth, int nHeight, int iLevel,
+							  DWORD* pdwRowBytes, DWORD* pdwRowCount)
+{
+	const DWORD dwLevelWidth = (DWORD)((nWidth >> iLevel) > 1 ? (nWidth >> iLevel) : 1);
+	const DWORD dwLevelHeight = (DWORD)((nHeight >> iLevel) > 1 ? (nHeight >> iLevel) : 1);
+
+	if (eFormat == PF_DXT1 || eFormat == PF_DXT2 || eFormat == PF_DXT3 ||
+		eFormat == PF_DXT4 || eFormat == PF_DXT5)
+	{
+		const DWORD dwBlockBytes = (eFormat == PF_DXT1) ? 8 : 16;
+		*pdwRowBytes = ((dwLevelWidth + 3) / 4) * dwBlockBytes;
+		*pdwRowCount = (dwLevelHeight + 3) / 4;
+	}
+	else
+	{
+		*pdwRowBytes = dwLevelWidth * dwRGBBitCount / 8;
+		*pdwRowCount = dwLevelHeight;
+	}
+}
+
+static DWORD GetDDSLevelSize(EPixFormat eFormat, DWORD dwRGBBitCount, int nWidth, int nHeight, int iLevel)
+{
+	DWORD dwRowBytes, dwRowCount;
+	GetDDSLevelLayout(eFormat, dwRGBBitCount, nWidth, nHeight, iLevel, &dwRowBytes, &dwRowCount);
+	return dwRowBytes * dwRowCount;
+}
+
 CDXTCImage::CDXTCImage()
 {
 	Initialize();
@@ -131,77 +192,66 @@ bool CDXTCImage::LoadFromFile(const char * filename)
 
 bool CDXTCImage::LoadHeaderFromMemory(const BYTE * c_pbMap)
 {
-	//////////////////////////////////////
-	// start reading the file
-	// from Microsoft's mssdk D3DIM example "Compress"
-	DWORD dwMagic;
-	
 	// Read magic number
-	dwMagic = *(DWORD *) c_pbMap;
+	DWORD dwMagic = *(DWORD *) c_pbMap;
 	c_pbMap += sizeof(DWORD);
 
-//!@#
-//	if (dwMagic != MAKEFOURCC('D','D','S',' '))
-//		return false;
-	
-	DDSURFACEDESC2 ddsd; // read from dds file
-	
-	// Read the surface description
-	memcpy(&ddsd, c_pbMap, sizeof(DDSURFACEDESC2));
-	c_pbMap += sizeof(DDSURFACEDESC2);
-	
+	if (dwMagic != MAKEFOURCC('D','D','S',' '))
+		return false;
+
+	// Read the surface description via the fixed on-disk layout
+	const SDDSFileHeader & c_rHeader = *(const SDDSFileHeader *) c_pbMap;
+	c_pbMap += sizeof(SDDSFileHeader);
+
+	if (c_rHeader.dwSize != sizeof(SDDSFileHeader) || c_rHeader.ddpfPixelFormat.dwSize != sizeof(c_rHeader.ddpfPixelFormat))
+		return false;
+
 	// Does texture have mipmaps?
-	m_bMipTexture = (ddsd.dwMipMapCount > 0) ? TRUE : FALSE;
-	
-	// Clear unwanted flags
-	// Can't do this!!!  surface not re-created here
-	//    ddsd.dwFlags &= (~DDSD_PITCH);
-	//    ddsd.dwFlags &= (~DDSD_LINEARSIZE);
+	m_bMipTexture = (c_rHeader.dwMipMapCount > 0) ? TRUE : FALSE;
 
 	// Is it DXTC ?
-	// I sure hope pixelformat is valid!
-	m_xddPixelFormat.dwFlags = ddsd.ddpfPixelFormat.dwFlags;
-	m_xddPixelFormat.dwFourCC = ddsd.ddpfPixelFormat.dwFourCC;
-	m_xddPixelFormat.dwSize = ddsd.ddpfPixelFormat.dwSize;
-	m_xddPixelFormat.dwRGBBitCount = ddsd.ddpfPixelFormat.dwRGBBitCount;
-	m_xddPixelFormat.dwRGBAlphaBitMask = ddsd.ddpfPixelFormat.dwRGBAlphaBitMask;
-	m_xddPixelFormat.dwRBitMask = ddsd.ddpfPixelFormat.dwRBitMask;
-	m_xddPixelFormat.dwGBitMask = ddsd.ddpfPixelFormat.dwGBitMask;
-	m_xddPixelFormat.dwBBitMask = ddsd.ddpfPixelFormat.dwBBitMask;
+	m_xddPixelFormat.dwFlags = c_rHeader.ddpfPixelFormat.dwFlags;
+	m_xddPixelFormat.dwFourCC = c_rHeader.ddpfPixelFormat.dwFourCC;
+	m_xddPixelFormat.dwSize = c_rHeader.ddpfPixelFormat.dwSize;
+	m_xddPixelFormat.dwRGBBitCount = c_rHeader.ddpfPixelFormat.dwRGBBitCount;
+	m_xddPixelFormat.dwRGBAlphaBitMask = c_rHeader.ddpfPixelFormat.dwRGBAlphaBitMask;
+	m_xddPixelFormat.dwRBitMask = c_rHeader.ddpfPixelFormat.dwRBitMask;
+	m_xddPixelFormat.dwGBitMask = c_rHeader.ddpfPixelFormat.dwGBitMask;
+	m_xddPixelFormat.dwBBitMask = c_rHeader.ddpfPixelFormat.dwBBitMask;
 
 	DecodePixelFormat(m_strFormat, &m_xddPixelFormat);
-	
+
 	if (m_CompFormat != PF_DXT1 &&
+		m_CompFormat != PF_DXT2 &&
 		m_CompFormat != PF_DXT3 &&
+		m_CompFormat != PF_DXT4 &&
 		m_CompFormat != PF_DXT5)
 	{
 		return false;
 	}
 
-	if (ddsd.dwMipMapCount > MAX_MIPLEVELS)
-		ddsd.dwMipMapCount = MAX_MIPLEVELS;
+	DWORD dwMipMapCount = c_rHeader.dwMipMapCount;
+	if (dwMipMapCount > MAX_MIPLEVELS)
+		dwMipMapCount = MAX_MIPLEVELS;
 
-	m_nWidth		= ddsd.dwWidth;
-	m_nHeight		= ddsd.dwHeight;
-	//!@#
-	m_dwMipMapCount = max(1, ddsd.dwMipMapCount);
-	m_dwFlags		= ddsd.dwFlags;
+	m_nWidth		= c_rHeader.dwWidth;
+	m_nHeight		= c_rHeader.dwHeight;
+	m_dwMipMapCount = max(1, dwMipMapCount);
+	m_dwFlags		= c_rHeader.dwFlags;
+	m_lPitch		= c_rHeader.dwPitchOrLinearSize;
 
-	if (ddsd.dwFlags & DDSD_PITCH)
+	if (c_rHeader.dwFlags & DDSD_PITCH)
 	{
-		m_lPitch = ddsd.lPitch;
 		m_pbCompBufferByLevels[0] = c_pbMap;
 	}
 	else
 	{
-		m_lPitch = ddsd.dwLinearSize;
-
-		if (ddsd.dwFlags & DDSD_MIPMAPCOUNT)
+		if (c_rHeader.dwFlags & DDSD_MIPMAPCOUNT)
 		{
-			for (DWORD dwLinearSize = ddsd.dwLinearSize, i = 0; i < m_dwMipMapCount; ++i, dwLinearSize >>= 2)
+			for (DWORD i = 0; i < m_dwMipMapCount; ++i)
 			{
 				m_pbCompBufferByLevels[i] = c_pbMap;
-				c_pbMap += dwLinearSize;
+				c_pbMap += GetDDSLevelSize(m_CompFormat, m_xddPixelFormat.dwRGBBitCount, m_nWidth, m_nHeight, (int) i);
 			}
 		}
 		else
@@ -242,16 +292,20 @@ bool CDXTCImage::LoadFromMemory(const BYTE * c_pbMap)
 	{
 		if (m_dwFlags & DDSD_MIPMAPCOUNT)
 		{
-			for (DWORD dwLinearSize = m_lPitch, i = 0; i < m_dwMipMapCount; ++i, dwLinearSize >>= 2)
+			for (DWORD i = 0; i < m_dwMipMapCount; ++i)
 			{
-				m_bCompVector[i].resize(dwLinearSize);
-				Copy(i, &m_bCompVector[i][0], dwLinearSize);
+				DWORD dwRowBytes, dwRowCount;
+				GetDDSLevelLayout(m_CompFormat, m_xddPixelFormat.dwRGBBitCount, m_nWidth, m_nHeight, (int) i, &dwRowBytes, &dwRowCount);
+				m_bCompVector[i].resize(size_t(dwRowBytes) * dwRowCount);
+				Copy(i, &m_bCompVector[i][0], dwRowBytes);
 			}
 		}
 		else
 		{
-			m_bCompVector[0].resize(m_lPitch);
-			Copy(0, &m_bCompVector[0][0], m_lPitch);
+			DWORD dwRowBytes, dwRowCount;
+			GetDDSLevelLayout(m_CompFormat, m_xddPixelFormat.dwRGBBitCount, m_nWidth, m_nHeight, 0, &dwRowBytes, &dwRowCount);
+			m_bCompVector[0].resize(size_t(dwRowBytes) * dwRowCount);
+			Copy(0, &m_bCompVector[0][0], dwRowBytes);
 		}
 	}
 
@@ -265,24 +319,23 @@ bool CDXTCImage::Copy(int miplevel, BYTE * pbDest, long lDestPitch)
 		if (miplevel)
 			return false;
 
-	/*
-	DXTColBlock * pBlock;
-	WORD * pPos = (WORD *) &m_pbCompBufferByLevels[miplevel][0];
-	int xblocks = (m_nWidth >> miplevel) / 4;
-	int yblocks = (m_nHeight >> miplevel) / 4;
+	if (!m_pbCompBufferByLevels[miplevel])
+		return false;
 
-	for (int y = 0; y < yblocks; ++y)
+	// Row by row (a block row for DXTn), honoring the destination pitch.
+	DWORD dwRowBytes, dwRowCount;
+	GetDDSLevelLayout(m_CompFormat, m_xddPixelFormat.dwRGBBitCount, m_nWidth, m_nHeight, miplevel, &dwRowBytes, &dwRowCount);
+
+	const BYTE * c_pbSrc = m_pbCompBufferByLevels[miplevel];
+	const long lSrcPitch = (m_dwFlags & DDSD_PITCH) ? m_lPitch : (long) dwRowBytes;
+
+	for (DWORD y = 0; y < dwRowCount; ++y)
 	{
-		// 8 bytes per block
-		pBlock = (DXTColBlock*) ((DWORD) pPos + y * xblocks * 8);
-
-		memcpy(pbDest, pBlock, xblocks * 8);
+		memcpy(pbDest, c_pbSrc, dwRowBytes);
 		pbDest += lDestPitch;
+		c_pbSrc += lSrcPitch;
 	}
-	*/
 
-	memcpy(pbDest, m_pbCompBufferByLevels[miplevel], m_lPitch >> (miplevel * 2));
-	pbDest += lDestPitch;
 	return true;
 }
 
@@ -321,10 +374,14 @@ void CDXTCImage::Decompress(int miplevel, DWORD * pdwDest)
 			DecompressDXT1(miplevel, pdwDest);
 			break;
 
+		// DXT2/DXT4 share the DXT3/DXT5 block layout; only the alpha
+		// premultiplication convention differs, which the decode ignores.
+		case PF_DXT2:
 		case PF_DXT3:
 			DecompressDXT3(miplevel, pdwDest);
 			break;
-			
+
+		case PF_DXT4:
 		case PF_DXT5:
 			DecompressDXT5(miplevel, pdwDest);
 			break;
