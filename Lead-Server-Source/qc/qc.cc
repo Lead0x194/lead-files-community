@@ -521,7 +521,7 @@ void parse(char * filename)
 
 					if (lexstate.lookahead.token == TK_OR)
 					{
-						// ���� when name
+						// when name
 						// push to somewhere -.-
 						ps = ST_WHEN_NAME;
 						when_name_arg_vector.push_back(make_pair(current_when_name, current_when_argument));
@@ -541,7 +541,7 @@ void parse(char * filename)
 					current_when_condition = "";
 					if (t.token == TK_WITH)
 					{
-						// here comes ���ǽ�
+						// here comes
 						next(&lexstate);
 						ostringstream os;
 						os << (lexstate.t);
@@ -850,7 +850,7 @@ void parse(char * filename)
 			}
 		}
 
-		// quest function���� ���
+		// quest function
 		ouf << all_functions;
 
 		ouf << "}";

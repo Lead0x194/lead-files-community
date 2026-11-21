@@ -262,7 +262,7 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 					M2_DELETE(pinfo);
 					break;
 				}
-				//占 Snakefish 占 Sook yep 占 Sook yep - By SeMinZ
+				// Snakefish Sook yep Sook yep - By SeMinZ
 				d->SetLogin(pinfo->login);
 
 				sys_log(0, "QID_AUTH_LOGIN: START %u %p", qi->dwIdent, get_pointer(d));
@@ -628,7 +628,7 @@ enum EAccountQID
 	QID_SPAM_DB,
 };
 
-// 10占 I'm sorry 占 Sook yep 占 Sook yep 占 Sadyyep
+// 10 I'm sorry Sook yep Sook yep Sadyyep
 static LPEVENT s_pkReloadSpamEvent = NULL;
 
 EVENTINFO(reload_spam_event_info)
