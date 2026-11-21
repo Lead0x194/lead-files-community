@@ -916,22 +916,19 @@ bool CHARACTER::DoRefine(LPITEM item, bool bMoneyOnly)
 	}
 
 	// Check level limit in korea only
-	if (!g_iUseLocale)
+	for (int i = 0; i < ITEM_LIMIT_MAX_NUM; ++i)
 	{
-		for (int i = 0; i < ITEM_LIMIT_MAX_NUM; ++i)
-		{
-			long limit = pProto->aLimits[i].lValue;
+		long limit = pProto->aLimits[i].lValue;
 
-			switch (pProto->aLimits[i].bType)
-			{
-				case LIMIT_LEVEL:
-					if (GetLevel() < limit)
-					{
-						ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your level is too low to use this item."));
-						return false;
-					}
-					break;
-			}
+		switch (pProto->aLimits[i].bType)
+		{
+			case LIMIT_LEVEL:
+				if (GetLevel() < limit)
+				{
+					ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your level is too low to use this item."));
+					return false;
+				}
+				break;
 		}
 	}
 
@@ -1121,22 +1118,19 @@ bool CHARACTER::DoRefineWithScroll(LPITEM item)
 	}
 
 	// Check level limit in korea only
-	if (!g_iUseLocale)
+	for (int i = 0; i < ITEM_LIMIT_MAX_NUM; ++i)
 	{
-		for (int i = 0; i < ITEM_LIMIT_MAX_NUM; ++i)
-		{
-			long limit = pProto->aLimits[i].lValue;
+		long limit = pProto->aLimits[i].lValue;
 
-			switch (pProto->aLimits[i].bType)
-			{
-				case LIMIT_LEVEL:
-					if (GetLevel() < limit)
-					{
-						ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your level is too low to use this item."));
-						return false;
-					}
-					break;
-			}
+		switch (pProto->aLimits[i].bType)
+		{
+			case LIMIT_LEVEL:
+				if (GetLevel() < limit)
+				{
+					ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your level is too low to use this item."));
+					return false;
+				}
+				break;
 		}
 	}
 
@@ -2923,12 +2917,7 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 											80, 90, 97
 										};
 
-										const int prob_table_gb2312[] =
-										{
-											95, 97, 99
-										};
-
-										const int * prob_table = !g_iUseLocale ? prob_table_euckr : prob_table_gb2312;
+										const int * prob_table = prob_table_euckr;
 
 										if (r <= prob_table[0])
 										{
@@ -4282,7 +4271,7 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 									{
 										ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s%s cannot be used in a dungeon."),
 												item->GetName(),
-												g_iUseLocale ? "" : (under_han(item->GetName()) ? LC_TEXT("the") : LC_TEXT("the")));
+												LC_TEXT("the"));
 										return false;
 									}
 

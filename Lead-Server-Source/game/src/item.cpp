@@ -1166,59 +1166,29 @@ void CItem::AlterToMagicItem()
 	int iSecondPct;
 	int iThirdPct;
 
-	if (g_iUseLocale)
+	switch (GetType())
 	{
-		switch (GetType())
-		{
-			case ITEM_WEAPON:
+		case ITEM_WEAPON:
+			iSecondPct = 30;
+			iThirdPct = 15;
+			break;
+
+		case ITEM_ARMOR:
+		case ITEM_COSTUME:
+			if (GetSubType() == ARMOR_BODY)
+			{
 				iSecondPct = 20;
+				iThirdPct = 10;
+			}
+			else
+			{
+				iSecondPct = 10;
 				iThirdPct = 5;
-				break;
+			}
+			break;
 
-			case ITEM_ARMOR:
-			case ITEM_COSTUME:
-				if (GetSubType() == ARMOR_BODY)
-				{
-					iSecondPct = 10;
-					iThirdPct = 2;
-				}
-				else
-				{
-					iSecondPct = 10;
-					iThirdPct = 1;
-				}
-				break;
-
-			default:
-				return;
-		}
-	}
-	else
-	{
-		switch (GetType())
-		{
-			case ITEM_WEAPON:
-				iSecondPct = 30;
-				iThirdPct = 15;
-				break;
-
-			case ITEM_ARMOR:
-			case ITEM_COSTUME:
-				if (GetSubType() == ARMOR_BODY)
-				{
-					iSecondPct = 20;
-					iThirdPct = 10;
-				}
-				else
-				{
-					iSecondPct = 10;
-					iThirdPct = 5;
-				}
-				break;
-
-			default:
-				return;
-		}
+		default:
+			return;
 	}
 
 	// 100% One attribute with good probability

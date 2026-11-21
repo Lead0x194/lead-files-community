@@ -108,7 +108,7 @@ ACMD(do_user_horse_feed)
 		ch->FeedHorse();
 		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have fed the Horse with %s%s."), 
 				ITEM_MANAGER::instance().GetTable(dwFood)->szLocaleName,
-				g_iUseLocale ? "" : under_han(ITEM_MANAGER::instance().GetTable(dwFood)->szLocaleName) ? LC_TEXT("the") : LC_TEXT("the"));
+				LC_TEXT("the"));
 	}
 	else
 	{
