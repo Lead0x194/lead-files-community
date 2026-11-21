@@ -46,7 +46,7 @@ class MessengerItem(ui.Window):
 			self.text.SetText(name)
 			self.SetSize(20 + 6*len(name) + 4, 16)
 
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				self.text.SetPosition(20 + 6*len(name) + 4, 2)
 
 	def SetLovePoint(self, lovePoint):

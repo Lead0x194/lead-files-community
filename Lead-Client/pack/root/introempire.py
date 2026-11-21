@@ -138,7 +138,7 @@ class SelectEmpireWindow(ui.ScriptWindow):
 		if self.EMPIRE_DESCRIPTION_TEXT_FILE_NAME.has_key(arg):
 			self.descIndex = event.RegisterEventSet(self.EMPIRE_DESCRIPTION_TEXT_FILE_NAME[arg])
 
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				event.SetEventSetWidth(self.descIndex, 170)
 			else:
 				event.SetRestrictedCount(self.descIndex, 35)

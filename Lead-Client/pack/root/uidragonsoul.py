@@ -63,7 +63,7 @@ class DragonSoulWindow(ui.ScriptWindow):
 			import exception
 			exception.Abort("dragonsoulwindow.LoadWindow.LoadObject")
 		try:
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				self.board = self.GetChild("Equipment_Base")
 				self.board.SetScale(-1.0, 1.0)
 				self.board.SetRenderingRect(-1.0, 0.0, 1.0, 0.0)
@@ -778,7 +778,7 @@ class DragonSoulRefineWindow(ui.ScriptWindow):
 			import exception
 			exception.Abort("dragonsoulrefinewindow.LoadWindow.LoadObject")
 		try:
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				self.board = self.GetChild("DragonSoulRefineWindowBaseImage")
 				self.board.SetScale(-1.0, 1.0)
 				self.board.SetRenderingRect(-1.0, 0.0, 1.0, 0.0)

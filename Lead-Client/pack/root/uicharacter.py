@@ -388,7 +388,7 @@ class CharacterWindow(ui.ScriptWindow):
 		self.isLoaded = 1
 
 		try:
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				self.__LoadScript(uiScriptLocale.LOCALE_UISCRIPT_PATH + "CharacterWindow.py")
 			else:
 				self.__LoadScript("UIScript/CharacterWindow.py")
@@ -1060,7 +1060,7 @@ class CharacterWindow(ui.ScriptWindow):
 			self.characterNameValue.SetText(characterName)
 			self.guildNameValue.SetText(guildName)
 			if not guildName:
-				if localeInfo.IsARABIC():
+				if localeInfo.IsRTL():
 					self.characterNameSlot.SetPosition(190, 34)
 				else:
 					self.characterNameSlot.SetPosition(109, 34)

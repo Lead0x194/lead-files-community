@@ -645,7 +645,7 @@ class CommentSlot(ui.Window):
 		self.slotSimpleText = ui.MakeTextLine(self)
 		self.slotSimpleText.SetPosition(2, 0)
 		## 13.12.02 Arabic fix
-		if localeInfo.IsARABIC() :
+		if localeInfo.IsRTL() :
 			self.slotSimpleText.SetWindowHorizontalAlignCenter()
 			self.slotSimpleText.SetHorizontalAlignCenter()
 		else :
@@ -807,7 +807,7 @@ class GuildWindow(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 
-			if localeInfo.IsARABIC() :
+			if localeInfo.IsRTL() :
 				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "guildwindow.py")
 			else:
 				pyScrLoader.LoadScriptFile(self, "uiscript/guildwindow.py")
@@ -818,7 +818,7 @@ class GuildWindow(ui.ScriptWindow):
 			self.changeGradeNameDialog = ChangeGradeNameDialog()
 			pyScrLoader.LoadScriptFile(self.changeGradeNameDialog, "uiscript/changegradenamedialog.py")
 
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				self.pageWindow = {
 					"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage_eu.py"),
 					"BOARD"			: self.PageWindow(self, "uiscript/guildwindow_boardpage.py"),
@@ -1012,7 +1012,7 @@ class GuildWindow(ui.ScriptWindow):
 
 			## Name
 			## 13.12.02 Arabic fix
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_03.sub", 255, yPos)
 			else:
 				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_03.sub", 15, yPos)
@@ -1021,7 +1021,7 @@ class GuildWindow(ui.ScriptWindow):
 			page.Children.append(nameSlot)
 
 			## Delete Button
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				deleteButton = ui.MakeButton(page, 3, yPos + 3, localeInfo.GUILD_DELETE, "d:/ymir work/ui/public/", "close_button_01.sub", "close_button_02.sub", "close_button_03.sub")
 			else:
 				deleteButton = ui.MakeButton(page, 340, yPos + 3, localeInfo.GUILD_DELETE, "d:/ymir work/ui/public/", "close_button_01.sub", "close_button_02.sub", "close_button_03.sub")
@@ -1032,7 +1032,7 @@ class GuildWindow(ui.ScriptWindow):
 			## 13.12.02 Arabic fix
 			commentSlot = CommentSlot()
 			commentSlot.SetParent(page)
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				commentSlot.SetPosition(25, yPos)
 			else:
 				commentSlot.SetPosition(114, yPos)
@@ -1047,7 +1047,7 @@ class GuildWindow(ui.ScriptWindow):
 
 		## PostComment - Have to make this here for that fit tooltip's position.
 		## 13.12.02 Arabic fix
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			postCommentButton = ui.MakeButton(page, 3, 273, localeInfo.GUILD_COMMENT, "d:/ymir work/ui/game/taskbar/", "Send_Chat_Button_01.sub", "Send_Chat_Button_02.sub", "Send_Chat_Button_03.sub")
 		else:
 			postCommentButton = ui.MakeButton(page, 337, 273, localeInfo.GUILD_COMMENT, "d:/ymir work/ui/game/taskbar/", "Send_Chat_Button_01.sub", "Send_Chat_Button_02.sub", "Send_Chat_Button_03.sub")
@@ -1067,7 +1067,7 @@ class GuildWindow(ui.ScriptWindow):
 			yPos = 28 + inverseLineIndex*lineStep
             ## 13.12.02 Arabic fix
 			## Name
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_100x18.sub", 255, yPos)
 			else:
 				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_03.sub", 10, yPos)
@@ -1078,7 +1078,7 @@ class GuildWindow(ui.ScriptWindow):
 			## Grade
 			gradeSlot = ui.ComboBox()
 			gradeSlot.SetParent(page)
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				gradeSlot.SetPosition(192, yPos-1)
 			else:
 				gradeSlot.SetPosition(101, yPos-1)
@@ -1088,7 +1088,7 @@ class GuildWindow(ui.ScriptWindow):
 			page.Children.append(gradeSlot)
 
 			## Job
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				jobSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 145, yPos)
 			else:
 				jobSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 170, yPos)
@@ -1097,7 +1097,7 @@ class GuildWindow(ui.ScriptWindow):
 			page.Children.append(jobSlot)
 
 			## Level
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				levelSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 106, yPos)
 			else:
 				levelSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 210, yPos)
@@ -1106,7 +1106,7 @@ class GuildWindow(ui.ScriptWindow):
 			page.Children.append(levelSlot)
 
 			## Offer
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				offerSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 66, yPos)
 			else:
 				offerSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 250, yPos)
@@ -1116,7 +1116,7 @@ class GuildWindow(ui.ScriptWindow):
 
 			## General Enable
 			event = lambda argSelf=proxy(self), argIndex=inverseLineIndex: apply(argSelf.OnEnableGeneral, (argIndex,))
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				generalEnableCheckBox = CheckBox(page, 22, yPos, event, "d:/ymir work/ui/public/Parameter_Slot_00.sub")
 			else:
 				generalEnableCheckBox = CheckBox(page, 297, yPos, event, "d:/ymir work/ui/public/Parameter_Slot_00.sub")
@@ -1239,7 +1239,7 @@ class GuildWindow(ui.ScriptWindow):
 			index = i+1
 			## 13.12.02 Arabic fix
 			## GradeNumber
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				gradeNumberSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 310, yPos)
 			else:
 				gradeNumberSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 14, yPos)
@@ -1249,7 +1249,7 @@ class GuildWindow(ui.ScriptWindow):
 			page.Children.append(gradeNumberSlot)
 
 			## GradeName
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				gradeNameSlot = EditableTextSlot(page, 242, yPos)
 			else:
 				gradeNameSlot = EditableTextSlot(page, 58, yPos)
@@ -1258,7 +1258,7 @@ class GuildWindow(ui.ScriptWindow):
 
 			## Invite Authority
 			event = lambda argSelf=proxy(self), argIndex=index, argAuthority=1<<0: apply(argSelf.OnCheckAuthority, (argIndex,argAuthority))
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				inviteAuthorityCheckBox = CheckBox(page, 185, yPos, event)
 			else:
 				inviteAuthorityCheckBox = CheckBox(page, 124, yPos, event)
@@ -1266,7 +1266,7 @@ class GuildWindow(ui.ScriptWindow):
 
 			## DriveOut Authority
 			event = lambda argSelf=proxy(self), argIndex=index, argAuthority=1<<1: apply(argSelf.OnCheckAuthority, (argIndex,argAuthority))
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				driveoutAuthorityCheckBox = CheckBox(page, 128, yPos, event)
 			else:
 				driveoutAuthorityCheckBox = CheckBox(page, 181, yPos, event)
@@ -1274,7 +1274,7 @@ class GuildWindow(ui.ScriptWindow):
 
 			## Notice Authority
 			event = lambda argSelf=proxy(self), argIndex=index, argAuthority=1<<2: apply(argSelf.OnCheckAuthority, (argIndex,argAuthority))
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				noticeAuthorityCheckBox = CheckBox(page, 71, yPos, event)
 			else:
 				noticeAuthorityCheckBox = CheckBox(page, 238, yPos, event)
@@ -1282,7 +1282,7 @@ class GuildWindow(ui.ScriptWindow):
 
 			## Skill Authority
 			event = lambda argSelf=proxy(self), argIndex=index, argAuthority=1<<3: apply(argSelf.OnCheckAuthority, (argIndex,argAuthority))
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				skillAuthorityCheckBox = CheckBox(page, 14, yPos, event)
 			else:
 				skillAuthorityCheckBox = CheckBox(page, 295, yPos, event)
@@ -1311,7 +1311,7 @@ class GuildWindow(ui.ScriptWindow):
 		self.largeMarkBox.SetIndex(guildID)
 		self.largeMarkBox.SetScale(3)
 		## 13.12.02 Arabic fix
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			self.largeMarkBox.SetPosition(self.largeMarkBox.GetWidth()+32,1)
 
 	def Close(self):
@@ -2006,7 +2006,7 @@ class BuildGuildBuildingWindow(ui.ScriptWindow):
 
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "buildguildbuildingwindow.py")
 			else:
 				pyScrLoader.LoadScriptFile(self, "uiscript/buildguildbuildingwindow.py")

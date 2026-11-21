@@ -30,7 +30,7 @@ class MapTextToolTip(ui.Window):
 		self.textLine.SetText(text)
 
 	def SetTooltipPosition(self, PosX, PosY):
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			w, h = self.textLine.GetTextSize()
 			self.textLine.SetPosition(PosX - w - 5, PosY)
 		else:
@@ -150,7 +150,7 @@ class AtlasWindow(ui.ScriptWindow):
 		if "empty_guild_area" == sName:
 			sName = localeInfo.GUILD_EMPTY_AREA
 
-		if localeInfo.IsARABIC() and sName[-1].isalnum():
+		if localeInfo.IsRTL() and sName[-1].isalnum():
 			self.tooltipInfo.SetText("(%s)%d, %d" % (sName, iPosX, iPosY))						
 		else:
 			self.tooltipInfo.SetText("%s(%d, %d)" % (sName, iPosX, iPosY))
@@ -179,7 +179,7 @@ class AtlasWindow(ui.ScriptWindow):
 			if bGet:
 				self.SetSize(iSizeX + 15, iSizeY + 38)
 
-				if localeInfo.IsARABIC():
+				if localeInfo.IsRTL():
 					self.board.SetPosition(iSizeX+15, 0)
 
 				self.board.SetSize(iSizeX + 15, iSizeY + 38)
@@ -322,7 +322,7 @@ class MiniMap(ui.ScriptWindow):
 
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "Minimap.py")
 			else:
 				pyScrLoader.LoadScriptFile(self, "UIScript/MiniMap.py")
@@ -411,7 +411,7 @@ class MiniMap(ui.ScriptWindow):
 					self.tooltipInfo.SetTextColor(dwTextColor)
 					self.tooltipInfo.Show()
 				else:
-					if localeInfo.IsARABIC() and sName[-1].isalnum():
+					if localeInfo.IsRTL() and sName[-1].isalnum():
 						self.tooltipInfo.SetText("(%s)%d, %d" % (sName, iPosX, iPosY))
 					else:
 						self.tooltipInfo.SetText("%s(%d, %d)" % (sName, iPosX, iPosY))

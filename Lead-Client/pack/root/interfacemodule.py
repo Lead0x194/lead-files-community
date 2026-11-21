@@ -1340,7 +1340,7 @@ class Interface(object):
 			btn.Flash()
 		# END_OF_QUEST_LETTER_IMAGE
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			btn.SetToolTipText(name, 0, 35)
 			btn.ToolTipText.SetHorizontalAlignCenter()
 		else:
@@ -1368,7 +1368,7 @@ class Interface(object):
 		else:
 			xPos = 20
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			xPos = xPos + 15
 
 		yPos = 170 * screenHeight / 600

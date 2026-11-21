@@ -388,7 +388,7 @@ class ListBoxEx(Window):
 		self.itemList=[]
 		self.onSelectItemEvent = lambda *arg: None
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			self.itemWidth=130
 		else:
 			self.itemWidth=100
@@ -509,7 +509,7 @@ class ListBoxEx(Window):
 		return len(self.itemList)
 
 	def GetItemViewCoord(self, pos, itemWidth):
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			return (self.GetWidth()-itemWidth-10, (pos-self.basePos)*self.itemStep)
 		else:
 			return (0, (pos-self.basePos)*self.itemStep)
@@ -1859,7 +1859,7 @@ class TitleBar(Window):
 		imgCenter.SetParent(self)
 		imgRight.SetParent(self)
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			imgLeft.LoadImage("locale/ae/ui/pattern/titlebar_left.tga")
 			imgCenter.LoadImage("locale/ae/ui/pattern/titlebar_center.tga")
 			imgRight.LoadImage("locale/ae/ui/pattern/titlebar_right.tga")
@@ -1892,7 +1892,7 @@ class TitleBar(Window):
 		self.imgCenter.SetPosition(self.BLOCK_WIDTH, 0)
 		self.imgRight.SetPosition(width - self.BLOCK_WIDTH, 0)
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			self.btnClose.SetPosition(3, 3)
 		else:
 			self.btnClose.SetPosition(width - self.btnClose.GetWidth() - 3, 3)
@@ -2771,7 +2771,7 @@ class ListBox(Window):
 				skipCount -= 1
 				continue
 
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				w, h = textLine.GetTextSize()
 				textLine.SetPosition(w+10, yPos + 3)
 			else:
@@ -3204,7 +3204,7 @@ class PythonScriptLoader(object):
 
 		window.SetPosition(int(Body["x"]), int(Body["y"]))
 
-		if localeInfo.IsARABIC(): 
+		if localeInfo.IsRTL(): 
 			w = wndMgr.GetScreenWidth()
 			h = wndMgr.GetScreenHeight()
 			if Body.has_key("width"):
@@ -3224,7 +3224,7 @@ class PythonScriptLoader(object):
 
 	def LoadChildren(self, parent, dicChildren):
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			parent.AddFlag( "rtl" )
 
 		if True == dicChildren.has_key("style"):
@@ -3646,7 +3646,7 @@ class PythonScriptLoader(object):
 		if True == value.has_key("y_blank"):
 			yBlank = int(value["y_blank"])
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			pass
 		else:
 			window.SetPosition(int(value["x"]), int(value["y"]))
@@ -3676,7 +3676,7 @@ class PythonScriptLoader(object):
 		if True == value.has_key("style"):
 			if "select" == value["style"]:
 				wndMgr.SetSlotStyle(window.hWnd, wndMgr.SLOT_STYLE_SELECT)
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			self.LoadDefaultData(window, value, parentWindow)
 		else:
 			window.Show()

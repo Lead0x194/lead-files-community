@@ -1656,7 +1656,7 @@ class ItemToolTip(ToolTip):
 
 		self.childrenList.append(slotImage)
 		
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			slotImage.SetPosition(self.toolTipWidth - slotImage.GetWidth() - 9, self.toolTipHeight-1)
 			nameTextLine.SetPosition(self.toolTipWidth - 50, self.toolTipHeight + 2)
 		else:
@@ -1691,7 +1691,7 @@ class ItemToolTip(ToolTip):
 			affectTextLine.SetFeather()
 			affectTextLine.Show()			
 				
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				metinImage.SetPosition(self.toolTipWidth - metinImage.GetWidth() - 10, self.toolTipHeight)
 				affectTextLine.SetPosition(self.toolTipWidth - 50, self.toolTipHeight + 16 + 2)
 			else:
