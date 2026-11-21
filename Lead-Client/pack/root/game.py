@@ -51,11 +51,6 @@ import stringCommander
 
 from _weakref import proxy
 
-# TEXTTAIL_LIVINGTIME_CONTROL
-#if localeInfo.IsJAPAN():
-#	app.SetTextTailLivingTime(8.0)
-# END_OF_TEXTTAIL_LIVINGTIME_CONTROL
-
 # SCREENSHOT_CWDSAVE
 SCREENSHOT_CWDSAVE = False
 SCREENSHOT_DIR = None

@@ -830,15 +830,6 @@ class GuildWindow(ui.ScriptWindow):
 					"SKILL"			: self.PageWindow(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "guildwindow_guildskillpage.py"),
 					"GRADE"			: self.PageWindow(self, "uiscript/guildwindow_gradepage.py"),
 				}
-			elif localeInfo.IsJAPAN() :
-				self.pageWindow = {
-					"GUILD_INFO"	: self.PageWindow(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "guildwindow_guildinfopage.py"),
-					"BOARD"			: self.PageWindow(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "guildwindow_boardpage.py"),
-					"MEMBER"		: self.PageWindow(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "guildwindow_memberpage.py"),
-					"BASE_INFO"		: self.PageWindow(self, "uiscript/guildwindow_baseinfopage.py"),
-					"SKILL"			: self.PageWindow(self, "uiscript/guildwindow_guildskillpage.py"),
-					"GRADE"			: self.PageWindow(self, "uiscript/guildwindow_gradepage.py"),
-				}
 			elif localeInfo.IsVIETNAM() :   # multi display 
 				self.pageWindow = {
 					"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage_eu.py"),
@@ -1027,18 +1018,13 @@ class GuildWindow(ui.ScriptWindow):
 			yPos = 25 + i * lineStep
 
 			## NoticeMark
-			if localeInfo.IsJAPAN():
-				noticeMarkImage = ui.MakeImageBox(page, "d:/ymir work/ui/game/guild/notice_mark.sub", 15, yPos+3)
-			else:
-				noticeMarkImage = ui.MakeImageBox(page, "d:/ymir work/ui/game/guild/notice_mark.sub", 5, yPos+3)
+			noticeMarkImage = ui.MakeImageBox(page, "d:/ymir work/ui/game/guild/notice_mark.sub", 5, yPos+3)
 			noticeMarkImage.Hide()
 			page.Children.append(noticeMarkImage)
 
 			## Name
 			## 13.12.02 Arabic fix
-			if localeInfo.IsJAPAN():
-				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_100x18.sub", 9, yPos)
-			elif localeInfo.IsARABIC():
+			if localeInfo.IsARABIC():
 				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_03.sub", 255, yPos)
 			else:
 				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_03.sub", 15, yPos)
@@ -1093,9 +1079,7 @@ class GuildWindow(ui.ScriptWindow):
 			yPos = 28 + inverseLineIndex*lineStep
             ## 13.12.02 Arabic fix
 			## Name
-			if localeInfo.IsJAPAN():
-				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_100x18.sub", 15, yPos)
-			elif localeInfo.IsARABIC():
+			if localeInfo.IsARABIC():
 				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_100x18.sub", 255, yPos)
 			else:
 				nameSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_03.sub", 10, yPos)
@@ -1106,9 +1090,7 @@ class GuildWindow(ui.ScriptWindow):
 			## Grade
 			gradeSlot = ui.ComboBox()
 			gradeSlot.SetParent(page)
-			if localeInfo.IsJAPAN():
-				gradeSlot.SetPosition(117, yPos-1)
-			elif localeInfo.IsARABIC():
+			if localeInfo.IsARABIC():
 				gradeSlot.SetPosition(192, yPos-1)
 			else:
 				gradeSlot.SetPosition(101, yPos-1)
@@ -1118,9 +1100,7 @@ class GuildWindow(ui.ScriptWindow):
 			page.Children.append(gradeSlot)
 
 			## Job
-			if localeInfo.IsJAPAN():
-				jobSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 181, yPos)
-			elif localeInfo.IsARABIC():
+			if localeInfo.IsARABIC():
 				jobSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 145, yPos)
 			else:
 				jobSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 170, yPos)
@@ -1129,9 +1109,7 @@ class GuildWindow(ui.ScriptWindow):
 			page.Children.append(jobSlot)
 
 			## Level
-			if localeInfo.IsJAPAN():
-				levelSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 221, yPos)
-			elif localeInfo.IsARABIC():
+			if localeInfo.IsARABIC():
 				levelSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 106, yPos)
 			else:
 				levelSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 210, yPos)
@@ -1140,9 +1118,7 @@ class GuildWindow(ui.ScriptWindow):
 			page.Children.append(levelSlot)
 
 			## Offer
-			if localeInfo.IsJAPAN():
-				offerSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 261, yPos)
-			elif localeInfo.IsARABIC():
+			if localeInfo.IsARABIC():
 				offerSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 66, yPos)
 			else:
 				offerSlotImage = ui.MakeImageBox(page, "d:/ymir work/ui/public/Parameter_Slot_00.sub", 250, yPos)
@@ -1152,9 +1128,7 @@ class GuildWindow(ui.ScriptWindow):
 
 			## General Enable
 			event = lambda argSelf=proxy(self), argIndex=inverseLineIndex: apply(argSelf.OnEnableGeneral, (argIndex,))
-			if localeInfo.IsJAPAN():
-				generalEnableCheckBox = CheckBox(page, 307, yPos, event, "d:/ymir work/ui/public/Parameter_Slot_00.sub")
-			elif localeInfo.IsARABIC():
+			if localeInfo.IsARABIC():
 				generalEnableCheckBox = CheckBox(page, 22, yPos, event, "d:/ymir work/ui/public/Parameter_Slot_00.sub")
 			else:
 				generalEnableCheckBox = CheckBox(page, 297, yPos, event, "d:/ymir work/ui/public/Parameter_Slot_00.sub")
@@ -1971,13 +1945,7 @@ class GuildWindow(ui.ScriptWindow):
 
 class BuildGuildBuildingWindow(ui.ScriptWindow):
 
-	if localeInfo.IsJAPAN():
-		GUILD_CATEGORY_LIST = (
-				("HEADQUARTER", "Main Building"),
-				("FACILITY", "Facility Building"),
-				("OBJECT", "Object"),
-			)
-	elif localeInfo.IsYMIR() or localeInfo.IsWE_KOREA():
+	if localeInfo.IsYMIR() or localeInfo.IsWE_KOREA():
 		GUILD_CATEGORY_LIST = (
 				("HEADQUARTER", "Main Building"),
 				("FACILITY", "Facility Building"),

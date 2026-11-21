@@ -42,7 +42,6 @@ __IS_VIETNAM	= "locale/vn" == app.GetLocalePath()
 __IS_ARABIC		= "locale/ae" == app.GetLocalePath()
 __IS_WE_KOREA	= "locale/we_korea" == app.GetLocalePath()
 __IS_TAIWAN		= "locale/taiwan" == app.GetLocalePath()
-__IS_JAPAN		= "locale/japan" == app.GetLocalePath()	
 LOGIN_FAILURE_WRONG_SOCIALID = "ASDF"
 LOGIN_FAILURE_SHUTDOWN_TIME = "ASDF"
 
@@ -51,9 +50,6 @@ if __IS_CANADA:
 
 def IsYMIR():
 	return "locale/ymir" == app.GetLocalePath()
-
-def IsJAPAN():
-	return "locale/japan" == app.GetLocalePath()
 
 def IsENGLISH():
 	global __IS_ENGLISH

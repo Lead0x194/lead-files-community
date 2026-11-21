@@ -50,9 +50,6 @@ elif localeInfo.IsHONGKONG():
 		"NOTELE"	: localeInfo.LOGIN_FAILURE_NOTELEBLOCK,
 	}
 
-elif localeInfo.IsJAPAN():
-	FULL_BACK_IMAGE = True
-	
 def IsFullBackImage():
 	global FULL_BACK_IMAGE
 	return FULL_BACK_IMAGE
