@@ -2,8 +2,6 @@
 
 #include "Locale_inc.h"
 
-bool		LocaleService_IsEUROPE();
-
 unsigned	LocaleService_GetCodePage();
 const char* LocaleService_GetName();
 const char*	LocaleService_GetLocaleName();

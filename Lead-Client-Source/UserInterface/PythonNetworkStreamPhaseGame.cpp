@@ -1139,7 +1139,7 @@ bool CPythonNetworkStream::RecvChatPacket()
 	// European Arabic version processing
 	// Insert tab (0x08) to output “Name: Content” input in “Content: Name” order.
 	// By processing tabs with Arabic symbols, even if input is (English 1) : (English 2), it is output as (English 2) : (English 1)
-	if (LocaleService_IsEUROPE() && GetDefaultCodePage() == 1256)
+	if (GetDefaultCodePage() == 1256)
 	{
 		char * p = strchr(buf, ':'); 
 		if (p && p[1] == ' ')

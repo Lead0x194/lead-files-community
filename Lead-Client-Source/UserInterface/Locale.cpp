@@ -118,7 +118,6 @@ void LocaleService_ForceSetLocale(const char* name, const char* localePath)
 	strcpy_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), localePath);
 }
 
-bool LocaleService_IsEUROPE()	{ return (_stricmp( LocaleService_GetName(), LSS_EUROPE ) == 0);		}
 
 BOOL LocaleService_IsLeadByte( const char chByte )
 {

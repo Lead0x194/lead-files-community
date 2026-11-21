@@ -765,7 +765,7 @@ bool CPythonApplication::Create(PyObject * poSelf, const char * c_szName, int wi
 	// It's full screen mode
 	// Use the default IME or the European version
 	// Use Windows full screen mode
-	if (!m_pySystem.IsWindowed() && (m_pySystem.IsUseDefaultIME() || LocaleService_IsEUROPE()))
+	if (!m_pySystem.IsWindowed())
 	{
 		m_isWindowed = false;
 		m_isWindowFullScreenEnable = TRUE;
