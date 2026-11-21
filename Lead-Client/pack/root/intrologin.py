@@ -337,16 +337,12 @@ class LoginWindow(ui.ScriptWindow):
 			self.idEditLine.SetFocus()
 
 	def SetPasswordEditLineFocus(self):
-		if localeInfo.IsEUROPE():
-			if self.idEditLine != None:
-				self.idEditLine.SetText("")
-				self.idEditLine.SetFocus()
+		if self.idEditLine != None:
+			self.idEditLine.SetText("")
+			self.idEditLine.SetFocus()
 
-			if self.pwdEditLine != None:
-				self.pwdEditLine.SetText("")
-		else:
-			if self.pwdEditLine != None:
-				self.pwdEditLine.SetFocus()								
+		if self.pwdEditLine != None:
+			self.pwdEditLine.SetText("")
 
 	def OnEndCountDown(self):
 		self.isNowCountDown = False
@@ -733,11 +729,7 @@ class LoginWindow(ui.ScriptWindow):
 
 		self.serverList.SelectItem(serverIndex)
 
-		if localeInfo.IsEUROPE():
-			self.channelList.SelectItem(app.GetRandom(0, self.channelList.GetItemCount()))
-		else:
-			if channelIndex >= 0:
-				self.channelList.SelectItem(channelIndex)
+		self.channelList.SelectItem(app.GetRandom(0, self.channelList.GetItemCount()))
 
 		self.serverBoard.SetPosition(self.xServerBoard, self.yServerBoard)
 		self.serverBoard.Show()

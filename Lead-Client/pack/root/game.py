@@ -55,8 +55,7 @@ from _weakref import proxy
 SCREENSHOT_CWDSAVE = False
 SCREENSHOT_DIR = None
 
-if localeInfo.IsEUROPE():
-	SCREENSHOT_CWDSAVE = True
+SCREENSHOT_CWDSAVE = True
 
 cameraDistance = 1550.0
 cameraPitch = 27.0

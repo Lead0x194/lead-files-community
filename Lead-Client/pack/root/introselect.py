@@ -35,10 +35,7 @@ import uiInventory
 
 LEAVE_BUTTON_FOR_POTAL = False
 NOT_NEED_DELETE_CODE = False
-ENABLE_ENGNUM_DELETE_CODE = False
-
-if localeInfo.IsEUROPE():
-	ENABLE_ENGNUM_DELETE_CODE = True
+ENABLE_ENGNUM_DELETE_CODE = True
 
 ###################################
 

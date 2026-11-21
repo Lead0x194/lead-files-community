@@ -10,12 +10,9 @@ import colorInfo
 import constInfo
 import systemSetting
 
-ENABLE_CHAT_COMMAND = True
+ENABLE_CHAT_COMMAND = False
 ENABLE_LAST_SENTENCE_STACK = True
 ENABLE_INSULT_CHECK = True
-
-if localeInfo.IsEUROPE():
-	ENABLE_CHAT_COMMAND = False
 
 chatInputSetList = []
 def InsertChatInputSetWindow(wnd):

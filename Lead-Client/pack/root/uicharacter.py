@@ -17,14 +17,8 @@ import emotion
 import chr
 
 SHOW_ONLY_ACTIVE_SKILL = False
-SHOW_LIMIT_SUPPORT_SKILL_LIST = []
-HIDE_SUPPORT_SKILL_POINT = False
-
-if (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/ca") and (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/br"):
-	HIDE_SUPPORT_SKILL_POINT = True	
-	SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140]
-else:
-	HIDE_SUPPORT_SKILL_POINT = True
+SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140]
+HIDE_SUPPORT_SKILL_POINT = True
 
 FACE_IMAGE_DICT = {
 	playerSettingModule.RACE_WARRIOR_M	: "icon/face/warrior_m.tga",
