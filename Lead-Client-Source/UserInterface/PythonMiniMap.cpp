@@ -8,10 +8,57 @@
 #include "PythonBackground.h"
 #include "PythonCharacterManager.h"
 #include "PythonGuild.h"
+#include "PythonPlayer.h"
 
 #include "AbstractPlayer.h"
 
 #include "../eterPythonLib/PythonWindowManager.h"
+
+#ifdef ENABLE_PARTY_MAP
+void CPythonMiniMap::AddPartyMember(DWORD dwPID, const char* szName)
+{
+	TPartyMember& rkPartyMember = m_kMap_dwPID_kPartyMember[dwPID];
+	rkPartyMember.pid = dwPID;
+	if (szName && '\0' != szName[0])
+		rkPartyMember.strName = szName;
+}
+
+void CPythonMiniMap::MovePartyMember(DWORD dwPID, long lX, long lY, float fRot)
+{
+	if (lX < m_dwAtlasBaseX)
+		return;
+	if (lY < m_dwAtlasBaseY)
+		return;
+	if (lX > m_dwAtlasBaseX + DWORD(m_fAtlasMaxX))
+		return;
+	if (lY > m_dwAtlasBaseY + DWORD(m_fAtlasMaxY))
+		return;
+
+	TPartyMember& rkPartyMember = m_kMap_dwPID_kPartyMember[dwPID];
+	rkPartyMember.pid = dwPID;
+	rkPartyMember.lX = lX - m_dwAtlasBaseX;
+	rkPartyMember.lY = lY - m_dwAtlasBaseY;
+	rkPartyMember.bHasPosition = true;
+	__GlobalPositionToAtlasPosition(rkPartyMember.lX, rkPartyMember.lY, &rkPartyMember.fScreenX, &rkPartyMember.fScreenY);
+
+	if (rkPartyMember.strName.empty())
+	{
+		CPythonPlayer::TPartyMemberInfo * pPartyMemberInfo;
+		if (CPythonPlayer::Instance().GetPartyMemberPtr(dwPID, &pPartyMemberInfo))
+			rkPartyMember.strName = pPartyMemberInfo->strName;
+	}
+}
+
+void CPythonMiniMap::RemovePartyMember(DWORD dwPID)
+{
+	m_kMap_dwPID_kPartyMember.erase(dwPID);
+}
+
+void CPythonMiniMap::ClearPartyMember()
+{
+	m_kMap_dwPID_kPartyMember.clear();
+}
+#endif
 
 void CPythonMiniMap::AddObserver(DWORD dwVID, float fSrcX, float fSrcY)
 {
@@ -868,13 +915,17 @@ void CPythonMiniMap::__LoadAtlasMarkInfo()
 
 bool CPythonMiniMap::LoadAtlas()
 {
+#ifdef ENABLE_PARTY_MAP
+	ClearPartyMember();
+#endif
+
 	CPythonBackground& rkBG=CPythonBackground::Instance();
 	if (!rkBG.IsMapOutdoor())
 		return false;
 
 	CMapOutdoor& rkMap=rkBG.GetMapOutdoorRef();
 
-	const char* playerMarkFileName = "d:/ymir work/ui/minimap/playermark.sub";
+	const char* markImageFileName = "d:/ymir work/ui/minimap/whitemark.sub";
 
 	char atlasFileName[1024+1];
 	snprintf(atlasFileName, sizeof(atlasFileName), "%s/atlas.sub", rkMap.GetName().c_str());	
@@ -885,6 +936,9 @@ bool CPythonMiniMap::LoadAtlas()
 	
 	m_AtlasImageInstance.Destroy();
 	m_AtlasPlayerMark.Destroy();
+#ifdef ENABLE_PARTY_MAP
+	m_AtlasPartyMark.Destroy();
+#endif
 	CGraphicImage* pkGrpImgAtlas = (CGraphicImage *) CResourceManager::Instance().GetResourcePointer(atlasFileName);
 	if (pkGrpImgAtlas)
 	{
@@ -898,9 +952,14 @@ bool CPythonMiniMap::LoadAtlas()
 	else
 	{
 	}
-	m_AtlasPlayerMark.SetImagePointer((CGraphicSubImage *) CResourceManager::Instance().GetResourcePointer(playerMarkFileName));
+	m_AtlasPlayerMark.SetImagePointer((CGraphicSubImage *) CResourceManager::Instance().GetResourcePointer(markImageFileName));
+#ifdef ENABLE_PARTY_MAP
+	m_AtlasPartyMark.SetImagePointer((CGraphicSubImage *) CResourceManager::Instance().GetResourcePointer(markImageFileName));
+	const D3DXCOLOR& c_rkPartyColor = CInstanceBase::GetIndexedNameColor(CInstanceBase::NAMECOLOR_PARTY);
+	m_AtlasPartyMark.SetDiffuseColor(c_rkPartyColor.r, c_rkPartyColor.g, c_rkPartyColor.b, 1.0f);
+#endif
 
-	short sTerrainCountX, sTerrainCountY;  
+	short sTerrainCountX, sTerrainCountY;
 	rkMap.GetBaseXY(&m_dwAtlasBaseX, &m_dwAtlasBaseY);
 	rkMap.GetTerrainCount(&sTerrainCountX, &sTerrainCountY);
 	m_fAtlasMaxX = (float)sTerrainCountX * (float)CTerrainImpl::TERRAIN_XSIZE;
@@ -932,16 +991,8 @@ void CPythonMiniMap::UpdateAtlas()
 		TPixelPosition kInstPos;
 		pkInst->NEW_GetPixelPosition(&kInstPos);
 
-		float fRotation;
-		fRotation = (540.0f - pkInst->GetRotation());
-		while(fRotation > 360.0f)
-			fRotation -= 360.0f;
-		while(fRotation < 0.0f)
-			fRotation += 360.0f;
-
 		m_AtlasPlayerMark.SetPosition(kInstPos.x / m_fAtlasMaxX * m_fAtlasImageSizeX - (float)m_AtlasPlayerMark.GetWidth() / 2.0f,
 			kInstPos.y / m_fAtlasMaxY * m_fAtlasImageSizeY - (float)m_AtlasPlayerMark.GetHeight() / 2.0f);
-		m_AtlasPlayerMark.SetRotation(fRotation);
 	}
 
 	{
@@ -953,6 +1004,17 @@ void CPythonMiniMap::UpdateAtlas()
 			__GlobalPositionToAtlasPosition(rInfo.lx+rInfo.lwidth, rInfo.ly+rInfo.lheight, &rInfo.fexRender, &rInfo.feyRender);
 		}
 	}
+
+#ifdef ENABLE_PARTY_MAP
+	{
+		auto itor = m_kMap_dwPID_kPartyMember.begin();
+		for (; itor != m_kMap_dwPID_kPartyMember.end(); ++itor)
+		{
+			TPartyMember & rInfo = itor->second;
+			__GlobalPositionToAtlasPosition(rInfo.lX, rInfo.lY, &rInfo.fScreenX, &rInfo.fScreenY);
+		}
+	}
+#endif
 }
 
 void CPythonMiniMap::RenderAtlas(float fScreenX, float fScreenY)
@@ -1027,8 +1089,27 @@ void CPythonMiniMap::RenderAtlas(float fScreenX, float fScreenY)
 	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLORARG2);
 	STATEMANAGER.RestoreTextureStageState(0, D3DTSS_COLOROP);
 
+#ifdef ENABLE_PARTY_MAP
+	{
+		auto itor = m_kMap_dwPID_kPartyMember.begin();
+		for (; itor != m_kMap_dwPID_kPartyMember.end(); ++itor)
+		{
+			TPartyMember & rInfo = itor->second;
+
+			if (!rInfo.bHasPosition)
+				continue;
+
+			m_AtlasPartyMark.SetPosition(rInfo.fScreenX - (float)m_AtlasPartyMark.GetWidth() / 2.0f,
+				rInfo.fScreenY - (float)m_AtlasPartyMark.GetHeight() / 2.0f);
+			m_AtlasPartyMark.Render();
+		}
+
+		m_AtlasPlayerMark.Render();
+	}
+#else
 	if ((ELTimer_GetMSec() / 500) % 2)
 		m_AtlasPlayerMark.Render();
+#endif
 
 	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MINFILTER);
 	STATEMANAGER.RestoreSamplerState(0, D3DSAMP_MAGFILTER);
@@ -1136,9 +1217,37 @@ bool CPythonMiniMap::GetAtlasInfo(float fScreenX, float fScreenY, std::string & 
 			*pReturnPosX = kInstPos.x;
 			*pReturnPosY = kInstPos.y;
 			*pdwTextColor = pkInst->GetNameColor();
-			return true;		
+			return true;
 		}
 	}
+
+#ifdef ENABLE_PARTY_MAP
+	{
+		auto itor = m_kMap_dwPID_kPartyMember.begin();
+		for (; itor != m_kMap_dwPID_kPartyMember.end(); ++itor)
+		{
+			TPartyMember & rInfo = itor->second;
+
+			if (!rInfo.bHasPosition)
+				continue;
+			if (rInfo.strName.empty())
+				continue;
+
+			float fLocalX = float(rInfo.lX);
+			float fLocalY = float(rInfo.lY);
+
+			if (fLocalX-fCheckWidth<fRealX && fLocalX+fCheckWidth>fRealX &&
+				fLocalY-fCheckHeight<fRealY && fLocalY+fCheckHeight>fRealY)
+			{
+				rReturnString = rInfo.strName;
+				*pReturnPosX = fLocalX;
+				*pReturnPosY = fLocalY;
+				*pdwTextColor = CInstanceBase::GetIndexedNameColor(CInstanceBase::NAMECOLOR_PARTY);
+				return true;
+			}
+		}
+	}
+#endif
 
 	m_AtlasMarkInfoVectorIterator = m_AtlasNPCInfoVector.begin();
 	while (m_AtlasMarkInfoVectorIterator != m_AtlasNPCInfoVector.end())

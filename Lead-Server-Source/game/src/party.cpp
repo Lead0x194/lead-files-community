@@ -577,6 +577,11 @@ void CParty::Link(LPCHARACTER pkChr)
 		SendPartyInfoAllToOne(pkChr);
 		SendPartyInfoOneToAll(pkChr);
 
+#ifdef ENABLE_PARTY_MAP
+		SendPartyPositionAllToOne(pkChr);
+		SendPartyPositionOneToAll(pkChr);
+#endif
+
 		SendParameter(pkChr);
 
 		//sys_log(0, "PARTY-DUNGEON connect %p %p", this, GetDungeon());
@@ -757,6 +762,60 @@ void CParty::SendPartyLinkOneToAll(LPCHARACTER ch)
 		}
 	}
 }
+
+#ifdef ENABLE_PARTY_MAP
+void CParty::SendPartyPositionOneToAll(LPCHARACTER ch)
+{
+	if (!ch->GetDesc())
+		return;
+
+	TMemberMap::iterator it;
+
+	TPacketGCPartyPositionInfo p;
+	p.header = HEADER_GC_PARTY_POSITION_INFO;
+	p.pid = ch->GetPlayerID();
+	p.x = ch->GetX();
+	p.y = ch->GetY();
+	p.rot = ch->GetRotation();
+
+	for (it = m_memberMap.begin(); it != m_memberMap.end(); ++it)
+	{
+		if (it->second.pCharacter == ch)
+			continue;
+
+		if ((it->second.pCharacter) && (it->second.pCharacter->GetDesc()) && (it->second.pCharacter->GetMapIndex() == ch->GetMapIndex()))
+			it->second.pCharacter->GetDesc()->Packet(&p, sizeof(p));
+	}
+}
+
+void CParty::SendPartyPositionAllToOne(LPCHARACTER ch)
+{
+	if (!ch->GetDesc())
+		return;
+
+	TMemberMap::iterator it;
+
+	TPacketGCPartyPositionInfo p;
+
+	for (it = m_memberMap.begin(); it != m_memberMap.end(); ++it)
+	{
+		if (it->second.pCharacter == ch)
+			continue;
+
+		if (it->second.pCharacter && it->second.pCharacter->GetMapIndex() == ch->GetMapIndex())
+		{
+			DWORD pid = it->first;
+			memset(&p, 0, sizeof(p));
+			p.header = HEADER_GC_PARTY_POSITION_INFO;
+			p.pid = pid;
+			p.x = it->second.pCharacter->GetX();
+			p.y = it->second.pCharacter->GetY();
+			p.rot = it->second.pCharacter->GetRotation();
+			ch->GetDesc()->Packet(&p, sizeof(p));
+		}
+	}
+}
+#endif
 
 void CParty::SendPartyLinkAllToOne(LPCHARACTER ch)
 {
@@ -1430,6 +1489,12 @@ void CParty::Update()
 			if (it->second.pCharacter)
 				SendPartyInfoOneToAll(it->second.pCharacter);
 	}
+
+#ifdef ENABLE_PARTY_MAP
+	for (it = m_memberMap.begin(); it != m_memberMap.end(); ++it)
+		if (it->second.pCharacter)
+			SendPartyPositionOneToAll(it->second.pCharacter);
+#endif
 }
 
 void CParty::UpdateOnlineState(DWORD dwPID, const char* name)

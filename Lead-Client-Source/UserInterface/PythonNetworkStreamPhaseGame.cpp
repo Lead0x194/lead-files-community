@@ -387,6 +387,12 @@ void CPythonNetworkStream::GamePhase()
 				ret = RecvPartyUpdate();
 				break;
 
+#ifdef ENABLE_PARTY_MAP
+			case HEADER_GC_PARTY_POSITION_INFO:
+				ret = RecvPartyPositionInfo();
+				break;
+#endif
+
 			case HEADER_GC_PARTY_REMOVE:
 				ret = RecvPartyRemove();
 				break;
@@ -2717,6 +2723,11 @@ bool CPythonNetworkStream::RecvPartyAdd()
 	if (!Recv(sizeof(kPartyAddPacket), &kPartyAddPacket))
 		return false;
 
+#ifdef ENABLE_PARTY_MAP
+	if (strcmp(kPartyAddPacket.name, CPythonPlayer::Instance().GetName()))
+		CPythonMiniMap::Instance().AddPartyMember(kPartyAddPacket.pid, kPartyAddPacket.name);
+#endif
+
 	CPythonPlayer::Instance().AppendPartyMember(kPartyAddPacket.pid, kPartyAddPacket.name);
 	PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "AddPartyMember", Py_BuildValue("(is)", kPartyAddPacket.pid, kPartyAddPacket.name));
 	Tracef(" >> RecvPartyAdd : %d, %s\n", kPartyAddPacket.pid, kPartyAddPacket.name);
@@ -2757,11 +2768,37 @@ bool CPythonNetworkStream::RecvPartyUpdate()
 	return true;
 }
 
+#ifdef ENABLE_PARTY_MAP
+bool CPythonNetworkStream::RecvPartyPositionInfo()
+{
+	TPacketGCPartyPositionInfo kPartyPositionInfoPacket;
+	if (!Recv(sizeof(kPartyPositionInfoPacket), &kPartyPositionInfoPacket))
+		return false;
+
+	DWORD dwPartyMapVID;
+	if (CPythonPlayer::Instance().PartyMemberPIDToVID(kPartyPositionInfoPacket.pid, &dwPartyMapVID) && CPythonPlayer::Instance().IsMainCharacterIndex(dwPartyMapVID))
+		return true;
+
+	CPythonMiniMap::Instance().MovePartyMember(kPartyPositionInfoPacket.pid, kPartyPositionInfoPacket.x,
+		kPartyPositionInfoPacket.y, kPartyPositionInfoPacket.rot);
+
+	return true;
+}
+#endif
+
 bool CPythonNetworkStream::RecvPartyRemove()
 {
 	TPacketGCPartyRemove kPartyRemovePacket;
 	if (!Recv(sizeof(kPartyRemovePacket), &kPartyRemovePacket))
 		return false;
+
+#ifdef ENABLE_PARTY_MAP
+	DWORD dwPartyMapVID;
+	if (CPythonPlayer::Instance().PartyMemberPIDToVID(kPartyRemovePacket.pid, &dwPartyMapVID) && CPythonPlayer::Instance().IsMainCharacterIndex(dwPartyMapVID))
+		CPythonMiniMap::Instance().ClearPartyMember();
+	else
+		CPythonMiniMap::Instance().RemovePartyMember(kPartyRemovePacket.pid);
+#endif
 
 	PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "RemovePartyMember", Py_BuildValue("(i)", kPartyRemovePacket.pid));
 	Tracef(" >> RecvPartyRemove : %d\n", kPartyRemovePacket.pid);
@@ -2792,10 +2829,16 @@ bool CPythonNetworkStream::RecvPartyUnlink()
 
 	if (CPythonPlayer::Instance().IsMainCharacterIndex(kPartyUnlinkPacket.vid))
 	{
+#ifdef ENABLE_PARTY_MAP
+		CPythonMiniMap::Instance().ClearPartyMember();
+#endif
 		PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "UnlinkAllPartyMember", Py_BuildValue("()"));
 	}
 	else
 	{
+#ifdef ENABLE_PARTY_MAP
+		CPythonMiniMap::Instance().RemovePartyMember(kPartyUnlinkPacket.pid);
+#endif
 		PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "UnlinkPartyMember", Py_BuildValue("(i)", kPartyUnlinkPacket.pid));
 	}
 

@@ -137,6 +137,11 @@ class CParty
 		void		SendPartyLinkAllToOne(LPCHARACTER ch);
 		void		SendPartyUnlinkOneToAll(LPCHARACTER ch);
 
+#ifdef ENABLE_PARTY_MAP
+		void		SendPartyPositionOneToAll(LPCHARACTER ch);
+		void		SendPartyPositionAllToOne(LPCHARACTER ch);
+#endif
+
 		int		GetPartyBonusExpPercent()	{ return m_iExpBonus; }
 		int		GetPartyBonusAttackGrade()	{ return m_iAttBonus; }
 		int		GetPartyBonusDefenseGrade()	{ return m_iDefBonus; }
