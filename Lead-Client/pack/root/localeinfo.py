@@ -33,55 +33,14 @@ VIRTUAL_KEY_ALPHABET_UPPERS  = r'{1234567890}?QWERTYUIOP|+ASDFGHJKL:~"ZXCVBNM<>'
 VIRTUAL_KEY_SYMBOLS    = '!@#$%^&*()_+|{}:"<>?~'
 VIRTUAL_KEY_NUMBERS    = "1234567890-=\[];',./`"
 
-__IS_ENGLISH	= "ENGLISH" == app.GetLocaleServiceName()	
-__IS_HONGKONG	= "HONGKONG" == app.GetLocaleServiceName()
-__IS_EUROPE		= "EUROPE" == app.GetLocaleServiceName()		
-__IS_CANADA		= "locale/ca" == app.GetLocalePath()
-__IS_SINGAPORE	= "locale/sg" == app.GetLocalePath()
-__IS_VIETNAM	= "locale/vn" == app.GetLocalePath()
 __IS_RTL		= "locale/ae" == app.GetLocalePath()
-__IS_WE_KOREA	= "locale/we_korea" == app.GetLocalePath()
-__IS_TAIWAN		= "locale/taiwan" == app.GetLocalePath()
 LOGIN_FAILURE_WRONG_SOCIALID = "ASDF"
 LOGIN_FAILURE_SHUTDOWN_TIME = "ASDF"
 
-if __IS_CANADA:
-	__IS_EUROPE = True
-
-def IsENGLISH():
-	global __IS_ENGLISH
-	return __IS_ENGLISH
-
-def IsHONGKONG():
-	global __IS_HONGKONG
-	return __IS_HONGKONG
-
-def IsTAIWAN():
-	return "locale/taiwan" == app.GetLocalePath()
-	
-def IsEUROPE():
-	global __IS_EUROPE
-	return __IS_EUROPE
-
-def IsCANADA():
-	global __IS_CANADA
-	return __IS_CANADA
-
-def IsVIETNAM():
-	global __IS_VIETNAM
-	return __IS_VIETNAM
-
-def IsSINGAPORE():
-	global __IS_SINGAPORE
-	return __IS_SINGAPORE
-	
 def IsRTL():
 	global __IS_RTL
 	return __IS_RTL
 
-def IsWE_KOREA():
-	return "locale/we_korea" == app.GetLocalePath()
-	
 def LoadLocaleData():
 	app.LoadLocaleData(app.GetLocalePath())
 
@@ -141,78 +100,9 @@ constInfo.IN_GAME_SHOP_ENABLE = 0
 LoadLocaleFile(LOCALE_FILE_NAME, locals())
 
 ########################################################################################################
-dictSingleWord = {
-	"m":1, "n":1, "r":1, "M":1, "N":1, "R":1, "l":1, "L":1, "1":1, "3":1, "6":1, "7":1, "8":1, "0":1,
-}
-
-dictDoubleWord = {
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�v":1, "��":1, "��":1, "��":1, "�R":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "�x":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�m":1, "��":1, "��":1, "��":1, "�O":1, "��":1, "��":1, "��":1, "��":1, "�l":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�u":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "�X":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�o":1, "��":1, "��":1, "��":1, "�y":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�p":1,
-	"¥":1, "¹":1, "¼":1, "��":1, "��":1, "�c":1, "��":1, "��":1, "��":1, "��":1, "°":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�R":1, "��":1, "��":1, "�n":1,
-	"��":1, "í":1, "ó":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "ġ":1, "ä":1, "��":1, "ü":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�M":1,
-	"ī":1, "ļ":1, "Ŀ":1, "��":1, "��":1, "��":1, "��":1, "ť":1, "ũ":1, "Ű":1, "ĳ":1, "�m":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"Ÿ":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "Ʃ":1, "Ʈ":1, "Ƽ":1, "��":1, "�O":1, "��":1, "��":1, "��":1, "��":1, "��":1, "ơ":1, "��":1, "Ƣ":1, "Ʒ":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "ǥ":1, "Ǫ":1, "ǻ":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "ǡ":1, "��":1, "Ǵ":1, "�R":1, "ǣ":1, "Ƕ":1, "�c":1,
-	"��":1, "��":1, "��":1, "��":1, "ȣ":1, "ȿ":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "ȭ":1, "ȳ":1, "��":1, "��":1, "ȸ":1, "��":1, "��":1,
-}
-
 locale = mapping(
 )
 
-
-def GetAuxiliaryWordType(text):
-
-	textLength = len(text)
-
-	if textLength > 1:
-
-		singleWord = text[-1]
-
-		if (singleWord >= '0' and singleWord <= '9') or\
-			(singleWord >= 'a' and singleWord <= 'z') or\
-			(singleWord >= 'A' and singleWord <= 'Z'):
-			if not dictSingleWord.has_key(singleWord):
-				return 1
-
-		elif dictDoubleWord.has_key(text[-2:]):
-			return 1
-
-	return 0
-
-
-
-def CutMoneyString(sourceText, startIndex, endIndex, insertingText, backText):
-
-	sourceLength = len(sourceText)
-
-	if sourceLength < startIndex:
-		return backText
-
-	text = sourceText[max(0, sourceLength-endIndex):sourceLength-startIndex]
-
-	if not text:
-		return backText
-
-	if int(text) <= 0:
-		return backText
-
-	text = str(int(text))
-
-	if backText:
-		backText = " " + backText
-
-	return text + insertingText + backText
 
 def SecondToDHM(time):
 	if time < 60:
