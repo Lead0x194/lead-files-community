@@ -243,6 +243,36 @@ DWORD GetDefaultCodePage()
 	return gs_codePage;
 }
 
+int GetDefaultCodePageCharLength(const char* c_szText)
+{
+	const unsigned char lead = static_cast<unsigned char>(*c_szText);
+
+	if (lead < 0x80)
+		return 1;
+
+	if (CP_UTF8 == gs_codePage)
+	{
+		int length = 2;
+
+		if (lead >= 0xF0)
+			length = 4;
+		else if (lead >= 0xE0)
+			length = 3;
+
+		int count = 1;
+
+		while (count < length && (static_cast<unsigned char>(c_szText[count]) & 0xC0) == 0x80)
+			++count;
+
+		return count;
+	}
+
+	if (IsDBCSLeadByteEx(gs_codePage, lead) && c_szText[1])
+		return 2;
+
+	return 1;
+}
+
 const char * GetDefaultFontFace()
 {
 	return gs_fontFace.c_str();

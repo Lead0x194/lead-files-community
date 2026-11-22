@@ -119,11 +119,6 @@ void LocaleService_ForceSetLocale(const char* name, const char* localePath)
 }
 
 
-BOOL LocaleService_IsLeadByte( const char chByte )
-{
-	return (((unsigned char) chByte) & 0x80) != 0;
-}
-
 int LocaleService_StringCompareCI( LPCSTR szStringLeft, LPCSTR szStringRight, size_t sizeLength )
 {
 	return strnicmp( szStringLeft, szStringRight, sizeLength );
