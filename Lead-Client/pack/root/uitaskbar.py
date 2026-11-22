@@ -77,7 +77,7 @@ class GiftBox(ui.ScriptWindow):
 
 	def LoadWindow(self):
 		try:
-			pyScrLoader = ui.PythonScriptLoader()
+			pyScrLoader = ui.PythonScriptLoader(False)
 			pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "giftbox.py")
 		except:
 			import exception
@@ -126,7 +126,7 @@ class EnergyBar(ui.ScriptWindow):
 
 	def LoadWindow(self):
 		try:
-			pyScrLoader = ui.PythonScriptLoader()
+			pyScrLoader = ui.PythonScriptLoader(False)
 			pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "EnergyBar.py")
 		except:
 			import exception
@@ -186,7 +186,7 @@ class ExpandedTaskBar(ui.ScriptWindow):
 	
 	def LoadWindow(self):
 		try:
-			pyScrLoader = ui.PythonScriptLoader()
+			pyScrLoader = ui.PythonScriptLoader(False)
 			pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "ExpandedTaskBar.py")
 		except:
 			import exception
@@ -406,7 +406,7 @@ class TaskBar(ui.ScriptWindow):
 
 	def LoadWindow(self):
 		try:
-			pyScrLoader = ui.PythonScriptLoader()
+			pyScrLoader = ui.PythonScriptLoader(False)
 
 			if constInfo.IN_GAME_SHOP_ENABLE:
 				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "TaskBar.py")
@@ -442,12 +442,6 @@ class TaskBar(ui.ScriptWindow):
 			TaskBar.IS_EXPANDED = True
 		
 
-		if localeInfo.IsRTL():
-			systemButton = toggleButtonDict[TaskBar.BUTTON_SYSTEM]
-			if systemButton.ToolTipText:
-				tx, ty = systemButton.ToolTipText.GetLocalPosition()
-				tw = systemButton.ToolTipText.GetWidth() 
-				systemButton.ToolTipText.SetPosition(-tw/2, ty)
 
 
 		expGauge = []
