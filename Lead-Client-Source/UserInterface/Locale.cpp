@@ -2,6 +2,7 @@
 #include "Locale.h"
 #include "PythonApplication.h"
 #include "../eterBase/CRC32.h"
+#include "../EterPack/EterPackManager.h"
 
 const char* LSS_EUROPE		= "EUROPE";
 
@@ -23,6 +24,19 @@ bool LocaleService_IsRTL()
 			return true;
 
 	return false;
+}
+
+bool LocaleService_SetLanguage(const char* c_szName)
+{
+	char szFileName[256];
+	sprintf_s(szFileName, sizeof(szFileName), "locale/%s/locale_game.txt", c_szName);
+
+	if (!CEterPackManager::Instance().isExist(szFileName))
+		return false;
+
+	strcpy_s(MULTI_LOCALE_NAME, sizeof(MULTI_LOCALE_NAME), c_szName);
+	sprintf_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), "locale/%s", MULTI_LOCALE_NAME);
+	return true;
 }
 
 void LocaleService_LoadConfig(const char* fileName)
