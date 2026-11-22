@@ -54,6 +54,31 @@ def ReportMissingKeys(moduleName):
 	module.__dict__["__source__"] = sys.modules[moduleName]
 	sys.modules[moduleName] = module
 
+REQUESTED_LANGUAGE = None
+
+LANGUAGE_NAME_LIST = (
+	("ae", "العربية"),
+	("cz", "Čeština"),
+	("de", "Deutsch"),
+	("dk", "Dansk"),
+	("en", "English"),
+	("es", "Español"),
+	("fr", "Français"),
+	("gr", "Ελληνικά"),
+	("hu", "Magyar"),
+	("it", "Italiano"),
+	("nl", "Nederlands"),
+	("pl", "Polski"),
+	("pt", "Português"),
+	("ro", "Română"),
+	("ru", "Русский"),
+	("tr", "Türkçe"),
+)
+
+def GetLanguageList():
+	import pack
+	return [(code, name) for code, name in LANGUAGE_NAME_LIST if pack.Exist("locale/%s/locale_game.txt" % code)]
+
 LANGUAGE_MODULE_DICT = {
 	"localeInfo" : (),
 	"uiScriptLocale" : (),

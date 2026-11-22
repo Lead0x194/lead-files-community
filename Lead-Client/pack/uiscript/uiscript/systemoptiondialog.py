@@ -15,7 +15,7 @@ window = {
 	"y" : 0,
 
 	"width" : 305,
-	"height" : 255,
+	"height" : 280,
 
 	"children" :
 	(
@@ -27,7 +27,7 @@ window = {
 			"y" : 0,
 
 			"width" : 305,
-			"height" : 255,
+			"height" : 280,
 
 			"children" :
 			(
@@ -54,6 +54,17 @@ window = {
 				},
 
 				
+				## Language
+				{
+					"name" : "language_name",
+					"type" : "text",
+
+					"x" : 40 + TEXT_TEMPORARY_X,
+					"y" : 212+2,
+
+					"text" : uiScriptLocale.OPTION_LANGUAGE,
+				},
+
 				## Music
 				{
 					"name" : "music_name",
