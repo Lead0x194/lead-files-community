@@ -1,13 +1,13 @@
 ScriptType		SkillDataScript
 
 Type			PASSIVE
-Name			"¾ç¼Õ°Ë ´Ù·ç±â"
-Description		"¾ç¼Õ°ËÀ» ´õ¿í °­·ÂÈ÷ ´Ù·ê ¼ö ÀÖ´Â ´É·Â"
+Name			"ì–‘ì†ê²€ ë‹¤ë£¨ê¸°"
+Description		"ì–‘ì†ê²€ì„ ë”ìš± ê°•ë ¥íˆ ë‹¤ë£° ìˆ˜ ìˆëŠ” ëŠ¥ë ¥"
 
 IconFileName	"skill/warrior/yangson.sub"
 List AffectData
 {
-	"ÆÄ±«·Â +%.0f"	"SkillPoint"	""
+	"íŒŒê´´ë ¥ +%.0f"	"SkillPoint"	""
 }
 
 MaxLevel		30

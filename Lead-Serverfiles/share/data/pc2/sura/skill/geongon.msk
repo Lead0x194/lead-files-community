@@ -3,16 +3,16 @@ ScriptType		SkillDataScript
 Type			LOW
 Attribute		"USE_HP" "STANDING_SKILL"
 
-Name			"°Ç°ïÄ¡È¯"
-Description		"Á¤½ÅÀ» ÁıÁßÇÏ¿© Á¤½Å·ÂÀ» È¸º¹ÇÑ´Ù"
+Name			"ê±´ê³¤ì¹˜í™˜"
+Description		"ì •ì‹ ì„ ì§‘ì¤‘í•˜ì—¬ ì •ì‹ ë ¥ì„ íšŒë³µí•œë‹¤"
 
 IconFileName	"skill/sura/geongon.sub"
 MotionIndex		0
 
 List AffectData
 {
-	"Á¤½Å·Â È¸º¹·® : %.0f"	"(5 + MaxSP / 50) * ((10 + SkillPoint) / 10)"	""
-	"»ı¸í·Â 20%% ¼Ò¸ğ" "" ""
+	"ì •ì‹ ë ¥ íšŒë³µëŸ‰ : %.0f"	"(5 + MaxSP / 50) * ((10 + SkillPoint) / 10)"	""
+	"ìƒëª…ë ¥ 20%% ì†Œëª¨" "" ""
 }
 
 MaxLevel			"20"

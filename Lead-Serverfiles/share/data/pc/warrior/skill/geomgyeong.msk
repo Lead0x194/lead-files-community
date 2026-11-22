@@ -4,16 +4,16 @@ Type			MIDDLE
 Attribute		"WEAPON_LIMITATION"	"TOGGLE" "STANDING_SKILL"
 NeedWeapon		"SWORD" "TWO_HANDED"
 
-Name			"°Ë°æ"
-Description		"°ø°İ·Â°ú °ø°İ°Å¸®¸¦ ÀÏÁ¤½Ã°£ µ¿¾È Áõ°¡½ÃÅ²´Ù"
-Requirement		"±â°ø¼ú" 6
+Name			"ê²€ê²½"
+Description		"ê³µê²©ë ¥ê³¼ ê³µê²©ê±°ë¦¬ë¥¼ ì¼ì •ì‹œê°„ ë™ì•ˆ ì¦ê°€ì‹œí‚¨ë‹¤"
+Requirement		"ê¸°ê³µìˆ " 6
 
 IconFileName		"skill/warrior/geomgyeong.sub"
 MotionIndex		6
 
 List AffectData
 {
-	"°ø°İ·Â +%.0f"	"1 + (SkillPoint / 3)" ""
+	"ê³µê²©ë ¥ +%.0f"	"1 + (SkillPoint / 3)" ""
 }
 
 MaxLevel				"15"

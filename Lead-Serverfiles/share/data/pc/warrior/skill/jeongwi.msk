@@ -3,18 +3,18 @@ ScriptType		SkillDataScript
 Type			MIDDLE
 Attribute		"STANDING_SKILL" "TOGGLE"
 
-Name			"Àü±ÍÈ¥"
-Description		"¿À·ÎÁö °ø°İ¿¡¸¸ Àü³äÇÑ´Ù"
+Name			"ì „ê·€í˜¼"
+Description		"ì˜¤ë¡œì§€ ê³µê²©ì—ë§Œ ì „ë…í•œë‹¤"
 
 IconFileName	"skill/warrior/jeongwi.sub"
 MotionIndex		7
 
 List AffectData
 {
-	"ÆÄ±«·Â 1.5¹è Áõ°¡" "" ""
-	"¸ÂÀ»¶§ Å¸°İÄ¡ 3¹è" "" ""
-	"ÀÌµ¿¼Óµµ : +25" "" ""
-	"°ø°İ¼Óµµ : +10" "" ""
+	"íŒŒê´´ë ¥ 1.5ë°° ì¦ê°€" "" ""
+	"ë§ì„ë•Œ íƒ€ê²©ì¹˜ 3ë°°" "" ""
+	"ì´ë™ì†ë„ : +25" "" ""
+	"ê³µê²©ì†ë„ : +10" "" ""
 }
 
 MaxLevel		"10"

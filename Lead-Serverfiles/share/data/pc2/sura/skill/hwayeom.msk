@@ -1,15 +1,15 @@
 ScriptType		SkillDataScript
 
 Type			MIDDLE
-Name			"È­¿°Æø"
-Description		"ÁÖº¯ 2M³»ÀÇ ¸ğµç ÀûÀ» ¼¶¸êÇÑ´Ù"
+Name			"í™”ì—¼í­"
+Description		"ì£¼ë³€ 2Më‚´ì˜ ëª¨ë“  ì ì„ ì„¬ë©¸í•œë‹¤"
 
 IconFileName	"skill/sura/hwayeom.sub"
 MotionIndex		11
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.0f"	"(INT * 3 + 10) * (10 + SkillPoint) / 10" ""
+	"íŒŒê´´ë ¥ : %.0f"	"(INT * 3 + 10) * (10 + SkillPoint) / 10" ""
 }
 
 MaxLevel 		"20"

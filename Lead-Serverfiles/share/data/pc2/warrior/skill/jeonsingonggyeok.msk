@@ -4,15 +4,15 @@ Type			HIGH
 Attribute		"WEAPON_LIMITATION"
 NeedWeapon		"SWORD" "TWO_HANDED"
 
-Name			"Àü½Å°ø°İ"
-Description		"Àü¹æÀÇ ÀûÀ» °ø°İÇÑ´Ù"
+Name			"ì „ì‹ ê³µê²©"
+Description		"ì „ë°©ì˜ ì ì„ ê³µê²©í•œë‹¤"
 
 IconFileName		"skill/warrior/jeonsingonggyeok.sub"
 MotionIndex		2
 
 List AffectData
 {
-	"µ¥¹ÌÁö : %.0f ~ %.0f"	"AttackPower"	"(AttackPower * (10 + SkillPoint)) / 10"
+	"ë°ë¯¸ì§€ : %.0f ~ %.0f"	"AttackPower"	"(AttackPower * (10 + SkillPoint)) / 10"
 }
 
 CoolTimeFormula		"20 - SkillPoint / 2"

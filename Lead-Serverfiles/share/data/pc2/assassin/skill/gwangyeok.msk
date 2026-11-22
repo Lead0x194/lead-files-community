@@ -5,21 +5,21 @@ Attribute		"NEED_TARGET" "WEAPON_LIMITATION" "FAN_RANGE"
 NeedWeapon		"BOW"
 Range			2500
 
-Name			"°ü°İ¼ú"
-Description		"¿©·¯¹ßÀÇ È­»ìÀ» ½ğ´Ù"
+Name			"ê´€ê²©ìˆ "
+Description		"ì—¬ëŸ¬ë°œì˜ í™”ì‚´ì„ ìœë‹¤"
 
 IconFileName		"skill/assassin/gwangyeok.sub"
 MotionIndex		5
 
 List ConditionData
 {
-	"½ºÇÃ·¡½¬ °ø°İ"
+	"ìŠ¤í”Œë˜ì‰¬ ê³µê²©"
 }
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.1f ¹è"	"(SkillPoint * 7 + 100) / 100"	""
-	"ÃÖ´ë %.0f ¸í±îÁö °ø°İ"	"1 + floor(SkillPoint / 5)" ""
+	"íŒŒê´´ë ¥ : %.1f ë°°"	"(SkillPoint * 7 + 100) / 100"	""
+	"ìµœëŒ€ %.0f ëª…ê¹Œì§€ ê³µê²©"	"1 + floor(SkillPoint / 5)" ""
 }
 
 MaxLevel			20

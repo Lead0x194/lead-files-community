@@ -3,16 +3,16 @@ ScriptType		SkillDataScript
 Type			MIDDLE
 Attribute		"TOGGLE" "STANDING_SKILL"
 
-Name			"Ãµ±ÙÃß"
-Description		"ÀÏ½ÃÀûÀ¸·Î ¹æ¾î·ÂÀÌ »ó½ÂÇÏ¸ç °­·ÂÇÑ °ø°İ¿¡µµ ¾²·¯ÁöÁö ¾Ê´Â´Ù"
-Requirement		"ÁıÁß¹æ¾î" 5
+Name			"ì²œê·¼ì¶”"
+Description		"ì¼ì‹œì ìœ¼ë¡œ ë°©ì–´ë ¥ì´ ìƒìŠ¹í•˜ë©° ê°•ë ¥í•œ ê³µê²©ì—ë„ ì“°ëŸ¬ì§€ì§€ ì•ŠëŠ”ë‹¤"
+Requirement		"ì§‘ì¤‘ë°©ì–´" 5
 
 IconFileName		"skill/warrior/chungeun.sub"
 MotionIndex		9
 
 List AffectData
 {
-	"¹æ¾î·Â +%.0f"	"1 + SkillPoint / 3" ""
+	"ë°©ì–´ë ¥ +%.0f"	"1 + SkillPoint / 3" ""
 }
 
 MaxLevel				"15"

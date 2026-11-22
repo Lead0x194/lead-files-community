@@ -4,15 +4,15 @@ Type			MIDDLE
 Attribute		"WEAPON_LIMITATION"	"CAN_CHANGE_DIRECTION"
 NeedWeapon		"SWORD" "DAGGER" "DOUBLE_SWORD"
 
-Name			"Â÷·û»ì"
-Description		"ºü¸£°Ô È¸ÀüÇÏ¸ç Àü¹æÀÇ ÀûÀ» º¥´Ù"
+Name			"ì°¨ë¥œì‚´"
+Description		"ë¹ ë¥´ê²Œ íšŒì „í•˜ë©° ì „ë°©ì˜ ì ì„ ë²¤ë‹¤"
 
 IconFileName	"skill/assassin/charyun.sub"
 MotionIndex		6
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.1f¹è"	"(SkillPoint * 12 + 100) / 100"	""
+	"íŒŒê´´ë ¥ : %.1fë°°"	"(SkillPoint * 12 + 100) / 100"	""
 }
 
 MaxLevel			"25"

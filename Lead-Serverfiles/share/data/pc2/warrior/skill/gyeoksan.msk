@@ -4,20 +4,20 @@ Type			LOW
 Attribute		"WEAPON_LIMITATION" "CAN_CHANGE_DIRECTION"
 NeedWeapon		"SWORD" "TWO_HANDED"
 
-Name			"°İ»êÅ¸¿ì"
-Description		"Àü¹æÀÇ ÀûÀ» °ø°İÇÑ´Ù"
+Name			"ê²©ì‚°íƒ€ìš°"
+Description		"ì „ë°©ì˜ ì ì„ ê³µê²©í•œë‹¤"
 
 IconFileName		"skill/warrior/gyeoksan.sub"
 MotionIndex		2
 
 List ConditionData
 {
-	"¾ç¼Õ°ËÀÏ °æ¿ì »çÁ¤°Å¸® Áõ°¡"
+	"ì–‘ì†ê²€ì¼ ê²½ìš° ì‚¬ì •ê±°ë¦¬ ì¦ê°€"
 }
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.1f ¹è"	"(SkillPoint * 15 + 100) / 100" ""
+	"íŒŒê´´ë ¥ : %.1f ë°°"	"(SkillPoint * 15 + 100) / 100" ""
 }
 
 MaxLevel			"30"

@@ -5,21 +5,21 @@ Attribute		"WEAPON_LIMITATION" "NEED_TARGET"
 NeedWeapon		"SWORD"
 Range			2500
 
-Name			"°ËÈ¯°İ"
-Description		"°Ë±â¸¦ ´øÁ® Àû¿¡°Ô ÇÇÇØ¸¦ ÀÔÈù´Ù"
-Requirement		"¸¶·É" 5
+Name			"ê²€í™˜ê²©"
+Description		"ê²€ê¸°ë¥¼ ë˜ì ¸ ì ì—ê²Œ í”¼í•´ë¥¼ ì…íŒë‹¤"
+Requirement		"ë§ˆë ¹" 5
 
 IconFileName	"skill/sura/geomhwan.sub"
 MotionIndex		7
 
 List ConditionData
 {
-	"½ºÇÃ·¡½¬ °ø°İ"
+	"ìŠ¤í”Œë˜ì‰¬ ê³µê²©"
 }
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.0f"	"(INT * 2 + 30) * (10 + SkillPoint) / 10" ""
+	"íŒŒê´´ë ¥ : %.0f"	"(INT * 2 + 30) * (10 + SkillPoint) / 10" ""
 }
 
 MaxLevel			"30"

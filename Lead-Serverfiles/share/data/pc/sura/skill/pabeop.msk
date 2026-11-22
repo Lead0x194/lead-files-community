@@ -4,17 +4,17 @@ Type			MIDDLE
 Attribute		"NEED_TARGET"
 Range			2500
 
-Name			"ÆÄ¹ı¼ú"
-Description		"¸ğµç ÀÌ·Î¿î ¼ú¹ıÀ» ¹«È¿È­ ½ÃÅ²´Ù"
-Requirement		"ÀúÁÖ" 6
+Name			"íŒŒë²•ìˆ "
+Description		"ëª¨ë“  ì´ë¡œìš´ ìˆ ë²•ì„ ë¬´íš¨í™” ì‹œí‚¨ë‹¤"
+Requirement		"ì €ì£¼" 6
 
 IconFileName	"skill/sura/pabeop.sub"
 MotionIndex		10
 
 List AffectData
 {
-	"¼º°øÈ®·ü : ¾à %.0f%%" "15 * (10 + SkillPoint) / 10" ""
-	"Áö¼Ó½Ã°£ : 15ÃÊ" "" ""
+	"ì„±ê³µí™•ë¥  : ì•½ %.0f%%" "15 * (10 + SkillPoint) / 10" ""
+	"ì§€ì†ì‹œê°„ : 15ì´ˆ" "" ""
 }
 
 MaxLevel			"20"

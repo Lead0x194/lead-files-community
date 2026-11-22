@@ -3,15 +3,15 @@ ScriptType		SkillDataScript
 Type			HIGH
 Attribute		"NEED_TARGET" "MELEE_ATTACK"
 
-Name			"µ¶±¸¸§"
-Description		"ÀûÀÇ ÁÖÀ§¿¡ µ¶À¸·Î ±¸¸§À» ¸¸µç´Ù"
+Name			"ë…êµ¬ë¦„"
+Description		"ì ì˜ ì£¼ìœ„ì— ë…ìœ¼ë¡œ êµ¬ë¦„ì„ ë§Œë“ ë‹¤"
 
 IconFileName	"skill/assassin/poison_cloud.sub"
 MotionIndex		13
 
 List AffectData
 {
-	"%.1f ¹èÀÇ Å¸°İ"	"1 + SkillPoint / 4"	""
+	"%.1f ë°°ì˜ íƒ€ê²©"	"1 + SkillPoint / 4"	""
 }
 
 CoolTimeFormula		"40 - SkillPoint"

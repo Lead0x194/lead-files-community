@@ -3,16 +3,16 @@ ScriptType			SkillDataScript
 Type				MIDDLE
 Attribute			"NEED_TARGET" "FOR_ALLIANCE" "USE_FOR_ME"
 
-Name				"º­¶ô"
-Description			"ÇÏ´ÃÀÇ ÈûÀ» ºô¾î Àû¿¡°Ô º­¶ôÀ» ³»¸°´Ù"
-Requirement			"ºñÆÄºÎ" 5
+Name				"ë²¼ë½"
+Description			"í•˜ëŠ˜ì˜ í˜ì„ ë¹Œì–´ ì ì—ê²Œ ë²¼ë½ì„ ë‚´ë¦°ë‹¤"
+Requirement			"ë¹„íŒŒë¶€" 5
 
 IconFileName		"skill/shaman/byeorak.sub"
 MotionIndex			17
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.0f" "(INT * 2 + 20) * (10 + SkillPoint)" ""
+	"íŒŒê´´ë ¥ : %.0f" "(INT * 2 + 20) * (10 + SkillPoint)" ""
 }
 
 CoolTimeFormula		"24"

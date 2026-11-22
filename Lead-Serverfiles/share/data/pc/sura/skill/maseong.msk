@@ -1,11 +1,11 @@
 ScriptType		SkillDataScript
 
 Type			PASSIVE
-Name			"¸¶¼º¹æ¾î"
-Description		"¼ú¹ı¿¡ ´ëÇÑ ÀúÇ×·ÂÀ» °­È­ÇÑ´Ù"
+Name			"ë§ˆì„±ë°©ì–´"
+Description		"ìˆ ë²•ì— ëŒ€í•œ ì €í•­ë ¥ì„ ê°•í™”í•œë‹¤"
 
 IconFileName	"skill/sura/maseong.sub"
 List AffectData
 {
-	"¸¶¹ı ¹æ¾î·Â +%.1f"	"SkillPoint / 2"	""
+	"ë§ˆë²• ë°©ì–´ë ¥ +%.1f"	"SkillPoint / 2"	""
 }

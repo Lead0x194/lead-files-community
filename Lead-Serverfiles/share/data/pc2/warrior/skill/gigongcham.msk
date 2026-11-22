@@ -4,15 +4,15 @@ Type			LOW
 Attribute		"WEAPON_LIMITATION" "CAN_CHANGE_DIRECTION"
 NeedWeapon		"SWORD" "TWO_HANDED"
 
-Name			"±â°øÂü"
-Description		"Àü¹æÀÇ ÀûÀ» °ø°İÇÑ´Ù"
+Name			"ê¸°ê³µì°¸"
+Description		"ì „ë°©ì˜ ì ì„ ê³µê²©í•œë‹¤"
 
 IconFileName	"skill/warrior/gigongcham.sub"
 MotionIndex		4
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.1f ¹è" "(SkillPoint * 15 + 100) / 100" ""
+	"íŒŒê´´ë ¥ : %.1f ë°°" "(SkillPoint * 15 + 100) / 100" ""
 }
 
 MaxLevel			"30"

@@ -1,15 +1,15 @@
 ScriptType		SkillDataScript
 
 Type			LOW
-Name			"Àü½Å¹æ¾î"
-Description		"¹æ¾î¿¡¸¸ Àü³äÇÑ´Ù"
+Name			"ì „ì‹ ë°©ì–´"
+Description		"ë°©ì–´ì—ë§Œ ì „ë…í•œë‹¤"
 
 IconFileName		"skill/warrior/jeonsinbangeo.sub"
 MotionIndex		5
 
 List AffectData
 {
-	"¹æ¾î·Â : %.0f"	"1 + ( SkillPoint / 2 )" ""
+	"ë°©ì–´ë ¥ : %.0f"	"1 + ( SkillPoint / 2 )" ""
 }
 
 MaxLevel			"10"

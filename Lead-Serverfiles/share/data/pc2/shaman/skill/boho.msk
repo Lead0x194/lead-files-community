@@ -3,9 +3,9 @@ ScriptType			SkillDataScript
 Type				MIDDLE
 Attribute			"NEED_TARGET" "FOR_ALLIANCE" "USE_FOR_ME"
 
-Name				"º¸È£"
-Description			"µ½°íÀÚ ÇÏ´Â ÀÚÀÇ ³»¼º¿¡ ´ëÇÑ ÀúÇ×·ÂÀ» °­È­ÇÑ´Ù"
-Requirement			"È£½Å" 4
+Name				"ë³´í˜¸"
+Description			"ë•ê³ ì í•˜ëŠ” ìì˜ ë‚´ì„±ì— ëŒ€í•œ ì €í•­ë ¥ì„ ê°•í™”í•œë‹¤"
+Requirement			"í˜¸ì‹ " 4
 
 IconFileName		"skill/shaman/boho.sub"
 MotionIndex			14
@@ -13,8 +13,8 @@ MotionIndexForMe	13
 
 List AffectData
 {
-	"³»¼º ÀúÇ×·Â : +%.0f" "SkillPoint * (100 + INT) / 100" ""
-	"Áö¼Ó ½Ã°£ : 5ºĞ" "" ""
+	"ë‚´ì„± ì €í•­ë ¥ : +%.0f" "SkillPoint * (100 + INT) / 100" ""
+	"ì§€ì† ì‹œê°„ : 5ë¶„" "" ""
 }
 
 NeedSPFormula		"130"

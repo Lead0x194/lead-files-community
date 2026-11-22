@@ -3,8 +3,8 @@ ScriptType			SkillDataScript
 Type				MIDDLE
 Attribute			"NEED_TARGET" "ONLY_FOR_ALLIANCE" "CAN_USE_FOR_ME"
 
-Name				"±âÃµ´ë°ø"
-Description			"µ½°íÀÚ ÇÏ´Â ÀÚÀÇ ¼Õ¿¡ ÇÏ´ÃÀÇ ÀÇÁö¸¦ ºÒÅÂ¿î´Ù"
+Name				"ê¸°ì²œëŒ€ê³µ"
+Description			"ë•ê³ ì í•˜ëŠ” ìì˜ ì†ì— í•˜ëŠ˜ì˜ ì˜ì§€ë¥¼ ë¶ˆíƒœìš´ë‹¤"
 
 IconFileName		"skill/shaman/gicheon.sub"
 MotionIndex			12
@@ -12,7 +12,7 @@ MotionIndexForMe	11
 
 List AffectData
 {
-	"ÀÏ½ÃÀûÀ¸·Î °ø°İ·Â %.1f¹è" "(SkillPoint * 5 + 100) / 100" ""
+	"ì¼ì‹œì ìœ¼ë¡œ ê³µê²©ë ¥ %.1fë°°" "(SkillPoint * 5 + 100) / 100" ""
 }
 
 CoolTimeFormula		"3"

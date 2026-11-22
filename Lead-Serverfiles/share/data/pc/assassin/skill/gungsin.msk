@@ -5,21 +5,21 @@ Attribute		"WEAPON_LIMITATION" "NEED_TARGET"
 NeedWeapon		"SWORD" "DAGGER" "DOUBLE_SWORD"
 Range			800
 
-Name			"±Ã½ÅÅº¿µ"
-Description		"ºü¸£°Ô Àû¿¡°Ô Á¢±ÙÇÏ¿© Ä¡¸íÅ¸¸¦ ÀÔÈù´Ù"
+Name			"ê¶ì‹ íƒ„ì˜"
+Description		"ë¹ ë¥´ê²Œ ì ì—ê²Œ ì ‘ê·¼í•˜ì—¬ ì¹˜ëª…íƒ€ë¥¼ ì…íŒë‹¤"
 
 IconFileName	"skill/assassin/gungsin.sub"
 MotionIndex		0
 
 List ConditionData
 {
-	"´Ü°ËÀÏ¶§ ÆÄ±«·Â 50% Áõ°¡"
-	"3ÃÊ°£ ¸ÂÀ»¶§ µ¥¹ÌÁö 2¹è"
+	"ë‹¨ê²€ì¼ë•Œ íŒŒê´´ë ¥ 50% ì¦ê°€"
+	"3ì´ˆê°„ ë§ì„ë•Œ ë°ë¯¸ì§€ 2ë°°"
 }
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.1f ¹è"	"(SkillPoint * 30 + 200) / 100"	""
+	"íŒŒê´´ë ¥ : %.1f ë°°"	"(SkillPoint * 30 + 200) / 100"	""
 }
 
 MaxLevel			"25"

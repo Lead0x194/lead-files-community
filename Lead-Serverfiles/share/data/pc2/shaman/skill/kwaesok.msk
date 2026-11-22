@@ -3,8 +3,8 @@ ScriptType			SkillDataScript
 Type				LOW
 Attribute			"NEED_TARGET" "ONLY_FOR_ALLIANCE" "CAN_USE_FOR_ME"
 
-Name				"Äè¼Ó"
-Description			"¹Ù¶÷À» Å¸°í ´Ş¸°´Ù"
+Name				"ì¾Œì†"
+Description			"ë°”ëŒì„ íƒ€ê³  ë‹¬ë¦°ë‹¤"
 
 IconFileName		"skill/shaman/kwaesok.sub"
 MotionIndex			9
@@ -12,8 +12,8 @@ MotionIndexForMe	8
 
 List AffectData
 {
-	"ÀÌµ¿ ¼Óµµ : +%.0f" "5 + (SkillPoint / 2)" ""
-	"Áö¼Ó ½Ã°£ : 3ºĞ" "" ""
+	"ì´ë™ ì†ë„ : +%.0f" "5 + (SkillPoint / 2)" ""
+	"ì§€ì† ì‹œê°„ : 3ë¶„" "" ""
 }
 
 NeedSPFormula		"60"

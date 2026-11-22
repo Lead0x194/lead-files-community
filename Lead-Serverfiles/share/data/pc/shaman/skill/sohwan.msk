@@ -3,15 +3,15 @@ ScriptType			SkillDataScript
 Type				HIGH
 Attribute			"STANDING_SKILL"
 
-Name				"¼ÒÈ¯ºÎ"
-Description			"´©±º°¡¸¦ ÀÚ½ÅÀÇ ¾ÕÀ¸·Î ¼ÒÈ¯ÇÑ´Ù"
+Name				"ì†Œí™˜ë¶€"
+Description			"ëˆ„êµ°ê°€ë¥¼ ìì‹ ì˜ ì•ìœ¼ë¡œ ì†Œí™˜í•œë‹¤"
 
 IconFileName		"skill/shaman/sohwan.sub"
 MotionIndex			22
 
 List AffectData
 {
-	"¼º°ø È®·ü : %.1f%%" "20 * SkillPoint - 1" ""
+	"ì„±ê³µ í™•ë¥  : %.1f%%" "20 * SkillPoint - 1" ""
 }
 
 NeedSPFormula		"200"

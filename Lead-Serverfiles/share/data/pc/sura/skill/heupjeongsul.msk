@@ -1,11 +1,11 @@
 ScriptType		SkillDataScript
 
 Type			PASSIVE
-Name			"ÈíÁ¤¼ú"
-Description		"Á¤½Å·Â È¸º¹ ¼Óµµ Áõ°¡"
+Name			"í¡ì •ìˆ "
+Description		"ì •ì‹ ë ¥ íšŒë³µ ì†ë„ ì¦ê°€"
 
 IconFileName		"skill/warrior/tuji.sub"
 List AffectData
 {
-	"Á¤½Å·Â È¸º¹·® +%.0f%%"	"SkillPoint * 5"	""
+	"ì •ì‹ ë ¥ íšŒë³µëŸ‰ +%.0f%%"	"SkillPoint * 5"	""
 }

@@ -3,8 +3,8 @@ ScriptType		SkillDataScript
 Type			LOW
 Attribute		"NEED_TARGET"
 
-Name			"ºñÆÄºÎ"
-Description		"Àû¿¡°Ô ºÎÀûÀ» ´øÁ® »óÃ³ ÀÔÈù´Ù"
+Name			"ë¹„íŒŒë¶€"
+Description		"ì ì—ê²Œ ë¶€ì ì„ ë˜ì ¸ ìƒì²˜ ì…íŒë‹¤"
 Range			1200
 
 IconFileName	"skill/shaman/bipabu.sub"
@@ -12,7 +12,7 @@ MotionIndex		0
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.0f"	"(INT * 2 + 30) * (20 + SkillPoint) / 10"	""
+	"íŒŒê´´ë ¥ : %.0f"	"(INT * 2 + 30) * (20 + SkillPoint) / 10"	""
 }
 
 CoolTimeFormula			"3"

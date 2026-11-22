@@ -1,15 +1,15 @@
 ScriptType		SkillDataScript
 
 Type			HIGH
-Name			"³ú°Ëµµ·¡"
-Description		"¹ø°³ÀÇ ÈûÀ¸·Î ÁÖÀ§ÀÇ ¸ğµç ÀûÀ» ¼¶¸êÇÑ´Ù"
+Name			"ë‡Œê²€ë„ë˜"
+Description		"ë²ˆê°œì˜ í˜ìœ¼ë¡œ ì£¼ìœ„ì˜ ëª¨ë“  ì ì„ ì„¬ë©¸í•œë‹¤"
 
 IconFileName	"skill/warrior/noegeom.sub"
 MotionIndex		7
 
 List AffectData
 {
-	"µ¥¹ÌÁö : %.0f ~ %.0f"	"(AttackPower * (75 + 3 * SkillPoint)) / 100"	"(AttackPower * (75 + 7 * SkillPoint)) / 100"
+	"ë°ë¯¸ì§€ : %.0f ~ %.0f"	"(AttackPower * (75 + 3 * SkillPoint)) / 100"	"(AttackPower * (75 + 7 * SkillPoint)) / 100"
 }
 
 CoolTimeFormula		"60 - SkillPoint"

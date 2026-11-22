@@ -5,20 +5,20 @@ Attribute		"NEED_TARGET" "WEAPON_LIMITATION"
 NeedWeapon		"BOW"
 Range			2500
 
-Name			"±â±Ã"
-Description		"È­»ì¿¡ °­·ÂÇÑ ±â¸¦ ¸ğ¾Æ ½ğ´Ù"
+Name			"ê¸°ê¶"
+Description		"í™”ì‚´ì— ê°•ë ¥í•œ ê¸°ë¥¼ ëª¨ì•„ ìœë‹¤"
 
 IconFileName	"skill/assassin/gigung.sub"
 MotionIndex		1
 
 List ConditionData
 {
-	"½ºÇÃ·¡½¬ °ø°İ"
+	"ìŠ¤í”Œë˜ì‰¬ ê³µê²©"
 }
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.1f¹è"	"(SkillPoint * 5 + 100) / 100" ""
+	"íŒŒê´´ë ¥ : %.1fë°°"	"(SkillPoint * 5 + 100) / 100" ""
 }
 
 MaxLevel			"20"
