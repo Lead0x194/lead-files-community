@@ -87,7 +87,10 @@ void CPetActor::SetName(const char* name)
 		petName += "'s Pet";
 	}
 	else
+	{
+		petName += ' ';
 		petName += name;
+	}
 
 	if (true == IsSummoned())
 		m_pkChar->SetName(petName);
