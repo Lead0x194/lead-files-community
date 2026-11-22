@@ -115,7 +115,7 @@ class OptionDialog(ui.ScriptWindow):
 		self.__ClickRadioButton(self.cameraModeButtonList, constInfo.GET_CAMERA_MAX_DISTANCE_INDEX())
 
 		if musicInfo.fieldMusic==musicInfo.METIN2THEMA:
-			self.selectMusicFile.SetText(uiSelectMusic.DEFAULT_THEMA)
+			self.selectMusicFile.SetText(localeInfo.MUSIC_METIN2_DEFAULT_THEMA)
 		else:
 			self.selectMusicFile.SetText(musicInfo.fieldMusic[:MUSIC_FILENAME_MAX_LEN])
 
@@ -194,7 +194,7 @@ class OptionDialog(ui.ScriptWindow):
 		if musicInfo.fieldMusic != "":
 			snd.FadeOutMusic("BGM/"+ musicInfo.fieldMusic)
 
-		if fileName==uiSelectMusic.DEFAULT_THEMA:
+		if fileName==localeInfo.MUSIC_METIN2_DEFAULT_THEMA:
 			musicInfo.fieldMusic=musicInfo.METIN2THEMA
 		else:
 			musicInfo.fieldMusic=fileName
