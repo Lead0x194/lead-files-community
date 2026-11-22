@@ -812,7 +812,7 @@ void CPythonMiniMap::__LoadAtlasMarkInfo()
 
 	// LOCALE
 	char szAtlasMarkInfoFileName[64+1];
-	_snprintf_s(szAtlasMarkInfoFileName, sizeof(szAtlasMarkInfoFileName), _TRUNCATE, "%s/map/%s_point.txt", LocaleService_GetLocalePath(), rkMap.GetName().c_str());
+	_snprintf_s(szAtlasMarkInfoFileName, sizeof(szAtlasMarkInfoFileName), _TRUNCATE, "locale/common/map/%s_point.txt", rkMap.GetName().c_str());
 	// END_OF_LOCALE
 
 	CTokenVectorMap stTokenVectorMap;

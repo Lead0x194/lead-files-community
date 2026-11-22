@@ -676,14 +676,14 @@ bool LoadLocaleData(const char* localePath)
 	char szSkillDescFileName[256];
 	char szSkillTableFileName[256];
 	char szInsultList[256];
-	snprintf(szItemList,	sizeof(szItemList) ,	"%s/item_list.txt",	localePath);		
-	snprintf(szItemProto,	sizeof(szItemProto),	"%s/item_proto",	localePath);
+	snprintf(szItemList,	sizeof(szItemList) ,	"locale/common/item_list.txt");		
+	snprintf(szItemProto,	sizeof(szItemProto),	"locale/common/item_proto");
 	snprintf(szItemDesc,	sizeof(szItemDesc),	"%s/itemdesc.txt",	localePath);	
-	snprintf(szMobProto,	sizeof(szMobProto),	"%s/mob_proto",		localePath);	
+	snprintf(szMobProto,	sizeof(szMobProto),	"locale/common/mob_proto");	
 	snprintf(szItemNames,	sizeof(szItemNames),	"%s/item_names.txt",	localePath);
 	snprintf(szMobNames,	sizeof(szMobNames),	"%s/mob_names.txt",	localePath);
 	snprintf(szSkillDescFileName, sizeof(szSkillDescFileName),	"%s/SkillDesc.txt", localePath);
-	snprintf(szSkillTableFileName, sizeof(szSkillTableFileName),	"%s/SkillTable.txt", localePath);	
+	snprintf(szSkillTableFileName, sizeof(szSkillTableFileName),	"locale/common/skilltable.txt");	
 	snprintf(szInsultList,	sizeof(szInsultList),	"%s/insult.txt", localePath);
 
 	rkNPCMgr.Destroy();

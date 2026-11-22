@@ -351,7 +351,7 @@ bool CEterPackManager::RegisterPackWhenPackMaking(const char * c_szName, const c
 }
 
 
-bool CEterPackManager::RegisterPack(const char * c_szName, const char * c_szDirectory, const BYTE* c_pbIV)
+bool CEterPackManager::RegisterPack(const char * c_szName, const char * c_szDirectory, const BYTE* c_pbIV, bool bPrefixPath)
 {
 	CEterPack * pEterPack = NULL;
 	{
@@ -362,7 +362,7 @@ bool CEterPackManager::RegisterPack(const char * c_szName, const char * c_szDire
 			bool bReadOnly = true;
 
 			pEterPack = new CEterPack;
-			if (pEterPack->Create(m_FileDict, c_szName, c_szDirectory, bReadOnly, c_pbIV))
+			if (pEterPack->Create(m_FileDict, c_szName, c_szDirectory, bReadOnly, c_pbIV, bPrefixPath))
 			{
 				m_PackMap.insert(TEterPackMap::value_type(c_szName, pEterPack));
 			}

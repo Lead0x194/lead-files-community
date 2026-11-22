@@ -1,4 +1,5 @@
 import uiScriptLocale
+import app
 
 ROOT = "d:/ymir work/ui/game/"
 
@@ -47,31 +48,63 @@ window = {
 
 					"x" : 8,
 					"y" : 4,
+					"width"  : 40,
+					"height" : 40,
 
 					"delay" : 6,
 
 					"images" :
 					(
-						ROOT + "TaskBar/Rampage_01/00.sub",
-						ROOT + "TaskBar/Rampage_01/01.sub",
-						ROOT + "TaskBar/Rampage_01/02.sub",
-						ROOT + "TaskBar/Rampage_01/03.sub",
-						ROOT + "TaskBar/Rampage_01/04.sub",
-						ROOT + "TaskBar/Rampage_01/05.sub",
-						ROOT + "TaskBar/Rampage_01/06.sub",
-						ROOT + "TaskBar/Rampage_01/07.sub",
-						ROOT + "TaskBar/Rampage_01/08.sub",
-						ROOT + "TaskBar/Rampage_01/09.sub",
-						ROOT + "TaskBar/Rampage_01/11.sub",
-						ROOT + "TaskBar/Rampage_01/12.sub",
-						ROOT + "TaskBar/Rampage_01/13.sub",
-						ROOT + "TaskBar/Rampage_01/14.sub",
-						ROOT + "TaskBar/Rampage_01/15.sub",
-						ROOT + "TaskBar/Rampage_01/16.sub",
+						"locale/common/ui/Mall/00.sub",
+						"locale/common/ui/Mall/01.sub",
+						"locale/common/ui/Mall/02.sub",
+						"locale/common/ui/Mall/03.sub",
+						"locale/common/ui/Mall/04.sub",
+						"locale/common/ui/Mall/05.sub",
+						"locale/common/ui/Mall/06.sub",
+						"locale/common/ui/Mall/07.sub",
+						"locale/common/ui/Mall/08.sub",
+						"locale/common/ui/Mall/09.sub",
+						"locale/common/ui/Mall/11.sub",
+						"locale/common/ui/Mall/12.sub",
+						"locale/common/ui/Mall/13.sub",
+						"locale/common/ui/Mall/14.sub",
+						"locale/common/ui/Mall/15.sub",
+						"locale/common/ui/Mall/16.sub",
 					)
 				},
 				{
-					## Window for displaying the tooltip
+					"name" : "RampageGauge2",
+					"type" : "ani_image",
+
+					"x" : 8,
+					"y" : 4,
+					"width"  : 40,
+					"height" : 40,
+
+					"delay" : 6,
+
+					"images" :
+					(
+						"locale/common/ui/Mall/00.sub",
+						"locale/common/ui/Mall/01.sub",
+						"locale/common/ui/Mall/02.sub",
+						"locale/common/ui/Mall/03.sub",
+						"locale/common/ui/Mall/04.sub",
+						"locale/common/ui/Mall/05.sub",
+						"locale/common/ui/Mall/06.sub",
+						"locale/common/ui/Mall/07.sub",
+						"locale/common/ui/Mall/08.sub",
+						"locale/common/ui/Mall/09.sub",
+						"locale/common/ui/Mall/11.sub",
+						"locale/common/ui/Mall/12.sub",
+						"locale/common/ui/Mall/13.sub",
+						"locale/common/ui/Mall/14.sub",
+						"locale/common/ui/Mall/15.sub",
+						"locale/common/ui/Mall/16.sub",
+					)
+				},
+				{
 					"name" : "HPGauge_Board",
 					"type" : "window",
 
@@ -116,7 +149,6 @@ window = {
 					),
 				},
 				{
-					## Window for displaying the tooltip
 					"name" : "SPGauge_Board",
 					"type" : "window",
 
@@ -161,7 +193,6 @@ window = {
 					),
 				},
 				{
-					## Window for displaying the tooltip
 					"name" : "STGauge_Board",
 					"type" : "window",
 
@@ -340,13 +371,14 @@ window = {
 			"children" :
 			(
 				{
-					"name" : "ChatButton",
+					"name" : "ExpandButton",
 					"type" : "button",
 
 					"x" : 128,
 					"y" : 1,
-					"tooltip_text" : uiScriptLocale.TASKBAR_CHAT,
-
+					"tooltip_text" : uiScriptLocale.TASKBAR_EXPAND,
+					
+					
 					"default_image" : ROOT + "TaskBar/Chat_Button_01.sub",
 					"over_image" : ROOT + "TaskBar/Chat_Button_02.sub",
 					"down_image" : ROOT + "TaskBar/Chat_Button_03.sub",

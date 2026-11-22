@@ -44,7 +44,7 @@ class CEterPackManager : public CSingleton<CEterPackManager>
 		bool isExist(const char * c_szFileName);
 		bool isExistInPack(const char * c_szFileName);
 
-		bool RegisterPack(const char * c_szName, const char * c_szDirectory, const BYTE* c_pbIV = NULL);		
+		bool RegisterPack(const char * c_szName, const char * c_szDirectory, const BYTE* c_pbIV = NULL, bool bPrefixPath = false);		
 		void RegisterRootPack(const char * c_szName);
 		bool RegisterPackWhenPackMaking(const char * c_szName, const char * c_szDirectory, CEterPack* pPack);		
 

@@ -195,7 +195,7 @@ def LoadLocaleFile(srcFileName, localeDict):
 	
 all = ["locale","error"]
 
-FN_GM_MARK = "%s/effect/gm.mse"	% app.GetLocalePath()
+FN_GM_MARK = "locale/common/effect/gm.mse"
 LOCALE_FILE_NAME = "%s/locale_game.txt" % app.GetLocalePath()
 constInfo.IN_GAME_SHOP_ENABLE = 0
 

@@ -234,8 +234,10 @@ const std::string& CEterPack::GetPathName()
 	return m_stPathName;
 }
 
-bool CEterPack::Create(CEterFileDict& rkFileDict, const char * dbname, const char* pathName, bool bReadOnly, const BYTE* iv)
+bool CEterPack::Create(CEterFileDict& rkFileDict, const char * dbname, const char* pathName, bool bReadOnly, const BYTE* iv, bool bPrefixPath)
 {
+	m_bPrefixPath = bPrefixPath;
+
 	if (iv)
 	{
 		m_stIV_Panama.assign((const char*) iv, 32);
@@ -471,6 +473,17 @@ bool CEterPack::__BuildIndex(CEterFileDict& rkFileDict, bool bOverwrite)
 		{
 			if (index->real_data_size > index->data_size)
 				m_FragmentSize += index->real_data_size - index->data_size;
+
+			if (m_bPrefixPath)
+			{
+				std::string stFileName(m_stPathName);
+				stFileName.append(index->filename, strnlen(index->filename, FILENAME_MAX_LEN));
+				stl_lowers(stFileName);
+				std::replace(stFileName.begin(), stFileName.end(), '\\', '/');
+
+				strncpy_s(index->filename, sizeof(index->filename), stFileName.c_str(), _TRUNCATE);
+				index->filename_crc = GetCRC32(index->filename, strlen(index->filename));
+			}
 
 			m_DataPositionMap.insert(TDataPositionMap::value_type(index->filename_crc, index));
 
