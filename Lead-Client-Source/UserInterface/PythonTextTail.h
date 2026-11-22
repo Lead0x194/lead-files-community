@@ -16,6 +16,7 @@ class CPythonTextTail : public CSingleton<CPythonTextTail>
 
 			CGraphicTextInstance*			pTitleTextInstance;
 			CGraphicTextInstance*			pLevelTextInstance;
+			CGraphicImageInstance*			pLanguageImageInstance;
 
 
 			// Todo: Change all of this to VID.
@@ -65,6 +66,7 @@ class CPythonTextTail : public CSingleton<CPythonTextTail>
 		void ShowItemTextTail(DWORD VirtualID);
 
 		void RegisterCharacterTextTail(DWORD dwGuildID, DWORD dwVirtualID, const D3DXCOLOR & c_rColor, float fAddHeight=10.0f);
+		void SetCharacterLanguage(DWORD dwVirtualID, const char* c_szLanguage);
 		void RegisterItemTextTail(DWORD VirtualID, const char * c_szText, CGraphicObjectInstance * pOwner);
 		void RegisterChatTail(DWORD VirtualID, const char * c_szChat);
 		void RegisterInfoTail(DWORD VirtualID, const char * c_szChat);
@@ -100,6 +102,9 @@ class CPythonTextTail : public CSingleton<CPythonTextTail>
 
 	protected:
 		TTextTailMap				m_CharacterTextTailMap;
+		std::map<DWORD, std::string>	m_LanguageMap;
+
+		void						__SetLanguageImage(TTextTail* pTextTail, const std::string& c_rstLanguage);
 		TTextTailMap				m_ItemTextTailMap;
 		TChatTailMap				m_ChatTailMap;
 

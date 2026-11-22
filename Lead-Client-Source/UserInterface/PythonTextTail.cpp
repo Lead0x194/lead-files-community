@@ -9,6 +9,7 @@
 #include "PythonGuild.h"
 #include "Locale.h"
 #include "MarkManager.h"
+#include "PythonSystem.h"
 
 const D3DXCOLOR c_TextTail_Player_Color = D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f);
 const D3DXCOLOR c_TextTail_Monster_Color = D3DXCOLOR(1.0f, 0.0f, 0.0f, 1.0f);
@@ -294,6 +295,28 @@ void CPythonTextTail::ArrangeTextTail()
 			}
 		}
 		
+		CGraphicImageInstance* pLanguage = pTextTail->pLanguageImageInstance;
+		if (pLanguage)
+		{
+			const float c_fGap = IsDefaultRTL() ? 4.0f : 0.0f;
+			float fxLeft = pTextTail->x - (iNameWidth / 2);
+			int iPartWidth, iPartHeight;
+
+			if (pTextTail->pTitleTextInstance)
+			{
+				pTextTail->pTitleTextInstance->GetTextSize(&iPartWidth, &iPartHeight);
+				fxLeft -= iPartWidth + c_fGap;
+			}
+
+			if (pTextTail->pLevelTextInstance)
+			{
+				pTextTail->pLevelTextInstance->GetTextSize(&iPartWidth, &iPartHeight);
+				fxLeft -= iPartWidth + c_fGap;
+			}
+
+			pLanguage->SetPosition(floorf(fxLeft - pLanguage->GetWidth() - 3.0f), floorf(pTextTail->y - pLanguage->GetHeight() + 1.0f));
+		}
+
 		pTextTail->pTextInstance->SetColor(pTextTail->Color.r, pTextTail->Color.g, pTextTail->Color.b);
 		pTextTail->pTextInstance->SetPosition(pTextTail->x + fxAdd, pTextTail->y, pTextTail->z);
 		pTextTail->pTextInstance->Update();
@@ -338,6 +361,10 @@ void CPythonTextTail::Render()
 		if (pTextTail->pLevelTextInstance)
 		{
 			pTextTail->pLevelTextInstance->Render();
+		}
+		if (pTextTail->pLanguageImageInstance && CPythonSystem::Instance().IsShowLanguageFlag())
+		{
+			pTextTail->pLanguageImageInstance->Render();
 		}
 	}
 
@@ -505,6 +532,13 @@ void CPythonTextTail::RegisterCharacterTextTail(DWORD dwGuildID, DWORD dwVirtual
 	pTextTail->pGuildNameTextInstance=NULL;
 	pTextTail->pTitleTextInstance=NULL;
 	pTextTail->pLevelTextInstance=NULL;
+
+	if (pCharacterInstance->IsPC())
+	{
+		std::map<DWORD, std::string>::iterator itLanguage = m_LanguageMap.find(dwVirtualID);
+		if (m_LanguageMap.end() != itLanguage)
+			__SetLanguageImage(pTextTail, itLanguage->second);
+	}
 
 	if (0 != dwGuildID)
 	{
@@ -798,6 +832,7 @@ CPythonTextTail::TTextTail * CPythonTextTail::RegisterTextTail(DWORD dwVirtualID
 	pTextTail->pGuildNameTextInstance = NULL;
 	pTextTail->pTitleTextInstance = NULL;
 	pTextTail->pLevelTextInstance = NULL;
+	pTextTail->pLanguageImageInstance = NULL;
 	return pTextTail;
 }
 
@@ -832,6 +867,11 @@ void CPythonTextTail::DeleteTextTail(TTextTail * pTextTail)
 	{
 		CGraphicTextInstance::Delete(pTextTail->pLevelTextInstance);
 		pTextTail->pLevelTextInstance = NULL;
+	}
+	if (pTextTail->pLanguageImageInstance)
+	{
+		CGraphicImageInstance::Delete(pTextTail->pLanguageImageInstance);
+		pTextTail->pLanguageImageInstance = NULL;
 	}
 
 	m_TextTailPool.Free(pTextTail);	
@@ -915,6 +955,46 @@ void CPythonTextTail::EnablePKTitle(BOOL bFlag)
 	bPKTitleEnable = bFlag;
 }
 
+void CPythonTextTail::__SetLanguageImage(TTextTail* pTextTail, const std::string& c_rstLanguage)
+{
+	if (pTextTail->pLanguageImageInstance)
+	{
+		CGraphicImageInstance::Delete(pTextTail->pLanguageImageInstance);
+		pTextTail->pLanguageImageInstance = NULL;
+	}
+
+	if (c_rstLanguage.empty())
+		return;
+
+	char szFileName[64];
+	snprintf(szFileName, sizeof(szFileName), "locale/common/ui/flag/%s.tga", c_rstLanguage.c_str());
+	if (!CResourceManager::Instance().IsFileExist(szFileName))
+		return;
+
+	CGraphicImage* pImage = static_cast<CGraphicImage*>(CResourceManager::Instance().GetResourcePointer(szFileName));
+	if (!pImage)
+		return;
+
+	pTextTail->pLanguageImageInstance = CGraphicImageInstance::New();
+	pTextTail->pLanguageImageInstance->SetImagePointer(pImage);
+}
+
+void CPythonTextTail::SetCharacterLanguage(DWORD dwVirtualID, const char* c_szLanguage)
+{
+	if (!*c_szLanguage && m_LanguageMap.end() == m_LanguageMap.find(dwVirtualID))
+		return;
+
+	std::string& rstLanguage = m_LanguageMap[dwVirtualID];
+	if (rstLanguage == c_szLanguage)
+		return;
+
+	rstLanguage = c_szLanguage;
+
+	TTextTailMap::iterator itor = m_CharacterTextTailMap.find(dwVirtualID);
+	if (m_CharacterTextTailMap.end() != itor)
+		__SetLanguageImage(itor->second, rstLanguage);
+}
+
 void CPythonTextTail::AttachLevel(DWORD dwVID, const char * c_szText, const D3DXCOLOR & c_rColor)
 {
 	if (!bPKTitleEnable)
@@ -989,6 +1069,7 @@ void CPythonTextTail::Clear()
 	m_ItemTextTailMap.clear();
 	m_ItemTextTailList.clear();
 	m_ChatTailMap.clear();
+	m_LanguageMap.clear();
 
 	m_TextTailPool.Clear();
 }

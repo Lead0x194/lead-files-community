@@ -166,6 +166,9 @@ bool CPythonNetworkStream::RecvCharacterAdditionalInfo()
 		kNetActorData.m_dwHair=chrInfoPacket.awPart[CHR_EQUIPPART_HAIR];	
 		kNetActorData.m_dwMountVnum=chrInfoPacket.dwMountVnum;
 
+		chrInfoPacket.szLanguage[2] = '\0';
+		CPythonTextTail::Instance().SetCharacterLanguage(chrInfoPacket.dwVID, chrInfoPacket.szLanguage);
+
 		__RecvCharacterAppendPacket(&kNetActorData);
 	}
 	else
@@ -195,6 +198,10 @@ bool CPythonNetworkStream::RecvCharacterUpdatePacket()
 	kNetUpdateActorData.m_byPKMode=chrUpdatePacket.bPKMode;
 	kNetUpdateActorData.m_dwStateFlags=chrUpdatePacket.bStateFlag;
 	kNetUpdateActorData.m_dwMountVnum=chrUpdatePacket.dwMountVnum;
+
+	chrUpdatePacket.szLanguage[2] = '\0';
+	CPythonTextTail::Instance().SetCharacterLanguage(chrUpdatePacket.dwVID, chrUpdatePacket.szLanguage);
+
 	__RecvCharacterUpdatePacket(&kNetUpdateActorData);
 
 	return true;
