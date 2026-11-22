@@ -15,7 +15,7 @@ window = {
 	"y" : 0,
 
 	"width" : 305,
-	"height" : 280,
+	"height" : 306,
 
 	"children" :
 	(
@@ -27,7 +27,7 @@ window = {
 			"y" : 0,
 
 			"width" : 305,
-			"height" : 280,
+			"height" : 306,
 
 			"children" :
 			(
@@ -63,6 +63,45 @@ window = {
 					"y" : 212+2,
 
 					"text" : uiScriptLocale.OPTION_LANGUAGE,
+				},
+
+				## Language flag
+				{
+					"name" : "language_flag_name",
+					"type" : "text",
+
+					"x" : 40 + TEXT_TEMPORARY_X,
+					"y" : 238+2,
+
+					"text" : uiScriptLocale.OPTION_LANGUAGE_FLAG,
+				},
+
+				{
+					"name" : "language_flag_on",
+					"type" : "radio_button",
+
+					"x" : 110,
+					"y" : 238,
+
+					"text" : uiScriptLocale.OPTION_LANGUAGE_FLAG_ON,
+
+					"default_image" : ROOT_PATH + "Middle_Button_01.sub",
+					"over_image" : ROOT_PATH + "Middle_Button_02.sub",
+					"down_image" : ROOT_PATH + "Middle_Button_03.sub",
+				},
+
+				{
+					"name" : "language_flag_off",
+					"type" : "radio_button",
+
+					"x" : 110+70,
+					"y" : 238,
+
+					"text" : uiScriptLocale.OPTION_LANGUAGE_FLAG_OFF,
+
+					"default_image" : ROOT_PATH + "Middle_Button_01.sub",
+					"over_image" : ROOT_PATH + "Middle_Button_02.sub",
+					"down_image" : ROOT_PATH + "Middle_Button_03.sub",
 				},
 
 				## Music

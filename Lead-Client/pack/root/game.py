@@ -612,6 +612,7 @@ class GameWindow(ui.ScriptWindow):
 
 	# Start
 	def StartGame(self):
+		net.SendChatPacket("/language " + app.GetLocaleName())
 		self.RefreshInventory()
 		self.RefreshEquipment()
 		self.RefreshCharacter()
@@ -1453,6 +1454,7 @@ class GameWindow(ui.ScriptWindow):
 		localeInfo.REQUESTED_LANGUAGE = None
 
 		self.interface.Rebuild(lambda: localeInfo.SetLanguage(name))
+		net.SendChatPacket("/language " + app.GetLocaleName())
 		self.interface.SetMapName(getattr(self, "currentMapName", ""))
 		self.affectShower.RefreshDescription(uiAffectShower.AffectShower.AFFECT_DATA_DICT)
 
