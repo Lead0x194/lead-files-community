@@ -312,24 +312,6 @@ window = {
 				},
 
 
-				## Shadow
-#				{
-#					"name" : "shadow_mode",
-#					"type" : "text",
-
-#					"x" : 30,
-#					"y" : 210,
-
-#					"text" : uiScriptLocale.OPTION_SHADOW,
-#				},
-				
-#				{
-#					"name" : "shadow_bar",
-#					"type" : "sliderbar",
-
-#					"x" : 110,
-#					"y" : 210,
-#				},
 			),
 		},
 	),

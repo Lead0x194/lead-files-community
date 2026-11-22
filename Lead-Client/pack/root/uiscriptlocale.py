@@ -1,11 +1,5 @@
 import app
 
-AUTOBAN_QUIZ_ANSWER = "ANSWER"
-AUTOBAN_QUIZ_REFRESH = "REFRESH"
-AUTOBAN_QUIZ_REST_TIME = "REST_TIME"
-
-OPTION_SHADOW = "SHADOW"
-
 #CUBE_TITLE = "Cube Window"
 
 def LoadLocaleFile(srcFileName, localeDict):

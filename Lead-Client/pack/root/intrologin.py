@@ -127,7 +127,6 @@ class LoginWindow(ui.ScriptWindow):
 		
 		self.loadingImage = None
 
-		self.timeOutMsg = False #Fix
 		
 	def __del__(self):
 		net.ClearPhaseWindow(net.PHASE_WINDOW_LOGIN, self)
@@ -306,7 +305,6 @@ class LoginWindow(ui.ScriptWindow):
 
 	def OnEndCountDown(self):
 		self.isNowCountDown = False
-		self.timeOutMsg = False
 		self.OnConnectFailure()
 
 	def OnConnectFailure(self):
@@ -322,8 +320,6 @@ class LoginWindow(ui.ScriptWindow):
 
 		if app.loggined:
 			self.PopupNotifyMessage(localeInfo.LOGIN_CONNECT_FAILURE, self.__ExitGame)
-		elif self.timeOutMsg:
-			self.PopupNotifyMessage(localeInfo.LOGIN_FAILURE_TIMEOUT, self.SetPasswordEditLineFocus)
 		else:
 			self.PopupNotifyMessage(localeInfo.LOGIN_CONNECT_FAILURE, self.SetPasswordEditLineFocus)
 
