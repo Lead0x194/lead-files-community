@@ -34,6 +34,7 @@ class CItemManager : public CSingleton<CItemManager>
 		bool			LoadItemList(const char* c_szFileName);
 		bool			LoadItemTable(const char* c_szFileName);
 		bool			LoadItemNames(const char* c_szFileName);
+		const TItemMap&	GetItemMap() const { return m_ItemMap; }
 		CItemData *		MakeItemData(DWORD dwIndex);
 
 	protected:
