@@ -493,6 +493,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 	LocaleService_LoadConfig("metin2.cfg");
 	SetDefaultCodePage(LocaleService_GetCodePage());	
+	SetDefaultRTL(LocaleService_IsRTL());
 
 	bool bQuit = false;
 	int nArgc = 0;

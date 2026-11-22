@@ -31,7 +31,7 @@ GUILD_MARK_NOT_ENOUGH_LEVEL = "��巹�� 3�̻� ���� ����
 ERROR_MARK_UPLOAD_NEED_RECONNECT = "UploadMark: Reconnect to game"
 ERROR_MARK_CHECK_NEED_RECONNECT = "CheckMark: Reconnect to game"
 
-__IS_RTL		= "locale/ae" == app.GetLocalePath()
+__IS_RTL		= app.IsRTL()
 LOGIN_FAILURE_WRONG_SOCIALID = "ASDF"
 LOGIN_FAILURE_SHUTDOWN_TIME = "ASDF"
 

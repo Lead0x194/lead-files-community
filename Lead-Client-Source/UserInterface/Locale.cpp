@@ -14,6 +14,17 @@ std::string __SECURITY_KEY_STRING__ = LSS_SECURITY_KEY;
 char	MULTI_LOCALE_PATH[256]		= "locale/de";
 char	MULTI_LOCALE_NAME[256]		= "de";
 
+static const char* s_aszRTLLanguage[] = { "ae" };
+
+bool LocaleService_IsRTL()
+{
+	for (const char* c_szName : s_aszRTLLanguage)
+		if (!_stricmp(c_szName, MULTI_LOCALE_NAME))
+			return true;
+
+	return false;
+}
+
 void LocaleService_LoadConfig(const char* fileName)
 {
 	FILE* fp = NULL;

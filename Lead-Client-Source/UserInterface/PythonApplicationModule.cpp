@@ -270,6 +270,11 @@ PyObject* appGetLocaleName(PyObject* poSelf, PyObject* poArgs)
 	return Py_BuildValue("s", LocaleService_GetLocaleName());
 }
 
+PyObject* appIsRTL(PyObject* poSelf, PyObject* poArgs)
+{
+	return Py_BuildValue("i", LocaleService_IsRTL());
+}
+
 PyObject* appGetLocalePath(PyObject* poSelf, PyObject* poArgs)
 {
 	return Py_BuildValue("s", LocaleService_GetLocalePath());
@@ -1241,6 +1246,7 @@ void initapp()
 		{ "GetLocaleServiceName",		appGetLocaleServiceName,		METH_VARARGS },
 		{ "GetLocaleName",				appGetLocaleName,				METH_VARARGS },
 		{ "GetLocalePath",				appGetLocalePath,				METH_VARARGS },
+		{ "IsRTL",						appIsRTL,						METH_VARARGS },
 		{ "ForceSetLocale",				appForceSetLocale,				METH_VARARGS },
 		// END_OF_LOCALE
 

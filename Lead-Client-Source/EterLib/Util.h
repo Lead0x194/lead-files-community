@@ -104,6 +104,7 @@ extern const char* GetFontFaceFromCodePageNT(WORD codePage);
 extern const char* GetFontFaceFromCodePage9x(WORD codePage);
 extern DWORD GetDefaultCodePage();
 extern bool IsDefaultRTL();
+extern void SetDefaultRTL(bool isRTL);
 extern int GetDefaultCodePageCharLength(const char* c_szText);
 extern const char * GetDefaultFontFace();
 extern const char*	GetFontFaceFromCodePage(WORD codePage);

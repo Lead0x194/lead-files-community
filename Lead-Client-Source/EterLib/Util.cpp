@@ -141,6 +141,7 @@ D3DXCOLOR TokenToColor(CTokenVector & rVector)
 
 static std::string	gs_fontFace="";
 static DWORD		gs_codePage=0;
+static bool			gs_isRTL=false;
 
 int CALLBACK EnumFontFamExProc(CONST LOGFONT* plogFont, CONST TEXTMETRIC* /*textMetric*/, DWORD /*dwWord*/, LPARAM lParam)
 {
@@ -245,7 +246,12 @@ DWORD GetDefaultCodePage()
 
 bool IsDefaultRTL()
 {
-	return CP_ARABIC == gs_codePage;
+	return gs_isRTL;
+}
+
+void SetDefaultRTL(bool isRTL)
+{
+	gs_isRTL = isRTL;
 }
 
 int GetDefaultCodePageCharLength(const char* c_szText)
