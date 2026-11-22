@@ -2,6 +2,19 @@
 #include "TextBar.h"
 #include "../eterlib/Util.h"
 
+static std::wstring ToWideText(const char * c_szText)
+{
+	const int iTextLength = static_cast<int>(strlen(c_szText));
+	const int iWideLength = MultiByteToWideChar(GetDefaultCodePage(), 0, c_szText, iTextLength, NULL, 0);
+
+	std::wstring wstrText(iWideLength, L'\0');
+
+	if (iWideLength > 0)
+		MultiByteToWideChar(GetDefaultCodePage(), 0, c_szText, iTextLength, &wstrText[0], iWideLength);
+
+	return wstrText;
+}
+
 void CTextBar::__SetFont(int fontSize, bool isBold)
 {
 	int iCodePage = GetDefaultCodePage();
@@ -45,12 +58,16 @@ void CTextBar::SetTextColor(int r, int g, int b)
 void CTextBar::GetTextExtent(const char * c_szText, SIZE* p_size)
 {
 	HDC hDC = m_dib.GetDCHandle();
-	GetTextExtentPoint32(hDC, c_szText, static_cast<int>(strlen(c_szText)), p_size);
+	const std::wstring wstrText = ToWideText(c_szText);
+	GetTextExtentPoint32W(hDC, wstrText.c_str(), static_cast<int>(wstrText.length()), p_size);
 }
 
 void CTextBar::TextOut(int ix, int iy, const char * c_szText)
 {
-	m_dib.TextOut(ix, iy, c_szText);
+	const std::wstring wstrText = ToWideText(c_szText);
+	HDC hDC = m_dib.GetDCHandle();
+	::SetBkColor(hDC, 0);
+	::TextOutW(hDC, ix, iy, wstrText.c_str(), static_cast<int>(wstrText.length()));
 	Invalidate();
 }
 
