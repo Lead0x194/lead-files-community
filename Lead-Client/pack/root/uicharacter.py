@@ -133,6 +133,7 @@ class CharacterWindow(ui.ScriptWindow):
 
 	def Show(self):
 		self.__LoadWindow()
+		self.RefreshCharacter()
 
 		ui.ScriptWindow.Show(self)
 
