@@ -791,19 +791,19 @@ const SStoneDropInfo aStoneDrop[STONE_INFO_MAX_NUM] =
 
 const char * c_apszEmpireNames[EMPIRE_MAX_NUM] =
 {
-	"None",
-	"Shinsoo",
-	"Chunjo",
-	"Jinno"
+	"[LS;5318]",
+	"[LS;793]",
+	"[LS;794]",
+	"[LS;795]"
 };
 
 const char * c_apszPrivNames[MAX_PRIV_NUM] =
 {
 	"",
-	"ITEM_DROP",
-	"GOLD_DROP",
-	"GOLD_10_MAG",
-	"EXP",
+	"[LS;5319]",
+	"[LS;5320]",
+	"[LS;5321]",
+	"[LS;5322]",
 };
 
 const int aiPolymorphPowerByLevel[SKILL_MAX_LEVEL + 1] =

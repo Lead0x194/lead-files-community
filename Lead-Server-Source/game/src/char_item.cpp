@@ -5789,7 +5789,7 @@ bool CHARACTER::PickupItem(DWORD dwVID)
 				ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", LC_ITEM(item->GetVnum()));
 			else
 			{
-				owner->ChatPacket(CHAT_TYPE_INFO, "[LS;446;%s;%s]", GetName(), LC_ITEM(item->GetVnum()));
+				owner->ChatPacket(CHAT_TYPE_INFO, "[LS;446;%s;%s]", GetLocaleName(), LC_ITEM(item->GetVnum()));
 				ChatPacket(CHAT_TYPE_INFO, "[LS;449;%s;%s]", owner->GetName(), LC_ITEM(item->GetVnum()));
 			}
 

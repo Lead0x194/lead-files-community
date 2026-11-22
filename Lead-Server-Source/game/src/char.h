@@ -1123,6 +1123,7 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 
 	public:
 		void				SetLanguage(const char* c_szLanguage);
+		const char*			GetLocaleName() const;
 
 	protected:
 

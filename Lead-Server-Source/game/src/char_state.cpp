@@ -1151,7 +1151,7 @@ void CHARACTER::StateFlag()
 
 	pMap->RemoveFlag(idx);
 
-	snprintf(buf, sizeof(buf), "[LS;327;%s;%s]", pMap->GetGuild(idx)->GetName(), f.m_pkChrFind->GetName());
+	snprintf(buf, sizeof(buf), "[LS;327;%s;%s]", pMap->GetGuild(idx)->GetName(), f.m_pkChrFind->GetLocaleName());
 	pMap->Notice(buf);
 }
 
