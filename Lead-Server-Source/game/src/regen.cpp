@@ -687,9 +687,12 @@ bool regen_load(const char* filename, long lMapIndex, int base_x, int base_y)
 				}
 				else if (p->m_table.bType == CHAR_TYPE_NPC || p->m_table.bType == CHAR_TYPE_WARP || p->m_table.bType == CHAR_TYPE_GOTO)
 				{
+					char szName[16];
+					snprintf(szName, sizeof(szName), "#%u", regen->vnum);
+
 					SECTREE_MANAGER::instance().InsertNPCPosition(lMapIndex,
 							p->m_table.bType,
-							p->m_table.szName,
+							szName,
 							(regen->sx+regen->ex) / 2 - base_x,
 							(regen->sy+regen->ey) / 2 - base_y);
 				}

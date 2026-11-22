@@ -136,7 +136,7 @@ PyObject * miniMapGetInfo(PyObject * poSelf, PyObject * poArgs)
 // Atlas
 PyObject * miniMapLoadAtlas(PyObject * poSelf, PyObject * poArgs)
 {
-	if (!CPythonMiniMap::Instance().LoadAtlas())
+	if (!CPythonMiniMap::Instance().LoadAtlas(true))
 		TraceError("CPythonMiniMap::Instance().LoadAtlas() Failed");
 	return Py_BuildNone();
 }
