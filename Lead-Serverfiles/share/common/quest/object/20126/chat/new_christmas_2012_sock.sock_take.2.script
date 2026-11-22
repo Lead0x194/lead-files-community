@@ -1,15 +1,15 @@
 if get_time ( ) < pc . getqf ( "last_sock_cooldown_time" ) then 
 say_title ( mob_name ( 20126 ) ) 
-say ( gameforge . new_christmas_sock . _100_say ) 
+say ( "[LC;5629]" ) 
 else 
 local n = pc . count_item ( 50010 ) 
 if n < 5 then 
 say_title ( mob_name ( 20126 ) ) 
-say ( gameforge . new_christmas_sock . _060_say ) 
+say ( "[LC;5625]" ) 
 wait ( ) 
 else 
 say_title ( mob_name ( 20126 ) ) 
-say ( gameforge . new_christmas_sock . _070_say ) 
+say ( "[LC;5626]" ) 
 wait ( ) 
 pc . remove_item ( 50010 , 5 ) 
 say_title ( locale . reward ) 

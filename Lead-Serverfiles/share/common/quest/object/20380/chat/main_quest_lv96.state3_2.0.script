@@ -1,7 +1,7 @@
 pc . remove_item ( 31039 , 1 ) 
 if number ( 1 , 100 ) <= 70 then 
 say_title ( mob_name ( 20380 ) ) 
-say ( gameforge . main_quest_lv96 . _370_say ) 
+say ( "[LC;5277]" ) 
 say ( "" ) 
 local checked = pc . getqf ( "checked_pocket" ) 
 pc . setqf ( "checked_pocket" , checked + 1 ) 
@@ -14,22 +14,22 @@ if pc . getqf ( "checked_pocket" ) >= 100 then
 pc . remove_item ( 31039 , pc . count_item ( 31039 ) ) 
 wait ( ) 
 say_title ( mob_name ( 20380 ) ) 
-say ( gameforge . main_quest_lv96 . _380_say ) 
+say ( "[LC;5278]" ) 
 say ( "" ) 
 wait ( ) 
 say_title ( locale . reward ) 
-say_reward ( string . format ( gameforge . main_quest_lv60 . _190_sayReward , 4.29836e+07 ) ) 
-say_reward ( string . format ( gameforge . main_quest_lv60 . _210_sayReward , item_name ( 30009 ) , 2 , locale . count_postfix ) ) 
+say_reward ( string . format ( "[LC;4537;%d]" , 4.29836e+07 ) ) 
+say_reward ( string . format ( "[LC;4540;%s]" , item_name ( 30009 ) , 2 , locale . count_postfix ) ) 
 say ( "" ) 
 pc . give_exp2 ( 4.29836e+07 ) 
 pc . give_item2 ( 30009 , 2 ) 
 set_state ( "state4_1" ) 
 else 
-say ( string . format ( gameforge . main_quest_lv96 . _390_say , remain ) ) 
+say ( string . format ( "[LC;5279;%d]" , remain ) ) 
 say ( "" ) 
 end 
 else 
 say_title ( mob_name ( 20380 ) ) 
-say ( gameforge . main_quest_lv96 . _630_say ) 
+say ( "[LC;5301]" ) 
 say ( "" ) 
 end 

@@ -1,43 +1,43 @@
 if pc . getqf ( "heavens_cave_keyquest_Repeat" ) == 0 then 
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
+say_title ( "[LC;1507]" ) 
 if pc . get_sex ( ) == 0 then 
-say ( gameforge . heavens_cave_keyquest . _030_say ) 
+say ( "[LC;1508]" ) 
 else 
-say ( gameforge . heavens_cave_keyquest . _040_say ) 
+say ( "[LC;1509]" ) 
 end 
 wait ( ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _050_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1510]" ) 
 wait ( ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _060_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1511]" ) 
 wait ( ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _070_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1512]" ) 
 say ( "" ) 
-say ( gameforge . heavens_cave_keyquest . _080_say ) 
-say_reward ( gameforge . heavens_cave_keyquest . _090_say_reward ) 
+say ( "[LC;1513]" ) 
+say_reward ( "[LC;1514]" ) 
 set_state ( "initialize" ) 
 else 
 if get_time ( ) - pc . getqf ( "overall_cooldown_timestamp" ) >= pc . getqf ( "heavens_cave_keyquest_CooldownTime" ) then 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _100_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1515]" ) 
 set_state ( "initialize" ) 
 else 
 s = pc . getqf ( "heavens_cave_keyquest_CooldownTime" ) - ( get_time ( ) - pc . getqf ( "overall_cooldown_timestamp" ) ) 
 h = math . floor ( s / 3600 ) 
 m = math . ceil ( ( ( s / 3600 ) - h ) * 60 ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _110_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1516]" ) 
 say ( "" ) 
 if s >= 7200 then 
-say ( string . format ( gameforge . heavens_cave_keyquest . _120_say , h ) ) 
+say ( string . format ( "[LC;1517;%s]" , h ) ) 
 else 
 if s >= 3660 then 
-say ( string . format ( gameforge . heavens_cave_keyquest . _130_say , m ) ) 
+say ( string . format ( "[LC;1518;%s]" , m ) ) 
 else 
-say ( string . format ( gameforge . heavens_cave_keyquest . _140_say , m ) ) 
+say ( string . format ( "[LC;1519;%s]" , m ) ) 
 end 
 end 
 end 

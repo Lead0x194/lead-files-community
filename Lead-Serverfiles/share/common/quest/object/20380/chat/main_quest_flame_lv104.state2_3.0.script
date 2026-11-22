@@ -5,25 +5,25 @@ item_count = item_count + 1
 pc . setqf ( "item_count_1" , item_count ) 
 if item_count < 5 then 
 say_title ( mob_name ( 20380 ) ) 
-say ( string . format ( gameforge . main_quest_flame_lv104 . _300_say , 5 - item_count ) ) 
+say ( string . format ( "[LC;3961;%d]" , 5 - item_count ) ) 
 else 
 pc . remove_item ( 31082 , pc . count_item ( 31082 ) ) 
 say_title ( mob_name ( 20380 ) ) 
-say ( gameforge . main_quest_flame_lv104 . _310_say ) 
+say ( "[LC;3962]" ) 
 wait ( ) 
-say_reward ( string . format ( gameforge . main_quest_lv60 . _190_sayReward , 5.7583e+07 ) ) 
+say_reward ( string . format ( "[LC;4537;%d]" , 5.7583e+07 ) ) 
 pc . give_exp2 ( 5.7583e+07 ) 
-say_reward ( string . format ( gameforge . main_quest_lv60 . _200_sayReward , 170000 ) ) 
+say_reward ( string . format ( "[LC;4538;%d]" , 170000 ) ) 
 pc . change_money ( 170000 ) 
-say_reward ( string . format ( gameforge . main_quest_lv60 . _210_sayReward , item_name ( 72723 ) , 1 ) ) 
+say_reward ( string . format ( "[LC;4540;%s]" , item_name ( 72723 ) , 1 ) ) 
 pc . give_item2 ( 72723 , 1 ) 
-say_reward ( string . format ( gameforge . main_quest_lv60 . _210_sayReward , item_name ( 70050 ) , 1 ) ) 
+say_reward ( string . format ( "[LC;4540;%s]" , item_name ( 70050 ) , 1 ) ) 
 pc . give_item2 ( 70050 , 1 ) 
 say ( ) 
 set_state ( "state3_1" ) 
 end 
 else 
 say_title ( mob_name ( 20380 ) ) 
-say ( gameforge . main_quest_flame_lv104 . _320_say ) 
+say ( "[LC;3963]" ) 
 end 
 main_quest_flame_lv104 . item_count_state2_3 ( ) 

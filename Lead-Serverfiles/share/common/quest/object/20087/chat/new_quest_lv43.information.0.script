@@ -1,27 +1,27 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv43 . _021_say_title ) 
-say ( gameforge . new_quest_lv43 . _020_say ) 
-say ( gameforge . new_quest_lv43 . _022_say ) 
+say_title ( "[LC;5931]" ) 
+say ( "[LC;5930]" ) 
+say ( "[LC;5932]" ) 
 wait ( ) 
-say_title ( gameforge . new_quest_lv43 . _021_say_title ) 
-say ( gameforge . new_quest_lv43 . _023_say_reward ) 
+say_title ( "[LC;5931]" ) 
+say ( "[LC;5933]" ) 
 q . done ( ) 
-local doquest = select ( gameforge . new_quest_lv43 . _024_select , gameforge . subquest_12 . _50_select , gameforge . new_quest_lv75 . _290_2_select ) 
+local doquest = select ( "[LC;5934]" , "[LC;7304]" , "[LC;6200]" ) 
 if doquest == 1 then 
 set_state ( "ask_chaegirab" ) 
 elseif doquest == 3 then 
-say ( gameforge . subquest_06 . _60_say ) 
-local abortquest = select ( gameforge . subquest_06 . _70_select , gameforge . subquest_06 . _80_select ) 
+say ( "[LC;7170]" ) 
+local abortquest = select ( "[LC;7173]" , "[LC;7174]" ) 
 if abortquest == 1 then 
 pc . setqf ( "collect_count_1" , 0 ) 
 set_state ( "__GIVEUP__" ) 
 else 
-say_title ( gameforge . new_quest_lv43 . _021_say_title ) 
-say ( gameforge . subquest_11 . _80_say ) 
+say_title ( "[LC;5931]" ) 
+say ( "[LC;7288]" ) 
 return 
 end 
 else 
-say_title ( gameforge . new_quest_lv43 . _021_say_title ) 
-say ( gameforge . subquest_11 . _80_say ) 
+say_title ( "[LC;5931]" ) 
+say ( "[LC;7288]" ) 
 return 
 end 

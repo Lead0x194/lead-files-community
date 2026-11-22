@@ -1,41 +1,41 @@
 local kill_count = pc . getqf ( "mob_kill1_count" ) 
 if kill_count < 30 then 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( gameforge . harvest_festival . _580_say ) 
+say_title ( "[LC;1442]" ) 
+say ( "[LC;1474]" ) 
 else 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( gameforge . harvest_festival . _590_say ) 
+say_title ( "[LC;1442]" ) 
+say ( "[LC;1475]" ) 
 local mob2_name = "" 
 if pc . get_level ( ) >= 91 then 
 pc . setqf ( "mob2_info" , 8 ) 
-mob2_name = gameforge . harvest_festival . _610_say elseif pc . get_level ( ) >= 81 then 
+mob2_name = "[LC;1477]" elseif pc . get_level ( ) >= 81 then 
 pc . setqf ( "mob2_info" , 7 ) 
-mob2_name = gameforge . harvest_festival . _600_say elseif pc . get_level ( ) >= 71 then 
+mob2_name = "[LC;1476]" elseif pc . get_level ( ) >= 71 then 
 pc . setqf ( "mob2_info" , 6 ) 
-mob2_name = gameforge . harvest_festival . _620_say elseif pc . get_level ( ) >= 61 then 
+mob2_name = "[LC;1478]" elseif pc . get_level ( ) >= 61 then 
 pc . setqf ( "mob2_info" , 5 ) 
-mob2_name = gameforge . harvest_festival . _630_say elseif pc . get_level ( ) >= 51 then 
+mob2_name = "[LC;1479]" elseif pc . get_level ( ) >= 51 then 
 pc . setqf ( "mob2_info" , 4 ) 
-mob2_name = gameforge . harvest_festival . _640_say elseif pc . get_level ( ) >= 41 then 
+mob2_name = "[LC;1480]" elseif pc . get_level ( ) >= 41 then 
 pc . setqf ( "mob2_info" , 3 ) 
-mob2_name = gameforge . harvest_festival . _650_say elseif pc . get_level ( ) >= 31 then 
+mob2_name = "[LC;1481]" elseif pc . get_level ( ) >= 31 then 
 pc . setqf ( "mob2_info" , 2 ) 
-mob2_name = gameforge . harvest_festival . _660_say elseif pc . get_level ( ) >= 20 then 
+mob2_name = "[LC;1482]" elseif pc . get_level ( ) >= 20 then 
 pc . setqf ( "mob2_info" , 1 ) 
-mob2_name = gameforge . harvest_festival . _670_say elseif pc . get_level ( ) >= 10 then 
+mob2_name = "[LC;1483]" elseif pc . get_level ( ) >= 10 then 
 pc . setqf ( "mob2_info" , 9 ) 
-mob2_name = gameforge . harvest_festival . _810_say else 
+mob2_name = "[LC;1499]" else 
 pc . setqf ( "mob2_info" , 10 ) 
-mob2_name = gameforge . harvest_festival . _820_say end 
-say ( string . format ( gameforge . harvest_festival . _680_say , mob2_name ) ) 
-local sub_set = select ( gameforge . harvest_festival . _690_select , gameforge . harvest_festival . _700_select ) 
+mob2_name = "[LC;1500]" end 
+say ( string . format ( "[LC;1484;%s]" , mob2_name ) ) 
+local sub_set = select ( "[LC;1485]" , "[LC;1486]" ) 
 if sub_set == 2 then 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( gameforge . harvest_festival . _710_say ) 
+say_title ( "[LC;1442]" ) 
+say ( "[LC;1487]" ) 
 set_state ( "information" ) 
 return 
 end 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( string . format ( gameforge . harvest_festival . _715_say , mob2_name ) ) 
+say_title ( "[LC;1442]" ) 
+say ( string . format ( "[LC;1488;%s]" , mob2_name ) ) 
 set_state ( "mob_kill2" ) 
 end 

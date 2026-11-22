@@ -1,3 +1,3 @@
-if game . get_event_flag ( "harvest_festival" ) > 0 then say_title ( gameforge . harvest_festival . _020_sayTitle ) 
-say ( gameforge . harvest_festival . _550_select ) 
+if game . get_event_flag ( "harvest_festival" ) > 0 then say_title ( "[LC;1415]" ) 
+say ( "[LC;1471]" ) 
  return end 

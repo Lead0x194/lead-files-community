@@ -1,17 +1,17 @@
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
+say_title ( "[LC;1586]" ) 
 local s = number ( 1 , 7 ) 
 if 1 >= s then 
-say ( gameforge . horse_guard . _20_say ) 
+say ( "[LC;1563]" ) 
 elseif 2 >= s then 
-say ( gameforge . horse_guard . _30_say ) 
+say ( "[LC;1564]" ) 
 elseif 3 >= s then 
-say ( gameforge . horse_guard . _40_say ) 
+say ( "[LC;1565]" ) 
 elseif 4 >= s then 
-say ( gameforge . horse_guard . _50_say ) 
+say ( "[LC;1566]" ) 
 elseif 5 >= s then 
-say ( gameforge . horse_guard . _60_say ) 
+say ( "[LC;1567]" ) 
 elseif 6 >= s then 
-say ( gameforge . horse_guard . _70_say ) 
+say ( "[LC;1568]" ) 
 elseif 7 >= s then 
-say ( gameforge . horse_guard . _80_say ) 
+say ( "[LC;1569]" ) 
 end 

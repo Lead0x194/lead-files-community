@@ -1,9 +1,9 @@
 if get_global_time ( ) - pc . getqf ( "last_reindeer_give_time" ) < 86400 then 
 say_title ( mob_name ( 20126 ) ) 
-say ( gameforge . new_christmas_sock . _090_say ) 
+say ( "[LC;5628]" ) 
 else 
 say_title ( mob_name ( 20126 ) ) 
-say ( gameforge . new_christmas_sock . _040_say ) 
+say ( "[LC;5623]" ) 
 pc . give_item2_select ( 53007 , 1 ) 
 item . set_socket ( 0 , get_global_time ( ) + 7200 ) 
 pc . setqf ( "last_reindeer_give_time" , get_global_time ( ) ) 

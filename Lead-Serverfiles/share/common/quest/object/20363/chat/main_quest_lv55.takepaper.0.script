@@ -1,5 +1,5 @@
 target . delete ( "__TARGET1__" ) 
-say_title ( gameforge . main_quest_lv55 . _280_npcChat ) 
-say ( gameforge . main_quest_lv55 . _290_say ) 
+say_title ( "[LC;4479]" ) 
+say ( "[LC;4480]" ) 
 pc . give_item2 ( 30150 ) 
 set_state ( "gototeacher" ) 

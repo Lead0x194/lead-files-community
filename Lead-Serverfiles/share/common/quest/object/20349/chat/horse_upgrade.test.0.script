@@ -1,22 +1,22 @@
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade . _130_say ) 
-local b = select ( gameforge . locale . levelup . prev_quest_go , gameforge . locale . cancel ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1693]" ) 
+local b = select ( "[LC;2105]" , "[LC;1891]" ) 
 if 1 == b then 
 elseif 2 == b then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _170_say ) 
-local b = select ( gameforge . horse_upgrade2 . _180_select , gameforge . horse_upgrade2 . _190_select ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1731]" ) 
+local b = select ( "[LC;1732]" , "[LC;1733]" ) 
 if 1 == b then 
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _200_say ) 
+say_title ( "[LC;1586]" ) 
+say ( "[LC;1734]" ) 
 setstate ( "start" ) 
 q . done ( ) 
 elseif 2 == b then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade . _140_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1694]" ) 
 else 
-say ( string . format ( gameforge . horse_upgrade2 . _220_say , b ) ) 
+say ( string . format ( "[LC;1737;%s]" , b ) ) 
 end 
 else 
-say ( string . format ( gameforge . horse_upgrade2 . _220_say , b ) ) 
+say ( string . format ( "[LC;1737;%s]" , b ) ) 
 end 

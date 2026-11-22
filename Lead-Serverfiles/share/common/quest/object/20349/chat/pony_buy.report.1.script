@@ -1,5 +1,5 @@
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_buy . _200_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6560]" ) 
 if is_test_server ( ) then 
 pc . setqf ( "make_time" , get_time ( ) + 10 ) 
 else 

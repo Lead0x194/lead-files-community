@@ -1,13 +1,13 @@
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_exchange_ticket . _30_say ) 
-local b = select ( gameforge . horse_exchange_ticket . _40_select , gameforge . arena_manager . _200_tableInsert ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1559]" ) 
+local b = select ( "[LC;1560]" , "[LC;13]" ) 
 if 1 == b then 
 if pc . countitem ( "50005" ) >= 1 then 
 pc . removeitem ( "50005" , 1 ) 
 pc . give_item2 ( "50050" , 1 ) 
-say ( gameforge . horse_exchange_ticket . _50_say ) 
+say ( "[LC;1561]" ) 
 end 
 elseif 2 == b then 
 else 
-say ( string . format ( gameforge . buy_fishrod . _80_say , b ) ) 
+say ( string . format ( "[LC;53;%s]" , b ) ) 
 end 

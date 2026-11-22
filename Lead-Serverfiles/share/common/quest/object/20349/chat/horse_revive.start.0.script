@@ -1,9 +1,9 @@
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_revive . _20_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1646]" ) 
 if pc . countitem ( "50058" ) >= 1 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_revive . _30_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1647]" ) 
 elseif pc . countitem ( "50057" ) >= 1 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_revive . _40_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1648]" ) 
 end 

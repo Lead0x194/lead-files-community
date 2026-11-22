@@ -1,12 +1,12 @@
 if get_global_time ( ) - pc . getqf ( "Reitzeit" ) < 3600 then 
-say ( gameforge . horse_ride . _15_say ) 
+say ( "[LC;1655]" ) 
 else 
 local msg = 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_ride . _20_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1656]" ) 
 local horse_ticket_vnum = 50083 
 say ( msg ) 
-local s = select ( gameforge . locale . quiz_5_3_choice , gameforge . horse_ride . _30_select ) 
+local s = select ( "[LC;3457]" , "[LC;1657]" ) 
 if s == 1 then 
 if pc . countitem ( horse_ticket_vnum ) > 0 then 
 if true == horse . is_summon ( ) then 
@@ -16,7 +16,7 @@ pc . removeitem ( horse_ticket_vnum , 1 )
 pc . mount ( 20030 , 600 ) 
 pc . setqf ( "Reitzeit" , get_global_time ( ) ) 
 else 
-say ( gameforge . horse_ride . _40_say ) 
+say ( "[LC;1658]" ) 
 end 
 end 
 end 

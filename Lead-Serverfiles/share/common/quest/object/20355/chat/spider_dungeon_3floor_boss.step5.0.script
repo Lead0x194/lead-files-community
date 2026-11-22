@@ -1,5 +1,5 @@
 target . delete ( "__TARGET__" ) 
 say_title ( mob_name ( 20355 ) ) 
-say ( gameforge . spider_dungeon_3floor_boss . _200_say ) 
+say ( "[LC;6934]" ) 
 say ( "" ) 
 set_state ( "step6" ) pc . give_item2 ( 76019 ) 

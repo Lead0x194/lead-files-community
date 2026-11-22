@@ -1,14 +1,14 @@
 local foundskel = pc . getqf ( "suraskel0" ) + pc . getqf ( "suraskel1" ) + pc . getqf ( "suraskel2" ) + pc . getqf ( "suraskel3" ) + pc . getqf ( "suraskel4" ) 
 if pc . count_item ( diarypage ) == 0 and foundskel == 5 then 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _090_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6157]" ) 
 elseif pc . count_item ( diarypage ) > 0 and foundskel == 5 then 
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _100_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6158]" ) 
 wait ( ) 
-say ( gameforge . new_quest_lv75 . _105_say ) 
-say ( gameforge . new_quest_lv75 . _109_say ) 
+say ( "[LC;6159]" ) 
+say ( "[LC;6160]" ) 
 local randomvalue = math . random ( 0 , 4 ) 
 if randomvalue == 0 then 
 pc . setqf ( "suraskel0" , 0 ) 
@@ -24,10 +24,10 @@ end
 set_state ( "moreinfo" ) 
 elseif pc . count_item ( diarypage ) == 0 and foundskel < 5 then 
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _110_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6161]" ) 
 wait ( ) 
-say ( gameforge . new_quest_lv75 . _115_say ) 
+say ( "[LC;6162]" ) 
 if foundskel > 1 then 
 local counter1 = 0 
 repeat 
@@ -66,7 +66,7 @@ end
 set_state ( "moreinfo" ) 
 else 
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _120_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6163]" ) 
 set_state ( "moreinfo" ) 
 end 

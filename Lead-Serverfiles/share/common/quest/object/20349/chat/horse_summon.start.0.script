@@ -1,17 +1,17 @@
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_summon . _20_say ) 
-local b = select ( gameforge . find_squareguard . _50_select , gameforge . find_brother_article . _100_select ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1671]" ) 
+local b = select ( "[LC;1018]" , "[LC;931]" ) 
 if 1 == b then 
 if pc . money >= 400000 then 
 pc . changemoney ( - 400000 ) 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_summon . _30_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1682]" ) 
 pc . give_item2 ( "50051" , 1 ) 
 else 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_summon . _40_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1683]" ) 
 end 
 elseif 2 == b then 
 else 
-say ( string . format ( gameforge . find_squareguard . _70_say , b ) ) 
+say ( string . format ( "[LC;1020;%s]" , b ) ) 
 end 

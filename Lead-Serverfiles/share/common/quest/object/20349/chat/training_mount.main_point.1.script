@@ -1,31 +1,31 @@
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _24_say ) 
+say ( "[LC;8446]" ) 
 wait ( ) 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _25_say ) 
+say ( "[LC;8447]" ) 
 wait ( ) 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _26_say ) 
+say ( "[LC;8448]" ) 
 local s = select ( locale . yes , locale . no ) 
 if 2 == s then 
 return 
 end 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _27_say ) 
+say ( "[LC;8449]" ) 
 wait ( ) 
 if pc . count_item ( 50068 ) > 0 then 
 if horse . get_level ( ) > 1 then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _28_say ) 
+say ( "[LC;8450]" ) 
 wait ( ) 
-say ( gameforge . training_mount . _29_say ) 
+say ( "[LC;8451]" ) 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _30_say ) 
+say ( "[LC;8452]" ) 
 return 
 end 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _31_say ) 
+say ( "[LC;8453]" ) 
 return 
 end 

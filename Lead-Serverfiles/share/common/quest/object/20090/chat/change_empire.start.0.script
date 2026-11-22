@@ -1,11 +1,11 @@
 local count = pc . get_change_empire_count ( ) ; 
 if count >= 1 then 
-say ( gameforge . change_empire . _20_say ) 
+say ( "[LC;68]" ) 
 return 
 end 
-say_title ( gameforge . change_empire . _10_npcChat ) 
-say ( gameforge . change_empire . _30_say ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . cancel ) 
+say_title ( "[LC;56]" ) 
+say ( "[LC;76]" ) 
+local s = select ( "[LC;2059]" , "[LC;1891]" ) 
 if s == 1 then 
 change_empire . move_pc ( ) 
 end 

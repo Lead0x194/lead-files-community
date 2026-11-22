@@ -1,25 +1,25 @@
 if horse . get_level ( ) == 20 then 
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
-say ( gameforge . horse_levelup . _250_say ) 
+say_title ( "[LC;1586]" ) 
+say ( "[LC;1587]" ) 
 elseif pc . countitem ( "50050" ) < 1 then 
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
-say ( gameforge . horse_levelup . _260_say ) 
+say_title ( "[LC;1586]" ) 
+say ( "[LC;1588]" ) 
 setstate ( "need_item50050" ) 
 elseif get_time ( ) < pc . getqf ( "next_time" ) then 
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
-say ( gameforge . horse_levelup . _270_say ) 
+say_title ( "[LC;1586]" ) 
+say ( "[LC;1589]" ) 
 elseif horse . get_stamina_pct ( ) <= 10 then 
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
-say ( gameforge . horse_levelup . _280_say ) 
+say_title ( "[LC;1586]" ) 
+say ( "[LC;1590]" ) 
 elseif horse . get_health_pct ( ) <= 10 then 
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
-say ( gameforge . horse_levelup . _290_say ) 
+say_title ( "[LC;1586]" ) 
+say ( "[LC;1591]" ) 
 elseif horse . is_riding ( ) == 0 then 
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
-say ( gameforge . horse_levelup . _300_say ) 
+say_title ( "[LC;1586]" ) 
+say ( "[LC;1592]" ) 
 elseif ( horse . get_level ( ) >= 11 and horse . get_level ( ) <= 19 ) then 
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
-say ( gameforge . horse_levelup . _310_say ) 
+say_title ( "[LC;1586]" ) 
+say ( "[LC;1594]" ) 
 if is_test_server ( ) then 
 pc . setqf ( "next_time" , get_time ( ) + 10 ) 
 else 

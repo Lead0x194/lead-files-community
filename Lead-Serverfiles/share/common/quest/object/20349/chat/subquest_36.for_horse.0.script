@@ -1,24 +1,24 @@
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . subquest_36 . _150_say ) 
-local s = select ( gameforge . subquest_36 . _190_select , gameforge . subquest_31 . _180_select ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;7973]" ) 
+local s = select ( "[LC;7977]" , "[LC;7825]" ) 
 if 1 == s then 
 say_pc_name ( ) 
-say ( gameforge . subquest_36 . _160_say ) 
+say ( "[LC;7974]" ) 
 return 
 else 
 say_pc_name ( ) 
-say ( gameforge . subquest_36 . _170_say ) 
+say ( "[LC;7975]" ) 
 wait ( ) 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . subquest_36 . _180_say ) 
-local s = select ( gameforge . subquest_36 . _190_select , gameforge . subquest_31 . _180_select ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;7976]" ) 
+local s = select ( "[LC;7977]" , "[LC;7825]" ) 
 if 1 == s then 
 say_pc_name ( ) 
-say ( gameforge . subquest_36 . _200_say ) 
+say ( "[LC;7978]" ) 
 return 
 elseif 2 == s then 
 say_pc_name ( ) 
-say ( gameforge . subquest_36 . _210_say ) 
+say ( "[LC;7980]" ) 
 set_state ( "__GIVEUP__" ) 
 end 
 end 

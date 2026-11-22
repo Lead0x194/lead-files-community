@@ -1,12 +1,12 @@
 say_title ( mob_name ( 20126 ) ) 
-say ( gameforge . new_christmas . _100_say ) 
+say ( "[LC;5615]" ) 
 wait ( ) 
 if get_global_time ( ) - pc . getqf ( "last_nog_give_time" ) >= 86400 then 
 say_title ( mob_name ( 20126 ) ) 
-say ( gameforge . new_christmas . _110_say ) 
+say ( "[LC;5616]" ) 
 pc . setqf ( "last_nog_give_time" , get_global_time ( ) ) 
 pc . give_item2 ( 50216 , 6 ) 
 else 
 say_title ( mob_name ( 20126 ) ) 
-say ( gameforge . new_christmas . _120_say ) 
+say ( "[LC;5617]" ) 
 end 

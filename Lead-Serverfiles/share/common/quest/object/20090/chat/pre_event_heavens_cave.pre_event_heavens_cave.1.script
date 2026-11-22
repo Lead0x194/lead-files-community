@@ -2,8 +2,8 @@ if game . get_event_flag ( "hc_drop" ) == 0 then
 set_state ( "__COMPLETE__" ) 
 end 
 if pc . count_item ( 80005 ) == 0 and pc . count_item ( 80006 ) == 0 and pc . count_item ( 80007 ) == 0 and pc . count_item ( 80008 ) == 0 and pc . count_item ( 50626 ) == 0 then 
-say ( gameforge . pre_event_heavens_cave . _20_say ) 
-say ( string . format ( gameforge . pre_event_heavens_cave . _270_say , item_name ( 30180 ) ) ) 
+say ( "[LC;6683]" ) 
+say ( string . format ( "[LC;6690]" , item_name ( 30180 ) ) ) 
 say ( item_name ( 80005 ) ) 
 say ( item_name ( 80006 ) ) 
 say ( item_name ( 80007 ) ) 
@@ -11,7 +11,7 @@ say ( item_name ( 80008 ) )
 say ( item_name ( 50626 ) ) 
 return 
 end 
-say ( gameforge . pre_event_heavens_cave . _280_say ) 
+say ( "[LC;6691]" ) 
 local checkinventory = { } 
 checkinventory [ 1 ] = { } 
 checkinventory [ 1 ] [ "vnum" ] = 80005 
@@ -44,15 +44,15 @@ goldcounter = goldcounter + 1
 until goldcounter > 5 
 local choosegold = 0 
 if buttoncounter == 2 then 
-choosegold = select ( gameforge . pre_event_heavens_cave . _290_select , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) ) 
+choosegold = select ( "[LC;6692]" , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) ) 
 elseif buttoncounter == 3 then 
-choosegold = select ( gameforge . pre_event_heavens_cave . _290_select , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) , string . format ( "%dx %s" , gold [ 2 ] . amount , gold [ 2 ] . name ) ) 
+choosegold = select ( "[LC;6692]" , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) , string . format ( "%dx %s" , gold [ 2 ] . amount , gold [ 2 ] . name ) ) 
 elseif buttoncounter == 4 then 
-choosegold = select ( gameforge . pre_event_heavens_cave . _290_select , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) , string . format ( "%dx %s" , gold [ 2 ] . amount , gold [ 2 ] . name ) , string . format ( "%dx %s" , gold [ 3 ] . amount , gold [ 3 ] . name ) ) 
+choosegold = select ( "[LC;6692]" , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) , string . format ( "%dx %s" , gold [ 2 ] . amount , gold [ 2 ] . name ) , string . format ( "%dx %s" , gold [ 3 ] . amount , gold [ 3 ] . name ) ) 
 elseif buttoncounter == 5 then 
-choosegold = select ( gameforge . pre_event_heavens_cave . _290_select , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) , string . format ( "%dx %s" , gold [ 2 ] . amount , gold [ 2 ] . name ) , string . format ( "%dx %s" , gold [ 3 ] . amount , gold [ 3 ] . name ) , string . format ( "%dx %s" , gold [ 4 ] . amount , gold [ 4 ] . name ) ) 
+choosegold = select ( "[LC;6692]" , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) , string . format ( "%dx %s" , gold [ 2 ] . amount , gold [ 2 ] . name ) , string . format ( "%dx %s" , gold [ 3 ] . amount , gold [ 3 ] . name ) , string . format ( "%dx %s" , gold [ 4 ] . amount , gold [ 4 ] . name ) ) 
 elseif buttoncounter == 6 then 
-choosegold = select ( gameforge . pre_event_heavens_cave . _290_select , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) , string . format ( "%dx %s" , gold [ 2 ] . amount , gold [ 2 ] . name ) , string . format ( "%dx %s" , gold [ 3 ] . amount , gold [ 3 ] . name ) , string . format ( "%dx %s" , gold [ 4 ] . amount , gold [ 4 ] . name ) , string . format ( "%dx %s" , gold [ 5 ] . amount , gold [ 5 ] . name ) ) 
+choosegold = select ( "[LC;6692]" , string . format ( "%dx %s" , gold [ 1 ] . amount , gold [ 1 ] . name ) , string . format ( "%dx %s" , gold [ 2 ] . amount , gold [ 2 ] . name ) , string . format ( "%dx %s" , gold [ 3 ] . amount , gold [ 3 ] . name ) , string . format ( "%dx %s" , gold [ 4 ] . amount , gold [ 4 ] . name ) , string . format ( "%dx %s" , gold [ 5 ] . amount , gold [ 5 ] . name ) ) 
 end 
 if choosegold > 1 then 
 choosegold = choosegold - 1 
@@ -86,16 +86,16 @@ game . set_event_flag ( "gold_collected" , globalvalue )
 pc . setqf ( "personalvalue" , personalvalue ) 
 end 
 if pc . getqf ( "goldstatus" ) == 2 then 
-say ( gameforge . pre_event_heavens_cave . _20_say ) 
-say ( gameforge . pre_event_heavens_cave . _300_say ) 
+say ( "[LC;6683]" ) 
+say ( "[LC;6693]" ) 
 pc . give_item2 ( 30180 ) 
 pc . setqf ( "goldstatus" , 1 ) 
-say ( string . format ( gameforge . pre_event_heavens_cave . _310_say , item_name ( 30180 ) , mob_name ( 20009 ) , mob_name ( 9012 ) ) ) 
+say ( string . format ( "[LC;6695]" , item_name ( 30180 ) , mob_name ( 20009 ) , mob_name ( 9012 ) ) ) 
 else 
-say ( gameforge . pre_event_heavens_cave . _20_say ) 
-say ( gameforge . pre_event_heavens_cave . _320_say ) 
+say ( "[LC;6683]" ) 
+say ( "[LC;6696]" ) 
 end 
-say ( string . format ( gameforge . pre_event_heavens_cave . _330_say , globalvalue ) ) 
+say ( string . format ( "[LC;6697;%d]" , globalvalue ) ) 
 wait ( ) 
 local scoretable = { } 
 scoretable [ 1 ] = { } 
@@ -140,20 +140,20 @@ scoretable [ scoreplace ] [ "score" ] = pc . getqf ( "personalvalue" )
 local scorecounter0 = 0 
 local scorecounter1 = 1 
 local savescore = 0 
-say_title ( gameforge . pre_event_heavens_cave . _340_say_title ) 
+say_title ( nil ) 
 repeat 
 score = string . format ( "score%d" , scorecounter0 ) 
 savescore = scoretable [ scorecounter1 ] [ "score" ] / 100 
 game . set_event_flag ( score , savescore ) 
 if scorecounter1 == scoreplace then 
-say_reward ( string . format ( gameforge . pre_event_heavens_cave . _350_say_reward , scorecounter1 , scoretable [ scorecounter1 ] [ "score" ] ) ) 
+say_reward ( string . format ( nil , scorecounter1 , scoretable [ scorecounter1 ] [ "score" ] ) ) 
 else 
-say ( string . format ( gameforge . pre_event_heavens_cave . _350_say_reward , scorecounter1 , scoretable [ scorecounter1 ] [ "score" ] ) ) 
+say ( string . format ( nil , scorecounter1 , scoretable [ scorecounter1 ] [ "score" ] ) ) 
 end 
 scorecounter0 = scorecounter0 + 1 
 scorecounter1 = scorecounter1 + 1 
 until scorecounter0 == 10 
 else 
-say ( gameforge . pre_event_heavens_cave . _20_say ) 
-say ( gameforge . pre_event_heavens_cave . _250_say ) 
+say ( "[LC;6683]" ) 
+say ( "[LC;6688]" ) 
 end 

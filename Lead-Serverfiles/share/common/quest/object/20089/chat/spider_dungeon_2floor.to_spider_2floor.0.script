@@ -1,12 +1,12 @@
-say_title ( gameforge . spider_dungeon_2floor . _15_sayTitle ) 
-say ( gameforge . spider_dungeon_2floor . _20_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;6919]" ) 
+say ( "[LC;6920]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 1 == a then 
-say_title ( gameforge . spider_dungeon_2floor . _15_sayTitle ) 
-say ( gameforge . spider_dungeon_2floor . _30_say ) 
+say_title ( "[LC;6919]" ) 
+say ( "[LC;6921]" ) 
 wait ( ) 
 pc . warp ( 91700 , 525300 ) 
 return 
 end 
-say_title ( gameforge . spider_dungeon_2floor . _15_sayTitle ) 
-say ( gameforge . spider_dungeon_2floor . _40_say ) 
+say_title ( "[LC;6919]" ) 
+say ( "[LC;6922]" ) 

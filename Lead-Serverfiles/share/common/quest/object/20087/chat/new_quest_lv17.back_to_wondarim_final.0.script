@@ -1,10 +1,10 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv17 . _020_say_title ) 
-say ( gameforge . new_quest_lv17 . _141_say ) 
-local s = select ( gameforge . new_quest_lv17 . _142_1_select , gameforge . new_quest_lv17 . _142_2_select ) 
+say_title ( "[LC;5632]" ) 
+say ( "[LC;5666]" ) 
+local s = select ( "[LC;5667]" , "[LC;5668]" ) 
 if s == 1 then 
-say ( gameforge . new_quest_lv17 . _143_say ) 
-say_reward ( gameforge . new_quest_lv17 . _144_say_reward_a ) 
+say ( "[LC;5669]" ) 
+say_reward ( "[LC;5670]" ) 
 pc . remove_item ( 30173 , pc . count_item ( 30173 ) ) 
 pc . give_item2 ( 80008 ) 
 pc . change_money ( 20000 ) 
@@ -14,9 +14,9 @@ set_state ( "__COMPLETE__" )
 return 
 end 
 if s == 2 then 
-say_title ( gameforge . new_quest_lv17 . _012_say_title ) 
-say ( gameforge . new_quest_lv17 . _145_say ) 
-say ( gameforge . new_quest_lv17 . _146_say_reward ) 
+say_title ( "[LC;5631]" ) 
+say ( "[LC;5672]" ) 
+say ( "[LC;5673]" ) 
 q . done ( ) 
 set_state ( "goto_yangshin" ) 
 end 

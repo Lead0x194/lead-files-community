@@ -1,12 +1,12 @@
-say_title ( gameforge . check_trans_ticket . _15_sayTitle ) 
-say ( gameforge . check_trans_ticket . _20_say ) 
+say_title ( "[LC;109]" ) 
+say ( "[LC;111]" ) 
 wait ( ) 
 if pc . count_item ( 71095 ) + pc . count_item ( 71130 ) > 0 then 
-say_title ( gameforge . check_trans_ticket . _15_sayTitle ) 
-say ( gameforge . check_trans_ticket . _30_say ) 
+say_title ( "[LC;109]" ) 
+say ( "[LC;112]" ) 
 wait ( ) 
 if false == pc . can_warp ( ) then 
-say ( gameforge . check_trans_ticket . _160_say ) 
+say ( "[LC;110]" ) 
 return 
 end 
 if pc . count_item ( 71095 ) + pc . count_item ( 71130 ) > 0 then 
@@ -22,7 +22,7 @@ else
 return 
 end 
 else 
-say_title ( gameforge . check_trans_ticket . _15_sayTitle ) 
-say ( gameforge . check_trans_ticket . _40_say ) 
+say_title ( "[LC;109]" ) 
+say ( "[LC;113]" ) 
 wait ( ) 
 end 

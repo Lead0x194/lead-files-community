@@ -1,11 +1,11 @@
-say_title ( gameforge . hair . _011_sayTitle ) 
-say ( gameforge . hair . _012_say ) 
+say_title ( "[LC;1388]" ) 
+say ( "[LC;1389]" ) 
 say ( "" ) 
 local vnum = input_number ( ) 
 say_item_vnum ( vnum ) 
 wait ( ) 
 if hair . My_hair_item ( vnum , 1 ) == nil and hair . My_hair_item ( vnum - 1000 , 1 ) then 
-say ( "VNUM : " .. vnum .. gameforge . hair . _013_say ) 
+say ( "VNUM : " .. vnum .. "[LC;1390]" ) 
 return 
 end 
 local race = pc . get_race ( ) + 1 
@@ -43,4 +43,4 @@ end
 end 
 end 
 end 
-syschat ( gameforge . hair . _014_say ) 
+syschat ( "[LC;1391]" ) 

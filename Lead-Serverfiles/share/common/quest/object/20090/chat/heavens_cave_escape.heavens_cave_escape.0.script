@@ -1,12 +1,12 @@
-say_title ( gameforge . heavens_cave_escape . _020_say_title ) 
-say ( gameforge . heavens_cave_escape . _030_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;1502]" ) 
+say ( "[LC;1503]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 1 == a then 
-say_title ( gameforge . heavens_cave_escape . _020_say_title ) 
-say ( gameforge . heavens_cave_escape . _040_say ) 
+say_title ( "[LC;1502]" ) 
+say ( "[LC;1504]" ) 
 wait ( ) 
 pc . warp ( 284460 , 810495 ) 
 return 
 end 
-say_title ( gameforge . heavens_cave_escape . _020_say_title ) 
-say ( gameforge . heavens_cave_escape . _050_say ) 
+say_title ( "[LC;1502]" ) 
+say ( "[LC;1505]" ) 
