@@ -134,6 +134,34 @@ void CGraphicTextInstance::Update()
 		} 
 		else 
 		{
+			if (!IsDefaultRTL() && HasRTLCharacter(wText, wTextLen))
+			{
+				wchar_t* wShapedText = (wchar_t*)_alloca(sizeof(wchar_t) * wTextLen);
+				const int wShapedTextLen = static_cast<int>(Arabic_MakeShape(wText, wTextLen, wShapedText, wTextLen));
+
+				for (int i = 0; i < wShapedTextLen; )
+				{
+					if (!Arabic_IsInPresentation(wShapedText[i]))
+					{
+						++i;
+						continue;
+					}
+
+					int iLast = i;
+					for (int j = i; j < wShapedTextLen && (Arabic_IsInPresentation(wShapedText[j]) || L' ' == wShapedText[j]); ++j)
+					{
+						if (Arabic_IsInPresentation(wShapedText[j]))
+							iLast = j;
+					}
+
+					std::reverse(wShapedText + i, wShapedText + iLast + 1);
+					i = iLast + 1;
+				}
+
+				memcpy(wText, wShapedText, sizeof(wchar_t) * wShapedTextLen);
+				wTextLen = wShapedTextLen;
+			}
+
 			if (IsDefaultRTL() && HasRTLCharacter(wText, wTextLen))
 			{
 
