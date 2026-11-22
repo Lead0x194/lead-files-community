@@ -121,6 +121,7 @@ class OptionDialog(ui.ScriptWindow):
 		self.languageComboBox.SetPosition(110, 212)
 		self.languageComboBox.SetSize(150, 18)
 		self.languageComboBox.SetEvent(ui.__mem_func__(self.__OnSelectLanguage))
+		self.languageComboBox.SetViewItemCount(6)
 		for index, (code, name) in enumerate(self.languageList):
 			self.languageComboBox.InsertItem(index, name)
 			if code == app.GetLocaleName():

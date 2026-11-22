@@ -2967,6 +2967,24 @@ class ComboBox(Window):
 
 			ListBox.OnRender(self)
 
+			itemCount = len(self.itemList)
+			if self.showLineCount and itemCount > self.showLineCount:
+				barHeight = max(8, heightRender * self.showLineCount / itemCount)
+				barOffset = (heightRender - barHeight) * self.basePos / (itemCount - self.showLineCount)
+				barX = xRender + 2 if localeInfo.IsRTL() else xRender + widthRender - 4
+				grp.SetColor(BRIGHT_COLOR)
+				grp.RenderBar(barX, yRender + barOffset, 2, barHeight)
+
+		def OnMouseWheel(self, length):
+			itemCount = len(self.itemList)
+			viewCount = self.GetViewItemCount()
+			if itemCount <= viewCount:
+				return False
+
+			step = -1 if length > 0 else 1
+			self.SetBasePos(max(0, min(itemCount - viewCount, self.basePos + step)))
+			return True
+
 	def __init__(self):
 		Window.__init__(self)
 		self.x = 0
@@ -2988,12 +3006,26 @@ class ComboBox(Window):
 		self.listBox.SetEvent(__mem_func__(self.OnSelectItem))
 		self.listBox.Hide()
 
+		self.viewItemCount = 0
+
 	def __del__(self):
 		Window.__del__(self)
 
 	def Destroy(self):
 		self.textLine = None
 		self.listBox = None
+
+	def SetViewItemCount(self, count):
+		self.viewItemCount = count
+		self.__ArrangeScrollBar()
+
+	def __ArrangeScrollBar(self):
+		count = self.listBox.GetItemCount()
+		if not self.viewItemCount or count <= self.viewItemCount:
+			return
+
+		self.listBox.SetSize(self.width, self.viewItemCount * self.listBox.stepSize)
+		self.listBox.SetBasePos(max(0, min(count - self.viewItemCount, self.listBox.basePos)))
 
 	def SetPosition(self, x, y):
 		Window.SetPosition(self, x, y)
@@ -3011,6 +3043,7 @@ class ComboBox(Window):
 	def __ArrangeListBox(self):
 		self.listBox.SetPosition(0, self.height + 5)
 		self.listBox.SetWidth(self.width)
+		self.__ArrangeScrollBar()
 
 	def Enable(self):
 		self.enable = True
@@ -3030,6 +3063,7 @@ class ComboBox(Window):
 	def InsertItem(self, index, name):
 		self.listBox.InsertItem(index, name)
 		self.listBox.ArrangeItem()
+		self.__ArrangeScrollBar()
 
 	def SetCurrentItem(self, text):
 		self.textLine.SetText(text)
