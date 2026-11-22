@@ -922,15 +922,15 @@ UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Upload skal genstartes
 USE_ITEM_FAILURE_PRIVATE_SHOP	Du kan ikke bruge den genstand mens du har åbnet for en privat butik.
 USE_SKILL_ERROR_UNKNOWN	Ukendt færdighedsfejl: %s
 TARGET_INFO_RESISTS	Modstand:
-TARGET_INFO_RESISTS_LINE0	Sværd: %d%% Tohånds: %d%% Klokke: %d%%
-TARGET_INFO_RESISTS_LINE1	Tohånds: %d%% Vifte: %d%% Bue: %d%%
-TARGET_INFO_REGEN_INFO	TP reg. %d%% hvert %d sek.
+TARGET_INFO_RESISTS_LINE0	Sværd: %d%% Tohåndssværd: %d%% Klokke: %d%%
+TARGET_INFO_RESISTS_LINE1	Dolk: %d%% Vifte: %d%% Bue: %d%%
+TARGET_INFO_REGEN_INFO	HP-regeneration: %d%% hvert %d. sek.
 TARGET_INFO_GOLD_MIN_MAX	Yang: %s ~ %s
 TARGET_INFO_DAMAGE	Slagskade: %s - %s
 TARGET_INFO_DEFENSE	Forsvar: %s
 TARGET_INFO_EXP	Erfaring: %s
 TARGET_INFO_MAINRACE	Race: %s
-TARGET_INFO_MAX_HP	Maks. hitpoints: %s
+TARGET_INFO_MAX_HP	Max. HP: %s
 TARGET_INFO_NO_ITEM_TEXT	Ingen genstande tilgængelige
 TARGET_INFO_NO_RACE	Ingen race
 TARGET_INFO_NEWRACE_INSECT	Insekt
@@ -939,19 +939,19 @@ TARGET_INFO_NEWRACE_ICE	Ismonster
 TARGET_INFO_NEWRACE_DESERT	Ørken
 TARGET_INFO_NEWRACE_TREE	Træ
 TARGET_INFO_RACE_ANIMAL	Dyr
-TARGET_INFO_RACE_DARK	Mørkebestandighed
+TARGET_INFO_RACE_DARK	Forsvar mod mørke
 TARGET_INFO_RACE_DEVIL	Djævel
-TARGET_INFO_RACE_EARTH	Jordbestandighed
+TARGET_INFO_RACE_EARTH	Forsvar mod Jorden
 TARGET_INFO_RACE_ELEC	Lynmodstand
 TARGET_INFO_RACE_FIRE	Ildmodstand
 TARGET_INFO_RACE_HUMAN	Halvmennesker
-TARGET_INFO_RACE_ICE	Ismodstand
-TARGET_INFO_RACE_METIN	Metin-sten
-TARGET_INFO_RACE_MILGYO	Esoterisk
+TARGET_INFO_RACE_ICE	Forsvar mod is
+TARGET_INFO_RACE_METIN	Metin Sten
+TARGET_INFO_RACE_MILGYO	Esoteriker
 TARGET_INFO_RACE_ORC	Orker
-TARGET_INFO_RACE_UNDEAD	Udøde
-TARGET_INFO_RACE_WIND	Vindmodstand
-TARGET_INFO_STONE_NAME	Spøgelsessten
+TARGET_INFO_RACE_UNDEAD	Ikke-døde
+TARGET_INFO_RACE_WIND	Luftmodstand
+TARGET_INFO_STONE_NAME	Åndesten
 TARGET_INFO_SUBRACE	Underrace: %s
 
 

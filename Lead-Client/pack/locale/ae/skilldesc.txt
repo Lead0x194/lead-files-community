@@ -21,12 +21,12 @@
 139	HORSE	موجة القوة			هاجم جميع الأعداء من على حصانك. (من المستوى 55)	مهارة الركوب				ATTACK_SKILL|HORSE_SKILL|WEAPON_LIMITATION	SWORD|TWO_HANDED|DAGGER|DOUBLE_SWORD|BOW|FAN|BELL	splash	123	1							
 140	HORSE	عاصفة السهام			أطلق السهام وأنت راكب. (من المستوى 50)	مهارة الركوب				ATTACK_SKILL|FAN_RANGE|NEED_TARGET|HORSE_SKILL|WEAPON_LIMITATION	BOW	wildattack	121	1	5						
 151	GUILD	عينا التنين			زيادة الحد الأقصى لروح التنين.					PASSIVE		yongan					زيادة أقصى روح التنين +%.0f	k * 1400			
-152	GUILD	دم إله التنين			زيادة أقصى نقاط الحياة لجميع أعضاء النقابة لفترة من الزمن.	لحرب النقابات فقط				ONLY_FOR_GUILD_WAR		gaho	101	1			زيادة أقصى نقاط الحياة +%.0f%%	k * 20			
-153	GUILD	بركة إله التنين			زيادة أقصى نقاط الطاقة لجميع أعضاء النقابة لفترة من الزمن.	لحرب النقابات فقط				ONLY_FOR_GUILD_WAR		chukbok	102	1			زيادة أقصى نقاط الطاقة +%.0f%%	k * 20			
-154	GUILD	الدرع المقدس			زيادة دفاع جميع أعضاء النقابة لفترة من الزمن.	لحرب النقابات فقط				ONLY_FOR_GUILD_WAR		seonghwi	103	1			زيادة الدفاع +%.1f%%	k * 10			
-155	GUILD	التسارع			زيادة سرعة الهجوم والحركة لجميع أعضاء النقابة لفترة من الزمن.	لحرب النقابات فقط				ONLY_FOR_GUILD_WAR		gasok	104	1			زيادة سرعة الهجوم والحركة +%.1f	k * 30			
-156	GUILD	غضب إله التنين			زيادة فرصة الضربة الحرجة لجميع أعضاء النقابة لفترة من الزمن.	لحرب النقابات فقط				ONLY_FOR_GUILD_WAR		bunno	105	1			زيادة فرصة الضربة الحرجة +%.0f%%	k * 50			
-157	GUILD	عون الإلقاء			تقليل زمن التهدئة لجميع أعضاء النقابة لفترة من الزمن.	لحرب النقابات فقط				ONLY_FOR_GUILD_WAR		jumunsul	106	1			زيادة سرعة الإلقاء +%.0f%%	k * 50			
+152	GUILD	دم إله التنين			زيادة أقصى نقاط الحياة لجميع أعضاء الرابطة لفترة من الزمن.	لحرب الروابط فقط				ONLY_FOR_GUILD_WAR		gaho	101	1			زيادة أقصى نقاط الحياة +%.0f%%	k * 20			
+153	GUILD	بركة إله التنين			زيادة أقصى نقاط الطاقة لجميع أعضاء الرابطة لفترة من الزمن.	لحرب الروابط فقط				ONLY_FOR_GUILD_WAR		chukbok	102	1			زيادة أقصى نقاط الطاقة +%.0f%%	k * 20			
+154	GUILD	الدرع المقدس			زيادة دفاع جميع أعضاء الرابطة لفترة من الزمن.	لحرب الروابط فقط				ONLY_FOR_GUILD_WAR		seonghwi	103	1			زيادة الدفاع +%.1f%%	k * 10			
+155	GUILD	التسارع			زيادة سرعة الهجوم والحركة لجميع أعضاء الرابطة لفترة من الزمن.	لحرب الروابط فقط				ONLY_FOR_GUILD_WAR		gasok	104	1			زيادة سرعة الهجوم والحركة +%.1f	k * 30			
+156	GUILD	غضب إله التنين			زيادة فرصة الضربة الحرجة لجميع أعضاء الرابطة لفترة من الزمن.	لحرب الروابط فقط				ONLY_FOR_GUILD_WAR		bunno	105	1			زيادة فرصة الضربة الحرجة +%.0f%%	k * 50			
+157	GUILD	عون الإلقاء			تقليل زمن التهدئة لجميع أعضاء الرابطة لفترة من الزمن.	لحرب الروابط فقط				ONLY_FOR_GUILD_WAR		jumunsul	106	1			زيادة سرعة الإلقاء +%.0f%%	k * 50			
 16	WARRIOR	ضربة الروح (W)	موجة الصدمة	هجوم التسونامي	هاجم الأعداء مباشرة.	هجوم أمامي واسع				ATTACK_SKILL|CAN_CHANGE_DIRECTION|NEED_TARGET|WEAPON_LIMITATION	SWORD|TWO_HANDED	gigongcham	16	4			قوة الهجوم %.0f-%.0f	2.3*MinATK + (MinATK*4 + 4*STR + CON)*SkillPoint	2.3*MaxATK + (MaxATK*4 + 4*STR + CON)*SkillPoint		
 17	WARRIOR	الضربة الساحقة	ضربة النمر	ضربة التنين	هاجم الأعداء مباشرة.	هجوم واسع مستقيم	هجوم على أهداف متعددة			ATTACK_SKILL|CAN_CHANGE_DIRECTION|WEAPON_LIMITATION	SWORD|TWO_HANDED	gyeoksan	17	4			قوة الهجوم %.0f-%.0f	2.3*MinATK + (3*MinATK + 4*STR + 3*CON)*SkillPoint	2.3*MaxATK + (3*MaxATK + 4*STR + 3*CON)*SkillPoint		
 18	WARRIOR	الدهس	دهس الأسد	دهس وحيد القرن 	أسقط عدة أعداء أرضًا.	هجوم واسع مستقيم	فرصة تأثير الإغماء			ATTACK_SKILL|STANDING_SKILL		daejin	18	4			قوة الهجوم %.0f-%.0f 	2*MinATK + (2*MinATK + 2*DEX + 2*CON + 4*STR)*SkillPoint	2*MaxATK + (2*MaxATK + 2*DEX + 2*CON + 4*STR)*SkillPoint	فرصة الإغماء %.0f%% 	(100 + 1000*SkillPoint/6)/10

@@ -922,35 +922,35 @@ UPLOAD_MARK_CHECK_NEED_RECONNECT	Необходимо запустить апл�
 UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Необходимо запустить аплоад повторно.
 USE_ITEM_FAILURE_PRIVATE_SHOP	Вы не можете пользоваться предметом, когда ваша лавка открыта.
 USE_SKILL_ERROR_UNKNOWN	Неизвестная ошибка навыков: %s
-TARGET_INFO_RESISTS	Сопротивления:
-TARGET_INFO_RESISTS_LINE0	Меч: %d%% Двуручное оружие: %d%% Колокол: %d%%
-TARGET_INFO_RESISTS_LINE1	Двуручное оружие: %d%% Веер: %d%% Лук: %d%%
-TARGET_INFO_REGEN_INFO	Восстановление TP: %d%% каждые %d сек.
-TARGET_INFO_GOLD_MIN_MAX	Ян: %s ~ %s
-TARGET_INFO_DAMAGE	Урон от удара: %s - %s
+TARGET_INFO_RESISTS	Сопротивляемость:
+TARGET_INFO_RESISTS_LINE0	Меч: %d%% Двуручное оружие: %d%% Колокольчик: %d%%
+TARGET_INFO_RESISTS_LINE1	Кинжал: %d%% Веер: %d%% Лук: %d%%
+TARGET_INFO_REGEN_INFO	ХП-регенерация: %d%% каждые %d сек.
+TARGET_INFO_GOLD_MIN_MAX	Янг: %s ~ %s
+TARGET_INFO_DAMAGE	Урон: %s - %s
 TARGET_INFO_DEFENSE	Защита: %s
 TARGET_INFO_EXP	Опыт: %s
 TARGET_INFO_MAINRACE	Раса: %s
-TARGET_INFO_MAX_HP	Макс. количество очков здоровья: %s
-TARGET_INFO_NO_ITEM_TEXT	Предметы недоступны
+TARGET_INFO_MAX_HP	Макс. ХП: %s
+TARGET_INFO_NO_ITEM_TEXT	Нет предметов
 TARGET_INFO_NO_RACE	Без расы
-TARGET_INFO_NEWRACE_INSECT	Насекомое
-TARGET_INFO_NEWRACE_FIRE	Огненное чудовище
-TARGET_INFO_NEWRACE_ICE	Ледяное чудовище
-TARGET_INFO_NEWRACE_DESERT	Пустыня
+TARGET_INFO_NEWRACE_INSECT	Насекомые
+TARGET_INFO_NEWRACE_FIRE	Огненный монстр
+TARGET_INFO_NEWRACE_ICE	Ледяной монстр
+TARGET_INFO_NEWRACE_DESERT	Монстры пустыни
 TARGET_INFO_NEWRACE_TREE	Дерево
-TARGET_INFO_RACE_ANIMAL	Животные
-TARGET_INFO_RACE_DARK	Сопротивление тьме
+TARGET_INFO_RACE_ANIMAL	Звери
+TARGET_INFO_RACE_DARK	Сопротивление темноте
 TARGET_INFO_RACE_DEVIL	Дьявол
 TARGET_INFO_RACE_EARTH	Сопротивление земле
-TARGET_INFO_RACE_ELEC	Устойчивость к молнии 
-TARGET_INFO_RACE_FIRE	Устойчивость к огню
+TARGET_INFO_RACE_ELEC	Сопротивляемость молниям
+TARGET_INFO_RACE_FIRE	Сопротивляемость огню
 TARGET_INFO_RACE_HUMAN	Полулюди
-TARGET_INFO_RACE_ICE	Устойчивость к льду
-TARGET_INFO_RACE_METIN	Камень Метин
-TARGET_INFO_RACE_MILGYO	Эзотерика 
+TARGET_INFO_RACE_ICE	Сопротивление льду
+TARGET_INFO_RACE_METIN	Камень Метина
+TARGET_INFO_RACE_MILGYO	Мистики
 TARGET_INFO_RACE_ORC	Орки
 TARGET_INFO_RACE_UNDEAD	Нежить
-TARGET_INFO_RACE_WIND	Сопротивление ветру
-TARGET_INFO_STONE_NAME	Камень призраков
+TARGET_INFO_RACE_WIND	Сопротивляемость ветру
+TARGET_INFO_STONE_NAME	Камень духа
 TARGET_INFO_SUBRACE	Подвид: %s

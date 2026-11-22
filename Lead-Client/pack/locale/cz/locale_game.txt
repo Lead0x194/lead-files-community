@@ -923,34 +923,34 @@ UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Upload musí být proveden ještě jednou
 USE_ITEM_FAILURE_PRIVATE_SHOP	Pokud jsi otevřel soukromý stánek, nemůžeš použít tento předmět.
 USE_SKILL_ERROR_UNKNOWN	Neznámá chyba v schopnostech: %s
 TARGET_INFO_RESISTS	Odolnosti:
-TARGET_INFO_RESISTS_LINE0	Mec: %d%% Obourucní: %d%% Zvon: %d%%
-TARGET_INFO_RESISTS_LINE1	Oboustranné: %d%% Vejír: %d%% Luk: %d%%
-TARGET_INFO_REGEN_INFO	TP reg. %d%% každých %d sekund.
+TARGET_INFO_RESISTS_LINE0	Meč: %d%% Obouruční meč: %d%% Zvon: %d%%
+TARGET_INFO_RESISTS_LINE1	Dýka: %d%% Vějíř: %d%% Luk: %d%%
+TARGET_INFO_REGEN_INFO	Obnovení ZB: %d%% každých %d s
 TARGET_INFO_GOLD_MIN_MAX	Yang: %s ~ %s
-TARGET_INFO_DAMAGE	Útok: %s - %s
+TARGET_INFO_DAMAGE	Poškození: %s - %s
 TARGET_INFO_DEFENSE	Obrana: %s
-TARGET_INFO_EXP	Zkušenosti: %s
+TARGET_INFO_EXP	Zkušenost: %s
 TARGET_INFO_MAINRACE	Rasa: %s
-TARGET_INFO_MAX_HP	Max. život: %s
-TARGET_INFO_NO_ITEM_TEXT	Žádné položky k dispozici
+TARGET_INFO_MAX_HP	Max. ZB: %s
+TARGET_INFO_NO_ITEM_TEXT	Žádné předměty k dispozici
 TARGET_INFO_NO_RACE	Žádná rasa
 TARGET_INFO_NEWRACE_INSECT	Hmyz
-TARGET_INFO_NEWRACE_FIRE	Ohnivé monstrum
-TARGET_INFO_NEWRACE_ICE	Ledové monstrum
-TARGET_INFO_NEWRACE_DESERT	Poušt
+TARGET_INFO_NEWRACE_FIRE	Ohnivá příšera
+TARGET_INFO_NEWRACE_ICE	Ledová příšera
+TARGET_INFO_NEWRACE_DESERT	Poušť
 TARGET_INFO_NEWRACE_TREE	Strom
-TARGET_INFO_RACE_ANIMAL	Zvírata
-TARGET_INFO_RACE_DARK	Odolnost proti temnote
-TARGET_INFO_RACE_DEVIL	Dábel
+TARGET_INFO_RACE_ANIMAL	Zvířata
+TARGET_INFO_RACE_DARK	Odolnost vůči temnotě
+TARGET_INFO_RACE_DEVIL	Ďábel
 TARGET_INFO_RACE_EARTH	Odolnost proti zemi
-TARGET_INFO_RACE_ELEC	Odolnost proti blesku 
+TARGET_INFO_RACE_ELEC	Odolnost proti blesku
 TARGET_INFO_RACE_FIRE	Odolnost proti ohni
 TARGET_INFO_RACE_HUMAN	Pololidé
 TARGET_INFO_RACE_ICE	Odolnost proti ledu
-TARGET_INFO_RACE_METIN	Metinový kámen
-TARGET_INFO_RACE_MILGYO	Esoterický 
+TARGET_INFO_RACE_METIN	Kámen Metin
+TARGET_INFO_RACE_MILGYO	Ezoterici
 TARGET_INFO_RACE_ORC	Orkové
 TARGET_INFO_RACE_UNDEAD	Nemrtví
-TARGET_INFO_RACE_WIND	Odolnost proti vetru
-TARGET_INFO_STONE_NAME	Kámen duchu
+TARGET_INFO_RACE_WIND	Odolnost proti větru
+TARGET_INFO_STONE_NAME	Kámen ducha
 TARGET_INFO_SUBRACE	Podrasa: %s

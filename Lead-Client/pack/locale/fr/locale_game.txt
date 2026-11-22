@@ -212,7 +212,7 @@ HOW_MANY_ITEM_DO_YOU_DROP1	Souhaitez-vous abandonner %s?
 HOW_MANY_ITEM_DO_YOU_DROP2	Souhaitez-vous abandonner  %s %d?
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Entrer le code d'effacement (voir dans options de compte).
 INPUT_PRIVATE_CODE_DIALOG_TITLE	Supprimer le personnage
-INVENTORY_DO_NOT_PACK_WARP_SCROLL	Role of Return cannot be combined.
+INVENTORY_DO_NOT_PACK_WARP_SCROLL	Les parchemins de retour ne peuvent pas être combinés.
 INVENTORY_REALLY_USE_ITEM	Voulez-vous utiliser cet objet ?
 JOB_ASSASSIN	Ninja
 JOB_ASSASSIN0	Ninja débutant
@@ -804,35 +804,35 @@ UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Le téléchargement doit être recommencer.
 USE_ITEM_FAILURE_PRIVATE_SHOP	Vous ne pouvez pas utiliser d'objet tant que votre magasin privé est ouvert.
 USE_SKILL_ERROR_UNKNOWN	Erreur compétence inconnue: %s
 TARGET_INFO_RESISTS	Résistances :
-TARGET_INFO_RESISTS_LINE0	Épée : %d%% À deux mains : %d%% Cloche : %d%%
-TARGET_INFO_RESISTS_LINE1	À deux mains : %d%% Éventail : %d%% Arc : %d%%
-TARGET_INFO_REGEN_INFO	TP reg. %d%% toutes les %d sec.
+TARGET_INFO_RESISTS_LINE0	Épée : %d%% Deux-mains : %d%% Gong : %d%%
+TARGET_INFO_RESISTS_LINE1	Dague : %d%% Éventail : %d%% Flèches : %d%%
+TARGET_INFO_REGEN_INFO	Régénération des PV : %d%% toutes les %d sec.
 TARGET_INFO_GOLD_MIN_MAX	Yang : %s ~ %s
 TARGET_INFO_DAMAGE	Dégâts infligés : %s - %s
 TARGET_INFO_DEFENSE	Défense : %s
 TARGET_INFO_EXP	Expérience : %s
 TARGET_INFO_MAINRACE	Race : %s
-TARGET_INFO_MAX_HP	Points de vie max. : %s
+TARGET_INFO_MAX_HP	PV max. : %s
 TARGET_INFO_NO_ITEM_TEXT	Aucun objet disponible
-TARGET_INFO_NO_RACE	Pas de race
-TARGET_INFO_NEWRACE_INSECT	Insecte
-TARGET_INFO_NEWRACE_FIRE	Monstre de feu
-TARGET_INFO_NEWRACE_ICE	Monstre de glace
-TARGET_INFO_NEWRACE_DESERT	Désert
-TARGET_INFO_NEWRACE_TREE	Arbre
+TARGET_INFO_NO_RACE	Aucune race
+TARGET_INFO_NEWRACE_INSECT	Insectes
+TARGET_INFO_NEWRACE_FIRE	Monstres de feu
+TARGET_INFO_NEWRACE_ICE	Monstres de glace
+TARGET_INFO_NEWRACE_DESERT	Monstres du désert
+TARGET_INFO_NEWRACE_TREE	Arbres
 TARGET_INFO_RACE_ANIMAL	Animaux
 TARGET_INFO_RACE_DARK	Résistance à l'obscurité
-TARGET_INFO_RACE_DEVIL	Diable
+TARGET_INFO_RACE_DEVIL	Mal
 TARGET_INFO_RACE_EARTH	Résistance à la terre
-TARGET_INFO_RACE_ELEC	Résistance à la foudre 
+TARGET_INFO_RACE_ELEC	Résistance à la foudre
 TARGET_INFO_RACE_FIRE	Résistance au feu
 TARGET_INFO_RACE_HUMAN	Demi-humains
 TARGET_INFO_RACE_ICE	Résistance à la glace
 TARGET_INFO_RACE_METIN	Pierre Metin
-TARGET_INFO_RACE_MILGYO	Ésotérique 
+TARGET_INFO_RACE_MILGYO	Mystiques
 TARGET_INFO_RACE_ORC	Orcs
 TARGET_INFO_RACE_UNDEAD	Morts-vivants
 TARGET_INFO_RACE_WIND	Résistance au vent
-TARGET_INFO_STONE_NAME	Pierre fantôme
+TARGET_INFO_STONE_NAME	Pierre d'esprit
 TARGET_INFO_SUBRACE	Sous-race : %s
 

@@ -923,34 +923,34 @@ UPLOAD_MARK_UPLOAD_NEED_RECONNECT	De upload moet opnieuw gestart worden.
 USE_ITEM_FAILURE_PRIVATE_SHOP	Je kunt voorwerpen niet gebruiken terwijl je privé warenhuis open is.
 USE_SKILL_ERROR_UNKNOWN	Onbekend Vaardigheids Error: %s	
 TARGET_INFO_RESISTS	Weerstanden:
-TARGET_INFO_RESISTS_LINE0	Zwaard: %d%% Tweehandig: %d%% Bel: %d%%
-TARGET_INFO_RESISTS_LINE1	Tweehandig: %d%% Waaier: %d%% Boog: %d%%
-TARGET_INFO_REGEN_INFO	TP reg. %d%% elke %d sec.
+TARGET_INFO_RESISTS_LINE0	Zwaard: %d%% Twee-Handig: %d%% Bel: %d%%
+TARGET_INFO_RESISTS_LINE1	Mes: %d%% Waaier: %d%% Pijl: %d%%
+TARGET_INFO_REGEN_INFO	LP Regeneratie %d%% elke %d sec.
 TARGET_INFO_GOLD_MIN_MAX	Yang: %s ~ %s
 TARGET_INFO_DAMAGE	Slagschade: %s - %s
 TARGET_INFO_DEFENSE	Verdediging: %s
 TARGET_INFO_EXP	Ervaring: %s
 TARGET_INFO_MAINRACE	Ras: %s
-TARGET_INFO_MAX_HP	Max. hitpoints: %s
-TARGET_INFO_NO_ITEM_TEXT	Geen items beschikbaar
+TARGET_INFO_MAX_HP	Max. LP: %s
+TARGET_INFO_NO_ITEM_TEXT	Geen voorwerpen beschikbaar
 TARGET_INFO_NO_RACE	Geen ras
 TARGET_INFO_NEWRACE_INSECT	Insecten
 TARGET_INFO_NEWRACE_FIRE	Vuurmonsters
 TARGET_INFO_NEWRACE_ICE	IJsmonsters
-TARGET_INFO_NEWRACE_DESERT	Woestijn
-TARGET_INFO_NEWRACE_TREE	Boom
+TARGET_INFO_NEWRACE_DESERT	Woestijnmonsters
+TARGET_INFO_NEWRACE_TREE	Bomen
 TARGET_INFO_RACE_ANIMAL	Dieren
 TARGET_INFO_RACE_DARK	Weerstand tegen duisternis
 TARGET_INFO_RACE_DEVIL	Duivel
-TARGET_INFO_RACE_EARTH	Weerstand tegen aarde
-TARGET_INFO_RACE_ELEC	Bliksemweerstand 
-TARGET_INFO_RACE_FIRE	Vuurweerstand
+TARGET_INFO_RACE_EARTH	Aarde Weerstand
+TARGET_INFO_RACE_ELEC	Bliksem Weerstand
+TARGET_INFO_RACE_FIRE	Vuur Weerstand
 TARGET_INFO_RACE_HUMAN	Halfmensen
-TARGET_INFO_RACE_ICE	IJsweerstand
-TARGET_INFO_RACE_METIN	Metinsteen
-TARGET_INFO_RACE_MILGYO	Esoterisch 
+TARGET_INFO_RACE_ICE	IJs Weerstand
+TARGET_INFO_RACE_METIN	Metin Steen
+TARGET_INFO_RACE_MILGYO	Mystici
 TARGET_INFO_RACE_ORC	Orks
 TARGET_INFO_RACE_UNDEAD	Ondoden
-TARGET_INFO_RACE_WIND	Windweerstand
-TARGET_INFO_STONE_NAME	Spooksteen
+TARGET_INFO_RACE_WIND	Wind Weerstand
+TARGET_INFO_STONE_NAME	Zielensteen
 TARGET_INFO_SUBRACE	Subras: %s

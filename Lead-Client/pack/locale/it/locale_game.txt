@@ -923,34 +923,34 @@ UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Rifai l'upload
 USE_ITEM_FAILURE_PRIVATE_SHOP	Non puoi usare degli oggetti se hai un negozio privato aperto.
 USE_SKILL_ERROR_UNKNOWN	Errore abilità sconosciuto: %s
 TARGET_INFO_RESISTS	Resistenze:
-TARGET_INFO_RESISTS_LINE0	Spada: %d%% A due mani: %d%% Campana: %d%%
-TARGET_INFO_RESISTS_LINE1	A due mani: %d%% Ventaglio: %d%% Arco: %d%%
-TARGET_INFO_REGEN_INFO	TP reg. %d%% ogni %d sec.
+TARGET_INFO_RESISTS_LINE0	Spada: %d%% Spadone: %d%% Campana: %d%%
+TARGET_INFO_RESISTS_LINE1	Pugnale: %d%% Ventaglio: %d%% Freccia: %d%%
+TARGET_INFO_REGEN_INFO	Rigenerazione HP: %d%% ogni %d sec.
 TARGET_INFO_GOLD_MIN_MAX	Yang: %s ~ %s
-TARGET_INFO_DAMAGE	Danno da colpo: %s - %s
+TARGET_INFO_DAMAGE	Danni: %s - %s
 TARGET_INFO_DEFENSE	Difesa: %s
 TARGET_INFO_EXP	Esperienza: %s
 TARGET_INFO_MAINRACE	Razza: %s
-TARGET_INFO_MAX_HP	Punti vita massimi: %s
+TARGET_INFO_MAX_HP	Max. HP: %s
 TARGET_INFO_NO_ITEM_TEXT	Nessun oggetto disponibile
 TARGET_INFO_NO_RACE	Nessuna razza
-TARGET_INFO_NEWRACE_INSECT	Insetto
-TARGET_INFO_NEWRACE_FIRE	Mostro di fuoco
-TARGET_INFO_NEWRACE_ICE	Mostro di ghiaccio
-TARGET_INFO_NEWRACE_DESERT	Deserto
-TARGET_INFO_NEWRACE_TREE	Albero
+TARGET_INFO_NEWRACE_INSECT	Insetti
+TARGET_INFO_NEWRACE_FIRE	Mostri di fuoco
+TARGET_INFO_NEWRACE_ICE	Mostri di ghiaccio
+TARGET_INFO_NEWRACE_DESERT	Mostri del deserto
+TARGET_INFO_NEWRACE_TREE	Alberi
 TARGET_INFO_RACE_ANIMAL	Animali
-TARGET_INFO_RACE_DARK	Resistenza all'oscurità
+TARGET_INFO_RACE_DARK	Resistenza contro l'oscurità
 TARGET_INFO_RACE_DEVIL	Diavolo
-TARGET_INFO_RACE_EARTH	Resistenza alla terra
-TARGET_INFO_RACE_ELEC	Resistenza ai fulmini 
-TARGET_INFO_RACE_FIRE	Resistenza al fuoco
-TARGET_INFO_RACE_HUMAN	Mezzi umani
-TARGET_INFO_RACE_ICE	Resistenza al ghiaccio
-TARGET_INFO_RACE_METIN	Pietra Metin
-TARGET_INFO_RACE_MILGYO	Esoterico 
+TARGET_INFO_RACE_EARTH	Resistenza terra
+TARGET_INFO_RACE_ELEC	Resistenza lampo
+TARGET_INFO_RACE_FIRE	Resistenza fuoco
+TARGET_INFO_RACE_HUMAN	Mezziuomini
+TARGET_INFO_RACE_ICE	Resistenza ghiaccio
+TARGET_INFO_RACE_METIN	Roccia Metin
+TARGET_INFO_RACE_MILGYO	Esoterici
 TARGET_INFO_RACE_ORC	Orchi
-TARGET_INFO_RACE_UNDEAD	Non morti
-TARGET_INFO_RACE_WIND	Resistenza al vento
-TARGET_INFO_STONE_NAME	Pietra fantasma
+TARGET_INFO_RACE_UNDEAD	Zombie
+TARGET_INFO_RACE_WIND	Resistenza vento
+TARGET_INFO_STONE_NAME	Pietra Spirituale
 TARGET_INFO_SUBRACE	Sottorazza: %s

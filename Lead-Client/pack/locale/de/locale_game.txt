@@ -802,16 +802,16 @@ UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Der Upload muss neu gestartet werden.
 USE_ITEM_FAILURE_PRIVATE_SHOP	Du kannst keine Gegenstände verwenden, solange du einen privaten Laden geöffnet hast.
 USE_SKILL_ERROR_UNKNOWN	Unbekannter Fertigkeitsfehler: %s
 TARGET_INFO_RESISTS	Widerstände:
-TARGET_INFO_RESISTS_LINE0	Schwert: %d%% Zweihand: %d%% Glocke: %d%%
-TARGET_INFO_RESISTS_LINE1	Doppelkl.: %d%% Fächer: %d%% Bogen: %d%%
-TARGET_INFO_REGEN_INFO	TP reg. %d%% alle %d sek.
+TARGET_INFO_RESISTS_LINE0	Schwert: %d%% Zweihänder: %d%% Glocke: %d%%
+TARGET_INFO_RESISTS_LINE1	Dolch: %d%% Fächer: %d%% Bogen: %d%%
+TARGET_INFO_REGEN_INFO	TP-Regeneration: %d%% alle %d Sek.
 TARGET_INFO_GOLD_MIN_MAX	Yang: %s ~ %s
-TARGET_INFO_DAMAGE	Schlagschaden : %s - %s
-TARGET_INFO_DEFENSE	Verteidigung : %s
-TARGET_INFO_EXP	Erfahrung : %s
-TARGET_INFO_MAINRACE	Rasse : %s
-TARGET_INFO_MAX_HP	Max. Trefferpunkte : %s
-TARGET_INFO_NO_ITEM_TEXT	Keine verfügbaren Items
+TARGET_INFO_DAMAGE	Schlagschaden: %s - %s
+TARGET_INFO_DEFENSE	Verteidigung: %s
+TARGET_INFO_EXP	Erfahrung: %s
+TARGET_INFO_MAINRACE	Rasse: %s
+TARGET_INFO_MAX_HP	Max. TP: %s
+TARGET_INFO_NO_ITEM_TEXT	Keine Gegenstände verfügbar
 TARGET_INFO_NO_RACE	Keine Rasse
 TARGET_INFO_NEWRACE_INSECT	Insekt
 TARGET_INFO_NEWRACE_FIRE	Feuermonster
@@ -822,17 +822,17 @@ TARGET_INFO_RACE_ANIMAL	Tiere
 TARGET_INFO_RACE_DARK	Widerstand gegen Dunkelheit
 TARGET_INFO_RACE_DEVIL	Teufel
 TARGET_INFO_RACE_EARTH	Erdwiderstand
-TARGET_INFO_RACE_ELEC	Blitzwiderstand 
+TARGET_INFO_RACE_ELEC	Blitzwiderstand
 TARGET_INFO_RACE_FIRE	Feuerwiderstand
 TARGET_INFO_RACE_HUMAN	Halbmenschen
 TARGET_INFO_RACE_ICE	Eiswiderstand
-TARGET_INFO_RACE_METIN	Metin-Stein
-TARGET_INFO_RACE_MILGYO	Esoterische 
+TARGET_INFO_RACE_METIN	Metinstein
+TARGET_INFO_RACE_MILGYO	Esoterische
 TARGET_INFO_RACE_ORC	Orks
 TARGET_INFO_RACE_UNDEAD	Untote
 TARGET_INFO_RACE_WIND	Windwiderstand
 TARGET_INFO_STONE_NAME	Geiststein
-TARGET_INFO_SUBRACE	Untergattung : %s
+TARGET_INFO_SUBRACE	Unterrasse: %s
 SWITCHBOT_TITLE	Switchbot
 SWITCHBOT_START	Start
 SWITCHBOT_STOP	Stop

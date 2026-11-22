@@ -18,7 +18,7 @@ CANNOT_SKILL_NEED_EMPTY_BOTTLE	ليس لدي زجاجة فارغة.
 CANNOT_SKILL_NEED_POISON_BOTTLE	ليس لدي زجاجة سم.	
 CANNOT_SKILL_NEED_TARGET	من هو الهدف؟	
 CANNOT_SKILL_NOT_ENOUGH_HP	ليس لدي نقاط حياة كافية!	
-CANNOT_SKILL_NOT_ENOUGH_SP	ليس لدي نقاط طاقة كافية!	
+CANNOT_SKILL_NOT_ENOUGH_SP	ليس لدي نقاط أسلوب كافية!	
 CANNOT_SKILL_NOT_HORSE_SKILL	لا أستطيع استخدام هذا أثناء الركوب.	
 CANNOT_SKILL_NOT_MATCHABLE_WEAPON	لا أستطيع استخدام هذه المهارة بهذا السلاح.	
 CANNOT_SKILL_NOT_YET_LEARN	لم أتعلم هذه المهارة.	
@@ -46,7 +46,7 @@ CHANNEL_TEST_SERVER	خادم تجريبي
 CHANNEL_TEST_SERVER_ADDR	اختبار %s:%d	
 CHAT_ALL	الكل	
 CHAT_BLOCK	حظر	
-CHAT_GUILD	النقابة	
+CHAT_GUILD	الرابطة	
 CHAT_INFORMATION	معلومات	
 CHAT_INSULT_STRING	هذه الجملة تحتوي على كلمات غير مسموحة.	
 CHAT_LOG	عرض الرسائل القديمة [L]	
@@ -155,7 +155,7 @@ GUILDMARK_UPLOADER_ERROR_PATH	انقل البيانات إلى المجلد meti
 GUILDMARK_UPLOADER_ERROR_SELECT	لم يتم اختيار ملف صورة.	
 GUILDWAR_CTF_TITLE	تم الاستيلاء على الراية.	
 GUILDWAR_NORMAL_TITLE	معركة ميدانية	
-GUILDWAR_QUESTION_LINE_1	النقابة %s أعلنت الحرب على نقابتك.	
+GUILDWAR_QUESTION_LINE_1	الرابطة %s أعلنت الحرب على رابطتك.	
 GUILDWAR_QUESTION_LINE_2	هل تقبل؟ (%s)	
 GUILDWAR_UNKNOWN_TITLE	...	
 GUILDWAR_WARP_TITLE	معركة الحلبة
@@ -163,21 +163,21 @@ GUILD_BUILDING_GRADE	المرتبة
 GUILD_BUILDING_NAME	اسم المبنى	
 GUILD_CANNOT_HEAL_GSP_ANYMORE	طاقة شبح التنين ممتلئة بالفعل.
 GUILD_COMMENT	كتابة	
-GUILD_CREATE_ERROR_INSULT_NAME	اسم النقابة غير صالح.	
-GUILD_DEFAULT_GRADE	أعضاء النقابة	
+GUILD_CREATE_ERROR_INSULT_NAME	اسم الرابطة غير صالح.	
+GUILD_DEFAULT_GRADE	أعضاء الرابطة	
 GUILD_DELETE	حذف	
 GUILD_DEPOSIT	إيداع	
 GUILD_DO_YOU_HEAL_GSP	هل تريد استعادة %d وحدة من شبح التنين مقابل %d يانغ؟
-GUILD_DO_YOU_JOIN	 دعاك. هل تريد الانضمام إلى النقابة؟
+GUILD_DO_YOU_JOIN	 دعاك. هل تريد الانضمام إلى الرابطة؟
 GUILD_EMPTY_AREA	أرض خالية	
-GUILD_ENEMY_GUILD_NAME	اسم نقابة العدو	
+GUILD_ENEMY_GUILD_NAME	اسم رابطة العدو	
 GUILD_FACILITY	مبنى ملحق	
 GUILD_GEM	جوهرة	
 GUILD_HEADQUARTER	المبنى الرئيسي
 GUILD_HEAL_GSP	استعادة شبح التنين
 GUILD_INFO_ENEMY_GUILD_EMPTY	لا شيء	
 GUILD_MARK_NOT_ENOUGH_LEVEL	مطلوب المستوى 3 على الأقل
-GUILD_NAME	اسم النقابة	
+GUILD_NAME	اسم الرابطة	
 GUILD_NOT_ENOUGH_MATERIAL	مواد البناء غير كافية لهذا المبنى.
 GUILD_NOT_ENOUGH_MONEY	اليانغ غير كافٍ لهذا المبنى.
 GUILD_NO_NOTICE_PERMISSION	ليس لديك صلاحية نشر إعلان.	
@@ -187,19 +187,19 @@ GUILD_SHORT_EXP	نقاط الخبرة غير كافية.
 GUILD_TILE_BASEINFO	معلومات أساسية	
 GUILD_TILE_BOARD	لوحة الإعلانات	
 GUILD_TILE_GRADE	إدارة الصلاحيات	
-GUILD_TILE_INFO	معلومات النقابة	
-GUILD_TILE_MEMBER	أعضاء النقابة	
-GUILD_TILE_SKILL	مهارات النقابة	
+GUILD_TILE_INFO	معلومات الرابطة	
+GUILD_TILE_MEMBER	أعضاء الرابطة	
+GUILD_TILE_SKILL	مهارات الرابطة	
 GUILD_WAR_LIMIT_30MIN	الوقت: 30 دقيقة	
 GUILD_WAR_REWARD_POTION	الجائزة: يحصل الفائز على جرعة	
-GUILD_WAR_USE_BATTLE_MAP	الموقع: حلبة حرب النقابات
+GUILD_WAR_USE_BATTLE_MAP	الموقع: حلبة حرب الروابط
 GUILD_WAR_USE_NORMAL_MAP	الموقع: خريطة عادية
 GUILD_WAR_WIN_CHECK_SCORE	أعلى نتيجة تفوز بالحرب.	
 GUILD_WAR_WIN_TAKE_AWAY_FLAG1	استولِ على راية عدوك
 GUILD_WAR_WIN_TAKE_AWAY_FLAG2	واحملها إلى قاعدتك.
 GUILD_WAR_WIN_WIPE_OUT_GUILD	اهزم جميع الأعداء لتفوز.	
 GUILD_WITHDRAW	انسحاب	
-GUILD_YOU_DO_NOT_JOIN	أنت لست عضوًا في أي نقابة.	
+GUILD_YOU_DO_NOT_JOIN	أنت لست عضوًا في أي رابطة.	
 HORSE_HEALTH0	ميت	
 HORSE_HEALTH1	يتضور جوعًا
 HORSE_HEALTH2	جائع
@@ -287,7 +287,7 @@ MESSENGER_DO_YOU_MOVE	هل تريد المتابعة؟
 MESSENGER_EMPTY_LIST	فارغ	
 MESSENGER_FAMILY	العائلة	
 MESSENGER_FRIEND	الأصدقاء	
-MESSENGER_GUILD	النقابة	
+MESSENGER_GUILD	الرابطة	
 MINIMAP	فتح الخريطة المصغرة	
 MINIMAP_CANNOT_SEE	لا يمكن عرض الخريطة المصغرة.	
 MINIMAP_CAN_NOT_SHOW_AREAMAP	لا يمكن عرض الخريطة الكبيرة.
@@ -306,7 +306,7 @@ MUSIC_METIN2_DEFAULT_THEMA	موسيقى Metin2 الافتراضية
 MUSIC_NOT_SELECT_MUSIC	لم يتم اختيار ملف موسيقى.	
 NEEFD_REST	يجب أن تستريح أولًا.	
 NOT_YET_SUPPORT	غير مدعوم بعد	
-OPTION_PVPMODE_CANNOT_SET_GUILD_MODE	لا يمكنك تفعيل وضع النقابة وأنت لا تنتمي إلى نقابة.	
+OPTION_PVPMODE_CANNOT_SET_GUILD_MODE	لا يمكنك تفعيل وضع الرابطة وأنت لا تنتمي إلى رابطة.	
 OPTION_PVPMODE_NOT_SUPPORT	لا يمكنك اختيار هذا الإعداد في وضع PvP.	
 OPTION_PVPMODE_PROTECT	يجب أن تبلغ المستوى %d على الأقل لتغيير وضع PvP.	
 PARTY_BONUS_ATTACKER	قيمة الهجوم: +%d	SA
@@ -314,8 +314,8 @@ PARTY_BONUS_BERSERKER	سرعة الهجوم: +%d	SA
 PARTY_BONUS_BUFFER	مدة المهارة: +%d	SA
 PARTY_BONUS_DEFENDER	الدفاع: +%d	SA
 PARTY_BONUS_EXP	خبرة إضافية: %d%%	SA
-PARTY_BONUS_SKILL_MASTER	أقصى نقاط الطاقة: +%d	SA
-PARTY_BONUS_TANKER	أقصى نقاط الحياة: +%d	SA
+PARTY_BONUS_SKILL_MASTER	نقاط الأسلوب القصوى: +%d	SA
+PARTY_BONUS_TANKER	نقاط الحياة القصوى: +%d	SA
 PARTY_BREAK_UP	حذف المجموعة	
 PARTY_DO_YOU_ACCEPT	 يود الانضمام إلى المجموعة.	
 PARTY_DO_YOU_JOIN	 دعاك للانضمام إلى مجموعته. هل تقبل؟
@@ -331,7 +331,7 @@ PARTY_LEAVE	مغادرة المجموعة
 PARTY_LONGTIME_BONUS_EXP	خبرة إضافية للعب الجماعي الطويل: +%d%%	SA
 PARTY_MEMBER_OFFLINE	[غير متصل]	
 PARTY_RECALL_MEMBER	استدعاء عضو المجموعة.	
-PARTY_REGEN_BONUS	إضافة لتجدد نقاط الحياة والطاقة: +%d%%	SA
+PARTY_REGEN_BONUS	إضافة لتجديد نقاط الحياة والأسلوب: +%d%%	SA
 PARTY_REQUEST_DENIED	تم رفض طلبك.
 PARTY_SET_ATTACKER	تعيين كمهاجم.	
 PARTY_SET_BERSERKER	تعيين كهائج.	
@@ -344,11 +344,11 @@ PARTY_SKILL_ATTACKER	قيمة الهجوم الأساسية للمهاجم +%.0f
 PARTY_SKILL_BERSERKER	سرعة هجوم الهائج +%.0f	
 PARTY_SKILL_BUFFER	مدة مهارة الصادّ +%.0f	
 PARTY_SKILL_DEFENDER	دفاع المدافع +%.0f	
-PARTY_SKILL_HP_REGEN	تجدد نقاط الحياة +%.0f%%	
+PARTY_SKILL_HP_REGEN	تجديد نقاط الحياة +%.0f%%	
 PARTY_SKILL_PARTY_AREA	مدى المجموعة +%d%%	
-PARTY_SKILL_SKILL_MASTER	أقصى نقاط الطاقة لخبير المهارات +%.0f	
-PARTY_SKILL_SP_REGEN	تجدد نقاط الطاقة +%.0f%%	
-PARTY_SKILL_TANKER	أقصى نقاط الحياة لمقاتل النصل +%.0f	
+PARTY_SKILL_SKILL_MASTER	نقاط الأسلوب القصوى لخبير المهارات +%.0f	
+PARTY_SKILL_SP_REGEN	تجديد نقاط الأسلوب +%.0f%%	
+PARTY_SKILL_TANKER	نقاط الحياة القصوى لمقاتل النصل +%.0f	
 PARTY_SKILL_WARP	يمكن استدعاء أعضاء المجموعة.	
 PASSWORD_TITLE	كلمة مرور المخزن
 PICK_ITEM_TITLE	رقم الغرض	
@@ -366,7 +366,7 @@ PVP_LEVEL5	عدواني
 PVP_LEVEL6	محتال	
 PVP_LEVEL7	خبيث	
 PVP_LEVEL8	قاسٍ	
-PVP_MODE_GUILD	PvP - تم تفعيل وضع النقابة
+PVP_MODE_GUILD	PvP - تم تفعيل وضع الرابطة
 PVP_MODE_KILL	PvP - تم تفعيل الوضع الحر
 PVP_MODE_NORMAL	PvP - تم تفعيل وضع السلام
 PVP_MODE_PROTECT	PvP - تم تفعيل وضع الحماية
@@ -388,11 +388,11 @@ REFINE_DESTROY_WARNING	قد يتحطم هذا الغرض أثناء الترقي
 REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	سيزيد هذا من فرصة الترقية،
 REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	لكن إن فشلت فقد يتحطم الغرض. /n هل تريد المتابعة؟
 REFINE_DOWN_GRADE_WARNING	قد ينخفض مستوى الغرض بهذه الطريقة.	
-REFINE_DO_YOU_SEPARATE_METIN	هل تريد إزالة جميع أحجار الروح المتاحة؟
+REFINE_DO_YOU_SEPARATE_METIN	هل تريد إزالة جميع الأحجار الروحية المتاحة؟
 REFINE_FAILURE	لقد فشلت.	
 REFINE_FAILURE_CAN_NOT_ATTACH	لا يمكن تضمين %s في هذا الغرض.	
 REFINE_FAILURE_EQUIP_ITEM	لا يمكنك ترقية الأغراض المجهزة.
-REFINE_FAILURE_METIN_INSEPARABLE_ITEM	لا يوجد حجر روح يمكن نزعه.	
+REFINE_FAILURE_METIN_INSEPARABLE_ITEM	لا يوجد حجر روحي يمكن نزعه.	
 REFINE_FAILURE_NEED_BETTER_SCROLL	تحتاج إلى لفافة ترقية أفضل.	
 REFINE_FAILURE_NO_GOLD_SOCKET	لا يوجد مقبس ذهبي لتضمين %s .	
 REFINE_FAILURE_NO_MORE_SOCKET	لا يمكنك إنشاء مقابس أخرى.	
@@ -421,7 +421,7 @@ SELECT_DO_YOU_DELETE_REALLY	هل تريد المتابعة؟
 SELECT_EMPTY_SLOT	هذه خانة فارغة.	
 SELECT_GM_NAME	GM	
 SELECT_INPUT_CHANGING_NAME	أدخل اسمًا جديدًا للشخصية.	
-SELECT_NOT_JOIN_GUILD	بلا نقابة	
+SELECT_NOT_JOIN_GUILD	بلا رابطة	
 SHOP_BUY_INFO	اختر الغرض الذي تريد شراءه من نافذة المتجر.
 SHOP_CANNOT_SELL_EQUIPMENT	لا يمكنك بيع الأغراض المجهزة.
 SHOP_CANNOT_SELL_ITEM	لا يمكن بيع هذا الغرض.
@@ -470,7 +470,7 @@ SKILL_HOSIN	البركة
 SKILL_HWAYEOM	SKILL_HWAYEOM لم يعد مستخدمًا	
 SKILL_HYEOLMA	SKILL_HYEOLMA لم يعد مستخدمًا	
 SKILL_INC_ATKSPD	زادت سرعة الهجوم
-SKILL_INC_MOVSPD	زادت سرعة الحركة
+SKILL_INC_MOVSPD	زادت سرعة التحرك
 SKILL_INMA	SKILL_INMA لم يعد مستخدمًا	
 SKILL_JEOJU	لعنة	
 SKILL_JEONGEOP	الشفاء	
@@ -492,7 +492,7 @@ SKILL_MUSA	SKILL_MUSA لم يعد مستخدمًا
 SKILL_MUYEONG	شبح اللهب	
 SKILL_NEED_EMPTY_BOTTLE	ليس لدي زجاجة فارغة.	
 SKILL_NEED_POISON_BOTTLE	ليس لدي زجاجة سم	
-SKILL_ONLY_FOR_GUILD_WAR	يمكنك استخدام هذه المهارة في حرب النقابات فقط.	
+SKILL_ONLY_FOR_GUILD_WAR	يمكنك استخدام هذه المهارة في حرب الروابط فقط.	
 SKILL_PABEOP	إبطال السحر	
 SKILL_POWERFUL_STRIKE	هجوم مُدوِّخ	
 SKILL_SEOMGWANG	قنبلة البرق	
@@ -510,14 +510,14 @@ SKILL_TUSOK	ضربة الشبح
 SKILL_WONSIN	SKILL_WONSIN لم يعد مستخدمًا	
 SKILL_YONGSIN	SKILL_YONGSIN لم يعد مستخدمًا	
 STAT_MINUS_CON	تعديل الحيوية (الفرص المتبقية: %d)
-STAT_MINUS_DEX	تعديل الرشاقة (الفرص المتبقية: %d)
+STAT_MINUS_DEX	تعديل المناورة (الفرص المتبقية: %d)
 STAT_MINUS_INT	تعديل الذكاء (الفرص المتبقية: %d)	
 STAT_MINUS_STR	تعديل القوة (الفرص المتبقية: %d)	
 STAT_TOOLTIP_CON	يزيد نقاط الحياة والدفاع
 STAT_TOOLTIP_DEX	يزيد الهجوم والمراوغة
-STAT_TOOLTIP_INT	يزيد نقاط الطاقة والهجوم السحري والدفاع
+STAT_TOOLTIP_INT	يزيد نقاط الأسلوب والهجوم السحري والدفاع
 STAT_TOOLTIP_STR	يزيد قيمة الهجوم والضرر
-SYMBOLLIST_TITLE	تسجيل راية النقابة	
+SYMBOLLIST_TITLE	تسجيل راية الرابطة	
 SYSTEM_OPTION_CPU_TILING_1	وضع التبليط عبر CPU قد يرفع سرعة الحواسيب الضعيفة.	
 SYSTEM_OPTION_CPU_TILING_2	عند وجود مشاكل في الرسوميات اختر 'خيارات النظام' أو 'CONFIG.exe'	
 SYSTEM_OPTION_CPU_TILING_3	وغيّر إلى وضع التبليط عبر GPU.	
@@ -535,7 +535,7 @@ TARGET_BUTTON_EXCLUDE	استبعاد
 TARGET_BUTTON_EXIT_OBSERVER	إنهاء وضع المراقبة	
 TARGET_BUTTON_FIGHT	مبارزة	
 TARGET_BUTTON_FRIEND	صديق	
-TARGET_BUTTON_INVITE_GUILD	دعوة للنقابة	
+TARGET_BUTTON_INVITE_GUILD	دعوة للرابطة	
 TARGET_BUTTON_INVITE_PARTY	دعوة للمجموعة	
 TARGET_BUTTON_LEAVE_PARTY	مغادرة المجموعة	
 TARGET_BUTTON_REQUEST_ENTER_PARTY	الانضمام للمجموعة	
@@ -554,7 +554,7 @@ TASKBAR_EXP	الخبرة
 TASKBAR_HP	نقاط الحياة	
 TASKBAR_MOVE	تحرك	
 TASKBAR_SKILL	مهارة	
-TASKBAR_SP	نقاط الطاقة	
+TASKBAR_SP	نقاط الأسلوب	
 TASKBAR_ST	التحمل	
 THING_COUNT	الكل	
 TOOLTIP_ANTI_CRITICAL_PCT	مقاومة الضربات الحرجة +%d%%	SA
@@ -562,19 +562,19 @@ TOOLTIP_ANTI_PENETRATE_PCT	مقاومة الضربات الخارقة +%d%%	SA
 TOOLTIP_ANTI_SELL	لا يمكن بيعه في المتجر.
 TOOLTIP_APPLY_ATTBONUS_ANIMAL	قوي ضد الحيوانات +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_ASSASSIN	قوي ضد النينجا +%d%%	SA
-TOOLTIP_APPLY_ATTBONUS_DEVIL	قوي ضد الشياطين +%d%%	SA
-TOOLTIP_APPLY_ATTBONUS_HUMAN	قوي ضد أنصاف البشر +%d%%	SA
-TOOLTIP_APPLY_ATTBONUS_MILGYO	قوي ضد الغامضين +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_DEVIL	قوي ضد الشيطان +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_HUMAN	قوي ضد نصف بشر +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_MILGYO	قوي ضد الطائفة السرية +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_MONSTER	القوة ضد الوحوش +%d%%	SA
-TOOLTIP_APPLY_ATTBONUS_ORC	قوي ضد الأورك +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_ORC	قوي ضد الغيلان +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_SHAMAN	قوي ضد الشامان +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_SURA	قوي ضد السورا +%d%%	SA
-TOOLTIP_APPLY_ATTBONUS_UNDEAD	قوي ضد الموتى الأحياء +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_UNDEAD	قوي ضد الزومبي +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_WARRIOR	قوي ضد المحاربين +%d%%	SA
 TOOLTIP_APPLY_BLOCK	فرصة صد هجوم قريب %d%% 	SA
-TOOLTIP_APPLY_COMBAT_SP_RECOVER	استعادة نقاط الطاقة كل 5 ثوانٍ في المعركة %d	SA
+TOOLTIP_APPLY_COMBAT_SP_RECOVER	استعادة نقاط الأسلوب كل 5 ثوانٍ في المعركة %d	SA
 TOOLTIP_APPLY_CRITICAL_PCT	فرصة الضربة الحرجة +%d%% 	SA
-TOOLTIP_APPLY_DAMAGE_SP_RECOVER	فرصة %d%% لاستعادة نقاط الطاقة عند الإصابة	SA
+TOOLTIP_APPLY_DAMAGE_SP_RECOVER	فرصة %d%% لاستعادة نقاط الأسلوب عند الإصابة	SA
 TOOLTIP_APPLY_DODGE	فرصة تفادي السهام %d%%	SA
 TOOLTIP_APPLY_EXP_DOUBLE_BONUS	فرصة %d%% لخبرة إضافية	SA
 TOOLTIP_APPLY_GOLD_DOUBLE_BONUS	فرصة %d%% لسقوط يانغ مضاعف	SA
@@ -583,10 +583,10 @@ TOOLTIP_APPLY_IMMUNE_SLOW	حماية من الإبطاء	SNA
 TOOLTIP_APPLY_IMMUNE_STUN	حماية من الإغماء	SNA
 TOOLTIP_APPLY_ITEM_DROP_BONUS	فرصة %d%% لسقوط أغراض مضاعفة	SA
 TOOLTIP_APPLY_KILL_HP_RECOVER	فرصة %d%% لاستعادة نقاط الحياة	SA
-TOOLTIP_APPLY_KILL_SP_RECOVER	فرصة %d%% لاستعادة نقاط الطاقة	SA
-TOOLTIP_APPLY_MANA_BURN_PCT	فرصة %d%% لسلب نقاط الطاقة	SA
-TOOLTIP_APPLY_MAX_HP_PCT	أقصى نقاط الحياة +%d%%	SA
-TOOLTIP_APPLY_MAX_SP_PCT	أقصى نقاط الطاقة +%d%% 	SA
+TOOLTIP_APPLY_KILL_SP_RECOVER	فرصة %d%% لاستعادة نقاط الأسلوب	SA
+TOOLTIP_APPLY_MANA_BURN_PCT	فرصة %d%% لسلب نقاط الأسلوب	SA
+TOOLTIP_APPLY_MAX_HP_PCT	نقاط الحياة القصوى +%d%%	SA
+TOOLTIP_APPLY_MAX_SP_PCT	نقاط الأسلوب القصوى +%d%% 	SA
 TOOLTIP_APPLY_NOAFFECT	بلا تأثير	
 TOOLTIP_APPLY_NO_DEATH_PENALTY	لن تفقد نقاط خبرة إذا بُعثت شخصيتك في مكان موتها. 	SNA
 TOOLTIP_APPLY_PENETRATE_PCT	فرصة %d%% لضربات خارقة	SA
@@ -596,20 +596,20 @@ TOOLTIP_APPLY_POTION_BONUS	زيادة تأثير الجرعات %d%%	SA
 TOOLTIP_APPLY_REFLECT_CURSE	فرصة عكس اللعنة: %d%%	SA
 TOOLTIP_APPLY_REFLECT_MELEE	فرصة %d%% لعكس ضربات القتال القريب 	SA
 TOOLTIP_APPLY_RESIST_ASSASSIN	فرصة الدفاع ضد هجمات النينجا: %d%%	SA
-TOOLTIP_APPLY_RESIST_BELL	الدفاع ضد الجرس %d%%	SA
-TOOLTIP_APPLY_RESIST_DAGGER	الدفاع ضد الخنجر %d%%	SA
-TOOLTIP_APPLY_RESIST_FAN	الدفاع ضد المروحة %d%%	SA
+TOOLTIP_APPLY_RESIST_BELL	دفاع جرسي %d%%	SA
+TOOLTIP_APPLY_RESIST_DAGGER	دفاع خنجري %d%%	SA
+TOOLTIP_APPLY_RESIST_FAN	دفاع مروحي %d%%	SA
 TOOLTIP_APPLY_RESIST_SHAMAN	فرصة الدفاع ضد هجمات الشامان: %d%%	SA
 TOOLTIP_APPLY_RESIST_SURA	فرصة الدفاع ضد هجمات السورا: %d%%	SA
-TOOLTIP_APPLY_RESIST_SWORD	الدفاع ضد السيف %d%%	SA
-TOOLTIP_APPLY_RESIST_TWOHAND	الدفاع ضد سلاح اليدين %d%%	SA
+TOOLTIP_APPLY_RESIST_SWORD	دفاع سيفي %d%%	SA
+TOOLTIP_APPLY_RESIST_TWOHAND	دفاع سيف اليدين %d%%	SA
 TOOLTIP_APPLY_RESIST_WARRIOR	فرصة الدفاع ضد هجمات المحارب: %d%%	SA
 TOOLTIP_APPLY_RESIST_WIND	مقاومة الرياح %d%%	SA
 TOOLTIP_APPLY_SKILL_BOOK_BONUS	فرصة التعلم من الكتب تزيد بمعامل 2.5 .	SNA
 TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	إذا فشل التعلم تحصل فورًا على محاولة أخرى مجانًا	SNA
 TOOLTIP_APPLY_SLOW_PCT	فرصة الإبطاء %d%%	SA
 TOOLTIP_APPLY_STEAL_HP	%d%% من الضرر تُمتص كنقاط حياة	SA
-TOOLTIP_APPLY_STEAL_SP	%d%% من الضرر تُمتص كنقاط طاقة	SA
+TOOLTIP_APPLY_STEAL_SP	%d%% من الضرر تُمتص كنقاط أسلوب	SA
 TOOLTIP_APPLY_STUN_PCT	فرصة الإغماء %d%%	SA
 TOOLTIP_ARMOR	درع	
 TOOLTIP_ARROW	سهم	
@@ -622,11 +622,11 @@ TOOLTIP_AUTO_POTION_SP	إكسير القمر
 TOOLTIP_AUTO_POTION_USING	نشط
 TOOLTIP_BOW_DISTANCE	مدى القوس +%dm	SA
 TOOLTIP_BUYPRICE	السعر: %s	
-TOOLTIP_CAST_SPEED	سرعة الإلقاء +%d%%	SA
+TOOLTIP_CAST_SPEED	سرعة السحر +%d%%	SA
 TOOLTIP_CON	الحيوية +%d	SA
 TOOLTIP_COSTUME_ATTR_BONUS	إضافة الزي %d%% 	SA
 TOOLTIP_DEF_GRADE	الدفاع +%d	SA
-TOOLTIP_DEX	الرشاقة +%d	SA
+TOOLTIP_DEX	المناورة +%d	SA
 TOOLTIP_DRAGON_SOUL_DECK1	الأرض	SNA
 TOOLTIP_DRAGON_SOUL_DECK2	السماء	SNA
 TOOLTIP_EAR	قرط	
@@ -639,7 +639,7 @@ TOOLTIP_FISHINGROD_UPGRADE2	لتحصل على أفضل
 TOOLTIP_FISHINGROD_UPGRADE3	صنارة صيد.
 TOOLTIP_FISH_LEN	الطول: %.2fcm	
 TOOLTIP_HELMET	خوذة	
-TOOLTIP_HP_REGEN	تجدد نقاط الحياة +%d%%	SA
+TOOLTIP_HP_REGEN	تجديد نقاط الحياة +%d%%	SA
 TOOLTIP_INT	الذكاء +%d	SA
 TOOLTIP_ITEM_ATT_GRADE	قيمة الهجوم %d	
 TOOLTIP_ITEM_ATT_POWER	قيمة الهجوم %d - %d	
@@ -649,7 +649,7 @@ TOOLTIP_ITEM_ATT_SPEED	سرعة الهجوم %s
 TOOLTIP_ITEM_DEF_GRADE	الدفاع %d	
 TOOLTIP_ITEM_FAST	سريع	
 TOOLTIP_ITEM_LIMIT_CON	الحد الأعلى للحيوية: %d
-TOOLTIP_ITEM_LIMIT_DEX	الحد الأعلى للرشاقة: %d
+TOOLTIP_ITEM_LIMIT_DEX	الحد الأعلى للمناورة: %d
 TOOLTIP_ITEM_LIMIT_INT	الحد الأعلى للذكاء: %d	
 TOOLTIP_ITEM_LIMIT_LEVEL	من المستوى: %d	
 TOOLTIP_ITEM_LIMIT_STR	الحد الأعلى للقوة: %d	
@@ -657,7 +657,7 @@ TOOLTIP_ITEM_MAGIC_ATT_POWER	قيمة الهجوم السحري %d - %d
 TOOLTIP_ITEM_MAGIC_ATT_POWER_ONE_ARG	قيمة الهجوم السحري %d	
 TOOLTIP_ITEM_MAGIC_DEF_POWER	الدفاع السحري %d	
 TOOLTIP_ITEM_NORMAL	عادي	
-TOOLTIP_ITEM_SLOW	إبطاء	
+TOOLTIP_ITEM_SLOW	بطيء	
 TOOLTIP_ITEM_VERY_FAST	سريع جدًا	
 TOOLTIP_ITEM_VERY_SLOW	بطيء جدًا	
 TOOLTIP_ITEM_WEARABLE_JOB	[ يمكن ارتداؤه ]
@@ -680,23 +680,23 @@ TOOLTIP_MALL_ITEMBONUS	فرصة الحصول على الأغراض مضروبة 
 TOOLTIP_MALL_ITEMBONUS_STATIC	يضاعف فرصتك في الحصول على الأغراض	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	نقاط الحب تزيد أسرع.	SNA
 TOOLTIP_MALL_SAFEBOX	يحصل مخزنك على حجرتي تخزين	SNA
-TOOLTIP_MAX_HP	أقصى نقاط الحياة +%d	SA
-TOOLTIP_MAX_HP_PCT	أقصى نقاط الحياة +%d%%	SA
-TOOLTIP_MAX_SP	أقصى نقاط الطاقة +%d	SA
-TOOLTIP_MAX_SP_PCT	أقصى نقاط الطاقة +%d%%	SA
+TOOLTIP_MAX_HP	نقاط الحياة القصوى +%d	SA
+TOOLTIP_MAX_HP_PCT	نقاط الحياة القصوى +%d%%	SA
+TOOLTIP_MAX_SP	نقاط الأسلوب القصوى +%d	SA
+TOOLTIP_MAX_SP_PCT	نقاط الأسلوب القصوى +%d%%	SA
 TOOLTIP_MAX_STAMINA	أقصى تحمل +%d	SA
 TOOLTIP_MELEE_MAGIC_ATTBONUS_PER	الهجوم السحري/القريب +%d%%	SA
 TOOLTIP_MEMORIZED_POSITION	%s(%d, %d)	
 TOOLTIP_MEMORIZED_POSITION_ERROR	خطأ GPS(%d, %d)	
-TOOLTIP_MOV_SPEED	سرعة الحركة %d%%	SA
+TOOLTIP_MOV_SPEED	سرعة التحرك %d%%	SA
 TOOLTIP_NECK	قلادة	
-TOOLTIP_NEED_ALL_SP	نقاط الطاقة المطلوبة: الأقصى	
+TOOLTIP_NEED_ALL_SP	نقاط الأسلوب المطلوبة: الأقصى	
 TOOLTIP_NEED_GSP	شبح التنين المطلوب: %d
 TOOLTIP_NEED_HP	نقاط الحياة المطلوبة: %d	
 TOOLTIP_NEED_HP_PER_SEC	نقاط الحياة / ث.: %d
 TOOLTIP_NEED_SKILL_POINT	نقاط المهارة المطلوبة:	
-TOOLTIP_NEED_SP	نقاط الطاقة المطلوبة: %d	
-TOOLTIP_NEED_SP_PER_SEC	نقاط الطاقة / ث.: %d
+TOOLTIP_NEED_SP	نقاط الأسلوب المطلوبة: %d	
+TOOLTIP_NEED_SP_PER_SEC	نقاط الأسلوب / ث.: %d
 TOOLTIP_NEXT_SKILL_LEVEL_1	المستوى التالي: %d (الأقصى %d)	
 TOOLTIP_NEXT_SKILL_LEVEL_2	المستوى التالي: %d (الأقصى %d-%d)	
 TOOLTIP_NORMAL_HIT_DAMAGE_BONUS	متوسط الضرر %d%%	SA
@@ -704,8 +704,8 @@ TOOLTIP_NORMAL_HIT_DEFEND_BONUS	مقاومة متوسط الضرر %d%%	SA
 TOOLTIP_PARTY_INFO_GRADE_UP1	أكثر من %d أعضاء في المجموعة	
 TOOLTIP_PARTY_INFO_GRADE_UP2	مستوى الهجوم +%d	
 TOOLTIP_PARTY_INFO_GRADE_UP3	مستوى الدفاع +%d	
-TOOLTIP_PARTY_INFO_HEAL_18_LEVEL	استعادة نقاط الحياة/الطاقة لكل أعضاء المجموعة كل 60 دقيقة.	
-TOOLTIP_PARTY_INFO_HEAL_40_LEVEL	استعادة نقاط الحياة/الطاقة لكل أعضاء المجموعة كل 30 دقيقة	
+TOOLTIP_PARTY_INFO_HEAL_18_LEVEL	استعادة نقاط الحياة/الأسلوب لكل أعضاء المجموعة كل 60 دقيقة.	
+TOOLTIP_PARTY_INFO_HEAL_40_LEVEL	استعادة نقاط الحياة/الأسلوب لكل أعضاء المجموعة كل 30 دقيقة	
 TOOLTIP_PARTY_INFO_RECALL_12_LEVEL	عليك الانتظار 3 دقائق بعد موت أحد أعضاء المجموعة.	
 TOOLTIP_PARTY_INFO_RECALL_20_LEVEL	يمكنك استدعاء أعضاء المجموعة الموجودين على الخادم نفسه في أي وقت.	
 TOOLTIP_PARTY_INFO_SET_ATTACKER	مستوى الهجوم +(عدد أعضاء المجموعة/2) يمكن اختيار %d مهاجم.	
@@ -728,9 +728,9 @@ TOOLTIP_POTION_MIN	د.
 TOOLTIP_POTION_PLUS_ATTACK_SPEED	سرعة الهجوم +%d
 TOOLTIP_POTION_PLUS_HP_PERCENT	نقاط الحياة +%d%%
 TOOLTIP_POTION_PLUS_HP_POINT	نقاط الحياة +%d
-TOOLTIP_POTION_PLUS_MOVING_SPEED	سرعة الحركة +%d
-TOOLTIP_POTION_PLUS_SP_PERCENT	نقاط الطاقة +%d%%
-TOOLTIP_POTION_PLUS_SP_POINT	نقاط الطاقة +%d
+TOOLTIP_POTION_PLUS_MOVING_SPEED	سرعة التحرك +%d
+TOOLTIP_POTION_PLUS_SP_PERCENT	نقاط الأسلوب +%d%%
+TOOLTIP_POTION_PLUS_SP_POINT	نقاط الأسلوب +%d
 TOOLTIP_POTION_SEC	ث.	
 TOOLTIP_POTION_TIME	المدة:	
 TOOLTIP_REQUIREMENT_21_LEVEL	يجب أن تبلغ المستوى 21.	
@@ -738,12 +738,12 @@ TOOLTIP_REQUIREMENT_41_LEVEL	يجب أن تبلغ المستوى 41.
 TOOLTIP_REQUIREMENT_LEVEL	يجب أن تبلغ المستوى %d.	
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	مطلوب %s المستوى %d.	
 TOOLTIP_REQUIREMENT_STAT_LEVEL	مطلوب %s %d	
-TOOLTIP_RESIST_BOW	مقاومة السهام %d%%	SA
-TOOLTIP_RESIST_DARK	مقاومة الظلام +%d%%	SA
+TOOLTIP_RESIST_BOW	مقاومة السهم %d%%	SA
+TOOLTIP_RESIST_DARK	مقاومة ضد الظلام +%d%%	SA
 TOOLTIP_RESIST_EARTH	مقاومة الأرض +%d%%	SA
 TOOLTIP_RESIST_ELEC	مقاومة البرق %d%%	SA
 TOOLTIP_RESIST_FIRE	مقاومة النار %d%%	SA
-TOOLTIP_RESIST_ICE	مقاومة الجليد +%d%%	SA
+TOOLTIP_RESIST_ICE	مقاومة الثلج +%d%%	SA
 TOOLTIP_RESIST_MAGIC	مقاومة السحر %d%%	SA
 TOOLTIP_REST_USABLE_COUNT	المتبقي: %d	
 TOOLTIP_SEALED	
@@ -759,7 +759,7 @@ TOOLTIP_SKILL_AFFECT_ATT_SPEED	سرعة الهجوم: +
 TOOLTIP_SKILL_AFFECT_DEF_GRADE	الدفاع:	
 TOOLTIP_SKILL_AFFECT_DODGE	قيمة هجوم الخصم: -	
 TOOLTIP_SKILL_AFFECT_HEAL	استعادة نقاط الحياة:	
-TOOLTIP_SKILL_AFFECT_MOV_SPEED	سرعة الحركة: +	
+TOOLTIP_SKILL_AFFECT_MOV_SPEED	سرعة التحرك: +	
 TOOLTIP_SKILL_AFFECT_REFLECT_MELEE	فرصة عكس هجوم القتال القريب:
 TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	مقاومة الضرر الجسدي:	
 TOOLTIP_SKILL_COOL_TIME	إعادة الشحن: 
@@ -772,7 +772,7 @@ TOOLTIP_SKILL_LEVEL_MASTER	المستوى الحالي: %d (أستاذ)
 TOOLTIP_SKILL_LEVEL_WITH_MAX	المستوى الحالي: %d (الأقصى %d)	
 TOOLTIP_SOCKET_EMPTY	فارغ	
 TOOLTIP_SOCKET_REFINABLE_ITEM	[غرض بمقبس]	
-TOOLTIP_SP_REGEN	تجدد نقاط الطاقة +%d%%	SA
+TOOLTIP_SP_REGEN	تجديد نقاط الأسلوب +%d%%	SA
 TOOLTIP_STR	القوة +%d	SA
 TOOLTIP_SURA	سورا	
 TOOLTIP_TIME_CHARGER_FIX	زمن الشحن %d ث.	SA
@@ -804,36 +804,36 @@ UPLOAD_MARK_UPLOAD_NEED_RECONNECT	يجب بدء الرفع من جديد.
 USE_ITEM_FAILURE_PRIVATE_SHOP	لا يمكنك استخدام الأغراض والمتجر الخاص مفتوح.
 USE_SKILL_ERROR_UNKNOWN	خطأ مهارة غير معروف: %s	
 TARGET_INFO_RESISTS	المقاومات:
-TARGET_INFO_RESISTS_LINE0	السيف: %d%% سلاح اليدين: %d%% الجرس: %d%%
-TARGET_INFO_RESISTS_LINE1	سلاح اليدين: %d%% المروحة: %d%% القوس: %d%%
-TARGET_INFO_REGEN_INFO	تجدد نقاط الحياة %d%% كل %d ث.
+TARGET_INFO_RESISTS_LINE0	السيف: %d%% سيف اليدين: %d%% الجرس: %d%%
+TARGET_INFO_RESISTS_LINE1	الخنجر: %d%% المروحة: %d%% القوس: %d%%
+TARGET_INFO_REGEN_INFO	تجديد نقاط الحياة %d%% كل %d ث.
 TARGET_INFO_GOLD_MIN_MAX	يانغ: %s ~ %s
 TARGET_INFO_DAMAGE	ضرر الضربة: %s - %s
 TARGET_INFO_DEFENSE	الدفاع: %s
 TARGET_INFO_EXP	الخبرة: %s
 TARGET_INFO_MAINRACE	العرق: %s
-TARGET_INFO_MAX_HP	أقصى نقاط الحياة: %s
+TARGET_INFO_MAX_HP	نقاط الحياة القصوى: %s
 TARGET_INFO_NO_ITEM_TEXT	لا توجد أغراض
 TARGET_INFO_NO_RACE	بلا عرق
-TARGET_INFO_NEWRACE_INSECT	حشرة
+TARGET_INFO_NEWRACE_INSECT	الحشرات
 TARGET_INFO_NEWRACE_FIRE	وحش ناري
 TARGET_INFO_NEWRACE_ICE	وحش جليدي
-TARGET_INFO_NEWRACE_DESERT	صحراء
+TARGET_INFO_NEWRACE_DESERT	وحوش الصحراء
 TARGET_INFO_NEWRACE_TREE	شجرة
-TARGET_INFO_RACE_ANIMAL	حيوانات
-TARGET_INFO_RACE_DARK	مقاومة الظلام
-TARGET_INFO_RACE_DEVIL	شيطان
+TARGET_INFO_RACE_ANIMAL	الحيوانات
+TARGET_INFO_RACE_DARK	مقاومة ضد الظلام
+TARGET_INFO_RACE_DEVIL	الشيطان
 TARGET_INFO_RACE_EARTH	مقاومة الأرض
-TARGET_INFO_RACE_ELEC	مقاومة البرق 
+TARGET_INFO_RACE_ELEC	مقاومة البرق
 TARGET_INFO_RACE_FIRE	مقاومة النار
-TARGET_INFO_RACE_HUMAN	أنصاف البشر
-TARGET_INFO_RACE_ICE	مقاومة الجليد
-TARGET_INFO_RACE_METIN	حجر ميتين
-TARGET_INFO_RACE_MILGYO	غامض 
-TARGET_INFO_RACE_ORC	الأورك
-TARGET_INFO_RACE_UNDEAD	الموتى الأحياء
+TARGET_INFO_RACE_HUMAN	نصف بشر
+TARGET_INFO_RACE_ICE	مقاومة الثلج
+TARGET_INFO_RACE_METIN	حجر الماتين
+TARGET_INFO_RACE_MILGYO	الطائفة السرية
+TARGET_INFO_RACE_ORC	الغيلان
+TARGET_INFO_RACE_UNDEAD	الزومبي
 TARGET_INFO_RACE_WIND	مقاومة الرياح
-TARGET_INFO_STONE_NAME	حجر الشبح
+TARGET_INFO_STONE_NAME	حجر روحي
 TARGET_INFO_SUBRACE	العرق الفرعي: %s
 SWITCHBOT_TITLE	مبدّل الخصائص
 SWITCHBOT_START	بدء
