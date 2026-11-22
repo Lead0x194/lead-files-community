@@ -15,27 +15,27 @@ quest collect_quest_lv85  begin
 		when letter begin
 			local v = find_npc_by_vnum(20084)
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.collect_quest_lv85._010_target)
+				target.vid("__TARGET__", v, "[LC;435]")
 			end
-			send_letter(gameforge.collect_quest_lv85._020_send_letter)
+			send_letter("[LC;436]")
 		end
 
 		when button or info begin
-			say_title(gameforge.collect_quest_lv85._030_say_title)
-			say(gameforge.collect_quest_lv85._040_say)
+			say_title("[LC;437]")
+			say("[LC;438]")
 		end
 		
 		when __TARGET__.target.click or
-			20084.chat.gameforge.collect_quest_lv85._050_npcChat begin
+			20084.chat."[LC;439]" begin
 			target.delete("__TARGET__")
-			say(gameforge.collect_quest_lv85._055_say)
-			say(gameforge.collect_quest_lv85._060_say)
+			say(nil)
+			say("[LC;441]")
 			wait()
-			say(gameforge.collect_quest_lv85._064_say)
-			say(gameforge.collect_quest_lv85._065_say)
+			say("[LC;442]")
+			say("[LC;443]")
 			wait()
-			say(gameforge.collect_quest_lv85._069_say)
-			say(gameforge.collect_quest_lv85._070_say)
+			say("[LC;444]")
+			say("[LC;445]")
 			set_state(go_to_disciple)
 			pc.setqf("duration",0)  -- ?? ?? ?? ??
 			pc.setqf("collect_count",0)--??? ?? ??? ?
@@ -45,28 +45,28 @@ quest collect_quest_lv85  begin
 
 	state go_to_disciple begin
 		when letter begin
-			send_letter(gameforge.collect_quest_lv85._080_send_letter)
+			send_letter("[LC;446]")
 			
 		end
 		when button or info begin
-			say_title(gameforge.collect_quest_lv85._090_say_title)
+			say_title("[LC;447]")
 			---                                                   l
-			say(gameforge.collect_quest_lv85._100_say)
+			say("[LC;448]")
 			say_item_vnum(30167) 
-			say_reward(gameforge.collect_quest_lv85._105_1_say_reward	.." "..pc.getqf("collect_count")..gameforge.collect_quest_lv85._105_2_say_reward)
+			say_reward("[LC;449]"	.." "..pc.getqf("collect_count").."[LC;450]")
 		end
 		
 		when 71035.use begin --??? ??
 			if get_time() < pc.getqf("duration") then
-				say(gameforge.collect_quest_lv85._110_say)
+				say("[LC;451]")
 				return
 			end
 			if pc.getqf("drink_drug")==1 then
-				say(gameforge.collect_quest_lv85._115_say)
+				say("[LC;452]")
 				return
 			end
 			if pc.count_item(30167)==0 then
-				say(gameforge.collect_quest_lv85._120_say)
+				say("[LC;453]")
 				return
 			end
 
@@ -77,16 +77,16 @@ quest collect_quest_lv85  begin
 			local s = number(1, 200)
 			if s == 1  then
 				pc.give_item2(30167)
-				send_letter(gameforge.collect_quest_lv85._130_send_letter)
+				send_letter("[LC;454]")
 			end	
 		end
 
 
 		
-    	when 20084.chat.gameforge.collect_quest_lv85._140_npcChat with pc.count_item(30167) >0   begin
+    	when 20084.chat."[LC;455]" with pc.count_item(30167) >0   begin
 			if get_time() > pc.getqf("duration") then
-				say(gameforge.collect_quest_lv85._149_say)
-				say(gameforge.collect_quest_lv85._150_say)
+				say("[LC;456]")
+				say("[LC;457]")
 				pc.remove_item(30167, 1)
 				if  is_test_server()  then 
 					pc.setqf("duration",get_time()+2) 
@@ -107,29 +107,29 @@ quest collect_quest_lv85  begin
 				   if pc.getqf("collect_count")< 39 then     --40??? 
 						local index =pc.getqf("collect_count")+1 
 						pc.setqf("collect_count",index)     --?? ???? +1 ???
-						say(gameforge.collect_quest_lv85._159_say)
-						say(gameforge.collect_quest_lv85._160_say)
-						say(gameforge.collect_quest_lv85._165_1_say.." "..40-pc.getqf("collect_count").. gameforge.collect_quest_lv85._165_2_say)
-						say(gameforge.collect_quest_lv85._170_say)
+						say("[LC;458]")
+						say("[LC;459]")
+						say("[LC;460]".." "..40-pc.getqf("collect_count").. "[LC;461]")
+						say("[LC;462]")
 						pc.setqf("drink_drug",0)	 --?? ???
 						return
 					end
-					say(gameforge.collect_quest_lv85._174_say)
-					say(gameforge.collect_quest_lv85._175_say)
+					say("[LC;463]")
+					say("[LC;464]")
 					pc.setqf("collect_count",0)
 					pc.setqf("drink_drug",0)	
 					pc.setqf("duration",0) 
 					set_state(key_item)
 					return
 				else
-				say(gameforge.collect_quest_lv85._179_say)
-				say(gameforge.collect_quest_lv85._180_say)
+				say("[LC;465]")
+				say("[LC;466]")
 				pc.setqf("drink_drug",0)	 --?? ???
 				return
 				end
 		else
-		  say(gameforge.collect_quest_lv85._185_say)
-		  say(gameforge.collect_quest_lv85._190_say)
+		  say("[LC;467]")
+		  say("[LC;468]")
 		  return
 		end
 
@@ -139,27 +139,27 @@ end
 
 	state key_item begin
 		when letter begin
-			send_letter(gameforge.collect_quest_lv85._195_send_letter)
+			send_letter("[LC;469]")
 			
 			if pc.count_item(30226)>0 then	
 				local v = find_npc_by_vnum(20084)
 				if v != 0 then
-					target.vid("__TARGET__", v, gameforge.collect_quest_lv85._010_target)
+					target.vid("__TARGET__", v, "[LC;435]")
 				end
 			end
 
 		end
 		when button or info begin
 			if pc.count_item(30226) >0 then
-				say_title(gameforge.collect_quest_lv85._200_say_title)
-				say(gameforge.collect_quest_lv85._210_say)
+				say_title("[LC;470]")
+				say("[LC;471]")
 				return
 			end
 
-			say_title(gameforge.collect_quest_lv85._220_say_title)
-			say(gameforge.collect_quest_lv85._230_say)
+			say_title("[LC;472]")
+			say("[LC;473]")
 			say_item_vnum(30226)
-			say(gameforge.collect_quest_lv85._240_say)
+			say("[LC;474]")
 		end
 		
 
@@ -168,16 +168,16 @@ end
 			local s = number(1, 200)
 			if s == 1 and pc.count_item(30226)==0 then
 				pc.give_item2(30226)
-				send_letter(gameforge.collect_quest_lv85._250_send_letter)
+				send_letter("[LC;475]")
 			end	
 		end
 
 
 		
-		when __TARGET__.target.click  or 20084.chat.gameforge.collect_quest_lv85._255_npcChat with pc.count_item(30226) > 0  begin
+		when __TARGET__.target.click  or 20084.chat."[LC;476]" with pc.count_item(30226) > 0  begin
 		    target.delete("__TARGET__")
-			say(gameforge.collect_quest_lv85._260_say)
-			say(gameforge.collect_quest_lv85._265_say)
+			say("[LC;477]")
+			say("[LC;478]")
 			pc.remove_item(30226,1)
 			set_state(__reward)
 		end
@@ -186,30 +186,30 @@ end
 	
 	state __reward begin
 		when letter begin
-			send_letter(gameforge.collect_quest_lv85._270_send_letter)
+			send_letter("[LC;479]")
 			
 			local v = find_npc_by_vnum(20018)
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.collect_quest_lv85._280_target)
+				target.vid("__TARGET__", v, "[LC;480]")
 			end
 
 		end
 		when button or info begin
-			say_title(gameforge.collect_quest_lv85._290_say_title)
-			say(gameforge.collect_quest_lv85._300_say)
+			say_title("[LC;481]")
+			say("[LC;482]")
 
 		end
 		
-		when __TARGET__.target.click  or	20018.chat.gameforge.collect_quest_lv85._310_npcChat  begin
+		when __TARGET__.target.click  or	20018.chat."[LC;483]"  begin
 		    target.delete("__TARGET__")
-			say(gameforge.collect_quest_lv85._311_say)
-			say(gameforge.collect_quest_lv85._315_say)
+			say("[LC;484]")
+			say("[LC;485]")
 			wait()
-			say(gameforge.collect_quest_lv85._311_say)
-			say(gameforge.collect_quest_lv85._316_say)
-			say_reward(gameforge.collect_quest_lv85._317_say_reward)
-			say_reward(gameforge.collect_quest_lv85._318_say_reward)
-			say_reward(gameforge.collect_quest_lv85._319_say_reward)
+			say("[LC;484]")
+			say("[LC;486]")
+			say_reward("[LC;487]")
+			say_reward("[LC;488]")
+			say_reward("[LC;489]")
 			say("")
 			pc.give_item2(50115) 
 			clear_letter()

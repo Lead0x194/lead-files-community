@@ -30,58 +30,58 @@ quest olympic_badge begin
 			if 0 != v then
 				target.vid("__TARGET__", v, "")
 			end
-			send_letter(gameforge.olympic_badge._060_npcChat)
+			send_letter("[LC;6433]")
 		end
 
 		when info or button with pc.level>=30 begin
 			say("")
-			say(gameforge.olympic_badge._190_say)
+			say("[LC;6446]")
 			say("")
 		end
-		when __TARGET__.target.click or 20017.chat.gameforge.olympic_badge._010_npcChat	with  game.get_event_flag("medal_part_drop") >= 1 and pc.level>=30 begin
+		when __TARGET__.target.click or 20017.chat."[LC;6428]"	with  game.get_event_flag("medal_part_drop") >= 1 and pc.level>=30 begin
 			target.delete("__TARGET__")
 
 			say("")
 			say_title(mob_name(20017))
-			say(gameforge.olympic_badge._020_say)
-			say(gameforge.olympic_badge._030_say)
+			say("[LC;6429]")
+			say("[LC;6430]")
 			wait()
 			say("")
 			say_title(mob_name(20017))
-			say(gameforge.olympic_badge._040_say)
-			say(gameforge.olympic_badge._050_say)
+			say("[LC;6431]")
+			say("[LC;6432]")
 			local s = select(locale.yes, locale.no)
 			if 2 == s then
-				say(gameforge.olympic_badge._140_say)
+				say("[LC;6441]")
 				local a = select(locale.yes, locale.no)
 				if 2 == a then
 					say_title(mob_name(20017))
-					say(gameforge.olympic_badge._150_say)
+					say("[LC;6442]")
 					say("")
 					return
 				end
 				say("")
 				say_title(mob_name(20017))
-				say(gameforge.olympic_badge._160_say)
+				say("[LC;6443]")
 				set_state(__GIVEUP__)
 				return
 			end	
 			
 			say("")
 			say_title(mob_name(20017))
-			say(gameforge.olympic_badge._170_say)
+			say("[LC;6444]")
 			set_state(step1)
 		end	
 	end
 
 	state step1 begin
 		when letter with pc.level>=30 begin
-			send_letter(gameforge.olympic_badge._060_npcChat)
+			send_letter("[LC;6433]")
 		end
 
 		when info or button with pc.level>=30 begin
 			say("")
-			say(gameforge.olympic_badge._180_say)
+			say("[LC;6445]")
 			say("")
 		end
 		
@@ -92,19 +92,19 @@ quest olympic_badge begin
 			end
 		end
 		
-		when 20017.chat.gameforge.olympic_badge._060_npcChat with  game.get_event_flag("medal_part_drop") >= 1 and pc.level>=30 begin
+		when 20017.chat."[LC;6433]" with  game.get_event_flag("medal_part_drop") >= 1 and pc.level>=30 begin
 			say_title(mob_name(20017))
-			say(gameforge.olympic_badge._070_say)
+			say("[LC;6434]")
 			wait()
 			if  count_item_range(30265,30269)== 0  then
-				say(gameforge.olympic_badge._100_say)
+				say("[LC;6437]")
 				return
 			elseif olympic_badge.has_it() ==0  then
-				say(gameforge.olympic_badge._110_say)
+				say("[LC;6438]")
 				return
 			else 
 				say_title(mob_name(20017))
-				say(gameforge.olympic_badge._120_say)
+				say("[LC;6439]")
 				wait()	
 				pc.remove_item(30265)
 				pc.remove_item(30266) 
@@ -113,7 +113,7 @@ quest olympic_badge begin
 				pc.remove_item(30269) 
 				if pc.getqf ("medal_done") == 0 then
 					say_title(mob_name(20017))
-					say(gameforge.olympic_badge._130_say)
+					say("[LC;6440]")
 					-- show items
 					say_item_vnum(71158)
 					--say_item_vnum(71159)
@@ -131,7 +131,7 @@ quest olympic_badge begin
 				end   --if
 				
 				say_title(mob_name(20017))
-				say(gameforge.olympic_badge._130_say)
+				say("[LC;6440]")
 				say_item_vnum(50249)
 				pc.give_item2(50249)
 			end    --if 

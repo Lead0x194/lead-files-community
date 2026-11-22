@@ -12,65 +12,65 @@ quest subquest_34 begin
 			local v = find_npc_by_vnum(20355)
 
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_16._320_makequestbutton)
+				target.vid("__TARGET__", v, "[LC;7384]")
 			end
 		end
 
 				
-		when __TARGET__.target.click or	20355.chat.gameforge.subquest_34._10_npcChat with pc.level >= 40  begin
+		when __TARGET__.target.click or	20355.chat."[LC;7946]" with pc.level >= 40  begin
 			target.delete("__TARGET__")
-			say_title(gameforge.subquest_34._20_sayTitle)
-			say(gameforge.subquest_34._30_say)
+			say_title("[LC;7958]")
+			say("[LC;7960]")
 			wait()
-			say_title(gameforge.subquest_34._20_sayTitle)
-			say(gameforge.subquest_34._40_say)
-			local s= select(gameforge.subquest_31._50_select, gameforge.locale.cancel)
+			say_title("[LC;7958]")
+			say("[LC;7961]")
+			local s= select("[LC;7840]", "[LC;1891]")
 			if 2==s then
-				say(gameforge.subquest_34._50_say)
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;7962]")
+				local a= select("[LC;2059]", "[LC;2035]")
 				if  2==a then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_34._60_say)
+					say_title("[LC;4082]")
+					say("[LC;7963]")
 					return
 				end
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_34._70_say)
+				say_title("[LC;4082]")
+				say("[LC;7964]")
 				set_state(__GIVEUP__)
 				return
 			end
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_34._80_say)
+			say_title("[LC;4082]")
+			say("[LC;7965]")
 			set_state(bye_blackwind)
 		end	
 	end
 	state bye_blackwind begin
 		when letter begin
-			send_letter(gameforge.subquest_34._90_sendLetter)
+			send_letter("[LC;7966]")
 		end
 
 		when info or button begin
-			say_title(gameforge.subquest_34._90_sendLetter)
-			say(gameforge.subquest_34._100_say)
+			say_title("[LC;7966]")
+			say("[LC;7945]")
 		end
-		when 20355.chat.gameforge.subquest_34._90_sendLetter with pc.level >=32 begin
-			say_title(gameforge.subquest_34._20_sayTitle)
-			say(gameforge.subquest_34._110_say)
-			local s= select(gameforge.subquest_34._120_select, gameforge.subquest_31._180_select)
+		when 20355.chat."[LC;7966]" with pc.level >=32 begin
+			say_title("[LC;7958]")
+			say("[LC;7947]")
+			local s= select("[LC;7948]", "[LC;7825]")
 			if 2==s then
-				say(gameforge.subquest_34._130_say)
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;7949]")
+				local a= select("[LC;2059]", "[LC;2035]")
 				if  2==a then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_34._140_say)
+					say_title("[LC;4082]")
+					say("[LC;7950]")
 					return
 				end
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_34._150_say)
+				say_title("[LC;4082]")
+				say("[LC;7951]")
 				set_state(__GIVEUP__)
 				return
 			end
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_34._160_say)
+			say_title("[LC;4082]")
+			say("[LC;7952]")
 		end
 		
 	
@@ -107,28 +107,28 @@ quest subquest_34 begin
 	
 	state hunt_reward begin
 		when letter begin
-			send_letter(gameforge.subquest_34._170_targetVid)
+			send_letter("[LC;7953]")
 		
 			local v = find_npc_by_vnum(20355)
 
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_34._170_targetVid)
+				target.vid("__TARGET__", v, "[LC;7953]")
 			end
 		end
 
 		when info or button begin
-			say_title(gameforge.subquest_34._170_targetVid)
-			say(gameforge.subquest_34._180_say)
+			say_title("[LC;7953]")
+			say("[LC;7954]")
 		end
 		
-		when __TARGET__.target.click or	20355.chat.gameforge.subquest_34._185_npcChat begin
+		when __TARGET__.target.click or	20355.chat."[LC;7955]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.subquest_34._20_sayTitle)
-			say(gameforge.subquest_34._190_say)
-			say_reward(gameforge.subquest_34._200_sayReward)
+			say_title("[LC;7958]")
+			say("[LC;7956]")
+			say_reward("[LC;7957]")
 			pc.give_item2(71007)
 			
-			say_reward(gameforge.subquest_34._210_sayReward)
+			say_reward("[LC;7959]")
 			pc.give_exp2(1000000)
 			
 			set_state(__COMPLETE__)

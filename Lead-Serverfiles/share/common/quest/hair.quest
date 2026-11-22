@@ -213,7 +213,7 @@ quest hair begin
         when login begin
             -- Announce Mention
             if pc.getqf("limit_time") > get_time() then
-                notice_multiline(gameforge.hair._110_notice,notice)
+                notice_multiline("[LC;1401]",notice)
             else
                 if pc.get_part( PART_HAIR ) > 1000 and nil == pc.get_wear(20) then
 					--pc.set_part( PART_HAIR , 0 )
@@ -291,9 +291,9 @@ quest hair begin
 			item.remove()
 		end
 
-		when 20355.chat.gameforge.hair._010_npcChat with is_test_server() begin
-			say_title(gameforge.hair._011_sayTitle)
-			say(gameforge.hair._012_say)
+		when 20355.chat."[LC;1387]" with is_test_server() begin
+			say_title("[LC;1388]")
+			say("[LC;1389]")
 			say("")
 
 			local vnum = input_number()
@@ -301,7 +301,7 @@ quest hair begin
 			wait()
 
 			if hair.My_hair_item(vnum, 1) == nil and hair.My_hair_item(vnum - 1000, 1) then
-				say("VNUM : " .. vnum .. gameforge.hair._013_say)
+				say("VNUM : " .. vnum .. "[LC;1390]")
 				return
 			end
 
@@ -352,12 +352,12 @@ quest hair begin
 
 			end
 
-			syschat(gameforge.hair._014_say)
+			syschat("[LC;1391]")
 
 		end
 
 
-		when 20355.chat.gameforge.hair._030_npcChat with pc.get_part(3) >= 1000 and pc.getqf("original_vnum") == 0 and nil == pc.get_wear(20) begin
+		when 20355.chat."[LC;1392]" with pc.get_part(3) >= 1000 and pc.getqf("original_vnum") == 0 and nil == pc.get_wear(20) begin
 			-- 514 : AFFECT_HAIR
 			local applyOn = affect.get_apply_on(514)
 
@@ -380,10 +380,10 @@ quest hair begin
 
 
 			say_title(mob_name(20355))
-			say(gameforge.hair._040_say)
+			say("[LC;1393]")
 			say("")
 
-			local s = select(gameforge.locale.confirm, gameforge.locale.cancel)
+			local s = select("[LC;1919]", "[LC;1891]")
 			
 			if s == 2 then
 				return
@@ -391,7 +391,7 @@ quest hair begin
 
 			if 0 == currentModel or pc.getqf("original_vnum") != 0 then
 				say_title(mob_name(20355))
-				say(gameforge.hair._090_say) 
+				say("[LC;1398]") 
 				say("")
 				return
 			end
@@ -401,13 +401,13 @@ quest hair begin
 
 				if 0 == currentModel or nil != wearCostumeHair then
 					say_title(mob_name(20355))
-					say(gameforge.hair._050_say) 
+					say("[LC;1394]") 
 					say("")
 				end
 				
 				if pc.getqf("original_vnum") != 0 then
 			        say_title(mob_name(20355))
-			        say(gameforge.hair._050_say)
+			        say("[LC;1394]")
 			        say("")
 					return
 				end
@@ -420,7 +420,7 @@ quest hair begin
 				elseif 4 == race or 8 == race then	vnum = vnum + 69750
 				else
 					say_title(mob_name(20355))
-					say(gameforge.hair._060_say)
+					say("[LC;1395]")
 					return
 				end
 
@@ -431,7 +431,7 @@ quest hair begin
 				local applyType = hair.point_to_apply(applyOn)
 
 				if nil == applyType then
-					say(gameforge.hair._070_say)
+					say("[LC;1396]")
 					return
 				end
 
@@ -451,7 +451,7 @@ quest hair begin
 
 				if false == bFound then
 					say_title(mob_name(20355))
-					say(gameforge.hair._060_say)
+					say("[LC;1395]")
 					return
 				end
 
@@ -493,11 +493,11 @@ quest hair begin
 			pc.setqf( "limit_time", 0 )
 			pc.setqf( "original_vnum", vnum )
 			say_title(mob_name(20355))
-			say(gameforge.hair._80_say)
+			say(nil)
 			say_show_item(vnum)
-			say(" " ..  item_name(vnum) .. gameforge.hair._090_say)
+			say(" " ..  item_name(vnum) .. "[LC;1398]")
 			say("")
-			say(gameforge.hair._100_say)
+			say("[LC;1399]")
 		end
 	end
 end

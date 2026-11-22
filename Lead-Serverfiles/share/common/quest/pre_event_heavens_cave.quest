@@ -110,28 +110,28 @@ quest pre_event_heavens_cave begin
 			return sushivnum
 		end
 		
-		when 20090.chat.gameforge.pre_event_heavens_cave._10_npcChat with pc.get_level() >= 15 and pc.get_map_index() <= 43 and game.get_event_flag("hc_drop") > 0 begin
-			say(gameforge.pre_event_heavens_cave._20_say)
-			say(gameforge.pre_event_heavens_cave._30_say)
+		when 20090.chat."[LC;6672]" with pc.get_level() >= 15 and pc.get_map_index() <= 43 and game.get_event_flag("hc_drop") > 0 begin
+			say("[LC;6683]")
+			say("[LC;6694]")
 			if pc.get_map_index() == 3 then
-				say(gameforge.pre_event_heavens_cave._40_say)
+				say("[LC;6698]")
 			elseif pc.get_map_index() == 23 then
-				say(gameforge.pre_event_heavens_cave._50_say)
+				say("[LC;6699]")
 			elseif pc.get_map_index() == 43 then
-				say(gameforge.pre_event_heavens_cave._60_say)
+				say("[LC;6700]")
 			end
 			wait()
-			say(gameforge.pre_event_heavens_cave._70_say)
-			say(gameforge.pre_event_heavens_cave._80_say)
+			say("[LC;6701]")
+			say("[LC;6702]")
 			say_item_vnum(30178)
 			local maxlevel = pc.get_level()
 			local glyphcount = 0
 			glyphcount = pc.count_item(30178)
 			if glyphcount > 0 then -- Glyphstone
-				local giveglyphstone = select(gameforge.pre_event_heavens_cave._90_1_select, gameforge.pre_event_heavens_cave._90_2_select)
+				local giveglyphstone = select("[LC;6703]", "[LC;6704]")
 				if giveglyphstone == 1 then
 					say_pc_name()
-					say(gameforge.pre_event_heavens_cave._100_say)
+					say("[LC;6671]")
 					local pickpotion = 0
 					if pc.get_level() < 24 and pc.get_level() >= 20 then
 						pickpotion = math.random(0,8)
@@ -210,21 +210,21 @@ quest pre_event_heavens_cave begin
 						potion3amount = pc.count_item(30178) *3
 					end
 					wait()
-					say(gameforge.pre_event_heavens_cave._20_say)
-					say(gameforge.pre_event_heavens_cave._110_say)
+					say("[LC;6683]")
+					say("[LC;6673]")
 					say(string.format("%dx", potion1amount))
 					say_item_vnum(potion1)
 					say(string.format("%dx", potion2amount))
 					say_item_vnum(potion2)
 					wait()
-					say(string.format(gameforge.pre_event_heavens_cave._120_say, potion3amount))
+					say(string.format("[LC;6674;%d]", potion3amount))
 					say_item_vnum(potion3)
 					local choosereward = 
 						select(
 							string.format("%d %s", potion1amount, item_name(potion1)), 
 							string.format("%d %s", potion2amount, item_name(potion2)), 
 							string.format("%d %s", potion3amount, item_name(potion3)), 
-							gameforge.pre_event_heavens_cave._130_4_select)
+							"[LC;6675]")
 					if choosereward < 4 then 
 						local glyphstones = pc.count_item(30178)
 						pc.remove_item(30178, glyphstones)
@@ -235,27 +235,27 @@ quest pre_event_heavens_cave begin
 						elseif choosereward == 2 then pc.give_item2(potion2, potion2amount)
 						elseif choosereward == 3 then pc.give_item2(potion3, potion3amount)
 						end
-						say(gameforge.pre_event_heavens_cave._20_say)
-						say(string.format(gameforge.pre_event_heavens_cave._140_say, glyphcount))
+						say("[LC;6683]")
+						say(string.format("[LC;6676;%d]", glyphcount))
 						say_pc_name()
-						local eventstory = select(gameforge.pre_event_heavens_cave._150_1_select, gameforge.pre_event_heavens_cave._150_2_select)
+						local eventstory = select("[LC;6677]", "[LC;6678]")
 						if eventstory == 1 then
-							say(gameforge.pre_event_heavens_cave._20_say)
-							say(gameforge.pre_event_heavens_cave._160_say)
-							say(gameforge.pre_event_heavens_cave._170_say)
-							say(gameforge.pre_event_heavens_cave._180_say) 
-							say(gameforge.pre_event_heavens_cave._190_say)
-							say(gameforge.pre_event_heavens_cave._200_say)
+							say("[LC;6683]")
+							say("[LC;6679]")
+							say("[LC;6680]")
+							say(nil) 
+							say("[LC;6681]")
+							say("[LC;6682]")
 							wait()
 							if pc.getqf("goldstatus") == 0 then
-								say(string.format(gameforge.pre_event_heavens_cave._210_say, item_name(30180)))
+								say(string.format("[LC;6684]", item_name(30180)))
 								say_item_vnum(30180) -- Dragongod Amulet
 								pc.setqf("goldstatus", 2)
-								say(string.format(gameforge.pre_event_heavens_cave._220_say, mob_name(20009), mob_name(9012)))
+								say(string.format("[LC;6685]", mob_name(20009), mob_name(9012)))
 								wait()
-								say(gameforge.pre_event_heavens_cave._230_say)
+								say("[LC;6686]")
 							else
-								say(gameforge.pre_event_heavens_cave._240_say)
+								say("[LC;6687]")
 							end
 							say_item_vnum(50626) -- mined gold 200 Yang
 							say_item_vnum(80008) -- gold nugget 100.000 Yang
@@ -266,7 +266,7 @@ quest pre_event_heavens_cave begin
 							say_item_vnum(80007) -- gold bar 2.000.000 Yang
 						end
 					else 
-						say(gameforge.pre_event_heavens_cave._250_say)
+						say("[LC;6688]")
 					end
 				else
 					--notice("failed") -- tbd
@@ -274,13 +274,13 @@ quest pre_event_heavens_cave begin
 			end
 		end
 		
-		when 20090.chat.gameforge.pre_event_heavens_cave._260_npcChat with pc.getqf("goldstatus") > 0 begin
+		when 20090.chat."[LC;6689]" with pc.getqf("goldstatus") > 0 begin
 			if game.get_event_flag("hc_drop") == 0 then
 				set_state(__COMPLETE__)
 			end
 			if pc.count_item(80005) == 0 and pc.count_item(80006) == 0 and pc.count_item(80007) == 0 and pc.count_item(80008) == 0 and pc.count_item(50626) == 0 then
-				say(gameforge.pre_event_heavens_cave._20_say)
-				say(string.format(gameforge.pre_event_heavens_cave._270_say, item_name(30180)))
+				say("[LC;6683]")
+				say(string.format("[LC;6690]", item_name(30180)))
 				say(item_name(80005)) -- gold bar 500.000 Yang
 				say(item_name(80006)) -- gold bar 1.000.000 Yang
 				say(item_name(80007)) -- gold bar 2.000.000 Yang
@@ -288,7 +288,7 @@ quest pre_event_heavens_cave begin
 				say(item_name(50626)) -- mined gold 200 Yang
 				return
 			end
-			say(gameforge.pre_event_heavens_cave._280_say)
+			say("[LC;6691]")
 			local checkinventory = {}
 			checkinventory[1] = {}
 			checkinventory[1]["vnum"] = 80005
@@ -321,15 +321,15 @@ quest pre_event_heavens_cave begin
 			until goldcounter > 5
 			local choosegold = 0
 			if buttoncounter == 2 then
-				choosegold = select(gameforge.pre_event_heavens_cave._290_select, string.format("%dx %s", gold[1].amount, gold[1].name))
+				choosegold = select("[LC;6692]", string.format("%dx %s", gold[1].amount, gold[1].name))
 			elseif buttoncounter == 3 then
-				choosegold = select(gameforge.pre_event_heavens_cave._290_select, string.format("%dx %s", gold[1].amount, gold[1].name), string.format("%dx %s", gold[2].amount, gold[2].name))
+				choosegold = select("[LC;6692]", string.format("%dx %s", gold[1].amount, gold[1].name), string.format("%dx %s", gold[2].amount, gold[2].name))
 			elseif buttoncounter == 4 then
-				choosegold = select(gameforge.pre_event_heavens_cave._290_select, string.format("%dx %s", gold[1].amount, gold[1].name), string.format("%dx %s", gold[2].amount, gold[2].name), string.format("%dx %s", gold[3].amount, gold[3].name))
+				choosegold = select("[LC;6692]", string.format("%dx %s", gold[1].amount, gold[1].name), string.format("%dx %s", gold[2].amount, gold[2].name), string.format("%dx %s", gold[3].amount, gold[3].name))
 			elseif buttoncounter == 5 then
-				choosegold = select(gameforge.pre_event_heavens_cave._290_select, string.format("%dx %s", gold[1].amount, gold[1].name), string.format("%dx %s", gold[2].amount, gold[2].name), string.format("%dx %s", gold[3].amount, gold[3].name), string.format("%dx %s", gold[4].amount, gold[4].name))
+				choosegold = select("[LC;6692]", string.format("%dx %s", gold[1].amount, gold[1].name), string.format("%dx %s", gold[2].amount, gold[2].name), string.format("%dx %s", gold[3].amount, gold[3].name), string.format("%dx %s", gold[4].amount, gold[4].name))
 			elseif buttoncounter == 6 then
-				choosegold = select(gameforge.pre_event_heavens_cave._290_select, string.format("%dx %s", gold[1].amount, gold[1].name), string.format("%dx %s", gold[2].amount, gold[2].name), string.format("%dx %s", gold[3].amount, gold[3].name), string.format("%dx %s", gold[4].amount, gold[4].name), string.format("%dx %s", gold[5].amount, gold[5].name))
+				choosegold = select("[LC;6692]", string.format("%dx %s", gold[1].amount, gold[1].name), string.format("%dx %s", gold[2].amount, gold[2].name), string.format("%dx %s", gold[3].amount, gold[3].name), string.format("%dx %s", gold[4].amount, gold[4].name), string.format("%dx %s", gold[5].amount, gold[5].name))
 			end
 			if choosegold > 1 then
 				choosegold = choosegold -1
@@ -363,16 +363,16 @@ quest pre_event_heavens_cave begin
 					pc.setqf("personalvalue", personalvalue)
 				end
 				if pc.getqf("goldstatus") == 2 then
-					say(gameforge.pre_event_heavens_cave._20_say)
-					say(gameforge.pre_event_heavens_cave._300_say)
+					say("[LC;6683]")
+					say("[LC;6693]")
 					pc.give_item2(30180) -- give Dragongod Amulet to player
 					pc.setqf("goldstatus", 1)
-					say(string.format(gameforge.pre_event_heavens_cave._310_say, item_name(30180), mob_name(20009), mob_name(9012)))
+					say(string.format("[LC;6695]", item_name(30180), mob_name(20009), mob_name(9012)))
 				else
-					say(gameforge.pre_event_heavens_cave._20_say)
-					say(gameforge.pre_event_heavens_cave._320_say)
+					say("[LC;6683]")
+					say("[LC;6696]")
 				end
-				say(string.format(gameforge.pre_event_heavens_cave._330_say, globalvalue))
+				say(string.format("[LC;6697;%d]", globalvalue))
 				wait()
 				-- building table for the score
 				local scoretable = {}
@@ -422,22 +422,22 @@ quest pre_event_heavens_cave begin
 				local scorecounter0 = 0
 				local scorecounter1 = 1
 				local savescore = 0
-				say_title(gameforge.pre_event_heavens_cave._340_say_title)
+				say_title(nil)
 				repeat
 					score = string.format("score%d", scorecounter0)
 					savescore = scoretable[scorecounter1]["score"] /100
 					game.set_event_flag(score, savescore)
 					if scorecounter1 == scoreplace then
-						say_reward(string.format(gameforge.pre_event_heavens_cave._350_say_reward, scorecounter1, scoretable[scorecounter1]["score"]))
+						say_reward(string.format(nil, scorecounter1, scoretable[scorecounter1]["score"]))
 					else
-						say(string.format(gameforge.pre_event_heavens_cave._350_say_reward, scorecounter1, scoretable[scorecounter1]["score"]))
+						say(string.format(nil, scorecounter1, scoretable[scorecounter1]["score"]))
 					end
 					scorecounter0 = scorecounter0 +1
 					scorecounter1 = scorecounter1 +1
 				until scorecounter0 == 10
 			else
-				say(gameforge.pre_event_heavens_cave._20_say)
-				say(gameforge.pre_event_heavens_cave._250_say)
+				say("[LC;6683]")
+				say("[LC;6688]")
 			end
 		end
 	end

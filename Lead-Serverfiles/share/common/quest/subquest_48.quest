@@ -10,36 +10,36 @@ quest subquest_48  begin
 			local v=find_npc_by_vnum(20355)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.subquest_16._320_makequestbutton)
+				target.vid("__TARGET__", v, "[LC;7384]")
 			end
 		end
 
-		when __TARGET__.target.click or	20355.chat.gameforge.subquest_48._10_npcChat  begin
+		when __TARGET__.target.click or	20355.chat."[LC;8316]"  begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_48._20_say)
+			say_title("[LC;4082]")
+			say("[LC;8327]")
 			wait()
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_48._30_say)
+			say_title("[LC;4082]")
+			say("[LC;8338]")
 			wait()
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_48._40_say)
-			local r= select(gameforge.find_brother_article._90_select, gameforge.find_brother_article._100_select)
+			say_title("[LC;4082]")
+			say("[LC;8339]")
+			local r= select("[LC;971]", "[LC;931]")
 			if 2==r then
-				say(gameforge.subquest_48._50_say)
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;8340]")
+				local a= select("[LC;2059]", "[LC;2035]")
 				if 2==a then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_48._60_say)
+					say_title("[LC;4082]")
+					say("[LC;8341]")
 					return
 				end
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_48._70_say)
+				say_title("[LC;4082]")
+				say("[LC;8342]")
 				set_state(__GIVEUP__)
 				return
 			end
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_48._80_say)
+			say_title("[LC;4082]")
+			say("[LC;8343]")
 			set_state(go_to_otherland)
 
 		end
@@ -47,8 +47,8 @@ quest subquest_48  begin
 	state go_to_otherland begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.subquest_48._90_makequestbutton)
-			q.set_title(gameforge.subquest_48._90_makequestbutton)
+			makequestbutton("[LC;8344]")
+			q.set_title("[LC;8344]")
 			q.start()
 		end
 
@@ -68,43 +68,43 @@ quest subquest_48  begin
 			local empire = pc.get_empire()
 
 			if empire==1 then
-				say_title(gameforge.subquest_48._100_sayTitle)
+				say_title("[LC;8315]")
 
-				say(gameforge.subquest_48._110_say)
+				say("[LC;8317]")
 			elseif  empire ==2 then
-				say_title(gameforge.subquest_48._100_sayTitle)
+				say_title("[LC;8315]")
 
-				say(gameforge.subquest_48._120_say)
+				say("[LC;8318]")
 			elseif  empire ==3 then
-				say_title(gameforge.subquest_48._100_sayTitle)
+				say_title("[LC;8315]")
 
-				say(gameforge.subquest_48._130_say)
+				say("[LC;8319]")
 			end
 	end
 
 
 
-		when __TARGET__.target.click or 9009.chat.gameforge.subquest_48._140_npcChat  with subquest_48.is_other_vil() ==1  begin
+		when __TARGET__.target.click or 9009.chat."[LC;8320]"  with subquest_48.is_other_vil() ==1  begin
 			 target.delete("__TARGET__")
-			 say_title(gameforge.manwoo._20_sayTitle)
-			 say(gameforge.subquest_48._150_say)
+			 say_title("[LC;5431]")
+			 say("[LC;8321]")
 			 wait()
-			 say_title(gameforge.fisher._30_sayTitle)
-			 say(gameforge.subquest_48._160_say)
+			 say_title("[LC;1032]")
+			 say("[LC;8322]")
 			 wait()
-			 say_title(gameforge.fisher._30_sayTitle)
-			 say(gameforge.subquest_48._170_say)
+			 say_title("[LC;1032]")
+			 say("[LC;8323]")
 			 wait()
-			 say_title(gameforge.fisher._30_sayTitle)
-			 say(gameforge.subquest_48._180_say)
+			 say_title("[LC;1032]")
+			 say("[LC;8324]")
 			 wait()
-			 say_title(gameforge.buy_fishrod._210_sayTitle)
-			 			 say_reward(gameforge.subquest_48._190_sayReward)
+			 say_title("[LC;44]")
+			 			 say_reward("[LC;8325]")
 			 			 wait("")
 			say_pc_name()
-			say(gameforge.subquest_48._200_say)
+			say("[LC;8326]")
 			say_item_vnum(27873)
-			say_reward(gameforge.subquest_48._210_sayReward)
+			say_reward("[LC;8328]")
 			pc.give_item2(27873,3)
 			set_state(back_to_boss)
 
@@ -115,12 +115,12 @@ quest subquest_48  begin
 state back_to_boss begin
 	when letter begin
 
-			send_letter(gameforge.subquest_48._220_sendLetter)
+			send_letter("[LC;8329]")
 			if subquest_48.is_my_vil()==1  then
 				local v=find_npc_by_vnum(20355)
 				if 0==v then
 				else
-					target.vid("__TARGET__", v, gameforge.subquest_48._230_targetVid)
+					target.vid("__TARGET__", v, "[LC;8330]")
 				end
 			end
 
@@ -129,16 +129,16 @@ state back_to_boss begin
 			local empire = pc.get_empire()
 
 			if empire==1 then  --das Reich Shinsu
-				say_title(gameforge.subquest_48._100_sayTitle)
+				say_title("[LC;8315]")
 
-				say(gameforge.subquest_48._240_say)
+				say("[LC;8331]")
 			elseif  empire ==2 then --das Reich Chunjo
-				say_title(gameforge.subquest_48._100_sayTitle)
+				say_title("[LC;8315]")
 
-				say(gameforge.subquest_48._250_say)
+				say("[LC;8332]")
 			elseif  empire ==3 then  --das Reich Jinno
-				say_title(gameforge.subquest_48._100_sayTitle)
-				say(gameforge.subquest_48._260_say)
+				say_title("[LC;8315]")
+				say("[LC;8333]")
 			end
 
 		end
@@ -157,12 +157,12 @@ state back_to_boss begin
 
 
 
-		when __TARGET__.target.click or 20355.chat.gameforge.subquest_48._270_npcChat  with subquest_48.is_my_vil() ==1 begin
+		when __TARGET__.target.click or 20355.chat."[LC;8334]"  with subquest_48.is_my_vil() ==1 begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_48._280_say)
-			say_reward(gameforge.subquest_48._290_sayReward)
-			say_reward(gameforge.subquest_48._300_sayReward)
+			say_title("[LC;4082]")
+			say("[LC;8335]")
+			say_reward("[LC;8336]")
+			say_reward("[LC;8337]")
 			
 			pc.change_money(50000)			 
 		    pc.give_exp2(5500000)

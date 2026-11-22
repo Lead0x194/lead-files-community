@@ -10,44 +10,44 @@ quest new_quest_lv26 begin
 		when enter or login begin
 			-- added Rui, adding scroll and quest in the quest menu --
 			-- notice("Entering Info state!")
-			send_letter(gameforge.new_quest_lv26._020_set_title)
+			send_letter("[LC;5737]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv26._020_set_title)
+			q.set_title("[LC;5737]")
 			-- finished --
 			local find_npc = 20019
 			local v=find_npc_by_vnum(find_npc) -- Yang-Shin
 			if 0!=v then
-				target.vid("__TARGET__", v, gameforge.new_quest_lv26._010_target) -- place questarrow
+				target.vid("__TARGET__", v, "[LC;5735]") -- place questarrow
 			end
 		end
 		
 		-- added Rui, adding scroll and quest in the quest menu --
 		when button or info begin
-			say_title(gameforge.new_quest_lv26._020_set_title)
-			say(gameforge.new_quest_lv26._021_say)
+			say_title("[LC;5737]")
+			say("[LC;5738]")
 		end
 		-- Finished
-		when 20019.chat.gameforge.new_quest_lv26._020_set_title  begin -- when Yang-Shin is clicked
+		when 20019.chat."[LC;5737]"  begin -- when Yang-Shin is clicked
 			target.delete("__TARGET__") -- delete questarrow
-			say_title(gameforge.new_quest_lv26._020_say_title) -- yellow text headline in the conversation window when talking to Yang-Shin
-			say(gameforge.new_quest_lv26._025_say ) -- white font text
-			local doquest = select(gameforge.subquest_06._40_select, gameforge.subquest_12._50_select, gameforge.new_quest_lv75._290_2_select)
+			say_title("[LC;5736]") -- yellow text headline in the conversation window when talking to Yang-Shin
+			say("[LC;5739]" ) -- white font text
+			local doquest = select("[LC;7148]", "[LC;7304]", "[LC;6200]")
 			if doquest == 1 then
 				set_state(find_nakajima) -- Quest approved
 			elseif doquest == 3 then -- abort permantenly
-				say(gameforge.subquest_06._60_say)
-				local abortquest = select(gameforge.subquest_06._70_select, gameforge.subquest_06._80_select)
+				say("[LC;7170]")
+				local abortquest = select("[LC;7173]", "[LC;7174]")
 				if abortquest == 1 then
 					-- say("")
 					set_state(__GIVEUP__)
 				else
-					say_title(gameforge.new_quest_lv26._020_say_title) -- yellow text headline in the conversation window when talking to Yang-Shin
-					say(gameforge.subquest_11._80_say)
+					say_title("[LC;5736]") -- yellow text headline in the conversation window when talking to Yang-Shin
+					say("[LC;7288]")
 					return
 				end
 			else
-				say_title(gameforge.new_quest_lv26._020_say_title) -- yellow text headline in the conversation window when talking to Yang-Shin
-				say(gameforge.subquest_11._80_say)
+				say_title("[LC;5736]") -- yellow text headline in the conversation window when talking to Yang-Shin
+				say("[LC;7288]")
 				return
 			end
 		end
@@ -56,26 +56,26 @@ quest new_quest_lv26 begin
 	state find_nakajima begin
 		when enter or login begin
 			local v=find_npc_by_vnum(20364) -- Nakajima
-			send_letter(gameforge.new_quest_lv26._020_set_title ) --EDIT by Arne 21Sep09, Reason: no letter
+			send_letter("[LC;5737]" ) --EDIT by Arne 21Sep09, Reason: no letter
 			q.start()
-			q.set_title(gameforge.new_quest_lv26._020_set_title ) -- for quest-journal again
+			q.set_title("[LC;5737]" ) -- for quest-journal again
 			if 0!=v then
-				target.vid("__TARGET2__", v, gameforge.new_quest_lv26._030_target) -- place questarrow
+				target.vid("__TARGET2__", v, "[LC;5740]") -- place questarrow
 			end
 		end
 		when button or info begin -- text displayed in quest-journal conversation window
-			say_title(gameforge.new_quest_lv26._036_say_title)
-			say(gameforge.new_quest_lv26._037_say) -- EDIT by Arne 21Sept09, Reason - strange hint text as if talking to a character
+			say_title("[LC;5745]")
+			say("[LC;5746]") -- EDIT by Arne 21Sept09, Reason - strange hint text as if talking to a character
 			say("")
-			say(string.format(gameforge.new_quest_lv26._038_say, get_map_name_by_number(3)))
+			say(string.format("[LC;5747;%s]", get_map_name_by_number(3)))
 		end
 		
-		when 20364.chat.gameforge.new_quest_lv26._020_set_title begin -- When Nakajima is clicked
+		when 20364.chat."[LC;5737]" begin -- When Nakajima is clicked
 			target.delete("__TARGET2__") -- delete questarrow
 			-- conversation with Nakajima follows
-			say_title(gameforge.new_quest_lv26._034_say_title)
-			say(gameforge.new_quest_lv26._031_say) --EDIT by Arne 21Sept09, Reason - missing intro
-			say(gameforge.new_quest_lv26._032_say) -- white font text
+			say_title("[LC;5743]")
+			say("[LC;5741]") --EDIT by Arne 21Sept09, Reason - missing intro
+			say("[LC;5742]") -- white font text
 			-- heisst es nicht eigentlich "vor den Grauen des Krieges Geflüchtet"?
 			q.done()
 			set_state(news_for_ahyu)
@@ -85,35 +85,35 @@ quest new_quest_lv26 begin
 	state news_for_ahyu begin
 				
 		when enter or login begin -- EDIT by Arne 22Sept09, Reason: enter state to start quest when on same map
-			send_letter(gameforge.new_quest_lv26._020_set_title) --EDIT Arne 21Sept09, Reason: no letter
+			send_letter("[LC;5737]") --EDIT Arne 21Sept09, Reason: no letter
 			q.start()
-			q.set_title(gameforge.new_quest_lv26._020_set_title)
+			q.set_title("[LC;5737]")
 			 --EDIT by Arne 21Sep09, Reason: no letter
 			if is_destination_village(1) then -- 
 				local v=find_npc_by_vnum(20003) -- Ah-Yu
 				if 0!=v then
-					target.vid("__TARGET3__", v, gameforge.new_quest_lv26._050_target) -- place questarrow on Ah-Yu
+					target.vid("__TARGET3__", v, "[LC;5749]") -- place questarrow on Ah-Yu
 					q.start()
-					q.set_title(gameforge.new_quest_lv26._020_set_title) --for quest-journal
+					q.set_title("[LC;5737]") --for quest-journal
 				end
 			end		
 		end
 		when button or info begin
-			say_title(gameforge.new_quest_lv26._020_set_title)
-			say(gameforge.new_quest_lv26._051_say)
+			say_title("[LC;5737]")
+			say("[LC;5750]")
 			say("")
-			say(string.format(gameforge.new_quest_lv26._052_say, get_map_name_by_number(1)))
+			say(string.format("[LC;5751;%s]", get_map_name_by_number(1)))
 		end
 		
-		when 20003.chat.gameforge.new_quest_lv26._020_set_title begin -- when Ah-Yu is clicked
+		when 20003.chat."[LC;5737]" begin -- when Ah-Yu is clicked
 			new_quest_lv26_talkdone = 1
 			target.delete("__TARGET3__") -- delete questarrow
 			-- conversation with Ah-Yu
-			say_title(gameforge.new_quest_lv26._035_say_title)
-			say(gameforge.new_quest_lv26._057_say) -- white font text
+			say_title("[LC;5744]")
+			say("[LC;5752]") -- white font text
 			wait()
-			say_title(gameforge.new_quest_lv26._035_say_title)
-			say(gameforge.new_quest_lv26._058_say)
+			say_title("[LC;5744]")
+			say("[LC;5753]")
 			if pc.get_sex() == 0 then -- gives a red rose if the char is male, so that he could give it to a female char.
 				pc.give_item2(50024)
 			else pc.get_sex() -- gives a yellow rose if the char is female, so that she could give it to a male char.
@@ -121,7 +121,7 @@ quest new_quest_lv26 begin
 			end
 			local v=find_npc_by_vnum(20019) -- Yang-Shin
 			if 0!=v then
-				target.vid("__TARGET4__", v, gameforge.new_quest_lv26._010_target)
+				target.vid("__TARGET4__", v, "[LC;5735]")
 			end
 			q.done()
 			set_state(happy_hunting_grounds)
@@ -135,29 +135,29 @@ quest new_quest_lv26 begin
 			if is_destination_village(2) then -- 
 				local v=find_npc_by_vnum(20019) -- Yang-Shin
 				if 0!=v then
-					target.vid("__TARGET4__", v, gameforge.new_quest_lv26._010_target) -- place questarrow on Yang-Shin
+					target.vid("__TARGET4__", v, "[LC;5735]") -- place questarrow on Yang-Shin
 				end
 			end
-			send_letter(gameforge.new_quest_lv26._020_set_title)
+			send_letter("[LC;5737]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv26._020_set_title) -- for quest-journal
+			q.set_title("[LC;5737]") -- for quest-journal
 		end
 		
 		when button or info begin 
-			say_title(gameforge.new_quest_lv26._020_set_title)
-			say(gameforge.new_quest_lv26._061_say)
+			say_title("[LC;5737]")
+			say("[LC;5754]")
 			wait()
-			say_title(gameforge.new_quest_lv26._020_set_title)
-			say(string.format(gameforge.new_quest_lv26._062_say, get_map_name_by_number(3)))
+			say_title("[LC;5737]")
+			say(string.format("[LC;5755;%s]", get_map_name_by_number(3)))
 		end
 		
-		when 20019.chat.gameforge.new_quest_lv26._020_set_title begin -- when Yang Shin is clicked
+		when 20019.chat."[LC;5737]" begin -- when Yang Shin is clicked
 			target.delete("__TARGET4__") -- delete questarrow
 			-- conversation with Yang-Shin
-			say_title(gameforge.new_quest_lv26._020_say_title)
-			say(gameforge.new_quest_lv26._063_say) -- white font text
-			say_reward(string.format(gameforge.new_quest_lv26._064_sayReward, 35000))
-			say_reward(string.format(gameforge.new_quest_lv26._065_sayReward, 17500))
+			say_title("[LC;5736]")
+			say("[LC;5756]") -- white font text
+			say_reward(string.format("[LC;5757]", 35000))
+			say_reward(string.format("[LC;5758]", 17500))
 			pc.change_money(17500)
 			pc.give_exp2(35000)
 			q.done()

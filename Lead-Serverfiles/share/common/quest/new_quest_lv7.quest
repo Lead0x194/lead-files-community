@@ -21,44 +21,44 @@
             local v=find_npc_by_vnum(20008)
             if 0==v then
             else
-                target.vid("__TARGET__", v, gameforge.new_quest_lv7._010_target)
+                target.vid("__TARGET__", v, "[LC;6079]")
             end
         end
         
-        when 20008.chat.gameforge.new_quest_lv7._020_say_title begin
+        when 20008.chat."[LC;6082]" begin
             target.delete("__TARGET__")
             local empire = pc.get_empire()
-            say_title(gameforge.new_quest_lv7._011_say_title)  -- A Daughters Wedding
-            say(gameforge.new_quest_lv7._021_say) -- Octavio has a daughter and she is in love with a guy for a village
+            say_title("[LC;6080]")  -- A Daughters Wedding
+            say("[LC;6083]") -- Octavio has a daughter and she is in love with a guy for a village
                 if empire == 1 then -- = Shinsoo
-                    say(gameforge.new_quest_lv7._022_say) -- The guy lives in a village in the Jayang area
+                    say("[LC;6084]") -- The guy lives in a village in the Jayang area
                 end
                 if empire == 2 then -- = Chunjo
-                    say(gameforge.new_quest_lv7._023_say) -- The guy lives in a village in the Bokjung area
+                    say("[LC;6085]") -- The guy lives in a village in the Bokjung area
                 end
                 if empire == 3 then -- = Jinno
-                    say(gameforge.new_quest_lv7._024_say) -- The guy lives in a village in the Bakra area
+                    say("[LC;6086]") -- The guy lives in a village in the Bakra area
                 end
             wait() -- next button 
-            say_title(gameforge.new_quest_lv7._011_say_title) -- A Daughters Wedding
-            say(gameforge.new_quest_lv7._030_say) -- Octavio heared that she is going to marry him there
-            say(gameforge.new_quest_lv7._031_say) -- Go to the Old Lady and ask her to help with the preperations 
-            local doquest = select(gameforge.subquest_06._40_select, gameforge.subquest_12._50_select, gameforge.new_quest_lv75._290_2_select)
+            say_title("[LC;6080]") -- A Daughters Wedding
+            say("[LC;6087]") -- Octavio heared that she is going to marry him there
+            say("[LC;6088]") -- Go to the Old Lady and ask her to help with the preperations 
+            local doquest = select("[LC;7148]", "[LC;7304]", "[LC;6200]")
             if doquest == 1 then
                 set_state(ask_oldwoman) -- Quest approved
             elseif doquest == 3 then -- abort permantenly
-                say(gameforge.subquest_06._60_say)
-                local abortquest = select(gameforge.subquest_06._70_select, gameforge.subquest_06._80_select)
+                say("[LC;7170]")
+                local abortquest = select("[LC;7173]", "[LC;7174]")
                 if abortquest == 1 then
                     set_state(__GIVEUP__)
                 else
-                    say_title(gameforge.new_quest_lv7._011_say_title)  -- A Daughters Wedding
-                    say(gameforge.subquest_11._80_say)
+                    say_title("[LC;6080]")  -- A Daughters Wedding
+                    say("[LC;7288]")
                     return
                 end
             else
-                say_title(gameforge.new_quest_lv7._011_say_title)  -- A Daughters Wedding
-                say(gameforge.subquest_11._80_say)
+                say_title("[LC;6080]")  -- A Daughters Wedding
+                say("[LC;7288]")
                 return
             end
         end
@@ -96,61 +96,61 @@
             new_quest_lv7_drop2 = 30170 -- Orangefarbene Blume
             new_quest_lv7_drop3 = 30171 --  Duftende gelbe Blume
             -- BEGIN EDIT added by Arne 18Sept09, according to Mantis 0026063, REASON: No quest letter, no questbook entry
-            send_letter(gameforge.new_quest_lv7._020_say_title)  -- A Daughters Wedding
+            send_letter("[LC;6082]")  -- A Daughters Wedding
             q.start()
-            q.set_title(gameforge.new_quest_lv7._020_say_title) -- A Daughters Wedding
+            q.set_title("[LC;6082]") -- A Daughters Wedding
             -- END EDIT
             if new_quest_lv7.is_my_vil() then
                 local v=find_npc_by_vnum(9006) -- Old Lady
                 if 0==v then
                 else
-                    target.vid("__TARGET2__", v, gameforge.new_quest_lv7._040_target ) -- Old Lady
+                    target.vid("__TARGET2__", v, "[LC;6089]" ) -- Old Lady
                 end
             end			
         end
         
             -- BEGIN EDIT added by Arne 18Sept09, according to Mantis 0026063, REASON: No questbook button		
         when button or info begin
-            say_title(gameforge.new_quest_lv7._020_say_title) -- A Daughters Wedding
-            say(gameforge.new_quest_lv7._041_say) -- goto old lady and ask her to help with the preperations
+            say_title("[LC;6082]") -- A Daughters Wedding
+            say("[LC;6090]") -- goto old lady and ask her to help with the preperations
             say("")
-            say(string.format(gameforge.new_quest_lv7._042_say, get_map_name_by_number(1)))  -- where the old lady can be found
+            say(string.format("[LC;6091;%s]", get_map_name_by_number(1)))  -- where the old lady can be found
         end
             --END EDIT
         
-        when 9006.chat.gameforge.new_quest_lv7._020_say_title begin
+        when 9006.chat."[LC;6082]" begin
             target.delete("__TARGET2__")
-            say_title(gameforge.new_quest_lv7._012_say_title) -- yellow text headline
-            say(gameforge.new_quest_lv7._051_say)
+            say_title("[LC;6081]") -- yellow text headline
+            say("[LC;6092]")
         wait()
-            say_title(gameforge.new_quest_lv7._012_say_title) -- yellow text headline
-            say(gameforge.new_quest_lv7._052_say)
+            say_title("[LC;6081]") -- yellow text headline
+            say("[LC;6093]")
             -- "vom Bräutigam an seine Liebste überreicht" versteht das unsere Zielgruppe?
         wait()	
-            say(gameforge.new_quest_lv7._054_say)
+            say("[LC;6094]")
             say_reward(string.format("%s x", new_quest_lv7_AmountNeed1))
             say_item_vnum(new_quest_lv7_drop1) -- icon of item
-            say_reward(gameforge.new_quest_lv7._055_say)
+            say_reward("[LC;6095]")
             say(mob_name(new_quest_lv7_mob1))
         wait()
-            say(gameforge.new_quest_lv7._056_say)
+            say("[LC;6096]")
             say_reward(string.format("%s x", new_quest_lv7_AmountNeed2))
             say_item_vnum(new_quest_lv7_drop2) -- icon of item
-            say_reward(gameforge.new_quest_lv7._055_say)
+            say_reward("[LC;6095]")
             say(mob_name(new_quest_lv7_mob2))
         wait()
-            say(gameforge.new_quest_lv7._056_say)
+            say("[LC;6096]")
             say_reward(string.format("%s x", new_quest_lv7_AmountNeed3))
             say_item_vnum(new_quest_lv7_drop3) -- icon of item
-            say_reward(gameforge.new_quest_lv7._055_say )
+            say_reward("[LC;6095]" )
             say(mob_name(new_quest_lv7_mob3))
             --set flags:
             pc.setqf("collect_count_1",0) --Current number of items
             pc.setqf("collect_count_2",0) --Current number of items
             pc.setqf("collect_count_3",0) --Current number of items
         wait()
-            say_title(gameforge.new_quest_lv7._012_say_title)
-            say(gameforge.new_quest_lv7._060_say)
+            say_title("[LC;6081]")
+            say("[LC;6097]")
             -- Wo ist die Schwester?
             q.done()
             set_state(collect_flowers)
@@ -169,9 +169,9 @@
             new_quest_lv7_drop1 = 30169 -- Blutrote Blume
             new_quest_lv7_drop2 = 30170 -- Orangefarbene Blume
             new_quest_lv7_drop3 = 30171 --  Duftende gelbe Blume
-            send_letter(gameforge.new_quest_lv7._020_say_title)	
+            send_letter("[LC;6082]")	
             q.start()
-            q.set_title(gameforge.new_quest_lv7._020_say_title)
+            q.set_title("[LC;6082]")
                 
         end
         --END EDIT		
@@ -186,12 +186,12 @@
                     pc.give_item2(itemIcon) -- icon of item by vnum - Blutrote Blume
                     --  EDIT Arne 18Sept09 moved q.done    Reason: removed quest from book
                     -- BEGIN EDIT added by Arne 18Sept09, according to Mantis 0026063, REASON: No arrow on old lady for flower return	
-                    notice_multiline(gameforge.new_quest_lv7._088_notice, notice)
+                    notice_multiline("[LC;6108]", notice)
                     if (pc.count_item(new_quest_lv7_drop3) == new_quest_lv7_AmountNeed3 and pc.count_item(new_quest_lv7_drop2) == new_quest_lv7_AmountNeed2 and pc.count_item(new_quest_lv7_drop1) == new_quest_lv7_AmountNeed1) then
             return true
             end
                 else
-            notice_multiline(gameforge.new_quest_lv7._082_say, notice)
+            notice_multiline("[LC;6099]", notice)
         end
             end
         end
@@ -223,18 +223,18 @@
         -------------- info if a flower dropped
         --EDIT Arne 18Sept09: Setting up an alternate event as I could not get the other one to work properly
         when button or info begin
-            say_title(gameforge.new_quest_lv7._020_say_title)
-            say(gameforge.new_quest_lv7._092_say) -- collect flowers for the Bouquet
+            say_title("[LC;6082]")
+            say("[LC;6112]") -- collect flowers for the Bouquet
             if pc.count_item(new_quest_lv7_drop1) < new_quest_lv7_AmountNeed1 then
-                say_reward(string.format(gameforge.new_quest_lv7._085_1_say_reward, new_quest_lv7_AmountNeed1 - 
+                say_reward(string.format("[LC;6102;%s]", new_quest_lv7_AmountNeed1 - 
     pc.count_item(new_quest_lv7_drop1))) -- number of red flowers missing
             end
             if pc.count_item(new_quest_lv7_drop2) < new_quest_lv7_AmountNeed2 then
-                say_reward(string.format(gameforge.new_quest_lv7._085_2_say_reward, new_quest_lv7_AmountNeed2 - 
+                say_reward(string.format("[LC;6103;%s]", new_quest_lv7_AmountNeed2 - 
     pc.count_item(new_quest_lv7_drop2))) -- number of orange flowers missing
             end
             if pc.count_item(new_quest_lv7_drop3) < new_quest_lv7_AmountNeed3 then
-                say_reward(string.format(gameforge.new_quest_lv7._085_3_say_reward, new_quest_lv7_AmountNeed3 - 
+                say_reward(string.format("[LC;6104;%s]", new_quest_lv7_AmountNeed3 - 
     pc.count_item(new_quest_lv7_drop3))) -- number of yellow flowers missing
             end
         end
@@ -251,33 +251,33 @@
             new_quest_lv7_drop2 = 30170 -- Orangefarbene Blume
             new_quest_lv7_drop3 = 30171 --  Duftende gelbe Blume
             local v=find_npc_by_vnum(9006)
-            send_letter(gameforge.new_quest_lv7._020_say_title)
+            send_letter("[LC;6082]")
             q.start()
-            q.set_title(gameforge.new_quest_lv7._020_say_title)
+            q.set_title("[LC;6082]")
             if 0==v then
                 else
-                    target.vid("__TARGET6__", v, gameforge.new_quest_lv7._040_target)
+                    target.vid("__TARGET6__", v, "[LC;6089]")
             end
         end
         
         when button or info begin
-            say_title(gameforge.new_quest_lv7._020_say_title)
-            say(gameforge.new_quest_lv7._091_say) -- success return to old lady
+            say_title("[LC;6082]")
+            say("[LC;6111]") -- success return to old lady
             say("")
-            say(string.format(gameforge.new_quest_lv7._042_say, get_map_name_by_number(1)))
+            say(string.format("[LC;6091;%s]", get_map_name_by_number(1)))
         end
     --END EDIT
 
         -------------- try to give old woman the flowers ---------------------
-        when 9006.chat.gameforge.new_quest_lv7._020_say_title begin
+        when 9006.chat."[LC;6082]" begin
             target.delete("__TARGET6__")
-            say_title(gameforge.new_quest_lv7._012_say_title)
+            say_title("[LC;6081]")
             if (pc.count_item(new_quest_lv7_drop1) < new_quest_lv7_AmountNeed1 or pc.count_item(new_quest_lv7_drop2) < new_quest_lv7_AmountNeed2 or pc.count_item(new_quest_lv7_drop3) < new_quest_lv7_AmountNeed3) then
-                say(gameforge.new_quest_lv7._110_say)
-                say_reward(string.format(gameforge.new_quest_lv7._085_say_reward, new_quest_lv7_AmountNeed1 - pc.count_item(new_quest_lv7_drop1)))
-                say_reward(string.format(gameforge.new_quest_lv7._086_say_reward, new_quest_lv7_AmountNeed2 - pc.count_item(new_quest_lv7_drop2)))
-                say_reward(string.format(gameforge.new_quest_lv7._087_say_reward, new_quest_lv7_AmountNeed3 - pc.count_item(new_quest_lv7_drop3)))
-                say(gameforge.new_quest_lv7._081_say)
+                say("[LC;6113]")
+                say_reward(string.format("[LC;6105;%s]", new_quest_lv7_AmountNeed1 - pc.count_item(new_quest_lv7_drop1)))
+                say_reward(string.format("[LC;6106;%s]", new_quest_lv7_AmountNeed2 - pc.count_item(new_quest_lv7_drop2)))
+                say_reward(string.format("[LC;6107;%s]", new_quest_lv7_AmountNeed3 - pc.count_item(new_quest_lv7_drop3)))
+                say("[LC;6098]")
                 set_state(collect_flowers)
             else
                 pc.remove_item(30169, 1)
@@ -285,16 +285,16 @@
                 pc.remove_item(30171, 1)
                 pc.give_item2(30172) -- flowers
                 -- game.drop_item(30169, 1)
-                say(gameforge.new_quest_lv7._115_say)
+                say("[LC;6116]")
                 -- hier fehlt info wie man in das reich kommt
                 if pc.get_empire() == 1 then -- = Shinsoo
-                    say_reward(gameforge.new_quest_lv7._118_say_reward) -- you will find her in the village of the area Yayang
+                    say_reward("[LC;6119]") -- you will find her in the village of the area Yayang
                 end
                 if pc.get_empire() == 2 then -- = Chunjo
-                    say_reward(gameforge.new_quest_lv7._116_say_reward) -- you will find her in the village of the area Bokjung
+                    say_reward("[LC;6117]") -- you will find her in the village of the area Bokjung
                 end
                 if pc.get_empire() == 3 then -- = Jinno
-                    say_reward(gameforge.new_quest_lv7._117_say_reward) -- you will find her in the village of the area Bakra
+                    say_reward("[LC;6118]") -- you will find her in the village of the area Bakra
                 end
                 q.done()
                 set_state(find_empire)
@@ -306,9 +306,9 @@
     state find_empire begin
         when login or enter begin
             -- BEGIN EDIT added by Arne 18Sept09, according to Mantis 0026063, REASON: No letter
-            send_letter(gameforge.new_quest_lv7._020_say_title)
+            send_letter("[LC;6082]")
             q.start()
-            q.set_title(gameforge.new_quest_lv7._020_say_title)
+            q.set_title("[LC;6082]")
             -- END EDIT
             new_quest_lv7_DestMapIndex = 99
             if pc.get_empire() == 1 then -- = Shinsoo
@@ -316,30 +316,30 @@
                 local v=find_npc_by_vnum(10001)
                 if 0==v then
                 else
-                    target.vid("__TARGET7__", v, gameforge.map_warp._190_select)
+                    target.vid("__TARGET7__", v, "[LC;5455]")
                 end
             elseif pc.get_empire() == 2 then -- = Chunjo
                 new_quest_lv7_DestMapIndex = 23 -- = Bokjung
                 local v=find_npc_by_vnum(10003)
                 if 0==v then
                 else
-                    target.vid("__TARGET7__", v, gameforge.map_warp._210_select)
+                    target.vid("__TARGET7__", v, "[LC;5459]")
                 end
             elseif pc.get_empire() == 3 then -- = Jinno
                 new_quest_lv7_DestMapIndex = 43 -- = Bakra
                 local v=find_npc_by_vnum(10005)
                 if 0==v then
                 else
-                    target.vid("__TARGET7__", v, gameforge.map_warp._230_select)
+                    target.vid("__TARGET7__", v, "[LC;5461]")
                 end
             end
             if pc.get_map_index() == new_quest_lv7_DestMapIndex  then
                 target.delete("__TARGET7__")
-                notice_multiline(gameforge.new_quest_lv7._125_notice, notice)
+                notice_multiline("[LC;6121]", notice)
                 local v=find_npc_by_vnum(9006)
                 if 0==v then
                 else
-                    target.vid("__TARGET3__", v, gameforge.subquest_48._230_targetVid)
+                    target.vid("__TARGET3__", v, "[LC;8330]")
                 end
                 set_state(goto_oldwomans_sister)
             end
@@ -347,60 +347,60 @@
         
         when button or info begin
             
-            say_title(gameforge.new_quest_lv7._020_say_title)
-            say(gameforge.new_quest_lv7._131_say)
+            say_title("[LC;6082]")
+            say("[LC;6124]")
             if new_quest_lv7_DestMapIndex == 3 then 
-                say_reward(gameforge.new_quest_lv7._134_say_reward)
+                say_reward("[LC;6127]")
             elseif new_quest_lv7_DestMapIndex == 23 then 
-                say_reward(gameforge.new_quest_lv7._132_say_reward)
+                say_reward("[LC;6125]")
             elseif new_quest_lv7_DestMapIndex == 43 then 
-                say_reward(gameforge.new_quest_lv7._133_say_reward)
+                say_reward("[LC;6126]")
             end
         end
     end
     ------  find the sister of the old woman in a different empire ------------------------------------------------------------------------------------------------------
     state goto_oldwomans_sister begin
         when enter or login begin
-            send_letter(gameforge.new_quest_lv7._020_say_title)
+            send_letter("[LC;6082]")
             q.start()
-            q.set_title(gameforge.new_quest_lv7._020_say_title)
+            q.set_title("[LC;6082]")
         end
         
-        when 9006.chat.gameforge.new_quest_lv7._020_say_title begin
+        when 9006.chat."[LC;6082]" begin
             if pc.count_item(30172) >= 1 then -- has flowers in inventory
                 target.delete("__TARGET3__")
-                say_title(gameforge.new_quest_lv7._020_say_title) -- yellow
+                say_title("[LC;6082]") -- yellow
                 pc.remove_item(30172, pc.count_item(30172))
                 say_title(pc.get_name())
-                        say(gameforge.new_quest_lv7._140_say)
-                        say_title(gameforge.new_quest_lv7._012_say_title)
-                say(gameforge.new_quest_lv7._141_say)
+                        say("[LC;6131]")
+                        say_title("[LC;6081]")
+                say("[LC;6132]")
                 wait()
-                        say_title(gameforge.new_quest_lv7._012_say_title)
-                say(gameforge.new_quest_lv7._142_say)
+                        say_title("[LC;6081]")
+                say("[LC;6133]")
                 q.done()
                 set_state(find_way_home)
                 return
             else
                 target.delete("__TARGET3__")
-                say(gameforge.new_quest_lv7._143_say)
-                say(gameforge.new_quest_lv7._144_say_reward)
+                say("[LC;6134]")
+                say("[LC;6135]")
                 q.done()
                 set_state(ask_oldwoman)
             end
         end
         when button or info begin
-            q.set_title(gameforge.new_quest_lv7._020_say_title)
-            say(gameforge.new_quest_lv7._145_say)
+            q.set_title("[LC;6082]")
+            say("[LC;6136]")
         end
     end
     ------ return to first village ------------------------------------------------------------------------------------------------------
     state find_way_home begin
         when login or enter begin
             -- BEGIN EDIT added by Arne 18Sept09, according to Mantis 0026063, REASON: No letter
-            send_letter(gameforge.new_quest_lv7._020_say_title)
+            send_letter("[LC;6082]")
             q.start()
-            q.set_title(gameforge.new_quest_lv7._020_say_title)
+            q.set_title("[LC;6082]")
             -- END EDIT
             new_quest_lv7_HomeMapIndex = 99
             if pc.get_empire() == 1 then -- = Shinsoo
@@ -408,46 +408,46 @@
                 local v=find_npc_by_vnum(10002)
                 if 0==v then
                 else
-                    target.vid("__TARGET7__", v, gameforge.map_warp._180_select)
+                    target.vid("__TARGET7__", v, "[LC;5453]")
                 end
             elseif pc.get_empire() == 2 then -- = Chunjo
                 new_quest_lv7_HomeMapIndex = 21 -- = Joan
                 local v=find_npc_by_vnum(10004)
                 if 0==v then
                 else
-                    target.vid("__TARGET7__", v, gameforge.map_warp._200_select)
+                    target.vid("__TARGET7__", v, "[LC;5457]")
                 end
             elseif pc.get_empire() == 3 then -- = Jinno
                 new_quest_lv7_HomeMapIndex = 41 -- = Pyungmoo
                 local v=find_npc_by_vnum(10006)
                 if 0==v then
                 else
-                    target.vid("__TARGET7__", v, gameforge.map_warp._220_select)
+                    target.vid("__TARGET7__", v, "[LC;5460]")
                 end
             end
             if pc.get_map_index() == new_quest_lv7_HomeMapIndex  then
                 target.delete("__TARGET7__")
-                notice_multiline(gameforge.new_quest_lv7._129_say, notice)
+                notice_multiline("[LC;6122]", notice)
                 local v=find_npc_by_vnum(20008)
                 if 0==v then
                 else
-                    target.vid("__TARGET5__", v, gameforge.subquest_48._230_targetVid)
+                    target.vid("__TARGET5__", v, "[LC;8330]")
                 end
                 set_state(back_to_octavio)
             end
         end
         
         when button or info begin
-            say_title(gameforge.new_quest_lv7._020_say_title)
+            say_title("[LC;6082]")
             local empire = pc.get_empire()
             if empire == 1 then -- = Shinsoo
-                say(gameforge.new_quest_lv7._135_say)
+                say("[LC;6128]")
             end
             if empire == 2 then -- = Chunjo
-                say(gameforge.new_quest_lv7._136_say)
+                say("[LC;6129]")
             end
             if empire == 3 then -- = Jinno
-                say(gameforge.new_quest_lv7._137_say)
+                say("[LC;6130]")
             end			
         end		
         
@@ -459,38 +459,38 @@
             local v=find_npc_by_vnum(20008)
             if 0==v then
             else
-                target.vid("__TARGET5__", v, gameforge.new_quest_lv7._010_target)
+                target.vid("__TARGET5__", v, "[LC;6079]")
             end
             -- adding empire name to octavio job
-            send_letter(gameforge.new_quest_lv7._020_say_title)		
+            send_letter("[LC;6082]")		
             q.start()
-            q.set_title(gameforge.new_quest_lv7._020_say_title)
+            q.set_title("[LC;6082]")
             -- END EDIT
             soup = false
         end
         
         when button or info begin
-            say_title(gameforge.new_quest_lv7._020_say_title)
-            say(gameforge.new_quest_lv7._129_say)
+            say_title("[LC;6082]")
+            say("[LC;6122]")
         end
         
         
-        when 20008.chat.gameforge.new_quest_lv7._020_say_title begin
+        when 20008.chat."[LC;6082]" begin
             target.delete("__TARGET5__")
-            say_title(gameforge.new_quest_lv7._020_say_title)
+            say_title("[LC;6082]")
             if npc.get_empire() == pc.get_empire() then
                 if soup then
-                    say(gameforge.new_quest_lv7._150_say)
+                    say("[LC;6137]")
                 end
-                say(gameforge.new_quest_lv7._151_say)
-                say(gameforge.new_quest_lv7._152_say)
+                say("[LC;6138]")
+                say("[LC;6139]")
 
                 -- random reward
                 local reward=new_quest_lv7.reward()
                 local reward_exp=new_quest_lv7.reward_exp()
 
-                say_reward(string.format(gameforge.new_quest_lv7._154_say_reward,reward_exp))
-                say_reward(string.format(gameforge.new_quest_lv7._155_say_reward,reward))
+                say_reward(string.format("[LC;6141;%s]",reward_exp))
+                say_reward(string.format("[LC;6142;%s]",reward))
                 
                 pc.give_exp2(new_quest_lv7.reward_exp())
                 pc.change_money(new_quest_lv7.reward())
@@ -579,14 +579,14 @@
                 end
                 if reward_item != "0" then
                     wait()
-                    say_reward(gameforge.new_quest_lv7._153_say_reward)
+                    say_reward("[LC;6140]")
                     say_item_vnum(reward_item)
                     pc.give_item2(reward_item,1)
                 end
                 set_state(__COMPLETE__)
             else
-                say(gameforge.new_quest_lv7._160_say)
-                say(gameforge.new_quest_lv7._165_say)
+                say("[LC;6143]")
+                say("[LC;6144]")
                 soup = true
             end
         end

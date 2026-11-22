@@ -1,21 +1,21 @@
 quest neutral_warp begin
 	state start begin
-		when 20009.chat.gameforge.neutral_warp._10_npcChat begin
-			say_title(gameforge.neutral_warp._20_sayTitle)
+		when 20009.chat."[LC;5598]" begin
+			say_title("[LC;5599]")
 
-			say(gameforge.neutral_warp._30_say)
-			local s =  select(gameforge.locale.neutral_warp.go, gameforge.locale.neutral_warp.not_go)
+			say("[LC;5600]")
+			local s =  select("[LC;2827]", "[LC;2831]")
 
 			if 2 == s then
 				return
 			end
 
 			local cost = 1000
-			say_title(gameforge.neutral_warp._20_sayTitle)
+			say_title("[LC;5599]")
 
-			say(string.format(gameforge.neutral_warp._40_say, cost))
+			say(string.format("[LC;5601;%s]", cost))
 			if pc.gold < cost then
-				say(gameforge.locale.oldwoman.not_enough_money)
+				say("[LC;2834]")
 				return
 			end
 
@@ -32,12 +32,12 @@ quest neutral_warp begin
 
 			if m == 1 or m == 21 or m == 41 then
 				if pc.count_item(30180) == 0 then
-					s =  select(gameforge.locale.quiz_33_1_choice, gameforge.neutral_warp._50_select, gameforge.locale.cancel)
+					s =  select("[LC;3281]", "[LC;5602]", "[LC;1891]")
 					if 3 == s then
 						return
 					end
 				else
-					s =  select(gameforge.locale.quiz_33_1_choice, gameforge.neutral_warp._50_select, gameforge.map_warp._97_select, gameforge.locale.cancel)
+					s =  select("[LC;3281]", "[LC;5602]", "[LC;5478]", "[LC;1891]")
 					if 4 == s then
 						return
 					end
@@ -67,12 +67,12 @@ quest neutral_warp begin
 
 			elseif m == 3 or m == 23 or m == 43 then
 				if pc.count_item(30180) == 0 then
-					s =  select(gameforge.locale.quiz_33_2_choice, gameforge.neutral_warp._60_select, gameforge.locale.cancel)
+					s =  select("[LC;3282]", "[LC;5603]", "[LC;1891]")
 					if 3 == s then
 						return
 					end
 				else 
-					s =  select(gameforge.locale.quiz_33_2_choice, gameforge.neutral_warp._60_select, gameforge.map_warp._97_select, gameforge.locale.cancel)
+					s =  select("[LC;3282]", "[LC;5603]", "[LC;5478]", "[LC;1891]")
 					if 4 == s then
 						return
 					end

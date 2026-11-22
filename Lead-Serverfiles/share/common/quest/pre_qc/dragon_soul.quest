@@ -1,7 +1,7 @@
 quest dragon_soul begin
 	state start begin
 		when levelup or letter with pc.level >= 30 begin
-			send_letter(gameforge.dragon_soul._1010_sendLetter)
+			send_letter("[LC;763]")
 			local v = find_npc_by_vnum(20001)
 			
 			if 0 != v then
@@ -9,23 +9,23 @@ quest dragon_soul begin
 			end
 		end
 		when info or button begin
-			say(gameforge.dragon_soul._1020_say)
+			say("[LC;764]")
 		end
 
-		when 20001.chat.gameforge.dragon_soul._1030_npcChat with pc.level >= 30 begin
+		when 20001.chat."[LC;765]" with pc.level >= 30 begin
 			target.delete("__TARGET__")
 
 			say_title(mob_name(20001))
-			say(gameforge.dragon_soul._1040_say)
+			say("[LC;766]")
 			set_state(state_learning)
 		end
 	end
 	state state_learning begin
 		when letter begin
-			send_letter(gameforge.dragon_soul._1050_sendLetter)
+			send_letter("[LC;767]")
 		end
 		when info or button begin
-			say(gameforge.dragon_soul._1060_say)
+			say("[LC;768]")
 		end
 		when kill begin
 			if npc.is_pc() then
@@ -38,10 +38,10 @@ quest dragon_soul begin
 				end
 			end
 		end
-		when 20001.chat.gameforge.dragon_soul._1050_sendLetter begin
+		when 20001.chat."[LC;767]" begin
 			say_title(mob_name(20001))
 			if pc.count_item(30270) >= 10 then
-				say(gameforge.dragon_soul._1070_say)
+				say("[LC;769]")
 				pc.remove_item(30270, 10)
 				ds.give_qualification()
 				char_log(pc.get_player_id(), 'DS_QUALIFICATION', 'SUCCESS')
@@ -51,16 +51,16 @@ quest dragon_soul begin
 				pc.setf("dragon_soul", "eye_left", 9)
 				set_state(state_farming)
 			else
-				say(gameforge.dragon_soul._1080_say)
+				say("[LC;770]")
 			end
 		end
 	end
 	state state_farming begin
 		when letter begin
-			send_letter(gameforge.dragon_soul._1090_sendLetter)
+			send_letter("[LC;771]")
 		end
 		when info or button begin
-			say(string.format(gameforge.dragon_soul._1100_say, pc.getf("dragon_soul", "eye_left")))
+			say(string.format("[LC;772;%d]", pc.getf("dragon_soul", "eye_left")))
 		end
 		when kill begin
 			if npc.is_pc() then
@@ -87,18 +87,18 @@ quest dragon_soul begin
 				pc.remove_item(30270, 10)
 				pc.give_item2(50255)
 				if 1 == eye_left then
-					notice_multiline(gameforge.dragon_soul._1110_notice, notice)
+					notice_multiline("[LC;774]", notice)
 					set_state(state_closed_season)
 				end
 			end
 		end
-		when 20001.chat.gameforge.dragon_soul._1120_npcChat begin
+		when 20001.chat."[LC;775]" begin
 			say_title(mob_name(20001))
 			local today = math.floor(get_global_time() / 86400)
 			if today == pc.getf("dragon_soul", "eye_timestamp") then
-				say(gameforge.dragon_soul._1130_say)
+				say("[LC;776]")
 			else
-				say(gameforge.dragon_soul._1140_say)
+				say("[LC;777]")
 				pc.setf("dragon_soul", "eye_timestamp", today)
 				pc.setf("dragon_soul", "eye_left", 10)
 			end	
@@ -106,25 +106,25 @@ quest dragon_soul begin
 	end
 	state state_closed_season begin
 		when letter begin
-			send_letter(gameforge.dragon_soul._1150_sendLetter)
+			send_letter("[LC;778]")
 		end
 		when info or button begin
-			say(gameforge.dragon_soul._1160_say)
+			say("[LC;779]")
 			local today = math.floor(get_global_time() / 86400)
 			if today == pc.getf("dragon_soul", "eye_timestamp") then
-				say(gameforge.dragon_soul._1170_say)
+				say("[LC;780]")
 			else
-				say(gameforge.dragon_soul._1180_say)
+				say("[LC;781]")
 			end
 		end
 		
-		when 20001.chat.gameforge.dragon_soul._1090_sendLetter begin
+		when 20001.chat."[LC;771]" begin
 			say_title(mob_name(20001))
 			local today = math.floor(get_global_time() / 86400)
 			if today == pc.getf("dragon_soul", "eye_timestamp") then
-				say(gameforge.dragon_soul._1130_say)
+				say("[LC;776]")
 			else
-				say(gameforge.dragon_soul._1140_say)
+				say("[LC;777]")
 				pc.setf("dragon_soul", "eye_timestamp", today)
 				pc.setf("dragon_soul", "eye_left", 10)
 				set_state(state_farming)

@@ -5,87 +5,87 @@ quest main_quest_lv2 begin
 		when login or levelup or enter with pc.get_level() >= 2 begin
 			set_state ( gototeacher )
 		end
-		when 20354.chat.gameforge.main_quest_lv2._10_npcChat with pc.get_level() < 2 begin
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
-			say(gameforge.main_quest_lv2._20_say)
+		when 20354.chat."[LC;4153]" with pc.get_level() < 2 begin
+			say_title("[LC;4066]")
+			say("[LC;4166]")
 		end
 	end
 	state gototeacher begin
 		when letter begin
 
-			send_letter(gameforge.main_quest_lv2._30_sendLetter)
+			send_letter("[LC;4170]")
 			local v=find_npc_by_vnum(20354)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv2._40_targetVid)
+				target.vid("__TARGET__", v, "[LC;4171]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv2._30_sendLetter)
-						say_reward(gameforge.main_quest_lv2._50_sayReward)
+			say_title("[LC;4170]")
+						say_reward("[LC;4172]")
 					end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
-			say(gameforge.main_quest_lv2._60_say)
+			say_title("[LC;4066]")
+			say("[LC;4173]")
 			wait()
 
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
-			say(gameforge.main_quest_lv2._70_say)
+			say_title("[LC;4066]")
+			say("[LC;4174]")
 			wait()
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.main_quest_lv2._80_sayReward)
-say_reward(string.format(gameforge.main_quest_lv2._90_sayReward,item_name(27001), 15))
+			say_title("[LC;44]")
+						say_reward("[LC;4175]")
+say_reward(string.format("[LC;4176;%s;%s]",item_name(27001), 15))
 			say_item(item_name(27001),27001,"")
 						set_state ( killdog )	
 
 			pc.setqf("state", 0)
-			q.set_counter(gameforge.main_quest_lv2._95_counter, 0)
+			q.set_counter("[LC;4177]", 0)
 		end
 
 	end
 
 	state killdog begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv2._100_sendLetter)
+			send_letter("[LC;4152]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv2._110_sayTitle)
-			say(gameforge.main_quest_lv2._120_sayReward)
-			say_reward(string.format(gameforge.main_quest_lv2._130_sayReward, pc.getqf("state")))
+			say_title("[LC;4154]")
+			say("[LC;4155]")
+			say_reward(string.format("[LC;4156;%s]", pc.getqf("state")))
 		end
 		when 101.kill begin
 			local count = pc.getqf("state") + 1
 
 			if count <= 9 then
 				pc.setqf("state", count)
-				q.set_counter(gameforge.main_quest_lv2._135_counter, 9 - count)
+				q.set_counter("[LC;4157]", 9 - count)
 
 				if count == 9 then
-					say_title(gameforge.main_quest_lv2._140_sayTitle)
-					say(gameforge.main_quest_lv2._150_sayReward)
+					say_title("[LC;4158]")
+					say("[LC;4159]")
 					set_state (gototeacher2)
 				end
 			end
 		end
-		when 20354.chat.gameforge.main_quest_lv2._160_npcChat with pc.getqf("state") < 9 begin
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
+		when 20354.chat."[LC;4160]" with pc.getqf("state") < 9 begin
+			say_title("[LC;4066]")
 
-			say(gameforge.main_quest_lv2._170_say)
+			say("[LC;4161]")
 			if pc.is_gm() then
 				wait()
-				say_title(gameforge.main_quest_lv2._180_sayTitle)
-				say(gameforge.main_quest_lv2._182_say)
-				local s =  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say_title("[LC;4162]")
+				say("[LC;4163]")
+				local s =  select("[LC;2059]", "[LC;2035]")
 				if s == 1 then
 					set_state (gototeacher2)
 				end
 			end
 		end
-		when 20354.chat.gameforge.main_quest_lv2._160_npcChat with pc.getqf("state") >= 9 begin
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
-			say(gameforge.main_quest_lv2._190_say)
+		when 20354.chat."[LC;4160]" with pc.getqf("state") >= 9 begin
+			say_title("[LC;4066]")
+			say("[LC;4164]")
 			set_state (gototeacher2)
 		end
 	end
@@ -94,25 +94,25 @@ say_reward(string.format(gameforge.main_quest_lv2._90_sayReward,item_name(27001)
 			local v=find_npc_by_vnum(20354)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv2._40_targetVid)
+				target.vid("__TARGET__", v, "[LC;4171]")
 			end
 		end
 		when letter begin
-			send_letter(gameforge.main_quest_lv2._200_sendLetter)
+			send_letter("[LC;4165]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv2._200_sendLetter)
-						say_reward(gameforge.main_quest_lv2._150_sayReward)
+			say_title("[LC;4165]")
+						say_reward("[LC;4159]")
 					end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
-			say(gameforge.main_quest_lv2._210_say)
+			say_title("[LC;4066]")
+			say("[LC;4167]")
 			wait()
-			say_title(gameforge.collect_herb_lv4._130_sayTitle)
-						say_reward(gameforge.main_quest_lv2._220_sayReward)
-say_reward(string.format(gameforge.main_quest_lv2._230_sayReward, item_name(27001), 15))
+			say_title("[LC;192]")
+						say_reward("[LC;4168]")
+say_reward(string.format("[LC;4169;%s;%s]", item_name(27001), 15))
 			say_item(item_name(27001),27001,"")
 
 

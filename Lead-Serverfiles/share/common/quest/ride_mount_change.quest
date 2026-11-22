@@ -1,14 +1,14 @@
 quest ride_mount_change begin
 	
 	state start begin
-		when 20090.chat.gameforge.ride_mount_change._010_npcChat with pc.get_map_index() == 72 begin 
+		when 20090.chat."[LC;6804]" with pc.get_map_index() == 72 begin 
 			say_pc_name()
-			say (gameforge.ride_mount_change._020_say)
+			say ("[LC;6805]")
 			
-			say_title(gameforge.ride_mount_change._030_sayTitle)
-			say(gameforge.ride_mount_change._040_say)
+			say_title("[LC;6806]")
+			say("[LC;6807]")
 			
-			local answer = select(gameforge.ride_mount_change._050_select, gameforge.ride_mount_change._060_select)
+			local answer = select("[LC;6808]", "[LC;6809]")
 			
 			if answer == 2 then
 				return

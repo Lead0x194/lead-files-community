@@ -60,9 +60,9 @@ quest new_easter_gift_box_gf begin
 				else
 					item.set_socket(0, n + 1)
 				end
-				syschat (string.format(gameforge.new_christmas_gift_box._010_say, 3, 2 - n))
+				syschat (string.format("[LC;5618;%d;%d]", 3, 2 - n))
 			else
-				syschat (string.format (gameforge.new_christmas_gift_box._020_say, 31 - t / 60))
+				syschat (string.format ("[LC;5619;%d]", 31 - t / 60))
 			end
 		end
 

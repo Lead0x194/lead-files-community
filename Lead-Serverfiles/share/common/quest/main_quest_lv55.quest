@@ -11,29 +11,29 @@ quest main_quest_lv55 begin
 
 state survey8 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv55._10_sendLetter)
+			send_letter("[LC;4459]")
 
 			if main_quest_lv55.is_other_vil()==1  then
 				local v=find_npc_by_vnum(20357)
 				if 0==v then
 				else
-					target.vid("__TARGET1__", v, gameforge.main_quest_lv55._10_sendLetter)
+					target.vid("__TARGET1__", v, "[LC;4459]")
 				end
 			end
 		end
 		when button or info begin
 			local empire = pc.get_empire()
 			if empire ==1 then --Shinsoo
-				say_title(gameforge.main_quest_lv55._10_sendLetter)
-				say(gameforge.main_quest_lv55._20_say)
+				say_title("[LC;4459]")
+				say("[LC;4471]")
 
 			elseif empire ==2 then --Chunjo
-				say_title(gameforge.main_quest_lv55._10_sendLetter)
-				say(gameforge.main_quest_lv55._30_say)
+				say_title("[LC;4459]")
+				say("[LC;4482]")
 
 			elseif empire ==3 then  --Jinno
-				say_title(gameforge.main_quest_lv55._10_sendLetter)
-				say(gameforge.main_quest_lv55._40_say)
+				say_title("[LC;4459]")
+				say("[LC;4494]")
 			end
 
 		end
@@ -50,9 +50,9 @@ state survey8 begin
 			return is_village
 		end
 
-		when __TARGET1__.target.click or 20357.chat.gameforge.main_quest_lv55._50_npcChat with main_quest_lv55.is_other_vil()==1 begin
+		when __TARGET1__.target.click or 20357.chat."[LC;4495]" with main_quest_lv55.is_other_vil()==1 begin
 			say_pc_name()
-			say(gameforge.main_quest_lv55._60_say)
+			say("[LC;4496]")
 			pc.give_item2(30150)
 			set_state ( gototeacher8)
 		end
@@ -60,28 +60,28 @@ state survey8 begin
 
 	state gototeacher8 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv55._70_sendLetter)
+			send_letter("[LC;4497]")
 			if main_quest_lv55.is_my_vil()==1 then
 				local v=find_npc_by_vnum(20011)
 				if 0==v then
 				else
-					target.vid("__TARGET__", v, gameforge.main_quest_lv55._80_targetVid)
+					target.vid("__TARGET__", v, "[LC;4498]")
 				end
 			end
 		end
 		when button or info begin
 			local empire = pc.get_empire()
 			if empire ==2 then --Chonjo
-				say_title(gameforge.main_quest_lv55._70_sendLetter)
-				say(gameforge.main_quest_lv55._90_say)
+				say_title("[LC;4497]")
+				say("[LC;4499]")
 
 			elseif empire ==1 then --Shinsu
-				say_title(gameforge.main_quest_lv55._70_sendLetter)
-				say(gameforge.main_quest_lv55._100_say)
+				say_title("[LC;4497]")
+				say("[LC;4458]")
 
 			elseif empire ==3 then --Jinno
-				say_title(gameforge.main_quest_lv55._70_sendLetter)
-				say(gameforge.main_quest_lv55._110_say)
+				say_title("[LC;4497]")
+				say("[LC;4460]")
 			end
 
 		end
@@ -98,25 +98,25 @@ state survey8 begin
 			return is_village
 		end
 
-		when __TARGET__.target.click or	20011.chat.gameforge.main_quest_lv55._70_sendLetter with main_quest_lv55.is_my_vil()==1 begin
+		when __TARGET__.target.click or	20011.chat."[LC;4497]" with main_quest_lv55.is_my_vil()==1 begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv55._120_say)
+			say_title("[LC;4223]")
+			say("[LC;4461]")
 			wait()
-			say_title(gameforge.main_quest_lv55._130_sayTitle)
-			say_reward(gameforge.main_quest_lv55._140_sayReward)
+			say_title("[LC;4462]")
+			say_reward("[LC;4463]")
 			wait()
-			say_title(gameforge.main_quest_lv55._145_sayTitle)
-			say_reward(gameforge.main_quest_lv55._150_sayReward)
+			say_title("[LC;4464]")
+			say_reward("[LC;4465]")
 			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv55._160_say)
+			say_title("[LC;4223]")
+			say("[LC;4466]")
 			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv55._170_say)
-			say_reward(gameforge.main_quest_lv55._180_sayReward)
+			say_title("[LC;4223]")
+			say("[LC;4467]")
+			say_reward("[LC;4468]")
 			pc.give_exp2(6500000)
-			say_reward(gameforge.main_quest_lv55._190_sayReward)
+			say_reward("[LC;4469]")
 			pc.change_money(162500)
 			pc.remove_item(30150)
 			set_state (last_shot)
@@ -125,18 +125,18 @@ state survey8 begin
 
 	state last_shot begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv55._200_sendLetter)
+			send_letter("[LC;4470]")
 
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv55._210_sayTitle)
-			say(gameforge.main_quest_lv55._220_say)
+			say_title("[LC;4472]")
+			say("[LC;4473]")
 		end
 
 		when 1303.kill begin
 			local s = number(1, 100)
 			if s <= 5 and pc.count_item("30150")==0 then
-				say(gameforge.main_quest_lv55._230_say)
+				say("[LC;4474]")
 				set_state (takepaper)
 			end
 		end
@@ -144,70 +144,70 @@ state survey8 begin
 
 	state takepaper begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv55._240_sendLetter)
+			send_letter("[LC;4475]")
 
 			local v=find_npc_by_vnum(20363)
 			if 0==v then
 			else
-				target.vid("__TARGET1__", v, gameforge.main_quest_lv55._240_sendLetter)
+				target.vid("__TARGET1__", v, "[LC;4475]")
 			end
 
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv55._250_sayTitle)
-			say(gameforge.main_quest_lv55._260_sayReward)
+			say_title("[LC;4476]")
+			say("[LC;4477]")
 			wait()
-			say_title(gameforge.main_quest_lv55._250_sayTitle)
-			say(gameforge.main_quest_lv55._270_say)
+			say_title("[LC;4476]")
+			say("[LC;4478]")
 		end
-		when __TARGET1__.target.click or 20363.chat.gameforge.main_quest_lv55._280_npcChat begin
+		when __TARGET1__.target.click or 20363.chat."[LC;4479]" begin
 			target.delete("__TARGET1__")
-			say_title(gameforge.main_quest_lv55._280_npcChat)
-			say(gameforge.main_quest_lv55._290_say)
+			say_title("[LC;4479]")
+			say("[LC;4480]")
 			pc.give_item2(30150)
 			set_state ( gototeacher)
 		end
 	end
 	state gototeacher begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv55._200_sendLetter)
+			send_letter("[LC;4470]")
 
 			local v=find_npc_by_vnum(20011)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv47._390_targetVid)
+				target.vid("__TARGET__", v, "[LC;4385]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv55._200_sendLetter)
-			say(gameforge.main_quest_lv55._300_say)
+			say_title("[LC;4470]")
+			say("[LC;4481]")
 		end
-		when __TARGET__.target.click or	20011.chat.gameforge.main_quest_lv55._200_sendLetter begin
+		when __TARGET__.target.click or	20011.chat."[LC;4470]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv55._310_say)
+			say_title("[LC;4223]")
+			say("[LC;4483]")
 			wait()
-			say_title(gameforge.main_quest_lv55._320_sayTitle)
-			say_reward(gameforge.main_quest_lv55._330_sayReward)
+			say_title("[LC;4484]")
+			say_reward("[LC;4485]")
 			wait()
-			say_title(gameforge.main_quest_lv55._335_sayTitle)
-			say_reward(gameforge.main_quest_lv55._340_sayReward)
+			say_title("[LC;4486]")
+			say_reward("[LC;4487]")
 			wait()
-			say_title(gameforge.main_quest_lv55._335_sayTitle)
-			say_reward(gameforge.main_quest_lv55._350_sayReward)
+			say_title("[LC;4486]")
+			say_reward("[LC;4488]")
 			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv55._360_say)
+			say_title("[LC;4223]")
+			say("[LC;4489]")
 			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv55._370_say)
-			say_reward(gameforge.main_quest_lv55._380_sayReward)
+			say_title("[LC;4223]")
+			say("[LC;4490]")
+			say_reward("[LC;4491]")
 			pc.give_exp2(7000000)
 
-			say_reward(gameforge.main_quest_lv55._390_sayReward)
+			say_reward("[LC;4492]")
 			pc.change_money(175000)
 
-			say_reward(gameforge.main_quest_lv55._400_sayReward)
+			say_reward("[LC;4493]")
 			pc.give_item2(71012)
 
 			pc.remove_item(30150)

@@ -22,7 +22,7 @@ quest main_quest_flame_lv103 begin
 	
 	state state1_1 begin 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._010_sendLetter) 
+			send_letter("[LC;3886]") 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -30,27 +30,27 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._010_sendLetter) 
-			say(gameforge.main_quest_flame_lv103._020_say) 
+			say_title("[LC;3886]") 
+			say("[LC;3887]") 
 			--say_reward(locale.target_npc_info) 
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._010_sendLetter begin 
+		when YACKHWAN.chat."[LC;3886]" begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._030_say) 
+			say("[LC;3888]") 
 			wait()
 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._040_say) 
+			say("[LC;3889]") 
 			wait()
 
 			say_title(pc.getname()) 
-			say(gameforge.main_quest_flame_lv103._220_say) 
+			say("[LC;3904]") 
 			wait()
 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._060_say) 
+			say("[LC;3890]") 
 			set_state (state1_2)
 		end
 
@@ -60,11 +60,11 @@ quest main_quest_flame_lv103 begin
 	end
 	state state1_2 begin 
 		when enter begin 
-			notice_multiline(gameforge.main_quest_flame_lv103._070_notice,notice)
+			notice_multiline("[LC;3891]",notice)
 		end
 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._010_sendLetter) 
+			send_letter("[LC;3886]") 
 			local v = find_npc_by_vnum(NPC1_1) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(NPC1_1))
@@ -72,20 +72,20 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._080_sayTitle) 
-			say(gameforge.main_quest_flame_lv103._090_say) 
+			say_title("[LC;3892]") 
+			say("[LC;3893]") 
 			--say_reward(locale.target_info) 
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._010_sendLetter begin 
+		when YACKHWAN.chat."[LC;3886]" begin 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._100_say) 
+			say("[LC;3894]") 
 		end
 
 		when NPC1_1.click begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(NPC1_1)) 
-			say(gameforge.main_quest_flame_lv103._110_say) 
+			say("[LC;3895]") 
 			set_state (state1_3)
 		end
 
@@ -95,7 +95,7 @@ quest main_quest_flame_lv103 begin
 	end
 	state state1_3 begin 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._010_sendLetter) 
+			send_letter("[LC;3886]") 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -103,30 +103,30 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._010_sendLetter) 
-			say(gameforge.main_quest_flame_lv103._120_say) 
+			say_title("[LC;3886]") 
+			say("[LC;3896]") 
 			--say_reward(locale.target_npc_info) 
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._010_sendLetter begin 
+		when YACKHWAN.chat."[LC;3886]" begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._130_say) 
+			say("[LC;3897]") 
 			wait()
 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._150_say) 
+			say("[LC;3898]") 
 			wait()
             
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._170_say) 
+			say("[LC;3899]") 
 			wait()--reward
 
-			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 42554000))
+			say_reward(string.format("[LC;4537;%d]", 42554000))
 			pc.give_exp2( 42554000)
-			say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, 163000))
+			say_reward(string.format("[LC;4538;%d]", 163000))
 			pc.change_money( 163000)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71095),1))
+			say_reward(string.format("[LC;4540;%s]", item_name(71095),1))
 			pc.give_item2(71095, 1)
 			say()
 			set_state (state2_1)
@@ -139,7 +139,7 @@ quest main_quest_flame_lv103 begin
 	
 	state state2_1 begin 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._180_sendLetter) 
+			send_letter("[LC;3900]") 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -147,27 +147,27 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._180_sendLetter) 
-			say(gameforge.main_quest_flame_lv103._020_say) 
+			say_title("[LC;3900]") 
+			say("[LC;3887]") 
 			--say_reward(locale.target_npc_info) 
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._180_sendLetter begin 
+		when YACKHWAN.chat."[LC;3900]" begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._190_say) 
+			say("[LC;3901]") 
 			wait()
 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._200_say) 
+			say("[LC;3902]") 
 			wait()
 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._210_say) 
+			say("[LC;3903]") 
 			wait()
 
 			say_title(pc.getname()) 
-			say(gameforge.main_quest_flame_lv103._220_say) 
+			say("[LC;3904]") 
 			set_state (state2_2)
 		end
 
@@ -178,26 +178,26 @@ quest main_quest_flame_lv103 begin
 	state state2_2 begin 
 		when enter begin 
 			pc.setqf("kill_count_1", 0)
-			notice_multiline(gameforge.main_quest_flame_lv103._230_notice,notice)
+			notice_multiline("[LC;3905]",notice)
 		end
 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._180_sendLetter) 
-			q.set_counter_name(gameforge.main_quest_lv98._680_counterName)
+			send_letter("[LC;3900]") 
+			q.set_counter_name("[LC;5425]")
 			main_quest_flame_lv103.kill_count_state2_2() 
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._240_sayTitle) 
-			say(gameforge.main_quest_flame_lv103._250_say) 
-			say(gameforge.main_quest_lv98._680_counterName)
-			say(string.format(gameforge.main_quest_lv98._670_sayReward,"적룡성 마물", 1000 - pc.getqf("kill_count_1")))
-			say_reward(gameforge.main_quest_flame_lv103._260_sayReward)
+			say_title("[LC;3906]") 
+			say("[LC;3907]") 
+			say("[LC;5425]")
+			say(string.format("[LC;5424;%s;%d]","적룡성 마물", 1000 - pc.getqf("kill_count_1")))
+			say_reward("[LC;3908]")
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._180_sendLetter begin 
+		when YACKHWAN.chat."[LC;3900]" begin 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._270_say) 
+			say("[LC;3909]") 
 		end
 
 		when kill  with pc.get_map_index() >= DUNGEON_MAP_INDEX * 10000 and pc.get_map_index() < (DUNGEON_MAP_INDEX + 1) *10000 begin
@@ -226,11 +226,11 @@ quest main_quest_flame_lv103 begin
 	end
 	state state2_3 begin 
 		when enter begin 
-			notice_multiline(gameforge.main_quest_flame_lv103._280_notice,notice)
+			notice_multiline("[LC;3910]",notice)
 		end
 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._180_sendLetter) 
+			send_letter("[LC;3900]") 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -238,26 +238,26 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._180_sendLetter) 
-			say(gameforge.main_quest_flame_lv103._120_say) 
+			say_title("[LC;3900]") 
+			say("[LC;3896]") 
 			--say_reward(locale.target_npc_info) 
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._180_sendLetter begin 
+		when YACKHWAN.chat."[LC;3900]" begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._290_say) 
+			say("[LC;3911]") 
 			wait()--reward
 
-			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 53784000))
+			say_reward(string.format("[LC;4537;%d]", 53784000))
 			pc.give_exp2(53784000)
-			say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, 164000))
+			say_reward(string.format("[LC;4538;%d]", 164000))
 			pc.change_money(164000)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71095),1))
+			say_reward(string.format("[LC;4540;%s]", item_name(71095),1))
 			pc.give_item2(71095, 1)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(70024),1))
+			say_reward(string.format("[LC;4540;%s]", item_name(70024),1))
 			pc.give_item2(70024, 1)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(30039),3))
+			say_reward(string.format("[LC;4540;%s]", item_name(30039),3))
 			pc.give_item2(30039, 3)
 			say()
 			set_state (state3_1)
@@ -270,7 +270,7 @@ quest main_quest_flame_lv103 begin
 	
 	state state3_1 begin 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._300_sendLetter) 
+			send_letter("[LC;3912]") 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -278,19 +278,19 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._300_sendLetter) 
-			say(gameforge.main_quest_flame_lv103._020_say) 
+			say_title("[LC;3912]") 
+			say("[LC;3887]") 
 			--say_reward(locale.target_npc_info) 
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._300_sendLetter begin 
+		when YACKHWAN.chat."[LC;3912]" begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._310_say) 
+			say("[LC;3913]") 
 			wait()
 
 			say_title(pc.getname()) 
-			say(gameforge.main_quest_flame_lv103._220_say) 
+			say("[LC;3904]") 
 			set_state (state3_2)
 		end
 
@@ -305,19 +305,19 @@ quest main_quest_flame_lv103 begin
 			pc.setqf("kill_count_3", 0)
 			pc.setqf("kill_count_4", 0)
 			pc.setqf("kill_count_5", 0)
-			notice_multiline(gameforge.main_quest_flame_lv103._330_notice,notice)
+			notice_multiline("[LC;3914]",notice)
 		end
 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._300_sendLetter) 
-			q.set_counter_name(gameforge.main_quest_lv98._680_counterName)
+			send_letter("[LC;3912]") 
+			q.set_counter_name("[LC;5425]")
 			main_quest_flame_lv103.kill_count_state3_2() 
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._340_sayTitle) 
-			say(gameforge.main_quest_flame_lv103._350_say) 
-			say(gameforge.main_quest_lv98._680_counterName)
+			say_title("[LC;3915]") 
+			say("[LC;3916]") 
+			say("[LC;5425]")
 			local total_remain = 0
 			local remain1 = 50 - pc.getqf("kill_count_1")
 			if remain1 < 0 then
@@ -343,15 +343,15 @@ quest main_quest_flame_lv103 begin
 			if remain5 < 0 then
 				remain5 = 0
 			end
-			say(string.format(gameforge.main_quest_lv98._690_sayReward ,mob_name(6005), remain1,mob_name(6006), remain2))
-			say(string.format(gameforge.main_quest_lv98._690_sayReward ,mob_name(6007), remain3,mob_name(6008), remain4))
-			say(string.format(gameforge.main_quest_lv98._670_sayReward,mob_name(6009), remain5))
-			say_reward(gameforge.main_quest_flame_lv103._260_sayReward)
+			say(string.format("[LC;5426;%s;%d;%s;%d]" ,mob_name(6005), remain1,mob_name(6006), remain2))
+			say(string.format("[LC;5426;%s;%d;%s;%d]" ,mob_name(6007), remain3,mob_name(6008), remain4))
+			say(string.format("[LC;5424;%s;%d]",mob_name(6009), remain5))
+			say_reward("[LC;3908]")
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._300_sendLetter begin 
+		when YACKHWAN.chat."[LC;3912]" begin 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._360_say) 
+			say("[LC;3917]") 
 		end
 
 		when 6005.kill begin
@@ -428,11 +428,11 @@ quest main_quest_flame_lv103 begin
 	end
 	state state3_3 begin 
 		when enter begin 
-			notice_multiline(gameforge.main_quest_flame_lv103._370_notice,notice)
+			notice_multiline("[LC;3918]",notice)
 		end
 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._300_sendLetter) 
+			send_letter("[LC;3912]") 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -440,24 +440,24 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._300_sendLetter) 
-			say(gameforge.main_quest_flame_lv103._120_say) 
+			say_title("[LC;3912]") 
+			say("[LC;3896]") 
 			--say_reward(locale.target_npc_info) 
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._300_sendLetter begin 
+		when YACKHWAN.chat."[LC;3912]" begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._380_say) 
+			say("[LC;3919]") 
 			wait()--reward
 
-			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 54491000))
+			say_reward(string.format("[LC;4537;%d]", 54491000))
 			pc.give_exp2(54491000)
-			say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, 166000))
+			say_reward(string.format("[LC;4538;%d]", 166000))
 			pc.change_money(166000)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71095),1))
+			say_reward(string.format("[LC;4540;%s]", item_name(71095),1))
 			pc.give_item2(71095, 1)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(72001),1))
+			say_reward(string.format("[LC;4540;%s]", item_name(72001),1))
 			pc.give_item2_select(72001)
 			item.set_socket(2, 60)
 			say()
@@ -471,7 +471,7 @@ quest main_quest_flame_lv103 begin
 	
 	state state4_1 begin 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._390_sendLetter) 
+			send_letter("[LC;3920]") 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -479,19 +479,19 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._390_sendLetter) 
-			say(gameforge.main_quest_flame_lv103._020_say)  
+			say_title("[LC;3920]") 
+			say("[LC;3887]")  
 			--say_reward(locale.target_npc_info) 
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._390_sendLetter begin 
+		when YACKHWAN.chat."[LC;3920]" begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._400_say) 
+			say("[LC;3921]") 
 			wait()
 
 			say_title(pc.getname()) 
-			say(gameforge.main_quest_flame_lv103._220_say) 
+			say("[LC;3904]") 
 			set_state (state4_2)
 		end
 
@@ -501,11 +501,11 @@ quest main_quest_flame_lv103 begin
 	end
 	state state4_2 begin 
 		when enter begin 
-			notice_multiline(gameforge.main_quest_flame_lv103._410_notice,notice)
+			notice_multiline("[LC;3922]",notice)
 		end
 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._390_sendLetter) 
+			send_letter("[LC;3920]") 
 			local v = find_npc_by_vnum(SCHOLAR) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(SCHOLAR))
@@ -513,27 +513,27 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._080_sayTitle) 
-			say(gameforge.main_quest_flame_lv103._420_say) 
+			say_title("[LC;3892]") 
+			say("[LC;3923]") 
 			--say_reward(locale.target_npc_info) 
 		end
 
-		when SCHOLAR.chat.gameforge.main_quest_flame_lv103._390_sendLetter begin 
+		when SCHOLAR.chat."[LC;3920]" begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(SCHOLAR)) 
-			say(gameforge.main_quest_flame_lv103._430_say) 
+			say("[LC;3924]") 
 			wait()
 
 			say_title(mob_name(SCHOLAR)) 
-			say(gameforge.main_quest_flame_lv103._440_say) 
+			say("[LC;3925]") 
 			wait()
 
 			say_title(mob_name(SCHOLAR)) 
-			say(gameforge.main_quest_flame_lv103._460_say) 
+			say("[LC;3926]") 
 			wait()
 
 			say_title(pc.getname()) 
-			say(gameforge.main_quest_flame_lv103._220_say) 
+			say("[LC;3904]") 
 			set_state (state4_3)
 		end
 
@@ -544,26 +544,26 @@ quest main_quest_flame_lv103 begin
 	state state4_3 begin 
 		when enter begin 
 			pc.setqf("kill_count_1", 0)
-			notice_multiline(gameforge.main_quest_flame_lv103._480_notice,notice)
+			notice_multiline("[LC;3927]",notice)
 		end
 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._390_sendLetter) 
-			q.set_counter_name(gameforge.main_quest_lv98._680_counterName)
+			send_letter("[LC;3920]") 
+			q.set_counter_name("[LC;5425]")
 			main_quest_flame_lv103.kill_count_state4_3() 
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._490_sayTitle) 
-			say(gameforge.main_quest_flame_lv103._500_say) 
-			say(gameforge.main_quest_flame_lv103._510_say)
-			say(string.format(gameforge.main_quest_lv90._1190_say,mob_name(MOB4_1), 1 - pc.getqf("kill_count_1")))
-			say_reward(gameforge.main_quest_flame_lv103._260_sayReward)
+			say_title("[LC;3928]") 
+			say("[LC;3929]") 
+			say("[LC;3930]")
+			say(string.format("[LC;4769;%s;%d]",mob_name(MOB4_1), 1 - pc.getqf("kill_count_1")))
+			say_reward("[LC;3908]")
 		end
 		
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._390_sendLetter begin 
+		when YACKHWAN.chat."[LC;3920]" begin 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._520_say) 
+			say("[LC;3931]") 
 		end
 
 		when MOB4_1.kill begin
@@ -593,11 +593,11 @@ quest main_quest_flame_lv103 begin
 	
 	state state4_4 begin 
 		when enter begin 
-			notice_multiline(gameforge.main_quest_flame_lv103._530_notice,notice)
+			notice_multiline("[LC;3932]",notice)
 		end
 
 		when letter begin 
-			send_letter(gameforge.main_quest_flame_lv103._390_sendLetter) 
+			send_letter("[LC;3920]") 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -605,32 +605,32 @@ quest main_quest_flame_lv103 begin
 		end
 
 		when button or info begin 
-			say_title(gameforge.main_quest_flame_lv103._390_sendLetter) 
-			say(gameforge.main_quest_flame_lv103._120_say) 
+			say_title("[LC;3920]") 
+			say("[LC;3896]") 
 			--say_reward(locale.target_npc_info) 
 		end
 
-		when YACKHWAN.chat.gameforge.main_quest_flame_lv103._390_sendLetter begin 
+		when YACKHWAN.chat."[LC;3920]" begin 
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
-			say(gameforge.main_quest_flame_lv103._540_say) 
+			say("[LC;3933]") 
 			wait()--reward
 
-			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 49586000))
+			say_reward(string.format("[LC;4537;%d]", 49586000))
 			pc.give_exp2(49586000)
-			say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, 167000))
+			say_reward(string.format("[LC;4538;%d]", 167000))
 			pc.change_money(167000)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71095),1))
+			say_reward(string.format("[LC;4540;%s]", item_name(71095),1))
 			pc.give_item2(71095, 1)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(31078),1))
+			say_reward(string.format("[LC;4540;%s]", item_name(31078),1))
 			pc.give_item2(31078, 1)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(30015),2))
+			say_reward(string.format("[LC;4540;%s]", item_name(30015),2))
 			pc.give_item2(30015, 2)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(70043),1))
+			say_reward(string.format("[LC;4540;%s]", item_name(70043),1))
 			pc.give_item2_select(70043)
 			item.set_socket(2, 60)
 			say()
-			say_title(string.format(gameforge.main_quest_flame_lv99._430_say, 104))
+			say_title(string.format("[LC;4060]", 104))
 			set_state (__COMPLETE__)
 			set_quest_state ("main_quest_flame_lv104", "state0")
 		end

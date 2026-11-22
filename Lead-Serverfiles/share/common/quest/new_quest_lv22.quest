@@ -2,11 +2,11 @@ quest new_quest_lv22 begin
     state start begin
 		function npc_chat()
 	        target.delete("__TARGET__")
-	        say_title(gameforge.new_quest_lv22._017_say_title) -- yellow text headline
-	        say(gameforge.new_quest_lv22._021_say) -- white font text
+	        say_title("[LC;5685]") -- yellow text headline
+	        say("[LC;5688]") -- white font text
 			wait()
-			say_title(gameforge.new_quest_lv22._017_say_title) -- yellow text headline
-	        say(gameforge.new_quest_lv22._022_say)
+			say_title("[LC;5685]") -- yellow text headline
+	        say("[LC;5689]")
     	end	
 
 		when login or levelup with pc.get_level() >= 22 begin
@@ -18,9 +18,9 @@ quest new_quest_lv22 begin
 	state information begin
 		when login or enter begin
 		-- edit Rui, adding a letter and questmark in the quest menu --
-			send_letter(gameforge.new_quest_lv22._015_npcChat)
+			send_letter("[LC;5683]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv22._015_npcChat)
+			q.set_title("[LC;5683]")
 		-- finished the edit --
 			local find_npc_vnum = 0
 			if pc.get_empire()==1 then
@@ -33,38 +33,38 @@ quest new_quest_lv22 begin
 			local v=find_npc_by_vnum(find_npc_vnum) -- Wächter des Dorfplatzes
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.new_quest_lv22._010_target)
+				target.vid("__TARGET__", v, "[LC;5681]")
 			end
 		end
 		-- edit Rui, added the text that should be shown when opening the letter or pressing the quest button in the quest menu --
 		when button or info begin
-			say_title(gameforge.new_quest_lv22._015_npcChat)
+			say_title("[LC;5683]")
 			say("")
-			say(gameforge.new_quest_lv22._011_say)
+			say("[LC;5682]")
 		end
 	
-		when 11000.chat.gameforge.new_quest_lv22._015_npcChat or 11002.chat.gameforge.new_quest_lv22._015_npcChat or 11004.chat.gameforge.new_quest_lv22._015_npcChat  begin
+		when 11000.chat."[LC;5683]" or 11002.chat."[LC;5683]" or 11004.chat."[LC;5683]"  begin
 			target.delete("__TARGET__")
-	        say_title(gameforge.new_quest_lv22._017_say_title) -- yellow text headline
-	        say(gameforge.new_quest_lv22._021_say) -- white font text
+	        say_title("[LC;5685]") -- yellow text headline
+	        say("[LC;5688]") -- white font text
 			wait()
-			say_title(gameforge.new_quest_lv22._017_say_title) -- yellow text headline
-	        say(gameforge.new_quest_lv22._022_say)
+			say_title("[LC;5685]") -- yellow text headline
+	        say("[LC;5689]")
 			q.done()
-			local doquest = select(gameforge.new_quest_lv22._024_select, gameforge.subquest_12._50_select, gameforge.new_quest_lv75._290_2_select)
+			local doquest = select("[LC;5691]", "[LC;7304]", "[LC;6200]")
 			if doquest ==1 then 
 				set_state(ask_beakgo)
 			elseif doquest == 3 then
-				say(gameforge.subquest_06._60_say)
-				local abortquest = select(gameforge.subquest_06._70_select, gameforge.subquest_06._80_select)
+				say("[LC;7170]")
+				local abortquest = select("[LC;7173]", "[LC;7174]")
 				if abortquest == 1 then
 					set_state(__GIVEUP__)
 				else
-					say(gameforge.subquest_11._80_say)
+					say("[LC;7288]")
 					return
 				end
 			else
-				say(gameforge.subquest_11._80_say)
+				say("[LC;7288]")
 				return
 			end
 		end
@@ -81,59 +81,59 @@ quest new_quest_lv22 begin
 			new_quest_lv22_drop1 = 35000 -- med. wheat
 			new_quest_lv22_drop2 = 35001 -- tiger liver
 			--BEGIN EDIT by Arne 21Sept09, accoridng to manits26067, Reason: missing quest, letter
-			send_letter(gameforge.new_quest_lv22._016_send_letter)
+			send_letter("[LC;5684]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv22._016_send_letter)
+			q.set_title("[LC;5684]")
 			
 			local v=find_npc_by_vnum(20018)
 			if 0!=v then
-					target.vid("__TARGET2__", v, gameforge.new_quest_lv22._030_target)
+					target.vid("__TARGET2__", v, "[LC;5695]")
 			end
 			--END EDIT
 		end
 		
 		--BEGIN EDIT by Arne 21Sept09, accoridng to manits26067, Reason: missing quest, letter
 		when info or button begin
-			say_title(gameforge.new_quest_lv22._025_say_title)
-			say(gameforge.new_quest_lv22._026_say)
+			say_title("[LC;5692]")
+			say("[LC;5693]")
 			say("")
-			say(string.format(gameforge.new_quest_lv22._027_say, get_map_name_by_number(1)))
+			say(string.format("[LC;5694;%s]", get_map_name_by_number(1)))
 		end
 		--END EDIT
 		
 		
-		when 20018.chat.gameforge.new_quest_lv22._016_send_letter begin
+		when 20018.chat."[LC;5684]" begin
 			target.delete("__TARGET2__")
-			say_title(gameforge.new_quest_lv22._018_say_title)
-			say(gameforge.new_quest_lv22._031_say)
-			local b= select(gameforge.new_quest_lv22._032_1_select, gameforge.new_quest_lv22._032_2_select, gameforge.new_quest_lv22._032_3_select)
+			say_title("[LC;5686]")
+			say("[LC;5696]")
+			local b= select("[LC;5697]", "[LC;5698]", "[LC;5699]")
 			if b==1 then
-				say_title(gameforge.new_quest_lv22._018_say_title)
-				say(gameforge.new_quest_lv22._035_say)
+				say_title("[LC;5686]")
+				say("[LC;5700]")
 			wait()
-				say_title(gameforge.new_quest_lv22._018_say_title)
-				say(gameforge.new_quest_lv22._040_say)
+				say_title("[LC;5686]")
+				say("[LC;5701]")
 				say_reward(string.format("%s x", new_quest_lv22_neededAmountDrop1))
 				say_item_vnum(new_quest_lv22_drop1) -- icon of item
-				say_reward(gameforge.new_quest_lv22._041_say_reward)
+				say_reward("[LC;5702]")
 				say(mob_name(new_quest_lv22_mob1))
 			wait()
-				say_title(gameforge.new_quest_lv22._018_say_title)
-				say(gameforge.new_quest_lv22._042_say)
+				say_title("[LC;5686]")
+				say("[LC;5703]")
 				say_reward(string.format("%s x",  new_quest_lv22_neededAmountDrop2))
 				say_item_vnum(new_quest_lv22_drop2) -- icon of item
-				say_reward(gameforge.new_quest_lv22._041_say_reward)
+				say_reward("[LC;5702]")
 				say(mob_name(new_quest_lv22_mob2))
 				q.done()
 				set_state(hunting)
 			elseif b==2 then
-				say_title(gameforge.new_quest_lv22._018_say_title)
-				say(gameforge.new_quest_lv22._043_say)
+				say_title("[LC;5686]")
+				say("[LC;5704]")
 				q.done()
 				set_state(information)
 			else
-				say_title(gameforge.new_quest_lv22._018_say_title)
-				say(gameforge.new_quest_lv22._044_say)
+				say_title("[LC;5686]")
+				say("[LC;5705]")
 				q.done()
 				set_state(information)
 			end
@@ -165,9 +165,9 @@ quest new_quest_lv22 begin
 			new_quest_lv22_drop1 = 35000 -- med. wheat
 			new_quest_lv22_drop2 = 35001 -- tiger liver
 		--BEGIN EDIT by Arne 21Sept09, accoridng to manits26067, Reason: missing quest, letter
-			send_letter(gameforge.new_quest_lv22._016_send_letter)
+			send_letter("[LC;5684]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv22._016_send_letter)
+			q.set_title("[LC;5684]")
 		--END EDIT
 		end
 		-------------- medical wheat ------------------------------------------------------
@@ -179,16 +179,16 @@ quest new_quest_lv22 begin
 					pc.give_item2(new_quest_lv22_drop1) -- medical wheat
 					if new_quest_lv22_neededAmountDrop1 == pc.count_item(new_quest_lv22_drop1) and new_quest_lv22_neededAmountDrop2 ==  pc.count_item(new_quest_lv22_drop2) then
 						-- collected everything
-						notice_multiline(gameforge.new_quest_lv22._057_notice, notice)
+						notice_multiline("[LC;5708]", notice)
 						q.done()
 						set_state(back_to_baekgo)
 					else
 						if new_quest_lv22_neededAmountDrop1 == pc.count_item(new_quest_lv22_drop1) then
 							-- collected all wheat, still need livers
-							notice_multiline(string.format(gameforge.new_quest_lv22._058_notice, new_quest_lv22_neededAmountDrop2-pc.count_item(new_quest_lv22_drop2)), notice)
+							notice_multiline(string.format("[LC;5709;%s]", new_quest_lv22_neededAmountDrop2-pc.count_item(new_quest_lv22_drop2)), notice)
 						else
 							-- need more wheat
-							notice_multiline(string.format(gameforge.new_quest_lv22._056_notice , new_quest_lv22_neededAmountDrop1-pc.count_item(new_quest_lv22_drop1)), notice)
+							notice_multiline(string.format("[LC;5707;%s]" , new_quest_lv22_neededAmountDrop1-pc.count_item(new_quest_lv22_drop1)), notice)
 						end
 					end
 				else
@@ -205,36 +205,36 @@ quest new_quest_lv22 begin
 					
 					if new_quest_lv22_neededAmountDrop1 == pc.count_item(new_quest_lv22_drop1) and  new_quest_lv22_neededAmountDrop2 == pc.count_item(new_quest_lv22_drop2) then
 						-- collected everything
-						notice_multiline(gameforge.new_quest_lv22._061_notice, notice)
+						notice_multiline("[LC;5711]", notice)
 						q.done()
 						set_state(back_to_baekgo)
 					else
 						if new_quest_lv22_neededAmountDrop2 == pc.count_item(new_quest_lv22_drop2) then
 							-- collected all livers, still need wheat
-							notice_multiline(string.format(gameforge.new_quest_lv22._056_notice , new_quest_lv22_neededAmountDrop1-pc.count_item(new_quest_lv22_drop1)), notice)
+							notice_multiline(string.format("[LC;5707;%s]" , new_quest_lv22_neededAmountDrop1-pc.count_item(new_quest_lv22_drop1)), notice)
 						else
 							-- still need livers
-							notice_multiline(string.format(gameforge.new_quest_lv22._060_notice,  new_quest_lv22_neededAmountDrop2-pc.count_item(new_quest_lv22_drop2)), notice)
+							notice_multiline(string.format("[LC;5710;%s]",  new_quest_lv22_neededAmountDrop2-pc.count_item(new_quest_lv22_drop2)), notice)
 						end
 					end
 				else
-					notice_multiline(gameforge.new_quest_lv22._062_notice, notice)
+					notice_multiline("[LC;5712]", notice)
 				end
 			end
 		end
 		when info or button begin
 			if new_quest_lv22_neededAmountDrop1 !=  pc.count_item(new_quest_lv22_drop1) or  new_quest_lv22_neededAmountDrop2 !=  pc.count_item(new_quest_lv22_drop2) then
-				say_title(gameforge.new_quest_lv22._016_send_letter)
-				say(gameforge.new_quest_lv22._066_say)
+				say_title("[LC;5684]")
+				say("[LC;5716]")
 				if new_quest_lv22_neededAmountDrop1 !=  pc.count_item(new_quest_lv22_drop1) then
-					say_reward(string.format(gameforge.new_quest_lv22._063_say, new_quest_lv22_neededAmountDrop1-pc.count_item(new_quest_lv22_drop1), mob_name(new_quest_lv22_mob1)))
+					say_reward(string.format("[LC;5713;%s]", new_quest_lv22_neededAmountDrop1-pc.count_item(new_quest_lv22_drop1), mob_name(new_quest_lv22_mob1)))
 				end
 				if  new_quest_lv22_neededAmountDrop2 !=  pc.count_item(new_quest_lv22_drop2) then
-					say_reward(string.format(gameforge.new_quest_lv22._064_say,  new_quest_lv22_neededAmountDrop2-pc.count_item(new_quest_lv22_drop2), mob_name(new_quest_lv22_mob2)))
+					say_reward(string.format("[LC;5714;%s]",  new_quest_lv22_neededAmountDrop2-pc.count_item(new_quest_lv22_drop2), mob_name(new_quest_lv22_mob2)))
 				end
 			else
-                say_title(gameforge.new_quest_lv22._025_say_title)
-				say(gameforge.new_quest_lv22._065_say)
+                say_title("[LC;5692]")
+				say("[LC;5715]")
 			end
 		end
 	end
@@ -247,40 +247,40 @@ quest new_quest_lv22 begin
 			new_quest_lv22_drop2 = 35001 -- tiger liver
 			new_quest_lv22_timeToFind = 1200
 			--BEGIN EDIT by Arne 21Sept09, accoridng to manits26067, Reason: missing quest, letter
-			send_letter(gameforge.new_quest_lv22._016_send_letter)
-			q.set_title(gameforge.new_quest_lv22._016_send_letter)			
+			send_letter("[LC;5684]")
+			q.set_title("[LC;5684]")			
 			local timeLeft = new_quest_lv22_timeToFind-(get_time()-pc.getqf("new_quest_lv22_startTime"))
 			displayTime = timeLeft / 60
-			q.set_clock(gameforge.new_quest_lv22._082_set_clock, timeLeft)
+			q.set_clock("[LC;5722]", timeLeft)
 			q.start()
 			local v=find_npc_by_vnum(20018) -- Baek-Go
 			if 0==v then
 			else
-				target.vid("__TARGET3__", v, gameforge.new_quest_lv22._030_target)
+				target.vid("__TARGET3__", v, "[LC;5695]")
 			end
 			--END EDIT
 		end
 		
 		--BEGIN EDIT by Arne 21Sept09, accoridng to manits26067, Reason: missing quest, letter
 		when info or button begin
-		say_title(gameforge.new_quest_lv22._016_send_letter)
-		say(gameforge.new_quest_lv22._065_say)
+		say_title("[LC;5684]")
+		say("[LC;5715]")
 		say("")
-		say(string.format(gameforge.new_quest_lv22._027_say, get_map_name_by_number(1)))
+		say(string.format("[LC;5694;%s]", get_map_name_by_number(1)))
 		end
 		--END EDIT
 		
-		when 20018.chat.gameforge.new_quest_lv22._016_send_letter begin
+		when 20018.chat."[LC;5684]" begin
 			target.delete("__TARGET3__")
-			say_title(gameforge.new_quest_lv22._018_say_title)
+			say_title("[LC;5686]")
 			if  pc.count_item(new_quest_lv22_drop1) >= new_quest_lv22_neededAmountDrop1 and pc.count_item(new_quest_lv22_drop2) >=  new_quest_lv22_neededAmountDrop2 then
-				say(gameforge.new_quest_lv22._070_say)
+				say("[LC;5717]")
 				pc.remove_item(new_quest_lv22_drop1, new_quest_lv22_neededAmountDrop1)
 				pc.remove_item(new_quest_lv22_drop2,  new_quest_lv22_neededAmountDrop2)
 			wait()
-				say_title(gameforge.new_quest_lv22._018_say_title)
-				say(string.format(gameforge.new_quest_lv22._071_say, new_quest_lv22_timeToFind / 60))
-				say(gameforge.new_quest_lv22._072_say)
+				say_title("[LC;5686]")
+				say(string.format("[LC;5718;%s]", new_quest_lv22_timeToFind / 60))
+				say("[LC;5719]")
 				pc.give_item2(30009, 1)
 				pc.setqf("new_quest_lv22_startTime", get_time())
 				q.done()
@@ -288,7 +288,7 @@ quest new_quest_lv22 begin
 				return
 			else
 				-- this happens, if the player sold or dropped needed items:
-				say(gameforge.new_quest_lv22._073_say)
+				say("[LC;5720]")
 				q.done()
 				set_state(hunting)
 			end
@@ -300,38 +300,38 @@ quest new_quest_lv22 begin
 			new_quest_lv22_timeToFind = 1200
 			new_quest_lv22_MoneyReward = 12000
 			new_quest_lv22_MoneyReward_Low = 8000
-			send_letter(gameforge.new_quest_lv22._016_send_letter)--EDIT by Arne 21Sept09, accoridng to manits26067, Reason: missing letter
+			send_letter("[LC;5684]")--EDIT by Arne 21Sept09, accoridng to manits26067, Reason: missing letter
 			
-			q.set_title(gameforge.new_quest_lv22._016_send_letter)
+			q.set_title("[LC;5684]")
 			local timeLeft = new_quest_lv22_timeToFind-(get_time()-pc.getqf("new_quest_lv22_startTime"))
 			displayTime = timeLeft / 60
-			q.set_clock(gameforge.new_quest_lv22._082_set_clock, timeLeft)
+			q.set_clock("[LC;5722]", timeLeft)
 			q.start()
 			if is_destination_village(65) then -- 
 				local v=find_npc_by_vnum(20348) -- Wächter des Dämonenturms
 				if 0!=v then
-					target.vid("__TARGET4__", v, gameforge.new_quest_lv22._080_target)
+					target.vid("__TARGET4__", v, "[LC;5721]")
 				end
 			end
 		end
 		when button or info begin
-			say_title(gameforge.new_quest_lv22._016_send_letter)
+			say_title("[LC;5684]")
 			if get_time() - pc.getqf("new_quest_lv22_startTime") <= new_quest_lv22_timeToFind then
-				say(gameforge.new_quest_lv22._083_say)
+				say("[LC;5723]")
 			else
-				say(gameforge.new_quest_lv22._084_say)
+				say("[LC;5724]")
 			end
 		end
-		when 20348.chat.gameforge.new_quest_lv22._016_send_letter begin
+		when 20348.chat."[LC;5684]" begin
 			target.delete("__TARGET4__")
-			say_title(gameforge.new_quest_lv22._019_say_title)
+			say_title("[LC;5687]")
 			q.done()
 			-- player succeeded in bringing the medicine in time
 			if pc.count_item(30009) >= 1 and get_time() - pc.getqf("new_quest_lv22_startTime") <= new_quest_lv22_timeToFind then
-				say(gameforge.new_quest_lv22._085_say)
-				say(gameforge.new_quest_lv22._086_say)
-				say(gameforge.new_quest_lv22._087_say)
-				say_reward(gameforge.new_quest_lv22._088_say_reward)
+				say("[LC;5725]")
+				say("[LC;5726]")
+				say("[LC;5727]")
+				say_reward("[LC;5728]")
 				pc.give_item2(15064, 1)
 				pc.give_item2(27105, 5)
 				pc.remove_item(30009, 1)
@@ -341,12 +341,12 @@ quest new_quest_lv22 begin
 				return
 			-- player failed in bringing the medicine in time
 			elseif pc.count_item(30009) >= 1 and get_time() - pc.getqf("new_quest_lv22_startTime") > new_quest_lv22_timeToFind then
-				say(gameforge.new_quest_lv22._085_say)
-				say(gameforge.new_quest_lv22._089_say)
+				say("[LC;5725]")
+				say("[LC;5729]")
 			wait()
-				say_title(gameforge.new_quest_lv22._019_say_title)
-				say(gameforge.new_quest_lv22._090_say)
-				say_reward(gameforge.new_quest_lv22._095_say_reward)
+				say_title("[LC;5687]")
+				say("[LC;5730]")
+				say_reward("[LC;5732]")
 				pc.remove_item(30009, 1)
 				pc.change_money(new_quest_lv22_MoneyReward_Low)
 				pc.give_exp2(50000)
@@ -354,12 +354,12 @@ quest new_quest_lv22 begin
 				return
 			-- player lost the medicine ----------------------------
 			elseif (pc.getqf("hunting_count") <= 2) then
-				say(gameforge.new_quest_lv22._091_say)
+				say("[LC;5731]")
 				set_state(hunting)
 			else
 				-- player lost the medicine more than once
-				say(gameforge.new_quest_lv22._098_say)
-				say_reward(gameforge.new_quest_lv22._100_say_reward)
+				say("[LC;5733]")
+				say_reward("[LC;5734]")
 				pc.give_exp2(25000)
 				set_state(__COMPLETE__)
 			end	

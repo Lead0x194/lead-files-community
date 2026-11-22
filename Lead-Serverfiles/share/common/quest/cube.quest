@@ -1,49 +1,49 @@
 quest cube begin
     state start begin
-        when 20018.chat.gameforge.collect_herb_lv15._20_npcChat with pc.level >= 15 begin
-            say_title(gameforge.collect_quest_lv30._340_sayTitle)
-            say(gameforge.cube._10_say)
+        when 20018.chat."[LC;150]" with pc.level >= 15 begin
+            say_title("[LC;248]")
+            say("[LC;633]")
             wait()
             setskin(NOWINDOW)
             command("cube open")
         end
 
 
-        when 20017.chat.gameforge.collect_herb_lv15._20_npcChat with pc.level >= 30 begin
-            say_title(gameforge.arena_manager._20_sayTitle)
-            say(gameforge.cube._20_say)
+        when 20017.chat."[LC;150]" with pc.level >= 30 begin
+            say_title("[LC;14]")
+            say("[LC;634]")
             wait()
             setskin(NOWINDOW)
             command("cube open")
         end
 
 
-        when 20022.chat.gameforge.cube._30_npcChat with pc.level >=45 begin
-            say_title(gameforge.cube._40_sayTitle)
-            say(gameforge.cube._50_say)
+        when 20022.chat."[LC;635]" with pc.level >=45 begin
+            say_title("[LC;636]")
+            say("[LC;637]")
             wait()
             setskin(NOWINDOW)
             command("cube open")
         end
 
-        when 20018.chat.gameforge.cube._060_npcChat with pc.level >= 15 begin
+        when 20018.chat."[LC;632]" with pc.level >= 15 begin
             setskin(NOWINDOW)
             command("cube make all")
         end
 
 
-        when 20017.chat.gameforge.cube._060_npcChat with pc.level >= 30 begin
+        when 20017.chat."[LC;632]" with pc.level >= 30 begin
             setskin(NOWINDOW)
             command("cube make all")
         end
 
 
-        when 20022.chat.gameforge.cube._060_npcChat with pc.level >=45 begin
+        when 20022.chat."[LC;632]" with pc.level >=45 begin
             setskin(NOWINDOW)
             command("cube make all")
         end
 
-        when 20383.chat.gameforge.cube._30_npcChat with pc.level >=90 begin
+        when 20383.chat."[LC;635]" with pc.level >=90 begin
             setskin(NOWINDOW)
             command("cube open")
         end

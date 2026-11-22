@@ -18,27 +18,27 @@ quest new_quest_lv29 begin
 		local goto_npc = 20005 -- Yonah
 		local v=find_npc_by_vnum(goto_npc)
 			if 0!=v then
-				target.vid("__TARGET__", v, gameforge.new_quest_lv29._010_target) -- place questarrow
+				target.vid("__TARGET__", v, "[LC;5798]") -- place questarrow
 			end
 		end
 
-		when 20005.chat.gameforge.new_quest_lv29._015_npcChat begin --EDIT Arne, 22Sept09, Reason: adapting all quest steps to choices
+		when 20005.chat."[LC;5799]" begin --EDIT Arne, 22Sept09, Reason: adapting all quest steps to choices
 			target.delete("__TARGET__") -- delete questarrow
-			say_title(gameforge.new_quest_lv29._020_say_title) -- displays headline of the conversation with Yonah
-			say(gameforge.new_quest_lv29._021_say)
-			say(gameforge.new_quest_lv29._022_say)
+			say_title("[LC;5800]") -- displays headline of the conversation with Yonah
+			say("[LC;5801]")
+			say("[LC;5802]")
 			local goto_npc = 20005 -- Yonah
-			local accept = select(gameforge.new_quest_lv29._023_1_select,gameforge.new_quest_lv29._023_2_select)
+			local accept = select("[LC;5803]","[LC;5804]")
 			if accept == 1 then
 				local v=find_npc_by_vnum(20014) -- find Taurean
 				if 0!=v then
-					target.vid("__TARGET2__", v, gameforge.new_quest_lv29._030_target) -- place questarrow
+					target.vid("__TARGET2__", v, "[LC;5806]") -- place questarrow
 				end
 				set_state(find_taurean)
 			else
-				say(gameforge.new_quest_lv29._024_say)
-				say(gameforge.subquest_06._60_say)
-				local abortquest = select(gameforge.subquest_06._70_select, gameforge.subquest_06._80_select)
+				say("[LC;5805]")
+				say("[LC;7170]")
+				local abortquest = select("[LC;7173]", "[LC;7174]")
 				if abortquest == 1 then
 					pc.setqf("hayIndex", 0)
 					pc.setqf("hayFromHarang", 0)
@@ -51,7 +51,7 @@ quest new_quest_lv29 begin
 				else
 					local v=find_npc_by_vnum(goto_npc)
 					if 0!=v then
-						target.vid("__TARGET__", v, gameforge.new_quest_lv29._010_target) -- place questarrow
+						target.vid("__TARGET__", v, "[LC;5798]") -- place questarrow
 					end
 					return
 				end
@@ -62,39 +62,39 @@ quest new_quest_lv29 begin
 	-- this state handles the conversation with Taurean after we talked to Yonah
 	state find_taurean begin
 		when enter or login begin
-			send_letter(gameforge.new_quest_lv29._015_npcChat)
+			send_letter("[LC;5799]")
 			q.start()                            
-			q.set_title(gameforge.new_quest_lv29._015_npcChat)
+			q.set_title("[LC;5799]")
 			if is_destination_village(2) then -- 
 			local v=find_npc_by_vnum(20014) -- Taurean	
 				if 0!=v then
-					target.vid("__TARGET2__", v, gameforge.new_quest_lv29._030_target) -- place questarrow on Taurean
+					target.vid("__TARGET2__", v, "[LC;5806]") -- place questarrow on Taurean
 
 				end
 			end
 		end
 		when button or info begin -- this handles what is displayed in the quest-journal conversation window
-			say_title(gameforge.new_quest_lv29._015_npcChat)
-			say(gameforge.new_quest_lv29._031_say)
+			say_title("[LC;5799]")
+			say("[LC;5807]")
 			say("")
-			say(string.format(gameforge.new_quest_lv29._032_say, get_map_name_by_number(3)))
+			say(string.format("[LC;5808;%s]", get_map_name_by_number(3)))
 		end
-		when 20014.chat.gameforge.new_quest_lv29._015_npcChat begin --EDIT Arne, 22Sept09, Reason: adapting all quest steps to choices -- When Taurean is clicked
+		when 20014.chat."[LC;5799]" begin --EDIT Arne, 22Sept09, Reason: adapting all quest steps to choices -- When Taurean is clicked
 			target.delete("__TARGET2__") -- delete questarrow
-			say_title(gameforge.new_quest_lv29._033_say_title)
-			say(gameforge.new_quest_lv29._034_say_reward)
+			say_title("[LC;5809]")
+			say("[LC;5810]")
 			wait()
 			say_pc_name()
-			say_reward(gameforge.new_quest_lv29._035_say_reward)
+			say_reward("[LC;5811]")
 			wait()
-			say_title(gameforge.new_quest_lv29._033_say_title)
-			say(gameforge.new_quest_lv29._036_say_reward)
+			say_title("[LC;5809]")
+			say("[LC;5812]")
 			wait()
 			say_pc_name()
-			say_reward(gameforge.new_quest_lv29._037_say_reward)
+			say_reward("[LC;5813]")
 			wait()
-			say_title(gameforge.new_quest_lv29._033_say_title)
-			say(gameforge.new_quest_lv29._038_say_reward)
+			say_title("[LC;5809]")
+			say("[LC;5814]")
 			q.done()
 			set_state(witness_harang)
 		end
@@ -104,35 +104,35 @@ quest new_quest_lv29 begin
 	state witness_harang begin 
 		
         when enter or login begin
-			send_letter(gameforge.new_quest_lv29._015_npcChat) --EDIT Arne, 22Sept09, Reason: quest starts now even without mapchange
+			send_letter("[LC;5799]") --EDIT Arne, 22Sept09, Reason: quest starts now even without mapchange
 			q.start()
-			q.set_title(gameforge.new_quest_lv29._015_npcChat)
+			q.set_title("[LC;5799]")
 			if is_destination_village(2) then
 				local v=find_npc_by_vnum(20024) -- Harang
 				if 0!=v then
-					target.vid("__TARGET3__", v, gameforge.new_quest_lv29._040_target) -- place questarrow on Harang
+					target.vid("__TARGET3__", v, "[LC;5815]") -- place questarrow on Harang
 				end
 			end
 		end
 		when button or info begin -- when clicked on the quest-journal this text will be displayed
-			say_title(gameforge.new_quest_lv29._015_npcChat)
-			say(gameforge.new_quest_lv29._041_say)
+			say_title("[LC;5799]")
+			say("[LC;5816]")
 			say("")
-			say(string.format(gameforge.new_quest_lv29._047_say, get_map_name_by_number(3))) --EDIT Arne, 22Sept09, Reason: mapname in desc
+			say(string.format("[LC;5822;%s]", get_map_name_by_number(3))) --EDIT Arne, 22Sept09, Reason: mapname in desc
 		end
-		when 20024.chat.gameforge.new_quest_lv29._015_npcChat begin --EDIT Arne, 22Sept09, Reason: adapting all quest steps to choices 
+		when 20024.chat."[LC;5799]" begin --EDIT Arne, 22Sept09, Reason: adapting all quest steps to choices 
 			target.delete("__TARGET3__") -- delete questarrow
 			say_pc_name()
-			say_reward(gameforge.new_quest_lv29._042_say_reward)
+			say_reward("[LC;5817]")
 			wait()
-			say_title(gameforge.new_quest_lv29._043_say_title)
-			say(gameforge.new_quest_lv29._044_say_reward)
+			say_title("[LC;5818]")
+			say("[LC;5819]")
 			wait()
 			say_pc_name()
-			say_reward(gameforge.new_quest_lv29._045_say_reward)
+			say_reward("[LC;5820]")
 			wait()
-			say_title(gameforge.new_quest_lv29._043_say_title)
-			say(gameforge.new_quest_lv29._046_say_reward) 
+			say_title("[LC;5818]")
+			say("[LC;5821]") 
 			q.done()
 			set_state(fragile_china)
 		end
@@ -142,38 +142,38 @@ quest new_quest_lv29 begin
 	state fragile_china begin
 		
         when enter or login begin
-			send_letter(gameforge.new_quest_lv29._015_npcChat)
+			send_letter("[LC;5799]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv29._015_npcChat) -- updating the quest-journal title
+			q.set_title("[LC;5799]") -- updating the quest-journal title
 			if is_destination_village(3) then
 				local v=find_npc_by_vnum(20349) -- find the Stablemaster
 				if 0!=v then
-					target.vid("__TARGET4__", v, gameforge.new_quest_lv29._050_target) -- place questarrow on Stablemaster
+					target.vid("__TARGET4__", v, "[LC;5823]") -- place questarrow on Stablemaster
 				end
 			end
 		end
 		when button or info begin -- this text will be displayed in the conversation window if the quest-journal is opened
-			say_title(gameforge.new_quest_lv29._015_npcChat)
-			say(gameforge.new_quest_lv29._051_say)
+			say_title("[LC;5799]")
+			say("[LC;5824]")
 			say("")
-			say(string.format(gameforge.new_quest_lv29._054_say, get_map_name_by_number(1), get_map_name_by_number(3))) --EDIT Arne, 22Sept09, Reason: mapname in desc
+			say(string.format("[LC;5827;%s;%s]", get_map_name_by_number(1), get_map_name_by_number(3))) --EDIT Arne, 22Sept09, Reason: mapname in desc
 
 		end
-		when 20349.chat.gameforge.new_quest_lv29._015_npcChat begin --EDIT Arne, 22Sept09, Reason: adapting all quest steps to choices 
+		when 20349.chat."[LC;5799]" begin --EDIT Arne, 22Sept09, Reason: adapting all quest steps to choices 
 			target.delete("__TARGET4__") -- delete questarrow
 			-- the stablemaster whats us to collect some hey for Yonah
-			say_title(gameforge.new_quest_lv29._082_say_title)
-			say(gameforge.new_quest_lv29._052_say)
+			say_title("[LC;5849]")
+			say("[LC;5825]")
 			wait()
-			say_title(gameforge.new_quest_lv29._082_say_title)
-			say(gameforge.new_quest_lv29._053_say)
+			say_title("[LC;5849]")
+			say("[LC;5826]")
 			local hayCount = pc.count_item(50054) -- even the hay the player already has counts for this quest
 			if  hayCount < 6 then -- usually the player will not have enough hay so he goes hunting
 				new_quest_lv29_neededAmountDrop = 6
 				q.done()
 				set_state(cutting_hay)
 			else -- shortcut if the player has the required amount of hay 
-				say(gameforge.new_quest_lv29._065_1_say)
+				say("[LC;5832]")
 				q.done()
 				set_state(calming_yonah)
 			end
@@ -185,9 +185,9 @@ quest new_quest_lv29 begin
 	-- Only the last piece needs to be gathered by slaying a mob.
 	state cutting_hay begin
 		when login or enter begin
-			send_letter(gameforge.new_quest_lv29._015_npcChat)
+			send_letter("[LC;5799]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv29._015_npcChat)
+			q.set_title("[LC;5799]")
 			new_quest_lv29_mob1 = 501
 			new_quest_lv29_mob2 = 551
 			new_quest_lv29_drop = 50054 -- hay
@@ -209,20 +209,20 @@ quest new_quest_lv29 begin
 		end
 		when button or info begin -- this is the text displayed in the conversation window when the quest-journal is opened
 			if new_quest_lv29_neededAmountDrop <=  pc.count_item(new_quest_lv29_drop) or pc.getqf("hayIndex") == 0 then
-				say_title(gameforge.new_quest_lv29._015_npcChat)
-				say(string.format(gameforge.new_quest_lv29._091_say, get_map_name_by_number(1)))
+				say_title("[LC;5799]")
+				say(string.format("[LC;5855;%s]", get_map_name_by_number(1)))
 				q.done()
 				set_state(calming_yonah)
 			else
 				local sayMob1Name = mob_name(501)
 				local sayMob2Name = mob_name(551)
-				say_title(gameforge.new_quest_lv29._015_npcChat)
-				say(gameforge.new_quest_lv29._061_say)
-				say_reward(gameforge.new_quest_lv29._066_say)
-				say(gameforge.new_quest_lv29._066_1_say)
+				say_title("[LC;5799]")
+				say("[LC;5828]")
+				say_reward("[LC;5834]")
+				say(nil)
 				if pc.count_item(new_quest_lv29_drop) <= new_quest_lv29_neededAmountDrop then
 					say("")
-					say_reward(string.format(gameforge.new_quest_lv29._067_say_reward, pc.count_item(new_quest_lv29_drop), new_quest_lv29_neededAmountDrop))
+					say_reward(string.format("[LC;5835;%s;%s]", pc.count_item(new_quest_lv29_drop), new_quest_lv29_neededAmountDrop))
 				end
 			end
 		end
@@ -232,13 +232,13 @@ quest new_quest_lv29 begin
 					pc.give_item2(new_quest_lv29_drop)
 					local qfindex = pc.getqf("hayIndex") -1
 					pc.setqf("hayIndex", qfindex)
-					notice_multiline(gameforge.new_quest_lv29._068_notice, notice)
+					notice_multiline("[LC;5836]", notice)
 					if new_quest_lv29_neededAmountDrop <=  pc.count_item(new_quest_lv29_drop) or pc.getqf("hayIndex") == 0 then
 						q.done()
 						set_state(calming_yonah)
 					end		
 				else
-					notice_multiline(gameforge.new_quest_lv29._064_notice, notice)
+					notice_multiline("[LC;5831]", notice)
 				end
 			end
 		end
@@ -248,87 +248,87 @@ quest new_quest_lv29 begin
 					pc.give_item2(new_quest_lv29_drop)
 					local qfindex = pc.getqf("hayIndex") -1
 					pc.setqf("hayIndex", qfindex)
-					notice_multiline(gameforge.new_quest_lv29._068_notice, notice )
+					notice_multiline("[LC;5836]", notice )
 					if new_quest_lv29_neededAmountDrop <=  pc.count_item(new_quest_lv29_drop) or pc.getqf("hayIndex") == 0 then
 						q.done()
 						set_state(calming_yonah)
 					end		
 				else
-					notice_multiline(gameforge.new_quest_lv29._064_notice, notice)
+					notice_multiline("[LC;5831]", notice)
 				end
 			end
 		end
 		-- The player may get hay from the npcs if he goes to them and asks. 
 		-- When the player read the quest-texts he will gain the hay much easier then by slaying mobs.
 		-- However the last piece of hay must be hunted
-		when 20014.chat.gameforge.new_quest_lv29._015_npcChat begin -- Ask Taurean for help
+		when 20014.chat."[LC;5799]" begin -- Ask Taurean for help
 			if pc.count_item(new_quest_lv29_drop) < new_quest_lv29_neededAmountDrop and pc.getqf("hayFromTaurean") == 1 and pc.getqf("hayIndex") > 0 then
 				say_pc_name()
-				say_reward(gameforge.new_quest_lv29._071_say_reward)
+				say_reward("[LC;5838]")
 				wait()
-				say_title(gameforge.new_quest_lv29._033_say_title)
-				say(gameforge.new_quest_lv29._072_say_reward)
+				say_title("[LC;5809]")
+				say("[LC;5839]")
 				pc.setqf("hayFromTaurean", 0) -- Taurean will only give one piece of hay
 				pc.give_item2(new_quest_lv29_drop)
 				local qfindex = pc.getqf("hayIndex") -1
 				pc.setqf("hayIndex", qfindex)
-				notice_multiline(string.format(gameforge.new_quest_lv29._073_notice, new_quest_lv29_neededAmountDrop-pc.count_item(new_quest_lv29_drop)), notice)
+				notice_multiline(string.format("[LC;5840;%s]", new_quest_lv29_neededAmountDrop-pc.count_item(new_quest_lv29_drop)), notice)
 				if new_quest_lv29_neededAmountDrop <=  pc.count_item(new_quest_lv29_drop) or pc.getqf("hayIndex") == 0 then
 					q.done()
 					set_state(calming_yonah)
 				end
 			else -- Taurean will not always give hay
-				say_title(gameforge.new_quest_lv29._033_say_title)
-				say(gameforge.new_quest_lv29._074_say_reward)
+				say_title("[LC;5809]")
+				say("[LC;5841]")
 			end
 		end
-		when 20024.chat.gameforge.new_quest_lv29._015_npcChat begin -- Ask Harang for help
+		when 20024.chat."[LC;5799]" begin -- Ask Harang for help
 			if pc.count_item(new_quest_lv29_drop) < new_quest_lv29_neededAmountDrop and pc.getqf("hayFromHarang") == 1 and pc.getqf("hayIndex") > 0 then
 				say_pc_name()
-				say_reward(gameforge.new_quest_lv29._075_say_reward)
+				say_reward("[LC;5842]")
 				wait()
-				say_title(gameforge.new_quest_lv29._043_say_title)
-				say(gameforge.new_quest_lv29._076_say_reward)
+				say_title("[LC;5818]")
+				say("[LC;5843]")
 				wait()
 				say_pc_name()
-				say_reward(gameforge.new_quest_lv29._077_say_reward)
+				say_reward("[LC;5844]")
 				wait()
-				say_title(gameforge.new_quest_lv29._043_say_title)
-				say(gameforge.new_quest_lv29._078_say_reward )
+				say_title("[LC;5818]")
+				say("[LC;5845]" )
 				pc.setqf("hayFromHarang", 0) -- Harang will only give one piece of hay
 				pc.give_item2(new_quest_lv29_drop)
 				local qfindex = pc.getqf("hayIndex") -1
 				pc.setqf("hayIndex", qfindex)
-				notice_multiline(string.format(gameforge.new_quest_lv29._085_notice, new_quest_lv29_neededAmountDrop-pc.count_item(new_quest_lv29_drop)), notice)
+				notice_multiline(string.format("[LC;5852;%s]", new_quest_lv29_neededAmountDrop-pc.count_item(new_quest_lv29_drop)), notice)
 				if new_quest_lv29_neededAmountDrop <=  pc.count_item(new_quest_lv29_drop) or pc.getqf("hayIndex") == 0 then
 					q.done()
 					set_state(calming_yonah)
 				end
 			else -- Harang will not always give hay
-				say_title(gameforge.new_quest_lv29._043_say_title)
-				say(gameforge.new_quest_lv29._079_say_reward)
+				say_title("[LC;5818]")
+				say("[LC;5846]")
 			end
 		end
-		when 20349.chat.gameforge.new_quest_lv29._015_npcChat begin -- Ask the Stablemaster for help
+		when 20349.chat."[LC;5799]" begin -- Ask the Stablemaster for help
 			if pc.count_item(new_quest_lv29_drop) < new_quest_lv29_neededAmountDrop and pc.getqf("hayFromStablemaster") == 1 and pc.getqf("hayIndex") > 0 then
 				say_pc_name()
-				say_reward(gameforge.new_quest_lv29._081_say_reward)
+				say_reward("[LC;5848]")
 				wait()
-				say(gameforge.new_quest_lv29._082_say_title)
-				say(gameforge.new_quest_lv29._083_say_reward)
-				say(gameforge.new_quest_lv29._084_say_reward)
+				say("[LC;5849]")
+				say("[LC;5850]")
+				say("[LC;5851]")
 				pc.setqf("hayFromStablemaster", 0) -- The Stablemaster will only give one piece of hay
 				pc.give_item2(new_quest_lv29_drop)
 				local qfindex = pc.getqf("hayIndex") -1
 				pc.setqf("hayIndex", qfindex)
-				notice_multiline(string.format(gameforge.new_quest_lv29._085_notice, new_quest_lv29_neededAmountDrop-pc.count_item(new_quest_lv29_drop)), notice)
+				notice_multiline(string.format("[LC;5852;%s]", new_quest_lv29_neededAmountDrop-pc.count_item(new_quest_lv29_drop)), notice)
 				if new_quest_lv29_neededAmountDrop <=  pc.count_item(new_quest_lv29_drop) or pc.getqf("hayIndex") == 0 then
 					q.done()
 					set_state(calming_yonah)
 				end
 			else -- The Stablemaster will not always give hay
-				say(gameforge.new_quest_lv29._082_say_title)
-				say_reward(gameforge.new_quest_lv29._086_say_reward)
+				say("[LC;5849]")
+				say_reward("[LC;5853]")
 			end
 		end
 	end
@@ -352,38 +352,38 @@ quest new_quest_lv29 begin
 			if pc.getqf("yonahspatience") < 2 then
 				pc.setqf("dropProb", new_quest_lv29_dropProb /10)
 			end
-			send_letter(gameforge.new_quest_lv29._015_npcChat)--EDIT Arne, 22Sept09, Reason: no letter
+			send_letter("[LC;5799]")--EDIT Arne, 22Sept09, Reason: no letter
 			q.start() --EDIT Arne, 22Sept09, Reason: quest now starts even on same map
-			q.set_title(gameforge.new_quest_lv29._015_npcChat)
+			q.set_title("[LC;5799]")
 			if is_destination_village(1) then -- 
 				local position=find_npc_by_vnum(20005) -- Yonah
 				if 0!=v then
-					target.vid("__TARGET5__", position, gameforge.new_quest_lv29._010_target) -- place questarrow on Yonah
+					target.vid("__TARGET5__", position, "[LC;5798]") -- place questarrow on Yonah
 				end
 			end
 		end
 		when button or info begin -- this event is triggered when the quest-journal for this quest is opened
-			say_title(gameforge.new_quest_lv29._015_npcChat)
-			say(string.format(gameforge.new_quest_lv29._091_say, get_map_name_by_number(1)))
+			say_title("[LC;5799]")
+			say(string.format("[LC;5855;%s]", get_map_name_by_number(1)))
 		end
-		when 20005.chat.gameforge.new_quest_lv29._015_npcChat begin -- Starting to talk to Yonah about the broken china
+		when 20005.chat."[LC;5799]" begin -- Starting to talk to Yonah about the broken china
 			target.delete("__TARGET5__") -- delete questarrow
 			local hayCount = pc.count_item(50054) + pc.getqf("yonahHasHay")
 			say_pc_name()
-			say_reward(gameforge.new_quest_lv29._101_say_reward)
+			say_reward("[LC;5856]")
 			wait()
-			say_title(gameforge.new_quest_lv29._102_say_title)
-			say(gameforge.new_quest_lv29._103_say_reward)
+			say_title("[LC;5857]")
+			say("[LC;5858]")
 			wait()
 			say_pc_name()
-			say_reward(gameforge.new_quest_lv29._104_say_reward)
+			say_reward("[LC;5859]")
 			if hayCount >= 6 and pc.getqf("yonahspatience") > 0 then -- when the player retuns with all the hay he or she was ask for
-				say_reward(gameforge.new_quest_lv29._105_say_reward)
+				say_reward("[LC;5860]")
 				wait()
-				say_title(gameforge.new_quest_lv29._102_say_title)
-				say(gameforge.new_quest_lv29._106_say_reward)
-				say(gameforge.new_quest_lv29._107_say_reward )
-				say(string.format(gameforge.new_quest_lv29._115_say_reward, 38000))
+				say_title("[LC;5857]")
+				say("[LC;5861]")
+				say("[LC;5862]" )
+				say(string.format("[LC;5870;%s]", 38000))
 				pc.remove_item(50054, 6)
 				pc.change_money(38000)
 				pc.give_exp2(600000)
@@ -403,7 +403,7 @@ quest new_quest_lv29 begin
 					end
 						
 					pc.give_exp2(bonusxp)
-					notice_multiline(string.format(gameforge.new_quest_lv29._108_notice, bonusxp), notice)
+					notice_multiline(string.format("[LC;5863;%s]", bonusxp), notice)
 				end
 				q.done()
 				clear_letter()
@@ -416,7 +416,7 @@ quest new_quest_lv29 begin
 				pc.setqf("dropProb", 0)
 				set_state(__COMPLETE__)
 			elseif hayCount > 1 and hayCount < 6 and pc.getqf("yonahspatience") > 1 then -- when the player has lost some hay on the way Yonah asks for more and triggers the state above
-				say_reward(gameforge.new_quest_lv29._109_say_reward)
+				say_reward("[LC;5864]")
 				wait()
 				local bringMeMore = 6 - hayCount
 				local lowerpatience = pc.getqf("yonahspatience") -1
@@ -425,9 +425,9 @@ quest new_quest_lv29 begin
 				pc.setqf("dropProb", new_quest_lv29_dropProb/4) -- it will be damn hard to get more hay
 				pc.remove_item(50054, hayCount)
 				pc.setqf("yonahHasHay", hayCount)
-				say_title(gameforge.new_quest_lv29._102_say_title)
-				say(string.format(gameforge.new_quest_lv29._110_say_reward, bringMeMore))
-				say(gameforge.new_quest_lv29._111_say_reward)
+				say_title("[LC;5857]")
+				say(string.format("[LC;5865;%s]", bringMeMore))
+				say("[LC;5866]")
 				new_quest_lv29_neededAmountDrop = bringMeMore
 				local qfindex = pc.getqf("hayIndex") + bringMeMore
 				pc.setqf("hayIndex", qfindex)
@@ -436,11 +436,11 @@ quest new_quest_lv29 begin
 				set_state(cutting_hay)
 			else -- when the player has lost all the hay or brings only 1 bunch the quest is completed with only 25% XP and Yang.
 				wait()
-				say_title(gameforge.new_quest_lv29._102_say_title)
-				say_reward(gameforge.new_quest_lv29._112_say_reward )
-				say_reward(gameforge.new_quest_lv29._113_say_reward)
-				say_reward(gameforge.new_quest_lv29._114_say_reward)
-				say(string.format(gameforge.new_quest_lv29._115_say_reward, 9500))
+				say_title("[LC;5857]")
+				say_reward("[LC;5867]" )
+				say_reward("[LC;5868]")
+				say_reward("[LC;5869]")
+				say(string.format("[LC;5870;%s]", 9500))
 				pc.change_money(9500)
 				pc.give_exp2(150000)
 				q.done()

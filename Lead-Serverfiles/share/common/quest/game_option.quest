@@ -2,34 +2,34 @@ quest game_option begin
     state start begin
         when login begin
             local val=0
-            local msg = gameforge.game_option._100_say .. " "
+            local msg = "[LC;1162]" .. " "
             if pc.getqf("block_exchange") == 1 then
-                msg = msg..gameforge.game_option._110_say
+                msg = msg.."[LC;1163]"
                 val = val + 1
             end
 
             if pc.getqf("block_guild_invite") == 1 then
                 val = val + 4
-                msg = msg .. gameforge.game_option._120_say .. " "
+                msg = msg .. "[LC;1164]" .. " "
             end
 
             if pc.getqf("block_messenger_invite") == 1 then
-                msg = msg .. gameforge.game_option._130_say .. " "
+                msg = msg .. "[LC;1165]" .. " "
                 val = val + 16
             end
 
             if pc.getqf("block_party_invite") == 1 then
-                msg = msg .. gameforge.game_option._140_say .. " "
+                msg = msg .. "[LC;1166]" .. " "
                 val = val + 2
             end
 
             if pc.getqf("block_party_request") == 1 then
-                msg = msg .. gameforge.game_option._150_say .. " "
+                msg = msg .. "[LC;1167]" .. " "
                 val = val + 32
             end
 
             if pc.getqf("block_whisper") == 1 then
-                msg = msg .. gameforge.game_option._160_say .. " "
+                msg = msg .. "[LC;1168]" .. " "
                 val = val + 8
             end
 

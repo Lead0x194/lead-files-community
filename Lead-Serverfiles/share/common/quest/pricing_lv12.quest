@@ -11,14 +11,14 @@ quest pricing_lv12 begin
 	
 	state mailorder begin
 		when login or enter begin
-				send_letter(gameforge.pricing_lv12._10_send_letter)
+				send_letter("[LC;6705]")
 		end
 		when button or info begin
-			say_title(gameforge.pricing_lv12._20_say_title)
-			say(gameforge.pricing_lv12._30_say)
+			say_title("[LC;6706]")
+			say("[LC;6707]")
 		wait()
-			say(gameforge.pricing_lv12._40_say)
-			say_reward(gameforge.pricing_lv12._50_say_reward)
+			say("[LC;6708]")
+			say_reward("[LC;6709]")
 			set_state(__COMPLETE__)
 		end
 	end

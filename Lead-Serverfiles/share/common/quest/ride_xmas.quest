@@ -56,7 +56,7 @@ quest ride_xmas begin
 
 			if pc.level < ride_info[vnum][5] then
 				say("")
-				say(gameforge.ride._010_say)
+				say("[LC;6800]")
 				say("")
 			else
 				if 112 == pc.get_map_index() then
@@ -89,7 +89,7 @@ quest ride_xmas begin
 		when 71164.use or 71165.use or 71166.use begin
 			if pc.is_polymorphed() then
 				say("")
-				say(gameforge.ride._020_say)
+				say("[LC;6801]")
 				say("")
 			elseif false == pc.is_riding() then
 			 	if true == horse.is_summon() then
@@ -99,7 +99,7 @@ quest ride_xmas begin
 				ride_xmas.Ride(item.vnum, 0)
 			else
 				say("")
-				say(gameforge.ride._030_say)
+				say("[LC;6802]")
 				say("")
 			end
 		end
@@ -109,7 +109,7 @@ quest ride_xmas begin
 
 			if pc.is_polymorphed() then
 				say("")
-				say(gameforge.ride._020_say)
+				say("[LC;6801]")
 				say("")
 			elseif false == pc.is_riding() then
 			 	if true == horse.is_summon() then
@@ -124,7 +124,7 @@ quest ride_xmas begin
 				ride_xmas.Ride(item.vnum, 0)
 			else
 				say("")
-				say(gameforge.ride._030_say)
+				say("[LC;6802]")
 				say("")
 			end
 		end

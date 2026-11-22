@@ -13,54 +13,54 @@ quest main_quest_lv15 begin
 			local v=find_npc_by_vnum(20355)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv10._180_targetVid)
+				target.vid("__TARGET__", v, "[LC;4078]")
 			end
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.main_quest_lv12._130_targetVid)
-			q.set_title(gameforge.main_quest_lv15._10_qSetTitle)
+			makequestbutton("[LC;4093]")
+			q.set_title("[LC;4123]")
 			q.start()
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv15._10_qSetTitle)
-			say(gameforge.main_quest_lv15._20_say)
+			say_title("[LC;4123]")
+			say("[LC;4133]")
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.main_quest_lv15._30_say)
+			say_title("[LC;4082]")
+			say("[LC;4134]")
 			wait()
 			local empire = pc.getempire()
 			if empire == 1 then
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv15._40_say)
+				say_title("[LC;4082]")
+				say("[LC;4135]")
 				wait()
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv15._50_say)
+				say_title("[LC;4082]")
+				say("[LC;4136]")
 				wait()
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv15._60_say)
+				say_title("[LC;4082]")
+				say("[LC;4137]")
 
 			elseif empire == 2 then
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv15._70_say)
+				say_title("[LC;4082]")
+				say("[LC;4138]")
 				wait()
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv15._80_say)
+				say_title("[LC;4082]")
+				say("[LC;4139]")
 				wait()
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv15._90_say)
+				say_title("[LC;4082]")
+				say("[LC;4140]")
 
 			elseif empire == 3 then
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv15._100_say)
+				say_title("[LC;4082]")
+				say("[LC;4122]")
 				wait()
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv15._110_say)
+				say_title("[LC;4082]")
+				say("[LC;4124]")
 				wait()
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv15._120_say)
+				say_title("[LC;4082]")
+				say("[LC;4125]")
 
 			end
 
@@ -74,23 +74,23 @@ quest main_quest_lv15 begin
 			local v=find_npc_by_vnum(20017)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.locale.yuhwan.find_label)
+				target.vid("__TARGET__", v, "[LC;3738]")
 			end
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.locale.yuhwan.find_label)
-			q.set_title(gameforge.locale.yuhwan.find_label)
+			makequestbutton("[LC;3738]")
+			q.set_title("[LC;3738]")
 			q.start()
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv15._140_sayTitle)
-			say(gameforge.main_quest_lv15._150_sayReward)
+			say_title("[LC;4127]")
+			say("[LC;4128]")
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
-			say_title(gameforge.arena_manager._20_sayTitle)
-			say(gameforge.main_quest_lv15._160_say)
+			say_title("[LC;14]")
+			say("[LC;4129]")
 			setstate(gotoboss2)
 			q.done()
 		end
@@ -100,27 +100,27 @@ quest main_quest_lv15 begin
 			local v=find_npc_by_vnum(20355)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv10._180_targetVid)
+				target.vid("__TARGET__", v, "[LC;4078]")
 			end
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.main_quest_lv15._170_makequestbutton)
-			q.set_title(gameforge.main_quest_lv15._170_makequestbutton)
+			makequestbutton("[LC;4130]")
+			q.set_title("[LC;4130]")
 			q.start()
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv15._140_sayTitle)
-			say(gameforge.main_quest_lv15._175_say)
+			say_title("[LC;4127]")
+			say("[LC;4131]")
 		end
 		when __TARGET__.target.click begin
 			pc.give_exp2( 20000 )
 			pc.change_money( 10000 )
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.main_quest_lv15._180_say)
-			say_title(gameforge.collect_herb_lv4._130_sayTitle)
-						say_reward(gameforge.main_quest_lv15._130_sayReward)
+			say_title("[LC;4082]")
+			say("[LC;4132]")
+			say_title("[LC;192]")
+						say_reward("[LC;4126]")
 
 			clear_letter()
 			q.done()

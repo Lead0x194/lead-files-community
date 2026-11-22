@@ -1,80 +1,80 @@
 quest horse_revive begin
 	state start begin
-		when 20349.chat.gameforge.horse_revive._10_npcChat with horse.get_grade()==3 and horse.is_dead() and pc.countitem("50059")<1 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._20_say)
+		when 20349.chat."[LC;1641]" with horse.get_grade()==3 and horse.is_dead() and pc.countitem("50059")<1 begin
+			say_title("[LC;1558]")
+			say("[LC;1646]")
 			if pc.countitem("50058")>=1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_revive._30_say)
+				say_title("[LC;1558]")
+				say("[LC;1647]")
 			elseif pc.countitem("50057")>=1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_revive._40_say)
+				say_title("[LC;1558]")
+				say("[LC;1648]")
 			end
 		end
-		when 20349.chat.gameforge.horse_revive._10_npcChat with horse.get_grade()==3 and horse.is_dead() and pc.countitem("50059")>=1 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._50_say)
+		when 20349.chat."[LC;1641]" with horse.get_grade()==3 and horse.is_dead() and pc.countitem("50059")>=1 begin
+			say_title("[LC;1558]")
+			say("[LC;1649]")
 			wait()
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._60_say)
+			say_title("[LC;1558]")
+			say("[LC;1650]")
 			horse.summon()
 						wait()
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._70_say)
+			say_title("[LC;1558]")
+			say("[LC;1651]")
 			if pc.countitem("50059")>=1 then
 				pc.removeitem("50059", 1)
 				horse.revive()
 			end
 		end
-		when 20349.chat.gameforge.horse_revive._10_npcChat with horse.get_grade()==2 and horse.is_dead() and pc.countitem("50058")<1 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._80_say)
+		when 20349.chat."[LC;1641]" with horse.get_grade()==2 and horse.is_dead() and pc.countitem("50058")<1 begin
+			say_title("[LC;1558]")
+			say("[LC;1652]")
 			if pc.countitem("50059")>=1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_revive._90_say)
+				say_title("[LC;1558]")
+				say("[LC;1653]")
 			elseif pc.countitem("50057")>=1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_revive._40_say)
+				say_title("[LC;1558]")
+				say("[LC;1648]")
 			end
 		end
 
-		when 20349.chat.gameforge.horse_revive._100_npcChat with horse.get_grade()==2 and horse.is_dead() and pc.countitem("50058")>=1 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._110_say)
+		when 20349.chat."[LC;1640]" with horse.get_grade()==2 and horse.is_dead() and pc.countitem("50058")>=1 begin
+			say_title("[LC;1558]")
+			say("[LC;1642]")
 			wait()
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._60_say)
+			say_title("[LC;1558]")
+			say("[LC;1650]")
 			horse.summon()
 						wait()
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._70_say)
+			say_title("[LC;1558]")
+			say("[LC;1651]")
 			if pc.countitem("50058")>=1 then
 				pc.removeitem("50058", 1)
 				horse.revive()
 			end
 		end
 
-		when 20349.chat.gameforge.horse_revive._100_npcChat with horse.get_grade()==1 and horse.is_dead() and pc.countitem("50057")<1 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._120_say)
+		when 20349.chat."[LC;1640]" with horse.get_grade()==1 and horse.is_dead() and pc.countitem("50057")<1 begin
+			say_title("[LC;1558]")
+			say("[LC;1643]")
 			if pc.countitem("50059")>=1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_revive._90_say)
+				say_title("[LC;1558]")
+				say("[LC;1653]")
 			elseif pc.countitem("50058")>=1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_revive._130_say)
+				say_title("[LC;1558]")
+				say("[LC;1644]")
 			end
 		end
-		when 20349.chat.gameforge.horse_revive._10_npcChat with horse.get_grade()==1 and horse.is_dead() and pc.countitem("50057")>=1 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._140_say)
+		when 20349.chat."[LC;1641]" with horse.get_grade()==1 and horse.is_dead() and pc.countitem("50057")>=1 begin
+			say_title("[LC;1558]")
+			say("[LC;1645]")
 			wait()
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._60_say)
+			say_title("[LC;1558]")
+			say("[LC;1650]")
 			horse.summon()
 						wait()
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_revive._70_say)
+			say_title("[LC;1558]")
+			say("[LC;1651]")
 			if pc.countitem("50057")>=1 then
 				pc.removeitem("50057", 1)
 				horse.revive()

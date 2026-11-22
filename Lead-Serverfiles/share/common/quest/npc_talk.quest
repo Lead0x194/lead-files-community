@@ -2,186 +2,186 @@ quest npc_talk begin
 	state start begin
 		when 20354.click begin
 			say_npc()
-			say(gameforge.npc_talk._10_say)
+			say("[LC;6344]")
 		end
 
-		when 20002.chat.gameforge.npc_talk._620_npcChat begin
-			say_title(gameforge.npc_talk._630_sayTitle)
-			say(gameforge.npc_talk._640_say)
+		when 20002.chat."[LC;6401]" begin
+			say_title("[LC;6402]")
+			say("[LC;6403]")
 		end
 
-		when 20003.chat.gameforge.npc_talk._570_npcChat begin
-			say_title(gameforge.npc_talk._580_sayTitle)
-			say(gameforge.npc_talk._590_say)
+		when 20003.chat."[LC;6395]" begin
+			say_title("[LC;6396]")
+			say("[LC;6397]")
 		end
 
-		when 20003.chat.gameforge.npc_talk._600_npcChat begin
-			say_title(gameforge.npc_talk._580_sayTitle)
-			say(gameforge.npc_talk._610_say)
+		when 20003.chat."[LC;6398]" begin
+			say_title("[LC;6396]")
+			say("[LC;6400]")
 		end
 
-		when 20005.chat.gameforge.npc_talk._60_npcChat begin
-			say_title(gameforge.npc_talk._70_sayTitle)
-			say(gameforge.npc_talk._80_say)
+		when 20005.chat."[LC;6399]" begin
+			say_title("[LC;6410]")
+			say("[LC;6421]")
 		end
 
-		when 20005.chat.gameforge.npc_talk._90_npcChat begin
-			say_title(gameforge.npc_talk._70_sayTitle)
-			say(gameforge.npc_talk._100_say)
+		when 20005.chat."[LC;6427]" begin
+			say_title("[LC;6410]")
+			say("[LC;6343]")
 		end
 
-		when 20006.chat.gameforge.npc_talk._440_npcChat begin
+		when 20006.chat."[LC;6381]" begin
 			say_title(mob_name(20006))
-			say(gameforge.npc_talk._450_say)
+			say("[LC;6382]")
 		end
 
-		when 20006.chat.gameforge.npc_talk._460_npcChat begin
+		when 20006.chat."[LC;6383]" begin
 			say_title(mob_name(20006))
-			say(gameforge.npc_talk._470_say)
+			say("[LC;6384]")
 		end
 
-		when 20008.chat.gameforge.npc_talk._20_npcChat begin
-			say_title(gameforge.npc_talk._30_sayTitle)
-			say(gameforge.npc_talk._40_say)
+		when 20008.chat."[LC;6355]" begin
+			say_title("[LC;6366]")
+			say("[LC;6377]")
 			if math.random(2) == 1 then
 				wait()
 				say(pc.get_name()..":")
-				say(gameforge.npc_talk._50_say)
+				say("[LC;6388]")
 			end
 		end
 
-		when 20010.chat.gameforge.npc_talk._650_npcChat begin
+		when 20010.chat."[LC;6404]" begin
 			say_title(mob_name(20010))
-			say(gameforge.npc_talk._660_say)
+			say("[LC;6405]")
 		end
 
-		when 20011.chat.gameforge.npc_talk._340_npcChat begin
-			say_title(gameforge.npc_talk._350_sayTitle)
-			say(gameforge.npc_talk._360_say)
+		when 20011.chat."[LC;6370]" begin
+			say_title("[LC;6371]")
+			say("[LC;6372]")
 		end
 
-		when 20012.chat.gameforge.npc_talk._480_npcChat begin
-			say_title(gameforge.npc_talk._490_sayTitle)
-			say(gameforge.npc_talk._500_say)
+		when 20012.chat."[LC;6385]" begin
+			say_title("[LC;6386]")
+			say("[LC;6387]")
 		end
 
-		when 20012.chat.gameforge.npc_talk._510_npcChat begin
-			say_title(gameforge.npc_talk._490_sayTitle)
-			say(gameforge.npc_talk._520_say)
+		when 20012.chat."[LC;6389]" begin
+			say_title("[LC;6386]")
+			say("[LC;6390]")
 		end
 
-		when 20014.chat.gameforge.npc_talk._670_npcChat begin
-			say_title(gameforge.npc_talk._680_sayTitle)
-			say(gameforge.npc_talk._690_say)
+		when 20014.chat."[LC;6406]" begin
+			say_title("[LC;6407]")
+			say("[LC;6408]")
 			if math.random(2) == 1 then
 				wait()
 				say(pc.get_name()..":")
-				say(gameforge.npc_talk._700_say)
+				say("[LC;6409]")
 			end
 		end
 
-		when 20015.chat.gameforge.npc_talk._110_npcChat begin
+		when 20015.chat."[LC;6345]" begin
 			say_npc()
-			say(gameforge.npc_talk._120_say)
+			say("[LC;6346]")
 		end
 
-		when 20017.chat.gameforge.npc_talk._130_npcChat begin
-			say_title(gameforge.npc_talk._140_sayTitle)
-			say(gameforge.npc_talk._150_say)
+		when 20017.chat."[LC;6347]" begin
+			say_title("[LC;6348]")
+			say("[LC;6349]")
 		end
 
-		when 20018.chat.gameforge.npc_talk._370_npcChat begin
+		when 20018.chat."[LC;6373]" begin
 			say_title(mob_name(20018))
-			say(gameforge.npc_talk._380_say)
+			say("[LC;6374]")
 		end
 
-		when 20019.chat.gameforge.npc_talk._390_npcChat begin
-			say_title(gameforge.npc_talk._400_sayTitle)
-			say(gameforge.npc_talk._410_say)
+		when 20019.chat."[LC;6375]" begin
+			say_title("[LC;6376]")
+			say("[LC;6378]")
 		end
 
-		when 20019.chat.gameforge.npc_talk._420_npcChat begin
-			say_title(gameforge.npc_talk._400_sayTitle)
-			say(gameforge.npc_talk._430_say)
+		when 20019.chat."[LC;6379]" begin
+			say_title("[LC;6376]")
+			say("[LC;6380]")
 		end
 
-		when 20020.chat.gameforge.npc_talk._270_npcChat begin
-			say_title(gameforge.npc_talk._280_sayTitle)
-			say(gameforge.npc_talk._290_say)
+		when 20020.chat."[LC;6362]" begin
+			say_title("[LC;6363]")
+			say("[LC;6364]")
 		end
 
-		when 20020.chat.gameforge.npc_talk._300_npcChat begin
-			say_title(gameforge.npc_talk._280_sayTitle)
-			say(gameforge.npc_talk._310_say)
+		when 20020.chat."[LC;6365]" begin
+			say_title("[LC;6363]")
+			say("[LC;6367]")
 			if math.random(2) == 1 then
 				wait()
 				say(pc.get_name()..":")
-				say(gameforge.npc_talk._320_say)
+				say("[LC;6368]")
 				wait()
-				say_title(gameforge.npc_talk._280_sayTitle)
-				say(gameforge.npc_talk._330_say)
+				say_title("[LC;6363]")
+				say("[LC;6369]")
 			end
 		end
 
-		when 20021.chat.gameforge.npc_talk._530_npcChat begin
+		when 20021.chat."[LC;6391]" begin
 			say_npc()
-			say(gameforge.npc_talk._540_say)
+			say("[LC;6392]")
 		end
 
-		when 20021.chat.gameforge.npc_talk._550_npcChat begin
+		when 20021.chat."[LC;6393]" begin
 			say_npc()
-			say(gameforge.npc_talk._560_say)
+			say("[LC;6394]")
 		end
 
-		when 20023.chat.gameforge.npc_talk._160_npcChat begin
-			say_title(gameforge.npc_talk._170_sayTitle)
-			say(gameforge.npc_talk._180_say)
+		when 20023.chat."[LC;6350]" begin
+			say_title("[LC;6351]")
+			say("[LC;6352]")
 		end
 
-		when 20023.chat.gameforge.npc_talk._190_npcChat begin
-			say_title(gameforge.npc_talk._170_sayTitle)
-			say(gameforge.npc_talk._200_say)
+		when 20023.chat."[LC;6353]" begin
+			say_title("[LC;6351]")
+			say("[LC;6354]")
 		end
 
-		when 20024.chat.gameforge.npc_talk._710_npcChat begin
-			say_title(gameforge.npc_talk._720_sayTitle)
-			say(gameforge.npc_talk._730_say)
+		when 20024.chat."[LC;6411]" begin
+			say_title("[LC;6412]")
+			say("[LC;6413]")
 		end
 
-		when 20024.chat.gameforge.npc_talk._740_npcChat begin
-			say_title(gameforge.npc_talk._720_sayTitle)
-			say(gameforge.npc_talk._750_say)
+		when 20024.chat."[LC;6414]" begin
+			say_title("[LC;6412]")
+			say("[LC;6415]")
 		end
 
-		when 20086.chat.gameforge.npc_talk._210_npcChat begin
-			say_title(gameforge.npc_talk._220_sayTitle)
-			say(gameforge.npc_talk._230_say)
+		when 20086.chat."[LC;6356]" begin
+			say_title("[LC;6357]")
+			say("[LC;6358]")
 		end
 
-		when 20087.chat.gameforge.npc_talk._240_npcChat begin
-			say_title(gameforge.npc_talk._250_sayTitle)
-			say(gameforge.npc_talk._260_say)
+		when 20087.chat."[LC;6359]" begin
+			say_title("[LC;6360]")
+			say("[LC;6361]")
 		end
 
-		when 20091.chat.gameforge.npc_talk._760_npcChat begin
-			say_title(gameforge.npc_talk._770_say_title)
-			say(gameforge.npc_talk._780_say)
+		when 20091.chat."[LC;6416]" begin
+			say_title("[LC;6417]")
+			say("[LC;6418]")
 		end
 
-		when 20091.chat.gameforge.npc_talk._790_npcChat begin
-			say_title(gameforge.npc_talk._770_say_title)
-			say(gameforge.npc_talk._800_say)
+		when 20091.chat."[LC;6419]" begin
+			say_title("[LC;6417]")
+			say("[LC;6420]")
 		end
 
-		when 20091.chat.gameforge.npc_talk._810_npcChat begin
-			say_title(gameforge.npc_talk._770_say_title)
-			say(gameforge.npc_talk._820_say)
-			say(gameforge.npc_talk._830_say)
+		when 20091.chat."[LC;6422]" begin
+			say_title("[LC;6417]")
+			say("[LC;6423]")
+			say("[LC;6424]")
 		end
 
-		when 20091.chat.gameforge.npc_talk._840_npcChat begin
-			say_title(gameforge.npc_talk._770_say_title)
-			say(gameforge.npc_talk._850_say)
+		when 20091.chat."[LC;6425]" begin
+			say_title("[LC;6417]")
+			say("[LC;6426]")
 		end
 	end
 end

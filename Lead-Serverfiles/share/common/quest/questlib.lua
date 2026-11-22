@@ -1526,7 +1526,7 @@ function BuildSkillList(job, group)
     end
 
     table.insert(skill_vnum_list, 0)
-    table.insert(skill_name_list, gameforge.locale.cancel)
+    table.insert(skill_name_list, "[LC;1891]")
 
     return { skill_vnum_list, skill_name_list }
 end
@@ -1564,9 +1564,9 @@ end
  function get_map_name_by_number(number)
 map_name = {
 --EmpireNr-MapNrs
-        [1] = {[1] = gameforge.functions._100_say, [2] = gameforge.functions._130_say, [3] = gameforge.functions._130_say,  [4] = gameforge.functions._160_say, [61] = gameforge.functions._200_say, [62] = gameforge.functions._210_say, [63] = gameforge.functions._220_say, [64] = gameforge.functions._190_say, [65] = gameforge.functions._230_say, [72] = gameforge.functions._240_say, [73] = gameforge.functions._240_say,},
-        [2] = {[1] = gameforge.functions._110_say, [2] = gameforge.functions._140_say, [3] = gameforge.functions._140_say,  [4] = gameforge.functions._170_say, [61] = gameforge.functions._200_say, [62] = gameforge.functions._210_say, [63] = gameforge.functions._220_say, [64] = gameforge.functions._190_say, [65] = gameforge.functions._230_say, [72] = gameforge.functions._240_say, [73] = gameforge.functions._240_say,},
-        [3] = {[1] = gameforge.functions._120_say, [2] = gameforge.functions._150_say, [3] = gameforge.functions._150_say,  [4] = gameforge.functions._180_say, [61] = gameforge.functions._200_say, [62] = gameforge.functions._210_say, [63] = gameforge.functions._220_say, [64] = gameforge.functions._190_say, [65] = gameforge.functions._230_say, [72] = gameforge.functions._240_say, [73] = gameforge.functions._240_say,},
+        [1] = {[1] = "[LC;1136]", [2] = "[LC;1139]", [3] = "[LC;1139]",  [4] = "[LC;1142]", [61] = "[LC;1146]", [62] = "[LC;1147]", [63] = "[LC;1148]", [64] = "[LC;1145]", [65] = "[LC;1149]", [72] = "[LC;1150]", [73] = "[LC;1150]",},
+        [2] = {[1] = "[LC;1137]", [2] = "[LC;1140]", [3] = "[LC;1140]",  [4] = "[LC;1143]", [61] = "[LC;1146]", [62] = "[LC;1147]", [63] = "[LC;1148]", [64] = "[LC;1145]", [65] = "[LC;1149]", [72] = "[LC;1150]", [73] = "[LC;1150]",},
+        [3] = {[1] = "[LC;1138]", [2] = "[LC;1141]", [3] = "[LC;1141]",  [4] = "[LC;1144]", [61] = "[LC;1146]", [62] = "[LC;1147]", [63] = "[LC;1148]", [64] = "[LC;1145]", [65] = "[LC;1149]", [72] = "[LC;1150]", [73] = "[LC;1150]",},
 }
     return map_name[pc.get_empire()][number]
 end

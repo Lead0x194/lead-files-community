@@ -2,15 +2,15 @@ quest new_christmas_sock_quest begin
 	state start begin
 	end
 	state baby_dear_give begin
-		when 20126.chat.gameforge.new_christmas_sock._010_npcChat begin
+		when 20126.chat."[LC;5620]" begin
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas_sock._020_say)
+			say ("[LC;5621]")
 			wait()
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas_sock._030_say)
+			say ("[LC;5622]")
 			wait()
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas_sock._040_say)
+			say ("[LC;5623]")
 			pc.give_item2_select(53002, 1)
 			item.set_socket(0, get_global_time() + 7200)
 			pc.setqf ("last_reindeer_give_time", get_global_time())
@@ -18,27 +18,27 @@ quest new_christmas_sock_quest begin
 		end
 	end
 	state sock_take begin
-		when 20126.chat.gameforge.new_christmas_sock._080_npcChat begin
+		when 20126.chat."[LC;5627]" begin
             if get_global_time() - pc.getqf ("last_reindeer_give_time") < 86400 then
                 say_title (mob_name(20126))
-                say (gameforge.new_christmas_sock._090_say)
+                say ("[LC;5628]")
             else
                 say_title (mob_name(20126))
-                say (gameforge.new_christmas_sock._040_say)
+                say ("[LC;5623]")
                 pc.give_item2_select(53002, 1)
                 item.set_socket(0, get_global_time() + 7200)
                 pc.setqf ("last_reindeer_give_time", get_global_time())
             end
         end
-		when 20126.chat.gameforge.new_christmas_sock._050_npcChat begin
+		when 20126.chat."[LC;5624]" begin
 			local n = pc.count_item(50010)
 			if n < 10 then
 				say_title(mob_name(20126))
-				say (gameforge.new_christmas_sock._060_say)
+				say ("[LC;5625]")
 				wait()
 			else
 				say_title(mob_name(20126))
-				say (gameforge.new_christmas_sock._070_say)
+				say ("[LC;5626]")
 				wait()
 				pc.remove_item (50010, 10)
 				say_title(locale.reward)

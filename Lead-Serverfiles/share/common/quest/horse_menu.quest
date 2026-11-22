@@ -16,7 +16,7 @@ quest horse_menu begin
 					end
 				else
 					s = select(
-					locale.horse_menu.feed, locale.horse_menu.ride, locale.horse_menu.unsummon,gameforge.horse_menu._10_say ,gameforge.horse_menu._20_say,locale.horse_menu.close)
+					locale.horse_menu.feed, locale.horse_menu.ride, locale.horse_menu.unsummon,"[LC;1628]" ,"[LC;1632]",locale.horse_menu.close)
 				end
 
 				if s == 0 then
@@ -28,7 +28,7 @@ quest horse_menu begin
 						pc.removeitem(food, 1)
 						horse.feed()
 					else
-						say(gameforge.horse_menu._30_say  .. item_name(food))
+						say("[LC;1633]"  .. item_name(food))
 						say("")
 					end
 				elseif (s == 2 and false == pc.is_riding()) then 
@@ -36,34 +36,34 @@ quest horse_menu begin
 				elseif s == 3 then
 					horse.unsummon()
 				elseif s == 4 then
-					say(gameforge.horse_menu._40_say..horse.get_health_pct().."%")
-					say(gameforge.horse_menu._50_say..horse.get_stamina_pct().."%")
+					say("[LC;1634]"..horse.get_health_pct().."%")
+					say("[LC;1635]"..horse.get_stamina_pct().."%")
 					say("")
 				elseif s == 5 then
 					if pc.countitem("71110") <= 0 then
-						say(gameforge.horse_menu._30_say  .. item_name("71110"))
+						say("[LC;1633]"  .. item_name("71110"))
 						say("")
 						return
 					end
 
 					local old_horse_name = horse.get_name() ;
 					if string.len(old_horse_name) == 0 then
-						say(gameforge.horse_menu._60_say)
+						say("[LC;1636]")
 					else
-						say(gameforge.horse_menu._70_say..old_horse_name)
+						say("[LC;1637]"..old_horse_name)
 					end
 					
-					say(gameforge.horse_menu._80_say)
+					say("[LC;1638]")
 					say("")
 
 					local horse_name = input()
 
 					if string.len(horse_name) < 2 then
-						say(gameforge.horse_menu._90_say)
+						say("[LC;1639]")
 						say("")
 						return
 					elseif string.len(horse_name) > 12 then
-						say(gameforge.horse_menu._100_say)
+						say("[LC;1627]")
 						say("")
 						return
 					end
@@ -71,15 +71,15 @@ quest horse_menu begin
 					local ret = horse.set_name(horse_name)
 
 					if ret == 0 then
-						say(gameforge.horse_menu._110_say)
+						say("[LC;1629]")
 						say("")
 					elseif ret == 1 then
 						say()
-						say(gameforge.horse_menu._120_say)
+						say("[LC;1630]")
 					elseif ret == 2 then
 						pc.remove_item("71110")
 
-						say(gameforge.horse_menu._130_say)
+						say("[LC;1631]")
 						say("")
 					end
 				end

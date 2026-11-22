@@ -1,54 +1,54 @@
 quest fisher begin
     state start begin
-		when 9009.chat.gameforge.fisher._10_npcChat begin
+		when 9009.chat."[LC;1024]" begin
 		    npc.open_shop()
 			setskin(NOWINDOW)
 		end
 	
-		when 9009.chat.gameforge.fisher._20_npcChat begin
-			say_title(gameforge.fisher._30_sayTitle)
-			say(gameforge.fisher._40_say)
+		when 9009.chat."[LC;1031]" begin
+			say_title("[LC;1032]")
+			say("[LC;1033]")
 		end
 
 		when 9009.take with item.vnum < 27400 or item.vnum > 27590 begin
-			say_title(gameforge.fisher._30_sayTitle)
-			say(gameforge.fisher._50_say)
+			say_title("[LC;1032]")
+			say("[LC;1034]")
 		end
 
 		when 9009.take with item.vnum == 27590 begin
-			say_title(gameforge.fisher._30_sayTitle)
-			say(gameforge.fisher._60_say)
+			say_title("[LC;1032]")
+			say("[LC;1035]")
 		end
 
 		when 9009.take with item.vnum >= 27400 and item.vnum < 27590 and item.get_socket(0)!= item.get_value(2) begin
-			say_title(gameforge.fisher._30_sayTitle)
-			say(gameforge.fisher._70_say)
+			say_title("[LC;1032]")
+			say("[LC;1036]")
 		end
 
 		when 9009.take with item.vnum >= 27400 and item.vnum < 27590 and item.get_socket(0) == item.get_value(2) begin
-			say_title(gameforge.fisher._30_sayTitle)
-			say(gameforge.fisher._80_say)
-say(string.format(gameforge.fisher._90_say, item.get_value(0) / 10))
-			say(gameforge.fisher._100_say)
-say(string.format(gameforge.fisher._110_say, 100 - item.get_value(3)))
-			say(gameforge.fisher._120_say)
+			say_title("[LC;1032]")
+			say("[LC;1037]")
+say(string.format("[LC;1038;%s]", item.get_value(0) / 10))
+			say("[LC;1023]")
+say(string.format("[LC;1025;%s]", 100 - item.get_value(3)))
+			say("[LC;1026]")
 
-			local s =  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+			local s =  select("[LC;2059]", "[LC;2035]")
 
 			if s == 1 then
 				local f = __fish_real_refine_rod(item.get_cell())
 				if f == 2 then
-					say_title(gameforge.fisher._30_sayTitle)
-					say(gameforge.fisher._130_say)
+					say_title("[LC;1032]")
+					say("[LC;1027]")
 				elseif f == 1 then
-					say_title(gameforge.fisher._30_sayTitle)
-					say(gameforge.fisher._140_say)
+					say_title("[LC;1032]")
+					say("[LC;1028]")
 				else
-					say(gameforge.fisher._150_say)
+					say("[LC;1029]")
 				end
 			else
-				say_title(gameforge.fisher._30_sayTitle)
-				say(gameforge.fisher._160_say)
+				say_title("[LC;1032]")
+				say("[LC;1030]")
 			end
 		end
     end

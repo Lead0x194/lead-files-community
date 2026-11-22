@@ -17,7 +17,7 @@ quest ride_mystery_boxes begin
 
 			if pc.level < ride_info[vnum][5] then
 				say("")
-				say(gameforge.ride._010_say)
+				say("[LC;6800]")
 				say("")
 			else
 				if 112 == pc.get_map_index() then
@@ -50,7 +50,7 @@ quest ride_mystery_boxes begin
 		when 71124.use or 71125.use or 71126.use or 71127.use or 71128.use or 71137.use or 71138.use or 71139.use or 71140.use  or 71141.use or 71142.use begin
 			 if pc.is_polymorphed() then
 				 say("")
-				 say(gameforge.ride._020_say)
+				 say("[LC;6801]")
 				 say("")
 			elseif false == pc.is_riding() then
 			 	if true == horse.is_summon() then
@@ -59,7 +59,7 @@ quest ride_mystery_boxes begin
 				 ride_mystery_boxes.Ride(item.vnum, 0)
 			 else
 				say("")
-				 say(gameforge.ride._030_say)
+				 say("[LC;6802]")
 				 say("")
 			 end
 		end

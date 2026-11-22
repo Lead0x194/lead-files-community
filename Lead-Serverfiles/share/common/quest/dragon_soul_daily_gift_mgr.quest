@@ -8,7 +8,7 @@ quest dragon_soul_daily_gift_mgr begin
 			return now > s_time and now < e_time
 		end
 		function date_getter()
-			say(gameforge.dragon_soul_gift_mgr._040_say)
+			say("[LC;791]")
 			say("yy-mm-dd hh:mm")
 			local date = input()
 			local _, _, y, m, d, hour, min = string.find(date, "(%d+)-(%d+)-(%d+) (%d+):(%d+)")
@@ -25,7 +25,7 @@ quest dragon_soul_daily_gift_mgr begin
 			say(string.format("gift item[ENTER]	vnum : %d", gift_vnum))
 			say_item_vnum(gift_vnum)
 		end
-		when checker.chat.gameforge.dragon_soul_gift_mgr._010_npcChat with pc.is_gm() begin
+		when checker.chat."[LC;788]" with pc.is_gm() begin
 			local sel = 0
 			if dragon_soul_daily_gift_mgr.is_event_on() then
 				say(locale.event_on_going)
@@ -44,18 +44,18 @@ quest dragon_soul_daily_gift_mgr begin
 			-- Get start time and end time.
 			local s_y, s_m, s_d, s_hour, s_min
 			repeat
-				say(gameforge.dragon_soul_gift_mgr._020_say)
+				say("[LC;789]")
 				s_y, s_m, s_d, s_hour, s_min = dragon_soul_daily_gift_mgr.date_getter()
 				s_y = s_y + 2000
 				say(string.format("year:%d month:%d day:%d hour:%d min:%d", s_y, s_m, s_d, s_hour, s_min))
-			until 1 == select(gameforge.locale.yes, gameforge.locale.no)
+			until 1 == select("[LC;3734]", "[LC;2833]")
 			local e_y, e_m, e_d, e_hour, e_min
 			repeat
-				say(gameforge.dragon_soul_gift_mgr._030_say)
+				say("[LC;790]")
 				e_y, e_m, e_d, e_hour, e_min = dragon_soul_daily_gift_mgr.date_getter()
 				e_y = e_y + 2000
 				say(string.format("year:%d month:%d day:%d hour:%d min:%d", e_y, e_m, e_d, e_hour, e_min))
-			until 1 == select(gameforge.locale.yes, gameforge.locale.no)
+			until 1 == select("[LC;3734]", "[LC;2833]")
 
 			local s_time = os.time{year=s_y, month=s_m, day=s_d, hour=s_hour, min=s_min}
 			local e_time = os.time{year=e_y, month=e_m, day=e_d, hour=e_hour, min=e_min}
@@ -70,8 +70,8 @@ quest dragon_soul_daily_gift_mgr begin
 			say(string.format("gift item[ENTER]	vnum : %d", gift_vnum))
 			say_item_vnum(gift_vnum)
 
-			say(gameforge.dragon_soul_gift_mgr._050_say)
-			if 2 == select(gameforge.locale.yes, gameforge.locale.no) then
+			say("[LC;792]")
+			if 2 == select("[LC;3734]", "[LC;2833]") then
 				return
 			end
 
@@ -83,7 +83,7 @@ quest dragon_soul_daily_gift_mgr begin
 			game.set_event_flag("ds_dg_et", e_time)
 			game.set_event_flag("ds_dg_item", gift_vnum)
 
-			say (gameforge.dragon_soul_gift_mgr._060_say)
+			say ("[LC;793]")
 		end
 	end
 end

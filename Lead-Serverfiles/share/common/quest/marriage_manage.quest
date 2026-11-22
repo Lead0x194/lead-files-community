@@ -1,16 +1,16 @@
 quest marriage_manage begin
     state start begin
-	when oldwoman.chat.gameforge.marriage_manage._10_npcChat with not pc.is_engaged_or_married() begin
+	when oldwoman.chat."[LC;5485]" with not pc.is_engaged_or_married() begin
 	    if not npc.lock() then
-		say_title(gameforge.fortune_telling._100_sayTitle)
-		say(gameforge.marriage_manage._20_say)
+		say_title("[LC;1118]")
+		say("[LC;5496]")
 		return
 	    end
 	    if pc.level < 25 then
-			say_title(gameforge.couple_ring._20_sayTitle)
-			say(gameforge.marriage_manage._30_say)
-			say_title(gameforge.marriage_manage._40_sayTitle)
-			say_reward(gameforge.marriage_manage._50_sayReward)
+			say_title("[LC;617]")
+			say("[LC;5507]")
+			say_title("[LC;5519]")
+			say_reward("[LC;5530]")
 				npc.unlock()
 		return
 	    end
@@ -18,10 +18,10 @@ quest marriage_manage begin
 	    local m_ring_num = pc.countitem(70301)
 	    local m_has_ring = m_ring_num > 0
 	    if not m_has_ring then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._60_say)
-		say_item(gameforge.marriage_manage._70_sayItem, 70301, "")
-		say(gameforge.marriage_manage._80_say)
+		say_title("[LC;617]")
+		say("[LC;5541]")
+		say_item("[LC;5552]", 70301, "")
+		say("[LC;5563]")
 		npc.unlock()
 
 		return
@@ -30,15 +30,15 @@ quest marriage_manage begin
 	    local m_sex = pc.get_sex()
 		local m_nationality= pc.get_empire()
 	    if not marriage_manage.is_equip_wedding_dress() then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._90_say)
+		say_title("[LC;617]")
+		say("[LC;5575]")
 
 		if m_sex==0 then
-		    say_item(gameforge.marriage_manage._100_sayItem, marriage_manage.get_wedding_dress(m_sex), "")
-		    say_reward(gameforge.marriage_manage._110_sayReward)
+		    say_item("[LC;5480]", marriage_manage.get_wedding_dress(m_sex), "")
+		    say_reward("[LC;5486]")
 		else
-		    say_item(gameforge.marriage_manage._120_sayItem, marriage_manage.get_wedding_dress(m_sex), "")
-		    say_reward(gameforge.marriage_manage._130_sayReward)
+		    say_item("[LC;5487]", marriage_manage.get_wedding_dress(m_sex), "")
+		    say_reward("[LC;5488]")
 		end
 				npc.unlock()
 		return
@@ -46,21 +46,21 @@ quest marriage_manage begin
 
 	    local NEED_MONEY = 1000000
 	    if pc.get_money() < NEED_MONEY then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._140_say)
-		say_reward(gameforge.marriage_manage._150_sayReward)
+		say_title("[LC;617]")
+		say("[LC;5489]")
+		say_reward("[LC;5490]")
 		npc.unlock()
 		return
 	    end
 
-	    say_title(gameforge.couple_ring._20_sayTitle)
-	    say(gameforge.marriage_manage._160_say)
-	    say_reward(gameforge.marriage_manage._170_sayReward)
+	    say_title("[LC;617]")
+	    say("[LC;5491]")
+	    say_reward("[LC;5492]")
 
 	    local sname = input()
 	    if sname == "" then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._180_say)
+		say_title("[LC;617]")
+		say("[LC;5493]")
 		npc.unlock()
 		return
 	    end
@@ -68,17 +68,17 @@ quest marriage_manage begin
 	    local u_vid = find_pc_by_name(sname)
 	    local m_vid = pc.get_vid()
 	    if u_vid == 0 then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._190_say)
-		say_reward(string.format(gameforge.marriage_manage._200_sayReward, sname))
+		say_title("[LC;617]")
+		say("[LC;5494]")
+		say_reward(string.format("[LC;5495;%s]", sname))
 				npc.unlock()
 		return
 	    end
 
 	    if not npc.is_near_vid(u_vid, 10) then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._210_say)
-		say_reward(string.format(gameforge.marriage_manage._220_sayReward, sname))
+		say_title("[LC;617]")
+		say("[LC;5497]")
+		say_reward(string.format("[LC;5498;%s]", sname))
 				npc.unlock()
 		return
 	    end
@@ -97,80 +97,80 @@ quest marriage_manage begin
 	    local m_level = pc.get_level()
 
 	    if u_vid == m_vid then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._230_say)
-		say_reward(gameforge.marriage_manage._240_sayReward)
+		say_title("[LC;617]")
+		say("[LC;5499]")
+		say_reward("[LC;5500]")
 				npc.unlock()
 		return
 	    end
 
 	    if u_sex == m_sex then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._250_say)
+		say_title("[LC;617]")
+		say("[LC;5501]")
 		npc.unlock()
 		return
 	    end
 
 	    if u_nationality != m_nationality then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._260_say)
+		say_title("[LC;617]")
+		say("[LC;5502]")
 		npc.unlock()
 		return
 	    end
 	    if u_married then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._270_say)
-say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
+		say_title("[LC;617]")
+		say("[LC;5503]")
+say_reward(string.format("[LC;5504;%s]", sname))
 				npc.unlock()
 		return
 	    end
 
 	    if u_level < 25 then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._290_say)
+		say_title("[LC;617]")
+		say("[LC;5505]")
 		npc.unlock()
 		return
 	    end
 
 	    if m_level - u_level > 15 or u_level - m_level > 15 then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._300_say)
+		say_title("[LC;617]")
+		say("[LC;5506]")
 		npc.unlock()
 		return
 	    end
 
 	    if not u_has_ring then
 		if m_ring_num >= 2 then
-		    say_title(gameforge.couple_ring._20_sayTitle)
-		    say(gameforge.marriage_manage._310_say)
+		    say_title("[LC;617]")
+		    say("[LC;5508]")
 		else
-		    say(gameforge.marriage_manage._320_say)
+		    say("[LC;5509]")
 		end
 
-		say_item(gameforge.marriage_manage._70_sayItem, 70301, "")
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._330_say)
+		say_item("[LC;5552]", 70301, "")
+		say_title("[LC;617]")
+		say("[LC;5510]")
 		npc.unlock()
 		return
 	    end
 
 	    if not u_wear then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._340_say)
+		say_title("[LC;617]")
+		say("[LC;5511]")
 		if u_sex==0 then
-		    say_title(gameforge.couple_ring._20_sayTitle)
-			say_item(gameforge.marriage_manage._100_sayItem, marriage_manage.get_wedding_dress(u_sex), "")
-		    say(gameforge.marriage_manage._350_say)
+		    say_title("[LC;617]")
+			say_item("[LC;5480]", marriage_manage.get_wedding_dress(u_sex), "")
+		    say("[LC;5512]")
 		else
-		    say_title(gameforge.couple_ring._20_sayTitle)
-		    say_item(gameforge.marriage_manage._120_sayItem, marriage_manage.get_wedding_dress(u_sex), "")
-		    say(gameforge.marriage_manage._360_say)
+		    say_title("[LC;617]")
+		    say_item("[LC;5487]", marriage_manage.get_wedding_dress(u_sex), "")
+		    say("[LC;5513]")
 		end
 			npc.unlock()
 		return
 	    end
 
-	    local ok_sign = confirm(u_vid, string.format(gameforge.marriage_manage._365_confirm_chat,pc.name), 30) 
+	    local ok_sign = confirm(u_vid, string.format("[LC;5514;%s]",pc.name), 30) 
 
 	    if ok_sign == CONFIRM_OK then
 		local m_name = pc.name
@@ -184,82 +184,82 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 		    pc.give_item2(70302, 1)
 		    pc.select(old)
 
-		    say_title(gameforge.couple_ring._20_sayTitle)
-		    say(gameforge.marriage_manage._370_say)
+		    say_title("[LC;617]")
+		    say("[LC;5515]")
 		    wait()
 		    setskin(NOWINDOW)
 		    marriage.engage_to(u_vid)
 		end
 	    else
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._380_say)
+		say_title("[LC;617]")
+		say("[LC;5516]")
 	    end
 	    	    npc.unlock()
 	end
 	
-	when oldwoman.chat.gameforge.marriage_manage._390_npcChat with pc.is_engaged() begin
-	    say_title(gameforge.couple_ring._20_sayTitle)
-	    say(gameforge.marriage_manage._400_say)
+	when oldwoman.chat."[LC;5517]" with pc.is_engaged() begin
+	    say_title("[LC;617]")
+	    say("[LC;5518]")
 	    wait()
 	    setskin(NOWINDOW)
 	    marriage.warp_to_my_marriage_map()
 	end
 
 
-	when 9011.chat.gameforge.marriage_manage._410_npcChat with pc.is_engaged() and marriage.in_my_wedding() begin
+	when 9011.chat."[LC;5520]" with pc.is_engaged() and marriage.in_my_wedding() begin
 	    if not npc.lock() then
-		say_title(gameforge.marriage_manage._420_sayTitle)
-		say(gameforge.marriage_manage._430_say)
+		say_title("[LC;5521]")
+		say("[LC;5522]")
 		return
 	    end
-	    say_title(gameforge.marriage_manage._420_sayTitle)
-	    say(gameforge.marriage_manage._440_say)
+	    say_title("[LC;5521]")
+	    say("[LC;5523]")
 
 	    local sname = input()
 	    local u_vid = find_pc_by_name(sname)
 	    local m_vid = pc.get_vid()
 
 	    if u_vid == 0 then
-			say_title(gameforge.marriage_manage._420_sayTitle)
-			say(gameforge.marriage_manage._450_say)
-			say_reward(string.format(gameforge.marriage_manage._200_sayReward, sname))
+			say_title("[LC;5521]")
+			say("[LC;5524]")
+			say_reward(string.format("[LC;5495;%s]", sname))
 			npc.unlock()
 		return
 	    end
 
 	    if not npc.is_near_vid(u_vid, 10) then
-			say_title(gameforge.marriage_manage._420_sayTitle)
-			say(gameforge.marriage_manage._460_say)
-			say_reward(string.format(gameforge.marriage_manage._470_sayReward, sname))
+			say_title("[LC;5521]")
+			say("[LC;5525]")
+			say_reward(string.format("[LC;5526;%s]", sname))
 			npc.unlock()
 		return
 	    end
 
 	    if u_vid == m_vid then
-		say_title(gameforge.marriage_manage._420_sayTitle)
-		say(gameforge.marriage_manage._480_say)
+		say_title("[LC;5521]")
+		say("[LC;5527]")
 		npc.unlock()
 		return
 	    end
 
 	    if u_vid != marriage.find_married_vid() then
-		say_title(gameforge.marriage_manage._490_sayTitle)
-		say(gameforge.marriage_manage._500_say)
+		say_title("[LC;5528]")
+		say("[LC;5529]")
 		npc.unlock()
 		return
 	    end
 
-	    local ok_sign = confirm(u_vid, string.format(gameforge.marriage_manage._365_confirm_chat,pc.name), 30)
+	    local ok_sign = confirm(u_vid, string.format("[LC;5514;%s]",pc.name), 30)
 	    if ok_sign != CONFIRM_OK then
-			say_title(gameforge.marriage_manage._490_sayTitle)
-			say(gameforge.marriage_manage._510_say)
+			say_title("[LC;5528]")
+			say("[LC;5531]")
 			npc.unlock()
 			return
 	    end
-		say_title(gameforge.marriage_manage._420_sayTitle)
-		say(gameforge.marriage_manage._520_say)
+		say_title("[LC;5521]")
+		say("[LC;5532]")
 		marriage.set_to_marriage()
-	    say(gameforge.marriage_manage._530_say)
+	    say("[LC;5533]")
 	    npc.unlock()
 	end
 
@@ -273,58 +273,58 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 	    end
 	end
 
-	when 9011.chat.gameforge.marriage_manage._540_npcChat with 
+	when 9011.chat."[LC;5534]" with 
 	    	(pc.is_engaged() or pc.is_married()) and 
 		marriage.in_my_wedding() and
 		not marriage.wedding_is_playing_music() begin
 	    marriage.wedding_music(true, "wedding.mp3")
 	    setskin(NOWINDOW)
 	end
-	when 9011.chat.gameforge.marriage_manage._550_npcChat with 
+	when 9011.chat."[LC;5535]" with 
 	    	(pc.is_engaged() or pc.is_married()) and 
 		marriage.in_my_wedding() and
 		marriage.wedding_is_playing_music() begin
 	    marriage.wedding_music(false, "default")
 	    setskin(NOWINDOW)
 	end
-	when 9011.chat.gameforge.marriage_manage._560_npcChat with 
+	when 9011.chat."[LC;5536]" with 
 	    pc.is_married() and 
 	    marriage.in_my_wedding() begin
 	    marriage.wedding_dark(true)
 	    setskin(NOWINDOW)
 	end
 
-	when 9011.chat.gameforge.marriage_manage._570_npcChat with pc.is_married() and marriage.in_my_wedding() begin
+	when 9011.chat."[LC;5537]" with pc.is_married() and marriage.in_my_wedding() begin
 	    marriage.wedding_snow(true)
 	    setskin(NOWINDOW)
 	end
 
-	when 9011.chat.gameforge.marriage_manage._580_npcChat with pc.is_married() and marriage.in_my_wedding() begin
+	when 9011.chat."[LC;5538]" with pc.is_married() and marriage.in_my_wedding() begin
 	    if not npc.lock() then
-		say_title(gameforge.marriage_manage._490_sayTitle)
-		say(gameforge.marriage_manage._590_say)
+		say_title("[LC;5528]")
+		say("[LC;5539]")
 		return
 	    end
 
-	    say_title(gameforge.marriage_manage._420_sayTitle)
-	    say(gameforge.marriage_manage._600_say)
-	    local s =  select(gameforge.marriage_manage._610_select, gameforge.marriage_manage._620_select)
+	    say_title("[LC;5521]")
+	    say("[LC;5540]")
+	    local s =  select("[LC;5542]", "[LC;5543]")
 	    if s == 2 then
 				local u_vid = marriage.find_married_vid()
 				if u_vid == 0 then
-			    say_title(gameforge.marriage_manage._420_sayTitle)
-		  	  say(gameforge.marriage_manage._630_say)
+			    say_title("[LC;5521]")
+		  	  say("[LC;5544]")
 			    npc.unlock()
 		    return
 		end
-		say_title(gameforge.marriage_manage._420_sayTitle)
-		say(gameforge.marriage_manage._640_say)
-		local ok_sign = confirm(u_vid, gameforge.marriage_manage._650_confirm_chat, 30)
+		say_title("[LC;5521]")
+		say("[LC;5545]")
+		local ok_sign = confirm(u_vid, "[LC;5546]", 30)
 		if ok_sign == CONFIRM_OK then
 		    marriage.end_wedding()
 		else
-		    say_title(gameforge.marriage_manage._490_sayTitle)
-		    say(gameforge.marriage_manage._660_say)
+		    say_title("[LC;5528]")
+		    say("[LC;5547]")
 		end
 
 	    end
@@ -332,9 +332,9 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 	end
 
 	
-	when 	11000.chat.gameforge.marriage_manage._670_npcChat or
-	    	11002.chat.gameforge.marriage_manage._680_npcChat or
-		11004.chat.gameforge.marriage_manage._680_npcChat with pc.is_married() begin
+	when 	11000.chat."[LC;5548]" or
+	    	11002.chat."[LC;5549]" or
+		11004.chat."[LC;5549]" with pc.is_married() begin
 
 	    if not marriage_manage.check_divorce_time() then
 		return
@@ -342,16 +342,16 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 
 	    local u_vid = marriage.find_married_vid()
 	    if u_vid == 0 or not npc.is_near_vid(u_vid, 10) then
-		say_title(gameforge.find_squareguard._30_sayTitle)
-		say(gameforge.marriage_manage._690_say)
+		say_title("[LC;1016]")
+		say("[LC;5550]")
 		return
 	    end
 
-	    say_title(gameforge.find_squareguard._30_sayTitle)
-	    say(gameforge.marriage_manage._700_say)
+	    say_title("[LC;1016]")
+	    say("[LC;5551]")
 
 	    local MONEY_NEED_FOR_ONE = 500000
-	    local s =  select(gameforge.horse_upgrade2._180_select, gameforge.marriage_manage._710_select)
+	    local s =  select("[LC;1732]", "[LC;5553]")
 
 	    if s == 1 then
 		local m_enough_money = pc.gold > MONEY_NEED_FOR_ONE
@@ -363,41 +363,41 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 		pc.select(old)
 
 		if not m_have_ring then
-		    say(gameforge.marriage_manage._720_say)
+		    say("[LC;5554]")
 		    return;
 		end
 		if not u_have_ring then
-		    say(gameforge.marriage_manage._730_say)
+		    say("[LC;5555]")
 		    return;
 		end
 
 		if not m_enough_money then
-		    say_title(gameforge.find_squareguard._30_sayTitle)
-		    say(gameforge.marriage_manage._740_say)
-			say_reward(string.format(gameforge.marriage_manage._750_sayReward, MONEY_NEED_FOR_ONE/10000))
+		    say_title("[LC;1016]")
+		    say("[LC;5556]")
+			say_reward(string.format("[LC;5557;%s]", MONEY_NEED_FOR_ONE/10000))
 		    return;
 		end
 		if not u_enough_money then
-		    say_title(gameforge.find_squareguard._30_sayTitle)
-		    say(gameforge.marriage_manage._740_say)
-		    say_reward(gameforge.marriage_manage._760_sayReward)
+		    say_title("[LC;1016]")
+		    say("[LC;5556]")
+		    say_reward("[LC;5558]")
 		    		    return;
 		end
-		say_title(gameforge.find_squareguard._30_sayTitle)
-		say(gameforge.marriage_manage._770_say)
+		say_title("[LC;1016]")
+		say("[LC;5559]")
 
-		local c= select(gameforge.horse_upgrade2._180_select, gameforge.marriage_manage._780_select)
+		local c= select("[LC;1732]", "[LC;5560]")
 		if 2 == c then
 		    say_pc_name()
-		    say(gameforge.marriage_manage._790_say)
+		    say("[LC;5561]")
 		    wait()
-		    say_title(gameforge.find_squareguard._30_sayTitle)
-		    say(gameforge.marriage_manage._800_say)
-		    say_reward(gameforge.marriage_manage._810_sayReward)
+		    say_title("[LC;1016]")
+		    say("[LC;5562]")
+		    say_reward("[LC;5564]")
 		    		    return
 		end
 
-		local ok_sign = confirm(u_vid, pc.name..gameforge.marriage_manage._815_confirm_chat, 30)
+		local ok_sign = confirm(u_vid, pc.name.."[LC;5565]", 30)
 		if ok_sign == CONFIRM_OK then
 
 		    local m_enough_money = pc.gold > MONEY_NEED_FOR_ONE
@@ -417,47 +417,47 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 			pc.change_money(-MONEY_NEED_FOR_ONE)
 			pc.select(old)
 
-			say_title(gameforge.find_squareguard._30_sayTitle)
-			say(gameforge.marriage_manage._820_say)
-			say_reward(gameforge.marriage_manage._810_sayReward)
+			say_title("[LC;1016]")
+			say("[LC;5566]")
+			say_reward("[LC;5564]")
 						marriage.remove()
 		    else
-			say_title(gameforge.find_squareguard._30_sayTitle)
-			say(gameforge.marriage_manage._830_say)
-			say_reward(gameforge.marriage_manage._840_sayReward)
+			say_title("[LC;1016]")
+			say("[LC;5567]")
+			say_reward("[LC;5568]")
 					    end
 		else
-		    say_title(gameforge.find_squareguard._30_sayTitle)
-		    say(gameforge.marriage_manage._850_say)
-		    say_reward(gameforge.marriage_manage._840_sayReward)
+		    say_title("[LC;1016]")
+		    say("[LC;5569]")
+		    say_reward("[LC;5568]")
 		    		end
 	    end
 	end
 
-	when 	11000.chat.gameforge.marriage_manage._860_npcChat or
-	    	11002.chat.gameforge.marriage_manage._870_npcChat or
-		11004.chat.gameforge.marriage_manage._870_npcChat with 
+	when 	11000.chat."[LC;5570]" or
+	    	11002.chat."[LC;5571]" or
+		11004.chat."[LC;5571]" with 
 			not pc.is_married() 	and 
 			pc.count_item(70302)>0
 			begin
-		say_title(gameforge.find_squareguard._30_sayTitle)
-		say(gameforge.marriage_manage._880_say)
-		say_reward(gameforge.marriage_manage._890_sayReward)
+		say_title("[LC;1016]")
+		say("[LC;5572]")
+		say_reward("[LC;5573]")
 		pc.remove_item(70302)
 	end
 
-	when 	11000.chat.gameforge.marriage_manage._900_npcChat or
-	    	11002.chat.gameforge.marriage_manage._900_npcChat or
-		11004.chat.gameforge.marriage_manage._900_npcChat with pc.is_married() begin
+	when 	11000.chat."[LC;5574]" or
+	    	11002.chat."[LC;5574]" or
+		11004.chat."[LC;5574]" with pc.is_married() begin
 
 	    if not marriage_manage.check_divorce_time() then
 		return
 	    end
 
-	    say_title(gameforge.marriage_manage._910_sayTitle)
-	    say(gameforge.marriage_manage._920_say)
+	    say_title("[LC;5576]")
+	    say("[LC;5577]")
 
-	    local s =  select(gameforge.horse_upgrade2._180_select, gameforge.marriage_manage._930_select)
+	    local s =  select("[LC;1732]", "[LC;5578]")
 
 	    local NEED_MONEY = 1000000
 	    if s == 2 then
@@ -465,19 +465,19 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 	    end
 
 	    if pc.money < NEED_MONEY then
-		say_title(gameforge.find_squareguard._30_sayTitle)
-		say(gameforge.marriage_manage._940_say)
+		say_title("[LC;1016]")
+		say("[LC;5579]")
 		return
 	    end
 
-	    say_title(gameforge.find_squareguard._30_sayTitle)
-	    say(gameforge.marriage_manage._950_say)
+	    say_title("[LC;1016]")
+	    say("[LC;5580]")
 
-	    local c =  select(gameforge.marriage_manage._960_select, gameforge.marriage_manage._970_select)
+	    local c =  select("[LC;5581]", "[LC;5582]")
 
 	    if c == 2 then
-		say_title(gameforge.find_squareguard._30_sayTitle)
-		say(gameforge.marriage_manage._980_say)
+		say_title("[LC;1016]")
+		say("[LC;5583]")
 		return
 	    end
 
@@ -486,18 +486,18 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 
 	    marriage.remove()
 
-	    say_title(gameforge.find_squareguard._30_sayTitle)
-	    say(gameforge.marriage_manage._990_say)
+	    say_title("[LC;1016]")
+	    say("[LC;5584]")
 	end
 
-	when oldwoman.chat.gameforge.marriage_manage._1000_npcChat with not pc.is_engaged() begin
+	when oldwoman.chat."[LC;5479]" with not pc.is_engaged() begin
 	    local t = marriage.get_wedding_list()
 	    if table.getn(t) == 0 then
-		say_title(gameforge.couple_ring._20_sayTitle)
-		say(gameforge.marriage_manage._1010_say)
+		say_title("[LC;617]")
+		say("[LC;5481]")
 	    else
 		local wedding_names = {}
-		table.foreachi(t, function(n, p) wedding_names[n] = string.format(gameforge.marriage_manage._1015_foreach,p[3],p[4]) end)
+		table.foreachi(t, function(n, p) wedding_names[n] = string.format("[LC;5482;%s;%s]",p[3],p[4]) end)
 		wedding_names[table.getn(t)+1] = locale.confirm
 		local s = select_table(wedding_names)
 
@@ -507,8 +507,8 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 	    end
 	end
 	when 9011.click with not pc.is_engaged() and not pc.is_married() begin
-	    say_title(gameforge.marriage_manage._420_sayTitle)
-	    say(gameforge.marriage_manage._1020_say)
+	    say_title("[LC;5521]")
+	    say("[LC;5483]")
 	end
 
 	function check_divorce_time()
@@ -520,8 +520,8 @@ say_reward(string.format(gameforge.marriage_manage._280_sayReward, sname))
 	    end
 
 	    if marriage.get_married_time() < DIVORCE_LIMIT_TIME then 
-		say_title(gameforge.find_squareguard._30_sayTitle)
-		say(gameforge.marriage_manage._1030_say)
+		say_title("[LC;1016]")
+		say("[LC;5484]")
 		return false
 	    end
 

@@ -1,67 +1,67 @@
 quest pony_buy begin
 	state start begin
-		when 20349.chat.gameforge.pony_buy._10_npcChat with horse.get_grade()==0 begin
+		when 20349.chat."[LC;6550]" with horse.get_grade()==0 begin
 			if pc.level<=24 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.pony_buy._20_say)
+				say_title("[LC;1558]")
+				say("[LC;6561]")
 			elseif pc.countitem("50050")<1 then
-				say_title(gameforge.horse_levelup._240_sayTitle)
-				say(gameforge.pony_buy._30_say)
+				say_title("[LC;1586]")
+				say("[LC;6572]")
 				setstate(need_item50050)
 			elseif pc.countitem("50050")>=1 and pc.level>=25 then
-				say_title(gameforge.horse_levelup._240_sayTitle)
-				say(gameforge.pony_buy._40_say)
-				local b= select(gameforge.find_brother_article._90_select, gameforge.find_brother_article._100_select)
+				say_title("[LC;1586]")
+				say("[LC;6581]")
+				local b= select("[LC;971]", "[LC;931]")
 				if 1==b then
 					if pc.countitem("50050")>=1 then
 						pc.removeitem("50050", 1)
 						setstate(test)
 					end
 				elseif 2==b then
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.pony_buy._50_say)
+					say_title("[LC;1558]")
+					say("[LC;6582]")
 				else
-					say(string.format(gameforge.find_squareguard._70_say, b))
+					say(string.format("[LC;1020;%s]", b))
 				end
 			else
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.pony_buy._60_say)
+				say_title("[LC;1558]")
+				say("[LC;6583]")
 			end
 		end
 	end
 	state need_item50050 begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_upgrade2._100_makequestbutton)
-			q.set_title(gameforge.horse_upgrade2._100_makequestbutton)
+			makequestbutton("[LC;1723]")
+			q.set_title("[LC;1723]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.pony_buy._70_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;6584]")
 			setstate(start)
 			q.done()
 		end
 		when info begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.pony_buy._70_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;6584]")
 			setstate(start)
 			q.done()
 		end
 	end
 	state test begin
 		when letter begin
-			q.set_counter(gameforge.pony_buy._test_503_count, 20-pc.getqf("kill_count"))
+			q.set_counter("[LC;6587]", 20-pc.getqf("kill_count"))
 		end
 		when 503.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.pony_buy._test_503_count, 20-pc.getqf("kill_count"))
+			q.set_counter("[LC;6587]", 20-pc.getqf("kill_count"))
 			if get_time()>=pc.getqf("limit_time") then
 				setstate(failure)
 			end
 		end
 		when letter begin
-			q.set_clock(gameforge.horse_upgrade2.rest_time, pc.getqf("limit_time")-get_time())
+			q.set_clock("[LC;1722]", pc.getqf("limit_time")-get_time())
 		end
 		when enter begin
 			pc.setqf("limit_time", get_time()+30*60)
@@ -72,72 +72,72 @@ quest pony_buy begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.pony_buy._80_makequestbutton)
-			q.set_title(gameforge.pony_buy._80_makequestbutton)
+			makequestbutton("[LC;6585]")
+			q.set_title("[LC;6585]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.pony_buy._80_makequestbutton)
-						say_reward(gameforge.pony_buy._90_sayReward)
+			say_title("[LC;6585]")
+						say_reward("[LC;6586]")
 					end
 		when info begin
-			say_title(gameforge.pony_buy._80_makequestbutton)
-			say(gameforge.pony_buy._100_say)
+			say_title("[LC;6585]")
+			say("[LC;6549]")
 		end
 		when 503.kill with pc.getqf("kill_count") >= 20 and pc.getqf("limit_time")>=get_time() begin
 			setstate(report)
 		end
-		when 20349.chat.gameforge.pony_buy._110_npcChat with horse.get_grade()!=0 begin
+		when 20349.chat."[LC;6551]" with horse.get_grade()!=0 begin
 			setstate(start)
 			q.done()
 		end
-		when 20349.chat.gameforge.pony_buy._120_npcChat begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-						say_reward(gameforge.pony_buy._130_sayReward)
-						local b= select(gameforge.locale.levelup.prev_quest_go, gameforge.pony_buy._140_select)
+		when 20349.chat."[LC;6552]" begin
+			say_title("[LC;1558]")
+						say_reward("[LC;6553]")
+						local b= select("[LC;2105]", "[LC;6554]")
 			if 1==b then
 			elseif 2==b then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.pony_buy._150_say)
-				local b= select(gameforge.locale.guild.yes, gameforge.pony_buy._160_select)
+				say_title("[LC;1558]")
+				say("[LC;6555]")
+				local b= select("[LC;2059]", "[LC;6556]")
 				if 1==b then
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.pony_buy._170_say)
+					say_title("[LC;1558]")
+					say("[LC;6557]")
 					setstate(start)
 					q.done()
 				elseif 2==b then
-					say_title(gameforge.pony_buy._180_sayTitle)
-					say(gameforge.pony_buy._190_say)
+					say_title("[LC;6558]")
+					say("[LC;6559]")
 				else
-					say(string.format(gameforge.find_squareguard._70_say, b))
+					say(string.format("[LC;1020;%s]", b))
 				end
 			else
-				say(string.format(gameforge.find_squareguard._70_say, b))
+				say(string.format("[LC;1020;%s]", b))
 			end
 		end
 	end
 	state report begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_upgrade2._230_makequestbutton)
-			q.set_title(gameforge.horse_upgrade2._230_makequestbutton)
+			makequestbutton("[LC;1738]")
+			q.set_title("[LC;1738]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_upgrade2._230_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._240_sayReward)
+			say_title("[LC;1738]")
+						say_reward("[LC;1739]")
 					end
 		when info begin
-			say_title(gameforge.horse_upgrade2._230_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._240_sayReward)
+			say_title("[LC;1738]")
+						say_reward("[LC;1739]")
 					end
-		when 20349.chat.gameforge.horse_upgrade2._250_npcChat with horse.get_grade()!=0 begin
+		when 20349.chat."[LC;1740]" with horse.get_grade()!=0 begin
 			setstate(start)
 			q.done()
 		end
-		when 20349.chat.gameforge.horse_upgrade2._260_npcChat with horse.get_grade()==0 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.pony_buy._200_say)
+		when 20349.chat."[LC;1741]" with horse.get_grade()==0 begin
+			say_title("[LC;1558]")
+			say("[LC;6560]")
 			if is_test_server() then
 				pc.setqf("make_time", get_time()+10)
 			else
@@ -149,49 +149,49 @@ quest pony_buy begin
 	state wait begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.pony_buy._210_makequestbutton)
-			q.set_title(gameforge.pony_buy._210_makequestbutton)
+			makequestbutton("[LC;6562]")
+			q.set_title("[LC;6562]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.pony_buy._210_makequestbutton)
-			say(gameforge.pony_buy._220_sayReward)
+			say_title("[LC;6562]")
+			say("[LC;6563]")
 		end
 		when info begin
-			say_title(gameforge.pony_buy._210_makequestbutton)
-			say(gameforge.pony_buy._220_sayReward)
+			say_title("[LC;6562]")
+			say("[LC;6563]")
 		end
 		when login with get_time()>=pc.getqf("make_time") begin
 			setstate(buy)
 		end
-		when 20349.chat.gameforge.horse_upgrade2._250_npcChat with horse.get_grade()!=0 begin
+		when 20349.chat."[LC;1740]" with horse.get_grade()!=0 begin
 			setstate(start)
 			q.done()
 		end
-		when 20349.chat.gameforge.pony_buy._230_npcChat with horse.get_grade()==0 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.pony_buy._240_say)
+		when 20349.chat."[LC;6564]" with horse.get_grade()==0 begin
+			say_title("[LC;1558]")
+			say("[LC;6565]")
 		end
 	end
 	state buy begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.pony_buy._250_makequestbutton)
-			q.set_title(gameforge.pony_buy._250_makequestbutton)
+			makequestbutton("[LC;6566]")
+			q.set_title("[LC;6566]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.pony_buy._250_makequestbutton)
-			say(gameforge.pony_buy._260_sayReward)
+			say_title("[LC;6566]")
+			say("[LC;6567]")
 		end
 		when info begin
-			say_title(gameforge.pony_buy._250_makequestbutton)
-			say(gameforge.pony_buy._260_sayReward)
+			say_title("[LC;6566]")
+			say("[LC;6567]")
 		end
-		when 20349.chat.gameforge.pony_buy._270_npcChat with horse.get_grade()==0 and get_time()>=pc.getqf("make_time") begin
-			say_title(gameforge.pony_buy._280_sayTitle)
-			say(gameforge.pony_buy._290_say)
-			local b= select(gameforge.buy_fishrod._40_select, gameforge.pony_buy._300_select, gameforge.pony_buy._140_select)
+		when 20349.chat."[LC;6568]" with horse.get_grade()==0 and get_time()>=pc.getqf("make_time") begin
+			say_title("[LC;6569]")
+			say("[LC;6570]")
+			local b= select("[LC;49]", "[LC;6571]", "[LC;6554]")
 			if 1==b then
 				if pc.money>=100000 then
 					char_log(0, " HORSE_BUY", "BEGIN")
@@ -204,51 +204,51 @@ quest pony_buy begin
 					pc.give_item2("50051", 1)
 					char_log(0, " HORSE_BUY", "INC 50051 1")
 					char_log(0, " HORSE_BUY", "END")
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.pony_buy._310_say)
+					say_title("[LC;1558]")
+					say("[LC;6573]")
 					setstate(start)
 					q.done()
 				else
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.pony_buy._320_say)
+					say_title("[LC;1558]")
+					say("[LC;6574]")
 				end
 			elseif 2==b then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
+				say_title("[LC;1558]")
 
-				say(gameforge.pony_buy._330_say)
+				say("[LC;6575]")
 			elseif 3==b then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.pony_buy._340_say)
-				local b= select(gameforge.locale.guild.yes, gameforge.pony_buy._350_select)
+				say_title("[LC;1558]")
+				say("[LC;6576]")
+				local b= select("[LC;2059]", "[LC;6577]")
 				if 1==b then
 					setstate(start)
 				elseif 2==b then
 				else
-					say(string.format(gameforge.find_squareguard._70_say, b))
+					say(string.format("[LC;1020;%s]", b))
 				end
 			else
-				say(string.format(gameforge.find_squareguard._70_say, b))
+				say(string.format("[LC;1020;%s]", b))
 			end
 		end
 	end
 	state failure begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.pony_buy._360_makequestbutton)
-			q.set_title(gameforge.pony_buy._360_makequestbutton)
+			makequestbutton("[LC;6578]")
+			q.set_title("[LC;6578]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.pony_buy._360_makequestbutton)
-						say_reward(gameforge.pony_buy._370_sayReward)
-						say_reward(gameforge.pony_buy._380_sayReward)
+			say_title("[LC;6578]")
+						say_reward("[LC;6579]")
+						say_reward("[LC;6580]")
 			setstate(start)
 			q.done()
 		end
 		when info begin
-			say_title(gameforge.pony_buy._360_makequestbutton)
-						say_reward(gameforge.pony_buy._370_sayReward)
-						say_reward(gameforge.pony_buy._380_sayReward)
+			say_title("[LC;6578]")
+						say_reward("[LC;6579]")
+						say_reward("[LC;6580]")
 			setstate(start)
 			q.done()
 		end

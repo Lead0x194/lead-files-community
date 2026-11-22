@@ -5,33 +5,33 @@ quest new_quest_lv17 begin
 			local v=find_npc_by_vnum(20087)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.new_quest_lv17._010_target)
+				target.vid("__TARGET__", v, "[LC;5630]")
 			end
 		end
-		when 20087.chat.gameforge.new_quest_lv17._020_say_title begin
+		when 20087.chat."[LC;5632]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.new_quest_lv17._012_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv17._021_say) -- white font text
+			say_title("[LC;5631]") -- yellow text headline
+			say("[LC;5633]") -- white font text
 			wait() -- next button 
-			say_title(gameforge.new_quest_lv17._012_say_title);
-           	say(gameforge.new_quest_lv17._030_say) -- yellow text headline
-			say(gameforge.new_quest_lv17._031_say) -- white font text
-			local doquest = select(gameforge.subquest_06._40_select, gameforge.subquest_12._50_select, gameforge.new_quest_lv75._290_2_select)
+			say_title("[LC;5631]");
+           	say("[LC;5634]") -- yellow text headline
+			say("[LC;5635]") -- white font text
+			local doquest = select("[LC;7148]", "[LC;7304]", "[LC;6200]")
 			if doquest == 1 then
 				set_state(ask_uriel)
 			elseif doquest == 3 then
-				say(gameforge.subquest_06._60_say)
-				local abortquest = select(gameforge.subquest_06._70_select, gameforge.subquest_06._80_select)
+				say("[LC;7170]")
+				local abortquest = select("[LC;7173]", "[LC;7174]")
 				if abortquest == 1 then
 					set_state(__GIVEUP__)
 				else
-					say_title(gameforge.new_quest_lv17._012_say_title) -- yellow text headline
-					say(gameforge.subquest_11._80_say)
+					say_title("[LC;5631]") -- yellow text headline
+					say("[LC;7288]")
 					return
 				end
 			else
-				say_title(gameforge.new_quest_lv17._012_say_title) -- yellow text headline
-				say(gameforge.subquest_11._80_say)
+				say_title("[LC;5631]") -- yellow text headline
+				say("[LC;7288]")
 				return
 			end
 		end
@@ -40,31 +40,31 @@ quest new_quest_lv17 begin
 	state ask_uriel begin
 		--BEGIN EDIT by Arne 18Sept09 according to mantis0026065, Reason: letter, quest
 		when enter or login begin
-			send_letter(gameforge.new_quest_lv17._020_say_title)
+			send_letter("[LC;5632]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv17._020_say_title)
+			q.set_title("[LC;5632]")
 			local v=find_npc_by_vnum(20011)
 			if 0==v then
 			else
-				target.vid("__TARGET2__", v, gameforge.new_quest_lv17._040_target)
+				target.vid("__TARGET2__", v, "[LC;5638]")
 			end
 		end
 		
 		when button or info begin
-		say_title(gameforge.new_quest_lv17._040_say_title)
-		say(gameforge.new_quest_lv17._041_say)
+		say_title("[LC;5637]")
+		say("[LC;5639]")
 		say("")
-		say(string.format(gameforge.new_quest_lv17._042_say, get_map_name_by_number(1)))
+		say(string.format("[LC;5640;%s]", get_map_name_by_number(1)))
 		end
 		--END EDIT
 		
-		when 20011.chat.gameforge.new_quest_lv17._020_say_title begin
+		when 20011.chat."[LC;5632]" begin
 			target.delete("__TARGET2__")
-			say_title(gameforge.new_quest_lv17._039_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv17._051_say)
+			say_title("[LC;5636]") -- yellow text headline
+			say("[LC;5642]")
 			say_item_vnum(30173) -- icon of item by vnum
-			say(gameforge.new_quest_lv17._052_say)
-			local s = select(gameforge.new_quest_lv17._060_select)
+			say("[LC;5643]")
+			local s = select("[LC;5644]")
 			if s == 1 then
 				clear_letter()
 				q.done() -- EDIT added by Arne 18Sept09, see above for Reason
@@ -77,33 +77,33 @@ quest new_quest_lv17 begin
 
 		--BEGIN EDIT by Arne 18Sept09 according to mantis0026065, Reason: letter, quest
 		when enter or login begin
-			send_letter(gameforge.new_quest_lv17._020_say_title)
+			send_letter("[LC;5632]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv17._020_say_title)
+			q.set_title("[LC;5632]")
 			local v=find_npc_by_vnum(20087)
 			if 0!=v then
-				target.vid("__TARGET__", v, gameforge.new_quest_lv17._010_target)
+				target.vid("__TARGET__", v, "[LC;5630]")
 			end
 		end
 		
 		when button or info begin
-		say_title(gameforge.new_quest_lv17._065_say_title)
-		say(gameforge.new_quest_lv17._066_say)
+		say_title("[LC;5645]")
+		say("[LC;5646]")
 		say("")
-		say(string.format(gameforge.new_quest_lv17._067_say, get_map_name_by_number(1)))
+		say(string.format("[LC;5647;%s]", get_map_name_by_number(1)))
 		end
 		--END EDIT
 		
-		when 20087.chat.gameforge.new_quest_lv17._020_say_title begin
+		when 20087.chat."[LC;5632]" begin
 			pc.setqf("collect_count",5) --Current number of items
 			target.delete("__TARGET__")
-			say_title(gameforge.new_quest_lv17._012_say_title)  -- yellow text headline
-			say(gameforge.new_quest_lv17._070_say) -- red font text
+			say_title("[LC;5631]")  -- yellow text headline
+			say("[LC;5648]") -- red font text
 			wait() -- next button 
-			say(gameforge.new_quest_lv17._071_say) -- white font text
+			say("[LC;5649]") -- white font text
 			say_item_vnum(30173) -- icon of item by vnum
-			say(gameforge.new_quest_lv17._072_say) 
-			say(gameforge.new_quest_lv17._073_say)
+			say("[LC;5650]") 
+			say("[LC;5651]")
 			q.done() -- EDIT added by Arne 18Sept09, see above for Reason
 			set_state(findmurang)
 		end
@@ -113,9 +113,9 @@ quest new_quest_lv17 begin
 	
 		--BEGIN EDIT by Arne 18Sept09 according to mantis0026065, Reason: letter, quest
 		when enter or login begin
-			send_letter(gameforge.new_quest_lv17._020_say_title)
+			send_letter("[LC;5632]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv17._020_say_title)
+			q.set_title("[LC;5632]")
 			-- ticket id: 0076498
 			if pc.getqf("collect_count") == 0 then
 				pc.setqf("collect_count", 5)
@@ -129,7 +129,7 @@ quest new_quest_lv17 begin
 				local index =pc.getqf("collect_count") - 1
 				pc.setqf("collect_count",index) --you got one, so you have one less to kill
 				pc.give_item2(30173) -- spawn item by vnum in inventory
-				notice_multiline(gameforge.new_quest_lv17._074_notice, notice)
+				notice_multiline("[LC;5652]", notice)
 				--BEGIN EDIT by Arne 18Sept09 according to mantis0026065, Reason: , new state for quest	
 				if pc.getqf("collect_count") <= 0 then
 					q.done()
@@ -144,40 +144,40 @@ quest new_quest_lv17 begin
 		when button or info begin
 			-------------- info if a wolfskin dropped
 			-- hier fehlt questjournal eintrag und es wird keine info angezeigt wo man hin muss
-			say_title(gameforge.new_quest_lv17._020_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv17._075_say)
-			say_reward(string.format(gameforge.new_quest_lv17._076_say_reward, 5 - pc.getqf("collect_count")))
+			say_title("[LC;5632]") -- yellow text headline
+			say("[LC;5653]")
+			say_reward(string.format("[LC;5654;%s]", 5 - pc.getqf("collect_count")))
 		end
 	end
 		-------------- try to give wonda rim the wolfskins		
 		--BEGIN EDIT by Arne 18Sept09 according to mantis0026065, Reason: new state for quest	
 	state skins_to_wonda begin
 		when enter or login begin
-			send_letter(gameforge.new_quest_lv17._020_say_title)
+			send_letter("[LC;5632]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv17._020_say_title)
+			q.set_title("[LC;5632]")
 			local v=find_npc_by_vnum(20087)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.new_quest_lv17._010_target)
+				target.vid("__TARGET__", v, "[LC;5630]")
 			end
 		end
 		
 		when button or info begin
-		say_title(gameforge.new_quest_lv17._081_say_title)
-		say(gameforge.new_quest_lv17._082_say)
+		say_title("[LC;5655]")
+		say("[LC;5656]")
 		say("")
-		say(string.format(gameforge.new_quest_lv17._067_say, get_map_name_by_number(1)))
+		say(string.format("[LC;5647;%s]", get_map_name_by_number(1)))
 		end
 		--END EDIT
 	
-		when 20087.chat.gameforge.new_quest_lv17._020_say_title begin  
+		when 20087.chat."[LC;5632]" begin  
 		target.delete("__TARGET__")
-			say_title(gameforge.new_quest_lv17._012_say_title)
+			say_title("[LC;5631]")
 			if pc.getqf("collect_count") > 0 then
-				say_reward(string.format(gameforge.new_quest_lv17._092_say_reward, 5 - pc.getqf("collect_count")))
+				say_reward(string.format("[LC;5657;%s]", 5 - pc.getqf("collect_count")))
 			else
-				say(gameforge.new_quest_lv17._110_say)
+				say("[LC;5658]")
 				q.done() -- EDIT added by Arne 18Sept09, see above for Reason
 				set_state(gotochaegirab)
 			end
@@ -188,30 +188,30 @@ quest new_quest_lv17 begin
 		
 		--BEGIN EDIT by Arne 18Sept09 according to mantis0026065, Reason: letter, quest
 		when enter or login begin
-			send_letter(gameforge.new_quest_lv17._020_say_title)
+			send_letter("[LC;5632]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv17._020_say_title)
+			q.set_title("[LC;5632]")
 			local v=find_npc_by_vnum(20084)
 			if 0==v then
 			else
-				target.vid("__TARGET3__", v, gameforge.new_quest_lv17._120_target)
+				target.vid("__TARGET3__", v, "[LC;5659]")
 			end
 		end
 		
 		when button or info begin
-		say_title(gameforge.new_quest_lv17._020_say_title)
-		say(gameforge.new_quest_lv17._121_say)
+		say_title("[LC;5632]")
+		say("[LC;5660]")
 		say("")
-		say(string.format(gameforge.new_quest_lv17._122_say, get_map_name_by_number(1)))
+		say(string.format("[LC;5661;%s]", get_map_name_by_number(1)))
 		end
 		--END EDIT
 	
-		when 20084.chat.gameforge.new_quest_lv17._020_say_title begin  
+		when 20084.chat."[LC;5632]" begin  
 			target.delete("__TARGET3__")
-			say_title(gameforge.new_quest_lv17._020_say_title)
-			say(gameforge.new_quest_lv17._130_say)
-			say(gameforge.new_quest_lv17._131_say)
-			say(gameforge.new_quest_lv17._132_say_reward)
+			say_title("[LC;5632]")
+			say("[LC;5662]")
+			say("[LC;5663]")
+			say("[LC;5664]")
 			-- Questjournal eintrag fehlt
 			q.done() -- EDIT added by Arne 18Sept09, see above for Reason
 			set_state(back_to_wondarim_final)
@@ -222,33 +222,33 @@ quest new_quest_lv17 begin
 	
 		--BEGIN EDIT by Arne 18Sept09 according to mantis0026065, Reason: letter, quest
 		when enter or login begin
-		send_letter(gameforge.new_quest_lv17._020_say_title)
+		send_letter("[LC;5632]")
 		q.start()
-		q.set_title(gameforge.new_quest_lv17._020_say_title)
+		q.set_title("[LC;5632]")
 					local v=find_npc_by_vnum(20087)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.new_quest_lv17._010_target)
+				target.vid("__TARGET__", v, "[LC;5630]")
 			end
 		end
 		
 		when button or info begin
-		say_title(gameforge.new_quest_lv17._020_say_title)
-		say(gameforge.new_quest_lv17._140_say)
+		say_title("[LC;5632]")
+		say("[LC;5665]")
 		say("")
-		say(string.format(gameforge.new_quest_lv17._067_say, get_map_name_by_number(1)))		
+		say(string.format("[LC;5647;%s]", get_map_name_by_number(1)))		
 		end
 		--END EDIT
 		
-		when 20087.chat.gameforge.new_quest_lv17._020_say_title begin  
+		when 20087.chat."[LC;5632]" begin  
 			target.delete("__TARGET__")
-			say_title(gameforge.new_quest_lv17._020_say_title)
-			say(gameforge.new_quest_lv17._141_say)
-			local s = select(gameforge.new_quest_lv17._142_1_select, gameforge.new_quest_lv17._142_2_select)
+			say_title("[LC;5632]")
+			say("[LC;5666]")
+			local s = select("[LC;5667]", "[LC;5668]")
 			-- when player chooses option 1 (lying) -> 
 			if s == 1 then
-				say(gameforge.new_quest_lv17._143_say)
-				say_reward(gameforge.new_quest_lv17._144_say_reward_a)
+				say("[LC;5669]")
+				say_reward("[LC;5670]")
 				pc.remove_item(30173, pc.count_item(30173))
 				pc.give_item2(80008) -- gold
 				pc.change_money(20000)
@@ -259,9 +259,9 @@ quest new_quest_lv17 begin
 			end
 			-- when player chooses option 2 (telling the truth) -> 
 			if s == 2 then
-                say_title(gameforge.new_quest_lv17._012_say_title)
-				say(gameforge.new_quest_lv17._145_say)
-				say(gameforge.new_quest_lv17._146_say_reward)
+                say_title("[LC;5631]")
+				say("[LC;5672]")
+				say("[LC;5673]")
 				q.done() -- EDIT added by Arne 18Sept09, see above for Reason
 				set_state(goto_yangshin)
 			end
@@ -275,42 +275,42 @@ quest new_quest_lv17 begin
 				if is_destination_village(2)  then
 				local v=find_npc_by_vnum(20019)
 				if 0!=v then
-					target.vid("__TARGET4__", v, gameforge.new_quest_lv17._160_target)
+					target.vid("__TARGET4__", v, "[LC;5679]")
 				end
 			end
 			if empire == 1 then -- = Shinsoo
-				send_letter(gameforge.new_quest_lv17._020_say_title)
+				send_letter("[LC;5632]")
 			end
 			if empire == 2 then -- = Chunjo
-				send_letter(gameforge.new_quest_lv17._020_say_title)
+				send_letter("[LC;5632]")
 			end
 			if empire == 3 then -- = Jinno
-				send_letter(gameforge.new_quest_lv17._020_say_title)
+				send_letter("[LC;5632]")
 			end
 			q.start()
-			q.set_title(gameforge.new_quest_lv17._020_say_title)		
+			q.set_title("[LC;5632]")		
 		end
 		
 		when button or info begin
-			say_title(gameforge.new_quest_lv17._020_say_title)
+			say_title("[LC;5632]")
 			local empire = pc.get_empire()
 			if empire == 1 then -- = Shinsoo
-				say(gameforge.new_quest_lv17._147_say)
+				say("[LC;5674]")
 			end
 			if empire == 2 then -- = Chunjo
-				say(gameforge.new_quest_lv17._148_say)
+				say("[LC;5675]")
 			end
 			if empire == 3 then -- = Jinno
-				say(gameforge.new_quest_lv17._149_say)
+				say("[LC;5676]")
 			end	
 		end
 		--END EDIT
-		when 20019.chat.gameforge.new_quest_lv17._020_say_title begin  
+		when 20019.chat."[LC;5632]" begin  
 			target.delete("__TARGET4__")
-			say_title(gameforge.new_quest_lv17._161_say_title)
-			say(gameforge.new_quest_lv17._151_say )
-            say_title(gameforge.blacksmith._40_sayTitle)
-			say_reward(gameforge.new_quest_lv17._152_say_reward)
+			say_title("[LC;5680]")
+			say("[LC;5677]" )
+            say_title("[LC;29]")
+			say_reward("[LC;5678]")
 			pc.remove_item(30173, pc.count_item(30173))
 			pc.give_item_from_special_item_group(50300)
 			pc.change_money(10000)

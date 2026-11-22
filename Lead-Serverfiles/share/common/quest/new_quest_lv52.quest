@@ -10,15 +10,15 @@ quest new_quest_lv52 begin
 	state letterfromboss begin
 		when letter begin
 			-- this is the letter
-			send_letter(gameforge.new_quest_lv52._010_send_letter)
+			send_letter("[LC;5954]")
 		end
 		when button or info begin
 			-- finding out which map (map1) the player has to go to meet his or her first contact
 			local map_lookup = { "Yongan", "Joan", "Pyongmoo" }
 			local mapname = map_lookup[pc.get_empire()]
-			say_title(gameforge.new_quest_lv52._020_say_title)
-			say_reward(gameforge.new_quest_lv52._021_say_reward)
-			say(string.format(gameforge.new_quest_lv52._022_say, mapname)) -- where Baek-Go can be found. See if-then-else argument above.
+			say_title("[LC;5955]")
+			say_reward("[LC;5956]")
+			say(string.format("[LC;5957;%s]", mapname)) -- where Baek-Go can be found. See if-then-else argument above.
 			set_state(askbeakgo)			
 		end
 		
@@ -33,59 +33,59 @@ quest new_quest_lv52 begin
 	state askbeakgo begin
 		-- This Function is for finding out if the player is in the right map so we can place the questarrow right.
 		when login or enter begin
-			send_letter(gameforge.new_quest_lv52._030_set_title)
+			send_letter("[LC;5958]")
 			q.start() -- creating a journal entery int the quest-journal
-			q.set_title(gameforge.new_quest_lv52._030_set_title) -- setting the title of the new quest-journal
+			q.set_title("[LC;5958]") -- setting the title of the new quest-journal
 			if is_destination_village(1) then -- 
 				local position = find_npc_by_vnum(20018) -- Locate Baek-Go
 				if position != 0 then
-					target.vid("__TARGET__", position, gameforge.new_quest_lv52._035_target) -- place questarrow on Baek-Go
+					target.vid("__TARGET__", position, "[LC;5959]") -- place questarrow on Baek-Go
 				end
 			end
 		end
 		when button or info begin -- this event is triggered when the quest-journal is clicked. A conversation window will open.
-			say_title(gameforge.new_quest_lv52._030_set_title)
-			say(gameforge.new_quest_lv52._040_say)
+			say_title("[LC;5958]")
+			say("[LC;5960]")
 			say("")
-			say(string.format(gameforge.new_quest_lv52._043_say, get_map_name_by_number(1)))
+			say(string.format("[LC;5964;%s]", get_map_name_by_number(1)))
 		end
 				
-		when 20018.chat.gameforge.new_quest_lv52._030_set_title begin -- when Baek-Go is clicked this event is triggered
+		when 20018.chat."[LC;5958]" begin -- when Baek-Go is clicked this event is triggered
 			target.delete("__TARGET__")
-			say_title(gameforge.new_quest_lv52._044_say_title)
-			say(gameforge.new_quest_lv52._041_say)
+			say_title("[LC;5965]")
+			say("[LC;5961]")
 			q.done()
-			local doquest = select(gameforge.new_quest_lv52._042_select, gameforge.subquest_12._50_select)
+			local doquest = select("[LC;5963]", "[LC;7304]")
 			if doquest ==1 then 
 				set_state(askyuhwan)
 			else
-				say_title(gameforge.new_quest_lv52._044_say_title)
-				say(gameforge.new_quest_lv52._046_say)
+				say_title("[LC;5965]")
+				say("[LC;5967]")
 				return
 			end
 		end
-		when 20355.chat.gameforge.new_quest_lv52._030_set_title begin -- If the player should click the Boss he or she will get a reaction from him even though it is not needed for the quest.
-			say_title(gameforge.new_quest_lv52._054_say_title)
-			say(gameforge.new_quest_lv52._042_say)
-			local doquest = select(gameforge.new_quest_lv52._055_select, gameforge.subquest_12._50_select, gameforge.new_quest_lv75._290_2_select)
+		when 20355.chat."[LC;5958]" begin -- If the player should click the Boss he or she will get a reaction from him even though it is not needed for the quest.
+			say_title("[LC;5973]")
+			say("[LC;5962]")
+			local doquest = select("[LC;5975]", "[LC;7304]", "[LC;6200]")
 			if doquest ==1 then 
-				say_title(gameforge.new_quest_lv52._054_say_title)
-				say(gameforge.new_quest_lv52._056_say)
+				say_title("[LC;5973]")
+				say("[LC;5976]")
 			elseif doquest == 3 then
-				say(gameforge.subquest_06._60_say)
-				local abortquest = select(gameforge.subquest_06._70_select, gameforge.subquest_06._80_select)
+				say("[LC;7170]")
+				local abortquest = select("[LC;7173]", "[LC;7174]")
 				if abortquest == 1 then
 					pc.setqf("ghostsleft", 0)
 					target.delete("__TARGET__")
 					set_state(__GIVEUP__)
 				else
-					say_title(gameforge.new_quest_lv52._054_say_title)
-					say(gameforge.subquest_11._80_say)
+					say_title("[LC;5973]")
+					say("[LC;7288]")
 				end
 				return
 			else
-				say_title(gameforge.new_quest_lv52._054_say_title)
-				say(gameforge.new_quest_lv52._85_say)
+				say_title("[LC;5973]")
+				say("[LC;6032]")
 			end
 		end
 	end
@@ -94,13 +94,13 @@ quest new_quest_lv52 begin
 	state askyuhwan begin
 		
         when login or enter begin
-			send_letter(gameforge.new_quest_lv52._030_set_title)
+			send_letter("[LC;5958]")
 			q.start() -- starting a new quest-journal since the player may logout or changing maps during this quest
-			q.set_title(gameforge.new_quest_lv52._030_set_title) -- this is the tilte of the quest-journal
+			q.set_title("[LC;5958]") -- this is the tilte of the quest-journal
 			if is_destination_village(2) then 
 				local position = find_npc_by_vnum(20017) -- locating Yu-Hwan in map2...
 				if position != 0 then
-					target.vid("__TARGET2__", position, gameforge.new_quest_lv52._050_target) -- ...and placing a questarrow on him
+					target.vid("__TARGET2__", position, "[LC;5969]") -- ...and placing a questarrow on him
 				end
 			end
 		end
@@ -108,25 +108,25 @@ quest new_quest_lv52 begin
 			local mapname
 
 			-- the following text will appear in the conversation window when clicking the quest-journal of this quest
-			say_title(gameforge.new_quest_lv52._030_set_title)
-			say(gameforge.new_quest_lv52._051_say)
+			say_title("[LC;5958]")
+			say("[LC;5970]")
 			say("")
-			say(string.format(gameforge.new_quest_lv52._045_say, get_map_name_by_number(3)))
+			say(string.format("[LC;5966;%s]", get_map_name_by_number(3)))
 		end
-		when 20017.chat.gameforge.new_quest_lv52._030_set_title begin -- event triggered when Yu-Hwan is clicked. A conversation window will appear.
+		when 20017.chat."[LC;5958]" begin -- event triggered when Yu-Hwan is clicked. A conversation window will appear.
 			target.delete("__TARGET2__")
-			say_title(gameforge.new_quest_lv52._049_say_title)
-			say(gameforge.new_quest_lv52._052_say)
-			say(gameforge.new_quest_lv52._053_say)
+			say_title("[LC;5968]")
+			say("[LC;5971]")
+			say("[LC;5972]")
 			q.done()
 			set_state(gotoboss)
 		end
-		when 20355.chat.gameforge.new_quest_lv52._030_set_title begin -- It is not neccessary for the quest but the player may get the idea to talk to the Boss who is the quest-giver and will get a reaction from him.
-			say_title(gameforge.new_quest_lv52._054_say_title)
-			say_reward(gameforge.new_quest_lv52._055_say_reward)
+		when 20355.chat."[LC;5958]" begin -- It is not neccessary for the quest but the player may get the idea to talk to the Boss who is the quest-giver and will get a reaction from him.
+			say_title("[LC;5973]")
+			say_reward("[LC;5974]")
 			wait()
 			say_pc_name()
-			say_reward(gameforge.new_quest_lv52._056_say_reward)
+			say_reward("[LC;5977]")
 		end
 	end
 	
@@ -134,76 +134,76 @@ quest new_quest_lv52 begin
 	state gotoboss begin
 		-- again the player has to switch maps. To figure out if it is the right one we use this function again.
 		when login or enter begin
-			send_letter(gameforge.new_quest_lv52._030_set_title)
+			send_letter("[LC;5958]")
 			q.start() -- we need a new quest-journal entery since the player may logout or change maps
-			q.set_title(gameforge.new_quest_lv52._030_set_title)
+			q.set_title("[LC;5958]")
 			if is_destination_village(1) then -- 
 				local position = find_npc_by_vnum(20355) -- locate the Boss in map1
 				if position != 0 then
-					target.vid("__TARGET3__", position, gameforge.new_quest_lv52._060_target) -- place questarrow on Boss
+					target.vid("__TARGET3__", position, "[LC;5978]") -- place questarrow on Boss
 				end
 			end
 		end
 		when button or info begin -- this event is triggered when the quest-journal is clicked - it will open a conversation window
             local map_lookup = { "Yongan", "Joan", "Pyongmoo" }
 			local mapname = map_lookup[pc.get_empire()]
-			say_title(gameforge.new_quest_lv52._030_set_title)
-			say(string.format(gameforge.new_quest_lv52._061_say, mapname))
+			say_title("[LC;5958]")
+			say(string.format("[LC;5979;%s]", mapname))
 		end
-		when 20355.chat.gameforge.new_quest_lv52._030_set_title begin -- when the boss is clicked a conversation starts
+		when 20355.chat."[LC;5958]" begin -- when the boss is clicked a conversation starts
 			target.delete("__TARGET3__")
 			local MorF = pc.get_sex() -- here we find out the characters sex
 			say_pc_name()
-			say(gameforge.new_quest_lv52._062_say_reward )
+			say("[LC;5980]" )
 			wait()
-			say_title(gameforge.new_quest_lv52._054_say_title)
+			say_title("[LC;5973]")
 			if MorF == 0 then 
-				say(gameforge.new_quest_lv52._063_say_reward) -- say this if character is male
+				say("[LC;5981]") -- say this if character is male
 			else
-				say(gameforge.new_quest_lv52._064_say_reward) -- say this if character is female
+				say("[LC;5982]") -- say this if character is female
 			end
-			say(gameforge.new_quest_lv52._065_say_reward)
-			say(gameforge.new_quest_lv52._066_say_reward)
+			say("[LC;5983]")
+			say("[LC;5984]")
 			wait()
 			say_pc_name()
-			say(gameforge.new_quest_lv52._067_say_reward)
+			say("[LC;5985]")
 			wait()
-			say_title(gameforge.new_quest_lv52._054_say_title)
-			say(gameforge.new_quest_lv52._068_say_reward)
-			say(gameforge.new_quest_lv52._069_say_reward)
+			say_title("[LC;5973]")
+			say("[LC;5986]")
+			say("[LC;5987]")
 			wait()
-			say_title(gameforge.new_quest_lv52._054_say_title)
-			say(gameforge.new_quest_lv52._070_say_reward)
+			say_title("[LC;5973]")
+			say("[LC;5988]")
 			wait()
 			say_pc_name()
-			say(gameforge.new_quest_lv52._071_say_reward)
-			local answer = select(gameforge.new_quest_lv52._080_1_select, gameforge.new_quest_lv52._080_2_select, gameforge.new_quest_lv52._080_3_select) -- multiple choice answer
+			say("[LC;5989]")
+			local answer = select("[LC;5990]", "[LC;5991]", "[LC;5992]") -- multiple choice answer
 			if answer == 1 then -- positive answer: Doing it for the village
 				say_pc_name()
-				say(gameforge.new_quest_lv52._081_say_reward)
+				say("[LC;5993]")
 			elseif answer == 2 then -- positive answer: proving oneself
 				say_pc_name()
-				say(gameforge.new_quest_lv52._082_say_reward)
+				say("[LC;5994]")
 			elseif answer == 3 then -- negative answer
 				say_pc_name()
-				say(gameforge.new_quest_lv52._083_say_reward)
+				say("[LC;5995]")
 				wait()
-				say_title(gameforge.new_quest_lv52._054_say_title)
-				say(gameforge.new_quest_lv52._084_say_reward)
+				say_title("[LC;5973]")
+				say("[LC;5996]")
 				wait()
 				say_pc_name()
-				local answertwo = select(gameforge.new_quest_lv52._090_1_select, gameforge.new_quest_lv52._090_2_select)
+				local answertwo = select("[LC;5997]", "[LC;5998]")
 				if answertwo == 1 then -- think twice positive answer
 					say_pc_name()
-					say(gameforge.new_quest_lv52._091_say_reward)
+					say("[LC;5999]")
 				elseif answertwo == 2 then -- don't wanne do this quest answer 
 					say_pc_name()
-					say(gameforge.new_quest_lv52._092_say_reward )
+					say("[LC;6000]" )
 					wait()
-					say_title(gameforge.new_quest_lv52._054_say_title)
-					say(gameforge.new_quest_lv52._093_say_reward) -- finishing quest
-					say(string.format(gameforge.new_quest_lv52._093_say_reward_exp, 20000))
-					say(string.format(gameforge.new_quest_lv52._093_say_reward_gold, 25000))
+					say_title("[LC;5973]")
+					say("[LC;6001]") -- finishing quest
+					say(string.format("[LC;6002]", 20000))
+					say(string.format("[LC;6003]", 25000))
 					pc.change_money(25000)
 					pc.give_exp2(20000)
 					q.done()
@@ -212,13 +212,13 @@ quest new_quest_lv52 begin
 					set_state(__GIVEUP__)
 					return
 				else
-					notice_multiline(gameforge.new_quest_lv52._100_notice, notice)
+					notice_multiline("[LC;6004]", notice)
 				end
 			end
 			wait() -- continue positive conversation
-			say_title(gameforge.new_quest_lv52._054_say_title)
-			say(gameforge.new_quest_lv52._110_say_reward)
-			say(gameforge.new_quest_lv52._111_say_reward)
+			say_title("[LC;5973]")
+			say("[LC;6005]")
+			say("[LC;6006]")
 			q.done()
 			set_state(revenge)
 		end
@@ -243,48 +243,48 @@ quest new_quest_lv52 begin
 			
 			letterindex = new_quest_lv52_neededAmount - pc.getqf("ghostsleft")
 			if letterindex == 0 then
-				send_letter(gameforge.new_quest_lv52._030_set_title)
+				send_letter("[LC;5958]")
 			elseif letterindex == 1 then 
-				send_letter(gameforge.new_quest_lv52._170_send_letter)
+				send_letter("[LC;6019]")
 			elseif letterindex == 2 then
-				send_letter(gameforge.new_quest_lv52._171_send_letter)
+				send_letter("[LC;6020]")
 			elseif letterindex == 3 then
-				send_letter(gameforge.new_quest_lv52._172_send_letter)
+				send_letter("[LC;6021]")
 			else
-				send_letter(gameforge.new_quest_lv52._173_send_letter)
+				send_letter("[LC;6022]")
 			end
 			q.start()
-			q.set_title(gameforge.new_quest_lv52._030_set_title)
+			q.set_title("[LC;5958]")
 		end
 		when button or info begin
 			local sayMob1Name = mob_name(706)
 			local sayMob2Name = mob_name(707)
 			local sayMob3Name = mob_name(756)
 			local sayMob4Name = mob_name(757)
-			say_title(gameforge.new_quest_lv52._120_set_title)
+			say_title("[LC;6007]")
 			
 			letterindex = new_quest_lv52_neededAmount - pc.getqf("ghostsleft")
 			-- these ate the answers which will appear in the quest-journal after every successful kill
 			if letterindex == 1 then 
-				say_reward(gameforge.new_quest_lv52._130_say_reward)
-				say(gameforge.new_quest_lv52._131_say)
-				say(gameforge.new_quest_lv52._132_say)
+				say_reward("[LC;6009]")
+				say("[LC;6010]")
+				say("[LC;6011]")
 			elseif letterindex == 2 then
-				say_reward(gameforge.new_quest_lv52._140_say_reward)
-				say(gameforge.new_quest_lv52._141_say)
-				say(gameforge.new_quest_lv52._132_say)
+				say_reward("[LC;6012]")
+				say("[LC;6013]")
+				say("[LC;6011]")
 			elseif letterindex == 3 then
-				say_reward(gameforge.new_quest_lv52._150_say_reward)
-				say(gameforge.new_quest_lv52._151_say)
-				say(gameforge.new_quest_lv52._132_say)
+				say_reward("[LC;6014]")
+				say("[LC;6015]")
+				say("[LC;6011]")
 			elseif letterindex == 4 then
 
 			else
 				-- this quest-journal entery is shown befor the first mob is killed
-				say(gameforge.new_quest_lv52._160_say)
-				say(gameforge.new_quest_lv52._161_say)
+				say("[LC;6016]")
+				say("[LC;6017]")
 				say("")
-				say(string.format(gameforge.new_quest_lv52._162_say,get_map_name_by_number(64)))
+				say(string.format("[LC;6018]",get_map_name_by_number(64)))
 			end
 		end	
 		when 706.kill or 707.kill or 756.kill or 757.kill begin -- Mob1 - Mob4
@@ -303,16 +303,16 @@ quest new_quest_lv52 begin
 								pc.setqf("ghostsleft", index) -- one ghost less to be freed
 								if index == 3 then 
 									letterindex = 1
-									send_letter(gameforge.new_quest_lv52._170_send_letter)
-									q.set_title(gameforge.new_quest_lv52._030_set_title)
+									send_letter("[LC;6019]")
+									q.set_title("[LC;5958]")
 								elseif index == 2 then
 									letterindex = 2
-									send_letter(gameforge.new_quest_lv52._171_send_letter)
-									q.set_title(gameforge.new_quest_lv52._030_set_title)
+									send_letter("[LC;6020]")
+									q.set_title("[LC;5958]")
 								elseif index == 1 then
 									letterindex = 3
-									send_letter(gameforge.new_quest_lv52._172_send_letter)
-									q.set_title(gameforge.new_quest_lv52._030_set_title)
+									send_letter("[LC;6021]")
+									q.set_title("[LC;5958]")
 								elseif index == 0 then
 									if pc.get_job() == 0 then -- class sensitive reward
 										if pc.get_skill_group() == 1 then
@@ -375,16 +375,16 @@ quest new_quest_lv52 begin
 								pc.setqf("ghostsleft", index) -- one ghost less to be freed
 								if index == 3 then 
 									letterindex = 1
-									send_letter(gameforge.new_quest_lv52._170_send_letter)
-									q.set_title(gameforge.new_quest_lv52._030_set_title)
+									send_letter("[LC;6019]")
+									q.set_title("[LC;5958]")
 								elseif index == 2 then
 									letterindex = 2
-									send_letter(gameforge.new_quest_lv52._171_send_letter)
-									q.set_title(gameforge.new_quest_lv52._030_set_title)
+									send_letter("[LC;6020]")
+									q.set_title("[LC;5958]")
 								elseif index == 1 then
 									letterindex = 3
-									send_letter(gameforge.new_quest_lv52._172_send_letter)
-									q.set_title(gameforge.new_quest_lv52._030_set_title)
+									send_letter("[LC;6021]")
+									q.set_title("[LC;5958]")
 								elseif index == 0 then
 									if pc.get_job() == 0 then -- class sensitive reward
 										if pc.get_skill_group() == 1 then
@@ -443,37 +443,37 @@ quest new_quest_lv52 begin
 	-- when the killing is done we go back to the boss
 	state backhome begin
 		when login or enter begin 
-			send_letter(gameforge.new_quest_lv52._030_set_title)
+			send_letter("[LC;5958]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv52._030_set_title)
+			q.set_title("[LC;5958]")
 			if is_destination_village(1) then -- 
 				local position = find_npc_by_vnum(20355) -- Boss
 				if position != 0 then
-					target.vid("__TARGET4__", position, gameforge.new_quest_lv52._060_target) -- place questarrow on Boss
+					target.vid("__TARGET4__", position, "[LC;5978]") -- place questarrow on Boss
 				end
 			end
 		end
 		when button or info begin -- here the last letter from the boss is handled
-			say_title(gameforge.new_quest_lv52._010_send_letter)
-			say_reward(gameforge.new_quest_lv52._180_say_reward)
+			say_title("[LC;5954]")
+			say_reward("[LC;6023]")
 			local reward = pc.getqf("lv52reward")
-			say(string.format(gameforge.new_quest_lv52._181_say, item_name(reward)))
+			say(string.format("[LC;6024;%s]", item_name(reward)))
 			 --EDIT Arne 24Sept09, Reason: Did not fit in UI
-			say(string.format(gameforge.new_quest_lv52._182_say, get_map_name_by_number(1)))
+			say(string.format("[LC;6025;%s]", get_map_name_by_number(1)))
 		end
-		when 20355.chat.gameforge.new_quest_lv52._030_set_title begin -- when the boss is clicked
+		when 20355.chat."[LC;5958]" begin -- when the boss is clicked
 			target.delete("__TARGET4__")
-			say_title(gameforge.new_quest_lv52._054_say_title)
+			say_title("[LC;5973]")
 			local MorF = pc.get_sex() -- is the character male of female
 			local isvalid = pc.getqf("ghostsleft")
 			if isvalid == 0 then 
 				local reward = pc.getqf("lv52reward")
-				say(string.format(gameforge.new_quest_lv52._183_say_reward, item_name(reward)))
-				say(gameforge.new_quest_lv52._184_say_reward)
+				say(string.format("[LC;6026;%s]", item_name(reward)))
+				say("[LC;6027]")
 				if MorF == 0 then
-					say(gameforge.new_quest_lv52._185_say_reward) -- if character is male
+					say("[LC;6028]") -- if character is male
 				else
-					say(gameforge.new_quest_lv52._186_say_reward) -- if character is female
+					say("[LC;6029]") -- if character is female
 				end
 				pc.change_money(270000)
 				pc.give_exp2(3300000)

@@ -10,35 +10,35 @@ quest subquest_45 begin
 			local v=find_npc_by_vnum(20023)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.subquest_27._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;7743]")
 			end
 		end
 
-		when __TARGET__.target.click or 20023.chat.gameforge.subquest_45._10_npcChat begin
+		when __TARGET__.target.click or 20023.chat."[LC;8234]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.subquest_05._30_sayTitle)
-			say(gameforge.subquest_45._20_say)
+			say_title("[LC;7093]")
+			say("[LC;8245]")
 			wait()
-			say_title(gameforge.subquest_05._30_sayTitle)
-			say(gameforge.subquest_45._30_say)
+			say_title("[LC;7093]")
+			say("[LC;8248]")
 			
-			local s= select(gameforge.subquest_45._40_select)
+			local s= select("[LC;8249]")
 			if 2==s then
-				say(gameforge.subquest_45._50_say)
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;8250]")
+				local a= select("[LC;2059]", "[LC;2035]")
 				if  2==a then
-					say_title(gameforge.subquest_05._30_sayTitle)
-					say(gameforge.subquest_45._60_say)
+					say_title("[LC;7093]")
+					say("[LC;8251]")
 					return
 				end
-				say_title(gameforge.subquest_05._30_sayTitle)
-				say(gameforge.subquest_45._70_say)
+				say_title("[LC;7093]")
+				say("[LC;8252]")
 				set_state(__GIVEUP__)
 				return
 			end
 					
-			say_title(gameforge.subquest_05._30_sayTitle)
-			say(gameforge.subquest_45._80_say)
+			say_title("[LC;7093]")
+			say("[LC;8253]")
 			set_state(WHAT_IS_MILGYO)
 			
 		end
@@ -51,14 +51,14 @@ quest subquest_45 begin
 		when letter begin
 
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.subquest_45._90_makequestbutton)
-			q.set_title(gameforge.subquest_45._90_makequestbutton)
+			makequestbutton("[LC;8254]")
+			q.set_title("[LC;8254]")
 			q.start()
 
 			if pc.count_item("30147")>=1 and	 pc.count_item("30148")>=1  and  pc.count_item("30164")>=1 then
 				local v=find_npc_by_vnum(20023)
 				if 0!= v then
-					target.vid("__TARGET__",v, gameforge.subquest_27._180_makequestbutton)
+					target.vid("__TARGET__",v, "[LC;7751]")
 				end 
 			end
 
@@ -67,15 +67,15 @@ quest subquest_45 begin
 		when info or  button begin
 
 			if pc.count_item("30147")>=1 and pc.count_item("30148")>=1  and  pc.count_item("30164")>=1  then
-				say_title(gameforge.subquest_45._100_sayTitle)
-				say(gameforge.subquest_45._110_say)
+				say_title("[LC;8233]")
+				say("[LC;8235]")
 				return
 			end
 				
-			say_title(gameforge.subquest_45._100_sayTitle)
+			say_title("[LC;8233]")
 
 
-			say(gameforge.subquest_45._120_say)
+			say("[LC;8236]")
 		end
 
 		when 737.kill  begin
@@ -101,25 +101,25 @@ quest subquest_45 begin
 		end
 
 			
-		when __TARGET__.target.click or 20023.chat.gameforge.subquest_45._130_npcChat   begin
+		when __TARGET__.target.click or 20023.chat."[LC;8237]"   begin
 			if pc.count_item("30147")>0 and pc.count_item("30148")>0  and  pc.count_item("30164")>0 then
 				target.delete("__TARGET__")
-				say_title(gameforge.subquest_05._30_sayTitle)
-				say(gameforge.subquest_45._140_say)
+				say_title("[LC;7093]")
+				say("[LC;8238]")
 				wait()
-				say_title(gameforge.subquest_05._30_sayTitle)
-				say(gameforge.subquest_45._150_say)
+				say_title("[LC;7093]")
+				say("[LC;8239]")
 				pc.remove_item("30148",1)
 				pc.remove_item("30147",1)
 				pc.remove_item("30164",1)
 				
-				say_reward(gameforge.subquest_45._160_sayReward)
+				say_reward("[LC;8240]")
 				pc.give_exp2(7000000)
 					
-				say_reward(gameforge.subquest_45._170_sayReward)
+				say_reward("[LC;8241]")
 				pc.give_item2(70003)
 
-				say_reward(gameforge.subquest_45._180_sayReward)
+				say_reward("[LC;8242]")
 				pc.change_money(70000)
 				clear_letter()
 				set_state(COMPLETE)
@@ -128,21 +128,21 @@ quest subquest_45 begin
 				
 				return
 			else		
-				say_title(gameforge.subquest_05._30_sayTitle)
+				say_title("[LC;7093]")
 
 
-				say(gameforge.subquest_45._190_say)
-				local s= select(gameforge.subquest_45._200_select, gameforge.find_brother_article._170_select)
+				say("[LC;8243]")
+				local s= select("[LC;8244]", "[LC;939]")
 				if 2==s then
-					say_title(gameforge.subquest_05._30_sayTitle)
-					say(gameforge.subquest_45._210_say)
+					say_title("[LC;7093]")
+					say("[LC;8246]")
 					set_state(__GIVEUP__)
 					return
 				end
 						
-				say_title(gameforge.subquest_05._30_sayTitle)
+				say_title("[LC;7093]")
 
-				say(gameforge.subquest_45._220_say)
+				say("[LC;8247]")
 			end
 
 

@@ -9,203 +9,203 @@ quest subquest_6 begin
 		when letter begin
 			local v = find_npc_by_vnum(9002)
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_06._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;7106]")
 			end
 		end
 
-		when __TARGET__.target.click or	9002.chat.gameforge.subquest_06._20_npcChat with pc.level >= 11 begin
+		when __TARGET__.target.click or	9002.chat."[LC;7117]" with pc.level >= 11 begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.main_quest_lv3._160_sayTitle)
-			say(gameforge.subquest_06._30_say)
-			local s= select(gameforge.subquest_06._40_select, gameforge.subquest_06._50_select)
+			say_title("[LC;4200]")
+			say("[LC;7135]")
+			local s= select("[LC;7148]", "[LC;7159]")
 			if 2==s then
-				say(gameforge.subquest_06._60_say)
-				local a= select(gameforge.subquest_06._70_select, gameforge.subquest_06._80_select)
+				say("[LC;7170]")
+				local a= select("[LC;7173]", "[LC;7174]")
 				if  2==a then
-				say_title(gameforge.main_quest_lv3._160_sayTitle)
-				say(gameforge.subquest_06._90_say)
+				say_title("[LC;4200]")
+				say("[LC;7175]")
 					return
 				end
-				say_title(gameforge.main_quest_lv3._160_sayTitle)
-                                say(gameforge.subquest_06._100_say)
+				say_title("[LC;4200]")
+                                say("[LC;7105]")
 				set_state(__GIVEUP__)
 				return
 			end
-			say_title(gameforge.main_quest_lv3._160_sayTitle)
-			say(gameforge.subquest_06._110_say)
+			say_title("[LC;4200]")
+			say("[LC;7107]")
 			set_state(ask_blacksmith)
 		end
 	end
 	state ask_blacksmith begin
 		when info or button begin
-			say_title(gameforge.subquest_06._20_npcChat)
-			say_reward(gameforge.subquest_06._120_sayReward)
+			say_title("[LC;7117]")
+			say_reward("[LC;7108]")
 		end
 
 		when letter begin
-			send_letter(gameforge.subquest_06._10_targetVid)
+			send_letter("[LC;7106]")
 		end
 
-		when __TARGET__.target.click or	20016.chat.gameforge.subquest_06._130_npcChat begin
+		when __TARGET__.target.click or	20016.chat."[LC;7109]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.subquest_06._140_say)
+			say_title("[LC;27]")
+			say("[LC;7110]")
 
-			local s= select(gameforge.subquest_06._150_select, gameforge.subquest_06._160_select)
+			local s= select("[LC;7111]", "[LC;7112]")
 			if 2==s then
-				say(gameforge.subquest_06._170_say)
-				local a= select(gameforge.locale.guild.yes, gameforge.subquest_05._320_select)
+				say("[LC;7113]")
+				local a= select("[LC;2059]", "[LC;7095]")
 				if  2==a then
-					say_title(gameforge.blacksmith._20_sayTitle)
-                                        say(gameforge.subquest_06._180_say)
+					say_title("[LC;27]")
+                                        say("[LC;7114]")
 					return
 				end
-				say_title(gameforge.blacksmith._20_sayTitle)
-                                say(gameforge.subquest_06._190_say)
+				say_title("[LC;27]")
+                                say("[LC;7115]")
 				set_state(__GIVEUP__)
 				return
 			end
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.subquest_06._200_say)
+			say_title("[LC;27]")
+			say("[LC;7116]")
 			set_state(to_get_material)
 		end
 
 	end
 	state to_get_material begin
 		when button or info begin
-			say_title(gameforge.subquest_06._20_npcChat)
-			say(gameforge.subquest_06._220_sayReward)
+			say_title("[LC;7117]")
+			say("[LC;7119]")
 			if pc.getqf("asked_20011") == 1 then
-				say(gameforge.subquest_06._285_say)
+				say("[LC;7132]")
 			elseif pc.getqf("ironore_done") == 1 then
-				say_reward(gameforge.subquest_06._224_sayReward)
+				say_reward("[LC;7123]")
 			else 
-				say(gameforge.subquest_06._221_say)
+				say("[LC;7120]")
 			end
 			
 			if pc.getqf("asked_20008") == 1 then
-				say(gameforge.subquest_06._345_say)
+				say("[LC;7140]")
 			elseif pc.getqf("leather_done") == 1 then
-				say_reward(gameforge.subquest_06._225_sayReward)
+				say_reward("[LC;7124]")
 			else 
-				say(gameforge.subquest_06._222_say)
+				say("[LC;7121]")
 			end
 			
 			if pc.getqf("asked_20005") == 1 then
-				say(gameforge.subquest_06._395_say)
+				say("[LC;7146]")
 			elseif pc.getqf("coal_done") == 1 then
-				say_reward(gameforge.subquest_06._226_sayReward)
+				say_reward("[LC;7125]")
 			else
-				say(gameforge.subquest_06._223_say)
+				say("[LC;7122]")
 			end
 		end
 
 		when letter begin
-			send_letter(gameforge.subquest_06._210_sendLetter)
+			send_letter("[LC;7118]")
 			if pc.getqf("leather_done")!=1 then
 				local v=find_npc_by_vnum(20008)
 				if 0!=v then
-					target.vid("__TARGET1__",v, gameforge.subquest_06._230_targetVid)
+					target.vid("__TARGET1__",v, "[LC;7126]")
 				end
 			end
 
 			if pc.getqf("ironore_done")!=1 then
 				local v=find_npc_by_vnum(20011)
 				if 0!=v then
-					target.vid("__TARGET2__",v, gameforge.subquest_06._240_targetVid)
+					target.vid("__TARGET2__",v, "[LC;7127]")
 				end
 			end
 
 			if pc.getqf("coal_done")!=1 then
 				local v=find_npc_by_vnum(20005)
 				if 0!=v then
-					target.vid("__TARGET3__",v, gameforge.subquest_06._250_targetVid)
+					target.vid("__TARGET3__",v, "[LC;7128]")
 				end
 			end
 		end
 
-		when 20011.chat.gameforge.subquest_06._260_npcChat with pc.getf("subquest_6","ironore_done") == 0 begin
+		when 20011.chat."[LC;7129]" with pc.getf("subquest_6","ironore_done") == 0 begin
 			target.delete("__TARGET2__")
 			if pc.count_item(30132) >= 1 then
 				pc.setqf("ironore_done", 1)
 				pc.setqf("asked_20011", 1)
 				pc.remove_item("30132", 1)
 
-				say_title(gameforge.main_quest_lv30._40_sayTitle)
-				say(gameforge.subquest_06._270_say)
+				say_title("[LC;4223]")
+				say("[LC;7130]")
 				if  pc.getqf("ironore_done") == 1 and pc.getqf("leather_done") == 1 and pc.getqf("coal_done") == 1 then
 					set_state(back_to_blacksmith)
 				end
 				return
 			end
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.subquest_06._280_say)
+			say_title("[LC;4223]")
+			say("[LC;7131]")
 			say_item_vnum("30132")
 			pc.setqf("asked_20011", 1)
 
 		end
-		when 20011.chat.gameforge.subquest_06._290_npcChat with pc.getf("subquest_6","ironore_done")==1 begin
+		when 20011.chat."[LC;7133]" with pc.getf("subquest_6","ironore_done")==1 begin
 				target.delete("__TARGET2__")
-				say_title(gameforge.main_quest_lv30._40_sayTitle)
-				say(gameforge.subquest_06._300_say)
+				say_title("[LC;4223]")
+				say("[LC;7134]")
 		end
-		when 20008.chat.gameforge.subquest_06._310_npcChat with pc.getf("subquest_6","leather_done") == 0 begin
+		when 20008.chat."[LC;7136]" with pc.getf("subquest_6","leather_done") == 0 begin
 			target.delete("__TARGET1__")
 			if pc.count_item(60001) >= 1 then
 				pc.setqf("leather_done", 1)
 				pc.setqf("asked_20008", 0)
 				pc.remove_item("60001", 1)
 
-				say_title(gameforge.subquest_06._320_sayTitle)
-				say(gameforge.subquest_06._330_say)
+				say_title("[LC;7137]")
+				say("[LC;7138]")
 				if pc.getqf("ironore_done") == 1 and pc.getqf("leather_done") == 1 and pc.getqf("coal_done") == 1 then
 
 					set_state(back_to_blacksmith)
 				end
 				return
 			end
-			say_title(gameforge.subquest_06._320_sayTitle)
-			say(gameforge.subquest_06._340_say)
+			say_title("[LC;7137]")
+			say("[LC;7139]")
 			say_item_vnum("60001")
 			pc.setqf("asked_20008", 1)
 
 		end
-		when 20008.chat.gameforge.subquest_06._350_npcChat with pc.getqf("leather_done")==1 begin
+		when 20008.chat."[LC;7141]" with pc.getqf("leather_done")==1 begin
 				target.delete("__TARGET1__")
-				say_title(gameforge.subquest_06._320_sayTitle)
-				say(gameforge.subquest_06._360_say)
+				say_title("[LC;7137]")
+				say("[LC;7142]")
 		end
 
 
-		when 20005.chat.gameforge.subquest_06._370_npcChat with pc.getf("subquest_6","coal_done") == 0 begin
+		when 20005.chat."[LC;7143]" with pc.getf("subquest_6","coal_done") == 0 begin
 			target.delete("__TARGET3__")
 			if pc.count_item(30044) >= 1 then
 				pc.setqf("coal_done", 1)
 				pc.setqf("asked_20005", 0)
 				pc.remove_item("30044", 1)
 
-				say_title(gameforge.subquest_01._140_sayTitle)
-				say(gameforge.subquest_06._380_say)
+				say_title("[LC;6969]")
+				say("[LC;7144]")
 				if  pc.getqf("ironore_done") == 1 and pc.getqf("leather_done") == 1 and pc.getqf("coal_done") == 1 then
 					set_state(back_to_blacksmith)
 
 				end
 				return
 			end
-			say_title(gameforge.subquest_01._140_sayTitle)
-			say(gameforge.subquest_06._390_say)
+			say_title("[LC;6969]")
+			say("[LC;7145]")
 			wait()
 
-			say_title(gameforge.subquest_01._140_sayTitle)
-			say(gameforge.subquest_06._400_say)
+			say_title("[LC;6969]")
+			say("[LC;7147]")
 			say_item_vnum("30044")
 			pc.setqf("asked_20005", 1)
 		end
-		when 20005.chat.gameforge.subquest_06._410_npcChat with pc.getf("subquest_6","coal_done")==1 begin
+		when 20005.chat."[LC;7149]" with pc.getf("subquest_6","coal_done")==1 begin
 				target.delete("__TARGET3__")
-				say_title(gameforge.subquest_01._140_sayTitle)
-				say(gameforge.subquest_06._420_say)
+				say_title("[LC;6969]")
+				say("[LC;7150]")
 		end
 
 		when 101.kill begin
@@ -230,22 +230,22 @@ quest subquest_6 begin
 			end
 		end
 
-		when 20016.chat.gameforge.subquest_06._430_npcChat begin
+		when 20016.chat."[LC;7151]" begin
 			target.delete("__TARGET__")
 			if pc.getqf("ironore_done") != 1 then
-				say_title(gameforge.blacksmith._20_sayTitle)
-				say(gameforge.subquest_06._440_say)
+				say_title("[LC;27]")
+				say("[LC;7152]")
 				return
 			end
 
 			if pc.getqf("leather_done") != 1 then
-				say_title(gameforge.blacksmith._20_sayTitle)
-				say(gameforge.subquest_06._450_say)
+				say_title("[LC;27]")
+				say("[LC;7153]")
 				return
 			end
 			if pc.getqf("coal_done") != 1 then
-				say_title(gameforge.blacksmith._20_sayTitle)
-				say(gameforge.subquest_06._460_say)
+				say_title("[LC;27]")
+				say("[LC;7154]")
 				return
 			end
 		end
@@ -253,48 +253,48 @@ quest subquest_6 begin
 	state back_to_blacksmith begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.subquest_06._470_makequestbutton)
-			q.set_title(gameforge.subquest_06._480_qSetTitle)
+			makequestbutton("[LC;7155]")
+			q.set_title("[LC;7156]")
 			q.start()
 
 			local v=find_npc_by_vnum(20016)
 			if 0==v then
 			else
-				target.vid("__TARGET__",v, gameforge.subquest_06._490_targetVid)
+				target.vid("__TARGET__",v, "[LC;7157]")
 			end
 		end
 		when info or button begin
-			say_title(gameforge.subquest_06._500_sayTitle)
-						say(gameforge.subquest_06._510_sayReward)
+			say_title("[LC;7158]")
+						say("[LC;7160]")
 					end
 
-		when __TARGET__.target.click or	20016.chat.gameforge.subquest_06._520_npcChat with pc.getf("subquest_6","ironore_done") == 1 and pc.getf("subquest_6","leather_done") == 1 and pc.getf("subquest_6","coal_done") == 1 begin
-				say_title(gameforge.blacksmith._20_sayTitle)
-				say(gameforge.subquest_06._530_say)
+		when __TARGET__.target.click or	20016.chat."[LC;7161]" with pc.getf("subquest_6","ironore_done") == 1 and pc.getf("subquest_6","leather_done") == 1 and pc.getf("subquest_6","coal_done") == 1 begin
+				say_title("[LC;27]")
+				say("[LC;7162]")
 				set_state(resource_complete)
 		end
 	end
 	state resource_complete begin
 		when info or button begin
-			say_title(gameforge.subquest_06._20_npcChat)
-            say(gameforge.subquest_06._540_sayReward)
+			say_title("[LC;7117]")
+            say("[LC;7163]")
 		end
 
 		when letter begin
-			send_letter(gameforge.subquest_06._10_targetVid)
+			send_letter("[LC;7106]")
 
 		    local v=find_npc_by_vnum(9002)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.subquest_06._550_targetVid)
+				target.vid("__TARGET__", v, "[LC;7164]")
 			end
 		end
 
 
-		when __TARGET__.target.click or	9002.chat.gameforge.subquest_06._560_npcChat begin
+		when __TARGET__.target.click or	9002.chat."[LC;7165]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv3._160_sayTitle)
-			say(gameforge.subquest_06._570_say)
+			say_title("[LC;4200]")
+			say("[LC;7166]")
 
 			pc.give_exp2(26000)
 			set_quest_state("levelup","run")
@@ -302,23 +302,23 @@ quest subquest_6 begin
 
 			pc.give_item2("30003", 1)
 
-			say_title(gameforge.collect_herb_lv4._130_sayTitle)
-						say_reward(gameforge.subquest_06._580_sayReward)
+			say_title("[LC;192]")
+						say_reward("[LC;7167]")
              clear_letter()
 			set_state(__COMPLETE__)
 
 			if pc.job == 0 then
 				pc.give_item2("11223", 1)
-				say_reward(gameforge.subquest_06._590_sayReward)
+				say_reward("[LC;7168]")
 			elseif pc.job == 1 then
 				pc.give_item2("11423", 1)
-				say_reward(gameforge.subquest_06._600_sayReward)
+				say_reward("[LC;7169]")
 			elseif pc.job == 2 then
 				pc.give_item2("11623", 1)
-				say_reward(gameforge.subquest_06._610_sayReward)
+				say_reward("[LC;7171]")
 			elseif pc.job==3 then
 				pc.give_item2("11823", 1)
-				say_reward(gameforge.subquest_06._620_sayReward)
+				say_reward("[LC;7172]")
 			end
 			pc.setqf("ironore_done",0)
 			pc.setqf("leather_done" ,0)

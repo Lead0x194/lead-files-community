@@ -1,30 +1,30 @@
 quest goldbar_shop begin
 	state start begin
-		when 20020.chat.gameforge.goldbar._10_npcChat begin
+		when 20020.chat."[LC;1221]" begin
 			if pc.get_level() < 30 then
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._30_say)
+				say_title("[LC;1232]")
+				say("[LC;1243]")
 				wait()
-				say_title(gameforge.buy_fishrod._210_sayTitle)
-								say_reward(gameforge.goldbar._40_sayReward)
+				say_title("[LC;44]")
+								say_reward("[LC;1251]")
 								return
 			end
 			if game.get_event_flag("gold_trade_enable") == 0 then
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._50_say)
+				say_title("[LC;1232]")
+				say("[LC;1252]")
 				wait()
-				say_title(gameforge.buy_fishrod._210_sayTitle)
-								say_reward(gameforge.goldbar._60_sayReward)
+				say_title("[LC;44]")
+								say_reward("[LC;1253]")
 								return
 			end
-			say_title(gameforge.goldbar._20_sayTitle)
-			say(gameforge.goldbar._70_say)
+			say_title("[LC;1232]")
+			say("[LC;1254]")
 
-			local s =  select(gameforge.goldbar._80_select, gameforge.goldbar._90_select)
+			local s =  select("[LC;1255]", "[LC;1256]")
 
 			if s == 1 then
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._100_say)
+				say_title("[LC;1232]")
+				say("[LC;1218]")
 
 				wait()
 
@@ -34,19 +34,19 @@ quest goldbar_shop begin
 
 				if interval >= 60 then
 					interval = interval / 60
-					unit = gameforge.goldbar._104_say
+					unit = "[LC;1219]"
 					math.ceil(interval)
 				else
-					unit = gameforge.goldbar._108_say
+					unit = "[LC;1220]"
 				end
 
 				if interval < 1 then interval = 1 end
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(string.format(gameforge.goldbar._110_say, interval, unit))
-				say(gameforge.goldbar._120_say)
+				say_title("[LC;1232]")
+				say(string.format("[LC;1222;%s;%s]", interval, unit))
+				say("[LC;1223]")
 			else
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._130_say)
+				say_title("[LC;1232]")
+				say("[LC;1224]")
 			end
 
 			setstate(trade_goldbar)
@@ -54,17 +54,17 @@ quest goldbar_shop begin
 	end
 
 	state trade_goldbar begin
-		when 20020.chat.gameforge.goldbar._140_npcChat begin
+		when 20020.chat."[LC;1225]" begin
 			if pc.get_level() < 30 then
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._150_say)
+				say_title("[LC;1232]")
+				say("[LC;1226]")
 				setstate(start)
 				return
 			end
 			if game.get_event_flag("gold_trade_enable") == 0 then
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._160_say)
-				say_reward(gameforge.goldbar._170_sayReward)
+				say_title("[LC;1232]")
+				say("[LC;1227]")
+				say_reward("[LC;1228]")
 				return
 			end
 
@@ -79,59 +79,59 @@ quest goldbar_shop begin
 				nexttime = (nexttime / 60) - (get_time()/60)
 
 				if nexttime >= 60 then
-					unit = gameforge.goldbar._104_say
+					unit = "[LC;1219]"
 					nexttime = nexttime / 60
 					math.ceil(nexttime)
 				else
-					unit = gameforge.goldbar._108_say
+					unit = "[LC;1220]"
 				end
 
 				if nexttime < 1 then nexttime = 1 end
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._180_say)
-say(string.format(gameforge.goldbar._190_say, nexttime, unit))
+				say_title("[LC;1232]")
+				say("[LC;1229]")
+say(string.format("[LC;1230;%s;%s]", nexttime, unit))
 								else
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._200_say)
+				say_title("[LC;1232]")
+				say("[LC;1231]")
 
-					local s =  select(gameforge.buy_fishrod._40_select, gameforge.buy_fishrod._50_select)
+					local s =  select("[LC;49]", "[LC;50]")
 					if s == 1 then
 						if pc.money >= 2200000 then
 							local goldbar_count = pc.count_item(80007)
 							char_log(0, "GOLDBARREN", "KAUFEN ("..goldbar_count..")")
 							pc.changemoney(-2200000)
-							say_title(gameforge.goldbar._20_sayTitle)
-							say(gameforge.goldbar._210_say)
+							say_title("[LC;1232]")
+							say("[LC;1233]")
 							pc.give_item2("80007", 1)
 							pc.setqf("gold_buy_next_time", get_time() + time_min_to_sec(interval))
 						else
-							say_title(gameforge.goldbar._20_sayTitle)
-							say(gameforge.goldbar._220_say)
+							say_title("[LC;1232]")
+							say("[LC;1234]")
 						end
 					elseif s == 2 then
-						say_title(gameforge.goldbar._20_sayTitle)
-						say(gameforge.goldbar._230_say)
+						say_title("[LC;1232]")
+						say("[LC;1235]")
 					else
 				end
 							end
 		end
 
-		when 20020.chat.gameforge.goldbar._240_npcChat with pc.is_gm() begin
-			say(gameforge.goldbar._250_say)
+		when 20020.chat."[LC;1236]" with pc.is_gm() begin
+			say("[LC;1237]")
 			pc.setqf("gold_buy_next_time", 0)
 			pc.setqf("gold_sell_next_time", 0)
 		end
-		when 20020.chat.gameforge.goldbar._260_npcChat begin
+		when 20020.chat."[LC;1238]" begin
 			if pc.get_level() < 30 then
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._270_say)
+				say_title("[LC;1232]")
+				say("[LC;1239]")
 				setstate(start)
 				return
 			end
 			if game.get_event_flag("gold_trade_enable") == 0 then
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._280_say)
-				say_reward(gameforge.goldbar._290_sayReward)
+				say_title("[LC;1232]")
+				say("[LC;1240]")
+				say_reward("[LC;1241]")
 								return
 			end
 
@@ -146,30 +146,30 @@ say(string.format(gameforge.goldbar._190_say, nexttime, unit))
 				nexttime = (nexttime / 60) - (get_time()/60)
 
 				if nexttime >= 60 then
-					unit = gameforge.goldbar._104_say
+					unit = "[LC;1219]"
 					nexttime = nexttime / 60
 					math.ceil(nexttime)
 				else
-					unit = gameforge.goldbar._108_say
+					unit = "[LC;1220]"
 				end
 
 				if nexttime < 1 then nexttime = 1 end
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._300_say)
-say(string.format(gameforge.goldbar._310_say, nexttime, unit))
+				say_title("[LC;1232]")
+				say("[LC;1242]")
+say(string.format("[LC;1244;%s;%s]", nexttime, unit))
 							else
 				if pc.count_item(80007) <= 0 then
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._320_say)
+				say_title("[LC;1232]")
+				say("[LC;1245]")
 				else
-				say_title(gameforge.goldbar._20_sayTitle)
-				say(gameforge.goldbar._330_say)
+				say_title("[LC;1232]")
+				say("[LC;1246]")
 
-					local s =  select(gameforge.goldbar._340_select, gameforge.goldbar._350_select)
+					local s =  select("[LC;1247]", "[LC;1248]")
 
 					if s == 1 then
-						say_title(gameforge.goldbar._20_sayTitle)
-						say(gameforge.goldbar._360_say)
+						say_title("[LC;1232]")
+						say("[LC;1249]")
 
 						local goldbar_count = pc.count_item(80007)
 						if goldbar_count >= 1 then
@@ -182,8 +182,8 @@ say(string.format(gameforge.goldbar._310_say, nexttime, unit))
 						pc.setqf("gold_sell_next_time", get_time() + time_min_to_sec(interval))
 
 					elseif s == 2 then
-						say_title(gameforge.goldbar._20_sayTitle)
-						say(gameforge.goldbar._370_say)
+						say_title("[LC;1232]")
+						say("[LC;1250]")
 					end
 				end
 			end

@@ -9,16 +9,16 @@ quest subquest_2 begin
 			local v = find_npc_by_vnum(9003)
 
 			if v!= 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_02._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;7003]")
 			end
 		end	
 		
 	
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
-			say_title(gameforge.find_squareguard._130_sayTitle)
+			say_title("[LC;1004]")
 
-			say(gameforge.subquest_02._20_say)
+			say("[LC;7014]")
 			set_state(ask_dinner)
 		end
 	end
@@ -28,27 +28,27 @@ quest subquest_2 begin
 			local v=find_npc_by_vnum(9002)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv3._130_targetVid)
+				target.vid("__TARGET__", v, "[LC;4197]")
 			end
 		end
 		when letter begin
-			send_letter(gameforge.main_quest_lv3._130_targetVid)
+			send_letter("[LC;4197]")
 		end
 		when button or info begin
-            say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.subquest_02._30_sayReward)
-						say_reward(gameforge.subquest_02._40_sayReward)
+            say_title("[LC;44]")
+						say_reward("[LC;7015]")
+						say_reward("[LC;7016]")
 					end
 
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.main_quest_lv3._160_sayTitle)
-			say(gameforge.subquest_02._50_say)
+			say_title("[LC;4200]")
+			say("[LC;7017]")
 			wait()
-			say_title(gameforge.main_quest_lv3._160_sayTitle)
+			say_title("[LC;4200]")
 
-			say(gameforge.subquest_02._60_say)
+			say("[LC;7018]")
 			set_state(report)
 		end
 	end
@@ -57,46 +57,46 @@ quest subquest_2 begin
 		when letter begin
 			local v = find_npc_by_vnum(9003)
 			if v!= 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_02._70_targetVid)
+				target.vid("__TARGET__", v, "[LC;7019]")
 			end
 		end	
 
 		when letter begin
-			send_letter(gameforge.subquest_02._10_targetVid)
+			send_letter("[LC;7003]")
 		end
 
 		when button or info begin
-			say_title(gameforge.subquest_02._10_targetVid)
-						say_reward(gameforge.subquest_02._80_sayReward)
-						say_reward(gameforge.subquest_02._90_sayReward)
+			say_title("[LC;7003]")
+						say_reward("[LC;7020]")
+						say_reward("[LC;7021]")
 					end
 
-		when 9002.chat.gameforge.subquest_02._70_targetVid begin
+		when 9002.chat."[LC;7019]" begin
 			
-			say_title(gameforge.subquest_02._100_sayTitle)
-			say(gameforge.subquest_02._110_say)
+			say_title("[LC;7002]")
+			say("[LC;7004]")
 		end
 
 
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.find_squareguard._130_sayTitle)
+			say_title("[LC;1004]")
 
-			say(gameforge.subquest_02._120_say)
+			say("[LC;7005]")
 			local s = select( 
-				gameforge.subquest_02._121_select,
-				gameforge.subquest_02._122_select,
-				gameforge.subquest_02._123_select,
-				gameforge.subquest_02._124_select
+				"[LC;7006]",
+				"[LC;7007]",
+				"[LC;7008]",
+				"[LC;7009]"
 				)
 
 			if s == 3 then
-				say_title(gameforge.find_squareguard._130_sayTitle)
+				say_title("[LC;1004]")
 
-				say(gameforge.subquest_02._130_say)
-				say_title(gameforge.collect_herb_lv4._130_sayTitle)
-								say_reward(gameforge.subquest_02._140_sayReward)
+				say("[LC;7010]")
+				say_title("[LC;192]")
+								say_reward("[LC;7011]")
 
 								pc.give_exp2(1000)
 				set_quest_state("levelup","run")
@@ -106,12 +106,12 @@ quest subquest_2 begin
 				set_state(__COMPLETE__)
 			elseif s == 4 then
 
-				say(gameforge.subquest_02._150_say)
+				say("[LC;7012]")
 				set_state(ask_dinner)
 
 			else
 
-				say(gameforge.subquest_02._160_say)
+				say("[LC;7013]")
 				set_state(ask_dinner)
 			end
 		end

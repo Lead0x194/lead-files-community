@@ -13,7 +13,7 @@ quest harvest_festival begin
             q.set_counter("remaining_2403", 60 - kill_count);
 
             if kill_count >= 60 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- Getting the rice cake
                 local cake_count = pc.getqf("cake_count") + random_rice
                 pc.setqf("cake_count", cake_count)
@@ -78,38 +78,38 @@ quest harvest_festival begin
             local v= find_npc_by_vnum(20086)
             if 0==v then
             else
-                target.vid("__TARGET__", v, gameforge.harvest_festival._010_targetVid)
+                target.vid("__TARGET__", v, "[LC;1414]")
             end
         end
 
 
         -- Glutinous rice in exchange for a gift
-        when 20087.chat.gameforge.harvest_festival._025_npcChat with game.get_event_flag("harvest_festival")>0 begin
+        when 20087.chat."[LC;1416]" with game.get_event_flag("harvest_festival")>0 begin
             local rice_count = pc.getqf("rice_count")
 
-            say_title(gameforge.harvest_festival._020_sayTitle)
-            say(string.format(gameforge.harvest_festival._030_say, rice_count))
-            local reward_set = select(gameforge.harvest_festival._040_select, gameforge.harvest_festival._050_select)
+            say_title("[LC;1415]")
+            say(string.format("[LC;1417;%s]", rice_count))
+            local reward_set = select("[LC;1418]", "[LC;1419]")
 
             if reward_set == 2 then
-                say_title(gameforge.harvest_festival._020_sayTitle)
-                say(gameforge.harvest_festival._060_say)
+                say_title("[LC;1415]")
+                say("[LC;1420]")
                 return
             end -- end of if	
         
-            say_title(gameforge.harvest_festival._020_sayTitle)
-            say(gameforge.harvest_festival._070_say)
+            say_title("[LC;1415]")
+            say("[LC;1421]")
 
             -- local harvest_item_set = select("15x Glut",  "15x Gl","35x Perle","35x Gluttrank","35x Gltes","Maybe later")
-            local harvest_item_set = select(gameforge.harvest_festival._090_select,
-                                            gameforge.harvest_festival._100_select,
-                                            gameforge.harvest_festival._110_select,
-                                            gameforge.harvest_festival._120_select,
-                                            gameforge.harvest_festival._130_select,
-                                            gameforge.harvest_festival._140_select,
-                                            gameforge.harvest_festival._150_select,
-                                            gameforge.harvest_festival._160_select,
-                                            gameforge.harvest_festival._170_select)
+            local harvest_item_set = select("[LC;1423]",
+                                            "[LC;1424]",
+                                            "[LC;1425]",
+                                            "[LC;1426]",
+                                            "[LC;1428]",
+                                            "[LC;1430]",
+                                            "[LC;1431]",
+                                            "[LC;1432]",
+                                            "[LC;1433]")
             if harvest_item_set == 9 then
                 return
             end -- end of if
@@ -119,45 +119,45 @@ quest harvest_festival begin
             
             
             if harvest_item_set == 1 then
-                harvest_item_name = gameforge.harvest_festival._090_select
+                harvest_item_name = "[LC;1423]"
                 harvest_rice_count = 30 
             elseif harvest_item_set == 2 then
-                harvest_item_name = gameforge.harvest_festival._100_select
+                harvest_item_name = "[LC;1424]"
                 harvest_rice_count = 45 
             elseif harvest_item_set == 3 then
-                harvest_item_name = gameforge.harvest_festival._110_select
+                harvest_item_name = "[LC;1425]"
                 harvest_rice_count = 50
             elseif harvest_item_set == 4 then
-                harvest_item_name = gameforge.harvest_festival._120_select
+                harvest_item_name = "[LC;1426]"
                 harvest_rice_count = 55
             elseif harvest_item_set == 5 then
-                harvest_item_name = gameforge.harvest_festival._130_select
+                harvest_item_name = "[LC;1428]"
                 harvest_rice_count = 60 
            elseif harvest_item_set == 6 then
-                harvest_item_name = gameforge.harvest_festival._140_select
+                harvest_item_name = "[LC;1430]"
                 harvest_rice_count = 70 
             elseif harvest_item_set == 7 then
-                harvest_item_name = gameforge.harvest_festival._150_select
+                harvest_item_name = "[LC;1431]"
                 harvest_rice_count = 75
             elseif harvest_item_set == 8 then
-                harvest_item_name = gameforge.harvest_festival._160_select
+                harvest_item_name = "[LC;1432]"
                 harvest_rice_count = 80
             end -- end of if	
 
             -- Check glutinous rice amount
             if rice_count < harvest_rice_count then
-                say_title(gameforge.harvest_festival._020_sayTitle)
-                say(gameforge.harvest_festival._180_say)
+                say_title("[LC;1415]")
+                say("[LC;1434]")
                 return
             end -- end of if	
 
-            say_title(gameforge.harvest_festival._020_sayTitle)
-            say(gameforge.harvest_festival._190_say)
+            say_title("[LC;1415]")
+            say("[LC;1435]")
             say("")
-            say(string.format(gameforge.harvest_festival._200_say,harvest_rice_count, harvest_item_name))
-            say(gameforge.harvest_festival._210_say)
+            say(string.format("[LC;1436;%s;%s]",harvest_rice_count, harvest_item_name))
+            say("[LC;1437]")
 
-            local item_get_set = select(gameforge.harvest_festival._220_select, gameforge.harvest_festival._170_select)
+            local item_get_set = select("[LC;1438]", "[LC;1433]")
 
             if item_get_set == 2 then
                 return
@@ -190,8 +190,8 @@ quest harvest_festival begin
                 pc.give_item2("50115", 1)
             end -- end of if
 
-            say_reward(string.format(gameforge.harvest_festival._230_say,harvest_item_name))
-            say(gameforge.harvest_festival._240_say)
+            say_reward(string.format("[LC;1439;%s]",harvest_item_name))
+            say("[LC;1440]")
             
         end -- end of when
         
@@ -221,15 +221,15 @@ quest harvest_festival begin
             end
         end
 
-        when 20086.chat.gameforge.harvest_festival._250_npcChat with game.get_event_flag("harvest_festival")>0 begin
+        when 20086.chat."[LC;1441]" with game.get_event_flag("harvest_festival")>0 begin
             target.delete("__TARGET__")
             local quest_count = pc.getqf("harvest_festival_count")
             local quest_complete = pc.getqf("harvest_festival_mob_complete")
 
             -- When you finished all the quests
             if quest_count >= 10 then
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._270_say)
+                say_title("[LC;1442]")
+                say("[LC;1443]")
 
                 return
             end -- end of if
@@ -243,8 +243,8 @@ quest harvest_festival begin
                 
                 local quest_count = pc.getqf("harvest_festival_count")
                 
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._280_say)
+                say_title("[LC;1442]")
+                say("[LC;1444]")
                 wait()
 
                 -- Getting the Glutinous Rice
@@ -253,25 +253,25 @@ quest harvest_festival begin
                 pc.setqf("rice_count", rice_count + cake_count)
                 pc.setqf("cake_count", 0)
                 
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(string.format(gameforge.harvest_festival._290_say, cake_count))
+                say_title("[LC;1442]")
+                say(string.format("[LC;1445;%s]", cake_count))
 								wait()
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._300_say)
+                say_title("[LC;1442]")
+                say("[LC;1446]")
                 wait()
 
                 if quest_count >= 10 then
                     char_log(0, "EVENT_RECORD", "harvest_festival clear")
-                    say_title(gameforge.harvest_festival._260_sayTitle)
-                    say(gameforge.harvest_festival._310_say)
+                    say_title("[LC;1442]")
+                    say("[LC;1447]")
 
                     return
                 else
-                    say_title(gameforge.harvest_festival._260_sayTitle)
-                    say(gameforge.harvest_festival._320_say)
+                    say_title("[LC;1442]")
+                    say("[LC;1448]")
                 end -- end of if
 
-                local replay_set = select(gameforge.harvest_festival._330_select, gameforge.harvest_festival._340_select)
+                local replay_set = select("[LC;1449]", "[LC;1450]")
 
                 if replay_set == 2 then
                     return
@@ -279,9 +279,9 @@ quest harvest_festival begin
 
                 local current_count = quest_count + 1
 
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._350_say)
-                say(string.format(gameforge.harvest_festival._360_say, current_count))
+                say_title("[LC;1442]")
+                say("[LC;1451]")
+                say(string.format("[LC;1452;%s]", current_count))
                 
                 set_state(mob_kill1)
 
@@ -290,18 +290,18 @@ quest harvest_festival begin
 
             -- If you stop and do the quest again
             if quest_count > 0 then
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._360_say)
+                say_title("[LC;1442]")
+                say("[LC;1452;%s]")
 
-                local replay_set = select(gameforge.harvest_festival._380_select,gameforge.harvest_festival._390_select)
+                local replay_set = select("[LC;1454]","[LC;1455]")
 
                 if replay_set == 2 then
                     return
                 end	-- end of if
 
                 local current_count = quest_count + 1
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(string.format(gameforge.harvest_festival._400_say, current_count))
+                say_title("[LC;1442]")
+                say(string.format("[LC;1456;%s]", current_count))
                 set_state(mob_kill1)
 
                 return
@@ -310,41 +310,41 @@ quest harvest_festival begin
             -- here we must put the different mobnames
             if pc.get_level() >= 81 then
                 pc.setqf("mob1_info", 6)
-                mob1_name = gameforge.harvest_festival._410_say
+                mob1_name = "[LC;1457]"
             elseif pc.get_level() >= 61 then	
                 pc.setqf("mob1_info", 5)
-                mob1_name = gameforge.harvest_festival._420_say
+                mob1_name = "[LC;1458]"
             elseif pc.get_level() >= 41 then	
                 pc.setqf("mob1_info", 4)
-                mob1_name = gameforge.harvest_festival._430_say
+                mob1_name = "[LC;1459]"
             elseif pc.get_level() >= 21 then	
                 pc.setqf("mob1_info", 3)
-                mob1_name = gameforge.harvest_festival._440_say
+                mob1_name = "[LC;1460]"
             elseif pc.get_level() >= 11 then	
                 pc.setqf("mob1_info", 2)
-                mob1_name = gameforge.harvest_festival._450_say
+                mob1_name = "[LC;1461]"
             elseif pc.get_level() <= 10 then	
                 pc.setqf("mob1_info", 1)
-                mob1_name = gameforge.harvest_festival._460_say
+                mob1_name = "[LC;1462]"
             end -- end of if
             
 					
 					-- When you start for the 1st time
-            say_title(gameforge.harvest_festival._260_sayTitle)
-            say(gameforge.harvest_festival._470_say)
-            say(string.format(gameforge.harvest_festival._480_say, mob1_name))
+            say_title("[LC;1442]")
+            say("[LC;1463]")
+            say(string.format("[LC;1464;%s]", mob1_name))
 
-            local main_set = select(gameforge.harvest_festival._490_select,gameforge.harvest_festival._500_select)
+            local main_set = select("[LC;1465]","[LC;1466]")
             if main_set == 2 then
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._510_select)
+                say_title("[LC;1442]")
+                say(nil)
                 return
             end -- end of if
 
             local current_count = quest_count + 1
 
-            say_title(gameforge.harvest_festival._260_sayTitle)
-            say(string.format(gameforge.harvest_festival._400_say, current_count))
+            say_title("[LC;1442]")
+            say(string.format("[LC;1456;%s]", current_count))
             set_state(mob_kill1)
 
         end -- end of when
@@ -353,29 +353,29 @@ quest harvest_festival begin
     
     state mob_kill1 begin
         when letter begin
-            send_letter(gameforge.harvest_festival._520_sendLetter)
+            send_letter("[LC;1468]")
         end -- end of when
 
         when info or button begin
             local mob1_info = pc.getqf("mob1_info")
             if mob1_info == 6 then
-                mob1_name = gameforge.harvest_festival._410_say
+                mob1_name = "[LC;1457]"
             elseif mob1_info == 5 then	
-                mob1_name = gameforge.harvest_festival._420_say
+                mob1_name = "[LC;1458]"
             elseif mob1_info == 4 then	
-                mob1_name = gameforge.harvest_festival._430_say
+                mob1_name = "[LC;1459]"
             elseif mob1_info == 3 then	
-                mob1_name = gameforge.harvest_festival._440_say
+                mob1_name = "[LC;1460]"
             elseif mob1_info == 2 then	
-                mob1_name = gameforge.harvest_festival._450_say
+                mob1_name = "[LC;1461]"
             elseif mob1_info == 1 then	
-                mob1_name = gameforge.harvest_festival._460_say
+                mob1_name = "[LC;1462]"
             end -- end of if
         
-            say(gameforge.harvest_festival._520_sendLetter)
-            say(string.format(gameforge.harvest_festival._530_say, mob1_info))
+            say("[LC;1468]")
+            say(string.format("[LC;1469;%s]", mob1_info))
 
-            local gogo_set = select(gameforge.harvest_festival._540_select,gameforge.harvest_festival._550_select)
+            local gogo_set = select("[LC;1470]","[LC;1471]")
 
             if gogo_set == 2 then
                 clear_letter()
@@ -384,59 +384,59 @@ quest harvest_festival begin
 
         end -- end of when
 
-        when 20086.chat.gameforge.harvest_festival._570_npcChat with game.get_event_flag("harvest_festival")>0 begin
+        when 20086.chat."[LC;1473]" with game.get_event_flag("harvest_festival")>0 begin
             local kill_count = pc.getqf("mob_kill1_count")
             if kill_count < 30 then
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._580_say)
+                say_title("[LC;1442]")
+                say("[LC;1474]")
             else
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._590_say)
+                say_title("[LC;1442]")
+                say("[LC;1475]")
                 local mob2_name = ""
                 if pc.get_level() >= 91 then
                     pc.setqf("mob2_info", 8)
-                    mob2_name = gameforge.harvest_festival._600_say
+                    mob2_name = "[LC;1476]"
                 elseif pc.get_level() >= 81 then
                     pc.setqf("mob2_info", 7)
-                    mob2_name = gameforge.harvest_festival._610_say
+                    mob2_name = "[LC;1477]"
                 elseif pc.get_level() >= 71 then
                     pc.setqf("mob2_info", 6)
-                    mob2_name = gameforge.harvest_festival._620_say
+                    mob2_name = "[LC;1478]"
                 elseif pc.get_level() >= 61 then	
                     pc.setqf("mob2_info", 5)
-                    mob2_name = gameforge.harvest_festival._630_say
+                    mob2_name = "[LC;1479]"
                 elseif pc.get_level() >= 51 then	
                     pc.setqf("mob2_info", 4)
-                    mob2_name = gameforge.harvest_festival._640_say
+                    mob2_name = "[LC;1480]"
                 elseif pc.get_level() >= 41 then	
                     pc.setqf("mob2_info", 3)
-                    mob2_name = gameforge.harvest_festival._650_say
+                    mob2_name = "[LC;1481]"
                 elseif pc.get_level() >= 31 then	
                     pc.setqf("mob2_info", 2)
-                    mob2_name = gameforge.harvest_festival._660_say
+                    mob2_name = "[LC;1482]"
                 elseif pc.get_level() >= 20 then	
                     pc.setqf("mob2_info", 1)
-                    mob2_name = gameforge.harvest_festival._670_say
+                    mob2_name = "[LC;1483]"
                 end -- end of if
                 
-                say(string.format(gameforge.harvest_festival._680_say, mob2_name))
-                local sub_set = select(gameforge.harvest_festival._690_select,gameforge.harvest_festival._700_select)
+                say(string.format("[LC;1484;%s]", mob2_name))
+                local sub_set = select("[LC;1485]","[LC;1486]")
                 
                 if sub_set == 2	then
-                    say_title(gameforge.harvest_festival._260_sayTitle)
-                    say(gameforge.harvest_festival._710_say)
+                    say_title("[LC;1442]")
+                    say("[LC;1487]")
                     set_state(information)
                     return
                 end
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(string.format(gameforge.harvest_festival._715_say, mob2_name))
+                say_title("[LC;1442]")
+                say(string.format("[LC;1488;%s]", mob2_name))
                 set_state(mob_kill2)
             end
         end	-- end of when
         
         when 20087.click with game.get_event_flag("harvest_festival")>0 begin
-            say_title(gameforge.harvest_festival._020_sayTitle)
-            say(gameforge.harvest_festival._550_select)
+            say_title("[LC;1415]")
+            say("[LC;1471]")
         end	-- end of when
         
         when 1137.kill with pc.getf("harvest_festival","mob1_info") == 6 begin
@@ -451,7 +451,7 @@ quest harvest_festival begin
             q.set_counter("remaining_1137", 30 - kill_count)
 
             if kill_count >= 30 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- How many dishes are needed
                 pc.setqf("cake_count", random_rice)
                 clear_letter()
@@ -471,7 +471,7 @@ quest harvest_festival begin
             q.set_counter("remaining_2202", 30 - kill_count)
 
             if kill_count >= 30 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- How many dishes are needed
                 pc.setqf("cake_count", random_rice)
                 clear_letter()
@@ -491,7 +491,7 @@ quest harvest_festival begin
             q.set_counter("remaining_701", 30 - kill_count)
 
             if kill_count >= 30 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- How many dishes are needed
                 pc.setqf("cake_count", random_rice)
                 clear_letter()
@@ -512,7 +512,7 @@ quest harvest_festival begin
             q.set_counter("remaining_501", 30 - kill_count)
 
             if kill_count >= 30 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- How many dishes are needed
                 pc.setqf("cake_count", random_rice)
                 clear_letter()
@@ -532,7 +532,7 @@ quest harvest_festival begin
             q.set_counter("remaining_301", 30 - kill_count)
 
             if kill_count >= 30 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- How many dishes are needed
                 pc.setqf("cake_count", random_rice)
                 clear_letter()
@@ -551,7 +551,7 @@ quest harvest_festival begin
             q.set_counter("remaining_105", 30 - kill_count)
 
             if kill_count >= 30 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- How many dishes are needed
                 pc.setqf("cake_count", random_rice)
                 clear_letter()
@@ -565,39 +565,39 @@ quest harvest_festival begin
     state mob_kill2 begin
 
         when letter begin
-            send_letter(gameforge.harvest_festival._520_sendLetter)
+            send_letter("[LC;1468]")
         end -- end of when
       
        when info or button begin
             local mob2_info = pc.getqf("mob2_info")
             if mob2_info == 8 then
-                mob2_name = gameforge.harvest_festival._600_say
+                mob2_name = "[LC;1476]"
             elseif mob2_info == 7 then
-                mob2_name = gameforge.harvest_festival._610_say
+                mob2_name = "[LC;1477]"
             elseif mob2_info == 6 then
-                mob2_name = gameforge.harvest_festival._620_say
+                mob2_name = "[LC;1478]"
             elseif mob2_info == 5 then
-                mob2_name = gameforge.harvest_festival._630_say
+                mob2_name = "[LC;1479]"
             elseif mob2_info == 4 then
-                mob2_name = gameforge.harvest_festival._640_say
+                mob2_name = "[LC;1480]"
             elseif mob2_info == 3 then
-                mob2_name = gameforge.harvest_festival._650_say
+                mob2_name = "[LC;1481]"
             elseif mob2_info == 2 then
-                mob2_name = gameforge.harvest_festival._660_say
+                mob2_name = "[LC;1482]"
             elseif mob2_info == 1 then
-                mob2_name = gameforge.harvest_festival._670_say
+                mob2_name = "[LC;1483]"
             end -- end of if
 
-            say_title(gameforge.harvest_festival._520_sendLetter)
-            say(string.format(gameforge.harvest_festival._720_say,mob2_name))
+            say_title("[LC;1468]")
+            say(string.format("[LC;1489;%s]",mob2_name))
 
             if party.is_party() then
-                say(gameforge.harvest_festival._730_say)
+                say("[LC;1490]")
             else
-                say(gameforge.harvest_festival._740_say)
+                say("[LC;1491]")
             end -- end of if
 
-            local gogo_set = select(gameforge.harvest_festival._380_select,gameforge.harvest_festival._540_select)
+            local gogo_set = select("[LC;1454]","[LC;1470]")
 
             if gogo_set == 2 then
                 clear_letter()
@@ -607,15 +607,15 @@ quest harvest_festival begin
         end -- end of when
      
      
-        when 20086.chat.gameforge.harvest_festival._750_npcChat with game.get_event_flag("harvest_festival")>0 begin
+        when 20086.chat."[LC;1492]" with game.get_event_flag("harvest_festival")>0 begin
 
             local quest_count = pc.getqf("harvest_festival_count")
             local quest_complete = pc.getqf("harvest_festival_mob_complete")
 
             -- When you have finished all the quests
             if quest_count >= 10 then
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._760_say)
+                say_title("[LC;1442]")
+                say("[LC;1493]")
                 set_state(information)
                 return
             end -- end of if
@@ -629,8 +629,8 @@ quest harvest_festival begin
                 
                 local quest_count = pc.getqf("harvest_festival_count")
                 
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._770_say)
+                say_title("[LC;1442]")
+                say("[LC;1494]")
                 wait()
 
                 -- Getting Glutinous Rice
@@ -639,22 +639,22 @@ quest harvest_festival begin
                 pc.setqf("rice_count", rice_count + cake_count)
                 pc.setqf("cake_count", 0)
                 
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(gameforge.harvest_festival._780_say)
+                say_title("[LC;1442]")
+                say("[LC;1495;%s]")
                 wait()
                 
                 if quest_count >= 10 then
                     char_log(0, "EVENT_RECORD", "harvest_festival clear")
-                    say_title(gameforge.harvest_festival._260_sayTitle)
-                    say(gameforge.harvest_festival._790_say)
+                    say_title("[LC;1442]")
+                    say("[LC;1496]")
                     set_state(information)
                     return
                 else
-                    say_title(gameforge.harvest_festival._260_sayTitle)
-                    say(gameforge.harvest_festival._795_say)
+                    say_title("[LC;1442]")
+                    say("[LC;1497]")
                 end -- end of if
 
-                local replay_set = select(gameforge.harvest_festival._380_select,gameforge.harvest_festival._390_select)
+                local replay_set = select("[LC;1454]","[LC;1455]")
 
                 if replay_set == 2 then
                     set_state(information)
@@ -663,16 +663,16 @@ quest harvest_festival begin
 
                 local current_count = quest_count + 1
 
-                say_title(gameforge.harvest_festival._260_sayTitle)
-                say(string.format(gameforge.harvest_festival._400_say,current_count))
+                say_title("[LC;1442]")
+                say(string.format("[LC;1456;%s]",current_count))
                 set_state(mob_kill1)
                 return
             end -- end of if
         end -- end of when
         
         when 20087.click with game.get_event_flag("harvest_festival")>0 begin
-            say(gameforge.harvest_festival._020_sayTitle)
-            say(gameforge.harvest_festival._800_say)
+            say("[LC;1415]")
+            say("[LC;1498]")
         end -- end of when
 
         when 113.kill with pc.getf("harvest_festival","mob2_info") == 1 and party.is_party() begin
@@ -688,7 +688,7 @@ quest harvest_festival begin
 
             if kill_count >= 60 or kill_count < 0 then
 
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- Getting the rice cake
                 local cake_count = pc.getqf("cake_count") + random_rice
                 pc.setqf("cake_count", cake_count)
@@ -712,7 +712,7 @@ quest harvest_festival begin
             q.set_counter("remaining_502", 60 - kill_count);
 
             if kill_count >= 60 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- Getting the rice cake
                 local cake_count = pc.getqf("cake_count") + random_rice
                 pc.setqf("cake_count", cake_count)
@@ -735,7 +735,7 @@ quest harvest_festival begin
             q.set_counter("remaining_703", 60 - kill_count);
 
             if kill_count >= 60 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- Getting the rice cake
                 local cake_count = pc.getqf("cake_count") + random_rice
                 pc.setqf("cake_count", cake_count)
@@ -758,7 +758,7 @@ quest harvest_festival begin
             q.set_counter("remaining_707", 60 - kill_count);
 
             if kill_count >= 60 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- Getting the rice cake
                 local cake_count = pc.getqf("cake_count") + random_rice
                 pc.setqf("cake_count", cake_count)
@@ -783,7 +783,7 @@ quest harvest_festival begin
             if kill_count >= 60 or kill_count < 0 then
 
 
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- Getting the rice cake
                 local cake_count = pc.getqf("cake_count") + random_rice
                 pc.setqf("cake_count", cake_count)
@@ -809,7 +809,7 @@ quest harvest_festival begin
             if kill_count >= 60 or kill_count < 0 then
 
 
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- Getting the rice cake
                 local cake_count = pc.getqf("cake_count") + random_rice
                 pc.setqf("cake_count", cake_count)
@@ -835,7 +835,7 @@ quest harvest_festival begin
             if kill_count >= 60 or kill_count < 0 then
 
 
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- Getting the rice cake
                 local cake_count = pc.getqf("cake_count") + random_rice
                 pc.setqf("cake_count", cake_count)
@@ -860,7 +860,7 @@ quest harvest_festival begin
             q.set_counter("remaining_2403", 60 - kill_count);
 
             if kill_count >= 60 or kill_count < 0 then
-                notice_multiline(string.format(gameforge.harvest_festival._560_notice, random_rice), notice)
+                notice_multiline(string.format("[LC;1472;%s]", random_rice), notice)
                 -- Getting the rice cake
                 local cake_count = pc.getqf("cake_count") + random_rice
                 pc.setqf("cake_count", cake_count)

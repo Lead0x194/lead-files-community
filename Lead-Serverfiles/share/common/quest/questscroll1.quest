@@ -31,7 +31,7 @@ quest questscroll1 begin
 		elseif t == QUEST_SCROLL_TYPE_KILL_ANOTHER_EMPIRE then
 		    --say(special.questscroll[idx][2])
 		    --setstate(kill_another_empire)
-		    --say(gameforge.questscroll1._10_say)
+		    --say("[LC;6743]")
 		    say(table[2])
 		    pc.setqf("idx", idx)
 		    pc.setqf("count", table[5])

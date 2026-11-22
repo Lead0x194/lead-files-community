@@ -1,39 +1,39 @@
 quest horse_upgrade2 begin
 	state start begin
-		when 20349.chat.gameforge.horse_upgrade2._10_npcChat with horse.get_grade()==2 and horse.get_level()==20 begin
+		when 20349.chat."[LC;1724]" with horse.get_grade()==2 and horse.get_level()==20 begin
 			if horse.is_dead() then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._20_say)
+				say_title("[LC;1558]")
+				say("[LC;1735]")
 			elseif pc.level<=49 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._30_say)
+				say_title("[LC;1558]")
+				say("[LC;1746]")
 			elseif horse.get_level()<=19 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._40_say)
+				say_title("[LC;1558]")
+				say("[LC;1758]")
 			elseif pc.countitem("50050")<1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._50_say)
+				say_title("[LC;1558]")
+				say("[LC;1765]")
 				setstate(need_item50050)
 			elseif pc.countitem("50052")<1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._60_say)
+				say_title("[LC;1558]")
+				say("[LC;1766]")
 			elseif horse.get_level()==20 and not horse.is_dead() and pc.countitem("50050")>=1 and pc.level>=50 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._70_say)
-				local b= select(gameforge.find_brother_article._90_select, gameforge.find_brother_article._100_select)
+				say_title("[LC;1558]")
+				say("[LC;1767]")
+				local b= select("[LC;971]", "[LC;931]")
 				if 1==b then
 					if pc.countitem("50050")>=1 then
 						pc.removeitem("50050", 1)
 						setstate(test)
 					end
 				elseif 2==b then
-					say(gameforge.horse_upgrade2._80_say)
+					say("[LC;1768]")
 				else
-					say(string.format(gameforge.buy_fishrod._80_say, b))
+					say(string.format("[LC;53;%s]", b))
 				end
 			else
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._90_say)
+				say_title("[LC;1558]")
+				say("[LC;1769]")
 			end
 		end
 	end
@@ -43,72 +43,72 @@ quest horse_upgrade2 begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_upgrade2._100_makequestbutton)
-			q.set_title(gameforge.horse_upgrade2._100_makequestbutton)
+			makequestbutton("[LC;1723]")
+			q.set_title("[LC;1723]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_upgrade2._100_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._110_sayReward)
+			say_title("[LC;1723]")
+						say_reward("[LC;1725]")
 						setstate(start)
 			q.done()
 		end
 		when info begin
-			say_title(gameforge.horse_upgrade2._100_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._110_sayReward)
+			say_title("[LC;1723]")
+						say_reward("[LC;1725]")
 						setstate(start)
 			q.done()
 		end
-		when 20349.chat.gameforge.horse_upgrade2._10_npcChat with horse.get_grade()==2 and horse.get_level()==20 begin
+		when 20349.chat."[LC;1724]" with horse.get_grade()==2 and horse.get_level()==20 begin
 			if horse.is_dead() then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._20_say)
+				say_title("[LC;1558]")
+				say("[LC;1735]")
 			elseif pc.level<=49 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._30_say)
+				say_title("[LC;1558]")
+				say("[LC;1746]")
 			elseif horse.get_level()<=19 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._40_say)
+				say_title("[LC;1558]")
+				say("[LC;1758]")
 			elseif pc.countitem("50050")<1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._50_say)
+				say_title("[LC;1558]")
+				say("[LC;1765]")
 			elseif pc.countitem("50052")<1 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._60_say)
+				say_title("[LC;1558]")
+				say("[LC;1766]")
 			elseif horse.get_level()==20 and not horse.is_dead() and pc.countitem("50050")>=1 and pc.level>=50 then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._70_say)
-				local b= select(gameforge.find_brother_article._90_select, gameforge.find_brother_article._100_select)
+				say_title("[LC;1558]")
+				say("[LC;1767]")
+				local b= select("[LC;971]", "[LC;931]")
 				if 1==b then
 					if pc.countitem("50050")>=1 then
 						pc.removeitem("50050", 1)
 						setstate(test)
 					end
 				elseif 2==b then
-					say(gameforge.horse_upgrade2._80_say)
+					say("[LC;1768]")
 				else
-					say(string.format(gameforge.buy_fishrod._80_say, b))
+					say(string.format("[LC;53;%s]", b))
 				end
 			else
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._90_say)
+				say_title("[LC;1558]")
+				say("[LC;1769]")
 			end
 		end
 	end
 	state test begin
 		when letter begin
-			q.set_counter(gameforge.horse_upgrade2._test_1002_count, 300-pc.getqf("kill_count"))
+			q.set_counter("[LC;1770]", 300-pc.getqf("kill_count"))
 		end
 		when 1002.party_kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_upgrade2._test_1002_count, 300-pc.getqf("kill_count"))
+			q.set_counter("[LC;1770]", 300-pc.getqf("kill_count"))
 			if get_time()>=pc.getqf("limit_time") then
 				setstate(failure)
 				q.done()
 			end
 		end
 		when letter begin
-			q.set_clock(gameforge.horse_upgrade2.rest_time, pc.getqf("limit_time")-get_time())
+			q.set_clock("[LC;1722]", pc.getqf("limit_time")-get_time())
 		end
 		when enter begin
 			pc.setqf("limit_time", get_time()+30*60)
@@ -119,70 +119,70 @@ quest horse_upgrade2 begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_upgrade2._120_makequestbutton)
-			q.set_title(gameforge.horse_upgrade2._120_makequestbutton)
+			makequestbutton("[LC;1726]")
+			q.set_title("[LC;1726]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_upgrade2._120_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._130_sayReward)
-						say_reward(gameforge.horse_upgrade2._140_sayReward)
+			say_title("[LC;1726]")
+						say_reward("[LC;1727]")
+						say_reward("[LC;1728]")
 					end
 		when info begin
-			say_title(gameforge.horse_upgrade2._120_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._130_sayReward)
-						say_reward(gameforge.horse_upgrade2._140_sayReward)
+			say_title("[LC;1726]")
+						say_reward("[LC;1727]")
+						say_reward("[LC;1728]")
 					end
 		when 1002.party_kill with pc.getqf("kill_count") >= 300 and pc.getqf("limit_time")>=get_time() begin
 			setstate(report)
 		end
-		when 20349.chat.gameforge.horse_upgrade2._150_npcChat begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_upgrade2._160_say)
-			local b= select(gameforge.locale.levelup.prev_quest_go, gameforge.locale.cancel)
+		when 20349.chat."[LC;1729]" begin
+			say_title("[LC;1558]")
+			say("[LC;1730]")
+			local b= select("[LC;2105]", "[LC;1891]")
 			if 1==b then
 			elseif 2==b then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._170_say)
-				local b= select(gameforge.horse_upgrade2._180_select, gameforge.horse_upgrade2._190_select)
+				say_title("[LC;1558]")
+				say("[LC;1731]")
+				local b= select("[LC;1732]", "[LC;1733]")
 				if 1==b then
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.horse_upgrade2._200_say)
+					say_title("[LC;1558]")
+					say("[LC;1734]")
 					setstate(start)
 					q.done()
 				elseif 2==b then
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.horse_upgrade2._210_say)
+					say_title("[LC;1558]")
+					say("[LC;1736]")
 				else
-					say(string.format(gameforge.horse_upgrade2._220_say, b))
+					say(string.format("[LC;1737;%s]", b))
 				end
 			else
-				say(string.format(gameforge.horse_upgrade2._220_say, b))
+				say(string.format("[LC;1737;%s]", b))
 			end
 		end
 	end
 	state report begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_upgrade2._230_makequestbutton)
-			q.set_title(gameforge.horse_upgrade2._230_makequestbutton)
+			makequestbutton("[LC;1738]")
+			q.set_title("[LC;1738]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_upgrade2._230_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._240_sayReward)
+			say_title("[LC;1738]")
+						say_reward("[LC;1739]")
 					end
 		when info begin
-			say_title(gameforge.horse_upgrade2._230_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._240_sayReward)
+			say_title("[LC;1738]")
+						say_reward("[LC;1739]")
 					end
-		when 20349.chat.gameforge.horse_upgrade2._250_npcChat with horse.get_grade()!=2 begin
+		when 20349.chat."[LC;1740]" with horse.get_grade()!=2 begin
 			setstate(start)
 			q.done()
 		end
-		when 20349.chat.gameforge.horse_upgrade2._260_npcChat with horse.get_grade()==2 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_upgrade2._270_say)
+		when 20349.chat."[LC;1741]" with horse.get_grade()==2 begin
+			say_title("[LC;1558]")
+			say("[LC;1742]")
 			if is_test_server() then
 				pc.setqf("make_time", get_time()+10)
 			else
@@ -194,57 +194,57 @@ quest horse_upgrade2 begin
 	state wait begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_upgrade2._280_makequestbutton)
-			q.set_title(gameforge.horse_upgrade2._280_makequestbutton)
+			makequestbutton("[LC;1743]")
+			q.set_title("[LC;1743]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_upgrade2._280_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._290_sayReward)
+			say_title("[LC;1743]")
+						say_reward("[LC;1744]")
 					end
 		when info begin
-			say_title(gameforge.horse_upgrade2._280_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._290_sayReward)
+			say_title("[LC;1743]")
+						say_reward("[LC;1744]")
 					end
 		when login with get_time()>=pc.getqf("make_time") begin
 			setstate(buy)
 		end
-		when 20349.chat.gameforge.horse_upgrade2._300_npcChat with horse.get_grade()!=2 begin
+		when 20349.chat."[LC;1745]" with horse.get_grade()!=2 begin
 			setstate(start)
 			q.done()
 		end
-		when 20349.chat.gameforge.horse_upgrade2._310_npcChat with horse.get_grade()==2 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_upgrade2._320_say)
+		when 20349.chat."[LC;1747]" with horse.get_grade()==2 begin
+			say_title("[LC;1558]")
+			say("[LC;1748]")
 		end
 	end
 	state buy begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_upgrade2._330_makequestbutton)
-			q.set_title(gameforge.horse_upgrade2._330_makequestbutton)
+			makequestbutton("[LC;1749]")
+			q.set_title("[LC;1749]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_upgrade2._330_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._340_sayReward)
+			say_title("[LC;1749]")
+						say_reward("[LC;1750]")
 					end
 		when info begin
-			say_title(gameforge.horse_upgrade2._330_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._340_sayReward)
+			say_title("[LC;1749]")
+						say_reward("[LC;1750]")
 					end
-		when 20349.chat.gameforge.horse_upgrade2._300_npcChat with horse.get_grade()!=2 begin
+		when 20349.chat."[LC;1745]" with horse.get_grade()!=2 begin
 			setstate(start)
 			q.done()
 		end
-		when 20349.chat.gameforge.horse_upgrade2._300_npcChat with horse.get_grade()==2 and horse.get_level()!=20 begin
+		when 20349.chat."[LC;1745]" with horse.get_grade()==2 and horse.get_level()!=20 begin
 			setstate(start)
 			q.done()
 		end
-		when 20349.chat.gameforge.horse_upgrade2._350_npcChat with horse.get_grade()==2 and horse.get_level()==20 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_upgrade2._360_say)
-			local b= select(gameforge.horse_upgrade2._370_select, gameforge.horse_upgrade2._380_select, gameforge.horse_upgrade2._385_select)
+		when 20349.chat."[LC;1751]" with horse.get_grade()==2 and horse.get_level()==20 begin
+			say_title("[LC;1558]")
+			say("[LC;1752]")
+			local b= select("[LC;1753]", "[LC;1754]", "[LC;1755]")
 			if 1==b then
 				if pc.money>=1000000 then
 					if pc.countitem("50052")>=1 then
@@ -262,54 +262,54 @@ quest horse_upgrade2 begin
 						pc.give_item2("50060", 1)
 						char_log(0, "HORSE_UPGRADE2", "INC 50060 1")
 						char_log(0, "HORSE_UPGRADE2", "END")
-						say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-						say(gameforge.horse_upgrade2._390_say)
+						say_title("[LC;1558]")
+						say("[LC;1756]")
 						setstate(start)
 						q.done()
 					else
-						say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-						say(gameforge.horse_upgrade2._400_say)
+						say_title("[LC;1558]")
+						say("[LC;1757]")
 					end
 				else
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.horse_upgrade2._410_say)
+					say_title("[LC;1558]")
+					say("[LC;1759]")
 				end
 			elseif 2==b then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._420_say)
+				say_title("[LC;1558]")
+				say("[LC;1760]")
 			elseif 3==b then
-				say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-				say(gameforge.horse_upgrade2._430_say)
-				local b= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say_title("[LC;1558]")
+				say("[LC;1761]")
+				local b= select("[LC;2059]", "[LC;2035]")
 				if 1==b then
 					setstate(start)
 				elseif 2==b then
 				else
-					say(string.format(gameforge.find_squareguard._70_say, b))
+					say(string.format("[LC;1020;%s]", b))
 				end
 			else
-				say(string.format(gameforge.find_squareguard._70_say, b))
+				say(string.format("[LC;1020;%s]", b))
 			end
 		end
 	end
 	state failure begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_upgrade2._440_makequestbutton)
-			q.set_title(gameforge.horse_upgrade2._440_makequestbutton)
+			makequestbutton("[LC;1762]")
+			q.set_title("[LC;1762]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_upgrade2._440_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._450_sayReward)
-						say_reward(gameforge.horse_upgrade2._460_sayReward)
+			say_title("[LC;1762]")
+						say_reward("[LC;1763]")
+						say_reward("[LC;1764]")
 						setstate(start)
 			q.done()
 		end
 		when info begin
-			say_title(gameforge.horse_upgrade2._440_makequestbutton)
-						say_reward(gameforge.horse_upgrade2._450_sayReward)
-						say_reward(gameforge.horse_upgrade2._460_sayReward)
+			say_title("[LC;1762]")
+						say_reward("[LC;1763]")
+						say_reward("[LC;1764]")
 						setstate(start)
 			q.done()
 		end

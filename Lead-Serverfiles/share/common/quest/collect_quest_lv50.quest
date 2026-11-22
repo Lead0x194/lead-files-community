@@ -11,27 +11,27 @@ quest collect_quest_lv50  begin
 		when letter begin
 			local v = find_npc_by_vnum(20084)
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.collect_herb_lv10._150_sayTitle)
+				target.vid("__TARGET__", v, "[LC;128]")
 			end
-			send_letter(gameforge.collect_quest_lv50._10_sendLetter)
+			send_letter("[LC;296]")
 		end
 
 		when button or info begin
-			say_title(gameforge.collect_quest_lv50._20_sayTitle)
-			say(gameforge.collect_quest_lv50._30_say)
+			say_title("[LC;308]")
+			say("[LC;320]")
 		end
 
 		when __TARGET__.target.click or
-			20084.chat.gameforge.collect_quest_lv50._40_npcChat begin
+			20084.chat."[LC;324]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.collect_herb_lv10._50_sayTitle)
-			say(gameforge.collect_quest_lv50._50_say)
+			say_title("[LC;138]")
+			say("[LC;325]")
 			wait()
-			say_title(gameforge.collect_herb_lv10._50_sayTitle)
-			say(gameforge.collect_quest_lv50._60_say)
+			say_title("[LC;138]")
+			say("[LC;326]")
 			wait()
-			say_title(gameforge.collect_herb_lv10._50_sayTitle)
-			say(gameforge.collect_quest_lv50._70_say)
+			say_title("[LC;138]")
+			say("[LC;327]")
 			set_state(go_to_disciple)
 			pc.setqf("duration",0)  -- Versuchszeit
 			pc.setqf("collect_count",0)--die zahl der gesammelten artikel
@@ -41,28 +41,28 @@ quest collect_quest_lv50  begin
 
 	state go_to_disciple begin
 		when letter begin
-			send_letter(gameforge.collect_quest_lv50._80_sendLetter)
+			send_letter("[LC;328]")
 
 		end
 		when button or info begin
-			say_title(gameforge.collect_quest_lv50._90_sayTitle)
-			say(gameforge.collect_quest_lv50._100_say)
+			say_title("[LC;329]")
+			say("[LC;295]")
 			say_item_vnum(30015)
-			say_reward(string.format(gameforge.collect_quest_lv50._110_sayReward, pc.getqf("collect_count")))
+			say_reward(string.format("[LC;297;%s]", pc.getqf("collect_count")))
 					end
 
 		when 71035.use begin --Das Verwirrungswasser
 			if get_time() < pc.getqf("duration") then
-				say(gameforge.collect_quest_lv50._120_say)
+				say("[LC;298]")
 				return
 			end
 			if pc.getqf("drink_drug")==1 then
-				say(gameforge.collect_quest_lv50._130_say)
+				say("[LC;299]")
 				return
 			end
 			if pc.count_item(30015)==0 then
-				say_title(gameforge.collect_herb_lv10._50_sayTitle)
-				say(gameforge.collect_quest_lv50._140_say)
+				say_title("[LC;138]")
+				say("[LC;300]")
 				return
 			end
 
@@ -72,11 +72,11 @@ quest collect_quest_lv50  begin
 
 
 
-		when 20084.chat.gameforge.collect_quest_lv50._150_npcChat with pc.count_item(30015) >0   begin
+		when 20084.chat."[LC;301]" with pc.count_item(30015) >0   begin
 			if get_time() > pc.getqf("duration") then
 				if  pc.count_item(30015) >0 then
-					say_title(gameforge.collect_herb_lv10._50_sayTitle)
-					say(gameforge.collect_quest_lv50._160_say)
+					say_title("[LC;138]")
+					say("[LC;302]")
 					pc.remove_item(30015, 1)
 					pc.setqf("duration",get_time()+60*60*22) ----------------22Stunden
 					wait()
@@ -93,34 +93,34 @@ quest collect_quest_lv50  begin
 						if pc.getqf("collect_count")< 14 then     --nicht mehr als 15
 							local index =pc.getqf("collect_count")+1
 							pc.setqf("collect_count",index)     --da du eins besorgst hast, mache ich +1
-							say_title(gameforge.collect_herb_lv10._50_sayTitle)
-							say(string.format(gameforge.collect_quest_lv50._170_say, 15-pc.getqf("collect_count")))
+							say_title("[LC;138]")
+							say(string.format("[LC;303;%s]", 15-pc.getqf("collect_count")))
 							pc.setqf("drink_drug",0)	 --Anfang mit dem Verwirrungswasser
 							return
 						end
-						say_title(gameforge.collect_herb_lv10._50_sayTitle)
-						say(gameforge.collect_quest_lv50._180_say)
+						say_title("[LC;138]")
+						say("[LC;304]")
 						pc.setqf("collect_count",0)
 						pc.setqf("drink_drug",0)
 						pc.setqf("duration",0)
 						set_state(key_item)
 						return
 					else
-						say_title(gameforge.collect_herb_lv10._50_sayTitle)
-						say(gameforge.collect_quest_lv50._190_say)
+						say_title("[LC;138]")
+						say("[LC;305]")
 						pc.setqf("drink_drug",0)	 --Anfang mit dem Verwirrungswasser
 						return
 					end
 
 				else
-					say_title(gameforge.collect_herb_lv10._50_sayTitle)
-					--say(string.format(gameforge.collect_quest_lv30._190_say, item_name(30015)))
-					say(gameforge.collect_quest_lv50._195_say)
+					say_title("[LC;138]")
+					--say(string.format("[LC;231]", item_name(30015)))
+					say("[LC;306]")
 					return
 				end
 			else
-				say_title(gameforge.collect_herb_lv10._50_sayTitle)
-				say(gameforge.collect_quest_lv50._200_say)
+				say_title("[LC;138]")
+				say("[LC;307]")
 				return
 			end
 
@@ -130,27 +130,27 @@ quest collect_quest_lv50  begin
 
 	state key_item begin
 		when letter begin
-			send_letter(gameforge.collect_quest_lv50._210_sendLetter)
+			send_letter("[LC;309]")
 
 			if pc.count_item(30222)>0 then
 				local v = find_npc_by_vnum(20084)
 				if v != 0 then
-					target.vid("__TARGET__", v, gameforge.collect_herb_lv10._150_sayTitle)
+					target.vid("__TARGET__", v, "[LC;128]")
 				end
 			end
 
 		end
 		when button or info begin
 			if pc.count_item(30222) >0 then
-				say_title(gameforge.collect_quest_lv50._220_sayTitle)
-				say(gameforge.collect_quest_lv50._230_say)
+				say_title("[LC;310]")
+				say("[LC;311]")
 				return
 			end
 
-			say_title(gameforge.collect_herb_lv10._50_sayTitle)
-			say(gameforge.collect_quest_lv50._240_say)
+			say_title("[LC;138]")
+			say("[LC;312]")
 			say_item_vnum(30222)----------Das Geisstein der Schlangegeist
-			say(gameforge.collect_quest_lv50._250_say)
+			say("[LC;313]")
 		end
 
 
@@ -161,7 +161,7 @@ quest collect_quest_lv50  begin
 			local s = number(1, 500)
 			if s == 1 and pc.count_item(30222)==0 then
 				pc.give_item2(30222, 1)
-				send_letter(gameforge.collect_quest_lv50._260_sendLetter)
+				send_letter("[LC;314]")
 			end
 		end
 
@@ -169,18 +169,18 @@ quest collect_quest_lv50  begin
 
 
 		when __TARGET__.target.click  or
-			20084.chat.gameforge.collect_quest_lv50._270_npcChat with pc.count_item(30222) > 0  begin
+			20084.chat."[LC;315]" with pc.count_item(30222) > 0  begin
 			target.delete("__TARGET__")
-			say_title(gameforge.collect_herb_lv10._50_sayTitle)
+			say_title("[LC;138]")
 			if pc.count_item(30222) > 0 then 
-				say(gameforge.collect_quest_lv50._280_say)
+				say("[LC;316]")
 				pc.remove_item(30222,1)
 				set_state(__reward)
 
 			else
-				say_title(gameforge.collect_herb_lv10._50_sayTitle)
-				--say(string.format(gameforge.collect_quest_lv30._290_say, item_name(30222)))
-				say(gameforge.collect_quest_lv50._295_say)
+				say_title("[LC;138]")
+				--say(string.format("[LC;242]", item_name(30222)))
+				say("[LC;318]")
 				return
 			end
 		end
@@ -189,25 +189,25 @@ quest collect_quest_lv50  begin
 
 	state __reward begin
 		when letter begin
-			send_letter(gameforge.collect_quest_lv50._290_sendLetter)
+			send_letter("[LC;317]")
 
 			local v = find_npc_by_vnum(20018)
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.collect_quest_lv30._310_targetVid)
+				target.vid("__TARGET__", v, "[LC;245]")
 			end
 
 		end
 		when button or info begin
-			say_title(gameforge.collect_quest_lv50._300_sayTitle)
-			say(gameforge.collect_quest_lv50._310_say)
+			say_title("[LC;319]")
+			say("[LC;321]")
 		end
 
 		when __TARGET__.target.click  or
-			20018.chat.gameforge.collect_quest_lv30._330_npcChat  begin
+			20018.chat."[LC;247]"  begin
 		    target.delete("__TARGET__")
-			say_title(gameforge.collect_quest_lv30._340_sayTitle)
-			say(gameforge.collect_quest_lv50._320_say)
-			say_reward(gameforge.collect_quest_lv50._330_sayReward)
+			say_title("[LC;248]")
+			say("[LC;322]")
+			say_reward("[LC;323]")
 						affect.add_collect(apply.DEF_GRADE_BONUS,60,60*60*24*365*60) --60Jahre
 
 			pc.give_item2(50111)

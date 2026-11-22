@@ -93,12 +93,12 @@ quest devilcatacomb_zone begin
 				d.set_warp_location (0, 0, 0)
 					
 				if level == 2 then
-					say(gameforge.devilcatacomb_zone._10_say)
-					say(string.format(gameforge.devilcatacomb_zone._20_say, 60))
+					say("[LC;644]")
+					say(string.format("[LC;655;%s]", 60))
 				elseif level == pc.getqf ("level") then
-					say(gameforge.devilcatacomb_zone._30_say)
+					say("[LC;666]")
 				else
-					say(gameforge.devilcatacomb_zone._40_say)
+					say("[LC;671]")
 					timer ("devilcatacomb_ban_timer", 5)
 				end
 			end
@@ -110,12 +110,12 @@ quest devilcatacomb_zone begin
 					or pc.get_y() > setting.floor1_e.y + setting.base.y
 				then
 --					if not is_test_server() then
-						say(gameforge.devilcatacomb_zone._40_say)
+						say("[LC;671]")
 						timer ("devilcatacomb_ban_timer", 5)
 --					end
 				else 
 --					pc.set_warp_location(65, 5914, 992)
-					say(gameforge.devilcatacomb_zone._50_say)
+					say("[LC;672]")
 				end
 			end
 		end
@@ -135,30 +135,30 @@ quest devilcatacomb_zone begin
 		when warp_timer.timer begin
 			local level = d.getf("level")
 			local level_switch = {
-				[3] = gameforge.devilcatacomb_zone._60_say,
-				[4] = gameforge.devilcatacomb_zone._70_say,
-				[5] = gameforge.devilcatacomb_zone._80_say,
-				[6] = gameforge.devilcatacomb_zone._90_say,
+				[3] = "[LC;673]",
+				[4] = "[LC;674]",
+				[5] = "[LC;675]",
+				[6] = "[LC;676]",
 			}
 			local t = 3600 -(get_global_time() - d.getf("enter_time"))
 			local t_r = math.mod (t, 60)
 			local t_m = (t - t_r) / 60
 			d.notice ( level_switch[level] )
-			d.notice(string.format(gameforge.devilcatacomb_zone._20_say, t_m))
+			d.notice(string.format("[LC;655;%s]", t_m))
 			d.set_warp_location (0, 0, 0)
 		end
 
-		when devilcatacomb_man.chat.gameforge.devilcatacomb_zone._100_npcChat with not devilcatacomb_zone.is_closed() begin
+		when devilcatacomb_man.chat."[LC;643]" with not devilcatacomb_zone.is_closed() begin
 			local setting = devilcatacomb_zone.setting()
 			if pc.get_level() < 75 then
-				say(gameforge.devilcatacomb_zone._110_say)
+				say("[LC;645]")
 			elseif pc.getf("deviltower_zone","9_done") == 0 then
-				say(gameforge.devilcatacomb_zone._120_say)
+				say("[LC;646]")
 			elseif ((get_global_time() - pc.getf("devilcatacomb_zone","last_exit_time")) < 1800) then
-				say(gameforge.devilcatacomb_zone._130_say)
+				say("[LC;647]")
 			else
-				say(gameforge.devilcatacomb_zone._140_say)
-				local s = select(gameforge.devilcatacomb_zone._150_select, gameforge.devilcatacomb_zone._160_select)
+				say("[LC;648]")
+				local s = select("[LC;649]", "[LC;650]")
 				if s == 1 then
 					pc.warp ((setting.floor1_entry.x + setting.base.x )* 100, (setting.floor1_entry.y + setting.base.y) * 100)
 				end
@@ -197,17 +197,17 @@ quest devilcatacomb_zone begin
 		
 			if item.vnum == setting.rag then 
 				if not party.is_party() then
-					say(gameforge.devilcatacomb_zone._170_say)
+					say("[LC;651]")
 					return
 				elseif party.is_in_dungeon() then
-					say(gameforge.devilcatacomb_zone._180_say)
+					say("[LC;652]")
 					return
 				end
 
 				item.remove()
-				say(gameforge.devilcatacomb_zone._190_say)
+				say("[LC;653]")
 				wait()
-				say(gameforge.devilcatacomb_zone._200_say)
+				say("[LC;654]")
 				wait()
 				d.new_jump_party (setting.map_idx, setting.floor2_entry.x + setting.base.x  , setting.floor2_entry.y + setting.base.y )
 				d.setqf2("devilcatacomb_zone","level", 2)
@@ -225,42 +225,42 @@ quest devilcatacomb_zone begin
 		
 		when devilcatacomb_45m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				d.notice(string.format(gameforge.devilcatacomb_zone._20_say, 45))
+				d.notice(string.format("[LC;655;%s]", 45))
 				server_timer('devilcatacomb_30m_left_timer', 60 * 15, get_server_timer_arg())
 			end
 		end
 
 		when devilcatacomb_30m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				d.notice(string.format(gameforge.devilcatacomb_zone._20_say, 30))
+				d.notice(string.format("[LC;655;%s]", 30))
 				server_timer('devilcatacomb_15m_left_timer', 60 * 15, get_server_timer_arg())
 			end
 		end
 	
 		when devilcatacomb_15m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				d.notice(string.format(gameforge.devilcatacomb_zone._20_say, 15))
+				d.notice(string.format("[LC;655;%s]", 15))
 				server_timer('devilcatacomb_5m_left_timer', 60 * 10, get_server_timer_arg())
 			end
 		end
 
 		when devilcatacomb_5m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				d.notice(string.format(gameforge.devilcatacomb_zone._20_say, 5))
+				d.notice(string.format("[LC;655;%s]", 5))
 				server_timer('devilcatacomb_1m_left_timer', 60 * 4, get_server_timer_arg())
 			end
 		end
 		
 		when devilcatacomb_1m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				d.notice(string.format(gameforge.devilcatacomb_zone._20_say, 1))
+				d.notice(string.format("[LC;655;%s]", 1))
 				server_timer ("devilcatacomb_0m_left_timer", 60 * 1, get_server_timer_arg())
 			end
 		end
 		
 		when devilcatacomb_0m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				d.notice (gameforge.devilcatacomb_zone._210_dNotice)
+				d.notice ("[LC;656]")
 				d.set_warp_location (65, 5914, 992)
 				server_timer('devilcatacomb_exit_timer', 7, get_server_timer_arg())
 			end
@@ -294,26 +294,26 @@ quest devilcatacomb_zone begin
 			
 			if d.getf("devilcatacomb_floor2_stone_clicked") == 0 then
 				if not devilcatacomb_zone.is_dc2_doors_clear () then
-					say(gameforge.devilcatacomb_zone._220_say)
+					say("[LC;657]")
 					wait ()
 					return
 				end
-				say(gameforge.devilcatacomb_zone._230_say)
+				say("[LC;658]")
 				wait()
-				say(gameforge.devilcatacomb_zone._240_say)
+				say("[LC;659]")
 				wait()
-				local s = select(gameforge.devilcatacomb_zone._150_select, gameforge.devilcatacomb_zone._160_select)
+				local s = select("[LC;649]", "[LC;650]")
 				if s == 1 then
 					if d.getf("devilcatacomb_floor2_stone_clicked") == 0 then
 						d.setf("devilcatacomb_floor2_stone_clicked", 1)
 						d.setqf2("devilcatacomb_zone","last_exit_time", get_global_time())
 						d.set_item_group ("reapers_credit", 3, setting.reapers_credit3, 1, setting.reapers_credit2, 1, setting.reapers_credit1, 1)
-						d.say_diff_by_item_group("reapers_credit", gameforge.devilcatacomb_zone._250_say, gameforge.devilcatacomb_zone._260_say)
+						d.say_diff_by_item_group("reapers_credit", "[LC;660]", "[LC;661]")
 						timer ("devilcatacomb_floor3_enter_timer", 7)
 					end
 				end
 			else
-				say(gameforge.devilcatacomb_zone._270_say)
+				say("[LC;662]")
 			end
 		end
 		
@@ -351,13 +351,13 @@ quest devilcatacomb_zone begin
 		when devilcatacomb3_stone.kill begin
 			local setting = devilcatacomb_zone.setting()
 			if d.is_unique_dead("real") then
-				d.notice(gameforge.devilcatacomb_zone._280_dNotice)
+				d.notice("[LC;663]")
 				
 				d.setf ("level",4)
 				d.setqf2("devilcatacomb_zone","level", 4)
 				timer ("devilcatacomb_floor4_enter_timer", 3)
 			else
-				d.notice(gameforge.devilcatacomb_zone._290_dNotice)
+				d.notice("[LC;664]")
 			end
 		end
 
@@ -378,7 +378,7 @@ quest devilcatacomb_zone begin
 		when devilcatacomb_floor4_stone.click begin
 			local setting = devilcatacomb_zone.setting()
 			local n = number (1,5)
-			say(gameforge.devilcatacomb_zone._300_say)
+			say("[LC;665]")
 			wait()
 			if (is_test_server()) then
 				-- devil_king pos
@@ -403,7 +403,7 @@ quest devilcatacomb_zone begin
 			local setting = devilcatacomb_zone.setting()
 			if item.vnum == setting.unlock_stone then
 				item.remove ()
-				d.notice(gameforge.devilcatacomb_zone._310_dNotice)
+				d.notice("[LC;667]")
 				d.clear_regen()
 				d.purge()
 				timer("devilcatacomb_floor6_timer",2)
@@ -427,7 +427,7 @@ quest devilcatacomb_zone begin
 		when floor6_eli_check_timer_1.server_timer begin
 			if d.select(get_server_timer_arg()) then
 				if d.count_monster() == 0 then
-					say_in_map (get_server_timer_arg(), gameforge.devilcatacomb_zone._320_say)
+					say_in_map (get_server_timer_arg(), "[LC;668]")
 					server_timer ("devilcatacomb_floor7_timer", 3, get_server_timer_arg())
 				else
 					server_timer ("floor6_eli_check_timer_2", 5, get_server_timer_arg())
@@ -438,7 +438,7 @@ quest devilcatacomb_zone begin
 		when floor6_eli_check_timer_2.server_timer begin
 			if d.select(get_server_timer_arg()) then
 				if d.count_monster() == 0 then
-					say_in_map (get_server_timer_arg(), gameforge.devilcatacomb_zone._320_say)
+					say_in_map (get_server_timer_arg(), "[LC;668]")
 					server_timer("devilcatacomb_floor7_timer", 3, get_server_timer_arg())
 				else
 					server_timer ("floor6_eli_check_timer_1", 5, get_server_timer_arg())
@@ -465,8 +465,8 @@ quest devilcatacomb_zone begin
 				local t = 3600 -(get_global_time() - d.getf("enter_time"))
 				local t_r = math.mod (t, 60)
 				local t_m = (t - t_r) / 60
-				d.notice(gameforge.devilcatacomb_zone._330_dNotice)
-				d.notice(string.format(gameforge.devilcatacomb_zone._20_say, t_m))
+				d.notice("[LC;669]")
+				d.notice(string.format("[LC;655;%s]", t_m))
 				d.set_warp_location (0, 0, 0)
 			end
 		end
@@ -480,7 +480,7 @@ quest devilcatacomb_zone begin
 				if d.count_monster() == 0 then
 					d.set_warp_location (65, 5914, 992)
 					d.setqf2("devilcatacomb_zone","done", 1)
-					say_in_map (get_server_timer_arg(), gameforge.devilcatacomb_zone._340_say)
+					say_in_map (get_server_timer_arg(), "[LC;670]")
 					clear_server_timer ("devilcatacomb_0m_left_timer", get_server_timer_arg())
 					server_timer("devilcatacomb_exit_timer", 60, get_server_timer_arg())
 				else
@@ -494,7 +494,7 @@ quest devilcatacomb_zone begin
 				if d.count_monster() == 0 then
 					d.set_warp_location (65, 5914, 992)
 					d.setqf2("devilcatacomb_zone","done", 1)
-					say_in_map (get_server_timer_arg(), gameforge.devilcatacomb_zone._340_say)
+					say_in_map (get_server_timer_arg(), "[LC;670]")
 					clear_server_timer ("devilcatacomb_0m_left_timer", get_server_timer_arg())
 					server_timer("devilcatacomb_exit_timer", 60, get_server_timer_arg())
 				else

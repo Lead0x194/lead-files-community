@@ -1,14 +1,14 @@
 quest energy_system begin
 	state start begin
-		when alchemist.chat.gameforge.energy_system._001_npcChat begin
+		when alchemist.chat."[LC;796]" begin
 			say_title(mob_name(20001)) 
-			say(gameforge.energy_system._010_say)
+			say("[LC;797]")
 			wait()
 			say_title(mob_name(20001)) 
-			say(gameforge.energy_system._020_say)
+			say("[LC;798]")
 			wait()
 			say_title(mob_name(20001)) 
-			say(gameforge.energy_system._030_say)
+			say("[LC;799]")
 			setstate(can_make)
 		end
 	end
@@ -38,26 +38,26 @@ quest energy_system begin
 			return 0
 		end
 
-		when alchemist.chat.gameforge.energy_system._035_npcChat begin
+		when alchemist.chat."[LC;800]" begin
 			say_title(mob_name(20001)) 
-			say(gameforge.energy_system._040_say)
+			say("[LC;801]")
 			wait()
 			say_title(mob_name(20001)) 
-			say(gameforge.energy_system._050_say)
+			say("[LC;802]")
 			wait()
 			if pc.get_level() < 35 then 
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._060_say)
+				say("[LC;803]")
 			else
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._070_say)
+				say("[LC;804]")
 			end
 		end
 
 		when alchemist.take begin
 			if pc.get_level() < 35 then 
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._080_say)
+				say("[LC;805]")
 				return
 			end
 			local item_vnum = item.vnum
@@ -66,20 +66,20 @@ quest energy_system begin
 			
 			if levelLimit == nil then
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._090_say)
+				say("[LC;806]")
 				wait()
 			elseif item.get_type() == ITEM_WEAPON and item.get_sub_type() == WEAPON_ARROW then
 				say_title (mob_name(20001)) 
-				say (gameforge.energy_system._090_say)
+				say ("[LC;806]")
 				wait()
 			elseif levelLimit < 35 then
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._100_say)
+				say("[LC;807]")
 			else
 				say_title(mob_name(20001)) 
 				say(item_name(item_vnum))
-				say(gameforge.energy_system._110_say)
-				local s = select (gameforge.energy_system._120_select,gameforge.energy_system._130_select)
+				say("[LC;808]")
+				local s = select ("[LC;809]","[LC;810]")
 				if s == 1 then
 					item.remove()
 					local r = number(1, 100)
@@ -93,52 +93,52 @@ quest energy_system begin
 					end
 					if (n == 0) then
 						say_title(mob_name(20001)) 
-						say(gameforge.energy_system._140_say)
+						say("[LC;811]")
 					else
 						pc.give_item2(setting.energy_stone, n)
 						say_title(mob_name(20001)) 
-						say(string.format(gameforge.energy_system._150_say,n))
+						say(string.format("[LC;812;%d]",n))
 					end
 				end
 			end
 		end
 
-		when alchemist.chat.gameforge.energy_system._160_npcChat begin
+		when alchemist.chat."[LC;813]" begin
 			local setting = energy_system.setting()
 			local need = 30
 			say_title(mob_name(20001)) 
-			say(string.format(gameforge.energy_system._170_say,need))
+			say(string.format("[LC;814;%d]",need))
 			wait()
 			
 			if pc.get_level() < 35 then 
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._060_say)
+				say("[LC;803]")
 				return
 			end
 			
 			if pc.count_item(setting.energy_stone) < need then
 				say_title(mob_name(20001)) 
-				say(string.format(gameforge.energy_system._180_say,need))
+				say(string.format("[LC;815;%d]",need))
 				return
 			else
 				say_title(mob_name(20001)) 
-				say(string.format(gameforge.energy_system._190_say, need))
+				say(string.format("[LC;816;%d]", need))
 				wait()
 			end
 			
 			local charge = 1000
 			say_title(mob_name(20001)) 
-			say(string.format(gameforge.energy_system._200_say, charge))
-			local s = select (gameforge.energy_system._210_select,gameforge.energy_system._220_select)
+			say(string.format("[LC;817;%d]", charge))
+			local s = select ("[LC;818]","[LC;819]")
 			if s == 2 then
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._230_say)
+				say("[LC;820]")
 				return
 			end
 
 			if pc.get_gold() < charge then
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._240_say)
+				say("[LC;821]")
 				return
 			end
 			
@@ -151,7 +151,7 @@ quest energy_system begin
 
 			if pc.getqf("hasExperience") == 0 then
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._250_say)
+				say("[LC;822]")
 				pc.give_item2 (setting.charging_stone, 1)
 				pc.setqf("hasExperience", 1)
 				return
@@ -160,11 +160,11 @@ quest energy_system begin
 			local r = number (1, 100)
 			if r > 30 then
 				say_title(mob_name(20001)) 
-				say(gameforge.energy_system._260_say)
+				say("[LC;823]")
 				return
 			end
 			say_title(mob_name(20001)) 
-			say(gameforge.energy_system._270_say)
+			say("[LC;824]")
 			pc.give_item2(setting.charging_stone, 1)
 
 		end
