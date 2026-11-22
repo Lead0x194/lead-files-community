@@ -56,7 +56,6 @@ class CPythonNonPlayer : public CSingleton<CPythonNonPlayer>
 		{
 			DWORD       dwVnum;
 			char        szName[CHARACTER_NAME_MAX_LEN + 1]; 
-			char        szLocaleName[CHARACTER_NAME_MAX_LEN + 1];
 
 			BYTE        bType;                  // Monster, NPC
 			BYTE        bRank;                  // PAWN, KNIGHT, KING

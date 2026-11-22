@@ -212,7 +212,7 @@ void CItemData::__SetIconImage(const char * c_szFileName)
 void CItemData::SetItemTableData(TItemTable * pItemTable)
 {
 	memcpy(&m_ItemTable, pItemTable, sizeof(TItemTable));
-	m_strName = m_ItemTable.szLocaleName;
+	m_strName = m_ItemTable.szName;
 }
 
 const CItemData::TItemTable* CItemData::GetTable() const
