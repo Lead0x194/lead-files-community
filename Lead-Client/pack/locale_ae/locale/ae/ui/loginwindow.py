@@ -92,7 +92,7 @@ window = {
 					"x" : 77,
 					"y" : 16,
 
-					"width" : 120,
+					"width" : 112,
 					"height" : 18,
 
 					"input_limit" : 16,
@@ -110,7 +110,7 @@ window = {
 					"x" : 77,
 					"y" : 43,
 
-					"width" : 120,
+					"width" : 112,
 					"height" : 18,
 
 					"input_limit" : 16,
