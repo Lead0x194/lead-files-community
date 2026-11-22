@@ -8,5 +8,5 @@ vnum = 11004
 end 
 local v = find_npc_by_vnum ( vnum ) 
 if v ~= 0 then 
-target . vid ( "__TARGET__" , v , gameforge . subquest_12 . _10_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;7291]" ) 
 end 

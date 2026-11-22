@@ -1,4 +1,4 @@
 say_pc_name ( ) 
-say ( gameforge . main_quest_lv55 . _60_say ) 
+say ( "[LC;4496]" ) 
 pc . give_item2 ( 30150 ) 
 set_state ( "gototeacher8" ) 

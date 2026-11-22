@@ -1,4 +1,4 @@
-if pc . level >= 30 then send_letter ( gameforge . dragon_soul . _1010_sendLetter ) 
+if pc . level >= 30 then send_letter ( "[LC;763]" ) 
 local v = find_npc_by_vnum ( 20001 ) 
 if 0 ~= v then 
 target . vid ( "__TARGET__" , v , mob_name ( 20001 ) ) 

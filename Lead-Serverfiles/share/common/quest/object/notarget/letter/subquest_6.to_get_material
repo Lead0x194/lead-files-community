@@ -1,19 +1,19 @@
-send_letter ( gameforge . subquest_06 . _210_sendLetter ) 
+send_letter ( "[LC;7118]" ) 
 if pc . getqf ( "leather_done" ) ~= 1 then 
 local v = find_npc_by_vnum ( 20008 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET1__" , v , gameforge . subquest_06 . _230_targetVid ) 
+target . vid ( "__TARGET1__" , v , "[LC;7126]" ) 
 end 
 end 
 if pc . getqf ( "ironore_done" ) ~= 1 then 
 local v = find_npc_by_vnum ( 20011 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET2__" , v , gameforge . subquest_06 . _240_targetVid ) 
+target . vid ( "__TARGET2__" , v , "[LC;7127]" ) 
 end 
 end 
 if pc . getqf ( "coal_done" ) ~= 1 then 
 local v = find_npc_by_vnum ( 20005 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET3__" , v , gameforge . subquest_06 . _250_targetVid ) 
+target . vid ( "__TARGET3__" , v , "[LC;7128]" ) 
 end 
 end 

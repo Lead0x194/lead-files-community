@@ -13,7 +13,7 @@ pc . setqf ( "Tear4Taken" , 1 )
 pc . setqf ( "Tear5Taken" , 1 ) 
 pc . setqf ( "Tear6Taken" , 1 ) 
 pc . setqf ( "Tear7Taken" , 1 ) 
-notice_multiline ( gameforge . heavens_cave_keyquest . _250_notice , notice ) 
+notice_multiline ( "[LC;1532]" , notice ) 
 if pc . count_item ( pc . getqf ( "heavens_cave_keyquest_VolcanicGlass" ) ) >= pc . getqf ( "heavens_cave_keyquest_NeededGlassAmount" ) then 
 q . done ( ) 
 set_state ( "tears_for_seon" ) 

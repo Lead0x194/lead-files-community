@@ -1,6 +1,6 @@
-send_letter ( gameforge . new_quest_lv29 . _015_npcChat ) 
+send_letter ( "[LC;5799]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv29 . _015_npcChat ) 
+q . set_title ( "[LC;5799]" ) 
 new_quest_lv29_mob1 = 501 
 new_quest_lv29_mob2 = 551 
 new_quest_lv29_drop = 50054 

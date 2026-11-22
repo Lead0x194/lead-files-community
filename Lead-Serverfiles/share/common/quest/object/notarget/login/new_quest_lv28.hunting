@@ -2,7 +2,7 @@ new_quest_lv28_neededAmountDrop1 = 1
 new_quest_lv28_dropProb1 = 100 
 new_quest_lv28_mob1 = 193 
 new_quest_lv28_drop1 = 30174 
-send_letter ( gameforge . new_quest_lv28 . _040_npcChat ) 
+send_letter ( "[LC;5783]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv28 . _040_npcChat ) 
-notice_multiline ( gameforge . new_quest_lv28 . _025_notice , notice ) 
+q . set_title ( "[LC;5783]" ) 
+notice_multiline ( "[LC;5771]" , notice ) 

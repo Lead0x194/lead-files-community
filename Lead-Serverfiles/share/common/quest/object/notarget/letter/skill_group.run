@@ -1,25 +1,25 @@
-if pc . get_skill_group ( ) == 0 then send_letter ( gameforge . skill_group . _10_sendLetter ) 
+if pc . get_skill_group ( ) == 0 then send_letter ( "[LC;6829]" ) 
 local job = pc . get_job ( ) 
 if job == 0 then 
 local v = pc_find_skill_teacher_vid ( 1 ) 
-if 0 ~= v then target . vid ( "teacher1" , v , gameforge . skill_group . _20_targetVid ) end 
+if 0 ~= v then target . vid ( "teacher1" , v , "[LC;6840]" ) end 
 local v = pc_find_skill_teacher_vid ( 2 ) 
-if 0 ~= v then target . vid ( "teacher2" , v , gameforge . skill_group . _30_targetVid ) end 
+if 0 ~= v then target . vid ( "teacher2" , v , "[LC;6851]" ) end 
 elseif job == 1 then 
 local v = pc_find_skill_teacher_vid ( 1 ) 
-if 0 ~= v then target . vid ( "teacher3" , v , gameforge . skill_group . _40_targetVid ) end 
+if 0 ~= v then target . vid ( "teacher3" , v , "[LC;6862]" ) end 
 local v = pc_find_skill_teacher_vid ( 2 ) 
-if 0 ~= v then target . vid ( "teacher4" , v , gameforge . skill_group . _50_targetVid ) end 
+if 0 ~= v then target . vid ( "teacher4" , v , "[LC;6873]" ) end 
 elseif job == 2 then 
 local v = pc_find_skill_teacher_vid ( 1 ) 
-if 0 ~= v then target . vid ( "teacher5" , v , gameforge . skill_group . _60_targetVid ) end 
+if 0 ~= v then target . vid ( "teacher5" , v , "[LC;6884]" ) end 
 local v = pc_find_skill_teacher_vid ( 2 ) 
-if 0 ~= v then target . vid ( "teacher6" , v , gameforge . skill_group . _70_targetVid ) end 
+if 0 ~= v then target . vid ( "teacher6" , v , "[LC;6895]" ) end 
 elseif job == 3 then 
 local v = pc_find_skill_teacher_vid ( 1 ) 
-if 0 ~= v then target . vid ( "teacher7" , v , gameforge . skill_group . _80_targetVid ) end 
+if 0 ~= v then target . vid ( "teacher7" , v , "[LC;6902]" ) end 
 local v = pc_find_skill_teacher_vid ( 2 ) 
-if 0 ~= v then target . vid ( "teacher8" , v , gameforge . skill_group . _90_targetVid ) end 
+if 0 ~= v then target . vid ( "teacher8" , v , "[LC;6903]" ) end 
 clear_letter ( ) 
 end 
  return end 

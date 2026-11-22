@@ -2,16 +2,16 @@ new_quest_lv42_neededAmountDrop1 = 20
 new_quest_lv42_mob1 = 20047 
 new_quest_lv42_drop1 = 50601 
 new_quest_lv42_timeToWait = 86400 
-send_letter ( gameforge . new_quest_lv42 . _037_send_letter ) 
+send_letter ( "[LC;5886]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv42 . _037_send_letter ) 
+q . set_title ( "[LC;5886]" ) 
 local timeLeft = new_quest_lv42_timeToWait - ( get_time ( ) - pc . getqf ( "diamond_duration" ) ) 
-q . set_clock ( gameforge . new_quest_lv42 . _071_set_clock , timeLeft ) 
+q . set_clock ( "[LC;5910]" , timeLeft ) 
 if get_time ( ) - pc . getqf ( "diamond_duration" ) >= new_quest_lv42_timeToWait then 
-send_letter ( gameforge . new_quest_lv42 . _037_send_letter ) 
+send_letter ( "[LC;5886]" ) 
 local v = find_npc_by_vnum ( 20016 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET4__" , v , gameforge . new_quest_lv42 . _050_target ) 
+target . vid ( "__TARGET4__" , v , "[LC;5895]" ) 
 end 
 end 

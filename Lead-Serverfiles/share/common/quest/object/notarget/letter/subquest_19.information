@@ -1,5 +1,5 @@
 local v = find_npc_by_vnum ( 9006 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . fortune_telling . _100_sayTitle ) 
+target . vid ( "__TARGET__" , v , "[LC;1118]" ) 
 end 

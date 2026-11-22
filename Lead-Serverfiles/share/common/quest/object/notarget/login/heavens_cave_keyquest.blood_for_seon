@@ -1,7 +1,7 @@
-send_letter ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
+send_letter ( "[LC;1507]" ) 
 q . start ( ) 
-q . set_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
+q . set_title ( "[LC;1507]" ) 
 local v = find_npc_by_vnum ( 20095 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET__" , v , gameforge . heavens_cave_keyquest . _010_target ) 
+target . vid ( "__TARGET__" , v , "[LC;1506]" ) 
 end 

@@ -1,6 +1,6 @@
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . subquest_42 . _10_targetVid ) 
-q . set_title ( gameforge . subquest_42 . _10_targetVid ) 
+makequestbutton ( "[LC;8159]" ) 
+q . set_title ( "[LC;8159]" ) 
 q . start ( ) 
 if pc . count_item ( "30147" ) >= 1 and pc . count_item ( "30148" ) >= 1 then 
 local vnum = 0 

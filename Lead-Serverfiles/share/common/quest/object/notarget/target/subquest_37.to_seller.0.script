@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . main_quest_lv32 . _120_sayTitle ) 
-say ( gameforge . subquest_37 . _240_say ) 
+say_title ( "[LC;4232]" ) 
+say ( "[LC;8013]" ) 
 set_state ( "back_to_bookbug" ) 

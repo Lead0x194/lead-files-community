@@ -1,4 +1,4 @@
-send_letter ( gameforge . subquest_24 . _140_sendLetter ) 
+send_letter ( "[LC;7626]" ) 
 local rest_time = pc . getqf ( "limit_time" ) - get_time ( ) 
 timer ( "time_over" , rest_time ) 
 q . set_clock ( "Time left" , rest_time ) 

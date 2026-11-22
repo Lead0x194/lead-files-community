@@ -1,9 +1,9 @@
 local v = find_npc_by_vnum ( 20008 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET5__" , v , gameforge . new_quest_lv7 . _010_target ) 
+target . vid ( "__TARGET5__" , v , "[LC;6079]" ) 
 end 
-send_letter ( gameforge . new_quest_lv7 . _020_say_title ) 
+send_letter ( "[LC;6082]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv7 . _020_say_title ) 
+q . set_title ( "[LC;6082]" ) 
 soup = false 

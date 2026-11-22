@@ -1,16 +1,16 @@
 if pc . count_item ( 50059 ) > 0 then 
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . subquest_39 . _270_makequestbutton ) 
-q . set_title ( gameforge . subquest_39 . _270_makequestbutton ) 
+makequestbutton ( "[LC;8074]" ) 
+q . set_title ( "[LC;8074]" ) 
 q . start ( ) 
 local v = find_npc_by_vnum ( "20018" ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . subquest_39 . _280_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;8075]" ) 
 end 
 return 
 end 
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . subquest_39 . _270_makequestbutton ) 
-q . set_title ( gameforge . subquest_39 . _270_makequestbutton ) 
+makequestbutton ( "[LC;8074]" ) 
+q . set_title ( "[LC;8074]" ) 
 q . start ( ) 

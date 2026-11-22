@@ -1,8 +1,8 @@
 if pc . countitem ( 30185 ) >= 1 then 
 target . delete ( "__DISPOSE__" ) 
 pc . remove_item ( 30185 , pc . countitem ( 30185 ) ) 
-say_title ( gameforge . new_quest_lv80 . _599_set_title ) 
-say_reward ( gameforge . new_quest_lv80 . _630_say_reward ) 
+say_title ( "[LC;6291]" ) 
+say_reward ( "[LC;6295]" ) 
 set_state ( "blessing" ) 
 else 
 target . delete ( "__DISPOSE__" ) 

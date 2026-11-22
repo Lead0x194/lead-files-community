@@ -1,6 +1,6 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv80 . _310_set_title ) 
-say ( gameforge . new_quest_lv80 . _440_say ) 
+say_title ( "[LC;6255]" ) 
+say ( "[LC;6269]" ) 
 pc . setqf ( "gotreward" , 0 ) 
 pc . change_money ( 3e+06 ) 
 pc . give_exp2 ( 1.2e+08 ) 

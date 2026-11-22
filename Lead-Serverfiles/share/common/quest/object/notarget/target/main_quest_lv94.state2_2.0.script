@@ -1,3 +1,3 @@
 target . delete ( "__TARGET__" ) 
-say_reward ( string . format ( gameforge . main_quest_lv94 . _220_say , 321 , 419 ) ) 
+say_reward ( string . format ( "[LC;5090;%d;%d]" , 321 , 419 ) ) 
 set_state ( "state2_3" ) 

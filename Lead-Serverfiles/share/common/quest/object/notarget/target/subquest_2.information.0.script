@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_02 . _20_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7014]" ) 
 set_state ( "ask_dinner" ) 

@@ -1,25 +1,25 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_02 . _120_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7005]" ) 
 local s = select ( 
-gameforge . subquest_02 . _121_select , 
-gameforge . subquest_02 . _122_select , 
-gameforge . subquest_02 . _123_select , 
-gameforge . subquest_02 . _124_select ) 
+"[LC;7006]" , 
+"[LC;7007]" , 
+"[LC;7008]" , 
+"[LC;7009]" ) 
 if s == 3 then 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_02 . _130_say ) 
-say_title ( gameforge . collect_herb_lv4 . _130_sayTitle ) 
-say_reward ( gameforge . subquest_02 . _140_sayReward ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7010]" ) 
+say_title ( "[LC;192]" ) 
+say_reward ( "[LC;7011]" ) 
 pc . give_exp2 ( 1000 ) 
 set_quest_state ( "levelup" , "run" ) 
 pc . change_money ( 1500 ) 
 clear_letter ( ) 
 set_state ( "__COMPLETE__" ) 
 elseif s == 4 then 
-say ( gameforge . subquest_02 . _150_say ) 
+say ( "[LC;7012]" ) 
 set_state ( "ask_dinner" ) 
 else 
-say ( gameforge . subquest_02 . _160_say ) 
+say ( "[LC;7013]" ) 
 set_state ( "ask_dinner" ) 
 end 

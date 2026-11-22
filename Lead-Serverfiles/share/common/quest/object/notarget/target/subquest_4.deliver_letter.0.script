@@ -1,31 +1,31 @@
 if pc . count_item ( 30131 ) >= 1 then 
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_04 . _150_sayTitle ) 
-say ( gameforge . subquest_04 . _160_say ) 
+say_title ( "[LC;7043]" ) 
+say ( "[LC;7044]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_04 . _150_sayTitle ) 
-say ( gameforge . subquest_04 . _170_say ) 
+say_title ( "[LC;7043]" ) 
+say ( "[LC;7045]" ) 
 pc . remove_item ( "30131" , 1 ) 
 set_state ( "return_to" ) 
 else 
-say_title ( gameforge . subquest_04 . _150_sayTitle ) 
-say ( gameforge . subquest_04 . _180_say ) 
-local s = select ( gameforge . subquest_04 . _190_select , gameforge . subquest_04 . _200_select ) 
+say_title ( "[LC;7043]" ) 
+say ( "[LC;7046]" ) 
+local s = select ( "[LC;7047]" , "[LC;7048]" ) 
 if 2 == s then 
-say ( gameforge . subquest_04 . _210_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7050]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . mining . _10_sayTitle ) 
-say ( gameforge . subquest_04 . _220_say ) 
+say_title ( "[LC;5585]" ) 
+say ( "[LC;7051]" ) 
 return 
 end 
-say_title ( gameforge . mining . _10_sayTitle ) 
-say ( gameforge . subquest_04 . _230_say ) 
+say_title ( "[LC;5585]" ) 
+say ( "[LC;7052]" ) 
 clear_letter ( ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . mining . _10_sayTitle ) 
-say ( gameforge . subquest_04 . _240_say ) 
+say_title ( "[LC;5585]" ) 
+say ( "[LC;7053]" ) 
 set_state ( "information" ) 
 end 

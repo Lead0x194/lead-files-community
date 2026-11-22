@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . subquest_11 . _120_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;7275]" ) 
 set_state ( "ask_to_hunter" ) 

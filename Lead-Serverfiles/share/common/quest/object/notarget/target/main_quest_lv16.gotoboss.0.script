@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . main_quest_lv16 . _40_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;4145]" ) 
 set_state ( "killrobber" ) 

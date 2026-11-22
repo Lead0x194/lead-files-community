@@ -1,4 +1,4 @@
 local v = find_npc_by_vnum ( 20023 ) 
 if v ~= 0 then 
-target . vid ( "__TARGET__" , v , gameforge . subquest_05 . _10_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;7067]" ) 
 end 

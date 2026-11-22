@@ -1,25 +1,25 @@
 target . pos ( "__TARGET__" , 380 , 820 , 64 , "" ) 
 if pc . get_map_index ( ) ~= 64 then 
-say ( gameforge . pony_levelup . _270_say ) 
-local b = select ( gameforge . pony_levelup . _280_select , gameforge . find_brother_article . _170_select ) 
+say ( "[LC;6607]" ) 
+local b = select ( "[LC;6608]" , "[LC;939]" ) 
 if 1 == b then 
 pc . warp_local ( 64 , 150 , 740 ) 
 elseif 2 == b then 
-say ( gameforge . pony_levelup . _290_say ) 
-local b = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;6609]" ) 
+local b = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 1 == b then 
 setstate ( "start" ) 
 q . done ( ) 
 elseif 2 == b then 
 pc . warp_local ( 64 , 150 , 740 ) 
 else 
-say ( string . format ( gameforge . buy_fishrod . _80_say , b ) ) 
+say ( string . format ( "[LC;53;%s]" , b ) ) 
 end 
 else 
-say ( string . format ( gameforge . buy_fishrod . _80_say , b ) ) 
+say ( string . format ( "[LC;53;%s]" , b ) ) 
 end 
 end 
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . pony_levelup . _250_makequestbutton ) 
-q . set_title ( gameforge . pony_levelup . _250_makequestbutton ) 
+makequestbutton ( "[LC;6605]" ) 
+q . set_title ( "[LC;6605]" ) 
 q . start ( ) 

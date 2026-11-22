@@ -1,11 +1,11 @@
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . subquest_49 . _10_targetVid ) 
-q . set_title ( gameforge . subquest_49 . _10_targetVid ) 
+makequestbutton ( "[LC;8346]" ) 
+q . set_title ( "[LC;8346]" ) 
 q . start ( ) 
 if pc . count_item ( "30146" ) >= 50 then 
 local v = find_npc_by_vnum ( 20008 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . subquest_49 . _260_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;8363]" ) 
 end 
 end 

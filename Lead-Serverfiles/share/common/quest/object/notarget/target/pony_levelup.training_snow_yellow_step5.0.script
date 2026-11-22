@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . pony_levelup . _130_makequestbutton ) 
-say_reward ( gameforge . pony_levelup . _150_sayReward ) 
+say_title ( "[LC;6592]" ) 
+say_reward ( "[LC;6594]" ) 
 setstate ( "report" ) 

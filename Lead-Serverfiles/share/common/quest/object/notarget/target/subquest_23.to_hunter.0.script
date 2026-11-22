@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . main_quest_lv32 . _510_sayTitle ) 
-say ( gameforge . subquest_23 . _190_say ) 
+say_title ( "[LC;4275]" ) 
+say ( "[LC;7591]" ) 
 wait ( ) 
-say_title ( gameforge . main_quest_lv32 . _510_sayTitle ) 
-say ( gameforge . subquest_23 . _200_say ) 
-local s = select ( gameforge . subquest_23 . _210_select , gameforge . find_brother_article . _170_select ) 
+say_title ( "[LC;4275]" ) 
+say ( "[LC;7592]" ) 
+local s = select ( "[LC;7594]" , "[LC;939]" ) 
 if 2 == s then 
-say ( gameforge . subquest_23 . _220_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7595]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
 say_pc_name ( ) 
-say ( gameforge . subquest_23 . _230_say ) 
+say ( "[LC;7596]" ) 
 return 
 end 
 say_pc_name ( ) 
-say ( gameforge . subquest_23 . _240_say ) 
+say ( "[LC;7597]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
 say_pc_name ( ) 
-say ( gameforge . subquest_23 . _250_say ) 
+say ( "[LC;7598]" ) 
 set_state ( "to_danger_place" ) 

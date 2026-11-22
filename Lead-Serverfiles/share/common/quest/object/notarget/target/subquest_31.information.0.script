@@ -1,24 +1,24 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_09 . _50_sayTitle ) 
-say ( gameforge . subquest_31 . _30_say ) 
+say_title ( "[LC;7240]" ) 
+say ( "[LC;7838]" ) 
 wait ( ) 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_31 . _40_say ) 
-local s = select ( gameforge . subquest_31 . _50_select , gameforge . subquest_30 . _50_select ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7839]" ) 
+local s = select ( "[LC;7840]" , "[LC;7811]" ) 
 if 2 == s then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_31 . _60_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7841]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . subquest_09 . _50_sayTitle ) 
-say ( gameforge . subquest_31 . _70_say ) 
+say_title ( "[LC;7240]" ) 
+say ( "[LC;7842]" ) 
 return 
 end 
-say_title ( gameforge . subquest_09 . _50_sayTitle ) 
-say ( gameforge . subquest_31 . _80_say ) 
+say_title ( "[LC;7240]" ) 
+say ( "[LC;7843]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_09 . _50_sayTitle ) 
-say ( gameforge . subquest_31 . _90_say ) 
+say_title ( "[LC;7240]" ) 
+say ( "[LC;7844]" ) 
 set_state ( "to_gain_material" ) 

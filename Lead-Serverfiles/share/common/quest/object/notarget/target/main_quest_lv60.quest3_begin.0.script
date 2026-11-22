@@ -1,5 +1,5 @@
 target . delete ( "__TARGET__" ) 
 say_title ( mob_name ( 20011 ) ) 
-say ( gameforge . main_quest_lv60 . _240_say ) 
+say ( "[LC;4543]" ) 
 say ( "" ) 
 set_state ( "quest3_ongoing1" ) 

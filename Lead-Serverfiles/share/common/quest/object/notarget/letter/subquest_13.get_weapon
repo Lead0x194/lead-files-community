@@ -1,22 +1,22 @@
-send_letter ( gameforge . subquest_13 . _90_sendLetter ) 
+send_letter ( "[LC;7344]" ) 
 if pc . getqf ( "iron_done" ) == 0 then 
 local v = find_npc_by_vnum ( 20011 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET1__" , v , gameforge . subquest_06 . _240_targetVid ) 
+target . vid ( "__TARGET1__" , v , "[LC;7127]" ) 
 end 
 end 
 if pc . getqf ( "cloth_done" ) == 0 then 
 local v = find_npc_by_vnum ( 20021 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET2__" , v , gameforge . subquest_13 . _100_targetVid ) 
+target . vid ( "__TARGET2__" , v , "[LC;7309]" ) 
 end 
 end 
 if pc . getqf ( "cloth_done" ) == 1 then 
 local v = find_npc_by_vnum ( 20003 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET3__" , v , gameforge . subquest_13 . _110_targetVid ) 
+target . vid ( "__TARGET3__" , v , "[LC;7311]" ) 
 end 
 end 

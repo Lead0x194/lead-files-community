@@ -1,11 +1,11 @@
-send_letter ( gameforge . subquest_31 . _100_sendLetter ) 
+send_letter ( "[LC;7816]" ) 
 local copper = pc . count_item ( 50604 ) 
 local pearl = pc . count_item ( 50609 ) 
 local ebony = pc . count_item ( 50608 ) 
 if copper > 100 or pearl > 100 or ebony > 100 then 
 local v = find_npc_by_vnum ( 20016 ) 
 if v ~= 0 then 
-target . vid ( "__TARGET__" , v , gameforge . subquest_30 . _110_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;7789]" ) 
 end 
 return 
 end 

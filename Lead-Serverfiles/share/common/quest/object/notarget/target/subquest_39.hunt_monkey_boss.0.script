@@ -1,23 +1,23 @@
-say_title ( gameforge . collect_quest_lv30 . _340_sayTitle ) 
-say ( gameforge . subquest_39 . _340_say ) 
-local s = select ( gameforge . subquest_39 . _350_select , gameforge . subquest_39 . _360_select ) 
+say_title ( "[LC;248]" ) 
+say ( "[LC;8082]" ) 
+local s = select ( "[LC;8083]" , "[LC;8084]" ) 
 if 2 == s then 
-say_title ( gameforge . collect_quest_lv30 . _340_sayTitle ) 
-say ( gameforge . subquest_39 . _370_say ) 
-local s = select ( gameforge . subquest_39 . _380_select , gameforge . subquest_39 . _390_select ) 
+say_title ( "[LC;248]" ) 
+say ( "[LC;8085]" ) 
+local s = select ( "[LC;8086]" , "[LC;8087]" ) 
 if 1 == s then 
 say_pc_name ( ) 
-say ( gameforge . subquest_39 . _400_say ) 
+say ( "[LC;8088]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_39 . _160_sayTitle ) 
-say ( gameforge . subquest_39 . _410_say ) 
+say_title ( "[LC;8062]" ) 
+say ( "[LC;8090]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
 say_pc_name ( ) 
-say ( gameforge . subquest_39 . _420_say ) 
+say ( "[LC;8091]" ) 
 return 
 end 
-say_title ( gameforge . collect_quest_lv30 . _340_sayTitle ) 
-say ( gameforge . subquest_39 . _430_say ) 
+say_title ( "[LC;248]" ) 
+say ( "[LC;8092]" ) 
 return 

@@ -1,5 +1,5 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . horse_levelup . _240_sayTitle ) 
-say ( gameforge . horse_levelup . _380_say ) 
+say_title ( "[LC;1586]" ) 
+say ( "[LC;1601]" ) 
 setstate ( "reward" ) 
 q . done ( ) 

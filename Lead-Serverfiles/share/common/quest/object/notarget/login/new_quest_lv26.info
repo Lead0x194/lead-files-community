@@ -1,8 +1,8 @@
-send_letter ( gameforge . new_quest_lv26 . _020_set_title ) 
+send_letter ( "[LC;5737]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv26 . _020_set_title ) 
+q . set_title ( "[LC;5737]" ) 
 local find_npc = 20019 
 local v = find_npc_by_vnum ( find_npc ) 
 if 0 ~= v then 
-target . vid ( "__TARGET__" , v , gameforge . new_quest_lv26 . _010_target ) 
+target . vid ( "__TARGET__" , v , "[LC;5735]" ) 
 end 
