@@ -201,7 +201,7 @@ class TargetBoard(ui.ThinBoard):
 				if is_element:
 					search_keys = ["TARGET_INFO_RACE_" + pure_id]
 				else:
-					search_keys = ["TARGET_INFO_RACE_" + pure_id, "TARGET_INFO_NEWRACE_" + pure_id]
+					search_keys = ["TARGET_INFO_NEWRACE_" + pure_id, "TARGET_INFO_RACE_" + pure_id]
 
 				for key in search_keys:
 					if key in vars(localeInfo):
