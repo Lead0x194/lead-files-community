@@ -1156,6 +1156,13 @@ bool CPythonNetworkStream::RecvChatPacket()
 	if (kChat.type >= CHAT_TYPE_MAX_NUM)
 		return true;
 
+	if (strstr(buf, "|Hitem:"))
+	{
+		std::string stLinked(buf);
+		LocaleService_LocalizeItemLinks(stLinked);
+		strncpy_s(buf, sizeof(buf), stLinked.c_str(), _TRUNCATE);
+	}
+
 	if (CHAT_TYPE_COMMAND == kChat.type)
 	{
 		ServerCommand(buf);
