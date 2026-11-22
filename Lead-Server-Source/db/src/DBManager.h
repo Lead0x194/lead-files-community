@@ -89,8 +89,6 @@ class CDBManager : public singleton<CDBManager>
 
 	//CHARSET
 	public:
-	void SetLocale(const char * szLocale );
-	void QueryLocaleSet();
 	private:
 	
 	//END_CHARSET

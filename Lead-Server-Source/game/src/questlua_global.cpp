@@ -35,12 +35,6 @@ extern ACMD(do_block_chat);
 
 namespace quest
 {
-	int _get_locale(lua_State* L)
-	{
-		lua_pushstring(L, g_stDatabaseCharset.c_str());
-		return 1;
-	}
-
 	int _number(lua_State* L)
 	{
 		if (!lua_isnumber(L, 1) || !lua_isnumber(L, 2))
@@ -1334,7 +1328,6 @@ namespace quest
 			{	"chat",						_chat					},
 			{	"cmdchat",					_cmdchat				},
 			{	"syschat",					_syschat				},
-			{	"get_locale",				_get_locale				},
 			{	"setleftimage",				_left_image				},
 			{	"settopimage",				_top_image				},
 			{	"server_timer",				_set_server_timer		},

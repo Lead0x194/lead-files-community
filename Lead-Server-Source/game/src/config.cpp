@@ -63,8 +63,6 @@ std::set<string> g_setQuestObjectDir;
 
 string g_stBlockDate = "30000705";
 
-extern string g_stDatabaseCharset;
-
 int SPEEDHACK_LIMIT_COUNT   = 50;
 int SPEEDHACK_LIMIT_BONUS   = 80;
 int g_iSyncHackLimitCount = 20; // 10 -> 20 2013 09 11 CYH
@@ -431,11 +429,7 @@ static bool __LoadConnectionDetailConfigurations(const char *configName)
 
 	LocaleService_Init();
 
-	fprintf(stdout, "Setting DB charset to %s\n", g_stDatabaseCharset.c_str());
-
-	AccountDB::instance().SetLocale(g_stDatabaseCharset);
-
-	AccountDB::instance().ConnectAsync(db_host[1], mysql_db_port[1], db_user[1], db_pwd[1], db_db[1], g_stDatabaseCharset.c_str());
+	AccountDB::instance().ConnectAsync(db_host[1], mysql_db_port[1], db_user[1], db_pwd[1], db_db[1]);
 
 	// Player DB connection
 	DBManager::instance().Connect(db_host[0], mysql_db_port[0], db_user[0], db_pwd[0], db_db[0]);
@@ -465,8 +459,6 @@ static bool __LoadConnectionDetailConfigurations(const char *configName)
 	}
 
 	// SKILL_POWER_BY_LEVEL
-	// Due to string comparison problems AccountDB::instance().SetLocale(g_stDatabaseCharset) I'll do it later .
-	// Of course, domestically it is not much of a problem. ( Overseas is the problem )
 	{
 		char szQuery[256];
 		snprintf(szQuery, sizeof(szQuery), "SELECT mValue FROM locale WHERE mKey='SKILL_POWER_BY_LEVEL'");

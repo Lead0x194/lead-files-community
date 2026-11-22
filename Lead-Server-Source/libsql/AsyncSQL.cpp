@@ -16,8 +16,10 @@
 #define MUTEX_UNLOCK(mtx) ::LeaveCriticalSection(mtx)
 #endif
 
+static const char * const c_szConnectionCharset = "utf8mb4";
+
 CAsyncSQL::CAsyncSQL()
-	: m_stHost(""), m_stUser(""), m_stPassword(""), m_stDB(""), m_stLocale(""),
+	: m_stHost(""), m_stUser(""), m_stPassword(""), m_stDB(""),
 	m_iMsgCount(0), m_bEnd(false),
 #ifndef __WIN32__
 	m_hThread(0), 
@@ -87,27 +89,15 @@ unsigned int __stdcall AsyncSQLThread(void* arg)
 	return NULL;
 }
 
-bool CAsyncSQL::QueryLocaleSet()
+bool CAsyncSQL::SetConnectionCharset()
 {
-	if (0 == m_stLocale.length())
+	if (mysql_set_character_set(&m_hDB, c_szConnectionCharset))
 	{
-		sys_err("m_stLocale == 0");
-		return true;
-	}
-
-	else if (m_stLocale == "ascii")
-	{
-		sys_err("m_stLocale == ascii");
-		return true;
-	}
-
-	if (mysql_set_character_set(&m_hDB, m_stLocale.c_str()))
-	{
-		sys_err("cannot set locale %s by 'mysql_set_character_set', errno %u %s", m_stLocale.c_str(), mysql_errno(&m_hDB) , mysql_error(&m_hDB));
+		sys_err("cannot set charset %s by 'mysql_set_character_set', errno %u %s", c_szConnectionCharset, mysql_errno(&m_hDB) , mysql_error(&m_hDB));
 		return false; 
 	}
 
-	sys_log(0, "\t--mysql_set_character_set(%s)", m_stLocale.c_str());
+	sys_log(0, "\t--mysql_set_character_set(%s)", c_szConnectionCharset);
 
 	return true;
 }
@@ -121,12 +111,9 @@ bool CAsyncSQL::Connect()
     }
     my_bool enforce_ssl = 0; 
     mysql_options(&m_hDB, MYSQL_OPT_SSL_ENFORCE, &enforce_ssl);
-    if (!m_stLocale.empty())
+    if (mysql_options(&m_hDB, MYSQL_SET_CHARSET_NAME, c_szConnectionCharset) != 0)
     {
-        if (mysql_options(&m_hDB, MYSQL_SET_CHARSET_NAME, m_stLocale.c_str()) != 0)
-        {
-            fprintf(stderr, "mysql_option failed : MYSQL_SET_CHARSET_NAME %s ", mysql_error(&m_hDB));
-        }
+        fprintf(stderr, "mysql_option failed : MYSQL_SET_CHARSET_NAME %s ", mysql_error(&m_hDB));
     }
     if (!mysql_real_connect(&m_hDB, m_stHost.c_str(), m_stUser.c_str(), m_stPassword.c_str(), m_stDB.c_str(), m_iPort, NULL, CLIENT_MULTI_STATEMENTS | CLIENT_REMEMBER_OPTIONS))
     {
@@ -150,24 +137,17 @@ bool CAsyncSQL::Setup(CAsyncSQL * sql, bool bNoThread)
 			sql->m_stUser.c_str(), 
 			sql->m_stPassword.c_str(), 
 			sql->m_stDB.c_str(), 
-			sql->m_stLocale.c_str(), 
 			bNoThread,
 			sql->m_iPort);
 }
 
-bool CAsyncSQL::Setup(const char * c_pszHost, const char * c_pszUser, const char * c_pszPassword, const char * c_pszDB, const char * c_pszLocale, bool bNoThread, int iPort)
+bool CAsyncSQL::Setup(const char * c_pszHost, const char * c_pszUser, const char * c_pszPassword, const char * c_pszDB, bool bNoThread, int iPort)
 {
 	m_stHost = c_pszHost;
 	m_stUser = c_pszUser;
 	m_stPassword = c_pszPassword;
 	m_stDB = c_pszDB;
 	m_iPort = iPort;
-
-	if (c_pszLocale)
-	{
-		m_stLocale = c_pszLocale;
-		sys_log(0, "AsyncSQL: locale %s", m_stLocale.c_str());
-	}
 
 	if (!bNoThread)
 	{
@@ -238,8 +218,8 @@ SQLMsg * CAsyncSQL::DirectQuery(const char * c_pszQuery)
 {
 	if (m_ulThreadID != mysql_thread_id(&m_hDB))
 	{
-		sys_err("MySQL connection was reconnected. querying locale set");
-		while (!QueryLocaleSet());
+		sys_err("MySQL connection was reconnected. setting the charset");
+		while (!SetConnectionCharset());
 		m_ulThreadID = mysql_thread_id(&m_hDB);
 	}
 
@@ -542,8 +522,8 @@ void CAsyncSQL::ChildLoop()
 
 			if (m_ulThreadID != mysql_thread_id(&m_hDB))
 			{
-				sys_err("MySQL connection was reconnected. querying locale set");
-				while (!QueryLocaleSet());
+				sys_err("MySQL connection was reconnected. setting the charset");
+				while (!SetConnectionCharset());
 				m_ulThreadID = mysql_thread_id(&m_hDB);
 			}
 
@@ -604,8 +584,8 @@ void CAsyncSQL::ChildLoop()
 	{
 		if (m_ulThreadID != mysql_thread_id(&m_hDB))
 		{
-			sys_err("MySQL connection was reconnected. querying locale set");
-			while (!QueryLocaleSet());
+			sys_err("MySQL connection was reconnected. setting the charset");
+			while (!SetConnectionCharset());
 			m_ulThreadID = mysql_thread_id(&m_hDB);
 		}
 
@@ -694,11 +674,5 @@ size_t CAsyncSQL::EscapeString(char* dst, size_t dstSize, const char *src, size_
 	}
 
 	return mysql_real_escape_string(GetSQLHandle(), dst, src, static_cast<unsigned long>(srcSize));
-}
-
-void CAsyncSQL2::SetLocale(const std::string & stLocale)
-{
-	m_stLocale = stLocale;
-	QueryLocaleSet();
 }
 

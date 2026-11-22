@@ -39,7 +39,6 @@ extern uint32_t	g_global_time;
 const char *	get_table_postfix();
 
 extern std::string	g_stHostname;
-extern std::string	g_stDatabaseCharset;
 
 extern char		g_szPublicIP[16];
 extern char		g_szInternalIP[16];

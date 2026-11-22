@@ -29,10 +29,10 @@ DBManager::~DBManager()
 
 bool DBManager::Connect(const char * host, const int port, const char * user, const char * pwd, const char * db)
 {
-	if (m_sql.Setup(host, user, pwd, db, g_stDatabaseCharset.c_str(), false, port))
+	if (m_sql.Setup(host, user, pwd, db, false, port))
 		m_bIsConnect = true;
 
-	if (!m_sql_direct.Setup(host, user, pwd, db, g_stDatabaseCharset.c_str(), true, port))
+	if (!m_sql_direct.Setup(host, user, pwd, db, true, port))
 		sys_err("cannot open direct sql connection to host %s", host);
 
 	if (m_bIsConnect && !g_bAuthServer)
@@ -514,7 +514,7 @@ bool AccountDB::IsConnected()
 
 bool AccountDB::Connect(const char * host, const int port, const char * user, const char * pwd, const char * db)
 {
-	m_IsConnect = m_sql_direct.Setup(host, user, pwd, db, "", true, port);
+	m_IsConnect = m_sql_direct.Setup(host, user, pwd, db, true, port);
 
 	if (false == m_IsConnect)
 	{
@@ -525,16 +525,10 @@ bool AccountDB::Connect(const char * host, const int port, const char * user, co
 	return m_IsConnect;
 }
 
-bool AccountDB::ConnectAsync(const char * host, const int port, const char * user, const char * pwd, const char * db, const char * locale)
+bool AccountDB::ConnectAsync(const char * host, const int port, const char * user, const char * pwd, const char * db)
 {
-	m_sql.Setup(host, user, pwd, db, locale, false, port);
+	m_sql.Setup(host, user, pwd, db, false, port);
 	return true;
-}
-
-void AccountDB::SetLocale(const std::string & stLocale)
-{
-	m_sql_direct.SetLocale(stLocale);
-	m_sql_direct.QueryLocaleSet();
 }
 
 SQLMsg* AccountDB::DirectQuery(const char * query)
