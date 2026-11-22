@@ -272,16 +272,7 @@ static void read_string (LexState *LS, int del, SemInfo *seminfo) {
   save_and_next(LS, l);
   while (LS->current != del) {
     checkbuffer(LS, l);
-
-	  unsigned char b_current = (unsigned char)LS->current;
-	  if (b_current & 0x80)
-	  {
-		  save_and_next(LS, l);
-		  save_and_next(LS, l);
-	  }
-	  else
-	  {
-		  switch (b_current) {
+    switch (LS->current) {
       case EOZ:
         save(LS, '\0', l);
         luaX_lexerror(LS, "unfinished string", TK_EOS);
@@ -324,7 +315,6 @@ static void read_string (LexState *LS, int del, SemInfo *seminfo) {
       default:
         save_and_next(LS, l);
     }
-	  }
   }
   save_and_next(LS, l);  /* skip delimiter */
   save(LS, '\0', l);
