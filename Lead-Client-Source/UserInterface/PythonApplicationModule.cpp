@@ -198,26 +198,6 @@ PyObject* appSetFrameSkip(PyObject* poSelf, PyObject* poArgs)
 
 // LOCALE
 
-PyObject* appForceSetLocale(PyObject* poSelf, PyObject* poArgs)
-{
-	char* szName;
-	if (!PyTuple_GetString(poArgs, 0, &szName))
-		return Py_BuildException();
-
-	char* szLocalePath;
-	if (!PyTuple_GetString(poArgs, 1, &szLocalePath))
-		return Py_BuildException();
-	
-	LocaleService_ForceSetLocale(szName, szLocalePath);
-
-	return Py_BuildNone();
-}
-
-PyObject* appGetLocaleServiceName(PyObject* poSelf, PyObject* poArgs)
-{
-	return Py_BuildValue("s", LocaleService_GetName());
-}
-
 // 
 bool LoadLocaleData(const char* localePath);
 bool LoadLocaleTexts(const char* localePath);
@@ -1261,11 +1241,9 @@ void initapp()
 		{ "GetTextFileLine",			appGetTextFileLine,				METH_VARARGS },
 
 		// LOCALE
-		{ "GetLocaleServiceName",		appGetLocaleServiceName,		METH_VARARGS },
 		{ "GetLocaleName",				appGetLocaleName,				METH_VARARGS },
 		{ "GetLocalePath",				appGetLocalePath,				METH_VARARGS },
 		{ "SetRTL",						appSetRTL,						METH_VARARGS },
-		{ "ForceSetLocale",				appForceSetLocale,				METH_VARARGS },
 		// END_OF_LOCALE
 
 		{ "LoadLocaleAddr",				appLoadLocaleAddr,				METH_VARARGS },

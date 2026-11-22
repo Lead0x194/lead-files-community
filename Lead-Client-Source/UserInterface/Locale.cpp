@@ -7,7 +7,6 @@
 #include "PythonNonPlayer.h"
 #include "PythonSkill.h"
 
-const char* LSS_EUROPE		= "EUROPE";
 
 #ifndef LSS_SECURITY_KEY
 #define LSS_SECURITY_KEY	"1234abcd5678efgh"
@@ -546,16 +545,10 @@ const char*	LocaleService_GetSecurityKey()
 	return __SECURITY_KEY_STRING__.c_str();
 }
 
-const char* LocaleService_GetName()				{ return LSS_EUROPE; }
 unsigned int LocaleService_GetCodePage()		{ return CP_UTF8; }
 const char*	LocaleService_GetLocaleName()		{ return MULTI_LOCALE_NAME; }
 const char*	LocaleService_GetLocalePath()		{ return MULTI_LOCALE_PATH; }
 
-void LocaleService_ForceSetLocale(const char* name, const char* localePath)
-{
-	strcpy_s(MULTI_LOCALE_NAME, sizeof(MULTI_LOCALE_NAME), name);
-	strcpy_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), localePath);
-}
 
 
 int LocaleService_StringCompareCI( LPCSTR szStringLeft, LPCSTR szStringRight, size_t sizeLength )

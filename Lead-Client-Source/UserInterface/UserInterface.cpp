@@ -468,11 +468,6 @@ void __PrintTimeStamp()
 #endif			
 }
 
-bool __IsLocaleOption(LPSTR lpCmdLine)
-{
-	return (strcmp(lpCmdLine, "--locale") == 0);
-}
-
 bool __IsLocaleVersion(LPSTR lpCmdLine)
 {
 	return (strcmp(lpCmdLine, "--perforce-revision") == 0);
@@ -521,31 +516,10 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 				fclose(fp);
 			}
 			bQuit = true;
-		} else if (__IsLocaleOption(szArgv[i]))
-		{
-			FILE* fp=NULL;
-			fopen_s(&fp, "locale.txt", "wt");
-			fprintf(fp, "service[%s] code_page[%d]",
-				LocaleService_GetName(), LocaleService_GetCodePage());
-			fclose(fp);
-			bQuit = true;
 		} else if (__IsTimeStampOption(szArgv[i]))
 		{
 			__PrintTimeStamp();
 			bQuit = true;
-		} else if ((strcmp(szArgv[i], "--force-set-locale") == 0))
-		{
-			// Setting locale requires two more arguments (locale name, data path)
-			if (nArgc <= i + 2)
-			{
-				MessageBox(NULL, "Invalid arguments", ApplicationStringTable_GetStringz(IDS_APP_NAME, "APP_NAME"), MB_ICONSTOP);
-				goto Clean;
-			}
-
-			const char* localeName = szArgv[++i];
-			const char* localePath = szArgv[++i];
-
-			LocaleService_ForceSetLocale(localeName, localePath);
 		}
 	}
 
