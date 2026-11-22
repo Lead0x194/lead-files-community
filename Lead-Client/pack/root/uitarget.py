@@ -710,8 +710,12 @@ class TargetBoard(ui.ThinBoard):
 
 		(textWidth, textHeight) = self.name.GetTextSize()
 
-		self.infoButton.SetPosition(textWidth + 25, 12)
-		self.infoButton.SetWindowHorizontalAlignLeft()
+		if localeInfo.IsRTL():
+			self.infoButton.SetPosition(textWidth + 48, 12)
+			self.infoButton.SetWindowHorizontalAlignRight()
+		else:
+			self.infoButton.SetPosition(textWidth + 25, 12)
+			self.infoButton.SetWindowHorizontalAlignLeft()
 
 		self.vnum = vnum
 		self.infoButton.Show()

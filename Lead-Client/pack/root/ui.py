@@ -3228,7 +3228,7 @@ class PythonScriptLoader(object):
 
 	def LoadChildren(self, parent, dicChildren):
 
-		if self.mirror:
+		if self.mirror and not isinstance(parent, ImageBox):
 			parent.AddFlag( "rtl" )
 
 		if True == dicChildren.has_key("style"):

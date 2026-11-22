@@ -13,7 +13,7 @@ class GameButtonWindow(ui.ScriptWindow):
 
 	def __LoadWindow(self, filename):
 		try:
-			pyScrLoader = ui.PythonScriptLoader()
+			pyScrLoader = ui.PythonScriptLoader(False)
 			pyScrLoader.LoadScriptFile(self, filename)
 		except Exception, msg:
 			import dbg
