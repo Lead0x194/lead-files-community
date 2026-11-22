@@ -105,6 +105,13 @@ class SystemDialog(ui.ScriptWindow):
 		self.Close()
 		net.ExitApplication()
 		
+	def OpenSystemOption(self):
+		self.__ClickSystemOptionButton()
+		return self.systemOptionDlg
+
+	def IsSystemOptionOpen(self):
+		return self.systemOptionDlg and self.systemOptionDlg.IsShow()
+
 	def __ClickSystemOptionButton(self):
 		self.Close()
 

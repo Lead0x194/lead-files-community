@@ -1446,6 +1446,21 @@ class GameWindow(ui.ScriptWindow):
 	def OnMouseMiddleButtonUp(self):
 		player.SetMouseMiddleButtonState(player.MBS_CLICK)
 
+	def __ChangeLanguage(self):
+		name = localeInfo.REQUESTED_LANGUAGE
+		localeInfo.REQUESTED_LANGUAGE = None
+
+		if not localeInfo.SetLanguage(name):
+			return
+
+		self.interface.Rebuild()
+		self.affectShower.RefreshDescription(uiAffectShower.AffectShower.AFFECT_DATA_DICT)
+
+		self.targetBoard.Destroy()
+		self.targetBoard = uiTarget.TargetBoard()
+		self.targetBoard.SetWhisperEvent(ui.__mem_func__(self.interface.OpenWhisperDialog))
+		self.targetBoard.Hide()
+
 	def OnUpdate(self):	
 		app.UpdateGame()
 		
@@ -1457,6 +1472,9 @@ class GameWindow(ui.ScriptWindow):
 
 		if self.enableXMasBoom:
 			self.__XMasBoom_Update()
+
+		if localeInfo.REQUESTED_LANGUAGE:
+			self.__ChangeLanguage()
 
 		self.interface.BUILD_OnUpdate()
 		

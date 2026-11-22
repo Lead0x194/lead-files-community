@@ -131,6 +131,12 @@ def SetLanguage(name):
 	moduleDict["localeInfo"].LOADED_MODULE_LIST = keptList
 	moduleDict["localeInfo"].__source__.LOADED_MODULE_LIST = keptList
 	app.SetDefaultFontName(moduleDict["localeInfo"].UI_DEF_FONT)
+
+	import chrmgr
+	titleNameList = moduleDict["localeInfo"].TITLE_NAME_LIST
+	for index in xrange(len(titleNameList)):
+		chrmgr.RegisterTitleName(index, titleNameList[index])
+	chrmgr.RefreshAllPCTextTail()
 	return True
 
 def LoadLocaleData():
