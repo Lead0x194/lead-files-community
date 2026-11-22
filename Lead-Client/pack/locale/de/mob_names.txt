@@ -210,7 +210,7 @@
 1093	Sensenmann
 1094	Gemeiner Dämonenkönig
 1095	Blauer Tod
-1096	????
+1096	Stolzer Dämonenkönig
 1101	Verzaubertes Eis
 1102	Eiskillerwal
 1103	Eisinsekt
@@ -359,14 +359,14 @@
 2412	Setaou-Bogenschütze
 2413	Setaou-Magistra
 2414	Setaou-Kommandant
-2431	????
-2432	????
-2433	????
-2434	????
-2451	?????
-2452	?????
-2453	?????
-2454	?????
+2431	Setaou-Kämpfer
+2432	Setaou-Jäger
+2433	Setaou-Seherin
+2434	Setaou-Anführer
+2451	Setaou-Soldat
+2452	Setaou-Bogenschütze
+2453	Setaou-Magistra
+2454	Setaou-Kommandant
 2491	Hauptmann Yonghan
 2492	General Yonghan
 2493	Beran-Setaou
@@ -530,7 +530,7 @@
 6003	Glut-Flamme
 6004	Glut-Flammenkrieger
 6005	Glut-Flammenkönig
-6006	Glut-Flammengolem
+6006	Glut-Flammentroll
 6007	Glut-Flammenbart
 6008	Glut-Flammengeneral
 6009	Glut-Flammenfürst
@@ -677,7 +677,7 @@
 8036	Metin des Verrats
 8037	Metin der Verbitterung
 8038	Metin der Vergeltung
-8039	Metin des Hochmutes
+8039	Metin des Stolzes
 8040	Metin der Missgunst
 8041	Oster-Metin
 8042	Oster-Metin
@@ -721,22 +721,22 @@
 8509	Esoterischer Beschwörer
 8510	Flammenkrieger
 8511	Eisgolem
-8600	?????
-8601	?????
-8602	?????
-8603	?????
-8604	????
-8605	????
-8606	??
-8607	??
-8608	???
-8609	???
-8610	?????
-8611	?????
-8612	????
-8613	????
-8614	??????
-8615	??????
+8600	Geister Orkführer
+8601	Geister Orkführer
+8602	Elite Kämpfer
+8603	Elite Kämpfer
+8604	Gemeiner Dämonenkönig
+8605	Gemeiner Dämonenkönig
+8606	Sensenmann
+8607	Sensenmann
+8608	Neunschwanz
+8609	Neunschwanz
+8610	Böser gelber Tigergeist
+8611	Böser gelber Tigergeist
+8612	Königinnenspinne
+8613	Königinnenspinne
+8614	Große Wüstenschildkröte
+8615	Große Wüstenschildkröte
 9001	Waffenhändler
 9002	Rüstungshändler
 9003	Gemischtwarenhändlerin
@@ -785,36 +785,36 @@
 10034	2_Zin-Grotte 10594 7525
 10035	Deon-Zeon 917 5253
 10036	2_Deon-Zeon 7041 4642
-10037	??? 3809 8233
-10038	??? 9752 1330
-10039	??? 1917 2900
-10040	??? 9239 1836
-10041	??? 8316 2154
-10042	??? 9772 1850
-10043	??? 3819 2969
-10044	??? 10189 1484
-10045	??? 3819 2969
-10046	??? 9774 1501
-10047	??? 2699 6752
-10048	??? 9679 1994
-10049	??? 2699 6752
-10050	??? 9256 2012
-10051	???? 3478 6189
-10052	??? 9780 1995
-10053	???? 3478 6189
-10054	??? 10190 2002
-10055	???? 6011 6874
-10056	??? 4368 2158
-10057	??? 3355 7558
-10058	???? 5943 1337
-10059	???1 0 10496
-10060	????1 1536 10496
-10061	????1 4608 10496
-10062	???1 6144 10496
-10063	??? 3031 266
-10064	???? 11133 534
-10065	???? 7754 10553
-10066	????? 9915 11195
+10037	Gebiet_Jayang 3809 8233
+10038	Shinsoo 9752 1330
+10039	Gebiet_Bokjung 1917 2900
+10040	Jinno 9239 1836
+10041	Gebiet_Bakra 8316 2154
+10042	Chunjo 9772 1850
+10043	Berg_Sohan 3819 2969
+10044	Shinsoo 10189 1484
+10045	Berg_Sohan 3819 2969
+10046	Shinsoo 9774 1501
+10047	Seungryong 2699 6752
+10048	Jinno 9679 1994
+10049	Seungryong 2699 6752
+10050	Jinno 9256 2012
+10051	Yongbi-Wüste 3478 6189
+10052	Chunjo 9780 1995
+10053	Yongbi-Wüste 3478 6189
+10054	Chunjo 10190 2002
+10055	Feuerland 6011 6874
+10056	Berg_Sohan 4368 2158
+10057	Seungryong 3355 7558
+10058	Hwang-Tempel 5943 1337
+10059	Berg_Sohan 0 10496
+10060	Hwang-Tempel 1536 10496
+10061	Feuerland 4608 10496
+10062	Seungryong 6144 10496
+10063	Lungsam 3031 266
+10064	Roter_Wald 11133 534
+10065	New Ghost Forest 7754 10553
+10066	New Red Forest 9915 11195
 10067	Affendungeon 7752 4477
 10068	Gebiet_Jayang 4062 8756
 10069	Affendungeon 8520 4477
@@ -825,22 +825,22 @@
 10074	Affendungeon 1352 6532
 10075	Yongbi-Wüste 2879 5407
 10076	Affendungeon 1352 7300
-10077	????1? 9 12078
-10078	??? 2842 8106
-10079	????1? 1459 13236
-10080	????2? 2413 12755
-10081	????1? 99 13618
-10082	???? 5028 9998
-10083	????1? 1360 14972
-10084	????2? 2414 14289
-10085	????1? 99 15154
-10086	???? 616 1148
-10087	????1? 1360 16508
-10088	????2? 2414 15825
-10089	????1? 99 16690
-10090	???? 9609 3188
-10091	????1? 1360 18044
-10092	????2? 2414 17361
+10077	Zin-Grotte 9 12078
+10078	Seungryong 2842 8106
+10079	Zin-Grotte 1459 13236
+10080	2_Zin-Grotte 2413 12755
+10081	Zin-Grotte 99 13618
+10082	Gebiet_Yongan 5028 9998
+10083	Zin-Grotte 1360 14972
+10084	2_Zin-Grotte 2414 14289
+10085	Zin-Grotte 99 15154
+10086	Gebiet_Joan 616 1148
+10087	Zin-Grotte 1360 16508
+10088	2_Zin-Grotte 2414 15825
+10089	Zin-Grotte 99 16690
+10090	Gebiet_Pyungmo 9609 3188
+10091	Zin-Grotte 1360 18044
+10092	2_Zin-Grotte 2414 17361
 10093	Drachenpforte 1731 12205
 10094	Drachenpforte 1733 13743
 10095	Drachenpforte 1728 15277
@@ -977,24 +977,24 @@
 11103	Schlachtenverwalter
 11104	Wächter des Dorfplatzes
 11105	Schlachtenverwalter
-11106	???
-11107	???
-11108	???
-11109	???
-11110	???
-11111	???
-11112	???
-11113	???
-11114	???
-11115	???
-11116	???
-11117	???
+11106	Wächter des Dorfplatzes
+11107	Schlachtenverwalter
+11108	Wächter des Dorfplatzes
+11109	Schlachtenverwalter
+11110	Wächter des Dorfplatzes
+11111	Schlachtenverwalter
+11112	Wächter des Dorfplatzes
+11113	Schlachtenverwalter
+11114	Wächter des Dorfplatzes
+11115	Schlachtenverwalter
+11116	Wächter des Dorfplatzes
+11117	Schlachtenverwalter
 11505	Goldener Frosch
-11506	??
-11507	??
-11508	??
-11509	??
-11510	??
+11506	Leuchtfeuer
+11507	Leuchtfeuer
+11508	Leuchtfeuer
+11509	Leuchtfeuer
+11510	Leuchtfeuer
 12000	Lagerfeuer
 13000	Holztor
 13001	Steintor
@@ -1143,7 +1143,7 @@
 20093	Koe-Pung
 20094	Hong-Hae
 20095	Seon-Hae
-20096	??? ???
+20096	Obelisk
 20097	Burgtor
 20098	Burgtor
 20099	Burgtor
@@ -1166,31 +1166,31 @@
 20117	Sturmtiger
 20118	Schlachtenlöwe
 20119	Edler Rappe
-20120	?????
-20121	?????
-20122	?????
-20123	?????
-20124	?????
-20125	?????
+20120	Blue Armoured Tiger
+20121	Crimson Armoured Tiger
+20122	Yellow Armoured Tiger
+20123	Green Armoured Tiger
+20124	Black Armoured Tiger
+20125	White Armoured Tiger
 20126	Weihnachtsmann
-20201	??????
-20202	??????
-20203	?????
-20204	???????
-20205	?????? ??????
-20206	?????? ??????
-20207	?????? ?????
-20208	?????? ???????
-20209	?????? ??????
-20210	?????? ??????
-20211	?????? ?????
-20212	?????? ???????
-20213	?????????
-20214	?????? ?????????
-20215	?????? ?????????
-20216	????????
-20217	?????? ????????
-20218	?????? ????????
+20201	Armoured Boar
+20202	Armoured Wolf
+20203	Armoured Tiger
+20204	Armoured Lion
+20205	Wild Armoured Boar
+20206	Wild Armoured Wolf
+20207	Wild Armoured Tiger
+20208	Wild Armoured Lion
+20209	Valiant Armoured Boar
+20210	Valiant Armoured Wolf
+20211	Valiant Armoured Tiger
+20212	Valiant Armoured Lion
+20213	Armoured Reindeer (m)
+20214	Wild Armoured Reindeer (m)
+20215	Valiant Armoured Reindeer (m)
+20216	Armoured Reindeer (f)
+20217	Wild Armoured Reindeer (f)
+20218	Valiant Armoured Reindeer (f)
 20219	blackpony
 20220	Komet
 20221	Polarprädator
@@ -1272,8 +1272,8 @@
 20393	Verwundeter Soldat
 20394	Feuerland-Wächter
 20395	Eisland-Wächter
-30000	????
-30001	????
+30000	Private Shop
+30001	Private Shop
 30101	Statue des Kud
 30102	Basalt-Obelisk
 30103	Schildkrötenfels
@@ -1303,7 +1303,7 @@
 30303	Granatader
 30304	Smaragdader
 30305	Saphirader
-33001	?????? ???
+33001	Adventurer's Skull
 33002	Historiker
 33003	Fastender Bürger
 33004	Fastender Bürger
@@ -1311,9 +1311,9 @@
 33006	Fastender Bürger
 33007	Fastender Bürger
 33008	Jack Pumpkin
-34001	phoenix1
-34002	??? ???
-34003	?????????
+34001	Feuerphönix
+34002	Rentierjunges
+34003	Eisphönix
 34004	Baby-Azrael
 34005	Porkie
 34006	Rufus
@@ -1323,12 +1323,12 @@
 34010	Bambi
 34011	Knuud
 34012	Bao Bao
-34013	Henkerchen
-34014	Henkerchen (gold)
+34013	Dickes Henkerchen
+34014	Dickes Henkerchen (gold)
 34015	Boney
 34016	Jadephönix
-33009	Seelenkristallalchemist
-33010	Rubinalchemist
+33009	Altar des Blutes
+33010	Schneemann
 33011	Granatalchemist
 33012	Smaragdalchemist
 33013	Saphiralchemist

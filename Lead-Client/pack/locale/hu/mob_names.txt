@@ -43,14 +43,14 @@
 179	Éhes vörös vaddisznó
 180	Éhes medve
 181	Éhes szürkemedve
-182	Éhes fekete medve
-183	Éhes barna medve
+182	Éhes feketemedve
+183	Éhes barnamedve
 184	Éhes tigris
 185	Éhes fehér tigris
 191	Lykos
 192	Scrofa
 193	Bera
-194	Tigris
+194	Kagán
 301	Fehér eskü katona
 302	Fehér eskü íjász
 303	Fehér eskü generális
@@ -210,7 +210,7 @@
 1093	Kaszás
 1094	Gonosz démon király
 1095	Kék halál
-1096	????
+1096	Büszke démon király
 1101	Elvarázsolt Jég
 1102	Jég Gyilkos Bálna
 1103	Jég Rovar
@@ -248,9 +248,9 @@
 1305	Kecskebéka generális
 1306	Gonosz sárga tigris szel
 1307	Gonosz sárga tigris szel
-1308	NoNAme
-1309	NoNAme
-1310	NoNAme
+1308	Gonosz sárga tigris szel
+1309	Gonosz sárga tigris szel
+1310	Gonosz sárga tigris szel
 1331	Nagy fabéka katona
 1332	Nagy fabéka vezér
 1333	Nagy kísértet
@@ -268,9 +268,9 @@
 1901	Kilencfarkú
 1902	Elit kilencfarkú
 1903	Elit kilencfarkú
-1904	NoNAme
-1905	NoNAme
-1906	NoNAme
+1904	Elit Kilencfarkú
+1905	Elit Kilencfarkú
+1906	Elit Kilencfarkú
 2001	Bébi pók
 2002	Mérgespók
 2003	Vörös mérgespók
@@ -359,14 +359,14 @@
 2412	Setaou Íjász
 2413	Setaou Bíró
 2414	Setaou Parancsnok
-2431	????
-2432	????
-2433	????
-2434	????
-2451	?????
-2452	?????
-2453	?????
-2454	?????
+2431	Setaou harcos
+2432	Setaou vadász
+2433	Setaou látnok
+2434	Setaou vezér
+2451	Setaou katona
+2452	Setaou íjász
+2453	Setaou bíró
+2454	Setaou parancsnok
 2491	Yonghan Parancsnok
 2492	Yonghan Tábornok
 2493	Beran-Setaou
@@ -413,7 +413,7 @@
 3103	Küklopsz mágus
 3104	Küklopsz hóhér
 3105	Outis tábornok
-3190	Argosz
+3190	Argész
 3191	Polyphemos
 3201	Mantikór harcos
 3202	Mantikór katona
@@ -530,7 +530,7 @@
 6003	Parázs-láng
 6004	Parázs-lángharcos
 6005	Parázs-lángkirály
-6006	Parázs-lánggólem
+6006	Parázs-lángtroll
 6007	Parázs-lángszakáll
 6008	Parázs-lángtábornok
 6009	Parázs-lángvezér
@@ -574,74 +574,74 @@
 7026	Juk-Mok
 7027	Hwaryu Juk
 7028	Fekete Juk-Guimok
-7029	NoNAme
-7030	NoNAme
-7031	NoNAme
-7032	NoNAme
-7033	NoNAme
-7034	NoNAme
-7035	NoNAme
-7036	NoNAme
-7037	NoNAme
-7038	NoNAme
-7039	NoNAme
-7040	NoNAme
-7041	NoNAme
-7042	NoNAme
-7043	NoNAme
-7044	NoNAme
-7045	NoNAme
-7046	NoNAme
-7047	NoNAme
-7048	NoNAme
-7049	NoNAme
-7050	NoNAme
-7051	NoNAme
-7052	NoNAme
-7053	NoNAme
-7054	NoNAme
-7055	NoNAme
-7056	NoNAme
-7057	NoNAme
-7058	NoNAme
-7059	NoNAme
-7060	NoNAme
-7061	NoNAme
-7062	NoNAme
-7063	NoNAme
-7064	NoNAme
-7065	NoNAme
-7066	NoNAme
-7067	NoNAme
-7068	NoNAme
-7069	NoNAme
-7070	NoNAme
-7071	NoNAme
-7072	NoNAme
-7073	NoNAme
-7074	NoNAme
-7075	NoNAme
-7076	NoNAme
-7077	NoNAme
-7078	NoNAme
-7079	NoNAme
-7080	NoNAme
-7081	NoNAme
-7082	NoNAme
-7083	NoNAme
-7084	NoNAme
-7085	NoNAme
-7086	NoNAme
-7087	NoNAme
-7088	NoNAme
-7089	NoNAme
-7090	NoNAme
-7091	NoNAme
-7092	NoNAme
-7093	NoNAme
-7094	NoNAme
-7095	NoNAme
-7096	NoNAme
+7029	Jég ördög
+7030	Jégfogú gyilkos bálna
+7031	Jég rovar
+7032	Seol-Gu
+7033	Jég ember
+7034	Jég óriás
+7035	Jég gólem
+7036	Jég ördög
+7037	Jégfogú gyilkos bálna
+7038	Jég rovar
+7039	Seol-Gu
+7040	Jég ember
+7041	Jég óriás
+7042	Jég gólem
+7043	Jég ördög
+7044	Jégfogú gyilkos bálna
+7045	Jég rovar
+7046	Seol-Gu
+7047	Jég ember
+7048	Jég óriás
+7049	Jég gólem
+7050	Sivatagi repülő szem
+7051	Skorpiókirály
+7052	Fiatal Skorpióember
+7053	Skorpió íjász
+7054	Kígyó kardharcos
+7055	Kígyó íjász
+7056	Sivatagi bandita
+7057	Sivatagi repülő szem
+7058	Skorpiókirály
+7059	Fiatal Skorpióember
+7060	Skorpió íjász
+7061	Kígyó kardharcos
+7062	Kígyó íjász
+7063	Sivatagi bandita
+7064	Sivatagi repülő szem
+7065	Skorpiókirály
+7066	Fiatal Skorpióember
+7067	Skorpió íjász
+7068	Kígyó kardharcos
+7069	Kígyó íjász
+7070	Sivatagi bandita
+7071	Harci tigris szolga
+7072	Láng szellem
+7073	Harci tigris
+7074	Láng
+7075	Láng harcos
+7076	Harci tigris szolga
+7077	Láng szellem
+7078	Harci tigris
+7079	Láng
+7080	Láng harcos
+7081	Harci tigris szolga
+7082	Láng szellem
+7083	Harci tigris
+7084	Láng
+7085	Láng harcos
+7086	Szellemtuskó
+7087	Tündér
+7088	Szellemfűz
+7089	Gonosz fa
+7090	Szellemtuskó
+7091	Tündér
+7092	Szellemfűz
+7093	Gonosz fa
+7094	Szellemtuskó
+7095	Tündér
+7096	Szellemfűz
 8001	Bánat Metinje
 8002	Harc Metinje
 8003	Csata Metinje
@@ -721,22 +721,22 @@
 8509	Ezoterikus ördögűző
 8510	Lángharcos
 8511	Jég gólem
-8600	?????
-8601	?????
-8602	?????
-8603	?????
-8604	????
-8605	????
-8606	??
-8607	??
-8608	???
-8609	???
-8610	?????
-8611	?????
-8612	????
-8613	????
-8614	??????
-8615	??????
+8600	Szellem orkvezér
+8601	Szellem orkvezér
+8602	Elit harcos
+8603	Elit harcos
+8604	Gonosz démon király
+8605	Gonosz démon király
+8606	Kaszás
+8607	Kaszás
+8608	Kilencfarkú
+8609	Kilencfarkú
+8610	Gonosz sárga tigris szel
+8611	Gonosz sárga tigris szel
+8612	Pók-királynő
+8613	Pók-királynő
+8614	Nagy sivatagi teknősbéka
+8615	Nagy sivatagi teknősbéka
 9001	Fegyverkereskedő
 9002	Fegyverzet-kereskedő
 9003	Vegyeskereskedő Eladónő
@@ -748,7 +748,7 @@
 9009	Halász
 9010	Vegyeskereskedés
 9011	Esküvőszervező
-9012	Teleport
+9012	Teleportos
 10001	Yayang_Terület 4002 8995
 10002	Yongan_terület 4503 9050
 10003	Bokjung_ter. 1118 2161
@@ -785,36 +785,36 @@
 10034	2_Zin-barlang 10594 7525
 10035	Deon-Zeon 917 5253
 10036	2_Deon-Zeon 7041 4642
-10037	??? 3809 8233
-10038	??? 9752 1330
-10039	??? 1917 2900
-10040	??? 9239 1836
-10041	??? 8316 2154
-10042	??? 9772 1850
-10043	??? 3819 2969
-10044	??? 10189 1484
-10045	??? 3819 2969
-10046	??? 9774 1501
-10047	??? 2699 6752
-10048	??? 9679 1994
-10049	??? 2699 6752
-10050	??? 9256 2012
-10051	???? 3478 6189
-10052	??? 9780 1995
-10053	???? 3478 6189
-10054	??? 10190 2002
-10055	???? 6011 6874
-10056	??? 4368 2158
-10057	??? 3355 7558
-10058	???? 5943 1337
-10059	???1 0 10496
-10060	????1 1536 10496
-10061	????1 4608 10496
-10062	???1 6144 10496
-10063	??? 3031 266
-10064	???? 11133 534
-10065	???? 7754 10553
-10066	????? 9915 11195
+10037	Yayang_Terület 3809 8233
+10038	Shinsoo 9752 1330
+10039	Bokjung_ter. 1917 2900
+10040	Jinno 9239 1836
+10041	Bakra_terület 8316 2154
+10042	Chunjo 9772 1850
+10043	Sohan-hegy 3819 2969
+10044	Shinsoo 10189 1484
+10045	Sohan-hegy 3819 2969
+10046	Shinsoo 9774 1501
+10047	Seungryong 2699 6752
+10048	Jinno 9679 1994
+10049	Seungryong 2699 6752
+10050	Jinno 9256 2012
+10051	Yongbi_sivatag 3478 6189
+10052	Chunjo 9780 1995
+10053	Yongbi_sivatag 3478 6189
+10054	Chunjo 10190 2002
+10055	Tűzföld 6011 6874
+10056	Sohan-hegy 4368 2158
+10057	Seungryong 3355 7558
+10058	Hwang_templom 5943 1337
+10059	Sohan-hegy 0 10496
+10060	Hwang_templom 1536 10496
+10061	Tűzföld 4608 10496
+10062	Seungryong 6144 10496
+10063	Lungsam 3031 266
+10064	Vörös-erdő 11133 534
+10065	New Ghost Forest 7754 10553
+10066	New Red Forest 9915 11195
 10067	Majom_kazamata 7752 4477
 10068	Yayang_Terület 4062 8756
 10069	Majom_kazamata 8520 4477
@@ -825,22 +825,22 @@
 10074	Majom_kazamata 1352 6532
 10075	Yongbi_sivatag 2879 5407
 10076	Majom_kazamata 1352 7300
-10077	????1? 9 12078
-10078	??? 2842 8106
-10079	????1? 1459 13236
-10080	????2? 2413 12755
-10081	????1? 99 13618
-10082	???? 5028 9998
-10083	????1? 1360 14972
-10084	????2? 2414 14289
-10085	????1? 99 15154
-10086	???? 616 1148
-10087	????1? 1360 16508
-10088	????2? 2414 15825
-10089	????1? 99 16690
-10090	???? 9609 3188
-10091	????1? 1360 18044
-10092	????2? 2414 17361
+10077	Zin-barlang 9 12078
+10078	Seungryong 2842 8106
+10079	Zin-barlang 1459 13236
+10080	2_Zin-barlang 2413 12755
+10081	Zin-barlang 99 13618
+10082	Yongan_terület 5028 9998
+10083	Zin-barlang 1360 14972
+10084	2_Zin-barlang 2414 14289
+10085	Zin-barlang 99 15154
+10086	Joan_terület 616 1148
+10087	Zin-barlang 1360 16508
+10088	2_Zin-barlang 2414 15825
+10089	Zin-barlang 99 16690
+10090	Pyungmoo_ter. 9609 3188
+10091	Zin-barlang 1360 18044
+10092	2_Zin-barlang 2414 17361
 10093	Sárkány_Kapu 1731 12205
 10094	Sárkány_Kapu 1733 13743
 10095	Sárkány_Kapu 1728 15277
@@ -977,24 +977,24 @@
 11103	Csata irányító
 11104	Gondnok
 11105	Csata irányító
-11106	???
-11107	???
-11108	???
-11109	???
-11110	???
-11111	???
-11112	???
-11113	???
-11114	???
-11115	???
-11116	???
-11117	???
+11106	Gondnok
+11107	Csata irányító
+11108	Gondnok
+11109	Csata irányító
+11110	Gondnok
+11111	Csata irányító
+11112	Gondnok
+11113	Csata irányító
+11114	Gondnok
+11115	Csata irányító
+11116	Gondnok
+11117	Csata irányító
 11505	Arany béka
-11506	??
-11507	??
-11508	??
-11509	??
-11510	??
+11506	Tábortűz
+11507	Tábortűz
+11508	Tábortűz
+11509	Tábortűz
+11510	Tábortűz
 12000	Tábortűz
 13000	Fa kapu
 13001	Kő kapu
@@ -1076,7 +1076,7 @@
 20026	Ji-Ryu
 20027	Gillian
 20028	Mirine testvére
-20029	Pony
+20029	Póni
 20030	Ló
 20031	Télapó
 20032	Karácsonyfa
@@ -1143,7 +1143,7 @@
 20093	Koe-Pung
 20094	Hong-Hae
 20095	Seon-Hae
-20096	??? ???
+20096	Obeliszk
 20097	Várkapu
 20098	Várkapu
 20099	Várkapu
@@ -1165,32 +1165,32 @@
 20116	Harci farkas
 20117	Vihar tigris
 20118	Harci oroszlán
-20119	NoNAme
-20120	?????
-20121	?????
-20122	?????
-20123	?????
-20124	?????
-20125	?????
+20119	Nemes fekete ló
+20120	Blue Armoured Tiger
+20121	Crimson Armoured Tiger
+20122	Yellow Armoured Tiger
+20123	Green Armoured Tiger
+20124	Black Armoured Tiger
+20125	White Armoured Tiger
 20126	Télapó
-20201	??????
-20202	??????
-20203	?????
-20204	???????
-20205	?????? ??????
-20206	?????? ??????
-20207	?????? ?????
-20208	?????? ???????
-20209	?????? ??????
-20210	?????? ??????
-20211	?????? ?????
-20212	?????? ???????
-20213	?????????
-20214	?????? ?????????
-20215	?????? ?????????
-20216	????????
-20217	?????? ????????
-20218	?????? ????????
+20201	Armoured Boar
+20202	Armoured Wolf
+20203	Armoured Tiger
+20204	Armoured Lion
+20205	Wild Armoured Boar
+20206	Wild Armoured Wolf
+20207	Wild Armoured Tiger
+20208	Wild Armoured Lion
+20209	Valiant Armoured Boar
+20210	Valiant Armoured Wolf
+20211	Valiant Armoured Tiger
+20212	Valiant Armoured Lion
+20213	Armoured Reindeer (m)
+20214	Wild Armoured Reindeer (m)
+20215	Valiant Armoured Reindeer (m)
+20216	Armoured Reindeer (f)
+20217	Wild Armoured Reindeer (f)
+20218	Valiant Armoured Reindeer (f)
 20219	blackpony
 20220	Üstökös
 20221	Sarki ragadozó
@@ -1268,12 +1268,12 @@
 20389	NoNAme
 20390	Taramor sírköve
 20391	Nap-növény
-20392	NoNAme
+20392	Halott katona
 20393	Sebesült katona
 20394	Tűzföld-őr
 20395	Jégföld-őr
-30000	????
-30001	????
+30000	Private Shop
+30001	Private Shop
 30101	Kud szobra
 30102	Bazalt obeliszk
 30103	Teknős szikla
@@ -1303,17 +1303,17 @@
 30303	Gránát-ér
 30304	Smaragd-ér
 30305	Zafír-ér
-33001	?????? ???
-33002	NoNAme
-33003	NoNAme
-33004	NoNAme
-33005	NoNAme
-33006	NoNAme
-33007	NoNAme
+33001	Adventurer's Skull
+33002	Történész
+33003	Böjtölő polgár
+33004	Böjtölő polgár
+33005	Böjtölő polgár
+33006	Böjtölő polgár
+33007	Böjtölő polgár
 33008	Sütőtök Jack
-34001	phoenix1
-34002	??? ???
-34003	?????????
+34001	Tűzfőnix
+34002	Rénszarvasgida
+34003	Jégfőnix
 34004	Baby Azrael
 34005	Porky
 34006	Rufusz
@@ -1323,12 +1323,12 @@
 34010	Bambi
 34011	Knuud
 34012	Bao Bao
-34013	Minihóhér
-34014	Minihóhér (arany)
+34013	Pufók Minihóhér
+34014	Pufók Minihóhér (arany)
 34015	Csonti
 34016	Jáde főnix
-33009	Lélekkristály kohó
-33010	Rubin kohó
+33009	Vér oltára
+33010	Hóember
 33011	Gránát kohó
 33012	Smaragd kohó
 33013	Zafír kohó
