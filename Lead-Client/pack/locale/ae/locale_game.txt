@@ -1,6 +1,5 @@
 AFF_LOVE_POINT	نقاط الحب: %d%%	
 ALIGNMENT_NAME	نقاط المرتبة:	
-ATTACK_ERROR_UNKNOWN	خطأ هجوم غير معروف: %s	
 CANNOT_ATTACK_DEST_IN_SAFE	المقاتل بعيد جدًا.	
 CANNOT_ATTACK_SELF_IN_SAFE	لا أستطيع مهاجمة خصمي من هنا.	
 CANNOT_EQUIP_IN_EXCHANGE	لا يمكنك تغيير معداتك أثناء التبادل.
@@ -32,8 +31,6 @@ CANNOT_USE	لا يمكنك استخدام هذا.
 CANNOT_WHISPER_DEST_REFUSE	%s حظر الهمس.	SA
 CANNOT_WHISPER_NOT_LOGON	%s غير متصل.	SA
 CANNOT_WHISPER_SELF_REFUSE	لا يمكنك الهمس لأحد وقد حظرت الهمس تمامًا. 	SNA
-CHANNEL	القناة	
-CHANNELING_CANNOT_LOGOUT	لا يمكنك العودة إلى شاشة تسجيل الدخول.	
 CHANNEL_EMPTY_SERVER	لا يوجد خادم	
 CHANNEL_NORMAL	القناة %d	
 CHANNEL_NOTIFY_FULL	هذه القناة ممتلئة! الرجاء اختيار قناة أخرى.
@@ -42,10 +39,7 @@ CHANNEL_PVP	مبارزة حرة
 CHANNEL_SELECT_CHANNEL	اختر القناة	
 CHANNEL_SELECT_REGION	اختر المنطقة.	
 CHANNEL_SELECT_SERVER	اختر الخادم	
-CHANNEL_TEST_SERVER	خادم تجريبي	
-CHANNEL_TEST_SERVER_ADDR	اختبار %s:%d	
 CHAT_ALL	الكل	
-CHAT_BLOCK	حظر	
 CHAT_GUILD	الرابطة	
 CHAT_INFORMATION	معلومات	
 CHAT_INSULT_STRING	هذه الجملة تحتوي على كلمات غير مسموحة.	
@@ -58,14 +52,12 @@ CHAT_SEND_CHAT	إرسال محادثة
 CHAT_SEND_MEMO	إرسال همسة[Shift+Enter]	
 CHAT_SHOUT	نداء	
 CHAT_SHOUT_LIMIT	يمكنك النداء مرة كل 15 ثانية فقط.	
-CHAT_WHISPER	الهمس	
 CREATE_ERROR_GM_NAME	لا يُسمح باستخدام 'GM' في اسم شخصيتك.	
 CREATE_ERROR_INSULT_NAME	هذا الاسم غير صالح.	
 CREATE_EXIST_SAME_NAME	توجد شخصية أخرى بهذا الاسم.	
 CREATE_FAILURE	لا يمكنك إنشاء الشخصية	
 CREATE_GM_NAME	GM	
 CREATE_INPUT_NAME	أدخل الاسم.	
-CREATE_PLUS_STAT	ما زالت هناك نقاط حالة متاحة. 	
 DAY	أيام	
 DO_YOU_BUY_ITEM1	هل تريد شراء %s مقابل %s؟	
 DO_YOU_BUY_ITEM2	هل تريد شراء %s %s مقابل %s؟	
@@ -81,7 +73,6 @@ DRAGON_SOUL_INVALID_DRAGON_SOUL	هذا حجر تنين خاطئ.
 DRAGON_SOUL_IS_NOT_DRAGON_SOUL	هذا ليس حجر تنين.
 DRAGON_SOUL_NOT_DRAGON_SOUL_REFINE_STONE	هذا ليس حجر التنين الصحيح.
 DRAGON_SOUL_NOT_ENOUGH_MATERIAL	ليس لديك مواد كافية للصقل.
-DRAGON_SOUL_NOT_MATCHED_SLOT	حجر التنين لا يناسب هذه الخانة.
 DRAGON_SOUL_STEP_LEVEL1	النقاء: باهت،
 DRAGON_SOUL_STEP_LEVEL2	النقاء: صافٍ،
 DRAGON_SOUL_STEP_LEVEL3	النقاء: خالٍ من العيوب،
@@ -155,9 +146,6 @@ GUILDMARK_UPLOADER_ERROR_PATH	انقل البيانات إلى المجلد meti
 GUILDMARK_UPLOADER_ERROR_SELECT	لم يتم اختيار ملف صورة.	
 GUILDWAR_CTF_TITLE	تم الاستيلاء على الراية.	
 GUILDWAR_NORMAL_TITLE	معركة ميدانية	
-GUILDWAR_QUESTION_LINE_1	الرابطة %s أعلنت الحرب على رابطتك.	
-GUILDWAR_QUESTION_LINE_2	هل تقبل؟ (%s)	
-GUILDWAR_UNKNOWN_TITLE	...	
 GUILDWAR_WARP_TITLE	معركة الحلبة
 GUILD_BUILDING_GRADE	المرتبة	
 GUILD_BUILDING_NAME	اسم المبنى	
@@ -166,11 +154,9 @@ GUILD_COMMENT	كتابة
 GUILD_CREATE_ERROR_INSULT_NAME	اسم الرابطة غير صالح.	
 GUILD_DEFAULT_GRADE	أعضاء الرابطة	
 GUILD_DELETE	حذف	
-GUILD_DEPOSIT	إيداع	
 GUILD_DO_YOU_HEAL_GSP	هل تريد استعادة %d وحدة من شبح التنين مقابل %d يانغ؟
 GUILD_DO_YOU_JOIN	 دعاك. هل تريد الانضمام إلى الرابطة؟
 GUILD_EMPTY_AREA	أرض خالية	
-GUILD_ENEMY_GUILD_NAME	اسم رابطة العدو	
 GUILD_FACILITY	مبنى ملحق	
 GUILD_GEM	جوهرة	
 GUILD_HEADQUARTER	المبنى الرئيسي
@@ -198,7 +184,6 @@ GUILD_WAR_WIN_CHECK_SCORE	أعلى نتيجة تفوز بالحرب.
 GUILD_WAR_WIN_TAKE_AWAY_FLAG1	استولِ على راية عدوك
 GUILD_WAR_WIN_TAKE_AWAY_FLAG2	واحملها إلى قاعدتك.
 GUILD_WAR_WIN_WIPE_OUT_GUILD	اهزم جميع الأعداء لتفوز.	
-GUILD_WITHDRAW	انسحاب	
 GUILD_YOU_DO_NOT_JOIN	أنت لست عضوًا في أي رابطة.	
 HORSE_HEALTH0	ميت	
 HORSE_HEALTH1	يتضور جوعًا
@@ -212,24 +197,11 @@ HOW_MANY_ITEM_DO_YOU_DROP1	هل تريد رمي %s؟
 HOW_MANY_ITEM_DO_YOU_DROP2	هل تريد رمي %s %d؟	
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	أدخل هنا رمز الحذف من إعدادات حسابك.	
 INPUT_PRIVATE_CODE_DIALOG_TITLE	حذف الشخصية	
-INVENTORY_DO_NOT_PACK_WARP_SCROLL	لا يمكن دمج لفافة العودة.	
 INVENTORY_REALLY_USE_ITEM	هل تريد استخدام هذا الغرض؟	
 JOB_ASSASSIN	نينجا	
-JOB_ASSASSIN0	نينجا مبتدئ	
-JOB_ASSASSIN1	قوة النينجا	
-JOB_ASSASSIN2	الموتى الأحياء	
 JOB_SHAMAN	شامان	
-JOB_SHAMAN0	شامان مبتدئ	
-JOB_SHAMAN1	قوة التنين	
-JOB_SHAMAN2	قوة البرق	
 JOB_SURA	سورا	
-JOB_SURA0	سورا مبتدئ	
-JOB_SURA1	قوة السراب	
-JOB_SURA2	قوة السحر الأسود	
 JOB_WARRIOR	محارب	
-JOB_WARRIOR0	محارب مبتدئ	
-JOB_WARRIOR1	قوة أراهان	
-JOB_WARRIOR2	قوة البارتيزان	
 LEFT_TIME	الوقت المتبقي	
 LOGIN_CONNECT_FAILURE	خطأ أثناء الاتصال بالخادم.	
 LOGIN_CONNECT_SUCCESS	تم الاتصال بالخادم.
@@ -242,6 +214,7 @@ LOGIN_FAILURE_NOBILL	لا يوجد وقت لعب في حسابك.
 LOGIN_FAILURE_NOT_AVAIL	لا يمكن استخدام حسابك.	
 LOGIN_FAILURE_NOT_EXIST_ID	اسم الحساب أو كلمة المرور غير صحيحة.
 LOGIN_FAILURE_REPAIR_ID	تمت استعادة الأغراض لهذا الحساب.	
+LOGIN_FAILURE_SAMELOGIN	قام شخص ما بالاتصال بحسابك.
 LOGIN_FAILURE_SHUTDOWN	الخادم لم يُفتح بعد.	
 LOGIN_FAILURE_TOO_MANY_USER	تعذر الاتصال لكثرة اللاعبين المتصلين.	
 LOGIN_FAILURE_UNKNOWN	تعذر التسجيل لأسباب غير معروفة.	
@@ -282,8 +255,6 @@ MESSENGER_ADD_FRIEND	إضافة صديق
 MESSENGER_DO_YOU_ACCEPT_ADD_FRIEND_1	%s أضافك كصديق.	
 MESSENGER_DO_YOU_ACCEPT_ADD_FRIEND_2	قبول؟	
 MESSENGER_DO_YOU_DELETE	حذف؟	
-MESSENGER_DO_YOU_DELETE_PHONE_NUMBER	هل تريد حذف رقم الهاتف المحمول؟	
-MESSENGER_DO_YOU_MOVE	هل تريد المتابعة؟	
 MESSENGER_EMPTY_LIST	فارغ	
 MESSENGER_FAMILY	العائلة	
 MESSENGER_FRIEND	الأصدقاء	
@@ -297,8 +268,6 @@ MINIMAP_OBSERVER_COUNT	%d مراقب
 MINIMAP_SHOW_AREAMAP	فتح الخريطة الكبيرة	
 MINUTE	دقائق	
 MONETARY_UNIT0	يانغ
-MONETARY_UNIT1	عشرة آلاف	
-MONETARY_UNIT2	مئة مليار	
 MONEY_INPUT_DIALOG_SELLPRICE	سعر البيع:	
 MOVE_ITEM_FAILURE_PRIVATE_SHOP	لا يمكنك نقل الأغراض والمتجر الخاص مفتوح.
 MUSIC_EMPTY_MUSIC_LIST	لا توجد موسيقى خلفية.	
@@ -328,10 +297,8 @@ PARTY_HEAL_ALL_MEMBER	استعادة الكل.
 PARTY_INCREASE_AREA_150	زيادة مدى المجموعة بمعامل 1.5 .	SNA
 PARTY_INCREASE_AREA_200	زيادة مدى المجموعة بمعامل 2.	SNA
 PARTY_LEAVE	مغادرة المجموعة
-PARTY_LONGTIME_BONUS_EXP	خبرة إضافية للعب الجماعي الطويل: +%d%%	SA
 PARTY_MEMBER_OFFLINE	[غير متصل]	
 PARTY_RECALL_MEMBER	استدعاء عضو المجموعة.	
-PARTY_REGEN_BONUS	إضافة لتجديد نقاط الحياة والأسلوب: +%d%%	SA
 PARTY_REQUEST_DENIED	تم رفض طلبك.
 PARTY_SET_ATTACKER	تعيين كمهاجم.	
 PARTY_SET_BERSERKER	تعيين كهائج.	
@@ -344,10 +311,7 @@ PARTY_SKILL_ATTACKER	قيمة الهجوم الأساسية للمهاجم +%.0f
 PARTY_SKILL_BERSERKER	سرعة هجوم الهائج +%.0f	
 PARTY_SKILL_BUFFER	مدة مهارة الصادّ +%.0f	
 PARTY_SKILL_DEFENDER	دفاع المدافع +%.0f	
-PARTY_SKILL_HP_REGEN	تجديد نقاط الحياة +%.0f%%	
-PARTY_SKILL_PARTY_AREA	مدى المجموعة +%d%%	
 PARTY_SKILL_SKILL_MASTER	نقاط الأسلوب القصوى لخبير المهارات +%.0f	
-PARTY_SKILL_SP_REGEN	تجديد نقاط الأسلوب +%.0f%%	
 PARTY_SKILL_TANKER	نقاط الحياة القصوى لمقاتل النصل +%.0f	
 PARTY_SKILL_WARP	يمكن استدعاء أعضاء المجموعة.	
 PASSWORD_TITLE	كلمة مرور المخزن
@@ -380,7 +344,6 @@ QUEST_MIN	د.
 QUEST_SEC	ث.	
 QUEST_TIMEOVER	انتهى الوقت	
 QUEST_UNLIMITED_TIME	بلا حد زمني.	
-QUEST_ZEROSEC	0 ث.	
 QUICKSLOT_REGISTER_DISABLE_ITEM	لا يمكن إضافة هذا الغرض إلى خانة الوصول السريع.	
 RECEIVE_MESSAGE	%s أرسل لك رسالة.	
 REFINE_COST	تكلفة الترقية: %s
@@ -419,11 +382,9 @@ SELECT_DELEING	سيتم حذف الشخصية.
 SELECT_DELETED	تم الحذف بنجاح.	
 SELECT_DO_YOU_DELETE_REALLY	هل تريد المتابعة؟	
 SELECT_EMPTY_SLOT	هذه خانة فارغة.	
-SELECT_GM_NAME	GM	
 SELECT_INPUT_CHANGING_NAME	أدخل اسمًا جديدًا للشخصية.	
 SELECT_NOT_JOIN_GUILD	بلا رابطة	
 SHOP_BUY_INFO	اختر الغرض الذي تريد شراءه من نافذة المتجر.
-SHOP_CANNOT_SELL_EQUIPMENT	لا يمكنك بيع الأغراض المجهزة.
 SHOP_CANNOT_SELL_ITEM	لا يمكن بيع هذا الغرض.
 SHOP_ERROR_UNKNOWN	خطأ متجر غير معروف: %s
 SHOP_INVALID_POS	لا يمكن استخدام هذا الغرض هنا.
@@ -434,22 +395,12 @@ SHOP_SELL_INFO	اختر الغرض الذي تريد بيعه من نافذة ح
 SHOP_SOLDOUT	نفدت الكمية
 SHOT_ERROR_UNKNOWN	خطأ غير معروف أثناء الهجوم بعيد المدى: %s
 SKILL_BOHO	عكس	
-SKILL_BUDONG	لم يعد مستخدمًا	
-SKILL_CANNOT_LEVEL_UP_ANYMORE_BY_BOOK	تحتاج إلى خبرة لتعلم هذه المهارة.	
-SKILL_CANNOT_LEVEL_UP_ANYMORE_BY_STAT	تحتاج إلى كتاب لتعلم هذه المهارة.	
 SKILL_CHEONGEUN	جسد قوي	
-SKILL_CRITICAL	ضربة حرجة
-SKILL_ENCHANT_POISON	تسميم	
 SKILL_EUNHYEONG	تمويه	
-SKILL_FAINT	إغماء	
-SKILL_FIND_TRAP	كشف الفخاخ	
 SKILL_FIRE	نار دائمة	
 SKILL_FISHMIND	كرة الصيد مفعّلة
-SKILL_GAMJI	أسر	
 SKILL_GEOMGYEONG	هالة السيف	
-SKILL_GEONGON	SKILL_GEONGON لم يعد مستخدمًا	
 SKILL_GICHEON	عون التنين
-SKILL_GIGONG	دوران التشي	
 SKILL_GONGPO	خوف	
 SKILL_GRADE_NAME_GRAND_MASTER	%s أستاذ كبير	
 SKILL_GRADE_NAME_MASTER	%s أستاذ	
@@ -467,48 +418,24 @@ SKILL_GWIGEOM	النصل المسحور
 SKILL_GYEONGGONG	مشي الريشة	
 SKILL_HEUKSIN	الحماية المظلمة	
 SKILL_HOSIN	البركة	
-SKILL_HWAYEOM	SKILL_HWAYEOM لم يعد مستخدمًا	
-SKILL_HYEOLMA	SKILL_HYEOLMA لم يعد مستخدمًا	
 SKILL_INC_ATKSPD	زادت سرعة الهجوم
 SKILL_INC_MOVSPD	زادت سرعة التحرك
-SKILL_INMA	SKILL_INMA لم يعد مستخدمًا	
-SKILL_JEOJU	لعنة	
-SKILL_JEONGEOP	الشفاء	
 SKILL_JEONGWI	نشوة القتال	
-SKILL_JEONSINBANGEO	دفاع كامل	
-SKILL_JEONSINGONGGYEOK	هجوم كامل	
-SKILL_JEUNGCHE	SKILL_JEUNGCHE لم يعد مستخدمًا	
-SKILL_JEUNGHON	SKILL_JEUNGHON لم يعد مستخدمًا	
 SKILL_JEUNGRYEOK	الهجوم +	
-SKILL_JEUNGSOK	السرعة +	
-SKILL_JIGAM	SKILL_JIGAM لم يعد مستخدمًا	
-SKILL_JIPJUNG	SKILL_JIPJUNG لم يعد مستخدمًا	
 SKILL_JUMAGAP	الدرع المسحور	
-SKILL_JUMAGEOM	SKILL_JUMAGEOM لم يعد مستخدمًا	
-SKILL_KWAEGEOM	SKILL_KWAEGEOM لم يعد مستخدمًا	
 SKILL_KWAESOK	السرعة	
-SKILL_LEGBOUND	SKILL_LEGBOUND لم يعد مستخدمًا	
-SKILL_MUSA	SKILL_MUSA لم يعد مستخدمًا	
 SKILL_MUYEONG	شبح اللهب	
 SKILL_NEED_EMPTY_BOTTLE	ليس لدي زجاجة فارغة.	
 SKILL_NEED_POISON_BOTTLE	ليس لدي زجاجة سم	
 SKILL_ONLY_FOR_GUILD_WAR	يمكنك استخدام هذه المهارة في حرب الروابط فقط.	
 SKILL_PABEOP	إبطال السحر	
 SKILL_POWERFUL_STRIKE	هجوم مُدوِّخ	
-SKILL_SEOMGWANG	قنبلة البرق	
-SKILL_SINCHAK	SKILL_SINCHAK لم يعد مستخدمًا	
-SKILL_SLEEP	نوم	
 SKILL_SLOW	إبطاء	
 SKILL_STUN	دوار	
-SKILL_SUHO	حراسة	
 SKILL_SUMMON_DESCRIPTION	فرصة الاستحضار: %d%%	
 SKILL_TOOLTIP_INT	الذكاء	
 SKILL_TOOLTIP_LEVEL	المستوى	
 SKILL_TOXICDIE	تسمم	
-SKILL_TOXICPOWER	زادت قيمة هجوم السم	
-SKILL_TUSOK	ضربة الشبح	
-SKILL_WONSIN	SKILL_WONSIN لم يعد مستخدمًا	
-SKILL_YONGSIN	SKILL_YONGSIN لم يعد مستخدمًا	
 STAT_MINUS_CON	تعديل الحيوية (الفرص المتبقية: %d)
 STAT_MINUS_DEX	تعديل المناورة (الفرص المتبقية: %d)
 STAT_MINUS_INT	تعديل الذكاء (الفرص المتبقية: %d)	
@@ -556,7 +483,6 @@ TASKBAR_MOVE	تحرك
 TASKBAR_SKILL	مهارة	
 TASKBAR_SP	نقاط الأسلوب	
 TASKBAR_ST	التحمل	
-THING_COUNT	الكل	
 TOOLTIP_ANTI_CRITICAL_PCT	مقاومة الضربات الحرجة +%d%%	SA
 TOOLTIP_ANTI_PENETRATE_PCT	مقاومة الضربات الخارقة +%d%%	SA
 TOOLTIP_ANTI_SELL	لا يمكن بيعه في المتجر.
@@ -572,7 +498,6 @@ TOOLTIP_APPLY_ATTBONUS_SURA	قوي ضد السورا +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_UNDEAD	قوي ضد الزومبي +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_WARRIOR	قوي ضد المحاربين +%d%%	SA
 TOOLTIP_APPLY_BLOCK	فرصة صد هجوم قريب %d%% 	SA
-TOOLTIP_APPLY_COMBAT_SP_RECOVER	استعادة نقاط الأسلوب كل 5 ثوانٍ في المعركة %d	SA
 TOOLTIP_APPLY_CRITICAL_PCT	فرصة الضربة الحرجة +%d%% 	SA
 TOOLTIP_APPLY_DAMAGE_SP_RECOVER	فرصة %d%% لاستعادة نقاط الأسلوب عند الإصابة	SA
 TOOLTIP_APPLY_DODGE	فرصة تفادي السهام %d%%	SA
@@ -631,7 +556,6 @@ TOOLTIP_DRAGON_SOUL_DECK1	الأرض	SNA
 TOOLTIP_DRAGON_SOUL_DECK2	السماء	SNA
 TOOLTIP_EAR	قرط	
 TOOLTIP_ENERGY	الطاقة %d 	SA
-TOOLTIP_ETC	وهكذا	
 TOOLTIP_FISHINGROD_EXP	النقاط %d / %d	
 TOOLTIP_FISHINGROD_LEVEL	المستوى: %d	
 TOOLTIP_FISHINGROD_UPGRADE1	أعطه للصياد
@@ -644,7 +568,6 @@ TOOLTIP_INT	الذكاء +%d	SA
 TOOLTIP_ITEM_ATT_GRADE	قيمة الهجوم %d	
 TOOLTIP_ITEM_ATT_POWER	قيمة الهجوم %d - %d	
 TOOLTIP_ITEM_ATT_POWER_ONE_ARG	قيمة الهجوم %d	
-TOOLTIP_ITEM_ATT_POWER_REFINE	قيمة الهجوم %d - %d (+%d)	
 TOOLTIP_ITEM_ATT_SPEED	سرعة الهجوم %s	
 TOOLTIP_ITEM_DEF_GRADE	الدفاع %d	
 TOOLTIP_ITEM_FAST	سريع	
@@ -661,8 +584,6 @@ TOOLTIP_ITEM_SLOW	بطيء
 TOOLTIP_ITEM_VERY_FAST	سريع جدًا	
 TOOLTIP_ITEM_VERY_SLOW	بطيء جدًا	
 TOOLTIP_ITEM_WEARABLE_JOB	[ يمكن ارتداؤه ]
-TOOLTIP_LOTTERY_STEP_NUMBER	%d	
-TOOLTIP_LOTTO_NUMBER	رقم الحظ: %d	
 TOOLTIP_MAGIC_ATTBONUS_PER	الهجوم السحري +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	قيمة الهجوم السحري +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	الدفاع السحري +%d	SA
@@ -694,30 +615,12 @@ TOOLTIP_NEED_ALL_SP	نقاط الأسلوب المطلوبة: الأقصى
 TOOLTIP_NEED_GSP	شبح التنين المطلوب: %d
 TOOLTIP_NEED_HP	نقاط الحياة المطلوبة: %d	
 TOOLTIP_NEED_HP_PER_SEC	نقاط الحياة / ث.: %d
-TOOLTIP_NEED_SKILL_POINT	نقاط المهارة المطلوبة:	
 TOOLTIP_NEED_SP	نقاط الأسلوب المطلوبة: %d	
 TOOLTIP_NEED_SP_PER_SEC	نقاط الأسلوب / ث.: %d
 TOOLTIP_NEXT_SKILL_LEVEL_1	المستوى التالي: %d (الأقصى %d)	
-TOOLTIP_NEXT_SKILL_LEVEL_2	المستوى التالي: %d (الأقصى %d-%d)	
 TOOLTIP_NORMAL_HIT_DAMAGE_BONUS	متوسط الضرر %d%%	SA
 TOOLTIP_NORMAL_HIT_DEFEND_BONUS	مقاومة متوسط الضرر %d%%	SA
-TOOLTIP_PARTY_INFO_GRADE_UP1	أكثر من %d أعضاء في المجموعة	
-TOOLTIP_PARTY_INFO_GRADE_UP2	مستوى الهجوم +%d	
-TOOLTIP_PARTY_INFO_GRADE_UP3	مستوى الدفاع +%d	
-TOOLTIP_PARTY_INFO_HEAL_18_LEVEL	استعادة نقاط الحياة/الأسلوب لكل أعضاء المجموعة كل 60 دقيقة.	
-TOOLTIP_PARTY_INFO_HEAL_40_LEVEL	استعادة نقاط الحياة/الأسلوب لكل أعضاء المجموعة كل 30 دقيقة	
-TOOLTIP_PARTY_INFO_RECALL_12_LEVEL	عليك الانتظار 3 دقائق بعد موت أحد أعضاء المجموعة.	
-TOOLTIP_PARTY_INFO_RECALL_20_LEVEL	يمكنك استدعاء أعضاء المجموعة الموجودين على الخادم نفسه في أي وقت.	
-TOOLTIP_PARTY_INFO_SET_ATTACKER	مستوى الهجوم +(عدد أعضاء المجموعة/2) يمكن اختيار %d مهاجم.	
-TOOLTIP_PARTY_INFO_SET_TANKER	مستوى الدفاع +(عدد أعضاء المجموعة) يمكن اختيار 1 مقاتل نصل.	
 TOOLTIP_PARTY_SKILL_LEVEL	المستوى الحالي: %d	
-TOOLTIP_PARTY_TITLE_GRADE_UP	[ترقية الهجوم/الدفاع]	
-TOOLTIP_PARTY_TITLE_HEAL	[استعادة]	
-TOOLTIP_PARTY_TITLE_INFO_BONUS_EXP	عند وجود أكثر من %d أعضاء في المجموعة تحصل على %d%% خبرة إضافية .	
-TOOLTIP_PARTY_TITLE_MEMBER_BONUS_EXP	[خبرة إضافية]	
-TOOLTIP_PARTY_TITLE_RECALL	[استدعاء]	
-TOOLTIP_PARTY_TITLE_SET_ATTACKER	[تعيين مهاجم]	
-TOOLTIP_PARTY_TITLE_SET_TANKER	[تعيين مقاتل نصل]	
 TOOLTIP_PICK_EXP	النقاط: %d / %d	
 TOOLTIP_PICK_LEVEL	المستوى: %d	
 TOOLTIP_PICK_UPGRADE1	أعطه للحطّاب
@@ -733,9 +636,6 @@ TOOLTIP_POTION_PLUS_SP_PERCENT	نقاط الأسلوب +%d%%
 TOOLTIP_POTION_PLUS_SP_POINT	نقاط الأسلوب +%d
 TOOLTIP_POTION_SEC	ث.	
 TOOLTIP_POTION_TIME	المدة:	
-TOOLTIP_REQUIREMENT_21_LEVEL	يجب أن تبلغ المستوى 21.	
-TOOLTIP_REQUIREMENT_41_LEVEL	يجب أن تبلغ المستوى 41.	
-TOOLTIP_REQUIREMENT_LEVEL	يجب أن تبلغ المستوى %d.	
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	مطلوب %s المستوى %d.	
 TOOLTIP_REQUIREMENT_STAT_LEVEL	مطلوب %s %d	
 TOOLTIP_RESIST_BOW	مقاومة السهم %d%%	SA
@@ -746,12 +646,10 @@ TOOLTIP_RESIST_FIRE	مقاومة النار %d%%	SA
 TOOLTIP_RESIST_ICE	مقاومة الثلج +%d%%	SA
 TOOLTIP_RESIST_MAGIC	مقاومة السحر %d%%	SA
 TOOLTIP_REST_USABLE_COUNT	المتبقي: %d	
-TOOLTIP_SEALED	
 TOOLTIP_SELLPRICE	السعر: %s	
 TOOLTIP_SHAMAN	شامان	
 TOOLTIP_SHIELD	ترس	
 TOOLTIP_SHOES	حذاء	
-TOOLTIP_SKILL	المهارات	SNA
 TOOLTIP_SKILLBOOK_NAME	كتاب مهارة	
 TOOLTIP_SKILL_AFFECT_ATT_GRADE	قيمة الهجوم: +	
 TOOLTIP_SKILL_AFFECT_ATT_POWER	قيمة الهجوم:	
@@ -778,7 +676,6 @@ TOOLTIP_SURA	سورا
 TOOLTIP_TIME_CHARGER_FIX	زمن الشحن %d ث.	SA
 TOOLTIP_TIME_CHARGER_PER	زمن الشحن %d%%	SA
 TOOLTIP_UNIQUE	فريد	
-TOOLTIP_UNSEAL_LEFT_TIME	
 TOOLTIP_WARRIOR	محارب	
 TOOLTIP_WEAPON	السلاح	
 TOOLTIP_WRISTLET	سوار المعصم	
@@ -798,18 +695,14 @@ UI_NONAME	بلا اسم
 UI_OK	موافق	
 UI_POS_UNKNOWN	مكان مجهول	
 UI_PREVPAGE	رجوع
-UI_UNKNOWN	مجهول	
-UPLOAD_MARK_CHECK_NEED_RECONNECT	يجب بدء الرفع من جديد.	
 UPLOAD_MARK_UPLOAD_NEED_RECONNECT	يجب بدء الرفع من جديد.	
 USE_ITEM_FAILURE_PRIVATE_SHOP	لا يمكنك استخدام الأغراض والمتجر الخاص مفتوح.
-USE_SKILL_ERROR_UNKNOWN	خطأ مهارة غير معروف: %s	
 TARGET_INFO_RESISTS	المقاومات:
 TARGET_INFO_RESISTS_LINE0	السيف: %d%% سيف اليدين: %d%% الجرس: %d%%
 TARGET_INFO_RESISTS_LINE1	الخنجر: %d%% المروحة: %d%% القوس: %d%%
 TARGET_INFO_REGEN_INFO	تجديد نقاط الحياة %d%% كل %d ث.
 TARGET_INFO_GOLD_MIN_MAX	يانغ: %s ~ %s
 TARGET_INFO_DAMAGE	ضرر الضربة: %s - %s
-TARGET_INFO_DEFENSE	الدفاع: %s
 TARGET_INFO_EXP	الخبرة: %s
 TARGET_INFO_MAINRACE	العرق: %s
 TARGET_INFO_MAX_HP	نقاط الحياة القصوى: %s
