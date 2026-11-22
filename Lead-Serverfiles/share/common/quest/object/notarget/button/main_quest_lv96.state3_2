@@ -1,11 +1,11 @@
-say_title ( gameforge . main_quest_lv96 . _350_sayTitle ) 
-say ( gameforge . main_quest_lv96 . _360_say ) 
+say_title ( "[LC;5275]" ) 
+say ( "[LC;5276]" ) 
 say ( "" ) 
 say_item_vnum ( 31039 ) 
-say ( gameforge . main_quest_lv96 . _570_counterName ) 
+say ( "[LC;5296]" ) 
 local remain = 100 - pc . getqf ( "checked_pocket" ) 
 if remain < 0 then 
 remain = 0 
 end 
 q . set_counter_value ( remain ) 
-say_reward ( string . format ( gameforge . main_quest_lv96 . _580_sayReward , item_name ( 31039 ) , remain ) ) 
+say_reward ( string . format ( "[LC;5297;%s;%d]" , item_name ( 31039 ) , remain ) ) 

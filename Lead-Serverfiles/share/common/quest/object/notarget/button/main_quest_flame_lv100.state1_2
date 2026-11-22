@@ -1,4 +1,4 @@
-say_title ( gameforge . main_quest_flame_lv100 . _100_sayTitle ) 
-say ( gameforge . main_quest_flame_lv100 . _110_say ) 
-say ( gameforge . main_quest_lv98 . _680_counterName ) 
-say ( string . format ( gameforge . main_quest_lv98 . _670_sayReward , 300 - pc . getqf ( "kill_count_1" ) ) ) 
+say_title ( "[LC;3756]" ) 
+say ( "[LC;3757]" ) 
+say ( "[LC;5425]" ) 
+say ( string . format ( "[LC;5424;%s;%d]" , 300 - pc . getqf ( "kill_count_1" ) ) ) 

@@ -1,2 +1,2 @@
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( string . format ( gameforge . guild_ranking . _20_say , guild . high_ranking_string ( ) ) ) 
+say_title ( "[LC;1016]" ) 
+say ( string . format ( "[LC;1370;%s]" , guild . high_ranking_string ( ) ) ) 

@@ -1,9 +1,9 @@
 local mapname 
-say_title ( gameforge . new_quest_lv80 . _599_set_title ) 
+say_title ( "[LC;6291]" ) 
 if pc . get_empire ( ) == 1 then 
-say ( gameforge . new_quest_lv80 . _600_say ) 
+say ( "[LC;6292]" ) 
 elseif pc . get_empire ( ) == 2 then 
-say ( gameforge . new_quest_lv80 . _610_say ) 
+say ( "[LC;6293]" ) 
 elseif pc . get_empire ( ) == 3 then 
-say ( gameforge . new_quest_lv80 . _620_say ) 
+say ( "[LC;6294]" ) 
 end 

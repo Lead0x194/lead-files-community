@@ -1,5 +1,5 @@
-notice_multiline ( string . format ( gameforge . dragon_lair_access . _170_notice , dragon_lair_access . get_time_remaining ( ) / 60 ) , notice ) 
+notice_multiline ( string . format ( "[LC;727;%d]" , dragon_lair_access . get_time_remaining ( ) / 60 ) , notice ) 
 local settings = dragon_lair_access . get_settings ( ) 
 if ( pc . getqf ( "is_leader" ) == 1 and settings . cooldown_time - dragon_lair_access . get_time_remaining ( ) < settings . group_time ) then 
-notice_multiline ( string . format ( gameforge . dragon_lair_access . _145_notice , game . get_event_flag ( "dragon_lair_password" ) ) , notice ) 
+notice_multiline ( string . format ( "[LC;723;%s]" , game . get_event_flag ( "dragon_lair_password" ) ) , notice ) 
 end 

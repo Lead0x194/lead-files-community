@@ -1,4 +1,4 @@
-say_title ( gameforge . main_quest_flame_lv99 . _380_sayTitle ) 
-say ( gameforge . main_quest_flame_lv99 . _390_say ) 
-say ( gameforge . main_quest_lv97 . _670_counterName ) 
-say ( string . format ( gameforge . main_quest_lv90 . _1190_say , item_name ( 31076 ) , 1 - pc . count_item ( 31076 ) ) ) 
+say_title ( "[LC;4055]" ) 
+say ( "[LC;4056]" ) 
+say ( "[LC;5362]" ) 
+say ( string . format ( "[LC;4769;%s;%d]" , item_name ( 31076 ) , 1 - pc . count_item ( 31076 ) ) ) 

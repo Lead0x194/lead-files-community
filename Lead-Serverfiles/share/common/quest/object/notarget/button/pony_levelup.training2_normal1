@@ -1,26 +1,26 @@
-say_title ( gameforge . pony_levelup . _380_sayTitle ) 
-say ( gameforge . pony_levelup . _390_sayReward ) 
+say_title ( "[LC;6619]" ) 
+say ( "[LC;6620]" ) 
 if pc . getqf ( "flag1" ) == 1 then 
-say ( gameforge . pony_levelup . _400_say ) 
+say ( "[LC;6621]" ) 
 elseif pc . getqf ( "flag1" ) == 0 then 
-say ( gameforge . pony_levelup . _410_say ) 
+say ( "[LC;6623]" ) 
 end 
 if pc . getqf ( "flag2" ) == 1 then 
-say ( gameforge . pony_levelup . _420_say ) 
+say ( "[LC;6624]" ) 
 elseif pc . getqf ( "flag2" ) == 0 then 
-say ( gameforge . pony_levelup . _430_say ) 
+say ( "[LC;6625]" ) 
 end 
-local b = select ( gameforge . pony_levelup . _280_select , gameforge . locale . guild . cancel ) 
+local b = select ( "[LC;6608]" , "[LC;2023]" ) 
 if 1 == b then 
 elseif 2 == b then 
-say ( gameforge . pony_levelup . _440_say ) 
-local b = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;6626]" ) 
+local b = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 1 == b then 
 setstate ( "start" ) 
 elseif 2 == b then 
 else 
-say ( string . format ( gameforge . buy_fishrod . _80_say , b ) ) 
+say ( string . format ( "[LC;53;%s]" , b ) ) 
 end 
 else 
-say ( string . format ( gameforge . buy_fishrod . _80_say , b ) ) 
+say ( string . format ( "[LC;53;%s]" , b ) ) 
 end 

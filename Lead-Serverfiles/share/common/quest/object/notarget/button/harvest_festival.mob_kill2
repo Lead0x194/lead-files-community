@@ -1,23 +1,23 @@
 local mob2_info = pc . getqf ( "mob2_info" ) 
 if mob2_info == 10 then 
-mob2_name = gameforge . harvest_festival . _820_say elseif mob2_info == 9 then 
-mob2_name = gameforge . harvest_festival . _810_say elseif mob2_info == 8 then 
-mob2_name = gameforge . harvest_festival . _610_say elseif mob2_info == 7 then 
-mob2_name = gameforge . harvest_festival . _600_say elseif mob2_info == 6 then 
-mob2_name = gameforge . harvest_festival . _620_say elseif mob2_info == 5 then 
-mob2_name = gameforge . harvest_festival . _630_say elseif mob2_info == 4 then 
-mob2_name = gameforge . harvest_festival . _640_say elseif mob2_info == 3 then 
-mob2_name = gameforge . harvest_festival . _650_say elseif mob2_info == 2 then 
-mob2_name = gameforge . harvest_festival . _660_say elseif mob2_info == 1 then 
-mob2_name = gameforge . harvest_festival . _670_say end 
-say_title ( gameforge . harvest_festival . _520_sendLetter ) 
-say ( string . format ( gameforge . harvest_festival . _720_say , mob2_name ) ) 
+mob2_name = "[LC;1500]" elseif mob2_info == 9 then 
+mob2_name = "[LC;1499]" elseif mob2_info == 8 then 
+mob2_name = "[LC;1477]" elseif mob2_info == 7 then 
+mob2_name = "[LC;1476]" elseif mob2_info == 6 then 
+mob2_name = "[LC;1478]" elseif mob2_info == 5 then 
+mob2_name = "[LC;1479]" elseif mob2_info == 4 then 
+mob2_name = "[LC;1480]" elseif mob2_info == 3 then 
+mob2_name = "[LC;1481]" elseif mob2_info == 2 then 
+mob2_name = "[LC;1482]" elseif mob2_info == 1 then 
+mob2_name = "[LC;1483]" end 
+say_title ( "[LC;1468]" ) 
+say ( string . format ( "[LC;1489;%s]" , mob2_name ) ) 
 if party . is_party ( ) then 
-say ( gameforge . harvest_festival . _730_say ) 
+say ( "[LC;1490]" ) 
 else 
-say ( gameforge . harvest_festival . _740_say ) 
+say ( "[LC;1491]" ) 
 end 
-local gogo_set = select ( gameforge . harvest_festival . _380_select , gameforge . harvest_festival . _540_select ) 
+local gogo_set = select ( "[LC;1454]" , "[LC;1470]" ) 
 if gogo_set == 2 then 
 clear_letter ( ) 
 set_state ( "information" ) 

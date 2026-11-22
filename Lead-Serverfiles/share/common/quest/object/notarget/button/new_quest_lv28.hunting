@@ -1,5 +1,5 @@
-say_title ( gameforge . new_quest_lv28 . _040_npcChat ) 
-say ( gameforge . new_quest_lv28 . _032_say ) 
+say_title ( "[LC;5783]" ) 
+say ( "[LC;5777]" ) 
 if new_quest_lv28_neededAmountDrop1 > pc . count_item ( new_quest_lv28_drop1 ) then 
-say_reward ( string . format ( gameforge . new_quest_lv28 . _032_say_reward , new_quest_lv28_neededAmountDrop1 - pc . count_item ( new_quest_lv28_drop1 ) , item_name ( new_quest_lv28_drop1 ) , mob_name ( new_quest_lv28_mob1 ) ) ) 
+say_reward ( string . format ( "[LC;5778;%s]" , new_quest_lv28_neededAmountDrop1 - pc . count_item ( new_quest_lv28_drop1 ) , item_name ( new_quest_lv28_drop1 ) , mob_name ( new_quest_lv28_mob1 ) ) ) 
 end 

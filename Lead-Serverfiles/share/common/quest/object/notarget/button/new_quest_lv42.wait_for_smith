@@ -1,8 +1,8 @@
-say_title ( gameforge . new_quest_lv42 . _037_send_letter ) 
+say_title ( "[LC;5886]" ) 
 if get_time ( ) - pc . getqf ( "diamond_duration" ) >= new_quest_lv42_timeToWait then 
-say ( gameforge . new_quest_lv42 . _071_say ) 
+say ( nil ) 
 say ( "" ) 
-say ( string . format ( gameforge . new_quest_lv42 . _067_say , get_map_name_by_number ( 1 ) ) ) 
+say ( string . format ( "[LC;5907;%s]" , get_map_name_by_number ( 1 ) ) ) 
 else 
-say ( gameforge . new_quest_lv42 . _073_say ) 
+say ( "[LC;5912]" ) 
 end 

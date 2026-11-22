@@ -1,1 +1,1 @@
-test_chat ( string . format ( gameforge . guild_manage . _110_chat , bool_to_str ( pc . has_guild ( ) ) .. " [ENTER]pc.is_guildmaster: " .. bool_to_str ( pc . isguildmaster ( ) ) .. " [ENTER]pc.empire: " .. pc . empire .. " [ENTER]npc.empire: " .. npc . empire ) ) 
+test_chat ( string . format ( "[LC;1345;%s]" , bool_to_str ( pc . has_guild ( ) ) .. " [ENTER]pc.is_guildmaster: " .. bool_to_str ( pc . isguildmaster ( ) ) .. " [ENTER]pc.empire: " .. pc . empire .. " [ENTER]npc.empire: " .. npc . empire ) ) 

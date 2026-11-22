@@ -1,4 +1,4 @@
 local map_lookup = { "Yongan" , "Joan" , "Pyongmoo" } 
 local mapname = map_lookup [ pc . get_empire ( ) ] 
-say_title ( gameforge . new_quest_lv52 . _030_set_title ) 
-say ( string . format ( gameforge . new_quest_lv52 . _061_say , mapname ) ) 
+say_title ( "[LC;5958]" ) 
+say ( string . format ( "[LC;5979;%s]" , mapname ) ) 

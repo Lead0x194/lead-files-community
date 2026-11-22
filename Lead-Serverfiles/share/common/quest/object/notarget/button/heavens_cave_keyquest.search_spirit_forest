@@ -1,9 +1,9 @@
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _220_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1529]" ) 
 say ( "" ) 
 if pc . count_item ( pc . getqf ( "heavens_cave_keyquest_FrozenTear" ) ) < pc . getqf ( "heavens_cave_keyquest_NeededTearsAmount" ) then 
-say_reward ( string . format ( gameforge . heavens_cave_keyquest . _230_say , pc . getqf ( "heavens_cave_keyquest_NeededTearsAmount" ) - pc . count_item ( pc . getqf ( "heavens_cave_keyquest_FrozenTear" ) ) ) ) 
+say_reward ( string . format ( "[LC;1530;%s]" , pc . getqf ( "heavens_cave_keyquest_NeededTearsAmount" ) - pc . count_item ( pc . getqf ( "heavens_cave_keyquest_FrozenTear" ) ) ) ) 
 end 
 if pc . count_item ( pc . getqf ( "heavens_cave_keyquest_VolcanicGlass" ) ) < pc . getqf ( "heavens_cave_keyquest_NeededGlassAmount" ) then 
-say_reward ( string . format ( gameforge . heavens_cave_keyquest . _240_say , pc . getqf ( "heavens_cave_keyquest_NeededGlassAmount" ) - pc . count_item ( pc . getqf ( "heavens_cave_keyquest_VolcanicGlass" ) ) ) ) 
+say_reward ( string . format ( "[LC;1531;%s]" , pc . getqf ( "heavens_cave_keyquest_NeededGlassAmount" ) - pc . count_item ( pc . getqf ( "heavens_cave_keyquest_VolcanicGlass" ) ) ) ) 
 end 

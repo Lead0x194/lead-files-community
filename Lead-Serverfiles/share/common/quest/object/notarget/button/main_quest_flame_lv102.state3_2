@@ -1,6 +1,6 @@
-say_title ( gameforge . main_quest_flame_lv102 . _420_sayTitle ) 
-say ( gameforge . main_quest_flame_lv102 . _430_say ) 
-say ( gameforge . main_quest_lv97 . _670_counterName ) 
+say_title ( "[LC;3873]" ) 
+say ( "[LC;3874]" ) 
+say ( "[LC;5362]" ) 
 local remain1 = 50 - pc . count_item ( 50819 ) 
 local remain2 = 100 - pc . count_item ( 51001 ) 
 if remain1 < 0 then 
@@ -9,7 +9,7 @@ end
 if remain2 < 0 then 
 remain2 = 0 
 end 
-say ( string . format ( gameforge . main_quest_lv98 . _690_sayReward , item_name ( 50819 ) , remain1 , item_name ( 51001 ) , remain2 ) ) 
+say ( string . format ( "[LC;5426;%s;%d;%s;%d]" , item_name ( 50819 ) , remain1 , item_name ( 51001 ) , remain2 ) ) 
 q . set_counter_value ( remain1 + remain2 ) 
 if remain1 + remain2 == 0 then 
 set_state ( "state3_3" ) 

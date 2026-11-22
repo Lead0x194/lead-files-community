@@ -1,15 +1,15 @@
-say_title ( gameforge . horse_levelup . _400_qSetTitle ) 
+say_title ( "[LC;1603]" ) 
 if horse . get_level ( ) <= 10 then 
-say ( gameforge . horse_levelup . _410_say ) 
+say ( "[LC;1605]" ) 
 elseif horse . get_level ( ) >= 20 then 
-say ( gameforge . horse_levelup . _420_say ) 
+say ( "[LC;1606]" ) 
 elseif ( horse . get_level ( ) >= 11 and horse . get_level ( ) <= 19 ) then 
 local s = number ( 1 , 2 ) 
 if 1 >= s then 
-say ( gameforge . horse_levelup . _430_say ) 
+say ( "[LC;1607]" ) 
 pc . setqf ( "next_time" , 0 ) 
 elseif 2 >= s then 
-say ( gameforge . horse_levelup . _440_say ) 
+say ( "[LC;1608]" ) 
 if pc . countitem ( "50050" ) >= 1 then 
 char_log ( 0 , "HORSE_ADVANCE" , "BEGIN" ) 
 pc . removeitem ( "50050" , 1 ) 
@@ -19,15 +19,15 @@ horse . advance ( )
 horse . ride ( ) 
 char_log ( 0 , "HORSE_ADVANCE" , "INC horse_advance 1" ) 
 char_log ( 0 , "HORSE_ADVANCE" , "END" ) 
-say ( string . format ( gameforge . horse_levelup . _450_say , ( horse . get_level ( ) ) ) ) 
+say ( string . format ( "[LC;1609;%s]" , ( horse . get_level ( ) ) ) ) 
 if horse . get_level ( ) == 20 then 
-say ( gameforge . horse_levelup . _460_say ) 
+say ( "[LC;1610]" ) 
 pc . setqf ( "next_time" , 0 ) 
 else 
-say ( gameforge . horse_levelup . _470_say ) 
+say ( "[LC;1611]" ) 
 end 
 else 
-say ( gameforge . horse_levelup . _480_say ) 
+say ( "[LC;1612]" ) 
 end 
 end 
 end 

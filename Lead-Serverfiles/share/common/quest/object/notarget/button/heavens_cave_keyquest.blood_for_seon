@@ -1,4 +1,4 @@
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _420_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1550]" ) 
 say ( "" ) 
-say ( string . format ( gameforge . heavens_cave_keyquest . _290_say , get_map_name_by_number ( 1 ) ) ) 
+say ( string . format ( "[LC;1536;%s]" , get_map_name_by_number ( 1 ) ) ) 

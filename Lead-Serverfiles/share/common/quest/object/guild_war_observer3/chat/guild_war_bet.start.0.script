@@ -1,50 +1,50 @@
 local info_counter = pc . getqf ( "info" ) 
 if info_counter < 3 then 
-say_title ( gameforge . guild_war_bet . _20_sayTitle ) 
-say ( gameforge . guild_war_bet . _30_say ) 
+say_title ( "[LC;1376]" ) 
+say ( "[LC;1377]" ) 
 wait ( ) 
 end 
 local g = guild . get_reserve_war_table ( ) 
 local gname_table = { } 
 table . foreachi ( g , 
 function ( n , p ) 
-gname_table [ n ] = guild . get_name ( p [ 2 ] ) .. gameforge . guild_war_bet . _35_table .. guild . get_name ( p [ 3 ] ) 
+gname_table [ n ] = guild . get_name ( p [ 2 ] ) .. "[LC;1378]" .. guild . get_name ( p [ 3 ] ) 
 end ) 
 if table . getn ( g ) == 0 then 
-say_title ( gameforge . guild_war_bet . _40_sayTitle ) 
-say ( gameforge . guild_war_bet . _50_say ) 
+say_title ( "[LC;1379]" ) 
+say ( "[LC;1381]" ) 
 else 
-gname_table [ table . getn ( g ) + 1 ] = gameforge . locale . cancel say_title ( gameforge . guild_war_bet . _40_sayTitle ) 
-say ( gameforge . guild_war_bet . _60_say ) 
+gname_table [ table . getn ( g ) + 1 ] = "[LC;1891]" say_title ( "[LC;1379]" ) 
+say ( "[LC;1382]" ) 
 local s = select_table ( gname_table ) 
 if s ~= table . getn ( gname_table ) then 
 if guild . is_bet ( g [ s ] [ 1 ] ) then 
-say_title ( gameforge . guild_war_bet . _40_sayTitle ) 
-say ( gameforge . guild_war_bet . _70_say ) 
+say_title ( "[LC;1379]" ) 
+say ( "[LC;1383]" ) 
 else 
 local name1 = guild . get_name ( g [ s ] [ 2 ] ) 
 local name2 = guild . get_name ( g [ s ] [ 3 ] ) 
-say_title ( gameforge . guild_war_bet . _40_sayTitle ) 
-say ( string . format ( gameforge . guild_war_bet . _80_say , name1 .. " " .. name2 .. gameforge . guild_war_bet . _45_say .. g [ s ] [ 4 ] ) ) 
+say_title ( "[LC;1379]" ) 
+say ( string . format ( "[LC;1384;%s]" , name1 .. " " .. name2 .. "[LC;1380]" .. g [ s ] [ 4 ] ) ) 
 local guild_s = select ( name1 , name1 ) 
 if guild_s ~= 3 then 
 local bet_guild = g [ s ] [ guild_s + 1 ] 
-say_title ( gameforge . guild_war_bet . _90_sayTitle ) 
-say ( gameforge . locale . guild . war_bet_price ) 
+say_title ( "[LC;1385]" ) 
+say ( "[LC;2049]" ) 
 local price_button_table = { } 
 table . foreachi ( guild_war_bet_price_table , 
 function ( n , p ) 
-price_button_table [ n ] = p .. gameforge . locale . gold end ) 
-price_button_table [ table . getn ( price_button_table ) + 1 ] = gameforge . locale . cancel local price_idx = select_table ( price_button_table ) 
+price_button_table [ n ] = p .. "[LC;2021]" end ) 
+price_button_table [ table . getn ( price_button_table ) + 1 ] = "[LC;1891]" local price_idx = select_table ( price_button_table ) 
 if price_idx ~= table . getn ( price_button_table ) then 
 if pc . gold < guild_war_bet_price_table [ price_idx ] then 
-say_title ( gameforge . guild_war_bet . _40_sayTitle ) 
-say ( gameforge . guild_war_bet . _100_say ) 
+say_title ( "[LC;1379]" ) 
+say ( "[LC;1373]" ) 
 else 
-say_title ( gameforge . guild_war_bet . _40_sayTitle ) 
+say_title ( "[LC;1379]" ) 
 pc . changegold ( - guild_war_bet_price_table [ price_idx ] ) 
 guild . war_bet ( g [ s ] [ 1 ] , bet_guild , guild_war_bet_price_table [ price_idx ] ) 
-say ( gameforge . guild_war_bet . _110_say ) 
+say ( "[LC;1375]" ) 
 end 
 end 
 end 

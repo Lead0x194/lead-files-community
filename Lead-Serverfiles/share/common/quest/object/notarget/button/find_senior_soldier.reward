@@ -1,13 +1,13 @@
-say_title ( gameforge . find_senior_soldier . _180_sayTitle ) 
-say ( gameforge . find_senior_soldier . _190_say ) 
+say_title ( "[LC;981]" ) 
+say ( "[LC;982]" ) 
 local funcList = { 
-function ( ) find_senior_soldier . apply_affect ( gameforge . find_senior_soldier . _191_say , apply . MAX_HP , 100 ) end , 
-function ( ) find_senior_soldier . apply_affect ( gameforge . find_senior_soldier . _192_say , apply . HP_REGEN , 50 ) end , 
-function ( ) find_senior_soldier . apply_affect ( gameforge . find_senior_soldier . _193_say , apply . STR , 5 ) end , 
-function ( ) find_senior_soldier . apply_affect ( gameforge . find_senior_soldier . _194_say , apply . CON , 5 ) end , 
-function ( ) find_senior_soldier . apply_affect ( gameforge . find_senior_soldier . _195_say , apply . CRITICAL_PCT , 10 ) end , 
-function ( ) find_senior_soldier . apply_affect ( gameforge . find_senior_soldier . _196_say , apply . ATT_SPEED , 10 ) end , 
-function ( ) find_senior_soldier . apply_affect ( gameforge . find_senior_soldier . _197_say , apply . ATTBONUS_ANIMAL , 10 ) end , 
+function ( ) find_senior_soldier . apply_affect ( "[LC;983]" , apply . MAX_HP , 100 ) end , 
+function ( ) find_senior_soldier . apply_affect ( "[LC;984]" , apply . HP_REGEN , 50 ) end , 
+function ( ) find_senior_soldier . apply_affect ( "[LC;985]" , apply . STR , 5 ) end , 
+function ( ) find_senior_soldier . apply_affect ( "[LC;986]" , apply . CON , 5 ) end , 
+function ( ) find_senior_soldier . apply_affect ( "[LC;987]" , apply . CRITICAL_PCT , 10 ) end , 
+function ( ) find_senior_soldier . apply_affect ( "[LC;988]" , apply . ATT_SPEED , 10 ) end , 
+function ( ) find_senior_soldier . apply_affect ( "[LC;989]" , apply . ATTBONUS_ANIMAL , 10 ) end , 
 } 
 table_get_random_item ( funcList ) ( ) 
 restart_quest ( ) 

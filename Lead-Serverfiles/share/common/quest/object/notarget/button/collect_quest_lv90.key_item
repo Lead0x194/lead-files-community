@@ -1,13 +1,13 @@
 if pc . count_item ( 30227 ) > 0 then 
-say_title ( gameforge . collect_quest_lv90 . _200_say_title ) 
-say ( gameforge . collect_quest_lv90 . _210_say ) 
+say_title ( "[LC;522]" ) 
+say ( "[LC;523]" ) 
 say ( "" ) 
 return 
 end 
-say_title ( gameforge . collect_quest_lv90 . _220_say_title ) 
-say ( gameforge . collect_quest_lv90 . _230_say ) 
+say_title ( "[LC;524]" ) 
+say ( "[LC;525]" ) 
 say_item_vnum ( 30227 ) 
-say ( gameforge . collect_quest_lv90 . _240_say ) 
+say ( "[LC;528]" ) 
 say ( mob_name ( 1304 ) .. ", " .. mob_name ( 1093 ) .. "," ) 
 say ( mob_name ( 1901 ) .. "." ) 
 say ( "" .. mob_name ( 3090 ) .. "," .. mob_name ( 3290 ) .. "," .. mob_name ( 3590 ) .. "," ) 

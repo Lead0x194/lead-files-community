@@ -1,4 +1,4 @@
-say_title ( gameforge . main_quest_lv60 . _220_sendLetter ) 
-say ( gameforge . main_quest_lv60 . _230_say ) 
+say_title ( "[LC;4541]" ) 
+say ( "[LC;4542]" ) 
 say ( "" ) 
-q . set_counter ( gameforge . main_quest_lv60 . _250_counter , pc . getqf ( "remain_item" ) ) 
+q . set_counter ( "[LC;4544]" , pc . getqf ( "remain_item" ) ) 

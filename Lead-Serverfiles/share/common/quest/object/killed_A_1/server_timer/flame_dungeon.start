@@ -1,11 +1,11 @@
 if d . select ( get_server_timer_arg ( ) ) then 
 if d . count_monster ( ) <= 0 then 
 if d . getf ( "level" ) == 11 then 
-notice_multiline ( gameforge . flame_dungeon . _420_notice , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _430_notice , d . notice ) 
+notice_multiline ( "[LC;1076]" , d . notice ) 
+notice_multiline ( "[LC;1077]" , d . notice ) 
 else 
-notice_multiline ( gameforge . flame_dungeon . _420_notice , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _430_notice , d . notice ) 
+notice_multiline ( "[LC;1076]" , d . notice ) 
+notice_multiline ( "[LC;1077]" , d . notice ) 
 end 
 d . setf ( "level" , 0 ) 
 else 
