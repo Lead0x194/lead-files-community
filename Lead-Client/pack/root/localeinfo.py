@@ -54,15 +54,45 @@ def ReportMissingKeys(moduleName):
 	module.__dict__["__source__"] = sys.modules[moduleName]
 	sys.modules[moduleName] = module
 
+LANGUAGE_MODULE_DICT = {
+	"localeInfo" : (),
+	"uiScriptLocale" : (),
+	"emotion" : (),
+	"introCreate" : (),
+	"introEmpire" : (),
+	"introSelect" : (),
+	"uiAffectShower" : (),
+	"uiCharacter" : (),
+	"uiChat" : (),
+	"uiDragonSoul" : (),
+	"uiGuild" : ("BUILDING_DATA_LIST",),
+	"uiParty" : (),
+	"uiTarget" : (),
+	"uiToolTip" : (),
+}
+
 def SetLanguage(name):
 	if not app.SetLanguage(name):
 		return False
 
-	for moduleName in ("localeInfo", "uiScriptLocale"):
-		module = sys.modules.pop(moduleName)
-		module.__dict__.update(__import__(moduleName).__dict__)
+	moduleDict = {}
+	for moduleName in LANGUAGE_MODULE_DICT:
+		if moduleName in sys.modules:
+			moduleDict[moduleName] = sys.modules.pop(moduleName)
+
+	for moduleName in moduleDict:
+		__import__(moduleName)
+
+	for moduleName, module in moduleDict.items():
+		loaded = sys.modules[moduleName]
+		for keepName in LANGUAGE_MODULE_DICT[moduleName]:
+			value = module.__dict__[keepName]
+			loaded.__dict__[keepName] = value
+			loaded.__dict__.get("__source__", loaded).__dict__[keepName] = value
+		module.__dict__.update(loaded.__dict__)
 		sys.modules[moduleName] = module
 
+	app.SetDefaultFontName(sys.modules["localeInfo"].UI_DEF_FONT)
 	return True
 
 def LoadLocaleData():
