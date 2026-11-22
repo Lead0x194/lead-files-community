@@ -493,6 +493,22 @@ void CPythonItem::SetOwnership(DWORD dwVID, const char * c_pszName)
 	rkTextTail.SetItemTextTailOwner(dwVID, c_pszName);
 }
 
+void CPythonItem::RefreshNames()
+{
+	CPythonTextTail& rkTextTail = CPythonTextTail::Instance();
+
+	for (TGroundItemInstanceMap::iterator i = m_GroundItemInstanceMap.begin(); i != m_GroundItemInstanceMap.end(); ++i)
+	{
+		CItemData * pItemData;
+		if (!CItemManager::Instance().GetItemDataPointer(i->second->dwVirtualNumber, &pItemData))
+			continue;
+
+		rkTextTail.DeleteItemTextTail(i->first);
+		rkTextTail.RegisterItemTextTail(i->first, pItemData->GetName(), &i->second->ThingInstance);
+		rkTextTail.SetItemTextTailOwner(i->first, i->second->stOwnership.c_str());
+	}
+}
+
 bool CPythonItem::GetOwnership(DWORD dwVID, const char ** c_pszName)
 {
 	TGroundItemInstanceMap::iterator itor = m_GroundItemInstanceMap.find(dwVID);

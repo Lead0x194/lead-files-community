@@ -481,6 +481,7 @@ class CInstanceBase
 		void					GetBoundBox(D3DXVECTOR3 * vtMin, D3DXVECTOR3 * vtMax);
 
 		void					SetNameString(const char* c_szName, int len);
+		void					ChangeName(const char* c_szName);
 		bool					SetRace(DWORD dwRaceIndex);
 		void					SetVirtualID(DWORD wVirtualNumber);
 		void					SetVirtualNumber(DWORD dwVirtualNumber);

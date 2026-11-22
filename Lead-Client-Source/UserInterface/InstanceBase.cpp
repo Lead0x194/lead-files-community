@@ -1059,6 +1059,18 @@ void CInstanceBase::OnMoving()
 	m_GraphicThingInstance.__OnMoving();
 }
 
+void CInstanceBase::ChangeName(const char* c_szName)
+{
+	SetNameString(c_szName, static_cast<int>(strlen(c_szName)));
+
+	if (!m_isTextTail)
+		return;
+
+	DetachTextTail();
+	AttachTextTail();
+	RefreshTextTail();
+}
+
 void CInstanceBase::ChangeGuild(DWORD dwGuildID)
 {
 	m_dwGuildID=dwGuildID;
