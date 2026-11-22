@@ -564,6 +564,19 @@ namespace UI
 		return FALSE;
 	}
 
+	BOOL CWindow::OnMouseWheel(int nLen)
+	{
+		if (!m_poHandler || !PyObject_HasAttrString(m_poHandler, "OnMouseWheel"))
+			return FALSE;
+
+		long lValue = 0;
+		if (PyCallClassMemberFunc(m_poHandler, "OnMouseWheel", Py_BuildValue("(i)", nLen), &lValue))
+		if (0 != lValue)
+			return TRUE;
+
+		return FALSE;
+	}
+
 	BOOL CWindow::OnMouseLeftButtonDown()
 	{
 		long lValue;

@@ -839,6 +839,17 @@ namespace UI
 		m_pLeftCaptureWindow = NULL;
 	}
 
+	bool CWindowManager::RunMouseWheel(int nLen)
+	{
+		for (CWindow* pWin = GetPointWindow(); pWin; pWin = pWin->GetParent())
+		{
+			if (pWin->OnMouseWheel(nLen))
+				return true;
+		}
+
+		return false;
+	}
+
 	void CWindowManager::RunMouseLeftButtonDoubleClick(long x, long y)
 	{
 		SetMousePosition(x, y);
