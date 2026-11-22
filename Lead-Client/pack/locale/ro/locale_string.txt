@@ -340,7 +340,7 @@
 798	Du-te la Pescar şi îmbunătăţeşte-ţi Undiţa!
 799	Ai pierdut momeala.
 800	Ai prins un peşte! (%s)
-801	The length of the captured fish is %.2fcm.
+801	Lungimea peștelui prins este de %.2f cm.
 803	OX Ceilalţi participanţi la eveniment sunt notaţi.
 805	%s: %d
 806	Ai prins %d de %d.
@@ -389,7 +389,7 @@
 855	Poţi folosi până la %d licori.
 856	Lupta începe în 10 secunde.
 857	Duelul a început.
-858	TRUE
+858	ADEVĂRAT
 859	Duelul va fi încheiat deoarece a apărut o problema cu arena de duel.
 860	Duelul va fi încheiat deoarece limita de timp a fost depăşită.
 861	În 10 secunde vei fi teleportat în oraş.
@@ -400,7 +400,7 @@
 866	%s a câştigat.
 867	În 10 secunde vei fi teleportat în oraş.
 868	În 10 secunde începe runda următoare.
-869	FALSE
+869	FALS
 870	Inamicul de duel a fost deconectat. Duelul este întrerupt.
 871	Nivelul de drop obiecte este în momentul de faţă plus %d%%
 872	Nivelul de drop Yang este în momentul de faţă plus %d%%
@@ -447,8 +447,8 @@
 924	[Grupă] Nu poţi striga membrii grupei la poziţia ta actuală.
 925	Nu (X)
 926	Grupul tău coopereaza bine împreună, membrii grupului din apropierea liderului de grup vor primi un bonus de experienţă.
-927	Leader
-928	Member
+927	Lider
+928	Membru
 929	[Breasla] Experienţa oferită este mai mare decât experienţa rămasă.
 930	[Breasla] Mesajul nu poate fi şters.
 931	[Breasla] Spiritul Dragonului insuficient. (%d, %d)
@@ -559,7 +559,7 @@
 1205	Nu poţi folosi acest obiect în duel.
 1217	Nu poţi face un foc de tabără aici.
 1228	Nu poţi face un foc de tabără în apă.
-1229	Your inventory is full.
+1229	Inventarul tău este plin.
 1237	Încuiat. Ar trebui să cauţi cheia.
 1248	Acest obiect nu poate fi deschis cu o cheie.
 1258	Aceasta este cheia corectă.
@@ -569,9 +569,9 @@
 1299	Priveşte ce a ieşit din cutie!
 1308	[Breaslă] Nivelul breslei este prea mic.
 1310	Dacă inhalezi fumul roşu din cutie îţi creşte repeziciunea.
-5000	#%d cannot create item.
-5001	#%d item not exist by that vnum.
-5002	#%u item not exist by that vnum.
+5000	#%d nu poate crea obiectul.
+5001	#%d: nu există niciun obiect cu acest vnum.
+5002	#%u: nu există niciun obiect cu acest vnum.
 5003	%4d %5d %5d %8d %u
 5004	%d %d
 5005	%d %s %s
@@ -584,181 +584,181 @@
 5012	%s %s
 5013	%s %s (%d)
 5014	%s %s sec
-5015	%s %s(%ld%%) FAIL
-5016	%s %s(%ld%%) SUCCESS
+5015	%s %s(%ld%%) EȘEC
+5016	%s %s(%ld%%) SUCCES
 5017	%s attack hack! time (delta, limit)=(%u, %u) hack_count %d
-5018	%s dodge! (%d%%)
-5019	%s for empire : %d
-5020	%s for guild : %d
-5021	%s for player : %d
-5022	%s is not in same map
-5023	%s needed.
-5024	%s not exist
-5025	%s rolled the dice and got %d. (%d-%d)
-5026	%s spawned in %dx%d
-5027	%s's %s change %d to %d
-5028	%s's %s set to [%d]
-5029	%s's %s set to [%lld]
-5030	%s(%d%%) -> %s FAIL
-5031	%s(%d%%) -> %s SUCCESS
-5032	%s: no such a player
-5033	%s: no such a player.
+5018	%s a schivat! (%d%%)
+5019	%s pentru imperiu : %d
+5020	%s pentru breaslă : %d
+5021	%s pentru jucător : %d
+5022	%s nu este pe aceeași hartă
+5023	Este necesar: %s.
+5024	%s nu există
+5025	%s a aruncat zarul și a obținut %d. (%d-%d)
+5026	%s a apărut în %dx%d
+5027	%s: %s s-a schimbat de la %d la %d
+5028	%s: %s setat la [%d]
+5029	%s: %s setat la [%lld]
+5030	%s(%d%%) -> %s EȘEC
+5031	%s(%d%%) -> %s SUCCES
+5032	%s: jucătorul nu există
+5033	%s: jucătorul nu există.
 5034	%s[%d] attacks at: %d %d
 5035	%s[%d] vs %s[%d] time %u sec.
-5036	+3 Arcanum cannot be improved with this item
-5037	-- Affect List of %s -------------------------------
+5036	Arcanul +3 nu poate fi îmbunătățit cu acest obiect.
+5037	-- Lista efectelor pentru %s -------------------------------
 5038	-> %s, DAM %d HP %d(%d%%) %s%s
-5039	5 minutes left until the monsters attack!!!
+5039	Mai sunt 5 minute până când monștrii atacă!!!
 5040	<- %s, DAM %d HP %d(%d%%) %s%s
-5041	<Guild> %d dragon power has been restored.
-5042	<Guild> New membership is currently restricted.
-5043	<Guild> Only the guild leader can use guild skills.
-5044	<Guild> The guild is already at the highest level.
-5045	<Guild> The guild is currently at war.
-5046	<Guild> The other party cannot receive invitation requests.
-5047	<Guild> Uses %d skill (%d, %d) to %u
-5048	<Guild> You cannot withdraw a guild member during a guild war.
+5041	<Breaslă> Puterea dragonului %d a fost restabilită.
+5042	<Breaslă> Membrii noi sunt restricționați momentan.
+5043	<Breaslă> Doar liderul breslei poate folosi abilitățile breslei.
+5044	<Breaslă> Breasla are deja nivelul maxim.
+5045	<Breaslă> Breasla este momentan în război.
+5046	<Breaslă> Cealaltă parte nu poate primi invitații.
+5047	<Breaslă> Folosește abilitatea %d (%d, %d) asupra lui %u
+5048	<Breaslă> Nu poți exclude un membru al breslei în timpul unui război de breaslă.
 5049	<IMMUNE_FAIL> (%s)
 5050	<IMMUNE_FAIL> (%s) NO_IMMUNE_FLAG
 5051	<IMMUNE_SUCCESS> (%s)
-5052	<Party> Attacker setup failed.
-5053	<Party> You can only invite parties within -%d to +%d levels.
-5054	<Party> You have left the party.
-5055	<Warehouse> This item cannot be moved to the warehouse.
+5052	<Grup> Configurarea atacatorului a eșuat.
+5053	<Grup> Poți invita doar grupuri cu niveluri între -%d și +%d.
+5054	<Grup> Ai părăsit grupul.
+5055	<Depozit> Acest obiect nu poate fi mutat în depozit.
 5056	<duration>  hour
 5057	<empire>    0 - 3 (0==all)
 5058	<type>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp
 5059	<value>     percent
-5060	===== OX QUIZ LIST =====
-5061	===== OX QUIZ LIST END =====
+5060	===== LISTA ÎNTREBĂRILOR OX =====
+5061	===== SFÂRȘITUL LISTEI ÎNTREBĂRILOR OX =====
 5062	ARROW %s -> %s, DAM %d DIST %d GAP %d %% %d
 5063	ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%
 5064	ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d
-5065	Abilities cannot be increased while transformed.
-5066	Affect successfully removed.
-5067	After a while, we return to the village.
+5065	Abilitățile nu pot fi crescute cât timp ești transformat.
+5066	Efectul a fost eliminat cu succes.
+5067	După un timp, ne întoarcem în sat.
 5068	Attack :name[%s] Vnum[%d] can't use skill by attack(warning)
 5069	Attack Speed Hack(%s), (delta, limit)=(%u, %u)
-5070	BODY : %s
+5070	CORP : %s
 5071	BONUS:
-5072	Bonuschange of %s (Slot: %d) successfully finished.
-5073	Breaks off the engagement between player %d and player %d.
-5074	Building rotation feature is not yet available
-5075	COSTUME status:
-5076	Can only be used on weapons and armor.
-5077	Can't find map by index %d
-5078	Cannot equip items directly from switchbot.
-5079	Cannot find map (index %d)
-5080	Cannot find map command syntax: /goto <mapname> [empire]
-5081	Cannot find player(%s). %s is not in your game server.
-5082	Cannot find player(%s). Perhaps %s doesn't login or exist.
-5083	Cannot move active switchbot item.
-5084	Cannot move equipped items to switchbot.
-5085	Cannot remove item from switchbot. Inventory is full.
-5086	Cannot set stat under initial stat.
-5087	Charged for %d seconds.
-5088	Charging is not possible.
-5089	Chat block requested.
-5090	Cold Resistance %d%%
-5091	Construction costs are insufficient.
-5092	Construction is not possible due to lack of materials.
+5072	Schimbarea bonusului pentru %s (Slot: %d) s-a încheiat cu succes.
+5073	Încheie logodna dintre jucătorul %d și jucătorul %d.
+5074	Funcția de rotire a clădirilor nu este încă disponibilă.
+5075	Stare COSTUM:
+5076	Poate fi folosit doar pe arme și armuri.
+5077	Nu se găsește harta cu indexul %d
+5078	Nu poți echipa obiecte direct din switchbot.
+5079	Nu se găsește harta (index %d)
+5080	Nu se găsește harta. Sintaxa comenzii: /goto <mapname> [empire]
+5081	Nu se găsește jucătorul (%s). %s nu se află pe serverul tău de joc.
+5082	Nu se găsește jucătorul (%s). Poate că %s nu este conectat sau nu există.
+5083	Nu poți muta obiectul activ din switchbot.
+5084	Nu poți muta obiecte echipate în switchbot.
+5085	Nu poți scoate obiectul din switchbot. Inventarul este plin.
+5086	Nu poți seta statisticile sub valoarea inițială.
+5087	Încărcat timp de %d secunde.
+5088	Încărcarea nu este posibilă.
+5089	Blocarea chatului a fost solicitată.
+5090	Rezistență la frig %d%%
+5091	Costurile de construcție sunt insuficiente.
+5092	Construcția nu este posibilă din lipsă de materiale.
 5093	DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%
 5094	DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%
-5095	Dalian has started successfully.
-5096	Dark Resistance %d%%
-5097	Defeated the noble lord and all his subordinates.
-5098	Delete failed. Quest flag does not exist.
-5099	Delete success.
-5100	Dragon Soulstone Chest is not activated.
-5101	Dropped items will disappear after %d minutes.
-5102	Due to lack of mental power, you cannot see other people's equipment.
-5103	Earth Resistance %d%%
-5104	Equipped items cannot be sold in personal stores.
-5105	Event Helper Delete
-5106	Event Helper Spawn
-5107	Evil energy gathers at the central altar.
-5108	Example) 10s, 10m, 1m 30s
+5095	Dalian a pornit cu succes.
+5096	Rezistență la întuneric %d%%
+5097	Nobilul și toți subordonații lui au fost înfrânți.
+5098	Ștergerea a eșuat. Flagul misiunii nu există.
+5099	Ștergere reușită.
+5100	Cufărul cu Piatra Sufletului Dragonului nu este activat.
+5101	Obiectele aruncate vor dispărea după %d minute.
+5102	Din cauza lipsei de putere mentală, nu poți vedea echipamentul altor persoane.
+5103	Rezistență la pământ %d%%
+5104	Obiectele echipate nu pot fi vândute în magazinele personale.
+5105	Ștergere ajutor eveniment
+5106	Apariție ajutor eveniment
+5107	Energie malefică se adună la altarul central.
+5108	Exemplu) 10s, 10m, 1m 30s
 5109	FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%
 5110	Find %d, count %d, require %d
-5111	Fire Damage %d
-5112	Forced shutdown of Dalian failed
-5113	Get closer and get off.
-5114	Get closer and get on it.
-5115	Guild Land(%d) Cleared
+5111	Daune de foc %d
+5112	Oprirea forțată a lui Dalian a eșuat
+5113	Apropie-te și coboară.
+5114	Apropie-te și urcă.
+5115	Terenul breslei (%d) a fost eliberat
 5116	GuildID: %d
 5117	GuildMasterPID: %d
-5118	HAIR : %s
+5118	PĂR : %s
 5119	HP %d/%d
 5120	HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%
-5121	Health %d/%d (%d%%)
-5122	Horse Information:
-5123	I am fighting for my life. Stay focused.
-5124	I can't wear it because I don't have the item.
-5125	I'm having trouble starting sparring.
+5121	Sănătate %d/%d (%d%%)
+5122	Informații despre cal:
+5123	Lupt pentru viața mea. Rămâi concentrat.
+5124	Nu pot purta asta deoarece nu am obiectul.
+5125	Am probleme în a începe lupta de antrenament.
 5126	ICE:%3d%% EARTH:%3d%% DARK:%3d%%
-5127	Invalid argument.
-5128	Invalid command %s
-5129	Invalid format of time. Please specify by adding h, m, or s.
-5130	Invalid item type for switchbot.
-5131	Invalid syntax
-5132	Invalid syntax: no command
-5133	Inventory is not activated.
+5127	Argument invalid.
+5128	Comandă invalidă %s
+5129	Format de timp invalid. Specifică adăugând h, m sau s.
+5130	Tip de obiect invalid pentru switchbot.
+5131	Sintaxă invalidă
+5132	Sintaxă invalidă: nicio comandă
+5133	Inventarul nu este activat.
 5134	IsInWar: %d
-5135	It doesn't work. Check the skill formula
-5136	It is higher than the application level and cannot be used.
-5137	It is in a state where it cannot be disguised.
-5138	Items in use cannot be sold in personal stores.
-5139	Items that are being worn cannot be sold.
+5135	Nu funcționează. Verifică formula abilității.
+5136	Depășește nivelul de aplicare și nu poate fi folosit.
+5137	Te afli într-o stare în care nu te poți deghiza.
+5138	Obiectele aflate în uz nu pot fi vândute în magazinele personale.
+5139	Obiectele purtate nu pot fi vândute.
 5140	LEV %d
 5141	LUA_ERROR: quest %s.%s %s
-5142	Level  %d
+5142	Nivel  %d
 5143	MALL:
-5144	Manufacturing failed.
+5144	Fabricarea a eșuat.
 5145	MapIndex: %d MobCount %d
 5146	MapInfo
-5147	Monsters are advancing towards %s' castle.
-5148	Monsters have started attacking the castle.
-5149	New bonus added successfully.
-5150	No one currently blocked.
-5151	No such a skill by that name.
-5152	No such mob by that vnum
-5153	Not a place for fishing
-5154	Not affected by that type and point.
-5155	Not enough inventory space.
-5156	Not yet available.
-5157	OX-Question: 
-5158	One minute left until the monsters attack!!!
-5159	Opponent's critical hit chance reduced by %d%%
-5160	Opponent's piercing attack probability decreases by %d%%
-5161	Please defeat the Demon Lord within 30 minutes.
-5162	Poison Damage %d
+5147	Monștrii înaintează spre castelul lui %s.
+5148	Monștrii au început să atace castelul.
+5149	Bonusul nou a fost adăugat cu succes.
+5150	Nimeni nu este blocat momentan.
+5151	Nu există nicio abilitate cu acest nume.
+5152	Nu există niciun monstru cu acest vnum
+5153	Nu este un loc pentru pescuit
+5154	Nu ești afectat de acest tip și punct.
+5155	Nu ai suficient spațiu în inventar.
+5156	Încă indisponibil.
+5157	Întrebare OX:
+5158	Mai este un minut până când monștrii atacă!!!
+5159	Șansa de lovitură critică a adversarului a scăzut cu %d%%
+5160	Probabilitatea de atac penetrant a adversarului scade cu %d%%
+5161	Te rugăm să-l învingi pe Stăpânul Demonilor în 30 de minute.
+5162	Daune de otravă %d
 5163	PossibleDistant %f nNowDist %f
 5164	QUEST_SYSERR %s
 5165	QUEST_SYSLOG %s
-5166	Quest flag set: %s %d
-5167	RESISTANCES:
-5168	Reloading Admin information.
-5169	Reloading crafting information.
-5170	Reloading notice string.
-5171	Reloading prototype tables,
-5172	Reloading quest.
-5173	Reloading state_user_count.
+5166	Flag misiune setat: %s %d
+5167	REZISTENȚE:
+5168	Se reîncarcă informațiile de administrator.
+5169	Se reîncarcă informațiile de creare.
+5170	Se reîncarcă textul anunțului.
+5171	Se reîncarcă tabelele prototip,
+5172	Se reîncarcă misiunea.
+5173	Se reîncarcă state_user_count.
 5174	RequestSetEventFlag %s %d
 5175	Respaw around
 5176	Respaw everywhere
 5177	SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%
 5178	SP %d/%d
 5179	SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%
-5180	Safebox size set to %d
-5181	Save done.
-5182	Save failed.
-5183	Spawn failed.
-5184	Spiritstones cannot be improved with this item.
+5180	Dimensiunea depozitului a fost setată la %d
+5181	Salvare finalizată.
+5182	Salvarea a eșuat.
+5183	Apariția a eșuat.
+5184	Pietrele spirituale nu pot fi îmbunătățite cu acest obiect.
 5185	Stam   %d/%d (%d%%)
-5186	Subskill of [%s] was reset
-5187	Successful forced shutdown of Dalian
-5188	Switchbot stopped. Not enough money.
-5189	Switchbot stopped. Out of switchers.
+5186	Subabilitatea [%s] a fost resetată
+5187	Oprirea forțată a lui Dalian a reușit
+5188	Switchbot oprit. Nu ai suficienți bani.
+5189	Switchbot oprit. Nu mai ai switchere.
 5190	Syntax: /affect_remove <player name>
 5191	Syntax: /affect_remove <type> <point>
 5192	Syntax: /saveati <map_index> <filename>
@@ -770,41 +770,41 @@
 5198	Syntax: setskill <name> <lev>
 5199	Syntax: setskillother <target> <skillname> <lev>
 5200	TREE:%3d%% MONSTER:%3d%%
-5201	Target is in %d channel (my channel %d)
-5202	Test server timeout passed
-5203	The Dragon's Lair will collapse in %d seconds!
-5204	The buildings required for construction have not been built.
-5205	The construction task failed beyond the building cost information.
-5206	The leader of the monsters has appeared.
-5207	The monsters are showing signs of retreating.
-5208	The monsters began to retreat.
-5209	The noble lord has retreated.
-5210	The other person is unable to add you as a friend.
-5211	The sensor was activated, but no Arcanum was detected.
-5212	The subcommand of the command is incorrect.
-5213	The value was entered incorrectly.
-5214	There are few stat points left.
-5215	There are no spammers.
-5216	There are no stat points left.
-5217	There are types of buildings that cannot be built together.
-5218	There is no character(%s) by that name
-5219	There is no guild with that name or number.
-5220	There is no one by that name
-5221	There is no spirit stone to take out.
-5222	There is no such a skill.
-5223	There is no such character.
-5224	There is no such command
-5225	This building does not exist.
-5226	This guild is currently at war.
-5227	This is a location where buildings cannot be built.
-5228	This is an inappropriate guild name.
-5229	Time remaining until socket is removed from %s: %d
+5201	Ținta este pe canalul %d (canalul meu %d)
+5202	Timpul serverului de test a expirat
+5203	Bârlogul Dragonului se va prăbuși în %d secunde!
+5204	Clădirile necesare pentru construcție nu au fost construite.
+5205	Sarcina de construcție a eșuat dincolo de informațiile despre costul clădirii.
+5206	Liderul monștrilor a apărut.
+5207	Monștrii dau semne că se retrag.
+5208	Monștrii au început să se retragă.
+5209	Nobilul s-a retras.
+5210	Cealaltă persoană nu te poate adăuga ca prieten.
+5211	Senzorul a fost activat, dar nu a fost detectat niciun Arcan.
+5212	Subcomanda comenzii este incorectă.
+5213	Valoarea a fost introdusă incorect.
+5214	Au rămas puține puncte de statistică.
+5215	Nu există spameri.
+5216	Nu au mai rămas puncte de statistică.
+5217	Există tipuri de clădiri care nu pot fi construite împreună.
+5218	Nu există niciun personaj (%s) cu acest nume
+5219	Nu există nicio breaslă cu acest nume sau număr.
+5220	Nu există nimeni cu acest nume
+5221	Nu există nicio piatră spirituală de scos.
+5222	Nu există o astfel de abilitate.
+5223	Nu există un astfel de personaj.
+5224	Nu există o astfel de comandă
+5225	Această clădire nu există.
+5226	Această breaslă este momentan în război.
+5227	Aceasta este o locație în care nu se pot construi clădiri.
+5228	Acesta este un nume de breaslă nepotrivit.
+5229	Timp rămas până la scoaterea soclului de la %s: %d
 5230	Total %d
-5231	Total [%d] %d / %d / %d (this server %d)
-5232	Transfer me?!?
-5233	Transfer requested.
+5231	Total [%d] %d / %d / %d (acest server %d)
+5232	Mă transferi?!?
+5233	Transfer solicitat.
 5234	Type Point Modif Duration Flag
-5235	Unknown error
+5235	Eroare necunoscută
 5236	Usage : /horse_set_stat <hp> <stamina>
 5237	Usage: %s <name>
 5238	Usage: block_chat <name> <time> (0 to off)
@@ -825,38 +825,38 @@
 5253	Use: mc <one>
 5254	Use: mob <mob one>
 5255	WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%
-5256	We plan to attack the castle in 10 minutes.
-5257	Weekly Event End
-5258	Weekly Event Start
-5259	You can no longer increase the value of good and evil.
-5260	You can't ride there.
-5261	You can't throw away gold yet.
-5262	You cannot add more bonus.
-5263	You cannot change the bonuses.
-5264	You cannot move to another area within 1 minute after the transaction.
-5265	You cannot move to another location while the trading window or warehouse is open.
-5266	You cannot read books while transformed.
-5267	You cannot ride a horse while downed.
-5268	You cannot unequip the belt while items are inside the beld inventory.
-5269	You cannot wear robes while riding a horse.
-5270	You goto ( %d, %d )
-5271	You have destroyed %s.
-5272	You have gained %d exp.
-5273	You roll a die and roll %d. (%d-%d)
-5274	You warp to ( %d, %d )
-5275	Your Mining Points have increased! (%lld/%d)
-5276	Your chat has been blocked by a GM.
-5277	Your inventory is full and you cannot unload.
-5278	Your mining points have reached their maximum. (%lld)
-5279	[1106-??]No puedes unir esto.
+5256	Plănuim să atacăm castelul în 10 minute.
+5257	Sfârșitul evenimentului săptămânal
+5258	Începutul evenimentului săptămânal
+5259	Nu mai poți crește valoarea binelui și a răului.
+5260	Nu poți călări acolo.
+5261	Încă nu poți arunca Yang.
+5262	Nu mai poți adăuga bonusuri.
+5263	Nu poți schimba bonusurile.
+5264	Nu te poți muta în altă zonă în decurs de 1 minut după tranzacție.
+5265	Nu te poți muta în altă locație cât timp fereastra de schimb sau depozitul este deschis.
+5266	Nu poți citi cărți cât timp ești transformat.
+5267	Nu poți călări un cal cât timp ești doborât.
+5268	Nu poți scoate cureaua cât timp există obiecte în inventarul curelei.
+5269	Nu poți purta robe în timp ce călărești un cal.
+5270	Te-ai mutat la ( %d, %d )
+5271	Ai distrus %s.
+5272	Ai câștigat %d exp.
+5273	Ai aruncat zarul și ai obținut %d. (%d-%d)
+5274	Te-ai teleportat la ( %d, %d )
+5275	Punctele tale de minerit au crescut! (%lld/%d)
+5276	Chatul tău a fost blocat de un GM.
+5277	Inventarul tău este plin și nu poți descărca.
+5278	Punctele tale de minerit au atins maximul. (%lld)
+5279	[1106-??]Nu poți uni asta.
 5280	[Only Test] Success_Prob %d, RefineLevel %d
-5281	[SYSTEM ERROR]You cannot upgrade dragon soul without refine window.
-5282	[SYSTEM ERROR]You cannot use dragon soul refine window.
-5283	[TEST_SERVER] Failed to learn skill
-5284	[TEST_SERVER] Success to learn skill
+5281	[SYSTEM ERROR]Nu poți îmbunătăți sufletul dragonului fără fereastra de îmbunătățire.
+5282	[SYSTEM ERROR]Nu poți folosi fereastra de îmbunătățire a sufletului dragonului.
+5283	[TEST_SERVER] Învățarea abilității a eșuat
+5284	[TEST_SERVER] Abilitatea a fost învățată cu succes
 5285	[TestOnly]Pulse %d LoadTime %d PASS %d
 5286	[TestOnly][Safebox]Pulse %d LoadTime %d PASS %d
-5287	cannot disconnect myself
+5287	nu te poți deconecta pe tine însuți
 5288	cell : %d, name : %s, id : %d
 5289	cooltime not finished %s %d
 5290	cube add <inveltory_index>

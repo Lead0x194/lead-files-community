@@ -200,7 +200,7 @@
 578	Geri Kazanılan Enerji +%d
 579	Geri Kazanılan SP +%d
 580	Zehirli Saldırı %d
-582	Star +%d
+582	Yıldız +%d
 583	Hız azalması +%d
 584	Kritik saldırı şansı %%%d
 585	Delici saldırı şansı %%%d
@@ -559,7 +559,7 @@
 1205	Bu eşyayı düelloda kullanamazsın.
 1217	Buraya kamp ateşi yakamazsın.
 1228	Suyun altında kamp ateşi yakamazsın.
-1229	Your inventory is full.
+1229	Envanterin dolu.
 1237	Kapalı. Anahtarı aramalısın.
 1248	Bu eşya bir anahtarla açılamaz.
 1258	Doğru anahtar.
@@ -569,9 +569,9 @@
 1299	Bak kutudan ne çıktı!
 1308	[Lonca] Lonca seviyesi çok düşük.
 1310	Eğer kutudan gelen kırmızı dumanı solursan, hızın artar!
-5000	#%d cannot create item.
-5001	#%d item not exist by that vnum.
-5002	#%u item not exist by that vnum.
+5000	#%d eşyası oluşturulamıyor.
+5001	Bu vnum ile eşya mevcut değil: #%d
+5002	Bu vnum ile eşya mevcut değil: #%u
 5003	%4d %5d %5d %8d %u
 5004	%d %d
 5005	%d %s %s
@@ -583,182 +583,182 @@
 5011	%s %d prob 800
 5012	%s %s
 5013	%s %s (%d)
-5014	%s %s sec
-5015	%s %s(%ld%%) FAIL
-5016	%s %s(%ld%%) SUCCESS
-5017	%s attack hack! time (delta, limit)=(%u, %u) hack_count %d
-5018	%s dodge! (%d%%)
-5019	%s for empire : %d
-5020	%s for guild : %d
-5021	%s for player : %d
-5022	%s is not in same map
-5023	%s needed.
-5024	%s not exist
-5025	%s rolled the dice and got %d. (%d-%d)
-5026	%s spawned in %dx%d
-5027	%s's %s change %d to %d
-5028	%s's %s set to [%d]
-5029	%s's %s set to [%lld]
-5030	%s(%d%%) -> %s FAIL
-5031	%s(%d%%) -> %s SUCCESS
-5032	%s: no such a player
-5033	%s: no such a player.
-5034	%s[%d] attacks at: %d %d
-5035	%s[%d] vs %s[%d] time %u sec.
-5036	+3 Arcanum cannot be improved with this item
-5037	-- Affect List of %s -------------------------------
-5038	-> %s, DAM %d HP %d(%d%%) %s%s
-5039	5 minutes left until the monsters attack!!!
-5040	<- %s, DAM %d HP %d(%d%%) %s%s
-5041	<Guild> %d dragon power has been restored.
-5042	<Guild> New membership is currently restricted.
-5043	<Guild> Only the guild leader can use guild skills.
-5044	<Guild> The guild is already at the highest level.
-5045	<Guild> The guild is currently at war.
-5046	<Guild> The other party cannot receive invitation requests.
-5047	<Guild> Uses %d skill (%d, %d) to %u
-5048	<Guild> You cannot withdraw a guild member during a guild war.
+5014	%s %s sn
+5015	%s %s(%ld%%) BAŞARISIZ
+5016	%s %s(%ld%%) BAŞARILI
+5017	%s saldırı hilesi! zaman (delta, limit)=(%u, %u) hack_count %d
+5018	%s kaçındı! (%d%%)
+5019	%s krallık için: %d
+5020	%s lonca için: %d
+5021	%s oyuncu için: %d
+5022	%s aynı haritada değil
+5023	%s gerekli.
+5024	%s mevcut değil
+5025	%s zar attı ve %d geldi. (%d-%d)
+5026	%s %dx%d alanında belirdi
+5027	%s adlı oyuncunun %s değeri %d iken %d oldu
+5028	%s adlı oyuncunun %s değeri [%d] olarak ayarlandı
+5029	%s adlı oyuncunun %s değeri [%lld] olarak ayarlandı
+5030	%s(%d%%) -> %s BAŞARISIZ
+5031	%s(%d%%) -> %s BAŞARILI
+5032	%s: böyle bir oyuncu yok
+5033	%s: böyle bir oyuncu yok.
+5034	%s[%d] saldırıyor: %d %d
+5035	%s[%d] vs %s[%d] süre %u sn.
+5036	+3 Arcanum bu eşya ile geliştirilemez
+5037	-- %s Etki Listesi -------------------------------
+5038	-> %s, HSR %d HP %d(%d%%) %s%s
+5039	Canavarların saldırısına 5 dakika kaldı!!!
+5040	<- %s, HSR %d HP %d(%d%%) %s%s
+5041	<Lonca> %d ejderha gücü geri yüklendi.
+5042	<Lonca> Yeni üye alımı şu anda kısıtlı.
+5043	<Lonca> Lonca becerilerini yalnızca lonca lideri kullanabilir.
+5044	<Lonca> Lonca zaten en yüksek seviyede.
+5045	<Lonca> Lonca şu anda savaşta.
+5046	<Lonca> Karşı taraf davet isteklerini alamıyor.
+5047	<Lonca> %d becerisini (%d, %d) %u hedefine kullanır
+5048	<Lonca> Lonca savaşı sırasında bir lonca üyesini çıkaramazsın.
 5049	<IMMUNE_FAIL> (%s)
 5050	<IMMUNE_FAIL> (%s) NO_IMMUNE_FLAG
 5051	<IMMUNE_SUCCESS> (%s)
-5052	<Party> Attacker setup failed.
-5053	<Party> You can only invite parties within -%d to +%d levels.
-5054	<Party> You have left the party.
-5055	<Warehouse> This item cannot be moved to the warehouse.
-5056	<duration>  hour
-5057	<empire>    0 - 3 (0==all)
-5058	<type>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp
-5059	<value>     percent
-5060	===== OX QUIZ LIST =====
-5061	===== OX QUIZ LIST END =====
+5052	<Grup> Saldırgan ayarlanamadı.
+5053	<Grup> Yalnızca -%d ile +%d seviye aralığındaki gruplara davet gönderebilirsin.
+5054	<Grup> Gruptan ayrıldın.
+5055	<Depo> Bu eşya depoya taşınamaz.
+5056	<süre>  saat
+5057	<krallık>    0 - 3 (0==hepsi)
+5058	<tür>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp
+5059	<değer>     yüzde
+5060	===== OX SORU LİSTESİ =====
+5061	===== OX SORU LİSTESİ SONU =====
 5062	ARROW %s -> %s, DAM %d DIST %d GAP %d %% %d
 5063	ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%
-5064	ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d
-5065	Abilities cannot be increased while transformed.
-5066	Affect successfully removed.
-5067	After a while, we return to the village.
-5068	Attack :name[%s] Vnum[%d] can't use skill by attack(warning)
-5069	Attack Speed Hack(%s), (delta, limit)=(%u, %u)
-5070	BODY : %s
+5064	ATT:%3d%% DEF:%3d%% EXP:%3d%% EŞYAx%d YANGx%d
+5065	Dönüşüm sırasında yetenekler artırılamaz.
+5066	Etki başarıyla kaldırıldı.
+5067	Bir süre sonra köye döneceğiz.
+5068	Saldırı :isim[%s] Vnum[%d] saldırı ile beceri kullanamaz(uyarı)
+5069	Saldırı Hızı Hilesi(%s), (delta, limit)=(%u, %u)
+5070	GÖVDE : %s
 5071	BONUS:
-5072	Bonuschange of %s (Slot: %d) successfully finished.
-5073	Breaks off the engagement between player %d and player %d.
-5074	Building rotation feature is not yet available
-5075	COSTUME status:
-5076	Can only be used on weapons and armor.
-5077	Can't find map by index %d
-5078	Cannot equip items directly from switchbot.
-5079	Cannot find map (index %d)
-5080	Cannot find map command syntax: /goto <mapname> [empire]
-5081	Cannot find player(%s). %s is not in your game server.
-5082	Cannot find player(%s). Perhaps %s doesn't login or exist.
-5083	Cannot move active switchbot item.
-5084	Cannot move equipped items to switchbot.
-5085	Cannot remove item from switchbot. Inventory is full.
-5086	Cannot set stat under initial stat.
-5087	Charged for %d seconds.
-5088	Charging is not possible.
-5089	Chat block requested.
-5090	Cold Resistance %d%%
-5091	Construction costs are insufficient.
-5092	Construction is not possible due to lack of materials.
+5072	%s eşyasının bonus değişimi (Yuva: %d) başarıyla tamamlandı.
+5073	%d oyuncusu ile %d oyuncusu arasındaki nişanı bozar.
+5074	İnşaat döndürme özelliği henüz mevcut değil
+5075	KOSTÜM durumu:
+5076	Yalnızca silah ve zırhlarda kullanılabilir.
+5077	%d indeksli harita bulunamadı
+5078	Eşyalar doğrudan switchbot'tan kuşanılamaz.
+5079	Harita bulunamadı (indeks %d)
+5080	Harita bulunamadı, komut sözdizimi: /goto <mapname> [empire]
+5081	Oyuncu bulunamadı(%s). %s senin oyun sunucunda değil.
+5082	Oyuncu bulunamadı(%s). %s giriş yapmamış veya mevcut değil olabilir.
+5083	Aktif switchbot eşyası taşınamaz.
+5084	Kuşanılmış eşyalar switchbot'a taşınamaz.
+5085	Eşya switchbot'tan çıkarılamıyor. Envanter dolu.
+5086	Başlangıç değerinin altına stat ayarlanamaz.
+5087	%d saniye boyunca şarj edildi.
+5088	Şarj etmek mümkün değil.
+5089	Sohbet engelleme istendi.
+5090	Soğuk Direnci %d%%
+5091	İnşaat masrafları yetersiz.
+5092	Malzeme eksikliği nedeniyle inşaat mümkün değil.
 5093	DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%
-5094	DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%
-5095	Dalian has started successfully.
-5096	Dark Resistance %d%%
-5097	Defeated the noble lord and all his subordinates.
-5098	Delete failed. Quest flag does not exist.
-5099	Delete success.
-5100	Dragon Soulstone Chest is not activated.
-5101	Dropped items will disappear after %d minutes.
-5102	Due to lack of mental power, you cannot see other people's equipment.
-5103	Earth Resistance %d%%
-5104	Equipped items cannot be sold in personal stores.
-5105	Event Helper Delete
-5106	Event Helper Spawn
-5107	Evil energy gathers at the central altar.
-5108	Example) 10s, 10m, 1m 30s
-5109	FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%
-5110	Find %d, count %d, require %d
-5111	Fire Damage %d
-5112	Forced shutdown of Dalian failed
-5113	Get closer and get off.
-5114	Get closer and get on it.
-5115	Guild Land(%d) Cleared
-5116	GuildID: %d
-5117	GuildMasterPID: %d
-5118	HAIR : %s
+5094	ŞEYTAN:%3d%% BÖCEK:%3d%% ATEŞ:%3d%% BUZ:%3d%% ÇÖL:%3d%%
+5095	Dalian başarıyla başlatıldı.
+5096	Karanlık Direnci %d%%
+5097	Soylu lord ve tüm tebaası yenildi.
+5098	Silme başarısız. Görev bayrağı mevcut değil.
+5099	Silme başarılı.
+5100	Ejderha Ruh Taşı Sandığı etkinleştirilmedi.
+5101	Düşen eşyalar %d dakika sonra kaybolacak.
+5102	Zihinsel güç eksikliği nedeniyle diğer kişilerin ekipmanlarını göremezsin.
+5103	Toprak Direnci %d%%
+5104	Kuşanılmış eşyalar kişisel dükkanlarda satılamaz.
+5105	Etkinlik Yardımcısını Sil
+5106	Etkinlik Yardımcısını Oluştur
+5107	Kötü enerji merkezi mihrapta toplanıyor.
+5108	Örnek) 10s, 10m, 1m 30s
+5109	ATEŞ:%3d%% ELEK:%3d%% BÜYÜ:%3d%% RÜZGAR:%3d%% KRİTİK:%3d%% DELİCİ:%3d%%
+5110	Bulunan %d, adet %d, gereken %d
+5111	Ateş Hasarı %d
+5112	Dalian'ın zorla kapatılması başarısız oldu
+5113	Yaklaş ve in.
+5114	Yaklaş ve bin.
+5115	Lonca Arazisi(%d) Temizlendi
+5116	LoncaID: %d
+5117	LoncaLiderPID: %d
+5118	SAÇ : %s
 5119	HP %d/%d
-5120	HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%
-5121	Health %d/%d (%d%%)
-5122	Horse Information:
-5123	I am fighting for my life. Stay focused.
-5124	I can't wear it because I don't have the item.
-5125	I'm having trouble starting sparring.
-5126	ICE:%3d%% EARTH:%3d%% DARK:%3d%%
-5127	Invalid argument.
-5128	Invalid command %s
-5129	Invalid format of time. Please specify by adding h, m, or s.
-5130	Invalid item type for switchbot.
-5131	Invalid syntax
-5132	Invalid syntax: no command
-5133	Inventory is not activated.
-5134	IsInWar: %d
-5135	It doesn't work. Check the skill formula
-5136	It is higher than the application level and cannot be used.
-5137	It is in a state where it cannot be disguised.
-5138	Items in use cannot be sold in personal stores.
-5139	Items that are being worn cannot be sold.
-5140	LEV %d
-5141	LUA_ERROR: quest %s.%s %s
-5142	Level  %d
-5143	MALL:
-5144	Manufacturing failed.
+5120	İNSAN:%3d%% HAYVAN:%3d%% ORK:%3d%% MILGYO:%3d%% ÖLÜMSÜZ:%3d%%
+5121	Sağlık %d/%d (%d%%)
+5122	At Bilgisi:
+5123	Hayatım için savaşıyorum. Odaklan.
+5124	Eşyaya sahip olmadığım için giyemiyorum.
+5125	Spar başlatmakta sorun yaşıyorum.
+5126	BUZ:%3d%% TOPRAK:%3d%% KARANLIK:%3d%%
+5127	Geçersiz argüman.
+5128	Geçersiz komut %s
+5129	Geçersiz zaman biçimi. Lütfen h, m veya s ekleyerek belirt.
+5130	Switchbot için geçersiz eşya türü.
+5131	Geçersiz sözdizimi
+5132	Geçersiz sözdizimi: komut yok
+5133	Envanter etkinleştirilmedi.
+5134	SavaştaMı: %d
+5135	Çalışmıyor. Beceri formülünü kontrol et
+5136	Uygulama seviyesinden yüksek olduğu için kullanılamaz.
+5137	Kılık değiştirilemeyecek bir durumda.
+5138	Kullanımdaki eşyalar kişisel dükkanlarda satılamaz.
+5139	Üzerinde olan eşyalar satılamaz.
+5140	SEV %d
+5141	LUA_ERROR: görev %s.%s %s
+5142	Seviye  %d
+5143	MARKET:
+5144	Üretim başarısız oldu.
 5145	MapIndex: %d MobCount %d
-5146	MapInfo
-5147	Monsters are advancing towards %s' castle.
-5148	Monsters have started attacking the castle.
-5149	New bonus added successfully.
-5150	No one currently blocked.
-5151	No such a skill by that name.
-5152	No such mob by that vnum
-5153	Not a place for fishing
-5154	Not affected by that type and point.
-5155	Not enough inventory space.
-5156	Not yet available.
-5157	OX-Question: 
-5158	One minute left until the monsters attack!!!
-5159	Opponent's critical hit chance reduced by %d%%
-5160	Opponent's piercing attack probability decreases by %d%%
-5161	Please defeat the Demon Lord within 30 minutes.
-5162	Poison Damage %d
+5146	HaritaBilgisi
+5147	Canavarlar %s kalesine doğru ilerliyor.
+5148	Canavarlar kaleye saldırmaya başladı.
+5149	Yeni bonus başarıyla eklendi.
+5150	Şu anda engellenen kimse yok.
+5151	Bu isimde bir beceri yok.
+5152	Bu vnum ile canavar yok
+5153	Balık tutulacak bir yer değil
+5154	Bu tür ve puan ile etkilenmiyor.
+5155	Yeterli envanter alanı yok.
+5156	Henüz mevcut değil.
+5157	OX-Soru:
+5158	Canavarların saldırısına 1 dakika kaldı!!!
+5159	Rakibin kritik vuruş şansı %d%% azaldı
+5160	Rakibin delici saldırı ihtimali %d%% azalıyor
+5161	Lütfen 30 dakika içinde Şeytan Lordu'nu yen.
+5162	Zehir Hasarı %d
 5163	PossibleDistant %f nNowDist %f
 5164	QUEST_SYSERR %s
 5165	QUEST_SYSLOG %s
-5166	Quest flag set: %s %d
-5167	RESISTANCES:
-5168	Reloading Admin information.
-5169	Reloading crafting information.
-5170	Reloading notice string.
-5171	Reloading prototype tables,
-5172	Reloading quest.
-5173	Reloading state_user_count.
+5166	Görev bayrağı ayarlandı: %s %d
+5167	DİRENÇLER:
+5168	Yönetici bilgileri yeniden yükleniyor.
+5169	Üretim bilgileri yeniden yükleniyor.
+5170	Duyuru metni yeniden yükleniyor.
+5171	Prototip tabloları yeniden yükleniyor,
+5172	Görev yeniden yükleniyor.
+5173	state_user_count yeniden yükleniyor.
 5174	RequestSetEventFlag %s %d
-5175	Respaw around
-5176	Respaw everywhere
-5177	SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%
+5175	Çevrede yeniden doğur
+5176	Her yerde yeniden doğur
+5177	BECERİ:%3d%% NORMAL:%3d%% BECERİ_DEF:%3d%% NORMAL_DEF:%3d%%
 5178	SP %d/%d
-5179	SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%
-5180	Safebox size set to %d
-5181	Save done.
-5182	Save failed.
-5183	Spawn failed.
-5184	Spiritstones cannot be improved with this item.
-5185	Stam   %d/%d (%d%%)
-5186	Subskill of [%s] was reset
-5187	Successful forced shutdown of Dalian
-5188	Switchbot stopped. Not enough money.
-5189	Switchbot stopped. Out of switchers.
+5179	KILIÇ:%3d%% ÇİFTEL KILIÇ:%3d%% HANÇER:%3d%% ZİL:%3d%% yelpaze:%3d%% YAY:%3d%%
+5180	Depo boyutu %d olarak ayarlandı
+5181	Kaydetme tamamlandı.
+5182	Kaydetme başarısız.
+5183	Oluşturma başarısız.
+5184	Ruh Taşları bu eşya ile geliştirilemez.
+5185	Kond   %d/%d (%d%%)
+5186	[%s] alt becerisi sıfırlandı
+5187	Dalian başarıyla zorla kapatıldı
+5188	Switchbot durdu. Yeterli para yok.
+5189	Switchbot durdu. Anahtar kalmadı.
 5190	Syntax: /affect_remove <player name>
 5191	Syntax: /affect_remove <type> <point>
 5192	Syntax: /saveati <map_index> <filename>
@@ -769,42 +769,42 @@
 5197	Syntax: setqf <flagname> <value> [<character name>]
 5198	Syntax: setskill <name> <lev>
 5199	Syntax: setskillother <target> <skillname> <lev>
-5200	TREE:%3d%% MONSTER:%3d%%
-5201	Target is in %d channel (my channel %d)
-5202	Test server timeout passed
-5203	The Dragon's Lair will collapse in %d seconds!
-5204	The buildings required for construction have not been built.
-5205	The construction task failed beyond the building cost information.
-5206	The leader of the monsters has appeared.
-5207	The monsters are showing signs of retreating.
-5208	The monsters began to retreat.
-5209	The noble lord has retreated.
-5210	The other person is unable to add you as a friend.
-5211	The sensor was activated, but no Arcanum was detected.
-5212	The subcommand of the command is incorrect.
-5213	The value was entered incorrectly.
-5214	There are few stat points left.
-5215	There are no spammers.
-5216	There are no stat points left.
-5217	There are types of buildings that cannot be built together.
-5218	There is no character(%s) by that name
-5219	There is no guild with that name or number.
-5220	There is no one by that name
-5221	There is no spirit stone to take out.
-5222	There is no such a skill.
-5223	There is no such character.
-5224	There is no such command
-5225	This building does not exist.
-5226	This guild is currently at war.
-5227	This is a location where buildings cannot be built.
-5228	This is an inappropriate guild name.
-5229	Time remaining until socket is removed from %s: %d
-5230	Total %d
-5231	Total [%d] %d / %d / %d (this server %d)
-5232	Transfer me?!?
-5233	Transfer requested.
-5234	Type Point Modif Duration Flag
-5235	Unknown error
+5200	AĞAÇ:%3d%% CANAVAR:%3d%%
+5201	Hedef %d. kanalda (benim kanalım %d)
+5202	Test sunucusu zaman aşımı geçti
+5203	Ejderha İni %d saniye içinde çökecek!
+5204	İnşaat için gerekli binalar henüz yapılmadı.
+5205	İnşaat görevi, bina maliyeti bilgisini aşarak başarısız oldu.
+5206	Canavarların lideri ortaya çıktı.
+5207	Canavarlar geri çekilme belirtileri gösteriyor.
+5208	Canavarlar geri çekilmeye başladı.
+5209	Soylu lord geri çekildi.
+5210	Karşı taraf seni arkadaş olarak ekleyemiyor.
+5211	Sensör etkinleşti ancak hiçbir Arcanum algılanmadı.
+5212	Komutun alt komutu yanlış.
+5213	Değer yanlış girildi.
+5214	Çok az stat puanı kaldı.
+5215	Spam yapan kimse yok.
+5216	Hiç stat puanı kalmadı.
+5217	Birlikte inşa edilemeyen bina türleri var.
+5218	Bu isimde karakter(%s) yok
+5219	Bu isimde veya numarada lonca yok.
+5220	Bu isimde kimse yok
+5221	Çıkarılacak ruh taşı yok.
+5222	Böyle bir beceri yok.
+5223	Böyle bir karakter yok.
+5224	Böyle bir komut yok
+5225	Bu bina mevcut değil.
+5226	Bu lonca şu anda savaşta.
+5227	Burası bina inşa edilemeyen bir konum.
+5228	Bu uygunsuz bir lonca adı.
+5229	%s eşyasından yuva çıkarılmasına kalan süre: %d
+5230	Toplam %d
+5231	Toplam [%d] %d / %d / %d (bu sunucu %d)
+5232	Beni ışınla?!?
+5233	Işınlanma istendi.
+5234	Tür Puan Modif Süre Bayrak
+5235	Bilinmeyen hata
 5236	Usage : /horse_set_stat <hp> <stamina>
 5237	Usage: %s <name>
 5238	Usage: block_chat <name> <time> (0 to off)
@@ -820,34 +820,34 @@
 5248	Usage: transfer <name>
 5249	Usage: vote_block_chat <name>
 5250	Usage: warp <character name> | <x meter> <y meter>
-5251	Use: grrandom <group one>
-5252	Use: item <item one>
-5253	Use: mc <one>
-5254	Use: mob <mob one>
-5255	WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%
-5256	We plan to attack the castle in 10 minutes.
-5257	Weekly Event End
-5258	Weekly Event Start
-5259	You can no longer increase the value of good and evil.
-5260	You can't ride there.
-5261	You can't throw away gold yet.
-5262	You cannot add more bonus.
-5263	You cannot change the bonuses.
-5264	You cannot move to another area within 1 minute after the transaction.
-5265	You cannot move to another location while the trading window or warehouse is open.
-5266	You cannot read books while transformed.
-5267	You cannot ride a horse while downed.
-5268	You cannot unequip the belt while items are inside the beld inventory.
-5269	You cannot wear robes while riding a horse.
-5270	You goto ( %d, %d )
-5271	You have destroyed %s.
-5272	You have gained %d exp.
-5273	You roll a die and roll %d. (%d-%d)
-5274	You warp to ( %d, %d )
-5275	Your Mining Points have increased! (%lld/%d)
-5276	Your chat has been blocked by a GM.
-5277	Your inventory is full and you cannot unload.
-5278	Your mining points have reached their maximum. (%lld)
+5251	Kullanım: grrandom <group one>
+5252	Kullanım: item <item one>
+5253	Kullanım: mc <one>
+5254	Kullanım: mob <mob one>
+5255	SAV:%3d%% SUİK:%3d%% SURA:%3d%% ŞAM:%3d%%
+5256	Kaleye 10 dakika içinde saldırmayı planlıyoruz.
+5257	Haftalık Etkinlik Sonu
+5258	Haftalık Etkinlik Başlangıcı
+5259	İyilik ve kötülük değerini artık artıramazsın.
+5260	Oraya binemezsin.
+5261	Henüz Yang atamazsın.
+5262	Daha fazla bonus ekleyemezsin.
+5263	Bonusları değiştiremezsin.
+5264	Ticaretten sonra 1 dakika içinde başka bir bölgeye gidemezsin.
+5265	Ticaret penceresi veya depo açıkken başka bir yere gidemezsin.
+5266	Dönüşüm sırasında kitap okuyamazsın.
+5267	Yere düşmüşken ata binemezsin.
+5268	Kemer envanterinde eşya varken kemeri çıkaramazsın.
+5269	Ata binerken cübbe giyemezsin.
+5270	( %d, %d ) konumuna gidiyorsun
+5271	%s yok ettin.
+5272	%d tecrübe puanı kazandın.
+5273	Zar attın ve %d geldi. (%d-%d)
+5274	( %d, %d ) konumuna ışınlandın
+5275	Madencilik Puanların arttı! (%lld/%d)
+5276	Sohbetin bir GM tarafından engellendi.
+5277	Envanterin dolu, boşaltamazsın.
+5278	Madencilik puanların maksimuma ulaştı. (%lld)
 5279	[1106-??]No puedes unir esto.
 5280	[Only Test] Success_Prob %d, RefineLevel %d
 5281	[SYSTEM ERROR]You cannot upgrade dragon soul without refine window.

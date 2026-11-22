@@ -250,8 +250,8 @@
 634	Attacco + %d%%
 635	Difesa + %d%%.
 637	Esperienza %d%%.
-638	Chance to find an Item %. 1f
-639	Chance to find Yang %. 1f
+638	Probabilità di trovare un oggetto %. 1f
+639	Probabilità di trovare Yang %. 1f
 640	Vita massima +%d%%.
 642	Danni abilità %d%%.
 643	Danni colpo %d%%.
@@ -340,7 +340,7 @@
 798	Migliora la tua canna da pesca dal pescatore.
 799	L'esca è stata mangiata dal pesce.
 800	Hai catturato un pesce! (%s).
-801	The length of the captured fish is %.2fcm.
+801	La lunghezza del pesce catturato è %.2f cm.
 803	OX Event gli altri partecipanti saranno annotati.
 805	%s: %d
 806	Ne hai catturati %d di %d.
@@ -559,7 +559,7 @@
 1205	Non puoi usare questo oggetto durante il duello.
 1217	Qui non puoi fare un falò.
 1228	Non puoi fare un falò nell'acqua.
-1229	Your inventory is full.
+1229	Il tuo inventario è pieno.
 1237	Chiuso. Dovresti cercare la chiave.
 1248	Questo oggetto non può essere aperto con una chiave.
 1258	È la chiave giusta.
@@ -569,9 +569,9 @@
 1299	Guarda cos'è uscito dal forziere!
 1308	[Gilda] Il livello della gilda è troppo basso.
 1310	Se respiri il fumo rosso che esce dal forziere aumenti la tua velocità!
-5000	#%d cannot create item.
-5001	#%d item not exist by that vnum.
-5002	#%u item not exist by that vnum.
+5000	#%d non può creare l'oggetto.
+5001	#%d nessun oggetto esiste con quel vnum.
+5002	%u nessun oggetto esiste con quel vnum.
 5003	%4d %5d %5d %8d %u
 5004	%d %d
 5005	%d %s %s
@@ -584,181 +584,181 @@
 5012	%s %s
 5013	%s %s (%d)
 5014	%s %s sec
-5015	%s %s(%ld%%) FAIL
-5016	%s %s(%ld%%) SUCCESS
+5015	%s %s(%ld%%) FALLITO
+5016	%s %s(%ld%%) RIUSCITO
 5017	%s attack hack! time (delta, limit)=(%u, %u) hack_count %d
-5018	%s dodge! (%d%%)
-5019	%s for empire : %d
-5020	%s for guild : %d
-5021	%s for player : %d
-5022	%s is not in same map
-5023	%s needed.
-5024	%s not exist
-5025	%s rolled the dice and got %d. (%d-%d)
-5026	%s spawned in %dx%d
-5027	%s's %s change %d to %d
-5028	%s's %s set to [%d]
-5029	%s's %s set to [%lld]
-5030	%s(%d%%) -> %s FAIL
-5031	%s(%d%%) -> %s SUCCESS
-5032	%s: no such a player
-5033	%s: no such a player.
-5034	%s[%d] attacks at: %d %d
-5035	%s[%d] vs %s[%d] time %u sec.
-5036	+3 Arcanum cannot be improved with this item
-5037	-- Affect List of %s -------------------------------
+5018	%s schiva! (%d%%)
+5019	%s per impero: %d
+5020	%s per gilda: %d
+5021	%s per giocatore: %d
+5022	%s non è nella stessa mappa
+5023	%s necessario.
+5024	%s non esiste
+5025	%s ha lanciato il dado e ha ottenuto %d. (%d-%d)
+5026	%s è apparso in %dx%d
+5027	%s: %s cambiato da %d a %d
+5028	%s: %s impostato a [%d]
+5029	%s: %s impostato a [%lld]
+5030	%s(%d%%) -> %s FALLITO
+5031	%s(%d%%) -> %s RIUSCITO
+5032	%s: giocatore inesistente
+5033	%s: giocatore inesistente.
+5034	%s[%d] attacca a: %d %d
+5035	%s[%d] vs %s[%d] tempo %u sec.
+5036	L'Arcanum +3 non può essere migliorato con questo oggetto
+5037	-- Lista effetti di %s -------------------------------
 5038	-> %s, DAM %d HP %d(%d%%) %s%s
-5039	5 minutes left until the monsters attack!!!
+5039	Mancano 5 minuti all'attacco dei mostri!!!
 5040	<- %s, DAM %d HP %d(%d%%) %s%s
-5041	<Guild> %d dragon power has been restored.
-5042	<Guild> New membership is currently restricted.
-5043	<Guild> Only the guild leader can use guild skills.
-5044	<Guild> The guild is already at the highest level.
-5045	<Guild> The guild is currently at war.
-5046	<Guild> The other party cannot receive invitation requests.
-5047	<Guild> Uses %d skill (%d, %d) to %u
-5048	<Guild> You cannot withdraw a guild member during a guild war.
+5041	<Gilda> Il potere del drago %d è stato ripristinato.
+5042	<Gilda> Le nuove iscrizioni sono attualmente limitate.
+5043	<Gilda> Solo il capogilda può usare le abilità di gilda.
+5044	<Gilda> La gilda è già al livello massimo.
+5045	<Gilda> La gilda è attualmente in guerra.
+5046	<Gilda> L'altra parte non può ricevere richieste di invito.
+5047	<Gilda> Usa l'abilità %d (%d, %d) su %u
+5048	<Gilda> Non puoi espellere un membro della gilda durante una guerra di gilda.
 5049	<IMMUNE_FAIL> (%s)
 5050	<IMMUNE_FAIL> (%s) NO_IMMUNE_FLAG
 5051	<IMMUNE_SUCCESS> (%s)
-5052	<Party> Attacker setup failed.
-5053	<Party> You can only invite parties within -%d to +%d levels.
-5054	<Party> You have left the party.
-5055	<Warehouse> This item cannot be moved to the warehouse.
+5052	<Gruppo> Configurazione dell'attaccante non riuscita.
+5053	<Gruppo> Puoi invitare solo gruppi tra i livelli -%d e +%d.
+5054	<Gruppo> Hai lasciato il gruppo.
+5055	<Magazzino> Questo oggetto non può essere spostato nel magazzino.
 5056	<duration>  hour
 5057	<empire>    0 - 3 (0==all)
 5058	<type>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp
 5059	<value>     percent
-5060	===== OX QUIZ LIST =====
-5061	===== OX QUIZ LIST END =====
+5060	===== LISTA QUIZ OX =====
+5061	===== FINE LISTA QUIZ OX =====
 5062	ARROW %s -> %s, DAM %d DIST %d GAP %d %% %d
 5063	ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%
 5064	ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d
-5065	Abilities cannot be increased while transformed.
-5066	Affect successfully removed.
-5067	After a while, we return to the village.
+5065	Le abilità non possono essere aumentate durante la trasformazione.
+5066	Effetto rimosso con successo.
+5067	Dopo un po' torniamo al villaggio.
 5068	Attack :name[%s] Vnum[%d] can't use skill by attack(warning)
 5069	Attack Speed Hack(%s), (delta, limit)=(%u, %u)
-5070	BODY : %s
+5070	CORPO: %s
 5071	BONUS:
-5072	Bonuschange of %s (Slot: %d) successfully finished.
-5073	Breaks off the engagement between player %d and player %d.
-5074	Building rotation feature is not yet available
-5075	COSTUME status:
-5076	Can only be used on weapons and armor.
-5077	Can't find map by index %d
-5078	Cannot equip items directly from switchbot.
-5079	Cannot find map (index %d)
-5080	Cannot find map command syntax: /goto <mapname> [empire]
-5081	Cannot find player(%s). %s is not in your game server.
-5082	Cannot find player(%s). Perhaps %s doesn't login or exist.
-5083	Cannot move active switchbot item.
-5084	Cannot move equipped items to switchbot.
-5085	Cannot remove item from switchbot. Inventory is full.
-5086	Cannot set stat under initial stat.
-5087	Charged for %d seconds.
-5088	Charging is not possible.
-5089	Chat block requested.
-5090	Cold Resistance %d%%
-5091	Construction costs are insufficient.
-5092	Construction is not possible due to lack of materials.
+5072	Cambio bonus di %s (Slot: %d) completato con successo.
+5073	Interrompe il fidanzamento tra il giocatore %d e il giocatore %d.
+5074	La funzione di rotazione degli edifici non è ancora disponibile
+5075	Stato COSTUME:
+5076	Può essere usato solo su armi e armature.
+5077	Impossibile trovare la mappa con indice %d
+5078	Non puoi equipaggiare oggetti direttamente dallo switchbot.
+5079	Impossibile trovare la mappa (indice %d)
+5080	Impossibile trovare la mappa. Sintassi del comando: /goto <mapname> [empire]
+5081	Impossibile trovare il giocatore(%s). %s non è nel tuo server di gioco.
+5082	Impossibile trovare il giocatore(%s). Forse %s non è connesso o non esiste.
+5083	Impossibile spostare un oggetto attivo dello switchbot.
+5084	Impossibile spostare oggetti equipaggiati nello switchbot.
+5085	Impossibile rimuovere l'oggetto dallo switchbot. L'inventario è pieno.
+5086	Impossibile impostare una statistica inferiore a quella iniziale.
+5087	Caricato per %d secondi.
+5088	La ricarica non è possibile.
+5089	Blocco chat richiesto.
+5090	Resistenza al freddo %d%%
+5091	I costi di costruzione sono insufficienti.
+5092	La costruzione non è possibile per mancanza di materiali.
 5093	DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%
 5094	DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%
-5095	Dalian has started successfully.
-5096	Dark Resistance %d%%
-5097	Defeated the noble lord and all his subordinates.
-5098	Delete failed. Quest flag does not exist.
-5099	Delete success.
-5100	Dragon Soulstone Chest is not activated.
-5101	Dropped items will disappear after %d minutes.
-5102	Due to lack of mental power, you cannot see other people's equipment.
-5103	Earth Resistance %d%%
-5104	Equipped items cannot be sold in personal stores.
-5105	Event Helper Delete
-5106	Event Helper Spawn
-5107	Evil energy gathers at the central altar.
-5108	Example) 10s, 10m, 1m 30s
+5095	Dalian è stato avviato con successo.
+5096	Resistenza all'oscurità %d%%
+5097	Hai sconfitto il nobile signore e tutti i suoi subalterni.
+5098	Eliminazione non riuscita. Il flag della missione non esiste.
+5099	Eliminazione riuscita.
+5100	Il Forziere delle Pietre dell'Anima del Drago non è attivato.
+5101	Gli oggetti caduti scompariranno dopo %d minuti.
+5102	A causa della mancanza di forza mentale, non puoi vedere l'equipaggiamento degli altri.
+5103	Resistenza alla terra %d%%
+5104	Gli oggetti equipaggiati non possono essere venduti nei negozi personali.
+5105	Eliminazione Event Helper
+5106	Comparsa Event Helper
+5107	L'energia maligna si raduna presso l'altare centrale.
+5108	Esempio) 10s, 10m, 1m 30s
 5109	FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%
 5110	Find %d, count %d, require %d
-5111	Fire Damage %d
-5112	Forced shutdown of Dalian failed
-5113	Get closer and get off.
-5114	Get closer and get on it.
-5115	Guild Land(%d) Cleared
+5111	Danno da fuoco %d
+5112	Chiusura forzata di Dalian non riuscita
+5113	Avvicinati e smonta.
+5114	Avvicinati e sali.
+5115	Terreno di gilda(%d) completato
 5116	GuildID: %d
 5117	GuildMasterPID: %d
-5118	HAIR : %s
+5118	CAPELLI: %s
 5119	HP %d/%d
 5120	HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%
-5121	Health %d/%d (%d%%)
-5122	Horse Information:
-5123	I am fighting for my life. Stay focused.
-5124	I can't wear it because I don't have the item.
-5125	I'm having trouble starting sparring.
+5121	Salute %d/%d (%d%%)
+5122	Informazioni sul cavallo:
+5123	Sto combattendo per la mia vita. Resta concentrato.
+5124	Non posso indossarlo perché non ho l'oggetto.
+5125	Ho difficoltà ad avviare lo scontro di allenamento.
 5126	ICE:%3d%% EARTH:%3d%% DARK:%3d%%
-5127	Invalid argument.
-5128	Invalid command %s
-5129	Invalid format of time. Please specify by adding h, m, or s.
-5130	Invalid item type for switchbot.
-5131	Invalid syntax
-5132	Invalid syntax: no command
-5133	Inventory is not activated.
+5127	Argomento non valido.
+5128	Comando non valido %s
+5129	Formato del tempo non valido. Specifica aggiungendo h, m o s.
+5130	Tipo di oggetto non valido per lo switchbot.
+5131	Sintassi non valida
+5132	Sintassi non valida: nessun comando
+5133	L'inventario non è attivato.
 5134	IsInWar: %d
-5135	It doesn't work. Check the skill formula
-5136	It is higher than the application level and cannot be used.
-5137	It is in a state where it cannot be disguised.
-5138	Items in use cannot be sold in personal stores.
-5139	Items that are being worn cannot be sold.
-5140	LEV %d
+5135	Non funziona. Controlla la formula dell'abilità
+5136	Supera il livello di applicazione e non può essere usato.
+5137	È in uno stato in cui non può essere camuffato.
+5138	Gli oggetti in uso non possono essere venduti nei negozi personali.
+5139	Gli oggetti indossati non possono essere venduti.
+5140	LIV %d
 5141	LUA_ERROR: quest %s.%s %s
-5142	Level  %d
+5142	Livello  %d
 5143	MALL:
-5144	Manufacturing failed.
+5144	Fabbricazione non riuscita.
 5145	MapIndex: %d MobCount %d
 5146	MapInfo
-5147	Monsters are advancing towards %s' castle.
-5148	Monsters have started attacking the castle.
-5149	New bonus added successfully.
-5150	No one currently blocked.
-5151	No such a skill by that name.
-5152	No such mob by that vnum
-5153	Not a place for fishing
-5154	Not affected by that type and point.
-5155	Not enough inventory space.
-5156	Not yet available.
-5157	OX-Question: 
-5158	One minute left until the monsters attack!!!
-5159	Opponent's critical hit chance reduced by %d%%
-5160	Opponent's piercing attack probability decreases by %d%%
-5161	Please defeat the Demon Lord within 30 minutes.
-5162	Poison Damage %d
+5147	I mostri avanzano verso il castello di %s.
+5148	I mostri hanno iniziato ad attaccare il castello.
+5149	Nuovo bonus aggiunto con successo.
+5150	Nessuno è attualmente bloccato.
+5151	Nessuna abilità con quel nome.
+5152	Nessun mob con quel vnum
+5153	Non è un luogo per pescare
+5154	Non influenzato da quel tipo e punto.
+5155	Spazio nell'inventario insufficiente.
+5156	Non ancora disponibile.
+5157	Domanda OX:
+5158	Manca un minuto all'attacco dei mostri!!!
+5159	La probabilità di colpo critico dell'avversario è ridotta del %d%%
+5160	La probabilità di attacco perforante dell'avversario diminuisce del %d%%
+5161	Sconfiggi il Signore dei Demoni entro 30 minuti.
+5162	Danno da veleno %d
 5163	PossibleDistant %f nNowDist %f
 5164	QUEST_SYSERR %s
 5165	QUEST_SYSLOG %s
-5166	Quest flag set: %s %d
-5167	RESISTANCES:
-5168	Reloading Admin information.
-5169	Reloading crafting information.
-5170	Reloading notice string.
-5171	Reloading prototype tables,
-5172	Reloading quest.
-5173	Reloading state_user_count.
+5166	Flag della missione impostato: %s %d
+5167	RESISTENZE:
+5168	Ricaricamento delle informazioni Admin.
+5169	Ricaricamento delle informazioni di creazione.
+5170	Ricaricamento della stringa degli avvisi.
+5171	Ricaricamento delle tabelle prototipo,
+5172	Ricaricamento della missione.
+5173	Ricaricamento di state_user_count.
 5174	RequestSetEventFlag %s %d
 5175	Respaw around
 5176	Respaw everywhere
 5177	SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%
 5178	SP %d/%d
 5179	SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%
-5180	Safebox size set to %d
-5181	Save done.
-5182	Save failed.
-5183	Spawn failed.
-5184	Spiritstones cannot be improved with this item.
+5180	Dimensione del deposito impostata a %d
+5181	Salvataggio completato.
+5182	Salvataggio non riuscito.
+5183	Comparsa non riuscita.
+5184	Le pietre spirituali non possono essere migliorate con questo oggetto.
 5185	Stam   %d/%d (%d%%)
-5186	Subskill of [%s] was reset
-5187	Successful forced shutdown of Dalian
-5188	Switchbot stopped. Not enough money.
-5189	Switchbot stopped. Out of switchers.
+5186	La sottoabilità di [%s] è stata azzerata
+5187	Chiusura forzata di Dalian riuscita
+5188	Switchbot fermato. Denaro insufficiente.
+5189	Switchbot fermato. Switcher esauriti.
 5190	Syntax: /affect_remove <player name>
 5191	Syntax: /affect_remove <type> <point>
 5192	Syntax: /saveati <map_index> <filename>
@@ -770,41 +770,41 @@
 5198	Syntax: setskill <name> <lev>
 5199	Syntax: setskillother <target> <skillname> <lev>
 5200	TREE:%3d%% MONSTER:%3d%%
-5201	Target is in %d channel (my channel %d)
-5202	Test server timeout passed
-5203	The Dragon's Lair will collapse in %d seconds!
-5204	The buildings required for construction have not been built.
-5205	The construction task failed beyond the building cost information.
-5206	The leader of the monsters has appeared.
-5207	The monsters are showing signs of retreating.
-5208	The monsters began to retreat.
-5209	The noble lord has retreated.
-5210	The other person is unable to add you as a friend.
-5211	The sensor was activated, but no Arcanum was detected.
-5212	The subcommand of the command is incorrect.
-5213	The value was entered incorrectly.
-5214	There are few stat points left.
-5215	There are no spammers.
-5216	There are no stat points left.
-5217	There are types of buildings that cannot be built together.
-5218	There is no character(%s) by that name
-5219	There is no guild with that name or number.
-5220	There is no one by that name
-5221	There is no spirit stone to take out.
-5222	There is no such a skill.
-5223	There is no such character.
-5224	There is no such command
-5225	This building does not exist.
-5226	This guild is currently at war.
-5227	This is a location where buildings cannot be built.
-5228	This is an inappropriate guild name.
-5229	Time remaining until socket is removed from %s: %d
-5230	Total %d
-5231	Total [%d] %d / %d / %d (this server %d)
-5232	Transfer me?!?
-5233	Transfer requested.
+5201	Il bersaglio è nel canale %d (il mio canale %d)
+5202	Timeout del server di test scaduto
+5203	La Tana del Drago crollerà tra %d secondi!
+5204	Gli edifici necessari alla costruzione non sono stati costruiti.
+5205	L'operazione di costruzione è fallita oltre le informazioni sul costo dell'edificio.
+5206	Il capo dei mostri è apparso.
+5207	I mostri mostrano segni di ritirata.
+5208	I mostri hanno iniziato a ritirarsi.
+5209	Il nobile signore si è ritirato.
+5210	L'altra persona non può aggiungerti come amico.
+5211	Il sensore si è attivato, ma non è stato rilevato alcun Arcanum.
+5212	Il sottocomando del comando non è corretto.
+5213	Il valore è stato inserito in modo errato.
+5214	Restano pochi punti statistica.
+5215	Non ci sono spammer.
+5216	Non restano punti statistica.
+5217	Ci sono tipi di edifici che non possono essere costruiti insieme.
+5218	Non esiste alcun personaggio(%s) con quel nome
+5219	Non esiste alcuna gilda con quel nome o numero.
+5220	Non c'è nessuno con quel nome
+5221	Non c'è nessuna pietra spirituale da estrarre.
+5222	Non esiste una simile abilità.
+5223	Non esiste un simile personaggio.
+5224	Non esiste un simile comando
+5225	Questo edificio non esiste.
+5226	Questa gilda è attualmente in guerra.
+5227	Questo è un luogo in cui non si possono costruire edifici.
+5228	Questo nome di gilda non è appropriato.
+5229	Tempo rimanente prima della rimozione dell'incavo da %s: %d
+5230	Totale %d
+5231	Totale [%d] %d / %d / %d (questo server %d)
+5232	Trasferirmi?!?
+5233	Trasferimento richiesto.
 5234	Type Point Modif Duration Flag
-5235	Unknown error
+5235	Errore sconosciuto
 5236	Usage : /horse_set_stat <hp> <stamina>
 5237	Usage: %s <name>
 5238	Usage: block_chat <name> <time> (0 to off)
@@ -825,38 +825,38 @@
 5253	Use: mc <one>
 5254	Use: mob <mob one>
 5255	WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%
-5256	We plan to attack the castle in 10 minutes.
-5257	Weekly Event End
-5258	Weekly Event Start
-5259	You can no longer increase the value of good and evil.
-5260	You can't ride there.
-5261	You can't throw away gold yet.
-5262	You cannot add more bonus.
-5263	You cannot change the bonuses.
-5264	You cannot move to another area within 1 minute after the transaction.
-5265	You cannot move to another location while the trading window or warehouse is open.
-5266	You cannot read books while transformed.
-5267	You cannot ride a horse while downed.
-5268	You cannot unequip the belt while items are inside the beld inventory.
-5269	You cannot wear robes while riding a horse.
-5270	You goto ( %d, %d )
-5271	You have destroyed %s.
-5272	You have gained %d exp.
-5273	You roll a die and roll %d. (%d-%d)
-5274	You warp to ( %d, %d )
-5275	Your Mining Points have increased! (%lld/%d)
-5276	Your chat has been blocked by a GM.
-5277	Your inventory is full and you cannot unload.
-5278	Your mining points have reached their maximum. (%lld)
-5279	[1106-??]No puedes unir esto.
+5256	Abbiamo in programma di attaccare il castello tra 10 minuti.
+5257	Fine evento settimanale
+5258	Inizio evento settimanale
+5259	Non puoi più aumentare il valore del bene e del male.
+5260	Non puoi cavalcare lì.
+5261	Non puoi ancora gettare via i Yang.
+5262	Non puoi aggiungere altri bonus.
+5263	Non puoi cambiare i bonus.
+5264	Non puoi spostarti in un'altra zona entro 1 minuto dalla transazione.
+5265	Non puoi spostarti in un altro luogo mentre la finestra di scambio o il magazzino è aperto.
+5266	Non puoi leggere libri durante la trasformazione.
+5267	Non puoi cavalcare mentre sei a terra.
+5268	Non puoi togliere la cintura finché ci sono oggetti nell'inventario della cintura.
+5269	Non puoi indossare le vesti mentre cavalchi.
+5270	Vai a ( %d, %d )
+5271	Hai distrutto %s.
+5272	Hai ottenuto %d exp.
+5273	Lanci un dado e ottieni %d. (%d-%d)
+5274	Ti teletrasporti a ( %d, %d )
+5275	I tuoi Punti Estrazione sono aumentati! (%lld/%d)
+5276	La tua chat è stata bloccata da un GM.
+5277	Il tuo inventario è pieno e non puoi scaricare.
+5278	I tuoi punti estrazione hanno raggiunto il massimo. (%lld)
+5279	[1106-??]Non puoi unire questo.
 5280	[Only Test] Success_Prob %d, RefineLevel %d
-5281	[SYSTEM ERROR]You cannot upgrade dragon soul without refine window.
-5282	[SYSTEM ERROR]You cannot use dragon soul refine window.
-5283	[TEST_SERVER] Failed to learn skill
-5284	[TEST_SERVER] Success to learn skill
+5281	[SYSTEM ERROR]Non puoi potenziare l'anima del drago senza la finestra di raffinamento.
+5282	[SYSTEM ERROR]Non puoi usare la finestra di raffinamento dell'anima del drago.
+5283	[TEST_SERVER] Apprendimento dell'abilità non riuscito
+5284	[TEST_SERVER] Apprendimento dell'abilità riuscito
 5285	[TestOnly]Pulse %d LoadTime %d PASS %d
 5286	[TestOnly][Safebox]Pulse %d LoadTime %d PASS %d
-5287	cannot disconnect myself
+5287	non posso disconnettere me stesso
 5288	cell : %d, name : %s, id : %d
 5289	cooltime not finished %s %d
 5290	cube add <inveltory_index>
@@ -868,14 +868,14 @@
 5296	cube[%d]: cube[%d]: %s deleted
 5297	cube[%d]: inventory[%d]: %s
 5298	cube[%d]: inventory[%d]: %s added
-5299	error occurred on [%s:%d]
+5299	errore avvenuto in [%s:%d]
 5300	ex) /dc <player name>
 5301	ex) /kill <player name>
-5302	exp bonus %d%%
+5302	bonus exp %d%%
 5303	gold_mul %d rate %d
 5304	guild.wall.build unknown_direction[%s]
-5305	horse level set (%s: %d)
-5306	horse level set to %d.
+5305	livello del cavallo impostato (%s: %d)
+5306	livello del cavallo impostato a %d.
 5307	inventory [%d] = %s
 5308	lovepoint bykill %.3g total %d
 5309	pc_warp %d %d %d
@@ -883,7 +883,7 @@
 5311	sent find position packet for teleport
 5312	setting quest state flag %s %s %d
 5313	setting quest state flag failed
-5314	skill group to %d.
+5314	gruppo abilità a %d.
 5315	usage : /flush player_id
 5316	usage : /horse_level <name> <level>
 5317	usage : priv_empire <empire> <type> <value> <duration>

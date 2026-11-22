@@ -389,7 +389,7 @@
 855	Můžeš použít až %d elixírů.
 856	Souboj začne za 10 vteřin.
 857	Souboj začal.
-858	TRUE
+858	ANO
 859	Souboj skončil kvůli problému s arénou.
 860	Souboj skončil, čas vypršel.
 861	Za 10 vteřin budeš přesunut do města.
@@ -400,7 +400,7 @@
 866	%s vyhrál.
 867	Za 10 vteřin budeš přesunut do města.
 868	Další kolo začne za 10 vteřin.
-869	FALSE
+869	NE
 870	Soupeř byl oddělený. Souboj skončil.
 871	Šance na upuštění předmětů je v tuto chvíli plus %d%%
 872	Kvóta upuštěných Yangů je v tuto chvíli plus %d%%
@@ -559,7 +559,7 @@
 1205	Tento předmět nemůžeš použít při souboji.
 1217	Zde nemůžeš dělat táborák.
 1228	Nemůžeš dělat táborák pod vodou... to přeci dá rozum.
-1229	Your inventory is full.
+1229	Tvůj inventář je plný.
 1237	Zavřeno. Měl bys jít hledat klíč.
 1248	Tento předmět nemůže být otevřen klíčem.
 1258	Tohle je správný klíč.
@@ -569,9 +569,9 @@
 1299	Podívej, co vypadlo z bedny!
 1308	[Cech] Úroveň cechu je příliš nízká.
 1310	Pokud vdechneš rudý kouř vycházející z bedny, budeš rychlejší!
-5000	#%d cannot create item.
-5001	#%d item not exist by that vnum.
-5002	#%u item not exist by that vnum.
+5000	#%d nelze vytvořit předmět.
+5001	#%d předmět s tímto vnum neexistuje.
+5002	#%u předmět s tímto vnum neexistuje.
 5003	%4d %5d %5d %8d %u
 5004	%d %d
 5005	%d %s %s
@@ -583,182 +583,182 @@
 5011	%s %d prob 800
 5012	%s %s
 5013	%s %s (%d)
-5014	%s %s sec
-5015	%s %s(%ld%%) FAIL
-5016	%s %s(%ld%%) SUCCESS
+5014	%s %s sek.
+5015	%s %s(%ld%%) SELHÁNÍ
+5016	%s %s(%ld%%) ÚSPĚCH
 5017	%s attack hack! time (delta, limit)=(%u, %u) hack_count %d
-5018	%s dodge! (%d%%)
-5019	%s for empire : %d
-5020	%s for guild : %d
-5021	%s for player : %d
-5022	%s is not in same map
-5023	%s needed.
-5024	%s not exist
-5025	%s rolled the dice and got %d. (%d-%d)
-5026	%s spawned in %dx%d
-5027	%s's %s change %d to %d
-5028	%s's %s set to [%d]
-5029	%s's %s set to [%lld]
-5030	%s(%d%%) -> %s FAIL
-5031	%s(%d%%) -> %s SUCCESS
-5032	%s: no such a player
-5033	%s: no such a player.
-5034	%s[%d] attacks at: %d %d
-5035	%s[%d] vs %s[%d] time %u sec.
-5036	+3 Arcanum cannot be improved with this item
-5037	-- Affect List of %s -------------------------------
+5018	%s úhyb! (%d%%)
+5019	%s pro říši: %d
+5020	%s pro cech: %d
+5021	%s pro hráče: %d
+5022	%s není na stejné mapě
+5023	Je potřeba: %s.
+5024	%s neexistuje
+5025	%s hodil kostkou a padlo %d. (%d-%d)
+5026	%s se objevil v %dx%d
+5027	%s: %s se změnilo z %d na %d
+5028	%s: %s nastaveno na [%d]
+5029	%s: %s nastaveno na [%lld]
+5030	%s(%d%%) -> %s SELHÁNÍ
+5031	%s(%d%%) -> %s ÚSPĚCH
+5032	%s: takový hráč neexistuje
+5033	%s: takový hráč neexistuje.
+5034	%s[%d] útočí na: %d %d
+5035	%s[%d] vs %s[%d] čas %u sek.
+5036	+3 Arkánum nelze s tímto předmětem vylepšit
+5037	-- Seznam efektů hráče %s -------------------------------
 5038	-> %s, DAM %d HP %d(%d%%) %s%s
-5039	5 minutes left until the monsters attack!!!
+5039	Za 5 minut zaútočí monstra!!!
 5040	<- %s, DAM %d HP %d(%d%%) %s%s
-5041	<Guild> %d dragon power has been restored.
-5042	<Guild> New membership is currently restricted.
-5043	<Guild> Only the guild leader can use guild skills.
-5044	<Guild> The guild is already at the highest level.
-5045	<Guild> The guild is currently at war.
-5046	<Guild> The other party cannot receive invitation requests.
-5047	<Guild> Uses %d skill (%d, %d) to %u
-5048	<Guild> You cannot withdraw a guild member during a guild war.
+5041	<Cech> Síla draka (%d) byla obnovena.
+5042	<Cech> Přijímání nových členů je momentálně omezeno.
+5043	<Cech> Cechovní dovednosti může používat pouze vůdce cechu.
+5044	<Cech> Cech je již na nejvyšší úrovni.
+5045	<Cech> Cech je právě ve válce.
+5046	<Cech> Druhá strana nemůže přijímat pozvánky.
+5047	<Cech> Používá dovednost %d (%d, %d) na %u
+5048	<Cech> Během cechovní války nelze vyloučit člena cechu.
 5049	<IMMUNE_FAIL> (%s)
 5050	<IMMUNE_FAIL> (%s) NO_IMMUNE_FLAG
 5051	<IMMUNE_SUCCESS> (%s)
-5052	<Party> Attacker setup failed.
-5053	<Party> You can only invite parties within -%d to +%d levels.
-5054	<Party> You have left the party.
-5055	<Warehouse> This item cannot be moved to the warehouse.
-5056	<duration>  hour
+5052	<Skupina> Nastavení útočníka se nezdařilo.
+5053	<Skupina> Můžeš zvát pouze skupiny s úrovní od -%d do +%d.
+5054	<Skupina> Opustil jsi skupinu.
+5055	<Sklad> Tento předmět nelze přesunout do skladu.
+5056	<duration>  hodina
 5057	<empire>    0 - 3 (0==all)
 5058	<type>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp
 5059	<value>     percent
-5060	===== OX QUIZ LIST =====
-5061	===== OX QUIZ LIST END =====
+5060	===== SEZNAM OX KVÍZU =====
+5061	===== KONEC SEZNAMU OX KVÍZU =====
 5062	ARROW %s -> %s, DAM %d DIST %d GAP %d %% %d
 5063	ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%
 5064	ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d
-5065	Abilities cannot be increased while transformed.
-5066	Affect successfully removed.
-5067	After a while, we return to the village.
+5065	Schopnosti nelze zvyšovat během proměny.
+5066	Efekt byl úspěšně odstraněn.
+5067	Po chvíli se vrátíme do vesnice.
 5068	Attack :name[%s] Vnum[%d] can't use skill by attack(warning)
 5069	Attack Speed Hack(%s), (delta, limit)=(%u, %u)
-5070	BODY : %s
+5070	TĚLO : %s
 5071	BONUS:
-5072	Bonuschange of %s (Slot: %d) successfully finished.
-5073	Breaks off the engagement between player %d and player %d.
-5074	Building rotation feature is not yet available
-5075	COSTUME status:
-5076	Can only be used on weapons and armor.
-5077	Can't find map by index %d
-5078	Cannot equip items directly from switchbot.
-5079	Cannot find map (index %d)
-5080	Cannot find map command syntax: /goto <mapname> [empire]
-5081	Cannot find player(%s). %s is not in your game server.
-5082	Cannot find player(%s). Perhaps %s doesn't login or exist.
-5083	Cannot move active switchbot item.
-5084	Cannot move equipped items to switchbot.
-5085	Cannot remove item from switchbot. Inventory is full.
-5086	Cannot set stat under initial stat.
-5087	Charged for %d seconds.
-5088	Charging is not possible.
-5089	Chat block requested.
-5090	Cold Resistance %d%%
-5091	Construction costs are insufficient.
-5092	Construction is not possible due to lack of materials.
+5072	Změna bonusu předmětu %s (slot: %d) byla úspěšně dokončena.
+5073	Ruší zasnoubení hráče %d a hráče %d.
+5074	Otáčení budov zatím není k dispozici
+5075	Stav KOSTÝMU:
+5076	Lze použít pouze na zbraně a zbroj.
+5077	Mapu s indexem %d nelze najít
+5078	Předměty nelze nasazovat přímo ze switchbotu.
+5079	Mapu nelze najít (index %d)
+5080	Mapu nelze najít, syntaxe příkazu: /goto <mapname> [empire]
+5081	Hráče (%s) nelze najít. %s není na tvém herním serveru.
+5082	Hráče (%s) nelze najít. Možná %s není přihlášen nebo neexistuje.
+5083	Aktivní předmět switchbotu nelze přesunout.
+5084	Nasazené předměty nelze přesunout do switchbotu.
+5085	Předmět nelze ze switchbotu odebrat. Inventář je plný.
+5086	Statistiku nelze nastavit pod počáteční hodnotu.
+5087	Nabíjeno %d sekund.
+5088	Nabíjení není možné.
+5089	Byl vyžádán zákaz chatu.
+5090	Odolnost proti chladu %d%%
+5091	Náklady na stavbu nejsou dostatečné.
+5092	Stavba není možná z důvodu nedostatku materiálu.
 5093	DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%
-5094	DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%
-5095	Dalian has started successfully.
-5096	Dark Resistance %d%%
-5097	Defeated the noble lord and all his subordinates.
-5098	Delete failed. Quest flag does not exist.
-5099	Delete success.
-5100	Dragon Soulstone Chest is not activated.
-5101	Dropped items will disappear after %d minutes.
-5102	Due to lack of mental power, you cannot see other people's equipment.
-5103	Earth Resistance %d%%
-5104	Equipped items cannot be sold in personal stores.
-5105	Event Helper Delete
-5106	Event Helper Spawn
-5107	Evil energy gathers at the central altar.
-5108	Example) 10s, 10m, 1m 30s
-5109	FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%
+5094	ďábel:%3d%% hmyz:%3d%% oheň:%3d%% led:%3d%% poušť:%3d%%
+5095	Dalian byl úspěšně spuštěn.
+5096	Odolnost proti temnotě %d%%
+5097	Šlechtický pán a všichni jeho poddaní byli poraženi.
+5098	Smazání se nezdařilo. Quest flag neexistuje.
+5099	Smazání proběhlo úspěšně.
+5100	Truhla s dračími kameny duše není aktivována.
+5101	Odhozené předměty zmizí za %d min.
+5102	Kvůli nedostatku duševní síly nevidíš vybavení ostatních.
+5103	Odolnost proti zemi %d%%
+5104	Nasazené předměty nelze prodávat v osobních obchodech.
+5105	Smazání pomocníka události
+5106	Vyvolání pomocníka události
+5107	Zlá energie se shromažďuje u centrálního oltáře.
+5108	Příklad) 10s, 10m, 1m 30s
+5109	oheň:%3d%% blesk:%3d%% magie:%3d%% vítr:%3d%% CRIT:%3d%% PENE:%3d%%
 5110	Find %d, count %d, require %d
-5111	Fire Damage %d
-5112	Forced shutdown of Dalian failed
-5113	Get closer and get off.
-5114	Get closer and get on it.
-5115	Guild Land(%d) Cleared
+5111	Poškození ohněm %d
+5112	Vynucené vypnutí Dalianu se nezdařilo
+5113	Přibliž se a sesedni.
+5114	Přibliž se a nasedni.
+5115	Cechovní pozemek (%d) vyčištěn
 5116	GuildID: %d
 5117	GuildMasterPID: %d
-5118	HAIR : %s
+5118	VLASY : %s
 5119	HP %d/%d
-5120	HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%
-5121	Health %d/%d (%d%%)
-5122	Horse Information:
-5123	I am fighting for my life. Stay focused.
-5124	I can't wear it because I don't have the item.
-5125	I'm having trouble starting sparring.
-5126	ICE:%3d%% EARTH:%3d%% DARK:%3d%%
-5127	Invalid argument.
-5128	Invalid command %s
-5129	Invalid format of time. Please specify by adding h, m, or s.
-5130	Invalid item type for switchbot.
-5131	Invalid syntax
-5132	Invalid syntax: no command
-5133	Inventory is not activated.
+5120	člověk:%3d%% zvíře:%3d%% ork:%3d%% milgyo:%3d%% nemrtví:%3d%%
+5121	Zdraví %d/%d (%d%%)
+5122	Informace o koni:
+5123	Bojuji o život. Soustřeď se.
+5124	Nemohu to nasadit, protože nemám ten předmět.
+5125	Mám potíže se zahájením souboje.
+5126	led:%3d%% země:%3d%% temnota:%3d%%
+5127	Neplatný argument.
+5128	Neplatný příkaz %s
+5129	Neplatný formát času. Zadej ho s příponou h, m nebo s.
+5130	Neplatný typ předmětu pro switchbot.
+5131	Neplatná syntaxe
+5132	Neplatná syntaxe: žádný příkaz
+5133	Inventář není aktivován.
 5134	IsInWar: %d
-5135	It doesn't work. Check the skill formula
-5136	It is higher than the application level and cannot be used.
-5137	It is in a state where it cannot be disguised.
-5138	Items in use cannot be sold in personal stores.
-5139	Items that are being worn cannot be sold.
-5140	LEV %d
+5135	Nefunguje to. Zkontroluj vzorec dovednosti
+5136	Je vyšší než úroveň použití a nelze ho použít.
+5137	Ve tomto stavu se nelze přestrojit.
+5138	Používané předměty nelze prodávat v osobních obchodech.
+5139	Nasazené předměty nelze prodat.
+5140	ÚROV %d
 5141	LUA_ERROR: quest %s.%s %s
-5142	Level  %d
-5143	MALL:
-5144	Manufacturing failed.
+5142	Úroveň  %d
+5143	OBCHOD:
+5144	Výroba se nezdařila.
 5145	MapIndex: %d MobCount %d
 5146	MapInfo
-5147	Monsters are advancing towards %s' castle.
-5148	Monsters have started attacking the castle.
-5149	New bonus added successfully.
-5150	No one currently blocked.
-5151	No such a skill by that name.
-5152	No such mob by that vnum
-5153	Not a place for fishing
-5154	Not affected by that type and point.
-5155	Not enough inventory space.
-5156	Not yet available.
-5157	OX-Question: 
-5158	One minute left until the monsters attack!!!
-5159	Opponent's critical hit chance reduced by %d%%
-5160	Opponent's piercing attack probability decreases by %d%%
-5161	Please defeat the Demon Lord within 30 minutes.
-5162	Poison Damage %d
+5147	Monstra postupují k hradu %s.
+5148	Monstra začala útočit na hrad.
+5149	Nový bonus byl úspěšně přidán.
+5150	Momentálně nikdo není blokován.
+5151	Dovednost s tímto názvem neexistuje.
+5152	Monstrum s tímto vnum neexistuje
+5153	Zde se nedá rybařit
+5154	Tento typ a bod nejsou ovlivněny.
+5155	Nedostatek místa v inventáři.
+5156	Zatím není k dispozici.
+5157	OX-otázka:
+5158	Za jednu minutu zaútočí monstra!!!
+5159	Šance protivníka na kritický zásah snížena o %d%%
+5160	Pravděpodobnost protivníkova průbojného útoku snížena o %d%%
+5161	Porazte Pána démonů do 30 minut.
+5162	Poškození jedem %d
 5163	PossibleDistant %f nNowDist %f
 5164	QUEST_SYSERR %s
 5165	QUEST_SYSLOG %s
-5166	Quest flag set: %s %d
-5167	RESISTANCES:
-5168	Reloading Admin information.
-5169	Reloading crafting information.
-5170	Reloading notice string.
-5171	Reloading prototype tables,
-5172	Reloading quest.
+5166	Quest flag nastaven: %s %d
+5167	ODOLNOSTI:
+5168	Znovu se načítají informace o adminech.
+5169	Znovu se načítají informace o výrobě.
+5170	Znovu se načítá oznámení.
+5171	Znovu se načítají prototypové tabulky,
+5172	Znovu se načítá quest.
 5173	Reloading state_user_count.
 5174	RequestSetEventFlag %s %d
 5175	Respaw around
 5176	Respaw everywhere
 5177	SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%
 5178	SP %d/%d
-5179	SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%
-5180	Safebox size set to %d
-5181	Save done.
-5182	Save failed.
-5183	Spawn failed.
-5184	Spiritstones cannot be improved with this item.
-5185	Stam   %d/%d (%d%%)
-5186	Subskill of [%s] was reset
-5187	Successful forced shutdown of Dalian
-5188	Switchbot stopped. Not enough money.
-5189	Switchbot stopped. Out of switchers.
+5179	meč:%3d%% obouruč:%3d%% dýka:%3d%% zvon:%3d%% vějíř:%3d%% luk:%3d%%
+5180	Velikost skladu nastavena na %d
+5181	Uložení dokončeno.
+5182	Uložení se nezdařilo.
+5183	Vyvolání se nezdařilo.
+5184	Duchovní kameny nelze s tímto předmětem vylepšit.
+5185	Výdrž %d/%d (%d%%)
+5186	Podschopnost [%s] byla resetována
+5187	Vynucené vypnutí Dalianu bylo úspěšné
+5188	Switchbot zastaven. Nedostatek peněz.
+5189	Switchbot zastaven. Došly přepínače.
 5190	Syntax: /affect_remove <player name>
 5191	Syntax: /affect_remove <type> <point>
 5192	Syntax: /saveati <map_index> <filename>
@@ -769,42 +769,42 @@
 5197	Syntax: setqf <flagname> <value> [<character name>]
 5198	Syntax: setskill <name> <lev>
 5199	Syntax: setskillother <target> <skillname> <lev>
-5200	TREE:%3d%% MONSTER:%3d%%
-5201	Target is in %d channel (my channel %d)
-5202	Test server timeout passed
-5203	The Dragon's Lair will collapse in %d seconds!
-5204	The buildings required for construction have not been built.
-5205	The construction task failed beyond the building cost information.
-5206	The leader of the monsters has appeared.
-5207	The monsters are showing signs of retreating.
-5208	The monsters began to retreat.
-5209	The noble lord has retreated.
-5210	The other person is unable to add you as a friend.
-5211	The sensor was activated, but no Arcanum was detected.
-5212	The subcommand of the command is incorrect.
-5213	The value was entered incorrectly.
-5214	There are few stat points left.
-5215	There are no spammers.
-5216	There are no stat points left.
-5217	There are types of buildings that cannot be built together.
-5218	There is no character(%s) by that name
-5219	There is no guild with that name or number.
-5220	There is no one by that name
-5221	There is no spirit stone to take out.
-5222	There is no such a skill.
-5223	There is no such character.
-5224	There is no such command
-5225	This building does not exist.
-5226	This guild is currently at war.
-5227	This is a location where buildings cannot be built.
-5228	This is an inappropriate guild name.
-5229	Time remaining until socket is removed from %s: %d
-5230	Total %d
-5231	Total [%d] %d / %d / %d (this server %d)
-5232	Transfer me?!?
-5233	Transfer requested.
-5234	Type Point Modif Duration Flag
-5235	Unknown error
+5200	strom:%3d%% monstrum:%3d%%
+5201	Cíl je na kanálu %d (můj kanál %d)
+5202	Časový limit testovacího serveru vypršel
+5203	Dračí doupě se zřítí za %d sekund!
+5204	Budovy potřebné ke stavbě nebyly postaveny.
+5205	Stavební úkol selhal nad rámec informací o nákladech na budovu.
+5206	Objevil se vůdce monster.
+5207	Monstra vykazují známky ústupu.
+5208	Monstra začala ustupovat.
+5209	Šlechtický pán ustoupil.
+5210	Druhá osoba si tě nemůže přidat mezi přátele.
+5211	Senzor byl aktivován, ale nebylo zjištěno žádné Arkánum.
+5212	Podpříkaz tohoto příkazu je nesprávný.
+5213	Hodnota byla zadána nesprávně.
+5214	Zbývá málo bodů statistik.
+5215	Nejsou žádní spameři.
+5216	Nezbývají žádné body statistik.
+5217	Některé typy budov nelze stavět společně.
+5218	Postava (%s) s tímto jménem neexistuje
+5219	Cech s tímto jménem nebo číslem neexistuje.
+5220	Nikdo s tímto jménem neexistuje
+5221	Není žádný duchovní kámen k vyjmutí.
+5222	Taková dovednost neexistuje.
+5223	Taková postava neexistuje.
+5224	Takový příkaz neexistuje
+5225	Tato budova neexistuje.
+5226	Tento cech je právě ve válce.
+5227	Na tomto místě nelze stavět budovy.
+5228	Toto jméno cechu je nevhodné.
+5229	Zbývající čas do odstranění soketu z předmětu %s: %d
+5230	Celkem %d
+5231	Celkem [%d] %d / %d / %d (tento server %d)
+5232	Přenést mě?!?
+5233	Přenesení vyžádáno.
+5234	Typ Bod Modif Trvání Flag
+5235	Neznámá chyba
 5236	Usage : /horse_set_stat <hp> <stamina>
 5237	Usage: %s <name>
 5238	Usage: block_chat <name> <time> (0 to off)
@@ -820,43 +820,43 @@
 5248	Usage: transfer <name>
 5249	Usage: vote_block_chat <name>
 5250	Usage: warp <character name> | <x meter> <y meter>
-5251	Use: grrandom <group one>
-5252	Use: item <item one>
-5253	Use: mc <one>
-5254	Use: mob <mob one>
-5255	WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%
-5256	We plan to attack the castle in 10 minutes.
-5257	Weekly Event End
-5258	Weekly Event Start
-5259	You can no longer increase the value of good and evil.
-5260	You can't ride there.
-5261	You can't throw away gold yet.
-5262	You cannot add more bonus.
-5263	You cannot change the bonuses.
-5264	You cannot move to another area within 1 minute after the transaction.
-5265	You cannot move to another location while the trading window or warehouse is open.
-5266	You cannot read books while transformed.
-5267	You cannot ride a horse while downed.
-5268	You cannot unequip the belt while items are inside the beld inventory.
-5269	You cannot wear robes while riding a horse.
-5270	You goto ( %d, %d )
-5271	You have destroyed %s.
-5272	You have gained %d exp.
-5273	You roll a die and roll %d. (%d-%d)
-5274	You warp to ( %d, %d )
-5275	Your Mining Points have increased! (%lld/%d)
-5276	Your chat has been blocked by a GM.
-5277	Your inventory is full and you cannot unload.
-5278	Your mining points have reached their maximum. (%lld)
-5279	[1106-??]No puedes unir esto.
+5251	Použití: grrandom <group one>
+5252	Použití: item <item one>
+5253	Použití: mc <one>
+5254	Použití: mob <mob one>
+5255	válečník:%3d%% nindža:%3d%% sura:%3d%% šaman:%3d%%
+5256	Plánujeme zaútočit na hrad za 10 minut.
+5257	Konec týdenní události
+5258	Začátek týdenní události
+5259	Hodnotu dobra a zla již nelze dále zvyšovat.
+5260	Tam nemůžeš jet.
+5261	Yang zatím nelze zahodit.
+5262	Nelze přidat další bonus.
+5263	Bonusy nelze změnit.
+5264	Do 1 minuty po obchodu se nemůžeš přesunout do jiné oblasti.
+5265	Při otevřeném okně obchodu nebo skladu se nemůžeš přesunout na jiné místo.
+5266	Během proměny nelze číst knihy.
+5267	Při sražení k zemi nelze jezdit na koni.
+5268	Opasek nelze sundat, dokud jsou v jeho inventáři předměty.
+5269	Při jízdě na koni nelze nosit róby.
+5270	Jdeš na ( %d, %d )
+5271	Zničil jsi %s.
+5272	Získal jsi %d zkušeností.
+5273	Hodil jsi kostkou a padlo %d. (%d-%d)
+5274	Teleportuješ se na ( %d, %d )
+5275	Tvé těžební body se zvýšily! (%lld/%d)
+5276	Tvůj chat byl zablokován GM.
+5277	Tvůj inventář je plný, nelze vyložit.
+5278	Tvé těžební body dosáhly maxima. (%lld)
+5279	[1106-??]Toto nelze spojit.
 5280	[Only Test] Success_Prob %d, RefineLevel %d
-5281	[SYSTEM ERROR]You cannot upgrade dragon soul without refine window.
-5282	[SYSTEM ERROR]You cannot use dragon soul refine window.
-5283	[TEST_SERVER] Failed to learn skill
-5284	[TEST_SERVER] Success to learn skill
+5281	[SYSTEM ERROR]Dračí duši nelze vylepšit bez okna vylepšování.
+5282	[SYSTEM ERROR]Okno vylepšování dračí duše nelze použít.
+5283	[TEST_SERVER] Naučení dovednosti se nezdařilo
+5284	[TEST_SERVER] Dovednost byla úspěšně naučena
 5285	[TestOnly]Pulse %d LoadTime %d PASS %d
 5286	[TestOnly][Safebox]Pulse %d LoadTime %d PASS %d
-5287	cannot disconnect myself
+5287	nelze odpojit sám sebe
 5288	cell : %d, name : %s, id : %d
 5289	cooltime not finished %s %d
 5290	cube add <inveltory_index>
@@ -868,14 +868,14 @@
 5296	cube[%d]: cube[%d]: %s deleted
 5297	cube[%d]: inventory[%d]: %s
 5298	cube[%d]: inventory[%d]: %s added
-5299	error occurred on [%s:%d]
+5299	chyba nastala v [%s:%d]
 5300	ex) /dc <player name>
 5301	ex) /kill <player name>
-5302	exp bonus %d%%
+5302	bonus zkušeností %d%%
 5303	gold_mul %d rate %d
 5304	guild.wall.build unknown_direction[%s]
-5305	horse level set (%s: %d)
-5306	horse level set to %d.
+5305	úroveň koně nastavena (%s: %d)
+5306	úroveň koně nastavena na %d.
 5307	inventory [%d] = %s
 5308	lovepoint bykill %.3g total %d
 5309	pc_warp %d %d %d
@@ -883,7 +883,7 @@
 5311	sent find position packet for teleport
 5312	setting quest state flag %s %s %d
 5313	setting quest state flag failed
-5314	skill group to %d.
+5314	skupina dovedností na %d.
 5315	usage : /flush player_id
 5316	usage : /horse_level <name> <level>
 5317	usage : priv_empire <empire> <type> <value> <duration>
