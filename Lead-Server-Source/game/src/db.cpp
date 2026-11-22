@@ -450,12 +450,12 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 					MYSQL_ROW row;
 					while ((row = mysql_fetch_row(pMsg->Get()->pSQLResult)))
 					{
-						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s %s sec"), row[0], row[1]);
+						ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5014;%s;%s]", row[0], row[1]);
 					}
 				}
 				else
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("No one currently blocked."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5150]");
 				}
 			}
 			break;

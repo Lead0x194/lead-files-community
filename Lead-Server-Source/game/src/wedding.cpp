@@ -78,8 +78,8 @@ namespace marriage
 
 		m_pEndEvent = event_create(wedding_end_event, info, PASSES_PER_SEC(5));
 
-		Notice(LC_TEXT("The wedding is finishing soon."));
-		Notice(LC_TEXT("Will be left automatically."));
+		Notice("[LS;889]");
+		Notice("[LS;890]");
 
 		for (itertype(m_set_pkChr) it = m_set_pkChr.begin(); it != m_set_pkChr.end(); ++it)
 		{
@@ -104,7 +104,7 @@ namespace marriage
 
 		void operator() (LPCHARACTER ch)
 		{
-			ch->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s"), m_psz);
+			ch->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", m_psz);
 		}
 
 		const char * m_psz;

@@ -155,11 +155,11 @@ bool COXEventManager::ShowQuizList(LPCHARACTER pkChar)
 	{
 		for (size_t j = 0; j < m_vec_quiz[i].size(); ++j, ++c)
 		{
-			pkChar->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%d %s %s"), m_vec_quiz[i][j].level, m_vec_quiz[i][j].Quiz, m_vec_quiz[i][j].answer ? LC_TEXT("TRUE") : LC_TEXT("FALSE"));
+			pkChar->ChatPacket(CHAT_TYPE_INFO, "[LS;5005;%d;%s;%s]", m_vec_quiz[i][j].level, m_vec_quiz[i][j].Quiz, m_vec_quiz[i][j].answer ? "[LS;858]" : "[LS;869]");
 		}
 	}
 
-	pkChar->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Total number of the Quiz: %d"), c);	
+	pkChar->ChatPacket(CHAT_TYPE_INFO, "[LS;880;%d]", c);	
 	return true;
 }
 
@@ -197,26 +197,26 @@ EVENTFUNC(oxevent_timer)
 	switch (flag)
 	{
 		case 0:
-			SendNoticeMap(LC_TEXT("The result will follow in 10 seconds."), OXEVENT_MAP_INDEX, true);
+			SendNoticeMap("[LS;892]", OXEVENT_MAP_INDEX, true);
 			flag++;
 			return PASSES_PER_SEC(10);
 			
 		case 1:
-			SendNoticeMap(LC_TEXT("The correct answer is:"), OXEVENT_MAP_INDEX, true);
+			SendNoticeMap("[LS;903]", OXEVENT_MAP_INDEX, true);
 
 			if (info->answer == true)
 			{
 				COXEventManager::instance().CheckAnswer(true);
-				SendNoticeMap(LC_TEXT("Yes (O)"), OXEVENT_MAP_INDEX, true);
+				SendNoticeMap("[LS;914]", OXEVENT_MAP_INDEX, true);
 			}
 			else
 			{
 				COXEventManager::instance().CheckAnswer(false);
-				SendNoticeMap(LC_TEXT("No (X)"), OXEVENT_MAP_INDEX, true);
+				SendNoticeMap("[LS;925]", OXEVENT_MAP_INDEX, true);
 			}
 
 
-			SendNoticeMap(LC_TEXT("In 5 sec. everyone who gave an incorrect answer will be removed."), OXEVENT_MAP_INDEX, true);
+			SendNoticeMap("[LS;936]", OXEVENT_MAP_INDEX, true);
 
 			flag++;
 			return PASSES_PER_SEC(5);
@@ -224,7 +224,7 @@ EVENTFUNC(oxevent_timer)
 		case 2:
 			COXEventManager::instance().WarpToAudience();
 			COXEventManager::instance().SetStatus(OXEVENT_CLOSE);
-			SendNoticeMap(LC_TEXT("Ready for the next question?"), OXEVENT_MAP_INDEX, true);
+			SendNoticeMap("[LS;947]", OXEVENT_MAP_INDEX, true);
 			flag = 0;
 			break;
 	}
@@ -241,9 +241,9 @@ bool COXEventManager::Quiz(unsigned char level, int timelimit)
 
 	int idx = number(0, static_cast<int>(m_vec_quiz[level].size()-1));
 
-	SendNoticeMap(LC_TEXT("OX-Question: "), OXEVENT_MAP_INDEX, true);
+	SendNoticeMap("[LS;5157]", OXEVENT_MAP_INDEX, true);
 	SendNoticeMap(m_vec_quiz[level][idx].Quiz, OXEVENT_MAP_INDEX, true);
-	SendNoticeMap(LC_TEXT("If it's correct, then go to O. If it's wrong, go to X."), OXEVENT_MAP_INDEX, true);
+	SendNoticeMap("[LS;969]", OXEVENT_MAP_INDEX, true);
 
 	if (m_timedEvent != NULL) {
 		event_cancel(&m_timedEvent);
@@ -306,7 +306,7 @@ bool COXEventManager::CheckAnswer(bool answer)
 			}
 			else
 			{
-				pkChar->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Correct!"));
+				pkChar->ChatPacket(CHAT_TYPE_INFO, "[LS;980]");
 				// pkChar->CreateFly(number(FLY_FIREWORK1, FLY_FIREWORK6), pkChar);
 				char chatbuf[256];
 				int len = snprintf(chatbuf, sizeof(chatbuf), 

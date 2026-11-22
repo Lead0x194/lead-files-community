@@ -155,7 +155,7 @@ namespace
 								//pkChr->RemoveAffect(AFFECT_WAR_FLAG);
 
 								char buf[256];
-								snprintf(buf, sizeof(buf), LC_TEXT("The guild %s's flag has been stolen by player %s."), pMap->GetGuild(idx)->GetName(), pMap->GetGuild(idx_opp)->GetName());
+								snprintf(buf, sizeof(buf), "[LS;381;%s;%s]", pMap->GetGuild(idx)->GetName(), pMap->GetGuild(idx_opp)->GetName());
 								pMap->Notice(buf);
 							}
 						}
@@ -1151,7 +1151,7 @@ void CHARACTER::StateFlag()
 
 	pMap->RemoveFlag(idx);
 
-	snprintf(buf, sizeof(buf), LC_TEXT("%s has captured the flag of %s!"), pMap->GetGuild(idx)->GetName(), f.m_pkChrFind->GetName());
+	snprintf(buf, sizeof(buf), "[LS;327;%s;%s]", pMap->GetGuild(idx)->GetName(), f.m_pkChrFind->GetName());
 	pMap->Notice(buf);
 }
 

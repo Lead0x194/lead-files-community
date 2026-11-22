@@ -45,22 +45,22 @@ static void _send_bonus_info(LPCHARACTER ch)
 	if (item_drop_bonus)
 	{
 		ch->ChatPacket(CHAT_TYPE_NOTICE, 
-				LC_TEXT("The quota of the Item Drop is at the moment plus %d%%"), item_drop_bonus);
+				"[LS;871;%d]", item_drop_bonus);
 	}
 	if (gold_drop_bonus)
 	{
 		ch->ChatPacket(CHAT_TYPE_NOTICE, 
-				LC_TEXT("The quota of the Yang Drop is at the moment plus %d%%"), gold_drop_bonus);
+				"[LS;872;%d]", gold_drop_bonus);
 	}
 	if (gold10_drop_bonus)
 	{
 		ch->ChatPacket(CHAT_TYPE_NOTICE, 
-				LC_TEXT("The drop rate for Yang rain is currently %d%% higher."), gold10_drop_bonus);
+				"[LS;873;%d]", gold10_drop_bonus);
 	}
 	if (exp_bonus)
 	{
 		ch->ChatPacket(CHAT_TYPE_NOTICE, 
-				LC_TEXT("The experience bonus is currently an additional %d%%."), exp_bonus);
+				"[LS;874;%d]", exp_bonus);
 	}
 }
 

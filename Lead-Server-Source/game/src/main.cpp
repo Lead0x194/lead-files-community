@@ -239,11 +239,11 @@ void ShutdownOnFatalError()
 		{
 			char buf[256];
 
-			strlcpy(buf, LC_TEXT("A critical server error has occurred. The server will restart automatically."), sizeof(buf));
+			strlcpy(buf, "[LS;738]", sizeof(buf));
 			SendNotice(buf);
-			strlcpy(buf, LC_TEXT("You will be disconnected automatically in 10 seconds."), sizeof(buf));
+			strlcpy(buf, "[LS;739]", sizeof(buf));
 			SendNotice(buf);
-			strlcpy(buf, LC_TEXT("You can connect again after 5 minutes."), sizeof(buf));
+			strlcpy(buf, "[LS;740]", sizeof(buf));
 			SendNotice(buf);
 		}
 

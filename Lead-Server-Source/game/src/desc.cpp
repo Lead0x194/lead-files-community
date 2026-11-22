@@ -755,7 +755,7 @@ void DESC::DisconnectOfSameLogin()
 		if (m_pkDisconnectEvent)
 			return;
 
-		GetCharacter()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Someone has logged into your account. You will be disconnected from the server."));
+		GetCharacter()->ChatPacket(CHAT_TYPE_INFO, "[LS;486]");
 		DelayedDisconnect(5);
 	}
 	else

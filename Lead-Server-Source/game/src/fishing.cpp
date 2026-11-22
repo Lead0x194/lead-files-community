@@ -427,11 +427,11 @@ void FishingPractice(LPCHARACTER ch)
 		if ( rod->GetRefinedVnum()>0 && rod->GetSocket(0) < rod->GetValue(2) && number(1,rod->GetValue(1))==1 )
 		{
 			rod->SetSocket(0, rod->GetSocket(0) + 1);
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your fishing points have increased! (%d/%d)"),rod->GetSocket(0), rod->GetValue(2));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;796;%d;%d]",rod->GetSocket(0), rod->GetValue(2));
 			if (rod->GetSocket(0) == rod->GetValue(2))
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have reached the maximum number of fishing points."));
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Go to the Fisherman and get your Fishing Pole upgraded!"));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;797]");
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;798]");
 			}
 		}
 	}
@@ -593,14 +593,14 @@ void Take(fishing_event_info* info, LPCHARACTER ch)
 		int ret = Compute(info->fish_id, ms, &item_vnum, GetFishingLevel(ch));
 
 		//if (test_server)
-		//ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%d ms"), ms);
+		//ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5006;%d]", ms);
 
 		switch (ret)
 		{
 			case -2: // If not caught
 			case -3: // Failed due to difficulty
 			case -1: // Fail due to time probability
-				//ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You lost your bait to the fish."));
+				//ch->ChatPacket(CHAT_TYPE_INFO, "[LS;799]");
 				{
 					int map_idx = ch->GetMapIndex();
 					int prob_idx = GetProbIndexByMapIndex(map_idx);
@@ -616,7 +616,7 @@ void Take(fishing_event_info* info, LPCHARACTER ch)
 				break;
 
 			case 0:
-				//ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have caught a fish! (%s)"), fish_info[info->fish_id].name);
+				//ch->ChatPacket(CHAT_TYPE_INFO, "[LS;800;%s]", fish_info[info->fish_id].name);
 				if (item_vnum)
 				{
 					FishingSuccess(ch);
@@ -633,7 +633,7 @@ void Take(fishing_event_info* info, LPCHARACTER ch)
 						item->SetSocket(0,GetFishLength(info->fish_id));
 						if (test_server)
 						{
-							ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The length of the captured fish is %.2fcm."), item->GetSocket(0)/100.f);
+							ch->ChatPacket(CHAT_TYPE_INFO, "[LS;801;%.2f]", item->GetSocket(0)/100.f);
 						}
 					}
 
@@ -677,7 +677,7 @@ void Take(fishing_event_info* info, LPCHARACTER ch)
 				info->fish_id,
 				GetFishingLevel(ch),
 				7000);
-		//ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You lost your bait to the fish."));
+		//ch->ChatPacket(CHAT_TYPE_INFO, "[LS;799]");
 		FishingFail(ch);
 	}
 	else
@@ -715,9 +715,9 @@ void Simulation(int level, int count, int prob_idx, LPCHARACTER ch)
 	}
 
 	for (std::map<std::string,int>::iterator it = fished.begin(); it != fished.end(); ++it)
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s: %d"), it->first.c_str(), it->second);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;805;%s;%d]", it->first.c_str(), it->second);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have caught %d of %d ."), fished.size(), total_count);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;806;%d;%d]", fished.size(), total_count);
 }
 
 void UseFish(LPCHARACTER ch, LPITEM item)
@@ -754,16 +754,16 @@ void UseFish(LPCHARACTER ch, LPITEM item)
 			case USED_TREASURE_MAP:	// 3
 			case USED_NONE:		// 0
 			case USED_WATER_STONE:	// 2
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The fish vanished in the depths of the water."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;807]");
 				break;
 
 			case USED_SHELLFISH:	// 1
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is a Clam inside the Fish."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;808]");
 				ch->AutoGiveItem(SHELLFISH_VNUM);
 				break;
 
 			case USED_EARTHWARM:	// 4
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is a Worm inside the Fish."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;809]");
 				ch->AutoGiveItem(EARTHWORM_VNUM);
 				break;
 
@@ -794,7 +794,7 @@ void Grill(LPCHARACTER ch, LPITEM item)
 
 	int count = item->GetCount();
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You are roasting %s over the fire."), item->GetName());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;810;%s]", item->GetName());
 	item->SetCount(0);
 	ch->AutoGiveItem(fish_info[idx].grill_vnum, count);
 }

@@ -323,7 +323,7 @@ void CParty::Destroy()
 				p.header = HEADER_GC_PARTY_REMOVE;
 				p.pid = rMember.pCharacter->GetPlayerID();
 				rMember.pCharacter->GetDesc()->Packet(&p, sizeof(p));
-				rMember.pCharacter->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Group] This group has been disbanded."));
+				rMember.pCharacter->ChatPacket(CHAT_TYPE_INFO, "[LS;922]");
 			}
 			else
 			{
@@ -365,7 +365,7 @@ void CParty::ChatPacketToAllMember(BYTE type, const char* format, ...)
 		{
 			if (rMember.pCharacter->GetDesc())
 			{
-				rMember.pCharacter->ChatPacket(type, LC_TEXT("%s"), chatbuf);
+				rMember.pCharacter->ChatPacket(type, "[LS;370;%s]", chatbuf);
 			}
 		}
 	}
@@ -1123,7 +1123,7 @@ void CParty::SummonToLeader(DWORD pid)
 
 	if (m_memberMap.find(pid) == m_memberMap.end())
 	{
-		l->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Group] The target has not been found."));
+		l->ChatPacket(CHAT_TYPE_INFO, "[LS;685]");
 		return;
 	}
 
@@ -1131,13 +1131,13 @@ void CParty::SummonToLeader(DWORD pid)
 
 	if (!ch)
 	{
-		l->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Group] The target has not been found."));
+		l->ChatPacket(CHAT_TYPE_INFO, "[LS;685]");
 		return;
 	}
 
 	if (!ch->CanSummon(m_iLeadership))
 	{
-		l->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Group] You cannot call the target."));
+		l->ChatPacket(CHAT_TYPE_INFO, "[LS;923]");
 		return;
 	}
 
@@ -1154,7 +1154,7 @@ void CParty::SummonToLeader(DWORD pid)
 	}
 
 	if (n == 0)
-		l->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Group] You cannot call group members over to your current position."));
+		l->ChatPacket(CHAT_TYPE_INFO, "[LS;924]");
 	else
 	{
 		int i = number(0, n - 1);
@@ -1376,7 +1376,7 @@ void CParty::Update()
 			continue;
 
 		if (bLongTimeExpBonusChanged && ch->GetDesc())
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your group works well together, and group members near the group leader will receive an experience bonus."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;926]");
 
 		bool bNear = it->second.bNear;
 

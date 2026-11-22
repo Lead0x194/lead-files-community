@@ -382,8 +382,8 @@ void CWarMap::IncMember(LPCHARACTER ch)
 		++m_iObserverCount; 
 		sys_log(0, "WarMap +o %d", m_iObserverCount);
 		ch->SetObserverMode(true);
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can participate in the guild battle in viewer mode."));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("While choosing a character, an icon appears."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;489]");
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;490]");
 	}
 
 	UpdateUserCount();
@@ -480,8 +480,8 @@ void CWarMap::CheckWarEnd()
 		if (m_pkTimeoutEvent)
 			return;
 
-		Notice(LC_TEXT("There are no opponents."));
-		Notice(LC_TEXT("If no enemy can be found, the guild war will be ended automatically."));
+		Notice("[LS;491]");
+		Notice("[LS;493]");
 
 		sys_log(0, "CheckWarEnd: Timeout begin %u vs %u", m_TeamData[0].dwID, m_TeamData[1].dwID);
 
@@ -523,7 +523,7 @@ void CWarMap::Timeout()
 
 	if (get_dword_time() - m_dwStartTime < 60000 * 5)
 	{
-		Notice(LC_TEXT("Because the guild war finished early, the result will judged as a draw."));
+		Notice("[LS;494]");
 		dwWinner = 0;
 		dwLoser = 0;
 	}
@@ -601,7 +601,7 @@ namespace
 
 		void operator() (LPCHARACTER ch)
 		{
-			ch->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s"), m_psz);
+			ch->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", m_psz);
 		}
 
 		const char * m_psz;

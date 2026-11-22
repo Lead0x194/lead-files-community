@@ -301,7 +301,7 @@ void CSwitchbot::SwitchItems()
 			if (desc)
 			{
 				char buf[255];
-				int len = snprintf(buf, sizeof(buf), LC_TEXT("Bonuschange of %s (Slot: %d) successfully finished."), pkItem->GetName(), bSlot + 1);
+				int len = snprintf(buf, sizeof(buf), "[LS;5072;%s;%d]", pkItem->GetName(), bSlot + 1);
 
 				TPacketGCWhisper pack;
 				pack.bHeader = HEADER_GC_WHISPER;
@@ -386,11 +386,11 @@ void CSwitchbot::SwitchItems()
 
 				if (SWITCHBOT_PRICE_TYPE == 1)
 				{
-					pkOwner->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Switchbot stopped. Out of switchers."));
+					pkOwner->ChatPacket(CHAT_TYPE_INFO, "[LS;5189]");
 				}
 				else
 				{
-					pkOwner->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Switchbot stopped. Not enough money."));
+					pkOwner->ChatPacket(CHAT_TYPE_INFO, "[LS;5188]");
 				}
 
 				return;

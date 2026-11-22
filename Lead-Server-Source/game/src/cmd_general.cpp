@@ -50,13 +50,13 @@ ACMD(do_user_horse_ride)
 		// Riding a vehicle other than a horse .
 		if (ch->GetMountVnum())
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You're already riding. Get off first."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1054]");
 			return;
 		}
 
 		if (ch->GetHorse() == NULL)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Please call your Horse first."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;501]");
 			return;
 		}
 
@@ -73,15 +73,15 @@ ACMD(do_user_horse_back)
 	if (ch->GetHorse() != NULL)
 	{
 		ch->HorseSummon(false);
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have sent your horse away."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;502]");
 	}
 	else if (ch->IsHorseRiding() == true)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have to get off your Horse."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;504]");
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Please call your Horse first."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;501]");
 	}
 }
 
@@ -94,9 +94,9 @@ ACMD(do_user_horse_feed)
 	if (ch->GetHorse() == NULL)
 	{
 		if (ch->IsHorseRiding() == false)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Please call your Horse first."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;501]");
 		else
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot feed your Horse whilst sitting on it."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;505]");
 		return;
 	}
 
@@ -106,13 +106,13 @@ ACMD(do_user_horse_feed)
 	{
 		ch->RemoveSpecifyItem(dwFood, 1);
 		ch->FeedHorse();
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have fed the Horse with %s%s."), 
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;506;%s;%s]", 
 				ITEM_MANAGER::instance().GetTable(dwFood)->szLocaleName,
-				LC_TEXT("the"));
+				"[LS;393]");
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You need %s."), ITEM_MANAGER::instance().GetTable(dwFood)->szLocaleName);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;507;%s]", ITEM_MANAGER::instance().GetTable(dwFood)->szLocaleName);
 	}
 }
 
@@ -211,7 +211,7 @@ EVENTFUNC(shutdown_event)
 	else
 	{
 		char buf[64];
-		snprintf(buf, sizeof(buf), LC_TEXT("%d seconds until Exit."), *pSec);
+		snprintf(buf, sizeof(buf), "[LS;508;%d]", *pSec);
 		SendNotice(buf);
 
 		--*pSec;
@@ -230,7 +230,7 @@ void Shutdown(int iSec)
 	CWarMapManager::instance().OnShutdown();
 
 	char buf[64];
-	snprintf(buf, sizeof(buf), LC_TEXT("The game will be closed in %d seconds."), iSec);
+	snprintf(buf, sizeof(buf), "[LS;509;%d]", iSec);
 
 	SendNotice(buf);
 
@@ -316,7 +316,7 @@ EVENTFUNC(timed_event)
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%d seconds until Exit."), info->left_second);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;508;%d]", info->left_second);
 		--info->left_second;
 	}
 
@@ -328,7 +328,7 @@ ACMD(do_cmd)
 	/* RECALL_DELAY
 	   if (ch->m_pkRecallEvent != NULL)
 	   {
-	   ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your logout has been cancelled."));
+	   ch->ChatPacket(CHAT_TYPE_INFO, "[LS;511]");
 	   event_cancel(&ch->m_pkRecallEvent);
 	   return;
 	   }
@@ -336,7 +336,7 @@ ACMD(do_cmd)
 
 	if (ch->m_pkTimedEvent)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your logout has been cancelled."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;511]");
 		event_cancel(&ch->m_pkTimedEvent);
 		return;
 	}
@@ -344,15 +344,15 @@ ACMD(do_cmd)
 	switch (subcmd)
 	{
 		case SCMD_LOGOUT:
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Back to login window. Please wait."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;512]");
 			break;
 
 		case SCMD_QUIT:
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have been disconnected from the server. Please wait."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;513]");
 			break;
 
 		case SCMD_PHASE_SELECT:
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You are changing character. Please wait."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;515]");
 			break;
 	}
 
@@ -413,7 +413,7 @@ ACMD(do_mount)
 
 	if (distance > 600.0f)
 	{
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Get closer and get off."));
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5113]");
 	return;
 	}
 
@@ -430,7 +430,7 @@ ACMD(do_mount)
 
 	if (!tch->IsNPC() || !tch->IsMountable())
 	{
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can't ride there."));
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5260]");
 	return;
 	}
 
@@ -438,7 +438,7 @@ ACMD(do_mount)
 
 	if (distance > 600.0f)
 	{
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Get closer and get on it."));
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5114]");
 	return;
 	}
 
@@ -486,13 +486,13 @@ ACMD(do_restart)
 		{
 			if (ch->IsHack())
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("A new start is not possible at the moment. Please wait %d seconds."), iTimeToDead - (180 - g_nPortalLimitTime));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;516;%d]", iTimeToDead - (180 - g_nPortalLimitTime));
 				return;
 			}
 
 			if (iTimeToDead > 170)
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("A new start is not possible at the moment. Please wait %d seconds."), iTimeToDead - 170);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;516;%d]", iTimeToDead - 170);
 				return;
 			}
 		}
@@ -508,14 +508,14 @@ ACMD(do_restart)
 			// guild map , It is not checked on the sacred site map. .
 			if ((!ch->GetWarMap() || ch->GetWarMap()->GetType() == GUILD_WAR_TYPE_FLAG))
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("A new start is not possible at the moment. Please wait %d seconds."), iTimeToDead - (180 - g_nPortalLimitTime));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;516;%d]", iTimeToDead - (180 - g_nPortalLimitTime));
 				return;
 			}
 		}
 
 		if (iTimeToDead > 173)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot restart in the city yet. Wait another %d seconds."), iTimeToDead - 173);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;519;%d]", iTimeToDead - 173);
 			return;
 		}
 	}
@@ -610,7 +610,7 @@ ACMD(do_stat_minus)
 
 	if (ch->IsPolymorphed())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot change your status while you are transformed."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;521]");
 		return;
 	}
 
@@ -677,7 +677,7 @@ ACMD(do_stat)
 
 	if (ch->IsPolymorphed())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot change your status while you are transformed."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;521]");
 		return;
 	}
 
@@ -722,7 +722,7 @@ ACMD(do_pvp)
 {
 	if (ch->GetArena() != NULL || CArenaManager::instance().IsArenaMap(ch->GetMapIndex()) == true)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot use this in the duel arena."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;403]");
 		return;
 	}
 
@@ -741,7 +741,7 @@ ACMD(do_pvp)
 
 	if (pkVictim->GetArena() != NULL)
 	{
-		pkVictim->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This player is currently fighting."));
+		pkVictim->ChatPacket(CHAT_TYPE_INFO, "[LS;522]");
 		return;
 	}
 
@@ -758,7 +758,7 @@ ACMD(do_guildskillup)
 
 	if (!ch->GetGuild())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] It does not belong to the guild."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;523]");
 		return;
 	}
 
@@ -772,7 +772,7 @@ ACMD(do_guildskillup)
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] You do not have the authority to change the level of the guild skills."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;524]");
 	}
 }
 
@@ -845,13 +845,13 @@ ACMD(do_safebox_change_password)
 
 	if (!*arg1 || strlen(arg1)>6)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Storeroom] You have entered an incorrect password."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;526]");
 		return;
 	}
 
 	if (!*arg2 || strlen(arg2)>6)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Storeroom] You have entered an incorrect password."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;526]");
 		return;
 	}
 
@@ -871,7 +871,7 @@ ACMD(do_mall_password)
 
 	if (!*arg1 || strlen(arg1) > 6)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Storeroom] You have entered an incorrect password."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;526]");
 		return;
 	}
 
@@ -879,13 +879,13 @@ ACMD(do_mall_password)
 
 	if (ch->GetMall())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Storeroom] The Storeroom is already open."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;527]");
 		return;
 	}
 
 	if (iPulse - ch->GetMallLoadTime() < passes_per_sec * 10) // 10 Can only be requested once per second
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Storeroom] You have to wait 10 seconds before you can open the Storeroom again."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;528]");
 		return;
 	}
 
@@ -916,13 +916,13 @@ ACMD(do_ungroup)
 
 	if (!CPartyManager::instance().IsEnablePCParty())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Group] The server cannot execute this group request."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;530]");
 		return;
 	}
 
 	if (ch->GetDungeon())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Group] You cannot leave a group while you are in a dungeon."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;531]");
 		return;
 	}
 
@@ -935,7 +935,7 @@ ACMD(do_ungroup)
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Group] You have left the group."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;532]");
 		//pParty->SendPartyRemoveOneToAll(ch);
 		pParty->Quit(ch->GetPlayerID());
 		//pParty->SendPartyRemoveAllToOne(ch);
@@ -974,7 +974,7 @@ ACMD(do_war)
 	// Check if there is a war !
 	if (g->UnderAnyWar())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] Your guild is already participating in another war."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;533]");
 		return;
 	}
 
@@ -1000,7 +1000,7 @@ ACMD(do_war)
 	// Check if it is master ( Only guild leaders can participate in guild battles. )
 	if (gm_pid != ch->GetPlayerID())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] No one is entitled to a guild war."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;534]");
 		return;
 	}
 
@@ -1009,7 +1009,7 @@ ACMD(do_war)
 
 	if (!opp_g)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] No guild with this name exists."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;535]");
 		return;
 	}
 
@@ -1020,7 +1020,7 @@ ACMD(do_war)
 			{
 				if (opp_g->UnderAnyWar())
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] This guild is already participating in another war."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;541]");
 					return;
 				}
 
@@ -1028,13 +1028,13 @@ ACMD(do_war)
 
 				if (g->GetGuildMoney() < iWarPrice)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] Not enough Yang to participate in a guild war."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;538]");
 					return;
 				}
 
 				if (opp_g->GetGuildMoney() < iWarPrice)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The guild does not have enough Yang to participate in a guild war."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;539]");
 					return;
 				}
 			}
@@ -1042,7 +1042,7 @@ ACMD(do_war)
 
 		case GUILD_WAR_SEND_DECLARE:
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] This guild is already participating in a war."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;537]");
 				return;
 			}
 			break;
@@ -1051,7 +1051,7 @@ ACMD(do_war)
 			{
 				if (opp_g->UnderAnyWar())
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] This guild is already participating in another war."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;541]");
 					g->RequestRefuseWar(opp_g->GetID());
 					return;
 				}
@@ -1060,7 +1060,7 @@ ACMD(do_war)
 
 		case GUILD_WAR_RESERVE:
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] This Guild is already scheduled for another war."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;540]");
 				return;
 			}
 			break;
@@ -1069,7 +1069,7 @@ ACMD(do_war)
 			return;
 
 		default:
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] This guild is taking part in a battle at the moment."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1050]");
 			g->RequestRefuseWar(opp_g->GetID());
 			return;
 	}
@@ -1079,12 +1079,12 @@ ACMD(do_war)
 		// I do not meet the conditions for guild warfare. .
 		if (g->GetLadderPoint() == 0)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The guild level is too low."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1308]");
 			sys_log(0, "GuildWar.StartError.NEED_LADDER_POINT");
 		}
 		else if (g->GetMemberCount() < GUILD_WAR_MIN_MEMBER_COUNT)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] A minimum of %d players are needed to participate in a guild war."), GUILD_WAR_MIN_MEMBER_COUNT);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;543;%d]", GUILD_WAR_MIN_MEMBER_COUNT);
 			sys_log(0, "GuildWar.StartError.NEED_MINIMUM_MEMBER[%d]", GUILD_WAR_MIN_MEMBER_COUNT);
 		}
 		else
@@ -1098,9 +1098,9 @@ ACMD(do_war)
 	if (!opp_g->CanStartWar(GUILD_WAR_TYPE_FIELD))
 	{
 		if (opp_g->GetLadderPoint() == 0)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The guild does not have enough points to participate in a guild war."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;544]");
 		else if (opp_g->GetMemberCount() < GUILD_WAR_MIN_MEMBER_COUNT)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The guild does not have enough members to participate in a guild war."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;545]");
 		return;
 	}
 
@@ -1114,7 +1114,7 @@ ACMD(do_war)
 		if (pCCI != NULL)
 			break;
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The enemy's guild leader is offline."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1048]");
 		g->RequestRefuseWar(opp_g->GetID());
 		return;
 
@@ -1130,7 +1130,7 @@ ACMD(do_war)
 		if (pCCI != NULL)
 			break;
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The enemy's guild leader is offline."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1048]");
 		g->RequestRefuseWar(opp_g->GetID());
 		return;
 
@@ -1155,7 +1155,7 @@ ACMD(do_nowar)
 
 	if (gm_pid != ch->GetPlayerID())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] No one is entitled to a guild war."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;534]");
 		return;
 	}
 
@@ -1163,7 +1163,7 @@ ACMD(do_nowar)
 
 	if (!opp_g)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] No guild with this name exists."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;535]");
 		return;
 	}
 
@@ -1204,7 +1204,7 @@ ACMD(do_messenger_auth)
 {
 	if (ch->GetArena())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot use this in the duel arena."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;403]");
 		return;
 	}
 
@@ -1221,7 +1221,7 @@ ACMD(do_messenger_auth)
 		LPCHARACTER tch = CHARACTER_MANAGER::instance().FindPC(arg2);
 
 		if (tch)
-			tch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s declined the invitation."), ch->GetName());
+			tch->ChatPacket(CHAT_TYPE_INFO, "[LS;548;%s]", ch->GetName());
 	}
 
 	MessengerManager::instance().AuthToAdd(ch->GetName(), arg2, answer == 'y' ? false : true); // DENY
@@ -1254,7 +1254,7 @@ ACMD(do_unmount)
 	}
 	else
 	{
-		ch->ChatPacket( CHAT_TYPE_INFO, LC_TEXT("Your inventory is full and you cannot unload."));
+		ch->ChatPacket( CHAT_TYPE_INFO, "[LS;5277]");
 	}
 
 }
@@ -1308,7 +1308,7 @@ ACMD(do_view_equip)
 
 		   if (ch->GetSP() < iSPCost)
 		   {
-		   ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Due to lack of mental power, you cannot see other people's equipment."));
+		   ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5102]");
 		   return;
 		   }
 		   ch->PointChange(POINT_SP, -iSPCost);
@@ -1321,13 +1321,13 @@ ACMD(do_party_request)
 {
 	if (ch->GetArena())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot use this in the duel arena."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;403]");
 		return;
 	}
 
 	if (ch->GetParty())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot accept the invitation because you are already in the group."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;549]");
 		return;
 	}
 
@@ -1424,90 +1424,90 @@ static const char* FN_point_string(int apply_number)
 {
 	switch (apply_number)
 	{
-		case POINT_MAX_HP:	return LC_TEXT("Hit Points +%d");
-		case POINT_MAX_SP:	return LC_TEXT("Spell Points +%d");
-		case POINT_HT:		return LC_TEXT("Endurance +%d");
-		case POINT_IQ:		return LC_TEXT("Intelligence +%d");
-		case POINT_ST:		return LC_TEXT("Strength +%d");
-		case POINT_DX:		return LC_TEXT("Dexterity +%d");
-		case POINT_ATT_SPEED:	return LC_TEXT("Attack Speed +%d");
-		case POINT_MOV_SPEED:	return LC_TEXT("Movement Speed %d");
-		case POINT_CASTING_SPEED:	return LC_TEXT("Cooldown Time -%d");
-		case POINT_HP_REGEN:	return LC_TEXT("Energy Recovery +%d");
-		case POINT_SP_REGEN:	return LC_TEXT("Spell Point Recovery +%d");
-		case POINT_POISON_PCT:	return LC_TEXT("Poison Attack %d");
-		case POINT_STUN_PCT:	return LC_TEXT("Star +%d");
-		case POINT_SLOW_PCT:	return LC_TEXT("Speed Reduction +%d");
-		case POINT_CRITICAL_PCT:	return LC_TEXT("Critical Attack with a chance of %d%%");
-		case POINT_RESIST_CRITICAL:	return LC_TEXT("Opponent's critical hit chance reduced by %d%%");
-		case POINT_PENETRATE_PCT:	return LC_TEXT("Chance of a Speared Attack of %d%%");
-		case POINT_RESIST_PENETRATE: return LC_TEXT("Opponent's piercing attack probability decreases by %d%%");
-		case POINT_ATTBONUS_HUMAN:	return LC_TEXT("Player's Attack Power against Monsters +%d%%");
-		case POINT_ATTBONUS_ANIMAL:	return LC_TEXT("Horse's Attack Power against Monsters +%d%%");
-		case POINT_ATTBONUS_ORC:	return LC_TEXT("Attack Boost against Wonggui + %d%%");
-		case POINT_ATTBONUS_MILGYO:	return LC_TEXT("Attack Boost against Milgyo + %d%%");
-		case POINT_ATTBONUS_UNDEAD:	return LC_TEXT("Attack boost against zombies + %d%%");
-		case POINT_ATTBONUS_DEVIL:	return LC_TEXT("Attack boost against devils + %d%%");
-		case POINT_STEAL_HP:		return LC_TEXT("Absorbing of Energy %d%% while attacking.");
-		case POINT_STEAL_SP:		return LC_TEXT("Absorption of Spell Points (SP) %d%% while attacking.");
-		case POINT_MANA_BURN_PCT:	return LC_TEXT("With a chance of %d%% Spell Points (SP) will be taken from the enemy.");
-		case POINT_DAMAGE_SP_RECOVER:	return LC_TEXT("Absorbing of Spell Points (SP) with a chance of %d%%");
-		case POINT_BLOCK:			return LC_TEXT("%d%% Chance of blocking a close-combat attack");
-		case POINT_DODGE:			return LC_TEXT("%d%% Chance of blocking a long range attack");
-		case POINT_RESIST_SWORD:	return LC_TEXT("One-Handed Sword defence %d%%");
-		case POINT_RESIST_TWOHAND:	return LC_TEXT("Two-Handed Sword Defence %d%%");
-		case POINT_RESIST_DAGGER:	return LC_TEXT("Two-Handed Sword Defence %d%%");
-		case POINT_RESIST_BELL:		return LC_TEXT("Bell Defence %d%%");
-		case POINT_RESIST_FAN:		return LC_TEXT("Fan Defence %d%%");
-		case POINT_RESIST_BOW:		return LC_TEXT("Distant Attack Resistance %d%%");
-		case POINT_RESIST_FIRE:		return LC_TEXT("Fire Resistance %d%%");
-		case POINT_RESIST_ELEC:		return LC_TEXT("Lightning Resistance %d%%");
-		case POINT_RESIST_MAGIC:	return LC_TEXT("Magic Resistance %d%%");
-		case POINT_RESIST_WIND:		return LC_TEXT("Wind Resistance %d%%");
-		case POINT_RESIST_ICE:		return LC_TEXT("Cold Resistance %d%%");
-		case POINT_RESIST_EARTH:	return LC_TEXT("Earth Resistance %d%%");
-		case POINT_RESIST_DARK:		return LC_TEXT("Dark Resistance %d%%");
-		case POINT_REFLECT_MELEE:	return LC_TEXT("Reflect Direct Hit: %d%%");
-		case POINT_REFLECT_CURSE:	return LC_TEXT("Reflect Curse: %d%%");
-		case POINT_POISON_REDUCE:	return LC_TEXT("Poison Resistance %d%%");
-		case POINT_KILL_SP_RECOVER:	return LC_TEXT("Spell Points (SP) will be increased by %d%% if you win.");
-		case POINT_EXP_DOUBLE_BONUS:	return LC_TEXT("Experience increases by %d%% if you win against an opponent.");
-		case POINT_GOLD_DOUBLE_BONUS:	return LC_TEXT("Increase of Yang up to %d%% if you win.");
-		case POINT_ITEM_DROP_BONUS:	return LC_TEXT("Increase of captured Items up to %d%% if you win.");
-		case POINT_POTION_BONUS:	return LC_TEXT("Power increase of up to %d%% after taking the potion.");
-		case POINT_KILL_HP_RECOVERY:	return LC_TEXT("%d%% Chance of filling up Hit Points after a victory.");
-//		case POINT_IMMUNE_STUN:	return LC_TEXT("No Dizziness %d%%");
-//		case POINT_IMMUNE_SLOW:	return LC_TEXT("No Slowing Down %d%%");
-//		case POINT_IMMUNE_FALL:	return LC_TEXT("No falling down %d%%");
-//		case POINT_SKILL:	return LC_TEXT("");
-//		case POINT_BOW_DISTANCE:	return LC_TEXT("");
-		case POINT_ATT_GRADE_BONUS:	return LC_TEXT("Attack Power + %d");
-		case POINT_DEF_GRADE_BONUS:	return LC_TEXT("Armour + %d");
-		case POINT_MAGIC_ATT_GRADE:	return LC_TEXT("Magical Attack + %d");
-		case POINT_MAGIC_DEF_GRADE:	return LC_TEXT("Magical Defence + %d");
-//		case POINT_CURSE_PCT:	return LC_TEXT("");
-		case POINT_MAX_STAMINA:	return LC_TEXT("Maximum Endurance + %d");
-		case POINT_ATTBONUS_WARRIOR:	return LC_TEXT("Strong against Warriors + %d%%");
-		case POINT_ATTBONUS_ASSASSIN:	return LC_TEXT("Strong against Ninjas + %d%%");
-		case POINT_ATTBONUS_SURA:		return LC_TEXT("Strong against Sura + %d%%");
-		case POINT_ATTBONUS_SHAMAN:		return LC_TEXT("Strong against Shamans + %d%%");
-		case POINT_ATTBONUS_MONSTER:	return LC_TEXT("Strength against monsters + %d%%");
-		case POINT_MALL_ATTBONUS:		return LC_TEXT("Attack + %d%%");
-		case POINT_MALL_DEFBONUS:		return LC_TEXT("Defence + %d%%");
-		case POINT_MALL_EXPBONUS:		return LC_TEXT("Experience %d%%");
-		case POINT_MALL_ITEMBONUS:		return LC_TEXT("Chance to find an Item %. 1f");
-		case POINT_MALL_GOLDBONUS:		return LC_TEXT("Chance to find Yang %. 1f");
-		case POINT_MAX_HP_PCT:			return LC_TEXT("Maximum Energy +%d%%");
-		case POINT_MAX_SP_PCT:			return LC_TEXT("Maximum Energy +%d%%");
-		case POINT_SKILL_DAMAGE_BONUS:	return LC_TEXT("Skill Damage %d%%");
-		case POINT_NORMAL_HIT_DAMAGE_BONUS:	return LC_TEXT("Hit Damage %d%%");
-		case POINT_SKILL_DEFEND_BONUS:		return LC_TEXT("Resistance against Skill Damage %d%%");
-		case POINT_NORMAL_HIT_DEFEND_BONUS:	return LC_TEXT("Resistance against Hits %d%%");
-//		case POINT_EXTRACT_HP_PCT:	return LC_TEXT("");
-		case POINT_RESIST_WARRIOR:	return LC_TEXT("%d%% Resistance against Warrior Attacks");
-		case POINT_RESIST_ASSASSIN:	return LC_TEXT("%d%% Resistance against Ninja Attacks");
-		case POINT_RESIST_SURA:		return LC_TEXT("%d%% Resistance against Sura Attacks");
-		case POINT_RESIST_SHAMAN:	return LC_TEXT("%d%% Resistance against Shaman Attacks");
+		case POINT_MAX_HP:	return "[LS;568;%d]";
+		case POINT_MAX_SP:	return "[LS;569;%d]";
+		case POINT_HT:		return "[LS;571;%d]";
+		case POINT_IQ:		return "[LS;572;%d]";
+		case POINT_ST:		return "[LS;573;%d]";
+		case POINT_DX:		return "[LS;574;%d]";
+		case POINT_ATT_SPEED:	return "[LS;575;%d]";
+		case POINT_MOV_SPEED:	return "[LS;576;%d]";
+		case POINT_CASTING_SPEED:	return "[LS;577;%d]";
+		case POINT_HP_REGEN:	return "[LS;578;%d]";
+		case POINT_SP_REGEN:	return "[LS;579;%d]";
+		case POINT_POISON_PCT:	return "[LS;580;%d]";
+		case POINT_STUN_PCT:	return "[LS;582;%d]";
+		case POINT_SLOW_PCT:	return "[LS;583;%d]";
+		case POINT_CRITICAL_PCT:	return "[LS;584;%d]";
+		case POINT_RESIST_CRITICAL:	return "[LS;5159;%d]";
+		case POINT_PENETRATE_PCT:	return "[LS;585;%d]";
+		case POINT_RESIST_PENETRATE: return "[LS;5160;%d]";
+		case POINT_ATTBONUS_HUMAN:	return "[LS;586;%d]";
+		case POINT_ATTBONUS_ANIMAL:	return "[LS;587;%d]";
+		case POINT_ATTBONUS_ORC:	return "[LS;588;%d]";
+		case POINT_ATTBONUS_MILGYO:	return "[LS;589;%d]";
+		case POINT_ATTBONUS_UNDEAD:	return "[LS;590;%d]";
+		case POINT_ATTBONUS_DEVIL:	return "[LS;591;%d]";
+		case POINT_STEAL_HP:		return "[LS;593;%d]";
+		case POINT_STEAL_SP:		return "[LS;594;%d]";
+		case POINT_MANA_BURN_PCT:	return "[LS;595;%d]";
+		case POINT_DAMAGE_SP_RECOVER:	return "[LS;596;%d]";
+		case POINT_BLOCK:			return "[LS;597;%d]";
+		case POINT_DODGE:			return "[LS;598;%d]";
+		case POINT_RESIST_SWORD:	return "[LS;599;%d]";
+		case POINT_RESIST_TWOHAND:	return "[LS;600;%d]";
+		case POINT_RESIST_DAGGER:	return "[LS;600;%d]";
+		case POINT_RESIST_BELL:		return "[LS;602;%d]";
+		case POINT_RESIST_FAN:		return "[LS;604;%d]";
+		case POINT_RESIST_BOW:		return "[LS;605;%d]";
+		case POINT_RESIST_FIRE:		return "[LS;606;%d]";
+		case POINT_RESIST_ELEC:		return "[LS;607;%d]";
+		case POINT_RESIST_MAGIC:	return "[LS;608;%d]";
+		case POINT_RESIST_WIND:		return "[LS;609;%d]";
+		case POINT_RESIST_ICE:		return "[LS;5090;%d]";
+		case POINT_RESIST_EARTH:	return "[LS;5103;%d]";
+		case POINT_RESIST_DARK:		return "[LS;5096;%d]";
+		case POINT_REFLECT_MELEE:	return "[LS;610;%d]";
+		case POINT_REFLECT_CURSE:	return "[LS;611;%d]";
+		case POINT_POISON_REDUCE:	return "[LS;612;%d]";
+		case POINT_KILL_SP_RECOVER:	return "[LS;613;%d]";
+		case POINT_EXP_DOUBLE_BONUS:	return "[LS;615;%d]";
+		case POINT_GOLD_DOUBLE_BONUS:	return "[LS;616;%d]";
+		case POINT_ITEM_DROP_BONUS:	return "[LS;617;%d]";
+		case POINT_POTION_BONUS:	return "[LS;618;%d]";
+		case POINT_KILL_HP_RECOVERY:	return "[LS;619;%d]";
+//		case POINT_IMMUNE_STUN:	return "[LS;620;%d]";
+//		case POINT_IMMUNE_SLOW:	return "[LS;621;%d]";
+//		case POINT_IMMUNE_FALL:	return "[LS;622;%d]";
+//		case POINT_SKILL:	return "[LS;1145]";
+//		case POINT_BOW_DISTANCE:	return "[LS;1145]";
+		case POINT_ATT_GRADE_BONUS:	return "[LS;623;%d]";
+		case POINT_DEF_GRADE_BONUS:	return "[LS;624;%d]";
+		case POINT_MAGIC_ATT_GRADE:	return "[LS;626;%d]";
+		case POINT_MAGIC_DEF_GRADE:	return "[LS;627;%d]";
+//		case POINT_CURSE_PCT:	return "[LS;1145]";
+		case POINT_MAX_STAMINA:	return "[LS;628;%d]";
+		case POINT_ATTBONUS_WARRIOR:	return "[LS;629;%d]";
+		case POINT_ATTBONUS_ASSASSIN:	return "[LS;630;%d]";
+		case POINT_ATTBONUS_SURA:		return "[LS;631;%d]";
+		case POINT_ATTBONUS_SHAMAN:		return "[LS;632;%d]";
+		case POINT_ATTBONUS_MONSTER:	return "[LS;633;%d]";
+		case POINT_MALL_ATTBONUS:		return "[LS;634;%d]";
+		case POINT_MALL_DEFBONUS:		return "[LS;635;%d]";
+		case POINT_MALL_EXPBONUS:		return "[LS;637;%d]";
+		case POINT_MALL_ITEMBONUS:		return "[LS;638]";
+		case POINT_MALL_GOLDBONUS:		return "[LS;639]";
+		case POINT_MAX_HP_PCT:			return "[LS;640;%d]";
+		case POINT_MAX_SP_PCT:			return "[LS;640;%d]";
+		case POINT_SKILL_DAMAGE_BONUS:	return "[LS;642;%d]";
+		case POINT_NORMAL_HIT_DAMAGE_BONUS:	return "[LS;643;%d]";
+		case POINT_SKILL_DEFEND_BONUS:		return "[LS;644;%d]";
+		case POINT_NORMAL_HIT_DEFEND_BONUS:	return "[LS;645;%d]";
+//		case POINT_EXTRACT_HP_PCT:	return "[LS;1145]";
+		case POINT_RESIST_WARRIOR:	return "[LS;646;%d]";
+		case POINT_RESIST_ASSASSIN:	return "[LS;648;%d]";
+		case POINT_RESIST_SURA:		return "[LS;649;%d]";
+		case POINT_RESIST_SHAMAN:	return "[LS;650;%d]";
 		default:					return NULL;
 	}
 }
@@ -1550,7 +1550,7 @@ static bool FN_hair_affect_string(LPCHARACTER ch, char *buf, size_t bufsiz)
 	mon		= ltm.tm_mon + 1;
 	day		= ltm.tm_mday;
 
-	snprintf(buf + offset, bufsiz - offset, LC_TEXT("(Procedure: %d y- %d m - %d d)"), year, mon, day);
+	snprintf(buf + offset, bufsiz - offset, "[LS;651;%d;%d;%d]", year, mon, day);
 
 	return true;
 }
@@ -1566,12 +1566,12 @@ ACMD(do_costume)
 	CItem* pBody = ch->GetWear(WEAR_COSTUME_BODY);
 	CItem* pHair = ch->GetWear(WEAR_COSTUME_HAIR);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("COSTUME status:"));
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5075]");
 
 	if (pHair)
 	{
 		const char* itemName = pHair->GetName();
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("HAIR : %s"), itemName);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5118;%s]", itemName);
 
 		for (int i = 0; i < pHair->GetAttributeCount(); ++i)
 		{
@@ -1584,7 +1584,7 @@ ACMD(do_costume)
 					continue;
 
 				snprintf(buf, bufferSize, cszPointString, attr.sValue);
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s"), buf);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", buf);
 			}
 		}
 
@@ -1595,7 +1595,7 @@ ACMD(do_costume)
 	if (pBody)
 	{
 		const char* itemName = pBody->GetName();
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("BODY : %s"), itemName);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5070;%s]", itemName);
 
 		if (pBody->IsEquipped() && arg1[0] == 'b')
 			ch->UnequipItem(pBody);
@@ -1626,7 +1626,7 @@ ACMD(do_inventory)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: inventory <start_index> <count>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5244]");
 		return;
 	}
 
@@ -1648,7 +1648,7 @@ ACMD(do_inventory)
 
 		item = ch->GetInventoryItem(index);
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("inventory [%d] = %s"),
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5307;%d;%s]",
 						index, item ? item->GetName() : "<NONE>");
 		++index;
 	}
@@ -1677,13 +1677,13 @@ ACMD(do_cube)
 	if (0 == arg1[0])
 	{
 		// print usage
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: cube open"));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cube close"));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cube add <inveltory_index>"));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cube delete <cube_index>"));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cube list"));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cube cancel"));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cube make [all]"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5239]");
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5292]");
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5290]");
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5293]");
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5294]");
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5291]");
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5295]");
 		return;
 	}
 
@@ -1794,9 +1794,9 @@ ACMD(do_dice)
 	int n = number(start, end);
 	
 	if (ch->GetParty())
-		ch->GetParty()->ChatPacketToAllMember(CHAT_TYPE_INFO, LC_TEXT("%s rolled the dice and got %d. (%d-%d)"), ch->GetName(), n, start, end);
+		ch->GetParty()->ChatPacketToAllMember(CHAT_TYPE_INFO, "[LS;5025;%s;%d;%d;%d]", ch->GetName(), n, start, end);
 	else
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You roll a die and roll %d. (%d-%d)"), n, start, end);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5273;%d;%d;%d]", n, start, end);
 }
 
 ACMD(do_click_mall)
@@ -1874,5 +1874,5 @@ ACMD(do_ride)
     }
 
 
-    ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Please call your Horse first."));
+    ch->ChatPacket(CHAT_TYPE_INFO, "[LS;501]");
 }

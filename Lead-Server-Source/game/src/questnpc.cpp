@@ -918,7 +918,7 @@ namespace quest
 			{
 				os << ",\"" << ScriptToString(AvailScript[i]->arg.c_str()) << '"';
 			}
-			os << ", '"<<LC_TEXT("Close")<<"'";
+			os << ", '"<<"Close"<<"'";
 			os << ")";
 
 			CQuestManager::ExecuteQuestScript(pc, "QUEST_CHAT_TEMP_QUEST", 0, os.str().c_str(), static_cast<int>(os.str().size()), &AvailScript, false);

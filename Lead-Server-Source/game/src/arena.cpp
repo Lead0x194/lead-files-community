@@ -152,7 +152,7 @@ void CArenaMap::SendArenaMapListTo(LPCHARACTER pChar, DWORD mapIdx)
 
 	for (; iter != m_listArena.end(); iter++)
 	{
-		pChar->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("MapInfo"), mapIdx,
+		pChar->ChatPacket(CHAT_TYPE_INFO, "[LS;5146]", mapIdx,
 				(*iter)->GetStartPointA().x, (*iter)->GetStartPointA().y,
 				(*iter)->GetStartPointB().x, (*iter)->GetStartPointB().y);
 	}
@@ -237,17 +237,17 @@ EVENTFUNC(ready_to_start_event)
 
 		if (chA != NULL)
 		{
-			chA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel has finished, because your combatant vanished."));
+			chA->ChatPacket(CHAT_TYPE_INFO, "[LS;853]");
 			sys_log(0, "ARENA: Oppernent is disappered. MyPID(%d) OppPID(%d)", pArena->GetPlayerAPID(), pArena->GetPlayerBPID());
 		}
 
 		if (chB != NULL)
 		{
-			chB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel has finished, because your combatant vanished."));
+			chB->ChatPacket(CHAT_TYPE_INFO, "[LS;853]");
 			sys_log(0, "ARENA: Oppernent is disappered. MyPID(%d) OppPID(%d)", pArena->GetPlayerBPID(), pArena->GetPlayerAPID());
 		}
 
-		pArena->SendChatPacketToObserver(CHAT_TYPE_NOTICE, LC_TEXT("The duel has finished, because your combatant vanished."));
+		pArena->SendChatPacketToObserver(CHAT_TYPE_NOTICE, "[LS;853]");
 
 		pArena->EndDuel();
 		return 0;
@@ -264,20 +264,20 @@ EVENTFUNC(ready_to_start_event)
 
 				if (count > 10000)
 				{
-					chA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no limit for Potions."));
-					chB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no limit for Potions."));
+					chA->ChatPacket(CHAT_TYPE_INFO, "[LS;854]");
+					chB->ChatPacket(CHAT_TYPE_INFO, "[LS;854]");
 				}
 				else
 				{
 					chA->SetPotionLimit(count);
 					chB->SetPotionLimit(count);
 
-					chA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can use up to %d potions."), chA->GetPotionLimit());
-					chB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can use up to %d potions."), chB->GetPotionLimit());
+					chA->ChatPacket(CHAT_TYPE_INFO, "[LS;855;%d]", chA->GetPotionLimit());
+					chB->ChatPacket(CHAT_TYPE_INFO, "[LS;855;%d]", chB->GetPotionLimit());
 				}
-				chA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The fight will start in 10 seconds."));
-				chB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The fight will start in 10 seconds."));
-				pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, LC_TEXT("The fight will start in 10 seconds."));
+				chA->ChatPacket(CHAT_TYPE_INFO, "[LS;856]");
+				chB->ChatPacket(CHAT_TYPE_INFO, "[LS;856]");
+				pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, "[LS;856]");
 
 				info->state++;
 				return PASSES_PER_SEC(10);
@@ -286,9 +286,9 @@ EVENTFUNC(ready_to_start_event)
 
 		case 1:
 			{
-				chA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel has begun."));
-				chB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel has begun."));
-				pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, LC_TEXT("The duel has begun."));
+				chA->ChatPacket(CHAT_TYPE_INFO, "[LS;857]");
+				chB->ChatPacket(CHAT_TYPE_INFO, "[LS;857]");
+				pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, "[LS;857]");
 
 				TPacketGCDuelStart duelStart;
 				duelStart.header = HEADER_GC_DUEL_START;
@@ -358,9 +358,9 @@ EVENTFUNC(ready_to_start_event)
 				buf2.write(&dwOppList[0], 4);
 				chB->GetDesc()->Packet(buf2.read_peek(), buf2.size());
 
-				chA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel has begun."));
-				chB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel has begun."));
-				pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, LC_TEXT("The duel has begun."));
+				chA->ChatPacket(CHAT_TYPE_INFO, "[LS;857]");
+				chB->ChatPacket(CHAT_TYPE_INFO, "[LS;857]");
+				pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, "[LS;857]");
 
 				pArena->ClearEvent();
 
@@ -370,9 +370,9 @@ EVENTFUNC(ready_to_start_event)
 
 		default:
 			{
-				chA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel is being finished because there is a problem in the duel arena."));
-				chB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel is being finished because there is a problem in the duel arena."));
-				pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, LC_TEXT("The duel is being finished because there is a problem in the duel arena."));
+				chA->ChatPacket(CHAT_TYPE_INFO, "[LS;859]");
+				chB->ChatPacket(CHAT_TYPE_INFO, "[LS;859]");
+				pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, "[LS;859]");
 
 				sys_log(0, "ARENA: Something wrong in event func. info->state(%d)", info->state);
 
@@ -411,17 +411,17 @@ EVENTFUNC(duel_time_out)
 	{
 		if (chA != NULL)
 		{
-			chA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel has finished, because your combatant vanished."));
+			chA->ChatPacket(CHAT_TYPE_INFO, "[LS;853]");
 			sys_log(0, "ARENA: Oppernent is disappered. MyPID(%d) OppPID(%d)", pArena->GetPlayerAPID(), pArena->GetPlayerBPID());
 		}
 
 		if (chB != NULL)
 		{
-			chB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The duel has finished, because your combatant vanished."));
+			chB->ChatPacket(CHAT_TYPE_INFO, "[LS;853]");
 			sys_log(0, "ARENA: Oppernent is disappered. MyPID(%d) OppPID(%d)", pArena->GetPlayerBPID(), pArena->GetPlayerAPID());
 		}
 
-		pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, LC_TEXT("The duel has finished, because your combatant vanished."));
+		pArena->SendChatPacketToObserver(CHAT_TYPE_INFO, "[LS;853]");
 
 		pArena->EndDuel();
 		return 0;
@@ -431,14 +431,14 @@ EVENTFUNC(duel_time_out)
 		switch (info->state)
 		{
 			case 0:
-				pArena->SendChatPacketToObserver(CHAT_TYPE_NOTICE, LC_TEXT("The duel has finished because of a timeout."));
-				pArena->SendChatPacketToObserver(CHAT_TYPE_NOTICE, LC_TEXT("In 10 seconds you will be teleported into the city."));
+				pArena->SendChatPacketToObserver(CHAT_TYPE_NOTICE, "[LS;860]");
+				pArena->SendChatPacketToObserver(CHAT_TYPE_NOTICE, "[LS;861]");
 
-				chA->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("The duel has finished because of a timeout."));
-				chA->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("In 10 seconds you will be teleported into the city."));
+				chA->ChatPacket(CHAT_TYPE_NOTICE, "[LS;860]");
+				chA->ChatPacket(CHAT_TYPE_NOTICE, "[LS;861]");
 
-				chB->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("The duel has finished because of a timeout."));
-				chB->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("In 10 seconds you will be teleported into the city."));
+				chB->ChatPacket(CHAT_TYPE_NOTICE, "[LS;860]");
+				chB->ChatPacket(CHAT_TYPE_NOTICE, "[LS;861]");
 
 				TPacketGCDuelStart duelStart;
 				duelStart.header = HEADER_GC_DUEL_START;
@@ -733,19 +733,19 @@ bool CArena::OnDead(DWORD dwPIDA, DWORD dwPIDB)
 	if (pCharA == NULL && pCharB == NULL)
 	{
 		// Both are disconnected ?!
-		SendChatPacketToObserver(CHAT_TYPE_NOTICE, LC_TEXT("The duel has been stopped because there is a problem in the arena."));
+		SendChatPacketToObserver(CHAT_TYPE_NOTICE, "[LS;862]");
 		restart = false;
 	}
 	else if (pCharA == NULL && pCharB != NULL)
 	{
-		pCharB->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("Your combatant has got some problems. The duel is being cancelled."));
-		SendChatPacketToObserver(CHAT_TYPE_NOTICE, LC_TEXT("The duel is being cancelled as there is a problem with the combatant."));
+		pCharB->ChatPacket(CHAT_TYPE_NOTICE, "[LS;863]");
+		SendChatPacketToObserver(CHAT_TYPE_NOTICE, "[LS;864]");
 		restart = false;
 	}
 	else if (pCharA != NULL && pCharB == NULL)
 	{
-		pCharA->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("Your combatant has got some problems. The duel is being cancelled."));
-		SendChatPacketToObserver(CHAT_TYPE_NOTICE, LC_TEXT("The duel is being cancelled as there is a problem with the combatant."));
+		pCharA->ChatPacket(CHAT_TYPE_NOTICE, "[LS;863]");
+		SendChatPacketToObserver(CHAT_TYPE_NOTICE, "[LS;864]");
 		restart = false;
 	}
 	else if (pCharA != NULL && pCharB != NULL)
@@ -756,9 +756,9 @@ bool CArena::OnDead(DWORD dwPIDA, DWORD dwPIDB)
 
 			if (m_dwSetPointOfA >= m_dwSetCount)
 			{
-				pCharA->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s has won the duel."), pCharA->GetName());
-				pCharB->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s has won the duel."), pCharA->GetName());
-				SendChatPacketToObserver(CHAT_TYPE_NOTICE, LC_TEXT("%s has won the duel."), pCharA->GetName());
+				pCharA->ChatPacket(CHAT_TYPE_NOTICE, "[LS;865;%s]", pCharA->GetName());
+				pCharB->ChatPacket(CHAT_TYPE_NOTICE, "[LS;865;%s]", pCharA->GetName());
+				SendChatPacketToObserver(CHAT_TYPE_NOTICE, "[LS;865;%s]", pCharA->GetName());
 
 				sys_log(0, "ARENA: Duel is end. Winner %s(%d) Loser %s(%d)",
 						pCharA->GetName(), GetPlayerAPID(), pCharB->GetName(), GetPlayerBPID());
@@ -766,11 +766,11 @@ bool CArena::OnDead(DWORD dwPIDA, DWORD dwPIDB)
 			else
 			{
 				restart = true;
-				pCharA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s has won."), pCharA->GetName());
-				pCharA->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s %d : %d %s"), pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
+				pCharA->ChatPacket(CHAT_TYPE_INFO, "[LS;866;%s]", pCharA->GetName());
+				pCharA->ChatPacket(CHAT_TYPE_NOTICE, "[LS;5008;%s;%d;%d;%s]", pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
 
-				pCharB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s has won."), pCharA->GetName());
-				pCharB->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s %d : %d %s"), pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
+				pCharB->ChatPacket(CHAT_TYPE_INFO, "[LS;866;%s]", pCharA->GetName());
+				pCharB->ChatPacket(CHAT_TYPE_NOTICE, "[LS;5008;%s;%d;%d;%s]", pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
 
 				SendChatPacketToObserver(CHAT_TYPE_NOTICE, "%s %d : %d %s", pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
 
@@ -783,20 +783,20 @@ bool CArena::OnDead(DWORD dwPIDA, DWORD dwPIDB)
 			m_dwSetPointOfB++;
 			if (m_dwSetPointOfB >= m_dwSetCount)
 			{
-				pCharA->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s has won the duel."), pCharB->GetName());
-				pCharB->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s has won the duel."), pCharB->GetName());
-				SendChatPacketToObserver(CHAT_TYPE_NOTICE, LC_TEXT("%s has won the duel."), pCharB->GetName());
+				pCharA->ChatPacket(CHAT_TYPE_NOTICE, "[LS;865;%s]", pCharB->GetName());
+				pCharB->ChatPacket(CHAT_TYPE_NOTICE, "[LS;865;%s]", pCharB->GetName());
+				SendChatPacketToObserver(CHAT_TYPE_NOTICE, "[LS;865;%s]", pCharB->GetName());
 
 				sys_log(0, "ARENA: Duel is end. Winner(%d) Loser(%d)", GetPlayerBPID(), GetPlayerAPID());
 			}
 			else
 			{
 				restart = true;
-				pCharA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s has won."), pCharB->GetName());
-				pCharA->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s %d : %d %s"), pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
+				pCharA->ChatPacket(CHAT_TYPE_INFO, "[LS;866;%s]", pCharB->GetName());
+				pCharA->ChatPacket(CHAT_TYPE_NOTICE, "[LS;5008;%s;%d;%d;%s]", pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
 
-				pCharB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s has won."), pCharB->GetName());
-				pCharB->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s %d : %d %s"), pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
+				pCharB->ChatPacket(CHAT_TYPE_INFO, "[LS;866;%s]", pCharB->GetName());
+				pCharB->ChatPacket(CHAT_TYPE_NOTICE, "[LS;5008;%s;%d;%d;%s]", pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
 
 				SendChatPacketToObserver(CHAT_TYPE_NOTICE, "%s %d : %d %s", pCharA->GetName(), m_dwSetPointOfA, m_dwSetPointOfB, pCharB->GetName());
 
@@ -821,12 +821,12 @@ bool CArena::OnDead(DWORD dwPIDA, DWORD dwPIDB)
 	if (restart == false)
 	{
 		if (pCharA != NULL)
-			pCharA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You will be teleported into the city in 10 seconds."));
+			pCharA->ChatPacket(CHAT_TYPE_INFO, "[LS;867]");
 
 		if (	pCharB != NULL)
-			pCharB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You will be teleported into the city in 10 seconds."));
+			pCharB->ChatPacket(CHAT_TYPE_INFO, "[LS;867]");
 
-		SendChatPacketToObserver(CHAT_TYPE_INFO, LC_TEXT("You will be teleported into the city in 10 seconds."));
+		SendChatPacketToObserver(CHAT_TYPE_INFO, "[LS;867]");
 
 		if (m_pEvent != NULL) {
 			event_cancel(&m_pEvent);
@@ -842,12 +842,12 @@ bool CArena::OnDead(DWORD dwPIDA, DWORD dwPIDB)
 	else
 	{
 		if (pCharA != NULL)
-			pCharA->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The next round will begin in 10 seconds."));
+			pCharA->ChatPacket(CHAT_TYPE_INFO, "[LS;868]");
 
 		if (pCharB != NULL)
-			pCharB->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The next round will begin in 10 seconds."));
+			pCharB->ChatPacket(CHAT_TYPE_INFO, "[LS;868]");
 
-		SendChatPacketToObserver(CHAT_TYPE_INFO, LC_TEXT("The next round will begin in 10 seconds."));
+		SendChatPacketToObserver(CHAT_TYPE_INFO, "[LS;868]");
 
 		if (m_pEvent != NULL) {
 			event_cancel(&m_pEvent);
@@ -953,7 +953,7 @@ void CArena::OnDisconnect(DWORD pid)
 	if (m_dwPIDA == pid)
 	{
 		if (GetPlayerB() != NULL)
-			GetPlayerB()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The combatants have been separated. The duel has been stopped."));
+			GetPlayerB()->ChatPacket(CHAT_TYPE_INFO, "[LS;870]");
 
 		sys_log(0, "ARENA : Duel is end because of Opp(%d) is disconnect. MyPID(%d)", GetPlayerAPID(), GetPlayerBPID());
 		EndDuel();
@@ -961,7 +961,7 @@ void CArena::OnDisconnect(DWORD pid)
 	else if (m_dwPIDB == pid)
 	{
 		if (GetPlayerA() != NULL)
-			GetPlayerA()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The combatants have been separated. The duel has been stopped."));
+			GetPlayerA()->ChatPacket(CHAT_TYPE_INFO, "[LS;870]");
 
 		sys_log(0, "ARENA : Duel is end because of Opp(%d) is disconnect. MyPID(%d)", GetPlayerBPID(), GetPlayerAPID());
 		EndDuel();

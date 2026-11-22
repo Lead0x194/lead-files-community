@@ -993,7 +993,7 @@ void CInputDB::SafeboxLoad(LPDESC d, const char * c_pData)
 	//PREVENT_TRADE_WINDOW
 	if (ch->GetShopOwner() || ch->GetExchange() || ch->GetMyShop() || ch->IsCubeOpen() )
 	{
-		d->GetCharacter()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot open a Storeroom while another window is open.") );
+		d->GetCharacter()->ChatPacket(CHAT_TYPE_INFO, "[LS;773]" );
 		d->GetCharacter()->CancelSafeboxLoad();
 		return;
 	}
@@ -1054,11 +1054,11 @@ void CInputDB::SafeboxChangePasswordAnswer(LPDESC d, const char* c_pData)
 	TSafeboxChangePasswordPacketAnswer* p = (TSafeboxChangePasswordPacketAnswer*) c_pData;
 	if (p->flag)
 	{
-		d->GetCharacter()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Storeroom] Storeroom password has been changed."));
+		d->GetCharacter()->ChatPacket(CHAT_TYPE_INFO, "[LS;774]");
 	}
 	else
 	{
-		d->GetCharacter()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Storeroom] You have entered the wrong password."));
+		d->GetCharacter()->ChatPacket(CHAT_TYPE_INFO, "[LS;775]");
 	}
 }
 
