@@ -2,7 +2,7 @@
 2	Začít cvičný boj
 3	Tvůj tréninkový partner ještě nedosáhl požadované[ENTER]úrovně %s. Je mi líto, ale takový boj nemohu[ENTER]dovolit.
 4	%s musí přijít blíže, aby bylo možné uzavřít[ENTER]smlouvu o boji.
-5	%s má momentálně hodinu cvičného[ENTER]boje.
+5	%s má momentálně hodinu cvičného boje.
 6	Rozhodnutí
 7	%s nechce proti tobě absolvovat cvičný boj.
 8	Vyskytl se problém. Prosím, zkus se zapsat znovu[ENTER]později.
@@ -19,12 +19,12 @@
 19	Pokud máš úroveň nižší než %s, nemůžeš se zapsat[ENTER]na hodinu cvičného boje.
 20	Chceš se registrovat pro cvičný boj? Tak mi dej[ENTER]jméno tvého tréninkového partnera.
 21	Nevíš, s kým bys chtěl bojovat? Pokud mi neřekneš[ENTER]jméno, nemohu tě zapsat.
-22	Ok %s. Jsi zapsán na cvičný boj proti %s.
+22	Ok, %s. Jsi zapsán na cvičný boj proti %s.
 23	%s čeká na přijmutí výzvy od %s
 24	%s chceš absolvovat cvičný boj proti %s?
 25	%s momentálně není přihlášen do hry. Zkus to[ENTER]znovu později nebo si najdi jiného partnera.
 26	Chci něco nechat zlepšit.
-27	Kovář
+27	Kovář:
 28	Buď zdráv![ENTER]Já vylepšuji předměty.[ENTER]Pokud tedy chceš vylepšit nějaký předmět, tak mi[ENTER]ho prostě přines.
 29	Informace:
 30	Jednoduše přesuň předmět z inventáře na kováře.
@@ -50,10 +50,10 @@
 50	Nekoupit
 51	Koupil jsi sestavu udic '3 v 1'. Blahopřejo. A[ENTER]prosím, všimni si přiloženého letáku o pořádání[ENTER]rybářské soutěže.
 52	Lituji, nemáš dostatek Yangů. Ale neboj, bude tu[ENTER]zase brzy další příležitost. Zatím se měj.
-53	Neznámé tlačítko [%s]
+53	UNKNOWN BUTTON [%s]
 54	Cedulka ze soutěže v chytání ryb
 55	Když se teď oženíš, nemůžeš odejít do jiného[ENTER]království.[ENTER]Jenom svobodní hráči můžou přejít do jiného[ENTER]království.
-56	Změna království:
+56	Změnit království
 57	Nech se rozvést, pokud chceš jít do jiného[ENTER]království.
 58	Nemůžeš jít do jiného království, když jsi[ENTER]proměněn.
 59	Použij tenhle předmět až když nebudeš proměněn.
@@ -172,10 +172,10 @@
 172	Naléhavě tě hledá biolog Chaegirab, Urielův žák.[ENTER]Prosím jdi k němu a zeptej se ho, čím mu můžeš[ENTER]posloužit.
 173	Teď mám dostatek hub tue. Dobrá práce! Jako výraz[ENTER]mého vděku ti dám nějaké Yangy a výsledky mého[ENTER]výzkumu.
 174	Za odměnu dostaneš od biologa Chaegiraba: 200000[ENTER]bodů zkušeností a 20000 yangů a helmu+2.
-175	Železná přílba
-176	Řetězová kapuce
-177	Posmívající se přílba
-178	Fénický klobouk
+175	Železná přílba+2
+176	Řetězová kapuca+2
+177	Posmívající se přílba+2
+178	Fénický klobouk+2
 179	Je mi líto, ale tahle houba tue není kvalitní a[ENTER]je nepoužitelná. Prosím, přines mi nějakou jinou.
 180	Kristova noho, pomoz mi...[ENTER]Studuji všechny druhy rostlin v této velké říši.[ENTER]Topím se prací, která se musí udělat už vůbec[ENTER]nemám čas se vydat na výpravy za rostlinami. Mohl[ENTER]bys mi pomoct? Budu si pamatovat, že jsem tvým[ENTER]dlužníkem!
 181	Právě provádím studie na houbách Tue.[ENTER]Musím s nimi provést několik experimentů a proto[ENTER]potřebuji deset hub.[ENTER]Mohl bys mi je prosím sehnat?[ENTER]Musíš mi pomoct, prosím![ENTER]Přines mi vždycky jenom jednu, abych na ní mohl[ENTER]provést rozbor.
@@ -205,7 +205,7 @@
 205	Za odměnu obdržíš od biologa Chaegiraba: 2000[ENTER]bodů zkušeností a 3000 yangů a brnění+3.
 206	Naléhavě tě hledá biolog Chaegirab, Urielův žák.[ENTER]Prosím jdi k němu a zeptej se ho, čím mu můžeš[ENTER]posloužit.
 207	Mnišské deskové brnění+3
-208	Karmínový oblek
+208	Karmínový oblek+3
 209	Pancéřové brnění-requiem+3
 210	Karmínové oblečení+3
 211	Je mi líto, ale tenhle zvonek je pomačkaný...[ENTER]Přines mi jiný, prosím
@@ -458,7 +458,7 @@
 458	Biolog Chaegirab:
 459	Ach! Tato Větev červeného stromu duchů má[ENTER]vynikající kvalitu! Hned se jdu pustit do[ENTER]výzkumu.
 460	Bohužel, potřebuji ještě dalších
-461	 poznámek
+461	poznámek
 462	Prosím, zkus nějaké najít.[ENTER][ENTER]A nezapomeň, že na prozkoumání větve potřebuji[ENTER]nějaký čas. Takže si od tebe další větev vezmu až[ENTER]zítra.
 463	Biolog Chaegirab:
 464	Našel jsi všech 40 větví! Děkuji. Teď ještě[ENTER]potřebuji Kámen duše lesa, abych porozuměl[ENTER]tvorům, skrytým ve stromech duchů. Mohl by ses o[ENTER]to postarat? Získáš jej ze stromů v červeném[ENTER]lese.
@@ -486,7 +486,7 @@
 486	Také ti mám dát tuhle purpurovou ebenovou bednu.[ENTER]Prosím, starej se o ni dobře.
 487	To je tvoje odměna za splnění požadavků[ENTER]Chaegiraba.
 488	Jako odměna za splnění úkolu biologa Chaegiraba[ENTER]se zvýší tvoje odolnost proti poškození[ENTER]způsobeným jinými hráči trvale o 10 %.
-489	Efekt je permanentní.
+489	Toto zvýšení je permanentní.
 490	Biolog Chaegirab:
 491	Biologův požadavek
 492	Biologův výzkum
@@ -511,7 +511,7 @@
 511	Ach, ty jsi našel nějakou poznámku![ENTER]Ukaž, podívám se na ni!
 512	Ano, výborně! Dobrá práce!
 513	Bohužel, potřebuji ještě dalších
-514	 poznámek
+514	poznámek
 515	Nicméně, potřebuji jich ještě %s.
 516	Prosímtě, zkus nějaké najít![ENTER][ENTER]A pamatuj si, že to zkoumání zabere nějaký čas,[ENTER]takže si další poznámku vezmu až zítra.
 517	Našel jsi všech 50, to je fantastické![ENTER]Předpokládám, že víš, co bude následovat?[ENTER]Chybí mi Kámen duše vůdce. Pak už budu mít vše,[ENTER]co potřebuji. Můžeš jej pro mě získat, že? Získej[ENTER]ho a přines mi ho!
@@ -539,7 +539,7 @@
 539	A tentokrát je to modrá ebenová bedna. Jsi[ENTER]zvědavý? Tak ji rychle otevři!
 540	To je tvoje odměna za splnění požadavků[ENTER]Chaegiraba.
 541	Jako odměna za splnění úkolu biologa Chaegiraba[ENTER]byla tvoje hodnota útoku v boji proti jiným[ENTER]hráčům permanentně zvýšena o 8 %.
-542	Efekt je permanentní.
+542	Toto zvýšení je permanentní.
 543	Seon-Pyeong:
 544	Výzkum Seon-Pyeong
 545	Seon-Pyeong v údolí Seungryoung potřebuje tvou[ENTER]pomoc. Jdi a zjisti, oč se jedná.
@@ -606,7 +606,7 @@
 606	Pomsta za obchodníka s prsteny
 607	Stařenka tě požádala o pomoc: její přítel,[ENTER]obchodník s prsteny, byl zavražděn Jin-Hee, která[ENTER]je elitou Bílé přísahy. Pomsti jeho smrt a zabij[ENTER]30 Jin-Hee.
 608	Počet zbývajících Jin-Heeů
-609	Aha, přemohl jsi Jin-Heey?[ENTER]Hmm, já bych řekla, že jsi ještě všechny[ENTER]neporazil. Jestli to je moc těžké, dej mi[ENTER]vědět.
+609	Aha, přemohl jsi Jin-Heey?[ENTER]Hmm, já bych řekla, že jsi ještě všechny[ENTER]neporazil. Jestli to je moc těžké, dej mi vědět.
 610	Rodina obchodníka s prsteny má po jeho smrti[ENTER]velký smutek. Bylo by velmi vznešené, kdybys mohl[ENTER]pomstít jeho smrt, abys jim pomohl překonat[ENTER]jejich ztrátu.
 611	Škoda, že nechceš pomstít jeho smrt.[ENTER]Nojo, jasně že ti je tvůj život milý. Jak chceš.[ENTER]Každý život je vzácný.
 612	Viděl jsi, jak stařenka držela něco v ruce, když[ENTER]se odvracela. Byl to nějaký třpytivý předmět.[ENTER](Vypadalo to jako drahocenný kámen).
@@ -633,7 +633,7 @@
 633	Ahoj, jak se máš?[ENTER]Zajímá tě výroba různých elixírů, které tě mohou[ENTER]posílit nebo vyléčit? Jako lékař jsem se zabýval[ENTER]výrobou elixírů a vynalezl jsem několik receptů.[ENTER]Chceš je vyzkoušet?
 634	Zušlechťování věcí je důležité řemeslo. Zajímá tě[ENTER]toto umění? Mohu ti ukázat některé z mých[ENTER]bylinkových receptů. Jsou velmi užitečné pro[ENTER]míchání silnějších variant známých lektvarů.[ENTER]Anebo tě mohu naučit jak přeměnit pásek na mocný[ENTER]nástroj.
 635	Tajný recept
-636	Huahn-So
+636	Huahn-So:
 637	Našel jsem starý rodinný recept. Díky tomu budeš[ENTER]skoro nezranitelný! S těmito lektvary se ti[ENTER]nemůže skoro nic stát... Chceš je vyzkoušet?
 638	Potřebuji následující věci, abych mohl zušlechtit[ENTER]brnění: %s.
 639	Materiály:
@@ -686,7 +686,7 @@
 686	Ty chceš do 6. patra věže?[ENTER]Zvládnutí tohoto poschodí vyžaduje velké[ENTER]schopnosti a velkou zručnost.[ENTER]Můžu tě tam teleportovat pouze tehdy, pokud jsi[ENTER]dosáhl úrovně 75.
 687	Máš správnou úroveň na to, abys mohl vstoupit do[ENTER]horních pater.[ENTER]Můžeš jít dovnitř!
 688	Strážce věže démonů
-689	DĚLEJ
+689	Dělej!
 690	Opustit věž!
 691	Máš moc nízkou úroveň.[ENTER]Nemůžu ti dovolit vstoupit do horních pater.[ENTER]Vrať se, až budeš mít víc zkušeností.[ENTER]Musíš mít minimálně úroveň 75.
 692	Mapa věže Zin-Sa-Gui otevírá cestu do dalšího[ENTER]patra. Najdeš ji ničením kamenů Metin.
@@ -713,7 +713,7 @@
 713	Skupina hráče %s se pokouší zabít Modrého draka!
 714	Nemáš dostatek klíčů! Pro aktivaci portálu[ENTER]potřebuji
 715	Můžeš je získat ze zlých velitelů Yonghan a[ENTER]Huashin.
-716	Chci tohle místo opustit!
+716	Chci tohle místo opustit
 717	Přenesu tě zpět ke vstupu do jeskyně.
 718	Ano, udělej to.
 719	Ne, zůstanu tady.
@@ -735,7 +735,7 @@
 735	To nezní dobře.
 736	Fajn, je to tvé rozhodnutí.
 737	Hvězdy ještě nejsou seřazeny, přišel jsi příliš[ENTER]brzy. Musíš čekat ještě %s.
-738	Zbývající čas
+738	Zbývající čas:
 739	Seber materiály
 740	Materiály pro Mramory polymorfismu
 741	Nasbírané materiály
@@ -745,14 +745,14 @@
 745	Nepodařilo se ti nasbírat všechny materiály ve[ENTER]stanoveném čase.
 746	Chceš mi dát %s tohoto materiálu?
 747	Bohužel si mé služby nemůžeš dovolit.[ENTER]Vyžaduji od tebe 150 000 Yangů.
-748	Tady, prosím.
+748	Tady!
 749	Ne, díky, raději si je nechám!
 750	Díky, pracoval jsi opravdu tvrdě.[ENTER]Vše šlo podle plánu. Ještě nejsem tak starý, jak[ENTER]jsem si myslel. Na, ber:
 751	Ach bože, mé staré kosti zase selhaly. Nepovedlo[ENTER]se mi udělat Mramory polymorfismu. Nech mě dát ti[ENTER]alespoň tento předmět jako náhradu:
 752	Jak si přeješ.
-753	Úlomek Dračího kamene?!
+753	Úlomky Dračího kamene+?!
 754	V rukou máš úlomek Dračího kamene. Září, jako by[ENTER]byl plný tajemství a cítíš, jak ti jeho síla[ENTER]pulzuje tělem. Jaký druh kamene to je? Zanes jej[ENTER]alchymistovi, ten by ti mohl pomoci.
-755	Úlomek Dračího kamene?!
+755	Úlomky Dračího kamene+?!
 756	Toto je fragment Dračího kamene - extrémně[ENTER]vzácného a cenného krystalu s velkou silou. Říká[ENTER]se, že tento kámen je duší draka. Neuvěřitelně[ENTER]krásný. Cítíš tu sílu, která tebou začne proudit[ENTER]ihned, když jej uchopíš nosíš jej? Přines mi[ENTER]celkem deset úlomků Dračího kamene, pak z nich[ENTER]budu moci vyrobit kompletní kámen.
 757	Přeměna Dračího kamene
 758	Nebuď netrpělivý. Na Dračí kámen mohu přeměnit[ENTER]pouze deset úlomků. Pokračuj v hledání!
@@ -771,7 +771,7 @@
 771	Síla Dračího oka
 772	Zbývající Síla Dračího oka: %d
 773	Zvolit
-774	Es gibt keine Drachensteinsplitter mehr
+774	Již není více úlomků Dračího kamene.
 775	Dej mi Sílu Dračího oka
 776	Zdravím! Dnes jsi již obdržel Sílu Dračího oka.[ENTER]Ten proces mě ale vyčerpává tak, že ti mohu[ENTER]pomoci pouze jednou za den. Vrať se zase zítra!
 777	Zdravím! Vsadím se, že sis přišel pro Sílu[ENTER]Dračího oka. Správně? Výborně, tady máš. Hodně[ENTER]štěstí při hledání! Doufám, že najdeš dostatek[ENTER]úlomků pro deset Dračích kamenů!
@@ -806,7 +806,7 @@
 806	Tento předmět nelze využít pro mou technologii.[ENTER]Přines mi něco jiného.
 807	Tento předmět nemá dostatek energie. Přines mi[ENTER]něco, co má úroveň alespoň 35. Jedině tak budu[ENTER]svou technologií schopen z takové věci získat[ENTER]nějakou energii.
 808	Mám ten předmět zničit?
-809	Ano
+809	Ano!
 810	Ne, prosím!
 811	Nepovedlo se mi to - bohužel nemám žádné[ENTER]Fragmenty energie. Možná budu mít příště více[ENTER]štěstí.
 812	Nádhera! Povedlo se mi získat %d Fragmentů[ENTER]energie. Na, vezmi si je.
@@ -815,7 +815,7 @@
 815	Nemáš dostatek Fragmentů energie, s tím co máš[ENTER]Energetický krystal nevytvořím. Vrať se, až budeš[ENTER]mít alespoň %d fragmentů.
 816	Výborně, máš požadovaných %d Fragmentů energie. Z[ENTER]nich už Energetický krystal dokážu vyrobit, ale[ENTER]nedokážu ti zaručit, že se mi to povede. Chvilku[ENTER]počkej.
 817	Vše je připraveno na to, abych rozpustil[ENTER]Fragmenty energie a vytvořil Energetický krystal.[ENTER]Ale já taky musím z něčeho žít a mé nástroje mi[ENTER]také nepadají z nebes. Budu od tebe požadovat[ENTER]poplatek %d Yangů. Souhlasíš s tím?
-818	Jistě.
+818	Samozřejmě!
 819	Ne, teď ne.
 820	Dobře, chápu tvé rozhodnutí. Vrať se, až budeš[ENTER]ochoten za mou práci zaplatit. Pak ti vytvořím[ENTER]Energetický krystal.
 821	Promiň, ale platí se předem. Nejsem Jedličkův[ENTER]ústav. Tak funguje obchod - dej mi peníze, a já[ENTER]pak budu pracovat.
@@ -856,7 +856,7 @@
 856	Našel jsi nějaká Velikonoční vajíčka?
 857	Musíš mi za to dát %d vajíček!
 858	Fajn, beru to!
-859	Ne, radši ne.
+859	Ne, raději ne!
 860	Díky za vajíčka. Ať se ti líbí Velikonoční dárky!
 861	Prázdný košík:
 862	Chtěl bys získat tento předmět?
@@ -883,13 +883,13 @@
 883	Zase ty! Chceš znát tajemství? S trochou štěstí[ENTER]můžeš v těchto Halloweenských truhlách najít[ENTER]kartu Halloweenské masky.
 884	Tuto kartu můžeš použít, abys získal jednu z těch[ENTER]hrůzostrašných Halloweenských masek. Chceš tu[ENTER]masku?
 885	Ty nemáš kartu Halloweenské masky? Pak tu masku[ENTER]nedostaneš! Hahaha!
-886	Historik:
+886	Historik?
 887	Historik:
 888	Uč se z minulosti a pochopíš budoucnost! Jak ti[ENTER]mohu pomoci?
 889	Omlouvám se - my se známe?
 890	Omlouvám se za mé chování, zapomněl jsem se[ENTER]představit. Jsem cestující historik. Pokud máš[ENTER]nějaké otázky, týkající se historie, tak se[ENTER]neostýchej zeptat!
 891	Je my ctí tě poznat. Měl bych tě navštěvovat[ENTER]častěji.
-892	Was Süßes
+892	Něco sladkého
 893	Hanba. Tak příště.
 894	Tak pak chápeš, co myslím. Pokud chceš tyto[ENTER]sladkosti, přines mi prosím kus chleba.
 895	Dám ti jednu sladkost za 10 chlebů. Souhlasíš?
@@ -917,7 +917,7 @@
 917	Již jsme se dnes viděli a ty jsi dostal odměnu.[ENTER]Prosím, pamatuj si: jen trpěliví dosáhnou cíle.
 918	Štěstí bohatých
 919	Očekával jsem tě. Můj čas zde se pomalu chýlí ke[ENTER]konci. Vydám se do světa hledat více historických[ENTER]informací.
-920	Musíš pro mne zachránit %d kusů Požehnaného ovoce.
+920	Musíš pro mne zachránit %d kusů Požehnaného ovoce. 
 921	Dal bys mi je pro mou dlouhou cestu? Tvou[ENTER]existenci by to nemělo ohrozit.
 922	Tady, vezmi si je
 923	Ne
@@ -959,7 +959,7 @@
 959	Můžeš opravit měč?
 960	To je nádherný meč! Patřil Mirine, ne? Slyšel[ENTER]jsem, že jsi jí pomohl. Výborně, vypadá to, že[ENTER]jsi čestný a spravedlivý člověk, takže ti nebudu[ENTER]za opravu nic účtovat. Počkej chvilku...
 961	Zde, ostří je zase jako nové. Opravdu dobrá[ENTER]zbraň. Vem si ji příteli.
-962	Obdržíš stříbrný meč+3.
+962	Obdržel jsi Stříbrný meč+2.
 963	Obdržel jsi Orchideomeč+2.
 964	Obdržel jsi jedenapůlruční meč+2.
 965	Obdržel jsi barbarský meč+2.
@@ -976,7 +976,7 @@
 976	Náhle zavanul vítr.[ENTER]Odfoukl dopis s pozicí zkušeného vojáka, který[ENTER]jsem měl u sebe.
 977	Našel jsem zkušeného vojáka.
 978	V tom okamžiku dopis chytil plamenem, shořel a[ENTER]zmizel. Potom zaplavila
-979	Wärme deinen Körper
+979	náhlá teplá vlna tvé tělo.
 980	Zkušený voják ti požehnal!
 981	Zkušený voják ti požehnal!
 982	Dopis s popisem pobytu zkušeného vojáka může[ENTER]nováčkovi požehnat, pokud je schopný najít[ENTER]zkušeného vojáka.
@@ -998,11 +998,11 @@
 998	Tvůj pokus najít zkušeného vojáka se nezdařil.
 999	Hledá cíl %s
 1000	Kde se dá koupit červený lektvar?
-1001	Strážce:
+1001	Strážce návse
 1002	Strážce:
 1003	Můžeš koupit červený lektvar u obchodnice se[ENTER]smíšeným zbožím. Je tamhle. Pokud ji nevidíš, jdi[ENTER]směrem k blikající kružnici na velké mapě nebo k[ENTER]blikajícímu červenému bodu na mini mapě.
 1004	Obchodnice:
-1005	Obchodnice:
+1005	Obchodnice se smíšeným zbožím
 1006	Zdravím tě, dobrodruhu![ENTER]Aha, posílá tě ke mně strážce návsi? Potřebuje[ENTER]červený lektvar? Dám ti jich hned pět.[ENTER]Na, vezmi si je. Slouží ke obnovení energie[ENTER]života (ZB) a chutnají výborně.
 1007	Ty jsi sice v této oblasti nový, ale jsem[ENTER]přesvědčená o tom, že se brzo staneš stálým[ENTER]zákazníkem. Z tohoto důvodu ti ty elixíry[ENTER]přenechám zdarma. Přijd' brzo znovu.
 1008	Od obchodnice se smíšeným zbožím jsi obdržel 5[ENTER]červených elixírů.
@@ -1017,7 +1017,7 @@
 1017	Vítej v naší vesnici, dobrodruhu![ENTER]Byl bych ti vděčný, kdybys mi prokázal malou[ENTER]laskavost. Když ti dám 200 Yangů, koupíš mi[ENTER]červený lektvar? Dá se sehnat u obchodnice se[ENTER]smíšeným zbožím. Jsem ve službě a proto nyní[ENTER]nemůžu opustit náves.
 1018	Ano
 1019	Obdržel jsi od správce 200 yangů. Za tento[ENTER]platební prostředek si v obchodech můžeš obstarat[ENTER]předměty nebo využít služby řemeslníků. U[ENTER]obchodnice se smíšeným zbožím si můžeš koupit[ENTER]červený lektvar.
-1020	Neznámé tlačítko [%s]
+1020	UNKNOWN BUTTON [%s]
 1021	Kup červený lektvar
 1022	Kup u obchodnice se smíšeným zbožím červený[ENTER]lektvar a dones ho Strážci návsi.
 1023	Nevím, jestli jsem dost zkušený na to, abych[ENTER]zlepšil tenhle prut.
@@ -1039,61 +1039,61 @@
 1039	Chceš projít strží Am-heh a postavit se svému[ENTER]osudu?
 1040	Entrer
 1041	Peut ętre plus tard
-1042	Vous ne pouvez passer que par la Gorges d Am Heh aprčs avoir complété la quęte du niveau 103
-1043	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1044	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1045	Un seul groupe peut prendre d assaut la forteresse du dragon rouge Vous aurez également besoin d un laissez passer pour entrer
-1046	Je ne peux vous laisser entrer que si vous avez un laissez passer
-1047	Le niveau de tous les membres du groupe doit ętre d au moins 100 Sinon je ne peux pas vous laisser passer
-1048	Je ne vous laisserai passer que si tous les membres du groupe ont au moins le niveau 100
+1042	Strží Am-heh můžeš prvně projít teprve až[ENTER]dokončíš úkol pro úroveň 103.
+1043	Čekací doba, než budeš moci znovu vstoupit do[ENTER]Pevnosti červeného draka, ještě nevypršela.
+1044	Čekací doba, než budeš moci znovu vstoupit do[ENTER]Pevnosti červeného draka, ještě nevypršela.
+1045	Do Pevnosti červeného draka se může vydat pouze[ENTER]skupina. Navíc je pro vstup nutná propustka.
+1046	Mohu tě nechat vstoupit pouze pokud máš propustku.
+1047	Všichni členové skupiny musí mít alespoň úroveň[ENTER]100. Jinak Vás nemohu nechat projít.
+1048	Nechám Vás projít až tehdy, pokud budou mít[ENTER]všichni členové skupiny úroveň alespoň 100.
 1049	Forteresse du dragon rouge
-1050	Voulez vous entrer dans la forteresse du dragon rouge
+1050	Chceš vstoupit do Pevnosti červeného draka?
 1051	Entrer
 1052	Peut ętre plus tard
-1053	Seul le chef du groupe peut demander l admission
-1054	J apprécie votre courage mais vous serez seul ŕ vous ruiner dans la forteresse du dragon rouge Mettez en place un groupe fort et je vous laisserai rentrer
+1053	Pouze velitel skupiny si může vyžádat vstup.
+1054	Oceňuji tvou odvahu, ale bohužel v Pevnosti[ENTER]červeného draka nemáš osamocen žádnou šanci.[ENTER]Zformuj skupinu a pak Vám povolím vstup.
 1055	Lorsque le temps est écoulé le groupe est téléporté hors de la forteresse
 1056	Temps restant Minute n
-1057	Votre temps est écoulé Dans dix secondes vous serez téléporté aux portes de la forteresse
-1058	Dans dix secondes le groupe sera téléporté hors de la forteresse du dragon rouge
-1059	Réveillez la Gorges d Am Heh
-1060	Seul le chef peut réveiller la gorge de Am heh
-1061	La Gorge d Am heh est réveillée Maintenant personne n entre ni ne sort
-1062	Les portes de la forteresse du dragon rouge se ferment pendant une heure
-1063	Temps restant 60 Minute n
-1064	Mission Osez entrer dans l anneau des démons et en sortir victorieux
-1065	Tous les démons n ont pas encore été vaincus
+1057	Váš čas vypršel. Za několik vteřin budete[ENTER]teleportováni před bránu pevnosti.
+1058	Za několik vteřin bude skupina teleportována pryč[ENTER]z Pevnosti červeného draka.
+1059	Otevřít strž Am-heh
+1060	Pouze velitel skupiny může otevřít strž Am-heh!
+1061	Strž Am-heh byla otevřena. Nyní nikdo nemůže[ENTER]projít dovnitř - nebo ven.
+1062	Brány Pevnosti červeného draka budou nyní na[ENTER]hodinu uzavřeny.
+1063	Zbývající čas: 60 minut
+1064	Úkol: dostaň se do Ďáblova kruhu a pokus se[ENTER]zvítězit.
+1065	Ještě nebyli poraženi všichni démoni.
 1066	Restant
 1067	Tâche Trouvez l engrenage en or et activez le mécanisme caché dans la Stčle de l Isfet
-1068	Le mécanisme de la stčle de l Isfet ne peut ętre déclenché qu avec l engrenage en or Revenez quand la tâche a été accomplie
-1069	Mission vaincre Ignator gardien des braises
-1070	Ignator n a pas encore été vaincu Travailler dur ou recevoir sa damnation éternelle Revenez lorsque la tâche est terminée
-1071	Tâche Trouvez les Pierre de Maât et placez les dans le bon ordre sur les sept stčles de l Isfet
-1072	Si vous utilisez la Pierre de Maât sur la mauvaise stčle elle se brisera
-1073	L erreur est humaine Par conséquent choisissez judicieusement pour résoudre le puzzle Renvenez lorsque la tâche est terminée
-1074	Mission Seuls ceux qui n ont pas peur de la chaleur accablante vont détruire le Metin du Purgatoire
-1075	Laissez le Metin du Purgatoire se transformer en cendres et revenez lorsque la tâche sera accomplie
+1068	Mechanismus v náhrobku Isfet může být spuštěn[ENTER]pouze pomocí Zlatého ozubeného kola. Vrať se, až[ENTER]jej získáš.
+1069	Úkol: Poraž Ignitora, strážce žhavých plamenů
+1070	Ignitor ještě nebyl poražen. Zkus to znovu, nebo[ENTER]budeš pohlcen jeho věčným prokletím. Vrať se, až[ENTER]úkol dokončíš.
+1071	Úkol: hledej kameny Maat a polož je ve správném[ENTER]pořadí na náhrobky Isfet.
+1072	Pokud použiješ kámen Maat na nesprávný náhrobek,[ENTER]tak se rozpadne.
+1073	Je lidské dělat chyby, tak se dobře zamysli pro[ENTER]vyřešení hádanky. Vrať se, až dokončíš úkol.
+1074	Úkol: jen ti, kteří se nebojí sálajícího žáru,[ENTER]mohou rozbít Metin ohně očistce.
+1075	Rozbij Metin ohně očistce na padrť. Vrať se,[ENTER]jakmile bude úkol dokončen.
 1076	Tous les démons ont été vaincus
-1077	Visitez la Gorge d Am heh pour ouvrir un autre Verrou du destin
-1078	La stčle d Isfet a été détruite
-1079	Cet engin était un faux et a été détruit Trouvez l original
-1080	Ignator gardien des braises a été tué
-1081	C était un choix judicieux Détruire la prochaine stčle
-1082	C était un choix judicieux Détruire la prochaine stčle
-1083	Mauvais ordre La pierre du Maat a été détruite
-1084	C était un choix judicieux Détruire la prochaine stčle
-1085	C était un choix judicieux Détruire la prochaine stčle
-1086	C était un choix judicieux Détruire la prochaine stčle
+1077	Navštiv strž Am-heh abys otevřel další Zámek[ENTER]osudu.
+1078	Náhrobek Isfet byl zničen.
+1079	Zlaté ozubené kolo byl jen padělek a rozpadlo se.[ENTER]Musíš najít originál.
+1080	Ignitor, strážce žhavých plamenů, byl poražen.
+1081	To byla moudrá volba. Nyní znič další náhrobek.
+1082	To byla moudrá volba. Nyní znič další náhrobek.
+1083	Nesprávná sekvence. Výsledkem je zničený kámen[ENTER]Maat.
+1084	To byla moudrá volba. Nyní znič další náhrobek.
+1085	To byla moudrá volba. Nyní znič další náhrobek.
+1086	To byla moudrá volba. Nyní znič další náhrobek.
 1087	To byla moudrá volba. Nyní znič další poslední[ENTER]náhrobek a díky tomu se Maat stane vítězkou nad[ENTER]Isfet.
-1088	La Metin du Purgatoire a été détruite
-1089	Razador a été tué
-1090	Tous les combattants seront téléportés hors du Temple du Dragon dans une minute
-1091	Pour passer par la Gorge d Am heh votre chef doit avoir au moins le niveau 104
-1092	Votre force n est pas suffisante pour traverser la Gorge d Am heh Revenez dčs que vous atteignez le niveau 104 ou supérieur
-1093	Vous ętes ŕ l extérieur des portes de la forteresse du dragon rouge depuis plus de cinq minutes et vous ne pouvez plus rentrer
-1094	Le temps de rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1095	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe nécessite un passe Les joueurs suivants n en portent pas actuellement
-1096	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe doit avoir atteint le niveau 100 Les joueurs suivants n ont pas atteint le niveau pour le moment
+1088	Metin ohně očistce byl zničen.
+1089	Razador byl poražen.
+1090	Všichni válečníci budou za minutu teleportováni[ENTER]pryč z Dračího chrámu.
+1091	Abyste mohli projít strží Am-heh, musí být[ENTER]velitel skupiny alespoň úrovně 104.
+1092	Tvá síla není dostatečná, aby ses dostal skrz[ENTER]strž Am-heh. Vrať se, až budeš mít úroveň 104.
+1093	Váhali jste před branami Pevnosti červeného draka[ENTER]více než 5 minut a nyní již nemůžete vstoupit.
+1094	Čekací doba, než budeš moci znovu vstoupit do[ENTER]Pevnosti červeného draka, ještě nevypršela.
+1095	UPOZORNĚNÍ: Abyste mohli vstoupit do Pevnosti[ENTER]červeného draka, musí mít každý člen skupiny[ENTER]propustku. Následující hráči ji nemají:
+1096	UPOZORNĚNÍ: Abyste mohli vstoupit do Pevnosti[ENTER]červeného draka, musí být všichni členové skupiny[ENTER]alespoň na úrovni 100. Následující hráči NEMAJÍ[ENTER]požadovanou úroveň:
 1097	The group from %s has killed the Razador!
 1098	Říše Jinno vstupuje na svatou zemi
 1099	Nemůžeš se zúčastnit!
@@ -1122,7 +1122,7 @@
 1122	Nenechat si předpovědět
 1123	Správně.[ENTER]V životě je nejdůležitější, nechat se vést[ENTER]vlastní vůlí a dát ze sebe to nejlepší. Žijte[ENTER]blaze!
 1124	Ano, chci.
-1125	Ne, díky.
+1125	Ne, děkuji.
 1126	Jsem sice hodná, ale nemůžu si dovolit rozdávat[ENTER]talismany. Jestli chceš zabránit smůle a[ENTER]neštěstí, zaplať mi za ten talisman přiměřenou[ENTER]cenu.[ENTER]Stojí %s Yangů.
 1127	Ty jdeš pryč? Možná máš pravdu. Neštěstí a[ENTER]trápení patří k životu. Dávej na sebe pozor a žij[ENTER]blaze. Jestli změníš názor, přijd' si se mnou[ENTER]promluvit později.
 1128	Pohled do tvých očí mi prozrazuje, že jsi ještě[ENTER]velmi mladý. Proč bys chtěl znát tvůj osud tak[ENTER]brzy? Máš pro to nějaký důvod? Osud toho má pro[ENTER]tebe ještě mnoho přichystáno. Přijď později.
@@ -1136,7 +1136,7 @@
 1136	Oblast Yongan
 1137	Oblast Joan
 1138	Oblast Pyungmoo
-1139	Yayang
+1139	Oblast Yayang
 1140	Oblast Bokjung
 1141	Oblast Bakra
 1142	Jungrang
@@ -1146,7 +1146,7 @@
 1146	Hora Sohan
 1147	Doyyumhwan
 1148	Desert Yongbi
-1149	Temple Hwang
+1149	Chrám Hwang
 1150	Grotte de l exil
 1151	Nachricht der Turnier-Leitung
 1152	Willkommen zum großen Metin2-Turnier! In deinem[ENTER]Inventar findest du die Rätselhafte Truhe. Sobald[ENTER]du mit der rechten Maustaste darauf klickst,[ENTER]wirst du in das Feuerland teleportiert - und die[ENTER]Kämpfe können beginnen!
@@ -1363,7 +1363,7 @@
 1363	Čas do rozpuštění: %s dnů
 1364	Doba čekání
 1365	Nejbližší doba pro opakování pokusu: %s hodin
-1366	Zbývající čas
+1366	Zbývající čas:
 1367	Okamžité přizpůsobení
 1368	Můžeš se okamžitě zaregistrovat.
 1369	Cechy podobné tomu tvému mají následující[ENTER]výsledky:[ENTER][DELAY value;0][ENTER]|Název cechu |Body |Vítězství |Nerozh. |Porážky[ENTER]%s[/DELAY][ENTER]
@@ -1377,7 +1377,7 @@
 1377	Kupuj tipovací lístky pro tvé království.[ENTER][ENTER]1. Při každé válce cechů je vyhlášená[ENTER]pravděpodobná výše výsledku vítězného cechu.[ENTER]2. Můžeš si koupit lístek, na kterém tipuješ,[ENTER]jestli tvůj cech dosáhne vyhlášeného rozdílu ve[ENTER]výsledku nebo ne.[ENTER]3. Výsledek sázek určuje sázkový stánek a po[ENTER]válce cechů obdržíš zprávu, jestli jsi vyhrál[ENTER]nebo prohrál.[ENTER][ENTER]* 10 % výhry bude vyplaceno ve prospěch[ENTER]království.
 1378	%s proti %s
 1379	Správce bitev:
-1380	 s
+1380	s
 1381	Momentálně se nevede žádná válka cechů, na kterou[ENTER]si můžeš vsadit.
 1382	Na jakou válku cechů chceš tipovací lístek?
 1383	Podle seznamu už jsi koupil tipovací lístek na[ENTER]tuto cechovní válku.[ENTER]Za každý cech můžeš koupit vždycky jenom jeden[ENTER]lístek.
@@ -1446,12 +1446,12 @@
 1446	Neměl by ses vydávat do nebezpečí bez důvodu![ENTER]Dones rýžové koláčky Wonda-Rimovi, odmění tě za[ENTER]ně. Čím více koláčků doneseš, tím lepší bude[ENTER]odměna.
 1447	Přinesl jsi zpět všechny naše zásoby! Dlužíme ti[ENTER]opravdu mnoho. Bez tebe bychom měli velké[ENTER]problémy.
 1448	Velká část našich zásob stále chybí. Můžeme s[ENTER]tebou stále počítat?
-1449	Samozřejmě.
+1449	Samozřejmě!
 1450	Pomohu později.
 1451	Počkám tu na tebe.
 1452	Úkol %s[ENTER]Tento úkol můžeš přijmout celkem 10x.
 1453	Bez tebe bychom byli ztraceni. Pomůžeš nám ještě?[ENTER]Stále nám chybí velká část našich zásob.
-1454	Ano, budu pokračovat.
+1454	Budu pokračovat!
 1455	Vrátím se později.
 1456	Jsi statečný válečník. Prosím, pokračuj![ENTER][ENTER]Úkol %s[ENTER]Tento úkol můžeš přijmout celkem 10x.
 1457	Pekelný chrt
@@ -1714,7 +1714,7 @@
 1714	Nechci ti to opakovat ještě jednou.[ENTER]Když chceš jezdit na koni, MUSÍŠ mít u sebe[ENTER]obrázek koně!
 1715	Až obdržíš Zbrojní knihu koní, můžeš napadat[ENTER]nepřítele z koňského hřbetu.[ENTER]Přezkouším potom tvoji zkušenost v boji a[ENTER]šikovnost při ježdění.[ENTER]Běž do pouště a zabij pár štířích lukostřelců.[ENTER]Můžeš se tam vydat se skupinou, ale vedoucím[ENTER]skupiny musíš být TY.
 1716	Dobrá, přijd' později znovu.
-1717	Neznámé tlačítko [%s]
+1717	UNKNOWN BUTTON [%s]
 1718	Nemyslím, že nemůžeš dostat Zbrojní knihu koní.[ENTER]To je divné, nevím proč...[ENTER]Nejlepší bude, když se zeptáš gamemastera.
 1719	Potřebuješ koňskou medaili, abys mohl začít s[ENTER]úkolem Zbrojní knihy koní.[ENTER]Koňskou medaili získáš v opičí jeskyni.
 1720	Zbývá lukostř.
@@ -1734,7 +1734,7 @@
 1734	OK. Hodně štěstí při dalším pokusu.
 1735	Přeci nemůžeš zlepšovat mrtvého koně![ENTER]Běž, sežeň si ty dobré byliny opic a navrať tvému[ENTER]koni život. Pak se můžeme bavit o zlepšení koně.
 1736	Pokud chceš projít testem, neměl bys tu již[ENTER]otálet! Běž a zabíjej lukostřelce démonů!
-1737	Neznámé tlačítko [%s]
+1737	UNKNOWN BUTTON [%s]
 1738	Zpět k pacholkovi
 1739	Podej pacholkovi hlášení o výsledcích testu.
 1740	Zpráva o zkoušce schopnosti
@@ -1820,10 +1820,10 @@
 1820	show_mob_pos: special.lvq_map[map_index(%s)] is nil
 1821	addmapsignal(%s,%s)
 1822	Zbývá
-1823	Zabij cíl!
+1823	![ENTER]Zabij cíl! :
 1824	Počet cílů
 1825	Odměna: %s%% zkušeností.
-1826	Zkušenost
+1826	% zkušenosti
 1827	Úkol dokončen.
 1828	Úkol:
 1829	Úkol dokončen.
@@ -1838,7 +1838,7 @@
 1838	Vrátit se k Ariyoung.
 1839	Běž zpátky do vesnice k Ariyeong a vysvětli jí,[ENTER]že jsi tu upomínku na jejího manžela nemohl[ENTER]sehnat.
 1840	Najít Ariyeong
-1841	Jdi za Ariyoung
+1841	Běž za Ariyoung.
 1842	Najdi Ariyeong a sděl jí, že její manžel zemřel.
 1843	Zabít náčelníka bandy Černého větru.
 1844	Zabít náčelníka bandy Černého větru.
@@ -1932,11 +1932,11 @@
 1932	Dones zlatou sekeru zpátky dřevorubcovi Deokbae.
 1933	Dones zlatou sekeru zpátky dřevorubcovi Deokbae a[ENTER]vyzvedni si odměnu.
 1934	Bez tvojí pomoci bych tuhle sekeru nikdy nenašel.[ENTER]Když jsem ji ztratil, myslel jsem, že je po mně.[ENTER]Ale tenhle hrdina se bez zdráhání pustil do boje[ENTER]a donesl mi ji na zpět![ENTER]Od té doby nosím tuhle sekeru se sebou ve dne v[ENTER]noci.
-1935	Vstoupit
+1935	Vstoupit.
 1936	Do věže démonů...
 1937	V této věži se to démony jenom hemží.[ENTER]Jen ti nejsilnější se dostanou až na vrchol.[ENTER]Ale říká se, že zatím ještě nikdo, kdo vstoupil[ENTER]do věže, ji živý zase opustil.[ENTER]Chceš ještě pořád vstoupit do této ďábelské věže?
 1938	V této věži se to démony jenom hemží.[ENTER]Jen ti nejsilnější se dostanou až na vrchol.[ENTER]Ale říká se, že zatím ještě nikdo, kdo vstoupil[ENTER]do věže, ji živý zase opustil.[ENTER]Zatím nemůžeš vstoupit, protože jsi ještě[ENTER]nedosáhl úrovně 40.
-1939	Nevstoupit
+1939	Nevstoupit.
 1940	Vypnout
 1941	Království Junjeh
 1942	Království Shinsoo
@@ -1960,21 +1960,21 @@
 1960	Dveře, které doposud byly zavřené, se otevřely.[ENTER]Vzhůru do nové země! Zmocníme se jí. Všichni[ENTER]budou přeneseni do Svaté země.
 1961	Pravidla vstupu do Bitvy království:[ENTER]1. Kdo zemře na tomto území, bude teleportován do[ENTER]vesnice, ale Správce bitev jej může přenést zpět.[ENTER]2. Jakmile byly jednou otevřeny dveře do Svaté[ENTER]země, nelze na toto již území vkročit.[ENTER]3. Kdo se chce dostat do Svaté země, musí najít[ENTER]správný klíč.
 1962	Pravidla Bitvy království:[ENTER]1. Království, které dosáhne nejmenšího počtu[ENTER]bodů v boji proti jinému království, vypadává[ENTER]jako první.[ENTER]2. Budou se objevovat různé nestvůry. Království,[ENTER]které jako první zabije určitý počet nestvůr,[ENTER]vyhrává.[ENTER]3. Pokud posléze bude zabit Devítiocas, bitva[ENTER]končí.[ENTER]4. Během Bitvy království se neukořisťují žádné[ENTER]předměty.[ENTER]5. Kdo ve Svaté zemi třikrát zemře, vrací se[ENTER]zpátky do vesnice a je z Bitvy království[ENTER]vyloučen.
-1963	Dnes se na tebe usmívá sama Fortuna! Dnes máš[ENTER]obrovské štěstí! Harmonické proudy Chi způsobí,[ENTER]že se ti dnes přihodí něco dobrého!
+1963	Dnes se na tebe usmívá sama Fortuna! Dnes máš[ENTER]"obrovské štěstí"! Harmonické proudy Chi způsobí,[ENTER]že se ti dnes přihodí něco dobrého!
 1964	Obrovské štěstí!
-1965	To je dobře. Jak se zkrátka a dobře říká, jak se[ENTER]do lesa volá, tak se z lesa ozývá. Dnes máš[ENTER]velké štěstí! Dej si trochu námahy a dostaneš[ENTER]víc než kdykoliv předtím.
+1965	To je dobře. Jak se zkrátka a dobře říká, jak se[ENTER]do lesa volá, tak se z lesa ozývá. Dnes máš[ENTER]"velké štěstí"! Dej si trochu námahy a dostaneš[ENTER]víc než kdykoliv předtím.
 1966	Velké štěstí!
-1967	To není tak špatné. Dnes máš trochu štěstí.[ENTER]No, znamená to: je to trochu lepší než jindy.[ENTER]To je v pořádku.
+1967	To není tak špatné. Dnes máš "trochu štěstí".[ENTER]No, znamená to: je to trochu lepší než jindy.[ENTER]To je v pořádku.
 1968	Trochu štěstí.
-1969	Ani dobré, ani špatné! Dnes máš normální[ENTER]štěstí. Nic zvláštního. Aspoň to neznamená, že[ENTER]máš smůlu.
+1969	Ani dobré, ani špatné! Dnes máš "normální[ENTER]štěstí". Nic zvláštního. Aspoň to neznamená, že[ENTER]máš smůlu.
 1970	Normální štěstí.
-1971	Dnes se na tebe štěstí moc nesměje. A i když[ENTER]rozhodíš síť, stejně ulovíš jenom málo ryb, ale[ENTER]nebudeš trpět hladem. Dnes máš trochu smůly![ENTER]Ale není nad to, být připraven. Jestli chceš,[ENTER]zhotovím ti talisman, který to nejhorší odvrátí.[ENTER]Tak co, chceš ten talisman koupit?
+1971	Dnes se na tebe štěstí moc nesměje. A i když[ENTER]rozhodíš síť, stejně ulovíš jenom málo ryb, ale[ENTER]nebudeš trpět hladem. Dnes máš "trochu smůly"![ENTER]Ale není nad to, být připraven. Jestli chceš,[ENTER]zhotovím ti talisman, který to nejhorší odvrátí.[ENTER]Tak co, chceš ten talisman koupit?
 1972	Trochu smůly.
-1973	Dneska je hrozný den.[ENTER]Den, během kterého se i na dobře obdělaných[ENTER]polích sotva urodí. Dnes máš smůlu![ENTER]Musíš se chránit před špatnými věcmi.[ENTER]Jestli chceš, zhotovím ti teď hned talisman, abys[ENTER]mohl odvrátit opravdovou škodu.[ENTER]Tak co, chceš koupit talisman?
+1973	Dneska je hrozný den.[ENTER]Den, během kterého se i na dobře obdělaných[ENTER]polích sotva urodí. Dnes máš "smůlu"![ENTER]Musíš se chránit před špatnými věcmi.[ENTER]Jestli chceš, zhotovím ti teď hned talisman, abys[ENTER]mohl odvrátit opravdovou škodu.[ENTER]Tak co, chceš koupit talisman?
 1974	Smůla.
-1975	Tohle je pro tebe nejhorší den. Všichni bohové na[ENTER]nebi a na zemi se od tebe odvrátili. Nic se ti[ENTER]nepodaří. Když budeš chtít zapálit oheň, bude[ENTER]pršet. Když budeš mít žízeň, bude žhnout slunce.[ENTER]Budeš pracovat tvrději než všichni ostatní, ale[ENTER]nic z toho nebudeš mít. Obrovská smůla![ENTER]Budeš muset mnohé snášet: Veškeré útrapy a svízel[ENTER]se tě budou držet. Bez talismanu bude pro tebe[ENTER]těžké zamezit útrapám. Tak co, chceš si koupit[ENTER]talisman?
+1975	Tohle je pro tebe nejhorší den. Všichni bohové na[ENTER]nebi a na zemi se od tebe odvrátili. Nic se ti[ENTER]nepodaří. Když budeš chtít zapálit oheň, bude[ENTER]pršet. Když budeš mít žízeň, bude žhnout slunce.[ENTER]Budeš pracovat tvrději než všichni ostatní, ale[ENTER]nic z toho nebudeš mít. "Obrovská smůla"![ENTER]Budeš muset mnohé snášet: Veškeré útrapy a svízel[ENTER]se tě budou držet. Bez talismanu bude pro tebe[ENTER]těžké zamezit útrapám. Tak co, chceš si koupit[ENTER]talisman?
 1976	Obrovská smůla.
-1977	Trojcestný řez
+1977	Trojcestný střih
 1978	Rána mečem
 1979	Léčka
 1980	Bleskový útok
@@ -1985,11 +1985,11 @@
 1985	Déšť šípů
 1986	Ohnivý šíp
 1987	Našlapování polehoučku
-1988	Víření mečů
+1988	Smršť meče
 1989	Jedovatý šíp
 1990	Rána prstem
-1991	Víření draka
-1992	Začarovaná čepel
+1991	Dračí vír
+1992	Začarovat čepel
 1993	Strach
 1994	Začarovat brnění
 1995	Zrušit kouzlo
@@ -2085,13 +2085,13 @@
 2085	Dones Baek-Goovi ty přísady
 2086	Dones Baek-Goovi ty přísady do léku.
 2087	Vrať se k Baek-Goovi, dones mu ostnatý štíří ocas[ENTER]a vyrob lék pro Yu-Rang.
-2088	Hledej Huahn-sa.
+2088	Hledej Huahn-Sa
 2089	Hledej Huahn-sa.
 2090	Najdi Huahn-Sa a poslechni si jeho příběh.
 2091	Zpět k Huahn-So
 2092	Podej zprávu Huahn-Sovi.
 2093	Podej zprávu Huahn-Sovi a vyzvedni si odměnu.
-2094	Huahn-So
+2094	Huahn-So:
 2095	Podíl padlích předmětů
 2096	Úroveň
 2097	Vzhledem k zvýšení úrovně
@@ -2107,7 +2107,7 @@
 2107	Náhodný předmět
 2108	Za úkol úrovně obdržíš přímo odměnu.
 2109	Zbývá počet
-2110	Zabitý
+2110	zabitý!
 2111	Počet cílů
 2112	Zabij cíl!
 2113	Zabitý
@@ -2134,7 +2134,7 @@
 2134	Vchod do těžké opičí jeskyně
 2135	1. Až vstoupíš do opičí jeskyně, musíš během 20[ENTER]minut zabít opičího vůdce a potom uniknout.[ENTER]2. Nesmíš použít žádné pergameny návratu do města[ENTER]nebo na jiná místa.[ENTER]Mnozí, kteří se nechovali podle těchto pravidel,[ENTER]byli proměněni na opice. Takže jestli nechceš[ENTER]jíst zbytek života banány, tak si dej na sebe[ENTER]pozor!
 2136	Nevstoupit
-2137	Zbývající čas
+2137	Zbývající čas:
 2138	Opičí jeskyně
 2139	Hehehee! Všichni mají zemřít. Hijááá!!
 2140	Kousek, kousek, kousek, kousek!
@@ -2657,7 +2657,7 @@
 2657	Nezírat, bojovat!
 2658	Nesnáším, když na mě zíráš. Pojd' sem!
 2659	To je čest, zemřít ranou mého meče!
-2660	Výborně!
+2660	Skvělé!
 2661	Ty tam, nedotýkat se!
 2662	Vypadá to, jako by byla tětiva mého luku přeříznutá!
 2663	Sakra. Přišli tihle idioti.
@@ -2822,7 +2822,7 @@
 2822	Áááá, anoooo!
 2823	Nech mě na tebe přenést mou chorobu!
 2824	Tahle vytrvalá záhadná choroba...
-2825	 = Předmět, který je zapotřebí.
+2825	= Předmět, který je zapotřebí.
 2826	Tam nemůžeš jít. Ani já sám jsem tam ještě nebyl.
 2827	Teleportovat
 2828	Zdravím![ENTER]Vím, jak se odsud dostat do jiné oblasti.[ENTER]Když mi dáš pár Yangů, můžu tě tam teleportovat.
@@ -2843,7 +2843,7 @@
 2843	Řekni starému pirátovi, že´s ten lék nemohl[ENTER]sehnat.
 2844	Vrať se ke starému pirátovi.
 2845	Nemůžu ten lék najít![ENTER]Co potom asi tak tomu starému pirátovi řeknu?
-2846	Dones ten lék starému pirátovi.
+2846	Dones ten lék starému pirátovi
 2847	Dones ten lék starému pirátovi.
 2848	Dones ten lék starému pirátovi a vyzvedni si[ENTER]odměnu.
 2849	Mám ten lék.
@@ -2887,7 +2887,7 @@
 2887	Starý pirát:[ENTER]Zatraceně! Co tady chceš? Sakra! Tahle vetešnice[ENTER]ti něco navyprávěla, co?[ENTER]Hmm, to, co říkala, je pravda. Ale na nějaký[ENTER]chození k doktorovi nemám čas. Já mám tolik[ENTER]nepřátel!
 2888	Starý pirát:[ENTER]Člověk nikdy neví, jestli se najednou náhodou[ENTER]neobjeví nějaký dareba a jednoduše tě nezapíchne![ENTER]Ale svědí to tak šíleně, že už to fakt nevydržím![ENTER]Tak co? Můžeš mi skočit k doktorovi a sehnat mi[ENTER]lék proti svědění? Když mi ten lék seženeš, dobře[ENTER]se ti odměním.
 2889	Starý pirát:[ENTER]Ten lék už mi sehnal někdo jiný.[ENTER]No jo no, a tím pádem taky nedostaneš žádnou[ENTER]odměnu.
-2890	Běž ke starému pirátovi.
+2890	Běž ke starému pirátovi
 2891	Běž ke starému pirátovi.
 2892	Běž ke starému pirátovi a zeptej se ho, proč[ENTER]nejde k lékaři.
 2893	Starý pirát:[ENTER]Všechno mě svědí![ENTER]Radši jsem toho chlápka vůbec neměl potkat.[ENTER]Přitom to byl jenom jeden jediný dotek! A od té[ENTER]doby mi to jenom hnisá a svědí mě celý tělo![ENTER]Je to jako kdybych uhníval zaživa. Mizera!
@@ -3126,7 +3126,7 @@
 3126	Už uplynul nějaký čas od té doby, co barbaři[ENTER]překročili hranice a přepadli vesnici. Pozabíjeli[ENTER]stovky lidí a počet lidí, kteří utrpěli škody na[ENTER]majetku nebo na zdraví, je mnohem vyšší. Zlovolní[ENTER]barbaři jsou tak brutální, že se nikdo neodvažuje[ENTER]zahájit pomstu. Ale my to už nebudeme dál[ENTER]tolerovat.[ENTER]Zabij 25 náčelníků barbarů. Když úspěšně dokončíš[ENTER]tenhle úkol, obdržíš následující odměnu:
 3127	Odměna
 3128	Během testování úkolů se nerozdávají žádné[ENTER]odměny. Poté, co obdržíš odměnu, můžeš začít hrát[ENTER]znovu aktuální úkol.
-3129	Úkol:
+3129	Úkol
 3130	Jaký šíp neexistuje ve hře Metin2?
 3131	Dřevěný šíp
 3132	Železný šíp
@@ -3182,8 +3182,8 @@
 3182	Mistr
 3183	2
 3184	Co nepatří k schopnostem boje tělo na tělo?
-3185	Trojcestný řez
-3186	Víření mečů
+3185	Trojcestný střih
+3186	Smršť meče
 3187	Uhánění
 3188	Aura des Schwerts
 3189	3
@@ -3248,7 +3248,7 @@
 3248	Šaman
 3249	4
 3250	Co patří ke schopnostem při výcviku v magických[ENTER]zbraních?
-3251	Začarovaná čepel
+3251	Začarovat čepel
 3252	Rána ducha
 3253	Temná ochrana
 3254	Duch plamene
@@ -3261,7 +3261,7 @@
 3261	2
 3262	Co patří ke schopnostem při výcviku v černé magii?
 3263	Rána prstem
-3264	Víření draka
+3264	Dračí vír
 3265	Temná rána
 3266	Začarovat brnění
 3267	3
@@ -3434,9 +3434,9 @@
 3434	Rezavá čepel kordu
 3435	4
 3436	Kdy je na zlepšení stříbrného meče potřeba kromě[ENTER]Yangů ještě navíc předmět?
-3437	Při vylepšování na +5
-3438	Při vylepšování na +5
-3439	Při vylepšování na +5
+3437	Při vylepšování na +1
+3438	Při vylepšování na +2
+3439	Při vylepšování na +4
 3440	Při vylepšování na +5
 3441	4
 3442	Jaké označení se používá pro postavu, jejíž počet[ENTER]bodů za dobrý resp. zlý charakter je negativní?
@@ -3543,7 +3543,7 @@
 3543	4
 3544	Která obouruční zbraň je nejlepší?
 3545	Magnetická čepel
-3546	Obrovská sekera+0
+3546	Obrovská sekera
 3547	Gilotinová čepel
 3548	Halapartna
 3549	1
@@ -3582,7 +3582,7 @@
 3582	Obchodní cestující:[ENTER]Prosím pomož mi.[ENTER]Jestli můžeš kouzelníkovi démonů vzít [démonický[ENTER]drahokam+], bohatě se ti odvděčím.
 3583	Obchodní cestující:[ENTER]Už mi ho donesl někdo jiný. Ty už se tím nemusíš[ENTER]zdržovat.
 3584	Jít k obchodnímu cestujícímu.
-3585	Běž k obchodnímu cestujícímu
+3585	Jít k obchodnímu cestujícímu.
 3586	Vydej se k obchodnímu cestujícímu a zeptej se ho[ENTER]na démonický drahokam+.
 3587	Dopis obchodního cestujícího:[ENTER]Už nevím, co mám dělat. Ukradli mi Démonický[ENTER]drahokam+ a to mě zruinovalo, protože jsem za něj[ENTER]zaplatil všechno, co jsem měl.[ENTER]Můžeš mi prosím nějak pomoct? Naléhavě potřebuji[ENTER]tvoji pomoc.
 3588	Obchodní cestující:[ENTER]Dobrá práce! To se mi ulevilo! To je fakt výborný!
@@ -3695,7 +3695,7 @@
 3695	Víš co je prut zlata? No samozřejmě, že víš. Ale[ENTER]víš také, k čemu je dobrý?[ENTER][ENTER]Když s sebou nosíš Yangy, je to, jako kdybys[ENTER]říkal nosil ceduli s nápisem 'Prosím! Zabijte mě[ENTER]a vemte si mé peníze'. Proto měním Yangy lidí za[ENTER]zlaté pruty. A ty pro ně skladuju.[ENTER][ENTER]Nojo, chci za to trochu víc, než stojí zlaté[ENTER]pruty.[ENTER]Ale stejně to je spravedlivé, ne? Není důvodu se[ENTER]cítit podvedený. Jak víš, tak je to venku[ENTER]nebezpečné.
 3696	Chceš využívat sklad?[ENTER]Za používání skladových prostor musíš něco[ENTER]zaplatit. Dneska mám ale dobrou náladu, takže ti[ENTER]to nabízím za 500 Yangů.[ENTER]Tak co na to říkáš? To je přece za babku, nebo[ENTER]ne? Cha, cha, cha!
 3697	Á, pěkně vítám!
-3698	Vítáme!
+3698	Bud' pozdraven.
 3699	Hm, tohle je budoucí hrdina?
 3700	A nic.
 3701	Cože? Yangy nestačí?[ENTER]Tak přijd' znovu později, až budeš mít dostatek[ENTER]Yangů.
@@ -3704,7 +3704,7 @@
 3704	Zaplatit
 3705	Procento spadlích desetiyangů
 3706	%d dnů a %d hod.
-3707	%d hod. %d min.
+3707	%d minut a %d vteřin
 3708	%d minut a %d vteřin
 3709	%d vteřin
 3710	Žena
@@ -3713,7 +3713,7 @@
 3713	Každý, kdo se mi dnes pokloní, dostane ode mne[ENTER]novoroční dárek, ovšem pouze pokud bude mít[ENTER]alespoň úroveň 15. Doufám, že jsi byl dobře[ENTER]vychován a respektuješ starší a zkušenější?
 3714	Nevím, jak ti poděkovat! Ať ti požehná Dračí bůh.[ENTER]A jako výraz mého vděku - tady je pytel Yangů.[ENTER]Užij si jej!
 3715	Jsi zde, abys mě přivítal poklonou?
-3716	Škoda! Nemáš už ale žádné místo v inventáři.[ENTER]Přijd', až budeš mít víc místa.
+3716	Škoda. Nemáš už ale žádné místo v inventáři.[ENTER]Přijď, až budeš mít víc místa.
 3717	Přeji ti vše nejlepší do nového roku. Ovšem, ty[ENTER]už jsi dárek obdržel. Myslel sis, že na to[ENTER]zapomenu?
 3718	Ano! Hodně štěstí v novém roce.
 3719	Ne
@@ -3721,10 +3721,10 @@
 3721	Ach, děkuji! Přeji ti hodně štěstí v novém roce![ENTER]Ale bohužel pro tebe dárek nemám, jen pro ty,[ENTER]kteří mají úroveň alespoň 15. Nebuď z toho[ENTER]smutný, jsem si jist, že nový rok ti přinese[ENTER]spoustu úžasných věcí!
 3722	Obrovská sekera+0
 3723	Najdi Soona
-3724	Najdi Soona
+3724	Hledat Soon.
 3725	Najdi Soona. Vyposlechni si jeho poznámky k[ENTER]výrobě nového porcelánu a povyprávěj o tom[ENTER]Yonahovi.
 3726	Hledat hrnčíře Yonaha.
-3727	Najdi hrnčíře Yonaha
+3727	Hledat hrnčíře Yonaha.
 3728	Najdi hrnčíře Yonaha. Má pro tebe úkol.
 3729	Sbírej zlaté zuby tmavých Orků.
 3730	Sbírej zlaté zuby tmavých Orků.
@@ -3736,7 +3736,7 @@
 3736	Vrať se k hudebníkovi Yu-Hwanovi.
 3737	Řekni hudebníku Yu-Hwanovi, že jsi tu pavoučí síť[ENTER]nemohl najít.
 3738	Hledej hudebníka Yu-Hwana
-3739	Hledej hudebníka Yu-Hwana
+3739	Hledat hudebníka Yu-Hwana.
 3740	Najdi hudebníka Yu-Hwana a naslouchej jeho písni.
 3741	Chyť spárovitého pavouka.
 3742	Chytit spárovitého pavouka.
@@ -3753,7 +3753,7 @@
 3753	Jistě.
 3754	Díky. A pospíchej!
 3755	Poraž 300 démonů v Ohnivé zemi v okolí pevnosti a[ENTER]také na místě výskytu Slunečních bylin.
-3756	Dämonenhatz
+3756	Lov démonů
 3757	Erledige 300 Feuerland Dämonen in der Nähe der Festung und dem Fundort der Sonnenkräuter
 3758	Obávám se, že jsi ještě nezabil dostatek démonů.[ENTER]Vrať se do Ohnivé země a pokračuj v boji.
 3759	Pozabíjel jsi všechny démony. Vrať se k[ENTER]Yak-Hwanovi.
@@ -3777,7 +3777,7 @@
 3777	Zastav Černou hmotu
 3778	To je... ufff... Stěžoval jsem si kováři, protože[ENTER]Základové kameny jsou nadrceny na příliš hrubé[ENTER]kusy, a on je teď uražený a odmítá nadrtit ty[ENTER]zbylé. To je ale tvrdohlavý mezek! Mohl by jsi s[ENTER]ním promluvit prosím?
 3779	Jistě.
-3780	Danke Hier sind die Fundamentsteine Und bringe ihm diesen Korb mit Leckereien als Entschuldigung
+3780	Díky. Prosím, vezmi mu tenhle koš s dobrotami[ENTER]jako mou omluvu a přiměj jej, aby rozdrtil[ENTER]Základové kameny na jemný prášek.
 3781	Utiš kováře
 3782	Uklidni kováře a přiměj jej, aby rozdrtil[ENTER]Základové kameny na jemný prášek.
 3783	Prášek ze základového kamene: 1 kus
@@ -3813,7 +3813,7 @@
 3813	Narychlo napsaná slova:
 3814	Yak-Hwane, nevrátím se živ, ale doufám, že se[ENTER]tento dopis k tobě dostane. V Ohnivé zemi jsem[ENTER]našel pevnost, která není vyznačena na žádné[ENTER]mapě.[ENTER]Jejím vládcem je mocný démon Ohnivé země - jeho a[ENTER]všechny démony, kteří jej následují, obklopuje[ENTER]unikátní aura. Jeho řev je ohlušující a zdá se,[ENTER]že něco stráží. Ale co to je, to nemohu říci.[ENTER]Odpusťte mi, selhal jsem...
 3815	Musíme zjistit, co je v té pevnosti schováno.[ENTER]Podívej, tady na straně Nýtovaného náhrdelníku je[ENTER]nějaký nápis. Zeptám se na radu Yon-I-Walkera.[ENTER]Pokud bude potřebovat tvou pomoc, vzkáže pro tebe.
-3816	Gravur entschlüsseln
+3816	Rozšifruj nápis
 3817	Hledá tě Yon-I-Walker. Zajdi za ním.
 3818	Willkommen ich habe dich bereits erwartet Ich brauche etwas Hilfe dabei die Gravur in diesem Nietenhalsband zu entschlüsseln
 3819	Znaky, které jsou na vnitřní straně Nýtovaného[ENTER]náhrdelníku pochází od prastaré kultury, která[ENTER]existovala kdysi dávno v minulosti. Abych je[ENTER]rozluštil, potřebuji krev Krále plamenů. V jeho[ENTER]žilách koluje jako láva.
@@ -3868,14 +3868,14 @@
 3868	Dobré zprávy! Našel jsem způsob, jak může být[ENTER]Černá hmota zneutralizována.
 3869	Všechny síly v přírodě mají svůj protějšek -[ENTER]světlo a tma, oheň a voda, dobro a zlo. Dokonce i[ENTER]Černá hmota má svůj protějšek, něco, co je[ENTER]schopno ji neutralizovat: Čisté světlo!
 3870	Abys vyrobil Čisté světlo musíš rozpustit[ENTER]Fragmenty energie ve vodě Mong. Mohl bys[ENTER]shromáždit 50 lahví vody Mong a také 100[ENTER]Fragmentů energie a to vše donést Yu-Hwanovi?[ENTER]Díky.
-3871	Považuj to za splněné!
+3871	Hned se do toho pustím.
 3872	Shromáždi 50 lahví vody Mong a 100 Fragmentů[ENTER]energie a dones je Yu-Hwanovi.
 3873	Čisté světlo
 3874	Shromáždi 50 lahví vody Mong a 100 Fragmentů[ENTER]energie a dones je Yu-Hwanovi.
 3875	Uff, Yon-I-Walker už mě varoval, že bys mohl[ENTER]dorazit. Dobrá, dám se do práce. Proč si mezitím[ENTER]neodpočineš?
 3876	Uff, Yon-I-Walker už mě varoval, že bys mohl[ENTER]dorazit. Rád bych se dal do práce, ale nemáš[ENTER]dostatek materiálů, abych mohl vyrobit Čisté[ENTER]světlo. Pokračuj v jejich shromažďování.
 3877	Máš dostatek vody Mong a Fragmentů energie. Dones[ENTER]je Yu-Hwanovi.
-3878	Běž za Yu-Hwanem
+3878	Jdi za Yu-Hwanem.
 3879	Doruč Čisté světlo
 3880	Yu-Hwan vyrobil Čisté světlo. Jdi za ním.
 3881	Tady jsi! Přesně v ten správný čas. Čisté světlo[ENTER]se právě dokončuje. Ohlas tu novinu Yak-Hwanovi.
@@ -3955,7 +3955,7 @@
 3955	Ty jsi ještě nebyl u Yon-I-Walkera? Jak tedy[ENTER]chceš porazit Razadora? Jdi! Na co ještě čekáš?
 3956	Ano, je to pravda. Razador je zpět - a ještě[ENTER]silnější, než kdykoliv předtím. Máme pouze jednu[ENTER]možnost, jak zastavit Přisluhovače temnot v[ENTER]jejich plánu...
 3957	Razador si neoddychne, dokud nedokončí jeho úkol[ENTER]a neosvobodí červeného draka. Abychom tomu[ENTER]zabránili, budeme muset draka vypudit.
-3958	Das Element des Rotdrachen ist das Feuer und Feuer bekämpft man am Besten mit Feuer Jeder Flammendämon trägt einen Magmakern in sich Beschaffe mir jeweils fünf Kerne der folgenden Monster Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral und Glut Flammenfürst
+3958	Elementem červeného draka je oheň - a proti ohni[ENTER]se nejlépe bojuje - zase ohněm! Každý démon[ENTER]Žhavého plamene nosí Magmový prsten kolem svého[ENTER]srdce. Přines mi pět těchto Magmových prstenů!
 3959	Beschaffe die Magmakerne der Flammendämonen
 3960	Beschaffe jeweils fünf Magmakerne dieser Gegner Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral Glut Flammenfürst Kehre damit zu Yon I Walker zurück
 3961	Oh ja du hast schon einige gefunden Bringe noch das sollte dann reichen
@@ -4003,7 +4003,7 @@
 4003	V Pevnosti červeného draka poraz Razadora, vládce[ENTER]ohně.
 4004	Razador byl tentokrát pro tebe příliš velké[ENTER]sousto? Tomu mohu sotva uvěřit! Dokázal jsi to[ENTER]jednou - dokážeš to nyní také!
 4005	Razador byl poražen. Hlas se zpět u Yak-Hwana.
-4006	Ich wusste du würdest es schaffen Großartig Nun werden wir alles für die Verbannung des Rotdrachen vorbereiten Ich lasse dich rufen sobald wir bereit sind
+4006	Věděl jsem, že to dokážeš! Zahájím teď přípravy[ENTER]na vypuzovací rituál. Jakmile budeme připraveni,[ENTER]pošlu pro tebe.
 4007	Verbannung des Rotdrachen
 4008	Je čas. Vše je připraveno na vypuzení červeného[ENTER]draka.
 4009	Meine Männer haben bereits bereits zwei Bannkreise aufgestellt Deine Aufgabe ist es nun sie zu entzünden Wirf den Bannbeutel auf die Kreise und sie werden sich entflammen Das wird die Verbannung des Rotdrachen vollziehen
@@ -4086,7 +4086,7 @@
 4086	Každé království se pokouší o to, překonat[ENTER]neklid, který se nad ním rozprostírá od té doby,[ENTER]co sem pronikly kameny Metin. Všichni si přejí[ENTER]znovu sjednocený kontinent.[ENTER]I ty musíš tvrdě pracovat na sjednocení[ENTER]kontinentu! Je důležité, abys to měl vždy na[ENTER]vědomí.
 4087	Pověřím tě prvním úkolem![ENTER]Uklidni se, jedná se o opravdu lehký úkol...[ENTER]V nejbližší vesnici žije hudebník jménem Yu-Hwan.[ENTER]Lidé si myslí, že opustil armádu, aby se mohl[ENTER]stát hudebníkem. Ale ve skutečnosti to je špión.[ENTER]Má jeden dokument, který od něj potřebuji. Dones[ENTER]mi ho. Nezapomeň na to, že to je tajné poslání!
 4088	Stiskni klávesu M, aby ses dozvěděl, jak se[ENTER]dostaneš do nejbližší vesnice na mapě. Jdi přes[ENTER]Warpový portál s názvem vesnice.[ENTER]Pospěš si![ENTER]Hudebník Yu-Hwan je vysoký chlápek s hudebním[ENTER]instrumentem.
-4089	Zabít šedé silné vlky
+4089	Zabít šedé silné vlky:
 4090	Velitel má pro tebe nový úkol. Běž k němu.
 4091	Opravdu chceš tento úkol vzdát?
 4092	Jak´s to jenom dokázal? Doufám, že jsi[ENTER]nepodváděl! Ať je tomu jak chce, pojd',[ENTER]pokročíme.
@@ -4149,7 +4149,7 @@
 4149	Nalezl jsi dopis.[ENTER]Vezmi ho k Veliteli.
 4150	Našel jsi dopis, možná to je právě ten důkaz,[ENTER]který Velitel hledá. Vezmi dopis k Veliteli.
 4151	Máš nějaké důkazy? Dopis? Ukaž...[ENTER]To by mohlo jako důkaz stačit, díky tomu můžeme[ENTER]zjistit, kdo je tím špiónem. Díky tobě by se nám[ENTER]mohlo podařit překonat tuhle krizi. Dobrá práce![ENTER]Chvíli si odpočiň. Vezmi si tohle na znamení mojí[ENTER]vděčnosti.
-4152	První cvičení:
+4152	První cvičení
 4153	Co děláš?
 4154	První cvičení:
 4155	Zabij 9 divokých psů. Můžeš je nalézt před[ENTER]branami města.
@@ -4181,7 +4181,7 @@
 4181	Zničil jsi kámen Metin? Díky! Vesnice je pro[ENTER]tentokrát zachráněna! Odkud vůbec pocházejí tyhle[ENTER]kameny Metin?[ENTER]Neexistují o nich skoro žádné informace a[ENTER]způsobují tak vážné problémy.[ENTER]Slyšel jsem že učenec Uriel provádí výzkum kamenů[ENTER]Metin, ale nevím, co doposud objevil.[ENTER]Odvedl jsi dobrou práci.
 4182	Odměna:
 4183	Obdržíš 3 300 000 bodů zkušeností.[ENTER]Obdržíš 270 000 Yangů.[ENTER]Obdržíš Knihu mistra.
-4184	Obdržíš %s.
+4184	Obdržel jsi: %s
 4185	Zkáza, kterou způsobují kameny Metin je stále[ENTER]horší. V zemi je utrpení. Kameny Metin musí být[ENTER]zničeny! Promluv si s velitelem.
 4186	Zkáza, kterou způsobují kameny Metin je stále[ENTER]horší. V zemi je utrpení. Kameny Metin musí být[ENTER]zničeny! Promluv si s velitelem.
 4187	Slyšel jsem, že jsi těžce pracoval. Lidé o tvé[ENTER]práci mluví dobře. A to jen díky mně, protože[ENTER]jsem tě poslal na správné místo! Cha, cha![ENTER]Nerozčiluj se, dělám si jen legraci! Vím, že jsi[ENTER]velice schopný.[ENTER][ENTER]Bohužel kamenů metin stále přibývá. To nám[ENTER]přináší vážné problémy.
@@ -4766,7 +4766,7 @@
 4766	Následuj blikající bod na minimapě.
 4767	(Zbývá %s : %s, %s : %s)
 4768	Das Item bekommst du in kills
-4769	%s: %d kusů
+4769	%s : %d kusů
 4770	Dobrodružství bude pokračovat jakmile dosáhneš[ENTER]úrovně 91.
 4771	Zpráva o situaci
 4772	Porozhlédni se po ostrově a pak svá zjištění[ENTER]nahlas admirálovi Angmurovi.
@@ -4793,7 +4793,7 @@
 4793	Jedno z následujících stvoření má dopis Lee[ENTER]Chunga: Válečník Gnollů, Lučištník Gnollů,[ENTER]Obránce Gnollů, Kouzelník Gnollů, Generál Gnollů,[ENTER]Lord Gnollů nebo Vrchní strážný Gnollů.
 4794	Pokud chceme zastavit Sung Mahi, potřebujeme ten[ENTER]dopis! Zloději pocházeli z kmene Gnollů!
 4795	Našel jsi dopis.
-4796	Dones jej admirálovi Angmurovi.
+4796	Dones jej admirálovi Angmurovi!
 4797	Promluv si s admirálem Angmurem.
 4798	Jsi zpět a máš dopis! Já věděl, že se na tebe[ENTER]mohu spolehnout. Pojďme si ho přečíst.
 4799	Zdravím tě, Angmure![ENTER]Můj příteli, v prázdném táboře Sung Mahi jsme na[ENTER]něco narazili: Přisluhovači temnot povolávali své[ENTER]pomocníky na ostrov pomocí tajných zpráv. Jedna[ENTER]taková zpráva byla poslána i kmeni Gnollů. Pokud[ENTER]ji budeš schopen zachytit, bude to významný krok[ENTER]v boji proti démonům. Na pomoc ti přijde %s, jenž[ENTER]dokázal svou odvahu a sílu v těchto temných[ENTER]časech.[ENTER]L.Ch.
@@ -4821,7 +4821,7 @@
 4821	Našel jsi druhou stránku. Dones ji admirálovi[ENTER]Angmurovi.
 4822	Perfektní, teď můžeme zprávu rozluštit: Hmmm, zdá[ENTER]se, že mluví o dracích, kteří spí hluboko v samém[ENTER]srdci světa. Píše se tu o postupu, který je může[ENTER]vzbudit a přivést je k zuřivosti.[ENTER]Ach ne... to vůbec nezní dobře...
 4823	Zdá se, že Mantikory a Gang Červených zlodějů[ENTER]obdrželi dopisy také. Zjistím o tom více a pak se[ENTER]ti ozvu.
-4824	Admirál Angmur má pro tebe nový úkol.
+4824	Hledá tě admirál Angmur.
 4825	Mantikory
 4826	Admirál Angmur má pro tebe nový úkol.
 4827	Výborně, jdi tady! Naše informace o Mantikorách[ENTER]jsou poněkud zastaralé. Potřebujeme zjistit, jak[ENTER]jsou jejich vojska nyní silná.
@@ -4836,7 +4836,7 @@
 4836	Dokončil jsi úkol? Výborně. Tak mi podej hlášení[ENTER]o aktuální situaci.
 4837	Mantikorské síly nejsou zase tak velké.[ENTER]Převyšujeme je počtem. Ale jejich válečníci jsou[ENTER]výborně vycvičeni a jsou opravdu odolní.[ENTER]Dovolil bych si doporučit zesílit obrannou zeď[ENTER]kolem pevnosti. Ve stavu, v jakém je teď, by[ENTER]nápor Mantikor nevydržela.
 4838	Fajn, to je informace, kterou jsme potřebovali.[ENTER]Budu se řídit tvým doporučením a nechám zesílit[ENTER]obrannou zeď. Prosím, vezmi si tuto odměnu.
-4839	Promluv si s admirálem Angmurem.
+4839	Promluv si s admirálem Angmurem
 4840	Mantikorské síly
 4841	Poraz 50 Válečníků Mantikor, 40 Vojáků Mantikor,[ENTER]20 Popravčích Mantikor a také 10x Generála Kora.
 4842	Zesílení palisád I
@@ -4856,7 +4856,7 @@
 4856	Admirál Angmur potřebuje tvou pomoc. Zajdi za ním[ENTER]zjistit, co je to tentokrát.
 4857	Abychom mohli dokončit stavbu, potřebujeme Jílové[ENTER]cihly. Mantikory je považují za zlato. Myslím, že[ENTER]100 cihel by to mohlo spravit. Samozřejmě že za[ENTER]svou pomoc budeš bohatě odměněn.
 4858	Dopis Mantikor
-4859	Admirál Angmur má pro tebe nový úkol.
+4859	Hledá tě admirál Angmur.
 4860	Tak, je zase čas obrátit naši pozornost na to, co[ENTER]dělají Přisluhovači temnot. Potřebuje přinést[ENTER]dopis, který poslali Mantikorám a Gangu Červených[ENTER]zlodějů![ENTER]Vydej se nejprve k Mantikorám.
 4861	Dobře.
 4862	Generál Kor se vydal s dopisem na cestu, aby jej[ENTER]předal Martyaxwarovi. Musíš tuhle předávku[ENTER]znemožnit!
@@ -4900,7 +4900,7 @@
 4900	Mantikorský dopis dekódován.
 4901	Hledá tě Yon-I-Walker. Zajdi za ním a zjisti, zda[ENTER]již byl schopen dekryptovat dopis či nikoliv.
 4902	*mhmhmmhm* .. ano! Tady jsi! Díky tvé pomoci jsem[ENTER]byl schopen dekryptovat velkou část zprávy. Ovšem[ENTER]nedaří se mi s poslední částí. Obávám se, že budu[ENTER]tvou pomoc potřebovat znovu. Urgentně potřebuji[ENTER]Carapaxský prášek. Najdeš jej u Generála Humra[ENTER]nebo Královského kraba.
-4903	Carapaxský prášek
+4903	Carapaxský prášek?
 4904	Ano, pouze členové kmene Crustacean jej mají.[ENTER]Dokonce i malá hrstka tohoto prachu je smrtelná![ENTER]Tři dózičky by měly být dost. Hodně štěstí.
 4905	Dobře, ihned se vydám na cestu.
 4906	Carapaxský prášek
@@ -5034,7 +5034,7 @@
 5034	Esence mulénia
 5035	Chce s tebou mluvit Octavio.
 5036	No, přemýšlel jsem o tom celou noc. Sice tím[ENTER]hodně riskuji, ale jsem si jist, že udělám[ENTER]správnou věc.[ENTER]Ano, pomohu ti.
-5037	Výborně!
+5037	Skvělé!
 5038	Bohužel ale momentálně nemám žádné přísady.[ENTER]Myslíš, že bys je mohl pro mě obstarat? Vyrobím[ENTER]ti pak esenci.
 5039	Samozřejmě. Co potřebuješ?
 5040	Potřebuji Kořen gango, Houby tue a Rododendron. A[ENTER]potřebuji 200 kusů od každého.
@@ -5341,7 +5341,7 @@
 5341	Admirál Angmur potřebuje tvou pomoc!
 5342	Fajn, tady jsi. Skeletos, velitel Brigády černé[ENTER]smrti, přežil a zaútočil na mé muže v okamžiku,[ENTER]kdy se připravovali na útok na jeho základnu.[ENTER]Nikdo nepřežil.
 5343	Již jsi ho jednou porazil, tak prosím pomoz mým[ENTER]lidem na útesu Gautama! Najdi Skeletose a zabij[ENTER]ho. Potom přepadni jeho základnu a zabij[ENTER]služebnici chrámu Yah-Ki.
-5344	Rozumím.
+5344	Rozumím!
 5345	Zabij Yah-Ki
 5346	Zabij služebnici chrámu Yah-Ki a tím ji znemožni[ENTER]vyvolat armádu mrtvých.
 5347	Rozhodující den nadešel. Pokud selžeme, tak náš[ENTER]svět bude zničen. Ale pokud zvítězíme, bude se o[ENTER]našich skutcích vyprávět ještě stovky let. Zastav[ENTER]služebníky temnoty. Zabij služku chrám Yah-Ki!
@@ -5593,7 +5593,7 @@
 5593	Ach ne, udělal jsem chybu. Omlouvám se, ale body[ENTER]tvého krumpáče se snížily.
 5594	Přejete si otevřít truhlu pomocí klíče?
 5595	Ano, otevřít truhlu
-5596	Ne, teď ne.
+5596	Ne, nyní ne
 5597	Potřebujete Rubínový klíč nebo Diamantový klíč,[ENTER]abyste otevřeli Tajemnou rubínovou truhlu!
 5598	Ahoj!
 5599	Stařec:
@@ -5624,7 +5624,7 @@
 5624	Nesu ponožky!
 5625	Přines mi alespoň 5 ponožek a dostaneš odměnu.[ENTER]Ufff, závan plesnivých ponožek je příšerný! Vrať[ENTER]se zpět, až jich budeš mít dostatek.[ENTER]Veselé Vánoce!
 5626	Ho ho ho, nasbíral jsi dostatek ponožek.[ENTER]Tak se na ně podívejme.[ENTER]UFFFFF, TO JE ALE SMRAD![ENTER]Ale jsou to určitě ty správné ponožky.[ENTER]Veselé Vánoce!
-5627	- Sobí mládě
+5627	Sobí mládě
 5628	Dnes jsi již ode mne Pečeť sobího mláděte dostal.[ENTER]Obávám se, že ten maličký potřebuje teď[ENTER]odpočívat. V plné síle bude zase až zítra. Pokud[ENTER]se ti nebude chtít čekat tak dlouho, tak se[ENTER]podívej, co se schovává za točící se minci vlevo[ENTER]dole. Slyšel jsem, že tam čeká další Sobí mládě.[ENTER]Ovšem bude mě těšit, když tě znovu uvidím zítra!
 5629	Dnes si mi již přinesl ponožky. Pamatuj, že jich[ENTER]jde každých 24 hodin odevzdat jen určité[ENTER]množství.
 5630	Wonda-Rim:
@@ -5678,7 +5678,7 @@
 5678	Obdržíš 40 000 bodů zkušeností.[ENTER]Obdržíš 10 000 Yangů.[ENTER]Obdržíš knihu schopností.
 5679	Yang-Shin:
 5680	Yang-Shin:
-5681	Strážce:
+5681	Strážce návse
 5682	Strážce návse má pro tebe úkol. Najdi ho a[ENTER]zjisti, oč se jedná.
 5683	Nemocný bratr
 5684	Nemocný strážný
@@ -5737,7 +5737,7 @@
 5737	Zběh
 5738	Yang-Shin má potíže s nalezením dobrého místa na[ENTER]lov. Zajdi za ním a zeptej se ho, jak mu můžeš[ENTER]pomoci.
 5739	Od té doby, co se objevily kameny Metin, už nic[ENTER]není jak bývalo. Na spoustě míst je už dokonce i[ENTER]nemožné něco ulovit, protože zvířata jsou velmi[ENTER]plachá. Poutník Nakajima žije v přírodě, myslím,[ENTER]že by mohl mít nějakou radu pro úspěšný lov. Mohl[ENTER]bys ho najít a zeptat se?
-5740	Nakajima:
+5740	Nakajima
 5741	Takže ty bys rád znal dobré místo na lov? Neuraž[ENTER]se, ale pokud já mám udělat něco pro tebe, musíš[ENTER]i ty udělat něco pro mne.
 5742	No, víš... já tu nežiji dobrovolně. Musím se[ENTER]skrývat, protože jsem utekl před vojenskou[ENTER]povinností. Moc si přeji, aby moje milovaná žena[ENTER]Ah-Yu věděla, že jsem stále živ. Mohl bys jí[ENTER]donést ode mne zprávu? Ale nezapomeň, že je to[ENTER]jen pro Ah-Yu! Ona ti na oplátku řekne, kde jsme[ENTER]se prvně políbili - tam se s ní chci opět potkat[ENTER]a také je to místo pro skvělý lov!
 5743	Nakajima:
@@ -5803,7 +5803,7 @@
 5803	S potěšením
 5804	To není moje věc
 5805	Nemám čas na převýchovu nezbedného děcka. Musíš[ENTER]si ho chytit sám. I když pochybuji, že to[ENTER]dokážeš...
-5806	Taurean:
+5806	Taurean
 5807	Rodinné dědictví Yonaha, vázy z Seladonského[ENTER]porcelánu, jsou rozbité a Yonah si myslí, že to[ENTER]udělal Taurean. Jdi za Taureanem a zjisti, jak to[ENTER]bylo.
 5808	Taurean je v %s.
 5809	Taurean:
@@ -5812,7 +5812,7 @@
 5812	Vázy? Yonah? Vůbec nevím, o čem mluvíš!
 5813	No tak mi prosímtě vysvětli, proč jsou tři z nich[ENTER]rozbité.
 5814	Přísahám, že jsem dnes nebyl nikde poblíž těch[ENTER]váz a také jsem ani neviděl Yonaha. Celý den jsem[ENTER]bojoval s Harang. Dokonce mě zamknula ve stodole![ENTER]Jdi a zeptej se jí, pokud mi nevěříš!
-5815	Harang:
+5815	Harang
 5816	Taurean tvrdí, že je nevinný. Hrál si s Harang[ENTER]celý den a nemohl ty vázy rozbít. Dojdi za Harang[ENTER]a zeptej se jí, zda je to pravda.
 5817	Harang, viděla jsi někdy teď Taureana?
 5818	Harang:
@@ -5876,7 +5876,7 @@
 5876	No, ale už tu nebyl pár dnů. Mohl bys za ním[ENTER]zajít a zeptat se ho, co se děje?
 5877	Octavio je v %s.
 5878	Vyrazím hledat rybáře!
-5879	Rybář:
+5879	Rybář
 5880	Dny bez potíží na moři jsou ty tam. Rybáři mizí[ENTER]každý den, je to hrozné! Když kdysi kameny Metin[ENTER]spadly do moře, tak změnily mořské živočichy na[ENTER]vraždící bestie a rybolov se stal nebezpečným.
 5881	Naše oštěpy již velrybám nezpůsobují žádná[ENTER]zranění. Jejich kůže je tvrdší než kůže zlobrů!
 5882	Možná Yonah ví, co dělat. Chodil rybařit velmi[ENTER]často a lovil i velryby.
@@ -5889,14 +5889,14 @@
 5889	Yonah:
 5890	Již jsem slyšel, co se stalo s velrybami. To je[ENTER]špatná věc pro rybáře. I když se odváží na moře,[ENTER]jejich oštepy velrybám neublíží. Když jsem[ENTER]pracoval na velrybářském člunu, měli jsme na[ENTER]velryby speciální zbraně. Ty byly schopné[ENTER]prorazit jakoukoliv kůži....
 5891	Je to speciální postup, jak vytvrdit špičky[ENTER]oštěpů na velryby. Jediný, kdo umí ty oštěpy[ENTER]vyrobit, je kovář.
-5892	Běž za kovářem
+5892	Jdi za kovářem.
 5893	Yonah:
 5894	Yonah doporučil používat velmi silné a ostré[ENTER]oštěpy pro lov velryb. Zajdi za kovářem a zeptej[ENTER]se ho, zda by je uměl vyrobit.
 5895	Kovář
 5896	Ano, slyšel jsem o těch oštěpech a umím je[ENTER]vyrobit. Ale aby ty oštěpy měly potřebné[ENTER]vlastnosti, potřebuji diamantový kámen.
 5897	Potřebuji:
 5898	Postup:
-5899	Kovář
+5899	Kovář:
 5900	Diamantový kámen
 5901	Podívej. Potřebuji krumpáč, abych mohl těžit[ENTER]kámen. Jen nemohu ten svůj starý nějak najít,[ENTER]myslíš, že by mi Deokbae mohl udělat nový?
 5902	Potřebuješ ještě %s x Diamantový kámen
@@ -6037,7 +6037,7 @@
 6037	Poskytnu ti lektvary!
 6038	Obchodnice:
 6039	Čerstvé dodávky
-6040	Obchodnice:
+6040	Obchodnice se smíšeným zbožím
 6041	Ano, získávat čerstvé zásoby je teď velmi[ENTER]obtížné. Obchodní cesty jsou poměrně nebezpečné a[ENTER]bandité a divoké bestie tam hlídkují. Obchodní[ENTER]cestující, od kterého zásoby dostávám, nemá proti[ENTER]tygrům šanci.
 6042	Možná velitel a jeho vojáci mohou pomoci. Prosím,[ENTER]zajdi za ním a zeptej se ho, zda by mohl poslat[ENTER]vojáky, aby ochránili obchodníky.
 6043	Zajdi za obchodnicí se smíšeným zbožím a zjisti,[ENTER]proč se opozdila s dodávkou čerstvých lektvarů.
@@ -6142,7 +6142,7 @@
 6142	Obdržíš %s Yangů.
 6143	Obvykle mě trochu znepokojuješ s tím, jak do[ENTER]všeho strkáš nos. Nemám žádnou dceru a nemám dost[ENTER]Yangů, abych jí vystrojil svatbu.
 6144	Chtěl bys zkusit pár lžic mé žabí polévky? Udělal[ENTER]jsem ji podle starého receptu.
-6145	Heuk-Young:
+6145	Heuk-Young
 6146	Deník legendy
 6147	Našel jsem ostatky těchto válečníků. Nevím,[ENTER]jestli jsou to ty, co Heuk-Young hledá, ale jsem[ENTER]si jist, že ho budou zajímat.
 6148	Tady zemřel nejeden sura. Viděl jsem jejich[ENTER]ostatky. Zajimalo by mne, jestli je mezi nimi i[ENTER]onen legendární válečník? Měl bych to říct[ENTER]Heuk-Youngovi.
@@ -6162,7 +6162,7 @@
 6162	Mrtvý Sura... mohl by to být on, anebo prostě jen[ENTER]někdo z jeho následovníků. Potřebujeme více[ENTER]důkazů, abychom si byli jistí. Hledej vodítka,[ENTER]která by nám řekla, kdo to byl. Bižuterii,[ENTER]poznámky, nebo něco takového.
 6163	Kostra Sury a stránka z knihy? Nech mě se na ni[ENTER]podívat... hmmm, Možná si našel Akumovy ostatky.[ENTER]Ale potřebujeme více důkazů. Zkus prosím najít[ENTER]více těch stránek.
 6164	Našel jsem nějaké záznamy, ale nejsem si jist,[ENTER]jestli tu legendární Sura byl či nikoliv.[ENTER]Potřebuji více informací.
-6165	Dobře
+6165	Dobrá.
 6166	Ledová příšera
 6167	Na hraně zoufalství
 6168	Temný teror
@@ -6170,10 +6170,10 @@
 6170	Osud válečníka
 6171	Ne, nezajímá mne to
 6172	Hm, mohu rozluštit pouze části vět. Říkají něco o[ENTER]uhlazeném životě a vášni pro dobrodružství...
-6173	Text, napsaný na té stránce, je špatně čitelný a[ENTER]slabý - jako by byl napsán buď velmi zesláblou,[ENTER]nebo velmi starou osobou: ... ledové příšery.[ENTER]Dokonce ani mé schopnosti Sury mi nepomáhají je[ENTER]porazit. Některé z nich se stále toulají po[ENTER]jeskyních a musím být velmi opatrný, aby mne[ENTER]nenašli. Až dosud mi nabízeli ochranu, ale nyní[ENTER]... V tomto místě text mizí...
-6174	Tato stránka je také velmi poničená. Díky datumu[ENTER]v horním rohu můžeš rozpoznat, že je to nějaký[ENTER]druh deníku: Není to poprvé co si přeji, abych[ENTER]se choval jinak, když jsem vstoupil do Jeskyně.[ENTER]Byl jsem na sebe tak hrdý a pyšný! Ale všechny[ENTER]tyhle věci mě dovedou jen k mé smrti... Poslední[ENTER]slovo je lehce přeškrtnuto.
-6175	Stránka je velmi poškozena, jsou z ní utrhány[ENTER]kousky papíru. Můžete rozluštit pouze část textu:[ENTER]... Císařský soud... když mne učitelé učili vše,[ENTER]co jsem tak zoufale chtěl znát... lehce otevřít[ENTER]portál, ale...smrt a teror ve tmě... Velký[ENTER]odtržený kus Vám znemožňuje číst dále.
-6176	Na této stránce vidíte skicu. Je to ženská tvář.[ENTER]Pod ní jsou nějaká slova v jazyce, kterému[ENTER]rozumíte. Bohužel, písmo je vybledlé a[ENTER]roztřesené: Smrt vystrčila drápy - to jsem[ENTER]zjistil včera. Stačil jeden pohled na příšeru,[ENTER]než mne posedl strach a já musel rychle zpět.[ENTER]Moje milá Sunmi, kdybych to tak byl býval věděl![ENTER]Kdybych o této nevyslovitelné hrůze věděl, nikdy[ENTER]bych sem nevkročil!
+6173	Text, napsaný na té stránce, je špatně čitelný a[ENTER]slabý - jako by byl napsán buď velmi zesláblou,[ENTER]nebo velmi starou osobou: "... ledové příšery.[ENTER]Dokonce ani mé schopnosti Sury mi nepomáhají je[ENTER]porazit. Některé z nich se stále toulají po[ENTER]jeskyních a musím být velmi opatrný, aby mne[ENTER]nenašli. Až dosud mi nabízeli ochranu, ale nyní[ENTER]..." V tomto místě text mizí...
+6174	Tato stránka je také velmi poničená. Díky datumu[ENTER]v horním rohu můžeš rozpoznat, že je to nějaký[ENTER]druh deníku: "Není to poprvé co si přeji, abych[ENTER]se choval jinak, když jsem vstoupil do Jeskyně.[ENTER]Byl jsem na sebe tak hrdý a pyšný! Ale všechny[ENTER]tyhle věci mě dovedou jen k mé smrti..." Poslední[ENTER]slovo je lehce přeškrtnuto.
+6175	Stránka je velmi poškozena, jsou z ní utrhány[ENTER]kousky papíru. Můžete rozluštit pouze část textu:[ENTER]"... Císařský soud... když mne učitelé učili vše,[ENTER]co jsem tak zoufale chtěl znát... lehce otevřít[ENTER]portál, ale...smrt a teror ve tmě..." Velký[ENTER]odtržený kus Vám znemožňuje číst dále.
+6176	Na této stránce vidíte skicu. Je to ženská tvář.[ENTER]Pod ní jsou nějaká slova v jazyce, kterému[ENTER]rozumíte. Bohužel, písmo je vybledlé a[ENTER]roztřesené: "Smrt vystrčila drápy - to jsem[ENTER]zjistil včera. Stačil jeden pohled na příšeru,[ENTER]než mne posedl strach a já musel rychle zpět.[ENTER]Moje milá Sunmi, kdybych to tak byl býval věděl![ENTER]Kdybych o této nevyslovitelné hrůze věděl, nikdy[ENTER]bych sem nevkročil!"
 6177	Během vlády dynastie Hee-Se žil legendární Sura,[ENTER]nazývaný Akuma. Byl tak zručný v bitvách, že[ENTER]téměř neměl protivníka, který by jej mohl[ENTER]porazit. Jednoho dne našel nějaké poznámky o[ENTER]tajemném místě, které bylo dlouho zapečetěno a[ENTER]rozhodl se jej nalézt a prozkoumat. Dokonce[ENTER]zjistil, jak nalézt portál a použít ho. Své lásce[ENTER]Sunmi slíbil, že se brzy vrátí, jakmile dokončí[ENTER]svou výpravu... ale nikdy se nevrátil.
 6178	Písmo vypadá opravdu archaicky. Je velmi[ENTER]roztřesené a slabé, jako kdyby autor již neměl[ENTER]dostatek síly...
 6179	To nedává smysl. Potřebujeme více stránek.
@@ -6299,7 +6299,7 @@
 6299	Také obdržíš 120 000 000 bodů zkušeností.
 6300	Otevřít obchod
 6301	Musíte ulovit:
-6302	Obchodnice:
+6302	Obchodnice se smíšeným zbožím
 6303	Najdi obchodníka se zbraněmi a zeptej se ho, proč[ENTER]již nezpívá pod okny obchodnice smíšeným zbožím.
 6304	Nasbírej šeříky
 6305	Ach, krásná větvička šeříku.
@@ -6533,19 +6533,19 @@
 6533	 - Ohnivý fénix
 6534	- Sobí mládě
 6535	Momentálně nemůžeš vyvolat své zvíře.
-6536	 - Ledový fénix
-6537	 - Baby-Azrael
-6538	 - Leonidas
-6539	 - Khan
-6540	 - Porky
-6541	 - Rufus
-6542	 - Bambi
-6543	 - Knuud
-6544	 - Bao Bao
-6545	 - Mini-Executor
-6546	 - Mini-Executor (zlatý)
-6547	 - Boney
-6548	 - Nefritový fénix
+6536	- Ledový fénix
+6537	- Baby-Azrael
+6538	- Leonidas
+6539	- Khan
+6540	- Porky
+6541	- Rufus
+6542	- Bambi
+6543	- Knuud
+6544	- Bao Bao
+6545	- Mini-Executor
+6546	- Mini-Executor (zlatý)
+6547	- Boney
+6548	- Nefritový fénix
 6549	Zabij během 30 minut 20 divokých lukostřelců a[ENTER]oznam výsledek pacholkovi.
 6550	Chtěl bych jezdit na koni.
 6551	Zlepšení statutu pony-úkolem
@@ -6605,7 +6605,7 @@
 6605	Jezdecký trénink (1)
 6606	Běž k cílovému bodu (1).
 6607	Teleportace k tréninkové mapě.
-6608	DĚLEJ
+6608	Dělej!
 6609	Opravdu to chceš vzdát?
 6610	Cílový bod (1) dosažen!
 6611	Cílový bod (9) dosažen!
@@ -6748,7 +6748,7 @@
 6748	Ano, zrušit.
 6749	Úkol %s zrušen.
 6750	(Zbývá %s : %s, %s : %s)
-6751	questscroll5.kill_race:%s]
+6751	questscroll5.kill_race:%s
 6752	(Zbývá %s : %s, %s : %s)
 6753	questscroll5.kill_race:%s]
 6754	Dokončil jsi úkol a zasloužil sis odměnu!
@@ -6797,7 +6797,7 @@
 6797	je resetováno na 1.
 6798	Zbývající body budou vráceny jako tréninkové body.
 6799	Přejete si pokračovat?
-6800	Nemáš dostatečnou úroveň.
+6800	Nemáš dostatečnou úroveň!
 6801	Nemůžeš jezdit, když jsi v proměně!
 6802	Již jezdíte! Pokud chcete změnit zvíře, musíte[ENTER]nejprve sesednout.
 6803	Musíte nejprve odevzdat svého koně, když si[ENTER]chcete přivolat jiné zvíře.
@@ -6899,7 +6899,7 @@
 6899	Výcvik nauky o léčení
 6900	V nauce o léčení se vyučuje omráčení nepřátel[ENTER]pomocí ran proudem. Navíc si účastníci osvojí[ENTER]léčení a posílení členů skupiny.
 6901	Zvolil jsi nauku o léčení.
-6902	Učitel dračí moci:
+6902	Učitel dračí moci
 6903	Učitel léčby
 6904	Resetovat schopnosti
 6905	Až si to rozmyslíš, přijď znovu.
@@ -6929,7 +6929,7 @@
 6929	Velitel mě žádá o dekódování téhle tajemné[ENTER]zprávy? No dobře. Mám rád výzvy. Polož ji tady.[ENTER]Takže.... no ale to je příšerné! Koukej! Napíši[ENTER]překlad přímo na ten papír a ty to dones veliteli[ENTER]tak rychle, jak jen to bude možné a pak se ke mě[ENTER]vrať. Pokud je pravda to, co se tam píše, tak[ENTER]jsme všichni ve velkém nebezpečí! Běž, běž!
 6930	Ty jsi ještě nebyl u velitele? Prosím! Musíš si[ENTER]pospíšit! Nemáme čas k lelkování, on si ten vzkaz[ENTER]musí přečíst co nejdříve!
 6931	Doruč Urielovu zprávu
-6932	Ten starý hlupák... je prosté děkuji příliš?[ENTER]No dobrá. Říkal, že ta informace je extrémně[ENTER]důležitá, tak ji raději veliteli ihned donesu.
+6932	Ten starý hlupák... je prosté "děkuji" příliš?[ENTER]No dobrá. Říkal, že ta informace je extrémně[ENTER]důležitá, tak ji raději veliteli ihned donesu.
 6933	Urielova zpráva
 6934	Ach ne! Pokud je pravda to, co se tu píše, pak ve[ENTER]třetím patře pavoučího bludiště přede pavučiny[ENTER]pavoučí démon - samotná pavoučí baronka! Podle[ENTER]toho nápisu potřebuješ speciální klíč, aby ses[ENTER]dostal do jejího skrytého doupěte. Zajdi za[ENTER]Urielem a přeptej se ho na ten klíč. A pak si[ENTER]shromáždi nějaké vojáky, vyraz do Pavoučího[ENTER]bludiště a vpadni do úkrytu té pavoučí baronky![ENTER]Na, tady máš další propustku.
 6935	Tato brána může být otevřena pouze pavoučím[ENTER]klíčem.
@@ -6962,7 +6962,7 @@
 6962	Ve třetím patře Pavoučího bludiště najdeš starý[ENTER]náhrobní kámen, na kterém je vyryt nápis. Opiš si[ENTER]jej a dones kopii veliteli.
 6963	Perfektní, našel jsi starý náhrobní kámen a opsal[ENTER]sis nápis! Vrať se k veliteli a ukaž mu opis.
 6964	Obchodnice:
-6965	Získej prázdné láhve
+6965	Sehnat prázdnou láhev.
 6966	To je dobré.[ENTER]Prázdnou láhev dostaneš u hrnčíře Yonaha.[ENTER]Moc ti děkuji.
 6967	Najdi hrnčíře Yonaha
 6968	Obchodnice se smíšeným zbožím potřebuje od[ENTER]hrnčíře prázdnou láhev na červený lektvar.
@@ -7123,7 +7123,7 @@
 7123	Uriel ti dal železnou rudu.
 7124	Octavio ti dal kůži.
 7125	Yohan ti dal uhlí.
-7126	Jít k Octaviovi
+7126	Běž za Octaviem.
 7127	Běž za Urielem.
 7128	Běž za Yonahem.
 7129	Ich brauche Eisenerz
@@ -7154,7 +7154,7 @@
 7154	Nemáš žádné uhlí. Hmm, žádné uhlí? Yonah ti[ENTER]nějaké dá.
 7155	Mám všechen materiál
 7156	Materiály pro kováře
-7157	Jdi za kovářem
+7157	Běž za kovářem.
 7158	Objednaná výzbroj
 7159	Ne, nemám čas.
 7160	Mám veškerý materiál. Tak teď rychle zpět ke[ENTER]kováři.
@@ -7190,7 +7190,7 @@
 7190	Soon ti dal cizokrajnou kuchařku. Dones ji[ENTER]Octaviovi.
 7191	Tady je ta kuchařka!
 7192	Jdi za obchodníkem se zbraněmi a zeptej se ho,[ENTER]kde můžeš získat rýžové buchty.
-7193	Rýžové buchty
+7193	Rýžové buchty?
 7194	Co víš o rýžových buchtách?
 7195	Obchodník se zbraněmi:
 7196	Cože? Rýžové buchty? To je nějaká nová zbraň?[ENTER][ENTER]Jo aha... ty myslíš jídlo. Proč jsi to neřekl[ENTER]hned? Měl bys raději zajít za Octaviem, ten ví o[ENTER]jídle naprosto vše.
@@ -7211,7 +7211,7 @@
 7211	Taurean vždy zlobí Yu-Rang. Potrestej ho a získej[ENTER]rýžové buchty.
 7212	Proč zlobíš Yu-Rang?
 7213	Co, koho že zlobím? Jo ty myslíš tu holčinu, co[ENTER]prodává rýžové buchty? No, tu jsem nechtěl[ENTER]zlobit, jen jsem se nudil a ona vypadala, že taky[ENTER]nemá co dělat. Tak jsem za ní párkrát zašel a[ENTER]chtěl si s ní hrát, ale ona se naštvala...holky[ENTER]jsou prostě divné. Myslím, že už za ní nikdy[ENTER]nepůjdu!
-7214	Zpátky k Yu-Rang
+7214	Zpět k Yu-Rang
 7215	Akceptovat
 7216	Rýžové buchty
 7217	Taurean již nebude víckrát Yu-rang obtěžovat.[ENTER]Vrať se k ní a vem si rýžové buchty.
@@ -7237,7 +7237,7 @@
 7237	Zlatá sekera
 7238	Pamatuješ na mého přítele Deokbae? Slíbil jsem mu[ENTER]vyrobit sekeru. Bohužel jsem chvilku nedával[ENTER]pozor a vojačka Bílé přísahy mi ji ukradla. Mohl[ENTER]bys mi jí prosím přinést zpět? Musí ji mít[ENTER]vojačka Bílé přísahy. Měl bys ji hned poznat,[ENTER]takových seker není mnoho. Dám ti za ni[ENTER]fantastickou odměnu!
 7239	Opravdu chceš tento úkol vzdát?
-7240	Kovář
+7240	Kovář:
 7241	Opravdu tu sekeru chci! Takže se zase uvidíme?[ENTER]Tak se měj.
 7242	Díky že mi ji chceš donést.[ENTER]Dej na sebe pozor. Ten klan dělá neplechu.
 7243	Díky že mi ji chceš donést.[ENTER]Dej na sebe pozor. Ten klan dělá pořádnou[ENTER]neplechu.
@@ -7283,7 +7283,7 @@
 7283	Můžu tě poprosit o laskavost?[ENTER]Můj bratr je už dlouho pryč a zatím se mi vůbec[ENTER]neozval.[ENTER]Pomalu si dělám starosti.[ENTER]Jestli toho po tobě nechci moc, mohl by ses vydat[ENTER]ho jít hledat?
 7284	Můj bratr chtěl navštívit hudebníka Yu-Hwana v[ENTER]sousední vesnici. Pokud za Yu-Hwanem zajdeš,[ENTER]jistě ti řekne nějaké novinky o mém bratrovi.[ENTER]Děkuji předem.
 7285	Vyřídím
-7286	Cheš ten úkol na vždy vzdát?
+7286	Chceš tento úkol navždy vzdát?
 7287	Děkuji.[ENTER]Prosím najdi mi ho.[ENTER]Dělám si velké starosti.[ENTER]Tak zatím.
 7288	Škoda, že mi nechceš pomoct.[ENTER]Tak zatím.
 7289	Chceš se vydat mi ho hledat?[ENTER]Moc ti děkuji, dělám si o něj velké starosti.[ENTER]Hodně štěstí.
@@ -7306,7 +7306,7 @@
 7306	Asi to není správná chvíle.[ENTER]Přijd' později znovu.
 7307	Když nechceš, tak se nedá nic dělat.[ENTER]Tak běž...
 7308	Opravdu nám nechceš pomoct?
-7309	Jdi za Ariyoung
+7309	Běž za Ariyoung.
 7310	Materiál na výrobu zbraní.
 7311	Jdi za Ah-Yu.
 7312	Obchodník se zbraněmi potřebuje tvou pomoc.[ENTER]Železnou rudu dostaneš od Uriela a plátno od[ENTER]Ariyoung.
@@ -7344,7 +7344,7 @@
 7344	Hledej materiál
 7345	Vrať se ke strážci města
 7346	Eun-Jung z klanu Bílé přísahy
-7347	Zabil jsi Eun-Jung z klanu Bílé přísahy. Vrať se[ENTER]ke strážci města a řekni mu o tom.
+7347	Zabil jsi Eun-Jung z klanu Bílé přísahy.[ENTER]Vrať se ke Strážci a řekni mu o tom.
 7348	Jsi skvělý![ENTER]Jsi dokonce lepší, než jsem očekával.[ENTER]My jsme jsme proti těm náčelnicím klanu Bílé[ENTER]přísahy nic nesvedli. A tys je zlikvidoval úplně[ENTER]lehce.
 7349	o je neuvěřitelné.[ENTER]Měl bys dostat přiměřenou odměnu.[ENTER]Prosím vezmi si tohle a služ i nadále klidu v[ENTER]naší vesnici.
 7350	Obdržíš 150 000 bodů zkušeností.[ENTER]Obdržíš 25 000 Yangů.[ENTER]Obdržíš zlatý náhrdelník+4.
@@ -7365,7 +7365,7 @@
 7365	Byla to nejlepší armáda, jakou kdy tento[ENTER]kontinent viděl. Mnoho zemí jim podlehlo, protože[ENTER]nic nebylo schopno jim vzdorovat. Dnes by to[ENTER]mohlo být podobné. Ale potřebuješ tvrdé[ENTER]tréninkové metody a spoustu kvalitního železa,[ENTER]abys takovou armádu postavil. Měl by ses zeptat[ENTER]obchodního cestujícícho a Uriela, pravděpodobně[ENTER]budou vědět víc.
 7366	Jdi k obchodnímu cestujícímu
 7367	Pancéřovaná kavalérie
-7368	Obchodní cestující:
+7368	Obchodní cestující
 7369	Hudebník Yu-Hwan říká, že obchodní cestující a[ENTER]učenec Uriel by mohli mít informace o pancéřové[ENTER]kavalerii. Nejprve jdi za obchodním cestujícícm.
 7370	Obchodní cestující:
 7371	Pancéřovaná kavalérie
@@ -7432,7 +7432,7 @@
 7432	Obdržíš 300 000 bodů zkušeností.
 7433	Obdržíš 10 000 Yangů.
 7434	Ne, nemám čas.
-7435	Cheš ten úkol na vždy vzdát?
+7435	Chceš tento úkol navždy vzdát?
 7436	Vrať se, až si to rozmyslíš.[ENTER]Prosím...
 7437	Nemáš čas?[ENTER]Nemáš čas pro tak snadný úkol?[ENTER]Dobře tedy...
 7438	Díky, že jsi tak hodný.[ENTER]Ach, kde jenom můj manžel může být....
@@ -7640,7 +7640,7 @@
 7640	Ne, už je na to pozdě.[ENTER]I kdybys je našel, tak už jsou uschlé. Takové[ENTER]buchty se mi už nepodaří prodat...
 7641	Koukáš se na zem a sleduješ drobečky buchet,[ENTER]které tam zanechali pavouci. Bohužel jsou již[ENTER]celé oschlé.
 7642	Promarnil jsi hledáním rýžových buchet hodně[ENTER]času. Úkol se nezdařil.
-7643	Zpátky k Yu-Rang
+7643	Zpět k Yu-Rang
 7644	Ahoj, jak se má tvoje maminka?
 7645	Vrať se k Yu-Rang
 7646	Zachránil si rýžové buchty před pavouky právě[ENTER]včas! Dones je Yu-Rang.
@@ -7741,7 +7741,7 @@
 7741	Dobrá, pokud nemáš čas, přijď později, najdeš mne[ENTER]tady.
 7742	Měl by se stydět, říkat si otec! Jestli ho najdu.[ENTER]Bůh ochraňuj jeho duši! Věř mi, nepřeháním.[ENTER]Zeptej se ostatních ve vesnici, souhlasí se mnou.
 7743	Soon:
-7744	Obchodnice:
+7744	Obchodnice se smíšeným zbožím
 7745	Jdi za obchodnicí se smíšeným zbožím
 7746	Možná obchodnice se smíšeným zbožím bude o[ENTER]Soonovi vědět. Zajdi za ní a zeptej se jí, zda o[ENTER]Soonovi neslyšela.
 7747	Co je se Soonem?
@@ -8011,7 +8011,7 @@
 8011	Knihomol Soon ví vše o Caledonském porcelánu, ale[ENTER]neřekne nic, dokud nebude mít od obchodního[ENTER]cestujícího knihu. Najdi obchodního cestujícího a[ENTER]dones Soonovi tu knihu.
 8012	Posílá mě Soon...
 8013	Hej, ty ses vrátil, abys mi zase pomohl? Aha, ty[ENTER]chceš knihu pro Soona. Šel bych do města v[ENTER]nejbližší době, ale on je hrozně netrpělivý a[ENTER]žádá ostatní, aby mu ji už přinesli. Hmm. tady[ENTER]je. Nechápu, co Soon na těch hromadách papíru[ENTER]vidí. Daleko důležitější je rychle vydělat Yangy!
-8014	Zpět k Soonovi
+8014	Vrať se k Soonovi.
 8015	Zpět k Soonovi
 8016	Od obchodního cestujícího jsi získal knihu pro[ENTER]Soona. Vrať se k Soonovi a dej mu tu knihu - pak[ENTER]ti prozradí, jak vyrobit Seladonský porcelán.
 8017	Mám tu knížku
@@ -8197,7 +8197,7 @@
 8197	Ty to nechceš udělat? Ale neřekneš Yu-Rang[ENTER]pravdu, že? Prosím, pomož mi. Vrať se, až na mě[ENTER]budeš mít čas.
 8198	Teď už se mnou nebude Yu-Rang nikdy mluvit! Anebo[ENTER]se mi bude jen vysmívat...
 8199	Ach, měl jsem pravdu. Věděl jsem, že jsi tak[ENTER]dobrý jak vypadáš. Moc ti děkuji za pomoc a hodně[ENTER]štěstí!
-8200	Zpátky k Yu-Rang
+8200	Zpět k Yu-Rang
 8201	Jdi zpátky k Yu-Rang a řekni jí, že jí Taueran[ENTER]lhal.
 8202	Yu-Rang je tebou velmi zklamána.
 8203	Tys jí to řekl?![ENTER]Tak to chápu, že už nechce být nikdy má[ENTER]kamarádka. Ale štve mě to. Doufal jsem, že se[ENTER]její názor na mne jednou změní. Možná kdybych jí[ENTER]poslal něco hezkého...
@@ -8254,8 +8254,8 @@
 8254	Temný chrám
 8255	Hodně úspěchu při hledání.[ENTER]Jenom když budu mít správný materiál, můžu[ENTER]vyrábět pořádný porcelán![ENTER]Moji zákazníci už netrpělivě čekají!
 8256	Tajemství Seladonského porcelánu
-8257	Seladonský porcelán
-8258	Seladonský porcelán
+8257	Seladonský porcelán 2
+8258	Seladonský porcelán 2
 8259	Máš všechen materiál, který Yonah potřebuje pro[ENTER]Seladonský porcelán. Dones mu jej!
 8260	Aby Yonah mohl vyrobit Seladonský porcelán,[ENTER]potřebuje následující věci:[ENTER]Pouštní písek od Pouštního bandity v poušti[ENTER]Yongbi, křišťálovou rudu z křišťálové žíly a[ENTER]opičí krev ze Silné zlaté opice Silné kamenné[ENTER]opice, žijících v jeskyni Sangsun Dong. Najdi[ENTER]všechny tři přísady a dones je Yonahovi.
 8261	Tajemství Seladonského porcelánu
@@ -8285,7 +8285,7 @@
 8285	Obdržíš 1 300 000 bodů zkušeností.
 8286	Proč jsi tak zticha?[ENTER]Nevíš to?
 8287	Musím ještě přemýšlet.
-8288	Nepřátelé viděni na obzoru
+8288	Zpozorování nepřátelé na obzoru
 8289	O tajném kódu...
 8290	Vzdávám to.
 8291	Bože! To je to tak těžké? Byl jsi moje poslední[ENTER]naděje... Kdo to teď rozluští?
@@ -8339,10 +8339,10 @@
 8339	Protože se s ním nemůžu spojit, aniž bych ho[ENTER]neprozradil, potřebuji pomoc nějakého nebojácného[ENTER]vojáka. Ano, myslím tebe! Mohl bys prosím tě[ENTER]najít toho rybáře a přivézt mi od něj zprávu? Je[ENTER]to opravdu životně důležité pro naše království.
 8340	Opravdu chceš tento úkol vzdát?
 8341	Ty se potřebuješ nejprve připravit? Fajn, ale[ENTER]vrať se. Budu na tebe čekat. A neloudej se, tu[ENTER]zprávu potřebuji rychle!
-8342	Co s tebou je? Naposledy jsi pro nás udělal[ENTER]skvělou práci A teď chceš svou zemi opustit?[ENTER]No, nemohu nic dělat. Sbohem.
+8342	Co s tebou je? Naposledy jsi pro nás udělal[ENTER]skvělou práci" A teď chceš svou zemi opustit?[ENTER]No, nemohu nic dělat. Sbohem.
 8343	Věděl jsem, že je na tebe spolehnutí. Hodně[ENTER]štěstí a buď opatrný!
 8344	Setkat se se špiónem
-8345	Co je to bingsu?
+8345	Co je Bingsu
 8346	Bingsu?
 8347	Taurean se pohádal s Harang, protože nevěří, že[ENTER]je možné vyrobit zmrzlinu v létě. Zajdi za Harang[ENTER]a zeptej se jí, co ví o Bingsu.
 8348	Zeptej se Harang
@@ -8372,7 +8372,7 @@
 8372	Ano. Zkusit znovu.
 8373	Vím že je to dlouhá cesta a příšery jsou silné.[ENTER]Pokud je to pro tebe moc těžké, tak s tím ale[ENTER]nemohu nic dělat. Měj se.
 8374	Zkus to znovu! S tvojí odvahou a úsilím to jistě[ENTER]dokážeš!
-8375	Bingsu?
+8375	Bingsu!
 8376	Je to hotovo: Octavio udělal Bingsu z ledu z hory[ENTER]Sohan. Rychle dones Bingsu Taureanovi, než se[ENTER]rozteče.
 8377	Prosím! Bingsu!
 8378	To je Bingsu? To chutná opravdu skvěle. Příjemně[ENTER]osvěžující. Nikdy jsem nic takového ještě nejedl,[ENTER]díky moc! Takže Harang měla pravdu. Vím že se jí[ENTER]budu muset omluvit...
@@ -8405,7 +8405,7 @@
 8405	ist nun eine Großmeister Fertigkeit
 8406	To znamená, že tuhle schopnost teď perfektně[ENTER]ovládáš a už ji nemůžeš zdokonalit.
 8407	Gratulujeme! Zvládl jsi to.[ENTER]Díky výcviku ve schopnostech velmistrů postoupil
-8408	 %s na úrovni %s.
+8408	%s na úrovni %s.
 8409	Úspěšně jsi si zvýšil úroveň!
 8410	Spotřeboval jsi %s bodů hodnosti.
 8411	Nezdařilo se!
@@ -8416,7 +8416,7 @@
 8416	Ještě jsi si neosvojil žádnou schopnost natolik,[ENTER]abys mohl dosáhnout statutu velmistra.
 8417	Zvol si prosím jednu schopnost, ve které chceš[ENTER]dosáhnout statutu velmistra.
 8418	Současný stav bodů hodnosti: %s
-8419	 Požadované body hodnosti:
+8419	Požadované body hodnosti:
 8420	%s výcvik ve schopnostech velmistra
 8421	Pokud během výcviku spotřebuješ body hodnosti,[ENTER]mohlo by se stát, že spadneš do záporných hodnot.
 8422	Je mi líto, ale nemáš dostatečnou zkušenost, abys[ENTER]vylepšil své jezdecké zvíře. Musíš mít alespoň[ENTER]licenci na opancéřovaného koně.

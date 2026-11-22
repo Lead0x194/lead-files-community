@@ -91,7 +91,7 @@
 435	Não podes usar um Pergaminho do Retorno enquanto outra janela estiver aberta.
 436	Esta pessoa não existe.
 437	Não podes usar um Pergaminho %d segundos após uma negociação.
-438	Depois de abrires o Armazém não podes usar um Pergaminho do Retorno durante %d segundos.
+438	Depois de abrires um armazém não podes usar um Pergaminho do Retorno durante %d segundos.
 439	Não podes usar o Pergaminho do Retorno porque a distância é demasiado pequena.
 440	Depois de negociares não podes usar um Pergaminho do Retorno durante %d segundos.
 441	Não podes abrir o Armazém enquanto estiver outra janela aberta.
@@ -341,234 +341,234 @@
 799	Perdeste o isco para o peixe.
 800	Capturaste um peixe! (%s)
 801	O comprimento do peixe capturado é %.2fcm.
-803	OX이벤트의 나머지 인원을 기록하였습니다.
+803	OX Os outros participantes no Evento estão listados.
 805	%s : %d 마리
-806	%d 종류 %d 마리 낚음
-807	고기가 흔적도 없이 사라집니다.
-808	배 속에서 조개가 나왔습니다.
-809	배 속에서 지렁이가 나왔습니다.
-810	%s를 구웠습니다.
+806	Apanhaste %d de %d .
+807	O peixe desapareceu nas águas profundas.
+808	Está uma Ostra no interior do peixe.
+809	Está um Verme dentro do peixe.
+810	Colocaste %s na Fogueira.
 811	20억 냥을 초과하여 상점을 열수가 없습니다
-812	비속어나 은어가 포함된 상점 이름으로 상점을 열 수 없습니다.
-813	유료화 아이템은 개인상점에서 판매할 수 없습니다.
-814	OX이벤트의 나머지 인원 기록을 실패했습니다.
-815	채광을 중단하였습니다.
-816	곡괭이를 장착하세요.
-817	낚시대를 장착 하세요.
-818	미끼를 끼고 던져 주세요.
-819	낚시대가 아닌 물건으로 낚시를 할 수 없습니다!
-820	파티장이 접속 상태가 아니라서 요청을 할 수 없습니다.
-821	<파티> 다른 제국과 파티를 이룰 수 없습니다.
-822	<파티> 던전 안에서는 파티 초대를 할 수 없습니다.
-823	<파티> 관전 모드에선 파티 초대를 할 수 없습니다.
-824	<파티> -30 ~ +30 레벨 이내의 상대방만 초대할 수 있습니다.
-825	현재 남은 참가자수 : %d
-826	<파티> 파티내 최고 레벨 보다 30레벨이 낮아 초대할 수 없습니다.
-827	<파티> 파티내 최저 레벨 보다 30레벨이 높아 초대할 수 없습니다.
-828	<파티> 더 이상 파티원을 초대할 수 없습니다.
-829	%s 님에게 파티가입 신청을 했습니다.
-830	상대방이 파티에 속해있지 않습니다.
-831	<파티> 파티의 인원제한이 초과하여 파티에 참가할 수 없습니다.
-832	<파티> 파티원을 초대할 수 있는 권한이 없습니다.
-833	<파티> %s 님이 파티 거부 상태입니다.
-834	<파티> 이미 %s님은 파티에 속해 있습니다.
-835	<파티> 던전 안에서는 파티 초대에 응할 수 없습니다.
-837	<파티> 파티 초대에 응할 수 없습니다.
-838	<파티> %s님이 파티 초대를 거절하셨습니다.
+812	Não podes utilizar um nome impróprio na tua Loja.
+813	Não podes vender Itens da Loja de Itens numa Loja Privada.
+814	OX Os outros participantes no Evento não estão listados.
+815	Terminaste de Garimpar.
+816	Precisas de uma Picareta para conseguires garimpar.
+817	Por favor escolhe uma Cana de Pesca.
+818	Primeiro coloca o isco no anzol.
+819	Não podes pescar sem uma Cana de Pesca!
+820	[Grupo] Não podes fazer um pedido porque o Líder do Grupo não está online.
+821	[Grupo] Não podes fazer Grupo com jogadores de outros Reinos.
+822	[Grupo] Não podes convidar jogadores enquanto estás numa Caverna.
+823	[Grupo] Não podes convidar um jogador enquanto estás Modo de Observação.
+824	[Grupo] Apenas poderás convidar jogadores dentro do limite de 30 níveis abaixo ou acima do teu.
+825	Número dos outros participantes : %d
+826	[Grupo] Não podes convidar este jogador. O seu nível é demasiado baixo.
+827	[Grupo] Não podes convidar este jogador. O seu nível é demasiado alto.
+828	[Grupo] Não podes convidar mais jogadores para o teu Grupo.
+829	Queres juntar-te ao Grupo %s?
+830	O jogador não está neste Grupo.
+831	[Grupo] Não te podes juntar a este Grupo. O Grupo está cheio.
+832	[Grupo] Não tens permissão para convidar alguém.
+833	[Grupo] %s rejeitou o convite para o teu Grupo.
+834	[Grupo] %s já está no Grupo.
+835	[Grupo] Não podes aceitar um convite quando está numa Caverna.
+837	[Grupo] Não podes aceitar o convite.
+838	[Grupo] %s recusou o teu convite.
 839	<파티> %s님이 파티에 참가하셨습니다.
-841	다른 거래중(창고,교환,상점)에는 개인상점을 사용할 수 없습니다.
-842	상대방이 다른 거래를 하고 있는 중입니다.
-846	상대방이 있는 곳으로 워프할 수 없습니다.
-848	상대방이 온라인 상태가 아닙니다.
-849	상대방이 %d 채널에 있습니다. (현재 채널 %d)
-850	창고를 연후 %d초 이내에는 다른곳으로 이동할수 없습니다.
-851	거래창,창고 등을 연 상태에서는 다른곳으로 이동,종료 할수 없습니다
-852	거래 후 %d초 이내에는 다른지역으로 이동 할 수 없습니다.
-853	대련 상대가 사라져 대련을 종료합니다.
-854	물약 제한이 없습니다.
-855	물약을 %d 개 까지 사용 가능합니다.
-856	10초뒤 대련이 시작됩니다.
-857	대련이 시작되었습니다.
-858	Âü
-859	대련장 문제로 인하여 대련을 종료합니다.
-860	대련 시간 초과로 대련을 중단합니다.
-861	10초뒤 마을로 이동합니다.
-862	대련자 문제로 인하여 대련을 중단합니다.
-863	상대방 캐릭터의 문제로 인하여 대련을 종료합니다.
-864	대련자 문제로 인하여 대련을 종료합니다.
-865	%s 님이 대련에서 승리하였습니다.
-866	%s 님이 승리하였습니다.
-867	10초뒤 마을로 이동합니다.
-868	10초뒤 다음 판을 시작합니다.
-869	거짓
-870	상대방 캐릭터가 접속을 종료하여 대련을 중지합니다.
-871	아이템 드롭률  %d%% 추가 이벤트 중입니다.
-872	골드 드롭률 %d%% 추가 이벤트 중입니다.
-873	대박골드 드롭률 %d%% 추가 이벤트 중입니다.
-874	경험치 %d%% 추가 획득 이벤트 중입니다.
-876	다른 거래창이 열린상태에서는 상점거래를 할수 가 없습니다.
-877	상점과의 거리가 너무 멀어 물건을 살 수 없습니다.
-878	상점과의 거리가 너무 멀어 물건을 팔 수 없습니다.
-880	총 퀴즈 수: %d
-881	판매금액의 %d %% 가 세금으로 나가게됩니다
-882	변신 상태에서는 말에 탈 수 없습니다.
-883	예복을 입은 상태에서 말을 탈 수 없습니다.
-884	말을 소유하고 있지 않습니다.
-885	말이 죽어있는 상태 입니다.
-886	말의 스테미너가 부족하여 말을 탈 수 없습니다.
-887	말 소환에 실패하였습니다.
-888	님의 말
-889	결혼식이 종료됩니다.
-890	자동으로 나가게됩니다.
-891	이미 전쟁이 끝났습니다.
-892	10초뒤 판정하겠습니다.
-893	관전 상태에서는 교환을 할 수 없습니다.
-894	다른 거래창이 열려있을경우 거래를 할수 없습니다.
-895	상대방이 다른 거래중이라 거래를 할수 없습니다.
-896	상대방이 교환 거부 상태입니다.
-897	돈이 부족하거나 아이템이 제자리에 없습니다.
-898	상대방의 돈이 부족하거나 아이템이 제자리에 없습니다.
-899	상대방의 소지품에 빈 공간이 없습니다.
-900	%s 님과의 교환이 성사 되었습니다.
-901	용신의 가호로 경험치가 떨어지지 않았습니다.
-903	정답은
-910	용신의 보호로 아이템이 떨어지지 않았습니다.
-911	관통 추가 데미지 %d
+841	Não podes abrir uma Loja Privada agora.
+842	Este jogador já está a negociar com outro jogador.
+846	Não te podes teleportar para o jogador de momento.
+848	O jogador não está online.
+849	O jogador está no Canal %d. (Tu estás no Canal %d.)
+850	Não podes ir a nenhum lado %d segundos depois de abrires o Armazém.
+851	Não podes ir a nenhum lado pouco depois de negociar.
+852	Não podes ir a nenhum lado %d segundos depois de negociares.
+853	Duelo terminado. O teu inimigo desapareceu.
+854	Não há limite para Poções.
+855	Podes usar até %d Poções.
+856	O combate começa dentro de 10 segundos.
+857	O Duelo começou.
+858	VERDADEIRO
+859	O Duelo terminou porque existe um problema com a arena.
+860	O Duelo terminou porque acabou o tempo.
+861	Vais ser teleportado para a cidade dentro de 10 segundos.
+862	O Duelo terminou porque existem problemas com a arena.
+863	O teu adversário está com problemas. O Duelo terminou.
+864	O Duelo terminou porque existe um problema com o teu adversário.
+865	%s ganhou o Duelo.
+866	%s ganhou.
+867	Vais ser teleportado para a cidade dentro de 10 segundos.
+868	A próxima ronda começa dentro de 10 segundos.
+869	FALSO
+870	Os lutadores foram separados. O Duelo foi terminado.
+871	A probabilidade de Cair Itens foi aumentada em %d%%!
+872	A probabilidade de Cair Yang foi aumentada em %d%%!
+873	A probabilidade de queda de chuva de Yang actualmente está %d%% mais alta.
+874	Actualmente o bónus de experiência é %d%%.
+876	Não podes negociar na loja enquanto outra janela está aberta.
+877	Estás demasiado longe da Loja Privada para poderes comprar.
+878	Estás demasiado longe da Loja Privada para poderes vender.
+880	Número total do Quiz: %d
+881	A venda tem uma Taxa de Impostos de %d%%.
+882	Não podes montar um Cavalo enquanto estiveres transformado.
+883	Não podes montar um Cavalo enquanto usas um Vestido de Noiva ou um Fato de Casamento.
+884	Não possuis um Cavalo.
+885	O teu Cavalo está morto.
+886	A resistência do teu Cavalo é demasiado baixa.
+887	A tentativa de chamar o Cavalo falhou.
+888	Cavalo
+889	O Casamento terminará em breve.
+890	Sairás deste mapa automaticamente.
+891	A Guerra já terminou.
+892	A resposta será exibida dentro de 10 segundos.
+893	Não podes negociar enquanto estás no Modo de Observação.
+894	Se a janela estiver aberta, não podes negociar com outros.
+895	A outra pessoa encontra-se ocupada, por isso não podes negociar neste momento.
+896	A outra pessoa cancelou o negócio.
+897	Não tens Yang suficiente ou tens pouco espaço no Inventário.
+898	A outra pessoa não tem Yang suficiente ou tem pouco espaço no Inventário.
+899	A outra pessoa não tem espaço no Inventário.
+900	O negócio com %s foi bem sucedido.
+901	Não perdeste Experiência devido à bênção do Deus Dragão.
+903	A resposta correcta é:
+910	Não deixaste cair nenhum(ns) Item(s) porque estás protegido pelo Deus Dragão.
+911	Dano Adicional de Impacto %d
 912	%s 블럭! (%ld%%)
-914	O 입니다
-916	명령어를 모두 입력하세요.
-917	탄 상태에서는 할 수 없습니다.
-918	쓰러진 상태에서는 할 수 없습니다.
-919	꿈속에서 어떻게요?
-920	먼저 일어 나세요.
-921	그런 명령어는 없습니다
-922	<파티> 파티가 해산 되었습니다.
-923	<파티> 대상을 소환할 수 없습니다.
-924	<파티> 파티원을 현재 위치로 소환할 수 없습니다.
-925	X 입니다
-926	파티의 협동력이 높아져 지금부터 추가 경험치 보너스를 받습니다.
+914	Sim (O)
+916	Por favor insere a Ordem completa.
+917	Não podes fazer isto enquanto estiveres montado num Cavalo.
+918	Não podes fazer isto enquanto estás deitado no chão.
+919	Nos meus sonhos? O quê?
+920	Levanta-te primeiro.
+921	Esta Ordem não existe.
+922	[Grupo] O Grupo foi apagado.
+923	[Grupo] Não podes chamar o alvo.
+924	[Grupo] Não podes chamar os Membros do Grupo para a tua localização actual.
+925	Não (X)
+926	O teu grupo trabalha bem em conjunto e membros do grupo perto do líder do grupo recebem um bónus de experiência.
 927	길드장
-928	길드원
-929	<길드> 제공하고자 하는 경험치가 남은 경험치보다 많습니다.
-930	<길드> 삭제할 수 없는 글입니다.
-931	<길드> 용신력이 부족합니다. (%d, %d)
-932	<길드> 쿨타임이 끝나지 않아 길드 스킬을 사용할 수 없습니다.
-934	<길드> 상대가 %d 채널에 있습니다. (현재 채널 %d)
-935	<길드> 상대가 온라인 상태가 아닙니다.
-936	5초 뒤 틀리신 분들을 바깥으로 이동 시키겠습니다.
-937	<길드> 길드 스킬은 길드전 중에만 사용할 수 있습니다.
-940	<길드> 상대방이 길드 초대 거부 상태입니다.
-941	<길드> 길드원을 초대할 권한이 없습니다.
-942	<길드> 다른 제국 사람을 길드에 초대할 수 없습니다.
-943	<길드> 탈퇴한 후 %d일이 지나지 않은 사람은 길드에 초대할 수 없습니다.
-944	<길드> 길드를 해산한 지 %d일이 지나지 않은 사람은 길드에 초대할 수 없습니다.
-945	<길드> 상대방이 이미 다른 길드에 속해있습니다.
-946	<길드> 최대 길드원 수를 초과했습니다.
-947	다음 문제 준비해주세요.
-948	수련할 수 없는 스킬입니다.
-949	그랜드 마스터 수련을 할 수 없는 스킬입니다.
-950	퍼펙트 마스터된 스킬입니다. 더 이상 수련 할 수 없습니다.
-951	이 스킬은 아직 그랜드 마스터 수련을 할 경지에 이르지 않았습니다.
-952	크윽, 기가 역류하고 있어! 이거 설마 주화입마인가!? 젠장!
-953	수련이 실패로 끝났습니다. 다시 도전해주시기 바랍니다.
-954	몸에서 뭔가 힘이 터져 나오는 기분이야!
-955	뜨거운 무엇이 계속 용솟음치고 있어! 이건, 이것은!
-956	더 높은 경지의 수련을 성공적으로 끝내셨습니다.
-957	경험치가 부족하여 책을 읽을 수 없습니다.
-959	이 스킬은 책으로 더이상 수련할 수 없습니다.
-960	이 스킬은 아직 책으로 수련할 경지에 이르지 않았습니다.
-964	더 높은 경지의 수련을 성공적으로 끝내셨습니다.
-965	귀환에 실패하였습니다.
-966	말이 없습니다. 마굿간 경비병을 찾아가세요.
-967	말 소환 아이템을 사용하세요.
-968	%s SP소모: %d
-969	맞으면 O, 틀리면 X로 이동해주세요
-970	몸 속이 뜨겁군. 하지만 아주 편안해. 이대로 기를 안정시키자.
-971	그래, 천천히. 좀더 천천히, 그러나 막힘 없이 빠르게!
-972	그래, 이 느낌이야. 체내에 기가 아주 충만해.
-973	다 읽었다! 이제 비급에 적혀있는 대로 전신에 기를 돌리기만 하면,
-974	그것으로 수련은 끝난 거야!
-975	이제 책의 마지막 장이야! 수련의 끝이 눈에 보이고 있어!
-976	얼마 안 남았어! 조금만 더!
-977	좋았어! 조금만 더 읽으면 끝이다!
-978	책장도 이제 얼마 남지 않았군.
-979	뭔가 몸 안에 힘이 생기는 기분인 걸.
-980	정답입니다!
-981	ÀÌÁ¦ Á» ½½½½ °¡´ÚÀÌ ÀâÈ÷´Â °Í °°Àºµ¥.
-982	좋아, 이 기세로 계속 나간다!
-983	아니 어떻게 된 게 종일 읽어도 머리에 안 들어오냐.
-984	공부하기 싫어지네.
-985	생각만큼 읽기가 쉽지가 않군. 이해도 어렵고 내용도 난해해.
-986	이래서야 공부가 안된다구.
-988	채팅 금지가 풀렸습니다.
-989	이미 제조창이 열려있습니다.
-990	다른 거래중(창고,교환,상점)에는 사용할 수 없습니다.
-991	더 이상 개량할 수 없습니다.
-992	제조창이 열려있지 않습니다
-993	제조 재료가 부족합니다
-1001	<길드> 래더 점수가 %d 점이 되었습니다
-1002	이 아이템은 개량할 수 없습니다.
-1003	무료 개량 기회는 20 이하의 무기만 가능합니다
-1004	군직이 맞지않아 이 아이템을 사용할 수 없습니다.
-1005	성별이 맞지않아 이 아이템을 사용할 수 없습니다.
+928	Membro
+929	[Guild] A Experiência doada é mais alta que a Experiência em falta.
+930	[Guild] A mensagem não pode ser apagada.
+931	[Guild] Dragões Fantasma insuficientes. (%d, %d)
+932	[Guild] Ainda não podes usar as Habilidades de Guild.
+934	[Guild] O jogador encontra-se no Canal %d. (O teu Canal actual: %d)
+935	[Guild] O jogador não se encontra online.
+936	Daqui a 5 segundos todos os participantes que deram uma resposta errada irão ser removidos.
+937	[Guild] Esta Habilidade de Guild só pode ser usada em Guerras.
+940	[Guild] O jogador rejeitou o teu convite para a Guild.
+941	[Guild] Não podes convidar jogadores para a Guild.
+942	[Guild] Não podes convidar jogadores de outro Reino para a Guild.
+943	[Guild] Este jogador pode ser convidado novamente daqui a %d dia(s).
+944	[Guild] Depois da reorganização irás poder convidar membros de novo daqui a %d dias.
+945	[Guild] Este jogador já é membro de outra Guild.
+946	[Guild] A Guild atingiu a capacidade máxima de membros.
+947	Preparado(s) para a próxima questão?
+948	Não podes treinar esta Habilidade.
+949	Não podes treinar esta Habilidade até Grande Mestre.
+950	Já és Mestre nesta habilidade. Não podes treiná-la mais.
+951	A tua Habilidade não é alta o suficiente para o treino de Grande Mestre.
+952	Não funcionou. Raios!
+953	Treino falhado. Por favor tenta de novo mais tarde.
+954	O meu corpo está cheio de energia!
+955	Parece que o treino já está a fazer efeito...
+956	Terminaste com sucesso o teu treino com o Livro.
+957	Não podes ler isto porque tens pouca Experiência.
+959	Não podes treinar esta Habilidade com um Livro.
+960	Esta Habilidade não é alta o suficiente para ser treinada com um Livro.
+964	Terminaste com sucesso o teu treino com o Livro.
+965	Teleportação falhada.
+966	Não há Cavalo. Pergunta ao Rapaz dos Estábulos.
+967	Por favor utiliza um Item para chamar um Cavalo.
+968	%s Utilização de FP: %d
+969	Se estiver correcta dirige-te para o O, se estiver errada dirige-te para o X.
+970	Estou a arder no meu interior, mas isso relaxa o meu corpo.
+971	Devagar, mas de forma segura... Sem paragens.
+972	Sim, a sensação é óptima. O meu corpo está cheio de Chi.
+973	Eu li-o! Agora Chi irá correr pelo meu corpo.
+974	O treino está terminado.
+975	Cheguei à última página do livro. O meu treino está perto do fim!
+976	Está quase feito! Só falta um pouco!
+977	Sinto-me iluminado! Já o li quase todo!
+978	Mais umas páginas e já tenho tudo lido.
+979	Sinto-me refrescado.
+980	Correcto!
+981	Agora eu compreendo!
+982	Ok, tenho de me manter concentrado!
+983	Estou sempre a ler a mesma linha.
+984	Não quero aprender mais.
+985	É mais difícil de compreender do que eu pensava.
+986	É difícil concentrar-me. Eu devia descansar um pouco.
+988	O bloqueio do teu chat foi levantado.
+989	A Janela de Construção já está aberta.
+990	Não podes construir nada enquanto a Janela de Comércio/Armazém estiver aberta.
+991	Não é possível melhorar mais.
+992	A Janela de Construção não está aberta.
+993	Não possuis o material correcto.
+1001	[Guild] A Guild atingiu os %d Pontos.
+1002	Este Item não pode ser melhorado.
+1003	As adições gratuitas a armas apenas podem ser usadas em armas até ao nível 20.
+1004	Não podes usar esse Item porque não tens todas as qualificações.
+1005	Não podes usar esse Item porque não és do sexo correcto.
 1013	아이템의 레벨 제한보다 레벨이 낮습니다.
-1014	창고,거래창등이 열린 상태에서는 개량을 할수가 없습니다
-1025	갑옷을 벗어야 개인 상점을 열 수 있습니다.
-1028	%d 시간 %d 분 %d 초 동안 채팅금지 상태입니다
-1029	%d 시간 %d 초 동안 채팅금지 상태입니다
-1030	%d 분 %d 초 동안 채팅금지 상태입니다
-1035	개량을 하기 위한 재료가 부족합니다.
-1042	%d 초 동안 채팅금지 상태입니다
-1043	말을 탄 상태에서 감정표현을 할 수 없습니다.
-1044	말을 탄 상대와 감정표현을 할 수 없습니다.
-1048	<길드> 상대방 길드의 길드장이 접속중이 아닙니다.
-1050	<길드> 이미 전쟁 중인 길드입니다.
-1054	이미 탈것을 이용중입니다.
-1056	이 개량서로 더 이상 개량할 수 없습니다.
-1067	사귀 타워 완료 보상은 한번까지 사용가능합니다.
-1068	용혼석 추출에 성공하였습니다.
-1069	강화창을 연 상태에서는 아이템을 옮길 수 없습니다.
-1072	용심 추출에 성공하였습니다.
-1073	용심 추출에 실패하였습니다.
-1074	용혼석 추출에 실패하여 %s를 얻었습니다.
-1075	용혼석 추출에 실패하였습니다.
-1076	등급 개량에 필요한 재료가 아닙니다.
-1077	등급 개량할 수 없는 용혼석입니다.
-1078	단계 개량에 성공했습니다.
-1079	등급 개량에 실패했습니다.
-1080	단계 개량할 수 없는 용혼석입니다.
-1082	등급 개량에 성공했습니다.
-1083	단계 개량에 실패했습니다.
-1084	단계 개량에 필요한 재료가 아닙니다.
-1085	강화할 수 없는 용혼석입니다.
-1087	강화에 성공했습니다.
-1088	강화에 실패했습니다.
-1090	이미 같은 종류의 용혼석을 착용하고 있습니다.
-1091	착용 중인 용혼석은 추출할 수 없습니다.
-1092	이미 장비를 착용하고 있습니다.
-1094	인벤이 활성화 되지 않음.
-1096	축복의 서와 현철을 합칠 수 있습니다.
-1097	이 아이템은 벨트 인벤토리로 옮길 수 없습니다.
-1108	빼낼 수 있는 메틴석이 없습니다.
-1119	기억해 둘 수 없는 위치 입니다.
-1130	소지품에 빈 공간이 없습니다.
-1141	기억된 위치가 타제국에 속해 있어서 귀환할 수 없습니다.
+1014	Não podes melhorar nada enquanto outra janela está aberta.
+1025	Só podes abrir uma Loja Privada se desequipares a Armadura.
+1028	Faltam %d horas, %d minutos e %d segundos para o bloqueio de chat passar.
+1029	Faltam %d horas e %d segundos para o teu bloqueio de chat passar.
+1030	Faltam %d minutos e %d segundos para o teu bloqueio de chat passar.
+1035	Não tens material suficiente para um melhoramento.
+1042	Faltam %d segundos para o bloqueio do chat acabar.
+1043	Não poderás efectuar emoções enquanto estiveres a montar um cavalo.
+1044	Não poderás usar emoções com um jogador que esteja a montar a cavalo.
+1048	[Guild] O Líder da Guild inimiga não se encontra ligado.
+1050	[Guild] Esta guild já se encontra numa guerra.
+1054	Já estás a montar. Desmonta-te primeiro.
+1056	Não podes melhorar com este Pergaminho.
+1067	Só podes melhorar um Item por cada subida à Torre.
+1068	A Pedra do Dragão foi removida.
+1069	Não podes mover o item na janela de refinamento.
+1072	A duração restante da Pedra do Dragão foi extraída.
+1073	A extracção da duração restante falhou.
+1074	A remoção da Pedra do Dragão falhou. Mas recebeste o seguinte: %s
+1075	A remoção da Pedra do Dragão falhou.
+1076	Este item não é necessário para melhorar o nível de clareza.
+1077	Este Item não pode ser melhorado desta forma.
+1078	O melhoramento do nível de clareza foi bem sucedido.
+1079	O refinamento de classe falhou.
+1080	Este tem não é necessário para o refinamento.
+1082	O refinamento de classe foi bem sucedido.
+1083	O melhoramento do nível de clareza falhou.
+1084	Não tens os materiais necessários para fortalecer a Pedra do Dragão.
+1085	Esta Pedra do Dragão não pode ser usada para fortalecimento.
+1087	O fortalecimento foi bem sucedido.
+1088	O fortalecimento falhou.
+1090	Já possuis uma Pedra do Dragão deste tipo.
+1091	A Pedra do Dragão não pode ser removida.
+1092	Já equipaste este tipo de Pedra do Dragão.
+1094	Antes de abrires o Cor Draconis tens de completar a missão da Pedra do Dragão e activar a Alquimia de Pedra do Dragão.
+1096	Podes combinar um Pergaminho da Bênção com o Metal Mágico.
+1097	Não podes equipar este item no teu inventário do cinto.
+1108	Não há Pedras para serem retiradas.
+1119	Não podes marcar esta localização.
+1130	Não existe espaço suficiente no teu Inventário.
+1141	Não te podes teleportar para uma localização segura no interior de um Reino inimigo.
 1145	
-1152	남은 생명력 양이 모자라 사용할 수 없습니다.
-1162	남은 정신력 양이 모자라 사용할 수 없습니다.
-1205	대련 중에는 이용할 수 없는 물품입니다.
-1217	모닥불을 피울 수 없는 지점입니다.
-1228	물 속에 모닥불을 피울 수 없습니다.
-1229	O seu inventário está cheio.
-1237	열쇠로 잠겨 있어서 열리지 않는것 같다. 열쇠를 구해보자.
-1248	열쇠로 여는 물건이 아닌것 같다.
-1258	열쇠는 맞으나 아이템 주는 부분 구현이 안되었습니다.
-1269	돈 %d 냥을 획득했습니다.
-1279	상자에서 부터 신비한 빛이 나옵니다.
-1290	%d의 경험치를 획득했습니다.
-1299	상자에서 몬스터가 나타났습니다!
-1308	<길드> 레더 점수가 모자라서 길드전을 할 수 없습니다.
-1310	상자에서 나온 빨간 연기를 들이마시자 움직이는 속도가 느려졌습니다!
+1152	Não tens VD suficiente.
+1162	Não tens Mana (MN) suficiente para utilizar isto.
+1205	Não podes usar este Item durante um Duelo.
+1217	Não podes acender uma Fogueira aqui.
+1228	Não podes acender uma Fogueira debaixo de água.
+1229	O teu inventário está cheio.
+1237	Está fechado. Deves procurar a chave.
+1248	Este Item não pode ser aberto com uma Chave.
+1258	Essa é a Chave correcta.
+1269	Recebeste %d Yang.
+1279	Uma luz misteriosa sai do interior desta caixa.
+1290	Recebeste %d Pontos de Experiência.
+1299	Olha o que saiu da caixa!
+1308	[Guild] O nível da guild é demasiado baixo.
+1310	Se inalares o fumo vermelho que sai da caixa irás tornar-te mais rápido.
 5000	#%d não é possível criar o item.
 5001	#%d o item não existe com esse vnum.
 5002	#%u o item não existe com esse vnum.
@@ -887,7 +887,7 @@
 5315	usage : /flush player_id
 5316	usage : /horse_level <name> <level>
 5317	usage : priv_empire <empire> <type> <value> <duration>
-5318	Todos os reinos
+5318	Todos os Reinos
 5319	Taxa de drop de itens
 5320	Taxa de drop de Yang
 5321	Taxa de chuva de Yang

@@ -12,19 +12,19 @@
 12	%s tegen %s
 13	Sluiten
 14	Yu-Hwan:
-15	Er is op dit moment geen Trainings[ENTER]Gevecht.
+15	Er is op dit moment geen Trainings Gevecht.
 16	Op dit moment vinden er %s Trainings Gevechten[ENTER]plaats.
 17	De Oefenarena is totaal vernietigd door een[ENTER]gruwelijk gevecht. Tot het is gerenoveerd kan je[ENTER]geen oefenduels houden.
 18	Iemand anders heeft zich aangemeld voor een[ENTER]Trainings Gevecht.
 19	ALs je Level %s niet bereikt hebt kun je je niet[ENTER]aanmelden voor een Trainings Gevecht.
 20	Wil je je inschrijven voor een Oefenduel? Geef me[ENTER]dan de naam van je trainingspartner.
 21	Weet je niet met wie je wilt vechten? Als je me[ENTER]geen naam geeft kan ik je niet inschrijven.
-22	Is goed, %s. Je bent aangemeld voor een Oefenduel[ENTER]tegen %s.
+22	Is goed, %s. Je bent ingeschreven voor een oefenduel tegen %s.
 23	%s wacht op de bevestiging van de uitdaging door[ENTER]%s.
-24	Wil jij, %s, een Trainings Gevecht starten met %s?
+24	Wil jij, %s, een Trainings Gevecht starten met %s? 
 25	%s heeft zich op het moment niet aangemeld.[ENTER]Probeer het later nog eens of spreek af met je[ENTER]trainingspartner.
 26	Ik wil iets upgraden.
-27	Smid
+27	Smid:
 28	Hallo![ENTER]Ik ben verantwoordelijk voor het upgraden van[ENTER]Voorwerpen. Als je een Voorwerp wilt upgraden,[ENTER]breng het dan naar mij.
 29	Informatie:
 30	Sleep het voorwerp van je inventaris naar de smid[ENTER]toe.
@@ -50,10 +50,10 @@
 50	Niet kopen
 51	Je hebt het 3-in-1 hengelpakket gekocht.[ENTER]Veel plezier! En vergeet niet het meegegeven[ENTER]briefje over de viswedstrijd te bekijken. Tot[ENTER]ziens!
 52	Het spijt me, je hebt niet genoeg Yang. Wacht tot[ENTER]de volgende speciale aanbieding.
-53	Unknown Button [%s]
+53	UNKNOWN BUTTON [%s]
 54	Notitie van de Vis Wedstrijd.
 55	Als je nu trouwt kun je niet van Koninkrijken[ENTER]veranderen, alleen Spelers die niet getrouwd zijn[ENTER]zijn in staat om van Koninkrijk te veranderen.
-56	Verander Keizerrijk:
+56	Verander Keizerrijk
 57	Vraag een scheiding aan als je van Koninkrijk[ENTER]wilt veranderen.
 58	Je kunt niet van Koninkrijk veranderen wanneer je[ENTER]getransformeerd bent.
 59	Gebruik dit Voorwerp wanneer je niet[ENTER]getransformeerd bent.
@@ -172,10 +172,10 @@
 172	Bioloog Chaegirab, student van Uriel, is op zoek[ENTER]naar je. Ga naar hem toe en vraag of je hem kunt[ENTER]helpen.
 173	Oh je hebt ze allemaal verzameld? Goed werk....[ENTER]Als een teken van mijn dankbaarheid krijg je wat[ENTER]Yang en de resultaten van mijn studies.
 174	Als beloning krijg je van bioloog Chaegirab:[ENTER]200.000 EP, 20.000 Yang en een Helm +2.
-175	IJzeren Helm
-176	Ketting Kap
-177	Spottend Helm
-178	Feniks Kap
+175	IJzeren Helm+2
+176	Maliën Kap+2
+177	Spottende Helm+2
+178	Feniks Kap+2
 179	Het spijt me, dit Tue Paddestoel heeft een[ENTER]slechte kwaliteit! Breng me alsjeblieft een[ENTER]nieuwe.
 180	Hemel, stuur mij hulp.. Ik bestudeer alle soorten[ENTER]planten in dit Koninkrijk. Er is een hoop werk[ENTER]dat gedaan moet worden. Ik heb geen tijd om alle[ENTER]planten zelf te vinden. Kun je me helpen?
 181	Ik bestudeer Tue Paddestoelen op dit moment. Ik[ENTER]moet een paar experimenten doen met Tue[ENTER]Paddestoelen en heb er een hoop van nodig. Kun je[ENTER]me wat Tue Paddestoelen brengen? 10 Tue[ENTER]Paddestoelen moet genoeg zijn. Help me[ENTER]alsjeblieft! Breng me één Tue Paddestoel per keer[ENTER]zodat ik ze kan bestuderen!
@@ -205,7 +205,7 @@
 205	Als beloning krijg je van bioloog Chaegirab: 2000[ENTER]EP, 3000 Yang en een Pantser +3.
 206	Bioloog Chaegirab, student van Uriel, is op zoek[ENTER]naar je. Ga naar hem toe en vraag of je hem kunt[ENTER]helpen.
 207	Monniken Plaat Pantser+3
-208	Azuur Pak
+208	Azuren Pak+3
 209	Requiem Plaat Pantser+3
 210	Azuren Gewaad+3
 211	Het spijt me, dit Weideklokje is van slechte[ENTER]kwaliteit! Breng me alsjeblieft een nieuwe.
@@ -289,10 +289,10 @@
 289	Luister naar me.
 290	Ah, goed dat je hier bent! Ik heb je hulp nodig.[ENTER]Ik verzamel niet alleen informatie over monsters[ENTER]in dit Koninkrijk, maar ik schrijf ook over[ENTER]verschillende soorten spreuken. Ik kan deze taak[ENTER]niet alleen aan. Ik heb niet genoeg tijd om op[ENTER]excursies te gaan. Wil jij dat voor mij[ENTER]verzorgen?
 291	Ik zou graag meer willen weten over de geheime[ENTER]sekte in de Vallei van Seungryong. Ik denk dat[ENTER]zij iets weten over spreuken en magie van de oude[ENTER]tijden, voornamelijk hun Boek der Vloeken. Deze[ENTER]boeken zijn vast de sleutels die ik mis. Breng me[ENTER]alsjeblieft slechts één boek per keer, zodat ik[ENTER]genoeg tijd heb om ze individueel te onderzoeken.
-292	Wees er zeker van dat de boeken intact zijn,[ENTER]sommigen zijn zo oud dat ze niet leesbaar zijn.[ENTER]Die heb ik niet nodig. Ik heb 15 boeken in totaal[ENTER]nodig voor mijn onderzoek. Breng me er één per[ENTER]keer, zodat ik ze individueel kan[ENTER]bestuderen.
+292	Wees er zeker van dat de boeken intact zijn,[ENTER]sommigen zijn zo oud dat ze niet leesbaar zijn.[ENTER]Die heb ik niet nodig. Ik heb 15 boeken in totaal[ENTER]nodig voor mijn onderzoek. Breng me er één per[ENTER]keer, zodat ik ze individueel kan bestuderen.
 293	De spreuken van oude tijden
 294	Chaegirab, student van Uriel, is de spreuken van[ENTER]de oude tijden aan het bestuderen. De 15 Boeken[ENTER]der Vloeken kunnen gevonden worden in de[ENTER]Drakenvallei. Breng ze naar Chaegirab, maar[ENTER]slechts één per keer.
-295	Chaegirab, Uriel's student onderzoekt de monsters[ENTER]in de Demonen Toren. Voor zijn onderzoek heeft[ENTER]hij 15 Demonen Aandenken nodig. Breng hem één per[ENTER]keer zodat hij ze individueel kan[ENTER]bestuderen.
+295	Chaegirab, Uriel's student onderzoekt de monsters[ENTER]in de Demonen Toren. Voor zijn onderzoek heeft[ENTER]hij 15 Demonen Aandenken nodig. Breng hem één per[ENTER]keer zodat hij ze individueel kan bestuderen.
 296	Het verzoek van de Bioloog
 297	Je hebt al %s Demonen Aandenken verzameld.
 298	Je kunt het Onderzoekers Elixer nog niet[ENTER]gebruiken.
@@ -365,7 +365,7 @@
 365	Bioloog Chaegirab:
 366	Oh, jij bent het! Kom dichterbij. Op dit moment[ENTER]verzamel ik informatie over Berg Sohan in het[ENTER]westen en de monsters die daar leven. Helaas kan[ENTER]ik daar niet zelf naar toe om mijn onderzoek te[ENTER]verrijken met mijn eigen observaties. Kun je met[ENTER]wat informatie geven over de ijsmonsters?
 367	Ik zou graag meer willen weten over Berg Sohan in[ENTER]het westen. Ben je er wel eens geweest? Een hele[ENTER]lange tijd geleden, was deze ijsberg omhult met[ENTER]een geheime kracht. Het is onderzocht door vele[ENTER]geleerden en magiërs, en volgens hun, bestaat[ENTER]Berg Sohan uit IJsbollen, helder en sprankelend.
-368	Het zou zeer nuttig zijn voor mijn onderzoek als[ENTER]je de IJsbollen zo snel mogelijk hier kon[ENTER]brengen. Maar let op dat je me geen beschadigde[ENTER]bollen brengt, die zijn nutteloos. Ik heb er 20[ENTER]nodig en breng er één per keer, zodat ik ze[ENTER]individueel kan onderzoeken. Dank je![ENTER]
+368	Het zou zeer nuttig zijn voor mijn onderzoek als[ENTER]je de IJsbollen zo snel mogelijk hier kon[ENTER]brengen. Maar let op dat je me geen beschadigde[ENTER]bollen brengt, die zijn nutteloos. Ik heb er 20[ENTER]nodig en breng er één per keer, zodat ik ze[ENTER]individueel kan onderzoeken. Dank je!
 369	Onderzoek van de Bioloog
 370	Je kunt het Onderzoekers Elixer gebruiken zodra[ENTER]je de stokken van het Spoken Bos hebt gevonden.
 371	Onderzoek van de Bioloog
@@ -458,7 +458,7 @@
 458	Bioloog Chaegirab:
 459	Oh! Deze Rode Geestboom Tak is van topkwaliteit![ENTER]Ik zal onmiddellijk beginnen met mijn onderzoek.
 460	Ik heb echter nog
-461	 nodig.
+461	nodig.
 462	Probeer ze alsjeblieft te vinden![ENTER][ENTER]En vergeet niet dat ik tijd nodig heb voor een[ENTER]analyse. Ik zal de volgende tak pas morgen kunnen[ENTER]onderzoeken.
 463	Bioloog Chaegirab:
 464	Je hebt 40 Takken verzameld! Dank je. Nu heb ik[ENTER]alleen een Bos Geest Zielensteen nodig om me te[ENTER]helpen met het begrijpen van de monsters achter[ENTER]deze levende bomen. Kun je dat voor me doen?[ENTER]Je kunt het vinden bij de bomen in het Rood Bos.
@@ -486,7 +486,7 @@
 486	Ik moet je ook deze Paarse Ebbenhouten Kist[ENTER]geven. Pas er goed op.
 487	Dit is je beloning voor het voldoen aan[ENTER]Chaegirab's verzoek.
 488	Als een beloning voor het inwilligen van[ENTER]Chaegirabs verzoek, is je schade weerstand voor[ENTER]aanvallen die tegen je gedaan worden (PvP)[ENTER]permanent verhoogd met 10%
-489	Dit effect is blijvend.
+489	Deze verhoging is blijvend.
 490	Bioloog Chaegirab:
 491	Het verzoek van de Bioloog
 492	Onderzoek van de Bioloog
@@ -511,7 +511,7 @@
 511	Oh, je hebt notities gevonden![ENTER]Geef me een minuutje...
 512	Oh, fantastisch! Goed werk!
 513	Ik heb echter nog
-514	 nodig.
+514	nodig.
 515	Ik heb echter nog %s nodig.
 516	Probeer er alsjeblieft een paar te vinden![ENTER][ENTER]En vergeet niet dat ik ze moet onderzoeken. Ik[ENTER]zal pas morgen weer eentje kunnen onderzoeken.
 517	Je hebt alle 50 Notities verzameld, dat is[ENTER]fantastich!. Je hebt waarschijnlijk al geraden[ENTER]wat ik nu nodig heb. Ik mis nog een Leiders[ENTER]Zielensteen. Dan heb ik alles wat ik nodig heb.[ENTER]Dat kun je toch wel doen? Zoek een Leider[ENTER]Zielensteen en breng het naar mij. Je kun het van[ENTER]Boss monsters krijgen.
@@ -539,7 +539,7 @@
 539	En dit keer is het een Blauwe Ebbenhouten Kist.[ENTER]Ben je nieuwschierig? Maak het dan snel open!
 540	Dit is je beloning voor het voldoen aan[ENTER]Chaegirab's verzoek.
 541	Als een beloning voor het inwilligen van[ENTER]Chaegirabs verzoek, zal je aanvalswaarde in PvP[ENTER]permanent verhoogd worden met 8%
-542	Dit effect is blijvend.
+542	Deze verhoging is blijvend.
 543	Seon-Pyeong:
 544	Seon-Pyeong's onderzoek
 545	Seon-Pyeong in het vallei van Seungryong heeft je[ENTER]hulp nodig. Ga naar hem toe en zoek uit wat er[ENTER]aan de hand is.
@@ -633,7 +633,7 @@
 633	Hallo, hoe gaat het? Ben je geïnteresseerd in het[ENTER]maken van verschillende brouwsels die je[ENTER]versterken of helen? Ik, een arts, ga over het[ENTER]maken van brouwsels. Ik heb verschillende soorten[ENTER]recepten gevonden. Wil je ze uitproberen?
 634	Het verbeteren van dingen is een belangrijke[ENTER]kunst. Ben je geïnteresseerd in zulke[ENTER]vaardigheden? Ik kan je wat van mijn[ENTER]kruidenrecepten laten zien. Ze zijn erg nuttig om[ENTER]sterkere variaties van alom bekende brouwsels te[ENTER]produceren. Of ik kan je leren een alledaagse[ENTER]riem te veranderen in een krachtige hulpmiddel.
 635	Het geheime recept
-636	Huahn-So
+636	Huahn-So:
 637	Ik heb een geheime familie recept gevonden. Als[ENTER]je dit gebruikt, wordt je haast onverslaanbaar![ENTER]Hahaha. Ik denk dat ik de enige ben in dit land[ENTER]die dit weet. Met deze brouwsels, kan je bijna[ENTER]niets overkomen. Wil je het uitproberen?
 638	Ik heb het volgende nodig om dit pantser te[ENTER]verbeteren: %s.
 639	Materialen:
@@ -675,7 +675,7 @@
 675	Versla de Demonen Wachters om de Grimas Totem te[ENTER]ontvangen. Het dient als een sleutel voor de 6e[ENTER]vloer.
 676	Versla Charon en zijn handlangers!
 677	Je hebt je uitstekende gehoor en instinct bewezen.[ENTER]Je hebt de echte Metin Steen vernietigd! Je gaat[ENTER]nu naar de 4de verdieping.
-678	Naar de Demon toren....
+678	Naar de Duivels Toren...
 679	Je staat voor het afgesloten poort op de 4de[ENTER]verdieping. Je moet alle vijf Oeroude Zegels[ENTER]openen om naar de volgende verdieping te gaan. Je[ENTER]pad zal vol zijn van beesten die wachten totdat[ENTER]ze je kunnen bespringen. Vind genoeg Ontgrendel[ENTER]Stenen om alle vijf Oeroude Zegels te openen en[ENTER]ga naar de 5de verdieping. Maar opgelet: je hebt[ENTER]slechts 20 minuten de tijd!
 680	15 minuten over
 681	Je hebt de Oeroude Zegels geopend en betreedt de[ENTER]vijfde verdieping. De Trotse Demonen Koning is[ENTER]ook op deze verdieping. Vernietig alle beesten[ENTER]die je daar tegen komt.
@@ -686,7 +686,7 @@
 686	Wil je de 6de verdieping van de Toren betreden?[ENTER]Je hebt vele vaardigheden en gewiekstheid nodig[ENTER]om je op deze verdieping te redden. Wanneer je[ENTER]level 75 hebt bereikt kan ik je pas er naar toe[ENTER]teleporteren.
 687	Je hebt de benodigde ervaring en daarom een kans[ENTER]om te overleven op de bovenste verdiepingen. Je[ENTER]kunt nu naar binnen!
 688	Demonen Toren Wachter
-689	GAAN
+689	GAAN!
 690	Verlaat de Toren!
 691	Je Level is te laag. Ik kan je niet toestaan om[ENTER]de bovenste verdiepingen te betreden. Kom terug[ENTER]wanneer je meer ervaring hebt. Je moet tenminste[ENTER]Level 75 zijn.
 692	De Zin-Sa-Gui Toren Kaart opent het pad naar de[ENTER]volgende verdieping. Je kunt ze vinden door de[ENTER]Metin Stenen te vernietigen.
@@ -702,7 +702,7 @@
 702	5 minuten over
 703	Tijd is voorbij!
 704	De valse Metin Stenen verdwijnen...
-705	Ik wil de Draak doden!
+705	Ik wil de draak doden!
 706	Je bent niet de eerste die toegang eist. Zeg me[ENTER]het geheime nummer, anders laat ik je er niet in!
 707	Dat was niet het juiste getal!
 708	Ik zal het opnieuw proberen.
@@ -713,10 +713,10 @@
 713	De groep van %s probeert de Blauwe Draak te doden!
 714	Je hebt niet genoeg sleutels. Om de portaal te[ENTER]activeren heb ik nodig
 715	Je kunt het krijgen van de kwade leiders Yonghan[ENTER]en Huashin.
-716	Ik wil deze plek verlaten!
+716	Ik wil deze plaats verlaten
 717	Ik neem je mee terug naar de Grotto ingang.
 718	Ja, doe dat.
-719	Nee, Ik blijf hier.
+719	Nee, ik blijf hier.
 720	Een andere groep is al bezig om de Draak te[ENTER]doden. Je moet even wachten voordat je de Draken[ENTER]Tempel kunt betreden.
 721	Als je wilt kan ik je nu meenemen naar de[ENTER]drakengrot. Geef mij
 722	Hier, neem dit en laat me binnen!
@@ -735,7 +735,7 @@
 735	Nee, dat klinkt te lastig.
 736	Prima, dat is dan jouw keuze.
 737	De sterren staan nog niet op één lijn, je bent te[ENTER]vroeg teruggekomen! Je moet nog %s wachten.
-738	Overgebleven tijd
+738	Tijd over:
 739	Verzamel Materialen
 740	Materialen voor de Metamorfose Bol
 741	Materialen Verzameld
@@ -745,14 +745,14 @@
 745	Het is je niet gelukt de vereiste materialen te[ENTER]verzamelen in de toegestane tijd.
 746	Wil je me %s van dit materiaal geven?
 747	Helaas kun je mijn diensten niet betalen.[ENTER]Ik heb ook nog 150.000 Yang nodig van je.
-748	Hier, alsjeblieft.
+748	Alsjeblieft!
 749	Nee bedankt, ik houd ze liever zelf!
 750	Dankjewel, je hebt er hard voor gewerkt.[ENTER]Alles is helemaal volgens plan gegaan. Ik ben[ENTER]blijkbaar nog niet zo roestig als ik zelf dacht.[ENTER]Hier, neem dit:
 751	Oh jee, mijn broze botten hebben me weer eens in[ENTER]de steek gelaten. Het is me niet gelukt om[ENTER]Metamorfose Bollen te maken. Sta me toe je dit[ENTER]item te geven om het enigszins goed te maken met[ENTER]je:
 752	Zoals u wenst.
-753	Drakensteen Scherf?!
+753	Drakensteen Scherven+?!
 754	In je handen ligt het fragment van een steen. Hij[ENTER]vonkelt alsof het vol geheimen zit en je voelt de[ENTER]kracht er doorheen stromen. Wat is dit voor een[ENTER]steen? Breng hem naar de alchemist. Hij kan je[ENTER]verder helpen.
-755	Drakensteen Scherf?!
+755	Drakensteen Scherven+?!
 756	Dat is een scherf van een Drakensteen - een[ENTER]extreem zeldzaam en waardevol kristal met veel[ENTER]kracht. Het wordt gezegd dat zo een steen de ziel[ENTER]van een draak is. Ongelofelijk mooi! Voel je de[ENTER]kracht die er doorheen stroomt wanneer je hem[ENTER]oppakt en bij je draagt? Breng me 10 van deze[ENTER]scherven en dan kan ik ze veranderen in een hele[ENTER]steen.
 757	Drakensteen transmutatie
 758	Wees niet zo ongeduldig! ik kan alleen 10[ENTER]scherven transmuteren tot een Drakenstenen.[ENTER]Blijf zoeken!
@@ -771,7 +771,7 @@
 771	Kracht van het Drakenoog
 772	Overgebleven Kracht van het Drakenoog: %d
 773	Selecteer
-774	Es gibt keine Drachensteinsplitter mehr
+774	Er zijn geen Drakensteen Scherven meer.
 775	Geef me de Kracht van het Drakenoog
 776	Hallo! Je hebt vandaag de Kracht van het[ENTER]Drakenoog al ontvangen. Het proces verzwakt me zo[ENTER]veel dat ik je maar 1x per dag kan helpen.[ENTER]Kom morgen terug!
 777	Hallo! Ik durf er om te wedden dat je hier bent[ENTER]voor de Kracht van het Drakenoog, niet waar?[ENTER]Heel goed dan, alsjeblieft. Veel geluk op je[ENTER]zoektocht. Ik hoop dat je genoeg scherven vindt[ENTER]voor 10 Drakenstenen!
@@ -806,7 +806,7 @@
 806	Dit item is niet geschikt voor mijn technologie.[ENTER]Breng me iets anders.
 807	Dit item heeft niet genoeg energie. Breng me een[ENTER]met een minimum level van 35 - dat is de enige[ENTER]manier waarop ik zijn energie met mijn[ENTER]technologie er uit kan halen.
 808	Zal ik dit item vernietigen?
-809	Ja
+809	Ja!
 810	Nee, nog niet!
 811	Ik heb gefaald - helaas kon ik geen Energie[ENTER]Fragmenten eruit halen. Misschien heb ik de[ENTER]volgende keer meer geluk.
 812	Geweldig! Ik ben erin geslaagd om %d Energie[ENTER]Fragmenten te vinden. Daar ga je.
@@ -815,7 +815,7 @@
 815	Je hebt niet genoeg Energie Fragmenten.[ENTER]Ik kan met dat geen Energie Kristal produceren.[ENTER]Kom weer wanneer je minstens %d fragmenten hebt[ENTER]verzameld.
 816	Heel goed, je hebt de benodigde %d Energie[ENTER]Fragmenten. Ik kan met dat een Energie Kristal[ENTER]produceren. Wacht een minuut. Ik zal het[ENTER]proberen, maar ik kan niet garanderen dat het zal[ENTER]werken.
 817	Alles is klaar om de fragmenten te smelten in een[ENTER]Energie Kristal. Ik heb echter ook iets nodig om[ENTER]van te leven, en mijn gereedschap komt ook niet[ENTER]uit de lucht vallen. Ik eis een kleine onkosten[ENTER]van %d Yang. Ben je bereid te betalen?
-818	Natuurlijk.
+818	Natuurlijk!
 819	Nee, nu nog niet.
 820	Oke, ik respecteer je beslissing.[ENTER]Kom weer wanneer je van gedachten veranderd bent[ENTER]en een Energie Kristal nodig hebt.
 821	Sorry, je moet eerst betalen. Ik ben geen[ENTER]liefdadigheid. Het is gewoon zakelijk - geef me[ENTER]het geld dan zal ik mijn werk doen.
@@ -856,7 +856,7 @@
 856	Heb je eieren gevonden?
 857	Je moet me %d eieren geven voor dat!
 858	Ok, ik neem het!
-859	Nee, dank je.
+859	Nee, liever niet!
 860	Bedankt voor de eieren. Veel plezier met je[ENTER]Paas-kado!
 861	Lege mand:
 862	Wil je dit voorwerp hebben?
@@ -883,13 +883,13 @@
 883	Jij weer! Wil je een geheim weten? Met een beetje[ENTER]geluk kun je in die Halloween Kisten een Jack[ENTER]O'Lantaarn Masker Kaart vinden.
 884	Je kunt deze kaart gebruiken om èèn van deze[ENTER]spookachtige Jack O'Lantaarn maskers te krijgen.[ENTER]Wil je een masker?
 885	Je hebt geen Jack O'Lantaarn Masker Kaart?[ENTER]Dan krijg je ook geen Jack O'Lantaarn masker![ENTER]Haha!
-886	Historicus:
+886	Historicus?
 887	Historicus:
 888	Leer van het verleden en sta open voor de[ENTER]toekomst! Hoe kan ik je van dienst zijn?
 889	Het spijt me, kennen wij elkaar?
 890	Waar zijn mijn manieren? Ik vergat mezelf voor te[ENTER]stellen. Ik ben de veelgereisde Historicus. Mocht[ENTER]je vragen hebben over geschiedenis, schroom dan[ENTER]niet om het me te vragen!
 891	Het is me een eer u te ontmoeten. Ik zou je wat[ENTER]vaker moeten bezoeken.
-892	Was Süßes
+892	Iets Zoets
 893	Heel jammer. Tot de volgende keer.
 894	Dan begrijp je wat ik bedoel. Als je deze[ENTER]Snoepjes wil, breng mij dan alsjeblieft een stuk[ENTER]Brood.
 895	Ik geef je één Snoepje voor 10 Brood. Vind je dat[ENTER]een goed voorstel?
@@ -917,7 +917,7 @@
 917	Ik heb je vandaag al gezien en je bent al beloond.Onthoud goed: alleen de geduldigen behalen hun[ENTER]doel.
 918	Het Geluk van de Brutalen
 919	Ik verwachtte je al. Mijn tijd hier zit er bijna[ENTER]op en ik trek de wereld in op zoek naar meer[ENTER]historische informatie.
-920	Je hebt %d Zegeningsfruit veilig gehouden voor me.
+920	Je hebt %d Zegeningsfruit veilig gehouden voor me. 
 921	Zou je ze aan mij willen geven voor mijn lange[ENTER]reis? Het zou je niet veel schade moeten[ENTER]berokkenen.
 922	Alsjeblieft, neem ze
 923	Nee
@@ -959,7 +959,7 @@
 959	Kan je het zwaard repareren?
 960	Oh! Dat is een prachtig zwaard! Het was eens van[ENTER]Mirine niet? Ik heb gehoord dat je haar geholpen[ENTER]hebt. Je bent een rechtschapen persoon en daarom[ENTER]zal ik je zwaard gratis repareren. Wacht een[ENTER]minuutje...
 961	Hier, het lemmet is zo goed als nieuw. Een heel[ENTER]fijn wapen. Neem het mijn vriend.
-962	Je hebt een Zilveren Zwaard+3 ontvangen.
+962	Je hebt een Zilveren Zwaard+2 ontvangen.
 963	Je hebt een Orchidee Zwaard+2 ontvangen.
 964	Je hebt een Bastaard Zwaard+2 ontvangen.
 965	Je hebt een Barbaren Zwaard+2 ontvangen.
@@ -976,7 +976,7 @@
 976	Plotseling was er een windvlaag. De brief met[ENTER]daarin de locatie van de ervaren soldaat is[ENTER]weggewaaid!
 977	I heb de ervaren soldaat gevonden.
 978	Plotseling, uit het niets, barst de brief in[ENTER]vlammen uit en is niets meer dan zwarte as. Dan
-979	Wärme deinen Körper
+979	verspreidt er een een warmte door je lichaam.
 980	De ervaren soldaat heeft je gezegend!
 981	De ervaren soldaat zegent je!
 982	De brief met de informatie over de locatie van de[ENTER]ervaren soldaat is in staat tot het zegenen van[ENTER]een nieuwe avonturier, als hij of zij de ervaren[ENTER]soldaat heeft gevonden.
@@ -991,18 +991,18 @@
 991	Leraar:
 992	Het effect duurt 5 minuten.
 993	Je kunt een ervaren soldaat slechts één keer per[ENTER]uur vinden. Onze excuses voor het oponthoud.
-994	Ik wil graag meer weten over de vaardigheden[ENTER]voordat ik kies.[ENTER][ENTER]De leraar denkt hier even over na en[ENTER]antwoordt:
+994	Ik wil graag meer weten over de vaardigheden[ENTER]voordat ik kies.[ENTER][ENTER]De leraar denkt hier even over na en antwoordt:
 995	Het is effectiver om te zien hoe de vaardigheden[ENTER]werken in plaats van het luisteren naar mijn[ENTER]beschrijvingen. Mensen hebben de neiging om[ENTER]dingen te vertrouwen die ze met hun eigen ogen[ENTER]kunnen zien.[ENTER]Ik zal je een brief meegeven die de locatie van[ENTER]een ervaren soldaat bevat.
 996	Geen ervaren soldaat
 997	Het spijt me. Er zijn geen ervaren soldaten[ENTER]beschikbaar op het moment. Probeer het later.
 998	Je poging om een ervaren soldaat te vinden is[ENTER]mislukt.
 999	Zoek doelwit %s
 1000	Waar kan ik een Rood Brouwsel kopen?
-1001	Wachter:
+1001	Wachter
 1002	Wachter:
 1003	Je kan het rode drankje bij de algemene winkel[ENTER]kopen. De verkoopster staat verderop. Als je haar[ENTER]niet kan zien, moet je naar de flitsende rode[ENTER]cirkel op de map of de rode punt op de minimap[ENTER]gaan.
 1004	Algemene Winkel Verkoper:
-1005	Algemene Winkel Verkoper:
+1005	Algemene Winkel Verkoper
 1006	Welkom! Ik begrijp dat de Wachter je heeft[ENTER]gestuurd? Heeft hij een rood brouwsel nodig? Dan[ENTER]zal ik je er vijf geven.[ENTER]Alsjeblieft. Deze zijn voor het regeneren van[ENTER]Levens Punten (LP) en smaken best goed.
 1007	Je mag dan wel nieuwe zijn, maar ik ben er zeker[ENTER]van dat je een vaste klant wordt. Daarom geef ik[ENTER]je deze Brouwsels gratis mee. Tot snel.
 1008	Je hebt 5 Rode Brouwsels van de Algemene Winkel[ENTER]ontvangen.
@@ -1017,7 +1017,7 @@
 1017	Welkom in ons dorp avonturier!Ik hoop dat je me[ENTER]kunt helpen. Als ik je 200 Yang geef, wil je dan[ENTER]naar de Algemene Winkel gaan en een Rood Brouwsel[ENTER]voor me halen? Helaas moet ik hier blijven staan.[ENTER]Gebruik je mini map om de Algemene Winkel te[ENTER]localiseren, maak gebruik van het knipperende[ENTER]rode stip.
 1018	Ja
 1019	Je hebt 200 Yang ontvangen van de Wachter. Ga[ENTER]naar de Algemene Winkel en koop een Rood[ENTER]Brouwsel. Je kunt Yang gebruiken om Voorwerpen en[ENTER]diensten van verschillende dorpelingen te kopen.
-1020	Unknown Button [%s]
+1020	UNKNOWN BUTTON [%s]
 1021	Koop een Rood Brouwsel
 1022	Koop een Rood Brouwsel bij de Algemene Winkel en[ENTER]breng het naar de Wachter.
 1023	Ik geloof niet dat ik goed genoeg ben om deze[ENTER]hengel te verbeteren
@@ -1039,61 +1039,61 @@
 1039	Wil je door de Verslinder van Am-heh gaan en je[ENTER]lot tegemoet gaan?
 1040	Entrer
 1041	Peut être plus tard
-1042	Vous ne pouvez passer que par la Gorges d Am Heh après avoir complété la quête du niveau 103
-1043	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1044	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1045	Un seul groupe peut prendre d assaut la forteresse du dragon rouge Vous aurez également besoin d un laissez passer pour entrer
-1046	Je ne peux vous laisser entrer que si vous avez un laissez passer
-1047	Le niveau de tous les membres du groupe doit être d au moins 100 Sinon je ne peux pas vous laisser passer
-1048	Je ne vous laisserai passer que si tous les membres du groupe ont au moins le niveau 100
+1042	Je mag voor het eerst door de Verslinder van[ENTER]Am-heh wanneer je de level 103 missie hebt[ENTER]voltooid.
+1043	De afkoeltijd om het Rode Draken Fort opnieuw te[ENTER]betreden is nog niet verstreken.
+1044	De afkoeltijd om het Rode Draken Fort opnieuw te[ENTER]betreden is nog niet verstreken.
+1045	Alleen een groep mag het Rode Draken Fort[ENTER]bestormen. Tevens is er een Vrijbiljet nodig om[ENTER]naar binnen te mogen.
+1046	Ik kan je alleen door laten gaan als je in het[ENTER]bezit bent van een Vrijbiljet.
+1047	Het level van alle groepsleden moet minimaal[ENTER]level 100 zijn. Anders kan ik je niet door laten[ENTER]gaan.
+1048	Ik zal je eerst door laten gaan wanneer alle[ENTER]leden van de groep minimaal level 100 hebben.
 1049	Forteresse du dragon rouge
-1050	Voulez vous entrer dans la forteresse du dragon rouge
+1050	Wil je het rode Draken Fort betreden?
 1051	Entrer
 1052	Peut être plus tard
-1053	Seul le chef du groupe peut demander l admission
-1054	J apprécie votre courage mais vous serez seul à vous ruiner dans la forteresse du dragon rouge Mettez en place un groupe fort et je vous laisserai rentrer
+1053	Alleen de leider van de groep kan toegang[ENTER]aanvragen.
+1054	Ik bewonder je lef, maak laat je niet alleen je[ENTER]leven geven in het Rode Draken Fort. Vorm een[ENTER]sterke groep en ik zal je toegang geven.
 1055	Lorsque le temps est écoulé le groupe est téléporté hors de la forteresse
 1056	Temps restant Minute n
-1057	Votre temps est écoulé Dans dix secondes vous serez téléporté aux portes de la forteresse
-1058	Dans dix secondes le groupe sera téléporté hors de la forteresse du dragon rouge
-1059	Réveillez la Gorges d Am Heh
-1060	Seul le chef peut réveiller la gorge de Am heh
-1061	La Gorge d Am heh est réveillée Maintenant personne n entre ni ne sort
-1062	Les portes de la forteresse du dragon rouge se ferment pendant une heure
-1063	Temps restant 60 Minute n
-1064	Mission Osez entrer dans l anneau des démons et en sortir victorieux
-1065	Tous les démons n ont pas encore été vaincus
+1057	De tijd is op. Je wordt geteleporteerd naar[ENTER]buiten de fort poort over 10 seconden.
+1058	Je groep zal geteleporteerd worden vanuit het[ENTER]Rode Draken Fort in 10 seconden.
+1059	Wek de Verslinder van Am-heh
+1060	Alleen de groepsleider mag de Verslinder van[ENTER]Am-heh wekken.
+1061	De Verslinder van Am-heh is gewekt. Nu kan[ENTER]niemand meer binnen komen – of er uit gaan.
+1062	De poorten van het Rode Draken Fort blijven[ENTER]gesloten voor een uur.
+1063	Overgebleven tijd: 60 minuten
+1064	Taak: Reis door de Demonen Ring en kom naar[ENTER]buiten als overwinnaar.
+1065	Nog niet alle demonen zijn verslagen.
 1066	Restant
 1067	Tâche Trouvez l engrenage en or et activez le mécanisme caché dans la Stèle de l Isfet
-1068	Le mécanisme de la stèle de l Isfet ne peut être déclenché qu avec l engrenage en or Revenez quand la tâche a été accomplie
-1069	Mission vaincre Ignator gardien des braises
-1070	Ignator n a pas encore été vaincu Travailler dur ou recevoir sa damnation éternelle Revenez lorsque la tâche est terminée
-1071	Tâche Trouvez les Pierre de Maât et placez les dans le bon ordre sur les sept stèles de l Isfet
-1072	Si vous utilisez la Pierre de Maât sur la mauvaise stèle elle se brisera
-1073	L erreur est humaine Par conséquent choisissez judicieusement pour résoudre le puzzle Renvenez lorsque la tâche est terminée
-1074	Mission Seuls ceux qui n ont pas peur de la chaleur accablante vont détruire le Metin du Purgatoire
-1075	Laissez le Metin du Purgatoire se transformer en cendres et revenez lorsque la tâche sera accomplie
+1068	Het mechanisme in het Stele van Isfet kan alleen[ENTER]geactiveerd worden met het Gouden Tandrad. Kom[ENTER]terug wanneer je de taak hebt voltooid.
+1069	Taak: Verslag Ignator, Bewaker van de Sintel.
+1070	Ignator is nog niet verslagen. Versla hem of word[ENTER]begroet met eeuwige verdoemenis. Keer terug als[ENTER]de taak is voltooid.
+1071	Taak: Zoek voor de Stenen der Maat en plaats ze[ENTER]op de zeven Steles van Isfet in de juiste[ENTER]volgorde.
+1072	Als je de Steen der Maar op de verkeerde Stele[ENTER]gebruikt, zal deze breken.
+1073	Fouten maken is nou eenmaal menselijk, dus denk[ENTER]goed na voordat je de puzzel probeert op te[ENTER]lossen. Kom terug wanneer je de taak voltooid[ENTER]hebt.
+1074	Taak: Alleen zij die niet bang zijn voor de[ENTER]zingende hitte kunnen de Vagevuur Metin verslaan.
+1075	Reduceer de Vagevuur Metin tot as. Keer terug als[ENTER]de taak voltooid is.
 1076	Tous les démons ont été vaincus
-1077	Visitez la Gorge d Am heh pour ouvrir un autre Verrou du destin
-1078	La stèle d Isfet a été détruite
-1079	Cet engin était un faux et a été détruit Trouvez l original
-1080	Ignator gardien des braises a été tué
-1081	C était un choix judicieux Détruire la prochaine stèle
-1082	C était un choix judicieux Détruire la prochaine stèle
-1083	Mauvais ordre La pierre du Maat a été détruite
-1084	C était un choix judicieux Détruire la prochaine stèle
-1085	C était un choix judicieux Détruire la prochaine stèle
-1086	C était un choix judicieux Détruire la prochaine stèle
-1087	Dat was een wijze keuze. Vernietig nu de laatste[ENTER]Stele en Maat zal zegevieren.
-1088	La Metin du Purgatoire a été détruite
-1089	Razador a été tué
-1090	Tous les combattants seront téléportés hors du Temple du Dragon dans une minute
-1091	Pour passer par la Gorge d Am heh votre chef doit avoir au moins le niveau 104
-1092	Votre force n est pas suffisante pour traverser la Gorge d Am heh Revenez dès que vous atteignez le niveau 104 ou supérieur
-1093	Vous êtes à l extérieur des portes de la forteresse du dragon rouge depuis plus de cinq minutes et vous ne pouvez plus rentrer
-1094	Le temps de rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1095	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe nécessite un passe Les joueurs suivants n en portent pas actuellement
-1096	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe doit avoir atteint le niveau 100 Les joueurs suivants n ont pas atteint le niveau pour le moment
+1077	Bezoek de Verslinder van Am-heh om het Slot van[ENTER]het Lot verder te openen.
+1078	De Stele van Isfet is vernietigd.
+1079	Dit Gouden Tandrad was nep en is vernietigt. Vind[ENTER]het origineel.
+1080	Ignator, Bewaker van de Sintel, is verslagen.
+1081	Dat was een wijze keuze. Vernietig nu de volgende[ENTER]Stele.
+1082	Dat was een wijze keuze. Vernietig nu de volgende[ENTER]Stele.
+1083	Incorrecte volgorde, De Steen der Maat is[ENTER]hierdoor vernietigt.
+1084	Dat was een wijze keuze. Vernietig nu de volgende[ENTER]Stele.
+1085	Dat was een wijze keuze. Vernietig nu de volgende[ENTER]Stele.
+1086	Dat was een wijze keuze. Vernietig nu de volgende[ENTER]Stele.
+1087	Dat was een wijze keuze. Vernietig nu de laatste[ENTER]Stele en Maat zal zegevieren over Isfet.
+1088	De Vagevuur Metin is vernietigt.
+1089	Razador is verslagen
+1090	Alle krijgers zullen geteleporteerd worden vanuit[ENTER]de Drakentempel.
+1091	Om door de Verslinder van Am-heh te gaan, moet de[ENTER]leider minimaal level 104 zijn.
+1092	Je kracht voldoet nog niet aan de eisen om door[ENTER]de Verslinder van Am-heh te gaan. Kom terug als[ENTER]je level 104 hebt bereikt.
+1093	Je hebt langer dan 5 minuten voor de Poort van[ENTER]het Rode Draken Fort gezworven en mag nu niet[ENTER]meer naar binnen.
+1094	De afkoeltijd om het Rode Draken Fort opnieuw te[ENTER]betreden is nog niet verstreken.
+1095	WAARSCHUWING! Om het Rode Draken Fort te betreden[ENTER]moet elk groepslid een Vrijbiljet hebben. De[ENTER]volgende spelers hebben er op dit moment nog[ENTER]geen:
+1096	Waarschuwing! Om het Rode Draken Fort te betreden[ENTER]moeten alle groepsleden level 100 hebben bereikt.[ENTER]De volgende spelers hebben dit level nog niet[ENTER]bereikt:
 1097	The group from %s has killed the Razador!
 1098	Het Jinno Koninkrijk betreedt het heilige land.
 1099	Je kunt niet deelnemen!
@@ -1122,7 +1122,7 @@
 1122	Vertel me mijn toekomst maar niet
 1123	Dat klopt. Je eigen pad volgen en je best doen is[ENTER]het belangrijste ding in het leven. Veel succes.
 1124	Ja, ik zou er graag één willen.
-1125	Nee, dank je
+1125	Nee, dank je.
 1126	Ik mag dan wel vriendelijk zijn, maar ik kan het[ENTER]niet gratis weggeven. Als je ongeluk en tegenslag[ENTER]wilt vermijden, moet je de prijs van de Talisman[ENTER]betalen.[ENTER]Het kost %s Yang.
 1127	Ga je weg? Misschien heb je gelijk. Ongeluk en[ENTER]verdriet zijn een onderdeel van het leven. Wees[ENTER]voorzichtig en vaarwel. Als je van gedachten[ENTER]verandert, kom dan maar terug.
 1128	Je gezicht vertelt me dat je hier niet al te lang[ENTER]bent. Waarom wil je je toekomst nu al weten? Heb[ENTER]je problemen? Je lot heeft veel training nodig.[ENTER]Kom later terug.
@@ -1146,7 +1146,7 @@
 1146	Berg Sohan
 1147	Doyyumhwan
 1148	Desert Yongbi
-1149	Temple Hwang
+1149	Hwang-Tempel
 1150	Grotte de l exil
 1151	Nachricht der Turnier-Leitung
 1152	Willkommen zum großen Metin2-Turnier! In deinem[ENTER]Inventar findest du die Rätselhafte Truhe. Sobald[ENTER]du mit der rechten Maustaste darauf klickst,[ENTER]wirst du in das Feuerland teleportiert - und die[ENTER]Kämpfe können beginnen!
@@ -1363,7 +1363,7 @@
 1363	Tijd tot opheffing: %s dag(en)
 1364	Wachttijd
 1365	Eerst volgende mogelijk de poging te herhalen: %s[ENTER]uur.
-1366	Overgebleven tijd
+1366	Tijd over:
 1367	Onmiddelijke aanpassing
 1368	Onmiddelijke registratie mogelijk.
 1369	Je kunt de rang van je gilde vergelijken met[ENTER]vergelijkbare gilden die net onder of boven je[ENTER]staan in de ranglijst: [DELAY value;0][ENTER]|Gilde naam |Punten |Gewonnen |Gelijkspel|Verloren%s[/DELAY][ENTER]
@@ -1377,7 +1377,7 @@
 1377	Koop een weddenschap briefje voor je Koninkrijk.[ENTER][ENTER]1. Bij elke Gilde Oorlog, is er een aankondiging[ENTER]over de mogelijke voorspelling van hoe hoog de[ENTER]winnende Gilde zal winnen.[ENTER]2. Als je een weddenschap briefje hebt gekocht,[ENTER]kun je wedden of dat de Gilde die je denkt gaat[ENTER]winnen het beoogde verschil gaat halen of niet.[ENTER]3. De mogelijkheden om een weddenschap te kiezen[ENTER]hangt van het wedkantoor af. Wanneer de oorlog[ENTER]over is, zul je geïnformeerd worden of dat je[ENTER]gewonnen hebt of niet.[ENTER][ENTER]*10% van de winst word aan het Koninkrijk betaald.
 1378	%s tegen %s
 1379	Gevecht administrator:
-1380	 met
+1380	met
 1381	Er is geen Gilde Oorlog op dit moment waar je op[ENTER]kunt wedden.
 1382	Voor welke Gilde Oorlog wil je een weddenschaps[ENTER]briefje voor kopen?
 1383	Op mijn lijst staat dat je al een weddenschaps[ENTER]briefje hebt gekocht voor deze Gilde Oorlog. Je[ENTER]kunt maar één briefje per oorlog kopen.
@@ -1446,12 +1446,12 @@
 1446	Je moet jezelf niet voor geen reden in gevaar[ENTER]brengen! Neem de Rijstwafels naar Wonda-Rim. Hij[ENTER]zal je er voor belonen. Hoe meer rijstwafels je[ENTER]hem brengt, hoe waardevoller je beloning zal[ENTER]zijn.
 1447	Jullie hebben al onze voorraden terug gebracht![ENTER]Wij zijn je heel dankbaarheid. Zonder jou zouden[ENTER]we echt in de problemen zijn geweest!
 1448	Een groot deel van onze voorraden mist nog.[ENTER]Kunnen we op je blijven rekenen?
-1449	Natuurlijk.
+1449	Uiteraard!
 1450	Ik help jullie later.
 1451	Ik zal hier op je wachten.
 1452	Taak %s[ENTER]Je kunt deze taak in totaal tien keer accepteren.
 1453	We zouden zonder jou verloren zijn. Wil je ons[ENTER]blijven helpen? Een groot deel van onze voorraden[ENTER]worden nog vermist.
-1454	Ja, ik zal doorgaan.
+1454	Ik ga door!
 1455	Ik kom later terug.
 1456	Je bent een dappere strijder. Bijf alsjeblieft[ENTER]doorgaan![ENTER][ENTER]Taak %s[ENTER]Je kunt deze taak in totaal tien keer accepteren.
 1457	Helhond
@@ -1475,7 +1475,7 @@
 1475	Terwijl jij weg was is ons dorp opnieuw[ENTER]aangevallen!
 1476	Kwal van Hel
 1477	Zombie
-1478	Vlam Krijgers
+1478	Vlam Krijger
 1479	Brul Kikker Generaal
 1480	Donkere Oproeper
 1481	Arahan krijger
@@ -1714,7 +1714,7 @@
 1714	Ik wil dit niet nog een keer zeggen. Als je paard[ENTER]wilt rijden dan moet je je Paarden Medaille bij[ENTER]je hebben!
 1715	Wanneer je de Strijdpaarden Boek hebt, kun je je[ENTER]vijanden aanvallen vanaf de rug van je paard. Ik[ENTER]ga je gevechtservaring testen en je ruiterschap.[ENTER]Ga naar de woestijn en dood wat Schorpioen[ENTER]Boogschutters. Je kunt er naar toe gaan met een[ENTER]Groep, maar JIJ moet de Groepsleider zijn.
 1716	Ok, kom later terug.
-1717	Unknown Button [%s]
+1717	UNKNOWN BUTTON [%s]
 1718	Ik denk niet dat je het Strijdpaarden Boek kan[ENTER]krijgen. Dat is raar, en ik weet niet waarom.[ENTER]Vraag eens aan een GM wat er aan de hand is.
 1719	Je hebt een Paarden Medaille nodig om de quest[ENTER]voor de Strijdpaarden Boek te starten. Je kunt er[ENTER]één vinden in de Apen Kerker.
 1720	Boogsch. overig
@@ -1734,7 +1734,7 @@
 1734	Ok. Veel succes volgende keer.
 1735	Je kunt een dood paard niet verbeteren! Zoek de[ENTER]bewustzijn kruiden die je paard weer tot leven[ENTER]wekken. Dan kunnen we eens kijken naar het[ENTER]verbeteren van je paard.
 1736	Je hebt geen tijd om rond te hangen! Dood de[ENTER]Demon Boogschutters zo snel mogelijk, als je wilt[ENTER]slagen voor de test!
-1737	Unknown Button [%s]
+1737	UNKNOWN BUTTON [%s]
 1738	Keer terug naar de Staljongen
 1739	Vertel de Staljongen de resultaten van je test.
 1740	Vordering van de test.
@@ -1809,27 +1809,27 @@
 1809	 dood %s
 1810	Ok! We gaan ervoor!
 1811	Du hast die Herausforderung angenommen zu töten
-1812	 dood %s
+1812	dood %s
 1813	Momentan müssen noch getötet werden um den Jagdauftrag abzuschließen
-1814	 Aantal van deze soort:
+1814	Aantal van deze soort:
 1815	Informatie over de jacht opdracht
-1816	Versla het doelwit
+1816	![ENTER]Dood het doelwit!
 1817	Dood %s!
 1818	show_mob_pos: map_index(%s) < 0
 1819	show_mob_pos: map_index(%s)
 1820	show_mob_pos: special.lvq_map[map_index(%s)] is nil
 1821	addmapsignal(%s,%s)
 1822	Overig
-1823	Versla het doelwit
+1823	![ENTER]Dood het doelwit! :
 1824	Aantal doelwitten
 1825	Beloning: %s%% ervaring
-1826	Ervaring
+1826	% ervaring
 1827	Quest afgerond.
 1828	Opdracht:
 1829	Quest afgerond.
 1830	Fantastisch, je hebt de opdracht succesvol[ENTER]afgerond.
 1831	Level
-1832	 Voorwerp
+1832	Voorwerp
 1833	Ervaring
 1834	%s ontvangen.
 1835	Beloning:
@@ -1838,7 +1838,7 @@
 1838	Keer terug naar Ariyoung.
 1839	Keer terug naar het dorp en vertel Ariyoung dat[ENTER]je de aandenken van haar man niet kon vinden.
 1840	Ga bij Ariyoung langs.
-1841	Ga naar Ariyoung
+1841	Ga naar Ariyoung.
 1842	Ga naar Ariyoung en vertel haar over de dood van[ENTER]haar man.
 1843	Kill the leader of the Black Wind Gang.
 1844	Kill the leader of the Black Wind Gang.
@@ -1936,7 +1936,7 @@
 1936	Naar de Demon toren....
 1937	De Toren is vergeven met demonen. Alleen de[ENTER]sterkste krijgers zijn in staat om de bovenste[ENTER]verdiepingen te halen. Echter, er wordt beweerd[ENTER]dat ieder die de toren betreedt er niet levend[ENTER]vandaan komt. Wil je nog steeds de toren[ENTER]betreden?
 1938	De Toren is vergeven met demonen. Alleen de[ENTER]sterkste zijn in staat om de bovenste[ENTER]verdiepingen te halen. Echter, er wordt beweerd[ENTER]dat ieder die de toren betreedt er niet levend[ENTER]vandaan komt. Je kunt de toren niet betreden[ENTER]omdat je level 40 nog niet bereikt hebt.
-1939	Niet betreden
+1939	Niet betreden.
 1940	Uitschakelen
 1941	Junjeh Koninkrijk
 1942	Shinsoo Koninkrijk
@@ -1974,8 +1974,8 @@
 1974	Ongeluk
 1975	Vandaag is de slechtste dag ooit voor je. Alle[ENTER]Goden op hemel en aarde hebben hun rug naar je[ENTER]toegekeerd. Niets zal werken... Als je vuut wilt[ENTER]maken, zal het regenen; als je dorstig bent, zal[ENTER]de zon op je neer branden. Je zult net zo hard[ENTER]werken als anderen, maar je zult niets krijgen.[ENTER]"Heel Veel Ongeluk"! Je zult een hoop moeten[ENTER]doorstaan. Slechts pijn en verdriet zullen je[ENTER]vinden. Deze Talisman zal je geluk verhogen en je[ENTER]dag iets beter maken. Wil je een Talisman kopen?
 1976	Heel Veel Ongeluk
-1977	Drieweg Snede
-1978	Zwaard Slag
+1977	Drie Weg Snede
+1978	Zwaard Dreun
 1979	Overval
 1980	Snelle Aanval
 1981	Draaiend Mes
@@ -1989,7 +1989,7 @@
 1989	Gif Pijl
 1990	Vinger Slag
 1991	Draken Wervel
-1992	Magisch Mes
+1992	Betoverd Mes
 1993	Angst
 1994	Betoverd Pantser
 1995	Opheffing
@@ -2058,7 +2058,7 @@
 2058	Ok dan.[ENTER][ENTER]Ik zal je verwijderen van de Gilde.
 2059	Ja
 2060	Gilden zoals de jouwe hebben de volgende gevechts[ENTER]resultaten:[ENTER][DELAY value;0]
-2061	  |Gilde naam |Punten |Gewonnen[ENTER]|Gelijkstand |Verloren
+2061	|Gilde naam |Punten |Gewonnen |Gelijkstand[ENTER]|Verloren
 2062	De gevechts resultaten van rank 1 tot rank 10[ENTER]zijn:[ENTER][DELAY value;0]
 2063	Je Gilde rank is
 2064	, en het tabel resultaat is
@@ -2085,13 +2085,13 @@
 2085	Breng de ingrediënten naar Baek-Go.
 2086	Breng de ingrediënten voor het medicijn naar[ENTER]Baek-Go.
 2087	Keer terug naar Baek-Go, geef hem de Schorpioenen[ENTER]staat en maak het medicijn voor Yu-Rang.
-2088	Zoek Huahn-So .
+2088	Zoek Huahn-So.
 2089	Zoek Huahn-So .
 2090	Ga naar Huahn-So en luister naar zijn verhaal.
 2091	Terug naar Huahn-So
 2092	Rapporteer je succes aan Huahn-So.
 2093	Rapporteer je succes aan Huahn-So en ontvang je[ENTER]beloning.
-2094	Huahn-So
+2094	Huahn-So:
 2095	Voorwerp val percentage
 2096	Level
 2097	Door de level up
@@ -2107,9 +2107,9 @@
 2107	Willekeurige Voorwerp
 2108	een beloning voor de level opdracht is gegeven.
 2109	Overige - Aantal
-2110	Gedood
+2110	Gedood!
 2111	Aantal doelwitten
-2112	Versla het doelwit
+2112	![ENTER]Dood het doelwit!
 2113	Gedood
 2114	!
 2115	Hoe maak ik Rijst knoedels?
@@ -2134,7 +2134,7 @@
 2134	Ingang van de moelijke Apen Kerker
 2135	1. Wanneer je de Apen Kerker binnen gaat, moet je[ENTER]de hoofdaap binnen 20 minuten doodmaken.[ENTER]2. Je mag geen geschriften gebruiken om terug te[ENTER]keren naar een stad of een andere plek.[ENTER]Vele die deze regels niet hebben gevolgd zijn in[ENTER]een aap veranderd, dus pas op jezelf.
 2136	Niet betreden
-2137	Overgebleven tijd
+2137	Tijd over:
 2138	Apen Kerker
 2139	Hehe, iedereen zal doodgaan!
 2140	Stukjes, stukjes, stukjes, stukjes!
@@ -2657,7 +2657,7 @@
 2657	Niet staren, vecht!
 2658	Ik hou er niet van hoe je naar me staart. Vecht!
 2659	Het is een eer om te sterven door mijn zwaard!
-2660	Uitstekend!
+2660	Fantastisch!
 2661	Hey daar, niet aanraken!
 2662	Ziet ernaar uit dat mijn boogsnaar kapot is.
 2663	Verdikkeme, die idioten waren hier.
@@ -2822,7 +2822,7 @@
 2822	Ahhhhh, jaaaaaaaa!
 2823	Laat me de ziekte doorgeven aan jou!
 2824	Dit hardnekkige oorzaak van de mysterieuze ziekte!
-2825	 = benodige Voorwerp.
+2825	= benodige Voorwerp.
 2826	Je kunt er niet heen, omdat ik er zelf nog niet[ENTER]ben geweest.
 2827	Teleporteer.
 2828	Hallo! Ik weet hoe je naar andere gebieden kunt[ENTER]gaan vanaf hier. Als je me wat Yang geeft, kan ik[ENTER]je daar naartoe teleporteren.
@@ -2843,7 +2843,7 @@
 2843	Vertel de Oude Piraat dat je de medicijn niet kon[ENTER]krijgen.
 2844	Keer terug naar de Oude Piraat.
 2845	Ik kan de medicijn niet vinden! Wat ga ik de Oude[ENTER]Piraat vertellen?
-2846	Breng de medicijn naar de Oude Piraat.
+2846	Breng de medicijn naar de oude piraat.
 2847	Breng de medicijn naar de Oude Piraat.
 2848	Breng de medicijn naar de Oude Piraat en ontvang[ENTER]je beloning.
 2849	Ik heb de medicijn.
@@ -2887,7 +2887,7 @@
 2887	Oude Piraat:[ENTER]Verdomme, wat wil je van me! Die ouwe taart van[ENTER]de algemene winkel heeft over me gepraat, niet[ENTER]waar? Ja, alles wat ze zei is waar. Maar ik heb[ENTER]geen tijd om naar een dokter te gaan. Ik heb[ENTER]zoveel vbijanden!
 2888	Oude Piraat:[ENTER]Je weet maar nooit wanneer één van die schoften[ENTER]opeens voor je staat en je zo neersteekt! Maar[ENTER]het jeuken is verschrikkelijk; ik kan er niet[ENTER]meer tegen! Wat dacht je ervan? Als jij nou eens[ENTER]naar de dokter gaat en medicijn haalt. Als je het[ENTER]voor me haalt, krijg je een beloning.
 2889	Oude Piraat:[ENTER]Iemand anders heeft me al de medicijn gebracht.[ENTER]Nou, geen beloning voor jou dus!
-2890	Ga naar de Oude Piraat
+2890	Ga naar de oude piraat
 2891	Ga naar de Oude Piraat
 2892	Ga naar de Oude Piraat en vraag hem waarom hij[ENTER]niet naar een dokter gaat.
 2893	Oude Piraat:[ENTER]Alles jeukt! Ik had niet tegen die gozer op[ENTER]moeten botsen! We hebben elkaar nauwelijks[ENTER]aangeraakt! Sindsdien komt er pus uit de plek die[ENTER]hij heeft aangeraakt en mijn hele lichaam jeukt![ENTER]Alsof ik wegrot terwijl ik nog leef! Eikel!
@@ -3041,7 +3041,7 @@
 3041	Onderzoek de Vlammen
 3042	Dood 40 Vlammen.
 3043	De Vlammen zijn ongelofelijk brutaal. Ze genieten[ENTER]genieten van de pijn die mensen hebben als ze hun[ENTER]huid verslinden. We weten nog steeds niet hoe we[ENTER]ze moeten doden. Kun jij dat uitzoeken?
-3044	Vlam Krijgers
+3044	Vlam Krijger
 3045	Dood 60 Vlam Krijgers.
 3046	Niet al te lang geleden, werd een kind van een[ENTER]edelman vermoord die naar de Doyyumhwan door een[ENTER]vlam Krijger. Als je de Vlam Krijgers dood, krijg[ENTER]je een beloning. Waarom probeer je het niet?
 3047	Bestudeerd de Spook Bomen
@@ -3126,7 +3126,7 @@
 3126	Het is lang geleden dat de Wilden de grens hebben[ENTER]gepasseerd en het dorp hebben aangevallen. Het[ENTER]aantal mensen dat door hun gedood werd liep in de[ENTER]honderden. De mensen die geïnfecteerd raakten was[ENTER]nog hoger. Deze kwaadaardige Wilden zijn zo bruut[ENTER]dat niemand moedig geneog is om ze te stoppen.[ENTER]Maar we kunnen ze niet meer toleren.[ENTER][ENTER]Dood 25 Leiders van de Wilden. Als je slaagt[ENTER]krijg je:
 3127	Beloning
 3128	Gedurende de test periode van de quests, kunnen[ENTER]geen beloningen ontvangen worden. Als een[ENTER]beloning eenmaal ontvangen is, kan de huidige[ENTER]quest weer gespeeld worden.
-3129	Opdracht:
+3129	Quest
 3130	Welke pijl bestaat er niet in Metin2?
 3131	Houten Pijl
 3132	IJzeren Pijl
@@ -3182,7 +3182,7 @@
 3182	Meester
 3183	2
 3184	Welke is geen onderdeel van lichaams-gevechts[ENTER]training?
-3185	Drieweg Snede
+3185	Drie Weg Snede
 3186	Zwaard Wervel
 3187	Rennen
 3188	Aura des Schwerts
@@ -3196,7 +3196,7 @@
 3196	Welke is geen vaardigheid van mentale-gevechts[ENTER]training?
 3197	Slag
 3198	Sterk Lichaam
-3199	Zwaard Slag
+3199	Zwaard Dreun
 3200	Hoek Slag
 3201	4
 3202	Welke is geen vaardigheid van lange[ENTER]afstand-gevechts training?
@@ -3248,7 +3248,7 @@
 3248	Sjamaan
 3249	4
 3250	Welke is een vaardigheid van wapentraining?
-3251	Magisch Mes
+3251	Betoverd Mes
 3252	Spook Slag
 3253	Donkere Bescherming
 3254	Geest van de Vlam
@@ -3434,9 +3434,9 @@
 3434	Roestig Mes
 3435	4
 3436	Wanneer heb je zowel een voorwerp als Yang nodig[ENTER]voor het upgraden van een Zilveren Zwaard?
-3437	Wanneer je upgrade naar +5
-3438	Wanneer je upgrade naar +5
-3439	Wanneer je upgrade naar +5
+3437	Wanneer je upgrade naar +1
+3438	Wanneer je upgrade naar +2
+3439	Wanneer je upgrade naar +4
 3440	Wanneer je upgrade naar +5
 3441	4
 3442	Welke term word gebruikt voor een karakter wiens[ENTER]rangpunten negatief zijn?
@@ -3543,7 +3543,7 @@
 3543	4
 3544	Welke is de beste tweehandig wapen?
 3545	Electromagnetisch Mes
-3546	Reuze bijl+0
+3546	Reuze Bijl
 3547	Onthoofdings Mes
 3548	Halberd
 3549	1
@@ -3582,7 +3582,7 @@
 3582	Venter:[ENTER]Help me alsjeblieft. Als je de demon edelsteen+[ENTER]kunt krijgen van de Demon Magiër, zal ik je goed[ENTER]belonen.
 3583	Venter:[ENTER]Iemand anders heeft het al voor me gehaald. Je[ENTER]hoeft het niet meer te doen.
 3584	Ga naar de Venter.
-3585	Ga naar de venter
+3585	Ga naar de Venter
 3586	Ga naar de Venter en vraag naar de demon[ENTER]edelsteen+.
 3587	De Venters brief:[ENTER]Ik weet niet meer wat ik moet doen. De Demon[ENTER]Edelsteen+ is gestolen, en dat zal me ruïneren,[ENTER]aangezien ik alles betaald heb wat ik bezat om[ENTER]het te krijgen... Kan je me aksjeblieft helpen?[ENTER]Ik heb echt je hulp nodig.
 3588	Venter:[ENTER]Is het echt gelukt? Je hebt mijn geliefde steen[ENTER]gevonden? Oh, dank je. Je kan je niet voorstellen[ENTER]hoe opgelucht ik ben!
@@ -3647,7 +3647,7 @@
 3647	Zilver- of Goudstaven kopen
 3648	Nou ja, dan niet. Ik dwing niemand om iets te[ENTER]doen of wel?
 3649	Vergroot mijn Warenhuis
-3650	 : Ik heb er 30, dus ik breng het[ENTER]naar hem toe.
+3650	: Ik heb er 30, dus ik breng het naar hem toe.
 3651	overige Beren Gal.
 3652	Tijd voorbij.. Ik heb gefaald.
 3653	Waarom duurt het zo lang? Je 30 minuten zijn[ENTER]voorbij. Ik kan zo mijn Warenhuis niet[ENTER]uitbreiden!
@@ -3685,7 +3685,7 @@
 3685	Jij weer? Het lijkt wel of je nooit genoeg hebt![ENTER]Nee, genoeg is genoeg. Ik ben Sinterklaas niet!
 3686	Je wilt je Warenhuis uitbreiden? Laat me even[ENTER]uitzoeken hoe je je Koninkrijk kunt dienen.
 3687	Het spijt me, maar ik kan op dit moment niets[ENTER]voor je doen. Ik heb de opslag ruimtes voor[ENTER]zoveel bewoners uitgebreid, er is niet veel[ENTER]ruimte meer over. Het zal even duren voordat ik[ENTER]opnieuw kan uitbreiden.[ENTER]Waarom gebruik je niet gewoon de opslag ruimte[ENTER]die je op dit moment al hebt?
-3688	Het is verkrijgbaar voor 30 Beren Gallen.[ENTER]Je hebt 30 minuten om me 30 Beren Gallen te[ENTER]brengen. Dan, zal ik je accepteren. Maar je[ENTER]hebt
+3688	Het is verkrijgbaar voor 30 Beren Gallen.[ENTER]Je hebt 30 minuten om me 30 Beren Gallen te[ENTER]brengen. Dan, zal ik je accepteren. Maar je hebt
 3689	.
 3690	Ja, ja, praat alleen maar met me wanneer je wat[ENTER]nodig hebt!
 3691	Ik zal het later proberen.
@@ -3695,7 +3695,7 @@
 3695	Weet je waar goudstaven goed voor zijn?[ENTER][ENTER]Als je Yang met je meedraagt is het net alsof je[ENTER]roept: Hey, jij daar, alsjeblieft, dood me![ENTER][ENTER]Daarom wissel ik Yang voor goudstaven in die ik[ENTER]voor iedereen bewaar. Hmm![ENTER][ENTER]Ok, ik vraag iets meer dan de waarde van de[ENTER]goudstaaf, maar dat is niet meer dan eerlijk denk[ENTER]je niet? Er is geen reden om je verraden te[ENTER]voelen, het is daarbuiten heel gevaarlijk.
 3696	Wil je het Warenhuis gebruiken? Je moet er wel[ENTER]voor betalen. Maar ik heb een goede bui vandaag,[ENTER]dus ik zal het aanbieden voor maar 500 Yang. Wat[ENTER]denk je ervan? Goedkoop niet? Hahaha!
 3697	Oh, welkom!
-3698	Welkom!
+3698	Welkom.
 3699	Nou, is dat een toekomstige held?
 3700	Oh, niets.
 3701	Wat, niet genoeg Yang? Kom terug wanneer je[ENTER]genoeg hebt.
@@ -3704,7 +3704,7 @@
 3704	Betaal
 3705	Percentage van Yang bom drops
 3706	%d dag(en) en %d uur.
-3707	%d uur %d min.
+3707	%d minuten en %d seconden
 3708	%d minuten en %d seconden
 3709	%d seconden
 3710	Vrouw
@@ -3713,7 +3713,7 @@
 3713	Iedereen die vandaag voor me buigt ontvangt een[ENTER]klein nieuwjaarsgeschenk.[ENTER]Maar ze moeten tenminste level 15 zijn. Ik hoop[ENTER]dat je goed bent opgevoed en respect toont voor[ENTER]ouderen en hun wijsheid?
 3714	Ik kan je niet genoeg bedanken. Moge de[ENTER]drakengoden je zegenen. Als blijk van mijn[ENTER]waardering krijg je van mij een zakje Yang.[ENTER]Gelukkig nieuwjaar!
 3715	Ben je hier om me te begroeten met een buiging?
-3716	Jammer, je hebt niet genoeg ruimte in je[ENTER]Inventaris. Kom terug wanneer je ruimte hebt.
+3716	Oh nou... jammer. Jammer, je hebt niet genoeg[ENTER]ruimte in je inventaris. Kom terug wanneer je[ENTER]ruimte hebt.
 3717	Ik wens je alle goeds voor het nieuwe jaar. Maar[ENTER]je hebt je geschenk al ontvangen. Dacht je dat ik[ENTER]je zou vergeten?
 3718	Ja! Veel geluk in het nieuwe jaar!
 3719	Nee
@@ -3721,10 +3721,10 @@
 3721	Oh, dank je. Ik wens je alle goeds voor het[ENTER]nieuwe jaar![ENTER]Jammer genoeg heb ik geen geschenk voor je,[ENTER]alleen degenen die level 15 bereikt hebben,[ENTER]krijgen dit geschenk. Ben niet teleurgesteld[ENTER]hierom, ik weet zeker dat het nieuwe jaar[ENTER]fantastische dingen voor je in petto heeft!
 3722	Reuze bijl+0
 3723	Vind Men. Soon
-3724	Vind Men. Soon
+3724	Vind Soon
 3725	Vind Soon. Luister naar zijn hints over het[ENTER]produceren van nieuwe porselein en rapporteer aan[ENTER]Yonah.
 3726	Vind Yonah de pottenbakker
-3727	vind Yonah de Pottenbakker
+3727	Vind Yonah de pottenbakker
 3728	Ga naar Yonah de pottenbakker. Hij heeft een[ENTER]quest voor je.
 3729	Verzamel gouden tanden van Unggwis.
 3730	Verzamel gouden tanden van Unggwis.
@@ -3736,7 +3736,7 @@
 3736	Keer terug naar Yu-Hwan met de medicijn
 3737	Vertel Yu-Hwan de muzikant dat je het spinnenweb[ENTER]niet kon vinden
 3738	Vind de muzikant Yu-Hwan
-3739	Vind de muzikant Yu-Hwan
+3739	Vind Yu-Hwan de muzikant
 3740	Vind Yu-Hwan de muzikant en luister naar zijn lied
 3741	Vang de klauw spin
 3742	Bang de klauw spin
@@ -3753,7 +3753,7 @@
 3753	Natuurlijk.
 3754	Dankje. Schiet nu op!
 3755	Versla 300 Vuurland demonen rond het fort en de[ENTER]locatie van de Zonnekruiden.
-3756	Dämonenhatz
+3756	Demonenjacht
 3757	Erledige 300 Feuerland Dämonen in der Nähe der Festung und dem Fundort der Sonnenkräuter
 3758	Ik ben bang dat je nog niet genoeg demonen hebt[ENTER]gedood. Keer terug naar Vuurland en blijf[ENTER]doorvechten.
 3759	Je hebt alle demonen verslagen.[ENTER]Rapporteer nu aan Yak-Hwan.
@@ -3773,15 +3773,15 @@
 3773	Je hebt alle ingrediënten! Geweldig, Ik zal aan[ENTER]het werk gaan. Ik zal je een seintje geven zodra[ENTER]het Nimbus Tinctuur klaar is.
 3774	Als we de Zwarte Materie niet snel stoppen, ziet[ENTER]het er niet goed uit voor ons. Ga en breng me[ENTER]alle ingrediënten voor het Nimbus Tinctuur!
 3775	Je hebt alle benodigde ingrediënten. Keer terug[ENTER]naar de Alchemist.
-3776	Spreek met de Alchemist.
+3776	Praat met de Alchemist.
 3777	Stop de Zwarte Materie
 3778	Wat een.. Hpff... Ik heb geklaagd bij de Smid,[ENTER]want de Fundament Stenen zijn te ruw gemalen. En[ENTER]nu? Hij voelt zich beledigt en weigert de rest[ENTER]van de stenen tot poeder te vermalen. De koppige[ENTER]ezel![ENTER]zou jij alsjeblieft met hem kunnen praten?
 3779	Prima.
-3780	Danke Hier sind die Fundamentsteine Und bringe ihm diesen Korb mit Leckereien als Entschuldigung
+3780	Bedankt. Neem dit mandje met lekkernij met je mee[ENTER]als teken van mijn excuus en overtuig hem om de[ENTER]Fundament Stenen tot een fijn poeder te vermalen.
 3781	Kalmeer de Smid
 3782	Kalmeer de Smid en overtuig hem om de Fundament[ENTER]Stenen tot een fijn poeder te vermalen.
 3783	Fundament Steen Poeder: 1 stuk
-3784	Wat kan ik voor je doen? Zal ik je zwaard slijpen?[ENTER]Je pantser polijsten?
+3784	Wat kan ik voor je doen? Zal ik je zwaard slijpen?Je pantser polijsten?
 3785	Nee, vandaag niet. Ik ben hier omdat de Alchemist[ENTER]zijn excuses wilt aanbieden voor zijn felle[ENTER]woorden. Hij heeft je deze mand lekkernij[ENTER]gestuurd.
 3786	Ik heb niet heel veel zin om ook maar iets te[ENTER]doen voor die kleine etter. Maar omdat jij het[ENTER]bent, zal ik de Fundament Stenen malen. Een[ENTER]moment alsjeblieft.
 3787	Dank je!
@@ -3799,7 +3799,7 @@
 3799	Festung erkunden
 3800	Baan een weg het fort in en vecht tegen de[ENTER]demonen op de binnenplaats. Kijk uit naar[ENTER]aanwijzingen over het plan van de Dienaren en[ENTER]naar de vermiste verkenner!
 3801	Du kannst diesen Dungeon nicht alleine betreten Bilde eine Gruppe um passieren zu dürfen Du erhältst keinen weiteren Passierschein
-3802	Ben je al op de binnenplaats van het fort geweest?[ENTER]Er moeten daar aanwijzingen zijn over het plan[ENTER]van de Dienaren van het Duister en het stoffelijk[ENTER]overschot van mijn verkenner! Ga terug naar[ENTER]Vuurland en doorzoek het fort!
+3802	Ben je al op de binnenplaats van het fort geweest?Er moeten daar aanwijzingen zijn over het plan[ENTER]van de Dienaren van het Duister en het stoffelijk[ENTER]overschot van mijn verkenner! Ga terug naar[ENTER]Vuurland en doorzoek het fort!
 3803	Der Späher ist schon eine Weile tot In seiner Tasche findest du einen Brief Überbringe ihn Yak Hwan
 3804	Je hebt de verkenner van Yak-Hwan gevonden.
 3805	Hast du Neuigkeiten
@@ -3813,7 +3813,7 @@
 3813	Haastig geschreven woorden:
 3814	Yak-Hwan, ik zal niet levend terugkeren, maar ik[ENTER]hoop dat deze brief je zal bereiken. Ik ben een[ENTER]fort tegengekomen in Vuurland die op geen enkele[ENTER]kaart te vinden is. De heerser is een krachtige[ENTER]vuurland demon – een uniek aura straalt van hem[ENTER]af, net als van alle demonen die hem volgen.[ENTER]Zijn brul is oorverdovend en het lijkt alsof hij[ENTER]iets bewaakt. Maar wat dat is, kan ik je niet[ENTER]zeggen. Vergeef me, ik heb gefaald...
 3815	We moeten uitvinden wat er verborgen ligt in dat[ENTER]fort.[ENTER]Kijk hier, aan de binnenkant van de Geklonken[ENTER]Ketting staat iets gegraveerd. Ik zal[ENTER]Yon-I-Walker om advies vragen. Hij zal contact[ENTER]met je opnemen.
-3816	Gravur entschlüsseln
+3816	Ontcijfer de Gravering.
 3817	Yon-I-Walker zoekt je. Zoek hem op.
 3818	Willkommen ich habe dich bereits erwartet Ich brauche etwas Hilfe dabei die Gravur in diesem Nietenhalsband zu entschlüsseln
 3819	De tekens die gegraveerd staan in de Geklonken[ENTER]Ketting komen uit een eeuwenoude cultuur die lang[ENTER]geleden bestond. Om ze te ontcijferen heb ik[ENTER]Vlammenkoning Bloed nodig. Het stroomt door zijn[ENTER]aderen als lava.
@@ -3868,14 +3868,14 @@
 3868	Goed nieuws! ik heb een manier gevonden hoe de[ENTER]kracht van de Zwarte Materie kan worden[ENTER]geneutraliseerd!
 3869	Alle krachten uit de natuur hebben een[ENTER]tegenhanger – licht en donker, water en vuur,[ENTER]goed en kwaad.[ENTER]Zelfs Zwarte Materie heeft een tegenhanger, iets[ENTER]met de kracht om het te neutraliseren: Pure[ENTER]Lumen!
 3870	Om Pure Lumen te maken, moet je Energie[ENTER]Fragmenten smelten in Mong Water. Kan je 50[ENTER]flessen Mong Water en 100 Energie Fragmenten[ENTER]verzamelen en ze naar Y-Hwan brengen? Dank je.
-3871	Beschouw het als gedaan!
+3871	Ik ga aan de slag.
 3872	Verzamel 50 flessen Mong Water en 100 Energie[ENTER]Fragmenten en breng ze naar Yu-Hwan.
 3873	Pure Lumen
 3874	Verzamel 50 flessen Mong Water en 100 Energie[ENTER]Fragmenten en breng ze naar Yu-Hwan.
 3875	Woah, Yon-I-Walker had me al gewaarschuwd dat je[ENTER]zou komen. Ik ga direct aan de slag. In de[ENTER]tussentijd kan jij even lekker uitrusten.
 3876	Woah, Yon-I-Walker had me al gewaarschuwd dat je[ENTER]zou komen. Ik zou graag aan het werk gaan, maar[ENTER]het materialen die je hebt zijn nog niet[ENTER]voldoende om Pure Lumen te maken. Ga door met[ENTER]verzamelen.
 3877	Je hebt genoeg Mong Water en Energie Fragmenten.[ENTER]Breng ze naar Yu-Hwan.
-3878	Ga naar Yu-Hwan
+3878	Ga naar Yu-Hwan.
 3879	Bezorg de Pure Lumen
 3880	Yu-Hwan heeft de Pure lumen gemaakt. Ga naar hem[ENTER]toe.
 3881	Daar ben je! precies op tijd. De Pure Lumen is[ENTER]net klaar. Rapporteer dit nieuws bij Yak-Hwan.
@@ -3955,7 +3955,7 @@
 3955	Je hebt Yon-I-Walker nog niet gesproken? Hoe denk[ENTER]je zo Razador te kunnen verslaan?! Ga! Waar wacht[ENTER]je op!
 3956	Ja, het is waar. Razador is terug – en[ENTER]geïrriteerder dan ooit te voor. We hebben nog[ENTER]maar 1 manier om de Dienaren van het Duister te[ENTER]stoppen.
 3957	Razador zal niet rusten tot hij zijn taak heeft[ENTER]voltooid en de rode draak heeft bevrijd. Om dit[ENTER]te stoppen moeten we de draak uitbannen.
-3958	Das Element des Rotdrachen ist das Feuer und Feuer bekämpft man am Besten mit Feuer Jeder Flammendämon trägt einen Magmakern in sich Beschaffe mir jeweils fünf Kerne der folgenden Monster Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral und Glut Flammenfürst
+3958	Het element van de rode draak is buur... en vuur[ENTER]kan het best bestreden worden met – vuur! Elke[ENTER]Sintel Vlamdemon heeft een ring van magma om hun[ENTER]hart. Breng me 5 van deze Magma ringen.
 3959	Beschaffe die Magmakerne der Flammendämonen
 3960	Beschaffe jeweils fünf Magmakerne dieser Gegner Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral Glut Flammenfürst Kehre damit zu Yon I Walker zurück
 3961	Oh ja du hast schon einige gefunden Bringe noch das sollte dann reichen
@@ -4003,7 +4003,7 @@
 4003	Versla Razador, heerser van vuur, in het Rode[ENTER]Drakenfort.
 4004	Was Razador te zwaar voor je dit keer? Ik heb[ENTER]moeite om dat te geloven! Je hebt het al eens[ENTER]eerder gedaan – je kan hem nu ook aan!
 4005	Razador is verslagen. Rapporteer aan Yak-Hwan.
-4006	Ich wusste du würdest es schaffen Großartig Nun werden wir alles für die Verbannung des Rotdrachen vorbereiten Ich lasse dich rufen sobald wir bereit sind
+4006	Ik wist dat het je zou lukken! Ik zal nu[ENTER]voorbereidingen treffen voor een[ENTER]verbanningsritueel. Zodra we klaar zijn zal ik je[ENTER]laten komen.
 4007	Verbannung des Rotdrachen
 4008	Het is tijd. Alles staat klaar om de Rode Draak[ENTER]te verbannen.
 4009	Meine Männer haben bereits bereits zwei Bannkreise aufgestellt Deine Aufgabe ist es nun sie zu entzünden Wirf den Bannbeutel auf die Kreise und sie werden sich entflammen Das wird die Verbannung des Rotdrachen vollziehen
@@ -4086,7 +4086,7 @@
 4086	Elk Koninkrijk probeert wanhopig te herstellen[ENTER]van de opstanden die veroorzaakt zijn nadat de[ENTER]Metin stenen naar beneden kwamen. Veel mensen[ENTER]proberen de Koninkrijken te verenigen. Jij zou er[ENTER]ook moeten vechten! Vergeet dat nooit.
 4087	Ik ga je je eerste opdracht geven. Wees gerust,[ENTER]het is een makkelijke. In het volgend dorp zul je[ENTER]een muzikant vinden die Yu-Hwan heet. Meeste[ENTER]mensen denken dat hij gestopt is met het leger en[ENTER]muzikant is geworden. Maar eigenlijk is hij een[ENTER]spion. Hij heeft een document dat ik nodig heb.[ENTER]Breng het naar mij. Vergeet niet dat het een[ENTER]geheime opdracht is!
 4088	Druk de M - toets om uit te vinden hoe je naar[ENTER]het volgende dorp kunt komen. Gebruik de warp[ENTER]portaal die aangegeven wordt met de[ENTER]desbetreffende dorpsnaam.[ENTER]Schiet op! De muzikant Yu-Hwan is een grote vent,[ENTER]die je kunt herkennen aan de instrumenten die hij[ENTER]bij zich heeft.
-4089	Dood Alfa Grijze Wolven
+4089	Dood Alfa Grijze Wolven:
 4090	De Kaptein heeft een nieuwe opdracht voor je. Ga[ENTER]met hem praten.
 4091	Weet je zeker dat je deze missie wilt stoppen?
 4092	Dus je hebt het gehaald? Goed gedaan! Je hebt er[ENTER]niet al te veel moeite voor hoeven doen hoop ik?[ENTER]Maar goed, laten we naar de volgende stap gaan.
@@ -4149,7 +4149,7 @@
 4149	Je hebt een brief gevonden.[ENTER]Breng het naar de Kapitein.
 4150	Je hebt een brief gevonden met de Witte Eed[ENTER]soldaten. Misschien is dit het bewijs van de[ENTER]spion waar de Kapitein naar op zoek is. Breng de[ENTER]brief naar de Kapitein.
 4151	Heb je bewijs gevonden? Laat me eens kijken. Dit[ENTER]is een interessante brief. Dit zou genoeg moeten[ENTER]zijn om uit te kunnen vogelen wie de spion is.[ENTER]Dank je, we kunnen nu de crisis afweren. We zijn[ENTER]heel gelukkig om zo'n bekwame soldaat te hebben![ENTER]Goed werk! Neem een tijdje vrij en rust uit. Neem[ENTER]dit als teken van mijn dankbaarheid.
-4152	Eerste oefening:
+4152	Eerste oefening
 4153	Wat ben je aan het doen?
 4154	Eerste oefening:
 4155	Dood 9 wilde honden. Je vind ze direct tegenover[ENTER]de stads ingangen.
@@ -4181,7 +4181,7 @@
 4181	Heb je de Metin steen vernietigd? Dank je! Het[ENTER]dorp is veilig! Waar de stenen vandaan komen?[ENTER]Daar is bijna geen informatie over. Hoewel ze zo[ENTER]veel problemen veroorzaken.... Ik heb gehoord dat[ENTER]Uriel de wijze de stenen bestudeert, maar ik weet[ENTER]niet wat hij tot nu toe heeft ontdekt. Je hebt[ENTER]goed werk geleverd.
 4182	Beloning:
 4183	Je hebt 3.300.000 ervaringspunten ontvangen.[ENTER]Je hebt 270.000 Yang ontvangen.[ENTER]Je hebt een Meester Boek ontvangen.
-4184	Je ontvangt %s.
+4184	Je hebt ontvangen: %s
 4185	De vernieling door de Metin stenen is erger aan[ENTER]het worden. Het land lijd. De Metin stenen moeten[ENTER]vernietigd worden! Ga naar de kapitein
 4186	De vernieling door de Metin stenen is erger aan[ENTER]het worden. Het land lijd. De Metin stenen moeten[ENTER]vernietigd worden! Ga naar de kapitein
 4187	Ik heb gehoord dat je hard hebt gewerkt. De[ENTER]mensen spreken niets anders dan goeds over je[ENTER]werk. Dank zij mij, hebben we de juiste plek voor[ENTER]je gevonden! Niet boos worden nu! Ik was alleen[ENTER]maar aan het grappen! Hahaha. Ik weet dat je heel[ENTER]getalenteerd bent.[ENTER][ENTER]De Metin stenen zijn aan het verspreiden. Dat[ENTER]betekent slecht nieuws.
@@ -4411,7 +4411,7 @@
 4411	De zesde pagina
 4412	Hey niet zo snel! Vergeet je beloning voor de[ENTER]negende pagina niet!
 4413	Dood Trotse Soldaat Spinnen
-4414	Je hebt 5.000.000 ervaringspunten ontvangen.
+4414	Ervarings punten: 5.000.000
 4415	Je hebt 125.000 Yang ontvangen.
 4416	Je hebt het symbool van de Wijze Keizer ontvangen
 4417	De aanwijzing in IJs Land
@@ -4793,7 +4793,7 @@
 4793	Een van de volgende wezens heeft de brief van Lee[ENTER]Chung: Gnol Krijger, Gnol Boogschutter, Gnol[ENTER]Verdediger, Gnol Magier, Gnol Generaal, Gnol[ENTER]Heerser of Opperste Gnol Wachter
 4794	Als we Sung Mahi willen stoppen, hebben we deze[ENTER]brief echt nodig! De dief komt uit de gnollen[ENTER]stam.
 4795	Je hebt de brief gevonden.
-4796	Breng het naar Admiraal Angmur.
+4796	Breng hem naar Admiraal Angmur!
 4797	Praat met Admiraal Angmur.
 4798	Je bent terug. en je hebt de brief! Ik wist dat[ENTER]ik op je kon rekenen. Laat eens zien dan.
 4799	Gegroet Angmur![ENTER]Mijn vriend, in de lege kampen van Sung Mahi zijn[ENTER]we iets tegengekomen: de Dienaren van het Duister[ENTER]hebben hun bondgenoten op het eiland benaderd via[ENTER]geheime berichten/ Een van die berichten is[ENTER]verstuurt naar de Gnollen. Als je deze[ENTER]onderschept kan worden, zijn we de demonen een[ENTER]belangrijke stap voor! Ik stuur %s mee als[ENTER]ondersteuning en wens je veel kracht en moet toe[ENTER]in deze donkere tijd.[ENTER]L.C.
@@ -4821,7 +4821,7 @@
 4821	Je hebt de 2e pagina gevonden. Breng het naar[ENTER]Admiraal Angmur.
 4822	Perfect, nu kunnen we het bericht lezen: Hmm, het[ENTER]lijkt over draken te gaan die slapen diep in het[ENTER]hart van de wereld. Ze spreken van een methode[ENTER]die deze draken kan wekken en ze razend maakt.[ENTER]Oh nee! Dat klinkt verschrikkelijk...
 4823	Het lijkt er op dat de Manticores en de Rode[ENTER]Dieven Gilde ook brieven hebben ontvangen. Ik ga[ENTER]hier meer over uitzoeken en zal je dan weer[ENTER]roepen.
-4824	Admiraal Angmur heeft een nieuwe taak voor je.
+4824	Admiraal Angmur heeft een taak voor je.
 4825	De Manticores
 4826	Admiraal Angmur heeft een nieuwe taak voor je.
 4827	Goed dat je hier bent! Onze informatie over de[ENTER]manticores is vrij oud. We moeten er achter komen[ENTER]hoe sterk hun strijdkrachten zijn op dit moment.
@@ -4836,7 +4836,7 @@
 4836	Heb je je taak voltooid? heel goed. Geef me een[ENTER]volledig rapport over de huidige situatie.
 4837	De strijdkrachten van de Manticores zijn niet[ENTER]echt groot in aantal. U heeft het voordeel qua[ENTER]aantallen. Maar hun krijgers zijn goed getraind[ENTER]en zeer sterk.[ENTER]Ik wil u adviseren om de verdedigingsmuur om het[ENTER]fort te versterken. Deze kan op dit moment geen[ENTER]Manticore aanval weerstaan.
 4838	Ahh, dat is het advies dat we nodig hebben. Ik ga[ENTER]mee in jouw advies en zal de muur verstevigen.[ENTER]Neem dit als je beloning.
-4839	Praat met Admiraal Angmur.
+4839	Praat met Admiraal Angmur
 4840	De Manticore Strijdkrachten
 4841	Versla 50 Manticore Krijgers, 40 Manticore[ENTER]Soldaten, 20 Manticore Beulen en versla 10 keer[ENTER]Generaal Cor
 4842	Versterk de vesting I
@@ -4856,7 +4856,7 @@
 4856	Admiraal Angmur vraagt om je hulp. Zoek uit wat[ENTER]hij wilt.
 4857	Om de constructie af te ronden, hebben we Klein[ENTER]Stenen nodig. De manticores verzamelen deze alsof[ENTER]het goud is. Ik denk dat 100 stenen genoeg moet[ENTER]zijn. Je zal, natuurlijk, goed beloond worden[ENTER]voor je hulp.
 4858	De Brief van de Manticores.
-4859	Admiraal Angmur heeft een nieuwe taak voor je.
+4859	Admiraal Angmur heeft een taak voor je.
 4860	Ja, het is weer tijd om onze aandacht te draaien[ENTER]naar de beramende Dienaren van het Duister. We[ENTER]hebben de letters nodig die ze hebben gestuurd[ENTER]naar de Manticores en de rode dieven.[ENTER]Breng eerst een bezoekje aan de Manticores.
 4861	Begrepen.
 4862	Generaal Cor is er opt uit getrokken om de brief[ENTER]te geven aan Martyaxwar. Je moet deze overdracht[ENTER]voorkomen.
@@ -4900,7 +4900,7 @@
 4900	Brief van de Manticore ontcijfert.
 4901	Yon-I-Walker was op zoek naar je. Ga naar hem toe[ENTER]en kijk of hij het bericht al heeft ontcijfert.
 4902	*mompel* Ah! Daar ben je! Dankzij jou heb ik het[ENTER]bericht grotendeels weten te ontcijferen. Maar ik[ENTER]maak geen voortgang op het laatste deel.[ENTER]Ik ben bang dat ik weer om je hulp moet vragen.[ENTER]Ik heb dringend Carapax Poeder nodig. Je zal zien[ENTER]dat Generaal Kreeft en Koning Krab dit hebben.
-4903	Carapax Poeder
+4903	Carapax Poeder?
 4904	Ja, alleen de Crustaceaanse stam heeft dit in hun[ENTER]bezit.[ENTER]Zelfs een kleine dosis van dit poeder is al[ENTER]fataal. Drie Dosissen zouden voldoende moeten[ENTER]zijn. Veel geluk.
 4905	Ik ga direct aan de slag.
 4906	Carapax Poeder
@@ -5034,7 +5034,7 @@
 5034	HEt Millennium Essence
 5035	Octavio wil met je praten.
 5036	Dus, ik heb de hele nacht nagedacht over je[ENTER]verzoek. Ik neem een gigantisch risico hiermee,[ENTER]maar ik ben er zeker van dat ik het juiste doe.[ENTER]Ja, ik zal je helpen.
-5037	Uitstekend!
+5037	Fantastisch!
 5038	Echter, ik heb het niet in voorraad op dit moment.Kan je een paar van de ingrediënten voor mij[ENTER]halen? Dan zal ik het essence voor je produceren.
 5039	Natuurlijk, wat heb je nodig?
 5040	Ik mis Gango Wortel, Tue Paddestoel en Alpen Roos.Ik heb 200 van elk nodig.
@@ -5158,7 +5158,7 @@
 5158	Admiraal Angmur wilt met je praten over het[ENTER]Zwarte Goud.
 5159	De Alchemist kon het Zwarte Goud niet analyseren.[ENTER]Het stuk was te klein.[ENTER]We moeten uit zien te vinden wat voor[ENTER]eigenschappen het heeft en waarom de Dienaren van[ENTER]het Duister het willen![ENTER]Keer terug naar het Donder Gebergte en bemachtig[ENTER]meer monsters van het Zwarte Goud.
 5160	Ga eerst naar de Alchemist. Hij kan je vertellen[ENTER]hoeveel monsters hij nodig heeft.
-5161	Spreek met de Alchemist.
+5161	Praat met de Alchemist.
 5162	Gegroet. Heeft Admiraal Angmur je al geïnformeerd[ENTER]over je taak?
 5163	Ja. Hoeveel monsters van het Zwarte Goud heb je[ENTER]nodig?
 5164	Hmm, laat me even denken. Ik denk dat %d monsters[ENTER]wel genoeg moeten zijn voor analyse.
@@ -5341,7 +5341,7 @@
 5341	Admiraal Angmur heeft je hulp nodig!
 5342	Good je bent hier. Skeletos, de leider van de[ENTER]Brigade van de Zwarte Dood leeft nog en heeft[ENTER]mijn mannen aangevallen net toen ze de basis[ENTER]wilde bestormen. Niemand kwam langs hem.
 5343	Je hebt hem al eens verslagen, help mijn mannen[ENTER]op Gautama Klif! Vecht tegen Skeletos. Daarna[ENTER]bestorm je de basis en dood je de Tempel Dienares[ENTER]Yah-Ki.
-5344	Begrepen.
+5344	Begrepen!
 5345	Versla Yah-Ki
 5346	Versla de Tempel Dienares Yah-Ki en stop haar[ENTER]oproepen van het ondode leger.
 5347	De beslissende dag is aangekomen. Als we falen,[ENTER]faalt de wereld met ons. Maar als we overwinnen,[ENTER]zullen onze daden bezongen worden voor nog[ENTER]honderden haren. Stop de Dienaren van het[ENTER]Duister![ENTER]Versla de Tempel Dienares Yah-Ki!
@@ -5488,13 +5488,13 @@
 5488	Als je wilt trouwen, moet je een trouwjurk dragen.
 5489	Liefde alleen kan je niet helpen een bruiloft de[ENTER]organiseren, je hebt ook wat Yang nodig. Helaas[ENTER]heb je op dit moment niet genoeg. Wanneer je 1[ENTER]miljoen Yang hebt gespaard, zal ik de ceremonie[ENTER]voor je plannen.
 5490	Je hebt 1 miljoen Yang nodig.
-5491	Nu ben je volwassen genoeg, en je ziet er[ENTER]gedecideerd uit. Met wie wil je[ENTER]trouwen?
+5491	Nu ben je volwassen genoeg, en je ziet er[ENTER]gedecideerd uit. Met wie wil je trouwen?
 5492	Schrijf de naam op van de persoon met wie je wilt[ENTER]trouwen.
 5493	Ben je zo opgewonden dat je niet eens de naam kan[ENTER]opschrijven? Probeer weer.
 5494	Je weet de naam niet eens... Weet je zeker dat je[ENTER]wilt trouwen?
 5495	%s is niet online.
 5496	Een andere bruiloft is nu aan de gang. Wacht een[ENTER]moment, of kom later terug!
-5497	Je partner moet dichtbij zijn zodat ik het kan[ENTER]afhandelen. Breng je partner[ENTER]hier.
+5497	Je partner moet dichtbij zijn zodat ik het kan[ENTER]afhandelen. Breng je partner hier.
 5498	%s is te ver weg.
 5499	Niet jouw naam, maar je partners naam.
 5500	Schrijf je partners naam op.
@@ -5582,7 +5582,7 @@
 5582	Ik moet nog eens nadenken...
 5583	Nou..[ENTER]Misschien is het zo beter. Als je echt zo voelt,[ENTER]kom dan terug, maar je moet er echt serieus over[ENTER]nadenken.
 5584	Aangezien je zeker van je zaak bent: hier gaan[ENTER]we. Ik wens je het beste! Een eenzijdige[ENTER]scheiding is gebeurd.
-5585	Deokbae de houthakker:
+5585	Houthakker Deokbae:
 5586	Je pikhouweel kan niet worden verbeterd. Je hebt[ENTER]niet genoeg training.
 5587	Wil je je Pikhouweel verbeteren? Laten we eens[ENTER]kijken... Het huidige level van je Pikhouweel is[ENTER]%s.
 5588	Wil je het verbeteren?
@@ -5593,7 +5593,7 @@
 5593	Oh nee, ik heb een fout gemaakt! Het spijt me.[ENTER]Helaas zijn de punten van je Pikhouweel[ENTER]verminderd.
 5594	Wil je de doos openen met de sleutel?
 5595	Ja, open de doos
-5596	Nee, nu nog niet.
+5596	Nee, niet nu
 5597	Je hebt een Robijnen sleutel of Diamanten sleutel[ENTER]om de Mysterieuze Robijnen Doos te openen!
 5598	Hallo!
 5599	Oude man:
@@ -5624,7 +5624,7 @@
 5624	Ik breng je sokken!
 5625	Breng me minstens 5 sokken en je zult een[ENTER]beloning krijgen.[ENTER]Urrgh, de geur van muffe sokken in ondragelijk![ENTER]Kom terug wanneer je er genoeg hebt verzameld.[ENTER]Vrolijk Kerstfeest!
 5626	Ho ho ho, je hebt genoeg sokken verzameld.[ENTER]Hmm, eens even kijken.[ENTER]URRGH die geur! Nou, het zijn zeker de juiste[ENTER]sokken! Als een beloning voor je moeite. hier heb[ENTER]je wat ervaring. Vrolijk Kerstfeest!
-5627	 - Rendier Kalf
+5627	Rendier Kalf
 5628	Je hebt vandaag al een Rendier Kalf Zegel[ENTER]ontvangen van me. Ik ben bang dat het kleine[ENTER]rendier nu moet uitrusten. Morgen zal het weer[ENTER]helemaal fit zijn. Als je niet zo lang wilt[ENTER]wachten, kijk achter naar links naar wat er[ENTER]achter de draaiende munt zit. Ik heb gehoord dat[ENTER]daar nog een ander Rendier Kalf op je wacht. Maar[ENTER]ik zal ook blij zijn je te zien als je me morgen[ENTER]weer bezoekt!
 5629	Je hebt me al sokken gebracht vandaag. Je kan me[ENTER]maar eens per 24 uur sokken brengen.
 5630	Wonda-Rim:
@@ -5678,7 +5678,7 @@
 5678	Je hebt 40.000 ervaringspunten ontvangen.[ENTER]Je hebt 10.000 Yang ontvangen.[ENTER]Je hebt een Vaardigheden Boek ontvangen.
 5679	Yang-Shin:
 5680	Yang-Shin:
-5681	Wachter:
+5681	Wachter
 5682	De Wachter heeft een missie voor je. Ga naar hem[ENTER]toe en vraag hem wat het is.
 5683	De zieke broeder
 5684	De zieke wachter
@@ -5737,7 +5737,7 @@
 5737	De deserteur
 5738	Yang-Shin heeft moeite om goede jachtgrond te[ENTER]vinden. Ga naar hem toe en vraag hem hoe je hem[ENTER]kunt helpen.
 5739	Niets is nog hetzelfde sinds de Metin Stenen uit[ENTER]de lucht kwamen vallen. Zelfs jagen is bijna[ENTER]onmogelijk op sommige plekken, omdat wilde dieren[ENTER]zich gedragen alsof ze hondsdol zijn. De zwerver[ENTER]Nakajima leeft daar buiten ergens, ik weet zeker[ENTER]dat hij goede jachtgronden weet. Kun je naar hem[ENTER]zoeken en hem vragen?
-5740	Nakajima:
+5740	Nakajima
 5741	Je wilt een goede jachtgrond weten? Wees niet zo[ENTER]haastig, wanneer ik jou een dienst bewijs, moet[ENTER]jij me ook een dienst bewijzen.
 5742	Je moet weten.. ik leef hier niet vrijwillig. Ik[ENTER]moet me verstoppen omdat ik gevlucht ben voor de[ENTER]gewelddadigheden van het leger. Ik wilde alleen[ENTER]dat mijn geliefde vrouw Ah-Yu wist dat ik nog[ENTER]leefde. Kun je dit bericht naar haar brengen?[ENTER]Maar let erop, het bericht is alleen voor Ah-Yu![ENTER]Ze zal je dan vertellen waar we voor het eerst[ENTER]gekust hebben - ik wil haar daar ontmoeten en het[ENTER]is ook een goede gebied om te jagen.
 5743	Nakajima:
@@ -5803,7 +5803,7 @@
 5803	Met plezier
 5804	Dat zijn niet mijn zaken
 5805	Ik heb geen tijd om stoute kinderen op te voeden.[ENTER]Je moet hem zelf te pakken nemen. Ik twijfel[ENTER]echter of je het kan...
-5806	Taurean:
+5806	Taurean
 5807	Yonah's waardevolle familie erfstukken, drie[ENTER]vazen gemaakt uit Celadon Porselein, zijn[ENTER]allemaal gebroken. Hij denkt dat Tauren het[ENTER]gedaan heeft. Ga naar Taurean en zoek het uit.
 5808	Taurean is in %s.
 5809	Taurean:
@@ -5812,7 +5812,7 @@
 5812	Vazen? Yonah? Ik weet echt niet waar je het over[ENTER]hebt!
 5813	Kun je me de alsjeblieft verklaren, waarom er[ENTER]drie gebroken zijn.
 5814	Ik zweer dat ik niet eens in de buurt was van een[ENTER]vaas vandaag en ik heb Yonah ook niet eens[ENTER]gezien. Ik heb heel de dag met Harang gevochten.[ENTER]Ze heeft me zelfs in de stal opgesloten voor een[ENTER]tijdje! Vraag haar maar als je me niet gelooft!
-5815	Harang:
+5815	Harang
 5816	Tauren zegt dat hij onschuldig is. Hij was met[ENTER]Harang heel de dag aan het spelen en kon dus de[ENTER]vazen niet gebroken hebben. Ga naar Harang en[ENTER]vraag of dat waar is.
 5817	Harang, heb je Taurean pas geleden gezien?
 5818	Harang:
@@ -5876,7 +5876,7 @@
 5876	Hij is al dagen niet meer langs geweest. Kun je[ENTER]misschien naar hem toe gaan en vragen wat er aan[ENTER]de hand is?
 5877	Octavio is in %s.
 5878	Ik ben weg, op zoek naar de visser!
-5879	Visser:
+5879	Visser
 5880	De onbezorgde dagen op zee zijn over![ENTER]Vissers verdwijnen elke dag, het is[ENTER]verschrikkelijk! Sinds de Metin Stenen in de zee[ENTER]zijn gevallen, zijn de eens vredige walvissen[ENTER]veranderd in brute zeemonsters. Vissen is nu een[ENTER]gevaarlijk beroep.
 5881	Onze speren kunnen de walvissen niet meer pijn[ENTER]doen. Hun huid is dikker dan die van een reus!
 5882	Misschien weet Yonah wat ik moet doen. Hij ging[ENTER]vroeger vaak naar de zee en heeft jarenlang op[ENTER]walvissen gejaagd.
@@ -5889,14 +5889,14 @@
 5889	Yonah:
 5890	Ik heb gehoord wat er met de walvissen is[ENTER]gebeurd. Het is een slechte zaak voor een[ENTER]visserman. Zelfs als ze de zee op durven, zijn[ENTER]hun speren te zwak om door de walvissenhuid te[ENTER]boren. Toen ik als een walvisjager werkte,[ENTER]gebruikte we speciale wapens voor de walvissen[ENTER]met een oude huid vol littekens. Ze konden alles[ENTER]doorboren.
 5891	Het is speciale techniek om speren van de[ENTER]walvisjager harder te maken. De enige die het kan[ENTER]maken is de Smid.
-5892	Ga naar de Smid
+5892	Ga naar de Smid.
 5893	Yonah:
 5894	Yonah adviseert om robuuste en scherpe speren te[ENTER]gebruiken wanneer je op walvissen jaagt. Ga naar[ENTER]de Smid en vraag hem of hij zulke speren kan[ENTER]maken.
 5895	Smid
 5896	Ja, ik heb van de speren gehoord en ik kan ze ook[ENTER]maken. Ik heb echter een Diamant Steen nodig[ENTER]zodat ze hard genoeg zijn.
 5897	Ik heb nodig:
 5898	Verwerk daarvoor:
-5899	Smid
+5899	Smid:
 5900	Diamanten Steen
 5901	Laten we eens kijken. Ik heb een Pikhouweel nodig[ENTER]om de steen te mijnen. Ik vraag me af waar de[ENTER]mijne is of dat Deokbae me een nieuwe moet geven?
 5902	Je hebt nog %s x Diamanten Steen nodig.
@@ -6037,7 +6037,7 @@
 6037	Ik bezorg je de drankjes!
 6038	Algemene Winkel Verkoper:
 6039	Verse voorraad
-6040	Algemene Winkel Verkoper:
+6040	Algemene Winkel Verkoper
 6041	Ja, verse voorraden krijgen is echt heel moeilijk[ENTER]de laatste tijd. De handelsroutes zijn onveilig[ENTER]en de bandieten en wilde beesten verschijnen[ENTER]steeds vaker. De Wandelende Venters, van wie ik[ENTER]mijn goederen krijg, hebben geen kans tegen de[ENTER]Tijgers.
 6042	Misschien kan de Kapitein en zijn soldaten[ENTER]helpen. Ga naar hem toe en vraag hem of hij zijn[ENTER]soldaten kan sturen om de handelaren te[ENTER]beschermen.
 6043	Ga naar de Algemene Winkel Verkoopster en vraag[ENTER]haar waarom er een vertraging is in de voorraad[ENTER]verse brouwsels.
@@ -6142,7 +6142,7 @@
 6142	Je hebt %s Yang ontvangen.
 6143	Je verwart me overduidelijk met een andere[ENTER]familielid. Ik heb geen dochter en niet genoeg[ENTER]Yang om een bruiloft te organiseren.
 6144	Wil je een lepel van mijn kikkersoep proberen? Ik[ENTER]heb het gemaakt aan de hand van een oude recept[ENTER]van mijn tante.
-6145	Heuk-Young:
+6145	Heuk-Young
 6146	Dagboek van een legende
 6147	Ik heb deze krijger resten gevonden. Ik weet niet[ENTER]of het de Sura is die Heuk-Young zoekt, maar ik[ENTER]ben er zeker van dat zij geïnteresseerd is.
 6148	Meer dan één Sura is hier gestorven. Ik heb hun[ENTER]resten gezien. Ik vraag me af of de legendarische[ENTER]krijger ertussen zit? Ik zal Heuk-Young hierover[ENTER]informeren.
@@ -6162,7 +6162,7 @@
 6162	Een dode Sura... het zou hem kunnen zijn, of het[ENTER]kan ook één van zijn volgelingen zijn. Maar we[ENTER]hebben meer bewijs nodig om zeker te zijn.[ENTER]Wapens, juwelen, of misschien zelfs pagina's of[ENTER]zoiets.
 6163	Het skelet van een Sura en een pagina? Laat me[ENTER]eens naar het geschrift kijken... Hmmm je hebt[ENTER]misschien Akuma's restanten gevonden. We hebben[ENTER]echter meer bewijs nodig. Probeer meer pagina's[ENTER]te vinden.
 6164	Ik heb al wat bewijs gevonden, maar ik ben er[ENTER]niet zeker van of de legendarische Sura hier was[ENTER]of niet. Ik heb meer informatie nodig.
-6165	Goed
+6165	Goed.
 6166	IJs Monster
 6167	Op de rand van wanhoop
 6168	Donkere horor
@@ -6299,7 +6299,7 @@
 6299	Je hebtl ook 120.000.000 ervaringspunten[ENTER]ontvangen.
 6300	Winkel openen
 6301	Je moet jagen:
-6302	Algemene Winkel Verkoper:
+6302	Algemene Winkel Verkoper
 6303	Ga op zoek naar de Wapen Winkeleigenaar en vraag[ENTER]hem waarom hij niet meer onder het raam van de[ENTER]Algemene Winkel Verkoopster zingt.
 6304	Verzamel Seringen
 6305	Je hebt een prachtige Seringentak buitgemaakt!
@@ -6343,7 +6343,7 @@
 6343	Ik ben een hele oude man, maar ik ben nog fit en[ENTER]gezond omdat ik een geheim heb. Ik ben er achter[ENTER]gekomen dat een brouwsel gemaakt van Gango[ENTER]wortels en Tue paddenstoelen je leven verlengt.[ENTER]Als je de brouwsel wilt proberen, breng de[ENTER]materialen naar Yu-Hwan. Hij kan de brouwsel voor[ENTER]je maken.
 6344	Wees stil en bewaar je discipline. Gedraag je en[ENTER]veroorzaak geen problemen. Respecteer je[ENTER]medemensen. Begrepen?
 6345	Je ziet er best sterk uit...
-6346	Voor vele jaren, is het geheim van kracht[ENTER]doorgegeven in ons familie. Mijn vader vertelde[ENTER]me dat wanneer je een Weideklokje op de juiste[ENTER]manier in een brouwsel mengt, zal het brouwsel je[ENTER]extra kracht geven voor een korte periode. Zo ver[ENTER]ik weet kan Baek-Go het brouwsel maken. Je hoeft[ENTER]hem alleen een Weideklokje te[ENTER]brengen.
+6346	Voor vele jaren, is het geheim van kracht[ENTER]doorgegeven in ons familie. Mijn vader vertelde[ENTER]me dat wanneer je een Weideklokje op de juiste[ENTER]manier in een brouwsel mengt, zal het brouwsel je[ENTER]extra kracht geven voor een korte periode. Zo ver[ENTER]ik weet kan Baek-Go het brouwsel maken. Je hoeft[ENTER]hem alleen een Weideklokje te brengen.
 6347	Ga, vertel het aan de berg...
 6348	Yu-Hwan, de muzikant:
 6349	....over de heuvels...[ENTER]hou je ook van muziek? Ik zing in mijn[ENTER]eenzaamheid alle soorten liedjes hier, zodat ik[ENTER]niet beïnvloed word door de oorlog. Had ik geen[ENTER]land dat mij beschermde, kon ik dit niet meer[ENTER]doen.
@@ -6531,21 +6531,21 @@
 6531	Patrouille punt 3
 6532	Ga naar patrouille punt 3
 6533	 - Vuurfeniks
-6534	 - Rendier Kalf
+6534	- Rendier Kalf
 6535	Je kunt je lievelingsdier nu niet roepen.
 6536	's IJs Feniks
-6537	 - Baby Azrael
-6538	 - Leonidas
-6539	 - Khan
-6540	 - Porky
-6541	 - Rufus
-6542	 - Bambi
+6537	- Baby Azrael
+6538	- Leonidas
+6539	- Khan
+6540	- Porky
+6541	- Rufus
+6542	- Bambi
 6543	's Knuud
-6544	 - Bao Bao
-6545	 - Mollige Mini-Beul
-6546	 - Mollige Mini-Beul (goud)
-6547	 - Botje
-6548	 - Jade Feniks
+6544	- Bao Bao
+6545	- Mollige Mini-Beul
+6546	- Mollige Mini-Beul (goud)
+6547	- Botje
+6548	- Jade Feniks
 6549	Dood 20 Wilde Boogschutters binnen 30 minuten en[ENTER]geef het resultaat aan de Staljongen.
 6550	Ik wil paardrijden
 6551	Status upgrade pony quest
@@ -6605,7 +6605,7 @@
 6605	Ruiter training (1)
 6606	Ga naar het doel (1).
 6607	Teleporteer naar de trainings map
-6608	GAAN
+6608	GAAN!
 6609	Wil je echt opgeven?
 6610	Aangekomen bij het doel (1)!
 6611	Aangekomen bij het doel (9)!
@@ -6748,7 +6748,7 @@
 6748	Ja, stop.
 6749	Opdracht %s geannuleerd
 6750	(Resterend: %s: %s, %s: %s)
-6751	questscroll5.kill_race:%s]
+6751	questscroll5.kill_race:%s
 6752	(Resterend: %s: %s, %s: %s)
 6753	questscroll5.kill_race:%s]
 6754	Je hebt de missie afgerond en een beloning[ENTER]verdiend!
@@ -6797,7 +6797,7 @@
 6797	wordt teruggezet naar 1.
 6798	Je overgebleven punten zullen teruggegeven worden[ENTER]als training punten.
 6799	Wil je echt doorgaan?
-6800	Jouw level is te laag.
+6800	Je level is te laag!
 6801	Je kunt niet rijden wanneer je getransformeerd[ENTER]bent!
 6802	Je bent al aan het rijden! Als je je rijdier wilt[ENTER]veranderen, moet je eerst afstijgen.
 6803	Je zult je paard moeten wegsturen, als je een[ENTER]ander rijdier wil gebruiken.
@@ -6899,7 +6899,7 @@
 6899	Leraar helende krachten
 6900	Met de leer van heling, kun je je vijanden[ENTER]verbijsteren met elektrische schokken. Je kunt[ENTER]ook leren om groepsleden te helen en hun[ENTER]toegevoegde kracht geven.
 6901	Je hebt de leer van helende krachten gekozen.
-6902	Draken Kracht Leraar:
+6902	Leraar Draken kracht
 6903	Leraar helende krachten
 6904	Herstel vaardigheden
 6905	Als je van gedachten verandert, kom me dan nog[ENTER]eens opzoeken.
@@ -6962,7 +6962,7 @@
 6962	Op de derde verdieping van de spinnenkerker kan[ENTER]je een oude grafsteen vinden met een opschrift in[ENTER]gegraveerd. Maak er een kopie van en breng het[ENTER]naar de Kapitein.
 6963	Perfect, je hebt de oude grafsteen gevonden een[ENTER]een kopie van het Opschrift gemaakt! Keer terug[ENTER]naar de Kapitein en toon het aan hem.
 6964	Algemene Winkel Verkoper:
-6965	Zoek Lege Fles
+6965	Haal een Lege Fles
 6966	Goed zo.[ENTER]Je kunt een Lege Fles krijgen bij Yonah de[ENTER]Pottenbakker.[ENTER]Dank je zeer.
 6967	vind Yonah de Pottenbakker
 6968	De Algemene Winkel verkoper heeft een lege fles[ENTER]nodig voor een rood brouwsel van Yonah de[ENTER]pottenbakker.
@@ -7040,7 +7040,7 @@
 7040	Een Brief van de Smid
 7041	Vind Deokbae de houthakker
 7042	Een Brief van de Smid
-7043	Deokbae de houthakker:
+7043	Houthakker Deokbae:
 7044	Welkom, ik heb hier goede bijlen. Wil je er[ENTER]eentje kopen? Heb je geen bijl nodig? Waarom ben[ENTER]je dan hier? Ah, een brief van de Smid.Dank je.[ENTER]Ik ben een houthakker, maar soms verkoop ik ook[ENTER]pikhouwelen en ander gereedschap. Soms bestel ik[ENTER]wat gereedschap van hem. Zo zijn we goede[ENTER]vrienden geworden.
 7045	Dank je voor het afleveren van de brief. Ik moet[ENTER]echt een keer een drankje met hem doen bij de[ENTER]Seo-Pyung-bar. Geef hem mijn hartelijke groeten.
 7046	Een brief van de Smid? Man, dat is een tijd[ENTER]geleden. Waar is het? Je bent het toch niet[ENTER]onderweg verloren ofzo?
@@ -7075,7 +7075,7 @@
 7075	Terug naar Soon
 7076	Keer terug naar Soon
 7077	Keer terug naar Men. Soon en geef hem de[ENTER]informatie
-7078	Een Gunst voor Soon
+7078	Een gunst voor Men. Soon
 7079	Was Uriel in staat om je een helder antwoord te[ENTER]geven?
 7080	Vogel, Enkele, Aquatische, Kraanvogel
 7081	Vogel, Drie Delig, Aquatische, Kraanvogel
@@ -7123,7 +7123,7 @@
 7123	Uriel heeft je ijzererts gegeven.
 7124	Octacio heeft je Leer gegeven.
 7125	Yonah heeft je de Kool gegeven.
-7126	Ga naar Octavio
+7126	Ga naar Octavio.
 7127	Ga naar Uriel.
 7128	Ga naar Yonah.
 7129	Ich brauche Eisenerz
@@ -7190,7 +7190,7 @@
 7190	Soon heeft je een exotisch kookboek gegeven.[ENTER]Breng het naar Octavio.
 7191	Hier is het kookboek!
 7192	Vraag de Wapen Winkeleigenaar naar de rijstkoeken
-7193	Rijst Cake
+7193	Rijstkoeken?
 7194	Geef me wat rijstkoeken.
 7195	Wapen Winkeleigenaar:
 7196	Erm, wat? Rijstkoeken? Waarom heb je ze nodig? Is[ENTER]dat een wapen waar ik niets van af weet? Ik[ENTER]begrijp het niet...[ENTER]Ahhhh! Rijstkoeken. Iets wat je kan eten! Vraag[ENTER]maar aan Octavio, hij weet alles wat je maar kunt[ENTER]weten over eten.
@@ -7211,7 +7211,7 @@
 7211	Ga naar Taurean om rijstkoeken te krijgen van[ENTER]Yu-Rang.
 7212	Waarom pest je Yu-Rang?
 7213	Wie pest ik? Oh, het meisje dat rijstkoeken[ENTER]verkoopt? Ik wil gewoon spelen. Snap je wat ik[ENTER]bedoel? Het is niet wat je denkt! Ik wilde haar[ENTER]niet pesten! Ik verveelde me en het leek alsof ze[ENTER]niet veel te doen had. Dus wilde ik met haar[ENTER]praten. Ik wilde haar niet irriteren. Ik zal het[ENTER]niet meer doen, ik beloof het!
-7214	Keer terug naar Yu-Rang
+7214	Terug naar Yu-Rang
 7215	Accepteer
 7216	Rijst Cake
 7217	Taurean zal Yu-Rang niet meer lastig vallen. Ga[ENTER]naar haar toe en haal je Rijst Cake op.
@@ -7237,7 +7237,7 @@
 7237	De Gouden Bijl
 7238	Ken je mijn vriend Deokbae nog? Ik heb hem[ENTER]beloofd om een bijl te maken. Maar het is[ENTER]gestolen door een Witte Eed soldaat. Kun je de[ENTER]bijl terugkrijgen voor me? Een Witte Eed soldaat[ENTER]heeft het. Je zult het makkelijk herkennen, omdat[ENTER]er niet zo veel van bestaan. Ik zal je belonen[ENTER]voor je moeite.
 7239	Weet je zeker dat je deze missie wilt stoppen?
-7240	Smid
+7240	Smid:
 7241	Ik wil de bijl graag terug hebben... Zul je terug[ENTER]komen? Tot ziens.
 7242	Dank je voor je assistentie. Wees voorzichtig; de[ENTER]Witte Eed is heel gevaarlijk.
 7243	Bedankt voor je hulp. Maar wees voorzichtig. De[ENTER]Witte Eed veroorzaakt veel problemen[ENTER]tegenwoordig.
@@ -7270,7 +7270,7 @@
 7270	Je zult ernaar zoeken? Oh, dank je!
 7271	Ga naar de Smid.
 7272	Vraag Yu-Hwan naar Mirine's broer.
-7273	 Vind mijn broer.
+7273	Vind mijn broer.
 7274	Heb je Mirine's broer gezien?
 7275	Ik ben verliefd geworden zonder te weten wat[ENTER]liefde betekent.... Wie zoek je? Mirine's broer?[ENTER]We hebben wat met elkaar gesproken voordat hij de[ENTER]bergen inging. Hij wilde opzoek gaan naar[ENTER]zeldzame kruiden. Ik weet niet waar hij nu is. De[ENTER]jager gaat vaak de bergen in. Je kunt het in dit[ENTER]dorp vinden. Waarom vraag je het niet aan hem?[ENTER]Lalalala, liefde is mooi maar verdrietig....
 7276	Vraag Yang-Shin naar Mirine's broer.
@@ -7279,11 +7279,11 @@
 7279	Nieuws over Mirine's broer.
 7280	Kijk, ik heb een brief gevonden van mijn broer![ENTER]Hij schrijft dat hij een plek heeft gevonden met[ENTER]veel kruiden en dat het wel even duurt voordat[ENTER]hij naar huis komt.[ENTER]Sorry, Ik had je niet moeten lastig vallen[ENTER]hiermee. Hier, het is niet veel, maar ik hoop dat[ENTER]je het accepteert en me vergeeft. Dank je dat je[ENTER]zo een lange reis hebt gemaakt.
 7281	Je hebt 122.000 ervarings punten ontvangen.[ENTER]Je hebt 5.000 Yang ontvangen.
-7282	 Vind mijn broer.
+7282	Vind mijn broer.
 7283	Kan ik je om een gunst vragen? Mijn broer is al[ENTER]een tijdje weg. Ik heb niets gehoord van hem, en[ENTER]ik maak me zorgen. Zou je alsjeblieft hem voor[ENTER]mij zoeken?
 7284	Mijn broer wilde Yu-Hwan de muzikant in het[ENTER]volgend dorp bezoeken. Kun je naar Yu-Hwan gaan[ENTER]en vragen of hij wat weet over mijn broer? Kun je[ENTER]naar hem zoeken als je tijd hebt?
 7285	Ja, ik zal het doen.
-7286	Wil je voor altijd de quest opgeven?
+7286	Wil je de quest voor altijd opgeven?
 7287	Dank je. Zoek hem alsjeblieft, ik ben heel erg[ENTER]bezorgd. Tot ziens.
 7288	Jammer dat je me niet wilt helpen.[ENTER]Tot ziens.
 7289	Je gaat hem zoeken? Oh, dank je zeer! Ik ben heel[ENTER]bezorgd. Veel geluk!
@@ -7306,7 +7306,7 @@
 7306	Ik denk dat dit gewoonweg niet de juiste tijd is.[ENTER]Kom later terug.
 7307	Als je niet wilt helpen, is er niets dat ik kan[ENTER]doen. Ga weg...
 7308	Wil je echt niet helpen?
-7309	Ga naar Ariyoung
+7309	Ga naar Ariyoung.
 7310	Materialen voor wapens.
 7311	Ga naar Ah-Yu.
 7312	De Wapen Winkeleigenaar heeft je hulp nodig.[ENTER]Haal ijzererts bij Uriel en linnen van Ariyoung[ENTER]voor hem.
@@ -7344,7 +7344,7 @@
 7344	Zoek naar materialen
 7345	Keer terug naar de Stad Wachter
 7346	Eun-Jung van de Witte Eed
-7347	Je hebt Eun-Jung van de Witte Eed gedood. Ga naar[ENTER]de Stad Wachter en rapporteer aan hem.
+7347	Je hebt Eun-Jung van de Witte Eed gedood.[ENTER]Ga terug naar de Wachter en rapporteer aan hem.
 7348	Je bent geweldig! Je bent beter als ik dacht. We[ENTER]waren niet in staat om iets tegen die twee[ENTER]leiders van de Witte Eed te doen, en jij hebt ze[ENTER]beide makkelijk verslagen.
 7349	Dit is ongelofelijk. Je zult een toepasselijke[ENTER]beloning krijgen. Neem dit en blijf werken aan de[ENTER]vrede in dit dorpje!
 7350	Je hebt 150.000 ervaringspunten ontvangen[ENTER]Je hebt 25.000 Yang ontvangen[ENTER]Je hebt een Gouden Ketting+4 ontvangen
@@ -7365,7 +7365,7 @@
 7365	Het was het beste leger dat dit continent ooit[ENTER]heeft gezien. Vele landen zijn verslagen omdat[ENTER]niemand de cavalerie kon stoppen. Het zou vandaag[ENTER]ook zo zijn. Maar je heb een moeilijke[ENTER]trainingsmethode en veel ijzer van hoge kwaliteit[ENTER]nodig om zo een leger op te zetten. Vraag anders[ENTER]de Venter en Uriel de geleerde. Zij kennen[ENTER]waarschijnlijk meer details.
 7366	Ga naar de Venter
 7367	De gepantserde cavalerie
-7368	Venter:
+7368	Venter
 7369	Yu-Hwan de muzikant zegt dat de Venter en Uriel[ENTER]de geleerde wellicht informatie hebben over de[ENTER]gepantserde cavalerie. Ga eerst naar de Venter.
 7370	Venter:
 7371	De gepantserde cavalerie
@@ -7432,7 +7432,7 @@
 7432	Je hebt 300.000 ervarings punten ontvangen.
 7433	Je hebt 10.000 Yang ontvangen.
 7434	Nee, hier heb ik geen tijd voor.
-7435	Wil je voor altijd de quest opgeven?
+7435	Wil je de quest voor altijd opgeven?
 7436	Kom terug als je van gedachten bent veranderd.[ENTER]Alsjeblieft...
 7437	Je hebt geen tijd?[ENTER]Zelfs niet voor zo een makkelijke taak?[ENTER]Oké dan...
 7438	Dank je voor je welwillendheid. Aaaaah, waar is[ENTER]mijn man toch......
@@ -7540,7 +7540,7 @@
 7540	Ik zal ze zoeken.
 7541	Ik heb geen tijd.
 7542	Dank je, mijn vriend![ENTER]Ik hoop dat je succesvol bent.
-7543	 Balso?
+7543	Balso?
 7544	Een medicijn voor Balso
 7545	Ga naar Balso
 7546	Je hebt een medicijn voor Balso gevonden die een[ENTER]onbekende ziekte heeft opgelopen van de zieke[ENTER]mannen. Geef hem de medicijn.
@@ -7566,12 +7566,12 @@
 7566	Zoektocht naar de gouden bijl
 7567	Breng Deokbae's geliefde Gouden Bijl terug van de[ENTER]Wilde Generalen.
 7568	Ik heb je Gouden Bijl gevonden!
-7569	Deokbae de houthakker:
+7569	Houthakker Deokbae:
 7570	Zonder jouw hulp zou ik nooit de Gouden Bijl[ENTER]terug gekregen hebben. Dank je zeer. Ik zal er op[ENTER]passen in de toekomst en het altijd bij me[ENTER]houden.
 7571	Je hebt 400.000 ervarings punten ontvangen.
 7572	Je hebt 30.000 Yang ontvangen.
 7573	Over je Gouden Bijl...
-7574	Deokbae de houthakker:
+7574	Houthakker Deokbae:
 7575	Oh nee, oh nee! Ik ben de Bijl kwijt geraakt.[ENTER]Misschien weet je welke Bijl ik bedoel? Het is de[ENTER]Gouden Bijl die ik van de Smid heb gekregen. Een[ENTER]Wilde heeft het gestolen.
 7576	Als de Smid hierachter komt, zal hij[ENTER]verschrikkelijk boos zijn en weigeren om mijn[ENTER]bijlen te repareren. En het was echt een goede[ENTER]bijl ook. Kun je het misschien terug brengen?
 7577	Afwijzen
@@ -7640,7 +7640,7 @@
 7640	Nee het is al te laat. Als je ze vind zijn ze te[ENTER]droog en kan ik ze niet meer verkopen.
 7641	Je kijkt naar de grond en je ziet de rijstkoeken[ENTER]die de spinnen hebben achter gelaten. Te laat.[ENTER]Alles is droog.
 7642	Je hebt teveel tijd verspild. De rijst cakes zijn[ENTER]droog geworden. Je hebt de quest niet gehaald.
-7643	Keer terug naar Yu-Rang
+7643	Terug naar Yu-Rang
 7644	Hey, hoe is het met je moeder?
 7645	Keer terug naar Yu-Rang
 7646	Breng de rijstkoeken die je gevonden hebt bij de[ENTER]spinnen naar Yu-Rang
@@ -7731,7 +7731,7 @@
 7731	Ga naar Octavio.
 7732	Dat noem ik pas kikker poten! Ze waren vroeger[ENTER]kleiner maar ik ben er zeker van dat deze ook[ENTER]lekker zal smaken. Momentje... dat ruikt nu al[ENTER]goed. Nog een kneepje zout.. Perfect! Hier is[ENTER]portie. Hahaha nu heb ik genoeg energie voor een[ENTER]hele week van werk.
 7733	Zorg ervoor dat niemand erachter komt dat deze[ENTER]soep bestaat. Vooral niet de Winkeleigenaar...[ENTER]Ik maak zelden deze soep. Anders zou iederen hier[ENTER]naar toe komen en mij irriteren.
-7734	Je hebt 5.000.000 ervaringspunten ontvangen.
+7734	Ervarings punten: 5.000.000
 7735	Mijn lichaam is niet meer wat het eerst geweest[ENTER]was. Toen ik jong was, kon ik vroeg op staan,[ENTER]werken tot de nacht, elke dag van de week. En[ENTER]alcohol drinken... Nu is het zelfs al moeilijk om[ENTER]uit bed te komen. Ik heb een grote portie Kikker[ENTER]Achterpoten soep nodig om mijn energie terug te[ENTER]krijgen.
 7736	Je hebt 50,000 Yang ontvangen.
 7737	Weet je niet wat Kikker Achterpoten soep is?[ENTER]Wanneer je een kom ervan opdrinkt, kun je een[ENTER]hele week achter elkaar werken, omdat je zoveel[ENTER]energie hebt. Octavio maakte vroeger de soep,[ENTER]maar hij is er een tijdje geleden mee gestopt.
@@ -7741,7 +7741,7 @@
 7741	Nou ja als je bezig bent... Kom later terug[ENTER]wanneer je tijd hebt.
 7742	Hij moet zich schamen om zichzelf een vader te[ENTER]noemen!Als ik hem vind... God helpe hem! Geloof[ENTER]me, ik overdrijf niet. Vraag iedereen in het dorp[ENTER]maar, ze zullen allemaal hetzelfde zeggen.
 7743	Soon:
-7744	Algemene Winkel Verkoper:
+7744	Algemene Winkel Verkoper
 7745	Ga naar de verkoper van de Algemene Winkel
 7746	Wellicht weet de Algemene Winkel Verkoopster wat[ENTER]Soon aan het doen is. Ga naar haar toe en vraag[ENTER]haar of ze iets van Soon gehoord heeft.
 7747	Wat is er met Soon?
@@ -8011,7 +8011,7 @@
 8011	Soon de boekenwurm weet alles over Celadon[ENTER]Porselein. Hij wil zijn geheim niet delen zonder[ENTER]er iets voor terug te krijgen. Ga naar de Venter[ENTER]om een boek op te halen die Soon bestelt heeft.
 8012	Soon heeft me gestuurd..
 8013	Hey, ben je er weer om me te helpen? Ahh. Je wilt[ENTER]het boek voor Soon. Ik zou toch vrij snel weer in[ENTER]de stad zijn, maar hij is ongeduldig en vraagt[ENTER]anderen om het te halen. Hmm. Hier is het. Ik[ENTER]begrijp niet wat Soon zo leuk vindt aan stapels[ENTER]papier. Het is veel belangrijker om snel Yang te[ENTER]krijgen!
-8014	Keer terug naar Soon
+8014	Keer terug naar Soon.
 8015	Keer terug naar Soon
 8016	Je hebt Soon's boek van de Venter gekregen. Ga[ENTER]terug naar Soon en geef hem de boek zodat hij je[ENTER]vertelt hoe je Celadon Porselein maakt.
 8017	Ik heb het boek.
@@ -8197,7 +8197,7 @@
 8197	Je wilt het niet doen? Maar je gaat Yu-Rang niet[ENTER]de waarheid vertellen? Alsjeblieft, help me. Kom[ENTER]terug als je tijd voor me hebt!
 8198	Nu zal Yu-Rang zal nooit meer met mij praten![ENTER]Of me alleen uitlachen...
 8199	Ah, ik had gelijk. Ik wist dat je een aardige[ENTER]persoon was. Dank je voor je hulp. Veel succes!
-8200	Keer terug naar Yu-Rang
+8200	Terug naar Yu-Rang
 8201	Keer terug naar Yu-Rang en vertel haar over[ENTER]Taurean's leugen.
 8202	Yu-Rang is heel teleurgesteld in je.
 8203	Heb je het haar verteld?![ENTER]Ik kan begrijpen dat ze niet meer met me bevriend[ENTER]wil zijn. Maar het maakt me heel verdrietig. Ik[ENTER]hoop dat ik haar ooit van gedachten kan laten[ENTER]veranderen. Misschien kan ik iets leuks voor haar[ENTER]bedenken...
@@ -8285,7 +8285,7 @@
 8285	Je hebt 1.300.000 ervarings punten ontvangen.
 8286	Waarom ben je zo stil? Begrijp je het niet?
 8287	Ik moet er opnieuw over nadenken
-8288	Vijanden aan de horizon
+8288	Vijanden aan de horizon.
 8289	Over de geheime boodschap...
 8290	Ik geef het op.
 8291	Oh hemel! Is het zo moeilijk? Je was mijn laatste[ENTER]hoop...Wie zal het dan nu ontcijferen?
@@ -8342,7 +8342,7 @@
 8342	Wat is er mis met je? Vorige keer heb je[ENTER]fantastisch werk voor ons gedaan! En nu wil je je[ENTER]keizerrijk in de steek laten? Maar ik kan er[ENTER]niets aan doen. Vaarwel.
 8343	Ik wist wel dat ik op je kon rekenen! Veel geluk,[ENTER]en wees voorzichtig!
 8344	Ontmoet de spion
-8345	Wat is Bingsu?
+8345	Over Bingsu
 8346	Bingsu?
 8347	Taurean heeft een aanvaring gehad met Harang[ENTER]omdat hij niet gelooft dat je ijs kan maken in de[ENTER]zomer. Ga naar Harang en vraag haar wat ze weet[ENTER]over Bingsu.
 8348	Laten we Harang vragen
@@ -8372,7 +8372,7 @@
 8372	Probeer opnieuw
 8373	Ik weet dat het een lange weg is en de monsters[ENTER]zijn sterk. Als het te moeilijk is dan kunnen we[ENTER]daar niets aan veranderen. Tot ziens.
 8374	Probeer opnieuw. Met jouw moed en[ENTER]uithoudingsvermogen zul je het redden!
-8375	Bingsu?
+8375	Bingsu!
 8376	Het is klaar: Octavio heeft Bingsu gemaakt van[ENTER]het ijs van Berg Sohan. Snel terug naar Taurean[ENTER]voor het smelt.
 8377	Hier! Bingsu!
 8378	Is dat Bingsu? Smaakt echt lekker. Lekker en[ENTER]koel. Ik heb nog nooit zo iets geproefd, dank je![ENTER]Zo Harang heeft gelijk. Ik weet dat ik me nu bij[ENTER]haar moet verontschuldigen...
@@ -8405,7 +8405,7 @@
 8405	ist nun eine Großmeister Fertigkeit
 8406	Dit betekent dat je een perfecte niveau hebt[ENTER]bereikt voor deze vaardigheid en dat je het niet[ENTER]meer kunt verbeteren.
 8407	Gefeliciteerd! Je hebt het gedaan. Dankzij de[ENTER]vaardigheden training van de grootmeesters,
-8408	 %s is omhoog gegaan naar niveau[ENTER]%s.
+8408	%s is omhoog gegaan naar niveau %s.
 8409	Je hebt succesvol je niveau verhoogd!
 8410	Je hebt %s Rang punten gebruikt.
 8411	Mislukt!
@@ -8416,7 +8416,7 @@
 8416	Geen van je vaardigheden is goed genoeg om te[ENTER]proberen om grootmeester erin te bereiken.
 8417	Kies een vaardigheid die je wilt verhogen tot[ENTER]grootmeester
 8418	Huidige Rang punten: %s
-8419	 Benodigde Rang punten:
+8419	Benodigde Rang punten:
 8420	%s grootmeester vaardigheden training
 8421	Als je je Rang punten tijdens de training[ENTER]verbruikt, kan het zijn dat je niveau onder het[ENTER]gemiddelde valt.
 8422	Het spijt me maar je hebt niet de noodzakelijke[ENTER]rij ervaring om je rijdier te verbeteren. Je hebt[ENTER]minimaal de Strijd Paard Licentie nodig.

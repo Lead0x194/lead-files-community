@@ -91,7 +91,7 @@
 435	Je kunt geen Terugkeer Geschrift gebruiken zolang er een ander venster open is.
 436	Dit persoon bestaat niet.
 437	Na een handel kun je een geschrift %d seconden niet gebruiken.
-438	Je kunt geen Terugkeer Geschrift gebruiken gedurende %d seconden na het openen van een Warenhuis.
+438	Na openen van een Warenhuis kun je een Terugkeer Geschrift gebruiken gedurende %d seconden.
 439	Je kunt geen Terugkeer Geschrift gebruiken omdat de afstand te klein is.
 440	Na een handel kun je een Terugkeer Geschrift gedurende %d seconden niet gebruiken.
 441	Je kunt geen opslag openen als een andere Venster al open is.
@@ -261,7 +261,7 @@
 648	%d%% Weerstand tegen Ninja Aanvallen
 649	%d%% Weerstand tegen Sura Aanvallen
 650	%d%% Weerstand tegen Sjamaan Aanvallen
-651	(Procedure: %d j - %d m - %d d)
+651	(Procedure: %d y- %d m - %d d)
 652	Je Chat is geblokkeerd.
 654	Je hebt level %d nodig om te kunnen roepen.
 655	Je zit niet in deze Groep.
@@ -389,7 +389,7 @@
 855	Je kunt tot %d Brouwsels gebruiken.
 856	Het gevecht begint in 10 seconden.
 857	Het duel is begonnen.
-858	WAAR
+858	TRUE
 859	Het duel is beëindigd omdat er een probleem is met de arena.
 860	Het duel is beëindigd vanwege de timeout.
 861	Over 10 seconden word je verplaatst naar de stad.
@@ -398,9 +398,9 @@
 864	Het duel is beëindigd omdat er een probleem is met de Tegenstander.
 865	%s heeft het duel gewonnen.
 866	%s heeft gewonnen.
-867	Over 10 seconden word je verplaatst naar de stad.
+867	Je wordt over 10 seconden naar de Stad geteleporteerd.
 868	De volgende ronde begint over 10 seconden.
-869	ONWAAR
+869	FALSE
 870	De Tegenstanders werden opgesplits. Het duel is beëindigd.
 871	De Quota van Gevallen Voorwerpen is op het moment plus %d%%
 872	De Quota van Gevallen Yang is op dit moment plus %d%%
@@ -493,7 +493,7 @@
 977	Ik ben verlicht! Ik heb het bijna helemaal gelezen!
 978	Nog maar een paar pagina's en dan heb ik alles gelezen.
 979	Ik voel me verfrist.
-980	Juist!
+980	Correct!
 981	Nu begrijp ik het!
 982	Okee, ik moet geconcentreerd blijven!
 983	Ik heb dezelfde zin steeds opnieuw gelezen.

@@ -297,7 +297,7 @@
 695	[Gildia] Moce Mistrza Gildii nie mogą być zmienione.
 696	[Gildia] Ranga jest niepoprawna.
 697	[Gildia] Nie możesz zmienić swojej pozycji.
-698	[Gildia] Moce Mistrza Gildii nie mogą być zmienione.
+698	[Gildia] Prawa Lidera Gildii nie mogą zostać zmienione.
 699	[Gildia] Wykorzystane Punkty Doświadczenia: %u.
 700	[Gildia] Przekazanie Punktów Doświadczenia nieudane.
 701	[Gildia] Za mało Yang w kasie gildii.
@@ -376,7 +376,7 @@
 837	[Grupa] Nie możesz przyjąć zaproszenia.
 838	[Grupa] %s odrzucił twoje zaproszenie.
 839	[Grupa] %s dołączył do Grupy.
-841	Nie możesz skorzystać teraz z prywatnego Magazynu.
+841	Nie możesz skorzystać teraz z prywatnego sklepu.
 842	W tej chwili ten gracz handluje z kimś innym.
 846	Nie możesz przenieść się do gracza.
 848	Ten gracz nie jest online.
@@ -389,7 +389,7 @@
 855	Możesz użyć tylko %d mikstur.
 856	Walka rozpoczyna się za 10 sekund.
 857	Pojedynek rozpoczęty.
-858	PRAWDA
+858	TRUE
 859	Pojedynek został zakończony z powodu problemów z areną.
 860	Pojedynek został zakończony z powodu upływu czasu.
 861	Za 10 sekund zostaniesz przeniesiony do miasta.
@@ -398,7 +398,7 @@
 864	Pojedynek został zakończony ponieważ jest problemów z przeciwnikiem.
 865	%s wygrał pojedynek.
 866	%s wygrał.
-867	Za 10 sekund zostaniesz przeniesiony do miasta.
+867	Zostaniesz przeniesiony do Miasta za 10 sekund.
 868	Następna runda rozpoczyna się za 10 sekund.
 869	FAŁSZ
 870	Wojownicy się rozdzielili. Pojedynek zakończony.
@@ -887,7 +887,7 @@
 5315	usage : /flush player_id
 5316	usage : /horse_level <name> <level>
 5317	usage : priv_empire <empire> <type> <value> <duration>
-5318	Wszystkie królestwa
+5318	Wszystkie Królestwa
 5319	Szansa na przedmioty
 5320	Szansa na Yang
 5321	Szansa na deszcz Yang

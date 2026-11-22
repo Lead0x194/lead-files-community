@@ -12,19 +12,19 @@
 12	%s contra %s
 13	Cerrar
 14	Yu-Hwan:
-15	Actualmente no hay luchas de[ENTER]entrenamiento.
+15	Actualmente no hay luchas de entrenamiento.
 16	Actualmente tienen lugar %s luchas de[ENTER]entrenamiento.
 17	La sala de entrenamiento de combate fue[ENTER]completamente destruida durante una terrible[ENTER]lucha. Hasta que sea restaurada, no podrán[ENTER]realizarse luchas de entrenamiento.
 18	Alguien más se ha inscrito en el entrenamiento de[ENTER]combate.
 19	Si no has alcanzado el nivel %s no puedes[ENTER]inscribirte en una lucha de entrenamiento.
 20	¿Quieres inscribirte a una lucha de entrenamiento?Entonces dame el nombre de tu compañero de[ENTER]entrenamiento.
 21	¿No sabes con quién quieres luchar? Si no me das[ENTER]un nombre, no puedo inscribirte.
-22	Bien, %s. Estás inscrito a la lucha de[ENTER]entrenamiento contra %s.
-23	%s está esperando la aceptación del desafío con %s
+22	Bien, %s. Te has inscrito para la lucha de entrenamiento contra %s.
+23	%s está esperando la aceptación del desafío con %s 
 24	Tú, %s, ¿quieres hacer una lucha de entrenamiento[ENTER]contra %s?
 25	%s no está en línea de momento. Inténtalo de[ENTER]nuevo más tarde o queda con tu compañero de[ENTER]entremaniento.
 26	Quiero mejorar algo
-27	Herrero.
+27	Herrero:
 28	¡Hola![ENTER]Soy el responsable de mejorar objetos. Si quieres[ENTER]mejorar un objeto, tan sólo dámelo.
 29	Información:
 30	Arrastra un objeto de tu inventario hacia el[ENTER]Herrero.
@@ -50,10 +50,10 @@
 50	No comprar
 51	Has comprado el Paquete de Pesca 3 en 1. ¡Que te[ENTER]diviertas! Y no olvides poner atención a la nota[ENTER]sobre el concurso de pesca. ¡Hasta pronto!
 52	Lo siento, pero no tienes suficiente Yang.[ENTER]No te preocupes, la próxima oportunidad llegará.[ENTER]¡Hasta pronto!
-53	Unknown Button [%s]
+53	UNKNOWN BUTTON [%s]
 54	Nota de la Competición de Pesca
 55	Si te casas ahora no puedes cambiar de reino, ya[ENTER]que sólo los personajes que no están casados[ENTER]pueden cambiar de reino.
-56	Cambiar Reino:
+56	Cambiar Reino
 57	Divórciate si quieres cambiar el reino.
 58	No puedes cambiar de reino mientras estés[ENTER]transformado.
 59	Usa este objeto una vez no estés transformado.
@@ -172,10 +172,10 @@
 172	El biólogo Chaegirab, estudiante de Uriel, te[ENTER]está buscando.[ENTER]Por favor, ve con él y pregúntale si puedes[ENTER]ayudarle.
 173	Ahora tengo suficientes Fungicidas. ¡Buen trabajo!Como muestra de mi gratitud voy a darte algo de[ENTER]Yang y los resultados de mi investigación.
 174	Como recompensa recibirás 200.000 puntos de[ENTER]experiencia y 20.000 Yang.[ENTER]Además, recibirás un Casco +2.
-175	Casco de hierro
-176	Capilla de cadena
-177	Yelmo de imitación
-178	Sombrero fénix
+175	Casco de Hierro+2
+176	Capilla de cadena+2
+177	Yelmo de Imitación+2
+178	Sombrero Fénix+2
 179	Lo siento, pero este Fungicida es de pobre[ENTER]calidad e inútil para mi.[ENTER]Por favor consígueme otro.
 180	¡Me alegro de verte! Estudio todo tipo de plantas[ENTER]en este reino. Hay un montón de trabajo que hacer[ENTER]y no tengo tiempo de recoger las plantas por mi[ENTER]cuenta. ¿Me ayudarás, por favor?
 181	Ahora mismo, estoy estudiando los Fungicidas,[ENTER]tengo que hacer algunos experimentos con los[ENTER]Fungicidas y por eso necesito 10. ¿Puedes traerme[ENTER]alguno? Por favor, tienes que ayudarme. Tráeme[ENTER]uno cada vez, para que pueda examinarlos.
@@ -205,7 +205,7 @@
 205	Como recompensa, el Biólogo Chaegirab te dará[ENTER]2000 puntos de experiencia y 3000 Yang.[ENTER]También recibirás una armadura +3.
 206	El biólogo Chaegirab, estudiante de Uriel, te[ENTER]está buscando.[ENTER]Por favor, ve con él y pregúntale si puedes[ENTER]ayudarle.
 207	Armadura de Monje+3
-208	Traje Azul
+208	Traje Azul+3
 209	Armadura Placas Sagradas+3
 210	Ropaje Azul +3
 211	Lo siento, la calidad de esta Campánula es muy[ENTER]mala...[ENTER]Por favor, tráeme una nueva.
@@ -213,7 +213,7 @@
 213	En este momento, estoy estudiando la Campana las[ENTER]Liebres. Tengo que hacer algunos experimentos con[ENTER]las Campanas las Liebras.[ENTER]Por lo tanto, necesito 5. ¿Puedes traérmelas? Por[ENTER]favor, tienes que ayudarme.[ENTER]Tráeme una Campana las Liebras cada vez para que[ENTER]pueda investigarlas.
 214	Recoge Campanas las Liebres
 215	El Biólogo Chaegirab, aprendiz de Uriel, está[ENTER]buscando Campanas las Liebres.[ENTER]Llévale sólo una cada vez para sus experimentos.[ENTER]Puedes conseguirlas de los Lobos Alfa Azul[ENTER]Hambrientos.
-216	Has entregado %s Campanas las Liebres hasta ahora.
+216	Has entregado %s Campanas las Liebres hasta ahora. 
 217	Puedes usar el elixir tan pronto como hayas[ENTER]encontrado una Campánula.
 218	Las Campanas las Liebres
 219	¡Oh! ¡Es de máxima calidad![ENTER]Por desgracia, necesito %s Campánulas más. ¡Por[ENTER]favor, intenta encontrarlas!
@@ -251,7 +251,7 @@
 251	Otro intento
 252	¿Puedes intentarlo de nuevo? Hm... muy bien. Me[ENTER]gusta bastante, pero por favor, inténtalo de[ENTER]nuevo. Bien, nos vemos más tarde.
 253	¡¡¡Oh!!! Por favor, ayúdame. Estoy recogiendo[ENTER]información sobre los monstruos en nuestro reino,[ENTER]pero no puedo manejarlo yo solo. En realidad,[ENTER]debería recoger la información por mi cuenta.[ENTER]Creo que puedes imaginar que yo, un simple[ENTER]biólogo, tiene problemas con eso. Por favor,[ENTER]ayúdame. Por supuesto, recibirás una buena[ENTER]recompensa por ayudarme.
-254	Actualmente, estoy examinando a los orcos del[ENTER]Valle del Dragón. Los dientes de orco pueden[ENTER]incluso moler hierro, lo que es increíblemente[ENTER]interesante.[ENTER]A pesar de las diferencias obvias, muchos[ENTER]investigadores piensan que la raza humana está[ENTER]emparentada con la raza de los Orcos. Quizá los[ENTER]dientes de Orco me puedan decir más y me den una[ENTER]pista vital sobre la historia de nuestra[ENTER]evolución.[ENTER]
+254	Actualmente, estoy examinando a los orcos del[ENTER]Valle del Dragón. Los dientes de orco pueden[ENTER]incluso moler hierro, lo que es increíblemente[ENTER]interesante.[ENTER]A pesar de las diferencias obvias, muchos[ENTER]investigadores piensan que la raza humana está[ENTER]emparentada con la raza de los Orcos. Quizá los[ENTER]dientes de Orco me puedan decir más y me den una[ENTER]pista vital sobre la historia de nuestra[ENTER]evolución.
 255	¿Puedes traerme unos cuantos dientes? Pero[ENTER]necesito dientes especiales. Tráeme una muela,[ENTER]pero solo una cada vez, para que pueda[ENTER]examinarla. ¡Buena suerte!
 256	La investigación del Biólogo
 257	Los dientes de los orcos del Valle del Dragón.
@@ -458,7 +458,7 @@
 458	Biólogo Chaegirab:
 459	¡Anda! ¡Esta Rama de árbol rojo fantasma es de la[ENTER]mejor calidad! Voy a empezar mi investigación[ENTER]inmediatamente.
 460	Sin embargo, necesito otras
-461	 de ellas.
+461	de ellas.
 462	¡Por favor inténtalo y encuentra alguna![ENTER][ENTER]Y recuerda que necesito tiempo para el análisis.[ENTER]No podré examinar la siguiente rama hasta mañana.
 463	Biólogo Chaegirab:
 464	¡Has recogido las 40 ramas! Gracias. Ahora sólo[ENTER]necesito una Piedra Alma Espíritu Bosque para[ENTER]ayudarme a entender a las criaturas tras esos[ENTER]árboles vivientes. ¿Podrías ocuparte de esto por[ENTER]mi? Puedes encontrarla por los árboles en el[ENTER]Bosque Rojo.
@@ -486,7 +486,7 @@
 486	Se supone que también debo darte esta Caja de[ENTER]Ébano Carmín. Por favor cuídala bien.
 487	Esta es tu recompensa por completar la petición[ENTER]de Chaegirab.
 488	Como recompensa por completar la petición de[ENTER]Chaegirab, tu resistencia al daño contra ataques[ENTER]hechos hacia ti (PvP) aumenta permanentemente en[ENTER]un 10%.
-489	El efecto es permanente.
+489	Este aumento es permanente.
 490	Biólogo Chaegirab:
 491	La petición del Biólogo
 492	La investigación del Biólogo
@@ -511,7 +511,7 @@
 511	Oh, ¡has encontrado unas notas![ENTER]Dame un segundo para comprobarlas...
 512	¡Oh, genial! ¡Buen trabajo!
 513	Sin embargo, necesito otras
-514	 de ellas.
+514	de ellas.
 515	Sin embargo, necesito otras %s de ellas.
 516	¡Por favor inténtalo y encuentra alguna![ENTER][ENTER]Y recuerda que necesito tiempo para examinarlas.[ENTER]No podré estudiar las siguientes hasta mañana.
 517	Has recogido las 50 notas, ¡es fantástico![ENTER]Así que seguramente ya has adivinado lo que[ENTER]necesito ahora. Todavía me falta una Piedra Alma[ENTER]del Líder. Entonces tendré todo lo que necesito.[ENTER]Puedes hacerlo, ¿no? Consigue una Piedra Alma del[ENTER]Líder y tráemela.[ENTER]Puedes conseguirla de los Monstruos Jefe.
@@ -539,7 +539,7 @@
 539	Y esta vez es la Caja de Ébano Azul.[ENTER]¿Sientes curiosidad? ¡Entonces ábrela rápido!
 540	Esta es tu recompensa por completar la petición[ENTER]de Chaegirab.
 541	Como recompensa por completar la petición de[ENTER]Chaegirab, tu valor de ataque para luchas contra[ENTER]otros jugadores (PvP) aumentará permanentemente[ENTER]en un 8%.
-542	El efecto es permanente.
+542	Este aumento es permanente.
 543	Seon-Pyeong:
 544	Investigación de Seon-Pyeong
 545	En el Valle de Seungryong, Seon-Pyeong necesita[ENTER]de tu ayuda. Ve a donde él y averigua que pasa.
@@ -633,7 +633,7 @@
 633	Hola, ¿cómo estás? ¿Estás interesado en crear[ENTER]varias pociones que pueden fortalecerte o[ENTER]curarte? Yo, como médico, me encargo de la[ENTER]creación de pociones.[ENTER]He encontrado varias recetas distintas. ¿Quieres[ENTER]intentarlas?
 634	El refinamiento de objetos es un oficio[ENTER]importante. ¿Te interesan el método? Te puedo[ENTER]enseñar algunas recetas de la Tradición de[ENTER]hierbas con las que se pueden fabricar variantes[ENTER]más fuertes de pociones conocidas. O si no, te[ENTER]enseño cómo transformar cinturones comunes y[ENTER]corrientes en instrumentos de poder.
 635	La receta secreta
-636	Huahn-So
+636	Huahn-So:
 637	He encontrado una receta secreta familiar.[ENTER]Usándola, ¡casi te conviertes en invencible![ENTER]Jajaja. Puede que sea el único en este país que[ENTER]la conoce. Con estas pociones, no puede pasarte[ENTER]casi nada. ¿Quieres probarlas?
 638	Para refinar esta armadura necesito: %s.
 639	Materiales:
@@ -686,7 +686,7 @@
 686	¿Quieres entrar al 6º piso de la torre? Requiere[ENTER]una gran habilidad y astucia tratar con este[ENTER]piso. Sólo una vez hayas alcanzado el nivel 75[ENTER]podré teletransportarte allí.
 687	Tienes la experiencia necesaria y por tanto[ENTER]tienes una buena oportunidad de sobrevivir en las[ENTER]plantas superiores.[ENTER]¡Ahora puedes entrar!
 688	Guardián de la Torre Demoníaca
-689	Ir
+689	¡Vamos!
 690	¡Dejar la torre!
 691	Tu nivel es demasiado bajo. No puedo permitirte[ENTER]la entrada a los niveles superiores. Vuelve una[ENTER]vez tengas más experiencia. Tienes que tener al[ENTER]menos nivel 75.
 692	El Mapa de la Torre Zin-Sa-Gui abre el camino a[ENTER]la siguiente planta. Puedes encontrarlos[ENTER]destruyendo las piedras Metin.
@@ -713,7 +713,7 @@
 713	¡El grupo de %s está intentando eliminar al[ENTER]Dragón Azul!
 714	¡No tienes suficientes llaves! Para activar el[ENTER]portal, necesito
 715	Puedes obtenerla de los capitanes malvados[ENTER]Yonghan y Huashin.
-716	¡Deseo abandonar este lugar!
+716	Quiero abandonar este lugar
 717	Te llevaré de regreso a la entrada de la Gruta[ENTER]del Exilio.
 718	Sí, por favor.
 719	No, me quedaré aquí.
@@ -735,7 +735,7 @@
 735	No, es demasiado trabajo.
 736	Por supuesto, es tu decisión.
 737	Las estrellas todavía no están en el lugar[ENTER]adecuado, ¡es muy pronto! Todavía tienes que[ENTER]esperar %s.
-738	Tiempo restante
+738	Tiempo restante:
 739	Reunir materiales
 740	Materiales para la Bola polimorfa
 741	Materiales reunidos
@@ -745,14 +745,14 @@
 745	No has conseguido reunir todos los materiales[ENTER]necesarios en el tiempo previsto.
 746	¿Me das %s unidades de este material?
 747	No puedes permitirte mis servicios.[ENTER]Son 150 000 de Yang.
-748	Aquí tienes, de nada.
+748	¡Aquí tienes!
 749	No, gracias, ¡mejor me lo quedo!
 750	Gracias, te has esforzado mucho.[ENTER]Todo ha salido bien, no estoy tan desentrenado.[ENTER]Aquí tienes:
 751	Ay, estas viejas manos me la han jugado: no he[ENTER]podido fabricar ni una Bola polimorfa. Como[ENTER]disculpa te regalo este objeto:
 752	Como prefieras.
-753	¿¡Fragmento de piedra dragón!?
+753	¡¿Fragmento piedra dragón+?!
 754	En tu mano sujetas el fragmento de una piedra.[ENTER]Reluce misteriosamente y sientes su poder[ENTER]recorrer tu cuerpo.[ENTER]¿Qué tipo de piedra es esta? Llévasela al[ENTER]alquimista. Él te podrá ayudar.
-755	¿¡Fragmento de piedra dragón!?
+755	¡¿Fragmento piedra dragón+?!
 756	Este es el fragmento de una Piedra dragón, un[ENTER]cristal extraordinario y valioso con un gran[ENTER]poder. Se cuenta que es el alma de un dragón.[ENTER]¡Precioso![ENTER]¿Sientes su poder recorrer tu cuerpo cuando lo[ENTER]llevas contigo?[ENTER]Tráeme diez Fragmentos de Piedra dragón en total.[ENTER]Yo te los convertiré en una Piedra completa.
 757	Transmutación de Piedra dragón
 758	Paciencia. Para crear una Piedra dragón necesito[ENTER]10 fragmentos.[ENTER]¡Sigue buscando!
@@ -771,7 +771,7 @@
 771	Poder del ojo de dragón
 772	Poder del ojo de dragón restante: %d
 773	Escoge.
-774	Es gibt keine Drachensteinsplitter mehr
+774	No hay más Fragmentos de piedra dragón.
 775	Dame el Poder del ojo de dragón
 776	¡Hola! Hoy ya has recibido el Poder del ojo de[ENTER]dragón. El proceso me resulta demasiado agotador,[ENTER]así que solo te puedo ayudar una vez por día.[ENTER]¡Vuelve mañana por aquí!
 777	¡Hola! Apuesto a que vienes a verme por el Poder[ENTER]del ojo de dragón. ¿Me equivoco? Muy bien, aquí[ENTER]lo tienes. ¡Suerte con tu búsqueda! Espero que[ENTER]encuentres suficientes Fragmentos de piedra[ENTER]dragón.
@@ -806,7 +806,7 @@
 806	Este objeto no es compatible con mi técnica.[ENTER]Tráeme otra cosa.
 807	Este objeto no tiene suficiente energía.[ENTER]Tráeme uno de nivel 35 como mínimo: sólo así mi[ENTER]técnica podrá extraer su energía.
 808	¿Quieres que destruya este objeto?
-809	Sí
+809	¡Sí!
 810	¡No, todavía no!
 811	He fracasado. Lamentablemente no he podido[ENTER]extraer ningún fragmento de energía. Quizás lo[ENTER]logre la próxima vez.
 812	¡Excelente! He encontrado %d fragmentos de[ENTER]energía. Aquí tienes.
@@ -815,7 +815,7 @@
 815	Todavía no tienes suficientes fragmentos de[ENTER]energía. Con esto no puedo fabricar ningún[ENTER]Cristal de Energía.[ENTER]Vuelve cuando hayas reunido al menos %d[ENTER]fragmentos de energía.
 816	Muy bien, ya tienes los %d fragmentos de energía[ENTER]que necesitaba. Con ellos podré hacer un Cristal[ENTER]de Energía.[ENTER]Espera un segundo. Voy a intentarlo, pero no[ENTER]puedo asegurarte que funcione.
 817	Todo está listo para unir los fragmentos en un[ENTER]Cristal de Energía.[ENTER]Pero de algo tendré que vivir, ¿no? Y mis[ENTER]herramientas no caen del cielo sin más.[ENTER]Sólo piedo una contribución por gastos de %d[ENTER]Yang. ¿Quieres pagar?
-818	Faltaría más.
+818	¡Por supuesto!
 819	No, aún no.
 820	Está bien, respetaré tu decisión.[ENTER]Vuelve cuando hayas cambiado de opinión y[ENTER]necesites un Cristal de Energía.
 821	Lo siento, pero primero tienes que pagar. No soy[ENTER]de ninguna asociación de caridad.[ENTER]Así son los negocios: dame el dinero y luego yo[ENTER]me encargaré del trabajo.
@@ -856,7 +856,7 @@
 856	¿Has encontrado huevos de Pascua?
 857	¡A cambio de esto tienes que darme %d huevos!
 858	¡Sí, acepto!
-859	No, más bien no.
+859	¡No, no lo acepto!
 860	Gracias por tus huevos. ¡Que te diviertas con tu[ENTER]regalo de Pascua!
 861	Cesta Vacía:
 862	¿Te gustaría tener este objeto?
@@ -883,13 +883,13 @@
 883	¡Otra vez tú! ¿Te cuento un secreto? Con un poco[ENTER]de suerte, en el Cofre de Halloween puedes[ENTER]encontrar una Tarjeta de careta de calabaza.
 884	Con esta tarjeta puedes conseguir una terrorífica[ENTER]Careta de calabaza. ¿No te apetece tener una[ENTER]careta?
 885	¿No tienes ninguna Tarjeta de careta de calabaza?[ENTER]¡Entonces no te llevarás ninguna careta! ¡Ja, ja!
-886	Historiador:
+886	¿Historiador?
 887	Historiador:
 888	¡Aprende del pasado y abraza el futuro! ¿En qué[ENTER]te puedo ayudar?
 889	Perdona, ¿nos conocemos?
 890	Vaya, he olvidado presentarme. Soy uno de los[ENTER]historiadores. Hemos visto mucho mundo, así que[ENTER]si tienes preguntas sobre la historia, no dudes[ENTER]en venir a verme.
 891	Es un honor conocerte. Vendré a visitarte de vez[ENTER]en cuando.
-892	Was Süßes
+892	Algo dulce
 893	Qué pena, hasta la próxima.
 894	Entonces ya sabes lo que quiero. Tráeme Pan y[ENTER]tendrás tus Dulces.
 895	Te daré unos Dulces por cada 10 unidades de Pan.[ENTER]¿Te parece bien?
@@ -959,7 +959,7 @@
 959	¿Puedes reparar esta espada?
 960	¡Esta es una espada impresionante! Era de Mirine,[ENTER]¿verdad? Oí que le ayudaste. Bien hecho, esto te[ENTER]acredita como una persona honesta así que no te[ENTER]cobraré por la reparación de la espada.[ENTER]Espera un momento...
 961	Aquí, la cuchilla se ve ahora como nueva. Un arma[ENTER]verdaderamente fantástica. Tómala, mi amigo.
-962	Has recibido Espada de Plata+3.
+962	Obtienes una Espada de Plata +2.
 963	Obtienes una Espada de Orquídea +2.
 964	Obtienes una Espada Bastarda +2.
 965	Obtienes una Espada Bárbara +2.
@@ -976,7 +976,7 @@
 976	De repente, hubo una ráfaga. ¡La carta que[ENTER]contenía la localización del soldado[ENTER]experimentado voló!
 977	He encontrado al soldado experimentado.
 978	De repente, la carta se prende fuego y se[ENTER]convierte en ceniza oscura. Entonces
-979	Wärme deinen Körper
+979	un sentimiento cálido recorre tu cuerpo.
 980	¡El soldado experimentado te ha bendecido!
 981	¡El soldado experimentado te bendice!
 982	La carta que contiene la información sobre la[ENTER]localización del soldado experimentado puede[ENTER]bendecir a un nuevo aventurero si éste es capaz[ENTER]de encontrar al soldado experimentado.
@@ -998,11 +998,11 @@
 998	Tu intento de encontrar un soldado experimentado[ENTER]no ha tenido éxito.
 999	Buscando al objetivo %s
 1000	¿Dónde puedo comprar una poción roja?
-1001	Guardián:
+1001	Guardián
 1002	Guardián:
 1003	Puedes adquirir la Poción Roja de la Vendedora de[ENTER]la Tienda General. Ella está allí. Si no la[ENTER]puedes ver, dirígete hacia el círculo[ENTER]intermitente en el mapa grande o hacia el punto[ENTER]rojo intermitente en el mini mapa.
 1004	Vendedor general:
-1005	Vendedor general:
+1005	Comerciante general
 1006	¡Bienvenido, aventurero![ENTER]Oh, ¿así que te envía el guardián? ¿Necesita una[ENTER]Poción Roja? Te daré cinco.[ENTER]Toma, aquí las tienes. Sirven para regenerar la[ENTER]vitalidad y además saben bien.
 1007	Puede que seas nuevo, pero estoy segura que[ENTER]pronto serás un cliente habitual. Por eso te doy[ENTER]gratis estas pociones. Por favor, vuelve otra[ENTER]vez.
 1008	Has recibido 5 pociones rojas del almacén general.
@@ -1017,7 +1017,7 @@
 1017	¡Bienvenido a nuestra aldea aventurero! Espero[ENTER]que puedas llevar a cabo una tarea para mí. Si te[ENTER]doy 200 yang, ¿puedes ir al almacén general y[ENTER]comprar una poción roja para mí?[ENTER]Desafortunadamente, debo permanecer aquí. Usa tu[ENTER]mini mapa para localizar el almacén general,[ENTER]usando el punto rojo que parpadea.
 1018	Sí
 1019	Has recibido 200 yang del guardián. Ve al almacén[ENTER]general y compra una poción roja. Puedes usar el[ENTER]yang para comprar objetos y servicios de varios[ENTER]aldeanos.
-1020	Unknown Button [%s]
+1020	UNKNOWN BUTTON [%s]
 1021	Compra una poción roja
 1022	Compra una poción roja en el almacén general y[ENTER]vuelve con el guardián.
 1023	No estoy seguro de estar lo suficientemente[ENTER]capacitado para mejorar esta Caña de Pescar.
@@ -1039,61 +1039,61 @@
 1039	¿Quieres atravesar el Abismo de Am-heh y[ENTER]enfrentarte a tu destino?
 1040	Entrer
 1041	Peut être plus tard
-1042	Vous ne pouvez passer que par la Gorges d Am Heh après avoir complété la quête du niveau 103
-1043	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1044	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1045	Un seul groupe peut prendre d assaut la forteresse du dragon rouge Vous aurez également besoin d un laissez passer pour entrer
-1046	Je ne peux vous laisser entrer que si vous avez un laissez passer
-1047	Le niveau de tous les membres du groupe doit être d au moins 100 Sinon je ne peux pas vous laisser passer
-1048	Je ne vous laisserai passer que si tous les membres du groupe ont au moins le niveau 100
+1042	Podrás atravesar el Abismo de Am-heh cuando hayas[ENTER]completado la misión del nivel 103.
+1043	Aún no ha terminado el tiempo de espera para[ENTER]volver a entrar en la Fortaleza del Dragón Rojo.
+1044	Aún no ha terminado el tiempo de espera para[ENTER]volver a entrar en la Fortaleza del Dragón Rojo.
+1045	Solamente un grupo puede asaltar la Fortaleza del[ENTER]Dragón Rojo. Además, hace falta un Tique de[ENTER]entrada.
+1046	Solamente os puedo dejar pasar si tenéis un Tique[ENTER]de entrada.
+1047	Todos los miembros del grupo han de tener como[ENTER]mínimo el nivel 100. Si no es el caso, no puedo[ENTER]dejaros pasar.
+1048	Os dejaré pasar cuando todos los miembros del[ENTER]grupo sean de nivel 100 o superior.
 1049	Forteresse du dragon rouge
-1050	Voulez vous entrer dans la forteresse du dragon rouge
+1050	¿Quieres entrar en la Fortaleza del Dragón Rojo?
 1051	Entrer
 1052	Peut être plus tard
-1053	Seul le chef du groupe peut demander l admission
-1054	J apprécie votre courage mais vous serez seul à vous ruiner dans la forteresse du dragon rouge Mettez en place un groupe fort et je vous laisserai rentrer
+1053	Solamente el líder del grupo puede solicitar el[ENTER]acceso.
+1054	Admiro tu valentía, pero si entras en solitario[ENTER]en la Fortaleza del Dragón Rojo estás buscando tu[ENTER]perdición. Reúne un grupo de aguerridos[ENTER]compañeros y te dejaré entrar.
 1055	Lorsque le temps est écoulé le groupe est téléporté hors de la forteresse
 1056	Temps restant Minute n
-1057	Votre temps est écoulé Dans dix secondes vous serez téléporté aux portes de la forteresse
-1058	Dans dix secondes le groupe sera téléporté hors de la forteresse du dragon rouge
-1059	Réveillez la Gorges d Am Heh
-1060	Seul le chef peut réveiller la gorge de Am heh
-1061	La Gorge d Am heh est réveillée Maintenant personne n entre ni ne sort
-1062	Les portes de la forteresse du dragon rouge se ferment pendant une heure
-1063	Temps restant 60 Minute n
-1064	Mission Osez entrer dans l anneau des démons et en sortir victorieux
-1065	Tous les démons n ont pas encore été vaincus
+1057	Se os ha acabado el tiempo. En diez segundos[ENTER]seréis teletransportados frente a las puertas de[ENTER]la Fortaleza.
+1058	En diez segundos se teletransportará al grupo[ENTER]frente a las puertas de la Fortaleza del Dragón[ENTER]Rojo.
+1059	Despertar el Abismo de Am-heh
+1060	¡Solamente el líder puede despertar el Abismo de[ENTER]Am-heh!
+1061	El Abismo de Am-heh ha despertado. Ahora nadie[ENTER]más puede entrar... o salir.
+1062	Las puertas de la Fortaleza del Dragón Rojo se[ENTER]cerrarán durante una hora.
+1063	Tiempo restante: 60 minuto(s)
+1064	Misión: entrar en el anillo de los Demonios y[ENTER]vencer.
+1065	Aún no se ha derrotado a todos los demonios.
 1066	Restant
 1067	Tâche Trouvez l engrenage en or et activez le mécanisme caché dans la Stèle de l Isfet
-1068	Le mécanisme de la stèle de l Isfet ne peut être déclenché qu avec l engrenage en or Revenez quand la tâche a été accomplie
-1069	Mission vaincre Ignator gardien des braises
-1070	Ignator n a pas encore été vaincu Travailler dur ou recevoir sa damnation éternelle Revenez lorsque la tâche est terminée
-1071	Tâche Trouvez les Pierre de Maât et placez les dans le bon ordre sur les sept stèles de l Isfet
-1072	Si vous utilisez la Pierre de Maât sur la mauvaise stèle elle se brisera
-1073	L erreur est humaine Par conséquent choisissez judicieusement pour résoudre le puzzle Renvenez lorsque la tâche est terminée
-1074	Mission Seuls ceux qui n ont pas peur de la chaleur accablante vont détruire le Metin du Purgatoire
-1075	Laissez le Metin du Purgatoire se transformer en cendres et revenez lorsque la tâche sera accomplie
+1068	Solamente se puede activar el mecanismo de la[ENTER]Estela de Isfet con el Engranaje dorado. Vuelve[ENTER]cuando hayas completado la tarea.
+1069	Misión: vencer a Ignidor, guardián del ascua.
+1070	Aún no se ha vencido a Ignidor. Tendréis que[ENTER]esforzaros más u os entfrentaréis a la[ENTER]condenación eterna. Vuelve cuando hayas[ENTER]completado la tarea.
+1071	Misión: buscar las Piedras de Maat y colocarlas[ENTER]en el orden correcto en las siete Estelas de[ENTER]Isfet.
+1072	Si colocáis la Piedra de Maat en el lugar[ENTER]incorrecto se romperá.
+1073	¡Equivocarse es humano! Por eso, pensadlo bien a[ENTER]la hora de resolver el acertijo. Volved cuando[ENTER]hayáis completado la misión.
+1074	Misión: solamente aquellos que no tengan miedo al[ENTER]calor abrasador podrán acabar con el Metin del[ENTER]purgatorio.
+1075	Convierte en cenizas el Metin del purgatorio.[ENTER]Vuelve cuando hayas completado la tarea.
 1076	Tous les démons ont été vaincus
-1077	Visitez la Gorge d Am heh pour ouvrir un autre Verrou du destin
-1078	La stèle d Isfet a été détruite
-1079	Cet engin était un faux et a été détruit Trouvez l original
-1080	Ignator gardien des braises a été tué
-1081	C était un choix judicieux Détruire la prochaine stèle
-1082	C était un choix judicieux Détruire la prochaine stèle
-1083	Mauvais ordre La pierre du Maat a été détruite
-1084	C était un choix judicieux Détruire la prochaine stèle
-1085	C était un choix judicieux Détruire la prochaine stèle
-1086	C était un choix judicieux Détruire la prochaine stèle
+1077	Busca el Abismo de Am-heh para abrir otra[ENTER]Cerradura del destino.
+1078	La Estela de Isfet ha sido destruida.
+1079	Ese Engranaje era una falsificación y resultó[ENTER]destruido. Encontrad el original.
+1080	Ignidor, guardián del ascua, ha sido destruido.
+1081	Buena elección. Ahora, destruid la siguiente[ENTER]Estela.
+1082	Buena elección. Ahora, destruid la siguiente[ENTER]Estela.
+1083	Orden incorrecto. La Piedra de Maat ha sido[ENTER]destruida.
+1084	Buena elección. Ahora, destruid la siguiente[ENTER]Estela.
+1085	Buena elección. Ahora, destruid la siguiente[ENTER]Estela.
+1086	Buena elección. Ahora, destruid la siguiente[ENTER]Estela.
 1087	Buena elección. Ahora, destruid la última Estela[ENTER]y Maat vencerá a Isfet.
-1088	La Metin du Purgatoire a été détruite
-1089	Razador a été tué
-1090	Tous les combattants seront téléportés hors du Temple du Dragon dans une minute
-1091	Pour passer par la Gorge d Am heh votre chef doit avoir au moins le niveau 104
-1092	Votre force n est pas suffisante pour traverser la Gorge d Am heh Revenez dès que vous atteignez le niveau 104 ou supérieur
-1093	Vous êtes à l extérieur des portes de la forteresse du dragon rouge depuis plus de cinq minutes et vous ne pouvez plus rentrer
-1094	Le temps de rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1095	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe nécessite un passe Les joueurs suivants n en portent pas actuellement
-1096	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe doit avoir atteint le niveau 100 Les joueurs suivants n ont pas atteint le niveau pour le moment
+1088	El Metin del purgatorio ha sido destruido.
+1089	Arrador ha sido destruido.
+1090	Todos los luchadores serán teletransportados[ENTER]fuera del Templo del Dragón en un minuto.
+1091	Un líder necesita ser de nivel 104 o superior[ENTER]para poder atravesar el Abismo de Am-heh.
+1092	Tu fuerza aún no basta para atravesar el Abismo[ENTER]de Am-heh. Vuelve cuando hayas alcanzado el nivel[ENTER]104 como mínimo.
+1093	Te has demorado más de cinco minutos ante las[ENTER]puertas de la Fortaleza del Dragón Rojo y ahora[ENTER]ya no puedes entrar.
+1094	Aún no ha terminado el tiempo de espera para[ENTER]volver a entrar en la Fortaleza del Dragón Rojo.
+1095	¡ATENCIÓN! Para entrar en la Fortaleza del Dragón[ENTER]Rojo, cada miembro del grupo necesita un Tique de[ENTER]entrada. Los siguientes miembros no tienen[ENTER]NINGUNO ahora mismo:
+1096	¡ATENCIÓN! Para acceder a la Fortaleza del Dragón[ENTER]Rojo, todos los miembros del grupo tienen que[ENTER]haber alcanzado el nivel 100. Los siguientes[ENTER]jugadores NO han alcanzado el nivel:
 1097	The group from %s has killed the Razador!
 1098	El reino Jinno entra en el terreno sagrado.
 1099	¡No puedes participar!
@@ -1146,7 +1146,7 @@
 1146	Montaña Sohan
 1147	Doyyumhwan
 1148	Desert Yongbi
-1149	Temple Hwang
+1149	Templo Hwang
 1150	Grotte de l exil
 1151	Nachricht der Turnier-Leitung
 1152	Willkommen zum großen Metin2-Turnier! In deinem[ENTER]Inventar findest du die Rätselhafte Truhe. Sobald[ENTER]du mit der rechten Maustaste darauf klickst,[ENTER]wirst du in das Feuerland teleportiert - und die[ENTER]Kämpfe können beginnen!
@@ -1363,7 +1363,7 @@
 1363	Tiempo hasta disolución: %s día(s)
 1364	Tiempo de espera
 1365	Posibilidad más temprana para repetir el intento:[ENTER]%s hora(s)
-1366	Tiempo restante
+1366	Tiempo restante:
 1367	Ajuste inmediato
 1368	Registro inmediato posible.
 1369	Aquí puedes comparar la clasificación de tu[ENTER]gremio con los gremios que están posicionados por[ENTER]encima y por debajo de tu gremio:[ENTER][DELAY value;0][ENTER]|Nombre del gremio |Puntos |Victorias |Empates[ENTER]|Derrotas[ENTER]%s[/DELAY][ENTER]
@@ -1377,7 +1377,7 @@
 1377	Compra un Tique de apuesta para tu reino.[ENTER][ENTER]1. En cada guerra de gremio, hay un anuncio[ENTER]concerniente al posible pronóstico sobre por[ENTER]cuanto ganará el gremio victorioso.[ENTER]2. Comprado un Tique de apuesta, puedes apostar[ENTER]si el gremio que piensas que ganará va a alcanzar[ENTER]la diferencia pronosticada o no.[ENTER]3. Las posibilidades de elegir una apuesta[ENTER]dependen de la cabina de apuestas.[ENTER]Una vez que acaba la guerra, serás informado[ENTER]sobre si ganaste o perdiste.[ENTER][ENTER]*El 10% de los beneficios se paga al reino.
 1378	%s contra %s
 1379	Administrador de batalla:
-1380	 con
+1380	con
 1381	No hay ninguna guerra de gremio en la que puedas[ENTER]apostar en este momento.
 1382	¿Para qué guerra de gremio quieres comprar el[ENTER]Tique de apuesta?
 1383	Según mi lista, ya has comprado un Tique de[ENTER]apuesta para esta guerra de gremio. Sólo puedes[ENTER]comprar un Tique por guerra.
@@ -1446,12 +1446,12 @@
 1446	¡Por supuesto no te expondrás al peligro en vano![ENTER]Llévale a Wonda-Rim las Galletas de Arroz. Él te[ENTER]recompensará. Cuantas más Galletas de Arroz le[ENTER]entregues, más valiosa será la recompensa.
 1447	¡Nos has traído de vuelta todas nuestras[ENTER]provisiones! Estamos en deuda contigo. ¡Sin tu[ENTER]ayuda lo habríamos pasado realmente mal!
 1448	Aún hay que recuperar gran parte de nuestras[ENTER]reservas. ¿Podemos contar con tu ayuda?
-1449	Por supuesto.
+1449	¡Por supuesto!
 1450	Os ayudo más tarde.
 1451	Te estaré esperando.
 1452	Misión %s[ENTER]Puedes llevar a cabo esta misión 10 veces en[ENTER]total.
 1453	Sin ti estaríamos perdidos. ¿Nos seguirás[ENTER]ayudando? Gran parte de nuestras reservas siguen[ENTER]desaparecidas.
-1454	Sí, continuaré.
+1454	¡Voy a continuar!
 1455	Volveré más tarde.
 1456	Se te da bien luchar, ¡sigue así![ENTER][ENTER]Misión %s[ENTER]Puedes llevar a cabo esta misión 10 veces en[ENTER]total.
 1457	Sabueso infernal
@@ -1475,7 +1475,7 @@
 1475	¡Mientras estabas fuera han vuelto a saquear[ENTER]nuestro pueblo!
 1476	Medusa infernal
 1477	Zombi
-1478	Guerreros Llama
+1478	Guerrero Llama
 1479	General Rana Toro
 1480	Requeridor Oscuro
 1481	Luchador Arahan Esotér.
@@ -1714,7 +1714,7 @@
 1714	No quiero tener que decir esto otra vez: Si[ENTER]quieres montar a caballo, ¡tienes que llevar tu[ENTER]Pintura de Caballo contigo!
 1715	Si posees el libro caballo armado, puedes atacar[ENTER]a tus oponentes desde el caballo.[ENTER]Voy a poner a prueba tu experiencia de combate y[ENTER]equitación. Ve al desierto y mata algunos[ENTER]arqueros escorpión. Puedes ir allí en grupo, pero[ENTER]TÚ tienes que ser el líder del grupo.
 1716	Bien, vuelve más tarde.
-1717	Unknown Button [%s]
+1717	UNKNOWN BUTTON [%s]
 1718	No se me ocurre ninguna razón por la que no hayas[ENTER]recibido el libro caballo armado. Deberías[ENTER]preguntarle a un Game Master lo que pasa.
 1719	Necesitas una medalla de caballo para comenzar la[ENTER]misión para el libro caballo armado. Puedes[ENTER]encontrar una en la mazmorra de los monos.
 1720	Arquer.restantes
@@ -1734,7 +1734,7 @@
 1734	Bien. Buena suerte la próxima vez.
 1735	¡No puedes mejorar un caballo muerto! Ve y[ENTER]encuentra las hierbas mentales que devuelven a la[ENTER]vida a tu caballo. Entonces podremos considerar[ENTER]el mejorar tu caballo.
 1736	Si quieres pasar la prueba, no tienes tiempo que[ENTER]perder. ¡Ve y elimina a los Arqueros Demonio!
-1737	Unknown Button [%s]
+1737	UNKNOWN BUTTON [%s]
 1738	Vuelve con el chico del establo
 1739	Dile al chico del establo los resultados de tu[ENTER]prueba.
 1740	Estado de la prueba
@@ -1809,27 +1809,27 @@
 1809	 mata %s
 1810	¡Bien! ¡Vamos!
 1811	Du hast die Herausforderung angenommen zu töten
-1812	 mata %s
+1812	mata %s
 1813	Momentan müssen noch getötet werden um den Jagdauftrag abzuschließen
-1814	 Número de este tipo:
+1814	Número de este tipo:
 1815	Información sobre la misión de caza
-1816	¡Mata al objetivo!
+1816	![ENTER]¡Mata al objetivo!
 1817	¡Elimina a %s!
 1818	show_mob_pos: map_index(%s) < 0
 1819	show_mob_pos: map_index(%s)
 1820	show_mob_pos: special.lvq_map[map_index(%s)] is nil
 1821	addmapsignal(%s,%s)
 1822	Restantes
-1823	¡Mata al objetivo!
+1823	![ENTER]¡Mata al objetivo! :---LOCA::SPACE--
 1824	Número de objetivos
 1825	Recompensa: %s%% de experiencia
-1826	Experiencia
+1826	% experiencia
 1827	Misión finalizada.
 1828	Tarea:
 1829	Misión finalizada.
 1830	Bien, has terminado con éxito la misión.
 1831	Nivel
-1832	 objeto
+1832	objeto
 1833	Experiencia
 1834	Recibido %s
 1835	Recompensa:
@@ -1838,7 +1838,7 @@
 1838	Vuelve con Ariyoung.
 1839	Vuelve a la aldea y dile a Ariyoung que no[ENTER]pudiste encontrar el recuerdo de su marido.
 1840	Visita a Ariyoung.
-1841	Ve con Ariyoung
+1841	Ve con Ariyoung.
 1842	Ve con Ariyoung y cuéntale sobre la muerte de su[ENTER]marido.
 1843	Mata al líder del Clan del Viento Negro.
 1844	Mata al líder del Clan del Viento Negro.
@@ -1932,11 +1932,11 @@
 1932	Devuelve el hacha dorada a Deokbae el leñador.
 1933	Devuelve el hacha dorada a Deokbae el leñador y[ENTER]obtén tu recompensa.
 1934	Sin su ayuda, nunca hubiera encontrado este hacha[ENTER]Pensé que todo había acabado cuando la perdí.[ENTER]¡Pero este héroe de aquí fue a la batalla sin[ENTER]dudar y recuperó mi hacha! Ahora llevo el hacha[ENTER]conmigo noche y día.
-1935	Entrar
+1935	Entrar.
 1936	Dentro de la Torre Demoníaca...
 1937	Esta torre está abarrotada de demonios. Sólo los[ENTER]más fuertes son capaces de alcanzar el último[ENTER]piso. Sin embargo, se dice que nadie que entra en[ENTER]la torre vuelve con vida. ¿Estás seguro que[ENTER]quieres entrar en la Torre Demoníaca?
 1938	Esta torre está abarrotada de demonios. Sólo los[ENTER]luchadores más fuertes son capaces de alcanzar el[ENTER]último piso. Sin embargo, se dice que nadie que[ENTER]entra en la torre vuelve con vida. Sólo puedes[ENTER]entrar en la Torre Demoníaca cuando has alcanzado[ENTER]el nivel 40. Si todavía quieres seguir adelante[ENTER]con aventuras suicidas entonces, es cosa tuya...
-1939	No entrar
+1939	No entrar.
 1940	Eliminar
 1941	Reino Junjeh
 1942	Reino Shinsoo
@@ -1974,8 +1974,8 @@
 1974	Mala suerte
 1975	Hoy es un día desastroso. Todos los Dioses te han[ENTER]dado la espalda. Nada funcionará... Si quieres[ENTER]hacer un fuego, lloverá; si tienes sed, el sol[ENTER]arderá como nunca. Trabajarás tan duro como los[ENTER]demás, pero no conseguirás nada.[ENTER]¡Tendrás "muy mala suerte"! Sin un Talismán, te[ENTER]esperan tiempos difíciles. ¿Te interesaría[ENTER]comprar uno?
 1976	Extemada mala suerte
-1977	Corte de tres maneras
-1978	Golpe de espada
+1977	Corte de Tres Maneras
+1978	Golpe de Espada
 1979	Emboscada
 1980	Ataque rápido
 1981	Daga rodante
@@ -1985,15 +1985,15 @@
 1985	Lluvia de flechas
 1986	Flecha de fuego
 1987	Camino pluma
-1988	Giro de espada
+1988	Giro de Espada
 1989	Flecha Venenosa
-1990	Golpe de dedo
-1991	Remolino del dragón
-1992	Hoja encantada
+1990	Golpe de Dedo
+1991	Remolino de Dragón
+1992	Hoja Encantada
 1993	Miedo
 1994	Armadura encantada
 1995	Anular magia
-1996	Golpe oscuro
+1996	Golpe Oscuro
 1997	Golpe de Llama
 1998	Espíritu de la llama
 1999	Berserk
@@ -2058,7 +2058,7 @@
 2058	Entonces bien.[ENTER][ENTER]Te sacaré del gremio.
 2059	Sí
 2060	Gremios como el tuyo tienen los siguientes[ENTER]resultados de batalla:[ENTER][DELAY value;0]
-2061	  |Nombre del Gremio |Puntos[ENTER]|Victorias |Derrotas |Empates
+2061	|Nombre del Gremio |Puntos |Victorias |Derrotas[ENTER]|Empates
 2062	Los resultados de batalla desde la posición 1 a[ENTER]la posición 10 son:[ENTER][DELAY value;0]
 2063	La posición de tu gremio es
 2064	, y la tabla de resultados es
@@ -2085,13 +2085,13 @@
 2085	Llévale a Baek-Go los ingredientes.
 2086	Lleva los ingredientes para la medicina a Baek-Go.
 2087	Vuelve con Baek-Go, dale la cola de escorpión[ENTER]puntiaguda y haz la medicina para Yu-Rang.
-2088	Busca a Huahn-So.
+2088	Busca a Huahn-So
 2089	Busca a Huahn-So.
 2090	Ve a ver a Huahn-So y escucha su historia.
 2091	Vuelve con Huahn-So
 2092	Infórmale a Huahn-So sobre tu éxito.
 2093	Infórmale a Huanso sobre tu éxito y obtén tu[ENTER]recompensa.
-2094	Huahn-So
+2094	Huahn-So:
 2095	Porcentaje de drop de artículos
 2096	Nivel
 2097	A causa de subir de nivel
@@ -2107,9 +2107,9 @@
 2107	Objeto aleatorio
 2108	se da una recompensa directa por la misión de[ENTER]nivel.
 2109	Número restante
-2110	Matado
+2110	matado!
 2111	Número de objetivos
-2112	¡Mata al objetivo!
+2112	![ENTER]¡Mata al objetivo!
 2113	Matado
 2114	!
 2115	¿Cómo puedo preparar Bolas de Arroz?
@@ -2134,7 +2134,7 @@
 2134	Entrada a la mazmorra difícil de los monos
 2135	1. Cuando entras en la mazmorra de los monos,[ENTER]tienes que matar al mono roca en menos de 20[ENTER]minutos.[ENTER]2. No puedes usar ningún pergamino para volver a[ENTER]una ciudad o a cualquier otro lugar.[ENTER][ENTER]Muchos de los que no han seguido estas[ENTER]instrucciones han sido convertidos en monos, así[ENTER]que cuida de ti mismo.
 2136	No entrar
-2137	Tiempo restante
+2137	Tiempo restante:
 2138	Mazmorra de los monos
 2139	Jeje, ¡todo el mundo morirá! ¡Kyaaaa!
 2140	¡Trozos, trozos, trozos, trozos!
@@ -2657,7 +2657,7 @@
 2657	No mires, ¡lucha!
 2658	No me gusta el modo en el que me estás mirando. ¡Lucha!
 2659	¡Es un honor morir por mi espada!
-2660	¡Excelente!
+2660	¡Genial!
 2661	Eh, ¡no toques!
 2662	Parece que la cuerda de mi arco está cortada.
 2663	Maldición, esos idiotas estuvieron aquí.
@@ -2822,7 +2822,7 @@
 2822	Ahhhhh, ¡siiiiiiiii!
 2823	¡Déjame contagiarte la enfermedad!
 2824	¡Esta causa tenaz de la enfermedad misteriosa!
-2825	 = El objeto necesario.
+2825	= El objeto necesario.
 2826	No puedes ir ahí ya que ni yo mismo he estado ahí.
 2827	Teletransportar
 2828	¡Hola! Sé cómo puedes llegar a otras regiones[ENTER]desde aquí. Si me das algo de Yang, puedo[ENTER]teletransportarte.
@@ -2833,7 +2833,7 @@
 2833	No
 2834	¡No tienes suficiente Yang!
 2835	¡No tengo nada que hacer contigo!
-2836	Veo que has experimentado bastantes cosas a pesar[ENTER]de ser tan joven. ¡Pobrecito![ENTER][DELAY value;150] . . . [/DELAY][ENTER][ENTER]¿Sabes qué? Déjame reinicializar tus puntos de[ENTER]habilidad. Puedes mejorar tus habilidades[ENTER]inicializándolas.[ENTER]Por supuesto, no es gratis. El precio[ENTER]es
+2836	Veo que has experimentado bastantes cosas a pesar[ENTER]de ser tan joven. ¡Pobrecito![ENTER][DELAY value;150] . . . [/DELAY][ENTER][ENTER]¿Sabes qué? Déjame reinicializar tus puntos de[ENTER]habilidad. Puedes mejorar tus habilidades[ENTER]inicializándolas.[ENTER]Por supuesto, no es gratis. El precio es
 2837	Yang. ¿Quieres inicializarlas? Actualmente hay[ENTER]una oferta especial para experimentar la[ENTER]inicialización.
 2838	Más tarde.
 2839	De acuerdo.
@@ -2843,7 +2843,7 @@
 2843	Dile al pirata viejo que no conseguiste la[ENTER]medicina.
 2844	Vuelve con el pirata viejo.
 2845	¡No puedo encontrar la medicina! ¿Qué le voy a[ENTER]decir al pirata viejo?
-2846	Lleva la medicina al pirata viejo.
+2846	Llévale la medicina al pirata viejo.
 2847	Lleva la medicina al pirata viejo.
 2848	Lleva la medicina al pirata viejo y pide tu[ENTER]recompensa.
 2849	Tengo la medicina.
@@ -2887,7 +2887,7 @@
 2887	Pirata viejo:[ENTER]Maldición, ¿qué quieres de mí? ¡Majadero! La[ENTER]vieja bruja del almacén general te habló sobre[ENTER]mí, ¿no?[ENTER]Sí, todo lo que dice es cierto. Pero no tengo[ENTER]tiempo para ir a ver al médico. ¡Tengo tantos[ENTER]enemigos!
 2888	Pirata viejo:[ENTER]¡Nunca se sabe si uno de esos bastardos aparecerá[ENTER]delante tuyo y te apuñalará! Pero el picor es tan[ENTER]terrible; ¡no puedo aguantarlo más! ¿Qué dices?[ENTER]¿Puedes ir al médico y conseguir la medicina? Si[ENTER]la consigues, te recompensaré bien.
 2889	Pirata viejo:[ENTER]Otro ya trajo la medicina. Bueno, ¡eso significa[ENTER]que no hay recompensa para ti!
-2890	Ve con el pirata viejo.
+2890	Ve a ver al pirata viejo
 2891	Ve con el pirata viejo.
 2892	Ve con el pirata viejo y pregúntale por qué no[ENTER]quiere ir a ver a un médico.
 2893	Pirata viejo:[ENTER]¡Todo pica! ¡No debería haberme chocado con ese[ENTER]tipo! ¡Apenas nos rozamos! ¡Desde entonces, el[ENTER]lugar que tocó ha estado ulcerando y mi cuerpo[ENTER]entero pica! ¡Como si me estuviera pudriendo[ENTER]vivo! ¡Bastardo!
@@ -3041,7 +3041,7 @@
 3041	Examina las Llamas
 3042	Mata 40 Llamas.
 3043	Las Llamas son increíblemente brutales. Disfrutan[ENTER]del dolor de la gente a la que devoran la piel.[ENTER]Aun no sabemos cómo matarlos. ¿Podrías[ENTER]averiguarlo?
-3044	Guerreros Llama
+3044	Guerrero Llama
 3045	Mata 60 Guerreros Llama
 3046	No hace mucho tiempo, el hijo de un noble que se[ENTER]adentró en el Tierra de Fuego fue asesinado por[ENTER]un guerrero llama. Si matas a los guerreros[ENTER]llama, serás recompensado. ¿Por qué no lo[ENTER]intentas?
 3047	Examina los árboles fantasma
@@ -3126,7 +3126,7 @@
 3126	Ha pasado un tiempo desde que los cruzaron la[ENTER]frontera y atacaron la aldea. Mataron a cientos[ENTER]de personas.[ENTER]El número de afectados fue incluso mayor.[ENTER]Esos salvajes malvados son tan brutales que nadie[ENTER]fué lo suficientemente valiente para detenerles.[ENTER]Pero no podemos tolerarlo más.[ENTER][ENTER]Mata a 25 jefes de los salvajes. Si tienes éxito,[ENTER]conseguirás esto como recompensa:
 3127	Recompensa
 3128	Durante el periodo de prueba de las misiones, no[ENTER]pueden obtenerse recompensas. Una vez que ha sido[ENTER]recibida la recompensa, la misión actual puede[ENTER]ser ejecutada de nuevo.
-3129	Tarea:
+3129	Misión
 3130	¿Qué flecha no existe en Metin2?
 3131	Flecha de madera
 3132	Flecha de hierro
@@ -3182,8 +3182,8 @@
 3182	Master
 3183	2
 3184	¿Cuál no es una habilidad del entrenamiento de[ENTER]fuerza corporal?
-3185	Corte de tres maneras
-3186	Giro de espada
+3185	Corte de Tres Maneras
+3186	Giro de Espada
 3187	Correr
 3188	Aura des Schwerts
 3189	3
@@ -3196,7 +3196,7 @@
 3196	¿Cuál de estas no es una habilidad del[ENTER]entrenamiento de lucha mental?
 3197	Golpe
 3198	Cuerpo fuerte
-3199	Golpe de espada
+3199	Golpe de Espada
 3200	Golpe angular
 3201	4
 3202	¿Cuál no es una habilidad del entrenamiento[ENTER]arquero?
@@ -3248,7 +3248,7 @@
 3248	Chamán
 3249	4
 3250	¿Cuál es una habilidad del entrenamiento de[ENTER]armamento?
-3251	Hoja encantada
+3251	Hoja Encantada
 3252	Golpe fantasma
 3253	Protección oscura
 3254	Espíritu de la llama
@@ -3260,9 +3260,9 @@
 3260	Reino Chunjo
 3261	2
 3262	¿Cuál es una habilidad del entrenamiento de magia[ENTER]negra?
-3263	Golpe de dedo
-3264	Remolino del dragón
-3265	Golpe oscuro
+3263	Golpe de Dedo
+3264	Remolino de Dragón
+3265	Golpe Oscuro
 3266	Armadura encantada
 3267	3
 3268	¿Cuál no es la segunda aldea en Metin2?
@@ -3434,9 +3434,9 @@
 3434	Hoja oxidada
 3435	4
 3436	¿Cuándo necesitas un objeto para mejorar una[ENTER]espada de plata, y no sólo Yang?
-3437	Cuando mejoras a +5
-3438	Cuando mejoras a +5
-3439	Cuando mejoras a +5
+3437	Cuando mejoras a +1
+3438	Cuando mejoras a +2
+3439	Cuando mejoras a +4
 3440	Cuando mejoras a +5
 3441	4
 3442	¿Qué término se utiliza si el número de puntos de[ENTER]clasificación de un personaje es negativo?
@@ -3543,7 +3543,7 @@
 3543	4
 3544	¿Cuál es la mejor arma a dos manos?
 3545	Espada Electromagnética
-3546	Hacha gigante+0
+3546	Hacha gigante
 3547	Guillotina
 3548	Glefe
 3549	1
@@ -3582,7 +3582,7 @@
 3582	Peddler:[ENTER]Por favor, ayúdame. Si puedes obtener la Gema del[ENTER]demonio+ del mago demoníaco, te recompensaré[ENTER]adecuadamente.
 3583	Peddler:[ENTER]Otro ya me la consiguió.[ENTER]No tienes que preocuparte más de esto.
 3584	Ve con Peddler.
-3585	Visita a Peddler
+3585	Ve con Peddler.
 3586	Ve con Peddler y pregúntale sobre la gema del[ENTER]demonio.
 3587	La carta de Peddler:[ENTER]Ya no sé qué hacer.[ENTER]La Gema del Demonio+ ha sido robada[ENTER]y eso me arruina, ya que pagué por ella todo lo[ENTER]que tenía...[ENTER]¿Puedes ayudarme, por favor? Realmente necesito[ENTER]tu ayuda.
 3588	Peddler:[ENTER]¡Buen trabajo! ¡Estoy tan aliviado! ¡Esto es[ENTER]realmente bueno!
@@ -3647,7 +3647,7 @@
 3647	Comprar Barras de Oro o de Plata
 3648	Oh bien, entonces no. No obligo a nadie a hacer[ENTER]nada, ¿no?
 3649	Ampliar mi almacén
-3650	 : Tengo 30, así que le los[ENTER]llevaré.
+3650	: Tengo 30, así que le los llevaré.
 3651	Bilis de oso restantes
 3652	Se acabó el tiempo. He fallado.
 3653	¿Por qué te está costando tanto? Se han acabado[ENTER]tus 30 minutos. ¡No puedo expandir tu almacén[ENTER]esta vez!
@@ -3695,7 +3695,7 @@
 3695	¿Sabes para que sirven las barras de oro y plata?[ENTER][ENTER]Si llevas Yang contigo, es como decir: ¡Por favor!¡Mátame![ENTER][ENTER]Por eso cambio Yang por barras de oro que puedo[ENTER]almacenar para todo el mundo. ¡Hmmmm![ENTER][ENTER]Bien, pido un poco más de lo que vale la barra de[ENTER]oro, pero sigue siendo justo, ¿no crees?[ENTER]No hay razón para sentirse engañado. Sabes que[ENTER]hay muchos peligros ahí fuera.
 3696	¿Quieres usar el almacén?[ENTER]Tienes que pagar para usarlo. Pero estoy de buen[ENTER]humor hoy, así que voy a ofrecértelo por 500 Yag.[ENTER]¿Cómo lo ves? Es barato, ¿no? ¡Jajaja!
 3697	Oh, ¡bienvenido!
-3698	¡Bienvenido!
+3698	Bienvenido.
 3699	Bien, ¿es un futuro héroe?
 3700	Oh, nada.
 3701	¿Qué? ¿No tienes suficiente Yang?[ENTER]Vuelve una vez tengas suficiente.
@@ -3704,7 +3704,7 @@
 3704	Pagar
 3705	Porcentaje de Yang Tenners dropeado
 3706	%d día(s) y %d hora(s).
-3707	%d hora(s), %d minuto(s).
+3707	%d minuto/s y %d segundo/s
 3708	%d minuto/s y %d segundo/s
 3709	%d segundo/s
 3710	Mujer
@@ -3713,7 +3713,7 @@
 3713	Todo aquel que haga una reverencia ante mí,[ENTER]recibe un pequeño regalo de Año Nuevo. Pero deber[ENTER]tener un nivel mínimo de 15. Espero que seas[ENTER]cortés y respetes la vejez con todas sus[ENTER]sabidurías.
 3714	¡Gracias! ¡Que el Dios Dragón te bendiga! Como[ENTER]recompensa obtienes esta bolsa con Yang. ¡Te[ENTER]deseo una noche de Año Nuevo pacífica!
 3715	¿Has venido a saludarme con una reverencia?
-3716	Muy mal. No tienes espacio en el inventario.[ENTER]Vuelve una vez tengas espacio.
+3716	Vaya, no tienes espacio en el inventario. Vuelve[ENTER]cuando tengas sitio.
 3717	Yo también te deseo mucha suerte para este año.[ENTER]Tu regalo ya te ha sido entregado. ¿Crees que no[ENTER]me acuerdo de ti?
 3718	¡Sí! ¡Buena suerte en el nuevo año!
 3719	No
@@ -3724,7 +3724,7 @@
 3724	Encuentra a Soon.
 3725	Encuentra a Soon. Escucha sus pistas sobre[ENTER]producir la nueva porcelana y comunícaselo a[ENTER]Yonah.
 3726	Encuentra a Yonah el alfarero.
-3727	Encuentra a Yonah el alfarero
+3727	Encuentra a Yonah el alfarero.
 3728	Ve con Yonah el alfarero. Va a darte una misión a[ENTER]tiempo parcial.
 3729	Recoge los dientes dorados de Unggwis.
 3730	Recoge los dientes dorados de Unggwis.
@@ -3736,7 +3736,7 @@
 3736	Vuelve con Yu-Hwan el músico.
 3737	Dile a Yu-Hwan el músico que no pudiste encontrar[ENTER]la tela de araña.
 3738	Encuentra al músico Yu-Hwan
-3739	Encuentra al músico Yu-Hwan
+3739	Encuentra a Yu-Hwan el músico.
 3740	Encuentra a Yu-Hwan el músico y escucha su[ENTER]canción.
 3741	Captura la araña garra.
 3742	Captura la araña garra.
@@ -3753,7 +3753,7 @@
 3753	Faltaría más.
 3754	Gracias. ¡Y ahora date prisa!
 3755	Acaba con 300 demonios de la Tierra de Fuego.[ENTER]Se encontrarán cerca de la fortaleza y en el[ENTER]lugar donde se hallan las Hierbas del sol.
-3756	Dämonenhatz
+3756	Caza de demonios
 3757	Erledige 300 Feuerland Dämonen in der Nähe der Festung und dem Fundort der Sonnenkräuter
 3758	Me temo que todavía no has eliminado suficientes[ENTER]demonios. Vuelve a la Tierra de Fuego y sigue[ENTER]luchando.
 3759	Has vencido a todos los demonios.[ENTER]Informa de ello a Yak-Hwan.
@@ -3777,7 +3777,7 @@
 3777	Detén la Materia negra
 3778	Menuda... pff... Me he quejado al herrero porque[ENTER]ha molido las Piedras fundación en grano grueso.[ENTER]¿Y ahora qué? Se ha ofendido y se niega a hacer[ENTER]las demás en polvo. ¡Será testarudo! ¿Te[ENTER]importaría hablar con él?
 3779	Por supuesto.
-3780	Danke Hier sind die Fundamentsteine Und bringe ihm diesen Korb mit Leckereien als Entschuldigung
+3780	Gracias. Llévale esta cesta con dulces como[ENTER]disculpa y convéncelo para que muela las Piedras[ENTER]fundación en polvo.
 3781	Tranquiliza al herrero
 3782	Calma al herrero y convéncelo para que muela las[ENTER]Piedras fundación en polvo.
 3783	Polvo piedra fundación: 1 unidad
@@ -3813,7 +3813,7 @@
 3813	Escrito de forma apresurada:
 3814	Yak-Hwan, no regresaré vivo, pero espero que te[ENTER]hagan llegar estas palabras. Estoy atrapado en la[ENTER]Tierra de Fuego, en una fortaleza que no aparece[ENTER]en los mapas. La gobierna un poderoso demonio de[ENTER]la Tierra de Fuego, que a su vez está siendo[ENTER]controlado por una extraña aura que lo somete a[ENTER]él y a todos sus súbditos. El demonio profiere un[ENTER]rugido ensordecedor, y parece estar custodiando[ENTER]algo, aunque no he podido averiguar lo que es.[ENTER]Discúlpame, he fracasado...
 3815	Hemos de averiguar qué es lo que se oculta en esa[ENTER]fortaleza. Mira, hay un grabado en el interior[ENTER]del Collar remachado. Voy a pedir consejo a[ENTER]Yon-I-Walker. Si necesita tu ayuda, te lo hará[ENTER]saber.
-3816	Gravur entschlüsseln
+3816	Descifrar el grabado
 3817	Yon-I-Walker pregunta por ti, ¿por qué no vas a[ENTER]verlo?
 3818	Willkommen ich habe dich bereits erwartet Ich brauche etwas Hilfe dabei die Gravur in diesem Nietenhalsband zu entschlüsseln
 3819	Los caracteres del interior del Collar remachado[ENTER]pertenecen a una antigua cultura que existió hace[ENTER]mucho tiempo. Para descifrarlos necesito la[ENTER]Sangre del Rey Fuego, que fluye por sus venas[ENTER]ardiente como la lava.
@@ -3868,14 +3868,14 @@
 3868	¡Buenas noticias! He averiguado cómo neutralizar[ENTER]el poder de la Materia negra.
 3869	Todas las fuerzas elementales de la naturaleza[ENTER]tienen un contrario: luz y sombra, fuego y agua,[ENTER]bien y mal... La Materia negra también tiene su[ENTER]contrario, que es capaz de neutralizarla: ¡Lumen[ENTER]puro!
 3870	Para producir Lumen puro hay que fundir[ENTER]Fragmentos de energía en Agua Mong. ¿Podrías[ENTER]llevarle a Yu-Hwan 100 Fragmentos de energía y 50[ENTER]botellas de Agua Mong? ¡Gracias!
-3871	¡Así se hará!
+3871	Dalo por hecho.
 3872	Reúne 50 botellas de Agua Mong y 100 Fragmentos[ENTER]de energía y llévaselos a Yu-Hwan.
 3873	Lumen puro
 3874	Reúne 50 botellas de Agua Mong y 100 Fragmentos[ENTER]de energía y llévaselos a Yu-Hwan.
 3875	Ah, Yon-I-Walker me había dicho que vendrías.[ENTER]Venga, pues manos a la obra. ¿Por qué no[ENTER]descansas un poco mientras tanto?
 3876	Ah, Yon-I-Walker me dijo que vendrías. Quiero[ENTER]ponerme con ello, pero no tengo suficiente[ENTER]material para hacer el Lumen puro. Por favor,[ENTER]reúne un poco más.
 3877	Has reunido suficientes Fragmentos de energía y[ENTER]botellas de Agua Mong. Llévaselo todo a Yu-Hwan.
-3878	Ve con Yu-Hwan
+3878	Ve a ver a Yu-Hwan.
 3879	Conseguir el Lumen puro
 3880	Yu-Hwan ha elaborado el Lumen puro. Ve a verlo.
 3881	¡Llegas en el momento oportuno! El Lumen puro ya[ENTER]está listo. Informa de ello a Yak-Hwan.
@@ -3955,7 +3955,7 @@
 3955	¿Todavía no has hablado con Yon-I-Walker? ¿Y cómo[ENTER]piensas derrotar a Arrador? ¡Venga! ¿A qué estás[ENTER]esperando?
 3956	Sí, es cierto. Arrador ha regresado, y está mucho[ENTER]más furioso que antes. Solo nos queda un modo de[ENTER]estropear los planes de los Servidores de la[ENTER]oscuridad...
 3957	Arrador no se detendrá hasta que consiga liberar[ENTER]al Dragón rojo y llevar a cabo sus planes. Si[ENTER]desterramos al Dragón, podremos pararle los pies.
-3958	Das Element des Rotdrachen ist das Feuer und Feuer bekämpft man am Besten mit Feuer Jeder Flammendämon trägt einen Magmakern in sich Beschaffe mir jeweils fünf Kerne der folgenden Monster Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral und Glut Flammenfürst
+3958	El elemento del Dragón rojo es el fuego... Y para[ENTER]enfrentarnos al fuego necesitamos... ¡fuego! Cada[ENTER]Demonio llamaascua lleva un anillo de magma en su[ENTER]corazón. ¡Tráeme cinco Anillos magmáticos!
 3959	Beschaffe die Magmakerne der Flammendämonen
 3960	Beschaffe jeweils fünf Magmakerne dieser Gegner Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral Glut Flammenfürst Kehre damit zu Yon I Walker zurück
 3961	Oh ja du hast schon einige gefunden Bringe noch das sollte dann reichen
@@ -4003,7 +4003,7 @@
 4003	Derrota a Arrador, Señor del fuego, en la[ENTER]Fortaleza del Dragón Rojo.
 4004	¿Que no has podido con Arrador? No me lo puedo[ENTER]creer. Ya lo conseguiste una vez, ¡y ahora[ENTER]también lo conseguirás!
 4005	Arrador ha sido aniquilado. Ve a informar a[ENTER]Yak-Hwan.
-4006	Ich wusste du würdest es schaffen Großartig Nun werden wir alles für die Verbannung des Rotdrachen vorbereiten Ich lasse dich rufen sobald wir bereit sind
+4006	¡Sabía que lo conseguirías! Voy a hacer los[ENTER]últimos preparativos para el ritual de destierro.[ENTER]Te haré llamar en cuanto esté todo listo.
 4007	Verbannung des Rotdrachen
 4008	Es la hora. Ya está todo listo, podemos expulsar[ENTER]de estas tierras al Dragón rojo.
 4009	Meine Männer haben bereits bereits zwei Bannkreise aufgestellt Deine Aufgabe ist es nun sie zu entzünden Wirf den Bannbeutel auf die Kreise und sie werden sich entflammen Das wird die Verbannung des Rotdrachen vollziehen
@@ -4086,7 +4086,7 @@
 4086	Cada reino intenta recobrarse de las revueltas[ENTER]causadas por las piedras Metin. Todo el mundo[ENTER]está tratando de reunir los reinos. ¡Tu también[ENTER]tienes que trabajar por la unión de los reinos![ENTER]Es importante que no lo olvides nunca.
 4087	Voy a darte tu primera tarea.[ENTER]Tranquilo, es algo fácil. En la siguiente aldea,[ENTER]encontrarás a un músico llamado Yu-Hwan. La gente[ENTER]piensa que dejó la armada para convertirse en[ENTER]músico. De hecho, es un espía. Hay un documento[ENTER]que necesito de Yu-Hwan. Tráemelo. No olvides que[ENTER]esto es una misión secreta.
 4088	Pulsa la tecla M para averiguar cómo llegar a la[ENTER]siguiente aldea. Usa el portal indicado por un[ENTER]punto azul. ¡Date prisa! El músico Yu-Hwan es el[ENTER]tipo grande con un instrumento.
-4089	Mata lobos Alfa grises
+4089	Mata lobos Alfa grises:
 4090	El Capitán tiene una nueva tarea para ti. Ve a[ENTER]hablar con él.
 4091	¿Quieres abandonar la misión para siempre?
 4092	¿Así que lo hiciste? ¡Bien hecho! No has tenido[ENTER]mucho problema, ¿no? De todos modos, sigamos con[ENTER]el siguiente paso.
@@ -4149,7 +4149,7 @@
 4149	Ha encontrado una carta. Llévasela al Capitán.
 4150	Has encontrado una Carta con los Soldados[ENTER]Juramento Blanco. Quizá esto sea la evidencia del[ENTER]Espía que está buscando el Capitán. Llévale la[ENTER]carta al Capitán.
 4151	¿Has encontrado alguna evidencia? Déjame echar un[ENTER]vistazo. Es una carta interesante. Puede ser[ENTER]suficiente para averiguar quién es el espía.[ENTER]Gracias a tí, somos capaces de manejar esta[ENTER]crisis. ¡Estamos muy contentos de tener un[ENTER]soldado tan competente como tú! ¡Buen trabajo![ENTER]Deberías tomarte un tiempo y descansar. Toma esto[ENTER]como signo de mi gratitud.
-4152	Primer ejercicio:
+4152	Primer ejercicio
 4153	¿Qué estás haciendo?
 4154	Primer ejercicio:
 4155	Mata 9 Perros Salvajes. Los encontrarás justo en[ENTER]frente de las Puertas de la Ciudad.
@@ -4181,7 +4181,7 @@
 4181	¿Has destruido la piedra Metin? ¡Gracias![ENTER]¡La aldea está a savlo! ¿De dónde vienen las[ENTER]Piedras? Casi no hay información sobre ellas.[ENTER]Aunque causan tantos problemas... he oido que[ENTER]Uriel el erudito está investigando las piedras[ENTER]Metin, pero no se que ha descubierto hasta ahora.[ENTER]Has hecho un gran trabajo.
 4182	Recompensa:
 4183	Has recibido 3.300.000 puntos de experiencia.[ENTER]Has recibido 270.000 Yang.[ENTER]Has recibido un Libro Maestro.
-4184	Recibes %s.
+4184	Has recibido: %s
 4185	La destrucción causada por las Piedras Metin está[ENTER]yendo a peor. El país está sufriendo. ¡Las[ENTER]Piedras Metin deben ser destruidas! Ve con el[ENTER]Capitán.
 4186	La destrucción causada por las Piedras Metin está[ENTER]yendo a peor. El país está sufriendo. ¡Las[ENTER]Piedras Metin deben ser destruidas! Ve con el[ENTER]Capitán.
 4187	He oido que has trabajado muy duro. La gente[ENTER]habla de tu buen trabajo. Gracias a mí, ¡hemos[ENTER]encontrado el lugar adecuado para ti! ¡No te[ENTER]enfades! ¡Solo bromeaba! Jajaja. Se que tienes[ENTER]mucho talento.[ENTER][ENTER]Las piedras Metin se están propagando. Eso denota[ENTER]un gran problema.
@@ -4411,7 +4411,7 @@
 4411	La sexta página
 4412	Eh, no tan rápido, ¡impulsivo! ¡No olvides tu[ENTER]recompensa por la novena página!
 4413	Mata Arañas Soldado Soberbias
-4414	Recibes 5.000.000 puntos de experiencia.
+4414	Puntos de experiencia: 5.000.000
 4415	Has recibido 125.000 Yang.
 4416	Has recibido un Símbolo del Rey Sabio.
 4417	Indicios en el Desierto Helado
@@ -4514,7 +4514,7 @@
 4514	¡Has vuelto más rápido de lo que pensaba![ENTER]Deberías mantener esta velocidad, puede ser útil[ENTER]en el futuro. Y ahora escucha cuidadosamente,[ENTER]tengo información importante para ti.
 4515	¿Sabes algo sobre el refinamiento de objetos?[ENTER]¡Por supuesto que no, todavía eres un joven[ENTER]aventurero! Funciona así: si me das una pieza de[ENTER]tu equipo, puedo modificarla a cambio de un poco[ENTER]de Yang para mejorar así sus cualidades.
 4516	El arte del refinamiento puede conseguir[ENTER]diferentes resultados: cuanto más alto aspiras,[ENTER]más difícil es la ejecución. Para una mejora[ENTER]hasta +3 tan sólo necesitas un poco de Yang; para[ENTER]todo lo demás hace falta un objeto adicional como[ENTER]la Nariz de Cerdo que me has traído. Sin embargo,[ENTER]a veces el objeto que te gustaría mejorar resulta[ENTER]destruido incluso aunque el proceso lo realice un[ENTER]herrero tan habilidoso como yo. Vuelve por aquí[ENTER]si tienes algo de tiempo. ¡Puedo forjar armas[ENTER]fantásticas!
-4517	Has recibido %s puntos de experiencia.
+4517	Recibes %s puntos de experiencia.
 4518	Has recibido %s Yang.
 4519	Obtienes una Piel de Lobo+.
 4520	¡Eh, tú! ¡No pasees por la aldea y digas que no[ENTER]hay nada que hacer! ¡Necesitas más entrenamiento![ENTER]¡En estos tiempos problemáticos, el entrenamiento[ENTER]es la única manera de aumentar tus posibilidades[ENTER]de sobrevivir!
@@ -4766,7 +4766,7 @@
 4766	Sigue el punto parpadeante en el minimapa.
 4767	(Restantes: %s %s, %s %s)
 4768	Das Item bekommst du in kills
-4769	%s: %d unidad/es
+4769	%s : %d unidades
 4770	La aventura continuará en cuanto alcances el[ENTER]nivel 91.
 4771	Informe de situación
 4772	Echa un vistazo por la isla y después informa al[ENTER]Almirante Angmur.
@@ -4793,7 +4793,7 @@
 4793	Una de las siguientes criaturas posee la Carta de[ENTER]Lee Chung: Luchador Gnoll, Arquero Gnoll,[ENTER]Defensor Gnoll, Mago Gnoll, General Gnoll, Señor[ENTER]Gnoll o Guardia superior Gnoll.
 4794	¡Si queremos detener a Sung Mahi, necesitamos esa[ENTER]carta! El ladrón pertenece a la tribu de los[ENTER]Gnoll.
 4795	Has encontrado la Carta.
-4796	Llévasela al Almirante Angmur.
+4796	¡Llévasela al Almirante Angmur!
 4797	Habla con el Almirante Angmur.
 4798	Has vuelto... ¡y traes la carta! Sí, sabía que[ENTER]podía confiar en ti. Enséñamela.
 4799	¡Saludos, Angmur![ENTER]Amigo mío, en los campamentos abandonados de Sung[ENTER]Mahi hemos descubierto que los Servidores de la[ENTER]oscuridad les han hecho llegar comunicados[ENTER]secretos a sus aliados de la isla.[ENTER]Una de las cartas estaba dirigida a la tribu de[ENTER]los Gnoll. ¡Si pudierais interceptarla le[ENTER]llevaríamos una ventaja importante a los[ENTER]demonios![ENTER]Os envío a %s como apoyo y os deseo mucho valor y[ENTER]fuerzas en estos tiempos sombríos.[ENTER]L.C.
@@ -4900,7 +4900,7 @@
 4900	La carta de las Mantícoras, descifrada
 4901	Yon-I-Walker te está buscando. Ve con él y[ENTER]averigua si ya logró traducir la carta.
 4902	*murmulla* ...¡Ah, aquí estás! Gracias a tu ayuda[ENTER]ya he podido descifrar gran parte del mensaje.[ENTER]Sin embargo, no consigo progresar con la última[ENTER]parte.[ENTER]Me temo que necesito de nuevo tu ayuda. Necesito[ENTER]Polvo de caparazón urgentemente. Podrás[ENTER]encontrarlo donde el General langosta o el Rey[ENTER]cangrejo de los Crustacianos.
-4903	Polvo de caparazón
+4903	¿Polvo de caparazón?
 4904	Sí, solamente los Crustacianos lo poseen. ¡Solo[ENTER]una pequeña dosis ya es mortal! Tres dosis[ENTER]deberían bastarme. Mucha suerte.
 4905	Ahora mismo voy.
 4906	Polvo de caparazón
@@ -5034,7 +5034,7 @@
 5034	La Esencia milenaria
 5035	Octavio quiere hablar contigo.
 5036	Bueno, he reflexionado toda la noche sobre tu[ENTER]petición. Voy a correr un gran riesgo, pero sé[ENTER]que hago lo correcto. Sí, voy a ayudarte.
-5037	¡Excelente!
+5037	¡Genial!
 5038	Sin embargo, no me queda nada guardada. ¿Podrías[ENTER]conseguirme algunos ingredientes? Así podré[ENTER]fabricar la Esencia.
 5039	Por supuesto. ¿Qué necesitas?
 5040	Me hacen falta Raíces Gango, Fungicida y Rosas[ENTER]alpinas. Necesito 200 unidades de cada uno de los[ENTER]ingredientes.
@@ -5199,9 +5199,9 @@
 5199	Aún no es demasiado tarde. Voy a averiguar quién[ENTER]posee ahora mismo el oro negro y si ya lo han[ENTER]refinado. Te haré llamar en cuanto sepa algo más.[ENTER]Toma esto como recompensa. ¡Hasta pronto!
 5200	Detener el proceso de refinamiento
 5201	Ve a ver al Almirante Angmur. Tiene novedades[ENTER]sobre el Oro negro.
-5202	Hemos descubierto que el Gran ogro controla en[ENTER]persona el proceso de refinamiento del Oro negro[ENTER]y también se encarga de entregárselo a la[ENTER]Banshee.
+5202	Hemos descubierto que el Gran Ogro controla en[ENTER]persona el proceso de refinamiento del Oro negro[ENTER]y también se encarga de entregárselo a la[ENTER]Banshee.
 5203	Ahora mismo se encuentra en el Acantilado de[ENTER]Gautama.[ENTER]Evita que el Oro negro llegue a su objetivo.[ENTER]¡Date prisa, hazlo antes de que sea demasiado[ENTER]tarde!
-5204	El Gran ogro
+5204	El Gran Ogro
 5205	Vence al líder de los Ogros y evita que refinen[ENTER]el Oro negro.
 5206	¡Cada minuto cuenta! ¡Detén al Gran ogro!
 5207	Has derrotado al Gran ogro.
@@ -5341,7 +5341,7 @@
 5341	¡El Almirante Angmur necesita tu ayuda!
 5342	Menos mal que has venido. Skeletos, el líder de[ENTER]la Brigada de la muerte negra, ha sobrevivido y[ENTER]consiguió atacar a mis hombres cuando estos[ENTER]intentaban asaltar la base. Nadie es capaz de[ENTER]superarlo.
 5343	Ya le has vencido una vez, y por eso te pido:[ENTER]ayuda a mis hombres en el Acantilado de Gautama.[ENTER]Enfréntate a Skeletos y acto seguido asalta la[ENTER]base y da muerte a Yah-ki, la servidora del[ENTER]templo.
-5344	Entendido.
+5344	¡Entendido!
 5345	Eliminar a Yah-ki
 5346	Acaba con la servidora del templo Yah-ki y evita[ENTER]que conjure al ejército de los muertos.
 5347	Ha llegado la hora de la verdad. Si fracasamos,[ENTER]el mundo entero está perdido. Pero si triunfamos,[ENTER]nuestra hazaña pervivirá por los siglos en cantos[ENTER]de alabanza. Detén a la servidora de la[ENTER]oscuridad.[ENTER]¡Acaba con Yah-ki, la servidora del templo!
@@ -5486,9 +5486,9 @@
 5486	Si quieres casarte, necesitas llevar un esmoquin.
 5487	Vestido de boda
 5488	Si quieres casarte, tienes que llevar un vestido[ENTER]de boda.
-5489	Sólo el amor no puede ayudarte a organizar una[ENTER]boda, necesitas algo de Yang para eso. Por[ENTER]desgracia, no tienes suficiente dinero en este[ENTER]momento.[ENTER]Cuando hayas ahorrado un millón de Yang, estaré[ENTER]encantada de organizar tu[ENTER]ceremonia.
+5489	Sólo el amor no puede ayudarte a organizar una[ENTER]boda, necesitas algo de Yang para eso. Por[ENTER]desgracia, no tienes suficiente dinero en este[ENTER]momento.[ENTER]Cuando hayas ahorrado un millón de Yang, estaré[ENTER]encantada de organizar tu ceremonia.
 5490	Tienes que tener 1 millón de Yang.
-5491	Ahora eres suficientemente maduro y se te ve[ENTER]decidido. ¿Con quién quieres[ENTER]casarte?
+5491	Ahora eres suficientemente maduro y se te ve[ENTER]decidido. ¿Con quién quieres casarte?
 5492	Por favor, nombra a la persona con la que quieres[ENTER]casarte.
 5493	¿Estás tan emocionado que no puedes ni escribir[ENTER]el nombre? Prueba otra vez.
 5494	No sabes el nombre de la persona... ¿Estás seguro[ENTER]de que quieres casarte?
@@ -5582,7 +5582,7 @@
 5582	Bueno, quizá debería reconsiderarlo...
 5583	Bien...[ENTER]Puede que sea mejor así. Si realmente tienes[ENTER]gana, vuelve otra vez, pero deberías ser serio[ENTER]con esto.
 5584	Ya que estas seguro, bien: allá vamos. ¡Te deseo[ENTER]todo lo mejor![ENTER][ENTER]Un divorcio unilateral ha sido realizado.
-5585	Deokbae el leñador:
+5585	Leñador Deokbae:
 5586	Tu pico no puede ser mejorado. No tienes[ENTER]suficiente entrenamiento.
 5587	¿Quieres mejorar tu Pico? A ver...[ENTER]El nivel de tu pico es %s.
 5588	¿Quieres mejorarlo?
@@ -5593,7 +5593,7 @@
 5593	Oh, no... He cometido un error, lo siento mucho.[ENTER]Han disminuido los puntos de tu Pico.
 5594	¿Quieres abrir el baúl con la llave?
 5595	Sí, quiero abrirlo
-5596	No, aún no.
+5596	No, no quiero abrirlo
 5597	¡Para abrir el Baúl Secreto de Rubí, necesitas[ENTER]una Llave de Rubí o una Llave de Diamante!
 5598	¡Hola!
 5599	Anciano:
@@ -5624,7 +5624,7 @@
 5624	¡Te traigo calcetines!
 5625	Si me traes por lo menos 5 pares de calcetines,[ENTER]te daré una recompensa.[ENTER]¡Ugh, el olor de calcetines usados es[ENTER]insoportable! Vuelve por aquí cuando hayas[ENTER]reunido suficientes. ¡Feliz Navidad!
 5626	Jo, jo, jo, has reunido suficientes calcetines.[ENTER]Déjame ver. Uff, ese olor...[ENTER]¡Desde luego, estos son los calcetines adecuados![ENTER]¡Feliz Navidad!
-5627	 - Cría de reno
+5627	Cría de reno
 5628	Hoy ya te di un Sello de Cría de reno. Me temo[ENTER]que el pequeño reno primero tiene que descansar.[ENTER]A partir de mañana podrá seguir buscando. Si no[ENTER]quieres esperar tanto tiempo, entonces mira abajo[ENTER]a la izquierda, tras la moneda que gira. He oído[ENTER]que ahí hay otra Cría de reno. ¡Me alegraré mucho[ENTER]si mañana me vuelves a visitar!
 5629	Hoy ya me diste tus calcetines.[ENTER]Recuerda que solamente me puedes traer unos[ENTER]cuantos cada 24 horas.
 5630	Wonda-Rim:
@@ -5671,14 +5671,14 @@
 5671	Mentiste a Wonda-Rim y has perdido puntos del[ENTER]bien/mal.
 5672	¿No aceptó la piel? Hmm, quizá no haya sido una[ENTER]buena idea enviarte a ti a cazar en lugar de ir[ENTER]yo. Lo haré de otra manera la próxima vez.
 5673	Pero no quiero que todo tu duro trabajo se quede[ENTER]en nada: Ve con Yang-Shin. Él te comprará la piel[ENTER]a un buen precio.
-5674	Que giro de acontecimientos más decepcionante.[ENTER]Bueno, al menos todavía tienes la piel. Ve con el[ENTER]cazador Yang-Shin en Yayang y véndele la piel.
+5674	Qué giro de acontecimientos tan decepcionante.[ENTER]Bueno, al menos todavía tienes las pieles. Ve a[ENTER]ver a la cazadora Yang-Shin en Yayang y[ENTER]véndeselas.
 5675	Que giro de acontecimientos más decepcionante.[ENTER]Bueno, al menos todavía tienes la piel. Ve con el[ENTER]cazador Yang-Shin en Bokjung y véndele la piel.
 5676	Que giro de acontecimientos más decepcionante.[ENTER]Bueno, al menos todavía tienes la piel. Ve con el[ENTER]cazador Yang-Shin en Bakra y véndele la piel.
 5677	¿Piel de Mu-Rang? Eso resultará muy útil. Me haré[ENTER]algo de ropa interior con ella. Aquí tienes una[ENTER]bolsa de Yang por tus esfuerzos. Oh, y encontré[ENTER]este libro ayer, quizá puedas encontrarle algún[ENTER]uso.
 5678	Has recibido 40.000 puntos de experiencia.[ENTER]Has recibido 10.000 Yang.[ENTER]Has recibido un Manual de Habilidad.
 5679	Yang-Shin:
 5680	Yang-Shin:
-5681	Guardián:
+5681	Guardián
 5682	El Guardián tiene una misión para ti. Ve a verle[ENTER]y descubre de qué se trata.
 5683	El hermano enfermo
 5684	El guardia enfermo
@@ -5737,7 +5737,7 @@
 5737	El desertor
 5738	Yang-Shin está teniendo problemas encontrando un[ENTER]buen terreno de caza. Ve a verle y averigua cómo[ENTER]puedes ayudarle.
 5739	Nada es como solía ser desde que cayeron las[ENTER]Piedras Metin. Incluso ir de caza se ha vuelto[ENTER]imposible en muchos lugares, porque los animales[ENTER]salvajes han empezado a comportarse como si[ENTER]tuvieran la rabia. El peregrino Nakajima está[ENTER]viviendo ahí fuera en algún sitio, estoy seguro[ENTER]de que sabrá donde hay algún terreno de caza[ENTER]bueno. ¿Podrías buscarle y preguntarle?
-5740	Nakajima:
+5740	Nakajima
 5741	¿Así que quieres saber de algún lugar bueno para[ENTER]cazar? No tengas tanta prisa, si se supone que[ENTER]tengo que hacer algo por ti, también deberías[ENTER]hacerme un favor.
 5742	Deberías saber... No vivo ahí fuera[ENTER]voluntariamente. Tengo que esconderme porque me[ENTER]fugué de las atrocidades del ejército. Sólo deseo[ENTER]que mi amada esposa Ah-Yu sepa que todavía estoy[ENTER]vivo. ¿Puedes llevarle este mensaje?[ENTER]¡Pero recuerda que sólo debe escucharlo Ah-Yu! A[ENTER]cambio, ella te dirá dónde nos besamos por[ENTER]primera vez - Quiero encontrarme con ella allí y[ENTER]también es un gran lugar para cazar.
 5743	Nakajima:
@@ -5793,7 +5793,7 @@
 5793	Esto es todo lo que tengo. Pero vale la pena si[ENTER]puedo librarme de ese bárbaro despiadado.
 5794	Oh, ¡gracias! ¡Tu lugar junto al Dios Dragón está[ENTER]asegurado!
 5795	Has recibido %s Yang.
-5796	Has recibido %s puntos de experiencia.
+5796	Recibes %s puntos de experiencia.
 5797	Necesito:
 5798	Yonah:
 5799	La porcelana rota
@@ -5803,7 +5803,7 @@
 5803	Con gusto
 5804	No es de mi incumbencia
 5805	No tengo tiempo de educar niños malvados.[ENTER]Tendrás que capturarle por ti mismo. Sin embargo,[ENTER]dudo que puedas...
-5806	Taurean:
+5806	Taurean
 5807	Las preciosas reliquias de familia de Yonah, tres[ENTER]jarrones hechos de porcelana celadon, están[ENTER]rotas. Cree que Taurean tiene la culpa. Ve con[ENTER]Taurean y averígualo.
 5808	Taurean está en %s.
 5809	Taurean:
@@ -5812,7 +5812,7 @@
 5812	¿Jarrones? ¿Yonah? ¡No sé de qué me estás[ENTER]hablando!
 5813	Entonces por favor podrías explicarme de nuevo,[ENTER]por qué tres de ellos están rotos.
 5814	Juro que hoy no he estado cerca de ningún jarrón[ENTER]ni he visto a Yonah. De hecho, me he pasado el[ENTER]día entero peleando con Harang. ¡Incluso me[ENTER]encerró en el establo durante un rato! ¡Ve y[ENTER]pregúntale si no me crees!
-5815	Harang:
+5815	Harang
 5816	Taurean afirma ser inocente. Estuvo jugando con[ENTER]Harang todo el día y no pudo romper los jarrones.[ENTER]Ve con Harang y pregúntale si es cierto.
 5817	Harang, ¿has visto a Taurean recientemente?
 5818	Harang:
@@ -5876,7 +5876,7 @@
 5876	Bueno, no ha pasado por aquí hace días. ¿Quizá[ENTER]podrías ir y preguntarle qué pasa?
 5877	Octavio está en %s.
 5878	¡Voy a buscar al pescador!
-5879	Pescador:
+5879	Pescador
 5880	¡Los días tranquilos en el mar se han terminado![ENTER]Cada día están desapareciendo pescadores, ¡es[ENTER]terrible! Desde que las piedras Metin se[ENTER]precipitaron al mar, las una vez pacíficas[ENTER]ballenas se han transformado en monstruos marinos[ENTER]brutales. La pesca se ha convertido en un oficio[ENTER]peligroso.
 5881	Nuestras lanzas ya no pueden herir a las[ENTER]ballenas. ¡Su piel es más resistente que la piel[ENTER]de ogro!
 5882	Quizá Yonah sepa qué hacer. Él solía ir al lago y[ENTER]cazó muchas ballenas durante años.
@@ -5889,14 +5889,14 @@
 5889	Yonah:
 5890	Me he enterado de lo que les pasó a las ballenas.[ENTER]Es un asunto grave para los pescadores. Incluso[ENTER]se si atreven a adentrarse en el mar, sus lanzas[ENTER]son demasiado débiles como para penetrar en la[ENTER]piel de las ballenas. Cuando trabajaba en un[ENTER]ballenero solíamos usar armas especiales para[ENTER]ballenas con piel vieja y rugosa. Esas sí que[ENTER]traspasaban lo que fuera...
 5891	Es una técnica especial para endurecer arpones[ENTER]balleneros. La única persona que puede hacer ese[ENTER]tipo de arpón es un Herrero.
-5892	Ir con el herrero.
+5892	Ve con el Herrero.
 5893	Yonah:
 5894	Yonah recomienda usar arpones muy robustos y[ENTER]afilados para cazar ballenas. Ve con el Herrero y[ENTER]pregúntale si puede hacer alguno de esos arpones.
 5895	Herrero.
 5896	Sí, he oido sobre esos arpones y también puedo[ENTER]hacerlos. Sin embargo, para que puedan adquirir[ENTER]la durabilidad requerida, necesito una Piedra[ENTER]Diamante.
 5897	Necesito:
 5898	Proceso:
-5899	Herrero.
+5899	Herrero:
 5900	Piedra Diamante
 5901	Veamos. Necesito un Pico para extraer la piedra.[ENTER]¿Me pregunto si el mío está por aquí en algún[ENTER]sitio o si Deokbae tiene que conseguirme uno[ENTER]nuevo?
 5902	Necesitas otras %s x Piedras Diamante.
@@ -6037,7 +6037,7 @@
 6037	¡Yo os conseguiré las pociones!
 6038	Vendedor general:
 6039	Suministros Frescos
-6040	Vendedor general:
+6040	Comerciante general
 6041	Sí, conseguir suministros frescos se ha vuelto[ENTER]realmente difícil últimamente. Las rutas de[ENTER]comercio se han vuelto bastante inseguras y los[ENTER]bandidos y bestias salvajes siguen apareciendo.[ENTER]Los Vendedores Ambulantes, de los que obtengo mis[ENTER]artículos, no tienen oportunidad contra los[ENTER]tigres.
 6042	Quizá el Capitán y sus soldados puedan ayudar.[ENTER]Por favor, ve con él y pregúntale si puede mandar[ENTER]a sus soldados a proteger a los mercaderes.
 6043	Ve con la Vendedora de la Tienda General y[ENTER]averigua por qué hay retraso en el suministro de[ENTER]pociones frescas.
@@ -6061,7 +6061,7 @@
 6061	Ah, espécimen espléndido. ¡Sólo otros %s!
 6062	¡Hecho! Ahora vuelve rápido con Yang-Shin.
 6063	Esta piel de tigre es inservible.
-6064	Sólo necesitas otras %s x Piel de Tigre Brillante.
+6064	Sólo necesitas otras %s x Piel de Tigre Brillante. 
 6065	Coge Piel de Tigre Brillante de los Tigres[ENTER]Blancos Malditos.
 6066	Tengo la piel de tigre.
 6067	Esto dista mucho de ser suficiente para mi. ¿Cómo[ENTER]averiguaré si las calles son seguras de nuevo en[ENTER]base a estas pocas pieles?
@@ -6116,7 +6116,7 @@
 6116	Gracias, ¡es genial! Toma, coge este ramo de[ENTER]flores y ve con mi hermana.
 6117	La puedes encontrar en Bokjung, en el Reino[ENTER]Chunjo.
 6118	La puedes encontrar en Bakra en el Reino Jinno.
-6119	La puedes encontrar en Yayang, en el Reino[ENTER]Shinsoo.
+6119	La encontrarás en Yayang, en el Reino Shinsoo.
 6120	La hermana
 6121	Este es el reino correcto, debería poder[ENTER]encontrar a la hermana de la Anciana aquí.
 6122	Este es el Reino que buscaba, aquí tendrá que[ENTER]estar Octavio.
@@ -6138,11 +6138,11 @@
 6138	No puedo agradecértelo lo suficiente. ¡Estoy tan[ENTER]feliz de asistir a la boda de mi hija!
 6139	Toma, coge tu recompensa:
 6140	Un arma forjada por la mano de un maestro de las[ENTER]artes marciales. ¡Cuídala bien!
-6141	Has recibido %s puntos de experiencia.
+6141	Recibes %s puntos de experiencia.
 6142	Has recibido %s Yang.
 6143	Obviamente me estás confundiendo con un familiar[ENTER]lejano. No tengo una hija y no tengo suficiente[ENTER]Yang para poder organizar una boda.
 6144	¿Te importaría probar una cucharada de mi sopa de[ENTER]rana toro? La hice usando una vieja receta de mi[ENTER]tía.
-6145	Heuk-Young:
+6145	Heuk-Young
 6146	Diario de una Leyenda
 6147	Encontré los restos de un guerrero. No sé si se[ENTER]trata del Sura que Heuk-Young está buscando, pero[ENTER]seguro le interesará.
 6148	Seguramente aquí ha muerto más de un Sura. Yo he[ENTER]visto sus restos. ¿Será que ese legendario[ENTER]guerrero está entre ellos? Creo que debería ir[ENTER]decirle a Heuk-Young.
@@ -6162,7 +6162,7 @@
 6162	Un Sura muerto... podría ser que se tratede él, o[ENTER]de uno de sus seguidores. Pero para estar[ENTER]seguros, necesitamos de más evidencias. Busca más[ENTER]indicios que nos permitan reconstruir su[ENTER]identidad. Armas, ornamento... quizás notas o[ENTER]algo parecido.
 6163	¿La página de un Sura y la página de un libro?[ENTER]Déjame echar un vistazo al pergamino... hmm, al[ENTER]parecer has encontrado los restos de Akuma. No[ENTER]obstante, necesitamos más evidencias. Prueba a[ENTER]ver si logras encontrar otras páginas del libro.
 6164	Ya encontré un indicio, pero no puedo decir con[ENTER]certeza si ese legendario Sura estuvo realmente[ENTER]aquí. Necesito más informaciones.
-6165	Bien
+6165	Bien.
 6166	Criatura de Hielo
 6167	Al borde de la desesperación
 6168	Terror oscuro
@@ -6299,7 +6299,7 @@
 6299	Obtienes además 120.000.000 puntos de experiencia.
 6300	Abrir tienda
 6301	Tienes que cazar:
-6302	Vendedor general:
+6302	Comerciante general
 6303	Busca al Vendedor de la Tienda de Armas y[ENTER]pregúntale por qué ya no canta bajo la ventana de[ENTER]la Vendedora de la Tienda General.
 6304	Recoge Lilas
 6305	¡Has recogido un bonito ramo de Lilas!
@@ -6343,7 +6343,7 @@
 6343	Soy un verdadero anciano, pero aun estoy en forma[ENTER]y saludable porque tengo un secreto especial.[ENTER]He descubierto que una poción hecha de Raices[ENTER]Gango y Setas Tue puede prolongar tu vida. Si[ENTER]quieres intentar hacer esa poción, llévale los[ENTER]ingredientes a Yu-Hwan. Puede preparar la poción[ENTER]para ti.
 6344	Cállate y conserva tu disciplina. Compórtate y no[ENTER]te metas en líos. Debes respetar a tus[ENTER]semejantes. ¿Entendido?
 6345	Pareces bastante fuerte...
-6346	Durante muchos años, el secreto de la fuerza ha[ENTER]sido transmitido en nuestra familia. Mi padre me[ENTER]dijo que si mezclas la flor campana de forma[ENTER]correcta, la poción te dará fuerza extra durante[ENTER]un corto periodo de tiempo. Hasta donde yo se,[ENTER]Baek-Go es capaz de preparar esta poción. Sólo[ENTER]tienes que llevarle una flor[ENTER]campana.
+6346	Durante muchos años, el secreto de la fuerza ha[ENTER]sido transmitido en nuestra familia. Mi padre me[ENTER]dijo que si mezclas la flor campana de forma[ENTER]correcta, la poción te dará fuerza extra durante[ENTER]un corto periodo de tiempo. Hasta donde yo se,[ENTER]Baek-Go es capaz de preparar esta poción. Sólo[ENTER]tienes que llevarle una flor campana.
 6347	Ve, dilo en la montaña...
 6348	Yu-Hwan, el músico:
 6349	... Sobre las colinas y en todas partes...[ENTER]¿También te gusta la música? Canto todo tipo de[ENTER]canciones aquí en soledad, así no me involucro en[ENTER]la guerra. Pero sin un país que me proteja, no[ENTER]podré seguir haciendo lo que hago.
@@ -6531,21 +6531,21 @@
 6531	Punto de patrulla 3
 6532	Dirígete al tercer punto de patrulla.
 6533	 - Fénix de fuego
-6534	 - Cría de reno
+6534	- Cría de reno
 6535	En este momento no puedes llamar a tu mascota.
-6536	 - Fénix de Hielo
-6537	 - Azrael bebé
-6538	 - Leónidas
-6539	 - Khan
-6540	 - Porkie
-6541	 - Rufus
-6542	 - Bambi
-6543	 - Nuud
-6544	 - Bao Bao
-6545	 - Verduguito
-6546	 - Verduguito (oro)
-6547	 - Huesines
-6548	 - Fénix de Jade
+6536	- Fénix de Hielo
+6537	- Azrael bebé
+6538	- Leónidas
+6539	- Khan
+6540	- Porkie
+6541	- Rufus
+6542	- Bambi
+6543	- Nuud
+6544	- Bao Bao
+6545	- Verduguito
+6546	- Verduguito (oro)
+6547	- Huesines
+6548	- Fénix de Jade
 6549	Mata 20 arqueros salvajes en menos de 30 minutos[ENTER]y dale los resultados al chico del establo.
 6550	Quiero cabalgar.
 6551	Estado de la misión de mejorar el pony.
@@ -6605,7 +6605,7 @@
 6605	Entrenamiento ecuestre (1)
 6606	Ve al punto (1).
 6607	Teletransportar al mapa de entrenamiento
-6608	Ir
+6608	¡Vamos!
 6609	¿Realmente deseas abandonar?
 6610	¡Has llegado al punto (1)!
 6611	¡Has llegado al punto (9)!
@@ -6748,7 +6748,7 @@
 6748	Sí, abandonar.
 6749	Tarea %s cancelada.
 6750	(Restantes: %s %s, %s %s)
-6751	questscroll5.kill_race:%s]
+6751	questscroll5.kill_race:%s
 6752	(Restantes: %s %s, %s %s)
 6753	questscroll5.kill_race:%s]
 6754	¡Has completa la misión y ganado una recompensa!
@@ -6797,7 +6797,7 @@
 6797	está siendo restaurado a 1.
 6798	Tus puntos restantes serán reintegrados como[ENTER]puntos de entrenamiento.
 6799	¿Quieres continuar?
-6800	Tu nivel es demasiado bajo.
+6800	¡Tu nivel es demasiado bajo!
 6801	No puedes cabalgar, mientras te estés[ENTER]transformando!
 6802	¡Ya estás cabalgando! Si deseas cambiar la[ENTER]montura, primero debes desmontarte de aquella que[ENTER]estás cabalgando.
 6803	Si quieres utilizar otra montura, primero debes[ENTER]enviar a tu caballo.
@@ -6895,11 +6895,11 @@
 6895	Maestro Magia Negra
 6896	Has seleccionado el entrenamiento de la Fuerza[ENTER]Dragón.
 6897	Inicia el entrenamiento de Fuerza Curación
-6898	Lo siento. Solo los chamanes pueden elegir el[ENTER]entrenamiento de la Fuerza[ENTER]Curación.
+6898	Lo siento. Solo los chamanes pueden elegir el[ENTER]entrenamiento de la Fuerza Curación.
 6899	Entrenamiento de Fuerza Curación
 6900	Con el entrenamiento de la Fuerza Curación,[ENTER]aprendes a aturdir al enemigo con descargas[ENTER]eléctricas. También puedes aprender a curar a[ENTER]miembros del grupo y darles fuerza adicional.
 6901	Has elegido el entrenamiento de la Fuerza[ENTER]Curación.
-6902	Maestro de la Fuerza Dragón:
+6902	Maestro de la Fuerza Dragón
 6903	Maestro de la Fuerza Curación
 6904	Restablecer habilidades
 6905	Si cambias de opinión, vuelve a visitarme.
@@ -6962,7 +6962,7 @@
 6962	En el tercer nivel de la Mazmorra de Arañas se[ENTER]encuentra una vieja lápida con una inscripción[ENTER]grabada. Haz una copia de ella y llévasela al[ENTER]Capitán.
 6963	¡Perfecto, has encontrado la vieja lápida y has[ENTER]creado una Copia de la Inscripción! Vuelve con el[ENTER]Capitán y muéstrasela.
 6964	Vendedor general:
-6965	Consigue Botellas Vacías
+6965	Consigue una botella vacía.
 6966	Eso está bien.[ENTER]Puedes conseguir Botellas Vacías de Yonah el[ENTER]alfarero. Muchas gracias.
 6967	Encuentra a Yonah el alfarero
 6968	La vendedora del almacén general necesita una[ENTER]botella vacía para poción roja de Yonah el[ENTER]alfarero.
@@ -7040,7 +7040,7 @@
 7040	Una carta del herrero.
 7041	Encuentra a Deokbae el leñador.
 7042	Una carta del herrero.
-7043	Deokbae el leñador:
+7043	Leñador Deokbae:
 7044	Bienvenido. Tengo algunas hachas buenas aquí.[ENTER]¿Quieres comprar una? ¿No necesitas un hacha?[ENTER]¿Entonces por qué estás aquí? Ah, una Carta del[ENTER]Herrero. Gracias. Soy un leñador, pero también[ENTER]vendo hachas y otras herramientas. A veces le[ENTER]encargo algunas herramientas. Así es como nos[ENTER]convertimos en buenos amigos.
 7045	Gracias por entregar la carta. Realmente debería[ENTER]tomarme algo con él en el bar de Seo-Pyung. Mis[ENTER]mejores saludos para él.
 7046	¿Una carta del herrero? Ha pasado mucho tiempo.[ENTER]¿Dónde está? ¿No la habrás perdido por el camino,[ENTER]no?
@@ -7123,7 +7123,7 @@
 7123	Uriel te ha dado Mineral de Hierro.
 7124	Octavio te ha dado el Cuero.
 7125	Yonah te ha dado el Carbón.
-7126	Visita a Octavio
+7126	Ve con Octavio.
 7127	Ve con Uriel.
 7128	Ve con Yonah.
 7129	Ich brauche Eisenerz
@@ -7154,7 +7154,7 @@
 7154	No tienes Carbón. Hmm, ¿sin Carbón? Consigue algo[ENTER]de Yonah.
 7155	Tengo todos los materiales
 7156	Materiales para el Herrero
-7157	Ve con el Herrero
+7157	Ve con el herrero.
 7158	La armadura encargada
 7159	No, no tengo tiempo para esto.
 7160	Tengo todos los materiales necesarios. Ve con el[ENTER]Herrero.
@@ -7190,7 +7190,7 @@
 7190	Soon te ha dado el libro de cocina exótico.[ENTER]Llévaselo a Octavio.
 7191	¡Aquí está el libro de cocina!
 7192	Ve con el Vendedor de la Tienda de Armas y[ENTER]pregúntale dónde puedes comprar Pasteles de[ENTER]Arroz.
-7193	Pastel de Arroz
+7193	¿Pastel de arroz?
 7194	¿Qué sabes sobre el Pastel de Arroz?
 7195	Vendedor de la tienda de armas:
 7196	Em, ¿qué? ¿Pastel de arroz? ¿Por qué lo[ENTER]necesitas? ¿Es un tipo de arma que no conozco? No[ENTER]entiendo nada...[ENTER][ENTER]¡Ahhh! Pastel de arroz, ¡algo para comer![ENTER]Deberías preguntarle a Octavio, él sabe todo lo[ENTER]referente a la comida.
@@ -7211,7 +7211,7 @@
 7211	Taurean siempre le toma el pelo a Yu-Rang.[ENTER]Castígale y entonces ella te dará un Pastel de[ENTER]Arroz.
 7212	¿Por qué te burlas de Yu-Rang?
 7213	¿De quién se supone que me burlo? Oh, ¿te[ENTER]refieres a la chica que vende pastel de arroz?[ENTER]No, ¡no quería burlarme de ella! Estaba aburrido[ENTER]y ella parecía simpática y sin mucho que hacer.[ENTER]Así que la visité unas cuantas veces y quise[ENTER]jugar con ella, pero entonces se enfadó...[ENTER]Las chicas son raras. ¡Entonces supongo que no la[ENTER]visitaré nunca más!
-7214	Volver con Yu-Rang
+7214	Vuelve con Yu-Rang
 7215	Aceptar
 7216	Pastel de Arroz
 7217	Taurean no molestará más a Yu-Rang. Ve con ella y[ENTER]coge tu Pastel de Arroz.
@@ -7237,7 +7237,7 @@
 7237	El Hacha Dorada
 7238	¿Recuerdas a mi amigo Deokbae? Prometí hacerle un[ENTER]hacha. Pero ha sido robada por un soldado del[ENTER]Juramento Blanco. ¿Puedes traerme de vuelta ese[ENTER]hacha? Una soldado Jura Blanca debe tenerla.[ENTER]Deberías ser capaz de reconocerla, ya que no[ENTER]existen muchas como esa.[ENTER]¡Te recompensaré por las molestias!
 7239	¿Quieres abandonar la misión para siempre?
-7240	Herrero.
+7240	Herrero:
 7241	De verdad quiero el hacha...[ENTER]¿Volverás?[ENTER]Nos vemos.
 7242	Gracias por tu ayuda. Ten cuidado; el Juramento[ENTER]Blanco es muy peligroso.
 7243	Gracias por ayudarme. Pero ten cuidado. El[ENTER]Juramento Blanco ha estado causando muchos[ENTER]problemas últimamente.
@@ -7270,7 +7270,7 @@
 7270	¿La buscarás? Oh, ¡gracias!
 7271	Ve con el Herrero
 7272	Pregunta a Yu-Hwan sobre el hermano de Mirine.
-7273	 Encuentra a mi hermano
+7273	Encuentra a mi hermano
 7274	¿Has visto al hermano mayor de Mirine?
 7275	Me enamoré sin saber lo que significa el amor...[ENTER]¿A quién estás buscando? ¿El hermano de Mirine?[ENTER]Hablamos un poco antes de que se fuera a las[ENTER]montañas. Quería buscar hierbas raras. No se[ENTER]donde está ahora. El cazador va a menudo a las[ENTER]montañas. Le encontrarás en esta aldea. ¿Por qué[ENTER]no le preguntas?[ENTER][ENTER]La, la, la, el amor es triste pero hermoso...
 7276	Pregunta a Yang-Shin sobre el hermano de Mirine.
@@ -7279,11 +7279,11 @@
 7279	Noticias sobre el hermano de Mirine.
 7280	Mira, ¡he recibido una carta de mi hermano! Ha[ENTER]escrito que encontró un lugar con muchas hierbas[ENTER]y que tardará un tiempo antes de que vuelva a[ENTER]casa. Lo siento, no debería haberte molestado con[ENTER]esto. Toma, no es mucho, pero espero que lo[ENTER]aceptes y me perdones. Gracias por hacer un viaje[ENTER]tan largo.
 7281	Has recibido 122.000 puntos de experiencia.[ENTER]Has recibido 5.000 Yang.
-7282	 Encuentra a mi hermano
+7282	Encuentra a mi hermano
 7283	¿Puedo pedirte un favor? Mi hermano ha estado[ENTER]fuera durante mucho tiempo. No he tenido ninguna[ENTER]noticia suya. Estoy un poco preocupada. ¿Puedes[ENTER]buscarle, por favor?
 7284	Mi hermano quería visitar a Yu-Hwan el músico en[ENTER]la otra aldea. ¿Puedes ir con Yu-Hwan y[ENTER]preguntarle por mi hermano? ¿Puedes buscarle si[ENTER]tienes tiempo?
 7285	Sí, lo haré.
-7286	¿Vas a abandonar esta misión para siempre?
+7286	¿Quieres abandonar la misión para siempre?
 7287	Gracias. Por favor, búscale; estoy muy[ENTER]preocupada. Nos vemos.
 7288	Muy mal que no me ayudes.[ENTER]Nos vemos.
 7289	¿Vas a buscarle? ¡Muchas gracias![ENTER]Estoy muy preocupada. ¡Buena suerte!
@@ -7306,7 +7306,7 @@
 7306	Supongo que simplemente no es el momento[ENTER]adecuado. Vuelve más tarde.
 7307	Si no quieres ayudar, no hay nada que pueda[ENTER]hacerle. Vete...
 7308	¿Realmente no quieres ayudar?
-7309	Ve con Ariyoung
+7309	Ve con Ariyoung.
 7310	Materiales para hacer armas.
 7311	Ve con Ah-Yu.
 7312	El Vendedor de la Tienda de Armas necesita tu[ENTER]ayuda. Consigue Mineral de Hierro de Uriel y Lino[ENTER]de Ariyoung para él.
@@ -7344,7 +7344,7 @@
 7344	Busca materiales
 7345	Vuelve con el Guardián de la Ciudad
 7346	Eun-Jung del Juramento Blanco
-7347	Has matado a Eun-Jung del Juramento Blanco.[ENTER]Vuelve con el Guardián de la Ciudad e infórmale.
+7347	Has matado a Eun-Jung del Juramento Blanco.[ENTER]Vuelve con el guardián de la aldea e infórmale.
 7348	¡Eres fantástico! Eres incluso mejor de lo que[ENTER]esperaba. No fuimos capaces de hacer nada con[ENTER]esas dos líderes del Juramento Blanco, y tú las[ENTER]has derrotado a ambas así como así.
 7349	Esto es increíble. Recibirás una recompensa[ENTER]adecuada. Por favor, ¡coge esto y continua[ENTER]trabajando por la paz de la aldea!
 7350	Has recibido 150.000 puntos de experiencia.[ENTER]Has recibido 25.000 Yang.[ENTER]Has recibido un Collar de Oro +4.
@@ -7365,7 +7365,7 @@
 7365	Fue la mejor armada que este continente ha visto[ENTER]nunca. Muchos países fracasaron porque nada pudo[ENTER]parar a la caballería. Sería parecido en la[ENTER]actualidad. Pero necesitas arduos métodos de[ENTER]entrenamiento y una gran cantidad de hierro para[ENTER]formar semejante armada.[ENTER]Deberías preguntar a Peddler y a Uriel el erudito[ENTER]sobre eso. Ellos probablemente sepan más[ENTER]detalles.
 7366	Ve con Peddler
 7367	La caballería armada.
-7368	Peddler:
+7368	Peddler
 7369	Yu-Hwan el músico dice que Peddler y Uriel el[ENTER]erudito pueden tener información sobre la[ENTER]caballería armada. Primero ve con Peddler.
 7370	Peddler:
 7371	La caballería armada.
@@ -7432,7 +7432,7 @@
 7432	Has recibido 300.000 puntos de experiencia.
 7433	Has recibido 10.000 Yang.
 7434	No, no tengo tiempo para esto.
-7435	¿Vas a abandonar esta misión para siempre?
+7435	¿Quieres abandonar la misión para siempre?
 7436	Vuelve si cambias de opinión. Por favor...
 7437	¿No tienes tiempo?[ENTER]¿No tienes tiempo para una tarea tan fácil?[ENTER]Bien, entonces...
 7438	Gracias por tu amabilidad. Aaaah, dónde está mi[ENTER]marido...
@@ -7540,7 +7540,7 @@
 7540	Voy a buscarlas.
 7541	No tengo tiempo.
 7542	¡Gracias, amigo![ENTER]Espero que tengas éxito.
-7543	 ¿Balso?
+7543	¿Balso?
 7544	Una medicina para Balso
 7545	Ve con Balso
 7546	Has encontrado la medicina para Balso, quien[ENTER]cogió una enfermedad desconocida de los hombres[ENTER]plaga. Entrégale la medicina.
@@ -7566,12 +7566,12 @@
 7566	Buscando el hacha dorada.
 7567	Recupera la amada Hacha Dorada de Deokbae de los[ENTER]Generales Salvajes.
 7568	¡He encontrado tu Hacha Dorada!
-7569	Deokbae el leñador:
+7569	Leñador Deokbae:
 7570	Sin tu ayuda nunca hubiera podido recuperar el[ENTER]Hacha Dorada. Muchas gracias. Tendré más cuidado[ENTER]en el futuro y siempre la llevaré conmigo.
 7571	Has recibido 400.000 puntos de experiencia.
 7572	Has recibido 30.000 Yang.
 7573	Sobre tu Hacha Dorada...
-7574	Deokbae el leñador:
+7574	Leñador Deokbae:
 7575	¡Oh no, oh no! He perdido el Hacha. ¿Quizá tú[ENTER]sepas a qué Hacha me refiero? Es el Hacha Dorada[ENTER]que conseguí del Herrero. La robó un Salvaje.
 7576	Si el Herrero lo descubre estará furioso y se[ENTER]negará a reparar mis hachas. También era un hacha[ENTER]realmente buena. ¿Quizá tú puedes recuperarla?
 7577	Rechazar
@@ -7640,7 +7640,7 @@
 7640	No, es demasiado tarde. Incluso si la consigues,[ENTER]estará seca y no la podré vender...
 7641	Miras al suelo y ves el pastel de arroz que han[ENTER]dejado las arañas. Demasiado tarde. Está todo[ENTER]seco.
 7642	Has malgastado demasiado tiempo. La torta de[ENTER]arroz se secó.[ENTER]Has fallado la misión.
-7643	Volver con Yu-Rang
+7643	Vuelve con Yu-Rang
 7644	Eh, ¿cómo está tu madre?
 7645	Vuelve con Yu-Rang
 7646	Has rescatado el Pastel de Arroz de Yu-Rang de[ENTER]las Arañas justo a tiempo. Llévaselo.
@@ -7731,7 +7731,7 @@
 7731	Ir con Octavio
 7732	¡Eso es lo que yo llamo un Anca de Rana! Solían[ENTER]ser más pequeñas, pero estoy seguro de que esta[ENTER]sabrá bien también. Espera un momento... Eso ya[ENTER]huele bastante bien. Otra pizca de sal... ¡Bien![ENTER]Aquí está tu ración. Jajaja, ahora tengo[ENTER]suficiente energía para una semana entera de[ENTER]trabajo.
 7733	Asegúrate que nadie se entera de esta sopa.[ENTER]Especialmente el encargado del almacén... Rara[ENTER]vez preparo esta sopa. De lo contrario, todo el[ENTER]mundo vendrá y me molestará.
-7734	Recibes 5.000.000 puntos de experiencia.
+7734	Puntos de experiencia: 5.000.000
 7735	No he estado muy bien últimamente. Mi cuerpo[ENTER]realmente ya no es lo que era. Cuando era jóven,[ENTER]podía trabajar hasta la noche, cada día de la[ENTER]semana, mientras bebía alcohol. Ahora, incluso[ENTER]resulta demasiado trabajo levantarme por las[ENTER]mañanas. Necesito una gran ayuda de la sopa de[ENTER]patas de rana para recuperar mi energía.
 7736	Obtienes 50.000 Yang.
 7737	¿No sabes lo que es la sopa de patas de rana?[ENTER]Cuando te tomas un tazón, te espabilas[ENTER]completamente de inmediato y te llenas de[ENTER]energía. ¡Entonces puedes trabajar una semana[ENTER]entera seguida sin cansarte![ENTER]Octavio solía preparar esta sopa, pero por alguna[ENTER]razón dejó de hacerlo hace un tiempo.
@@ -7741,7 +7741,7 @@
 7741	Bien, si estás ocupado...[ENTER]Vuelve si tienes algo más de tiempo.
 7742	¡Debería estar avergonzado de denominarse a si[ENTER]mismo como padre! Si le encuentro, ¡que Dios[ENTER]tenga compasión de su alma! Créeme, no estoy[ENTER]exagerando. Pregunta a otros en la aldea, estan[ENTER]de acuerdo conmigo.
 7743	Soon:
-7744	Vendedor general:
+7744	Comerciante general
 7745	Ve con la Vendedora de la Tienda General.
 7746	Quizá la Vendedora de la Tienda General sepa lo[ENTER]que trama Soon. Ve con ella y pregúntale si ha[ENTER]oido algo de Soon.
 7747	¿Qué pasa con Soon?
@@ -8197,7 +8197,7 @@
 8197	¿No quieres hacerlo? ¿Pero no le vas a contar a[ENTER]Yu-Rang la verdad?[ENTER]Por favor, ayúdame. ¡Vuelve cuando tengas tiempo[ENTER]para mí!
 8198	¡Ahora Yu-Rang no me hablará nunca más![ENTER]O tan sólo se reirá de mí...
 8199	Ah, tenía razón. Sabía que serías tan simpático[ENTER]como pareces. Gracias por tu ayuda. ¡Buena[ENTER]suerte!
-8200	Volver con Yu-Rang
+8200	Vuelve con Yu-Rang
 8201	Volver con Yu-Rang y contarle la mentira de[ENTER]Taurean.
 8202	Yu-Rang está muy decepcionada contigo.
 8203	¡¿Se lo has contado?![ENTER]Puedo entender que ya no quiera ser mi amiga[ENTER]nunca más. Pero me pone muy triste. Espero poder[ENTER]hacerle cambiar de opinión algún día. Quizá pueda[ENTER]pensar en algo bonito para ella...
@@ -8342,7 +8342,7 @@
 8342	¿Qué te pasa? ¡La última vez hiciste un gran[ENTER]trabajo para nosotros! ¿Y ahora simplemente[ENTER]quieres abandonar a nuestro país? Pero no hay[ENTER]nada que pueda hacer para evitarlo. Adiós.
 8343	Sabía que podía contar contigo. ¡Buena suerte y[ENTER]ten cuidado!
 8344	Reúnete con el espía
-8345	¿Qué es Bingsu?
+8345	Qué es Bingsu
 8346	¿Bingsu?
 8347	Taurean ha tenido una pelea con Harang porque no[ENTER]cree que puedas hacer helado en verano. Ve con[ENTER]Harang y pregúntale que sabe sobre el Bingsu.
 8348	Pregunta a Harang
@@ -8372,7 +8372,7 @@
 8372	Prueba de nuevo
 8373	Sé que es un largo camino y que los monstruos son[ENTER]fuertes. Si es demasiado difícil para ti, no hay[ENTER]nada que podamos hacer. Nos vemos.
 8374	Inténtalo de nuevo. ¡Con tu valor y energía[ENTER]puedes hacerlo!
-8375	¿Bingsu?
+8375	¡Bingsu!
 8376	Está hecho: Octavio ha preparado Bingsu del hielo[ENTER]del Monte Sohan. Vuelve rápido con Taurean antes[ENTER]de que se derrita.
 8377	¡Aquí! ¡Bingsu!
 8378	¿Eso es Bingsu? Sabe realmente bien. Agradable y[ENTER]fresco. ¡Nunca había probado algo como esto,[ENTER]gracias! Así que Harang tiene razón. Tengo que[ENTER]disculparme...
@@ -8405,7 +8405,7 @@
 8405	ist nun eine Großmeister Fertigkeit
 8406	Esto significa que has alcanzado el nivel[ENTER]perfecto en esta habilidad y no puedes mejorarla[ENTER]más.
 8407	¡Enhorabuena! Lo hiciste. Gracias al[ENTER]entrenamiento de las habilidades de los grandes[ENTER]maestros,
-8408	 %s ha subido a nivel %s.
+8408	%s ha subido a nivel %s.
 8409	¡Has aumentado tu nivel satisfactoriamente!
 8410	Has usado %s puntos de clasificación.
 8411	¡Fallaste!
@@ -8416,7 +8416,7 @@
 8416	Ninguna de tus habilidades es lo suficientemente[ENTER]buena para probar y conseguir un gran maestro en[ENTER]ellas.
 8417	Por favor, selecciona la habilidad que quieres[ENTER]aumentar a gran master.
 8418	Puntos de clasificación actuales: %s
-8419	 Puntos de clasificación necesarios:
+8419	Puntos de clasificación necesarios:
 8420	Entrenamiento de la habilidad %s gran maestro
 8421	El entrenamiento gran maestro gasta puntos de[ENTER]clasificación. Es posible que tu nivel caiga en[ENTER]un valor negativo de puntos.
 8422	Lo siento, pero aún no tienes la experiencia en[ENTER]equitación necesaria para mejorar a tu montura.[ENTER]Para eso necesitas, por lo menos, la licencia[ENTER]para Caballos de Batalla.
@@ -8472,14 +8472,14 @@
 8472	Mineral de Hierro Mágico
 8473	Para producir esto, necesitas un Pergamino[ENTER]Bendición.
 8474	¿Tienes todos los objetos necesarios? ¿Quieres[ENTER]producir un Pergamino Dragón? Para ello necesitas[ENTER]un Pergamino Bendición y Mineral de hierro[ENTER]mágico.
-8475	¡Has creado un pergamino dragón! Es realmente más[ENTER]fácil producir un pergamino dragón si usas[ENTER]mineral de hierro mágico. ¡Me[ENTER]gusta!
+8475	¡Has creado un pergamino dragón! Es realmente más[ENTER]fácil producir un pergamino dragón si usas[ENTER]mineral de hierro mágico. ¡Me gusta!
 8476	Tu intento de producir el Manuscrito del Dragón[ENTER]falló porque no tenías todos los materiales.
 8477	Producir un Manual de los Smithery
 8478	¿Has oído hablar de la piedra llamada Piedra del[ENTER]Herrero? Es una piedra hecha de la sangre y sudor[ENTER]de un herrero. Si me traes la Piedra del Herrero[ENTER]y un Pergamino Bendición, crearé para ti un[ENTER]manual que ha pasado en mi familia de generación[ENTER]en generación. Tiene funciones similares al[ENTER]Pergamino Dragón, pero el índice de éxito es[ENTER]mayor.
 8479	Estos misteriosos Pergaminos de la Guerra mejoran[ENTER]objetos desde +0 hasta +3 y tienen un porcentaje[ENTER]de éxito del 100% Sin embargo, no funcionan en[ENTER]objetos +4 o superiores.
 8480	Para producir esto, necesitas una Piedra del[ENTER]Herrero.
 8481	Piedra del Herrero
-8482	Para producirlo, necesitas un Pergamino[ENTER]Bendición.
+8482	Para producirlo, necesitas un Pergamino Bendición.
 8483	¿Tienes todos los objetos necesarios? Entonces,[ENTER]¿quieres quie haga el manual traspasado en mi[ENTER]familia de generación en generación?
 8484	¡He creado un Manual del Herrero para ti![ENTER]Ahora dispones del conocimiento antiguo de la[ENTER]dinastía de los herreros. ¡Úsalo con sensatez![ENTER]¡Ja, ja, ja!
 8485	Manual de los Smithery
