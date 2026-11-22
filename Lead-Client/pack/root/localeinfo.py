@@ -96,7 +96,10 @@ LANGUAGE_MODULE_DICT = {
 	"uiToolTip" : (),
 }
 
+LOADED_MODULE_LIST = []
+
 def SetLanguage(name):
+	previousName = app.GetLocaleName()
 	if not app.SetLanguage(name):
 		return False
 
@@ -105,11 +108,19 @@ def SetLanguage(name):
 		if moduleName in sys.modules:
 			moduleDict[moduleName] = sys.modules.pop(moduleName)
 
-	for moduleName in moduleDict:
-		__import__(moduleName)
+	try:
+		for moduleName in moduleDict:
+			__import__(moduleName)
+	except:
+		sys.modules.update(moduleDict)
+		app.SetLanguage(previousName)
+		raise
 
+	keptList = LOADED_MODULE_LIST
 	for moduleName, module in moduleDict.items():
 		loaded = sys.modules[moduleName]
+		keptList.append(loaded)
+		keptList.append(module.__dict__.get("__source__"))
 		for keepName in LANGUAGE_MODULE_DICT[moduleName]:
 			value = module.__dict__[keepName]
 			loaded.__dict__[keepName] = value
@@ -117,7 +128,9 @@ def SetLanguage(name):
 		module.__dict__.update(loaded.__dict__)
 		sys.modules[moduleName] = module
 
-	app.SetDefaultFontName(sys.modules["localeInfo"].UI_DEF_FONT)
+	moduleDict["localeInfo"].LOADED_MODULE_LIST = keptList
+	moduleDict["localeInfo"].__source__.LOADED_MODULE_LIST = keptList
+	app.SetDefaultFontName(moduleDict["localeInfo"].UI_DEF_FONT)
 	return True
 
 def LoadLocaleData():
@@ -149,6 +162,9 @@ def LoadLocaleFile(srcFileName, localeDict):
 		app.Abort()
 
 	for line in lines:
+		if not line.strip():
+			continue
+
 		try:		
 			tokens = line[:-1].split("\t")
 			if len(tokens) == 2:
