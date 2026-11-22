@@ -142,15 +142,13 @@ class BeltInventoryWindow(ui.ScriptWindow):
 		self.wndBeltInventoryLayer.Show()
 		self.expandBtn.Hide()
 
-		if localeInfo.IsRTL() == 0:
-			self.AdjustPositionAndSize()
+		self.AdjustPositionAndSize()
 				
 	def CloseInventory(self):
 		self.wndBeltInventoryLayer.Hide()
 		self.expandBtn.Show()
 		
-		if localeInfo.IsRTL() == 0:
-			self.AdjustPositionAndSize()
+		self.AdjustPositionAndSize()
 
 	## Calculate and return the BASE position based on the current inventory position.. I really hate hardcoding numbers but there is no other way..
 	def GetBasePosition(self):
@@ -175,7 +173,7 @@ class BeltInventoryWindow(ui.ScriptWindow):
 		self.isLoaded = 1
 
 		try:
-			pyScrLoader = ui.PythonScriptLoader()
+			pyScrLoader = ui.PythonScriptLoader(False)
 			pyScrLoader.LoadScriptFile(self, "UIScript/BeltInventoryWindow.py")
 		except:
 			import exception
@@ -191,10 +189,6 @@ class BeltInventoryWindow(ui.ScriptWindow):
 			self.expandBtn.SetEvent(ui.__mem_func__(self.OpenInventory))
 			self.minBtn.SetEvent(ui.__mem_func__(self.CloseInventory))
 			
-			if localeInfo.IsRTL() :
-				self.expandBtn.SetPosition(self.expandBtn.GetWidth() - 2, 15)
-				self.wndBeltInventoryLayer.SetPosition(self.wndBeltInventoryLayer.GetWidth() - 5, 0)
-				self.minBtn.SetPosition(self.minBtn.GetWidth() + 3, 15)			
 	
 			for i in xrange(item.BELT_INVENTORY_SLOT_COUNT):
 				slotNumber = item.BELT_INVENTORY_SLOT_START + i							
