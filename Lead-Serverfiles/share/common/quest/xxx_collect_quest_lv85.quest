@@ -164,7 +164,7 @@ quest collect_quest_lv85  begin
 					return
 				else								
 				say("채기랍:")
-				say("Èì...")
+				say("흠...")
 				say("미안하지만 이 가지는 사용을 못할 것 같구먼..")
 				say("연약하고 부러진 부분이 많은 가지로구만..")
 				say("다시 하나 구해올수있겠는가?")
@@ -290,10 +290,10 @@ end
 			say("")
 			pc.give_item2(50115) 
 			clear_letter()
-			affect.add_collect_point(POINT_RESIST_WARRIOR,10,60*60*24*365*60) --60³â	
-			affect.add_collect_point(POINT_RESIST_ASSASSIN,10,60*60*24*365*60) --60³â	
-			affect.add_collect_point(POINT_RESIST_SURA,10,60*60*24*365*60) --60³â	
-			affect.add_collect_point(POINT_RESIST_SHAMAN,10,60*60*24*365*60) --60³â	
+			affect.add_collect_point(POINT_RESIST_WARRIOR,10,60*60*24*365*60) --60년	
+			affect.add_collect_point(POINT_RESIST_ASSASSIN,10,60*60*24*365*60) --60년	
+			affect.add_collect_point(POINT_RESIST_SURA,10,60*60*24*365*60) --60년	
+			affect.add_collect_point(POINT_RESIST_SHAMAN,10,60*60*24*365*60) --60년	
 			set_quest_state("collect_quest_lv90", "run")
 			set_state(__complete)
 		end

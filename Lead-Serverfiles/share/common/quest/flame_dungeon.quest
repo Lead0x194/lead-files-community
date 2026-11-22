@@ -623,7 +623,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("2¹ø")
+			--		say("2번")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_3") then
 				if d.getf("stonekill") == 3 then
@@ -637,7 +637,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("3¹ø")
+			--		say("3번")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_4") then
 				if d.getf("stonekill") == 4 then
@@ -651,7 +651,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-				--	say("4¹ø")
+				--	say("4번")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_5") then
 				if d.getf("stonekill") == 5 then
@@ -665,7 +665,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("5¹ø")
+			--		say("5번")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_6") then
 				if d.getf("stonekill") == 6 then
@@ -679,7 +679,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("6¹ø")
+			--		say("6번")
 				end
 			else 
 				if d.getf("stonekill") == 7 then
@@ -691,7 +691,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("7¹ø")
+			--		say("7번")
 				end
 			end
 		end

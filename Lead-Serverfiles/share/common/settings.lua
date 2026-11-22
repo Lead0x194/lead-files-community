@@ -83,8 +83,8 @@ add_goto_info("em1", 0, 181, 1024+225, 3328+225 )
 add_goto_info("em1", 0, 182, 1792+225, 3328+225 )
 add_goto_info("em1", 0, 183, 2560+225, 3328+225 )
 
-add_goto_info("heaven|õ1", 0, 64, 2842, 8105)
-add_goto_info("heaven2|õ2", 0, 73, 2418, 12750)
+add_goto_info("heaven|천1", 0, 64, 2842, 8105)
+add_goto_info("heaven2|천2", 0, 73, 2418, 12750)
 add_goto_info("heaven3|천용", 0, 208, 8192, 10496)
 
 arena.add_map(112, 8534, 101, 8564, 101)
