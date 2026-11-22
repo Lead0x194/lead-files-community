@@ -31,7 +31,27 @@ GUILD_MARK_NOT_ENOUGH_LEVEL = "��巹�� 3�̻� ���� ����
 ERROR_MARK_UPLOAD_NEED_RECONNECT = "UploadMark: Reconnect to game"
 ERROR_MARK_CHECK_NEED_RECONNECT = "CheckMark: Reconnect to game"
 
-__IS_RTL		= app.IsRTL()
+LANGUAGE_NAME_LIST = (
+	("ae", "العربية", True),
+	("cz", "Čeština"),
+	("de", "Deutsch"),
+	("dk", "Dansk"),
+	("en", "English"),
+	("es", "Español"),
+	("fr", "Français"),
+	("gr", "Ελληνικά"),
+	("hu", "Magyar"),
+	("it", "Italiano"),
+	("nl", "Nederlands"),
+	("pl", "Polski"),
+	("pt", "Português"),
+	("ro", "Română"),
+	("ru", "Русский"),
+	("tr", "Türkçe"),
+)
+
+__IS_RTL = len([language for language in LANGUAGE_NAME_LIST if language[0] == app.GetLocaleName() and len(language) > 2]) > 0
+app.SetRTL(__IS_RTL)
 LOGIN_FAILURE_WRONG_SOCIALID = "ASDF"
 LOGIN_FAILURE_SHUTDOWN_TIME = "ASDF"
 
@@ -56,28 +76,9 @@ def ReportMissingKeys(moduleName):
 
 REQUESTED_LANGUAGE = None
 
-LANGUAGE_NAME_LIST = (
-	("ae", "العربية"),
-	("cz", "Čeština"),
-	("de", "Deutsch"),
-	("dk", "Dansk"),
-	("en", "English"),
-	("es", "Español"),
-	("fr", "Français"),
-	("gr", "Ελληνικά"),
-	("hu", "Magyar"),
-	("it", "Italiano"),
-	("nl", "Nederlands"),
-	("pl", "Polski"),
-	("pt", "Português"),
-	("ro", "Română"),
-	("ru", "Русский"),
-	("tr", "Türkçe"),
-)
-
 def GetLanguageList():
 	import pack
-	return [(code, name) for code, name in LANGUAGE_NAME_LIST if pack.Exist("locale/%s/locale_game.txt" % code)]
+	return [(language[0], language[1]) for language in LANGUAGE_NAME_LIST if pack.Exist("locale/%s/locale_game.txt" % language[0])]
 
 LANGUAGE_MODULE_DICT = {
 	"localeInfo" : (),

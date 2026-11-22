@@ -275,7 +275,6 @@ PyObject* appSetLanguage(PyObject* poSelf, PyObject* poArgs)
 	if (!LocaleService_SetLanguage(szName))
 		return Py_BuildValue("i", 0);
 
-	SetDefaultRTL(LocaleService_IsRTL());
 	return Py_BuildValue("i", LoadLocaleTexts(LocaleService_GetLocalePath()));
 }
 
@@ -284,9 +283,14 @@ PyObject* appGetLocaleName(PyObject* poSelf, PyObject* poArgs)
 	return Py_BuildValue("s", LocaleService_GetLocaleName());
 }
 
-PyObject* appIsRTL(PyObject* poSelf, PyObject* poArgs)
+PyObject* appSetRTL(PyObject* poSelf, PyObject* poArgs)
 {
-	return Py_BuildValue("i", LocaleService_IsRTL());
+	int iRTL;
+	if (!PyTuple_GetInteger(poArgs, 0, &iRTL))
+		return Py_BuildException();
+
+	SetDefaultRTL(iRTL ? true : false);
+	return Py_BuildNone();
 }
 
 PyObject* appGetLocalePath(PyObject* poSelf, PyObject* poArgs)
@@ -1260,7 +1264,7 @@ void initapp()
 		{ "GetLocaleServiceName",		appGetLocaleServiceName,		METH_VARARGS },
 		{ "GetLocaleName",				appGetLocaleName,				METH_VARARGS },
 		{ "GetLocalePath",				appGetLocalePath,				METH_VARARGS },
-		{ "IsRTL",						appIsRTL,						METH_VARARGS },
+		{ "SetRTL",						appSetRTL,						METH_VARARGS },
 		{ "ForceSetLocale",				appForceSetLocale,				METH_VARARGS },
 		// END_OF_LOCALE
 
