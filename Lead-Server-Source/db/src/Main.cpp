@@ -17,7 +17,6 @@ int Start();
 
 BOOL g_loadProtoFromDatabase = false;
 std::string g_stTablePostfix;
-std::string g_stLocaleNameColumn = "name";
 std::string g_stLocale = "utf8mb4";
 std::string g_stPlayerDBName = "";
 
@@ -206,12 +205,6 @@ int Start()
 	}
 
 	CClientManager::instance().SetPlayerIDStart(iIDStart);
-
-	if (CConfig::instance().GetValue("NAME_COLUMN", szBuf, 256))
-	{
-		fprintf(stderr, "%s %s", g_stLocaleNameColumn.c_str(), szBuf);
-		g_stLocaleNameColumn = szBuf;
-	}
 
 	char szAddr[64], szDB[64], szUser[64], szPassword[64];
 	int iPort;
