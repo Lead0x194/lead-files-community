@@ -41,6 +41,7 @@ struct SNetworkActorData
 	DWORD	m_dwGuildID;
 	DWORD	m_dwLevel;
 	bool	m_bLocalName;
+	std::string	m_stRawName;
 	
 	SNetworkActorData();
 

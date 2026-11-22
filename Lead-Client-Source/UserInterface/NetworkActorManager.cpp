@@ -5,6 +5,7 @@
 
 #include "AbstractPlayer.h"
 #include "PythonNonPlayer.h"
+#include "Locale.h"
 
 void SNetworkActorData::UpdatePosition()
 {
@@ -89,6 +90,7 @@ void SNetworkActorData::__copy__(const SNetworkActorData& src)
 	m_dwLevel = src.m_dwLevel;
 	m_stName = src.m_stName;
 	m_bLocalName = src.m_bLocalName;
+	m_stRawName = src.m_stRawName;
 }
 // END_OF_NETWORK_ACTOR_DATA_COPY
 	
@@ -143,10 +145,19 @@ void CNetworkActorManager::RefreshLocalNames()
 	for (std::map<DWORD, SNetworkActorData>::iterator itor = m_kNetActorDict.begin(); itor != m_kNetActorDict.end(); ++itor)
 	{
 		SNetworkActorData& rkNetActorData = itor->second;
-		if (!rkNetActorData.m_bLocalName)
+		if (rkNetActorData.m_bLocalName)
+		{
+			rkNetActorData.m_stName = rkNonPlayer.GetMonsterName(rkNetActorData.m_dwRace);
+		}
+		else if (!rkNetActorData.m_stRawName.empty())
+		{
+			rkNetActorData.m_stName = rkNetActorData.m_stRawName;
+			LocaleService_ReplaceTags(rkNetActorData.m_stName);
+		}
+		else
+		{
 			continue;
-
-		rkNetActorData.m_stName = rkNonPlayer.GetMonsterName(rkNetActorData.m_dwRace);
+		}
 
 		CInstanceBase* pkInst = rkChrMgr.GetInstancePtr(rkNetActorData.m_dwVID);
 		if (pkInst && rkNetActorData.m_stName != pkInst->GetNameString())

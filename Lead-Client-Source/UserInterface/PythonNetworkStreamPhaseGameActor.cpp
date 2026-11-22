@@ -100,6 +100,7 @@ bool CPythonNetworkStream::RecvCharacterAppendPacket()
 
 	kNetActorData.m_stName="";
 	kNetActorData.m_bLocalName=false;
+	kNetActorData.m_stRawName="";
 	kNetActorData.m_kAffectFlags.CopyData(0, sizeof(chrAddPacket.dwAffectFlag[0]), &chrAddPacket.dwAffectFlag[0]);
 	kNetActorData.m_kAffectFlags.CopyData(32, sizeof(chrAddPacket.dwAffectFlag[1]), &chrAddPacket.dwAffectFlag[1]);
 	
@@ -154,10 +155,20 @@ bool CPythonNetworkStream::RecvCharacterAdditionalInfo()
 	{
 		const char * c_szName;
 		kNetActorData.m_bLocalName = !chrInfoPacket.name[0] && CPythonNonPlayer::Instance().GetName(kNetActorData.m_dwRace, &c_szName);
+		kNetActorData.m_stRawName = "";
 		if (kNetActorData.m_bLocalName)
+		{
 			kNetActorData.m_stName = c_szName;
+		}
 		else
+		{
 			kNetActorData.m_stName = chrInfoPacket.name;
+			if (CActorInstance::TYPE_PC != kNetActorData.m_bType && std::string::npos != kNetActorData.m_stName.find("[L"))
+			{
+				kNetActorData.m_stRawName = kNetActorData.m_stName;
+				LocaleService_ReplaceTags(kNetActorData.m_stName);
+			}
+		}
 		kNetActorData.m_dwGuildID = chrInfoPacket.dwGuildID;
 		kNetActorData.m_dwLevel = chrInfoPacket.dwLevel;
 		kNetActorData.m_sAlignment=chrInfoPacket.sAlignment;	
