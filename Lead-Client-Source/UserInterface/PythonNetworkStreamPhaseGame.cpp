@@ -1156,7 +1156,11 @@ bool CPythonNetworkStream::RecvChatPacket()
 	}
 
 	bool bServerText = CHAT_TYPE_INFO == kChat.type || CHAT_TYPE_NOTICE == kChat.type || CHAT_TYPE_BIG_NOTICE == kChat.type;
-	if (CHAT_TYPE_TALKING == kChat.type && kChat.id != 0)
+	if (CHAT_TYPE_TALKING == kChat.type && 0 == kChat.id)
+	{
+		bServerText = true;
+	}
+	else if (CHAT_TYPE_TALKING == kChat.type)
 	{
 		CInstanceBase* pkInstTalker = CPythonCharacterManager::Instance().GetInstancePtr(kChat.id);
 		bServerText = pkInstTalker && !pkInstTalker->IsPC();
