@@ -1829,3 +1829,13 @@ end
 function say_npc()
 	say_title(""..mob_name(npc.get_race())..":")
 end
+local server_item_name = item_name
+local server_mob_name = mob_name
+item_name = function(vnum)
+	if server_item_name(vnum) == "" then return "" end
+	return "[IN;"..vnum.."]"
+end
+mob_name = function(vnum)
+	if server_mob_name(vnum) == "" then return "" end
+	return "[MN;"..vnum.."]"
+end
