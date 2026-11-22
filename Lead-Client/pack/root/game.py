@@ -834,6 +834,8 @@ class GameWindow(ui.ScriptWindow):
 		if self.mapNameShower:
 			self.mapNameShower.ShowMapName(mapName, x, y)
 
+		self.currentMapName = mapName
+
 		if self.interface:
 			self.interface.SetMapName(mapName)
 	# END_OF_SHOW_LOCAL_MAP_NAME	
@@ -1454,6 +1456,7 @@ class GameWindow(ui.ScriptWindow):
 			return
 
 		self.interface.Rebuild()
+		self.interface.SetMapName(getattr(self, "currentMapName", ""))
 		self.affectShower.RefreshDescription(uiAffectShower.AffectShower.AFFECT_DATA_DICT)
 
 		self.targetBoard.Destroy()
