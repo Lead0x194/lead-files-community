@@ -243,6 +243,11 @@ DWORD GetDefaultCodePage()
 	return gs_codePage;
 }
 
+bool IsDefaultRTL()
+{
+	return CP_ARABIC == gs_codePage;
+}
+
 int GetDefaultCodePageCharLength(const char* c_szText)
 {
 	const unsigned char lead = static_cast<unsigned char>(*c_szText);

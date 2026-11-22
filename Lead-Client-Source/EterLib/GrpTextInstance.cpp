@@ -9,6 +9,7 @@
 #include <map>
 
 extern DWORD GetDefaultCodePage();
+extern bool IsDefaultRTL();
 
 const float c_fFontFeather = 0.5f;
 
@@ -177,7 +178,7 @@ void CGraphicTextInstance::Update()
 		} 
 		else 
 		{
-			if (defCodePage == CP_ARABIC) // ARABIC
+			if (IsDefaultRTL()) // ARABIC
 			{
 
 				wchar_t* wArabicText = (wchar_t*)_alloca(sizeof(wchar_t) * wTextLen);
@@ -493,7 +494,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 
 	UINT defCodePage = GetDefaultCodePage();
 
-	if (defCodePage == CP_ARABIC)
+	if (IsDefaultRTL())
 	{
 		switch (m_hAlign)
 		{
@@ -782,7 +783,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 		}
 
 		// FOR_ARABIC_ALIGN
-		if (defCodePage == CP_ARABIC)
+		if (IsDefaultRTL())
 		{
 			sx += m_v3Position.x - m_textWidth;
 			ex += m_v3Position.x - m_textWidth;
@@ -868,7 +869,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 		int ly = static_cast<int>(gs_my - m_v3Position.y);
 
 		// Arab changes the coordinate signs.
-		if (GetDefaultCodePage() == CP_ARABIC) {
+		if (IsDefaultRTL()) {
 			lx = -lx;
 			ly = -ly + m_textHeight;
 		}

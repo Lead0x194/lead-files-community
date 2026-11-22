@@ -1042,7 +1042,7 @@ namespace UI
 	{
 		// FOR_ARABIC_ALIGN
 		//if (m_TextInstance.GetHorizontalAlign() == CGraphicTextInstance::HORIZONTAL_ALIGN_ARABIC)
-		if( GetDefaultCodePage() == CP_ARABIC )
+		if( IsDefaultRTL() )
 		{
 			m_TextInstance.SetPosition(static_cast<float>(m_rect.right), static_cast<float>(m_rect.top));
 		}

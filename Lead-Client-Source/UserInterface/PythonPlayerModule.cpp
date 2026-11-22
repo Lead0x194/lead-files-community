@@ -1038,7 +1038,7 @@ PyObject * playerGetItemLink(PyObject * poSelf, PyObject * poArgs)
 			}
 
 
-		if( GetDefaultCodePage() == CP_ARABIC ) {
+		if( IsDefaultRTL() ) {
 			if (isAttr)
 				// "item:number:flag:socket0:socket1:socket2"
 				snprintf(buf, sizeof(buf), " |h|r[%s]|cffffc700|H%s|h", pItemData->GetName(), itemlink);

@@ -1269,7 +1269,7 @@ const char * CPythonSkill::SSkillData::GetAffectDescription(DWORD dwIndex, float
 	if (fMaxValue < 0.0)
 		fMaxValue = - fMaxValue;
 
-	if (CP_ARABIC == ::GetDefaultCodePage())
+	if (IsDefaultRTL())
 	{
 		// #0000870: [M2AE] Crash occurs in certain Arabic sentences in Korean mode
 		static std::string strDescription;
