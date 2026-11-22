@@ -1,25 +1,25 @@
 local settings = dragon_lair_weekly . set_settings ( ) 
-say_title ( gameforge . dragon_lair_weekly . _020_sayTitle ) 
+say_title ( "[LC;731]" ) 
 local amount_remaining = dragon_lair_weekly . get_amount_remaining ( ) 
 if amount_remaining > 0 then 
-say ( string . format ( gameforge . dragon_lair_weekly . _140_say , amount_remaining ) ) 
+say ( string . format ( "[LC;743;%s]" , amount_remaining ) ) 
 say_item_vnum ( pc . getqf ( "item_to_hunt" ) ) 
-say ( gameforge . dragon_lair_weekly . _040_say ) 
+say ( "[LC;733]" ) 
 elseif pc . money < settings . amount_to_pay then 
-say ( gameforge . dragon_lair_weekly . _175_say ) 
+say ( "[LC;747]" ) 
 else 
-say ( string . format ( gameforge . dragon_lair_weekly . _170_say , pc . getqf ( "amount_to_hunt" ) ) ) 
+say ( string . format ( "[LC;746;%s]" , pc . getqf ( "amount_to_hunt" ) ) ) 
 say_item_vnum ( pc . getqf ( "item_to_hunt" ) ) 
-local give_item = select ( gameforge . dragon_lair_weekly . _180_select , gameforge . dragon_lair_weekly . _190_select ) 
-say_title ( gameforge . dragon_lair_weekly . _020_sayTitle ) 
+local give_item = select ( "[LC;748]" , "[LC;749]" ) 
+say_title ( "[LC;731]" ) 
 if ( give_item == 1 ) then 
 if math . random ( 100 ) < settings . normal_items_rate then 
-say ( gameforge . dragon_lair_weekly . _205_sayReward ) 
+say ( "[LC;751]" ) 
 local award_vnum = get_random_vnum_from_table ( settings . normal_items ) 
 say_item_vnum ( award_vnum ) 
 pc . give_item2 ( award_vnum ) 
 else 
-say ( gameforge . dragon_lair_weekly . _200_sayReward ) 
+say ( "[LC;750]" ) 
 local award_vnum = get_random_vnum_from_table ( settings . poly_mobs ) 
 say_item ( item_name ( settings . poly_item_vnum ) , settings . poly_item_vnum , mob_name ( award_vnum ) ) 
 pc . give_poly_marble ( award_vnum ) 
@@ -29,6 +29,6 @@ pc . changemoney ( settings . amount_to_pay )
 q . done ( ) 
 set_state ( "getquest" ) 
 else 
-say ( gameforge . dragon_lair_weekly . _210_say ) 
+say ( "[LC;752]" ) 
 end 
 end 

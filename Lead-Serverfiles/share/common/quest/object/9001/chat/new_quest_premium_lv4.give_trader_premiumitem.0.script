@@ -1,25 +1,25 @@
 if pc . count_item ( pc . getqf ( "drop2" ) ) >= pc . getqf ( "neededAmountDrop2" ) then 
 target . delete ( "__TARGET2__" ) 
-say_title ( gameforge . new_quest_premium_lv4 . _40_qSetTitle ) 
-say ( gameforge . new_quest_premium_lv4 . _240_say ) 
+say_title ( "[LC;6332]" ) 
+say ( "[LC;6317]" ) 
 wait ( ) 
-say_title ( gameforge . new_quest_premium_lv4 . _40_qSetTitle ) 
-say ( gameforge . new_quest_premium_lv4 . _250_say ) 
+say_title ( "[LC;6332]" ) 
+say ( "[LC;6318]" ) 
 wait ( ) 
-say_title ( gameforge . new_quest_premium_lv4 . _40_qSetTitle ) 
-say ( gameforge . new_quest_premium_lv4 . _260_say ) 
-say_reward ( string . format ( gameforge . new_quest_premium_lv4 . _270_say_reward , pc . getqf ( "amountYang" ) ) ) 
+say_title ( "[LC;6332]" ) 
+say ( "[LC;6319]" ) 
+say_reward ( string . format ( "[LC;6320;%s]" , pc . getqf ( "amountYang" ) ) ) 
 pc . change_money ( pc . getqf ( "amountYang" ) ) 
 pc . give_item2 ( rewardVnum ) 
 pc . remove_item ( pc . getqf ( "drop2" ) , pc . getqf ( "neededAmountDrop2" ) ) 
 local v = find_npc_by_vnum ( 9003 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET3__" , v , gameforge . new_quest_premium_lv4 . _10_targetVid ) 
+target . vid ( "__TARGET3__" , v , "[LC;6302]" ) 
 end 
 set_state ( "goto_trader_happy" ) 
 else 
-say_title ( gameforge . new_quest_premium_lv4 . _40_qSetTitle ) 
-say ( gameforge . new_quest_premium_lv4 . _280_say ) 
-say_reward ( string . format ( gameforge . new_quest_premium_lv4 . _290_say_reward , pc . getqf ( "neededAmountDrop2" ) ) ) 
+say_title ( "[LC;6332]" ) 
+say ( "[LC;6321]" ) 
+say_reward ( string . format ( "[LC;6322;%s]" , pc . getqf ( "neededAmountDrop2" ) ) ) 
 end 

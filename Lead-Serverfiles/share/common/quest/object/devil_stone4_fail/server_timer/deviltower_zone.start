@@ -1,5 +1,5 @@
 if d . select ( get_server_timer_arg ( ) ) then 
-notice_multiline ( gameforge . deviltower_zone . _80_dNotice , d . notice ) 
+notice_multiline ( "[LC;703]" , d . notice ) 
 d . clear_regen ( ) 
 d . exit_all ( ) 
 clear_server_timer ( "devil_stone4_update" , get_server_timer_arg ( ) ) 

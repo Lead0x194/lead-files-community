@@ -1,4 +1,4 @@
-if flame_dungeon . is_flamed ( pc . get_map_index ( ) ) and d . getf ( "level" ) == 14 then notice_multiline ( gameforge . flame_dungeon . _460_notice , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _430_notice , d . notice ) 
+if flame_dungeon . is_flamed ( pc . get_map_index ( ) ) and d . getf ( "level" ) == 14 then notice_multiline ( "[LC;1080]" , d . notice ) 
+notice_multiline ( "[LC;1077]" , d . notice ) 
 flame_dungeon . level_clear ( ) 
  return end 

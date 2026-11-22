@@ -1,29 +1,29 @@
 if pc . getqf ( "suraskel2" ) == 1 and pc . countitem ( diarypage ) < 12 then 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _210_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6192]" ) 
 pc . setqf ( "suraskel2" , 0 ) 
 pc . give_item2 ( diarypage , 3 ) 
 wait ( ) 
 if pc . countitem ( diarypage ) > 2 and pc . countitem ( diarypage ) <= 5 then 
-say ( gameforge . new_quest_lv75 . _160_1_say ) 
+say ( "[LC;6173]" ) 
 elseif pc . countitem ( diarypage ) > 5 and pc . countitem ( diarypage ) <= 8 then 
-say ( gameforge . new_quest_lv75 . _160_2_say ) 
+say ( "[LC;6174]" ) 
 elseif pc . countitem ( diarypage ) > 8 and pc . countitem ( diarypage ) <= 12 then 
-say ( gameforge . new_quest_lv75 . _160_3_say ) 
+say ( "[LC;6175]" ) 
 else 
-say ( gameforge . new_quest_lv75 . _150_say ) 
+say ( "[LC;6172]" ) 
 end 
 wait ( ) 
 elseif pc . getqf ( "suraskel2" ) == 1 and pc . countitem ( diarypage ) >= 12 then 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _210_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6192]" ) 
 pc . setqf ( "suraskel2" , 0 ) 
 pc . give_item2 ( diarypage , 3 ) 
 wait ( ) 
-say ( gameforge . new_quest_lv75 . _160_4_say ) 
+say ( "[LC;6176]" ) 
 wait ( ) 
-say ( gameforge . new_quest_lv75 . _220_say ) 
+say ( "[LC;6193]" ) 
 set_state ( "legendarydiary" ) 
 else 
-say ( gameforge . new_quest_lv75 . _230_say ) 
+say ( "[LC;6194]" ) 
 end 

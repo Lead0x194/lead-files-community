@@ -1,4 +1,4 @@
 d . setf ( "level" , 9 ) 
-notice_multiline ( gameforge . deviltower_zone . _270_dNotice , d . notice ) 
+notice_multiline ( "[LC;695]" , d . notice ) 
 d . jump_all ( 2048 + 590 , 6656 + 155 ) 
 d . regen_file ( "data/dungeon/deviltower9_regen.txt" ) 

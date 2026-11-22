@@ -12,7 +12,7 @@ end
 q . set_counter_value ( remain1 + remain2 ) 
 end 
 if pc . getqf ( "mob3_1_kill" ) >= 50 and pc . getqf ( "mob3_2_kill" ) >= 1 then 
-notice_multiline ( gameforge . main_quest_lv98 . _310_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv98 . _310_2_notice , notice ) 
+notice_multiline ( "[LC;5392]" , notice ) 
+notice_multiline ( "[LC;5393]" , notice ) 
 set_state ( "state3_3" ) 
 end 

@@ -1,10 +1,10 @@
 if pc . get_level ( ) < 40 then 
-say_title ( gameforge . deviltower_zone . _20_sayTitle ) 
-say ( gameforge . deviltower_zone . _30_say ) 
+say_title ( "[LC;688]" ) 
+say ( "[LC;698]" ) 
 else 
-say_title ( gameforge . deviltower_zone . _20_sayTitle ) 
-say ( gameforge . deviltower_zone . _40_say ) 
-local s = select ( gameforge . locale . monkey_dungeon . enter , gameforge . locale . monkey_dungeon . no_enter ) 
+say_title ( "[LC;688]" ) 
+say ( "[LC;699]" ) 
+local s = select ( "[LC;2132]" , "[LC;2136]" ) 
 if s == 1 then 
 pc . warp ( 216500 , 727000 ) 
 end 

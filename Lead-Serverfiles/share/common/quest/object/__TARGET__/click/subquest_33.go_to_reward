@@ -1,30 +1,30 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( 70009 ) >= 1 then 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_33 . _400_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7931]" ) 
 pc . remove_item ( 70009 , 1 ) 
 pc . remove_item ( 27988 , 4 ) 
-say_reward ( gameforge . subquest_33 . _410_sayReward ) 
+say_reward ( "[LC;7933]" ) 
 pc . give_exp2 ( 1.4e+06 ) 
-say_reward ( gameforge . subquest_33 . _420_sayReward ) 
+say_reward ( "[LC;7934]" ) 
 pc . change_money ( 25000 ) 
 if pc . job == 0 then 
 pc . give_item2 ( 12241 , 1 ) 
-say_reward ( gameforge . subquest_33 . _430_sayReward ) 
+say_reward ( "[LC;7935]" ) 
 elseif pc . job == 1 then 
 pc . give_item2 ( 12521 , 1 ) 
-say_reward ( gameforge . subquest_33 . _440_sayReward ) 
+say_reward ( "[LC;7936]" ) 
 elseif pc . job == 2 then 
 pc . give_item2 ( 12381 , 1 ) 
-say_reward ( gameforge . subquest_33 . _450_sayReward ) 
+say_reward ( "[LC;7937]" ) 
 elseif pc . job == 3 then 
 pc . give_item2 ( 12661 , 1 ) 
-say_reward ( gameforge . subquest_33 . _460_sayReward ) 
+say_reward ( "[LC;7938]" ) 
 end 
 clear_letter ( ) 
 set_state ( "__COMPLETE__" ) 
 else 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_33 . _470_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7939]" ) 
 return 
 end 

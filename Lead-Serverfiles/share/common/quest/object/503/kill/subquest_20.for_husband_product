@@ -4,6 +4,6 @@ pc . give_item2 ( "30161" , 1 )
 local v = find_npc_by_vnum ( 20003 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . subquest_20 . _150_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;7511]" ) 
 end 
 end 

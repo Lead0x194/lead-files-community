@@ -1,4 +1,4 @@
 pc . setqf ( "kill_count" , pc . getqf ( "kill_count" ) + 1 ) 
-q . set_counter ( gameforge . horse_levelup . _training_7_count , 20 - pc . getqf ( "kill_count" ) ) 
+q . set_counter ( "[LC;1624]" , 20 - pc . getqf ( "kill_count" ) ) 
 if pc . getqf ( "kill_count" ) >= 20 then setstate ( "report" ) 
  return end 

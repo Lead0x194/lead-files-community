@@ -1,8 +1,8 @@
-notice_multiline ( gameforge . main_quest_lv97 . _560_notice , notice ) 
-say ( gameforge . main_quest_lv97 . _570_say ) 
+notice_multiline ( "[LC;5351]" , notice ) 
+say ( "[LC;5352]" ) 
 say ( "" ) 
 wait ( ) 
-say ( gameforge . main_quest_lv97 . _580_say ) 
+say ( "[LC;5353]" ) 
 say ( "" ) 
 if pc . count_item ( 31017 ) < 1 then 
 pc . give_item2 ( 31017 , 1 ) 

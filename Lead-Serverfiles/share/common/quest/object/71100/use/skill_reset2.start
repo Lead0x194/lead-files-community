@@ -1,15 +1,15 @@
 if pc . level <= 31 or pc . level >= 98 then 
 say_title ( item_name ( 71100 ) ) 
-say ( gameforge . skill_reset2 . _140_say ) 
+say ( "[LC;6909]" ) 
 return 
 end 
 if pc . get_skill_group ( ) == 0 then 
 say_title ( item_name ( 71100 ) ) 
-say ( gameforge . skill_reset2 . _40_say ) 
+say ( "[LC;6912]" ) 
 return 
 end 
 say_title ( item_name ( 71100 ) ) 
-say ( gameforge . skill_reset2 . _130_say ) 
+say ( "[LC;6907]" ) 
 s = select ( locale . yes , locale . no ) 
 if 2 == s then 
 return 

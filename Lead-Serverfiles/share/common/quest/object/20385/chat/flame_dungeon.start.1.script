@@ -1,12 +1,12 @@
 local setting = flame_dungeon . setting ( ) 
 if d . getf ( "started" ) == 0 then 
-say ( gameforge . flame_dungeon . _230_say ) 
-say ( gameforge . flame_dungeon . _240_say ) 
+say ( "[LC;1061]" ) 
+say ( "[LC;1062]" ) 
 wait ( ) 
 d . setf ( "started" , 1 ) 
 server_timer ( "flame_dungeon_45m_left_timer" , 15 * 60 , d . get_map_index ( ) ) 
-notice_multiline ( gameforge . flame_dungeon . _250_notice , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _170_notice , d . notice ) 
+notice_multiline ( "[LC;1063]" , d . notice ) 
+notice_multiline ( "[LC;1055]" , d . notice ) 
 local pids = { party . get_member_pids ( ) } 
 local ticketGroup = { 71095 , 1 , 71130 , 1 } 
 for i , pid in next , pids , nil begin 
@@ -53,55 +53,55 @@ end
 end 
 end 
 if d . getf ( "level" ) == 1 then 
-say ( gameforge . flame_dungeon . _260_say ) 
-notice_multiline ( gameforge . flame_dungeon . _260_say , d . notice ) 
+say ( "[LC;1064]" ) 
+notice_multiline ( "[LC;1064]" , d . notice ) 
 d . kill_unique ( "door1" ) 
 d . kill_unique ( "idoor1" ) 
 d . setf ( "level" , 11 ) 
 d . regen_file ( "data/dungeon/flame_dungeon/" .. "fd_a.txt" ) 
 server_timer ( "killed_A_1" , 12 , d . get_map_index ( ) ) 
 elseif d . getf ( "level" ) == 11 then 
-say ( gameforge . flame_dungeon . _270_say ) 
-say_title ( gameforge . flame_dungeon . _280_sayTitle .. d . count_monster ( ) ) 
+say ( "[LC;1065]" ) 
+say_title ( "[LC;1066]" .. d . count_monster ( ) ) 
 elseif d . getf ( "level" ) == 2 then 
-say ( gameforge . flame_dungeon . _290_say ) 
-say ( gameforge . flame_dungeon . _300_say ) 
-notice_multiline ( gameforge . flame_dungeon . _290_say , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _300_say , d . notice ) 
+say ( "[LC;1067]" ) 
+say ( {} ) 
+notice_multiline ( "[LC;1067]" , d . notice ) 
+notice_multiline ( {} , d . notice ) 
 d . spawn_mob ( 20386 , setting . LEVEL2_STONE_pos [ 1 ] , setting . LEVEL2_STONE_pos [ 2 ] ) 
 d . kill_unique ( "door2" ) 
 d . kill_unique ( "idoor2" ) 
 d . set_regen_file ( "data/dungeon/flame_dungeon/" .. "fd_b.txt" ) 
 d . setf ( "level" , 12 ) 
 elseif d . getf ( "level" ) == 12 then 
-say ( gameforge . flame_dungeon . _310_say ) 
+say ( "[LC;1068]" ) 
 elseif d . getf ( "level" ) == 3 then 
-say ( gameforge . flame_dungeon . _260_say ) 
-notice_multiline ( gameforge . flame_dungeon . _260_say , d . notice ) 
+say ( "[LC;1064]" ) 
+notice_multiline ( "[LC;1064]" , d . notice ) 
 d . kill_unique ( "door3" ) 
 d . kill_unique ( "idoor3" ) 
 d . setf ( "level" , 13 ) 
 d . regen_file ( "data/dungeon/flame_dungeon/" .. "fd_c.txt" ) 
 server_timer ( "killed_A_1" , 12 , d . get_map_index ( ) ) 
 elseif d . getf ( "level" ) == 13 then 
-say ( gameforge . flame_dungeon . _270_say ) 
-say_title ( gameforge . flame_dungeon . _280_sayTitle .. d . count_monster ( ) ) 
+say ( "[LC;1065]" ) 
+say_title ( "[LC;1066]" .. d . count_monster ( ) ) 
 elseif d . getf ( "level" ) == 4 then 
-say ( gameforge . flame_dungeon . _320_notice ) 
-notice_multiline ( gameforge . flame_dungeon . _320_notice , d . notice ) 
+say ( "[LC;1069]" ) 
+notice_multiline ( "[LC;1069]" , d . notice ) 
 d . setf ( "level" , 14 ) 
 d . kill_unique ( "door4" ) 
 d . kill_unique ( "idoor4" ) 
 d . set_regen_file ( "data/dungeon/flame_dungeon/" .. "fd_d.txt" ) 
 d . spawn_mob ( 6051 , setting . LEVEL4_TARGET_pos [ 1 ] , setting . LEVEL4_TARGET_pos [ 2 ] ) 
 elseif d . getf ( "level" ) == 14 then 
-say ( gameforge . flame_dungeon . _330_say ) 
-say ( gameforge . flame_dungeon . _340_say ) 
+say ( "[LC;1070]" ) 
+say ( {} ) 
 elseif d . getf ( "level" ) == 5 then 
-say ( gameforge . flame_dungeon . _350_say ) 
-say ( gameforge . flame_dungeon . _360_say ) 
-notice_multiline ( gameforge . flame_dungeon . _350_say , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _360_say , d . notice ) 
+say ( "[LC;1071]" ) 
+say ( "[LC;1072]" ) 
+notice_multiline ( "[LC;1071]" , d . notice ) 
+notice_multiline ( "[LC;1072]" , d . notice ) 
 d . kill_unique ( "door5" ) 
 d . kill_unique ( "idoor5" ) 
 d . setf ( "level" , 15 ) 
@@ -129,21 +129,21 @@ end
 end 
 end 
 elseif d . getf ( "level" ) == 15 then 
-say ( gameforge . flame_dungeon . _370_say ) 
+say ( "[LC;1073]" ) 
 elseif d . getf ( "level" ) == 6 then 
-say ( gameforge . flame_dungeon . _380_say ) 
-notice_multiline ( gameforge . flame_dungeon . _380_say , d . notice ) 
+say ( "[LC;1074]" ) 
+notice_multiline ( "[LC;1074]" , d . notice ) 
 d . setf ( "level" , 16 ) 
 d . kill_unique ( "door6" ) 
 d . kill_unique ( "idoor6" ) 
 d . set_regen_file ( "data/dungeon/flame_dungeon/" .. "fd_f.txt" ) 
 d . spawn_mob ( 8057 , setting . LEVEL6_TARGET_pos [ 1 ] , setting . LEVEL6_TARGET_pos [ 2 ] ) 
 elseif d . getf ( "level" ) == 16 then 
-say ( gameforge . flame_dungeon . _390_say ) 
-say ( gameforge . flame_dungeon . _400_say ) 
+say ( {} ) 
+say ( "[LC;1075]" ) 
 elseif d . getf ( "level" ) == 7 then 
 flame_dungeon . go_boss ( ) 
 else 
-say ( gameforge . flame_dungeon . _410_say ) 
+say ( {} ) 
 end 
 npc . unlock ( ) 

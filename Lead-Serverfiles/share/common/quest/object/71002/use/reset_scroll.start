@@ -1,12 +1,12 @@
-say_title ( gameforge . reset_scroll . _10_sayTitle ) 
-say ( gameforge . reset_scroll . _20_say ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;6772]" ) 
+say ( "[LC;6779]" ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == s then 
 return 
 end 
-say_title ( gameforge . reset_scroll . _30_sayTitle ) 
-say ( gameforge . reset_scroll . _40_say ) 
-local c = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;6780]" ) 
+say ( "[LC;6781]" ) 
+local c = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == c then 
 return 
 end 

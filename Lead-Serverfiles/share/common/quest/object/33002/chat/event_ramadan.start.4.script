@@ -1,24 +1,24 @@
 local setting = event_ramadan . setting ( ) 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
+say_title ( "[LC;887]" ) 
 say ( "" ) 
-say ( gameforge . event_ramadan . _330_say ) 
+say ( "[LC;919]" ) 
 wait ( ) 
 if pc . count_item ( setting . fruit ) >= 5 then 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
+say_title ( "[LC;887]" ) 
 say ( "" ) 
-say ( string . format ( gameforge . event_ramadan . _340_say , pc . count_item ( setting . fruit ) ) ) 
-say ( gameforge . event_ramadan . _350_say ) 
-local s = select ( gameforge . event_ramadan . _360_select_1 , gameforge . event_ramadan . _360_select_2 ) 
+say ( string . format ( "[LC;920;%d]" , pc . count_item ( setting . fruit ) ) ) 
+say ( "[LC;921]" ) 
+local s = select ( "[LC;922]" , "[LC;923]" ) 
 if 2 == s then 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
+say_title ( "[LC;887]" ) 
 say ( "" ) 
-say ( gameforge . event_ramadan . _370_say ) 
+say ( "[LC;924]" ) 
 return 
 end 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
+say_title ( "[LC;887]" ) 
 say ( "" ) 
-say ( gameforge . event_ramadan . _380_say ) 
-say_reward ( gameforge . event_ramadan . _390_sayReward ) 
+say ( "[LC;925]" ) 
+say_reward ( "[LC;926]" ) 
 say ( "" ) 
 if pc . count_item ( setting . fruit ) >= 5 and pc . count_item ( setting . fruit ) <= 10 then 
 pc . give_item2 ( setting . horse1 , 1 ) 
@@ -32,7 +32,7 @@ end
 pc . remove_item ( setting . fruit , pc . count_item ( setting . fruit ) ) 
 pc . setqf ( "fig_exchange" , 1 ) 
 else 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
+say_title ( "[LC;887]" ) 
 say ( "" ) 
-say ( gameforge . event_ramadan . _400_say ) 
+say ( "[LC;927]" ) 
 end 

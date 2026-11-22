@@ -1,16 +1,16 @@
 local setting = devilcatacomb_zone . setting ( ) 
 if item . vnum == setting . rag then 
 if not party . is_party ( ) then 
-say ( gameforge . devilcatacomb_zone . _170_say ) 
+say ( "[LC;651]" ) 
 return 
 elseif party . is_in_dungeon ( ) then 
-say ( gameforge . devilcatacomb_zone . _180_say ) 
+say ( "[LC;652]" ) 
 return 
 end 
 item . remove ( ) 
-say ( gameforge . devilcatacomb_zone . _190_say ) 
+say ( "[LC;653]" ) 
 wait ( ) 
-say ( gameforge . devilcatacomb_zone . _200_say ) 
+say ( "[LC;654]" ) 
 wait ( ) 
 d . new_jump_party ( setting . map_idx , setting . floor2_entry . x + setting . base . x , setting . floor2_entry . y + setting . base . y ) 
 d . setqf2 ( "devilcatacomb_zone" , "level" , 2 ) 

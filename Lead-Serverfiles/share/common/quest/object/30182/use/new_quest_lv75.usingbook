@@ -1,14 +1,14 @@
-local choosestory = select ( gameforge . new_quest_lv75 . _140_2_select , gameforge . new_quest_lv75 . _140_3_select , gameforge . new_quest_lv75 . _140_4_select , gameforge . new_quest_lv75 . _140_5_select , gameforge . new_quest_lv75 . _140_6_select ) 
+local choosestory = select ( "[LC;6166]" , "[LC;6167]" , "[LC;6168]" , "[LC;6169]" , "[LC;6170]" ) 
 if choosestory == 1 then 
-say ( gameforge . new_quest_lv75 . _160_1_say ) 
+say ( "[LC;6173]" ) 
 elseif choosestory == 2 then 
-say ( gameforge . new_quest_lv75 . _160_2_say ) 
+say ( "[LC;6174]" ) 
 elseif choosestory == 3 then 
-say ( gameforge . new_quest_lv75 . _160_3_say ) 
+say ( "[LC;6175]" ) 
 elseif choosestory == 4 then 
-say ( gameforge . new_quest_lv75 . _160_4_say ) 
+say ( "[LC;6176]" ) 
 elseif choosestory == 5 then 
-say ( gameforge . new_quest_lv75 . _160_5_say ) 
+say ( "[LC;6177]" ) 
 else 
 addimage ( 20 , 12 , test . tga ) 
 end 

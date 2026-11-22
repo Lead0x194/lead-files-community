@@ -7,7 +7,7 @@ pc . setf ( "dragon_soul" , "eye_left" , eye_left - 1 )
 pc . remove_item ( 30270 , 10 ) 
 pc . give_item2 ( 50255 ) 
 if 1 == eye_left then 
-notice_multiline ( gameforge . dragon_soul . _1110_notice , notice ) 
+notice_multiline ( "[LC;774]" , notice ) 
 set_state ( "state_closed_season" ) 
 end 
 end 

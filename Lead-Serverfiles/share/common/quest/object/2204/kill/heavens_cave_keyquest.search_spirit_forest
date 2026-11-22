@@ -1,11 +1,11 @@
 if pc . get_map_index ( ) == 62 and pc . count_item ( pc . getqf ( "heavens_cave_keyquest_VolcanicGlass" ) ) < pc . getqf ( "heavens_cave_keyquest_NeededGlassAmount" ) then 
 if math . random ( 1 , 100 ) <= 20 then 
-notice_multiline ( gameforge . heavens_cave_keyquest . _260_notice , notice ) 
+notice_multiline ( "[LC;1533]" , notice ) 
 pc . give_item2 ( pc . getqf ( "heavens_cave_keyquest_VolcanicGlass" ) ) 
 local c = pc . getqf ( "glass_collected" ) + 1 
 pc . setqf ( "glass_collected" , c ) 
 if pc . count_item ( pc . getqf ( "heavens_cave_keyquest_VolcanicGlass" ) ) >= pc . getqf ( "heavens_cave_keyquest_NeededGlassAmount" ) then 
-notice_multiline ( gameforge . heavens_cave_keyquest . _270_notice , notice ) 
+notice_multiline ( "[LC;1534]" , notice ) 
 if pc . count_item ( pc . getqf ( "heavens_cave_keyquest_FrozenTear" ) ) >= pc . getqf ( "heavens_cave_keyquest_NeededTearsAmount" ) then 
 q . done ( ) 
 set_state ( "tears_for_seon" ) 

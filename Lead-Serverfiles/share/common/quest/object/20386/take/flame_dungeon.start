@@ -2,18 +2,18 @@ if flame_dungeon . is_flamed ( pc . get_map_index ( ) ) and item . vnum == 30329
 if i == 1 then 
 npc . purge ( ) 
 item . remove ( ) 
-notice_multiline ( gameforge . flame_dungeon . _440_notice , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _430_notice , d . notice ) 
+notice_multiline ( "[LC;1078]" , d . notice ) 
+notice_multiline ( "[LC;1077]" , d . notice ) 
 flame_dungeon . level_clear ( ) 
 else 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _450_say ) 
+say ( "[LC;1079]" ) 
 end 
  return end if flame_dungeon . is_flamed ( d . get_map_index ( ) ) and item . vnum == 30330 and d . getf ( "level" ) == 15 then local setting = flame_dungeon . setting ( ) 
 if npc . get_vid ( ) == d . get_unique_vid ( "stone5_1" ) then 
 npc . purge ( ) 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _470_say ) 
+say ( "[LC;1081]" ) 
 d . setf ( "stonekill" , 2 ) 
 if d . count_monster ( ) < 100 then 
 d . regen_file ( "data/dungeon/flame_dungeon/" .. "fd_e.txt" ) 
@@ -22,77 +22,77 @@ elseif npc . get_vid ( ) == d . get_unique_vid ( "stone5_2" ) then
 if d . getf ( "stonekill" ) == 2 then 
 npc . purge ( ) 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _480_say ) 
+say ( "[LC;1082]" ) 
 d . setf ( "stonekill" , 3 ) 
 if d . count_monster ( ) < 100 then 
 d . regen_file ( "data/dungeon/flame_dungeon/" .. "fd_e.txt" ) 
 end 
 else 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _490_say ) 
+say ( "[LC;1083]" ) 
 end 
 elseif npc . get_vid ( ) == d . get_unique_vid ( "stone5_3" ) then 
 if d . getf ( "stonekill" ) == 3 then 
 npc . purge ( ) 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _500_say ) 
+say ( "[LC;1084]" ) 
 d . setf ( "stonekill" , 4 ) 
 if d . count_monster ( ) < 100 then 
 d . regen_file ( "data/dungeon/flame_dungeon/" .. "fd_e.txt" ) 
 end 
 else 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _490_say ) 
+say ( "[LC;1083]" ) 
 end 
 elseif npc . get_vid ( ) == d . get_unique_vid ( "stone5_4" ) then 
 if d . getf ( "stonekill" ) == 4 then 
 npc . purge ( ) 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _510_say ) 
+say ( "[LC;1085]" ) 
 d . setf ( "stonekill" , 5 ) 
 if d . count_monster ( ) < 100 then 
 d . regen_file ( "data/dungeon/flame_dungeon/" .. "fd_e.txt" ) 
 end 
 else 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _490_say ) 
+say ( "[LC;1083]" ) 
 end 
 elseif npc . get_vid ( ) == d . get_unique_vid ( "stone5_5" ) then 
 if d . getf ( "stonekill" ) == 5 then 
 npc . purge ( ) 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _520_say ) 
+say ( "[LC;1086]" ) 
 d . setf ( "stonekill" , 6 ) 
 if d . count_monster ( ) < 100 then 
 d . regen_file ( "data/dungeon/flame_dungeon/" .. "fd_e.txt" ) 
 end 
 else 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _490_say ) 
+say ( "[LC;1083]" ) 
 end 
 elseif npc . get_vid ( ) == d . get_unique_vid ( "stone5_6" ) then 
 if d . getf ( "stonekill" ) == 6 then 
 npc . purge ( ) 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _530_say ) 
+say ( "[LC;1087]" ) 
 d . setf ( "stonekill" , 7 ) 
 if d . count_monster ( ) < 100 then 
 d . regen_file ( "data/dungeon/flame_dungeon/" .. "fd_e.txt" ) 
 end 
 else 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _490_say ) 
+say ( "[LC;1083]" ) 
 end 
 else 
 if d . getf ( "stonekill" ) == 7 then 
 npc . purge ( ) 
 item . remove ( ) 
-notice_multiline ( gameforge . flame_dungeon . _440_notice , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _430_notice , d . notice ) 
+notice_multiline ( "[LC;1078]" , d . notice ) 
+notice_multiline ( "[LC;1077]" , d . notice ) 
 flame_dungeon . level_clear ( ) 
 else 
 item . remove ( ) 
-say ( gameforge . flame_dungeon . _490_say ) 
+say ( "[LC;1083]" ) 
 end 
 end 
  return end 

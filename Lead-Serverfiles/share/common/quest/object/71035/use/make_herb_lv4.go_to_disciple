@@ -1,11 +1,11 @@
 if pc . getqf ( "drink_drug" ) == 1 then 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
-say ( gameforge . collect_herb_lv4 . _80_say ) 
+say_title ( "[LC;138]" ) 
+say ( "[LC;203]" ) 
 return 
 end 
 if pc . count_item ( 50701 ) == 0 then 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
-say ( gameforge . collect_herb_lv4 . _90_say ) 
+say_title ( "[LC;138]" ) 
+say ( "[LC;204]" ) 
 return 
 end 
 pc . remove_item ( 71035 , 1 ) 

@@ -1,6 +1,6 @@
 local kingVid = game . get_event_flag ( "king_vid" ) 
 local remain_egg = game . get_event_flag ( "remain_egg" .. get_channel_id ( ) ) 
-notice_multiline ( gameforge . spider_dungeon_3floor_boss . _420_notice , notice_in_map ) 
+notice_multiline ( "[LC;6958]" , notice_in_map ) 
 if remain_egg > 0 then 
 remain_egg = remain_egg - 1 
 game . set_event_flag ( "remain_egg" .. get_channel_id ( ) , remain_egg ) 

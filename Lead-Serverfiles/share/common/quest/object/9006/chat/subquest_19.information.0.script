@@ -1,28 +1,28 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . fortune_telling . _100_sayTitle ) 
-say ( gameforge . subquest_19 . _20_say ) 
-local b = select ( gameforge . subquest_19 . _30_select , gameforge . subquest_17 . _50_select ) 
+say_title ( "[LC;1118]" ) 
+say ( "[LC;7487]" ) 
+local b = select ( "[LC;7498]" , "[LC;7434]" ) 
 if 2 == b then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . subquest_19 . _40_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;7499]" ) 
 else 
-say_title ( gameforge . fortune_telling . _100_sayTitle ) 
-say ( gameforge . subquest_19 . _50_say ) 
+say_title ( "[LC;1118]" ) 
+say ( "[LC;7500]" ) 
 end 
-local r = select ( gameforge . find_brother_article . _90_select , gameforge . find_brother_article . _100_select ) 
+local r = select ( "[LC;971]" , "[LC;931]" ) 
 if 2 == r then 
-say ( gameforge . subquest_19 . _60_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7501]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . subquest_19 . _70_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;7502]" ) 
 return 
 end 
 say_pc_name ( ) 
-say ( gameforge . subquest_19 . _80_say ) 
+say ( "[LC;7503]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
 say_pc_name ( ) 
-say ( gameforge . subquest_19 . _90_say ) 
+say ( "[LC;7504]" ) 
 set_state ( "find" ) 

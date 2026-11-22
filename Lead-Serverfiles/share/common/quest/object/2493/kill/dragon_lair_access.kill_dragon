@@ -2,7 +2,7 @@ if pc . get_map_index ( ) == 208 then char_log ( pc . get_player_id ( ) , "LAIR"
 game . set_event_flag ( "dragon_lair_alive" , 0 ) 
 game . drop_item_with_ownership ( 71123 , 1 ) 
 game . drop_item_with_ownership ( 71129 , 1 ) 
-notice_multiline ( string . format ( gameforge . dragon_lair_access . _180_notice , pc . name ) , notice_all ) 
+notice_multiline ( string . format ( "[LC;728;%s]" , pc . name ) , notice_all ) 
 local settings = dragon_lair_access . get_settings ( ) 
 purge_area ( settings . room_area . first . x , settings . room_area . first . y , settings . room_area . last . x , settings . room_area . last . y ) 
  return end 

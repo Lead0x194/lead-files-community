@@ -1,48 +1,48 @@
 if pc . get_level ( ) < 50 then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say ( gameforge . item_change_sex . _10_sayReward ) 
+say_title ( "[LC;78]" ) 
+say ( "[LC;1785]" ) 
 return 
 end 
 if pc . is_engaged ( ) then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say ( gameforge . item_change_sex . _30_sayReward ) 
+say_title ( "[LC;78]" ) 
+say ( "[LC;1793]" ) 
 return 
 end 
 if pc . is_married ( ) then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say ( gameforge . item_change_sex . _30_sayReward ) 
+say_title ( "[LC;78]" ) 
+say ( "[LC;1793]" ) 
 return 
 end 
 if pc . is_polymorphed ( ) then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say ( gameforge . item_change_sex . _60_sayReward ) 
+say_title ( "[LC;78]" ) 
+say ( "[LC;1796]" ) 
 return 
 end 
 if get_time ( ) < pc . getqf ( "next_time" ) then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say ( gameforge . item_change_sex . _80_sayReward ) 
-say ( gameforge . item_change_sex . _90_say ) 
+say_title ( "[LC;78]" ) 
+say ( "[LC;1798]" ) 
+say ( "[LC;1799]" ) 
 if pc . is_gm ( ) then 
-say ( string . format ( gameforge . item_change_sex . _100_say , time_to_str ( pc . getqf ( "next_time" ) ) ) ) 
-say ( gameforge . item_change_sex . _110_say ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( string . format ( "[LC;1784;%s]" , time_to_str ( pc . getqf ( "next_time" ) ) ) ) 
+say ( "[LC;1786]" ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if s == 1 then 
-say ( gameforge . change_empire . _80_say ) 
+say ( "[LC;81]" ) 
 pc . setqf ( "next_time" , 0 ) 
 end 
 end 
 return 
 end 
-say_title ( gameforge . item_change_sex . _120_sayTitle ) 
-say ( gameforge . item_change_sex . _130_say ) 
+say_title ( "[LC;1787]" ) 
+say ( "[LC;1788]" ) 
 wait ( ) 
-say_title ( gameforge . item_change_sex . _120_sayTitle ) 
-say ( gameforge . item_change_sex . _140_say ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;1787]" ) 
+say ( "[LC;1789]" ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 1 == s then 
-say_title ( gameforge . item_change_sex . _120_sayTitle ) 
-say ( gameforge . item_change_sex . _150_say ) 
-say_reward ( gameforge . change_empire . _230_sayReward ) 
+say_title ( "[LC;1787]" ) 
+say ( "[LC;1790]" ) 
+say_reward ( "[LC;71]" ) 
 pc . remove_item ( "71048" , 1 ) 
 pc . setqf ( "next_time" , get_time ( ) + 86400 * 3 ) 
 pc . change_sex ( ) 
@@ -53,5 +53,5 @@ else
 char_log ( 0 , "CHANGE_SEX" , "M -> F" ) 
 end 
 elseif 2 == s then 
-say ( gameforge . item_change_sex . _160_say ) 
+say ( "[LC;1791]" ) 
 end 

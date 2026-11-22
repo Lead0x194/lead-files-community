@@ -1,6 +1,6 @@
 if d . select ( get_server_timer_arg ( ) ) then 
 if d . count_monster ( ) == 0 then 
-say_in_map ( get_server_timer_arg ( ) , gameforge . devilcatacomb_zone . _320_say ) 
+say_in_map ( get_server_timer_arg ( ) , "[LC;668]" ) 
 server_timer ( "devilcatacomb_floor7_timer" , 3 , get_server_timer_arg ( ) ) 
 else 
 server_timer ( "floor6_eli_check_timer_1" , 5 , get_server_timer_arg ( ) ) 

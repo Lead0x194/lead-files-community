@@ -1,5 +1,5 @@
 if number ( 1 , 100 ) == 1 then 
 pc . give_item2 ( 31039 , 1 ) 
-notice_multiline ( gameforge . main_quest_lv96 . _620_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv96 . _620_2_notice , notice ) 
+notice_multiline ( "[LC;5299]" , notice ) 
+notice_multiline ( "[LC;5300]" , notice ) 
 end 

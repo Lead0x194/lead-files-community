@@ -14,7 +14,7 @@ pc . warp ( setting . dungeon_entry_pos [ 1 ] * 100 , setting . dungeon_entry_po
 end 
 else 
 say_title ( mob_name ( 20394 ) ) 
-say ( gameforge . flame_dungeon . _590_say ) 
+say ( "[LC;1093]" ) 
 end 
 else 
 local pids = { party . get_member_pids ( ) } 
@@ -44,7 +44,7 @@ q . end_other_pc_block ( )
 end 
 if not ticketCheck then 
 say_title ( mob_name ( 20394 ) ) 
-say ( gameforge . flame_dungeon . _610_say ) 
+say ( "[LC;1095]" ) 
 for i , name in next , noTicketMembers , nil begin 
 say ( color ( 1 , 1 , 0 ) , "    " .. name ) 
 end 
@@ -56,27 +56,27 @@ end
 end 
 if not levelCheck then 
 say_title ( mob_name ( 20394 ) ) 
-say ( gameforge . flame_dungeon . _630_say ) 
+say ( "[LC;1096]" ) 
 for i , name in next , notEnoughLevelMembers , nil begin 
 say ( color ( 1 , 1 , 0 ) , "    " .. name ) 
 end 
 return 
 end 
 if party . is_leader ( ) then 
-say ( gameforge . flame_dungeon . _120_say ) 
-local warp = select ( gameforge . flame_dungeon . _130_select , gameforge . flame_dungeon . _140_select ) 
+say ( "[LC;1050]" ) 
+local warp = select ( "[LC;1051]" , "[LC;1052]" ) 
 if warp == 1 then 
 if party . is_map_member_flag_lt ( "exit_time" , get_global_time ( ) - 30 * 60 ) then 
 flame_dungeon . make_dungeon ( ) 
 else 
-say ( gameforge . flame_dungeon . _600_say ) 
+say ( "[LC;1094]" ) 
 end 
 end 
 party . setf ( "flame_dungeon_boss_kill_count" , 0 ) 
 else 
-say ( gameforge . flame_dungeon . _150_say ) 
+say ( "[LC;1053]" ) 
 end 
 end 
 else 
-say ( gameforge . flame_dungeon . _160_say ) 
+say ( "[LC;1054]" ) 
 end 

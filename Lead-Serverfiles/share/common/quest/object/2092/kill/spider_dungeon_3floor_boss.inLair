@@ -1,3 +1,3 @@
 server_timer ( "spider_dead_timer" , 180 ) 
 game . set_event_flag ( "spider_dead" .. get_channel_id ( ) , 1 ) 
-notice_multiline ( gameforge . spider_dungeon_3floor_boss . _400_say , notice_in_map ) 
+notice_multiline ( "[LC;6955]" , notice_in_map ) 

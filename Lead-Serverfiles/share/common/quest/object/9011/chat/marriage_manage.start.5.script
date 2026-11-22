@@ -1,27 +1,27 @@
 if not npc . lock ( ) then 
-say_title ( gameforge . marriage_manage . _490_sayTitle ) 
-say ( gameforge . marriage_manage . _590_say ) 
+say_title ( "[LC;5528]" ) 
+say ( "[LC;5539]" ) 
 return 
 end 
-say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _600_say ) 
-local s = select ( gameforge . marriage_manage . _610_select , gameforge . marriage_manage . _620_select ) 
+say_title ( "[LC;5521]" ) 
+say ( "[LC;5540]" ) 
+local s = select ( "[LC;5542]" , "[LC;5543]" ) 
 if s == 2 then 
 local u_vid = marriage . find_married_vid ( ) 
 if u_vid == 0 then 
-say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _630_say ) 
+say_title ( "[LC;5521]" ) 
+say ( "[LC;5544]" ) 
 npc . unlock ( ) 
 return 
 end 
-say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _640_say ) 
-local ok_sign = confirm ( u_vid , gameforge . marriage_manage . _650_confirm_chat , 30 ) 
+say_title ( "[LC;5521]" ) 
+say ( "[LC;5545]" ) 
+local ok_sign = confirm ( u_vid , "[LC;5546]" , 30 ) 
 if ok_sign == CONFIRM_OK then 
 marriage . end_wedding ( ) 
 else 
-say_title ( gameforge . marriage_manage . _490_sayTitle ) 
-say ( gameforge . marriage_manage . _660_say ) 
+say_title ( "[LC;5528]" ) 
+say ( "[LC;5547]" ) 
 end 
 end 
 npc . unlock ( ) 

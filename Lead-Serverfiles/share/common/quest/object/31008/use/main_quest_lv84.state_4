@@ -4,5 +4,5 @@ party . give_buff ( 303 , POINT_CASTING_SPEED , 20 , 0 , 1800 , 0 , true , true 
 party . give_buff ( 303 , POINT_ATTBONUS_MONSTER , 30 , 0 , 1800 , 0 , true , true ) 
 party . give_buff ( 303 , POINT_MAX_HP_PCT , 10 , 0 , 1800 , 0 , true , true ) 
 party . give_buff ( 303 , POINT_MAX_SP_PCT , 10 , 0 , 1800 , 0 , true , true ) 
-say ( gameforge . main_quest_lv84 . _80_say ) 
+say ( "[LC;4733]" ) 
  return end 

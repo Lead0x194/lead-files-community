@@ -1,13 +1,13 @@
 if get_time ( ) < pc . getqf ( "duration" ) then 
-say ( gameforge . collect_quest_lv85 . _110_say ) 
+say ( "[LC;451]" ) 
 return 
 end 
 if pc . getqf ( "drink_drug" ) == 1 then 
-say ( gameforge . collect_quest_lv85 . _115_say ) 
+say ( "[LC;452]" ) 
 return 
 end 
 if pc . count_item ( 30167 ) == 0 then 
-say ( gameforge . collect_quest_lv85 . _120_say ) 
+say ( "[LC;453]" ) 
 return 
 end 
 pc . remove_item ( 71035 , 1 ) 

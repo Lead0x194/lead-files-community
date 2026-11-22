@@ -3,7 +3,7 @@ if number ( 1 , 5 ) == 1 then
 if pc . count_item ( 31037 ) < 1 then 
 pc . give_item2 ( 31037 , 1 ) 
 end 
-notice_multiline ( gameforge . main_quest_lv95 . _260_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv95 . _260_2_notice , notice ) 
+notice_multiline ( "[LC;5193]" , notice ) 
+notice_multiline ( "[LC;5194]" , notice ) 
 end 
 end 

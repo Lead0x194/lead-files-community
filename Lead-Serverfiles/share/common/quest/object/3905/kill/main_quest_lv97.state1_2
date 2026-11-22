@@ -1,10 +1,10 @@
 if pc . count_item ( 31074 ) < 1 then 
 pc . give_item2 ( 31074 , 1 ) 
 end 
-notice_multiline ( gameforge . main_quest_lv97 . _100_notice , notice ) 
-say ( gameforge . main_quest_lv97 . _110_say ) 
+notice_multiline ( "[LC;5311]" , notice ) 
+say ( "[LC;5312]" ) 
 say ( "" ) 
 wait ( ) 
-say ( gameforge . main_quest_lv97 . _120_say ) 
+say ( "[LC;5313]" ) 
 say ( "" ) 
 set_state ( "state1_3" ) 

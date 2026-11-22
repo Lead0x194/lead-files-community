@@ -1,11 +1,11 @@
 if pc . countitem ( diarypage ) > 3 and pc . countitem ( diarypage ) <= 6 then 
-say ( gameforge . new_quest_lv75 . _160_1_say ) 
+say ( "[LC;6173]" ) 
 elseif pc . countitem ( diarypage ) > 6 and pc . countitem ( diarypage ) <= 9 then 
-say ( gameforge . new_quest_lv75 . _160_2_say ) 
+say ( "[LC;6174]" ) 
 elseif pc . countitem ( diarypage ) > 9 and pc . countitem ( diarypage ) <= 12 then 
-say ( gameforge . new_quest_lv75 . _160_3_say ) 
+say ( "[LC;6175]" ) 
 elseif pc . countitem ( diarypage ) > 12 and pc . countitem ( diarypage ) <= 15 then 
-say ( gameforge . new_quest_lv75 . _160_4_say ) 
+say ( "[LC;6176]" ) 
 else 
-say ( gameforge . new_quest_lv75 . _150_say ) 
+say ( "[LC;6172]" ) 
 end 

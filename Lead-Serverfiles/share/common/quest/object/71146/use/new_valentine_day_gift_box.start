@@ -8,7 +8,7 @@ item . remove ( )
 else 
 item . set_socket ( 0 , n + 1 ) 
 end 
-syschat ( string . format ( gameforge . new_christmas_gift_box . _010_say , 10 , 9 - n ) ) 
+syschat ( string . format ( "[LC;5618;%d;%d]" , 10 , 9 - n ) ) 
 else 
-syschat ( string . format ( gameforge . new_christmas_gift_box . _020_say , 31 - t / 60 ) ) 
+syschat ( string . format ( "[LC;5619;%d]" , 31 - t / 60 ) ) 
 end 

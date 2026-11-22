@@ -15,8 +15,8 @@ if remain2 < 0 then
 remain2 = 0 
 end 
 q . set_counter_value ( remain1 + remain2 ) 
-notice_multiline ( gameforge . main_quest_lv96 . _230_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv96 . _230_2_notice , notice ) 
+notice_multiline ( "[LC;5263]" , notice ) 
+notice_multiline ( "[LC;5264]" , notice ) 
 set_state ( "state2_3" ) 
 end 
 end 

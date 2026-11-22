@@ -1,5 +1,5 @@
 local settings = dragon_lair_weekly . set_settings ( ) 
-local time_to_wait = pc . getqf ( "lasttime" ) - get_global_time ( ) + settings . cooldown_time say_title ( gameforge . dragon_lair_weekly . _020_sayTitle ) 
+local time_to_wait = pc . getqf ( "lasttime" ) - get_global_time ( ) + settings . cooldown_time say_title ( "[LC;731]" ) 
 if time_to_wait < 0 then 
 local item_to_hunt = pc . getqf ( "item_to_hunt" ) 
 local amount_to_hunt = pc . getqf ( "amount_to_hunt" ) 
@@ -10,16 +10,16 @@ amount_to_hunt = settings . amount_to_hunt [ table_number ]
 pc . setqf ( "item_to_hunt" , item_to_hunt ) 
 pc . setqf ( "amount_to_hunt" , amount_to_hunt ) 
 end 
-say ( string . format ( gameforge . dragon_lair_weekly . _030_say , amount_to_hunt ) ) 
+say ( string . format ( "[LC;732;%s]" , amount_to_hunt ) ) 
 say_item_vnum ( item_to_hunt ) 
-say ( gameforge . dragon_lair_weekly . _040_say ) 
-local accept = select ( gameforge . dragon_lair_weekly . _050_select , gameforge . dragon_lair_weekly . _060_select ) 
+say ( "[LC;733]" ) 
+local accept = select ( "[LC;734]" , "[LC;735]" ) 
 if accept == 1 then 
 set_state ( "hunt_item" ) 
 else 
-say_title ( gameforge . dragon_lair_weekly . _020_sayTitle ) 
-say ( gameforge . dragon_lair_weekly . _070_say ) 
+say_title ( "[LC;731]" ) 
+say ( "[LC;736]" ) 
 end 
 else 
-say ( string . format ( gameforge . dragon_lair_weekly . _080_say , get_time_remaining ( time_to_wait ) ) ) 
+say ( string . format ( "[LC;737;%s]" , get_time_remaining ( time_to_wait ) ) ) 
 end 

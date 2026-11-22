@@ -1,9 +1,9 @@
 local setting = devilcatacomb_zone . setting ( ) 
 if d . is_unique_dead ( "real" ) then 
-d . notice ( gameforge . devilcatacomb_zone . _280_dNotice ) 
+d . notice ( "[LC;663]" ) 
 d . setf ( "level" , 4 ) 
 d . setqf2 ( "devilcatacomb_zone" , "level" , 4 ) 
 timer ( "devilcatacomb_floor4_enter_timer" , 3 ) 
 else 
-d . notice ( gameforge . devilcatacomb_zone . _290_dNotice ) 
+d . notice ( "[LC;664]" ) 
 end 

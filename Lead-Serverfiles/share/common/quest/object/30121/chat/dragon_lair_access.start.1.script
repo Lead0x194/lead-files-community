@@ -1,6 +1,6 @@
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _115_say ) 
-local warp = select ( gameforge . dragon_lair_access . _116_select , gameforge . dragon_lair_access . _117_select ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;717]" ) 
+local warp = select ( "[LC;718]" , "[LC;719]" ) 
 if warp == 1 then 
 dragon_lair_access . warp_from_lair ( ) 
 set_state ( "start" ) 

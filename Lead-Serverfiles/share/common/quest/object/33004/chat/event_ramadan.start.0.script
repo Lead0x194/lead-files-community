@@ -1,22 +1,22 @@
 local setting = event_ramadan . setting ( ) 
 if pc . count_item ( setting . iftar ) == 0 then 
-say_title ( gameforge . event_ramadan . _230_sayTitle ) 
+say_title ( "[LC;908]" ) 
 say ( "" ) 
-say ( gameforge . event_ramadan . _240_say ) 
+say ( "[LC;909]" ) 
 elseif pc . count_item ( setting . iftar ) > 0 then 
-say_title ( gameforge . event_ramadan . _230_sayTitle ) 
+say_title ( "[LC;908]" ) 
 say ( "" ) 
-say ( gameforge . event_ramadan . _250_say ) 
-local s = select ( gameforge . event_ramadan . _260_select_1 , gameforge . event_ramadan . _260_select_2 ) 
+say ( "[LC;910]" ) 
+local s = select ( "[LC;911]" , "[LC;912]" ) 
 if 2 == s then 
-say_title ( gameforge . event_ramadan . _230_sayTitle ) 
+say_title ( "[LC;908]" ) 
 say ( "" ) 
-say ( gameforge . event_ramadan . _270_say ) 
+say ( "[LC;913]" ) 
 return 
 end 
-say_title ( gameforge . event_ramadan . _230_sayTitle ) 
+say_title ( "[LC;908]" ) 
 say ( "" ) 
-say ( gameforge . event_ramadan . _280_say ) 
+say ( "[LC;914]" ) 
 pc . give_item2 ( setting . box , 1 ) 
 pc . remove_item ( setting . iftar , 1 ) 
 end 

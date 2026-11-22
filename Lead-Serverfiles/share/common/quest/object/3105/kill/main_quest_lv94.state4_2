@@ -6,8 +6,8 @@ local remain2 = 3 - pc . getqf ( "mob4_2_count" )
 local remain3 = 1 - pc . getqf ( "mob4_3_count" ) 
 q . set_counter_value ( remain1 + remain2 + remain3 ) 
 if pc . getqf ( "mob4_1_count" ) >= 30 and pc . getqf ( "mob4_2_count" ) >= 3 and pc . getqf ( "mob4_3_count" ) >= 1 then 
-notice_multiline ( gameforge . main_quest_lv94 . _530_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv94 . _530_2_notice , notice ) 
+notice_multiline ( "[LC;5122]" , notice ) 
+notice_multiline ( "[LC;5123]" , notice ) 
 set_state ( "state4_3" ) 
 end 
 end 

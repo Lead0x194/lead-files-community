@@ -1,5 +1,5 @@
 if d . select ( get_server_timer_arg ( ) ) then 
-notice_multiline ( string . format ( gameforge . flame_dungeon . _180_notice , 1 ) , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _170_notice , d . notice ) 
+notice_multiline ( string . format ( "[LC;1056;%d]" , 1 ) , d . notice ) 
+notice_multiline ( "[LC;1055]" , d . notice ) 
 server_timer ( "flame_dungeon_0m_left_timer" , 60 , get_server_timer_arg ( ) ) 
 end 

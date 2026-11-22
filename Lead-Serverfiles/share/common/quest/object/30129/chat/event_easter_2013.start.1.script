@@ -6,17 +6,17 @@ local vnum_to_give = 0
 local number_of_eggs = event_easter_2013 . get_number_of_eggs ( ) 
 local wants_items = 2 
 while wants_items == 2 begin 
-say_title ( gameforge . event_easter . _020_sayTitle ) 
+say_title ( "[LC;850]" ) 
 vnum_to_give = event_easter_2013 . get_random_reward_vnum ( reward_table ) 
 local amount_needed = event_easter_2013 . get_reward_amount_for_vnum ( reward_table , vnum_to_give ) 
 if amount_needed == 20 then 
 amount_to_remove = 20 
 amount_to_give = 1 
-say ( gameforge . event_easter . _060_say ) 
-say ( string . format ( gameforge . event_easter . _065_say , amount_to_remove ) ) 
-say ( string . format ( gameforge . event_easter . _050_say , amount_to_give ) ) 
+say ( "[LC;856]" ) 
+say ( string . format ( "[LC;857;%d]" , amount_to_remove ) ) 
+say ( string . format ( "[LC;854;%d]" , amount_to_give ) ) 
 say_item_vnum ( vnum_to_give ) 
-say ( gameforge . event_easter . _100_say ) 
+say ( "[LC;862]" ) 
 else 
 if number_of_eggs > 20 then 
 amount_to_remove = 20 
@@ -28,18 +28,18 @@ amount_to_give = amount_to_remove * 3
 else 
 amount_to_give = amount_to_remove * 5 
 end 
-say ( gameforge . event_easter . _060_say ) 
-say ( string . format ( gameforge . event_easter . _055_say , event_easter_2013 . get_number_of_eggs ( ) ) ) 
-say ( string . format ( gameforge . event_easter . _050_say , amount_to_give ) ) 
+say ( "[LC;856]" ) 
+say ( string . format ( "[LC;855;%d]" , event_easter_2013 . get_number_of_eggs ( ) ) ) 
+say ( string . format ( "[LC;854;%d]" , amount_to_give ) ) 
 say_item_vnum ( vnum_to_give ) 
-say ( gameforge . event_easter . _100_say ) 
+say ( "[LC;862]" ) 
 end 
 end 
 if ( remove_item_range ( amount_to_remove , settings . eggvnums . first , settings . eggvnums . last ) ) then 
 pc . give_item2 ( vnum_to_give , amount_to_give ) 
 end 
-say_title ( gameforge . event_easter . _020_sayTitle ) 
-say ( gameforge . event_easter . _080_say ) 
+say_title ( "[LC;850]" ) 
+say ( "[LC;860]" ) 
 say ( "" ) 
 if not event_easter_2013 . has_rabbit ( ) then 
 npc . purge ( ) 

@@ -1,18 +1,18 @@
-say ( gameforge . subquest_19 . _150_say ) 
+say ( "[LC;7481]" ) 
 say_item_vnum ( 30151 ) 
-say ( gameforge . subquest_19 . _160_say ) 
-local s = select ( gameforge . subquest_19 . _170_select , gameforge . subquest_19 . _180_select ) 
+say ( "[LC;7482]" ) 
+local s = select ( "[LC;7483]" , "[LC;7484]" ) 
 if 2 == s then 
-say ( gameforge . subquest_19 . _190_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7485]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say ( gameforge . subquest_19 . _200_say ) 
+say ( "[LC;7486]" ) 
 return 
 end 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . subquest_19 . _210_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;7488]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . subquest_19 . _220_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;7489]" ) 

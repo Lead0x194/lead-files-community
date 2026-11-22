@@ -1,26 +1,26 @@
 if pc . get_level ( ) < 35 then 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . energy_system . _080_say ) 
+say ( "[LC;805]" ) 
 return 
 end 
 local item_vnum = item . vnum local levelLimit = item . get_level_limit ( item_vnum ) 
 local setting = energy_system . setting ( ) 
 if levelLimit == nil then 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . energy_system . _090_say ) 
+say ( "[LC;806]" ) 
 wait ( ) 
 elseif item . get_type ( ) == ITEM_WEAPON and item . get_sub_type ( ) == WEAPON_ARROW then 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . energy_system . _090_say ) 
+say ( "[LC;806]" ) 
 wait ( ) 
 elseif levelLimit < 35 then 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . energy_system . _100_say ) 
+say ( "[LC;807]" ) 
 else 
 say_title ( mob_name ( 20001 ) ) 
 say ( item_name ( item_vnum ) ) 
-say ( gameforge . energy_system . _110_say ) 
-local s = select ( gameforge . energy_system . _120_select , gameforge . energy_system . _130_select ) 
+say ( "[LC;808]" ) 
+local s = select ( "[LC;809]" , "[LC;810]" ) 
 if s == 1 then 
 item . remove ( ) 
 local r = number ( 1 , 100 ) 
@@ -34,11 +34,11 @@ n = energy_system . getItemNum ( "upto70" , r )
 end 
 if ( n == 0 ) then 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . energy_system . _140_say ) 
+say ( "[LC;811]" ) 
 else 
 pc . give_item2 ( setting . energy_stone , n ) 
 say_title ( mob_name ( 20001 ) ) 
-say ( string . format ( gameforge . energy_system . _150_say , n ) ) 
+say ( string . format ( "[LC;812;%d]" , n ) ) 
 end 
 end 
 end 

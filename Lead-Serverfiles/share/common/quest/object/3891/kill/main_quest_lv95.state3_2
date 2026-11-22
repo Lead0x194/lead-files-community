@@ -1,5 +1,5 @@
-notice_multiline ( gameforge . main_quest_lv95 . _400_notice , notice ) 
-say ( gameforge . main_quest_lv95 . _410_say ) 
+notice_multiline ( "[LC;5207]" , notice ) 
+say ( "[LC;5208]" ) 
 wait ( ) 
-say ( gameforge . main_quest_lv95 . _420_say ) 
+say ( "[LC;5209]" ) 
 set_state ( "state3_3" ) 

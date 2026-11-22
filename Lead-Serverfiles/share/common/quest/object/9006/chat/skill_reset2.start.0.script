@@ -1,39 +1,39 @@
 if pc . level < 5 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . skill_reset2 . _20_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;6910]" ) 
 return 
 end 
 if pc . level > 30 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( string . format ( gameforge . skill_reset2 . _30_say , pc . level ) ) 
+say_title ( "[LC;617]" ) 
+say ( string . format ( "[LC;6911;%s]" , pc . level ) ) 
 return 
 end 
 if pc . get_skill_group ( ) == 0 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . skill_reset2 . _40_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;6912]" ) 
 return 
 end 
 local cost = 10000 + pc . level * 2000 
 local s = 0 
 if not pc . has_master_skill ( ) then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( string . format ( gameforge . skill_reset2 . _50_say , cost ) ) 
-s = select ( gameforge . skill_reset2 . _10_npcChat , gameforge . skill_reset2 . _60_select ) 
+say_title ( "[LC;617]" ) 
+say ( string . format ( "[LC;6913;%s]" , cost ) ) 
+s = select ( "[LC;6904]" , "[LC;6914]" ) 
 else 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . skill_reset2 . _70_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;6915]" ) 
 wait ( ) 
-say ( string . format ( gameforge . skill_reset2 . _80_say , cost ) ) 
-s = select ( gameforge . skill_reset2 . _90_select , gameforge . locale . cancel ) 
+say ( string . format ( "[LC;6916;%s]" , cost ) ) 
+s = select ( "[LC;6917]" , "[LC;1891]" ) 
 end 
 if 2 == s then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . skill_reset2 . _110_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;6905]" ) 
 return 
 end 
 if pc . money < cost then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . skill_reset2 . _120_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;6906]" ) 
 return 
 end 
 pc . changegold ( - cost ) 

@@ -3,7 +3,7 @@ local starttime = game . get_event_flag ( "spider_lair_start_time_" .. get_chann
 local current_time = get_global_time ( ) 
 if party . get_leader_pid ( ) == game . get_event_flag ( "spider_lair_leader_" .. get_channel_id ( ) ) then 
 if starttime + 300 >= current_time and party . get_leader_pid ( ) == game . get_event_flag ( "spider_lair_leader_" .. get_channel_id ( ) ) and game . get_event_flag ( "spider_lair_ongoing_" .. get_channel_id ( ) ) == 1 then 
-say ( gameforge . spider_dungeon_3floor_boss . _300_say ) 
+say ( "[LC;6944]" ) 
 local warp = select ( locale . confirm , locale . cancel ) 
 if warp == 1 then 
 pc . warp ( 88100 , 614800 ) 

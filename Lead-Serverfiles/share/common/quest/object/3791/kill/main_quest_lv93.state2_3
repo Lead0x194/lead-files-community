@@ -2,8 +2,8 @@ if number ( 1 , 1000 ) == 1 then
 if pc . count_item ( 31030 ) < 1 then 
 pc . give_item2 ( 31030 , 1 ) 
 if pc . count_item ( 31030 ) >= 1 then 
-notice_multiline ( gameforge . main_quest_lv93 . _220_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv93 . _220_2_notice , notice ) 
+notice_multiline ( "[LC;5016]" , notice ) 
+notice_multiline ( "[LC;5017]" , notice ) 
 set_state ( "state2_3" ) 
 end 
 end 

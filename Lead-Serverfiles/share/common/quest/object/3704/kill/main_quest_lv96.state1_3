@@ -2,8 +2,8 @@ if pc . count_item ( 31038 ) < 100 then
 if number ( 1 , 50 ) == 1 then 
 pc . give_item2 ( 31038 , 1 ) 
 if pc . count_item ( 31038 ) >= 100 then 
-notice_multiline ( gameforge . main_quest_lv96 . _110_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv96 . _110_2_notice , notice ) 
+notice_multiline ( "[LC;5252]" , notice ) 
+notice_multiline ( "[LC;5253]" , notice ) 
 end 
 end 
 end 

@@ -1,11 +1,11 @@
 local setting = event_ramadan . setting ( ) 
 if get_time ( ) > pc . getqf ( "duration" ) then 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
+say_title ( "[LC;887]" ) 
 say ( "" ) 
-say ( gameforge . event_ramadan . _300_say ) 
+say ( "[LC;916]" ) 
 pc . give_item2 ( setting . fruit ) 
 pc . setqf ( "duration" , get_time ( ) + 60 * 60 * 24 ) 
 else 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _310_say ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;917]" ) 
 end 

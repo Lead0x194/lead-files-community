@@ -6,13 +6,13 @@ if pc . count_item ( settings . access_item ) >= settings . access_item_amount t
 if starttime + settings . group_time >= current_time then 
 local password_input ; 
 repeat 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _020_say ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;706]" ) 
 password_input = tonumber ( input ( ) ) 
 if password_input ~= game . get_event_flag ( "dragon_lair_password" ) then 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _030_say ) 
-local again = select ( gameforge . dragon_lair_access . _040_select , gameforge . locale . cancel ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;707]" ) 
+local again = select ( "[LC;708]" , "[LC;1891]" ) 
 if again == 2 then 
 return 
 end 
@@ -25,23 +25,23 @@ pc . setqf ( "time" , starttime )
 dragon_lair_access . warp_to_lair ( ) 
 set_state ( "kill_dragon" ) 
 elseif time_remaining < 0 and npc . lock ( ) then 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _050_say ) 
-local abort = select ( gameforge . dragon_lair_access . _060_select , gameforge . locale . cancel ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;709]" ) 
+local abort = select ( "[LC;710]" , "[LC;1891]" ) 
 if abort == 2 then 
 npc . unlock ( ) 
 return 
 end 
 local password_number ; 
 repeat 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _070_say ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;711]" ) 
 password_number = tonumber ( input ( ) ) 
 local again ; 
 if type ( password_number ) ~= "number" then 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _080_say ) 
-again = select ( gameforge . dragon_lair_access . _040_select , gameforge . locale . cancel ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;712]" ) 
+again = select ( "[LC;708]" , "[LC;1891]" ) 
 if again == 2 then 
 npc . unlock ( ) 
 return 
@@ -55,22 +55,22 @@ end
 if dragon_lair_access . get_time_remaining ( ) > 0 then 
 pc . give_item2 ( settings . access_item , settings . access_item_amount ) 
 npc . unlock ( ) 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _120_say ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;720]" ) 
 return 
 end 
 pc . setqf ( "password" , password_number ) 
 timer ( "dragon_lair_warptimer" , pc . get_channel_id ( ) * 2 ) 
 npc . unlock ( ) 
 else 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _120_say ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;720]" ) 
 return 
 end 
 else 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _100_say ) 
-say ( gameforge . dragon_lair_access . _105_say ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;714]" ) 
+say ( "[LC;715]" ) 
 say ( settings . access_item_amount .. "x: " ) 
 say_item_vnum ( settings . access_item ) 
 return 

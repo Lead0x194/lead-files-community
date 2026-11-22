@@ -6,7 +6,7 @@ end
 if pc . count_item ( 31040 ) < 1 then 
 pc . give_item2 ( 31040 , 1 ) 
 end 
-notice_multiline ( gameforge . main_quest_lv96 . _230_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv96 . _230_2_notice , notice ) 
+notice_multiline ( "[LC;5263]" , notice ) 
+notice_multiline ( "[LC;5264]" , notice ) 
 end 
 end 

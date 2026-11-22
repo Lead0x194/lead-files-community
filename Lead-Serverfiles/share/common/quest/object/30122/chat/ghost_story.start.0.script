@@ -1,69 +1,69 @@
 local maindialog = 0 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _320_say ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1200]" ) 
 repeat 
 if pc . getqf ( "know_warrior" ) == 1 then 
-maindialog = select ( gameforge . ghost_story . _350_npcChat , gameforge . ghost_story . _370_npcChat , gameforge . ghost_story . _390_npcChat , gameforge . ghost_story . _430_npcChat , gameforge . ghost_story . _480_npcChat ) 
+maindialog = select ( "[LC;1203]" , "[LC;1205]" , "[LC;1207]" , "[LC;1211]" , "[LC;1216]" ) 
 if maindialog == 1 then 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _360_say ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1204]" ) 
 wait ( ) 
 elseif maindialog == 2 then 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _380_say ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1206]" ) 
 wait ( ) 
 elseif maindialog == 3 then 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _400_say ) 
-storymode = select ( gameforge . locale . levelup . prev_quest_go , gameforge . ghost_story . _280_npcChat ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1208]" ) 
+storymode = select ( "[LC;2105]" , "[LC;1196]" ) 
 if storymode == 2 then 
 return 
 end 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _410_say ) 
-storymode = select ( gameforge . locale . levelup . prev_quest_go , gameforge . ghost_story . _280_npcChat ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1209]" ) 
+storymode = select ( "[LC;2105]" , "[LC;1196]" ) 
 if storymode == 2 then 
 return 
 end 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _420_say ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1210]" ) 
 wait ( ) 
 elseif maindialog == 4 then 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _440_say ) 
-storymode = select ( gameforge . locale . levelup . prev_quest_go , gameforge . ghost_story . _280_npcChat ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1212]" ) 
+storymode = select ( "[LC;2105]" , "[LC;1196]" ) 
 if storymode == 2 then 
 return 
 end 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _450_say ) 
-storymode = select ( gameforge . locale . levelup . prev_quest_go , gameforge . ghost_story . _280_npcChat ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1213]" ) 
+storymode = select ( "[LC;2105]" , "[LC;1196]" ) 
 if storymode == 2 then 
 return 
 end 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _460_say ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1214]" ) 
 wait ( ) 
 else 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _490_say ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1217]" ) 
 end 
 else 
-maindialog = select ( gameforge . ghost_story . _350_npcChat , gameforge . ghost_story . _040_npcChat ) 
+maindialog = select ( "[LC;1203]" , "[LC;1172]" ) 
 if maindialog == 1 then 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _360_say ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1204]" ) 
 wait ( ) 
-local subdialog1 = select ( gameforge . ghost_story . _370_npcChat ) 
+local subdialog1 = select ( "[LC;1205]" ) 
 if subdialog1 == 1 then 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _380_say ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1206]" ) 
 pc . setqf ( "know_warrior" , 1 ) 
 wait ( ) 
 end 
 else 
-say_title ( gameforge . ghost_story . _300_sayTitle ) 
-say ( gameforge . ghost_story . _050_say ) 
+say_title ( "[LC;1198]" ) 
+say ( "[LC;1173]" ) 
 maindialog = 5 
 end 
 end 

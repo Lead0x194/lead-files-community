@@ -7,9 +7,9 @@ remain = 0
 end 
 if remain == 0 then 
 say_title ( mob_name ( 3205 ) ) 
-say ( gameforge . main_quest_lv91 . _100_say ) 
-notice_multiline ( gameforge . main_quest_lv91 . _090_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv91 . _090_2_notice , notice ) 
+say ( "[LC;4867]" ) 
+notice_multiline ( "[LC;4865]" , notice ) 
+notice_multiline ( "[LC;4866]" , notice ) 
 set_state ( "state1_3" ) 
 end 
 end 

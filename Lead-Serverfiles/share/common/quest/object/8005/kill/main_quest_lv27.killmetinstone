@@ -1,4 +1,4 @@
-say_title ( gameforge . main_quest_lv27 . _10_makequestbutton ) 
-say ( gameforge . main_quest_lv27 . _90_say ) 
+say_title ( "[LC;4180]" ) 
+say ( "[LC;4192]" ) 
 setstate ( "gotoboss2" ) 
 q . done ( ) 

@@ -1,3 +1,3 @@
-if not pc . is_engaged ( ) and not pc . is_married ( ) then say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _1020_say ) 
+if not pc . is_engaged ( ) and not pc . is_married ( ) then say_title ( "[LC;5521]" ) 
+say ( "[LC;5483]" ) 
  return end 

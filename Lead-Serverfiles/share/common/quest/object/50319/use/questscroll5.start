@@ -1,6 +1,6 @@
 local s = 0 
 if is_test_server ( ) then 
-test_chat ( gameforge . questscroll5 . _40_chat ) 
+test_chat ( "[LC;6765]" ) 
 s = select ( 
 questscroll5 . get_menu ( 12 ) , 
 questscroll5 . get_menu ( 13 ) , 

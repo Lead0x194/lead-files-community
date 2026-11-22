@@ -1,32 +1,32 @@
-say_title ( gameforge . reset_scroll . _50_sayTitle ) 
-say ( gameforge . reset_scroll . _60_sayReward ) 
+say_title ( "[LC;6782]" ) 
+say ( "[LC;6783]" ) 
 wait ( ) 
 local result = BuildSkillList ( pc . get_job ( ) , pc . get_skill_group ( ) ) 
 local vnum_list = result [ 1 ] 
 local name_list = result [ 2 ] 
 if table . getn ( vnum_list ) < 2 then 
-say_title ( gameforge . reset_scroll . _50_sayTitle ) 
-say ( gameforge . reset_scroll . _70_say ) 
+say_title ( "[LC;6782]" ) 
+say ( "[LC;6784]" ) 
 return 
 end 
-say_title ( gameforge . reset_scroll . _50_sayTitle ) 
-say ( gameforge . reset_scroll . _80_say ) 
+say_title ( "[LC;6782]" ) 
+say ( "[LC;6785]" ) 
 local i = select_table ( name_list ) 
 if table . getn ( name_list ) == i then 
 return 
 end 
 local name = name_list [ i ] 
 local vnum = vnum_list [ i ] 
-say_title ( gameforge . reset_scroll . _50_sayTitle ) 
-say ( gameforge . reset_scroll . _90_sayReward ) 
-say_reward ( string . format ( gameforge . reset_scroll . _100_say , name ) ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;6782]" ) 
+say ( "[LC;6786]" ) 
+say_reward ( string . format ( "[LC;6771;%s]" , name ) ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == s then 
 return 
 end 
-say_title ( gameforge . reset_scroll . _110_sayTitle ) 
-say ( gameforge . reset_scroll . _120_say ) 
-local c = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;6773]" ) 
+say ( "[LC;6774]" ) 
+local c = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == c then 
 return 
 end 
@@ -36,5 +36,5 @@ char_log ( 0 , "RESET_ONE_SKILL" , "RESET_SKILL[" .. name .. "]" )
 pc . clear_one_skill ( vnum ) 
 char_log ( 0 , "RESET_ONE_SKILL" , "APPLY_17MASTER_BONUS" ) 
 pc . setqf ( "force_to_master_skill" , 1 ) 
-say_title ( gameforge . reset_scroll . _140_sayTitle ) 
-say_reward ( string . format ( gameforge . reset_scroll . _150_say , name ) ) 
+say_title ( "[LC;6776]" ) 
+say_reward ( string . format ( "[LC;6777;%s]" , name ) ) 
