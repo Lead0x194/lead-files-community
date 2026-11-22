@@ -1,8 +1,8 @@
-ACCEPT	Acceptere
+ACCEPT	OK
 ATTACH_METIN_INFO	Vil du bruge Åndestenen?
 ATTACH_METIN_TITLE	Brug Åndestenen
 CANCEL	Afbryd
-CHANGE_PASSWORD_CONFIRM	Bekræft nyt kodeord
+CHANGE_PASSWORD_CONFIRM	Bekræft Nyt Kodeord
 CHANGE_PASSWORD_NEW	Nyt kodeord
 CHANGE_PASSWORD_OLD	Gammelt kodeord
 CHANGE_PASSWORD_TITLE	Skift kodeord
@@ -32,7 +32,7 @@ CUBE_REQUIRE_MATERIAL	Nødvendige materialer
 CUBE_REQUIRE_MATERIAL_OR	eller
 CUBE_TITLE	Krydderikiste
 DESTROY	Ødelæg
-DO_REFINE	Forfin
+DO_REFINE	Forædle
 DRAGONSOUL_ACTIVATE	Aktiver
 DRAGONSOUL_PAGE_BUTTON_1	Uslebet
 DRAGONSOUL_PAGE_BUTTON_2	Slebet
@@ -51,7 +51,7 @@ EMPIRE_EXIT	Exit
 EMPIRE_NEXT	Fortsæt
 EMPIRE_PREV	Tilbage
 EMPIRE_SELECT	Vælg
-EXCHANGE_ACCEPT	Accepter
+EXCHANGE_ACCEPT	OK
 EXCHANGE_TITLE	Handle
 GAMEOPTION_TITLE	Spilindstillinger
 GAME_EXIT_OBSERVER	Afslut tilskuermode
@@ -63,7 +63,7 @@ GRADE	Klasse
 GRADE_SELECT	Klasse
 GUILD_BASENAME	Basisnavn
 GUILD_BOARD_ID	Navn
-GUILD_BOARD_REFRESH	Refresh (F5)
+GUILD_BOARD_REFRESH	Genindlæs
 GUILD_BOARD_TEXT	Besked
 GUILD_BUILDING_CATEGORY_TITLE	Bygnings enheder
 GUILD_BUILDING_CHANGE	Skift
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Krydsfiner
 GUILD_BUILDING_POSITION	Position
 GUILD_BUILDING_PREVIEW	Preview
 GUILD_BUILDING_PRICE	Pris
-GUILD_BUILDING_REFRESH	Refresh (F5)
+GUILD_BUILDING_REFRESH	Genindlæs
 GUILD_BUILDING_STONE	Sten
 GUILD_BUILDING_TITLE	Ordens-husplanlægning
 GUILD_CRYSTAL	Krystal
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Drop ressource
 GUILD_GEM	Ædelsten
 GUILD_GRADE_CHANGE_GRADE_NAME	Nyt rangnavn
 GUILD_GRADE_NUM	Nr.
-GUILD_GRADE_PERMISSION_DELETE	Kick
-GUILD_GRADE_PERMISSION_JOIN	Inviter
-GUILD_GRADE_PERMISSION_NOTICE	Skriv
-GUILD_GRADE_PERMISSION_SKILL	Færdigheder
+GUILD_GRADE_PERMISSION_DELETE	Fjern fra Orden
+GUILD_GRADE_PERMISSION_JOIN	Kan acceptere spillere til Ordenen
+GUILD_GRADE_PERMISSION_NOTICE	Kan sende Ordens beskeder
+GUILD_GRADE_PERMISSION_SKILL	Ordensfærdigheder
 GUILD_GRADE_RANK	Rang
 GUILD_GRADE_WRITE	Skriv
 GUILD_INFO	Ordensinformationer
@@ -111,7 +111,7 @@ GUILD_INFO_UPLOAD_MARK	Upload Ordenssymbol
 GUILD_INFO_UPLOAD_SYMBOL	Upload flag
 GUILD_MARK	Ordenssymbol
 GUILD_MEMBER_JOB	Klasse
-GUILD_MEMBER_KNIGHT	Leder
+GUILD_MEMBER_KNIGHT	Krigsdeltager
 GUILD_MEMBER_LEVEL	Level
 GUILD_MEMBER_NAME	Navn
 GUILD_MEMBER_RANK	Rang
@@ -140,8 +140,8 @@ HELP_ATTACK_KEY	Angrib: venstre muse-tast eller mellemrum
 HELP_CHANGE_PK_MODE	Skift angrebs type: skift indstilling på venstre muse-tast
 HELP_CHARACTER_BUTTON1	(Karakter-vindue, inventar-vindue,
 HELP_CHARACTER_BUTTON2	venneliste og indstillinger)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Kamera syn: mellem eller højre muse-tast
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Kamera syn: højre eller midterste muse-knap
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Standard kamerasyn: midterste musetast
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Alternativt kamerasyn: tildel venstre eller højre musetast
 HELP_EXP	Erfaring
 HELP_FURY	Ingame Itemshop
 HELP_GUILD_WINDOW	Åben Ordens-vinduet: Alt + G
@@ -160,7 +160,7 @@ HELP_OPEN_QUEST	Åben opgave vinduet: N
 HELP_OPEN_SKILL	Åben færdigheds vinduet: V
 HELP_OPEN_WHISPER	Åben hviske vinduet: Shift + Enter
 HELP_OPEN_ZONEMAP	Åben stort kort: M
-HELP_PICK_ITEM	Sammel genstande: Z eller ´ eller venstre muse-tast
+HELP_PICK_ITEM	Opsaml genstande: `eller Z eller venstre muse-tast
 HELP_QUICKSLOT	Hurtigmenu
 HELP_SCREEN_CAPTURE	Gem Screenshot: Prt Scr(bliver gemt i "Metin2_DK\screenshot")
 HELP_SHOW_ALL_NAME	Vis navne: Alt
@@ -178,12 +178,12 @@ LOGIN_SELECT_BUTTON	Vælg
 LOGIN_SELECT_EXIT	Afslut
 LOGIN_SELECT_TITLE	Vælg server
 MALL_PASSWORD_TITLE	Kodeord
-MALL_TITLE	Item-Shop Lager
+MALL_TITLE	Itemshop Lager
 MARKLIST_REFRESH	Aktualisér
 MARKLIST_TITLE	Registrer Ordenssymbol
 MESSAGE	Dette er en meddelelse
 MESSENGER_ADD_FRIEND	Tilføj ven
-MESSENGER_DELETE_FRIEND	Slet ven
+MESSENGER_DELETE_FRIEND	Slet
 MESSENGER_OPEN_GUILD	Åben Ordensvinduet
 MESSENGER_TITLE	Venner
 MESSENGER_WHISPER	Hviske

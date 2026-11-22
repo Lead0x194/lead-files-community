@@ -11,7 +11,7 @@ CANNOT_SHOOT_SELF_IN_SAFE	Odtud nemůžu zaútočit na nepřítele.
 CANNOT_SKILL_APPROACH	Jsem si jistý, že se už blíž nedostanu.
 CANNOT_SKILL_ATTACK	Nemůžu na to zaútočit.
 CANNOT_SKILL_DEST_IN_SAFE	Soupeř je příliš daleko.
-CANNOT_SKILL_EQUIP_FISHING_ROD	Potřebuji rybářský prut.
+CANNOT_SKILL_EQUIP_FISHING_ROD	Bez použití rybářského prutu nemůžeš rybařit.
 CANNOT_SKILL_HAVE_TO_RIDE	Potřebuji nejdřív koně, než to použiji.
 CANNOT_SKILL_NEED_EMPTY_BOTTLE	Nemám prázdnou láhev.
 CANNOT_SKILL_NEED_POISON_BOTTLE	Nemám láhev s jedem.
@@ -46,7 +46,7 @@ CHAT_INSULT_STRING	Věta obsahuje nepřípustná slova.
 CHAT_LOG	Zobrazit staré zprávy [L]
 CHAT_LOG_TITLE	Log chatu
 CHAT_NORMAL	Normální
-CHAT_NOTICE	Oznámení
+CHAT_NOTICE	Server
 CHAT_PARTY	Skupina
 CHAT_SEND_CHAT	Poslat chat
 CHAT_SEND_MEMO	Poslat šepot [Shift+Enter]
@@ -58,12 +58,12 @@ CREATE_EXIST_SAME_NAME	Tento název je už zadán pro jinou postavu.
 CREATE_FAILURE	Nemůžeš vytvořit tuto postavu.
 CREATE_GM_NAME	GM
 CREATE_INPUT_NAME	Zadej jméno.
-DAY	D
-DO_YOU_BUY_ITEM1	Chceš koupit %s za %s?
-DO_YOU_BUY_ITEM2	Chceš koupit %s %s za %s?
+DAY	d
+DO_YOU_BUY_ITEM1	Chceš koupit %s za %s Yangů?
+DO_YOU_BUY_ITEM2	Chceš koupit %s (%s kusů) za %s Yangů?
 DO_YOU_DROP_MONEY	Chceš nechat padnout %d Yang?
-DO_YOU_SELL_ITEM1	Chceš prodat %s za %s?
-DO_YOU_SELL_ITEM2	Chceš prodat %s %s za %s?
+DO_YOU_SELL_ITEM1	Chceš prodat %s za %s Yangů?
+DO_YOU_SELL_ITEM2	Chceš prodat %s (%s kusů) za %s Yangů?
 DRAGON_SOUL_CANNOT_REFINE	Dračí kámen nelze zušlechtit.
 DRAGON_SOUL_CANNOT_REFINE_MORE	Dračí kámen je již na nejvyšší úrovni.
 DRAGON_SOUL_EQUIP_WARNING1	Je těžké odebrat Dračí kámen, jakmile je jednou přidán.
@@ -82,7 +82,7 @@ DRAGON_SOUL_STRENGTH	Úroveň: +%d	SA
 DRAGON_SOUL_UNEQUIP_WARNING1	Během tohoto procesu může být Dračí kámen zničen.
 DRAGON_SOUL_UNEQUIP_WARNING2	Opravdu si přeješ pokračovat?
 DRAGON_SOUL_UNMATCHED_SLOT	Toto je špatný úchyt.
-DRAGON_SOUL_UNQUALIFIED	Ještě nemůžeš použít Dračí alchymii.
+DRAGON_SOUL_UNQUALIFIED	Ještě nemůžeš použít Alchymii Dračích kamenů.
 DROP_ITEM_FAILURE_EQUIP_ITEM	Nemůžeš nechat spadnout vybavený předmět.
 DROP_ITEM_FAILURE_PRIVATE_SHOP	Nemůžeš nechat spadnout žádný předmět, když máš otevřený soukromý stánek.
 DROP_MONEY_FAILURE_1000_OVER	Můžeš nechat spadnout maximálně 999 Yangů.
@@ -144,7 +144,7 @@ GUILDMARK_UPLOADER_ERROR_64_WIDTH	Šířka není 64 pixelů.
 GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	Hra nepodporuje tento obrázek.
 GUILDMARK_UPLOADER_ERROR_PATH	Přesuň soubory do složky metin2/upload.
 GUILDMARK_UPLOADER_ERROR_SELECT	Nebyl zvolen žádný obrazový soubor.
-GUILDWAR_CTF_TITLE	Zmocnit se praporu
+GUILDWAR_CTF_TITLE	Zajmout vlajku
 GUILDWAR_NORMAL_TITLE	Polní bitva
 GUILDWAR_WARP_TITLE	Dějiště války cechů
 GUILD_BUILDING_GRADE	Hodnost
@@ -170,11 +170,11 @@ GUILD_NO_NOTICE_PERMISSION	Nejsi oprávněn, zveřejňovat oznámení.
 GUILD_OBJECT	Objekty
 GUILD_OFFER_EXP	Zkušenost k investování
 GUILD_SHORT_EXP	Nedostatek zkušeností.
-GUILD_TILE_BASEINFO	Základní informace
-GUILD_TILE_BOARD	Tabule
+GUILD_TILE_BASEINFO	Informace o území
+GUILD_TILE_BOARD	Zprávy cechu
 GUILD_TILE_GRADE	Administrace práv
 GUILD_TILE_INFO	Informace o cechu
-GUILD_TILE_MEMBER	Členové cechu
+GUILD_TILE_MEMBER	Člen
 GUILD_TILE_SKILL	Schopnosti  cechu
 GUILD_WAR_LIMIT_30MIN	Čas: 30 minut
 GUILD_WAR_REWARD_POTION	Odměna: Vítěz obdrží elixíry
@@ -192,7 +192,7 @@ HORSE_HEALTH3	Plný
 HORSE_LEVEL1	Normální kůň
 HORSE_LEVEL2	Opancéřovaný kůň
 HORSE_LEVEL3	Vojenský kůň
-HOUR	hod.
+HOUR	h
 HOW_MANY_ITEM_DO_YOU_DROP1	Chceš nechat padnout %s?
 HOW_MANY_ITEM_DO_YOU_DROP2	Chceš nechat padnout %s %d?
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Zadat vymazávající kód ze správy kont.
@@ -205,15 +205,15 @@ JOB_WARRIOR	Válečník
 LEFT_TIME	Zbývající čas
 LOGIN_CONNECT_FAILURE	Chyba při spojení se serverem.
 LOGIN_CONNECT_SUCCESS	Byl jsi připojen na server.
-LOGIN_CONNETING	Budeš připojen na server...
-LOGIN_FAILURE_ALREAY	Tvé konto je už připojeno.
+LOGIN_CONNETING	Prosíme počkej, než se připojíš na server.
+LOGIN_FAILURE_ALREAY	Tvůj účet je už připojen.
 LOGIN_FAILURE_BE_SAME_KEY	Problém s přihlášením
-LOGIN_FAILURE_BLOCK_ID	Konto je zablokováno.
-LOGIN_FAILURE_BLOCK_LOGIN	Prosím, zvolte si některý z jiných serverů!
-LOGIN_FAILURE_NOBILL	Konto nemá k dispozici žádnou hrací dobu.
-LOGIN_FAILURE_NOT_AVAIL	Konto není k dispozici.
+LOGIN_FAILURE_BLOCK_ID	Tento účet byl zablokován.
+LOGIN_FAILURE_BLOCK_LOGIN	Uzavřený server: Prosím, zvolte si některý z jiných serverů!
+LOGIN_FAILURE_NOBILL	Tento účet nemá žádný hrací čas.
+LOGIN_FAILURE_NOT_AVAIL	Účet není dostupný.
 LOGIN_FAILURE_NOT_EXIST_ID	Konto neexistuje nebo je chybné heslo.
-LOGIN_FAILURE_REPAIR_ID	Právě se znovu zřizují předměty pro toto konto.
+LOGIN_FAILURE_REPAIR_ID	Pro tento účet byly předměty obnoveny.
 LOGIN_FAILURE_SAMELOGIN	Někdo se připojil na tvůj účet.
 LOGIN_FAILURE_SHUTDOWN	Server zatím není přístupný.
 LOGIN_FAILURE_TOO_MANY_USER	Nemohl jsi navázat spojení, protože právě hraje příliš mnoho hráčů.
@@ -287,7 +287,7 @@ PARTY_BONUS_SKILL_MASTER	Max. MB: +%d	SA
 PARTY_BONUS_TANKER	Max. ZB: +%d	SA
 PARTY_BREAK_UP	Zrušit skupinu
 PARTY_DO_YOU_ACCEPT	 by se rád přidal do skupiny.
-PARTY_DO_YOU_JOIN	 tě pozval do jeho skupiny. Přijmout?
+PARTY_DO_YOU_JOIN	 tě pozval do skupiny. Přijmout?
 PARTY_EXP_DISTRIBUTION_MODE	Rozložení BZK
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL	Podle úrovně
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Vyšší úroveň obdrží více BZK.
@@ -348,23 +348,23 @@ QUICKSLOT_REGISTER_DISABLE_ITEM	Tento předmět nemůže být přidán k poli ry
 RECEIVE_MESSAGE	%s ti poslal/a zprávu.
 REFINE_COST	Náklady na zlepšení: %s
 REFINE_DESTROY_WARNING	Předmět by se mohl zušlechtěním zničit.
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Toto zvyšuje pravděpodobnost zlepšení,
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	ale v případě neúspěchu bude předmět zničen. Chceš pokračovat?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Opravdu chceš vylepšit tento předmět?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	Pokud se to nezdaří, předmět bude zničen. Přeješ si pokračovat?
 REFINE_DOWN_GRADE_WARNING	Předmět by se mohl zušlechtěním zhoršit.
 REFINE_DO_YOU_SEPARATE_METIN	Chceš odstranit všechny kameny ducha?
-REFINE_FAILURE	Hmm, nojono - tak to neklaplo! Selhali jsme.
+REFINE_FAILURE	To nefunguje! Selhali jsme.
 REFINE_FAILURE_CAN_NOT_ATTACH	%s nelze přidat k předmětu.
 REFINE_FAILURE_EQUIP_ITEM	Nemůžeš vylepšovat používané předměty.
 REFINE_FAILURE_METIN_INSEPARABLE_ITEM	Nelze odstranit kámen ducha.
 REFINE_FAILURE_NEED_BETTER_SCROLL	Potřebuješ lepší pergamen zlepšování.
 REFINE_FAILURE_NO_GOLD_SOCKET	Neexistuje žádná úchytka ze zlata, do kterého lze přidat %s.
-REFINE_FAILURE_NO_MORE_SOCKET	Nemůžeš přidat žádné další úchytky.
-REFINE_FAILURE_NO_SOCKET0	Neexistuje žádná úchytka, do kterého lze přidat %s.
-REFINE_FAILURE_SOCKET_DISABLE_ITEM	K tomuto předmětu nelze přidat žádná úchytka.
+REFINE_FAILURE_NO_MORE_SOCKET	Nemůžeš přidat žádné další úchyty.
+REFINE_FAILURE_NO_SOCKET0	Neexistuje žádný úchyt, do kterého lze přidat %s.
+REFINE_FAILURE_SOCKET_DISABLE_ITEM	K tomuto předmětu nelze přidat žádný úchyt.
 REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Tento předmět nelze zlepšit.
 REFINE_SUCCESS	Toto zlepšení předmětu bylo úspěšné.
 REFINE_SUCCESS_PROBALITY	Šance na zlepšení: %d%%
-REFINE_WARNING2	Chceš pokračovat?
+REFINE_WARNING2	Chceš si pokračovat ve vylepšování?
 SAFEBOX_ERROR	Zadal jsi špatné heslo.
 SAFEBOX_SELL_DISABLE_SAFEITEM	Nemůžeš prodat žádný z uložených předmětů.
 SAFEBOX_WRONG_PASSWORD	Hesla musí být identická.
@@ -376,9 +376,9 @@ SELECT_CAN_NOT_DELETE	Tuto postavu nemůžeš smazat.
 SELECT_CHANGED_NAME	Změnil jsi název postavy.
 SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	Tento název postavy už existuje.
 SELECT_CHANGE_FAILURE_STRANGE_INDEX	Zkus to znovu.
-SELECT_CHANGE_FAILURE_STRANGE_NAME	Toto je špatný název postavy.
+SELECT_CHANGE_FAILURE_STRANGE_NAME	Toto je špatné jméno postavy.
 SELECT_CHANGE_NAME_TITLE	Změnit název postavy
-SELECT_DELEING	Postava se maže
+SELECT_DELEING	Mazání...
 SELECT_DELETED	Vymazání úspěšné.
 SELECT_DO_YOU_DELETE_REALLY	Chceš pokračovat?
 SELECT_EMPTY_SLOT	Toto je prázdné pole.
@@ -389,7 +389,7 @@ SHOP_CANNOT_SELL_ITEM	Tento předmět není na prodej.
 SHOP_ERROR_UNKNOWN	Neznámá chyba v obchodě: %s
 SHOP_INVALID_POS	Tento předmět není vhodný.
 SHOP_INVENTORY_FULL	V inventáři už není místo.
-SHOP_NOT_ENOUGH_MONEY	Nedostatek Yang
+SHOP_NOT_ENOUGH_MONEY	Nemáš dostatek Wonů nebo Yangů
 SHOP_NOT_ENOUGH_MONEY_EX	Nemáš dostatek Yangů.
 SHOP_SELL_INFO	Zvol předmět, který chceš prodat, v okně inventáře.
 SHOP_SOLDOUT	Vyprodáno
@@ -402,7 +402,7 @@ SKILL_FISHMIND	Koule na ryby je aktivní
 SKILL_GEOMGYEONG	Aura meče
 SKILL_GICHEON	Pomoc draka
 SKILL_GONGPO	Strach
-SKILL_GRADE_NAME_GRAND_MASTER	%s velký mistr
+SKILL_GRADE_NAME_GRAND_MASTER	%s velmistr
 SKILL_GRADE_NAME_MASTER	%s mistr
 SKILL_GRADE_NAME_PERFECT_MASTER	%s perfektní mistr
 SKILL_GROUP_ASSASSIN_1	Čepel
@@ -483,8 +483,8 @@ TASKBAR_MOVE	Pohybovat
 TASKBAR_SKILL	Schopnost
 TASKBAR_SP	MB
 TASKBAR_ST	VB
-TOOLTIP_ANTI_CRITICAL_PCT	Odolnost proti kritickým zásahům +%d%% 	SA
-TOOLTIP_ANTI_PENETRATE_PCT	Odolnost proti pronikavým zásahům +%d%% 	SA
+TOOLTIP_ANTI_CRITICAL_PCT	Odolnost proti kritickým zásahům +%d%%	SA
+TOOLTIP_ANTI_PENETRATE_PCT	Odolnost proti pronikavým zásahům +%d%%	SA
 TOOLTIP_ANTI_SELL	Nemůže se prodávat v obchodě.
 TOOLTIP_APPLY_ATTBONUS_ANIMAL	Silný proti zvířatům +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_ASSASSIN	Silný proti ninjům +%d%%	SA
@@ -510,8 +510,8 @@ TOOLTIP_APPLY_ITEM_DROP_BONUS	%d%% šance, nechat dvojnásobně spadnout předm�
 TOOLTIP_APPLY_KILL_HP_RECOVER	%d%% šance obnovit ZB	SA
 TOOLTIP_APPLY_KILL_SP_RECOVER	%d%% šance obnovit MB	SA
 TOOLTIP_APPLY_MANA_BURN_PCT	%d%% šance převzít soupeřovy MB	SA
-TOOLTIP_APPLY_MAX_HP_PCT	Max. ZB +%d%% 	SA
-TOOLTIP_APPLY_MAX_SP_PCT	Max. MB +%d%% 	SA
+TOOLTIP_APPLY_MAX_HP_PCT	Max. ZB +%d%%	SA
+TOOLTIP_APPLY_MAX_SP_PCT	Max. MB +%d%%	SA
 TOOLTIP_APPLY_NOAFFECT	Žádné následky
 TOOLTIP_APPLY_NO_DEATH_PENALTY	Neztratíš žádné zkušenostní body, pokud bude tvá postava oživena na místě, kde zemřela.	SNA
 TOOLTIP_APPLY_PENETRATE_PCT	+%d%% šance na pronikavý zásah	SA
@@ -545,15 +545,15 @@ TOOLTIP_AUTO_POTION_HP	Elixír Slunce
 TOOLTIP_AUTO_POTION_REST	Zbývá: %.2f%%
 TOOLTIP_AUTO_POTION_SP	Elixír Měsíce
 TOOLTIP_AUTO_POTION_USING	Aktivní
-TOOLTIP_BOW_DISTANCE	Dosah luku +%dm	SA
+TOOLTIP_BOW_DISTANCE	Dosah +%dm	SA
 TOOLTIP_BUYPRICE	Cena: %s
 TOOLTIP_CAST_SPEED	Rychlost kouzla +%d%%	SA
 TOOLTIP_CON	Vitalita +%d	SA
 TOOLTIP_COSTUME_ATTR_BONUS	Bonus za kostým %d%%	SA
 TOOLTIP_DEF_GRADE	Obrana +%d	SA
 TOOLTIP_DEX	Pohyblivost +%d	SA
-TOOLTIP_DRAGON_SOUL_DECK1	Země	SNA
-TOOLTIP_DRAGON_SOUL_DECK2	Nebesa	SNA
+TOOLTIP_DRAGON_SOUL_DECK1	Nebesa	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Země	SNA
 TOOLTIP_EAR	Náušnice
 TOOLTIP_ENERGY	Energie %d	SA
 TOOLTIP_FISHINGROD_EXP	Body: %d / %d
@@ -584,21 +584,21 @@ TOOLTIP_ITEM_SLOW	Pomalu
 TOOLTIP_ITEM_VERY_FAST	Velmi rychle
 TOOLTIP_ITEM_VERY_SLOW	Velmi pomalu
 TOOLTIP_ITEM_WEARABLE_JOB	[ Lze vyzbrojit ]
-TOOLTIP_MAGIC_ATTBONUS_PER	Magický útok +%d%% 	SA
+TOOLTIP_MAGIC_ATTBONUS_PER	Magický útok +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	Magická hodnota útoku +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Magická obrana +%d	SA
 TOOLTIP_MALL_ATTBONUS	Hodnota útoku  +%d%%	SA
-TOOLTIP_MALL_ATTBONUS_STATIC	Hodnota útoku +12~15 %	SNA
+TOOLTIP_MALL_ATTBONUS_STATIC	Hodnota útoku	SNA
 TOOLTIP_MALL_AUTOLOOT	Yangy se automaticky sesbírají.	SNA
 TOOLTIP_MALL_DEFBONUS	Obrana +%d%%	SA
-TOOLTIP_MALL_DEFBONUS_STATIC	Obrana +12~15 %	SNA
+TOOLTIP_MALL_DEFBONUS_STATIC	Obrana	SNA
 TOOLTIP_MALL_EXPBONUS	BZK +%d%%	SA
 TOOLTIP_MALL_EXPBONUS_STATIC	O 50 % víc BZK	SNA
 TOOLTIP_MALL_FISH_MIND	Šance ulovit rybu je zvýšena.	SNA
 TOOLTIP_MALL_GOLDBONUS	Šance na spadlé Yangy (%.1f)	SA
-TOOLTIP_MALL_GOLDBONUS_STATIC	Zdvojnásobí šanci na spadnutí Yangů	SNA
+TOOLTIP_MALL_GOLDBONUS_STATIC	Dvojitá šance na spadlé Yangy	SNA
 TOOLTIP_MALL_ITEMBONUS	Šance ukořistit předměty (%.1f)	SA
-TOOLTIP_MALL_ITEMBONUS_STATIC	Zdvojnásobí šanci ukořistit předměty	SNA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Šance na spadlé předměty zvýšena o 200 %.	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	Body za lásku narůstají rychleji.	SNA
 TOOLTIP_MALL_SAFEBOX	Na skladě je k dispozici více místa.	SNA
 TOOLTIP_MAX_HP	Max. ZB +%d	SA
@@ -606,13 +606,13 @@ TOOLTIP_MAX_HP_PCT	Max. ZB +%d%%	SA
 TOOLTIP_MAX_SP	Max. MB +%d	SA
 TOOLTIP_MAX_SP_PCT	Max. MB +%d%%	SA
 TOOLTIP_MAX_STAMINA	Max. vytrvalost +%d	SA
-TOOLTIP_MELEE_MAGIC_ATTBONUS_PER	Magický útok/útok zbraní  +%d%% 	SA
+TOOLTIP_MELEE_MAGIC_ATTBONUS_PER	Magický útok/útok zbraní  +%d%%	SA
 TOOLTIP_MEMORIZED_POSITION	%s(%d, %d)
 TOOLTIP_MEMORIZED_POSITION_ERROR	Chyba v GPS(%d, %d)
 TOOLTIP_MOV_SPEED	Rychlost pohybu %d%%	SA
 TOOLTIP_NECK	Náhrdelník
 TOOLTIP_NEED_ALL_SP	Potřebné MB: max.
-TOOLTIP_NEED_GSP	Potřebný duch draka: %d
+TOOLTIP_NEED_GSP	Potřebný dračí duch: %d
 TOOLTIP_NEED_HP	Potřebné ZB: %d
 TOOLTIP_NEED_HP_PER_SEC	ZB / sek:  %d
 TOOLTIP_NEED_SP	Potřebné MB: %d
@@ -638,12 +638,12 @@ TOOLTIP_POTION_SEC	sek.
 TOOLTIP_POTION_TIME	Doba:
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	Je zapotřebí %s úroveň %d
 TOOLTIP_REQUIREMENT_STAT_LEVEL	Je zapotřebí %s %d
-TOOLTIP_RESIST_BOW	Odolnost proti šípům %d%%	SA
-TOOLTIP_RESIST_DARK	Odolnost vůči temnotě +%d%% 	SA
-TOOLTIP_RESIST_EARTH	Odolnost Zemi +%d%% 	SA
+TOOLTIP_RESIST_BOW	Obrana proti šípům %d%%	SA
+TOOLTIP_RESIST_DARK	Odolnost vůči temnotě +%d%%	SA
+TOOLTIP_RESIST_EARTH	Odolnost Zemi +%d%%	SA
 TOOLTIP_RESIST_ELEC	Odolnost proti blesku %d%%	SA
 TOOLTIP_RESIST_FIRE	Odolnost proti ohni %d%%	SA
-TOOLTIP_RESIST_ICE	Odolnost ledu +%d%% 	SA
+TOOLTIP_RESIST_ICE	Odolnost ledu +%d%%	SA
 TOOLTIP_RESIST_MAGIC	Odolnost proti magii %d%%	SA
 TOOLTIP_REST_USABLE_COUNT	Zbývá: %d
 TOOLTIP_SELLPRICE	Cena: %s
@@ -663,7 +663,7 @@ TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Odolnost proti tělesné újmě:
 TOOLTIP_SKILL_COOL_TIME	Doba nabíjení:
 TOOLTIP_SKILL_DAMAGE_BONUS	Poškození schopností: %d%%	SA
 TOOLTIP_SKILL_DEFEND_BONUS	Odolnost proti poškození schopností %d%%	SA
-TOOLTIP_SKILL_DURATION	Doba: %d sek.
+TOOLTIP_SKILL_DURATION	Doba trvání: %d vteřin
 TOOLTIP_SKILL_FORGET_BOOK_NAME	Kniha zapomnění
 TOOLTIP_SKILL_LEVEL	Aktuální úroveň: %d
 TOOLTIP_SKILL_LEVEL_MASTER	Aktuální úroveň: %d (mistr)
@@ -673,7 +673,7 @@ TOOLTIP_SOCKET_REFINABLE_ITEM	[Předmět s úchytem]
 TOOLTIP_SP_REGEN	Obnovení MB +%d%%	SA
 TOOLTIP_STR	Síla +%d	SA
 TOOLTIP_SURA	Sura
-TOOLTIP_TIME_CHARGER_FIX	Čas nabíjení %d vteřin. 	SA
+TOOLTIP_TIME_CHARGER_FIX	Čas nabíjení %d vteřin.	SA
 TOOLTIP_TIME_CHARGER_PER	Čas nabíjení %d%%	SA
 TOOLTIP_UNIQUE	Jedinečný
 TOOLTIP_WARRIOR	Válečník

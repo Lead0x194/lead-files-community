@@ -4,14 +4,14 @@ CANNOT_ATTACK_DEST_IN_SAFE	Przeciwnik jest za daleko.
 CANNOT_ATTACK_SELF_IN_SAFE	Nie mogę zaatakować.
 CANNOT_EQUIP_IN_EXCHANGE	Nie możesz zmieniać wyposażenia podczas handlowania.
 CANNOT_EQUIP_IN_SHOP	Nie możesz zdjąć założonego ekwipunku podczas handlu.
-CANNOT_OPEN_PRIVATE_SHOP_IN_SAFE_AREA	Nie możesz otworzyć Prywatnego Magazynu w miejscu publicznym.
+CANNOT_OPEN_PRIVATE_SHOP_IN_SAFE_AREA	Nie możesz otworzyć prywatnego sklepu w miejscu publicznym.
 CANNOT_SHOOT_DEST_IN_SAFE	Wróg jest za daleko.
 CANNOT_SHOOT_EMPTY_ARROW	Potrzebuję Strzały.
 CANNOT_SHOOT_SELF_IN_SAFE	Nie mogę tego zrobić.
 CANNOT_SKILL_APPROACH	Na pewno nie mogę podejść bliżej.
 CANNOT_SKILL_ATTACK	Nie mogę zaatakować.
 CANNOT_SKILL_DEST_IN_SAFE	Wróg jest za daleko.
-CANNOT_SKILL_EQUIP_FISHING_ROD	Potrzebuję Wędki.
+CANNOT_SKILL_EQUIP_FISHING_ROD	Nie złapiesz żadnej ryby bez założonej wędki.
 CANNOT_SKILL_HAVE_TO_RIDE	Potrzebuję Konia zanim będę mógł tego użyć.
 CANNOT_SKILL_NEED_EMPTY_BOTTLE	Nie mam Pustej Butelki.
 CANNOT_SKILL_NEED_POISON_BOTTLE	Nie mam Butelki Z Trucizną.
@@ -46,7 +46,7 @@ CHAT_INSULT_STRING	To zdanie zawiera niepoprawne słowa.
 CHAT_LOG	Pokaż stare wiadomości [L]
 CHAT_LOG_TITLE	Protokół wiadomości
 CHAT_NORMAL	Normalne
-CHAT_NOTICE	Ogłoszenia
+CHAT_NOTICE	Serwer
 CHAT_PARTY	Grupa
 CHAT_SEND_CHAT	Wyślij wiadomość
 CHAT_SEND_MEMO	Wyślij szept [Shift+Enter]
@@ -54,16 +54,16 @@ CHAT_SHOUT	Wołaj
 CHAT_SHOUT_LIMIT	Możesz wołać tylko co 15 sekund.
 CREATE_ERROR_GM_NAME	Nie jesteś upoważniony do użycia ,GM‘ w swojej nazwie postaci.
 CREATE_ERROR_INSULT_NAME	Ta nazwa jest niepoprawna.
-CREATE_EXIST_SAME_NAME	Inna postać już ma tą nazwę.
+CREATE_EXIST_SAME_NAME	Nazwa jest już w użyciu.
 CREATE_FAILURE	Nie możesz stworzyć postaci
 CREATE_GM_NAME	GM
 CREATE_INPUT_NAME	Wybierz nazwę.
-DAY	Dni
-DO_YOU_BUY_ITEM1	Czy chcesz kupić %s za %s?
-DO_YOU_BUY_ITEM2	Czy chcesz kupić %s %s za %s?
+DAY	d
+DO_YOU_BUY_ITEM1	Czy chcesz kupić %s za %s Yang?
+DO_YOU_BUY_ITEM2	Czy chcesz kupić %s (%s szt.) za %s Yang?
 DO_YOU_DROP_MONEY	Czy chcesz upuścić %d Yang?
-DO_YOU_SELL_ITEM1	Czy chcesz sprzedać %s za %s?
-DO_YOU_SELL_ITEM2	Czy chcesz sprzedać %s %s za %s?
+DO_YOU_SELL_ITEM1	Czy chcesz sprzedać %s za %s Yang?
+DO_YOU_SELL_ITEM2	Czy chcesz sprzedać %s (%s szt.) za %s Yang?
 DRAGON_SOUL_CANNOT_REFINE	Nie możesz uszlachetnić tego Smoczego Kamienia.
 DRAGON_SOUL_CANNOT_REFINE_MORE	Ten Smoczy Kamień osiągnął już najwyższy poziom.
 DRAGON_SOUL_EQUIP_WARNING1	Usunięcie Smoczego Kamienia nie jest prostą sprawą.
@@ -84,7 +84,7 @@ DRAGON_SOUL_UNEQUIP_WARNING2	Chcesz mimo to kontynuować?
 DRAGON_SOUL_UNMATCHED_SLOT	To nieprawidłowy slot.
 DRAGON_SOUL_UNQUALIFIED	Nie możesz jeszcze użyć alchemii Smoczych Kamieni.
 DROP_ITEM_FAILURE_EQUIP_ITEM	Nie możesz upuścić założonych przedmiotów.
-DROP_ITEM_FAILURE_PRIVATE_SHOP	Nie możesz upuścić Przedmiotu z ekwipunku jeśli otworzyłeś prywatny Magazyn.
+DROP_ITEM_FAILURE_PRIVATE_SHOP	Nie możesz upuścić przedmiotu z ekwipunku, jeśli otworzyłeś prywatny sklep.
 DROP_MONEY_FAILURE_1000_OVER	Możesz upuścić maksimum 999 Yang.
 EMOTION_ANGRY	Denerwować
 EMOTION_ATTRACTIVE	Uwodzić
@@ -144,7 +144,7 @@ GUILDMARK_UPLOADER_ERROR_64_WIDTH	Szerokość nie ma 64px.
 GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	Gra nie obsługuje tego obrazka.
 GUILDMARK_UPLOADER_ERROR_PATH	Przenieś plik do folderu upload/ w głównym katalogu gry Metin2.
 GUILDMARK_UPLOADER_ERROR_SELECT	Plik z obrazkiem nie został wybrany.
-GUILDWAR_CTF_TITLE	Flaga zdobyta.
+GUILDWAR_CTF_TITLE	Walka o flagi
 GUILDWAR_NORMAL_TITLE	Pole Bitwy
 GUILDWAR_WARP_TITLE	Walka na arenie
 GUILD_BUILDING_GRADE	Ranga
@@ -155,7 +155,7 @@ GUILD_CREATE_ERROR_INSULT_NAME	Nazwa Gildii jest niepoprawna.
 GUILD_DEFAULT_GRADE	Członkowie Gildii
 GUILD_DELETE	Usuń
 GUILD_DO_YOU_HEAL_GSP	Czy chcesz odnowić za %d Yang %d Ducha Smoka?
-GUILD_DO_YOU_JOIN	  zaprasza Cię do swojej Gildii. Chcesz do niej dołączyć?
+GUILD_DO_YOU_JOIN	 zaprasza Cię do swojej Gildii. Chcesz do niej dołączyć?
 GUILD_EMPTY_AREA	Wolna Ziemia
 GUILD_FACILITY	Przybudówka
 GUILD_GEM	Klejnot
@@ -170,11 +170,11 @@ GUILD_NO_NOTICE_PERMISSION	Nie masz praw do tworzenia ogłoszeń.
 GUILD_OBJECT	Obiekty
 GUILD_OFFER_EXP	PD do przekazania
 GUILD_SHORT_EXP	Za mało Punktów Doświadczenia.
-GUILD_TILE_BASEINFO	Podstawowa Informacja
-GUILD_TILE_BOARD	Tablica
+GUILD_TILE_BASEINFO	Informacje o obszarze
+GUILD_TILE_BOARD	Notatka gildii
 GUILD_TILE_GRADE	Zarządzanie Prawami
 GUILD_TILE_INFO	Informacje o Gildii
-GUILD_TILE_MEMBER	Członkowie Gildii
+GUILD_TILE_MEMBER	Członek
 GUILD_TILE_SKILL	Umiejętności Gildii
 GUILD_WAR_LIMIT_30MIN	Czas: 30 Minut
 GUILD_WAR_REWARD_POTION	Nagroda: Zwycięzca otrzymuje Miksturę
@@ -192,7 +192,7 @@ HORSE_HEALTH3	Pełny
 HORSE_LEVEL1	Koń Zwykły
 HORSE_LEVEL2	Koń Bojowy
 HORSE_LEVEL3	Koń Wojskowy
-HOUR	Godzin
+HOUR	h
 HOW_MANY_ITEM_DO_YOU_DROP1	Czy chcesz upuścić %s?
 HOW_MANY_ITEM_DO_YOU_DROP2	Czy chcesz upuścić %s %d?
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Wprowadź kod usunięcia z zarządzania kontem.
@@ -205,16 +205,16 @@ JOB_WARRIOR	Wojownik
 LEFT_TIME	Pozostały Czas
 LOGIN_CONNECT_FAILURE	Błąd podczas łączenia się z serwerem.
 LOGIN_CONNECT_SUCCESS	Zostałeś połączony z serwerem.
-LOGIN_CONNETING	Zostaniesz połączony z serwerem...
+LOGIN_CONNETING	Prosimy o cierpliwość. Trwa łączenie z serwerem.
 LOGIN_FAILURE_ALREAY	Twoje konto jest już połączone.
 LOGIN_FAILURE_BE_SAME_KEY	Problem z rejestracją.
-LOGIN_FAILURE_BLOCK_ID	Twoje konto jest zablokowane.
-LOGIN_FAILURE_BLOCK_LOGIN	Serwer Zamknięty - proszę wybrać inny!
+LOGIN_FAILURE_BLOCK_ID	To konto zostało zablokowane.
+LOGIN_FAILURE_BLOCK_LOGIN	Zamknięty serwer: Serwer Zamknięty - proszę wybrać inny!
 LOGIN_FAILURE_NOBILL	Twoje konto nie ma czasu gry.
-LOGIN_FAILURE_NOT_AVAIL	Twoje konto nie może być użyte.
+LOGIN_FAILURE_NOT_AVAIL	Konto niedostępne.
 LOGIN_FAILURE_NOT_EXIST_ID	Nieprawidłowa nazwa konta lub hasło.
-LOGIN_FAILURE_REPAIR_ID	Przedmioty zostały przywrócone dla tego konta.
-LOGIN_FAILURE_SAMELOGIN	Ktoś połączył się z Twoim kontem.
+LOGIN_FAILURE_REPAIR_ID	Dla tego konta właśnie przywrócono przedmioty.
+LOGIN_FAILURE_SAMELOGIN	Ktoś połączył się za pomocą Twojego konta.
 LOGIN_FAILURE_SHUTDOWN	Serwer nie jest jeszcze otwarty.
 LOGIN_FAILURE_TOO_MANY_USER	Nie możesz się połączyć, ponieważ za dużo graczy jest online.
 LOGIN_FAILURE_UNKNOWN	Nie możesz się zarejestrować z nieznanych powodów.
@@ -266,10 +266,10 @@ MINIMAP_DEC_SCALE	Oddal
 MINIMAP_INC_SCALE	Przybliż
 MINIMAP_OBSERVER_COUNT	%d obserwatorów
 MINIMAP_SHOW_AREAMAP	Otwórz Dużą Mapę
-MINUTE	Minut
+MINUTE	m
 MONETARY_UNIT0	Yang
 MONEY_INPUT_DIALOG_SELLPRICE	Cena sprzedaży:
-MOVE_ITEM_FAILURE_PRIVATE_SHOP	Nie możesz przesuwać przedmiotów, jeśli masz otwarty prywatny Magazyn.
+MOVE_ITEM_FAILURE_PRIVATE_SHOP	Nie możesz przesuwać przedmiotów, jeśli masz otwarty prywatny sklep.
 MUSIC_EMPTY_MUSIC_LIST	Brak muzyki w tle.
 MUSIC_METIN2_DEFAULT_THEMA	Standardowa muzyka Metin2
 MUSIC_NOT_SELECT_MUSIC	Plik z muzyką nie został wybrany.
@@ -287,7 +287,7 @@ PARTY_BONUS_SKILL_MASTER	Max PE: +%d	SA
 PARTY_BONUS_TANKER	Max PŻ: +%d	SA
 PARTY_BREAK_UP	Usuń Grupę
 PARTY_DO_YOU_ACCEPT	 chce dołączyć do grupy.
-PARTY_DO_YOU_JOIN	,  zaprasza Cię do swojej grupy. Czy chcesz przyjąć zaproszenie?
+PARTY_DO_YOU_JOIN	 zaprasza Cię do grupy. Czy chcesz przyjąć zaproszenie?
 PARTY_EXP_DISTRIBUTION_MODE	Podział DOŚ
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL	zależy od poziomu
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Członkowie grupy o wyższym poziomie otrzymują więcej PD.
@@ -317,8 +317,8 @@ PARTY_SKILL_WARP	Możliwe wezwanie członków grupy.
 PASSWORD_TITLE	Hasło do magazynu
 PICK_ITEM_TITLE	Numer Przedmiotu
 PICK_MONEY_TITLE	Kwota
-PRIVATE_SHOP_CANNOT_SELL_ITEM	Nie możesz sprzedać tego Przedmiotu w prywatnym Magazynie.
-PRIVATE_SHOP_CLOSE_QUESTION	Czy chcesz zamknąć prywatny Magazyn?
+PRIVATE_SHOP_CANNOT_SELL_ITEM	Nie możesz sprzedać tego przedmiotu w prywatnym sklepie.
+PRIVATE_SHOP_CLOSE_QUESTION	Czy chcesz zamknąć prywatny sklep?
 PRIVATE_SHOP_INPUT_NAME_DIALOG_TITLE	Wpisz nazwę swojego Sklepu.
 PRIVATE_SHOP_INPUT_PRICE_DIALOG_TITLE	Cena
 PVP_LEVEL0	Rycerski
@@ -348,11 +348,11 @@ QUICKSLOT_REGISTER_DISABLE_ITEM	Ten Przedmiot nie może zostać dodany do Szybki
 RECEIVE_MESSAGE	%s wysłał Ci wiadomość.
 REFINE_COST	Cena za Ulepszenie: %s
 REFINE_DESTROY_WARNING	Ten przedmiot może zostać zniszczony podczas uszlachetnienia.
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	To zwiększy szanse na ulepszenie,
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	ale jeśli zawiedziesz, Przedmiot zostanie zniszczony. Czy chcesz kontynuować?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Czy na pewno chcesz ulepszyć przedmiot?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	Przy niepowodzeniu twój przedmiot zostanie zniszczony. Czy chcesz kontynuować?
 REFINE_DOWN_GRADE_WARNING	Przedmiot może zostać zdegradowany w ten sposób.
 REFINE_DO_YOU_SEPARATE_METIN	Czy chcesz usunąć wszystkie Kamienie Duszy?
-REFINE_FAILURE	Ulepszanie nie powiodło się.
+REFINE_FAILURE	Oj, nie udało się. Zawiedliśmy.
 REFINE_FAILURE_CAN_NOT_ATTACH	%s nie może zostać uwzględniony w tym Przedmiocie.
 REFINE_FAILURE_EQUIP_ITEM	Nie możesz ulepszać założonych przedmiotów.
 REFINE_FAILURE_METIN_INSEPARABLE_ITEM	Żaden Kamień Duszy nie może zostać wyjęty.
@@ -364,7 +364,7 @@ REFINE_FAILURE_SOCKET_DISABLE_ITEM	Nie możesz zrobić żadnych Kieszeni w tym P
 REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Ten Przedmiot nie może zostać ulepszony.
 REFINE_SUCCESS	Przedmiot został ulepszony.
 REFINE_SUCCESS_PROBALITY	Szansa na Ulepszenie %d%%
-REFINE_WARNING2	Czy chcesz kontynuować?
+REFINE_WARNING2	Chcesz kontynuować ulepszanie?
 SAFEBOX_ERROR	Wprowadziłeś złe hasło.
 SAFEBOX_SELL_DISABLE_SAFEITEM	Nie możesz sprzedać żadnego z zachowanych Przedmiotów.
 SAFEBOX_WRONG_PASSWORD	Hasła muszą być identyczne.
@@ -376,9 +376,9 @@ SELECT_CAN_NOT_DELETE	Nie możesz usunąć postaci.
 SELECT_CHANGED_NAME	Zmieniłeś nazwę postaci.
 SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	Ta nazwa postaci już istnieje.
 SELECT_CHANGE_FAILURE_STRANGE_INDEX	Spróbuj ponownie.
-SELECT_CHANGE_FAILURE_STRANGE_NAME	To
+SELECT_CHANGE_FAILURE_STRANGE_NAME	To jest nieprawidłowa nazwa postaci.
 SELECT_CHANGE_NAME_TITLE	Zmień nazwę postaci.
-SELECT_DELEING	Postać zostanie usunięta.
+SELECT_DELEING	Rozpoczęcie usuwania...
 SELECT_DELETED	Usuwanie pomyślne.
 SELECT_DO_YOU_DELETE_REALLY	Czy chcesz kontynuować?
 SELECT_EMPTY_SLOT	To jest wolne pole.
@@ -389,7 +389,7 @@ SHOP_CANNOT_SELL_ITEM	Ten Przedmiot nie może zostać sprzedany.
 SHOP_ERROR_UNKNOWN	Nieznany Błąd Sklepu: %s
 SHOP_INVALID_POS	Ten Przedmiot nie może zostać tu użyty.
 SHOP_INVENTORY_FULL	Nie ma miejsca w ekwipunku.
-SHOP_NOT_ENOUGH_MONEY	Niewystarczająca ilość Yang
+SHOP_NOT_ENOUGH_MONEY	Niewystarczająca ilość Won lub Yang
 SHOP_NOT_ENOUGH_MONEY_EX	Nie posiadasz wystarczająco Yang.
 SHOP_SELL_INFO	Wybierz w oknie ekwipunku przedmiot, który chcesz sprzedać.
 SHOP_SOLDOUT	Wyprzedany
@@ -398,7 +398,7 @@ SKILL_BOHO	Odbicie
 SKILL_CHEONGEUN	Silne Ciało
 SKILL_EUNHYEONG	Krycie Się
 SKILL_FIRE	Podpalenie
-SKILL_FISHMIND	Marmur Rybaka jest aktywny
+SKILL_FISHMIND	Kula rybaka jest aktywna
 SKILL_GEOMGYEONG	Aura Miecza
 SKILL_GICHEON	Pomoc Smoka
 SKILL_GONGPO	Strach
@@ -442,7 +442,7 @@ STAT_MINUS_INT	Dostosowanie Inteligencji (Pozostałą szansa: %d)
 STAT_MINUS_STR	Dostosowanie Siły (Pozostałą szansa: %d)
 STAT_TOOLTIP_CON	Podwyższa PŻ i Obronę
 STAT_TOOLTIP_DEX	Podwyższa atak i uniki
-STAT_TOOLTIP_INT	Podwyższa PE, magiczny atak i obronę.
+STAT_TOOLTIP_INT	Podwyższa PE, atak magiczny i obronę.
 STAT_TOOLTIP_STR	Podwyższa Wartość Ataku i Uszkodzeń
 SYMBOLLIST_TITLE	Zarejestruj Flagę Gildii
 SYSTEM_OPTION_CPU_TILING_1	CPU TNL może ulepszyć szybkość słabszego PC.
@@ -488,8 +488,8 @@ TOOLTIP_ANTI_PENETRATE_PCT	Odporność na przeszywający cios +%d%%	SA
 TOOLTIP_ANTI_SELL	Nie może zostać sprzedany w Magazynie
 TOOLTIP_APPLY_ATTBONUS_ANIMAL	Silny przeciwko Zwierzętom +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_ASSASSIN	Silny przeciwko Ninja +%d%%	SA
-TOOLTIP_APPLY_ATTBONUS_DEVIL	Silny przeciwko Diabłom +%d%%	SA
-TOOLTIP_APPLY_ATTBONUS_HUMAN	Silny przeciwko Ludziom +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_DEVIL	Siła w walce z diabłami +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_HUMAN	Siła w walce z półludźmi +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_MILGYO	Silny przeciwko Mistykom +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_MONSTER	Silny przeciwko Potworom +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_ORC	Silny przeciwko Orkom +%d%%	SA
@@ -511,10 +511,10 @@ TOOLTIP_APPLY_KILL_HP_RECOVER	Szansa na odzyskanie PŻ: %d%%	SA
 TOOLTIP_APPLY_KILL_SP_RECOVER	Szansa na odzyskanie PE: %d%%	SA
 TOOLTIP_APPLY_MANA_BURN_PCT	%d%% Szansa na kradzież PE	SA
 TOOLTIP_APPLY_MAX_HP_PCT	Maks. PŻ +%d%%	SA
-TOOLTIP_APPLY_MAX_SP_PCT	Maks. PE +%d%% 	SA
+TOOLTIP_APPLY_MAX_SP_PCT	Maks. PE +%d%%	SA
 TOOLTIP_APPLY_NOAFFECT	Brak efektu
 TOOLTIP_APPLY_NO_DEATH_PENALTY	Nie tracisz Punktów Doświadczenia podczas wznawiania gry w miejscu śmierci.	SNA
-TOOLTIP_APPLY_PENETRATE_PCT	Szansa na przeszywające Uderzenie: %d%% 	SA
+TOOLTIP_APPLY_PENETRATE_PCT	Szansa na przeszywające Uderzenie: %d%%	SA
 TOOLTIP_APPLY_POISON_PCT	Szansa na Otrucie %d%%	SA
 TOOLTIP_APPLY_POISON_REDUCE	Odporność na Trucizny: %d%%	SA
 TOOLTIP_APPLY_POTION_BONUS	Mikstury %d%% efekt podniesiony	SA
@@ -530,7 +530,7 @@ TOOLTIP_APPLY_RESIST_SWORD	Odporność na Miecze: %d%%	SA
 TOOLTIP_APPLY_RESIST_TWOHAND	Odporność na Broń Dwuręczną: %d%%	SA
 TOOLTIP_APPLY_RESIST_WARRIOR	Odporność na Wojowników: %d%%	SA
 TOOLTIP_APPLY_RESIST_WIND	Odporność na Wiatr: %d%%	SA
-TOOLTIP_APPLY_SKILL_BOOK_BONUS	Szansa na pomyślną naukę zwiększona o współczynnik 2.5.	SNA
+TOOLTIP_APPLY_SKILL_BOOK_BONUS	Szansa na pomyślną naukę zwiększona o współczynnik 2.5	SNA
 TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	Jeśli trening się nie powiedzie, możesz od razu spróbować ponownie.	SNA
 TOOLTIP_APPLY_SLOW_PCT	Szansa na Spowolnienie %d%%	SA
 TOOLTIP_APPLY_STEAL_HP	%d%% obrażeń będzie dodanych do PŻ	SA
@@ -545,15 +545,15 @@ TOOLTIP_AUTO_POTION_HP	Eliksir Słońca
 TOOLTIP_AUTO_POTION_REST	Pozostało: %.2f%%
 TOOLTIP_AUTO_POTION_SP	Eliksir Księżyca
 TOOLTIP_AUTO_POTION_USING	Aktywny
-TOOLTIP_BOW_DISTANCE	Zasięg Łuku +%dm	SA
+TOOLTIP_BOW_DISTANCE	Zasięg +%dm	SA
 TOOLTIP_BUYPRICE	Cena: %s
 TOOLTIP_CAST_SPEED	Szybkość Zaklęcia +%d%%	SA
 TOOLTIP_CON	Witalność +%d	SA
-TOOLTIP_COSTUME_ATTR_BONUS	Bonus kostiumu %d%% 	SA
+TOOLTIP_COSTUME_ATTR_BONUS	Bonus kostiumu %d%%	SA
 TOOLTIP_DEF_GRADE	Obrona +%d	SA
 TOOLTIP_DEX	Zręczność +%d	SA
-TOOLTIP_DRAGON_SOUL_DECK1	Ziemia	SNA
-TOOLTIP_DRAGON_SOUL_DECK2	Niebo	SNA
+TOOLTIP_DRAGON_SOUL_DECK1	Niebo	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Ziemia	SNA
 TOOLTIP_EAR	Kolczyki
 TOOLTIP_ENERGY	Energia %d	SA
 TOOLTIP_FISHINGROD_EXP	Punkty %d / %d
@@ -588,17 +588,17 @@ TOOLTIP_MAGIC_ATTBONUS_PER	Magiczny atak +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	Wartość Magicznego Ataku: +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Magiczna Obrona: +%d	SA
 TOOLTIP_MALL_ATTBONUS	Wartość Ataku: +%d%%	SA
-TOOLTIP_MALL_ATTBONUS_STATIC	Wartość Ataku: +12~15%	SNA
+TOOLTIP_MALL_ATTBONUS_STATIC	Siła ataku	SNA
 TOOLTIP_MALL_AUTOLOOT	Ręka, która automatycznie podnosi upuszczone Yang.	SNA
 TOOLTIP_MALL_DEFBONUS	Obrona: +%d%%	SA
-TOOLTIP_MALL_DEFBONUS_STATIC	Obrona +12~15%	SNA
+TOOLTIP_MALL_DEFBONUS_STATIC	Obrona	SNA
 TOOLTIP_MALL_EXPBONUS	Punkty Doświadczenia: +%d%%	SA
 TOOLTIP_MALL_EXPBONUS_STATIC	Zwiększa zdobywanie PD o 50%	SNA
 TOOLTIP_MALL_FISH_MIND	Szansa schwytania rzadkiej ryby zostanie podwojona.	SNA
 TOOLTIP_MALL_GOLDBONUS	Szansa na zdobycie Yang pomnożona o %.1f	SA
 TOOLTIP_MALL_GOLDBONUS_STATIC	Szansa znalezienia Yang zostanie podwojona	SNA
 TOOLTIP_MALL_ITEMBONUS	Szansa na zdobycie Przedmiotów pomnożona o %.1f	SA
-TOOLTIP_MALL_ITEMBONUS_STATIC	Podwojona szansa na zdobycie przedmiotu	SNA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Zwiększono szansę na dropy przedmiotów o 200%.	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	Punkty Miłości szybciej się regenerują.	SNA
 TOOLTIP_MALL_SAFEBOX	Zwiększona pojemność Magazynu	SNA
 TOOLTIP_MAX_HP	Max PŻ: +%d	SA
@@ -638,7 +638,7 @@ TOOLTIP_POTION_SEC	Sek.
 TOOLTIP_POTION_TIME	Czas trwania:
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	%s Poziom %d wymagany.
 TOOLTIP_REQUIREMENT_STAT_LEVEL	%s %d wymagany
-TOOLTIP_RESIST_BOW	Odporność na Strzały: %d%%	SA
+TOOLTIP_RESIST_BOW	Odporność na Strzały +%d%%	SA
 TOOLTIP_RESIST_DARK	Odporność na mrok +%d%%	SA
 TOOLTIP_RESIST_EARTH	Odporność na ziemię +%d%%	SA
 TOOLTIP_RESIST_ELEC	Odporność na Błyskawice: %d%%	SA
@@ -663,7 +663,7 @@ TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Odporność na Obrażenia:
 TOOLTIP_SKILL_COOL_TIME	Odnowa: 
 TOOLTIP_SKILL_DAMAGE_BONUS	Obrażenie Umiejętności: %d%%	SA
 TOOLTIP_SKILL_DEFEND_BONUS	Odporność na Obrażenia Umiejętności %d%%	SA
-TOOLTIP_SKILL_DURATION	Czas trwania: %d Sek.
+TOOLTIP_SKILL_DURATION	Czas trwania: %d sek.
 TOOLTIP_SKILL_FORGET_BOOK_NAME	Księga Zapomnienia
 TOOLTIP_SKILL_LEVEL	Aktualny Poziom: %d
 TOOLTIP_SKILL_LEVEL_MASTER	Aktualny Poziom: %d (Mistrz)
@@ -674,7 +674,7 @@ TOOLTIP_SP_REGEN	Regeneracja PE: +%d%%	SA
 TOOLTIP_STR	Siła: +%d	SA
 TOOLTIP_SURA	Sura
 TOOLTIP_TIME_CHARGER_FIX	Ładowanie czasu %d sek.	SA
-TOOLTIP_TIME_CHARGER_PER	Ładowanie czasu %d%% 	SA
+TOOLTIP_TIME_CHARGER_PER	Ładowanie czasu %d%%	SA
 TOOLTIP_UNIQUE	Unikat
 TOOLTIP_WARRIOR	Wojownik
 TOOLTIP_WEAPON	Broń
@@ -696,7 +696,7 @@ UI_OK	OK
 UI_POS_UNKNOWN	Nieznane Położenie
 UI_PREVPAGE	Wróć
 UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Wgrywanie musi zostać ponownie rozpoczęte.
-USE_ITEM_FAILURE_PRIVATE_SHOP	Nie możesz używać przedmiotów, jeśli otworzyłeś prywatny Magazyn.
+USE_ITEM_FAILURE_PRIVATE_SHOP	Nie możesz używać przedmiotów, jeśli otworzyłeś prywatny sklep.
 TARGET_INFO_RESISTS	Odporności:
 TARGET_INFO_RESISTS_LINE0	Miecze: %d%% Broń Dwuręczna: %d%% Dzwony: %d%%
 TARGET_INFO_RESISTS_LINE1	Sztylety: %d%% Wachlarze: %d%% Strzały: %d%%

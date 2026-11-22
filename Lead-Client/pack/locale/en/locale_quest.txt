@@ -1,7 +1,7 @@
 1	You want to fight against yourself?[ENTER]Do as you please, but you don't need an arena for[ENTER]that.[ENTER]Come again when you're ready to take this[ENTER]seriously.
 2	Start a training fight
 3	Your training partner has not reached the[ENTER]required level of %s yet. I'm sorry, but I cannot[ENTER]allow this fight.
-4	To complete the agreement for this practice duel,[ENTER]%s must come to see me as well.
+4	The training fight agreement is settled. %s must also come to me.
 5	%s is currently in a training fight lesson.
 6	Decision
 7	%s doesn't want to do a training fight against[ENTER]you.
@@ -76,7 +76,7 @@
 76	To change kingdoms you will need to fulfil the[ENTER]following conditions:[ENTER]1. You cannot be a member of a guild.[ENTER]2. You cannot be married.[ENTER]3. You cannot be planning on getting married.[ENTER]4. You will need 500,000 Yang to change kingdoms.[ENTER]Do you want to change kingdoms?
 77	With this item you can change kingdoms.
 78	You cannot use this item!
-79	You can only change your empire once.
+79	You can only change kingdoms once.
 80	GM - Should the time be set to zero?
 81	The required time has been set to zero.
 82	Married players cannot change kingdoms.
@@ -131,7 +131,7 @@
 131	Now I have enough Kaki Blossoms. Good work![ENTER]As a token of my gratitude, I'm going to give you[ENTER]some Yang and my research results.
 132	Information:
 133	As a reward, the biologist Chaegirab will give[ENTER]you 6500 EP and 5000 Yang. Additionally you will[ENTER]also get a Copper Necklace+3.
-134	The Biologist's Examination
+134	The biologist's analysis
 135	I'm sorry, but this Kaki Blossom has very poor[ENTER]quality and is useless to me. Please get me[ENTER]another one.
 136	The biologist Chaegirab, Uriel's apprentice, is[ENTER]looking for you. Please go see him and find out[ENTER]how you can help him.
 137	Herbal lore
@@ -186,7 +186,7 @@
 186	Tue Fungi
 187	Oh, you've found one![ENTER]Let me have a look at it...
 188	Peach Blossoms
-189	The Biologist's Examination
+189	The biologist's analysis
 190	Oh! This Peach Blossom has top quality! I do,[ENTER]however, need another %s of them. Please try and[ENTER]find some!
 191	Now I've got enough Peach Blossoms. Good work![ENTER]As a token of my gratitude I'm going to give you[ENTER]some Yang and my research results.
 192	Information:
@@ -240,7 +240,7 @@
 240	I've got Jinunggyi's Soul Stone.
 241	Thank you so much![ENTER]To reward you, I'm going to give you this recipe.[ENTER]Not many people know what it is made up of and[ENTER]its secret is carefully guarded. The potion that[ENTER]you can make with the recipe gives your feet[ENTER]wings. Go and look for Baek-Go. He'll make the[ENTER]potion for you. Farewell, my friend.[ENTER]With your help I was able to find out some[ENTER]important things about the Orcs.
 242	Please come back when you have found Jinunggyi's[ENTER]Soul Stone.
-243	Chaegirab's Reward
+243	Chaegirab's reward
 244	Listen to me.
 245	Chaegirab's Reward
 246	As a reward for the Orc Teeth and Jinunggyi's[ENTER]Soul Stone, the biologist Chaegirab has given you[ENTER]a secret recipe. Please give the recipe to[ENTER]Baek-Go. He will make the miracle cure for you.
@@ -279,7 +279,7 @@
 279	I've got the Temple Soul Stone.
 280	Thank you so much![ENTER]As a reward, I'm going to give you this recipe.[ENTER]Its ingredients are known by very few and its[ENTER]secret is carefully guarded. The potion that can[ENTER]be produced with the recipe will accelerate your[ENTER]sword arm. Go and look for Baek-Go. He will[ENTER]produce the potion for you.[ENTER]Farewell, my friend. Thanks to you, I managed to[ENTER]find out lots of important information about the[ENTER]ancient magic.
 281	Please come back when you've found the Temple[ENTER]Soul Stone.
-282	Chaegirab's Reward
+282	Chaegirab's reward
 283	The biologist Chaegirab, Uriel's apprentice, is[ENTER]desperately looking for you. Go there and quickly[ENTER]find out how you can help him.
 284	Chaegirab's Reward
 285	As a reward for the Curse Books and the Soul[ENTER]Stone, the biologist Chaegirab has given you a[ENTER]secret recipe. Go to Baek-Go now, he'll make the[ENTER]miracle cure for you.
@@ -314,7 +314,7 @@
 314	You have found Sagyi's Soul Stone.
 315	I've got Sagyi's Soul Stone.
 316	Thank you so much! To reward you, I'm going to[ENTER]give you this recipe. Its composition is known by[ENTER]very few and its secret is carefully guarded. The[ENTER]potion that can be made with the recipe improves[ENTER]your evasion instinct. Go and look for Baek-Go.[ENTER]He'll brew the potion for you.[ENTER]Farewell, my friend. Thanks to your help I was[ENTER]able to find out important information about the[ENTER]demons.
-317	Chaegirab's Reward
+317	Chaegirab's reward
 318	Please come back when you've found Sagyi's Soul[ENTER]Stone.
 319	Chaegirab's Reward
 320	The biologist Chaegirab, Uriel's apprentice, is[ENTER]desperately looking for you. Go there and quickly[ENTER]find out how you can help him.
@@ -354,7 +354,7 @@
 354	Thank you so much! As a reward, I'm going to give[ENTER]you this recipe. Its composition is known by very[ENTER]few and its secret is carefully guarded. The[ENTER]potion that you can make with the recipe improves[ENTER]your attack strength. Go and look for Baek-Go.[ENTER]He'll brew the potion for you.[ENTER]Farewell, my friend. Thanks to your help I was[ENTER]able to find out important information about Ice[ENTER]Land.
 355	Please come back when you've found Aurtumryu's[ENTER]Soul Stone.
 356	The biologist Chaegirab, Uriel's apprentice, is[ENTER]desperately looking for you. Go there and quickly[ENTER]find out how you can help him.
-357	Chaegirab's Reward
+357	Chaegirab's reward
 358	As a reward for the Ice Marbles and the Soul[ENTER]Stone, the biologist Chaegirab has given you a[ENTER]secret recipe. Now go to Baek-Go, he'll make the[ENTER]miracle cure for you.
 359	The Secret Recipe
 360	Oh, is that biologist Chaegirab's secret recipe?[ENTER]Hm, it will increase your attack value by 50[ENTER]points. Here's your potion! I'm also supposed to[ENTER]give you this Wooden Box. Take good care of it.
@@ -474,7 +474,7 @@
 476	I've got the Forest Spirit Soul Stone.
 477	Biologist Chaegirab:
 478	Thank you so much![ENTER]As a reward I will give you this secret recipe.[ENTER]Not many people know what it consists of and its[ENTER]contents is a carefully guarded secret. Go and[ENTER]look for Baek-Go. He'll produce the potion for[ENTER]you. Farewell, my friend. Thanks to you I was[ENTER]able to find out lots of important information[ENTER]about the Red Forest.
-479	Chaegirab's Reward
+479	Chaegirab's reward
 480	Baek-Go:
 481	Chaegirab's Reward
 482	As a reward for the Red Ghost Tree Branches and[ENTER]the Soul Stone, the biologist Chaegirab has given[ENTER]you a secret recipe. Now go to Baek-Go, he'll[ENTER]produce the miracle cure for you.
@@ -521,7 +521,7 @@
 530	I've found the Soul Stone.
 531	Oh, good work! Now I can finally successfully[ENTER]finish my research. As a reward, I will give you[ENTER]the secret recipe for a miracle cure that Baek-Go[ENTER]can brew for you. Have a nice day! And thanks for[ENTER]all your help. I wouldn't have managed it without[ENTER]you!
 532	is missing!
-533	Chaegirab's Reward
+533	Chaegirab's reward
 534	Baek-Go:
 535	Chaegirab's Reward
 536	As a reward for getting the Leaders' Notes and[ENTER]the Soul Stone, the biologist Chaegirab has given[ENTER]you a secret recipe. Now go to Baek-Go, he'll[ENTER]make the miracle cure for you.
@@ -691,7 +691,7 @@
 700	You are at the sealed gate on the 3rd floor.[ENTER]A lot of fake stones are waiting here to confuse[ENTER]you, but one of them is the very important Metin[ENTER]Stone. You have to destroy it within 15 minutes[ENTER]or you will not be able to pass back through the[ENTER]gate.
 701	There are 10 minutes remaining.
 702	There are 5 minutes remaining.
-703	Time has run out.
+703	The time has expired.
 704	The fake Metin Stones are disappearing.
 705	I want to kill the dragon!
 706	You are not the first to request entry.[ENTER]Tell me the secret number, otherwise I cannot[ENTER]let you in!
@@ -702,7 +702,7 @@
 711	Then set the code number now:
 712	The code number may only consist of digits.
 713	The group of %s is trying to kill the Blue[ENTER]Dragon!
-714	You don't have enough keys! To activate the portal[ENTER]I need
+714	You don't have enough keys! To activate the[ENTER]portal, I need 3x
 715	You obtain it from the evil leaders Yonghan[ENTER]and Huashin.
 716	I want to leave this place
 717	I will take you back to the entrance of the grotto.
@@ -798,7 +798,7 @@
 816	Very good, you have got the %d required Energy[ENTER]Fragments. I can produce an Energy Crystal with[ENTER]that. Please wait a minute. I'll try, but I can't[ENTER]guarantee it will work.
 817	Everything's ready to melt the fragments into an[ENTER]Energy Crystal. However, I have to live on[ENTER]something too and my tools don't just fall from[ENTER]the sky. [ENTER] I require a small expenses[ENTER]charge of %d Yang. Are you willing to pay?
 818	Of course!
-819	No, not now.
+819	No, not right now.
 820	All right, I respect your decision.[ENTER]Come again when you have changed your mind and[ENTER]need an Energy Crystal after all.
 821	Sorry, you have to pay first. I'm not a charity.[ENTER]That's just business - give me the money and then[ENTER]I'll do my work.
 822	Here, your Energy Crystal. But it's only the[ENTER]first attempt that's always successful. Alchemy[ENTER]is an unpredictable science - minor mistakes lead[ENTER]to failure! There is always a small chance that[ENTER]the experiment might fail.
@@ -1539,8 +1539,8 @@
 1599	Return to the Stable Boy
 1600	If you go back to the Stable Boy, you can check[ENTER]your results on the Horse Medal.
 1601	Did everything work out? Your training will[ENTER]continue tomorrow. Today's results have been[ENTER]recorded on your Horse Medal.
-1602	Training Results
-1603	Training Results
+1602	Training results
+1603	Training results
 1604	Kill Chuong whilst riding your horse. If you get[ENTER]off your horse, you fail the mission.
 1605	Your horse has not had enough training.
 1606	Your horse can now ascend a level.
@@ -1638,8 +1638,8 @@
 1700	Is the Armed Horse Book finished yet?
 1701	Your level is too low to improve your horse. You[ENTER]can only improve your horse once you have reached[ENTER]level 35. Come again when you're ready.
 1702	I am sorry, but you will have to wait a little[ENTER]bit longer. Remember to bring the 500,000 Yang[ENTER]when you come back!
-1703	Go to the Stable Boy and get the[ENTER]Weapon Horse Book there. For that you need your[ENTER]Horse Picture and 500,000 Yang.
-1704	Go to the Stable Boy and get the[ENTER]Weapon Horse Book there. For that you need your[ENTER]Horse Picture and 500,000 Yang.
+1703	Go to the Stable Boy and get the Armed Horse[ENTER]Book. You need your Horse Picture and 500,000[ENTER]Yang to get it.
+1704	Go to the Stable Boy and get the Armed Horse[ENTER]Book. You need your Horse Picture and 500,000[ENTER]Yang to get it.
 1705	Is the Armed Horse Book ready?
 1706	If you get the Armed Horse Book, you will be able[ENTER]to ride faster and attack whilst riding.[ENTER]Here, this is for you: Preparation for the[ENTER]Military Horse Book. And another thing: You need[ENTER]500,000 Yang to improve your horse.
 1707	When you own the Armed Horse Book, you can call[ENTER]your horse any time. So look after it!
@@ -1773,8 +1773,8 @@
 1843	Kill the leader of the Black Wind Gang.
 1844	Kill the leader of the Black Wind Gang.
 1845	Kill the Black Wind Gang and their leader, find[ENTER]the keepsake and take it back to Ariyoung.
-1846	Bring Ariyoung the wedding ring.
-1847	Bring Ariyoung the wedding ring.
+1846	Take the wedding ring to Ariyoung.
+1847	Take the wedding ring to Ariyoung.
 1848	Go back to the village, give the wedding ring to[ENTER]Ariyoung, and get your reward.
 1849	This must be a divine providence![ENTER]You're bringing me back my beloved husband's[ENTER]keepsake! Thank you so much!
 1850	Greetings![ENTER]I am responsible for upgrading items.[ENTER]If you want to upgrade an item, just bring it to[ENTER]me.
@@ -1914,7 +1914,7 @@
 1991	Dragon Swirl
 1992	Enchanted Blade
 1993	Fear
-1994	Enchanted Armor
+1994	Bewitched armour
 1995	Dispel
 1996	Dark Strike
 1997	Flame Strike
@@ -1988,7 +1988,7 @@
 2065	.
 2066	Nothing (close window)
 2067	Feed
-2068	What do you want to do with my horse?
+2068	What do you want to do with your horse?
 2069	Revive
 2070	Mount
 2071	Check constitution
@@ -2142,7 +2142,7 @@
 2221	Skills? You can rise up to the level of a master, which occurs randomly between the levels of 17 and 21!
 2222	Do you want to become a grand master? Then you need a special skill book!
 2223	As soon as you have finished reading a skill book, it disappears!
-2224	All fighters up to level 5, listen to me!
+2224	All warriors up to Level 5 listen to me!
 2225	Do you want to read another skill book again? Then wait a day.
 2226	Raise your intelligence to improve your Sura skills!
 2227	Experience the mighty powers of a Sura in combat!
@@ -2173,7 +2173,7 @@
 2252	Skills? You can rise up to the level of a master, which occurs randomly between the levels of 17 and 21!
 2253	Do you want to become a grand master? Then you need a special skill book!
 2254	As soon as you have finished reading a skill book, it disappears!
-2255	All fighters up to level 5, listen to me!
+2255	All warriors up to Level 5 listen to me!
 2256	Do you want to read another skill book again? Then wait a day.
 2257	Raise your intelligence to improve your Sura skills!
 2258	Experience the mighty powers of a Sura in combat!
@@ -2204,7 +2204,7 @@
 2283	Skills? You can rise up to the level of a master, which occurs randomly between the levels of 17 and 21!
 2284	Do you want to become a grand master? Then you need a special skill book!
 2285	As soon as you have finished reading a skill book, it disappears!
-2286	All fighters up to level 5, listen to me!
+2286	All warriors up to Level 5 listen to me!
 2287	Do you want to read another skill book? You will have to wait a day.
 2288	Raise your intelligence to improve your Sura skills!
 2289	Experience the power of a Sura in combat!
@@ -2895,16 +2895,16 @@
 2974	Recently, it has started raining stones near the[ENTER]city. They seem to have an evil chi within them,[ENTER]because ever since then, animals in the area have[ENTER]started acting really crazy. Please take care of[ENTER]this problem and destroy the stones. And of[ENTER]course you will be adequately rewarded for your[ENTER]efforts.
 2975	They have eight legs 1
 2976	Kill 35 Baby Poison Spiders and 35 Deadly Poison[ENTER]Spiders.
-2977	A cave system that serves as a shelter for the[ENTER]spiders living there has been discovered in the[ENTER]Yongbi Desert. We have no detailed information[ENTER]about these spider caves, but the area is known[ENTER]to be very dangerous.[ENTER]On the other hand, the gathering of so many[ENTER]spiders in a small space offers a good[ENTER]opportunity to reduce their number and with it[ENTER]their menace. So be on your way! And be careful!
+2977	A cave system has been discovered in the Yongbi[ENTER]Desert, which serves the spiders that live there[ENTER]as a hideout. We don't know any details about[ENTER]these spider caves, but the area is known to be[ENTER]very dangerous. On the other hand, having lots of[ENTER]spiders in a confined space also gives you a good[ENTER]opportunity to reduce their numbers a little. Go[ENTER]there now! And be careful!
 2978	They have eight legs 2
 2979	Kill 35 Baby Poison Spiders and 35 Deadly Poison[ENTER]Spiders.
-2980	A cave system that serves as a shelter for the[ENTER]spiders living there has been discovered in the[ENTER]Yongbi Desert. We have no detailed information[ENTER]about these spider caves, but the area is known[ENTER]to be very dangerous.[ENTER]On the other hand, the gathering of so many[ENTER]spiders in a small space offers a good[ENTER]opportunity to reduce their number and with it[ENTER]their menace. So be on your way! And be careful!
+2980	A cave system has been discovered in the Yongbi[ENTER]Desert, which serves the spiders that live there[ENTER]as a hideout. We don't know any details about[ENTER]these spider caves, but the area is known to be[ENTER]very dangerous. On the other hand, having lots of[ENTER]spiders in a confined space also gives you a good[ENTER]opportunity to reduce their numbers a little. Go[ENTER]there now! And be careful!
 2981	They have eight legs 3
 2982	Kill 35 Red Deadly Poison Spiders and 35 Claw[ENTER]Poison Spiders.
-2983	A cave system that serves as a shelter for the[ENTER]spiders living there has been discovered in the[ENTER]Yongbi Desert. We have no detailed information[ENTER]about these spider caves, but the area is known[ENTER]to be very dangerous.[ENTER]On the other hand, the gathering of so many[ENTER]spiders in a small space offers a good[ENTER]opportunity to reduce their number and with it[ENTER]their menace. So be on your way! And be careful!
+2983	A cave system has been discovered in the Yongbi[ENTER]Desert, which serves the spiders that live there[ENTER]as a hideout. We don't know any details about[ENTER]these spider caves, but the area is known to be[ENTER]very dangerous. On the other hand, having lots of[ENTER]spiders in a confined space also gives you a good[ENTER]opportunity to reduce their numbers a little. Go[ENTER]there now! And be careful!
 2984	They have eight legs 4
 2985	Kill 40 Soldier Poison Spiders.
-2986	A cave system that serves as a shelter for the[ENTER]spiders living there has been discovered in the[ENTER]Yongbi Desert. We have no detailed information[ENTER]about these spider caves, but the area is known[ENTER]to be very dangerous.[ENTER]On the other hand, the gathering of so many[ENTER]spiders in a small space offers a good[ENTER]opportunity to reduce their number and with it[ENTER]their menace. So be on your way! And be careful!
+2986	A cave system has been discovered in the Yongbi[ENTER]Desert, which serves the spiders that live there[ENTER]as a hideout. We don't know any details about[ENTER]these spider caves, but the area is known to be[ENTER]very dangerous. On the other hand, having lots of[ENTER]spiders in a confined space also gives you a good[ENTER]opportunity to reduce their numbers a little. Go[ENTER]there now! And be careful!
 2987	Destroy the Metin of Toughness
 2988	Destroy 2 Metins of Toughness.
 2989	Recently, it has started raining stones near the[ENTER]city. They seem to have an evil chi within them,[ENTER]because ever since then, animals in the area have[ENTER]started acting really crazy. Please take care of[ENTER]this problem and destroy the stones. And of[ENTER]course you will be adequately rewarded for your[ENTER]efforts.
@@ -3184,7 +3184,7 @@
 3263	Finger Strike
 3264	Dragon Swirl
 3265	Dark Strike
-3266	Enchanted Armor
+3266	Bewitched armour
 3267	3
 3268	Which one is not the second village in Metin2?
 3269	Bokjung area
@@ -3627,7 +3627,7 @@
 3706	%d day(s) and %d hrs.
 3707	%d minute(s) and %d second(s)
 3708	%d minute(s) and %d second(s)
-3709	%d second(s)
+3709	%d sec.
 3710	Woman
 3711	You should have more respect for your elders.[ENTER]Nevertheless, I wish you all the best for the new[ENTER]year.
 3712	Happy New Year!
@@ -4008,7 +4008,7 @@
 4088	Press the M key to figure out how to get to the[ENTER]next village on the map. Use the warp portal[ENTER]indicated by the corresponding village name.[ENTER]Hurry up! Yu-Hwan is very tall - but you'll be[ENTER]able to recognise him by the instruments he has[ENTER]with him.
 4089	Kill Alpha Grey Wolves:
 4090	The Captain has a new assignment for you. Go talk[ENTER]to him.
-4091	Do you want to abandon the quest forever?
+4091	Do you want to quit this quest?
 4092	So you made it? Well done! You did not have too[ENTER]much trouble, I hope? Anyway, let's move on to[ENTER]the next step.
 4093	Find the Captain
 4094	Task completed
@@ -4310,7 +4310,7 @@
 4392	Sixth page:
 4393	Time is running out. Now we've even tried using[ENTER]black witchcraft in the Spider Dungeon and it[ENTER]still didn't work.[ENTER]What are we missing? Some of our mystics think[ENTER]that black witchcraft demands bigger sacrifices.[ENTER]If this is true, then it must be an immensely[ENTER]powerful force.
 4394	According to fairy tales and legends, this type[ENTER]of magic always demands human sacrifice. But if I[ENTER]kill their loved ones at the altar, my reputation[ENTER]amongst the people will receive a knocking. We[ENTER]need an adequate substitute. Let's try it with[ENTER]the Snake Swordsmen from the desert.
-4395	Aha. So because they couldn't sacrifice humans,[ENTER]they decided to use snake fighters. I can't[ENTER]pretend that I like this new development. It's[ENTER]going to end badly... We still need to follow[ENTER]their trail though. Go to the desert and kill[ENTER]some Snake Swordsmen and Snake Archers there. Who[ENTER]knows what else we might find there. By t he way:[ENTER]your reward is in this purse!
+4395	Aha. So because they couldn't sacrifice humans,[ENTER]they decided to use snake fighters. I can't[ENTER]pretend that I like this new development. It's[ENTER]going to end badly... We still need to follow[ENTER]their trail though. Go to the desert and kill[ENTER]some Snake Swordsmen and Snake Archers there. Who[ENTER]knows what else we might find there. By the way:[ENTER]your reward is in this purse!
 4396	Kill the snake fighters
 4397	The eighth page
 4398	Fifth page:
@@ -6342,11 +6342,11 @@
 6488	You reached patrol point 3.
 6489	Patrol point 5
 6490	Patrol point 2
-6491	Go to the second patrol point.
+6491	Go to patrol point 2.
 6492	You reached patrol point 2.
 6493	Patrol point 1
 6494	Go to patrol point 1.
-6495	You have reached the first patrol point.
+6495	You reached patrol point 1.
 6500	Go to patrol point 5.
 6505	Patrol point 5
 6511	You have reached the fifth patrol point.
@@ -6884,7 +6884,7 @@
 7060	Oh, you don't know how to get to the next[ENTER]village? Press 'M' to view the miniature map.[ENTER]A blue dot will be displayed on it. This dot[ENTER]represents the portal that will take you into the[ENTER]adjoining area. The second village is also[ENTER]situated in this area.
 7061	I will do it.
 7062	No, thank you.
-7063	Do you want to abandon the quest forever?
+7063	Do you want to quit this quest?
 7064	Come back soon.
 7065	Well, that's too bad.
 7066	That's nice to hear. Just come around again.
@@ -6897,7 +6897,7 @@
 7073	What brings you here? Oh the bookworm sent you?[ENTER]Every day he disappears with his books and[ENTER]scrolls, but he doesn't seem to get any more[ENTER]intelligent. And he's always disturbing me.[ENTER]Well, let's hear what he wants to know this time!
 7074	He wants me to list the fans according to their[ENTER]attack values? That's rather easy: Heavenly Bird[ENTER]Fan, Triple Fan, Aquatic Fan and Crane Wing Fan.[ENTER]Got it?
 7075	Back to Soon
-7076	Return to Soon
+7076	Back to Soon
 7077	Go back to Soon and give him the information.
 7078	A favour for Soon
 7079	So, was Uriel able to give you a clear answer?
@@ -6921,7 +6921,7 @@
 7101	I want him to list all fans according to their[ENTER]attack values.
 7102	I'll do it.
 7103	I won't do it.
-7104	Do you want to abandon the quest forever?
+7104	Do you want to quit this quest?
 7105	Get out, now! Useless prowler...
 7106	The Armor Order
 7107	Thank you! Go back to the Blacksmith and ask him[ENTER]how he's getting on with the armour.
@@ -6929,7 +6929,7 @@
 7109	Armour for the Armour Shop Dealer
 7110	What is it now? Why are you disturbing me? Oh,[ENTER]the Armour Shop Dealer sent you? That old man is[ENTER]very impatient. It's not that I don't want to do[ENTER]it. I just don't have the necessary materials for[ENTER]it. Could you get them for me? To produce the[ENTER]armour I need Iron Ore, Leather and Coal. You can[ENTER]get the Iron Ore from Uriel, the Leather from[ENTER]Octavio and the Coal from Yonah.
 7111	I'll get the materials for you.
-7112	No, not now.
+7112	No, not right now.
 7113	Are you sure you want to stop doing this quest?
 7114	You can also do it later. But don't wait too[ENTER]long, this mission is urgent!
 7115	Well, I suppose I'll have to get those things[ENTER]myself then. Take care.
@@ -6991,7 +6991,7 @@
 7171	You have received a Misfortune Armour+3.
 7172	You have received a Pink Clothing+3.
 7173	Yes, I want to.
-7174	No, I would rather not.
+7174	No, I'd rather not.
 7175	Will you do it later? Come back soon, this[ENTER]mission is urgent!
 7176	Wait a sec, I want to make sure that this is the[ENTER]right book... Hmm, yes, that's really fantastic.[ENTER]I'm definitely going to cook these dishes![ENTER]Thanks!
 7177	The best cookbook
@@ -7049,19 +7049,19 @@
 7229	Rice Cakes
 7230	Rice Cakes
 7231	Find the White Oath Soldier who stole the Golden[ENTER]Axe from the Blacksmith and take it back to him.
-7232	Find the golden axe
+7232	Find the Golden Axe
 7233	Found the Golden Axe
 7234	Here's the Golden Axe.
 7235	Thank you! I'm in your debt. Now I don't have to[ENTER]worry about what to tell Deokbae when I see him.
 7236	You have received 36,000 experience points.[ENTER]You have received 10,000 Yang.[ENTER]You have received an Ornament.
 7237	The Golden Axe
 7238	Do you remember my friend Deokbae? I promised to[ENTER]make him an axe. But unfortunately I wasn't[ENTER]paying attention for a few seconds and a female[ENTER]White Oath Soldier stole it from me. Can you get[ENTER]the axe back for me? A White Oath Soldier must[ENTER]have it. You should be able to recognise it.[ENTER]There aren't many of them. I'll give you a[ENTER]fantastic reward for doing it!
-7239	Do you want to abandon the quest forever?
+7239	Do you want to quit this quest?
 7240	Blacksmith:
 7241	I really want this axe! Will we see each other[ENTER]again? Goodbye.
 7242	Thank you for your assistance. But be careful,[ENTER]that clan is very dangerous.
 7243	Thank you for helping me. But be careful. The[ENTER]clan has been causing a lot of trouble lately.
-7244	Find the golden axe
+7244	Find the Golden Axe
 7245	Ask the Blacksmith where the Hairpin is.
 7246	Find the Hairpin
 7247	The Stolen Hairpin
@@ -7161,7 +7161,7 @@
 7341	I guess it was too much for you.[ENTER]Come back when you have more time!
 7342	If you don't want to, I guess it can't be helped.[ENTER]See you.
 7343	Very good![ENTER]As soon as the weapons are finished, you will get[ENTER]one from me. Good luck.
-7344	Look for Materials
+7344	Look for materials
 7345	Return to the City Guard
 7346	Eun-Jung from the White Oath
 7347	You have killed Eun-Jung from the White Oath.[ENTER]Go back to the Guardian and report back to him.
@@ -7438,7 +7438,7 @@
 7618	Oh...[ENTER]I'll wait here. Maybe later? Please?
 7619	I don't have time![ENTER]Good luck to your brother.
 7620	It wouldn't be very nice to abandon a crying[ENTER]girl. And the mission won't take much time[ENTER]either. Let's go!
-7621	Do you want to abandon the quest forever?
+7621	Do you want to quit this quest?
 7622	Yu-Rang's Rice Cake
 7623	If you have time later on, please come back. I[ENTER]don't know how we'll survive without selling the[ENTER]Rice Cakes.
 7624	Everything revolves around the rich people who[ENTER]throw Yang out the window as if there was no[ENTER]tomorrow. When we don't even know if we'll have[ENTER]food on the table tomorrow! Go away!
@@ -7487,7 +7487,7 @@
 7667	Exactly! Why don't you help me? Why don't you[ENTER]just pick the Flowers for me? It would be a great[ENTER]help to us both. What? That's not part of the[ENTER]deal? Come on, don't you see how hard I'm trying[ENTER]to win her love? Just help me! I will reward you[ENTER]with lots of Yang!
 7668	Refuse
 7669	Oh my beloved Ariyoung
-7670	Do you want to give up the quest forever?
+7670	Do you want to quit the quest?
 7671	Damn. How am I supposed to get those Flowers?[ENTER]Please come back if you change your mind.
 7672	Have you never been in love? Don't you know how I[ENTER]feel about Ariyoung? Oh Ariyoung...
 7673	Thank you very much! Please bring me those[ENTER]Flowers.
@@ -7500,7 +7500,7 @@
 7680	Do you know Lady Ariyoung? Well, she is...no,[ENTER]well she was married. Her husband died a few[ENTER]years back and since then she has been living[ENTER]alone. She has very impressive personality and[ENTER]she is still a very beautiful woman. She married[ENTER]very young and I was too late...
 7681	I will try again.
 7682	I quit.
-7683	Do you want to abandon the quest forever?
+7683	Do you want to quit this quest?
 7684	Oh...[ENTER]If you change your mind...[ENTER]I'll be waiting right here.[ENTER]Please help me!
 7685	Will my love end like this? Ariyoung...
 7686	Thank you so much. You must also be in love, if[ENTER]you can understand what I feel for Ariyoung.
@@ -7531,7 +7531,7 @@
 7711	Sure, I'll do it.
 7712	No, I can't do that.
 7713	How are you?
-7714	Do you want to abandon the quest forever?
+7714	Do you want to quit this quest?
 7715	You're busy? Come back if you change your mind.
 7716	My soup isn't very well known. If you knew what[ENTER]it was like you'd do it. Ah well, goodbye.
 7717	Then hurry up! I'll prepare everything for the[ENTER]frog's leg soup.
@@ -7557,7 +7557,7 @@
 7737	You don't know what frog's leg soup is? When you[ENTER]drink a bowl of it, you are immediately wide[ENTER]awake and full of energy. The you can work a[ENTER]whole week straight without getting tired![ENTER]Octavio used to make this soup, but for some[ENTER]reason he stopped making it a little while ago.
 7738	I'll go talk to Octavio.
 7739	I'm busy.
-7740	Do you want to abandon the quest forever?
+7740	Do you want to quit this quest?
 7741	OK, if you're busy, come back later if you find[ENTER]some time.
 7742	He should be ashamed to call himself a father! If[ENTER]I find him then, God have mercy on his soul![ENTER]Believe me, I'm not exaggerating. Ask the others[ENTER]in the village, they agree with me.
 7743	Soon
@@ -7578,7 +7578,7 @@
 7758	I really want to read that book. Could you get it[ENTER]for me? If you do it, I'll give you something in[ENTER]return, even if it means selling my house.
 7759	I'll do it!
 7760	I can't, sorry.
-7761	Do you want to abandon the quest forever?
+7761	Do you want to quit this quest?
 7762	Come on, don't you want to help me? If not now,[ENTER]then come back later. I'll be waiting for you.
 7763	You really don't want to help me? You need[ENTER]holiday, huh? The book is really important to me.[ENTER]What do I do now? Damn.
 7764	Thanks, I'll be waiting for you.
@@ -7594,7 +7594,7 @@
 7774	Oh, that's it! Many thanks![ENTER]Here is your reward.[ENTER]Now leave me alone, I have to read!
 7775	You have received 850,000 experience points.
 7776	Life is pulsing between the pages of this book![ENTER]Young knowledge and old wisdom live here![ENTER]Imagine how bleak my life would be without[ENTER]books... Only unfortunately... my wife doesn't[ENTER]understand it. Could you try convincing her that[ENTER]it's a good thing?
-7777	You receive 20,000 Yang.
+7777	You have received 20,000 Yang.
 7778	Hey... You haven't got it yet? If you start a[ENTER]quest, you should see it through until the end.[ENTER]Now finish the quest!
 7779	The Dark Fanatics are not to be underestimated.[ENTER]Just try again later.
 7780	Well, then I have to ask somebody else for help.[ENTER]Farewell.
@@ -7623,13 +7623,13 @@
 7803	Oh, you already have collected everything![ENTER]Hahaha! I can tell it's all going to work out.[ENTER]Wait a minute, it's not going to be long now.[ENTER]And here we go!
 7804	Hmm, it's finished. Sometimes I'm surprised at[ENTER]just how talented I am. Here's your weapon.[ENTER]It's new, so take good care of it!
 7805	You have received 200,000 experience points.
-7806	You receive 20,000 Yang.
+7806	You have received 20,000 Yang.
 7807	You have received a Silver Sword+3.
 7808	You have received an Aquatic Fan+3.
 7809	I want to try to forge a new weapon but it's very[ENTER]difficult to get the materials. Could you do that[ENTER]for me? I will give you the first one I finish as[ENTER]a reward.
 7810	I need 100 Gold Ore, 100 Silver Ore and 100 Ebony[ENTER]Ore. That sounds more than it is. You can get a[ENTER]lot of raw materials all at once in the mines so[ENTER]that you can collect it easily.[ENTER]If it is still too difficult for you you can[ENTER]trade them with somebody. Just as you like. I[ENTER]wish you success!
 7811	Decline
-7812	Do you want to abandon the quest forever?
+7812	Do you want to quit this quest?
 7813	No need to hurry. Come back if you change your[ENTER]mind.
 7814	Shame. It was a brilliant idea.[ENTER]Oh well, what the heck. See you!
 7815	Oh! You're going to do it?[ENTER]You're a good friend!
@@ -7643,14 +7643,14 @@
 7823	Hmmm, a lot of materials are missing. I said I[ENTER]need 100 Copper Ore, 100 Ebony Ore and 100 Pieces[ENTER]of Pearl!
 7824	Try again
 7825	Give up
-7826	Do you want to abandon the quest forever?
+7826	Do you want to quit this quest?
 7827	Is it too hard? Of course, it isn't just about[ENTER]luck, but hard work, too. Why don't you just try[ENTER]again later?
 7828	You still need more ore?
 7829	Well, there go my plans for new armour. That idea[ENTER]could have changed the world! What a shame...
 7830	Be strong! I know you can do it!
 7831	Fantastic. You're really good at getting hold of[ENTER]materials. Now, pay attention. Here... and[ENTER]here... and I'll just quickly cool it down...[ENTER]Look, this is for you, as a reward for your[ENTER]efforts. See you soon!
 7832	You have received 200,000 experience points.
-7833	You receive 20,000 Yang.
+7833	You have received 20,000 Yang.
 7834	You have received a Lion Plate Armour+3.
 7835	You have received a Red Ant Suit+3.
 7836	You have received a Ghost Plate Armour+3.
@@ -7658,7 +7658,7 @@
 7838	Hello, have you got a minute for me?[ENTER]I appreciate very much that you helped me to make[ENTER]a new weapon. Now I would like to ask for your[ENTER]help again. This time I would like to make a new[ENTER]armour. After I have made a new weapon it is[ENTER]obvious that I also need a good armour.
 7839	Of course I need materials to make the new[ENTER]armour. Can you get them for me? In return you'll[ENTER]get the first completed armour. This time I need[ENTER]100 Copper Ore, 100 Ebony Ore and 100 Pieces of[ENTER]Pearl. You should know that already. I wish you[ENTER]success!
 7840	Accept
-7841	Do you want to give up the quest forever?
+7841	Do you want to quit the quest?
 7842	Why are you hesitating? Come back when you ready[ENTER]to work in the mines.
 7843	That little bit of ore isn't too much to ask.[ENTER]Well, please yourself. Get lost!
 7844	You'll help me again? You are a good friend.[ENTER]And don't worry: the first armour is yours!
@@ -7705,12 +7705,12 @@
 7885	You have received 1,100,000 experience points.
 7886	You get a Golden Bracelet, a Golden Necklace and[ENTER]Gold Earrings.
 7887	Hmmm, I'm sorry but something is missing. I don't[ENTER]need incomplete deliveries. Will you keep trying?
-7888	Do you want to abandon the quest forever?
+7888	Do you want to quit this quest?
 7889	Thank you for not giving up so easily.[ENTER]Luck is with those who try! I'll wait here for[ENTER]you.
 7890	I also need a Piece of Jewellery and Thread. One[ENTER]you'll get from the General Store Saleswoman, the[ENTER]other from Ariyoung. It is not so easy to get so[ENTER]many things but selling necklaces is good[ENTER]business and you'll get a good reward for the[ENTER]materials. What do you think? Does that sound[ENTER]interesting?
 7891	The task is too difficult? Well, at least you've[ENTER]tried. I'll let you know if I have an easier task[ENTER]for you one day. Farewell!
 7892	You're going to try again? Thank you. I'll be[ENTER]waiting for you.
-7893	Do you want to abandon the quest forever?
+7893	Do you want to quit this quest?
 7894	You are busy? I can understand that. But please[ENTER]come back when you have time.
 7895	Oh dear, how am I going to complete all my tasks?[ENTER]See you!
 7896	Fantastic. I'll wait here for you.
@@ -7766,7 +7766,7 @@
 7946	What is the Black Wind Gang doing?
 7947	The generals are dead!
 7948	Try again
-7949	Do you want to abandon the quest forever?
+7949	Do you want to quit this quest?
 7950	Fighting isn't easy, and winning is even harder.[ENTER]Especially if you're fighting the generals. Try[ENTER]again!
 7951	Like I said, the Black Wind Gang is a very strong[ENTER]group. Goodbye.
 7952	You are really brave! I think you can defeat the[ENTER]Black Wind Gang!
@@ -7779,7 +7779,7 @@
 7959	You have received a language ring.
 7960	Although you defeated the Black Wind Gang, they[ENTER]just don't want to give up. Instead of keeping a[ENTER]low profile, they are behaving like a horde of[ENTER]wild animals. If we want to defeat them, we have[ENTER]to kill the generals of the Black Wind Gang.
 7961	Once the generals are defeated, the other members[ENTER]will go down too. It's going to be hard work, but[ENTER]we need to defeat the Black Wind generals Jak-To,[ENTER]To-Su and Gu-Ryung . If we defeat them, we won't[ENTER]have to worry about the Black Wind Gang any more.[ENTER]OK, so good luck, I'll be praying for your[ENTER]victory.
-7962	Do you want to abandon the quest forever?
+7962	Do you want to quit this quest?
 7963	Well, all right. Come back when you're ready.[ENTER]There aren't many people that are as competent as[ENTER]you.
 7964	You can't do it...?[ENTER]How are we going to defeat the Black Wind Gang[ENTER]now?
 7965	I knew I could rely on you! Once the generals are[ENTER]killed, the other members of the Black Wind Gang[ENTER]won't be a problem any more. Good luck!
@@ -7832,7 +7832,7 @@
 8012	Soon sends me...
 8013	Hey, You came back to help me again? Ahh. You[ENTER]want the book for Soon. I would have been going[ENTER]into the city soon anyway, but he is very[ENTER]impatient and asks others to get it for him. Hmm.[ENTER]Here it is. I don't understand what Soon likes[ENTER]about these stack of papers. It's much more[ENTER]important to quickly earn Yang!
 8014	Return to Soon.
-8015	Return to Soon
+8015	Back to Soon
 8016	You've got Soon's book from the Peddler. Go back[ENTER]to Soon to give him the book so he'll tell you[ENTER]how to make Celadon Porcelain.
 8017	I have got the book.
 8018	Yay! I have finally got the new book! Thank you[ENTER]very much. There aren't very many books I haven't[ENTER]read...[ENTER]I've written down what what is important about[ENTER]making Celadon Porcelain. Stick to my notes and[ENTER]you will produce fantastic porcelain.[ENTER]And now it's time for me to read the new book.[ENTER]Farewell.
@@ -7845,7 +7845,7 @@
 8025	You receive 35,000 Yang.
 8026	You have received Jade Shoes+3.
 8027	I'm going to try a new method. It isn't easy to[ENTER]produce Celadon Porcelain, that's why only very[ENTER]few people know how to do it. I need to know it,[ENTER]though, for the sake of my art! Well.... Hmm,[ENTER]Uriel the scholar might know how to do it! Please[ENTER]go see Uriel and ask him how Celadon Porcelain is[ENTER]made!
-8028	Do you want to abandon the quest forever?
+8028	Do you want to quit this quest?
 8029	Hm, I guess you're too busy? Remember to come[ENTER]back if you have some spare time.
 8030	I understand. Farewell...
 8031	Thank you. Uriel will know what to do. See you[ENTER]soon!
@@ -7886,7 +7886,7 @@
 8066	Okay, I'll get it.
 8067	About your medicine...
 8068	I can't do that.
-8069	Do you want to abandon the quest forever?
+8069	Do you want to quit this quest?
 8070	Yes
 8071	Well, maybe later, when you have some spare time.[ENTER]A lot of people are sick, but very few are[ENTER]looking for the cure.
 8072	Hmm, that's just the way it is. It's a shame that[ENTER]no one is brave enough. How is all this going to[ENTER]end...
@@ -7917,7 +7917,7 @@
 8097	You give the medicine to Balso.
 8098	Traitor Balso's medicine
 8099	Baek-Go has made medicine from the Herb of the[ENTER]Hard Monkey which can cure many rare diseases.[ENTER]Take it to the Traitor Balso in the neighbouring[ENTER]village.
-8100	Do you want to give up the quest forever?
+8100	Do you want to quit the quest?
 8101	Here's the medicine.
 8102	Are you bringing me the new medicine? There has[ENTER]been some progress in medical research? Sorry for[ENTER]troubling you. I should have asked a doctor for[ENTER]advice right from the start. However, I have to[ENTER]accept that I have to take this medicine now.
 8103	Thank you for helping me to get out of my[ENTER]miserable condition. I don't have many friends.[ENTER]Here, I know it's not much, but it comes from the[ENTER]heart. Please accept it. If I ever make it, I[ENTER]will never forget you.
@@ -7935,7 +7935,7 @@
 8115	About the Arrowheads...
 8116	These Plagued Archers have a certain disease[ENTER]which has spread across the continent. Not even[ENTER]our doctors can explain it. Arrowheads are still[ENTER]normal at the moment, but they are becoming more[ENTER]and more toxic.
 8117	I'll carry on.
-8118	Do you want to abandon the quest forever?
+8118	Do you want to quit this quest?
 8119	You're afraid of the disease. Calm down and come[ENTER]back later.
 8120	Are you sure you want to give up? Hmm, maybe this[ENTER]task really is too hard for you. I'll ask someone[ENTER]else. See you!
 8121	I see.[ENTER]You never give up, do you?[ENTER]Let's go.
@@ -7950,7 +7950,7 @@
 8130	That's why we need you! Go to Mount Sohan and[ENTER]kill Plagued Archers to get their Arrowheads.[ENTER]Those Arrowheads are poisonous but their effect[ENTER]will help us to defeat the enemy.[ENTER]We need 5,000 Arrowheads. What do you say?
 8131	I accept.
 8132	That's hard for me.
-8133	Do you want to abandon the quest forever?
+8133	Do you want to quit this quest?
 8134	Is it too far to Mount Sohan for you? Think about[ENTER]it. This mission is of great importance.
 8135	Hm, you're afraid of Plagued Archers? I suppose I[ENTER]overestimated you. I see there's no more hope for[ENTER]us.
 8137	You have collected all 100 Spider Eyes for[ENTER]Octavio's new recipe. You should quickly take[ENTER]them to him.
@@ -7969,7 +7969,7 @@
 8150	Thank you for not leaving me in the lurch.[ENTER]You're very kind!
 8151	I would really like to try this dish but how am I[ENTER]supposed to get hold of the Spider Eyes? I really[ENTER]need your help again! Please get Spider Eyes from[ENTER]the Spiders in the Yongbi Desert.
 8152	Could you do that for me? I would really be very[ENTER]grateful. To try I this recipe I need one hundred[ENTER]eyes for a reasonably sized portion. I'm really[ENTER]excited...
-8153	Do you want to abandon the quest forever?
+8153	Do you want to quit this quest?
 8154	I really want to make this recipe, so if you feel[ENTER]like doing me a favour, please come visit me.
 8155	Hm, where am I going to get these eyes from?[ENTER]Okay, see you soon.
 8156	Thank you. I knew you'd do me this favour. I'll[ENTER]treat you to a really nice meal for doing this.
@@ -7995,7 +7995,7 @@
 8176	I heard that the Proud Dark Colonel in the Hwang[ENTER]Temple apparently has a Temple Scarf and a Temple[ENTER]Doctrine. Please help me and my comrades to calm[ENTER]down those who died for their country.
 8177	I'll help you.
 8178	I'm sorry, I'm too scared.
-8179	Do you want to abandon the quest forever?
+8179	Do you want to quit this quest?
 8180	Help us to calm down their souls, so that they[ENTER]can rest in peace. I'll wait for your help here.
 8181	The Spider with the Bell
 8182	The spider
@@ -8012,7 +8012,7 @@
 8193	A spider with a bell...?
 8194	To be honest... She is right. I wasn't brave[ENTER]enough to tell her because I am too proud.
 8195	But you look very strong! Can't you put the bell[ENTER]on a baby spider for me and then say it was me?[ENTER]Please, please. Otherwise they will make fun of[ENTER]me for the rest of my life.
-8196	Do you want to abandon the quest forever?
+8196	Do you want to quit this quest?
 8197	You don't want to do it? But you are not going to[ENTER]tell Yu-Rang the truth?[ENTER]Please, help me. Come back when you have time for[ENTER]me!
 8198	Now Yu-Rang will never talk to me again![ENTER]Or just laugh at me...
 8199	Ah, I was right. I knew you were as nice as you[ENTER]look. Thank you for your help. Good luck!
@@ -8045,7 +8045,7 @@
 8226	Accept
 8227	Taurean gives you a reward for helping him to[ENTER]lie: you have received 30,000 Yang.
 8228	You have received 700,000 experience points.
-8229	Do you want to give up the quest forever?
+8229	Do you want to quit the quest?
 8230	Why not? Are you afraid?[ENTER]Visit me when you have changed your mind.
 8231	Aaah, are you afraid?[ENTER]But you are much taller and stronger than me![ENTER]Haha, you are a coward! Then I have to ask[ENTER]someone else.
 8232	The spiders live in the desert. You are strong. I[ENTER]am sure you can do it. Good luck!
@@ -8087,14 +8087,14 @@
 8268	You get the Desert Sand from the Desert Outlaws,[ENTER]you can get the Crystal Ore from crystal mines[ENTER]and to get the Monkey Blood, you will have to[ENTER]kill monkeys in the Sangsun Dong. Can you get[ENTER]these materials for me? I know, it won't be easy[ENTER]but I will reward you generously.
 8269	Accept
 8270	Decline
-8271	Do you want to give up the quest forever?
+8271	Do you want to quit the quest?
 8272	If you are too busy now, come back later.
 8273	You're giving up? Really? Then I guess I'll have[ENTER]to look for everything myself. I really need this[ENTER]porcelain. Good bye and good luck.
 8274	Ah! That's it.
 8276	Captain
 8277	I don't know.
 8278	Show me again.
-8279	Do you want to give up the quest forever?
+8279	Do you want to quit the quest?
 8280	Think about it again, and come back later. But[ENTER]don't tell anybody about it!
 8281	Oh dear! Is it that hard? You were my last[ENTER]hope... Who is going to decipher it now?
 8282	Okay, but be quick. Otherwise somebody is going[ENTER]to get suspicious...[ENTER][ENTER]SEE MINE[ENTER]THE DIGS[ENTER]NO[ENTER]HR IN ZOO
@@ -8121,9 +8121,9 @@
 8304	No idea
 8305	ATTENTION![ENTER]Ah, it's you. It's great that you're here![ENTER]I have received some information from Yu-Hwan.[ENTER]She has written it in secret writing as usual. It[ENTER]takes me ages to decipher it. And it has to be[ENTER]dealt with quickly. Last time you managed to do[ENTER]it quite easily. Please, would you help me again?
 8306	Yes, you are right! Now I also understand. I'm[ENTER]proud of you. You are one of our best soldiers![ENTER]This sentence is an agreed password. It means[ENTER]that Yu-Hwan has exposed the enemy spies and we[ENTER]have take action against them. I will give out[ENTER]the necessary orders immediately.
-8307	You receive 20,000 Yang.
+8307	You have received 20,000 Yang.
 8308	You will figure it out. Come back when you feel[ENTER]ready!
-8309	Do you want to give up the quest forever?
+8309	Do you want to quit the quest?
 8310	But you managed to do it last time. Why are you[ENTER]hesitating now? Think about it again.
 8311	I know what you mean.[ENTER]You don't want to work with us any more, right?[ENTER]That's a pity. There aren't many brave warriors.
 8312	Oh! You're my saviour! Look, this is the code.[ENTER]Have a close look!
@@ -8154,7 +8154,7 @@
 8337	You have received 50,000 Yang.
 8338	Surely, you know Yu-Hwan the musician, don't you?[ENTER]He's also a spy and works for us. One spy alone[ENTER]doesn't help though, so we have several all over[ENTER]the world. One of them is in the first village[ENTER]pretending to be a fisherman.
 8339	Since I can't get into direct contact with him[ENTER]without blowing his cover, I'm in need of some[ENTER]help from fearless soldiers. Yes, I mean you![ENTER]Would you please go to this Fisherman and get me[ENTER]his latest report.[ENTER]It is vitally important for the safety of our[ENTER]kingdom!
-8340	Do you want to abandon the quest forever?
+8340	Do you want to quit this quest?
 8341	You want to prepare yourself first? Okay, then[ENTER]come back later. I'll be waiting for you. But[ENTER]please hurry up; I need this report!
 8342	What's wrong with you? Last time, you did[ENTER]fantastic work for us! And now you just want to[ENTER]abandon your country? But there's nothing I can[ENTER]do about it. Farewell.
 8343	I knew I could rely on you. Good luck and be[ENTER]careful!
@@ -8173,7 +8173,7 @@
 8356	Why do you ask? Because Taurean and Harang are[ENTER]arguing? That's nothing new. But Harang is right.[ENTER]Bingsu is an especially popular food in hot[ENTER]summers. Taurean is a good boy actually, evn if[ENTER]he is sometimes a little petty. If you get the[ENTER]ingredients I could make Bingsu for him.
 8357	Bingsu?
 8358	I would like to give Taurean a treat and give him[ENTER]Bingsu. What do you think? Can you go get Ice[ENTER]from Mount Sohan?
-8359	Do you want to give up the quest forever?
+8359	Do you want to quit the quest?
 8360	Don't you like ice cream? Or have you eaten too[ENTER]much already? It's for Taurean so please think[ENTER]about it again.
 8361	Pity. Taurean is going to be very disappointed.[ENTER]See you.
 8362	Very good. I need Chunks of Ice from the[ENTER]Enchanted Ice on Mount Sohan. Bring me 50 Chunks[ENTER]of Ice. Then I can make some yummy Bingsu.
@@ -8248,7 +8248,7 @@
 8431	To improve your mount to a wild mount you need to[ENTER]go on the hunt for the Scroll of Evolution. Find[ENTER]the Scroll of Mutation so that you can train the[ENTER]wild creature to become a valiant mount. They say[ENTER]that they are hidden in a faraway land populated[ENTER]with dangerous giants!
 8432	Bring me these scrolls and I will improve your[ENTER]mount. You don't happen to have them on you[ENTER]already?
 8433	Yes, I want to improve my mount!
-8434	No, not now.
+8434	No, not right now.
 8435	Ah, you have on of the scrolls with you. Which[ENTER]one is it then? The Scroll of Evolution will let[ENTER]you train an inexperienced young animal for[ENTER]battle. The Scroll of Mutation you can improve it[ENTER]to become a valiant mount.
 8436	I've got the Scroll of Mutation.
 8437	I've got the Scroll of Evolution.

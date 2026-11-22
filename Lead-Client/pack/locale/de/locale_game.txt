@@ -11,7 +11,7 @@ CANNOT_SHOOT_SELF_IN_SAFE	Ich kann den Gegner von hier nicht angreifen.
 CANNOT_SKILL_APPROACH	Ich bin mir sicher, dass ich nicht näher rankomme.
 CANNOT_SKILL_ATTACK	Ich kann das nicht angreifen.
 CANNOT_SKILL_DEST_IN_SAFE	Der Gegner ist zu weit weg.
-CANNOT_SKILL_EQUIP_FISHING_ROD	Ich benötige eine Angelrute.
+CANNOT_SKILL_EQUIP_FISHING_ROD	Ohne ausgerüstete Angelrute kannst du keine Fische fangen.
 CANNOT_SKILL_HAVE_TO_RIDE	Ich brauche ein Pferd, um das zu verwenden.
 CANNOT_SKILL_NEED_EMPTY_BOTTLE	Ich habe keine leere Flasche.
 CANNOT_SKILL_NEED_POISON_BOTTLE	Ich habe keine Giftflasche.
@@ -46,7 +46,7 @@ CHAT_INSULT_STRING	Der Satz enthält unzulässige Wörter.
 CHAT_LOG	Alte Nachrichten anzeigen [L]
 CHAT_LOG_TITLE	Chat-Protokoll
 CHAT_NORMAL	Normal
-CHAT_NOTICE	Ankündigung
+CHAT_NOTICE	Server
 CHAT_PARTY	Gruppe
 CHAT_SEND_CHAT	Chat senden
 CHAT_SEND_MEMO	Flüstern senden [Umschalt+Eingabe]
@@ -59,11 +59,11 @@ CREATE_FAILURE	Du kannst den Charakter nicht erstellen.
 CREATE_GM_NAME	GM
 CREATE_INPUT_NAME	Gib den Namen ein.
 DAY	T
-DO_YOU_BUY_ITEM1	Möchtest du %s für %s kaufen?
-DO_YOU_BUY_ITEM2	Möchtest du %s %s für %s kaufen?
+DO_YOU_BUY_ITEM1	Möchtest du %s für %s Yang kaufen?
+DO_YOU_BUY_ITEM2	Möchtest du %s (%s Stück) für %s Yang kaufen?
 DO_YOU_DROP_MONEY	Möchtest du %d Yang fallen lassen?
-DO_YOU_SELL_ITEM1	Möchtest du %s für %s verkaufen?
-DO_YOU_SELL_ITEM2	Möchtest du %s %s für %s verkaufen?
+DO_YOU_SELL_ITEM1	Möchtest du %s für %s Yang verkaufen?
+DO_YOU_SELL_ITEM2	Möchtest du %s (%s Stück) für %s Yang verkaufen?
 DRAGON_SOUL_CANNOT_REFINE	Diesen Drachenstein kannst du nicht veredeln.
 DRAGON_SOUL_CANNOT_REFINE_MORE	Dieser Drachenstein hat die höchste Stufe bereits erreicht.
 DRAGON_SOUL_EQUIP_WARNING1	Es ist schwierig, einen Drachenstein wieder zu entfernen.
@@ -144,7 +144,7 @@ GUILDMARK_UPLOADER_ERROR_64_WIDTH	Breite beträgt nicht 64 Pixel
 GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	Das Spiel unterstützt dieses Bild nicht.
 GUILDMARK_UPLOADER_ERROR_PATH	Verschiebe die Dateien in den Ordner metin2/upload.
 GUILDMARK_UPLOADER_ERROR_SELECT	Keine Bilddatei ausgewählt.
-GUILDWAR_CTF_TITLE	Flagge erobern
+GUILDWAR_CTF_TITLE	Flaggenkampf
 GUILDWAR_NORMAL_TITLE	Feldschlacht
 GUILDWAR_WARP_TITLE	Arenakampf
 GUILD_BUILDING_GRADE	Rang
@@ -170,11 +170,11 @@ GUILD_NO_NOTICE_PERMISSION	Du bist nicht berechtigt, eine Ankündigung zu machen
 GUILD_OBJECT	Objekte
 GUILD_OFFER_EXP	Erfahrung investieren
 GUILD_SHORT_EXP	Nicht genug Erfahrungspunkte.
-GUILD_TILE_BASEINFO	Basisinformationen
-GUILD_TILE_BOARD	Tafel
+GUILD_TILE_BASEINFO	Landinformationen
+GUILD_TILE_BOARD	Gildennotizen
 GUILD_TILE_GRADE	Rechteverwaltung
 GUILD_TILE_INFO	Gildeninformationen
-GUILD_TILE_MEMBER	Gildenmitglieder
+GUILD_TILE_MEMBER	Mitglieder
 GUILD_TILE_SKILL	Gildenfertigkeiten
 GUILD_WAR_LIMIT_30MIN	Zeit: 30 Minuten
 GUILD_WAR_REWARD_POTION	Belohnung: Sieger erhält Tränke
@@ -197,7 +197,7 @@ HOW_MANY_ITEM_DO_YOU_DROP1	Möchtest du %s fallen lassen?
 HOW_MANY_ITEM_DO_YOU_DROP2	Möchtest du %s %d fallen lassen?
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Lösch-Code aus der Accountverwaltung eingeben.
 INPUT_PRIVATE_CODE_DIALOG_TITLE	Charakter löschen
-INVENTORY_REALLY_USE_ITEM	Möchtest du diesen Gegenstand verwenden?
+INVENTORY_REALLY_USE_ITEM	Item auf diesen Gegenstand anwenden?
 JOB_ASSASSIN	Ninja
 JOB_SHAMAN	Schamane
 JOB_SURA	Sura
@@ -205,16 +205,16 @@ JOB_WARRIOR	Krieger
 LEFT_TIME	Verbl. Zeit
 LOGIN_CONNECT_FAILURE	Fehler beim Verbinden mit dem Server.
 LOGIN_CONNECT_SUCCESS	Verbindung zum Server hergestellt.
-LOGIN_CONNETING	Du wirst mit dem Server verbunden...
-LOGIN_FAILURE_ALREAY	Dein Konto ist bereits verbunden.
+LOGIN_CONNETING	Bitte warte. Du wirst mit dem Server verbunden.
+LOGIN_FAILURE_ALREAY	Dein Account ist bereits verbunden.
 LOGIN_FAILURE_BE_SAME_KEY	Anmeldeproblem
-LOGIN_FAILURE_BLOCK_ID	Das Konto ist gesperrt.
-LOGIN_FAILURE_BLOCK_LOGIN	Bitte wähle einen anderen Server!
-LOGIN_FAILURE_NOBILL	Das Konto verfügt über keine Spielzeit.
-LOGIN_FAILURE_NOT_AVAIL	Das Konto ist nicht verfügbar.
+LOGIN_FAILURE_BLOCK_ID	Dieser Account ist gesperrt.
+LOGIN_FAILURE_BLOCK_LOGIN	Geschlossener Server: Nur Accounts, die vor der Schließung erstellt wurden, haben Zutrittsrecht. Bitte wähle einen anderen!
+LOGIN_FAILURE_NOBILL	Der Account verfügt über keine Spielzeit.
+LOGIN_FAILURE_NOT_AVAIL	Der Account ist nicht verfügbar.
 LOGIN_FAILURE_NOT_EXIST_ID	Accountname oder Passwort falsch.
-LOGIN_FAILURE_REPAIR_ID	Für das Konto werden gerade Gegenstände wiederhergestellt.
-LOGIN_FAILURE_SAMELOGIN	Jemand hat sich mit deinem Konto verbunden.
+LOGIN_FAILURE_REPAIR_ID	Für diesen Account werden gerade Gegenstände wiederhergestellt.
+LOGIN_FAILURE_SAMELOGIN	Jemand hat sich mit deinem Account verbunden.
 LOGIN_FAILURE_SHUTDOWN	Der Server ist noch nicht offen.
 LOGIN_FAILURE_TOO_MANY_USER	Du konntest keine Verbindung herstellen, da es zu viele Spieler gibt.
 LOGIN_FAILURE_UNKNOWN	Du konntest dich aus unbekannten Gründen nicht anmelden.
@@ -287,7 +287,7 @@ PARTY_BONUS_SKILL_MASTER	Max. MP: +%d	SA
 PARTY_BONUS_TANKER	Max. TP: +%d	SA
 PARTY_BREAK_UP	Gruppe auflösen
 PARTY_DO_YOU_ACCEPT	 möchte der Gruppe beitreten.
-PARTY_DO_YOU_JOIN	 hat dich in seine Gruppe eingeladen. Annehmen?
+PARTY_DO_YOU_JOIN	 hat dich in eine Gruppe eingeladen. Annehmen?
 PARTY_EXP_DISTRIBUTION_MODE	EXP-Verteilung
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL	levelabhängig
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Gruppenmitglieder höherer Level erhalten mehr EXP.
@@ -348,8 +348,8 @@ QUICKSLOT_REGISTER_DISABLE_ITEM	Dieser Gegenstand kann nicht zum Schnellzugriffs
 RECEIVE_MESSAGE	%s hat dir eine Nachricht gesendet.
 REFINE_COST	Verbesserungskosten: %s
 REFINE_DESTROY_WARNING	Der Gegenstand könnte beim Veredeln zerstört werden.
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Dies erhöht die Verbesserungswahrscheinlichkeit,
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	aber bei einem Fehlschlag wird der Gegenstand zerstört. Möchtest du fortfahren?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Möchtest du den Gegenstand wirklich upgraden?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	Bei einem Fehlschlag wird der Gegenstand zerstört. Möchtest du fortfahren?
 REFINE_DOWN_GRADE_WARNING	Der Gegenstand könnte beim Veredeln schlechter werden.
 REFINE_DO_YOU_SEPARATE_METIN	Alle vorhandenen Geiststeine entfernen?
 REFINE_FAILURE	Tja, hat nicht geklappt! Wir haben versagt.
@@ -364,7 +364,7 @@ REFINE_FAILURE_SOCKET_DISABLE_ITEM	Auf diesem Gegenstand können keine Fassungen
 REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Dieser Gegenstand kann nicht verbessert werden.
 REFINE_SUCCESS	Die Gegenstandsverbesserung war erfolgreich.
 REFINE_SUCCESS_PROBALITY	Verbesserungschance: %d%%
-REFINE_WARNING2	Möchtest du fortfahren?
+REFINE_WARNING2	Möchtest du mit der Aufwertung fortfahren?
 SAFEBOX_ERROR	Du hast das falsche Kennwort eingegeben.
 SAFEBOX_SELL_DISABLE_SAFEITEM	Du kannst keine der gespeicherten Gegenstände verkaufen.
 SAFEBOX_WRONG_PASSWORD	Die Kennwörter müssen identisch sein.
@@ -378,7 +378,7 @@ SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	Der Charaktername existiert bereits.
 SELECT_CHANGE_FAILURE_STRANGE_INDEX	Versuche es erneut.
 SELECT_CHANGE_FAILURE_STRANGE_NAME	Dies ist der falsche Charaktername.
 SELECT_CHANGE_NAME_TITLE	Charakternamen ändern
-SELECT_DELEING	Charakter wird gelöscht
+SELECT_DELEING	Löschung wird gestartet ...
 SELECT_DELETED	Löschung erfolgreich.
 SELECT_DO_YOU_DELETE_REALLY	Möchtest du fortfahren?
 SELECT_EMPTY_SLOT	Dies ist ein leeres Feld.
@@ -389,7 +389,7 @@ SHOP_CANNOT_SELL_ITEM	Dieser Gegenstand ist nicht zu verkaufen.
 SHOP_ERROR_UNKNOWN	Unbekannter Ladenfehler: %s
 SHOP_INVALID_POS	Dieser Gegenstand ist ungeeignet.
 SHOP_INVENTORY_FULL	Im Inventar ist kein Platz mehr.
-SHOP_NOT_ENOUGH_MONEY	Nicht genug Yang
+SHOP_NOT_ENOUGH_MONEY	Nicht genug Won oder Yang
 SHOP_NOT_ENOUGH_MONEY_EX	Du hast nicht genügend Yang.
 SHOP_SELL_INFO	Wähle in deinem Inventarfenster den Gegenstand aus, den du verkaufen möchtest.
 SHOP_SOLDOUT	Ausverkauft
@@ -487,7 +487,7 @@ TOOLTIP_ANTI_CRITICAL_PCT	Widerstand gegen kritischen Treffer +%d%%	SA
 TOOLTIP_ANTI_PENETRATE_PCT	Widerstand gegen durchbohrenden Treffer +%d%%	SA
 TOOLTIP_ANTI_SELL	Kann nicht im Geschäft verkauft werden.
 TOOLTIP_APPLY_ATTBONUS_ANIMAL	Stark gegen Tiere +%d%%	SA
-TOOLTIP_APPLY_ATTBONUS_ASSASSIN	Stark gegen Ninjas +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_ASSASSIN	Stark gegen Ninja +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_DEVIL	Stark gegen Teufel +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_HUMAN	Stark gegen Halbmenschen +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_MILGYO	Stark gegen Esoterische +%d%%	SA
@@ -497,7 +497,7 @@ TOOLTIP_APPLY_ATTBONUS_SHAMAN	Stark gegen Schamanen +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_SURA	Stark gegen Sura +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_UNDEAD	Stark gegen Untote +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_WARRIOR	Stark gegen Krieger +%d%%	SA
-TOOLTIP_APPLY_BLOCK	Chance, Nahkampf-Angriff abzublocken %d%%	SA
+TOOLTIP_APPLY_BLOCK	Chance, Nahkampfangriff abzublocken %d%%	SA
 TOOLTIP_APPLY_CRITICAL_PCT	Chance auf krit. Treffer +%d%%	SA
 TOOLTIP_APPLY_DAMAGE_SP_RECOVER	%d%% Chance, MP bei Treffer zurückzuerhalten	SA
 TOOLTIP_APPLY_DODGE	%d%% Chance, Pfeilangriff auszuweichen	SA
@@ -530,7 +530,7 @@ TOOLTIP_APPLY_RESIST_SWORD	Schwertverteidigung %d%%	SA
 TOOLTIP_APPLY_RESIST_TWOHAND	Zweihänderverteidigung %d%%	SA
 TOOLTIP_APPLY_RESIST_WARRIOR	Abwehrchance gegen Kriegerangriffe %d%%	SA
 TOOLTIP_APPLY_RESIST_WIND	Windwiderstand %d%%	SA
-TOOLTIP_APPLY_SKILL_BOOK_BONUS	Chance, aus Büchern zu lernen um Faktor 2,5 verbessert.	SNA
+TOOLTIP_APPLY_SKILL_BOOK_BONUS	Chance, aus Büchern zu lernen um Faktor 2,5 verbessert	SNA
 TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	Wenn das Lernen fehlschlägt, hast du sofort einen weiteren Versuch frei.	SNA
 TOOLTIP_APPLY_SLOW_PCT	Verlangsamungschance %d%%	SA
 TOOLTIP_APPLY_STEAL_HP	%d%% Schaden wird von TP absorbiert	SA
@@ -545,15 +545,15 @@ TOOLTIP_AUTO_POTION_HP	Elixier der Sonne
 TOOLTIP_AUTO_POTION_REST	Restmenge: %.2f%%
 TOOLTIP_AUTO_POTION_SP	Elixier des Mondes
 TOOLTIP_AUTO_POTION_USING	Aktiv
-TOOLTIP_BOW_DISTANCE	Bogenreichweite +%dm	SA
+TOOLTIP_BOW_DISTANCE	Reichweite +%d m	SA
 TOOLTIP_BUYPRICE	Preis: %s
 TOOLTIP_CAST_SPEED	Zaubergeschwindigkeit +%d%%	SA
 TOOLTIP_CON	Vitalität +%d	SA
 TOOLTIP_COSTUME_ATTR_BONUS	Kostümbonus %d%%	SA
 TOOLTIP_DEF_GRADE	Verteidigung +%d	SA
 TOOLTIP_DEX	Beweglichkeit +%d	SA
-TOOLTIP_DRAGON_SOUL_DECK1	Erde	SNA
-TOOLTIP_DRAGON_SOUL_DECK2	Himmel	SNA
+TOOLTIP_DRAGON_SOUL_DECK1	Himmel	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Erde	SNA
 TOOLTIP_EAR	Ohrring
 TOOLTIP_ENERGY	Energie %d	SA
 TOOLTIP_FISHINGROD_EXP	Punkte: %d / %d
@@ -588,17 +588,17 @@ TOOLTIP_MAGIC_ATTBONUS_PER	Magischer Angriff +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	Magischer Angriffswert +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Magische Verteidigung +%d	SA
 TOOLTIP_MALL_ATTBONUS	Angriffswert +%d%%	SA
-TOOLTIP_MALL_ATTBONUS_STATIC	Angriffswert +12~15%	SNA
+TOOLTIP_MALL_ATTBONUS_STATIC	Angriffswert	SNA
 TOOLTIP_MALL_AUTOLOOT	Autom. wird das Yang aufgenommen.	SNA
 TOOLTIP_MALL_DEFBONUS	Verteidigung +%d%%	SA
-TOOLTIP_MALL_DEFBONUS_STATIC	Verteidigung +12~15%	SNA
+TOOLTIP_MALL_DEFBONUS_STATIC	Verteidigung	SNA
 TOOLTIP_MALL_EXPBONUS	EXP +%d%%	SA
 TOOLTIP_MALL_EXPBONUS_STATIC	50% mehr EXP	SNA
 TOOLTIP_MALL_FISH_MIND	Die Chance, einen Fisch zu fangen, ist erhöht.	SNA
 TOOLTIP_MALL_GOLDBONUS	Dropchance von Yang (%.1f)	SA
 TOOLTIP_MALL_GOLDBONUS_STATIC	Doppelte Dropchance Yang	SNA
 TOOLTIP_MALL_ITEMBONUS	Dropchance von Gegenständen (%.1f)	SA
-TOOLTIP_MALL_ITEMBONUS_STATIC	Doppelte Dropchance von Gegenständen	SNA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Dropchance von Gegenständen um 200% erhöht.	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	Liebespunkte wachsen schneller an.	SNA
 TOOLTIP_MALL_SAFEBOX	Es steht mehr Lagerraum zur Verfügung.	SNA
 TOOLTIP_MAX_HP	Max. TP +%d	SA
@@ -638,7 +638,7 @@ TOOLTIP_POTION_SEC	Sek.
 TOOLTIP_POTION_TIME	Dauer:
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	%s Level %d erforderlich
 TOOLTIP_REQUIREMENT_STAT_LEVEL	%s %d erforderlich
-TOOLTIP_RESIST_BOW	Pfeilwiderstand %d%%	SA
+TOOLTIP_RESIST_BOW	Pfeilverteidigung %d%%	SA
 TOOLTIP_RESIST_DARK	Widerstand gegen Dunkelheit +%d%%	SA
 TOOLTIP_RESIST_EARTH	Erdwiderstand +%d%%	SA
 TOOLTIP_RESIST_ELEC	Blitzwiderstand %d%%	SA
@@ -658,7 +658,7 @@ TOOLTIP_SKILL_AFFECT_DEF_GRADE	Verteidigung:
 TOOLTIP_SKILL_AFFECT_DODGE	Gegnerischer Angriffswert: -
 TOOLTIP_SKILL_AFFECT_HEAL	TP wiederherstellen:
 TOOLTIP_SKILL_AFFECT_MOV_SPEED	Bewegungsgeschwindigkeit: +
-TOOLTIP_SKILL_AFFECT_REFLECT_MELEE	Chance, Nahkampf-Angriff zu reflektieren:
+TOOLTIP_SKILL_AFFECT_REFLECT_MELEE	Chance, Nahkampfangriff zu reflektieren:
 TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Widerstand gegen körperlichen Schaden:
 TOOLTIP_SKILL_COOL_TIME	Aufladezeit: 
 TOOLTIP_SKILL_DAMAGE_BONUS	Fertigkeitsschaden %d%%	SA

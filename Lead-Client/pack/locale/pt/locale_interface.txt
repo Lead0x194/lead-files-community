@@ -1,8 +1,8 @@
-ACCEPT	Aceitar
-ATTACH_METIN_INFO	Queres usar a Pedra Espiritual?
-ATTACH_METIN_TITLE	Usar a Pedra Espiritual
+ACCEPT	OK
+ATTACH_METIN_INFO	Queres usar a Pedra Espírita?
+ATTACH_METIN_TITLE	Usar Pedra Espírita
 CANCEL	Cancelar
-CHANGE_PASSWORD_CONFIRM	Confirmar a nova Palavra-passe
+CHANGE_PASSWORD_CONFIRM	Confirmar Nova Pass.
 CHANGE_PASSWORD_NEW	Nova Palavra-passe
 CHANGE_PASSWORD_OLD	Palavra-passe Antiga
 CHANGE_PASSWORD_TITLE	Alterar a Palavra-passe
@@ -51,7 +51,7 @@ EMPIRE_EXIT	Sair
 EMPIRE_NEXT	Próximo
 EMPIRE_PREV	Voltar
 EMPIRE_SELECT	Escolher
-EXCHANGE_ACCEPT	Aceitar
+EXCHANGE_ACCEPT	OK
 EXCHANGE_TITLE	Comércio
 GAMEOPTION_TITLE	Opções do jogo
 GAME_EXIT_OBSERVER	Fechar Modo de Observação
@@ -63,7 +63,7 @@ GRADE	Classe
 GRADE_SELECT	Classe
 GUILD_BASENAME	Nome Base
 GUILD_BOARD_ID	Nome
-GUILD_BOARD_REFRESH	Actualizar (F5)
+GUILD_BOARD_REFRESH	Actualizar
 GUILD_BOARD_TEXT	Mensagem
 GUILD_BUILDING_CATEGORY_TITLE	Unidades de Construção
 GUILD_BUILDING_CHANGE	Alterar
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Tábuas
 GUILD_BUILDING_POSITION	Posição
 GUILD_BUILDING_PREVIEW	Pré-visualizar
 GUILD_BUILDING_PRICE	Preço
-GUILD_BUILDING_REFRESH	Actualizar (F5)
+GUILD_BUILDING_REFRESH	Actualizar
 GUILD_BUILDING_STONE	Pedras
 GUILD_BUILDING_TITLE	Construções da Guild
 GUILD_CRYSTAL	Cristal
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Deixar Recurso
 GUILD_GEM	Gema
 GUILD_GRADE_CHANGE_GRADE_NAME	Novo Nome de Estatuto
 GUILD_GRADE_NUM	N.º
-GUILD_GRADE_PERMISSION_DELETE	Expulsar
-GUILD_GRADE_PERMISSION_JOIN	Convidar
-GUILD_GRADE_PERMISSION_NOTICE	Escrever
-GUILD_GRADE_PERMISSION_SKILL	Habilidades
+GUILD_GRADE_PERMISSION_DELETE	Remover da Guild
+GUILD_GRADE_PERMISSION_JOIN	Pode aceitar jogadores na guild
+GUILD_GRADE_PERMISSION_NOTICE	Pode compor mensagens de Guild
+GUILD_GRADE_PERMISSION_SKILL	Habilidades de Guild
 GUILD_GRADE_RANK	Estatuto
 GUILD_GRADE_WRITE	Escrever
 GUILD_INFO	Informações da Guild
@@ -111,12 +111,12 @@ GUILD_INFO_UPLOAD_MARK	Enviar Ícone
 GUILD_INFO_UPLOAD_SYMBOL	Enviar Bandeira
 GUILD_MARK	Ícone da Guild
 GUILD_MEMBER_JOB	Raça
-GUILD_MEMBER_KNIGHT	Líder
+GUILD_MEMBER_KNIGHT	Combatente
 GUILD_MEMBER_LEVEL	Nível
 GUILD_MEMBER_NAME	Nome
 GUILD_MEMBER_RANK	Estatuto
 GUILD_MEMBER_SPECIFIC_GRAVITY	Doar
-GUILD_METIN_STONE	Pedra Metin
+GUILD_METIN_STONE	Pedra Espírita
 GUILD_MINENAL	Mineral
 GUILD_MONEY	Yang
 GUILD_NAME	Guild
@@ -140,8 +140,8 @@ HELP_ATTACK_KEY	Ataque: Carrega na Barra de Espaços ou no Botão Esquerdo do Ra
 HELP_CHANGE_PK_MODE	Alterar Modo de Ataque: Carrega no 'Ctrl' + 'B' para alterar o Modo de Ataque.
 HELP_CHARACTER_BUTTON1	(Janela de Personagem, Janela de Inventário,
 HELP_CHARACTER_BUTTON2	Lista de Amigos e Opções)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Visão da Câmera: Botão do Meio do Rato ou Botão Direito do Rato
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Visão da Câmera: Botão do Meio do Rato ou Botão Direito do Rato
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Câmara Padrão: botão central do rato
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Câmara Alternativa: atribuir ao botão esquerdo ou direito do rato
 HELP_EXP	Experiência
 HELP_FURY	Loja de Itens Online
 HELP_GUILD_WINDOW	Abrir Janela de Guild: Alt + G
@@ -160,7 +160,7 @@ HELP_OPEN_QUEST	Abrir Janela de Tarefas: N
 HELP_OPEN_SKILL	Abrir Janela de Habilidades: V
 HELP_OPEN_WHISPER	Abrir Janela de Mensagens Privadas: Shift + Enter
 HELP_OPEN_ZONEMAP	Abrir Mapa Grande: M
-HELP_PICK_ITEM	Recolher Items: Tecla 'Z' e '' ou Botão Esquerdo do Rato.
+HELP_PICK_ITEM	Recolher Items: Teclas Z ou \ ou Botão Esquerdo do Rato.
 HELP_QUICKSLOT	Campos de Acesso Rápido
 HELP_SCREEN_CAPTURE	Gravar Print - Tecla 'Print Screen' para tirares uma Print. (Esta será gravada na pasta do Metin2)
 HELP_SHOW_ALL_NAME	Mostrar Nomes: Alt
@@ -183,7 +183,7 @@ MARKLIST_REFRESH	Actualizar
 MARKLIST_TITLE	Registar uma assinatura da Guild
 MESSAGE	Isto é uma Mensagem
 MESSENGER_ADD_FRIEND	Adicionar amigo
-MESSENGER_DELETE_FRIEND	Apagar amigo
+MESSENGER_DELETE_FRIEND	Apagar
 MESSENGER_OPEN_GUILD	Área da Guild
 MESSENGER_TITLE	Amigos
 MESSENGER_WHISPER	Segredar
@@ -270,7 +270,7 @@ SELECT_EMPIRE_NAME	Nome do Reino
 SELECT_EXIT	Fechar
 SELECT_HP	Vd
 SELECT_LEVEL	Nível
-SELECT_METIN_STONE_TITLE	Selecciona a Pedra Espiritual
+SELECT_METIN_STONE_TITLE	Seleccionar Pedra Espírita
 SELECT_NAME	Nome
 SELECT_NO_GUILD	Sem Guild
 SELECT_PLAYTIME	Tempo de jogo

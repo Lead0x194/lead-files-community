@@ -2,7 +2,7 @@ ACCEPT	Aceptar
 ATTACH_METIN_INFO	¿Quieres usar la Piedra Espíritu?
 ATTACH_METIN_TITLE	Usar Piedra Espíritu
 CANCEL	Cancelar
-CHANGE_PASSWORD_CONFIRM	Confirmar la nueva Contraseña
+CHANGE_PASSWORD_CONFIRM	Repetir contraseña
 CHANGE_PASSWORD_NEW	Nueva Contraseña
 CHANGE_PASSWORD_OLD	Vieja Contraseña
 CHANGE_PASSWORD_TITLE	Cambio de Contraseña
@@ -51,7 +51,7 @@ EMPIRE_EXIT	Salir
 EMPIRE_NEXT	Siguiente
 EMPIRE_PREV	Atrás
 EMPIRE_SELECT	Elegir
-EXCHANGE_ACCEPT	Aceptar
+EXCHANGE_ACCEPT	Vale
 EXCHANGE_TITLE	Comerciar
 GAMEOPTION_TITLE	Opciones del Juego
 GAME_EXIT_OBSERVER	Finalizar Modo Observador
@@ -63,7 +63,7 @@ GRADE	Clase
 GRADE_SELECT	Clase
 GUILD_BASENAME	Nombre Base
 GUILD_BOARD_ID	Nombre
-GUILD_BOARD_REFRESH	Refrescar (F5)
+GUILD_BOARD_REFRESH	Actualizar
 GUILD_BOARD_TEXT	Mensaje
 GUILD_BUILDING_CATEGORY_TITLE	Unidades de Construcción
 GUILD_BUILDING_CHANGE	Cambiar
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Chapeado
 GUILD_BUILDING_POSITION	Posición
 GUILD_BUILDING_PREVIEW	Vista Previa
 GUILD_BUILDING_PRICE	Precio
-GUILD_BUILDING_REFRESH	Refrescar (F5)
+GUILD_BUILDING_REFRESH	Actualizar
 GUILD_BUILDING_STONE	Piedra
 GUILD_BUILDING_TITLE	Construcción de la Casa del Gremio
 GUILD_CRYSTAL	Cristal
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Dejar Recurso
 GUILD_GEM	Gema
 GUILD_GRADE_CHANGE_GRADE_NAME	Nuevo nombre de rango
 GUILD_GRADE_NUM	Nr.
-GUILD_GRADE_PERMISSION_DELETE	Expulsar
-GUILD_GRADE_PERMISSION_JOIN	Invitar
-GUILD_GRADE_PERMISSION_NOTICE	Escribir
-GUILD_GRADE_PERMISSION_SKILL	Habilidades
+GUILD_GRADE_PERMISSION_DELETE	Expulsar del gremio
+GUILD_GRADE_PERMISSION_JOIN	Puede incorporar miembros al gremio
+GUILD_GRADE_PERMISSION_NOTICE	Puede publicar notas del gremio
+GUILD_GRADE_PERMISSION_SKILL	Habilidades del gremio
 GUILD_GRADE_RANK	Rango
 GUILD_GRADE_WRITE	Escribir
 GUILD_INFO	Información del Gremio
@@ -111,7 +111,7 @@ GUILD_INFO_UPLOAD_MARK	Subir Símbolo
 GUILD_INFO_UPLOAD_SYMBOL	Subir Bandera
 GUILD_MARK	Símbolo del Gremio
 GUILD_MEMBER_JOB	Clase
-GUILD_MEMBER_KNIGHT	Líder
+GUILD_MEMBER_KNIGHT	Guerrero
 GUILD_MEMBER_LEVEL	Nivel
 GUILD_MEMBER_NAME	Nombre
 GUILD_MEMBER_RANK	Clasificación
@@ -140,8 +140,8 @@ HELP_ATTACK_KEY	Atacar: botón izquierdo del ratón o barra espaciadora
 HELP_CHANGE_PK_MODE	Cambiar modo de ataque: cambia la configuración del botón izquierdo del ratón
 HELP_CHARACTER_BUTTON1	(Ventana de Personaje, Ventana de Inventario,
 HELP_CHARACTER_BUTTON2	Lista de Amigos y Opciones)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Vista de Cámara: botón central o derecho del ratón
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Vista de Cámara: botón derecho o central del ratón
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Vista de la cámara predeterminada: botón central del ratón
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Modificar ajustes de vista de la cámara: botón izquierdo o derecho del ratón
 HELP_EXP	Experiencia
 HELP_FURY	Tienda de objetos en el Juego
 HELP_GUILD_WINDOW	Abrir Ventana del Gremio: Alt + G
@@ -183,7 +183,7 @@ MARKLIST_REFRESH	Refrescar
 MARKLIST_TITLE	Registrar Signo de Gremio
 MESSAGE	Esto es un Mensaje
 MESSENGER_ADD_FRIEND	Añadir Amigo
-MESSENGER_DELETE_FRIEND	Borrar Amigo
+MESSENGER_DELETE_FRIEND	Borrar
 MESSENGER_OPEN_GUILD	Abrir Ventana del Gremio
 MESSENGER_TITLE	Amigos
 MESSENGER_WHISPER	Susurro

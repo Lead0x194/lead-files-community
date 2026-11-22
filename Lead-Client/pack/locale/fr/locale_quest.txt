@@ -1,7 +1,7 @@
 1	Êtes-vous sûr de vouloir vous défier vous-même ?[ENTER]Enfin, vous n'avez pas besoin d'arène pour ça.[ENTER]Revenez quand vous serez plus sérieux !
 2	Lancer un combat d'entraînement
 3	Votre partenaire d’entraînement n'a pas encore[ENTER]atteint le niveau %s, nécessaire pour un combat[ENTER]d’entraînement. Je suis désolé, mais je ne peux[ENTER]pas autoriser ce combat.
-4	Pour conclure l'accord sur l'entraînement au[ENTER]combat, %s doit s'approcher de[ENTER]moi.
+4	L'accord du combat d'entraînement est établi. %s doit aussi venir avec moi.
 5	%s n'est pas actuellement disponible.
 6	Décision
 7	%s ne veut pas vous défier.
@@ -21,7 +21,7 @@
 21	Vous ne savez pas avec qui vous voudriez vous[ENTER]battre ? sans le nom d'un partenaire, je ne peux[ENTER]pas vous inscrire.
 22	Très bien, %s. Vous êtes enregistré pour un combat d'entraînement contre %s.
 23	%s attend l'accord de %s pour le défi
-24	%s, voulez-vous faire un combat d'entraînement[ENTER]contre %s?
+24	%s, prêt à vous entrainer avec %s ?
 25	%s n'est pas connecté pour le moment. Veuillez[ENTER]réessayer plus tard ou prenez rendez-vous avec[ENTER]votre partenaire !
 26	Je voudrais améliorer quelque chose.
 27	Le forgeron:
@@ -235,12 +235,12 @@
 235	La pierre d'âme de Jinunggy
 236	Vous avez enfin trouvé la Pierre d'âme du Chef ![ENTER]Apportez la au biologiste Chaegirab. Il vous[ENTER]attend déjà avec impatience.
 237	Vous avez trouvé les 10 molaires d'orc dont le[ENTER]biologiste avait besoin.[ENTER]À présent il ne lui manque que la Pierre d'âme de[ENTER]Jinunggy afin de terminer ses recherches.
-238	Vous pouvez la trouver sur différents orcs élites[ENTER]dans la Vallée de Seungryong.
+238	Vous pouvez la trouver sur différents orcs[ENTER]d'élite de la Vallée de Seungryong.
 239	Vous avez trouvé la pierre d'âme de Jinunggy.
 240	J'ai la Pierre d'âme de Jinunggy
 241	Merci beaucoup ![ENTER]Pour vous récompenser, je vais vous donner cette[ENTER]recette. Peu de gens la connaissent et elle est[ENTER]gardée secrète.[ENTER]Avec cette recette, vous pouvez créer une potion[ENTER]qui vous donne des ailes.[ENTER]Allez voir Baek-Go, il vous préparera la potion.[ENTER]Adieu, mon ami. Grâce à votre aide, je vais en[ENTER]apprendre beaucoup sur les Orcs.
 242	S'il vous plaît, revenez quand vous aurez trouvé[ENTER]la Pierre d'âme de Jinunggy.
-243	La récompense de Chaegirab
+243	La récompense de Chaegirab.
 244	Ecoutez moi.
 245	La récompense de Chaegirab
 246	En récompense pour les molaires d'orc et la[ENTER]pierre d'âme de Jinunggy, le biologiste Chaegirab[ENTER]vous a donné la recette d'une potion secrète.[ENTER]Donnez la recette à Baek-Go, il vous[ENTER]confectionnera la potion.
@@ -255,7 +255,7 @@
 255	Pourriez-vous m'apporter quelques dents d'orcs?[ENTER]Mais pas n'importe lesquelles. Il me faut des[ENTER]molaires. Apportez-les moi une à une pour que je[ENTER]puisse les examiner. Bonne chance!
 256	La recherche du biologiste
 257	Les molaires des orcs de la Vallée du Dragon.
-258	Le biologiste Chaegirab, apprenti d'Uriel, a[ENTER]besoin de 10 molaires d'orcs provenant de la[ENTER]Vallée de Seungryong pour ses recherches.[ENTER]Apportez-lui les molaires une par une afin qu'il[ENTER]ait le temps de les étudier individuellement.
+258	Le biologiste Chaegirab, l'apprenti d'Uriel, a[ENTER]besoin de 10 dents d'Unggyi, les molaires d'orcs[ENTER]provenant de la Vallée de Seungryong, pour ses[ENTER]recherches. Apportez-lui les molaires une par une[ENTER]afin qu'il ait le temps de les étudier[ENTER]individuellement.
 259	Vous avez déjà apporté %s livre(s) maléfique(s).
 260	La demande du biologiste
 261	Vous ne pouvez pas encore utiliser l'élixir du[ENTER]Chercheur.
@@ -279,7 +279,7 @@
 279	J'ai la Pierre d'âme du Temple.
 280	Merci beaucoup ![ENTER]Pour vous remercier, je vais donner une recette.[ENTER]Les ingrédients sont gardés secrets et très peu[ENTER]de personnes les connaissent. La potion qui peut[ENTER]être préparée grâce à cette recette augmentera[ENTER]votre vitesse d'attaque de 5 points. Allez voir[ENTER]Baek-Go, il vous la préparera.[ENTER]Adieu mon ami, et merci encore. Grâce à vous je[ENTER]vais pouvoir trouver tout un tas d'informations[ENTER]concernant cette magie ancienne.
 281	Revenez me voir quand vous aurez trouvé une[ENTER]Pierre d'âme du Temple de plus.
-282	La récompense de Chaegirab
+282	La récompense de Chaegirab.
 283	Le biologiste Chaegirab, l'apprenti d'Uriel, a[ENTER]désespérément besoin de vous. Allez vite voir ce[ENTER]qu'il veut.
 284	La récompense de Chaegirab
 285	En remerciement des livres maléfiques et de la[ENTER]Pierre d'âme, le biologiste Chaegirab vous a[ENTER]offert une recette secrète. Allez voir Baek-Go,[ENTER]il vous la préparera.
@@ -314,7 +314,7 @@
 314	Vous avez trouvé la Pierre d'âme de Sagyi
 315	J'ai la Pierre d'âme de Sagyi.
 316	Merci beaucoup ! En récompense, je vous donne[ENTER]cette recette. Sa composition est connue par peu[ENTER]de personnes et est gardée secrète. La potion qui[ENTER]peut être préparée grâce à cette recette[ENTER]augmentera votre défense. Allez voir Baek-Go, il[ENTER]préparera la potion pour vous.[ENTER]Adieu, mon ami. Merci pour votre aide, grâce à[ENTER]vous j'ai trouvé d'importantes informations[ENTER]concernant les démons.
-317	La récompense de Chaegirab
+317	La récompense de Chaegirab.
 318	Revenez me voir quand vous aurez trouvé une[ENTER]Pierre d'âme de Sagyi supplémentaire.
 319	La récompense de Chaegirab
 320	Le biologiste Chaegirab, l'apprenti d'Uriel, a[ENTER]désespérément besoin de vous. Allez vite voir ce[ENTER]qu'il veut.
@@ -354,7 +354,7 @@
 354	Merci beaucoup ! En récompense, je vous donne[ENTER]cette recette. Son secret, connu par peu de gens,[ENTER]est gardé précieusement. Elle vous donnera de la[ENTER]valeur d'attaque. Allez voir Baek-Go, il vous[ENTER]préparera la potion.[ENTER]Adieu, mon ami. Merci pour votre aide, à présent[ENTER]j'en sais bien plus sur cette terre de glace.
 355	Revenez me voir quand vous aurez trouvé une[ENTER]Pierre d'âme d'Aurtumryu supplémentaire.
 356	Le biologiste Chaegirab, l'apprenti d'Uriel, a[ENTER]désespérément besoin de vous. Allez vite voir ce[ENTER]qu'il veut.
-357	La récompense de Chaegirab
+357	La récompense de Chaegirab.
 358	En récompense pour avoir apporté les orbes de[ENTER]glace et la pierre d'âme, le biologiste vous a[ENTER]donné une recette secrète. Allez voir Baek-Go, il[ENTER]vous préparera la potion.
 359	La recette secrète
 360	Oh, c'est la recette secrète du biologiste ?[ENTER]Hum, elle va vous donner 50 points de valeur[ENTER]d'attaque supplémentaires de façon permanente.[ENTER]Voici votre potion. Je dois aussi vous donner[ENTER]cette boîte d'ébène. Prenez en soin.
@@ -474,7 +474,7 @@
 476	J'ai la Pierre d'âme du Bois Rouge
 477	Le biologiste Chaegirab :
 478	Merci beaucoup ![ENTER]Comme récompense, je vais vous donner une recette[ENTER]secrète. Peu de gens la connaissent et ses[ENTER]ingrédients sont gardés secrets. Allez voir[ENTER]Baek-Go, il préparera la potion pour vous. Merci[ENTER]encore, grâce à vous j'en ai appris beaucoup sur[ENTER]le Bois Rouge.
-479	La récompense de Chaegirab
+479	La récompense de Chaegirab.
 480	Baek-Go:
 481	La récompense de Chaegirab
 482	Comme récompense pour avoir apporté les rameaux[ENTER]et la pierre d'âme, le biologiste vous a donné[ENTER]une recette secrète. Apportez la à Baek-Go, il[ENTER]vous fera la potion.
@@ -521,7 +521,7 @@
 530	J'ai trouvé la Pierre d'âme.
 531	Oh, bon travail ! Je peux terminer mes recherches[ENTER]à présent. Comme récompense, je vais vous donner[ENTER]une recette secrète. Baek-Go vous préparera grâce[ENTER]à cette recette une potion miracle. Passez une[ENTER]bonne journée et merci pour votre aide. Je n'y[ENTER]serais jamais parvenu sans vous !
 532	manque !
-533	La récompense de Chaegirab
+533	La récompense de Chaegirab.
 534	Baek-Go:
 535	La récompense de Chaegirab
 536	Comme récompense pour avoir trouvé les[ENTER]Certificats du Chef et la Pierre d'âme, le[ENTER]biologiste Chaegirab vous a donné une recette[ENTER]secrète. Allez voir Baek-Go, il vous préparera la[ENTER]potion.
@@ -691,7 +691,7 @@
 700	Vous vous trouvez devant le portail scellé du[ENTER]3eme étage. Plusieurs pierres Metin ne sont là[ENTER]que pour vous désorienter. Seule l'une d'elle est[ENTER]la véritable pierre Metin. Vous devez la détruire[ENTER]dans les 15 minutes, sinon vous ne pourrez plus[ENTER]passer le portail.
 701	Il reste 10 minutes
 702	Il reste 5 minutes
-703	Temps écoulé!
+703	Le temps est écoulé.
 704	Les fausses pierres Metin disparaissent...
 705	Je veux terrasser le dragon !
 706	Vous n'êtes pas le premier à vouloir entrer.[ENTER]Dites-moi le nombre secret, sinon je ne pourrais[ENTER]pas vous laisser entrer !
@@ -702,7 +702,7 @@
 711	Bien, je choisi donc le nombre :
 712	Le nombre ne peut être composé que de chiffres.
 713	Le groupe de %s essaye de tuer le dragon bleu !
-714	Vous ne possédez pas assez de clés en spirale ![ENTER]Pour pouvoir activer le portail j'ai besoin d'en[ENTER]avoir
+714	Vous ne possédez pas assez de clés ! Pour pouvoir[ENTER]activer le portail, j'ai besoin d'avoir 3x
 715	Vous pouvez en recevoir en tuant les dirigeants[ENTER]ennemis Yonghan et Huashin.
 716	Je veux quitter cet endroit !
 717	Je vous ramène à l'entrée de la Grotte de l'Exil.
@@ -1283,7 +1283,7 @@
 1338	Vous pouvez vous procurer le livre en tuant un[ENTER]chef orc avec l'aide d'un groupe.
 1339	Vous avez reçu le Livre de la Providence
 1340	Vous avez reçu le livre
-1341	Vous avez reçu le Livre de la Providence du chef[ENTER]orc.
+1341	Vous avez reçu le livre de la Providence du chef[ENTER]orc.
 1342	Le Gardien de la place du village va vous aider à[ENTER]fonder une guilde.
 1343	GM: vérifier les informations de la guilde
 1344	GM: enregistrer à nouveau
@@ -1507,7 +1507,7 @@
 1567	Lorsque vous montez à cheval, sa fatigue augmente[ENTER]et sa santé diminue. Vous ne pouvez pas monter[ENTER]sur un cheval en mauvaise santé. C'est pour cela[ENTER]que vous devez faire une pause de temps en temps.
 1568	Il y a des rumeurs selon lesquelles on pourrait[ENTER]ressusciter un cheval mort avec de l'herbe des[ENTER]singes. Cette herbe est surveillée par les singes[ENTER]et est très dure à obtenir. On dit que s'ils vous[ENTER]font prisonnier, ils vous jettent un sort et vous[ENTER]transforment en singe.
 1569	Il y a différents niveaux d'équitation et vous[ENTER]pourrez aussi développer le niveau de votre[ENTER]cheval pour qu'il devienne plus fort. Seule une[ENTER]personne avec une médaille équestre peut se[ENTER]servir d'un cheval.
-1570	Tuez des orcs noirs sans descendre de cheval. Si[ENTER]vous descendez de cheval, vous échouez.
+1570	Éliminez l'orc noir sans descendre de cheval.[ENTER]Si vous descendez de cheval, vous échouez.
 1571	Tuez Bo!
 1572	Tuez le bourreau funeste !
 1573	Tuez le bourreau funeste en restant à cheval. Si[ENTER]vous descendez de cheval, vous échouez.
@@ -1520,8 +1520,8 @@
 1580	Tuez le golem de glace sans descendre de cheval.[ENTER]Si vous descendez de cheval, vous échouez.
 1581	Tuez le golem de glace sans descendre de cheval.[ENTER]Si vous descendez de cheval, vous échouez.
 1582	Tuez Bo sans descendre de cheval. Si vous[ENTER]descendez de cheval, vous échouez.
-1583	Tigre de combat tué!
-1584	Tuez le tigre de combat sans descendre de cheval.[ENTER]Si vous descendez de cheval, vous échouez.
+1583	Éliminez le tigre de combat !
+1584	Éliminez le tigre de combat sans descendre de[ENTER]cheval.[ENTER]Si vous descendez de cheval, vous échouez.
 1585	Comment combattre à cheval?
 1586	Le palefrenier:
 1587	Votre cheval a fini son éducation. Vous devriez[ENTER]augmenter sa force.
@@ -1551,10 +1551,10 @@
 1611	Pour obtenir un cheval expert, vous devez[ENTER]entraîner votre cheval jusqu'au niveau 20.
 1612	Vous ne pouvez pas sauvegarder vos résultats sans[ENTER]médaille équestre.
 1613	Tuez Chuong sans descendre de cheval. Si vous[ENTER]descendez de cheval, vous échouez.
-1614	Tuez le général orc élite !
-1615	Tuez le général orc élite ![ENTER][ENTER]Tuez le général orc élite sans descendre de[ENTER]cheval.[ENTER]Si vous descendez de cheval, vous échouez.
-1616	Tuez le général orc élite ![ENTER][ENTER]Tuez le général orc élite sans descendre de[ENTER]cheval.[ENTER]Si vous descendez de cheval, vous échouez.
-1617	Tuez l'orc noir!
+1614	Éliminez le général orc d'élite !
+1615	Éliminez le général orc d'élite sans descendre de[ENTER]cheval. Si vous descendez de cheval, vous[ENTER]échouez.
+1616	Éliminez le général orc d'élite sans descendre de[ENTER]cheval. Si vous descendez de cheval, vous[ENTER]échouez.
+1617	Éliminez l'orc noir !
 1618	Bo restant
 1619	Chuong restant
 1620	G.Orcs restant :
@@ -1563,7 +1563,7 @@
 1623	Araig. restant
 1624	H.la loi restant
 1625	Golem restant
-1626	Tigre restant
+1626	Tigres de combat restant
 1627	Le nouveau nom est trop long
 1628	Apprécier la santé de votre cheval
 1629	Vous n'avez pas de cheval pour l'instant
@@ -2831,7 +2831,7 @@
 2910	Tuez 25 Jak-To et 25 To-Su du clan du Vent Noir.
 2911	On dit que le gang du Vent Noir veut s'emparer de[ENTER]l'empire. Nous ferions mieux d'éliminer leurs[ENTER]leaders avant qu'ils n'aient le temps de[ENTER]renforcer leur armée. Faites-le s'il vous plaît,[ENTER]éliminez leurs chefs.
 2912	La Grande Révolte des orcs 1
-2913	Tuez 30 orcs intrépides et 30 éclaireurs orcs.
+2913	Éliminez 30 orcs d'élite et 30 éclaireurs orcs[ENTER]d'élite.
 2914	Des informations secrètes laissent à penser que[ENTER]les chefs des orcs de la vallée de Seungryong[ENTER]dans la zone neutre ont pour ambition de se[ENTER]lancer à la conquête du monde. Je voudrais que[ENTER]vous alliez vous renseigner à ce sujet, guerrier.[ENTER]Et profitez de votre présence là bas pour réduire[ENTER]leur nombre.
 2915	L'attaque des barbares
 2916	Tuez 30 soldats barbare et 30 minions barbare.
@@ -2846,7 +2846,7 @@
 2925	Tuez 10 Se-Rangs de l'armée du Serment Blanc.
 2926	Guerrier, nous avons de nouvelles informations[ENTER]concernant le Serment Blanc. En réaction à nos[ENTER]offensives contre eux, les Se-Rangs, leaders du[ENTER]Serment Blanc ont lancé une contre-offensive. Il[ENTER]faut agir contre les Se-Rangs dès maintenant! Ce[ENTER]n'est pas en tuant quelques fantassins que nous[ENTER]arriverons à quelque chose. Nous devons éliminer[ENTER]leurs leaders si nous voulons contrer leurs[ENTER]plans.
 2927	La Grande révolte des orcs 2
-2928	Tuez 20 combattants d'élite orcs et 15 sorciers[ENTER]d'élite orcs.
+2928	Éliminez 20 combattants orcs d'élite et[ENTER]15 sorciers orcs d'élite.
 2929	Des informations secrètes semblent montrer que[ENTER]les leaders orcs de la vallée de Seungryong dans[ENTER]la zone neutre veulent se lancer à la conquête du[ENTER]monde. Je vous demande de vous renseigner à ce[ENTER]sujet, guerrier. Et profitez-en pour réduire leur[ENTER]nombre puisque vous serez sur place.
 2930	Brisez la Metin de Combat
 2931	Détruisez 3 Metins de Combat
@@ -2951,20 +2951,20 @@
 3030	Tuez 35 loups gris
 3031	Avez-vous entendu parler des loups gris? Pour la[ENTER]plupart ils errent sans but, mais ces dernières[ENTER]semaines sous l'influence du Chi maléfique ils[ENTER]ont commencé à s'attaquer aux voyageurs[ENTER]imprudents. Est-il possible que vous éliminiez[ENTER]ces loups gris? Vous serez récompensé.
 3032	Explorer Doyyumhwan
-3033	Tuez 45 tigres minions combattants
+3033	Éliminez 45 tigres minions.
 3034	Doyyumhwan est une zone volcanique peuplée de[ENTER]nombreuses bêtes inconnues. Il nous faut explorer[ENTER]cette région. Pouvez-vous nous y aider?
 3035	Esprit flamme ! Son identité
 3036	Tuez 45 esprits flammes.
-3037	Un groupe qui devait éliminer les tigres de[ENTER]combat a été anéanti par des ennemis inconnus. La[ENTER]rumeur dit que ces ennemis avaient l'apparence de[ENTER]créatures enflammées. Aidez-nous à découvrir la[ENTER]vérité.
-3038	Réduisez le nombre de tigres de combat
-3039	Tuez 60 tigres minions combattants et 40 tigres[ENTER]de combat.
-3040	Maintenant que nous pouvons nous battre avec les[ENTER]monstres de feu, nous devons complètement les[ENTER]éliminer dans une grande bataille. L'armée[ENTER]s'occupe d'habitude de ces missions, mais pour[ENTER]gagner nous avons besoin de techniques de combats[ENTER]plus efficaces.[ENTER]Assurez-vous s'il vous plaît que les Tigres de[ENTER]combat ne nous trouvent pas.
+3037	Un groupe qui devait éliminer les tigres de[ENTER]combat a été anéanti par des ennemis inconnus.[ENTER]La rumeur dit que ces ennemis avaient l'apparence[ENTER]de créatures enflammées. Aidez-nous à découvrir[ENTER]la vérité.
+3038	Réduisez le nombre de tigres de combat.
+3039	Éliminez 60 tigres minions et 40 tigres de combat.
+3040	Maintenant que nous pouvons combattre les[ENTER]monstres de feu, nous devons les éliminer[ENTER]jusqu'au dernier. L'armée s'occupe d'habitude de[ENTER]ces missions, mais pour gagner nous avons besoin[ENTER]de techniques de combats plus efficaces.[ENTER]Assurez-vous que les tigres de combat ne se[ENTER]trouvent pas sur notre route, s'il vous plait.
 3041	Étude des Flammes
 3042	Tuez 40 Flammes
 3043	Les Flammes sont d'une brutalité incroyable. Ils[ENTER]se repaissent de la souffrance de leurs victimes.[ENTER]Nous ne savons toujours pas comment les tuer.[ENTER]Pourriez-vous le découvrir pour nous?
 3044	Guerrier flamme
-3045	Tuez 60 guerriers des flammes
-3046	Il n'y a pas très longtemps un jeune noble qui[ENTER]s'était aventuré dans le Doyyumhwan a été tué par[ENTER]un guerrier flamme. Si vous tuez les guerriers[ENTER]flamme vous serez récompensé.[ENTER]Essayez de vous en occuper.
+3045	Éliminez 60 guerriers flammes.
+3046	Il n'y a pas très longtemps un jeune noble qui[ENTER]s'était aventuré dans le Doyyumhwan a été tué par[ENTER]un guerrier flamme. Si vous éliminez les[ENTER]guerriers flammes vous serez récompensé.[ENTER]Essayez de vous en occuper.
 3047	Examinez les arbres fantômes
 3048	Détruisez 30 arbres fantômes.
 3049	En temps normal ils n'ont pas l'air différents[ENTER]des autres arbres – puis tout à coup ils[ENTER]attaquent animaux et êtres humains. Leur nombre[ENTER]augmente. Découvrez comment nous pouvons détruire[ENTER]ces arbres fantômes.
@@ -2995,9 +2995,9 @@
 3074	Hors la loi du Désert
 3075	Tuez les Hors la loi du Désert
 3076	Il y a des êtres mauvais dans le désert de[ENTER]Yongbi. On les appelle les vagabonds du désert et[ENTER]leurs crimes sont si haineux que les cieux en[ENTER]frémissent. Ils volent et tuent les marchands par[ENTER]plaisir. Ils ont aussi détruit tous les villages[ENTER]dans le désert.
-3077	Tigres de combat
-3078	Tuez les tigres de combat.
-3079	Il existe des animaux appelés tigres de combat.[ENTER]Leur sang est fait de braises et leur corps de[ENTER]granit. Ces monstres possèdent une force[ENTER]incroyable et se nourrissent de lave et de feu.[ENTER]Parfois ils descendent du volcan, pour attaquer[ENTER]et dévorer les gens...[ENTER][ENTER]Tuez 20 de ces tigres de combat et quand ce sera[ENTER]fait vous obtiendrez ceci en récompense:
+3077	Tigre de combat
+3078	Éliminez les tigres de combat.
+3079	Il existe des animaux appelés tigres de combat.[ENTER]Le feu coule dans leurs veines et leur corps est[ENTER]de granite volcanique. Ces monstres possèdent une[ENTER]force incroyable et se nourrissent de lave et de[ENTER]magma. Parfois, ils descendent du volcan pour[ENTER]attaquer et dévorer les gens...[ENTER]Éliminez 20 de ces tigres de combat. Si vous[ENTER]réussissez, vous obtiendrez ceci en récompense :
 3080	Homme de guerre
 3081	Tuez l'homme de guerre
 3082	Le Doyyumhwan est grand, chaud et recense un tas[ENTER]d'animaux sauvages. Ici, des guerriers de Chunjo,[ENTER]Jinno et Shinsoo se rencontrent. Des monstres[ENTER]terrifiants et puissants les attendent.[ENTER]Les Hommes de guerres sont de ceux qui contrôlent[ENTER]le Doyyumhwan.[ENTER]Voulez-vous les affronter ? Si vous tuez 20[ENTER]Hommes de guerres, vous recevrez:
@@ -3627,7 +3627,7 @@
 3706	%d jour(s) et %d heure(s)
 3707	%d minute(s) et %d secondes(s)
 3708	%d minute(s) et %d secondes(s)
-3709	%d seconde(s)
+3709	%d s
 3710	Femme
 3711	Vous devriez avoir plus de respect envers vos[ENTER]aînés. Je vous souhaite bonne chance tout de même[ENTER]pour cette nouvelle année.
 3712	Meilleurs vœux pour le Nouvel An !
@@ -3743,7 +3743,7 @@
 3822	Récupérez le sang du roi flamme.
 3823	Sans la moindre goutte de sang du roi flamme, il[ENTER]nous est impossible de déchiffrer l'inscription.
 3824	Vous avez obtenu le sang du roi flamme. Retournez[ENTER]voir Yon-I-Walker.
-3825	Parlez à Yon-I-Walker.
+3825	Parlez avec Yon-I-Walker.
 3826	Ah, très bien. Ce sang va me permettre de[ENTER]déchiffrer l'inscription. Toutefois, cela va[ENTER]prendre un peu de temps. Revenez demain.
 3827	Vous devez encore patienter pendant %d heure(s)[ENTER]et %d min.
 3828	Il me faut encore un peu de temps. Revenez plus[ENTER]tard !
@@ -3870,7 +3870,7 @@
 3950	Mauvaises nouvelles ! Razador a bien ressuscité,[ENTER]grâce au pouvoir du dragon rouge. Ses forces s'en[ENTER]sont trouvées décuplées et l'influence de la[ENTER]matière obscure semble également plus puissante[ENTER]que jamais.
 3951	Allez voir Yon-I-Walker. Il sait comment vaincre[ENTER]Razador une bonne fois pour toutes.
 3952	Allez voir Yon-I-Walker et découvrez comment[ENTER]vaincre Razador une bonne fois pour toutes.
-3953	Parlez à Yon-I-Walker.
+3953	Parlez avec Yon-I-Walker.
 3954	Allez voir Yon-I-Walker et découvrez comment[ENTER]vaincre Razador une bonne fois pour toutes.
 3955	Vous n'avez pas encore été voir Yon-I-Walker ?[ENTER]Comment voulez-vous vaincre Razador ? Allez,[ENTER]qu'attendez-vous ?
 3956	Oui, c'est la vérité. Razador est de retour et[ENTER]son humeur est plus massacrante que jamais ! Nous[ENTER]n'avons plus qu'une possibilité d'empêcher les[ENTER]serviteurs de l'Obscurité de mener leurs plans à[ENTER]bien...
@@ -4194,10 +4194,10 @@
 4276	Vous voulez des renseignements sur la vallée du[ENTER]dragon? Pourquoi voulez-vous aller dans un[ENTER]endroit si dangereux? La vallée regorge de[ENTER]soldats orcs et en plus il y a une secte secrète.[ENTER]Même moi, chasseur expérimenté, je n'aime pas y[ENTER]aller. Je pense que ce serait mieux pour vous de[ENTER]ne pas y aller.
 4277	Quoi? Vous recherchez ces vieilles pages? Hmmm![ENTER]Un jour un autre chasseur m'a dit que les[ENTER]sorciers orcs élites possédaient des vieux[ENTER]papiers. Savoir si c'est vrai... Si vous êtes si[ENTER]curieux, allez voir par vous-même. C'est un[ENTER]endroit dangereux, je vous l'ai déjà dit donc[ENTER]faites bien attention à vous!
 4278	À la recherche de la seconde page
-4279	Comme l'a dit le chasseur, les sorciers d'élite[ENTER]des orcs demeurent dans la vallée des dragons.[ENTER]Ils doivent posséder la deuxième page que vous[ENTER]cherchez. Tuez les sorciers d'élite des orcs et[ENTER]procurez-vous cette deuxième page. Après,[ENTER]ramenez-la au sage Uriel.
+4279	D'après ce que nous a rapporté le chasseur, les[ENTER]sorciers orcs d'élite qui habitent la Vallée de[ENTER]Seungryong possèderaient la deuxième page.[ENTER]Éliminez les sorciers orcs d'élite et[ENTER]procurez-vous cette page. Après, ramenez-la au[ENTER]sage Uriel.
 4280	La deuxième page
 4281	Trouvez la seconde page
-4282	En tuant un Sorcier Orc Élite vous avez trouvé le[ENTER]seconde pas du livre secret. Apportez-la à Uriel.
+4282	La chasse aux sorciers orcs d'élite est réussie,[ENTER]vous avez trouvé la seconde page du livre secret.[ENTER]Apportez-la à Uriel.
 4283	C'est la deuxième page? Voyons voir. Ce n'est pas[ENTER]facile à déchiffrer. Voici ce que ça dit :
 4284	Deuxième page :
 4285	Une fois que vous aurez trouvé une des vieilles[ENTER]pages, apportez-la moi et j'essaierai de la[ENTER]déchiffrer. Hummm... Où commencer vos recherches?[ENTER]Il y a quelque temps de ça, j'ai entendu parler[ENTER]d'un marchand ambulant dans le village voisin, il[ENTER]avait trouvé une vieille page du livre. Allez le[ENTER]voir et voyez si vous pouvez apprendre quelque[ENTER]chose.
@@ -4606,7 +4606,7 @@
 4693	Oui, en effet.
 4694	Ah, ça tombe bien ! Prenez les trois éléments et[ENTER]apportez-les à Baek-Go. Il pourra alors fabriquer[ENTER]la larme du ciel.
 4695	Vous avez un voyage fatigant derrière vous.[ENTER]Acceptez cette récompense pour vous remercier de[ENTER]tous vos efforts.
-4696	Lee Chung, commandant des combattants de l'ombre,[ENTER]en a appris plus sur le quartz de l'enfer rouge.[ENTER]Pour le fabriquer, trois substances différentes[ENTER]sont nécessaires : terre volcanique du[ENTER]Doyyumhwan, crinière flamboyante et pierre de[ENTER]fondation. Chassez les flammes, les guerriers[ENTER]flammes et les tigres combattants en Terre de Feu[ENTER]pour atteindre ces substances.[ENTER]Rassemblez-en 20 pour former des quartz de[ENTER]l'enfer rouge. Avant de vous lancer dans le[ENTER]combat, parlez encore une fois à Lee Chung.
+4696	Lee Chung, le commandant des combattants de[ENTER]l'ombre, en a appris plus sur le quartz de[ENTER]l'enfer rouge.[ENTER]Pour le fabriquer, trois substances différentes[ENTER]sont nécessaires : terre volcanique du[ENTER]Doyyumhwan, crinière flamboyante et pierre de[ENTER]fondation. Chassez les flammes, les guerriers[ENTER]flammes et les tigres de combat en Terre de feu[ENTER]pour obtenir ces substances et faites-en faire[ENTER]20 morceaux de quartz de l'enfer rouge.[ENTER]Avant de partir au combat, allez voir Lee Chung.
 4697	Larme du ciel
 4698	Retournez dans votre village natal et cherchez-y[ENTER]Baek-Go. Demandez-lui, au nom de Lee Chung, de[ENTER]fabriquer une larme du ciel à partir de ces trois[ENTER]éléments.
 4699	Vous avez été absent quelque temps. Je me suis[ENTER]déjà demandé s'il vous était arrivé quelque[ENTER]chose. Qu'est-ce qui vous amène ?
@@ -4915,7 +4915,7 @@
 5004	Battez le roi des cyclopes Polyphème et volez-lui[ENTER]sa lumière intérieure.
 5005	Vous arrivez les mains vides ? Dans ce cas, je ne[ENTER]peux pas vous aider. Apportez-moi la lumière[ENTER]intérieure !
 5006	Vous avez trouvé la lumière intérieure.[ENTER]Rapportez-la à Yon-I-Walker.
-5007	Parlez à Yon-I-Walker.
+5007	Parlez avec Yon-I-Walker.
 5008	Voici donc la lumière intérieure... Avant de[ENTER]pouvoir l'utiliser, je dois la purifier. Cela va[ENTER]durer un certain temps. Je vous tiendrai au[ENTER]courant.
 5009	Prendre des forces II
 5010	Yon-I-Walker vous recherche.
@@ -4926,7 +4926,7 @@
 5015	Vous arrivez les mains vides?
 5016	Vous avez entre les mains la lumière intérieure[ENTER]des géants.
 5017	Apportez-la à Yon-I-Walker.
-5018	Parlez à Yon-I-Walker.
+5018	Parlez avec Yon-I-Walker.
 5019	La lumière intérieure du roi Wobba possède une[ENTER]force terrifiante. Je suppose que c'est à cause[ENTER]de la masse. Maintenant, je dois encore la[ENTER]purifier.[ENTER]Cela va prendre un certain temps.
 5020	Prendre des forces III
 5021	Yon-I-Walker vous recherche.
@@ -5019,7 +5019,7 @@
 5110	L'amiral Angmur vous attend.
 5111	La cape ! Je savais que vous en étiez capable.[ENTER]Nous allons maintenant la suspendre à la vue de[ENTER]tous aux alentours de leur campement. Cela fera[ENTER]douter la bande des voleurs rouges.[ENTER]Mes hommes vont s'en occuper, après quoi, vous[ENTER]pourrez vous reposer.
 5112	Affaiblir les cyclopes
-5113	L'amiral Angmur désire vous parler.
+5113	L'amiral Angmur souhaiterait vous parler.
 5114	Notre plan a fonctionné : lorsque les voleurs[ENTER]rouges ont vu la cape, cela a semé la zizanie[ENTER]dans leurs rangs. Finalement les démons et les[ENTER]humains se sont attaqués mutuellement. Cette[ENTER]bande est désormais complètement désorganisée.[ENTER]Nous pouvons maintenant nous occuper des[ENTER]cyclopes.
 5115	Et comment allons-nous procéder ?
 5116	Les cyclopes vénèrent leurs commandants. Si nous[ENTER]défaisons leurs officiers, cela sèmera la panique[ENTER]dans leurs rangs et ils se disperseront.[ENTER]Vainquez le général Outis %d fois, Argès %d fois[ENTER]et Polyphème %d fois.
@@ -5150,7 +5150,7 @@
 5242	Restants
 5243	%s : %d
 5244	Entraver la malédiction
-5245	L'amiral Angmur désire vous parler.
+5245	L'amiral Angmur souhaiterait vous parler.
 5246	Votre présence me réjouit. Nous avons trouvé une[ENTER]solution pour déjouer les plans des serviteurs et[ENTER]de la banshee.
 5247	Afin que les âmes libèrent leur corps, un médium[ENTER]est requis. En l'occurrence, il s'agit de terre[ENTER]bénie que les géants conservent dans des sacs. Si[ENTER]vous arrivez à mettre la main sur 100 de ces[ENTER]sacs, alors nous pourrons empêcher que la[ENTER]malédiction du souffle de vie ne soit conjurée.
 5248	Je me mets en route sur le champ !
@@ -5815,12 +5815,12 @@
 5937	Chaegirab:
 5938	Chaegirab:
 5939	Wonda-Rim ... non, je ne suis pas son oncle[ENTER]biologique. J'ignore qui sont ses parents. Je[ENTER]l'ai protégé de la vérité jusqu'ici parce que je[ENTER]pensais qu'il n'était pas prêt. Mais peut-être[ENTER]qu'il est temps aujourd'hui.
-5940	Je l'ai trouvé avec une horde de Combattants Orcs[ENTER]dans la Vallée de Seungryong. S'il est toujours[ENTER]possible d'en apprendre sur la famille de[ENTER]Wonda-Rim, vous devriez en trouver auprès des[ENTER]Orcs.
+5940	Je l'ai trouvé dans la Vallée de Seungryong,[ENTER]auprès d'une horde de combattants orcs. Pour[ENTER]trouver des indices sur les origines de[ENTER]Wonda-Rim, les orcs sont la meilleure adresse.
 5941	Je peux être strict avec lui, mais je serai[ENTER]toujours son Oncle. Même s'il reste un bon à[ENTER]rien.
-5942	Allez à la Vallée de Seungryong et chassez des[ENTER]Combattants Orcs jusqu'à ce que vous trouviez un[ENTER]indice concernant la famille de Wonda-Rim.
-5944	Allons-y ! La meilleure façon de trouver des[ENTER]indices concernant la famille de Wonda-Rim est de[ENTER]tuer des Combattants Orcs. Ils peuvent avoir des[ENTER]preuves sur eux.
+5942	Allez dans la Vallée de Seungryong et chassez les[ENTER]combattants orcs jusqu'à ce que vous trouviez un[ENTER]indice concernant la famille de Wonda-Rim.
+5944	En route ! La meilleure façon de trouver des[ENTER]indices concernant les origines de Wonda-Rim est[ENTER]d'éliminer des combattants orcs. Ils pourraient[ENTER]avoir quelque chose à nous apprendre !
 5945	Indices à propos de Wonda-Rim...
-5946	Je vous ai dit tout ce que je savais. La seule[ENTER]preuve que vous avons, c'est les Combattants[ENTER]Orcs. Malheureusement, il est difficile d'avoir[ENTER]une conversation avec eux ...
+5946	Je vous ai dit tout ce que je savais. La seule[ENTER]piste que nous avons sont les combattants orcs.[ENTER]Malheureusement, il est difficile d'avoir une[ENTER]conversation courtoise avec eux...
 5947	Une lettre ? Voyons voir... Ces caractères sont[ENTER]vraiment très difficiles à déchiffrer...[ENTER]Apparemment c'était une attaque d'Orcs, ils ont[ENTER]mis le feu à la ferme, et ils ont été obligé de[ENTER]fuir pour sauver leur vie. Ils ont du abandonner[ENTER]leur enfant ... Et voici un nom.
 5948	Merci de m'avoir apporté cela. Je sais enfin ce[ENTER]qu'il s'est passé.
 5949	Je devrais parler à Chaegirab. Il m'a protégé[ENTER]dans bien des cas. Je vais essayer d'être un[ENTER]meilleur neveu à ses yeux à présent. À bientôt[ENTER]mon ami !
@@ -6897,7 +6897,7 @@
 7073	Qu'est-ce qui vous amène ? Le rat de bibliothèque[ENTER]vous envoie ? Il ne fait que lire, mais ça ne le[ENTER]rend pas plus intelligent pour autant. Il passe[ENTER]son temps à me faire perdre le mien. Enfin,[ENTER]voyons ce qu'il me veut cette fois !
 7074	Il veut que je classe les éventails par rapport à[ENTER]leurs caractéristiques d'attaque? C'est plutôt[ENTER]simple. Dans l'ordre: l'éventail de l'oiseau[ENTER]céleste, de l'éventail à trois plis, l'éventail[ENTER]de l'eau et l'éventail aile de grue. C'est bon?
 7075	Retournez voir Soon
-7076	Retournez voir Soon
+7076	Retourner chez Soon
 7077	Retournez voir Soon pour lui fournir[ENTER]l'information.
 7078	Un service pour Soon
 7079	Alors, Uriel a-t-il pu vous donner une réponse[ENTER]claire?
@@ -7667,7 +7667,7 @@
 7847	Allez voir Ah-Yu
 7848	Allez voir la Marchande
 7849	Matériel pour le marchand
-7850	Le marchand ambulant a besoin de matériel pour[ENTER]fabriquer son collier. Apportez-lui 100 dents[ENTER]d'Unggyi (sur les sorciers orcs élites), une[ENTER]pièce de joaillerie (à la Marchande) et du Fil[ENTER](auprès d'Ariyoung).
+7850	Le marchand ambulant a besoin de matériel pour[ENTER]fabriquer un collier. Apportez-lui 100 dents[ENTER]d'Unggyi des sorciers orcs d'élite, une pièce de[ENTER]joaillerie de la marchande et du fil, que pourra[ENTER]vous fournir Ariyoung.
 7851	J'ai besoin de Fil.
 7852	La production du Fil n'a rien d'exceptionnel.[ENTER]Mais cela m'empêche d'effectuer mon autre[ENTER]travail. J'ai recousu quelques vêtements pour[ENTER]Ah-Yu aujourd'hui et j'aurais vraiment aimé lui[ENTER]rendre...
 7853	Qu'en pensez-vous : Vous apportez les vêtements à[ENTER]Ah-Yu et en échange je vous donne du Fil.[ENTER]C'est d'accord ?
@@ -7696,7 +7696,7 @@
 7876	Laissez-moi voir ça ... 100 foies de tigres et[ENTER]les herbes médicinales, tout est là. Merci ![ENTER]Tenez, vous l'avez bien mérité cette pièce de[ENTER]joaillerie. À bientôt !
 7877	Retournez voir le marchand ambulant
 7878	Retournez voir le marchand ambulant
-7879	En ce moment il y a une réelle demande concernant[ENTER]les colliers fabriqués à partir de dents[ENTER]d'Unggyi. Ces dents sont solides, grosses et[ENTER]parfaites pour fabriquer certaines pièces de[ENTER]joaillerie. Certains soldats pensent que ces[ENTER]souvenirs provenant d'orcs sorciers élites[ENTER]portent bonheur. Pouvez-vous m'en trouver ? Il[ENTER]m'en faudrait 100 pour bien commencer mon[ENTER]commerce.
+7879	En ce moment, il y a une réelle demande de[ENTER]colliers fabriqués à partir de molaires d'orcs.[ENTER]Ces dents sont solides, grosses et parfaites pour[ENTER]fabriquer certaines pièces de joaillerie.[ENTER]Certains soldats pensent que ces molaires[ENTER]provenant de sorciers orcs d'élite portent[ENTER]bonheur. Pouvez-vous m'en rapporter ? Il m'en[ENTER]faudrait 100 pour bien commencer mon commerce.
 7880	Retournez voir le marchand ambulant
 7881	Vous avez trouvé les matériaux pour le collier.[ENTER]Apportez-les au marchand ambulant.
 7882	J'ai tous les matériaux
@@ -7832,7 +7832,7 @@
 8012	Soon m'envoie ...
 8013	Oh, vous venez m'aider à nouveau ? Ah, vous venez[ENTER]chercher le livre pour Soon. J'aurais été amené à[ENTER]aller au village d'à côté, mais il est impatient[ENTER]et finit toujours par demander à quelqu'un d'y[ENTER]aller à sa place. Hum, le voici.[ENTER]Je ne comprends pas pourquoi Soon aime autant ces[ENTER]bouts de papiers. Il est tout de même plus[ENTER]important de gagner de l'argent !
 8014	Retournez voir Soon
-8015	Retournez voir Soon
+8015	Retourner chez Soon
 8016	Le marchand ambulant vous a donné le livre pour[ENTER]Soon. Apportez-lui, il vous dira alors ce qu'il[ENTER]sait concernant la porcelaine Céladon.
 8017	J'ai le livre
 8018	Hey, j'ai enfin mon livre ! Merci beaucoup. Il y[ENTER]a si peu de livres que je n'ai encore lu ...[ENTER]Je vous ai écrit ici ce que je sais de la[ENTER]porcelaine Céladon. Avec mes notes, vous pourrez[ENTER]fabriquer une fantastique porcelaine. Bon, je[ENTER]vais lire mon nouveau livre. Adieu.

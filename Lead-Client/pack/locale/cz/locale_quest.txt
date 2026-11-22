@@ -1,7 +1,7 @@
 1	Chceš opravdu zápasit sám se sebou? Dělej jak[ENTER]myslíš, ale na to nepotřebuješ arénu. Vrať se, až[ENTER]to budeš brát vážně.
 2	Začít cvičný boj
 3	Tvůj tréninkový partner ještě nedosáhl požadované[ENTER]úrovně %s. Je mi líto, ale takový boj nemohu[ENTER]dovolit.
-4	%s musí přijít blíže, aby bylo možné uzavřít[ENTER]smlouvu o boji.
+4	Dohoda o tréninkovém boji je uzavřena. %s také musí přijít ke mě.
 5	%s má momentálně hodinu cvičného boje.
 6	Rozhodnutí
 7	%s nechce proti tobě absolvovat cvičný boj.
@@ -21,7 +21,7 @@
 21	Nevíš, s kým bys chtěl bojovat? Pokud mi neřekneš[ENTER]jméno, nemohu tě zapsat.
 22	Ok, %s. Jsi zapsán na cvičný boj proti %s.
 23	%s čeká na přijmutí výzvy od %s
-24	%s chceš absolvovat cvičný boj proti %s?
+24	%s, chceš absolvovat cvičný boj proti %s?
 25	%s momentálně není přihlášen do hry. Zkus to[ENTER]znovu později nebo si najdi jiného partnera.
 26	Chci něco nechat zlepšit.
 27	Kovář:
@@ -702,7 +702,7 @@
 711	Dobrá, určím teď tajný kód:
 712	Kód smí obsahovat pouze číslice.
 713	Skupina hráče %s se pokouší zabít Modrého draka!
-714	Nemáš dostatek klíčů! Pro aktivaci portálu[ENTER]potřebuji
+714	Nemáš dostatek klíčů! Pro aktivaci portálu[ENTER]potřebuji 3x
 715	Můžeš je získat ze zlých velitelů Yonghan a[ENTER]Huashin.
 716	Chci tohle místo opustit
 717	Přenesu tě zpět ke vstupu do jeskyně.
@@ -1988,7 +1988,7 @@
 2065	.
 2066	Zavřít okno
 2067	Nakrmit koně
-2068	Co chceš dělat s mým koněm?
+2068	Co chceš s tímto koněm udělat?
 2069	Znovuoživení koně
 2070	Ježdění na koni
 2071	Zjistit stav koně
@@ -3627,7 +3627,7 @@
 3706	%d dnů a %d hod.
 3707	%d minut a %d vteřin
 3708	%d minut a %d vteřin
-3709	%d vteřin
+3709	%d sek.
 3710	Žena
 3711	Měl bys mít více respektu ke stáří. Přesto ti[ENTER]přeji vše nejlepší do nového roku.
 3712	Šťastný nový rok!
@@ -5019,7 +5019,7 @@
 5110	Admirál Angmur tě očekává.
 5111	Kápě! Věděl jsem, že to dokážeš. Pověsíme ji[ENTER]blízko jejich tábora, aby ji mohli vidět - to by[ENTER]s nervy Gangu Červených zlodějů mělo trochu[ENTER]zamávat.[ENTER]Mí lidé se o to postarají. Ty si zatím můžeš[ENTER]odpočinout.
 5112	Oslabení Kyklopů
-5113	Admirál Angmur by s tebou rád mluvil.
+5113	Chce s tebou mluvit admirál Angmur.
 5114	Náš plán funguje: když Červení zloději uviděli tu[ENTER]kápi, tak se v nich něco zlomilo. Skončilo to[ENTER]bojem mezi lidmi a démony. Nyní je ten gang[ENTER]kompletně rozložený. Jako další nás čekají[ENTER]Kyklopové.
 5115	Jak budeme pokračovat?
 5116	Kyklopové uctívají svého velitele. Pokud se nám[ENTER]podaří eliminovat jeho oddíl, Kyklopové se[ENTER]rozutečou v panice a strachu. Poraž Generála[ENTER]Outise %d krát, Argése %d krát a Polyphema %d[ENTER]krát.
@@ -5150,7 +5150,7 @@
 5242	(Zbývá %s : %s, %s : %s)
 5243	%s : %d
 5244	Zabraň kouzlu
-5245	Admirál Angmur by s tebou rád mluvil.
+5245	Chce s tebou mluvit admirál Angmur.
 5246	Dobře že jsi tady. Našli jsme způsob, jak[ENTER]sabotovat plány Přisluhovačů temnot a Smrtky.
 5247	Aby se duše mrtvých vzdaly těla, je potřeba[ENTER]médium. Tohle médium je Posvátná zemina a Giganti[ENTER]ji momentálně dávají do pytlů. Pokud budeš[ENTER]schopen jim ukrást 100 pytlů, tak budeme schopni[ENTER]zabránit Kouzlu života.
 5248	Ihned se vydám na cestu!
@@ -7487,7 +7487,7 @@
 7667	No jasně! Proč mi nepomůžeš? Proč nedojdeš[ENTER]natrhat ty květiny místo mě? Byla by to dobrá[ENTER]pomoc, co říkáš? Že to není součáast dohody?[ENTER]Prosímtě, copak nevidíš, jak je těžké získat její[ENTER]lásku? Pomoz mi! Zahrnu tě penězi!
 7668	Odmítnout
 7669	Moje nejmilejší Ariyoung
-7670	Opravdu chceš tento úkol vzdát?
+7670	Chceš teď ukončit úkol?
 7671	K čertu. A jak teď získám ty kytky? Prosímtě,[ENTER]pokud změníš názor, vrať se.
 7672	Ty jsi nebyl nikdy zamilovaný?[ENTER]Nedovedeš si představit, co k ní cítím?[ENTER]Ach, Ariyoung...
 7673	Díky![ENTER]Prosím dones mi ty květiny.
@@ -7658,7 +7658,7 @@
 7838	Ahoj ty tam, máš pro mně minutku?[ENTER]Považuji si toho, že jsi mi pomohl vyrobit tu[ENTER]novou zbraň.[ENTER]Rád bych Tentokrát chci vyrobit nové brnění.[ENTER]Poté, co jsem vyrobil tu zbraň, je dalším[ENTER]logickým krokem vyrobit něco na obranu.
 7839	Samozřejmě na to zase potřebuji materiál.[ENTER]Seženeš mi ho? I tentokrát zase dostaneš odměnu.[ENTER]Ale bez práce nejsou koláče.[ENTER]Tentokrát potřebuji měděnou rudu, kusy perel a[ENTER]ebenové dřevo, zase od každého 100.[ENTER]Máš napsáno na čele, že už víš, jak to funguje.[ENTER]Tak si pospěš.
 7840	Přijmout
-7841	Opravdu chceš tento úkol vzdát?
+7841	Chceš teď ukončit úkol?
 7842	Čeho se bojíš? Tak se vrať, až budeš mít odvahu[ENTER]pracovat.
 7843	Ta troška rudy nestojí přeci ani za řeč. No, jak[ENTER]chceš. Ztrať se!
 7844	Pomůžeš mi znovu? Jsi dobrý přítel. A neboj,[ENTER]první zbroj bude tvá.
@@ -7917,7 +7917,7 @@
 8097	Dáváš lék zrádci Balsovi
 8098	Lék zrádce Balsa
 8099	Baek-Go vyrobil lék z byliny Opičího krále, která[ENTER]může vyléčit mnoho chorob. Dones ten lék zrádci[ENTER]Balsovi ve vedlejší vesnici.
-8100	Opravdu chceš tento úkol vzdát?
+8100	Chceš teď ukončit úkol?
 8101	Tady je ten lék
 8102	Neseš mi ten nový lék? Je tu nějaký nový poznatek[ENTER]v lékařském výzkumu? Promiň, že ti způsobuji[ENTER]potíže. Měl jsem se zeptat na radu doktora hned[ENTER]na začátku. Ale naštěstí mám teď tenhle lék.
 8103	Díky, že jsi mi pomohl dostat se z té mé nemoci.[ENTER]Nemám mnoho přátel. Na, tady - vím že to není[ENTER]mnoho, ale je to od srdce. Prosím, přijmi to.[ENTER]Pokud to přežiji, nezapomenu ti to.
@@ -8045,7 +8045,7 @@
 8226	Přijmout
 8227	Jako odměnu za udržení tajemství jsi dostal od[ENTER]Taureana 30 000 Yangů.
 8228	Obdržíš 700 000 bodů zkušeností.
-8229	Opravdu chceš tento úkol vzdát?
+8229	Chceš teď ukončit úkol?
 8230	Proč ne? Bojíš se?[ENTER]Vrať se, až změníš názor.
 8231	Hmmmm, ty se bojíš?[ENTER]Ale jsi mnohem větší a silnější než já![ENTER]Haha, jsi zbabělec. A já se budu muset zeptat[ENTER]někoho jiného.
 8232	Pavouci žijí v poušti. Jsi silný a určitě to[ENTER]dokážeš. Hodně štěstí!
@@ -8087,14 +8087,14 @@
 8268	Pouštní písek získáš od Pouštního bandity,[ENTER]křišťálovou rudu z křišťálové žíly a opičí krev[ENTER]ze Silné kamenné opice nebo Silné zlaté opice v[ENTER]Sansung Dong. Můžeš mi ty materiály donést? Vím[ENTER]že to není snadné, ale královsky se ti odměním.
 8269	Přijmout
 8270	Odmítnout
-8271	Opravdu chceš tento úkol vzdát?
+8271	Chceš teď ukončit úkol?
 8272	Jestli toho máš momentálně hodně na práci, stav[ENTER]se zase později.
 8273	Vzdáváš to? Opravdu?[ENTER]Tak to se za těmi přísadami musím vydat sám.[ENTER]Potřebuji ten porcelán opravdu naléhavě.[ENTER]Na shledanou a hodně štěstí.
 8274	Aha! To je ono.
 8276	Velitel
 8277	Nevím.
 8278	Ukaž ještě jednou.
-8279	Opravdu chceš tento úkol vzdát?
+8279	Chceš teď ukončit úkol?
 8280	Zkus nad tím ještě popřemýšlet a pak se vrať. Ale[ENTER]nikomu o tom neříkej!
 8281	Bože! To je to tak těžké? Byl jsi moje poslední[ENTER]naděje... Kdo to teď rozluští?
 8282	Dobrá, ale rychle. Jinak někdo dostane[ENTER]podezření...[ENTER][ENTER]elénepřát[ENTER]ěndivi[ENTER]an[ENTER]zoobru
@@ -8123,7 +8123,7 @@
 8306	Ano, máš pravdu. Teď už tomu také rozumím. Jsem[ENTER]na tebe hrdý, jsi jeden z našich nejlepších[ENTER]vojáků! Tahle věta je domluvené heslo. Znamená[ENTER]to, že Yu-Hwan zahlédl nepřátelské špehy a my[ENTER]proti nim musíme zasáhnout. Jdu hned vydat[ENTER]příslušné rozkazy.
 8307	Obdržíš 20 000 Yangů.
 8308	Na to přijdeš. Vrať se, až budeš připraven.
-8309	Opravdu chceš tento úkol vzdát?
+8309	Chceš teď ukončit úkol?
 8310	Ale... posledně jsi to přece zvládl...[ENTER]Proč tedy tentokrát váháš?[ENTER]Ještě si to rozmysli.
 8311	Vím co myslíš.[ENTER]Ty už s námi nechceš spolupracovat, že? To je[ENTER]škoda. Není tu mnoho statečných válečníků.
 8312	Ano, ty jsi můj spasitel! Koukni, to je ten kód.[ENTER]Dobře se na něj podívej!
@@ -8173,7 +8173,7 @@
 8356	A proč se ptáš? Protože se Harang a Taurean[ENTER]hádají? To není nic nového. Ale Harang má[ENTER]tentokrát pravdu. Bingsu je obzvláště oblíbený[ENTER]pokrm v horkých letních dnech. Tauren je slušný[ENTER]kluk, i když občas trochu zlobivý. Pokud mi[ENTER]přineseš přísady, tak mu Bingsu udělám.
 8357	Bingsu?
 8358	Chtěl bych udělat Taureanovi radost a připravit[ENTER]mu Bingsu. Co myslíš, můžeš mi přinést led z hory[ENTER]Sohan?
-8359	Opravdu chceš tento úkol vzdát?
+8359	Chceš teď ukončit úkol?
 8360	Ty nemáš rád zmrzlinu? Anebo si jí právě snědl[ENTER]příliš mnoho? Je to pro Taureana, tak se nad tím[ENTER]ještě jednou zamysli.
 8361	Škoda. Taurean bude velmi zklamán. Sbohem.
 8362	Prima. Potřebuji hroudy ledu ze začarovaného[ENTER]ledoviště na hoře Sohan. Přines mi 50 hrud ledu.[ENTER]Pak mohu udělat nějaké chutné Bingsu.

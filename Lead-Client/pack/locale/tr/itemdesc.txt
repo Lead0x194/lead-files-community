@@ -138,13 +138,13 @@
 22010	Geri Dönüş Kağıdı	Bu Kağıt şehre dönmenizi veya şehirden bulunduğunuz alana dönmenizi sağlar.
 25040	Kutsama Kağıdı	Geliştirme başarısız olduğunda eşyanın yok olma riski ortadan kalkıp, sadece kalitesi 1 kademe düşer.
 25041	Büyülü Metal	Bir nesnenin en iyi şekilde geliştirilmesini sağlayan bir efsanevi metal topağı. Bunun dışında, geliştirilmiş olan nesne, ne yok edilir ne de değerden düşürülür.
-25100	Ruh Taşı Kağıdı	Bu Kağıt, silah ve zırhlardan Ruh Taşı çıkarmaya yarar. Taşı çıkardıktan sonra izi kalır.
-27051	Kırmızı iksir (K)	300 sağlık puanı doldurur. Satılamaz.
-27052	Mavi İksir (K)	100 sihir puanını doldurur. Satılamaz.
-27053	Yeşil İksir (K)	Saldırı hızını 10 dakika boyunca +10 artırır. Satılamaz.
-27054	Mor İksir (K)	Hareket hızını 10 dakika boyunca +10 artırır. Satılamaz.
+25100	Ruh Taşı Kağıdı	Bu Kağıt, silah ve zırhlardan zihin taşı çıkarmaya yarar. Taşı çıkardıktan sonra izi kalır.
+27051	Kırmızı iksir (K)	300 sağlık puanı doldurur. Ticareti yok.
+27052	Mavi İksir (K)	100 mana puanını doldurur. Ticareti yok.
+27053	Yeşil İksir (K)	Saldırı hızını 10 dakika boyunca +10 artırır. Ticareti yok.
+27054	Mor İksir (K)	Hareket hızını 10 dakika boyunca +10 artırır. Ticareti yok.
 27122	Kırmızı İksir (K)	300 hayat puanı doldurur. Satılamaz.
-27123	Yeşil İksir (K)	Saldırı hızını 10 dakika boyunca +10 artırır. Satılamaz.
+27123	Yeşil İksir (K)	Saldırı hızını 10 dakika boyunca +10 artırır. Ticareti yok.
 27124	Bandaj	kanamayı anında durdurur.
 27600	Kamp Ateşi	Ateş yakmak için kesilmiş ağaç.
 27610	Balıkçılık Küresi	Bu sihirli küre oltaya takılan balık hakkında bilgi verir.
@@ -211,11 +211,11 @@
 27876	Izgara Yayın Balığı	Hemen bir miktar SP yükler.
 27877	Izgara Çopra Balığı	Seni 5 dakika için görünmez yapar.
 27878	Izgara Lüfer Balığı	Hemen bir miktar HP yükler.
-27879	Izgara Sevimli Balık	Bu balık, ateşte pişirildiğinde hoş bir ızgara tadı verir.
-27880	Izgara Palamut Balığı	Kamp ateşinde pişirilen bu balık hoş bir ızgara tadı verir.
-27881	Izgara Kadife Balığı	Bu balık, ateşte pişirildiğinde hoş bir ızgara tadı verir.
-27882	Izgara Aynalı Sazan	Kamp ateşinde pişirilen bu balık hoş bir ızgara tadı verir.
-27883	Izgara AltınSudak Balığı	Kamp ateşinde pişirilen bu balık hoş bir ızgara tadı verir.
+27879	Izgara Sevimli Balık	Tecrübe toplamayı %10 artırır.
+27880	Izgara Palamut Balığı	Canavarlara karşı güçlü %5 artar.
+27881	Izgara Kadife Balığı	Büyü-/yakın dövüş saldırısını %3 artırır.
+27882	Izgara Aynalı Sazan	Anında 1000 HP yeniler.
+27883	Izgara AltınSudak Balığı	Tecrübe toplamayı %50 artırır.
 27987	İstiridye	Hoş görünümlü bir deniz kabuklusudur. İçinde inci olabilir.
 27988	Define Haritası	Eski hazinelerin yerlerini açığa çıkaran yıpranmış harita.
 27989	Metin Taşı Dedektörü	Pusula sana sonraki metin taşının yönünü ve mesafesini gösterir. Ne kadar parlaksa, o kadar yakınsın demektir. 6 kez kullanılabilir.
@@ -392,7 +392,7 @@
 30197	Büyülü Tohum	Bu tohumlardan adeta hayat fışkırıyor.
 30198	Su Kristali	Karanlık bir buz yaratığının kalbi.
 30199	Mavi Kristal	Ejderha Tapınağı'nın karanlık güçlerini arttıran bir kristal parça.
-30210	Değerli Taş Parçası	Işığın üzerinde adeta dans ettiği kristal şeffaflığında bir taş
+30210	Değerli Taş Parçası	Işığın üzerinde adeta dans ettiği kristal şeffaflığında bir taş.
 30211	Değerli Taş Parçası	Küçük parlayan Taş parçası.
 30212	Değerli Taş Parçası	Küçük parlayan Taş parçası.
 30213	Değerli Taş Parçası	Küçük parlayan Taş parçası.
@@ -413,11 +413,11 @@
 30252	Bilgelik Mücevheri	Bu elmasın ışıltısı huzur verici ve cömerttir.
 30253	Sadakat Mücevheri	Bu mücevherin etrafını bir samimiyet ve savaş ruhu ışıltısı sarar.
 30254		
-30265	Madalya Parçası (1)	Kahramanlık madalyasının birinci parçası
-30266	Madalya Parçası (2)	Kahramanlık madalyasının ikinci parçası
-30267	Madalya Parçası (3)	Kahramanlık madalyasının üçüncü parçası
-30268	Madalya Parçası (4)	Kahramanlık madalyasının dördüncü parçası
-30269	Madalya Parçası (5)	Kahramanlık madalyasının beşinci parçası
+30265	Madalya Parçası (1)	Kahramanlık madalyasının birinci parçası.
+30266	Madalya Parçası (2)	Kahramanlık madalyasının ikinci parçası.
+30267	Madalya Parçası (3)	Kahramanlık madalyasının üçüncü parçası.
+30268	Madalya Parçası (4)	Kahramanlık madalyasının dördüncü parçası.
+30269	Madalya Parçası (5)	Kahramanlık madalyasının beşinci parçası.
 30270	Ejderha Taşı Parçası	Ender bulunan bir ejderha taşı limesi
 30311	Ruh Kristali Anahtarı	İnce işlenen mavi ruh kristalli bu anahtar Şeytan Katakombu'nun 2. katını açar.
 30312	Surat Totemi	Surat kakmalı bu tahta levha Şeytan Katakombu'nun 6. katının anahtarıdır.
@@ -425,7 +425,7 @@
 30316	Bağış Tabağı	Bol desenli bir bağış tabağı.
 30317	İftar	İftar
 30318	Bereket Meyvesi	Bu müstesna meyvelerden yeteri kadar toplarsan, karşılığında bir ödül alırsın.
-30319	Küçülen Kafa	Küçülen bu iblis kafası Şeytan Katakomb'un 3. katının mührünü açar. Bu eşya satılabilir.
+30319	Küçülen Kafa	Küçülen bu iblis kafası Şeytan Katakomb'un 3. katının mührünü açar. Bu eşyanın ticareti var.
 30320	Küçülen Kafa	Küçülen Şeytan Kafası Şeytan Katakombu'nun 3. katının mührünü açar.
 30321	Cadılar Bayramı Kabağı	Balkabağı sayesinde HP ile SP dolar. Büyü asasıyla dokununca da Cadılar Bayramı Sandığı'na dönüşür.
 30322	Büyü Asası	Akçaağaç odunundan ustaca oyulmuş bu büyü asasının yıldızılı ucunda büyülü bir ateş yanar. Ayrıca, her Cadılar Bayramı kabağı bu büyü asasıyla Cadılar Bayramı Sandığı'na dönüştürülebilir.
@@ -438,7 +438,7 @@
 30330	Maat Taşı	Adalet tanrıçası Maat, kargaşayı düzene dönüştürür.
 30331	Buz Anahtarı	Anahtar buz gibi soğuk ve Nemere Gözlemevi'nin üçüncü katındaki kapısını açar. Sadece Şamanlar kullanabilir.
 30332	Kuzey Yıldızı	Saf buzdan yapılma bir mühür taşı. Nemere Gözlemevi'nin altıncı katındaki kapısını açar.
-30333	Buzçiçeği Anahtarı	Buz anahtarı Nemere Gözlemevi'nin dokuzuncu katındaki kapısını açar. Sadece Şamanlar veya Ninjalar kullanabilir.
+30333	Buzçiçeği Anahtarı	Buz anahtarı Nemere Gözlemevi'nin dokuzuncu katındaki kapısını açar.
 30500	Yakut Oyma Bıçağı	Silahını arındırmaya yarayan alet
 30501	Altın Kenet	Silahını arındırmaya yarayan öğe
 30502	Yakut İşlemeli	Silahını arındırmaya yarayan öğe
@@ -450,13 +450,13 @@
 30508	Safir İşlemesi	Silahını arındırmaya yarayan öğe
 30509	Mavi Ejderha Çeliği	Ejderha derisi çok hafif ve esnek ama oldukça dayanıklı. Metal gibi işlenir ve zırh yapımı için kullanılır.
 30510	Fiyakalı Apolet	Zırhları süslemeye yarayan öğe
-30511	Kırmızı Kumaş	Zırhları süslemeye yarayan değerli kumaş
+30511	Kırmızı Kumaş	Zırhları süslemeye yarayan değerli kumaş.
 30512	Kırmızı Ejderha Çeliği	Ejderha derisi çok hafif ve esnek ama oldukça dayanıklı. Metal gibi işlenir ve zırh yapımı için kullanılır.
 30513	Kıymetli Apolet	Zırhları süslemeye yarayan öğe
-30514	Eflatun Kumaş	Zırhları süslemeye yarayan değerli kumaş
+30514	Eflatun Kumaş	Zırhları süslemeye yarayan değerli kumaş.
 30515	Erguvani Ejderha Çeliği	Ejderha derisi çok hafif ve esnek ama oldukça dayanıklı. Metal gibi işlenir ve zırh yapımı için kullanılır.
 30516	Antika Apolet	Zırhları süslemeye yarayan öğe
-30517	Altın Kumaş	Zırhları süslemeye yarayan değerli kumaş
+30517	Altın Kumaş	Zırhları süslemeye yarayan değerli kumaş.
 30518	Altın İplik	Sıvı altından yapılma büyülü iplik makarası. Bir değerli taşla birlikte kıymetli mücevher haline getirilebilir.
 30519	Altın Kanca	Saf altından oluşur ve bir değerli taşla birlikte kıymetli mücevher haline getirilebilir.
 30520	Altın Kenet	Saf altından oluşur ve bir değerli taşla birlikte kıymetli mücevher haline getirilebilir.
@@ -553,9 +553,9 @@
 31025		
 31026	Kabuk Zırhı	Kabuk Kabilesi'nin koruyucu zırhı. Sabitleme malzemesi olarak da kullanılır.
 31027	İnce Kum	Bu özel ince kum inşaat malzemesi olarak kullanılabilir.
-31028	Kiremit	Kurutulmuş kerpiçten kare duvar taşı
-31029	İç Işık	Polyphemos'un İç Enerji Kaynağı
-31030	İç Işık	Dev Kral'ın İçindeki Enerji Kaynağı
+31028	Kiremit	Kurutulmuş kerpiçten kare duvar taşı.
+31029	İç Işık	Polyphemos'un İç Enerji Kaynağı.
+31030	İç Işık	Dev Kral'ın İçindeki Enerji Kaynağı.
 31031	Milenyum Esansı	Ganko kökü, tue mantarı ve alp gülünden oluşan bir karıışım. Leviathan'ın incilerinin önemli bir maddesi.
 31032	Leviathan'ın İncileri	Efsanevi yaratıklar ve milenyum esansının içindeki ışıktan oluşan etkili güçlendirici kapsüller.
 31033	Reis'in Pelerini	Bu pelerin Kızılhırsızların yenilmezlik simgesidir.
@@ -566,7 +566,7 @@
 31038	Kutsanmış Toprak	Kutsanmış toprakla dolu bu torba ölü çağırmaya yarar.
 31039	Para Kesesi	İçinde ölü çağırmaya yarayan bir araç bulunabilir.
 31040	Altın Klan	Bu nesne bir araç mı?
-31041	Fosil Toprak	Toprak ve kemik tozu karışımı
+31041	Fosil Toprak	Toprak ve kemik tozu karışımı.
 31042	Triton Mızrağı	Triton mızrağı ada sakinleri tarafından geleneksel olarak savunma sistemlerini sabitlemek amacıyla kullanılıyor.
 31043	Lemur Levha	Gizemli şekilde parlayan, üzerine yazılar kazınmış taş levha.
 31044		
@@ -599,10 +599,10 @@
 31071		
 31072		
 31073	Altın Avcı Tasması	Bu tasmayla canavarların çantasından para kesesini çekebilirsin.
-31074	Zımbalı Tasma	Zımbalı deri bir boyun aksesuarı
+31074	Zımbalı Tasma	Zımbalı deri bir boyun aksesuarı.
 31075	Dikenli Tasma	Martyaxwar'ın boyun aksesuarı. İç kısmında bir mektup gizlidir.
 31076	Güneş Bitkileri	Bu bitkiler sıcak ve kuru ortamlarda yetişir.
-31077	Temel Taşı Tozu	İnce toz şeklinde öğütülmüş temel taşı
+31077	Temel Taşı Tozu	İnce toz şeklinde öğütülmüş temel taşı.
 31078	Saf Lumen	Kara maddenin gücünü ortadan kaldıran beyaz enerji.
 31079	Yak-Hwan'a Mektup	Casusun bir tasmada saklı son sözleri.
 31080	Alev Kralı'nın Kanı	Kan şeytanın damarlarında lav kadar sıcak akıyor.
@@ -619,23 +619,23 @@
 31091	Alev Kralı'nın Kanı	Kan şeytanın damarlarında lav kadar sıcak akıyor.
 31092		
 31093	Bilinmeyen Taş	Bu taş türünü bilmiyorsun. Soğuk ve karanlık bir his veriyor.
-31094	Parçacık	Şeytansı meteoridin parçacığı
+31094	Parçacık	Şeytansı meteoridin parçacığı.
 31095		
-31096		
-31097		
-31098		
-31099		
-31100		
+31096		Değerli Tahta
+31097		En Tai Şebnemi
+31098		Toprak Hayaleti
+31099		Ağaç Zümrütü.
+31100		İlaç Çantası.
 31101		
 31102		
 31103		
 35000	Şifalı Bitkiler+	İyileştirici kurutulmuş bitkilerin karışımı. Ne yazık ki biraz tozlanmışlar.
 35001	Kaplan Karaciğeri+	Yetişkin bir yırtıcının el büyüklüğünde, kırmızımsı kahverengi ciğeri.
-38010	Yang Paketi	Savaş kasasını Yang'la doldurmak için paketi kullan. Satılamaz.
-38011	Yang Paketi	Savaş kasasını Yang'la doldurmak için paketi kullan. Satılamaz.
+38010	Yang Paketi	Savaş kasasını Yang'la doldurmak için paketi kullan. Ticareti yok.
+38011	Yang Paketi	Savaş kasasını Yang'la doldurmak için paketi kullan. Ticareti yok.
 38050	Güç Sandığı	Hayret! Sandık çok hafif, sanki içi boş...
 38051	Kral Kaplanı Kristali	Kötü hayvan ruhlarını dizginlemek için ciddi anlamda büyü gücüne sahip olmak gerekir. Bu kristal beş olası Kral Kaplanı Mührü'nün birini içerir.
-38052	Krallar Sandığı	Bu muhteşem sandığın içinde krallara layık bir hazine saklı! Bu eşya satılabilir.
+38052	Krallar Sandığı	Bu muhteşem sandığın içinde krallara layık bir hazine saklı! Bu eşyanın ticareti var.
 38053	Sonsuz Kış Sandığı	Bu sandık buzdan yapılmıştır. Kapağı hafif bir tıkırtıyla açılır ve içinden buz gibi bir soğuk yükselir.
 38054	Çöl Fırtınası Sandığı	Gizemli sandık rastgele bir nesne içerir.
 38055	Yavrucuk Kutusu	Bu kutuda şirin bir hayvan yavrusu saklı olabilir. Kutuyu açarsan rastgele bir eşya bulursun.
@@ -646,54 +646,54 @@
 38102	Güçlü Atıştırmalk(30 Gn)	Güçlü bineğinin ömrünü 30 gün uzatır.
 38200	Rufus Mührü	Kurt yavrusu Rufus'u yanına çağıran bir mühür.
 38201	Rufus Mührü	Kurt yavrusu Rufus'u yanına çağıran bir mühür.
-39001	Büyülü Metal	Bu taş, eşya yükseltmede başarı şansını yükseltir. Ayrıca, ne yok edilebilir ne de değeri düşürülebilir. Bu eşya satılabilir.
-39002	Tecrübe Yüzüğü	60 dakika boyunca %50 daha fazla tecrübe toplamanı sağlar. Bu eşya satılabilir.
-39003	Şeftali Çiçeği Şurubu	HP'ni anında 500 puan yenileyen iksir. Bu eşya satılabilir.
-39004	Kutsama Küresi	Bu efsanevi küre, dört öznitelikli bir eşyaya beşincisini ekler. Ancak ekleme başarısız olabilir. Bu eşya satılabilir.
-39005	Büyülü Bakır	Bu demir maden ve kutsama kağıdı ile demircide savaş kağıdı yaptırılabilir. Bu eşya satılabilir.
-39006	Cesaret Pelerini	Savaşçılar bir zamanlar taşıdıkları bu renkli pelerin ile tüm yaratıkların dikkatini üzerlerine çekip kahramanlıklarını kanıtlamıştır. Bu eşya satılabilir.
-39007	Demircinin El Kitabı	Yaşlı bir demircinin ruhuyla bağlı olan bir kitap. Nesne yükseltme şansını artırır. Bu eşya satılabilir.
-39008	Kötü Ruh Kovma Kağıdı	Öğrenme başarısız olursa, seni kötü ruhun lanetinden korur. Bu kağıdın yardımıyla aynı gün bir beceri belgesi daha okuyabilirsin. Bu eşya satılabilir.
-39009	Beceri Sıfırlama Kağıdı	Herhangi bir yeteneğinin puanları bu nesne sayesinde yeniden dağıtılır. Bu eşya satılabilir.
-39010	Saldırı İksiri +10	Saldırı hızını 30 dakika boyunca %10 artırır. Bu eşya satılabilir.
-39011	Yaşam Kutsaması	HP'ni anında tamamen yenileyen bir kutsama. Bu eşya satılabilir.
-39012	Sihir Kutsaması	SP'ni anında tamamen yenileyen bir kutsama. Bu eşya satılabilir.
-39013	Ejderha Kutsaması	HP ve SP'ni anında tamamen yenileyen bir kutsama. Bu eşya satılabilir.
-39014	Savaş Kağıdı	Nesne geliştirmede tamamen başarı sağlanır. Sadece +0 ile +3 arası nesnelerde uygulanabilir. Bu eşya satılabilir.
-39015	Demirci Taşı	Bu taş ve kutsama kağıdı ile demircide demircinin el kitabı yaptırılabilir. Bu eşya satılabilir.
-39016	Büyülü Demir Maden	Bu demir maden ve kutsama kağıdı ile demircide ejderha parşömeni yaptırılabilir. Bu eşya satılabilir.
-39017	Ejderha Tanrı Yaşamı	Maksimum HP'ni 30 dakika boyunca %20 artırır. Bu eşya satılabilir.
-39018	Ejderha Tanrı Saldırısı	Savaş esnasında başkalarına verdiğin hasarı 30 dakika boyunca %12 ile %15 arası artırır. Bu eşya satılabilir.
-39019	Ejderha Tanrı Zekası	Maksimum SP'ni 30 dakika boyunca %20 artırır. Bu eşya satılabilir.
-39020	Ejderha Tanrı Savunması	Savaş esnasında uğradığın hasarı 30 dakika boyunca %12 ile %15 arası azaltır. Bu eşya satılabilir.
-39021	Ejderha Tanrı Desteği	Karakterinin canlılığı, gücü, zekası ve çevikliği geçici olarak beş katına çıkar. Bu eşya satılabilir.
-39022	Ejderha Parşömeni	Geliştirme işlemi başarısız olduğunda bir eşyanın yok olma riskini ortadan kaldırır. Yalnızca kalitesi bir basamak düşer. Ayrıca başarılı bir geliştirme ihtimali %10 artar. Bu eşya satılabilir.
-39023	Araştırmacının Özütü	Bu özüt, toplanmış olan araştırma nesnelerinin kalitesini artırır ve görev verenin kabul etme olasılığını yükseltir. Bu eşya satılabilir.
-39024	Kritik İsabet	Savaş esnasında kritik isabet yapma şansını 10 dakika boyunca %20 artırır. Bu eşya satılabilir.
-39025	Delici İsabet	Savaş esnasında delici isabet yapma şansını 10 dakika boyunca %20 artırır. Bu eşya satılabilir.
-39026	Hız İksiri	30 dakika boyunca hareket hızını 60 artırır. Bu eşya satılabilir.
-39027	Taş Sanatı Kitabı	Bir eşyada bulunan tüm kırık taşları çıkarır. Bu sayede bir kere daha silah ve zırhı yükseltme şansın olur. Bu eşya satılabilir.
-39028	Efsun Nesnesi	Eşyalarının birindeki bonusları siler ve yenilerini ekler. Bu eşya satılabilir.
-39029	Arttırma Kağıdı	Şans eseri, sana ait olan eşyaların birine yeni bir bonus eklenir (maks. 4 Bonus kadar). Bu eşya satılabilir.
-39030	Münzevi Tavsiyesi	Bir sonraki kitabı (ya da ruh taşını) okurken yeteneğini geliştirme şansını iki buçuk katına çıkarır. Bu eşya satılabilir.
-39031	Soğutma İksiri	Becerilerinin soğuma süresi bu iksirle 30 dakika boyunca %20 azalır. Bu eşya satılabilir.
-39032	Yaşam Meyvesi	Sıralama puanını 2.000 artırır (soğuma süresi: 8 saat). Bu eşya satılabilir.
-39033	Düzeltme Kağıdı	Başarı bir şekilde en son yerleştirilmiş olan ruh taşı bu kağıtla nesneden çıkartılabilir. Bu eşya satılabilir.
-39034	At Şekeri	Bu şeker parçası, binek hayvanına isim vermeni sağlar. Defans değerini de aynı anda 20 artırır. Bu eşya satılabilir.
-39035	İçgörü Küresi	Başka oyunculara kendi envanterindeki eşyaları göstermeni sağlar. Camı, işlem sırasında kırılır. Bu eşya satılabilir.
-39036	Rüzgarın Ayakkabıları	Giydiğinde hareket hızını 30 oyun saati boyunca 30 artırır. Bu eşya satılabilir.
-39037	Güneş Özütü (K)	HP'ni otomatik olarak yeniler. 1.000.000 HP içerir. Bu eşya satılabilir.
-39038	Güneş Özütü (O)	HP'ni otomatik olarak yeniler. 3.000.000 HP içerir. Bu eşya satılabilir.
-39039	Güneş Özütü (B)	HP'ni otomatik olarak yeniler. 7.000.000 HP içerir. Bu eşya satılabilir.
-39040	Ay Özütü (K)	SP'ni otomatik olarak yeniler. 100.000 SP içerir. Bu eşya satılabilir.
-39041	Ay Özütü (O)	SP'ni otomatik olarak yeniler. 300.000 SP içerir. Bu eşya satılabilir.
-39042	Ay Özütü (B)	SP'ni otomatik olarak yeniler. 700.000 SP içerir. Bu eşya satılabilir.
-39043	Geri Dönüş Kağıdı	Bu kağıt, en son belirlediğin yere geri dönmeni sağlar. Bu eşya satılabilir.
+39001	Büyülü Metal	Bu taş, eşya yükseltmede başarı şansını müthiş yükseltir. Ayrıca, ne yok edilebilir ne de değeri düşürülebilir. Bu eşyanın ticareti var.
+39002	Tecrübe Yüzüğü	60 dakika boyunca %50 daha fazla tecrübe toplamanı sağlar. Bu eşyanın ticareti var.
+39003	Şeftali Çiçeği Şurubu	HP'ni anında 500 puan yenileyen iksir. Bu eşyanın ticareti var.
+39004	Kutsama Küresi	Bu efsanevi küre, dört öznitelikli bir eşyaya beşincisini ekler. Ancak ekleme başarısız olabilir. Bu eşyanın ticareti var.
+39005	Büyülü Bakır	Bu demir maden ve kutsama kağıdı ile demircide savaş kağıdı yaptırılabilir. Bu eşyanın ticareti var.
+39006	Cesaret Pelerini	Savaşçılar bir zamanlar taşıdıkları bu renkli pelerin ile tüm yaratıkların dikkatini üzerlerine çekip kahramanlıklarını kanıtlamıştır. Bu eşyanın ticareti var.
+39007	Demircinin El Kitabı	Yaşlı bir demircinin ruhuyla bağlı olan bir kitap. Nesne yükseltme şansını artırır. Bu eşyanın ticareti var.
+39008	Kötü Ruh Kovma Kağıdı	Öğrenme başarısız olursa, seni kötü ruhun lanetinden korur. Bu kağıdın yardımıyla aynı gün bir beceri belgesi daha okuyabilirsin. Bu eşyanın ticareti var.
+39009	Beceri Sıfırlama Kağıdı	Herhangi bir yeteneğinin puanları bu nesne sayesinde yeniden dağıtılır. Bu eşyanın ticareti var.
+39010	Saldırı İksiri +10	Saldırı hızını 30 dakika boyunca %10 artırır. Bu eşyanın ticareti var.
+39011	Yaşam Kutsaması	HP'ni anında tamamen yenileyen bir kutsama. Bu eşyanın ticareti var.
+39012	Sihir Kutsaması	SP'ni anında tamamen yenileyen bir kutsama. Bu eşyanın ticareti var.
+39013	Ejderha Kutsaması	HP ve SP'ni anında tamamen yenileyen bir kutsama. Bu eşyanın ticareti var.
+39014	Savaş Kağıdı	Nesne geliştirmede tamamen başarı sağlanır. Sadece +0 ile +3 arası nesnelerde uygulanabilir. Bu eşyanın ticareti var.
+39015	Demirci Taşı	Bu taş ve kutsama kağıdı ile demircide demircinin el kitabı yaptırılabilir. Bu eşyanın ticareti var.
+39016	Büyülü Demir Maden	Bu demir maden ve kutsama kağıdı ile demircide ejderha parşömeni yaptırılabilir. Bu eşyanın ticareti var.
+39017	Ejderha Tanrı Yaşamı	Maksimum HP'ni 30 dakika boyunca %20 artırır. Bu eşyanın ticareti var.
+39018	Ejderha Tanrı Saldırısı	Saldırı değerini 30 dakika boyunca %20 artırır. Bu eşyanın ticareti var.
+39019	Ejderha Tanrı Zekası	Maksimum SP'ni 30 dakika boyunca %20 artırır. Bu eşyanın ticareti var.
+39020	Ejderha Tanrı Savunması	Savaş esnasında uğradığın hasarı 30 dakika boyunca %20 azaltır. Bu eşyanın ticareti var.
+39021	Ejderha Tanrı Desteği	Karakterinin canlılığı, gücü, zekası ve çevikliği geçici olarak beş katına çıkar. Bu eşyanın ticareti var.
+39022	Ejderha Parşömeni	Geliştirme işlemi başarısız olduğunda bir eşyanın yok olma riskini ortadan kaldırır. Yalnızca kalitesi bir basamak düşer. Ayrıca başarılı bir geliştirme ihtimali %10 artar. Bu eşyanın ticareti var.
+39023	Araştırmacının Özütü	Bu özüt, toplanmış olan araştırma nesnelerinin kalitesini artırır ve görev verenin kabul etme olasılığını yükseltir. Bu eşyanın ticareti yapılabilir. Yohara'daki görevler için geçerli değildir.
+39024	Kritik İsabet	Savaş esnasında kritik isabet yapma şansını 10 dakika boyunca %20 artırır. Bu eşyanın ticareti var.
+39025	Delici İsabet	Savaş esnasında delici isabet yapma şansını 10 dakika boyunca %20 artırır. Bu eşyanın ticareti var.
+39026	Hız İksiri	30 dakika boyunca hareket hızını 60 artırır. Bu eşyanın ticareti var.
+39027	Taş Sanatı Kitabı	Bir eşyada bulunan tüm kırık taşları çıkarır. Bu sayede bir kere daha silah ve zırhı yükseltme şansın olur. Bu eşyanın ticareti var.
+39028	Efsun Nesnesi	Eşyalarının birindeki bonusları siler ve yenilerini ekler. Bu eşyanın ticareti var.
+39029	Arttırma Kağıdı	Şans eseri, sana ait olan eşyaların birine yeni bir bonus eklenir (maks. 4 Bonus kadar). Bu eşyanın ticareti var.
+39030	Münzevi Tavsiyesi	Bir sonraki kitabı (ya da ruh taşını) okurken yeteneğini geliştirme şansını iki buçuk katına çıkarır. Bu eşyanın ticareti var.
+39031	Soğutma İksiri	Becerilerinin soğuma süresi bu iksirle 30 dakika boyunca %20 azalır. Bu eşyanın ticareti var.
+39032	Yaşam Meyvesi	Sıralama puanını 2.000 artırır (soğuma süresi: 8 saat). Bu eşyanın ticareti var.
+39033	Düzeltme Kağıdı	Başarı bir şekilde en son yerleştirilmiş olan zihin taşı bu kağıtla nesneden çıkartılabilir. Bu eşyanın ticareti var.
+39034	At Şekeri	Bu şeker parçası, binek hayvanına isim vermeni sağlar. Defans değerini de aynı anda 20 artırır. Bu eşyanın ticareti var.
+39035	İçgörü Küresi	Başka oyunculara kendi envanterindeki eşyaları göstermeni sağlar. Camı, işlem sırasında kırılır. Bu eşyanın ticareti var.
+39036	Rüzgarın Ayakkabıları	Giydiğinde hareket hızını 30 oyun saati boyunca 30 artırır. Bu eşyanın ticareti var.
+39037	Güneş Özütü (K)	HP'ni otomatik olarak yeniler. 1.000.000 HP içerir. Bu eşyanın ticareti var.
+39038	Güneş Özütü (O)	HP'ni otomatik olarak yeniler. 3.000.000 HP içerir. Bu eşyanın ticareti var.
+39039	Güneş Özütü (B)	HP'ni otomatik olarak yeniler. 7.000.000 HP içerir. Bu eşyanın ticareti var.
+39040	Ay Özütü (K)	SP'ni otomatik olarak yeniler. 100.000 SP içerir. Bu eşyanın ticareti var.
+39041	Ay Özütü (O)	SP'ni otomatik olarak yeniler. 300.000 SP içerir. Bu eşyanın ticareti var.
+39042	Ay Özütü (B)	SP'ni otomatik olarak yeniler. 700.000 SP içerir. Bu eşyanın ticareti var.
+39043	Geri Dönüş Kağıdı	Bu kağıt, en son belirlediğin yere geri dönmeni sağlar. Bu eşyanın ticareti var.
 39044	Lycan Sandığı (k)	Lycanlar'a özel yararlı objeler içeren donanım paketi
 39045	Lycan Sandığı (b)	Lycanlar'a özel yararlı objeler içeren büyük donanım paketi
 39046	Dönüş Belgesi+	Omuz kuşağındaki bonusları silmek için dönüşüm belgesini kullan.
-41001	Tavşan Kostümü e (kahve)	Baylara özel kahverengi pelüşten tavşan kostümü
-41002	Tavşan Kostümü d (kahve)	Bayanlara özel kahverengi pelüşten tavşan kostümü
+41001	Tavşan Kostümü e (kahve)	Baylara özel kahverengi pelüşten tavşan kostümü.
+41002	Tavşan Kostümü d (kahve)	Bayanlara özel kahverengi pelüşten tavşan kostümü.
 41003	Çöl Savaşçısı (e)	Erkeklere özel bu savaş giysisiyle zorlu çöl koşullarına karşı koyulur.
 41004	Çöl Savaşçısı (d)	Bayanlara özel bu savaş giysisiyle zorlu çöl koşullarına karşı koyulur.
 41005	Olimpik Eskrim Giys. (e)	Erkek eskrimciler için sportif bir koruyucu giysi.
@@ -720,32 +720,32 @@
 41026	Boks Giysisi TUR (d)	Bayan boksörlere özel Türk bayrağı renginde savaşçı giysisi.
 41027	Boks Giysisi BRA (e)	Erkek boksörlere özel Brezilya bayrağı renginde savaşçı giysisi.
 41028	Boks Giysisi BRA (d)	Bayan boksörlere özel Brezilya bayrağı renginde savaşçı giysisi.
-41029	Çöl Savaşçısı (E, Bonus)	Erkeklere özel bu savaş giysisiyle zorlu çöl koşullarına karşı koyulur. Satılabilir eşya.
-41030	Çöl Savaşçısı (K, Bonus)	Bayanlara özel bu savaş giysisiyle zorlu çöl koşullarına karşı koyulur. Satılabilir eşya.
-41031	Olimpik Eskrim Giys. (e)	Erkek eskrimcilere özel sportif bir koruyucu giysi. Satılabilir eşya.
-41032	Olimpik Eskrim Giys. (d)	Bayan eskrimcilere özel sportif bir koruyucu giysi. Satılabilir eşya.
-41033	Eskrim Giysisi GER (e)	Erkek eskrimcilere özel Alman bayrağı renginde sportif bir koruyucu giysi. Satılabilir eşya.
-41034	Eskrim Giysisi GER (d)	Bayan eskrimcilere özel Alman bayrağı renginde sportif bir koruyucu giysi. Satılabilir eşya.
-41035	Eskrim Giysisi TUR (e)	Erkek eskrimcilere özel Türk bayrağı renginde sportif bir koruyucu giysi. Satılabilir eşya.
-41036	Eskrim Giysisi TUR (d)	Bayan eskrimcilere özel Türk bayrağı renginde sportif bir koruyucu giysi. Satılabilir eşya.
-41037	Eskrim Giysisi BRA (e)	Erkek eskrimcilere özel Brezilya bayrağı renginde sportif bir koruyucu giysi. Satılabilir eşya.
-41038	Eskrim Giysisi BRA (d)	Bayan eskrimcilere özel Brezilya bayrağı renginde sportif bir koruyucu giysi. Satılabilir eşya.
-41039	Olimpik Futbol Form. (e)	Erkek futbolculara özel tarafsız forma. Satılabilir eşya.
-41040	Olimpik Futbol Form. (d)	Bayan futbolculara özel tarafsız forma. Satılabilir eşya.
-41041	Futbol Forması GER (e)	Erkek futbolculara özel Alman bayrağı renginde forma. Satılabilir eşya.
-41042	Futbol Forması GER (d)	Bayan futbolculara özel Alman bayrağı renginde forma. Satılabilir eşya.
-41043	Futbol Forması TUR (e)	Erkek futbolculara özel Türk bayrağı renginde forma. Satılabilir eşya.
-41044	Futbol Forması TUR (d)	Bayan futbolculara özel Türk bayrağı renginde forma. Satılabilir eşya.
-41045	Futbol Forması BRA (e)	Erkek futbolculara özel Brezilya bayrağı renginde forma. Satılabilir eşya.
-41046	Futbol Forması BRA (d)	Bayan futbolculara özel Brezilya bayrağı renginde forma. Satılabilir eşya.
-41047	Olimpik Boksör Giys. (e)	Erkek boksörlere özel savaşçı giysisi. Satılabilir eşya.
-41048	Olimpik Boksör Giys. (d)	Bayan boksörlere özel savaşçı giysisi. Satılabilir eşya.
-41049	Boks Giysisi GER (e)	Erkek boksörlere özel Alman bayrağı renginde savaşçı giysisi. Satılabilir eşya.
-41050	Boks Giysisi GER (d)	Bayan boksörlere özel Alman bayrağı renginde savaşçı giysi. Satılabilir eşya.
-41051	Boks Giysisi TUR (e)	Erkek boksörlere özel Türk bayrağı renginde savaşçı giysisi. Satılabilir eşya.
-41052	Boks Giysisi TUR (d)	Bayan boksörlere özel Türk bayrağı renginde savaşçı giysisi. Satılabilir eşya.
-41053	Boks Giysisi BRA (e)	Erkek boksörlere özel Brezilya bayrağı renginde savaşçı giysisi. Satılabilir eşya.
-41054	Boks Giysisi BRA (d)	Bayan boksörlere özel Brezilya bayrağı renginde savaşçı giysisi. Satılabilir eşya.
+41029	Çöl Savaşçısı (E, Bonus)	Erkeklere özel bu savaş giysisiyle zorlu çöl koşullarına karşı koyulur. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41030	Çöl Savaşçısı (K, Bonus)	Bayanlara özel bu savaş giysisiyle zorlu çöl koşullarına karşı koyulur. Bu eşyanın ticareti var.
+41031	Olimpik Eskrim Giys. (e)	Erkek eskrimcilere özel sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41032	Olimpik Eskrim Giys. (d)	Bayan eskrimcilere özel sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41033	Eskrim Giysisi GER (e)	Erkek eskrimcilere özel Alman bayrağı renginde sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41034	Eskrim Giysisi GER (d)	Bayan eskrimcilere özel Alman bayrağı renginde sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41035	Eskrim Giysisi TUR (e)	Erkek eskrimcilere özel Türk bayrağı renginde sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41036	Eskrim Giysisi TUR (d)	Bayan eskrimcilere özel Türk bayrağı renginde sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41037	Eskrim Giysisi BRA (e)	Erkek eskrimcilere özel Brezilya bayrağı renginde sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41038	Eskrim Giysisi BRA (d)	Bayan eskrimcilere özel Brezilya bayrağı renginde sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41039	Olimpik Futbol Form. (e)	Erkek futbolculara özel tarafsız forma. Bu eşyanın ticareti var.
+41040	Olimpik Futbol Form. (d)	Bayan futbolculara özel tarafsız forma. Bu eşyanın ticareti var.
+41041	Futbol Forması GER (e)	Erkek futbolculara özel Alman bayrağı renginde forma. Bu eşyanın ticareti var.
+41042	Futbol Forması GER (d)	Bayan futbolculara özel Alman bayrağı renginde forma. Bu eşyanın ticareti var.
+41043	Futbol Forması TUR (e)	Erkek futbolculara özel Türk bayrağı renginde forma. Bu eşyanın ticareti var.
+41044	Futbol Forması TUR (d)	Bayan futbolculara özel Türk bayrağı renginde forma. Bu eşyanın ticareti var.
+41045	Futbol Forması BRA (e)	Erkek futbolculara özel Brezilya bayrağı renginde forma. Bu eşyanın ticareti var.
+41046	Futbol Forması BRA (d)	Bayan futbolculara özel Brezilya bayrağı renginde forma. Bu eşyanın ticareti var.
+41047	Olimpik Boksör Giys. (e)	Erkek boksörlere özel savaşçı giysisi. Bu eşyanın ticareti var.
+41048	Olimpik Boksör Giys. (d)	Bayan boksörlere özel savaşçı giysisi. Bu eşyanın ticareti yok.
+41049	Boks Giysisi GER (e)	Erkek boksörlere özel Alman bayrağı renginde savaşçı giysisi. Bu eşyanın ticareti var.
+41050	Boks Giysisi GER (d)	Bayan boksörlere özel Alman bayrağı renginde savaşçı giysi. Bu eşyanın ticareti var.
+41051	Boks Giysisi TUR (e)	Erkek boksörlere özel Türk bayrağı renginde savaşçı giysisi. Bu eşyanın ticareti var.
+41052	Boks Giysisi TUR (d)	Bayan boksörlere özel Türk bayrağı renginde savaşçı giysisi. Bu eşyanın ticareti var.
+41053	Boks Giysisi BRA (e)	Erkek boksörlere özel Brezilya bayrağı renginde savaşçı giysisi. Bu eşyanın ticareti var.
+41054	Boks Giysisi BRA (d)	Bayan boksörlere özel Brezilya bayrağı renginde savaşçı giysisi. Bu eşyanın ticareti var.
 41055	Eskrim Giysisi FRA (e)	Erkek eskrimciler için Fransa bayrağı renklerini taşıyan sportif bir koruyucu giysi.
 41056	Eskrim Giysisi FRA (d)	Bayan eskrimciler için Fransa bayrağı renklerini taşıyan sportif bir koruyucu giysi.
 41057	Eskrim Giysisi ITA (e)	Erkek eskrimciler için İtalya bayrağı renklerini taşıyan sportif bir koruyucu giysi.
@@ -776,36 +776,36 @@
 41082	Boks Giysisi ROU (d)	Bayan boksörlere özel Romanya bayrağı renkleri taşıyan savaşçı giysisi.
 41083	Boks Giysisi ESP (e)	Erkek boksörlere özel İspanya bayrağı renkleri taşıyan savaşçı giysisi.
 41084	Boks Giysisi ESP (d)	Bayan boksörlere özel İspanya bayrağı renkleri taşıyan savaşçı giysisi.
-41085	Eskrim Giysisi FRA (e)	Erkek eskrimciler için Fransa bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41086	Eskrim Giysisi FRA (d)	Bayan eskrimciler için Fransa bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41087	Eskrim Giysisi ITA (e)	Erkek eskrimciler için İtalya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41088	Eskrim Giysisi ITA (d)	Bayan eskrimciler için İtalya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41089	Eskrim Giysisi POL (e)	Erkek eskrimciler için Polonya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41090	Eskrim Giysisi POL (d)	Bayan eskrimciler için Polonya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41091	Eskrim Giysisi ROU (e)	Erkek eskrimciler için Romanya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41092	Eskrim Giysisi ROU (d)	Bayan eskrimciler için Romanya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41093	Eskrim Giysisi ESP (e)	Erkek eskrimciler için İspanya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41094	Eskrim Giysisi ESP (d)	Bayan eskrimciler için İspanya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Satılabilir eşya.
-41095	Futbol Forması FRA (e)	Erkek futbolcular için Fransa bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41096	Futbol Forması FRA (d)	Bayan futbolcular için Fransa bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41097	Futbol Forması ITA (e)	Erkek futbolcular için İtalya bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41098	Futbol Forması ITA (d)	Bayan futbolcular için İtalya bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41099	Futbol Forması POL (e)	Erkek futbolcular için Polonya bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41100	Futbol Forması POL (d)	Bayan futbolcular için Polonya bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41101	Futbol Forması ROU (e)	Erkek futbolcular için Romanya bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41102	Futbol Forması ROU (d)	Bayan futbolcular için Romanya bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41103	Futbol Forması ESP (e)	Erkek futbolcular için İspanya bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41104	Futbol Forması ESP (d)	Bayan futbolcular için İspanya bayrağı renkleri taşıyan bir forma. Satılabilir eşya.
-41105	Boks Giysisi FRA (e)	Erkek boksörlere özel Fransa bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
-41106	Boks Giysisi FRA (d)	Bayan boksörlere özel Fransa bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
-41107	Boks Giysisi ITA (e)	Erkek boksörlere özel İtalya bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
-41108	Boks Giysisi ITA (d)	Bayan boksörlere özel İtalya bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
-41109	Boks Giysisi POL (e)	Erkek boksörlere özel Polonya bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
-41110	Boks Giysisi POL (d)	Bayan boksörlere özel Polonya bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
-41111	Boks Giysisi ROU (e)	Erkek boksörlere özel Romanya bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
-41112	Boks Giysisi ROU (d)	Bayan boksörlere özel Romanya bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
-41113	Boks Giysisi ESP (e)	Erkek boksörlere özel İspanya bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
-41114	Boks Giysisi ESP (d)	Bayan boksörlere özel İspanya bayrağı renkleri taşıyan savaşçı giysisi. Satılabilir eşya.
+41085	Eskrim Giysisi FRA (e)	Erkek eskrimciler için Fransa bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41086	Eskrim Giysisi FRA (d)	Bayan eskrimciler için Fransa bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41087	Eskrim Giysisi ITA (e)	Erkek eskrimciler için İtalya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41088	Eskrim Giysisi ITA (d)	Bayan eskrimciler için İtalya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41089	Eskrim Giysisi POL (e)	Erkek eskrimciler için Polonya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41090	Eskrim Giysisi POL (d)	Bayan eskrimciler için Polonya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41091	Eskrim Giysisi ROU (e)	Erkek eskrimciler için Romanya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41092	Eskrim Giysisi ROU (d)	Bayan eskrimciler için Romanya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41093	Eskrim Giysisi ESP (e)	Erkek eskrimciler için İspanya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41094	Eskrim Giysisi ESP (d)	Bayan eskrimciler için İspanya bayrağı renklerini taşıyan sportif bir koruyucu giysi. Bu eşyanın ticareti var.
+41095	Futbol Forması FRA (e)	Erkek futbolcular için Fransa bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41096	Futbol Forması FRA (d)	Bayan futbolcular için Fransa bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41097	Futbol Forması ITA (e)	Erkek futbolcular için İtalya bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41098	Futbol Forması ITA (d)	Bayan futbolcular için İtalya bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41099	Futbol Forması POL (e)	Erkek futbolcular için Polonya bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41100	Futbol Forması POL (d)	Bayan futbolcular için Polonya bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41101	Futbol Forması ROU (e)	Erkek futbolcular için Romanya bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41102	Futbol Forması ROU (d)	Bayan futbolcular için Romanya bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41103	Futbol Forması ESP (e)	Erkek futbolcular için İspanya bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41104	Futbol Forması ESP (d)	Bayan futbolcular için İspanya bayrağı renkleri taşıyan bir forma. Bu eşyanın ticareti var.
+41105	Boks Giysisi FRA (e)	Erkek boksörlere özel Fransa bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti var.
+41106	Boks Giysisi FRA (d)	Bayan boksörlere özel Fransa bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti var.
+41107	Boks Giysisi ITA (e)	Erkek boksörlere özel İtalya bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti var.
+41108	Boks Giysisi ITA (d)	Bayan boksörlere özel İtalya bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti var.
+41109	Boks Giysisi POL (e)	Erkek boksörlere özel Polonya bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti yok.
+41110	Boks Giysisi POL (d)	Bayan boksörlere özel Polonya bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti var.
+41111	Boks Giysisi ROU (e)	Erkek boksörlere özel Romanya bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti var.
+41112	Boks Giysisi ROU (d)	Bayan boksörlere özel Romanya bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti var.
+41113	Boks Giysisi ESP (e)	Erkek boksörlere özel İspanya bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti var.
+41114	Boks Giysisi ESP (d)	Bayan boksörlere özel İspanya bayrağı renkleri taşıyan savaşçı giysisi. Bu eşyanın ticareti var.
 41117	Üç Silahşörler Kostümü	Üç silahşörler tarzında sıra dışı bir kıyafet.
 41118	Hizmetçi Kız Üniforması	Fransız hizmetçi kız tarzında beyaz önlüklü siyah elbise.
 41119	Salsa Kıyafeti	Latin amerikali dansçılara özel turuncu ve siyah renkte daracık bir kıyafet.
@@ -814,12 +814,12 @@
 41122	Kokteyl Kıyafeti	Gök mavi renkte kurdeleli bir elbise ve uygun sandaletler
 41125	Balkabağı Smokini	Bu vesileyle yeniden tasarlandı ve tüm gözleri üstüne çekmeni sağlar.
 41126	Balkabağı Giysisi	Bu vesileyle yeniden tasarlandı ve tüm gözleri üstüne çekmeni sağlar.
-41129	Üç Silahşörler Kostümü+	Üç silahşörler tarzında sıra dışı bir kıyafet. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41130	Hizmetçi Kız Üniforması+	Fransız hizmetçi kız üniforması tarzında beyaz önlüklü siyah bir elbise. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41131	Salsa Kıyafeti+	Latin amerikalı dansçılara özel daracık turuncu ve siyah bir kıyafet. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41132	Salsa Elbisesi+	Siyah eldivenli daracık kırmızı dans elbisesi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41133	Centilmen Kıyafeti+	Ağırbaşlı beylere özel şık bir kıyafet. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41134	Kokteyl Kıyafeti+	Gök mavi renkte kurdeleli bir elbise ve uygun sandaletler. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
+41129	Üç Silahşörler Kostümü+	Üç silahşörler tarzında sıra dışı bir kıyafet. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41130	Hizmetçi Kız Üniforması+	Fransız hizmetçi kız üniforması tarzında beyaz önlüklü siyah bir elbise. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41131	Salsa Kıyafeti+	Latin amerikalı dansçılara özel daracık turuncu ve siyah bir kıyafet. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41132	Salsa Elbisesi+	Siyah eldivenli daracık kırmızı dans elbisesi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41133	Centilmen Kıyafeti+	Ağırbaşlı beylere özel şık bir kıyafet. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41134	Kokteyl Kıyafeti+	Gök mavi renkte kurdeleli bir elbise ve uygun sandaletler. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
 41135	Balkabağı Smokini(Bonus)	Bu vesileyle yeniden tasarlandı ve tüm gözleri üstüne çekmeni sağlar. Bu kostüm sana bir rastgele bonus kazandırır.
 41136	Balkabağı Giysisi(Bonus)	Bu vesileyle yeniden tasarlandı ve tüm gözleri üstüne çekmeni sağlar. Bu kostüm sana bir rastgele bonus kazandırır.
 41137	Noel Kostümü (kırmızı)	Kırmızı kadife ve beyaz pelüş kumaştan yapılma bir Noel giysisi
@@ -830,14 +830,14 @@
 41142	Noel Elbisesi (siyah)	Siyah kadife ve beyaz pelüş kumaştan yapılma bir mini noel elbisesi
 41143	Rengeyiği Kostümü (e)	Baylara özel yumuşak pelüş kumaştan yapılma ponpon kuyruklu ve çıngıraklı kostüm
 41144	Rengeyiği Kostümü (d)	Bayanlara özel yumuşak pelüş kumaştan yapılma ponpon kuyruklu ve çıngıraklı kostüm
-41145	Noel Kostümü+ (kırmızı)	Kırmızı kadife ve beyaz pelüş kumaştan yapılma bir noel giysisi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41146	Noel Elbisesi+ (kırmızı)	Kırmızı kadife ve beyaz pelüş kumaştan yapılma bir mini noel elbisesi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41147	Noel Kostümü+ (yeşil)	Yeşil kadife ve beyaz pelüş kumaştan yapılma bir noel giysisi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41148	Noel Elbisesi+ (yeşil)	Yeşil kadife ve beyaz pelüş kumaştan yapılma bir mini noel elbisesi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41149	Noel Kostümü+ (siyah)	Siyah kadife ve beyaz pelüş kumaştan yapılma bir noel giysisi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41150	Noel Elbisesi+ (siyah)	Siyah kadife ve beyaz pelüş kumaştan yapılma bir mini noel elbisesi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41151	Rengeyiği Kostümü+ (e)	Baylara özel yumuşak pelüş kumaştan yapılma ponpon kuyruklu ve çıngıraklı kostüm. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-41152	Rengeyiği Kostümü+ (d)	Bayanlara özel yumuşak pelüş kumaştan yapılma ponpon kuyruklu ve çıngıraklı kostüm. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
+41145	Noel Kostümü+ (kırmızı)	Kırmızı kadife ve beyaz pelüş kumaştan yapılma bir noel giysisi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41146	Noel Elbisesi+ (kırmızı)	Kırmızı kadife ve beyaz pelüş kumaştan yapılma bir mini noel elbisesi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41147	Noel Kostümü+ (yeşil)	Yeşil kadife ve beyaz pelüş kumaştan yapılma bir noel giysisi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41148	Noel Elbisesi+ (yeşil)	Yeşil kadife ve beyaz pelüş kumaştan yapılma bir mini noel elbisesi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41149	Noel Kostümü+ (siyah)	Siyah kadife ve beyaz pelüş kumaştan yapılma bir noel giysisi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41150	Noel Elbisesi+ (siyah)	Siyah kadife ve beyaz pelüş kumaştan yapılma bir mini noel elbisesi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41151	Rengeyiği Kostümü+ (e)	Baylara özel yumuşak pelüş kumaştan yapılma ponpon kuyruklu ve çıngıraklı kostüm. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41152	Rengeyiği Kostümü+ (d)	Bayanlara özel yumuşak pelüş kumaştan yapılma ponpon kuyruklu ve çıngıraklı kostüm. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
 41153	AC Miryang (e)	Erkekler için siyah kırmızı bir futbol forması seti
 41154	AC Miryang (k)	Kadınlar için siyah kırmızı futbol forması seti
 41155	AFC Jayang (e)	Erkekler için beyaz kırmızı bir futbol forması seti
@@ -912,14 +912,14 @@
 41224	Yongan FC+ (k)	Kadınlar için kırmızı beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
 41225	FC Bakra+ (e)	Erkekler için lacivert kırmızı futbol forması seti. Sana rastgele en az bir bonus verir.
 41226	FC Bakra+ (k)	Kadınlar için lacivert kırmızı futbol forması seti. Sana rastgele en az bir bonus verir.
-41227	FC Bokjung+ (e)	Erkekler için sarı mavi futbol forması seti. Sana rastgele en az bir bonus verir.
-41228	FC Bokjung+ (k)	Kadınlar için sarı mavi futbol forması seti. Sana rastgele en az bir bonus verir.
-41229	FC Bavaria Hwang+ (e)	Erkekler için sarı kırmızı futbol forması seti. Sana rastgele en az bir bonus verir.
-41230	FC Bavaria Hwang+ (k)	Kadınlar için sarı kırmızı futbol forması seti. Sana rastgele en az bir bonus verir.
+41227	FC Bokjung+ (e)	Futbolcular için Ukrayna'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41228	FC Bokjung+ (k)	Kadın futbolcular için Ukrayna'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41229	FC Bavaria Hwang+ (e)	Futbolcular için Galler'in ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41230	FC Bavaria Hwang+ (k)	Kadın futbolcular için Galler'in ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41231	Borussia Chunjo+ (e)	Erkekler için sarı siyah futbol forması seti. Sana rastgele en az bir bonus verir.
 41232	Borussia Chunjo+ (k)	Kadınlar için sarı siyah futbol forması seti. Sana rastgele en az bir bonus verir.
-41233	SC Doyum+ (e)	Erkekler için kırmızı beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
-41234	SC Doyum+ (k)	Kadınlar için kırmızı beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
+41233	SC Doyum+ (e)	Futbolcular için Avusturya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41234	SC Doyum+ (k)	Kadın futbolcular için Avusturya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41235	SC Hasun Dong+ (e)	Erkekler için yeşil beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
 41236	SC Hasun Dong+ (k)	Kadınlar için yeşil beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
 41237	CFR Ejderha Ateşi 07+ (e)	Erkekler için bordo renkli futbol forması seti. Sana rastgele en az bir bonus verir.
@@ -950,32 +950,32 @@
 41262	Ejderha Vadisi SC+ (k)	Kadınlar için lacivert turuncu futbol forması seti. Sana rastgele en az bir bonus verir.
 41263	Yıldırım Dağları FC+ (e)	Erkekler için kırmızı beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
 41264	Yıldırım Dağları FC+ (k)	Kadınlar için kırmızı beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
-41265	Pyungmoo Saint-Hwang+(e)	Erkekler için lacivert renkli futbol forması seti. Sana rastgele en az bir bonus verir.
-41266	Pyungmoo Saint-Hwang+(k)	Kadınlar için lacivert renkli futbol forması seti. Sana rastgele en az bir bonus verir.
+41265	Pyungmoo Saint-Hwang+(e)	Futbolcular için İskoçya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41266	Pyungmoo Saint-Hwang+(k)	Kadın futbolcular için İskoçya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41267	Real Sohan+ (e)	Erkekler için beyaz renkli futbol forması seti. Sana rastgele en az bir bonus verir.
 41268	Real Sohan+ (k)	Kadınlar için beyaz renkli futbol forması seti. Sana rastgele en az bir bonus verir.
 41269	FC Jinno 04+ (e)	Erkekler için lacivert beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
 41270	FC Jinno 04+ (k)	Kadınlar için lacivert beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
-41271	FC Sangsun Dong+ (e)	Erkekler için turuncu siyah futbol forması seti. Sana rastgele en az bir bonus verir.
-41272	FC Sangsun Dong+ (k)	Kadınlar için turuncu siyah futbol forması seti. Sana rastgele en az bir bonus verir.
+41271	FC Sangsun Dong+ (e)	Futbolcular için Kuzey Makedonya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41272	FC Sangsun Dong+ (k)	Kadın futbolcular için Kuzey Makedonya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41273	SL Jungsun Dong+ (e)	Erkekler için kırmızı beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
 41274	SL Jungsun Dong+ (k)	Kadınlar için kırmızı beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
-41275	Sparta Jungrang+ (e)	Erkekler için kırmızı beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
-41276	Sparta Jungrang+ (k)	Kadınlar için kırmızı beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
-41277	FC Ateş Diyarı+ (e)	Erkekler için siyah beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
-41278	FC Ateş Diyarı+ (k)	Kadınlar için siyah beyaz futbol forması seti. Sana rastgele en az bir bonus verir.
+41275	Sparta Jungrang+ (e)	Futbolcular için Çek Cumhuriyeti'nin ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41276	Sparta Jungrang+ (k)	Kadın futbolcular için Çek Cumhuriyeti'nin ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41277	FC Ateş Diyarı+ (e)	Futbolcular için Finlandiya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41278	FC Ateş Diyarı+ (k)	Kadın futbolcular için Finlandiya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41279	FC St. Seungryong+ (e)	Erkekler için mavi renkli futbol forması seti. Sana rastgele en az bir bonus verir.
 41280	FC St. Seungryong+ (k)	Kadınlar için mavi renkli futbol forması seti. Sana rastgele en az bir bonus verir.
-41291	Tavşan Kostümü e (siyah)	Baylara özel siyah pelüşten tavşan kostümü
-41292	Tavşan Kostümü e (mavi)	Baylara özel mavi pelüşten tavşan kostümü
-41293	Tavşan Kostümü e (yeşil)	Baylara özel yeşil pelüşten tavşan kostümü
-41294	Tavşan Kostümü e (pembe)	Baylara özel pembe pelüşten tavşan kostümü
-41295	Tavşan Kostümü d (siyah)	Bayanlara özel siyah pelüşten tavşan kostümü
-41296	Tavşan Kostümü d (mavi)	Bayanlara özel mavi pelüşten tavşan kostümü
-41297	Tavşan Kostümü d (yeşil)	Bayanlara özel yeşil pelüşten tavşan kostümü
-41298	Tavşan Kostümü d (pembe)	Bayanlara özel pembe pelüşten tavşan kostümü
-41299	Tavşan Kostümü+ e(siyah)	Baylara özel siyah pelüşten tavşan kostümü. Sana en az bir tane rastgele bonus sağlar.
-41300	Tavşan Kostümü+ e (mavi)	Baylara özel mavi pelüşten tavşan kostümü. Sana en az bir tane rastgele bonus sağlar.
+41291	Tavşan Kostümü e (siyah)	Baylara özel siyah pelüşten tavşan kostümü.
+41292	Tavşan Kostümü e (mavi)	Baylara özel mavi pelüşten tavşan kostümü.
+41293	Tavşan Kostümü e (yeşil)	Baylara özel yeşil pelüşten tavşan kostümü.
+41294	Tavşan Kostümü e (pembe)	Baylara özel pembe pelüşten tavşan kostümü.
+41295	Tavşan Kostümü d (siyah)	Bayanlara özel siyah pelüşten tavşan kostümü.
+41296	Tavşan Kostümü d (mavi)	Bayanlara özel mavi pelüşten tavşan kostümü.
+41297	Tavşan Kostümü d (yeşil)	Bayanlara özel yeşil pelüşten tavşan kostümü.
+41298	Tavşan Kostümü d (pembe)	Bayanlara özel pembe pelüşten tavşan kostümü.
+41299	Tavşan Kostümü+ e(siyah)	Baylara özel siyah pelüşten tavşan kostümü. Sana en az bir tane rastgele bonus sağlar. Bu eşyanın ticareti var.
+41300	Tavşan Kostümü+ e (mavi)	Baylara özel mavi pelüşten tavşan kostümü. Sana en az bir tane rastgele bonus sağlar. Bu eşyanın ticareti var.
 41301	Tavşan Kostümü+ e(yeşil)	Baylara özel yeşil pelüşten tavşan kostümü. Sana en az bir tane rastgele bonus sağlar.
 41302	Tavşan Kostümü+ e(pembe)	Baylara özel pembe pelüşten tavşan kostümü. Sana en az bir tane rastgele bonus sağlar.
 41303	Tavşan Kostümü+ d(siyah)	Bayanlara özel siyah pelüşten tavşan kostümü. Sana en az bir tane rastgele bonus sağlar.
@@ -988,16 +988,16 @@
 41310	Kobra Giysisi+ (k)	Yılan motifli siyah parlak giysi. Sana en az bir rastgele bonus verir.
 41311	Çöl Savaşçısı (e, siyah)	Erkeklere özel siyah savaş giysisi.
 41312	Çöl Savaşçısı (k, siy.)	Kadınlara özel siyah savaş giysisi.
-41313	Çöl Savaşçısı+ (e,siyah)	Erkeklere özel siyah savaş giysisi. Sana en az bir rastgele bonus verir.
+41313	Çöl Savaşçısı+ (e,siyah)	Erkeklere özel siyah savaş giysisi. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
 41314	Çöl Savaşçısı+ (k, siy.)	Kadınlar için siyah kumaştan yapılmış bir savaş giysisi. Sana en az bir rastgele bonus verir.
-41315	Azrail'in Zırhı (e)	Nam salmış Şeytan Prensi'nin çelik zırhı
-41316	Azrail'in Zırhı (k)	Nam salmış Şeytan Prensi'nin çelik zırhı
+41315	Azrail'in Zırhı (e)	Nam salmış Şeytan Prensi'nin çelik zırhı.
+41316	Azrail'in Zırhı (k)	Nam salmış Şeytan Prensi'nin çelik zırhı.
 41317	Azrail'in Zırhı+ (e)	Nam salmış Şeytan Prensi'nin çelik zırhı. Sana en az bir rastgele bonus verir.
 41318	Azrail'in Zırhı+ (k)	Nam salmış Şeytan Prensi'nin çelik zırhı. Sana en az bir rastgele bonus verir.
-41320	Jack Pumpkin takımı (e)	Korkunç güzel bir Cadılar Bayramı kostümü
-41321	Jack Pumpkin elbisesi (k)	Korkunç güzel bir Cadılar Bayramı kostümü
-41322	Jack Pumpkin takımı+ (e)	Korkunç güzel bir Cadılar Bayramı kostümü. Sana en az bir rastgele bonus kazandırır. Satılabilir eşya.
-41323	Jack Pumpkin elbisesi+ (k)	Korkunç güzel bir Cadılar Bayramı kostümü. Sana en az bir rastgele bonus kazandırır. Satılabilir eşya.
+41320	Jack Pumpkin takımı (e)	Korkunç güzel bir Cadılar Bayramı kostümü.
+41321	Jack Pumpkin elbisesi (k)	Korkunç güzel bir Cadılar Bayramı kostümü.
+41322	Jack Pumpkin takımı+ (e)	Korkunç güzel bir Cadılar Bayramı kostümü. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41323	Jack Pumpkin elbisesi+ (k)	Korkunç güzel bir Cadılar Bayramı kostümü. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
 41324	Ay Yıldız Savaşçısı	Erkeklere özel ay yıldız amblemi taşıyan savaş giysisi
 41325	Ay Yıldız Savaşçısı	Bayanlara özel ay yıldız amblemi taşıyan savaş giysisi
 41326	Ay Yıldız Savaşçısı +	Erkeklere özel ay yıldız amblemi taşıyan savaş giysisi. Sana en az bir tane rastgele bonus kazandırır.
@@ -1072,8 +1072,8 @@
 41395	DŞ Forması ARG (d/Bonus)	Arjantin milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41396	DŞ Forması AUS (e/bonus)	Avustralya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41397	DŞ Forması AUS (d/bonus)	Avustralya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41398	DŞ Forması BEL (e/Bonus)	Belçika milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41399	DŞ Forması BEL (d/Bonus)	Belçika milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41398	DŞ Forması BEL (e/Bonus)	Futbolcular için Belçika'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41399	DŞ Forması BEL (d/Bonus)	Kadın futbolcular için Belçika'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41400	DŞ Forması BIH (e/bonus)	Bosna-Hersek milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41401	DŞ Forması BIH (d/bonus)	Bosna-Hersek milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41402	DŞ Forması BRA (e/Bonus)	Brezilya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
@@ -1088,47 +1088,47 @@
 41411	DŞ Forması CRC (d/bonus)	Kosta Rika milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41412	DŞ Forması CIV (e/bonus)	Fildişi Sahili milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41413	DŞ Forması CIV (d/bonus)	Fildişi Sahili milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41414	DŞ Forması CRO (e/bonus)	Hırvatistan milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41415	DŞ Forması CRO (d/bonus)	Hırvatistan milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41414	DŞ Forması CRO (e/bonus)	Futbolcular için Hırvatistan'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41415	DŞ Forması CRO (d/bonus)	Kadın futbolcular için Hırvatistan'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41416	DŞ Forması ECU (e/bonus)	Ekvador milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41417	DŞ Forması ECU (d/bonus)	Ekvador milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41418	DŞ Forması ENG (e/Bonus)	İngiltere milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41419	DŞ Forması ENG (d/Bonus)	İngiltere milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41420	DŞ Forması FRA (e/Bonus)	Fransız milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41421	DŞ Forması FRA (d/Bonus)	Fransız milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41422	DŞ Forması GER (e/Bonus)	Almanya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41423	DŞ Forması GER (d/Bonus)	Almanya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41418	DŞ Forması ENG (e/Bonus)	Futbolcular için İngiltere'nin ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41419	DŞ Forması ENG (d/Bonus)	Kadın futbolcular için İngiltere'nin ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41420	DŞ Forması FRA (e/Bonus)	Futbolcular için Fransa'nin ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41421	DŞ Forması FRA (d/Bonus)	Kadın futbolcular içiin Fransa'nin ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41422	DŞ Forması GER (e/Bonus)	Futbolcular için Almanya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41423	DŞ Forması GER (d/Bonus)	Kadın futbolcular için Almanya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41424	DŞ Forması GHA (e/bonus)	Gana milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41425	DŞ Forması GHA (d/bonus)	Gana milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41426	DŞ Forması GER (e/Bonus)	Yunanistan milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41426	DŞ Forması GER (e/Bonus)	Yunanistan milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
 41427	DŞ Forması GER (d/Bonus)	Yunanistan milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41428	DŞ Forması HON (e/bonus)	Honduras milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41429	DŞ Forması HON (d/bonus)	Honduras milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41430	DŞ Forması IRN (e/bonus)	İran milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41431	DŞ Forması IRN (d/bonus)	İran milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41432	DŞ Forması ITA (e/Bonus)	İtalya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41433	DŞ Forması ITA (d/Bonus)	İtalya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41432	DŞ Forması ITA (e/Bonus)	Futbolcular için İtalya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41433	DŞ Forması ITA (d/Bonus)	Kadın futbolcular için İtalya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41434	DŞ Forması JPN (e/bonus)	Japon milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41435	DŞ Forması JPN (d/bonus)	Japon milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41436	DŞ Forması KOR (e/Bonus)	Kore milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41436	DŞ Forması KOR (e/Bonus)	Kore milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
 41437	DŞ Forması KOR (d/Bonus)	Kore milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41438	DŞ Forması MEX (e/Bonus)	Meksika milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41438	DŞ Forması MEX (e/Bonus)	Meksika milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
 41439	DŞ Forması MEX (d/Bonus)	Meksika milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41440	DŞ Forması NED (e/Bonus)	Hollanda milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41441	DŞ Forması NED (d/Bonus)	Hollanda milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41440	DŞ Forması NED (e/Bonus)	Futbolcular için Hollanda'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41441	DŞ Forması NED (d/Bonus)	Kadın futbolcular için Hollanda'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41442	DŞ Forması NGA (e/bonus)	Nijerya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41443	DŞ Forması NGA (d/bonus)	Nijerya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41444	DŞ Forması POR (e/Bonus)	Portekiz milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41445	DŞ Forması POR (d/Bonus)	Portekiz milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41446	DŞ Forması RUS (e/Bonus)	Rusya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41447	DŞ Forması RUS (d/Bonus)	Rusya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41448	DŞ Forması ESP (e/Bonus)	İspanya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41449	DŞ Forması ESP (d/Bonus)	İspanya milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41450	DŞ Forması SUI (e/Bonus)	İsviçre milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41451	DŞ Forması SUI (d/Bonus)	İsviçre milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41444	DŞ Forması POR (e/Bonus)	Futbolcular için Portekiz'in ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41445	DŞ Forması POR (d/Bonus)	Kadın futbolcular için Portekiz'in ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41446	DŞ Forması RUS (e/Bonus)	Futbolcular için Rusya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41447	DŞ Forması RUS (d/Bonus)	Kadın futbolcular için Rusya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41448	DŞ Forması ESP (e/Bonus)	Futbolcular için İspanya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41449	DŞ Forması ESP (d/Bonus)	Kadın futbolcular için İspanya'nın ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41450	DŞ Forması SUI (e/Bonus)	Futbolcular için İsviçre'nin ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
+41451	DŞ Forması SUI (d/Bonus)	Kadın futbolcular için İsviçre'nin ulusal renklerinde forma. Sana rastgele en az bir bonus verir.
 41452	DŞ Forması URU (e/bonus)	Uruguay milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41453	DŞ Forması URU (d/bonus)	Uruguay milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
-41454	DŞ Forması USA (e/Bonus)	ABD milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
+41454	DŞ Forması USA (e/Bonus)	ABD milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
 41455	DŞ Forması ABD (d/Bonus)	ABD milli futbol takımının renginde Dünya Şampiyonluğu forması. Sana en az bir rastgele bonus kazandırır.
 41472	Zombi Kıyafeti	Kanlı kıyafetin, çürümüş etin ve ortaya çıkan kemiklerin seni zombi yapar.
 41473	Zombi Elbisesi	Kanlı elbisen, çürümüş etin ve ortaya çıkan kemiklerin seni zombi gelini yapar.
@@ -1138,14 +1138,14 @@
 41477	Cadı Elbisesi	Cadılara uygun kara ve gizemli bir elbise.
 41478	Büyücü Kıyafeti+	Büyücülere uygun kara ve gizemli bir kıyafet. Sana en az bir rastgele bonus verir.
 41479	Cadı Elbisesi+	Cadılara uygun kara ve gizemli bir elbise. Sana en az bir rastgele bonus verir.
-41480	Santa Buz Kostümü	Kırmızı kadifeden yılbaşı elbiseli kardan adam maskesi. Satılamaz.
-41481	Kardan Adam Kostümü	Beyaz kadifeden kardan adam kostümü. Satılamaz.
-41482	Yılbaşı Elbisesi (beyaz)	Çoraplı ve aksesuarlı beyaz mini elbise. Satılamaz.
-41483	Yılbaşı Elbisesi (kırm.)	Çoraplı ve aksesuarlı kırmızı mini elbise. Satılamaz.
-41484	Santa Buz Kostümü+	Kırmızı kadifeden yılbaşı elbiseli kardan adam maskesi. Sana en az bir rastgele bonus kazandırır. Eşya satılabilir.
-41485	Kardan Adam Kostümü+	Kırmızı kadifeden kardan adam kostümü. Sana en az bir rastgele bonus kazandırır. Eşya satılabilir.
-41486	Yılbaşı Elbisesi+(beyaz)	Çoraplı ve aksesuarlı beyaz mini elbise. Sana en az bir rastgele bonus kazandırır. Eşya satılabilir.
-41487	Yılbaşı Elbisesi+(kırm.)	Çoraplı ve aksesuarlı kırmızı mini elbise. Sana en az bir rastgele bonus kazandırır. Eşya satılabilir.
+41480	Santa Buz Kostümü	Kırmızı kadifeden yılbaşı elbiseli kardan adam maskesi. Ticareti yok.
+41481	Kardan Adam Kostümü	Beyaz kadifeden kardan adam kostümü. Ticareti yok.
+41482	Yılbaşı Elbisesi (beyaz)	Çoraplı ve aksesuarlı beyaz mini elbise. Ticareti yok.
+41483	Yılbaşı Elbisesi (kırm.)	Çoraplı ve aksesuarlı kırmızı mini elbise. Ticareti yok.
+41484	Santa Buz Kostümü+	Kırmızı kadifeden yılbaşı elbiseli kardan adam maskesi. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41485	Kardan Adam Kostümü+	Kırmızı kadifeden kardan adam kostümü. Sana en az bir rastgele bonus kazandırır. Eşyanın ticareti var.
+41486	Yılbaşı Elbisesi+(beyaz)	Çoraplı ve aksesuarlı beyaz mini elbise. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
+41487	Yılbaşı Elbisesi+(kırm.)	Çoraplı ve aksesuarlı kırmızı mini elbise. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
 41496	Çöl Prensi (kahverengi)	Liderler için kahverengi kumaştan yapılan bir savaşçı kaftanı.
 41497	Çöl Prensi (beyaz)	Liderler için beyaz kumaştan yapılan bir savaşçı kaftanı.
 41498	Çöl Prensesi+ (kahve)	Dişi liderler için kahverengi kumaştan yapılan bir savaşçı kaftanı.
@@ -1154,15 +1154,15 @@
 41501	Çöl Prensi+ (beyaz)	Liderler için beyaz kumaştan yapılan bir savaşçı kaftanı. Sana en az bir rastgele bonus verir.
 41502	Çöl Prensesi+ (kahve)	Dişi liderler için kahverengi kumaştan yapılan bir savaşçı kaftanı. Sana en az bir rastgele bonus verir.
 41503	Çöl Prensesi+ (beyaz)	Liderler için beyaz kumaştan yapılan bir savaşçı kaftanı. Sana en az bir rastgele bonus verir.
-41504	Tavşan Kostümü (gri)	Sarılma hissi uyandıracak yumuşacık gri kürklü kostüm, Uygulama: Tavşan. Satılamaz.
-41505	Tavşan Kostümü (kahve)	Sarılma hissi uyandıracak yumuşacık kahverengi kürklü kostüm, Uygulama: Tavşan. Satılamaz.
-41506	Paskalya giyimi (renkli)	Neşeli renklerle sevgiyle boyanmış Paskalya giysisi. Satılamaz.
-41507	Paskalya giyimi (a.mavi)	Detaylı boyamalarla süslenmiş açık mavi Paskalya giysisi. Satılamaz.
-41508	Tavşan Kostümü+ (gri)	Sarılma hissi uyandıracak yumuşacık gri renkli kürklü kostüm, Uygulama: Tavşan. Sana en az bir rastgele bonus verir. Bu nesne satılabilir.
-41509	Tavşan Kostümü+ (kahve)	Sarılma hissi uyandıracak yumuşacık kahverengi kürklü kostüm, Uygulama: Tavşan. Sana en az bir rastgele bonus verir. Bu nesne satılabilir.
-41510	Paskalya giyim+ (renkli)	Neşeli renklerle sevgiyle boyanmış Paskalya giysisi. Sana en az bir rastgele bonus verir. Bu nesne satılabilir.
-41511	Paskalya giyimi+ (mavi)	Detaylı boyamalarla süslenmiş açık mavi Paskalya giysisi. Sana en az bir rastgele bonus verir. Bu nesne satılabilir.
-45001	Tavşan kulakları (kahve)	Kahverengi tavşan kulakları
+41504	Tavşan Kostümü (gri)	Sarılma hissi uyandıracak yumuşacık gri kürklü kostüm, Uygulama: Tavşan. Ticareti yok.
+41505	Tavşan Kostümü (kahve)	Sarılma hissi uyandıracak yumuşacık kahverengi kürklü kostüm, Uygulama: Tavşan. Ticareti yok.
+41506	Paskalya giyimi (renkli)	Neşeli renklerle sevgiyle boyanmış Paskalya giysisi. Ticareti yok.
+41507	Paskalya giyimi (a.mavi)	Detaylı boyamalarla süslenmiş açık mavi Paskalya giysisi. Ticareti yok.
+41508	Tavşan Kostümü+ (gri)	Sarılma hissi uyandıracak yumuşacık gri renkli kürklü kostüm, Uygulama: Tavşan. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
+41509	Tavşan Kostümü+ (kahve)	Sarılma hissi uyandıracak yumuşacık kahverengi kürklü kostüm, Uygulama: Tavşan. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
+41510	Paskalya giyim+ (renkli)	Neşeli renklerle sevgiyle boyanmış Paskalya giysisi. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
+41511	Paskalya giyimi+ (mavi)	Detaylı boyamalarla süslenmiş açık mavi Paskalya giysisi. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
+45001	Tavşan kulakları (kahve)	Kahverengi tavşan kulakları.
 45002	Tavşan Kulağı e (kahve)	Baylara özel tavşan kulaklı kahverengi şapka
 45003	Başlık (e)	Erkekler için zarif kumaştan yapılmış bir başlık.
 45004	Başlık (d)	Bayanlar için zarif kumaştan yapılmış bir başlık.
@@ -1172,14 +1172,14 @@
 45008	Futbolcu Saç St. GER (d)	Bayan futbolculara özel Almanya saç bantlı sportif bir saç stili.
 45009	Rasta (e)	Uzun saçlar rasta olarak şekillendirilir ve arkadan toplanır.
 45010	Boksör Saç Stili GER (d)	Bayan boksörlere özel Almanya saç bantlı sportif bir saç stili.
-45011	Başlık (e)	Erkekler için zarif kumaştan yapılmış bir başlık. Satılabilir eşya.
-45012	Başlık (d)	Bayanlar için zarif kumaştan yapılmış bir başlık. Satılabilir eşya.
-45013	ÜsUzYaKı (e)	Üstten uzun, yan kısa - erkekler için sıra dışı bir kesim. Eşya satılabilir.
-45014	Eskrimci Saç Stili (d)	Bayan eskrimcilere özel sportif saç stili. Satılabilir eşya.
-45015	Mohawk Kesimi (e)	Mohawklara özel saç stili. Ortadaki saçlar dik, yanlar ise tıraşlı. Eşya satılabilir.
-45016	Futbolcu Saç St. GER (d)	Bayan futbolculara özel Almanya saç bantlı sportif bir saç stili. Satılabilir eşya.
-45017	Rasta (e)	Uzun saçlar rasta olarak şekillendirilir ve arkadan toplanır. Eşya satılabilir.
-45018	Boksör Saç Stili GER (d)	Bayan boksörlere özel Almanya saç bantlı sportif bir saç stili. Satılabilir eşya.
+45011	Başlık (e)	Erkekler için zarif kumaştan yapılmış bir başlık. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45012	Başlık (d)	Bayanlar için zarif kumaştan yapılmış bir başlık. Bu eşyanın ticareti var.
+45013	ÜsUzYaKı (e)	Üstten uzun, yan kısa - erkekler için sıra dışı bir kesim. Bu eşyanın ticareti var.
+45014	Eskrimci Saç Stili (d)	Bayan eskrimcilere özel sportif saç stili. Bu eşyanın ticareti var.
+45015	Mohawk Kesimi (e)	Mohawklara özel saç stili. Ortadaki saçlar dik, yanlar ise tıraşlı. Bu eşyanın ticareti var.
+45016	Futbolcu Saç St. GER (d)	Bayan futbolculara özel Almanya saç bantlı sportif bir saç stili. Bu eşyanın ticareti var.
+45017	Rasta (e)	Uzun saçlar rasta olarak şekillendirilir ve arkadan toplanır. Bu eşyanın ticareti var.
+45018	Boksör Saç Stili GER (d)	Bayan boksörlere özel Almanya saç bantlı sportif bir saç stili. Bu eşyanın ticareti var.
 45019	Boksör Saç Stili TUR (d)	Bayan boksörlere özel Türkiye saç bantlı sportif bir saç stili.
 45020	Boksör Saç Stili BRA (d)	Bayan boksörlere özel Brezilya saç bantlı sportif bir saç stili.
 45021	Olim. Boksör Saç St. (d)	Bayan boksörlere özel rengarenk saç bantlı sportif bir saç stili.
@@ -1220,12 +1220,12 @@
 45058	Çiçek Modeli	Rengarenk çiçeklerle süslenmiş şirin bir örgülü saç modeli.
 45061	Balkabağı Maskesi	İçi oyulmuş balkabağı. Geniş, havadar ve oldukça korkunç.
 45062	Balkabağı Maskesi	İçi oyulmuş balkabağı. Geniş, havadar ve oldukça korkunç.
-45065	Üç Silahşörler SaçStili+	Üç silahşörler tarzında bakımlı kısa sarı saç kesimi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45066	Hizmetçi Kız Başlığı +	Hizmetçi kız başlıklı sarı küt saçlar. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45067	Mini Mohikan+	Mohikan tarzında göz alıcı bir kısa saç kesimi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45068	Salsa Düğümü+	Kırmızı çiçekli zarif bir topuz. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45069	Bogart Şapkası+	Humphrey Bogart tarzında klasik bir fötr şapka. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45070	Çiçek Modeli+	Rengarenk çiçeklerle süslenmiş şirin bir örgülü saç modeli. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
+45065	Üç Silahşörler SaçStili+	Üç silahşörler tarzında bakımlı kısa sarı saç kesimi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45066	Hizmetçi Kız Başlığı +	Hizmetçi kız başlıklı sarı küt saçlar. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45067	Mini Mohikan+	Mohikan tarzında göz alıcı bir kısa saç kesimi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45068	Salsa Düğümü+	Kırmızı çiçekli zarif bir topuz. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45069	Bogart Şapkası+	Humphrey Bogart tarzında klasik bir fötr şapka. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45070	Çiçek Modeli+	Rengarenk çiçeklerle süslenmiş şirin bir örgülü saç modeli. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
 45073	Balkabağı Maskesi(Bonus)	İçi oyulmuş balkabağı. Geniş, havadar ve oldukça korkunç. Rastgele bir bonus almanı sağlar.
 45074	Balkabağı Maskesi(Bonus)	İçi oyulmuş balkabağı. Geniş, havadar ve oldukça korkunç. Rastgele bir bonus almanı sağlar.
 45075	Noel Şapkası (kırmızı)	Boynuzlu ve beyaz ponponlu kırmızı ipek şapka
@@ -1234,12 +1234,12 @@
 45078	Elf Şapkası	Narin kanatlı bembeyaz bir başlık
 45079	Rengeyiği Kafası (e)	Baylara özel başa geçirmelik kırmızı burunlu ve boynuzlu bir rengeyiği maskesi
 45080	Rengeyiği Kafası (d)	Bayanlara özel başa geçirmelik kırmızı burunlu ve boynuzlu bir rengeyiği maskesi
-45081	Noel Şapkası+ (kırmızı)	Boynuzlu ve beyaz ponponlu kırmızı ipek şapka. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45082	Noel Şapkası+ (yeşil)	Boynuzlu ve beyaz ponponlu yeşil ipek şapka. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45083	Noel Şapkası+ (siyah)	Boynuzlu ve beyaz ponponlu siyah ipek şapka. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45084	Elf Şapkası+	Narin kanatlı bembeyaz bir başlık. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45085	Rengeyiği Kafası+ (e)	Baylara özel başa geçirmelik kırmızı burunlu ve boynuzlu bir rengeyiği maskesi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
-45086	Rengeyiği Kafası+ (d)	Bayanlara özel başa geçirmelik kırmızı burunlu ve boynuzlu bir rengeyiği maskesi. Sana en az bir tane rastgele bonus kazandırır. Eşya satılabilir.
+45081	Noel Şapkası+ (kırmızı)	Boynuzlu ve beyaz ponponlu kırmızı ipek şapka. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45082	Noel Şapkası+ (yeşil)	Boynuzlu ve beyaz ponponlu yeşil ipek şapka. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45083	Noel Şapkası+ (siyah)	Boynuzlu ve beyaz ponponlu siyah ipek şapka. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45084	Elf Şapkası+	Narin kanatlı bembeyaz bir başlık. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45085	Rengeyiği Kafası+ (e)	Baylara özel başa geçirmelik kırmızı burunlu ve boynuzlu bir rengeyiği maskesi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45086	Rengeyiği Kafası+ (d)	Bayanlara özel başa geçirmelik kırmızı burunlu ve boynuzlu bir rengeyiği maskesi. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
 45087	Bandana (beyaz)	Erkekler için başa bağlanan beyaz renkli üçgen bir kumaş. Spor severler tarafından sıkça kullanılır.
 45088	Bandana (beyaz)	Kadınlar için başa bağlanan beyaz renkli üçgen bir kumaş. Spor severler tarafından sıkça kullanılır.
 45089	Bandana (siyah)	Erkekler için başa bağlanan siyah renkli üçgen bir kumaş. Spor severler tarafından sıkça kullanılır.
@@ -1264,12 +1264,12 @@
 45120	Tavşan Kulağı e (mavi)	Baylara özel tavşan kulaklı mavi şapka
 45121	Tavşan Kulağı e (yeşil)	Baylara özel tavşan kulaklı yeşil şapka
 45122	Tavşan Kulağı e (pembe)	Baylara özel tavşan kulaklı pembe şapka
-45123	Tavşan Kulağı d (siyah)	Bayanlara özel siyah tavşan kulakları
-45124	Tavşan Kulağı d (mavi)	Bayanlara özel mavi tavşan kulakları
-45125	Tavşan Kulağı d (yeşil)	Bayanlara özel yeşil tavşan kulakları
-45126	Tavşan Kulağı d (pembe)	Bayanlara özel pembe tavşan kulakları
-45127	Tavşan Kulağı+ e (siyah)	Baylara özel tavşan kulaklı siyah şapka. Sana en az bir tane rastgele bonus sağlar.
-45128	Tavşan Kulağı+ e (mavi)	Baylara özel tavşan kulaklı mavi şapka. Sana en az bir tane rastgele bonus sağlar.
+45123	Tavşan Kulağı d (siyah)	Bayanlara özel siyah tavşan kulakları.
+45124	Tavşan Kulağı d (mavi)	Bayanlara özel mavi tavşan kulakları.
+45125	Tavşan Kulağı d (yeşil)	Bayanlara özel yeşil tavşan kulakları.
+45126	Tavşan Kulağı d (pembe)	Bayanlara özel pembe tavşan kulakları.
+45127	Tavşan Kulağı+ e (siyah)	Baylara özel tavşan kulaklı siyah şapka. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45128	Tavşan Kulağı+ e (mavi)	Baylara özel tavşan kulaklı mavi şapka. Sana en az bir tane rastgele bonus kazandırır. Bu eşyanın ticareti var.
 45129	Tavşan Kulağı+ e (yeşil)	Baylara özel tavşan kulaklı yeşil şapka. Sana en az bir tane rastgele bonus sağlar.
 45130	Tavşan Kulağı+ e (pembe)	Baylara özel tavşan kulaklı pembe şapka. Sana en az bir tane rastgele bonus sağlar.
 45131	Tavşan Kulağı+ d (siyah)	Bayanlara özel siyah tavşan kulakları. Sana en az bir tane rastgele bonus sağlar.
@@ -1290,7 +1290,7 @@
 45146	Maya Maskesi +	Maya savaşçılarına ait korkutucu maske. Sana en az iki bonus kazandırır.
 45147	Siyah Kavuk (e)	Erkekler için siyah kumaştan yapılmış bir başlık.
 45148	Siyah Kavuk (k)	Kadınlar için siyah kumaştan yapılmış bir başlık.
-45149	Siyah Kavuk+ (e)	Erkekler için siyah kumaştan yapılmış bir başlık. Sana en az bir rastgele bonus verir.
+45149	Siyah Kavuk+ (e)	Erkekler için siyah kumaştan yapılmış bir başlık. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
 45150	Siyah Kavuk+ (k)	Kadınlar için siyah kumaştan yapılmış bir başlık. Sana en az bir rastgele bonus verir.
 45151	Azrail'in Miğferi	Nam salmış Şeytan Prensi'nin yüzlü başlığı.
 45152	Azrail'in Miğferi (k)	Nam salmış Şeytan Prensi'nin yüzlü başlığı.
@@ -1298,8 +1298,8 @@
 45154	Azrail'in Miğferi+ (k)	Nam salmış Şeytan Prensi'nin yüzlü başlığı. Sana en az bir rastgele bonus sağlar.
 45156	Jack Pumpkin kafası (e)	Korkunç güzel bir Cadılar Bayramı maskesi
 45157	Jack Pumpkin kafası (k)	Korkunç güzel bir Cadılar Bayramı maskesi
-45158	Jack Pumpkin kafası+ (e)	Korkunç güzel bir Cadılar Bayramı maskesi. Sana en az bir rastgele bonus kazandırır. Satılabilir eşya.
-45159	Jack Pumpkin kafası+ (k)	Korkunç güzel bir Cadılar Bayramı maskesi. Sana en az bir rastgele bonus kazandırır. Satılabilir eşya.
+45158	Jack Pumpkin kafası+ (e)	Korkunç güzel bir Cadılar Bayramı maskesi. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45159	Jack Pumpkin kafası+ (k)	Korkunç güzel bir Cadılar Bayramı maskesi. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
 45160	Ay Yıldız Saç Modeli (e)	Yukarı toplanmış kırmızı beyaz rasta saç modeli.
 45161	Ay Yıldız Saç Modeli (d)	Yukarı toplanmış saç bantlı kırmızı beyaz rasta saç modeli.
 45162	Ay Yıldız Saç Modeli+ (e)	Yukarı toplanmış kırmızı beyaz rasta saç modeli. Sana en az bir tane rastgele bonus kazandırır.
@@ -1314,22 +1314,22 @@
 45171	Cadı Şapkası	Cadılar ve büyücüler tarafından takılan geniş kenarlı sivri uçlu bir şapka.
 45172	Zombi Balkabağı Maskesi+	Cadılar bayramı kostümü olarak canavarımsı bir balkabağı maskesi. Sana en az bir rastgele bonus verir.
 45173	Cadı Şapkası+	Cadılar ve büyücüler tarafından takılan geniş kenarlı sivri uçlu bir şapka. Sana en az bir rastgele bonus verir.
-45174	Kardan Adam Maskesi	Mat siyah setenden muhteşem silindirli kardan adam maskesi. Satılamaz.
-45175	Santa Buz Maskesi	Kırmızı kadifeden ve tepesi beyaz tüylü, yılbaşı şapkalı kardan adam maskesi. Satılamaz.
-45176	Ponponlu Şapka (beyaz)	Beyaz tüylü, kırmızı ponponlu beyaz kadifeden yılbaşı şapkası. Satılamaz.
-45177	Ponponlu Şapka (kırmızı)	Beyaz tüylü, beyaz ponponlu kırmızı kadifeden yılbaşı şapkası. Satılamaz.
-45178	Kardan Adam Maskesi +	Mat siyah setenden muhteşem silindirli kardan adam maskesi. Sana en az bir ek bonus kazandırır. Eşya satılabilir.
-45179	Santa Buz Maskesi +	Beyaz tüylü, kırmızı kadifeden yılbaşı şapkalı kardan adam maskesi. Sana en az bir ek bonus kazandırır. Satılabilir.
-45180	Ponponlu Şapka+ (beyaz)	Beyaz tüylü, kırmızı ponponlu beyaz kadifeden yılbaşı şapkası. Sana en az bir rastgele bonus kazandırır. Eşya satılabilir.
-45181	Ponponlu Şapka+(kırmızı)	Beyaz tüylü, beyaz ponponlu kırmızı kadifeden yılbaşı şapkası. Sana en az bir rastgele bonus kazandırır. Eşya satılabilir.
-45190	Tavşan Kulağı+ (gri)	Yumuşak gri kürkten yapılmış tavşan kulaklı bere. Satılamaz.
-45191	Tavşan Kulağı+ (kahve)	Yumuşak kahverengi kürkten yapılmış tavşan kulaklı bere. Satılamaz.
-45192	Paskalya Başlık (renkli)	Moda takipçisi savaşçılar için renkleri ve parlaklığıyla dikkat çeken Paskayla başlığı. Satılamaz.
-45193	Paskalya Başlık (mavi)	Moda takipçisi savaşçılar için neşeli açık mavi renkli Paskayla başlığı. Satılamaz.
-45194	Tavşan Kulağı+ (gri)	Yumuşak gri kürkten yapılmış tavşan kulaklı bere. Sana en az bir rastgele bonus verir. Bu nesne satılabilir.
-45195	Tavşan Kulağı+ (kahve)	Yumuşak kahverengi kürkten yapılmış tavşan kulaklı bere. Sana en az bir rastgele bonus verir. Bu nesne satılabilir.
-45196	Paskalya Başlık+ (renk)	Moda takipçisi savaşçılar için renkleri ve parlaklığıyla dikkat çeken Paskayla başlığı. Sana en az bir rastgele bonus verir. Bu nesne satılabilir.
-45197	Paskalya Başlık+ (mavi)	Moda takipçisi savaşçılar için neşeli açık mavi renkli Paskayla başlığı. Sana en az bir rastgele bonus verir. Bu nesne satılabilir.
+45174	Kardan Adam Maskesi	Mat siyah setenden muhteşem silindirli kardan adam maskesi. Ticareti yok.
+45175	Santa Buz Maskesi	Kırmızı kadifeden ve tepesi beyaz tüylü, yılbaşı şapkalı kardan adam maskesi. Ticareti yok.
+45176	Ponponlu Şapka (beyaz)	Beyaz tüylü, kırmızı ponponlu beyaz kadifeden yılbaşı şapkası. Ticareti yok.
+45177	Ponponlu Şapka (kırmızı)	Beyaz tüylü, beyaz ponponlu kırmızı kadifeden yılbaşı şapkası. Ticareti yok.
+45178	Kardan Adam Maskesi +	Mat siyah setenden muhteşem silindirli kardan adam maskesi. Sana en az bir ek bonus kazandırır. Bu eşyanın ticareti var.
+45179	Santa Buz Maskesi +	Beyaz tüylü, kırmızı kadifeden yılbaşı şapkalı kardan adam maskesi. Sana en az bir ek bonus kazandırır. Ticareti var.
+45180	Ponponlu Şapka+ (beyaz)	Beyaz tüylü, kırmızı ponponlu beyaz kadifeden yılbaşı şapkası. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45181	Ponponlu Şapka+(kırmızı)	Beyaz tüylü, beyaz ponponlu kırmızı kadifeden yılbaşı şapkası. Sana en az bir rastgele bonus kazandırır. Bu eşyanın ticareti var.
+45190	Tavşan Kulağı+ (gri)	Yumuşak gri kürkten yapılmış tavşan kulaklı bere. Ticareti yok.
+45191	Tavşan Kulağı+ (kahve)	Yumuşak kahverengi kürkten yapılmış tavşan kulaklı bere. Ticareti yok.
+45192	Paskalya Başlık (renkli)	Moda takipçisi savaşçılar için renkleri ve parlaklığıyla dikkat çeken Paskayla başlığı. Ticareti yok.
+45193	Paskalya Başlık (mavi)	Moda takipçisi savaşçılar için neşeli açık mavi renkli Paskayla başlığı. Ticareti yok.
+45194	Tavşan Kulağı+ (gri)	Yumuşak gri kürkten yapılmış tavşan kulaklı bere. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
+45195	Tavşan Kulağı+ (kahve)	Yumuşak kahverengi kürkten yapılmış tavşan kulaklı bere. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
+45196	Paskalya Başlık+ (renk)	Moda takipçisi savaşçılar için renkleri ve parlaklığıyla dikkat çeken Paskayla başlığı. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
+45197	Paskalya Başlık+ (mavi)	Moda takipçisi savaşçılar için neşeli açık mavi renkli Paskayla başlığı. Sana en az bir rastgele bonus verir. Bu eşyanın ticareti var.
 45198	Kahverengi Kavuk	Savaşçılar için dayanıklı bir kumaştan üretilen zarif, kahverengi bir kavuk.
 45199	Beyaz Kavuk	Savaşçılar için dayanıklı bir kumaştan üretilen zarif, beyaz bir kavuk.
 45200	Kahverengi Başlık	Dişi savaşçılar için hafif bir kumaştan üretilen kahverengi bir başlık.
@@ -1342,7 +1342,7 @@
 50002	Altın Yüzük	Basit altın yüzük. | Mağazada yüksek fiyata satılabilir.
 50003	Beceri Sıfırlama Kağıdı	Becerilerinizi sıfırlayıp yeni bir beceri öğrenmenizi sağlar.
 50004	Olay Dedektörü	Bu nesne size, nerede görev olduğunu gösterir.
-50005	Binicilik Bileti	Bunu seyise gösterdiğin zaman ata ücretsiz binebilirsin. 40. Seviye gerektirir.
+50005	Binicilik Bileti	Bu kart Seyis'ten bir at madalyasıyla takas edilebilir.
 50006	Altın Define Sandığı	Altın işlemeli sandık | Altın anahtarla açılabilir.
 50007	Gümüş Define Sandığı	Gümüş işlemeli sandık | Gümüş anahtarla açılabilir.
 50008	Altın Anahtar	Altından yapılmış bir anahtar | Altın define sandığını ve altın define sandığı+ bununla açılabilir.
@@ -1395,13 +1395,13 @@
 50080	Kırmızı Ejderha Sandığı	Kırmızı Ejderhaya ait sandık. İçinde bazı kıymetli eşyalar mevcut.
 50081	Şeytan Kral Sandığı	Şeytan Kralına ait sandık. İçinde bazı kıymetli eşyalar mevcut.
 50082	Lusifer Sandığı	Lusifer'e ait sandık. İçinde bazı kıymetli eşyalar mevcut.
-50083	Binicilik Bileti	Seyise gösterdiğinde ata ücretsiz binersin.
+50083	Binicilik Bileti	Binicilik biletini almak için binicilik iznini aç. Bununla seviye 10 itibarıyla bir süreliğine midilliye binebilirsin.
 50084	Kilit Açma Taşı	Bu taşın, etrafını saran enerji yüklü bir ışıltısı vardır. Mühür büyülerine karşı etkilidir.
 50091	Altın Sudak Balığı Suşi	Altın sudak balığından yapılır | Özel bir yemek.
 50092	Sudak Balığı Suşi	Sudak balığından yapılır | Özel bir yemek. Kendine has kokusu nedeniyle kolay yenmez.
 50093	Som Balığı Suşi	Som Balığı ve soğuk pirinçten yapılan özel bir yemek. 30 saniye için saldırı gücünü 10 puan arttırır.
 50094	Yayın Balığı Suşi	Yayın Balığı ve soğuk pirinçten yapılan özel bir yemek. 30 saniye için savunma gücünü 10 puan arttırır.
-50096	Futbol Topu	Baljit-Elvedin gibi vuruş yap!
+50096	Futbol Topu	Baljit-Elvedin gibi vuruş yap! Topun ticareti yapılamaz.
 50100	Havai Fişek	Havai fişek, gökyüzünde renkli ışıklı oyunları olusturan fişekler.(Mor)
 50101	Havai Fişek	Havai fişek, gökyüzünde renkli ışıklı oyunları olusturan fişekler.(Sarı)
 50102	Havai Fişek	Havai fişek, gökyüzünde renkli ışıklı oyunları oluşturan fişekler.(Gök Mavi)
@@ -1409,7 +1409,7 @@
 50104	Havai Fişek	Havai fişek, gökyüzünde renkli ışıklı oyunları oluşturan fişekler.(yeşil ağırlıklı)
 50105	Havai Fişek	Havai fişek, gökyüzünde renkli ışıklı oyunları oluşturan fişekler.(Beyaz ağırlıklı)
 50106	Yılbaşı Havai Fişekleri	YılbaşıHavai Fişekleri | Normal havai fişeklerden çok daha görkemlidir.
-50108	Havai Fişek Topacı	Topaç şekilleri çıkaran havai fişek.
+50108	Havai Fişek Topacı	Komik bir şekilde döndüğünde çocukların severek izlediği, el yapımı bir havai fişek topacı. | | Sersemletme olasılığı: %5 | Süre: 10 Dakika
 50118		
 50119		
 50120	Demir Hazne	Sürgün Mağarasından gelen dayanıklı sandık.
@@ -1419,9 +1419,9 @@
 50124	Eski Tahta Kutu	Sanki derinlerden hayvan sesleri geliyor.
 50125	Esrarengiz Sandık	Hayret, sandık çok hafif, içi boşmuş gibi...
 50126	Esrarengiz Sandık	Hayret, sandık çok hafif, içi boşmuş gibi...
-50127	Mistik Zümrüt Sandığı	Açık Zümrüt Sandığı
+50127	Mistik Zümrüt Sandığı	Açık Zümrüt Sandığı.
 50128	Mistik Gökyakut Sandığı	Kilitsiz bir Gökyakut Sandığı. Hemen açılabilir. İçinde çok değerli bir sır saklı...
-50129	Mistik Ametist Sandığı	Açık Ametist Sandığı
+50129	Mistik Ametist Sandığı	Açık Ametist Sandığı.
 50130	Mistik Topaz Sandığı	Kilitsiz bir Topaz Sandığı. Hemen açılabilir. İçinde çok değerli bir sır saklı...
 50131	Mistik Sitrin Sandığı	Kilitsiz bir Sitrin Sandığı. Hemen açılabilir. İçinde çok değerli bir sır saklı...
 50132	Esrarengiz Yakut Sandığı	Sadece özel bir anahtarla açılabilen kilitli bir Yakut Sandığı. Söylenenlere göre sandığın içi de dışı gibi parıl parıl parlıyormuş.
@@ -1460,7 +1460,7 @@
 50180	Boş Sepet	İçine paskalya yumurtası koyabileceğin boş bir sepet
 50181	Paskalya Yumurtalı Sepet	Paskalya yumurtalarıyla dolu bir sepet.
 50182	Bereket Sandığı	İçinde ne olduğu bilinmeyen bereketli bir sandık.
-50183	Tatlılar	Tatlıların sağladığı özel etkiler: +%10 Hareket Hızı, +%5 Hasar, +%10 Tecrübe. Bu etkiler 30 dakika sürer.
+50183	Tatlılar	Bu tatlıların özel bir etkisi var: Hareket hızı +10, hasar +%5, tecrübe +%10. Bu etkiler 30 dakika sürer.
 50184		
 50185		
 50186	Azrail'in Sandığı	Şeytani güçler bu sandığı kilitli tutuyor. İçinde değerli hazineler olmalı.
@@ -1481,7 +1481,7 @@
 50212	Çırak Sandığı I	Karşılama hediyen maceraya ideal bir başlangıç yapmak için gereken temel donanımı içeriyor.
 50213	Çırak Sandığı I	Karşılama hediyesi maceraya ideal bir başlangıç yapmak için gereken temel donanımı içeriyor.
 50215	Cadılar Bayramı Sandığı	Kenarında balkabağı suratı olan bir sandık. Kapağı, kıkırdama sesine benzeyen bir gıcırdamayla açılır ve içindekiler tezahür eder.
-50216	Punç	Meyve suyu ve baharatlardan oluşan sıcacık bir içecek, sana 30 dakika boyunca +%10 Hız, +%5 Hasar ve +%10 Tecrübe verir.
+50216	Punç	Şarap ve baharatlardan oluşan sıcacık bir içecek, sana +%10 hız, +%5 Hasar ve +%10 tecrübe sağlar.
 50249	Zafer Sandığı	Bu sandık, tüm olimpiyatçılar için ödül olarak bir rastgele eşya içerir.
 50252	Cor Draconis	Kristal ejderha kalbi, içinde ruhu, ejderha taşını barındırır.
 50253		
@@ -1549,7 +1549,7 @@
 50480	Hayalet Vuruş Klavuzu	Hayalet vuruş becerisinde ustalaşmak için kullanılır. Kitap okunduktan sonra yok olur.
 50481	Karanlık Küre Klavuzu	Karanlık küre becerisinde ustalaşmak için kullanılır. Kitap okunduktan sonra yok olur.
 50491	Uçan Tılsım Klavuzu	Uçan tılsım becerisinde ustalaşmak için kullanılır. Kitap okunduktan sonra yok olur.
-50492	Ejderha Atışı Klavuzu	Ejderha atışı becerisinde ustalaşmak için kullanılır. Kitap okunduktan sonra yok olur.
+50492	Ejderha Atışı Klavuzu	Bu kitabın okuması ejderha darbesi becerisinde ustalaşmayı sağlar. Kitap okunduktan sonra yok olur.
 50493	Ejder Kükremesi Klavuzu	Ejder kükremesi becerisinde ustalaşmak için kullanılır. Kitap okunduktan sonra yok olur.
 50494	Kutsama Klavuzu	Kutsama becerisinde ustalaşmak için kullanılır. Kitap okunduktan sonra yok olur.
 50495	Yansıtma Klavuzu	Yansıtma becerisinde ustalaşmak için kullanılır. Kitap okunduktan sonra yok olur.
@@ -1569,19 +1569,19 @@
 50534	Kırmızı Kurt Ruhu Kitabı	Kırmızı Kurt ruhunu başarıyla tamamlamak için kullanılır. Kitap okunduktan sonra kaybolur.
 50535	Çivit Kurt Ruhu Kitabı	Çivit Kurt ruhunu başarıyla tamamlamak için kullanılır. Kitap okunduktan sonra kaybolur.
 50600	Madencilik Rehberi	Madencilik seviyesinin yükseltilmesinde kullanılır.| Kitap okunduktan sonra yok olur.
-50601	Elmas Taşı	Lonca Elmas ocağında rafine edilerek bir elmas olabilir.
-50602	Kehribar Taşı	Lonca Kehribar ocağında rafine edilerek bir kehribara dönüşebilir.
-50603	Fosil Ağaç Gövdesi	Lonca fosil ağaç gövdesi ocağında rafine edilerek fosil ağaç gövdesine dönüştürülebilir.
-50604	Bakır Cevheri	Lonca bakır ocağında rafine edilerek bakıra dönüşebilir.
-50605	Gümüş Cevheri	Lonca gümüş ocağında rafine edilerek gümüşe dönüşebilir.
-50606	Altın Cevheri	Lonca altın ocağında rafine edilerek altına dönüşebilir.
-50607	Yeşim Taşı Cevheri	Lonca yeşim ocağında rafine edilerek yeşime dönüşebilir.
-50608	Abanoz Cevheri	Lonca abanoz ocağında rafine edilerek abanoza dönüşebilir.
-50609	İnci Tanesi	Lonca inci ocağında rafine edilerek inciye dönüşebilir.
-50610	Beyaz Altın Cevheri	Lonca beyaz altın ocağında rafine edilerek beyaz altına dönüşebilir.
-50611	Kristal Cevheri	Lonca kristal ocağında rafine edilerek kristale dönüşebilir.
-50612	Ametist Cevheri	Lonca ametist ocağında rafine edilerek ametiste dönüştürülebilir.
-50613	Cennetin Gözyaşı Cevheri	Lonca cennetin göz yaşları ocağında rafine edilerek cennetin göz yaşlarına dönüşebilir.
+50601	Elmas Taşı	Lonca ocağında bu taştan bir elmas üretilebilir.
+50602	Kehribar Taşı	Lonca ocağında bu kaba taştan bir altın kehribar takısı üretilebilir.
+50603	Fosil Ağaç Gövdesi	Lonca ocağında bu ağaç gövdesinden fosil üretilebilir.
+50604	Bakır Cevheri	Lonca ocağında bu cevherden bakır üretilebilir.
+50605	Gümüş Cevheri	Lonca ocağında bu cevherden gümüş üretilebilir.
+50606	Altın Cevheri	Lonca ocağında bu cevherden altın üretilebilir.
+50607	Yeşim Taşı Cevheri	Lonca ocağında bu cevherden yeşim taşı üretilebilir.
+50608	Abanoz Cevheri	Lonca ocağında bu cevherden abanoz üretilebilir.
+50609	İnci Tanesi	Lonca ocağında bu parçadan bir inci üretilebilir.
+50610	Beyaz Altın Cevheri	Lonca ocağında bu cevherden beyaz altın üretilebilir.
+50611	Kristal Cevheri	Lonca ocağında bu cevherden bir kristal üretilebilir.
+50612	Ametist Cevheri	Lonca ocağında bu cevherden bir ametist üretilebilir.
+50613	Cennetin Gözyaşı Cevheri	Lonca ocağında bu cevherden bir cennetin gözyaşı üretilebilir.
 50614	Ruh Kristali Madeni	Lonca ocağı kullanılarak bu madenden bir ruh kristali üretilebilir.
 50615	Yakut Madeni	Lonca ocağı kullanılarak bu madenden bir yakut üretilebilir.
 50616	Grena Madeni	Lonca ocağı kullanılarak bu madenden bir grena üretilebilir.
@@ -1600,7 +1600,7 @@
 50630	Beyaz Altın	Dayanıklı, beyazlaştırılmış bu altın mücevher yapımında sevilerek kullanılır.
 50631	Kristal	Farklı renklerde olabilen kristal kuvars. Mücevher yapımında sıkça kullanılır.
 50632	Ametist	Mor kuartz.| Ametist aksesuarlara eklenebilir.
-50633	Cennetin Gözyaşı	Cennetten kristalleşmiş yağmur | Cennetin gözü aksesuarlara eklenebilir.
+50633	Cennetin Gözyaşı	Kristalleşmiş yağmur damlaları. Takı üretiminde kullanılabilir.
 50634	Ruh Kristali	Bu kristal ruh kadar saf. Mücevher üretiminde kullanılabilir.
 50635	Yakut	Özenle yontulmuş bir kırmızı cevher. Değerli bir takı haline getirilebilir.
 50636	Grena	Özenle yontulmuş turuncu bir cevher. Değerli bir takı haline getirilebilir.
@@ -1643,8 +1643,8 @@
 50810	Devedikeni Suyu	Devedikeninden yapılan su, kemikleri güçlendirir.
 50811	Hurma Özü	Hurmadan yapılan su, doyurucudur.
 50812	Sam-Zi Bitkisi Suyu	Sam-zi bitkisinden yapılan su, güçlendirir.
-50813	Sim Suyu	Bu iksir şeftali çiçeği suyundan ve leylaktan yapılmıştır. 3 dakika için %10 daha iyi hedef alma şansı verir.
-50814	Dok-Suyu	Bu iksir çançiçeği suyu ve leylaktan yapılmıştır. Kritik vuruş şansınızı 3 dakika için %10 artırır.
+50813	Sim Suyu	Şeftali çiçeği suyu ve leylaktan yapılan bu iksir, delici isabet şansını %10 artırır.
+50814	Dok-Suyu	Çançiçeği suyu ve leylaktan yapılan bu iksir, kritik isabet şansını %10 artırır.
 50815	Bo Suyu	Bu iksir kaki çiçeği suyundan ve tue-mantarlarından yapılmıştır. Beyninizi güçlendirir.
 50816	Yöng Suyu	Bu iksir gango köklerinden ve tue mantarlarından yapılmıştır. Fiziksel ve zihinsel performansınızı artırır.
 50817	Zin Suyu	Bu iksir Sim-suyundan ve alp gülünden yapılmıştır. Saldırı değerinizi 3 dakika için 50 puan arttırır.
@@ -1816,12 +1816,12 @@
 52005	Yavru Yaban Domuzu;Mühür	Mühür, yavru yaban domuzunu çağırır. Savaş eğitimi aldıktan sonra binicisinin saldırı değerlerini 100 oranına kadar artırır.
 52006	Vahşi Yaban Domuzu;Mühür	Mühür, vahşi yaban domuzunu çağırır. Savaş eğitimi aldıktan sonra binicisine canavarlara karşı +%3 güç verir.
 52007	Vahşi Yaban Domuzu;Mühür	Mühür, tecrübe kazanımını %3 artıran vahşi yaban domuzunu çağırır.
-52008	Vahşi Yaban Domuzu;Mühür	Mühür, binicisinin HP'sini 250 artıran vahşi yaban domuzunu çağırır.
+52008	Vahşi Yaban Domuzu;Mühür	Mühür vahşi yaban domuzunu çağırır. Binicisinin HP'sini 250 artırır.
 52009	Vahşi Yaban Domuzu;Mühür	Mühür, binicisinin savunma değerini 50 artıran vahşi yaban domuzunu çağırır.
 52010	Vahşi Yaban Domuzu;Mühür	Mühür, binicisinin saldırı değerini 30 artıran vahşi yaban domuzunu çağırır.
 52011	Cesur Yaban Domuzu;Mühür	Mühür, binicisine canavarlara karşı +%5 güç veren cesur yaban domuzunu çağırır.
 52012	Cesur Yaban Domuzu;Mühür	Mühür, tecrübe kazanımını %5 artıran cesur yaban domuzunu çağırır.
-52013	Cesur Yaban Domuzu;Mühür	Mühür, binicisinin HP'sini 500 kadar artıran cesur yaban domuzunu çağırır.
+52013	Cesur Yaban Domuzu;Mühür	Mühür cesur vahşi yaban domuzunu çağırır. Binicisinin HP'sini 500 artırır.
 52014	Cesur Yaban Domuzu;Mühür	Mühür, binicisinin savunma değerini 150 kadar artıran cesur yaban domuzunu çağırır.
 52015	Cesur Yaban Domuzu;Mühür	Mühür, binicisinin saldırı değerini 100 kadar artıran cesur yaban domuzunu çağırır.
 52016	Yavru Kurt; Mühür	Mühür, yavru kurdunu çağırır. Savaş eğitimi aldıktan sonra binicisine canavarlara karşı %5 oranına kadar güç verir.
@@ -1869,8 +1869,8 @@
 52058	Cesur Kaplan Mührü	Mühür, binicisinin HP'sini 500 artıran cesur kaplanını çağırır.
 52059	Cesur Kaplan Mührü	Mühür, binicisinin savunma değerini 150 artıran cesur kaplanını çağırır.
 52060	Cesur Kaplan Mührü	Mühür, binicisinin saldırı değerini 100 artıran cesur kaplanını çağırır.
-52061	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (e) çağırır. Savaş eğimiti aldıktan sonra binicisine canavarlara karşı %5 oranına kadar güç verir.
-52062	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (e) çağırır. Savaş eğimiti aldıktan sonra tecrübe kazanmayı %5 oranına kadar artırır.
+52061	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (e) çağırır.
+52062	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (e) çağırır.
 52063	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (e) çağırır. Savaş eğimiti aldıktan sonra binicisinin HP'sini 500 oranına kadar artırır.
 52064	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (e) çağırır. Savaş eğimiti aldıktan sonra binicisinin savunma değerini 150 oranına kadar artırır.
 52065	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (e) çağırır. Savaş eğimiti aldıktan sonra binicisinin saldırı değerini 100 oranına kadar artırır.
@@ -1884,26 +1884,26 @@
 52073	Cesur Ren Geyiği Mührü	Mühür, binicisinin HP'sini 500 artıran cesur ren geyiğini (e) çağırır.
 52074	Cesur Ren Geyiği Mührü	Mühür, binicisinin savunma değerini 150 artıran cesur ren geyiğini (e) çağırır.
 52075	Cesur Ren Geyiği Mührü	Mühür, binicisinin saldırı değerini 100 artıran cesur ren geyiğini (e) çağırır.
-52076	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (d) çağırır. Savaş eğimiti aldıktan sonra binicisine canavarlara karşı %5 oranına kadar güç verir.
-52077	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (d) çağırır. Savaş eğimiti aldıktan sonra tecrübe kazanmayı %5 oranına kadar artırır.
-52078	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (d) çağırır. Savaş eğimiti aldıktan sonra binicisinin HP'sini 500 oranına kadar artırır.
-52079	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (d) çağırır. Savaş eğimiti aldıktan sonra binicisinin savunma değerini 150 oranına kadar artırır.
-52080	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (d) çağırır. Savaş eğimiti aldıktan sonra binicisinin saldırı değerini 100 oranına kadar artırır.
-52081	Yabani Ren Geyiği Mührü	Bu mühür yabani ren geyiğini (d) çağırır: Binicisine canavarlara karşı +%3 güç verir.
-52082	Yabani Ren Geyiği Mührü	Mühür, tecrübe kazanmayı %3 artıran yabani ren geyiğini (d) çağırır.
-52083	Yabani Ren Geyiği Mührü	Mühür, binicisinin HP'sini 250 artıran yabani ren geyiğini (d) çağırır.
-52084	Yabani Ren Geyiği Mührü	Mühür, binicisinin savunma değerini 50 artıran yabani ren geyiğini (d) çağırır.
-52085	Yabani Ren Geyiği Mührü	Mühür, binicisinin saldırı değerini 30 artıran yabani ren geyiğini (d) çağırır.
-52086	Cesur Ren Geyiği Mührü	Bu mühür cesur ren geyiğini (d) çağırır. Binicisine canavarlara karşı +%5 güç verir.
-52087	Cesur Ren Geyiği Mührü	Mühür, tecrübe kazanımını %5 artıran cesur ren geyiğini (d) çağırır.
-52088	Cesur Ren Geyiği Mührü	Mühür, binicisinin HP'sini 500 artıran cesur ren geyiğini (d) çağırır.
-52089	Cesur Ren Geyiği Mührü	Mühür, binicisinin savunma değerini 150 artıran cesur ren geyiğini (d) çağırır.
-52090	Cesur Ren Geyiği Mührü	Mühür, binicisinin saldırı değerini 100 artıran cesur ren geyiğini (d) çağırır.
-52091	Genç Ejdercik Mührü	Mühürle Genç Ejderciğini yanına çağırabilirsin. Dövüş eğitiminden sonra binicisine, canavarlara karşı %5'e kadar güç kazandırır.
-52092	Genç Ejdercik Mührü	Mühürle Genç Ejderciğini yanına çağırabilirsin. Dövüş eğitiminden sonra tecrübe kazanımını %5'e kadar artırır.
-52093	Genç Ejdercik Mührü	Mühürle Genç Ejderciğini yanına çağırabilirsin. Dövüş eğitiminden sonra binicisinin HP'sini 500 kadar artırır.
-52094	Genç Ejdercik Mührü	Mühürle Genç Ejderciğini yanına çağırabilirsin. Dövüş eğitiminden sonra binicisinin savunma değerini 150 kadar artırır.
-52095	Genç Ejdercik Mührü	Mühürle Genç Ejderciğini yanına çağırabilirsin. Dövüş eğitiminden sonra binicisinin saldırı değerini 100 kadar artırır.
+52076	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (k) çağırır.
+52077	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (k) çağırır. Savaş eğimiti aldıktan sonra tecrübe kazanmayı %5 oranına kadar artırır.
+52078	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (k) çağırır. Savaş eğimiti aldıktan sonra binicisinin HP'sini 500 oranına kadar artırır.
+52079	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (k) çağırır. Savaş eğimiti aldıktan sonra binicisinin savunma değerini 150 oranına kadar artırır.
+52080	Yavru Ren Geyiği Mührü	Mühür, yavru ren geyiğini (k) çağırır. Savaş eğimiti aldıktan sonra binicisinin saldırı değerini 100 oranına kadar artırır.
+52081	Yabani Ren Geyiği Mührü	Bu mühür yabani ren geyiğini (k) çağırır: Binicisine canavarlara karşı +%3 güç verir.
+52082	Yabani Ren Geyiği Mührü	Mühür, tecrübe kazanmayı %3 artıran yabani ren geyiğini (k) çağırır.
+52083	Yabani Ren Geyiği Mührü	Mühür, binicisinin HP'sini 250 artıran yabani ren geyiğini (k) çağırır.
+52084	Yabani Ren Geyiği Mührü	Mühür, binicisinin savunma değerini 50 artıran yabani ren geyiğini (k) çağırır.
+52085	Yabani Ren Geyiği Mührü	Mühür, binicisinin saldırı değerini 30 artıran yabani ren geyiğini (k) çağırır.
+52086	Cesur Ren Geyiği Mührü	Bu mühür cesur ren geyiğini (k) çağırır. Binicisine canavarlara karşı +%5 güç verir.
+52087	Cesur Ren Geyiği Mührü	Mühür, tecrübe kazanımını %5 artıran cesur ren geyiğini (k) çağırır.
+52088	Cesur Ren Geyiği Mührü	Mühür, binicisinin HP'sini 500 artıran cesur ren geyiğini (k) çağırır.
+52089	Cesur Ren Geyiği Mührü	Mühür, binicisinin savunma değerini 150 artıran cesur ren geyiğini (k) çağırır.
+52090	Cesur Ren Geyiği Mührü	Mühür, binicisinin saldırı değerini 100 artıran cesur ren geyiğini (k) çağırır.
+52091	Genç Ejdercik Mührü	Mühür, genç ejderciği çağırır.
+52092	Genç Ejdercik Mührü	Mühür, genç ejderciği çağırır.
+52093	Genç Ejdercik Mührü	Mühür, genç ejderciği çağırır.
+52094	Genç Ejdercik Mührü	Mühür, genç ejderciği çağırır.
+52095	Genç Ejdercik Mührü	Mühür, genç ejderciği çağırır.
 52096	Vahşi Ejdercik Mührü	Mühürle Vahşi Ejderciğini  yanına çağırabilirsin. Binicisine, canavarlara karşı %3'e kadar güç kazandırır.
 52097	Vahşi Ejdercik Mührü	Mühürle Vahşi Ejderciğini yanına çağırabilirsin. Tecrübe kazanımını %5'e kadar artırır.
 52098	Vahşi Ejdercik Mührü	Mühürle Vahşi Ejderciğini yanına çağırabilirsin. Binicisinin HP'sini 250 kadar artırır.
@@ -1934,48 +1934,48 @@
 52703	Yaban Domuzu Sertifikası	Yavru yaban domuzu sertifikası.
 52704	Kurt Sertifikası	Yavru kurt sertifikası.
 52705	RenGeyiği Sertifikası(e)	Yavru ren geyiği sertifikası (e).
-52706	RenGeyiği Sertifikası(d)	Yavru ren geyiği sertifikası (d).
+52706	RenGeyiği Sertifikası(d)	Yavru ren geyiği sertifikası (k).
 52707	Ejdercik Sertifikası	Genç Ejderciğe sahip olduğuna dair sertifika
 52708	Moa Sertifikası	Bu sertifikayla bir genç Moa sahibi olursun.
-53001		
+53001		Bu mühürle arkadaşın Ateş Ankası'nı çağırırsın.
 53002	Ren Geyiği Yavrusu Mührü	Bu mühürle sevimli ren geyiği yavrusunu çağırabilirsin.
 53003	Buz Ankası Mührü	Bu mühürle Buz Ankası'nı çağırabilirsin.
-53005	Yavru Azrail	Şeytan hakiminin minik cinsi son derece  sadıktır ve Şeytan Kulesi'nin ve Şeytan Katakombu'nun 2. katından itibaren 1500 HP ve +%15 hasarı bonus sağlar.
-53006	Yavru Azrail (altın)	Şeytan hakiminin minik versiyonu çok bağlıdır ve Şeytan Kulesi'nin ile Şeytan Katakombu'nun 2. katından sonra 1500 TP ve %15 Hasar bonusu verir.
-53007	Bambi Mührü	Rengeyiği yavrusu Bambi'yi yanına çağıran bir mühür.
-53008	Knuud Mührü	Bu mühürle kutup ayısı yavrunu çağırabilirsin.
-53009	Bao Bao Mührü	Bu mühürle sevimli panda yavrunu çağırabilirsin.
-53010	Leonidas Mührü	Aslan yavrusu Leonidas'ı yanına çağıran bir mühür.
-53011	Khan Mührü	Kaplan yavrusu Khan'ı yanına çağıran bir mühür.
-53012	Porki Mührü	Yaban domuzu yavrusu Porki'yi yanına çağıran bir mühür.
-53013	Rufus Mührü	Kurt yavrusu Rufus'u yanına çağıran bir mühür.
-53014	Cellatcık Mührü	Bu mühürle, siyah zırhlı şişko Cellatcığını yanına çağırabilirsin.
-53015	Cellatcık Mührü (altın)	Bu mühürle, altın zırhlı şişko Cellatcığını yanına çağırabilirsin.
-53016	Boney Mührü	Bu mühürle kemikli petini çağırabilirsin.
-53017	Yeşim Ankası Mührü	Bu mühür alımlı Yeşim Ankası'nı çağırır.
-53018	Kar Leonidas (Mühür)	Bu mühürle petini yanına çağırabilirsin.
-53019	Arktik Khan (Mühür)	Bu mühürle petini yanına çağırabilirsin.
-53020	Kutup Porki (Mühür)	Bu mühürle petini yanına çağırabilirsin.
-53021	Ayaz Rufus (Mühür)	Bu mühürle petini yanına çağırabilirsin.
-53022	Sheldon Mührü	Mühür, petin Sheldon'u yumurtadan çıkarmanı sağlar.
-53023	Cooper Mührü	Mühür, petin Cooper'i tıpış tıpış yanına çağırır.
-53024	Panter Yavrusu (7 gün)	Bu mühür siyah Panter Yavrusu'nu yanına çağırır.
-53025	Leopar Yavrusu (7 gün)	Bu mühür şirin Leopar Yavrusu'nu yanına çağırır.
-53026	Pepita Mührü	Ankan Pepita'yı yanına çağıran bir mühür.
-53218	Panter Yavrusu (30 gün)	Bu mühür siyah Panter Yavrusu'nu yanına çağırır.
-53219	Panter Yavrusu (120 gün)	Bu mühür siyah Panter Yavrusu'nu yanına çağırır.
-53220	Leopar Yavrusu (30 gün)	Bu mühür şirin Leopar Yavrusu'nu yanına çağırır.
-53221	Leopar Yavrusu (120 gün)	Bu mühür şirin Leopar Yavrusu'nu yanına çağırır.
-53222	Balkabağı Mührü	Bu mühürle balkabağı kafanı çağırabilirsin.
-53223	Küçük Süpürgeci Mührü	Bu mühürle küçük süpürgecini çağırabilirsin.
-53224	Kar Tanesi Mührü	Bu mühürle şirin kardan adam yavrusunu, Kar Tanesi'ni çağırırsın.
-53225	Çancık Mührü	Bu mühürle neşeli kardan adam yavrusunu, Çancık'ı çağırırsın.
-53226	Cupido (mühür)	Bu mühürle aşk maskotunu çağırırsın. Delici isabet şansını %5 ve HP'ni 1.500 artırır.
-53227	Öfkeli Kalp (mühür)	Bu mühürle öfkeli kalbi çağırırsın. Kritik isabet şansını %5 ve HP'ni 1.500 artırır.
-53228	Hilal (Mühür)	Bu mühürle yanına mavi Hilal'ini çağırırsın.
-53229	Hilal (Mühür)	Bu mühürle yanına kırmızı Hilal'ini çağırırsın.
-53232	Yavru Huashin	General Huashin'in yavru versiyonu delici isabet şansını %5 ve HP'yi 1500 artırır.
-53501		
+53005	Yavru Azrail	Şeytan hakiminin mini sürümü son derece sadıktır ve Şeytan Kulesi'nin ve Şeytan Katakombu'nun 2. katından itibaren şu bonusları sağlar: | +%15 büyü-/yakın dövüş saldırısı | +1500 HP
+53006	Yavru Azrail (altın)	Şeytan hakiminin mini sürümü son derece sadıktır ve Şeytan Kulesi'nin ve Şeytan Katakombu'nun 2. katından itibaren şu bonusları sağlar: | +%15 büyü-/yakın dövüş saldırısı | +1500 HP
+53007	Bambi Mührü	Bu mühürle ren geyiği yavrun Bambi'yi yanına çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53008	Knuud Mührü	Bu mühürle kutup ayısı yavrunu çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53009	Bao Bao Mührü	Bu mühürle sevimli panda yavrunu çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53010	Leonidas Mührü	Bu mühürle aslan yavrun Leonidas'ı yanına çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53011	Khan Mührü	Bu mühürle kaplan yavrun Khan'ı yanına çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53012	Porki Mührü	Bu mühürle yaban domuzu yavrun Porki'yi yanına çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53013	Rufus Mührü	Bu mühürle kurt yavrusu Rufus'u yanına çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53014	Cellatcık Mührü	Bu mühürle siyah zırhlı şişko cellatcığını yanına çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53015	Cellatcık Mührü (altın)	Bu mühürle altın zırhlı şişko cellatcığını yanına çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53016	Boney Mührü	Bu mühürle kemikli petini çağırabilirsin. Sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53017	Yeşim Ankası Mührü	Bu mühür, alımlı yeşim ankasını çağırır. Bu petin sana sağladıkları | +%15 büyü-/yakın dövüş saldırısı | %30 EXP bonusu için +%50 şans
+53018	Kar Leonidas (Mühür)	Bu mühürle küçük kar aslanını çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53019	Arktik Khan (Mühür)	Bu mühürle küçük kar kaplanını çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53020	Kutup Porki (Mühür)	Bu mühürle küçük kutup domuzunu çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53021	Ayaz Rufus (Mühür)	Bu mühürle küçük kutup kurdunu yanına çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53022	Sheldon Mührü	Mühür, petin Sheldon'un yumurtadan çıkmasını sağlar. Sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53023	Cooper Mührü	Mühür, petin Cooper'i tıpış tıpış yanına çağırır. Sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53024	Panter Yavrusu (7 gün)	Bu mühür siyah panter yavrusunu yanına çağırır. Bu petin sana sağladıkları: | +%5 beceri hasarına dayanıklılık | +%5 delici isabet şansı | +1500 HP
+53025	Leopar Yavrusu (7 gün)	Bu mühür şirin leopar yavrusunu yanına çağırır. Bu petin sana sağladıkları: | +%10 savunma değeri | +%5 kritik isabet şansı | +1500 HP
+53026	Pepita Mührü	Bu mühürle Ankan Pepita'yı çağırırsın. Bu pet tecrübe toplamayı +5% artırır.
+53218	Panter Yavrusu (30 gün)	Bu mühür siyah panter yavrusunu yanına çağırır. Bu petin sana sağladıkları: | +%5 beceri hasarına dayanıklılık | +%5 delici isabet şansı | +1500 HP
+53219	Panter Yavrusu (120 gün)	Bu mühür siyah panter yavrusunu yanına çağırır. Bu petin sana sağladıkları: | +%5 beceri hasarına dayanıklılık | +%5 delici isabet şansı | +1500 HP
+53220	Leopar Yavrusu (30 gün)	Bu mühür şirin leopar yavrusunu yanına çağırır. Bu petin sana sağladıkları: | +%10 savunma değeri | +%5 kritik isabet şansı | +1500 HP
+53221	Leopar Yavrusu (120 gün)	Bu mühür şirin leopar yavrusunu yanına çağırır. Bu petin sana sağladıkları: | +%10 savunma değeri | +%5 kritik isabet şansı | +1500 HP
+53222	Balkabağı Mührü	Bu mühürle balkabağı kafanı çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53223	Küçük Süpürgeci Mührü	Bu mühürle küçük süpürgecini çağırabilirsin. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53224	Kar Tanesi Mührü	Bu mühürle şirin kardan adam yavrusu Kar Tanesi'ni çağırırsın. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53225	Çancık Mührü	Bu mühürle neşeli kardan adam yavrusu Çancık'ı çağırırsın. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +%5 kritik isabet
+53226	Cupido (mühür)	Bu mühürle aşk maskotunu çağırırsın. Sana sağladıkları: | +%5 delici isabet şansı | +1500 HP
+53227	Öfkeli Kalp (mühür)	Bu mühürle öfkeli kalbi çağırırsın. Sana sağladıkları: | +%5 kritik isabet şansı | +1500 HP
+53228	Hilal (Mühür)	Bu mühürle mavi Hilal'ini çağırırsın. Bu petin sana sağladıkları: | +%15 büyü/yakın dövüş saldırısı | +1500 HP
+53229	Hilal (Mühür)	Bu mühürle kırmızı Hilal'ini çağırırsın.  Sana sağladıkları: | +%15 büyü-/yakın dövüş saldırısı | +%5 kritik isabet şansı.
+53232	Yavru Huashin	General Huashin'in mini sürümünün sana sağladıkları: | +%5 delici isabet şansı | +1500 HP
+53501		Ateş Ankası bu kafesten çıkarılmayı bekliyor.
 53502	Ren Geyiği Yavrusu Sand.	Bu sandıkta onu çıkarmanı sabırsızlıkla bekleyen bir Ren Geyiği Yavrusu var.
 53503	Buz Ankası Kafesi	Buz Ankası, onu bu kafesten çıkarmanı bekliyor.
 53504		
@@ -1992,10 +1992,10 @@
 53515	Cellatçık Sandığı(altın)	Bu sandıkta altın zırhlı şişko Cellatçık gizlidir ve kurtarılmayı bekler.
 53516	Kemik Sandık	Bir rastgele eşya içerir. Şansın varsa içinden iskelet köpek Boney çıkar.
 53517	Yeşim Kafesi	Bu kafeste nadir yeşim ankası onu kurtarmanı bekliyor.
-53518	Kar Leonidas	Sandıkta Kar Leonidas'ın mührü var.
-53519	Arktik Khan	Sandıkta Arktik Khan'ın mührü var.
-53520	Kutup Porki	Sandıkta Kutup Porki'nin mührü var.
-53521	Ayaz Rufus	Sandıkta Ayaz Rufus'un mührü var.
+53518	Kar Leonidas	Kafeste Kar Leonidas'ın mührü var.
+53519	Arktik Khan	Kafeste Arktik Khan'ın mührü var.
+53520	Kutup Porki	Kafeste Kutup Porki'nin mührü var.
+53521	Ayaz Rufus	Kafeste Ayaz Rufus'un mührü var.
 53522	Sheldon Yuvası	Petin Sheldon bu yuvada saklı.
 53523	Tavşan Kafesi	Küçük tavşan Cooper bu kafeste saklı.
 53526	Kutu Pepita	Pepita mührünü almak için bu kutuyu aç.
@@ -2017,7 +2017,7 @@
 70002	Üçüncü El	Yangları otomatik olarak toplayan bir el.
 70003	Liderin Kitabı	7 Savaş stratejisi kitabından biri. Grup lideri kullandığında üyeler %30 daha fazla deneyim kazanır.
 70004	Çalışkanlık Madalyası	Çalıştığın gün kazandığın ödül. Savaşırken %20 tecrübe puanı daha kazandırıyor.
-70005	Tecrübe Yüzüğü	Çok eski kahramanlar tarafından kullanılan sönük görünümlü yüzük.  Takıldığında daha çok EXP yükler. | Çıkarılamaz.
+70005	Tecrübe Yüzüğü	60 dakika boyunca %50 daha fazla tecrübe toplamanı sağlar.
 70006	Lisan Yüzüğü	Eski devirlerin diplomasi yüzüğüdür. Kullanıldığında başka krallıklardan insanlarla konuşulabilir.
 70008	Beyaz Bayrak	Beyaz bayrak teslim olmayı gösterir.
 70009	Define Sandığı	Süslerle donatılmış sandık. Sadece özel bir anahtarla açılabilir.
@@ -2028,25 +2028,25 @@
 70015	Ucuz Fırça	Basit, sert ağaçtan sapı olan sağlam fırça.
 70020	Şeftali Çiçeği Şurubu	HP'ni anında 500 puana çıkaran bir içecek.
 70024	Kutsama Küresi	Efsanevi kutsanmış küre. Bir nesne  4.seviyeye geldiği zaman, başka bir seviye ekler.
-70027	Demircinin Notu	Silahını nasıl geliştireceğini gösteren demirciye ait not.
+70027	Demircinin Notu	Eşyalarını nasıl geliştireceğini gösteren Silah Ustası'na ait not. Bir nesneyi +4’ten +5’e geliştirme şansını %100 yükseltir.
 70031	Eskrim Broşürü	Bu broşür, diğer şeylerin yanında, insan anatomisinin potansiyeli ve zayıflıkları konularını içerir.
 70035	Büyülü Bakır	Bu Büyülü Bakır ve Kutsama Kağıdı ile demircide Savaş Kağıdı üretilebilir.
-70037	Unutkanlık Kitabı	Bu efsanevi kitap hafızadaki tüm öğrenilmiş becerileri siler. 1 beceri puanı taşıyabilirsiniz.
+70037	Unutkanlık Kitabı	Kahraman bu kitapla, öğrendiği bir becerinin anısını hafızasından siler. Böylece 1 beceri puanı taşınabilir.
 70038	Cesaret Pelerini	Gerçek savaşçılar taşıdıkları renkli pelerin ile tüm yaratıkların dikkatini kendi üzerlerine çeker ve böylelikle kahramanlıklarını kanıtlarlar.
 70039	Demircinin El Kitabı	Eski demircilerin ruhlarını barındıran kitap. Kullanılırsa, yükseltme başarısı oranını arttırır.
 70040	Ork İnatçılığı	Dayanıklılık düşme oranını yarı yarıya azaltır.
-70043	Hırsız Eldiveni	En büyük hırsızın eldiveni. Eşya düşürme şansını iki katına çıkarır.
+70043	Hırsız Eldiveni	Nesne elde etme şansını iki katına çıkarır.
 70047	Lisan Yüzüğü(Örnek)	Bu yüzük geçmiş çağlarda diplomat çevreleri için üretilmiş. Başka krallıklardan insanlarla konuşmak için kullanılır.
-70048	Kaçağın Pelerini	Kullanıldığı zaman sıralamalarınızı saklar, kaçaklar tarafından kullanılır.
-70049	Lucy`nin Yüzüğü	Üzerinde ejderha tanrının sizi kutsadığı yazılı olan yüzük. Savaşta eşya kaybetmenizi önler.
+70048	Kaçağın Pelerini	Bu gizemli pelerinle gerçek rütbeni saklarsın.
+70049	Lucy`nin Yüzüğü	Üzerinde "Ejderha tanrısı seni kutsasın" yazıyor. Savaşta eşya kaybetme olasılığını düşürür. Bir eşya kaybettiğinde sadece Lucy'nin yüzüğü düşer.
 70050	Bilge Kralın Sembolü	Eski krallık ailesinden miras kalma bir sembol. Grand Masterin muhteşem gücünü verir.
 70051	Bilge Kralın Eldiveni	Eski krallık ailesinden miras kalma bir eldiven. Grand Masterin gizemli gücünü verir.
 70052	Karma Muskası1	Kötü şanstan korunmak için Budistler tarafından kullanılan büyü.
 70053	Karma Muskası2	Kötü şanstan korunmak için Budistler tarafından kullanılan büyü.
 70054	Karma Muskası3	Kötü şanstan korunmak için Budistler tarafından kullanılan büyü.
 70056	Nar Suyu+	HP'ni anında 1000 puana çıkaran bir içecek.
-70057	Cesaret Pelerini	Bir zamanlar savaşçıların, birçok canavar çektiği için cesaretlerini kanıtladıkları renkli bir pelerin. Bu eşya satılabilir.
-70058	Işınlama yüzüğü	Bu yüzük seni 50 kez, krallığının içinde istediğin bir yere ışınlar. Satılamaz.
+70057	Cesaret Pelerini	Bir zamanlar savaşçıların, birçok canavar çektiği için cesaretlerini kanıtladıkları, renkli bir pelerin.
+70058	Işınlama yüzüğü	Bu yüzük seni 50 kez, krallığının içinde istediğin bir yere ışınlar. Ticareti yok.
 70063	Köstümü dönüştür	Kostümlerinden birinin bonuslarını kaldırır ve yenilerini ekler. Şansın yaver giderse bu arada bonuslarının sayısı değişir. (en fazla 3 olacak kadar)
 70064	Kostümü efsunla	Kostümlerinden birinin bonuslarını kaldırır ve yenilerini ekler.
 70065	Konstüm Bonusu Aktarımı	Bir kostümdeki bonusu başka bir kostüme aktarır. Bu işlemde kostümlerden biri yok edilir.
@@ -2070,16 +2070,16 @@
 71005	Lisan Yüzüğü	7 gün boyunca tüm imparatorlukların dillerini konuşabilirsin.
 71006	Lisan Yüzüğü	15 gün boyunca tüm imparatorlukların dillerini konuşabilirsin.
 71007	Lisan Yüzüğü	30 gün boyunca tüm imparatorlukların dillerini konuşabilirsin.
-71008	Balıkçılık Klavuzu	Nadir bulunan balık yakalama oranını iki kat arttırır.
+71008	Balıkçılık Klavuzu	Nadir balık yakalamak için gereklidir ve bunun için şansını iki katına çıkarır.
 71009	Genişletilmiş Depo	Depoun ekstra 2 depolama odasına daha sahip olur.
 71010	Üçüncü El	Yangları otomatik olarak toplayan bir el.
 71011	Duygu Maskesi	Bu maske sayesinde duygularını ifade edebilirsin.
 71012	Liderin Kitabı	Grup lideri tarafından kullanıldıgında, grup lideri ve üyelerine %30 EXP yükler.
 71013	Havai Fişekler	Havai fişekler kutlamalar sırasında gökyüzünü süsler.
-71014	Saldırı İksiri +10	Saldırı hızını 10% attırır. | Süresi 30 dakika.
-71015	Tecrübe Yüzüğü	Savaşırken %50 Tecrübe Puanı daha kazanıyorsun.
-71016	Hırsız Eldiveni	Nesne elde etme şansını 30 dakika boyunca iki kat arttırır.
-71017	Altın Şans Parası	Para düşme oranını 2 kat arttırır.| Süresi 30 dakika.
+71014	Saldırı İksiri +10	Saldırı hızını %10 artırır.
+71015	Tecrübe Yüzüğü	Savaş esnasında %50 daha fazla tecrübe puanı toplarsın.
+71016	Hırsız Eldiveni	Eşya elde etme şansını iki katına çıkarır.
+71017	Altın Şans Parası	Yang elde etme şansını iki katına çıkarır.
 71018	Yaşam Kutsaması	HP'ni anında %100 yenileyen bir kutsama.
 71019	Sihir Kutsaması	Tüm SP yi hemen doldurur.
 71020	Ejderha Kutsaması	HP ve SP'ni anında %100 yenileyen bir kutsama.
@@ -2089,15 +2089,15 @@
 71024	Güç Unutma Kitabı	Güç Puanını temel değere düşürür ve puanları yeniden dağıtmanı sağlar.
 71025	Demirci Taşı	Bu taş ve kutsama kağıdı ile demircide Demircinin elkitabını hazırlayabilirsiniz.
 71026	Büyülü Demir Maden	Ejderha parşömeni yapımında ihtiyaç duyulur - Demirci'de kutsama kağıdı ile birlikte kullanılır.
-71027	Ejderha Tanrı Yaşamı	30 dakika boyunca maksimum HP'ni %20 arttırır.
-71028	Ejderha Tanrı Saldırısı	Savaş sırasında 30 dakika boyunca verdiğiniz hasarı %12-15 arası artırır.
-71029	Ejderha Tanrı Zekası	Maksimum SP'nizi 30 dakika boyunca %20 artırır.
-71030	Ejderha Tanrı Savunması	Bir savaş sırasında aldığınız hasarı 30 dakika boyunca %12-15 arası azaltır.
+71027	Ejderha Tanrı Yaşamı	Maksimum HP'ni %20 artırır.
+71028	Ejderha Tanrı Saldırısı	Saldırı değerini %20 artırır.
+71029	Ejderha Tanrı Zekası	Maksimum SP'ni %20 artırır.
+71030	Ejderha Tanrı Savunması	Savaş esnasında aldığın hasarı %20 düşürür.
 71031	Ejderha Tanrı Desteği	Canlılık, güç, zeka ve çeviklik geçici olarak 5 katına çıkar.
 71032	Ejderha Parşömeni	Geliştirme işlemi başarısız olduğunda bir eşyanın yok olma riskini ortadan kaldırır. Yalnızca kalitesi bir basamak düşer. Ayrıca başarılı bir geliştirme ihtimali %10 artar.
 71033	Duygu Maskesi	Bu maske sayesinde duygularını ifade edebilirsin.
-71034	Saldırı İksiri +15	Saldırı hızını 15% attırır. | Süresi 30 dakika.
-71035	Araştırmacının Özütü	Topladığınız araştırma nesnelerinin kalitesini arttırır, böylece kabul edilmeleri kolaylaşır.
+71034	Saldırı İksiri +15	Saldırı hızını %15 artırır.
+71035	Araştırmacının Özütü	Topladığınız araştırma nesnelerinin kalitesini arttırır, böylece kabul edilmeleri kolaylaşır. Yohara'daki görevler için geçerli değildir.
 71036	Kağıt-Ork Şefi	Kullanıldığında Ork reisini karakterin yanına getirir.
 71037	Kağıt-Karanlık Lider	Kullanıldığında Karanlık Lideri karakterin yanına getirir.
 71038	Kağıt-Kraliçe Örümcek	Kullanıldığında kraliçe örümcegi karakterin yanına getirir.
@@ -2106,17 +2106,17 @@
 71041	Kağıt-Dokuz Kuyruk	Kullanıldığında dokuz kuyruğu karakterin yanına getirir.
 71042	Kağıt-Şeytan Kral	Bir kibirli Şeytan Kralı'nı karakterinin yanına çağırır. Dikkat, bu bir Patron'dur!
 71043	Sarı Kaplan H. Kağıdı	Kullanıldığında dev kaplanı karakterin yanına getirir.
-71044	Kritik İsabet	Bir savaşta 10 dakika boyunca kritik vuruş şansınızı %20 artırır.
-71045	Delici İsabet	10 dakika boyunca delici vuruş şansınızı %20 arttırır.
-71047	Ruh Taşı Temizleyici	Nesnede ekli Ruh Taşını siler.
+71044	Kritik İsabet	Savaşta bir kritik isabet yapma şansını %20 artırır.
+71045	Delici İsabet	Savaşta bir delici isabet yapma şansını %20 artırır.
+71047	Ruh Taşı Temizleyici	Nesnede ekli zihin taşını siler.
 71048	Değişim Tılsımı	Bu tılsım karakterinizin cinsiyetini değiştirebilir.
 71049	İpek Bohça	Bu bohça ile 10 gün boyunca ücretsiz özel dükkan açabilirsiniz.
 71050	Hız İksiri	30 dakika boyunca hareket hızını 60 artırır.
-71051	Büyü nesnesi	Eğer mevcut değilse, eşyalarınızdan birine özel yeni bir bonus ekler.
-71052	Kutsal Nesne	Eşyalarınızdan özel bir bonusu siler ve yeni bir tanesini ekler.
+71051	Büyü nesnesi	Eşyalarınızdan özel bir bonusu siler ve yeni bir tanesini ekler.
+71052	Kutsal Nesne	Eğer mevcut değilse, eşyalarınızdan birine özel yeni bir bonus ekler.
 71054	Krallıkların İzi	Bir karakter başka bir krallığa kaçabilir, yani krallık değiştirebilir.
 71055	İsim İzi	Karakter ismini değiştirir.
-71056	Cennetin İzi	Ruh Taşının başarıyla geliştirilme şansını arttırır.
+71056	Cennetin İzi	Zihin taşının başarıyla geliştirilme şansını arttırır.
 71057	Kağıt-F.Ağaç Damarı	Karakterin yanına fosil ağaç gövdesi damarı çağırır.
 71058	Kağıt-Bakır Damarı	Karakterin yanına bakır cevheri damarı çağırır.
 71059	Kağıt-Gümüş Damarı	Karakterin yanına gümüş cevheri damarı çağırır.
@@ -2144,7 +2144,7 @@
 71081	Kağıt - Metin Taşı(N)	Karakterin yanına normal kalitede metin taşı çağırır.
 71082	Kağıt - Metin Taşı(Y)	Karakterin yanına yüksek kalitede metin taşı çağırır.
 71083	Taş Sanatı Kitabı	Kırık taşı eklentiden silerek, boş ekleme alanı oluşturur.
-71084	Efsun Nesnesi	Eşyalarınızdan birindeki bonusları siler ve yeni bir bonus ekler.
+71084	Efsun Nesnesi	Nesnelerinden birinin bonuslarını siler ve yenilerini ekler. Sadece 1-5 bonusları için geçerlidir.
 71085	Arttırma Kağıdı	Şans eseri, sana ait olan eşyaların birine yeni bir bonus eklenir. (maks.4 Bonus kadar)
 71088	Görev Kitabı(Kolay)	Acemi savaşçıların çözebileceği seviyede kahverengi deri bağlı görev içerikli kitap.
 71089	Görev Kitabı(Normal)	Tecrübe kazanmış savaşçıların çözebileceği seviyede kahverengi deri bağlı görev içerikli kitap.
@@ -2153,138 +2153,138 @@
 71092	Dönüşüm Kitabı	Bu kitabı iyi öğrenenin dönüşüm yeteneği artar. Okunduktan sonra yok olur.
 71093	Dönüşüm Küresi	Bu küreyle bir yaratığa dönüşebilirsin.
 71094	Münzevi Tavsiyesi	Bir sonraki kitabı (ya da ruh taşını) okurken yeteneğini geliştirme şansını iki buçuk katına çıkarır.
-71095	Geçit Bileti	Bu geçiş biletini yetkili bekçiye gösterdiğinde, Örümcek Zindanı'nın yanı sıra Kırmızı Ejderha Kalesi'nin bir katına daha girebilirsin.
+71095	Geçit Bileti	Bu geçit biletini yetkili bekçiye gösterdiğinde, zindanın seçilen bir katına daha girebilirsin.
 71096	Geçiş Tahtası	Bu madalyon geçişlerden geçmenizi sağlar.
 71099	Yer Değiştirme Yüzüğü	Lonca liderinin yer değişimi ayarlamasını sağlar.
 71100	Bilgi Değişim Kağıdı	Tüm bilgini unut ve yenisini edin. Bunu yapabilmek için en az 31. seviyede olmalısın.
-71101	Soğutma İksiri	Bu iksir soğutma özelliğinizi 30 dakika boyunca yüzde 20 arttırır.
-71102		
+71101	Soğutma İksiri	Becerilerinin soğuma süresi bu iksirle %20 düşer.
+71102		Senin sihir hızını %30 artırır.
 71103	Tekrar Dağıtma (VIT)	Canlılığını 1'e düşürür ve puanlarını yeniden dağıtmanı sağlar.
 71104	Tekrar dğtma kağıdı(INT)	Zeka puanını 1'e düşürür ve puanlarını yeniden dağıtmanı sağlar.
 71105	Tekrar Dağıtma (STR)	Gücünü 1'e düşürür ve puanlarını tekrar dağıtmanı sağlar.
 71106	Tekrar Dğtma Kağıdı(DEX)	Çevikliğini 1'e düşürür ve puanlarını tekrar dağıtmanı sağlar.
 71107	Yaşam Meyvesi	Sıralama puanını 2.000 arttırır (soğuma süresi: 8 saat).
-71108	Nar Suyu	HP'ni anında 800 puana çıkaran bir iksir. Bu eşya satılabilir.
-71109	Düzeltme Kağıdı	Bu kağıt ile eşyaya başarıyla eklenen son taşı çıkartabilirsiniz.
+71108	Nar Suyu	HP'ni anında 800 puana çıkaran bir iksir. Bu eşyanın ticareti var.
+71109	Düzeltme Kağıdı	Bu kağıt ile eşyaya başarıyla eklenen son ruh taşını çıkartabilirsiniz.
 71110	At şekeri	Bu şeker parçası atına ad vermeyi sağlar. Ayrıca defans seviyesini arttırır.
 71113	İçgörü Küresi	Başka bir oyuncuya envanterinizdeki eşyaları göstermenize yarayan küre. İşlem sırasında küre kırılır.
-71114	Yaban Domuzu Mührü(sarı)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
+71114	Yaban Domuzu Mührü(sarı)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır. Binicisinin savunma değerini 75 yükseltir.
 711151	Yaban Domuzu Mührü(mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
 711152	Yaban Domuzu Mührü(mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
 711153	Yaban Domuzu Mührü(mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
 711154	Yaban Domuzu Mührü(mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
-71115	Yaban Domuzu Mührü(mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
-71116	Kurt Mührü (sarı)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
+71115	Yaban Domuzu Mührü(mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır. Binicisinin savunma değerini 100 yükseltir.
+71116	Kurt Mührü (sarı)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır. Binicisinin savunma değerini 100 yükseltir.
 711171	Kurt Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
 711172	Kurt Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
 711173	Kurt Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
 711174	Kurt Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
-71117	Kurt Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
-71118	Kaplan Mührü (sarı)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
+71117	Kurt Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır. Binicisinin savunma değerini 150 yükseltir.
+71118	Kaplan Mührü (sarı)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır. Binicisinin savunma değerini 125 yükseltir.
 711191	Kaplan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
 711192	Kaplan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
 711193	Kaplan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
 711194	Kaplan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
-71119	Kaplan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
-71120	Aslan Mührü (sarı)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
+71119	Kaplan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır. Binicisinin savunma değerini 200 yükseltir.
+71120	Aslan Mührü (sarı)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır. Binicisinin saldırı değerini 200 yükseltir.
 711211	Aslan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
 711212	Aslan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
 711213	Aslan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
 711214	Aslan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götüren güçlü bir hayvanın ruhunu çağırır.
-71121	Aslan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır.
-71122		
+71121	Aslan Mührü (mavi)	Mührün büyüsü, seni hızlıca istediğin yere götürecek, güçlü bir hayvanın ruhunu çağırır. Binicisinin saldırı değerini 300 yükseltir.
+71122		Bununla ejderha odasına girilebilir.
 71123	Ejderha Pulu	Ejderha pulları bilinen en şiddetli malzemeler arasında yer alıyor.
-71124	Beyaz Aslan	Beyaz kürklü hayvanlara oldukça ender rastlanıyor. Olağanüstü güçleri olduğu düşünülerek onlara birçok medeniyet tarafından tapılıyor.
-71125	Savaş Yaban Domuzu Mührü	Kötü hayvan ruhlarını dizginleştirmek ancak sihir sanatı ile mümkün. Bu sanatın yarattığı etkiler çok şaşırtıcı oluyor.
-71126	Kızgın Kurt Mührü	Kötü hayvan ruhlarını dizginleştirmek ancak sihir sanatı ile mümkün. Bu sanatın yarattığı etkiler çok şaşırtıcı oluyor.
-71127	Vahşi Kaplan Mührü	Kötü hayvan ruhlarını dizginleştirmek ancak sihir sanatı ile mümkün. Bu sanatın yarattığı etkiler çok şaşırtıcı oluyor.
-71128	Yırtıcı Aslan Mührü	Kötü hayvan ruhlarını dizginleştirmek ancak sihir sanatı ile mümkün. Bu sanatın yarattığı etkiler çok şaşırtıcı oluyor.
+71124	Beyaz Aslan	Beyaz kürklü hayvanlara oldukça ender rastlanıyor. Olağanüstü güçleri olduğu düşünülerek onlara birçok medeniyet tarafından tapılıyor. Tecrübe toplamayı %30 artırır.
+71125	Savaş Yaban Domuzu Mührü	Kötü hayvan ruhlarını dizginleştirmek ancak sihir sanatı ile mümkün. Sonucuysa çok etkileyici. Binicisine, canavarlara karşı %20 güç kazandırır.
+71126	Kızgın Kurt Mührü	Kötü hayvan ruhlarını dizginleştirmek ancak sihir sanatı ile mümkün. Sonucuysa çok etkileyici. Kritik vuruş şansını +10% artırır.
+71127	Vahşi Kaplan Mührü	Kötü hayvan ruhlarını dizginleştirmek ancak sihir sanatı ile mümkün. Sonucuysa çok etkileyici. Kritik vuruş şansını +10% artırır.
+71128	Yırtıcı Aslan Mührü	Kötü hayvan ruhlarını dizginleştirmek ancak sihir sanatı ile mümkün. Sonucuysa çok etkileyici. Savunma yaptığında aldığın hasarı %10 düşürür.
 71129	Ejderha Pençesi	Bu ürkütücü pençeyi görünce anılar canlanıyor...
-71130	Geçit Bileti	Bu geçit biletini bekçiye gösterdiğinde Örümcek Zindanı'nın yanı sıra Kırmızı Ejderha Kalesi'nin yeni bir katına girebilirsin. Bu eşya satılabilir.
-71131	Kara Yağız Atı Mührü	Asil bir kara yağız atı mührü.
-71132	Kara Yağız Atı Mührü	Asil bir kara yağız atı mührü.
-71133	Kara Yağız Atı Mührü	Asil bir kara yağız atı mührü.
-71134	Kara Yağız Atı Mührü	Asil bir kara yağız atı mührü. (seviye 20 itibariyle)
-71135	Hilal Yüzüğü	Üzerine ustaca hilal gravürü işlenmiş bir yüzük.
-71136	Güçlü Lolipop	İçinde gizli malzemeler olan ve dövüş için hem tecrübe hem güç veren bir lolipop.
-71137	Kral Kaplanı Mührü(mavi)	Mührün büyüsü, yanına heybetli Kral Kaplanı bineğinin (mavi) gelmesini sağlar.
-71138	KralKaplanıMührü(kırmzı)	Mührün büyüsü, yanına heybetli Kral Kaplanı bineğinin (kırmızı) gelmesini sağlar.
-71139	KralKaplanıMührü(altın)	Mührün büyüsü, yanına heybetli Kral Kaplanı bineğinin (altın) gelmesini sağlar.
-71140	KralKaplanıMührü(yeşil)	Mührün büyüsü, yanına heybetli Kral Kaplanı bineğinin (yeşil) gelmesini sağlar.
-71141	Kral Kaplanı Mührü(gri)	Mührün büyüsü, yanına heybetli Kral Kaplanı bineğinin (mavi) gelmesini sağlar.
-71142	KralKaplanıMührü(Beyaz)	Mührün büyüsü, yanına heybetli Kral Kaplanı bineğinin (beyaz) gelmesini sağlar.
+71130	Geçit Bileti	Bu geçit biletini yetkili bekçiye gösterdiğinde, zindanın seçilen bir katına daha girebilirsin. Bu eşyanın ticareti yapılabilir.
+71131	Kara Yağız Atı Mührü	Asil bir kara yağız atı mührü. Hareket hızını 60 artırır.
+71132	Kara Yağız Atı Mührü	Asil bir kara yağız atı mührü. Hareket hızını 60 artırır.
+71133	Kara Yağız Atı Mührü	Asil bir kara yağız atı mührü. Hareket hızını 60 artırır.
+71134	Kara Yağız Atı Mührü	Asil bir kara yağız atı mührü. Hareket hızını 60 artırır.
+71135	Hilal Yüzüğü	Sana şunları sağlar: | +%50 tecrübe puanı | +%20 saldırı hızı | +%20 sihir hızı | +%30 fiziksel hasar | +%10 maksimum HP | +%10 maksimum SP | +%5 tüm kostüm bonuslarına
+71136	Güçlü Lolipop	Gizli malzemelerden yapılan lolipop sana | +%50 tecrübe puanı | +%30 fiziksel hasar | +20 saldırı hızı | +20 sihir hızı | +%10 maksimum HP | +%10 maksimum SP sağlar
+71137	Kral Kaplanı Mührü(mavi)	Mührün büyüsü, heybetli Kral Kaplanı bineğini (mavi) çağırır. Tecrübe toplamayı %30 artırır.
+71138	KralKaplanıMührü(kırmzı)	Mührün büyüsü, heybetli Kral Kaplanı bineğini (kırmızı) çağırır. Tecrübe toplamayı %30 artırır.
+71139	KralKaplanıMührü(altın)	Mührün büyüsü, heybetli Kral Kaplanı bineğini (altın) çağırır. Tecrübe toplamayı %30 artırır.
+71140	KralKaplanıMührü(yeşil)	Mührün büyüsü, heybetli Kral Kaplanı bineğini (yeşil) çağırır. Tecrübe toplamayı %30 artırır.
+71141	Kral Kaplanı Mührü(gri)	Mührün büyüsü, heybetli Kral Kaplanı bineğini (gri) çağırır. Tecrübe toplamayı %30 artırır.
+71142	KralKaplanıMührü(Beyaz)	Mührün büyüsü, heybetli Kral Kaplanı bineğini (beyaz) çağırır. Tecrübe toplamayı %30 artırır.
 71143	Mutluluk Yüzüğü	Yeşim ve turkuvazla süslü bu değerli yüzük aşağıdaki bonusları verir: +%50 tecrübe puanı +%20 saldırı hızı +%20 büyü hızı +%30 canavarlara karşı güç +%10 maksimum HP +%10 maksimum SP
 71144	Noel Sandığı	Bayrama özel bir sürpriz içeren sevgiyle paket edilmiş bir noel hediyesi.
-71145	Ebedi Aşk Tılsımı	Büyülü mücevherlerle işlenmiş kalp şeklinde gümüş bir kolye ucu.
+71145	Ebedi Aşk Tılsımı	Büyülü mücevherlerle işlenmiş kalp şeklinde gümüş bir kolye ucu. Sana sağladıkları: | +%30 EXP | +10 saldırı hızı | +10 sihir hızı | +5 HP ve SP | Canavarlara karşı +%10 güç.
 71146	Amorun Sandığı (pembe)	5 sürpriz içeren kalp şeklinde bir sandık. Her 30 dakikada bir açılabilir.
 71147	Amorun Sandığı (mavi)	5 sürpriz içeren kalp şeklinde bir sandık. Her 30 dakikada bir açılabilir.
-71148	İrade Gücü Yüzüğü	Sana 7 gün boyunca +%30 EXP, +%20 savaşçılara karşı savunma şansı, +%20 ninjalara karşı savunma şansı, +%20 lycanlara karşı savunma şansı +%30 canavarlara karşı güç, +%10 maksimum HP ile +%10 maksimum SP sağlar.
-71149	Ölümcül Gücün Yüzüğü	Sana 7 gün boyunca +%30 EXP, +%20 suralara karşı savunma şansı, +%20 şamanlara karşı savunma şansı, +%20 lycanlara karşı savunma şansı, +%30 canavarlara karşı güç, +%10 maksimum HP ile +%10 maksimum SP sağlar.
+71148	İrade Gücü Yüzüğü	Sana kullanım süresi boyunca +%30 EXP, +%20 savaşçılara karşı savunma şansı, +%20 Ninjalara karşı savunma şansı, +%20 Lycanlara karşı savunma şansı, +%30 canavarlara karşı güç, +%10 maksimum HP ile +%10 maksimum SP sağlar.
+71149	Ölümcül Gücün Yüzüğü	Sana bir süre boyunca +%30 EXP, +%20 Suralara karşı savunma şansı, +%20 Şamanlara karşı savunma şansı, +%20 Lycanlara karşı savunma şansı, +%30 canavarlara karşı güç, +%10 maksimum HP ile +%10 maksimum SP sağlar.
 71150	Büyülü Yumurta	Birden fazla paskalya sürprizi içeren ve onları teker teker açığa çıkaran ustaca işlenmiş oval bir sandık.
-71151	Yeşil Efsun	Nesnelerinden birinin bonuslarını siler ve yenilerini ekler. Yalnızca 40. seviye ve altındaki silahlara ve zırhlara uygulanabilir. Satılamaz.
-71152	Yeşil Güç	Biraz şansın yardımıyla nesnelerinden birine yeni bir bonus ekler (maks. 4 bonus). Yalnızca 40. seviye ve altındaki silahlara ve zırhlara uygulanabilir. Satılamaz.
-71153	Bilgelik İksiri	Bu iksirle bir saatlik oyun süresinde %100 daha fazla deneyim toplarsın. Satılamaz.
-71154	Yükseliş İksiri (3 sa.)	Bu iksirle üç saatlik bir oyun süresi içerisinde %80 daha fazla tecrübe kazanırsın. Satılamaz.
-71155	Bilgelik İksiri (3 sa.)	Bu iksirle üç saatlik bir oyun süresinde %100 daha fazla tecrübe toplarsın. Satılamaz.
-71156	Ruh İksiri (3 sa.)	Bu iksirle üç saatlik bir oyun süresi içerisinde %150 daha fazla tecrübe kazanırsın. Satılamaz.
+71151	Yeşil Efsun	Nesnelerinden birinin bonuslarını siler ve yenilerini ekler. Yalnızca 40. seviye ve altındaki silahlara ve zırhlara uygulanabilir. Ticareti yok.
+71152	Yeşil Güç	Biraz şansın yardımıyla nesnelerinden birine yeni bir bonus ekler (maks. 4 bonus). Yalnızca 40. seviye ve altındaki silahlara ve zırhlara uygulanabilir. Ticareti yok.
+71153	Bilgelik İksiri	Bu iksirle bir saatlik oyun süresinde %100 daha fazla deneyim toplarsın. Ticareti yok.
+71154	Yükseliş İksiri (3 sa.)	Bu iksirle üç saatlik bir oyun süresi içerisinde %80 daha fazla tecrübe kazanırsın. Ticareti yok.
+71155	Bilgelik İksiri (3 sa.)	Bu iksirle üç saatlik bir oyun süresinde %100 daha fazla tecrübe toplarsın. Ticareti yok.
+71156	Ruh İksiri (3 sa.)	Tecrübe toplamayı %150 artırır.
 71157		
-71158	Kahramanlık Madalyası	+%50 EXP, +%30 hasar, +%20 saldırı hızı, +%20 büyü hızı, +%10 HP ve +%10 SP kazandırır.
+71158	Kahramanlık Madalyası	+%50 EXP, +%30 fiziksel hasar, +%20 saldırı hızı, +%20 sihir hızı, +%10 HP ve +%10 SP kazandırır.
 71159	Milonun Sandığı	Hakiki kahramanlara özel sandık. Başarının karşılığında bir rastgele eşya içerir.
 71160	Athenanın Sandığı	Hakiki bayan kahramanlara özel sandık. Başarının karşılığında bir rastgele eşya içerir.
-71161	Equus Purpur	Güzel mi güzel ve ender bulunan mor at mührü.
-71164	Kuyruklu Yıldız Mührü	Rengeyiği Kuyruklu Yıldız'ı yanına çağıran bir mühür.
-71166	Zırhlı Panda Mührü	Bu mühürle zırhlı pandanı çağırabilirsin.
-71171	Teknoynuz Mührü	Bu mühürle Tekboynuz'u çağırırsın.
-71172	Kabus Mührü	Bu mühürle Kabus'u çağırırsın.
+71161	Equus Purpur	Güzel mi güzel ve ender bulunan mor at mührü. Hareket hızını 60 artırır.
+71164	Kuyruklu Yıldız Mührü	Ren geyiği Kuyruklu Yıldız'ı yanına çağıran bir mühür. Hareket hızını 60 artırır.
+71166	Zırhlı Panda Mührü	Zırhlı Panda'yı yanına çağıran bir mühür. Hareket hızını 60 artırır.
+71171	Teknoynuz Mührü	Tekboynuz'unu yanına çağıran bir mühür. Hareket hızını 60 artırır.
+71172	Kabus Mührü	Kabus'unu yanına çağıran bir mühür. Hareket hızını 60 artırır.
 71173	Işınlanma Parşömeni	Bu parşömen seni doğrudan Kırmızı Ejderha Kalesi'nin kapısına götürür.
 71174	Geçit Bileti	Bu geçit biletini ilgili bekçiye verirsen Kırmızı Ejderha Kalesi'ne giriş yapabilirsin.
 71175	Geçit Bileti	Bu geçit biletini ilgili bekçiye verirsen Kırmızı Ejderha Kalesi'ne giriş yapabilirsin.
-71176	Siyah Panter	Bu mühür esrarengiz siyah Panter'i yanına çağırır.
-71177	Leopar Mührü	Bu mühür cesur Leopar'ı yanına çağırır.
+71176	Siyah Panter	Esrarengiz siyah Panter'ini yanına çağıran bir mühür. Hareket hızını 30 artırır.
+71177	Leopar Mührü	Cesur Leopar'ını yanına çağıran bir mühür. Hareket hızını 30 artırır.
 71178	Ay Ensiklopedisi/k	Lycanlar'a özel 25 rastgele seçili beceri kitapları içeren paket
 71179	Ay Ensiklopedisi/b	Lycanlar'a özel 25 rastgele seçili beceri kitapları içeren paket
-71180	Yükseliş İksiri (3 sa.)	Bu iksirle üç saatlik bir oyun süresi içerisinde %80 daha fazla tecrübe kazanırsın. Satılamaz.
-71181	Bilgelik İksiri (3 sa.)	Bu iksirle üç saatlik bir oyun süresinde %100 daha fazla tecrübe toplarsın. Satılamaz.
-71182	Muffin Mührü (kahve)	Bu mühürle korku salan savaş tavuğu Muffin'i yanına çağırırsın.
-71183	Nugget Mührü (kahve)	Bu mühürle korkunç savaş tavuğu Nugget'i yanına çağırırsın.
-71184	Muffin Mührü (mavi)	Bu mühürle korku salan savaş tavuğu Muffin'i yanına çağırırsın.
-71185	Nugget Mührü (mavi)	Bu mühürle korkunç savaş tavuğu Nugget'i yanına çağırırsın.
-71186	Muffin Mührü (yeşil)	Bu mühürle korku salan savaş tavuğu Muffin'i yanına çağırırsın.
-71187	Nugget Mührü (yeşil)	Bu mühürle korkunç savaş tavuğu Nugget'i yanına çağırırsın.
-71188	Sihir Lolipopu	İçindeki gizli malzemelerle sana dövüş için hem sihirli enerji hem de tecrübe veren bir lolipop.
-72001	Tecrübe Yüzüğü	Exp kazanımını bir saat boyunca %50 arttırır.
+71180	Yükseliş İksiri (3 sa.)	Bu iksirle üç saatlik bir oyun süresi içerisinde %80 daha fazla tecrübe kazanırsın. Ticareti yok.
+71181	Bilgelik İksiri (3 sa.)	Bu iksirle belirli bir süre boyunca %100 daha fazla tecrübe toplarsın. Ticareti yapılamaz.
+71182	Muffin Mührü (kahve)	Korku salan savaş tavuğu Muffin'i yanına çağıran bir mühür. Hareket hızını 20 artırır.
+71183	Nugget Mührü (kahve)	Korkunç savaş tavuğu Nugget'i yanına çağıran bir mühür. Hareket hızını 20 artırır.
+71184	Muffin Mührü (mavi)	Korku salan savaş tavuğu Muffin'i yanına çağıran bir mühür. Hareket hızını 20 artırır.
+71185	Nugget Mührü (mavi)	Korkunç savaş tavuğu Nugget'i yanına çağıran bir mühür. Hareket hızını 20 artırır.
+71186	Muffin Mührü (yeşil)	Korku salan savaş tavuğu Muffin'i yanına çağıran bir mühür. Hareket hızını 20 artırır.
+71187	Nugget Mührü (yeşil)	Korkunç savaş tavuğu Nugget'i yanına çağıran bir mühür. Hareket hızını 20 artırır.
+71188	Sihir Lolipopu	Gizli malzemelerden oluşan lolipop sana | +%50 tecrübe puanı | +%30 büyü hasarı | +20 saldırı hızı | +20 sihir hızı | +%10 Maksimum HP | +%10 Maksimum SP sağlar
+72001	Tecrübe Yüzüğü	10 saat boyunca %50 daha fazla tecrübe toplamanı sağlar.
 72002	Tecrübe Yüzüğü	15 gün için Exp kazanımını %50 arttırır.
-72003	Tecrübe Yüzüğü	30 gün için Exp kazanımını %50 arttırır.
-72004	Hırsız Eldiveni	7 gün boyunca nesne düşürme şansınızı iki katına çıkarır.
-72005	Hırsız Eldiveni	15 gün boyunca nesne düşürme şansınızı iki katına çıkarır.
-72006	Hırsız Eldiveni	30 gün boyunca nesne düşürme şansınızı iki katına çıkarır.
+72003	Tecrübe Yüzüğü	3 saat boyunca %50 daha fazla tecrübe toplamanı sağlar.
+72004	Hırsız Eldiveni	10 saat boyunca nesne düşürme şansını iki katına çıkarır.
+72005	Hırsız Eldiveni	30 dakika boyunca nesne düşürme şansını iki katına çıkarır.
+72006	Hırsız Eldiveni	3 saat boyunca nesne düşürme şansını iki katına çıkarır.
 72007	İpek Bohça	15 dakika için özel dükkan açabilirsin.
 72008	İpek Bohça	30 dakika için özel dükan açabilirsin.
 72009	İpek Bohça	3 Saat için özel dükkan açabilirsin.
 72010	Sevgi Kuşu Tüyü	Kullanıldığında 7 gün boyunca sevgi puanı iki kat hızlı artar.
 72011	Sevgi Kuşu Tüyü	Kullanıldığında, 15 gün boyunca sevgi puanı iki kat hızlı artar.
-72012	Sevgi Kuşu Tüyü	Kullanıldığında, 30 gün boyunca sevgi puanı iki kat hızlı artar.
-72013	Balıkçılık Klavuzu	Nadir balıkları yakalama oranını 7 gün boyunca iki katına çıkarır.
-72014	Balıkçılık Klavuzu	Nadir balıkları yakalama oranını 15 gün boyunca iki katına çıkarır.
-72015	Balıkçılık Klavuzu	Nadir balıkları yakalama oranını 30 gün boyunca iki katına çıkarır.
-72016	Üçüncü El	Düşen paraları 7 gün boyunca otomatik olarak toplayan el.
+72012	Sevgi Kuşu Tüyü	Kullanıldığında, bir çiftin sevgi puanı 3 saat boyunca iki kat daha hızlı artar.
+72013	Balıkçılık Klavuzu	Nadir balık yakalamak için gereklidir ve bunun için şansını 15 dakika boyunca iki katına çıkarır.
+72014	Balıkçılık Klavuzu	Nadir balık yakalamak için gereklidir ve bunun için şansını 30 dakika boyunca iki katına çıkarır.
+72015	Balıkçılık Klavuzu	Nadir balık yakalamak için gereklidir ve bunun için şansını 3 saat boyunca iki katına çıkarır.
+72016	Üçüncü El	Belli bir süre boyunca otomatik olarak Yang toplayan bir el.
 72017	Üçüncü El	Düşen paraları 30 dakika boyunca otomatik olarak toplayan el.
-72018	Üçüncü El	Düşen paraları 30 gün boyunca otomatik olarak toplayan el.
+72018	Üçüncü El	3 saat boyunca otomatik olarak Yang toplayan el.
 72019	Genişletilmiş Depo	7 gün boyunca ekstra iki depolama alanına sahip olursun.
 72020	Genişletilmiş Depo	15 gün boyunca ekstra iki depolama alanına sahip olursun.
-72021	Genişletilmiş Depo	30 gün boyunca ekstra iki depolama alanına sahip olursun.
+72021	Genişletilmiş Depo	3 saat boyunca ekstra iki depolama alanına sahip olursun.
 72022	Altın Şans Parası	Yang düşürme şansını 7 gün boyunca iki katına çıkarır.
 72023	Altın Şans Parası	Yang düşürme şansını 15 gün boyunca iki katına çıkarır.
-72024	Altın Şans Parası	Yang düşürme şansını 30 gün boyunca iki katına çıkarır.
-72025	Delici İsabet	10 dakika boyunca delici vuruşunuzu %20 arttırır.
-72026	Delici İsabet	10 dakika boyunca delici vuruşunuzu %20 arttırır.
-72027	Kritik İsabet	10 dakika boyunca kritik vuruşunuzu %20 arttırır.
+72024	Altın Şans Parası	Yang elde etme şansını 3 saat boyunca iki katına çıkarır.
+72025	Delici İsabet	Savaşta bir delici isabet yapma şansını %10 artırır.
+72026	Delici İsabet	Savaşta bir delici isabet yapma şansını %10 artırır.
+72027	Kritik İsabet	Savaşta bir delici isabet yapma şansını %10 artırır.
 72028	Duygu Maskesi	Duygularını gösterebilirsin.
 72029	Duygu Maskesi	Duygularını gösterebilirsin.
 72030	Duygu Maskesi	Duygularını gösterebilirsin.
-72031	Ejderha Tanrı Saldırı	Atak yaptığınızda verilen zararı 12% ~ 15 % arttırır.
-72032	Ejderha Tanrı Saldırı	Atak yaptığınızda verilen zararı %12 ~ %15 arttırır.
-72033	Ejderha Tanrı Saldırı	Atak yaptığınızda verilen zararı %12 ~ %15 arttırır.
+72031	Ejderha Tanrı Saldırı	Saldırı değerini 30 dakika boyunca %15 arttırır.
+72032	Ejderha Tanrı Saldırı	Saldırı değerini 30 dakika boyunca %15 arttırır.
+72033	Ejderha Tanrı Saldırı	Saldırı değerini 30 dakika boyunca %15 arttırır.
 72034	Ejderha Tanrı Savunma	Savunma yaptığınızda aldığınız zararı 12% ~ 15% düşürür.
 72035	Ejderha Tanrı Savunma	Savunma yaptığınızda aldığınız zararı 12% ~ 15% düşürür.
 72036	Ejderha Tanrı Savunma	Savunma yaptığınızda aldığınız zararı 12% ~ 15% düşürür.
@@ -2297,38 +2297,38 @@
 72043	Liderin kitabı	Ekip lideri tarafından kullanıldığında, tüm grup üyeleri ve lidere 30% EXP Yükler.
 72044	Liderin kitabı	Ekip lideri tarafından kullanıldığında, tüm grup üyeleri ve lidere 30% EXP Yükler.
 72045	Liderin kitabı	Ekip lideri tarafından kullanıldığında, tüm grup üyeleri ve lidere 30% EXP Yükler.
-72046	Kritik İsabet	Kritik vuruş şansı +10% artar.
-72047	Kritik İsabet	Kritik vuruş şansı +10% artar.
-72048	Kritik İsabet	Kritik vuruş şansı +10% artar.
+72046	Kritik İsabet	Savaşta bir kritik isabet yapma şansını %10 artırır.
+72047	Kritik İsabet	Savaşta bir kritik isabet yapma şansını %10 artırır.
+72048	Kritik İsabet	Savaşta bir kritik isabet yapma şansını %10 artırır.
 72301	Kutsama Kağıdı	Geliştirme başarısız olduğunda eşyanın yok olma riski ortadan kalkıp, sadece seviyesi 1 kademe düşer.
-72302		
-72303		
-72304		
-72305		
-72306		
-72307		
+72302		Bir grubun lideri bu kitabı üzerinde taşıdığı sürece tüm grup üyeleri üç saat boyunca %30 daha fazla tecrübe puanı toplar.
+72303		Tecrübe kazanımını bir saat boyunca %50 arttırır.
+72304		Bu efsanevi küre, dört öznitelikli bir eşyaya beşincisini ekler. Ancak ekleme başarısız olabilir.
+72305		Gizlenme Aynası.
+72306		Eşyalarını nasıl geliştireceğini gösteren Silah Ustası'na ait not. Bir nesneyi +4’ten +5’e geliştirme şansını %100 yükseltir.
+72307		Eşyalarını nasıl geliştireceğini gösteren Silah Ustası'na ait not. Bir nesneyi +5’ten +6’ya geliştirme şansını %100 yükseltir.
 72308	Büyülü Bakır	Bu bakır ve kutsama kağıdı ile demircide savaş kağıdı üretilebilir.
-72309		
-72310		
-72311		
-72312		
-72313		
-72314		
+72309		Yaşlı bir demircinin ruhuyla bağlı olan bir kitap. Kullanılırsa, yükseltme başarısı oranını arttırır.
+72310		Öğrenme başarısız olursa, seni kötü ruhun lanetinden korur. Bu kağıdın yardımıyla aynı gün bir beceri belgesi daha okuyabilirsin.
+72311		HP ve SP'ni anında %100 yenileyen bir kutsama.
+72312		Saldırı değerini %20 artırır.
+72313		Savaş esnasında aldığın hasarı %20 düşürür.
+72314		Geliştirme işlemi başarısız olduğunda bir eşyanın yok olması riskini ortadan kaldırır. Yalnızca kalitesi bir basamak düşer. Ayrıca başarılı bir geliştirme ihtimali %10 artar.
 72501	Tecrübe Yüzüğü(iCafe)	iCafe üyeliginde 20% EXP kazancı sağlar.
 72502	Hırsız Eldiveni(iCafe)	iCafe üyeliginde nesne düşme aralığı 1.5 kat artar.
 72701	Rüzgarın Ayakkabıları	Giydiğinizde hareket hızınızı 30 artırır.(25 oyun saati içindir)
-72703	Kaplan Kemiği Küpesi	Saldırı değerini 2 saatliğine 200 puan artırır (süresi ancak eşya kuşanıldığında başlar). Eşya satılamaz.
-72704	Ejder Kemiği Küpesi	Savunma değerini 2 saatliğine 200 puan artırır (süresi ancak eşya kuşanıldığında başlar). Eşya satılamaz.
-72705	Kaplan Kemiği Bilelik	Yeteneklerinin verdiği hasarı 2 saatliğine %15 artırır (süresi ancak eşya kuşanıldığında başlar). Eşya satılamaz.
-72706	Ejder Kemiği Bilezik	Yeteneklere karşı savunmayı 2 saatliğine %15 artırır (süresi ancak eşya kuşanıldığında başlar). Eşya satılamaz.
+72703	Kaplan Kemiği Küpesi	Saldırı değerini 2 saatliğine 200 puan artırır (süresi ancak eşya kuşanıldığında başlar). Eşyanın ticareti yok.
+72704	Ejder Kemiği Küpesi	Savunma değerini 2 saatliğine 200 puan artırır (süresi ancak eşya kuşanıldığında başlar). Eşyanın ticareti yok.
+72705	Kaplan Kemiği Bilelik	Becerilerin verdiği hasarı 2 saatliğine 15 puan artırır (süresi ancak eşya kuşanıldığında başlar). Eşyanın ticareti yapılamaz.
+72706	Ejder Kemiği Bilezik	Becerilere karşı savunmayı 2 saatliğine 15 puan artırır (süresi ancak eşya kuşanıldığında başlar). Eşyanın ticareti yapılamaz.
 72723	Güneş Özütü (K)	HP'ni otomatik olarak yeniler. 1.000.000 HP içerir.
 72724	Güneş Özütü (O)	HP'ni otomatik olarak yeniler. 3.000.000 HP içerir.
 72725	Güneş Özütü (B)	HP'ni otomatik olarak yeniler. 7.000.000 HP içerir.
-72726	Güneş Özütü (Ö)	HP'yi otomatik olarak doldurur. 10.000.000 HP içerir. Bu eşya satılabilir.
+72726	Güneş Özütü (Ö)	10.000.000 HP içerir. HP'ni otomatik olarak doldurur ve ek olarak maks HP'n üzerinde olumlu etkisi olur. Bu eşyanın ticareti yapılabilir.
 72727	Ay Özütü (K)	SP'ni otomatik olarak yeniler. 100.000 SP içerir.
 72728	Ay Özütü (O)	SP'ni otomatik olarak yeniler. 300.000 SP içerir.
 72729	Ay Özütü (B)	SP'ni otomatik olarak yeniler. 700.000 SP içerir.
-72730	Ay Özütü (Ö)	SP'ni otomatik olarak doldurur. 1.000.000 SP içerir. Bu eşya satılabilir.
+72730	Ay Özütü (Ö)	1.000.000 SP içerir. SP'ni otomatik olarak doldurur ve ek olarak maks SP'n üzerinde olumlu etkisi olur. Bu eşyanın ticareti yapılabilir.
 73001	Havalı Kısa Saç (kızıl)	Saç stili size çarpıcı bir görüntü kazandırır.
 73002	Havalı Kısa Saç (açık)	Saç stili size çarpıcı bir görüntü kazandırır.
 73003	Havalı Kısa Saç (mavi)	Saç stili size çarpıcı bir görüntü kazandırır.
@@ -2442,7 +2442,7 @@
 74523	Uzun saç (sarı)	Gösterişli ve sarı saçlı, göz alıcı bir saç stili.
 74524	Moda saç stili (altın)	Modaya uygun bandanalı altın saç.
 74525	Bandana (siyah)	Bandana ile toplanmış dağınık saç stili.
-74526	Uzun saç (yakut kırmızı)	Gösterişli yakut kırmızısı saç
+74526	Uzun saç (yakut kırmızı)	Gösterişli yakut kırmızısı saç.
 74527	At Kuyruğu (kırmızı)	At kuyruğu şeklinde toplanmış uzun saçlar.
 74528	Omuzda Saç/su	Mavi bandanalı kibar saç stili
 74529	Kısa Saç Modeli (kahve)	Korku veren rahat bir kısa saç stili.
@@ -2560,10 +2560,10 @@
 75602	Gös. Saç Stili  (siyah)	Şamana asil bir görünüm kazandıran modern kesim.
 75603	Gös. Saç Stili  (mavi)	Şamana asil bir görünüm kazandıran modern kesim.
 75604	Gös. Saç Stili  (gri)	Şamana asil bir görünüm kazandıran modern kesim.
-75605	Orta Uz. Saç (kahve)	Düz kahverengi saç
-75606	Orta Uz. Saç(siyah)	Düz siyah saç
-75607	Orta Uz. Saç (açık)	Düz sarı saç
-75608	Orta Uz. Saç(mor)	Düz mor saç
+75605	Orta Uz. Saç (kahve)	Düz kahverengi saç.
+75606	Orta Uz. Saç(siyah)	Düz siyah saç.
+75607	Orta Uz. Saç (açık)	Düz sarı saç.
+75608	Orta Uz. Saç(mor)	Düz mor saç.
 75609	Eski saç stili (kahve)	Eski savaşçı saç stili. Kahverengi saçlar örgü şeklinde toplanmıştır.
 75610	Eski saç stili (açık)	Eski savaşçı saç stili. Açık renk saçlar örgü şeklinde toplanmıştır.
 75611	Eski saç stili (mor)	Eski savaşçı saç stili. Mor saçlar örgü şeklinde toplanmıştır.
@@ -2576,31 +2576,31 @@
 75618	Şaman Puşisi (e)	Erkek şamanları çöl fırtınalarından koruyan bir başlık. (süresi 7 gün).
 75619	Şaman Kavuğu (e)	Erkek şamanlar için kıymetli kumaştan yapılma bir başlık. (süresi 7 gün)
 75620	Jack Pumpkin Şaman (e)	Şaman için balkabağı şeklinde bir maske. Öznitelik ve süre rastgele belirlenir. Mevcut olan saç stillerinin yerini alır.
-76000	Şeftali Çiçeği Şarabı	HP'ni anında 500 puan yenileyen bir içecek. Satılamaz.
-76001	Statü Sıfırlama Kağıdı	Bu nesneyi kullanman, statü puanlarını yeniden dağıtma olanağı sağlar. Böylece karakterini başka bir yönde geliştirebilirsin. Satılamaz.
-76002	Küçülen Kafa	Küçülen Şeytan Kafası Şeytan Katakombu'nun 3. katının mührünü açar. Satılamaz.
-76003	Soğutma İksiri	Bu iksir 30 dakika boyunca soğuma süresini yüzde 20 azaltır. Satılamaz.
-76004	Ay Özütü (K)	SP'ni otomatik olarak doldurur. 10.000 SP içerir. Satılamaz.
-76005	Ay Özütü (O)	SP'ni otomatik olarak doldurur. 300.000 SP içerir. Satılamaz.
-76006	Metin Taşı Dedektörü	Pusula bir sonraki Metin taşının yönünü ve uzaklığını gösterir. Ne kadar parlaksa, o kadar yakınsın demektir. 6 kez kullanılabilir. Satılamaz.
-76007	Cesaret Pelerini	Tüm yaratıkların kendine çeken renkli bir pelerin. Savaşçılar bununla bir zamanlar cesaretlerini kanıtlardı. Satılamaz.
-76008	Ejderha Madalyası	Bir sonraki canlandırmada seni tecrübe puanı kaybetmekten korur. Satılamaz.
-76009	Ejderha Parşömeni	Geliştirme işlemi başarısız olduğunda bir eşyanın yok olması riskini ortadan kaldırır. Yalnızca kalitesi bir basamak düşer. Ayrıca başarılı bir geliştirme ihtimali %10 artar. Satılamaz.
-76010	Kan Taşı	Bahar-Taraji'nin kanından yapılan bu taş, Sürgün Mağarası'na girmeni sağlar. Satılamaz.
-76011	Liderin Kitabı	Bir grubun lideri bu kitabı üzerinde taşıdığı sürece tüm grup üyeleri %30 daha fazla tecrübe puanı toplar. Satılamaz.
-76012	Hız İksiri	30 dakika boyunca hareket hızını 60 puan artırır. Satılamaz.
-76013	Arttırma Kağıdı (m)	Biraz şansın yardımıyla nesnelerinden birine yeni bir bonus ekler (maks 4 bonus). Seviye sandığından bir eşyadır, satılamaz.
-76014	Nesneyi efsunla(m)	Bir nesnenin bonuslarını siler ve yenilerini ekler. Seviye sandığından bir eşyadır, satılamaz.
-76015	Kutsama Küresi	Efsanevi, kutsanmış bir küredir. Daha önce dört nitelikle donanmış olan nesnelere bir nitelik daha eklebilir. Satılamaz.
-76016	Kutsama Parşömeni	Geliştirme başarısız olduğunda eşyanın yok olma riskini ortadan kaldırır. Bu durumda sadece kalitesi 1 puan düşer. Satılamaz.
-76017	Saldırı İksiri +10	Saldırı hızını 30 dakika boyunca %10 artırır. Satılamaz.
-76018	Saldırı İksiri +15	Saldırı hızını 30 dakika boyunca %15 artırır. Satılamaz.
-76019	Geçiş Bileti	Bu geçiş biletini yetkili bekçiye gösterdiğinde, Örümcek Zindanı'nın yanı sıra Kırmızı Ejderha Kalesi'nin bir katına daha girebilirsin. Satılamaz.
-76020	Araştırmacının Özütü	Toplanan araştırma nesnelerinin kalitesini ve dolayısıyla da kabul edilme ihtimalini artırır. Satılamaz.
-76021	Güneş Özütü (K)	HP'ni otomatik olarak yeniler. 100.000 HP içerir. Satılamaz.
-76022	Güneş Özütü (O)	HP'ni otomatik olarak doldurur. 3.000.000 HP içerir. Satılamaz.
-76023	Yeşil Efsun	Nesnelerinden birinin bonuslarını siler ve yenilerini ekler. Yalnızca 40. seviye ve altındaki silahlara ve zırhlara uygulanabilir. Seviye sandığından bir eşyadır, satılamaz.
-76024	Yeşil Güç	Biraz şansın yardımıyla nesnelerinden birine yeni bir bonus ekler (maks. 4 bonus). Yalnızca 40. seviye ve altındaki silahlara ve zırhlara uygulanabilir. Seviye sandığından bir eşyadır, satılamaz.
+76000	Şeftali Çiçeği Şarabı	HP'ni anında 500 puan yenileyen bir içecek. Ticareti yok.
+76001	Statü Sıfırlama Kağıdı	Bu nesneyi kullanman, statü puanlarını yeniden dağıtma olanağı sağlar. Böylece karakterini başka bir yönde geliştirebilirsin. Ticareti yok.
+76002	Küçülen Kafa	Küçülen Şeytan Kafası Şeytan Katakombu'nun 3. katının mührünü açar. Ticareti yok.
+76003	Soğutma İksiri	Becerilerinin soğuma süresi bu iksirle %20 düşer.
+76004	Ay Özütü (K)	SP'ni otomatik olarak doldurur. 10.000 SP içerir. Ticareti yok.
+76005	Ay Özütü (O)	SP'ni otomatik olarak doldurur. 300.000 SP içerir. Ticareti yok.
+76006	Metin Taşı Dedektörü	Pusula bir sonraki Metin taşının yönünü ve uzaklığını gösterir. Ne kadar parlaksa, o kadar yakınsın demektir. 6 kez kullanılabilir. Ticareti yok.
+76007	Cesaret Pelerini	Tüm yaratıkların kendine çeken renkli bir pelerin. Savaşçılar bununla bir zamanlar cesaretlerini kanıtlardı. Ticareti yok.
+76008	Ejderha Madalyası	Bir sonraki canlandırmada seni tecrübe puanı kaybetmekten korur. Ticareti yok.
+76009	Ejderha Parşömeni	Geliştirme işlemi başarısız olduğunda bir eşyanın yok olması riskini ortadan kaldırır. Yalnızca kalitesi bir basamak düşer. Ayrıca başarılı bir geliştirme ihtimali %10 artar. Ticareti yok.
+76010	Kan Taşı	Bahar-Taraji'nin kanından yapılan bu taş, Sürgün Mağarası'na girmeni sağlar. Ticareti yok.
+76011	Liderin Kitabı	Bir grubun lideri bu kitabı üzerinde taşıdığı sürece tüm grup üyeleri %30 daha fazla tecrübe puanı toplar. Ticareti yok.
+76012	Hız İksiri	30 dakika boyunca hareket hızını 60 puan artırır. Ticareti yok.
+76013	Arttırma Kağıdı (m)	Biraz şansın yardımıyla nesnelerinden birine yeni bir bonus ekler (maks 4 bonus). Seviye sandığından bir eşyadır, ticareti yok.
+76014	Nesneyi efsunla(m)	Bir nesnenin bonuslarını siler ve yenilerini ekler. Seviye sandığından bir eşyadır, ticareti yok.
+76015	Kutsama Küresi	Efsanevi, kutsanmış bir küredir. Daha önce dört nitelikle donanmış olan nesnelere bir nitelik daha eklebilir. Ticareti yok.
+76016	Kutsama Parşömeni	Geliştirme başarısız olduğunda eşyanın yok olma riskini ortadan kaldırır. Bu durumda sadece kalitesi 1 puan düşer. Ticareti yok.
+76017	Saldırı İksiri +10	Saldırı hızını %15 artırır.
+76018	Saldırı İksiri +15	Saldırı hızını %20 artırır.
+76019	Geçiş Bileti	Bu geçit biletini yetkili bekçiye gösterdiğinde, zindanın seçilen bir katına daha girebilirsin. Ticareti yapılamaz.
+76020	Araştırmacının Özütü	Topladığınız araştırma nesnelerinin kalitesini arttırır, böylece kabul edilmeleri kolaylaşır. Yohara'daki görevler için geçerli değildir. Ticareti yapılamaz.
+76021	Güneş Özütü (K)	HP'ni otomatik olarak yeniler. 100.000 HP içerir. Ticareti yok.
+76022	Güneş Özütü (O)	HP'ni otomatik olarak doldurur. 3.000.000 HP içerir. Ticareti yok.
+76023	Yeşil Efsun	Nesnelerinden birinin bonuslarını siler ve yenilerini ekler. Yalnızca 40. seviye ve altındaki silahlara ve zırhlara uygulanabilir. Seviye sandığından bir eşyadır, ticareti yok.
+76024	Yeşil Güç	Biraz şansın yardımıyla nesnelerinden birine yeni bir bonus ekler (maks. 4 bonus). Yalnızca 40. seviye ve altındaki silahlara ve zırhlara uygulanabilir. Seviye sandığından bir eşyadır, ticareti yok.
 76025	Rüzgarın Ayakkabıları	Giydiğin sürece hareket hızını 30 artırır.
 79501	Ok Çantası	Seni 24 saat boyunca sonsuz sayıda okla destekleyen bir çanta. Hasar uzun menzilli atışlarda düşmez.
 79502	Ok Çantası	Seni 7 gün boyunca sonsuz sayıda okla destekleyen bir çanta. Hasar uzun menzilli atışlarda düşmez.
@@ -2609,10 +2609,10 @@
 80001	Para Kesesi	Deriden yapılmış koyu renkli eski kese.
 80002	Boş Kağıt	İyi kalitede, kullanılmamış kağıt.
 80008	Altın Parçası	İşlenmemiş altın. Mağazada yüksek fiyata satılabilir.
-80014	EP kuponu (100)	100 Ejderha Parası değerinde kupon. Eşya satılabilir.
-80015	EP kuponu (500)	500 Ejderha Parası değerinde kupon. Eşya satılabilir.
-80016	EP kuponu (1000)	1000 Ejderha Parası değerinde kupon. Eşya satılabilir.
-80017	EP kuponu (50)	50 Ejderha Parası değerinde kupon. Eşya satılabilir.
+80014	EP kuponu (100)	100 Ejderha Parası değerinde kupon. Bu eşyanın ticareti var.
+80015	EP kuponu (500)	500 Ejderha Parası değerinde kupon. Bu eşyanın ticareti var.
+80016	EP kuponu (1000)	1000 Ejderha Parası değerinde kupon. Bu eşyanın ticareti var.
+80017	EP kuponu (50)	50 Ejderha Parası değerinde kupon. Bu eşyanın ticareti var.
 80019	İnce Kumaş	Bu malzemeyle omuz kuşağın üretilir.
 90000	Dönüşüm Belgesi	Omuz kuşağındaki bonusları silmek için dönüşüm belgesini kullan.
 90001	Boş Su Şişesi	Su taşımak icin kullanılan boş kap.

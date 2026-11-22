@@ -1,30 +1,30 @@
-ACCEPT	Αποδοχή
+ACCEPT	ΟΚ
 ATTACH_METIN_INFO	Θέλεις να χρησιμοποιήσεις έναν Λίθο Πνεύματος;
 ATTACH_METIN_TITLE	Χρήση Λίθου Πνεύματος
 CANCEL	Ακύρωση
-CHANGE_PASSWORD_CONFIRM	Επιβεβαίωση νέου Συνθηματικού
-CHANGE_PASSWORD_NEW	Νέο Συνθηματικό
-CHANGE_PASSWORD_OLD	Παλιό Συνθηματικό
-CHANGE_PASSWORD_TITLE	Αλλαγή Συνθηματικού
-CHARACTER_ACTION	Συναίσθημα
+CHANGE_PASSWORD_CONFIRM	Επανάληψη κωδικού
+CHANGE_PASSWORD_NEW	Νέο συνθηματικό
+CHANGE_PASSWORD_OLD	Παλιό συνθηματικό
+CHANGE_PASSWORD_TITLE	Αλλαγή συνθηματικού
+CHARACTER_ACTION	Ενέργειες
 CHARACTER_MAIN	Χαρακτήρας
-CHARACTER_MUTUAL_ACTION	Αμοιβαίο Συναίσθημα
-CHARACTER_NORMAL_ACTION	Κανονικό Συναίσθημα
+CHARACTER_MUTUAL_ACTION	Αλληλεπιδράσεις
+CHARACTER_NORMAL_ACTION	Κανονικές ενέργειες
 CHARACTER_QUEST	Αποστολές
-CHARACTER_SKILL	Ικανότητα
-CLOSE	Κλείσε
+CHARACTER_SKILL	Ικανότητες
+CLOSE	Κλείσιμο
 COSTUME_TITLE	Φορεσιές
 COSTUME_WINDOW_TITLE	Φορεσιές
 CREATE_ATT_GRADE	STR
 CREATE_CREATE	Δημιούργησε
 CREATE_DEX_GRADE	DEX
-CREATE_HP	HP
+CREATE_HP	VIT
 CREATE_MAN	Άντρας
 CREATE_NAME	Όνομα
 CREATE_NEXT	Επόμενο
 CREATE_PREV	Πίσω
 CREATE_SEX	Φύλο
-CREATE_SHAPE	Σχήμα
+CREATE_SHAPE	Εμφάνιση
 CREATE_SP	INT
 CREATE_WOMAN	Γυναίκα
 CUBE_INFO_TITLE	Εγχειρίδιο εξευγενισμού
@@ -50,20 +50,20 @@ DRAGONSOUL_TITLE	Αλχημεία Δρακόλιθων
 EMPIRE_EXIT	Έξοδος
 EMPIRE_NEXT	Επόμενο
 EMPIRE_PREV	Πίσω
-EMPIRE_SELECT	Επέλεξε
-EXCHANGE_ACCEPT	Αποδοχή
+EMPIRE_SELECT	Επιλογή
+EXCHANGE_ACCEPT	ΟΚ
 EXCHANGE_TITLE	Εμπόριο
 GAMEOPTION_TITLE	Επιλογές Παιχνιδιού
 GAME_EXIT_OBSERVER	Τέλος Observer Mode
 GAME_HELP	Βοήθεια
-GAME_QUEST	Καθήκοντα
-GAME_SKILL_UP	Ανέβασε Ικανότητες
-GAME_STAT_UP	Ανέβασε Κατάσταση
+GAME_QUEST	Αποστολές
+GAME_SKILL_UP	Αύξηση ικανοτήτων
+GAME_STAT_UP	Αύξηση Κατάστασης
 GRADE	Βαθμίδα
 GRADE_SELECT	Βαθμίδα
 GUILD_BASENAME	Βασικό Όνομα
 GUILD_BOARD_ID	Όνομα
-GUILD_BOARD_REFRESH	Ανανέωση (F5)
+GUILD_BOARD_REFRESH	Ανανέωση
 GUILD_BOARD_TEXT	Μήνυμα
 GUILD_BUILDING_CATEGORY_TITLE	Κατηγορίες Κτιρίων
 GUILD_BUILDING_CHANGE	Αλλαγή
@@ -78,21 +78,21 @@ GUILD_BUILDING_PLY	Καπλαμάς
 GUILD_BUILDING_POSITION	Θέση
 GUILD_BUILDING_PREVIEW	Προεπισκόπηση
 GUILD_BUILDING_PRICE	Τιμή
-GUILD_BUILDING_REFRESH	Ανανέωση (F5)
+GUILD_BUILDING_REFRESH	Ανανέωση
 GUILD_BUILDING_STONE	Λίθος
 GUILD_BUILDING_TITLE	Κτίριο Συντεχνίας
 GUILD_CRYSTAL	Κρύσταλλος
-GUILD_DROP_RESOURCE1	Εδώ
-GUILD_DROP_RESOURCE2	Ρίξε Πόρους
+GUILD_DROP_RESOURCE1	εδώ
+GUILD_DROP_RESOURCE2	Πέταγμα πρώτης ύλης
 GUILD_GEM	Πετράδι
 GUILD_GRADE_CHANGE_GRADE_NAME	Νέο όνομα Βαθμού
 GUILD_GRADE_NUM	Βαθμός
-GUILD_GRADE_PERMISSION_DELETE	Διώξιμο
-GUILD_GRADE_PERMISSION_JOIN	Πρόσκληση
-GUILD_GRADE_PERMISSION_NOTICE	Μήνυμα
-GUILD_GRADE_PERMISSION_SKILL	Ικανότητες
+GUILD_GRADE_PERMISSION_DELETE	Αφαίρεση από τη συντεχνία
+GUILD_GRADE_PERMISSION_JOIN	Μπορεί να δέχεται νέα μέλη στη συντεχνία.
+GUILD_GRADE_PERMISSION_NOTICE	Μπορεί να αφήνει σημειώσεις συντεχνίας.
+GUILD_GRADE_PERMISSION_SKILL	Ικανότητες συντεχνίας
 GUILD_GRADE_RANK	Βαθμός
-GUILD_GRADE_WRITE	Γράψε
+GUILD_GRADE_WRITE	Γράψιμο
 GUILD_INFO	Πληροφορίες Συντεχνίας
 GUILD_INFO_CUR_EXP	Εμπειρία
 GUILD_INFO_DECALRE_WAR	Κήρυξη Πολέμου
@@ -106,12 +106,12 @@ GUILD_INFO_MEMBER_NUM	Αριθμός μελών
 GUILD_INFO_NAME	Όνομα Συντεχνίας
 GUILD_INFO_NAME_VALUE	Αυτό είναι Όνομα Συντεχνίας
 GUILD_INFO_OFFER_EXP	Επένδυσε
-GUILD_INFO_REST_EXP	Απαιτούμενη Exp.
+GUILD_INFO_REST_EXP	Απαιτούμενη Εμπ.
 GUILD_INFO_UPLOAD_MARK	Upload Σήμα
 GUILD_INFO_UPLOAD_SYMBOL	Upload Σημαία
 GUILD_MARK	Σήμα Συντεχνίας
 GUILD_MEMBER_JOB	Κλάση
-GUILD_MEMBER_KNIGHT	Ηγέτης
+GUILD_MEMBER_KNIGHT	Πολεμιστής
 GUILD_MEMBER_LEVEL	Επίπεδο
 GUILD_MEMBER_NAME	Όνομα
 GUILD_MEMBER_RANK	Βαθμός
@@ -122,12 +122,12 @@ GUILD_MONEY	Yang
 GUILD_NAME	Συντεχνία
 GUILD_RESOURCE_INFO	Πληροφορίες Πόρων
 GUILD_SKILL_ACTIVE	Ενεργητικό
-GUILD_SKIlL_HEAL_GSP	Πάρε Πίσω τη Δύναμη
+GUILD_SKIlL_HEAL_GSP	Αναπλήρωση
 GUILD_SKILL_PASSIVE	Παθητικό
 GUILD_SKILL_POWER	Ενέργεια
-GUILD_SKILL_STATE	Ικανότητες της Συντεχνίας
+GUILD_SKILL_STATE	Ικανότητα Συντεχνίας
 GUILD_SYMBOL	Σημαία Συντεχνίας
-GUILD_WAR_ACCEPT	Αποδοχή Κήρυξης Πολέμου
+GUILD_WAR_ACCEPT	Αποδοχή κήρυξης Πολέμου Συντεχνιών
 GUILD_WAR_BATTLE_TYPE	Τύπος Μάχης
 GUILD_WAR_CTF	Σημαία
 GUILD_WAR_DECLARE	Κήρυξε Πόλεμο Συντεχνιών
@@ -140,16 +140,16 @@ HELP_ATTACK_KEY	Επίθεση: αριστερό κουμπί ποντικιού
 HELP_CHANGE_PK_MODE	Αλλαγή τρόπου επίθεσης: αλλαγή ρύθμισης αριστερού ποντικιού
 HELP_CHARACTER_BUTTON1	(Παράθυρο Χαρακτ., Παράθυρο Καταλ.,
 HELP_CHARACTER_BUTTON2	Λίστα φίλων και Ρυθμίσεις)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Θέση κάμερας: μεσαίο ή δεξί κουμπί ποντικιού
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Ρυθμίσεις κάμερας: μεσαίο ή δεξί κουμπί ποντικιού
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Θέση κάμερας: μεσαίο κουμπί ποντικιού
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Αλλαγή θέσης κάμερας: δεξί ή αριστερό κουμπί ποντικιού
 HELP_EXP	Εμπειρία
 HELP_FURY	Ingame Item Shop
 HELP_GUILD_WINDOW	Άνοιγμα παραθύρου: Alt + G
 HELP_HELP	Προβολή βοήθειας: Η
 HELP_HP	HP
 HELP_MESSENGER_WINDOW	Άνοιγμα λίστας φίλων: Alt + M
-HELP_MOUSE_LEFT	Λειτουργία του αριστερού κουμπιού στο ποντίκι.
-HELP_MOUSE_RIGHT	Λειτουργία του δεξιού κουμπιού στο ποντίκι
+HELP_MOUSE_LEFT	Λειτουργία αριστερού κουμπιού στο ποντίκι
+HELP_MOUSE_RIGHT	Λειτουργία δεξιού κουμπιού στο ποντίκι
 HELP_MOVE_KEY	Κίνηση: W, A, S, D ή βέλη
 HELP_OPEN_CHARACTER	Άνοιγμα παραθύρου χαρακτήρα: C
 HELP_OPEN_CHAT	Άνοιγμα παραθύρου chat: Enter
@@ -160,7 +160,7 @@ HELP_OPEN_QUEST	Άνοιγμα παραθύρου αποστολών: Ν
 HELP_OPEN_SKILL	Άνοιγμα παραθύρου ικανοτήτων: V
 HELP_OPEN_WHISPER	Άνοιγμα παραθύρου Ψιθύρων: Shift + Enter
 HELP_OPEN_ZONEMAP	Άνοιγμα μεγάλου χάρτη: M
-HELP_PICK_ITEM	Συλλογή αντικειμένων: ^ ή Y ή αριστερό κλικ
+HELP_PICK_ITEM	Συλλογή αντικειμένων: Z, ~ ή αριστερό κλικ
 HELP_QUICKSLOT	Πεδία Γρήγορης Πρόσβασης
 HELP_SCREEN_CAPTURE	Αποθήκευση στιγμιότυπου: PrtSc (τόπος αποθήκευσης: Φάκελος «Metin2\screenshot»)
 HELP_SHOW_ALL_NAME	Εμφάνιση ονομάτων: Alt
@@ -169,21 +169,21 @@ HELP_SYSTEM_BUTTON	Κουμπιά Συστήματος
 INVENTORY_PAGE_BUTTON_TOOLTIP	{}. Κατάλογος
 INVENTORY_TITLE	Κατάλογος
 ITEM_MALL	Item Shop
-LOAD_ERROR	Το Αρχείο είναι καταστρεμμένο. Παρακαλούμε εγκατάστησε εκ νέου. Πάτα ESC.
+LOAD_ERROR	Το αρχείο είναι κατεστραμμένο. Παρακαλούμε εγκατάστησε εκ νέου. Πάτα ESC.
 LOGIN_CONNECT	Σύνδεση
-LOGIN_CONNECTING	Θα συνδεθείτε στο Server
-LOGIN_DEFAULT_SERVERADDR	Servername, Κανάλι 1
+LOGIN_CONNECTING	Συνδέεσαι με τον σέρβερ.
+LOGIN_DEFAULT_SERVERADDR	Όνομα σέρβερ, Κανάλι 1
 LOGIN_EXIT	Έξοδος
 LOGIN_SELECT_BUTTON	Επιλογή
 LOGIN_SELECT_EXIT	Έξοδος
-LOGIN_SELECT_TITLE	Επιλογή Server
+LOGIN_SELECT_TITLE	Επιλογή σέρβερ
 MALL_PASSWORD_TITLE	Συνθηματικό
 MALL_TITLE	Αποθήκη Item Shop
 MARKLIST_REFRESH	Ανανέωση
-MARKLIST_TITLE	Κατχώρηση Σήματος Συντεχνίας
-MESSAGE	Αυτό το μήνυμα είναι
+MARKLIST_TITLE	Καταχώριση Σήματος Συντεχνίας
+MESSAGE	Αυτό είναι ένα μήνυμα
 MESSENGER_ADD_FRIEND	Προσθήκη φίλου
-MESSENGER_DELETE_FRIEND	Διαγραφή φίλου
+MESSENGER_DELETE_FRIEND	Διαγραφή
 MESSENGER_OPEN_GUILD	Άνοιγμα παραθύρου συντεχνίας
 MESSENGER_TITLE	Φίλοι
 MESSENGER_WHISPER	Ψίθυρος
@@ -209,7 +209,7 @@ OPTION_CAMERA_DISTANCE_SHORT	Κοντά
 OPTION_EFFECT	Χτυπήματα.
 OPTION_FOG	Ομίχλη
 OPTION_FOG_DENSE	Έντονη
-OPTION_FOG_LIGHT	Απαλή
+OPTION_FOG_LIGHT	Ελαφριά
 OPTION_FOG_MIDDLE	Μεσαία
 OPTION_LANGUAGE	Γλώσσα
 OPTION_LANGUAGE_FLAG	Σημαία
@@ -225,11 +225,11 @@ OPTION_PVPMODE	Εφαρμογή PvP
 OPTION_PVPMODE_FREE	Ελεύθερο
 OPTION_PVPMODE_FREE_TOOLTIP	Μπορείς να επιτεθείς σε όλους τους παίκτες.
 OPTION_PVPMODE_GUILD	Συντεχνία
-OPTION_PVPMODE_GUILD_TOOLTIP	Μπορείς να επιτεθείς σε όλους του παίκτες εκτός από τα μέλη της Συντεχνίας σου.
+OPTION_PVPMODE_GUILD_TOOLTIP	Μπορείς να επιτεθείς σε όλους του παίκτες, εκτός από τα μέλη της Συντεχνίας σου.
 OPTION_PVPMODE_PEACE	Ειρήνη
 OPTION_PVPMODE_PEACE_TOOLTIP	Δεν μπορείς να επιτεθείς σε παίκτες του Βασιλείου σου.
-OPTION_PVPMODE_REVENGE	Εχθρικός
-OPTION_PVPMODE_REVENGE_TOOLTIP	Μπορείς να επιτεθείς μόνο αυτούς που έχουν Ethos.
+OPTION_PVPMODE_REVENGE	Εχθρικό
+OPTION_PVPMODE_REVENGE_TOOLTIP	Μπορείς να επιτεθείς μόνο σε παίκτες αντίθετου ήθους.
 OPTION_SALESTEXT	Όνομα καταστήματος
 OPTION_SALESTEXT_VIEW_OFF	Κρύψε
 OPTION_SALESTEXT_VIEW_ON	Εμφάνιση
@@ -242,22 +242,22 @@ OPTION_TILING_APPLY	Εφάρμοσε
 OPTION_TILING_CPU	CPU
 OPTION_TILING_GPU	GPU
 OPTION_VIEW_CHAT	Βλέπε Chat
-OPTION_VIEW_CHAT_OFF	Κρύψε
+OPTION_VIEW_CHAT_OFF	Κρύψιμο
 OPTION_VIEW_CHAT_ON	Εμφάνιση
-PARTY_MEMBER_INFO_NAME	Όνομα του μέλους της Ομάδας
+PARTY_MEMBER_INFO_NAME	Όνομα μέλους της Ομάδας
 PASSWORD_DESC_1	Πληκτρολογήστε τον κωδικό σας,
 PASSWORD_DESC_2	για να ανοίξετε την αποθήκη.
 PASSWORD_DESC_3	Άλλαξες τον κωδικό σου;
 PASSWORD_DESC_4	Αν όχι, ο κωδικός σου είναι «000000».
 PASSWORD_DESC_5	Άλλαξε τον κωδικό σου στην αποθήκη.
-PASSWORD_TITLE	Σώσιμο Συνθηματικού
-PICK_MONEY_TITLE	Διαίρεση
+PASSWORD_TITLE	Συνθηματικό μνήμης
+PICK_MONEY_TITLE	Μοιρασιά
 PRIVATE_SHOP_CLOSE_BUTTON	Κλείσιμο καταστήματος
 PRIVATE_SHOP_NAME	Όνομα Καταστήματος
 PRIVATE_SHOP_TITLE	Άνοιξε Ιδιωτικό Κατάστημα
-REFINE_COST	Κόστος Αναβάθμισης: 0 Yang
-REFINE_INFO	Πιθανότητα επιτυχούς αναβάθμισης: 100%
-REFINE_TTILE	Αναβαθμίσεις
+REFINE_COST	Κόστος βελτίωσης: 0 Yang
+REFINE_INFO	Πιθανότητα επιτυχούς βελτίωσης: 100%
+REFINE_TTILE	Βελτιώσεις
 RESTART_HERE	Επανεκκίνηση εδώ
 RESTART_TOWN	Επανεκκίνηση στην Πόλη
 SAFE_CHANGE_PASSWORD	Αλλαγή Συνθηματικού
@@ -268,7 +268,7 @@ SELECT_DELETE	Διαγραφή
 SELECT_DEX_GRADE	DEX
 SELECT_EMPIRE_NAME	Όνομα Βασιλείου
 SELECT_EXIT	Κλείσιμο
-SELECT_HP	HP
+SELECT_HP	VIT
 SELECT_LEVEL	Επίπεδο
 SELECT_METIN_STONE_TITLE	Επιλογή Λίθου Πνεύματος
 SELECT_NAME	Όνομα
@@ -286,7 +286,7 @@ STRENGTH	Ενίσχυση
 STRENGTH_SELECT	Επίπεδο
 SYSTEMOPTION_TITLE	Επιλογές Συστήματος
 SYSTEM_CHANGE	Αλλαγή Χαρακτήρα
-SYSTEM_EXIT	Έξοδος από το Παιχνίδι
+SYSTEM_EXIT	Έξοδος από Παιχνίδι
 SYSTEM_HELP	Βοήθεια
 SYSTEM_LOGOUT	Αποσύνδεση
 SYSTEM_MALL	Item Shop

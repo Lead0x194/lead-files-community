@@ -11,7 +11,7 @@ CANNOT_SHOOT_SELF_IN_SAFE	Bunu yapamam.
 CANNOT_SKILL_APPROACH	Eminim daha fazla yaklaşamam.
 CANNOT_SKILL_ATTACK	Saldıramam.
 CANNOT_SKILL_DEST_IN_SAFE	Düşman çok uzakta.
-CANNOT_SKILL_EQUIP_FISHING_ROD	Bir oltaya ihtiyacım var.
+CANNOT_SKILL_EQUIP_FISHING_ROD	Bir olta kuşanmadan balık tutamazsın.
 CANNOT_SKILL_HAVE_TO_RIDE	Bunu kullanmadan önce bir ata ihtiyacım var.
 CANNOT_SKILL_NEED_EMPTY_BOTTLE	Boş bir şişem yok.
 CANNOT_SKILL_NEED_POISON_BOTTLE	Zehirli şişem yok.
@@ -46,7 +46,7 @@ CHAT_INSULT_STRING	Bu cümle yanlış kelimeler içeriyor.
 CHAT_LOG	Eski mesajı göster[L]
 CHAT_LOG_TITLE	Sohbet Protokolü
 CHAT_NORMAL	Normal
-CHAT_NOTICE	Duyuru
+CHAT_NOTICE	Sunucu
 CHAT_PARTY	Grup
 CHAT_SEND_CHAT	Sohbet yolla
 CHAT_SEND_MEMO	Fısıltı gönder[Shift+Enter]
@@ -58,12 +58,12 @@ CREATE_EXIST_SAME_NAME	Bu ismi zaten başka bir karakter kullanıyor.
 CREATE_FAILURE	Karakteri yaratamazsın.
 CREATE_GM_NAME	GM
 CREATE_INPUT_NAME	İsmi gir.
-DAY	Gün
-DO_YOU_BUY_ITEM1	Satın almak istiyor musun? Nesne: %s Fiyat: %s
-DO_YOU_BUY_ITEM2	Satın almak istiyor musun? Nesne: %s %s Fiyat: %s
+DAY	g
+DO_YOU_BUY_ITEM1	%s Eşyasını %s Yang karşılığında satın almak ister misin?
+DO_YOU_BUY_ITEM2	%s (%s adet) eşyasını %s Yang ile karşılığında almak ister misin?
 DO_YOU_DROP_MONEY	%d Yang bırakmak istiyor musun?
-DO_YOU_SELL_ITEM1	Satmak istiyor musun? Nesne: %s Fiyat: %s
-DO_YOU_SELL_ITEM2	Satmak istiyor musun? Adet: %s  Eşya: %s  Fiyat: %s
+DO_YOU_SELL_ITEM1	%s Eşyasını %s Yang karşılığında satmak ister misin?
+DO_YOU_SELL_ITEM2	%s (%s adet) eşyasını %s Yang karşılığında satmak ister misin?
 DRAGON_SOUL_CANNOT_REFINE	Bu ejderha taşı arındırılamaz.
 DRAGON_SOUL_CANNOT_REFINE_MORE	Bu ejderha taşı en yüksek seviyeye ulaştı bile.
 DRAGON_SOUL_EQUIP_WARNING1	Bir ejderha taşını tekrar çıkartmak zor.
@@ -144,7 +144,7 @@ GUILDMARK_UPLOADER_ERROR_64_WIDTH	Genişlik 64 Pixel değil
 GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	Oyun bu resmi desteklemiyor.
 GUILDMARK_UPLOADER_ERROR_PATH	Bilgiyi metin2/upload klasörüne taşı.
 GUILDMARK_UPLOADER_ERROR_SELECT	Resim dosyası seçilmedi.
-GUILDWAR_CTF_TITLE	Bayrak ele geçirildi.
+GUILDWAR_CTF_TITLE	Bayrak Savaşı
 GUILDWAR_NORMAL_TITLE	Meydan Savaşı
 GUILDWAR_WARP_TITLE	Arena Savaşı
 GUILD_BUILDING_GRADE	Sıralama
@@ -155,7 +155,7 @@ GUILD_CREATE_ERROR_INSULT_NAME	Lonca adı hatalı
 GUILD_DEFAULT_GRADE	Lonca üyeleri
 GUILD_DELETE	Sil
 GUILD_DO_YOU_HEAL_GSP	%d Yang kullanarak %d Ejderha Hayaleti yüklemek ister misin?
-GUILD_DO_YOU_JOIN	  seni davet ediyor. Loncaya katılmak istiyor musun?
+GUILD_DO_YOU_JOIN	 seni davet ediyor. Loncaya katılmak istiyor musun?
 GUILD_EMPTY_AREA	Boş alan
 GUILD_FACILITY	Ek bina
 GUILD_GEM	Değerli taş
@@ -170,11 +170,11 @@ GUILD_NO_NOTICE_PERMISSION	Duyuru yapmak için gerekli iznin yok.
 GUILD_OBJECT	Nesne
 GUILD_OFFER_EXP	Tecrübe yatır
 GUILD_SHORT_EXP	Yeterli Tecrübe Puanı yok.
-GUILD_TILE_BASEINFO	Temel bilgiler
-GUILD_TILE_BOARD	Kara tahta
+GUILD_TILE_BASEINFO	Bölge bilgileri
+GUILD_TILE_BOARD	Lonca notları
 GUILD_TILE_GRADE	Yönetici Pozisyonu
 GUILD_TILE_INFO	Lonca bilgileri
-GUILD_TILE_MEMBER	Lonca üyeleri
+GUILD_TILE_MEMBER	Üyeler
 GUILD_TILE_SKILL	Lonca becerisi
 GUILD_WAR_LIMIT_30MIN	Zaman: 30 dakika
 GUILD_WAR_REWARD_POTION	Ödül: Yenen iksir kazanacak
@@ -192,7 +192,7 @@ HORSE_HEALTH3	Tok
 HORSE_LEVEL1	Normal at
 HORSE_LEVEL2	Savaş Atı
 HORSE_LEVEL3	Asker at
-HOUR	Saat
+HOUR	sa.
 HOW_MANY_ITEM_DO_YOU_DROP1	%s atmak istiyor musun?
 HOW_MANY_ITEM_DO_YOU_DROP2	%s %d atmak istiyor musun?
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Hesap ayarlarınızdaki silme-kodunu buraya giriniz.
@@ -205,16 +205,16 @@ JOB_WARRIOR	Savaşçı
 LEFT_TIME	Kalan Süre
 LOGIN_CONNECT_FAILURE	Sunucuya bağlanırken hata
 LOGIN_CONNECT_SUCCESS	Sunucuya bağlandın.
-LOGIN_CONNETING	Sunucuya bağlanıyorsun...
-LOGIN_FAILURE_ALREAY	Hesap zaten bağlı.
+LOGIN_CONNETING	Lütfen bekle. Sunucuya bağlanıyorsun.
+LOGIN_FAILURE_ALREAY	Hesabın zaten bağlı.
 LOGIN_FAILURE_BE_SAME_KEY	Kayıt problemi
-LOGIN_FAILURE_BLOCK_ID	Hesabınız engellendi!
-LOGIN_FAILURE_BLOCK_LOGIN	Lütfen başka server seç!
-LOGIN_FAILURE_NOBILL	Hesabınızın oyun süresi yok.
-LOGIN_FAILURE_NOT_AVAIL	Hesabınız kullanılamaz.
+LOGIN_FAILURE_BLOCK_ID	Bu hesap engellendi.
+LOGIN_FAILURE_BLOCK_LOGIN	Kapalı sunucu: Lütfen başka server seç!
+LOGIN_FAILURE_NOBILL	Bu hesabın oyun süresi yok.
+LOGIN_FAILURE_NOT_AVAIL	Bu hesap kullanılamıyor.
 LOGIN_FAILURE_NOT_EXIST_ID	Hesap ismi veya şifre yanlış.
-LOGIN_FAILURE_REPAIR_ID	Bu hesap için, nesneler yüklendi.
-LOGIN_FAILURE_SAMELOGIN	Biri senin hesabınla giriş yaptı.
+LOGIN_FAILURE_REPAIR_ID	Bu hesap için şu an nesneler yenileniyor.
+LOGIN_FAILURE_SAMELOGIN	Biri senin hesabınla bağlandı.
 LOGIN_FAILURE_SHUTDOWN	Sunucu henüz açılmadı.
 LOGIN_FAILURE_TOO_MANY_USER	Çok fazla kullanıcı bağlı olduğu için bağlanamazsınız.
 LOGIN_FAILURE_UNKNOWN	Bilinmeyen bir nedenle kaydolamadınız.
@@ -266,7 +266,7 @@ MINIMAP_DEC_SCALE	Uzaklaştır
 MINIMAP_INC_SCALE	Yakınlaştır
 MINIMAP_OBSERVER_COUNT	%d izleyici
 MINIMAP_SHOW_AREAMAP	Genel Görünüm Haritası'nı aç
-MINUTE	Dakika
+MINUTE	dk.
 MONETARY_UNIT0	Yang
 MONEY_INPUT_DIALOG_SELLPRICE	Satış Fiyatı:
 MOVE_ITEM_FAILURE_PRIVATE_SHOP	Özel depo açtığın sürece nesneleri başka yere taşıyamazsın.
@@ -286,8 +286,8 @@ PARTY_BONUS_EXP	EXP: %%%d	SA
 PARTY_BONUS_SKILL_MASTER	Max. SP: +%d	SA
 PARTY_BONUS_TANKER	Max. HP: +%d	SA
 PARTY_BREAK_UP	Grubu sil
-PARTY_DO_YOU_ACCEPT	  grubunuza katılmak istiyor.
-PARTY_DO_YOU_JOIN	 seni grubuna davet ediyor. Kabul etmek istiyor musun?
+PARTY_DO_YOU_ACCEPT	 grubunuza katılmak istiyor.
+PARTY_DO_YOU_JOIN	 seni bir gruba davet etti. Kabul et?
 PARTY_EXP_DISTRIBUTION_MODE	EXP paylaşımı
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL	seviyeye bağlı
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Yüksek seviyeli grup üyeleri daha fazla EXP kazanıyor.
@@ -301,14 +301,14 @@ PARTY_MEMBER_OFFLINE	[Çevrimdışı]
 PARTY_RECALL_MEMBER	Grup üyesini çağır.
 PARTY_REQUEST_DENIED	Başvurun reddedildi.
 PARTY_SET_ATTACKER	Saldırı gücü olarak belirle
-PARTY_SET_BERSERKER	Öfkeli olarak belirle
+PARTY_SET_BERSERKER	Berserker olarak belirle.
 PARTY_SET_BUFFER	Tampon olarak belirle.
 PARTY_SET_DEFENDER	Savunma gücü olarak belirle.
 PARTY_SET_NORMAL	Geri Çekilme Ayarları.
 PARTY_SET_SKILL_MASTER	Beceri Master i olarak ayarla.
 PARTY_SET_TANKER	Yakın Dövüş Savasçısı olarak belirle.
 PARTY_SKILL_ATTACKER	Saldırı gücü olarak temel saldırı değeri +%.0f
-PARTY_SKILL_BERSERKER	Öfkeli saldırı hızı +%.0f
+PARTY_SKILL_BERSERKER	Berserker saldırı hızı +%.0f
 PARTY_SKILL_BUFFER	Tampon Beceri Süresi +%.0f
 PARTY_SKILL_DEFENDER	Savunmacıların Savunması +%.0f
 PARTY_SKILL_SKILL_MASTER	Max. SP Beceri Masterı +%.0f
@@ -348,14 +348,14 @@ QUICKSLOT_REGISTER_DISABLE_ITEM	Bu nesne hızlı erişim alanına eklenemez.
 RECEIVE_MESSAGE	%s mesaj gönderdi.
 REFINE_COST	Yükseltme bedeli: %s
 REFINE_DESTROY_WARNING	Eşya arındırılırken yok olabilir.
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Bunlar iyileştirme yapılarak yükseltilecek,
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	fakat hata vermesi durumunda nesne yok olabilir. Devam etmek istiyor musunuz?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Bu nesneyi gerçekten yükseltmek istiyor musun?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	Hata vermesi durumunda nesne yok olur. Devam etmek istiyor musun?
 REFINE_DOWN_GRADE_WARNING	Eşyanın arındırılırken değeri düşebilir.
-REFINE_DO_YOU_SEPARATE_METIN	Mevcut olan tüm Ruh Taşları çıkarılsın mı?
-REFINE_FAILURE	Başaramadın.
+REFINE_DO_YOU_SEPARATE_METIN	Mevcut olan tüm zihin taşları çıkarılsın mı?
+REFINE_FAILURE	Tüh, olmadı. Beceremedik.
 REFINE_FAILURE_CAN_NOT_ATTACH	Bu nesneye %s katamazsın.
 REFINE_FAILURE_EQUIP_ITEM	Kullanılmakta olan nesneleri geliştiremezsin.
-REFINE_FAILURE_METIN_INSEPARABLE_ITEM	Çıkarabileceğiniz ruh taşı yok.
+REFINE_FAILURE_METIN_INSEPARABLE_ITEM	Çıkarabileceğiniz zihin taşı yok.
 REFINE_FAILURE_NEED_BETTER_SCROLL	Daha iyi bir yükseltme Rolesine ihtiyacınız var.
 REFINE_FAILURE_NO_GOLD_SOCKET	Burada %s eklemek için altın yuva yok.
 REFINE_FAILURE_NO_MORE_SOCKET	Daha fazla slot ekleyemezsin.
@@ -364,7 +364,7 @@ REFINE_FAILURE_SOCKET_DISABLE_ITEM	Bu nesneye slot ekleyemezsin.
 REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Bu nesne yükseltilemez.
 REFINE_SUCCESS	Nesnenin yükseltilmesi başarıyla tamamlandı.
 REFINE_SUCCESS_PROBALITY	Yükseltme şansı %%%d
-REFINE_WARNING2	Devam etmek istiyor musun?
+REFINE_WARNING2	Bu geliştirmeye devam etmek istiyor musun?
 SAFEBOX_ERROR	Yanlış şifre girdin.
 SAFEBOX_SELL_DISABLE_SAFEITEM	Korumalı nesneleri satamazsınız.
 SAFEBOX_WRONG_PASSWORD	Şifre aynı olmalı.
@@ -376,9 +376,9 @@ SELECT_CAN_NOT_DELETE	Karakteri silemezsin.
 SELECT_CHANGED_NAME	Karakterin adını değiştirdin
 SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	Bu karakter adı kullanılıyor
 SELECT_CHANGE_FAILURE_STRANGE_INDEX	Tekrar dene.
-SELECT_CHANGE_FAILURE_STRANGE_NAME	Bunu
+SELECT_CHANGE_FAILURE_STRANGE_NAME	Bu karakter adı yanlış.
 SELECT_CHANGE_NAME_TITLE	Karakter adını değiştir
-SELECT_DELEING	Karakter silinecek.
+SELECT_DELEING	Silme işlemi başlatılıyor...
 SELECT_DELETED	Başarıyla silindi.
 SELECT_DO_YOU_DELETE_REALLY	Devam etmek istiyor musun?
 SELECT_EMPTY_SLOT	Bu boş bir alan.
@@ -389,7 +389,7 @@ SHOP_CANNOT_SELL_ITEM	Bu eşya satılamaz.
 SHOP_ERROR_UNKNOWN	Bilinmeyen market hatası: %s
 SHOP_INVALID_POS	Bu eşya burada kullanılamaz.
 SHOP_INVENTORY_FULL	Envanterde boş alan yok.
-SHOP_NOT_ENOUGH_MONEY	Yeterli Yang yok
+SHOP_NOT_ENOUGH_MONEY	Yeterli Won veya Yang yok
 SHOP_NOT_ENOUGH_MONEY_EX	Yeterli Yang'a sahip değilsin.
 SHOP_SELL_INFO	Envanter penceresinden satmak istediğin nesneyi seç.
 SHOP_SOLDOUT	Satıldı
@@ -500,7 +500,7 @@ TOOLTIP_APPLY_ATTBONUS_WARRIOR	Savasçılara karşı güçlü +%%%d	SA
 TOOLTIP_APPLY_BLOCK	Yakın dövüş saldırıları bloklama şansı: %%%d	SA
 TOOLTIP_APPLY_CRITICAL_PCT	Kritik Vuruş Şansı: +%%%d	SA
 TOOLTIP_APPLY_DAMAGE_SP_RECOVER	Vuruş yapıldığında Sp geri kazanım şansı %%%d	SA
-TOOLTIP_APPLY_DODGE	Oklardan korunma şansı %%%d	SA
+TOOLTIP_APPLY_DODGE	%%%d Okları savuşturma şansı	SA
 TOOLTIP_APPLY_EXP_DOUBLE_BONUS	EXP Bonus şansı %%%d	SA
 TOOLTIP_APPLY_GOLD_DOUBLE_BONUS	İki kat Yang düşme şansı %%%d	SA
 TOOLTIP_APPLY_IMMUNE_FALL	Yere düşme karşısında bağışıklık	SNA
@@ -530,11 +530,11 @@ TOOLTIP_APPLY_RESIST_SWORD	Kılıç Savunması %%%d	SA
 TOOLTIP_APPLY_RESIST_TWOHAND	Çift-El Savunma %%%d	SA
 TOOLTIP_APPLY_RESIST_WARRIOR	Savaşçı saldırılarına karşı savunma şansı: %%%d	SA
 TOOLTIP_APPLY_RESIST_WIND	Rüzgar Dayanıklılığı %%%d	SA
-TOOLTIP_APPLY_SKILL_BOOK_BONUS	Kitaptan öğrenme şansı 2,5 arttı.	SNA
+TOOLTIP_APPLY_SKILL_BOOK_BONUS	Kitaptan öğrenme şansı 2,5 arttı	SNA
 TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	Öğrenme başarısız olursa, anında bir kere daha deneme şansına sahipsin.	SNA
 TOOLTIP_APPLY_SLOW_PCT	Yavaşlama şansı: %%%d	SA
-TOOLTIP_APPLY_STEAL_HP	%%%d hasar, HP ile absorbe edilecek	SA
-TOOLTIP_APPLY_STEAL_SP	%%%d hasar, SP ile absorbe edilecek.	SA
+TOOLTIP_APPLY_STEAL_HP	%%%d hasar, HP ile absorbe edilir	SA
+TOOLTIP_APPLY_STEAL_SP	%%%d hasar, SP ile absorbe edilir	SA
 TOOLTIP_APPLY_STUN_PCT	Bayılma şansı: %%%d	SA
 TOOLTIP_ARMOR	Zırh
 TOOLTIP_ARROW	Ok
@@ -545,15 +545,15 @@ TOOLTIP_AUTO_POTION_HP	Güneş Özütü
 TOOLTIP_AUTO_POTION_REST	Kalan miktar: %.2f%%
 TOOLTIP_AUTO_POTION_SP	Ay Özütü
 TOOLTIP_AUTO_POTION_USING	Etkin
-TOOLTIP_BOW_DISTANCE	Yay Menzili +%dm	SA
+TOOLTIP_BOW_DISTANCE	Menzil +%dm	SA
 TOOLTIP_BUYPRICE	Fiyatı: %s
 TOOLTIP_CAST_SPEED	Büyü Hızı +%%%d	SA
 TOOLTIP_CON	Canlılık +%d	SA
 TOOLTIP_COSTUME_ATTR_BONUS	Kostüm bonusu %%%d	SA
 TOOLTIP_DEF_GRADE	Savunma +%d	SA
 TOOLTIP_DEX	Çeviklik +%d	SA
-TOOLTIP_DRAGON_SOUL_DECK1	Dünya	SNA
-TOOLTIP_DRAGON_SOUL_DECK2	Gökyüzü	SNA
+TOOLTIP_DRAGON_SOUL_DECK1	Gökyüzü	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Dünya	SNA
 TOOLTIP_EAR	Küpe
 TOOLTIP_ENERGY	Enerji %d	SA
 TOOLTIP_FISHINGROD_EXP	Puanlar %d / %d
@@ -588,17 +588,17 @@ TOOLTIP_MAGIC_ATTBONUS_PER	Büyü Saldırı +%%%d	SA
 TOOLTIP_MAGIC_ATT_GRADE	Büyülü Saldırı Değeri +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Büyü Savunması +%d	SA
 TOOLTIP_MALL_ATTBONUS	Saldırı Değeri +%%%d	SA
-TOOLTIP_MALL_ATTBONUS_STATIC	Saldırı Değeri +12~15%	SNA
+TOOLTIP_MALL_ATTBONUS_STATIC	Saldırı değeri	SNA
 TOOLTIP_MALL_AUTOLOOT	Yerdeki mevcut Yang`ın otomatik olarak toplanmasını sağlayan el.	SNA
 TOOLTIP_MALL_DEFBONUS	Savunma +%%%d	SA
-TOOLTIP_MALL_DEFBONUS_STATIC	Savunma +12~15%	SNA
+TOOLTIP_MALL_DEFBONUS_STATIC	Savunma	SNA
 TOOLTIP_MALL_EXPBONUS	EXP +%%%d	SA
 TOOLTIP_MALL_EXPBONUS_STATIC	EXP artışını %50 arttırır	SNA
 TOOLTIP_MALL_FISH_MIND	Balık yakalama şansını ikiye katlar.	SNA
 TOOLTIP_MALL_GOLDBONUS	Elde edilen yang kat sayısı %.1f olarak değişti.	SA
-TOOLTIP_MALL_GOLDBONUS_STATIC	Yang elde etme şansını ikiye katlar.	SNA
+TOOLTIP_MALL_GOLDBONUS_STATIC	İki katı Yang düşürme şansı	SNA
 TOOLTIP_MALL_ITEMBONUS	Elde edilen nesne katsayısı %.1f olarak değisti.	SA
-TOOLTIP_MALL_ITEMBONUS_STATIC	Eşya ele geçirme şansını ikiye katlar.	SNA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Nesne düşürme şansı %200 arttı.	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	Sevgi Puanı daha hızlı artar.	SNA
 TOOLTIP_MALL_SAFEBOX	Depoya fazladan 2 oda daha eklenir	SNA
 TOOLTIP_MAX_HP	Max. HP +%d	SA
@@ -638,9 +638,9 @@ TOOLTIP_POTION_SEC	Sn.
 TOOLTIP_POTION_TIME	Süre:
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	%s Seviye %d gerekli.
 TOOLTIP_REQUIREMENT_STAT_LEVEL	%s %d gerekli
-TOOLTIP_RESIST_BOW	Oka karşı dayanıklılık %%%d	SA
+TOOLTIP_RESIST_BOW	Ok savunması %d%%	SA
 TOOLTIP_RESIST_DARK	Karanlık Direnci +%%%d	SA
-TOOLTIP_RESIST_EARTH	Dünya Direnci +%%%d	SA
+TOOLTIP_RESIST_EARTH	Toprak Direnci +%%%d	SA
 TOOLTIP_RESIST_ELEC	Şimseğe karşı dayanıklılık %%%d	SA
 TOOLTIP_RESIST_FIRE	Ateşe karşı dayanıklılık %%%d	SA
 TOOLTIP_RESIST_ICE	Buz Direnci +%%%d	SA
@@ -663,7 +663,7 @@ TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Beden hasarına karşı koyma:
 TOOLTIP_SKILL_COOL_TIME	Yükleme Süresi: 
 TOOLTIP_SKILL_DAMAGE_BONUS	Beceri Hasarı %%%d	SA
 TOOLTIP_SKILL_DEFEND_BONUS	Beceri hasarına karşı koyma %%%d	SA
-TOOLTIP_SKILL_DURATION	Süre: %d Sn.
+TOOLTIP_SKILL_DURATION	Süre: %d sn.
 TOOLTIP_SKILL_FORGET_BOOK_NAME	Unutkanlığın Kitabı
 TOOLTIP_SKILL_LEVEL	Güncel Seviye: %d
 TOOLTIP_SKILL_LEVEL_MASTER	Güncel Seviye: %d (Master)

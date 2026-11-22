@@ -1,4 +1,4 @@
-ACCEPT	Akceptovat
+ACCEPT	OK
 ATTACH_METIN_INFO	Přejete si použít kámen ducha?
 ATTACH_METIN_TITLE	Použít kámen ducha
 CANCEL	Zrušit
@@ -51,7 +51,7 @@ EMPIRE_EXIT	Ukončit
 EMPIRE_NEXT	Dále
 EMPIRE_PREV	Zpět
 EMPIRE_SELECT	Zvolit
-EXCHANGE_ACCEPT	Převzít
+EXCHANGE_ACCEPT	OK
 EXCHANGE_TITLE	Obchodování
 GAMEOPTION_TITLE	Nastavení hry
 GAME_EXIT_OBSERVER	Ukončit divácký modus
@@ -63,7 +63,7 @@ GRADE	Stupeň
 GRADE_SELECT	Stupeň
 GUILD_BASENAME	Základní jméno
 GUILD_BOARD_ID	Jméno
-GUILD_BOARD_REFRESH	Aktualizovat (F5)
+GUILD_BOARD_REFRESH	Aktualizovat
 GUILD_BOARD_TEXT	Zpráva
 GUILD_BUILDING_CATEGORY_TITLE	Stavební jednotky
 GUILD_BUILDING_CHANGE	Změnit
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Překližka
 GUILD_BUILDING_POSITION	Poloha
 GUILD_BUILDING_PREVIEW	Náhled
 GUILD_BUILDING_PRICE	Cena
-GUILD_BUILDING_REFRESH	Aktualizovat (F5)
+GUILD_BUILDING_REFRESH	Aktualizovat
 GUILD_BUILDING_STONE	Kámen
 GUILD_BUILDING_TITLE	Stavba domu cechu
 GUILD_CRYSTAL	Křišťál
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Nechat spadnout zdroj
 GUILD_GEM	Drahokam
 GUILD_GRADE_CHANGE_GRADE_NAME	Nové jméno hodnosti
 GUILD_GRADE_NUM	Číslo
-GUILD_GRADE_PERMISSION_DELETE	Propustit
-GUILD_GRADE_PERMISSION_JOIN	Pozvat
-GUILD_GRADE_PERMISSION_NOTICE	Napsat
-GUILD_GRADE_PERMISSION_SKILL	Schopnosti
+GUILD_GRADE_PERMISSION_DELETE	Odebrat z cechu
+GUILD_GRADE_PERMISSION_JOIN	Může přijímat hráče do cechu
+GUILD_GRADE_PERMISSION_NOTICE	Může posílat cechovní zprávy
+GUILD_GRADE_PERMISSION_SKILL	Schopnosti cechu
 GUILD_GRADE_RANK	Hodnost
 GUILD_GRADE_WRITE	Psát
 GUILD_INFO	Informace o cechu
@@ -111,7 +111,7 @@ GUILD_INFO_UPLOAD_MARK	Uploadovat logo
 GUILD_INFO_UPLOAD_SYMBOL	Uploadovat logo
 GUILD_MARK	Logo cechu
 GUILD_MEMBER_JOB	Rasa
-GUILD_MEMBER_KNIGHT	Vedoucí
+GUILD_MEMBER_KNIGHT	Bojovník
 GUILD_MEMBER_LEVEL	Úroveň
 GUILD_MEMBER_NAME	Jméno
 GUILD_MEMBER_RANK	Hodnost
@@ -140,13 +140,13 @@ HELP_ATTACK_KEY	Útok: stiskni mezerník nebo levé tlačítko myši
 HELP_CHANGE_PK_MODE	Změnit útočný mód: změňte nastavení levého tlačítka myši
 HELP_CHARACTER_BUTTON1	(Okno postavy, Inventář,
 HELP_CHARACTER_BUTTON2	Seznam přátel a Možnosti)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Pohled kamery: lze nastavit středním nebo pravým tlačítkem myši
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Pohled kamery: lze nastavit pravým nebo středním tlačítkem myši
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Výchozí pohled kamery: střední tlačítko myši
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Alternativní pohled kamery: pravé nebo levé tlačítko myši
 HELP_EXP	Zkušenost
 HELP_FURY	Item Shop ve hře
 HELP_GUILD_WINDOW	Otevřít okno cechu: stistknutím kláves Alt + G
 HELP_HELP	Zobrazit nápovědu: stisknutím klávesy H
-HELP_HP	Zdravotní Body (ZB)
+HELP_HP	Body života (ZB)
 HELP_MESSENGER_WINDOW	Otevřít Seznam přátel: pomocí kláves Alt + M
 HELP_MOUSE_LEFT	Funkce levého tlačítka myši
 HELP_MOUSE_RIGHT	Funkce pravého tlačítka myši
@@ -183,7 +183,7 @@ MARKLIST_REFRESH	Aktualizovat
 MARKLIST_TITLE	Zaregistrovat logo cechu
 MESSAGE	Toto je zpráva
 MESSENGER_ADD_FRIEND	Přidat přátele
-MESSENGER_DELETE_FRIEND	Smazat přátele
+MESSENGER_DELETE_FRIEND	Smazat
 MESSENGER_OPEN_GUILD	Otevřít okno cechu
 MESSENGER_TITLE	Přátelé
 MESSENGER_WHISPER	Šeptat

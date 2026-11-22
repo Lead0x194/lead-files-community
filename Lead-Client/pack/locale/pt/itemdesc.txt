@@ -138,7 +138,7 @@
 22010	Pergaminho do Retorno	Pergaminho que permite sinalizar um lugar específico e permite voltar depois à marca.
 25040	Pergaminho da Bênção	Elimina o risco de um item ser destruído caso um melhoramento falhe. Caso falhe, a qualidade do item será apenas reduzida em 1 nível.
 25041	Pedra Mágica	Um fragmento do metal lendário que aumenta as probabilidades de conseguires melhorar um item. O item que tentas melhorar não será destruído nem a sua qualidade diminuirá.
-25100	Pergaminho da Extracção	Pergaminho que permite extrair as Pedras-Espíritas de uma arma ou armadura. Deixa uma marca de extracção.
+25100	Pergaminho da Extracção	Pergaminho que permite extrair Pedras Espíritas de uma arma ou armadura. Deixa uma marca de extracção.
 27051	Poção Vermelha(P)	Regenera 300 Pontos de Vida (VD). Não negociável.
 27052	Poção Azul(P)	Regenera 100 Pontos de Mana (MN). Não negociável.
 27053	Poção Verde(P)	Aumenta em 10 a tua Rapidez de Ataque durante 10 minutos. Não negociável.
@@ -211,11 +211,11 @@
 27876	Peixe Gato Grelhado	Restaura alguma MN imediatamente.
 27877	Verdemã Grelhado	Torna-te invisível durante 5 minutos.
 27878	Peixe Lótus Grelhado	Restaura algum VD imediatamente.
-27879	Peixe Doce Grelhado	Por ser cozinhado no fogo, este peixe ganha um agradável sabor fumado.
-27880	Eperlano Grelhado	Ao cozinhá-lo no fogo este peixe fica com um agradável sabor fumado.
-27881	Shiri Grelhado	Por ser cozinhado no fogo, este peixe ganha um agradável sabor fumado.
-27882	Carpa Espelhada Grelhada	Ao cozinhá-lo no fogo este peixe fica com um agradável sabor fumado.
-27883	Carpa Dourada Grelhada	Ao cozinhá-lo no fogo este peixe fica com um agradável sabor fumado.
+27879	Peixe Doce Grelhado	Aumenta a Experiência obtida em 10%.
+27880	Eperlano Grelhado	Aumenta Forte contra Monstros em 5%.
+27881	Shiri Grelhado	Aumenta Ataque Mágico/Corpo-a-Corpo em 3%.
+27882	Carpa Espelhada Grelhada	Recupera imediatamente 1.000 VD.
+27883	Carpa Dourada Grelhada	Aumenta a experiência obtida em 50%.
 27987	Ostra	Um molusco com uma bonita concha. Pode conter uma pérola no seu interior.
 27988	Mapa do Tesouro	Um mapa desgastado que revela o local de um tesouro antigo.
 27989	Bússola de Pedras Metin	A bússola indica-te a posição e distância da próxima Pedra Metin. Quanto mais brilhante, mais perto estarás. Pode ser usada 6 vezes.
@@ -438,7 +438,7 @@
 30330	Pedra de Maat	Como Deusa da Justiça, Maat luta pela ordem entre o caos.
 30331	Chave da Geada	A chave é fria como o gelo e dá acesso ao terceiro piso da Torre de Vigia de Nemere. Apenas pode ser usada por Xamãs.
 30332	Estrela Polar	Pedra-chave feita de gelo puro. Permite o acesso ao sexto andar da Torre de Vigia de Nemere.
-30333	Chave da Flor da Geada	Esta chave feita de gelo permite o acesso ao nono andar da Torre de Vigia de Nemere. Apenas pode ser usada por Ninjas ou Xamãs.
+30333	Chave da Flor da Geada	Esta chave feita de gelo permite o acesso ao nono andar da Torre de Vigia de Nemere.
 30500	Faca de Gravura Rubi	Ferramenta para refinares a tua arma.
 30501	Punho de Ouro	Elemento para refinares a tua arma.
 30502	Decoração Rubi	Elemento para refinares a tua arma.
@@ -621,11 +621,11 @@
 31093	Pedra Desconhecida	Este tipo de pedra é-te completamente desconhecido, mas emite um frio e escuridão palpáveis.
 31094	Fragmento	Fragmento do Meteorito Demoníaco
 31095		
-31096		
-31097		
-31098		
-31099		
-31100		
+31096		Madeira Fina
+31097		Orvalho En-Tai
+31098		Espírito da Terra
+31099		Esmeralda Arbórea
+31100		Kit de Ajuda
 31101		
 31102		
 31103		
@@ -646,7 +646,7 @@
 38102	Snack do Poder (30 Dias)	Aumenta a duração da tua Montada Melhorável em 30 dias.
 38200	Selo de Rufus	Podes usar este Selo para invocares a tua cria de lobo, Rufus.
 38201	Selo de Rufus	Podes usar este Selo para invocares a tua cria de lobo, Rufus.
-39001	Pedra Mágica	Esta Pedra garante a melhor probabilidade de melhorares um item. Além disso, o item não será destruído nem perderá qualidade se o melhoramento falhar. Este item é negociável.
+39001	Pedra Mágica	Esta pedra proporciona uma excelente probabilidade de sucesso ao melhorar itens. Além disso, o item não será destruído nem reduzido de nível se o melhoramento falhar. Este item é negociável.
 39002	Anel de Experiência	Aumenta a Experiência obtida em 50% durante 60 minutos. Este item é negociável.
 39003	Vinho de Flor de Pêssego	Uma bebida que irá imediatamente regenerar a tua Vida (VD) em 500 pontos. Este item é negociável.
 39004	Mármore da Bênção	Esta Mármore lendária permite adicionar um quinto atributo a itens que já tenham quatro atributos. A adição deste atributo pode falhar. Este item é negociável.
@@ -663,12 +663,12 @@
 39015	Pedra do Ferreiro	No Ferreiro podes criar um Manual do Ferreiro com a ajuda desta Pedra e de um Pergaminho da Bênção. Este item é negociável.
 39016	Metal Mágico	Este material, quando combinado com um Pergaminho da Bênção, permite-te criar um Pergaminho do Dragão no Ferreiro. Este item é negociável.
 39017	Vida do Deus Dragão	Aumenta o teu VD máximo em 20% durante 30 minutos. Este item é negociável.
-39018	Ataque do Deus Dragão	Aumenta os danos que fazes em luta em 12-15% durante 30 minutos. Este item é negociável.
+39018	Ataque do Deus Dragão	Aumenta o teu Valor de Ataque em 20% durante 30 minutos. Este item é negociável.
 39019	Magia do Deus Dragão	Aumenta o teu MN máximo em 20% durante 30 minutos. Este item é negociável.
-39020	Defesa do Deus Dragão	Reduz os danos que recebes em luta em 12-15% durante 30 minutos. Este item é negociável.
+39020	Defesa do Deus Dragão	Reduz o dano que sofres em combate em 20% durante 30 minutos. Este item é negociável.
 39021	Ajuda do Deus Dragão	A Vitalidade, Força, Inteligência e Destreza são temporariamente quintuplicadas. Este item é negociável.
 39022	Pergaminho do Dragão	Remove o risco de um Item ser destruído se o Melhoramento falhar. A sua qualidade será apenas reduzida 1 nível. Adicionalmente, a probabilidade do Melhoramento ser bem sucedido é aumentada em 10%. Este item é negociável.
-39023	Elixir do Investigador	Este Elixir aumenta a qualidade dos objectos de pesquisa que recolheste, aumentando assim a probabilidade de serem aceites. Este item é negociável.
+39023	Elixir do Investigador	Este Elixir melhora a qualidade dos objetos de investigação que recolheste, aumentando assim a probabilidade de serem aceites. Este item é negociável. Não se aplica a missões em Yohara.
 39024	Golpe Crítico	Aumenta a probabilidade de aplicares um golpe crítico em luta em 20% durante 10 minutos. Este item é negociável.
 39025	Golpe Perfurador	Aumenta a probabilidade de aplicares um golpe perfurante em 20% durante 10 minutos. Este item é negociável.
 39026	Poção de Velocidade	Aumenta a tua rapidez de movimento em 60 durante 30 minutos. Este item é negociável.
@@ -678,7 +678,7 @@
 39030	Conselho do Eremita	Aumenta a probabilidade de acertares a leitura de um Livro de Habilidade (ou Pedra da Alma) em 2.5 vezes. Este item é negociável.
 39031	Poção da Rapidez	Esta poção reduz o tempo de carregamento das tuas habilidades em 20% durante 30 minutos. Este item é negociável.
 39032	Fruta da Vida	Aumenta os Pontos de Karma em 2000. Terás de esperar 8 horas entre cada uso. Este item é negociável.
-39033	Pergaminho da Correcção	Com este Pergaminho podes remover a última Pedra-Espírita que colocaste num item. Este item é negociável.
+39033	Pergaminho da Correcção	Este pergaminho permite-te remover a última Pedra Espírita adicionada com sucesso a um item. Este item é negociável.
 39034	Açúcar para Cavalo	Este pedaço de açúcar torna possível dar um nome ao Cavalo. Adicionalmente também aumenta a sua Defesa em 20 pontos. Este item é negociável.
 39035	Vidro da Perspicácia	Permite-te mostrar itens teus a outros jogadores. O Vidro parte-se no processo. Este item é negociável.
 39036	Sapatos de Vento	Aumenta a tua rapidez de movimento em 30, durante 30 horas de jogo, quando equipado. Este item é negociável.
@@ -720,7 +720,7 @@
 41026	Boxe TUR (F)	Equipamento de combate para pugilistas femininas nas cores nacionais Turcas.
 41027	Boxe BRA (M)	Equipamento de combate para pugilistas masculinos nas cores nacionais Brasileiras.
 41028	Boxe BRA (F)	Equipamento de combate para pugilistas femininas nas cores nacionais Brasileiras.
-41029	Guerreiro Deserto (M, B)	Roupa de combate para homens, para ajudar a sobreviver às desumanas condições do deserto. Item negociável.
+41029	Guerreiro Deserto (M, B)	Roupa de combate para homens, para ajudar a sobreviver às desumanas condições do deserto. Dá-te pelo menos um bónus aleatório. Item negociável.
 41030	Guerreiro Deserto (F, B)	Roupa de combate para mulheres, para ajudar a sobreviver às desumanas condições do deserto. Item negociável.
 41031	Esgrima Olímpica (M)	Equipamento desportivo para esgrimistas masculinos. Item negociável.
 41032	Esgrima Olímpica (F)	Equipamento desportivo para esgrimistas femininas. Item negociável.
@@ -912,14 +912,14 @@
 41224	Yongan FC+ (F)	Equipamento de futebol para mulheres em vermelho e branco. Dá-te pelo menos um bónus aleatório.
 41225	FC Bakra+ (M)	Equipamento de futebol para homens em azul escuro e vermelho. Dá-te pelo menos um bónus aleatório.
 41226	FC Bakra+ (F)	Equipamento de futebol para mulheres em azul escuro e vermelho. Dá-te pelo menos um bónus aleatório.
-41227	FC Bokjung+ (M)	Equipamento de futebol para homens em amarelo e azul. Dá-te pelo menos um bónus aleatório.
-41228	FC Bokjung+ (F)	Equipamento de futebol para mulheres em amarelo e azul. Dá-te pelo menos um bónus aleatório.
-41229	FC Bavaria Hwang+ (M)	Equipamento de futebol para homens em vermelho e dourado. Dá-te pelo menos um bónus aleatório.
-41230	FC Bavaria Hwang+ (F)	Equipamento de futebol para mulheres em vermelho e dourado. Dá-te pelo menos um bónus aleatório.
+41227	FC Bokjung+ (M)	Equipamento para futebolistas masculinos nas cores nacionais da Ucrânia. Dá-te pelo menos um bónus aleatório.
+41228	FC Bokjung+ (F)	Equipamento para futebolistas femininas nas cores nacionais da Ucrânia. Dá-te pelo menos um bónus aleatório.
+41229	FC Bavaria Hwang+ (M)	Equipamento para futebolistas masculinos nas cores nacionais de Gales. Dá-te pelo menos um bónus aleatório.
+41230	FC Bavaria Hwang+ (F)	Equipamento para futebolistas femininas nas cores nacionais de Gales. Dá-te pelo menos um bónus aleatório.
 41231	Borussia Chunjo+ (M)	Equipamento de futebol para homens em preto e amarelo. Dá-te pelo menos um bónus aleatório.
 41232	Borussia Chunjo+ (F)	Equipamento de futebol para mulheres em preto e amarelo. Dá-te pelo menos um bónus aleatório.
-41233	SC Doyyum+ (M)	Equipamento de futebol para homens em vermelho e branco. Dá-te pelo menos um bónus aleatório.
-41234	SC Doyyum+ (F)	Equipamento de futebol para mulheres em vermelho e branco. Dá-te pelo menos um bónus aleatório.
+41233	SC Doyyum+ (M)	Equipamento para futebolistas masculinos nas cores nacionais da Áustria. Dá-te pelo menos um bónus aleatório.
+41234	SC Doyyum+ (F)	Equipamento para futebolistas femininas nas cores nacionais da Áustria. Dá-te pelo menos um bónus aleatório.
 41235	Hasun Dong FC+ (M)	Equipamento de futebol para homens em verde e branco. Dá-te pelo menos um bónus aleatório.
 41236	Hasun Dong FC+ (F)	Equipamento de futebol para mulheres em verde e branco. Dá-te pelo menos um bónus aleatório.
 41237	CFR Fogo Dragão 07+ (M)	Equipamento de futebol para homens em cor de vinho. Dá-te pelo menos um bónus aleatório.
@@ -950,20 +950,20 @@
 41262	Vale do Dragão SC+ (F)	Equipamento de futebol para mulheres em azul escuro e laranja. Dá-te pelo menos um bónus aleatório.
 41263	Montanhas Trovão FC+ (M)	Equipamento de futebol para homens em vermelho e branco. Dá-te pelo menos um bónus aleatório.
 41264	Montanhas Trovão FC+ (F)	Equipamento de futebol para mulheres em vermelho e branco. Dá-te pelo menos um bónus aleatório.
-41265	Pyungmoo Saint Hwang+ (M)	Equipamento de futebol para homens em azul escuro. Dá-te pelo menos um bónus aleatório.
-41266	Pyungmoo Saint Hwang+ (F)	Equipamento de futebol para mulheres em azul escuro. Dá-te pelo menos um bónus aleatório.
+41265	Pyungmoo Saint Hwang+ (M)	Equipamento para futebolistas masculinos nas cores nacionais da Escócia. Dá-te pelo menos um bónus aleatório.
+41266	Pyungmoo Saint Hwang+ (F)	Equipamento para futebolistas femininas nas cores nacionais da Escócia. Dá-te pelo menos um bónus aleatório.
 41267	Real Sohan+ (M)	Equipamento de futebol para homens em branco. Dá-te pelo menos um bónus aleatório.
 41268	Real Sohan+ (F)	Equipamento de futebol para mulheres em branco. Dá-te pelo menos um bónus aleatório.
 41269	FC Jinno 04+ (M)	Equipamento de futebol para homens em azul real e branco. Dá-te pelo menos um bónus aleatório.
 41270	FC Jinno 04+ (F)	Equipamento de futebol para mulheres em azul real e branco. Dá-te pelo menos um bónus aleatório.
-41271	FC Sangsun Dong+ (M)	Equipamento de futebol para homens em preto e laranja. Dá-te pelo menos um bónus aleatório.
-41272	FC Sangsun Dong+ (F)	Equipamento de futebol para mulheres em preto e laranja. Dá-te pelo menos um bónus aleatório.
+41271	FC Sangsun Dong+ (M)	Equipamento para futebolistas masculinos nas cores nacionais da Macedónia do Norte. Dá-te pelo menos um bónus aleatório.
+41272	FC Sangsun Dong+ (F)	Equipamento para futebolistas femininas nas cores nacionais da Macedónia do Norte. Dá-te pelo menos um bónus aleatório.
 41273	SL Jungsun Dong+ (M)	Equipamento de futebol para homens em vermelho e branco. Dá-te pelo menos um bónus aleatório.
 41274	SL Jungsun Dong+ (F)	Equipamento de futebol para mulheres em vermelho e branco. Dá-te pelo menos um bónus aleatório.
-41275	Spartak Jungrang+ (M)	Equipamento de futebol para homens em vermelho e branco. Dá-te pelo menos um bónus aleatório.
-41276	Spartak Jungrang+ (F)	Equipamento de futebol para mulheres em vermelho e branco. Dá-te pelo menos um bónus aleatório.
-41277	Terra do Fogo CF+ (M)	Equipamento de futebol para homens em branco e preto. Dá-te pelo menos um bónus aleatório.
-41278	Terra do Fogo CF+ (F)	Equipamento de futebol para mulheres em branco e preto. Dá-te pelo menos um bónus aleatório.
+41275	Spartak Jungrang+ (M)	Equipamento para futebolistas masculinos nas cores nacionais da República Checa. Dá-te pelo menos um bónus aleatório.
+41276	Spartak Jungrang+ (F)	Equipamento para futebolistas femininas nas cores nacionais da República Checa. Dá-te pelo menos um bónus aleatório.
+41277	Terra do Fogo CF+ (M)	Equipamento para futebolistas masculinos nas cores nacionais da Finlândia. Dá-te pelo menos um bónus aleatório.
+41278	Terra do Fogo CF+ (F)	Equipamento para futebolistas femininas nas cores nacionais da Finlândia. Dá-te pelo menos um bónus aleatório.
 41279	FC S. Seungryong+ (M)	Equipamento de futebol para homens em azul. Dá-te pelo menos um bónus aleatório.
 41280	FC S. Seungryong+ (F)	Equipamento de futebol para mulheres em azul. Dá-te pelo menos um bónus aleatório.
 41291	Disfarce Coelho (preto)	Disfarce de coelho para homens feito de peluche preto
@@ -974,8 +974,8 @@
 41296	Disfarce Bunny (azul)	Disfarce de coelho para mulheres feito de peluche azul
 41297	Disfarce Bunny (verde)	Disfarce de coelho para mulheres feito de peluche verde
 41298	Disfarce Bunny (rosa)	Disfarce de coelho para mulheres feito de peluche rosa
-41299	Disfarce Coelho+ (preto)	Disfarce de coelho para homens feito de peluche preto. Dá-te pelo menos um bónus aleatório.
-41300	Disfarce Coelho+ (azul)	Disfarce de coelho para homens feito de peluche azul. Dá-te pelo menos um bónus aleatório.
+41299	Disfarce Coelho+ (preto)	Disfarce de coelho para homens feito de peluche preto. Dá-te pelo menos um bónus aleatório. Item negociável.
+41300	Disfarce Coelho+ (azul)	Disfarce de coelho para homens feito de peluche azul. Dá-te pelo menos um bónus aleatório. Item negociável.
 41301	Disfarce Coelho+ (verde)	Disfarce de coelho para homens feito de peluche verde. Dá-te pelo menos um bónus aleatório.
 41302	Disfarce Coelho+ (rosa)	Disfarce de coelho para homens feito de peluche rosa. Dá-te pelo menos um bónus aleatório.
 41303	Disfarce Bunny+ (preto)	Disfarce de coelho para mulheres feito de peluche preto. Dá-te pelo menos um bónus aleatório.
@@ -988,7 +988,7 @@
 41310	Disfarce Cobra+ (f)	Disfarce preto reluzente com símbolos de cobras. Dá-te pelo menos um bónus aleatório.
 41311	Guerreiro Deserto(Preto)	Roupas de combate pretas para homens.
 41312	Guerreira Deserto(Preto)	Roupas de combate pretas para mulheres.
-41313	Guerreiro Deserto+(Prt)	Roupas de combate pretas para homens. Dá-te pelo menos um bónus aleatório.
+41313	Guerreiro Deserto+(Prt)	Roupas de combate pretas para homens. Dá-te pelo menos um bónus aleatório. Item negociável.
 41314	Guerreira Deserto+(Prt)	Roupas de combate pretas para mulheres. Dá-te pelo menos um bónus aleatório.
 41315	Armadura Azrael (m)	Armadura de aço pertencente ao infame líder demoníaco.
 41316	Armadura Azrael (f)	Armadura de aço pertencente ao infame líder demoníaco.
@@ -998,10 +998,10 @@
 41321	Vestido Jack Abóbora (f)	Assustadoramente soberbo disfarce de Halloween
 41322	Fato Jack Abóbora+ (m)	Assustadoramente soberbo disfarce de Halloween. Dá-te pelo menos um bónus aleatório. Item negociável.
 41323	Vestido Jack Abóbora+ (f)	Assustadoramente soberbo disfarce de Halloween. Dá-te pelo menos um bónus aleatório. Item negociável.
-41324		
-41325		
-41326		
-41327		
+41324		Fato de batalha masculino com uma estrela e um emblema crescente.
+41325		Fato de batalha feminino com uma estrela e um emblema crescente.
+41326		Fato de batalha masculino com uma estrela e um emblema crescente. Dá-te pelo menos um bónus aleatório.
+41327		Fato de batalha feminino com uma estrela e um emblema crescente. Dá-te pelo menos um bónus aleatório.
 41328	Kit Mundial ALG (M)	Kit para o Mundial de Futebol nas cores nacionais da Argélia
 41329	Kit Mundial ALG (F)	Kit para o Mundial de Futebol nas cores nacionais da Argélia
 41330	Kit Mundial ARG (M)	Kit para o Mundial de Futebol nas cores nacionais da Argentina
@@ -1072,8 +1072,8 @@
 41395	Kit Mundial ARG (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Argentina. Dá-te pelo menos um bónus aleatório.
 41396	Kit Mundial AUS (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Austrália. Dá-te pelo menos um bónus aleatório.
 41397	Kit Mundial AUS (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Austrália. Dá-te pelo menos um bónus aleatório.
-41398	Kit Mundial BEL (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Bélgica. Dá-te pelo menos um bónus aleatório.
-41399	Kit Mundial BEL (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Bélgica. Dá-te pelo menos um bónus aleatório.
+41398	Kit Mundial BEL (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais da Bélgica. Dá-te pelo menos um bónus aleatório.
+41399	Kit Mundial BEL (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais da Bélgica. Dá-te pelo menos um bónus aleatório.
 41400	Kit Mundial BIH (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Bósnia e Herzegovina. Dá-te pelo menos um bónus aleatório.
 41401	Kit Mundial BIH (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Bósnia e Herzegovina. Dá-te pelo menos um bónus aleatório.
 41402	Kit Mundial BRA (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Brasil. Dá-te pelo menos um bónus aleatório.
@@ -1088,47 +1088,47 @@
 41411	Kit Mundial CRC (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Costa Rica. Dá-te pelo menos um bónus aleatório.
 41412	Kit Mundial CIV (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Costa do Marfim. Dá-te pelo menos um bónus aleatório.
 41413	Kit Mundial CIV (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Costa do Marfim. Dá-te pelo menos um bónus aleatório.
-41414	Kit Mundial CRO (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Croácia. Dá-te pelo menos um bónus aleatório.
-41415	Kit Mundial CRO (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Croácia. Dá-te pelo menos um bónus aleatório.
+41414	Kit Mundial CRO (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais da Croácia. Dá-te pelo menos um bónus aleatório.
+41415	Kit Mundial CRO (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais da Croácia. Dá-te pelo menos um bónus aleatório.
 41416	Kit Mundial ECU (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Equador. Dá-te pelo menos um bónus aleatório.
 41417	Kit Mundial ECU (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Equador. Dá-te pelo menos um bónus aleatório.
-41418	Kit Mundial ENG (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais de Inglaterra. Dá-te pelo menos um bónus aleatório.
-41419	Kit Mundial ENG (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais de Inglaterra. Dá-te pelo menos um bónus aleatório.
-41420	Kit Mundial FRA (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais de França. Dá-te pelo menos um bónus aleatório.
-41421	Kit Mundial FRA (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais de França. Dá-te pelo menos um bónus aleatório.
-41422	Kit Mundial GER (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Alemanha. Dá-te pelo menos um bónus aleatório.
-41423	Kit Mundial GER (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Alemanha. Dá-te pelo menos um bónus aleatório.
+41418	Kit Mundial ENG (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais da Inglaterra. Dá-te pelo menos um bónus aleatório.
+41419	Kit Mundial ENG (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais da Inglaterra. Dá-te pelo menos um bónus aleatório.
+41420	Kit Mundial FRA (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais da França. Dá-te pelo menos um bónus aleatório.
+41421	Kit Mundial FRA (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais da França. Dá-te pelo menos um bónus aleatório.
+41422	Kit Mundial GER (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais da Alemanha. Dá-te pelo menos um bónus aleatório.
+41423	Kit Mundial GER (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais da Alemanha. Dá-te pelo menos um bónus aleatório.
 41424	Kit Mundial GHA (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Gana. Dá-te pelo menos um bónus aleatório.
 41425	Kit Mundial GHA (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Gana. Dá-te pelo menos um bónus aleatório.
-41426	Kit Mundial GRE (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Grécia. Dá-te pelo menos um bónus aleatório.
+41426	Kit Mundial GRE (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Grécia. Dá-te pelo menos um bónus aleatório. Item negociável.
 41427	Kit Mundial GRE (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Grécia. Dá-te pelo menos um bónus aleatório.
 41428	Kit Mundial HON (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais das Honduras. Dá-te pelo menos um bónus aleatório.
 41429	Kit Mundial HON (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais das Honduras. Dá-te pelo menos um bónus aleatório.
 41430	Kit Mundial IRN (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Irão. Dá-te pelo menos um bónus aleatório.
 41431	Kit Mundial IRN (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Irão. Dá-te pelo menos um bónus aleatório.
-41432	Kit Mundial ITA (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais de Itália. Dá-te pelo menos um bónus aleatório.
-41433	Kit Mundial ITA (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais de Itália. Dá-te pelo menos um bónus aleatório.
+41432	Kit Mundial ITA (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais da Itália. Dá-te pelo menos um bónus aleatório.
+41433	Kit Mundial ITA (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais da Itália. Dá-te pelo menos um bónus aleatório.
 41434	Kit Mundial JPN (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Japão. Dá-te pelo menos um bónus aleatório.
 41435	Kit Mundial JPN (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Japão. Dá-te pelo menos um bónus aleatório.
-41436	Kit Mundial KOR (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Coreia. Dá-te pelo menos um bónus aleatório.
+41436	Kit Mundial KOR (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Coreia. Dá-te pelo menos um bónus aleatório. Item negociável.
 41437	Kit Mundial KOR (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Coreia. Dá-te pelo menos um bónus aleatório.
-41438	Kit Mundial MEX (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais do México. Dá-te pelo menos um bónus aleatório.
+41438	Kit Mundial MEX (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais do México. Dá-te pelo menos um bónus aleatório. Item negociável.
 41439	Kit Mundial MEX (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais do México. Dá-te pelo menos um bónus aleatório.
-41440	Kit Mundial NED (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais dos Países Baixos. Dá-te pelo menos um bónus aleatório.
-41441	Kit Mundial NED (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais dos Países Baixos. Dá-te pelo menos um bónus aleatório.
+41440	Kit Mundial NED (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais dos Países Baixos. Dá-te pelo menos um bónus aleatório.
+41441	Kit Mundial NED (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais dos Países Baixos. Dá-te pelo menos um bónus aleatório.
 41442	Kit Mundial NGA (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Nigéria. Dá-te pelo menos um bónus aleatório.
 41443	Kit Mundial NGA (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Nigéria. Dá-te pelo menos um bónus aleatório.
-41444	Kit Mundial POR (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais de Portugal. Dá-te pelo menos um bónus aleatório.
-41445	Kit Mundial POR (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais de Portugal. Dá-te pelo menos um bónus aleatório.
-41446	Kit Mundial RUS (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Rússia. Dá-te pelo menos um bónus aleatório.
-41447	Kit Mundial RUS (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Rússia. Dá-te pelo menos um bónus aleatório.
-41448	Kit Mundial ESP (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais de Espanha. Dá-te pelo menos um bónus aleatório.
-41449	Kit Mundial ESP (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais de Espanha. Dá-te pelo menos um bónus aleatório.
-41450	Kit Mundial SUI (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Suíça. Dá-te pelo menos um bónus aleatório.
-41451	Kit Mundial SUI (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais da Suíça. Dá-te pelo menos um bónus aleatório.
+41444	Kit Mundial POR (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais de Portugal. Dá-te pelo menos um bónus aleatório.
+41445	Kit Mundial POR (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais de Portugal. Dá-te pelo menos um bónus aleatório.
+41446	Kit Mundial RUS (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais da Rússia. Dá-te pelo menos um bónus aleatório.
+41447	Kit Mundial RUS (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais da Rússia. Dá-te pelo menos um bónus aleatório.
+41448	Kit Mundial ESP (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais da Espanha. Dá-te pelo menos um bónus aleatório.
+41449	Kit Mundial ESP (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais da Espanha. Dá-te pelo menos um bónus aleatório.
+41450	Kit Mundial SUI (M/Bón)	Equipamento para futebolistas masculinos nas cores nacionais da Suíça. Dá-te pelo menos um bónus aleatório.
+41451	Kit Mundial SUI (F/Bón)	Equipamento para futebolistas femininas nas cores nacionais da Suíça. Dá-te pelo menos um bónus aleatório.
 41452	Kit Mundial URU (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Uruguai. Dá-te pelo menos um bónus aleatório.
 41453	Kit Mundial URU (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais do Uruguai. Dá-te pelo menos um bónus aleatório.
-41454	Kit Mundial USA (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais dos Estados Unidos da América. Dá-te pelo menos um bónus aleatório.
+41454	Kit Mundial USA (M/Bón)	Kit para o Mundial de Futebol nas cores nacionais dos EUA. Dá-te pelo menos um bónus aleatório. Item negociável.
 41455	Kit Mundial USA (F/Bón)	Kit para o Mundial de Futebol nas cores nacionais dos Estados Unidos da América. Dá-te pelo menos um bónus aleatório.
 41472	Fato de Zombie	Roupas manchadas com sangue, carne putrefacta, ossos expostos - as roupas perfeitas para todos os zombies.
 41473	Vestido de Zombie	Roupas manchadas com sangue, carne putrefacta, ossos expostos - as roupas perfeitas para todas as mulheres zombie.
@@ -1172,7 +1172,7 @@
 45008	Penteado Futebol GER (F)	Um penteado desportivo para futebolistas femininas com uma fita nas cores nacionais Alemãs.
 45009	Dreadlocks (M)	O cabelo longo é entrançado em Rastas e é então atado em conjunto na parte de trás da cabeça.
 45010	Penteado Boxe GER (F)	Um penteado desportivo para pugilistas femininas com uma fita nas cores nacionais Alemãs.
-45011	Turbante (M)	Um turbante para homens feito dos melhores materiais. Item negociável.
+45011	Turbante (M)	Um turbante para homens feito dos melhores materiais. Dá-te pelo menos um bónus aleatório. Item negociável.
 45012	Turbante (F)	Um turbante para mulheres feito dos melhores materiais. Item negociável.
 45013	LociCula (M)	Longo em cima e curto nos lados - um corte extravagante para homens. Item negociável.
 45014	Penteado de Esgrima (F)	Um penteado desportivo para esgrimistas femininas. Item negociável.
@@ -1268,8 +1268,8 @@
 45124	Orelhas Bunny (azuis)	Orelhas de coelho azuis para mulheres
 45125	Orelhas Bunny (verdes)	Orelhas de coelho verdes para mulheres
 45126	Orelhas Bunny (rosa)	Orelhas de coelho rosa para mulheres
-45127	Orelhas Coelho+ (pretas)	Chapéu preto com orelhas de coelho para homens. Dá-te pelo menos um bónus aleatório.
-45128	Orelhas Coelho+ (azuis)	Chapéu azul com orelhas de coelho para homens. Dá-te pelo menos um bónus aleatório.
+45127	Orelhas Coelho+ (pretas)	Chapéu preto com orelhas de coelho para homens. Dá-te pelo menos um bónus aleatório. Item negociável.
+45128	Orelhas Coelho+ (azuis)	Chapéu azul com orelhas de coelho para homens. Dá-te pelo menos um bónus aleatório. Item negociável.
 45129	Orelhas Coelho+ (verdes)	Chapéu verde com orelhas de coelho para homens. Dá-te pelo menos um bónus aleatório.
 45130	Orelhas Coelho+ (rosa)	Chapéu rosa com orelhas de coelho para homens. Dá-te pelo menos um bónus aleatório.
 45131	Orelhas Bunny+ (pretas)	Orelhas de coelho pretas para mulheres. Dá-te pelo menos um bónus aleatório.
@@ -1290,7 +1290,7 @@
 45146	Máscara Maia+	Máscara assustadora do guerreiro Maia. Dá-te pelo menos dois bónus aleatórios.
 45147	Turbante Preto (M)	Um adereço para a cabeça feito de materiais pretos para homens.
 45148	Turbante Preto (F)	Um adereço para a cabeça feito de materiais pretos para mulheres.
-45149	Turbante Preto+ (M)	Um adereço para a cabeça feito de materiais pretos para homens. Dá-te pelo menos um bónus aleatório.
+45149	Turbante Preto+ (M)	Um adereço para a cabeça feito de materiais pretos para homens. Dá-te pelo menos um bónus aleatório. Item negociável.
 45150	Turbante Preto+ (F)	Um adereço para a cabeça feito de materiais pretos para mulheres. Dá-te pelo menos um bónus aleatório.
 45151	Elmo Azrael (m)	Adereço de cabeça com o esgar do infame líder demoníaco.
 45152	Elmo Azrael (f)	Adereço de cabeça com o esgar do infame líder demoníaco.
@@ -1300,10 +1300,10 @@
 45157	Cabeça do Jack Abóbora (f)	Assustadoramente soberba máscara de Halloween
 45158	Cabeça do Jack Abóbora+ (m)	Assustadoramente soberba máscara de Halloween. Dá-te pelo menos um bónus aleatório. Item negociável.
 45159	Cabeça do Jack Abóbora+ (f)	Assustadoramente soberba máscara de Halloween. Dá-te pelo menos um bónus aleatório. Item negociável.
-45160		
-45161		
-45162		
-45163		
+45160		Dreadlocks atadas, pintadas de vermelho e branco.
+45161		Dreadlocks atadas, pintadas de vermelho e branco, com uma bandana.
+45162		Dreadlocks atadas, pintadas de vermelho e branco. Dá-te pelo menos um bónus aleatório.
+45163		Dreadlocks atadas, pintadas de vermelho e branco, com uma bandana. Dá-te pelo menos um bónus aleatório.
 45164	Chapéu Coelho-das-Neves	Adereço para a cabeça na forma de um coelho-das-neves
 45165	Chapéu Urso Polar	Adereço para a cabeça na forma de um urso polar
 45166	Chapéu Leopardo-da-Neve	Adereço para a cabeça na forma de um leopardo-da-neve
@@ -1342,7 +1342,7 @@
 50002	Anel d'Ouro	Um anel de ouro simples | Pode ser vendido na loja a um preço alto.
 50003	Documento de Habilidades	Permite remover todos os Pontos de Habilidade para poder recolocá-los.
 50004	Detector de Eventos	Este Item mostra onde podem ser encontradas missões.
-50005	Bilhete de Equitação	Podes montar um cavalo grátis se mostrares isto ao guarda dos estábulos. Requer nível 40.
+50005	Bilhete de Equitação	Este bilhete pode ser trocado por uma Medalha de Equitação no Rapaz do Estábulo.
 50006	Caixa Tesouro d'Ouro	Uma caixa decorada a ouro | Pode ser aberta com uma Chave d'Ouro.
 50007	Caixa Tesouro de Prata	Uma caixa decorada a prata | Pode ser aberta com uma Chave de Prata.
 50008	Chave d'Ouro	Uma chave feita de ouro | Pode abrir uma Caixa Tesouro d'Ouro e uma Caixa Tesouro d'Ouro+.
@@ -1395,13 +1395,13 @@
 50080	Cofre do Dragão Vermelho	O cofre do Dragão Vermelho. Algo valioso está no interior do cofre.
 50081	Cofre do Rei Demónio	O cofre do Rei Demónio. Algo valioso está no interior do cofre.
 50082	Cofre da Morte	O cofre do Fantasma da Morte. Algo valioso está no interior do cofre.
-50083	Bilhete de Equitação	Podes montar um cavalo gratuitamente se o mostrares ao Rapaz do Estábulo.
+50083	Bilhete de Equitação	Abre a Licença de Equitação para receberes o teu Bilhete de Equitação. A partir de nível 10 podes usar isto para montares um Pónei durante algum tempo.
 50084	Pedra-Chave	Este item possui uma aura que remove Selos Mágicos.
 50091	Sushi de Peixe Dourado	Feito de Carpa Dourada | Refeição Especial.
 50092	Sushi de Carpa	Feito de Carpa | Refeição Especial. Odor único, desconfortável de comer.
 50093	Sushi de Salmão	Um prato especial feito de Salmão cru e Arroz frio. Aumenta o teu Valor de Ataque em 10 pontos durante 30 segundos.
 50094	Sushi de Peixe Gato	Um prato especial feito a partir de Peixe Gato cru e arroz frio. Aumenta a tua defesa em 10 durante 30 segundos.
-50096	Bola de Futebol	Um golaço à Baljit-Elvedin!
+50096	Bola de Futebol	Um golaço à Baljit-Elvedin! A bola não é negociável.
 50100	Fogo de Artifício	Os fogos de artifício enchem o céu durante um festival. (Roxo)
 50101	Fogo de Artifício	Os fogos de artifício enchem o céu durante um festival. (Amarelo)
 50102	Fogo de Artifício	Os fogos de artifício enchem o céu durante um festival. (Azul Celeste)
@@ -1409,7 +1409,7 @@
 50104	Fogo de Artifício	Os fogos de artifício enchem o céu durante um festival. (Verde)
 50105	Fogo de Artifício	Os fogos de artifício enchem o céu durante um festival. (Branco)
 50106	Fogo de Artifício Natal	Fogo de Artificio de Natal | Mais bonito que o Fogo de Artifício normal.
-50108	Bombinha de Artifício	Uma bombinha que lança faíscas.
+50108	Bombinha de Artifício	Uma Bombinha de Artifício artesanal que as crianças gostam de ver girar como forma de diversão. | | Probabilidade de atordoamento: 5% | Duração: 10 minutos
 50118		
 50119		
 50120	Cofre de Ferro	Este cofre foi encontrado na Gruta das Almas.
@@ -1460,7 +1460,7 @@
 50180	Cesto Vazio	Um cesto vazio para poderes meter os Ovos de Páscoa lá dentro
 50181	Cesto com Ovos de Páscoa	Um cesto cheio de Ovos de Páscoa.
 50182	Cofre Abençoado	Um cofre abençoado cujos conteúdos não são conhecidos.
-50183	Guloseimas	Estas guloseimas têm um efeito especial: Rapidez de Movimento +10%, Dano +5% e Experiência +10%. Têm uma duração de 30 minutos.
+50183	Guloseimas	Estes doces têm um efeito especial: Rapidez de Movimento +10, Dano +5% e Experiência +10%. Têm uma duração de 30 minutos.
 50184		
 50185		
 50186	Cofre de Azrael	Poderes demoníacos mantêm este cofre trancado. Certamente existirão tesouros valiosos no seu interior.
@@ -1481,7 +1481,7 @@
 50212	Cofre do Aprendiz I	O teu presente de boas-vindas contém um conjunto de equipamento básico para optimizar o início da tua aventura.
 50213	Cofre do Aprendiz I	O teu presente de boas-vindas contém um conjunto de equipamento básico para optimizar o início da tua aventura.
 50215	Cofre de Halloween	Um Cofre com uma assustadora cara de abóbora num dos lados. Com um rangido semelhante a uma gargalhada maléfica, a tampa abre-se para revelar o seu conteúdo.
-50216	Vinho Quente	Uma bebida feita de vinho e especiarias que te dá +10% Rapidez, +5% Dano e +10% Experiência durante 30 minutos.
+50216	Vinho Quente	Uma bebida quente, com vinho e especiarias, que te dá +10% Rapidez, +5% Dano e +10% Experiência.
 50249	Cofre do Triunfo	Este cofre contém um item aleatório como recompensa para todos os atletas Olímpicos.
 50252	Cor Draconis	O cristalino coração do dragão contém a alma, a Pedra do Dragão, no seu interior.
 50253		
@@ -1569,19 +1569,19 @@
 50534	Manual Alma Lobo Rubro	Usa este livro para dominares a habilidade Alma do Lobo Rubro. O livro desaparece depois de lido.
 50535	Manual Alma do Lobo Anil	Usa este livro para dominares a habilidade Alma do Lobo Anil. O livro desaparece depois de lido.
 50600	Livro de Garimpar	É usado para aumentar o nível da habilidade Garimpar.| O livro desaparece depois de lido
-50601	Pedra Diamante	Pode ser refinada para Diamante numa Fornalha de Guild.
-50602	Pedra Âmbar	Pode ser refinada para Âmbar numa Fornalha de Guild.
-50603	Madeira Fóssil	Pode ser refinada para Madeira numa Fornalha de Guild.
-50604	Minério de Cobre	Pode ser refinado para Cobre numa Fornalha de Guild.
-50605	Minério de Prata	Pode ser refinado para Prata numa Fornalha de Guild.
-50606	Minério d'Ouro	Pode ser refinado para Ouro numa Fornalha de Guild.
-50607	Minério de Jade	Pode ser refinado para Jade numa Fornalha de Guild.
-50608	Minério de Ébano	Pode ser refinado para Ébano numa Fornalha de Guild.
-50609	Peça de Pérola	Pode ser refinada para Pérola numa Fornalha de Guild.
-50610	Minério de Platina	Pode ser refinado para Platina numa Fornalha de Guild.
-50611	Minério de Cristal	Pode ser refinado para Cristal numa Fornalha de Guild.
-50612	Minério de Ametista	Pode ser refinado para Ametista numa Fornalha de Guild.
-50613	Minério de Safira	Pode ser refinado para Safira numa Fornalha de Guild.
+50601	Pedra Diamante	Usando a Fornalha de Guild, podes produzir Diamante com esta pedra.
+50602	Pedra Âmbar	Usando a Fornalha de Guild, podes produzir Âmbar dourado com esta pedra desfeita.
+50603	Madeira Fóssil	Este tronco pode ser refinado para Madeira usando a Fornalha de Guild.
+50604	Minério de Cobre	Usando a Fornalha de Guild, podes produzir Cobre com este minério.
+50605	Minério de Prata	Usando a Fornalha de Guild, podes produzir Prata com este minério.
+50606	Minério d'Ouro	Usando a Fornalha de Guild, podes produzir Ouro com este minério.
+50607	Minério de Jade	Usando a Fornalha de Guild, podes produzir Jade com este minério.
+50608	Minério de Ébano	Usando a Fornalha de Guild, podes produzir Ébano com este minério.
+50609	Peça de Pérola	Usando a Fornalha de Guild, podes produzir uma Pérola com esta peça.
+50610	Minério de Platina	Usando a Fornalha de Guild, podes produzir Platina com este minério.
+50611	Minério de Cristal	Usando a Fornalha de Guild, podes produzir Cristal com este minério.
+50612	Minério de Ametista	Usando a Fornalha de Guild, podes produzir Ametista com este minério.
+50613	Minério de Safira	Usando a Fornalha de Guild, podes produzir Safira com este minério.
 50614	Minério de Azurite	Usando uma Fornalha de Guild podes produzir Azurite com este minério.
 50615	Minério de Rubi	Usando uma Fornalha de Guild podes produzir Rubi com este minério.
 50616	Minério de Granada	Usando uma Fornalha de Guild podes produzir Granada com este minério.
@@ -1643,14 +1643,14 @@
 50810	Sumo de Cardo	Este sumo é feito de Cardos.
 50811	Sumo de Tâmara	Este sumo é feito de Tâmaras.
 50812	Sumo de Planta Sam-Zi	Este sumo é feito de Plantas Sam-Zi.
-50813	Água Sim	Esta poção é feita de Sumo de Flor de Pêssego e Lilás. Aumenta em 10%, durante 3 minutos, a probabilidade de golpe perfurante.
-50814	Água Dok	Esta poção é feita de Sumo de Flor de Sino e Lilás. Aumenta em 10% a probabilidade de golpes críticos durante 3 minutos.
+50813	Água Sim	Uma poção de Sumo de Flor de Pêssego e Lilás. Aumenta em 10% a Probabilidade de golpes perfurantes.
+50814	Água Dok	Uma poção de Sumo de Flor de Sino e Lilás. Aumenta em 10% a probabilidade de golpes críticos.
 50815	Água Bo	Esta poção é feita de Sumo de Flor de Kaki + Cogumelo Tue. Ajuda a regenerar a tua mana.
 50816	Água Young	Esta poção é feita de Sumo de Raiz de Gango + Cogumelo Tue. Ajuda a regenerar a tua vida.
 50817	Água Zin	Esta poção é feita de Água Sim e Rosa Alpina. Aumenta em 50 o teu Valor de Ataque durante 3 minutos.
 50818	Água Sambo	Uma poção feita de Água Dok e Rosa Alpina. Aumenta em 70 a tua Defesa durante 3 minutos.
 50819	Água Mong	Uma poção feita de Água Bo e Amora. Aumenta em 10% a tua Defesa contra Magias durante 3 minutos.
-50820	Água Hwal	Uma poção é feita de Água Young e Amora. Aumenta em 3 a tua Velocidade de Ataque durante 3 minutos.
+50820	Água Hwal	Uma poção é feita de Água Young e Amora. Aumenta em 3 a tua Rapidez de Ataque durante 3 minutos.
 50901	Garrafa Vazia	Usada para preparar poções.
 50902	Receita do Iniciante	Uma tarefa simples que também pode ser executada por novatos.
 50903	Receita	Uma tarefa que já necessita de um pouco de prática.
@@ -1869,8 +1869,8 @@
 52058	Tigre Corajoso (Selo)	O selo invoca o teu Tigre Corajoso. Esta montada aumenta em 500 a VD do seu utilizador.
 52059	Tigre Corajoso (Selo)	O selo invoca o teu Tigre Corajoso. Esta montada aumenta em 150 a Defesa do seu utilizador.
 52060	Tigre Corajoso (Selo)	O selo invoca o teu Tigre Corajoso. Esta montada aumenta em 100 o Valor de Ataque do seu utilizador.
-52061	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (M). Depois de treinada, esta montada garante ao seu utilizador até 5% Forte contra Monstros.
-52062	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (M). Depois de treinada, esta montada aumenta até 5% a Experiência obtida.
+52061	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (M).
+52062	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (M).
 52063	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (M). Depois de treinada, esta montada aumenta até 500 a VD do seu utilizador.
 52064	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (M). Depois de treinada, esta montada aumenta até 150 a Defesa do seu utilizador.
 52065	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (M). Depois de treinada, esta montada aumenta até 100 o Valor de Ataque do seu utilizador.
@@ -1884,7 +1884,7 @@
 52073	Rena Corajosa (Selo)	O selo invoca a tua Rena Corajosa (M). Esta montada aumenta em 500 a VD do seu utilizador.
 52074	Rena Corajosa (Selo)	O selo invoca a tua Rena Corajosa (M). Esta montada aumenta em 150 a Defesa do seu utilizador.
 52075	Rena Corajosa (Selo)	O selo invoca a tua Rena Corajosa (M). Esta montada aumenta em 100 o Valor de Ataque do seu utilizador.
-52076	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (F). Depois de treinada, esta montada garante ao seu utilizador até 5% Forte contra Monstros.
+52076	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (F).
 52077	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (F). Depois de treinada, esta montada aumenta até 5% a Experiência obtida.
 52078	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (F). Depois de treinada, esta montada aumenta até 500 a VD do seu utilizador.
 52079	Rena Jovem (Selo)	O selo invoca a tua Rena Jovem (F). Depois de treinada, esta montada aumenta até 150 a Defesa do seu utilizador.
@@ -1899,21 +1899,21 @@
 52088	Rena Corajosa (Selo)	O selo invoca a tua Rena Corajosa (F). Esta montada aumenta em 500 a VD do seu utilizador.
 52089	Rena Corajosa (Selo)	O selo invoca a tua Rena Corajosa (F). Esta montada aumenta em 150 a Defesa do seu utilizador.
 52090	Rena Corajosa (Selo)	O selo invoca a tua Rena Corajosa (F). Esta montada aumenta em 100 o Valor de Ataque do seu utilizador.
-52091	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor. De acordo com o seu treino de combate, ele dá a quem o monta até 5% Força contra Monstros.
-52092	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor. De acordo com o seu treino de combate, ele aumenta a obtenção de Experiência em até 5%.
-52093	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor. De acordo com o seu treino de combate, ele aumenta a VD de quem o monta em até 500.
-52094	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor. De acordo com o seu treino de combate, ele aumenta a Defesa de quem o monta em até 150.
-52095	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor. De acordo com o seu treino de combate, ele aumenta o Ataque de quem o monta em até 100.
+52091	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor.
+52092	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor.
+52093	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor.
+52094	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor.
+52095	Selo do Dragor Jovem	O selo invoca o teu Jovem Dragor.
 52096	Selo do Dragor Selvagem	O selo invoca o teu Dragor Selvagem. Ele dá a quem o monta 3% Força contra Monstros.
 52097	Selo do Dragor Selvagem	O selo invoca o teu Dragor Selvagem. Ele aumenta a obtenção de Experiência em 3%.
 52098	Selo do Dragor Selvagem	O selo invoca o teu Dragor Selvagem. Ele aumenta a VD de quem o monta em 250.
 52099	Selo do Dragor Selvagem	O selo invoca o teu Dragor Selvagem. Ele aumenta a Defesa de quem o monta em 50.
 52100	Selo do Dragor Selvagem	O selo invoca o teu Dragor Selvagem. Ele aumenta o Ataque de quem o monta em 30.
-52101	Selo do Dragor Corajoso	O selo invoca o teu Dragor Corajoso. Ele dá a quem o monta 5% Força contra Monstros.
-52102	Selo do Dragor Corajoso	O selo invoca o teu Dragor Corajoso. Ele aumenta a obtenção de Experiência em 5%.
+52101	Selo do Dragor Corajoso	O selo invoca o teu Dragor Corajoso. Ele aumenta a Força contra Monstros de quem o monta em +5%.
+52102	Selo do Dragor Corajoso	O selo invoca o teu Dragor Corajoso. Ele aumenta a obtenção de experiência em 5%.
 52103	Selo do Dragor Corajoso	O selo invoca o teu Dragor Corajoso. Ele aumenta a VD de quem o monta em 500.
 52104	Selo do Dragor Corajoso	O selo invoca o teu Dragor Corajoso. Ele aumenta a Defesa de quem o monta em 150.
-52105	Selo do Dragor Corajoso	O selo invoca o teu Dragor Corajoso. Ele aumenta o Ataque de quem o monta em 100.
+52105	Selo do Dragor Corajoso	O selo invoca o teu Dragor Corajoso. Ele aumenta o Valor de Ataque de quem o monta em 100.
 52106	Moa Jovem (Selo)	O selo invoca o teu Moa Jovem. Depois de treinado em combate, ele aumenta a Força contra Monstros de quem o monta em até 5%.
 52107	Moa Jovem (Selo)	O selo invoca o teu Moa Jovem. Depois de treinado em combate, ele aumenta a obtenção de Pontos de Experiência em até 5%.
 52108	Moa Jovem (Selo)	O selo invoca o teu Moa Jovem. Depois de treinado em combate, ele aumenta a VD de quem o monta em até 500.
@@ -1925,7 +1925,7 @@
 52114	Moa Selvagem (Selo)	O selo invoca o teu Moa Selvagem. Ele aumenta a Defesa de quem o monta em 50.
 52115	Moa Selvagem (Selo)	O selo invoca o teu Moa Selvagem. Ele aumenta o Valor de Ataque de quem o monta em 30.
 52116	Moa Corajoso (Selo)	O selo invoca o teu Moa Corajoso. Ele aumenta a Força contra Monstros de quem o monta em +5%.
-52117	Moa Corajoso (Selo)	O selo invoca o teu Moa Corajoso. Ele aumenta a obtenção de Pontos de Experiência em 5%.
+52117	Moa Corajoso (Selo)	O selo invoca o teu Moa Corajoso. Ele aumenta a obtenção de experiência em 5%.
 52118	Moa Corajoso (Selo)	O selo invoca o teu Moa Corajoso. Ele aumenta a VD de quem o monta em 500.
 52119	Moa Corajoso (Selo)	O selo invoca o teu Moa Corajoso. Ele aumenta a Defesa de quem o monta em 150.
 52120	Moa Corajoso (Selo)	O selo invoca o teu Moa Corajoso. Ele aumenta o Valor de Ataque de quem o monta em 100.
@@ -1937,46 +1937,46 @@
 52706	Certificado da Rena (F)	Certificado de Posse de uma Rena Jovem (F)
 52707	Certificado do Dragor	Certificado de Posse de um Jovem Dragor
 52708	Certificado do Moa	Este certificado confirma que és o detentor de um Moa Jovem.
-53001		
-53002	Selo da Rena Jovem	Com este Selo podes invocar a engraçada Rena Jovem.
+53001		Podes usar este selo para invocares a tua amiga, a Fénix de Fogo.
+53002	Selo da Rena Jovem	Podes usar este selo para invocares a fofinha Cria de Rena.
 53003	Selo da Fénix de Gelo	Podes usar este Selo para invocares a tua amiga, a Fénix de Gelo.
-53005	Azrael Bebé	Esta versão pequena do líder demónio é extremamente carinhosa e irá dar-te um bónus de 1500 VD e mais 15% dano a partir do 2º andar da Torre Demoníaca e das Catacumbas do Demónio.
-53006	Azrael Bebé (Ouro)	Este mini demónio é extremamente carinhoso e irá dar-te um bónus de 1500 VD e mais 15% dano a partir do 2º andar da Torre Demoníaca e das Catacumbas do Demónio.
-53007	Selo de Bambi	Podes usar este Selo para invocares a tua jovem rena, Bambi.
-53008	Selo do Knuud	Este selo permite-te invocar a tua fofa cria de urso polar.
-53009	Selo do Bao Bao	Este selo permite-te invocar a tua fofa cria de panda.
-53010	Selo de Leonidas	Podes usar este Selo para invocares a tua cria de leão, Leonidas.
-53011	Selo de Khan	Podes usar este Selo para invocares a tua cria de tigre, Khan.
-53012	Selo de Porky	Podes usar este Selo para invocares o teu jovem javali, Porky.
-53013	Selo de Rufus	Podes usar este Selo para invocares a tua cria de lobo, Rufus.
-53014	Selo Mini-Executor	Este selo invoca o teu Mini-Executor rechonchudo numa armadura negra.
-53015	Selo Mini-Executor(ouro)	Este selo invoca o teu Mini-Executor rechonchudo numa armadura dourada.
-53016	Selo do Boney	Este selo invoca o teu pet esqueleto.
-53017	Selo da Fénix Jade	Este selo invoca a graciosa Fénix Jade.
-53018	Leonidas da Neve (Selo)	Podes usar este selo para invocares o teu pet.
-53019	Khan Árctico (Selo)	Podes usar este selo para invocares o teu pet.
-53020	Porkie Polar (Selo)	Podes usar este selo para invocares o teu pet.
-53021	Rufus do Gelo (Selo)	Podes usar este selo para invocares o teu pet.
-53022	Selo do Sheldon	Este selo faz com que o teu pet Sheldon nasça do seu ovo.
-53023	Selo do Cooper	Este selo faz com que o teu pet Cooper venha aos saltos até ti.
-53024	Pantera Bebé (7 Dias)	Este selo invoca a tua Cria de Pantera Negra.
-53025	Leopardo Bebé (7 Dias)	Este selo invoca a tua fofinha Cria de Leopardo.
-53026		
-53218	Pantera Bebé (30 Dias)	Este selo invoca a tua Cria de Pantera Negra.
-53219	Pantera Bebé (120 Dias)	Este selo invoca a tua Cria de Pantera Negra.
-53220	Leopardo Bebé (30 Dias)	Este selo invoca a tua fofinha Cria de Leopardo.
-53221	Leopardo Bebé (120 Dias)	Este selo invoca a tua fofinha Cria de Leopardo.
-53222	Selo - Cabeça de Abóbora	Podes usar este selo para invocares o teu Cabeça de Abóbora.
-53223	Selo - Pequena Vassoura	Podes usar este selo para invocares a tua Pequena Vassoura.
-53224	Selo Floco de Neve	Podes usar este selo para invocares Floco de Neve, o pequeno fofinho homem de neve.
-53225	Selo Sino de Neve	Podes usar este selo para invocares Sino de Neve, o pequeno festivo homem de neve.
-53226	Deus do Amor (Selo)	Podes usar este selo para invocares o teu casamenteiro pessoal. Ele concede-te mais 5% de Hipótese de Golpes Perfurantes e aumenta a tua VD em 1500.
-53227	Coração Feroz (Selo)	Podes usar este selo para invocares o Coração Feroz. Ele concede-te mais 5% de Hipótese de Golpes Críticos e aumenta a tua VD em 1500.
-53228	Lua Crescente (Selo)	Podes usar este selo para invocares a tua Lua Crescente Azul.
-53229	Lua Crescente (Selo)	Podes usar este selo para invocares a tua Lua Crescente Vermelha.
-53232	Huashin Bebé	A versão miniatura do General Huashin dá-te 5% mais probabilidade de um ataque perfurante e aumenta a VD em 1500.
-53501		
-53502	Cofre da Rena Jovem	A Rena Jovem dentro deste cofre espera impacientemente que a libertes.
+53005	Azrael Bebé	A versão mini do demónio líder é extremamente afectuosa. A partir do 2º andar da Torre Demoníaca e das Catacumbas do Demónio, ele irá dar-te um bónus de | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53006	Azrael Bebé (Ouro)	A versão mini do demónio líder é extremamente afectuosa. A partir do 2º andar da Torre Demoníaca e das Catacumbas do Demónio, ele irá dar-te um bónus de | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53007	Selo de Bambi	Podes usar este selo para invocares a tua cria de rena, Bambi. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53008	Selo do Knuud	Este selo permite-te invocar a tua fofa cria de urso polar. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53009	Selo do Bao Bao	Este selo permite-te invocar a tua fofa cria de panda. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53010	Selo de Leonidas	Podes usar este Selo para invocares a tua cria de leão, Leonidas. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53011	Selo de Khan	Podes usar este Selo para invocares a tua cria de tigre, Khan. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53012	Selo de Porky	Podes usar este Selo para invocares o teu jovem javali, Porky. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53013	Selo de Rufus	Podes usar este Selo para invocares a tua cria de lobo, Rufus. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53014	Selo Mini-Executor	Este selo invoca o teu Mini-Executor rechonchudo numa armadura negra. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53015	Selo Mini-Executor(ouro)	Este selo invoca o teu Mini-Executor rechonchudo numa armadura dourada. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53016	Selo do Boney	Este selo invoca o teu pet esqueleto. Ele proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53017	Selo da Fénix Jade	Este selo invoca a graciosa Fénix Jade. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +50% probabilidade de 30% EXP bónus
+53018	Leonidas da Neve (Selo)	Podes usar este selo para invocares o pequeno leão de neve. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53019	Khan Árctico (Selo)	Podes usar este selo para invocares o pequeno tigre de neve. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53020	Porkie Polar (Selo)	Podes usar este selo para invocares o teu pequeno porquinho polar. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53021	Rufus do Gelo (Selo)	Podes usar este selo para invocares o teu pequeno lobo polar. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53022	Selo do Sheldon	Este selo faz com que o teu pet Sheldon nasça do seu ovo. Ele proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53023	Selo do Cooper	Este selo faz com que o teu pet Cooper venha aos saltos até ti. Ele proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53024	Pantera Bebé (7 Dias)	Este selo invoca a tua Cria de Pantera Negra. O pet proporciona-te | +5% Resistência a Dano de Habilidades | +5% Probabilidade de Golpes Perfurantes | + 1.500 VD
+53025	Leopardo Bebé (7 Dias)	Este selo invoca a tua fofinha Cria de Leopardo. O pet proporciona-te | +10 Valor de Defesa | +5% Probabilidade de Golpes Críticos | +1.500 VD
+53026		Podes usar este selo para invocares a tua Fénix Pepita. O pet aumenta a experiência obtida em +5%.
+53218	Pantera Bebé (30 Dias)	Este selo invoca a tua Cria de Pantera Negra. O pet proporciona-te | +5% Resistência a Dano de Habilidades | +5% Probabilidade de Golpes Perfurantes | + 1.500 VD
+53219	Pantera Bebé (120 Dias)	Este selo invoca a tua Cria de Pantera Negra. O pet proporciona-te | +5% Resistência a Dano de Habilidades | +5% Probabilidade de Golpes Perfurantes | + 1.500 VD
+53220	Leopardo Bebé (30 Dias)	Este selo invoca a tua fofinha Cria de Leopardo. O pet proporciona-te | +10 Valor de Defesa | +5% Probabilidade de Golpes Críticos | +1.500 VD
+53221	Leopardo Bebé (120 Dias)	Este selo invoca a tua fofinha Cria de Leopardo. O pet proporciona-te | +10 Valor de Defesa | +5% Probabilidade de Golpes Críticos | +1.500 VD
+53222	Selo - Cabeça de Abóbora	Podes usar este selo para invocares o teu Cabeça de Abóbora. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53223	Selo - Pequena Vassoura	Podes usar este selo para invocares a tua Pequena Vassoura. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53224	Selo Floco de Neve	Podes usar este selo para invocares Floco de Neve, o pequeno fofinho homem de neve. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53225	Selo Sino de Neve	Podes usar este selo para invocares Sino de Neve, o pequeno festivo homem de neve. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +5% Golpes Críticos
+53226	Deus do Amor (Selo)	Podes usar este selo para invocares o teu casamenteiro pessoal. Ele proporciona-te | +5% Probabilidade de Golpes Perfurantes | +1.500 VD
+53227	Coração Feroz (Selo)	Podes usar este selo para invocares o Coração Feroz. Ele proporciona-te | +5% Probabilidade de Golpes Críticos | +1.500 VD
+53228	Lua Crescente (Selo)	Podes usar este selo para invocares a tua Lua Crescente Azul. O pet proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +1.500 VD
+53229	Lua Crescente (Selo)	Podes usar este selo para invocares a tua Lua Crescente Vermelha.  Ela proporciona-te | +15% Ataque Mágico/Corpo-a-Corpo | +5% Probabilidade de Golpes Críticos
+53232	Huashin Bebé	A versão mini do General Huashin proporciona-te | +5% Probabilidade de Golpes Perfurantes | +1.500 VD
+53501		A Fénix de Fogo aguarda que a libertes do interior desta gaiola.
+53502	Cofre da Rena Jovem	A Cria de Rena aguarda impacientemente que a libertes deste cofre.
 53503	Gaiola da Fénix de Gelo	A Fénix de Gelo aguarda que a libertes do interior desta gaiola.
 53504		
 53505	Cofre Azrael Bebé	O Bebé Azrael, versão miniatura do lorde demónio, aguarda que alguém o liberte deste cofre.
@@ -1992,10 +1992,10 @@
 53515	Cofre Mini-Executor Ouro	O rechonchudo Mini-Executor, na sua armadura dourada, aguarda que o libertem deste cofre.
 53516	Cofre de Ossos	Contem um item aleatório. Com alguma sorte poderás encontrar no seu interior o cão-esqueleto, Boney.
 53517	Jaula Jade	A rara Fénix Jade está nesta jaula à espera que a libertes.
-53518	Leonidas da Neve	O cofre contém o selo do Leonidas da Neve.
-53519	Khan Árctico	O cofre contém o selo do Khan Árctico.
-53520	Porkie Polar	O cofre contém o selo do Porkie Polar.
-53521	Rufus do Gelo	O cofre contém o selo do Rufus do Gelo.
+53518	Leonidas da Neve	A jaula contém o Selo do Leonidas da Neve.
+53519	Khan Árctico	A jaula contém o Selo do Khan Árctico.
+53520	Porkie Polar	A jaula contém o Selo do Porkie Polar.
+53521	Rufus do Gelo	A jaula contém o Selo do Rufus do Gelo.
 53522	Ninho do Sheldon	O teu pet Sheldon escondeu-se neste ninho.
 53523	Gaiola para Coelho	O pequeno coelho Cooper está escondido nesta gaiola.
 53526		
@@ -2017,7 +2017,7 @@
 70002	Terceira Mão	Uma mão que apanha automaticamente o Yang caído.
 70003	Livro do Líder	Um dos sete livros de Estratégia de Guerra.
 70004	Medalha da Diligência	Recompensa pelo teu trabalho duro. Dá-te 20% pontos de experiência durante o combate.
-70005	Anel de Experiência	Um anel usado por heróis antigos. Permite adquirir mais EXP. | Não pode ser desactivado.
+70005	Anel de Experiência	Aumenta a Experiência obtida em 50% durante 60 minutos.
 70006	Anel de Idiomas	O anel forjado para diplomacia numa Era Antiga. Usa-o para falar com pessoas de outros Reinos.
 70008	Bandeira Branca	Uma bandeira branca que indica rendição.
 70009	Caixa do Tesouro	Uma caixa bastante ornamentada. Só pode ser aberta com uma chave especial.
@@ -2028,24 +2028,24 @@
 70015	Escova Barata	Uma comum e robusta escova com um sólido cabo em madeira.
 70020	Vinho de Flor de Pêssego	Uma bebida que irá imediatamente regenerar a tua Vida (VD) em 500 pontos.
 70024	Mármore da Bênção	Lendária mármore abençoada. Quando um Item tiver 4 atributos permite adicionar outro atributo.
-70027	Memorando do Ferreiro	Um memorando do Ferreiro que te mostra como melhorar as tuas armas.
+70027	Memorando do Ferreiro	Um memorando do Ferreiro que te mostra como melhorar itens. Aumenta para 100% a probabilidade de melhorar um item de +4 para +5.
 70031	Manual de Duelos	Este manual refere-se, entre outras coisas, aos potenciais e fraquezas da anatomia humana.
 70035	Ferro Mágico	Quando combinas este Ferro com um Pergaminho da Bênção no Ferreiro poderás criar um Pergaminho da Guerra.
-70037	Livro da Amnésia	O livro lendário que remove o conhecimento sobre uma Habilidade. Podes recolocar 1 Ponto de Habilidade.
+70037	Livro da Amnésia	Com este livro, o teu herói pode perder a memória de uma habilidade aprendida. Dessa forma, poderás mover 1 ponto de habilidade.
 70038	Capa de Bravura	Os Guerreiros antigos demonstravam a sua bravura ao usar uma capa colorida com a qual puxavam a atenção de todos os monstros para si.
 70039	Manual do Ferreiro	Este livro contém a alma de um Ferreiro antigo. Se for usado aumenta a probabilidade de melhorar um Item.
 70040	Teimosia do Orc	Reduz o consumo de Resistência para metade.
-70043	Luva de Ladrão	Duplica a probabilidade de ganhar Itens.
+70043	Luva de Ladrão	Duplica a probabilidade de pilhar itens.
 70047	Anel de Idiomas(Amostra)	Em tempos idos, este anel foi produzido para um círculo de diplomatas. Permite ao seu utilizador falar os idiomas de outros Reinos.
-70048	Capa de Escape	Uma capa inestimável usada por muitos fugitivos. Quando equipada esconde o teu Karma.
-70049	Anel de Lucy	No anel está escrito: "Que o Deus Dragão te abençoe". O anel reduz a probabilidade de perderes itens em combate.
+70048	Capa de Escape	Usa este manto misterioso para esconderes o teu verdadeiro karma.
+70049	Anel de Lucy	No anel está gravado: "Que o Deus Dragão te abençoe". O anel reduz a probabilidade de perderes itens em batalha. Em vez de perderes um item, perderás o Anel de Lucy.
 70050	Símbolo do Rei Sábio	Um símbolo herdado da família real antiga que concede grande poder ao portador.
 70051	Luva do Rei Sábio	Um artigo herdado da família real antiga que concede um poder misterioso ao portador.
 70052	Amuleto da Sorte 1	Um amuleto que é usado por Budistas para se protegerem do azar.
 70053	Amuleto da Sorte 2	Um amuleto que é usado por Budistas para se protegerem do azar.
 70054	Amuleto da Sorte 3	Um amuleto que é usado por Budistas para se protegerem do azar.
 70056	Sumo de Romã+	Uma poção que recupera instantaneamente a tua VD em 1000 pontos.
-70057	Capa de Bravura	Uma capa colorida com a qual os guerreiros outrora provavam a sua coragem, uma vez que ela atrai a atenção de vários monstros. Este item é negociável.
+70057	Capa de Bravura	Uma capa colorida com a qual os guerreiros outrora provavam a sua coragem, uma vez que ela atrai a atenção de vários monstros.
 70058	Anel do Transporte	Este anel irá transportar-te para uma localização à tua escolha, dentro do teu Reino, 50 vezes. Não negociável.
 70063	Transformar Disfarce	Remove os bónus de um dos teus disfarces e substitui-os por novos. Com alguma sorte, a quantidade de bónus pode até ser mudada (até um máx. de 3).
 70064	Encantar Disfarce	Remove os bónus de um dos teus disfarces e substitui-os por novos.
@@ -2070,16 +2070,16 @@
 71005	Anel de Idiomas	Podes entender os Idiomas de todos os Reinos durante 7 dias. (Não comerciável)
 71006	Anel de Idiomas	Podes entender os Idiomas de todos os Reinos durante 15 dias. (Não comerciável)
 71007	Anel de Idiomas	Podes entender os Idiomas de todos os Reinos durante 30 dias. (Não comerciável)
-71008	Livro de Pesca	Livro que duplica a probabilidade de captura de peixes raros. (Não comerciável)
+71008	Livro de Pesca	Necessário para a captura de peixes raros e duplica a probabilidade de os apanhares.
 71009	Expansão do Armazém	O teu armazém recebe 2 espaços extra de arrumação.
 71010	Terceira Mão	Uma mão que apanha automaticamente o Yang caído.
 71011	Máscara de Emoções	Podes dar liberdade aos teus sentimentos com esta máscara.
 71012	Livro do Líder	Sempre que o líder do Grupo estiver equipado com este livro todos os membros adquirirão mais 30% de Experiência. Tempo máximo: 3 horas. (Não comerciável)
 71013	Fogo de Artifício	Foguete que ilumina o céu para todos os jogadores. (Não comerciável)
-71014	Poção de Ataque +10	Aumenta a tua rapidez de ataque em 10% durante 30 minutos.
-71015	Anel de Experiência	A tua personagem recebe mais 50% de Experiência durante o combate.
-71016	Luva de Ladrão	Duplica a probabilidade de pilhar itens durante 30 minutos.
-71017	Moeda da Sorte	Aumenta a probabilidade de ganhar Yang em 50%. (Não comerciável)
+71014	Poção de Ataque +10	Aumenta a tua rapidez de ataque em 10%.
+71015	Anel de Experiência	Obténs 50% mais Pontos de Experiência em combate.
+71016	Luva de Ladrão	Duplica a probabilidade de pilhar itens.
+71017	Moeda da Sorte	Duplica a probabilidade de pilhar Yang.
 71018	Bênção da Vida	Uma bênção com a qual o teu VD é imediatamente recuperado a 100%.
 71019	Bênção da Magia	Uma bênção que regenera todo o teu MN imediatamente.
 71020	Bênção do Dragão	Uma bênção com a qual os teus VD e MN são imediatamente recuperados a 100%.
@@ -2089,15 +2089,15 @@
 71024	Livro da Força	Remove os Pontos de Atributo colocados em Força para que os possas distribuir de novo.
 71025	Pedra do Ferreiro	No Ferreiro podes criar um Manual do Ferreiro com a ajuda desta Pedra e de um Pergaminho da Bênção.
 71026	Metal Mágico	Este material, quando combinado com um Pergaminho da Bênção, permite-te criar um Pergaminho do Dragão no Ferreiro.
-71027	Vida do Deus Dragão	Aumenta o teu VD máximo em 20% durante 30 minutos.
-71028	Ataque do Deus Dragão	Aumenta os danos que fazes em luta em 12-15% durante 30 minutos.
-71029	Magia do Deus Dragão	Aumenta o teu MN máximo em 20% durante 30 minutos.
-71030	Defesa do Deus Dragão	Reduz os danos que recebes em luta em 12-15% durante 30 minutos.
+71027	Vida do Deus Dragão	Aumenta a tua VD máxima em 20%.
+71028	Ataque do Deus Dragão	Aumenta o teu valor de ataque em 20%.
+71029	Magia do Deus Dragão	Aumenta a tua MN máxima em 20%.
+71030	Defesa do Deus Dragão	Reduz o dano que recebes em combate em 20%.
 71031	Ajuda do Deus Dragão	A Vitalidade, Força, Inteligência e Destreza são temporariamente quintuplicadas.
 71032	Pergaminho do Dragão	Remove o risco de um Item ser destruído se o Melhoramento falhar. A sua qualidade será apenas reduzida 1 nível. Adicionalmente, a probabilidade do Melhoramento ser bem sucedido é aumentada em 10%.
 71033	Máscara de Emoções	Podes dar liberdade aos teus sentimentos com esta máscara.
-71034	Poção de Ataque +15	Aumenta a rapidez de ataque em 15% durante 30 minutos.
-71035	Elixir do Investigador	Aumenta a qualidade dos objectos de pesquisa que recolheste, aumentando assim a probabilidade de serem aceites.
+71034	Poção de Ataque +15	Aumenta a tua rapidez de ataque em 15%.
+71035	Elixir do Investigador	Melhora a qualidade dos objetos de investigação que recolheste, aumentando assim a probabilidade de serem aceites. Não se aplica a missões em Yohara.
 71036	Papiro - Chefe Orc	Irá invocar um Chefe Orc para perto da tua personagem. Cuidado! É um Boss!
 71037	Papiro - Líder Negro	Irá invocar um Líder Negro para perto da tua personagem. Cuidado! É um Boss!
 71038	Papiro - Rei Aranha	Irá invocar um Rei Aranha para perto da tua personagem. Cuidado! É um Boss!
@@ -2106,14 +2106,14 @@
 71041	Papiro - Nove Caudas	Irá invocar um Nove Caudas para perto da tua personagem. Cuidado! É um Boss!
 71042	Papiro - Rei Demónio	Irá invocar um Rei Demónio Elite para perto da tua personagem. Cuidado! É um Boss!
 71043	Papiro - Tigre Fantasma	Irá invocar um Tigre Fantasma para perto da tua personagem. Cuidado! É um Boss!
-71044	Golpe Crítico	Aumenta a probabilidade de aplicares um golpe crítico em luta em 20% durante 10 minutos.
-71045	Golpe Perfurador	Aumenta a probabilidade de aplicares um golpe perfurante em 20% durante 10 minutos.
-71047	Elixir da Pedra Espírita	Remove uma pedra espírita de um dos teus itens.
+71044	Golpe Crítico	Aumenta a probabilidade de um golpe crítico em 20%.
+71045	Golpe Perfurador	Aumenta a probabilidade de um golpe perfurante em 20%.
+71047	Elixir da Pedra Espírita	Remove uma Pedra Espírita de um dos teus itens.
 71048	Feitiço de Mudança	Este feitiço irá mudar o género da tua personagem.
 71049	Pacote de Seda	Com este pacote podes abrir uma loja privada livre de encargos durante 10 dias.
 71050	Poção de Velocidade	Aumenta a tua rapidez de movimento em 60 durante 30 minutos.
-71051	Enfeitiçar Itens	Adiciona um novo bónus especial a um dos teus itens caso ele ainda não o tenha.
-71052	Bênção para Itens	Remove o bónus especial de um dos teus itens e adiciona outro.
+71051	Enfeitiçar Itens	Remove o bónus especial de um dos teus itens e adiciona outro.
+71052	Bênção para Itens	Adiciona um novo bónus especial a um dos teus itens caso ele ainda não o tenha.
 71054	Permissão de Exílio	Uma personagem poderá ir para o exílio noutro Reino. Isto significa mudar de Reino.
 71055	Permissão de Mudar Nome	Altera o nome da Personagem.
 71056	Tintura Celestial	Aumenta a probabilidade de sucesso do melhoramento de uma Pedra Espírita.
@@ -2144,7 +2144,7 @@
 71081	Papiro da Metin (M)	Invoca uma Pedra Metin de dificuldade Média para perto da tua personagem.
 71082	Papiro da Metin (D)	Invoca uma Pedra Metin de dificuldade Difícil para perto da tua personagem.
 71083	Manual da Pedra	Remove todos os Pedaços de Pedra Partida de um item. Terás assim outra oportunidade de melhorar o teu equipamento.
-71084	Feitiço para Itens	Modifica os bónus de um dos teus Itens.
+71084	Feitiço para Itens	Remove os bónus de um dos teus itens e adiciona novos. Aplica-se apenas aos bónus 1-5.
 71085	Reforço para Itens	Se tiveres sorte pode adicionar um novo bónus num dos teus itens. (até ao 4º bónus)
 71088	Livro da Missão Fácil	O livro, cosido em pele castanha, contém uma missão que pode também ser levada a cabo por novatos.
 71089	Livro da Missão Normal	O livro, cosido em pele castanha, contém uma missão que apenas pode ser levada a cabo por aqueles que já possuem alguma experiência em combate.
@@ -2153,121 +2153,121 @@
 71092	Livro da Transformação	A leitura bem-sucedida deste Livro aumenta a tua habilidade de Polimorfismo. Desaparece depois de usado.
 71093	Mármore do Polimorfismo	Podes transformar-te num monstro a partir do mármore.
 71094	Conselho do Eremita	Aumenta a probabilidade de acertares a leitura de um Livro de Habilidade (ou Pedra da Alma) em 2.5 vezes.
-71095	Passagem	Se deres este bilhete ao guarda ser-te-á permitida a entrada num novo andar da Caverna das Aranhas, assim como no Forte do Dragão Vermelho.
+71095	Passagem	Se deres este bilhete ao guarda responsável, ser-te-á permitida entrada num novo andar de masmorras selecionadas.
 71096	Medalha de Passagem	Esta medalha permite a passagem por um Portão.
 71099	Anel do Substituto	Permite ao Líder de uma Guild escolher um substituto.
 71100	Pergaminho da Mudança	Esquece o teu treino e começa um novo. Precisas de ser pelo menos nível 31 para o fazer.
-71101	Poção da Rapidez	Esta poção diminui o tempo de carregamento das habilidades em 20% durante 30 minutos.
-71102		
+71101	Poção da Rapidez	Esta poção reduz o tempo de carregamento das tuas habilidades em 20%.
+71102		Aumenta a tua Rapidez de Feitiço em 30%.
 71103	Redistribuição (VIT)	Coloca a tua Vitalidade a 1 e permite que distribuas esses pontos de novo.
 71104	Redistribuição (INT)	Coloca a tua Inteligência a 1 e permite que distribuas esses pontos de novo.
 71105	Redistribuição (FRÇ)	Coloca a tua Força a 1 e permite que distribuas esses pontos de novo.
 71106	Redistribuição (DES)	Coloca a tua Destreza a 1 e permite-te redistribuir os pontos recebidos.
 71107	Fruta da Vida	Aumenta os Pontos de Karma em 2000. Terás de esperar 8 horas entre cada uso.
 71108	Sumo de Romã	Uma poção que recupera instantaneamente a tua VD em 800 pontos. Este item é negociável.
-71109	Pergaminho da Correcção	Com este Pergaminho podes remover a última Pedra-Espírita que colocaste num item.
+71109	Pergaminho da Correcção	Este pergaminho permite-te remover a última Pedra Espírita adicionada com sucesso a um item.
 71110	Açúcar para Cavalo	Este pedaço de açúcar torna possível dar um nome ao Cavalo. Adicionalmente também aumenta a sua Defesa em 20 pontos.
 71113	Vidro da Perspicácia	Permite-te mostrar itens teus a outros jogadores. O Vidro parte-se no processo.
-71114	Selo do Javali (Amarelo)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
+71114	Selo do Javali (Amarelo)	A magia deste selo invoca um poderoso espírito animal capaz de te transportar rapidamente para o destino da tua escolha. Aumenta o valor de Defesa de quem o monta em 75.
 711151	Selo do Javali (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711152	Selo do Javali (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711153	Selo do Javali (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711154	Selo do Javali (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
-71115	Selo do Javali (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
-71116	Selo do Lobo (Amarelo)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
+71115	Selo do Javali (Azul)	A magia deste selo invoca um poderoso espírito animal capaz de te transportar rapidamente para o destino da tua escolha. Aumenta o valor de Defesa de quem o monta em 100.
+71116	Selo do Lobo (Amarelo)	A magia deste selo invoca um poderoso espírito animal capaz de te transportar rapidamente para o destino da tua escolha. Aumenta o valor de Defesa de quem o monta em 100.
 711171	Selo do Lobo (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711172	Selo do Lobo (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711173	Selo do Lobo (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711174	Selo do Lobo (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
-71117	Selo do Lobo (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
-71118	Selo do Tigre (Amarelo)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
+71117	Selo do Lobo (Azul)	A magia deste selo invoca um poderoso espírito animal capaz de te transportar rapidamente para o destino da tua escolha. Aumenta o valor de Defesa de quem o monta em 150.
+71118	Selo do Tigre (Amarelo)	A magia deste selo invoca um poderoso espírito animal capaz de te transportar rapidamente para o destino da tua escolha. Aumenta o valor de Defesa de quem o monta em 125.
 711191	Selo do Tigre (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711192	Selo do Tigre (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711193	Selo do Tigre (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711194	Selo do Tigre (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
-71119	Selo do Tigre (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
-71120	Selo do Leão (Amarelo)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
+71119	Selo do Tigre (Azul)	A magia deste selo invoca um poderoso espírito animal capaz de te transportar rapidamente para o destino da tua escolha. Aumenta o valor de Defesa de quem o monta em 200.
+71120	Selo do Leão (Amarelo)	A magia deste selo invoca um poderoso espírito animal capaz de te transportar rapidamente para o destino da tua escolha. Aumenta o Valor de Ataque de quem o monta em 200.
 711211	Selo do Leão (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711212	Selo do Leão (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711213	Selo do Leão (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
 711214	Selo do Leão (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
-71121	Selo do Leão (Azul)	Este Selo mágico invoca um poderoso Espírito Animalesco que irá transportar-te com rapidez ao local que pretenderes.
-71122		
+71121	Selo do Leão (Azul)	A magia deste selo invoca um poderoso espírito animal capaz de te transportar rapidamente para o destino da tua escolha. Aumenta o Valor de Ataque de quem o monta em 300.
+71122		Pode ser usado para entrar no Templo do Dragão.
 71123	Escamas do Dragão	As Escamas do Dragão são dos materiais mais resistentes que existem.
-71124	Leão Branco	Os animais de pêlo branco são raros e venerados por muitas culturas, pois acreditam que possuem poderes notáveis.
-71125	Selo do Javali de Guerra	Domar espíritos de animais maléficos requer uma enorme quantidade de habilidade mágica. Mesmo assim, o resultado é muito impressionante.
-71126	Selo Lobo de Combate	Domar espíritos de animais maléficos requer uma enorme quantidade de habilidade mágica. Mesmo assim, o resultado é muito impressionante.
-71127	Selo Tigre da Tempestade	Domar espíritos de animais maléficos requer uma enorme quantidade de habilidade mágica. Mesmo assim, o resultado é muito impressionante.
-71128	Selo Leão da Batalha	Domar espíritos de animais maléficos requer uma enorme quantidade de habilidade mágica. Mesmo assim, o resultado é muito impressionante.
+71124	Leão Branco	Animais de pêlo branco são extremamente raros e muitas culturas adoram-nos, crendo que eles possuem poderes extraordinários. Aumenta a experiência obtida em 30%.
+71125	Selo do Javali de Guerra	Domesticar espíritos de animais maléficos requer uma hábil utilização da magia, mas os resultados podem ser muito impressionantes. Proporciona a quem o monta +20% Forte contra Monstros.
+71126	Selo Lobo de Combate	Domesticar espíritos de animais maléficos requer uma hábil utilização da magia, mas os resultados podem ser muito impressionantes. Aumenta a tua Probabilidade de Golpes Críticos em 10%.
+71127	Selo Tigre da Tempestade	Domesticar espíritos de animais maléficos requer uma hábil utilização da magia, mas os resultados podem ser muito impressionantes. Aumenta a tua Probabilidade de Golpes Críticos em 10%.
+71128	Selo Leão da Batalha	Domesticar espíritos de animais maléficos requer uma hábil utilização da magia, mas os resultados podem ser muito impressionantes. Reduz o dano que sofres ao te defenderes em 10%.
 71129	Garra do Dragão	O aspecto desta imponente garra traz-me algo à memória...
-71130	Passagem	Se deres este bilhete ao guarda ser-te-á permitida a entrada num novo andar da Caverna das Aranhas, assim como no Forte do Dragão Vermelho. Este item é negociável.
-71131	Selo do Cavalo Negro	Selo de um nobre cavalo negro.
-71132	Selo do Cavalo Negro	Selo de um nobre cavalo negro.
-71133	Selo do Cavalo Negro	Selo de um nobre cavalo negro.
-71134	Selo do Cavalo Negro	Selo de um nobre cavalo negro.
-71135	Anel Lua Crescente	Um anel com uma gravação artisticamente desenhada à semelhança de uma Lua Crescente.
-71136	Doce Poderoso	Um Doce feito de ingredientes secretos que proporciona experiência e força para o combate.
-71137	Selo Tigre Real Azul	A magia deste Selo invoca a tua montada, o majestoso Tigre Real Azul.
-71138	Selo Tigre Real Vermelho	A magia deste Selo invoca a tua montada, o majestoso Tigre Real Vermelho.
-71139	Selo Tigre Real Dourado	A magia deste Selo invoca a tua montada, o majestoso Tigre Real Dourado.
-71140	Selo Tigre Real Verde	A magia deste Selo invoca a tua montada, o majestoso Tigre Real Verde.
-71141	Selo Tigre Real Cinzento	A magia deste Selo invoca a tua montada, o majestoso Tigre Real Cinzento.
-71142	Selo Tigre Real Branco	A magia deste Selo invoca a tua montada, o majestoso Tigre Real Branco.
+71130	Passagem	Se deres este bilhete ao guarda responsável, ser-te-á permitida entrada num novo andar de masmorras selecionadas. Este item é negociável.
+71131	Selo do Cavalo Negro	Selo de um Nobre Cavalo Negro. Aumenta a tua Rapidez de Movimento em 60.
+71132	Selo do Cavalo Negro	Selo de um Nobre Cavalo Negro. Aumenta a tua Rapidez de Movimento em 60.
+71133	Selo do Cavalo Negro	Selo de um Nobre Cavalo Negro. Aumenta a tua Rapidez de Movimento em 60.
+71134	Selo do Cavalo Negro	Selo de um Nobre Cavalo Negro. Aumenta a tua Rapidez de Movimento em 60.
+71135	Anel Lua Crescente	Ele proporciona-te: | +50% Pontos de Experiência | +20% Rapidez de Ataque | +20% Rapidez de Feitiço | +30% Dano Físico | +10% VD Máxima | +10% MN Máxima | +5% para todos os Bónus de Disfarces
+71136	Doce Poderoso	O Doce, feito de ingredientes secretos, proporciona-te | +50% Pontos de Experiência | +30% Dano Físico | +20 Rapidez de Ataque | +20 Rapidez de Feitiço | +10% VD Máxima | +10% MN Máxima
+71137	Selo Tigre Real Azul	A magia deste selo invoca a tua montada, o majestoso Tigre Real (azul). Aumenta a experiência obtida em 30%.
+71138	Selo Tigre Real Vermelho	A magia deste selo invoca a tua montada, o majestoso Tigre Real (vermelho). Aumenta a experiência obtida em 30%.
+71139	Selo Tigre Real Dourado	A magia deste selo invoca a tua montada, o majestoso Tigre Real (ouro). Aumenta a experiência obtida em 30%.
+71140	Selo Tigre Real Verde	A magia deste selo invoca a tua montada, o majestoso Tigre Real (verde). Aumenta a experiência obtida em 30%.
+71141	Selo Tigre Real Cinzento	A magia deste selo invoca a tua montada, o majestoso Tigre Real (cinzento). Aumenta a experiência obtida em 30%.
+71142	Selo Tigre Real Branco	A magia deste selo invoca a tua montada, o majestoso Tigre Real (branco). Aumenta a experiência obtida em 30%.
 71143	Anel da Alegria	Um anel com uma decoração valiosa feita de jade e pedras celestiais, que tem os seguintes bónus: +50% Pontos de Experiência +20% Rapidez de Ataque +20% Rapidez de Feitiço +30% Forte contra Monstros +10% VD Máxima +10% MN Máxima
 71144	Cofre de Natal	Um presente de Natal criado com carinho que contém uma surpresa festiva.
-71145	Amuleto do Amor Eterno	Um amuleto de prata em forma de coração, decorado com pedras preciosas mágicas.
+71145	Amuleto do Amor Eterno	Um amuleto de prata em forma de coração, decorado com pedras preciosas mágicas. Proporciona-te | +30% EXP | +10 Rapidez de Ataque | +10 Rapidez de Feitiço | +5% VD e MN | +10% Forte contra Monstros
 71146	Cofre do Cupido (rosa)	Um cofre em forma de coração com 5 surpresas no interior. Pode ser aberto a cada 30 minutos.
 71147	Cofre do Cupido (azul)	Um cofre em forma de coração com 5 surpresas no interior. Pode ser aberto a cada 30 minutos.
-71148	Anel da Força de Vontade	Dá-te +30% EXP, +20% Resistência a dano de Guerreiros, +20% Resistência a dano de Ninjas, +20% Resistência a dano de Lycans, +30% Forte contra Monstros, +10% VD Máx. e +10% MN Máx. durante 7 dias.
-71149	Anel do Poder Mortal	Dá-te +30% EXP, +20% Resistência a dano de Suras, +20% Resistência a dano de Xamãs, +20% Resistência a dano de Lycans, +30% Forte contra Monstros, +10% VD Máx. e +10% MN Máx. durante 7 dias.
+71148	Anel da Força de Vontade	Dá-te +30% EXP, +20% Probabilidade de Defesa contra Guerreiros, +20% Probabilidade de Defesa contra Ninjas, +20% Probabilidade de Defesa contra Lycans, +30% Forte contra Monstros, +10% VD Máx. e +10% MN Máx. pela duração do item.
+71149	Anel do Poder Mortal	Dá-te +30% EXP, +20% Resistência a dano de Suras, +20% Resistência a dano de Xamãs, +20% Resistência a dano de Lycans, +30% Forte contra Monstros, +10% VD Máx. e +10% MN Máx. durante algum tempo.
 71150	Ovo Mágico	O cofre oval artisticamente decorado contém mais do que uma simples surpresa de Páscoa. Ele revela os seus tesouros pouco a pouco.
 71151	Feitiço Verde	Remove os bónus de um dos teus itens e adiciona novos. Apenas pode ser usado em armas e armaduras até nível 40. Item dos cofres de nível. Não negociável.
 71152	Reforço Verde	Com um pouco de sorte, isto irá adicionar um novo bónus a um dos teus itens (até um máx. de 4 bónus). Apenas pode ser usado em armas e armaduras até nível 40. Item dos cofres de nível. Não negociável.
 71153	Poção da Sabedoria	Esta poção permite-te obter 100% mais experiência durante 1 hora de jogo. Não negociável.
 71154	Poção da Ascensão (3h)	Esta poção permite-te obter 80% mais experiência durante três horas de tempo de jogo. Não negociável.
 71155	Poção da Sabedoria (3h)	Esta poção permite-te obter 100% mais experiência durante 3 horas de jogo. Não negociável.
-71156	Poção do Espírito (3h)	Esta poção permite-te obter 150% mais experiência durante três horas de tempo de jogo. Não negociável.
+71156	Poção do Espírito (3h)	Aumenta a Experiência obtida em 150%.
 71157		
-71158	Medalha do Herói	Dá-te +50% EXP, +30% Dano, +20% Rapidez de Ataque, +20% Rapidez de Feitiço, +10% VD e +10% MN.
+71158	Medalha do Herói	Dá +50% EXP, +30 Dano Físico, +20% Rapidez de Ataque, +20% Rapidez de Feitiço, +10% VD e +10% MN.
 71159	Cofre de Milon	Um cofre para verdadeiros heróis. Contém um item aleatório como recompensa pelo teu triunfo.
 71160	Cofre de Atena	Um cofre para verdadeiras heroínas. Contém um item aleatório como recompensa pelo teu triunfo.
-71161	Equus Púrpura	Selo para um dos mais belos e raros cavalos púrpura.
-71164	Selo de Cometa	Podes usar este Selo para invocares a tua rena, Cometa.
-71166	Selo do Panda Blindado	Este selo permite-te invocar o teu Panda Blindado.
-71171	Selo do Unicórnio	Este selo invoca o teu Unicórnio.
-71172	Selo do Pesadelo	Este selo invoca o teu Pesadelo.
+71161	Equus Púrpura	Selo para um dos mais belos e raros cavalos púrpura. Aumenta a tua Rapidez de Movimento em 60.
+71164	Selo de Cometa	Podes usar este selo para invocares a tua rena, Cometa. Aumenta a tua Rapidez de Movimento em 60.
+71166	Selo do Panda Blindado	Podes usar este selo para invocares o teu Panda Blindado. Aumenta a tua Rapidez de Movimento em 60.
+71171	Selo do Unicórnio	Podes usar este selo para invocares o teu Unicórnio. Aumenta a tua Rapidez de Movimento em 60.
+71172	Selo do Pesadelo	Podes usar este selo para invocares o teu Pesadelo. Aumenta a tua Rapidez de Movimento em 60.
 71173	Pergaminho de Teletransporte	Este pergaminho leva-te directamente para os portões do Forte do Dragão Vermelho.
 71174	Passagem	Podes entrar no Forte do Dragão Vermelho depois de apresentares esta passagem ao guarda responsável.
 71175	Passagem	Podes entrar no Forte do Dragão Vermelho depois de apresentares esta passagem ao guarda responsável.
-71176	Pantera Negra	Este selo invoca a tua misteriosa Pantera Negra.
-71177	Selo do Leopardo	Este selo invoca o teu corajoso Leopardo.
+71176	Pantera Negra	Este selo invoca a tua misteriosa Pantera Negra. Aumenta a tua Rapidez de Movimento em 30.
+71177	Selo do Leopardo	Este selo invoca o teu corajoso Leopardo. Aumenta a tua Rapidez de Movimento em 30.
 71178	Enciclopédia Lunar (P)	Pacote que contém 10 livros de habilidade para Lycans aleatoriamente seleccionados.
 71179	Enciclopédia Lunar (G)	Pacote que contém 25 livros de habilidade para Lycans aleatoriamente seleccionados.
 71180	Poção da Ascensão (3h)	Esta poção permite-te obter 80% mais experiência durante três horas de tempo de jogo. Não negociável.
-71181	Poção da Sabedoria (3h)	Esta poção permite-te obter 100% mais experiência durante 3 horas de jogo. Não negociável.
-71182	Selo - Muffin (Castanho)	Podes usar este selo para invocares Muffin, o temido frango de combate.
-71183	Selo - Nugget (Castanho)	Podes usar este selo para invocares Nugget, o colossal frango de combate.
-71184	Selo - Muffin (Azul)	Podes usar este selo para invocares Muffin, o temido frango de combate.
-71185	Selo - Nugget (Azul)	Podes usar este selo para invocares Nugget, o colossal frango de combate.
-71186	Selo - Muffin (Verde)	Podes usar este selo para invocares Muffin, o temido frango de combate.
-71187	Selo - Nugget (Verde)	Podes usar este selo para invocares Nugget, o colossal frango de combate.
-71188	Doce Mágico	Um Doce feito de ingredientes secretos que proporciona energia mágica e experiência para o combate.
-72001	Anel de Experiência	Aumenta a Experiência recebida em 50% durante 1 hora.
+71181	Poção da Sabedoria (3h)	Esta poção permite-te obter 100% mais experiência durante uma certa quantidade de tempo. Não negociável.
+71182	Selo - Muffin (Castanho)	Podes usar este selo para invocares Muffin, o temido frango de combate. Aumenta a tua Rapidez de Movimento em 20.
+71183	Selo - Nugget (Castanho)	Podes usar este selo para invocares Nugget, o colossal frango de combate. Aumenta a tua Rapidez de Movimento em 20.
+71184	Selo - Muffin (Azul)	Podes usar este selo para invocares Muffin, o temido frango de combate. Aumenta a tua Rapidez de Movimento em 20.
+71185	Selo - Nugget (Azul)	Podes usar este selo para invocares Nugget, o colossal frango de combate. Aumenta a tua Rapidez de Movimento em 20.
+71186	Selo - Muffin (Verde)	Podes usar este selo para invocares Muffin, o temido frango de combate. Aumenta a tua Rapidez de Movimento em 20.
+71187	Selo - Nugget (Verde)	Podes usar este selo para invocares Nugget, o colossal frango de combate. Aumenta a tua Rapidez de Movimento em 20.
+71188	Doce Mágico	O Doce, feito de ingredientes secretos, proporciona-te | +50% Pontos de Experiência | +30% Dano Mágico | +20 Rapidez de Ataque | +20 Rapidez de Feitiço | +10% VD Máxima | +10% MN Máxima
+72001	Anel de Experiência	Aumenta a Experiência recebida em 50% durante 10 horas.
 72002	Anel de Experiência	Aumenta a Experiência recebida em 50% durante 30 minutos.
 72003	Anel de Experiência	Aumenta a Experiência recebida em 50% durante 3 horas.
-72004	Luva de Ladrão	Duplica a probabilidade de ganhar Itens durante 10 horas.
-72005	Luva de Ladrão	Duplica a probabilidade de ganhar Itens durante 30 minutos.
-72006	Luva de Ladrão	Duplica a probabilidade de ganhar Itens durante 3 horas.
+72004	Luva de Ladrão	Duplica a probabilidade de pilhar itens durante 10 horas.
+72005	Luva de Ladrão	Duplica a probabilidade de pilhar itens durante 30 minutos.
+72006	Luva de Ladrão	Duplica a probabilidade de pilhar itens durante 3 horas.
 72007	Mala de Seda	Podes abrir uma Loja Privada durante 10 horas.
 72008	Mala de Seda	Podes abrir uma Loja Privada durante 30 minutos.
 72009	Mala de Seda	Podes abrir uma Loja Privada durante 3 horas.
 72010	Pena do Pássaro de Amor	Quando equipada os teus Pontos de Amor aumentam duas vezes mais rápido durante 15 minutos.
 72011	Pena do Pássaro de Amor	Quando equipada os teus Pontos de Amor aumentam duas vezes mais rápido durante 30 minutos.
 72012	Pena do Pássaro de Amor	Quando equipada os teus Pontos de Amor aumentam duas vezes mais rápido durante 3 horas.
-72013	Livro da Pesca	A tua probabilidade de apanhar um peixe raro é duplicada durante 15 minutos.
-72014	Livro da Pesca	A tua probabilidade de apanhar um peixe raro é duplicada durante 30 minutos.
-72015	Livro da Pesca	A tua probabilidade de apanhar um peixe raro é duplicada durante 3 horas.
-72016	Terceira Mão	Uma mão que apanha automaticamente o Yang caído durante 15 minutos.
+72013	Livro da Pesca	Necessário para a captura de peixes raros e duplica a probabilidade de os apanhares durante 15 minutos.
+72014	Livro da Pesca	Necessário para a captura de peixes raros e duplica a probabilidade de os apanhares durante 30 minutos.
+72015	Livro da Pesca	Necessário para a captura de peixes raros e duplica a probabilidade de os apanhares durante 3 horas.
+72016	Terceira Mão	Uma mão que apanha automaticamente o Yang caído durante um certo período de tempo.
 72017	Terceira Mão	Uma mão que apanha automaticamente o Yang caído durante 30 minutos.
 72018	Terceira Mão	Uma mão que apanha automaticamente o Yang caído durante 3 horas.
 72019	Armazém Expandido	O teu Armazém ganha 2 espaços adicionais durante 15 minutos.
@@ -2276,15 +2276,15 @@
 72022	Moeda da Sorte	Duplica a tua probabilidade de ganhar Yang durante 10 horas.
 72023	Moeda da Sorte	Duplica a tua probabilidade de ganhar Yang durante 30 minutos.
 72024	Moeda da Sorte	Duplica a tua probabilidade de ganhar Yang durante 3 horas.
-72025	Golpe Crítico	Aumenta em 20% a hipótese de acertares um Golpe Crítico durante 10 minutos.
-72026	Golpe Crítico	Aumenta em 20% a hipótese de acertares um Golpe Crítico durante 10 minutos.
-72027	Golpe Crítico	Aumenta em 20% a hipótese de acertares um Golpe Crítico durante 10 minutos.
+72025	Golpe Crítico	Aumenta a probabilidade de um golpe perfurante em 10%.
+72026	Golpe Crítico	Aumenta a probabilidade de um golpe perfurante em 10%.
+72027	Golpe Crítico	Aumenta a probabilidade de um golpe perfurante em 10%.
 72028	Máscara de Emoções	Podes dar liberdade aos teus sentimentos durante 7 dias.
 72029	Máscara de Emoções	Podes dar liberdade aos teus sentimentos durante 15 dias.
 72030	Máscara de Emoções	Podes dar liberdade aos teus sentimentos durante 30 dias.
-72031	Ataque do Deus Dragão	Aumenta o teu Valor de Ataque entre 12 a 15 % durante 30 minutos.
-72032	Ataque do Deus Dragão	Aumenta o teu Valor de Ataque entre 12 a 15 % durante 30 minutos.
-72033	Ataque do Deus Dragão	Aumenta o teu Valor de Ataque entre 12 a 15 % durante 30 minutos.
+72031	Ataque do Deus Dragão	Aumenta o teu Valor de Ataque em 15% durante 30 minutos.
+72032	Ataque do Deus Dragão	Aumenta o teu Valor de Ataque em 15% durante 30 minutos.
+72033	Ataque do Deus Dragão	Aumenta o teu Valor de Ataque em 15% durante 30 minutos.
 72034	Defesa do Deus Dragão	Reduz o dano em 12-15% quando defendes.
 72035	Defesa do Deus Dragão	Reduz o dano em 12-15% quando defendes.
 72036	Defesa do Deus Dragão	Reduz o dano em 12-15% quando defendes.
@@ -2297,38 +2297,38 @@
 72043	Livro do Líder	Sempre que o líder do Grupo estiver equipado com este livro todos os membros adquirirão mais 30% de Experiência.
 72044	Livro do Líder	Sempre que o líder do Grupo estiver equipado com este livro todos os membros adquirirão mais 30% de Experiência.
 72045	Livro do Líder	Sempre que o líder do Grupo estiver equipado com este livro todos os membros adquirirão mais 30% de Experiência.
-72046	Mão do Golpe Crítico	Aumenta em 20% a probabilidade de desferires um Golpe Perfurante durante 10 minutos.
-72047	Mão do Golpe Crítico	Aumenta em 20% a probabilidade de desferires um Golpe Perfurante durante 10 minutos.
-72048	Palma de Crítico	Aumenta em 20% a probabilidade de desferires um Golpe Perfurante durante 10 minutos.
+72046	Mão do Golpe Crítico	Aumenta a probabilidade de um golpe crítico em 10%.
+72047	Mão do Golpe Crítico	Aumenta a probabilidade de um golpe crítico em 10%.
+72048	Palma de Crítico	Aumenta a probabilidade de um golpe crítico em 10%.
 72301	Pergaminho da Bênção	Elimina o risco de um item ser destruído caso um melhoramento falhe. Caso falhe, a qualidade do item será apenas reduzida em 1 nível.
-72302		
-72303		
-72304		
-72305		
-72306		
-72307		
+72302		Enquanto o Líder do Grupo estiver equipado com este livro, todos os membros irão ganhar 30% mais Pontos de Experiência durante três horas.
+72303		Aumenta a Experiência obtida em 50% durante 1 hora.
+72304		Esta Mármore lendária permite adicionar um quinto atributo a itens que já tenham quatro atributos. No entanto a adição dos bónus pode falhar.
+72305		Espelho Invisível
+72306		Um memorando do Ferreiro que te mostra como melhorar itens. Aumenta para 100% a probabilidade de melhorar um item de +4 para +5.
+72307		Um memorando do Ferreiro que te mostra como melhorar itens. Aumenta para 100% a probabilidade de melhorar um item de +5 para +6.
 72308	Ferro Mágico	Quando combinas este Ferro com um Pergaminho da Bênção no Ferreiro poderás criar um Pergaminho da Guerra.
-72309		
-72310		
-72311		
-72312		
-72313		
-72314		
+72309		Este livro contém a alma de um Ferreiro antigo. Se usado, aumenta a probabilidade de melhorar um item com sucesso.
+72310		Remove a maldição do espírito malvado se a aprendizagem não for bem sucedida. Com a ajuda deste pergaminho conseguirás ler outro documento de habilidades no mesmo dia.
+72311		Uma bênção com a qual os teus VD e MN são imediatamente recuperados a 100%.
+72312		Aumenta o teu valor de ataque em 20%.
+72313		Reduz o dano que recebes em combate em 20%.
+72314		Elimina o risco de um item ser destruído quando um melhoramento falha. Caso falhe, a qualidade do item será apenas reduzida em 1 nível. Adicionalmente, a probabilidade de um melhoramento ser bem-sucedido é aumentada em 10%.
 72501	Anel Experiência(iCafe)	Aumenta o ganho de EXP em 20% para Membros do iCafe.
 72502	Luva de Ladrão (iCafe)	A probabilidade de ganhar Itens é aumentada 1.5 vezes para Membros iCafe.
 72701	Sapatos de Vento	Aumenta a tua rapidez de movimento em 30 quando equipado.
 72703	Brinco Osso de Tigre	O teu Valor de Ataque será aumentado em 200 durante 2 horas (apenas contabilizadas quando o item é utilizado). Item não negociável.
 72704	Brinco Osso de Dragão	A tua Defesa será aumentada em 200 durante 2 horas (apenas contabilizadas quando o item é utilizado). Item não negociável.
-72705	Pulseira Osso de Tigre	O Dano das tuas Habilidades será aumentado em 15% durante 2 horas (apenas contabilizadas quando o item é utilizado). Item não negociável.
-72706	Pulseira Osso de Dragão	A tua Defesa contra Habilidades será aumentada em 15% durante 2 horas (apenas contabilizadas quando o item é utilizado). Item não negociável.
+72705	Pulseira Osso de Tigre	O dano que as tuas habilidades infligem será aumentado em 15 pontos durante 2 horas (o tempo só é contabilizado enquanto o item estiver a ser usado). Item não negociável.
+72706	Pulseira Osso de Dragão	As tuas defesas contra habilidades serão aumentadas em 15 pontos durante 2 horas (o tempo só é contabilizado enquanto o item estiver a ser usado). Item não negociável.
 72723	Elixir do Sol (P)	Recupera automaticamente a tua VD. Contém 1.000.000 VD.
 72724	Elixir do Sol (M)	Recupera automaticamente a tua VD. Contém 3.000.000 VD.
 72725	Elixir do Sol (G)	Recupera automaticamente a tua VD. Contém 7.000.000 VD.
-72726	Elixir do Sol (E)	Recupera automaticamente a tua VD. Contém 10.000.000 VD. Este item é negociável.
+72726	Elixir do Sol (E)	Contém 10.000.000 VD. Recupera automaticamente a tua VD e tem um efeito adicional positivo na tua VD Máx. Este item é negociável.
 72727	Elixir da Lua (P)	Recupera automaticamente a tua MN. Contém 100.000 MN.
 72728	Elixir da Lua (M)	Recupera automaticamente a tua MN. Contém 300.000 MN.
 72729	Elixir da Lua (G)	Recupera automaticamente a tua MN. Contém 700.000 MN.
-72730	Elixir da Lua (E)	Recupera automaticamente a tua MN. Contém 1.000.000 MN. Este item é negociável.
+72730	Elixir da Lua (E)	Contém 1.000.000 MN. Recupera automaticamente a tua MN e tem um efeito adicional positivo na tua MN Máx. Este item é negociável.
 73001	Cabelo Curto (Ruivo)	Penteado para Guerreiros que te dá um aspecto jovial.
 73002	Cabelo Curto (Clara)	Penteado para Guerreiros que te dá um aspecto jovial.
 73003	Cabelo Curto (Azul)	Penteado para Guerreiros que te dá um aspecto jovial.
@@ -2579,7 +2579,7 @@
 76000	Vinho de Flor de Pêssego	Uma bebida que irá imediatamente regenerar a tua Vida (VD) em 500 pontos. Não negociável.
 76001	Pergaminho dos Atributos	A utilização deste item permite-te redistribuir todos os teus Pontos de Atributo. Podes usá-lo para alterar o curso de desenvolvimento da tua personagem. Não negociável.
 76002	Cabeça Encolhida	Esta cabeça de demónio encolhida abre o selo para o 3º Andar das Catacumbas do Demónio. Não negociável.
-76003	Poção da Rapidez	Esta poção diminui o tempo de carregamento das habilidades em 20% durante 30 minutos. Não negociável.
+76003	Poção da Rapidez	Esta poção reduz o tempo de carregamento das tuas habilidades em 20%.
 76004	Elixir da Lua (P)	Recupera automaticamente a tua MN. Contém 10.000 MN. Não negociável.
 76005	Elixir da Lua (M)	Recupera automaticamente a tua MN. Contém 300.000 MN. Não negociável.
 76006	Bússola de Pedras Metin	A bússola indica-te a posição e distância da próxima Pedra Metin. Quanto mais brilhante, mais perto estarás. Pode ser usada 6 vezes. Não negociável.
@@ -2593,10 +2593,10 @@
 76014	Feitiço para Itens (A)	Remove os bónus de um dos teus itens e adiciona novos. Item dos cofres de nível. Não negociável.
 76015	Mármore da Bênção	Lendária mármore abençoada. Quando um item tiver 4 atributos permite adicionar outro atributo. Não negociável.
 76016	Pergaminho da Bênção	Elimina o risco de um item ser destruído caso um melhoramento falhe. Caso falhe, a qualidade do item será apenas reduzida em 1 nível.
-76017	Poção de Ataque +10	Aumenta a tua Rapidez de Ataque em 10% durante 30 minutos. Não negociável.
-76018	Poção de Ataque +15	Aumenta a tua Rapidez de Ataque em 15% durante 30 minutos. Não negociável.
-76019	Passagem	Se deres este bilhete ao guarda ser-te-á permitida a entrada num novo andar da Caverna das Aranhas, assim como no Forte do Dragão Vermelho. Não negociável.
-76020	Elixir do Investigador	Aumenta a qualidade dos objectos de pesquisa que recolheste, aumentando assim a probabilidade de serem aceites. Não negociável.
+76017	Poção de Ataque +10	Aumenta a tua rapidez de ataque em 15%.
+76018	Poção de Ataque +15	Aumenta a tua rapidez de ataque em 20%.
+76019	Passagem	Se deres este bilhete ao guarda responsável, ser-te-á permitida entrada num novo andar de masmorras selecionadas. Não negociável.
+76020	Elixir do Investigador	Melhora a qualidade dos objetos de investigação que recolheste, aumentando assim a probabilidade de serem aceites. Não se aplica a missões em Yohara. Não negociável.
 76021	Elixir do Sol (P)	Recupera automaticamente a tua VD. Contém 100.000 VD. Não negociável.
 76022	Elixir do Sol (M)	Recupera automaticamente a tua VD. Contém 3.000.000 VD. Não negociável.
 76023	Feitiço Verde	Remove os bónus de um dos teus itens e adiciona novos. Apenas pode ser usado em armas e armaduras até nível 40. Item dos cofres de nível. Não negociável.

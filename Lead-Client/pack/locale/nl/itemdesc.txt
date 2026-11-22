@@ -135,10 +135,10 @@
 21992		
 21993		
 22000	Stad Terugkeer Geschrift	Het geschrift zorgt ervoor dat je terug naar de stad wordt geteleporteerd.
-22010	Terugkeer Geschrift	Het geschrift zorgt ervoor dat je terug naar de stad wordt geteleporteerd.
+22010	Terugkeer Geschrift	Het geschrift maakt het mogelijk dat je terugkeert naar je laatst gemarkeerde locatie.
 25040	Zegening Geschrift	Elimineert het risico dat een item vernietigd wordt als een verbetering mislukt. Wanneer de poging nu faalt, wordt slechts de kwaliteit van het item met 1 verminderd.
 25041	Magische Steen	Een stuk van het Legendarische Metaal kan je kansen vergroten wanneer je een item gaat verhogen. Het verhoogde item kan niet vernietigd worden noch verlaagd.
-25100	Zielensteen Geschrift	Dit Geschrift maakt het mogelijk om een Zielensteen uit een wapen of pantser te halen. Het laat een merkteken achter.
+25100	Zielensteen Geschrift	Dit Geschrift maakt het mogelijk om een Geestensteen uit een wapen of pantser te halen. Het laat een merkteken achter.
 27051	Rood Brouwsel (K)	Vult tot 300 LP aan. Niet verhandelbaar.
 27052	Blauw Brouwsel (K)	Vult tot 100 TP aan. Niet verhandelbaar.
 27053	Groen Brouwsel (K)	Verhoogt aanvalssnelheid met +10 voor 10 minuten. Niet verhandelbaar.
@@ -211,11 +211,11 @@
 27876	Gegrilde Katvis	Herstelt wat TP onmiddelijk.
 27877	Gegrilde Modderkruiper	Maakt je onzichtbaar voor 5 minuten.
 27878	Gegrilde Lotusvis	Herstelt wat LP onmiddelijk.
-27879	Gegrilde Zoete Vis	De vis krijgt een lekker gerookte smaak doordat het klaargemaakt wordt over een vuurtje.
-27880	Gegrilde Spiering	Door het te bereiden over een vuur krijgt de vis een lekker rokerige smaak.
-27881	Gegrilde Shiri	De vis krijgt een lekker gerookte smaak doordat het klaargemaakt wordt over een vuurtje.
-27882	Gegrilde Spiegelkarper	Door het te bereiden over een vuur krijgt de vis een lekker rokerige smaak.
-27883	Gegrilde Goudvis	Door het te bereiden over een vuur krijgt de vis een lekker rokerige smaak.
+27879	Gegrilde Zoete Vis	Verhoogt ervaringsopname met 10%.
+27880	Gegrilde Spiering	Verhoogt kracht tegen monsters met 5%.
+27881	Gegrilde Shiri	Verhoogt magische/fysieke schade met 3%.
+27882	Gegrilde Spiegelkarper	Herstelt onmiddellijk 1000 LP.
+27883	Gegrilde Goudvis	Verhoogt ervaringsopname met 50%.
 27987	Oester	Een schelpdier met een mooie schelp. Kan ook een Parel bevatten.
 27988	Schatkaart	Een aftandse map die de plek van een oeroude schat aangeeft.
 27989	Metin Steen Kompas	De kompas laat je de positie en afstand zien tot de volgende Metin Steen. Hoe feller het gloeit, hoe dichterbij je bent. Het kan 6 keer geactiveerd worden.
@@ -228,7 +228,7 @@
 27996	Gif Fles	Een fles met gif. Het veroorzaakt de dood.
 27997	Levensbol	Een marmer dat wat LP herstelt.
 27998	Alchemisten Buidel	Een buidel voor Alchemisten, die de geheime van alchemie voor vreemde ogen bewaakt.
-27999	Zielen Steen Buidel	Een buidel om Ziel Stenen in te bewaren.
+27999	Zielen Steen Buidel	Een buidel om Geestenstenen in te bewaren.
 29001	Jacobsschelp	Eén van de grootste en meest smakelijke schelpen. Het heeft een kam-achtige vorm.
 29002	Blauwe Jacobsschelp	De binnenkant van deze Jacobsschelp glinstert in talloze blauwe kleuren.
 29003	Gele Jacobsschelp	De binnenkant van deze Jacobsschelp glinstert in talloze gele kleuren.
@@ -370,7 +370,7 @@
 30155	Mirines Hanger	Een hanger die aan een ketting vastgemaakt kan worden. Op de achterkant staat er "Mirine" gegraveerd.
 30156	Geheime Tempel Boek	De analyse van de geschiedenis en leer van de Geheime Tempel.
 30157	Pijl Punt	Deze giftige pijlpunten zullen helpen met het keizerrijk verdedigen.
-30177	Muskus Olie	Muskus Olie word gebruikt  door de Wapen Winkel Eigenaar tijdens een quest. Dit voorwerp heeft geen verdere functies.
+30177	Muskus Olie	Muskus Olie word gebruikt  door de Wapen Winkeleigenaar tijdens een quest. Dit voorwerp heeft geen verdere functies.
 30179	Gedraaide Sleutel	Deze magische sleutel activeert de portaal naar de Draken Tempel
 30180	Drakengod Amulet	Dit glanzend gouden juweel kan de weg naar de Grot der Verbanning verkorten.
 30181	Pagina	De  verbleekte tekens op deze perkament is moeilijk te ontcijferen - het lijkt een hele oude pagina te zijn.
@@ -425,7 +425,7 @@
 30316	Donatiebord	Een bord met een voortreffelijke decoratie.
 30317	Voedseldonatie	Een voedseldonatie om het vasten mee te breken.
 30318	Zegeningsfruit	Een buitengewoon stuk fruit. Verzamel er genoeg van en je ontvangt een beloning.
-30319	Gekrompen Hoofd	Deze gekrompen Demonen Hoofd opent het zegel naar de 3e vloer van de Duivel's Catacomben. Dit item is verhandelbaar.
+30319	Gekrompen Hoofd	Dit gekrompen demonenhoofd opent het zegel naar de 3e vloer van de Duivel's Catacomben. Dit item is verhandelbaar.
 30320	Gekrompen Hoofd	Het gekrompen hoofd van de Demon opent het zegel naar de derde verdieping van de Duivels' Catacomben.
 30321	Halloween Pompoen	De pompoen vult je LP of TP. Als je er op tikt met je Toverstaf zal het transformeren in de Halloween Kist.
 30322	Toverstaf	Een kunstzinnig bewerkte Toverstaf met een ster punt gemaakt uit magisch vuur. Het heeft de toverkracht on iedere Halloween pompoen te transformeren in een Halloween Kist
@@ -438,7 +438,7 @@
 30330	Steen der Maat	Als Godin van Gerechtigheid strijd Maat voor orde in de chaos.
 30331	Vries Sleutel	Deze sleutel is zo koud als ijs en geeft toegang tot de derde verdieping van Nemeres Uitkijk toren. Alleen te gebruiken door Shamans.
 30332	Noordster	Zegelsteen gemaakt van puur ijs. Geeft toegang tot de zesde verdieping van Nemeres Uitkijk Toren.
-30333	Vriesbloem Sleutel	De sleutel gemaakt van ijs geeft je toegang tot de negende verdieping van Nemeres Uitkijk toren. Kan alleen gebruikt worden door ninjas and Shamans.
+30333	Vriesbloem Sleutel	De sleutel gemaakt van ijs geeft je toegang tot de negende verdieping van Nemeres Uitkijktoren.
 30500	Robijnen Graveermes	Gereedschap voor het verbeteren van je wapen
 30501	Gouden Gesp	Element voor het verbeteren van je wapen
 30502	Robijnen Versiersel	Element voor het verbeteren van je wapen
@@ -532,8 +532,8 @@
 31004	Heilig Boomgom	De gom van een geheiligde boom is een van de elementen die nodig zijn om de Hemelse Traan te maken.
 31005	Blauw Kristal Extract	Een Extract, verkregen uit blauw edelstenen, is nodig om de Hemelse Traan te maken.
 31006	Rood Hel Kwarts	Dit glinsterend rode kwarts bestaat uit Vulkanische Aarde, Vlammende Manen en  	 Fundament Steen.
-31007	Vulkanische Aarde	As-achtige substantie van Doyyumhwan. Is nodig Rood Hell Kwarts te maken.
-31008	Hemelse Traan	Magische edelsteen gemaakt van Blauw Kristal Extract, Rood Hell Kwarts en  	 Heilig Boomgom . Houdt gemene wezens weg en werkt 7 dagen.
+31007	Vulkanische Aarde	As-achtige substantie van Doyyumhwan. Is nodig om Rood Hel Kwarts te maken.
+31008	Hemelse Traan	Magische edelsteen gemaakt van Blauw Kristal Extract, Rood Hel Kwarts en Heilig Boomgom. Houdt gemene wezens weg en werkt 7 dagen.	 Heilig Boomgom . Houdt gemene wezens weg en werkt 7 dagen.
 31009	Brief van Gnol	Geheim bericht verzonden door de Dienaren van het duister naar de Gnollen.
 31010	Brief van Rode Dief	Het bericht van de Dienaren van het Duister aan de Rode Dieven Gilde is verscheurd in vele stukjes.
 31011		
@@ -621,11 +621,11 @@
 31093	Onbekende Steen	Dit type steen is volledig onbekend bij je, maar het straalt tastbare kou en duisternis uit.
 31094	Scherf	Fragment van de Demonische Meteoriet
 31095		
-31096		
-31097		
-31098		
-31099		
-31100		
+31096		Edelhout
+31097		En-Tai Dauw
+31098		Geest van de Aarde
+31099		Boom Smaragd
+31100		Verbanddoos
 31101		
 31102		
 31103		
@@ -646,7 +646,7 @@
 38102	Kracht Snack (30 dagen)	Verhoogd de levensduur van je Kracht Rijdier met 30 dagen.
 38200	Rufus Zegel	Je kan deze zegel gebruiken om jouw wolvenwelp Rufus op te roepen.
 38201	Rufus Zegel	Je kan deze zegel gebruiken om jouw wolvenwelp Rufus op te roepen.
-39001	Magische Steen	Deze steen garandeert het grootste succes in item verbetering. Bovendien zal het item niet vernietigd of gedegradeerd worden. Dit item is verhandelbaar.
+39001	Magische Steen	Deze steen biedt uitstekende kansen bij het verbeteren van items. Bovendien zal het item niet vernietigd of gedegradeerd worden. Dit item is verhandelbaar.
 39002	Ervaring Ring	Verhoogd de verzameling ervaring met 50% voor 60 minuten. Dit item is verhandelbaar.
 39003	Perzik Bloem Wijn	Drankje dat onmiddelijk je LP punten regenereert met 50 punten. Dit item is verhandelbaar.
 39004	Gezegend Bol	Deze legendarische bol voegt een vijfde bonus toe aan een item was al 4 bonussen heeft. Het toevoegen kan falen. Dit item is verhandelbaar.
@@ -663,22 +663,22 @@
 39015	Steen van de Smid	Bij de smid kun je, met de hulp van deze steen en een zegenings geschrift,  een Smids Handboek maken. Dit item is verhandelbaar.
 39016	Magisch IJzert Erts	Deze erts, gecombineerd met een zegening geschrift, maakt het mogelijk bij de Smid een Draken Geschrift te maken. Dit item is verhandelbaar.
 39017	Draken God Leven	Verhoogd je maximum LP met 20% voor 30 minuten. Dit item is verhandelbaar.
-39018	Draken God Aanval	Verhoogd de schade die je veroorzaakt gedurende een gevecht met 12-15% voor 30 minuten. Dit item is verhandelbaar.
+39018	Draken God Aanval	Verhoogt je aanvalswaarde met 20% gedurende 30 minuten. Dit item is verhandelbaar.
 39019	Draken God Intelligentie	Verhoogd je maximum intelligentie met 20% voor 30 minuten. Dit item is verhandelbaar.
-39020	Draken God Verdediging	Verlaagd de schade die je ontvangt gedurende een gevecht met 12-15% voor 30 minuten. Dit item is verhandelbaar.
+39020	Draken God Verdediging	Vermindert de schade die je ontvangt tijdens een gevecht met 20% gedurende 30 minuten. Dit item is verhandelbaar.
 39021	Draken God Support	De vitaliteit, kracht, intelligentie en behendigheid van je karakter zal tijdelijk vervijfvoudigen. Dit item is verhandelbaar.
 39022	Draken Geschrift	Elimineert het risico van de vernietiging van een voorwerp wanneer verbeteren faalt. Alleen de kwaliteit zal verminderen met 1.  Daarbij zal de waarschijnlijkheid op een succesvolle verbetering verhogen met 10%. Dit item is verhandelbaar.
-39023	Onderzoeks Elixer	Dit elixer verbetert de kwaliteit van de onderzoek objecten die je verzameld hebt, daarbij de waarschijnlijkheid verhogend dat het zal worden geaccepteerd. Dit item is verhandelbaar.
+39023	Onderzoeks Elixer	Dit elixer verbetert de kwaliteit van de onderzoeksobjecten die je verzameld hebt, en verhoogt daarmee de kans dat zij geaccepteerd zullen worden. Dit item is verhandelbaar. Is niet van toepassing op quests op Yohara.
 39024	Kritieke Slag	Verhoogd de kans een kritieke slag uit te delen met 20% voor 10 minuten. Dit item is verhandelbaar.
 39025	Perforerende Slag	Verhoogd de kans om een perforerende slag uit te delen met 20% voor 10 minuten. Dit item is verhandelbaar.
 39026	Brouwsel van Haast	Verhoogd je beweeg snelheid met 60 voor 30 minuten. Dit item is verhandelbaar.
 39027	Steen Ambacht Boek	Verwijderd alle gebroken stenen uit een voorwerp. Daarmee krijg je een nieuwe kans om je wapen of pantser te verbeteren. Dit item is verhandelbaar.
 39028	Betover Voorwerp	Verwijderd de bonussen van een van je items en voegt nieuwe toe. Dit item is verhandelbaar.
 39029	Versterk Voorwerp	Als je geluk hebt zal het een nieuwe bonus toevoegen op een van je items (tot maximaal 4 bonussen). Dit item is verhandelbaar.
-39030	Geconcentreerd Lezen	Verhoogt de kans om je talent te verbeteren wanneer je het volgende boek leest (of zielsteen) met 2,5 keer. Dit item is verhandelbaar.
+39030	Geconcentreerd Lezen	Verhoogt de kans om je talent te verbeteren wanneer je het volgende boek leest (of Zielensteen) met 2,5 keer. Dit item is verhandelbaar.
 39031	Brouwsel van Haast	Dit brouwsel verlaagde de cool down tijd van je vaardigheden met 20% voor 30 minuten. Dit item is verhandelbaar.
 39032	Vrucht des Levens	Verhoogd rang punten met 2000 (cool down tijd: 8 uur). Dit item is verhandelbaar.
-39033	Geschrift der Correctie	Dit geschrift verwijderd de laatste succesvol toegevoegde zielensteen uit een voorwerp. Dit item is verhandelbaar.
+39033	Geschrift der Correctie	Dit geschrift verwijderd de laatste succesvol toegevoegde Geestensteen uit een voorwerp. Dit item is verhandelbaar.
 39034	Paarden Suiker	Deze suiker stelt je in staat om je rijdier een naam te geven. Het verhoogd ook de verdediging met 20. Dit item is verhandelbaar.
 39035	Glas der Inzicht	Maakt mogelijk om een andere speler items uit jouw inventaris te laten zien. Het glas breekt tijdens dit proces. Dit item is verhandelbaar.
 39036	Wind Schoenen	Wanneer deze schoenen worden gedragen zal je beweeg snelheid verhogen met 30 voor 30 speel uren. Dit item is verhandelbaar.
@@ -720,7 +720,7 @@
 41026	TUR Boksen Outfit (V)	Vechtklare outfit voor vrouwelijke boksers in de Turkse nationale kleuren.
 41027	BRA Boksen Outfit (M)	Vechtklare outfit voor mannelijke boksers in de Braziliaanse nationale kleuren.
 41028	BRA Boksen Outfit (V)	Vechtklare outfit voor vrouwelijke boksers in de Braziliaanse nationale kleuren.
-41029	Woestijn Krgr. (M,Bonus)	Strijd outfit voor mannen, om te kunnen overleven in de inhumane woestijn condities. Item is verhandelbaar.
+41029	Woestijn Krgr. (M,Bonus)	Strijdgewaad voor mannen, ideaal om te overleven in onherbergzame woestijnomstandigheden. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 41030	Woestijn Krgr. (V,Bonus)	Strijd outfit voor vrouwen, om te kunnen overleven in de inhumane woestijn condities. Item is verhandelbaar.
 41031	Olymp. Schermen Outfit (	Sportief beschermende outfit voor mannelijke schermers. Item is verhandelbaar.
 41032	Olym. Scherm Outfit (V)	Sportieve beschermende outfit voor vrouwelijke schermers. Item is verhandelbaar.
@@ -912,14 +912,14 @@
 41224	Yongan FC+ (V)	Voetbal outfit voor vrouwen in rood en wit. Geeft je minimaal 1 willekeurige bonus.
 41225	FC Bakra+ (M)	Voetbal outfit voor mannen in blauw en rood. Geeft je minimaal 1 willekeurige bonus.
 41226	FC Bakra+ (V)	Voetbal outfit voor vrouwen in donker blauw en rood. Geeft je minimaal 1 willekeurige bonus.
-41227	FC Bokjung+ (M)	Voetbal outfit voor mannen in geel en blauw. Geeft je minimaal 1 willekeurige bonus.
-41228	FC Bokjung+ (V)	Voetbal outfit voor vrouwen in geel en blauw. Geeft je minimaal 1 willekeurige bonus.
-41229	FC Bavaria Hwang+ (M)	Voetbal outfit voor mannen in rood en goud. Geeft je minimaal 1 willekeurige bonus.
-41230	FC Bavaria Hwang+ (V)	Voetbal outfit voor vrouwen in rood en goud. Geeft je minimaal 1 willekeurige bonus.
+41227	FC Bokjung+ (M)	Outfit voor mannelijke voetballers in de Oekraïense nationale kleuren. Geeft je minstens één willekeurige bonus.
+41228	FC Bokjung+ (V)	Outfit voor vrouwelijke voetballers in de Oekraïense nationale kleuren. Geeft je minstens één willekeurige bonus.
+41229	FC Bavaria Hwang+ (M)	Outfit voor mannelijke voetballers in de Welshe nationale kleuren. Geeft je minstens één willekeurige bonus.
+41230	FC Bavaria Hwang+ (V)	Outfit voor vrouwelijke voetballers in de Welshe nationale kleuren. Geeft je minstens één willekeurige bonus.
 41231	Borussia Chunjo+ (M)	Voetbal outfit voor mannen in zwart en geel. Geeft je minimaal 1 willekeurige bonus.
 41232	Borussia Chunjo+ (V)	Voetbal outfit voor vrouwen in zwart en geel. Geeft je minimaal 1 willekeurige bonus.
-41233	SC Doyyum+ (M)	Voetbal outfit voor mannen in rood en wit. Geeft je minimaal 1 willekeurige bonus.
-41234	SC Doyyum+ (V)	Voetbal outfit voor vrouwen in rood en wit. Geeft je minimaal 1 willekeurige bonus.
+41233	SC Doyyum+ (M)	Outfit voor mannelijke voetballers in de Oostenrijkse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41234	SC Doyyum+ (V)	Outfit voor vrouwelijke voetballers in de Oostenrijkse nationale kleuren. Geeft je minstens één willekeurige bonus.
 41235	Hasun Dong FC+ (M)	Voetbal outfit voor mannen in groen en wit. Geeft je minimaal 1 willekeurige bonus.
 41236	Hasun Dong FC+ (V)	Voetbal outfit voor vrouwen in groen en wit. Geeft je minimaal 1 willekeurige bonus.
 41237	CFR Drakenvuur 07+ (M)	Voetbal outfit voor mannen in Bordeaux. Geeft je minimaal 1 willekeurige bonus.
@@ -950,20 +950,20 @@
 41262	Drakenvallei SC+ (V)	Voetbal outfit voor vrouwen in donker blauw en oranje. Geeft je minimaal 1 willekeurige bonus.
 41263	Dondergebergte FC+ (M)	Voetbal outfit voor mannen in rood en wit. Geeft je minimaal 1 willekeurige bonus.
 41264	Dondergebergte FC+ (V)	Voetbal outfit voor vrouwen in rood en wit. Geeft je minimaal 1 willekeurige bonus.
-41265	Pyungmoo Saint Hwang+ (M)	Voetbal outfit voor mannen in donker blauw. Geeft je minimaal 1 willekeurige bonus.
-41266	Pyungmoo Saint Hwang+ (V)	Voetbal outfit voor vrouwen in donker blauw. Geeft je minimaal 1 willekeurige bonus.
+41265	Pyungmoo Saint Hwang+ (M)	Outfit voor mannelijke voetballers in de Schotse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41266	Pyungmoo Saint Hwang+ (V)	Outfit voor vrouwelijke voetballers in de Schotse nationale kleuren. Geeft je minstens één willekeurige bonus.
 41267	Real Sohan+ (M)	Voetbal outfit voor mannen in wit. Geeft je minimaal 1 willekeurige bonus.
 41268	Real Sohan+ (V)	Voetbal outfit voor vrouwen in wit. Geeft je minimaal 1 willekeurige bonus.
 41269	FC Jinno 04+ (M)	Voetbal outfit voor mannen in koninklijk blauw en wit. Geeft je minimaal 1 willekeurige bonus.
 41270	FC Jinno 04+ (V)	Voetbal outfit voor vrouwen in koninklijk blauw en wit. Geeft je minimaal 1 willekeurige bonus.
-41271	FC Sangsun Dong+ (M)	Voetbal outfit voor mannen in zwart en oranje. Geeft je minimaal 1 willekeurige bonus.
-41272	FC Sangsun Dong+ (V)	Voetbal outfit voor vrouwen in zwart en oranje. Geeft je minimaal 1 willekeurige bonus.
+41271	FC Sangsun Dong+ (M)	Outfit voor mannelijke voetballers in de Noord-Macedonische nationale kleuren. Geeft je minstens één willekeurige bonus.
+41272	FC Sangsun Dong+ (V)	Outfit voor vrouwelijke voetballers in de Noord-Macedonische nationale kleuren. Geeft je minstens één willekeurige bonus.
 41273	SL Junsun Dong+ (M)	Voetbal outfit voor mannen in rood en wit. Geeft je minimaal 1 willekeurige bonus.
 41274	SL Junsun Dong+ (V)	Voetbal outfit voor vrouwen in rood en wit. Geeft je minimaal 1 willekeurige bonus.
-41275	Spartak Jungrang+ (M)	Voetbal outfit voor mannen in rood en wit. Geeft je minimaal 1 willekeurige bonus.
-41276	Spartak Jungrang+ (V)	Voetbal outfit voor vrouwen in rood en wit. Geeft je minimaal 1 willekeurige bonus.
-41277	Vuurland CF+ (M)	Voetbal outfit voor mannen in wit en zwart. Geeft je minimaal 1 willekeurige bonus.
-41278	Vuurland CF+ (V)	Voetbal outfit voor vrouwen in wit en zwart. Geeft je minimaal 1 willekeurige bonus.
+41275	Spartak Jungrang+ (M)	Outfit voor mannelijke voetballers in de Tsjechische nationale kleuren. Geeft je minstens één willekeurige bonus.
+41276	Spartak Jungrang+ (V)	Outfit voor vrouwelijke voetballers in de Tsjechische nationale kleuren. Geeft je minstens één willekeurige bonus.
+41277	Vuurland CF+ (M)	Outfit voor mannelijke voetballers in de Finse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41278	Vuurland CF+ (V)	Outfit voor vrouwelijke voetballers in de Finse nationale kleuren. Geeft je minstens één willekeurige bonus.
 41279	FC St. Seungryong+ (M)	Voetbal outfit voor mannen in blauw. Geeft je minimaal 1 willekeurige bonus.
 41280	FC St. Seungryong+ (V)	Voetbal outfit voor vrouwen in blauw. Geeft je minimaal 1 willekeurige bonus.
 41291	Hazenkostuum (Zwart)	Hazenkostuum voor mannen gemaakt van zwart pluche
@@ -974,8 +974,8 @@
 41296	Konijntjes kostuum (bl)	Konijntjes kostuum voor vrouwen gemaakt van blauw pluche
 41297	Konijntjes kostuum (gr)	Konijntjes kostuum voor vrouwen gemaakt van groen pluche
 41298	Konijntjes kostuum (rz)	Konijntjes kostuum voor vrouwen gemaakt van roze pluche
-41299	Hazenkostuum+ (zwart)	Hazenkostuum voor mannen gemaakt van zwart pluche. Geeft je minimaal 1 willekeurige bonus.
-41300	Hazenkostuum+ (blauw)	Hazenkostuum voor mannen gemaakt van blauw pluche. Geeft je minimaal 1 willekeurige bonus.
+41299	Hazenkostuum+ (zwart)	Konijnenkostuum voor mannen gemaakt van zwart pluche. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
+41300	Hazenkostuum+ (blauw)	Konijnenkostuum voor mannen gemaakt van blauw pluche. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 41301	Hazenkostuum+ (groen)	Hazenkostuum voor mannen gemaakt van groen pluche. Geeft je minimaal 1 willekeurige bonus.
 41302	Hazenkostuum+ (roze)	Hazenkostuum voor mannen gemaakt van roze pluche. Geeft je minimaal 1 willekeurige bonus.
 41303	konijntjeskostuum+ (zw)	Konijntjes kostuum voor vrouwen gemaakt van zwart pluche. Geeft je minimaal 1 willekeurige bonus.
@@ -988,7 +988,7 @@
 41310	Cobra Outfit+ (v)	Zwart glimmend outfit met slangensymbolen. Geeft je minimaal 1 willekeurige bonus.
 41311	Woestijnkrijger (M, Zw)	Zwarte gevechtskleding voor mannen.
 41312	Woestijnkrijger (V, Zw)	Zwarte gevechtskleding voor vrouwen.
-41313	Woestijnkrijger+ (M, zw)	Zwarte gevechtskleding voor mannen. Geeft je minimaal 1 willekeurige bonus.
+41313	Woestijnkrijger+ (M, zw)	Zwarte gevechtskleding voor mannen. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 41314	Woestijnkrijger+ (V, zw)	Zwarte gevechtskleding voor vrouwen. Geeft je minimaal 1 willekeurige bonus.
 41315	Azraels Pantser (m)	Staal-achtig pantser die toebehoord aan de beruchte demonleider.
 41316	Azraels Pantser (v)	Staal-achtig pantser die toebehoord aan de beruchte demonleider.
@@ -998,22 +998,22 @@
 41321	Pompoenen Jan Jurk (v)	Spookachtig grandioos Halloween kostuum
 41322	Pompoenen Jan Pak+ (m)	Spookachtig grandioos Halloween kostuum. Geeft je minimaal 1 willekeurige bonus. Voorwerp is verhandelbaar.
 41323	Pompoenen Jan Jurk+ (v)	Spookachtig grandioos Halloween kostuum. Geeft je minimaal 1 willekeurige bonus. Voorwerp is verhandelbaar.
-41324		
-41325		
-41326		
-41327		
+41324		Mannelijk krijgersgewaad met daarop een ster en halve maan embleem.
+41325		Vrouwelijk krijgersgewaad met daarop een ster en halve maan embleem.
+41326		Mannelijk krijgersgewaad met daarop een ster en halve maan embleem. Geeft je minstens één willekeurige bonus.
+41327		Vrouwelijk krijgersgewaad met daarop een ster en halve maan embleem. Geeft je minstens één willekeurige bonus.
 41328	ALG Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Algerije
 41329	ALG Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Algerije
-41330	ARG Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Argentinië
-41331	ARG Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Argentinië
-41332	AUS Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Australië
-41333	AUS Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Australië
-41334	BEL Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van België
-41335	BEL Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van België
+41330	ARG Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Argentinië.
+41331	ARG Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Argentinië.
+41332	AUS Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Australië.
+41333	AUS Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Australië.
+41334	BEL Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van België.
+41335	BEL Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van België.
 41336	BIH Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Bosnië en Herzegovina
 41337	BIH Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Bosnië en Herzegovina
-41338	BRA Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Brazilië
-41339	BRA Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Brazilië
+41338	BRA Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Brazilië.
+41339	BRA Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Brazilië.
 41340	CMR Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Kameroen
 41341	CMR Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Kameroen
 41342	CHI Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Chili
@@ -1024,8 +1024,8 @@
 41347	CRC Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Costa Rica
 41348	CIV Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Ivoorkust
 41349	CIV Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Ivoorkust
-41350	CRO Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Kroatië
-41351	CRO Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Kroatië
+41350	CRO Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Kroatië.
+41351	CRO Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Kroatië.
 41352	ECU Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Ecuador
 41353	ECU Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Ecuador
 41354	ENG Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Engeland
@@ -1042,8 +1042,8 @@
 41365	HON Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Honduras
 41366	IRN Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Iran
 41367	IRN Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Iran
-41368	ITA Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Italië
-41369	ITA Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Italië
+41368	ITA Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Italië.
+41369	ITA Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Italië.
 41370	JPN Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Japan
 41371	JPN Wereldbeker Set (V)	Wereldbeker set in de nationale kleuren van Japan
 41372	KOR Wereldbeker Set (M)	Wereldbeker set in de nationale kleuren van Korea
@@ -1072,8 +1072,8 @@
 41395	ARG WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Argentinië. Geeft je minimaal 1 willekeurige bonus.
 41396	AUS WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Australië. Geeft je minimaal 1 willekeurige bonus.
 41397	AUS WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Australië. Geeft je minimaal 1 willekeurige bonus.
-41398	BEL WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van België. Geeft je minimaal 1 willekeurige bonus.
-41399	BEL WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van België. Geeft je minimaal 1 willekeurige bonus.
+41398	BEL WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Belgische nationale kleuren. Geeft je minstens één willekeurige bonus.
+41399	BEL WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Belgische nationale kleuren. Geeft je minstens één willekeurige bonus.
 41400	BIH WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Bosnië en Herzegovina. Geeft je minimaal 1 willekeurige bonus.
 41401	BIH WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Bosnië en Herzegovina. Geeft je minimaal 1 willekeurige bonus.
 41402	BRA WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Brazilië. Geeft je minimaal 1 willekeurige bonus.
@@ -1088,47 +1088,47 @@
 41411	CRC WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Costa Rica. Geeft je minimaal 1 willekeurige bonus.
 41412	CIV WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Ivoorkust. Geeft je minimaal 1 willekeurige bonus.
 41413	CIV WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Ivoorkust. Geeft je minimaal 1 willekeurige bonus.
-41414	CRO WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Kroatië. Geeft je minimaal 1 willekeurige bonus.
-41415	CRO WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Kroatië. Geeft je minimaal 1 willekeurige bonus.
+41414	CRO WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Kroatische nationale kleuren. Geeft je minstens één willekeurige bonus.
+41415	CRO WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Kroatische nationale kleuren. Geeft je minstens één willekeurige bonus.
 41416	ECU WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Ecuador. Geeft je minimaal 1 willekeurige bonus.
 41417	ECU WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Ecuador. Geeft je minimaal 1 willekeurige bonus.
-41418	ENG WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Engeland. Geeft je minimaal 1 willekeurige bonus.
-41419	ENG WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Engeland. Geeft je minimaal 1 willekeurige bonus.
-41420	FRA WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Frankrijk. Geeft je minimaal 1 willekeurige bonus.
-41421	FRA WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Frankrijk. Geeft je minimaal 1 willekeurige bonus.
-41422	GER WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Duitsland. Geeft je minimaal 1 willekeurige bonus.
-41423	GER WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Duitsland. Geeft je minimaal 1 willekeurige bonus.
+41418	ENG WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Engelse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41419	ENG WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Engelse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41420	FRA WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Franse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41421	FRA WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Franse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41422	GER WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Duitse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41423	GER WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Duitse nationale kleuren. Geeft je minstens één willekeurige bonus.
 41424	GHA WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Ghana. Geeft je minimaal 1 willekeurige bonus.
 41425	GHA WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Ghana. Geeft je minimaal 1 willekeurige bonus.
-41426	GRE WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Griekenland. Geeft je minimaal 1 willekeurige bonus.
+41426	GRE WBeker Set (M/Bonus)	World Cup-voetbalset in de Griekse nationale kleuren. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 41427	GRE WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Griekenland. Geeft je minimaal 1 willekeurige bonus.
 41428	HON WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Honduras. Geeft je minimaal 1 willekeurige bonus.
 41429	HON WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Honduras. Geeft je minimaal 1 willekeurige bonus.
 41430	IRN WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Iran. Geeft je minimaal 1 willekeurige bonus.
 41431	IRN WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Iran. Geeft je minimaal 1 willekeurige bonus.
-41432	ITA WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Italië. Geeft je minimaal 1 willekeurige bonus.
-41433	ITA WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Italië. Geeft je minimaal 1 willekeurige bonus.
+41432	ITA WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Italiaanse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41433	ITA WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Italiaanse nationale kleuren. Geeft je minstens één willekeurige bonus.
 41434	JPN WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Japan. Geeft je minimaal 1 willekeurige bonus.
 41435	JPN WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Japan. Geeft je minimaal 1 willekeurige bonus.
-41436	KOR WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Korea. Geeft je minimaal 1 willekeurige bonus.
+41436	KOR WBeker Set (M/Bonus)	World Cup-voetbalset in de Koreaanse nationale kleuren. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 41437	KOR WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Korea. Geeft je minimaal 1 willekeurige bonus.
-41438	MEX WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Mexico. Geeft je minimaal 1 willekeurige bonus.
+41438	MEX WBeker Set (M/Bonus)	World Cup-voetbalset in de Mexicaanse nationale kleuren. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 41439	MEX WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Mexico. Geeft je minimaal 1 willekeurige bonus.
-41440	NED WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Nederland. Geeft je minimaal 1 willekeurige bonus.
-41441	NED WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Nederland. Geeft je minimaal 1 willekeurige bonus.
+41440	NED WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Nederlandse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41441	NED WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Nederlandse nationale kleuren. Geeft je minstens één willekeurige bonus.
 41442	NGA WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Nigeria. Geeft je minimaal 1 willekeurige bonus.
 41443	NGA WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Nigeria. Geeft je minimaal 1 willekeurige bonus.
-41444	POR WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Portugal. Geeft je minimaal 1 willekeurige bonus.
-41445	POR WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Portugal. Geeft je minimaal 1 willekeurige bonus.
-41446	RUS WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Rusland. Geeft je minimaal 1 willekeurige bonus.
-41447	RUS WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Rusland. Geeft je minimaal 1 willekeurige bonus.
-41448	ESP WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Spanje. Geeft je minimaal 1 willekeurige bonus.
-41449	ESP WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Spanje. Geeft je minimaal 1 willekeurige bonus.
-41450	SUI WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Zwitserland. Geeft je minimaal 1 willekeurige bonus.
-41451	SUI WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Zwitserland. Geeft je minimaal 1 willekeurige bonus.
+41444	POR WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Portugese nationale kleuren. Geeft je minstens één willekeurige bonus.
+41445	POR WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Portugese nationale kleuren. Geeft je minstens één willekeurige bonus.
+41446	RUS WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Russische nationale kleuren. Geeft je minstens één willekeurige bonus.
+41447	RUS WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Russische nationale kleuren. Geeft je minstens één willekeurige bonus.
+41448	ESP WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Spaanse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41449	ESP WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Spaanse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41450	SUI WBeker Set (M/Bonus)	Outfit voor mannelijke voetballers in de Zwitserse nationale kleuren. Geeft je minstens één willekeurige bonus.
+41451	SUI WBeker Set (V/bonus)	Outfit voor vrouwelijke voetballers in de Zwitserse nationale kleuren. Geeft je minstens één willekeurige bonus.
 41452	URU WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van Uruguay. Geeft je minimaal 1 willekeurige bonus.
 41453	URU WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van Uruguay. Geeft je minimaal 1 willekeurige bonus.
-41454	USA WBeker Set (M/Bonus)	Wereldbeker set in de nationale kleuren van VS. Geeft je minimaal 1 willekeurige bonus.
+41454	USA WBeker Set (M/Bonus)	World Cup-voetbalset in de nationale kleuren van de VS. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 41455	USA WBeker Set (V/bonus)	Wereldbeker set in de nationale kleuren van VS. Geeft je minimaal 1 willekeurige bonus.
 41472	Zombie Pak	Met bloed besmeerde kleding, rottend vlees en uitstekende botten - Perfecte outfit voor elke zombie.
 41473	Zombie Jurk	Met bloed besmeerde kleding, rottend vlees en uitstekende botten - Perfecte outfit voor elke vrouwelijke zombie.
@@ -1172,7 +1172,7 @@
 45008	Voetbal Haarstijl DUI(V)	Een sportief kapsel voor vrouwelijk voetballers in de Duitse nationale kleuren.
 45009	Dreadlocks (M)	Het lange haar is geknoopt in Rasta lokken en is daarna vastgebonden in een paardenstaart.
 45010	Boksen Hairstijl DUI (V)	Een sportief kapsel voor vrouwelijke boksers in de Duitse nationale kleuren.
-45011	Hoofddoek (M)	Een hoofddoek voor mannen gemaakt van de fijnste materialen. Item is verhandelbaar.
+45011	Hoofddoek (M)	Een hoofddoek voor mannen gemaakt van de fijnste materialen. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 45012	Hoofddoek (V)	Een hoofddoek voor vrouwen gemaakt van de fijnste materialen. Item is verhandelbaar.
 45013	LvaboKadzi (M)	Lang van boven en opgeschoren aan de zijkanten - een extravagant kapsel voor mannen. Voorwerp is verhandelbaar.
 45014	Schermen Haarstijl (V)	Een sportief kapsel voor vrouwelijke schermers. Item is verhandelbaar.
@@ -1268,8 +1268,8 @@
 45124	konijnenoortjes (blauw)	Blauwe konijnenoortjes voor vrouwen
 45125	konijnenoortjes (groen)	Groene konijnenoortjes voor vrouwen
 45126	konijnenoortjes (roze)	Roze konijnenoortjes voor vrouwen
-45127	Hazenoren+ (zwart)	Zwarte hoed met hazenoren voor mannen. Geeft je minimaal 1 willekeurige bonus.
-45128	Hazenoren+ (blauw)	Blauwe hoed met hazenoren voor mannen. Geeft je minimaal 1 willekeurige bonus.
+45127	Hazenoren+ (zwart)	Zwarte hoed met konijnenoren voor mannen. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
+45128	Hazenoren+ (blauw)	Blauwe hoed met konijnenoren voor mannen. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 45129	Hazenoren+ (groen)	Groene hoed met hazenoren voor mannen. Geeft je minimaal 1 willekeurige bonus.
 45130	Hazenoren+ (roze)	Roze hoed met hazenoren voor mannen. Geeft je minimaal 1 willekeurige bonus.
 45131	konijnenoortjes+ (zwart)	Zwarte konijnenoortjes voor vrouwen. Geeft je minimaal 1 willekeurige bonus.
@@ -1290,7 +1290,7 @@
 45146	Maya Masker+	Angstaanjagend masker van de Maya krijger. Geeft minimaal 2 willekeurige bonussen.
 45147	Zwarte Tulband (M)	Een hoofdtooi gemaakt van zwart matteriaal voor mannen.
 45148	Zwarte Tulband (V)	Een hoofdtooi gemaakt van zwart matteriaal voor vrouwen.
-45149	Zwarte Tulband+ (M)	Een zwarte hoofdtooi gemaakt van zwart matteriaal voor mannen. Geeft je minimaal 1 willekeurige bonus.
+45149	Zwarte Tulband+ (M)	Een zwarte hoofdtooi gemaakt van zwart materiaal voor mannen. Geeft je minstens één willekeurige bonus. Item is verhandelbaar.
 45150	Zwarte Tulband+ (V)	Een hoofdtooi gemaakt van zwart matteriaal voor vrouwen. Geeft je minimaal 1 willekeurige bonus.
 45151	Azraels Helm (m)	Hoofdtooi met de grijns van de beruchte demonleider erop.
 45152	Azraels Helm (v)	Hoofdtooi met de grijns van de beruchte demonleider erop.
@@ -1300,10 +1300,10 @@
 45157	Pompoenen Jan Hoofd (v)	Spookachtig grandioos Halloween masker
 45158	Pompoenen Jan Hoofd+ (m)	Spookachtig grandioos Halloween masker. Geeft je minimaal 1 willekeurige bonus. Voorwerp is verhandelbaar.
 45159	Pompoenen Jan Hoofd+ (v)	Spookachtig grandioos Halloween masker. Geeft je minimaal 1 willekeurige bonus. Voorwerp is verhandelbaar.
-45160		
-45161		
-45162		
-45163		
+45160		Opgebonden dreadlocks, rood-wit geverfd.
+45161		Opgebonden dreadlocks, rood-wit geverfd, met hoofdband.
+45162		Opgebonden dreadlocks, rood-wit geverfd. Geeft je minstens één willekeurige bonus.
+45163		Opgebonden dreadlocks, rood-wit geverfd, met hoofdband. Geeft je minstens één willekeurige bonus.
 45164	Sneeuwkonijn Hoed	Hoofdtooi in de vorm van een sneeuwkonijn
 45165	IJsbeer Hoed	Hoofdtooi in de vorm van een IJsbeer.
 45166	Sneeuwluipaard Hoed	Hoofdtooi in de vorm van een Sneeuwluipaard
@@ -1342,11 +1342,11 @@
 50002	Gouden Ring	Een simpele gouden ring | Het kan verkocht worden in de winkel voor een hoge prijs.
 50003	Correctie Document	Staat het toe om de vaardigheden te resetten en nieuwe te leren.
 50004	Gebeurtenis Detector	Dit Voorwerp laat je zien waar quests gevonden kunnen worden.
-50005	Paardrij Kaartje	Je kunt gratis op een paard rijden als dit laat zien aan de Stalwachter. Vereist level 40.
+50005	Paardrij Kaartje	Dit ticket kan ingewisseld worden voor een Paarden Medaille van de Staljongen.
 50006	Gouden Schatkist	Een goud versierde kist. | Het kan geopend worden met een Gouden Sleutel.
 50007	Zilveren Schatkist	Een zilveren versierde kist. | Het kan geopend worden met een Zilveren Sleutel.
 50008	Gouden Sleutel	Een sleutel gemaakt van goud. | Het kan de Gouden Schatkist en Gouden schatkist+ openen.
-50009	Zilveren Sleutel	Een sleutel gemaakt van zilver. Het kan de Zilveren Schatkist en de Zilveren Scahtkist+ openen.
+50009	Zilveren Sleutel	Een sleutel gemaakt van zilver. Het kan de Zilveren Schatkist en de Zilveren Schatkist+ openen.
 50010	Sok	Iemand doet daar zijn cadeau's in gedurende het Kerstmis seizoen.
 50011	Maanlicht Schatkist	Een oogverblindend versierde schatkist die mensen verleid. Er gebeuren bovennatuurlijke dingen wanneer er maanlicht op valt.
 50012	Gouden Schatkist+	Een goud versierde kist. | Het kan geopend worden met een Gouden Sleutel.
@@ -1369,7 +1369,7 @@
 50035	Geschenk (geel)	Een geschenk verpakt in delicaat papier.
 50036	Geschenk (violet)	Een geschenk verpakt in delicaat papier.
 50037	Hexagonaal Schatkist	Gemaakt van een speciall papier, het bevat een zorgvuldig uitgekozen cadeau.
-50050	Paarden Medaille	De Stal jongen heeft dit Medaille nodig om de resultaten te noteren van de kwalificatie test.
+50050	Paarden Medaille	De Staljongen heeft dit Medaille nodig om de resultaten te noteren van de kwalificatie test.
 50051	Paarden Plaatje	Het certificaat om paard te mogen rijden.
 50052	Strijdpaarden Boek	Het certificaat voor geavanceerde Paardrijden. | Staat aanvallen vanaf een paard toe.
 50053	Militaire Paardenboek	Het certificaat voor Expert Paardrijden | Staat het gebruik van Paardrij Vaardigheden toe.
@@ -1391,17 +1391,17 @@
 50076	R. W.  Schildpad. Kist	De kist van de  Reuze Woestijn Schildpad. Bevat iets waardevols.
 50077	Negenstaarten Kist	De kist van de Negenstaarten. Bevat iets waardevols.
 50078	Gele Tijger Spook Kist	De kist van de Reuze Tijger. Bevat iets waardevols.
-50079	Vlammende Koning Kist	De kist van de Vlammende Koning. Bevat iets waardevols.
+50079	Vlammende Koning Kist	De kist van de Vlammenkoning. Bevat iets waardevols.
 50080	Rode Draken Kist	De kist van de Rode Draak. Bevat iets waardevols.
 50081	Demonen Koning Kist	De kist van de  Demonen Koning. Bevat iets waardevols.
 50082	Man met de Zeis Kist	De kist van de  Man met de Zeis. Bevat iets waardevols.
-50083	Paardrij Kaartje	Je mag gratis een rit op een paard maken als je dit laat zien aan de Stalwachter.
+50083	Paardrij Kaartje	Open het Ruiterpaspoort om je Paardrijkaartje te ontvangen. Vanaf level 10 kun je dit gebruiken om een tijdje op een Pony te mogen rijden.
 50084	Ontgrendel Steen	Een aura geladen met energie omhult deze steen. Het werkt tegen zegel magie.
 50091	Goudvis Sushi	Gemaakt van Goudvis | Speciale Maaltijd.
 50092	Karper Sushi	Gemaakt van Karper | Speciale Maaltijd. Ruikt uniek, raar om te eten.
 50093	Zalm sushi	Een speciaal gerecht dat gemaakt is van rauwe zalm en koude rijst. Het verhoogt je aanvalswaarde met 10 punten voor 30 seconden.
 50094	Katvis Sushi	Een speciaal gerecht van rauwe Katvis en koude rijst. Verhoogt je verdedingskracht met 10 punten voor 30 seconden.
-50096	Voetbal	Bend it like Baljit-Elvedin!
+50096	Voetbal	Bend it like Baljit-Elvedin! De bal is niet verhandelbaar.
 50100	Vuurwerk	Vuurwerk vult de lucht tijdens een festival. (Paars)
 50101	Vuurwerk	Vuurwerk vult de lucht tijdens een festival. (Geel)
 50102	Vuurwerk	Vuurwerk vult de lucht tijdens een festival. (Licht Blauw)
@@ -1409,12 +1409,12 @@
 50104	Vuurwerk	Vuurwerk vult de lucht tijdens een festival. (Groen)
 50105	Vuurwerk	Vuurwerk vult de lucht tijdens een festival. (Wit)
 50106	Kerst Vuurwerk	Kerst Vuurwerk | Zijn veel mooier dan normale Vuurwerk.
-50108	Vuurwerk Tol	Een tol die vonken in het rond gooit.
+50108	Vuurwerk Tol	Een handgemaakte Vuurwerk Tol waar kinderen graag naar kijken om zich te vermaken. | | Kans op overdonderen: 5% | Duur: 10 minuten
 50118		
 50119		
-50120	Ijzeren Container	De stevige container is van de Grot der Verbanning.
-50121	Ijzeren Kist	De stevige container is uit de Grot der Verbanning.
-50122	Ijzeren Krat	De stevige container is uit  de Grot der Verbanning.
+50120	Ijzeren Container	De stevige container komt uit de Grot der Verbanning.
+50121	Ijzeren Kist	De stevige container komt uit de Grot der Verbanning.
+50122	Ijzeren Krat	De stevige container komt uit de Grot der Verbanning.
 50123	IJsje	Energieboost! Dit ijsje 'boost' je bewegingssnelheid met 60 voor 30 minuten. Voorzichting: het heractiveren hiervan terwijl de boost actief is, zal de duur overschrijven.
 50124	Verrotte Houten Doos	Zachte diergeluiden komen eruit.
 50125	Mysterieuze Kist	Deze kist is ongeloofelijk licht - het lijkt wel of ie leeg is...
@@ -1460,7 +1460,7 @@
 50180	Lege mand	Een lege mand waar je Paaseieren in kunt doen
 50181	Mand met Paaseieren	Een mand gevuld met Paaseieren.
 50182	Zegenings Kist	Een gezegende kist met onbekende inhoud.
-50183	Snoepjes	Deze snoepjes hebben een speciaal effect: bewegingssnelheid +10%, schade +5% en ervaring +10%. Het effect duurt 30 minuten.
+50183	Snoepjes	Deze snoepjes hebben een speciaal effect: bewegingssnelheid +10, schade +5% en ervaring +10%. Ze gaan 30 minuten mee.
 50184		
 50185		
 50186	Kist van Azrael	Demonische krachten houden deze kist verzegeld, dus er moet wel iets waardevols in zitten.
@@ -1481,7 +1481,7 @@
 50212	Leerling Kist I	Je welkomstgift bestaat uit een basis uitrusting voor de optimale start van jouw avontuur.
 50213	Leerling Kist I	Je welkomstgift bestaat uit een basis uitrusting voor de optimale start van jouw avontuur.
 50215	Halloween Kist	Een kist met een spookachtig pompoen gezicht op de zijkant. Met een piepend geluid opent de deksel en laat de inhoud zien.
-50216	Glühwijn	Een warme drank gemaakt van wijn en kruiden dat je +10% snelheid, +5% schade en +10% ervaring geeft voor 30 minuten.
+50216	Glühwijn	Een warme drank gemaakt van wijn en kruiden die je +10% snelheid, +5% schade en +10% ervaring geeft.
 50249	Kist der Triomf	De Kist bevat een willekeurig item als beloning voor alle Olympiërs.
 50252	Cor Draconis	Het kristallen drakenhart bevat de ziel, de Drakensteen, binnenin.
 50253		
@@ -1569,19 +1569,19 @@
 50534	Bloedrode Wolf Ziel Boek	Gebruik dit boek om de Bloedrode Wolf Ziel-vaardigheid meester te worden. Het boek verdwijnt nadat het gelezen is.
 50535	Indigo Wolf Ziel Boek	Gebruik dit boek om de Indigo Wolf Ziel-vaardigheid meester te worden. Het boek verdwijnt nadat het gelezen is.
 50600	Mijnbouw Boek	Gebruik dit boek om je Mijnbouw niveau te vergroten | Verdwijnt na het lezen.
-50601	Diamanten Steen	Kan tot een Diamant gevormd worden met de  Gilde Diamant Vuurhaard.
-50602	Amber	Kan tot Amber gevormd worden met de  Gilde Amber Vuurhaard.
-50603	Fossielen Stam	Kan tot Fossiele Hout gevormd worden met de  Gilde Fossiele Hout Vuurhaard.
-50604	Koper Erts	Kan tot Koper gevormd worden met de  Gilde Koper Vuurhaard.
-50605	Zilver Erts	Kan tot Zilver gevormd worden met de  Gilde Zilver Vuurhaard.
-50606	Goud Erts	Kan tot Goud gevormd worden met de  Gilde Goud Vuurhaard.
-50607	Jade Erts	Kan tot Jade gevormd worden met de  Gilde Jade Vuurhaard.
-50608	Ebbenhouten Erts	Kan tot Ebbenhout gevormd worden met de  Gilde Ebbenhout Vuurhaard.
-50609	Stuk Parel	Kan tot een Parel gevormd worden met de  Gilde Parel Vuurhaard.
-50610	Witgoud Erts	Kan tot Witgoud gevormd worden met de  Gilde Witgoud Vuurhaard.
-50611	Kristal Erts	Kan tot Kristal gevormd worden met de  Gilde Kristal Vuurhaard.
-50612	Amethist Erts	Kan tot Amethist gevormd worden met de  Gilde Amethist Vuurhaard.
-50613	Hemelse Traan Erts	Kan tot een Hemelse Traan gevormd worden met de  Gilde Hemelse Traan Vuurhaard.
+50601	Diamanten Steen	Door gebruik te maken van de Gilde Oven kun je een Diamant maken uit deze steen.
+50602	Amber	Door gebruik te maken van de Gilde Oven kun je een gouden amber maken van deze ongehouwen steen.
+50603	Fossielen Stam	Deze stronk kan verbeterd worden tot Fossiel Hout door gebruik te maken van de Gilde Oven.
+50604	Koper Erts	Door gebruik te maken van de Gilde Oven kun je Koper maken uit deze erts.
+50605	Zilver Erts	Door gebruik te maken van de Gilde Oven kun je Zilver maken uit deze erts.
+50606	Goud Erts	Door gebruik te maken van de Gilde Oven kun je Goud maken uit deze erts.
+50607	Jade Erts	Door gebruik te maken van de Gilde Oven kun je Jade maken uit deze erts.
+50608	Ebbenhouten Erts	Door gebruik te maken van de Gilde Oven kun je Ebbenhout maken uit deze erts.
+50609	Stuk Parel	Door gebruik te maken van de Gilde Oven kun je een Parel maken uit dit stuk.
+50610	Witgoud Erts	Door gebruik te maken van de Gilde Oven kun je Witgoud maken uit deze erts.
+50611	Kristal Erts	Door gebruik te maken van de Gilde Oven kun je Kristal maken uit deze erts.
+50612	Amethist Erts	Door gebruik te maken van de Gilde Oven kun je Amethist maken uit deze erts.
+50613	Hemelse Traan Erts	Door gebruik te maken van de Gilde Oven kun je een Hemelse Traan maken uit deze erts.
 50614	Zielkristal erts	Door gebruik te maken van de Gilde Oven, kan je een Zielkristal maken van dit erts.
 50615	Robijn erts	Door gebruik te maken van de Gilde Oven, kan je een Robijn maken van dit erts.
 50616	Graniet erts	Door gebruik te maken van de Gilde Oven, kan je een Granaat maken van dit erts.
@@ -1643,8 +1643,8 @@
 50810	Brandnetel Sap	Sap gemaakt van Brandnetels.
 50811	Dadel Sap	Sap gemaakt van Dadels.
 50812	Sam-Zi Plant Sap	Sap gemaakt van de Sam-Zi Plant.
-50813	Sim Water	Dit brouwsel is gemaakt uit Perzik Bloesem sap en Sering, het verhoogt je kans om een penetrerende slag uit te delen met 10% voor 3 minuten.
-50814	Dok Water	Dit brouwsel is gemaakt uit Weideklokjes sap en Sering, het verhoogt je kans om een kritieke slag uit te delen met 10% voor 3 minuten.
+50813	Sim Water	Een brouwsel gebrouwen met Perzik Bloesem Sap en Sering wat je kans op het uitdelen van een perforerende slag verhoogt met 10%.
+50814	Dok Water	Een brouwsel gebrouwen met Perzik Bloesem Sap en Sering wat je kans op het uitdelen van een kritieke slag verhoogt met 10%.
 50815	Bo Water	Dit brouwsel is gemaakt uit Kaki Bloesem Sap + Tue Paddestoelen. Het versterkt de hersenen.
 50816	Young Water	Dit brouwsel wordt gemaakt van Gango Wortel + Tue Paddestoelen. Het geeft nieuwe levenskracht.
 50817	Zin Water	Dit brouwsel wordt gemaakt van Sim Water en Alpen Roos, het verhoogt je aanvalswaarde met 50 punten voor 3 minuten.
@@ -1668,7 +1668,7 @@
 51503	Cor Draconis (Normaal)	Kristallen drakenhart. Klasse: Normaal. Bevat een matte Drakensteen van klasse: Ruw tot Geslepen.
 51504	Cor Draconis (Nobel)	Kristallen drakenhart. Klasse: Nobel. Bevat een matte Drakensteen van klasse: Ruw tot Zeldzaam.
 51505	Cor Draconis (Kostbaar)	Kristallen drakenhart. Klasse: Kostbaar. Bevat een matte Drakensteen van klasse: Ruw tot Antiek.
-51506	Cor Draconis (Mystiek)	Kristallen drakenhart. Klasse: Mystiek. Bevat een matte Drakensteen van klasse: Geslepen tot Legendarisch.
+51506	Cor Draconis (Mystiek)	Kristallen drakenhart. Klasse: mystiek. Bevat een matte Drakensteen van de klasse: geslepen tot legendarisch.
 51507	Cor Draconis (Geslepen)	Het kristallen drakenhart bevat een willekeurige Drakensteen van de klasse Geslepen.
 51508	Cor Draconis (Zeldzaam)	Het kristallen drakenhart bevat een willekeurige Drakensteen van de klasse Zeldzaam.
 51509	Cor Draconis (Antiek)	Het kristallen drakenhart bevat een willekeurige Drakensteen van de klasse Antiek.
@@ -1718,12 +1718,12 @@
 51553	Cor Saphirum (Eeuwig)	Blauwe Cor Draconis. Klasse: Eeuwig. Bevat een matte Drakensaffier van klasse: Geslepen tot Antiek.
 51554	Cor Granatum (Eeuwig)	Oranje Cor Draconis. Klasse: Eeuwig. Bevat een matte Drakengranaat van klasse: Geslepen tot Antiek.
 51555	Cor Atrum (Eeuwig)	Zwarte Cor Draconis. Klasse: Eeuwig. Bevat een matte Drakenonyx van klasse: Geslepen tot Antiek.
-51556	Cor Diamas (Mystiek)	Witte Cor Draconis. Klasse: Mystiek. Bevat een matte Drakendiamant van klasse: Geslepen tot Legendarisch.
-51557	Cor Rubinum (Mystiek)	Rode Cor Draconis. Klasse: Mystiek. Bevat een matte Drakenrobijn van klasse: Geslepen tot Legendarisch.
-51558	Cor Jadeit (Mystiek)	Groene Cor Draconis. Klasse: Mystiek. Bevat een matte Drakenjade van klasse: Geslepen tot Legendarisch.
-51559	Cor Saphirum (Mystiek)	Blauwe Cor Draconis. Klasse: Mystiek. Bevat een matte Drakensaffier van klasse: Geslepen tot Legendarisch.
-51560	Cor Granatum (Mystiek)	Oranje Cor Draconis. Klasse: Mystiek. Bevat een matte Drakengranaat van klasse: Geslepen tot Legendarisch.
-51561	Cor Atrum (Mystiek)	Zwarte Cor Draconis. Klasse: Mystiek. Bevat een matte Drakenonyx van klasse: Geslepen tot Legendarisch.
+51556	Cor Diamas (Mystiek)	Witte Cor Draconis. Klasse: mystiek. Bevat een matte Drakendiamant van de klasse: geslepen tot legendarisch.
+51557	Cor Rubinum (Mystiek)	Rode Cor Draconis. Klasse: mystiek. Bevat een matte Drakenrobijn van de klasse: geslepen tot legendarisch.
+51558	Cor Jadeit (Mystiek)	Groene Cor Draconis. Klasse: mystiek. Bevat een matte Drakenjade van de klasse: geslepen tot legendarisch.
+51559	Cor Saphirum (Mystiek)	Blauwe Cor Draconis. Klasse: mystiek. Bevat een matte Drakensaffier van de klasse: geslepen tot legendarisch.
+51560	Cor Granatum (Mystiek)	Oranje Cor Draconis. Klasse: mystiek. Bevat een matte Drakengranaat van de klasse: geslepen tot legendarisch.
+51561	Cor Atrum (Mystiek)	Zwarte Cor Draconis. Klasse: mystiek. Bevat een matte Drakenonyx van de klasse: geslepen tot legendarisch.
 51562	Cor Draconis (Episch)	Kristallen drakenhart. Rang: Episch. Bevat een matte Drakensteen van klasse: Zeldzaam tot Antiek.
 51563	Cor Diamas (Episch)	Witte Cor Draconis. Klasse: Episch. Bevat een matte Drakendiamant van klasse: Zeldzaam tot Antiek.
 51564	Cor Rubinum (Episch)	Rode Cor Draconis. Klasse: Episch. Bevat een matte Drakenrobijn van klasse: Zeldzaam tot Antiek.
@@ -1780,13 +1780,13 @@
 51615	Cor Saphirum+ (Eeuwig)	Krachtige Cor Draconis. Klasse: Eeuwig. Bevat een Drakensaffier van klasse: Geslepen tot Antiek met een willekeurige helderheidsgraad.
 51616	Cor Granatum+ (Eeuwig)	Krachtige Cor Draconis. Klasse: Eeuwig. Bevat een Drakengranaat van klasse: Geslepen tot Antiek met een willekeurige helderheidsgraad.
 51617	Cor Atrum+ (Eeuwig)	Krachtige Cor Draconis. Klasse: Eeuwig. Bevat een Drakenonyx van klasse: Geslepen tot Antiek met een willekeurige helderheidsgraad.
-51618	Cor Draconis+ (Mystiek)	Krachtige Cor Draconis. Klasse: Mystiek. Bevat een Drakensteen van klasse: Geslepen tot Legendarisch met een willekeurige helderheidsgraad.
-51619	Cor Diamas+ (Mystiek)	Krachtige Cor Draconis. Klasse: Mystiek. Bevat een Drakendiamant van klasse: Geslepen tot Legendarisch met een willekeurige helderheidsgraad.
-51620	Cor Rubinum+ (Mystiek)	Krachtige Cor Draconis. Klasse: Mystiek. Bevat een Drakenrobijn van klasse: Geslepen tot Legendarisch met een willekeurige helderheidsgraad.
-51621	Cor Jadeit+ (Mystiek)	Krachtige Cor Draconis. Klasse: Mystiek. Bevat een Drakenjade van klasse: Geslepen tot Legendarisch met een willekeurige helderheidsgraad.
-51622	Cor Saphirum+ (Mystiek)	Krachtige Cor Draconis. Klasse: Mystiek. Bevat een Drakensaffier van klasse: Geslepen tot Legendarisch met een willekeurige helderheidsgraad.
-51623	Cor Granatum+ (Mystiek)	Krachtige Cor Draconis. Klasse: Mystiek. Bevat een Drakengranaat van klasse: Geslepen tot Legendarisch met een willekeurige helderheidsgraad.
-51624	Cor Atrum+ (Mystiek)	Krachtige Cor Draconis. Klasse: Mystiek. Bevat een Drakenonyx van klasse: Geslepen tot Legendarisch met een willekeurige helderheidsgraad.
+51618	Cor Draconis+ (Mystiek)	Krachtige Cor Draconis. Klasse: mystiek. Bevat een Drakensteen van de klasse: geslepen tot legendarisch, met een willekeurige helderheidsgraad.
+51619	Cor Diamas+ (Mystiek)	Krachtige Cor Draconis. Klasse: mystiek. Bevat een Drakendiamant van de klasse: geslepen tot legendarisch, met een willekeurige helderheidsgraad.
+51620	Cor Rubinum+ (Mystiek)	Krachtige Cor Draconis. Klasse: mystiek. Bevat een Drakenrobijn van de klasse: geslepen tot legendarisch, met een willekeurige helderheidsgraad.
+51621	Cor Jadeit+ (Mystiek)	Krachtige Cor Draconis. Klasse: mystiek. Bevat een Drakenjade van de klasse: geslepen tot legendarisch, met een willekeurige helderheidsgraad.
+51622	Cor Saphirum+ (Mystiek)	Krachtige Cor Draconis. Klasse: mystiek. Bevat een Drakensaffier van de klasse: geslepen tot legendarisch, met een willekeurige helderheidsgraad.
+51623	Cor Granatum+ (Mystiek)	Krachtige Cor Draconis. Klasse: mystiek. Bevat een Drakengranaat van de klasse: geslepen tot legendarisch, met een willekeurige helderheidsgraad.
+51624	Cor Atrum+ (Mystiek)	Krachtige Cor Draconis. Klasse: mystiek. Bevat een Drakenonyx van de klasse: geslepen tot legendarisch, met een willekeurige helderheidsgraad.
 51625	Cor Draconis+ (Episch)	Krachtige Cor Draconis. Klasse: Episch. Bevat een Drakensteen van klasse: Zeldzaam tot Antiek met een willekeurige helderheidsgraad.
 51626	Cor Diamas+ (Episch)	Krachtige Cor Draconis. Klasse: Episch. Bevat een Drakendiamant van klasse: Zeldzaam tot Antiek met een willekeurige helderheidsgraad.
 51627	Cor Rubinum+ (Episch)	Krachtige Cor Draconis. Klasse: Episch. Bevat een Drakenrobijn van klasse: Zeldzaam tot Antiek met een willekeurige helderheidsgraad.
@@ -1869,8 +1869,8 @@
 52058	Dappere Tijger (zegel)	Het zegel roept jouw Dappere Tijger. Hij verhoogt zijn berijders LP met 500.
 52059	Dappere Tijger (zegel)	Het zegel roept jouw Dappere Tijger. Hij verhoogt zijn berijders verdediging waarde met 150.
 52060	Dappere Tijger (zegel)	Het zegel roept jouw Dappere Tijger. Hij verhoogt zijn berijders aanval waarde met 100.
-52061	Jong Rendier (zegel)	Dit zegel roept jouw Jonge Rendier (m) Na strijd training geeft hij zijn berijder tot 5% kracht tegen monsters.
-52062	Jong Rendier (zegel)	Deze zegel roept jouw Jonge Rendier (m) Na strijd training verhoogt hij de verzameling van ervaring tot max. 5%.
+52061	Jong Rendier (zegel)	Dit zegel roept jouw Jonge Rendier (m) op.
+52062	Jong Rendier (zegel)	Dit zegel roept jouw Jonge Rendier (m) op.
 52063	Jong Rendier (zegel)	Het zegel roept jouw Jonge Rendier (m). Na strijd training verhoogt hij zijn berijders LP met max. 500.
 52064	Jong Rendier (zegel)	Het zegel roept jouw Jonge Rendier (m). Na strijd training verhoogt hij zijn berijders verdediging waarde met max. 150
 52065	Jong Rendier (zegel)	Het zegel roept jouw Jonge Rendier (m). Na strijd training verhoogt hij zijn berijders aanval waarde met max. 100.
@@ -1884,7 +1884,7 @@
 52073	Dappere Rendier (zegel)	Het zegel roept jouw Dappere Rendier (m). Hij verhoogt zijn berijders LP met 500.
 52074	Dappere Rendier (zegel)	Het zegel roept jouw Dappere Rendier (m). Hij verhoogt zijn berijders verdediging waarde met 150.
 52075	Dappere Rendier (zegel)	Het zegel roept jouw Dappere Rendier (m). Hij verhoogt zijn berijders aanval waarde met 100.
-52076	Jonge Rendier (zegel)	Het zegel roept jouw Jonge Rendier (v). Na strijd training geeft zij haar berijder tot 5% kracht tegen monsters.
+52076	Jonge Rendier (zegel)	Dit zegel roept jouw Jonge Rendier (v) op.
 52077	Jonge Rendier (zegel)	Het zegel roept jouw Jonge Rendier (v). Na strijd training verhoogt zij de verzameling van ervaring tot max. 5%.
 52078	Jonge Rendier (zegel)	Het zegel roept jouw Jonge Rendier (v). Na strijd training verhoogt zij haar berijders LP met max. 500.
 52079	Jonge Rendier (zegel)	Het zegel roept jouw Jonge Rendier (v). Na strijd training verhoogt zij haar berijders verdediging waarde met max. 150.
@@ -1899,21 +1899,21 @@
 52088	Dappere Rendier (zegel)	Het zegel roept jouw Dappere Rendier (v). Zij verhoogt haar berijders LP met 500.
 52089	Dappere Rendier (zegel)	Het zegel roept jouw Dappere Rendier (v). Zij verhoogt haar berijders verdediging waarde met 150.
 52090	Dappere Rendier (zegel)	Het zegel roept jouw Dappere Rendier (v). Zij verhoogt haar berijders aanval waarde met 100.
-52091	Jonge Dragor Zegel	Deze zegel roept jouw jonge Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 5% kracht tegen monsters.
-52092	Jonge Dragor Zegel	Deze zegel roept jouw jonge Dragor op. Volgens zijn gevechtstraining, verhoogd hij het verzamelen van ervaring met wel 5%.
-52093	Jonge Dragor Zegel	Deze zegel roept jouw jonge Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 500LP extra.
-52094	Jonge Dragor Zegel	Deze zegel roept jouw jonge Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 150 extra verdediging.
-52095	Jonge Dragor Zegel	Deze zegel roept jouw jonge Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 100 extra aanval.
+52091	Jonge Dragor Zegel	Het zegel roept jouw jonge Dragor op.
+52092	Jonge Dragor Zegel	Het zegel roept jouw jonge Dragor op.
+52093	Jonge Dragor Zegel	Het zegel roept jouw jonge Dragor op.
+52094	Jonge Dragor Zegel	Het zegel roept jouw jonge Dragor op.
+52095	Jonge Dragor Zegel	Het zegel roept jouw jonge Dragor op.
 52096	Wilde Dragor Zegel	Deze zegel roept jouw wilde Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 3% kracht tegen monsters.
 52097	Wilde Dragor Zegel	Deze zegel roept jouw wilde Dragor op. Volgens zijn gevechtstraining, verhoogd hij het verzamelen van ervaring met wel 3%.
 52098	Wilde Dragor Zegel	Deze zegel roept jouw wilde Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 250 LP extra.
 52099	Wilde Dragor Zegel	Deze zegel roept jouw Wilde Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 50 extra verdediging.
 52100	Wilde Dragor Zegel	Deze zegel roept jouw Wilde Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 30 extra aanval.
-52101	Dappere Dragor Zegel	Deze zegel roept jouw Dappere Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 5% kracht tegen monsters.
-52102	Dappere Dragor Zegel	Deze zegel roept jouw Dappere Dragor op. Volgens zijn gevechtstraining, verhoogd hij het verzamelen van ervaring met wel 5%.
-52103	Dappere Dragor Zegel	Deze zegel roept jouw Dappere Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 500LP extra.
-52104	Dappere Dragor Zegel	Deze zegel roept jouw Dappere Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 150 extra verdediging.
-52105	Dappere Dragor Zegel	Deze zegel roept jouw Dappere Dragor op. Volgens zijn gevechtstraining geeft hij zijn berijder tot wel 100 extra aanval.
+52101	Dappere Dragor Zegel	Het zegel roept jouw Dappere Dragor op. Hij geeft zijn berijder +5% kracht tegen monsters.
+52102	Dappere Dragor Zegel	Het zegel roept jouw Dappere Dragor op. Hij verhoogt ervaringsopname met 5%.
+52103	Dappere Dragor Zegel	Het zegel roept jouw Dappere Dragor op. Hij verhoogt zijn berijder's LP met 500.
+52104	Dappere Dragor Zegel	Het zegel roept jouw Dappere Dragor op. Hij verhoogt zijn berijder's verdedigingswaarde met 150.
+52105	Dappere Dragor Zegel	Het zegel roept jouw Dappere Dragor op. Hij verhoogt zijn berijder's aanvalswaarde met 100.
 52106	Jonge Moa (Zegel)	Dit Zegel roept je Jonge Moa op. Na zijn gevechtstraining geeft hij zijn berijder +5% kracht tegen monsters.
 52107	Jonge Moa (Zegel)	Dit Zegel roept je Jonge Moa op. Na zijn gevechtstraining, verhoogd hij de verzamelde ervaring met 5%.
 52108	Jonge Moa (Zegel)	Dit Zegel roept je Jonge Moa op. Na zijn gevechtstraining, verhoogd hij zijn berijders LP met 500.
@@ -1924,11 +1924,11 @@
 52113	Wilde Moa (Zegel)	Dit Zegel roept je Wilde Moa op. Hij geeft zijn berijder +250 LP.
 52114	Wilde Moa (Zegel)	Dit Zegel roept je Wilde Moa op. Hij geeft zijn berijder +50 verdediging.
 52115	Wilde Moa (Zegel)	Dit Zegel roept je Wilde Moa op. Hij geeft zijn berijder +30 aanvalswaarde.
-52116	Dappere Moa (Zegel)	Dit Zegel roept je Dappere Moa op. Hij geeft zijn berijder +5% kracht tegen monsters.
-52117	Dappere Moa (Zegel)	Dit Zegel roept je Dappere Moa op. Hij verhoogt het verzamelen van ervaring met 5%.
-52118	Dappere Moa (Zegel)	Dit Zegel roept je Dappere Moa op. Hij geeft zijn berijder +500 LP.
-52119	Dappere Moa (Zegel)	Dit Zegel roept je Dappere Moa op. Hij geeft zijn berijder +150 verdediging.
-52120	Dappere Moa (Zegel)	Dit Zegel roept je Dappere Moa op. Hij geeft zijn berijder +100 aanvalswaarde.
+52116	Dappere Moa (Zegel)	Het zegel roept jouw Dappere Moa op. Hij geeft zijn berijder +5% kracht tegen monsters.
+52117	Dappere Moa (Zegel)	Het zegel roept jouw Dappere Moa op. Hij verhoogt ervaringsopname met 5%.
+52118	Dappere Moa (Zegel)	Het zegel roept jouw Dappere Moa op. Hij verhoogt zijn berijder's LP met 500.
+52119	Dappere Moa (Zegel)	Het zegel roept jouw Dappere Moa op. Hij verhoogt zijn berijder's verdedigingswaarde met 150.
+52120	Dappere Moa (Zegel)	Het zegel roept jouw Dappere Moa op. Hij verhoogt zijn berijder's aanvalswaarde met 100.
 52701	Leeuw Certificaat	Eigendom Certificaat van een Jonge Leeuw
 52702	Tijger Certificaat	Eigendom Certificaat van een Jonge Tijger
 52703	Wild Zwijn Certificaat	Eigendom Certificaat van een Jong Wild Zwijn.
@@ -1937,46 +1937,46 @@
 52706	Rendier Certificaat (v)	Eigendom Certificaat van een Jong Rendier (v)
 52707	Dragor Certificaat	Eigenschapscertificaat voor een Jonge Dragor
 52708	Moa Certificaat	Dit certificaat bewijst dat jij de eigenaar bent van een Jonge Moa.
-53001		
-53002	Jong Rendier Zegel	Je kunt dit zegel gebruiken om een leuk Jong Rendier te roepen.
+53001		Met dit zegel kun je jouw vriend, de Vuurfeniks, oproepen.
+53002	Jong Rendier Zegel	Je kunt dit zegel gebruiken om een schattig Rendier Kalf op te roepen.
 53003	IJs Feniks Zegel	Je kunt dit zegel gebruiken om je vriend te roepen, de IJs Feniks.
-53005	Baby Azrael	De mini versie van de demonleider is extreem aanhankelijk en geeft je een bonus van 1500HP en 15% aanval vanaf het 2e level van de Demonen Toren en de Duivelse Catacomben.
-53006	Baby Azrael  (Goud)	Deze mini demon is extreem aanhankelijk en geeft je een bonus van 1500HP en 15% aanval vanaf het 2e level van de Demonen Toren en de Duivelse Catacomben.
-53007	Bambi Zegel	Je kan deze zegel gebruiken om jouw jonge rendier, Bambi, op te roepen.
-53008	Knuud Zegel	Deze zegel laat je jouw schattige ijsbeer welp oproepen.
-53009	Bao Bao Zegel	Deze zegel laat je jouw schattige panda welp oproepen.
-53010	Leonidas Zegel	Je kan deze zegel gebruiken om jouw jonge leeuwenwelp Leonidas op te roepen.
-53011	Khan Zegel	Je kan deze zegel gebruiken om jouw tijgerwelp Khan op te roepen.
-53012	Porky Zegel	Je kan deze zegel gebruiken om jouw jonge zwijn Porky op te roepen.
-53013	Rufus Zegel	Je kan deze zegel gebruiken om jouw wolvenwelp Rufus op te roepen.
-53014	Mini-Beul Zegel	Deze zegel roept je mollige Mini-Beul in zwart pantser op.
-53015	Mini-Beul Zegel (Goud)	Deze zegel roept je mollige Mini-Beul in gouden pantser op.
-53016	Botje Zegel	Deze zegel roept Botje op.
-53017	Jade Fenikszegel	Deze zegel roept de elegante Jade Feniks op.
-53018	Sneeuw Leonidas (Zegel)	Je kan deze zegel gebruiken om je dier op te roepen.
-53019	Arctische Khan (Zegel)	Je kan deze zegel gebruiken om je dier op te roepen.
-53020	Pool Porkie (Zegel)	Je kan deze zegel gebruiken om je dier op te roepen.
-53021	Vorst Rufus (Zegel)	Je kan deze zegel gebruiken om je dier op te roepen.
-53022	Sheldon Zegel	Dit zegel laat je dier Sheldon uit zijn ei komen.
-53023	Cooper Zegel	Door dit zegel hupt Cooper naar je toe.
-53024	Panter Welpje (7 dagen)	Dit zegel roept jouw Zwart Panter Welpje op.
-53025	Luipaard Welp (7 dagen)	Dit zegel roept jouw schattig Luipaard welpje op.
-53026		
-53218	Panter Welpje (30 dagen)	Dit zegel roept jouw Zwart Panter Welpje op.
-53219	Panter Welpje (120 d)	Dit zegel roept jouw Zwart Panter Welpje op.
-53220	Luipaard Welp (30 dagen)	Dit zegel roept jouw schattig Luipaard welpje op.
-53221	Luipaard Welp (120 d)	Dit zegel roept jouw schattig Luipaard welpje op.
-53222	Pompoenhoofd Zegel	Je kan dit zegel gebruiken om je Pompoenhoofd op te roepen.
-53223	Kleine Bezem Zegel	Je kan dit zegel gebruiken om je Kleine Bezem op te roepen.
-53224	Sneeuwvlokje Zegel	Je kunt dit zegel gebruiken om Sneeuwvlokje de schattige, kleine sneeuwman op te roepen.
-53225	Sneeuwklokje Zegel	Je kunt dit zegel gebruiken om Sneeuwklokje de feestelijke, kleine sneeuwman op te roepen.
-53226	Amor (Zegel)	Je kunt dit zegel gebruiken om je persoonlijke matchmaker op te roepen. Hij geeft je 5% extra kans op perforerende slagen en verhoogt je LP met 1500.
-53227	Woedend Hart (Zegel)	Je kunt dit zegel gebruiken om het Woedede Hart op te roepen. Het geeft je 5% meer kans op perforerende slagen en verhoogt je LP met 1500.
-53228	Halve Maan (Zegel)	Je kunt dit zegel gebruiken om je Blauwe Halve Maan op te roepen.
-53229	Halve Maan (Zegel)	Je kunt dit zegel gebruiken om je Rode Halve Maan op te roepen.
-53232	Baby Huashin	De miniatuurversie van Generaal Huashin geeft je een 5% hogere kans op een perforerende slag en verhoogt LP met 1500.
-53501		
-53502	Jong Rendier Kist	Het Jonge Rendier wacht ongeduldig om door jou uit deze kist te worden gehaald.
+53005	Baby Azrael	De miniversie van de demonleider is extreem hartelijk. Vanaf de 2e verdieping van de Demonen Toren en de Duivelse Catacomben geeft hij je een bonus van | + 15% magische/fysieke aanval | +1500 LP
+53006	Baby Azrael  (Goud)	De miniversie van de demonleider is extreem hartelijk. Vanaf de 2e verdieping van de Demonen Toren en de Duivelse Catacomben geeft hij je een bonus van | + 15% magische/fysieke aanval | +1500 LP
+53007	Bambi Zegel	Je kunt dit zegel gebruiken om je rendierkalf Bambi op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53008	Knuud Zegel	Dit zegel laat je jouw schattige ijsbeerwelp oproepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53009	Bao Bao Zegel	Dit zegel laat je jouw schattige pandawelp oproepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53010	Leonidas Zegel	Je kunt dit zegel gebruiken om jouw jonge leeuwenwelp Leonidas op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53011	Khan Zegel	Je kunt dit zegel gebruiken om jouw tijgerwelp Khan op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53012	Porky Zegel	Je kunt dit zegel gebruiken om jouw jonge zwijntje Porky op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53013	Rufus Zegel	Je kunt dit zegel gebruiken om jouw wolvenwelp Rufus op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53014	Mini-Beul Zegel	Dit zegel roept je mollige Mini-Beul in zwart pantser op. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53015	Mini-Beul Zegel (Goud)	Dit zegel roept je mollige Mini-Beul in gouden pantser op. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53016	Botje Zegel	Dit zegel roept je bottige huisdier op. Het geeft je | +15% magische/fysieke aanval | +1500 LP
+53017	Jade Fenikszegel	Dit zegel roept de elegante Jade Feniks op. Het huisdier geeft je | +15% magische/fysieke aanval | +50% kans op een ERV-bonus van 30%
+53018	Sneeuw Leonidas (Zegel)	Je kunt dit zegel gebruiken om de kleine sneeuwleeuw op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53019	Arctische Khan (Zegel)	Je kunt dit zegel gebruiken om de kleine sneeuwtijger op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53020	Pool Porkie (Zegel)	Je kunt dit zegel gebruiken om je kleine poolbiggetje op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53021	Vorst Rufus (Zegel)	Je kunt dit zegel gebruiken om je kleine poolwolfje op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53022	Sheldon Zegel	Met dit zegel zal jouw huisdier Sheldon uit zijn ei kruipen. Het geeft je | +15% magische/fysieke aanval | +1500 LP
+53023	Cooper Zegel	Met dit zegel komt je huisdier Cooper naar je toegehupt. Het geeft je | +15% magische/fysieke aanval | +1500 LP
+53024	Panter Welpje (7 dagen)	Dit zegel roept jouw zwarte Panter Welpje op. Het geeft je | +5% vaardighedenschadeweerstand | +5% kans op perforerende slagen | +1500 LP
+53025	Luipaard Welp (7 dagen)	Dit zegel roept jouw schattige Luipaard Welpje op. Het huisdier geeft je | +10 verdedigingswaarde | +5% kans op kritieke slagen | +1500 LP
+53026		Je kunt dit zegel gebruiken om jouw Feniks Pepita op te roepen. Het huisdier verhoogt ervaringsopname met +5%.
+53218	Panter Welpje (30 dagen)	Dit zegel roept jouw zwarte Panter Welpje op. Het geeft je | +5% vaardighedenschadeweerstand | +5% kans op perforerende slagen | +1500 LP
+53219	Panter Welpje (120 d)	Dit zegel roept jouw zwarte Panter Welpje op. Het geeft je | +5% vaardighedenschadeweerstand | +5% kans op perforerende slagen | +1500 LP
+53220	Luipaard Welp (30 dagen)	Dit zegel roept jouw schattige Luipaard Welpje op. Het huisdier geeft je | +10 verdedigingswaarde | +5% kans op kritieke slagen | +1500 LP
+53221	Luipaard Welp (120 d)	Dit zegel roept jouw schattige Luipaard Welpje op. Het huisdier geeft je | +10 verdedigingswaarde | +5% kans op kritieke slagen | +1500 LP
+53222	Pompoenhoofd Zegel	Je kunt dit zegel gebruiken om je Pompoenhoofd op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53223	Kleine Bezem Zegel	Je kunt dit zegel gebruiken om je Kleine Bezem op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53224	Sneeuwvlokje Zegel	Je kunt dit zegel gebruiken om Sneeuwvlokje de schattige, kleine sneeuwman op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53225	Sneeuwklokje Zegel	Je kunt dit zegel gebruiken om Sneeuwklokje de feestelijke kleine sneeuwman op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +5% kritieke slagen
+53226	Amor (Zegel)	Je kunt dit zegel gebruiken om je persoonlijke matchmaker op te roepen. Het geeft je | +5% kans op perforerende slagen | +1500 LP
+53227	Woedend Hart (Zegel)	Je kunt dit zegel gebruiken om het Woedende Hart op te roepen. Het geeft je | +5% kans op kritieke slagen | +1500 LP
+53228	Halve Maan (Zegel)	Je kunt dit zegel gebruiken om je Blauwe Halve Maan op te roepen. Het huisdier geeft je | +15% magische/fysieke aanval | +1500 LP
+53229	Halve Maan (Zegel)	Je kunt dit zegel gebruiken om je Rode Halve Maan op te roepen.  Het geeft je | +15% magische/fysieke schade | +5% kans op kritieke slagen
+53232	Baby Huashin	De miniversie van Generaal Huashin geeft je | +5% kans op perforerende slagen | +1500 LP
+53501		De Vuurfeniks wacht ongeduldig in z'n kooi tot jij hem komt bevrijden.
+53502	Jong Rendier Kist	Het Rendier Kalf wacht ongeduldig om door jou uit deze kist te worden gehaald.
 53503	IJs Feniks Kooi	De IJs Feniks wacht in deze kooi op jou om er uit te halen.
 53504		
 53505	Baby Azrael Kist	Baby Azrael, de miniatuurversie van de demonenkoning, wacht op verlossing uit deze kist.
@@ -1992,13 +1992,13 @@
 53515	Mini-Beul Kist (Goud)	De mollige Mini-Beul in goud pantser wacht op vrijlating uit deze kist.
 53516	Botten Kist	Bevat een willekeurig voorwerp. Met een beetje geluk vind je de de skelet hond, Botje.
 53517	Jade Kooi	De zeldzame Jade Feniks wacht in deze kooi tot jij hem bevrijd.
-53518	Sneeuw Leonidas	Deze kist bevat het Sneeuw Leonidas zegel.
-53519	Arctische Khan	Deze kist bevat het Arctische Khan zegel.
-53520	Pool Porkie	Deze kist bevat het Pool Porkie zegel.
-53521	Vorst Rufus	Deze kist bevat het Vorst Rufus zegel.
+53518	Sneeuw Leonidas	Deze kooi bevat het zegel van Sneeuw Leonidas.
+53519	Arctische Khan	Deze kooi bevat het zegel van Arctische Khan.
+53520	Pool Porkie	Deze kooi bevat het zegel van Pool Porkie.
+53521	Vorst Rufus	Deze kooi bevat het zegel van Vorst Rufus.
 53522	Sheldons Nest	Je dier Sheldon heeft zichzelf verborgen in dit nest.
 53523	Konijnenkooi	Het kleine konijntje Cooper verstopt zich in zijn kooi.
-53526		
+53526		Open dit blik om Pepita's zegel te bemachtigen.
 53527	Pompoenhoofd Kooi	Open deze kooi om je Pompoenhoofd Zegel te ontvangen.
 53528	Bezemkast	Open dit om de kleine bezemsteel zegel te ontvangen.
 53529	Sneeuwvlokje's Vrieskist	Sneeuwvlokje, jouw kleine, trouwe compagnon wacht op je in deze kist. Terwijl hij liever bibbert van de vorst, doet hij je hart smelten.
@@ -2017,7 +2017,7 @@
 70002	Derde Hand	Een hand die automatisch Yang ophaalt
 70003	Leider Boek	Zolang de Leider van een groep uitgerust is met dit Boek, verzamelen alle groepsleden 30% meer Ervaringspunten.
 70004	Medaille van Vlijt	Een beloning voor je harde werk. Het geeft je 20% meer ervaringspunten tijdens gevechten.
-70005	Ervaring ring	Je verzamelt 50% meer ERvaringspunten tijdens een Gevecht.
+70005	Ervaring ring	Verhoogt de verzameling van ervaring met 50% gedurende 60 minuten.
 70006	Talen Ring	Een ring gesmeed voor diplomatie tijdens een lang verloren tijdperk. Gebruik het om met mensen uit andere Koninkrijken te praten.
 70008	Witte Vlag	Een witte vlag, die overgave symboliseert.
 70009	Schat Kist	Een kist dat gedecoreerd is  met veel ornamenten. Kan alleen geopend worden met een speciale sleutel.
@@ -2028,24 +2028,24 @@
 70015	Goedkope Borstel	Een alledaags, robuuste borstel met een stevige houten handvat.
 70020	Perzik Bloem Wijn	Drankje dat je LP onmiddellijk met 500 punten herstelt.
 70024	Gezegend Bol	Een bol uit de legendes, die een vijfde attribuut toevoegt.
-70027	Smid´s Notitie	Een notitie van de Smid die je vertelt hoe je je wapens kan verrijken.
-70031	Vechtkunst Pamflet	Deze pamflet geeft je een overzicht van onder andere de potentieel en zwakheden van de menselijke anatomie.
+70027	Smid´s Notitie	Een notitie van de Smid die je vertelt hoe je jouw items kunt verbeteren. Verhoogt de kans op het verbeteren van een item van +4 tot +5 met 100%.
+70031	Vechtkunst Pamflet	Dit pamflet geeft je een overzicht van onder andere de potentieel en zwakheden van de menselijke anatomie.
 70035	Magische Koper Erts	Erts die nodig is om het Oorlog Geschrift te maken - Tezamen met een  Zegening bij de Smid.
-70037	Vergeetachtigheid Boek	Legendarische boek dat de herinnering van een geleerde Vaardigheid compleet wegvaagt. Je kunt 1 Vaardigheidpunt verplaatsen.
+70037	Vergeetachtigheid Boek	Met dit boek kan jouw held de herinnering aan een eerder geleerde vaardigheid vergeten. Op deze manier kun je één vaardigheidspunt verplaatsen.
 70038	Moedigheidsmantel	Oude krijgers laten hun moed zien door een kleurrijke mantel te dragen, waarmee ze alle monsters lokken.
 70039	Smids Handboek	Dit boek bevat de ziel van een oude Smid, het vergroot de kans om een Voorwerp succesvol te verbeteren.
 70040	Ork Koppigheid	Halveert de uithoudingsvermogen consumptie.
-70043	Dieven Handschoen	Verdubbelt de kans om Voorwerpen buit te maken.
+70043	Dieven Handschoen	Dubbele kans op het buitmaken van items.
 70047	Talen Ring (proef)	In vroegere tijden werd deze ring gemaakt voor een groep diplomaten. Het staat de gebruiker toe om de talen van andere koninkrijken te spreken.
-70048	Ontsnappers Mantel	Een mantel van onschatbare waarde gebruikt door vele weglopers. Wanneer het gebruikt wordt, verhult het je aanpassingen.
-70049	Lucy's Ring	Op de ring staat geschreven; Gezegend met de  Draken God zijt gij.
+70048	Ontsnappers Mantel	Gebruik dit mysterieuze mantel om je ware rang te verhullen.
+70049	Lucy's Ring	In de ring staat gegraveerd: 'Gezegend met de Draken God zijt gij.' De ring vermindert de kans dat je items kunt verliezen in het heetst van de strijd. In plaats van dat je een item verliest, verlies je Lucy's Ring.
 70050	Wijze Keizer Symbool	Een geërfde symbool van de oude aristicratische familie, geeft de beheerder grote kracht.
 70051	Wijze Keizer Handschoen	Een geërfde symbool van de oude aristicratische familie, geeft de beheerder grote kracht.
 70052	Talisman Karma1	Een Talisman die gebruikt wordt door Buddhisten tegen ongeluk.
 70053	Talisman Karma2	Een Talisman die gebruikt wordt door Buddhisten tegen ongeluk.
 70054	Talisman Karma3	Een Talisman die gebruikt wordt door Buddhisten tegen ongeluk.
 70056	Grannaatappel Sap+	Een brouwsel dat onmiddellijk je LP regenereert met 1000 punten.
-70057	Moedigheidsmantel	Een kleurrijke mantel waarmee krijgers hun moed bewijzen, het trekt de aandacht van verschillende monsters. Dit item is verhandelbaar.
+70057	Moedigheidsmantel	Een kleurrijke cape waarmee krijgers ooit hun moed bewezen, omdat het de aandacht trekt van verschillende monsters.
 70058	Teleportatie Ring	Deze ring teleporteerd 50 keer je naar een gewenste lokatie binnen je koninkrijk. Niet verhandelbaar.
 70063	Transformeer Kostuum	Verwijdert de bonussen van één van je kostuums en vervangt ze met nieuwe. Met een beetje geluk verandert zelfs het aantal bonussen (tot max. 3).
 70064	Betover Kostuum	Verwijdert de bonussen van één van je kostuums en vervangt ze met nieuwe.
@@ -2065,21 +2065,21 @@
 70302	Trouw Ring	De ring wordt gedragen door getrouwede stelletjes.
 71001	Exorcisme Geschrift	Zal de vloek van de slechte geest opheffen, wanneer leren niet succesvol is. (Kan niet verkocht worden)
 71002	Status Herstel Doc.	Herverdeelt de status punten.
-71003	Vaardigh. Herstel  Doc.	Herverdeelt de Vaardigheids Punten.
+71003	Vaardigh. Herstel  Doc.	Herverdeelt de vaardigheidspunten.
 71004	Draken Medaille	Beschermt je tegen ervaringspunten verlies bij je volgende dood.
 71005	Talen Ring	Je kunt alle Talen van het Keizerrijk verstaan voor 7 dagen (Kan niet verkocht worden)
 71006	Talen Ring	Je kunt alle Talen van het Keizerrijk verstaan voor 15 dagen (Kan niet verkocht worden)
 71007	Talen Ring	Je kunt alle Talen van het Keizerrijk verstaan voor 30 dagen.
-71008	Visserij Boek	Een boek die de kans verdubbelt om een zeldzame vis te vangen.
+71008	Visserij Boek	Vereist voor het vangen van zeldzame vis en verdubbelt je kansen op het vangen hiervan.
 71009	Opslag Kist	Je Opslag wordt verhoogd met 2 extra opslag ruimten.
 71010	Derde Hand	Een hand die automatisch Yang ophaalt
 71011	Emotie Masker	Je kan met dit masker je gevoelens de vrije loop laten.
-71012	Leider Boek	Zolang de leider van de groep dit boek draagt, zullen alle leden 30% meer Ervaring krijgen. Maximum duratie: 3 uur. (Kan niet verkocht worden)
+71012	Leider Boek	Zolang de leider van de groep dit boek draagt, zullen alle leden 30% meer Ervaringspunten krijgen.
 71013	Vuurwerk	Een raket dat de lucht verlicht voor alle spelers. (Kan niet verkocht worden)
-71014	Drank van de  Aanval+10	Vergroot je Aanvalssnelheid met 10% voor 30 minuten.
-71015	Ervaringsring	Je ontvangt 50% meer Ervarings Punten tijdens het vechten
-71016	Dievenhandschoen	Verdubbelt de kans om voorwerpen buit te maken voor 30 minuten.
-71017	Geluks Medaille	Vergroot de kans om Yang buit te maken met 50% gedurende 30 minuten. (Kan niet verkocht worden)
+71014	Drank van de  Aanval+10	Verhoogt je aanvalssnelheid met 10%.
+71015	Ervaringsring	Je verdient 50% meer ervaringspunten tijdens gevechten.
+71016	Dievenhandschoen	Verdubbelt de kans om items buit te maken.
+71017	Geluks Medaille	Verdubbelt de kans om Yang buit te maken.
 71018	Zegening des Levens	Een zegening die je LP onmiddelijk met 100% herstelt.
 71019	Zegening der Magie	Zegening die je TP onmiddelijk met 100% herstelt.
 71020	Zegening der Draken	Zegening die je LP en TP onmiddelijk met 100% herstelt.
@@ -2089,34 +2089,34 @@
 71024	Kracht Terugkeer	Verandert je Kracht Punten terug  naar basis niveau, zodat je ze opnieuw kunt indelen.
 71025	Smid Steen	Bij de smid kun je een smid handboek maken met de hulp van deze steen en een zegenings geschrift.
 71026	Magisch Ijzeren Erts	Erts die nodig is om een Draken Geschrift te maken - tezamen met Zegenings Geschrift bij de Smid.
-71027	Draken God Leven	Verhoogt je maximum LP met 20% voor 30 minuten.
-71028	Draken God Aanval	Verhoogt de schade die je doet tijdens een gevecht met 12-15% voor 30 minuten.
-71029	Draken God Intelligentie	Verhoogt je maximum TP met 20% voor 30 minuten.
-71030	Draken God Verdediging	Verlaagt de schade die je krijgt tijdens een gevecht met 12-15% voor 30 minuten.
+71027	Draken God Leven	Verhoogt je maximum LP met 20%.
+71028	Draken God Aanval	Verhoogt je aanvalswaarde met 20%.
+71029	Draken God Intelligentie	Verhoogt je maximale TP met 20%.
+71030	Draken God Verdediging	Vermindert de schade die je ontvangt tijdens een gevecht met 20%.
 71031	Draken God Steun	De vitaliteit, kracht, intelligentie en behendigheid van je karakter wordt tijdelijk vervijfvoudigd.
 71032	Draken Geschrift	Verwijdert de kans dat een Voorwerp wordt vernietigd als de verrijking mislukt. De kwaliteit wordt echter verlaagd met 1. Ook wordt de kans op succesvolle verrijking met 10% verhoogd
 71033	Emotie Masker	Je kan met dit masker je gevoelens de vrije loop laten.
-71034	Drank der Aanval+15	Verhoogt je Aanvalssnelheid met 15% voor 30 minuten.
-71035	Onderzoekers Elixer	Verbetert de kwaliteit van de onderzoeksobjecten die je hebt verzameld, en verhoogt de kans dat zij zullen worden geaccepteerd.
+71034	Drank der Aanval+15	Verhoogt je aanvalssnelheid met 15%.
+71035	Onderzoekers Elixer	Verbetert de kwaliteit van de onderzoeksobjecten die je verzameld hebt, en verhoogt daarmee de kans dat zij geaccepteerd zullen worden. Is niet van toepassing op quests op Yohara.
 71036	Ork Oproep Geschrift	Zal een Ork leider oproepen, vlakbij je karakter. Pas op! Het is een Monster Baas!
 71037	Esot. Leiders Geschrift	Zal een Donkere Leider oproepen vlakbij je karakter. Pas op! Het is een Monster Baas!
 71038	Spinnenkoningin Geschr.	Zal een Spinnenkoningin oproepen vlakbij je karakter. Pas op! Het is een Monster Baas!
 71039	Schilpadden Geschrift	Zal een Reuze Schildpad oproepen vlakbij je karakter. Pas op! Het is een Monster Baas!
-71040	Vlammende Koning Geschr.	Zal een Vlammende Koning oproepen vlakbij je karakter. Pas op! Het is een Monster Baas!
+71040	Vlammende Koning Geschr.	Zal de Vlammenkoning dichtbij jouw karakter oproepen. Pas op: het is een baasmonster!
 71041	Negenstaarten Geschrift	Zal een Negenstaarten oproepen vlakbij je karakter. Pas op! Het is een Monster Baas!
 71042	Geschrift - Demon Koning	Zal een Trotse Demon Koning oproepen vlakbij je karakter. Pas op! Het is een Monster Baas!
 71043	Gesch. - G. Tijger Spook	Zal een Gele Tijger Spook oproepen vlakbij je karakter. Pas op! Het is een Monster Baas!
-71044	Kritieke Slag	Vergroot de kans om een kritieke slag uit te delen tijdens een gevecht met 20% gedurende 10 minuten.
-71045	Perforerende Slag	Vergroot de kans om een perforerende slag uit te delen met 20% voor 10 minuten.
-71047	Kleur van de Geest Steen	Verwijdert een zielensteen van een van je voorwerpen.
+71044	Kritieke Slag	Verhoogt de kans op het uitdelen van een kritieke slag met 20%.
+71045	Perforerende Slag	Verhoogt de kans op het uitdelen van een perforerende slag met 20%.
+71047	Kleur van de Geest Steen	Verwijdert een Geestensteen van een van je voorwerpen.
 71048	Aanpassing Talisman	Dit Talisman kan worden gebruikt om het geslacht van je karakter te veranderen.
 71049	Zijden bundel	Met deze bundel kun je gratis een privé winkel openen voor 10 dagen.
 71050	Drank der Snelheid	Vergroot je loopsnelheid met 60 gedurende 30 minuten.
-71051	Betover Voorwerp	Voegt een speciale nieuwe bonus toe aan een van je items, als die geen andere bonus heeft.
-71052	Zegen Voorwerp	Verwijdert de speciale bonus op een van je voorwerpen en voegt een nieuwe toe.
+71051	Betover Voorwerp	Verwijdert de speciale bonus op een van je voorwerpen en voegt een nieuwe toe.
+71052	Zegen Voorwerp	Voegt een speciale nieuwe bonus toe aan een van je items, als die geen andere bonus heeft.
 71054	Kleur der Keizerrijken	Een karakter kan in verbanning gaan naar een andere keizerrijk, dit betekent keizerrijk veranderen.
 71055	Kleur van de Naam	Verandert de naam van de karakter.
-71056	Kleur van de Hemel	Verhoogt de kans om succesvol een Zielensteen te verbeteren.
+71056	Kleur van de Hemel	Verhoogt de kans om succesvol een Geestensteen te verbeteren.
 71057	Steen der Fossiele Hout	Maakt een Fossiele Houten Ader vlakbij je karakter.
 71058	Steen der Koperader	Maakt een Koper Ader vlakbij je karakter.
 71059	Steen der Zilverader	Maakt een Zilver Ader vlakbij je karakter.
@@ -2144,7 +2144,7 @@
 71081	Metinsteen(N)	Een normale metinsteen zal vlakbij je karakter vallen.
 71082	Metinsteen(Z)	Een zware metinsteen zal vlakbij je karakter vallen.
 71083	Steen Ambacht Boek	Verwijdert de gebroken steen in een sokkel om een lege sokkel te maken.
-71084	Betover Voorwerp	Verwijdert de bonussen van een van je voorwerpen en voegt nieuwe toe.
+71084	Betover Voorwerp	Verwijdert de bonussen van één van je voorwerpen en voegt nieuwe toe. Geldt alleen voor bonussen 1-5.
 71085	Versterk Voorwerp	Als je geluk hebt, geeft het één van je voorwerpen een bonus. (tot max. 4 bonussen)
 71088	Missie boek(licht)	Een boek gebonden in bruin leer die een missie bevat die zelfs nieuwelingen aankunnen.
 71089	Missie boek(normaal)	Een boek gebonden in bruin leer die een missie bevat die alleen mensen die ervaren zijn met vechten kunnen aanvaarden.
@@ -2152,122 +2152,122 @@
 71091	Kleur van Handel	Je mag een andere kleur voor je winkel bordje kiezen.
 71092	Metamorfose Boek	Het succesvol bestuderen van dit boek verhoogt je transformatie vaardigheden. Het verdwijnt na het lezen.
 71093	Metamorfose Bol	Je kunt vanuit een bol in een Monster veranderen.
-71094	Geconcentreerd Lezen	Verhoogt de kans om je talent te verbeteren wanneer je het volgende boek leest (of zielsteen) met 2,5 keer.
-71095	Vrijbiljet	Als je dit Vrijbiljet aan de wachter geeft, mag je een nieuwe etage van de Spinnenkerker of het Rode Draken Fort betreden.
+71094	Geconcentreerd Lezen	Verhoogt de kans om je talent te verbeteren wanneer je het volgende boek leest (of Zielensteen) met 2,5 keer.
+71095	Vrijbiljet	Als je dit biljet aan de verantwoordelijke wachter geeft, mag je een nieuwe etage van bepaalde kerkers betreden.
 71096	Poort Medaille	Deze Medaille geeft je toestemming om een poort te passeren.
 71099	Ring van Opvolging	Staat de leider van een Gilde toe om een opvolger te plaatsen.
 71100	Leer Wissel Geschrift	Vergeet je leer en kies een nieuwe. Je moet tenminste level 31 zijn om dit te doen.
-71101	Brouwsel van Haast	Dit brouwsel verhoogt je cooldown bonus met 20 procent voor 30 minuten.
-71102		
+71101	Brouwsel van Haast	Dit brouwsel verkort de afkoelperiode van je vaardigheden met 20%.
+71102		Verhoogt jouw spreuksnelheid met 30%.
 71103	Herverdeling (VIT)	Zet je vitaliteit weer terug op 1 en staat je toe om je punten te herverdelen.
 71104	Herverdeling (IN)	Zet je intelligentie terug op 1 zodat je je punten kunt herverdelen.
 71105	Herverdeling (KRA)	Zet je kracht terug op 1 en staat je toe om je punten te herverdelen.
 71106	Herverdeling (BEH)	Zet je behendigheid terug naar 1 en stelt je in staat om je punten te herverdelen.
 71107	Vrucht des Levens	Verhoogt rank punten met 2000 (cooldown tijd 8 uur).
 71108	Granaatappel Sap	Een brouwsel dat onmiddellijk je LP regenereert met 800 punten. Dit item is verhandelbaar.
-71109	Geschrift van Correctie.	Je kunt een recentelijke toegevoegde Zielensteen van een voorwerp verwijderen met dit geschrift.
+71109	Geschrift van Correctie.	Je kunt een recentelijke toegevoegde Geestensteen van een voorwerp verwijderen met dit geschrift.
 71110	Paardensuiker	Dit stukje suiker maakt het mogelijk om je paard een naam te geven. Het verhoogt ook de verdedigingswaarde met 20.
 71113	Glas der Inzicht	Stelt je in staat om een ander speler voorwerpen in je inventaris te laten zien. Het glas breekt tijdens het proces.
-71114	Wild Zwijn Zegel (geel)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
+71114	Wild Zwijn Zegel (geel)	De magie van dit zegel roept een machtige dierengeest op die je naar een bestemming van jouw keuze zal voeren. Het verhoogt zijn berijder's verdedigingswaarde met 75.
 711151	Wild Zwijn Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711152	Wild Zwijn Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711153	Wild Zwijn Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711154	Wild Zwijn Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
-71115	Wild Zwijn Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
-71116	Wolf Zegel (geel)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
+71115	Wild Zwijn Zegel (blauw)	De magie van dit zegel roept een machtige dierengeest op die je naar een bestemming van jouw keuze zal voeren. Het verhoogt zijn berijder's verdedigingswaarde met 100.
+71116	Wolf Zegel (geel)	De magie van dit zegel roept een machtige dierengeest op die je naar een bestemming van jouw keuze zal voeren. Het verhoogt zijn berijder's verdedigingswaarde met 100.
 711171	Wolf Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711172	Wolf Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711173	Wolf Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711174	Wolf Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
-71117	Wolf Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
-71118	Tijger Zegel (geel)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
+71117	Wolf Zegel (blauw)	De magie van dit zegel roept een machtige dierengeest op die je naar een bestemming van jouw keuze zal voeren. Het verhoogt zijn berijder's verdedigingswaarde met 150.
+71118	Tijger Zegel (geel)	De magie van dit zegel roept een machtige dierengeest op die je naar een bestemming van jouw keuze zal voeren. Het verhoogt zijn berijder's verdedigingswaarde met 125.
 711191	Tijger Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711192	Tijger Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711193	Tijger Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711194	Tijger Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
-71119	Tijger Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
-71120	Leeuw Zegel (geel)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
+71119	Tijger Zegel (blauw)	De magie van dit zegel roept een machtige dierengeest op die je naar een bestemming van jouw keuze zal voeren. Het verhoogt zijn berijder's verdedigingswaarde met 200.
+71120	Leeuw Zegel (geel)	De magie van dit zegel roept een machtige dierengeest op die je naar een bestemming van jouw keuze zal voeren. Het verhoogt zijn berijder's aanvalswaarde met 200.
 711211	Leeuw Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711212	Leeuw Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711213	Leeuw Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
 711214	Leeuw Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
-71121	Leeuw Zegel (blauw)	De magie van de zegel roept een machtige dierengeest op die je snel naar de plek kan voeren die je wilt.
-71122		
+71121	Leeuw Zegel (blauw)	De magie van dit zegel roept een machtige dierengeest op die je naar een bestemming van jouw keuze zal voeren. Het verhoogt zijn berijder's aanvalswaarde met 300.
+71122		Kan gebruikt worden om de Drakentempel binnen te gaan.
 71123	Draken Schubben	Draken Schubben zijn een van de hardste materialen die men kent.
-71124	Witte Leeuw	Dieren met een witte vacht zijn erg zeldzaam en veel culturen aanbidden ze omdat ze geloven dat ze opmerkelijke krachten met zich mee dragen.
-71125	Wilde Strijd Zwijn Zegel	Het temmen van kwade geesten vraagt veel magische vaardigheden. Hoe dan ook, het resultaat is erg indrukwekkend.
-71126	Vecht Wolf Zegel	Het temmen van kwade dieren geesten vraagt veel magische vaardigheden, Hoe dan ook, het resultaat is erg indrukwekkend.
-71127	Storm Tijger Zegel	Het temmen van kwade dieren geesten vraagt veel magische vaardigheden. Hoe dan ook, het resultaat is erg indrukwekkend.
-71128	Strijd Leeuw Zegel	Het temmen van kwade dieren geesten vraagt veel magische vaardigheden. Hoe dan ook, het resultaat is erg indrukwekkend.
+71124	Witte Leeuw	Dieren met een witte vacht zijn enorm zeldzaam en vele culturen aanbidden gelovende dat ze opmerkelijke krachten bij zich dragen. Het verhoogt ervaringsopname met 30%.
+71125	Wilde Strijd Zwijn Zegel	Het temmen van kwaadaardige dierengeesten vergt best wat vakkundig gebruik van magie, maar de resultaten kunnen echt indrukwekkend zijn. Het geeft zijn berijder +20% kracht tegen monsters.
+71126	Vecht Wolf Zegel	Het temmen van kwaadaardige dierengeesten vergt best wat vakkundig gebruik van magie, maar de resultaten kunnen echt indrukwekkend zijn. Het verhoogt je kans op kritieke slagen met 10%.
+71127	Storm Tijger Zegel	Het temmen van kwaadaardige dierengeesten vergt best wat vakkundig gebruik van magie, maar de resultaten kunnen echt indrukwekkend zijn. Het verhoogt je kans op kritieke slagen met 10%.
+71128	Strijd Leeuw Zegel	Het temmen van kwaadaardige dierengeesten vergt best wat vakkundig gebruik van magie, maar de resultaten kunnen echt indrukwekkend zijn. Het vermindert de schade die je ontvangt bij verdediging met 10%.
 71129	Drakenklauw	Het zien van deze angstaanjagende klauw brengt herinneringen boven...
-71130	Vrijbiljet	Als je dit Vrijbiljet aan de wachter geeft, mag je een nieuwe etage van de Spinnenkerker of het Rode Draken Fort betreden. Dit voorwerp is verhandelbaar.
-71131	Zwart Paard Zegel	Zegel voor een nobel zwart paard.
-71132	Zwart Paard Zegel	Zegel voor een nobel zwart paard.
-71133	Zwart Paard Zegel	Zegel voor een nobel zwart paard.
-71134	Zwart Paard Zegel	Zegel voor een nobel zwart paard.
-71135	Halve Maan Ring	Een ring met een artistieke gravering in de stijl van een halve maan.
-71136	Lolly de Machtige	Een lolly gemaakt van geheime ingrediënten die je ervaring en kracht schenkt voor de strijd.
-71137	Kon.Tijger Zegel (blauw)	De magie van het zegel roept je rijdier, de majestueuze Koninklijke Tijger (blauw).
-71138	Kon. Tijger Zegel (rood)	De magie van het zegel roept jouw rijdier, de majestueuze Koninklijke Tijger (rood).
-71139	Kon. Tijger Zegel (goud)	De magie van het zegel roept jouw rijdier, de majestueuze Koninklijke Tijger (goud).
-71140	Kon.Tijger Zegel (groen)	De magie van het zegel roept jouw rijdier, de majestueuze Koninklijke Tijger (groen).
-71141	Kon.Tijger Zegel (grijs)	De magie van het zegel roept jouw rijdier, de majestueuze Koninklijke Tijger (grijs).
-71142	Kon. Tijger Zegel (wit)	De magie van het zegel roept jouw rijdier, de majestueuze Koninklijke Tijger (wit)
-71143	Ring van Vreugde	Een ring met kostbare decoratie gemaakt van Jade en hemelse steen en heeft de volgende bonussen: +50% ervaringspunten +20% aanval snelheid +20% spreuk snelheid +30% kracht tegen monsters +10% maximum LP +10% maximum TP
+71130	Vrijbiljet	Als je dit biljet aan de verantwoordelijke wachter geeft, mag je een nieuwe etage van bepaalde kerkers betreden. Dit item is verhandelbaar.
+71131	Zwart Paard Zegel	Zegel voor een Nobel Zwart Paard. Het verhoogt je bewegingssnelheid met 60.
+71132	Zwart Paard Zegel	Zegel voor een Nobel Zwart Paard. Het verhoogt je bewegingssnelheid met 60.
+71133	Zwart Paard Zegel	Zegel voor een Nobel Zwart Paard. Het verhoogt je bewegingssnelheid met 60.
+71134	Zwart Paard Zegel	Zegel voor een Nobel Zwart Paard. Het verhoogt je bewegingssnelheid met 60.
+71135	Halve Maan Ring	Het geeft je: | +50% ervaringspunten | +20% aanvalssnelheid | +20% spreuksnelheid | +30% fysieke schade | +10% maximum LP | +10% maximum TP | +5% bij alle outfitbonussen
+71136	Lolly de Machtige	De lolly gemaakt van geheime ingrediënten geeft je | +50% ervaringspunten | +30% fysieke schade | +20 aanvalssnelheid | +20 spreuksnelheid | +10% maximum LP | +10% maximum TP
+71137	Kon.Tijger Zegel (blauw)	De magie van het zegel roept je rijdier, de majestueuze Koninklijke Tijger (blauw) op. Het verhoogt ervaringsopname met 30%.
+71138	Kon. Tijger Zegel (rood)	De magie van het zegel roept je rijdier, de majestueuze Koninklijke Tijger (rood) op. Het verhoogt ervaringsopname met 30%.
+71139	Kon. Tijger Zegel (goud)	De magie van het zegel roept je rijdier, de majestueuze Koninklijke Tijger (goud) op. Het verhoogt ervaringsopname met 30%.
+71140	Kon.Tijger Zegel (groen)	De magie van het zegel roept je rijdier, de majestueuze Koninklijke Tijger (groen) op. Het verhoogt ervaringsopname met 30%.
+71141	Kon.Tijger Zegel (grijs)	De magie van het zegel roept je rijdier, de majestueuze Koninklijke Tijger (grijs) op. Het verhoogt ervaringsopname met 30%.
+71142	Kon. Tijger Zegel (wit)	De magie van het zegel roept je rijdier, de majestueuze Koninklijke Tijger (wit) op. Het verhoogt ervaringsopname met 30%.
+71143	Ring van Vreugde	Een ring met kostbare decoratie gemaakt van Jade en hemelse steen en heeft de volgende bonussen: +50% ervaringspunten +20% aanval snelheid +20% spreuksnelheid +30% kracht tegen monsters +10% maximum LP +10% maximum TP
 71144	Kerstmis Kist	Een liefdevol verpakt Kerstcadeau die een feestelijke surprise bevat.
-71145	Amulet der Eeuwig Liefde	Een zillveren hart-vormige amulet, gedecoreerd met magische edelstenen.
+71145	Amulet der Eeuwig Liefde	Een zilveren hartvormig amulet, gedecoreerd met magische edelstenen. Het geeft je | +30% ERV | +10 aanvalssnelheid | +10 spreuksnelheid | +5% LP en TP | +10% kracht tegen monsters
 71146	Cupido's Kist (roze)	Hartvormige kist met daarin 5 verrassingen. Kan iedere 30 min. geopend worden.
 71147	Cupido's Kist (blauw)	Hartvormige kist met daarin 5 verrassingen. Kan iedere 30 min. geopend worden.
-71148	Ring van Wilskracht	Geeft je +30% ERV, +20% verdediging kans tegen Krijgers, +20% verdediging kans tegen Ninja's, + 20% verdediging kans tegen Lycanen, +30% kracht tegen monsters, +10% maximum LP en +10% maximum TP voor 7 dagen.
-71149	Ring v. Dodelijke Kracht	Geeft je +30% ERV, +20% verdediging kans tegen Sura's, +20% verdediging kans tegen Sjamanen,  + 20% verdediging kans tegen Lycanen, +30% kracht tegen monsters, +10% maximum LP en +10% maximum TP voor 7 dagen.
+71148	Ring van Wilskracht	Geeft je +30% ERV, +20% verdedigingskans tegen Krijgers, +20% verdedigingskans tegen Ninja's, +20% verdedigingskans tegen Lycanen, +30% kracht tegen monsters, +10% maximum LP en +10% maximum TP voor de gebruiksduur.
+71149	Ring v. Dodelijke Kracht	Geeft je +30% ERV, +20% verdedigingskans tegen Sura's, +20% verdedigingskans tegen Sjamanen, + +20% verdedigingskans tegen Lycanen, +30% kracht tegen monsters, +10% maximum LP en +10% maximum TP voor een bepaalde periode.
 71150	Magisch Ei	De kunstzinnig gedecoreerde ovale kist bevat meer dan alleen een Paas surprise, het onthuld zijn schatten beetje bij beetje.
 71151	Groene Magie	Verwijderd de bonussen van een van je voorwerpen en voegt nieuwe er aan toe. Kan alleen gebruikt worden op wapens en pantser tot level 40. Voorwerp uit level kist, niet verhandelbaar.
 71152	Groene Kracht	Met een beetje geluk zal dit voorwerp een nieuwe bonus toevoegen aan een van je items (max. 4 bonussen). Kan alleen gebruikt worden op voorwerpen tot level 40. Voorwerp uit level kist, niet verhandelbaar.
 71153	Drankje der Wijsheid	Dit drankje geeft je de mogelijkheid om 100% meer ervaring op te doen in 1 uur speeltijd. Niet verhandelbaar.
 71154	Drank der Stijging (3u)	Dit drankje maakt het mogelijk om 80% meer ervaring op te doen in drie uur speeltijd. Niet verhandelbaar.
 71155	Drankje der Wijsheid /3u	Dit drankje geeft je de mogelijkheid om 100% meer ervaring op te doen in 3 uur speeltijd. Niet verhandelbaar.
-71156	Drank der Geest (3u)	Dit drankje maakt het mogelijk om 150% meer ervaring op te doen in drie uur speeltijd. Niet verhandelbaar.
+71156	Drank der Geest (3u)	Verhoogt ervaringsopname met 150%.
 71157		
-71158	Helden Medaille	Geeft +50% ERV, +30% schade, +20% aanval snelheid, +20% spreuk snelheid, +10% LP en +10% TP.
+71158	Helden Medaille	Geeft +50% ERV, +30% fysieke schade, +20% aanvalssnelheid, +20% spreuksnelheid, +10% LP en +10% TP.
 71159	Milon's Kist	Een kist voor echte helden. Bevat een willekeurig item als betaling voor je triomf.
 71160	Athena's Kist	Een kist voor echte heldinnen. Bevat een willekeurig item als betaling voor je triomf.
-71161	Equus Porphyreus	Zegel voor een van de prachtige en extreem zeldzame paarse paarden.
-71164	Comet Zegel	Je kan deze zegel gebruiken om jouw rendier Comet op te roepen.
-71166	Bepantserde Panda Zegel	Deze zegel laat je jouw Gepantserde Panda oproepen.
-71171	Eenhoorn Zegel	Deze zegel roept jouw Eenhoorn op.
-71172	Nachtmerrie Zegel	Dit zegel roept je Nachtmerrie op.
+71161	Equus Porphyreus	Zegel voor één van de prachtige en extreem zeldzame paarse paarden. Het verhoogt je bewegingssnelheid met 60.
+71164	Comet Zegel	Je kunt dit zegel gebruiken om jouw rendier Comet op te roepen. Het verhoogt je bewegingssnelheid met 60.
+71166	Bepantserde Panda Zegel	Je kunt dit zegel gebruiken om je Bepantserde Panda op te roepen. Het verhoogt je bewegingssnelheid met 60.
+71171	Eenhoorn Zegel	Je kunt dit zegel gebruiken om jouw Eenhoorn op te roepen. Het verhoogt je bewegingssnelheid met 60.
+71172	Nachtmerrie Zegel	Je kunt dit zegel gebruiken om jouw Nachtmerrie op te roepen. Het verhoogt je bewegingssnelheid met 60.
 71173	Teleporteer Geschrift	Dit Geschrift brengt je direct naar de poort van het Rode Drakenfort.
 71174	Vrijbiljet	Je mag jet Rode Drakenfort betreden wanneer je dit Vrijbiljet laat zien aan de Wachter.
 71175	Vrijbiljet	Je mag jet Rode Drakenfort betreden wanneer je dit Vrijbiljet laat zien aan de Wachter.
-71176	Zwarte Panter	Dit zegel roept jouw mysterieuze Zwarte Panter op.
-71177	Luipaard Zegel	Dit zegel roept jouw nobele Luipaard op.
+71176	Zwarte Panter	Dit zegel roept jouw mysterieuze Zwarte Panter op. Het verhoogt je bewegingssnelheid met 30.
+71177	Luipaard Zegel	Dit zegel roept jouw nobele Luipaard op. Het verhoogt je bewegingssnelheid met 30.
 71178	Maan Encyclopedie (K)	Pakket met 10 willekeurig geselecteerde vaardigsheidsboeken voor Lycanen.
 71179	Maan Encyclopedie (G)	Pakket met 25 willekeurig geselecteerde vaardigsheidsboeken voor Lycanen.
 71180	Drank der Stijging (3u)	Dit drankje maakt het mogelijk om 80% meer ervaring op te doen in drie uur speeltijd. Niet verhandelbaar.
-71181	Drankje der Wijsheid /3u	Dit drankje geeft je de mogelijkheid om 100% meer ervaring op te doen in 3 uur speeltijd. Niet verhandelbaar.
-71182	Muffin Zegel (Bruin)	Je kunt dit zegel gebruiken om Muffin op te roepen, de gevreesde gevechtskip.
-71183	Nugget Zegel (Bruin)	Je kunt dit item gebruiken om Nugget op te roepen, de kolossale gevechtshaan.
-71184	Muffin Zegel (Blauw)	Je kunt dit zegel gebruiken om Muffin op te roepen, de gevreesde gevechtskip.
-71185	Nugget Zegel (Blauw)	Je kunt dit item gebruiken om Nugget op te roepen, de kolossale gevechtshaan.
-71186	Muffin Zegel (Groen)	Je kunt dit zegel gebruiken om Muffin op te roepen, de gevreesde gevechtskip.
-71187	Nugget Zegel (Groen)	Je kunt dit item gebruiken om Nugget op te roepen, de kolossale gevechtshaan.
-71188	Lolly de Magische	Een lolly gemaakt van geheime ingrediënten die je ervaring en kracht schenkt voor de strijd.
-72001	Ervarings Ring	Verhoogt ontvangen ervaring met 50% voor 1 uur.
+71181	Drankje der Wijsheid /3u	Dit drankje maakt het mogelijk om 100% meer ervaring te vergaren gedurende een bepaalde periode. Niet verhandelbaar.
+71182	Muffin Zegel (Bruin)	Je kunt dit zegel gebruiken om Muffin op te roepen, de gevreesde gevechtskip. Het verhoogt je bewegingssnelheid met 20.
+71183	Nugget Zegel (Bruin)	Je kunt dit zegel gebruiken om Nugget op te roepen, de kolossale gevechtshaan. Het verhoogt je bewegingssnelheid met 20.
+71184	Muffin Zegel (Blauw)	Je kunt dit zegel gebruiken om Muffin op te roepen, de gevreesde gevechtskip. Het verhoogt je bewegingssnelheid met 20.
+71185	Nugget Zegel (Blauw)	Je kunt dit zegel gebruiken om Nugget op te roepen, de kolossale gevechtshaan. Het verhoogt je bewegingssnelheid met 20.
+71186	Muffin Zegel (Groen)	Je kunt dit zegel gebruiken om Muffin op te roepen, de gevreesde gevechtskip. Het verhoogt je bewegingssnelheid met 20.
+71187	Nugget Zegel (Groen)	Je kunt dit zegel gebruiken om Nugget op te roepen, de kolossale gevechtshaan. Het verhoogt je bewegingssnelheid met 20.
+71188	Lolly de Magische	De lolly gemaakt van geheime ingrediënten geeft je | +50% ervaringspunten | +30% magische schade | +20 aanvalssnelheid | +20 spreuksnelheid | +10% maximum LP | +10% maximum TP
+72001	Ervarings Ring	Verhoogt de verzameling van ervaring met 50% gedurende 10 uur.
 72002	Ervarings Ring	Verhoogt de verzamelde ervaring met 50% voor 30 minuten.
-72003	Ervarings Ring	Verhoogt verzamelde ervaring met 50% voor 3 uur.
-72004	Dieven Handschoen	Verdubbeld je kans om voorwerpen buit te maken voor 10 uur.
-72005	Dieven Handschoen	Verdubbeld je kans om voorwerpen buit te maken voor 30 dagen.
-72006	Dieven Handschoen	Verdubbeld je kans om voorwerpen buit te maken voor 3 uur.
+72003	Ervarings Ring	Verhoogt de verzameling van ervaring met 50% gedurende 3 uur.
+72004	Dieven Handschoen	Dubbele kans op het buitmaken van items gedurende 10 uur.
+72005	Dieven Handschoen	Dubbele kans op het buitmaken van items gedurende 30 minuten.
+72006	Dieven Handschoen	Dubbele kans op het buitmaken van items gedurende 3 uur.
 72007	Zijden bundel	Je kan een privé winkel voor 10 uur openen.
 72008	Zijden bundel	Je kunt een privé winkel openen voor 30 minuten
 72009	Zijden bundel	Je kunt een privé winkel openen voor 3 uur.
 72010	Liefdesvogel Veer	Wanneer je uitgerust ben met deze veer, zal je Liefdes Punten twee keer zo snel stijgen gedurende15 minuten.
 72011	Liefdesvogel Veer	Wanneer je uitgerust ben met deze veer, zal je Liefdes Punten twee keer zo snel stijgen gedurende 30 minuten.
 72012	Liefdesvogel Veer	Wanneer je uitgerust ben met deze veer, zal je Liefdes Punten twee keer zo snel stijgen gedurende 3 uur.
-72013	Visserij Boek	De kans om een zeldzame vis te vangen wordt verdubbeld gedurende 15 minuten.
-72014	Visserij Boek	De kans om een zeldzame vis te vangen wordt verdubbeld gedurende 30 minuten.
-72015	Visserij Boek	De kans om een zeldzame vis te vangen wordt verdubbeld gedurende 3 uur.
-72016	Derde Hand	Hand die gevallen geld automatisch opraapt gedurende 15 minuten.
+72013	Visserij Boek	Vereist voor het vangen van zeldzame vis en verdubbelt je kansen op het vangen hiervan gedurende 15 minuten.
+72014	Visserij Boek	Vereist voor het vangen van zeldzame vis en verdubbelt je kansen op het vangen hiervan gedurende 30 minuten.
+72015	Visserij Boek	Vereist voor het vangen van zeldzame vis en verdubbelt je kansen op het vangen hiervan gedurende 3 uur.
+72016	Derde Hand	Een hand die automatisch gevallen Yang opraapt voor een bepaalde tijd.
 72017	Derde Hand	Hand die gevallen geld automatisch opraapt gedurende 30 minuten.
 72018	Derde Hand	Hand die gevallen geld automatisch opraapt gedurende 3 uur.
 72019	Opslag Kist	Je opslag krijgt 2 opslag ruimtes gedurende 15 minuten.
@@ -2276,15 +2276,15 @@
 72022	Gouden Geluks Munt	Verdubbelt de kans om Yang te krijgen gedurende 10 uur.
 72023	Gouden Geluks Munt	Verdubbelt de kans om Yang te krijgen gedurende 30 minuten.
 72024	Gouden Geluks Munt	Verdubbelt de kans om Yang te krijgen gedurende 3 uur.
-72025	Kritiek Gevecht	Perforeer Kans +10%
-72026	Kritiek Gevecht	Perforeer kans +10%
-72027	Kritiek Gevecht	Perforeer kans +10%
+72025	Kritiek Gevecht	Verhoogt de kans op het uitdelen van een perforerende slag met 10%.
+72026	Kritiek Gevecht	Verhoogt de kans op het uitdelen van een perforerende slag met 10%.
+72027	Kritiek Gevecht	Verhoogt de kans op het uitdelen van een perforerende slag met 10%.
 72028	Emotie Masker	Maakt emotionele acties mogelijk.
 72029	Emotie Masker	Maakt emotionele acties mogelijk.
 72030	Emotie Masker	Maakt emotionele acties mogelijk.
-72031	Draken God Aanval	Vergroot de Aanval schade met 12% tot 15% voor 30 minuten.
-72032	Draken God Aanval	Vergroot de Aanval schade met 12% tot 15% voor 30 minuten.
-72033	Draken God Aanval	Vergroot de Aanval schade met 12%tot 15% voor 30 minuten.
+72031	Draken God Aanval	Verhoogt je aanvalswaarde met 15% gedurende 30 minuten.
+72032	Draken God Aanval	Verhoogt je aanvalswaarde met 15% gedurende 30 minuten.
+72033	Draken God Aanval	Verhoogt je aanvalswaarde met 15% gedurende 30 minuten.
 72034	Draken God Verdediging	Vermindert de schade met 12%~15% wanneer je verdedigt.
 72035	Draken God Verdediging	Vermindert de schade met 12%~15% wanneer je verdedigt.
 72036	Draken God Verdediging	Vermindert de schade met 12%~15% wanneer je verdedigt.
@@ -2297,38 +2297,38 @@
 72043	Leider Boek	Wanneer de groepsleider hiermee is uitgerust, verhoogt het de Ervarings Punten van de leden en de leider met 30%
 72044	Leider Boek	Wanneer de groepsleider hiermee is uitgerust, verhoogt het de Ervarings Punten van de leden en de leider met 30%
 72045	Leider Boek	Wanneer de groepsleider hiermee is uitgerust, verhoogt het de Ervarings Punten van de leden en de leider met 30%
-72046	Kritieke Kans	Verhoogt je kans op perforerende slag met 20% voor 10 minuten.
-72047	Kritieke Kans	Verhoogt je kans op perforerende slag met 20% voor 10 minuten.
-72048	Kritieke Kans	Verhoogt je kans op perforerende slag met 20% voor 10 minuten.
+72046	Kritieke Kans	Verhoogt de kans op het uitdelen van een kritieke slag met 10%.
+72047	Kritieke Kans	Verhoogt de kans op het uitdelen van een kritieke slag met 10%.
+72048	Kritieke Kans	Verhoogt de kans op het uitdelen van een kritieke slag met 10%.
 72301	Zegening Geschrift	Elimineert het risico dat een item vernietigd wordt als een verbetering mislukt. Wanneer de poging nu faalt, wordt slechts de kwaliteit van het item met 1 verminderd.
-72302		
-72303		
-72304		
-72305		
-72306		
-72307		
+72302		Zolang de leider van de groep dit boek draagt, zullen alle leden gedurende drie uur 30% meer ervaringspunten krijgen.
+72303		Verhoogt ontvangen ervaring met 50% voor één uur.
+72304		Deze legendarische bol voegt een vijfde attribuut toe aan items die al vier attributen hebben. De toevoeging kan ook mislukken.
+72305		Verdwijnende Spiegel
+72306		Een notitie van de Smid die je vertelt hoe je jouw items kunt verbeteren. Verhoogt de kans op het verbeteren van een item van +4 tot +5 met 100%.
+72307		Een notitie van de Smid die je vertelt hoe je jouw items kunt verbeteren. Verhoogt de kans op het verbeteren van een item van +5 tot +6 met 100%.
 72308	Magische Koper Erts	Wanneer je deze erts samenvoegt met een Zegening Geschrift, krijg je een Oorlog Geschrift.
-72309		
-72310		
-72311		
-72312		
-72313		
-72314		
+72309		Dit boek bevat de ziel van een oude smid. Bij gebruik verhoogt het de kans om een item succesvol te verbeteren.
+72310		Zal de vloek van de slechte geest opheffen, wanneer leren niet succesvol is. Met de hulp van dit geschrift kun je nog een ander geschrift lezen op dezelfde dag.
+72311		Een zegening waarmee je jouw LP en TP onmiddelijk met 100% herstelt.
+72312		Verhoogt je aanvalswaarde met 20%.
+72313		Vermindert de schade die je ontvangt tijdens een gevecht met 20%.
+72314		Elimineert het risico dat een item vernietigd wordt als een verbetering mislukt. Wanneer de poging nu faalt, wordt slechts de kwaliteit van het item met één verminderd. Ook wordt de kans op succesvolle verbetering met 10% verhoogd.
 72501	Ervarings Ring(iCafe)	Verhoogt het verkrijgen van Ervarings Punten met 20% in het Leden iCafe.
 72502	Dieven Handschoen(iCafe)	Vergroot de snelheid waarmee Voorwerpen vallen in het Leden iCafe.
 72701	Windschoenen	Verhoogt de Loopsnelheid met 30, wanneer je hiermee uitgerust bent.
 72703	Tijger Bot Oorbellen	Je aanval waarde zal voor 2 uur worden verhoogt met 200 punten (tijd telt alleen af als het item gedragen word). Het item is niet verhandelbaar.
 72704	Draken Bot Oorbellen	Je verdediging waarde zal voor 2 uur worden verhoogt met 200 punten (tijd telt alleen af als het item gedragen word). Het item is niet verhandelbaar.
-72705	Tijger Bot Armband	De schade van je vaardigheden wordt voor 2 uur verhoogt met 15% (tijd telt alleen af als het item gedragen word). Het item is niet verhandelbaar.
-72706	Draken Bot Armband	Je verdediging tegen vaardigheden zal voor 2 uur worden verhoogt met 15% (tijd telt alleen af als het item gedragen word). Het item is niet verhandelbaar.
+72705	Tijger Bot Armband	De schade die jouw vaardigheden toebrengen wordt verhoogd met 15 punten gedurende 2 uur (tijd telt alleen af zolang het item gedragen wordt). Het item is niet verhandelbaar.
+72706	Draken Bot Armband	Je verdedigingen tegen vaardigheden worden verhoogd met 15 punten gedurende 2 uur (tijd telt alleen af zolang het item gedragen wordt). Het item is niet verhandelbaar.
 72723	Zon Elixer (K)	Vult automatisch je LP. Bevat 1,000,000 LP
 72724	Zon Elixer (M)	Vult automatisch je LP. Bevat 3,000,000 LP
 72725	Zon Elixer (G)	Vult automatisch je LP. Bevat 7,000,000 LP
-72726	Zon Elixer (S)	Vult je LP automatisch aan. Bevat 10 miljoen LP. Dit item is verhandelbaar.
+72726	Zon Elixer (S)	Bevat 10.000.000 LP. Hervult automatisch je LP en heeft hiernaast ook een positief effect op je max. LP. Dit item is verhandelbaar.
 72727	Maan Elixer (K)	Vult automatisch je TP. Bevat 100,000 TP
 72728	Maan Elixer (M)	Vult automatisch je TP. Bevat 300,000 TP
 72729	Maan Elixer (G)	Vult automatisch je TP. Bevat 700,000 TP.
-72730	Maan Elixer (G)	Vult je TP automatisch aan. Bevat 1 miljoen TP. Dit item is verhandelbaar.
+72730	Maan Elixer (G)	Bevat 1.000.000 TP. Hervult automatisch je TP en heeft hiernaast ook een positief effect op je max. TP. Dit item is verhandelbaar.
 73001	Kort Kapsel(Rood)	Een kapsel die je een fenomenaal uiterlijk geeft.
 73002	Kort Kapsel(Blond)	Een kapsel die je een fenomenaal uiterlijk geeft.
 73003	Kort Kapsel(Blauw)	Een kapsel die je een fenomenaal uiterlijk geeft.
@@ -2579,7 +2579,7 @@
 76000	Perzik Bloem Wijn	Drankje dat je LP onmiddellijk met 500 punten herstelt. Niet verhandelbaar.
 76001	Status Herstel Document	Het gebruik van dit voorwerp geeft je de mogelijkheid om je statuspunten opnieuw te verdelen. Je kan het gebruiken om de ontwikkeling van je karakter een nieuwe kant op te sturen. Niet verhandelbaar.
 76002	Gekrompen hoofd	Het gekrompen hoofd van de Demon opent het zegel naar de derde verdieping van de Duivels' Catacomben.  Niet verhandelbaar.
-76003	Brouwsel van Haast	Dit drankje verlaagd cooldown tijd met 20 procent voor 30 minuten.
+76003	Brouwsel van Haast	Dit brouwsel verkort de afkoelperiode van je vaardigheden met 20%.
 76004	Maan Elixer (K)	Vult automatisch je TP. Bevat 10,000 TP. Niet verhandelbaar.
 76005	Maan Elixer (M)	Vult automatisch je TP. Bevat 300,000 TP. Niet verhandelbaar.
 76006	Metin Steen Kompas	De kompas laat je de positie en afstand zien tot de volgende Metin Steen. Hoe feller het gloeit, hoe dichterbij je bent. Het kan 6 keer geactiveerd worden. Niet verhandelbaar.
@@ -2593,17 +2593,17 @@
 76014	Betover Voorwerp (b)	Verwijderd de bonussen van een van je voorwerpen en voegt nieuwe er aan toe. Voorwerp uit level kist, niet verhandelbaar.
 76015	Gezegend Bol	Een bol uit de legendes, die een vijfde attribuut toevoegt als een voorwerp er al 4 heeft.  Niet verhandelbaar.
 76016	Zegening Geschrift	Elimineert het risico dat een item vernietigd wordt als een verbetering mislukt. Wanneer de poging nu faalt, wordt slechts de kwaliteit van het item met 1 verminderd. Niet verhandelbaar.
-76017	Drank van de Aanval +10	Vergroot je Aanvalssnelheid met 10% voor 30 minuten.  Niet verhandelbaar.
-76018	Drank der Aanval +15	Verhoogt je Aanvalssnelheid met 15% voor 30 minuten. Niet verhandelbaar.
-76019	Vrijbiljet	Als je dit Vrijbiljet aan de wachter geeft, mag je een nieuwe etage van de Spinnenkerker of het Rode Draken Fort betreden. Niet verhandelbaar.
-76020	Onderzoekerselixer	Verbetert de kwaliteit van de onderzoeksobjecten die je hebt verzameld, en verhoogt de kans dat zij zullen worden geaccepteerd.  Niet verhandelbaar.
+76017	Drank van de Aanval +10	Verhoogt je aanvalssnelheid met 15%.
+76018	Drank der Aanval +15	Verhoogt je aanvalssnelheid met 20%.
+76019	Vrijbiljet	Als je dit biljet aan de verantwoordelijke wachter geeft, mag je een nieuwe etage van bepaalde kerkers betreden. Niet verhandelbaar.
+76020	Onderzoekerselixer	Verbetert de kwaliteit van de onderzoeksobjecten die je verzameld hebt, en verhoogt daarmee de kans dat zij geaccepteerd zullen worden. Is niet van toepassing op quests op Yohara. Niet verhandelbaar.
 76021	Zon Elixer (K)	Vult automatisch je LP. Bevat 100,000 LP. Niet verhandelbaar.
 76022	Zon Elixer (M)	Vult automatisch je LP. Bevat 3,000,000 LP.  Niet verhandelbaar.
 76023	Groene magie	Verwijderd de bonussen van een van je voorwerpen en voegt nieuwe er aan toe. Kan alleen gebruikt worden op wapens en pantser tot level 40. Voorwerp uit level kist, niet verhandelbaar.
 76024	Groene Kracht	Met een beetje geluk zal dit voorwerp een nieuwe bonus toevoegen aan een van je items (max. 4 bonussen). Kan alleen gebruikt worden op voorwerpen tot level 40. Voorwerp uit level kist, niet verhandelbaar.
 76025	Wind Schoenen	Verhoogt je bewegingssnelheid met 30 indien gedragen.
 79501	Pijlenkoker	Een pijlenkoker die je voorziet van een onuitputtelijke voorraad van pijlen voor 24 uur. Geen reductie voor schade bij lange afstandsschoten.
-79502	Pijlenkoker	Een pijlenkoker die je voorziet van een onuitputtelijke voorraad van pijlen voor 7 uur. Geen reductie voor schade bij lange afstandsschoten.
+79502	Pijlenkoker	Een pijlenkoker die je voorziet van een onuitputtelijke voorraad van pijlen voor 7 dagen. Geen reductie voor schade bij lange afstandsschoten.
 79503	Pijlenkoker	Een pijlenkoker die je voorziet van een onuitputtelijke voorraad van pijlen. Geen reductie voor schade bij lange afstandsschoten.
 79504	Pijlenkoker	Een pijlenkoker die je voorziet van een onuitputtelijke voorraad van pijlen. Geen reductie voor schade bij lange afstandsschoten.
 80001	Geld Buidel	Een donkere en gebruikte buidel gemaakt van leer.

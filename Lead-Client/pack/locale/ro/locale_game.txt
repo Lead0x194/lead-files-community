@@ -11,7 +11,7 @@ CANNOT_SHOOT_SELF_IN_SAFE	Nu pot face asta.
 CANNOT_SKILL_APPROACH	Sunt sigur că nu mă pot apropia mai mult de atât.
 CANNOT_SKILL_ATTACK	Nu pot ataca.
 CANNOT_SKILL_DEST_IN_SAFE	Inamicul e prea departe.
-CANNOT_SKILL_EQUIP_FISHING_ROD	Am nevoie de o undiţă.
+CANNOT_SKILL_EQUIP_FISHING_ROD	Nu poţi pescui fără să ai echipată o undiţă.
 CANNOT_SKILL_HAVE_TO_RIDE	Am nevoie de un cal pentru a folosi asta.
 CANNOT_SKILL_NEED_EMPTY_BOTTLE	Nu am nicio sticlă goală.
 CANNOT_SKILL_NEED_POISON_BOTTLE	Nu am nicio sticlă cu otravă.
@@ -30,11 +30,11 @@ CANNOT_SKILL_WAIT_COOLTIME	Nu pot folosi încă această abilitate.
 CANNOT_USE	Nu poţi folosi asta.
 CANNOT_WHISPER_DEST_REFUSE	%s a blocat complet şoptitul.	SA
 CANNOT_WHISPER_NOT_LOGON	%s nu e online.	SA
-CANNOT_WHISPER_SELF_REFUSE	Nu poţi şopti cuiva ceva dacă şoptitul e complet blocat. 	SNA
+CANNOT_WHISPER_SELF_REFUSE	Nu poţi şopti cuiva ceva dacă şoptitul e complet blocat.	SNA
 CHANNEL_EMPTY_SERVER	Niciun server
 CHANNEL_NORMAL	Canal %d
 CHANNEL_NOTIFY_FULL	Acest canal este plin! Alege te rog altul.
-CHANNEL_NOT_FIND_INFO	Nici o informaţie găsită via Canal.
+CHANNEL_NOT_FIND_INFO	Nicio informaţie găsită via Canal.
 CHANNEL_PVP	Duel liber
 CHANNEL_SELECT_CHANNEL	Alege canalul
 CHANNEL_SELECT_REGION	Selectează regiunea.
@@ -46,7 +46,7 @@ CHAT_INSULT_STRING	Propoziţia conţine cuvinte nepermise.
 CHAT_LOG	Arată mesaje vechi [L]
 CHAT_LOG_TITLE	Log Chat
 CHAT_NORMAL	Normal
-CHAT_NOTICE	Anunţ
+CHAT_NOTICE	Server
 CHAT_PARTY	Grup
 CHAT_SEND_CHAT	Trimite mesaj
 CHAT_SEND_MEMO	Trimite şoaptă [Shift+Enter]
@@ -58,12 +58,12 @@ CREATE_EXIST_SAME_NAME	Există deja un caracter cu acest nume.
 CREATE_FAILURE	Nu poţi crea acest caracter.
 CREATE_GM_NAME	GM
 CREATE_INPUT_NAME	Introdu numele.
-DAY	Zile
-DO_YOU_BUY_ITEM1	Vrei să cumperi %s pentru %s?
-DO_YOU_BUY_ITEM2	Vrei să cumperi %s %s pentru %s?
+DAY	z
+DO_YOU_BUY_ITEM1	Vrei să cumperi %s pentru %s Yang?
+DO_YOU_BUY_ITEM2	Doreşti să cumperi %s (%s bucăţi) pentru %s Yang?
 DO_YOU_DROP_MONEY	Vrei să renunţi la %d Yang?
-DO_YOU_SELL_ITEM1	Vrei să vinzi %s pentru %s?
-DO_YOU_SELL_ITEM2	Vrei să vinzi %s %s pentru %s?
+DO_YOU_SELL_ITEM1	Vrei să vinzi %s pentru %s Yang?
+DO_YOU_SELL_ITEM2	Doreşti să vinzi %s (%s bucăţi) pentru %s Yang?
 DRAGON_SOUL_CANNOT_REFINE	Această Piatră Dragon nu poate fi rafinată.
 DRAGON_SOUL_CANNOT_REFINE_MORE	Această Piatră Dragon a ajuns deja la nivelul maxim.
 DRAGON_SOUL_EQUIP_WARNING1	Este dificil să înlături o Piatră Dragon odată ce a fost ataşată.
@@ -111,9 +111,9 @@ EMOTION_SLAP	Lovitură
 EMPIRE_A	Regatul Shinsoo
 EMPIRE_B	Regatul Chunjo
 EMPIRE_C	Regatul Jinno
-EXCHANGE_CANNOT_GIVE	Nu poţi vinde acest obiect.
+EXCHANGE_CANNOT_GIVE	Nu poţi negocia acest obiect.
 EXCHANGE_CANT_EDIT_MONEY	Acum nu mai poţi modifica suma.
-EXCHANGE_FAILURE_EQUIP_ITEM	Nu poţi schimba Iteme atribuite caracterului.
+EXCHANGE_FAILURE_EQUIP_ITEM	Nu poti schimba Obiecte atribuite caracterului.
 EXCHANGE_MONEY	Suma
 EXCHANGE_TITLE	Schimb cu %s
 FISHING_FAILURE	Ai pierdut momeala pentru pescuit.
@@ -144,8 +144,8 @@ GUILDMARK_UPLOADER_ERROR_64_WIDTH	Înălţimea nu are 64 pixel.
 GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	Jocul nu suportă această imagine.
 GUILDMARK_UPLOADER_ERROR_PATH	Copiază fişierele în directorul metin2/upload.
 GUILDMARK_UPLOADER_ERROR_SELECT	Nicio imagine selectată.
-GUILDWAR_CTF_TITLE	Cucereşte steagul
-GUILDWAR_NORMAL_TITLE	Bătălie pe câmp
+GUILDWAR_CTF_TITLE	Capturează Steag
+GUILDWAR_NORMAL_TITLE	Luptă de Câmp
 GUILDWAR_WARP_TITLE	Luptă în Arenă
 GUILD_BUILDING_GRADE	Grad
 GUILD_BUILDING_NAME	Numele clădirii
@@ -155,7 +155,7 @@ GUILD_CREATE_ERROR_INSULT_NAME	Numele breslei nu este permis.
 GUILD_DEFAULT_GRADE	Membrii breslei
 GUILD_DELETE	Şterge
 GUILD_DO_YOU_HEAL_GSP	Doreşti să foloseşti %d Yang pentru a restaura %d unităţi din Spiritul Dragonului?
-GUILD_DO_YOU_JOIN	  te-a invitat. Vrei să te alături alianţei?
+GUILD_DO_YOU_JOIN	 te-a invitat. Vrei să te alături alianţei?
 GUILD_EMPTY_AREA	Ţară goală
 GUILD_FACILITY	Clădire secundară
 GUILD_GEM	Piatră preţioasă
@@ -170,11 +170,11 @@ GUILD_NO_NOTICE_PERMISSION	Nu îţi este permis să faci un anunţ.
 GUILD_OBJECT	Obiecte
 GUILD_OFFER_EXP	Investeşte Experienţă
 GUILD_SHORT_EXP	Nu ai destule puncte de experienţă.
-GUILD_TILE_BASEINFO	Informaţii de bază
-GUILD_TILE_BOARD	Tablă
+GUILD_TILE_BASEINFO	Informaţii Teritoriu
+GUILD_TILE_BOARD	Mesajele Breslei
 GUILD_TILE_GRADE	Drepturi de Administrare
 GUILD_TILE_INFO	Informaţii breaslă
-GUILD_TILE_MEMBER	Membrii breslei
+GUILD_TILE_MEMBER	Membru
 GUILD_TILE_SKILL	Calificarea breslei
 GUILD_WAR_LIMIT_30MIN	Timp: 30 de minute
 GUILD_WAR_REWARD_POTION	Recompensă: Câştigătorul primeşte licori
@@ -192,7 +192,7 @@ HORSE_HEALTH3	Plin
 HORSE_LEVEL1	Cal normal
 HORSE_LEVEL2	Cal de luptă
 HORSE_LEVEL3	Cal militar
-HOUR	Ore
+HOUR	h
 HOW_MANY_ITEM_DO_YOU_DROP1	Vrei să arunci %s?
 HOW_MANY_ITEM_DO_YOU_DROP2	Vrei să arunci %s %d?
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Introducere cod de ştergere din administrare cont.
@@ -205,15 +205,15 @@ JOB_WARRIOR	Războinic
 LEFT_TIME	Timp rămas
 LOGIN_CONNECT_FAILURE	Eroare la conectarea la server.
 LOGIN_CONNECT_SUCCESS	Ai fost conectat la server.
-LOGIN_CONNETING	Vei fi conectat la server...
+LOGIN_CONNETING	Te rugăm să aştepţi în timp ce te conectezi la server.
 LOGIN_FAILURE_ALREAY	Contul tău este deja conectat.
 LOGIN_FAILURE_BE_SAME_KEY	Problemă la login
-LOGIN_FAILURE_BLOCK_ID	Contul este blocat.
-LOGIN_FAILURE_BLOCK_LOGIN	Alege alt server!
-LOGIN_FAILURE_NOBILL	Contul nu deţine timp de joc.
-LOGIN_FAILURE_NOT_AVAIL	Contul este inaccesibil.
-LOGIN_FAILURE_NOT_EXIST_ID	Numele contului sau parola sunt greşite.
-LOGIN_FAILURE_REPAIR_ID	Pentru acest cont sunt refăcute obiectele.
+LOGIN_FAILURE_BLOCK_ID	Acest cont a fost blocat.
+LOGIN_FAILURE_BLOCK_LOGIN	Server închis: Alege alt server!
+LOGIN_FAILURE_NOBILL	Contul nu a înregistrat timp de joc.
+LOGIN_FAILURE_NOT_AVAIL	Contul nu este disponibil.
+LOGIN_FAILURE_NOT_EXIST_ID	Nume contului sau parola sunt greşite.
+LOGIN_FAILURE_REPAIR_ID	Obiectele au fost restaurate pentru acest cont.
 LOGIN_FAILURE_SAMELOGIN	Cineva s-a conectat la contul tau.
 LOGIN_FAILURE_SHUTDOWN	Serverul nu este încă deschis.
 LOGIN_FAILURE_TOO_MANY_USER	Conectarea nu s-a realizat pentru că există prea mulţi jucători.
@@ -266,7 +266,7 @@ MINIMAP_DEC_SCALE	Minimează
 MINIMAP_INC_SCALE	Maximează
 MINIMAP_OBSERVER_COUNT	%d spectatori
 MINIMAP_SHOW_AREAMAP	Deschide hartă mare
-MINUTE	Min
+MINUTE	min
 MONETARY_UNIT0	Yang
 MONEY_INPUT_DIALOG_SELLPRICE	Preţ de vânzare:
 MOVE_ITEM_FAILURE_PRIVATE_SHOP	Nu poţi muta obiectul dacă ai deschis un magazin privat.
@@ -287,7 +287,7 @@ PARTY_BONUS_SKILL_MASTER	Max. PM: +%d	SA
 PARTY_BONUS_TANKER	Max. PV: +%d	SA
 PARTY_BREAK_UP	Sparge grupa
 PARTY_DO_YOU_ACCEPT	%s te-a invitat în grup.
-PARTY_DO_YOU_JOIN	, accepţi invitaţia de a intra în grup?
+PARTY_DO_YOU_JOIN	 te-a invitat să te alături unui grup. Accepţi?
 PARTY_EXP_DISTRIBUTION_MODE	Distribuire EXP
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL	Adept level
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Nivel mai înalt primeşte mai mult EXP.
@@ -305,7 +305,7 @@ PARTY_SET_BERSERKER	Stabileşte ca berserker.
 PARTY_SET_BUFFER	Stabileşte ca blocant.
 PARTY_SET_DEFENDER	Stabileşte ca apărător.
 PARTY_SET_NORMAL	Anulează setarea.
-PARTY_SET_SKILL_MASTER	Stabileşte ca maestru al competenţei.
+PARTY_SET_SKILL_MASTER	Stabileşte ca Maestru al Abilităţii.
 PARTY_SET_TANKER	Stabileşte ca luptător de apropiere.
 PARTY_SKILL_ATTACKER	Valoare de bază atac atacator +%.0f
 PARTY_SKILL_BERSERKER	Viteza de atac berserker +%.0f
@@ -343,19 +343,19 @@ QUEST_APPEND	Misiune nouă înregistrată.
 QUEST_MIN	Min.
 QUEST_SEC	Sec.
 QUEST_TIMEOVER	Timpul a expirat
-QUEST_UNLIMITED_TIME	Nici o limită de timp
+QUEST_UNLIMITED_TIME	Nicio limită de timp
 QUICKSLOT_REGISTER_DISABLE_ITEM	Acest obiect nu poate fi adăugat la câmpul de acces rapid.
 RECEIVE_MESSAGE	%s ţi-a trimis un mesaj.
 REFINE_COST	Costuri de îmbunătăţire: %s
 REFINE_DESTROY_WARNING	Obiectul poate fi distrus prin înnobilare.
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Creşte probabilitatea de îmbunătăţire,
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	dar dacă nu îţi reuşeşte, obiectul va fi distrus. Continui?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Eşti sigur că doreşti să îmbunătăţeşti acest obiect?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	Dar dacă nu îţi reuşeşte, obiectul va fi distrus. Doreşti să continui?
 REFINE_DOWN_GRADE_WARNING	Obiectul poate fi distrus prin înnobilare.
 REFINE_DO_YOU_SEPARATE_METIN	Doreşti să înlături toate Pietrele Spiritului disponibile?
-REFINE_FAILURE	Nu a funcţionat. Am eşuat.
+REFINE_FAILURE	Oh nu, nu a mers! Ai eşuat.
 REFINE_FAILURE_CAN_NOT_ATTACH	%s nu poate fi adăugat obiectului.
 REFINE_FAILURE_EQUIP_ITEM	Nu poţi îmbunătăţi Obiectele echipate.
-REFINE_FAILURE_METIN_INSEPARABLE_ITEM	Nu poate fi îndepărtată nici o piatră stafie.
+REFINE_FAILURE_METIN_INSEPARABLE_ITEM	Nu poate fi indepartata nicio piatră a spiritului.
 REFINE_FAILURE_NEED_BETTER_SCROLL	Ai nevoie de un pergament de îmbunătăţire mai bun.
 REFINE_FAILURE_NO_GOLD_SOCKET	Nu există suport de aur pentru a adăuga %s.
 REFINE_FAILURE_NO_MORE_SOCKET	Nu poţi să mai adaugi suporturi.
@@ -364,7 +364,7 @@ REFINE_FAILURE_SOCKET_DISABLE_ITEM	Acestui obiect nu îi poate fi adăugat un su
 REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Acest obiect nu poate fi îmbunătăţit.
 REFINE_SUCCESS	Îmbunătăţirea obiectului a reuşit.
 REFINE_SUCCESS_PROBALITY	Şansă de îmbunătăţire: %d%%
-REFINE_WARNING2	Vrei să continui?
+REFINE_WARNING2	Doreşti să continui cu îmbunătăţirea?
 SAFEBOX_ERROR	Ai introdus o parolă greşită.
 SAFEBOX_SELL_DISABLE_SAFEITEM	Nu poţi vinde nici unul din obiectele salvate.
 SAFEBOX_WRONG_PASSWORD	Parolele trebuie să fie identice.
@@ -376,20 +376,20 @@ SELECT_CAN_NOT_DELETE	Nu poţi şterge caracterul.
 SELECT_CHANGED_NAME	Ai schimbat numele caracterului.
 SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	Numele caracterului există deja.
 SELECT_CHANGE_FAILURE_STRANGE_INDEX	Mai încearcă odată.
-SELECT_CHANGE_FAILURE_STRANGE_NAME	Numele caracterului este greşit.
+SELECT_CHANGE_FAILURE_STRANGE_NAME	Acesta este un nume gresit de caracter.
 SELECT_CHANGE_NAME_TITLE	Schimbă numele caracterului
-SELECT_DELEING	Caracterul se va şterge
+SELECT_DELEING	Ştergere...
 SELECT_DELETED	Ştergerea s-a realizat.
 SELECT_DO_YOU_DELETE_REALLY	Vrei să continui?
 SELECT_EMPTY_SLOT	Acesta este un câmp gol.
 SELECT_INPUT_CHANGING_NAME	Introdu un nou nume.
-SELECT_NOT_JOIN_GUILD	Nici o breaslă
+SELECT_NOT_JOIN_GUILD	Nicio Breaslă
 SHOP_BUY_INFO	Alege Obiectul pe care vrei să-l cumperi în fereastra magazinului.
 SHOP_CANNOT_SELL_ITEM	Acest obiect nu este de vânzare.
 SHOP_ERROR_UNKNOWN	Eroare Necunoscută Magazin: %s
 SHOP_INVALID_POS	Acest obiect este nepotrivit.
 SHOP_INVENTORY_FULL	Nu mai există loc în inventar.
-SHOP_NOT_ENOUGH_MONEY	Yang insuficienţi
+SHOP_NOT_ENOUGH_MONEY	Won sau Yang insuficienţi
 SHOP_NOT_ENOUGH_MONEY_EX	Nu ai suficient Yang.
 SHOP_SELL_INFO	Alege Obiectul pe care vrei să-l vinzi din fereastra inventarului tău.
 SHOP_SOLDOUT	Vândut
@@ -420,13 +420,13 @@ SKILL_HEUKSIN	Protecţie întunecată
 SKILL_HOSIN	Binecuvântare
 SKILL_INC_ATKSPD	Viteza de atac a crescut
 SKILL_INC_MOVSPD	Viteza de mişcare a crescut
-SKILL_JEONGWI	Beţia de luptă
+SKILL_JEONGWI	Iureş
 SKILL_JEUNGRYEOK	Atac +
 SKILL_JUMAGAP	Armură fermecată
 SKILL_KWAESOK	Repeziciune
 SKILL_MUYEONG	Spiritul focului
-SKILL_NEED_EMPTY_BOTTLE	Nu am nici o sticlă goală.
-SKILL_NEED_POISON_BOTTLE	Nu am nici o sticlă de otravă.
+SKILL_NEED_EMPTY_BOTTLE	Nu am nicio sticlă goală.
+SKILL_NEED_POISON_BOTTLE	Nu am nicio sticlă de otravă.
 SKILL_ONLY_FOR_GUILD_WAR	Poţi folosi această calificare doar într-un război de bresle.
 SKILL_PABEOP	Alungă vraja.
 SKILL_POWERFUL_STRIKE	Atac anestezie
@@ -483,8 +483,8 @@ TASKBAR_MOVE	Mişca
 TASKBAR_SKILL	Calificare
 TASKBAR_SP	PM
 TASKBAR_ST	AP
-TOOLTIP_ANTI_CRITICAL_PCT	Rezistenţa la lovitura critică +%d%%	SA
-TOOLTIP_ANTI_PENETRATE_PCT	Rezistenţa la lovitura pătrunzătoare +%d%%	SA
+TOOLTIP_ANTI_CRITICAL_PCT	Rezistenţă la lovitura critică +%d%%	SA
+TOOLTIP_ANTI_PENETRATE_PCT	Rezistenţă la lovitura pătrunzătoare +%d%%	SA
 TOOLTIP_ANTI_SELL	Nu poate fi vândut în magazin.
 TOOLTIP_APPLY_ATTBONUS_ANIMAL	Tare împotriva animalelor +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_ASSASSIN	Tare împotriva ninja +%d%%	SA
@@ -528,9 +528,9 @@ TOOLTIP_APPLY_RESIST_SHAMAN	Şansa de apărare împotriva atacului şamanilor %d
 TOOLTIP_APPLY_RESIST_SURA	Şansa de apărare împotriva atacului sura %d%%	SA
 TOOLTIP_APPLY_RESIST_SWORD	Apărare cu sabia %d%%	SA
 TOOLTIP_APPLY_RESIST_TWOHAND	Apărare cu două mâini %d%%	SA
-TOOLTIP_APPLY_RESIST_WARRIOR	Şansa de apărare împotriva atacului războinicilor: %d%%	SA
+TOOLTIP_APPLY_RESIST_WARRIOR	Şansă de apărare împotriva atacului războinicilor: %d%%	SA
 TOOLTIP_APPLY_RESIST_WIND	Rezistenţa vântului %d%%	SA
-TOOLTIP_APPLY_SKILL_BOOK_BONUS	Şansa de a învăţa din cărţi de 2,5 ori mai bună.	SNA
+TOOLTIP_APPLY_SKILL_BOOK_BONUS	Şansa de a învăţa din cărţi de 2,5 ori mai bună	SNA
 TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	Dacă învăţatul nu reuşeşte, ai încă o încercare gratuită.	SNA
 TOOLTIP_APPLY_SLOW_PCT	Şansă de încetinire %d%%	SA
 TOOLTIP_APPLY_STEAL_HP	%d%% daune vor fi absorbite de PV.	SA
@@ -545,15 +545,15 @@ TOOLTIP_AUTO_POTION_HP	Elixirul Soarelui
 TOOLTIP_AUTO_POTION_REST	A mai rămas: %.2f%%
 TOOLTIP_AUTO_POTION_SP	Elixirul Lunii
 TOOLTIP_AUTO_POTION_USING	Activ
-TOOLTIP_BOW_DISTANCE	Autonomia arcului +%dm	SA
+TOOLTIP_BOW_DISTANCE	Perimetru +%dm	SA
 TOOLTIP_BUYPRICE	Preţ: %s
 TOOLTIP_CAST_SPEED	Viteza farmecului +%d%%	SA
 TOOLTIP_CON	Vitalitate +%d	SA
 TOOLTIP_COSTUME_ATTR_BONUS	Bonus costum %d%%	SA
 TOOLTIP_DEF_GRADE	Apărare +%d	SA
 TOOLTIP_DEX	Dexteritate +%d	SA
-TOOLTIP_DRAGON_SOUL_DECK1	Pământ	SNA
-TOOLTIP_DRAGON_SOUL_DECK2	Cer	SNA
+TOOLTIP_DRAGON_SOUL_DECK1	Cer	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Pământ	SNA
 TOOLTIP_EAR	Cercel
 TOOLTIP_ENERGY	Energie %d	SA
 TOOLTIP_FISHINGROD_EXP	Puncte: %d / %d
@@ -588,17 +588,17 @@ TOOLTIP_MAGIC_ATTBONUS_PER	Atac magic +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	Valoarea atacului magic +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Apărare magică +%d	SA
 TOOLTIP_MALL_ATTBONUS	Valoarea atacului +%d%%	SA
-TOOLTIP_MALL_ATTBONUS_STATIC	Valoarea atacului +12~15%	SNA
+TOOLTIP_MALL_ATTBONUS_STATIC	Valoarea Atacului	SNA
 TOOLTIP_MALL_AUTOLOOT	Yang este însuşit automat.	SNA
 TOOLTIP_MALL_DEFBONUS	Apărare +%d%%	SA
-TOOLTIP_MALL_DEFBONUS_STATIC	Apărare +12~15%	SNA
+TOOLTIP_MALL_DEFBONUS_STATIC	Apărare	SNA
 TOOLTIP_MALL_EXPBONUS	EXP +%d%%	SA
 TOOLTIP_MALL_EXPBONUS_STATIC	50% mai mult EXP	SNA
 TOOLTIP_MALL_FISH_MIND	Şansa de a prinde un peşte este mai mare.	SNA
 TOOLTIP_MALL_GOLDBONUS	Şansă de drop Yang (%.1f)	SA
-TOOLTIP_MALL_GOLDBONUS_STATIC	Şansă dublă de drop Yang	SNA
+TOOLTIP_MALL_GOLDBONUS_STATIC	Sansa de drop Yang dublată	SNA
 TOOLTIP_MALL_ITEMBONUS	Şansă de drop obiecte (%.1f)	SA
-TOOLTIP_MALL_ITEMBONUS_STATIC	Şansă dublă drop obiecte	SNA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Şansa de drop obiect a crescut cu 200%.	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	Punctele de dragoste cresc mai repede.	SNA
 TOOLTIP_MALL_SAFEBOX	Mai mult spaţiu de depozitare stă la dispoziţie.	SNA
 TOOLTIP_MAX_HP	Max. PV +%d	SA
@@ -638,7 +638,7 @@ TOOLTIP_POTION_SEC	Sec.
 TOOLTIP_POTION_TIME	Durata:
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	%s nivelul %d necesar
 TOOLTIP_REQUIREMENT_STAT_LEVEL	%s %d necesar
-TOOLTIP_RESIST_BOW	Rezistenţa la săgeţi %d%%	SA
+TOOLTIP_RESIST_BOW	Apărare Săgeată %d%%	SA
 TOOLTIP_RESIST_DARK	Rezistenţa la întunecare +%d%%	SA
 TOOLTIP_RESIST_EARTH	Rezistenţă pământ +%d%%	SA
 TOOLTIP_RESIST_ELEC	Rezistenţa la fulger %d%%	SA
@@ -650,7 +650,7 @@ TOOLTIP_SELLPRICE	Preţ: %s
 TOOLTIP_SHAMAN	Şaman
 TOOLTIP_SHIELD	Scut
 TOOLTIP_SHOES	Papuci
-TOOLTIP_SKILLBOOK_NAME	Cartea competenţei
+TOOLTIP_SKILLBOOK_NAME	Cartea Abilităţii
 TOOLTIP_SKILL_AFFECT_ATT_GRADE	Valoarea atacului: +
 TOOLTIP_SKILL_AFFECT_ATT_POWER	Valoarea atacului:
 TOOLTIP_SKILL_AFFECT_ATT_SPEED	Viteza de atac: +
@@ -661,8 +661,8 @@ TOOLTIP_SKILL_AFFECT_MOV_SPEED	Viteza de mişcare: +
 TOOLTIP_SKILL_AFFECT_REFLECT_MELEE	Şansa de a evita un atac corporal:
 TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Rezistenţă la pagubă corporală:
 TOOLTIP_SKILL_COOL_TIME	Re-încărcare: 
-TOOLTIP_SKILL_DAMAGE_BONUS	Paguba competenţei %d%%	SA
-TOOLTIP_SKILL_DEFEND_BONUS	Rezistenţă la paguba competenţei %d%%	SA
+TOOLTIP_SKILL_DAMAGE_BONUS	Paguba Abilităţii %d%%	SA
+TOOLTIP_SKILL_DEFEND_BONUS	Rezistenţă la Paguba Abilităţii %d%%	SA
 TOOLTIP_SKILL_DURATION	Durata: %d sec.
 TOOLTIP_SKILL_FORGET_BOOK_NAME	Cartea Uitării
 TOOLTIP_SKILL_LEVEL	Nivel actual: %d
@@ -695,7 +695,7 @@ UI_NONAME	Niciun nume
 UI_OK	OK
 UI_POS_UNKNOWN	Localitate necunoscută
 UI_PREVPAGE	înapoi
-UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Upload-ul trebuie pornit încă odată
+UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Upload-ul terbuie pornit încă odată
 USE_ITEM_FAILURE_PRIVATE_SHOP	Nu poţi folosi obiectul dacă ai deschis un magazin.
 TARGET_INFO_RESISTS	Rezistenţe:
 TARGET_INFO_RESISTS_LINE0	Sabie: %d%% Două mâini: %d%% Clopot: %d%%

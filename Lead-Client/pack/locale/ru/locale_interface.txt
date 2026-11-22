@@ -1,8 +1,8 @@
-ACCEPT	Подтвердить
+ACCEPT	ОК
 ATTACH_METIN_INFO	Вы хотите использовать Камень духа?
 ATTACH_METIN_TITLE	Использовать Камень духа
 CANCEL	Отмена
-CHANGE_PASSWORD_CONFIRM	Подтвердить новый пароль
+CHANGE_PASSWORD_CONFIRM	Повторите пароль
 CHANGE_PASSWORD_NEW	Новый пароль
 CHANGE_PASSWORD_OLD	Старый пароль
 CHANGE_PASSWORD_TITLE	Смена пароля
@@ -51,7 +51,7 @@ EMPIRE_EXIT	Выход
 EMPIRE_NEXT	Дальше
 EMPIRE_PREV	Обратно
 EMPIRE_SELECT	выбрать
-EXCHANGE_ACCEPT	Принять
+EXCHANGE_ACCEPT	OK
 EXCHANGE_TITLE	торговать
 GAMEOPTION_TITLE	Настройки игры
 GAME_EXIT_OBSERVER	Выход из режима Наблюдатель
@@ -63,7 +63,7 @@ GRADE	Классификация
 GRADE_SELECT	Классификация
 GUILD_BASENAME	Базовое имя
 GUILD_BOARD_ID	Имя
-GUILD_BOARD_REFRESH	Обновить (F5)
+GUILD_BOARD_REFRESH	Обновить
 GUILD_BOARD_TEXT	Сообщение
 GUILD_BUILDING_CATEGORY_TITLE	Структурные единицы
 GUILD_BUILDING_CHANGE	Сменить
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Фанера
 GUILD_BUILDING_POSITION	Расположение
 GUILD_BUILDING_PREVIEW	смотреть
 GUILD_BUILDING_PRICE	Цена
-GUILD_BUILDING_REFRESH	Обновить (F5)
+GUILD_BUILDING_REFRESH	Обновить
 GUILD_BUILDING_STONE	Камень
 GUILD_BUILDING_TITLE	Сооружение корпуса Гильдии
 GUILD_CRYSTAL	Хрусталь
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Выбросить ресурсы
 GUILD_GEM	Самоцвет
 GUILD_GRADE_CHANGE_GRADE_NAME	Сменить ранг
 GUILD_GRADE_NUM	Ранг
-GUILD_GRADE_PERMISSION_DELETE	Исключить
-GUILD_GRADE_PERMISSION_JOIN	Принять
-GUILD_GRADE_PERMISSION_NOTICE	Написать
-GUILD_GRADE_PERMISSION_SKILL	Умения
+GUILD_GRADE_PERMISSION_DELETE	Исключить из гильдии
+GUILD_GRADE_PERMISSION_JOIN	Может принимать игроков в гильдию
+GUILD_GRADE_PERMISSION_NOTICE	Может прикреплять заметки гильдии
+GUILD_GRADE_PERMISSION_SKILL	Навыки гильдии
 GUILD_GRADE_RANK	Ранг
 GUILD_GRADE_WRITE	Написать
 GUILD_INFO	Инфо по Гильдии
@@ -111,7 +111,7 @@ GUILD_INFO_UPLOAD_MARK	Загрузить символ
 GUILD_INFO_UPLOAD_SYMBOL	Загрузить флаг
 GUILD_MARK	Символ гильдии
 GUILD_MEMBER_JOB	Раса
-GUILD_MEMBER_KNIGHT	Лидер
+GUILD_MEMBER_KNIGHT	Воины
 GUILD_MEMBER_LEVEL	Уровень
 GUILD_MEMBER_NAME	Имя
 GUILD_MEMBER_RANK	Ранг
@@ -140,8 +140,8 @@ HELP_ATTACK_KEY	Атака: пробел или левая кнопка мыши
 HELP_CHANGE_PK_MODE	Смена режима атаки: изменение настройки левой кнопки мыши
 HELP_CHARACTER_BUTTON1	(Оокно навыков, окно инвентаря
 HELP_CHARACTER_BUTTON2	список друзей и настройки)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Изменение обзора: средняя или правая кнопка мыши
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Обзор камеры: правая или средняя кнопка мыши
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Обзор камеры по умолчанию: средняя кнопка мыши
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Изменить обзор камеры: установить на правую или левую кнопку мыши
 HELP_EXP	Опыт
 HELP_FURY	Магазин игровых предметов
 HELP_GUILD_WINDOW	Открыть и закрыть окно гильдии: Alt + G
@@ -178,12 +178,12 @@ LOGIN_SELECT_BUTTON	Выбрать
 LOGIN_SELECT_EXIT	Выход
 LOGIN_SELECT_TITLE	Выбрать сервер
 MALL_PASSWORD_TITLE	Пароль
-MALL_TITLE	Магазин
+MALL_TITLE	Склад магазина
 MARKLIST_REFRESH	Обновить
 MARKLIST_TITLE	Регистрировать символ гильдии
 MESSAGE	Это-сообщение
 MESSENGER_ADD_FRIEND	Добавить друга
-MESSENGER_DELETE_FRIEND	Удалить друга
+MESSENGER_DELETE_FRIEND	Удалить
 MESSENGER_OPEN_GUILD	Открыть окно Гильдии
 MESSENGER_TITLE	Друзья
 MESSENGER_WHISPER	Шептание
