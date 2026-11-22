@@ -532,8 +532,8 @@ int CalcMeleeDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, bool bIgnoreDe
 				fAR,
 				szPT);
 
-		pkAttacker->ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", szMeleeAttack);
-		pkVictim->ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", szMeleeAttack);
+		pkAttacker->ChatPacket(CHAT_TYPE_TALKING, "%s", szMeleeAttack);
+		pkVictim->ChatPacket(CHAT_TYPE_TALKING, "%s", szMeleeAttack);
 	}
 
 	return CalcBattleDamage(iDam, pkAttacker->GetLevel(), pkVictim->GetLevel());

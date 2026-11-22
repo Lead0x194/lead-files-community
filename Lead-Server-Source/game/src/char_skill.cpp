@@ -2408,7 +2408,7 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 			return false;
 
 		if (test_server)
-			ChatPacket(CHAT_TYPE_INFO, "[LS;968;%s;%d]", pkSk->szName, iNeededSP);
+			ChatPacket(CHAT_TYPE_INFO, "[LS;968;%s;%d]", LC_SKILL(pkSk->dwVnum), iNeededSP);
 
 		PointChange(POINT_SP, -iNeededSP);
 	}
@@ -2435,7 +2435,7 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 				   	lMaxHit))
 		{
 			if (test_server)
-				ChatPacket(CHAT_TYPE_NOTICE, "[LS;5289;%s;%d]", pkSk->szName, iCooltime);
+				ChatPacket(CHAT_TYPE_NOTICE, "[LS;5289;%s;%d]", LC_SKILL(pkSk->dwVnum), iCooltime);
 
 			return false;
 		}
@@ -2639,7 +2639,7 @@ void CHARACTER::SkillLearnWaitMoreTimeMessage(DWORD ms)
 	   else
 	   str = "0%";*/
 
-	//ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", str);
+	//ChatPacket(CHAT_TYPE_TALKING, "%s", str);
 }
 
 void CHARACTER::DisableCooltime()

@@ -1686,7 +1686,7 @@ namespace quest
 			if (ch)
 			{
 				ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;5299;%s;%d]", func,line);
-				ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;370;%s]", szMsg);
+				ch->ChatPacket(CHAT_TYPE_PARTY, "%s", szMsg);
 			}
 		}
 	}
@@ -1707,7 +1707,7 @@ namespace quest
 			if (ch)
 			{
 				ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;5299;%s;%d]", func,line);
-				ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;370;%s]", szMsg);
+				ch->ChatPacket(CHAT_TYPE_PARTY, "%s", szMsg);
 			}
 		}
 	}

@@ -490,7 +490,7 @@ bool DSManager::PullOut(LPCHARACTER ch, TItemPos DestCell, LPITEM& pItem, LPITEM
 			{
 				LPITEM pByProduct = ch->AutoGiveItem(dwByProduct, true);
 				if (pByProduct)
-					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1074;%s]", pByProduct->GetName());
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1074;%s]", LC_ITEM(pByProduct->GetVnum()));
 				else
 					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1075]");
 			}

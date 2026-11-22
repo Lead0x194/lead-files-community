@@ -1529,7 +1529,7 @@ void CItem::SetAccessorySocketDownGradeTime(DWORD time)
 	SetSocket(2, time); 
 
 	if (test_server && GetOwner())
-		GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;5229;%s;%d]", GetName(), time);
+		GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;5229;%s;%d]", LC_ITEM(GetVnum()), time);
 }
 
 EVENTFUNC(accessory_socket_expire_event)
@@ -1677,7 +1677,7 @@ void CItem::AccessorySocketDegrade()
 
 		if (ch)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;471;%s]", GetName());
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;471;%s]", LC_ITEM(GetVnum()));
 		}
 
 		ModifyPoints(false);

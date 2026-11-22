@@ -478,9 +478,9 @@ int CInputMain::Whisper(LPCHARACTER ch, const char * data, size_t uiBytes)
 						char buf[128];
 						int len;
 						if (3==processReturn) // Exchanging
-							len = snprintf(buf, sizeof(buf), "[LS;841]", pTable->szLocaleName);
+							len = snprintf(buf, sizeof(buf), "[LS;841]");
 						else
-							len = snprintf(buf, sizeof(buf), "[LS;5023;%s]", pTable->szLocaleName);
+							len = snprintf(buf, sizeof(buf), "[LS;5023;%s]", LC_ITEM(ITEM_PRISM));
 						
 
 						if (len < 0 || len >= (int) sizeof(buf))
@@ -738,9 +738,9 @@ int CInputMain::Chat(LPCHARACTER ch, const char * data, size_t uiBytes)
 		if (NULL != pTable)
 		{
 			if (3==processReturn) // Exchanging
-				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;841]", pTable->szLocaleName);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;841]");
 			else
-				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5023;%s]", pTable->szLocaleName);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5023;%s]", LC_ITEM(ITEM_PRISM));
 						
 		}
 

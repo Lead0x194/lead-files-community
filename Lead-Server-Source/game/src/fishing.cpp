@@ -794,7 +794,7 @@ void Grill(LPCHARACTER ch, LPITEM item)
 
 	int count = item->GetCount();
 
-	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;810;%s]", item->GetName());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;810;%s]", LC_ITEM(item->GetVnum()));
 	item->SetCount(0);
 	ch->AutoGiveItem(fish_info[idx].grill_vnum, count);
 }

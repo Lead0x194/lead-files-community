@@ -104,7 +104,7 @@ namespace marriage
 
 		void operator() (LPCHARACTER ch)
 		{
-			ch->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", m_psz);
+			ch->ChatPacket(CHAT_TYPE_NOTICE, "%s", m_psz);
 		}
 
 		const char * m_psz;

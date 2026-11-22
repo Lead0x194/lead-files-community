@@ -215,7 +215,7 @@ void CHARACTER::AttackedByPoison(LPCHARACTER pkAttacker)
 	{
 		char buf[256];
 		snprintf(buf, sizeof(buf), "POISON %s -> %s", pkAttacker->GetName(), GetName());
-		pkAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", buf);
+		pkAttacker->ChatPacket(CHAT_TYPE_INFO, "%s", buf);
 	}
 }
 

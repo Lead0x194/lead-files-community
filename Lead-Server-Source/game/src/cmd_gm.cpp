@@ -1009,7 +1009,7 @@ ACMD(do_state)
 	if (ch->GetExchange())
 		strlcat(buf, ", Exchange", sizeof(buf));
 
-	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", buf);
+	ch->ChatPacket(CHAT_TYPE_INFO, "%s", buf);
 
 	int len;
 	len = snprintf(buf, sizeof(buf), "Coordinate %dx%d (%dx%d)", 
@@ -1027,7 +1027,7 @@ ACMD(do_state)
 			tch->GetMapIndex(), pSec->GetAttribute(tch->GetX(), tch->GetY()), (tch->GetX() - map_setting.iBaseX)/100, (tch->GetY() - map_setting.iBaseY)/100);
 	}
 
-	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", buf);
+	ch->ChatPacket(CHAT_TYPE_INFO, "%s", buf);
 
 	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5140;%d]", tch->GetLevel());
 	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5119;%d;%d]", tch->GetHP(), tch->GetMaxHP());
@@ -1144,7 +1144,7 @@ struct notice_packet_func
 		if (!d->GetCharacter())
 			return;
 
-		d->GetCharacter()->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", m_str);
+		d->GetCharacter()->ChatPacket(CHAT_TYPE_NOTICE, "%s", m_str);
 	}
 };
 
@@ -1169,7 +1169,7 @@ struct notice_map_packet_func
 		if (d->GetCharacter() == NULL) return;
 		if (d->GetCharacter()->GetMapIndex() != m_mapIndex) return;
 
-		d->GetCharacter()->ChatPacket(m_bBigFont == true ? CHAT_TYPE_BIG_NOTICE : CHAT_TYPE_NOTICE, "[LS;370;%s]", m_str);
+		d->GetCharacter()->ChatPacket(m_bBigFont == true ? CHAT_TYPE_BIG_NOTICE : CHAT_TYPE_NOTICE, "%s", m_str);
 	}
 };
 
@@ -1193,7 +1193,7 @@ struct log_packet_func
 			return;
 
 		if (d->GetCharacter()->GetGMLevel() > GM_PLAYER)
-			d->GetCharacter()->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", m_str);
+			d->GetCharacter()->ChatPacket(CHAT_TYPE_NOTICE, "%s", m_str);
 	}
 };
 
@@ -1231,7 +1231,7 @@ ACMD(do_map_notice)
 
 ACMD(do_big_notice)
 {
-	ch->ChatPacket(CHAT_TYPE_BIG_NOTICE, "[LS;370;%s]", argument);
+	ch->ChatPacket(CHAT_TYPE_BIG_NOTICE, "%s", argument);
 }
 
 ACMD(do_who)
@@ -3880,7 +3880,7 @@ ACMD(do_get_item_id_list)
 	{
 		LPITEM item = ch->GetInventoryItem(i);
 		if (item != NULL)
-			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5288;%d;%s;%d]", item->GetCell(), item->GetName(), item->GetID());
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5288;%d;%s;%d]", item->GetCell(), LC_ITEM(item->GetVnum()), item->GetID());
 	}
 }
 
@@ -4243,7 +4243,7 @@ ACMD (do_ds_list)
 		
 		LPITEM item = ch->GetItem(cell);
 		if (item != NULL)
-			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5288;%d;%s;%d]", item->GetCell(), item->GetName(), item->GetID());
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5288;%d;%s;%d]", item->GetCell(), LC_ITEM(item->GetVnum()), item->GetID());
 	}
 }
 

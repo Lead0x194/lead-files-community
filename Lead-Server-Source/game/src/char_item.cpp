@@ -2007,9 +2007,9 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 									if (item_gets[i])
 									{
 										if (dwCounts[i] > 1)
-											ChatPacket(CHAT_TYPE_INFO, "[LS;204;%s;%d]", item_gets[i]->GetName(), dwCounts[i]);
+											ChatPacket(CHAT_TYPE_INFO, "[LS;204;%s;%d]", LC_ITEM(item_gets[i]->GetVnum()), dwCounts[i]);
 										else
-											ChatPacket(CHAT_TYPE_INFO, "[LS;35;%s]", item_gets[i]->GetName());
+											ChatPacket(CHAT_TYPE_INFO, "[LS;35;%s]", LC_ITEM(item_gets[i]->GetVnum()));
 
 									}
 							}
@@ -2079,9 +2079,9 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 							if (item_gets[i])
 							{
 								if (dwCounts[i] > 1)
-									ChatPacket(CHAT_TYPE_INFO, "[LS;204;%s;%d]", item_gets[i]->GetName(), dwCounts[i]);
+									ChatPacket(CHAT_TYPE_INFO, "[LS;204;%s;%d]", LC_ITEM(item_gets[i]->GetVnum()), dwCounts[i]);
 								else
-									ChatPacket(CHAT_TYPE_INFO, "[LS;35;%s]", item_gets[i]->GetName());
+									ChatPacket(CHAT_TYPE_INFO, "[LS;35;%s]", LC_ITEM(item_gets[i]->GetVnum()));
 							}
 						}
 					}
@@ -3603,9 +3603,9 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 												if (item_gets[i])
 												{
 													if (dwCounts[i] > 1)
-														ChatPacket(CHAT_TYPE_INFO, "[LS;204;%s;%d]", item_gets[i]->GetName(), dwCounts[i]);
+														ChatPacket(CHAT_TYPE_INFO, "[LS;204;%s;%d]", LC_ITEM(item_gets[i]->GetVnum()), dwCounts[i]);
 													else
-														ChatPacket(CHAT_TYPE_INFO, "[LS;35;%s]", item_gets[i]->GetName());
+														ChatPacket(CHAT_TYPE_INFO, "[LS;35;%s]", LC_ITEM(item_gets[i]->GetVnum()));
 												}
 												break;
 											}
@@ -4729,11 +4729,11 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 
 							if (weapon->GetSocket(2))
 							{
-								ChatPacket(CHAT_TYPE_INFO, "[LS;419;%s]", item->GetName());
+								ChatPacket(CHAT_TYPE_INFO, "[LS;419;%s]", LC_ITEM(item->GetVnum()));
 							}
 							else
 							{
-								ChatPacket(CHAT_TYPE_INFO, "[LS;420;%s]", item->GetName());
+								ChatPacket(CHAT_TYPE_INFO, "[LS;420;%s]", LC_ITEM(item->GetVnum()));
 							}
 
 							weapon->SetSocket(2, item->GetValue(0));
@@ -4796,7 +4796,7 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 							{
 								if (pSource1->GetCount() < dwSourceCount1)
 								{
-									ChatPacket(CHAT_TYPE_INFO, "[LS;422;%s]", pSource1->GetName());
+									ChatPacket(CHAT_TYPE_INFO, "[LS;422;%s]", LC_ITEM(pSource1->GetVnum()));
 									return false;
 								}
 
@@ -4807,7 +4807,7 @@ bool CHARACTER::UseItemEx(LPITEM item, TItemPos DestCell)
 							{
 								if (pSource2->GetCount() < dwSourceCount2)
 								{
-									ChatPacket(CHAT_TYPE_INFO, "[LS;422;%s]", pSource2->GetName());
+									ChatPacket(CHAT_TYPE_INFO, "[LS;422;%s]", LC_ITEM(pSource2->GetVnum()));
 									return false;
 								}
 
@@ -5226,7 +5226,7 @@ bool CHARACTER::DestroyItem(TItemPos Cell)
 	if (quest::CQuestManager::instance().GetPCForce(GetPlayerID())->IsRunning())
 		return false;
 
-	ChatPacket(CHAT_TYPE_INFO, "[LS;5271;%s]", item->GetName());
+	ChatPacket(CHAT_TYPE_INFO, "[LS;5271;%s]", LC_ITEM(item->GetVnum()));
 
 	ITEM_MANAGER::instance().RemoveItem(item, "DESTROY");
 	return true;
@@ -5685,7 +5685,7 @@ bool CHARACTER::PickupItem(DWORD dwVID)
 
 							if (bCount == 0)
 							{
-								ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", item2->GetName());
+								ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", LC_ITEM(item2->GetVnum()));
 								M2_DESTROY_ITEM(item);
 								if (item2->GetType() == ITEM_QUEST)
 									quest::CQuestManager::instance().PickupItem (GetPlayerID(), item2);
@@ -5727,7 +5727,7 @@ bool CHARACTER::PickupItem(DWORD dwVID)
 				char szHint[32+1];
 				snprintf(szHint, sizeof(szHint), "%s %u %u", item->GetName(), item->GetCount(), item->GetVnum());
 				LogManager::instance().ItemLog(this, item, "GET", szHint);
-				ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", item->GetName());
+				ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", LC_ITEM(item->GetVnum()));
 
 				if (item->GetType() == ITEM_QUEST)
 					quest::CQuestManager::instance().PickupItem (GetPlayerID(), item);
@@ -5786,11 +5786,11 @@ bool CHARACTER::PickupItem(DWORD dwVID)
 			LogManager::instance().ItemLog(owner, item, "GET", szHint);
 
 			if (owner == this)
-				ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", item->GetName());
+				ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", LC_ITEM(item->GetVnum()));
 			else
 			{
-				owner->ChatPacket(CHAT_TYPE_INFO, "[LS;446;%s;%s]", GetName(), item->GetName());
-				ChatPacket(CHAT_TYPE_INFO, "[LS;449;%s;%s]", owner->GetName(), item->GetName());
+				owner->ChatPacket(CHAT_TYPE_INFO, "[LS;446;%s;%s]", GetName(), LC_ITEM(item->GetVnum()));
+				ChatPacket(CHAT_TYPE_INFO, "[LS;449;%s;%s]", owner->GetName(), LC_ITEM(item->GetVnum()));
 			}
 
 			if (item->GetType() == ITEM_QUEST)
@@ -6412,7 +6412,7 @@ LPITEM CHARACTER::AutoGiveItem(DWORD dwItemVnum, ItemStackType bCount, int iRare
 				if (bCount == 0)
 				{
 					if (bMsg)
-						ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", item->GetName());
+						ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", LC_ITEM(item->GetVnum()));
 
 					return item;
 				}
@@ -6464,7 +6464,7 @@ LPITEM CHARACTER::AutoGiveItem(DWORD dwItemVnum, ItemStackType bCount, int iRare
 	if (iEmptyCell != -1)
 	{
 		if (bMsg)
-			ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", item->GetName());
+			ChatPacket(CHAT_TYPE_INFO, "[LS;444;%s]", LC_ITEM(item->GetVnum()));
 
 		if (item->IsDragonSoul())
 			item->AddToCharacter(this, TItemPos(DRAGON_SOUL_INVENTORY, iEmptyCell));

@@ -1654,7 +1654,7 @@ namespace
 
 		void operator()(LPCHARACTER ch)
 		{
-			ch->ChatPacket(CHAT_TYPE_GUILD, "[LS;370;%s]", c_pszText);
+			ch->ChatPacket(CHAT_TYPE_GUILD, "%s", c_pszText);
 		}
 	};
 }

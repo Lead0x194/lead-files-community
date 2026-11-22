@@ -79,7 +79,7 @@ namespace quest
 		ostringstream s;
 		combine_lua_string(L, s);
 
-		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", s.str().c_str());
+		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_TALKING, "%s", s.str().c_str());
 		return 0;
 	}
 
@@ -95,7 +95,7 @@ namespace quest
 	{
 		ostringstream s;
 		combine_lua_string(L, s);
-		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", s.str().c_str());
+		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_INFO, "%s", s.str().c_str());
 		return 0;
 	}
 
@@ -103,7 +103,7 @@ namespace quest
 	{
 		ostringstream s;
 		combine_lua_string(L, s);
-		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", s.str().c_str());
+		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_NOTICE, "%s", s.str().c_str());
 		return 0;
 	}
 
