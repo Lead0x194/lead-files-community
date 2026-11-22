@@ -5,8 +5,6 @@
 
 CDynamicPool<CItemData>		CItemData::ms_kPool;
 
-extern DWORD GetDefaultCodePage();
-
 CItemData* CItemData::New()
 {
 	return ms_kPool.Alloc();
@@ -116,12 +114,7 @@ BOOL CItemData::LoadItemData(const char * c_szFileName)
 	TextFileLoader.GetTokenString("dropmodelfilename", &m_strDropModelFileName);
 	TextFileLoader.GetTokenString("iconimagefilename", &m_strIconFileName);
 
-	char szDescriptionKey[32+1];
-	_snprintf(szDescriptionKey, 32, "%ddescription", GetDefaultCodePage());
-	if (!TextFileLoader.GetTokenString(szDescriptionKey, &m_strDescription))
-	{
-		TextFileLoader.GetTokenString("description", &m_strDescription);
-	}
+	TextFileLoader.GetTokenString("description", &m_strDescription);
 
 	// LOD Model File Name List
 	CTokenVector * pLODModelList;
