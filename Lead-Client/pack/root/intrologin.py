@@ -241,6 +241,7 @@ class LoginWindow(ui.ScriptWindow):
 
 		self.connectBoard = None
 		self.loginBoard = None
+		self.languageComboBox = None
 		self.idEditLine = None
 		self.pwdEditLine = None
 		self.inputDialog = None
@@ -427,7 +428,24 @@ class LoginWindow(ui.ScriptWindow):
 		if IsFullBackImage():
 			self.GetChild("bg1").Show()
 			self.GetChild("bg2").Hide()
+
+		self.languageList = localeInfo.GetLanguageList()
+		self.languageComboBox = ui.ComboBox()
+		self.languageComboBox.SetParent(self)
+		self.languageComboBox.SetPosition(wndMgr.GetScreenWidth() - 170, 20)
+		self.languageComboBox.SetSize(150, 18)
+		self.languageComboBox.SetEvent(ui.__mem_func__(self.__OnSelectLanguage))
+		for index, (code, name) in enumerate(self.languageList):
+			self.languageComboBox.InsertItem(index, name)
+			if code == app.GetLocaleName():
+				self.languageComboBox.SetCurrentItem(name)
+		self.languageComboBox.Show()
 		return 1
+
+	def __OnSelectLanguage(self, index):
+		code, name = self.languageList[index]
+		if code != app.GetLocaleName() and localeInfo.SetLanguage(code):
+			self.stream.SetLoginPhase()
 
 	def Connect(self, id, pwd):
 
