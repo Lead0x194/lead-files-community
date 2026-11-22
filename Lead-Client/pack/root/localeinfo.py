@@ -54,6 +54,17 @@ def ReportMissingKeys(moduleName):
 	module.__dict__["__source__"] = sys.modules[moduleName]
 	sys.modules[moduleName] = module
 
+def SetLanguage(name):
+	if not app.SetLanguage(name):
+		return False
+
+	for moduleName in ("localeInfo", "uiScriptLocale"):
+		module = sys.modules.pop(moduleName)
+		module.__dict__.update(__import__(moduleName).__dict__)
+		sys.modules[moduleName] = module
+
+	return True
+
 def LoadLocaleData():
 	app.LoadLocaleData(app.GetLocalePath())
 
