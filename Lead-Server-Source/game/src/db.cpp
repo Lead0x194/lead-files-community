@@ -29,10 +29,10 @@ DBManager::~DBManager()
 
 bool DBManager::Connect(const char * host, const int port, const char * user, const char * pwd, const char * db)
 {
-	if (m_sql.Setup(host, user, pwd, db, g_stLocale.c_str(), false, port))
+	if (m_sql.Setup(host, user, pwd, db, g_stDatabaseCharset.c_str(), false, port))
 		m_bIsConnect = true;
 
-	if (!m_sql_direct.Setup(host, user, pwd, db, g_stLocale.c_str(), true, port))
+	if (!m_sql_direct.Setup(host, user, pwd, db, g_stDatabaseCharset.c_str(), true, port))
 		sys_err("cannot open direct sql connection to host %s", host);
 
 	if (m_bIsConnect && !g_bAuthServer)

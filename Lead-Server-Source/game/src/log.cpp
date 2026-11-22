@@ -20,7 +20,7 @@ LogManager::~LogManager()
 
 bool LogManager::Connect(const char * host, const int port, const char * user, const char * pwd, const char * db)
 {
-	if (m_sql.Setup(host, user, pwd, db, g_stLocale.c_str(), false, port))
+	if (m_sql.Setup(host, user, pwd, db, g_stDatabaseCharset.c_str(), false, port))
 		m_bIsConnect = true;
 
 	return m_bIsConnect;

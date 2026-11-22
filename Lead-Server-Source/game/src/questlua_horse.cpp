@@ -15,7 +15,7 @@
 #define sys_err(fmt, ...) quest::CQuestManager::instance().QuestError(__FUNCTION__, __LINE__, fmt, __VA_ARGS__)
 #endif
 
-extern int (*check_name) (const char * str);
+int check_name(const char * str);
 
 namespace quest
 {

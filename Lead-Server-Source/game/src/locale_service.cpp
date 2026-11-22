@@ -16,16 +16,29 @@ extern set<string> 	g_setQuestObjectDir;
 string g_stServiceBasePath = "common";
 string g_stServiceMapPath = "common/map";
 
-string g_stLocale = "utf8mb4";
+string g_stDatabaseCharset = "utf8mb4";
 
 BYTE PK_PROTECT_LEVEL = 30;
 
-int (*check_name) (const char * str) = NULL;
-int (*is_twobyte) (const char * str) = NULL;
-
-int is_twobyte_euckr(const char * str)
+int utf8_char_length(const char * str)
 {
-	return ishan(*str);
+	const unsigned char c = static_cast<unsigned char>(*str);
+
+	int length = 1;
+	if (c >= 0xF0)
+		length = 4;
+	else if (c >= 0xE0)
+		length = 3;
+	else if (c >= 0xC0)
+		length = 2;
+
+	for (int i = 1; i < length; ++i)
+	{
+		if ((static_cast<unsigned char>(str[i]) & 0xC0) != 0x80)
+			return i;
+	}
+
+	return length;
 }
 
 int check_name_independent(const char * str)
@@ -43,7 +56,7 @@ int check_name_independent(const char * str)
 	return 1;
 }
 
-int check_name_utf8(const char * str)
+int check_name(const char * str)
 {
 	if (!str || strlen(str) > CHARACTER_NAME_MAX_LEN)
 		return 0;
@@ -112,12 +125,6 @@ void LocaleService_Init()
 
 void LocaleService_TransferDefaultSetting()
 {
-	if (!check_name)
-		check_name = check_name_utf8;
-
-	if (!is_twobyte)
-		is_twobyte = is_twobyte_euckr;
-
 	if (!exp_table)
 		exp_table = exp_table_common;
 

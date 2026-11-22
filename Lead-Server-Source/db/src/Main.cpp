@@ -17,7 +17,7 @@ int Start();
 
 BOOL g_loadProtoFromDatabase = false;
 std::string g_stTablePostfix;
-std::string g_stLocale = "utf8mb4";
+std::string g_stDatabaseCharset = "utf8mb4";
 std::string g_stPlayerDBName = "";
 
 BOOL g_test_server = false;
