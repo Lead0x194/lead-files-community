@@ -31,11 +31,6 @@ GUILD_MARK_NOT_ENOUGH_LEVEL = "��巹�� 3�̻� ���� ����
 ERROR_MARK_UPLOAD_NEED_RECONNECT = "UploadMark: Reconnect to game"
 ERROR_MARK_CHECK_NEED_RECONNECT = "CheckMark: Reconnect to game"
 
-VIRTUAL_KEY_ALPHABET_LOWERS  = r"[1234567890]/qwertyuiop\=asdfghjkl;`'zxcvbnm.,"
-VIRTUAL_KEY_ALPHABET_UPPERS  = r'{1234567890}?QWERTYUIOP|+ASDFGHJKL:~"ZXCVBNM<>'
-VIRTUAL_KEY_SYMBOLS    = '!@#$%^&*()_+|{}:"<>?~'
-VIRTUAL_KEY_NUMBERS    = "1234567890-=\[];',./`"
-
 __IS_RTL		= "locale/ae" == app.GetLocalePath()
 LOGIN_FAILURE_WRONG_SOCIALID = "ASDF"
 LOGIN_FAILURE_SHUTDOWN_TIME = "ASDF"
