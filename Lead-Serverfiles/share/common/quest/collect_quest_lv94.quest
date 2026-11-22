@@ -1,6 +1,5 @@
 ----------------------------------------------------
 --COLLECT QUEST_lv94
---METIN2 수집 퀘스트  
 ----------------------------------------------------
 quest collect_quest_lv94  begin
 	state start begin
@@ -38,9 +37,9 @@ quest collect_quest_lv94  begin
 			say(gameforge.collect_quest_lv94._070_say)
 			say("")
 			set_state(go_to_disciple)
-			pc.setqf("duration", 0)  -- 시도 할수 있는 시간
-			pc.setqf("collect_count", 0)--이제껏 모은 아이템 수
-			pc.setqf("drink_drug", 0) --현혹의 물약을 먹으면 1
+			pc.setqf("duration", 0)
+			pc.setqf("collect_count", 0)
+			pc.setqf("drink_drug", 0)
 		end
 	end
 
@@ -58,7 +57,7 @@ quest collect_quest_lv94  begin
 			say("")
 		end
 		
-		when 71035.use begin --현혹의 물약
+		when 71035.use begin
 			if get_time() < pc.getqf("duration") then
 				say(gameforge.collect_quest_lv94._110_say)
 				return
@@ -123,14 +122,14 @@ quest collect_quest_lv94  begin
 		
 			local s = number(1, 100)
 			if s <= pass_percent then
-				if pc.getqf("collect_count") < 19 then     --10개미만 
+				if pc.getqf("collect_count") < 19 then
 					local index = pc.getqf("collect_count") + 1
-					pc.setqf("collect_count", index) --하나 구했으니 +1 해준다
+					pc.setqf("collect_count", index)
 					say_title(gameforge.collect_quest_lv94._050_say_title)
 					say(gameforge.collect_quest_lv94._190_say)
 					say(string.format(gameforge.collect_quest_lv94._200_say, 20-pc.getqf("collect_count")))
 					say(gameforge.collect_quest_lv94._210_say)
-					pc.setqf("drink_drug", 0)	 --물약 초기화
+					pc.setqf("drink_drug", 0)
 					return
 				end
 				say_title(gameforge.collect_quest_lv94._050_say_title)
@@ -138,7 +137,7 @@ quest collect_quest_lv94  begin
 				pc.setqf("collect_count",0)
 				set_state(key_item)
 			else
-				pc.setqf("drink_drug", 0)	 --물약 초기화
+				pc.setqf("drink_drug", 0)
 				say_title(gameforge.collect_quest_lv94._050_say_title)
 				say(gameforge.collect_quest_lv94._240_say)
 				return

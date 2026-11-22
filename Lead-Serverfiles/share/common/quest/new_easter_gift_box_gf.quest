@@ -48,7 +48,6 @@ quest new_easter_gift_box_gf begin
 
 		end
 
-		-- 마법의 달걀: 71150
 		when 71150.use begin
 			local t = get_global_time() - item.get_socket(1)
 			local n = item.get_socket (0)

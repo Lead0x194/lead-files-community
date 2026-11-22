@@ -42,7 +42,6 @@ quest new_valentine_day_gift_box begin
 
 		end
 
-		-- 발렌타인선물상자 : 71146-71147
 		when 71146.use begin
 			local t = get_global_time() - item.get_socket(1)
 			local n = item.get_socket (0)

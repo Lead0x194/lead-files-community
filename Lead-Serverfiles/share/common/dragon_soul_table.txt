@@ -1,90 +1,90 @@
-# ¿ëÈ¥¼® Å×ÀÌºíµé...										
-# TAB À¸·Î ±¸ºÐµÇ´Ï ¿¢¼¿·Î º¼ °Í.										
-# vimÀ¸·Î º»´Ù¸é ÅÇ°£ °£°ÝÀ» Á¶Á¤ÇÏ°í º¼ °Í. (set ts=16 ÃßÃµ)										
-# Å« µû¿ÈÇ¥·Î ¹­ÀÎ ºÎºÐÀº ¾È ±¸ºÐ. 										
-# \" ÀÌµý°Å Áö¿ø ¾ÈÇÔ.										
+# ìš©í˜¼ì„ í…Œì´ë¸”ë“¤...										
+# TAB ìœ¼ë¡œ êµ¬ë¶„ë˜ë‹ˆ ì—‘ì…€ë¡œ ë³¼ ê²ƒ.										
+# vimìœ¼ë¡œ ë³¸ë‹¤ë©´ íƒ­ê°„ ê°„ê²©ì„ ì¡°ì •í•˜ê³  ë³¼ ê²ƒ. (set ts=16 ì¶”ì²œ)										
+# í° ë”°ì˜´í‘œë¡œ ë¬¶ì¸ ë¶€ë¶„ì€ ì•ˆ êµ¬ë¶„. 										
+# \" ì´ë”´ê±° ì§€ì› ì•ˆí•¨.										
 										
-# ¿ëÈ¥¼® Vnum¿¡ ´ëÇÑ comment										
-# ITEM VNUMÀ» 10¸¸ ÀÚ¸®ºÎÅÍ, FEDCBA¶ó°í ÇÑ´Ù¸é										
-# FE : ¿ëÈ¥¼® Á¾·ù.	D : µî±Þ									
-# C : ´Ü°è			B : °­È­							
-# A : ¿©¹úÀÇ ¹øÈ£µé... 										
-# ÀÌ Ã¼°è¿¡¼­ ¹þ¾î³ª´Â ¿ëÈ¥¼®Àº ¿ë¼­ÇÏÁö ¾ÊÀ» °ÍÀÌ´Ù.										
+# ìš©í˜¼ì„ Vnumì— ëŒ€í•œ comment										
+# ITEM VNUMÃ€Â» 10Â¸Â¸ Ã€ÃšÂ¸Â®ÂºÃŽÃ…Ã, FEDCBAÂ¶Ã³Â°Ã­ Ã‡Ã‘Â´Ã™Â¸Ã©										
+# FE : ìš©í˜¼ì„ ì¢…ë¥˜.	D : ë“±ê¸‰									
+# C : ë‹¨ê³„			B : ê°•í™”							
+# A : ì—¬ë²Œì˜ ë²ˆí˜¸ë“¤... 										
+# ì´ ì²´ê³„ì—ì„œ ë²—ì–´ë‚˜ëŠ” ìš©í˜¼ì„ì€ ìš©ì„œí•˜ì§€ ì•Šì„ ê²ƒì´ë‹¤.										
 # ok?										
-# ¿ëÈ¥¼®ÀÌ ³Ê¹«³ªµµ ¸¹±â ¶§¹®¿¡ VnumÀÌ Áß±¸³­¹æÀÌ¸é,										
-#	Special item group¿¡¼­ groupÀ¸·Î ¹­¾î¼­ Ã³¸®ÇÏ±âµµ Èûµé°í-_-,									
-#	VnumHelper.h¿¡¼­ Ã³¸®ÇÏ´Â °Íµµ Èûµé´Ù. -_-									
-# 	Group Àâ´Âµ¥¸¸ ¼öÃµÁÙÀ» ½á¾ßÇÒ Áöµµ...									
-# Vnum¿¡ Ã¼°è¸¦ Àâ¾Æ¼­ ÀÚ¸´¼ö ±â¹ÝÀ¸·Î ÇØ¾ß¸¸ ÇÑ´Ù.										
+# ìš©í˜¼ì„ì´ ë„ˆë¬´ë‚˜ë„ ë§Žê¸° ë•Œë¬¸ì— Vnumì´ ì¤‘êµ¬ë‚œë°©ì´ë©´,										
+#	Special item groupì—ì„œ groupìœ¼ë¡œ ë¬¶ì–´ì„œ ì²˜ë¦¬í•˜ê¸°ë„ íž˜ë“¤ê³ -_-,									
+#	VnumHelper.hì—ì„œ ì²˜ë¦¬í•˜ëŠ” ê²ƒë„ íž˜ë“¤ë‹¤. -_-									
+# 	Group ìž¡ëŠ”ë°ë§Œ ìˆ˜ì²œì¤„ì„ ì¨ì•¼í•  ì§€ë„...									
+# Vnumì— ì²´ê³„ë¥¼ ìž¡ì•„ì„œ ìžë¦¿ìˆ˜ ê¸°ë°˜ìœ¼ë¡œ í•´ì•¼ë§Œ í•œë‹¤.										
 										
-# TableÀº "Group"°ú "ÀÌ¸§"À¸·Î ½ÃÀÛÇÑ´Ù.										
-# Table ³»ºÎ¿¡ ¶Ç TableÀÌ ÀÖÀ» ¼ö ÀÖ´Ù.										
-# ±×·¸´Ù°í ¾û¶×ÇÑ Å×ÀÌºíÀ» ½á³õ´Â´Ù°í ¼­¹ö°¡ ÀÎ½ÄÇÏ´Â °ÍÀº ¾Æ´Ï´Ù.										
-# ÇÊ¿äÇÑ Å×ÀÌºíÀº ´ÙÀ½°ú °°´Ù.										
+# Tableì€ "Group"ê³¼ "ì´ë¦„"ìœ¼ë¡œ ì‹œìž‘í•œë‹¤.										
+# Table ë‚´ë¶€ì— ë˜ Tableì´ ìžˆì„ ìˆ˜ ìžˆë‹¤.										
+# ê·¸ë ‡ë‹¤ê³  ì—‰ëš±í•œ í…Œì´ë¸”ì„ ì¨ë†“ëŠ”ë‹¤ê³  ì„œë²„ê°€ ì¸ì‹í•˜ëŠ” ê²ƒì€ ì•„ë‹ˆë‹¤.										
+# í•„ìš”í•œ í…Œì´ë¸”ì€ ë‹¤ìŒê³¼ ê°™ë‹¤.										
 # BaseVnums, BaseAttrs, AddtionalAttrs, AttrSettings, UpgradeTable, ImproveTable,										
 # RefineTable, UpgradeMoneys, ImproveTable, RefineMoneys, WeightTable, DurationTable,										
 # DragonHeartExtTable, DragonSoulExtTable										
 										
-# È®·ü Å×ÀÌºíÀÇ °ªÀº ±âº»ÀûÀ¸·Î floatÀÌ´Ù.										
+# í™•ë¥  í…Œì´ë¸”ì˜ ê°’ì€ ê¸°ë³¸ì ìœ¼ë¡œ floatì´ë‹¤.										
 										
-# Áß¿ä !!!!!										
-# Å×ÀÌºíÀ» º¸´Ù º¸¸é #--#ÀÌ¶ó ¾²¿©Áø ºÎºÐÀÌ ÀÖ´Âµ¥ Àý´ë·Î Áö¿ìÁö ¸»°Í.										
+# ì¤‘ìš” !!!!!										
+# í…Œì´ë¸”ì„ ë³´ë‹¤ ë³´ë©´ #--#ì´ë¼ ì“°ì—¬ì§„ ë¶€ë¶„ì´ ìžˆëŠ”ë° ì ˆëŒ€ë¡œ ì§€ìš°ì§€ ë§ê²ƒ.										
 # 										
 										
-# ÀÌ°Ç vnum to ÀÌ¸§ mapping.										
-# ÀÌ°É·Î Æ¯Á¤ vnumÀÇ ¿ëÈ¥¼®ÀÌ ¾î¶² Á¾·ùÀÇ ¿ëÈ¥¼®ÀÎÁö(ÀÌ¸§ÀÌ ¹ºÁö) ¾Ë¾Æ³½ ÈÄ,										
-# ±× ¿ëÈ¥¼®¿¡ ÇØ´çÇÏ´Â ¼Ó¼ºÀ» Ã£´Â´Ù.										
-# ¶ÇÇÑ ¿©±â¿¡ ÀûÇôÀÖÁö ¾ÊÀº ¿ëÈ¥¼®ÀÌ ¹Ø¿¡ Group Á¤ÀÇÇÏ´Â ºÎºÐ¿¡ ÀÖ´Ù¸é										
-# ¿¡·¯.										
+# ì´ê±´ vnum to ì´ë¦„ mapping.										
+# ì´ê±¸ë¡œ íŠ¹ì • vnumì˜ ìš©í˜¼ì„ì´ ì–´ë–¤ ì¢…ë¥˜ì˜ ìš©í˜¼ì„ì¸ì§€(ì´ë¦„ì´ ë­”ì§€) ì•Œì•„ë‚¸ í›„,										
+# ê·¸ ìš©í˜¼ì„ì— í•´ë‹¹í•˜ëŠ” ì†ì„±ì„ ì°¾ëŠ”ë‹¤.										
+# ë˜í•œ ì—¬ê¸°ì— ì í˜€ìžˆì§€ ì•Šì€ ìš©í˜¼ì„ì´ ë°‘ì— Group ì •ì˜í•˜ëŠ” ë¶€ë¶„ì— ìžˆë‹¤ë©´										
+# ì—ëŸ¬.										
 Group VnumMapper										
 {										
-	# ½ÃÀÛ vnum.									
-	# ¿©±â¼­ ½á¾ßÇÒ ºÎºÐÀº À§¿¡ ¼³¸íÇÑ FE¿¡ ÇØ´çÇÏ´Â ºÎºÐ. 									
-	# FE¸¦ ½áÁÙ °Í									
+	# ì‹œìž‘ vnum.									
+	# ì—¬ê¸°ì„œ ì¨ì•¼í•  ë¶€ë¶„ì€ ìœ„ì— ì„¤ëª…í•œ FEì— í•´ë‹¹í•˜ëŠ” ë¶€ë¶„. 									
+	# FEë¥¼ ì¨ì¤„ ê²ƒ									
 	#--#	DragonSoulName	Type							
-	1	¹é·æ¼®	11							
-	2	È­·æ¼®	12							
-	3	Ç³·æ¼®	13							
-	4	Ã¶·æ¼®	14							
-	5	³ú·æ¼®	15							
-	6	Èæ·æ¼®	16							
+	1	ë°±ë£¡ì„	11							
+	2	í™”ë£¡ì„	12							
+	3	í’ë£¡ì„	13							
+	4	ì² ë£¡ì„	14							
+	5	ë‡Œë£¡ì„	15							
+	6	í‘ë£¡ì„	16							
 }										
 										
 Group BasicApplys										
 {										
-	Group ¹é·æ¼®									
+	Group ë°±ë£¡ì„									
 	{									
-	# 1ºÎÅÍ ¼ø¼­´ë·Î ºÎ¿©µÈ´Ù.									
+	# 1ë¶€í„° ìˆœì„œëŒ€ë¡œ ë¶€ì—¬ëœë‹¤.									
 		#--#	Apply_Type	Apply_value						
 		1	INT	10						
 		2	RESIST_ICE	10						
 	}									
 										
-	Group È­·æ¼®									
+	Group í™”ë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value						
 		1	STR	10						
 		2	RESIST_FIRE	10
 	}									
-	Group Ç³·æ¼®									
+	Group í’ë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value						
 		1	MAX_SP	500						
 		2	RESIST_WIND	10						
 	}									
-	Group Ã¶·æ¼®									
+	Group ì² ë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value						
 		1	DEX	10						
 		2	RESIST_EARTH	10						
 	}									
-	Group ³ú·æ¼®									
+	Group ë‡Œë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value						
 		1	MAX_HP	1500						
 		2	RESIST_ELEC	10						
 	}									
-	Group Èæ·æ¼®									
+	Group í‘ë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value						
 		1	CON	10						
@@ -94,16 +94,16 @@ Group BasicApplys
 										
 Group AdditionalApplys										
 {										
-	Group ¹é·æ¼®									
+	Group ë°±ë£¡ì„									
 	{									
-	# ¾ÕÀÇ Ã¹ ÄÃ·³Àº ¼ø¼­¿Í °ü°è ¾ø´Ù. Ã¶ÀúÈ÷ È®·ü¿¡ µû¶ó ¼Ó¼ºÀÌ ºÎ¿©µÉ »ÓÀÌ´Ù.									
+	# ì•žì˜ ì²« ì»¬ëŸ¼ì€ ìˆœì„œì™€ ê´€ê³„ ì—†ë‹¤. ì² ì €ížˆ í™•ë¥ ì— ë”°ë¼ ì†ì„±ì´ ë¶€ì—¬ë  ë¿ì´ë‹¤.									
 		#--#	Apply_Type	Apply_value	Prob					
 		1	MAGIC_ATT_GRADE	15	10					
 		2	MAGIC_DEF_GRADE	15	10					
 		3	SKILL_DAMAGE_BONUS	15	10					
 		4	SKILL_DEFEND_BONUS	15	10					
 	}									
-	Group È­·æ¼®									
+	Group í™”ë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value	Prob					
 		1	ATT_BONUS	300	10					
@@ -111,7 +111,7 @@ Group AdditionalApplys
 		3	NORMAL_HIT_DAMAGE_BONUS	15	10					
 		4	NORMAL_HIT_DEFEND_BONUS	15	10					
 	}									
-	Group Ç³·æ¼®									
+	Group í’ë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value	Prob					
 		1	MAX_HP	3000	10					
@@ -120,7 +120,7 @@ Group AdditionalApplys
 		4	KILL_HP_RECOVER	5	10					
 		5	MAX_HP_PCT	20	10					
 	}									
-	Group Ã¶·æ¼®									
+	Group ì² ë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value	Prob					
 		1	ATT_BONUS_TO_WARRIOR	15	10					
@@ -132,7 +132,7 @@ Group AdditionalApplys
 		7	RESIST_SURA	15	10					
 		8	RESIST_SHAMAN	15	10					
 	}									
-	Group ³ú·æ¼®									
+	Group ë‡Œë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value	Prob					
 		1	MAX_SP	1500	10					
@@ -141,7 +141,7 @@ Group AdditionalApplys
 		4	KILL_SP_RECOVER	5	10					
 		5	MAX_SP_PCT	20	10					
 	}									
-	Group Èæ·æ¼®									
+	Group í‘ë£¡ì„									
 	{									
 		#--#	Apply_Type	Apply_value	Prob					
 		1	BLOCK	10	10					
@@ -152,11 +152,11 @@ Group AdditionalApplys
 	}									
 }										
 										
-# ¿©±âºÎÅÍ Default¸¦ µÐ´Ù.										
-# Default °ªÀ» ¸ðµç ¿ëÈ¥¼®ÀÌ µû¸£°í, 										
-# Æ¯Á¤ °ªÀÌ ÀÖ´Â ¿ëÈ¥¼®Àº Default¸¦ ¹ÙÅÁÀ¸·Î ±× °ªÀ» µ¤¾î¾´´Ù.										
-# µî±Þ¿¡ µû¸¥ ¼Ó¼º¼ö										
-# ´Ü, basis, add_max´Â 3º¸´Ù Å©¸é ¾ÈµÈ´Ù.										
+# ì—¬ê¸°ë¶€í„° Defaultë¥¼ ë‘”ë‹¤.										
+# Default ê°’ì„ ëª¨ë“  ìš©í˜¼ì„ì´ ë”°ë¥´ê³ , 										
+# íŠ¹ì • ê°’ì´ ìžˆëŠ” ìš©í˜¼ì„ì€ Defaultë¥¼ ë°”íƒ•ìœ¼ë¡œ ê·¸ ê°’ì„ ë®ì–´ì“´ë‹¤.										
+# ë“±ê¸‰ì— ë”°ë¥¸ ì†ì„±ìˆ˜										
+# ë‹¨, basis, add_maxëŠ” 3ë³´ë‹¤ í¬ë©´ ì•ˆëœë‹¤.										
 Group ApplyNumSettings										
 {										
 	Group Default									
@@ -166,22 +166,22 @@ Group ApplyNumSettings
 		add_min	0	0	0	0	0			
 		add_max	0	1	2	2	3			
 	}									
-#	Group ¹é·æ¼®									
+#	Group ë°±ë£¡ì„									
 #	{									
 #		#--#	GRADE_NORMAL	GRADE_BRILLIANT	GRADE_RARE	GRADE_ANCIENT	GRADE_LEGENDARY			
 #		basis	1	1	1	2	2			
 #	}									
 }										
 										
-# ¿ëÈ¥¼® °¡ÁßÄ¡ Å×ÀÌºí.										
-# ÀÌ Å×ÀÌºí¿¡¼­ °ªÀÌ 0ÀÌ¶ó¸é ±× ÀÌ»óÀÇ °­È­´Â ºÒ°¡´ÉÇÏ´Ù°í ÆÇ´ÜÇÑ´Ù.										
+# ìš©í˜¼ì„ ê°€ì¤‘ì¹˜ í…Œì´ë¸”.										
+# ì´ í…Œì´ë¸”ì—ì„œ ê°’ì´ 0ì´ë¼ë©´ ê·¸ ì´ìƒì˜ ê°•í™”ëŠ” ë¶ˆê°€ëŠ¥í•˜ë‹¤ê³  íŒë‹¨í•œë‹¤.										
 Group WeightTables										
 {										
 	Group Default									
 	{									
 		Group GRADE_NORMAL								
 		{								
-	#		´Ü°è	°­È­						
+	#		ë‹¨ê³„	ê°•í™”						
 			#--#	0	1	2	3	4	5	6
 			STEP_LOWEST	1	2	3	0	0	0	0
 			STEP_LOW	2	3	4	0	0	0	0
@@ -225,7 +225,7 @@ Group WeightTables
 			STEP_HIGHEST	50	55	65	75	90	105	120
 		}								
 	}									
-#	Group ¹é·æ¼®									
+#	Group ë°±ë£¡ì„									
 #	{									
 #		Group GRADE_NORMAL								
 #		{								
@@ -236,7 +236,7 @@ Group WeightTables
 #	}									
 }
 										
-# °³·® table									
+# ê°œëŸ‰ table									
 Group RefineGradeTables									
 {									
 	Group Default								
@@ -265,9 +265,9 @@ Group RefineStrengthTables
 {									
 	Group Default								
 	{								
-		# MATERIAL_DS_REFINE_NORMAL : GRADE_NORMAL °­È­¼®							
-		# MATERIAL_DS_REFINE_BLESSED : Ãàº¹ÀÇ °­È­¼®							
-		# MATERIAL_DS_REFINE_HOLLY : ¿ë½ÅÀÇ °­È­¼®							
+		# MATERIAL_DS_REFINE_NORMAL : GRADE_NORMAL ê°•í™”ì„							
+		# MATERIAL_DS_REFINE_BLESSED : ì¶•ë³µì˜ ê°•í™”ì„							
+		# MATERIAL_DS_REFINE_HOLLY : ìš©ì‹ ì˜ ê°•í™”ì„							
 		#--#	FEE	0	1	2	3	4	5
 		MATERIAL_DS_REFINE_NORMAL	10000	100	80	70	50	30	20
 		MATERIAL_DS_REFINE_BLESSED	20000	100	88	77	55	33	22
@@ -275,19 +275,19 @@ Group RefineStrengthTables
 	}								
 }									
 
-# ¿ë½ÉÀº 100000(ÀÓ½Ã vnum)ÀÌ°í, ÃæÀü·®Àº socket (0)¿¡ ¹Ú¾Æ³Ö´Â´Ù.										
-# ´Ü, special item group¿¡ vnum 10053À¸·Î Á¤ÀÇµÇ¾îÀÖ´Â ´Ù¸¥ ¿ë½ÉµéÀº Value(0)¿¡ ÀÖ´Â °ªÀÌ ÃæÀü·®.										
-# ¿ë½É ÃßÃâ È®·ü Å×ÀÌºí										
-# ÃæÀü·®ÀÌ 0ÀÌ¶ó´Â °ÍÀº ÃßÃâ ½ÇÆÐ¶ó´Â °Å.										
+# ìš©ì‹¬ì€ 100000(ìž„ì‹œ vnum)ì´ê³ , ì¶©ì „ëŸ‰ì€ socket (0)ì— ë°•ì•„ë„£ëŠ”ë‹¤.										
+# ë‹¨, special item groupì— vnum 10053ìœ¼ë¡œ ì •ì˜ë˜ì–´ìžˆëŠ” ë‹¤ë¥¸ ìš©ì‹¬ë“¤ì€ Value(0)ì— ìžˆëŠ” ê°’ì´ ì¶©ì „ëŸ‰.										
+# ìš©ì‹¬ ì¶”ì¶œ í™•ë¥  í…Œì´ë¸”										
+# ì¶©ì „ëŸ‰ì´ 0ì´ë¼ëŠ” ê²ƒì€ ì¶”ì¶œ ì‹¤íŒ¨ë¼ëŠ” ê±°.										
 Group DragonHeartExtTables										
 {										
 	Group Default									
 	{									
 		#--#	1	2	3	4	5			
-	# ¿ë½É ÃæÀü·®(%)									
+	# ìš©ì‹¬ ì¶©ì „ëŸ‰(%)									
 		CHARGING	0	5	15	30	50			
-	#	µî±Þ°ú ÃæÀü·®¿¡ µû¸¥ È®·ü Å×ÀÌºí								
-	#	µî±Þ 	È®·ü							
+	#	ë“±ê¸‰ê³¼ ì¶©ì „ëŸ‰ì— ë”°ë¥¸ í™•ë¥  í…Œì´ë¸”								
+	#	ë“±ê¸‰ 	í™•ë¥ 							
 		GRADE_NORMAL	50	35	12	2	1			
 		GRADE_BRILLIANT	35	40	20	4	1			
 		GRADE_RARE	20	35	30	12	3			
@@ -296,14 +296,14 @@ Group DragonHeartExtTables
 	}									
 }										
 										
-# ¿ëÈ¥¼® ÃßÃâ È®·ü Å×ÀÌºí.										
-# ÀÌ°Íµµ 1, 2¾ÈÀÌ ÀÖ¾î ÅëÇÕÇÒ ¼ö ÀÖ´Â ¹æ¾ÈÀ¸·Î °¨.										
-# ÃßÃâ È®·üÀ» Á¤ÇÒ ¼ö ÀÖ°í, ½ÇÆÐ ºÎ»ê¹°µµ Á¤ÇÒ ¼ö ÀÖÀ½.(0ÀÌ¸é ¾ÈÁÜ)										
+# ìš©í˜¼ì„ ì¶”ì¶œ í™•ë¥  í…Œì´ë¸”.										
+# ì´ê²ƒë„ 1, 2ì•ˆì´ ìžˆì–´ í†µí•©í•  ìˆ˜ ìžˆëŠ” ë°©ì•ˆìœ¼ë¡œ ê°.										
+# ì¶”ì¶œ í™•ë¥ ì„ ì •í•  ìˆ˜ ìžˆê³ , ì‹¤íŒ¨ ë¶€ì‚°ë¬¼ë„ ì •í•  ìˆ˜ ìžˆìŒ.(0ì´ë©´ ì•ˆì¤Œ)										
 Group DragonSoulExtTables										
 {										
 	Group Default									
 	{									
-				#½ÇÆÐ ºÎ»ê¹°						
+				#ì‹¤íŒ¨ ë¶€ì‚°ë¬¼						
 		#--#	Prob	ByProduct						
 		GRADE_NORMAL	50	30270						
 		GRADE_BRILLIANT	40	30270						

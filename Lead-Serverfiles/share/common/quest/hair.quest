@@ -2,14 +2,6 @@ quest hair begin
 	state start begin
 		function get_start_index_by_race(race)
 			--[[
-			--	0	¹«»ç ³²
-			--	1	ÀÚ°´ ¿©
-			--	2	¼ö¶ó ³²
-			--	3	¹«´ç ¿©
-			--	4	¹«»ç ¿©
-			--	5	ÀÚ°´ ³²
-			--	6	¼ö¶ó ¿©
-			--	7	¹«´ç ³²
 			--]]
 			race_list = {}
 			race_list[1] = 74001
@@ -45,7 +37,6 @@ quest hair begin
 		function My_hair_item(vnum,index)	
 			hair_list={}
 			     --   vnum    /hair/ option  /  howmuch / duration 
-			-- ¹«»ç ³²
 			hair_list [74001] = {1001, apply.ATTBONUS_WARRIOR,	10, 2592000}
 			hair_list [74002] = {1002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
 			hair_list [74003] = {1003, apply.ATTBONUS_SURA,		10, 2592000}
@@ -66,7 +57,6 @@ quest hair begin
 			hair_list [74018] =	{1016, apply.ATTBONUS_MONSTER,	10,  604800}
 			hair_list [74019] =	{1017, apply.ATTBONUS_MONSTER,	10,  604800}
 
-			-- ÀÚ°´ ¿©
 			hair_list [74251] = {2001, apply.ATTBONUS_WARRIOR,	10, 2592000}
 			hair_list [74252] = {2002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
 			hair_list [74253] = {2003, apply.ATTBONUS_SURA,		10, 2592000}
@@ -87,7 +77,6 @@ quest hair begin
 			hair_list [74268] =	{2016, apply.ATTBONUS_MONSTER,	10,  604800}
 			hair_list [74269] =	{2017, apply.ATTBONUS_MONSTER,	10,  604800}
 	
- 			-- ¼ö¶ó ³²
 			hair_list [74501] = {3001,  apply.ATTBONUS_WARRIOR,	10, 2592000}
 			hair_list [74502] = {3002,  apply.ATTBONUS_ASSASSIN,10, 2592000}
 			hair_list [74503] = {3003,  apply.ATTBONUS_SURA,	10, 2592000}
@@ -108,7 +97,6 @@ quest hair begin
 			hair_list [74518] =	{3016, apply.ATTBONUS_MONSTER,	10,  604800}
 			hair_list [74519] =	{3017, apply.ATTBONUS_MONSTER,	10,  604800}
 
-			-- ¹«´ç ¿©
 			hair_list [74751] = {4001, apply.ATTBONUS_WARRIOR,	10, 2592000}
 			hair_list [74752] = {4002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
 			hair_list [74753] = {4003, apply.ATTBONUS_SURA,		10, 2592000}
@@ -129,7 +117,6 @@ quest hair begin
 			hair_list [74768] =	{4016, apply.ATTBONUS_MONSTER,	10,  604800}
 			hair_list [74769] =	{4017, apply.ATTBONUS_MONSTER,	10,  604800}
 		
-			-- ¹«»ç ¿©
 			hair_list [75001] = {1001, apply.ATTBONUS_WARRIOR,	10, 2592000}
 			hair_list [75002] = {1002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
 			hair_list [75003] = {1003, apply.ATTBONUS_SURA,		10, 2592000}
@@ -150,7 +137,6 @@ quest hair begin
 			hair_list [75018] =	{1016, apply.ATTBONUS_MONSTER,	10,  604800}
 			hair_list [75019] =	{1017, apply.ATTBONUS_MONSTER,	10,  604800}
 
-			-- ÀÚ°´ ³²
 			hair_list [75201] = {2001, apply.ATTBONUS_WARRIOR,	10, 2592000}
 			hair_list [75202] = {2002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
 			hair_list [75203] = {2003, apply.ATTBONUS_SURA,		10, 2592000}
@@ -171,7 +157,6 @@ quest hair begin
 			hair_list [75218] =	{2016, apply.ATTBONUS_MONSTER,	10,  604800}
 			hair_list [75219] =	{2017, apply.ATTBONUS_MONSTER,	10,  604800}
  
-			-- ¼ö¶ó ¿©
 			hair_list [75401] = {3001,  apply.ATTBONUS_WARRIOR,	10, 2592000}
 			hair_list [75402] = {3002,  apply.ATTBONUS_ASSASSIN,10, 2592000}
 			hair_list [75403] = {3003,  apply.ATTBONUS_SURA,	10, 2592000}
@@ -192,7 +177,6 @@ quest hair begin
 			hair_list [75418] =	{3016, apply.ATTBONUS_MONSTER,	10,  604800}
 			hair_list [75419] =	{3017, apply.ATTBONUS_MONSTER,	10,  604800}
 
-			-- ¹«´ç ³²
 			hair_list [75601] = {4001, apply.ATTBONUS_WARRIOR,	10, 2592000}
 			hair_list [75602] = {4002, apply.ATTBONUS_ASSASSIN,	10, 2592000}
 			hair_list [75603] = {4003, apply.ATTBONUS_SURA,		10, 2592000}
@@ -221,9 +205,9 @@ quest hair begin
 		end
 		
 		function leave_log(item_vnum)
-			char_log(0, "CHANGE_HAIR", string.format("USE_ITEM(%d)",item_vnum)) -- ¾ÆÀÌÅÛ ·Î±× ¼³Á¤
-			char_log(0, "CHANGE_HAIR", string.format("END_SEC(%d)",get_time()+ hair.My_hair_item(item_vnum,4)) ) -- »ç¿ë±â°£ ·Î±×
-			char_log(0, "CHANGE_HAIR", "CHANGE_HAIR_END") -- Á¾·á ·Î±×
+			char_log(0, "CHANGE_HAIR", string.format("USE_ITEM(%d)",item_vnum))
+			char_log(0, "CHANGE_HAIR", string.format("END_SEC(%d)",get_time()+ hair.My_hair_item(item_vnum,4)) )
+			char_log(0, "CHANGE_HAIR", "CHANGE_HAIR_END")
 		end
 	
         when login begin
@@ -386,7 +370,7 @@ quest hair begin
 			local limitTime = pc.getqf("limit_time")
 
 			if pc.getqf("original_vnum") != 0 then
-					notice("hier wäre schluss später vielleicht!")
+					notice("hier wÃ¤re schluss spÃ¤ter vielleicht!")
 			end
 
 	 	 notice(string.format("vnum: %d", vnum))
@@ -484,7 +468,6 @@ quest hair begin
 			end
 
 			if vnum < 74000 then
-				-- ¿µ±¸ Çì¾î¸¦ Âø¿µÁßÀÎ °æ¿ì, Âø¿ë½Ã°£ ±â¹ÝÀ¸·Î 10³âµÚ¿¡ ¸¸·áµÇ´Â ÄÚ½ºÆ¬ ¾ÆÀÌÅÛÀ» ÁØ´Ù. -_-;
 				limitTime = 1261440000 
 			end
 

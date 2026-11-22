@@ -44,16 +44,16 @@ quest check_trans_ticket begin
 
 		when 20093.chat.gameforge.check_trans_ticket._50_npcChat begin
 			say_title(gameforge.check_trans_ticket._55_sayTitle)
-			-- inhalt für Schlüssel "gameforge.check_trans_ticket._60_say":
+			-- inhalt fÃ¼r SchlÃ¼ssel "gameforge.check_trans_ticket._60_say":
 			say(gameforge.check_trans_ticket._60_say) 
 			if pc.get_level() < 75 then
-				-- inhalt für Schlüssel "gameforge.check_trans_ticket._70_say":
+				-- inhalt fÃ¼r SchlÃ¼ssel "gameforge.check_trans_ticket._70_say":
 				say_reward(gameforge.check_trans_ticket._70_say)
 				return 
 			elseif pc.count_item(30190) + pc.count_item(30191) == 0 then
 				local get_bloodstone = select(gameforge.check_trans_ticket._75_1_select, gameforge.check_trans_ticket._75_2_select)
 				if get_bloodstone == 1 then
-					-- inhalt für Schlüssel "gameforge.check_trans_ticket._80_say":
+					-- inhalt fÃ¼r SchlÃ¼ssel "gameforge.check_trans_ticket._80_say":
 					say_title(gameforge.check_trans_ticket._55_sayTitle)
 					say(gameforge.check_trans_ticket._80_say)
 					say(gameforge.check_trans_ticket._90_say_reward)

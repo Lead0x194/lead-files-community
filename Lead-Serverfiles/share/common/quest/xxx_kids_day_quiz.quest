@@ -7,10 +7,10 @@ quest kids_day_quiz begin
 	    say_title("Prozentsatz des Kistendrop fur Quiz Event")
 	    say(string.format("Der Prozent des niedrige Level : 1/%d", low_value))
 	    say(string.format("Der Prozent des hohe Level  : 1/%d", high_value))
-	    local s=select("Veränderung für niedrige Level", "Veränderung für höhere Level", "Schließen")
+	    local s=select("VerÃ¤nderung fÃ¼r niedrige Level", "VerÃ¤nderung fÃ¼r hÃ¶here Level", "SchlieÃŸen")
 	    
 	    if s==1 then
-		say_title("Veränderung der Dropchance der Kisten fürs niedrige Level")
+		say_title("VerÃ¤nderung der Dropchance der Kisten fÃ¼rs niedrige Level")
 		say("")
 		say(string.format("Prozent Dropchance 1/%d -> ", low_value))
 		local v=tonumber(input())
@@ -26,10 +26,10 @@ quest kids_day_quiz begin
 
 		say(string.format("Die Dropchance 1/%d -> 1/%d", low_value, v))
 		say("")
-		local s=select("Bestätigen", "Abbrechen")
+		local s=select("BestÃ¤tigen", "Abbrechen")
 		if s==1 then
 		    say("")	
-		    say("Geändert")
+		    say("GeÃ¤ndert")
 		    game.set_event_flag("kids_day_drop", v)
 		else
 		    say("")
@@ -37,7 +37,7 @@ quest kids_day_quiz begin
 		end
 	    
 	    elseif s==2 then
-		say_title("Veränderung der Dropchance der Kisten fürs hohe Level")
+		say_title("VerÃ¤nderung der Dropchance der Kisten fÃ¼rs hohe Level")
 		say(string.format("Prozent Dropchance 1/%d -> ", high_value))
 		local v=tonumber(input())
 		if v<300 then
@@ -50,11 +50,11 @@ quest kids_day_quiz begin
 		    say("Beim Test Sever moglich")
 		end
 
-		say(string.format("Die Dropchance für hohes Level 1/%d -> 1/%d", high_value, v))
+		say(string.format("Die Dropchance fÃ¼r hohes Level 1/%d -> 1/%d", high_value, v))
 		say("")
 		local s=select("Bestatigen", "Abbrechen")
 		if s==1 then
-		    say("Geändert")
+		    say("GeÃ¤ndert")
 		    game.set_event_flag("kids_day_drop_high", v)
 		else
 		    say("Abgebrochen")
@@ -63,21 +63,21 @@ quest kids_day_quiz begin
 	end
 	
 	when 20041.chat."GM: Quiz Event" with pc.is_gm() and game.get_event_flag("kids_day_drop")==0 begin
-		say("Soll das Quiz Event durchgeführt werden?")
+		say("Soll das Quiz Event durchgefÃ¼hrt werden?")
 		say("")
-		local s=select("Starten", "Schließen")
+		local s=select("Starten", "SchlieÃŸen")
 		if s==1 then
 		    local default_value=1000;
 		    game.set_event_flag("kids_day_drop", default_value)
 		    game.set_event_flag("kids_day_drop_high", default_value)
-		    say(string.format("Die Dropchance der Kisten fürs Event: 1/%d", default_value))
+		    say(string.format("Die Dropchance der Kisten fÃ¼rs Event: 1/%d", default_value))
 		end
 	end
 	
 	when 20041.chat."GM: Quiz Event beenden" with pc.is_gm() and game.get_event_flag("kids_day_drop")!=0 begin
 		say("Soll das Quiz Event beendet werden?")
 		say("")
-		local s=select("Beenden", "Schließen")
+		local s=select("Beenden", "SchlieÃŸen")
 		if s==1 then
 		    game.set_event_flag("kids_day_drop", 0)
 		    game.set_event_flag("kids_day_drop_high", 0)
@@ -105,7 +105,7 @@ quest kids_day_quiz begin
 		say_title(string.format("Das Metin2 Quiz! #%d", quiz_index))
 		say(quiz_data[1])
 		say("")
-		local s=select(quiz_data[2], quiz_data[3], quiz_data[4], quiz_data[5], "Schließen")
+		local s=select(quiz_data[2], quiz_data[3], quiz_data[4], quiz_data[5], "SchlieÃŸen")
 		if s==5 then
 		    return
 		elseif s==quiz_data[6] then
@@ -214,7 +214,7 @@ quest kids_day_quiz begin
 		    say_title("Das Metin2 Quiz!")
 		    say("BB- Tut mir leid. Falsch. ")
 		    say("Beim nachstes mal versuche wieder")
-		    say("dann tschu©¬~")
+		    say("dann tschuÂ©Â¬~")
 		    say("")
 		    return
 		end

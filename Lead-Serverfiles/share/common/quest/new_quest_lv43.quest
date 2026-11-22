@@ -100,7 +100,7 @@ quest new_quest_lv43 begin
 			q.set_title(gameforge.new_quest_lv43._006_send_letter)
 		end
 		-------------- the orc drops a letter from wonda-rims parents ------------------------------------------------------
-		-- kill a 603#Ork-Kämpfer
+		-- kill a 603#Ork-KÃ¤mpfer
 		when 603.kill begin
 			if pc.getqf("collect_count_1") > 0 then
 				if math.random(1,100) <= new_quest_lv43_dropProb1 then -- probability if s.th. drops

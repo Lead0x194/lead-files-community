@@ -7,7 +7,7 @@ local bFound = false
 local optionValue = 0 
 local limitTime = pc . getqf ( "limit_time" ) 
 if pc . getqf ( "original_vnum" ) ~= 0 then 
-notice ( "hier w‰re schluss sp‰ter vielleicht!" ) 
+notice ( "hier w√§re schluss sp√§ter vielleicht!" ) 
 end 
 notice ( string . format ( "vnum: %d" , vnum ) ) 
 notice ( string . format ( "pc.get_wear: %d " , pc . get_wear ( 20 ) ) ) 

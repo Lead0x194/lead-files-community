@@ -42,7 +42,6 @@ quest new_christmas_gift_box begin
 
 		end
 
-		-- 크리스마스 선물 상자 : 71144
 		when 71144.use begin
 			local t = get_global_time() - item.get_socket(1)
 			local n = item.get_socket (0)

@@ -63,7 +63,7 @@ quest new_quest_lv28 begin
 			new_quest_lv28_neededAmountDrop1 = 1
 			new_quest_lv28_dropProb1 = 100
 			new_quest_lv28_mob1 = 193 -- bera
-			new_quest_lv28_drop1 = 30174 -- B‰rentatze
+			new_quest_lv28_drop1 = 30174 -- B√§rentatze
 		end
 		
 		-- BEGIN EDIT added by Arne 22sept09, Reason: no quest, no letter
@@ -99,19 +99,19 @@ quest new_quest_lv28 begin
 			new_quest_lv28_neededAmountDrop1 = 1
 			new_quest_lv28_dropProb1 = 100
 			new_quest_lv28_mob1 = 193 -- bera
-			new_quest_lv28_drop1 = 30174 -- B‰rentatze
+			new_quest_lv28_drop1 = 30174 -- B√§rentatze
 			send_letter(gameforge.new_quest_lv28._040_npcChat) -- EDIT added by Arne 22sept09, Reason: no letter
 			q.start()
 			q.set_title(gameforge.new_quest_lv28._040_npcChat)			
 			notice_multiline(gameforge.new_quest_lv28._025_notice, notice)
 		end
-		---------------- b‰renfusshaut+ ------------------------------------------------------
+		---------------- b√§renfusshaut+ ------------------------------------------------------
 		-- kill a 193#Bera
 		when 193.kill begin
 			if pc.count_item(new_quest_lv28_drop1) < new_quest_lv28_neededAmountDrop1 then
 				if math.random(1,100) <= new_quest_lv28_dropProb1 then -- probability if s.th. drops
 					
-					pc.give_item2(new_quest_lv28_drop1) -- b‰renfusshaut+
+					pc.give_item2(new_quest_lv28_drop1) -- b√§renfusshaut+
 					notice(gameforge.new_quest_lv28._026_notice)
 					if new_quest_lv28_neededAmountDrop1 == pc.count_item(new_quest_lv28_drop1) then
 						q.done()
@@ -140,7 +140,7 @@ quest new_quest_lv28 begin
 			new_quest_lv28_neededAmountDrop1 = 1
 			new_quest_lv28_dropProb1 = 100
 			new_quest_lv28_mob1 = 193 -- bera
-			new_quest_lv28_drop1 = 30174 -- B‰rentatze
+			new_quest_lv28_drop1 = 30174 -- B√§rentatze
 		-- BEGIN EDIT added by Arne 22sept09, Reason: no quest, no letter
 			send_letter(gameforge.new_quest_lv28._040_npcChat)
 			q.start()
@@ -184,7 +184,7 @@ quest new_quest_lv28 begin
 			new_quest_lv28_neededAmountDrop1 = 1
 			new_quest_lv28_dropProb1 = 100
 			new_quest_lv28_mob1 = 193 -- bera
-			new_quest_lv28_drop1 = 30174 -- B‰rentatze
+			new_quest_lv28_drop1 = 30174 -- B√§rentatze
 			-- BEGIN EDIT added by Arne 22sept09, Reason: no quest, no letter
 			send_letter(gameforge.new_quest_lv28._040_npcChat)
 			q.start()

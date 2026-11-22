@@ -1,18 +1,16 @@
---2013.02.06 ±è¿ë¿í
 
---Äù½ºÆ® ÁøÇà npc
-define YACKHWAN 20377 -- ¾à·ÉµµÀå ¾àÈ¯
-define SCHOLAR 20380 -- ÇÐÀÚ
-define ALCHEMIST 20001 -- ¿¬±Ý¼ú»ç
-define BLACKSMITH 20016 -- ´ëÀåÀåÀÌ
+define YACKHWAN 20377
+define SCHOLAR 20380
+define ALCHEMIST 20001
+define BLACKSMITH 20016
 
 
-define ITEM1_1 31074 -- ÃÊ¸¶´ÜÀÇ ¸íÆÐ
-define ITEM1_2 31079 -- ¾àÈ¯ ºÎÇÏÀÇ ¼­½Å
-define NPC1_1 20393 -- ¾àÈ¯ ºÎÇÏ 
+define ITEM1_1 31074
+define ITEM1_2 31079
+define NPC1_1 20393
 define DUNGEON_MAP_INDEX 351
 
-define ITEM2_1 31080 -- È­¿°¿ÕÀÇ ÇÇ
+define ITEM2_1 31080 -- ÃˆÂ­Â¿Â°Â¿Ã•Ã€Ã‡ Ã‡Ã‡
 
 quest main_quest_flame_lv101 begin
 	state start begin
@@ -23,11 +21,9 @@ quest main_quest_flame_lv101 begin
 		end
 	end
 	
-	-- µ¿±¼ÀÇ Á¤Ã¼
 	state state1_1 begin 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv101._010_sendLetter) 
- 			--npc Å¸°Ù 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -37,7 +33,6 @@ quest main_quest_flame_lv101 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv101._010_sendLetter) 
 			say(gameforge.main_quest_flame_lv101._020_say) 
-			--npc Å¸°Ù ¾È³»¹®
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -45,23 +40,22 @@ quest main_quest_flame_lv101 begin
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._030_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._040_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._050_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv101._070_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._080_say)  
-			--´ÙÀ½ ½ºÅ×ÀÌÆ®·Î
 			set_state (state1_2)
 		end
 
@@ -69,9 +63,8 @@ quest main_quest_flame_lv101 begin
 			--q.done()
 		end
 	end
-	state state1_2 begin  -- ´Ü¼­ X, ºÎÇÏ X
+	state state1_2 begin
 		when enter begin 
-			-- notice ¼³Á¤
 			notice_multiline(gameforge.main_quest_flame_lv101._090_notice,notice)
 		end
 
@@ -99,13 +92,13 @@ quest main_quest_flame_lv101 begin
 		
 		when NPC1_1.click begin
 			say(gameforge.main_quest_flame_lv101._140_say)
-			set_state (state1_3)  -- ´Ü¼­ X, ºÎÇÏ O
+			set_state (state1_3)
 		end
 		
 		when kill with pc.get_map_index() >= DUNGEON_MAP_INDEX * 10000 and pc.get_map_index() < (DUNGEON_MAP_INDEX + 1) *10000 begin
 			if number(1,100) == 1 then
 				pc.give_item2(ITEM1_1, 1)
-				set_state (state1_4)   -- ´Ü¼­ O, ºÎÇÏ X
+				set_state (state1_4)
 			end
 		end
 
@@ -113,9 +106,8 @@ quest main_quest_flame_lv101 begin
 			--q.done()
 		end
 	end
-	state state1_3 begin  -- ´Ü¼­ X, ºÎÇÏ O
+	state state1_3 begin
 		when enter begin 
-			-- notice ¼³Á¤
 			notice_multiline(gameforge.main_quest_flame_lv101._150_notice,notice)
 		end
 
@@ -139,7 +131,7 @@ quest main_quest_flame_lv101 begin
 		when YACKHWAN.chat.gameforge.main_quest_flame_lv101._010_sendLetter begin 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._160_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._180_say) 
@@ -148,7 +140,7 @@ quest main_quest_flame_lv101 begin
 		when kill with pc.get_map_index() >= DUNGEON_MAP_INDEX * 10000 and pc.get_map_index() < (DUNGEON_MAP_INDEX + 1) *10000 begin
 			if number(1,100) == 1 then
 				pc.give_item2(ITEM1_1, 1)
-				set_state ("state1_5")   -- ´Ü¼­ O, ºÎÇÏ O
+				set_state ("state1_5")
 			end
 		end
 
@@ -156,9 +148,8 @@ quest main_quest_flame_lv101 begin
 			--q.done()
 		end
 	end
-	state state1_4 begin  -- ´Ü¼­ O, ºÎÇÏ X
+	state state1_4 begin
 		when enter begin 
-			-- notice ¼³Á¤
 			notice_multiline(gameforge.main_quest_flame_lv101._190_notice,notice)
 		end
 
@@ -195,13 +186,11 @@ quest main_quest_flame_lv101 begin
 	end
 	state state1_5 begin 
 		when enter begin 
-			-- notice ¼³Á¤
 			notice_multiline(gameforge.main_quest_flame_lv101._210_notice,notice)
 		end
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv101._010_sendLetter) 
- 			--npc Å¸°Ù 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -211,29 +200,26 @@ quest main_quest_flame_lv101 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv101._010_sendLetter) 
 			say(gameforge.main_quest_flame_lv101._220_say) 
-			--npc Å¸°Ù ¾È³»¹®
 			--say_reward(locale.target_npc_info) 
 		end
 
 		when YACKHWAN.chat.gameforge.main_quest_flame_lv101._010_sendLetter begin 
 			target.delete("__TARGET__") 
-			--¾ÆÀÌÅÛ Á¦°Å
 			pc.remove_item(ITEM1_1, pc.count_item(ITEM1_1)) 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._230_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv101._250_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(gameforge.main_quest_flame_lv101._260_sayTitle) 
 			say(gameforge.main_quest_flame_lv101._270_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._280_say) 
-			--º¸»ó
 			wait()--reward
 
 			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 37003000))
@@ -242,11 +228,10 @@ quest main_quest_flame_lv101 begin
 			pc.change_money(153000)
 			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(30047),2))
 			pc.give_item2(30047, 2)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(27992),2)) -- ¹éÁøÁÖ
+			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(27992),2))
 			pc.give_item2(27992, 1)
 			pc.give_item2(27992, 1)
 			say()
-			--´ÙÀ½ ½ºÅ×ÀÌÆ®·Î
 			set_state (state2_1)
 		end
 
@@ -255,11 +240,9 @@ quest main_quest_flame_lv101 begin
 		end
 	end
 	
-	-- ÃÊ¸¶´ÜÀÇ ¸íÆÐ ÇØµ¶
 	state state2_1 begin 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv101._290_sendLetter) 
- 			--npc Å¸°Ù 
 			local v = find_npc_by_vnum(SCHOLAR) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(SCHOLAR))
@@ -269,7 +252,6 @@ quest main_quest_flame_lv101 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv101._290_sendLetter) 
 			say(gameforge.main_quest_flame_lv101._300_say) 
-			--npc Å¸°Ù ¾È³»¹®
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -277,19 +259,18 @@ quest main_quest_flame_lv101 begin
 			target.delete("__TARGET__") 
 			say_title(mob_name(SCHOLAR)) 
 			say(gameforge.main_quest_flame_lv101._310_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(mob_name(SCHOLAR)) 
 			say(gameforge.main_quest_flame_lv101._330_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv101._340_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(mob_name(SCHOLAR)) 
 			say(gameforge.main_quest_flame_lv101._350_say) 
-			--´ÙÀ½ ½ºÅ×ÀÌÆ®·Î
 			set_state (state2_2)
 		end
 
@@ -299,13 +280,11 @@ quest main_quest_flame_lv101 begin
 	end
 	state state2_2 begin 
 		when enter begin 
-			-- notice ¼³Á¤
 			notice_multiline(gameforge.main_quest_flame_lv101._360_notice,notice)
 		end
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv101._290_sendLetter) 
- 			--¾ÆÀÌÅÛ Áö±Þ ¼³Á¤
 			q.set_counter_name(gameforge.main_quest_lv97._670_counterName)
 			main_quest_flame_lv101.item_count() 
 		end
@@ -313,7 +292,6 @@ quest main_quest_flame_lv101 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv101._100_sayTitle) 
 			say(gameforge.main_quest_flame_lv101._520_say) 
-			--³²Àº ¾ÆÀÌÅÛ ¾È³»¹®
 			say(gameforge.main_quest_lv97._670_counterName)
 			say(string.format(gameforge.main_quest_lv90._1190_say,item_name(ITEM2_1), 1 - pc.count_item(ITEM2_1)))
 		end
@@ -343,13 +321,11 @@ quest main_quest_flame_lv101 begin
 	end
 	state state2_3 begin 
 		when enter begin 
-			-- notice ¼³Á¤
 			notice_multiline(gameforge.main_quest_flame_lv101._380_notice,notice)
 		end
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv101._290_sendLetter) 
- 			--npc Å¸°Ù 
 			local v = find_npc_by_vnum(SCHOLAR) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(SCHOLAR))
@@ -359,27 +335,24 @@ quest main_quest_flame_lv101 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv101._290_sendLetter) 
 			say(gameforge.main_quest_flame_lv101._390_say) 
-			--npc Å¸°Ù ¾È³»¹®
 			--say_reward(locale.target_npc_info) 
 		end
 
 		when SCHOLAR.chat.gameforge.main_quest_flame_lv101._290_sendLetter begin 
 			target.delete("__TARGET__") 
-			--¾ÆÀÌÅÛ Á¦°Å
 			pc.remove_item(ITEM2_1, pc.count_item(ITEM2_1)) 
 			say_title(mob_name(SCHOLAR)) 
 			say(gameforge.main_quest_flame_lv101._400_say) 
-			--´ÙÀ½ ½ºÅ×ÀÌÆ®·Î
 			wait()--reward
 
 			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 48584000))
 			pc.give_exp2( 48584000)
 			say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, 154000))
 			pc.change_money(154000)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(72024),1))  -- Çà¿îÀÇ ±ÝÈ­
+			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(72024),1))
 			pc.give_item2_select(72024)
 			item.set_socket(2, 180)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71094),1)) -- ¼±ÀÎÀÇ ±³ÈÆ
+			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71094),1))
 			pc.give_item2(71094, 1)
 			say()
 			set_state (state2_4)
@@ -391,19 +364,16 @@ quest main_quest_flame_lv101 begin
 	end
 	state state2_4 begin 
 		when enter begin 
-			--½Ã°£Á¦ÇÑ ¼³Á¤
 			pc.setqf("limit_time", get_time() + 60*60*24)
 		end
 
 		when login begin 
- 			--½Ã°£Á¦ÇÑ ¼³Á¤ 
 			local remain_time = pc.getqf("limit_time") - get_time()
 			timer("time_over", remain_time)
 		end
 		
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv101._290_sendLetter) 
- 			--npc Å¸°Ù 
 			local v = find_npc_by_vnum(SCHOLAR) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(SCHOLAR))
@@ -413,7 +383,6 @@ quest main_quest_flame_lv101 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv101._290_sendLetter) 
 			say(gameforge.main_quest_flame_lv101._390_say) 
-			--npc Å¸°Ù ¾È³»¹®
 			local remain_time = pc.getqf("limit_time") - get_time()
 			local left_hour = math.mod(remain_time / (60 * 60), 24);
 			local left_minute = math.mod(remain_time / 60, 60);
@@ -436,11 +405,9 @@ quest main_quest_flame_lv101 begin
 		end
 	end
 
-	-- ¸íÆÐÀÇ Áø½Ç
 	state state3_1 begin 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv101._430_sendLetter) 
- 			--npc Å¸°Ù 
 			local v = find_npc_by_vnum(SCHOLAR) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(SCHOLAR))
@@ -450,7 +417,6 @@ quest main_quest_flame_lv101 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv101._430_sendLetter) 
 			say(gameforge.main_quest_flame_lv101._300_say) 
-			--npc Å¸°Ù ¾È³»¹®
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -458,15 +424,15 @@ quest main_quest_flame_lv101 begin
 			target.delete("__TARGET__") 
 			say_title(mob_name(SCHOLAR)) 
 			say(gameforge.main_quest_flame_lv101._440_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(mob_name(SCHOLAR)) 
 			say(gameforge.main_quest_flame_lv101._450_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv101._340_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			set_state (state3_2)
 		end
@@ -477,13 +443,11 @@ quest main_quest_flame_lv101 begin
 	end
 	state state3_2 begin 
 		when enter begin 
-			-- notice ¼³Á¤
 			notice_multiline(gameforge.main_quest_flame_lv101._470_notice,notice)
 		end
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv101._430_sendLetter) 
- 			--npc Å¸°Ù 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -493,7 +457,6 @@ quest main_quest_flame_lv101 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv101._480_sayTitle) 
 			say(gameforge.main_quest_flame_lv101._490_say) 
-			--npc Å¸°Ù ¾È³»¹®
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -501,24 +464,23 @@ quest main_quest_flame_lv101 begin
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._500_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv101._510_say) 
-			wait()--Ãß°¡ ´ëÈ­ 
+			wait()
 			say_title(gameforge.main_quest_lv27._120_sayTitle)
 			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 48584000))
 			pc.give_exp2( 48584000)
 			say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, 156000))
 			pc.change_money( 156000)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71095),1)) -- ÅëÇàÁõ¸í¼­
+			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71095),1))
 			pc.give_item2(71095, 1)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(72016),1))  -- Á¦3ÀÇ ¼Õ
+			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(72016),1))  -- ÃÂ¦3Ã€Ã‡ Â¼Ã•
 			pc.give_item2_select(72016)
 			item.set_socket(2, 60)
 			say()
 			say_title(string.format(gameforge.main_quest_flame_lv99._430_say, 102))
-			--´ÙÀ½ ½ºÅ×ÀÌÆ®·Î
 			set_state (__COMPLETE__)
 			set_quest_state ("main_quest_flame_lv102", "state0")
 		end

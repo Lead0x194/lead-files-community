@@ -89,38 +89,31 @@ quest devilcatacomb_zone begin
 			local setting = devilcatacomb_zone.setting()
 			local idx = pc.get_map_index()
 			if idx >= (setting.map_idx * 10000) and idx < ((setting.map_idx + 1) * 10000) then
---				pc.set_warp_location(65, 5914, 992)         -----------아귀동굴 좌표로
 				local level = d.getf("level")
-				-- warp location이 0,0 이면 시스템 상으로, 종료 시, 종료 위치를 시작 위치로 저장한다.
 				d.set_warp_location (0, 0, 0)
 					
 				if level == 2 then
 					say(gameforge.devilcatacomb_zone._10_say)
 					say(string.format(gameforge.devilcatacomb_zone._20_say, 60))
 				elseif level == pc.getqf ("level") then
---					say ("낙오되지 않기 위해 동료들과 합류하십시오.")
 					say(gameforge.devilcatacomb_zone._30_say)
 				else
 					say(gameforge.devilcatacomb_zone._40_say)
---					say ("당신은 낙오되었습니다. 용신의 힘을 빌어 잠시 뒤 동굴 밖으로 이동합니다.")
 					timer ("devilcatacomb_ban_timer", 5)
 				end
 			end
 			if idx == setting.map_idx then
 				pc.setf("devilcatacomb_zone","last_exit_time", get_global_time())
-				-- 2층이상이면, 쫓겨나
 				if pc.get_x() < setting.floor1_s.x + setting.base.x
 					or pc.get_y() < setting.floor1_s.y + setting.base.y
 					or pc.get_x() > setting.floor1_e.x + setting.base.x
 					or pc.get_y() > setting.floor1_e.y + setting.base.y
 				then
-					-- 아귀동굴 입구로
 --					if not is_test_server() then
 						say(gameforge.devilcatacomb_zone._40_say)
 						timer ("devilcatacomb_ban_timer", 5)
 --					end
 				else 
-					-- 아귀동굴 입구로
 --					pc.set_warp_location(65, 5914, 992)
 					say(gameforge.devilcatacomb_zone._50_say)
 				end
@@ -172,10 +165,8 @@ quest devilcatacomb_zone begin
 			end
 		end
 	
-		-- 몬스터가 죽으면 발생하는 이벤트.
 		when kill begin
 			local setting = devilcatacomb_zone.setting()
-			-- 아귀동굴 1층이면 1% 확률로 금시건을 드랍한다.
 			if pc.get_x() > setting.floor1_s.x + setting.base.x
 					and pc.get_y() > setting.floor1_s.y + setting.base.y
 					and pc.get_x() < setting.floor1_e.x + setting.base.x
@@ -201,7 +192,6 @@ quest devilcatacomb_zone begin
 			end
 		end
 	end
-		-- 금시건을 나찰인증석에 드래그하면 2층으로 보낸다. 2층부터는 던전이다.
 		when devilcatacomb_credit_stone. take  begin
 			local setting = devilcatacomb_zone.setting()
 		
@@ -299,9 +289,6 @@ quest devilcatacomb_zone begin
 		return clear
 	end
 	
-		-- 현황석을 클릭하면 3층 진입 여부를 선택할 수 있고
-		-- 진입시 사신의증표를 검사한다.
-		-- 사신의 증표가 없다면 밖으로 워프된다.
 		when devilcatacomb_floor2_stone.click begin
 			local setting = devilcatacomb_zone.setting()
 			
@@ -363,8 +350,6 @@ quest devilcatacomb_zone begin
 
 		when devilcatacomb3_stone.kill begin
 			local setting = devilcatacomb_zone.setting()
-			-- 돌이 파괴되면 진짜가 죽었는지 확인해본다.
-			-- 진짜가 죽었으면 4층으로 이동한다.
 			if d.is_unique_dead("real") then
 				d.notice(gameforge.devilcatacomb_zone._280_dNotice)
 				
@@ -390,7 +375,6 @@ quest devilcatacomb_zone begin
 			d.spawn_mob (setting.floor4_npc, setting.floor4_npc_pos[1], setting.floor4_npc_pos[2])
 		end
 
-		-- devilcatacomb_floor4_stone는 클릭 시 4층에서 5층으로 이동시키는 npc이다.
 		when devilcatacomb_floor4_stone.click begin
 			local setting = devilcatacomb_zone.setting()
 			local n = number (1,5)
@@ -410,20 +394,16 @@ quest devilcatacomb_zone begin
 			d.spawn_mob (setting.floor5_stone, setting.floor5_stone_pos[1], setting.floor5_stone_pos[2])
 		end
 		
-		-- 아귀왕(2591)이 죽으면 봉인해체석 드랍
 		when devilcatacomb_devil_king.kill begin
 			local setting = devilcatacomb_zone.setting()
 			game.drop_item (setting.unlock_stone, 1)
 		end
 
-		-- 사신금제비(30102)에 금제해체석봉을 드래그하면 모든 몬스터를 죽이고
-		-- 6층으로 이동하는 타이머를 동작시킨다.
 		when devilcatacomb_floor5_stone.take begin
 			local setting = devilcatacomb_zone.setting()
 			if item.vnum == setting.unlock_stone then
 				item.remove ()
 				d.notice(gameforge.devilcatacomb_zone._310_dNotice)
-				-- 6층으로 이동
 				d.clear_regen()
 				d.purge()
 				timer("devilcatacomb_floor6_timer",2)
@@ -440,17 +420,10 @@ quest devilcatacomb_zone begin
 			timer("warp_timer",3)
 		end
 		
-		-- 아걸(2597)이 죽으면, 6층의 타이머1이 동작한다.
 		when devilcatacomb_devil_great_king.kill begin
 			server_timer ("floor6_eli_check_timer_1", 5,d.get_map_index())
 		end
 
-		-- 6층의 타이머1은 던전의 모든 몬스터 숫자를 보고,
-		-- 0이면 7층으로 워프하는 타이머를 동작한다.
-		-- 바로 7층으로 가지 않는 이유는, 유저에게 준비할 시간을 주기 위해서이다.
-		-- 1이면 타이머2를 동작시킨다.
-		-- 타이머1을 recursive하게 동작시키지 않은 것은,
-		-- 그럴 경우 reset한 타이머1이 동작하지 않았기 때문이다.
 		when floor6_eli_check_timer_1.server_timer begin
 			if d.select(get_server_timer_arg()) then
 				if d.count_monster() == 0 then
@@ -498,15 +471,10 @@ quest devilcatacomb_zone begin
 			end
 		end
 
-		-- 6층과 마찬가지로 사마휘(2598)이 죽으면
-		-- 7층의 타이머가 작동한다.
 		when devilcatacomb_devil_emperor.kill begin
 			server_timer ("floor7_eli_check_timer_1", 5, d.get_map_index())
 		end
 		
-		-- 7층의 타이머는 6층 타이머와 비슷하며,
-		-- 몬스터 숫자가 0이면 exit 타이머를 발생시킨다.
-		-- 바로 exit하지 않는 이유는, 유저들에게 준비할 시간을 주기 위해서이다.
 		when floor7_eli_check_timer_1.server_timer begin
 			if d.select(get_server_timer_arg()) then
 				if d.count_monster() == 0 then

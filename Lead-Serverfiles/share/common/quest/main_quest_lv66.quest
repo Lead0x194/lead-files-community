@@ -88,17 +88,16 @@ quest main_quest_lv66 begin
 			say(gameforge.main_quest_lv66._120_say)
 			wait()
 			
-			--say_title ("보상 :")
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 5800000))
 			say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(72301).." ".."3"..locale.count_postfix))
 			say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(30046)))
 
 			pc.give_exp2(5800000)
 			
-			pc.give_item2(72301) -- 축복의 서 * 3
+			pc.give_item2(72301)
 			pc.give_item2(72301) 
 			pc.give_item2(72301) 
-			pc.give_item2(30046) -- 전갈의 꼬리
+			pc.give_item2(30046)
 			
 			set_state (state_4)
 		end
@@ -285,9 +284,9 @@ quest main_quest_lv66 begin
 				pc.give_exp2(2900000)
 				pc.change_money(200000)
 				
-				pc.give_item2(30033) -- 깨진 사기그릇
-				pc.give_item2(50727, 10) -- 만병초 10
-				pc.give_item2(50728, 10) -- 산뽕나무 10
+				pc.give_item2(30033)
+				pc.give_item2(50727, 10)
+				pc.give_item2(50728, 10)
 
 			else
 			
@@ -307,8 +306,8 @@ quest main_quest_lv66 begin
 				pc.give_exp2(2000000)
 				pc.change_money(100000)
 				
-				pc.give_item2(50727, 10) -- 만병초 10
-				pc.give_item2(50728, 10) -- 산뽕나무 10
+				pc.give_item2(50727, 10)
+				pc.give_item2(50728, 10)
 				
 			end
 			set_state (state_10)

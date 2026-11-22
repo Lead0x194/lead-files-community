@@ -1,6 +1,5 @@
 quest spider_dungeon_3floor_boss begin
 	state start begin
-	--2, 던전 끝 시간.
 		when spider_end_timer.server_timer with game.get_event_flag("spider_dead"..get_channel_id()) == 0 begin  --
 			warp_all_in_area_to_area(82700, 612700, 93700,625700, 69100, 614800, 69100, 614800)
 			game.set_event_flag("spider_lair_ongoing_"..get_channel_id(),0)
@@ -27,7 +26,7 @@ quest spider_dungeon_3floor_boss begin
 	end
 
 	state step1 begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin   --테스트용
+		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
 			set_state(start)
 			say(gameforge.spider_dungeon_3floor_boss._40_say)
 		end
@@ -36,7 +35,7 @@ quest spider_dungeon_3floor_boss begin
 			say(gameforge.spider_dungeon_3floor_boss._20_say)
 		end
 		
-		when 20355.chat.gameforge.spider_dungeon_3floor_boss._50_npcChat begin   --경비대장에게 말을 걸어 퀘스트를 시작한다.
+		when 20355.chat.gameforge.spider_dungeon_3floor_boss._50_npcChat begin
 			
 			say_title(mob_name(20355)) 
 			----"12345678901234567890123456789012345678901234567890"|
@@ -46,13 +45,12 @@ quest spider_dungeon_3floor_boss begin
 		end
 	end
 
-	state step2 begin --비석에 탁본을 뜨러 가야한다.
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin   --테스트용
+	state step2 begin
+		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
 			set_state(start)
 			say(gameforge.spider_dungeon_3floor_boss._40_say)
 		end
 		
-		-----------퀘스트편지2------------
 		when letter begin
 			send_letter(gameforge.spider_dungeon_3floor_boss._70_sendLetter)
 
@@ -91,8 +89,8 @@ quest spider_dungeon_3floor_boss begin
 		
 	end
 
-	state step3 begin --탁본을 떴으니 경비에게 돌아간다.
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin   --테스트용
+	state step3 begin
+		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
 			set_state(start)
 			say(gameforge.spider_dungeon_3floor_boss._40_say)
 		end
@@ -104,7 +102,6 @@ quest spider_dungeon_3floor_boss begin
 		when letter begin
 			send_letter(gameforge.spider_dungeon_3floor_boss._110_sendLetter)
 
-			--경비대장을 가리킨다.
 			local v = find_npc_by_vnum(20355)
 			if 0 != v then
 			    target.vid("__TARGET__", v, mob_name(20355))
@@ -117,7 +114,6 @@ quest spider_dungeon_3floor_boss begin
 			say("")
 		end
 		
-		--을두지를 선택하면 해당 퀘스트에 관련된 대화를 나눌 수 있다.
 		when 20355.chat.gameforge.spider_dungeon_3floor_boss._110_sendLetter begin
 			say_title(mob_name(20355))
 			say(gameforge.spider_dungeon_3floor_boss._130_say)
@@ -126,8 +122,8 @@ quest spider_dungeon_3floor_boss begin
 		
 	end
 		
-	state step4 begin  --을두지에게 탁본을 맡기자.
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin   --테스트용
+	state step4 begin
+		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
 			set_state(start)
 			say(gameforge.spider_dungeon_3floor_boss._40_say)
 		end
@@ -136,11 +132,9 @@ quest spider_dungeon_3floor_boss begin
 			say(gameforge.spider_dungeon_3floor_boss._20_say)
 		end
 		
-		-----------퀘스트편지2------------
 		when letter begin
 			send_letter(gameforge.spider_dungeon_3floor_boss._110_sendLetter)
 
-			-- 을두지를 가리킨다.
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
 			    target.vid("__TARGET__", v, mob_name(20011))
@@ -169,8 +163,8 @@ quest spider_dungeon_3floor_boss begin
 		end
 	end
 
-	state step5 begin  --경비한테 편지 배달
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin   --테스트용
+	state step5 begin
+		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
 			set_state(start)
 			say(gameforge.spider_dungeon_3floor_boss._40_say)
 		end
@@ -182,7 +176,6 @@ quest spider_dungeon_3floor_boss begin
 		when letter begin
 			send_letter(gameforge.spider_dungeon_3floor_boss._110_sendLetter)
 
-			-- 을두지를 가리킨다.
 			local v = find_npc_by_vnum(20355)
 			if 0 != v then
 			    target.vid("__TARGET__", v, mob_name(20355))
@@ -213,8 +206,8 @@ quest spider_dungeon_3floor_boss begin
 		
 	end
 
-	state step6 begin --경비는 나만 일시킨다. 을두지와 상의하자.
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin   --테스트용
+	state step6 begin
+		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
 			set_state(start)
 			say(gameforge.spider_dungeon_3floor_boss._40_say)
 		end
@@ -226,7 +219,6 @@ quest spider_dungeon_3floor_boss begin
 		when letter begin
 			send_letter(gameforge.spider_dungeon_3floor_boss._190_npcChat)
 			
-			-- 을두지를 가리킨다.
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
 			    target.vid("__TARGET__", v, mob_name(20011))
@@ -239,7 +231,6 @@ quest spider_dungeon_3floor_boss begin
 			say("")
 		end
 
-		--을두지를 선택하면 해당 퀘스트에 관련된 대화를 나눌 수 있다.
 		when 20011.chat.gameforge.spider_dungeon_3floor_boss._190_npcChat begin
 			target.delete("__TARGET__")
 			say_title(mob_name(20011))
@@ -251,8 +242,8 @@ quest spider_dungeon_3floor_boss begin
 		
 	end
 
-	state boss_ok begin  -- 열쇠를 만들수 있게 된 최종상태. 이제부터 거미굴 보스룸에 입장할 수 있다.
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin   --테스트용
+	state boss_ok begin
+		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
 			set_state(start)
 			say(gameforge.spider_dungeon_3floor_boss._40_say)
 		end
@@ -293,7 +284,7 @@ quest spider_dungeon_3floor_boss begin
 			    if party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) then
 			    
 			        if  starttime +  300 >= current_time  and party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) and game.get_event_flag("spider_lair_ongoing_"..get_channel_id()) == 1 then
-			            say(gameforge.spider_dungeon_3floor_boss._300_say) -- 테스트용
+			            say(gameforge.spider_dungeon_3floor_boss._300_say)
 			            local warp =  select(locale.confirm,locale.cancel)
 			            if warp == 1 then
 			                pc.setqf("firstIn",1)
@@ -303,7 +294,7 @@ quest spider_dungeon_3floor_boss begin
 			                return
 			            end
 			        else
-			            say(gameforge.spider_dungeon_3floor_boss._310_say) -- 테스트용
+			            say(gameforge.spider_dungeon_3floor_boss._310_say)
 			            return
 			        end
 			    else
@@ -342,7 +333,6 @@ quest spider_dungeon_3floor_boss begin
 			            
 			            mob.spawn(2094,369,551,0,0)
 			            
-			            --값 설정.
 			            game.set_event_flag("spider_lair_ongoing_"..get_channel_id()		,			1)
 			            game.set_event_flag("spider_lair_start_time_"..get_channel_id()	, get_global_time())
 			            game.set_event_flag("spider_lair_end_time_"..get_channel_id()		, get_global_time() + 1200)
@@ -362,7 +352,7 @@ quest spider_dungeon_3floor_boss begin
 			        say(gameforge.spider_dungeon_3floor_boss._380_say)
 			        return
 			    end
-			else --리더 아니다.
+			else
 			    say(gameforge.spider_dungeon_3floor_boss._390_say)
 			    return
 			end
@@ -373,7 +363,7 @@ quest spider_dungeon_3floor_boss begin
 	end
 
 	state inLair begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin   --테스트용
+		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
 			set_state(start)
 			say(gameforge.spider_dungeon_3floor_boss._40_say)
 		end
@@ -381,14 +371,13 @@ quest spider_dungeon_3floor_boss begin
 
 
 		when login  begin 
-			-- 정상적으로 보스룸에 입장. 
 			--if pc.getqf("firstIn") == 1  and party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) then
 			if get_global_time() < pc.getqf("retry_limit_time") -  3600 and party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) then
 				pc.setqf("firstIn",0)
 			elseif pc.getx() >= 827 and pc.getx() <= 937 and pc.gety() >= 6127 and  pc.gety() <= 6257 then 
 				pc.warp(95900,571000)
 				pc.remove_item(30327, 1)
-			else -- 위에서 팅겨낸 유저가 밖에서 로그인 하게 되면, 접근 제한 시간을 셋팅해줌.
+			else
 				pc.remove_item(30327, 1)
 			    set_state( boss_ok )
 			    local limit = pc.getqf("retry_limit_time")
@@ -409,7 +398,7 @@ quest spider_dungeon_3floor_boss begin
 			    
 			    if party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) then
 			        if  starttime +  300 >= current_time  and party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) and game.get_event_flag("spider_lair_ongoing_"..get_channel_id()) == 1 then
-			            say(gameforge.spider_dungeon_3floor_boss._300_say) -- 테스트용
+			            say(gameforge.spider_dungeon_3floor_boss._300_say)
 			            local warp =  select(locale.confirm,locale.cancel)
 			            if warp == 1 then
 			                pc.warp(88100,614800)
@@ -420,14 +409,14 @@ quest spider_dungeon_3floor_boss begin
 			end
 		end
  
-		when 2092.kill begin --대왕거미 죽임
+		when 2092.kill begin
 			server_timer("spider_dead_timer", 180)
 			game.set_event_flag("spider_dead"..get_channel_id(), 1)
 			notice_multiline(gameforge.spider_dungeon_3floor_boss._400_say,notice_in_map)
 		end
 		
 		
-		when 2095.kill begin --거미알 죽임
+		when 2095.kill begin
 			local kingVid = game.get_event_flag("king_vid")
 			local remain_egg = game.get_event_flag("remain_egg"..get_channel_id())
 			notice_multiline(gameforge.spider_dungeon_3floor_boss._420_notice,notice_in_map)
@@ -437,17 +426,13 @@ quest spider_dungeon_3floor_boss begin
 			    game.set_event_flag("remain_egg"..get_channel_id(), remain_egg)
 			end
 			
-			--거미의 공격력 보정
 			 npc.set_vid_attack_mul(kingVid, 10/(remain_egg + 1))
 			 
-			 --거미가 받는 피해량 보정
 			 npc.set_vid_damage_mul(kingVid, 10/(remain_egg + 1))
 		end
 		
 		
-		--  2012.4.5 이상현 리젠위치 수정
 		when 30327.use with pc.getx() >= 827 and pc.get_map_index() == 217 and pc.getx() <= 937 and pc.gety() >= 6127 and  pc.gety() <= 6257 begin
-			--say("맵번호 : "..pc.get_map_index())
 			pc.remove_item(30327, 1)
 			i = mob.spawn(2095,400,566,0,0)
 			mob.spawn(2095,400,594,0,0)

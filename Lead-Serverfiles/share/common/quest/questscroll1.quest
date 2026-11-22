@@ -22,7 +22,6 @@ quest questscroll1 begin
 		    pc.setqf("target", mob_vnum(table[4]))
 		    q.set_title(table[3])
 		    q.set_counter(table[4],table[5])
-		    --q.set_clock("남은 시간", 24*60*60)
 		    --loop_timer("timeupdate", 3)
 		    q.start()
 		    pc.setqf("timer", 24*60*60)
@@ -38,14 +37,12 @@ quest questscroll1 begin
 		    pc.setqf("count", table[5])
 		    q.set_title(table[3])
 		    q.set_counter(table[4],table[5])
-		    --q.set_clock("남은 시간", 24*60*60)
 		    --loop_timer("timeupdate", 3)
 		    q.start()
 		    pc.setqf("timer", 24*60*60)
 		    setstate(kill_another_empire)
 		    item.remove()
 		else
-		    -- 이상한 아이템
 		    item.remove()
 		end
 	    end

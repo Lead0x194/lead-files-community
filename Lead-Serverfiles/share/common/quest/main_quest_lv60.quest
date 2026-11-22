@@ -1,9 +1,6 @@
 define acient_rubbing 31001
 define acient_doc 31002
 ----------------------------------
---	메인퀘스트 LV60
---  의외의 단서 : 을두지와 흑암국
---  2011.11.24 김용욱
 ----------------------------------
 quest main_quest_lv60 begin
 	state start begin
@@ -21,17 +18,16 @@ quest main_quest_lv60 begin
 	end
 
 	state quest1_begin begin
-		when letter begin    --퀘스트편지1
+		when letter begin
 			send_letter(gameforge.main_quest_lv60._10_sendLetter)
 			
-			-- 을두지를 가리킨다.
 			local vid_20011 = find_npc_by_vnum(20011)
 			if 0 != vid_20011 then
 				target.vid("__TARGET__", vid_20011, mob_name(20011))
 			end
 		end
 
-		when button or info begin  -- 퀘스트편지1 내용
+		when button or info begin
 			say_title(gameforge.main_quest_lv60._10_sendLetter)
 			
 			----"12345678901234567890123456789012345678901234567890"|
@@ -62,11 +58,9 @@ quest main_quest_lv60 begin
 	end
 
 	state quest2_begin begin
-		-----------퀘스트편지2------------
 		when letter begin
 			send_letter(gameforge.main_quest_lv60._60_sendLetter)
 
-			-- 을두지를 가리킨다.
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(20011))
@@ -105,12 +99,10 @@ quest main_quest_lv60 begin
 		end
 	end
 	
-	state quest2_ongoing begin --을두지와 대화하고 탁본을 받아오라는 미션을 받았다.
-		-----------퀘스트편지2------------
+	state quest2_ongoing begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv60._60_sendLetter)
 
-			-- 흑암국의 고대 비석을 가리킨다. (지금은 마을 npc를 가리킨다.)
 			local v = find_npc_by_vnum(20371)
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(20371))
@@ -123,14 +115,12 @@ quest main_quest_lv60 begin
 			say("")
 		end
 		
-		--을두지를 선택하면 해당 퀘스트에 관련된 대화를 나눌 수 있다.
 		when 20011.gameforge.main_quest_lv60._60_sendLetter begin
 			say_title(mob_name(20011))
 			say(gameforge.main_quest_lv60._130_say)
 			say("")
 		end
 		
-		--흑암국의 고대 비석을 누르면. 
 		when 20371.click begin
 			target.delete("__TARGET__")
 			say_reward(gameforge.main_quest_lv60._140_sayReward)
@@ -141,13 +131,10 @@ quest main_quest_lv60 begin
 		end
 	end
 		
-	--고대 비석의 탁본을 얻었다.
 	state quest2_end begin
-		-----------퀘스트편지2------------
 		when letter begin
 			send_letter(gameforge.main_quest_lv60._60_sendLetter)
 
-			-- 을두지를 가리킨다.
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(20011))
@@ -187,14 +174,12 @@ quest main_quest_lv60 begin
 			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(50725).." ".."10"..locale.count_postfix))
 			say("")
 			
-			-- 보상 지급 -- 
-			-- 이곳에 보상 지급을 구현한다.
 			pc.give_exp2(980000)
 			pc.change_money(175000)
 			
-			pc.give_item2(71001, 10) -- 주안술서
-			pc.give_item2(50721, 10) -- 복숭아꽃
-			pc.give_item2(50725, 10) -- 석창포
+			pc.give_item2(71001, 10)
+			pc.give_item2(50721, 10)
+			pc.give_item2(50725, 10)
 			
 			
 			
@@ -204,11 +189,9 @@ quest main_quest_lv60 begin
 	end
 	
 	state quest3_begin begin
-		-------퀘스트편지3---------
 		when letter begin
 			send_letter(gameforge.main_quest_lv60._220_sendLetter)
 
-			-- 을두지를 가리킨다.
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(20011))
@@ -233,11 +216,9 @@ quest main_quest_lv60 begin
 	end
 	
 	state quest3_ongoing1 begin
-		-------퀘스트편지3---------
 		when letter begin
 			send_letter(gameforge.main_quest_lv60._220_sendLetter)
 
-			-- 흑적귀목의 위치를 표시한다.--
 			--------------------------------
 			--------------------------------
 		end
@@ -248,33 +229,27 @@ quest main_quest_lv60 begin
 			say("")
 		end
 
-		--을두지를 선택하면 해당 퀘스트에 관련된 대화를 나눌 수 있다.
 		when 20011.chat.gameforge.main_quest_lv60._220_sendLetter begin
 			say_title(mob_name(20011))
 			say(gameforge.main_quest_lv60._260_say)
 			say("")
 		end
 		
-		--흑적귀목을 잡았을때 1000분의 1 확률로 퀘스트 조건을 만족시켜 준다.
 		when 2305.kill begin
 			if	number (1,100) == 1 then	
 				pc.give_item2 (acient_doc, 1 )	
 				say_reward(gameforge.main_quest_lv60._270_sayReward)
 				say("")
 				
-				--3.진행
 				set_state (quest3_end1)
 			end
 		end
 	end
 	
-	-- 고대문서를 하나 얻었다. 을두지에게 가져다줘야한다.
 	state quest3_end1 begin
-		-------퀘스트편지3---------
 		when letter begin
 			send_letter(gameforge.main_quest_lv60._220_sendLetter)
 
-			-- 을두지를 가리킨다.
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(20011))
@@ -295,8 +270,6 @@ quest main_quest_lv60 begin
 			say("")
 			wait()
 			
-			--@@@@@@@@@버그@@@@@@@@@@--
-			--1. 다음의 내용이 뜨지 않는다.
 			say_title(mob_name(20011))
 			----"12345678901234567890123456789012345678901234567890"|
 			pc.remove_item (acient_doc, 1 )	
@@ -309,19 +282,14 @@ quest main_quest_lv60 begin
 	end
 	
 	state quest3_ongoing2 begin
-		--이 상태에 처음 들어오게 되면 '남은 고대의 문서' 퀘스트 플래그를 생성한다.
-		-- 초기값은 9로 시작해서 몬스터를 잡을때마다 1씩 줄여 0까지 간다.
-		-- 0이 되면 퀘스트 스테이트를 변화시킨다.
 		when enter begin
 			pc.setqf("remain_item",9)
 		end
 		
 		--*************************--
-		-------퀘스트편지3_1---------
 		when letter begin
 			send_letter(gameforge.main_quest_lv60._220_sendLetter)
 
-			-- 흑적귀목의 위치를 표시한다.--
 			--------------------------------
 			--------------------------------
 		end
@@ -336,7 +304,6 @@ quest main_quest_lv60 begin
 		
 
 		
-		--흑적귀목을 잡았을때 1000분의 1 확률로 남은 고대 문서 수를 줄여준다.
 		when 2305.kill begin
 			if	number (1,100) == 1 then
 				local remain_item_prev =  pc.getqf("remain_item")
@@ -345,9 +312,7 @@ quest main_quest_lv60 begin
 				pc.give_item2 (acient_doc, 1 )	
 				notice(string.format(gameforge.main_quest_lv60._300_say,pc.getqf("remain_item")))
 				
-				-- 모든 문서를 다 얻었으면 다음 퀘스트로 넘어간다.
 				if pc.getqf("remain_item")==0 then
-					-- 흑적귀목의 위치 표시를 없애준다 --
 					-------------------------------------
 					-------------------------------------
 					set_state (quest3_end2)
@@ -358,11 +323,9 @@ quest main_quest_lv60 begin
 	
 	state quest3_end2 begin
 		--*************************--
-		-------퀘스트편지3_1---------
 		when letter begin
 			send_letter(gameforge.main_quest_lv60._220_sendLetter)
 
-			-- 을두지를 가리킨다.
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(20011))
@@ -407,12 +370,11 @@ quest main_quest_lv60 begin
 			say("")
 			
 			
-			-- 보상 지급 -- 
 			pc.give_exp2(3300000)
 			
-			pc.give_item2(71094, 3) -- 선인의 교훈 * 3
-			pc.give_item2(30056) -- 거미줄
-			pc.give_item2(30025) -- 거미의 독주머니
+			pc.give_item2(71094, 3)
+			pc.give_item2(30056)
+			pc.give_item2(30025)
 			
 			set_state (quest4_begin)
 		end	
@@ -420,11 +382,9 @@ quest main_quest_lv60 begin
 	
 	state quest4_begin begin
 		--*************************--
-		-------퀘스트편지4-----------
 		when letter begin
 			send_letter(gameforge.main_quest_lv60._340_sendLetter)
 
-			-- 을두지를 가리킨다.
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(20011))
@@ -475,8 +435,6 @@ quest main_quest_lv60 begin
 			say_reward(gameforge.main_quest_lv60._410_sayReward)
 			say("")
 			
-			--@@@ 버그 @@@--
-			--1. 퀘스트 편지가 새로 나타난다.
 			clear_letter()
 			set_quest_state ("main_quest_lv66", "state_0")
 			set_state (__COMPLETE__)

@@ -119,16 +119,16 @@ end
 			-- The following stuff would need loca keys, Mind the correlation of values ("select" seems to only take strings...)
 		  local MainMenuList = 
 		  	{
-		  		"Ziele Wählen",
-		  		"Menge Wählen",
-		  		"Zeit Wählen",
+		  		"Ziele WÃ¤hlen",
+		  		"Menge WÃ¤hlen",
+		  		"Zeit WÃ¤hlen",
 		  		"Herausforderung Starten",
 		  		"Abbruch",
 		  	}
 		  local TargetMenuList =
 		  	{
 		  		"Wildhunde",
-		  		"Wölfe",
+		  		"WÃ¶lfe",
 		  		"Tiger",
 		  	}
 		  local AmountMenuList =
@@ -224,7 +224,7 @@ end
 						end
 					else
 					say_title("Herausforderung")
-					say("Du hast noch nicht alle Parameter ausgewählt.")
+					say("Du hast noch nicht alle Parameter ausgewÃ¤hlt.")
 					-- drops back to main menu here
 					end
 				end
@@ -343,7 +343,7 @@ state start_quest begin
 		when enter or login begin
 			pc.setqf("cooldown_timestamp", get_time())
 			notice("Herausforderung erfolgreich abgeschlossen!")      
-			notice(string.format("Du erhälst %s Yang und %s XP", pc.getqf("RewardYang"),pc.getqf("RewardXP")))
+			notice(string.format("Du erhÃ¤lst %s Yang und %s XP", pc.getqf("RewardYang"),pc.getqf("RewardXP")))
 			pc.change_money(pc.getqf("RewardYang"))
 			pc.give_exp2(pc.getqf("RewardXP"))
 			set_state(menu)

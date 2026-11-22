@@ -31,7 +31,7 @@ quest flame_dungeon begin
 		},
 		["doors_dir"] = {135,90,210,152,90,223},
 		["idoors_dir"] = {135,90,210,135,90,239},
-		["dungeon_entry_pos"] = {7762, 6739},-- 던전에 처음 들어오는 곳
+		["dungeon_entry_pos"] = {7762, 6739},
 		["DUNGEON_MAN_bpos"] = {690,722},
 		["DUNGEON_MAN_pos"] = {354,362},
 		["LEVEL2_STONE_pos"] = {195,352},
@@ -46,15 +46,15 @@ quest flame_dungeon begin
 				{500, 354}
 		},
 		["LEVEL6_TARGET_pos"] = {511,480},
-		["outside_entry_pos"] = {6142,7068}, --입장시켜주는애 서있는 곳
-		["YAK_pos"] = {376, 397} -- 약환 부하
+		["outside_entry_pos"] = {6142,7068},
+		["YAK_pos"] = {376, 397}
 		
 		}
 	end
-	function is_flamed(idx) -- 적룡성에 있는지 확인 
+	function is_flamed(idx)
 		return idx >= 351 * 10000 and idx < (351 + 1) *10000
 	end
-	function make_dungeon() -- 던전 만들기
+	function make_dungeon()
 		local setting = flame_dungeon.setting()
 		d.new_jump_party(351, setting.dungeon_entry_pos[1], setting.dungeon_entry_pos[2])
 		-- d.spawn_mob_ac_dir(20385, setting.DUNGEON_MAN_pos[1], setting.DUNGEON_MAN_pos[2],0)
@@ -69,16 +69,15 @@ quest flame_dungeon begin
 		end
 		d.setf("clear_count",0)
 		d.setf("started",0)
-		d.setf("dungeon_enter",0) -- 정상적으로 입장했는지? // 비정상 : 0 정상 : 1 // 튕기면 입장제한시간을 기록 안함
+		d.setf("dungeon_enter",0)
 	end	
-	function go_boss() -- 보스룸 가기 
+	function go_boss()
 		local setting = flame_dungeon.setting()
-		if pc.get_level() < 104 then --레벨확인
+		if pc.get_level() < 104 then
             -- syschat(gameforge.flame_dungeon._580_notice)
             say(gameforge.flame_dungeon._580_notice)
             return
 		else
-			--if pc.getf("main_quest_flame_lv103", "__status")==main_quest_flame_lv103.__COMPLETE__ then -- 선행퀘스트 확인
 				-- -- say_title(gameforge.flame_dungeon._010_say)
                 say(gameforge.flame_dungeon._010_say)
 				local warp = select(gameforge.flame_dungeon._020_select,gameforge.flame_dungeon._030_select)
@@ -96,12 +95,12 @@ quest flame_dungeon begin
 			-- end
 		end
 	end
-	function level_clear() -- 레벨 깼을때, 리젠클리어, 지역클리어
+	function level_clear()
 		d.setf("level",0)
 		d.clear_regen()
-		d.purge_area(750000,620000,817400,689400) -- 맵전체 -- d.purge() 사용고려
+		d.purge_area(750000,620000,817400,689400)
 	end
-	function clear_timer(inx) -- 타이머 다지우기
+	function clear_timer(inx)
 		clear_server_timer ("flame_dungeon_0m_left_timer", inx)
 		clear_server_timer ("flame_dungeon_1m_left_timer", inx)
 		clear_server_timer ("flame_dungeon_5m_left_timer", inx)
@@ -119,15 +118,12 @@ quest flame_dungeon begin
 			local setting = flame_dungeon.setting()
 			if idx == 351 then
 				pc.warp(setting.outside_entry_pos[1]*100, setting.outside_entry_pos[2] * 100, 62)
-			elseif flame_dungeon.is_flamed(idx) then -- 던전 입장, 보스룸 입장 예외
+			elseif flame_dungeon.is_flamed(idx) then
 			------------------------------------------------------------------------------------------------------------------------------------------------------
-			--아래의 두줄중 위에줄을 사용하면 던전에서 종료했을경우 다시 원래 위치로 돌아온다. 아래줄을 활성화 하면 던전에서 종료했을 경우 던전 밖으로 나가게 된다.
-			--던전에서 종료했을 경우 다시 원래 위치로 돌아올 경우, 던전에서 나가는 방법을 만들어줘야 하기 때문에 적룡성비의 나가기란 옵션을 활성화 해줘야 한다.
 			------------------------------------------------------------------------------------------------------------------------------------------------------
-				-- pc.set_warp_location(0, 0 , 0) --튕겼을때 다시 돌아오게 만들어 주는 부분
-				pc.set_warp_location(62, setting.outside_entry_pos[1] , setting.outside_entry_pos[2]) -- 던전 나갔을 때 밖으로 튕기게함
+				pc.set_warp_location(62, setting.outside_entry_pos[1] , setting.outside_entry_pos[2])
 				local ticketGroup = {71095, 1, 71130, 1}
-				if d.getf("dungeon_enter") == 0 then -- 진행중이 아니면
+				if d.getf("dungeon_enter") == 0 then
 					local canPass = false
 					for i=1, table.getn(ticketGroup),2 do 
 						if pc.count_item(ticketGroup[i]) >= ticketGroup[i+1] then
@@ -136,7 +132,7 @@ quest flame_dungeon begin
 						end
 					end
 
-					if get_global_time() - pc.getf("flame_dungeon","exit_time") < 30 * 60 then -- 입장제한시간이 걸렸으면
+					if get_global_time() - pc.getf("flame_dungeon","exit_time") < 30 * 60 then
 						notice_multiline(gameforge.flame_dungeon._050_notice,d.notice)
 						say(gameforge.flame_dungeon._060_say)
 						timer("flame_dungeon_warp_timer", 5)
@@ -149,7 +145,7 @@ quest flame_dungeon begin
 						say(gameforge.flame_dungeon._100_say)
 						timer("flame_dungeon_warp_timer", 5)
 					end
-				elseif pc.getf("flame_dungeon","ticket_delete") == 0 then -- 진행중인데 티켓이 안지워졌을경우
+				elseif pc.getf("flame_dungeon","ticket_delete") == 0 then
 					
 					for i=1, table.getn(ticketGroup),2 do 
 						if pc.count_item(ticketGroup[i]) >= ticketGroup[i+1] then
@@ -170,8 +166,8 @@ quest flame_dungeon begin
 		when logout begin
 			local idx = pc.get_map_index()
 			if flame_dungeon.is_flamed(idx) then 
-				if d.getf("dungeon_enter") == 1 then -- 정상적인 던전 입장 후 로그아웃
-					pc.setf("flame_dungeon","exit_time",get_global_time()) -- 인스턴스 안에서의 마지막 시간을 기록, 근데 시간제한 때문에 or 그냥 튕긴거면 안기록
+				if d.getf("dungeon_enter") == 1 then
+					pc.setf("flame_dungeon","exit_time",get_global_time())
 				end
 				
 
@@ -181,21 +177,20 @@ quest flame_dungeon begin
 		
 			local setting = flame_dungeon.setting()
 			if party.is_party() then
-				-- 던전 도중 나갈 경우 재입장 가능하도록
 				local party_check = 0
 				if d.find(party.getf("dungeon_index")) then
 					party_check = (d.getf_from_map_index("party_leader_pid", party.getf("dungeon_index")) == party.get_leader_pid())
 				end
 				
 				if d.find(party.getf("dungeon_index")) and party_check then
-					if get_global_time() - pc.getf("flame_dungeon","exit_time") < 5 * 60 then -- 접종 이후 5분 내?
+					if get_global_time() - pc.getf("flame_dungeon","exit_time") < 5 * 60 then
 						local dungeon_level = d.getf_from_map_index("level", party.getf("dungeon_index"))
-						if dungeon_level == 17 then -- 보스
+						if dungeon_level == 17 then
 							pc.warp(setting.bossroom_entry_pos[1] * 100, setting.bossroom_entry_pos[2] * 100, party.getf("dungeon_index"))
 						else
 							pc.warp(setting.dungeon_entry_pos[1] * 100, setting.dungeon_entry_pos[2] * 100, party.getf("dungeon_index"))
 						end
-					else -- 5분 초과하여 재 입장 불가
+					else
 						say_title(mob_name(20394))
                         say(gameforge.flame_dungeon._590_say)
 					end
@@ -256,7 +251,6 @@ quest flame_dungeon begin
 							if party.is_map_member_flag_lt("exit_time", get_global_time() - 30 * 60 ) then
 								flame_dungeon.make_dungeon()
 							else
-								--say("test : 파티원의 입장 제한시간이 끝나지 않았습니다.")
 								say(gameforge.flame_dungeon._600_say)
 							end
 						end
@@ -271,26 +265,22 @@ quest flame_dungeon begin
 				say(gameforge.flame_dungeon._160_say)
 			end
 		end
-		-- when 20394.chat."Test : 리소스확인" with is_test_server() begin -- 테스트용
 			-- local setting = flame_dungeon.setting()
 			-- pc.setf("flame_dungeon","fdRtest",1)
 			-- pc.warp( setting.dungeon_entry_pos[1]*100, setting.dungeon_entry_pos[2]*100, 351)
 		-- end
 		
 		
-		when 20394.chat."TEST : Init time limit init" with is_test_server() begin -- 테스트용
+		when 20394.chat."TEST : Init time limit init" with is_test_server() begin
 			pc.setf("flame_dungeon","exit_time",get_global_time()-1800)
 			say("Done")
 		end
-		-- when 20385.chat."Test : 현재 상태" with is_test_server() begin -- 테스트용
-			-- say("남은 몬스터 : "..d.count_monster())
 			-- say("level : "..d.getf("level"))
 			-- say("Dmap index : "..d.get_map_index())
 			-- say("Pmap index : "..pc.get_map_index())
 			-- say("access limit : "..pc.getf("flame_dungeon","exit_time"))
 			-- say("global time : "..get_global_time())
 			-- if flame_dungeon.is_flamed(d.get_map_index()) then
-				-- say("in dungeon") -- is_flamed 함수 체크
 			-- end
 			-- if d.is_unique_dead("stone1") then
 				-- say("stone1 is dead")
@@ -298,20 +288,14 @@ quest flame_dungeon begin
 				-- say("stone1 is not dead")
 			-- end
 		-- end
-		-- when 20385.chat."처음으로" begin -- 테스트용
-			-- say("초기화 합니다")
 			-- flame_dungeon.clear_timer(d.get_map_index())
 			-- flame_dungeon.make_dungeon()
 		-- end
-		when 20385.chat."Test : Boss Room" with is_test_server() begin -- 테스트용
+		when 20385.chat."Test : Boss Room" with is_test_server() begin
 			flame_dungeon.go_boss()
 		end
 		
-		-- < 시간 경과 타이머>
-		-- when 20385.chat."나가기" begin -- 던전에서 튕기지 않게 할 경우 활성화
 			-- local setting = flame_dungeon.setting()
-			-- say("밖으로 나가시겠습니까?")
-			-- local warp = select("확인","취소")
 			-- if warp == 1 then
 				-- pc.warp(setting.outside_entry_pos[1]*100, setting.outside_entry_pos[2] * 100, 62)
 			-- end
@@ -361,21 +345,17 @@ quest flame_dungeon begin
 		end	
 
 
-		-- <<<< 던전 진행>>>> --
-		when 20385.chat.gameforge.flame_dungeon._210_npcChat with npc.lock() begin -- '0x'는 x번째 레벨 퀘스트 받을 수 있는 상태 , '1x'는 x번째 레벨 퀘스트 진행중
+		when 20385.chat.gameforge.flame_dungeon._210_npcChat with npc.lock() begin
 			local setting = flame_dungeon.setting()
 			if d.getf("started") == 0 then
 				say(gameforge.flame_dungeon._230_say)
 				say(gameforge.flame_dungeon._240_say)
 				wait()
 				d.setf("started",1)
-				-- 파티원이 튕겨버렸는데 자기만 남아서 exit timer가 리셋되면 안되니깐 다음레벨을 눌렀을때를 시작할때로 봄
 				server_timer ("flame_dungeon_45m_left_timer",15*60, d.get_map_index())
 				notice_multiline(gameforge.flame_dungeon._250_notice,d.notice)
 				notice_multiline(gameforge.flame_dungeon._170_notice,d.notice)
 				
-				-- 통행증 관련된 처리
-				-- 입장 후에 티켓을 없앤 사람을 튕겨내기 위해서 타이머를 이용해 티켓을 제거한다.
 				local pids = {party.get_member_pids()}
 				local ticketGroup = {71095, 1, 71130, 1}
 				for i, pid in next, pids, nil do
@@ -397,17 +377,16 @@ quest flame_dungeon begin
 				d.setqf2("flame_dungeon","ticket_delete",1)
 				d.setf("dungeon_enter",1)
 				
-				-- 던전과 파티에 서로에 대한 정보를 저장한다.
 				party.setf("dungeon_index", d.get_map_index())
 				d.setf("party_leader_pid", party.get_leader_pid())
 			end
-			if d.getf("level") < 7 then --진행중이 아니면
-				if d.getf("clear_count") == 6 then -- 방 여섯개 했으면 보스방
+			if d.getf("level") < 7 then
+				if d.getf("clear_count") == 6 then
 					d.setf("level",7)
 				else
-					local rand = number(1,6)--랜덤에서 방문체크는 따로 배열없이 방의 문의 열려있는지로 체크함
+					local rand = number(1,6)
 					local setlev = 0
-					d.setf("level",7) -- 혹시 모를 문제가 생겨 레벨이 안잡힐경우를 대비해 보스룸으로 셋팅해둠
+					d.setf("level",7)
 					for i=1,50 do
 						setlev = setlev + 1
 						if setlev > 6 then
@@ -441,7 +420,7 @@ quest flame_dungeon begin
 						say(gameforge.flame_dungeon._300_say)
 						notice_multiline(gameforge.flame_dungeon._290_say,d.notice)
 						notice_multiline(gameforge.flame_dungeon._300_say,d.notice)
-						d.spawn_mob(20386, setting.LEVEL2_STONE_pos[1], setting.LEVEL2_STONE_pos[2]) -- 봉인석 소환
+						d.spawn_mob(20386, setting.LEVEL2_STONE_pos[1], setting.LEVEL2_STONE_pos[2])
 						d.kill_unique("door2")
 						d.kill_unique("idoor2")
 						d.set_regen_file ("data/dungeon/flame_dungeon/".."fd_b.txt")
@@ -466,7 +445,7 @@ quest flame_dungeon begin
 					d.kill_unique("door4")
 					d.kill_unique("idoor4")
 					d.set_regen_file ("data/dungeon/flame_dungeon/".."fd_d.txt")
-					d.spawn_mob(6051,setting.LEVEL4_TARGET_pos[1],setting.LEVEL4_TARGET_pos[2] ) -- 타겟몬스터 소한
+					d.spawn_mob(6051,setting.LEVEL4_TARGET_pos[1],setting.LEVEL4_TARGET_pos[2] )
 				elseif d.getf("level") == 14 then
 					say(gameforge.flame_dungeon._330_say)
 					say(gameforge.flame_dungeon._340_say)
@@ -483,7 +462,7 @@ quest flame_dungeon begin
 					for i=1,7 do
 						vis[i] = 0
 					end
-					for i = 1, 7 do -- 랜덤하게 돌소환
+					for i = 1, 7 do
 						local ran = number(1,7)
 						local st = 0
 						for j = 1, 50 do
@@ -510,7 +489,7 @@ quest flame_dungeon begin
 					d.kill_unique("door6")
 					d.kill_unique("idoor6")
 					d.set_regen_file ("data/dungeon/flame_dungeon/".."fd_f.txt")
-					d.spawn_mob(8057, setting.LEVEL6_TARGET_pos[1],setting.LEVEL6_TARGET_pos[2]) -- 타겟오브젝트 소환
+					d.spawn_mob(8057, setting.LEVEL6_TARGET_pos[1],setting.LEVEL6_TARGET_pos[2])
 				elseif d.getf("level") == 16 then
 					say(gameforge.flame_dungeon._390_say)
 					say(gameforge.flame_dungeon._400_say)
@@ -525,7 +504,7 @@ quest flame_dungeon begin
 	
 
 
-		when dungeon_end_timer.server_timer begin -- 종료 타이머 (끝나고 나가는거)
+		when dungeon_end_timer.server_timer begin
 			local setting = flame_dungeon.setting()
 			if d.select(get_server_timer_arg()) then
 				flame_dungeon.clear_timer(d.get_map_index())		
@@ -535,9 +514,9 @@ quest flame_dungeon begin
 			end
 		end
 
-		when killed_A_1.server_timer begin -- 타이머 돌리기1 (level1,level3)
+		when killed_A_1.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				if d.count_monster() <= 0 then -- 1레벨 몬스터 전멸시
+				if d.count_monster() <= 0 then
 					if d.getf("level") == 11 then
 						notice_multiline(gameforge.flame_dungeon._420_notice,d.notice)
 						notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
@@ -551,9 +530,9 @@ quest flame_dungeon begin
 				end
 			end
 		end
-		when killed_A_2.server_timer begin -- 타이머 돌리기2 (1과 2 번갈아가면서 돌아감)
+		when killed_A_2.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				if d.count_monster() <= 0 then -- 1레벨 몬스터 전멸시
+				if d.count_monster() <= 0 then
 					if d.getf("level") == 11 then
 						notice_multiline(gameforge.flame_dungeon._420_notice,d.notice)
 						notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
@@ -568,14 +547,14 @@ quest flame_dungeon begin
 			end
 		end
 
-		when kill with flame_dungeon.is_flamed(pc.get_map_index()) and d.getf("level") == 12 begin -- 2레벨 봉인석 열쇠 드랍
-			local i = number(1, 100) -- 100분의 1 확률로 열쇠드랍
+		when kill with flame_dungeon.is_flamed(pc.get_map_index()) and d.getf("level") == 12 begin
+			local i = number(1, 100)
 			if i == 1 then
 				game.drop_item (30329, 1)
 			end
 		end
-		when 20386.take with flame_dungeon.is_flamed(pc.get_map_index()) and item.vnum == 30329 and d.getf("level") == 12 begin -- 2레벨 열쇠 먹었을때
-			local i = number(1, 5) -- 5분의 1 확률로 진짜 열쇠
+		when 20386.take with flame_dungeon.is_flamed(pc.get_map_index()) and item.vnum == 30329 and d.getf("level") == 12 begin
+			local i = number(1, 5)
 			if i == 1 then
 				npc.purge()
 				item.remove()
@@ -594,24 +573,24 @@ quest flame_dungeon begin
 			flame_dungeon.level_clear()
 		end
 
-		when kill with flame_dungeon.is_flamed(pc.get_map_index()) and d.getf("level") == 15 begin -- 5레벨 봉인석 열쇠 드랍
-			local i = number(1, 30) -- 30분의 1 확률로 열쇠드랍
+		when kill with flame_dungeon.is_flamed(pc.get_map_index()) and d.getf("level") == 15 begin
+			local i = number(1, 30)
 			if i == 1 then
 				game.drop_item (30330, 1)
 			end
 		end
-		when 20386.take with flame_dungeon.is_flamed(d.get_map_index()) and item.vnum == 30330 and d.getf("level") == 15 begin -- 5레벨 진짜열쇠 먹었을때
+		when 20386.take with flame_dungeon.is_flamed(d.get_map_index()) and item.vnum == 30330 and d.getf("level") == 15 begin
 			local setting = flame_dungeon.setting()
-			if npc.get_vid() == d.get_unique_vid("stone5_1") then -- 첫번째 꺼는 선행되어야 할 일이 필요없으니 찾자마자 제거해줌
+			if npc.get_vid() == d.get_unique_vid("stone5_1") then
 				npc.purge()
 				item.remove()
 				say(gameforge.flame_dungeon._470_say)
-				d.setf("stonekill",2) -- 2번 돌을 죽여라
+				d.setf("stonekill",2)
 				if d.count_monster() < 100 then
 					d.regen_file ("data/dungeon/flame_dungeon/".."fd_e.txt")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_2") then 
-				if d.getf("stonekill") == 2 then -- 2번돌을 죽일 차롄데 2번돌에게 열쇠를 먹였을 때
+				if d.getf("stonekill") == 2 then
 					npc.purge()
 					item.remove()
 					say(gameforge.flame_dungeon._480_say)
@@ -622,7 +601,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("2번")
+			--		say("2쨔첩")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_3") then
 				if d.getf("stonekill") == 3 then
@@ -636,7 +615,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("3번")
+			--		say("3쨔첩")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_4") then
 				if d.getf("stonekill") == 4 then
@@ -650,7 +629,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-				--	say("4번")
+				--	say("4쨔첩")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_5") then
 				if d.getf("stonekill") == 5 then
@@ -664,7 +643,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("5번")
+			--		say("5쨔첩")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_6") then
 				if d.getf("stonekill") == 6 then
@@ -678,7 +657,7 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("6번")
+			--		say("6쨔첩")
 				end
 			else 
 				if d.getf("stonekill") == 7 then
@@ -690,24 +669,23 @@ quest flame_dungeon begin
 				else
 					item.remove()
 					say(gameforge.flame_dungeon._490_say)
-			--		say("7번")
+			--		say("7쨔첩")
 				end
 			end
 		end
 
-		when 8057.kill with flame_dungeon.is_flamed(d.get_map_index()) and d.getf("level") ==16 begin -- 망마석 파괴했을 때
+		when 8057.kill with flame_dungeon.is_flamed(d.get_map_index()) and d.getf("level") ==16 begin
 			notice_multiline(gameforge.flame_dungeon._540_notice,d.notice)
 			notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
 			flame_dungeon.level_clear()
 		end
 
-		when 6091.kill with flame_dungeon.is_flamed(d.get_map_index()) and d.getf("level") ==17 begin -- 보스 죽였을때
+		when 6091.kill with flame_dungeon.is_flamed(d.get_map_index()) and d.getf("level") ==17 begin
 			notice_multiline(gameforge.flame_dungeon._550_notice,d.notice)
 			notice_multiline(gameforge.flame_dungeon._560_notice,d.notice)
 			server_timer("dungeon_end_timer", 60,d.get_map_index())	
 			flame_dungeon.level_clear()
 			
-			-- 파티원 중, 야마천 잡는 퀘스트(104렙, 105렙 퀘스트) 진행중인 사람이 있으면 퀘스트 클리어 되도록.
 			if party.is_party() then
 				party.setf("flame_dungeon_boss_kill_count", 1)
 			end

@@ -76,7 +76,7 @@ quest new_quest_lv26 begin
 			say_title(gameforge.new_quest_lv26._034_say_title)
 			say(gameforge.new_quest_lv26._031_say) --EDIT by Arne 21Sept09, Reason - missing intro
 			say(gameforge.new_quest_lv26._032_say) -- white font text
-			-- heisst es nicht eigentlich "vor den Grauen des Krieges Geflüchtet"?
+			-- heisst es nicht eigentlich "vor den Grauen des Krieges GeflÃ¼chtet"?
 			q.done()
 			set_state(news_for_ahyu)
 		end

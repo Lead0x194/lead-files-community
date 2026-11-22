@@ -10,50 +10,50 @@ quest collect_quest_reset begin
 	end
 
 	state check_reset_able begin
-		when 20091.chat."º¸»óÀ» ´Ù½Ã ¹Ş°í ½Í´Ù°í?!" begin
+		when 20091.chat."ë³´ìƒì„ ë‹¤ì‹œ ë°›ê³  ì‹¶ë‹¤ê³ ?!" begin
 			---                                                   l
-			say("¹é¼±¾ÆÆò")
-			say("Áö³­¹ø¿¡ ¹Ş¾Ò´ø º¸»óÀ» ´Ù¸¥ °ÍÀ¸·Î ¹Ù²Ù°í ½Í´Ù°í?")
-			say("Èì....")
+			say("ë°±ì„ ì•„í‰")
+			say("ì§€ë‚œë²ˆì— ë°›ì•˜ë˜ ë³´ìƒì„ ë‹¤ë¥¸ ê²ƒìœ¼ë¡œ ë°”ê¾¸ê³  ì‹¶ë‹¤ê³ ?")
+			say("ÃˆÃ¬....")
 			say("")
 
 			wait()
 
 			if get_time() < pc.getqf("duration") then
-				say("¹é¼±¾ÆÆò")
-				say("¹ú½á ¿À´Ù´Ï..")
-				say("¼º°İ Âü ±ŞÇÏ±º..")
-				say("¾ÆÁ÷ ½Ã°£ÀÌ¾ÈµÇ¾ú¾î!")
+				say("ë°±ì„ ì•„í‰")
+				say("ë²Œì¨ ì˜¤ë‹¤ë‹ˆ..")
+				say("ì„±ê²© ì°¸ ê¸‰í•˜êµ°..")
+				say("ì•„ì§ ì‹œê°„ì´ì•ˆë˜ì—ˆì–´!")
 				return
 			end
-			say("¹é¼±¾ÆÆò")
-			say("»ç½Ç ¾È±×·¡µµ Ãµ¿ÁÀÌ ÇÊ¿äÇØ¼­")
-			say("ÀÚ³Ú ´Ù½Ã Ã£À¸·Á°í ÇÏ°í ÀÖ¾ú³×")
-			say("Áö³­¹ø¿¡ ±¸ÇØ¿Ô´ø º¸¼® ¸»°íµµ")
-			say("ÃµÀÇ µ¿±¼¿¡ °¡¸é Ãµ¿ÁÀ» ±¸ÇÒ¼ö ÀÖ´Ù°í ÇÏ³×")
-			say("±×°ÍÀ» 5°³¸¸ ±¸ÇØ´Ù ÁÖ°Ô³ª")
+			say("ë°±ì„ ì•„í‰")
+			say("ì‚¬ì‹¤ ì•ˆê·¸ë˜ë„ ì²œì˜¥ì´ í•„ìš”í•´ì„œ")
+			say("ìë„¬ ë‹¤ì‹œ ì°¾ìœ¼ë ¤ê³  í•˜ê³  ìˆì—ˆë„¤")
+			say("ì§€ë‚œë²ˆì— êµ¬í•´ì™”ë˜ ë³´ì„ ë§ê³ ë„")
+			say("ì²œì˜ ë™êµ´ì— ê°€ë©´ ì²œì˜¥ì„ êµ¬í• ìˆ˜ ìˆë‹¤ê³  í•˜ë„¤")
+			say("ê·¸ê²ƒì„ 5ê°œë§Œ êµ¬í•´ë‹¤ ì£¼ê²Œë‚˜")
 			say("")
 
 			wait()
 
-			say("¹é¼±¾ÆÆò")
-			say("Ãµ¿ÁÀ» 5°³ ±¸ÇØ¿À¸é")
-			say("Áö³­¹ø¿¡ ¹Ş¾Ò´ø º¸»óÁß ÇÑ°¡Áö¸¦")
-			say("´Ù¸¥ °ÍÀ¸·Î ¹Ù²ãÁÖµµ·Ï ÇÏ°Ú³×")
-			say("¾î¶²°¡?")
+			say("ë°±ì„ ì•„í‰")
+			say("ì²œì˜¥ì„ 5ê°œ êµ¬í•´ì˜¤ë©´")
+			say("ì§€ë‚œë²ˆì— ë°›ì•˜ë˜ ë³´ìƒì¤‘ í•œê°€ì§€ë¥¼")
+			say("ë‹¤ë¥¸ ê²ƒìœ¼ë¡œ ë°”ê¿”ì£¼ë„ë¡ í•˜ê² ë„¤")
+			say("ì–´ë–¤ê°€?")
 			say("")
 
-			local s = select("¾ó¸¥ ±¸ÇØ´Ù µå¸±²²¿ä", "»ı°¢ Á» ÇØº¸±¸¿ä")
+			local s = select("ì–¼ë¥¸ êµ¬í•´ë‹¤ ë“œë¦´ê»˜ìš”", "ìƒê° ì¢€ í•´ë³´êµ¬ìš”")
 
 			if s == 1 then
-				say("¹é¼±¾ÆÆò")
-				say("¾î¼­ ´Ù³à¿À°Ô³ª ±â´Ù¸®°í ÀÖ°Ú³×~")
+				say("ë°±ì„ ì•„í‰")
+				say("ì–´ì„œ ë‹¤ë…€ì˜¤ê²Œë‚˜ ê¸°ë‹¤ë¦¬ê³  ìˆê² ë„¤~")
 				say("")
 
 				set_state( find_jewel )
 			else
-				say("¹é¼±¾ÆÆò")
-				say("±×·¯°Ô³ª. ½É»ç¼÷°íÇØ¾ß ÇÒ°ÍÀÌ¾ß")
+				say("ë°±ì„ ì•„í‰")
+				say("ê·¸ëŸ¬ê²Œë‚˜. ì‹¬ì‚¬ìˆ™ê³ í•´ì•¼ í• ê²ƒì´ì•¼")
 				say("")
 			end
 		end
@@ -61,53 +61,53 @@ quest collect_quest_reset begin
 
 	state find_jewel begin
 		when letter begin
-			send_letter("¹é¼±ÀÇ Á¦¾È")
+			send_letter("ë°±ì„ ì˜ ì œì•ˆ")
 		end
 
 		when button or info begin
 			say("")
-			say("½Â·æ°î¿¡ ÀÖ´Â ¹é¼±¾ÆÆò¿¡°Ô")
-			say("Ãµ¿ÁÀ» °¡Á®´Ù ÁÖ°í º¸»óÀ» ¹Ù²ÙÀÚ")
+			say("ìŠ¹ë£¡ê³¡ì— ìˆëŠ” ë°±ì„ ì•„í‰ì—ê²Œ")
+			say("ì²œì˜¥ì„ ê°€ì ¸ë‹¤ ì£¼ê³  ë³´ìƒì„ ë°”ê¾¸ì")
 			say("")
 
 			say_item_vnum( 30254 )
 
-			say_reward("  ÇöÀç "..pc.getqf("collect_count").." °³¸¦ ¹é¼±¿¡°Ô ÁÖ¾ú½À´Ï´Ù")
+			say_reward("  í˜„ì¬ "..pc.getqf("collect_count").." ê°œë¥¼ ë°±ì„ ì—ê²Œ ì£¼ì—ˆìŠµë‹ˆë‹¤")
 			say("")
 		end
 
 		when 2401.kill or 2402.kill or 2403.kill or 2404.kill begin
 			if number(1, 500) <= 3 then
 				pc.give_item2(30254, 1)
-				send_letter("Ãµ¿ÁÀ» È¹µæÇÏ¿´½À´Ï´Ù")
+				send_letter("ì²œì˜¥ì„ íšë“í•˜ì˜€ìŠµë‹ˆë‹¤")
 			end
 		end
 
 		when 2411.kill or 2412.kill or 2413.kill or 2414.kill begin
 			if number(1, 500) <= 5 then
 				pc.give_item2(30254, 1)
-				send_letter("Ãµ¿ÁÀ» È¹µæÇÏ¿´½À´Ï´Ù")
+				send_letter("ì²œì˜¥ì„ íšë“í•˜ì˜€ìŠµë‹ˆë‹¤")
 			end
 		end
 
-		when 20091.chat."Ãµ¿ÁÀ» °¡Á®¿Â°Õ°¡?" with pc.count_item(30254) > 0 begin
+		when 20091.chat."ì²œì˜¥ì„ ê°€ì ¸ì˜¨ê²ê°€?" with pc.count_item(30254) > 0 begin
 			pc.remove_item( 30254 , 1 )
 
-			say("¹é¼±¾ÆÆò")
-			say("¾îµğº¸¼¼...")
+			say("ë°±ì„ ì•„í‰")
+			say("ì–´ë””ë³´ì„¸...")
 
 			setdelay(150)
 			say("..........")
 			resetdelay()
 
 			if number(1, 100) <= 20 then
-				say("ÀÌ°Ç °¡Â¥¾ß...")
-				say("´Ù½Ã Ã£¾Æº¸°Ô³ª")
+				say("ì´ê±´ ê°€ì§œì•¼...")
+				say("ë‹¤ì‹œ ì°¾ì•„ë³´ê²Œë‚˜")
 				say("")
 				return
 			end
 
-			say("Èì... ±×·¡ ÀÌ°Ç ºĞ¸í Ãµ¿ÁÀÌ¾ß")
+			say("í ... ê·¸ë˜ ì´ê±´ ë¶„ëª… ì²œì˜¥ì´ì•¼")
 			say("")
 
 			wait()
@@ -117,43 +117,43 @@ quest collect_quest_reset begin
 			if count < 5 then
 				pc.setqf( "collect_count", count )
 
-				say("¹é¼±¾ÆÆò")
-				say("ÀÌÁ¦ " .. 5-count .. " °³¸¸ ´õ ±¸ÇØ´Ù ÁÖ¸é µÇ³×")
-				say("¼ö°íÇØÁÖ°Ô³ª")
+				say("ë°±ì„ ì•„í‰")
+				say("ì´ì œ " .. 5-count .. " ê°œë§Œ ë” êµ¬í•´ë‹¤ ì£¼ë©´ ë˜ë„¤")
+				say("ìˆ˜ê³ í•´ì£¼ê²Œë‚˜")
 				say("")
 				return
 			end
 			
-			say("¹é¼±¾ÆÆò")
-			say("¾à¼Ó´ë·Î ÀÚ³×¿¡°Ô Áá´ø º¸»óÀ» ´Ù¸¥ °ÍÀ¸·Î ¹Ù²ã ÁÖ°Ú³×")
+			say("ë°±ì„ ì•„í‰")
+			say("ì•½ì†ëŒ€ë¡œ ìë„¤ì—ê²Œ ì¤¬ë˜ ë³´ìƒì„ ë‹¤ë¥¸ ê²ƒìœ¼ë¡œ ë°”ê¿” ì£¼ê² ë„¤")
 			say("")
 
 			local selTab = {}
 			local pos = 1 
 
 			if tostring(get_quest_state("collect_quest_lv92")) == "557528158" then
-				table.insert(selTab, pos, "È«ÃµÀÇº¸¼® º¸»ó")
+				table.insert(selTab, pos, "í™ì²œì˜ë³´ì„ ë³´ìƒ")
 				pos = pos + 1
 			end
 
 			if tostring(get_quest_state("collect_quest_lv94")) == "557528158" then
-				table.insert(selTab, pos, "¹éÃµÀÇº¸¼® º¸»ó")
+				table.insert(selTab, pos, "ë°±ì²œì˜ë³´ì„ ë³´ìƒ")
 				pos = pos + 1
 			end
 
 			if tostring(get_quest_state("collect_quest_lv96")) == "557528158" then
-				table.insert(selTab, pos, "Ã»ÃµÀÇº¸¼® º¸»ó")
+				table.insert(selTab, pos, "ì²­ì²œì˜ë³´ì„ ë³´ìƒ")
 				pos = pos + 1
 			end
 
 			local s = select_table( selTab )
 
-			if selTab[s] == "lv92 È«ÃµÀÇº¸¼® º¸»ó" then
+			if selTab[s] == "lv92 í™ì²œì˜ë³´ì„ ë³´ìƒ" then
 				affect.remove_collect(1, 1000)
 				affect.remove_collect(apply.DEF_GRADE_BONUS, 120)
 				affect.remove_collect(apply.ATT_GRADE_BONUS, 51)
 
-				s = select("Ã¼·Â +1000", "¹æ¾î·Â +120", "°ø°İ·Â +51")
+				s = select("ì²´ë ¥ +1000", "ë°©ì–´ë ¥ +120", "ê³µê²©ë ¥ +51")
 
 				if s == 1 then
 					affect.add_collect(1, 1000, 60*60*24*365*60)
@@ -165,12 +165,12 @@ quest collect_quest_reset begin
 					affect.add_collect(apply.ATT_GRADE_BONUS, 51, 60*60*24*365*60)
 					pc.setf("collect_quest_lv92","reward","3")
 				end
-			elseif selTab[s] == "lv94 ¹éÃµÀÇº¸¼® º¸»ó" then
+			elseif selTab[s] == "lv94 ë°±ì²œì˜ë³´ì„ ë³´ìƒ" then
 				affect.remove_collect(1, 1100)
 				affect.remove_collect(apply.DEF_GRADE_BONUS, 140)
 				affect.remove_collect(apply.ATT_GRADE_BONUS, 60)
 
-				s = select("Ã¼·Â +1100", "¹æ¾î·Â +140", "°ø°İ·Â +60")
+				s = select("ì²´ë ¥ +1100", "ë°©ì–´ë ¥ +140", "ê³µê²©ë ¥ +60")
 
 				if s == 1 then
 					affect.add_collect(1, 1100, 60*60*24*365*60)
@@ -182,12 +182,12 @@ quest collect_quest_reset begin
 					affect.add_collect(apply.ATT_GRADE_BONUS, 60, 60*60*24*365*60)
 					pc.setf("collect_quest_lv94","reward","3")
 				end
-			elseif selTab[s] == "lv96 Ã»ÃµÀÇº¸¼® º¸»ó" then
+			elseif selTab[s] == "lv96 ì²­ì²œì˜ë³´ì„ ë³´ìƒ" then
 				affect.remove_collect(1, 2000)
 				affect.remove_collect(apply.DEF_GRADE_BONUS, 700)
 				affect.remove_collect(apply.ATT_GRADE_BONUS, 300)
 
-				s = select("Ã¼·Â +2000", "¹æ¾î·Â +700", "°ø°İ·Â +300")
+				s = select("ì²´ë ¥ +2000", "ë°©ì–´ë ¥ +700", "ê³µê²©ë ¥ +300")
 
 				if s == 1 then
 					affect.add_collect(1, 2000, 60*60*24*365*60)
@@ -203,9 +203,9 @@ quest collect_quest_reset begin
 			pc.setqf( "collect_count", 0 )
 			set_state( check_reset_able )
 
-			say("¹é¼±¾ÆÆò")
-			say("»õ·Î °í¸¥ º¸»óÀ¸·Î ¹Ù²ã ³õ¾Ò³×")
-			say("¶Ç ¹Ù²Ù°í ½ÍÀ¸¸é ÀÏÁÖÀÏ ÈÄ¿¡ Ã£¾Æ¿À°Ô³ª")
+			say("ë°±ì„ ì•„í‰")
+			say("ìƒˆë¡œ ê³ ë¥¸ ë³´ìƒìœ¼ë¡œ ë°”ê¿” ë†“ì•˜ë„¤")
+			say("ë˜ ë°”ê¾¸ê³  ì‹¶ìœ¼ë©´ ì¼ì£¼ì¼ í›„ì— ì°¾ì•„ì˜¤ê²Œë‚˜")
 			say("")
 			pc.setqf("duration", get_time()+60*60*24*7) 
 		end

@@ -331,7 +331,7 @@ quest event_easter begin
 		when 30129.chat.gameforge.main_quest_lv2._10_npcChat with event_easter.get_number_of_eggs() == 0 begin
 			event_easter.spawn_metin_at_login()
 			say_title(gameforge.event_easter._020_sayTitle) -- "Osterhase: "
-			say(gameforge.event_easter._030_say) -- "Ich verstecke Ostereier. Wenn du welche findest und mir zurück bringst, belohne ich dich toll!"
+			say(gameforge.event_easter._030_say) -- "Ich verstecke Ostereier. Wenn du welche findest und mir zurÃ¼ck bringst, belohne ich dich toll!"
 			say(gameforge.event_easter._035_say)
 			if not event_easter.has_rabbit() then
 				-- purge the rabbit if the event has finished
@@ -359,7 +359,7 @@ quest event_easter begin
 					amount_to_give = 1
 					say(string.format(gameforge.event_easter._050_say, amount_to_give)) -- "Ich gebe dir %d hiervon:"
 					say_item_vnum(vnum_to_give)
-					say(string.format(gameforge.event_easter._065_say, amount_to_remove)) -- "Dafür musst du mir %d Eier geben! Möchtest du das tun?"
+					say(string.format(gameforge.event_easter._065_say, amount_to_remove)) -- "DafÃ¼r musst du mir %d Eier geben! MÃ¶chtest du das tun?"
 					say("")
 					-- "Okay, das nehme ich!" / "Nein, das will ich nicht!"
 					wants_items = select(gameforge.event_easter._070_select, gameforge.event_easter._071_select)
@@ -376,7 +376,7 @@ quest event_easter begin
 					end
 					say(string.format(gameforge.event_easter._050_say, amount_to_give)) -- "Ich gebe dir %d hiervon:"
 					say_item_vnum(vnum_to_give)
-					say(string.format(gameforge.event_easter._060_say, amount_to_remove)) -- "Dafür musst du mir %d Eier geben!"
+					say(string.format(gameforge.event_easter._060_say, amount_to_remove)) -- "DafÃ¼r musst du mir %d Eier geben!"
 					wants_items = 1
 				end
 				
@@ -385,7 +385,7 @@ quest event_easter begin
 				pc.give_item2(vnum_to_give, amount_to_give)
 			end
 			say_title(gameforge.event_easter._020_sayTitle) -- "Osterhase: "
-			say(gameforge.event_easter._080_say) -- "Danke für die Eier, ich hoffe du hast Spaß mit dem was du bekommen hast"
+			say(gameforge.event_easter._080_say) -- "Danke fÃ¼r die Eier, ich hoffe du hast SpaÃŸ mit dem was du bekommen hast"
 			
 			if not event_easter.has_rabbit() then
 				-- purge the rabbit if the event has finished
@@ -436,7 +436,7 @@ quest event_easter begin
 				end
 			else
 				say_title(gameforge.event_easter._090_sayTitle) -- "Leerer Korb: "
-				say(gameforge.event_easter._100_say) -- "Du hast kein Osterei, das du in den Korb legen könntest."
+				say(gameforge.event_easter._100_say) -- "Du hast kein Osterei, das du in den Korb legen kÃ¶nntest."
 			end
 		end
 		

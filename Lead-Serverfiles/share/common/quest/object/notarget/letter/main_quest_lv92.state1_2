@@ -3,5 +3,5 @@ local remain_item = 4 - pc . count_item ( 31010 )
 if remain_item <= 0 then 
 remain_item = 0 
 end 
-q . set_counter_name ( "³²Àº ¾ÆÀÌÅÛ" ) 
+q . set_counter_name ( "ë‚¨ì€ ì•„ì´í…œ" ) 
 q . set_counter_value ( remain_item ) 

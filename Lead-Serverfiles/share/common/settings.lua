@@ -45,49 +45,47 @@ add_goto_info("fd1", 0, 126, 12288+225, 1024 + 655 )
 add_goto_info("fd2", 0, 127, 12288+225, 2048 + 655 )
 add_goto_info("fd3", 0, 128, 12288+225, 3072 + 655 )
 
-add_goto_info("milgyomid|¹Ğ±³»ç¿øÁß¾Ó", 0 , 65, 5905,1106 )
+add_goto_info("milgyomid|ë°€êµì‚¬ì›ì¤‘ì•™", 0 , 65, 5905,1106 )
 
-add_goto_info("sd3|°Å¹Ì3", 0, 193, 959, 5710)
+add_goto_info("sd3|ê±°ë¯¸3", 0, 193, 959, 5710)
 
-add_goto_info("dc1|¾Æ±Í1", 0, 216, 3153 , 12095)
-add_goto_info("dc2|¾Æ±Í2", 0, 216, 3624 , 12078)
-add_goto_info("dc3|¾Æ±Í3", 0, 216, 4444 , 12281)
-add_goto_info("dc4|¾Æ±Í4", 0, 216, 3142 , 12611)
-add_goto_info("dc5|¾Æ±Í5", 0, 216, 3917 , 12927)
-add_goto_info("dc6|¾Æ±Í6", 0, 216, 4375 , 12736)
-add_goto_info("dc7|¾Æ±Í7", 0, 216, 3145 , 13188)
+add_goto_info("dc1|ì•„ê·€1", 0, 216, 3153 , 12095)
+add_goto_info("dc2|ì•„ê·€2", 0, 216, 3624 , 12078)
+add_goto_info("dc3|ì•„ê·€3", 0, 216, 4444 , 12281)
+add_goto_info("dc4|ì•„ê·€4", 0, 216, 3142 , 12611)
+add_goto_info("dc5|ì•„ê·€5", 0, 216, 3917 , 12927)
+add_goto_info("dc6|ì•„ê·€6", 0, 216, 4375 , 12736)
+add_goto_info("dc7|ì•„ê·€7", 0, 216, 3145 , 13188)
 
-add_goto_info("a4|±æµåºÎÁö1", 0, 4, 2048, 2048)
-add_goto_info("b4|±æµåºÎÁö2", 0, 26, 6144, 3840)
-add_goto_info("c4|±æµåºÎÁö3", 0, 46, 2560, 8192)
+add_goto_info("a4|ê¸¸ë“œë¶€ì§€1", 0, 4, 2048, 2048)
+add_goto_info("b4|ê¸¸ë“œë¶€ì§€2", 0, 26, 6144, 3840)
+add_goto_info("c4|ê¸¸ë“œë¶€ì§€3", 0, 46, 2560, 8192)
 
-add_goto_info("cape|¿ëµÎ°ù", 0, 301, 11043, 17885)
-add_goto_info("dawn|È¿¹«¸²", 0, 302, 12263, 16811)
-add_goto_info("bay|Èæ»ç¸¸", 0, 303, 10869, 16558)
-add_goto_info("thunder|³ú¼º»ê", 0, 304, 11345, 16546)
+add_goto_info("cape|ìš©ë‘ê³¶", 0, 301, 11043, 17885)
+add_goto_info("dawn|íš¨ë¬´ë¦¼", 0, 302, 12263, 16811)
+add_goto_info("bay|í‘ì‚¬ë§Œ", 0, 303, 10869, 16558)
+add_goto_info("thunder|ë‡Œì„±ì‚°", 0, 304, 11345, 16546)
 
-add_goto_info("½Å¹Ğ±³", 0, 78, 1536, 10496)
-add_goto_info("½Åµµ¿°", 0, 75, 4608, 10496)
-add_goto_info("½Å¼­ÇÑ", 0, 74, 0 , 10496)
-add_goto_info("½Å½Â·æ", 0, 77, 6144, 10496)
+add_goto_info("ì‹ ë°€êµ", 0, 78, 1536, 10496)
+add_goto_info("ì‹ ë„ì—¼", 0, 75, 4608, 10496)
+add_goto_info("ì‹ ì„œí•œ", 0, 74, 0 , 10496)
+add_goto_info("ì‹ ìŠ¹ë£¡", 0, 77, 6144, 10496)
 
---/add_goto_info("È²¹«Áö", 0, 69, 10496, 7168) replaced with sneak
--- /add_goto_info("³Ê½½·°", 0, 70, 8192, 7168) replaced with giant
 
-add_goto_info("½Å¼ö¼º", 0, 181, 9728, 1024)
-add_goto_info("Áø³ë¼º", 0, 182, 9216, 1536)
-add_goto_info("ÃµÁ¶¼º", 0, 183, 9728, 1536)
+add_goto_info("ì‹ ìˆ˜ì„±", 0, 181, 9728, 1024)
+add_goto_info("ì§„ë…¸ì„±", 0, 182, 9216, 1536)
+add_goto_info("ì²œì¡°ì„±", 0, 183, 9728, 1536)
 
-add_goto_info("±æµå³»ºÎ", 0, 150, 7936, 0)
+add_goto_info("ê¸¸ë“œë‚´ë¶€", 0, 150, 7936, 0)
 
-add_goto_info("OXÀÌº¥Æ®", 0, 113, 8964, 215)
+add_goto_info("OXì´ë²¤íŠ¸", 0, 113, 8964, 215)
 add_goto_info("em1", 0, 181, 1024+225, 3328+225 )
 add_goto_info("em1", 0, 182, 1792+225, 3328+225 )
 add_goto_info("em1", 0, 183, 2560+225, 3328+225 )
 
 add_goto_info("heaven|Ãµ1", 0, 64, 2842, 8105)
 add_goto_info("heaven2|Ãµ2", 0, 73, 2418, 12750)
-add_goto_info("heaven3|Ãµ¿ë", 0, 208, 8192, 10496)
+add_goto_info("heaven3|ì²œìš©", 0, 208, 8192, 10496)
 
 arena.add_map(112, 8534, 101, 8564, 101)
 arena.add_map(112, 8584, 101, 8614, 101)
@@ -116,7 +114,7 @@ add_goto_info("sd1", 0, 104, 600, 4970)
 -- /goto GF SD2
 add_goto_info("sd2", 0, 71, 7038, 4625)
 
-add_goto_info("flamed|Àû·æ¼º", 0, 351, 7777, 6504)
+add_goto_info("flamed|ì ë£¡ì„±", 0, 351, 7777, 6504)
 
 add_bgm_info( 1, "enter_the_east.mp3", 0.5);
 add_bgm_info(21, "enter_the_east.mp3", 0.5);

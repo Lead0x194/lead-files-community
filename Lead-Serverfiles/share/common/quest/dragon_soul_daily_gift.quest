@@ -3,7 +3,6 @@ define level_limit 50
 quest dragon_soul_daily_gift begin
 	state start begin
 		function is_event_on()
-			-- 지금 시각이 dragon_soul_daily_gift_mgr.quest에서 셋팅한 시간 대역인지 확인.
 			local s_time = game.get_event_flag("ds_dg_st")
 			local e_time = game.get_event_flag("ds_dg_et")
 			local now = os.time()
@@ -29,13 +28,11 @@ quest dragon_soul_daily_gift begin
 
 			say_title(mob_name(checker))
 			if 0 == get_today_count("dragon_soul_daily_gift", "gift") then
-				-- 오늘치 선물 증정.
 				say(gameforge.dragon_soul_daily_gift._050_say)
 				local gift_vnum = game.get_event_flag("ds_dg_item")
 				pc.give_item2(gift_vnum)
 				inc_today_count("dragon_soul_daily_gift", "gift")
 			else
-				-- 선물은 이미 줌.
 				say(gameforge.dragon_soul_daily_gift._060_say)
 			end
 		end

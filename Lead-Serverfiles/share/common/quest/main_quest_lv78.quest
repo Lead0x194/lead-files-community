@@ -70,9 +70,9 @@ quest main_quest_lv78 begin
 
 				pc.give_exp2(36000000)
 				
-				pc.give_item2(72725) -- 수룡의 축복(대)
-				pc.give_item2(70024) -- 축복의 구슬
-				pc.give_item2(70004) -- 근면함의 훈장
+				pc.give_item2(72725)
+				pc.give_item2(70024)
+				pc.give_item2(70004)
 				pc.remove_item (red_bead, pc.count_item (red_bead))
 				set_state (state_2)
 				return
@@ -126,9 +126,9 @@ quest main_quest_lv78 begin
 
 					pc.give_exp2(36000000)
 					
-					pc.give_item2(72725) -- 수룡의 축복(대)
-					pc.give_item2(70024) -- 축복의 구슬
-					pc.give_item2(70004) -- 근면함의 훈장
+					pc.give_item2(72725)
+					pc.give_item2(70024)
+					pc.give_item2(70004)
 					pc.remove_item (red_bead, pc.count_item (red_bead))
 					set_state (state_2)
 				end
@@ -189,9 +189,9 @@ quest main_quest_lv78 begin
 			pc.give_exp2(48000000)
 			pc.change_money(230000)
 			
-			pc.give_item2(72729) -- 화룡의 축복(대)
-			pc.give_item2(70035) -- 만년한철
-			pc.give_item2(70003) -- 육도
+			pc.give_item2(72729)
+			pc.give_item2(70035)
+			pc.give_item2(70003)
 			pc.remove_item (sacred_sap, pc.count_item (sacred_sap))
 			set_state (state_3)
 		end

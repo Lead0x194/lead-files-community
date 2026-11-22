@@ -53,12 +53,12 @@ quest check_collect_reward begin
 
 			if e_== value   then
 				affect.add_collect(apply.MOV_SPEED,11,60*60*24*365*60)
-				affect.add_collect_point(POINT_DEF_BONUS,10,60*60*24*365*60) --60³â
+				affect.add_collect_point(POINT_DEF_BONUS,10,60*60*24*365*60) --60Â³Ã¢
 			end
 
 			if   f_== value then
-				affect.add_collect(apply.ATT_SPEED,6,60*60*24*365*60) --60³â
-				affect.add_collect_point(POINT_ATT_BONUS,10,60*60*24*365*60) --60³â
+				affect.add_collect(apply.ATT_SPEED,6,60*60*24*365*60) --60Â³Ã¢
+				affect.add_collect_point(POINT_ATT_BONUS,10,60*60*24*365*60) --60Â³Ã¢
 			end
 
 			if g_ == value then

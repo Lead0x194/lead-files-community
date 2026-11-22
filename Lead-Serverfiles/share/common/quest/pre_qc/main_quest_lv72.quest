@@ -98,9 +98,9 @@ quest main_quest_lv72 begin
 
             pc.give_exp2(3100000)
             
-            pc.give_item2(70005) -- 경험의 반지
-            pc.give_item2(drug) -- 알수 없는 약 (+일 수도)
-            pc.give_item2(30039) -- 헝겊조각
+            pc.give_item2(70005)
+            pc.give_item2(drug)
+            pc.give_item2(30039)
             
             set_state (state_4)
         end

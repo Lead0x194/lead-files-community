@@ -4,19 +4,19 @@ quest change_to_lotto begin
 	    say_title("Alte Frau")
 	    say("")
 	    ---                                                   l
-	    say("Junger Herr, ich habe gehört, dass ein")
+	    say("Junger Herr, ich habe gehÃ¶rt, dass ein")
 	    say("landesweites Ereignis stattfindet.")
-	    say("Die Reichsverwalter sind dafür zuständig, aber")
-	    say("sie sind sehr beschäftigt daher haben sie mich")
-	    say("gefragt, ob ich das übernehmen kann")
+	    say("Die Reichsverwalter sind dafÃ¼r zustÃ¤ndig, aber")
+	    say("sie sind sehr beschÃ¤ftigt daher haben sie mich")
+	    say("gefragt, ob ich das Ã¼bernehmen kann")
 	    say("Wenn Du mir ein Lotterielos bringst,")
-	    say("werde ich Dir dafür das Glücksbuch geben.")
-	    say("Die Nummer, die im Glücksbuch steht, ist Deine")
+	    say("werde ich Dir dafÃ¼r das GlÃ¼cksbuch geben.")
+	    say("Die Nummer, die im GlÃ¼cksbuch steht, ist Deine")
 	    say("")
 
 	    if pc.countitem(50027) > 0 then
 		say("Bist Du interessiert, ein Lotterielos")
-		say("gegen das Glücksbuch zu tauschen?")
+		say("gegen das GlÃ¼cksbuch zu tauschen?")
 		local s = select('Ja', 'Nein')
 
 		if s == 1 then

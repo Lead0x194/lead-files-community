@@ -45,7 +45,7 @@ quest new_quest_lv54 begin
 			send_letter(gameforge.new_quest_lv54._020_say_title)
 			q.start()
 			q.set_title(gameforge.new_quest_lv54._020_say_title)
-			local v=find_npc_by_vnum(9003) --Gemischtwarenh‰ndlerin
+			local v=find_npc_by_vnum(9003) --Gemischtwarenh√§ndlerin
 			if 0==v then
 			else
 				target.vid("__TARGET2__", v, gameforge.new_quest_lv54._050_target)

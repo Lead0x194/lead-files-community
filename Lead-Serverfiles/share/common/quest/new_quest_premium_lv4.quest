@@ -14,7 +14,7 @@ quest new_quest_premium_lv4 begin
     -------------- the trade wants to know, why her lover doesn't visit her anymore ----	--------------------------------------------------
     state information begin
         when login or enter begin
-            local v=find_npc_by_vnum(9003) -- Gemischtwarenh‰ndlerin
+            local v=find_npc_by_vnum(9003) -- Gemischtwarenh√§ndlerin
             if 0==v then
             else
                 target.vid("__TARGET__", v, gameforge.new_quest_premium_lv4._10_targetVid)
@@ -43,7 +43,7 @@ quest new_quest_premium_lv4 begin
             pc.setqf("new_quest_premium_lv4_collect_count_1", 0) --Arne08Oct09, needed initializing
             q.start()
             q.set_title(gameforge.new_quest_premium_lv4._40_qSetTitle)
-            local v=find_npc_by_vnum(9001) -- Waffenh‰ndler
+            local v=find_npc_by_vnum(9001) -- Waffenh√§ndler
             if 0==v then
             else
                 target.vid("__TARGET2__", v, gameforge.new_quest_premium_lv4._50_targetVid)
@@ -126,7 +126,7 @@ quest new_quest_premium_lv4 begin
             send_letter(gameforge.new_quest_premium_lv4._40_qSetTitle)
             q.start()
             q.set_title(gameforge.new_quest_premium_lv4._40_qSetTitle)
-            local v=find_npc_by_vnum(9001) -- Waffenh‰ndler
+            local v=find_npc_by_vnum(9001) -- Waffenh√§ndler
             if 0==v then
             else
                 target.vid("__TARGET2__", v, gameforge.new_quest_premium_lv4._50_targetVid)
@@ -173,7 +173,7 @@ quest new_quest_premium_lv4 begin
             send_letter(gameforge.new_quest_premium_lv4._40_qSetTitle)--added08Oct09by Arne, Reason: no letter
             q.start()
             q.set_title(gameforge.new_quest_premium_lv4._40_qSetTitle)
-            local v=find_npc_by_vnum(9001) -- Waffenh‰ndler
+            local v=find_npc_by_vnum(9001) -- Waffenh√§ndler
             if 0==v then
             else
                 target.vid("__TARGET2__", v, gameforge.new_quest_premium_lv4._50_targetVid)
@@ -194,7 +194,7 @@ quest new_quest_premium_lv4 begin
                 pc.change_money(pc.getqf("amountYang") )
                 pc.give_item2(rewardVnum)
                 pc.remove_item(pc.getqf("drop2"), pc.getqf("neededAmountDrop2"))
-                local v=find_npc_by_vnum(9003) -- Gemischtwarenh‰ndlerin
+                local v=find_npc_by_vnum(9003) -- Gemischtwarenh√§ndlerin
                 if 0==v then
                 else
                     target.vid("__TARGET3__", v, gameforge.new_quest_premium_lv4._10_targetVid)

@@ -47,7 +47,7 @@ quest harvest_festival begin
             say("Not all of them are good, some are sticky!")
             say("")
 
-            local reward_set = select("I’ll try it!","I’ll get used glutinous rice raseo..")
+            local reward_set = select("Iâ€™ll try it!","Iâ€™ll get used glutinous rice raseo..")
 
             if reward_set == 2 then
                 say("Handueop: ")
@@ -83,7 +83,7 @@ quest harvest_festival begin
                 harvest_item_name = " Experience Ring (10h)"
                 harvest_rice_count = 15 
             elseif harvest_item_set == 3 then
-                harvest_item_name = "1x Weiße Perle "
+                harvest_item_name = "1x WeiÃŸe Perle "
                 harvest_rice_count = 35
             elseif harvest_item_set == 4 then
                 harvest_item_name = "10x Geschwindigkeitstrank "
@@ -232,7 +232,7 @@ quest harvest_festival begin
                     say("")
                 end -- end of if
 
-                local replay_set = select("WHILE you're starting to help him continue to UD..","I’ll help you later")
+                local replay_set = select("WHILE you're starting to help him continue to UD..","Iâ€™ll help you later")
 
                 if replay_set == 2 then
                     return
@@ -264,7 +264,7 @@ quest harvest_festival begin
                 say("Please gather more..")
                 say("")
                 
-                local replay_set = select("Continue to help him..","I’ll help you later")
+                local replay_set = select("Continue to help him..","Iâ€™ll help you later")
                     
                 if replay_set == 2 then
                     return
@@ -298,7 +298,7 @@ quest harvest_festival begin
             say("Will you help us?")
             say("")
 
-            local main_set = select("Of course!.. I’ll find it!!","I’m very busy. Have a nice Thanks Giving day.")
+            local main_set = select("Of course!.. Iâ€™ll find it!!","Iâ€™m very busy. Have a nice Thanks Giving day.")
             if main_set == 2 then
                 say("Wondarim:")
                 say("Oh, ok.")
@@ -394,7 +394,7 @@ quest harvest_festival begin
           mob2_name = "Setaou-Seherin (2403)"
                 elseif pc.get_level() >= 81 then
                     pc.setqf("mob2_info", 7)
-          mob2_name = "Setaou-Kämpfer (2401)"
+          mob2_name = "Setaou-KÃ¤mpfer (2401)"
                 elseif pc.get_level() >= 71 then
                     pc.setqf("mob2_info", 6)
                     mob2_name = "Flame Warrior"
@@ -422,7 +422,7 @@ quest harvest_festival begin
                 say("It looked very menacing...")
                 say("And they took most of the rice cakes!")
                 say("")
-                say("And I couldn’t do much since I’m alone..")
+                say("And I couldnâ€™t do much since Iâ€™m alone..")
                 say("")
                 wait()
 
@@ -445,7 +445,7 @@ quest harvest_festival begin
                 if sub_set == 2	then
                     say_pc_name()
                     say("Return to Wondarim with the dish")
-                    say("I’ll replace it with glutinous rice")
+                    say("Iâ€™ll replace it with glutinous rice")
                     say("That will bring us good luck for Thanksgiving..")
                     say("")
                     set_state(information)
@@ -522,7 +522,7 @@ quest harvest_festival begin
                 say("")
             else
                 say("It is a condition to form up a party")
-                say("As we talked previously, you’ll have to find party members..")
+                say("As we talked previously, youâ€™ll have to find party members..")
                 say("")
             end -- end of if
 
@@ -570,16 +570,16 @@ quest harvest_festival begin
                 pc.setqf("rice_count", rice_count + cake_count)
                 pc.setqf("cake_count", 0)
 
-                say_title("I’ve got "..cake_count.." glutinous rice!")
+                say_title("Iâ€™ve got "..cake_count.." glutinous rice!")
                 say("Wondarim: ")
-                say("I’m here so that you can return this dish.")
+                say("Iâ€™m here so that you can return this dish.")
                 wait()
                 
                 if quest_count >= 10 then
                     char_log(0, "EVENT_RECORD", "harvest_festival clear")
                     
                     say("Wondarim: ")
-                    say("You’ve already so many things...")
+                    say("Youâ€™ve already so many things...")
                     say("I think that for now it is enough?")
 
                     set_state(information)
@@ -600,7 +600,7 @@ quest harvest_festival begin
                 local current_count = quest_count + 1
 
                 say("Wondarim: ")
-                say("I believe I’m going to wait!")
+                say("I believe Iâ€™m going to wait!")
                 say("Please come back later")
                 say("Quest Progress: "..current_count..". ")
                 say("tip This quest can be finished up to 10 times.")
@@ -612,7 +612,7 @@ quest harvest_festival begin
         
         when 20087.click with game.get_event_flag("harvest_festival")>0 begin
             say("Handueop:")
-            say("I’m looking to create Glutinous rice cakes..")
+            say("Iâ€™m looking to create Glutinous rice cakes..")
             say("As a favor to Wondarim")
             say("I will get your glutinous rice... since it is the good stuff!!")
         end -- end of when

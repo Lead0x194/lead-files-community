@@ -344,7 +344,7 @@ quest deviltower_zone begin
 		game.drop_item(30300, 1)
 			d.clear_regen()
 			d.kill_all()
-			say("»óÀÚ¸¦ ¿­¾îº¸ÀÚ")
+			say("ìƒìë¥¼ ì—´ì–´ë³´ì")
 			say("")
 			d.spawn_mob(33001, 620, 635)
 	end
@@ -356,29 +356,29 @@ quest deviltower_zone begin
 
 		if pct == 1 then
 			game.drop_item(30302, 1)
-				d.notice("À­ÃşÀ¸·ÎÀÇ Áöµµ°¡ ³ªÅ¸³µ´Ù");
+				d.notice("ìœ—ì¸µìœ¼ë¡œì˜ ì§€ë„ê°€ ë‚˜íƒ€ë‚¬ë‹¤");
 			else
 				game.drop_item(30301, 1) 
 				d.regen_file("data/dungeon/deviltower7_regen.txt")
 		end
 	end
-		when 33001.chat."¿Ø ÇØ°ñÀÌ..." with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000 begin
-			say("³»°¡ »ç±ÍÅ¸¿öÀÇ °ø·«¿¡ ½ÇÆĞÇß³ª º¸±º..")
-			say("¾Æ¹«¸® ºÁµµ ³»°¡ ¹ÛÀ¸·Î ºüÀú³ª°¥ ¹æ¹ıÀÌ ¾ø´Â °Í °°¾Æ..")
-			say("¿©±â ´©¿öÀÖ´Â ÇØ°ñÃ³·³ µÇ´Â °ÍÀÌ ¾Æ´Ò±î..")
-			say("±×·±µ¥ ´©±¸ÀÇ ÇØ°ñÀÌÁö???")
+		when 33001.chat."ì™  í•´ê³¨ì´..." with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000 begin
+			say("ë‚´ê°€ ì‚¬ê·€íƒ€ì›Œì˜ ê³µëµì— ì‹¤íŒ¨í–ˆë‚˜ ë³´êµ°..")
+			say("ì•„ë¬´ë¦¬ ë´ë„ ë‚´ê°€ ë°–ìœ¼ë¡œ ë¹ ì €ë‚˜ê°ˆ ë°©ë²•ì´ ì—†ëŠ” ê²ƒ ê°™ì•„..")
+			say("ì—¬ê¸° ëˆ„ì›ŒìˆëŠ” í•´ê³¨ì²˜ëŸ¼ ë˜ëŠ” ê²ƒì´ ì•„ë‹ê¹Œ..")
+			say("ê·¸ëŸ°ë° ëˆ„êµ¬ì˜ í•´ê³¨ì´ì§€???")
 			say("")
 
 			wait()
 
-			say("ÇØ°ñÀ» µÚÁ®º¼±î¿ä?")
+			say("í•´ê³¨ì„ ë’¤ì ¸ë³¼ê¹Œìš”?")
 			say("")
 
-			if 1 == select("³×", "¾Æ´Ï¿ä") then
+			if 1 == select("ë„¤", "ì•„ë‹ˆìš”") then
 				say("...")
-				say("µÚÀûµÚÀû")
+				say("ë’¤ì ë’¤ì ")
 				say("....")
-				say("Äî!")
+				say("Ã„Ã®!")
 
 				wait()
 
@@ -388,7 +388,7 @@ quest deviltower_zone begin
 
 	when 30302.use with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000 begin
 		if d.getf( "level" ) != 7 then
-				say("ÀÌ Áöµµ´Â Áö±İ ÀüÇô ¸ÂÁö ¾Ê´Â °Í °°´Ù")
+				say("ì´ ì§€ë„ëŠ” ì§€ê¸ˆ ì „í˜€ ë§ì§€ ì•ŠëŠ” ê²ƒ ê°™ë‹¤")
 			say("")
 			pc.remove_item( "30302", 1)
 			return
@@ -431,9 +431,9 @@ quest deviltower_zone begin
 		timer("devil_jump_9", 6)
 	end
 
-		when 20366.chat."¿©±â¼­ Æ÷±â!!?" with pc.get_map_index() >= 660000 and pc.get_map_index() < 670000 begin
+		when 20366.chat."ì—¬ê¸°ì„œ í¬ê¸°!!?" with pc.get_map_index() >= 660000 and pc.get_map_index() < 670000 begin
 			say("")
-			say("´õ ÀÌ»óÀº Èûµé±º, ºñ¼®ÀÇ ÈûÀ» ºô·Á ¿©±â¸¦ ¹ş¾î³ª¾ß°Ú¾î..")
+			say("ë” ì´ìƒì€ í˜ë“¤êµ°, ë¹„ì„ì˜ í˜ì„ ë¹Œë ¤ ì—¬ê¸°ë¥¼ ë²—ì–´ë‚˜ì•¼ê² ì–´..")
 			say("")
 			wait()
 

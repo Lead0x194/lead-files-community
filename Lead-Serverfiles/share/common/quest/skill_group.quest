@@ -108,7 +108,7 @@ quest skill_group begin
 			set_state("start")
 			pc.set_skill_group(1) -- !!!
 			pc.clear_skill()
-			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Lehrer löschen")
+			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Lehrer lÃ¶schen")
 
 			say_title(gameforge.skill_group._310_sayTitle)
 
@@ -161,7 +161,7 @@ quest skill_group begin
 			set_state("start")
 			pc.set_skill_group(2)
 			pc.clear_skill()
-			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister löschen")
+			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister lÃ¶schen")
 
 
 			say_title(gameforge.skill_group._420_sayTitle)
@@ -216,7 +216,7 @@ quest skill_group begin
 			set_state("start")
 			pc.set_skill_group(1) -- !!!
 			pc.clear_skill()
-			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister löschen")
+			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister lÃ¶schen")
 
 			say_title(gameforge.skill_group._480_sayTitle)
 
@@ -268,7 +268,7 @@ quest skill_group begin
 			set_state("start")
 			pc.set_skill_group(2) -- !!!
 			pc.clear_skill()
-			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister löschen")
+			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister lÃ¶schen")
 
 			say_title(gameforge.skill_group._540_sayTitle)
 
@@ -320,7 +320,7 @@ quest skill_group begin
 			set_state("start")
 			pc.set_skill_group(1) -- !!!
 			pc.clear_skill()
-			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister löschen")
+			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister lÃ¶schen")
 
 
 			say_title(gameforge.skill_group._600_sayTitle)
@@ -376,7 +376,7 @@ quest skill_group begin
 			set_state("start")
 			pc.set_skill_group(2) -- !!!
 			pc.clear_skill()
-			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister löschen")
+			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister lÃ¶schen")
 
 			say_title(gameforge.skill_group._650_sayTitle)
 
@@ -431,7 +431,7 @@ quest skill_group begin
 			set_state("start")
 			pc.set_skill_group(1) -- !!!
 			pc.clear_skill()
-			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister löschen")
+			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister lÃ¶schen")
 
 			say_title(gameforge.skill_group._710_sayTitle)
 
@@ -485,7 +485,7 @@ quest skill_group begin
 			set_state("start")
 			pc.set_skill_group(2) -- !!!
 			pc.clear_skill()
-			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister löschen")
+			char_log(0, "CLEAR_SKILL", "Fertigkeit nach Fertigkeitsmeister lÃ¶schen")
 
 			say_title(gameforge.skill_group._760_sayTitle)
 

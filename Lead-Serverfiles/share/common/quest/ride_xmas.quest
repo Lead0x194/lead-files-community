@@ -2,7 +2,6 @@ quest ride_xmas begin
 	state start begin
 		function Ride( vnum, remain_time )
 			ride_info = {
-				-- Àü°©¼ý¼ø·Ï 
 				[52061]= { 20213,	60*60*24*365, apply.ATTBONUS_MONSTER,	0,	0,	false,	true	},
 				[52062]= { 20213,	60*60*24*365, apply.MALL_EXPBONUS,		0,	0,	false,	true	},
 				[52063]= { 20213,	60*60*24*365, apply.MAX_HP,				0,	0,	false,	true	},
@@ -19,7 +18,6 @@ quest ride_xmas begin
 				[52074]= { 20215,	60*60*24*365, apply.DEF_GRADE_BONUS,	150,	0,	false,	true	},
 				[52075]= { 20215,	60*60*24*365, apply.ATT_GRADE_BONUS,	100,	0,	false,	true	},
 	
-				-- Àü°©¾Ï¼ø·Ï
 				[52076]= { 20216,	60*60*24*365, apply.ATTBONUS_MONSTER,	0,	0,	false,	true	},
 				[52077]= { 20216,	60*60*24*365, apply.MALL_EXPBONUS,		0,	0,	false,	true	},
 				[52078]= { 20216,	60*60*24*365, apply.MAX_HP,				0,	0,	false,	true	},
@@ -39,7 +37,6 @@ quest ride_xmas begin
 				[71165] = { 20221,	item.get_socket(2)*60,	apply.MOV_SPEED,	60,		1,	false,	false,	false},
 				[71166] = { 20222,	item.get_socket(2)*60,	apply.MOV_SPEED,	60,		1,	false,	false,	false},
 
-				-- ¼®·æÀÚ
 				[52091]= { 20223,	60*60*24*365, apply.ATTBONUS_MONSTER,	0,	0,	false,	true	},
 				[52092]= { 20223,	60*60*24*365, apply.MALL_EXPBONUS,		0,	0,	false,	true	},
 				[52093]= { 20223,	60*60*24*365, apply.MAX_HP,				0,	0,	false,	true	},

@@ -1,149 +1,136 @@
---2012.08 김용욱
---메인퀘스트 레벨 94
 
---퀘스트 진행 npc
-define GUARD 20378 -- 경비대장 악무르
-define ICHUNG 20369 -- 이충
-define TELEPORT 9012 -- 공간이동술사
-define YACKHWAN 20377 -- 약령도장 약환
-define SCHOLAR 20380 -- 학자
-define OCKGU 20008 -- 옥구
-define ALCHEMIST 20001 -- 연금술사
-define UNDERLING 20379 -- 악무르의 부하
+define GUARD 20378
+define ICHUNG 20369
+define TELEPORT 9012
+define YACKHWAN 20377
+define SCHOLAR 20380
+define OCKGU 20008
+define ALCHEMIST 20001
+define UNDERLING 20379
 
 --<1>--
---신약 복용--
-define REWARD1_EXP 12904600 --  보상 : 경험치
-define REWARD1_GOLD 346000 --  보상 : 골드
-define REWARD1_ITEM1 71001 --  보상 : 주안술서
-define REWARD1_ITEM1_COUNT 3 --  보상 갯수
-define REWARD1_ITEM2 31032 --  보상 : 학자의 신약
-define REWARD1_ITEM2_COUNT 1 --  보상 갯수
-define AFFECT_MAGIC_DEF 10 -- 마법 방어력 증가 수치
+define REWARD1_EXP 12904600
+define REWARD1_GOLD 346000
+define REWARD1_ITEM1 71001
+define REWARD1_ITEM1_COUNT 3
+define REWARD1_ITEM2 31032
+define REWARD1_ITEM2_COUNT 1
+define AFFECT_MAGIC_DEF 10
 
 --<2>--
---뇌성산 정찰--
-define RECON1_X 374 -- 정찰1 X 좌표
-define RECON1_Y 1261 -- 정찰1 Y 좌표
-define RECON1_MAPINDEX 304 -- 정찰1 맵 인덱스
-define RECON2_X 321 -- 정찰2 X 좌표
-define RECON2_Y 419 -- 정찰2 Y 좌표
-define RECON2_MAPINDEX 304 -- 정찰2 맵 인덱스
--- define RECON3_X 790 -- 정찰3 X 좌표
--- define RECON3_Y 149 -- 정찰3 Y 좌표
--- define RECON3_MAPINDEX 304 -- 정찰3 맵 인덱스
-define RECON4_X 790 -- 정찰4 X 좌표
-define RECON4_Y 149 -- 정찰4 Y 좌표
-define RECON4_MAPINDEX 304 -- 정찰4 맵 인덱스
-define REWARD2_EXP 14074422 -- 보상 : 경험치
-define REWARD2_GOLD 357000 -- 보상 : 골드
-define REWARD2_ITEM1 30033 -- 보상 : 깨진 사기그릇
-define REWARD2_ITEM1_COUNT 3 -- 보상 갯수
+define RECON1_X 374
+define RECON1_Y 1261
+define RECON1_MAPINDEX 304
+define RECON2_X 321
+define RECON2_Y 419
+define RECON2_MAPINDEX 304
+define RECON4_X 790
+define RECON4_Y 149
+define RECON4_MAPINDEX 304
+define REWARD2_EXP 14074422
+define REWARD2_GOLD 357000
+define REWARD2_ITEM1 30033
+define REWARD2_ITEM1_COUNT 3
 
 --<3>--
---도적단 세력 약화 --
-define MOB3_1 3596 -- 붉은 도적단 최종 보스
-define ITEM3_1 31033 -- 붉은 도적단의 망토
-define REWARD3_EXP 16014020 -- 보상 : 경험치
-define REWARD3_GOLD 0 -- 보상 : 골드
-define REWARD3_ITEM1 70024 -- 보상 : 축복의 구슬
-define REWARD3_ITEM1_COUNT 1 -- 보상 갯수
-define REWARD3_ITEM2 30039 -- 보상 : 헝겊조각
-define REWARD3_ITEM2_COUNT 3 -- 보상 갯수
-define REWARD3_ITEM3 50820 -- 보상 : 진영보액
-define REWARD3_ITEM3_COUNT 20 -- 보상 갯수
+define MOB3_1 3596
+define ITEM3_1 31033
+define REWARD3_EXP 16014020
+define REWARD3_GOLD 0
+define REWARD3_ITEM1 70024
+define REWARD3_ITEM1_COUNT 1
+define REWARD3_ITEM2 30039
+define REWARD3_ITEM2_COUNT 3
+define REWARD3_ITEM3 50820
+define REWARD3_ITEM3_COUNT 20
 
 --<4>--
---외안투귀 세력 약화--
-define MOB4_1 3105 -- 외안투귀 상급 장수 (테스트 : 들개)
-define MOB4_1_COUNT 30 -- 처치 숫자 : 외안투귀 상급 장수
-define MOB4_2 3190 -- 외안투귀 보스 (테스트 : 늑대)
-define MOB4_2_COUNT 3 -- 처치 숫자 : 외안투귀 보스
-define MOB4_3 3191 -- 외안투귀 최종 보스 (테스트 : 두목늑대)
-define MOB4_3_COUNT 1 -- 처치 숫자 : 외안투귀 최종 보스 
-define REWARD4_EXP 21014020 -- 보상 : 경험치
-define REWARD4_GOLD 379000 -- 보상 : 골드
-define REWARD4_ITEM1 72308 -- 보상 : 만년한철
-define REWARD4_ITEM1_COUNT 1 -- 보상 갯수
-define REWARD4_ITEM2 76011 -- 보상 : 육도
-define REWARD4_ITEM2_COUNT 1 -- 보상 갯수
+define MOB4_1 3105
+define MOB4_1_COUNT 30
+define MOB4_2 3190
+define MOB4_2_COUNT 3
+define MOB4_3 3191
+define MOB4_3_COUNT 1
+define REWARD4_EXP 21014020
+define REWARD4_GOLD 379000
+define REWARD4_ITEM1 72308
+define REWARD4_ITEM1_COUNT 1
+define REWARD4_ITEM2 76011
+define REWARD4_ITEM2_COUNT 1
 
 --<5>--
---거인족 세력 약화--
-define MOB5_1 3791 -- 거인족
-define MAP_INDEX5 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS5_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MOB5_1 3791
+define MAP_INDEX5 1
+define MAP_POS5_1_X 500
 define MAP_POS5_1_Y 500
 define MAP_POS5_2_X 600
 define MAP_POS5_2_Y 500
 define MAP_POS5_3_X 700
 define MAP_POS5_3_Y 300
-define ITEM5_1 31034 -- 거인족의 보주
-define ITEM5_1_COUNT 9 -- 획득 갯수 : 거인족의 보주 
-define ITEM5_1_PCT_GET 10 -- 획득 확률 : 거인족의 보주 (1/n)
-define REWARD5_EXP 25032586 -- 보상 : 경험치
-define REWARD5_GOLD 390000 -- 보상 : 골드
-define REWARD5_ITEM1 71026 -- 보상 : 현철
-define REWARD5_ITEM1_COUNT 1 -- 보상 갯수
-define REWARD5_ITEM2 71025 -- 보상 : 야공석
-define REWARD5_ITEM2_COUNT 2 -- 보상 갯수
-define REWARD5_ITEM3 70102 -- 보상 : 선두
-define REWARD5_ITEM3_COUNT 5 -- 보상 갯수
-define REWARD5_ITEM4 50826 -- 보상 : 백상액
-define REWARD5_ITEM4_COUNT 10 -- 보상 갯수
+define ITEM5_1 31034
+define ITEM5_1_COUNT 9
+define ITEM5_1_PCT_GET 10
+define REWARD5_EXP 25032586
+define REWARD5_GOLD 390000
+define REWARD5_ITEM1 71026
+define REWARD5_ITEM1_COUNT 1
+define REWARD5_ITEM2 71025
+define REWARD5_ITEM2_COUNT 2
+define REWARD5_ITEM3 70102
+define REWARD5_ITEM3_COUNT 5
+define REWARD5_ITEM4 50826
+define REWARD5_ITEM4_COUNT 10
 
 --<6>--
---뇌성산으로--
-define MOB6_1 3101 -- 외안투귀족 졸개
-define MOB6_2 3102 -- 외안투귀족 상급졸개
-define MOB6_3 3103 -- 외안투귀족 원거리
-define MOB6_4 3104 -- 외안투귀족 장군
-define MOB6_5 3105 -- 외안투귀족 상급장수
-define MOB6_6 3190 -- 외안투귀족 보스
-define MOB6_7 3191 -- 외안투귀족 최종보스
-define MAP_INDEX6 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS6_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MOB6_1 3101
+define MOB6_2 3102
+define MOB6_3 3103
+define MOB6_4 3104
+define MOB6_5 3105
+define MOB6_6 3190
+define MOB6_7 3191
+define MAP_INDEX6 1
+define MAP_POS6_1_X 500
 define MAP_POS6_1_Y 500
 define MAP_POS6_2_X 600
 define MAP_POS6_2_Y 500
 define MAP_POS6_3_X 700
 define MAP_POS6_3_Y 300
-define ITEM6_1 31035 -- 검은 돌조각
-define ITEM6_1_COUNT 1 -- 획득 갯수 : 검은 돌조각
-define ITEM6_1_PCT_GET 3 -- 획득 확률 : 검은 돌조각 (1/n)
-define ITEM6_2 31013 -- 외안투귀의 서찰
-define ITEM6_2_COUNT 1 -- 획득 갯수 : 외안투귀의 서찰
-define ITEM6_2_PCT_GET 3 -- 획득 확률 : 외안투귀의 서찰 (1/n)
-define REWARD6_EXP 23074000 -- 보상 : 경험치
-define REWARD6_GOLD 0 -- 보상 : 골드
-define REWARD6_ITEM1 70024 -- 보상 : 축복의 구슬
-define REWARD6_ITEM1_COUNT 3 -- 보상 갯수
+define ITEM6_1 31035
+define ITEM6_1_COUNT 1
+define ITEM6_1_PCT_GET 3
+define ITEM6_2 31013
+define ITEM6_2_COUNT 1
+define ITEM6_2_PCT_GET 3
+define REWARD6_EXP 23074000
+define REWARD6_GOLD 0
+define REWARD6_ITEM1 70024
+define REWARD6_ITEM1_COUNT 3
 
 --<7>--
---검은 황금--
-define MOB7_1 3101 -- 외안투귀족 졸개
-define MOB7_2 3102 -- 외안투귀족 상급졸개
-define MOB7_3 3103 -- 외안투귀족 원거리
-define MOB7_4 3104 -- 외안투귀족 장군
-define MOB7_5 3105 -- 외안투귀족 상급장수
-define MOB7_6 3190 -- 외안투귀족 보스
-define MOB7_7 3191 -- 외안투귀족 최종보스
-define MAP_INDEX7 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS7_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MOB7_1 3101
+define MOB7_2 3102
+define MOB7_3 3103
+define MOB7_4 3104
+define MOB7_5 3105
+define MOB7_6 3190
+define MOB7_7 3191
+define MAP_INDEX7 1
+define MAP_POS7_1_X 500
 define MAP_POS7_1_Y 500
 define MAP_POS7_2_X 600
 define MAP_POS7_2_Y 500
 define MAP_POS7_3_X 700
 define MAP_POS7_3_Y 300
-define ITEM7_1 31036 -- 검은 황금 견본
-define ITEM7_1_COUNT 30 -- 획득 갯수 : 검은 황금
-define ITEM7_1_DAY_LIMIT 10 -- 하루 납품 한계 : 검은 황금
-define ITEM7_1_PCT_GET 2 -- 획득 확률 : 검은 황금 (1/n)
-define ITEM7_1_PCT_CHECK 70 -- 납품 확률 : 검은 황금 (n/100)
-define REWARD7_EXP 26473000 -- 보상 : 경험치
-define REWARD7_GOLD 0 -- 보상 : 골드
-define REWARD7_ITEM1 71001 -- 보상 : 주안술서
-define REWARD7_ITEM1_COUNT 5 -- 보상 갯수
+define ITEM7_1 31036
+define ITEM7_1_COUNT 30
+define ITEM7_1_DAY_LIMIT 10
+define ITEM7_1_PCT_GET 2
+define ITEM7_1_PCT_CHECK 70
+define REWARD7_EXP 26473000
+define REWARD7_GOLD 0
+define REWARD7_ITEM1 71001
+define REWARD7_ITEM1_COUNT 5
 
 quest main_quest_lv94 begin
 	state start begin
@@ -153,17 +140,6 @@ quest main_quest_lv94 begin
 			set_state (state1_1)
 		end
 	end
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
 	state state1_1 begin
 	
 		when letter begin
@@ -196,7 +172,6 @@ quest main_quest_lv94 begin
 			say(gameforge.main_quest_lv94._050_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD1_EXP))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD1_GOLD))
@@ -212,7 +187,6 @@ quest main_quest_lv94 begin
 			set_state (state1_2)
 		end
 	end
-	--퀘스트 수행--
 	state state1_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._010_sendLetter)
@@ -226,24 +200,13 @@ quest main_quest_lv94 begin
 		when REWARD1_ITEM2.use begin
 			pc.remove_item ( REWARD1_ITEM2, pc.count_item(REWARD1_ITEM2))	
 			
-			affect.add_collect_point(POINT_MAGIC_DEF_GRADE,AFFECT_MAGIC_DEF,60*30) --60년	
+			affect.add_collect_point(POINT_MAGIC_DEF_GRADE,AFFECT_MAGIC_DEF,60*30) --60쨀창	
 				
 			set_state (state2_1)
 		end
 		
 	end
 	
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._080_sendLetter)
@@ -297,7 +260,6 @@ quest main_quest_lv94 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when GUARD.chat.gameforge.main_quest_lv94._080_sendLetter begin
 			say_title(mob_name(GUARD))
 			say(gameforge.main_quest_lv94._170_say)
@@ -327,7 +289,6 @@ quest main_quest_lv94 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when GUARD.chat.gameforge.main_quest_lv94._080_sendLetter begin
 			say_title(mob_name(GUARD))
 			say(gameforge.main_quest_lv94._170_say)
@@ -357,7 +318,6 @@ quest main_quest_lv94 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		-- end
-		--클리어 전--
 		-- when GUARD.chat.gameforge.main_quest_lv94._080_sendLetter begin
 			-- say_title(mob_name(GUARD))
 			-- say(locale.main_quest_lv94.say_13)
@@ -387,7 +347,6 @@ quest main_quest_lv94 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when GUARD.chat.gameforge.main_quest_lv94._080_sendLetter begin
 			say_title(mob_name(GUARD))
 			say(gameforge.main_quest_lv94._170_say)
@@ -426,7 +385,6 @@ quest main_quest_lv94 begin
 			say(gameforge.main_quest_lv94._280_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD2_EXP))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD2_GOLD))
@@ -440,17 +398,6 @@ quest main_quest_lv94 begin
 			set_state (state3_1)
 		end
 	end
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._290_sendLetter)
@@ -504,7 +451,6 @@ quest main_quest_lv94 begin
 			say_item_vnum(ITEM3_1)
 		end
 		
-		--클리어 전--
 		when GUARD.chat.gameforge.main_quest_lv94._290_sendLetter begin
 			say_title(mob_name(GUARD))
 			say(gameforge.main_quest_lv94._390_say)
@@ -536,7 +482,6 @@ quest main_quest_lv94 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when MOB3_1.kill begin
 			
 			if pc.count_item(ITEM3_1) < 1 then
@@ -556,7 +501,6 @@ quest main_quest_lv94 begin
 				say(gameforge.main_quest_lv94._420_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD3_EXP))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD3_GOLD))
@@ -581,17 +525,6 @@ quest main_quest_lv94 begin
 		end
 	end
 	
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._430_sendLetter)
@@ -632,7 +565,6 @@ quest main_quest_lv94 begin
 			set_state (state4_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state4_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._430_sendLetter)
@@ -654,7 +586,6 @@ quest main_quest_lv94 begin
 			say_title(string.format(gameforge.main_quest_lv94._1070_say,mob_name(MOB4_1),remain1,mob_name(MOB4_2),remain2,mob_name(MOB4_3),remain3))
 		end
 		
-		-- 클리어 전에 클릭 --
 		when GUARD.chat.gameforge.main_quest_lv94._430_sendLetter begin
 			say_title(mob_name(GUARD ))
 			say(string.format(gameforge.main_quest_lv94._470_say,MOB4_1_COUNT,MOB4_2_COUNT,MOB4_3_COUNT))
@@ -739,7 +670,6 @@ quest main_quest_lv94 begin
 			say(gameforge.main_quest_lv94._550_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD4_EXP))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD4_GOLD))
@@ -757,17 +687,6 @@ quest main_quest_lv94 begin
 		end
 	end
 	
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
 	state state5_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._560_sendLetter)
@@ -812,7 +731,6 @@ quest main_quest_lv94 begin
 			set_state (state5_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state5_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._560_sendLetter)
@@ -841,7 +759,6 @@ quest main_quest_lv94 begin
 			-- clearmapsignal()
 		end
 		
-		-- 클리어 전에 클릭 --
 		when GUARD.chat.gameforge.main_quest_lv94._560_sendLetter begin
 			say_title(mob_name(GUARD ))
 			say(string.format(gameforge.main_quest_lv94._660_say,ITEM5_1_COUNT))
@@ -882,7 +799,6 @@ quest main_quest_lv94 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when MOB5_1.kill begin
 			local item5_1_count = pc.count_item(ITEM5_1)
 			if item5_1_count < ITEM5_1_COUNT then
@@ -908,7 +824,6 @@ quest main_quest_lv94 begin
 				say(gameforge.main_quest_lv94._680_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD5_EXP))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD5_GOLD))
@@ -939,17 +854,6 @@ quest main_quest_lv94 begin
 			end
 		end
 	end
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
 	state state6_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._690_sendLetter)
@@ -983,7 +887,6 @@ quest main_quest_lv94 begin
 			set_state (state6_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state6_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._690_sendLetter)
@@ -1025,7 +928,6 @@ quest main_quest_lv94 begin
 			-- clearmapsignal()
 		end
 		
-		-- 클리어 전에 클릭 --
 		when GUARD.chat.gameforge.main_quest_lv94._690_sendLetter begin
 			say_title(mob_name(GUARD ))
 			say(gameforge.main_quest_lv94._760_say)
@@ -1083,7 +985,6 @@ quest main_quest_lv94 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when MOB6_1.kill or  MOB6_2.kill or  MOB6_3.kill or  MOB6_4.kill or  MOB6_5.kill or  MOB6_6.kill or  MOB6_7.kill   begin
 			if pc.count_item(ITEM6_1) < ITEM6_1_COUNT then
 				if	number (1,ITEM6_1_PCT_GET) == 1 then	
@@ -1134,7 +1035,6 @@ quest main_quest_lv94 begin
 				say(gameforge.main_quest_lv94._830_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD6_EXP))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD6_GOLD))
@@ -1156,17 +1056,6 @@ quest main_quest_lv94 begin
 			end
 		end
 	end
-	------------------------------------검은 황금-----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
 	state state7_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._850_sendLetter)
@@ -1231,7 +1120,6 @@ quest main_quest_lv94 begin
 			set_state (state7_3)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state7_3 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._850_sendLetter)
@@ -1285,11 +1173,11 @@ quest main_quest_lv94 begin
 			
 			if pc.count_item(ITEM7_1) > 0 then
 				local today_item7_1_checked = pc.getqf("today_item7_1_checked")
-				if today_item7_1_checked >= ITEM7_1_DAY_LIMIT then --1일 납품 갯수 초과
+				if today_item7_1_checked >= ITEM7_1_DAY_LIMIT then
 					say_title(mob_name(ALCHEMIST ))
 					say(gameforge.main_quest_lv94._1000_say)
 				else
-					if number (1,100) <= ITEM7_1_PCT_CHECK then -- 납품 성공
+					if number (1,100) <= ITEM7_1_PCT_CHECK then
 						pc.remove_item ( ITEM7_1, 1)	
 						local today_item7_1_checked = pc.getqf("today_item7_1_checked")
 						pc.setqf("today_item7_1_checked",today_item7_1_checked + 1)
@@ -1302,7 +1190,7 @@ quest main_quest_lv94 begin
 						end
 						q.set_counter_value(remain)
 						
-						if pc.getqf("total_item7_1_checked") >= ITEM7_1_COUNT then -- 납품 갯수 모두 달성
+						if pc.getqf("total_item7_1_checked") >= ITEM7_1_COUNT then
 							say_title(mob_name(ALCHEMIST ))
 							say(gameforge.main_quest_lv94._1010_say)
 							
@@ -1311,7 +1199,7 @@ quest main_quest_lv94 begin
 							say_title(mob_name(ALCHEMIST ))
 							say(string.format(gameforge.main_quest_lv94._980_say,ITEM7_1_COUNT-pc.getqf("total_item7_1_checked") ))
 						end
-					else -- 납품 실패
+					else
 						pc.remove_item ( ITEM7_1, 1)	
 						say_title(mob_name(ALCHEMIST ))
 						say(gameforge.main_quest_lv94._990_say)
@@ -1348,7 +1236,6 @@ quest main_quest_lv94 begin
 			say(gameforge.main_quest_lv94._1030_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD7_EXP))
 			--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD7_GOLD))

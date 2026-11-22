@@ -2,7 +2,6 @@ define checker 20001
 quest dragon_soul_daily_gift_mgr begin
 	state start begin
 		function is_event_on()
-			-- 지금 시각이 dragon_soul_daily_gift_mgr.quest에서 셋팅한 시간 대역인지 확인.
 			local s_time = game.get_event_flag("ds_dg_st")
 			local e_time = game.get_event_flag("ds_dg_et")
 			local now = os.time()
@@ -76,7 +75,6 @@ quest dragon_soul_daily_gift_mgr begin
 				return
 			end
 
-			-- 이벤트 수정인 경우는 event_id를 바꾸면 안됨.
 			if 0 == sel then
 				local event_id = game.get_event_flag("ds_dg_id")
 				game.set_event_flag("ds_dg_id", event_id + 1)

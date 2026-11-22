@@ -6,17 +6,6 @@ quest main_quest_lv94 begin
 			set_state (state1_1)
 		end
 	end
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
-	------------------------------------신약 복용------------------------------------
 	state state1_1 begin
 	
 		when letter begin
@@ -49,7 +38,6 @@ quest main_quest_lv94 begin
 			say(gameforge.main_quest_lv94._050_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 12904600))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 346000))
@@ -65,7 +53,6 @@ quest main_quest_lv94 begin
 			set_state (state1_2)
 		end
 	end
-	--퀘스트 수행--
 	state state1_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._010_sendLetter)
@@ -79,24 +66,13 @@ quest main_quest_lv94 begin
 		when 31032.use begin
 			pc.remove_item ( 31032, pc.count_item(31032))	
 			
-			affect.add_collect_point(POINT_MAGIC_DEF_GRADE,10,60*30) --60년	
+			affect.add_collect_point(POINT_MAGIC_DEF_GRADE,10,60*30) --60쨀창	
 				
 			set_state (state2_1)
 		end
 		
 	end
 	
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
-	------------------------------------뇌성산 정찰------------------------------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._080_sendLetter)
@@ -150,7 +126,6 @@ quest main_quest_lv94 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv94._080_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv94._170_say)
@@ -180,7 +155,6 @@ quest main_quest_lv94 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv94._080_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv94._170_say)
@@ -210,7 +184,6 @@ quest main_quest_lv94 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		-- end
-		--클리어 전--
 		-- when 20378.chat.gameforge.main_quest_lv94._080_sendLetter begin
 			-- say_title(mob_name(20378))
 			-- say(locale.main_quest_lv94.say_13)
@@ -240,7 +213,6 @@ quest main_quest_lv94 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv94._080_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv94._170_say)
@@ -279,7 +251,6 @@ quest main_quest_lv94 begin
 			say(gameforge.main_quest_lv94._280_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 14074422))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 357000))
@@ -293,17 +264,6 @@ quest main_quest_lv94 begin
 			set_state (state3_1)
 		end
 	end
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
-	------------------------------------도적단 세력 약화------------------------------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._290_sendLetter)
@@ -357,7 +317,6 @@ quest main_quest_lv94 begin
 			say_item_vnum(31033)
 		end
 		
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv94._290_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv94._390_say)
@@ -389,7 +348,6 @@ quest main_quest_lv94 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3596.kill begin
 			
 			if pc.count_item(31033) < 1 then
@@ -409,7 +367,6 @@ quest main_quest_lv94 begin
 				say(gameforge.main_quest_lv94._420_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 16014020))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -434,17 +391,6 @@ quest main_quest_lv94 begin
 		end
 	end
 	
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
-	------------------------------------외안투귀 세력 약화-----------------------------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._430_sendLetter)
@@ -485,7 +431,6 @@ quest main_quest_lv94 begin
 			set_state (state4_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state4_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._430_sendLetter)
@@ -507,7 +452,6 @@ quest main_quest_lv94 begin
 			say_title(string.format(gameforge.main_quest_lv94._1070_say,mob_name(3105),remain1,mob_name(3190),remain2,mob_name(3191),remain3))
 		end
 		
-		-- 클리어 전에 클릭 --
 		when 20378.chat.gameforge.main_quest_lv94._430_sendLetter begin
 			say_title(mob_name(20378 ))
 			say(string.format(gameforge.main_quest_lv94._470_say,30,3,1))
@@ -592,7 +536,6 @@ quest main_quest_lv94 begin
 			say(gameforge.main_quest_lv94._550_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 21014020))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 379000))
@@ -610,17 +553,6 @@ quest main_quest_lv94 begin
 		end
 	end
 	
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
-	------------------------------------거인족 세력 약화-----------------------------------
 	state state5_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._560_sendLetter)
@@ -665,7 +597,6 @@ quest main_quest_lv94 begin
 			set_state (state5_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state5_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._560_sendLetter)
@@ -694,7 +625,6 @@ quest main_quest_lv94 begin
 			-- clearmapsignal()
 		end
 		
-		-- 클리어 전에 클릭 --
 		when 20378.chat.gameforge.main_quest_lv94._560_sendLetter begin
 			say_title(mob_name(20378 ))
 			say(string.format(gameforge.main_quest_lv94._660_say,9))
@@ -735,7 +665,6 @@ quest main_quest_lv94 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3791.kill begin
 			local item5_1_count = pc.count_item(31034)
 			if item5_1_count < 9 then
@@ -761,7 +690,6 @@ quest main_quest_lv94 begin
 				say(gameforge.main_quest_lv94._680_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 25032586))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 390000))
@@ -792,17 +720,6 @@ quest main_quest_lv94 begin
 			end
 		end
 	end
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
-	------------------------------------뇌성산을 향해-----------------------------------
 	state state6_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._690_sendLetter)
@@ -836,7 +753,6 @@ quest main_quest_lv94 begin
 			set_state (state6_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state6_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._690_sendLetter)
@@ -878,7 +794,6 @@ quest main_quest_lv94 begin
 			-- clearmapsignal()
 		end
 		
-		-- 클리어 전에 클릭 --
 		when 20378.chat.gameforge.main_quest_lv94._690_sendLetter begin
 			say_title(mob_name(20378 ))
 			say(gameforge.main_quest_lv94._760_say)
@@ -936,7 +851,6 @@ quest main_quest_lv94 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3101.kill or  3102.kill or  3103.kill or  3104.kill or  3105.kill or  3190.kill or  3191.kill   begin
 			if pc.count_item(31035) < 1 then
 				if	number (1,3) == 1 then	
@@ -987,7 +901,6 @@ quest main_quest_lv94 begin
 				say(gameforge.main_quest_lv94._830_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 23074000))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -1009,17 +922,6 @@ quest main_quest_lv94 begin
 			end
 		end
 	end
-	------------------------------------검은 황금-----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
-	------------------------------------검은 황금----------------------------------
 	state state7_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._850_sendLetter)
@@ -1084,7 +986,6 @@ quest main_quest_lv94 begin
 			set_state (state7_3)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state7_3 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv94._850_sendLetter)
@@ -1138,11 +1039,11 @@ quest main_quest_lv94 begin
 			
 			if pc.count_item(31036) > 0 then
 				local today_item7_1_checked = pc.getqf("today_item7_1_checked")
-				if today_item7_1_checked >= 10 then --1일 납품 갯수 초과
+				if today_item7_1_checked >= 10 then
 					say_title(mob_name(20001 ))
 					say(gameforge.main_quest_lv94._1000_say)
 				else
-					if number (1,100) <= 70 then -- 납품 성공
+					if number (1,100) <= 70 then
 						pc.remove_item ( 31036, 1)	
 						local today_item7_1_checked = pc.getqf("today_item7_1_checked")
 						pc.setqf("today_item7_1_checked",today_item7_1_checked + 1)
@@ -1155,7 +1056,7 @@ quest main_quest_lv94 begin
 						end
 						q.set_counter_value(remain)
 						
-						if pc.getqf("total_item7_1_checked") >= 30 then -- 납품 갯수 모두 달성
+						if pc.getqf("total_item7_1_checked") >= 30 then
 							say_title(mob_name(20001 ))
 							say(gameforge.main_quest_lv94._1010_say)
 							
@@ -1164,7 +1065,7 @@ quest main_quest_lv94 begin
 							say_title(mob_name(20001 ))
 							say(string.format(gameforge.main_quest_lv94._980_say,30-pc.getqf("total_item7_1_checked") ))
 						end
-					else -- 납품 실패
+					else
 						pc.remove_item ( 31036, 1)	
 						say_title(mob_name(20001 ))
 						say(gameforge.main_quest_lv94._990_say)
@@ -1201,7 +1102,6 @@ quest main_quest_lv94 begin
 			say(gameforge.main_quest_lv94._1030_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 26473000))
 			--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))

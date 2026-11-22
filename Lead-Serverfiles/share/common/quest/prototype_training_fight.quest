@@ -30,15 +30,15 @@ quest prototype_training_fight begin
 			pc.setqf("pcy", 0)
 		end
 
-		when 20095.Chat."Trainingsk‰mpfe" begin
-			say_title("Trainingsk‰mpfe")
+		when 20095.Chat."Trainingsk√§mpfe" begin
+			say_title("Trainingsk√§mpfe")
 			if pc.getqf("round") > pc.getqf("max_rounds") then 
 				say("Du hast alle Runden absolviert. Dein Training ist abgeschlossen.")
 				set_state(__COMPLETE__)
 			else
-				say("Mˆchtest du eine Runde in der Tranginsarena versuchen?")
+				say("M√∂chtest du eine Runde in der Tranginsarena versuchen?")
 				say(string.format("Deine aktuelle Runde ist: %s",pc.getqf("round")))
-				say("Du hast 5 Minuten um die Runde abzuschlieﬂen.")
+				say("Du hast 5 Minuten um die Runde abzuschlie√üen.")
 				local s = select("Ja", "Nein")
 				if s == 1 then
 					-- storing current location of pc for return teleport later
@@ -200,9 +200,9 @@ end
 			local CordY = pc.getqf("pcy")*100 
 			local r = pc.getqf("round")
 			if pc.getqf("victory") == 1 then
-				say_title("Trainingsk‰mpfe")
+				say_title("Trainingsk√§mpfe")
 				say("Du hast diese Runde erfolgreich absolviert.")
-				say(string.format("Du erh‰lst %s Yang und %s XP",Rewards[r][1], Rewards[r][2]))
+				say(string.format("Du erh√§lst %s Yang und %s XP",Rewards[r][1], Rewards[r][2]))
 				local s = select("OK")
 				if s == 1 then
 					pc.change_money(Rewards[r][1])
@@ -213,8 +213,8 @@ end
 					set_state(menu)
 				end
 			else
-				say_title("Trainingsk‰mpfe")
-				say("Du konntest diese Runde nicht rechtzeitig abschlieﬂen.")
+				say_title("Trainingsk√§mpfe")
+				say("Du konntest diese Runde nicht rechtzeitig abschlie√üen.")
 				local x = select("OK")
 				if x == 1 then
 					pc.warp(CordX, CordY) -- returning to dialogue position
