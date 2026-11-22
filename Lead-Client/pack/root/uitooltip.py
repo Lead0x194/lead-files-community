@@ -20,9 +20,9 @@ import constInfo
 
 WARP_SCROLLS = [22011, 22000, 22010]
 
-DESC_DEFAULT_MAX_COLS = 26 
-DESC_MAX_COLS = 35
-DESC_MAX_WIDTH = 220
+DESC_WIDE_MIN_LENGTH = 26
+DESC_WRAP_COLS = 35
+DESC_WIDE_WIDTH = 220
 
 def chop(n):
 	return round(n - 0.5, 1)
@@ -207,7 +207,7 @@ class ToolTip(ui.ThinBoard):
 		return textLine
 
 	def AppendDescription(self, desc, limit, color = FONT_COLOR):
-		lines = SplitDescription(desc, DESC_MAX_COLS)
+		lines = SplitDescription(desc, DESC_WRAP_COLS)
 		if not lines:
 			return
 
@@ -1277,10 +1277,10 @@ class ItemToolTip(ToolTip):
 		return maxWidth
 
 	def __AdjustDescMaxWidth(self, desc):
-		if len(desc) < DESC_DEFAULT_MAX_COLS:
+		if len(desc) < DESC_WIDE_MIN_LENGTH:
 			return self.toolTipWidth
 	
-		return DESC_MAX_WIDTH
+		return DESC_WIDE_WIDTH
 
 	def __SetSkillBookToolTip(self, skillIndex, bookName, skillGrade):
 		skillName = skill.GetSkillName(skillIndex)
