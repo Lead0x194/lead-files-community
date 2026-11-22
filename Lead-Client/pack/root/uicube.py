@@ -465,17 +465,14 @@ class CubeWindow(ui.ScriptWindow):
 		if self.isUsable:
 			self.isUsable = False
 
-			print "ť�� �ݱ�"
 			net.SendChatPacket("/cube close")
 
 		self.Close()
 
 	def __OnAcceptButtonClick(self):
 		if len(self.cubeItemInfo) == 0:
-			"�� ť��"
 			return
 		
-		print "ť�� ���� ����"		
 		#for invenPos in self.cubeItemInfo.values():
 		#	net.SendChatPacket("/cube add " + str(invenPos))
 		net.SendChatPacket("/cube make")			

@@ -1702,12 +1702,10 @@ class GameWindow(ui.ScriptWindow):
 		self.interface.UpdateCubeInfo(gold, itemVnum, count)
 		
 	def BINARY_Cube_Succeed(self, itemVnum, count):
-		print "ť�� ���� ����"
 		self.interface.SucceedCubeWork(itemVnum, count)
 		pass
 
 	def BINARY_Cube_Failed(self):
-		print "ť�� ���� ����"
 		self.interface.FailedCubeWork()
 		pass
 

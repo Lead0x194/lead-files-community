@@ -26,7 +26,6 @@ CHANNEL_NOTIFY_FULL = "CHANNEL_NOTIFY_FULL"
 GUILD_BUILDING_LIST_TXT = app.GetLocalePath() + "/GuildBuildingList.txt"
 
 GUILD_MARK_MIN_LEVEL = "3"
-GUILD_MARK_NOT_ENOUGH_LEVEL = "��巹�� 3�̻� ���� �����մϴ�."
 
 ERROR_MARK_UPLOAD_NEED_RECONNECT = "UploadMark: Reconnect to game"
 ERROR_MARK_CHECK_NEED_RECONNECT = "CheckMark: Reconnect to game"

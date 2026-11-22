@@ -1684,11 +1684,9 @@ class SlotWindow(Window):
 		return wndMgr.GetSlotCount(self.hWnd)
 
 	def SetUseMode(self, flag):
-		"True�϶��� ItemToItem �� �������� �����ش�"
 		wndMgr.SetUseMode(self.hWnd, flag)
 
 	def SetUsableItem(self, flag): 
-		"True�� ���� ����Ų �������� ItemToItem ���� �����ϴ�"
 		wndMgr.SetUsableItem(self.hWnd, flag)
 
 	## Slot
