@@ -9,7 +9,6 @@
 #include "Cache.h"
 
 
-extern std::string g_stLocale;
 extern int g_test_server;
 extern int g_log;
 

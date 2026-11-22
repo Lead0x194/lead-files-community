@@ -18,7 +18,7 @@ int Start();
 BOOL g_loadProtoFromDatabase = false;
 std::string g_stTablePostfix;
 std::string g_stLocaleNameColumn = "name";
-std::string g_stLocale = "euckr";
+std::string g_stLocale = "utf8mb4";
 std::string g_stPlayerDBName = "";
 
 BOOL g_test_server = false;
@@ -164,12 +164,6 @@ int Start()
 
 	char szBuf[256+1];
 
-	if (CConfig::instance().GetValue("LOCALE", szBuf, 256))
-	{
-		g_stLocale = szBuf;
-		sys_log(0, "LOCALE set to %s", g_stLocale.c_str());
-	}
-	
 	if (!CConfig::instance().GetValue("TABLE_POSTFIX", szBuf, 256))
 	{
 		sys_err("TABLE_POSTFIX not configured use default");

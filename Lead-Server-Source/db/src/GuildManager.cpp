@@ -6,37 +6,14 @@
 #include "Config.h"
 #include <math.h>
 
-	extern std::string g_stLocale;
-
 	const int GUILD_RANK_MAX_NUM = 20;
-
-	bool isEurope()
-	{
-		do
-		{
-			if (g_stLocale.compare("germany") == 0) break;
-			if (g_stLocale.compare("france") == 0) break;
-			if (g_stLocale.compare("italy") == 0) break;
-			if (g_stLocale.compare("spain") == 0) break;
-			if (g_stLocale.compare("uk") == 0) break;
-			if (g_stLocale.compare("turkey") == 0) break;
-			if (g_stLocale.compare("poland") == 0) break;
-			if (g_stLocale.compare("portugal") == 0) break;
-			if (g_stLocale.compare("greek") == 0) break;
-
-			return false;
-		} while (false);
-
-		return true;
-	}
 
 	DWORD GetGuildWarWaitStartDuration()
 	{
 		// const int GUILD_WAR_WAIT_START_DURATION = 60;
 		// const int GUILD_WAR_WAIT_START_DURATION = 5; 
 
-		if (isEurope() == true) return 60;
-		else return 5;
+		return 5;
 	}
 
 	DWORD GetGuildWarReserveSeconds()
@@ -44,8 +21,7 @@
 		// const int GUILD_WAR_RESERVE_SECONDS = 180;
 		// const int GUILD_WAR_RESERVE_SECONDS = 10;
 
-		if (isEurope() == true) return 180;
-		else return 10;
+		return 10;
 	}
 
 	namespace 

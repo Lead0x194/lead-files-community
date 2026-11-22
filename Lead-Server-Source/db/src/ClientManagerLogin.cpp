@@ -8,7 +8,6 @@
 #include "QID.h"
 #include "Cache.h"
 
-extern std::string g_stLocale;
 extern bool CreatePlayerTableFromRes(MYSQL_RES * res, TPlayerTable * pkTab);
 extern int g_test_server;
 extern int g_log;
@@ -188,19 +187,9 @@ void CClientManager::RESULT_LOGIN_BY_KEY(CPeer * peer, SQLMsg * msg)
 	str_to_number(info->pAccountTable->bEmpire, row[col++]);
 	info->account_index = 1;
 
-	extern std::string g_stLocale;
-	if (g_stLocale == "gb2312")
-	{
-		snprintf(szQuery, sizeof(szQuery),
-				"SELECT id, name, job, level, alignment, st, ht, dx, iq, part_main, part_hair, x, y, skill_group, change_name FROM player%s WHERE account_id=%u",
-				GetTablePostfix(), info->pAccountTable->id);
-	}
-	else
-	{
-		snprintf(szQuery, sizeof(szQuery),
-				"SELECT id, name, job, level, playtime, st, ht, dx, iq, part_main, part_hair, x, y, skill_group, change_name FROM player%s WHERE account_id=%u",
-				GetTablePostfix(), info->pAccountTable->id);
-	}
+	snprintf(szQuery, sizeof(szQuery),
+			"SELECT id, name, job, level, playtime, st, ht, dx, iq, part_main, part_hair, x, y, skill_group, change_name FROM player%s WHERE account_id=%u",
+			GetTablePostfix(), info->pAccountTable->id);
 
 	CDBManager::instance().ReturnQuery(szQuery, QID_LOGIN, peer->GetHandle(), info);
 }
@@ -376,19 +365,9 @@ void CClientManager::RESULT_LOGIN(CPeer * peer, SQLMsg * msg)
 			++info->account_index;
 
 			char queryStr[512];
-			extern std::string g_stLocale;
-			if (g_stLocale == "gb2312")
-			{
-				snprintf(queryStr, sizeof(queryStr),
-						"SELECT id, name, job, level, alignment, st, ht, dx, iq, part_main, part_hair, x, y, skill_group, change_name FROM player%s WHERE account_id=%u",
-						GetTablePostfix(), info->pAccountTable->id);
-			}
-			else
-			{
-				snprintf(queryStr, sizeof(queryStr),
-						"SELECT id, name, job, level, playtime, st, ht, dx, iq, part_main, part_hair, x, y, skill_group, change_name FROM player%s WHERE account_id=%u",
-						GetTablePostfix(), info->pAccountTable->id);
-			}
+			snprintf(queryStr, sizeof(queryStr),
+					"SELECT id, name, job, level, playtime, st, ht, dx, iq, part_main, part_hair, x, y, skill_group, change_name FROM player%s WHERE account_id=%u",
+					GetTablePostfix(), info->pAccountTable->id);
 
 			CDBManager::instance().ReturnQuery(queryStr, QID_LOGIN, peer->GetHandle(), info);
 		}
