@@ -86,3 +86,6 @@ else:
 
 LoadLocaleFile(LOCALE_INTERFACE_FILE_NAME, locals())
 
+
+import localeInfo
+localeInfo.ReportMissingKeys(__name__)

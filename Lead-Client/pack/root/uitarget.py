@@ -192,7 +192,7 @@ class TargetBoard(ui.ThinBoard):
 					search_keys = ["TARGET_INFO_RACE_" + pure_id, "TARGET_INFO_NEWRACE_" + pure_id]
 
 				for key in search_keys:
-					if hasattr(localeInfo, key):
+					if key in vars(localeInfo):
 						display_name = getattr(localeInfo, key)
 						break
 				
