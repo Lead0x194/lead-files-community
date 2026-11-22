@@ -157,6 +157,24 @@ window = {
 					),
 				},
 
+				## GuildMoney
+				{
+					"name" : "GuildMoney", "type" : "text", "x" : 3, "y" : 233, "text" : uiScriptLocale.GUILD_MONEY,
+					"children" :
+					(
+						{
+							"name" : "GuildMoneySlot",
+							"type" : "image",
+							"x" : 70,
+							"y" : -2,
+							"image" : LARGE_VALUE_FILE,
+							"children" :
+							(
+								{"name" : "GuildMoneyValue", "type":"text", "text":"9999999", "x":0, "y":0, "all_align":"center"},
+							),
+						},
+					),
+				},
 			),
 		},
 

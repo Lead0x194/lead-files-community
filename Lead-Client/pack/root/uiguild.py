@@ -811,24 +811,14 @@ class GuildWindow(ui.ScriptWindow):
 			self.changeGradeNameDialog = ChangeGradeNameDialog()
 			pyScrLoader.LoadScriptFile(self.changeGradeNameDialog, "uiscript/changegradenamedialog.py")
 
-			if localeInfo.IsRTL():
-				self.pageWindow = {
-					"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage_eu.py"),
-					"BOARD"			: self.PageWindow(self, "uiscript/guildwindow_boardpage.py"),
-					"MEMBER"		: self.PageWindow(self, "uiscript/guildwindow_memberpage.py"),
-					"BASE_INFO"		: self.PageWindow(self, "uiscript/guildwindow_baseinfopage.py"),
-					"SKILL"			: self.PageWindow(self, "uiscript/guildwindow_guildskillpage.py"),
-					"GRADE"			: self.PageWindow(self, "uiscript/guildwindow_gradepage.py"),
-				}
-			else:
-				self.pageWindow = {
-					"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage_eu.py"),
-					"BOARD"			: self.PageWindow(self, "uiscript/guildwindow_boardpage.py"),
-					"MEMBER"		: self.PageWindow(self, "uiscript/guildwindow_memberpage.py"),
-					"BASE_INFO"		: self.PageWindow(self, "uiscript/guildwindow_baseinfopage.py"),
-					"SKILL"			: self.PageWindow(self, "uiscript/guildwindow_guildskillpage.py"),
-					"GRADE"			: self.PageWindow(self, "uiscript/guildwindow_gradepage.py"),
-				}
+			self.pageWindow = {
+				"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage.py"),
+				"BOARD"			: self.PageWindow(self, "uiscript/guildwindow_boardpage.py"),
+				"MEMBER"		: self.PageWindow(self, "uiscript/guildwindow_memberpage.py"),
+				"BASE_INFO"		: self.PageWindow(self, "uiscript/guildwindow_baseinfopage.py"),
+				"SKILL"			: self.PageWindow(self, "uiscript/guildwindow_guildskillpage.py"),
+				"GRADE"			: self.PageWindow(self, "uiscript/guildwindow_gradepage.py"),
+			}
 				
 			for window in self.pageWindow.values():
 				pyScrLoader.LoadScriptFile(window, window.GetScriptFileName())
