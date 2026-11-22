@@ -229,18 +229,6 @@ PyObject* imePasteString(PyObject * poSelf, PyObject * poArgs)
 	return Py_BuildNone();
 }
 
-PyObject* imePasteBackspace(PyObject * poSelf, PyObject * poArgs)
-{
-	CPythonIME::Instance().WMChar(NULL, WM_CHAR, 0x08, NULL);
-	return Py_BuildNone();
-}
-
-PyObject* imePasteReturn(PyObject * poSelf, PyObject * poArgs)
-{
-	CPythonIME::Instance().WMChar(NULL, WM_CHAR, 0x0D, NULL);
-	return Py_BuildNone();
-}
-
 void initime()
 {
 	static PyMethodDef s_methods[] =
@@ -277,8 +265,6 @@ void initime()
 		{ "SetCursorPosition",		imeSetCursorPosition,		METH_VARARGS },
 		{ "Delete",					imeDelete,					METH_VARARGS },
 		{ "PasteString",			imePasteString,				METH_VARARGS },
-		{ "PasteBackspace",			imePasteBackspace,			METH_VARARGS },
-		{ "PasteReturn",			imePasteReturn,				METH_VARARGS },
 		{ "PasteTextFromClipBoard",	imePasteTextFromClipBoard,	METH_VARARGS },
 		{ "EnablePaste",			imeEnablePaste,				METH_VARARGS },
 
