@@ -549,7 +549,7 @@ void CHARACTER::Destroy()
 
 const char * CHARACTER::GetName() const
 {
-	return m_stName.empty() ? (m_pkMobData ? m_pkMobData->m_table.szLocaleName : "") : m_stName.c_str();
+	return m_stName.empty() ? (m_pkMobData ? m_pkMobData->m_table.szName : "") : m_stName.c_str();
 }
 
 void CHARACTER::OpenMyShop(const char * c_pszSign, TShopItemTable * pTable, BYTE bItemCount)
@@ -867,7 +867,7 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 			addPacket.dwLevel = 0;
 		}
 
-		if (IsPC() || !m_pkMobData || (!m_stName.empty() && m_stName != m_pkMobData->m_table.szLocaleName))
+		if (IsPC() || !m_pkMobData || (!m_stName.empty() && m_stName != m_pkMobData->m_table.szName))
 			strlcpy(addPacket.name, GetName(), sizeof(addPacket.name));
 
 		if (GetGuild() != NULL)
@@ -5790,7 +5790,7 @@ void CHARACTER::SpecificEffectPacket(const char filename[MAX_EFFECT_FILE_NAME])
 
 const char* CHARACTER::GetLocaleName() const
 {
-	if (IsPC() || !m_pkMobData || (!m_stName.empty() && m_stName != m_pkMobData->m_table.szLocaleName))
+	if (IsPC() || !m_pkMobData || (!m_stName.empty() && m_stName != m_pkMobData->m_table.szName))
 		return GetName();
 
 	return LC_MOB(GetRaceNum());

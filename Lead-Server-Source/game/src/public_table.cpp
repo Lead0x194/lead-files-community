@@ -43,7 +43,7 @@ void __CreateDropList_WriteMob(char* szLineBuf, size_t lineSize, FILE* pFile, DW
 		return;
 	}
 
-	snprintf(szLineBuf, lineSize, "%s [Lv. %u] (%u):\n", pkMob->m_table.szLocaleName, pkMob->m_table.bLevel, dwMobRace);
+	snprintf(szLineBuf, lineSize, "%s [Lv. %u] (%u):\n", pkMob->m_table.szName, pkMob->m_table.bLevel, dwMobRace);
 	fputs(szLineBuf, pFile);
 }
 
@@ -72,7 +72,7 @@ void __CreateDropList_WriteLevelGroup(char* szLineBuf, size_t lineSize, FILE* pF
 				}
 
 				snprintf(szLineBuf, lineSize, "\t\t\t- %dx %s (%u)\n",
-					rkLevelVec[i].iCount, pProto->szLocaleName, dwVnum);
+					rkLevelVec[i].iCount, pProto->szName, dwVnum);
 				fputs(szLineBuf, pFile);
 			}
 		}
@@ -89,12 +89,12 @@ void __CreateDropList_WriteLevelGroup(char* szLineBuf, size_t lineSize, FILE* pF
 			if (bWriteChance)
 			{
 				snprintf(szLineBuf, lineSize, "\t\t- %dx %s (%u) [Chance %.4f%%]\n",
-					rkLevelVec[i].iCount, pProto->szLocaleName, dwVnum, ((float)rkLevelVec[i].dwPct) / 10000.0f);
+					rkLevelVec[i].iCount, pProto->szName, dwVnum, ((float)rkLevelVec[i].dwPct) / 10000.0f);
 			}
 			else
 			{
 				snprintf(szLineBuf, lineSize, "\t\t- %dx %s (%u)\n",
-					rkLevelVec[i].iCount, pProto->szLocaleName, dwVnum);
+					rkLevelVec[i].iCount, pProto->szName, dwVnum);
 			}
 			fputs(szLineBuf, pFile);
 		}
@@ -126,7 +126,7 @@ void __CreateDropList_WriteDropGroup(char* szLineBuf, size_t lineSize, FILE* pFi
 				}
 
 				snprintf(szLineBuf, lineSize, "\t\t- %dx %s (%u)\n",
-					rkDropVec[i].iCount, pProto->szLocaleName, dwVnum);
+					rkDropVec[i].iCount, pProto->szName, dwVnum);
 				fputs(szLineBuf, pFile);
 			}
 		}
@@ -143,12 +143,12 @@ void __CreateDropList_WriteDropGroup(char* szLineBuf, size_t lineSize, FILE* pFi
 			if (bWriteChance)
 			{
 				snprintf(szLineBuf, lineSize, "\t- %dx %s (%u) [Chance %.4f%%]\n",
-					rkDropVec[i].iCount, pProto->szLocaleName, dwVnum, ((float)rkDropVec[i].dwPct) / 10000.0f);
+					rkDropVec[i].iCount, pProto->szName, dwVnum, ((float)rkDropVec[i].dwPct) / 10000.0f);
 			}
 			else
 			{
 				snprintf(szLineBuf, lineSize, "\t- %dx %s (%u)\n",
-					rkDropVec[i].iCount, pProto->szLocaleName, dwVnum);
+					rkDropVec[i].iCount, pProto->szName, dwVnum);
 			}
 			fputs(szLineBuf, pFile);
 		}
@@ -190,12 +190,12 @@ void __CreateDropList_WriteMobGroup(char* szLineBuf, size_t lineSize, FILE* pFil
 				if (bWriteChance)
 				{
 					snprintf(szLineBuf, lineSize, "\t\t- %dx %s (%u) [Chance %d (compared to other items!)]\n",
-						rkMobItemVec[i].iCount, pProto->szLocaleName, dwVnum, iProb);
+						rkMobItemVec[i].iCount, pProto->szName, dwVnum, iProb);
 				}
 				else
 				{
 					snprintf(szLineBuf, lineSize, "\t\t- %dx %s (%u)\n",
-						rkMobItemVec[i].iCount, pProto->szLocaleName, dwVnum);
+						rkMobItemVec[i].iCount, pProto->szName, dwVnum);
 				}
 				fputs(szLineBuf, pFile);
 			}
@@ -296,7 +296,7 @@ void __CreateCommonDropList_WriteItems(char* szLineBuf, size_t lineSize, FILE* p
 		}
 
 		int iWroteSize = snprintf(szLineBuf, lineSize, "\t- %ux %s (%u)",
-			info->m_bCount, pTable->szLocaleName, dwVnum);
+			info->m_bCount, pTable->szName, dwVnum);
 		if (info->m_iLevelEnd > 0)
 			iWroteSize += snprintf(szLineBuf + iWroteSize, lineSize - iWroteSize, " from Level %u - %u",
 				info->m_iLevelStart, info->m_iLevelEnd);

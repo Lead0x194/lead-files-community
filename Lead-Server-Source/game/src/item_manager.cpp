@@ -92,7 +92,7 @@ bool ITEM_MANAGER::Initialize(TItemTable * table, int size)
 
 	for (i = 0; i < size; ++i)
 	{
-		len2 = snprintf(buf + len, sizeof(buf) - len, "%5u %-16s", m_vec_prototype[i].dwVnum, m_vec_prototype[i].szLocaleName);
+		len2 = snprintf(buf + len, sizeof(buf) - len, "%5u %-16s", m_vec_prototype[i].dwVnum, m_vec_prototype[i].szName);
 
 		if (len2 < 0 || len2 >= (int) sizeof(buf) - len)
 			len += (sizeof(buf) - len) - 1;
@@ -606,7 +606,7 @@ bool ITEM_MANAGER::GetVnum(const char * c_pszName, DWORD & r_dwVnum)
 
 	for (DWORD i = 0; i < m_vec_prototype.size(); ++i, ++pTable)
 	{
-		if (!_strnicmp(c_pszName, pTable->szLocaleName, len))
+		if (!_strnicmp(c_pszName, pTable->szName, len))
 		{
 			r_dwVnum = pTable->dwVnum;
 			return true;
