@@ -1,13 +1,13 @@
 if new_quest_lv22_neededAmountDrop1 ~= pc . count_item ( new_quest_lv22_drop1 ) or new_quest_lv22_neededAmountDrop2 ~= pc . count_item ( new_quest_lv22_drop2 ) then 
-say_title ( gameforge . new_quest_lv22 . _016_send_letter ) 
-say ( gameforge . new_quest_lv22 . _066_say ) 
+say_title ( "[LC;5684]" ) 
+say ( "[LC;5716]" ) 
 if new_quest_lv22_neededAmountDrop1 ~= pc . count_item ( new_quest_lv22_drop1 ) then 
-say_reward ( string . format ( gameforge . new_quest_lv22 . _063_say , new_quest_lv22_neededAmountDrop1 - pc . count_item ( new_quest_lv22_drop1 ) , mob_name ( new_quest_lv22_mob1 ) ) ) 
+say_reward ( string . format ( "[LC;5713;%s]" , new_quest_lv22_neededAmountDrop1 - pc . count_item ( new_quest_lv22_drop1 ) , mob_name ( new_quest_lv22_mob1 ) ) ) 
 end 
 if new_quest_lv22_neededAmountDrop2 ~= pc . count_item ( new_quest_lv22_drop2 ) then 
-say_reward ( string . format ( gameforge . new_quest_lv22 . _064_say , new_quest_lv22_neededAmountDrop2 - pc . count_item ( new_quest_lv22_drop2 ) , mob_name ( new_quest_lv22_mob2 ) ) ) 
+say_reward ( string . format ( "[LC;5714;%s]" , new_quest_lv22_neededAmountDrop2 - pc . count_item ( new_quest_lv22_drop2 ) , mob_name ( new_quest_lv22_mob2 ) ) ) 
 end 
 else 
-say_title ( gameforge . new_quest_lv22 . _025_say_title ) 
-say ( gameforge . new_quest_lv22 . _065_say ) 
+say_title ( "[LC;5692]" ) 
+say ( "[LC;5715]" ) 
 end 

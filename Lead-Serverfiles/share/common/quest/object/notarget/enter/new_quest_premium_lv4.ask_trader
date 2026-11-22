@@ -1,4 +1,4 @@
-send_letter ( gameforge . new_quest_premium_lv4 . _40_qSetTitle ) 
+send_letter ( "[LC;6332]" ) 
 pc . setqf ( "amountYang" , 500 ) 
 pc . setqf ( "amountXp" , 1000 ) 
 pc . setqf ( "neededAmountDrop1" , 2 ) 
@@ -9,9 +9,9 @@ pc . setqf ( "drop1" , 50705 )
 pc . setqf ( "drop2" , 30177 ) 
 pc . setqf ( "new_quest_premium_lv4_collect_count_1" , 0 ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_premium_lv4 . _40_qSetTitle ) 
+q . set_title ( "[LC;6332]" ) 
 local v = find_npc_by_vnum ( 9001 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET2__" , v , gameforge . new_quest_premium_lv4 . _50_targetVid ) 
+target . vid ( "__TARGET2__" , v , "[LC;6334]" ) 
 end 

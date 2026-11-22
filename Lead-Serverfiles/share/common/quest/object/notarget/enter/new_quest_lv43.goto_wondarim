@@ -1,10 +1,10 @@
 new_quest_lv43_amountYang = 32000 
 new_quest_lv43_amountXp = 1.25e+06 
-send_letter ( gameforge . new_quest_lv43 . _006_send_letter ) 
+send_letter ( "[LC;5926]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv43 . _006_send_letter ) 
+q . set_title ( "[LC;5926]" ) 
 local v = find_npc_by_vnum ( 20087 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET3__" , v , gameforge . new_quest_lv43 . _010_target ) 
+target . vid ( "__TARGET3__" , v , "[LC;5927]" ) 
 end 

@@ -1,14 +1,14 @@
 local mob1_info = pc . getqf ( "mob1_info" ) 
 if mob1_info == 6 then 
-mob1_name = gameforge . harvest_festival . _410_say elseif mob1_info == 5 then 
-mob1_name = gameforge . harvest_festival . _420_say elseif mob1_info == 4 then 
-mob1_name = gameforge . harvest_festival . _430_say elseif mob1_info == 3 then 
-mob1_name = gameforge . harvest_festival . _440_say elseif mob1_info == 2 then 
-mob1_name = gameforge . harvest_festival . _450_say elseif mob1_info == 1 then 
-mob1_name = gameforge . harvest_festival . _460_say end 
-say_title ( gameforge . harvest_festival . _520_sendLetter ) 
-say ( string . format ( gameforge . harvest_festival . _530_say , mob1_name ) ) 
-local gogo_set = select ( gameforge . harvest_festival . _330_select , gameforge . harvest_festival . _540_select ) 
+mob1_name = "[LC;1457]" elseif mob1_info == 5 then 
+mob1_name = "[LC;1458]" elseif mob1_info == 4 then 
+mob1_name = "[LC;1459]" elseif mob1_info == 3 then 
+mob1_name = "[LC;1460]" elseif mob1_info == 2 then 
+mob1_name = "[LC;1461]" elseif mob1_info == 1 then 
+mob1_name = "[LC;1462]" end 
+say_title ( "[LC;1468]" ) 
+say ( string . format ( "[LC;1469;%s]" , mob1_name ) ) 
+local gogo_set = select ( "[LC;1449]" , "[LC;1470]" ) 
 if gogo_set == 2 then 
 clear_letter ( ) 
 set_state ( "information" ) 

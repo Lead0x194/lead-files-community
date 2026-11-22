@@ -1,6 +1,6 @@
-say_title ( gameforge . new_quest_lv43 . _006_send_letter ) 
+say_title ( "[LC;5926]" ) 
 if pc . getqf ( "collect_count_1" ) ~= 0 then 
-say ( gameforge . new_quest_lv43 . _041_say ) 
+say ( "[LC;5944]" ) 
 else 
 q . done ( ) 
 set_state ( "goto_wondarim" ) 

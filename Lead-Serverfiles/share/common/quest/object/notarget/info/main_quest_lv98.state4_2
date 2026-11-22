@@ -1,7 +1,7 @@
-say_title ( gameforge . main_quest_lv98 . _640_sayTitle ) 
-say ( gameforge . main_quest_lv98 . _650_say ) 
+say_title ( "[LC;5421]" ) 
+say ( "[LC;5422]" ) 
 say ( "" ) 
-say_title ( gameforge . main_quest_lv98 . _700_counterName ) 
+say_title ( "[LC;5427]" ) 
 local npc1 = " " 
 if pc . getqf ( "click_npc1" ) == 1 then 
 npc1 = "O" 
@@ -20,8 +20,8 @@ npc4 = "O"
 end 
 local remain = 4 - pc . getqf ( "click_npc1" ) - pc . getqf ( "click_npc2" ) - pc . getqf ( "click_npc3" ) - pc . getqf ( "click_npc4" ) 
 q . set_counter_value ( remain ) 
-say ( string . format ( gameforge . main_quest_lv98 . _710_say , npc1 , npc2 ) ) 
-say ( string . format ( gameforge . main_quest_lv98 . _720_say , npc3 , npc4 ) ) 
+say ( string . format ( "[LC;5428;%s;%s]" , npc1 , npc2 ) ) 
+say ( string . format ( "[LC;5429;%s;%s]" , npc3 , npc4 ) ) 
 say ( "" ) 
-say_reward ( gameforge . main_quest_lv98 . _570_sayReward ) 
+say_reward ( {} ) 
 say ( "" ) 

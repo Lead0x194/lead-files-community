@@ -1,5 +1,5 @@
-say_title ( gameforge . horse_levelup . _130_makequestbutton ) 
-say ( gameforge . horse_levelup . _140_say ) 
+say_title ( "[LC;1574]" ) 
+say ( "[LC;1575]" ) 
 if not pc . is_mount ( ) then 
 setstate ( "failure" ) 
 end 

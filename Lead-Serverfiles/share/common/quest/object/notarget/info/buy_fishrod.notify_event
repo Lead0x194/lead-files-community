@@ -1,11 +1,11 @@
-say_title ( gameforge . buy_fishrod . _20_sayTitle ) 
-say ( gameforge . buy_fishrod . _140_say ) 
-local b = select ( gameforge . buy_fishrod . _120_select , gameforge . buy_fishrod . _130_select ) 
+say_title ( "[LC;43]" ) 
+say ( "[LC;36]" ) 
+local b = select ( "[LC;34]" , "[LC;35]" ) 
 if 1 == b then 
 setstate ( "play_event" ) 
 elseif 2 == b then 
 setstate ( "__COMPLETE__" ) 
 q . done ( ) 
 else 
-say ( string . format ( gameforge . buy_fishrod . _80_say , b ) ) 
+say ( string . format ( "[LC;53;%s]" , b ) ) 
 end 

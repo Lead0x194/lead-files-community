@@ -1,3 +1,3 @@
-if game . get_event_flag ( "w21open_event" ) > 0 then say_title ( gameforge . event_flame_dungeon_open . _010_npcChat ) 
-say ( string . format ( gameforge . levelup . _26_say , 100 - pc . getqf ( "kill_count_1" ) ) ) 
+if game . get_event_flag ( "w21open_event" ) > 0 then say_title ( "[LC;863]" ) 
+say ( string . format ( "[LC;1824;%s]" , 100 - pc . getqf ( "kill_count_1" ) ) ) 
  return end 

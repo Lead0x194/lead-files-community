@@ -1,4 +1,4 @@
 pc . setqf ( "rgd_kill" , 0 ) 
 pc . setqf ( "state_8_start" , get_global_time ( ) ) 
-notice_multiline ( string . format ( gameforge . main_quest_lv66 . _380_notice , 30 ) , notice ) 
+notice_multiline ( string . format ( "[LC;4599;%d]" , 30 ) , notice ) 
 timer ( "rgd_kill_timer" , 30 * 60 / 2 ) 

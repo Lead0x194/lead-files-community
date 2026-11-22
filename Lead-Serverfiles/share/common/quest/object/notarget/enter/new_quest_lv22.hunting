@@ -13,6 +13,6 @@ new_quest_lv22_mob1 = 115
 new_quest_lv22_mob2 = 114 
 new_quest_lv22_drop1 = 35000 
 new_quest_lv22_drop2 = 35001 
-send_letter ( gameforge . new_quest_lv22 . _016_send_letter ) 
+send_letter ( "[LC;5684]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv22 . _016_send_letter ) 
+q . set_title ( "[LC;5684]" ) 

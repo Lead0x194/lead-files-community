@@ -2,5 +2,5 @@ diarypage = 30181
 goto_npc = 20090 
 local v = find_npc_by_vnum ( goto_npc ) 
 if 0 ~= v then 
-target . vid ( "__TARGET__" , v , gameforge . new_quest_lv75 . _010_target ) 
+target . vid ( "__TARGET__" , v , "[LC;6145]" ) 
 end 

@@ -3,14 +3,14 @@ new_quest_lv22_neededAmountDrop2 = 1
 new_quest_lv22_drop1 = 35000 
 new_quest_lv22_drop2 = 35001 
 new_quest_lv22_timeToFind = 1200 
-send_letter ( gameforge . new_quest_lv22 . _016_send_letter ) 
-q . set_title ( gameforge . new_quest_lv22 . _016_send_letter ) 
+send_letter ( "[LC;5684]" ) 
+q . set_title ( "[LC;5684]" ) 
 local timeLeft = new_quest_lv22_timeToFind - ( get_time ( ) - pc . getqf ( "new_quest_lv22_startTime" ) ) 
 displayTime = timeLeft / 60 
-q . set_clock ( gameforge . new_quest_lv22 . _082_set_clock , timeLeft ) 
+q . set_clock ( "[LC;5722]" , timeLeft ) 
 q . start ( ) 
 local v = find_npc_by_vnum ( 20018 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET3__" , v , gameforge . new_quest_lv22 . _030_target ) 
+target . vid ( "__TARGET3__" , v , "[LC;5695]" ) 
 end 

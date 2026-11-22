@@ -1,6 +1,6 @@
-send_letter ( gameforge . new_quest_lv17 . _020_say_title ) 
+send_letter ( "[LC;5632]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv17 . _020_say_title ) 
+q . set_title ( "[LC;5632]" ) 
 if pc . getqf ( "collect_count" ) == 0 then 
 pc . setqf ( "collect_count" , 5 ) 
 end 

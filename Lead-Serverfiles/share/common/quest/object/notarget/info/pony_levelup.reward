@@ -1,13 +1,13 @@
-say ( gameforge . pony_levelup . _790_makequestbutton ) 
+say ( "[LC;6661]" ) 
 if horse . get_level ( ) >= 11 then 
-say ( gameforge . pony_levelup . _800_say ) 
+say ( "[LC;6662]" ) 
 elseif ( horse . get_level ( ) >= 1 and horse . get_level ( ) <= 10 ) then 
 local s = number ( 1 , 2 ) 
 if 1 >= s then 
-say ( gameforge . pony_levelup . _810_say ) 
+say ( "[LC;6664]" ) 
 pc . setqf ( "next_time" , 0 ) 
 elseif 2 >= s then 
-say ( gameforge . pony_levelup . _820_say ) 
+say ( "[LC;6665]" ) 
 if pc . countitem ( "50050" ) >= 1 then 
 char_log ( 0 , "PONY_ADVANCE" , "BEGIN" ) 
 pc . removeitem ( "50050" , 1 ) 
@@ -17,15 +17,15 @@ horse . advance ( )
 horse . ride ( ) 
 char_log ( 0 , "PONY_ADVANCE" , "INC horse_advance 1" ) 
 char_log ( 0 , "PONY_ADVANCE" , "END" ) 
-say ( string . format ( gameforge . pony_levelup . _830_say , ( horse . get_level ( ) ) ) ) 
+say ( string . format ( "[LC;6666;%s]" , ( horse . get_level ( ) ) ) ) 
 if horse . get_level ( ) == 10 then 
-say ( gameforge . pony_levelup . _840_say ) 
+say ( "[LC;6667]" ) 
 pc . setqf ( "next_time" , 0 ) 
 else 
-say ( gameforge . pony_levelup . _850_say ) 
+say ( "[LC;6668]" ) 
 end 
 else 
-say ( gameforge . pony_levelup . _860_say ) 
+say ( "[LC;6669]" ) 
 end 
 end 
 end 

@@ -1,4 +1,4 @@
-say ( gameforge . horse_levelup . _80_say ) 
+say ( "[LC;1616]" ) 
 if not pc . is_mount ( ) then 
 setstate ( "failure" ) 
 end 

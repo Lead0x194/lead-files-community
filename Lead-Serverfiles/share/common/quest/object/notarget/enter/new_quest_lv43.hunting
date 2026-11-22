@@ -1,5 +1,5 @@
 new_quest_lv43_dropProb1 = 5 
 new_quest_lv43_drop1 = 30142 
-send_letter ( gameforge . new_quest_lv43 . _006_send_letter ) 
+send_letter ( "[LC;5926]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv43 . _006_send_letter ) 
+q . set_title ( "[LC;5926]" ) 

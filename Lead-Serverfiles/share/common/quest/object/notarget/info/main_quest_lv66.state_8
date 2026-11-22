@@ -1,8 +1,8 @@
-say_title ( gameforge . main_quest_lv66 . _390_sendLetter ) 
-say ( string . format ( gameforge . main_quest_lv66 . _400_say , 200 ) ) 
+say_title ( "[LC;4600]" ) 
+say ( string . format ( "[LC;4601;%d]" , 200 ) ) 
 local t = pc . getqf ( "state_8_start" ) + 30 * 60 - get_global_time ( ) 
 if t < 0 then 
-say ( gameforge . main_quest_lv66 . _410_say ) 
+say ( "[LC;4603]" ) 
 else 
-say ( string . format ( gameforge . main_quest_lv66 . _420_say , t / 60 ) ) 
+say ( string . format ( "[LC;4604;%d]" , t / 60 ) ) 
 end 

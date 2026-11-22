@@ -1,14 +1,14 @@
-say_title ( gameforge . new_quest_lv7 . _020_say_title ) 
-say ( gameforge . new_quest_lv7 . _092_say ) 
+say_title ( "[LC;6082]" ) 
+say ( "[LC;6112]" ) 
 if pc . count_item ( new_quest_lv7_drop1 ) < new_quest_lv7_AmountNeed1 then 
-say_reward ( string . format ( gameforge . new_quest_lv7 . _085_1_say_reward , new_quest_lv7_AmountNeed1 - 
+say_reward ( string . format ( "[LC;6102;%s]" , new_quest_lv7_AmountNeed1 - 
 pc . count_item ( new_quest_lv7_drop1 ) ) ) 
 end 
 if pc . count_item ( new_quest_lv7_drop2 ) < new_quest_lv7_AmountNeed2 then 
-say_reward ( string . format ( gameforge . new_quest_lv7 . _085_2_say_reward , new_quest_lv7_AmountNeed2 - 
+say_reward ( string . format ( "[LC;6103;%s]" , new_quest_lv7_AmountNeed2 - 
 pc . count_item ( new_quest_lv7_drop2 ) ) ) 
 end 
 if pc . count_item ( new_quest_lv7_drop3 ) < new_quest_lv7_AmountNeed3 then 
-say_reward ( string . format ( gameforge . new_quest_lv7 . _085_3_say_reward , new_quest_lv7_AmountNeed3 - 
+say_reward ( string . format ( "[LC;6104;%s]" , new_quest_lv7_AmountNeed3 - 
 pc . count_item ( new_quest_lv7_drop3 ) ) ) 
 end 

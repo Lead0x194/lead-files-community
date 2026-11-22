@@ -1,11 +1,11 @@
-say_title ( gameforge . new_quest_lv7 . _020_say_title ) 
+say_title ( "[LC;6082]" ) 
 local empire = pc . get_empire ( ) 
 if empire == 1 then 
-say ( gameforge . new_quest_lv7 . _135_say ) 
+say ( "[LC;6128]" ) 
 end 
 if empire == 2 then 
-say ( gameforge . new_quest_lv7 . _136_say ) 
+say ( "[LC;6129]" ) 
 end 
 if empire == 3 then 
-say ( gameforge . new_quest_lv7 . _137_say ) 
+say ( "[LC;6130]" ) 
 end 

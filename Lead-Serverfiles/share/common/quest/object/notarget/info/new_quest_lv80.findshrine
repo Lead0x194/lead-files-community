@@ -1,2 +1,2 @@
-say_title ( gameforge . new_quest_lv80 . _310_set_title ) 
-say ( string . format ( gameforge . new_quest_lv80 . _320_say , item_name ( new_quest_lv80_blackice ) ) ) 
+say_title ( "[LC;6255]" ) 
+say ( string . format ( "[LC;6256]" , item_name ( new_quest_lv80_blackice ) ) ) 

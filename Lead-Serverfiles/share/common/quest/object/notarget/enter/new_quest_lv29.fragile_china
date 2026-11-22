@@ -1,9 +1,9 @@
-send_letter ( gameforge . new_quest_lv29 . _015_npcChat ) 
+send_letter ( "[LC;5799]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv29 . _015_npcChat ) 
+q . set_title ( "[LC;5799]" ) 
 if is_destination_village ( 3 ) then 
 local v = find_npc_by_vnum ( 20349 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET4__" , v , gameforge . new_quest_lv29 . _050_target ) 
+target . vid ( "__TARGET4__" , v , "[LC;5823]" ) 
 end 
 end 

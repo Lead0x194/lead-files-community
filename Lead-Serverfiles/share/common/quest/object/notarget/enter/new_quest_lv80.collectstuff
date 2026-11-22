@@ -6,4 +6,4 @@ new_quest_lv80_ice = 30146
 new_quest_lv80_figure = 30183 
 new_quest_lv80_ember = 30184 
 new_quest_lv80_blackice = 30185 
-send_letter ( gameforge . new_quest_lv80 . _020_set_title ) 
+send_letter ( "[LC;6225]" ) 

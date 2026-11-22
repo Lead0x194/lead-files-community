@@ -1,8 +1,8 @@
 if pc . count_item ( 50059 ) > 0 then 
-say_title ( gameforge . subquest_39 . _290_sayTitle ) 
-say ( gameforge . subquest_39 . _300_say ) 
+say_title ( "[LC;8076]" ) 
+say ( "[LC;8077]" ) 
 return 
 end 
-say_title ( gameforge . subquest_39 . _310_sayTitle ) 
-say ( gameforge . subquest_39 . _320_say ) 
+say_title ( "[LC;8079]" ) 
+say ( "[LC;8080]" ) 
 say_item_vnum ( 50059 ) 

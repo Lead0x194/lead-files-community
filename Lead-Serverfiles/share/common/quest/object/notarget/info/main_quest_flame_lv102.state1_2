@@ -1,5 +1,5 @@
-say_title ( gameforge . main_quest_flame_lv102 . _080_sayTitle ) 
-say ( gameforge . main_quest_flame_lv102 . _090_say ) 
+say_title ( "[LC;3845]" ) 
+say ( "[LC;3846]" ) 
 local remain1 = 30 - pc . getqf ( "mob1" ) 
 if remain1 < 0 then 
 remain1 = 0 
@@ -16,6 +16,6 @@ local remain4 = 30 - pc . getqf ( "mob4" )
 if remain4 < 0 then 
 remain4 = 0 
 end 
-say ( gameforge . main_quest_lv97 . _670_counterName ) 
-say ( string . format ( gameforge . main_quest_flame_lv102 . _100_say , mob_name ( 6005 ) , remain1 , mob_name ( 6006 ) , remain2 ) ) 
-say ( string . format ( gameforge . main_quest_flame_lv102 . _110_say , mob_name ( 6007 ) , remain3 , mob_name ( 6008 ) , remain4 ) ) 
+say ( "[LC;5362]" ) 
+say ( string . format ( "[LC;3847;%s;%d;%s;%d]" , mob_name ( 6005 ) , remain1 , mob_name ( 6006 ) , remain2 ) ) 
+say ( string . format ( "[LC;3848;%s;%d;%s;%d]" , mob_name ( 6007 ) , remain3 , mob_name ( 6008 ) , remain4 ) ) 

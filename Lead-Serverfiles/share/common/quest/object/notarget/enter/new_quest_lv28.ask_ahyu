@@ -1,10 +1,10 @@
-send_letter ( gameforge . new_quest_lv28 . _015_npcChat ) 
+send_letter ( "[LC;5761]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv28 . _015_npcChat ) 
+q . set_title ( "[LC;5761]" ) 
 local v = find_npc_by_vnum ( 20003 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET2__" , v , gameforge . new_quest_lv28 . _015_npcChat ) 
+target . vid ( "__TARGET2__" , v , "[LC;5761]" ) 
 end 
 new_quest_lv28_neededAmountDrop1 = 1 
 new_quest_lv28_dropProb1 = 100 
