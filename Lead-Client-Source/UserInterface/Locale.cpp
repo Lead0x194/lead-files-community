@@ -11,31 +11,34 @@ const char* LSS_EUROPE		= "EUROPE";
 
 std::string __SECURITY_KEY_STRING__ = LSS_SECURITY_KEY;
 
-char	MULTI_LOCALE_PATH[256]		= "locale/ymir";
-char	MULTI_LOCALE_NAME[256]		= "ymir";
+char	MULTI_LOCALE_PATH[256]		= "locale/de";
+char	MULTI_LOCALE_NAME[256]		= "de";
 
 void LocaleService_LoadConfig(const char* fileName)
 {
-	NANOBEGIN
 	FILE* fp = NULL;
 	fopen_s(&fp, fileName, "rt");
 
-	if (fp)
-	{		
-		char	line[256];			
-		char	name[256];
-		if (fgets(line, sizeof(line)-1, fp))
-		{
-			line[sizeof(line)-1] = '\0';
-			if (1 == sscanf_s(line, "%s", name, (unsigned)sizeof(name)))
-			{
-				strcpy_s(MULTI_LOCALE_NAME, sizeof(MULTI_LOCALE_NAME), name);
-				sprintf_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), "locale/%s", MULTI_LOCALE_NAME);
-			}
-		}			
-		fclose(fp);
+	if (!fp)
+		return;
+
+	char line[256];
+	char command[256];
+	char value[256];
+
+	while (fgets(line, sizeof(line), fp))
+	{
+		if (2 != sscanf_s(line, "%s %s", command, (unsigned)sizeof(command), value, (unsigned)sizeof(value)))
+			continue;
+
+		if (_stricmp(command, "LANGUAGE"))
+			continue;
+
+		strcpy_s(MULTI_LOCALE_NAME, sizeof(MULTI_LOCALE_NAME), value);
+		sprintf_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), "locale/%s", MULTI_LOCALE_NAME);
 	}
-	NANOEND
+
+	fclose(fp);
 }
 
 unsigned LocaleService_GetLastExp(int level)

@@ -491,7 +491,7 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 	ApplicationStringTable_Initialize(hInstance);
 
-	LocaleService_LoadConfig("locale.cfg");
+	LocaleService_LoadConfig("metin2.cfg");
 	SetDefaultCodePage(LocaleService_GetCodePage());	
 
 	bool bQuit = false;
