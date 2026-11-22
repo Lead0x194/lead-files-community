@@ -457,7 +457,7 @@ void CIME::SetText(const char* szText, int len)
 
 	int m_wTextLen = sizeof(m_wText)/sizeof(wchar_t);
 
-	ms_lastpos = MultiByteToWideChar(ms_uInputCodePage, 0, begin, static_cast<int>(iter-begin), m_wText, m_wTextLen);
+	ms_lastpos = MultiByteToWideChar(ms_uOutputCodePage, 0, begin, static_cast<int>(iter-begin), m_wText, m_wTextLen);
 
 	if (iter < end)
 		ms_lastpos += MultiByteToWideChar(ReadToken(iter), 0, (iter+5), static_cast<int>(end-(iter+5)), m_wText+ms_lastpos, m_wTextLen-ms_lastpos);
@@ -850,7 +850,7 @@ void CIME::PasteString(const char * str)
 	const char * begin = str;
 	const char * end = str + strlen(str);
 	wchar_t m_wText[IMESTR_MAXLEN];
-	int wstrLen = MultiByteToWideChar(ms_uInputCodePage, 0, begin, static_cast<int>(end - begin), m_wText, IMESTR_MAXLEN);
+	int wstrLen = MultiByteToWideChar(ms_uOutputCodePage, 0, begin, static_cast<int>(end - begin), m_wText, IMESTR_MAXLEN);
 	InsertString(m_wText, wstrLen);
 	if(ms_pEvent)
 		ms_pEvent->OnUpdate();
@@ -1521,12 +1521,7 @@ void CIME::CheckInputLocale()
         ms_wszCurrentIndicator[1] = towlower(szLang[1]);
     }
 
-	// ¾Æ¶ø¾î¿¡¼­ ¿µ¾î·Î º¯°æ½Ã ÄÚµå ÆäÀÌÁö¸¦ ¹Ù²ÙÁö ¾Ê´Â´Ù
-	// ³»¿ëµµ Áö¿ìÁö ¾Ê´Â´Ù.
-	if(ms_uOutputCodePage != 1256) {
-		ms_uOutputCodePage = ms_uInputCodePage;
-		Clear();
-	}
+	ms_uOutputCodePage = GetDefaultCodePage();
 
 	//for ( int i = 0; i < 256; i++ )
 	//{
@@ -2165,7 +2160,7 @@ LRESULT CIME::WMComposition(HWND hWnd, UINT /*uiMsg*/, WPARAM /*wParam*/, LPARAM
 		AttributeProcess(hImc);
 	if(lParam&GCS_COMPSTR)
 	{
-		if (ms_uOutputCodePage == 950) // ´ë¸¸ ÁÖÀ½ ÀÔ·Â Ã³¸®
+		if (ms_uInputCodePage == 950) // ´ë¸¸ ÁÖÀ½ ÀÔ·Â Ã³¸®
 		{
 			if (lParam&GCS_COMPATTR) 
 				CompositionProcessBuilding(hImc);
