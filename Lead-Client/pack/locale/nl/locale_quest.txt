@@ -8506,3 +8506,570 @@
 8506	Je zou het moeten veranderen uit[ENTER]veiligheidsredenen.[ENTER]Misschien denk je dat 45 hokken niet genoeg zijn.[ENTER]Wie weet, misschien geef ik je meer ruimte als we[ENTER]goed met elkaar opschieten. Hehe!!
 8507	Ach ja, ik forceer niemand. Als je het nu niet[ENTER]wil kan je later terugkomen.
 8508	Open Warenhuis
+9001	Aura of Sword is een skill voor Sura.
+9002	White Liquid geeft 1 uur lang 10 STR.
+9003	DEX kan de duur van Álcázás verlengen.
+9004	Láng csapás haalt zijn kracht uit INT en DEX.
+9005	Op G3 duurt Ritual of Doom 68 seconden.
+9006	Spirit Assault is een Sura skill.
+9007	Als je Eel gebruikt, krijg je 10 minuten lang 10 STR.
+9008	Taichi verhoogt de AC.
+9009	De skill Charge kan het doelwit vergiftigen.
+9010	Gegrilde Modderkruiper kan je korte tijd onzichtbaar maken.
+9011	Als je gedood wordt, verlies je altijd ervaring
+9012	Steen der Magie+3 geeft +240 SP.
+9013	Steen der Magie+2 geeft 150 SP.
+9014	Poison Cloud richt magische schade aan.
+9015	Félelem verdooft de vijand.
+9016	Dance with Wind is een skill van de Archer.
+9017	Flame Arrow laat het doelwit branden.
+9018	Magische Zaden worden alleen door Dryads gedropt.
+9019	De Donkere Spook Leider is een duivel.
+9020	De papegaai bij de Teleporter is rood en groen
+9021	De Algemene Winkel heeft een paardenstaart
+9022	De Store Keeper heeft 3 messen
+9023	Yonah is een kok
+9024	Octavio is een geleerde
+9025	Anh-Yu heeft een baby
+9026	Het Spook Plaat Pantser bij de Pantser Winkel Eigenaar kost 10.000 goud
+9027	De Ijzeren Waaier+0 bij de Wapen Winkel Eigenaar kost 400 goud
+9028	Sötét kõ is de krachtigste spreuk voor een Sura van de zwarte magie
+9029	Aura of Sword wordt sterker met DEX
+9030	Het Oud Dametje heeft een kleine rode tas
+9031	In Elgoria staan 5 paarden in de stal
+9032	De gem-rod van de Alchemist is geel
+9033	Mirine heeft haar moeder verloren
+9034	Er staan precies 259 bomen op Elgoria map 1
+9035	Als een paard 10 keer sterft, loopt het voorgoed weg
+9036	Bij de Fisherman Store kosten 50 wormen 2000 goud.
+9037	Vissen Bol is een aas
+9038	Riceballs en wormen zijn de enige azen in Metin2
+9039	Er zijn 20 guild lands in elke stad van het spel
+9040	De Man met de Zeis is een Demi-Human
+9041	Heavens Golem is het enige monster dat een Water Kristal dropt
+9042	Zen Boon geeft 500 Karma Points maar alleen als je negatief bent
+9043	Se-Rang is een monster van het wolventype
+9044	Starbuck is de Accessory Designer Smith
+9045	Cherogirayb is de Biologist van Metin2
+9046	Zin Heavens Commander dropt Gezegend Bol
+9047	Stanh is een van de 3 Guild Smiths
+9048	Tigris heeft een rode halsband
+9049	Om Wood Bracelet te upgraden naar +6 heb je 20k goud nodig.
+9050	Om Wood Bracelet te upgraden naar +7 heb je Bear Feet en 25k goud nodig.
+9051	Om Wood Bracelet te upgraden naar +8 heb je White Pigtail Ribbon en 45k goud nodig.
+9052	Om Wood Bracelet te upgraden naar +9 heb je Facial Cream en 75k goud nodig.
+9053	Om Koperen Armband te upgraden naar +5 heb je 15k goud nodig.
+9054	Om Koperen Armband te upgraden naar +7 heb je Bear Feet en 30k goud nodig.
+9055	Om Koperen Armband te upgraden naar +8 heb je White Pigtail Ribbon+ en 40k goud nodig.
+9056	Om Koperen Armband te upgraden naar +9 heb je Facial Cream en 70k goud nodig.
+9057	Om Zilveren Armband te upgraden naar +8 heb je White Pigtail Ribbon+ en 45k goud nodig.
+9058	Om Gouden Armband te upgraden naar +6 heb je 20k goud nodig.
+9059	Om Gouden Armband te upgraden naar +8 heb je White Pigtail Ribbon+ en 45k goud nodig.
+9060	Om Jaden Armband te upgraden naar +3 heb je 5k goud nodig.
+9061	Om Jaden Armband te upgraden naar +6 heb je Shiriken+ (x2) en 20k goud nodig.
+9062	Om Ebbenhouten Armband te upgraden naar +4 heb je 8k goud nodig.
+9063	Om Ebbenhouten Armband te upgraden naar +7 heb je Spinnenweb (x2), Fishbone en 50k goud nodig.
+9064	Om Parel Armband te upgraden naar +5 heb je Roestig Mes (x2) en 13k goud nodig.
+9065	Om Parel Armband te upgraden naar +8 heb je Spinnen Gifzak (x2), Oester en 70k goud nodig.
+9066	Om Witgouden Armband te upgraden naar +2 heb je 2k goud nodig.
+9067	Om Witgouden Armband te upgraden naar +9 heb je Slangenhuid (x2), Oester en 100k goud nodig.
+9068	Om Kristallen Armband te upgraden naar +6 heb je Demonen Aandenken (x2) en 30k goud nodig.
+9069	Om Kristallen Armband te upgraden naar +7 heb je Demonen Edelsteen+ (x2), Witte Parel en 45k goud nodig.
+9070	Om Amethist Armband te upgraden naar +5 heb je Onbekend Medicijn+ en 20k goud nodig.
+9071	Om Amethist Armband te upgraden naar +9 heb je Vlammende Manen (x2), Red pearl en 120k goud nodig.
+9072	Om Hemelse Traan Armband te upgraden naar +4 heb je 10k goud nodig.
+9073	Om Hemelse Traan Armband te upgraden naar +8 heb je Yeti Vacht+ (x2), Blauwe Parel en 90k goud nodig.
+9074	Om Houten Ketting te upgraden naar +4 heb je 2,5k goud nodig.
+9075	Om Houten Ketting te upgraden naar +6 heb je 20k goud nodig.
+9076	Om Koperen Ketting te upgraden naar +5 heb je 15k goud nodig.
+9077	Om Koperen Ketting te upgraden naar +7 heb je Wolvenvacht+ (x2) en 25k goud nodig.
+9078	Om Zilveren Ketting te upgraden naar +8 heb je Red Pigtail Ribbon en 50k goud nodig.
+9079	Om Zilveren Ketting te upgraden naar +1 heb je 500 goud nodig.
+9080	Om Gouden Ketting te upgraden naar +9 heb je Decoratieve Haarspeld (x2) en 75k goud nodig.
+9081	Om Gouden Ketting te upgraden naar +3 heb je 2,5k goud nodig.
+9082	Om Jaden Ketting te upgraden naar +8 heb je Schorpioenen Staart+ (x2), Oester en 70k goud nodig.
+9083	Om Jaden Ketting te upgraden naar +2 heb je 2,5k goud nodig.
+9084	Om Ebbenhouten Ketting te upgraden naar +6 heb je Ork Amulet+ en 20k goud nodig.
+9085	Om Ebbenhouten Ketting te upgraden naar +2 heb je 2k goud nodig.
+9086	Om Parel Ketting te upgraden naar +5 heb je Shiriken (x2) en 13k goud nodig.
+9087	Om Parel Ketting te upgraden naar +9 heb je Orc Thoot+ (x2), Oester en 120k goud nodig.
+9088	Om Witgouden Ketting te upgraden naar +4 heb je 8k goud nodig.
+9089	Om Witgouden Ketting te upgraden naar +7 heb je Onbekende Talisman (x2), Fishbone en 40k goud nodig.
+9090	Om Kristallen Ketting te upgraden naar +6 heb je Stuk Stof (x2) en 30k goud nodig.
+9091	Om Kristallen Ketting te upgraden naar +9 heb je Ijsbol (x2), Red Pearl en 150k goud nodig.
+9092	Om Amethist Ketting te upgraden naar +5 heb je Onbekend Medicijn (x2) en 20k goud nodig.
+9093	Om Amethist Ketting te upgraden naar +7 heb je Blad (x2), Witte Parel en 50k goud nodig.
+9094	Om Hemelse Traan Ketting te upgraden naar +8 heb je Stuk Ijs+ (x2), Blauwe Parel en 90k goud nodig.
+9095	Om Hemelse Traan Ketting te upgraden naar +1 heb je 1,2k goud nodig.
+9096	Om Houten Oorbellen te upgraden naar +2 heb je 1,2k goud nodig.
+9097	Om Houten Oorbellen te upgraden naar +5 heb je 8k goud nodig.
+9098	Om Koperen Oorbellen te upgraden naar +7 heb je Bear Gail en 30k goud nodig.
+9099	Om Koperen Oorbellen te upgraden naar +9 heb je Worn Out Black Uniform en 70k goud nodig.
+9100	Om Zilveren Oorbellen te upgraden naar +8 heb je Bear Feet+ en 45k goud nodig.
+9101	Om Zilveren Oorbellen te upgraden naar +6 heb je 20k goud nodig.
+9102	Om Gouden Oorbellen te upgraden naar +4 heb je 7,5k goud nodig.
+9103	Om Gouden Oorbellen te upgraden naar +3 heb je 5k goud nodig.
+9104	Om Jade Oorbellen te upgraden naar +3 heb je 5k goud nodig.
+9105	Om Jade Oorbellen te upgraden naar +7 heb je Spider Eye, Fishbone en 40k goud nodig.
+9106	Om Ebbenhouten Oorbellen te upgraden naar +4 heb je 10k goud nodig.
+9107	Om Ebbenhouten Oorbellen te upgraden naar +5 heb je Stuk Edelsteen en 13k goud nodig.
+9108	Om Parel Oorbellen te upgraden naar +9 heb je Orc Thoot+ (x2), Oester en 120k goud nodig.
+9109	Om Parel Oorbellen te upgraden naar +6 heb je Esoterisch Handboek (x2) en 20k goud nodig.
+9110	Om Witgouden Oorbellen te upgraden naar +2 heb je 2k goud nodig.
+9111	Om Witgouden Oorbellen te upgraden naar +8 heb je Orc Thoot, Oester en 70k goud nodig.
+9112	Om Kristallen Oorbellen te upgraden naar +3 heb je 5k goud nodig.
+9113	Om Kristallen Oorbellen te upgraden naar +6 heb je Stuk Stof en 25k goud nodig.
+9114	Om Kristallen Oorbellen te upgraden naar +9 heb je Ijsbol (x2), Red Pearl en 150k goud nodig.
+9115	Om Amethist Oorbellen te upgraden naar +2 heb je 2,5k goud nodig.
+9116	Om Amethist Oorbellen te upgraden naar +7 heb je Demonen Edelsteen (x2), Witte Parel en 45k goud nodig.
+9117	Om Amethist Oorbellen te upgraden naar +1 heb je 1,5k goud nodig.
+9118	Om Hem. Traan Oorbellen te upgraden naar +8 heb je Demonen Aandenken+, Blauwe Parel en 80k goud nodig.
+9119	Om Hem. Traan Oorbellen te upgraden naar +5 heb je Slangenstaart+ (x2) en 20k goud nodig.
+9120	Om Strijd Schild te upgraden naar +5 heb je 20k goud nodig.
+9121	Om Strijd Schild te upgraden naar +6 heb je 20k goud nodig.
+9122	Om Strijd Schild te upgraden naar +7 heb je Bear Gail+ (x2) en 25k goud nodig.
+9123	Om Strijd Schild te upgraden naar +8 heb je Witte Tijger Vacht en 45k goud nodig.
+9124	Om Strijd Schild te upgraden naar +9 heb je Worn Out Black Uniform (x2) en 75k goud nodig.
+9125	Om Strijd Schild te upgraden naar +1 heb je 1k goud nodig.
+9126	Om Pentagon Schild te upgraden naar +5 heb je Stuk Gebroken Pantser (x2) en 13k goud nodig.
+9127	Om Pentagon Schild te upgraden naar +6 heb je Esoterisch Handboek+ en 20k goud nodig.
+9128	Om Pentagon Schild te upgraden naar +7 heb je Onbekende Talisman (x2), Fishbone en 40k goud nodig.
+9129	Om Pentagon Schild te upgraden naar +8 heb je Schorpioenen Staart (x2), Oester en 70k goud nodig.
+9130	Om Pentagon Schild te upgraden naar +9 heb je Boek der Vloeken (x2), Oester en 120k goud nodig.
+9131	Om Pentagon Schild te upgraden naar +2 heb je 2k goud nodig.
+9132	Om Rond Zwart Schild te upgraden naar +5 heb je Spinnenpoten (x2) en 20k goud nodig.
+9133	Om Rond Zwart Schild te upgraden naar +6 heb je Vloeken Boek+ (x2) en 30k goud nodig.
+9134	Om Rond Zwart Schild te upgraden naar +7 heb je Stuk Stof+ (x2), Witte Parel en 50k goud nodig.
+9135	Om Rond Zwart Schild te upgraden naar +8 heb je Ijswalvis Hoorn (x2), Blauwe Parel en 75k goud nodig.
+9136	Om Rond Zwart Schild te upgraden naar +9 heb je Fighting Tiger Fang (x2), Red Pearl en 150k goud nodig.
+9137	Om Rond Zwart Schild te upgraden naar +3 heb je 5k goud nodig.
+9138	Om Valk Schild te upgraden naar +4 heb je 10k goud nodig.
+9139	Om Valk Schild te upgraden naar +6 heb je Esoterisch Handboek+ en 20k goud nodig.
+9140	Om Tiger Monk Shield te upgraden naar +3 heb je 10k goud nodig.
+9141	Om Tiger Monk Shield te upgraden naar +9 heb je Boek der Vloeken (x2), Oester en 120k goud nodig.
+9142	Om Leeuwen Rand Schild te upgraden naar +7 heb je Onbekende Talisman, Fishbone en 50k goud nodig.
+9143	Om Leeuwen Rand Schild te upgraden naar +1 heb je 1,2k goud nodig.
+9144	Om Draken Schub Schild te upgraden naar +2 heb je 2,5k goud nodig.
+9145	Om Draken Schub Schild te upgraden naar +5 heb je Stuk Gebroken Pantser en 13k goud nodig.
+9146	Om Bloody Helm te upgraden naar +6 heb je 20k goud nodig.
+9147	Om Bloody Helm te upgraden naar +2 heb je 1,5k goud nodig.
+9148	Om Lederen Kap te upgraden naar +4 heb je 4k goud nodig.
+9149	Om Lederen Kap te upgraden naar +3 heb je 2,5k goud nodig.
+9150	Om Traditional Helm te upgraden naar +8 heb je White Pigtail Ribbon+ (x2) en 40k goud nodig.
+9151	Om Traditional Helm te upgraden naar +1 heb je 600 goud nodig.
+9152	Om Monniken Kap te upgraden naar +9 heb je Facial Cream en 75k goud nodig.
+9153	Om Monniken Kap te upgraden naar +7 heb je White Pigtail Ribbon en 30k goud nodig.
+9154	Om Iron Helm te upgraden naar +2 heb je 2k goud nodig.
+9155	Om Iron Helm te upgraden naar +4 heb je 10k goud nodig.
+9156	Om Maliën Kap te upgraden naar +5 heb je Vlag (x2) en 20k goud nodig.
+9157	Om Maliën Kap te upgraden naar +9 heb je Spinnenbroedzak (x2), Oester en 120k goud nodig.
+9158	Om Mocking Helm te upgraden naar +8 heb je Spinnen Gifzak (x2), Oester en 75k goud nodig.
+9159	Om Mocking Helm te upgraden naar +6 heb je Schorpioenen Staart (x2) en 20k goud nodig.
+9160	Om Feniks Kap te upgraden naar +7 heb je Spinnenweb (x2), Fishbone en 30k goud nodig.
+9161	Om Feniks Kap te upgraden naar +3 heb je 4k goud nodig.
+9162	Om Castle Helm te upgraden naar +8 heb je Stuk Ijs+, Blauwe Parel en 90k goud nodig.
+9163	Om Castle Helm te upgraden naar +7 heb je Frog Legs (x2), Vingerbotten (x3) en 45k goud nodig.
+9164	Om Zonnestraal Kap te upgraden naar +6 heb je Kikkertong (x2) en 30k goud nodig.
+9165	Om Zonnestraal Kap te upgraden naar +5 heb je Onbekend Medicijn+ (x2) en 25k goud nodig.
+9166	Om Stalen Kap te upgraden naar +9 heb je Vlammende Manen (x2), Vingerbotten (x8) en 150k goud nodig.
+9167	Om Stalen Kap te upgraden naar +1 heb je 2k goud nodig.
+9168	Om Spook Masker Sallet te upgraden naar +3 heb je 5k goud nodig.
+9169	Om Spook Masker Sallet te upgraden naar +4 heb je 8k goud nodig.
+9170	Om Bamboe Schoenen te upgraden naar +8 heb je Skein (x2) en 45k goud nodig.
+9171	Om Bamboe Schoenen te upgraden naar +5 heb je 12k goud nodig.
+9172	Om Houten Schoenen te upgraden naar +7 heb je Tijger Vacht (x2) en 30k goud nodig.
+9173	Om Goudversierde Schoenen te upgraden naar +9 heb je Worn Out Black Uniform+ en 75k goud nodig.
+9174	Om Lederen Laarzen te upgraden naar +8 heb je Schorpioenen Klauw (x2), Oester en 70k goud nodig.
+9175	Om Lederen Laarzen te upgraden naar +6 heb je Schorpioenen Staart+ (x2) en 20k goud nodig.
+9176	Om Gouden Schoenen te upgraden naar +4 heb je 10k goud nodig.
+9177	Om Gouden Schoenen te upgraden naar +7 heb je Schorpioenen Naald (x2), Fishbone en 40k goud nodig.
+9178	Om Bronzen Laarzen te upgraden naar +5 heb je Ork Amulet (x2) en 13k goud nodig.
+9179	Om Jaden Schoenen te upgraden naar +9 heb je Spinnenbroedzak (x2), Oester en 120k goud nodig.
+9180	Om Ecstatic Shoes te upgraden naar +2 heb je 2,5k goud nodig.
+9181	Om Ecstatic Shoes te upgraden naar +9 heb je Fighting Tiger Fang (x2), Red Pearl en 150k goud nodig.
+9182	Om Nimbus Schoenen te upgraden naar +7 heb je Frog Legs (x2), Witte Parel en 50k goud nodig.
+9183	Om Nimbus Schoenen te upgraden naar +5 heb je Spinnenpoten (x2) en 20k goud nodig.
+9184	Om Feniks Schoenen te upgraden naar +6 heb je Frog Legs (x2) en 30k goud nodig.
+9185	Om Vuurvogel Schoenen te upgraden naar +8 heb je Yeti Vacht (x2), Blauwe Parel en 90k goud nodig.
+9186	Om Koperen Bel te upgraden naar +8 heb je White Pigtail Ribbon (x2) en 45k goud nodig.
+9187	Om Zilveren Bel te upgraden naar +7 heb je Bear Gail+ (x2) en 30k goud nodig.
+9188	Om Gouden Bel te upgraden naar +9 heb je Decoratieve Haarspeld (x2) en 75k goud nodig.
+9189	Om Jade Bel te upgraden naar +7 heb je Onbekende Talisman (x2), Fishbone en 40k goud nodig.
+9190	Om Waterbron Bel te upgraden naar +6 heb je Ork Amulet+ (x2) en 20k goud nodig.
+9191	Om Abrikozen Bel te upgraden naar +8 heb je Schorpioenen Staart+ (x2), Oester en 70k goud nodig.
+9192	Om Abrikozen Bel te upgraden naar +9 heb je Boek der Vloeken (x2), Oester en 120k goud nodig.
+9193	Om Gouden Kever Bel te upgraden naar +8 heb je Blad (x2), Blauwe Parel en 90k goud nodig.
+9194	Om Stalen Kever Bel te upgraden naar +9 heb je Ijswalvis Hoorn (x2), Red Pearl en 150k goud nodig.
+9195	Om Bliksem Vogel Bel te upgraden naar +7 heb je Blad (x2), Witte Parel en 45k goud nodig.
+9196	Om Bamboe Bel te upgraden naar +5 heb je Onbekend Medicijn en 20k goud nodig.
+9197	Om Antieke Bel te upgraden naar +8 heb je 90k goud nodig.
+9198	Om Antieke Bel te upgraden naar +3 heb je 12k goud nodig.
+9199	Bear Feet wordt gebruikt om Houten Armband te upgraden naar +8
+9200	Bear Feet wordt gebruikt om Zilveren Armband te upgraden naar +7
+9201	Bear Feet+ wordt gebruikt om Golden Bracelet te upgraden naar +7
+9202	White Pigtail Ribbon+ wordt gebruikt om Zilveren Armband te upgraden naar +7
+9203	White Pigtail Ribbon+ wordt gebruikt om Houten Armband te upgraden naar +8
+9204	White Pigtail Ribbon wordt gebruikt om Houten Armband te upgraden naar +8
+9205	Facial Cream wordt gebruikt om Golden Bracelet te upgraden naar +9
+9206	Facial Cream wordt gebruikt om Zilveren Armband te upgraden naar +8
+9207	Roestig Mes wordt gebruikt om Jaden Armband te upgraden naar +5
+9208	Roestig Mes wordt gebruikt om Ebbenhouten Armband te upgraden naar +6
+9209	Shiriken+ wordt gebruikt om Ebbenhouten Armband te upgraden naar +6
+9210	Shiriken+ wordt gebruikt om Witgouden Armband te upgraden naar +7
+9211	Shiriken wordt gebruikt om Witgouden Armband te upgraden naar +6
+9212	Spinnenweb wordt gebruikt om Parel Armband te upgraden naar +6
+9213	Spinnenweb wordt gebruikt om Jaden Armband te upgraden naar +7
+9214	Spinnen Gifzak wordt gebruikt om Ebbenhouten Armband te upgraden naar +8
+9215	Spinnen Gifzak wordt gebruikt om Parel Armband te upgraden naar +9
+9216	Slangenhuid wordt gebruikt om Witgouden Armband te upgraden naar +9
+9217	Slangenhuid wordt gebruikt om Parel Armband te upgraden naar +8
+9218	Onbekend Medicijn+ wordt gebruikt om Hemelse Traan Armband te upgraden naar +5
+9219	Onbekend Medicijn+ wordt gebruikt om Kristallen Armband te upgraden naar +6
+9220	Onbekend Medicijn wordt gebruikt om Amethist Armband te upgraden naar +5
+9221	Demonen Aandenken wordt gebruikt om Hemelse Traan Armband te upgraden naar +6
+9222	Demonen Aandenken wordt gebruikt om Amethist Armband te upgraden naar +7
+9223	Demonen Aandenken+ wordt gebruikt om Kristallen Armband te upgraden naar +6
+9224	Demonen Edelsteen wordt gebruikt om Hemelse Traan Armband te upgraden naar +7
+9225	Demonen Edelsteen wordt gebruikt om Kristallen Armband te upgraden naar +8
+9226	Demonen Edelsteen+ wordt gebruikt om Amethist Armband te upgraden naar +7
+9227	Yeti Vacht+ wordt gebruikt om Kristallen Armband te upgraden naar +8
+9228	Yeti Vacht+ wordt gebruikt om Hemelse Traan Armband te upgraden naar +7
+9229	Yeti Vacht wordt gebruikt om Amethist Armband te upgraden naar +8
+9230	Vlammende Manen wordt gebruikt om Amethist Armband te upgraden naar +9
+9231	Vlammende Manen wordt gebruikt om Hemelse Traan Armband te upgraden naar +8
+9232	Wolvenvacht+ wordt gebruikt om Houten Ketting te upgraden naar +7
+9233	Wolvenvacht+ wordt gebruikt om Koperen Ketting te upgraden naar +6
+9234	Wolvenvacht wordt gebruikt om Houten Ketting te upgraden naar +7
+9235	Red Pigtail Ribbon wordt gebruikt om Koperen Ketting te upgraden naar +7
+9236	Red Pigtail Ribbon wordt gebruikt om Houten Ketting te upgraden naar +8
+9237	Decoratieve Haarspeld wordt gebruikt om Zilveren Ketting te upgraden naar +9
+9238	Decoratieve Haarspeld wordt gebruikt om Gouden Ketting te upgraden naar +8
+9239	Shiriken wordt gebruikt om Jaden Ketting te upgraden naar +5
+9240	Shiriken wordt gebruikt om Ebbenhouten Ketting te upgraden naar +6
+9241	Shiriken+ wordt gebruikt om Parel Ketting te upgraden naar +5
+9242	Ork Amulet+ wordt gebruikt om Witgouden Ketting te upgraden naar +6
+9243	Ork Amulet+ wordt gebruikt om Jaden Ketting te upgraden naar +7
+9244	Ork Amulet wordt gebruikt om Parel Ketting te upgraden naar +6
+9245	Onbekende Talisman wordt gebruikt om Jaden Ketting te upgraden naar +7
+9246	Onbekende Talisman wordt gebruikt om Witgouden Ketting te upgraden naar +8
+9247	Onbekende Talisman+ wordt gebruikt om Parel Ketting te upgraden naar +7
+9248	Schorpioenen Staart+ wordt gebruikt om Jaden Ketting te upgraden naar +8
+9249	Schorpioenen Staart+ wordt gebruikt om Ebbenhouten Ketting te upgraden naar +9
+9250	Schorpioenen Staart wordt gebruikt om Houten Armband te upgraden naar +8
+9251	Orc Thoot+ wordt gebruikt om Ebbenhouten Ketting te upgraden naar +9
+9252	Orc Thoot+ wordt gebruikt om Houten Armband te upgraden naar +8
+9253	Orc Thoot wordt gebruikt om Jaden Ketting te upgraden naar +9
+9254	Onbekend Medicijn wordt gebruikt om Kristallen Ketting te upgraden naar +5
+9255	Onbekend Medicijn wordt gebruikt om Hemelse Traan Ketting te upgraden naar +6
+9256	Onbekend Medicijn+ wordt gebruikt om Amethist Ketting te upgraden naar +5
+9257	Stuk Stof wordt gebruikt om Kristallen Ketting te upgraden naar +6
+9258	Stuk Stof wordt gebruikt om Hemelse Traan Ketting te upgraden naar +5
+9259	Stuk Stof+ wordt gebruikt om Amethist Ketting te upgraden naar +6
+9260	Blad wordt gebruikt om Kristallen Ketting te upgraden naar +7
+9261	Blad wordt gebruikt om Amethist Ketting te upgraden naar +8
+9262	Stuk Ijs wordt gebruikt om Hemelse Traan Ketting te upgraden naar +8
+9263	Stuk Ijs wordt gebruikt om Kristallen Ketting te upgraden naar +9
+9264	Stuk Ijs+ wordt gebruikt om Amethist Ketting te upgraden naar +8
+9265	Ijsbol+ wordt gebruikt om Kristallen Ketting te upgraden naar +9
+9266	Ijsbol+ wordt gebruikt om Hemelse Traan Ketting te upgraden naar +8
+9267	Ijsbol wordt gebruikt om Amethist Ketting te upgraden naar +9
+9268	Blauwe Wolf is level 7.
+9269	Tijger is level 17.
+9270	Alfa Grijze Wolf is level 16.
+9271	Hongerige Zwarte Beer is level 19.
+9272	Witte Tijger is level 26.
+9273	Hongerig Wild Zwijn is level 10.
+9274	Grizzly Beer is level 13.
+9275	Witte Eed Soldaat is level 18.
+9276	Moedloze Mi-Jung is level 23.
+9277	Moedloze Eun-Jung is level 28.
+9278	Moedloze Jin-Hee is level 29.
+9279	Witte Eed Generaal is level 25.
+9280	Beer is level 12.
+9281	White 0ath Archer is level 20.
+9282	Zwarte Wind Gu-Ryung is level 32.
+9283	Bo is level 36.
+9284	Zwarte Wind Boogschutter is level 29.
+9285	Zwarte Wind Maniak is level 28.
+9286	Zwarte Wind Soldaat is level 26.
+9287	Zwarte Wind Jak-To is level 30.
+9288	Wilde Infanterist is level 29.
+9289	Evil Black Storm Joh-Hwa is level 29.
+9290	Evil Black Storm Archer is level 30.
+9291	Wilde Dienaar is level 31.
+9292	Vervloekte Wolf is level 9.
+9293	Vervloekte Bl. Alfa Wolf is level 14.
+9294	Vervloekte Beer is level 18.
+9295	Vervloekte Zwarte Beer is level 24.
+9296	Vervloekte Bruine Beer is level 26.
+9297	Vervloekt Wild Zwijn is level 12.
+9298	Vervloekte Tijger is level 23.
+9299	Vervloekte Witte Tijger is level 29.
+9300	Brute Soldaat is level 35.
+9301	Brute Specialist is level 42.
+9302	Brute Maniak is level 38.
+9303	Brute Boogschutter is level 41.
+9304	Brute Wilde B.schutter is level 35.
+9305	Brute Wilde Infanterist is level 29.
+9306	Brute Wilde Generaal is level 35.
+9307	Brute Wilde Dienaar is level 31.
+9308	Orc is level 26.
+9309	Ork Verkenner is level 30.
+9310	Ork Krijger is level 32.
+9311	Ork Tovenaar is level 33.
+9312	Elite Ork is level 34.
+9313	Elite Ork Verkenner is level 36.
+9314	Elite Ork Krijger is level 39.
+9315	Elite Ork Tovenaar is level 40.
+9316	Elite Ork Generaal is level 45.
+9317	Zwarte Ork is level 47.
+9318	Zwart Ork Reus is level 49.
+9319	Esoteric Fanatic is level 35.
+9320	Esoteric Arahan is level 39.
+9321	Arahan krijger is level 41.
+9322	Arahan stamhoofd is level 43.
+9323	Esoterisch Beul is level 46.
+9324	Esoterisch Martelaar is level 47.
+9325	Esoterisch Oproeper is level 51.
+9326	Trotse Donkere Fanaticus is level 50.
+9327	Trotse Donker Arahan is level 52.
+9328	Trotse Donker Krijger is level 54.
+9329	Trotse Donker Kolonel is level 54.
+9330	Tr. Donker Geweerman is level 57.
+9331	Zieke Hond is level 51.
+9332	Zieke Man is level 54.
+9333	Zieke Zwaardman is level 56.
+9334	Zieke Speerman is level 58.
+9335	Zieke Boogschutter is level 57.
+9336	Zieke Leider is level 59.
+9337	Demon Soldaat is level 57.
+9338	Demon Boogschutter is level 59.
+9339	Demon Speerman is level 58.
+9340	Demon Sjamaan is level 60.
+9341	Slinks Demon Soldaat is level 65.
+9342	Slinks Demon Boogsch. is level 69.
+9343	Slinks Demon Speerman is level 70.
+9344	Slinks Demon Sjamaan is level 69.
+9345	Wrok Spook is level 72.
+9346	Chaos Spook is level 72.
+9347	Slinks Demon Leider is level 73.
+9348	Schedel Zwaard Meester is level 72.
+9349	Vliegend Schedel is level 69.
+9350	Onsterfelijk Spook is level 73.
+9351	Demonisch Beest is level 75.
+9352	Demonen Koning is level 74.
+9353	Man met de Zeis is level 78.
+9354	Betoverd Ijs is level 62.
+9355	Ijs Walvis is level 63.
+9356	Ijs Kever is level 65.
+9357	Ijs Leeuw is level 64.
+9358	Ijsman is level 63.
+9359	Yeti is level 65.
+9360	Ijs Golem is level 66.
+9361	Heavenly Enchanted Ice is level 82.
+9362	Heavenly Ice Killer Whale is level 82.
+9363	Heavenly Ice Bug is level 82.
+9364	Heavenly Ice Lion is level 83.
+9365	Heavenly Ice Man is level 83.
+9366	Heavenly Yeti is level 83.
+9367	Heavenly Ice Golem is level 86.
+9368	Boom Kikker Soldaat is level 57.
+9369	Boom Kikker Leider is level 60.
+9370	Boeman is level 59.
+9371	Gele Tijger Spook is level 75.
+9372	Brul Kikker Generaal is level 60.
+9373	Giant Soldier is level 66.
+9374	Giant Scout is level 73.
+9375	Giant Thousand Fighter is level 76.
+9376	Stone Thrower is level 68.
+9377	Stone Shooter is level 72.
+9378	Giant Stone Shooter is level 72.
+9379	Giant Worker is level 68.
+9380	Giant Inspector is level 72.
+9381	Giant Hundred Combatant is level 75.
+9382	Negen Staarten is level 74.
+9383	Baby Spin is level 43.
+9384	Deadly Spider is level 45.
+9385	Crimson Spider is level 47.
+9386	Klauw Spin is level 49.
+9387	Spin Soldaat is level 51.
+9388	Baby Gif Spin is level 50.
+9389	Fatale Gif Spin is level 52.
+9390	Rode Gif Spin is level 53.
+9391	Klauw Gif Spin is level 5.
+9392	Soldaat Gif Spin is level 58.
+9393	Spinnenkoningin is level 60.
+9394	Woestijn Vos is level 22.
+9395	Woestijn Vliegend Oog is level 35.
+9396	Schorpioenenkoning is level 39.
+9397	Scorpion Man is level 45.
+9398	Schorpioen Boogschutter is level 47.
+9399	Slang Zwaardman is level 48.
+9400	Slang Boogschutter is level 52.
+9401	Woestijn Bandiet is level 54.
+9402	Giant Turtle is level 66.
+9403	Vechtende Tijger Dienaar is level 69.
+9404	Vlam Spook is level 70.
+9405	Vechtende Tijger is level 70.
+9406	Flame Soldier is level 72.
+9407	Vlam Krijger is level 73.
+9408	Vlam Koning is level 73.
+9409	Haunted Tree is level 65.
+9410	Haunted Stump is level 67.
+9411	Dryad is level 68.
+9412	Haunted Willow is level 69.
+9413	Evil Haunted Tree is level 72.
+9414	Red Brutal Tree is level 73.
+9415	Red Haunted Stump is level 76.
+9416	Rode Dryad is level 77.
+9417	Red Haunted Willow is level 79.
+9418	Red Haunted Tree is level 82.
+9419	Heaven Soldier is level 85.
+9420	Heaven Archer is level 88.
+9421	Heaven Cleric is level 87.
+9422	Heaven Commander is level 88.
+9423	Zin Heaven Soldier is level 90.
+9424	Zin Heaven Archer is level 92.
+9425	Zin Heaven Cleric is level 93.
+9426	Zin Heaven Commander is level 95.
+9427	Aqua Dragon is level 97.
+9428	Gnol Krijger is level 96.
+9429	Gnol Boogschutter is level 96.
+9430	Gnol Verdediger is level 98.
+9431	Gnol Magier is level 98.
+9432	Gnol Generaal is level 99.
+9433	Gnol Heerser is level 102.
+9434	Opperste Gnol Wachter is level 104.
+9435	Één-oog Mepper is level 97.
+9436	Cycloop soldaat is level 99.
+9437	Cycloop Magier is level 100.
+9438	Cycloop Beul is level 99.
+9439	Generaal Outis is level 102.
+9440	Arges is level 104.
+9441	Polyphemos is level 105.
+9442	Manticore Krijger is level 96.
+9443	Manticore Soldaat is level 98.
+9444	Manticore Magier is level 99.
+9445	Manticore Beul is level 99.
+9446	Generaal Cor is level 101.
+9447	Rakshasa is level 102.
+9448	Martyaxwar is level 105.
+9449	Lemure Krijger is level 98.
+9450	Lemure Soldaat is level 98.
+9451	Lemure Magier is level 99.
+9452	Lemure Beul is level 101.
+9453	Lemure Generaal is level 102.
+9454	Lemure Prins is level 103.
+9455	Lemure Lijfwachter is level 104.
+9456	Tritoniaanse Moray is level 96.
+9457	Haai soldaat is level 98.
+9458	Tritoniaanse Magier is level 99.
+9459	Tritoniaanse Jager is level 98.
+9460	Tritoniaanse hakker is level 101.
+9461	Generaal Kappa is level 103.
+9462	Triton is level 105.
+9463	Rode Dief Amazone is level 95.
+9464	Rode Dief Moordenaar is level 97.
+9465	Rode Dief Magier is level 97.
+9466	Rode Dief Beul is level 98.
+9467	Zwarte Generaal is level 98.
+9468	Bot Gezicht is level 102.
+9469	Rode Leider is level 104.
+9470	Krab Krijger is level 96.
+9471	Schorp. Scherpschutter is level 97.
+9472	Garnaal Soldaat is level 99.
+9473	Duivelse Hermiet is level 98.
+9474	Gepantserde Krab is level 102.
+9475	Generaal Kreeft is level 103
+9476	Koning Krab is level 105.
+9477	Gigantische Bijter is level 100.
+9478	Gigantische Slachter is level 102.
+9479	Gigantische Magier is level 103.
+9480	Tweus is level 104.
+9481	Kapitein Haken is level 105.
+9482	Waterspuwer is level 105.
+9483	Koning Wubba is level 105.
+9484	Hangork is level 98.
+9485	Boogje Oger is level 100.
+9486	Knok Oger is level 102.
+9487	Oger Magier is level 101.
+9488	Generaal og is level 103.
+9489	Kapitein Shruk is level 105.
+9490	De Grote Oger is level 105.
+9491	Metin van Verdriet is level 10.
+9492	Metin van Strijd is level 10.
+9493	Metin der Gevecht is level 15.
+9494	Metin van Inhaligheid is level 20.
+9495	Metin der Zwartheid is level 30.
+9496	Metin van Duister is level 30.
+9497	Metin van Jaloezie is level 40.
+9498	Metin van Ziel is level 45.
+9499	Metin van Schaduw is level 40.
+9500	Metin van Weerstand is level 50.
+9501	Metin van Duivel is level 60.
+9502	Metin van Herfst is level 55.
+9503	Metin van Dood is level 65.
+9504	Metin van Moord is level 70.
+9505	Metin of Wind Devil is level 80.
+9506	Metin of Devil Eyes is level 80.
+9507	Metin of Fighting Dragon is level 85.
+9508	Metin of Lightning Cloud is level 85.
+9509	Metin van Schemering is level 100.
+9510	Metin van Sintel is level 95.
+9511	Metin van IJdelheid is level 100.
+9512	Metin van Toorn is level 105.
+9513	Metin van Onheil is level 105.
+9514	Metin van Boosaardigheid is level 100.
+9515	Zwakke Aap Soldaat is level 22.
+9516	Zwakke Aap Gooier is level 24.
+9517	Zwakke Aap Vechter is level 27.
+9518	Zwakke Aap Generaal is level 29.
+9519	Ape Soldier is level 36.
+9520	Ape Thrower is level 37.
+9521	Ape Fighter is level 40.
+9522	Aap Generaal is level 40.
+9523	Steen Aap is level 41.
+9524	Aap Leider is level 42.
+9525	Sterke Aapsoldaat is level 46.
+9526	Sterke aapgooier is level 48.
+9527	Sterke Aap Vechter is level 48.
+9528	Sterke Aap Generaal is level 52.
+9529	Sterke Steen Aap is level 53.
+9530	Rots Aap is level 35.
+9531	Apen Heer is level 55.
+9532	Devil is level 80.
+9533	Devil's Wolf is level 80.
+9534	Devil's Wraith is level 81.
+9535	Devil's Skulker is level 85.
+9536	Devil's Spearman is level 84.
+9537	Devil's Cockatrice is level 83.
+9538	Devil's Dominator is level 85.
+9539	Spectral Crusher is level 79.
+9540	Spectral Bower is level 80.
+9541	Spectral Spikeman is level 82.
+9542	Spectral Shaman is level 10.
+9543	Spectral Axeman is level 83.
+9544	Spectral Titan is level 85.
+9545	Spectral Hunter is level 86.
+9546	Hateful Crusher is level 80.
+9547	Hateful Bower is level 10.
+9548	Hateful Spikeman is level 10.
+9549	Hateful Shaman is level 82.
+9550	Hateful Axeman is level 84.
+9551	Hateful Titan is level 85.
+9552	Hateful Hunter is level 86.
+9553	Tartaros is level 89.
+9554	Erebus is level 90.
+9555	Charon is level 91.
+9556	Lord Gahnasel is level 92.
+9557	Cung-Mok is level 8.
+9558	Mu-Rang is level 15.
+9559	Jug-Hyul is level 10.
+9560	Young-Ji is level 21.
+9561	Li-An is level 24.
+9562	Lykos is level 30.
+9563	Scrofa is level 30.
+9564	Bera is level 32.
+9565	Tigris is level 35.
+9566	Se-Rang is level 25.
+9567	Eun-Jung is level 26.

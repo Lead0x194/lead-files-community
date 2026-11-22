@@ -8506,3 +8506,570 @@
 8506	Güvenlik sebebiyle bunu değiştirmelisin.[ENTER][ENTER]Belki 45 kutunun yetmeyeceğini düşünebilirsin.[ENTER]Ama kimbilir, eğer benimle uzun süre çalışırsan[ENTER]sana daha çok kutu ayırabilirim.[ENTER]Hehe!
 8507	Pekala, kimseyi zorlamıyorum. Fikrini[ENTER]değiştirirsen sonra tekrar uğra.
 8508	Depoyu aç
+9001	Kılıç Aurası Sura için bir beceridir.
+9002	White Liquid 1 saat boyunca 10 STR verir.
+9003	DEX Kamuflaj süresini artırabilir.
+9004	Ateş Vuruşu gücünü INT ve DEX ile kazanır.
+9005	G3 seviyesinde Ritual of Doom 68 saniye sürer.
+9006	Spirit Assault bir Sura becerisidir.
+9007	Eel kullanırsan 10 dakika boyunca 10 STR kazanırsın.
+9008	Taichi AC değerini artırır.
+9009	Charge becerisi hedefi zehirleyebilir.
+9010	Izgara Çopra Balığı seni kısa bir süre görünmez yapabilir.
+9011	Öldürüldüğünde her zaman tecrübe kaybedersin.
+9012	Sihir Taşı+3 +240 SP verir.
+9013	Sihir Taşı+2 150 SP verir.
+9014	Poison Cloud büyülü hasar verir.
+9015	Dehşet düşmanı sersemletir.
+9016	Dance with Wind Okçunun bir becerisidir.
+9017	Alev Oku hedefi yakar.
+9018	Büyülü Tohum sadece Dryad canavarlarından düşer.
+9019	Karanlık Hayalet Lider bir şeytandır.
+9020	Işınlayıcıdaki Papağan kırmızı ve yeşildir.
+9021	Genel Depocu Helen at kuyruğuna sahiptir.
+9022	Mağaza Sahibinin 3 bıçağı var.
+9023	Yonah bir aşçıdır.
+9024	Octavio bir bilgindir.
+9025	Anh-Yu'nun bir bebeği var.
+9026	Zırh Satıcısındaki Hayalet Plaka Zırh 10.000 altındır.
+9027	Silah Satıcısındaki Demir Yelpaze+0 400 altındır.
+9028	Karanlık Küre kara büyücü Sura için en güçlü büyüdür.
+9029	Kılıç Aurası gücünü DEX ile artırır.
+9030	Yaşlı Kadının küçük kırmızı bir çantası var.
+9031	Elgoria'da ahırın içinde 5 at vardır.
+9032	Simyacının mücevher çubuğu sarıdır.
+9033	Mirine annesini kaybetti.
+9034	Elgoria harita 1'de tam olarak 259 ağaç vardır.
+9035	Bir at 10 kez ölürse sonsuza kadar kaçar.
+9036	Balıkçı Dükkanında 50 solucan 2000 altındır.
+9037	Balıkçılık Küresi bir yemdir.
+9038	Pirinç topları ve solucanlar Metin2'deki tek yemlerdir.
+9039	Oyunun her kasabasında 20 lonca arazisi vardır.
+9040	Lusifer bir Yarı-İnsandır.
+9041	Heavens Golem Su Kristali düşüren tek canavardır.
+9042	Zen Fasulye 500 Karma Puanı verir ama sadece negatifsen.
+9043	Se-Rang kurt türü bir canavardır.
+9044	Starbuck Aksesuar Tasarımcısı Demircidir.
+9045	Cherogirayb Metin2'nin Biyologudur.
+9046	Zin Heavens Commander Kutsama Küresi düşürür.
+9047	Stanh 3 Lonca Demircisinden biridir.
+9048	Tigris'in kırmızı bir tasması var.
+9049	Wood Bracelet +6 yükseltmesi için 20k altın gerekir.
+9050	Wood Bracelet +7 yükseltmesi için Bear Feet ve 25k altın gerekir.
+9051	Wood Bracelet +8 yükseltmesi için White Pigtail Ribbon ve 45k altın gerekir.
+9052	Wood Bracelet +9 yükseltmesi için Facial Cream ve 75k altın gerekir.
+9053	Bakır Bilezik +5 yükseltmesi için 15k altın gerekir.
+9054	Bakır Bilezik +7 yükseltmesi için Bear Feet ve 30k altın gerekir.
+9055	Bakır Bilezik +8 yükseltmesi için White Pigtail Ribbon+ ve 40k altın gerekir.
+9056	Bakır Bilezik +9 yükseltmesi için Facial Cream ve 70k altın gerekir.
+9057	Gümüş Bilezik +8 yükseltmesi için White Pigtail Ribbon+ ve 45k altın gerekir.
+9058	Altın Bilezik +6 yükseltmesi için 20k altın gerekir.
+9059	Altın Bilezik +8 yükseltmesi için White Pigtail Ribbon+ ve 45k altın gerekir.
+9060	YeşimTaşı Bilezik +3 yükseltmesi için 5k altın gerekir.
+9061	YeşimTaşı Bilezik +6 yükseltmesi için Shiriken+ (x2) ve 20k altın gerekir.
+9062	Abanoz Bilezik +4 yükseltmesi için 8k altın gerekir.
+9063	Abanoz Bilezik +7 yükseltmesi için Örümcek Ağı (x2), Fishbone ve 50k altın gerekir.
+9064	İnci Bilezik +5 yükseltmesi için Paslı Bıçak (x2) ve 13k altın gerekir.
+9065	İnci Bilezik +8 yükseltmesi için Örümceğin Zehir Kesesi (x2), İstiridye ve 70k altın gerekir.
+9066	Beyaz Altın Bilezik +2 yükseltmesi için 2k altın gerekir.
+9067	Beyaz Altın Bilezik +9 yükseltmesi için Yılan Derisi (x2), İstiridye ve 100k altın gerekir.
+9068	Kristal Bilezik +6 yükseltmesi için Şeytan Hatırası (x2) ve 30k altın gerekir.
+9069	Kristal Bilezik +7 yükseltmesi için Şeytan Mücevheri+ (x2), Beyaz İnci ve 45k altın gerekir.
+9070	Mor Yakut Bilezik +5 yükseltmesi için Bilinmeyen İlaç+ ve 20k altın gerekir.
+9071	Mor Yakut Bilezik +9 yükseltmesi için Alev Yelesi (x2), Red Pearl ve 120k altın gerekir.
+9072	Cennetin Gözü Bilezik +4 yükseltmesi için 10k altın gerekir.
+9073	Cennetin Gözü Bilezik +8 yükseltmesi için Yeti Postu+ (x2), Mavi İnci ve 90k altın gerekir.
+9074	Tahta Kolye +4 yükseltmesi için 2,5k altın gerekir.
+9075	Tahta Kolye +6 yükseltmesi için 20k altın gerekir.
+9076	Bakır Kolye +5 yükseltmesi için 15k altın gerekir.
+9077	Bakır Kolye +7 yükseltmesi için Kurt Postu+ (x2) ve 25k altın gerekir.
+9078	Gümüş Kolye +8 yükseltmesi için Red Pigtail Ribbon ve 50k altın gerekir.
+9079	Gümüş Kolye +1 yükseltmesi için 500 altın gerekir.
+9080	Altın Kolye +9 yükseltmesi için Süslü Saç Tokası (x2) ve 75k altın gerekir.
+9081	Altın Kolye +3 yükseltmesi için 2,5k altın gerekir.
+9082	YeşimTaşı Kolye +8 yükseltmesi için Akrep Kuyruğu+ (x2), İstiridye ve 70k altın gerekir.
+9083	YeşimTaşı Kolye +2 yükseltmesi için 2,5k altın gerekir.
+9084	Abanoz Kolye +6 yükseltmesi için Ork Muskası+ ve 20k altın gerekir.
+9085	Abanoz Kolye +2 yükseltmesi için 2k altın gerekir.
+9086	İnci Kolye +5 yükseltmesi için Shiriken (x2) ve 13k altın gerekir.
+9087	İnci Kolye +9 yükseltmesi için Orc Thoot+ (x2), İstiridye ve 120k altın gerekir.
+9088	Beyaz Altın Kolye +4 yükseltmesi için 8k altın gerekir.
+9089	Beyaz Altın Kolye +7 yükseltmesi için Bilinmeyen Tılsım (x2), Fishbone ve 40k altın gerekir.
+9090	Kristal Kolye +6 yükseltmesi için Sargı Bezi (x2) ve 30k altın gerekir.
+9091	Kristal Kolye +9 yükseltmesi için Buz Topu (x2), Red Pearl ve 150k altın gerekir.
+9092	Mor Yakut Kolye +5 yükseltmesi için Bilinmeyen İlaç (x2) ve 20k altın gerekir.
+9093	Mor Yakut Kolye +7 yükseltmesi için Yaprak (x2), Beyaz İnci ve 50k altın gerekir.
+9094	Cennetin Gözü Kolye +8 yükseltmesi için Buz Parçası+ (x2), Mavi İnci ve 90k altın gerekir.
+9095	Cennetin Gözü Kolye +1 yükseltmesi için 1,2k altın gerekir.
+9096	Tahta Küpe +2 yükseltmesi için 1,2k altın gerekir.
+9097	Tahta Küpe +5 yükseltmesi için 8k altın gerekir.
+9098	Bakır Küpe +7 yükseltmesi için Bear Gail ve 30k altın gerekir.
+9099	Bakır Küpe +9 yükseltmesi için Yıpranmış Siyah Üniforma ve 70k altın gerekir.
+9100	Gümüş Küpe +8 yükseltmesi için Bear Feet+ ve 45k altın gerekir.
+9101	Gümüş Küpe +6 yükseltmesi için 20k altın gerekir.
+9102	Altın Küpe +4 yükseltmesi için 7,5k altın gerekir.
+9103	Altın Küpe +3 yükseltmesi için 5k altın gerekir.
+9104	YeşimTaşı Küpe +3 yükseltmesi için 5k altın gerekir.
+9105	YeşimTaşı Küpe +7 yükseltmesi için Spider Eye, Fishbone ve 40k altın gerekir.
+9106	Abanoz Küpe +4 yükseltmesi için 10k altın gerekir.
+9107	Abanoz Küpe +5 yükseltmesi için Değerli Taş Parçası ve 13k altın gerekir.
+9108	İnci Küpe +9 yükseltmesi için Orc Thoot+ (x2), İstiridye ve 120k altın gerekir.
+9109	İnci Küpe +6 yükseltmesi için Başlangıç Elkitabı (x2) ve 20k altın gerekir.
+9110	Beyaz Altın Küpe +2 yükseltmesi için 2k altın gerekir.
+9111	Beyaz Altın Küpe +8 yükseltmesi için Orc Thoot, İstiridye ve 70k altın gerekir.
+9112	Kristal Küpe +3 yükseltmesi için 5k altın gerekir.
+9113	Kristal Küpe +6 yükseltmesi için Sargı Bezi ve 25k altın gerekir.
+9114	Kristal Küpe +9 yükseltmesi için Buz Topu (x2), Red Pearl ve 150k altın gerekir.
+9115	Ametist Küpe +2 yükseltmesi için 2,5k altın gerekir.
+9116	Ametist Küpe +7 yükseltmesi için Şeytan Mücevheri (x2), Beyaz İnci ve 45k altın gerekir.
+9117	Ametist Küpe +1 yükseltmesi için 1,5k altın gerekir.
+9118	Cennetin Gözü Küpe +8 yükseltmesi için Şeytan Hatırası+, Mavi İnci ve 80k altın gerekir.
+9119	Cennetin Gözü Küpe +5 yükseltmesi için Yılan Kuyruğu+ (x2) ve 20k altın gerekir.
+9120	Savaş Kalkanı +5 yükseltmesi için 20k altın gerekir.
+9121	Savaş Kalkanı +6 yükseltmesi için 20k altın gerekir.
+9122	Savaş Kalkanı +7 yükseltmesi için Bear Gail+ (x2) ve 25k altın gerekir.
+9123	Savaş Kalkanı +8 yükseltmesi için Beyaz Kaplan Postu ve 45k altın gerekir.
+9124	Savaş Kalkanı +9 yükseltmesi için Yıpranmış Siyah Üniforma (x2) ve 75k altın gerekir.
+9125	Savaş Kalkanı +1 yükseltmesi için 1k altın gerekir.
+9126	Beşgen Kalkan +5 yükseltmesi için Kırık Zırh Parçası (x2) ve 13k altın gerekir.
+9127	Beşgen Kalkan +6 yükseltmesi için Başlangıç El Kitabı+ ve 20k altın gerekir.
+9128	Beşgen Kalkan +7 yükseltmesi için Bilinmeyen Tılsım (x2), Fishbone ve 40k altın gerekir.
+9129	Beşgen Kalkan +8 yükseltmesi için Akrep Kuyruğu (x2), İstiridye ve 70k altın gerekir.
+9130	Beşgen Kalkan +9 yükseltmesi için Lanet Kitabı (x2), İstiridye ve 120k altın gerekir.
+9131	Beşgen Kalkan +2 yükseltmesi için 2k altın gerekir.
+9132	Siyah Yuvarlak Kalkan +5 yükseltmesi için Örümcek Bacakları (x2) ve 20k altın gerekir.
+9133	Siyah Yuvarlak Kalkan +6 yükseltmesi için Lanet Kitabı+ (x2) ve 30k altın gerekir.
+9134	Siyah Yuvarlak Kalkan +7 yükseltmesi için Sargı Bezi+ (x2), Beyaz İnci ve 50k altın gerekir.
+9135	Siyah Yuvarlak Kalkan +8 yükseltmesi için Katil Buzbalina Boynuzu (x2), Mavi İnci ve 75k altın gerekir.
+9136	Siyah Yuvarlak Kalkan +9 yükseltmesi için Fighting Tiger Fang (x2), Red Pearl ve 150k altın gerekir.
+9137	Siyah Yuvarlak Kalkan +3 yükseltmesi için 5k altın gerekir.
+9138	Şahin Kalkanı +4 yükseltmesi için 10k altın gerekir.
+9139	Şahin Kalkanı +6 yükseltmesi için Başlangıç El Kitabı+ ve 20k altın gerekir.
+9140	Tiger Monk Shield +3 yükseltmesi için 10k altın gerekir.
+9141	Tiger Monk Shield +9 yükseltmesi için Lanet Kitabı (x2), İstiridye ve 120k altın gerekir.
+9142	Aslan Ağzı Kalkan +7 yükseltmesi için Bilinmeyen Tılsım, Fishbone ve 50k altın gerekir.
+9143	Aslan Ağzı Kalkan +1 yükseltmesi için 1,2k altın gerekir.
+9144	Ejderha Pulu Kalkan +2 yükseltmesi için 2,5k altın gerekir.
+9145	Ejderha Pulu Kalkan +5 yükseltmesi için Kırık Zırh Parçası ve 13k altın gerekir.
+9146	Bloody Helm +6 yükseltmesi için 20k altın gerekir.
+9147	Bloody Helm +2 yükseltmesi için 1,5k altın gerekir.
+9148	Deri Kapşon +4 yükseltmesi için 4k altın gerekir.
+9149	Deri Kapşon +3 yükseltmesi için 2,5k altın gerekir.
+9150	Traditional Helm +8 yükseltmesi için White Pigtail Ribbon+ (x2) ve 40k altın gerekir.
+9151	Traditional Helm +1 yükseltmesi için 600 altın gerekir.
+9152	Keşiş Şapkası +9 yükseltmesi için Facial Cream ve 75k altın gerekir.
+9153	Keşiş Şapkası +7 yükseltmesi için White Pigtail Ribbon ve 30k altın gerekir.
+9154	Iron Helm +2 yükseltmesi için 2k altın gerekir.
+9155	Iron Helm +4 yükseltmesi için 10k altın gerekir.
+9156	Zincir Kapşon +5 yükseltmesi için Bayrak (x2) ve 20k altın gerekir.
+9157	Zincir Kapşon +9 yükseltmesi için Örümcek Yumurta Kesesi (x2), İstiridye ve 120k altın gerekir.
+9158	Mocking Helm +8 yükseltmesi için Örümceğin Zehir Kesesi (x2), İstiridye ve 75k altın gerekir.
+9159	Mocking Helm +6 yükseltmesi için Akrep Kuyruğu (x2) ve 20k altın gerekir.
+9160	Anka Şapkası +7 yükseltmesi için Örümcek Ağı (x2), Fishbone ve 30k altın gerekir.
+9161	Anka Şapkası +3 yükseltmesi için 4k altın gerekir.
+9162	Castle Helm +8 yükseltmesi için Buz Parçası+, Mavi İnci ve 90k altın gerekir.
+9163	Castle Helm +7 yükseltmesi için Frog Legs (x2), Parmak Kemikleri (x3) ve 45k altın gerekir.
+9164	Günışığı Şapka +6 yükseltmesi için Kurbağa Dili (x2) ve 30k altın gerekir.
+9165	Günışığı Şapka +5 yükseltmesi için Bilinmeyen İlaç+ (x2) ve 25k altın gerekir.
+9166	Çelik Kapşon +9 yükseltmesi için Alev Yelesi (x2), Parmak Kemikleri (x8) ve 150k altın gerekir.
+9167	Çelik Kapşon +1 yükseltmesi için 2k altın gerekir.
+9168	Hayalet Maske Başlık +3 yükseltmesi için 5k altın gerekir.
+9169	Hayalet Maske Başlık +4 yükseltmesi için 8k altın gerekir.
+9170	Bambu Derisi Ayakkabı +8 yükseltmesi için Skein (x2) ve 45k altın gerekir.
+9171	Bambu Derisi Ayakkabı +5 yükseltmesi için 12k altın gerekir.
+9172	Tahta Ayakkabı +7 yükseltmesi için Kaplan Postu (x2) ve 30k altın gerekir.
+9173	Altın Bezeli Ayakkabı +9 yükseltmesi için Yıpranmış Siyah Üniforma+ ve 75k altın gerekir.
+9174	Deri Çizme +8 yükseltmesi için Akrep Kıskacı (x2), İstiridye ve 70k altın gerekir.
+9175	Deri Çizme +6 yükseltmesi için Akrep Kuyruğu+ (x2) ve 20k altın gerekir.
+9176	Altın Ayakkabı +4 yükseltmesi için 10k altın gerekir.
+9177	Altın Ayakkabı +7 yükseltmesi için Akrep İğnesi (x2), Fishbone ve 40k altın gerekir.
+9178	Tunç Ayakkabı +5 yükseltmesi için Ork Muskası (x2) ve 13k altın gerekir.
+9179	YeşimTaşı Ayakkabı +9 yükseltmesi için Örümcek Yumurta Kesesi (x2), İstiridye ve 120k altın gerekir.
+9180	Ecstatic Shoes +2 yükseltmesi için 2,5k altın gerekir.
+9181	Ecstatic Shoes +9 yükseltmesi için Fighting Tiger Fang (x2), Red Pearl ve 150k altın gerekir.
+9182	Işık Saçan Çizme +7 yükseltmesi için Frog Legs (x2), Beyaz İnci ve 50k altın gerekir.
+9183	Işık Saçan Çizme +5 yükseltmesi için Örümcek Bacakları (x2) ve 20k altın gerekir.
+9184	Anka Ayakkabı +6 yükseltmesi için Frog Legs (x2) ve 30k altın gerekir.
+9185	Ateş Kuşu Çizmesi +8 yükseltmesi için Yeti Postu (x2), Mavi İnci ve 90k altın gerekir.
+9186	Bakır Çan +8 yükseltmesi için White Pigtail Ribbon (x2) ve 45k altın gerekir.
+9187	Gümüş Çan +7 yükseltmesi için Bear Gail+ (x2) ve 30k altın gerekir.
+9188	Altın Çan +9 yükseltmesi için Süslü Saç Tokası (x2) ve 75k altın gerekir.
+9189	YeşimTaşı Çan +7 yükseltmesi için Unknown Tailsman (x2), Fishbone ve 40k altın gerekir.
+9190	Kaynak Çan +6 yükseltmesi için Ork Muskası+ (x2) ve 20k altın gerekir.
+9191	Kayısı Ağacı Çan +8 yükseltmesi için Akrep Kuyruğu+ (x2), İstiridye ve 70k altın gerekir.
+9192	Kayısı Ağacı Çan +9 yükseltmesi için Lanet Kitabı (x2), İstiridye ve 120k altın gerekir.
+9193	Altın Böcek Çanı +8 yükseltmesi için Yaprak (x2), Mavi İnci ve 90k altın gerekir.
+9194	Çelik Böcek Çanı +9 yükseltmesi için Katil Buzbalina Boynuzu (x2), Red Pearl ve 150k altın gerekir.
+9195	Yıldırım Kuşu Çanı +7 yükseltmesi için Yaprak (x2), Beyaz İnci ve 45k altın gerekir.
+9196	Orkide Çan +5 yükseltmesi için Bilinmeyen İlaç ve 20k altın gerekir.
+9197	Antik Çan +8 yükseltmesi için 90k altın gerekir.
+9198	Antik Çan +3 yükseltmesi için 12k altın gerekir.
+9199	Bear Feet Tahta Bilezik +8 yükseltmesi için kullanılır.
+9200	Bear Feet Gümüş Bilezik +7 yükseltmesi için kullanılır.
+9201	Bear Feet+ Golden Bracelet +7 yükseltmesi için kullanılır.
+9202	White Pigtail Ribbon+ Gümüş Bilezik +7 yükseltmesi için kullanılır.
+9203	White Pigtail Ribbon+ Tahta Bilezik +8 yükseltmesi için kullanılır.
+9204	White Pigtail Ribbon Tahta Bilezik +8 yükseltmesi için kullanılır.
+9205	Facial Cream Golden Bracelet +9 yükseltmesi için kullanılır.
+9206	Facial Cream Gümüş Bilezik +8 yükseltmesi için kullanılır.
+9207	Paslı Bıçak YeşimTaşı Bilezik +5 yükseltmesi için kullanılır.
+9208	Paslı Bıçak Abanoz Bilezik +6 yükseltmesi için kullanılır.
+9209	Shiriken+ Abanoz Bilezik +6 yükseltmesi için kullanılır.
+9210	Shiriken+ Beyaz Altın Bilezik +7 yükseltmesi için kullanılır.
+9211	Shiriken Beyaz Altın Bilezik +6 yükseltmesi için kullanılır.
+9212	Örümcek Ağı İnci Bilezik +6 yükseltmesi için kullanılır.
+9213	Örümcek Ağı YeşimTaşı Bilezik +7 yükseltmesi için kullanılır.
+9214	Örümceğin Zehir Kesesi Abanoz Bilezik +8 yükseltmesi için kullanılır.
+9215	Örümceğin Zehir Kesesi İnci Bilezik +9 yükseltmesi için kullanılır.
+9216	Yılan Derisi Beyaz Altın Bilezik +9 yükseltmesi için kullanılır.
+9217	Yılan Derisi İnci Bilezik +8 yükseltmesi için kullanılır.
+9218	Bilinmeyen İlaç+ Cennetin Gözü Bilezik +5 yükseltmesi için kullanılır.
+9219	Bilinmeyen İlaç+ Kristal Bilezik +6 yükseltmesi için kullanılır.
+9220	Bilinmeyen İlaç Mor Yakut Bilezik +5 yükseltmesi için.
+9221	Şeytan Hatırası Cennetin Gözü Bilezik +6 yükseltmesi için kullanılır.
+9222	Şeytan Hatırası Mor Yakut Bilezik +7 yükseltmesi için kullanılır.
+9223	Şeytan Hatırası+ Kristal Bilezik +6 yükseltmesi için kullanılır.
+9224	Şeytan Mücevheri Cennetin Gözü Bilezik +7 yükseltmesi için kullanılır.
+9225	Şeytan Mücevheri Kristal Bilezik +8 yükseltmesi için kullanılır.
+9226	Şeytan Mücevheri+ Mor Yakut Bilezik +7 yükseltmesi için kullanılır.
+9227	Yeti Postu+ Kristal Bilezik +8 yükseltmesi için kullanılır.
+9228	Yeti Postu+ Cennetin Gözü Bilezik +7 yükseltmesi için kullanılır.
+9229	Yeti Postu Mor Yakut Bilezik +8 yükseltmesi için kullanılır.
+9230	Alev Yelesi Mor Yakut Bilezik +9 yükseltmesi için kullanılır.
+9231	Alev Yelesi Cennetin Gözü Bilezik +8 yükseltmesi için kullanılır.
+9232	Kurt Postu+ Tahta Kolye +7 yükseltmesi için kullanılır.
+9233	Kurt Postu+ Bakır Kolye +6 yükseltmesi için kullanılır.
+9234	Kurt Postu Tahta Kolye +7 yükseltmesi için kullanılır.
+9235	Red Pigtail Ribbon Bakır Kolye +7 yükseltmesi için kullanılır.
+9236	Red Pigtail Ribbon Tahta Kolye +8 yükseltmesi için kullanılır.
+9237	Süslü Saç Tokası Gümüş Kolye +9 yükseltmesi için kullanılır.
+9238	Süslü Saç Tokası Altın Kolye +8 yükseltmesi için kullanılır.
+9239	Shiriken YeşimTaşı Kolye +5 yükseltmesi için kullanılır.
+9240	Shiriken Abanoz Kolye +6 yükseltmesi için kullanılır.
+9241	Shiriken+ İnci Kolye +5 yükseltmesi için kullanılır.
+9242	Ork Muskası+ Beyaz Altın Kolye +6 yükseltmesi için kullanılır.
+9243	Ork Muskası+ YeşimTaşı Kolye +7 yükseltmesi için kullanılır.
+9244	Ork Muskası İnci Kolye +6 yükseltmesi için kullanılır.
+9245	Bilinmeyen Tılsım YeşimTaşı Kolye +7 yükseltmesi için kullanılır.
+9246	Bilinmeyen Tılsım Beyaz Altın Kolye +8 yükseltmesi için kullanılır.
+9247	Bilinmeyen Tılsım+ İnci Kolye +7 yükseltmesi için kullanılır.
+9248	Akrep Kuyruğu+ YeşimTaşı Kolye +8 yükseltmesi için kullanılır.
+9249	Akrep Kuyruğu+ Abanoz Kolye +9 yükseltmesi için kullanılır.
+9250	Akrep Kuyruğu Tahta Bilezik +8 yükseltmesi için kullanılır.
+9251	Orc Thoot+ Abanoz Kolye +9 yükseltmesi için kullanılır.
+9252	Orc Thoot+ Tahta Bilezik +8 yükseltmesi için kullanılır.
+9253	Orc Thoot YeşimTaşı Kolye +9 yükseltmesi için kullanılır.
+9254	Bilinmeyen İlaç Kristal Kolye +5 yükseltmesi için kullanılır.
+9255	Bilinmeyen İlaç Cennetin Gözü Kolye +6 yükseltmesi için kullanılır.
+9256	Bilinmeyen İlaç+ Mor Yakut Kolye +5 yükseltmesi için kullanılır.
+9257	Sargı Bezi Kristal Kolye +6 yükseltmesi için kullanılır.
+9258	Sargı Bezi Cennetin Gözü Kolye +5 yükseltmesi için kullanılır.
+9259	Sargı Bezi+ Mor Yakut Kolye +6 yükseltmesi için kullanılır.
+9260	Yaprak Kristal Kolye +7 yükseltmesi için kullanılır.
+9261	Yaprak Mor Yakut Kolye +8 yükseltmesi için kullanılır.
+9262	Buz Parçası Cennetin Gözü Kolye +8 yükseltmesi için kullanılır.
+9263	Buz Parçası Kristal Kolye +9 yükseltmesi için kullanılır.
+9264	Buz Parçası+ Mor Yakut Kolye +8 yükseltmesi için kullanılır.
+9265	Buz Küresi+ Kristal Kolye +9 yükseltmesi için kullanılır.
+9266	Buz Küresi+ Cennetin Gözü Kolye +8 yükseltmesi için kullanılır.
+9267	Buz Topu Mor Yakut Kolye +9 yükseltmesi için kullanılır.
+9268	Mavi Kurt seviye 7.
+9269	Kaplan seviye 17.
+9270	Alfa Gri Kurt seviye 16.
+9271	Aç Siyah Ayı seviye 19.
+9272	Beyaz Kaplan seviye 26.
+9273	Aç Yaban Domuzu seviye 10.
+9274	Boz Ayı seviye 13.
+9275	Beyaz Yeminli Asker seviye 18.
+9276	Moralsiz Mi-Jung seviye 23.
+9277	Moralsiz Eun-Jung seviye 28.
+9278	Moralsiz Jin-Hee seviye 29.
+9279	Beyaz Yeminli General seviye 25.
+9280	Ayı seviye 12.
+9281	White 0ath Archer seviye 20.
+9282	Siyah Rüzgar Gu-Ryung seviye 32.
+9283	Bo seviye 36.
+9284	Siyah Rüzgar Okçusu seviye 29.
+9285	Siyah Rüzgar Delisi seviye 28.
+9286	Siyah Rüzgar Askeri seviye 26.
+9287	Siyah Rüzgar Jak-To seviye 30.
+9288	Yabani Piyade seviye 29.
+9289	Evil Black Storm Joh-Hwa seviye 29.
+9290	Evil Black Storm Archer seviye 30.
+9291	Yabani Uşak seviye 31.
+9292	Lanetli Kurt seviye 9.
+9293	Lanetli Alfa Mavi Kurt seviye 14.
+9294	Lanetli Ayı seviye 18.
+9295	Lanetli Siyah Ayı seviye 24.
+9296	Lanetli Kahverengi Ayı seviye 26.
+9297	Lanetli Yaban Domuzu seviye 12.
+9298	Lanetli Kaplan seviye 23.
+9299	Lanetli Beyaz Kaplan seviye 29.
+9300	Vahşi Asker seviye 35.
+9301	Vahşi Uzman seviye 42.
+9302	Vahşi Deli seviye 38.
+9303	Vahşi Okçu seviye 41.
+9304	Güçlü Yabani Okçu seviye 35.
+9305	Güçlü Yabani Asker seviye 29.
+9306	Güçlü Yabani General seviye 35.
+9307	Güçlü Yabani Deli seviye 31.
+9308	Orc seviye 26.
+9309	Ork Gözcüsü seviye 30.
+9310	Ork Savaşçısı seviye 32.
+9311	Ork Büyücüsü seviye 33.
+9312	Elit Ork seviye 34.
+9313	Elit Ork Gözcüsü seviye 36.
+9314	Elit Ork Savaşçısı seviye 39.
+9315	Elit Ork Büyücüsü seviye 40.
+9316	Elit Ork Generali seviye 45.
+9317	Siyah Ork seviye 47.
+9318	Siyah Ork Devi seviye 49.
+9319	Esoteric Fanatic seviye 35.
+9320	Esoteric Arahan seviye 39.
+9321	Mistik Arahan Savaşçısı seviye 41.
+9322	Mistik Arahan Reisi seviye 43.
+9323	Mistik Cellat seviye 46.
+9324	Mistik İşkenceci seviye 47.
+9325	Mistik Haberci seviye 51.
+9326	Kibirli Karanlık Fanatik seviye 50.
+9327	Kibirli Karanlık Arahan seviye 52.
+9328	Kibirli Karanlık Savaşçı seviye 54.
+9329	Kibirli Karanlık Albay seviye 54.
+9330	Kibirli Karanlık Nişancı seviye 57.
+9331	Hastalıklı Köpek seviye 51.
+9332	Hastalıklı Adam seviye 54.
+9333	Hast. Kılıç Savaşçısı seviye 56.
+9334	Hastalıklı Mızrakçı seviye 58.
+9335	Hastalıklı Okçu seviye 57.
+9336	Hastalıklı Lider seviye 59.
+9337	Şeytan Askeri seviye 57.
+9338	Şeytan Okçusu seviye 59.
+9339	Şeytan Mızrakçısı seviye 58.
+9340	Şeytan Şamanı seviye 60.
+9341	Çirkin Şeytan Askeri seviye 65.
+9342	Çirkin Şeytan Okçusu seviye 69.
+9343	Çirkin Şeytan Mızrakçısı seviye 70.
+9344	Çirkin Şeytan Şamanı seviye 69.
+9345	Hınç Hayaleti seviye 72.
+9346	Kaos Hayaleti seviye 72.
+9347	Çirkin Şeytan Lideri seviye 73.
+9348	Kafatası Kılıç Ustası seviye 72.
+9349	Uçan Kafatası seviye 69.
+9350	Ölümsüz Hayalet seviye 73.
+9351	Şeytani Canavar seviye 75.
+9352	Şeytan Kralı seviye 74.
+9353	Lusifer seviye 78.
+9354	Büyülü Buz seviye 62.
+9355	Buz Katil Balinası seviye 63.
+9356	Buz Böceği seviye 65.
+9357	Buz Arslanı seviye 64.
+9358	Buz Adam seviye 63.
+9359	Yeti seviye 65.
+9360	Buz Golemi seviye 66.
+9361	Heavenly Enchanted Ice seviye 82.
+9362	Heavenly Ice Killer Whale seviye 82.
+9363	Heavenly Ice Bug seviye 82.
+9364	Heavenly Ice Lion seviye 83.
+9365	Heavenly Ice Man seviye 83.
+9366	Heavenly Yeti seviye 83.
+9367	Heavenly Ice Golem seviye 86.
+9368	Ağaç Kurbağası Askeri seviye 57.
+9369	Ağaç Kurbağası Lideri seviye 60.
+9370	Gulyabani seviye 59.
+9371	Sarı Kaplan Hayaleti seviye 75.
+9372	Kurbağa Generali seviye 60.
+9373	Giant Soldier seviye 66.
+9374	Giant Scout seviye 73.
+9375	Giant Thousand Fighter seviye 76.
+9376	Stone Thrower seviye 68.
+9377	Stone Shooter seviye 72.
+9378	Giant Stone Shooter seviye 72.
+9379	Giant Worker seviye 68.
+9380	Giant Inspector seviye 72.
+9381	Giant Hundred Combatant seviye 75.
+9382	Dokuz Kuyruk seviye 74.
+9383	Yavru Örümcek seviye 43.
+9384	Deadly Spider seviye 45.
+9385	Crimson Spider seviye 47.
+9386	Pençe Örümceği seviye 49.
+9387	Asker Örümcek seviye 51.
+9388	Yavru Zehirli Örümcek seviye 50.
+9389	Ölümcül Zehirli Örümcek seviye 52.
+9390	Kırmızı Zehirli Örümcek seviye 53.
+9391	Zehirli Pençe Örümceği seviye 5.
+9392	Zehirli Asker Örümcek seviye 58.
+9393	Kraliçe Örümcek seviye 60.
+9394	Çöl Tilkisi seviye 22.
+9395	Çölün Uçan Gözü seviye 35.
+9396	Kral Akrep seviye 39.
+9397	Scorpion Man seviye 45.
+9398	Akrep Okçu seviye 47.
+9399	Yılan Kılıççı seviye 48.
+9400	Yılan Okçu seviye 52.
+9401	Çöl Haydutu seviye 54.
+9402	Giant Turtle seviye 66.
+9403	Savaş Kaplanı Kölesi seviye 69.
+9404	Alev Hayaleti seviye 70.
+9405	Savaş Kaplanı seviye 70.
+9406	Flame Soldier seviye 72.
+9407	Alev Savaşçı seviye 73.
+9408	Alev Kral seviye 73.
+9409	Haunted Tree seviye 65.
+9410	Haunted Stump seviye 67.
+9411	Orman Perisi seviye 68.
+9412	Haunted Willow seviye 69.
+9413	Evil Haunted Tree seviye 72.
+9414	Red Brutal Tree seviye 73.
+9415	Red Haunted Stump seviye 76.
+9416	Kırmızı Orman Perisi seviye 77.
+9417	Red Haunted Willow seviye 79.
+9418	Red Haunted Tree seviye 82.
+9419	Heaven Soldier seviye 85.
+9420	Heaven Archer seviye 88.
+9421	Heaven Cleric seviye 87.
+9422	Heaven Commander seviye 88.
+9423	Zin Heaven Soldier seviye 90.
+9424	Zin Heaven Archer seviye 92.
+9425	Zin Heaven Cleric seviye 93.
+9426	Zin Heaven Commander seviye 95.
+9427	Aqua Dragon seviye 97.
+9428	Gnoll Savaşçı seviye 96.
+9429	Gnoll Okçu seviye 96.
+9430	Gnoll Savunucu seviye 98.
+9431	Gnoll Büyücü seviye 98.
+9432	Gnoll General seviye 99.
+9433	Lord Gnoll seviye 102.
+9434	Baş Gnoll Nöbetçi seviye 104.
+9435	Tekgözlü Kavgacı seviye 97.
+9436	Kiklop Asker seviye 99.
+9437	Kiklop Büyücü seviye 100.
+9438	Kiklop Cellat seviye 99.
+9439	General Outis seviye 102.
+9440	Arges seviye 104.
+9441	Polyphemos seviye 105.
+9442	Mantikor Savaşçı seviye 96.
+9443	Mantikor Asker seviye 98.
+9444	Mantikor Büyücü seviye 99.
+9445	Mantikor Cellat seviye 99.
+9446	General Kor seviye 101.
+9447	Rakshasa seviye 102.
+9448	Martyaxwar seviye 105.
+9449	Lemur Savaşçı seviye 98.
+9450	Lemur Asker seviye 98.
+9451	Lemur Büyücü seviye 99.
+9452	Lemur Cellat seviye 101.
+9453	Lemur General seviye 102.
+9454	Lemur Prensi seviye 103.
+9455	Lemur Muhafız seviye 104.
+9456	Triton Murana seviye 96.
+9457	Köpekbalığı Askeri seviye 98.
+9458	Triton Büyücü seviye 99.
+9459	Triton Avcı seviye 98.
+9460	Triton Usturacı seviye 101.
+9461	General Kappa seviye 103.
+9462	Triton seviye 105.
+9463	Kızılhırsız Amazon seviye 95.
+9464	Kızılhırsız Katil seviye 97.
+9465	Kızılhırsız Büyücü seviye 97.
+9466	Kızılhırsız Cellat seviye 98.
+9467	Siyah General seviye 98.
+9468	Kemiksurat seviye 102.
+9469	Kızıl Reis seviye 104.
+9470	Yengeç Savaşçı seviye 96.
+9471	Akrep Savaşçı seviye 97.
+9472	Karides Asker seviye 99.
+9473	Şeytani Keşiş seviye 98.
+9474	Zırhlı Yengeç seviye 102.
+9475	General Istakoz seviye 103.
+9476	Kral Yengeç seviye 105.
+9477	Devasa Dişlek seviye 100.
+9478	Dev Kasap seviye 102.
+9479	Dev Büyücü seviye 103.
+9480	Yarım Dünya seviye 104.
+9481	Kaptan Kanca seviye 105.
+9482	Gargoyle seviye 105.
+9483	Kral Voba seviye 105.
+9484	Cellatork seviye 98.
+9485	Okçu Öcü seviye 100.
+9486	Kavgacı Öcü seviye 102.
+9487	Öcü Büyücü seviye 101.
+9488	General Öcü seviye 103.
+9489	Kaptan Şrak seviye 105.
+9490	Dev Öcü seviye 105.
+9491	Üzüntü Metini seviye 10.
+9492	Dövüş Metini seviye 10.
+9493	Savaş Metini seviye 15.
+9494	Hırs Metini seviye 20.
+9495	Siyah Metin seviye 30.
+9496	Karanlık Metin seviye 30.
+9497	Kıskançlık Metini seviye 40.
+9498	Ruh Metini seviye 45.
+9499	Gölge Metini seviye 40.
+9500	Dayanıklılık Metini seviye 50.
+9501	Şeytan Metini seviye 60.
+9502	Lanet Metini seviye 55.
+9503	Ölüm Metini seviye 65.
+9504	Katil Metini seviye 70.
+9505	Metin of Wind Devil seviye 80.
+9506	Metin of Devil Eyes seviye 80.
+9507	Metin of Fighting Dragon seviye 85.
+9508	Metin of Lightning Cloud seviye 85.
+9509	Işıksızlık Metini seviye 100.
+9510	Korluğun Metini seviye 95.
+9511	Mağrurluğun Metini seviye 100.
+9512	Öfkenin Metini seviye 105.
+9513	Felaketin Metini seviye 105.
+9514	Namertlik Metini seviye 100.
+9515	Zayıf Maymun Asker seviye 22.
+9516	Zayıf Maymun Atıcı seviye 24.
+9517	Zayıf Maymun Savaşçı seviye 27.
+9518	Zayıf Maymun General seviye 29.
+9519	Ape Soldier seviye 36.
+9520	Ape Thrower seviye 37.
+9521	Ape Fighter seviye 40.
+9522	Maymun General seviye 40.
+9523	Taş Maymun seviye 41.
+9524	Maymun Lider seviye 42.
+9525	Güçlü Maymun Asker seviye 46.
+9526	Güçlü Maymun Atıcı seviye 48.
+9527	Güçlü Maymun Savaşçı seviye 48.
+9528	Güçlü Maymun General seviye 52.
+9529	Güçlü Taş Maymun seviye 53.
+9530	Kaya Maymun seviye 35.
+9531	Maymun Lordu seviye 55.
+9532	Devil seviye 80.
+9533	Devil's Wolf seviye 80.
+9534	Devil's Wraith seviye 81.
+9535	Devil's Skulker seviye 85.
+9536	Devil's Spearman seviye 84.
+9537	Devil's Cockatrice seviye 83.
+9538	Devil's Dominator seviye 85.
+9539	Spectral Crusher seviye 79.
+9540	Spectral Bower seviye 80.
+9541	Spectral Spikeman seviye 82.
+9542	Spectral Shaman seviye 10.
+9543	Spectral Axeman seviye 83.
+9544	Spectral Titan seviye 85.
+9545	Spectral Hunter seviye 86.
+9546	Hateful Crusher seviye 80.
+9547	Hateful Bower seviye 10.
+9548	Hateful Spikeman seviye 10.
+9549	Hateful Shaman seviye 82.
+9550	Hateful Axeman seviye 84.
+9551	Hateful Titan seviye 85.
+9552	Hateful Hunter seviye 86.
+9553	Tartarus seviye 89.
+9554	Erebus seviye 90.
+9555	Kharoon seviye 91.
+9556	Lord Gahnasel seviye 92.
+9557	Cung-Mok seviye 8.
+9558	Mu-Rang seviye 15.
+9559	Jug-Hyul seviye 10.
+9560	Young-Ji seviye 21.
+9561	Li-An seviye 24.
+9562	Lykos seviye 30.
+9563	Scrofa seviye 30.
+9564	Bera seviye 32.
+9565	Tigris seviye 35.
+9566	Se-Rang seviye 25.
+9567	Eun-Jung seviye 26.
