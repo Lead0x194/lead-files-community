@@ -838,12 +838,7 @@ class LoginWindow(ui.ScriptWindow):
 			serverName = serverInfo.REGION_DICT[regionID][serverID]["name"]
 			channelName = serverInfo.REGION_DICT[regionID][serverID]["channel"][channelID]["name"]
 			addrKey = serverInfo.REGION_DICT[regionID][serverID]["channel"][channelID]["key"]
-			
-			if "õ�� ����" == serverName:			
-				app.ForceSetLocale("ymir", "locale/ymir")
-			elif "�赵 ����" == serverName:			
-				app.ForceSetLocale("we_korea", "locale/we_korea")				
-				
+
 		except:
 			print " ERROR __OnClickSelectServerButton(%d, %d, %d)" % (regionID, serverID, channelID)
 			serverName = localeInfo.CHANNEL_EMPTY_SERVER
