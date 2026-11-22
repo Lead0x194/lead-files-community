@@ -228,6 +228,16 @@ static bool ExpandTag(const std::string& c_rstTag, std::string& rstResult)
 			rstResult = itor->second;
 		else
 			rstResult = FormatString(itor->second, kTokenVector);
+
+		for (size_t i = 0; i < rstResult.length(); ++i)
+		{
+			if ('\x1E' == rstResult[i])
+				rstResult[i] = ';';
+			else if ('\x1C' == rstResult[i])
+				rstResult[i] = '[';
+			else if ('\x1D' == rstResult[i])
+				rstResult[i] = ']';
+		}
 		return true;
 	}
 

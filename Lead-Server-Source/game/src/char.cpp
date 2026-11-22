@@ -3715,7 +3715,7 @@ void CHARACTER::ChatPacket(BYTE type, const char * format, ...)
 	va_list args;
 
 	va_start(args, format);
-	int len = vsnprintf(chatbuf, sizeof(chatbuf), format, args);
+	int len = locale_vformat(chatbuf, sizeof(chatbuf), format, args);
 	va_end(args);
 
 	struct packet_chat pack_chat;
