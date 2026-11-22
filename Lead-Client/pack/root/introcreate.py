@@ -87,7 +87,7 @@ class CreateCharacterWindow(ui.Window):
 			newScreenWidth = float(screenWidth - 270)
 			newScreenHeight = float(screenHeight)
 
-			grp.SetViewport(270.0/screenWidth, 0.0, newScreenWidth/screenWidth, newScreenHeight/screenHeight)
+			grp.SetViewport((0.0 if localeInfo.IsRTL() else 270.0)/screenWidth, 0.0, newScreenWidth/screenWidth, newScreenHeight/screenHeight)
 
 			app.SetCenterPosition(0.0, 0.0, 0.0)
 			app.SetCamera(1550.0, 15.0, 180.0, 95.0)
