@@ -15,6 +15,18 @@
 const long c_lNormal_Waiting_Time = 0;
 const int c_fLine_Temp = 16;
 
+static int CountLetters(const char* c_szText)
+{
+	int iCount = 0;
+	for (; *c_szText; ++c_szText)
+	{
+		if ((static_cast<unsigned char>(*c_szText) & 0xC0) != 0x80)
+			++iCount;
+	}
+
+	return iCount;
+}
+
 void ShowArgument(script::TArgList & rArgumentList)
 {
 	for (script::TArgList::iterator itor=rArgumentList.begin(); itor!=rArgumentList.end(); ++itor)
@@ -402,7 +414,7 @@ void CPythonEventManager::ProcessEventSet(TEventSet * pEventSet)
 			pEventSet->strCurrentLine.append(c_rstValue);
 			pEventSet->pCurrentTextLine->SetValueString(pEventSet->strCurrentLine);
 			pEventSet->pCurrentTextLine->SetColor(pEventSet->CurrentColor.r,pEventSet->CurrentColor.g,pEventSet->CurrentColor.b);
-			pEventSet->iCurrentLetter+=static_cast<int>(c_rstValue.length());
+			pEventSet->iCurrentLetter += CountLetters(c_rstValue.c_str());
 
 			if (pEventSet->iCurrentLetter >= pEventSet->iRestrictedCharacterCount)
 			{
@@ -715,7 +727,7 @@ void CPythonEventManager::ProcessEventSet(TEventSet * pEventSet)
 				pEventSet->strCurrentLine.append(pItemData->GetName());
 				pEventSet->pCurrentTextLine->SetValue(pEventSet->strCurrentLine.c_str());
 				pEventSet->pCurrentTextLine->SetColor(1.0f, 0.2f, 0.2f);
-				pEventSet->iCurrentLetter+= static_cast<int>(strlen(pItemData->GetName()));
+				pEventSet->iCurrentLetter += CountLetters(pItemData->GetName());
 
 				if (pEventSet->iCurrentLetter >= pEventSet->iRestrictedCharacterCount)
 					__InsertLine(*pEventSet);
@@ -735,7 +747,7 @@ void CPythonEventManager::ProcessEventSet(TEventSet * pEventSet)
 			{
 				pEventSet->strCurrentLine.append(c_szName);
 				pEventSet->pCurrentTextLine->SetValue(pEventSet->strCurrentLine.c_str());
-				pEventSet->iCurrentLetter+= static_cast<int>(strlen(c_szName));
+				pEventSet->iCurrentLetter += CountLetters(c_szName);
 
 				if (pEventSet->iCurrentLetter >= pEventSet->iRestrictedCharacterCount)
 					__InsertLine(*pEventSet);
