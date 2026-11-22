@@ -201,6 +201,8 @@ def __RegisterMiniMapColor(type, rgb):
 
 class MiniMap(ui.ScriptWindow):
 
+	keepMarks = False
+
 	CANNOT_SEE_INFO_MAP_DICT = {
 		"metin2_map_monkeydungeon" : False,
 		"metin2_map_monkeydungeon_02" : False,
@@ -258,7 +260,8 @@ class MiniMap(ui.ScriptWindow):
 		# END_OF_AUTOBAN
 
 	def __del__(self):
-		miniMap.Destroy()
+		if not MiniMap.keepMarks:
+			miniMap.Destroy()
 		ui.ScriptWindow.__del__(self)
 
 	def __Initialize(self):

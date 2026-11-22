@@ -1614,7 +1614,7 @@ class Interface(object):
 		self.__ShowWindows(self.wndGuildBuilding.wnds)
 		self.wndGuildBuilding = None
 
-	REBUILD_KEEP_OPEN_LIST = ("wndCharacter", "wndInventory", "wndDragonSoul", "wndMessenger", "wndGuild", "wndChatLog", "wndExpandedTaskBar")
+	REBUILD_KEEP_OPEN_LIST = ("wndCharacter", "wndInventory", "wndDragonSoul", "wndMessenger", "wndGuild", "wndChatLog", "wndExpandedTaskBar", "wndSwitchbot")
 
 	def Rebuild(self, changeEvent):
 		openDict = {}
@@ -1632,9 +1632,18 @@ class Interface(object):
 
 		sentenceStack = self.wndChat.chatInputSet.chatLine.lastSentenceStack
 
+		atlasPosition = None
+		if self.wndMiniMap.AtlasWindow.IsShow():
+			atlasPosition = self.wndMiniMap.AtlasWindow.GetGlobalPosition()
+
+		whisperDialogList = [(name, dlg.GetGlobalPosition()) for name, dlg in self.whisperDialogDict.items() if name and dlg.IsShow()]
+		whisperButtonNameList = [btn.name for btn in self.whisperButtonList]
+
+		uiMiniMap.MiniMap.keepMarks = True
 		self.HideAllWindows()
 		self.Close()
 		gc.collect()
+		uiMiniMap.MiniMap.keepMarks = False
 		changeEvent()
 		self.__init__()
 		miniMap.LoadAtlas()
@@ -1667,6 +1676,19 @@ class Interface(object):
 
 		if systemOptionPosition:
 			self.dlgSystem.OpenSystemOption().SetPosition(*systemOptionPosition)
+
+		if atlasPosition:
+			self.wndMiniMap.ShowAtlas()
+			self.wndMiniMap.AtlasWindow.SetPosition(*atlasPosition)
+
+		whisperButtonNameList.reverse()
+		for name in whisperButtonNameList:
+			self.MakeWhisperButton(name)
+
+		for name, position in whisperDialogList:
+			self.OpenWhisperDialog(name)
+			if self.whisperDialogDict.has_key(name):
+				self.whisperDialogDict[name].SetPosition(*position)
 
 	def BUILD_OnUpdate(self):
 		if not self.wndGuildBuilding:
