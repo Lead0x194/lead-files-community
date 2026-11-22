@@ -1110,7 +1110,7 @@ bool CInstanceBase::RegisterEffect(UINT eEftType, const char* c_szEftAttachBone,
 
 void CInstanceBase::RegisterTitleName(int iIndex, const char * c_szTitleName)
 {
-	g_TitleNameMap.insert(std::make_pair(iIndex, c_szTitleName));
+	g_TitleNameMap[iIndex] = c_szTitleName;
 }
 
 D3DXCOLOR __RGBToD3DXColoru(UINT r, UINT g, UINT b)
