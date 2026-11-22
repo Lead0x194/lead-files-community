@@ -254,7 +254,7 @@ namespace UI
 						m_rect.left = - m_x;
 						break;
 					case HORIZONTAL_ALIGN_CENTER:
-						m_rect.left = m_pParent->GetWidth() / 2 - GetWidth() - m_x;
+						m_rect.left = (m_pParent->GetWidth() - GetWidth()) / 2 - m_x;
 						break;
 				}
 				m_rect.left += m_pParent->m_rect.left;
