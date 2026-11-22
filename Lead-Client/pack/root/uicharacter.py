@@ -1051,10 +1051,7 @@ class CharacterWindow(ui.ScriptWindow):
 			self.characterNameValue.SetText(characterName)
 			self.guildNameValue.SetText(guildName)
 			if not guildName:
-				if localeInfo.IsRTL():
-					self.characterNameSlot.SetPosition(190, 34)
-				else:
-					self.characterNameSlot.SetPosition(109, 34)
+				self.characterNameSlot.SetPosition(109, 34)
 
 				self.guildNameSlot.Hide()
 			else:
