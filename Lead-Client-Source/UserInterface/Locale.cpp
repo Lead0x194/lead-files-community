@@ -242,6 +242,48 @@ void LocaleService_ReplaceTags(std::string& rstText)
 	rstText.swap(stResult);
 }
 
+static std::map<int, std::string> s_kQuestButtonNameMap;
+
+void LocaleService_RememberQuestButton(const std::string& c_rstScript)
+{
+	static const std::string c_stHead = "[QUESTBUTTON idx;";
+	static const std::string c_stName = "|name;";
+
+	if (0 != c_rstScript.compare(0, c_stHead.length(), c_stHead))
+		return;
+
+	const size_t c_uName = c_rstScript.find(c_stName);
+	if (std::string::npos == c_uName)
+		return;
+
+	int iDepth = 0;
+	size_t uEnd = c_uName + c_stName.length();
+	for (; uEnd < c_rstScript.length(); ++uEnd)
+	{
+		const char c = c_rstScript[uEnd];
+		if ('[' == c)
+			++iDepth;
+		else if (0 == iDepth && (']' == c || '|' == c))
+			break;
+		else if (']' == c)
+			--iDepth;
+	}
+
+	const size_t c_uStart = c_uName + c_stName.length();
+	s_kQuestButtonNameMap[static_cast<int>(atoi(c_rstScript.c_str() + c_stHead.length()))] = c_rstScript.substr(c_uStart, uEnd - c_uStart);
+}
+
+std::string LocaleService_GetQuestButtonName(int iIndex)
+{
+	std::map<int, std::string>::const_iterator itor = s_kQuestButtonNameMap.find(iIndex);
+	if (s_kQuestButtonNameMap.end() == itor)
+		return "";
+
+	std::string stName(itor->second);
+	LocaleService_ReplaceTags(stName);
+	return stName;
+}
+
 unsigned LocaleService_GetLastExp(int level)
 {
 	static const int GUILD_LEVEL_MAX = 20;

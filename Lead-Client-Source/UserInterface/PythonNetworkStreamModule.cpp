@@ -1,5 +1,6 @@
 ﻿#include "StdAfx.h"
 #include "PythonNetworkStream.h"
+#include "Locale.h"
 #include "AccountConnector.h"
 #include "PythonGuild.h"
 #include "AbstractPlayer.h"
@@ -506,6 +507,15 @@ PyObject* netSendCharacterPositionPacket(PyObject* poSelf, PyObject* poArgs)
 	CPythonNetworkStream& rkNetStream=CPythonNetworkStream::Instance();
 	rkNetStream.SendCharacterPositionPacket((BYTE) iPosition);
 	return Py_BuildNone();
+}
+
+PyObject* netGetQuestButtonName(PyObject* poSelf, PyObject* poArgs)
+{
+	int iIndex;
+	if (!PyTuple_GetInteger(poArgs, 0, &iIndex))
+		return Py_BuildException();
+
+	return Py_BuildValue("s", LocaleService_GetQuestButtonName(iIndex).c_str());
 }
 
 PyObject* netSendChatPacket(PyObject* poSelf, PyObject* poArgs)
@@ -1682,6 +1692,7 @@ void initnet()
 		{ "Disconnect",							netDisconnect,							METH_VARARGS },
 		{ "IsConnect",							netIsConnect,							METH_VARARGS },
 
+		{ "GetQuestButtonName",					netGetQuestButtonName,					METH_VARARGS },
 		{ "SendChatPacket",						netSendChatPacket,						METH_VARARGS },
 		{ "SendEmoticon",						netSendEmoticon,						METH_VARARGS },
 		{ "SendWhisperPacket",					netSendWhisperPacket,					METH_VARARGS },
