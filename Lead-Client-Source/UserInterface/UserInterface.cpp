@@ -59,8 +59,6 @@ volatile int _AVOID_FLOATING_POINT_LIBRARY_BUG = _fltused;
 
 #include <stdlib.h>
 
-extern bool SetDefaultCodePage(DWORD codePage);
-
 static const char * sc_apszPythonLibraryFilenames[] =
 {
 	"UserDict.pyc",
@@ -492,7 +490,6 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 	ApplicationStringTable_Initialize(hInstance);
 
 	LocaleService_LoadConfig("metin2.cfg");
-	SetDefaultCodePage(LocaleService_GetCodePage());	
 
 	bool bQuit = false;
 	int nArgc = 0;

@@ -139,109 +139,11 @@ D3DXCOLOR TokenToColor(CTokenVector & rVector)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
-static std::string	gs_fontFace="";
-static DWORD		gs_codePage=0;
 static bool			gs_isRTL=false;
 
 int CALLBACK EnumFontFamExProc(CONST LOGFONT* plogFont, CONST TEXTMETRIC* /*textMetric*/, DWORD /*dwWord*/, LPARAM lParam)
 {
 	return _stricmp((const char*)lParam, plogFont->lfFaceName);
-}
-
-int GetCharsetFromCodePage(WORD codePage)
-{
-	switch( codePage )
-	{
-	case CP_932:
-		return SHIFTJIS_CHARSET;
-	case CP_949:
-		return HANGUL_CHARSET;
-	case CP_936:
-		return GB2312_CHARSET;
-	case CP_950:
-		return CHINESEBIG5_CHARSET;
-	case CP_1253:
-		return GREEK_CHARSET;
-	case CP_1254:
-		return TURKISH_CHARSET;
-	case CP_1255:
-		return HEBREW_CHARSET;
-	case CP_1256:
-		return ARABIC_CHARSET;
-	case CP_1257:
-		return BALTIC_CHARSET;
-	case CP_1258:
-		return VIETNAMESE_CHARSET;
-	case CP_874:
-		return THAI_CHARSET;
-	case CP_1250:
-		return EASTEUROPE_CHARSET;
-	case CP_1251:
-		return RUSSIAN_CHARSET;
-	default:
-		return DEFAULT_CHARSET;
-	}
-}
-
-
-const char* GetFontFaceFromCodePageNT(WORD codePage)
-{
-	switch( codePage )
-	{
-	case CP_932:
-		return "MS PGothic";
-	case CP_949:
-		return "GulimChe";
-	case CP_936:
-		return "SimSun";
-	case CP_950:
-		return "MingLiU";
-	case CP_874:
-		return "Tahoma";
-	case CP_1252:
-		return "Arial";
-	case CP_1256:
-		return "Tahoma"; 
-	case CP_1258:
-		return "Tahoma"; 
-	case CP_65001:
-		return "Arial";
-	default:
-		return "Arial";
-	}
-}
-const char* GetFontFaceFromCodePage9x(WORD codePage)
-{
-	switch( codePage )
-	{
-	case CP_932:
-		return "Okay, okay, okay.ay, okay.";
-	case CP_949:
-		return "Cursive font";
-	case CP_936:
-		// GBK (CP_936) bytes for U+82A5 U+7ADF; written as explicit escapes so the
-		// narrow encoding is deterministic regardless of the compiler's execution charset.
-		return "\xBD\xE6\xBE\xB9";
-	case CP_950:
-		return "Top";
-	case CP_874:
-		return "Tahoma";
-	case CP_1252:
-		return "Arial";
-	case CP_1256:
-		return "Tahoma"; 
-	case CP_1258:
-		return "Tahoma"; 
-	case CP_65001:
-		return "Arial"; 
-	default:
-		return "Arial";
-	}
-}
-
-DWORD GetDefaultCodePage()
-{
-	return gs_codePage;
 }
 
 bool IsDefaultRTL()
@@ -254,88 +156,45 @@ void SetDefaultRTL(bool isRTL)
 	gs_isRTL = isRTL;
 }
 
-int GetDefaultCodePageCharLength(const char* c_szText)
+int GetUTF8CharLength(const char* c_szText)
 {
 	const unsigned char lead = static_cast<unsigned char>(*c_szText);
 
 	if (lead < 0x80)
 		return 1;
 
-	if (CP_UTF8 == gs_codePage)
-	{
-		int length = 2;
+	int length = 2;
 
-		if (lead >= 0xF0)
-			length = 4;
-		else if (lead >= 0xE0)
-			length = 3;
+	if (lead >= 0xF0)
+		length = 4;
+	else if (lead >= 0xE0)
+		length = 3;
 
-		int count = 1;
+	int count = 1;
 
-		while (count < length && (static_cast<unsigned char>(c_szText[count]) & 0xC0) == 0x80)
-			++count;
+	while (count < length && (static_cast<unsigned char>(c_szText[count]) & 0xC0) == 0x80)
+		++count;
 
-		return count;
-	}
-
-	if (IsDBCSLeadByteEx(gs_codePage, lead) && c_szText[1])
-		return 2;
-
-	return 1;
+	return count;
 }
 
 const char * GetDefaultFontFace()
 {
-	return gs_fontFace.c_str();
-}
+	const char* fontFace = "Arial";
 
-const char*	GetFontFaceFromCodePage(WORD codePage)
-{
 	LOGFONT logFont;
 
 	memset(&logFont, 0, sizeof(logFont));
 
-	logFont.lfCharSet = GetCharsetFromCodePage(codePage);
-
-	const char* fontFace = GetFontFaceFromCodePage9x(codePage);
+	logFont.lfCharSet = DEFAULT_CHARSET;
 
 	HDC hDC=GetDC(NULL);
 
-	if(EnumFontFamiliesEx(hDC, &logFont, (FONTENUMPROC)EnumFontFamExProc, (LPARAM)fontFace, 0) == 0)
-	{
-		ReleaseDC(NULL, hDC);
-		return fontFace;
-	}
-
-	fontFace = GetFontFaceFromCodePageNT(codePage);
-
-	if(EnumFontFamiliesEx(hDC, &logFont, (FONTENUMPROC)EnumFontFamExProc, (LPARAM)fontFace, 0) == 0)
-	{
-		ReleaseDC(NULL, hDC);
-		return fontFace;
-	}
+	const bool isInstalled = EnumFontFamiliesEx(hDC, &logFont, (FONTENUMPROC)EnumFontFamExProc, (LPARAM)fontFace, 0) == 0;
 
 	ReleaseDC(NULL, hDC);
 
-	return GetDefaultFontFace();
-}
-
-void SetDefaultFontFace(const char* fontFace)
-{
-	gs_fontFace=fontFace;
-}
-
-bool SetDefaultCodePage(DWORD codePage)
-{
-	gs_codePage=codePage;
-
-	std::string fontFace=GetFontFaceFromCodePage(static_cast<WORD>(codePage));
-	if (fontFace.empty())
-		return false;
-
-	SetDefaultFontFace(fontFace.c_str());
-
-	return true;
+	return isInstalled ? fontFace : "";
 }
 
 

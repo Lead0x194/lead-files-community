@@ -10,8 +10,6 @@
 class CGraphicFontTexture : public CGraphicTexture
 {
 public:
-	typedef std::pair<WORD,wchar_t> TCharacterKey;
-
 	typedef struct SCharacterInfomation
 	{
 		short index;
@@ -43,8 +41,8 @@ public:
 
 	bool UpdateTexture();
 
-	TCharacterInfomation* GetCharacterInfomation(WORD codePage, wchar_t keyValue);
-	TCharacterInfomation* UpdateCharacterInfomation(TCharacterKey code);
+	TCharacterInfomation* GetCharacterInfomation(wchar_t keyValue);
+	TCharacterInfomation* UpdateCharacterInfomation(wchar_t code);
 
 	bool IsEmpty() const;
 
@@ -53,12 +51,11 @@ protected:
 
 	bool AppendTexture();
 
-	HFONT GetFont(WORD codePage);
+	HFONT CreateFontHandle();
 
 protected:		
 	typedef std::vector<CGraphicImageTexture*>				TGraphicImageTexturePointerVector;
-	typedef std::map<TCharacterKey, TCharacterInfomation>	TCharacterInfomationMap;
-	typedef std::map<WORD, HFONT>							TFontMap;
+	typedef std::map<wchar_t, TCharacterInfomation>			TCharacterInfomationMap;
 
 protected:		
 	CGraphicDib	m_dib;
@@ -69,8 +66,6 @@ protected:
 	TGraphicImageTexturePointerVector m_pFontTextureVector;
 
 	TCharacterInfomationMap m_charInfoMap;
-
-	TFontMap m_fontMap;
 
 	int m_x;
 	int m_y;

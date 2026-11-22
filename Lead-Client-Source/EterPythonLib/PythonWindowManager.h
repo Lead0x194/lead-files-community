@@ -125,7 +125,6 @@ namespace UI
 			void		RunIMETabEvent();
 			void		RunIMEReturnEvent();
 			void		RunIMEKeyDown(int vkey);
-			void		RunChangeCodePage();
 			void		RunOpenCandidate();
 			void		RunCloseCandidate();
 			void		RunOpenReading();

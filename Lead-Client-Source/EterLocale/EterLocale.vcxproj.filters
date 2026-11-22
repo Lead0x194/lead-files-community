@@ -7,45 +7,21 @@
     <Filter Include="Core">
       <UniqueIdentifier>{aa6b498b-06a8-4ec6-9d51-58b20bb31b6b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="StringCodec">
-      <UniqueIdentifier>{16a24245-b0bd-4f77-8628-204c5d9b786e}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Arabic.cpp">
       <Filter>StringUtility</Filter>
     </ClCompile>
-    <ClCompile Include="Japanese.cpp">
-      <Filter>StringUtility</Filter>
-    </ClCompile>
     <ClCompile Include="StdAfx.cpp">
       <Filter>Core</Filter>
-    </ClCompile>
-    <ClCompile Include="StringCodec.cpp">
-      <Filter>StringCodec</Filter>
-    </ClCompile>
-    <ClCompile Include="StringCodec_Vietnamese.cpp">
-      <Filter>StringCodec</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arabic.h">
       <Filter>StringUtility</Filter>
     </ClInclude>
-    <ClInclude Include="Japanese.h">
-      <Filter>StringUtility</Filter>
-    </ClInclude>
-    <ClInclude Include="CodePageId.h">
-      <Filter>Core</Filter>
-    </ClInclude>
     <ClInclude Include="StdAfx.h">
       <Filter>Core</Filter>
-    </ClInclude>
-    <ClInclude Include="StringCodec.h">
-      <Filter>StringCodec</Filter>
-    </ClInclude>
-    <ClInclude Include="StringCodec_Vietnamese.h">
-      <Filter>StringCodec</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -13,7 +13,7 @@ LRESULT CALLBACK MSWindowProcedure(HWND hWnd, UINT uiMsg, WPARAM wParam, LPARAM 
 	if (pWnd)
 		return pWnd->WindowProcedure(hWnd, uiMsg, wParam, lParam);	
 
-	return DefWindowProc(hWnd, uiMsg, wParam, lParam);
+	return DefWindowProcW(hWnd, uiMsg, wParam, lParam);
 }
 
 LRESULT CMSWindow::WindowProcedure(HWND hWnd, UINT uiMsg, WPARAM wParam, LPARAM lParam)
@@ -29,7 +29,7 @@ LRESULT CMSWindow::WindowProcedure(HWND hWnd, UINT uiMsg, WPARAM wParam, LPARAM 
 			break;
 	}
 
-	return DefWindowProc(hWnd, uiMsg, wParam, lParam);
+	return DefWindowProcW(hWnd, uiMsg, wParam, lParam);
 }
 
 void CMSWindow::OnSize(WPARAM wParam, LPARAM /*lParam*/)
@@ -262,7 +262,9 @@ const char * CMSWindow::RegisterWindowClass(DWORD style, int brush, WNDPROC pfnW
 
 	ms_stWCSet.insert((char * const) c_szStaticClassName);
 	
-	WNDCLASS wc;
+	const std::wstring wstrClassName(c_szStaticClassName, c_szStaticClassName + strlen(c_szStaticClassName));
+
+	WNDCLASSW wc;
 
 	wc.style			= 0;
 	wc.cbClsExtra		= 0;
@@ -272,10 +274,10 @@ const char * CMSWindow::RegisterWindowClass(DWORD style, int brush, WNDPROC pfnW
 	wc.hIcon			= hIcon ? hIcon : LoadIcon(ms_hInstance, IDI_APPLICATION);
 	wc.hbrBackground	= (HBRUSH) GetStockObject(brush);
 	wc.hInstance		= ms_hInstance;	
-	wc.lpszClassName	= c_szStaticClassName;
-	wc.lpszMenuName		= "";
+	wc.lpszClassName	= wstrClassName.c_str();
+	wc.lpszMenuName		= L"";
 
-	if (!RegisterClass(&wc)) 
+	if (!RegisterClassW(&wc)) 
 		return "";
 
 	return c_szStaticClassName;

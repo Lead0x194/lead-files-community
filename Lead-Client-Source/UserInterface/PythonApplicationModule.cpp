@@ -279,11 +279,6 @@ PyObject* appGetLocalePath(PyObject* poSelf, PyObject* poArgs)
 }
 // END_OF_LOCALE
 
-PyObject* appGetDefaultCodePage(PyObject* poSelf, PyObject* poArgs)
-{
-	return Py_BuildValue("i", LocaleService_GetCodePage());
-}
-
 #include <il/il.h>
 	
 PyObject* appGetImageInfo(PyObject* poSelf, PyObject* poArgs)
@@ -1250,7 +1245,6 @@ void initapp()
 		{ "LoadLocaleData",				appLoadLocaleData,				METH_VARARGS },
 		{ "SetLanguage",				appSetLanguage,					METH_VARARGS },
 		
-		{ "GetDefaultCodePage",			appGetDefaultCodePage,			METH_VARARGS },
 		{ "SetControlFP",				appSetControlFP,				METH_VARARGS },
 		{ "SetSpecularSpeed",			appSetSpecularSpeed,			METH_VARARGS },
 

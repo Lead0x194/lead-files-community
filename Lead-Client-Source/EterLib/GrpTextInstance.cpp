@@ -3,12 +3,10 @@
 #include "StateManager.h"
 #include "IME.h"
 #include "TextTag.h"
-#include "../EterLocale/StringCodec.h"
 #include "../EterBase/Utils.h"
 #include "../EterLocale/Arabic.h"
 #include <map>
 
-extern DWORD GetDefaultCodePage();
 extern bool IsDefaultRTL();
 
 const float c_fFontFeather = 0.5f;
@@ -32,14 +30,12 @@ int CGraphicTextInstance::Hyperlink_GetText(char* buf, int len)
 	if (gs_hyperlinkText.empty())
 		return 0;
 
-	int codePage = GetDefaultCodePage();
-
-	return Ymir_WideCharToMultiByte(codePage, 0, gs_hyperlinkText.c_str(), static_cast<int>(gs_hyperlinkText.length()), buf, len, NULL, NULL);
+	return WideCharToMultiByte(CP_UTF8, 0, gs_hyperlinkText.c_str(), static_cast<int>(gs_hyperlinkText.length()), buf, len, NULL, NULL);
 }
 
-int CGraphicTextInstance::__DrawCharacter(CGraphicFontTexture * pFontTexture, WORD codePage, wchar_t text, DWORD dwColor)
+int CGraphicTextInstance::__DrawCharacter(CGraphicFontTexture * pFontTexture, wchar_t text, DWORD dwColor)
 {
-	CGraphicFontTexture::TCharacterInfomation* pInsCharInfo = pFontTexture->GetCharacterInfomation(codePage, text);
+	CGraphicFontTexture::TCharacterInfomation* pInsCharInfo = pFontTexture->GetCharacterInfomation(text);
 
 	if (pInsCharInfo)
 	{
@@ -78,41 +74,6 @@ void CGraphicTextInstance::__GetTextPos(DWORD index, float* x, float* y)
 	*y = sy;
 }
 
-bool isNumberic(const char chr)
-{
-	if (chr >= '0' && chr <= '9')
-		return true;
-	return false;
-}
-
-bool IsValidToken(const char* iter)
-{
-	return	iter[0]=='@' && 
-		isNumberic(iter[1]) && 
-		isNumberic(iter[2]) && 
-		isNumberic(iter[3]) && 
-		isNumberic(iter[4]);
-}
-
-const char* FindToken(const char* begin, const char* end)
-{
-	while(begin < end)
-	{
-		begin = std::find(begin, end, '@');
-
-		if(end-begin>5 && IsValidToken(begin))
-		{
-			return begin;
-		}
-		else
-		{
-			++begin;
-		}
-	}
-
-	return end;
-}
-
 static bool HasRTLCharacter(const wchar_t* c_wszText, int iLength)
 {
 	for (int i = 0; i < iLength; ++i)
@@ -120,14 +81,6 @@ static bool HasRTLCharacter(const wchar_t* c_wszText, int iLength)
 			return true;
 
 	return false;
-}
-
-int ReadToken(const char* token)
-{
-	int nRet = (token[1]-'0')*1000 + (token[2]-'0')*100 + (token[3]-'0')*10 + (token[4]-'0');
-	if (nRet == 9999)
-		return CP_UTF8;
-	return nRet;
 }
 
 void CGraphicTextInstance::Update()
@@ -148,11 +101,7 @@ void CGraphicTextInstance::Update()
 	if (!pFontTexture)
 		return;
 
-	UINT defCodePage = GetDefaultCodePage();
-
-	UINT dataCodePage = defCodePage; // An attempt was made to use UTF8 for Arab and Vietnamese internal data, but failed.
-		
-	CGraphicFontTexture::TCharacterInfomation* pSpaceInfo = pFontTexture->GetCharacterInfomation(dataCodePage, ' ');
+	CGraphicFontTexture::TCharacterInfomation* pSpaceInfo = pFontTexture->GetCharacterInfomation(' ');
 
 	int spaceHeight = pSpaceInfo ? pSpaceInfo->height : 12;
 	
@@ -174,16 +123,14 @@ void CGraphicTextInstance::Update()
 	DWORD dwColor = m_dwTextColor;
 
 	/* wstring end */
-	while (begin < end)
+	if (begin < end)
 	{
-		const char * token = FindToken(begin, end);
-
-		int wTextLen = Ymir_MultiByteToWideChar(dataCodePage, 0, begin, static_cast<int>(token - begin), wText, wTextMax);
+		int wTextLen = MultiByteToWideChar(CP_UTF8, 0, begin, static_cast<int>(end - begin), wText, wTextMax);
 
 		if (m_isSecret)
 		{
 			for(int i=0; i<wTextLen; ++i)
-				__DrawCharacter(pFontTexture, dataCodePage, '*', dwColor);
+				__DrawCharacter(pFontTexture, '*', dwColor);
 		} 
 		else 
 		{
@@ -258,7 +205,7 @@ void CGraphicTextInstance::Update()
 										hyperlinkBuffer.append(1, wArabicText[e]);
 									else
 									{
-										int charWidth = __DrawCharacter(pFontTexture, dataCodePage, wArabicText[e], dwColor);
+										int charWidth = __DrawCharacter(pFontTexture, wArabicText[e], dwColor);
 										kHyperlink.ex += charWidth;
 										//x += charWidth;
 										
@@ -307,7 +254,7 @@ void CGraphicTextInstance::Update()
 								e += len;
 							}
 
-							int charWidth = __DrawCharacter(pFontTexture, dataCodePage, Arabic_ConvSymbol(wArabicText[i]), dwColor);
+							int charWidth = __DrawCharacter(pFontTexture, Arabic_ConvSymbol(wArabicText[i]), dwColor);
 							kHyperlink.ex += charWidth;
 							
 							// Modifying the coordinates of previously added hyperlinks.
@@ -329,7 +276,7 @@ void CGraphicTextInstance::Update()
 						// If it is Arabic or a symbol that appears while printing Arabic,
 						if (Arabic_IsInPresentation(wArabicChar) || Arabic_IsInSymbol(wArabicChar))
 						{
-							int charWidth = __DrawCharacter(pFontTexture, dataCodePage, Arabic_ConvSymbol(wArabicText[i]), dwColor);
+							int charWidth = __DrawCharacter(pFontTexture, Arabic_ConvSymbol(wArabicText[i]), dwColor);
 							kHyperlink.ex += charWidth;
 							x += charWidth;
 							
@@ -363,7 +310,7 @@ void CGraphicTextInstance::Update()
 								hyperlinkBuffer.append(1, wArabicText[e]);
 							else
 							{
-								int charWidth = __DrawCharacter(pFontTexture, dataCodePage, wArabicText[e], dwColor);
+								int charWidth = __DrawCharacter(pFontTexture, wArabicText[e], dwColor);
 								kHyperlink.ex += charWidth;
 
 								// Modifying the coordinates of previously added hyperlinks.
@@ -430,7 +377,7 @@ void CGraphicTextInstance::Update()
 							hyperlinkBuffer.append(1, wText[i]);
 						else
 						{
-							int charWidth = __DrawCharacter(pFontTexture, dataCodePage, wText[i], dwColor);
+							int charWidth = __DrawCharacter(pFontTexture, wText[i], dwColor);
 							kHyperlink.ex += charWidth;
 							x += charWidth;
 						}
@@ -467,17 +414,6 @@ void CGraphicTextInstance::Update()
 				}
 			}
 		}
-
-		if (token < end)
-		{			
-			int newCodePage = ReadToken(token);			
-			dataCodePage = newCodePage;	// An attempt was made to use UTF8 for Arab and Vietnamese internal data, but failed.
-			begin = token + 5;			
-		}
-		else
-		{
-			begin = token;
-		}
 	}
 
 	pFontTexture->UpdateTexture();
@@ -500,8 +436,6 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 
 	float fStanX = m_v3Position.x;
 	float fStanY = m_v3Position.y + 1.0f;
-
-	UINT defCodePage = GetDefaultCodePage();
 
 	if (IsDefaultRTL())
 	{

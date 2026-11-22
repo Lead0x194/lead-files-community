@@ -48,7 +48,6 @@ class IAbstractApplication : public TAbstractSingleton<IAbstractApplication>
 		virtual void RunIMETabEvent() = 0;
 		virtual void RunIMEReturnEvent() = 0;
 
-		virtual void RunIMEChangeCodePage() = 0;
 		virtual void RunIMEOpenCandidateListEvent() = 0;
 		virtual void RunIMECloseCandidateListEvent() = 0;
 		virtual void RunIMEOpenReadingWndEvent() = 0;

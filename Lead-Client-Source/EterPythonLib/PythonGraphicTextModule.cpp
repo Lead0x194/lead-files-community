@@ -295,10 +295,10 @@ PyObject* grpGetSplitingTextLineCount(PyObject* poSelf, PyObject* poArgs)
 			continue;
 		}
 
-		const int iCharLength = GetDefaultCodePageCharLength(szText + i);
+		const int iCharLength = GetUTF8CharLength(szText + i);
 
 		i += iCharLength;
-		iPosition += (iCharLength > 1 && CP_UTF8 != GetDefaultCodePage()) ? 2 : 1;
+		iPosition += 1;
 
 		if (iPosition >= iLineLimitation)
 		{
@@ -346,13 +346,13 @@ PyObject* grpGetSplitingTextLine(PyObject* poSelf, PyObject* poArgs)
 			continue;
 		}
 
-		const int iCharLength = GetDefaultCodePageCharLength(szText + i);
+		const int iCharLength = GetUTF8CharLength(szText + i);
 
 		if (iLineCount == iGettingLine)
 			strLine.append(szText + i, iCharLength);
 
 		i += iCharLength;
-		iPosition += (iCharLength > 1 && CP_UTF8 != GetDefaultCodePage()) ? 2 : 1;
+		iPosition += 1;
 
 		if (iPosition >= iLineLimitation)
 		{

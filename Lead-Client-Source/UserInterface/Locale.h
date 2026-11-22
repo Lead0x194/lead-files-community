@@ -3,7 +3,6 @@
 #include "Locale_inc.h"
 #include <string>
 
-unsigned	LocaleService_GetCodePage();
 const char*	LocaleService_GetLocaleName();
 const char*	LocaleService_GetLocalePath();
 bool		LocaleService_SetLanguage(const char* c_szName);

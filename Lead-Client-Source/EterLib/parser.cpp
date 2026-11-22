@@ -7,13 +7,8 @@ using namespace script;
 #define isnhspace(ch)	(!ishan(ch) && isspace(ch))
 
 
-extern DWORD GetDefaultCodePage();
-
-static const char* NextChar(DWORD codePage, const char* cur)
+static const char* NextChar(const char* cur)
 {
-	if (CP_UTF8 != codePage)
-		return CharNextExA(static_cast<WORD>(codePage), cur, 0);
-
 	const unsigned char lead = static_cast<unsigned char>(*cur);
 
 	if (0 == lead)
@@ -36,11 +31,8 @@ static const char* NextChar(DWORD codePage, const char* cur)
 	return next;
 }
 
-static char* PrevChar(DWORD codePage, char* base, char* cur)
+static char* PrevChar(char* base, char* cur)
 {
-	if (CP_UTF8 != codePage)
-		return CharPrevExA(static_cast<WORD>(codePage), base, cur, 0);
-
 	char* prev = cur;
 
 	if (prev > base)
@@ -57,13 +49,11 @@ const char* LocaleString_FindChar(const char* base, int len, char test)
 	if (!base)
 		return NULL;
 
-	DWORD codePage = GetDefaultCodePage();
-	
 	int pos = 0;
 	while (pos < len)
 	{
 		const char* cur = base + pos;
-		const char* next = NextChar(codePage, cur);
+		const char* next = NextChar(cur);
 		int cur_len = static_cast<int>(next - cur);
 		if (cur_len > 1)
 		{
@@ -86,14 +76,12 @@ const char* LocaleString_FindChar(const char* base, int len, char test)
 
 int LocaleString_RightTrim(char* base, int len)
 {
-	DWORD codePage = GetDefaultCodePage();
-
 	int pos = len;
 	
 	while (pos > 0)
 	{
 		char* cur = base + pos;
-		char* prev = PrevChar(codePage, base, cur);
+		char* prev = PrevChar(base, cur);
 
 		int prev_len = static_cast<int>(cur - prev);
 		if (prev_len != 1)
@@ -123,45 +111,26 @@ void OLD_rtrim(char* base)
 	if (!base)
 		return;
 
-	DWORD codePage = GetDefaultCodePage();
+	char* end = base + strlen(base);
 
-	if (949 == codePage || 936 == codePage)
+	while (end != base)
 	{
-		char* end = base + strlen(base) - 1;
+		char* prev = PrevChar(base, end);
 
-		while (end != base)
-		{
-			if (!isnhspace((unsigned char) *end) && *end != '\n' && *end != '\r' || (end!=base && *((unsigned char*)end-1)>0xa0))
-				break;
-			
-			*end = '\0';
+		int prev_len = static_cast<int>(end - prev);
+		if (prev_len != 1)
+			break;
 
-			end = PrevChar(codePage, base, end);
-		}
-	}
-	else
-	{
-		char* end = base + strlen(base);
+		if (!isspace((unsigned char) *prev) && *prev != '\n' && *prev != '\r')
+			break;
 
-		while (end != base)
-		{
-			char* prev = PrevChar(codePage, base, end);
+		*prev = '\0';
 
-			int prev_len = static_cast<int>(end - prev);
-			if (prev_len != 1)
-				break;
-
-			if (!isspace((unsigned char) *prev) && *prev != '\n' && *prev != '\r')
-				break;				
-			
-			*prev = '\0';
-			
-			end = prev;
-		}
+		end = prev;
 	}
 }
 
-const char* LocaleString_Skip(DWORD codePage, const char* cur)
+const char* LocaleString_Skip(const char* cur)
 {
 	int loopCount = 0;
 
@@ -173,7 +142,7 @@ const char* LocaleString_Skip(DWORD codePage, const char* cur)
 			break;
 		}
 
-		const char* next = NextChar(codePage, cur);
+		const char* next = NextChar(cur);
 		int cur_len = static_cast<int>(next - cur);
 		if (cur_len > 1)
 		{
@@ -205,12 +174,10 @@ bool Group::GetArg(const char *c_arg_base, int arg_len, TArgList & argList)
 
     bool isValue = false;
 
-	DWORD codePage = GetDefaultCodePage();
-
     while (pos < arg_len)
     {
 		const char* cur = c_arg_base + pos;
-		const char* next = NextChar(codePage, cur);
+		const char* next = NextChar(cur);
 		iCharLen = static_cast<int>(next - cur);
 
 		if (iCharLen > 1)
@@ -332,8 +299,6 @@ bool Group::Create(const std::string & stSource)
     }
 	int str_len = static_cast<int>(stSource.length());
 	int str_pos = 0;
-	
-	DWORD codePage = GetDefaultCodePage();
 
     char box_data[1024 + 1];
 
@@ -344,7 +309,7 @@ bool Group::Create(const std::string & stSource)
         TCmd cmd;
 
 		const char* word = str_base + str_pos;
-		const char* word_next = NextChar(codePage, word);
+		const char* word_next = NextChar(word);
 
 		int word_len = static_cast<int>(word_next - word);
 		
@@ -382,7 +347,7 @@ bool Group::Create(const std::string & stSource)
 
 				int data_len = 0;
 				{
-					const char* data_begin = LocaleString_Skip(codePage, box_begin);
+					const char* data_begin = LocaleString_Skip(box_begin);
 					const char* data_end = box_end;
 					data_len = static_cast<int>(data_end - data_begin);
 					if (data_len >= 1024)
@@ -403,8 +368,8 @@ bool Group::Create(const std::string & stSource)
 						int name_len = static_cast<int>(space - box_data);
 						cmd.name.assign(box_data, name_len);
 
-						const char* space_next = NextChar(codePage, space);
-						const char* arg = LocaleString_Skip(codePage, space_next);
+						const char* space_next = NextChar(space);
+						const char* arg = LocaleString_Skip(space_next);
 
 						int arg_len = static_cast<int>(data_len - (arg - box_data));
 						

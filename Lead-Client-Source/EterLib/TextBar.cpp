@@ -5,20 +5,18 @@
 static std::wstring ToWideText(const char * c_szText)
 {
 	const int iTextLength = static_cast<int>(strlen(c_szText));
-	const int iWideLength = MultiByteToWideChar(GetDefaultCodePage(), 0, c_szText, iTextLength, NULL, 0);
+	const int iWideLength = MultiByteToWideChar(CP_UTF8, 0, c_szText, iTextLength, NULL, 0);
 
 	std::wstring wstrText(iWideLength, L'\0');
 
 	if (iWideLength > 0)
-		MultiByteToWideChar(GetDefaultCodePage(), 0, c_szText, iTextLength, &wstrText[0], iWideLength);
+		MultiByteToWideChar(CP_UTF8, 0, c_szText, iTextLength, &wstrText[0], iWideLength);
 
 	return wstrText;
 }
 
 void CTextBar::__SetFont(int fontSize, bool isBold)
 {
-	int iCodePage = GetDefaultCodePage();
-
 	LOGFONT logFont;
 
 	memset(&logFont, 0, sizeof(LOGFONT));
@@ -35,12 +33,12 @@ void CTextBar::__SetFont(int fontSize, bool isBold)
 	logFont.lfItalic			= FALSE;
 	logFont.lfUnderline			= FALSE;
 	logFont.lfStrikeOut			= FALSE;
-	logFont.lfCharSet			= GetCharsetFromCodePage(iCodePage);
+	logFont.lfCharSet			= DEFAULT_CHARSET;
 	logFont.lfOutPrecision		= OUT_DEFAULT_PRECIS;
 	logFont.lfClipPrecision		= CLIP_DEFAULT_PRECIS;
 	logFont.lfQuality			= ANTIALIASED_QUALITY;
 	logFont.lfPitchAndFamily	= DEFAULT_PITCH;
-	strcpy_s(logFont.lfFaceName, sizeof(logFont.lfFaceName), GetFontFaceFromCodePage(iCodePage));
+	strcpy_s(logFont.lfFaceName, sizeof(logFont.lfFaceName), GetDefaultFontFace());
 	m_hFont = CreateFontIndirect(&logFont);
 
 		

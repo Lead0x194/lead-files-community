@@ -133,7 +133,6 @@ namespace UI
 			virtual BOOL	OnIMEReturnEvent();
 			virtual BOOL	OnIMEKeyDownEvent(int ikey);
 
-			virtual BOOL	OnIMEChangeCodePage();
 			virtual BOOL	OnIMEOpenCandidateListEvent();
 			virtual BOOL	OnIMECloseCandidateListEvent();
 			virtual BOOL	OnIMEOpenReadingWndEvent();
