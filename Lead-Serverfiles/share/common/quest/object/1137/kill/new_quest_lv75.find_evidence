@@ -1,7 +1,7 @@
 if pc . countitem ( diarypage ) < 1 then 
 if math . random ( 1 , 1000 ) <= new_quest_lv75_dropProb then 
 pc . give_item2 ( diarypage ) 
-notice_multiline ( gameforge . new_quest_lv75 . _070_notice , notice ) 
-target . vid ( "__TARGET__" , find_npc_by_vnum ( new_quest_lv75_npcvnum ) , gameforge . new_quest_lv75 . _010_target ) 
+notice_multiline ( "[LC;6156]" , notice ) 
+target . vid ( "__TARGET__" , find_npc_by_vnum ( new_quest_lv75_npcvnum ) , "[LC;6145]" ) 
 end 
 end 

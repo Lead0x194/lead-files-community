@@ -1,5 +1,5 @@
-say_title ( gameforge . collect_quest_lv30 . _340_sayTitle ) 
-say ( gameforge . cube . _10_say ) 
+say_title ( "[LC;248]" ) 
+say ( "[LC;633]" ) 
 wait ( ) 
 setskin ( NOWINDOW ) 
 command ( "cube open" ) 

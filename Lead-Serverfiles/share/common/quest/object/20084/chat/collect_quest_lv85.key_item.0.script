@@ -1,5 +1,5 @@
 target . delete ( "__TARGET__" ) 
-say ( gameforge . collect_quest_lv85 . _260_say ) 
-say ( gameforge . collect_quest_lv85 . _265_say ) 
+say ( "[LC;477]" ) 
+say ( "[LC;478]" ) 
 pc . remove_item ( 30226 , 1 ) 
 set_state ( "__reward" ) 

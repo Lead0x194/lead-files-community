@@ -1,25 +1,25 @@
 if get_time ( ) < pc . getqf ( "limit_time" ) then 
-say_title ( gameforge . subquest_08 . _240_sayTitle ) 
-say ( gameforge . subquest_24 . _180_say ) 
-local s = select ( gameforge . subquest_24 . _190_select , gameforge . subquest_24 . _200_select ) 
+say_title ( "[LC;7208]" ) 
+say ( "[LC;7630]" ) 
+local s = select ( "[LC;7631]" , "[LC;7632]" ) 
 if 2 == s then 
-say_title ( gameforge . subquest_08 . _240_sayTitle ) 
-say ( gameforge . subquest_24 . _210_say ) 
-local s = select ( gameforge . subquest_24 . _220_select , gameforge . subquest_24 . _230_select ) 
+say_title ( "[LC;7208]" ) 
+say ( "[LC;7634]" ) 
+local s = select ( "[LC;7635]" , "[LC;7636]" ) 
 if 2 == s then 
-say_title ( gameforge . subquest_08 . _240_sayTitle ) 
-say ( gameforge . subquest_24 . _240_say ) 
+say_title ( "[LC;7208]" ) 
+say ( "[LC;7637]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_08 . _240_sayTitle ) 
-say ( gameforge . subquest_24 . _250_say ) 
+say_title ( "[LC;7208]" ) 
+say ( "[LC;7638]" ) 
 return 
 end 
-say_title ( gameforge . subquest_08 . _240_sayTitle ) 
-say ( gameforge . subquest_24 . _260_say ) 
+say_title ( "[LC;7208]" ) 
+say ( "[LC;7639]" ) 
 return 
 end 
-say_title ( gameforge . subquest_08 . _240_sayTitle ) 
-say ( gameforge . subquest_24 . _270_say ) 
+say_title ( "[LC;7208]" ) 
+say ( "[LC;7640]" ) 
 set_state ( "__FAIL__" ) 

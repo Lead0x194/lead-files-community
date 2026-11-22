@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
 say_title ( mob_name ( 20011 ) ) 
-say ( gameforge . spider_dungeon_3floor_boss . _230_say ) 
+say ( "[LC;6938]" ) 
 set_state ( "boss_ok" ) 

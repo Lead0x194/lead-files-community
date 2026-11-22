@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . npc_talk . _720_sayTitle ) 
-say ( gameforge . subquest_49 . _150_say ) 
+say_title ( "[LC;6412]" ) 
+say ( "[LC;8351]" ) 
 set_state ( "ask_to_chef" ) 

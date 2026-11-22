@@ -1,13 +1,13 @@
 if pc . count_item ( new_quest_lv28_drop1 ) < new_quest_lv28_neededAmountDrop1 then 
 if math . random ( 1 , 100 ) <= new_quest_lv28_dropProb1 then 
 pc . give_item2 ( new_quest_lv28_drop1 ) 
-notice ( gameforge . new_quest_lv28 . _026_notice ) 
+notice ( "[LC;5772]" ) 
 if new_quest_lv28_neededAmountDrop1 == pc . count_item ( new_quest_lv28_drop1 ) then 
 q . done ( ) 
-notice_multiline ( gameforge . new_quest_lv28 . _027_notice , notice ) 
+notice_multiline ( "[LC;5773]" , notice ) 
 set_state ( "goto_yangshin" ) 
 end 
 else 
-notice ( gameforge . new_quest_lv28 . _028_notice ) 
+notice ( "[LC;5774]" ) 
 end 
 end 

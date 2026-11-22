@@ -1,18 +1,18 @@
-say_title ( gameforge . cube . _40_sayTitle ) 
-say ( gameforge . subquest_25 . _300_say ) 
-local s = select ( gameforge . subquest_25 . _310_select , gameforge . subquest_25 . _320_select ) 
+say_title ( "[LC;636]" ) 
+say ( "[LC;7679]" ) 
+local s = select ( "[LC;7681]" , "[LC;7682]" ) 
 if 2 == s then 
-say ( gameforge . subquest_25 . _330_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7683]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . cube . _40_sayTitle ) 
-say ( gameforge . subquest_25 . _340_say ) 
+say_title ( "[LC;636]" ) 
+say ( "[LC;7684]" ) 
 return 
 end 
-say_title ( gameforge . cube . _40_sayTitle ) 
-say ( gameforge . subquest_25 . _350_say ) 
+say_title ( "[LC;636]" ) 
+say ( "[LC;7685]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . cube . _40_sayTitle ) 
-say ( gameforge . subquest_25 . _360_say ) 
+say_title ( "[LC;636]" ) 
+say ( "[LC;7686]" ) 

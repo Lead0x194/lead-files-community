@@ -1,8 +1,8 @@
 target . delete ( "__TARGET__" ) 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . main_quest_lv97 . _660_say ) 
+say ( "[LC;5361]" ) 
 if pc . count_item ( 31041 ) < 1 then 
 pc . give_item2 ( 31041 , 1 ) 
-notice_multiline ( gameforge . main_quest_lv97 . _300_notice , notice ) 
+notice_multiline ( "[LC;5327]" , notice ) 
 end 
 set_state ( "state2_3" ) 

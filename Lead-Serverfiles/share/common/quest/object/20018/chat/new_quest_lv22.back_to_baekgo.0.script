@@ -1,20 +1,20 @@
 target . delete ( "__TARGET3__" ) 
-say_title ( gameforge . new_quest_lv22 . _018_say_title ) 
+say_title ( "[LC;5686]" ) 
 if pc . count_item ( new_quest_lv22_drop1 ) >= new_quest_lv22_neededAmountDrop1 and pc . count_item ( new_quest_lv22_drop2 ) >= new_quest_lv22_neededAmountDrop2 then 
-say ( gameforge . new_quest_lv22 . _070_say ) 
+say ( "[LC;5717]" ) 
 pc . remove_item ( new_quest_lv22_drop1 , new_quest_lv22_neededAmountDrop1 ) 
 pc . remove_item ( new_quest_lv22_drop2 , new_quest_lv22_neededAmountDrop2 ) 
 wait ( ) 
-say_title ( gameforge . new_quest_lv22 . _018_say_title ) 
-say ( string . format ( gameforge . new_quest_lv22 . _071_say , new_quest_lv22_timeToFind / 60 ) ) 
-say ( gameforge . new_quest_lv22 . _072_say ) 
+say_title ( "[LC;5686]" ) 
+say ( string . format ( "[LC;5718;%s]" , new_quest_lv22_timeToFind / 60 ) ) 
+say ( "[LC;5719]" ) 
 pc . give_item2 ( 30009 , 1 ) 
 pc . setqf ( "new_quest_lv22_startTime" , get_time ( ) ) 
 q . done ( ) 
 set_state ( "find_brother" ) 
 return 
 else 
-say ( gameforge . new_quest_lv22 . _073_say ) 
+say ( "[LC;5720]" ) 
 q . done ( ) 
 set_state ( "hunting" ) 
 end 

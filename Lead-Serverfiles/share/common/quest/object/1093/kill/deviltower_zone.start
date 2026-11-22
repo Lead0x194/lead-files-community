@@ -1,6 +1,6 @@
 if pc . in_dungeon ( ) and pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 then d . kill_all ( ) 
 d . setqf2 ( "deviltower_zone" , "9_done" , 1 ) 
-notice_multiline ( gameforge . deviltower_zone . _280_dNotice , d . notice ) 
-notice_multiline ( gameforge . deviltower_zone . _290_dNotice , d . notice ) 
+notice_multiline ( "[LC;696]" , d . notice ) 
+notice_multiline ( "[LC;697]" , d . notice ) 
 server_timer ( "devil_end_jump" , 60 , d . get_map_index ( ) ) 
  return end 

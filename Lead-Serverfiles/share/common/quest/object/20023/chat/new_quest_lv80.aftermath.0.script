@@ -1,2 +1,2 @@
-say_title ( gameforge . new_quest_lv80 . _450_npcChat ) 
-say ( string . format ( gameforge . new_quest_lv80 . _460_say , mob_name ( pc . getqf ( "spawnmob" ) ) ) ) 
+say_title ( "[LC;6270]" ) 
+say ( string . format ( "[LC;6271;%s]" , mob_name ( pc . getqf ( "spawnmob" ) ) ) ) 

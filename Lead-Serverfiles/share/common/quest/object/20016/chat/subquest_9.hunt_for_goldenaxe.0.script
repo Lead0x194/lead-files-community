@@ -1,14 +1,14 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( "30102" ) >= 1 then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_09 . _130_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7235]" ) 
 pc . remove_item ( "30102" , 1 ) 
 pc . give_exp2 ( 36000 ) 
 set_quest_state ( "levelup" , "run" ) 
 pc . change_money ( 10000 ) 
 pc . give_item2 ( "30031" , 1 ) 
-say_title ( gameforge . collect_herb_lv4 . _130_sayTitle ) 
-say_reward ( gameforge . subquest_09 . _140_sayReward ) 
+say_title ( "[LC;192]" ) 
+say_reward ( "[LC;7236]" ) 
 clear_letter ( ) 
 set_state ( "__COMPLETE__" ) 
 return 

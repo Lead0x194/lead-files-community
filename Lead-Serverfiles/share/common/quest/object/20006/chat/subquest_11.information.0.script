@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . find_brother_article . _20_sayTitle ) 
-say ( gameforge . subquest_11 . _30_say ) 
+say_title ( "[LC;944]" ) 
+say ( "[LC;7283]" ) 
 wait ( ) 
-say_title ( gameforge . find_brother_article . _20_sayTitle ) 
-say ( gameforge . subquest_11 . _40_say ) 
-local s = select ( gameforge . subquest_11 . _50_select , gameforge . subquest_08 . _170_select ) 
+say_title ( "[LC;944]" ) 
+say ( "[LC;7284]" ) 
+local s = select ( "[LC;7285]" , "[LC;7200]" ) 
 if 2 == s then 
-say ( gameforge . subquest_11 . _60_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7286]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . find_brother_article . _20_sayTitle ) 
-say ( gameforge . subquest_11 . _70_say ) 
+say_title ( "[LC;944]" ) 
+say ( "[LC;7287]" ) 
 return 
 end 
-say_title ( gameforge . find_brother_article . _20_sayTitle ) 
-say ( gameforge . subquest_11 . _80_say ) 
+say_title ( "[LC;944]" ) 
+say ( "[LC;7288]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . find_brother_article . _20_sayTitle ) 
-say ( gameforge . subquest_11 . _90_say ) 
+say_title ( "[LC;944]" ) 
+say ( "[LC;7289]" ) 
 set_state ( "find_brother" ) 

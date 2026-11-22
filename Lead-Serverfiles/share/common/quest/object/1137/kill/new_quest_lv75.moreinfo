@@ -1,12 +1,12 @@
 if math . random ( 1 , 1000 ) <= new_quest_lv75_dropProb * 2 then 
 if pc . count_item ( diarypage ) >= 14 then 
 pc . give_item2 ( diarypage ) 
-notice_multiline ( gameforge . new_quest_lv75 . _180_notice , notice ) 
-send_letter ( gameforge . new_quest_lv75 . _185_send_letter ) 
+notice_multiline ( "[LC;6187]" , notice ) 
+send_letter ( "[LC;6188]" ) 
 set_state ( "legendarydiary" ) 
 else 
 pc . give_item2 ( diarypage ) 
-notice_multiline ( string . format ( gameforge . new_quest_lv75 . _190_notice , item_name ( diarypage ) , mob_name ( new_quest_lv75_mob ) ) , notice ) 
-send_letter ( gameforge . new_quest_lv75 . _195_send_letter ) 
+notice_multiline ( string . format ( "[LC;6189]" , item_name ( diarypage ) , mob_name ( new_quest_lv75_mob ) ) , notice ) 
+send_letter ( "[LC;6190]" ) 
 end 
 end 

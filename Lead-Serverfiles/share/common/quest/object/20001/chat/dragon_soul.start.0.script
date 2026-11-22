@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . dragon_soul . _1040_say ) 
+say ( "[LC;766]" ) 
 set_state ( "state_learning" ) 

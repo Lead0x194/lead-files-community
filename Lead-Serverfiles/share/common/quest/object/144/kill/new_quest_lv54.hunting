@@ -4,14 +4,14 @@ local index = pc . getqf ( "collect_count_1" ) + 1
 pc . setqf ( "collect_count_1" , index ) 
 pc . give_item2 ( new_quest_lv54_drop1 ) 
 if new_quest_lv54_neededAmountDrop1 == pc . getqf ( "collect_count_1" ) then 
-notice_multiline ( gameforge . new_quest_lv54 . _082_notice , notice ) 
+notice_multiline ( "[LC;6062]" , notice ) 
 pc . setqf ( "collect_count_1" , index - new_quest_lv54_neededAmountDrop1 ) 
 q . done ( ) 
 set_state ( "backto_yangshin" ) 
 else 
-notice ( string . format ( gameforge . new_quest_lv54 . _081_notice , new_quest_lv54_neededAmountDrop1 - pc . getqf ( "collect_count_1" ) ) ) 
+notice ( string . format ( "[LC;6061;%s]" , new_quest_lv54_neededAmountDrop1 - pc . getqf ( "collect_count_1" ) ) ) 
 end 
 else 
-notice_multiline ( gameforge . new_quest_lv54 . _083_notice , notice ) 
+notice_multiline ( "[LC;6063]" , notice ) 
 end 
 end 

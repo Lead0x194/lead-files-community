@@ -3,20 +3,20 @@ local arena_name = { }
 local arena_observer = { } 
 table . foreachi ( g , 
 function ( n , p ) 
-arena_name [ n ] = string . format ( gameforge . arena_manager . _195_say , p [ 1 ] , p [ 2 ] ) 
+arena_name [ n ] = string . format ( "[LC;12;%s;%s]" , p [ 1 ] , p [ 2 ] ) 
 arena_observer [ n ] = { p [ 3 ] , p [ 4 ] , p [ 5 ] } 
 end 
 ) 
-table . insert ( arena_name , gameforge . arena_manager . _200_tableInsert ) 
+table . insert ( arena_name , "[LC;13]" ) 
 table . insert ( arena_observer , 0 ) 
 local count = table . getn ( g ) 
 if count == 0 then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . arena_manager . _210_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;15]" ) 
 return ; 
 else 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( string . format ( gameforge . arena_manager . _220_say , count ) ) 
+say_title ( "[LC;14]" ) 
+say ( string . format ( "[LC;16;%s]" , count ) ) 
 wait ( ) 
 end 
 if table . getn ( g ) ~= 0 then 

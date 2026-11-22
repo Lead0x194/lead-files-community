@@ -1,6 +1,6 @@
 local s = number ( 1 , 100 ) 
 if s <= 5 and pc . count_item ( "30134" ) == 0 then 
-say_title ( gameforge . subquest_13 . _200_sayTitle ) 
-say ( gameforge . subquest_13 . _210_say ) 
+say_title ( "[LC;7320]" ) 
+say ( "[LC;7322]" ) 
 pc . give_item2 ( "30134" , 1 ) 
 end 

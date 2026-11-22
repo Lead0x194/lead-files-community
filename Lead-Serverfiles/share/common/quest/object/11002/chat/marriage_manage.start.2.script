@@ -1,28 +1,28 @@
 if not marriage_manage . check_divorce_time ( ) then 
 return 
 end 
-say_title ( gameforge . marriage_manage . _910_sayTitle ) 
-say ( gameforge . marriage_manage . _920_say ) 
-local s = select ( gameforge . horse_upgrade2 . _180_select , gameforge . marriage_manage . _930_select ) 
+say_title ( "[LC;5576]" ) 
+say ( "[LC;5577]" ) 
+local s = select ( "[LC;1732]" , "[LC;5578]" ) 
 local NEED_MONEY = 1e+06 
 if s == 2 then 
 return 
 end 
 if pc . money < NEED_MONEY then 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _940_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5579]" ) 
 return 
 end 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _950_say ) 
-local c = select ( gameforge . marriage_manage . _960_select , gameforge . marriage_manage . _970_select ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5580]" ) 
+local c = select ( "[LC;5581]" , "[LC;5582]" ) 
 if c == 2 then 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _980_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5583]" ) 
 return 
 end 
 pc . removeitem ( 70302 , 1 ) 
 pc . change_gold ( - NEED_MONEY ) 
 marriage . remove ( ) 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _990_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5584]" ) 

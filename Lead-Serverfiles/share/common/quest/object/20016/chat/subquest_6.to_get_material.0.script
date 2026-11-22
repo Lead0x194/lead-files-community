@@ -1,16 +1,16 @@
 target . delete ( "__TARGET__" ) 
 if pc . getqf ( "ironore_done" ) ~= 1 then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_06 . _440_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7152]" ) 
 return 
 end 
 if pc . getqf ( "leather_done" ) ~= 1 then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_06 . _450_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7153]" ) 
 return 
 end 
 if pc . getqf ( "coal_done" ) ~= 1 then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_06 . _460_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7154]" ) 
 return 
 end 

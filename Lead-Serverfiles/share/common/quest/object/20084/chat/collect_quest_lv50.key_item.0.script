@@ -1,11 +1,11 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
+say_title ( "[LC;138]" ) 
 if pc . count_item ( 30222 ) > 0 then 
-say ( gameforge . collect_quest_lv50 . _280_say ) 
+say ( "[LC;316]" ) 
 pc . remove_item ( 30222 , 1 ) 
 set_state ( "__reward" ) 
 else 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
-say ( gameforge . collect_quest_lv50 . _295_say ) 
+say_title ( "[LC;138]" ) 
+say ( "[LC;318]" ) 
 return 
 end 

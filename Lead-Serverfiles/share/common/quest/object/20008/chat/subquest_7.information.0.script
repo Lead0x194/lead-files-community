@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_06 . _320_sayTitle ) 
-say ( gameforge . subquest_07 . _30_say ) 
+say_title ( "[LC;7137]" ) 
+say ( "[LC;7185]" ) 
 set_state ( "ask_to_sunyugil" ) 

@@ -3,17 +3,17 @@ if pc . count_item ( 30044 ) >= 1 then
 pc . setqf ( "coal_done" , 1 ) 
 pc . setqf ( "asked_20005" , 0 ) 
 pc . remove_item ( "30044" , 1 ) 
-say_title ( gameforge . subquest_01 . _140_sayTitle ) 
-say ( gameforge . subquest_06 . _380_say ) 
+say_title ( "[LC;6969]" ) 
+say ( "[LC;7144]" ) 
 if pc . getqf ( "ironore_done" ) == 1 and pc . getqf ( "leather_done" ) == 1 and pc . getqf ( "coal_done" ) == 1 then 
 set_state ( "back_to_blacksmith" ) 
 end 
 return 
 end 
-say_title ( gameforge . subquest_01 . _140_sayTitle ) 
-say ( gameforge . subquest_06 . _390_say ) 
+say_title ( "[LC;6969]" ) 
+say ( "[LC;7145]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_01 . _140_sayTitle ) 
-say ( gameforge . subquest_06 . _400_say ) 
+say_title ( "[LC;6969]" ) 
+say ( "[LC;7147]" ) 
 say_item_vnum ( "30044" ) 
 pc . setqf ( "asked_20005" , 1 ) 

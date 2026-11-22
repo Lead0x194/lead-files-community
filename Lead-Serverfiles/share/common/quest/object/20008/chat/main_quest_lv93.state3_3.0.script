@@ -2,5 +2,5 @@ if get_global_time ( ) - pc . getf ( "main_quest_lv93" , "ockgu_access_time" ) >
 set_state ( "state4_1" ) 
 else 
 say_title ( mob_name ( 20008 ) ) 
-say ( gameforge . main_quest_lv93 . _390_say ) 
+say ( "[LC;5033]" ) 
 end 

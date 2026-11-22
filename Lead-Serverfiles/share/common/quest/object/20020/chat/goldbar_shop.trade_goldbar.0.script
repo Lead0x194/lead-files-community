@@ -1,13 +1,13 @@
 if pc . get_level ( ) < 30 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _150_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1226]" ) 
 setstate ( "start" ) 
 return 
 end 
 if game . get_event_flag ( "gold_trade_enable" ) == 0 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _160_say ) 
-say_reward ( gameforge . goldbar . _170_sayReward ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1227]" ) 
+say_reward ( "[LC;1228]" ) 
 return 
 end 
 local nexttime = pc . getqf ( "gold_buy_next_time" ) 
@@ -17,34 +17,34 @@ if interval <= 0 then interval = 360 end
 if get_time ( ) < nexttime then 
 nexttime = ( nexttime / 60 ) - ( get_time ( ) / 60 ) 
 if nexttime >= 60 then 
-unit = gameforge . goldbar . _104_say nexttime = nexttime / 60 
+unit = "[LC;1219]" nexttime = nexttime / 60 
 math . ceil ( nexttime ) 
 else 
-unit = gameforge . goldbar . _108_say end 
+unit = "[LC;1220]" end 
 if nexttime < 1 then nexttime = 1 end 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _180_say ) 
-say ( string . format ( gameforge . goldbar . _190_say , nexttime , unit ) ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1229]" ) 
+say ( string . format ( "[LC;1230;%s;%s]" , nexttime , unit ) ) 
 else 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _200_say ) 
-local s = select ( gameforge . buy_fishrod . _40_select , gameforge . buy_fishrod . _50_select ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1231]" ) 
+local s = select ( "[LC;49]" , "[LC;50]" ) 
 if s == 1 then 
 if pc . money >= 2.2e+06 then 
 local goldbar_count = pc . count_item ( 80007 ) 
 char_log ( 0 , "GOLDBARREN" , "KAUFEN (" .. goldbar_count .. ")" ) 
 pc . changemoney ( - 2.2e+06 ) 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _210_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1233]" ) 
 pc . give_item2 ( "80007" , 1 ) 
 pc . setqf ( "gold_buy_next_time" , get_time ( ) + time_min_to_sec ( interval ) ) 
 else 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _220_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1234]" ) 
 end 
 elseif s == 2 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _230_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1235]" ) 
 else 
 end 
 end 

@@ -3,14 +3,14 @@ if pc . count_item ( 30132 ) >= 1 then
 pc . setqf ( "ironore_done" , 1 ) 
 pc . setqf ( "asked_20011" , 1 ) 
 pc . remove_item ( "30132" , 1 ) 
-say_title ( gameforge . main_quest_lv30 . _40_sayTitle ) 
-say ( gameforge . subquest_06 . _270_say ) 
+say_title ( "[LC;4223]" ) 
+say ( "[LC;7130]" ) 
 if pc . getqf ( "ironore_done" ) == 1 and pc . getqf ( "leather_done" ) == 1 and pc . getqf ( "coal_done" ) == 1 then 
 set_state ( "back_to_blacksmith" ) 
 end 
 return 
 end 
-say_title ( gameforge . main_quest_lv30 . _40_sayTitle ) 
-say ( gameforge . subquest_06 . _280_say ) 
+say_title ( "[LC;4223]" ) 
+say ( "[LC;7131]" ) 
 say_item_vnum ( "30132" ) 
 pc . setqf ( "asked_20011" , 1 ) 

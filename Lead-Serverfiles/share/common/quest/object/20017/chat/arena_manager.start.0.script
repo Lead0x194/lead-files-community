@@ -1,11 +1,11 @@
 if game . get_event_flag ( "arena_close" ) > 0 then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . arena_manager . _30_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;17]" ) 
 return 
 end 
 if not npc . lock ( ) then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . arena_manager . _40_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;18]" ) 
 return 
 end 
 local useMinLevel = game . get_event_flag ( "arena_use_min_level" ) 
@@ -13,32 +13,32 @@ if useMinLevel == 0 then
 useMinLevel = 25 ; 
 end 
 if pc . get_level ( ) < useMinLevel then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( string . format ( gameforge . arena_manager . _50_say , useMinLevel ) ) 
+say_title ( "[LC;14]" ) 
+say ( string . format ( "[LC;19;%s]" , useMinLevel ) ) 
 npc . unlock ( ) 
 return 
 else 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . arena_manager . _60_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;20]" ) 
 local sname = input ( ) 
 if sname == "" then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . arena_manager . _70_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;21]" ) 
 npc . unlock ( ) 
 return 
 else 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( string . format ( gameforge . arena_manager . _80_say , pc . name , sname ) ) 
+say_title ( "[LC;14]" ) 
+say ( string . format ( "[LC;22;%s;%s]" , pc . name , sname ) ) 
 wait ( "" ) 
 local opp_vid = find_pc_by_name ( sname ) 
 if opp_vid == 0 then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( string . format ( gameforge . arena_manager . _90_say , sname ) ) 
+say_title ( "[LC;14]" ) 
+say ( string . format ( "[LC;25;%s]" , sname ) ) 
 npc . unlock ( ) 
 return 
 elseif opp_vid == pc . get_vid ( ) then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . arena_manager . _100_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;1]" ) 
 npc . unlock ( ) 
 return 
 end 
@@ -46,43 +46,43 @@ local old = pc . select ( opp_vid , opp_vid )
 local opp_level = pc . get_level ( ) 
 pc . select ( old , old ) 
 if opp_level < useMinLevel then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( string . format ( gameforge . arena_manager . _110_say , useMinLevel ) ) 
+say_title ( "[LC;14]" ) 
+say ( string . format ( "[LC;3;%s]" , useMinLevel ) ) 
 npc . unlock ( ) 
 return 
 end 
 if not npc . is_near_vid ( opp_vid , 10 ) then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( string . format ( gameforge . arena_manager . _120_say , sname ) ) 
+say_title ( "[LC;14]" ) 
+say ( string . format ( "[LC;4;%s]" , sname ) ) 
 npc . unlock ( ) 
 return ; 
 end 
 local a = arena . is_in_arena ( opp_vid ) 
 if a == 0 then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( string . format ( gameforge . arena_manager . _130_say , sname ) ) 
+say_title ( "[LC;14]" ) 
+say ( string . format ( "[LC;5;%s]" , sname ) ) 
 npc . unlock ( ) 
 return ; 
 end 
-say_title ( gameforge . arena_manager . _140_sayTitle ) 
-say ( string . format ( gameforge . arena_manager . _85_say , pc . name , sname ) ) 
-local agree = confirm ( opp_vid , string . format ( gameforge . arena_manager . _87_say , sname , pc . name ) , 30 ) 
+say_title ( "[LC;6]" ) 
+say ( string . format ( "[LC;23;%s;%s]" , pc . name , sname ) ) 
+local agree = confirm ( opp_vid , string . format ( "[LC;24;%s;%s]" , sname , pc . name ) , 30 ) 
 if agree ~= CONFIRM_OK then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( string . format ( gameforge . arena_manager . _150_say , sname ) ) 
+say_title ( "[LC;14]" ) 
+say ( string . format ( "[LC;7;%s]" , sname ) ) 
 npc . unlock ( ) 
 return 
 end 
 s = arena . start_duel ( sname , 3 ) 
 if s == 0 then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . arena_manager . _160_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;8]" ) 
 elseif s == 2 then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . arena_manager . _170_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;9]" ) 
 elseif s == 3 then 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . arena_manager . _180_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;10]" ) 
 end 
 end 
 end 

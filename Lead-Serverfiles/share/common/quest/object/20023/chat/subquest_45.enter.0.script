@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_45 . _20_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;8245]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_45 . _30_say ) 
-local s = select ( gameforge . subquest_45 . _40_select ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;8248]" ) 
+local s = select ( "[LC;8249]" ) 
 if 2 == s then 
-say ( gameforge . subquest_45 . _50_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;8250]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_45 . _60_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;8251]" ) 
 return 
 end 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_45 . _70_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;8252]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_45 . _80_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;8253]" ) 
 set_state ( "WHAT_IS_MILGYO" ) 

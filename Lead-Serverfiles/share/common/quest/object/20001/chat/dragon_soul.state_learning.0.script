@@ -1,6 +1,6 @@
 say_title ( mob_name ( 20001 ) ) 
 if pc . count_item ( 30270 ) >= 10 then 
-say ( gameforge . dragon_soul . _1070_say ) 
+say ( "[LC;769]" ) 
 pc . remove_item ( 30270 , 10 ) 
 ds . give_qualification ( ) 
 char_log ( pc . get_player_id ( ) , "DS_QUALIFICATION" , "SUCCESS" ) 
@@ -10,5 +10,5 @@ pc . setf ( "dragon_soul" , "eye_timestamp" , today )
 pc . setf ( "dragon_soul" , "eye_left" , 9 ) 
 set_state ( "state_farming" ) 
 else 
-say ( gameforge . dragon_soul . _1080_say ) 
+say ( "[LC;770]" ) 
 end 

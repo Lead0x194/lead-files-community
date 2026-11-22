@@ -1,7 +1,7 @@
 if npc . get_guild ( ) == pc . get_guild ( ) then 
-say_title ( gameforge . guild_building_npc . _70_sayTitle ) 
-say ( gameforge . guild_building_npc . _80_say ) 
+say_title ( "[LC;1333]" ) 
+say ( "[LC;1334]" ) 
 else 
-say_title ( gameforge . guild_building_npc . _70_sayTitle ) 
-say ( gameforge . guild_building_npc . _90_say ) 
+say_title ( "[LC;1333]" ) 
+say ( "[LC;1335]" ) 
 end 

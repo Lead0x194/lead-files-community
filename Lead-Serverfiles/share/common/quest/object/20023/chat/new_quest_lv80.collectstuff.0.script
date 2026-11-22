@@ -1,26 +1,26 @@
 if pc . getqf ( "notenchanted" ) == 0 then 
 if pc . count_item ( new_quest_lv80_ice ) >= new_quest_lv80_amountIce and pc . count_item ( new_quest_lv80_figure ) == 0 and pc . count_item ( new_quest_lv80_ember ) == 1 then 
-say ( string . format ( gameforge . new_quest_lv80 . _200_say , item_name ( new_quest_lv80_ember ) , item_name ( new_quest_lv80_ice ) ) ) 
+say ( string . format ( "[LC;6244]" , item_name ( new_quest_lv80_ember ) , item_name ( new_quest_lv80_ice ) ) ) 
 wait ( ) 
-say ( gameforge . new_quest_lv80 . _210_say ) 
-say ( string . format ( gameforge . new_quest_lv80 . _220_say , item_name ( new_quest_lv80_blackice ) ) ) 
-say ( gameforge . new_quest_lv80 . _230_say ) 
-say ( string . format ( gameforge . new_quest_lv80 . _240_say , item_name ( new_quest_lv80_blackice ) , mob_name ( 30123 ) ) ) 
+say ( "[LC;6245]" ) 
+say ( string . format ( "[LC;6246]" , item_name ( new_quest_lv80_blackice ) ) ) 
+say ( "[LC;6247]" ) 
+say ( string . format ( "[LC;6248]" , item_name ( new_quest_lv80_blackice ) , mob_name ( 30123 ) ) ) 
 pc . remove_item ( new_quest_lv80_ember , 1 ) 
 pc . remove_item ( new_quest_lv80_ice , new_quest_lv80_amountIce ) 
 pc . give_item2 ( new_quest_lv80_blackice ) 
 set_state ( "findshrine" ) 
 elseif pc . count_item ( new_quest_lv80_ice ) < new_quest_lv80_amountIce and pc . count_item ( new_quest_lv80_figure ) == 0 and pc . count_item ( new_quest_lv80_ember ) == 1 then 
-say ( string . format ( gameforge . new_quest_lv80 . _250_say , new_quest_lv80_amountIce - pc . count_item ( new_quest_lv80_ice ) , item_name ( new_quest_lv80_ice ) ) ) 
+say ( string . format ( "[LC;6249;%s]" , new_quest_lv80_amountIce - pc . count_item ( new_quest_lv80_ice ) , item_name ( new_quest_lv80_ice ) ) ) 
 else 
-notice ( gameforge . new_quest_lv80 . _260_notice ) 
+notice ( "[LC;6250]" ) 
 end 
 else 
 if pc . count_item ( new_quest_lv80_ice ) >= new_quest_lv80_amountIce and pc . count_item ( new_quest_lv80_figure ) == 1 and pc . count_item ( new_quest_lv80_ember ) == 0 then 
-say ( gameforge . new_quest_lv80 . _270_say ) 
+say ( "[LC;6251]" ) 
 elseif pc . count_item ( new_quest_lv80_ice ) == 0 and pc . count_item ( new_quest_lv80_figure ) == 1 and pc . count_item ( new_quest_lv80_ember ) == 0 then 
-say ( gameforge . new_quest_lv80 . _280_say ) 
+say ( "[LC;6252]" ) 
 else 
-say ( gameforge . new_quest_lv80 . _290_say ) 
+say ( "[LC;6253]" ) 
 end 
 end 

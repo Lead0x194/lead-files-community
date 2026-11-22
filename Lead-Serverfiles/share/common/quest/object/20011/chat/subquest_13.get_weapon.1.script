@@ -1,7 +1,7 @@
 target . delete ( "__TARGET1__" ) 
 if pc . count_item ( "30134" ) >= 1 then 
-say_title ( gameforge . main_quest_lv30 . _40_sayTitle ) 
-say ( gameforge . subquest_13 . _170_say ) 
+say_title ( "[LC;4223]" ) 
+say ( "[LC;7317]" ) 
 pc . setqf ( "iron_done" , 2 ) 
 pc . remove_item ( "30134" , 1 ) 
 if pc . getf ( "subquest_13" , "cloth_done" ) == 2 and pc . getqf ( "iron_done" ) == 2 then 
@@ -9,7 +9,7 @@ set_state ( "back_to" )
 end 
 return 
 else 
-say_title ( gameforge . main_quest_lv30 . _40_sayTitle ) 
-say ( gameforge . subquest_13 . _180_say ) 
+say_title ( "[LC;4223]" ) 
+say ( "[LC;7318]" ) 
 return 
 end 

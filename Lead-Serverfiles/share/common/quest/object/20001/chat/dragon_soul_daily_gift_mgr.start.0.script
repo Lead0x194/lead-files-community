@@ -14,18 +14,18 @@ end
 end 
 local s_y , s_m , s_d , s_hour , s_min 
 repeat 
-say ( gameforge . dragon_soul_gift_mgr . _020_say ) 
+say ( "[LC;789]" ) 
 s_y , s_m , s_d , s_hour , s_min = dragon_soul_daily_gift_mgr . date_getter ( ) 
 s_y = s_y + 2000 
 say ( string . format ( "year:%d month:%d day:%d hour:%d min:%d" , s_y , s_m , s_d , s_hour , s_min ) ) 
-until 1 == select ( gameforge . locale . yes , gameforge . locale . no ) 
+until 1 == select ( "[LC;3734]" , "[LC;2833]" ) 
 local e_y , e_m , e_d , e_hour , e_min 
 repeat 
-say ( gameforge . dragon_soul_gift_mgr . _030_say ) 
+say ( "[LC;790]" ) 
 e_y , e_m , e_d , e_hour , e_min = dragon_soul_daily_gift_mgr . date_getter ( ) 
 e_y = e_y + 2000 
 say ( string . format ( "year:%d month:%d day:%d hour:%d min:%d" , e_y , e_m , e_d , e_hour , e_min ) ) 
-until 1 == select ( gameforge . locale . yes , gameforge . locale . no ) 
+until 1 == select ( "[LC;3734]" , "[LC;2833]" ) 
 local s_time = os . time { year = s_y , month = s_m , day = s_d , hour = s_hour , min = s_min } 
 local e_time = os . time { year = e_y , month = e_m , day = e_d , hour = e_hour , min = e_min } 
 local gift_vnum = input_number ( "gift vnum" ) 
@@ -33,8 +33,8 @@ say ( os . date ( "start time[ENTER]	year:%Y, month:%m, day:%d hour:%H minite:%M
 say ( os . date ( "  end time[ENTER]	year:%Y, month:%m, day:%d hour:%H minite:%M" , e_time ) ) 
 say ( string . format ( "gift item[ENTER]	vnum : %d" , gift_vnum ) ) 
 say_item_vnum ( gift_vnum ) 
-say ( gameforge . dragon_soul_gift_mgr . _050_say ) 
-if 2 == select ( gameforge . locale . yes , gameforge . locale . no ) then 
+say ( "[LC;792]" ) 
+if 2 == select ( "[LC;3734]" , "[LC;2833]" ) then 
 return 
 end 
 if 0 == sel then 
@@ -44,4 +44,4 @@ end
 game . set_event_flag ( "ds_dg_st" , s_time ) 
 game . set_event_flag ( "ds_dg_et" , e_time ) 
 game . set_event_flag ( "ds_dg_item" , gift_vnum ) 
-say ( gameforge . dragon_soul_gift_mgr . _060_say ) 
+say ( "[LC;793]" ) 
