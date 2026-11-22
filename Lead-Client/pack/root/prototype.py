@@ -5,7 +5,6 @@ import wndMgr
 import systemSetting
 import mouseModule
 import networkModule
-import uiCandidate
 import constInfo
 import musicInfo
 import stringCommander
