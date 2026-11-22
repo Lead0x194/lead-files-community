@@ -887,6 +887,7 @@ typedef struct packet_char_additional_info
 	short	sAlignment;
 	BYTE	bPKMode;
 	DWORD	dwMountVnum;
+	char	szLanguage[2 + 1];
 } TPacketGCCharacterAdditionalInfo;
 
 /*
@@ -925,6 +926,7 @@ typedef struct packet_update_char
 	short	sAlignment;
 	BYTE	bPKMode;
 	DWORD	dwMountVnum;
+	char	szLanguage[2 + 1];
 	//WORD	wRaceNum;
 } TPacketGCCharacterUpdate;
 

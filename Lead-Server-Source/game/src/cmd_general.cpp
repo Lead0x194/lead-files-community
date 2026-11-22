@@ -1180,6 +1180,14 @@ ACMD(do_monsterlog)
 	ch->ToggleMonsterLog();
 }
 
+ACMD(do_language)
+{
+	char arg1[256];
+	one_argument(argument, arg1, sizeof(arg1));
+
+	ch->SetLanguage(arg1);
+}
+
 ACMD(do_pkmode)
 {
 	char arg1[256];

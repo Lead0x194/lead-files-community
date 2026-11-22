@@ -111,6 +111,7 @@ ACMD(do_cancel_guild_war);
 ACMD(do_guild_state);
 
 ACMD(do_pkmode);
+ACMD(do_language);
 ACMD(do_messenger_auth);
 
 ACMD(do_getqf);
@@ -339,6 +340,7 @@ struct command_info cmd_info[] =
 	{ "gstate",		do_guild_state,		0,			POS_DEAD,	GM_LOW_WIZARD	},
 
 	{ "pkmode",		do_pkmode,		0,			POS_DEAD,	GM_PLAYER	},
+	{ "language",	do_language,	0,			POS_DEAD,	GM_PLAYER	},
 	{ "messenger_auth",	do_messenger_auth,	0,			POS_DEAD,	GM_PLAYER	},
 
 	{ "getqf",		do_getqf,		0,			POS_DEAD,	GM_LOW_WIZARD	},

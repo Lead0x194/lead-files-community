@@ -1119,6 +1119,12 @@ class CHARACTER : public CEntity, public CFSM, public CHorseRider
 		int					m_iRealAlignment;
 		int					m_iKillerModePulse;
 		BYTE				m_bPKMode;
+		char				m_szLanguage[2 + 1];
+
+	public:
+		void				SetLanguage(const char* c_szLanguage);
+
+	protected:
 
 		// Aggro
 		DWORD				m_dwLastVictimSetTime;

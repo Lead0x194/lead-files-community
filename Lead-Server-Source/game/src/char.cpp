@@ -256,6 +256,7 @@ void CHARACTER::Initialize()
 
 	m_iKillerModePulse = 0;
 	m_bPKMode = PK_MODE_PEACE;
+	memset(m_szLanguage, 0, sizeof(m_szLanguage));
 
 	m_dwQuestNPCVID = 0;
 	m_dwQuestByVnum = 0;
@@ -853,6 +854,7 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 		addPacket.awPart[CHR_EQUIPPART_HAIR] = GetPart(PART_HAIR);
 
 		addPacket.bPKMode = m_bPKMode;
+		strlcpy(addPacket.szLanguage, m_szLanguage, sizeof(addPacket.szLanguage));
 		addPacket.dwMountVnum = GetMountVnum();
 		addPacket.bEmpire = m_bEmpire;
 
@@ -970,6 +972,7 @@ void CHARACTER::UpdatePacket()
 	pack.dwGuildID	= 0;
 	pack.sAlignment	= m_iAlignment / 10;
 	pack.bPKMode	= m_bPKMode;
+	strlcpy(pack.szLanguage, m_szLanguage, sizeof(pack.szLanguage));
 
 	if (GetGuild())
 		pack.dwGuildID = GetGuild()->GetID();
@@ -5783,6 +5786,18 @@ void CHARACTER::SpecificEffectPacket(const char filename[MAX_EFFECT_FILE_NAME])
 	memcpy (p.effect_file, filename, MAX_EFFECT_FILE_NAME);
 
 	PacketAround(&p, sizeof(TPacketGCSpecificEffect));
+}
+
+void CHARACTER::SetLanguage(const char* c_szLanguage)
+{
+	if (strlen(c_szLanguage) != 2 || !islower(static_cast<unsigned char>(c_szLanguage[0])) || !islower(static_cast<unsigned char>(c_szLanguage[1])))
+		return;
+
+	if (!strcmp(m_szLanguage, c_szLanguage))
+		return;
+
+	strlcpy(m_szLanguage, c_szLanguage, sizeof(m_szLanguage));
+	UpdatePacket();
 }
 
 void CHARACTER::MonsterChat(BYTE bMonsterChatType)
