@@ -33,6 +33,7 @@ class CItemManager : public CSingleton<CItemManager>
 		bool			LoadItemDesc(const char* c_szFileName);
 		bool			LoadItemList(const char* c_szFileName);
 		bool			LoadItemTable(const char* c_szFileName);
+		bool			LoadItemNames(const char* c_szFileName);
 		CItemData *		MakeItemData(DWORD dwIndex);
 
 	protected:

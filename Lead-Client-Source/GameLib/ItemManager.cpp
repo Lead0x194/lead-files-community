@@ -198,6 +198,29 @@ bool CItemManager::LoadItemDesc(const char* c_szFileName)
 	return true;
 }
 
+bool CItemManager::LoadItemNames(const char* c_szFileName)
+{
+	const VOID* pvData;
+	CMappedFile kFile;
+	if (!CEterPackManager::Instance().Get(kFile, c_szFileName, &pvData))
+		return false;
+
+	CMemoryTextFileLoader kTextFileLoader;
+	kTextFileLoader.Bind(kFile.Size(), pvData);
+
+	CTokenVector kTokenVector;
+	for (DWORD i = 0; i < kTextFileLoader.GetLineCount(); ++i)
+	{
+		if (!kTextFileLoader.SplitLineByTab(i, &kTokenVector) || kTokenVector.size() < 2)
+			continue;
+
+		TItemMap::iterator f = m_ItemMap.find(static_cast<DWORD>(atoi(kTokenVector[0].c_str())));
+		if (m_ItemMap.end() != f)
+			f->second->SetName(kTokenVector[1]);
+	}
+	return true;
+}
+
 DWORD GetHashCode( const char* pString )
 {
 	   size_t i,len;

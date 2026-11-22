@@ -96,6 +96,11 @@ void CItemData::SetDescription(const std::string& c_rstDesc)
 {
 	m_strDescription=c_rstDesc;
 }
+
+void CItemData::SetName(const std::string& c_rstName)
+{
+	m_strName = c_rstName;
+}
 /*
 BOOL CItemData::LoadItemData(const char * c_szFileName)
 {
@@ -161,6 +166,7 @@ void CItemData::SetDefaultItemData(const char * c_szIconFileName, const char * c
 	m_strSubModelFileName = "";
 	m_strDescription = "";
 	m_strSummary = "";
+	m_strName = "";
 	memset(m_ItemTable.alSockets, 0, sizeof(m_ItemTable.alSockets));
 
 	__LoadFiles();
@@ -206,6 +212,7 @@ void CItemData::__SetIconImage(const char * c_szFileName)
 void CItemData::SetItemTableData(TItemTable * pItemTable)
 {
 	memcpy(&m_ItemTable, pItemTable, sizeof(TItemTable));
+	m_strName = m_ItemTable.szLocaleName;
 }
 
 const CItemData::TItemTable* CItemData::GetTable() const
@@ -220,7 +227,7 @@ DWORD CItemData::GetIndex() const
 
 const char * CItemData::GetName() const
 {
-	return m_ItemTable.szLocaleName;
+	return m_strName.c_str();
 }
 
 const char * CItemData::GetDescription() const

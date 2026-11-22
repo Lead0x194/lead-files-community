@@ -123,6 +123,7 @@ class CPythonNonPlayer : public CSingleton<CPythonNonPlayer>
 		void Destroy();
 
 		bool				LoadNonPlayerData(const char * c_szFileName);
+		bool				LoadNames(const char * c_szFileName);
 
 		const TMobTable *	GetTable(DWORD dwVnum);
 		bool				GetName(DWORD dwVnum, const char ** c_pszName);
@@ -153,4 +154,5 @@ class CPythonNonPlayer : public CSingleton<CPythonNonPlayer>
 
 	protected:
 		TNonPlayerDataMap	m_NonPlayerDataMap;
+		std::map<DWORD, std::string>	m_NameMap;
 };

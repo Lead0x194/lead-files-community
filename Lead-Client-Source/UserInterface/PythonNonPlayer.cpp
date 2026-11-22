@@ -68,6 +68,27 @@ bool CPythonNonPlayer::LoadNonPlayerData(const char * c_szFileName)
 	return true;
 }
 
+bool CPythonNonPlayer::LoadNames(const char * c_szFileName)
+{
+	const VOID* pvData;
+	CMappedFile kFile;
+	if (!CEterPackManager::Instance().Get(kFile, c_szFileName, &pvData))
+		return false;
+
+	CMemoryTextFileLoader kTextFileLoader;
+	kTextFileLoader.Bind(kFile.Size(), pvData);
+
+	CTokenVector kTokenVector;
+	for (DWORD i = 0; i < kTextFileLoader.GetLineCount(); ++i)
+	{
+		if (!kTextFileLoader.SplitLineByTab(i, &kTokenVector) || kTokenVector.size() < 2)
+			continue;
+
+		m_NameMap[static_cast<DWORD>(atoi(kTokenVector[0].c_str()))] = kTokenVector[1];
+	}
+	return true;
+}
+
 bool CPythonNonPlayer::GetName(DWORD dwVnum, const char ** c_pszName)
 {
 	const TMobTable * p = GetTable(dwVnum);
@@ -75,7 +96,7 @@ bool CPythonNonPlayer::GetName(DWORD dwVnum, const char ** c_pszName)
 	if (!p)
 		return false;
 
-	*c_pszName = p->szLocaleName;
+	*c_pszName = GetMonsterName(dwVnum);
 
 	return true;
 }
@@ -132,6 +153,10 @@ BYTE CPythonNonPlayer::GetEventTypeByVID(DWORD dwVID)
 
 const char*	CPythonNonPlayer::GetMonsterName(DWORD dwVnum)
 {	
+	std::map<DWORD, std::string>::const_iterator itor = m_NameMap.find(dwVnum);
+	if (itor != m_NameMap.end())
+		return itor->second.c_str();
+
 	const CPythonNonPlayer::TMobTable * c_pTable = GetTable(dwVnum);
 	if (!c_pTable)
 	{
@@ -352,6 +377,7 @@ void CPythonNonPlayer::Destroy()
 		delete itor->second;
 	}
 	m_NonPlayerDataMap.clear();
+	m_NameMap.clear();
 }
 
 CPythonNonPlayer::CPythonNonPlayer()
