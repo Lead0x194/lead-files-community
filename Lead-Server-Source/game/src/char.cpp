@@ -867,7 +867,7 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 			addPacket.dwLevel = 0;
 		}
 
-		if (IsPC() || !m_pkMobData || m_stName != m_pkMobData->m_table.szLocaleName)
+		if (IsPC() || !m_pkMobData || (!m_stName.empty() && m_stName != m_pkMobData->m_table.szLocaleName))
 			strlcpy(addPacket.name, GetName(), sizeof(addPacket.name));
 
 		if (GetGuild() != NULL)
@@ -5790,7 +5790,7 @@ void CHARACTER::SpecificEffectPacket(const char filename[MAX_EFFECT_FILE_NAME])
 
 const char* CHARACTER::GetLocaleName() const
 {
-	if (IsPC() || !m_pkMobData || m_stName != m_pkMobData->m_table.szLocaleName)
+	if (IsPC() || !m_pkMobData || (!m_stName.empty() && m_stName != m_pkMobData->m_table.szLocaleName))
 		return GetName();
 
 	return LC_MOB(GetRaceNum());
