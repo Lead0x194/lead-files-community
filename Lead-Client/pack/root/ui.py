@@ -2924,7 +2924,10 @@ class ListBox2(ListBox):
 		self.showLineCount = 0
 		for textLine in self.itemList:
 			x, y = self._CalcRenderPos(pos, self.showLineCount)
-			textLine.SetPosition(x, y)
+			if localeInfo.IsRTL():
+				textLine.SetPosition(x + textLine.GetTextSize()[0] + 10, y)
+			else:
+				textLine.SetPosition(x, y)
 			textLine.Show()
 
 			self.showLineCount += 1

@@ -382,10 +382,7 @@ class CharacterWindow(ui.ScriptWindow):
 		self.isLoaded = 1
 
 		try:
-			if localeInfo.IsRTL():
-				self.__LoadScript(uiScriptLocale.LOCALE_UISCRIPT_PATH + "CharacterWindow.py")
-			else:
-				self.__LoadScript("UIScript/CharacterWindow.py")
+			self.__LoadScript("UIScript/CharacterWindow.py")
 				
 			self.__BindObject()
 			self.__BindEvent()
