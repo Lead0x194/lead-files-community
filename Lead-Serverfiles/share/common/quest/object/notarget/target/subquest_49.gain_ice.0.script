@@ -1,21 +1,21 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( "30146" ) >= 50 then 
-say_title ( gameforge . subquest_06 . _320_sayTitle ) 
-say ( gameforge . subquest_49 . _300_say ) 
+say_title ( "[LC;7137]" ) 
+say ( "[LC;8369]" ) 
 say_item_vnum ( 30149 ) 
 pc . give_item2 ( 30149 ) 
 set_state ( "back_to_boy" ) 
 pc . remove_item ( 30146 , 50 ) 
 return 
 else 
-say ( gameforge . subquest_49 . _310_say ) 
-local s = select ( gameforge . subquest_49 . _320_select , gameforge . find_brother_article . _170_select ) 
+say ( "[LC;8371]" ) 
+local s = select ( "[LC;8372]" , "[LC;939]" ) 
 if 2 == s then 
-say_title ( gameforge . subquest_06 . _320_sayTitle ) 
-say ( gameforge . subquest_49 . _330_say ) 
+say_title ( "[LC;7137]" ) 
+say ( "[LC;8373]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_06 . _320_sayTitle ) 
-say ( gameforge . subquest_49 . _340_say ) 
+say_title ( "[LC;7137]" ) 
+say ( "[LC;8374]" ) 
 end 

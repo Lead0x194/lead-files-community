@@ -1,14 +1,14 @@
 training_mount={["start"]=0,["main_point"]=351879266,check_list= function (material,pc_level,horse_level)if pc . count_item ( material ) <= 0 then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _02_say ) 
+say ( "[LC;8423]" ) 
 return 0 
 elseif pc . level < pc_level then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _01_say ) 
+say ( "[LC;8422]" ) 
 return 0 
 elseif horse . get_level ( ) < horse_level then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( string . format ( gameforge . training_mount . _33_say , horse_level ) ) 
+say ( string . format ( "[LC;8455]" , horse_level ) ) 
 return 0 
 else 
 return 1 

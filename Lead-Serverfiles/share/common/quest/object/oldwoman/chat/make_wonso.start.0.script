@@ -1,5 +1,5 @@
-say_title ( gameforge . fortune_telling . _40_sayTitle ) 
-say ( gameforge . locale . make_wonso . make_msg1 ) 
+say_title ( "[LC;1130]" ) 
+say ( "[LC;2117]" ) 
 pc . removeitem ( 50016 , 1 ) 
 pc . removeitem ( 50019 , 1 ) 
 pc . give_item2 ( 50020 , 1 ) 

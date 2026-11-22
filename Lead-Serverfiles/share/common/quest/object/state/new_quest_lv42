@@ -1,9 +1,9 @@
 new_quest_lv42={["start"]=0,["__COMPLETE__"]=668443392,["__GIVEUP__"]=-387375033,["ask_fisher"]=-1612890376,["ask_yonah"]=300320074,["back_to_fisher"]=-1458431702,["find_diamonds"]=1657324837,["goto_smith"]=-1017827144,["information"]=695801987,["wait_for_smith"]=-1493374885,npc_chat= function ()target . delete ( "__TARGET2__" ) 
-say_title ( gameforge . new_quest_lv42 . _034_say_title ) 
-say ( gameforge . new_quest_lv42 . _031_say ) 
+say_title ( "[LC;5883]" ) 
+say ( "[LC;5880]" ) 
 wait ( ) 
-say ( gameforge . new_quest_lv42 . _032_say ) 
+say ( "[LC;5881]" ) 
 wait ( ) 
-say ( gameforge . new_quest_lv42 . _033_say ) 
+say ( "[LC;5882]" ) 
 q . done ( ) 
 end }

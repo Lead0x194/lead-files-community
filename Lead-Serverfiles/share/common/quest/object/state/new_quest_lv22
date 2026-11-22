@@ -1,7 +1,7 @@
 new_quest_lv22={["start"]=0,["__COMPLETE__"]=668443392,["__GIVEUP__"]=-387375033,["ask_beakgo"]=1759166201,["back_to_baekgo"]=620210364,["find_brother"]=-1875013376,["hunting"]=-752091884,["information"]=695801987,npc_chat= function ()target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv22 . _017_say_title ) 
-say ( gameforge . new_quest_lv22 . _021_say ) 
+say_title ( "[LC;5685]" ) 
+say ( "[LC;5688]" ) 
 wait ( ) 
-say_title ( gameforge . new_quest_lv22 . _017_say_title ) 
-say ( gameforge . new_quest_lv22 . _022_say ) 
+say_title ( "[LC;5685]" ) 
+say ( "[LC;5689]" ) 
 end }

@@ -1,10 +1,10 @@
 local t = marriage . get_wedding_list ( ) 
 if table . getn ( t ) == 0 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _1010_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5481]" ) 
 else 
 local wedding_names = { } 
-table . foreachi ( t , function ( n , p ) wedding_names [ n ] = string . format ( gameforge . marriage_manage . _1015_foreach , p [ 3 ] , p [ 4 ] ) end ) 
+table . foreachi ( t , function ( n , p ) wedding_names [ n ] = string . format ( "[LC;5482;%s;%s]" , p [ 3 ] , p [ 4 ] ) end ) 
 wedding_names [ table . getn ( t ) + 1 ] = locale . confirm local s = select_table ( wedding_names ) 
 if s ~= table . getn ( wedding_names ) then 
 marriage . join_wedding ( t [ s ] [ 1 ] , t [ s ] [ 2 ] ) 

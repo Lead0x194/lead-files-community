@@ -1,41 +1,41 @@
 target . delete ( "teacher8" ) 
 local pc_job = pc . get_job ( ) 
 if pc_job ~= 3 then 
-say_title ( gameforge . skill_group . _190_sayTitle ) 
-say ( gameforge . skill_group . _730_say ) 
+say_title ( "[LC;6838]" ) 
+say ( "[LC;6898]" ) 
 if pc_job == 0 then 
-say_reward ( gameforge . skill_group . _210_sayReward ) 
+say_reward ( "[LC;6841]" ) 
 elseif pc_job == 1 then 
-say_reward ( gameforge . skill_group . _220_sayReward ) 
+say_reward ( "[LC;6842]" ) 
 elseif pc_job == 2 then 
-say_reward ( gameforge . skill_group . _230_sayReward ) 
+say_reward ( "[LC;6843]" ) 
 elseif pc_job == 3 then 
-say_reward ( gameforge . skill_group . _240_sayReward ) 
+say_reward ( "[LC;6844]" ) 
 end 
 return 
 end 
-say_title ( gameforge . skill_group . _740_sayTitle ) 
-say ( gameforge . skill_group . _750_say ) 
-say_reward ( gameforge . skill_group . _700_sayReward ) 
-local s = select ( gameforge . skill_group . _280_select , gameforge . skill_group . _290_select ) 
+say_title ( "[LC;6899]" ) 
+say ( "[LC;6900]" ) 
+say_reward ( "[LC;6894]" ) 
+local s = select ( "[LC;6848]" , "[LC;6849]" ) 
 if 2 == s then 
 return 
 end 
 if pc . get_job ( ) ~= 3 or pc . get_skill_group ( ) ~= 0 then 
-test_chat ( string . format ( gameforge . skill_group . _300_chat , bool_to_str ( npc_is_same_job ( ) ) .. "pc.get_skill_group:" .. pc . get_skill_group ( ) .. "pc_job:" .. pc . get_job ( ) ) ) 
+test_chat ( string . format ( "[LC;6850;%s]" , bool_to_str ( npc_is_same_job ( ) ) .. "pc.get_skill_group:" .. pc . get_skill_group ( ) .. "pc_job:" .. pc . get_job ( ) ) ) 
 return 
 end 
 set_state ( "start" ) 
 pc . set_skill_group ( 2 ) 
 pc . clear_skill ( ) 
 char_log ( 0 , "CLEAR_SKILL" , "Fertigkeit nach Fertigkeitsmeister löschen" ) 
-say_title ( gameforge . skill_group . _760_sayTitle ) 
-say ( gameforge . skill_group . _320_say ) 
+say_title ( "[LC;6901]" ) 
+say ( "[LC;6853]" ) 
 if not pc . is_clear_skill_group ( ) then 
-say ( gameforge . skill_group . _330_say ) 
-say_title ( gameforge . buy_fishrod . _210_sayTitle ) 
-say_reward ( gameforge . skill_group . _340_sayReward ) 
+say ( "[LC;6854]" ) 
+say_title ( "[LC;44]" ) 
+say_reward ( "[LC;6855]" ) 
 else 
-say_reward ( gameforge . skill_group . _350_sayReward ) 
+say_reward ( "[LC;6856]" ) 
 end 
 clear_letter ( ) 

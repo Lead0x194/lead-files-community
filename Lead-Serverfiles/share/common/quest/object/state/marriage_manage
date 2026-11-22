@@ -10,8 +10,8 @@ if is_test_server ( ) then
 DIVORCE_LIMIT_TIME = 60 
 end 
 if marriage . get_married_time ( ) < DIVORCE_LIMIT_TIME then 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _1030_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5484]" ) 
 return false 
 end 
 return true 

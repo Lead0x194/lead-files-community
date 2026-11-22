@@ -1,9 +1,9 @@
 if pc . getqf ( "open_count" ) < 3 then 
-say_title ( gameforge . subquest_26 . _30_sayTitle ) 
-say ( gameforge . warehouse . _100_say ) 
+say_title ( "[LC;7724]" ) 
+say ( "[LC;8494]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_26 . _30_sayTitle ) 
-say ( gameforge . warehouse . _110_say ) 
+say_title ( "[LC;7724]" ) 
+say ( "[LC;8496]" ) 
 wait ( ) 
 pc . setqf ( "open_count" , pc . getqf ( "open_count" ) + 1 ) 
 end 

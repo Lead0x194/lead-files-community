@@ -2,7 +2,7 @@ dragon_soul_daily_gift_mgr={["start"]=0,is_event_on= function ()local s_time = g
 local e_time = game . get_event_flag ( "ds_dg_et" ) 
 local now = os . time ( ) 
 return now > s_time and now < e_time 
-end ,date_getter= function ()say ( gameforge . dragon_soul_gift_mgr . _040_say ) 
+end ,date_getter= function ()say ( "[LC;791]" ) 
 say ( "yy-mm-dd hh:mm" ) 
 local date = input ( ) 
 local _ , _ , y , m , d , hour , min = string . find ( date , "(%d+)-(%d+)-(%d+) (%d+):(%d+)" ) 

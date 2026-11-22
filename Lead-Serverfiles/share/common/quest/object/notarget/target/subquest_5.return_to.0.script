@@ -1,57 +1,57 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_05 . _210_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7079]" ) 
 local s = select ( 
-gameforge . subquest_05 . _211_select , 
-gameforge . subquest_05 . _212_select , 
-gameforge . subquest_05 . _213_select , 
-gameforge . subquest_05 . _214_select ) 
+"[LC;7080]" , 
+"[LC;7081]" , 
+"[LC;7082]" , 
+"[LC;7083]" ) 
 if s == 2 then 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_05 . _220_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7084]" ) 
 pc . give_exp2 ( 6000 ) 
 set_quest_state ( "levelup" , "run" ) 
 pc . change_money ( 2000 ) 
-say_title ( gameforge . collect_herb_lv4 . _130_sayTitle ) 
-say_reward ( gameforge . subquest_05 . _230_sayReward ) 
+say_title ( "[LC;192]" ) 
+say_reward ( "[LC;7085]" ) 
 clear_letter ( ) 
 set_state ( "__COMPLETE__" ) 
 elseif s == 4 then 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_05 . _240_say ) 
-local s = select ( gameforge . subquest_05 . _250_select , gameforge . subquest_05 . _260_select ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7086]" ) 
+local s = select ( "[LC;7087]" , "[LC;7088]" ) 
 if 2 == s then 
-say ( gameforge . subquest_04 . _210_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7050]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . gameforge . subquest_05 . _100_say ) 
+say_title ( "[LC;7093]" ) 
+say ( nil ) 
 return 
 end 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_05 . _110_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7068]" ) 
 set_state ( "__GIVEUP__" ) 
 end 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_05 . _290_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7091]" ) 
 set_state ( "ask_to" ) 
 else 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_05 . _300_say ) 
-local s = select ( gameforge . subquest_05 . _310_select , gameforge . subquest_05 . _320_select ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7092]" ) 
+local s = select ( "[LC;7094]" , "[LC;7095]" ) 
 if 2 == s then 
-say ( gameforge . subquest_04 . _210_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7050]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_05 . _100_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7066]" ) 
 return 
 end 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_05 . _110_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7068]" ) 
 set_state ( "__GIVEUP__" ) 
 end 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_05 . _350_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7098]" ) 
 set_state ( "ask_to" ) 
 end 

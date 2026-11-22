@@ -1,9 +1,9 @@
 find_senior_soldier={["start"]=0,["__FUNC__"]=-626319362,["failure"]=563807169,["find"]=-911318012,["reward"]=1322349139,clear_target_cond= function ()pc . setqf ( "Ziel_Beding" , 0 ) 
-end ,save_target_cond= function ()test_chat ( string . format ( gameforge . find_senior_soldier . _200_chat , npc_get_job ( ) ) ) 
+end ,save_target_cond= function ()test_chat ( string . format ( "[LC;990;%s]" , npc_get_job ( ) ) ) 
 pc . setqf ( "Ziel_Beding" , npc_get_job ( ) ) 
 end ,find_target= function ()return find_pc_cond ( 5 , 100 , pc . getqf ( "Ziel_Beding" ) ) 
-end ,apply_affect= function (name,type,value)say_title ( gameforge . blacksmith . _40_sayTitle ) 
+end ,apply_affect= function (name,type,value)say_title ( "[LC;29]" ) 
 say_reward ( name ) 
-say_reward ( gameforge . find_senior_soldier . _210_sayReward ) 
+say_reward ( "[LC;992]" ) 
 affect . add ( type , value , 5 * 60 ) 
 end }

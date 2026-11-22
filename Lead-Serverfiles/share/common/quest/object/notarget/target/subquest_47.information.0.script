@@ -1,108 +1,108 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _30_say ) 
-local r = select ( gameforge . find_brother_article . _90_select , gameforge . subquest_01 . _60_select ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8305]" ) 
+local r = select ( "[LC;971]" , "[LC;6998]" ) 
 if 2 == r then 
-say ( gameforge . subquest_47 . _40_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;8309]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _50_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8310]" ) 
 return 
 end 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _60_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8311]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _70_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8312]" ) 
 wait ( ) 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _80_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8313]" ) 
 wait ( ) 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _90_say ) 
-local s = select ( gameforge . subquest_47 . _100_select , gameforge . subquest_47 . _110_select , gameforge . subquest_47 . _115_select ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8314]" ) 
+local s = select ( "[LC;8274]" , "[LC;8277]" , "[LC;8278]" ) 
 if 2 == s then 
-say ( gameforge . subquest_47 . _120_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;8279]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _130_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8280]" ) 
 return 
 end 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _140_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8281]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
 if 3 == s then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _150_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8282]" ) 
 wait ( ) 
 end 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _160_say ) 
-local answer = select ( gameforge . subquest_47 . _302_answer_wrong , gameforge . subquest_47 . _304_answer_wrong , gameforge . subquest_47 . _301_answer_correct , gameforge . subquest_47 . _303_answer_wrong , gameforge . subquest_47 . _305_answer_dontknow ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8283]" ) 
+local answer = select ( "[LC;8301]" , "[LC;8303]" , "[LC;8300]" , "[LC;8302]" , "[LC;8304]" ) 
 if 3 == answer then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _170_say ) 
-say_reward ( gameforge . subquest_47 . _180_sayReward ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8284]" ) 
+say_reward ( "[LC;8285]" ) 
 pc . give_exp2 ( 2.3e+06 ) 
 clear_letter ( ) 
 set_state ( "__COMPLETE__" ) 
 return 
 elseif 5 == answer then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _190_say ) 
-local answer = select ( gameforge . subquest_47 . _200_select , gameforge . subquest_47 . _210_select ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8286]" ) 
+local answer = select ( "[LC;8287]" , "[LC;8290]" ) 
 if 2 == answer then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _220_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8291]" ) 
 return 
 end 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _230_say ) 
-local answer = select ( gameforge . subquest_47 . _304_answer_wrong , gameforge . subquest_47 . _301_answer_correct , gameforge . subquest_47 . _303_answer_wrong , gameforge . subquest_47 . _302_answer_wrong , gameforge . subquest_47 . _305_answer_dontknow ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8292]" ) 
+local answer = select ( "[LC;8303]" , "[LC;8300]" , "[LC;8302]" , "[LC;8301]" , "[LC;8304]" ) 
 if 2 == answer then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _240_say ) 
-say_reward ( gameforge . subquest_47 . _250_sayReward ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8293]" ) 
+say_reward ( "[LC;8294]" ) 
 pc . give_exp2 ( 2.3e+06 ) 
 clear_letter ( ) 
 set_state ( "__COMPLETE__" ) 
 return 
 else 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _260_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8295]" ) 
 return 
 end 
 else 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _270_say ) 
-local a = select ( gameforge . subquest_47 . _280_select , gameforge . subquest_47 . _290_select ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8296]" ) 
+local a = select ( "[LC;8297]" , "[LC;8298]" ) 
 if 2 == a then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _220_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8291]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say ( gameforge . subquest_47 . _300_say ) 
-local answer = select ( gameforge . subquest_47 . _301_answer_correct , gameforge . subquest_47 . _302_answer_wrong , gameforge . subquest_47 . _303_answer_wrong , gameforge . subquest_47 . _304_answer_wrong , gameforge . subquest_47 . _305_answer_dontknow ) 
+say ( "[LC;8299]" ) 
+local answer = select ( "[LC;8300]" , "[LC;8301]" , "[LC;8302]" , "[LC;8303]" , "[LC;8304]" ) 
 if 1 == answer then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _310_say ) 
-say_reward ( gameforge . subquest_47 . _180_sayReward ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8306]" ) 
+say_reward ( "[LC;8285]" ) 
 pc . give_exp2 ( 2.3e+06 ) 
-say_reward ( gameforge . subquest_47 . _320_sayReward ) 
+say_reward ( "[LC;8307]" ) 
 pc . change_money ( 20000 ) 
 clear_letter ( ) 
 set_state ( "__COMPLETE__" ) 
 return 
 else 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_47 . _330_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;8308]" ) 
 return 
 end 
 end 

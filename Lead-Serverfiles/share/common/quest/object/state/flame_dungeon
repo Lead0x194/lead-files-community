@@ -54,11 +54,11 @@ d . setf ( "started" , 0 )
 d . setf ( "dungeon_enter" , 0 ) 
 end ,go_boss= function ()local setting = flame_dungeon . setting ( ) 
 if pc . get_level ( ) < 104 then 
-say ( gameforge . flame_dungeon . _580_notice ) 
+say ( "[LC;1092]" ) 
 return 
 else 
-say ( gameforge . flame_dungeon . _010_say ) 
-local warp = select ( gameforge . flame_dungeon . _020_select , gameforge . flame_dungeon . _030_select ) 
+say ( "[LC;1039]" ) 
+local warp = select ( "[LC;1040]" , "[LC;1041]" ) 
 if warp == 1 then 
 d . setf ( "level" , 17 ) 
 d . jump_all ( setting . bossroom_entry_pos [ 1 ] , setting . bossroom_entry_pos [ 2 ] ) 

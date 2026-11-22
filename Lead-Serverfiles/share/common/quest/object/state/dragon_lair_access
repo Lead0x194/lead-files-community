@@ -50,11 +50,11 @@ char_log ( 0 , "LAIR" , "WARP ALL" )
 end ,get_time_remaining= function ()local settings = dragon_lair_access . get_settings ( ) 
 return ( game . get_event_flag ( "dragon_lair_time" ) + settings . cooldown_time - get_global_time ( ) ) 
 end ,give_item_to_ghost= function ()local settings = dragon_lair_access . get_settings ( ) 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _130_say ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;721]" ) 
 say ( settings . access_item_amount .. "x: " ) 
 say_item_vnum ( settings . access_item ) 
-local give_item = select ( gameforge . dragon_lair_access . _140_select , gameforge . locale . cancel ) 
+local give_item = select ( "[LC;722]" , "[LC;1891]" ) 
 if give_item == 1 then 
 pc . remove_item ( settings . access_item , settings . access_item_amount ) 
 char_log ( pc . get_player_id ( ) , "LAIR" , pc . get_channel_id ( ) .. " GIVE ITEM" ) 
@@ -62,10 +62,10 @@ return true
 else 
 return false 
 end 
-end ,show_time_remaining= function (time_remaining)q . set_title ( gameforge . dragon_lair_access . _165_sendLetter ) 
-send_letter ( gameforge . dragon_lair_access . _165_sendLetter ) 
-q . set_clock ( gameforge . locale . monkey_dungeon . quest_rest_time , time_remaining ) 
+end ,show_time_remaining= function (time_remaining)q . set_title ( "[LC;726]" ) 
+send_letter ( "[LC;726]" ) 
+q . set_clock ( "[LC;2137]" , time_remaining ) 
 timer ( "dragon_lair_timer" , time_remaining ) 
-notice_multiline ( string . format ( gameforge . dragon_lair_access . _170_notice , time_remaining / 60 ) , notice ) 
+notice_multiline ( string . format ( "[LC;727;%d]" , time_remaining / 60 ) , notice ) 
 q . start ( ) 
 end }

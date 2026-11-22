@@ -1,59 +1,59 @@
 change_empire={["start"]=0,move_pc= function ()if pc . is_engaged ( ) then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say_reward ( gameforge . change_empire . _90_sayReward ) 
-say ( gameforge . change_empire . _100_say ) 
+say_title ( "[LC;78]" ) 
+say_reward ( "[LC;82]" ) 
+say ( "[LC;55]" ) 
 return false 
 end 
 if pc . is_married ( ) then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say_reward ( gameforge . change_empire . _90_sayReward ) 
-say ( gameforge . change_empire . _110_say ) 
+say_title ( "[LC;78]" ) 
+say_reward ( "[LC;82]" ) 
+say ( "[LC;57]" ) 
 return false 
 end 
 if pc . is_polymorphed ( ) then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say_reward ( gameforge . change_empire . _120_sayReward ) 
-say ( gameforge . change_empire . _130_say ) 
+say_title ( "[LC;78]" ) 
+say_reward ( "[LC;58]" ) 
+say ( "[LC;59]" ) 
 return false 
 end 
 if pc . has_guild ( ) then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say_reward ( gameforge . change_empire . _140_sayReward ) 
-say ( gameforge . change_empire . _150_say ) 
+say_title ( "[LC;78]" ) 
+say_reward ( "[LC;60]" ) 
+say ( "[LC;61]" ) 
 return false 
 end 
 if pc . money < 500000 then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say_reward ( gameforge . change_empire . _160_sayReward ) 
-say ( gameforge . change_empire . _170_say ) 
+say_title ( "[LC;78]" ) 
+say_reward ( "[LC;62]" ) 
+say ( "[LC;63]" ) 
 return false 
 end 
-say ( gameforge . change_empire . _180_say ) 
-local s = select ( gameforge . change_empire . _190_select , gameforge . change_empire . _200_select , gameforge . change_empire . _205_select , gameforge . locale . cancel ) 
+say ( "[LC;64]" ) 
+local s = select ( "[LC;65]" , "[LC;66]" , "[LC;67]" , "[LC;1891]" ) 
 if 4 == s then 
 return false 
 end 
-say_reward ( gameforge . change_empire . _210_sayReward ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . cancel ) 
+say_reward ( "[LC;69]" ) 
+local a = select ( "[LC;2059]" , "[LC;1891]" ) 
 if 2 == a then 
 return false 
 end 
 local ret = pc . change_empire ( s ) 
 local oldempire = pc . get_empire ( ) 
 if ret == 999 then 
-say_title ( gameforge . change_empire . _220_sayTitle ) 
-say_reward ( gameforge . change_empire . _230_sayReward ) 
+say_title ( "[LC;70]" ) 
+say_reward ( "[LC;71]" ) 
 pc . change_gold ( - 500000 ) 
 pc . remove_item ( 71054 ) ; 
-char_log ( 0 , "CHANGE_EMPIRE" , string . format ( gameforge . change_empire . _240_stringFormat , oldempire , s ) ) 
+char_log ( 0 , "CHANGE_EMPIRE" , string . format ( "[LC;72;%s;%s]" , oldempire , s ) ) 
 return true 
 else 
 if ret == 1 then 
-say ( gameforge . change_empire . _250_say ) 
+say ( "[LC;73]" ) 
 elseif ret == 2 then 
-say ( gameforge . change_empire . _260_say ) 
+say ( "[LC;74]" ) 
 elseif ret == 3 then 
-say ( gameforge . change_empire . _270_say ) 
+say ( "[LC;75]" ) 
 end 
 end 
 return false 

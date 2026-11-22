@@ -25,8 +25,8 @@ end ,get_reward_for_chest= function (chest_vnum)local reward_table = {
 } 
 } 
 return get_random_vnum_from_table ( reward_table [ chest_vnum ] ) 
-end ,open_chest= function (chest_vnum,key_vnum)say ( gameforge . mystery_key . _010_say ) 
-local s = select ( gameforge . mystery_key . _020_select , gameforge . mystery_key . _030_select ) 
+end ,open_chest= function (chest_vnum,key_vnum)say ( "[LC;5594]" ) 
+local s = select ( "[LC;5595]" , "[LC;5596]" ) 
 if s == 2 then 
 return 
 end 

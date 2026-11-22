@@ -33,58 +33,58 @@ local from_name = item_name ( item . vnum )
 local to_vnum = item . vnum + 20 
 local to_name = item_name ( to_vnum ) 
 local to_postfix 
-say ( gameforge . guild_building_melt . _10_say ) 
+say ( "[LC;1301]" ) 
 if item . count >= 100 then 
-say ( string . format ( gameforge . guild_building_melt . _20_say , pct , guild_building_melt . GetOreRefineCost ( 10000 ) ) ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( string . format ( "[LC;1311;%s;%s]" , pct , guild_building_melt . GetOreRefineCost ( 10000 ) ) ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if s == 1 then 
 if pc . get_gold ( ) < guild_building_melt . GetOreRefineCost ( 10000 ) then 
-say ( gameforge . guild_building_melt . _30_say ) 
+say ( "[LC;1321]" ) 
 return 
 end 
 if pc . diamond_refine ( 10000 , pct ) then 
-say ( gameforge . guild_building_melt . _40_say ) 
+say ( "[LC;1322]" ) 
 say_item ( to_name , to_vnum , "" ) 
 else 
-say ( gameforge . guild_building_melt . _50_say ) 
+say ( "[LC;1323]" ) 
 end 
 end 
 else 
-say ( string . format ( gameforge . guild_building_melt . _60_say , from_name ) ) 
+say ( string . format ( "[LC;1324;%s]" , from_name ) ) 
 end 
 end ,DoRefine= function (pct)local from_postfix 
 local from_name = item_name ( item . vnum ) 
 local to_vnum = item . vnum + 20 
 local to_name = item_name ( to_vnum ) 
 local to_postfix 
-say ( string . format ( gameforge . guild_building_melt . _70_say , from_name , to_name ) ) 
+say ( string . format ( "[LC;1325;%s;%s]" , from_name , to_name ) ) 
 if item . count >= 100 then 
-say ( string . format ( gameforge . guild_building_melt . _20_say , pct , guild_building_melt . GetOreRefineCost ( 3000 ) ) ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( string . format ( "[LC;1311;%s;%s]" , pct , guild_building_melt . GetOreRefineCost ( 3000 ) ) ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if s == 1 then 
 if pc . get_gold ( ) < guild_building_melt . GetOreRefineCost ( 3000 ) then 
-say ( gameforge . guild_building_melt . _30_say ) 
+say ( "[LC;1321]" ) 
 return 
 end 
 local selected_item_cell = select_item ( ) 
 if selected_item_cell == 0 then 
-say ( gameforge . guild_building_melt . _90_say ) 
+say ( "[LC;1326]" ) 
 return 
 end 
 local old_item = item . get_id ( ) 
 if ( not item . select_cell ( selected_item_cell ) ) or item . vnum < 28000 or item . vnum >= 28300 then 
-say ( gameforge . guild_building_melt . _100_say ) 
+say ( "[LC;1300]" ) 
 return 
 end 
 item . select ( old_item , old_item ) 
 if pc . ore_refine ( 3000 , pct , selected_item_cell ) then 
-say ( gameforge . guild_building_melt . _120_say ) 
+say ( "[LC;1302]" ) 
 say_item ( to_name , to_vnum , "" ) 
 else 
-say ( gameforge . guild_building_melt . _50_say ) 
+say ( "[LC;1323]" ) 
 end 
 end 
 else 
-say ( string . format ( gameforge . guild_building_melt . _60_say , from_name ) ) 
+say ( string . format ( "[LC;1324;%s]" , from_name ) ) 
 end 
 end }

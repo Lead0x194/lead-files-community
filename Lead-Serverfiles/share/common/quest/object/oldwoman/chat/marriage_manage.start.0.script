@@ -1,72 +1,72 @@
 if not npc . lock ( ) then 
-say_title ( gameforge . fortune_telling . _100_sayTitle ) 
-say ( gameforge . marriage_manage . _20_say ) 
+say_title ( "[LC;1118]" ) 
+say ( "[LC;5496]" ) 
 return 
 end 
 if pc . level < 25 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _30_say ) 
-say_title ( gameforge . marriage_manage . _40_sayTitle ) 
-say_reward ( gameforge . marriage_manage . _50_sayReward ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5507]" ) 
+say_title ( "[LC;5519]" ) 
+say_reward ( "[LC;5530]" ) 
 npc . unlock ( ) 
 return 
 end 
 local m_ring_num = pc . countitem ( 70301 ) 
 local m_has_ring = m_ring_num > 0 
 if not m_has_ring then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _60_say ) 
-say_item ( gameforge . marriage_manage . _70_sayItem , 70301 , "" ) 
-say ( gameforge . marriage_manage . _80_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5541]" ) 
+say_item ( "[LC;5552]" , 70301 , "" ) 
+say ( "[LC;5563]" ) 
 npc . unlock ( ) 
 return 
 end 
 local m_sex = pc . get_sex ( ) 
 local m_nationality = pc . get_empire ( ) 
 if not marriage_manage . is_equip_wedding_dress ( ) then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _90_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5575]" ) 
 if m_sex == 0 then 
-say_item ( gameforge . marriage_manage . _100_sayItem , marriage_manage . get_wedding_dress ( m_sex ) , "" ) 
-say_reward ( gameforge . marriage_manage . _110_sayReward ) 
+say_item ( "[LC;5480]" , marriage_manage . get_wedding_dress ( m_sex ) , "" ) 
+say_reward ( "[LC;5486]" ) 
 else 
-say_item ( gameforge . marriage_manage . _120_sayItem , marriage_manage . get_wedding_dress ( m_sex ) , "" ) 
-say_reward ( gameforge . marriage_manage . _130_sayReward ) 
+say_item ( "[LC;5487]" , marriage_manage . get_wedding_dress ( m_sex ) , "" ) 
+say_reward ( "[LC;5488]" ) 
 end 
 npc . unlock ( ) 
 return 
 end 
 local NEED_MONEY = 1e+06 
 if pc . get_money ( ) < NEED_MONEY then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _140_say ) 
-say_reward ( gameforge . marriage_manage . _150_sayReward ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5489]" ) 
+say_reward ( "[LC;5490]" ) 
 npc . unlock ( ) 
 return 
 end 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _160_say ) 
-say_reward ( gameforge . marriage_manage . _170_sayReward ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5491]" ) 
+say_reward ( "[LC;5492]" ) 
 local sname = input ( ) 
 if sname == "" then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _180_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5493]" ) 
 npc . unlock ( ) 
 return 
 end 
 local u_vid = find_pc_by_name ( sname ) 
 local m_vid = pc . get_vid ( ) 
 if u_vid == 0 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _190_say ) 
-say_reward ( string . format ( gameforge . marriage_manage . _200_sayReward , sname ) ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5494]" ) 
+say_reward ( string . format ( "[LC;5495;%s]" , sname ) ) 
 npc . unlock ( ) 
 return 
 end 
 if not npc . is_near_vid ( u_vid , 10 ) then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _210_say ) 
-say_reward ( string . format ( gameforge . marriage_manage . _220_sayReward , sname ) ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5497]" ) 
+say_reward ( string . format ( "[LC;5498;%s]" , sname ) ) 
 npc . unlock ( ) 
 return 
 end 
@@ -82,72 +82,72 @@ local u_wear = marriage_manage . is_equip_wedding_dress ( )
 pc . select ( old ) 
 local m_level = pc . get_level ( ) 
 if u_vid == m_vid then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _230_say ) 
-say_reward ( gameforge . marriage_manage . _240_sayReward ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5499]" ) 
+say_reward ( "[LC;5500]" ) 
 npc . unlock ( ) 
 return 
 end 
 if u_sex == m_sex then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _250_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5501]" ) 
 npc . unlock ( ) 
 return 
 end 
 if u_nationality ~= m_nationality then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _260_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5502]" ) 
 npc . unlock ( ) 
 return 
 end 
 if u_married then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _270_say ) 
-say_reward ( string . format ( gameforge . marriage_manage . _280_sayReward , sname ) ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5503]" ) 
+say_reward ( string . format ( "[LC;5504;%s]" , sname ) ) 
 npc . unlock ( ) 
 return 
 end 
 if u_level < 25 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _290_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5505]" ) 
 npc . unlock ( ) 
 return 
 end 
 if m_level - u_level > 15 or u_level - m_level > 15 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _300_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5506]" ) 
 npc . unlock ( ) 
 return 
 end 
 if not u_has_ring then 
 if m_ring_num >= 2 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _310_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5508]" ) 
 else 
-say ( gameforge . marriage_manage . _320_say ) 
+say ( "[LC;5509]" ) 
 end 
-say_item ( gameforge . marriage_manage . _70_sayItem , 70301 , "" ) 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _330_say ) 
+say_item ( "[LC;5552]" , 70301 , "" ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5510]" ) 
 npc . unlock ( ) 
 return 
 end 
 if not u_wear then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _340_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5511]" ) 
 if u_sex == 0 then 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say_item ( gameforge . marriage_manage . _100_sayItem , marriage_manage . get_wedding_dress ( u_sex ) , "" ) 
-say ( gameforge . marriage_manage . _350_say ) 
+say_title ( "[LC;617]" ) 
+say_item ( "[LC;5480]" , marriage_manage . get_wedding_dress ( u_sex ) , "" ) 
+say ( "[LC;5512]" ) 
 else 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say_item ( gameforge . marriage_manage . _120_sayItem , marriage_manage . get_wedding_dress ( u_sex ) , "" ) 
-say ( gameforge . marriage_manage . _360_say ) 
+say_title ( "[LC;617]" ) 
+say_item ( "[LC;5487]" , marriage_manage . get_wedding_dress ( u_sex ) , "" ) 
+say ( "[LC;5513]" ) 
 end 
 npc . unlock ( ) 
 return 
 end 
-local ok_sign = confirm ( u_vid , string . format ( gameforge . marriage_manage . _365_confirm_chat , pc . name ) , 30 ) 
+local ok_sign = confirm ( u_vid , string . format ( "[LC;5514;%s]" , pc . name ) , 30 ) 
 if ok_sign == CONFIRM_OK then 
 local m_name = pc . name if pc . get_gold ( ) >= NEED_MONEY then 
 pc . change_gold ( - NEED_MONEY ) 
@@ -157,14 +157,14 @@ local old = pc . select ( u_vid )
 pc . removeitem ( 70301 , 1 ) 
 pc . give_item2 ( 70302 , 1 ) 
 pc . select ( old ) 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _370_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5515]" ) 
 wait ( ) 
 setskin ( NOWINDOW ) 
 marriage . engage_to ( u_vid ) 
 end 
 else 
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _380_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5516]" ) 
 end 
 npc . unlock ( ) 

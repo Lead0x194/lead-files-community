@@ -23,13 +23,13 @@ if kill_count < 0 then
 return 
 end 
 if kill_count >= kill_finish then 
-q . set_counter ( gameforge . locale . levelup . remain_count , 0 ) 
+q . set_counter ( "[LC;2109]" , 0 ) 
 else 
-q . set_counter ( gameforge . locale . levelup . remain_count , kill_finish - kill_count ) 
+q . set_counter ( "[LC;2109]" , kill_finish - kill_count ) 
 end 
 if kill_count == kill_finish then 
 local random_rice = harvest_festival . get_random_rice ( 2 ) 
-notice_multiline ( string . format ( gameforge . harvest_festival . _560_notice , random_rice ) , notice ) 
+notice_multiline ( string . format ( "[LC;1472;%s]" , random_rice ) , notice ) 
 local cake_count = pc . getqf ( "cake_count" ) + random_rice 
 pc . setqf ( "cake_count" , cake_count ) 
 pc . setqf ( "harvest_festival_mob_complete" , 1 ) 

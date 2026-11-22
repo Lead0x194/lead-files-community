@@ -6,7 +6,7 @@ local result = pc . charge_cash ( amount , charge_type )
 if true == result then 
 local item_id = item . get_id ( ) 
 char_log ( item_id , "CHARGE_CASH_BY_VOUCHER" , amount ) 
-syschat ( string . format ( gameforge . charge_cash_by_voucher . _010_syschat , amount ) ) 
+syschat ( string . format ( "[LC;94;%s]" , amount ) ) 
 local flag_name = "total_" .. charge_type 
 pc . setqf ( flag_name , pc . getqf ( flag_name ) + amount ) 
 item . remove ( ) 
