@@ -1155,10 +1155,19 @@ bool CPythonNetworkStream::RecvChatPacket()
 		return true;
 	}
 
-	if (CHAT_TYPE_INFO == kChat.type || CHAT_TYPE_NOTICE == kChat.type || CHAT_TYPE_BIG_NOTICE == kChat.type)
+	bool bServerText = CHAT_TYPE_INFO == kChat.type || CHAT_TYPE_NOTICE == kChat.type || CHAT_TYPE_BIG_NOTICE == kChat.type;
+	if (CHAT_TYPE_TALKING == kChat.type && kChat.id != 0)
+	{
+		CInstanceBase* pkInstTalker = CPythonCharacterManager::Instance().GetInstancePtr(kChat.id);
+		bServerText = pkInstTalker && !pkInstTalker->IsPC();
+	}
+
+	if (bServerText)
 	{
 		std::string stText(buf);
 		LocaleService_ReplaceTags(stText);
+		for (size_t uPos = stText.find("[ENTER]"); std::string::npos != uPos; uPos = stText.find("[ENTER]", uPos))
+			stText.replace(uPos, 7, " ");
 		strncpy_s(buf, sizeof(buf), stText.c_str(), _TRUNCATE);
 	}
 
@@ -1866,7 +1875,10 @@ bool CPythonNetworkStream::RecvQuestConfirmPacket()
 		return false;
 	}
 
-	PyObject * poArg = Py_BuildValue("(sii)", kQuestConfirmPacket.msg, kQuestConfirmPacket.timeout, kQuestConfirmPacket.requestPID);
+	std::string stMessage(kQuestConfirmPacket.msg);
+	LocaleService_ReplaceTags(stMessage);
+
+	PyObject * poArg = Py_BuildValue("(sii)", stMessage.c_str(), kQuestConfirmPacket.timeout, kQuestConfirmPacket.requestPID);
  	PyCallClassMemberFunc(m_apoPhaseWnd[PHASE_WINDOW_GAME], "BINARY_OnQuestConfirm", poArg);
 	return true;
 }
@@ -2058,7 +2070,8 @@ bool CPythonNetworkStream::RecvScriptPacket()
 	if (!Recv(ScriptPacket.size, &str[0]))
 		return false;
 
-	str[str.size()-1] = '\0';
+	str.resize(strlen(str.c_str()));
+	LocaleService_ReplaceTags(str);
 
 	if (str.compare(0, 13, "[DESTROY_ALL]") == 0)
 	{
@@ -3975,13 +3988,16 @@ bool CPythonNetworkStream::RecvTargetCreatePacket()
 	CPythonMiniMap & rkpyMiniMap = CPythonMiniMap::Instance();
 	CPythonBackground & rkpyBG = CPythonBackground::Instance();
 
+	std::string stName(kTargetCreate.szName, strnlen(kTargetCreate.szName, sizeof(kTargetCreate.szName)));
+	LocaleService_ReplaceTags(stName);
+
 	if (CREATE_TARGET_TYPE_LOCATION == kTargetCreate.bType)
 	{
-		rkpyMiniMap.CreateTarget(kTargetCreate.lID, kTargetCreate.szName);
+		rkpyMiniMap.CreateTarget(kTargetCreate.lID, stName.c_str());
 	}
 	else
 	{
-		rkpyMiniMap.CreateTarget(kTargetCreate.lID, kTargetCreate.szName, kTargetCreate.dwVID);
+		rkpyMiniMap.CreateTarget(kTargetCreate.lID, stName.c_str(), kTargetCreate.dwVID);
 		rkpyBG.CreateTargetEffect(kTargetCreate.lID, kTargetCreate.dwVID);
 	}
 

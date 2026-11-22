@@ -174,7 +174,10 @@ static bool ExpandTag(const std::string& c_rstTag, std::string& rstResult)
 		if (c_rkMap.end() == itor)
 			return false;
 
-		rstResult = FormatString(itor->second, kTokenVector);
+		if (c_bQuest && kTokenVector.size() < 2)
+			rstResult = itor->second;
+		else
+			rstResult = FormatString(itor->second, kTokenVector);
 		return true;
 	}
 
