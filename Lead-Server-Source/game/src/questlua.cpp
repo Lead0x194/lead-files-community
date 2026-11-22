@@ -513,19 +513,6 @@ namespace quest
 		}
 
 		{
-			char translateFileName[256];
-			snprintf(translateFileName, sizeof(translateFileName), "%s/translate.lua", LocaleService_GetBasePath().c_str());
-
-			int translateLoadingResult = lua_dofile(L, translateFileName);
-			sys_log(0, "LoadTranslate(%s), returns %d", translateFileName, translateLoadingResult);
-			if (translateLoadingResult != 0)
-			{
-				sys_err("LOAD_TRANSLATE_ERROR(%s)", translateFileName);
-				return false;
-			}
-		}
-
-		{
 			char questLocaleFileName[256];
 			snprintf(questLocaleFileName, sizeof(questLocaleFileName), "%s/locale.lua", g_stQuestDir.c_str());
 			int questLocaleLoadingResult = lua_dofile(L, questLocaleFileName);

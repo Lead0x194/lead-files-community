@@ -45,9 +45,9 @@ A key that is missing in a language shows its own name and is written to `syserr
 
 ## Add a quest text
 
-1. Add `number<TAB>text` to `locale_quest.txt` in every language folder.
-2. Give the number a name in `Lead-Serverfiles/share/common/translate.lua`: `gameforge.my_quest.my_key = "[LC;number]"`, or `"[LC;number;%s]"` when the text has placeholders. The file holds no text, only these names, so quests stay readable.
-3. Use the name in the quest: `say(gameforge.my_quest.my_key)`.
+1. Pick a free number and add `number<TAB>text` to `locale_quest.txt` in every language folder.
+2. Use the number in the quest: `say("[LC;number]")`, or `say(string.format("[LC;number;%s;%d]", name, count))` when the text has placeholders. The values after the number fill the placeholders of the text in order.
+3. A chat entry of an NPC is written the same way: `when 20001.chat."[LC;number]" begin`.
 
 ## Add a language
 
