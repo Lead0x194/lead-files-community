@@ -181,8 +181,7 @@ class RefineDialog(ui.ScriptWindow):
 		textLine.SetVerticalAlignCenter()
 
 		if localeInfo.IsRTL():
-			(x,y) = textLine.GetTextSize()
-			textLine.SetPosition(x, 0)
+			textLine.SetPosition(191 - 15, 0)
 		else:
 			textLine.SetPosition(15, 0)
 
