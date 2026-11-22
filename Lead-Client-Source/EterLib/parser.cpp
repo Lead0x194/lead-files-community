@@ -9,6 +9,49 @@ using namespace script;
 
 extern DWORD GetDefaultCodePage();
 
+static const char* NextChar(DWORD codePage, const char* cur)
+{
+	if (CP_UTF8 != codePage)
+		return CharNextExA(static_cast<WORD>(codePage), cur, 0);
+
+	const unsigned char lead = static_cast<unsigned char>(*cur);
+
+	if (0 == lead)
+		return cur;
+
+	int length = 1;
+
+	if (lead >= 0xF0)
+		length = 4;
+	else if (lead >= 0xE0)
+		length = 3;
+	else if (lead >= 0xC0)
+		length = 2;
+
+	const char* next = cur + 1;
+
+	while (--length > 0 && (static_cast<unsigned char>(*next) & 0xC0) == 0x80)
+		++next;
+
+	return next;
+}
+
+static char* PrevChar(DWORD codePage, char* base, char* cur)
+{
+	if (CP_UTF8 != codePage)
+		return CharPrevExA(static_cast<WORD>(codePage), base, cur, 0);
+
+	char* prev = cur;
+
+	if (prev > base)
+		--prev;
+
+	while (prev > base && (static_cast<unsigned char>(*prev) & 0xC0) == 0x80)
+		--prev;
+
+	return prev;
+}
+
 const char* LocaleString_FindChar(const char* base, int len, char test)
 {
 	if (!base)
@@ -20,7 +63,7 @@ const char* LocaleString_FindChar(const char* base, int len, char test)
 	while (pos < len)
 	{
 		const char* cur = base + pos;
-		const char* next = CharNextExA(static_cast<WORD>(codePage), cur, 0);
+		const char* next = NextChar(codePage, cur);
 		int cur_len = static_cast<int>(next - cur);
 		if (cur_len > 1)
 		{
@@ -50,7 +93,7 @@ int LocaleString_RightTrim(char* base, int len)
 	while (pos > 0)
 	{
 		char* cur = base + pos;
-		char* prev = CharPrevExA(static_cast<WORD>(codePage), base, cur , 0);
+		char* prev = PrevChar(codePage, base, cur);
 
 		int prev_len = static_cast<int>(cur - prev);
 		if (prev_len != 1)
@@ -93,7 +136,7 @@ void OLD_rtrim(char* base)
 			
 			*end = '\0';
 
-			end = CharPrevExA(static_cast<WORD>(codePage), base, end, 0);
+			end = PrevChar(codePage, base, end);
 		}
 	}
 	else
@@ -102,7 +145,7 @@ void OLD_rtrim(char* base)
 
 		while (end != base)
 		{
-			char* prev = CharPrevExA(static_cast<WORD>(codePage), base, end, 0);
+			char* prev = PrevChar(codePage, base, end);
 
 			int prev_len = static_cast<int>(end - prev);
 			if (prev_len != 1)
@@ -130,7 +173,7 @@ const char* LocaleString_Skip(DWORD codePage, const char* cur)
 			break;
 		}
 
-		const char* next = CharNextExA(static_cast<WORD>(codePage), cur, 0);
+		const char* next = NextChar(codePage, cur);
 		int cur_len = static_cast<int>(next - cur);
 		if (cur_len > 1)
 		{
@@ -167,7 +210,7 @@ bool Group::GetArg(const char *c_arg_base, int arg_len, TArgList & argList)
     while (pos < arg_len)
     {
 		const char* cur = c_arg_base + pos;
-		const char* next = CharNextExA(static_cast<WORD>(codePage), cur, 0);
+		const char* next = NextChar(codePage, cur);
 		iCharLen = static_cast<int>(next - cur);
 
 		if (iCharLen > 1)
@@ -301,7 +344,7 @@ bool Group::Create(const std::string & stSource)
         TCmd cmd;
 
 		const char* word = str_base + str_pos;
-		const char* word_next = CharNextExA(static_cast<WORD>(codePage), word, 0);
+		const char* word_next = NextChar(codePage, word);
 
 		int word_len = static_cast<int>(word_next - word);
 		
@@ -360,7 +403,7 @@ bool Group::Create(const std::string & stSource)
 						int name_len = static_cast<int>(space - box_data);
 						cmd.name.assign(box_data, name_len);
 
-						const char* space_next = CharNextExA(static_cast<WORD>(codePage), space, 0);
+						const char* space_next = NextChar(codePage, space);
 						const char* arg = LocaleString_Skip(codePage, space_next);
 
 						int arg_len = static_cast<int>(data_len - (arg - box_data));
