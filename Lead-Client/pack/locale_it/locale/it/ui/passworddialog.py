@@ -25,7 +25,6 @@ window = {
 			"children" :
 			(
 
-				#내용
 				{
 					"name" : "Desc1",
 					"type" : "text",
@@ -36,7 +35,6 @@ window = {
 					"text" : uiScriptLocale.PASSWORD_DESC_1,
 					"text_horizontal_align":"center"
 				},
-				#내용2
 				{
 					"name" : "Desc2",
 					"type" : "text",
