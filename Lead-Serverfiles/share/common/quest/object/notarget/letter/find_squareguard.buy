@@ -1,6 +1,6 @@
-send_letter ( gameforge . find_squareguard . _80_sendLetter ) 
+send_letter ( "[LC;1021]" ) 
 local v = find_npc_by_vnum ( 9003 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . find_squareguard . _131_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;1005]" ) 
 end 

@@ -1,7 +1,7 @@
 if pc . count_item ( "30152" ) >= 1 then 
-say_title ( gameforge . subquest_21 . _120_targetVid ) 
-say ( gameforge . subquest_21 . _130_sayReward ) 
+say_title ( "[LC;7545]" ) 
+say ( "[LC;7546]" ) 
 return 
 end 
-say_title ( gameforge . subquest_21 . _140_sayTitle ) 
-say ( gameforge . subquest_21 . _150_say ) 
+say_title ( "[LC;7547]" ) 
+say ( "[LC;7548]" ) 

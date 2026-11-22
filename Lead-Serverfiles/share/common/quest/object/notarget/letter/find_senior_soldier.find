@@ -1,8 +1,8 @@
 local v = find_senior_soldier . find_target ( ) 
-test_chat ( string . format ( gameforge . find_senior_soldier . _90_chat , v ) ) 
+test_chat ( string . format ( "[LC;999;%s]" , v ) ) 
 if v == 0 then 
 set_state ( "failure" ) 
 else 
-target . vid ( "__TARGET__" , v , gameforge . find_senior_soldier . _100_targetVid ) 
-send_letter ( gameforge . find_senior_soldier . _100_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;972]" ) 
+send_letter ( "[LC;972]" ) 
 end 

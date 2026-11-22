@@ -1,4 +1,4 @@
-send_letter ( gameforge . main_quest_flame_lv99 . _010_sendLetter ) 
+send_letter ( "[LC;4021]" ) 
 local v = find_npc_by_vnum ( 20377 ) 
 if 0 ~= v then 
 target . vid ( "__TARGET__" , v , mob_name ( 20377 ) ) 

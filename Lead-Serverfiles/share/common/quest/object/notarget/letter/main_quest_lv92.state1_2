@@ -1,4 +1,4 @@
-send_letter ( gameforge . main_quest_lv92 . _010_sendLetter ) 
+send_letter ( "[LC;4931]" ) 
 local remain_item = 4 - pc . count_item ( 31010 ) 
 if remain_item <= 0 then 
 remain_item = 0 

@@ -2,9 +2,9 @@ local copper = pc . count_item ( 50604 )
 local pearl = pc . count_item ( 50609 ) 
 local ebony = pc . count_item ( 50608 ) 
 if copper >= 100 and pearl >= 100 and ebony >= 100 then 
-say_title ( gameforge . subquest_31 . _110_sayTitle ) 
-say ( gameforge . subquest_31 . _120_sayReward ) 
+say_title ( "[LC;7818]" ) 
+say ( "[LC;7819]" ) 
 return 
 end 
-say_title ( gameforge . subquest_31 . _130_sayTitle ) 
-say ( gameforge . subquest_31 . _140_sayReward ) 
+say_title ( "[LC;7820]" ) 
+say ( "[LC;7821]" ) 

@@ -1,6 +1,6 @@
 if ( pc . get_map_index ( ) ~= 71 and pc . get_map_index ( ) ~= 104 and pc . get_map_index ( ) ~= 72 and pc . get_map_index ( ) ~= 73 and pc . get_map_index ( ) ~= 208 ) and pc . get_map_index ( ) <= 200 then local e = guild . get_any_war ( ) 
 if e ~= 0 and pc . get_war_map ( ) == 0 then 
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . locale . guild . war_join_request ) 
+makequestbutton ( "[LC;2051]" ) 
 end 
  return end 

@@ -1,3 +1,3 @@
-send_letter ( gameforge . main_quest_flame_lv101 . _010_sendLetter ) 
-q . set_counter_name ( gameforge . main_quest_lv97 . _670_counterName ) 
+send_letter ( "[LC;3791]" ) 
+q . set_counter_name ( "[LC;5362]" ) 
 q . set_counter_value ( 2 ) 

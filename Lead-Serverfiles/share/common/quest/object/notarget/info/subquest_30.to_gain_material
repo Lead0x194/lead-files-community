@@ -2,9 +2,9 @@ local gold = pc . count_item ( 50606 )
 local silver = pc . count_item ( 50605 ) 
 local ebony = pc . count_item ( 50608 ) 
 if gold >= 100 and silver >= 100 and ebony >= 100 then 
-say_title ( gameforge . subquest_30 . _120_sayTitle ) 
-say ( gameforge . subquest_30 . _130_say ) 
+say_title ( "[LC;7790]" ) 
+say ( "[LC;7791]" ) 
 return 
 end 
-say_title ( gameforge . subquest_30 . _140_sayTitle ) 
-say ( gameforge . subquest_30 . _150_say ) 
+say_title ( "[LC;7792]" ) 
+say ( "[LC;7793]" ) 

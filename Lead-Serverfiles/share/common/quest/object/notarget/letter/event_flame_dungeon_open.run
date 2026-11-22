@@ -1,4 +1,4 @@
-if game . get_event_flag ( "w21open_event" ) > 0 then send_letter ( gameforge . event_flame_dungeon_open . _010_npcChat ) 
-q . set_counter_name ( gameforge . main_quest_lv98 . _680_counterName ) 
+if game . get_event_flag ( "w21open_event" ) > 0 then send_letter ( "[LC;863]" ) 
+q . set_counter_name ( "[LC;5425]" ) 
 event_flame_dungeon_open . kill_count ( ) 
  return end 

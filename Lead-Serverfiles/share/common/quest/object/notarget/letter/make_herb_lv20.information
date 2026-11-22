@@ -1,5 +1,5 @@
 local v = find_npc_by_vnum ( 20084 ) 
 if v ~= 0 then 
-target . vid ( "__TARGET__" , v , gameforge . collect_herb_lv10 . _10_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;123]" ) 
 end 
-send_letter ( gameforge . collect_herb_lv10 . _20_sendLetter ) 
+send_letter ( "[LC;134]" ) 

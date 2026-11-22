@@ -1,4 +1,4 @@
-send_letter ( gameforge . main_quest_lv66 . _390_sendLetter ) 
+send_letter ( "[LC;4600]" ) 
 local t = pc . getqf ( "state_8_start" ) + 30 * 60 - get_global_time ( ) 
 q . set_clock ( locale . stash . enlarge_1_timer , t ) 
 q . set_counter_name ( mob_name ( 2313 ) ) 

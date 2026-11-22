@@ -1,15 +1,15 @@
 if pc . job == 0 then 
-say_title ( gameforge . skill_group . _100_sayTitle ) 
-say ( gameforge . skill_group . _110_sayReward ) 
+say_title ( "[LC;6828]" ) 
+say ( "[LC;6830]" ) 
 elseif pc . job == 1 then 
-say_title ( gameforge . skill_group . _120_sayTitle ) 
-say ( gameforge . skill_group . _130_sayReward ) 
+say_title ( "[LC;6831]" ) 
+say ( "[LC;6832]" ) 
 elseif pc . job == 2 then 
-say_title ( gameforge . skill_group . _140_sayTitle ) 
-say ( gameforge . skill_group . _150_sayReward ) 
+say_title ( "[LC;6833]" ) 
+say ( "[LC;6834]" ) 
 elseif pc . job == 3 then 
-say_title ( gameforge . skill_group . _160_sayTitle ) 
-say ( gameforge . skill_group . _170_sayReward ) 
+say_title ( "[LC;6835]" ) 
+say ( "[LC;6836]" ) 
 end 
-select ( gameforge . locale . confirm ) 
+select ( "[LC;1919]" ) 
 setskin ( NOWINDOW ) 

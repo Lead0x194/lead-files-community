@@ -1,2 +1,2 @@
-send_letter ( gameforge . harvest_festival . _520_sendLetter ) 
-q . set_counter ( gameforge . locale . levelup . remain_count , 30 - pc . getqf ( "mob_kill1_count" ) ) 
+send_letter ( "[LC;1468]" ) 
+q . set_counter ( "[LC;2109]" , 30 - pc . getqf ( "mob_kill1_count" ) ) 

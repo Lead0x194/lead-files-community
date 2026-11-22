@@ -1,2 +1,2 @@
-q . set_counter ( gameforge . couple_ring . _75_say , couple_ring . get_rest_count ( ) ) ; 
-send_letter ( gameforge . couple_ring . _100_sendLetter ) 
+q . set_counter ( "[LC;629]" , couple_ring . get_rest_count ( ) ) ; 
+send_letter ( "[LC;605]" ) 

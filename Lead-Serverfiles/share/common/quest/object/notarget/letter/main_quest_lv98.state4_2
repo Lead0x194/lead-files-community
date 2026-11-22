@@ -1,5 +1,5 @@
-send_letter ( gameforge . main_quest_lv98 . _330_sendLetter ) 
-q . set_counter_name ( gameforge . main_quest_lv98 . _700_counterName ) 
+send_letter ( "[LC;5395]" ) 
+q . set_counter_name ( "[LC;5427]" ) 
 local v_npc1 = find_npc_by_vnum ( 20381 ) 
 local v_npc2 = find_npc_by_vnum ( 9002 ) 
 local v_npc3 = find_npc_by_vnum ( 9003 ) 

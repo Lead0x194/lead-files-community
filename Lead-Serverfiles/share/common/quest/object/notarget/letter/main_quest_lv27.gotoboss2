@@ -1,9 +1,9 @@
 local v = find_npc_by_vnum ( 20355 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . main_quest_lv10 . _180_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;4078]" ) 
 end 
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . main_quest_lv27 . _100_makequestbutton ) 
-q . set_title ( gameforge . main_quest_lv14 . _110_sayReward ) 
+makequestbutton ( "[LC;4178]" ) 
+q . set_title ( "[LC;4110]" ) 
 q . start ( ) 

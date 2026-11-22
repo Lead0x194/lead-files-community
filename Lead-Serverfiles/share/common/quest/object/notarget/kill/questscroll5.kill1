@@ -1,4 +1,4 @@
-test_chat ( string . format ( gameforge . questscroll5 . _160_chat , npc . get_race ( ) .. " [ENTER]questscroll5.dest_race:" .. questscroll5 . get_mob1_vnum ( ) ) ) 
+test_chat ( string . format ( "[LC;6751;%s]" , npc . get_race ( ) .. " [ENTER]questscroll5.dest_race:" .. questscroll5 . get_mob1_vnum ( ) ) ) 
 if npc . get_race ( ) == questscroll5 . get_mob1_vnum ( ) then 
 local mob1_kill_count = questscroll5 . get_mob1_cur_kill_count ( ) + 1 
 questscroll5 . set_mob1_cur_kill_count ( mob1_kill_count ) 

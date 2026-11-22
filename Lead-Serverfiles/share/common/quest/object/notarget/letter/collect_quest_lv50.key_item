@@ -1,7 +1,7 @@
-send_letter ( gameforge . collect_quest_lv50 . _210_sendLetter ) 
+send_letter ( "[LC;309]" ) 
 if pc . count_item ( 30222 ) > 0 then 
 local v = find_npc_by_vnum ( 20084 ) 
 if v ~= 0 then 
-target . vid ( "__TARGET__" , v , gameforge . collect_herb_lv10 . _150_sayTitle ) 
+target . vid ( "__TARGET__" , v , "[LC;128]" ) 
 end 
 end 

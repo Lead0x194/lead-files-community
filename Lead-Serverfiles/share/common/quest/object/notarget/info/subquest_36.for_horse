@@ -1,7 +1,7 @@
 if pc . count_item ( 50054 ) >= 10 then 
-say_title ( gameforge . subquest_36 . _100_sayTitle ) 
-say ( gameforge . subquest_36 . _110_say ) 
+say_title ( "[LC;7967]" ) 
+say ( "[LC;7969]" ) 
 return 
 end 
-say_title ( gameforge . subquest_36 . _120_sayTitle ) 
-say ( gameforge . subquest_36 . _130_say ) 
+say_title ( "[LC;7970]" ) 
+say ( "[LC;7971]" ) 

@@ -1,8 +1,8 @@
-send_letter ( gameforge . main_quest_lv32 . _110_npcChat ) 
+send_letter ( "[LC;4231]" ) 
 if pc . count_item ( 60 ) >= 20 then 
 local v = find_npc_by_vnum ( 20010 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . main_quest_lv32 . _150_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;4235]" ) 
 end 
 end 

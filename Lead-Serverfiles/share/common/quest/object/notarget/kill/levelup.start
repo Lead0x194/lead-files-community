@@ -9,7 +9,7 @@ if remain <= 0 then
 pc . setqf ( "remain" , 0 ) 
 q . set_counter_value ( 0 ) 
 setskin ( NOWINDOW ) 
-makequestbutton ( string . format ( gameforge . levelup . _50_sayTitle , lev ) ) 
+makequestbutton ( string . format ( "[LC;1829;%s]" , lev ) ) 
 pc . setqf ( "buttonstate" , 3 ) 
 else 
 pc . setqf ( "remain" , remain ) 
