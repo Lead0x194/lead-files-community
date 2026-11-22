@@ -865,7 +865,8 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 			addPacket.dwLevel = 0;
 		}
 
-		strlcpy(addPacket.name, GetName(), sizeof(addPacket.name));
+		if (IsPC() || !m_pkMobData || m_stName != m_pkMobData->m_table.szLocaleName)
+			strlcpy(addPacket.name, GetName(), sizeof(addPacket.name));
 
 		if (GetGuild() != NULL)
 		{	
