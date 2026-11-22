@@ -150,7 +150,11 @@ bool CPythonNetworkStream::RecvCharacterAdditionalInfo()
 
 	if(kNetActorData.m_dwVID == chrInfoPacket.dwVID)
 	{
-		kNetActorData.m_stName = chrInfoPacket.name;
+		const char * c_szName;
+		if (!chrInfoPacket.name[0] && CPythonNonPlayer::Instance().GetName(kNetActorData.m_dwRace, &c_szName))
+			kNetActorData.m_stName = c_szName;
+		else
+			kNetActorData.m_stName = chrInfoPacket.name;
 		kNetActorData.m_dwGuildID = chrInfoPacket.dwGuildID;
 		kNetActorData.m_dwLevel = chrInfoPacket.dwLevel;
 		kNetActorData.m_sAlignment=chrInfoPacket.sAlignment;	
