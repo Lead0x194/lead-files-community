@@ -3,7 +3,6 @@ import uiScriptLocale
 window = {
 	"name" : "InventoryWindow",
 
-	## 600 - (width + 오른쪽으로 부터 띄우기 24 px)
 	"x" : SCREEN_WIDTH - 176 - 287 - 10,
 	"y" : SCREEN_HEIGHT - 37 - 505,
 
