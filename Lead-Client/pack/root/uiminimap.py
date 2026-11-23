@@ -10,6 +10,7 @@ import colorInfo
 import constInfo
 import background
 import chr
+import nonplayer
 
 class MapTextToolTip(ui.Window):
 	def __init__(self):			
@@ -142,6 +143,10 @@ class AtlasWindow(ui.ScriptWindow):
 
 		if "empty_guild_area" == sName:
 			sName = localeInfo.GUILD_EMPTY_AREA
+		elif sName[:1] == "#" and sName[1:].isdigit():
+			sName = nonplayer.GetMonsterName(int(sName[1:]))
+		elif sName[:1] == "#":
+			sName = getattr(localeInfo, sName[1:], sName[1:])
 
 		if localeInfo.IsRTL() and sName[-1].isalnum():
 			self.tooltipInfo.SetText("(%s)%d, %d" % (sName, iPosX, iPosY))						
