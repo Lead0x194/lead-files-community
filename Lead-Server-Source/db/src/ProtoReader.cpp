@@ -581,21 +581,11 @@ int get_Mob_ImmuneFlag_Value(string inputString)
 #ifndef __DUMP_PROTO__
 
 // Set up the mob table .
-bool Set_Proto_Mob_Table(TMobTable *mobTable, cCsvTable &csvTable,std::map<int,const char*> &nameMap)
+bool Set_Proto_Mob_Table(TMobTable *mobTable, cCsvTable &csvTable)
 {
 	int col = 0;
 	str_to_number(mobTable->dwVnum, csvTable.AsStringByIndex(col++));
 	strlcpy(mobTable->szName, csvTable.AsStringByIndex(col++), sizeof(mobTable->szName));
-
-	//3. Enter regional name .
-	map<int,const char*>::iterator it;
-	it = nameMap.find(mobTable->dwVnum);
-	if (it != nameMap.end()) {
-		const char * localeName = it->second;
-		strlcpy(mobTable->szLocaleName, localeName, sizeof (mobTable->szLocaleName));
-	} else {
-		strlcpy(mobTable->szLocaleName, mobTable->szName, sizeof (mobTable->szLocaleName));
-	}
 
 	//RANK
 	int rankValue = get_Mob_Rank_Value(csvTable.AsStringByIndex(col++));
@@ -682,12 +672,12 @@ bool Set_Proto_Mob_Table(TMobTable *mobTable, cCsvTable &csvTable,std::map<int,c
 	str_to_number(mobTable->bDeathBlowPoint, csvTable.AsStringByIndex(col++));
 	str_to_number(mobTable->bRevivePoint, csvTable.AsStringByIndex(col++));
 
-	sys_log(0, "MOB #%-5d %-24s level: %-3u rank: %u empire: %d", mobTable->dwVnum, mobTable->szLocaleName, mobTable->bLevel, mobTable->bRank, mobTable->bEmpire);
+	sys_log(0, "MOB #%-5d %-24s level: %-3u rank: %u empire: %d", mobTable->dwVnum, mobTable->szName, mobTable->bLevel, mobTable->bRank, mobTable->bEmpire);
 
 	return true;
 }
 
-bool Set_Proto_Item_Table(TItemTable *itemTable, cCsvTable &csvTable,std::map<int,const char*> &nameMap)
+bool Set_Proto_Item_Table(TItemTable *itemTable, cCsvTable &csvTable)
 {
 	int col = 0;
 
@@ -776,15 +766,6 @@ bool Set_Proto_Item_Table(TItemTable *itemTable, cCsvTable &csvTable,std::map<in
 	}
 
 	strlcpy(itemTable->szName, csvTable.AsStringByIndex(1), sizeof(itemTable->szName));
-	// Enter regional name .
-	map<int,const char*>::iterator it;
-	it = nameMap.find(itemTable->dwVnum);
-	if (it != nameMap.end()) {
-		const char * localeName = it->second;
-		strlcpy(itemTable->szLocaleName, localeName, sizeof (itemTable->szLocaleName));
-	} else {
-		strlcpy(itemTable->szLocaleName, itemTable->szName, sizeof (itemTable->szLocaleName));
-	}
 	itemTable->bType = dataArray[2];
 	itemTable->bSubType = dataArray[3];
 	itemTable->bSize = dataArray[4];

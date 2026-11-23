@@ -498,7 +498,7 @@ int CInputMain::Whisper(LPCHARACTER ch, const char * data, size_t uiBytes)
 						ch->GetDesc()->BufferedPacket(&pack, sizeof(pack));
 						ch->GetDesc()->Packet(buf, len);
 
-						sys_log(0, "WHISPER: not enough %s: char: %s", pTable->szLocaleName, ch->GetName());
+						sys_log(0, "WHISPER: not enough %s: char: %s", pTable->szName, ch->GetName());
 					}
 				}
 

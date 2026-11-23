@@ -178,8 +178,6 @@ class FCompareVnum
 
 bool CClientManager::InitializeMobTableFromTxt()
 {
-	map<int,const char*> localMap;
-	bool isNameFile = false;
 	
 	set<int> vnumSet;
 	bool isTestFile = true;
@@ -200,7 +198,7 @@ bool CClientManager::InitializeMobTableFromTxt()
 
 		while(test_data.Next()) {
 
-			if (!Set_Proto_Mob_Table(test_mob_table, test_data, localMap))
+			if (!Set_Proto_Mob_Table(test_mob_table, test_data))
 			{
 				fprintf(stderr, "Mob proto table setting failed.\n");
 			}
@@ -257,7 +255,6 @@ bool CClientManager::InitializeMobTableFromTxt()
 
 			mob_table->dwVnum = tempTable->dwVnum;
 			strlcpy(mob_table->szName, tempTable->szName, sizeof(tempTable->szName));
-			strlcpy(mob_table->szLocaleName, tempTable->szLocaleName, sizeof(tempTable->szName));
 			mob_table->bRank = tempTable->bRank;
 			mob_table->bType = tempTable->bType;
 			mob_table->bBattleType = tempTable->bBattleType;
@@ -320,7 +317,7 @@ bool CClientManager::InitializeMobTableFromTxt()
 			mob_table->bRevivePoint = tempTable->bRevivePoint;
 		} else {
 
-			if (!Set_Proto_Mob_Table(mob_table, data, localMap))
+			if (!Set_Proto_Mob_Table(mob_table, data))
 			{
 				fprintf(stderr, "Mob proto table setting failed.\n");			
 			}
@@ -331,7 +328,7 @@ bool CClientManager::InitializeMobTableFromTxt()
 		vnumSet.insert(mob_table->dwVnum);
 		
 
-		sys_log(1, "MOB #%-5d %-24s %-24s level: %-3u rank: %u empire: %d", mob_table->dwVnum, mob_table->szName, mob_table->szLocaleName, mob_table->bLevel, mob_table->bRank, mob_table->bEmpire);
+		sys_log(1, "MOB #%-5d %-24s level: %-3u rank: %u empire: %d", mob_table->dwVnum, mob_table->szName, mob_table->bLevel, mob_table->bRank, mob_table->bEmpire);
 		++mob_table;
 
 	}
@@ -354,12 +351,12 @@ bool CClientManager::InitializeMobTableFromTxt()
 				continue;
 			}
 
-			if (!Set_Proto_Mob_Table(mob_table, test_data, localMap))
+			if (!Set_Proto_Mob_Table(mob_table, test_data))
 			{
 				fprintf(stderr, "Mob proto table setting failed.\n");			
 			}
 
-			sys_log(0, "MOB #%-5d %-24s %-24s level: %-3u rank: %u empire: %d", mob_table->dwVnum, mob_table->szName, mob_table->szLocaleName, mob_table->bLevel, mob_table->bRank, mob_table->bEmpire);
+			sys_log(0, "MOB #%-5d %-24s level: %-3u rank: %u empire: %d", mob_table->dwVnum, mob_table->szName, mob_table->bLevel, mob_table->bRank, mob_table->bEmpire);
 			++mob_table;
 
 		}
@@ -454,7 +451,7 @@ bool CClientManager::InitializeQuestItemTable()
 {
 	using namespace std;
 
-	static const char * s_szQuery = "SELECT vnum, name, name FROM quest_item_proto ORDER BY vnum";
+	static const char * s_szQuery = "SELECT vnum, name FROM quest_item_proto ORDER BY vnum";
 
 	char query[1024];
 	snprintf(query, sizeof(query), "%s", s_szQuery);
@@ -484,14 +481,11 @@ bool CClientManager::InitializeQuestItemTable()
 
 		col++;
 
-		if (row[col])
-			strlcpy(tbl.szLocaleName, row[col], sizeof(tbl.szLocaleName));
-
 		col++;
 
 		if (m_map_itemTableByVnum.find(tbl.dwVnum) != m_map_itemTableByVnum.end())
 		{
-			sys_err("QUEST_ITEM_ERROR! %lu vnum already exist! (name %s)", tbl.dwVnum, tbl.szLocaleName);
+			sys_err("QUEST_ITEM_ERROR! %lu vnum already exist! (name %s)", tbl.dwVnum, tbl.szName);
 			continue;
 		}
 
@@ -506,8 +500,6 @@ bool CClientManager::InitializeQuestItemTable()
 
 bool CClientManager::InitializeItemTableFromTxt()
 {
-	bool isNameFile = false;
-	map<int,const char*> localMap;
 	
 	map<DWORD, TItemTable *> test_map_itemTableByVnum;
 	cCsvTable test_data;
@@ -526,7 +518,7 @@ bool CClientManager::InitializeItemTableFromTxt()
 		while(test_data.Next()) {
 
 
-			if (!Set_Proto_Item_Table(test_item_table, test_data, localMap))
+			if (!Set_Proto_Item_Table(test_item_table, test_data))
 			{
 				fprintf(stderr, "Item proto table setting failed.\n");			
 			}
@@ -585,7 +577,7 @@ bool CClientManager::InitializeItemTableFromTxt()
 		it_map_itemTable = test_map_itemTableByVnum.find(atoi(data.AsStringByIndex(col)));
 		if(it_map_itemTable == test_map_itemTableByVnum.end()) {
 			
-			if (!Set_Proto_Item_Table(item_table, data, localMap))
+			if (!Set_Proto_Item_Table(item_table, data))
 			{
 				fprintf(stderr, "Item proto table setting failed.\n");			
 			}
@@ -597,7 +589,6 @@ bool CClientManager::InitializeItemTableFromTxt()
 
 			item_table->dwVnum = tempTable->dwVnum;
 			strlcpy(item_table->szName, tempTable->szName, sizeof(item_table->szName));
-			strlcpy(item_table->szLocaleName, tempTable->szLocaleName, sizeof(item_table->szLocaleName));
 			item_table->bType = tempTable->bType;
 			item_table->bSubType = tempTable->bSubType;
 			item_table->bSize = tempTable->bSize;
@@ -663,7 +654,7 @@ bool CClientManager::InitializeItemTableFromTxt()
 				continue;
 			}
 			
-			if (!Set_Proto_Item_Table(item_table, test_data, localMap))
+			if (!Set_Proto_Item_Table(item_table, test_data))
 			{
 				fprintf(stderr, "Item proto table setting failed.\n");			
 			}
@@ -690,10 +681,9 @@ bool CClientManager::InitializeItemTableFromTxt()
 	{
 		TItemTable * item_table = &(*(it++));
 
-		sys_log(1, "ITEM: #%-5lu %-24s %-24s VAL: %ld %ld %ld %ld %ld %ld WEAR %lu ANTI %lu IMMUNE %lu REFINE %lu REFINE_SET %u MAGIC_PCT %u", 
+		sys_log(1, "ITEM: #%-5lu %-24s VAL: %ld %ld %ld %ld %ld %ld WEAR %lu ANTI %lu IMMUNE %lu REFINE %lu REFINE_SET %u MAGIC_PCT %u", 
 				item_table->dwVnum,
 				item_table->szName,
-				item_table->szLocaleName,
 				item_table->alValues[0],
 				item_table->alValues[1],
 				item_table->alValues[2],
@@ -1345,7 +1335,6 @@ bool CClientManager::InitializeMobTableFromDatabase()
 		col = 0;
 		str_to_number(mob_table->dwVnum, data[col++]);
 		strlcpy(mob_table->szName, data[col++], sizeof(mob_table->szName));
-		strlcpy(mob_table->szLocaleName, mob_table->szName, sizeof(mob_table->szLocaleName));
 		str_to_number(mob_table->bType, data[col++]);
 		str_to_number(mob_table->bRank, data[col++]);
 		str_to_number(mob_table->bBattleType, data[col++]);
@@ -1402,7 +1391,7 @@ bool CClientManager::InitializeMobTableFromDatabase()
 		str_to_number(mob_table->bDeathBlowPoint, data[col++]);
 		str_to_number(mob_table->bRevivePoint, data[col++]);
 
-		sys_log(1, "MOB #%-5d %-24s %-24s level: %-3u rank: %u empire: %d", mob_table->dwVnum, mob_table->szName, mob_table->szLocaleName, mob_table->bLevel, mob_table->bRank, mob_table->bEmpire);
+		sys_log(1, "MOB #%-5d %-24s level: %-3u rank: %u empire: %d", mob_table->dwVnum, mob_table->szName, mob_table->bLevel, mob_table->bRank, mob_table->bEmpire);
 		++mob_table;
 	}
 
@@ -1454,7 +1443,6 @@ bool CClientManager::InitializeItemTableFromDatabase()
 
 		str_to_number(item_table->dwVnum, data[col++]);
 		strlcpy(item_table->szName, data[col++], sizeof(item_table->szName));
-		strlcpy(item_table->szLocaleName, item_table->szName, sizeof(item_table->szLocaleName));
 		str_to_number(item_table->bType, data[col++]);
 		str_to_number(item_table->bSubType, data[col++]);
 		str_to_number(item_table->dwGold, data[col++]);
@@ -1496,8 +1484,8 @@ bool CClientManager::InitializeItemTableFromDatabase()
 		for (i = 0; i < ITEM_VALUES_MAX_NUM; ++i)
 			str_to_number(item_table->alValues[i], data[col++]);
 
-		sys_log(1, "ITEM: #%-5lu %-24s %-24s VAL: %ld %ld %ld %ld %ld %ld WEAR %lu ANTI %lu IMMUNE %lu REFINE %lu REFINE_SET %u MAGIC_PCT %u",
-				item_table->dwVnum,item_table->szName,item_table->szLocaleName,
+		sys_log(1, "ITEM: #%-5lu %-24s VAL: %ld %ld %ld %ld %ld %ld WEAR %lu ANTI %lu IMMUNE %lu REFINE %lu REFINE_SET %u MAGIC_PCT %u",
+				item_table->dwVnum,item_table->szName,
 				item_table->alValues[0],item_table->alValues[1],item_table->alValues[2],
 				item_table->alValues[3],item_table->alValues[4],item_table->alValues[5],
 				item_table->dwWearFlags,item_table->dwAntiFlags,item_table->dwImmuneFlag,

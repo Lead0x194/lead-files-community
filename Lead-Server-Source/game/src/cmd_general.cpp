@@ -107,7 +107,7 @@ ACMD(do_user_horse_feed)
 		ch->RemoveSpecifyItem(dwFood, 1);
 		ch->FeedHorse();
 		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;506;%s;%s]", 
-				ITEM_MANAGER::instance().GetTable(dwFood)->szLocaleName,
+				ITEM_MANAGER::instance().GetTable(dwFood)->szName,
 				"[LS;393]");
 	}
 	else
