@@ -5,13 +5,11 @@
 # what you are doing.
 
 # Delete db if already present
-rm -f db item_proto.txt mob_proto.txt item_names.txt mob_names.txt
+rm -f db item_proto.txt mob_proto.txt
 
 # Create the symbolic links
 ln -s ../share/conf/item_proto.txt item_proto.txt
 ln -s ../share/conf/mob_proto.txt mob_proto.txt
-ln -s ../share/conf/item_names.txt item_names.txt
-ln -s ../share/conf/mob_names.txt mob_names.txt
 ln -s ../share/bin/db db
 
 if [ ! -d log ]; then mkdir log; fi

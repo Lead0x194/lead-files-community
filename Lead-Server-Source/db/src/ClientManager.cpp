@@ -23,7 +23,6 @@ extern int g_iPlayerCacheFlushSeconds;
 extern int g_iItemCacheFlushSeconds;
 extern int g_test_server;
 extern int g_log;
-extern std::string g_stLocaleNameColumn;
 bool CreateItemTableFromRes(MYSQL_RES * res, std::vector<TPlayerItem> * pVec, DWORD dwPID);
 
 DWORD g_dwUsageMax = 0;
@@ -2915,15 +2914,7 @@ bool CClientManager::InitializeLocalization()
 		strlcpy(locale.szValue, row[col++], sizeof(locale.szValue));
 		strlcpy(locale.szKey, row[col++], sizeof(locale.szKey));
 
-		if (strcmp(locale.szKey, "DB_NAME_COLUMN") == 0)
-		{
-			sys_log(0, "locale[DB_NAME_COLUMN] = %s", locale.szValue);
-			g_stLocaleNameColumn = locale.szValue;	
-		}
-		else
-		{
-			sys_log(0, "locale[UNKNOWN_KEY(%s)] = %s", locale.szKey, locale.szValue);
-		}
+		sys_log(0, "locale[%s] = %s", locale.szKey, locale.szValue);
 		m_vec_Locale.push_back(locale);
 	}	
 

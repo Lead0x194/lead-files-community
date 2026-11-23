@@ -9,7 +9,6 @@ using namespace std;
 
 extern int g_loadProtoFromDatabase;
 extern int g_test_server;
-extern std::string g_stLocaleNameColumn;
 
 bool CClientManager::InitializeTables()
 {
@@ -180,18 +179,7 @@ class FCompareVnum
 bool CClientManager::InitializeMobTableFromTxt()
 {
 	map<int,const char*> localMap;
-	bool isNameFile = true;
-	cCsvTable nameData;
-	if(!nameData.Load("mob_names.txt",'\t'))
-	{
-		fprintf(stderr, "mob_names.txt read failed\n");
-		isNameFile = false;
-	} else {
-		nameData.Next();
-		while(nameData.Next()) {
-			localMap[atoi(nameData.AsStringByIndex(0))] = nameData.AsStringByIndex(1);
-		}
-	}
+	bool isNameFile = false;
 	
 	set<int> vnumSet;
 	bool isTestFile = true;
@@ -466,10 +454,10 @@ bool CClientManager::InitializeQuestItemTable()
 {
 	using namespace std;
 
-	static const char * s_szQuery = "SELECT vnum, name, %s FROM quest_item_proto ORDER BY vnum";
+	static const char * s_szQuery = "SELECT vnum, name, name FROM quest_item_proto ORDER BY vnum";
 
 	char query[1024];
-	snprintf(query, sizeof(query), s_szQuery, g_stLocaleNameColumn.c_str());
+	snprintf(query, sizeof(query), "%s", s_szQuery);
 
 	std::unique_ptr<SQLMsg> pkMsg(CDBManager::instance().DirectQuery(query));
 	SQLResult * pRes = pkMsg->Get();
@@ -518,19 +506,8 @@ bool CClientManager::InitializeQuestItemTable()
 
 bool CClientManager::InitializeItemTableFromTxt()
 {
-	bool isNameFile = true;
+	bool isNameFile = false;
 	map<int,const char*> localMap;
-	cCsvTable nameData;
-	if(!nameData.Load("item_names.txt",'\t'))
-	{
-		fprintf(stderr, "item_names.txt read failed\n");
-		isNameFile = false;
-	} else {
-		nameData.Next();
-		while(nameData.Next()) {
-			localMap[atoi(nameData.AsStringByIndex(0))] = nameData.AsStringByIndex(1);
-		}
-	}
 	
 	map<DWORD, TItemTable *> test_map_itemTableByVnum;
 	cCsvTable test_data;
@@ -1232,110 +1209,55 @@ bool CClientManager::MirrorMobTableIntoDatabase()
 	{
 		const TMobTable& t = *it;
 		char query[4096];
-		if (g_stLocaleNameColumn == "name")
-		{
-			snprintf(query, sizeof(query),
-				"replace into mob_proto%s "
-				"("
-				"vnum, name, type, rank, battle_type, level, size, ai_flag, setRaceFlag, setImmuneFlag, "
-				"on_click, empire, drop_item, resurrection_vnum, folder, "
-				"st, dx, ht, iq, damage_min, damage_max, max_hp, regen_cycle, regen_percent, exp, "
-				"gold_min, gold_max, def, attack_speed, move_speed, aggressive_hp_pct, aggressive_sight, attack_range, polymorph_item, "
+		snprintf(query, sizeof(query),
+			"replace into mob_proto%s "
+			"("
+			"vnum, name, type, rank, battle_type, level, size, ai_flag, setRaceFlag, setImmuneFlag, "
+			"on_click, empire, drop_item, resurrection_vnum, folder, "
+			"st, dx, ht, iq, damage_min, damage_max, max_hp, regen_cycle, regen_percent, exp, "
+			"gold_min, gold_max, def, attack_speed, move_speed, aggressive_hp_pct, aggressive_sight, attack_range, polymorph_item, "
 
-				"enchant_curse, enchant_slow, enchant_poison, enchant_stun, enchant_critical, enchant_penetrate, "
-				"resist_sword, resist_twohand, resist_dagger, resist_bell, resist_fan, resist_bow, "
-				"resist_fire, resist_elect, resist_magic, resist_wind, resist_poison, "
-				"dam_multiply, summon, drain_sp, "
+			"enchant_curse, enchant_slow, enchant_poison, enchant_stun, enchant_critical, enchant_penetrate, "
+			"resist_sword, resist_twohand, resist_dagger, resist_bell, resist_fan, resist_bow, "
+			"resist_fire, resist_elect, resist_magic, resist_wind, resist_poison, "
+			"dam_multiply, summon, drain_sp, "
 
-				"skill_vnum0, skill_level0, skill_vnum1, skill_level1, skill_vnum2, skill_level2, "
-				"skill_vnum3, skill_level3, skill_vnum4, skill_level4, "
-				"sp_berserk, sp_stoneskin, sp_godspeed, sp_deathblow, sp_revive"
-				") "
-				"values ("
+			"skill_vnum0, skill_level0, skill_vnum1, skill_level1, skill_vnum2, skill_level2, "
+			"skill_vnum3, skill_level3, skill_vnum4, skill_level4, "
+			"sp_berserk, sp_stoneskin, sp_godspeed, sp_deathblow, sp_revive"
+			") "
+			"values ("
 
-				"%d, \"%s\", %d, %d, %d, %d, %d, %u, %u, %u, "
-				"%d, %d, %d, %d, '%s', "
-				"%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, "
-				"%lld, %lld, %d, %d, %d, %d, %d, %d, %d, "
+			"%d, \"%s\", %d, %d, %d, %d, %d, %u, %u, %u, "
+			"%d, %d, %d, %d, '%s', "
+			"%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, "
+			"%lld, %lld, %d, %d, %d, %d, %d, %d, %d, "
 
-				"%d, %d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, "
-				"%f, %d, %d, "
+			"%d, %d, %d, %d, %d, %d, "
+			"%d, %d, %d, %d, %d, %d, "
+			"%d, %d, %d, %d, %d, "
+			"%f, %d, %d, "
 
-				"%d, %d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d"
-				")",
-				GetTablePostfix(), /*g_stLocaleNameColumn.c_str(),*/
+			"%d, %d, %d, %d, %d, %d, "
+			"%d, %d, %d, %d, "
+			"%d, %d, %d, %d, %d"
+			")",
+			GetTablePostfix(),
 
-				t.dwVnum, t.szName, /*t.szLocaleName, */t.bType, t.bRank, t.bBattleType, t.bLevel, t.bSize, t.dwAIFlag, t.dwRaceFlag, t.dwImmuneFlag,
-				t.bOnClickType, t.bEmpire, t.dwDropItemVnum, t.dwResurrectionVnum, t.szFolder,
-				t.bStr, t.bDex, t.bCon, t.bInt, t.dwDamageRange[0], t.dwDamageRange[1], t.dwMaxHP, t.bRegenCycle, t.bRegenPercent, t.dwExp,
+			t.dwVnum, t.szName, t.bType, t.bRank, t.bBattleType, t.bLevel, t.bSize, t.dwAIFlag, t.dwRaceFlag, t.dwImmuneFlag,
+			t.bOnClickType, t.bEmpire, t.dwDropItemVnum, t.dwResurrectionVnum, t.szFolder,
+			t.bStr, t.bDex, t.bCon, t.bInt, t.dwDamageRange[0], t.dwDamageRange[1], t.dwMaxHP, t.bRegenCycle, t.bRegenPercent, t.dwExp,
 
-				t.dwGoldMin, t.dwGoldMax, t.wDef, t.sAttackSpeed, t.sMovingSpeed, t.bAggresiveHPPct, t.wAggressiveSight, t.wAttackRange, t.dwPolymorphItemVnum,
-				t.cEnchants[0], t.cEnchants[1], t.cEnchants[2], t.cEnchants[3], t.cEnchants[4], t.cEnchants[5],
-				t.cResists[0], t.cResists[1], t.cResists[2], t.cResists[3], t.cResists[4], t.cResists[5],
-				t.cResists[6], t.cResists[7], t.cResists[8], t.cResists[9], t.cResists[10], 
-				t.fDamMultiply, t.dwSummonVnum, t.dwDrainSP, 
+			t.dwGoldMin, t.dwGoldMax, t.wDef, t.sAttackSpeed, t.sMovingSpeed, t.bAggresiveHPPct, t.wAggressiveSight, t.wAttackRange, t.dwPolymorphItemVnum,
+			t.cEnchants[0], t.cEnchants[1], t.cEnchants[2], t.cEnchants[3], t.cEnchants[4], t.cEnchants[5],
+			t.cResists[0], t.cResists[1], t.cResists[2], t.cResists[3], t.cResists[4], t.cResists[5],
+			t.cResists[6], t.cResists[7], t.cResists[8], t.cResists[9], t.cResists[10], 
+			t.fDamMultiply, t.dwSummonVnum, t.dwDrainSP, 
 
-				t.Skills[0].dwVnum, t.Skills[0].bLevel, t.Skills[1].dwVnum, t.Skills[1].bLevel, t.Skills[2].dwVnum, t.Skills[2].bLevel, 
-				t.Skills[3].dwVnum, t.Skills[3].bLevel, t.Skills[4].dwVnum, t.Skills[4].bLevel, 
-				t.bBerserkPoint, t.bStoneSkinPoint, t.bGodSpeedPoint, t.bDeathBlowPoint, t.bRevivePoint
-				);
-		}
-		else
-		{
-			snprintf(query, sizeof(query),
-				"replace into mob_proto%s "
-				"("
-				"vnum, name, %s, type, rank, battle_type, level, size, ai_flag, setRaceFlag, setImmuneFlag, "
-				"on_click, empire, drop_item, resurrection_vnum, folder, "
-				"st, dx, ht, iq, damage_min, damage_max, max_hp, regen_cycle, regen_percent, exp, "
-				"gold_min, gold_max, def, attack_speed, move_speed, aggressive_hp_pct, aggressive_sight, attack_range, polymorph_item, "
-
-				"enchant_curse, enchant_slow, enchant_poison, enchant_stun, enchant_critical, enchant_penetrate, "
-				"resist_sword, resist_twohand, resist_dagger, resist_bell, resist_fan, resist_bow, "
-				"resist_fire, resist_elect, resist_magic, resist_wind, resist_poison, "
-				"dam_multiply, summon, drain_sp, "
-
-				"skill_vnum0, skill_level0, skill_vnum1, skill_level1, skill_vnum2, skill_level2, "
-				"skill_vnum3, skill_level3, skill_vnum4, skill_level4, "
-				"sp_berserk, sp_stoneskin, sp_godspeed, sp_deathblow, sp_revive"
-				") "
-				"values ("
-
-				"%d, \"%s\", \"%s\", %d, %d, %d, %d, %d, %u, %u, %u, "
-				"%d, %d, %d, %d, '%s', "
-				"%d, %d, %d, %d, %d, %d, %d, %d, %d, %d, "
-				"%lld, %lld, %d, %d, %d, %d, %d, %d, %d, "
-
-				"%d, %d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, "
-				"%f, %d, %d, "
-
-				"%d, %d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d"
-				")",
-				GetTablePostfix(), g_stLocaleNameColumn.c_str(),
-
-				t.dwVnum, t.szName, t.szLocaleName, t.bType, t.bRank, t.bBattleType, t.bLevel, t.bSize, t.dwAIFlag, t.dwRaceFlag, t.dwImmuneFlag,
-				t.bOnClickType, t.bEmpire, t.dwDropItemVnum, t.dwResurrectionVnum, t.szFolder,
-				t.bStr, t.bDex, t.bCon, t.bInt, t.dwDamageRange[0], t.dwDamageRange[1], t.dwMaxHP, t.bRegenCycle, t.bRegenPercent, t.dwExp,
-
-				t.dwGoldMin, t.dwGoldMax, t.wDef, t.sAttackSpeed, t.sMovingSpeed, t.bAggresiveHPPct, t.wAggressiveSight, t.wAttackRange, t.dwPolymorphItemVnum,
-				t.cEnchants[0], t.cEnchants[1], t.cEnchants[2], t.cEnchants[3], t.cEnchants[4], t.cEnchants[5],
-				t.cResists[0], t.cResists[1], t.cResists[2], t.cResists[3], t.cResists[4], t.cResists[5],
-				t.cResists[6], t.cResists[7], t.cResists[8], t.cResists[9], t.cResists[10], 
-				t.fDamMultiply, t.dwSummonVnum, t.dwDrainSP, 
-
-				t.Skills[0].dwVnum, t.Skills[0].bLevel, t.Skills[1].dwVnum, t.Skills[1].bLevel, t.Skills[2].dwVnum, t.Skills[2].bLevel, 
-				t.Skills[3].dwVnum, t.Skills[3].bLevel, t.Skills[4].dwVnum, t.Skills[4].bLevel, 
-				t.bBerserkPoint, t.bStoneSkinPoint, t.bGodSpeedPoint, t.bDeathBlowPoint, t.bRevivePoint
-				);
-		}
+			t.Skills[0].dwVnum, t.Skills[0].bLevel, t.Skills[1].dwVnum, t.Skills[1].bLevel, t.Skills[2].dwVnum, t.Skills[2].bLevel, 
+			t.Skills[3].dwVnum, t.Skills[3].bLevel, t.Skills[4].dwVnum, t.Skills[4].bLevel, 
+			t.bBerserkPoint, t.bStoneSkinPoint, t.bGodSpeedPoint, t.bDeathBlowPoint, t.bRevivePoint
+			);
 
 		CDBManager::instance().AsyncQuery(query);
 	}
@@ -1346,62 +1268,31 @@ bool CClientManager::MirrorItemTableIntoDatabase()
 {
 	for (itertype(m_vec_itemTable) it = m_vec_itemTable.begin(); it != m_vec_itemTable.end(); it++)
 	{
-		if (g_stLocaleNameColumn != "name")
-		{
-			const TItemTable& t = *it;
-			char query[4096];
-			snprintf(query, sizeof(query),
-				"replace into item_proto%s ("
-				"vnum, type, subtype, name, %s, gold, shop_buy_price, weight, size, "
-				"flag, wearflag, antiflag, immuneflag, "
-				"refined_vnum, refine_set, magic_pct, socket_pct, addon_type, "
-				"limittype0, limitvalue0, limittype1, limitvalue1, "
-				"applytype0, applyvalue0, applytype1, applyvalue1, applytype2, applyvalue2, "
-				"value0, value1, value2, value3, value4, value5 ) "
-				"values ("
-				"%d, %d, %d, \"%s\", \"%s\", %lld, %lld, %d, %d, "
-				"%d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, %d )",
-				GetTablePostfix(), g_stLocaleNameColumn.c_str(),
-				t.dwVnum, t.bType, t.bSubType, t.szName, t.szLocaleName, t.dwGold, t.dwShopBuyPrice, t.bWeight, t.bSize,
-				t.dwFlags, t.dwWearFlags, t.dwAntiFlags, t.dwImmuneFlag, 
-				t.dwRefinedVnum, t.wRefineSet, t.bAlterToMagicItemPct, t.bGainSocketPct, t.sAddonType,
-				t.aLimits[0].bType, t.aLimits[0].lValue, t.aLimits[1].bType, t.aLimits[1].lValue,
-				t.aApplies[0].bType, t.aApplies[0].lValue, t.aApplies[1].bType, t.aApplies[1].lValue, t.aApplies[2].bType, t.aApplies[2].lValue,
-				t.alValues[0], t.alValues[1], t.alValues[2], t.alValues[3], t.alValues[4], t.alValues[5]);
-			CDBManager::instance().AsyncQuery(query);
-		}
-		else
-		{
-			const TItemTable& t = *it;
-			char query[4096];
-			snprintf(query, sizeof(query),
-				"replace into item_proto%s ("
-				"vnum, type, subtype, name, gold, shop_buy_price, weight, size, "
-				"flag, wearflag, antiflag, immuneflag, "
-				"refined_vnum, refine_set, magic_pct, socket_pct, addon_type, "
-				"limittype0, limitvalue0, limittype1, limitvalue1, "
-				"applytype0, applyvalue0, applytype1, applyvalue1, applytype2, applyvalue2, "
-				"value0, value1, value2, value3, value4, value5 ) "
-				"values ("
-				"%d, %d, %d, \"%s\", %lld, %lld, %d, %d, "
-				"%d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, %d, "
-				"%d, %d, %d, %d, %d, %d )",
-				GetTablePostfix(),
-				t.dwVnum, t.bType, t.bSubType, t.szName, t.dwGold, t.dwShopBuyPrice, t.bWeight, t.bSize,
-				t.dwFlags, t.dwWearFlags, t.dwAntiFlags, t.dwImmuneFlag, 
-				t.dwRefinedVnum, t.wRefineSet, t.bAlterToMagicItemPct, t.bGainSocketPct, t.sAddonType,
-				t.aLimits[0].bType, t.aLimits[0].lValue, t.aLimits[1].bType, t.aLimits[1].lValue,
-				t.aApplies[0].bType, t.aApplies[0].lValue, t.aApplies[1].bType, t.aApplies[1].lValue, t.aApplies[2].bType, t.aApplies[2].lValue,
-				t.alValues[0], t.alValues[1], t.alValues[2], t.alValues[3], t.alValues[4], t.alValues[5]);
-			CDBManager::instance().AsyncQuery(query);
-		}
+		const TItemTable& t = *it;
+		char query[4096];
+		snprintf(query, sizeof(query),
+			"replace into item_proto%s ("
+			"vnum, type, subtype, name, gold, shop_buy_price, weight, size, "
+			"flag, wearflag, antiflag, immuneflag, "
+			"refined_vnum, refine_set, magic_pct, socket_pct, addon_type, "
+			"limittype0, limitvalue0, limittype1, limitvalue1, "
+			"applytype0, applyvalue0, applytype1, applyvalue1, applytype2, applyvalue2, "
+			"value0, value1, value2, value3, value4, value5 ) "
+			"values ("
+			"%d, %d, %d, \"%s\", %lld, %lld, %d, %d, "
+			"%d, %d, %d, %d, "
+			"%d, %d, %d, %d, %d, "
+			"%d, %d, %d, %d, "
+			"%d, %d, %d, %d, %d, %d, "
+			"%d, %d, %d, %d, %d, %d )",
+			GetTablePostfix(),
+			t.dwVnum, t.bType, t.bSubType, t.szName, t.dwGold, t.dwShopBuyPrice, t.bWeight, t.bSize,
+			t.dwFlags, t.dwWearFlags, t.dwAntiFlags, t.dwImmuneFlag, 
+			t.dwRefinedVnum, t.wRefineSet, t.bAlterToMagicItemPct, t.bGainSocketPct, t.sAddonType,
+			t.aLimits[0].bType, t.aLimits[0].lValue, t.aLimits[1].bType, t.aLimits[1].lValue,
+			t.aApplies[0].bType, t.aApplies[0].lValue, t.aApplies[1].bType, t.aApplies[1].lValue, t.aApplies[2].bType, t.aApplies[2].lValue,
+			t.alValues[0], t.alValues[1], t.alValues[2], t.alValues[3], t.alValues[4], t.alValues[5]);
+		CDBManager::instance().AsyncQuery(query);
 	}
 	return true;
 }
@@ -1410,7 +1301,7 @@ bool CClientManager::InitializeMobTableFromDatabase()
 {
 	char query[4096];
 	snprintf(query, sizeof(query),
-		"SELECT vnum, name, %s, type, rank, battle_type, level, "
+		"SELECT vnum, name, type, rank, battle_type, level, "
 		"size+0, ai_flag+0, setRaceFlag+0, setImmuneFlag+0, "
 		"on_click, empire, drop_item, resurrection_vnum, folder, "
 		"st, dx, ht, iq, damage_min, damage_max, max_hp, regen_cycle, regen_percent, exp, "
@@ -1424,7 +1315,7 @@ bool CClientManager::InitializeMobTableFromDatabase()
 		"skill_vnum3, skill_level3, skill_vnum4, skill_level4 , sp_berserk, sp_stoneskin, "
 		"sp_godspeed, sp_deathblow, sp_revive "
 		"FROM mob_proto%s ORDER BY vnum",
-		g_stLocaleNameColumn.c_str(), GetTablePostfix());
+		GetTablePostfix());
 
 	std::unique_ptr<SQLMsg> pkMsg(CDBManager::instance().DirectQuery(query));
 	SQLResult * pRes = pkMsg->Get();
@@ -1454,7 +1345,7 @@ bool CClientManager::InitializeMobTableFromDatabase()
 		col = 0;
 		str_to_number(mob_table->dwVnum, data[col++]);
 		strlcpy(mob_table->szName, data[col++], sizeof(mob_table->szName));
-		strlcpy(mob_table->szLocaleName, data[col++], sizeof(mob_table->szLocaleName));
+		strlcpy(mob_table->szLocaleName, mob_table->szName, sizeof(mob_table->szLocaleName));
 		str_to_number(mob_table->bType, data[col++]);
 		str_to_number(mob_table->bRank, data[col++]);
 		str_to_number(mob_table->bBattleType, data[col++]);
@@ -1524,13 +1415,13 @@ bool CClientManager::InitializeItemTableFromDatabase()
 {
 	char query[4096];
 	snprintf(query, sizeof(query),
-		"SELECT vnum, name, %s, type, subtype, gold, shop_buy_price, weight, size, flag, wearflag, "
+		"SELECT vnum, name, type, subtype, gold, shop_buy_price, weight, size, flag, wearflag, "
 		"antiflag, immuneflag+0, refined_vnum, refine_set, magic_pct, socket_pct, addon_type, "
 		"limittype0, limitvalue0, limittype1, limitvalue1, "
 		"applytype0, applyvalue0, applytype1, applyvalue1, applytype2, applyvalue2, "
 		"value0, value1, value2, value3, value4, value5 "
 		"FROM item_proto%s ORDER BY vnum",
-		g_stLocaleNameColumn.c_str(), GetTablePostfix());
+		GetTablePostfix());
 
 	std::unique_ptr<SQLMsg> pkMsg(CDBManager::instance().DirectQuery(query));
 	SQLResult * pRes = pkMsg->Get();
@@ -1563,7 +1454,7 @@ bool CClientManager::InitializeItemTableFromDatabase()
 
 		str_to_number(item_table->dwVnum, data[col++]);
 		strlcpy(item_table->szName, data[col++], sizeof(item_table->szName));
-		strlcpy(item_table->szLocaleName, data[col++], sizeof(item_table->szLocaleName));
+		strlcpy(item_table->szLocaleName, item_table->szName, sizeof(item_table->szLocaleName));
 		str_to_number(item_table->bType, data[col++]);
 		str_to_number(item_table->bSubType, data[col++]);
 		str_to_number(item_table->dwGold, data[col++]);
