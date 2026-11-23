@@ -4,7 +4,6 @@ import localeInfo
 import uiScriptLocale
 
 FILE_NAME_LEN = 20 
-DEFAULT_THEMA = localeInfo.MUSIC_METIN2_DEFAULT_THEMA
 
 class Item(ui.ListBoxEx.Item):
 	def __init__(self, fileName):
@@ -189,7 +188,7 @@ class FileListDialog(ui.ScriptWindow):
 
 	def __RefreshFileList(self):
 		self.__ClearFileList()
-		self.__AppendFile(DEFAULT_THEMA)
+		self.__AppendFile(localeInfo.MUSIC_METIN2_DEFAULT_THEMA)
 		self.__AppendFileList("mp3")
 
 	def __ClearFileList(self):

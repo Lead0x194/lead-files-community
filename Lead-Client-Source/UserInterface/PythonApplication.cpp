@@ -744,6 +744,23 @@ bool LoadLocaleData(const char* localePath)
 }
 // END_OF_SUPPORT_NEW_KOREA_SERVER
 
+bool LoadLocaleTexts(const char* localePath)
+{
+	char szFileName[256];
+
+	snprintf(szFileName, sizeof(szFileName), "%s/item_names.txt", localePath);
+	CItemManager::Instance().LoadItemNames(szFileName);
+
+	snprintf(szFileName, sizeof(szFileName), "%s/itemdesc.txt", localePath);
+	CItemManager::Instance().LoadItemDesc(szFileName);
+
+	snprintf(szFileName, sizeof(szFileName), "%s/mob_names.txt", localePath);
+	CPythonNonPlayer::Instance().LoadNames(szFileName);
+
+	snprintf(szFileName, sizeof(szFileName), "%s/SkillDesc.txt", localePath);
+	return CPythonSkill::Instance().RegisterSkillDesc(szFileName);
+}
+
 unsigned __GetWindowMode(bool windowed)
 {
 	if (windowed)

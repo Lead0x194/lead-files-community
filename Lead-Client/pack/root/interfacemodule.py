@@ -55,6 +55,7 @@ class Interface(object):
 	def __init__(self):
 		systemSetting.SetInterfaceHandler(self)
 		self.windowOpenPosition = 0
+		self.requestedLanguage = None
 		self.dlgWhisperWithoutTarget = None
 		self.inputDialog = None
 		self.tipBoard = None
@@ -1346,6 +1347,8 @@ class Interface(object):
 
 		btn.index = index
 		btn.name = name
+		btn.iconType = iconType
+		btn.iconName = iconName
 
 		self.questButtonList.insert(0, btn)
 		self.__ArrangeQuestButton()
@@ -1611,7 +1614,46 @@ class Interface(object):
 		self.__ShowWindows(self.wndGuildBuilding.wnds)
 		self.wndGuildBuilding = None
 
+	def RequestLanguage(self, name):
+		self.requestedLanguage = name
+
+	def __ChangeLanguage(self):
+		name = self.requestedLanguage
+		self.requestedLanguage = None
+
+		if not localeInfo.SetLanguage(name):
+			return
+
+		questButtonList = [(btn.index, btn.name, btn.iconType, btn.iconName) for btn in self.questButtonList]
+		partyMemberList = [(board.GetCharacterPID(), board.GetCharacterName(), board.GetCharacterVID()) for board in self.wndParty.partyMemberInfoBoardList]
+
+		self.HideAllWindows()
+		self.Close()
+		self.__init__()
+		self.MakeInterface()
+		self.ShowDefaultWindows()
+
+		questButtonList.reverse()
+		for questButton in questButtonList:
+			self.BINARY_RecvQuest(*questButton)
+
+		for pid, memberName, vid in partyMemberList:
+			self.AddPartyMember(pid, memberName)
+			if vid:
+				self.LinkPartyMember(pid, vid)
+
+		self.RefreshStatus()
+		self.RefreshInventory()
+		self.RefreshCharacter()
+		self.RefreshSkill()
+		self.RefreshQuest()
+		self.RefreshMessenger()
+
 	def BUILD_OnUpdate(self):
+		if self.requestedLanguage:
+			self.__ChangeLanguage()
+			return
+
 		if not self.wndGuildBuilding:
 			return
 

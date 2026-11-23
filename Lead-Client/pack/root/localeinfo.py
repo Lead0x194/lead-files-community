@@ -31,7 +31,7 @@ GUILD_MARK_NOT_ENOUGH_LEVEL = "��巹�� 3�̻� ���� ����
 ERROR_MARK_UPLOAD_NEED_RECONNECT = "UploadMark: Reconnect to game"
 ERROR_MARK_CHECK_NEED_RECONNECT = "CheckMark: Reconnect to game"
 
-__IS_RTL		= "locale/ae" == app.GetLocalePath()
+__IS_RTL		= app.IsRTL()
 LOGIN_FAILURE_WRONG_SOCIALID = "ASDF"
 LOGIN_FAILURE_SHUTDOWN_TIME = "ASDF"
 
@@ -53,6 +53,47 @@ def ReportMissingKeys(moduleName):
 	module.__dict__.update(sys.modules[moduleName].__dict__)
 	module.__dict__["__source__"] = sys.modules[moduleName]
 	sys.modules[moduleName] = module
+
+LANGUAGE_MODULE_DICT = {
+	"localeInfo" : (),
+	"uiScriptLocale" : (),
+	"emotion" : (),
+	"introCreate" : (),
+	"introEmpire" : (),
+	"introSelect" : (),
+	"uiAffectShower" : (),
+	"uiCharacter" : (),
+	"uiChat" : (),
+	"uiDragonSoul" : (),
+	"uiGuild" : ("BUILDING_DATA_LIST",),
+	"uiParty" : (),
+	"uiTarget" : (),
+	"uiToolTip" : (),
+}
+
+def SetLanguage(name):
+	if not app.SetLanguage(name):
+		return False
+
+	moduleDict = {}
+	for moduleName in LANGUAGE_MODULE_DICT:
+		if moduleName in sys.modules:
+			moduleDict[moduleName] = sys.modules.pop(moduleName)
+
+	for moduleName in moduleDict:
+		__import__(moduleName)
+
+	for moduleName, module in moduleDict.items():
+		loaded = sys.modules[moduleName]
+		for keepName in LANGUAGE_MODULE_DICT[moduleName]:
+			value = module.__dict__[keepName]
+			loaded.__dict__[keepName] = value
+			loaded.__dict__.get("__source__", loaded).__dict__[keepName] = value
+		module.__dict__.update(loaded.__dict__)
+		sys.modules[moduleName] = module
+
+	app.SetDefaultFontName(sys.modules["localeInfo"].UI_DEF_FONT)
+	return True
 
 def LoadLocaleData():
 	app.LoadLocaleData(app.GetLocalePath())

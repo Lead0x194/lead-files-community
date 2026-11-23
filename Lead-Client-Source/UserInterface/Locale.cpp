@@ -2,6 +2,7 @@
 #include "Locale.h"
 #include "PythonApplication.h"
 #include "../eterBase/CRC32.h"
+#include "../EterPack/EterPackManager.h"
 
 const char* LSS_EUROPE		= "EUROPE";
 
@@ -13,6 +14,30 @@ std::string __SECURITY_KEY_STRING__ = LSS_SECURITY_KEY;
 
 char	MULTI_LOCALE_PATH[256]		= "locale/de";
 char	MULTI_LOCALE_NAME[256]		= "de";
+
+static const char* s_aszRTLLanguage[] = { "ae" };
+
+bool LocaleService_IsRTL()
+{
+	for (const char* c_szName : s_aszRTLLanguage)
+		if (!_stricmp(c_szName, MULTI_LOCALE_NAME))
+			return true;
+
+	return false;
+}
+
+bool LocaleService_SetLanguage(const char* c_szName)
+{
+	char szFileName[256];
+	sprintf_s(szFileName, sizeof(szFileName), "locale/%s/locale_game.txt", c_szName);
+
+	if (!CEterPackManager::Instance().isExist(szFileName))
+		return false;
+
+	strcpy_s(MULTI_LOCALE_NAME, sizeof(MULTI_LOCALE_NAME), c_szName);
+	sprintf_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), "locale/%s", MULTI_LOCALE_NAME);
+	return true;
+}
 
 void LocaleService_LoadConfig(const char* fileName)
 {

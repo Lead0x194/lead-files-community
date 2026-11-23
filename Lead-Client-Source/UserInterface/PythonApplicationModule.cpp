@@ -220,6 +220,7 @@ PyObject* appGetLocaleServiceName(PyObject* poSelf, PyObject* poArgs)
 
 // 
 bool LoadLocaleData(const char* localePath);
+bool LoadLocaleTexts(const char* localePath);
 
 #include "../eterBase/tea.h"
 
@@ -265,9 +266,27 @@ PyObject* appLoadLocaleData(PyObject* poSelf, PyObject* poArgs)
 	return Py_BuildValue("i", LoadLocaleData(localePath));
 }
 
+PyObject* appSetLanguage(PyObject* poSelf, PyObject* poArgs)
+{
+	char* szName;
+	if (!PyTuple_GetString(poArgs, 0, &szName))
+		return Py_BuildException();
+
+	if (!LocaleService_SetLanguage(szName))
+		return Py_BuildValue("i", 0);
+
+	SetDefaultRTL(LocaleService_IsRTL());
+	return Py_BuildValue("i", LoadLocaleTexts(LocaleService_GetLocalePath()));
+}
+
 PyObject* appGetLocaleName(PyObject* poSelf, PyObject* poArgs)
 {
 	return Py_BuildValue("s", LocaleService_GetLocaleName());
+}
+
+PyObject* appIsRTL(PyObject* poSelf, PyObject* poArgs)
+{
+	return Py_BuildValue("i", LocaleService_IsRTL());
 }
 
 PyObject* appGetLocalePath(PyObject* poSelf, PyObject* poArgs)
@@ -1241,11 +1260,13 @@ void initapp()
 		{ "GetLocaleServiceName",		appGetLocaleServiceName,		METH_VARARGS },
 		{ "GetLocaleName",				appGetLocaleName,				METH_VARARGS },
 		{ "GetLocalePath",				appGetLocalePath,				METH_VARARGS },
+		{ "IsRTL",						appIsRTL,						METH_VARARGS },
 		{ "ForceSetLocale",				appForceSetLocale,				METH_VARARGS },
 		// END_OF_LOCALE
 
 		{ "LoadLocaleAddr",				appLoadLocaleAddr,				METH_VARARGS },
 		{ "LoadLocaleData",				appLoadLocaleData,				METH_VARARGS },
+		{ "SetLanguage",				appSetLanguage,					METH_VARARGS },
 		
 		{ "GetDefaultCodePage",			appGetDefaultCodePage,			METH_VARARGS },
 		{ "SetControlFP",				appSetControlFP,				METH_VARARGS },
