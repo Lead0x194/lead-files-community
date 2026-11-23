@@ -4489,7 +4489,7 @@ void CHARACTER::PartyInviteDeny(DWORD dwPID)
 
 void CHARACTER::PartyJoin(LPCHARACTER pLeader)
 {
-	pLeader->ChatPacket(CHAT_TYPE_INFO, "[LS;839;%s]", GetName());
+	pLeader->ChatPacket(CHAT_TYPE_INFO, "[LS;839;%s]", GetLocaleName());
 	ChatPacket(CHAT_TYPE_INFO, "[LS;839;%s]", pLeader->GetName());
 
 	pLeader->GetParty()->Join(GetPlayerID());
@@ -5786,6 +5786,14 @@ void CHARACTER::SpecificEffectPacket(const char filename[MAX_EFFECT_FILE_NAME])
 	memcpy (p.effect_file, filename, MAX_EFFECT_FILE_NAME);
 
 	PacketAround(&p, sizeof(TPacketGCSpecificEffect));
+}
+
+const char* CHARACTER::GetLocaleName() const
+{
+	if (IsPC() || !m_pkMobData || m_stName != m_pkMobData->m_table.szLocaleName)
+		return GetName();
+
+	return LC_MOB(GetRaceNum());
 }
 
 void CHARACTER::SetLanguage(const char* c_szLanguage)

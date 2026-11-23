@@ -132,6 +132,7 @@ class CPythonNonPlayer : public CSingleton<CPythonNonPlayer>
 		BYTE				GetEventTypeByVID(DWORD dwVID);
 		DWORD				GetMonsterColor(DWORD dwVnum);
 		const char*			GetMonsterName(DWORD dwVnum);
+		const std::map<DWORD, std::string>&	GetNameMap() const { return m_NameMap; }
 
 		DWORD				GetMonsterMaxHP(DWORD dwVnum);
 		DWORD				GetMonsterRaceFlag(DWORD dwVnum);

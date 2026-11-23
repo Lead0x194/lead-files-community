@@ -594,8 +594,8 @@ int CalcArrowDamage(LPCHARACTER pkAttacker, LPCHARACTER pkVictim, LPITEM pkBow, 
 	if (test_server)
 	{
 		pkAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;5062;%s;%s;%d;%d;%d;%d]",
-				pkAttacker->GetName(), 
-				pkVictim->GetName(), 
+				pkAttacker->GetLocaleName(), 
+				pkVictim->GetLocaleName(), 
 				iPureDam, 
 				iDist, iGap, iPercent);
 	}

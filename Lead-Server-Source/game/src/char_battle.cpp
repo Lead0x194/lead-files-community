@@ -1714,8 +1714,8 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				{
 					if (test_server)
 					{
-						pAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;912;%s;%d]", GetName(), GetPoint(POINT_BLOCK));
-						ChatPacket(CHAT_TYPE_INFO, "[LS;912;%s;%d]", GetName(), GetPoint(POINT_BLOCK));
+						pAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;912;%s;%d]", GetLocaleName(), GetPoint(POINT_BLOCK));
+						ChatPacket(CHAT_TYPE_INFO, "[LS;912;%s;%d]", GetLocaleName(), GetPoint(POINT_BLOCK));
 					}
 
 					SendDamagePacket(pAttacker, 0, DAMAGE_BLOCK);
@@ -1729,8 +1729,8 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				{
 					if (test_server)
 					{
-						pAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;5018;%s;%d]", GetName(), GetPoint(POINT_DODGE));
-						ChatPacket(CHAT_TYPE_INFO, "[LS;5018;%s;%d]", GetName(), GetPoint(POINT_DODGE));
+						pAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;5018;%s;%d]", GetLocaleName(), GetPoint(POINT_DODGE));
+						ChatPacket(CHAT_TYPE_INFO, "[LS;5018;%s;%d]", GetLocaleName(), GetPoint(POINT_DODGE));
 					}
 
 					SendDamagePacket(pAttacker, 0, DAMAGE_DODGE);
@@ -2119,7 +2119,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				if(pAttacker)
 				{
 					pAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;5038;%s;%d;%d;%d;%s;%s]",
-							GetName(),
+							GetLocaleName(),
 							dam,
 							GetHP(),
 							(GetHP() * 100) / GetMaxHP(),
@@ -2129,7 +2129,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				}
 
 				ChatPacket(CHAT_TYPE_PARTY, "[LS;5040;%s;%d;%d;%d;%s;%s]",
-						pAttacker ? pAttacker->GetName() : 0,
+						pAttacker ? pAttacker->GetLocaleName() : 0,
 						dam,
 						GetHP(),
 						(GetHP() * 100) / GetMaxHP(),
@@ -2140,7 +2140,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 
 			if (m_bDetailLog)
 			{
-				ChatPacket(CHAT_TYPE_INFO, "[LS;5034;%s;%d;%d;%d]", pAttacker->GetName(), (DWORD) pAttacker->GetVID(), pAttacker->GetX(), pAttacker->GetY());
+				ChatPacket(CHAT_TYPE_INFO, "[LS;5034;%s;%d;%d;%d]", pAttacker->GetLocaleName(), (DWORD) pAttacker->GetVID(), pAttacker->GetX(), pAttacker->GetY());
 			}
 		}
 

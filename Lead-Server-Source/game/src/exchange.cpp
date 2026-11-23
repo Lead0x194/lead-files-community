@@ -543,7 +543,7 @@ bool CExchange::Accept(bool bAccept)
 					victim->Save();
 
 				// INTERNATIONAL_VERSION
-				GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;900;%s]", victim->GetName());
+				GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;900;%s]", victim->GetLocaleName());
 				victim->ChatPacket(CHAT_TYPE_INFO, "[LS;900;%s]", GetOwner()->GetName());
 				// END_OF_INTERNATIONAL_VERSION
 			}

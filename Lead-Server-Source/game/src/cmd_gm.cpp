@@ -633,7 +633,7 @@ ACMD(do_mob_map)
 	LPCHARACTER tch = CHARACTER_MANAGER::instance().SpawnMobRandomPosition(vnum, ch->GetMapIndex());
 
 	if (tch)
-		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5026;%s;%d;%d]", tch->GetName(), tch->GetX(), tch->GetY());
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5026;%s;%d;%d]", tch->GetLocaleName(), tch->GetX(), tch->GetY());
 	else
 		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5183]");
 }
@@ -1483,13 +1483,13 @@ ACMD(do_set)
 		{
 			GoldType amount = 0;
 			str_to_number(amount, arg3);
-			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5029;%s;%s;%lld]", tch->GetName(), set_fields[i].cmd, static_cast<long long>(amount));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5029;%s;%s;%lld]", tch->GetLocaleName(), set_fields[i].cmd, static_cast<long long>(amount));
 		}
 		else
 		{
 			int amount = 0;
 			str_to_number(amount, arg3);
-			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5028;%s;%s;%d]", tch->GetName(), set_fields[i].cmd, amount);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5028;%s;%s;%d]", tch->GetLocaleName(), set_fields[i].cmd, amount);
 		}
 	}
 }
@@ -3189,7 +3189,7 @@ ACMD(do_horse_level)
 	str_to_number(level, arg2);
 	level = MINMAX(0, level, HORSE_MAX_LEVEL);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5305;%s;%d]", victim->GetName(), level);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5305;%s;%d]", victim->GetLocaleName(), level);
 
 	victim->SetHorseLevel(level);
 	victim->ComputePoints();
@@ -3289,7 +3289,7 @@ ACMD(do_affect_remove)
 			if (!(tch = CHARACTER_MANAGER::instance().FindPC(arg1)))
 				tch = ch;
 
-		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5037;%s]", tch->GetName());
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5037;%s]", tch->GetLocaleName());
 		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5234]");
 
 		const std::list<CAffect *> & cont = tch->GetAffectContainer();
@@ -3610,7 +3610,7 @@ ACMD(do_reset_subskill)
 		return;
 
 	tch->ClearSubSkill();
-	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5186;%s]", tch->GetName());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5186;%s]", tch->GetLocaleName());
 }
 
 

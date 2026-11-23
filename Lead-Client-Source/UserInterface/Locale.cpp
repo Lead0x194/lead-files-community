@@ -174,6 +174,29 @@ static bool ExpandTag(const std::string& c_rstTag, std::string& rstResult)
 		if (c_rkMap.end() == itor)
 			return false;
 
+		if (c_bString)
+		{
+			size_t uSpecCount = 0;
+			const std::string& c_rstFormat = itor->second;
+			for (size_t i = 0; i + 1 < c_rstFormat.length(); ++i)
+			{
+				if ('%' != c_rstFormat[i])
+					continue;
+
+				if ('%' != c_rstFormat[i + 1])
+					++uSpecCount;
+
+				++i;
+			}
+
+			while (uSpecCount > 0 && kTokenVector.size() > uSpecCount + 1)
+			{
+				const std::string c_stLast = kTokenVector.back();
+				kTokenVector.pop_back();
+				kTokenVector.back() += ';' + c_stLast;
+			}
+		}
+
 		if (c_bQuest && kTokenVector.size() < 2)
 			rstResult = itor->second;
 		else
@@ -282,6 +305,73 @@ std::string LocaleService_GetQuestButtonName(int iIndex)
 	std::string stName(itor->second);
 	LocaleService_ReplaceTags(stName);
 	return stName;
+}
+
+static std::string NormalizeName(const std::string& c_rstName)
+{
+	std::string stResult(c_rstName);
+	for (size_t i = 0; i < stResult.length(); ++i)
+	{
+		const unsigned char c = static_cast<unsigned char>(stResult[i]);
+		if ('_' == c)
+			stResult[i] = ' ';
+		else if (c < 0x80)
+			stResult[i] = static_cast<char>(tolower(c));
+	}
+
+	return stResult;
+}
+
+void LocaleService_ResolveNameCommand(std::string& rstCommand)
+{
+	const size_t c_uNameStart = rstCommand.find(' ');
+	if (std::string::npos == c_uNameStart || c_uNameStart + 1 >= rstCommand.length())
+		return;
+
+	const std::string c_stCommand = rstCommand.substr(0, c_uNameStart);
+	const bool c_bItem = "/i" == c_stCommand || "/item" == c_stCommand;
+	const bool c_bMonster = "/m" == c_stCommand || "/mob" == c_stCommand;
+	if (!c_bItem && !c_bMonster)
+		return;
+
+	size_t uNameEnd = rstCommand.find(' ', c_uNameStart + 1);
+	if (std::string::npos == uNameEnd)
+		uNameEnd = rstCommand.length();
+
+	const std::string c_stName = NormalizeName(rstCommand.substr(c_uNameStart + 1, uNameEnd - c_uNameStart - 1));
+	if (c_stName.empty() || isdigit(static_cast<unsigned char>(c_stName[0])))
+		return;
+
+	DWORD dwVnum = 0;
+	if (c_bItem)
+	{
+		const CItemManager::TItemMap& c_rkItemMap = CItemManager::Instance().GetItemMap();
+		for (CItemManager::TItemMap::const_iterator itor = c_rkItemMap.begin(); itor != c_rkItemMap.end(); ++itor)
+		{
+			if (NormalizeName(itor->second->GetName()) == c_stName)
+			{
+				dwVnum = itor->first;
+				break;
+			}
+		}
+	}
+	else
+	{
+		const std::map<DWORD, std::string>& c_rkNameMap = CPythonNonPlayer::Instance().GetNameMap();
+		for (std::map<DWORD, std::string>::const_iterator itor = c_rkNameMap.begin(); itor != c_rkNameMap.end(); ++itor)
+		{
+			if (NormalizeName(itor->second) == c_stName)
+			{
+				dwVnum = itor->first;
+				break;
+			}
+		}
+	}
+
+	if (0 == dwVnum)
+		return;
+
+	rstCommand.replace(c_uNameStart + 1, uNameEnd - c_uNameStart - 1, std::to_string(dwVnum));
 }
 
 unsigned LocaleService_GetLastExp(int level)

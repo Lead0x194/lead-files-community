@@ -12,6 +12,7 @@ void		LocaleService_LoadStrings(const char* c_szLocalePath);
 void		LocaleService_ReplaceTags(std::string& rstText);
 void		LocaleService_RememberQuestButton(const std::string& c_rstScript);
 std::string	LocaleService_GetQuestButtonName(int iIndex);
+void		LocaleService_ResolveNameCommand(std::string& rstCommand);
 const char*	LocaleService_GetSecurityKey();
 int			LocaleService_StringCompareCI( LPCSTR szStringLeft, LPCSTR szStringRight, size_t sizeLength );
 

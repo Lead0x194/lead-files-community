@@ -183,8 +183,8 @@ void CPVPManager::Insert(LPCHARACTER pkChr, LPCHARACTER pkVictim)
 		// If you can get revenge, fight right away !
 		if (pkPVP->Agree(pkChr->GetPlayerID()))
 		{
-			pkVictim->ChatPacket(CHAT_TYPE_INFO, "[LS;492;%s]", pkChr->GetName());
-			pkChr->ChatPacket(CHAT_TYPE_INFO, "[LS;492;%s]", pkVictim->GetName());
+			pkVictim->ChatPacket(CHAT_TYPE_INFO, "[LS;492;%s]", pkChr->GetLocaleName());
+			pkChr->ChatPacket(CHAT_TYPE_INFO, "[LS;492;%s]", pkVictim->GetLocaleName());
 		}
 		return;
 	}
@@ -202,10 +202,10 @@ void CPVPManager::Insert(LPCHARACTER pkChr, LPCHARACTER pkVictim)
 	pkPVP->Packet();
 
 	char msg[CHAT_MAX_LEN + 1];
-	snprintf(msg, sizeof(msg), "[LS;503;%s]", pkChr->GetName());
+	snprintf(msg, sizeof(msg), "[LS;503;%s]", pkChr->GetLocaleName());
 
 	pkVictim->ChatPacket(CHAT_TYPE_INFO, msg);
-	pkChr->ChatPacket(CHAT_TYPE_INFO, "[LS;514;%s]", pkVictim->GetName());
+	pkChr->ChatPacket(CHAT_TYPE_INFO, "[LS;514;%s]", pkVictim->GetLocaleName());
 
 	// NOTIFY_PVP_MESSAGE
 	LPDESC pkVictimDesc = pkVictim->GetDesc();

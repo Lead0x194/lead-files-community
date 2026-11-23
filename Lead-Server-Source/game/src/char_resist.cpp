@@ -256,21 +256,21 @@ bool CHARACTER::IsImmune(DWORD dwImmuneFlag)
 		if (percent <= immune_pct)	// 90% Immune
 		{
 			if (test_server && IsPC())
-				ChatPacket(CHAT_TYPE_PARTY, "[LS;5051;%s]", GetName()); 
+				ChatPacket(CHAT_TYPE_PARTY, "[LS;5051;%s]", GetLocaleName()); 
 
 			return true;
 		}
 		else
 		{
 			if (test_server && IsPC())
-				ChatPacket(CHAT_TYPE_PARTY, "[LS;5049;%s]", GetName());
+				ChatPacket(CHAT_TYPE_PARTY, "[LS;5049;%s]", GetLocaleName());
 
 			return false;
 		}
 	}
 
 	if (test_server && IsPC())
-		ChatPacket(CHAT_TYPE_PARTY, "[LS;5050;%s]", GetName());
+		ChatPacket(CHAT_TYPE_PARTY, "[LS;5050;%s]", GetLocaleName());
 
 	return false;
 }

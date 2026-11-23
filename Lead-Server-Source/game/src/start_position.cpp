@@ -5,9 +5,9 @@
 char g_nation_name[4][32] =
 {
 	"",
-	"Shinsoo",
-	"Chunjo",
-	"Jinno",
+	"[LS;793]",
+	"[LS;794]",
+	"[LS;795]",
 };
 
 //	"[LS;793]"

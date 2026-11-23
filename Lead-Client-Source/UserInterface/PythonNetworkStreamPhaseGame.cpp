@@ -1031,6 +1031,13 @@ bool CPythonNetworkStream::SendChatPacket(const char * c_szChat, BYTE byType)
 		}
 	}
 
+	std::string stResolved(c_szChat);
+	if ('/' == stResolved[0])
+	{
+		LocaleService_ResolveNameCommand(stResolved);
+		c_szChat = stResolved.c_str();
+	}
+
 	if (ClientCommand(c_szChat))
 		return true;
 
