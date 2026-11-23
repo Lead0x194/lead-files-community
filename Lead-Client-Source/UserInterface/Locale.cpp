@@ -3,6 +3,9 @@
 #include "PythonApplication.h"
 #include "../eterBase/CRC32.h"
 #include "../EterPack/EterPackManager.h"
+#include "../GameLib/ItemManager.h"
+#include "PythonNonPlayer.h"
+#include "PythonSkill.h"
 
 const char* LSS_EUROPE		= "EUROPE";
 
@@ -53,6 +56,187 @@ void LocaleService_LoadConfig(const char* fileName)
 	}
 
 	fclose(fp);
+}
+
+static std::map<DWORD, std::string> s_kStringMap;
+static std::map<DWORD, std::string> s_kQuestMap;
+
+static void LoadStringFile(const char* c_szFileName, std::map<DWORD, std::string>& rkMap)
+{
+	rkMap.clear();
+
+	const VOID* pvData;
+	CMappedFile kFile;
+	if (!CEterPackManager::Instance().Get(kFile, c_szFileName, &pvData))
+		return;
+
+	CMemoryTextFileLoader kTextFileLoader;
+	kTextFileLoader.Bind(kFile.Size(), pvData);
+
+	CTokenVector kTokenVector;
+	for (DWORD i = 0; i < kTextFileLoader.GetLineCount(); ++i)
+	{
+		if (!kTextFileLoader.SplitLineByTab(i, &kTokenVector) || kTokenVector.size() < 2)
+			continue;
+
+		rkMap[static_cast<DWORD>(atoi(kTokenVector[0].c_str()))] = kTokenVector[1];
+	}
+}
+
+void LocaleService_LoadStrings(const char* c_szLocalePath)
+{
+	char szFileName[256];
+
+	sprintf_s(szFileName, sizeof(szFileName), "%s/locale_string.txt", c_szLocalePath);
+	LoadStringFile(szFileName, s_kStringMap);
+
+	sprintf_s(szFileName, sizeof(szFileName), "%s/locale_quest.txt", c_szLocalePath);
+	LoadStringFile(szFileName, s_kQuestMap);
+}
+
+static std::string FormatString(const std::string& c_rstFormat, const std::vector<std::string>& c_rkTokenVector)
+{
+	std::string stResult;
+	size_t uToken = 1;
+
+	for (size_t i = 0; i < c_rstFormat.length(); ++i)
+	{
+		if ('%' != c_rstFormat[i])
+		{
+			stResult += c_rstFormat[i];
+			continue;
+		}
+
+		if (i + 1 < c_rstFormat.length() && '%' == c_rstFormat[i + 1])
+		{
+			stResult += '%';
+			++i;
+			continue;
+		}
+
+		size_t j = i + 1;
+		while (j < c_rstFormat.length() && strchr("-+#0123456789.hlIz", c_rstFormat[j]))
+			++j;
+
+		if (j < c_rstFormat.length() && strchr("diuxXsfcgp", c_rstFormat[j]))
+		{
+			if (uToken < c_rkTokenVector.size())
+				stResult += c_rkTokenVector[uToken++];
+
+			i = j;
+		}
+		else
+		{
+			stResult += '%';
+		}
+	}
+
+	return stResult;
+}
+
+static bool ExpandTag(const std::string& c_rstTag, std::string& rstResult)
+{
+	std::vector<std::string> kTokenVector(1);
+	int iDepth = 0;
+
+	for (char c : c_rstTag)
+	{
+		if ('[' == c)
+			++iDepth;
+		else if (']' == c)
+			--iDepth;
+
+		if (';' == c && 0 == iDepth)
+			kTokenVector.push_back("");
+		else
+			kTokenVector.back() += c;
+	}
+
+	if (kTokenVector.size() < 2)
+		return false;
+
+	const std::string c_rstType = kTokenVector[0];
+	const bool c_bString = "LS" == c_rstType;
+	const bool c_bQuest = "LC" == c_rstType;
+	if (!c_bString && !c_bQuest && "IN" != c_rstType && "MN" != c_rstType && "SN" != c_rstType)
+		return false;
+
+	for (size_t i = 1; i < kTokenVector.size(); ++i)
+		LocaleService_ReplaceTags(kTokenVector[i]);
+
+	const DWORD c_dwID = static_cast<DWORD>(atoi(kTokenVector[1].c_str()));
+	kTokenVector.erase(kTokenVector.begin());
+
+	if (c_bString || c_bQuest)
+	{
+		const std::map<DWORD, std::string>& c_rkMap = c_bString ? s_kStringMap : s_kQuestMap;
+		std::map<DWORD, std::string>::const_iterator itor = c_rkMap.find(c_dwID);
+		if (c_rkMap.end() == itor)
+			return false;
+
+		rstResult = FormatString(itor->second, kTokenVector);
+		return true;
+	}
+
+	if ("IN" == c_rstType)
+	{
+		CItemData* pItemData;
+		if (!CItemManager::Instance().GetItemDataPointer(c_dwID, &pItemData))
+			return false;
+
+		rstResult = pItemData->GetName();
+		return true;
+	}
+
+	if ("MN" == c_rstType)
+	{
+		rstResult = CPythonNonPlayer::Instance().GetMonsterName(c_dwID);
+		return !rstResult.empty();
+	}
+
+	CPythonSkill::TSkillData* pSkillData;
+	if (!CPythonSkill::Instance().GetSkillData(c_dwID, &pSkillData))
+		return false;
+
+	rstResult = pSkillData->strName;
+	return true;
+}
+
+void LocaleService_ReplaceTags(std::string& rstText)
+{
+	if (std::string::npos == rstText.find('['))
+		return;
+
+	std::string stResult;
+	size_t i = 0;
+
+	while (i < rstText.length())
+	{
+		if ('[' == rstText[i])
+		{
+			int iDepth = 0;
+			size_t uEnd = i;
+			for (; uEnd < rstText.length(); ++uEnd)
+			{
+				if ('[' == rstText[uEnd])
+					++iDepth;
+				else if (']' == rstText[uEnd] && 0 == --iDepth)
+					break;
+			}
+
+			std::string stExpanded;
+			if (uEnd < rstText.length() && ExpandTag(rstText.substr(i + 1, uEnd - i - 1), stExpanded))
+			{
+				stResult += stExpanded;
+				i = uEnd + 1;
+				continue;
+			}
+		}
+
+		stResult += rstText[i++];
+	}
+
+	rstText.swap(stResult);
 }
 
 unsigned LocaleService_GetLastExp(int level)

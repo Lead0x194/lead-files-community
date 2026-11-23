@@ -734,6 +734,8 @@ bool LoadLocaleData(const char* localePath)
 		return false;
 	}
 
+	LocaleService_LoadStrings(localePath);
+
 	if (!rkNetStream.LoadInsultList(szInsultList))
 	{
 		Tracenf("CPythonApplication - CPythonNetworkStream::LoadInsultList(%s)", szInsultList);				
@@ -774,6 +776,7 @@ bool LoadLocaleTexts(const char* localePath)
 			pkInst->ChangeName(c_szName);
 
 	CPythonItem::Instance().RefreshNames();
+	LocaleService_LoadStrings(localePath);
 
 	snprintf(szFileName, sizeof(szFileName), "%s/SkillDesc.txt", localePath);
 	return CPythonSkill::Instance().RegisterSkillDesc(szFileName);

@@ -1155,6 +1155,13 @@ bool CPythonNetworkStream::RecvChatPacket()
 		return true;
 	}
 
+	if (CHAT_TYPE_INFO == kChat.type || CHAT_TYPE_NOTICE == kChat.type || CHAT_TYPE_BIG_NOTICE == kChat.type)
+	{
+		std::string stText(buf);
+		LocaleService_ReplaceTags(stText);
+		strncpy_s(buf, sizeof(buf), stText.c_str(), _TRUNCATE);
+	}
+
 	if (kChat.id != 0)
 	{
 		CPythonCharacterManager& rkChrMgr=CPythonCharacterManager::Instance();
