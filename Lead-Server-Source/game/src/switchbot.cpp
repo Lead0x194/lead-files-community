@@ -301,7 +301,7 @@ void CSwitchbot::SwitchItems()
 			if (desc)
 			{
 				char buf[255];
-				int len = snprintf(buf, sizeof(buf), "[LS;5072;%s;%d]", pkItem->GetName(), bSlot + 1);
+				int len = snprintf(buf, sizeof(buf), "[LS;5072;%s;%d]", LC_ITEM(pkItem->GetVnum()), bSlot + 1);
 
 				TPacketGCWhisper pack;
 				pack.bHeader = HEADER_GC_WHISPER;

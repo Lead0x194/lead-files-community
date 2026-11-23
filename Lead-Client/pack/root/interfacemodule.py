@@ -1632,6 +1632,7 @@ class Interface(object):
 		self.HideAllWindows()
 		self.Close()
 		self.__init__()
+		miniMap.LoadAtlas()
 		self.MakeInterface()
 		self.ShowDefaultWindows()
 
@@ -1650,6 +1651,7 @@ class Interface(object):
 		self.RefreshSkill()
 		self.RefreshQuest()
 		self.RefreshMessenger()
+		self.CheckGameButton()
 
 		for windowName, position in openDict.items():
 			window = getattr(self, windowName, None)

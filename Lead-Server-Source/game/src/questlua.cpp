@@ -94,7 +94,7 @@ namespace quest
 
 	void FPartyChat::operator() (LPCHARACTER ch)
 	{
-		ch->ChatPacket(iChatType, "[LS;370;%s]", str);
+		ch->ChatPacket(iChatType, "%s", str);
 	}
 
 	void FPartyClearReady::operator() (LPCHARACTER ch)
@@ -214,7 +214,7 @@ namespace quest
 	{
 		ostringstream s;
 		combine_lua_string(L, s);
-		CQuestManager::Instance().GetCurrentPartyMember()->ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", s.str().c_str());
+		CQuestManager::Instance().GetCurrentPartyMember()->ChatPacket(CHAT_TYPE_TALKING, "%s", s.str().c_str());
 		return 0;
 	}
 

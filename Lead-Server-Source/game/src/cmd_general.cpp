@@ -112,7 +112,7 @@ ACMD(do_user_horse_feed)
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;507;%s]", ITEM_MANAGER::instance().GetTable(dwFood)->szLocaleName);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;507;%s]", LC_ITEM(dwFood));
 	}
 }
 
@@ -1584,7 +1584,7 @@ ACMD(do_costume)
 					continue;
 
 				snprintf(buf, bufferSize, cszPointString, attr.sValue);
-				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", buf);
+				ch->ChatPacket(CHAT_TYPE_INFO, "%s", buf);
 			}
 		}
 
@@ -1649,7 +1649,7 @@ ACMD(do_inventory)
 		item = ch->GetInventoryItem(index);
 
 		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5307;%d;%s]",
-						index, item ? item->GetName() : "<NONE>");
+						index, item ? LC_ITEM(item->GetVnum()) : "<NONE>");
 		++index;
 	}
 }

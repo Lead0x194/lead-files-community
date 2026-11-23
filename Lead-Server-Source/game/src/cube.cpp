@@ -618,7 +618,7 @@ void Cube_show_list (LPCHARACTER ch)
 		if (NULL==item)	continue;
 
 		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5297;%d;%d;%s]",
-				i, item->GetCell(), item->GetName());
+				i, item->GetCell(), LC_ITEM(item->GetVnum()));
 	}
 }
 
@@ -660,7 +660,7 @@ void Cube_add_item (LPCHARACTER ch, int cube_index, int inven_index)
 
 	if (test_server)
 		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5298;%d;%d;%s]",
-									cube_index, inven_index, item->GetName());
+									cube_index, inven_index, LC_ITEM(item->GetVnum()));
 
 	// Provide information to the client about what can be made with the items currently in the box
 	// I wanted to do it, but I just told them how much gold I needed.
@@ -688,7 +688,7 @@ void Cube_delete_item (LPCHARACTER ch, int cube_index)
 
 	if (test_server)
 		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5296;%d;%d;%s]",
-				cube_index, item->GetCell(), item->GetName());
+				cube_index, item->GetCell(), LC_ITEM(item->GetVnum()));
 
 	// Provide information to the client about what can be made with the items currently in the box
 	// I wanted to do it, but I just told them how much gold I needed.

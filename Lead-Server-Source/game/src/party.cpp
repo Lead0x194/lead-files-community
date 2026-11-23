@@ -365,7 +365,7 @@ void CParty::ChatPacketToAllMember(BYTE type, const char* format, ...)
 		{
 			if (rMember.pCharacter->GetDesc())
 			{
-				rMember.pCharacter->ChatPacket(type, "[LS;370;%s]", chatbuf);
+				rMember.pCharacter->ChatPacket(type, "%s", chatbuf);
 			}
 		}
 	}
