@@ -321,7 +321,7 @@ class MiniMap(ui.ScriptWindow):
 		self.isLoaded = 1
 
 		try:
-			pyScrLoader = ui.PythonScriptLoader()
+			pyScrLoader = ui.PythonScriptLoader(False)
 			pyScrLoader.LoadScriptFile(self, "UIScript/MiniMap.py")
 		except:
 			import exception

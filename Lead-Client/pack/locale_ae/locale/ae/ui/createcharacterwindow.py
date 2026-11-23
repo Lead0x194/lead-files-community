@@ -541,7 +541,7 @@ window = {
 			"name" : "left_button",
 			"type" : "button",
 
-			"x" : SCREEN_WIDTH * (450 - 22*3) / 800,
+			"x" : SCREEN_WIDTH - SCREEN_WIDTH * (450 - 22*3) / 800 - 160,
 			"y" : SCREEN_HEIGHT * (505) / 600,
 
 			"default_image" : "d:/ymir work/ui/intro/select/dragon_left_button_01.sub",
@@ -552,7 +552,7 @@ window = {
 			"name" : "right_button",
 			"type" : "button",
 
-			"x" : SCREEN_WIDTH * (580 - 22) / 800,
+			"x" : SCREEN_WIDTH - SCREEN_WIDTH * (580 - 22) / 800 - 160,
 			"y" : SCREEN_HEIGHT * (505) / 600,
 
 			"default_image" : "d:/ymir work/ui/intro/select/dragon_right_button_01.sub",

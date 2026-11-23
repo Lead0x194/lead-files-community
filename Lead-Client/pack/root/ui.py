@@ -3228,7 +3228,7 @@ class PythonScriptLoader(object):
 
 	def LoadChildren(self, parent, dicChildren):
 
-		if self.mirror:
+		if self.mirror and not isinstance(parent, ImageBox):
 			parent.AddFlag( "rtl" )
 
 		if True == dicChildren.has_key("style"):
@@ -3650,10 +3650,7 @@ class PythonScriptLoader(object):
 		if True == value.has_key("y_blank"):
 			yBlank = int(value["y_blank"])
 
-		if self.mirror:
-			pass
-		else:
-			window.SetPosition(int(value["x"]), int(value["y"]))
+		window.SetPosition(int(value["x"]), int(value["y"]))
 
 		window.ArrangeSlot(	int(value["start_index"]),
 							int(value["x_count"]),
@@ -3680,10 +3677,7 @@ class PythonScriptLoader(object):
 		if True == value.has_key("style"):
 			if "select" == value["style"]:
 				wndMgr.SetSlotStyle(window.hWnd, wndMgr.SLOT_STYLE_SELECT)
-		if self.mirror:
-			self.LoadDefaultData(window, value, parentWindow)
-		else:
-			window.Show()
+		window.Show()
 
 		return True
 
