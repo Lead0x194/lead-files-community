@@ -1,4 +1,9 @@
 import uiScriptLocale
+import localeInfo
+
+QUEST_SLOT_X = 18
+if localeInfo.IsRTL():
+	QUEST_SLOT_X = 250 - 18 - 32
 
 QUEST_ICON_BACKGROUND = 'd:/ymir work/ui/game/quest/slot_base.sub'
 
@@ -739,7 +744,7 @@ window = {
 						{
 							"name" : "Quest_Slot",
 							"type" : "grid_table",
-							"x" : 18,
+							"x" : QUEST_SLOT_X,
 							"y" : 20,
 							"start_index" : 0,
 							"x_count" : 1,
