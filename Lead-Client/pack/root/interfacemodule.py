@@ -1151,7 +1151,6 @@ class Interface(object):
 	def SucceedCubeWork(self, itemVnum, count):
 		self.wndCube.Clear()
 		
-		print "ť�� ���� ����! [%d:%d]" % (itemVnum, count)
 
 		if 0:
 			self.wndCubeResult.SetPosition(*self.wndCube.GetGlobalPosition())

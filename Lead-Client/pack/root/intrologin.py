@@ -481,20 +481,7 @@ class LoginWindow(ui.ScriptWindow):
 			loginInfo={}
 			execfile(loginInfoFileName, loginInfo)
 		except IOError:
-			print(\
-				"�ڵ� �α����� �Ͻ÷���" + loginInfoFileName + "������ �ۼ����ּ���\n"\
-				"\n"\
-				"����:\n"\
-				"================================================================\n"\
-				"addr=�ּ�\n"\
-				"port=��Ʈ\n"\
-				"id=���̵�\n"\
-				"pwd=��й�ȣ\n"\
-				"slot=ĳ���� ���� �ε��� (���ų� -1�̸� �ڵ� ���� ����)\n"\
-				"autoLogin=�ڵ� ���� ����\n"
-				"autoSelect=�ڵ� ���� ����\n"
-				"locale=(ymir) LC_Ymir �ϰ�� ymir�� �۵�. �������� ������ korea�� �۵�\n"
-			);
+			pass
 
 		id=loginInfo.get("id", "")
 		pwd=loginInfo.get("pwd", "")
@@ -509,7 +496,7 @@ class LoginWindow(ui.ScriptWindow):
 			net.SetMarkServer(addr, port)
 
 			if locale == "ymir" :
-				net.SetServerInfo("õ�� ����")
+				net.SetServerInfo("")
 				self.serverInfo.SetText("Y:"+addr+":"+str(port))
 			else:
 				net.SetServerInfo(addr+":"+str(port))
@@ -540,7 +527,6 @@ class LoginWindow(ui.ScriptWindow):
 			self.Connect(id, pwd)
 			
 			print "=================================================================================="
-			print "�ڵ� �α���: %s - %s:%d %s" % (loginInfoFileName, addr, port, id)
 			print "=================================================================================="
 
 		
@@ -851,7 +837,7 @@ class LoginWindow(ui.ScriptWindow):
 			tcp_port = serverInfo.REGION_DICT[regionID][serverID]["channel"][channelID]["tcp_port"]
 		except:
 			import exception
-			exception.Abort("LoginWindow.__OnClickSelectServerButton - ���� ���� ����")
+			exception.Abort("LoginWindow.__OnClickSelectServerButton")
 
 		try:
 			account_ip = serverInfo.REGION_AUTH_SERVER_DICT[regionID][serverID]["ip"]
@@ -871,7 +857,7 @@ class LoginWindow(ui.ScriptWindow):
 
 		except:
 			import exception
-			exception.Abort("LoginWindow.__OnClickSelectServerButton - ��ũ ���� ����")
+			exception.Abort("LoginWindow.__OnClickSelectServerButton")
 
 
 		self.stream.SetConnectInfo(ip, tcp_port, account_ip, account_port)
