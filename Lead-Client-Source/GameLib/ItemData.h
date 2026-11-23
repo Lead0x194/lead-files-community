@@ -435,6 +435,7 @@ class CItemData
 		void Clear();
 		void SetSummary(const std::string& c_rstSumm);
 		void SetDescription(const std::string& c_rstDesc);
+		void SetName(const std::string& c_rstName);
 
 		CGraphicThing * GetModelThing();
 		CGraphicThing * GetSubModelThing();
@@ -499,6 +500,7 @@ class CItemData
 		std::string m_strIconFileName;
 		std::string m_strDescription;
 		std::string m_strSummary;
+		std::string m_strName;
 		std::vector<std::string> m_strLODModelFileNameVector;
 
 		CGraphicThing * m_pModelThing;

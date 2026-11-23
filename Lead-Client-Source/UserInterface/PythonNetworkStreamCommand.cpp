@@ -68,7 +68,7 @@ void AppendMonsterList(const CPythonNonPlayer::TMobTableList & c_rMobTableList, 
 		{
 			if (dwMonsterCount != 0)
 				strMonsterList += ", ";
-			strMonsterList += c_pMobTable->szLocaleName;
+			strMonsterList += CPythonNonPlayer::Instance().GetMonsterName(c_pMobTable->dwVnum);
 			if (++dwMonsterCount > 5)
 				break;
 		}

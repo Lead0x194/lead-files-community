@@ -671,6 +671,8 @@ bool LoadLocaleData(const char* localePath)
 	char szItemProto[256];
 	char szItemDesc[256];	
 	char szMobProto[256];
+	char szItemNames[256];
+	char szMobNames[256];
 	char szSkillDescFileName[256];
 	char szSkillTableFileName[256];
 	char szInsultList[256];
@@ -678,6 +680,8 @@ bool LoadLocaleData(const char* localePath)
 	snprintf(szItemProto,	sizeof(szItemProto),	"%s/item_proto",	localePath);
 	snprintf(szItemDesc,	sizeof(szItemDesc),	"%s/itemdesc.txt",	localePath);	
 	snprintf(szMobProto,	sizeof(szMobProto),	"%s/mob_proto",		localePath);	
+	snprintf(szItemNames,	sizeof(szItemNames),	"%s/item_names.txt",	localePath);
+	snprintf(szMobNames,	sizeof(szMobNames),	"%s/mob_names.txt",	localePath);
 	snprintf(szSkillDescFileName, sizeof(szSkillDescFileName),	"%s/SkillDesc.txt", localePath);
 	snprintf(szSkillTableFileName, sizeof(szSkillTableFileName),	"%s/SkillTable.txt", localePath);	
 	snprintf(szInsultList,	sizeof(szInsultList),	"%s/insult.txt", localePath);
@@ -697,6 +701,11 @@ bool LoadLocaleData(const char* localePath)
 		return false;
 	}
 
+	if (!rkItemMgr.LoadItemNames(szItemNames))
+	{
+		TraceError("LoadLocaleData - LoadItemNames(%s) Error", szItemNames);
+	}
+
 	if (!rkItemMgr.LoadItemDesc(szItemDesc))
 	{
 		Tracenf("LoadLocaleData - LoadItemDesc(%s) Error", szItemDesc);	
@@ -706,6 +715,11 @@ bool LoadLocaleData(const char* localePath)
 	{
 		TraceError("LoadLocaleData - LoadMobProto(%s) Error", szMobProto);
 		return false;
+	}
+
+	if (!rkNPCMgr.LoadNames(szMobNames))
+	{
+		TraceError("LoadLocaleData - LoadMobNames(%s) Error", szMobNames);
 	}
 
 	if (!rkSkillMgr.RegisterSkillDesc(szSkillDescFileName))
