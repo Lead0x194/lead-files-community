@@ -31,7 +31,7 @@ window = {
 			"width"		: 285,
 			"height"	: 521,
 
-			"image"		: uiScriptLocale.LOCALE_UISCRIPT_PATH + "new_cube_bg.tga",
+			"image"		: "locale/common/ui/new_cube_bg.tga",
 
 			"children" :
 			(

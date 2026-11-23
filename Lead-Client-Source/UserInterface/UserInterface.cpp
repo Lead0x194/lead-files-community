@@ -230,13 +230,18 @@ bool PackInitialize(const char * c_pszFolder)
 	std::string strPackName, strTexCachePackName;
 	for (DWORD i = 1; i < TextLoader.GetLineCount() - 1; i += 2)
 	{
-		const std::string & c_rstFolder = TextLoader.GetLineString(i);
+		std::string stPackFolder = TextLoader.GetLineString(i);
+		const bool c_bPrefixPath = stPackFolder.length() > 1 && '*' == stPackFolder[stPackFolder.length() - 1];
+		if (c_bPrefixPath)
+			stPackFolder.erase(stPackFolder.length() - 1);
+
+		const std::string & c_rstFolder = stPackFolder;
 		const std::string & c_rstName = TextLoader.GetLineString(i + 1);
 
 		strPackName = stFolder + c_rstName;
 		strTexCachePackName = strPackName + "_texcache";
 
-		CEterPackManager::Instance().RegisterPack(strPackName.c_str(), c_rstFolder.c_str());
+		CEterPackManager::Instance().RegisterPack(strPackName.c_str(), c_rstFolder.c_str(), NULL, c_bPrefixPath);
 		CEterPackManager::Instance().RegisterPack(strTexCachePackName.c_str(), c_rstFolder.c_str());
 	}
 

@@ -112,7 +112,7 @@ class CEterPack
 		virtual ~CEterPack();
 		
 		void				Destroy();
-		bool				Create(CEterFileDict& rkFileDict, const char * dbname, const char * pathName, bool bReadOnly = true, const BYTE* iv = NULL);
+		bool				Create(CEterFileDict& rkFileDict, const char * dbname, const char * pathName, bool bReadOnly = true, const BYTE* iv = NULL, bool bPrefixPath = false);
 		bool				DecryptIV(DWORD dwPanamaKey);
 
 		const std::string&	GetPathName();
@@ -184,6 +184,7 @@ class CEterPack
 
 		std::string				m_stDataFileName;
 		std::string				m_stPathName;
+		bool					m_bPrefixPath;
 
 		
 		EterPackPolicy_CSHybridCrypt* m_pCSHybridCryptPolicy;

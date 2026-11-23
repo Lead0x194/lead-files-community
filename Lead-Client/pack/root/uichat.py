@@ -906,9 +906,9 @@ class ChatLogWindow(ui.Window):
 		imgRight.SetParent(self)			
 		
 		if localeInfo.IsRTL():
-			imgLeft.LoadImage("locale/ae/ui/pattern/titlebar_left.tga")
-			imgCenter.LoadImage("locale/ae/ui/pattern/titlebar_center.tga")
-			imgRight.LoadImage("locale/ae/ui/pattern/titlebar_right.tga")
+			imgLeft.LoadImage("locale/common/ui/pattern/titlebar_left.tga")
+			imgCenter.LoadImage("locale/common/ui/pattern/titlebar_center.tga")
+			imgRight.LoadImage("locale/common/ui/pattern/titlebar_right.tga")
 		else:
 			imgLeft.LoadImage("d:/ymir work/ui/pattern/chatlogwindow_titlebar_left.tga")
 			imgCenter.LoadImage("d:/ymir work/ui/pattern/chatlogwindow_titlebar_middle.tga")
