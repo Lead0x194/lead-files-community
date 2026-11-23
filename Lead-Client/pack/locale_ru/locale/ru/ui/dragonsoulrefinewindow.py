@@ -3,7 +3,6 @@ import uiScriptLocale
 window = {
 	"name" : "DragonSoulRefineWindow",
 
-	## ¿ëÈ¥¼® Ã¢ ¹Ù·Î ¿ÞÂÊ
 	"x" : SCREEN_WIDTH - 176 - 287 - 10 - 287,
 	"y" : SCREEN_HEIGHT - 37 - 505,
 
