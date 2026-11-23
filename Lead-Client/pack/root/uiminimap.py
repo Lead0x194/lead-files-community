@@ -145,6 +145,9 @@ class AtlasWindow(ui.ScriptWindow):
 			sName = localeInfo.GUILD_EMPTY_AREA
 		elif sName[:1] == "#" and sName[1:].isdigit():
 			sName = nonplayer.GetMonsterName(int(sName[1:]))
+			parts = sName.rsplit(" ", 2)
+			if 3 == len(parts) and parts[1].isdigit() and parts[2].isdigit():
+				sName = parts[0].replace("_", " ")
 		elif sName[:1] == "#":
 			sName = getattr(localeInfo, sName[1:], sName[1:])
 

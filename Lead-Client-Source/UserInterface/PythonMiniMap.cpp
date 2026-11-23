@@ -866,7 +866,7 @@ void CPythonMiniMap::__LoadAtlasMarkInfo()
 	}
 }
 
-bool CPythonMiniMap::LoadAtlas()
+bool CPythonMiniMap::LoadAtlas(bool bKeepMarks)
 {
 	CPythonBackground& rkBG=CPythonBackground::Instance();
 	if (!rkBG.IsMapOutdoor())
@@ -909,7 +909,8 @@ bool CPythonMiniMap::LoadAtlas()
 	m_fAtlasImageSizeX = (float) m_AtlasImageInstance.GetWidth();
 	m_fAtlasImageSizeY = (float) m_AtlasImageInstance.GetHeight();
 
-	__LoadAtlasMarkInfo();
+	if (!bKeepMarks)
+		__LoadAtlasMarkInfo();
 
 	if (m_bShowAtlas)
 		OpenAtlasWindow();

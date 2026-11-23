@@ -56,7 +56,7 @@ class CPythonMiniMap : public CScreen, public CSingleton<CPythonMiniMap>
 		bool GetPickedInstanceInfo(float fScreenX, float fScreenY, std::string & rReturnName, float * pReturnPosX, float * pReturnPosY, DWORD * pdwTextColor);
 
 		// Atlas
-		bool LoadAtlas();
+		bool LoadAtlas(bool bKeepMarks = false);
 		void UpdateAtlas();
 		void RenderAtlas(float fScreenX, float fScreenY);
 		void ShowAtlas();
