@@ -1,5 +1,5 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . arena_manager . _20_sayTitle ) 
-say ( gameforge . main_quest_lv15 . _160_say ) 
+say_title ( "[LC;14]" ) 
+say ( "[LC;4129]" ) 
 setstate ( "gotoboss2" ) 
 q . done ( ) 

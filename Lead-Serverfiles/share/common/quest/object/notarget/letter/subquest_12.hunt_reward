@@ -1,6 +1,6 @@
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . subquest_12 . _10_targetVid ) 
-q . set_title ( gameforge . subquest_12 . _10_targetVid ) 
+makequestbutton ( "[LC;7291]" ) 
+q . set_title ( "[LC;7291]" ) 
 q . start ( ) 
 local vnum = 0 
 if pc . get_empire ( ) == 1 then 
@@ -13,5 +13,5 @@ end
 local v = find_npc_by_vnum ( vnum ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . subquest_12 . _140_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;7295]" ) 
 end 

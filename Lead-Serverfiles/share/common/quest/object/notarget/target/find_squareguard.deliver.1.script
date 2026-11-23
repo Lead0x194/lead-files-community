@@ -1,9 +1,9 @@
 target . delete ( "__TARGET__1" ) 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . find_squareguard . _210_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;1014]" ) 
 wait ( ) 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . find_squareguard . _220_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;1015]" ) 
 if pc . countitem ( "27001" ) >= 1 then 
 pc . removeitem ( "27001" , 1 ) 
 local r = number ( 1 , 3 ) 

@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . cube . _40_sayTitle ) 
-say ( gameforge . subquest_25 . _180_say ) 
+say_title ( "[LC;636]" ) 
+say ( "[LC;7666]" ) 
 wait ( ) 
-say_title ( gameforge . cube . _40_sayTitle ) 
-say ( gameforge . subquest_25 . _190_say ) 
-local s = select ( gameforge . subquest_01 . _50_select , gameforge . subquest_25 . _200_select ) 
+say_title ( "[LC;636]" ) 
+say ( "[LC;7667]" ) 
+local s = select ( "[LC;6997]" , "[LC;7668]" ) 
 if 2 == s then 
-say ( gameforge . subquest_25 . _210_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7670]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . cube . _40_sayTitle ) 
-say ( gameforge . subquest_25 . _220_say ) 
+say_title ( "[LC;636]" ) 
+say ( "[LC;7671]" ) 
 return 
 end 
-say_title ( gameforge . cube . _40_sayTitle ) 
-say ( gameforge . subquest_25 . _230_say ) 
+say_title ( "[LC;636]" ) 
+say ( "[LC;7672]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . cube . _40_sayTitle ) 
-say ( gameforge . subquest_25 . _240_say ) 
+say_title ( "[LC;636]" ) 
+say ( "[LC;7673]" ) 
 set_state ( "find_flower" ) 

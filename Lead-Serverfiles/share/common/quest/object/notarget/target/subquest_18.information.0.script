@@ -1,22 +1,22 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_18 . _20_sayTitle ) 
-say ( gameforge . subquest_18 . _30_say ) 
+say_title ( "[LC;7453]" ) 
+say ( "[LC;7464]" ) 
 local s = select ( 
-gameforge . subquest_18 . _33_select , 
-gameforge . subquest_18 . _37_select ) 
+"[LC;7467]" , 
+"[LC;7468]" ) 
 if 2 == s then 
-say ( gameforge . subquest_18 . _40_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7469]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . subquest_18 . _20_sayTitle ) 
-say ( gameforge . subquest_18 . _50_say ) 
+say_title ( "[LC;7453]" ) 
+say ( "[LC;7470]" ) 
 return 
 end 
-say_title ( gameforge . subquest_18 . _20_sayTitle ) 
-say ( gameforge . subquest_18 . _60_say ) 
+say_title ( "[LC;7453]" ) 
+say ( "[LC;7471]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_18 . _20_sayTitle ) 
-say ( gameforge . subquest_18 . _70_say ) 
+say_title ( "[LC;7453]" ) 
+say ( "[LC;7472]" ) 
 set_state ( "find_soonyougil" ) 

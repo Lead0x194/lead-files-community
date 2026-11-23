@@ -3,7 +3,7 @@ pc . setqf ( "heavens_cave_keyquest_CooldownTime" , 3600 )
 local v = find_npc_by_vnum ( 20095 ) 
 if 0 ~= v then 
 if pc . get_map_index ( ) == 1 or pc . get_map_index ( ) == 21 or pc . get_map_index ( ) == 41 then 
-target . vid ( "__TARGET__" , find_npc_by_vnum ( 20095 ) , gameforge . heavens_cave_keyquest . _010_target ) 
+target . vid ( "__TARGET__" , find_npc_by_vnum ( 20095 ) , "[LC;1506]" ) 
 set_state ( "check_cooldown" ) 
 end 
 end 

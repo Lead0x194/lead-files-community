@@ -1,4 +1,4 @@
-send_letter ( gameforge . spider_dungeon_3floor_boss . _70_sendLetter ) 
+send_letter ( "[LC;6961]" ) 
 local v = find_npc_by_vnum ( 30130 ) 
 if 0 ~= v then 
 target . vid ( "__TARGET__" , v , mob_name ( 30130 ) ) 

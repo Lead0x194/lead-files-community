@@ -8,5 +8,5 @@ new_quest_lv80_blackice = 30185
 local goto_npc = 20023 
 local v = find_npc_by_vnum ( goto_npc ) 
 if 0 ~= v then 
-target . vid ( "__TARGET__" , v , gameforge . new_quest_lv80 . _010_target ) 
+target . vid ( "__TARGET__" , v , "[LC;6224]" ) 
 end 

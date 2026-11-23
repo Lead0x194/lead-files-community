@@ -1,13 +1,13 @@
 target . delete ( "__TARGET__1" ) 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . find_squareguard . _40_say ) 
-local b = select ( gameforge . find_squareguard . _50_select ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;1017]" ) 
+local b = select ( "[LC;1018]" ) 
 if 1 == b then 
-say_title ( gameforge . buy_fishrod . _210_sayTitle ) 
-say_reward ( gameforge . find_squareguard . _60_sayReward ) 
+say_title ( "[LC;44]" ) 
+say_reward ( "[LC;1019]" ) 
 pc . changemoney ( 200 ) 
 set_state ( "buy" ) 
 elseif 2 == b then 
 else 
-say ( string . format ( gameforge . find_squareguard . _70_say , b ) ) 
+say ( string . format ( "[LC;1020;%s]" , b ) ) 
 end 

@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . hair_shop . _20_sayTitle ) 
-say ( gameforge . subquest_17 . _20_say ) 
+say_title ( "[LC;1406]" ) 
+say ( "[LC;7409]" ) 
 wait ( ) 
-say_title ( gameforge . hair_shop . _20_sayTitle ) 
-say ( gameforge . subquest_17 . _30_say ) 
-local s = select ( gameforge . subquest_17 . _40_select , gameforge . subquest_17 . _50_select ) 
+say_title ( "[LC;1406]" ) 
+say ( "[LC;7420]" ) 
+local s = select ( "[LC;7431]" , "[LC;7434]" ) 
 if 2 == s then 
-say ( gameforge . subquest_17 . _60_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7435]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . hair_shop . _20_sayTitle ) 
-say ( gameforge . subquest_17 . _70_say ) 
+say_title ( "[LC;1406]" ) 
+say ( "[LC;7436]" ) 
 return 
 end 
-say_title ( gameforge . hair_shop . _20_sayTitle ) 
-say ( gameforge . subquest_17 . _80_say ) 
+say_title ( "[LC;1406]" ) 
+say ( "[LC;7437]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . hair_shop . _20_sayTitle ) 
-say ( gameforge . subquest_17 . _90_say ) 
+say_title ( "[LC;1406]" ) 
+say ( "[LC;7438]" ) 
 set_state ( "to_itemmall_owner" ) 

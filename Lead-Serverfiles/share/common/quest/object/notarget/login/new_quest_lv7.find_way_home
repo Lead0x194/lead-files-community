@@ -1,36 +1,36 @@
-send_letter ( gameforge . new_quest_lv7 . _020_say_title ) 
+send_letter ( "[LC;6082]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv7 . _020_say_title ) 
+q . set_title ( "[LC;6082]" ) 
 new_quest_lv7_HomeMapIndex = 99 
 if pc . get_empire ( ) == 1 then 
 new_quest_lv7_HomeMapIndex = 1 
 local v = find_npc_by_vnum ( 10002 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET7__" , v , gameforge . map_warp . _180_select ) 
+target . vid ( "__TARGET7__" , v , "[LC;5453]" ) 
 end 
 elseif pc . get_empire ( ) == 2 then 
 new_quest_lv7_HomeMapIndex = 21 
 local v = find_npc_by_vnum ( 10004 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET7__" , v , gameforge . map_warp . _200_select ) 
+target . vid ( "__TARGET7__" , v , "[LC;5457]" ) 
 end 
 elseif pc . get_empire ( ) == 3 then 
 new_quest_lv7_HomeMapIndex = 41 
 local v = find_npc_by_vnum ( 10006 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET7__" , v , gameforge . map_warp . _220_select ) 
+target . vid ( "__TARGET7__" , v , "[LC;5460]" ) 
 end 
 end 
 if pc . get_map_index ( ) == new_quest_lv7_HomeMapIndex then 
 target . delete ( "__TARGET7__" ) 
-notice_multiline ( gameforge . new_quest_lv7 . _129_say , notice ) 
+notice_multiline ( "[LC;6122]" , notice ) 
 local v = find_npc_by_vnum ( 20008 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET5__" , v , gameforge . subquest_48 . _230_targetVid ) 
+target . vid ( "__TARGET5__" , v , "[LC;8330]" ) 
 end 
 set_state ( "back_to_octavio" ) 
 end 

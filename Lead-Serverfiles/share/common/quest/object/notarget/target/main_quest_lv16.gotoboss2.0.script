@@ -1,9 +1,9 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( 30001 ) >= 1 then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . main_quest_lv16 . _90_say ) 
-say_title ( gameforge . collect_herb_lv4 . _130_sayTitle ) 
-say_reward ( gameforge . main_quest_lv16 . _100_sayReward ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;4151]" ) 
+say_title ( "[LC;192]" ) 
+say_reward ( "[LC;4141]" ) 
 pc . remove_item ( 30001 ) 
 pc . give_exp2 ( 40000 ) 
 pc . change_money ( 5000 ) 

@@ -1,6 +1,6 @@
 if pc . get_level ( ) >= 17 then local v = find_npc_by_vnum ( 20087 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . new_quest_lv17 . _010_target ) 
+target . vid ( "__TARGET__" , v , "[LC;5630]" ) 
 end 
  return end 

@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . subquest_39 . _30_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;8078]" ) 
 wait ( ) 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . subquest_39 . _40_say ) 
-local s = select ( gameforge . find_brother_article . _90_select , gameforge . subquest_01 . _60_select ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;8089]" ) 
+local s = select ( "[LC;971]" , "[LC;6998]" ) 
 if 2 == s then 
-say ( gameforge . subquest_39 . _50_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;8100]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . subquest_39 . _60_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;8106]" ) 
 return 
 end 
-say_title ( gameforge . subquest_39 . _70_sayTitle ) 
-say ( gameforge . subquest_39 . _80_say ) 
+say_title ( "[LC;8107]" ) 
+say ( "[LC;8108]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_39 . _70_sayTitle ) 
-say ( gameforge . subquest_39 . _90_say ) 
+say_title ( "[LC;8107]" ) 
+say ( "[LC;8109]" ) 
 set_state ( "ask_to_backgo" ) 

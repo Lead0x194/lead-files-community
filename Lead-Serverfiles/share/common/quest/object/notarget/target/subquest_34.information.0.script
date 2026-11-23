@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_34 . _20_sayTitle ) 
-say ( gameforge . subquest_34 . _30_say ) 
+say_title ( "[LC;7958]" ) 
+say ( "[LC;7960]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_34 . _20_sayTitle ) 
-say ( gameforge . subquest_34 . _40_say ) 
-local s = select ( gameforge . subquest_31 . _50_select , gameforge . locale . cancel ) 
+say_title ( "[LC;7958]" ) 
+say ( "[LC;7961]" ) 
+local s = select ( "[LC;7840]" , "[LC;1891]" ) 
 if 2 == s then 
-say ( gameforge . subquest_34 . _50_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7962]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_34 . _60_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;7963]" ) 
 return 
 end 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_34 . _70_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;7964]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . main_quest_lv10 . _30_sayTitle ) 
-say ( gameforge . subquest_34 . _80_say ) 
+say_title ( "[LC;4082]" ) 
+say ( "[LC;7965]" ) 
 set_state ( "bye_blackwind" ) 

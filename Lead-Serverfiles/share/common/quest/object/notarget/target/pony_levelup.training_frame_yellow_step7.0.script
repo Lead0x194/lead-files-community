@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . pony_levelup . _70_makequestbutton ) 
-say_reward ( gameforge . pony_levelup . _90_sayReward ) 
+say_title ( "[LC;6652]" ) 
+say_reward ( "[LC;6670]" ) 
 setstate ( "training_frame_yellow_step8" ) 

@@ -7,13 +7,13 @@ new_quest_lv7_mob3 = 175
 new_quest_lv7_drop1 = 30169 
 new_quest_lv7_drop2 = 30170 
 new_quest_lv7_drop3 = 30171 
-send_letter ( gameforge . new_quest_lv7 . _020_say_title ) 
+send_letter ( "[LC;6082]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv7 . _020_say_title ) 
+q . set_title ( "[LC;6082]" ) 
 if new_quest_lv7 . is_my_vil ( ) then 
 local v = find_npc_by_vnum ( 9006 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET2__" , v , gameforge . new_quest_lv7 . _040_target ) 
+target . vid ( "__TARGET2__" , v , "[LC;6089]" ) 
 end 
 end 

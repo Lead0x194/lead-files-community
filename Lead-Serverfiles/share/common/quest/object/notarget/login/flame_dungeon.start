@@ -14,16 +14,16 @@ break
 end 
 end 
 if get_global_time ( ) - pc . getf ( "flame_dungeon" , "exit_time" ) < 30 * 60 then 
-notice_multiline ( gameforge . flame_dungeon . _050_notice , d . notice ) 
-say ( gameforge . flame_dungeon . _060_say ) 
+notice_multiline ( "[LC;1043]" , d . notice ) 
+say ( "[LC;1044]" ) 
 timer ( "flame_dungeon_warp_timer" , 5 ) 
 elseif not canPass then 
-notice_multiline ( gameforge . flame_dungeon . _070_notice , d . notice ) 
-say ( gameforge . flame_dungeon . _080_say ) 
+notice_multiline ( "[LC;1045]" , d . notice ) 
+say ( "[LC;1046]" ) 
 timer ( "flame_dungeon_warp_timer" , 5 ) 
 elseif pc . get_level ( ) < 100 then 
-notice_multiline ( gameforge . flame_dungeon . _090_notice , d . notice ) 
-say ( gameforge . flame_dungeon . _100_say ) 
+notice_multiline ( "[LC;1047]" , d . notice ) 
+say ( "[LC;1048]" ) 
 timer ( "flame_dungeon_warp_timer" , 5 ) 
 end 
 elseif pc . getf ( "flame_dungeon" , "ticket_delete" ) == 0 then 

@@ -1,8 +1,8 @@
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . subquest_44 . _460_sendLetter ) 
-q . set_title ( gameforge . subquest_44 . _460_sendLetter ) 
+makequestbutton ( "[LC;8221]" ) 
+q . set_title ( "[LC;8221]" ) 
 q . start ( ) 
 local v = find_npc_by_vnum ( 20014 ) 
 if v ~= 0 then 
-target . vid ( "__TARGET__" , v , gameforge . subquest_49 . _350_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;8375]" ) 
 end 

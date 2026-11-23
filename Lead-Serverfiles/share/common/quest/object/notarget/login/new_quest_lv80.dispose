@@ -1,9 +1,9 @@
 if pc . get_map_index ( ) == 1 and pc . countitem ( 30185 ) > 0 then 
-target . pos ( "__DISPOSE__" , 591 , 1196 , 1 , gameforge . new_quest_lv80 . _570_target_pos ) 
+target . pos ( "__DISPOSE__" , 591 , 1196 , 1 , "[LC;6288]" ) 
 elseif pc . get_map_index ( ) == 21 and pc . countitem ( 30185 ) > 0 then 
-target . pos ( "__DISPOSE__" , 167 , 772 , 21 , gameforge . new_quest_lv80 . _580_target_pos ) 
+target . pos ( "__DISPOSE__" , 167 , 772 , 21 , "[LC;6289]" ) 
 elseif pc . get_map_index ( ) == 41 and pc . countitem ( 30185 ) > 0 then 
-target . pos ( "__DISPOSE__" , 851 , 299 , 41 , gameforge . new_quest_lv80 . _590_target_pos ) 
+target . pos ( "__DISPOSE__" , 851 , 299 , 41 , "[LC;6290]" ) 
 else 
-send_letter ( gameforge . new_quest_lv80 . _599_set_title ) 
+send_letter ( "[LC;6291]" ) 
 end 

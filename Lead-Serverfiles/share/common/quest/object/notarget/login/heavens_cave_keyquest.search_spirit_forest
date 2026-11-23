@@ -100,38 +100,38 @@ heavens_cave_keyquest_SpiritForestCoordsList [ heavens_cave_keyquest_DailyRndLis
 heavens_cave_keyquest_SpiritForestCoordsList [ heavens_cave_keyquest_DailyRndList [ 7 ] ] 
 } 
 pc . setqf ( "tears_collected" , pc . count_item ( pc . getqf ( "heavens_cave_keyquest_FrozenTear" ) ) ) 
-send_letter ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
+send_letter ( "[LC;1507]" ) 
 q . start ( ) 
-q . set_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
+q . set_title ( "[LC;1507]" ) 
 if pc . get_map_index ( ) == 62 then 
 local allTearsTaken = true 
 if pc . getqf ( "Tear1Taken" ) == 0 then 
 allTearsTaken = false 
-target . pos ( "__TEAR1__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 1 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 1 ] [ 2 ] , 62 , gameforge . heavens_cave_keyquest . _150_say_title ) 
+target . pos ( "__TEAR1__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 1 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 1 ] [ 2 ] , 62 , "[LC;1520]" ) 
 end 
 if pc . getqf ( "Tear2Taken" ) == 0 then 
 allTearsTaken = false 
-target . pos ( "__TEAR2__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 2 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 2 ] [ 2 ] , 62 , gameforge . heavens_cave_keyquest . _150_say_title ) 
+target . pos ( "__TEAR2__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 2 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 2 ] [ 2 ] , 62 , "[LC;1520]" ) 
 end 
 if pc . getqf ( "Tear3Taken" ) == 0 then 
 allTearsTaken = false 
-target . pos ( "__TEAR3__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 3 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 3 ] [ 2 ] , 62 , gameforge . heavens_cave_keyquest . _150_say_title ) 
+target . pos ( "__TEAR3__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 3 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 3 ] [ 2 ] , 62 , "[LC;1520]" ) 
 end 
 if pc . getqf ( "Tear4Taken" ) == 0 then 
 allTearsTaken = false 
-target . pos ( "__TEAR4__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 4 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 4 ] [ 2 ] , 62 , gameforge . heavens_cave_keyquest . _150_say_title ) 
+target . pos ( "__TEAR4__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 4 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 4 ] [ 2 ] , 62 , "[LC;1520]" ) 
 end 
 if pc . getqf ( "Tear5Taken" ) == 0 then 
 allTearsTaken = false 
-target . pos ( "__TEAR5__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 5 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 5 ] [ 2 ] , 62 , gameforge . heavens_cave_keyquest . _150_say_title ) 
+target . pos ( "__TEAR5__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 5 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 5 ] [ 2 ] , 62 , "[LC;1520]" ) 
 end 
 if pc . getqf ( "Tear6Taken" ) == 0 then 
 allTearsTaken = false 
-target . pos ( "__TEAR6__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 6 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 6 ] [ 2 ] , 62 , gameforge . heavens_cave_keyquest . _150_say_title ) 
+target . pos ( "__TEAR6__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 6 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 6 ] [ 2 ] , 62 , "[LC;1520]" ) 
 end 
 if pc . getqf ( "Tear7Taken" ) == 0 then 
 allTearsTaken = false 
-target . pos ( "__TEAR7__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 7 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 7 ] [ 2 ] , 62 , gameforge . heavens_cave_keyquest . _150_say_title ) 
+target . pos ( "__TEAR7__" , heavens_cave_keyquest_SpiritForestCoordsTempList [ 7 ] [ 1 ] , heavens_cave_keyquest_SpiritForestCoordsTempList [ 7 ] [ 2 ] , 62 , "[LC;1520]" ) 
 end 
 if pc . count_item ( pc . getqf ( "heavens_cave_keyquest_FrozenTear" ) ) >= pc . getqf ( "heavens_cave_keyquest_NeededTearsAmount" ) and pc . count_item ( pc . getqf ( "heavens_cave_keyquest_VolcanicGlass" ) ) >= pc . getqf ( "heavens_cave_keyquest_NeededGlassAmount" ) then 
 q . done ( ) 

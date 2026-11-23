@@ -1,24 +1,24 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_08 . _120_sayTitle ) 
-say ( gameforge . subquest_13 . _30_say ) 
+say_title ( "[LC;7195]" ) 
+say ( "[LC;7332]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_08 . _120_sayTitle ) 
-say ( gameforge . subquest_13 . _40_say ) 
-local s = select ( gameforge . subquest_11 . _50_select , gameforge . subquest_05 . _80_select ) 
+say_title ( "[LC;7195]" ) 
+say ( "[LC;7339]" ) 
+local s = select ( "[LC;7285]" , "[LC;7103]" ) 
 if 2 == s then 
-say_title ( gameforge . subquest_08 . _120_sayTitle ) 
-say ( gameforge . subquest_13 . _50_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;7195]" ) 
+say ( "[LC;7340]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . subquest_08 . _120_sayTitle ) 
-say ( gameforge . subquest_13 . _60_say ) 
+say_title ( "[LC;7195]" ) 
+say ( "[LC;7341]" ) 
 return 
 end 
-say_title ( gameforge . subquest_08 . _120_sayTitle ) 
-say ( gameforge . subquest_13 . _70_say ) 
+say_title ( "[LC;7195]" ) 
+say ( "[LC;7342]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_08 . _120_sayTitle ) 
-say ( gameforge . subquest_13 . _80_say ) 
+say_title ( "[LC;7195]" ) 
+say ( "[LC;7343]" ) 
 set_state ( "get_weapon" ) 

@@ -1,5 +1,5 @@
 target . delete ( "target2" ) 
-say ( gameforge . pony_levelup . _460_say ) 
+say ( "[LC;6628]" ) 
 pc . setqf ( "flag2" , 1 ) 
 if pc . getqf ( "flag1" ) == 1 and pc . getqf ( "flag2" ) == 1 then 
 setstate ( "report" ) 

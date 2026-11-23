@@ -2,5 +2,5 @@ diarypage = 30181
 new_quest_lv75_mob = 1137 
 new_quest_lv75_dropProb = 15 
 new_quest_lv75_npcvnum = 20090 
-send_letter ( gameforge . new_quest_lv75 . _020_set_title ) 
+send_letter ( "[LC;6146]" ) 
 local story 

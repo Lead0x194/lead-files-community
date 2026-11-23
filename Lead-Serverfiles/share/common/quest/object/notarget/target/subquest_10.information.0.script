@@ -1,24 +1,24 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _20_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7257]" ) 
 say_item_vnum ( "30017" ) 
 wait ( ) 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _30_say ) 
-local s = select ( gameforge . subquest_10 . _40_select , gameforge . subquest_05 . _80_select ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7265]" ) 
+local s = select ( "[LC;7266]" , "[LC;7103]" ) 
 if 2 == s then 
-say ( gameforge . subquest_10 . _50_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7267]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _60_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7268]" ) 
 return 
 end 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _70_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7269]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _80_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7270]" ) 
 set_state ( "go_to_blacksmith" ) 

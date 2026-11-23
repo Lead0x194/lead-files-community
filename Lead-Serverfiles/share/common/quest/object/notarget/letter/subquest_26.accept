@@ -1,10 +1,10 @@
 if pc . count_item ( 30116 ) > 0 then 
-send_letter ( gameforge . subquest_26 . _250_sendLetter ) 
+send_letter ( "[LC;7718]" ) 
 local v = find_npc_by_vnum ( 20008 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . subquest_26 . _260_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;7719]" ) 
 end 
 return 
 end 
-send_letter ( gameforge . subquest_26 . _270_sendLetter ) 
+send_letter ( "[LC;7720]" ) 

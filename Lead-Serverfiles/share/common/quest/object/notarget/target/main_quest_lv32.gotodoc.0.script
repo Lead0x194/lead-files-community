@@ -1,5 +1,5 @@
 target . delete ( "__TARGET__" ) 
 say_pc_name ( ) 
-say ( gameforge . main_quest_lv32 . _290_say ) 
+say ( "[LC;4250]" ) 
 pc . give_item2 ( 30150 ) 
 set_state ( "gototeacher2" ) 

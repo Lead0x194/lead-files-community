@@ -9,12 +9,12 @@ new_quest_lv29_neededAmountDrop = 6
 if pc . getqf ( "yonahspatience" ) < 2 then 
 pc . setqf ( "dropProb" , new_quest_lv29_dropProb / 10 ) 
 end 
-send_letter ( gameforge . new_quest_lv29 . _015_npcChat ) 
+send_letter ( "[LC;5799]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv29 . _015_npcChat ) 
+q . set_title ( "[LC;5799]" ) 
 if is_destination_village ( 1 ) then 
 local position = find_npc_by_vnum ( 20005 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET5__" , position , gameforge . new_quest_lv29 . _010_target ) 
+target . vid ( "__TARGET5__" , position , "[LC;5798]" ) 
 end 
 end 

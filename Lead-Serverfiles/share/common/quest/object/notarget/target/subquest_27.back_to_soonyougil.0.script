@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_27 . _230_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7757]" ) 
 wait ( "" ) 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_27 . _240_say ) 
-local s = select ( gameforge . subquest_27 . _250_select , gameforge . subquest_27 . _260_select ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7758]" ) 
+local s = select ( "[LC;7759]" , "[LC;7760]" ) 
 if 2 == s then 
-say ( gameforge . subquest_27 . _270_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7761]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_27 . _280_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7762]" ) 
 return 
 end 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_27 . _290_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7763]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_27 . _300_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7764]" ) 
 set_state ( "find_book" ) 

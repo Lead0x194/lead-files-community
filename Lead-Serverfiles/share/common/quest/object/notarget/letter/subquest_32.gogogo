@@ -1,20 +1,20 @@
-send_letter ( gameforge . subquest_32 . _100_sendLetter ) 
+send_letter ( "[LC;7845]" ) 
 if pc . getqf ( "sil_done" ) == 0 or pc . getqf ( "sil_done" ) == 2 then 
 local v = find_npc_by_vnum ( 20021 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET1__" , v , gameforge . subquest_17 . _340_targetVid ) 
+target . vid ( "__TARGET1__" , v , "[LC;7424]" ) 
 end 
 end 
 if pc . getqf ( "sil_done" ) == 1 then 
 local v = find_npc_by_vnum ( 20003 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET3__" , v , gameforge . subquest_32 . _110_targetVid ) 
+target . vid ( "__TARGET3__" , v , "[LC;7847]" ) 
 end 
 end 
 if pc . count_item ( 30144 ) >= 100 and pc . count_item ( 30143 ) > 0 then 
 local v = find_npc_by_vnum ( 9003 ) 
 if 0 == v then 
-target . vid ( "__TARGET2__" , v , gameforge . subquest_32 . _120_targetVid ) 
+target . vid ( "__TARGET2__" , v , "[LC;7848]" ) 
 end 
 end 
 if pc . count_item ( 30139 ) >= 100 and pc . count_item ( 30140 ) > 0 and pc . count_item ( 30141 ) > 0 then 

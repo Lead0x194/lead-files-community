@@ -2,7 +2,7 @@ local lev = pc . getqf ( "current" ) ;
 if lev == 0 then 
 lev = pc . level if lev < 2 or lev > 90 then return end 
 pc . setqf ( "buttonstate" , 2 ) 
-makequestbutton ( string . format ( gameforge . levelup . _10_makequestbutton , lev ) ) 
+makequestbutton ( string . format ( "[LC;1803;%s]" , lev ) ) 
 pc . setqf ( "current" , lev ) 
 pc . setqf ( "select" , 1 ) 
 pc . setqf ( "remain" , special . levelup_quest [ lev ] [ 2 ] ) 

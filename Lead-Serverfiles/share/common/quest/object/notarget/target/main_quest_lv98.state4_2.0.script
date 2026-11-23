@@ -1,12 +1,12 @@
 target . delete ( "__target_npc1__" ) 
 pc . setqf ( "click_npc1" , 1 ) 
 say_title ( mob_name ( 20381 ) ) 
-say ( gameforge . main_quest_lv98 . _400_say ) 
+say ( "[LC;5401]" ) 
 say ( "" ) 
 local remain = 4 - pc . getqf ( "click_npc1" ) - pc . getqf ( "click_npc2" ) - pc . getqf ( "click_npc3" ) - pc . getqf ( "click_npc4" ) 
 q . set_counter_value ( remain ) 
 if pc . getqf ( "click_npc1" ) == 1 and pc . getqf ( "click_npc2" ) == 1 and pc . getqf ( "click_npc3" ) == 1 and pc . getqf ( "click_npc4" ) == 1 then 
-notice_multiline ( gameforge . main_quest_lv98 . _440_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv98 . _440_2_notice , notice ) 
+notice_multiline ( "[LC;5405]" , notice ) 
+notice_multiline ( "[LC;5406]" , notice ) 
 set_state ( "state4_3" ) 
 end 

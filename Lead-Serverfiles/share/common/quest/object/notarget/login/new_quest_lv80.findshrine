@@ -8,8 +8,8 @@ new_quest_lv80_blackice = 30185
 if 1 == new_quest_lv80 . is_heavens_cave ( ) then 
 local v = find_npc_by_vnum ( 30123 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET3__" , v , gameforge . new_quest_lv80 . _300_target ) 
+target . vid ( "__TARGET3__" , v , "[LC;6254]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv80 . _310_set_title ) 
+q . set_title ( "[LC;6255]" ) 
 end 
 end 
