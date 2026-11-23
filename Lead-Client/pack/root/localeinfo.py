@@ -1,5 +1,8 @@
 import app
 import constInfo
+import dbg
+import sys
+import types
 
 MAP_TRENT02 = "MAP_TRENT02"
 MAP_WL = "MAP_WL"
@@ -40,6 +43,21 @@ LOGIN_FAILURE_SHUTDOWN_TIME = "ASDF"
 def IsRTL():
 	global __IS_RTL
 	return __IS_RTL
+
+class LocaleModule(types.ModuleType):
+	def __getattr__(self, name):
+		if name.startswith("__"):
+			raise AttributeError(name)
+
+		dbg.TraceError("%s: missing key %s" % (self.__name__, name))
+		self.__dict__[name] = name
+		return name
+
+def ReportMissingKeys(moduleName):
+	module = LocaleModule(moduleName)
+	module.__dict__.update(sys.modules[moduleName].__dict__)
+	module.__dict__["__source__"] = sys.modules[moduleName]
+	sys.modules[moduleName] = module
 
 def LoadLocaleData():
 	app.LoadLocaleData(app.GetLocalePath())
@@ -509,3 +527,5 @@ def NumberToSecondaryCoinString(n) :
 
 def DottedNumber(n) :
 	return "%s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ])) 
+
+ReportMissingKeys(__name__)

@@ -525,6 +525,7 @@ bool CPythonSystem::SaveConfig()
 	fprintf(fp, "USE_DEFAULT_IME		%d\n", m_Config.bUseDefaultIME);
 	fprintf(fp, "SOFTWARE_TILING		%d\n", m_Config.bSoftwareTiling);
 	fprintf(fp, "SHADOW_LEVEL			%d\n", m_Config.iShadowLevel);
+	fprintf(fp, "LANGUAGE			%s\n", LocaleService_GetLocaleName());
 	fprintf(fp, "\n");
 
 	fclose(fp);
