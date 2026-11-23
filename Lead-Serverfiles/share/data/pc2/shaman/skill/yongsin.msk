@@ -3,16 +3,16 @@ ScriptType			SkillDataScript
 Type				HIGH
 Attribute			"NEED_TARGET" "FOR_ALLIANCE" "USE_FOR_ME"
 
-Name				"¿ë½ÅÅõÈ£"
-Description			"¹Ù¶÷À» Å¸°í ´Ş¸°´Ù"
+Name				"ìš©ì‹ íˆ¬í˜¸"
+Description			"ë°”ëŒì„ íƒ€ê³  ë‹¬ë¦°ë‹¤"
 
 IconFileName		"skill/shaman/yongsin.sub"
 MotionIndex			21
 
 List AffectData
 {
-	"ÀÌµ¿ ¼Óµµ : + %.0f" "(10 * (20 + (SkillPoint * 3))) / 20" ""
-	"Áö¼Ó ½Ã°£ : %.0fºĞ" "4 * ((10 + SkillPoint) / 10)" ""
+	"ì´ë™ ì†ë„ : + %.0f" "(10 * (20 + (SkillPoint * 3))) / 20" ""
+	"ì§€ì† ì‹œê°„ : %.0fë¶„" "4 * ((10 + SkillPoint) / 10)" ""
 }
 
 CoolTimeFormula		"20"

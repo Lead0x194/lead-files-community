@@ -4,8 +4,8 @@ Type				LOW
 Attribute			"NEED_TARGET" "ONLY_FOR_ALLIANCE" "CAN_USE_FOR_ME"
 Range				800
 
-Name				"È£½Å"
-Description			"µ½°íÀÚ ÇÏ´Â ÀÚ¿¡°Ô º¸È£ÀÇ ÁøÀ» ±×·Á º¸È£ÇÑ´Ù"
+Name				"í˜¸ì‹ "
+Description			"ë•ê³ ì í•˜ëŠ” ìì—ê²Œ ë³´í˜¸ì˜ ì§„ì„ ê·¸ë ¤ ë³´í˜¸í•œë‹¤"
 
 IconFileName		"skill/shaman/hosin.sub"
 MotionIndex         4
@@ -13,8 +13,8 @@ MotionIndexForMe    3
 
 List AffectData
 {
-	"¹æ¾î·Â +%.0f" "(3 + (SkillPoint / 4)) * (100 + INT/2) / 100" ""
-	"Áö¼Ó ½Ã°£ %.0fÃÊ" "5 * 60 * (5 + JeungJi) / 5" ""
+	"ë°©ì–´ë ¥ +%.0f" "(3 + (SkillPoint / 4)) * (100 + INT/2) / 100" ""
+	"ì§€ì† ì‹œê°„ %.0fì´ˆ" "5 * 60 * (5 + JeungJi) / 5" ""
 }
 
 LevelUpPoint		4

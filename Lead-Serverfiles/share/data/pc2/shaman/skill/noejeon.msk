@@ -3,15 +3,15 @@ ScriptType			SkillDataScript
 Type				HIGH
 Attribute			"STANDING_SKILL"
 
-Name				"³úÀü·É"
-Description			"º­¶ôÀ» »Õ´Â ¹Ù¶÷ÀÇ Á¤·ÉÀ» µ¿Çà ½ÃÅ²´Ù"
+Name				"ë‡Œì „ë ¹"
+Description			"ë²¼ë½ì„ ë¿œëŠ” ë°”ëŒì˜ ì •ë ¹ì„ ë™í–‰ ì‹œí‚¨ë‹¤"
 
 IconFileName		"skill/shaman/noejeon.sub"
 MotionIndex			23
 
 List AffectData
 {
-	"µ¥¹ÌÁö : %.0f" "(Level + 5 + (INT / 2)) * ((10 + SkillPoint) / 10)" ""
+	"ë°ë¯¸ì§€ : %.0f" "(Level + 5 + (INT / 2)) * ((10 + SkillPoint) / 10)" ""
 }
 
 CoolTimeFormula			"6 * 60"

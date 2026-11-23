@@ -4,23 +4,23 @@ Type			LOW
 Attribute		"WEAPON_LIMITATION" "NEED_TARGET" "MELEE_ATTACK"
 NeedWeapon		"SWORD" "DAGGER" "DOUBLE_SWORD"
 
-Name			"¾Ï½À"
-Description		"Àû¿¡°Ô ¸ô·¡ ´Ù°¡°¡ Ä¡¸íÅ¸¸¦ ÀÔÈù´Ù"
+Name			"ì•”ìŠµ"
+Description		"ì ì—ê²Œ ëª°ëž˜ ë‹¤ê°€ê°€ ì¹˜ëª…íƒ€ë¥¼ ìž…ížŒë‹¤"
 
 IconFileName	"skill/assassin/amseup.sub"
 MotionIndex		2
 
 List ConditionData
 {
-	"µÚ¿¡¼­ Âî¸¦¶§ ÆÄ±«·Â 50% Áõ°¡"
-	"ÀºÇü¹ý »ç¿ë½Ã ÆÄ±«·Â 50% Áõ°¡"
-	"´Ü°ËÀÏ¶§ ÆÄ±«·Â 100% Áõ°¡"
-	"3ÃÊ°£ ¸ÂÀ»¶§ µ¥¹ÌÁö 2¹è"
+	"ë’¤ì—ì„œ ì°Œë¥¼ë•Œ íŒŒê´´ë ¥ 50% ì¦ê°€"
+	"ì€í˜•ë²• ì‚¬ìš©ì‹œ íŒŒê´´ë ¥ 50% ì¦ê°€"
+	"ë‹¨ê²€ì¼ë•Œ íŒŒê´´ë ¥ 100% ì¦ê°€"
+	"3ì´ˆê°„ ë§žì„ë•Œ ë°ë¯¸ì§€ 2ë°°"
 }
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.1f ¹è"	"(SkillPoint * 20 + 100) / 100 " ""
+	"íŒŒê´´ë ¥ : %.1f ë°°"	"(SkillPoint * 20 + 100) / 100 " ""
 }
 
 MaxLevel			"25"

@@ -3,15 +3,15 @@ ScriptType		SkillDataScript
 Type			HIGH
 Attribute		"NEED_TARGET"
 
-Name			"ÅÂ¾ç±Ç"
-Description		"ºü¸£°Ô Àû¿¡°Ô Á¢±ÙÇÏ¿© Ä¡¸íÅ¸¸¦ ÀÔÈù´Ù"
+Name			"íƒœì–‘ê¶Œ"
+Description		"ë¹ ë¥´ê²Œ ì ì—ê²Œ ì ‘ê·¼í•˜ì—¬ ì¹˜ëª…íƒ€ë¥¼ ì…íŒë‹¤"
 
 IconFileName	"skill/assassin/taeyang.sub"
 MotionIndex		11
 
 List AffectData
 {
-	"%.1f ¹èÀÇ Å¸°İ"	"1 + SkillPoint / 4"	""
+	"%.1f ë°°ì˜ íƒ€ê²©"	"1 + SkillPoint / 4"	""
 }
 
 CoolTimeFormula		"40 - SkillPoint"

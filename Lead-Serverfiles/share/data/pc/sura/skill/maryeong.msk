@@ -4,21 +4,21 @@ Type			LOW
 Attribute		"NEED_TARGET"
 Range			2500
 
-Name			"¸¶·É"
-Description		"¾îµÒÀÇ ÈûÀ» ´øÁ® Àû¿¡°Ô »óÃ³¸¦ ÀÔÈù´Ù"
+Name			"ë§ˆë ¹"
+Description		"ì–´ë‘ ì˜ í˜ì„ ë˜ì ¸ ì ì—ê²Œ ìƒì²˜ë¥¼ ì…íŒë‹¤"
 
 IconFileName	"skill/sura/maryeong.sub"
 MotionIndex		1
 
 List ConditionData
 {
-	"ÀÏÁ¤ È®·ü·Î ¸¶ºñÈ¿°ú"
-	"½ºÇÃ·¡½¬ °ø°İ"
+	"ì¼ì • í™•ë¥ ë¡œ ë§ˆë¹„íš¨ê³¼"
+	"ìŠ¤í”Œë˜ì‰¬ ê³µê²©"
 }
 
 List AffectData
 {
-	"ÆÄ±«·Â %.1f"	"((20 + INT*2) * (15 + SkillPoint)) / 15"	""
+	"íŒŒê´´ë ¥ %.1f"	"((20 + INT*2) * (15 + SkillPoint)) / 15"	""
 }
 
 MaxLevel			"30"

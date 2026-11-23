@@ -1,20 +1,20 @@
 ScriptType		SkillDataScript
 
 Type			LOW
-Name			"µ¶º´ Á¦ÀÛ"
-Description		"ºóº´¿¡ µ¶À» ¸¸µé¾î ³Ö´Â´Ù"
+Name			"ë…ë³‘ ì œì‘"
+Description		"ë¹ˆë³‘ì— ë…ì„ ë§Œë“¤ì–´ ë„£ëŠ”ë‹¤"
 
 IconFileName	"skill/assassin/make_poison.sub"
 MotionIndex		0
 
 List ConditionData
 {
-	"ºóº´ ÇÊ¿ä"
+	"ë¹ˆë³‘ í•„ìš”"
 }
 
 List AffectData
 {
-	"¼º°øÈ®·ü %.0f%%"	"SkillPoint*20"	""
+	"ì„±ê³µí™•ë¥  %.0f%%"	"SkillPoint*20"	""
 }
 
 MaxLevel			"5"

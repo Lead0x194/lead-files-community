@@ -3,15 +3,15 @@ ScriptType		SkillDataScript
 Type			LOW
 Attribute		"STANDING_SKILL"
 
-Name			"ÁıÁß¹æ¾î"
-Description		"¸Ö¸®¼­ ³¯¾Æ¿À´Â °ø°İÀ» Â÷´ÜÇÑ´Ù"
+Name			"ì§‘ì¤‘ë°©ì–´"
+Description		"ë©€ë¦¬ì„œ ë‚ ì•„ì˜¤ëŠ” ê³µê²©ì„ ì°¨ë‹¨í•œë‹¤"
 
 IconFileName		"skill/warrior/jipjung.sub"
 MotionIndex		3
 
 List AffectData
 {
-	"Range °ø°İ¿¡ ´ëÇØ %.0f%% ÇÇÇØ °¨¼Ò" "SkillPoint * 5" ""
+	"Range ê³µê²©ì— ëŒ€í•´ %.0f%% í”¼í•´ ê°ì†Œ" "SkillPoint * 5" ""
 }
 
 MaxLevel				"10"

@@ -4,8 +4,8 @@ Type				LOW
 Attribute			"NEED_TARGET" "FOR_ALLIANCE" "USE_FOR_ME"
 Range				800
 
-Name				"Á¤¾÷ÀÎ"
-Description			"ºûÀÇ ±â¿îÀ¸·Î »óÃ³¸¦ Ä¡À¯ÇÑ´Ù"
+Name				"ì •ì—…ì¸"
+Description			"ë¹›ì˜ ê¸°ìš´ìœ¼ë¡œ ìƒì²˜ë¥¼ ì¹˜ìœ í•œë‹¤"
 
 IconFileName		"skill/assassin/1.sub"
 MotionIndex			1
@@ -13,7 +13,7 @@ MotionIndexForMe	2
 
 List AffectData
 {
-	"Ã¼·Â %.0f È¸º¹" "(10 + SkillLevel * 3) * 10" ""
+	"ì²´ë ¥ %.0f íšŒë³µ" "(10 + SkillLevel * 3) * 10" ""
 }
 
 NeedSPFormula		"50"

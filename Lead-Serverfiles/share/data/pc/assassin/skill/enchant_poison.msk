@@ -2,21 +2,21 @@ ScriptType		SkillDataScript
 
 Type			MIDDLE
 Attribute		"ONLY_FOR_ALLIANCE" "CAN_USE_FOR_ME"
-Name			"µ¶¹Ù¸£±â"
-Description		"¹«±â¿¡ µ¶À» ¹Ù¸¥´Ù"
+Name			"ë…ë°”ë¥´ê¸°"
+Description		"ë¬´ê¸°ì— ë…ì„ ë°”ë¥¸ë‹¤"
 
 IconFileName	"skill/assassin/enchant_poison.sub"
 MotionIndex		7
 
 List ConditionData
 {
-	"µ¶º´ 1°³ ÇÊ¿ä"
+	"ë…ë³‘ 1ê°œ í•„ìš”"
 }
 
 List AffectData
 {
-	"Å¸°İ´ç 2%% È®·ü·Î Áßµ¶" "" ""
-	"300ÃÊ°£ Áö¼Ó" "" ""
+	"íƒ€ê²©ë‹¹ 2%% í™•ë¥ ë¡œ ì¤‘ë…" "" ""
+	"300ì´ˆê°„ ì§€ì†" "" ""
 }
 
 MaxLevel			"15"

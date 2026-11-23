@@ -3,8 +3,8 @@ ScriptType			SkillDataScript
 Type				LOW
 Attribute			"NEED_TARGET" "ONLY_FOR_ALLIANCE" "CAN_USE_FOR_ME"
 
-Name				"°¨Áö"
-Description			"Àá½Ãµ¿¾È º¸ÀÌÁö ¾Ê´Â °ÍÀ» º¼ ¼ö ÀÖ´Â ´É·ÂÀ» ºÎ¿©ÇÑ´Ù"
+Name				"ê°ì§€"
+Description			"ì ì‹œë™ì•ˆ ë³´ì´ì§€ ì•ŠëŠ” ê²ƒì„ ë³¼ ìˆ˜ ìˆëŠ” ëŠ¥ë ¥ì„ ë¶€ì—¬í•œë‹¤"
 
 IconFileName		"skill/shaman/gamji.sub"
 MotionIndex			6
@@ -12,7 +12,7 @@ MotionIndexForMe	5
 
 List AffectData
 {
-	"Áö¼Ó ½Ã°£ : 3ºĞ" "" ""
+	"ì§€ì† ì‹œê°„ : 3ë¶„" "" ""
 }
 
 NeedSPFormula		"60"

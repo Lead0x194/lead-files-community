@@ -2,16 +2,16 @@ ScriptType		SkillDataScript
 
 Type			MIDDLE
 Attribute		"CAN_USE_IF_NOT_ENOUGH"
-Name			"Ç÷È¯Á¤¹ı"
-Description		"Á¤½Å·Â¸¦ ÀÌ¿ëÇÏ¿© »ı¸í·ÂÀ» È¸º¹½ÃÅ²´Ù"
-Requirement		"°Ç°ïÄ¡È¯" 5
+Name			"í˜ˆí™˜ì •ë²•"
+Description		"ì •ì‹ ë ¥ë¥¼ ì´ìš©í•˜ì—¬ ìƒëª…ë ¥ì„ íšŒë³µì‹œí‚¨ë‹¤"
+Requirement		"ê±´ê³¤ì¹˜í™˜" 5
 
 IconFileName	"skill/sura/hyeolhwan.sub"
 MotionIndex		6
 
 List AffectData
 {
-	"ÃÖ´ë »ı¸í·ÂÀÇ %.0f%% È¸º¹" "SkillPoint * 10" ""
+	"ìµœëŒ€ ìƒëª…ë ¥ì˜ %.0f%% íšŒë³µ" "SkillPoint * 10" ""
 }
 
 MaxLevel			"10"

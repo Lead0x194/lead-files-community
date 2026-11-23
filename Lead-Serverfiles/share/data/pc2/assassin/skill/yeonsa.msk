@@ -2,18 +2,18 @@ ScriptType		SkillDataScript
 
 Type			LOW
 
-Name			"¿¬»ç"
+Name			"ì—°ì‚¬"
 Attribute		"NEED_TARGET" "WEAPON_LIMITATION"
 NeedWeapon		"BOW"
 Range			2500
 
-Description		"¿©·¯ ¹ßÀÇ È­»ìÀ» ¿¬¼ÓÀ¸·Î ½ğ´Ù"
+Description		"ì—¬ëŸ¬ ë°œì˜ í™”ì‚´ì„ ì—°ì†ìœ¼ë¡œ ìœë‹¤"
 IconFileName	"skill/assassin/2.sub"
 MotionIndex		1
 
 List AffectData
 {
-	"%.0f ¹ßÀÇ È­»ìÀ» ¿¬¼ÓÀ¸·Î ½ğ´Ù"	"2 + floor(SkillLevel / 5)"	""
+	"%.0f ë°œì˜ í™”ì‚´ì„ ì—°ì†ìœ¼ë¡œ ìœë‹¤"	"2 + floor(SkillLevel / 5)"	""
 }
 
 CoolTimeFormula			"20"

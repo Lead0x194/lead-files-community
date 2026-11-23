@@ -4,22 +4,22 @@ Type			MIDDLE
 Attribute		"NEED_TARGET"
 Range			2500
 
-Name			"Åõ¼Ó¸¶·É"
-Description		"¸ó½ºÅÍÀÇ ÀÌµ¿¼Óµµ¸¦ ¶³¾î¶ß¸°´Ù"
-Requirement		"ÀúÁÖ"	6
+Name			"íˆ¬ì†ë§ˆë ¹"
+Description		"ëª¬ìŠ¤í„°ì˜ ì´ë™ì†ë„ë¥¼ ë–¨ì–´ëœ¨ë¦°ë‹¤"
+Requirement		"ì €ì£¼"	6
 
 IconFileName	"skill/sura/tusok.sub"
 MotionIndex		9
 
 List ConditionData
 {
-	"½ºÇÃ·¡½¬ °ø°İ"
+	"ìŠ¤í”Œë˜ì‰¬ ê³µê²©"
 }
 
 List AffectData
 {
-	"ÀÌµ¿¼Óµµ : -%.0f" "5 + (SkillPoint / 2)" ""
-	"Áö¼Ó½Ã°£ 30ÃÊ" "" ""
+	"ì´ë™ì†ë„ : -%.0f" "5 + (SkillPoint / 2)" ""
+	"ì§€ì†ì‹œê°„ 30ì´ˆ" "" ""
 }
 
 MaxLevel			"20"

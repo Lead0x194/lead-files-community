@@ -4,15 +4,15 @@ Type			HIGH
 Attribute		"WEAPON_LIMITATION" "STANDING_SKILL"
 NeedWeapon		"SWORD" "DAGGER" "DOUBLE_SWORD"
 
-Name			"Äè°Ë¼ú"
-Description		"ºü¸£°Ô Àû¿¡°Ô Á¢±ÙÇÏ¿© Ä¡¸íÅ¸¸¦ ÀÔÈù´Ù"
+Name			"ì¾Œê²€ìˆ "
+Description		"ë¹ ë¥´ê²Œ ì ì—ê²Œ ì ‘ê·¼í•˜ì—¬ ì¹˜ëª…íƒ€ë¥¼ ì…íŒë‹¤"
 
 IconFileName	"skill/assassin/kwaegeom.sub"
 MotionIndex		14
 
 List AffectData
 {
-	"%.1f ¹èÀÇ Å¸°İ"	"1 + SkillPoint / 4"	""
+	"%.1f ë°°ì˜ íƒ€ê²©"	"1 + SkillPoint / 4"	""
 }
 
 CoolTimeFormula		"40 - SkillPoint"

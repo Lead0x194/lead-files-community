@@ -4,15 +4,15 @@ Type			LOW
 Attribute		"WEAPON_LIMITATION"	"TOGGLE" "STANDING_SKILL"
 NeedWeapon		"SWORD"
 
-Name			"±Í°Ë"
-Description		"°Ë¿¡ ±Í½ÅÀÇ ÈûÀ» ºÒ¾î ³Ö´Â´Ù"
+Name			"ê·€ê²€"
+Description		"ê²€ì— ê·€ì‹ ì˜ í˜ì„ ë¶ˆì–´ ë„£ëŠ”ë‹¤"
 
 IconFileName	"skill/sura/gwigeom.sub"
 MotionIndex		5
 
 List AffectData
 {
-	"°ø°İ·Â : +%.0f"	"4 + (SkillPoint / 5)"	""
+	"ê³µê²©ë ¥ : +%.0f"	"4 + (SkillPoint / 5)"	""
 }
 
 MaxLevel				"20"

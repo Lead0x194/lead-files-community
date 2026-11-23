@@ -3,15 +3,15 @@ ScriptType		SkillDataScript
 Type			LOW
 Attribute		"STANDING_SKILL"
 
-Name			"ºĞ½Å¼ú"
-Description		"ÀÚ½ÅÀÇ ºĞ½ÅÀ» ³²±â°í ±× ÀÚ¸®¿¡¼­ »ç¶óÁø´Ù"
+Name			"ë¶„ì‹ ìˆ "
+Description		"ìì‹ ì˜ ë¶„ì‹ ì„ ë‚¨ê¸°ê³  ê·¸ ìë¦¬ì—ì„œ ì‚¬ë¼ì§„ë‹¤"
 
 IconFileName	"skill/assassin/bunsin.sub"
 MotionIndex		0
 
 List AffectData
 {
-	"Áö¼Ó½Ã°£ : %.0fÃÊ "	"SkillPoint"	""
+	"ì§€ì†ì‹œê°„ : %.0fì´ˆ "	"SkillPoint"	""
 }
 
 MaxLevel			"10"

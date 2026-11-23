@@ -2,20 +2,20 @@ ScriptType		SkillDataScript
 
 Type			LOW
 Attribute		"STANDING_SKILL" "TOGGLE"
-Name			"°æ°ø¼ú"
-Description		"¸öÀ» °¡º±°Ô ÇÏ¿© ÀÌµ¿ ¼Óµµ¸¦ ³ôÀÎ´Ù"
+Name			"ê²½ê³µìˆ "
+Description		"ëª¸ì„ ê°€ë³ê²Œ í•˜ì—¬ ì´ë™ ì†ë„ë¥¼ ë†’ì¸ë‹¤"
 
 IconFileName	"skill/assassin/gyeonggong.sub"
 MotionIndex		3
 
 List AffectData
 {
-	"ÀÌµ¿¼Óµµ : +%.0f"	"3 + SkillPoint"	""
+	"ì´ë™ì†ë„ : +%.0f"	"3 + SkillPoint"	""
 }
 
 List MasterAffectData
 {
-	"¸¶½ºÅÍ º¸³Ê½º ÀÌµ¿ ¼Óµµ +2"
+	"ë§ˆìŠ¤í„° ë³´ë„ˆìŠ¤ ì´ë™ ì†ë„ +2"
 }
 
 MaxLevel 				"15"

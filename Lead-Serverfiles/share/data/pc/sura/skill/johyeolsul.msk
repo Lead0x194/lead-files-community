@@ -1,11 +1,11 @@
 ScriptType		SkillDataScript
 
 Type			PASSIVE
-Name			"Á¶Ç÷¼ú"
-Description		"ÃÖ´ë »ı¸í·Â Áõ°¡"
+Name			"ì¡°í˜ˆìˆ "
+Description		"ìµœëŒ€ ìƒëª…ë ¥ ì¦ê°€"
 
 IconFileName	"skill/warrior/gibaek.sub"
 List AffectData
 {
-	"ÃÖ´ë »ı¸í·Â +%.0f"	"SkillPoint * 30"	""
+	"ìµœëŒ€ ìƒëª…ë ¥ +%.0f"	"SkillPoint * 30"	""
 }

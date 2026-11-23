@@ -4,15 +4,15 @@ Type			HIGH
 Attribute		"WEAPON_LIMITATION" "CAN_CHANGE_DIRECTION"
 NeedWeapon		"SWORD" "TWO_HANDED"
 
-Name			"Äè°Ë¼ú"
-Description		"Àü¹æÀÇ ÀûÀ» °ø°İÇÑ´Ù"
+Name			"ì¾Œê²€ìˆ "
+Description		"ì „ë°©ì˜ ì ì„ ê³µê²©í•œë‹¤"
 
 IconFileName		"skill/warrior/kwaegeom.sub"
 MotionIndex		12
 
 List AffectData
 {
-	"µ¥¹ÌÁö : %.0f ~ %.0f"	"AttackPower"	"(AttackPower * (10 + SkillPoint)) / 10"
+	"ë°ë¯¸ì§€ : %.0f ~ %.0f"	"AttackPower"	"(AttackPower * (10 + SkillPoint)) / 10"
 }
 
 CoolTimeFormula		"20 - SkillPoint / 2"

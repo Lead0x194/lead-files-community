@@ -4,14 +4,14 @@ Type			MIDDLE
 Attribute		"STADING_SKILL" "TOGGLE"
 NeedWeapon		"SWORD" "TWO_HANDED"
 
-Name			"È­¿°Âü"
-Description		"ÀÚ½ÅÀÇ °ËÀ» ºÒ·Î °¨½Ñ´Ù"
+Name			"í™”ì—¼ì°¸"
+Description		"ìì‹ ì˜ ê²€ì„ ë¶ˆë¡œ ê°ì‹¼ë‹¤"
 
 IconFileName	"skill/warrior/hwayeom.sub"
 
 List AffectData
 {
-	"ÆÄ±«·Â : +%.0f%%" "SkillPoint" ""
+	"íŒŒê´´ë ¥ : +%.0f%%" "SkillPoint" ""
 }
 
 MaxLevel				"30"

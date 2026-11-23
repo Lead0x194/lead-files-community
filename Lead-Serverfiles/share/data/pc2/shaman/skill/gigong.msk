@@ -2,11 +2,11 @@ ScriptType		SkillDataScript
 
 Type			PASSIVE
 
-Name			"±â°ø¼ú"
-Description		"»ı¸í·Â È¸º¹ ¼Óµµ Áõ°¡"
+Name			"ê¸°ê³µìˆ "
+Description		"ìƒëª…ë ¥ íšŒë³µ ì†ë„ ì¦ê°€"
 
 IconFileName	"skill/warrior/geunseong.sub"
 List AffectData
 {
-	"»ı¸í·Â È¸º¹·® +%.0f%%"	"SkillLevel * 2"	""
+	"ìƒëª…ë ¥ íšŒë³µëŸ‰ +%.0f%%"	"SkillLevel * 2"	""
 }

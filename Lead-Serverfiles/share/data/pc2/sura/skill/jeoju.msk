@@ -2,8 +2,8 @@ ScriptType		SkillDataScript
 
 Type			LOW
 Attribute		"NEED_TARGET"
-Name			"ÀúÁÖ"
-Description		"»ó´ëÀÇ °ø°İ·ÂÀ» ¶³¾î¶ß¸°´Ù"
+Name			"ì €ì£¼"
+Description		"ìƒëŒ€ì˜ ê³µê²©ë ¥ì„ ë–¨ì–´ëœ¨ë¦°ë‹¤"
 Range			"2500"
 
 IconFileName	"skill/sura/jeoju.sub"
@@ -11,8 +11,8 @@ MotionIndex		4
 
 List AffectData
 {
-	"°ø°İ·Â : -%.0f" "SkillPoint / 2" ""
-	"Áö¼Ó½Ã°£ 15ÃÊ" "" ""
+	"ê³µê²©ë ¥ : -%.0f" "SkillPoint / 2" ""
+	"ì§€ì†ì‹œê°„ 15ì´ˆ" "" ""
 }
 
 MaxLevel			"20"

@@ -3,15 +3,15 @@ ScriptType		SkillDataScript
 Type			HIGH
 Attribute		"STANDING_SKILL"
 
-Name			"ÇÔÁ¤ ÆÄ±â"
-Description		"Áö±İ ¼­ÀÖ´Â ÀÚ¸®¿¡ Àû¿¡°Ô Ä¡¸íÅ¸¸¦ ÀÔÈú ÇÔÁ¤À» ¸¸µç´Ù"
+Name			"í•¨ì • íŒŒê¸°"
+Description		"ì§€ê¸ˆ ì„œìˆëŠ” ìë¦¬ì— ì ì—ê²Œ ì¹˜ëª…íƒ€ë¥¼ ì…í í•¨ì •ì„ ë§Œë“ ë‹¤"
 
 IconFileName	"skill/assassin/make_trap.sub"
 MotionIndex		12
 
 List AffectData
 {
-	"%.1f ¹èÀÇ Å¸°İ"	"1 + SkillPoint / 4"	""
+	"%.1f ë°°ì˜ íƒ€ê²©"	"1 + SkillPoint / 4"	""
 }
 
 CoolTimeFormula		"40 - SkillPoint"

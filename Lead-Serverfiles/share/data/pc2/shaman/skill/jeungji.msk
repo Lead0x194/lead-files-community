@@ -1,11 +1,11 @@
 ScriptType		SkillDataScript
 
 Type			PASSIVE
-Name			"ÁõÁö¼ú"
-Description		"¼ú¹ıÀÇ Áö¼Ó ½Ã°£À» Áõ°¡ ½ÃÅ²´Ù"
+Name			"ì¦ì§€ìˆ "
+Description		"ìˆ ë²•ì˜ ì§€ì† ì‹œê°„ì„ ì¦ê°€ ì‹œí‚¨ë‹¤"
 
 IconFileName	"skill/shaman/jeungji.sub"
 List AffectData
 {
-	"Áö¼Ó ½Ã°£ +%.0f%%" "SkillPoint * 20" ""
+	"ì§€ì† ì‹œê°„ +%.0f%%" "SkillPoint * 20" ""
 }

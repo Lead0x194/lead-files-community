@@ -3,17 +3,17 @@ ScriptType		SkillDataScript
 Type			MIDDLE
 Attribute		"WEAPON_LIMITATION" "CAN_CHANGE_DIRECTION"
 NeedWeapon		"SWORD" "TWO_HANDED"
-Name			"±âÇ÷Ãë¸í"
-Description		"°­·ÂÇÑ º£±â·Î Àû¿¡°Ô Ä¡¸íÅ¸¸¦ ÀÔÈù´Ù"
+Name			"ê¸°í˜ˆì·¨ëª…"
+Description		"ê°•ë ¥í•œ ë² ê¸°ë¡œ ì ì—ê²Œ ì¹˜ëª…íƒ€ë¥¼ ì…íŒë‹¤"
 Range			500
 
 IconFileName	"skill/warrior/gihyeol.sub"
 MotionIndex		8
-Requirement		"°İ»êÅ¸¿ì" 5
+Requirement		"ê²©ì‚°íƒ€ìš°" 5
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.1f ¹è"	"(SkillPoint * 20 + 100) / 100" ""
+	"íŒŒê´´ë ¥ : %.1f ë°°"	"(SkillPoint * 20 + 100) / 100" ""
 }
 
 CoolTimeFormula		"8"

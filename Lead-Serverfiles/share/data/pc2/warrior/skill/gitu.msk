@@ -1,16 +1,16 @@
 ScriptType		SkillDataScript
 
 Type			MIDDLE
-Name			"±âÅõÄ¡È¯"
-Description		"»ı¸í·ÂÀ» Á¤½Å·ÂÀ¸·Î ¹Ù²Û´Ù"
+Name			"ê¸°íˆ¬ì¹˜í™˜"
+Description		"ìƒëª…ë ¥ì„ ì •ì‹ ë ¥ìœ¼ë¡œ ë°”ê¾¼ë‹¤"
 
 IconFileName		"skill/warrior/gitu.sub"
 MotionIndex		10
 
 List AffectData
 {
-	"¼Ò¸ğ »ı¸í·Â 20%%" "" ""
-	"º¯È¯ Á¤½Å·Â 20%%" "" ""
+	"ì†Œëª¨ ìƒëª…ë ¥ 20%%" "" ""
+	"ë³€í™˜ ì •ì‹ ë ¥ 20%%" "" ""
 }
 
 MaxLevel		"5"

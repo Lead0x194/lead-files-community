@@ -2,16 +2,16 @@ ScriptType			SkillDataScript
 
 Type				MIDDLE
 Attribute			"TOGGLE" "STANDING_SKILL"
-Name				"¼öÈ£Àü·É"
-Description			"ºûÀÇ Á¤·ÉÀ» ºÒ·¯ ÀÚ½ÅÀÇ ¸öÀ» º¸È£ÇÑ´Ù"
-Requirement			"È£½Å" 4
+Name				"ìˆ˜í˜¸ì „ë ¹"
+Description			"ë¹›ì˜ ì •ë ¹ì„ ë¶ˆëŸ¬ ìì‹ ì˜ ëª¸ì„ ë³´í˜¸í•œë‹¤"
+Requirement			"í˜¸ì‹ " 4
 
 IconFileName		"skill/shaman/suho.sub"
 MotionIndex			15
 
 List AffectData
 {
-	"¹æ¾î·Â : +%.0f" "(3 + SkillPoint / 4) * (100 + INT / 2) / 100" ""
+	"ë°©ì–´ë ¥ : +%.0f" "(3 + SkillPoint / 4) * (100 + INT / 2) / 100" ""
 }
 
 NeedSPFormula			"150"

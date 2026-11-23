@@ -4,16 +4,16 @@ Type				MIDDLE
 Attribute			"NEED_TARGET"
 Range				1200
 
-Name				"ºÎµ¿¹ÚºÎ"
-Description			"ºÎÀûÀÇ ÈûÀ¸·Î ÀûÀ» Àá½Ãµ¿¾È Á¤Áö ½ÃÅ²´Ù"
+Name				"ë¶€ë™ë°•ë¶€"
+Description			"ë¶€ì ì˜ í˜ìœ¼ë¡œ ì ì„ ì ì‹œë™ì•ˆ ì •ì§€ ì‹œí‚¨ë‹¤"
 
 IconFileName		"skill/shaman/budong.sub"
 MotionIndex			10
 
 List AffectData
 {
-	"¼º°ø·ü : ¾à %.0f%%" "15 * (10 + SkillPoint) / 10" ""
-	"Áö¼Ó½Ã°£ : %.0fÃÊ" "2 + (SkillPoint / 2)" ""
+	"ì„±ê³µë¥  : ì•½ %.0f%%" "15 * (10 + SkillPoint) / 10" ""
+	"ì§€ì†ì‹œê°„ : %.0fì´ˆ" "2 + (SkillPoint / 2)" ""
 }
 
 CoolTimeFormula		"25"

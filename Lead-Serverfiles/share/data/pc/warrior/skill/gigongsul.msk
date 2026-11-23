@@ -3,15 +3,15 @@ ScriptType		SkillDataScript
 Type			LOW
 Attribute		"TOGGLE" "STANDING_SKILL"
 
-Name			"±â°ø¼ú"
-Description		"ÀÏ½ÃÀûÀ¸·Î °ø°İ·ÂÀ» Áõ°¡ ½ÃÅ²´Ù"
+Name			"ê¸°ê³µìˆ "
+Description		"ì¼ì‹œì ìœ¼ë¡œ ê³µê²©ë ¥ì„ ì¦ê°€ ì‹œí‚¨ë‹¤"
 
 IconFileName	"skill/warrior/gigongsul.sub"
 MotionIndex		0
 
 List AffectData
 {
-	"°ø°İ·Â +%.0f"	"1 + SkillPoint / 3"	""
+	"ê³µê²©ë ¥ +%.0f"	"1 + SkillPoint / 3"	""
 }
 
 MaxLevel				"15"

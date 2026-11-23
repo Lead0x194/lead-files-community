@@ -3,15 +3,15 @@ ScriptType		SkillDataScript
 Type			LOW
 Attribute		"STANDING_SKILL"
 
-Name			"´ëÁø°¢"
-Description		"ÁÖÀ§ÀÇ ÀûÀ» »ç¹æÀ¸·Î ³¯·Áº¸³½´Ù"
+Name			"ëŒ€ì§„ê°"
+Description		"ì£¼ìœ„ì˜ ì ì„ ì‚¬ë°©ìœ¼ë¡œ ë‚ ë ¤ë³´ë‚¸ë‹¤"
 
 IconFileName	"skill/warrior/daejin.sub"
 MotionIndex		1
 
 List AffectData
 {
-	"ÆÄ±«·Â : %.1f ¹è" "(SkillPoint * 20 + 100) / 100" ""
+	"íŒŒê´´ë ¥ : %.1f ë°°" "(SkillPoint * 20 + 100) / 100" ""
 }
 
 MaxLevel			"5"

@@ -1,15 +1,15 @@
 ScriptType		SkillDataScript
 
 Type			HIGH
-Name			"ÆÈ¹æÇ³¿ì"
-Description		"Ä®À» Àâ°í È¸ÀüÇÏ¿© ÁÖÀ§ÀÇ ÀûÀ» °ø°İÇÑ´Ù"
+Name			"íŒ”ë°©í’ìš°"
+Description		"ì¹¼ì„ ì¡ê³  íšŒì „í•˜ì—¬ ì£¼ìœ„ì˜ ì ì„ ê³µê²©í•œë‹¤"
 
 IconFileName	"skill/warrior/palbang.sub"
 MotionIndex		15
 
 List AffectData
 {
-	"µ¥¹ÌÁö : %.0f ~ %.0f"	"(AttackPower * 100 + (SkillPoint * 5)) / 100"	"(AttackPower * (100 + (SkillPoint * 15))) / 100"
+	"ë°ë¯¸ì§€ : %.0f ~ %.0f"	"(AttackPower * 100 + (SkillPoint * 5)) / 100"	"(AttackPower * (100 + (SkillPoint * 15))) / 100"
 }
 
 CoolTimeFormula		"20 - SkillPoint / 2"

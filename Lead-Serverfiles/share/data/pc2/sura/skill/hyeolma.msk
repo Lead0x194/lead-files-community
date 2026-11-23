@@ -3,15 +3,15 @@ ScriptType		SkillDataScript
 Type			LOW
 Attribute		"TOGGLE" "STANDING_SKILL"
 
-Name			"Ç÷¸¶°¢¼º"
-Description		"ÀÚ½ÅÀÇ ÇÇ¸¦ ºÒÅÂ¿ö ¸¶·ÂÀ» °­È­ ÇÑ´Ù"
+Name			"í˜ˆë§ˆê°ì„±"
+Description		"ìì‹ ì˜ í”¼ë¥¼ ë¶ˆíƒœì›Œ ë§ˆë ¥ì„ ê°•í™” í•œë‹¤"
 
 IconFileName	"skill/sura/hyeolma.sub"
 MotionIndex		2
 
 List AffectData
 {
-	"¸¶¹ı °ø°İ·Â : +%.0f"	"3 + (SkillPoint / 4)"	""
+	"ë§ˆë²• ê³µê²©ë ¥ : +%.0f"	"3 + (SkillPoint / 4)"	""
 }
 
 MaxLevel				"20"

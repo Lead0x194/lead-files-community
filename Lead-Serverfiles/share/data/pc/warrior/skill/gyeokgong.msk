@@ -3,17 +3,17 @@ ScriptType		SkillDataScript
 Type			MIDDLE
 Attribute		"TOGGLE" "STANDING_SKILL"
 
-Name			"Ãµ±ÙÃß"
-Description		"¹æ¾î·ÂÀÌ »ó½ÂÇÏ¸ç °­·ÂÇÑ °ø°İ¿¡µµ ¾²·¯ÁöÁö ¾Ê´Â´Ù"
+Name			"ì²œê·¼ì¶”"
+Description		"ë°©ì–´ë ¥ì´ ìƒìŠ¹í•˜ë©° ê°•ë ¥í•œ ê³µê²©ì—ë„ ì“°ëŸ¬ì§€ì§€ ì•ŠëŠ”ë‹¤"
 
 IconFileName		"skill/warrior/5.sub"
 MotionIndex		4
 
 List AffectData
 {
-	"Áö¼Ó½Ã°£ : %.0f"	"20 + (SkillLevel * 10)"	""
-	"¹æ¾îµî±Ş : +%.1f"	"2 + SkillLevel / 5"		""
-	"Áö¼Ó ¼Ò¸ğ Á¤½Å·Â : %.1f"	"5 - (SkillLevel / 10)"	""
+	"ì§€ì†ì‹œê°„ : %.0f"	"20 + (SkillLevel * 10)"	""
+	"ë°©ì–´ë“±ê¸‰ : +%.1f"	"2 + SkillLevel / 5"		""
+	"ì§€ì† ì†Œëª¨ ì •ì‹ ë ¥ : %.1f"	"5 - (SkillLevel / 10)"	""
 }
 
 CoolTimeFormula		"0"
