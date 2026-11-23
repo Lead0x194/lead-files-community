@@ -387,13 +387,6 @@ int DetermineFish(LPCHARACTER ch)
 	int * p = std::lower_bound(g_prob_accumulate[prob_idx], g_prob_accumulate[prob_idx] + MAX_FISH, rv);
 	int fish_idx = static_cast<int>(p - g_prob_accumulate[prob_idx]);
 
-	if (g_iUseLocale)
-	{
-		DWORD vnum = fish_info[fish_idx].vnum;
-
-		if (vnum == 50008 || vnum == 50009 || vnum == 80008) 
-			return 0;
-	}
 
 	return (fish_idx);
 }

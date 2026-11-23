@@ -749,7 +749,7 @@ int CInputMain::Chat(LPCHARACTER ch, const char * data, size_t uiBytes)
 
 	if (pinfo->type == CHAT_TYPE_SHOUT)
 	{
-		const int SHOUT_LIMIT_LEVEL = g_iUseLocale ? 15 : 3;
+		const int SHOUT_LIMIT_LEVEL = 3;
 
 		if (ch->GetLevel() < SHOUT_LIMIT_LEVEL)
 		{
@@ -2425,8 +2425,6 @@ void CInputMain::AnswerMakeGuild(LPCHARACTER ch, const char* c_pData)
 		snprintf(Log, sizeof(Log), "GUILD_NAME %s MASTER %s", cp.name, ch->GetName());
 		LogManager::instance().CharLog(ch, 0, "MAKE_GUILD", Log);
 
-		if (g_iUseLocale)
-			ch->RemoveSpecifyItem(GUILD_CREATE_ITEM_VNUM, 1);
 		//ch->SendGuildName(dwGuildID);
 	}
 	else

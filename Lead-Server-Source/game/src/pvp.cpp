@@ -474,7 +474,6 @@ bool CPVPManager::CanAttack(LPCHARACTER pkChr, LPCHARACTER pkVictim)
 
 				if (pkChr->GetPKMode() == PK_MODE_REVENGE)
 				{
-					//if (!g_iUseLocale)
 					if (1)
 					{
 						if (pkChr->GetAlignment() < 0 && pkVictim->GetAlignment() >= 0)
@@ -502,7 +501,6 @@ bool CPVPManager::CanAttack(LPCHARACTER pkChr, LPCHARACTER pkVictim)
 				if (!pkChr->GetGuild() || (pkVictim->GetGuild() != pkChr->GetGuild()))
 				{
 					if (1)
-					//if (!g_iUseLocale)
 					{
 						if (pkVictim->GetAlignment() >= 0)
 							pkChr->SetKillerMode(true);
@@ -517,7 +515,6 @@ bool CPVPManager::CanAttack(LPCHARACTER pkChr, LPCHARACTER pkVictim)
 				break;
 
 			case PK_MODE_FREE:
-				//if (!g_iUseLocale)
 				if (1)
 				{
 					if (pkVictim->GetAlignment() >= 0)

@@ -338,39 +338,13 @@ void DBManager::AnalyzeReturnQuery(SQLMsg * pMsg)
 
 					char szCreateDate[256] = "00000000";
 
-					if (!g_iUseLocale)
-					{
-						str_to_number(aiPremiumTimes[PREMIUM_EXP], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_ITEM], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_SAFEBOX], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_AUTOLOOT], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_FISH_MIND], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_MARRIAGE_FAST], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_GOLD], row[col++]);
-					}
-					else
-					{
-						str_to_number(aiPremiumTimes[PREMIUM_EXP], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_ITEM], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_SAFEBOX], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_AUTOLOOT], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_FISH_MIND], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_MARRIAGE_FAST], row[col++]);
-						str_to_number(aiPremiumTimes[PREMIUM_GOLD], row[col++]);
-
-
-						long retValue = 0;
-						str_to_number(retValue, row[col]);
-
-						time_t create_time = retValue;
-						struct tm _tmbuf;
-						localtime_r(&create_time, &_tmbuf);
-						strftime(szCreateDate, 255, "%Y%m%d", &_tmbuf);
-
-						sys_log(0, "Create_Time %d %s", retValue, szCreateDate);
-						sys_log(0, "Block Time %d ", strncmp(szCreateDate, g_stBlockDate.c_str(), 8));
-
-					}
+					str_to_number(aiPremiumTimes[PREMIUM_EXP], row[col++]);
+					str_to_number(aiPremiumTimes[PREMIUM_ITEM], row[col++]);
+					str_to_number(aiPremiumTimes[PREMIUM_SAFEBOX], row[col++]);
+					str_to_number(aiPremiumTimes[PREMIUM_AUTOLOOT], row[col++]);
+					str_to_number(aiPremiumTimes[PREMIUM_FISH_MIND], row[col++]);
+					str_to_number(aiPremiumTimes[PREMIUM_MARRIAGE_FAST], row[col++]);
+					str_to_number(aiPremiumTimes[PREMIUM_GOLD], row[col++]);
 
 					int nPasswordDiff = strcmp(szEncrytPassword, szPassword);
 

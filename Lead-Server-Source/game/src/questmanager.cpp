@@ -135,16 +135,8 @@ namespace quest
 			m_mapNPC[0].Set(0, "notarget");
 		}
 
-		if (g_iUseLocale)
-		{
-			SetEventFlag("guild_withdraw_delay", 1);
-			SetEventFlag("guild_disband_delay", 1);
-		}
-		else
-		{
-			SetEventFlag("guild_withdraw_delay", 3);
-			SetEventFlag("guild_disband_delay", 7);
-		}
+		SetEventFlag("guild_withdraw_delay", 3);
+		SetEventFlag("guild_disband_delay", 7);
 		return true;
 	}
 

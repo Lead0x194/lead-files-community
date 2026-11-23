@@ -75,13 +75,6 @@ void CInputLogin::Login(LPDESC d, const char * data)
 
 	TPacketGCLoginFailure failurePacket;
 
-	if (g_iUseLocale && !test_server)
-	{
-		failurePacket.header = HEADER_GC_LOGIN_FAILURE;
-		strlcpy(failurePacket.szStatus, "VERSION", sizeof(failurePacket.szStatus));
-		d->Packet(&failurePacket, sizeof(TPacketGCLoginFailure));
-		return;
-	}
 
 	if (g_bNoMoreClient)
 	{

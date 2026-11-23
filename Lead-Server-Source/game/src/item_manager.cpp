@@ -1265,7 +1265,7 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 			}
 		}
 
-		if (GetDropPerKillPct(100, g_iUseLocale ? 2000 : 800, iDeltaPercent, "2006_drop") >= number(1, iRandRange))
+		if (GetDropPerKillPct(100, 800, iDeltaPercent, "2006_drop") >= number(1, iRandRange))
 		{
 			sys_log(0, "HEXAGONAL_BOX DROP EVENT ");
 
@@ -1277,7 +1277,7 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 		}
 
 		// Hexagonal Box Event
-		if (GetDropPerKillPct(100, g_iUseLocale ? 2000 : 800, iDeltaPercent, "2007_drop") >= number(1, iRandRange))
+		if (GetDropPerKillPct(100, 800, iDeltaPercent, "2007_drop") >= number(1, iRandRange))
 		{
 			sys_log(0, "HEXAGONAL_BOX DROP EVENT ");
 
@@ -1309,7 +1309,7 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 		}
 
 		// Valentine's Day Event. Changed min value to 1 per OGE request. (Other events left as is for now.)
-		if (GetDropPerKillPct(1, g_iUseLocale ? 2000 : 800, iDeltaPercent, "valentine_drop") >= number(1, iRandRange))
+		if (GetDropPerKillPct(1, 800, iDeltaPercent, "valentine_drop") >= number(1, iRandRange))
 		{
 		sys_log(0, "EVENT VALENTINE_DROP");
 
@@ -1321,7 +1321,7 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 	}
 
 	// ice cream event
-	if (GetDropPerKillPct(100, g_iUseLocale ? 2000 : 800, iDeltaPercent, "icecream_drop") >= number(1, iRandRange))
+	if (GetDropPerKillPct(100, 800, iDeltaPercent, "icecream_drop") >= number(1, iRandRange))
 	{
 		const static DWORD icecream = 50123;
 
@@ -1350,7 +1350,7 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 	//		vec_item.push_back(item);
 	//}
 
-	if ( GetDropPerKillPct(100, g_iUseLocale ? 2000 : 800, iDeltaPercent, "halloween_drop") >= number(1, iRandRange) )
+	if ( GetDropPerKillPct(100, 800, iDeltaPercent, "halloween_drop") >= number(1, iRandRange) )
 	{
 		const static DWORD halloween_item = 30321;
 
@@ -1358,7 +1358,7 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 			vec_item.push_back(item);
 	}
 	
-	if ( GetDropPerKillPct(100, g_iUseLocale ? 2000 : 800, iDeltaPercent, "ramadan_drop") >= number(1, iRandRange) )
+	if ( GetDropPerKillPct(100, 800, iDeltaPercent, "ramadan_drop") >= number(1, iRandRange) )
 	{
 		const static DWORD ramadan_item = 30315;
 
@@ -1366,7 +1366,7 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 			vec_item.push_back(item);
 	}
 
-	if ( GetDropPerKillPct(100, g_iUseLocale ? 2000 : 800, iDeltaPercent, "easter_drop") >= number(1, iRandRange) )
+	if ( GetDropPerKillPct(100, 800, iDeltaPercent, "easter_drop") >= number(1, iRandRange) )
 	{
 		const static DWORD easter_item_base = 50160;
 
@@ -1375,7 +1375,7 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 	}
 
 	// world cup event
-	if ( GetDropPerKillPct(100, g_iUseLocale ? 2000 : 800, iDeltaPercent, "football_drop") >= number(1, iRandRange) )
+	if ( GetDropPerKillPct(100, 800, iDeltaPercent, "football_drop") >= number(1, iRandRange) )
 	{
 		const static DWORD football_item = 50096;
 
@@ -1384,7 +1384,7 @@ bool ITEM_MANAGER::GetDropPct(LPCHARACTER pkChr, LPCHARACTER pkKiller, OUT int& 
 	}
 
 	// white day event
-	if (GetDropPerKillPct(100, g_iUseLocale ? 2000 : 800, iDeltaPercent, "whiteday_drop") >= number(1, iRandRange))
+	if (GetDropPerKillPct(100, 800, iDeltaPercent, "whiteday_drop") >= number(1, iRandRange))
 	{
 		sys_log(0, "EVENT WHITEDAY_DROP");
 		const static DWORD whiteday_items[2] = { ITEM_WHITEDAY_ROSE, ITEM_WHITEDAY_CANDY };

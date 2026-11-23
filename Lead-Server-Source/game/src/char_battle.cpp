@@ -318,14 +318,7 @@ void CHARACTER::DeathPenalty(BYTE bTown)
 
 		if (bTown)
 		{
-			if (g_iUseLocale)
-			{
-				iLoss = 0;
-			}
-			else
-			{
-				iLoss -= iLoss / 3;
-			}
+			iLoss -= iLoss / 3;
 		}
 
 		if (IsEquipUniqueItem(UNIQUE_ITEM_TEARDROP_OF_GODNESS))
@@ -1272,35 +1265,12 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				{
 					int iNoPenaltyProb = 0;
 
-					if (g_iUseLocale)
-					{
-						if (pkKiller->GetAlignment() >= 0)	// 1/3 percent down
-							iNoPenaltyProb = 33;
-						else				// 4/5 percent down
-							iNoPenaltyProb = 20;
-					}
 
 					if (number(1, 100) < iNoPenaltyProb)
 						pkKiller->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You did not drop any Item(s) as you are protected by the Dragon God."));
 					else
 					{
-						if (g_iUseLocale && pkKiller->GetParty())
-						{
-							FPartyAlignmentCompute f(-20000, pkKiller->GetX(), pkKiller->GetY());
-							pkKiller->GetParty()->ForEachOnlineMember(f);
-
-							if (f.m_iCount == 0)
-								pkKiller->UpdateAlignment(-20000);
-							else
-							{
-								sys_log(0, "ALIGNMENT PARTY count %d amount %d", f.m_iCount, f.m_iAmount);
-
-								f.m_iStep = 1;
-								pkKiller->GetParty()->ForEachOnlineMember(f);
-							}
-						}
-						else
-							pkKiller->UpdateAlignment(-20000);
+						pkKiller->UpdateAlignment(-20000);
 					}
 				}
 

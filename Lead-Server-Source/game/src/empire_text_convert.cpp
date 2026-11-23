@@ -55,33 +55,23 @@ void ConvertEmpireText(DWORD dwEmpireID, char* szText, size_t len, int iPct)
 		{
 			if (*pbText & 0x80)
 			{
-				if (g_iUseLocale)
+				if (pbText[0] >= 0xB0 && pbText[0] <= 0xC8 && pbText[1] >= 0xA1 && pbText[1] <= 0xFE)
 				{
-					static char s_cChinaTable[][3] = {"t","e","s","t","o" };
-					int n = number(0, 4);
-					pbText[0] = s_cChinaTable[n][0];
-					pbText[1] = s_cChinaTable[n][1];
+					UINT uHanPos = (pbText[0] - 0xB0) * (0xFE - 0xA1 + 1) + (pbText[1] - 0xA1);
+					pbText[0] = rkTextConvTable.aacHan[uHanPos][0];
+					pbText[1] = rkTextConvTable.aacHan[uHanPos][1];
 				}
-				else
+				else if ( pbText[0] == 0xA4 )
 				{
-					if (pbText[0] >= 0xB0 && pbText[0] <= 0xC8 && pbText[1] >= 0xA1 && pbText[1] <= 0xFE)
+					if ( pbText[1] >=0xA1 && pbText[1] <= 0xBE )
 					{
-						UINT uHanPos = (pbText[0] - 0xB0) * (0xFE - 0xA1 + 1) + (pbText[1] - 0xA1);
-						pbText[0] = rkTextConvTable.aacHan[uHanPos][0];
-						pbText[1] = rkTextConvTable.aacHan[uHanPos][1];
+						pbText[0] = rkTextConvTable.aacJaum[pbText[1]-0xA1][0];
+						pbText[1] = rkTextConvTable.aacJaum[pbText[1]-0xA1][1];
 					}
-					else if ( pbText[0] == 0xA4 )
+					else if ( pbText[1] >= 0xBF && pbText[1] <= 0xD3 )
 					{
-						if ( pbText[1] >=0xA1 && pbText[1] <= 0xBE )
-						{
-							pbText[0] = rkTextConvTable.aacJaum[pbText[1]-0xA1][0];
-							pbText[1] = rkTextConvTable.aacJaum[pbText[1]-0xA1][1];
-						}
-						else if ( pbText[1] >= 0xBF && pbText[1] <= 0xD3 )
-						{
-							pbText[0] = rkTextConvTable.aacMoum[pbText[1]-0xBF][0];
-							pbText[1] = rkTextConvTable.aacMoum[pbText[1]-0xBF][1];
-						}
+						pbText[0] = rkTextConvTable.aacMoum[pbText[1]-0xBF][0];
+						pbText[1] = rkTextConvTable.aacMoum[pbText[1]-0xBF][1];
 					}
 				}
 
