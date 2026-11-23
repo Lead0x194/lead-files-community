@@ -39,15 +39,15 @@ A key that is missing in a language shows its own name and is written to `syserr
 ## Add a server message
 
 1. Pick a free number from 5000 upwards.
-2. Add `number<TAB>text` to `locale_string.txt` in every language folder, and the English line to `Lead-Serverfiles/share/common/locale_string.txt`.
+2. Add `number<TAB>text` to `locale_string.txt` in every language folder.
 3. Send it from the server as a tag: `ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5400;%s;%d]", name, count);`. The values after the number fill the placeholders of the text in order.
 4. For item, monster and skill names pass `LC_ITEM(vnum)`, `LC_MOB(vnum)` or `LC_SKILL(vnum)` instead of a name, so the client shows them in its own language.
 
 ## Add a quest text
 
 1. Add `number<TAB>text` to `locale_quest.txt` in every language folder.
-2. Add the key to `Lead-Serverfiles/share/common/translate.lua` as `gameforge.my_quest.my_key = "[LC;number]"`, or `"[LC;number;%s]"` when the text has placeholders.
-3. Use the key in the quest as before.
+2. Give the number a name in `Lead-Serverfiles/share/common/translate.lua`: `gameforge.my_quest.my_key = "[LC;number]"`, or `"[LC;number;%s]"` when the text has placeholders. The file holds no text, only these names, so quests stay readable.
+3. Use the name in the quest: `say(gameforge.my_quest.my_key)`.
 
 ## Add a language
 
