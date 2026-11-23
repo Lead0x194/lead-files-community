@@ -11,34 +11,34 @@ quest subquest_44 begin
 		when letter begin
 			local v = find_npc_by_vnum(20012)
 			if v!= 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_44._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;8182]")
 			end
 		end
 
 
-		when __TARGET__.target.click or	20012.chat.gameforge.subquest_44._20_npcChat with pc.level >= 37 begin
+		when __TARGET__.target.click or	20012.chat."[LC;8193]" with pc.level >= 37 begin
 			target.delete("__TARGET__")
-			say_title(gameforge.subquest_08._240_sayTitle)
-			say(gameforge.subquest_44._30_say)
+			say_title("[LC;7208]")
+			say("[LC;8204]")
 			wait()
-			say_title(gameforge.subquest_08._240_sayTitle)
-			say(gameforge.subquest_44._40_say)
-			local s= select(gameforge.subquest_44._50_select, gameforge.find_brother_article._100_select)
+			say_title("[LC;7208]")
+			say("[LC;8215]")
+			local s= select("[LC;8226]", "[LC;931]")
 			if 2==s then
-				say(gameforge.subquest_44._60_say)
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;8229]")
+				local a= select("[LC;2059]", "[LC;2035]")
 				if 2==a then
-					say_title(gameforge.subquest_08._240_sayTitle)
-					say(gameforge.subquest_44._70_say)
+					say_title("[LC;7208]")
+					say("[LC;8230]")
 					return
 				end
-				say_title(gameforge.subquest_08._240_sayTitle)
-				say(gameforge.subquest_44._80_say)
+				say_title("[LC;7208]")
+				say("[LC;8231]")
 				set_state(__GIVEUP__)
 				return
 			end
-			say_title(gameforge.subquest_08._240_sayTitle)
-			say(gameforge.subquest_44._90_say)
+			say_title("[LC;7208]")
+			say("[LC;8232]")
 			set_state(go_to_desert)
 			pc.setqf("kill_count", 0)
 		end
@@ -46,15 +46,15 @@ quest subquest_44 begin
 
     state go_to_desert begin
 		when letter begin
-		    send_letter(gameforge.subquest_44._100_sendLetter)
+		    send_letter("[LC;8181]")
 		end
 		when button or info begin
-			say_title(gameforge.subquest_44._20_npcChat)
-			say(gameforge.subquest_44._110_say)
+			say_title("[LC;8193]")
+			say("[LC;8183]")
 		end
 
 		when 20012.click begin
-			say(gameforge.subquest_44._120_say)
+			say("[LC;8184]")
 		end
 
 
@@ -70,58 +70,58 @@ quest subquest_44 begin
 	end
 	state fail_find_bell begin
 		when letter begin
-			send_letter(gameforge.subquest_44._130_sendLetter)
+			send_letter("[LC;8185]")
 		end
 
 		when info or  button begin
-			say_title(gameforge.subquest_44._140_sayTitle)
-			say(gameforge.subquest_44._150_say)
+			say_title("[LC;8186]")
+			say("[LC;8187]")
 			set_state(go_to_boy)
 		end
 	end
 
     state go_to_boy begin
 		when letter begin
-		  send_letter(gameforge.subquest_44._160_sendLetter)
+		  send_letter("[LC;8188]")
 
 		  local v = find_npc_by_vnum(20014)
 
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_44._170_targetVid)
+				target.vid("__TARGET__", v, "[LC;8189]")
 			end
 
 		end
 		when button or info begin
-			say_title(gameforge.subquest_44._160_sendLetter)
-			say(gameforge.subquest_44._180_say)
+			say_title("[LC;8188]")
+			say("[LC;8190]")
 		end
 
-		when __TARGET__.target.click or	20014.chat.gameforge.subquest_44._190_npcChat begin
+		when __TARGET__.target.click or	20014.chat."[LC;8191]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.npc_talk._680_sayTitle)
-			say(gameforge.subquest_44._200_say)
+			say_title("[LC;6407]")
+			say("[LC;8192]")
 			wait()
-			say_title(gameforge.npc_talk._680_sayTitle)
-			say(gameforge.subquest_44._210_say)
+			say_title("[LC;6407]")
+			say("[LC;8194]")
 			wait()
-			say_title(gameforge.npc_talk._680_sayTitle)
-			say(gameforge.subquest_44._220_say)
-			local s= select(gameforge.subquest_44._50_select, gameforge.find_brother_article._100_select)
+			say_title("[LC;6407]")
+			say("[LC;8195]")
+			local s= select("[LC;8226]", "[LC;931]")
 			if 2==s then
-				say(gameforge.subquest_44._230_say)
-				local a=  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;8196]")
+				local a=  select("[LC;2059]", "[LC;2035]")
 				if 2==a then
-					say_title(gameforge.npc_talk._680_sayTitle)
-					say(gameforge.subquest_44._240_say)
+					say_title("[LC;6407]")
+					say("[LC;8197]")
 					return
 				end
-				say_title(gameforge.npc_talk._680_sayTitle)
-				say(gameforge.subquest_44._250_say)
+				say_title("[LC;6407]")
+				say("[LC;8198]")
 				set_state(report_YuRang)
 				return
 			end
-			say_title(gameforge.npc_talk._680_sayTitle)
-			say(gameforge.subquest_44._260_say)
+			say_title("[LC;6407]")
+			say("[LC;8199]")
 			set_state(attach_bell)
 		end
     end
@@ -129,31 +129,31 @@ quest subquest_44 begin
     state report_YuRang begin
 
 		when letter begin
-		   send_letter(gameforge.subquest_44._270_sendLetter)
+		   send_letter("[LC;8200]")
 
 		   local v=find_npc_by_vnum(20012)
 			if v!=0 then
-				target.vid("__TARGET__", v, gameforge.subquest_44._270_sendLetter)
+				target.vid("__TARGET__", v, "[LC;8200]")
 			end
 
 		end
 		when button or info begin
-			say_title(gameforge.subquest_44._270_sendLetter)
-			say(gameforge.subquest_44._280_say)
+			say_title("[LC;8200]")
+			say("[LC;8201]")
 		end
 
-		when 20014.chat.gameforge.subquest_44._290_npcChat begin
-			say_title(gameforge.npc_talk._680_sayTitle)
-			say(gameforge.subquest_44._300_say)
+		when 20014.chat."[LC;8202]" begin
+			say_title("[LC;6407]")
+			say("[LC;8203]")
 		end
-		when __TARGET__.target.click or	20012.chat.gameforge.subquest_44._310_npcChat begin
+		when __TARGET__.target.click or	20012.chat."[LC;8205]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.subquest_08._240_sayTitle)
-			say(gameforge.subquest_44._320_say)
-			say_reward(gameforge.subquest_44._330_sayReward)
-						say_reward(gameforge.subquest_44._340_sayReward)
+			say_title("[LC;7208]")
+			say("[LC;8206]")
+			say_reward("[LC;8207]")
+						say_reward("[LC;8208]")
 			pc.change_money(30000)
-			say_reward(gameforge.subquest_44._350_sayReward)
+			say_reward("[LC;8209]")
 			pc.give_exp2(350000)
 
 
@@ -164,16 +164,16 @@ quest subquest_44 begin
 
     state attach_bell begin
 		when letter begin
-		    send_letter(gameforge.subquest_44._360_sendLetter)
+		    send_letter("[LC;8210]")
 		end
 
 		when button or info begin
-			say_title(gameforge.subquest_44._360_sendLetter)
-			say(gameforge.subquest_44._370_say)
+			say_title("[LC;8210]")
+			say("[LC;8211]")
 		end
-		when 20014.chat.gameforge.subquest_44._380_npcChat begin
-			say_title(gameforge.npc_talk._680_sayTitle)
-			say(gameforge.subquest_44._390_say)
+		when 20014.chat."[LC;8212]" begin
+			say_title("[LC;6407]")
+			say("[LC;8213]")
 		end
 
 		when 2001.kill or 2002.kill or 2003.kill or 2004.kill or  2005.kill  begin
@@ -181,7 +181,7 @@ quest subquest_44 begin
 			pc.setqf("kill_count", cur_kill_count)
 
 			if cur_kill_count>=number(10, 50) then
-				send_letter(gameforge.subquest_44._400_sendLetter)
+				send_letter("[LC;8214]")
 				set_state(report_girl_lie)
 			end
 		end
@@ -189,54 +189,54 @@ quest subquest_44 begin
 	end
     state report_girl_lie begin
 		when letter begin
-			send_letter(gameforge.subquest_44._270_sendLetter)
+			send_letter("[LC;8200]")
 
 			local v=find_npc_by_vnum(20012)
 			if v!=0 then
-				target.vid("__TARGET__", v, gameforge.subquest_08._210_makequestbutton)
+				target.vid("__TARGET__", v, "[LC;7205]")
 			end
 
 		end
 
 		when button or info begin
-			say_title(gameforge.subquest_44._270_sendLetter)
-			say(gameforge.subquest_44._410_say)
+			say_title("[LC;8200]")
+			say("[LC;8216]")
 		end
 
-		when 20014.chat.gameforge.subquest_44._420_npcChat begin
-			say_title(gameforge.npc_talk._680_sayTitle)
-			say(gameforge.subquest_44._430_say)
+		when 20014.chat."[LC;8217]" begin
+			say_title("[LC;6407]")
+			say("[LC;8218]")
 		end
-		when __TARGET__.target.click or	20012.chat.gameforge.subquest_44._440_npcChat begin
+		when __TARGET__.target.click or	20012.chat."[LC;8219]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.subquest_08._240_sayTitle)
-			say(gameforge.subquest_44._450_say)
+			say_title("[LC;7208]")
+			say("[LC;8220]")
 
 			set_state(report_boy_lie)
 		end
 	end
     state report_boy_lie begin
 		when letter begin
-			send_letter(gameforge.subquest_44._460_sendLetter)
+			send_letter("[LC;8221]")
 			local v=find_npc_by_vnum(20014)
 			if v!=0 then
-				target.vid("__TARGET__", v, gameforge.subquest_44._470_targetVid)
+				target.vid("__TARGET__", v, "[LC;8222]")
 			end
 		end
 
 		when button or info begin
-			say_title(gameforge.subquest_44._460_sendLetter)
-			say(gameforge.subquest_44._480_say)
+			say_title("[LC;8221]")
+			say("[LC;8223]")
 		end
 
-		when __TARGET__.target.click or	20014.chat.gameforge.subquest_44._490_npcChat begin
+		when __TARGET__.target.click or	20014.chat."[LC;8224]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.npc_talk._680_sayTitle)
-			say(gameforge.subquest_44._500_say)
-			say_reward(gameforge.subquest_44._510_sayReward)
+			say_title("[LC;6407]")
+			say("[LC;8225]")
+			say_reward("[LC;8227]")
 			pc.change_money(30000)
 
-			say_reward(gameforge.subquest_44._520_sayReward)
+			say_reward("[LC;8228]")
 			pc.give_exp2(700000)
 
 

@@ -11,140 +11,140 @@ quest subquest_47  begin
 			local v=find_npc_by_vnum(20355)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.subquest_47._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;8276]")
 			end
 		end
-		when __TARGET__.target.click or	20355.chat.gameforge.subquest_47._20_npcChat with  pc.level >= 50 begin
+		when __TARGET__.target.click or	20355.chat."[LC;8289]" with  pc.level >= 50 begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_47._30_say)
+			say_title("[LC;4082]")
+			say("[LC;8305]")
 			-- select: take quest / give up quest
-			local r= select(gameforge.find_brother_article._90_select, gameforge.subquest_01._60_select)
+			local r= select("[LC;971]", "[LC;6998]")
 			-- give up quest
 			if 2==r then
-				say(gameforge.subquest_47._40_say) -- give up yes/no
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;8309]") -- give up yes/no
+				local a= select("[LC;2059]", "[LC;2035]")
 				-- dont give up
 				if 2==a then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_47._50_say)
+					say_title("[LC;4082]")
+					say("[LC;8310]")
 					return
 				end
 				-- give up
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_47._60_say)
+				say_title("[LC;4082]")
+				say("[LC;8311]")
 				set_state(__GIVEUP__)
 				return
 			end
 			-- dont give up quest
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_47._70_say)
+			say_title("[LC;4082]")
+			say("[LC;8312]")
 			wait()
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_47._80_say) -- displays the riddle text
+			say_title("[LC;4082]")
+			say("[LC;8313]") -- displays the riddle text
 			wait()
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_47._90_say)
+			say_title("[LC;4082]")
+			say("[LC;8314]")
 			-- select: answer question / i dont know / show again
-			local s= select(gameforge.subquest_47._100_select, gameforge.subquest_47._110_select, gameforge.subquest_47._115_select)
+			local s= select("[LC;8274]", "[LC;8277]", "[LC;8278]")
 			-- i dont know
 			if 2==s then
-				say(gameforge.subquest_47._120_say)
+				say("[LC;8279]")
 				-- select: give up yes / no
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				local a= select("[LC;2059]", "[LC;2035]")
 				-- show riddle again
 				if  2==a then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_47._130_say)
+					say_title("[LC;4082]")
+					say("[LC;8280]")
 					return
 				end
 				-- give up quest
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_47._140_say)
+				say_title("[LC;4082]")
+				say("[LC;8281]")
 				set_state(__GIVEUP__)
 				return
 			end
 			-- show the riddle again
 			if 3==s then
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_47._150_say) -- displays the riddle text again
+				say_title("[LC;4082]")
+				say("[LC;8282]") -- displays the riddle text again
 				wait()
 			end
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_47._160_say)
+			say_title("[LC;4082]")
+			say("[LC;8283]")
 			-- input answer
-			local answer = select( gameforge.subquest_47._302_answer_wrong, gameforge.subquest_47._304_answer_wrong, gameforge.subquest_47._301_answer_correct, gameforge.subquest_47._303_answer_wrong, gameforge.subquest_47._305_answer_dontknow)
+			local answer = select( "[LC;8301]", "[LC;8303]", "[LC;8300]", "[LC;8302]", "[LC;8304]")
 			-- input correct answer -> quest complete
 			if 3 == answer  then
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_47._170_say)
-				say_reward(gameforge.subquest_47._180_sayReward)
+				say_title("[LC;4082]")
+				say("[LC;8284]")
+				say_reward("[LC;8285]")
 				pc.give_exp2(2300000)
 				clear_letter()
 			    set_state(__COMPLETE__)
 				return
 			-- input no answer
 			elseif 5 == answer then
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_47._190_say)
+				say_title("[LC;4082]")
+				say("[LC;8286]")
 				-- select: try again / i dont know
-				local answer = select(gameforge.subquest_47._200_select, gameforge.subquest_47._210_select)
+				local answer = select("[LC;8287]", "[LC;8290]")
 				-- i dont know
 				if 2==answer then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_47._220_say)
+					say_title("[LC;4082]")
+					say("[LC;8291]")
 					return
 				end
 				-- try again
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_47._230_say)
-				local answer = select( gameforge.subquest_47._304_answer_wrong, gameforge.subquest_47._301_answer_correct, gameforge.subquest_47._303_answer_wrong, gameforge.subquest_47._302_answer_wrong, gameforge.subquest_47._305_answer_dontknow)
+				say_title("[LC;4082]")
+				say("[LC;8292]")
+				local answer = select( "[LC;8303]", "[LC;8300]", "[LC;8302]", "[LC;8301]", "[LC;8304]")
 				-- input correct answer -> quest complete
 				if 2==answer then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_47._240_say)
-					say_reward(gameforge.subquest_47._250_sayReward)
+					say_title("[LC;4082]")
+					say("[LC;8293]")
+					say_reward("[LC;8294]")
 					pc.give_exp2(2300000)
 					clear_letter()
 					set_state(__COMPLETE__)
 					return
 				-- input wrong answer
 				else
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_47._260_say)
+					say_title("[LC;4082]")
+					say("[LC;8295]")
 					return
 				end
 			-- wrong answer
 			else
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_47._270_say)
+				say_title("[LC;4082]")
+				say("[LC;8296]")
 				-- select: try again / i dont know
-				local a= select(gameforge.subquest_47._280_select, gameforge.subquest_47._290_select)
+				local a= select("[LC;8297]", "[LC;8298]")
 				-- i dont know -> give up
 				if 2==a then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_47._220_say)
+					say_title("[LC;4082]")
+					say("[LC;8291]")
 					set_state(__GIVEUP__)
 					return
 				end
 				-- try again
-				say(gameforge.subquest_47._300_say)
-				local answer = select( gameforge.subquest_47._301_answer_correct, gameforge.subquest_47._302_answer_wrong, gameforge.subquest_47._303_answer_wrong, gameforge.subquest_47._304_answer_wrong, gameforge.subquest_47._305_answer_dontknow)
+				say("[LC;8299]")
+				local answer = select( "[LC;8300]", "[LC;8301]", "[LC;8302]", "[LC;8303]", "[LC;8304]")
 				-- correct answer
 				if 1==answer then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_47._310_say)
-					say_reward(gameforge.subquest_47._180_sayReward)
+					say_title("[LC;4082]")
+					say("[LC;8306]")
+					say_reward("[LC;8285]")
 					pc.give_exp2(2300000)
-					say_reward(gameforge.subquest_47._320_sayReward)
+					say_reward("[LC;8307]")
 					pc.change_money(20000)
 					clear_letter()
 					set_state(__COMPLETE__)
 					return
 				-- no or wrong answer -> retry by clicking captain (20355.chat) again
 				else
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_47._330_say)
+					say_title("[LC;4082]")
+					say("[LC;8308]")
 					return
 				end
 			end

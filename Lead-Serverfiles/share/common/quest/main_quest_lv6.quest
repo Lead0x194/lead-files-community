@@ -11,31 +11,31 @@ quest main_quest_lv6 begin
 			local v=find_npc_by_vnum(20354)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv6._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;4501]")
 			end
 		end
 		when letter begin
-			send_letter(gameforge.main_quest_lv6._10_targetVid)
+			send_letter("[LC;4501]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv6._10_targetVid)
-			say(gameforge.main_quest_lv6._20_sayReward)
+			say_title("[LC;4501]")
+			say("[LC;4512]")
 			say_item_vnum(30070)
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
-			say(gameforge.main_quest_lv6._30_say)
+			say_title("[LC;4066]")
+			say("[LC;4520]")
 			wait()
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
-			say(gameforge.main_quest_lv6._40_say)
+			say_title("[LC;4066]")
+			say("[LC;4521]")
 			wait()
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-			say_reward(gameforge.main_quest_lv6._50_sayReward)
-			say_reward(string.format(gameforge.main_quest_lv6._60_sayReward, 1300))
-			say_reward(string.format(gameforge.main_quest_lv6._70_sayReward, 1500))
-			say_reward(string.format(gameforge.main_quest_lv27._140_sayReward, item_name(30070)))
+			say_title("[LC;44]")
+			say_reward("[LC;4522]")
+			say_reward(string.format("[LC;4523;%s]", 1300))
+			say_reward(string.format("[LC;4524;%s]", 1500))
+			say_reward(string.format("[LC;4184;%s]", item_name(30070)))
 			say_item_vnum(30070)
 
 			set_state ( gotosmith )
@@ -48,25 +48,25 @@ quest main_quest_lv6 begin
 			local v=find_npc_by_vnum(20016)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv6._80_targetVid)
+				target.vid("__TARGET__", v, "[LC;4525]")
 			end
 		end
 		when letter begin
-			send_letter(gameforge.main_quest_lv6._90_sendLetter)
+			send_letter("[LC;4526]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv6._90_sendLetter)
-			say(gameforge.main_quest_lv6._100_sayReward)
+			say_title("[LC;4526]")
+			say("[LC;4500]")
 		end
 
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv6._110_say)
+			say_title("[LC;27]")
+			say("[LC;4502]")
 			wait()
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv6._120_say)
+			say_title("[LC;27]")
+			say("[LC;4503]")
 			say_item_vnum(30003)
 						set_state ( gotowarehousekeeper )
 
@@ -77,27 +77,27 @@ quest main_quest_lv6 begin
 			local v=find_npc_by_vnum(9005)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv6._130_targetVid)
+				target.vid("__TARGET__", v, "[LC;4504]")
 			end
 		end
 		when letter begin
-			send_letter(gameforge.main_quest_lv6._140_sendLetter)
+			send_letter("[LC;4505]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv6._140_sendLetter)
-			say(gameforge.main_quest_lv6._150_sayReward)
+			say_title("[LC;4505]")
+			say("[LC;4506]")
 			say_item_vnum(30003)
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.main_quest_lv6._160_sayTitle)
-			say(gameforge.main_quest_lv6._170_say)
+			say_title("[LC;4507]")
+			say("[LC;4508]")
 			wait()
-			say_title(gameforge.main_quest_lv6._160_sayTitle)
-			say(gameforge.main_quest_lv6._180_say)
+			say_title("[LC;4507]")
+			say("[LC;4509]")
 			say_item_vnum(30003)
-			say(gameforge.main_quest_lv6._190_say)
+			say("[LC;4510]")
 			set_state ( gotosmith2 )
 		end
 	end
@@ -106,33 +106,33 @@ quest main_quest_lv6 begin
 			local v=find_npc_by_vnum(20016)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv6._80_targetVid)
+				target.vid("__TARGET__", v, "[LC;4525]")
 			end
 		end
 		when letter begin
-			send_letter(gameforge.main_quest_lv6._200_sendLetter)
+			send_letter("[LC;4511]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv6._200_sendLetter)
-			say(gameforge.main_quest_lv6._210_sayReward)
+			say_title("[LC;4511]")
+			say("[LC;4513]")
 			say_item_vnum(30003)
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv6._220_say)
+			say_title("[LC;27]")
+			say("[LC;4514]")
 			wait()
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv6._230_say)
+			say_title("[LC;27]")
+			say("[LC;4515]")
 			wait()
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv6._240_say)
+			say_title("[LC;27]")
+			say("[LC;4516]")
 			wait()
-			say_title(gameforge.locale.reward)
-			say_reward(string.format(gameforge.main_quest_lv6._60_sayReward, 1300))
-			say_reward(string.format(gameforge.main_quest_lv6._70_sayReward, 1500))
-			say_reward(string.format(gameforge.main_quest_lv27._140_sayReward, item_name(30070)))
+			say_title("[LC;3558]")
+			say_reward(string.format("[LC;4523;%s]", 1300))
+			say_reward(string.format("[LC;4524;%s]", 1500))
+			say_reward(string.format("[LC;4184;%s]", item_name(30070)))
 			say_item_vnum(30070)
 			pc.give_exp2(5000)
 			pc.change_money(1500)

@@ -1,37 +1,37 @@
 quest hair_shop begin
 	state start begin
-		when 20021.chat.gameforge.hair_shop._10_npcChat with pc.get_part(PART_HAIR) >= 1001 begin
+		when 20021.chat."[LC;1404]" with pc.get_part(PART_HAIR) >= 1001 begin
 
-			say_title(gameforge.hair_shop._20_sayTitle)
-			say(gameforge.hair_shop._30_say)
+			say_title("[LC;1406]")
+			say("[LC;1407]")
 
-			local a =  select(gameforge.hair_shop._40_select, gameforge.hair_shop._50_select)
+			local a =  select("[LC;1408]", "[LC;1409]")
 			if a == 1 then
 				if pc.money >= 500000 then
 					affect.remove_hair()
 					pc.changemoney(-500000)
-					say_title(gameforge.hair_shop._20_sayTitle)
-					say(gameforge.hair_shop._60_say)
+					say_title("[LC;1406]")
+					say("[LC;1410]")
 					wait()
-					say(gameforge.hair_shop._70_say)
+					say("[LC;1411]")
 					wait()
-					say_title(gameforge.hair_shop._20_sayTitle)
-					say(gameforge.hair_shop._80_say)
+					say_title("[LC;1406]")
+					say("[LC;1412]")
 					wait()
-					say_title(gameforge.hair_shop._20_sayTitle)
-					say(gameforge.hair_shop._90_say)
+					say_title("[LC;1406]")
+					say("[LC;1413]")
 					pc.set_part(PART_HAIR, 0)
 				else
-					say_title(gameforge.hair_shop._20_sayTitle)
-					say(gameforge.hair_shop._100_say)
+					say_title("[LC;1406]")
+					say("[LC;1403]")
 					wait()
 					q.done()
 				end
 			elseif a == 2 then
-				say_title(gameforge.hair_shop._20_sayTitle)
-				say(gameforge.hair_shop._110_say)
+				say_title("[LC;1406]")
+				say("[LC;1405]")
 			else
-				say(string.format(gameforge.find_squareguard._70_say, a))
+				say(string.format("[LC;1020;%s]", a))
 			end
 		end
 	end

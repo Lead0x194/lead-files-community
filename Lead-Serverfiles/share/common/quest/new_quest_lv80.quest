@@ -31,28 +31,28 @@ quest new_quest_lv80 begin
 			local goto_npc = 20023 -- Soon
 			local v=find_npc_by_vnum(goto_npc)
 			if 0!=v then
-				target.vid("__TARGET__", v, gameforge.new_quest_lv80._010_target) -- place questarrow on Soon
+				target.vid("__TARGET__", v, "[LC;6224]") -- place questarrow on Soon
 			end
 		end
 		when __TARGET__.target.click begin -- when Soon is clicked
 			q.start()
-			q.set_title(gameforge.new_quest_lv80._020_set_title)
+			q.set_title("[LC;6225]")
 			target.delete("__TARGET__") -- delete questarrow
-			say_title(gameforge.new_quest_lv80._020_set_title)
-			say(gameforge.new_quest_lv80._030_say)
-			say(gameforge.new_quest_lv80._040_say)
+			say_title("[LC;6225]")
+			say("[LC;6226]")
+			say("[LC;6227]")
 			wait()
 			if pc.get_sex() == 0 then
-				say(gameforge.new_quest_lv80._050_1_say)
+				say("[LC;6228]")
 			else
-				say(gameforge.new_quest_lv80._050_2_say)
+				say("[LC;6229]")
 			end
-			say(string.format(gameforge.new_quest_lv80._060_say, mob_name(2232)))
-			say(gameforge.new_quest_lv80._070_say)
-			say(gameforge.new_quest_lv80._080_say)
+			say(string.format("[LC;6230]", mob_name(2232)))
+			say("[LC;6231]")
+			say("[LC;6232]")
 			wait()
-			say(string.format(gameforge.new_quest_lv80._090_say,new_quest_lv80_amountIce, item_name(30146)))
-			say(string.format(gameforge.new_quest_lv80._100_say, mob_name(new_quest_lv80_mob2), item_name(new_quest_lv80_ice)))
+			say(string.format("[LC;6233;%s]",new_quest_lv80_amountIce, item_name(30146)))
+			say(string.format("[LC;6234]", mob_name(new_quest_lv80_mob2), item_name(new_quest_lv80_ice)))
 			pc.give_item2(new_quest_lv80_figure)
 			-- add giveup
 			-- add asking questions
@@ -70,60 +70,60 @@ quest new_quest_lv80 begin
 			new_quest_lv80_figure = 30183 -- scary wooden figure
 			new_quest_lv80_ember =	30184 -- enchanted ember
 			new_quest_lv80_blackice = 30185 -- black ice
-			send_letter(gameforge.new_quest_lv80._020_set_title)
+			send_letter("[LC;6225]")
 			
 		end
 		
 		when button or info begin
-			say_title(gameforge.new_quest_lv80._110_say_title)
-			say(gameforge.new_quest_lv80._120_say)
+			say_title("[LC;6235]")
+			say("[LC;6236]")
 			if pc.count_item(new_quest_lv80_ice) >= 10 then
-				say(string.format(gameforge.new_quest_lv80._130_say, item_name(new_quest_lv80_ice)))
+				say(string.format("[LC;6237]", item_name(new_quest_lv80_ice)))
 			else
-				say(gameforge.new_quest_lv80._140_say)
+				say("[LC;6238]")
 				say_reward(string.format("%s x", new_quest_lv80_amountIce - pc.count_item(new_quest_lv80_ice)))
 				say_item_vnum(new_quest_lv80_ice) -- icon of item: ice
-				say_reward(string.format(gameforge.new_quest_lv80._150_say_reward, mob_name(new_quest_lv80_mob2)))
+				say_reward(string.format("[LC;6239]", mob_name(new_quest_lv80_mob2)))
 				wait()
 			end
 			if pc.count_item(new_quest_lv80_ember) == 1 then
-				say(string.format(gameforge.new_quest_lv80._160_say, item_name(new_quest_lv80_figure), item_name(new_quest_lv80_ember)))
+				say(string.format("[LC;6240]", item_name(new_quest_lv80_figure), item_name(new_quest_lv80_ember)))
 			else
-				say(gameforge.new_quest_lv80._170_say)
+				say("[LC;6241]")
 				say_reward("1 x")
 				say_item_vnum(new_quest_lv80_ember) -- icon of item: enchanted ember
-				say_reward(gameforge.new_quest_lv80._180_say_reward)
+				say_reward("[LC;6242]")
 				say_item_vnum(new_quest_lv80_figure) -- icon of item: scary wooden figure
-				say_reward(string.format(gameforge.new_quest_lv80._190_say_reward, item_name(new_quest_lv80_figure), mob_name(new_quest_lv80_mob1)))
+				say_reward(string.format("[LC;6243]", item_name(new_quest_lv80_figure), mob_name(new_quest_lv80_mob1)))
 			end
 		end
 		
-		when 20023.chat.gameforge.new_quest_lv80._020_set_title begin -- player talks to Soon
+		when 20023.chat."[LC;6225]" begin -- player talks to Soon
 			if pc.getqf("notenchanted") == 0 then -- has the enchanted ember
 				if pc.count_item(new_quest_lv80_ice) >= new_quest_lv80_amountIce and pc.count_item(new_quest_lv80_figure) == 0 and pc.count_item(new_quest_lv80_ember) == 1 then 
-					say(string.format(gameforge.new_quest_lv80._200_say, item_name(new_quest_lv80_ember), item_name(new_quest_lv80_ice)))
+					say(string.format("[LC;6244]", item_name(new_quest_lv80_ember), item_name(new_quest_lv80_ice)))
 					wait()
-					say(gameforge.new_quest_lv80._210_say)
-					say(string.format(gameforge.new_quest_lv80._220_say, item_name(new_quest_lv80_blackice)))
-					say(gameforge.new_quest_lv80._230_say)
-					say(string.format(gameforge.new_quest_lv80._240_say, item_name(new_quest_lv80_blackice), mob_name(30123)))
+					say("[LC;6245]")
+					say(string.format("[LC;6246]", item_name(new_quest_lv80_blackice)))
+					say("[LC;6247]")
+					say(string.format("[LC;6248]", item_name(new_quest_lv80_blackice), mob_name(30123)))
 					pc.remove_item(new_quest_lv80_ember, 1)
 					pc.remove_item(new_quest_lv80_ice, new_quest_lv80_amountIce)
 					pc.give_item2(new_quest_lv80_blackice)
 					set_state(findshrine)
 				elseif pc.count_item(new_quest_lv80_ice) < new_quest_lv80_amountIce and pc.count_item(new_quest_lv80_figure) == 0 and pc.count_item(new_quest_lv80_ember) == 1 then
-					say(string.format(gameforge.new_quest_lv80._250_say, new_quest_lv80_amountIce - pc.count_item(new_quest_lv80_ice), item_name(new_quest_lv80_ice)))
+					say(string.format("[LC;6249;%s]", new_quest_lv80_amountIce - pc.count_item(new_quest_lv80_ice), item_name(new_quest_lv80_ice)))
 				else
-					notice(gameforge.new_quest_lv80._260_notice)
+					notice("[LC;6250]")
 				end
 			else -- has no ember or not the correct one
 				if pc.count_item(new_quest_lv80_ice) >= new_quest_lv80_amountIce and pc.count_item(new_quest_lv80_figure) == 1 and pc.count_item(new_quest_lv80_ember) == 0 then
-					say(gameforge.new_quest_lv80._270_say)
+					say("[LC;6251]")
 				elseif pc.count_item(new_quest_lv80_ice) == 0 and pc.count_item(new_quest_lv80_figure) == 1 and pc.count_item(new_quest_lv80_ember) == 0 then
 					-- has done nothing yet
-					say(gameforge.new_quest_lv80._280_say)
+					say("[LC;6252]")
 				else
-					say(gameforge.new_quest_lv80._290_say)
+					say("[LC;6253]")
 				end
 			end
 		end
@@ -132,7 +132,7 @@ quest new_quest_lv80 begin
 			if pc.count_item(new_quest_lv80_figure) >= 1 and math.random(1,1000) <= new_quest_lv80_dropProb then
 				pc.remove_item(new_quest_lv80_figure, 1)
 				pc.give_item2(new_quest_lv80_ember)
-				send_letter(gameforge.new_quest_lv80._110_say_title)
+				send_letter("[LC;6235]")
 				pc.setqf("notenchanted", 0)
 			else
 			end
@@ -141,7 +141,7 @@ quest new_quest_lv80 begin
 		when 1106.kill begin -- ice
 			if pc.count_item(new_quest_lv80_ice) < new_quest_lv80_amountIce and math.random(1,1000) <= new_quest_lv80_dropProb*4 then
 				pc.give_item2(new_quest_lv80_ice)
-				send_letter(gameforge.new_quest_lv80._110_say_title)
+				send_letter("[LC;6235]")
 			else
 			end
 		end
@@ -168,34 +168,34 @@ quest new_quest_lv80 begin
 			if 1 == new_quest_lv80.is_heavens_cave() then -- 
 				local v=find_npc_by_vnum(30123) -- dark shrine
 				if 0!=v then
-					target.vid("__TARGET3__", v, gameforge.new_quest_lv80._300_target) -- place questarrow on dark shrine
+					target.vid("__TARGET3__", v, "[LC;6254]") -- place questarrow on dark shrine
 					q.start()
-					q.set_title(gameforge.new_quest_lv80._310_set_title) --for quest-journal
+					q.set_title("[LC;6255]") --for quest-journal
 				end
 			end
 		end
 		
 		when button or info begin
-			say_title(gameforge.new_quest_lv80._310_set_title)
-			say(string.format(gameforge.new_quest_lv80._320_say, item_name(new_quest_lv80_blackice)))
+			say_title("[LC;6255]")
+			say(string.format("[LC;6256]", item_name(new_quest_lv80_blackice)))
 		end
 		
-		when 30123.chat.gameforge.new_quest_lv80._330_npcChat begin
+		when 30123.chat."[LC;6257]" begin
 			target.delete("__TARGET3__") -- delete questarrow
-			say_title(gameforge.new_quest_lv80._310_set_title)
-			say(string.format(gameforge.new_quest_lv80._340_say, item_name(new_quest_lv80_blackice)))
-			local sacrifice = select(gameforge.new_quest_lv80._350_1_select, gameforge.new_quest_lv80._350_2_select)
+			say_title("[LC;6255]")
+			say(string.format("[LC;6258]", item_name(new_quest_lv80_blackice)))
+			local sacrifice = select("[LC;6259]", "[LC;6260]")
 			if sacrifice == 1 and new_quest_lv80.is_heavens_cave() == 1 then
 				pc.remove_item(new_quest_lv80_blackice, 1)
 				-- pc.change_alignment(-8000)
-				say(gameforge.new_quest_lv80._360_say)
+				say("[LC;6261]")
 				next_time_set(10, 10)
 				set_state(aftermath)
 			elseif new_quest_lv80.is_heavens_cave() == 1 then
-				say(gameforge.new_quest_lv80._370_say)
+				say("[LC;6262]")
 				set_state(denial)
 			else
-				say(gameforge.new_quest_lv80._380_say)
+				say("[LC;6263]")
 			end
 		end
 	end
@@ -210,14 +210,14 @@ quest new_quest_lv80 begin
 			new_quest_lv80_ember =	30184 -- enchanted ember
 			new_quest_lv80_blackice = 30185 -- black ice
 			if pc.getqf("gotreward") == 1 then
-				send_letter(gameforge.new_quest_lv80._390_send_letter)
+				send_letter("[LC;6264]")
 				local goto_npc = 20023 -- Soon
 				local v=find_npc_by_vnum(goto_npc)
 				if 0!=v then
-					target.vid("__TARGET__", v, gameforge.new_quest_lv80._010_target) -- place questarrow on Soon
+					target.vid("__TARGET__", v, "[LC;6224]") -- place questarrow on Soon
 				end
 			else
-				q.set_title(gameforge.new_quest_lv80._400_set_title)
+				q.set_title("[LC;6265]")
 			end
 			new_quest_lv80_dropProb = 25 -- drop probability; value/5 = percent
 			new_quest_lv80_spawnlocationx = 99999 -- default value
@@ -359,90 +359,90 @@ quest new_quest_lv80 begin
 		
 		when button or info begin
 			if pc.getqf("gotreward") == 1 then
-				say_title(gameforge.new_quest_lv80._310_set_title)
-				say(gameforge.new_quest_lv80._410_say)
+				say_title("[LC;6255]")
+				say("[LC;6266]")
 			else
-				say_title(gameforge.new_quest_lv80._400_set_title)
-				say(gameforge.new_quest_lv80._420_say)
-				say(string.format(gameforge.new_quest_lv80._430_say, item_name(new_quest_lv80_blackice)))
+				say_title("[LC;6265]")
+				say("[LC;6267]")
+				say(string.format("[LC;6268]", item_name(new_quest_lv80_blackice)))
 			end
 		end
 
 		when __TARGET__.target.click begin -- when Soon is clicked
 			target.delete("__TARGET__") -- delete questarrow
-			say_title(gameforge.new_quest_lv80._310_set_title)
-			say(gameforge.new_quest_lv80._440_say)
+			say_title("[LC;6255]")
+			say("[LC;6269]")
 			pc.setqf("gotreward", 0)
 			pc.change_money(3000000)
 			pc.give_exp2(120000000)
 		end
 		
-		when 20023.chat.gameforge.new_quest_lv80._450_npcChat with pc.getqf("spawnmob") > 0 begin
-			say_title(gameforge.new_quest_lv80._450_npcChat)
-			say(string.format(gameforge.new_quest_lv80._460_say, mob_name(pc.getqf("spawnmob"))))
+		when 20023.chat."[LC;6270]" with pc.getqf("spawnmob") > 0 begin
+			say_title("[LC;6270]")
+			say(string.format("[LC;6271;%s]", mob_name(pc.getqf("spawnmob"))))
 		end
 	end
 	
 	state denial begin
 		when login or enter begin
-			send_letter(gameforge.new_quest_lv80._310_set_title)
+			send_letter("[LC;6255]")
 			if pc.get_map_index() == 1 or 21 or 41 then
 				local goto_npc = 20023 -- Soon
 				local v=find_npc_by_vnum(goto_npc)
 				if 0!=v then
-					target.vid("__TARGET__", v, gameforge.new_quest_lv80._010_target) -- place questarrow on Soon
+					target.vid("__TARGET__", v, "[LC;6224]") -- place questarrow on Soon
 				end
 			end
 		end
 		
 		when button or info begin
-			say_title(gameforge.new_quest_lv80._310_set_title)
-			say(gameforge.new_quest_lv80._470_say)
+			say_title("[LC;6255]")
+			say("[LC;6272]")
 		end
 		
-		when 20023.chat.gameforge.new_quest_lv80._475_npcChat begin -- when Soon is clicked
+		when 20023.chat."[LC;6273]" begin -- when Soon is clicked
 			q.start()
-			q.set_title(gameforge.new_quest_lv80._310_set_title)
+			q.set_title("[LC;6255]")
 			target.delete("__TARGET__") -- delete questarrow
 			if pc.count_item(30185) < 1 then
-				say_title(gameforge.new_quest_lv75._320_say)
-				say(gameforge.new_quest_lv80._476_say)
+				say_title("[LC;6202]")
+				say("[LC;6274]")
 				wait()
 				say_pc_name()
-				say(gameforge.new_quest_lv80._477_say)
+				say("[LC;6275]")
 			else
-				say_title(gameforge.new_quest_lv75._320_say)
-				say(gameforge.new_quest_lv80._480_say)
+				say_title("[LC;6202]")
+				say("[LC;6276]")
 				wait()
 				say_pc_name() 
-				say(gameforge.new_quest_lv80._490_say)
+				say("[LC;6277]")
 				wait()
-				say(gameforge.new_quest_lv75._320_say)
-				say(gameforge.new_quest_lv80._495_say)
+				say("[LC;6202]")
+				say("[LC;6278]")
 				wait()
 				say_pc_name() 
-				say(gameforge.new_quest_lv80._500_say)
-				local give_blackice = select(gameforge.new_quest_lv80._510_1_select, gameforge.new_quest_lv80._510_2_select)
+				say("[LC;6279]")
+				local give_blackice = select("[LC;6280]", "[LC;6281]")
 				if give_blackice == 1 then
 					say_pc_name() 
-					say(gameforge.new_quest_lv80._520_say)
+					say("[LC;6282]")
 					wait()
-					say_title(gameforge.new_quest_lv75._320_say)
-					say(gameforge.new_quest_lv80._530_say)
+					say_title("[LC;6202]")
+					say("[LC;6283]")
 					pc.remove_item(30185, pc.countitem(30185))
-					say_title(gameforge.main_quest_lv27._120_sayTitle)
-					say_reward(gameforge.new_quest_lv80._535_sayReward)
+					say_title("[LC;4182]")
+					say_reward("[LC;6284]")
 					pc.give_exp2(70000000)
 					set_state(__COMPLETE__)
 				else
 					say_pc_name() 
-					say(gameforge.new_quest_lv80._540_say)
+					say("[LC;6285]")
 					wait()
-					say_title(gameforge.new_quest_lv75._320_say)
-					say(gameforge.new_quest_lv80._550_say)
+					say_title("[LC;6202]")
+					say("[LC;6286]")
 					wait()
 					say_pc_name() 
-					say(gameforge.new_quest_lv80._560_say)
+					say("[LC;6287]")
 					set_state(dispose)
 				end
 			end
@@ -452,25 +452,25 @@ quest new_quest_lv80 begin
 	state dispose begin
 		when login or enter begin
 			if pc.get_map_index() == 1 and pc.countitem(30185) > 0 then
-				target.pos("__DISPOSE__", 591, 1196, 1, gameforge.new_quest_lv80._570_target_pos)
+				target.pos("__DISPOSE__", 591, 1196, 1, "[LC;6288]")
 			elseif pc.get_map_index() == 21 and pc.countitem(30185) > 0 then
-				target.pos("__DISPOSE__", 167, 772, 21, gameforge.new_quest_lv80._580_target_pos)
+				target.pos("__DISPOSE__", 167, 772, 21, "[LC;6289]")
 			elseif pc.get_map_index() == 41 and pc.countitem(30185) > 0 then
-				target.pos("__DISPOSE__", 851, 299, 41, gameforge.new_quest_lv80._590_target_pos)
+				target.pos("__DISPOSE__", 851, 299, 41, "[LC;6290]")
 			else
-				send_letter(gameforge.new_quest_lv80._599_set_title)
+				send_letter("[LC;6291]")
 			end
 		end
 		
 		when button or info begin
 			local mapname
-			say_title(gameforge.new_quest_lv80._599_set_title)
+			say_title("[LC;6291]")
 			if pc.get_empire() == 1 then -- finding out which map (map1) the player has to go to meet his or her first contact
-				say(gameforge.new_quest_lv80._600_say)
+				say("[LC;6292]")
 			elseif pc.get_empire() == 2 then 
-				say(gameforge.new_quest_lv80._610_say)
+				say("[LC;6293]")
 			elseif pc.get_empire() == 3 then
-				say(gameforge.new_quest_lv80._620_say)
+				say("[LC;6294]")
 			end
 		end
 		
@@ -479,8 +479,8 @@ quest new_quest_lv80 begin
 				target.delete("__DISPOSE__")
 				pc.remove_item(30185, pc.countitem(30185))
 				-- command("effect 5")
-				say_title(gameforge.new_quest_lv80._599_set_title)
-				say_reward(gameforge.new_quest_lv80._630_say_reward)
+				say_title("[LC;6291]")
+				say_reward("[LC;6295]")
 				set_state(blessing)
 			else
 				target.delete("__DISPOSE__")
@@ -492,7 +492,7 @@ quest new_quest_lv80 begin
 	state forgot begin
 		when login or enter begin
 			say_pc_name() 
-			say(gameforge.new_quest_lv80._660_say)
+			say("[LC;6298]")
 			wait()
 			set_state(dispose)
 		end
@@ -503,8 +503,8 @@ quest new_quest_lv80 begin
 			local dragonreward = 71020 -- item: blessing of the dragon
 			local r = math.random(1,25)
 			local dragonamount = math.random(3, 5)
-			say_title(gameforge.new_quest_lv80._599_set_title)
-			say(gameforge.new_quest_lv80._640_say)
+			say_title("[LC;6291]")
+			say("[LC;6296]")
 			if r <= 4 then
 				say_title(string.format("%sx", dragonamount))
 				dragonreward = 71020
@@ -533,8 +533,8 @@ quest new_quest_lv80 begin
 				dragonreward = 71032 -- Schriftrolle des Drachen
 			end
 			say_item_vnum(dragonreward) -- icon of item: blessing of the dragon
-			say(gameforge.new_quest_lv80._650_say)
-			say_reward(gameforge.new_quest_lv80._670_sayReward)
+			say("[LC;6297]")
+			say_reward("[LC;6299]")
 			pc.give_item2(dragonreward, dragonamount)
 			pc.give_exp2(120000000)
 			set_state(__COMPLETE__)

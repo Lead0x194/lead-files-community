@@ -6,23 +6,23 @@ quest heavens_cave_escape begin
 	end
 		
 	state heavens_cave_escape begin
-		when 20090.chat.gameforge.heavens_cave_escape._010_npcChat with pc.get_map_index() == 72 begin
-			say_title(gameforge.heavens_cave_escape._020_say_title)
+		when 20090.chat."[LC;1501]" with pc.get_map_index() == 72 begin
+			say_title("[LC;1502]")
 
-			say(gameforge.heavens_cave_escape._030_say)
-			local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+			say("[LC;1503]")
+			local a= select("[LC;2059]", "[LC;2035]")
 			if 1==a then
-				say_title(gameforge.heavens_cave_escape._020_say_title)
+				say_title("[LC;1502]")
 
-				say(gameforge.heavens_cave_escape._040_say)
+				say("[LC;1504]")
 				wait()
 				
 				pc.warp(284460, 810495)
 				return
 			end
 
-			say_title(gameforge.heavens_cave_escape._020_say_title)
-			say(gameforge.heavens_cave_escape._050_say)
+			say_title("[LC;1502]")
+			say("[LC;1505]")
 		end
 	end
 end

@@ -9,29 +9,29 @@ quest main_quest_lv32 begin
 
 	state gototeacher begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv32._10_sendLetter)
+			send_letter("[LC;4230]")
 
 			local v=find_npc_by_vnum(20011)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv32._20_targetVid)
+				target.vid("__TARGET__", v, "[LC;4241]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv32._10_sendLetter)
-			say(gameforge.main_quest_lv32._30_say)
+			say_title("[LC;4230]")
+			say("[LC;4252]")
 		end
-		when __TARGET__.target.click or	20011.chat.gameforge.main_quest_lv32._10_sendLetter begin
+		when __TARGET__.target.click or	20011.chat."[LC;4230]" begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv32._40_say)
+			say_title("[LC;4223]")
+			say("[LC;4263]")
    			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-   			say(gameforge.main_quest_lv32._50_say)
+			say_title("[LC;4223]")
+   			say("[LC;4274]")
    			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv32._60_say)
+			say_title("[LC;4223]")
+			say("[LC;4285]")
 			set_state ( gomerchant )
 
 		end
@@ -39,92 +39,92 @@ quest main_quest_lv32 begin
 
 	state gomerchant begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv32._10_sendLetter)
+			send_letter("[LC;4230]")
 
 			local v=find_npc_by_vnum(20010)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv32._70_targetVid)
+				target.vid("__TARGET__", v, "[LC;4295]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv32._80_sayTitle)
-			say(gameforge.main_quest_lv32._90_say)
-			say_reward(gameforge.main_quest_lv32._100_sayReward)
+			say_title("[LC;4296]")
+			say("[LC;4297]")
+			say_reward("[LC;4229]")
 		end
-		when __TARGET__.target.click or	20010.chat.gameforge.main_quest_lv32._110_npcChat begin
+		when __TARGET__.target.click or	20010.chat."[LC;4231]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv32._120_sayTitle)
-			say(gameforge.main_quest_lv32._130_say)
+			say_title("[LC;4232]")
+			say("[LC;4233]")
    			wait()
-			say_title(gameforge.main_quest_lv32._120_sayTitle)
-			say(gameforge.main_quest_lv32._140_say)
+			say_title("[LC;4232]")
+			say("[LC;4234]")
 			set_state ( gotorequest )
 
 		end
 	end
 	state gotorequest begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv32._110_npcChat)
+			send_letter("[LC;4231]")
 
 				if pc.count_item(60)>=20 then
 					local v=find_npc_by_vnum(20010)
 					if 0==v then
 					else
-						target.vid("__TARGET__", v, gameforge.main_quest_lv32._150_targetVid)
+						target.vid("__TARGET__", v, "[LC;4235]")
 					end
 				end
 
 		end
 		when button or info begin
 			if pc.count_item(60)>=20 then
-				say_title(gameforge.main_quest_lv32._160_sayTitle)
-				say(gameforge.main_quest_lv32._170_say)
+				say_title("[LC;4236]")
+				say("[LC;4237]")
 				return
 			end
-			say_title(gameforge.main_quest_lv32._180_sayTitle)
-			say(gameforge.main_quest_lv32._190_say)
+			say_title("[LC;4238]")
+			say("[LC;4239]")
 		end
 
 
-		when __TARGET__.target.click or	20010.chat.gameforge.main_quest_lv32._200_npcChat begin
+		when __TARGET__.target.click or	20010.chat."[LC;4240]" begin
 			target.delete("__TARGET__")
 
 			if pc.count_item(60)>=20 then
-				say_title(gameforge.main_quest_lv32._120_sayTitle)
-				say(gameforge.main_quest_lv32._210_say)
+				say_title("[LC;4232]")
+				say("[LC;4242]")
 				wait()
-				say_title(gameforge.main_quest_lv32._120_sayTitle)
-				say(gameforge.main_quest_lv32._220_say)
+				say_title("[LC;4232]")
+				say("[LC;4243]")
 				pc.remove_item(60,20)
 				set_state ( gotodoc )
 			else
-				say_title(gameforge.main_quest_lv32._230_sayTitle)
-				say(gameforge.main_quest_lv32._240_say)
+				say_title("[LC;4244]")
+				say("[LC;4245]")
 			end
 		end
 	end
 
 	state gotodoc begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv32._250_sendLetter)
+			send_letter("[LC;4246]")
 
 			local v=find_npc_by_vnum(20357)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv32._260_targetVid)
+				target.vid("__TARGET__", v, "[LC;4247]")
 			end
 		end
 
 		when button or info begin
-			say_title(gameforge.main_quest_lv32._250_sendLetter)
-			say(gameforge.main_quest_lv32._270_say)
+			say_title("[LC;4246]")
+			say("[LC;4248]")
 		end
 
-		when __TARGET__.target.click or	20357.chat.gameforge.main_quest_lv32._280_npcChat begin
+		when __TARGET__.target.click or	20357.chat."[LC;4249]" begin
 			target.delete("__TARGET__")
 			say_pc_name()
-			say(gameforge.main_quest_lv32._290_say)
+			say("[LC;4250]")
 			pc.give_item2(30150)
 			set_state ( gototeacher2 )
 
@@ -133,44 +133,44 @@ quest main_quest_lv32 begin
 
 	state gototeacher2 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv32._300_sendLetter)
+			send_letter("[LC;4251]")
 
 			local v=find_npc_by_vnum(20011)
 	if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv32._310_targetVid)
+				target.vid("__TARGET__", v, "[LC;4253]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv32._320_sayTitle)
-			say(gameforge.main_quest_lv32._330_say)
+			say_title("[LC;4254]")
+			say("[LC;4255]")
 		end
-		when __TARGET__.target.click or	20011.chat.gameforge.main_quest_lv32._300_sendLetter begin
+		when __TARGET__.target.click or	20011.chat."[LC;4251]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv32._340_say)
+			say_title("[LC;4223]")
+			say("[LC;4256]")
 			wait()
-			say_title(gameforge.main_quest_lv32._350_sayTitle)
-						say_reward(gameforge.main_quest_lv32._360_sayReward)
+			say_title("[LC;4257]")
+						say_reward("[LC;4258]")
 			wait()
-			say_title(gameforge.main_quest_lv32._370_sayTitle)
-						say_reward(gameforge.main_quest_lv32._380_sayReward)
+			say_title("[LC;4259]")
+						say_reward("[LC;4260]")
 			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv32._390_say)
+			say_title("[LC;4223]")
+			say("[LC;4261]")
 			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv32._400_say)
+			say_title("[LC;4223]")
+			say("[LC;4262]")
 			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv32._410_say)
-			say_reward(gameforge.main_quest_lv32._420_sayReward)
+			say_title("[LC;4223]")
+			say("[LC;4264]")
+			say_reward("[LC;4265]")
 			pc.give_exp2(1000000)
 
-			say_reward(gameforge.main_quest_lv32._430_sayReward)
+			say_reward("[LC;4266]")
 			pc.change_money(50000)
 
-			say_reward(gameforge.main_quest_lv32._440_sayReward)
+			say_reward("[LC;4267]")
 			pc.give_item2(70012)
 
 			pc.remove_item(30150)
@@ -181,27 +181,27 @@ quest main_quest_lv32 begin
 
 	state gotohunter begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv32._450_sendLetter)
+			send_letter("[LC;4268]")
 
 			local v=find_npc_by_vnum(20019)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv32._460_targetVid)
+				target.vid("__TARGET__", v, "[LC;4269]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv32._470_sayTitle)
-			say(gameforge.main_quest_lv32._480_say)
-			say_reward(gameforge.main_quest_lv32._490_sayReward)
+			say_title("[LC;4270]")
+			say("[LC;4271]")
+			say_reward("[LC;4272]")
 		end
 
-		when __TARGET__.target.click or	20019.chat.gameforge.main_quest_lv32._500_npcChat begin
+		when __TARGET__.target.click or	20019.chat."[LC;4273]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv32._510_sayTitle)
-			say(gameforge.main_quest_lv32._520_say)
+			say_title("[LC;4275]")
+			say("[LC;4276]")
 			wait()
-			say_title(gameforge.main_quest_lv32._510_sayTitle)
-			say(gameforge.main_quest_lv32._530_say)
+			say_title("[LC;4275]")
+			say("[LC;4277]")
 			set_state ( godoc2 )
 
 		end
@@ -209,11 +209,11 @@ quest main_quest_lv32 begin
 
 	state godoc2 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv32._540_sendLetter)
+			send_letter("[LC;4278]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv32._540_sendLetter)
-			say(gameforge.main_quest_lv32._550_say)
+			say_title("[LC;4278]")
+			say("[LC;4279]")
 		end
 		when 634.kill begin
 			local s = number(1, 100)
@@ -225,38 +225,38 @@ quest main_quest_lv32 begin
 	end
 	state goteacher3 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv32._560_sendLetter)
+			send_letter("[LC;4280]")
 			local v=find_npc_by_vnum(20011)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv32._310_targetVid)
+				target.vid("__TARGET__", v, "[LC;4253]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv32._570_sayTitle)
-			say(gameforge.main_quest_lv32._580_say)
+			say_title("[LC;4281]")
+			say("[LC;4282]")
 		end
 
-		when __TARGET__.target.click or	20011.chat.gameforge.main_quest_lv32._560_sendLetter	begin
+		when __TARGET__.target.click or	20011.chat."[LC;4280]"	begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv32._590_say)
+			say_title("[LC;4223]")
+			say("[LC;4283]")
 			wait()
-			say_title(gameforge.main_quest_lv32._600_sayTitle)
-						say_reward(gameforge.main_quest_lv32._610_sayReward)
+			say_title("[LC;4284]")
+						say_reward("[LC;4286]")
 			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv32._620_say)
+			say_title("[LC;4223]")
+			say("[LC;4287]")
 			wait()
-			say_title(gameforge.main_quest_lv30._40_sayTitle)
-			say(gameforge.main_quest_lv32._630_say)
-			say_reward(gameforge.main_quest_lv32._640_sayReward)
+			say_title("[LC;4223]")
+			say("[LC;4288]")
+			say_reward("[LC;4289]")
 			pc.give_exp2(1000000)
 
-			say_reward(gameforge.main_quest_lv32._650_sayReward)
+			say_reward("[LC;4290]")
 			pc.change_money(50000)
 
-			say_reward(gameforge.main_quest_lv32._660_sayReward)
+			say_reward("[LC;4291]")
 			pc.give_item2(70008)
 
 			pc.remove_item(30150)
@@ -268,13 +268,13 @@ quest main_quest_lv32 begin
 	state godoc3 begin
 
 		when letter begin
-			send_letter(gameforge.main_quest_lv32._670_sendLetter)
+			send_letter("[LC;4292]")
 		end
 
 		when button or info begin
-			say_title(gameforge.main_quest_lv32._670_sendLetter)
-			say(gameforge.main_quest_lv32._680_say)
-			say_reward(gameforge.main_quest_lv32._690_sayReward)
+			say_title("[LC;4292]")
+			say("[LC;4293]")
+			say_reward("[LC;4294]")
 			
 			clear_letter()
 			set_quest_state("main_quest_lv40", "run")

@@ -13,18 +13,18 @@ quest pricing_lv3 begin
 	state mailorder begin
 		when login or enter begin
 			if pc.getqf("sendmail") != 200 then 
-				send_letter(gameforge.pricing_lv3._10_send_letter)
+				send_letter(nil)
 			else
 				set_state(__COMPLETE__)
 			end
 		end
 		when button or info begin
 			pc.setqf("sendmail", 200)
-			say_title(gameforge.pricing_lv3._20_say_title)
-			say(gameforge.pricing_lv3._30_say)
+			say_title(nil)
+			say(nil)
 		wait()
-			say(gameforge.pricing_lv3._40_say)
-			say_reward(gameforge.pricing_lv3._50_say_reward)
+			say(nil)
+			say_reward(nil)
 		end
 	end
 	state __COMPLETE__ begin

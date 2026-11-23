@@ -28,144 +28,144 @@ function get_horse_summon_prob_pct()
 end	
 
 		
-		when 20349.chat.gameforge.horse_summon._10_npcChat with horse.get_grade()==1 and pc.countitem("50051")<1 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_summon._20_say)
-			local b= select(gameforge.find_squareguard._50_select, gameforge.find_brother_article._100_select)
+		when 20349.chat."[LC;1660]" with horse.get_grade()==1 and pc.countitem("50051")<1 begin
+			say_title("[LC;1558]")
+			say("[LC;1671]")
+			local b= select("[LC;1018]", "[LC;931]")
 			if 1==b then
 				if pc.money>=400000 then
 					pc.changemoney(-400000)
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.horse_summon._30_say)
+					say_title("[LC;1558]")
+					say("[LC;1682]")
 					pc.give_item2("50051", 1)
 				else
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.horse_summon._40_say)
+					say_title("[LC;1558]")
+					say("[LC;1683]")
 				end
 			elseif 2==b then
 			else
-				say(string.format(gameforge.find_squareguard._70_say, b))
+				say(string.format("[LC;1020;%s]", b))
 			end
 		end
-		when 20349.chat.gameforge.horse_summon._50_npcChat with horse.get_grade()==2 and pc.countitem("50052")<1 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_summon._60_say)
-			local b= select(gameforge.find_squareguard._50_select, gameforge.find_brother_article._100_select)
+		when 20349.chat."[LC;1684]" with horse.get_grade()==2 and pc.countitem("50052")<1 begin
+			say_title("[LC;1558]")
+			say("[LC;1685]")
+			local b= select("[LC;1018]", "[LC;931]")
 			if 1==b then
 				if pc.money>=50000 then
 					pc.changemoney(-50000)
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.horse_summon._70_say)
+					say_title("[LC;1558]")
+					say("[LC;1686]")
 					pc.give_item2("50052", 1)
 				else
-					say(gameforge.horse_summon._80_say)
+					say("[LC;1687]")
 				end
 			elseif 2==b then
 			else
-				say(string.format(gameforge.find_squareguard._70_say, b))
+				say(string.format("[LC;1020;%s]", b))
 			end
 		end
-		when 20349.chat.gameforge.horse_summon._90_npcChat with horse.get_grade()==3 and pc.countitem("50053")<1 begin
-			say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-			say(gameforge.horse_summon._100_say)
-			local b= select(gameforge.find_squareguard._50_select, gameforge.find_brother_article._100_select)
+		when 20349.chat."[LC;1688]" with horse.get_grade()==3 and pc.countitem("50053")<1 begin
+			say_title("[LC;1558]")
+			say("[LC;1659]")
+			local b= select("[LC;1018]", "[LC;931]")
 			if 1==b then
 				if pc.money>=100000 then
 					pc.changemoney(-100000)
-					say_title(gameforge.buy_fishrod._210_sayTitle)
-					say(gameforge.horse_summon._110_say)
+					say_title("[LC;44]")
+					say("[LC;1661]")
 					pc.give_item2("50053", 1)
 				else
-					say_title(gameforge.horse_exchange_ticket._20_sayTitle)
-					say(gameforge.horse_summon._80_say)
+					say_title("[LC;1558]")
+					say("[LC;1687]")
 				end
 			elseif 2==b then
 			else
-				say(string.format(gameforge.find_squareguard._70_say, b))
+				say(string.format("[LC;1020;%s]", b))
 			end
 		end
 		when 50051.use with horse.get_grade()==0 begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-			say(gameforge.horse_summon._120_say)
+			say_title("[LC;44]")
+			say("[LC;1662]")
 		end
 		when 50051.use with horse.get_grade()==1 begin
 			if pc.getsp()>=100 then
 				if number(1, 100)<=horse_summon.get_horse_summon_prob_pct() then
-					say_title(gameforge.buy_fishrod._210_sayTitle)
-					say(gameforge.horse_summon._130_say)
+					say_title("[LC;44]")
+					say("[LC;1663]")
 					horse.summon()
 				else
-					say_title(gameforge.buy_fishrod._210_sayTitle)
-										say_reward(gameforge.horse_summon._140_sayReward)
+					say_title("[LC;44]")
+										say_reward("[LC;1664]")
 									end
 				pc.change_sp(-100)
 			else
-				say_title(gameforge.buy_fishrod._210_sayTitle)
-								say_reward(gameforge.horse_summon._150_sayReward)
+				say_title("[LC;44]")
+								say_reward("[LC;1665]")
 							end
 		end
 		when 50051.use with horse.get_grade()==2 begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._160_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1666]")
 					end
 		when 50051.use with horse.get_grade()==3 begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._170_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1667]")
 					end
 		when 50052.use with horse.get_grade()==0 begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._180_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1668]")
 					end
 		when 50052.use with horse.get_grade()==1 begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._190_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1669]")
 		end
 		when 50052.use with horse.get_grade()==2 begin
 			if pc.getsp()>=200 then
 				if number(1, 100)<=horse_summon.get_horse_summon_prob_pct() then
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._200_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1670]")
 						horse.summon()
 			else
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._210_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1672]")
 							end
 				pc.change_sp(-200)
 			else
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._220_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1673]")
 						end
 		end
 		when 50052.use with horse.get_grade()==3 begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._230_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1674]")
 					end
 		when 50053.use with horse.get_grade()==0 begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._240_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1675]")
 					end
 		when 50053.use with horse.get_grade()==1 begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._190_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1669]")
 					end
 		when 50053.use with horse.get_grade()==2 begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._250_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1676]")
 					end
 		when 50053.use with horse.get_grade()==3 begin
 			if pc.getsp()>=300 then
 				if number(1, 100)<=horse_summon.get_horse_summon_prob_pct() then
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._260_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1677]")
 						horse.summon()
 			else
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._270_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1678]")
 						end
 			pc.change_sp(-300)
 			else
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-						say_reward(gameforge.horse_summon._280_sayReward)
+			say_title("[LC;44]")
+						say_reward("[LC;1679]")
 						end
 		end
 	end

@@ -31,10 +31,10 @@ quest entry_event_map begin
 
         function player_dialog()
             if pc.get_map_index() == 200 then
-                say_title(gameforge.entry_event_map._010_sayTitle)
-                say(gameforge.entry_event_map._020_say)
+                say_title("[LC;825]")
+                say("[LC;826]")
 
-                local sub_sel = select (gameforge.locale.yes, gameforge.locale.no)
+                local sub_sel = select ("[LC;3734]", "[LC;2833]")
 
                 if sub_sel == 2 then
                     return
@@ -49,8 +49,8 @@ quest entry_event_map begin
             if game.get_event_flag("event_map_active") == 0 then
                 say(locale.forked_man_say_cant)
             else
-                say_title(gameforge.entry_event_map._010_sayTitle)
-                say(gameforge.entry_event_map._030_say)
+                say_title("[LC;825]")
+                say("[LC;827]")
 
                 local s = select(locale.forked_enter, locale.forked_no_enter)
                 local min = game.get_event_flag("event_map_level_min")
@@ -59,25 +59,25 @@ quest entry_event_map begin
 
                 if s == 1 then
                   if pc.level < min or pc.level > max then
-                    say_title(gameforge.entry_event_map._010_sayTitle)
-                    say_reward(string.format(gameforge.entry_event_map._040_say, min, max))
+                    say_title("[LC;825]")
+                    say_reward(string.format("[LC;828;%s;%s]", min, max))
                     return
                   end
                     
                     if pc.get_empire() != empire and empire != 0 then
-                        say_title(gameforge.entry_event_map._010_sayTitle)
-                        say(gameforge.entry_event_map._050_say)
+                        say_title("[LC;825]")
+                        say("[LC;829]")
                         return
                     end
 
                     if  entry_event_map.check_limit() == 0 then
-                        say_title(gameforge.entry_event_map._010_sayTitle)
-                        say(gameforge.entry_event_map._060_say)
+                        say_title("[LC;825]")
+                        say("[LC;830]")
                         return
                     end
 
-                    say_title(gameforge.entry_event_map._010_sayTitle)
-                    say(gameforge.entry_event_map._070_say)
+                    say_title("[LC;825]")
+                    say("[LC;831]")
 
                     if empire == 0 then 
                         entry_event_map.warp_to_map(pc.get_empire())
@@ -113,19 +113,19 @@ quest entry_event_map begin
 
 
 
-    when 11001.chat.gameforge.entry_event_map._080_npcChat or 11003.chat.gameforge.entry_event_map._080_npcChat or 11005.chat.gameforge.entry_event_map._080_npcChat with game.get_event_flag("event_map_active") == 1 begin
+    when 11001.chat."[LC;832]" or 11003.chat."[LC;832]" or 11005.chat."[LC;832]" with game.get_event_flag("event_map_active") == 1 begin
         entry_event_map.player_dialog()
     end
 
 
 
-   when 11001.chat.gameforge.entry_event_map._090_npcChat or 11003.chat.gameforge.entry_event_map._090_npcChat or 11005.chat.gameforge.entry_event_map._090_npcChat with pc.get_gm_level()== 5 begin
-        local s = select(gameforge.entry_event_map._100_select, gameforge.entry_event_map._110_select, gameforge.entry_event_map._120_select, gameforge.locale.cancel)
+   when 11001.chat."[LC;833]" or 11003.chat."[LC;833]" or 11005.chat."[LC;833]" with pc.get_gm_level()== 5 begin
+        local s = select("[LC;834]", "[LC;835]", "[LC;836]", "[LC;1891]")
         
         if s == 3 then
             if entry_event_map.gm_exit_check() == 1 then
-                say_title("GM: "..gameforge.entry_event_map._010_sayTitle)
-                say(gameforge.entry_event_map._130_say)
+                say_title("GM: ".."[LC;825]")
+                say("[LC;837]")
                 
                 -- reset all setting for this event and nobody can enter it
                 game.set_event_flag("event_map_active", 0)
@@ -139,43 +139,43 @@ quest entry_event_map begin
                 -- teleport all out from the map
                 warp_all_to_village(200, 30)
             else
-                say_title("GM: "..gameforge.entry_event_map._010_sayTitle)
-                say(gameforge.entry_event_map._140_say)
+                say_title("GM: ".."[LC;825]")
+                say("[LC;838]")
                 return
             end
         end
 
       if s == 1 then
-        say_title("GM: "..gameforge.entry_event_map._010_sayTitle)
-        say(gameforge.entry_event_map._150_say)
-        local choice = select ("1> min "..entry_event_map.enter_level(1,1).." max "..entry_event_map.enter_level(1,2),"2> min "..entry_event_map.enter_level(2,1).." max "..entry_event_map.enter_level(2,2), "3> min "..entry_event_map.enter_level(3,1).." max "..entry_event_map.enter_level(3,2), "4> min "..entry_event_map.enter_level(4,1).." max "..entry_event_map.enter_level(4,2),  "5> min "..entry_event_map.enter_level(5,1).." max "..entry_event_map.enter_level(5,2), gameforge.locale.cancel)
+        say_title("GM: ".."[LC;825]")
+        say("[LC;839]")
+        local choice = select ("1> min "..entry_event_map.enter_level(1,1).." max "..entry_event_map.enter_level(1,2),"2> min "..entry_event_map.enter_level(2,1).." max "..entry_event_map.enter_level(2,2), "3> min "..entry_event_map.enter_level(3,1).." max "..entry_event_map.enter_level(3,2), "4> min "..entry_event_map.enter_level(4,1).." max "..entry_event_map.enter_level(4,2),  "5> min "..entry_event_map.enter_level(5,1).." max "..entry_event_map.enter_level(5,2), "[LC;1891]")
 
          if choice == 6 then
             return
         end
         
-        say_title("GM: "..gameforge.entry_event_map._010_sayTitle)
-        say(gameforge.entry_event_map._160_say)
-        local amount_choice = input_number(gameforge.entry_event_map._240_say)
+        say_title("GM: ".."[LC;825]")
+        say("[LC;840]")
+        local amount_choice = input_number("[LC;848]")
 
          if amount_choice > 200 or amount_choice <= 0 then
-            say_title("GM: "..gameforge.entry_event_map._010_sayTitle)
-            say(gameforge.entry_event_map._250_say)
+            say_title("GM: ".."[LC;825]")
+            say("[LC;849]")
             return
         end
        	
         local empire_names =
         {
-            [0] = gameforge.priv_empire._33_array,
-            [1] = gameforge.locale.empire_names_2,
-            [2] = gameforge.locale.empire_names_3,
-            [3] = gameforge.locale.empire_names_4,
+            [0] = "[LC;6734]",
+            [1] = "[LC;1942]",
+            [2] = "[LC;1943]",
+            [3] = "[LC;1944]",
         }
 
  
-        say_title("GM: "..gameforge.entry_event_map._010_sayTitle)
-        say(gameforge.entry_event_map._170_say)
-        local kingdom_sub_set = select(empire_names[1], empire_names[2], empire_names[3], empire_names[0], gameforge.locale.cancel)
+        say_title("GM: ".."[LC;825]")
+        say("[LC;841]")
+        local kingdom_sub_set = select(empire_names[1], empire_names[2], empire_names[3], empire_names[0], "[LC;1891]")
 
         if kingdom_sub_set == 5 then
           return
@@ -185,13 +185,13 @@ quest entry_event_map begin
             kingdom_sub_set = 0
         end
 
-        say_title("GM: "..gameforge.entry_event_map._010_sayTitle)
-        say(gameforge.entry_event_map._180_say)
-        say(gameforge.entry_event_map._190_say .. " " .. entry_event_map.enter_level(choice,1).. " - " ..entry_event_map.enter_level(choice,2))
-        say(gameforge.entry_event_map._200_say .. " " .. amount_choice)
-        say(gameforge.entry_event_map._210_say .. " " .. empire_names[kingdom_sub_set])
+        say_title("GM: ".."[LC;825]")
+        say("[LC;842]")
+        say("[LC;843]" .. " " .. entry_event_map.enter_level(choice,1).. " - " ..entry_event_map.enter_level(choice,2))
+        say("[LC;844]" .. " " .. amount_choice)
+        say("[LC;845]" .. " " .. empire_names[kingdom_sub_set])
 
-        local t = select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+        local t = select("[LC;2059]", "[LC;2035]")
 
         if t == 2 then
           return
@@ -205,9 +205,9 @@ quest entry_event_map begin
             game.set_event_flag("event_map_empire", kingdom_sub_set)
             
             if kingdom_sub_set == 0 then
-                notice_multiline(string.format(gameforge.entry_event_map._220_notice_all, entry_event_map.enter_level(choice,1),entry_event_map.enter_level(choice,2)),notice_all) 
+                notice_multiline(string.format("[LC;846;%s;%s]", entry_event_map.enter_level(choice,1),entry_event_map.enter_level(choice,2)),notice_all) 
             else
-                notice_multiline(string.format(gameforge.entry_event_map._230_notice_all, empire_names[kingdom_sub_set], entry_event_map.enter_level(choice,1),entry_event_map.enter_level(choice,2)),notice_all) 
+                notice_multiline(string.format("[LC;847;%s;%s;%s]", empire_names[kingdom_sub_set], entry_event_map.enter_level(choice,1),entry_event_map.enter_level(choice,2)),notice_all) 
             end
         elseif s== 2 then
 

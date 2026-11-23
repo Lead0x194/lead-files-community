@@ -1,17 +1,17 @@
 quest map_warp begin
     state start begin
-        when 9012.chat.gameforge.map_warp._10_npcChat  begin
-            say_title(gameforge.map_warp._20_sayTitle)
-            say(gameforge.map_warp._30_say)
+        when 9012.chat."[LC;5438]"  begin
+            say_title("[LC;5458]")
+            say("[LC;5468]")
 
-            local main_set =  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+            local main_set =  select("[LC;2059]", "[LC;2035]")
             if main_set == 2 then
                 return
             end
 
             if pc.get_level() <= 10 then
-                say_title(gameforge.map_warp._20_sayTitle)
-                say(gameforge.map_warp._40_say)
+                say_title("[LC;5458]")
+                say("[LC;5469]")
                 return
             end
 
@@ -24,41 +24,41 @@ quest map_warp begin
                 cost = 1000
             end
 
-            say_title(gameforge.map_warp._20_sayTitle)
-            say(gameforge.map_warp._50_say)
-            say_reward(string.format(gameforge.map_warp._60_sayReward, cost))
+            say_title("[LC;5458]")
+            say("[LC;5470]")
+            say_reward(string.format("[LC;5471;%s]", cost))
             
             if map == 1 or map == 3 or map == 21 or map == 23 or map == 41 or map == 43 then
 
                 local guild_map_names = {
-                    gameforge.map_warp._11_array,
-                    gameforge.map_warp._12_array,
-                    gameforge.map_warp._13_array,
+                    "[LC;5440]",
+                    "[LC;5442]",
+                    "[LC;5444]",
                 }
 
                 guild_map_name = guild_map_names[empire]
                 local added_guild_map = {
-                    gameforge.map_warp._17_array,
-                    gameforge.map_warp._18_array,
-                    gameforge.map_warp._19_array,
+                    "[LC;5452]",
+                    "[LC;5454]",
+                    "[LC;5456]",
                 }
 
                 added_guild_map = added_guild_map[empire]
                 local empire_castle={
-                    gameforge.map_warp._14_array,
-                    gameforge.map_warp._15_array,
-                    gameforge.map_warp._16_array,
+                    "[LC;5446]",
+                    "[LC;5448]",
+                    "[LC;5450]",
                 }
                 empire_castle =empire_castle[empire]
                 local sub_set = 0
                 if level < 60 then -- weniger als 60 : die Privatkarte von Gild, das Drache, die Wuste Youngbi, Der Eisberg im Westen
                     if pc.count_item(30180) == 0 then
-                        sub_set =  select(guild_map_name, gameforge.locale.map_name_4, gameforge.locale.map_name_3, gameforge.locale.map_name_1,added_guild_map, gameforge.arena_manager._200_tableInsert)
+                        sub_set =  select(guild_map_name, "[LC;2127]", "[LC;2126]", "[LC;2124]",added_guild_map, "[LC;13]")
                         if sub_set == 6 then -- Schliessen
                             return
                         end
                     else 
-                        sub_set =  select(guild_map_name, gameforge.locale.map_name_4, gameforge.locale.map_name_3, gameforge.locale.map_name_1, added_guild_map, gameforge.map_warp._97_select, gameforge.arena_manager._200_tableInsert)
+                        sub_set =  select(guild_map_name, "[LC;2127]", "[LC;2126]", "[LC;2124]", added_guild_map, "[LC;5478]", "[LC;13]")
                         if sub_set == 7 then -- Schliessen
                             return
                         end
@@ -67,41 +67,41 @@ quest map_warp begin
 
                 else -- mehr als 61 :die Wuste Youngbi, der Eisberg im Westen, das Schlangengeistturm, die Pfirsischblumendorf
                     if pc.count_item(30180) == 0 then
-                        sub_set =  select(guild_map_name, gameforge.locale.map_name_4, gameforge.locale.map_name_3, gameforge.locale.map_name_1,added_guild_map, gameforge.locale.levelup.prev_quest_go)
+                        sub_set =  select(guild_map_name, "[LC;2127]", "[LC;2126]", "[LC;2124]",added_guild_map, "[LC;2105]")
                     else
-                        sub_set =  select(guild_map_name, gameforge.locale.map_name_4, gameforge.locale.map_name_3, gameforge.locale.map_name_1,added_guild_map, gameforge.map_warp._97_select,gameforge.locale.levelup.prev_quest_go)
+                        sub_set =  select(guild_map_name, "[LC;2127]", "[LC;2126]", "[LC;2124]",added_guild_map, "[LC;5478]","[LC;2105]")
                     end
                     if sub_set == 6 and pc.count_item(30180) == 0 then 
                         sub_set = sub_set +1
                     end
                     if sub_set == 7 then -- weiter
-                        say_title(gameforge.map_warp._20_sayTitle)
-                        say(gameforge.map_warp._70_say)
-                        say_reward(string.format(gameforge.map_warp._80_sayReward, cost))
-                        sub_set =  select(gameforge.locale.map_name_2, gameforge.map_warp._90_select, gameforge.map_warp._94_select,gameforge.map_warp._95_select, gameforge.map_warp._96_select, gameforge.arena_manager._200_tableInsert) + 6 
+                        say_title("[LC;5458]")
+                        say("[LC;5472]")
+                        say_reward(string.format("[LC;5473;%s]", cost))
+                        sub_set =  select("[LC;2125]", "[LC;5474]", "[LC;5475]","[LC;5476]", "[LC;5477]", "[LC;13]") + 6 
                         if sub_set == 12 then 
                             return
                         end
                         if sub_set == 11 then -- vorher
-                            say_title(gameforge.map_warp._20_sayTitle)
-                            say(gameforge.map_warp._100_say)
+                            say_title("[LC;5458]")
+                            say("[LC;5437]")
                             ---                                                   l
-                            say_reward(string.format(gameforge.map_warp._110_sayReward, cost))
-                            say(gameforge.map_warp._120_sayReward)
+                            say_reward(string.format("[LC;5439;%s]", cost))
+                            say("[LC;5441]")
                   if pc.count_item(30180) == 0 then
-                  sub_set =  select(guild_map_name, gameforge.locale.map_name_4, gameforge.locale.map_name_3, gameforge.locale.map_name_1,added_guild_map, gameforge.locale.levelup.prev_quest_go)
+                  sub_set =  select(guild_map_name, "[LC;2127]", "[LC;2126]", "[LC;2124]",added_guild_map, "[LC;2105]")
                 else
-                sub_set =  select(guild_map_name, gameforge.locale.map_name_4, gameforge.locale.map_name_3, gameforge.locale.map_name_1, added_guild_map, gameforge.map_warp._97_select,gameforge.locale.levelup.prev_quest_go)
+                sub_set =  select(guild_map_name, "[LC;2127]", "[LC;2126]", "[LC;2124]", added_guild_map, "[LC;5478]","[LC;2105]")
                   end
 
                             if sub_set == 6 and pc.count_item(30180) == 0 then 
                                 sub_set = sub_set +1
                             end
                             if sub_set == 7 then -- weiter
-                                say_title(gameforge.map_warp._20_sayTitle)
-                                say(gameforge.map_warp._130_say)
-                                say_reward(string.format(gameforge.map_warp._140_sayReward, cost))
-                                sub_set =  select(gameforge.locale.map_name_2, gameforge.map_warp._90_select,  gameforge.map_warp._94_select, gameforge.map_warp._95_select, gameforge.arena_manager._200_tableInsert) + 6
+                                say_title("[LC;5458]")
+                                say("[LC;5443]")
+                                say_reward(string.format("[LC;5445;%s]", cost))
+                                sub_set =  select("[LC;2125]", "[LC;5474]",  "[LC;5475]", "[LC;5476]", "[LC;13]") + 6
                                 if sub_set == 11 then 
                                     return
                                 end
@@ -111,9 +111,9 @@ quest map_warp begin
                 end
 
                 if pc.gold < cost then
-                    say_title(gameforge.map_warp._20_sayTitle)
-                    say(gameforge.map_warp._150_say)
-                    say_reward(string.format(gameforge.map_warp._160_sayReward, cost))
+                    say_title("[LC;5458]")
+                    say("[LC;5447]")
+                    say_reward(string.format("[LC;5449;%s]", cost))
                     return
                 end
 
@@ -188,8 +188,8 @@ quest map_warp begin
                     },
                 }
                 test_chat(warp[sub_set][empire][1]..warp[sub_set][empire][2])
-                say_title(gameforge.map_warp._20_sayTitle)
-                say(gameforge.map_warp._170_say)
+                say_title("[LC;5458]")
+                say("[LC;5451]")
                 
                 
                 wait()
@@ -204,22 +204,22 @@ quest map_warp begin
                 local sub_set2 = 4
                 if pc.count_item(30180) == 0 then
                     if empire==1 then
-                        sub_set2 =  select(gameforge.map_warp._180_select, gameforge.map_warp._190_select, gameforge.arena_manager._200_tableInsert)
+                        sub_set2 =  select("[LC;5453]", "[LC;5455]", "[LC;13]")
                     elseif  empire ==2 then
-                        sub_set2 =  select(gameforge.map_warp._200_select, gameforge.map_warp._210_select, gameforge.arena_manager._200_tableInsert)
+                        sub_set2 =  select("[LC;5457]", "[LC;5459]", "[LC;13]")
                     elseif  empire ==3 then
-                        sub_set2 =  select(gameforge.map_warp._220_select, gameforge.map_warp._230_select, gameforge.arena_manager._200_tableInsert)
+                        sub_set2 =  select("[LC;5460]", "[LC;5461]", "[LC;13]")
                     end
                     if sub_set2 == 3 then
                         return
                     end
                 else
                     if empire==1 then
-                        sub_set2 =  select(gameforge.map_warp._180_select, gameforge.map_warp._190_select, gameforge.map_warp._97_select, gameforge.arena_manager._200_tableInsert)
+                        sub_set2 =  select("[LC;5453]", "[LC;5455]", "[LC;5478]", "[LC;13]")
                     elseif  empire ==2 then
-                        sub_set2 =  select(gameforge.map_warp._200_select, gameforge.map_warp._210_select, gameforge.map_warp._97_select, gameforge.arena_manager._200_tableInsert)
+                        sub_set2 =  select("[LC;5457]", "[LC;5459]", "[LC;5478]", "[LC;13]")
                     elseif  empire ==3 then
-                        sub_set2 =  select(gameforge.map_warp._220_select, gameforge.map_warp._230_select, gameforge.map_warp._97_select, gameforge.arena_manager._200_tableInsert)
+                        sub_set2 =  select("[LC;5460]", "[LC;5461]", "[LC;5478]", "[LC;13]")
                     end
                     if sub_set2 == 4 then
                         return
@@ -227,13 +227,13 @@ quest map_warp begin
                 end
                 if sub_set2 != 4 then
                     if pc.gold < cost then
-                        say_title(gameforge.map_warp._20_sayTitle)
-                        say(gameforge.map_warp._150_say)
-                        say_reward(string.format(gameforge.map_warp._160_sayReward, cost))
+                        say_title("[LC;5458]")
+                        say("[LC;5447]")
+                        say_reward(string.format("[LC;5449;%s]", cost))
                     else
                         if sub_set2 == 1 then
-                            say_title(gameforge.map_warp._20_sayTitle)
-                            say(gameforge.map_warp._240_say)
+                            say_title("[LC;5458]")
+                            say("[LC;5462]")
                             wait()
                             if  pc.is_dead() == false then
                                 if empire == 1 then
@@ -247,8 +247,8 @@ quest map_warp begin
                                 return
                             end
                         elseif sub_set2 == 2 then
-                            say_title(gameforge.map_warp._20_sayTitle)
-                            say(gameforge.map_warp._250_say)
+                            say_title("[LC;5458]")
+                            say("[LC;5463]")
                             wait()
                             if pc.is_dead() == false then
                                 if empire == 1 then
@@ -262,8 +262,8 @@ quest map_warp begin
                                 return
                             end
                         elseif sub_set2 == 3 then
-                            say_title(gameforge.map_warp._20_sayTitle)
-                            say(gameforge.map_warp._250_say)
+                            say_title("[LC;5458]")
+                            say("[LC;5463]")
                             wait()
                             if pc.is_dead() == false then
                                 if empire == 1 then
@@ -282,27 +282,27 @@ quest map_warp begin
                 end
             end
         end -- end_of_chat
-        when 9012.chat.gameforge.map_warp._260_npcChat with pc.level >= 90 and pc.get_map_index()!= 301 begin
+        when 9012.chat."[LC;5464]" with pc.level >= 90 and pc.get_map_index()!= 301 begin
             say(mob_name(9012))
-            say(gameforge.map_warp._270_say)
-            local select1 = select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+            say("[LC;5465]")
+            local select1 = select("[LC;2059]", "[LC;2035]")
             if select1 == 1 then
                 say(mob_name(9012))
-                say(gameforge.map_warp._280_say)
+                say("[LC;5466]")
                 local cost = 50000
                 if pc.level >= 90 then
                     cost = cost + ((pc.level - 90) * 10000)
                 end
-                say_reward(string.format(gameforge.map_warp._280_sayReward, cost))
-                local select2 = select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+                say_reward(string.format("[LC;5467;%d]", cost))
+                local select2 = select("[LC;2059]", "[LC;2035]")
                 if select2 == 1 and pc.level >= 90 and pc.gold >= cost then
                     pc.changegold(-cost)
                     pc.warp(1104300,1788500)
                 else
                     if pc.gold < cost then
-                        say_title(gameforge.map_warp._20_sayTitle)
-                        say(gameforge.map_warp._150_say)
-                        say_reward(string.format(gameforge.map_warp._160_sayReward, cost))
+                        say_title("[LC;5458]")
+                        say("[LC;5447]")
+                        say_reward(string.format("[LC;5449;%s]", cost))
                         return
                     end
                 end

@@ -11,31 +11,31 @@ quest main_quest_lv7 begin
 			local v=find_npc_by_vnum(20016)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv7._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;4631]")
 			end
 		end
 		when letter begin
-			send_letter(gameforge.main_quest_lv7._10_targetVid)
+			send_letter("[LC;4631]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv7._10_targetVid)
+			say_title("[LC;4631]")
 				    		----------                                                   l
-		  	say(gameforge.main_quest_lv7._20_sayReward)
+		  	say("[LC;4642]")
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 	    	---                                                   l
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv7._30_say)
+			say_title("[LC;27]")
+			say("[LC;4647]")
 			wait()
 
 	    		---                                                   l
-  			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv7._40_say)
-			say_item(gameforge.main_quest_lv7._50_sayItem, 27490, "")
+  			say_title("[LC;27]")
+			say("[LC;4648]")
+			say_item("[LC;4649]", 27490, "")
 						wait()
-  			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv7._60_say)
+  			say_title("[LC;27]")
+			say("[LC;4650]")
 			set_state ( gotofisher )
 			q.done()
 		end
@@ -44,30 +44,30 @@ quest main_quest_lv7 begin
 
 	state gotofisher begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv7._70_sendLetter)
+			send_letter("[LC;4651]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv7._70_sendLetter)
+			say_title("[LC;4651]")
 				    	---                                                   l
-			say(gameforge.main_quest_lv7._80_sayReward)
-			say_item(gameforge.main_quest_lv7._50_sayItem, 27490, "")
+			say("[LC;4652]")
+			say_item("[LC;4649]", 27490, "")
 					end
-		when 20016.chat.gameforge.main_quest_lv7._90_npcChat begin
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv7._100_say)
+		when 20016.chat."[LC;4653]" begin
+			say_title("[LC;27]")
+			say("[LC;4630]")
 		end
-		when 9009.chat.gameforge.main_quest_lv7._110_npcChat begin
-			say_title(gameforge.fisher._30_sayTitle)
-			say(gameforge.main_quest_lv7._120_say)
+		when 9009.chat."[LC;4632]" begin
+			say_title("[LC;1032]")
+			say("[LC;4633]")
 			wait()
-			say_title(gameforge.fisher._30_sayTitle)
+			say_title("[LC;1032]")
 				    		---                                                   l
-			say(gameforge.main_quest_lv7._130_say)
+			say("[LC;4634]")
 			wait()
 
-			say_title(gameforge.fisher._30_sayTitle)
-			say(gameforge.main_quest_lv7._140_say)
-			say_item(gameforge.main_quest_lv7._150_sayItem, 30001, "")
+			say_title("[LC;1032]")
+			say("[LC;4635]")
+			say_item("[LC;4636]", 30001, "")
 						set_state ( gotosmith2 )
 		end
 	end
@@ -76,24 +76,24 @@ quest main_quest_lv7 begin
 			local v=find_npc_by_vnum(20016)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv6._200_sendLetter)
+				target.vid("__TARGET__", v, "[LC;4511]")
 			end
 		end
 		when letter begin
-			send_letter(gameforge.main_quest_lv6._200_sendLetter)
+			send_letter("[LC;4511]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv6._200_sendLetter)
+			say_title("[LC;4511]")
 				    	---                                                   l
-			say(gameforge.main_quest_lv7._160_sayReward)
-			say_item(gameforge.main_quest_lv7._150_sayItem, 30001, "")
+			say("[LC;4637]")
+			say_item("[LC;4636]", 30001, "")
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 		
 			pc.setqf("refine_chance",0)
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.main_quest_lv7._170_say)
+			say_title("[LC;27]")
+			say("[LC;4638]")
 			pc.change_money(5000)
 			clear_letter()
 			set_state (__COMPLETE__)
@@ -106,20 +106,20 @@ quest main_quest_lv7 begin
 			set_state ( __COMPLETE__ )
 		end
 		when letter begin
-			send_letter(gameforge.main_quest_lv7._180_sendLetter)
+			send_letter("[LC;4639]")
 		end
 		when button or info begin
 			if pc.getqf("refine_chance") > 0 then
-				say_title(gameforge.buy_fishrod._210_sayTitle)
+				say_title("[LC;44]")
 									  ---                                                   l
-				say_reward(gameforge.main_quest_lv7._190_sayReward)
-				say_item(gameforge.main_quest_lv7._200_sayItem, 30001, "")
+				say_reward("[LC;4640]")
+				say_item("[LC;4641]", 30001, "")
 								wait()
-				say_title(gameforge.main_quest_lv7._210_sayTitle)
-								say_reward(gameforge.main_quest_lv7._220_sayReward)
+				say_title("[LC;4643]")
+								say_reward("[LC;4644]")
 							else
-				say_title(gameforge.main_quest_lv7._230_sayTitle)
-								say_reward(gameforge.main_quest_lv7._240_sayReward)
+				say_title("[LC;4645]")
+								say_reward("[LC;4646]")
 
 								clear_letter()
 				set_state (__COMPLETE__)

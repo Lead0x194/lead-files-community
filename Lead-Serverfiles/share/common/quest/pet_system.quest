@@ -3,25 +3,25 @@ quest pet_system begin
         function get_pet_info(itemVnum)
             pet_info_map = {
             --  [ITEM VNUM] MOB_VNUM, DEFAULT NAME
-                [53001]     = { 34001, gameforge.pet_system._010_say ,0},
-                [53002]     = { 34002, gameforge.pet_system._020_say ,0},
-				[53003]     = { 34003, gameforge.pet_system._040_say ,0},
-				[53005]     = { 34004, gameforge.pet_system._050_say, 1},
-				[53006]     = { 34009, gameforge.pet_system._050_say, 1},
-                [53010]     = { 34008, gameforge.pet_system._060_say, 0},
-                [53011]     = { 34007, gameforge.pet_system._070_say, 0},
-                [53012]     = { 34005, gameforge.pet_system._080_say, 0},
-                [53013]     = { 34006, gameforge.pet_system._090_say, 0},
-                [53007]     = { 34010, gameforge.pet_system._100_say, 0},
-                [53008]     = { 34011, gameforge.pet_system._110_say, 0},
-                [53009]     = { 34012, gameforge.pet_system._120_say, 0},
+                [53001]     = { 34001, "[LC;6533]" ,0},
+                [53002]     = { 34002, "[LC;6534]" ,0},
+				[53003]     = { 34003, "[LC;6536]" ,0},
+				[53005]     = { 34004, "[LC;6537]", 1},
+				[53006]     = { 34009, "[LC;6537]", 1},
+                [53010]     = { 34008, "[LC;6538]", 0},
+                [53011]     = { 34007, "[LC;6539]", 0},
+                [53012]     = { 34005, "[LC;6540]", 0},
+                [53013]     = { 34006, "[LC;6541]", 0},
+                [53007]     = { 34010, "[LC;6542]", 0},
+                [53008]     = { 34011, "[LC;6543]", 0},
+                [53009]     = { 34012, "[LC;6544]", 0},
                 -- GF specials
-                [38200]     = { 34006, gameforge.pet_system._090_say, 0},
-                [38201]     = { 34006, gameforge.pet_system._090_say, 0},
-				[53014]     = { 34013, gameforge.pet_system._130_say, 0},
-				[53015]     = { 34014, gameforge.pet_system._140_say, 0},
-				[53016]     = { 34015, gameforge.pet_system._150_say, 0},
-				[53017]     = { 34016, gameforge.pet_system._160_say, 0},
+                [38200]     = { 34006, "[LC;6541]", 0},
+                [38201]     = { 34006, "[LC;6541]", 0},
+				[53014]     = { 34013, "[LC;6545]", 0},
+				[53015]     = { 34014, "[LC;6546]", 0},
+				[53016]     = { 34015, "[LC;6547]", 0},
+				[53017]     = { 34016, "[LC;6548]", 0},
             }
 
             itemVnum = tonumber(itemVnum)
@@ -54,7 +54,7 @@ quest pet_system begin
                     if pet.count_summoned() < 1 then
                         pet.summon(mobVnum, petName, false)
                     else
-                        syschat(gameforge.pet_system._030_chat)
+                        syschat("[LC;6535]")
                     end
 					if spawn_effect_file_name != nil then
 						pet.spawn_effect (mobVnum, spawn_effect_file_name)

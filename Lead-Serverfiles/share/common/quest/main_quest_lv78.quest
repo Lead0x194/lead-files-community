@@ -31,19 +31,19 @@ quest main_quest_lv78 begin
 			if v != 0 then
 				target.vid ("__TARGET__",v,"")
 			end
-			send_letter(gameforge.main_quest_lv78._10_sendLetter)
+			send_letter("[LC;4685]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv78._10_sendLetter)
-			say (gameforge.main_quest_lv78._20_say)
+			say_title("[LC;4685]")
+			say ("[LC;4696]")
 		end
-		when mysterious_man.chat.gameforge.main_quest_lv78._10_sendLetter begin
+		when mysterious_man.chat."[LC;4685]" begin
 			target.delete("__TARGET__")
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv78._30_say)
+			say_title ("[LC;4590]")
+			say("[LC;4707]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv78._40_say)
+			say_title ("[LC;4590]")
+			say("[LC;4708]")
 			set_state (make_red_bead)
 		end
 	end
@@ -56,17 +56,17 @@ quest main_quest_lv78 begin
 				pc.give_item2 (burning_land_soil, 1)
 			end
 		end
-		when mysterious_man.chat.gameforge.main_quest_lv78._10_sendLetter begin
+		when mysterious_man.chat."[LC;4685]" begin
 			if pc.count_item (red_bead) >= beads_num then
 				say_title (mob_name(mysterious_man))
-				say(string.format(gameforge.main_quest_lv78._50_say, beads_num))
+				say(string.format("[LC;4709;%d]", beads_num))
 				wait()
 				
 				say_title (locale.reward)
-				say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 36000000))
-				say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(72725)))
-				say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(70024)))
-				say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(70004)))
+				say_reward(string.format("[LC;4537;%d]", 36000000))
+				say_reward(string.format("[LC;4540;%s]", item_name(72725)))
+				say_reward(string.format("[LC;4540;%s]", item_name(70024)))
+				say_reward(string.format("[LC;4540;%s]", item_name(70004)))
 
 				pc.give_exp2(36000000)
 				
@@ -85,44 +85,44 @@ quest main_quest_lv78 begin
 			end
 			if pc.count_item (foundation_stone) < 1 or pc.count_item (burning_rake) < 1 or 
 					pc.count_item (burning_land_soil) < 1 then
-				say_title (gameforge.main_quest_lv66._300_sayTitle)
-				say (gameforge.main_quest_lv78._60_say)
+				say_title ("[LC;4590]")
+				say ("[LC;4710]")
 				return
 			end
 			local n = pc.getqf ("make_count")
 			if n >= 7 then
-				say_title (gameforge.main_quest_lv66._300_sayTitle)
-				say(gameforge.main_quest_lv78._70_say)
+				say_title ("[LC;4590]")
+				say("[LC;4711]")
 				return
 			else
 				pc.remove_item(foundation_stone, 1)
 				pc.remove_item(burning_rake, 1)
 				pc.remove_item(burning_land_soil, 1)
-				say_title(gameforge.main_quest_lv66._300_sayTitle)
-				say(gameforge.main_quest_lv78._80_say)
+				say_title("[LC;4590]")
+				say("[LC;4712]")
 				wait()
 				pc.setqf ("make_count", n + 1)
 				local n = number (1,100)
 				if n > pass_pct then 
-				say_title (gameforge.main_quest_lv66._300_sayTitle)
-					say(gameforge.main_quest_lv78._90_say)
+				say_title ("[LC;4590]")
+					say("[LC;4713]")
 					wait()
 				elseif pc.count_item (red_bead) < beads_num then
 					pc.give_item2 (red_bead, 1)
-				say_title (gameforge.main_quest_lv66._300_sayTitle)
-					say(gameforge.main_quest_lv78._100_say)
+				say_title ("[LC;4590]")
+					say("[LC;4684]")
 					say_item_vnum(red_bead)
 					wait ()
 				else 
 					say_title (mob_name(mysterious_man))
-					say(string.format(gameforge.main_quest_lv78._50_say, beads_num))
+					say(string.format("[LC;4709;%d]", beads_num))
 					wait()
 					
 					say_title (locale.reward)
-					say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 36000000))
-					say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(72725)))
-					say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(70024)))
-					say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(70004)))
+					say_reward(string.format ("[LC;4537;%d]", 36000000))
+					say_reward(string.format ("[LC;4540;%s]", item_name(72725)))
+					say_reward(string.format ("[LC;4540;%s]", item_name(70024)))
+					say_reward(string.format ("[LC;4540;%s]", item_name(70004)))
 
 					pc.give_exp2(36000000)
 					
@@ -141,50 +141,50 @@ quest main_quest_lv78 begin
 			if v != 0 then
 				target.vid ("__TARGET__",v,"")
 			end
-			send_letter (gameforge.main_quest_lv78._110_sendLetter)
+			send_letter ("[LC;4686]")
 		end
 		when button or info begin
-			say_title (gameforge.main_quest_lv78._110_sendLetter)
-			say(gameforge.main_quest_lv78._120_say)
+			say_title ("[LC;4686]")
+			say("[LC;4687]")
 		end
-		when mysterious_man.chat.gameforge.main_quest_lv78._110_sendLetter with pc.count_item (sacred_sap) < sacred_sap_num begin
+		when mysterious_man.chat."[LC;4686]" with pc.count_item (sacred_sap) < sacred_sap_num begin
 			target.delete("__TARGET__")
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv78._130_say)
+			say_title ("[LC;4590]")
+			say("[LC;4688]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv78._140_say)
+			say_title ("[LC;4590]")
+			say("[LC;4689]")
 		end
 		when black_dryad.kill or red_dryad.kill begin
 			if number (1, sacred_sap_drop_rate) == 1 then
 				pc.give_item2 (sacred_sap, 1)
 				local n = pc.count_item (sacred_sap)
 				if n < sacred_sap_num then
-					notice (string.format(gameforge.main_quest_lv78._150_say, sacred_sap_num - n))
+					notice (string.format("[LC;4690;%d]", sacred_sap_num - n))
 				else
-					notice_multiline(gameforge.main_quest_lv78._160_notice, notice)
+					notice_multiline("[LC;4691]", notice)
 				end
 			end
 		end
-		when mysterious_man.chat.gameforge.main_quest_lv78._110_sendLetter with pc.count_item (sacred_sap) >= sacred_sap_num begin
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv78._170_say)
+		when mysterious_man.chat."[LC;4686]" with pc.count_item (sacred_sap) >= sacred_sap_num begin
+			say_title ("[LC;4590]")
+			say("[LC;4692]")
 			wait()
 			say_title (	pc.getname())
-			say(gameforge.main_quest_lv78._180_say)
+			say("[LC;4693]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv78._190_say)
+			say_title ("[LC;4590]")
+			say("[LC;4694]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv78._200_say)
+			say_title ("[LC;4590]")
+			say("[LC;4695]")
 			wait()
 			say_title (locale.reward)
-			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 48000000))
-			say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, 230000))
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(72729)))
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(70035)))
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(70003)))
+			say_reward(string.format("[LC;4537;%d]", 48000000))
+			say_reward(string.format("[LC;4538;%d]", 230000))
+			say_reward(string.format("[LC;4540;%s]", item_name(72729)))
+			say_reward(string.format("[LC;4540;%s]", item_name(70035)))
+			say_reward(string.format("[LC;4540;%s]", item_name(70003)))
 
 			pc.give_exp2(48000000)
 			pc.change_money(230000)
@@ -202,40 +202,40 @@ quest main_quest_lv78 begin
 			if v != 0 then
 				target.vid ("__TARGET__",v,"")
 			end
-			send_letter (gameforge.main_quest_lv78._210_sendLetter)
+			send_letter ("[LC;4697]")
 		end
 		when button or info begin
-			say_title (gameforge.main_quest_lv78._210_sendLetter)
-			say(gameforge.main_quest_lv78._220_say)
+			say_title ("[LC;4697]")
+			say("[LC;4698]")
 		end
-		when 20018.chat.gameforge.main_quest_lv78._210_sendLetter begin
+		when 20018.chat."[LC;4697]" begin
 			target.delete("__TARGET__")
 			say_title ( mob_name(20018))
-			say(gameforge.main_quest_lv78._230_say)
+			say("[LC;4699]")
 			wait()
 			say_title ( pc.get_name ())
-			say(gameforge.main_quest_lv78._240_say)
+			say("[LC;4700]")
 			wait()
 			say_title ( mob_name(20018))
-			say(gameforge.main_quest_lv78._250_say)
+			say("[LC;4701]")
 			wait()
 			say_title ( pc.get_name ())
-			say(gameforge.main_quest_lv78._260_say)
+			say("[LC;4702]")
 			wait()
 			say_title ( mob_name(20018))
-			say(gameforge.main_quest_lv78._270_say)
+			say("[LC;4703]")
 			wait()
 			say_title ( pc.get_name ())
-			say(gameforge.main_quest_lv78._280_say)
+			say("[LC;4704]")
 			wait()
 			say_title ( mob_name(20018))
-			say(gameforge.main_quest_lv78._290_say)
+			say("[LC;4705]")
 			wait()
 			say_title(locale.reward)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(30319).." ".."2"..locale.count_postfix))
+			say_reward(string.format("[LC;4540;%s]", item_name(30319).." ".."2"..locale.count_postfix))
 			pc.give_item2(30319,2) 
 			wait()
-			say(gameforge.main_quest_lv78._300_say)
+			say("[LC;4706]")
 			set_state (__COMPLETE__)
 			q.done()
 			set_quest_state("main_quest_lv84", "state_0")

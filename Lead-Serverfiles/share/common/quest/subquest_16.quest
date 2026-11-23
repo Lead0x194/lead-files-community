@@ -11,36 +11,36 @@ quest subquest_16 begin
 			local v = find_npc_by_vnum(20355)
 
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_16._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;7360]")
 			end
 		end
 
 
-		when __TARGET__.target.click or	20355.chat.gameforge.subquest_16._20_npcChat with pc.level >= 25 begin
+		when __TARGET__.target.click or	20355.chat."[LC;7371]" with pc.level >= 25 begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_16._30_say)
+			say_title("[LC;4082]")
+			say("[LC;7382]")
 			wait()
 
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_16._40_say)
-			local s= select(gameforge.subquest_05._70_select, gameforge.subquest_08._170_select)
+			say_title("[LC;4082]")
+			say("[LC;7391]")
+			local s= select("[LC;7102]", "[LC;7200]")
 			if 2==s then
-				say(gameforge.subquest_11._60_say)
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;7286]")
+				local a= select("[LC;2059]", "[LC;2035]")
 				if  2==a then
-					say_title(gameforge.main_quest_lv10._30_sayTitle)
-					say(gameforge.subquest_16._50_say)
+					say_title("[LC;4082]")
+					say("[LC;7392]")
 					return
 				end
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.subquest_16._60_say)
+				say_title("[LC;4082]")
+				say("[LC;7393]")
 				set_state(__GIVEUP__)
 				return
 			end
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.subquest_16._70_say)
+			say_title("[LC;4082]")
+			say("[LC;7394]")
 			set_state(ask_to_youhwan)
 		
 
@@ -50,35 +50,35 @@ quest subquest_16 begin
 
 	state ask_to_youhwan begin
 		when info or button begin
-			say_title(gameforge.subquest_16._80_sayTitle)
-			say(gameforge.subquest_16._90_sayReward)
+			say_title("[LC;7395]")
+			say("[LC;7396]")
 		end
 
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.subquest_16._80_sayTitle)
-			q.set_title(gameforge.subquest_16._100_qSetTitle)
+			makequestbutton("[LC;7395]")
+			q.set_title("[LC;7359]")
 			q.start()
 
 			local v=find_npc_by_vnum("20017")
 			if 0== v then
 			else
-				target.vid("__TARGET__",v, gameforge.subquest_16._110_targetVid)
+				target.vid("__TARGET__",v, "[LC;7361]")
 			end
 		end
 
-		when 20017.chat.gameforge.subquest_16._80_sayTitle begin
+		when 20017.chat."[LC;7395]" begin
 			target.delete("__TARGET__")	
-			say_title(gameforge.arena_manager._20_sayTitle)
-			say(gameforge.subquest_16._120_say)
+			say_title("[LC;14]")
+			say("[LC;7362]")
 			wait()
 
-			say_title(gameforge.subquest_16._130_sayTitle)
-			say(gameforge.subquest_16._140_say)
+			say_title("[LC;7363]")
+			say("[LC;7364]")
 			wait()
 
-			say_title(gameforge.subquest_16._130_sayTitle)
-			say(gameforge.subquest_16._150_say)
+			say_title("[LC;7363]")
+			say("[LC;7365]")
 			set_state(ask_to_hengsang)
 		end
 	end
@@ -86,37 +86,37 @@ quest subquest_16 begin
 	state ask_to_hengsang begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.subquest_16._160_makequestbutton)
-			q.set_title(gameforge.subquest_16._170_qSetTitle)
+			makequestbutton("[LC;7366]")
+			q.set_title("[LC;7367]")
 			q.start()
 
 			local v=find_npc_by_vnum("20010")
 			if 0== v then
 			else
-				target.vid("__TARGET1__",v, gameforge.subquest_16._180_targetVid)
+				target.vid("__TARGET1__",v, "[LC;7368]")
 			end	
 		end
 		
 		when info or button begin
-			say_title(gameforge.subquest_16._80_sayTitle)
-			say(gameforge.subquest_16._190_sayReward)
+			say_title("[LC;7395]")
+			say("[LC;7369]")
 		end
 		
 		
-		when 20010.chat.gameforge.subquest_16._20_npcChat begin
+		when 20010.chat."[LC;7371]" begin
 			target.delete("__TARGET1__")
-			say_title(gameforge.subquest_16._200_sayTitle)
-			say(gameforge.subquest_16._210_say)
+			say_title("[LC;7370]")
+			say("[LC;7372]")
 			wait()
-			say_title(gameforge.subquest_16._200_sayTitle)
-			say(gameforge.subquest_16._220_say)
+			say_title("[LC;7370]")
+			say("[LC;7373]")
 			wait()
-			say_title(gameforge.subquest_16._200_sayTitle)
-			say(gameforge.subquest_16._230_say)
+			say_title("[LC;7370]")
+			say("[LC;7374]")
 			wait()
 
-			say_title(gameforge.subquest_16._200_sayTitle)
-			say(gameforge.subquest_16._240_say)
+			say_title("[LC;7370]")
+			say("[LC;7375]")
 			set_state(ask_to_euldo)
 		end
 	end
@@ -125,71 +125,71 @@ quest subquest_16 begin
 			local v=find_npc_by_vnum("20011")
 			if 0== v then
 			else
-				target.vid("__TARGET1__",v, gameforge.main_quest_lv47._70_sayTitle)
+				target.vid("__TARGET1__",v, "[LC;4409]")
 			end
 		
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.main_quest_lv47._390_targetVid)
-			q.set_title(gameforge.subquest_16._170_qSetTitle)
+			makequestbutton("[LC;4385]")
+			q.set_title("[LC;7367]")
 			q.start()
 		end
 
 		when info or button begin
-			say_title(gameforge.subquest_16._250_sayTitle)
-			say(gameforge.subquest_16._260_say)
+			say_title("[LC;7376]")
+			say("[LC;7377]")
 		end
 		
 		
 		
-		when 20011.chat.gameforge.subquest_16._80_sayTitle begin
+		when 20011.chat."[LC;7395]" begin
 			target.delete("__TARGET1__")
-			say_title(gameforge.subquest_16._270_sayTitle)
-			say(gameforge.subquest_16._280_say)
+			say_title("[LC;7378]")
+			say("[LC;7379]")
 			wait()
 
-			say_title(gameforge.subquest_16._270_sayTitle)
-			say(gameforge.subquest_16._290_say)
+			say_title("[LC;7378]")
+			say("[LC;7380]")
 			wait()
-			say_title(gameforge.subquest_16._270_sayTitle)
-			say(gameforge.subquest_16._300_say)
+			say_title("[LC;7378]")
+			say("[LC;7381]")
 			set_state(ask_to_guard)
 		end
 	end
 
 	state ask_to_guard begin
 		when info or button begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-			say(gameforge.subquest_16._310_say)
+			say_title("[LC;44]")
+			say("[LC;7383]")
 		end
 		
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.subquest_16._320_makequestbutton)
-			q.set_title(gameforge.subquest_16._320_makequestbutton)
+			makequestbutton("[LC;7384]")
+			q.set_title("[LC;7384]")
 			q.start()
 
 			local v=find_npc_by_vnum("20355")
 			if 0== v then
 			else
-				target.vid("__TARGET__",v, gameforge.subquest_16._80_sayTitle)
+				target.vid("__TARGET__",v, "[LC;7395]")
 			end
 		end
 
-		when 20355.chat.gameforge.subquest_16._330_npcChat begin
+		when 20355.chat."[LC;7385]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.subquest_16._340_sayTitle)
-			say(gameforge.subquest_16._350_say)
+			say_title("[LC;7386]")
+			say("[LC;7387]")
 			wait()
 			
-			say_title(gameforge.subquest_16._340_sayTitle)
-			say(gameforge.subquest_16._360_say)
+			say_title("[LC;7386]")
+			say("[LC;7388]")
 			wait()
 
-			say_title(gameforge.subquest_16._340_sayTitle)
-			say(gameforge.subquest_16._370_say)
+			say_title("[LC;7386]")
+			say("[LC;7389]")
 			wait()
-			say_title(gameforge.collect_herb_lv4._130_sayTitle)
-						say_reward(gameforge.subquest_16._380_sayReward)
+			say_title("[LC;192]")
+						say_reward("[LC;7390]")
 						pc.give_exp2(150000)
 			pc.change_money(30000)
 			pc.give_item2("17060", 1)			

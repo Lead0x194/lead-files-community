@@ -11,30 +11,30 @@ quest new_quest_lv54 begin
 			local v=find_npc_by_vnum(20355) -- Hauptmann
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.new_quest_lv54._010_target)
+				target.vid("__TARGET__", v, "[LC;6033]")
 			end
 		end
-		when 20355.chat.gameforge.new_quest_lv54._020_say_title begin
+		when 20355.chat."[LC;6034]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.new_quest_lv54._056_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv54._030_say) -- white font text
-			say(gameforge.new_quest_lv54._031_say_reward)
-			local doquest = select(gameforge.new_quest_lv54._032_select, gameforge.subquest_12._50_select, gameforge.new_quest_lv75._290_2_select)
+			say_title("[LC;6045]") -- yellow text headline
+			say("[LC;6035]") -- white font text
+			say("[LC;6036]")
+			local doquest = select("[LC;6037]", "[LC;7304]", "[LC;6200]")
 			if doquest ==1 then 
 				set_state(ask_trader)
 			elseif doquest == 3 then
-				say(gameforge.subquest_06._60_say)
-				local abortquest = select(gameforge.subquest_06._70_select, gameforge.subquest_06._80_select)
+				say("[LC;7170]")
+				local abortquest = select("[LC;7173]", "[LC;7174]")
 				if abortquest == 1 then
 					set_state(__GIVEUP__)
 				else
-					say_title(gameforge.new_quest_lv54._056_say_title) -- yellow text headline
-					say(gameforge.subquest_11._80_say)
+					say_title("[LC;6045]") -- yellow text headline
+					say("[LC;7288]")
 					return
 				end
 			else
-				say_title(gameforge.new_quest_lv54._056_say_title) -- yellow text headline
-				say(gameforge.subquest_11._80_say)
+				say_title("[LC;6045]") -- yellow text headline
+				say("[LC;7288]")
 				return
 			end
 		end
@@ -42,61 +42,61 @@ quest new_quest_lv54 begin
 	-------------- player has to ask her why there are too less potions ------------------------------------------------------
 	state ask_trader begin
 		when enter or login begin
-			send_letter(gameforge.new_quest_lv54._020_say_title)
+			send_letter("[LC;6034]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv54._020_say_title)
+			q.set_title("[LC;6034]")
 			local v=find_npc_by_vnum(9003) --Gemischtwarenhändlerin
 			if 0==v then
 			else
-				target.vid("__TARGET2__", v, gameforge.new_quest_lv54._050_target)
+				target.vid("__TARGET2__", v, "[LC;6040]")
 			end
 		end
-		when 9003.chat.gameforge.new_quest_lv54._020_say_title begin
+		when 9003.chat."[LC;6034]" begin
 			target.delete("__TARGET2__")
-			say_title(gameforge.new_quest_lv54._040_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv54._051_say)
+			say_title("[LC;6038]") -- yellow text headline
+			say("[LC;6041]")
 		wait()
-			say_title(gameforge.new_quest_lv54._040_say_title)
-			say(gameforge.new_quest_lv54._052_say)
-			--say_reward(gameforge.new_quest_lv54._053_say_reward)
+			say_title("[LC;6038]")
+			say("[LC;6042]")
+			--say_reward(nil)
 			q.done()
 			set_state(ask_captain)
 		end
 		when info or button begin
-			say_title(gameforge.new_quest_lv54._020_say_title)
-			say(gameforge.new_quest_lv54._054_say)
+			say_title("[LC;6034]")
+			say("[LC;6043]")
 			say("")
-			say(string.format(gameforge.new_quest_lv54._055_say, get_map_name_by_number(1)))
+			say(string.format("[LC;6044;%s]", get_map_name_by_number(1)))
 		end
 	end
 	-------------- player has to ask the captain to secure trading routes for the traders to guarantee supplies ------------------------------------------------------
 	state ask_captain begin
 		when login or enter begin
-			send_letter(gameforge.new_quest_lv54._020_say_title)
+			send_letter("[LC;6034]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv54._020_say_title)
+			q.set_title("[LC;6034]")
 			local v=find_npc_by_vnum(20355) -- Hauptmann
 			if 0==v then
 			else
-				target.vid("__TARGET3__", v, gameforge.new_quest_lv54._010_target)
+				target.vid("__TARGET3__", v, "[LC;6033]")
 			end
 		end
-		when 20355.chat.gameforge.new_quest_lv54._020_say_title begin
+		when 20355.chat."[LC;6034]" begin
 			target.delete("__TARGET3__")
-			say_title(gameforge.new_quest_lv54._056_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv54._060_say) -- white font text
+			say_title("[LC;6045]") -- yellow text headline
+			say("[LC;6046]") -- white font text
 		wait()
-			say_title(gameforge.new_quest_lv54._056_say_title)
-			say(gameforge.new_quest_lv54._061_say)
-			say(gameforge.new_quest_lv54._062_say_reward)
+			say_title("[LC;6045]")
+			say("[LC;6047]")
+			say("[LC;6048]")
 			q.done()
 			set_state(ask_yangshin)
 		end
 		when info or button begin
-			say_title(gameforge.new_quest_lv54._020_say_title)
-			say(gameforge.new_quest_lv54._064_say)
+			say_title("[LC;6034]")
+			say("[LC;6049]")
 			say("")
-			say(string.format(gameforge.new_quest_lv54._065_say, get_map_name_by_number(1)))
+			say(string.format("[LC;6050;%s]", get_map_name_by_number(1)))
 		end
 	end
 	-------------- the player has to ask yang-shin to kill the tigers, because only hunters are allowed to kill animals ------------------------------------------------------
@@ -105,38 +105,38 @@ quest new_quest_lv54 begin
 			new_quest_lv54_neededAmountDrop1 = 20
 			new_quest_lv54_mob1 = 144 -- haunted white tiger
 			new_quest_lv54_drop1 = 30176 -- white tiger skin
-			send_letter(gameforge.new_quest_lv54._020_say_title)
+			send_letter("[LC;6034]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv54._020_say_title)
+			q.set_title("[LC;6034]")
 			local v=find_npc_by_vnum(20019) -- Yang Shin
 			if 0==v then
 			else
-				target.vid("__TARGET4__", v, gameforge.new_quest_lv54._070_target)
+				target.vid("__TARGET4__", v, "[LC;6051]")
 			end
 		end
-		when 20019.chat.gameforge.new_quest_lv54._020_say_title begin
+		when 20019.chat."[LC;6034]" begin
 			target.delete("__TARGET4__")
-			say_title(gameforge.new_quest_lv54._077_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv54._071_say)
+			say_title("[LC;6058]") -- yellow text headline
+			say("[LC;6052]")
 		wait()
-			say_title(gameforge.new_quest_lv54._077_say_title)
-			say(gameforge.new_quest_lv54._072_say)
+			say_title("[LC;6058]")
+			say("[LC;6053]")
 			say("")
-			say(gameforge.new_quest_lv54._073_say)
+			say("[LC;6054]")
 		wait()
-			say(gameforge.new_quest_lv54._074_say )
+			say("[LC;6055]" )
 			say_reward(string.format("%s x", new_quest_lv54_neededAmountDrop1))
 			say_item_vnum(new_quest_lv54_drop1) -- icon of item
-			say_reward(gameforge.new_quest_lv54._075_say )
+			say_reward("[LC;6056]" )
 			say(mob_name(new_quest_lv54_mob1))
             q.done()
 			set_state(hunting)
 		end
 		when info or button begin
-			say_title(gameforge.new_quest_lv54._020_say_title)
-			say(gameforge.new_quest_lv54._076_say)
+			say_title("[LC;6034]")
+			say("[LC;6057]")
 			say("")
-			say(string.format(gameforge.new_quest_lv54._078_say, get_map_name_by_number(3)))
+			say(string.format("[LC;6059;%s]", get_map_name_by_number(3)))
 		end
 	end
 	-------------- yang-shin wants the player to hunt tigers for him, because they have too less hunters to kill all the agressive animals ------------------------------------------------------
@@ -146,9 +146,9 @@ quest new_quest_lv54 begin
 			new_quest_lv54_dropProb1 = 6
 			new_quest_lv54_mob1 = 144 -- haunted white tiger
 			new_quest_lv54_drop1 = 30176 -- white tiger skin
-			send_letter(gameforge.new_quest_lv54._020_say_title)
+			send_letter("[LC;6034]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv54._020_say_title)
+			q.set_title("[LC;6034]")
 		end
 		-------------- tiger skin ------------------------------------------------------
 		-- kill a 144#haunted white tiger
@@ -159,32 +159,32 @@ quest new_quest_lv54 begin
 					pc.setqf("collect_count_1",index) --you got one, so you would get +1
 					pc.give_item2(new_quest_lv54_drop1)
 					if new_quest_lv54_neededAmountDrop1 ==  pc.getqf("collect_count_1")  then
-						notice_multiline(gameforge.new_quest_lv54._082_notice, notice)
+						notice_multiline("[LC;6062]", notice)
            -- you have all, so remove collected Amount
 				    pc.setqf("collect_count_1",index - new_quest_lv54_neededAmountDrop1)
             q.done()
 						set_state(backto_yangshin)
            else
-					    notice(string.format(gameforge.new_quest_lv54._081_notice, new_quest_lv54_neededAmountDrop1-pc.getqf("collect_count_1")))
+					    notice(string.format("[LC;6061;%s]", new_quest_lv54_neededAmountDrop1-pc.getqf("collect_count_1")))
 					end	
 				else
-					notice_multiline(gameforge.new_quest_lv54._083_notice, notice)
+					notice_multiline("[LC;6063]", notice)
 				end
 			end
 		end
 		when info or button begin
-			say_title(gameforge.new_quest_lv54._020_say_title)
-			say(gameforge.new_quest_lv54._085_say)
+			say_title("[LC;6034]")
+			say("[LC;6065]")
 			if new_quest_lv54_neededAmountDrop1 !=  pc.getqf("collect_count_1") then
                 say("")
-				say_reward(string.format(gameforge.new_quest_lv54._084_say, new_quest_lv54_neededAmountDrop1-pc.getqf("collect_count_1")))
+				say_reward(string.format("[LC;6064;%s]", new_quest_lv54_neededAmountDrop1-pc.getqf("collect_count_1")))
 			else
-				notice_multiline(gameforge.new_quest_lv54._082_notice, notice)
+				notice_multiline("[LC;6062]", notice)
 			end
 		end
-		when 20019.chat.gameforge.new_quest_lv54._020_say_title begin
-			say_title(gameforge.new_quest_lv54._077_say_title)
-			say(gameforge.new_quest_lv54._091_say)
+		when 20019.chat."[LC;6034]" begin
+			say_title("[LC;6058]")
+			say("[LC;6067]")
 		end
 	end
 	-------------- player brings tiger skin to yang shin, too proove he killed them and wants the promised tiger-shield for his efforts ------------------------------------------------------
@@ -195,23 +195,23 @@ quest new_quest_lv54 begin
 			new_quest_lv54_rewardVnum = 13083
 			new_quest_lv54_neededAmountDrop1 = 20
 			new_quest_lv54_drop1 = 30176 -- white tiger skin
-			send_letter(gameforge.new_quest_lv54._020_say_title)
+			send_letter("[LC;6034]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv54._020_say_title)
+			q.set_title("[LC;6034]")
 		end
-		when 20019.chat.gameforge.new_quest_lv54._020_say_title begin
-			say_title(gameforge.new_quest_lv54._077_say_title)
+		when 20019.chat."[LC;6034]" begin
+			say_title("[LC;6058]")
 			if pc.count_item(new_quest_lv54_drop1) >= new_quest_lv54_neededAmountDrop1 then 
-				say(gameforge.new_quest_lv54._092_say)
-				say(gameforge.new_quest_lv54._093_say )
+				say("[LC;6068]")
+				say("[LC;6069]" )
 			wait()
-				say_title(gameforge.new_quest_lv54._077_say_title)
-				say(gameforge.new_quest_lv54._094_say )
-				say(gameforge.new_quest_lv54._095_say_reward)
-				say_title(gameforge.new_quest_lv54._096_say)
-				say_reward(string.format(gameforge.new_quest_lv54._101_say_reward, new_quest_lv54_amountXp))
-				say_reward(string.format(gameforge.new_quest_lv54._102_say_reward, new_quest_lv54_amountYang))
-				say_reward(string.format(gameforge.new_quest_lv54._097_say_reward, item_name(new_quest_lv54_rewardVnum)))
+				say_title("[LC;6058]")
+				say("[LC;6070]" )
+				say("[LC;6071]")
+				say_title("[LC;6072]")
+				say_reward(string.format("[LC;6077]", new_quest_lv54_amountXp))
+				say_reward(string.format("[LC;6078]", new_quest_lv54_amountYang))
+				say_reward(string.format("[LC;6073]", item_name(new_quest_lv54_rewardVnum)))
                 pc.change_money(new_quest_lv54_amountYang)
                 pc.give_exp2(new_quest_lv54_amountXp)
                 pc.give_item2(new_quest_lv54_rewardVnum)
@@ -220,18 +220,18 @@ quest new_quest_lv54 begin
 				set_state(__COMPLETE__)
 			else
 				-- this happens, if the player sold or dropped needed items:
-				say(gameforge.new_quest_lv54._098_say)
-				say_reward(string.format(gameforge.new_quest_lv54._099_say_reward, new_quest_lv54_neededAmountDrop1))
+				say("[LC;6074]")
+				say_reward(string.format("[LC;6075;%s]", new_quest_lv54_neededAmountDrop1))
 				pc.setqf("collect_count_1", pc.count_item(new_quest_lv54_drop1))
 				q.done()
                 set_state(hunting)
 			end
 		end
 		when info or button begin
-			say_title(gameforge.new_quest_lv54._020_say_title)
-			say(gameforge.new_quest_lv54._100_say)
+			say_title("[LC;6034]")
+			say("[LC;6076]")
 			say("")
-			say(string.format(gameforge.new_quest_lv54._078_say, get_map_name_by_number(3)))
+			say(string.format("[LC;6059;%s]", get_map_name_by_number(3)))
 		end
 	end
 	

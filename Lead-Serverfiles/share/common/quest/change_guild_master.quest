@@ -5,23 +5,23 @@ quest change_guild_master begin
 			local result = false
 
 			if ret == 0 then
-                say(gameforge.change_guild_master._30_say)
+                say("[LC;87]")
             elseif ret == 1 then
-                say(gameforge.change_guild_master._40_say)
+                say("[LC;88]")
             elseif ret == 2 then
-                say(gameforge.change_guild_master._50_say)
+                say("[LC;89]")
             elseif ret == 3 then
-                say(gameforge.change_guild_master._60_say)
+                say("[LC;90]")
 				result = true
                 pc.remove_item(71099)
             elseif ret == 4 then
-                say(gameforge.change_guild_master._70_say)
+                say("[LC;91]")
 			elseif ret == 5 then
-				say(gameforge.change_guild_master._90_say)
+				say("[LC;93]")
 			elseif ret == 6 then
-				say(gameforge.change_guild_master._100_say)
+				say("[LC;83]")
 			elseif ret == 7 then
-				say(gameforge.change_guild_master._110_say)
+				say("[LC;85]")
             end
 			
 			return result
@@ -29,16 +29,16 @@ quest change_guild_master begin
 	
         when 71099.use begin
             if pc.is_guild_master() == false then
-                say(gameforge.change_guild_master._10_say)
+                say("[LC;84]")
                 return
             end
            
 
-            say(gameforge.change_guild_master._20_say)
+            say("[LC;86]")
             local s = input()
 			local newface_name = find_pc_by_name(s)
 			if newface_name == pc.get_vid() then
-                say(gameforge.change_guild_master._80_say)
+                say("[LC;92]")
 				return
 			end
             

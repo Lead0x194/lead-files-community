@@ -9,16 +9,16 @@ quest check_trans_ticket begin
 
 		-- Entrance to "Spinnendungeon"
 
-		when 20088.chat.gameforge.check_trans_ticket._10_npcChat begin
-			say_title(gameforge.check_trans_ticket._15_sayTitle)
-			say(gameforge.check_trans_ticket._20_say)
+		when 20088.chat."[LC;102]" begin
+			say_title("[LC;109]")
+			say("[LC;111]")
 			wait()
 			if pc.count_item(71095) + pc.count_item(71130) > 0 then
-				say_title(gameforge.check_trans_ticket._15_sayTitle)
-				say(gameforge.check_trans_ticket._30_say)
+				say_title("[LC;109]")
+				say("[LC;112]")
 				wait()
 				if false == pc.can_warp() then
-					say(gameforge.check_trans_ticket._160_say)
+					say("[LC;110]")
 					return
 				end
 				if pc.count_item(71095) + pc.count_item(71130) > 0 then
@@ -34,47 +34,47 @@ quest check_trans_ticket begin
 					return
 				end
 			else
-				say_title(gameforge.check_trans_ticket._15_sayTitle)
-				say(gameforge.check_trans_ticket._40_say)
+				say_title("[LC;109]")
+				say("[LC;113]")
 				wait()
 			end	
 		end
 
 		-- Entrance to "Grotte der Verbannung"
 
-		when 20093.chat.gameforge.check_trans_ticket._50_npcChat begin
-			say_title(gameforge.check_trans_ticket._55_sayTitle)
+		when 20093.chat."[LC;114]" begin
+			say_title("[LC;115]")
 			-- inhalt für Schlüssel "gameforge.check_trans_ticket._60_say":
-			say(gameforge.check_trans_ticket._60_say) 
+			say("[LC;116]") 
 			if pc.get_level() < 75 then
 				-- inhalt für Schlüssel "gameforge.check_trans_ticket._70_say":
-				say_reward(gameforge.check_trans_ticket._70_say)
+				say_reward("[LC;117]")
 				return 
 			elseif pc.count_item(30190) + pc.count_item(30191) == 0 then
-				local get_bloodstone = select(gameforge.check_trans_ticket._75_1_select, gameforge.check_trans_ticket._75_2_select)
+				local get_bloodstone = select("[LC;118]", "[LC;119]")
 				if get_bloodstone == 1 then
 					-- inhalt für Schlüssel "gameforge.check_trans_ticket._80_say":
-					say_title(gameforge.check_trans_ticket._55_sayTitle)
-					say(gameforge.check_trans_ticket._80_say)
-					say(gameforge.check_trans_ticket._90_say_reward)
-					say_reward(gameforge.check_trans_ticket._100_say)
+					say_title("[LC;115]")
+					say("[LC;120]")
+					say("[LC;121]")
+					say_reward("[LC;101]")
 				else
-					say_title(gameforge.check_trans_ticket._55_sayTitle)
-					say(gameforge.check_trans_ticket._110_say)
-					say(gameforge.check_trans_ticket._90_say_reward)
-					say_reward(gameforge.check_trans_ticket._120_say)
+					say_title("[LC;115]")
+					say("[LC;103]")
+					say("[LC;121]")
+					say_reward("[LC;104]")
 				end
 			elseif pc.count_item(30190) + pc.count_item(30191) > 0 then
-				local get_bloodstone = select(gameforge.check_trans_ticket._130_1_select, gameforge.check_trans_ticket._130_2_select)
+				local get_bloodstone = select("[LC;105]", "[LC;106]")
 									
 				if false == pc.can_warp() then
-					say(gameforge.check_trans_ticket._160_say)
+					say("[LC;110]")
 					return
 				end
 
 				if get_bloodstone == 1 then
 					say_pc_name()
-					say(string.format(gameforge.check_trans_ticket._140_say, pc.get_name()))
+					say(string.format("[LC;107;%s]", pc.get_name()))
 					if pc.count_item(30190) >= 1 then -- when character has Bloodstones from ItemShop and some from keyquest remove the ones from the keyquest first
 						pc.remove_item(30190, 1) -- remove keyquest bloodstone first
 					elseif pc.count_item(30191) >= 1 then
@@ -83,8 +83,8 @@ quest check_trans_ticket begin
 						return -- This can only happen as a result of cheating
 					end
 					wait()
-					say_title(gameforge.check_trans_ticket._55_sayTitle)
-					say(gameforge.check_trans_ticket._150_say)
+					say_title("[LC;115]")
+					say("[LC;108]")
 					wait()
 					pc.warp(900,1207800)
 				end

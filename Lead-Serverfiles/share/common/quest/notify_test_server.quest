@@ -1,7 +1,7 @@
 quest notify_quest_server begin
     state start begin
 	when login with is_test_server() begin
-	    cmdchat(gameforge.notify_test_server._10_chat)
+	    cmdchat("[LC;6342]")
 	end
     end
 end

@@ -1,10 +1,10 @@
 quest blacksmith begin
 	state start begin
-		when blacksmith.chat.gameforge.blacksmith._10_npcChat begin
-			say_title(gameforge.blacksmith._20_sayTitle)
-			say(gameforge.blacksmith._30_say)
-			say_title(gameforge.blacksmith._40_sayTitle)
-						say_reward(gameforge.blacksmith._50_sayReward)
+		when blacksmith.chat."[LC;26]" begin
+			say_title("[LC;27]")
+			say("[LC;28]")
+			say_title("[LC;29]")
+						say_reward("[LC;30]")
 					end
 	end
 end

@@ -11,20 +11,20 @@ quest subquest_3 begin
 			local v = find_npc_by_vnum(20018)
 
 			if v!= 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_03._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;7023]")
 			end
 		end
 
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
-			say_title(gameforge.collect_quest_lv30._340_sayTitle)
-			say(gameforge.subquest_03._20_say)
+			say_title("[LC;248]")
+			say("[LC;7029]")
 			wait()
 
-			say_title(gameforge.collect_quest_lv30._340_sayTitle)
-			say(gameforge.subquest_03._30_say)
+			say_title("[LC;248]")
+			say("[LC;7030]")
 			say_item_vnum(30029)
-			say(gameforge.subquest_03._40_say)
+			say("[LC;7031]")
 
 			set_state(hunt_for_wolf)
 		end
@@ -32,19 +32,19 @@ quest subquest_3 begin
 
 	state hunt_for_wolf begin
 		when letter begin
-			send_letter(gameforge.subquest_03._10_targetVid)
+			send_letter("[LC;7023]")
 		end
 		when button or info begin
-			say_title(gameforge.subquest_03._10_targetVid)
-						say_reward(gameforge.subquest_03._50_sayReward)
+			say_title("[LC;7023]")
+						say_reward("[LC;7032]")
 			say_item_vnum(30029)
 					end
 
-    	when 20018.chat.gameforge.subquest_03._60_npcChat with pc.count_item(30029) == 0 begin
-			say_title(gameforge.collect_quest_lv30._340_sayTitle)
-			say(gameforge.subquest_03._70_say)
+    	when 20018.chat."[LC;7033]" with pc.count_item(30029) == 0 begin
+			say_title("[LC;248]")
+			say("[LC;7034]")
 			say_item_vnum(30029)
-			say(gameforge.subquest_03._80_say)
+			say("[LC;7035]")
 		end
 
 		
@@ -60,32 +60,32 @@ quest subquest_3 begin
 
     state go_back_to_doctor begin
 		when letter begin
-			send_letter(gameforge.subquest_03._90_sendLetter)
+			send_letter("[LC;7036]")
 			local v = find_npc_by_vnum(20018)
 
 			if v!= 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_03._90_sendLetter)
+				target.vid("__TARGET__", v, "[LC;7036]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.subquest_03._100_sayTitle)
-						say_reward(gameforge.subquest_03._110_sayReward)
+			say_title("[LC;7022]")
+						say_reward("[LC;7024]")
 					end
 				
 		when __TARGET__.target.click begin      
 			target.delete("__TARGET__")
 			if pc.count_item(30029) >= 1 then 
-			say_title(gameforge.collect_quest_lv30._340_sayTitle)
-			say(gameforge.subquest_03._120_say)
+			say_title("[LC;248]")
+			say("[LC;7025]")
 			say_item_vnum(30029)
-			say(gameforge.subquest_03._130_say)
+			say("[LC;7026]")
 			wait()
-			say_title(gameforge.collect_quest_lv30._340_sayTitle)
-			say(gameforge.subquest_03._140_say)
+			say_title("[LC;248]")
+			say("[LC;7027]")
 			say_item_vnum(30027)
 			
-			say_title(gameforge.locale.reward)
-						say_reward(gameforge.subquest_03._150_sayReward)
+			say_title("[LC;3558]")
+						say_reward("[LC;7028]")
 			
 			pc.remove_item(30029)
 			pc.give_exp2(3000)

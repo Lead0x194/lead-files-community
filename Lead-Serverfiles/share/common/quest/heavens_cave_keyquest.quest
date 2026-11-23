@@ -11,7 +11,7 @@ quest heavens_cave_keyquest begin
 			local v=find_npc_by_vnum(20095) -- Seon Hae
 			if 0!=v then
 				if pc.get_map_index() == 1 or pc.get_map_index() == 21 or pc.get_map_index() == 41 then	
-					target.vid("__TARGET__", find_npc_by_vnum(20095), gameforge.heavens_cave_keyquest._010_target)  
+					target.vid("__TARGET__", find_npc_by_vnum(20095), "[LC;1506]")  
 					set_state(check_cooldown)
 				end 
 			end
@@ -27,33 +27,33 @@ quest heavens_cave_keyquest begin
 			local s = 0 -- for time remaining seconds
 		end
 		
-		when 20095.chat.gameforge.heavens_cave_keyquest._020_npcChat begin
+		when 20095.chat."[LC;1507]" begin
 			
 			if pc.getqf("heavens_cave_keyquest_Repeat")  == 0 then -- this should only be used the first time the whole quest is done
 				target.delete("__TARGET__")
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
+				say_title("[LC;1507]")
 				if pc.get_sex() == 0 then
-					say(gameforge.heavens_cave_keyquest._030_say)
+					say("[LC;1508]")
 				else
-					say(gameforge.heavens_cave_keyquest._040_say)
+					say("[LC;1509]")
 				end
 				wait()
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._050_say)
+				say_title("[LC;1507]")
+				say("[LC;1510]")
 				wait()
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._060_say)
+				say_title("[LC;1507]")
+				say("[LC;1511]")
 				wait()
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._070_say)
+				say_title("[LC;1507]")
+				say("[LC;1512]")
 				say("")
-				say(gameforge.heavens_cave_keyquest._080_say)
-				say_reward(gameforge.heavens_cave_keyquest._090_say_reward)
+				say("[LC;1513]")
+				say_reward("[LC;1514]")
 				set_state(initialize)
 			else -- this is what the player gets on later repeats of the quest
 				if get_time() - pc.getqf("overall_cooldown_timestamp") >= pc.getqf("heavens_cave_keyquest_CooldownTime") then
-					say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-					say(gameforge.heavens_cave_keyquest._100_say)
+					say_title("[LC;1507]")
+					say("[LC;1515]")
 					set_state(initialize)
 				else
 				-- calculating remaining hours and minutes, only for display
@@ -61,16 +61,16 @@ quest heavens_cave_keyquest begin
 --				h,m = math.modf(s/3600) -- metin does not compile this, sigh
 					h = math.floor(s/3600)
 					m = math.ceil(((s/3600)-h)*60)
-					say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-					say(gameforge.heavens_cave_keyquest._110_say)
+					say_title("[LC;1507]")
+					say("[LC;1516]")
 					say("")
 					if s >= 7200 then
-						say(string.format(gameforge.heavens_cave_keyquest._120_say, h))
+						say(string.format("[LC;1517;%s]", h))
 					else
 						if s >= 3660 then
-							say(string.format(gameforge.heavens_cave_keyquest._130_say, m))
+							say(string.format("[LC;1518;%s]", m))
 						else
-							say(string.format(gameforge.heavens_cave_keyquest._140_say, m))
+							say(string.format("[LC;1519;%s]", m))
 						end
 					end
 				end
@@ -207,13 +207,13 @@ quest heavens_cave_keyquest begin
 				end
 			else
 				target.delete("__TEAR"..Identifier.."__")
-				say_title(gameforge.heavens_cave_keyquest._150_say_title)
-				say(gameforge.heavens_cave_keyquest._160_say)
-				local s = select(gameforge.heavens_cave_keyquest._170_1_select, gameforge.heavens_cave_keyquest._170_2_select, gameforge.heavens_cave_keyquest._170_3_select)
+				say_title("[LC;1520]")
+				say("[LC;1521]")
+				local s = select("[LC;1522]", "[LC;1523]", "[LC;1524]")
 				if s == 1 then
 					c =	pc.getqf("tears_collected")	
-					say_title(gameforge.heavens_cave_keyquest._150_say_title)
-					say(gameforge.heavens_cave_keyquest._180_say)				
+					say_title("[LC;1520]")
+					say("[LC;1525]")				
 					pc.setqf("tears_collected",c+1)
 					pc.setqf("Tear"..Identifier.."Taken",1)
 					pc.give_item2(pc.getqf("heavens_cave_keyquest_FrozenTear")) 
@@ -222,11 +222,11 @@ quest heavens_cave_keyquest begin
 				if s == 2 then
 					a = math.random(1,3)
 					c =	pc.getqf("tears_collected")	
-					say_title(gameforge.heavens_cave_keyquest._190_say_title)
-					say(string.format(gameforge.heavens_cave_keyquest._200_say,a))
+					say_title("[LC;1526]")
+					say(string.format("[LC;1527;%s]",a))
 					wait()
-					say_title(gameforge.heavens_cave_keyquest._190_say_title)
-					say(gameforge.heavens_cave_keyquest._210_say)										
+					say_title("[LC;1526]")
+					say("[LC;1528]")										
 					pc.setqf("tears_collected",c+a)
 					pc.setqf("Tear"..Identifier.."Taken",1)
 					pc.give_item2(pc.getqf("heavens_cave_keyquest_FrozenTear"), a) 
@@ -238,7 +238,7 @@ quest heavens_cave_keyquest begin
 					--notice(string.format("Debug: Time Stamp = %s",heavens_cave_keyquest_lock_timestamp))
 					heavens_cave_keyquest_Lock = true
 					-- re-placing the target marker as dialogue was aborted
-					target.pos("__TEAR"..Identifier.."__", heavens_cave_keyquest_SpiritForestCoordsTempList[Identifier][1], heavens_cave_keyquest_SpiritForestCoordsTempList[Identifier][2], 62, gameforge.heavens_cave_keyquest._150_say_title)
+					target.pos("__TEAR"..Identifier.."__", heavens_cave_keyquest_SpiritForestCoordsTempList[Identifier][1], heavens_cave_keyquest_SpiritForestCoordsTempList[Identifier][2], 62, "[LC;1520]")
 				end	
 			end
 			
@@ -413,9 +413,9 @@ quest heavens_cave_keyquest begin
 		
 			
 			pc.setqf("tears_collected",pc.count_item(pc.getqf("heavens_cave_keyquest_FrozenTear"))) -- step counter to any leftovers in inventory
-			send_letter(gameforge.heavens_cave_keyquest._020_npcChat)
+			send_letter("[LC;1507]")
 			q.start()
-			q.set_title(gameforge.heavens_cave_keyquest._020_npcChat)
+			q.set_title("[LC;1507]")
 			--q.set_counter("Tränen benötigt:", pc.getqf("heavens_cave_keyquest_NeededTearsAmount")-pc.getqf("tears_collected"))
 			-- painting the locations for the tears if on fireland map
 			if pc.get_map_index() == 62 then
@@ -423,31 +423,31 @@ quest heavens_cave_keyquest begin
 				--notice(string.format("Debug:Example coords %s x %s y",heavens_cave_keyquest_SpiritForestCoordsTempList[3][1], heavens_cave_keyquest_SpiritForestCoordsTempList[3][2]))  
 				if pc.getqf("Tear1Taken") == 0 then
                     allTearsTaken = false
-					target.pos("__TEAR1__", heavens_cave_keyquest_SpiritForestCoordsTempList[1][1], heavens_cave_keyquest_SpiritForestCoordsTempList[1][2], 62, gameforge.heavens_cave_keyquest._150_say_title)
+					target.pos("__TEAR1__", heavens_cave_keyquest_SpiritForestCoordsTempList[1][1], heavens_cave_keyquest_SpiritForestCoordsTempList[1][2], 62, "[LC;1520]")
 				end
 				if pc.getqf("Tear2Taken") == 0 then
                     allTearsTaken = false
-					target.pos("__TEAR2__", heavens_cave_keyquest_SpiritForestCoordsTempList[2][1], heavens_cave_keyquest_SpiritForestCoordsTempList[2][2], 62, gameforge.heavens_cave_keyquest._150_say_title)
+					target.pos("__TEAR2__", heavens_cave_keyquest_SpiritForestCoordsTempList[2][1], heavens_cave_keyquest_SpiritForestCoordsTempList[2][2], 62, "[LC;1520]")
 				end
 				if pc.getqf("Tear3Taken") == 0 then
                     allTearsTaken = false
-					target.pos("__TEAR3__", heavens_cave_keyquest_SpiritForestCoordsTempList[3][1], heavens_cave_keyquest_SpiritForestCoordsTempList[3][2], 62, gameforge.heavens_cave_keyquest._150_say_title)
+					target.pos("__TEAR3__", heavens_cave_keyquest_SpiritForestCoordsTempList[3][1], heavens_cave_keyquest_SpiritForestCoordsTempList[3][2], 62, "[LC;1520]")
 				end
 				if pc.getqf("Tear4Taken") == 0 then
                     allTearsTaken = false
-					target.pos("__TEAR4__", heavens_cave_keyquest_SpiritForestCoordsTempList[4][1], heavens_cave_keyquest_SpiritForestCoordsTempList[4][2], 62, gameforge.heavens_cave_keyquest._150_say_title)
+					target.pos("__TEAR4__", heavens_cave_keyquest_SpiritForestCoordsTempList[4][1], heavens_cave_keyquest_SpiritForestCoordsTempList[4][2], 62, "[LC;1520]")
 				end
 				if pc.getqf("Tear5Taken") == 0 then
                     allTearsTaken = false
-					target.pos("__TEAR5__", heavens_cave_keyquest_SpiritForestCoordsTempList[5][1], heavens_cave_keyquest_SpiritForestCoordsTempList[5][2], 62, gameforge.heavens_cave_keyquest._150_say_title)
+					target.pos("__TEAR5__", heavens_cave_keyquest_SpiritForestCoordsTempList[5][1], heavens_cave_keyquest_SpiritForestCoordsTempList[5][2], 62, "[LC;1520]")
 				end
 				if pc.getqf("Tear6Taken") == 0 then
                     allTearsTaken = false
-					target.pos("__TEAR6__", heavens_cave_keyquest_SpiritForestCoordsTempList[6][1], heavens_cave_keyquest_SpiritForestCoordsTempList[6][2], 62, gameforge.heavens_cave_keyquest._150_say_title)
+					target.pos("__TEAR6__", heavens_cave_keyquest_SpiritForestCoordsTempList[6][1], heavens_cave_keyquest_SpiritForestCoordsTempList[6][2], 62, "[LC;1520]")
 				end
 				if pc.getqf("Tear7Taken") == 0 then
                     allTearsTaken = false
-					target.pos("__TEAR7__", heavens_cave_keyquest_SpiritForestCoordsTempList[7][1], heavens_cave_keyquest_SpiritForestCoordsTempList[7][2], 62, gameforge.heavens_cave_keyquest._150_say_title)
+					target.pos("__TEAR7__", heavens_cave_keyquest_SpiritForestCoordsTempList[7][1], heavens_cave_keyquest_SpiritForestCoordsTempList[7][2], 62, "[LC;1520]")
 				end
                 if pc.count_item(pc.getqf("heavens_cave_keyquest_FrozenTear")) >= pc.getqf("heavens_cave_keyquest_NeededTearsAmount") and pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass"))>= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
                     q.done()
@@ -460,14 +460,14 @@ quest heavens_cave_keyquest begin
 		end
 		
 		when button or info begin
-			say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-			say(gameforge.heavens_cave_keyquest._220_say)
+			say_title("[LC;1507]")
+			say("[LC;1529]")
 			say("")
 			if pc.count_item(pc.getqf("heavens_cave_keyquest_FrozenTear")) < pc.getqf("heavens_cave_keyquest_NeededTearsAmount") then
-				say_reward(string.format(gameforge.heavens_cave_keyquest._230_say, pc.getqf("heavens_cave_keyquest_NeededTearsAmount")-pc.count_item(pc.getqf("heavens_cave_keyquest_FrozenTear"))))
+				say_reward(string.format("[LC;1530;%s]", pc.getqf("heavens_cave_keyquest_NeededTearsAmount")-pc.count_item(pc.getqf("heavens_cave_keyquest_FrozenTear"))))
 			end
 			if pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) < pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
-				say_reward(string.format(gameforge.heavens_cave_keyquest._240_say, pc.getqf("heavens_cave_keyquest_NeededGlassAmount")-pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass"))))
+				say_reward(string.format("[LC;1531;%s]", pc.getqf("heavens_cave_keyquest_NeededGlassAmount")-pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass"))))
 			end
 		end
 
@@ -487,7 +487,7 @@ quest heavens_cave_keyquest begin
 						pc.setqf("Tear5Taken",1)
 						pc.setqf("Tear6Taken",1)
 						pc.setqf("Tear7Taken",1)
-						notice_multiline(gameforge.heavens_cave_keyquest._250_notice,notice)
+						notice_multiline("[LC;1532]",notice)
 						if pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 						--if pc.getqf("glass_collected") >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 							q.done()
@@ -512,7 +512,7 @@ quest heavens_cave_keyquest begin
 						pc.setqf("Tear5Taken",1)
 						pc.setqf("Tear6Taken",1)
 						pc.setqf("Tear7Taken",1)
-						notice_multiline(gameforge.heavens_cave_keyquest._250_notice,notice)
+						notice_multiline("[LC;1532]",notice)
 						if pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 						--if pc.getqf("glass_collected") >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 							q.done()
@@ -538,7 +538,7 @@ quest heavens_cave_keyquest begin
 						pc.setqf("Tear5Taken",1)
 						pc.setqf("Tear6Taken",1)
 						pc.setqf("Tear7Taken",1)
-						notice_multiline(gameforge.heavens_cave_keyquest._250_notice,notice)
+						notice_multiline("[LC;1532]",notice)
 						if pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 						-- if pc.getqf("glass_collected") >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 							q.done()
@@ -563,7 +563,7 @@ quest heavens_cave_keyquest begin
 						pc.setqf("Tear5Taken",1)
 						pc.setqf("Tear6Taken",1)
 						pc.setqf("Tear7Taken",1)
-						notice_multiline(gameforge.heavens_cave_keyquest._250_notice,notice)
+						notice_multiline("[LC;1532]",notice)
 						if pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 						-- if pc.getqf("glass_collected") >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 							q.done()
@@ -588,7 +588,7 @@ quest heavens_cave_keyquest begin
 						pc.setqf("Tear5Taken",1)
 						pc.setqf("Tear6Taken",1)
 						pc.setqf("Tear7Taken",1)
-						notice_multiline(gameforge.heavens_cave_keyquest._250_notice,notice)
+						notice_multiline("[LC;1532]",notice)
 						if pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 						-- if pc.getqf("glass_collected") >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 							q.done()
@@ -613,7 +613,7 @@ quest heavens_cave_keyquest begin
 						pc.setqf("Tear5Taken",1)
 						pc.setqf("Tear6Taken",1)
 						pc.setqf("Tear7Taken",1)
-						notice_multiline(gameforge.heavens_cave_keyquest._250_notice,notice)
+						notice_multiline("[LC;1532]",notice)
 						if pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 						-- if pc.getqf("glass_collected") >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 							q.done()
@@ -638,7 +638,7 @@ quest heavens_cave_keyquest begin
 						pc.setqf("Tear5Taken",1)
 						pc.setqf("Tear6Taken",1)
 						pc.setqf("Tear7Taken",1)
-						notice_multiline(gameforge.heavens_cave_keyquest._250_notice,notice)
+						notice_multiline("[LC;1532]",notice)
 						if pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 						-- if pc.getqf("glass_collected") >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 							q.done()
@@ -650,13 +650,13 @@ quest heavens_cave_keyquest begin
 		when 2204.kill begin -- the added killquest
 			if pc.get_map_index() == 62 and pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) < pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then			
 				if math.random(1,100) <= 20 then
-					notice_multiline(gameforge.heavens_cave_keyquest._260_notice,notice)
+					notice_multiline("[LC;1533]",notice)
 					pc.give_item2(pc.getqf("heavens_cave_keyquest_VolcanicGlass"))
 					local c = pc.getqf("glass_collected")+1
 					pc.setqf("glass_collected", c)
 					if pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
 					-- if pc.getqf("glass_collected") >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
-						notice_multiline(gameforge.heavens_cave_keyquest._270_notice,notice)
+						notice_multiline("[LC;1534]",notice)
 						if pc.count_item(pc.getqf("heavens_cave_keyquest_FrozenTear")) >= pc.getqf("heavens_cave_keyquest_NeededTearsAmount") then
                             q.done()
 							set_state(tears_for_seon)
@@ -672,34 +672,34 @@ quest heavens_cave_keyquest begin
 	state tears_for_seon begin
 		
 		when enter or login begin
-			send_letter(gameforge.heavens_cave_keyquest._020_npcChat)
+			send_letter("[LC;1507]")
 			q.start()
-			q.set_title(gameforge.heavens_cave_keyquest._020_npcChat)
+			q.set_title("[LC;1507]")
 			local v=find_npc_by_vnum(20095) -- Seon Hae
 			if 0~=v then
-				target.vid("__TARGET__", v, gameforge.heavens_cave_keyquest._010_target)
+				target.vid("__TARGET__", v, "[LC;1506]")
 			end
 		end
 		
 		
 		when button or info begin   
-			say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-			say(gameforge.heavens_cave_keyquest._280_say)
+			say_title("[LC;1507]")
+			say("[LC;1535]")
 			say("")
-			say(string.format(gameforge.heavens_cave_keyquest._290_say, get_map_name_by_number(1)))
+			say(string.format("[LC;1536;%s]", get_map_name_by_number(1)))
 		end
 		
-		when 20095.chat.gameforge.heavens_cave_keyquest._020_npcChat begin
+		when 20095.chat."[LC;1507]" begin
 			target.delete("__TARGET__")
 			if pc.getqf("heavens_cave_keyquest_Repeat") == 0 then -- this should only be used once
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._300_say)
+				say_title("[LC;1507]")
+				say("[LC;1537]")
 				wait()
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._310_say)			
+				say_title("[LC;1507]")
+				say("[LC;1538]")			
 			else				
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._320_say)
+				say_title("[LC;1507]")
+				say("[LC;1539]")
 			end
 			target.delete("__TARGET__")
 			if pc.count_item(pc.getqf("heavens_cave_keyquest_FrozenTear")) >= pc.getqf("heavens_cave_keyquest_NeededTearsAmount") and pc.count_item(pc.getqf("heavens_cave_keyquest_VolcanicGlass")) >= pc.getqf("heavens_cave_keyquest_NeededGlassAmount") then
@@ -734,9 +734,9 @@ quest heavens_cave_keyquest begin
 			  [11] = {410, 335,},
 			}
 			
-			send_letter(gameforge.heavens_cave_keyquest._020_npcChat)
+			send_letter("[LC;1507]")
 			q.start()
-			q.set_title(gameforge.heavens_cave_keyquest._020_npcChat)
+			q.set_title("[LC;1507]")
 			-- painting location for voice if in red forest
 			if pc.get_map_index() == 68 then
 				--notice(string.format("Debug:Bahar-Taraji is at: %s x %s y",heavens_cave_keyquest_RedForestCoordsList[pc.getqf("heavens_cave_keyquest_RedForestRndNum")][1], heavens_cave_keyquest_RedForestCoordsList[pc.getqf("heavens_cave_keyquest_RedForestRndNum")][2]))  
@@ -747,33 +747,33 @@ quest heavens_cave_keyquest begin
 		when button or info begin
 			
 			if pc.getqf("reachedspot") >= 1 then 
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._330_say)
+				say_title("[LC;1507]")
+				say("[LC;1540]")
 				return
 			else
 				if pc.get_map_index() == 68 and pc.getqf("reachedspot") == 0 then
 					if pc.getqf("heavens_cave_keyquest_Repeat") == 0 then
-						say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-						say(gameforge.heavens_cave_keyquest._340_say)
+						say_title("[LC;1507]")
+						say("[LC;1542]")
 						wait()
-						say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-						say(gameforge.heavens_cave_keyquest._350_say)
+						say_title("[LC;1507]")
+						say("[LC;1543]")
 						wait()
-						say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-						say(gameforge.heavens_cave_keyquest._360_say)
+						say_title("[LC;1507]")
+						say("[LC;1544]")
 						say("")
-						say(gameforge.heavens_cave_keyquest._370_say)
+						say("[LC;1545]")
 						wait()
-						say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-						say(string.format(gameforge.heavens_cave_keyquest._380_say,pc.get_name()))
+						say_title("[LC;1507]")
+						say(string.format("[LC;1546;%s]",pc.get_name()))
 					else				
-						say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-						say(gameforge.heavens_cave_keyquest._390_say)
+						say_title("[LC;1507]")
+						say("[LC;1547]")
 						wait()
-						say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-						say(string.format(gameforge.heavens_cave_keyquest._400_say,pc.get_name()))
+						say_title("[LC;1507]")
+						say(string.format("[LC;1548;%s]",pc.get_name()))
 						say("")
-						say(gameforge.heavens_cave_keyquest._410_say)
+						say("[LC;1549]")
 					end
 					if pc.count_item(pc.getqf("heavens_cave_keyquest_TearBottle")) >= 1 then 
 						pc.remove_item(pc.getqf("heavens_cave_keyquest_TearBottle"),1)
@@ -789,11 +789,11 @@ quest heavens_cave_keyquest begin
 		
 		when __VOICE__.target.arrive begin
 			target.delete("__VOICE__")
-			say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-			say(gameforge.heavens_cave_keyquest._335_say)
+			say_title("[LC;1507]")
+			say("[LC;1541]")
 			wait()
 			pc.setqf("reachedspot", 0)
-			send_letter(gameforge.heavens_cave_keyquest._020_npcChat)
+			send_letter("[LC;1507]")
 		end
 		
 		
@@ -802,40 +802,40 @@ quest heavens_cave_keyquest begin
 	
 	state blood_for_seon begin
 		when enter or login begin
-			send_letter(gameforge.heavens_cave_keyquest._020_npcChat)
+			send_letter("[LC;1507]")
 			q.start()
-			q.set_title(gameforge.heavens_cave_keyquest._020_npcChat)
+			q.set_title("[LC;1507]")
 			local v=find_npc_by_vnum(20095) -- Seon Hae
 			if 0~=v then
-				target.vid("__TARGET__", v, gameforge.heavens_cave_keyquest._010_target)
+				target.vid("__TARGET__", v, "[LC;1506]")
 			end
 		end
 		
 		when button or info begin   
-			say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-			say(gameforge.heavens_cave_keyquest._420_say)
+			say_title("[LC;1507]")
+			say("[LC;1550]")
 			say("")
-			say(string.format(gameforge.heavens_cave_keyquest._290_say, get_map_name_by_number(1)))
+			say(string.format("[LC;1536;%s]", get_map_name_by_number(1)))
 		end 
 		
-		when 20095.chat.gameforge.heavens_cave_keyquest._020_npcChat begin
+		when 20095.chat."[LC;1507]" begin
 			target.delete("__TARGET__")
 			if pc.getqf("heavens_cave_keyquest_Repeat") == 0 then
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._430_say)
+				say_title("[LC;1507]")
+				say("[LC;1551]")
 				wait()
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._440_say)
+				say_title("[LC;1507]")
+				say("[LC;1552]")
 				wait()
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._450_say)
+				say_title("[LC;1507]")
+				say("[LC;1553]")
 				say("")
-				say_reward(gameforge.heavens_cave_keyquest._460_say_reward)
+				say_reward("[LC;1554]")
 			else
-				say_title(gameforge.heavens_cave_keyquest._020_npcChat)
-				say(gameforge.heavens_cave_keyquest._470_say)
+				say_title("[LC;1507]")
+				say("[LC;1555]")
 				say("")
-				say_reward(gameforge.heavens_cave_keyquest._480_say_reward)
+				say_reward("[LC;1556]")
 			end
 			if pc.count_item(pc.getqf("heavens_cave_keyquest_BloodDrop")) >= 1 then 
 				pc.remove_item(pc.getqf("heavens_cave_keyquest_BloodDrop"), 1)

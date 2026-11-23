@@ -1,11 +1,11 @@
 quest horse_levelup begin
 	state training1 begin
 		when letter begin
-			q.set_counter(gameforge.horse_levelup._training_1_count, 5-pc.getqf("kill_count"))
+			q.set_counter("[LC;1618]", 5-pc.getqf("kill_count"))
 		end
 		when 492.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_levelup._training_1_count, 5-pc.getqf("kill_count"))
+			q.set_counter("[LC;1618]", 5-pc.getqf("kill_count"))
 		end
 		when enter begin
 			pc.setqf("kill_count", 0)
@@ -15,8 +15,8 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._10_makequestbutton)
-			q.set_title(gameforge.horse_levelup._10_makequestbutton)
+			makequestbutton("[LC;1571]")
+			q.set_title("[LC;1571]")
 			q.start()
 			if	not pc.is_mount() then
 				setstate(failure)
@@ -24,16 +24,16 @@ quest horse_levelup begin
 
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._10_makequestbutton)
-			say(gameforge.horse_levelup._20_say)
+			say_title("[LC;1571]")
+			say("[LC;1582]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._10_makequestbutton)
-			say(gameforge.horse_levelup._20_say)
+			say_title("[LC;1571]")
+			say("[LC;1582]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
@@ -48,11 +48,11 @@ quest horse_levelup begin
 	end
 	state training2 begin
 		when letter begin
-			q.set_counter(gameforge.horse_levelup._training_2_count, 5-pc.getqf("kill_count"))
+			q.set_counter("[LC;1619]", 5-pc.getqf("kill_count"))
 		end
 		when 494.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_levelup._training_2_count, 5-pc.getqf("kill_count"))
+			q.set_counter("[LC;1619]", 5-pc.getqf("kill_count"))
 		end
 		when enter begin
 			pc.setqf("kill_count", 0)
@@ -62,17 +62,17 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._30_makequestbutton)
-			q.set_title(gameforge.horse_levelup._30_makequestbutton)
+			makequestbutton("[LC;1593]")
+			q.set_title("[LC;1593]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._30_makequestbutton)
-			say(gameforge.horse_levelup._40_say)
+			say_title("[LC;1593]")
+			say("[LC;1604]")
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._30_makequestbutton)
-			say(gameforge.horse_levelup._50_say)
+			say_title("[LC;1593]")
+			say("[LC;1613]")
 		end
 		when 494.kill with pc.getqf("kill_count") >= 5 begin
 			setstate(report)
@@ -83,11 +83,11 @@ quest horse_levelup begin
 	end
 	state training3 begin
 		when letter begin
-			q.set_counter(gameforge.horse_levelup._training_3_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1620]", 10-pc.getqf("kill_count"))
 		end
 		when 635.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_levelup._training_3_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1620]", 10-pc.getqf("kill_count"))
 		end
 		when enter begin
 			pc.setqf("kill_count", 0)
@@ -97,22 +97,22 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._60_makequestbutton)
-			q.set_title(gameforge.horse_levelup._60_makequestbutton)
+			makequestbutton("[LC;1614]")
+			q.set_title("[LC;1614]")
 			q.start()
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._60_makequestbutton)
-			say(gameforge.horse_levelup._70_say)
+			say_title("[LC;1614]")
+			say("[LC;1615]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when info begin
-			say(gameforge.horse_levelup._80_say)
+			say("[LC;1616]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
@@ -126,11 +126,11 @@ quest horse_levelup begin
 	end
 	state training4 begin
 		when letter begin
-			q.set_counter(gameforge.horse_levelup._training_4_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1621]", 10-pc.getqf("kill_count"))
 		end
 		when 636.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_levelup._training_4_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1621]", 10-pc.getqf("kill_count"))
 		end
 		when enter begin
 			pc.setqf("kill_count", 0)
@@ -140,23 +140,23 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._90_makequestbutton)
-			q.set_title(gameforge.horse_levelup._90_makequestbutton)
+			makequestbutton("[LC;1617]")
+			q.set_title("[LC;1617]")
 			q.start()
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._90_makequestbutton)
-			say(gameforge.horse_levelup._100_say)
+			say_title("[LC;1617]")
+			say("[LC;1570]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._90_makequestbutton)
-			say(gameforge.horse_levelup._100_say)
+			say_title("[LC;1617]")
+			say("[LC;1570]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
@@ -170,11 +170,11 @@ quest horse_levelup begin
 	end
 	state training5 begin
 		when letter begin
-			q.set_counter(gameforge.horse_levelup._training_5_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1622]", 10-pc.getqf("kill_count"))
 		end
 		when 706.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_levelup._training_5_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1622]", 10-pc.getqf("kill_count"))
 		end
 		when enter begin
 			pc.setqf("kill_count", 0)
@@ -184,23 +184,23 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._110_makequestbutton)
-			q.set_title(gameforge.horse_levelup._110_makequestbutton)
+			makequestbutton("[LC;1572]")
+			q.set_title("[LC;1572]")
 			q.start()
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._110_makequestbutton)
-			say(gameforge.horse_levelup._120_say)
+			say_title("[LC;1572]")
+			say("[LC;1573]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._110_makequestbutton)
-			say(gameforge.horse_levelup._120_say)
+			say_title("[LC;1572]")
+			say("[LC;1573]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
@@ -214,11 +214,11 @@ quest horse_levelup begin
 	end
 	state training6 begin
 		when letter begin
-			q.set_counter(gameforge.horse_levelup._training_6_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1623]", 10-pc.getqf("kill_count"))
 		end
 		when 2034.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_levelup._training_6_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1623]", 10-pc.getqf("kill_count"))
 		end
 		when enter begin
 			pc.setqf("kill_count", 0)
@@ -229,23 +229,23 @@ quest horse_levelup begin
 		when letter begin
 
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._130_makequestbutton)
-			q.set_title(gameforge.horse_levelup._130_makequestbutton)
+			makequestbutton("[LC;1574]")
+			q.set_title("[LC;1574]")
 			q.start()
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._130_makequestbutton)
-			say(gameforge.horse_levelup._140_say)
+			say_title("[LC;1574]")
+			say("[LC;1575]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._130_makequestbutton)
-			say(gameforge.horse_levelup._140_say)
+			say_title("[LC;1574]")
+			say("[LC;1575]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
@@ -259,11 +259,11 @@ quest horse_levelup begin
 	end
 	state training7 begin
 		when letter begin
-			q.set_counter(gameforge.horse_levelup._training_7_count, 20-pc.getqf("kill_count"))
+			q.set_counter("[LC;1624]", 20-pc.getqf("kill_count"))
 		end
 		when 2108.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_levelup._training_7_count, 20-pc.getqf("kill_count"))
+			q.set_counter("[LC;1624]", 20-pc.getqf("kill_count"))
 		end
 		when enter begin
 			pc.setqf("kill_count", 0)
@@ -273,23 +273,23 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._150_makequestbutton)
-			q.set_title(gameforge.horse_levelup._150_makequestbutton)
+			makequestbutton("[LC;1576]")
+			q.set_title("[LC;1576]")
 			q.start()
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._150_makequestbutton)
-			say(gameforge.horse_levelup._160_say)
+			say_title("[LC;1576]")
+			say("[LC;1577]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._150_makequestbutton)
-			say(gameforge.horse_levelup._160_say)
+			say_title("[LC;1576]")
+			say("[LC;1577]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
@@ -303,11 +303,11 @@ quest horse_levelup begin
 	end
 	state training8 begin
 		when letter begin
-			q.set_counter(gameforge.horse_levelup._training_8_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1625]", 10-pc.getqf("kill_count"))
 		end
 		when 1107.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_levelup._training_8_count, 10-pc.getqf("kill_count"))
+			q.set_counter("[LC;1625]", 10-pc.getqf("kill_count"))
 		end
 		when enter begin
 			pc.setqf("kill_count", 0)
@@ -317,23 +317,23 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._170_makequestbutton)
-			q.set_title(gameforge.horse_levelup._170_makequestbutton)
+			makequestbutton("[LC;1578]")
+			q.set_title("[LC;1578]")
 			q.start()
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._180_sayTitle)
-			say(gameforge.horse_levelup._190_say)
+			say_title("[LC;1579]")
+			say("[LC;1580]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._180_sayTitle)
-			say(gameforge.horse_levelup._200_say)
+			say_title("[LC;1579]")
+			say("[LC;1581]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
@@ -347,11 +347,11 @@ quest horse_levelup begin
 	end
 	state training9 begin
 		when letter begin
-			q.set_counter(gameforge.horse_levelup._training_9_count, 20-pc.getqf("kill_count"))
+			q.set_counter("[LC;1626]", 20-pc.getqf("kill_count"))
 		end
 		when 2203.kill begin
 			pc.setqf("kill_count", pc.getqf("kill_count")+1)
-			q.set_counter(gameforge.horse_levelup._training_9_count, 20-pc.getqf("kill_count"))
+			q.set_counter("[LC;1626]", 20-pc.getqf("kill_count"))
 		end
 		when enter begin
 			pc.setqf("kill_count", 0)
@@ -361,23 +361,23 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._210_makequestbutton)
-			q.set_title(gameforge.horse_levelup._210_makequestbutton)
+			makequestbutton("[LC;1583]")
+			q.set_title("[LC;1583]")
 			q.start()
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._210_makequestbutton)
-			say(gameforge.horse_levelup._220_say)
+			say_title("[LC;1583]")
+			say("[LC;1584]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._210_makequestbutton)
-			say(gameforge.horse_levelup._220_say)
+			say_title("[LC;1583]")
+			say("[LC;1584]")
 			if	not pc.is_mount() then
 				setstate(failure)
 			end
@@ -390,29 +390,29 @@ quest horse_levelup begin
 		end
 	end
 	state start begin
-		when 20349.chat.gameforge.horse_levelup._230_npcChat with horse.get_grade()==2 begin
+		when 20349.chat."[LC;1585]" with horse.get_grade()==2 begin
 			if horse.get_level()==20 then
-				say_title(gameforge.horse_levelup._240_sayTitle)
-				say(gameforge.horse_levelup._250_say)
+				say_title("[LC;1586]")
+				say("[LC;1587]")
 			elseif pc.countitem("50050")<1 then
-				say_title(gameforge.horse_levelup._240_sayTitle)
-				say(gameforge.horse_levelup._260_say)
+				say_title("[LC;1586]")
+				say("[LC;1588]")
 				setstate(need_item50050)
 			elseif get_time()<pc.getqf("next_time") then
-				say_title(gameforge.horse_levelup._240_sayTitle)
-				say(gameforge.horse_levelup._270_say)
+				say_title("[LC;1586]")
+				say("[LC;1589]")
 			elseif horse.get_stamina_pct()<=10 then
-				say_title(gameforge.horse_levelup._240_sayTitle)
-				say(gameforge.horse_levelup._280_say)
+				say_title("[LC;1586]")
+				say("[LC;1590]")
 			elseif horse.get_health_pct()<=10 then
-				say_title(gameforge.horse_levelup._240_sayTitle)
-				say(gameforge.horse_levelup._290_say)
+				say_title("[LC;1586]")
+				say("[LC;1591]")
 			elseif horse.is_riding()==0 then
-				say_title(gameforge.horse_levelup._240_sayTitle)
-				say(gameforge.horse_levelup._300_say)
+				say_title("[LC;1586]")
+				say("[LC;1592]")
 			elseif (horse.get_level()>=11 and horse.get_level()<=19) then
-				say_title(gameforge.horse_levelup._240_sayTitle)
-				say(gameforge.horse_levelup._310_say)
+				say_title("[LC;1586]")
+				say("[LC;1594]")
 				if is_test_server() then
 					pc.setqf("next_time", get_time()+10)
 				else
@@ -446,19 +446,19 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._320_makequestbutton)
-			q.set_title(gameforge.horse_levelup._320_makequestbutton)
+			makequestbutton("[LC;1595]")
+			q.set_title("[LC;1595]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._320_makequestbutton)
-			say(gameforge.horse_levelup._330_say)
+			say_title("[LC;1595]")
+			say("[LC;1596]")
 			setstate(start)
 			q.done()
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._320_makequestbutton)
-			say(gameforge.horse_levelup._330_say)
+			say_title("[LC;1595]")
+			say("[LC;1596]")
 			setstate(start)
 			q.done()
 		end
@@ -466,19 +466,19 @@ quest horse_levelup begin
 	state failure begin
 		when login or levelup or enter or letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._340_makequestbutton)
-			q.set_title(gameforge.horse_levelup._340_makequestbutton)
+			makequestbutton("[LC;1597]")
+			q.set_title("[LC;1597]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._340_makequestbutton)
-			say(gameforge.horse_levelup._350_say)
+			say_title("[LC;1597]")
+			say("[LC;1598]")
 			setstate(start)
 			q.done()
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._340_makequestbutton)
-			say(gameforge.horse_levelup._350_say)
+			say_title("[LC;1597]")
+			say("[LC;1598]")
 			setstate(start)
 			q.done()
 		end
@@ -493,22 +493,22 @@ quest horse_levelup begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._360_makequestbutton)
-			q.set_title(gameforge.horse_levelup._360_makequestbutton)
+			makequestbutton("[LC;1599]")
+			q.set_title("[LC;1599]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._360_makequestbutton)
-			say(gameforge.horse_levelup._370_say)
+			say_title("[LC;1599]")
+			say("[LC;1600]")
 		end
 		when info begin
-			say_title(gameforge.horse_levelup._360_makequestbutton)
-			say(gameforge.horse_levelup._370_say)
+			say_title("[LC;1599]")
+			say("[LC;1600]")
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
-			say_title(gameforge.horse_levelup._240_sayTitle)
-			say(gameforge.horse_levelup._380_say)
+			say_title("[LC;1586]")
+			say("[LC;1601]")
 			setstate(reward)
 			q.done()
 		end
@@ -516,23 +516,23 @@ quest horse_levelup begin
 	state reward begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.horse_levelup._390_makequestbutton)
-			q.set_title(gameforge.horse_levelup._400_qSetTitle)
+			makequestbutton("[LC;1602]")
+			q.set_title("[LC;1603]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.horse_levelup._400_qSetTitle)
+			say_title("[LC;1603]")
 			if horse.get_level()<=10 then
-				say(gameforge.horse_levelup._410_say)
+				say("[LC;1605]")
 			elseif horse.get_level()>=20 then
-				say(gameforge.horse_levelup._420_say)
+				say("[LC;1606]")
 			elseif (horse.get_level()>=11 and horse.get_level()<=19) then
 				local s=number(1, 2)
 				if 1>=s then -- 50.00% (1/2)
-					say(gameforge.horse_levelup._430_say)
+					say("[LC;1607]")
 					pc.setqf("next_time", 0)
 				elseif 2>=s then -- 50.00% (1/2)
-					say(gameforge.horse_levelup._440_say)
+					say("[LC;1608]")
 					if pc.countitem("50050")>=1 then
 						char_log(0, "HORSE_ADVANCE", "BEGIN")
 						pc.removeitem("50050", 1)
@@ -542,15 +542,15 @@ quest horse_levelup begin
 						horse.ride()
 						char_log(0, "HORSE_ADVANCE", "INC horse_advance 1")
 						char_log(0, "HORSE_ADVANCE", "END")
-						say(string.format(gameforge.horse_levelup._450_say, (horse.get_level())))
+						say(string.format("[LC;1609;%s]", (horse.get_level())))
 						if horse.get_level()==20 then
-							say(gameforge.horse_levelup._460_say)
+							say("[LC;1610]")
 							pc.setqf("next_time", 0)
 						else
-							say(gameforge.horse_levelup._470_say)
+							say("[LC;1611]")
 						end
 					else
-						say(gameforge.horse_levelup._480_say)
+						say("[LC;1612]")
 					end
 				end
 			end

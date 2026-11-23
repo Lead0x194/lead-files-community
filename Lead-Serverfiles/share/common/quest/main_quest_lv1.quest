@@ -6,11 +6,11 @@ quest main_quest_lv1 begin
 	end
 	state gotoinfomation begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv1._10_sendLetter)
+			send_letter("[LC;4061]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv1._10_sendLetter)
-			say(gameforge.main_quest_lv1._20_say)
+			say_title("[LC;4061]")
+			say("[LC;4062]")
 			set_state ( gototeacher )
 		end
 	end
@@ -20,22 +20,22 @@ quest main_quest_lv1 begin
 			local v=find_npc_by_vnum(20354)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv1._30_targetVid)
+				target.vid("__TARGET__", v, "[LC;4063]")
 			end
 		end
 
 		when button or info begin
-			say_title(gameforge.main_quest_lv1._40_sayTitle)
-						say_reward(gameforge.main_quest_lv1._50_sayReward)
+			say_title("[LC;4064]")
+						say_reward("[LC;4065]")
 					end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
-			say(gameforge.main_quest_lv1._70_say)
+			say_title("[LC;4066]")
+			say("[LC;4067]")
 			wait()
-			say_title(gameforge.main_quest_lv1._60_sayTitle)
+			say_title("[LC;4066]")
 
-			say(gameforge.main_quest_lv1._80_say)
+			say("[LC;4068]")
 			clear_letter()
 			set_state (__COMPLETE__)
 			set_quest_state("find_squareguard","find")

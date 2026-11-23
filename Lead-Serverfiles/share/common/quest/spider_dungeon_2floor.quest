@@ -6,23 +6,23 @@ quest spider_dungeon_2floor begin
 	end
 		
 	state to_spider_2floor begin
-		when 20089.chat.gameforge.spider_dungeon_2floor._10_npcChat begin
-			say_title(gameforge.spider_dungeon_2floor._15_sayTitle)
-			say(gameforge.spider_dungeon_2floor._20_say)
+		when 20089.chat."[LC;6918]" begin
+			say_title("[LC;6919]")
+			say("[LC;6920]")
 			
-			local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+			local a= select("[LC;2059]", "[LC;2035]")
 			if 1==a then
 			
-				say_title(gameforge.spider_dungeon_2floor._15_sayTitle)
-				say(gameforge.spider_dungeon_2floor._30_say)
+				say_title("[LC;6919]")
+				say("[LC;6921]")
 				wait()
 
 				pc.warp(91700, 525300)
 				return
 			end
 
-			say_title(gameforge.spider_dungeon_2floor._15_sayTitle)
-			say(gameforge.spider_dungeon_2floor._40_say)
+			say_title("[LC;6919]")
+			say("[LC;6922]")
 		end
 	end
 end

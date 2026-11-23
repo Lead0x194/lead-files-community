@@ -1,8 +1,8 @@
 quest item_mall begin
 	state start begin
-	    when 9010.chat.gameforge.item_mall._10_npcChat with is_test_server() begin
+	    when 9010.chat."[LC;1800]" with is_test_server() begin
 	    	setskin(NOWINDOW)
-		cmdchat(gameforge.item_mall._20_chat)
+		cmdchat("[LC;1801]")
 	    end
 	end
 end

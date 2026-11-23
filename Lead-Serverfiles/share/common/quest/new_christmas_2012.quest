@@ -5,15 +5,15 @@ quest new_christmas_2012 begin
 			return (game.get_event_flag("new_xmas_event") > 0)
 		end
 
-		when 20126.chat.gameforge.new_christmas._010_npcChat  begin
+		when 20126.chat."[LC;5606]"  begin
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas._020_say )
+			say ("[LC;5607]" )
 			wait()
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas._030_say )
+			say ("[LC;5608]" )
 			wait()
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas._040_say )
+			say ("[LC;5609]" )
 			wait()
 			set_quest_state("new_christmas_2012_nog", "nog_first_give")
 			set_quest_state("new_christmas_2012_sock", "baby_dear_give")

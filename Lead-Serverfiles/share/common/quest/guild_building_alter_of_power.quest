@@ -1,8 +1,8 @@
 quest alter_of_power begin
 	state start begin
 		when 20077.click with npc.get_guild() == pc.get_guild() and pc.is_guild_master() begin
-			say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-			say(gameforge.guild_building_alter_of_power._20_say)
+			say_title("[LC;1283]")
+			say("[LC;1292]")
 
 			if pc.getqf("build_level") == 0 then
 				pc.setqf("build_level", guild.level(pc.get_guild()))
@@ -10,19 +10,19 @@ quest alter_of_power begin
 
 			wait()
 
-			say(gameforge.guild_building_alter_of_power._30_say)
+			say("[LC;1293]")
 
 			if pc.getqf("build_level") < guild.level(pc.get_guild()) or guild.level(pc.get_guild()) >= 20 then
-				say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-				say(gameforge.guild_building_alter_of_power._40_say)
-				say_reward(gameforge.guild_building_alter_of_power._50_sayReward)
+				say_title("[LC;1283]")
+				say("[LC;1294]")
+				say_reward("[LC;1295]")
 				
-				local s =  select(gameforge.guild_building_alter_of_power._60_select, gameforge.guild_building_alter_of_power._70_select)
+				local s =  select("[LC;1296]", "[LC;1297]")
 
 				if s == 1 then
 					if pc.count_item(90010) >= 10 and pc.count_item(90012) >= 15 and pc.count_item(90011) >= 10 and pc.get_gold() >= 25000000 then
-						say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-						say(gameforge.guild_building_alter_of_power._80_say)
+						say_title("[LC;1283]")
+						say("[LC;1298]")
 						building.reconstruct(14062)
 						pc.setqf("build_level", guild.level(pc.get_guild()))
 						char_log(0, "GUILD_BUILDING", "alter_of_power 14062 constructed")
@@ -32,37 +32,37 @@ quest alter_of_power begin
 						pc.remove_item("90011", 10)
 						pc.remove_item("90012", 15)
 					else
-						say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-						say(gameforge.guild_building_alter_of_power._90_say)
+						say_title("[LC;1283]")
+						say("[LC;1299]")
 					end
 				elseif s == 2 then
-				say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-				say(gameforge.guild_building_alter_of_power._100_say)
+				say_title("[LC;1283]")
+				say("[LC;1282]")
 				end
 			else
-				say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-				say(gameforge.guild_building_alter_of_power._110_say)
+				say_title("[LC;1283]")
+				say("[LC;1284]")
 			end
 		end
 
 		when 20078.click with npc.get_guild() == pc.get_guild() and pc.is_guild_master() begin
-			say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-			say(gameforge.guild_building_alter_of_power._120_say)
+			say_title("[LC;1283]")
+			say("[LC;1285]")
 
 			wait()
-			say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-			say(gameforge.guild_building_alter_of_power._130_say)
+			say_title("[LC;1283]")
+			say("[LC;1286]")
 
 			if pc.getqf("build_level") < guild.level(pc.get_guild()) or guild.level(pc.get_guild()) >= 20 then
-				say(gameforge.guild_building_alter_of_power._140_say)
-				say_reward(gameforge.guild_building_alter_of_power._150_sayReward)
+				say("[LC;1287]")
+				say_reward("[LC;1288]")
 				
-				local s =  select(gameforge.guild_building_alter_of_power._60_select, gameforge.guild_building_alter_of_power._70_select)
+				local s =  select("[LC;1296]", "[LC;1297]")
 
 				if s == 1 then
 					if pc.count_item(90010) >= 15 and pc.count_item(90012) >= 20 and pc.count_item(90011) >= 15 and pc.get_gold() >= 30000000 then
-						say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-						say(gameforge.guild_building_alter_of_power._160_say)
+						say_title("[LC;1283]")
+						say("[LC;1289]")
 						building.reconstruct(14063)
 						pc.setqf("build_level", guild.level(pc.get_guild()))
 						char_log(0, "GUILD_BUILDING", "alter_of_power 14063 constructed")
@@ -72,24 +72,24 @@ quest alter_of_power begin
 						pc.remove_item("90011", 20)
 						pc.remove_item("90012", 20)
 					else
-						say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-						say(gameforge.guild_building_alter_of_power._90_say)
+						say_title("[LC;1283]")
+						say("[LC;1299]")
 					end
 				elseif s == 2 then
-					say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-					say(gameforge.guild_building_alter_of_power._100_say)
+					say_title("[LC;1283]")
+					say("[LC;1282]")
 				end
 			end
 		end
 
 		when 20079.click with npc.get_guild() == pc.get_guild() and pc.is_guild_master() begin
-			say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-			say(gameforge.guild_building_alter_of_power._170_say)
+			say_title("[LC;1283]")
+			say("[LC;1290]")
 		end
 
 		when 20077.click or 20078.click or 20079.click with npc.get_guild() == pc.get_guild() and pc.is_guild_master()!= true begin
-			say_title(gameforge.guild_building_alter_of_power._10_sayTitle)
-			say(gameforge.guild_building_alter_of_power._180_say)
+			say_title("[LC;1283]")
+			say("[LC;1291]")
 		end
 	end
 end

@@ -1,14 +1,14 @@
 quest guild_building begin
 	state start begin
-		when guild_man1.chat.gameforge.guild_manage._10_npcChat or guild_man2.chat.gameforge.guild_manage._10_npcChat or guild_man3.chat.gameforge.guild_manage._10_npcChat with pc.is_gm() begin
+		when guild_man1.chat."[LC;1344]" or guild_man2.chat."[LC;1344]" or guild_man3.chat."[LC;1344]" with pc.is_gm() begin
 
-			say_title(gameforge.find_squareguard._10_targetVid)
-			say(gameforge.guild_manage._20_say)
+			say_title("[LC;1001]")
+			say("[LC;1355]")
 			local u_name = input()
 			local u_vid=find_pc_by_name(u_name)
 
 			if u_vid==0 then 
-				say_title(gameforge.guild_manage._30_sayTitle)
+				say_title("[LC;1359]")
 				say(u_name)
 				return
 			end
@@ -21,15 +21,15 @@ quest guild_building begin
 			withdrawDelay=game.get_event_flag("guild_withdraw_delay")
 			disbandDelay=game.get_event_flag("guild_disband_delay")
 
-			say_title(gameforge.find_squareguard._10_targetVid)
-			say(gameforge.guild_manage._40_say)
+			say_title("[LC;1001]")
+			say("[LC;1360]")
 
 			if u_withdrawTime>0 then
-				say(string.format(gameforge.guild_manage._50_say, time_to_str(u_withdrawTime)..gameforge.guild_manage._55_say.. withdrawDelay))
+				say(string.format("[LC;1361;%s]", time_to_str(u_withdrawTime).."[LC;1362]".. withdrawDelay))
 			end
 
 			if u_disbandTime>0 then
-				say(string.format(gameforge.guild_manage._60_say, time_to_str(u_disbandTime)..gameforge.guild_manage._65_say.. disbandDelay))
+				say(string.format("[LC;1363;%s]", time_to_str(u_disbandTime).."[LC;1364]".. disbandDelay))
 			end
 
 			local retryTime1 = u_withdrawTime + withdrawDelay*86400
@@ -44,10 +44,10 @@ quest guild_building begin
 
 			local curTime = get_time()
 			if curTime < retryTime then
-				say(string.format(gameforge.guild_manage._70_say, time_to_str(retryTime)..gameforge.guild_manage._75_say..((retryTime-curTime)/3600)))
+				say(string.format("[LC;1365;%s]", time_to_str(retryTime).."[LC;1366]"..((retryTime-curTime)/3600)))
 
 				if is_test_server() then
-					local s= select(gameforge.guild_manage._80_select, gameforge.arena_manager._200_tableInsert)
+					local s= select("[LC;1367]", "[LC;13]")
 					if s==1 then
 						local old_vid = pc. select(u_vid , u_vid )
 						local curTime=get_time()
@@ -57,40 +57,40 @@ quest guild_building begin
 					end
 				end
 			else
-				say(gameforge.guild_manage._90_say)
+				say("[LC;1368]")
 			end
 		end
-		when guild_man1.chat.gameforge.guild_manage._100_npcChat or guild_man2.chat.gameforge.guild_manage._100_npcChat or guild_man3.chat.gameforge.guild_manage._100_npcChat with pc.is_gm() begin
+		when guild_man1.chat."[LC;1343]" or guild_man2.chat."[LC;1343]" or guild_man3.chat."[LC;1343]" with pc.is_gm() begin
 
-			test_chat(string.format(gameforge.guild_manage._110_chat, bool_to_str(pc.has_guild()).." [ENTER]pc.is_guildmaster: "..bool_to_str(pc.isguildmaster()).." [ENTER]pc.empire: "..pc.empire.." [ENTER]npc.empire: "..npc.empire))
+			test_chat(string.format("[LC;1345;%s]", bool_to_str(pc.has_guild()).." [ENTER]pc.is_guildmaster: "..bool_to_str(pc.isguildmaster()).." [ENTER]pc.empire: "..pc.empire.." [ENTER]npc.empire: "..npc.empire))
 		end
-		when guild_man1.chat.gameforge.locale.guild.withdraw or guild_man2.chat.gameforge.locale.guild.withdraw or guild_man3.chat.gameforge.locale.guild.withdraw with pc.hasguild() and not pc.isguildmaster() and (pc.is_gm() or npc.empire == pc.empire) begin
+		when guild_man1.chat."[LC;2056]" or guild_man2.chat."[LC;2056]" or guild_man3.chat."[LC;2056]" with pc.hasguild() and not pc.isguildmaster() and (pc.is_gm() or npc.empire == pc.empire) begin
 
-			say_title(gameforge.find_squareguard._10_targetVid)
-			say(gameforge.guild_manage._120_say)
-			local s =  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+			say_title("[LC;1001]")
+			say("[LC;1346]")
+			local s =  select("[LC;2059]", "[LC;2035]")
 			if s==1 then
-				say_title(gameforge.find_squareguard._10_targetVid)
-				say(gameforge.guild_manage._130_say)
+				say_title("[LC;1001]")
+				say("[LC;1347]")
 				pc.remove_from_guild()
 				pc.setqf("new_withdraw_time",get_global_time())
 			end
 		end
 
-		when guild_man1.chat.gameforge.locale.guild.disband or guild_man2.chat.gameforge.locale.guild.disband or guild_man3.chat.gameforge.locale.guild.disband with pc.hasguild() and pc.isguildmaster() and (pc.is_gm() or npc.empire == pc.empire) begin
-			say_title(gameforge.find_squareguard._10_targetVid)
-			say(gameforge.guild_manage._140_say)
-			local s =  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+		when guild_man1.chat."[LC;2030]" or guild_man2.chat."[LC;2030]" or guild_man3.chat."[LC;2030]" with pc.hasguild() and pc.isguildmaster() and (pc.is_gm() or npc.empire == pc.empire) begin
+			say_title("[LC;1001]")
+			say("[LC;1348]")
+			local s =  select("[LC;2059]", "[LC;2035]")
 			if s==1 then
-			say_title(gameforge.find_squareguard._10_targetVid)
-			say(gameforge.guild_manage._150_say)
+			say_title("[LC;1001]")
+			say("[LC;1349]")
 			pc.destroy_guild()
 			pc.setqf("new_disband_time", get_global_time())
 			pc.setqf("new_withdraw_time", get_global_time())
 			end
 		end
 
-		when guild_man1.chat.gameforge.guild_manage._160_npcChat or guild_man2.chat.gameforge.guild_manage._170_npcChat or guild_man3.chat.gameforge.guild_manage._170_npcChat begin
+		when guild_man1.chat."[LC;1350]" or guild_man2.chat."[LC;1351]" or guild_man3.chat."[LC;1351]" begin
 			local level_limit;
 			local guild_create_item
 
@@ -102,22 +102,22 @@ quest guild_building begin
 			end
 			if game.get_event_flag("guild_withdraw_delay")*86400 > 
 				get_global_time() - pc.getqf("new_withdraw_time") then
-			say_title(gameforge.find_squareguard._10_targetVid)
-			say(gameforge.guild_manage._180_say)
--- say(string.format(gameforge.guild_manage._190_say, game.get_event_flag("guild_withdraw_delay")))
+			say_title("[LC;1001]")
+			say("[LC;1352]")
+-- say(string.format("[LC;1353]", game.get_event_flag("guild_withdraw_delay")))
 			return
 			end
 
 			if game.get_event_flag("guild_disband_delay")*86400 > 
 				get_global_time() - pc.getqf("new_withdraw_time") then
-			say_title(gameforge.find_squareguard._10_targetVid)
-			say(gameforge.guild_manage._200_say)
--- say(string.format(gameforge.guild_manage._190_say, game.get_event_flag("guild_disband_delay")))
+			say_title("[LC;1001]")
+			say("[LC;1354]")
+-- say(string.format("[LC;1353]", game.get_event_flag("guild_disband_delay")))
 			return
 			end
-			say_title(gameforge.find_squareguard._10_targetVid)
-			say(gameforge.guild_manage._210_say)
-			local s =  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+			say_title("[LC;1001]")
+			say("[LC;1356]")
+			local s =  select("[LC;2059]", "[LC;2035]")
 			if s == 2 then
 				return
 			end
@@ -130,13 +130,13 @@ quest guild_building begin
 				end
 
 				else
-				say_title(gameforge.find_squareguard._10_targetVid)
-				say(gameforge.guild_manage._220_say)
+				say_title("[LC;1001]")
+				say("[LC;1357]")
 				return
 				end
 			else
-			say_title(gameforge.find_squareguard._10_targetVid)
-			say(gameforge.guild_manage._230_say)
+			say_title("[LC;1001]")
+			say("[LC;1358]")
 			end
 		end
 	end

@@ -39,8 +39,8 @@ quest mystery_key begin
 		end
 
 		function open_chest(chest_vnum, key_vnum)
-			say(gameforge.mystery_key._010_say)
-			local s= select(gameforge.mystery_key._020_select, gameforge.mystery_key._030_select)
+			say("[LC;5594]")
+			local s= select("[LC;5595]", "[LC;5596]")
 			if s==2 then
 				return
 			end
@@ -59,7 +59,7 @@ quest mystery_key begin
 			elseif pc.count_item(master_key_vnum) >= 1 then
 				mystery_key.open_chest(item.vnum, master_key_vnum)
 			else
-				say(gameforge.mystery_key._040_say)
+				say("[LC;5597]")
 			end
 		end
 	end

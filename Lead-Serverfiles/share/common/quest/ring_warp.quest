@@ -12,30 +12,30 @@ quest ring_warp begin
 			local max_use = item.get_value(0)
 			local n = item.get_socket (0)
 			if n >= max_use then
-				say (gameforge.ring_warp._010_say)
+				say ("[LC;6825]")
 				return
 			end
 			
 			local t = item.get_socket(1)
 			if t > get_global_time() then
-				say (string.format(gameforge.ring_warp._020_say, (t - get_global_time()) / 60 ))
+				say (string.format("[LC;6826;%d]", (t - get_global_time()) / 60 ))
 				return 
 			end
-			say(string.format(gameforge.ring_warp._030_say, max_use -n))
+			say(string.format("[LC;6827;%d]", max_use -n))
 			local sub_set = 0
 			
 			local town1={
-					gameforge.functions._100_say,
-					gameforge.functions._110_say,
-					gameforge.functions._120_say,
+					"[LC;1136]",
+					"[LC;1137]",
+					"[LC;1138]",
 				}
 			
 			local town2={
-					gameforge.functions._130_say,
-					gameforge.functions._140_say,
-					gameforge.functions._150_say,
+					"[LC;1139]",
+					"[LC;1140]",
+					"[LC;1141]",
 				}
-			sub_set = select(town1[empire],town2[empire],locale.map_name[64], locale.map_name[63], locale.map_name[61],locale.map_name[62],gameforge.locale.cancel)
+			sub_set = select(town1[empire],town2[empire],locale.map_name[64], locale.map_name[63], locale.map_name[61],locale.map_name[62],"[LC;1891]")
 			if sub_set == 7 then
 				return
 			end

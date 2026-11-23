@@ -100,7 +100,7 @@ quest main_quest_lv98 begin
 	state state1_1 begin
 	
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._010_sendLetter)
+			send_letter("[LC;5368]")
 			
 			local v = find_npc_by_vnum(GUARD)
 			if 0 != v then
@@ -109,33 +109,33 @@ quest main_quest_lv98 begin
 		end
 		
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._010_sendLetter)
-			say(gameforge.main_quest_lv98._020_say)
+			say_title("[LC;5368]")
+			say("[LC;5369]")
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 		end
 		
-		when GUARD.chat.gameforge.main_quest_lv98._010_sendLetter begin
+		when GUARD.chat."[LC;5368]" begin
 			target.delete("__TARGET__")
 			
 			say_title(mob_name(GUARD))
-			say(gameforge.main_quest_lv98._030_say)
+			say("[LC;5370]")
 			say("")
 			wait()
 			
 			say_title(mob_name(GUARD))
-			say(gameforge.main_quest_lv98._040_say)
+			say("[LC;5371]")
 			say("")
 			wait()
 			
 			say_title(pc.getname())
-			say(gameforge.main_quest_lv98._050_say)
+			say("[LC;5372]")
 			say("")
 			wait()
 			
 			say_title(mob_name(GUARD))
-			say(gameforge.main_quest_lv98._060_say)
+			say("[LC;5373]")
 			say("")
 			
 			set_state (state1_2)
@@ -143,8 +143,8 @@ quest main_quest_lv98 begin
 	end
 	state state1_2 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._010_sendLetter)
-			q.set_counter_name(gameforge.main_quest_lv98._660_counterName)
+			send_letter("[LC;5368]")
+			q.set_counter_name("[LC;5423]")
 		end
 		when button or info begin
 			-- if pc.get_map_index() == MAP_INDEX1 then
@@ -152,27 +152,27 @@ quest main_quest_lv98 begin
 				-- addmapsignal(MAP_POS1_2_X * 100, MAP_POS1_2_Y * 100)
 				-- addmapsignal(MAP_POS1_3_X * 100, MAP_POS1_3_Y * 100)
 			-- end
-			say_title(gameforge.main_quest_lv98._540_sayTitle)
-			say(gameforge.main_quest_lv98._550_say)
+			say_title("[LC;5412]")
+			say("[LC;5413]")
 			say("")
 			say_item_vnum(ITEM1_1)
-			say_title(gameforge.main_quest_lv98._660_counterName)
+			say_title("[LC;5423]")
 			local remain = ITEM1_1_NEEDED - pc.count_item(ITEM1_1)
 			if remain < 0 then
 				remain = 0
 			end
 			q.set_counter_value(remain)
-			say_reward(string.format(gameforge.main_quest_lv98._670_sayReward,item_name(ITEM1_1),remain))
+			say_reward(string.format("[LC;5424;%s;%d]",item_name(ITEM1_1),remain))
 			-- say()
 			-- say_reward(locale.main_quest_lv98.pos_info)
-			-- select(gameforge.main_quest_lv90._950_say)
+			-- select("[LC;4853]")
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
 		
-		when GUARD.chat.gameforge.main_quest_lv98._010_sendLetter begin
+		when GUARD.chat."[LC;5368]" begin
 			say_title(mob_name(GUARD))
-			say(gameforge.main_quest_lv98._070_say)
+			say("[LC;5374]")
 			say("")
 		end
 		
@@ -188,8 +188,8 @@ quest main_quest_lv98 begin
 					q.set_counter_value(remain)
 					
 					if pc.count_item(ITEM1_1) >= ITEM1_1_NEEDED then
-						notice_multiline(gameforge.main_quest_lv98._080_1_notice, notice)
-						notice_multiline(gameforge.main_quest_lv98._080_2_notice,notice)
+						notice_multiline("[LC;5375]", notice)
+						notice_multiline("[LC;5376]",notice)
 						
 						set_state (state1_3)
 					end
@@ -199,7 +199,7 @@ quest main_quest_lv98 begin
 	end
 	state state1_3 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._010_sendLetter)
+			send_letter("[LC;5368]")
 			
 			local v = find_npc_by_vnum(GUARD)
 			if 0 != v then
@@ -208,10 +208,10 @@ quest main_quest_lv98 begin
 			q.set_counter_name("")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._010_sendLetter)
-			say(gameforge.main_quest_lv98._560_say)
+			say_title("[LC;5368]")
+			say("[LC;5414]")
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 		end
 		
@@ -221,30 +221,30 @@ quest main_quest_lv98 begin
 					pc.give_item2 ( ITEM1_1, 1 )
 					
 					if pc.count_item(ITEM1_1) >= ITEM1_1_NEEDED then
-						notice_multiline(gameforge.main_quest_lv98._080_1_notice,notice)
-						notice_multiline(gameforge.main_quest_lv98._080_2_notice,notice)
+						notice_multiline("[LC;5375]",notice)
+						notice_multiline("[LC;5376]",notice)
 					end
 				end
 			end
 		end
 		
-		when GUARD.chat.gameforge.main_quest_lv98._010_sendLetter begin
+		when GUARD.chat."[LC;5368]" begin
 			target.delete("__TARGET__")
 			
 			if pc.count_item(ITEM1_1) >= ITEM1_1_NEEDED then
 				pc.remove_item ( ITEM1_1, pc.count_item(ITEM1_1))	
 				
 				say_title(mob_name(GUARD))
-				say(gameforge.main_quest_lv98._090_say)
+				say("[LC;5377]")
 				say("")
 				wait()
 				
 				say_title(locale.reward)
 				
-				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD1_EXP))
-				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD1_GOLD))
-				say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(REWARD1_ITEM1),REWARD1_ITEM1_COUNT,locale.count_postfix))
-				say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(REWARD1_ITEM2),REWARD1_ITEM2_COUNT,locale.count_postfix))
+				say_reward(string.format ("[LC;4537;%d]", REWARD1_EXP))
+				say_reward(string.format ("[LC;4538;%d]", REWARD1_GOLD))
+				say_reward(string.format ("[LC;4540;%s]", item_name(REWARD1_ITEM1),REWARD1_ITEM1_COUNT,locale.count_postfix))
+				say_reward(string.format ("[LC;4540;%s]", item_name(REWARD1_ITEM2),REWARD1_ITEM2_COUNT,locale.count_postfix))
 				say("")
 				
 				pc.give_exp2(REWARD1_EXP)
@@ -256,7 +256,7 @@ quest main_quest_lv98 begin
 				set_state (state2_1)
 			else
 				say_title(mob_name(GUARD))
-				say(gameforge.main_quest_lv98._070_say)
+				say("[LC;5374]")
 				say("")
 				
 				set_state (state1_2)
@@ -266,7 +266,7 @@ quest main_quest_lv98 begin
 	
 	state state2_1 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._130_sendLetter)
+			send_letter("[LC;5378]")
 			
 			local v = find_npc_by_vnum(GUARD)
 			if 0 != v then
@@ -274,23 +274,23 @@ quest main_quest_lv98 begin
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._130_sendLetter)
-			say(gameforge.main_quest_lv98._140_say)
+			say_title("[LC;5378]")
+			say("[LC;5379]")
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 		end
 		
-		when GUARD.chat.gameforge.main_quest_lv98._130_sendLetter begin
+		when GUARD.chat."[LC;5378]" begin
 			target.delete("__TARGET__")
 			
 			say_title(mob_name(GUARD))
-			say(gameforge.main_quest_lv98._150_say)
+			say("[LC;5380]")
 			say("")
 			wait()
 			
 			say_title(pc.getname())
-			say(gameforge.main_quest_lv98._160_say)
+			say("[LC;5381]")
 			say("")
 			
 			set_state (state2_2)
@@ -298,8 +298,8 @@ quest main_quest_lv98 begin
 	end
 	state state2_2 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._130_sendLetter)
-			q.set_counter_name(gameforge.main_quest_lv98._660_counterName)
+			send_letter("[LC;5378]")
+			q.set_counter_name("[LC;5423]")
 		end
 		when button or info begin
 			-- if pc.get_map_index() == MAP_INDEX2 then
@@ -307,26 +307,26 @@ quest main_quest_lv98 begin
 				-- addmapsignal(MAP_POS2_2_X * 100, MAP_POS2_2_Y * 100)
 				-- addmapsignal(MAP_POS2_3_X * 100, MAP_POS2_3_Y * 100)
 			-- end
-			say_title(gameforge.main_quest_lv98._130_sendLetter)
-			say(gameforge.main_quest_lv98._590_say)
+			say_title("[LC;5378]")
+			say("[LC;5416]")
 			say("")
 			say_item_vnum(ITEM2_1)
-			say_title(gameforge.main_quest_lv98._660_counterName)
+			say_title("[LC;5423]")
 			local remain = ITEM2_1_NEEDED - pc.count_item(ITEM2_1)
 			if remain < 0 then
 				remain = 0
 			end
 			q.set_counter_value(remain)
-			say_reward(string.format(gameforge.main_quest_lv98._670_sayReward,item_name(ITEM2_1),remain))
+			say_reward(string.format("[LC;5424;%s;%d]",item_name(ITEM2_1),remain))
 			-- say()
 			-- say_reward(locale.main_quest_lv98.pos_info)
-			-- select(gameforge.main_quest_lv90._950_say)
+			-- select("[LC;4853]")
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		when GUARD.chat.gameforge.main_quest_lv98._130_sendLetter begin
+		when GUARD.chat."[LC;5378]" begin
 			say_title(mob_name(GUARD))
-			say(gameforge.main_quest_lv98._170_say)
+			say("[LC;5382]")
 			say("")
 		end
 		
@@ -341,8 +341,8 @@ quest main_quest_lv98 begin
 					q.set_counter_value(remain)
 					
 					if pc.count_item(ITEM2_1) >= ITEM2_1_NEEDED then
-						notice_multiline(gameforge.main_quest_lv98._180_1_notice,notice)
-						notice_multiline(gameforge.main_quest_lv98._180_2_notice,notice)
+						notice_multiline("[LC;5383]",notice)
+						notice_multiline("[LC;5384]",notice)
 						set_state (state2_3)
 					end
 				end
@@ -352,7 +352,7 @@ quest main_quest_lv98 begin
 	end
 	state state2_3 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._130_sendLetter)
+			send_letter("[LC;5378]")
 			
 			local v = find_npc_by_vnum(GUARD)
 			if 0 != v then
@@ -361,10 +361,10 @@ quest main_quest_lv98 begin
 			q.set_counter_name("")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._130_sendLetter)
-			say(gameforge.main_quest_lv98._600_say)
+			say_title("[LC;5378]")
+			say("[LC;5417]")
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 		end
 		
@@ -374,28 +374,28 @@ quest main_quest_lv98 begin
 					pc.give_item2 ( ITEM2_1, 1 )
 					
 					if pc.count_item(ITEM2_1) >= ITEM2_1_NEEDED then
-						notice_multiline(gameforge.main_quest_lv98._180_1_notice,notice)
-						notice_multiline(gameforge.main_quest_lv98._180_2_notice,notice)
+						notice_multiline("[LC;5383]",notice)
+						notice_multiline("[LC;5384]",notice)
 					end
 				end
 			end
 		end
 		
-		when GUARD.chat.gameforge.main_quest_lv98._130_sendLetter begin
+		when GUARD.chat."[LC;5378]" begin
 			target.delete("__TARGET__")
 			
 			if pc.count_item(ITEM2_1) >= ITEM2_1_NEEDED then
 				pc.remove_item ( ITEM2_1, pc.count_item(ITEM2_1))	
 				say_title(mob_name(GUARD))
-				say(gameforge.main_quest_lv98._190_say)
+				say("[LC;5385]")
 				say("")
 				wait()
 				say_title(locale.reward)
-				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD2_EXP))
-				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD2_GOLD))
-				say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(REWARD2_ITEM1),REWARD2_ITEM1_COUNT,locale.count_postfix))
-				say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(REWARD2_ITEM2),REWARD2_ITEM2_COUNT,locale.count_postfix))
-				say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(REWARD2_ITEM3),REWARD2_ITEM3_COUNT,locale.count_postfix))
+				say_reward(string.format ("[LC;4537;%d]", REWARD2_EXP))
+				say_reward(string.format ("[LC;4538;%d]", REWARD2_GOLD))
+				say_reward(string.format ("[LC;4540;%s]", item_name(REWARD2_ITEM1),REWARD2_ITEM1_COUNT,locale.count_postfix))
+				say_reward(string.format ("[LC;4540;%s]", item_name(REWARD2_ITEM2),REWARD2_ITEM2_COUNT,locale.count_postfix))
+				say_reward(string.format ("[LC;4540;%s]", item_name(REWARD2_ITEM3),REWARD2_ITEM3_COUNT,locale.count_postfix))
 				say("")
 				
 				pc.give_exp2(REWARD2_EXP)
@@ -413,7 +413,7 @@ quest main_quest_lv98 begin
 				set_state (state3_1)
 			else
 				say_title(mob_name(GUARD))
-				say(gameforge.main_quest_lv98._170_say)
+				say("[LC;5382]")
 				say("")
 				
 				set_state (state2_2)
@@ -424,7 +424,7 @@ quest main_quest_lv98 begin
 	
 	state state3_1 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._200_sendLetter)
+			send_letter("[LC;5386]")
 			
 			local v = find_npc_by_vnum(YACKHWAN)
 			if 0 != v then
@@ -432,33 +432,33 @@ quest main_quest_lv98 begin
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._200_sendLetter)
-			say(gameforge.main_quest_lv98._210_say)
+			say_title("[LC;5386]")
+			say("[LC;5387]")
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 		end
-		when YACKHWAN.chat.gameforge.main_quest_lv98._200_sendLetter begin
+		when YACKHWAN.chat."[LC;5386]" begin
 			target.delete("__TARGET__")
 			
 			say_title(mob_name(YACKHWAN ))
-			say(gameforge.main_quest_lv98._220_say)
+			say("[LC;5388]")
 			say("")
 			wait()
 			say_title(mob_name(YACKHWAN ))
-			say(gameforge.main_quest_lv98._260_say)
+			say("[LC;5389]")
 			say("")
 			wait()
 			say_title(mob_name(YACKHWAN ))
-			say(gameforge.main_quest_lv98._280_say)
+			say("[LC;5390]")
 			say("")
 			set_state (state3_2)
 		end
 	end
 	state state3_2 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._200_sendLetter)
-			q.set_counter_name(gameforge.main_quest_lv98._680_counterName)
+			send_letter("[LC;5386]")
+			q.set_counter_name("[LC;5425]")
 		end
 		when button or info begin
 			-- if pc.get_map_index() == MAP_INDEX3 then
@@ -466,10 +466,10 @@ quest main_quest_lv98 begin
 				-- addmapsignal(MAP_POS3_2_X * 100, MAP_POS3_2_Y * 100)
 				-- addmapsignal(MAP_POS3_3_X * 100, MAP_POS3_3_Y * 100)
 			-- end
-			say_title(gameforge.main_quest_lv98._610_sayTitle)
-			say(gameforge.main_quest_lv98._620_say)
+			say_title("[LC;5418]")
+			say("[LC;5419]")
 			say("")
-			say(gameforge.main_quest_lv98._680_counterName)
+			say("[LC;5425]")
 			local remain1 = MOB3_1_COUNT - pc.getqf("mob3_1_kill")
 			if remain1 < 0 then
 				remain1 = 0
@@ -479,17 +479,17 @@ quest main_quest_lv98 begin
 				remain2 = 0
 			end
 			q.set_counter_value(remain1 + remain2)
-			say_reward(string.format(gameforge.main_quest_lv98._690_sayReward,mob_name(MOB3_1),remain1,mob_name(MOB3_2),remain2))
+			say_reward(string.format("[LC;5426;%s;%d;%s;%d]",mob_name(MOB3_1),remain1,mob_name(MOB3_2),remain2))
 			-- say()
 			-- say_reward(locale.main_quest_lv98.pos_info)
-			-- select(gameforge.main_quest_lv90._950_say)
+			-- select("[LC;4853]")
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
 		
-		when YACKHWAN.chat.gameforge.main_quest_lv98._200_sendLetter begin
+		when YACKHWAN.chat."[LC;5386]" begin
 			say_title(mob_name(YACKHWAN ))
-			say(gameforge.main_quest_lv98._300_say)
+			say("[LC;5391]")
 			say("")
 		end
 		
@@ -510,8 +510,8 @@ quest main_quest_lv98 begin
 			end
 			
 			if pc.getqf("mob3_1_kill") >= MOB3_1_COUNT and pc.getqf("mob3_2_kill") >= MOB3_2_COUNT then
-				notice_multiline(gameforge.main_quest_lv98._310_1_notice,notice)
-				notice_multiline(gameforge.main_quest_lv98._310_2_notice,notice)
+				notice_multiline("[LC;5392]",notice)
+				notice_multiline("[LC;5393]",notice)
 				
 				set_state (state3_3)
 			end
@@ -533,8 +533,8 @@ quest main_quest_lv98 begin
 			end
 			
 			if pc.getqf("mob3_1_kill") >= MOB3_1_COUNT and pc.getqf("mob3_2_kill") >= MOB3_2_COUNT then
-				notice_multiline(gameforge.main_quest_lv98._310_1_notice,notice)
-				notice_multiline(gameforge.main_quest_lv98._310_2_notice,notice)
+				notice_multiline("[LC;5392]",notice)
+				notice_multiline("[LC;5393]",notice)
 				
 				set_state (state3_3)
 			end
@@ -542,7 +542,7 @@ quest main_quest_lv98 begin
 	end
 	state state3_3 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._200_sendLetter)
+			send_letter("[LC;5386]")
 			
 			local v = find_npc_by_vnum(YACKHWAN)
 			if 0 != v then
@@ -551,25 +551,25 @@ quest main_quest_lv98 begin
 			q.set_counter_name("")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._200_sendLetter)
-			say(gameforge.main_quest_lv98._630_say)
+			say_title("[LC;5386]")
+			say("[LC;5420]")
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 		end
 		
-		when YACKHWAN.chat.gameforge.main_quest_lv98._200_sendLetter begin
+		when YACKHWAN.chat."[LC;5386]" begin
 			target.delete("__TARGET__")
 			
 			say_title(mob_name(YACKHWAN ))
-			say(gameforge.main_quest_lv98._320_say)
+			say("[LC;5394]")
 			say("")
 			wait()
 			
 			say_title(locale.reward)
-			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, REWARD3_EXP))
-			--say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, REWARD3_GOLD))
-			say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(REWARD3_ITEM1),REWARD3_ITEM1_COUNT,locale.count_postfix))
+			say_reward(string.format("[LC;4537;%d]", REWARD3_EXP))
+			--say_reward(string.format("[LC;4538;%d]", REWARD3_GOLD))
+			say_reward(string.format ("[LC;4540;%s]", item_name(REWARD3_ITEM1),REWARD3_ITEM1_COUNT,locale.count_postfix))
 			say("")
 			
 			pc.give_exp2(REWARD3_EXP)
@@ -581,7 +581,7 @@ quest main_quest_lv98 begin
 	end
 	state state4_1 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._330_sendLetter)
+			send_letter("[LC;5395]")
 			
 			local v = find_npc_by_vnum(YACKHWAN)
 			if 0 != v then
@@ -589,27 +589,27 @@ quest main_quest_lv98 begin
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._330_sendLetter)
-			say(gameforge.main_quest_lv98._340_say)
+			say_title("[LC;5395]")
+			say("[LC;5396]")
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 		end
 		
-		when YACKHWAN.chat.gameforge.main_quest_lv98._330_sendLetter begin
+		when YACKHWAN.chat."[LC;5395]" begin
 			target.delete("__TARGET__")
 			
 			say_title(mob_name(YACKHWAN ))
-			say(gameforge.main_quest_lv98._350_say)
+			say("[LC;5397]")
 			say("")
 			wait()
 			
 			say_title(mob_name(YACKHWAN ))
-			say(gameforge.main_quest_lv98._360_say)
+			say("[LC;5398]")
 			say("")
 			wait()
 			say_title(pc.getname())
-			say(gameforge.main_quest_lv98._380_say)
+			say("[LC;5399]")
 			say("")
 		
 			set_state (state4_2)
@@ -617,8 +617,8 @@ quest main_quest_lv98 begin
 	end
 	state state4_2 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._330_sendLetter)
-			q.set_counter_name(gameforge.main_quest_lv98._700_counterName)
+			send_letter("[LC;5395]")
+			q.set_counter_name("[LC;5427]")
 			
 			local v_npc1 = find_npc_by_vnum(NPC4_1)
 			local v_npc2 = find_npc_by_vnum(NPC4_2)
@@ -639,10 +639,10 @@ quest main_quest_lv98 begin
 			
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._640_sayTitle)
-			say(gameforge.main_quest_lv98._650_say)
+			say_title("[LC;5421]")
+			say("[LC;5422]")
 			say("")
-			say_title(gameforge.main_quest_lv98._700_counterName)
+			say_title("[LC;5427]")
 			local npc1 = " "
 			if pc.getqf("click_npc1") == 1 then
 				npc1 = "O"
@@ -661,17 +661,17 @@ quest main_quest_lv98 begin
 			end
 			local remain = 4 - pc.getqf("click_npc1") - pc.getqf("click_npc2") - pc.getqf("click_npc3") - pc.getqf("click_npc4")
 			q.set_counter_value(remain)
-			say(string.format(gameforge.main_quest_lv98._710_say,npc1,npc2))
-			say(string.format(gameforge.main_quest_lv98._720_say,npc3,npc4))
+			say(string.format("[LC;5428;%s;%s]",npc1,npc2))
+			say(string.format("[LC;5429;%s;%s]",npc3,npc4))
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 			
 		end
 		
-		when YACKHWAN.chat.gameforge.main_quest_lv98._330_sendLetter begin
+		when YACKHWAN.chat."[LC;5395]" begin
 			say_title(mob_name(YACKHWAN ))
-			say(gameforge.main_quest_lv98._390_say)
+			say("[LC;5400]")
 			say("")
 			wait()
 		end
@@ -681,7 +681,7 @@ quest main_quest_lv98 begin
 			pc.setqf("click_npc1",1)
 		
 			say_title(mob_name(NPC4_1))
-			say(gameforge.main_quest_lv98._400_say)
+			say("[LC;5401]")
 			say("")
 			
 			local remain = 4 - pc.getqf("click_npc1") - pc.getqf("click_npc2") - pc.getqf("click_npc3") - pc.getqf("click_npc4")
@@ -689,8 +689,8 @@ quest main_quest_lv98 begin
 			
 			if pc.getqf("click_npc1") == 1 and pc.getqf("click_npc2") == 1 and pc.getqf("click_npc3") == 1 and pc.getqf("click_npc4") == 1 then
 				
-				notice_multiline(gameforge.main_quest_lv98._440_1_notice,notice)
-				notice_multiline(gameforge.main_quest_lv98._440_2_notice,notice)
+				notice_multiline("[LC;5405]",notice)
+				notice_multiline("[LC;5406]",notice)
 				
 				set_state (state4_3)
 			end
@@ -700,7 +700,7 @@ quest main_quest_lv98 begin
 			pc.setqf("click_npc2",1)
 		
 			say_title(mob_name(NPC4_2))
-			say(gameforge.main_quest_lv98._410_say)
+			say("[LC;5402]")
 			say("")
 			
 			local remain = 4 - pc.getqf("click_npc1") - pc.getqf("click_npc2") - pc.getqf("click_npc3") - pc.getqf("click_npc4")
@@ -708,8 +708,8 @@ quest main_quest_lv98 begin
 			
 			if pc.getqf("click_npc1") == 1 and pc.getqf("click_npc2") == 1 and pc.getqf("click_npc3") == 1 and pc.getqf("click_npc4") == 1 then
 				
-				notice_multiline(gameforge.main_quest_lv98._440_1_notice,notice)
-				notice_multiline(gameforge.main_quest_lv98._440_2_notice,notice)
+				notice_multiline("[LC;5405]",notice)
+				notice_multiline("[LC;5406]",notice)
 				
 				set_state (state4_3)
 			end
@@ -720,7 +720,7 @@ quest main_quest_lv98 begin
 			pc.setqf("click_npc3",1)
 		
 			say_title(mob_name(NPC4_3))
-			say(gameforge.main_quest_lv98._430_say)
+			say("[LC;5404]")
 			say("")
 			
 			local remain = 4 - pc.getqf("click_npc1") - pc.getqf("click_npc2") - pc.getqf("click_npc3") - pc.getqf("click_npc4")
@@ -729,8 +729,8 @@ quest main_quest_lv98 begin
 			
 			if pc.getqf("click_npc1") == 1 and pc.getqf("click_npc2") == 1 and pc.getqf("click_npc3") == 1 and pc.getqf("click_npc4") == 1 then
 				
-				notice_multiline(gameforge.main_quest_lv98._440_1_notice,notice)
-				notice_multiline(gameforge.main_quest_lv98._440_2_notice,notice)
+				notice_multiline("[LC;5405]",notice)
+				notice_multiline("[LC;5406]",notice)
 				
 				set_state (state4_3)
 			end
@@ -740,7 +740,7 @@ quest main_quest_lv98 begin
 			pc.setqf("click_npc4",1)
 		
 			say_title(mob_name(NPC4_4))
-			say(gameforge.main_quest_lv98._420_say)
+			say("[LC;5403]")
 			say("")
 			
 			local remain = 4 - pc.getqf("click_npc1") - pc.getqf("click_npc2") - pc.getqf("click_npc3") - pc.getqf("click_npc4")
@@ -748,8 +748,8 @@ quest main_quest_lv98 begin
 			
 			if pc.getqf("click_npc1") == 1 and pc.getqf("click_npc2") == 1 and pc.getqf("click_npc3") == 1 and pc.getqf("click_npc4") == 1 then
 				
-				notice_multiline(gameforge.main_quest_lv98._440_1_notice,notice)
-				notice_multiline(gameforge.main_quest_lv98._440_2_notice,notice)
+				notice_multiline("[LC;5405]",notice)
+				notice_multiline("[LC;5406]",notice)
 				
 				set_state (state4_3)
 			end
@@ -757,7 +757,7 @@ quest main_quest_lv98 begin
 	end
 	state state4_3 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._330_sendLetter)
+			send_letter("[LC;5395]")
 			
 			local v = find_npc_by_vnum(YACKHWAN)
 			if 0 != v then
@@ -765,25 +765,25 @@ quest main_quest_lv98 begin
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._330_sendLetter)
-			say(gameforge.main_quest_lv98._630_say)
+			say_title("[LC;5395]")
+			say("[LC;5420]")
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 		end
 		
-		when YACKHWAN.chat.gameforge.main_quest_lv98._330_sendLetter begin
+		when YACKHWAN.chat."[LC;5395]" begin
 			target.delete("__TARGET__")
 			
 			say_title(mob_name(YACKHWAN ))
-			say(gameforge.main_quest_lv98._450_say)
+			say("[LC;5407]")
 			say("")
 			wait()
 			say_title(locale.reward)
-			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD4_EXP))
-			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD4_GOLD))
-			say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(REWARD4_ITEM1),REWARD4_ITEM1_COUNT,locale.count_postfix))
-			say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(REWARD4_ITEM2),REWARD4_ITEM2_COUNT,locale.count_postfix))
+			say_reward(string.format ("[LC;4537;%d]", REWARD4_EXP))
+			say_reward(string.format ("[LC;4538;%d]", REWARD4_GOLD))
+			say_reward(string.format ("[LC;4540;%s]", item_name(REWARD4_ITEM1),REWARD4_ITEM1_COUNT,locale.count_postfix))
+			say_reward(string.format ("[LC;4540;%s]", item_name(REWARD4_ITEM2),REWARD4_ITEM2_COUNT,locale.count_postfix))
 			say("")
 			
 			pc.give_exp2(REWARD4_EXP)
@@ -797,7 +797,7 @@ quest main_quest_lv98 begin
 	end
 	state state5_1 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv98._480_sendLetter)
+			send_letter("[LC;5408]")
 			
 			local v = find_npc_by_vnum(GUARD)
 			if 0 != v then
@@ -805,30 +805,30 @@ quest main_quest_lv98 begin
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv98._480_sendLetter)
-			say(gameforge.main_quest_lv98._490_say)
+			say_title("[LC;5408]")
+			say("[LC;5409]")
 			say("")
-			say_reward(gameforge.main_quest_lv98._570_sayReward)
+			say_reward({})
 			say("")
 		end
 		
-		when GUARD.chat.gameforge.main_quest_lv98._480_sendLetter begin
+		when GUARD.chat."[LC;5408]" begin
 			target.delete("__TARGET__")
 			
 			say_title(mob_name(GUARD))
-			say(gameforge.main_quest_lv98._500_say)
+			say("[LC;5410]")
 			say("")
 			wait()
 			
 			say_title(mob_name(GUARD))
-			say(gameforge.main_quest_lv98._520_say)
+			say("[LC;5411]")
 			say("")
 			wait()
 			
 			say_title(locale.reward)
-			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD5_EXP))
-			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD5_GOLD))
-			say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(REWARD5_ITEM1),REWARD5_ITEM1_COUNT,locale.count_postfix))
+			say_reward(string.format ("[LC;4537;%d]", REWARD5_EXP))
+			say_reward(string.format ("[LC;4538;%d]", REWARD5_GOLD))
+			say_reward(string.format ("[LC;4540;%s]", item_name(REWARD5_ITEM1),REWARD5_ITEM1_COUNT,locale.count_postfix))
 			say("")
 			
 			pc.give_exp2(REWARD5_EXP)

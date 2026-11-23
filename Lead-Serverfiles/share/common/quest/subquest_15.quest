@@ -21,40 +21,40 @@ quest subquest_15 begin
 			local v = find_npc_by_vnum(vnum)
 
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_15._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;7346]")
 			end
 		end
 
 
-		when __TARGET__.target.click or	11000.chat.gameforge.subquest_15._10_targetVid or	11002.chat.gameforge.subquest_15._10_targetVid or	11004.chat.gameforge.subquest_15._10_targetVid with pc.level >= 23 begin
+		when __TARGET__.target.click or	11000.chat."[LC;7346]" or	11002.chat."[LC;7346]" or	11004.chat."[LC;7346]" with pc.level >= 23 begin
 			target.delete("__TARGET__")
 
-			say_title(gameforge.find_squareguard._30_sayTitle)
-			say(gameforge.subquest_15._20_say)
+			say_title("[LC;1016]")
+			say("[LC;7351]")
 			wait()
 
-			say_title(gameforge.find_squareguard._30_sayTitle)
-			say(gameforge.subquest_15._30_say)
+			say_title("[LC;1016]")
+			say("[LC;7352]")
 			wait()
 
-			say_title(gameforge.find_squareguard._30_sayTitle)
-			say(gameforge.subquest_15._40_say)
-			local s= select(gameforge.subquest_06._150_select, gameforge.hair_shop._50_select)
+			say_title("[LC;1016]")
+			say("[LC;7353]")
+			local s= select("[LC;7111]", "[LC;1409]")
 			if 2==s then
-				say(gameforge.subquest_11._60_say)
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;7286]")
+				local a= select("[LC;2059]", "[LC;2035]")
 				if  2==a then
-					say_title(gameforge.subquest_15._50_sayTitle)
-					say(gameforge.subquest_15._60_say)
+					say_title("[LC;7354]")
+					say("[LC;7355]")
 					return
 				end
-				say_title(gameforge.find_squareguard._30_sayTitle)
-				say(gameforge.subquest_15._70_say)
+				say_title("[LC;1016]")
+				say("[LC;7356]")
 				set_state(__GIVEUP__)
 				return
 			end
-			say_title(gameforge.find_squareguard._30_sayTitle)
-			say(gameforge.subquest_15._80_say)
+			say_title("[LC;1016]")
+			say("[LC;7357]")
 			set_state(hunt_eunjung)
 		end
 	end
@@ -62,14 +62,14 @@ quest subquest_15 begin
 	state hunt_eunjung begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.subquest_15._10_targetVid)
-			q.set_title(gameforge.subquest_15._10_targetVid)
+			makequestbutton("[LC;7346]")
+			q.set_title("[LC;7346]")
 			q.start()
 		end
 
 		when button or info begin
-			say_title(gameforge.subquest_15._10_targetVid)
-			say(gameforge.subquest_15._90_sayReward)
+			say_title("[LC;7346]")
+			say("[LC;7358]")
 		end
 
 		when 392.kill begin
@@ -80,8 +80,8 @@ quest subquest_15 begin
 	state hunt_reward begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.subquest_15._10_targetVid)
-			q.set_title(gameforge.subquest_15._10_targetVid)
+			makequestbutton("[LC;7346]")
+			q.set_title("[LC;7346]")
 			q.start()
 		end
 
@@ -99,28 +99,28 @@ quest subquest_15 begin
 			local v = find_npc_by_vnum(vnum)
 
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.subquest_15._100_targetVid)
+				target.vid("__TARGET__", v, "[LC;7345]")
 			end
 		end
 
 		when info or button begin
-			say_title(gameforge.subquest_15._10_targetVid)
-			say(gameforge.subquest_15._110_sayReward)
+			say_title("[LC;7346]")
+			say("[LC;7347]")
 		end
 
-		when __TARGET__.target.click or	11000.chat.gameforge.subquest_15._100_targetVid or	11002.chat.gameforge.subquest_15._100_targetVid or	11004.chat.gameforge.subquest_15._100_targetVid begin
+		when __TARGET__.target.click or	11000.chat."[LC;7345]" or	11002.chat."[LC;7345]" or	11004.chat."[LC;7345]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.find_squareguard._30_sayTitle)
-			say(gameforge.subquest_15._120_say)
+			say_title("[LC;1016]")
+			say("[LC;7348]")
 			wait()
-			say_title(gameforge.find_squareguard._30_sayTitle)
-			say(gameforge.subquest_15._130_say)
+			say_title("[LC;1016]")
+			say("[LC;7349]")
 			wait()
 			pc.give_exp2(150000)
 			pc.change_money(25000)
 			pc.give_item2("16064", 1)
-			say_title(gameforge.collect_herb_lv4._130_sayTitle)
-						say_reward(gameforge.subquest_15._140_sayReward)
+			say_title("[LC;192]")
+						say_reward("[LC;7350]")
 			
 			clear_letter()
 			set_state(__COMPLETE__)

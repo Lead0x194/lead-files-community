@@ -10,7 +10,7 @@ when 30316.use begin
 			
 			if game.get_event_flag("shop_reminder") == 1 then
 				say("hallo")
-				local c =  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				local c =  select("[LC;2059]", "[LC;2035]")
 				if 1 == c then
 					game.open_web_mall()
 				else

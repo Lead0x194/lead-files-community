@@ -27,39 +27,39 @@ quest spider_dungeon_3floor_boss begin
 			set_state( step1 )
 		end
 		
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._10_npcChat begin
-			say(gameforge.spider_dungeon_3floor_boss._20_say)
+		when 30130.chat."[LC;6924]" begin
+			say("[LC;6935]")
 		end
 	end
 
 	state step1 begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
+		when 20011.chat."[LC;6945]" with is_test_server() begin
 			set_state(start)
-			say(gameforge.spider_dungeon_3floor_boss._40_say)
+			say("[LC;6956]")
 		end
 		
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._10_npcChat begin
-			say(gameforge.spider_dungeon_3floor_boss._20_say)
+		when 30130.chat."[LC;6924]" begin
+			say("[LC;6935]")
 		end
 		
-		when 20355.chat.gameforge.spider_dungeon_3floor_boss._50_npcChat begin
+		when 20355.chat."[LC;6959]" begin
 			
 			say_title(mob_name(20355)) 
 			----"12345678901234567890123456789012345678901234567890"|
-			say(gameforge.spider_dungeon_3floor_boss._60_say)
+			say("[LC;6960]")
 			set_state( step2 )
 			pc.give_item2(76019)
 		end
 	end
 
 	state step2 begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
+		when 20011.chat."[LC;6945]" with is_test_server() begin
 			set_state(start)
-			say(gameforge.spider_dungeon_3floor_boss._40_say)
+			say("[LC;6956]")
 		end
 		
 		when letter begin
-			send_letter(gameforge.spider_dungeon_3floor_boss._70_sendLetter)
+			send_letter("[LC;6961]")
 
 			local v = find_npc_by_vnum(30130)
 			if 0 != v then
@@ -68,46 +68,46 @@ quest spider_dungeon_3floor_boss begin
 		end
 
 		when button or info begin
-			say_title(gameforge.spider_dungeon_3floor_boss._70_sendLetter)
-			say(gameforge.spider_dungeon_3floor_boss._80_say)
+			say_title("[LC;6961]")
+			say("[LC;6962]")
 			say("")
 		end
 
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._70_sendLetter begin
+		when 30130.chat."[LC;6961]" begin
 			target.delete("__TARGET__")
 			
 			say_title(pc.getname())
 			----"12345678901234567890123456789012345678901234567890"|
-			say(gameforge.spider_dungeon_3floor_boss._90_say)
+			say("[LC;6963]")
 			set_state(step3)
 		end
 		
 		
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._10_npcChat begin
-			say(gameforge.spider_dungeon_3floor_boss._20_say)
+		when 30130.chat."[LC;6924]" begin
+			say("[LC;6935]")
 		end
 		
-		when 20355.chat.gameforge.spider_dungeon_3floor_boss._50_npcChat begin
+		when 20355.chat."[LC;6959]" begin
 			
 			say_title(mob_name(20355))
 			----"12345678901234567890123456789012345678901234567890"|
-			say(gameforge.spider_dungeon_3floor_boss._100_say)
+			say("[LC;6923]")
 		end
 		
 	end
 
 	state step3 begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
+		when 20011.chat."[LC;6945]" with is_test_server() begin
 			set_state(start)
-			say(gameforge.spider_dungeon_3floor_boss._40_say)
+			say("[LC;6956]")
 		end
 		
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._10_npcChat begin
-			say(gameforge.spider_dungeon_3floor_boss._20_say)
+		when 30130.chat."[LC;6924]" begin
+			say("[LC;6935]")
 		end
 		
 		when letter begin
-			send_letter(gameforge.spider_dungeon_3floor_boss._110_sendLetter)
+			send_letter("[LC;6925]")
 
 			local v = find_npc_by_vnum(20355)
 			if 0 != v then
@@ -116,31 +116,31 @@ quest spider_dungeon_3floor_boss begin
 		end
 
 		when button or info begin
-			say_title(gameforge.spider_dungeon_3floor_boss._110_sendLetter)
-			say(gameforge.spider_dungeon_3floor_boss._120_say)
+			say_title("[LC;6925]")
+			say("[LC;6926]")
 			say("")
 		end
 		
-		when 20355.chat.gameforge.spider_dungeon_3floor_boss._110_sendLetter begin
+		when 20355.chat."[LC;6925]" begin
 			say_title(mob_name(20355))
-			say(gameforge.spider_dungeon_3floor_boss._130_say)
+			say("[LC;6927]")
 			set_state(step4)
 		end
 		
 	end
 		
 	state step4 begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
+		when 20011.chat."[LC;6945]" with is_test_server() begin
 			set_state(start)
-			say(gameforge.spider_dungeon_3floor_boss._40_say)
+			say("[LC;6956]")
 		end
 		
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._10_npcChat begin
-			say(gameforge.spider_dungeon_3floor_boss._20_say)
+		when 30130.chat."[LC;6924]" begin
+			say("[LC;6935]")
 		end
 		
 		when letter begin
-			send_letter(gameforge.spider_dungeon_3floor_boss._110_sendLetter)
+			send_letter("[LC;6925]")
 
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
@@ -149,39 +149,39 @@ quest spider_dungeon_3floor_boss begin
 		end
 
 		when button or info begin
-			say_title(gameforge.spider_dungeon_3floor_boss._110_sendLetter)
-			say(gameforge.spider_dungeon_3floor_boss._140_say)
+			say_title("[LC;6925]")
+			say("[LC;6928]")
 			say("")
 		end
 		
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._110_sendLetter begin
+		when 20011.chat."[LC;6925]" begin
 			target.delete("__TARGET__")
 			
 			say_title(mob_name(20011))
-			say(gameforge.spider_dungeon_3floor_boss._150_say)
+			say("[LC;6929]")
 			say("")
 			
 			set_state(step5)
 		end
 
-		when 20355.chat.gameforge.spider_dungeon_3floor_boss._110_sendLetter begin
+		when 20355.chat."[LC;6925]" begin
 			say_title(mob_name(20355))
-			say(gameforge.spider_dungeon_3floor_boss._130_say)
+			say("[LC;6927]")
 		end
 	end
 
 	state step5 begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
+		when 20011.chat."[LC;6945]" with is_test_server() begin
 			set_state(start)
-			say(gameforge.spider_dungeon_3floor_boss._40_say)
+			say("[LC;6956]")
 		end
 		
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._10_npcChat begin
-			say(gameforge.spider_dungeon_3floor_boss._20_say)
+		when 30130.chat."[LC;6924]" begin
+			say("[LC;6935]")
 		end
 		
 		when letter begin
-			send_letter(gameforge.spider_dungeon_3floor_boss._110_sendLetter)
+			send_letter("[LC;6925]")
 
 			local v = find_npc_by_vnum(20355)
 			if 0 != v then
@@ -190,41 +190,41 @@ quest spider_dungeon_3floor_boss begin
 		end
 
 		when button or info begin
-			say_title(gameforge.spider_dungeon_3floor_boss._170_sayTitle)
-			say(gameforge.spider_dungeon_3floor_boss._180_say)
+			say_title("[LC;6931]")
+			say("[LC;6932]")
 			say("")
 		end
 		
-		when 20355.chat.gameforge.spider_dungeon_3floor_boss._190_npcChat begin
+		when 20355.chat."[LC;6933]" begin
 			target.delete("__TARGET__")
 			say_title(mob_name(20355))
 			----"12345678901234567890123456789012345678901234567890"|
-			say(gameforge.spider_dungeon_3floor_boss._200_say)
+			say("[LC;6934]")
 			say("")
 			
 			set_state(step6) pc.give_item2(76019)
 		end	
 		
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._110_sendLetter begin
+		when 20011.chat."[LC;6925]" begin
 			say_title(mob_name(20011))
-			say(gameforge.spider_dungeon_3floor_boss._160_say)
+			say("[LC;6930]")
 			say("")
 		end
 		
 	end
 
 	state step6 begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
+		when 20011.chat."[LC;6945]" with is_test_server() begin
 			set_state(start)
-			say(gameforge.spider_dungeon_3floor_boss._40_say)
+			say("[LC;6956]")
 		end
 		
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._10_npcChat begin
-			say(gameforge.spider_dungeon_3floor_boss._20_say)
+		when 30130.chat."[LC;6924]" begin
+			say("[LC;6935]")
 		end
 		
 		when letter begin
-			send_letter(gameforge.spider_dungeon_3floor_boss._190_npcChat)
+			send_letter("[LC;6933]")
 			
 			local v = find_npc_by_vnum(20011)
 			if 0 != v then
@@ -233,15 +233,15 @@ quest spider_dungeon_3floor_boss begin
 		end
 
 		when button or info begin
-			say_title(gameforge.spider_dungeon_3floor_boss._190_npcChat)
-			say(gameforge.spider_dungeon_3floor_boss._200_say)
+			say_title("[LC;6933]")
+			say("[LC;6934]")
 			say("")
 		end
 
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._190_npcChat begin
+		when 20011.chat."[LC;6933]" begin
 			target.delete("__TARGET__")
 			say_title(mob_name(20011))
-			say(gameforge.spider_dungeon_3floor_boss._230_say)
+			say("[LC;6938]")
 			
 			set_state(boss_ok)
 			
@@ -250,16 +250,16 @@ quest spider_dungeon_3floor_boss begin
 	end
 
 	state boss_ok begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
+		when 20011.chat."[LC;6945]" with is_test_server() begin
 			set_state(start)
-			say(gameforge.spider_dungeon_3floor_boss._40_say)
+			say("[LC;6956]")
 		end
 
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._210_npcChat begin
+		when 20011.chat."[LC;6936]" begin
 			
 			if pc.count_item(30025) > 0 and pc.count_item(30056) > 0 and pc.count_item(30057) > 0 and pc.count_item(30058) > 0 and pc.count_item(30059) > 0 and pc.count_item(30326) > 0 then
 			    say_title(mob_name(20011))
-			    say(gameforge.spider_dungeon_3floor_boss._250_say)
+			    say("[LC;6940]")
 			    pc.remove_item(30025, 1)
 			    pc.remove_item(30056, 1)
 			    pc.remove_item(30057, 1)
@@ -267,21 +267,21 @@ quest spider_dungeon_3floor_boss begin
 			    pc.remove_item(30059, 1)
 			    pc.remove_item(30326, 1)
 			    if math.random(1,2000) <= 1000 then
-			        say(gameforge.spider_dungeon_3floor_boss._260_say)
+			        say("[LC;6941]")
 			        pc.give_item2(30324, 1)
 			    else
-			        say(gameforge.spider_dungeon_3floor_boss._270_say)
+			        say("[LC;6942]")
 			    end
 			else
 			    say_title(mob_name(20011))
-			    say(gameforge.spider_dungeon_3floor_boss._280_say)
+			    say("[LC;6943]")
 			end
 		end
 		
 		
 
 
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._10_npcChat begin
+		when 30130.chat."[LC;6924]" begin
 
 						if game.get_event_flag("spider_lair_ongoing_"..get_channel_id()) == 1 then
 			
@@ -291,7 +291,7 @@ quest spider_dungeon_3floor_boss begin
 			    if party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) then
 			    
 			        if  starttime +  lair_enter_wait_time >= current_time  and party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) and game.get_event_flag("spider_lair_ongoing_"..get_channel_id()) == 1 then
-			            say(gameforge.spider_dungeon_3floor_boss._300_say)
+			            say("[LC;6944]")
 			            local warp =  select(locale.confirm,locale.cancel)
 			            if warp == 1 then
 			                pc.setqf("firstIn",1)
@@ -301,36 +301,36 @@ quest spider_dungeon_3floor_boss begin
 			                return
 			            end
 			        else
-			            say(gameforge.spider_dungeon_3floor_boss._310_say)
+			            say("[LC;6946]")
 			            return
 			        end
 			    else
 										local remain_time = (game.get_event_flag("spider_lair_end_time_"..get_channel_id() ) - get_global_time()) / 60
 										if remain_time < 0 then
-											say(gameforge.spider_dungeon_3floor_boss._410_say)
+											say("[LC;6957]")
 										 	game.set_event_flag("spider_lair_ongoing_"..get_channel_id(),0)
 								game.set_event_flag("spider_lair_leader_"..get_channel_id(), 0)
   		  					game.set_event_flag("spider_dead"..get_channel_id(),0)
 											return
 										end
-			        say(gameforge.spider_dungeon_3floor_boss._320_say)
+			        say("[LC;6947]")
 			        --- here we should change to string.format %s key
-			        say(string.format(gameforge.spider_dungeon_3floor_boss._330_say, math.ceil(remain_time)))
+			        say(string.format("[LC;6948;%s]", math.ceil(remain_time)))
 			        return
 			    end	
 			elseif  pc.getqf("retry_limit_time") > get_global_time() then
 								local access_limit = (pc.getqf("retry_limit_time") - get_global_time()) / 60
-			    say(gameforge.spider_dungeon_3floor_boss._340_say)
+			    say("[LC;6949]")
 			    -- here we should also change to string.format %s key
-			    say(string.format(gameforge.spider_dungeon_3floor_boss._350_say, math.ceil(access_limit)))
+			    say(string.format("[LC;6950;%s]", math.ceil(access_limit)))
 			    return
 			elseif party.is_leader()   then
 			     if false == pc.can_warp() then
-			          say(gameforge.spider_dungeon_3floor_boss._360_say)
+			          say("[LC;6951]")
 			          return
 			     end
 			    if pc.count_item(30324) > 0 then
-			        say(gameforge.spider_dungeon_3floor_boss._370_say)
+			        say("[LC;6952]")
 			        local warp = select(locale.confirm,locale.cancel)
 			        if warp == 1 then
 			            
@@ -356,11 +356,11 @@ quest spider_dungeon_3floor_boss begin
 			        end
 			        return
 			    else
-			        say(gameforge.spider_dungeon_3floor_boss._380_say)
+			        say("[LC;6953]")
 			        return
 			    end
 			else
-			    say(gameforge.spider_dungeon_3floor_boss._390_say)
+			    say("[LC;6954]")
 			    return
 			end
 			
@@ -370,9 +370,9 @@ quest spider_dungeon_3floor_boss begin
 	end
 
 	state inLair begin
-		when 20011.chat.gameforge.spider_dungeon_3floor_boss._30_npcChat with is_test_server() begin
+		when 20011.chat."[LC;6945]" with is_test_server() begin
 			set_state(start)
-			say(gameforge.spider_dungeon_3floor_boss._40_say)
+			say("[LC;6956]")
 		end
 		
 
@@ -398,14 +398,14 @@ quest spider_dungeon_3floor_boss begin
 			end
 		end
 
-		when 30130.chat.gameforge.spider_dungeon_3floor_boss._10_npcChat begin
+		when 30130.chat."[LC;6924]" begin
 			if game.get_event_flag("spider_lair_ongoing_"..get_channel_id()) == 1 then
 			    local starttime = game.get_event_flag("spider_lair_start_time_"..get_channel_id())
 			    local current_time = get_global_time()
 			    
 			    if party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) then
 			        if  starttime +  lair_enter_wait_time >= current_time  and party.get_leader_pid() == game.get_event_flag("spider_lair_leader_"..get_channel_id()) and game.get_event_flag("spider_lair_ongoing_"..get_channel_id()) == 1 then
-			            say(gameforge.spider_dungeon_3floor_boss._300_say)
+			            say("[LC;6944]")
 			            local warp =  select(locale.confirm,locale.cancel)
 			            if warp == 1 then
 			                pc.warp(88100,614800)
@@ -419,14 +419,14 @@ quest spider_dungeon_3floor_boss begin
 		when 2092.kill begin
 			server_timer("spider_dead_timer", king_kill_wait_time)
 			game.set_event_flag("spider_dead"..get_channel_id(), 1)
-			notice_multiline(gameforge.spider_dungeon_3floor_boss._400_say,notice_in_map)
+			notice_multiline("[LC;6955]",notice_in_map)
 		end
 		
 		
 		when 2095.kill begin
 			local kingVid = game.get_event_flag("king_vid")
 			local remain_egg = game.get_event_flag("remain_egg"..get_channel_id())
-			notice_multiline(gameforge.spider_dungeon_3floor_boss._420_notice,notice_in_map)
+			notice_multiline("[LC;6958]",notice_in_map)
 			
 			if remain_egg > 0 then
 			    remain_egg = remain_egg - 1

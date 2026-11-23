@@ -96,13 +96,13 @@ quest flame_dungeon begin
 	function go_boss()
 		local setting = flame_dungeon.setting()
 		if pc.get_level() < 104 then
-            -- syschat(gameforge.flame_dungeon._580_notice)
-            say(gameforge.flame_dungeon._580_notice)
+            -- syschat("[LC;1092]")
+            say("[LC;1092]")
             return
 		else
-				-- -- say_title(gameforge.flame_dungeon._010_say)
-                say(gameforge.flame_dungeon._010_say)
-				local warp = select(gameforge.flame_dungeon._020_select,gameforge.flame_dungeon._030_select)
+				-- -- say_title("[LC;1039]")
+                say("[LC;1039]")
+				local warp = select("[LC;1040]","[LC;1041]")
 				if warp == 1 then
 					d.setf("level",17)
 					d.jump_all(setting.bossroom_entry_pos[1],setting.bossroom_entry_pos[2])
@@ -111,8 +111,8 @@ quest flame_dungeon begin
 					d.spawn_mob(FINAL_BOSS,setting.boss_pos[1],setting.boss_pos[2])
 				end
 			-- else 
-                -- -- syschat(gameforge.flame_dungeon._040_notice)
-                -- say(gameforge.flame_dungeon._040_notice)
+                -- -- syschat("[LC;1042]")
+                -- say("[LC;1042]")
                 -- return
 			-- end
 		end
@@ -155,16 +155,16 @@ quest flame_dungeon begin
 					end
 
 					if get_global_time() - pc.getf("flame_dungeon","exit_time") < ENTER_LIMIT_TIME * 60 then
-						notice_multiline(gameforge.flame_dungeon._050_notice,d.notice)
-						say(gameforge.flame_dungeon._060_say)
+						notice_multiline("[LC;1043]",d.notice)
+						say("[LC;1044]")
 						timer("flame_dungeon_warp_timer", 5)
 					elseif not canPass then
-						notice_multiline(gameforge.flame_dungeon._070_notice,d.notice)
-						say(gameforge.flame_dungeon._080_say)
+						notice_multiline("[LC;1045]",d.notice)
+						say("[LC;1046]")
 						timer("flame_dungeon_warp_timer", 5)
 					elseif pc.get_level() < 100 then
-						notice_multiline(gameforge.flame_dungeon._090_notice,d.notice)
-						say(gameforge.flame_dungeon._100_say)
+						notice_multiline("[LC;1047]",d.notice)
+						say("[LC;1048]")
 						timer("flame_dungeon_warp_timer", 5)
 					end
 				elseif pc.getf("flame_dungeon","ticket_delete") == 0 then
@@ -195,7 +195,7 @@ quest flame_dungeon begin
 
 			end
 		end
-		when ENTRY_MAN.chat.gameforge.flame_dungeon._110_npcChat begin
+		when ENTRY_MAN.chat."[LC;1049]" begin
 		
 			local setting = flame_dungeon.setting()
 			if party.is_party() then
@@ -214,7 +214,7 @@ quest flame_dungeon begin
 						end
 					else
 						say_title(mob_name(ENTRY_MAN))
-                        say(gameforge.flame_dungeon._590_say)
+                        say("[LC;1093]")
 					end
 				else
 					local pids = {party.get_member_pids()}
@@ -246,7 +246,7 @@ quest flame_dungeon begin
 
 					if not ticketCheck then
 						say_title(mob_name(ENTRY_MAN))
-						say(gameforge.flame_dungeon._610_say)
+						say("[LC;1095]")
 						for i, name in next, noTicketMembers, nil do
 							say(color(1,1,0), "    "..name)
 						end
@@ -259,7 +259,7 @@ quest flame_dungeon begin
 
 					if not levelCheck then
 						say_title(mob_name(ENTRY_MAN))
-						say(gameforge.flame_dungeon._630_say)
+						say("[LC;1096]")
 						for i, name in next, notEnoughLevelMembers, nil do
 							say(color(1,1,0), "    "..name)
 						end
@@ -267,24 +267,24 @@ quest flame_dungeon begin
 					end
 
 					if party.is_leader() then
-						say(gameforge.flame_dungeon._120_say)
-						local warp = select(gameforge.flame_dungeon._130_select,gameforge.flame_dungeon._140_select)
+						say("[LC;1050]")
+						local warp = select("[LC;1051]","[LC;1052]")
 						if warp == 1 then
 							if party.is_map_member_flag_lt("exit_time", get_global_time() - ENTER_LIMIT_TIME * 60 ) then
 								flame_dungeon.make_dungeon()
 							else
-								say(gameforge.flame_dungeon._600_say)
+								say("[LC;1094]")
 							end
 						end
 						
 						party.setf("flame_dungeon_boss_kill_count", 0)
 						
 					else
-						say(gameforge.flame_dungeon._150_say)
+						say("[LC;1053]")
 					end
 				end
 			else
-				say(gameforge.flame_dungeon._160_say)
+				say("[LC;1054]")
 			end
 		end
 			-- local setting = flame_dungeon.setting()
@@ -324,59 +324,59 @@ quest flame_dungeon begin
 		-- end
 		when flame_dungeon_45m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				notice_multiline(string.format(gameforge.flame_dungeon._180_notice, 45),d.notice)
-				notice_multiline(gameforge.flame_dungeon._170_notice,d.notice)
+				notice_multiline(string.format("[LC;1056;%d]", 45),d.notice)
+				notice_multiline("[LC;1055]",d.notice)
 				server_timer('flame_dungeon_30m_left_timer', 15*60, get_server_timer_arg())
 			end
 		end
 		when flame_dungeon_30m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				notice_multiline(string.format(gameforge.flame_dungeon._180_notice, 30),d.notice)
-				notice_multiline(gameforge.flame_dungeon._170_notice,d.notice)
+				notice_multiline(string.format("[LC;1056;%d]", 30),d.notice)
+				notice_multiline("[LC;1055]",d.notice)
 				server_timer('flame_dungeon_15m_left_timer', 15*60, get_server_timer_arg())
 			end
 		end
 		when flame_dungeon_15m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				notice_multiline(string.format(gameforge.flame_dungeon._180_notice, 15),d.notice)
-				notice_multiline(gameforge.flame_dungeon._170_notice,d.notice)
+				notice_multiline(string.format("[LC;1056;%d]", 15),d.notice)
+				notice_multiline("[LC;1055]",d.notice)
 				server_timer('flame_dungeon_5m_left_timer', 10*60, get_server_timer_arg())
 			end
 		end
 		when flame_dungeon_5m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				notice_multiline(string.format(gameforge.flame_dungeon._180_notice, 5),d.notice)
-				notice_multiline(gameforge.flame_dungeon._170_notice,d.notice)
+				notice_multiline(string.format("[LC;1056;%d]", 5),d.notice)
+				notice_multiline("[LC;1055]",d.notice)
 				server_timer('flame_dungeon_1m_left_timer', 4*60, get_server_timer_arg())
 			end
 		end
 		when flame_dungeon_1m_left_timer.server_timer begin
 			if d.select(get_server_timer_arg()) then
-				notice_multiline(string.format(gameforge.flame_dungeon._180_notice, 1),d.notice)
-				notice_multiline(gameforge.flame_dungeon._170_notice,d.notice)
+				notice_multiline(string.format("[LC;1056;%d]", 1),d.notice)
+				notice_multiline("[LC;1055]",d.notice)
 				server_timer ("flame_dungeon_0m_left_timer", 60, get_server_timer_arg())
 			end
 		end
 		when flame_dungeon_0m_left_timer.server_timer begin
 			local setting = flame_dungeon.setting()
 			if d.select(get_server_timer_arg()) then		
-				notice_multiline(gameforge.flame_dungeon._190_notice,d.notice)
-				notice_multiline(gameforge.flame_dungeon._200_notice,d.notice)
+				notice_multiline("[LC;1057]",d.notice)
+				notice_multiline("[LC;1058]",d.notice)
 				server_timer("dungeon_end_timer",10,d.get_map_index())	
 			end
 		end	
 
 
-		when DUNGEON_MAN.chat.gameforge.flame_dungeon._210_npcChat with npc.lock() begin
+		when DUNGEON_MAN.chat."[LC;1059]" with npc.lock() begin
 			local setting = flame_dungeon.setting()
 			if d.getf("started") == 0 then
-				say(gameforge.flame_dungeon._230_say)
-				say(gameforge.flame_dungeon._240_say)
+				say("[LC;1061]")
+				say("[LC;1062]")
 				wait()
 				d.setf("started",1)
 				server_timer ("flame_dungeon_45m_left_timer",15*60, d.get_map_index())
-				notice_multiline(gameforge.flame_dungeon._250_notice,d.notice)
-				notice_multiline(gameforge.flame_dungeon._170_notice,d.notice)
+				notice_multiline("[LC;1063]",d.notice)
+				notice_multiline("[LC;1055]",d.notice)
 				
 				local pids = {party.get_member_pids()}
 				local ticketGroup = {71095, 1, 71130, 1}
@@ -426,8 +426,8 @@ quest flame_dungeon begin
 				end
 			end
 				if d.getf("level") == 1 then
-					say(gameforge.flame_dungeon._260_say)
-					notice_multiline(gameforge.flame_dungeon._260_say,d.notice)
+					say("[LC;1064]")
+					notice_multiline("[LC;1064]",d.notice)
 					d.kill_unique("door1")
 					d.kill_unique("idoor1")
 					d.setf("level",11)
@@ -435,47 +435,47 @@ quest flame_dungeon begin
 						
 					server_timer ("killed_A_1", 12, d.get_map_index())
 				elseif d.getf("level") == 11 then
-					say(gameforge.flame_dungeon._270_say)
-					say_title(gameforge.flame_dungeon._280_sayTitle .. d.count_monster())
+					say("[LC;1065]")
+					say_title("[LC;1066]" .. d.count_monster())
 				elseif d.getf("level") == 2 then
-						say(gameforge.flame_dungeon._290_say)
-						say(gameforge.flame_dungeon._300_say)
-						notice_multiline(gameforge.flame_dungeon._290_say,d.notice)
-						notice_multiline(gameforge.flame_dungeon._300_say,d.notice)
+						say("[LC;1067]")
+						say({})
+						notice_multiline("[LC;1067]",d.notice)
+						notice_multiline({},d.notice)
 						d.spawn_mob(LEVEL2_STONE, setting.LEVEL2_STONE_pos[1], setting.LEVEL2_STONE_pos[2])
 						d.kill_unique("door2")
 						d.kill_unique("idoor2")
 						d.set_regen_file (MOB_REGEN_FILE_PATH.."fd_b.txt")
 						d.setf("level",12)
 				elseif d.getf("level") == 12 then
-					say(gameforge.flame_dungeon._310_say)
+					say("[LC;1068]")
 				elseif d.getf("level") == 3 then
-					say(gameforge.flame_dungeon._260_say)
-					notice_multiline(gameforge.flame_dungeon._260_say,d.notice)
+					say("[LC;1064]")
+					notice_multiline("[LC;1064]",d.notice)
 					d.kill_unique("door3")
 					d.kill_unique("idoor3")
 					d.setf("level",13)
 					d.regen_file (MOB_REGEN_FILE_PATH.."fd_c.txt")
 					server_timer ("killed_A_1", 12, d.get_map_index())
 				elseif d.getf("level") == 13 then
-					say(gameforge.flame_dungeon._270_say)
-					say_title(gameforge.flame_dungeon._280_sayTitle..d.count_monster())
+					say("[LC;1065]")
+					say_title("[LC;1066]"..d.count_monster())
 				elseif d.getf("level") == 4 then -- 474 178
-					say(gameforge.flame_dungeon._320_notice)
-					notice_multiline(gameforge.flame_dungeon._320_notice,d.notice)
+					say("[LC;1069]")
+					notice_multiline("[LC;1069]",d.notice)
 					d.setf("level",14)
 					d.kill_unique("door4")
 					d.kill_unique("idoor4")
 					d.set_regen_file (MOB_REGEN_FILE_PATH.."fd_d.txt")
 					d.spawn_mob(LEVEL4_TARGET,setting.LEVEL4_TARGET_pos[1],setting.LEVEL4_TARGET_pos[2] )
 				elseif d.getf("level") == 14 then
-					say(gameforge.flame_dungeon._330_say)
-					say(gameforge.flame_dungeon._340_say)
+					say("[LC;1070]")
+					say({})
 				elseif d.getf("level") == 5 then -- 510 355
-					say(gameforge.flame_dungeon._350_say)
-					say(gameforge.flame_dungeon._360_say)
-					notice_multiline(gameforge.flame_dungeon._350_say,d.notice)
-					notice_multiline(gameforge.flame_dungeon._360_say,d.notice)
+					say("[LC;1071]")
+					say("[LC;1072]")
+					notice_multiline("[LC;1071]",d.notice)
+					notice_multiline("[LC;1072]",d.notice)
 					d.kill_unique("door5")
 					d.kill_unique("idoor5")
 					d.setf("level",15)
@@ -503,23 +503,23 @@ quest flame_dungeon begin
 						end
 					end  
 				elseif d.getf("level") == 15 then
-					say(gameforge.flame_dungeon._370_say)
+					say("[LC;1073]")
 				elseif d.getf("level") == 6 then -- 507 490
-					say(gameforge.flame_dungeon._380_say) 
-					notice_multiline(gameforge.flame_dungeon._380_say,d.notice)
+					say("[LC;1074]") 
+					notice_multiline("[LC;1074]",d.notice)
 					d.setf("level",16)
 					d.kill_unique("door6")
 					d.kill_unique("idoor6")
 					d.set_regen_file (MOB_REGEN_FILE_PATH.."fd_f.txt")
 					d.spawn_mob(LEVEL6_TARGET, setting.LEVEL6_TARGET_pos[1],setting.LEVEL6_TARGET_pos[2])
 				elseif d.getf("level") == 16 then
-					say(gameforge.flame_dungeon._390_say)
-					say(gameforge.flame_dungeon._400_say)
+					say({})
+					say("[LC;1075]")
 				elseif d.getf("level") == 7 then
 					-- setskin(NOWINDOW)
                     flame_dungeon.go_boss()
 				else
-					say(gameforge.flame_dungeon._410_say)
+					say({})
 				end
 			npc.unlock()		
 		end
@@ -540,11 +540,11 @@ quest flame_dungeon begin
 			if d.select(get_server_timer_arg()) then
 				if d.count_monster() <= 0 then
 					if d.getf("level") == 11 then
-						notice_multiline(gameforge.flame_dungeon._420_notice,d.notice)
-						notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
+						notice_multiline("[LC;1076]",d.notice)
+						notice_multiline("[LC;1077]",d.notice)
 					else
-						notice_multiline(gameforge.flame_dungeon._420_notice,d.notice)
-						notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
+						notice_multiline("[LC;1076]",d.notice)
+						notice_multiline("[LC;1077]",d.notice)
 					end
 					d.setf("level",0)
 				else 
@@ -556,11 +556,11 @@ quest flame_dungeon begin
 			if d.select(get_server_timer_arg()) then
 				if d.count_monster() <= 0 then
 					if d.getf("level") == 11 then
-						notice_multiline(gameforge.flame_dungeon._420_notice,d.notice)
-						notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
+						notice_multiline("[LC;1076]",d.notice)
+						notice_multiline("[LC;1077]",d.notice)
 					else
-						notice_multiline(gameforge.flame_dungeon._420_notice,d.notice)
-						notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
+						notice_multiline("[LC;1076]",d.notice)
+						notice_multiline("[LC;1077]",d.notice)
 					end
 					d.setf("level",0)
 				else 
@@ -580,18 +580,18 @@ quest flame_dungeon begin
 			if i == 1 then
 				npc.purge()
 				item.remove()
-				notice_multiline(gameforge.flame_dungeon._440_notice,d.notice)
-				notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
+				notice_multiline("[LC;1078]",d.notice)
+				notice_multiline("[LC;1077]",d.notice)
 				flame_dungeon.level_clear()
 			else
 				item.remove()
-				say(gameforge.flame_dungeon._450_say)
+				say("[LC;1079]")
 			end
 		end
 
 		when LEVEL4_TARGET.kill with flame_dungeon.is_flamed(pc.get_map_index()) and d.getf("level") == 14 begin
-			notice_multiline(gameforge.flame_dungeon._460_notice,d.notice)
-			notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
+			notice_multiline("[LC;1080]",d.notice)
+			notice_multiline("[LC;1077]",d.notice)
 			flame_dungeon.level_clear()
 		end
 
@@ -606,7 +606,7 @@ quest flame_dungeon begin
 			if npc.get_vid() == d.get_unique_vid("stone5_1") then
 				npc.purge()
 				item.remove()
-				say(gameforge.flame_dungeon._470_say)
+				say("[LC;1081]")
 				d.setf("stonekill",2)
 				if d.count_monster() < LEVEL5_GEN_LIMIT then
 					d.regen_file (MOB_REGEN_FILE_PATH.."fd_e.txt")
@@ -615,96 +615,96 @@ quest flame_dungeon begin
 				if d.getf("stonekill") == 2 then
 					npc.purge()
 					item.remove()
-					say(gameforge.flame_dungeon._480_say)
+					say("[LC;1082]")
 					d.setf("stonekill",3)
 					if d.count_monster() < LEVEL5_GEN_LIMIT then
 						d.regen_file (MOB_REGEN_FILE_PATH.."fd_e.txt")
 					end
 				else
 					item.remove()
-					say(gameforge.flame_dungeon._490_say)
+					say("[LC;1083]")
 			--		say("2번")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_3") then
 				if d.getf("stonekill") == 3 then
 					npc.purge()
 					item.remove()
-					say(gameforge.flame_dungeon._500_say)
+					say("[LC;1084]")
 					d.setf("stonekill",4)
 					if d.count_monster() < LEVEL5_GEN_LIMIT then
 						d.regen_file (MOB_REGEN_FILE_PATH.."fd_e.txt")
 					end
 				else
 					item.remove()
-					say(gameforge.flame_dungeon._490_say)
+					say("[LC;1083]")
 			--		say("3번")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_4") then
 				if d.getf("stonekill") == 4 then
 					npc.purge()
 					item.remove()
-					say(gameforge.flame_dungeon._510_say)
+					say("[LC;1085]")
 					d.setf("stonekill",5)
 					if d.count_monster() < LEVEL5_GEN_LIMIT then
 						d.regen_file (MOB_REGEN_FILE_PATH.."fd_e.txt")
 					end
 				else
 					item.remove()
-					say(gameforge.flame_dungeon._490_say)
+					say("[LC;1083]")
 				--	say("4번")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_5") then
 				if d.getf("stonekill") == 5 then
 					npc.purge()
 					item.remove()
-					say(gameforge.flame_dungeon._520_say)
+					say("[LC;1086]")
 					d.setf("stonekill",6)
 					if d.count_monster() < LEVEL5_GEN_LIMIT then
 						d.regen_file (MOB_REGEN_FILE_PATH.."fd_e.txt")
 					end
 				else
 					item.remove()
-					say(gameforge.flame_dungeon._490_say)
+					say("[LC;1083]")
 			--		say("5번")
 				end
 			elseif npc.get_vid() == d.get_unique_vid("stone5_6") then
 				if d.getf("stonekill") == 6 then
 					npc.purge()
 					item.remove()
-					say(gameforge.flame_dungeon._530_say)
+					say("[LC;1087]")
 					d.setf("stonekill",7)
 					if d.count_monster() < LEVEL5_GEN_LIMIT then
 						d.regen_file (MOB_REGEN_FILE_PATH.."fd_e.txt")
 					end
 				else
 					item.remove()
-					say(gameforge.flame_dungeon._490_say)
+					say("[LC;1083]")
 			--		say("6번")
 				end
 			else 
 				if d.getf("stonekill") == 7 then
 					npc.purge()
 					item.remove()
-					notice_multiline(gameforge.flame_dungeon._440_notice,d.notice)
-					notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
+					notice_multiline("[LC;1078]",d.notice)
+					notice_multiline("[LC;1077]",d.notice)
 					flame_dungeon.level_clear()
 				else
 					item.remove()
-					say(gameforge.flame_dungeon._490_say)
+					say("[LC;1083]")
 			--		say("7번")
 				end
 			end
 		end
 
 		when LEVEL6_TARGET.kill with flame_dungeon.is_flamed(d.get_map_index()) and d.getf("level") ==16 begin
-			notice_multiline(gameforge.flame_dungeon._540_notice,d.notice)
-			notice_multiline(gameforge.flame_dungeon._430_notice,d.notice)
+			notice_multiline("[LC;1088]",d.notice)
+			notice_multiline("[LC;1077]",d.notice)
 			flame_dungeon.level_clear()
 		end
 
 		when FINAL_BOSS.kill with flame_dungeon.is_flamed(d.get_map_index()) and d.getf("level") ==17 begin
-			notice_multiline(gameforge.flame_dungeon._550_notice,d.notice)
-			notice_multiline(gameforge.flame_dungeon._560_notice,d.notice)
+			notice_multiline("[LC;1089]",d.notice)
+			notice_multiline("[LC;1090]",d.notice)
 			server_timer("dungeon_end_timer", 60,d.get_map_index())	
 			flame_dungeon.level_clear()
 			

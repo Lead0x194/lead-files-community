@@ -23,13 +23,13 @@ quest new_quest_lv75 begin
 			goto_npc = 20090 -- Heuk-Young
 			local v=find_npc_by_vnum(goto_npc)
 			if 0!=v then
-				target.vid("__TARGET__", v, gameforge.new_quest_lv75._010_target) -- place questarrow on Heuk-Young
+				target.vid("__TARGET__", v, "[LC;6145]") -- place questarrow on Heuk-Young
 			end
 		end
-		when 20090.chat.gameforge.new_quest_lv75._020_set_title begin -- when Heuk-Younmg is clicked
+		when 20090.chat."[LC;6146]" begin -- when Heuk-Younmg is clicked
 			target.delete("__TARGET__") -- delete questarrow
-			say_title(gameforge.new_quest_lv75._020_set_title) -- displays headline
-			say(gameforge.new_quest_lv75._030_say)
+			say_title("[LC;6146]") -- displays headline
+			say("[LC;6152]")
 			set_state(find_evidence)
 		end
 	end
@@ -38,89 +38,89 @@ quest new_quest_lv75 begin
 	state find_evidence begin
 		when login or enter begin
 			diarypage = 30181 -- page of a book
-			send_letter(gameforge.new_quest_lv75._020_set_title)
+			send_letter("[LC;6146]")
 			new_quest_lv75_mob = 1137 -- Himmels-Eisgolem
 			new_quest_lv75_dropProb = 15 -- probability is 1.5%
 			new_quest_lv75_npcvnum = 20090        
 			q.start()                                                                 
-			q.set_title(gameforge.new_quest_lv75._020_set_title) -- for quest-journal 
+			q.set_title("[LC;6146]") -- for quest-journal 
 		end
 		
 		-- quest journal gives feedback to whatever useful things the player finds. It changes according to the findings
 		when button or info begin
 			local foundskel = pc.getqf("suraskel0") + pc.getqf("suraskel1") + pc.getqf("suraskel2") + pc.getqf("suraskel3") + pc.getqf("suraskel4")
 			if foundskel == 4 and pc.countitem(diarypage) == 0 then
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._021_say)
+				say_title("[LC;6146]")
+				say("[LC;6147]")
 			elseif foundskel < 4 and pc.countitem(diarypage) == 0 then
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._022_say)
+				say_title("[LC;6146]")
+				say("[LC;6148]")
 			elseif foundskel == 5 and pc.countitem(diarypage) > 0 then
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(string.format(gameforge.new_quest_lv75._023_say, mob_name(new_quest_lv75_mob)))
+				say_title("[LC;6146]")
+				say(string.format("[LC;6149]", mob_name(new_quest_lv75_mob)))
 			elseif foundskel < 5 and pc.countitem(diarypage) > 0 then
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._024_say)
+				say_title("[LC;6146]")
+				say("[LC;6150]")
 			else -- this is the initial task what the player must do
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._025_say)
+				say_title("[LC;6146]")
+				say("[LC;6151]")
 			end
 		end
 		
 		-- when player finds a skelleton he or she may return to quest giver
-		when 30124.chat.gameforge.new_quest_lv75._050_npcChat begin
-			say(gameforge.new_quest_lv75._060_say)
+		when 30124.chat."[LC;6154]" begin
+			say("[LC;6155]")
 			pc.setqf("suraskel0", 0)
-			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), gameforge.new_quest_lv75._010_target)
+			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), "[LC;6145]")
 		end
 		
-		when 30125.chat.gameforge.new_quest_lv75._050_npcChat begin
-			say(gameforge.new_quest_lv75._060_say)
+		when 30125.chat."[LC;6154]" begin
+			say("[LC;6155]")
 			pc.setqf("suraskel1", 0)
-			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), gameforge.new_quest_lv75._010_target)
+			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), "[LC;6145]")
 		end
 		
-		when 30126.chat.gameforge.new_quest_lv75._050_npcChat begin
-			say(gameforge.new_quest_lv75._060_say)
+		when 30126.chat."[LC;6154]" begin
+			say("[LC;6155]")
 			pc.setqf("suraskel2", 0)
-			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), gameforge.new_quest_lv75._010_target)
+			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), "[LC;6145]")
 		end
 		
-		when 30127.chat.gameforge.new_quest_lv75._050_npcChat begin
-			say(gameforge.new_quest_lv75._060_say)
+		when 30127.chat."[LC;6154]" begin
+			say("[LC;6155]")
 			pc.setqf("suraskel3", 0)
-			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), gameforge.new_quest_lv75._010_target)
+			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), "[LC;6145]")
 		end
 		
-		when 30128.chat.gameforge.new_quest_lv75._050_npcChat begin
-			say(gameforge.new_quest_lv75._060_say)
+		when 30128.chat."[LC;6154]" begin
+			say("[LC;6155]")
 			pc.setqf("suraskel4", 0)
-			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), gameforge.new_quest_lv75._010_target)
+			target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), "[LC;6145]")
 		end
 		-- player kills an ice golem and may recieve a page of the legendary diary
 		when 1137.kill begin
 			if pc.countitem(diarypage) < 1 then
 				if math.random(1,1000) <= new_quest_lv75_dropProb then -- probability if s.th. drops
 					pc.give_item2(diarypage)
-					notice_multiline(gameforge.new_quest_lv75._070_notice, notice)
-					target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), gameforge.new_quest_lv75._010_target)
+					notice_multiline("[LC;6156]", notice)
+					target.vid("__TARGET__", find_npc_by_vnum(new_quest_lv75_npcvnum), "[LC;6145]")
 				end
 			end
 		end
 		
-		when 20090.chat.gameforge.new_quest_lv75._020_set_title begin -- Conversation with Heuk Young befor and after the player found some useful things in the cave
+		when 20090.chat."[LC;6146]" begin -- Conversation with Heuk Young befor and after the player found some useful things in the cave
 			local foundskel = pc.getqf("suraskel0") + pc.getqf("suraskel1") + pc.getqf("suraskel2") + pc.getqf("suraskel3") + pc.getqf("suraskel4")
 			
 			if pc.count_item(diarypage) == 0 and foundskel == 5 then -- has neither found a page nor a skeleton
-				say_title(gameforge.new_quest_lv75._020_set_title) -- displays headline
-				say(gameforge.new_quest_lv75._090_say) -- display this when player gets back to Heuk-Young with empty hands 
+				say_title("[LC;6146]") -- displays headline
+				say("[LC;6157]") -- display this when player gets back to Heuk-Young with empty hands 
 			elseif pc.count_item(diarypage) > 0 and foundskel == 5 then -- has found one or more pages but no skeleton
 				target.delete("__TARGET__")
-				say_title(gameforge.new_quest_lv75._020_set_title) -- displays headline
-				say(gameforge.new_quest_lv75._100_say)
+				say_title("[LC;6146]") -- displays headline
+				say("[LC;6158]")
 				wait()
-				say(gameforge.new_quest_lv75._105_say)
-				say(gameforge.new_quest_lv75._109_say)
+				say("[LC;6159]")
+				say("[LC;6160]")
 				-- since the player has not found any skeletons yet we want to make sure that not every seleton he or she finds is a success
 				local randomvalue = math.random(0,4) -- defines which skeleton is empty
 				if randomvalue == 0 then
@@ -137,10 +137,10 @@ quest new_quest_lv75 begin
 				set_state(moreinfo)
 			elseif pc.count_item(diarypage) == 0 and foundskel < 5 then -- has found one or more skeletons and no pages
 				target.delete("__TARGET__")
-				say_title(gameforge.new_quest_lv75._020_set_title) -- displays headline
-				say(gameforge.new_quest_lv75._110_say)
+				say_title("[LC;6146]") -- displays headline
+				say("[LC;6161]")
 				wait()
-				say(gameforge.new_quest_lv75._115_say)
+				say("[LC;6162]")
 				if foundskel > 1 then -- if the player has already found more then one skeleton but not all he will miss all the fun finding the pages so we reset some questflags only leaving one skeleton empty
 					local counter1 = 0
 					repeat
@@ -179,8 +179,8 @@ quest new_quest_lv75 begin
 				set_state("moreinfo")
 			else -- has found one or more skeletons and one or more pages
 				target.delete("__TARGET__")
-				say_title(gameforge.new_quest_lv75._020_set_title) -- displays headline
-				say(gameforge.new_quest_lv75._120_say)
+				say_title("[LC;6146]") -- displays headline
+				say("[LC;6163]")
 				set_state("moreinfo")
 			end
 			
@@ -198,63 +198,63 @@ quest new_quest_lv75 begin
 			new_quest_lv75_mob = 1137 -- Himmels-Eisgolem
 			new_quest_lv75_dropProb = 15 -- probability is 1.5%
 			new_quest_lv75_npcvnum = 20090  
-			send_letter(gameforge.new_quest_lv75._020_set_title)
+			send_letter("[LC;6146]")
 			local story
 		end
 		
 		when button or info begin
-			say_title(gameforge.new_quest_lv75._020_set_title)
-			say(gameforge.new_quest_lv75._130_say)
+			say_title("[LC;6146]")
+			say("[LC;6164]")
 			if pc.countitem(diarypage) > 3 and pc.countitem(diarypage) <= 6 then
-				story = select(gameforge.new_quest_lv75._140_1_select, gameforge.new_quest_lv75._140_2_select)
+				story = select("[LC;6165]", "[LC;6166]")
 			elseif pc.countitem(diarypage) > 6 and pc.countitem(diarypage) <= 9 then
-				story = select(gameforge.new_quest_lv75._140_1_select, gameforge.new_quest_lv75._140_2_select, gameforge.new_quest_lv75._140_3_select)
+				story = select("[LC;6165]", "[LC;6166]", "[LC;6167]")
 			elseif pc.countitem(diarypage) > 9 and pc.countitem(diarypage) <= 12 then
-				story = select(gameforge.new_quest_lv75._140_1_select, gameforge.new_quest_lv75._140_2_select, gameforge.new_quest_lv75._140_3_select, gameforge.new_quest_lv75._140_4_select)
+				story = select("[LC;6165]", "[LC;6166]", "[LC;6167]", "[LC;6168]")
 			elseif pc.countitem(diarypage) > 12 and pc.countitem(diarypage) <= 15 then
-				story = select(gameforge.new_quest_lv75._140_1_select, gameforge.new_quest_lv75._140_2_select, gameforge.new_quest_lv75._140_3_select, gameforge.new_quest_lv75._140_4_select, gameforge.new_quest_lv75._140_5_select)
+				story = select("[LC;6165]", "[LC;6166]", "[LC;6167]", "[LC;6168]", "[LC;6169]")
 			else
-				say(gameforge.new_quest_lv75._150_say) -- einfach ein paar zusammenhanslose informationen streuen
+				say("[LC;6172]") -- einfach ein paar zusammenhanslose informationen streuen
 			end
 			if story == 2 then
-				say(gameforge.new_quest_lv75._160_1_say)
+				say("[LC;6173]")
 			elseif story == 3 then
-				say(gameforge.new_quest_lv75._160_2_say)
+				say("[LC;6174]")
 			elseif story == 4 then
-				say(gameforge.new_quest_lv75._160_3_say)
+				say("[LC;6175]")
 			elseif story == 5 then
-				say(gameforge.new_quest_lv75._160_4_say)
+				say("[LC;6176]")
 			end
 		end
 		
-		when 20090.chat.gameforge.new_quest_lv75._020_set_title begin
+		when 20090.chat."[LC;6146]" begin
 			if pc.countitem(diarypage) > 1 and pc.countitem(diarypage) <= 3 then
-				say(gameforge.new_quest_lv75._170_say)
-				say(gameforge.new_quest_lv75._171_say)
+				say("[LC;6178]")
+				say("[LC;6179]")
 			elseif pc.countitem(diarypage) > 3 and pc.countitem(diarypage) <= 6 then
-				say(gameforge.new_quest_lv75._172_say)
-				say(gameforge.new_quest_lv75._173_say)
-				local story = select(gameforge.new_quest_lv75._140_7_select, gameforge.new_quest_lv75._140_2_select)
+				say("[LC;6180]")
+				say("[LC;6181]")
+				local story = select("[LC;6171]", "[LC;6166]")
 			elseif pc.countitem(diarypage) > 6 and pc.countitem(diarypage) <= 9 then
-				say(gameforge.new_quest_lv75._174_say)
-				local story = select(gameforge.new_quest_lv75._140_7_select, gameforge.new_quest_lv75._140_2_select, gameforge.new_quest_lv75._140_3_select)
+				say("[LC;6182]")
+				local story = select("[LC;6171]", "[LC;6166]", "[LC;6167]")
 			elseif pc.countitem(diarypage) > 9 and pc.countitem(diarypage) <= 12 then
-				say(gameforge.new_quest_lv75._175_say)
-				say(gameforge.new_quest_lv75._176_say)
-				local story = select(gameforge.new_quest_lv75._140_7_select, gameforge.new_quest_lv75._140_2_select, gameforge.new_quest_lv75._140_3_select, gameforge.new_quest_lv75._140_4_select)
+				say("[LC;6183]")
+				say("[LC;6184]")
+				local story = select("[LC;6171]", "[LC;6166]", "[LC;6167]", "[LC;6168]")
 			else
-				say(gameforge.new_quest_lv75._177_say)
-				say(gameforge.new_quest_lv75._178_say)
-				local story = select(gameforge.new_quest_lv75._140_7_select, gameforge.new_quest_lv75._140_2_select, gameforge.new_quest_lv75._140_3_select, gameforge.new_quest_lv75._140_4_select, gameforge.new_quest_lv75._140_5_select)
+				say("[LC;6185]")
+				say("[LC;6186]")
+				local story = select("[LC;6171]", "[LC;6166]", "[LC;6167]", "[LC;6168]", "[LC;6169]")
 			end
 			if story == 2 then
-				say(gameforge.new_quest_lv75._160_1_say)
+				say("[LC;6173]")
 			elseif story == 3 then
-				say(gameforge.new_quest_lv75._160_2_say)
+				say("[LC;6174]")
 			elseif story == 4 then
-				say(gameforge.new_quest_lv75._160_3_say)
+				say("[LC;6175]")
 			elseif story == 5 then
-				say(gameforge.new_quest_lv75._160_4_say)
+				say("[LC;6176]")
 			end
 		end
 		
@@ -264,197 +264,197 @@ quest new_quest_lv75 begin
 					-- if the player finds the last page he is sent to the next state
 					-- higher propability because player knows what he or she is searching for
 					pc.give_item2(diarypage)
-					notice_multiline(gameforge.new_quest_lv75._180_notice, notice)
-					send_letter(gameforge.new_quest_lv75._185_send_letter)
+					notice_multiline("[LC;6187]", notice)
+					send_letter("[LC;6188]")
 					set_state("legendarydiary")
 				else
 					pc.give_item2(diarypage)
-					notice_multiline(string.format(gameforge.new_quest_lv75._190_notice, item_name(diarypage), mob_name(new_quest_lv75_mob)), notice)
-					send_letter(gameforge.new_quest_lv75._195_send_letter)
+					notice_multiline(string.format("[LC;6189]", item_name(diarypage), mob_name(new_quest_lv75_mob)), notice)
+					send_letter("[LC;6190]")
 				end
 			end
 		end
 		
 		when 30181.use begin -- if the player right clicks the diarypages it will produce a dialog (not working right now)
 			if pc.countitem(diarypage) > 3 and pc.countitem(diarypage) <= 6 then
-				say(gameforge.new_quest_lv75._160_1_say)
+				say("[LC;6173]")
 			elseif pc.countitem(diarypage) > 6 and pc.countitem(diarypage) <= 9 then
-				say(gameforge.new_quest_lv75._160_2_say)
+				say("[LC;6174]")
 			elseif pc.countitem(diarypage) > 9 and pc.countitem(diarypage) <= 12 then
-				say(gameforge.new_quest_lv75._160_3_say)
+				say("[LC;6175]")
 			elseif pc.countitem(diarypage) > 12 and pc.countitem(diarypage) <= 15 then
-				say(gameforge.new_quest_lv75._160_4_say)
+				say("[LC;6176]")
 			else
-				say(gameforge.new_quest_lv75._150_say) -- einfach ein paar zusammenhanslose informationen streuen
+				say("[LC;6172]") -- einfach ein paar zusammenhanslose informationen streuen
 			end
 		end
 		
-		when 30124.chat.gameforge.new_quest_lv75._200_npcChat begin 
+		when 30124.chat."[LC;6191]" begin 
 			if pc.getqf("suraskel0") == 1 and pc.countitem(diarypage) < 12 then 
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel0", 0)
 				pc.give_item2(diarypage, 3)
 				wait()
 				if pc.countitem(diarypage) > 2 and pc.countitem(diarypage) <= 5 then
-					say(gameforge.new_quest_lv75._160_1_say)
+					say("[LC;6173]")
 				elseif pc.countitem(diarypage) > 5 and pc.countitem(diarypage) <= 8 then
-					say(gameforge.new_quest_lv75._160_2_say)
+					say("[LC;6174]")
 				elseif pc.countitem(diarypage) > 8 and pc.countitem(diarypage) <= 12 then
-					say(gameforge.new_quest_lv75._160_3_say)
+					say("[LC;6175]")
 				else
-					say(gameforge.new_quest_lv75._150_say) -- einfach ein paar zusammenhanslose informationen streuen
+					say("[LC;6172]") -- einfach ein paar zusammenhanslose informationen streuen
 				end
 				wait()
 				-- say(string.format("There are only %s pages missing.", 15 - pc.countitem(diarypage)))
 			elseif pc.getqf("suraskel0") == 1 and pc.countitem(diarypage) >= 12 then
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel0", 0)
 				pc.give_item2(diarypage, 3)
 				wait()
-				say(gameforge.new_quest_lv75._160_4_say)
+				say("[LC;6176]")
 				wait()
-				say(gameforge.new_quest_lv75._220_say)
+				say("[LC;6193]")
 				set_state("legendarydiary") -- to next state
 			else
-				say(gameforge.new_quest_lv75._230_say)
+				say("[LC;6194]")
 				-- say(string.format("Mir fehlen immer noch %s Seiten.", 15 - pc.countitem(diarypage)))
 			end
 		end
 		-- player finds skeletons and clicks on them. Opens a dialog
-		when 30125.chat.gameforge.new_quest_lv75._200_npcChat begin 
+		when 30125.chat."[LC;6191]" begin 
 			if pc.getqf("suraskel1") == 1 and pc.countitem(diarypage) < 12 then
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel1", 0) -- set the skeleton to empty
 				pc.give_item2(diarypage, 3)
 				wait() -- depending on how many pages the player has collected he or she gets to read another part of the background story
 				if pc.countitem(diarypage) > 2 and pc.countitem(diarypage) <= 5 then
-					say(gameforge.new_quest_lv75._160_1_say)
+					say("[LC;6173]")
 				elseif pc.countitem(diarypage) > 5 and pc.countitem(diarypage) <= 8 then
-					say(gameforge.new_quest_lv75._160_2_say)
+					say("[LC;6174]")
 				elseif pc.countitem(diarypage) > 8 and pc.countitem(diarypage) <= 12 then
-					say(gameforge.new_quest_lv75._160_3_say)
+					say("[LC;6175]")
 				else
-					say(gameforge.new_quest_lv75._150_say) -- einfach ein paar zusammenhanslose informationen streuen
+					say("[LC;6172]") -- einfach ein paar zusammenhanslose informationen streuen
 				end
 				wait()
 				-- say(string.format("There are only %s pages missing.", 15 - pc.countitem(diarypage)))
 			elseif pc.getqf("suraskel1") == 1 and pc.countitem(diarypage) >= 12 then --12 +3 pages = 15 or more pages so we can go to next state 
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel1", 0)
 				pc.give_item2(diarypage, 3)
 				wait()
-				say(gameforge.new_quest_lv75._160_4_say)
+				say("[LC;6176]")
 				wait()
-				say(gameforge.new_quest_lv75._220_say)
+				say("[LC;6193]")
 				set_state("legendarydiary") -- to next state
 			else
-				say(gameforge.new_quest_lv75._230_say)
+				say("[LC;6194]")
 				-- say(string.format("There are only %s pages missing.", 15 - pc.countitem(diarypage)))
 			end
 		end
 		
-		when 30126.chat.gameforge.new_quest_lv75._200_npcChat begin 
+		when 30126.chat."[LC;6191]" begin 
 			if pc.getqf("suraskel2") == 1 and pc.countitem(diarypage) < 12 then 
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel2", 0)
 				pc.give_item2(diarypage, 3)
 				wait()
 				if pc.countitem(diarypage) > 2 and pc.countitem(diarypage) <= 5 then
-					say(gameforge.new_quest_lv75._160_1_say)
+					say("[LC;6173]")
 				elseif pc.countitem(diarypage) > 5 and pc.countitem(diarypage) <= 8 then
-					say(gameforge.new_quest_lv75._160_2_say)
+					say("[LC;6174]")
 				elseif pc.countitem(diarypage) > 8 and pc.countitem(diarypage) <= 12 then
-					say(gameforge.new_quest_lv75._160_3_say)
+					say("[LC;6175]")
 				else
-					say(gameforge.new_quest_lv75._150_say) -- einfach ein paar zusammenhanslose informationen streuen
+					say("[LC;6172]") -- einfach ein paar zusammenhanslose informationen streuen
 				end
 				wait()
 				-- say(string.format("There are only %s pages missing.", 15 - pc.countitem(diarypage)))
 			elseif pc.getqf("suraskel2") == 1 and pc.countitem(diarypage) >= 12 then
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel2", 0)
 				pc.give_item2(diarypage, 3)
 				wait()
-				say(gameforge.new_quest_lv75._160_4_say)
+				say("[LC;6176]")
 				wait()
-				say(gameforge.new_quest_lv75._220_say)
+				say("[LC;6193]")
 				set_state("legendarydiary") -- to next state
 			else
-				say(gameforge.new_quest_lv75._230_say)
+				say("[LC;6194]")
 				-- say(string.format("There are only %s pages missing.", 15 - pc.countitem(diarypage)))
 			end
 		end
 		
-		when 30127.chat.gameforge.new_quest_lv75._200_npcChat begin 
+		when 30127.chat."[LC;6191]" begin 
 			if pc.getqf("suraskel3") == 1 and pc.countitem(diarypage) < 12 then 
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel3", 0)
 				pc.give_item2(diarypage, 3)
 				wait()
 				if pc.countitem(diarypage) > 2 and pc.countitem(diarypage) <= 5 then
-					say(gameforge.new_quest_lv75._160_1_say)
+					say("[LC;6173]")
 				elseif pc.countitem(diarypage) > 5 and pc.countitem(diarypage) <= 8 then
-					say(gameforge.new_quest_lv75._160_2_say)
+					say("[LC;6174]")
 				elseif pc.countitem(diarypage) > 8 and pc.countitem(diarypage) <= 12 then
-					say(gameforge.new_quest_lv75._160_3_say)
+					say("[LC;6175]")
 				else
-					say(gameforge.new_quest_lv75._150_say) -- einfach ein paar zusammenhanslose informationen streuen
+					say("[LC;6172]") -- einfach ein paar zusammenhanslose informationen streuen
 				end
 				wait()
 				-- say(string.format("There are only %s pages missing.", 15 - pc.countitem(diarypage)))
 			elseif pc.getqf("suraskel3") == 1 and pc.countitem(diarypage) >= 12 then
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel3", 0)
 				pc.give_item2(diarypage, 3)
 				wait()
-				say(gameforge.new_quest_lv75._160_4_say)
+				say("[LC;6176]")
 				wait()
-				say(gameforge.new_quest_lv75._220_say)
+				say("[LC;6193]")
 				set_state("legendarydiary") -- to next state
 			else
-				say(gameforge.new_quest_lv75._230_say)
+				say("[LC;6194]")
 				-- say(string.format("There are only %s pages missing.", 15 - pc.countitem(diarypage)))
 			end
 		end
 		
-		when 30128.chat.gameforge.new_quest_lv75._200_npcChat begin 
+		when 30128.chat."[LC;6191]" begin 
 			if pc.getqf("suraskel4") == 1 and pc.countitem(diarypage) < 12 then 
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel4", 0)
 				pc.give_item2(diarypage, 3)
 				wait()
 				if pc.countitem(diarypage) > 2 and pc.countitem(diarypage) <= 5 then
-					say(gameforge.new_quest_lv75._160_1_say)
+					say("[LC;6173]")
 				elseif pc.countitem(diarypage) > 5 and pc.countitem(diarypage) <= 8 then
-					say(gameforge.new_quest_lv75._160_2_say)
+					say("[LC;6174]")
 				elseif pc.countitem(diarypage) > 8 and pc.countitem(diarypage) <= 12 then
-					say(gameforge.new_quest_lv75._160_3_say)
+					say("[LC;6175]")
 				else
-					say(gameforge.new_quest_lv75._150_say) -- einfach ein paar zusammenhanslose informationen streuen
+					say("[LC;6172]") -- einfach ein paar zusammenhanslose informationen streuen
 				end
 				wait()
 				-- say(string.format("Jetzt fehlen mir noch %s Seiten.", 15 - pc.countitem(diarypage)))
 			elseif pc.getqf("suraskel4") == 1 and pc.countitem(diarypage) >= 12 then
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._210_say)
+				say_title("[LC;6146]")
+				say("[LC;6192]")
 				pc.setqf("suraskel4", 0)
 				pc.give_item2(diarypage, 3)
 				wait()
-				say(gameforge.new_quest_lv75._160_4_say)
+				say("[LC;6176]")
 				wait()
-				say(gameforge.new_quest_lv75._220_say)
+				say("[LC;6193]")
 				set_state("legendarydiary") -- to next state
 			else
-				say(gameforge.new_quest_lv75._230_say)
+				say("[LC;6194]")
 				-- say(string.format("Mir fehlen immer noch %s Seiten.", 15 - pc.countitem(diarypage)))
 			end
 		end
@@ -474,39 +474,39 @@ quest new_quest_lv75 begin
 			local goto_npc = 20090 -- Heuk-Young
 			local v=find_npc_by_vnum(goto_npc)
 			if 0!=v then
-				target.vid("__TARGET__", v, gameforge.new_quest_lv75._010_target) -- place questarrow on Heuk-Young
+				target.vid("__TARGET__", v, "[LC;6145]") -- place questarrow on Heuk-Young
 			end
-			send_letter(gameforge.new_quest_lv75._240_send_letter)
+			send_letter("[LC;6195]")
 		end
 		
 		when button or info begin
-			say(gameforge.new_quest_lv75._250_say)
+			say("[LC;6196]")
 		end
 		
 		when 30181.use begin -- if the player right clicks the diarypages it will produce a dialog (not working right now)
-			local choosestory = select(gameforge.new_quest_lv75._140_2_select, gameforge.new_quest_lv75._140_3_select, gameforge.new_quest_lv75._140_4_select, gameforge.new_quest_lv75._140_5_select)
+			local choosestory = select("[LC;6166]", "[LC;6167]", "[LC;6168]", "[LC;6169]")
 			if choosestory == 1 then
-				say (gameforge.new_quest_lv75._160_1_say)
+				say ("[LC;6173]")
 			elseif choosestory == 2 then
-				say (gameforge.new_quest_lv75._160_2_say)
+				say ("[LC;6174]")
 			elseif choosestory == 3 then
-				say (gameforge.new_quest_lv75._160_3_say)
+				say ("[LC;6175]")
 			else
-				say (gameforge.new_quest_lv75._160_4_say)
+				say ("[LC;6176]")
 			end
 		end
 		
 		when __TARGET__.target.click begin -- when Heuk-Young is clicked
-			q.set_title(gameforge.new_quest_lv75._020_set_title) -- for quest-journal 
+			q.set_title("[LC;6146]") -- for quest-journal 
 			target.delete("__TARGET__") -- delete questarrow
-			say_title(gameforge.new_quest_lv75._020_set_title) -- displays headline
-			say(gameforge.new_quest_lv75._270_say)
+			say_title("[LC;6146]") -- displays headline
+			say("[LC;6197]")
 			wait()
 			pc.remove_item(diarypage, pc.countitem(diarypage))
-			say(gameforge.new_quest_lv75._280_say)
-			local listen = select(gameforge.new_quest_lv75._290_1_select, gameforge.new_quest_lv75._140_7_select)
+			say("[LC;6198]")
+			local listen = select("[LC;6199]", "[LC;6171]")
 			if listen == 1 then 
-				say(gameforge.new_quest_lv75._160_5_say)
+				say("[LC;6177]")
 			end
 			pc.give_item2(30182) -- Legendary Diary
 			pc.change_money(1200000) -- reward for the quest are 1.2 Mil yang and the diry which can be sold for a high price
@@ -525,17 +525,17 @@ quest new_quest_lv75 begin
 		end
 		
 		when 30182.use begin
-			local choosestory = select(gameforge.new_quest_lv75._140_2_select, gameforge.new_quest_lv75._140_3_select, gameforge.new_quest_lv75._140_4_select, gameforge.new_quest_lv75._140_5_select, gameforge.new_quest_lv75._140_6_select)
+			local choosestory = select("[LC;6166]", "[LC;6167]", "[LC;6168]", "[LC;6169]", "[LC;6170]")
 			if choosestory == 1 then
-				say (gameforge.new_quest_lv75._160_1_say)
+				say ("[LC;6173]")
 			elseif choosestory == 2 then
-				say (gameforge.new_quest_lv75._160_2_say)
+				say ("[LC;6174]")
 			elseif choosestory == 3 then
-				say (gameforge.new_quest_lv75._160_3_say)
+				say ("[LC;6175]")
 			elseif choosestory == 4 then
-				say (gameforge.new_quest_lv75._160_4_say)
+				say ("[LC;6176]")
 			elseif choosestory == 5 then
-				say (gameforge.new_quest_lv75._160_5_say)
+				say ("[LC;6177]")
 			else
 				--local xdays = 30 -- 60*60*24*2 -- calculate 2 days in seconds
 				--if pc.getqf(timer) + xdays < get_global_time() then -- players have to wait x days befor they get to see another map in the book	
@@ -543,28 +543,28 @@ quest new_quest_lv75 begin
 			end
 		end
 		
-		when 20023.chat.gameforge.new_quest_lv75._020_set_title begin
+		when 20023.chat."[LC;6146]" begin
 			if pc.count_item(30182) < 1 then -- check if the player has a legendary diary in his or her inventory
-				say(gameforge.new_quest_lv75._310_say)
+				say("[LC;6201]")
 			else -- if he or she has then Soon starts talking about the diary
 				-- we calculate the amount of Yang the NPC will offer to the player
-				say_title(gameforge.new_quest_lv75._020_set_title)
-				say(gameforge.new_quest_lv75._320_say)
-				say(gameforge.new_quest_lv75._330_say)
+				say_title("[LC;6146]")
+				say("[LC;6202]")
+				say("[LC;6203]")
 				wait()
-				say(gameforge.new_quest_lv75._340_say)
-				local sell = select(gameforge.new_quest_lv75._350_1_select,  gameforge.new_quest_lv75._350_2_select) -- the player may decide if h want to sell the diary or not.
+				say("[LC;6204]")
+				local sell = select("[LC;6205]",  "[LC;6206]") -- the player may decide if h want to sell the diary or not.
 				if sell == 1 and pc.getqf("bargainsleft") > 0 then 
 					-- when the player is interested to sell the diary and has tried to bargain with the NPC less then 3 times.
 					local letmeout = 0 -- this value must be set to 1 to end conversation
 					repeat
-						say(gameforge.new_quest_lv75._360_say)
+						say("[LC;6207]")
 						local pcgives = tonumber(input())
 						-- player can input the amount of Yang he or she wants to have for the diary
 						if pcgives < 1 or pcgives > 999999999 or pc.getqf("bargainsleft") < 1 then 
 							-- If does not enter a valid value the NPC offers 500k yang.
-							say(gameforge.new_quest_lv75._370_say)
-							local nobargain = select(gameforge.new_quest_lv75._380_1_select, gameforge.new_quest_lv75._380_2_select)
+							say("[LC;6208]")
+							local nobargain = select("[LC;6209]", "[LC;6210]")
 							if nobargain == 1 then -- player takes the offer
 								pc.remove_item(30182, 1) -- removes 1 diary from inventory
 								pc.change_money(500000) -- gives amount of yang
@@ -572,21 +572,21 @@ quest new_quest_lv75 begin
 								letmeout = 1 -- conversation will end
 								set_state(__COMPLETE__)
 							else  -- player does not take the offer
-								say(gameforge.new_quest_lv75._390_say)
+								say("[LC;6211]")
 								letmeout = 1
 							end
 						elseif pcgives >= 1 and pcgives <= 999999999 and pcgives > averagebargain *2 then 
 							-- the value the player entered is valid but it is greater then twice the amount of yang which the npc want to give
-							say(gameforge.new_quest_lv75._400_say)
+							say("[LC;6212]")
 							local npcmaxbargain = averagebargain + math.random(1,5)*100000 
 							-- we calculate the offer which the npc will make. Since the player wanted much more the npc adds between 100,000 and half a million yang to his offer
 							local reducebargains = pc.getqf("bargainsleft") 
 							reducebargains = reducebargains -1
 							pc.setqf("bargainsleft", reducebargains) -- The number of offers the npc will make is reduced by one
-							say(string.format(gameforge.new_quest_lv75._410_say, npcmaxbargain))
-							say(gameforge.new_quest_lv75._420_say)
-							if pc.getqf("bargainsleft") == 0 then say(gameforge.new_quest_lv75._425_say) end -- this will be shown if there will be no more bargaining
-							local makebargain = select(string.format(gameforge.new_quest_lv75._430_1_select, npcmaxbargain), gameforge.new_quest_lv75._430_2_select) 
+							say(string.format("[LC;6213;%s]", npcmaxbargain))
+							say("[LC;6214]")
+							if pc.getqf("bargainsleft") == 0 then say("[LC;6215]") end -- this will be shown if there will be no more bargaining
+							local makebargain = select(string.format("[LC;6216;%s]", npcmaxbargain), "[LC;6217]") 
 							if makebargain == 1 then -- taks the offer of the npc
 								pc.remove_item(30182, 1) -- removes 1 diary from inventory
 								pc.change_money(npcmaxbargain) -- maximum amount of yang varies between 3,900,000 and 2,700,000 yang
@@ -594,11 +594,11 @@ quest new_quest_lv75 begin
 								pc.setqf("bargainsleft", 0)
 								set_state(__COMPLETE__)
 							else -- player does not take the offer of the npc
-								say(gameforge.new_quest_lv75._440_say)
+								say("[LC;6218]")
 								--letmeout = 1 -- conversation will end
 							end
 						else -- npc takes the players offer
-							say(gameforge.new_quest_lv75._450_say) 
+							say("[LC;6219]") 
 							pc.remove_item(30182, 1)
 							pc.change_money(pcgives) -- maximum amount of yang varies between 6,800,000 and 5,200,000 yang
 							pc.setqf("bargainsleft", 0)
@@ -608,18 +608,18 @@ quest new_quest_lv75 begin
 					until letmeout == 1 -- bargaining will end when variable is set to 1
 				elseif sell == 1 and pc.getqf("bargainsleft") == 0 then 
 					-- if the player comes back to to the npc but already tried to bargain with him 3 times he will only get half a million yang for the book
-					say(gameforge.new_quest_lv75._460_say)
-					say(gameforge.new_quest_lv75._470_say)
-					local nobargain = select(gameforge.new_quest_lv75._380_1_select, gameforge.new_quest_lv75._380_2_select)
+					say("[LC;6220]")
+					say("[LC;6221]")
+					local nobargain = select("[LC;6209]", "[LC;6210]")
 					if nobargain == 1 then -- when player sells the book
 						pc.remove_item(30182, 1)
 						pc.change_money(500000)
 						set_state(__COMPLETE__)
 					else -- when player wants to keep the book
-						say(gameforge.new_quest_lv75._480_say)
+						say("[LC;6222]")
 					end
 				else -- when player does not want to bargain
-					say(gameforge.new_quest_lv75._490_say)
+					say("[LC;6223]")
 				end
 			end
 		end

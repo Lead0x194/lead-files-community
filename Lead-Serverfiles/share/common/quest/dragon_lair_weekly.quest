@@ -79,11 +79,11 @@ quest dragon_lair_weekly begin
 		end
 	
 		-- "Give me polymorph items!"
-		when 30122.chat.gameforge.dragon_lair_weekly._010_chat with pc.get_map_index() == 73 begin
+		when 30122.chat."[LC;730]" with pc.get_map_index() == 73 begin
 			local settings = dragon_lair_weekly.set_settings()
 			local time_to_wait = pc.getqf("lasttime") - get_global_time() + settings.cooldown_time
 			-- "Ghost of a warrior: "
-			say_title(gameforge.dragon_lair_weekly._020_sayTitle)
+			say_title("[LC;731]")
 			if time_to_wait < 0 then 
 				-- the player has no cooldown any longer
 				local item_to_hunt = pc.getqf("item_to_hunt")
@@ -97,23 +97,23 @@ quest dragon_lair_weekly begin
 				end
 				
 				-- "You have to collect %s:"
-				say(string.format(gameforge.dragon_lair_weekly._030_say, amount_to_hunt))
+				say(string.format("[LC;732;%s]", amount_to_hunt))
 				say_item_vnum(item_to_hunt)
 				-- "Then I will give you polymorph!"
-				say(gameforge.dragon_lair_weekly._040_say)
+				say("[LC;733]")
 				-- yes / no
-				local accept = select(gameforge.dragon_lair_weekly._050_select, gameforge.dragon_lair_weekly._060_select)
+				local accept = select("[LC;734]", "[LC;735]")
 				if accept == 1 then
 					set_state(hunt_item)
 				else
-					say_title(gameforge.dragon_lair_weekly._020_sayTitle)
+					say_title("[LC;731]")
 					-- "You are mean to me!"
-					say(gameforge.dragon_lair_weekly._070_say)
+					say("[LC;736]")
 				end
 			else
 				-- player still has cooldown
 				-- "You have to wait %s longer!"
-				say(string.format(gameforge.dragon_lair_weekly._080_say, get_time_remaining(time_to_wait)))
+				say(string.format("[LC;737;%s]", get_time_remaining(time_to_wait)))
 			end
 		end
 	end
@@ -134,16 +134,16 @@ quest dragon_lair_weekly begin
 		when login begin
 			-- add a quest icon and timer
 			local time_remaining = dragon_lair_weekly.get_time_remaining()
-			q.set_clock(gameforge.dragon_lair_weekly._090_questRest, time_remaining) -- timer that will be shown to the player
+			q.set_clock("[LC;738]", time_remaining) -- timer that will be shown to the player
 			timer("dragon_lair_weekly_timer", time_remaining) -- timer that will trigger the failing of this quest 
 			if dragon_lair_weekly.get_amount_remaining() > 0 then
 				-- "Collect things!"
-				send_letter(gameforge.dragon_lair_weekly._100_sendLetter)
-				q.set_title(gameforge.dragon_lair_weekly._110_sayTitle)
+				send_letter("[LC;739]")
+				q.set_title("[LC;740]")
 			else
 				-- "Things collected!"
-				send_letter(gameforge.dragon_lair_weekly._120_sendLetter)
-				q.set_title(gameforge.dragon_lair_weekly._130_sayTitle)
+				send_letter("[LC;741]")
+				q.set_title("[LC;742]")
 			end
 			q.start()
 		end
@@ -153,9 +153,9 @@ quest dragon_lair_weekly begin
 			local time_remaining = settings.time_to_hunt
 			pc.setqf("lasttime", get_global_time()) -- reset the cooldown
 			-- "Collect things!"
-			send_letter(gameforge.dragon_lair_weekly._100_sendLetter)
-			q.set_title(gameforge.dragon_lair_weekly._110_sayTitle)
-			q.set_clock(gameforge.dragon_lair_weekly._090_questRest, time_remaining) -- timer that will trigger the failing of this quest 
+			send_letter("[LC;739]")
+			q.set_title("[LC;740]")
+			q.set_clock("[LC;738]", time_remaining) -- timer that will trigger the failing of this quest 
 			timer("dragon_lair_weekly_timer", time_remaining) -- timer that will trigger the failing of this quest 
 			q.start()
 		end
@@ -167,24 +167,24 @@ quest dragon_lair_weekly begin
 				local time_remaining = dragon_lair_weekly.get_time_remaining()
 				if (time_remaining > 0) then
 					-- player still has to collect items
-					say_title(gameforge.dragon_lair_weekly._110_sayTitle) -- quest title
+					say_title("[LC;740]") -- quest title
 					-- "You still have to collect %s:"
-					say(string.format(gameforge.dragon_lair_weekly._140_say, amount_remaining))
+					say(string.format("[LC;743;%s]", amount_remaining))
 					say_item_vnum(pc.getqf("item_to_hunt"))
 					say("")
-					say(gameforge.dragon_lair_weekly._090_questRest .. get_time_remaining(time_remaining))
+					say("[LC;738]" .. get_time_remaining(time_remaining))
 				else
 					-- player did not collect the items in time
 					
 					-- "You failed collecting the items in time!"
-					notice_multiline(gameforge.dragon_lair_weekly._160_notice,notice)
+					notice_multiline("[LC;745]",notice)
 					q.done()
 					set_state(getquest) -- reset the quest, but the cooldown remains
 				end
 			else
-				say_title(gameforge.dragon_lair_weekly._130_sayTitle) -- quest title
+				say_title("[LC;742]") -- quest title
 				-- "You have all needed items. Go back to the warrior Ghost! He is in heavens cave 2"
-				say(gameforge.dragon_lair_weekly._150_say)
+				say("[LC;744]")
 			end
 		end
 		
@@ -192,45 +192,45 @@ quest dragon_lair_weekly begin
 			-- the player did not collect the items in time
 			
 			-- "You failed collecting the items in time!"
-			notice_multiline(gameforge.dragon_lair_weekly._160_notice,notice)
+			notice_multiline("[LC;745]",notice)
 			q.done()
 			set_state(getquest) -- reset the quest, but the cooldown remains
 		end	
 		
 		
-		when 30122.chat.gameforge.dragon_lair_weekly._010_chat with pc.get_map_index() == 73 begin
+		when 30122.chat."[LC;730]" with pc.get_map_index() == 73 begin
 			local settings = dragon_lair_weekly.set_settings()
-			say_title(gameforge.dragon_lair_weekly._020_sayTitle)
+			say_title("[LC;731]")
 
 			local amount_remaining = dragon_lair_weekly.get_amount_remaining()
 			if amount_remaining > 0 then
 				-- the player did not collect enough items
 				-- "You still have to collect %s:"
-				say(string.format(gameforge.dragon_lair_weekly._140_say, amount_remaining))
+				say(string.format("[LC;743;%s]", amount_remaining))
 				say_item_vnum(pc.getqf("item_to_hunt"))
 				
 				-- "Then I will give you polymorph!"
-				say(gameforge.dragon_lair_weekly._040_say)
+				say("[LC;733]")
 			elseif pc.money < settings.amount_to_pay then
 				-- you don't have enough yang to pay
-				say(gameforge.dragon_lair_weekly._175_say)
+				say("[LC;747]")
 			else
 				-- "You want to give me %s ?: "
-				say(string.format(gameforge.dragon_lair_weekly._170_say, pc.getqf("amount_to_hunt")))
+				say(string.format("[LC;746;%s]", pc.getqf("amount_to_hunt")))
 				say_item_vnum(pc.getqf("item_to_hunt"))
 				-- "Yes" / "No"
-				local give_item = select(gameforge.dragon_lair_weekly._180_select, gameforge.dragon_lair_weekly._190_select)
-				say_title(gameforge.dragon_lair_weekly._020_sayTitle)
+				local give_item = select("[LC;748]", "[LC;749]")
+				say_title("[LC;731]")
 				if (give_item == 1) then
 					-- "Thanks, now you get this from me: "
 					-- see if a normal item, or a polymorph item should be given
 					if math.random(100) < settings.normal_items_rate then -- normal item
-						say(gameforge.dragon_lair_weekly._205_sayReward)
+						say("[LC;751]")
 						local award_vnum = get_random_vnum_from_table(settings.normal_items)
 						say_item_vnum(award_vnum)
 						pc.give_item2(award_vnum)
 					else -- polymorph item
-						say(gameforge.dragon_lair_weekly._200_sayReward)
+						say("[LC;750]")
 						local award_vnum = get_random_vnum_from_table(settings.poly_mobs)
 						say_item(item_name(settings.poly_item_vnum), settings.poly_item_vnum, mob_name(award_vnum))
 						pc.give_poly_marble(award_vnum) -- give a poly morph item with this mob vnum in it
@@ -241,7 +241,7 @@ quest dragon_lair_weekly begin
 					q.done()
 					set_state(getquest)
 				else
-					say(gameforge.dragon_lair_weekly._210_say)
+					say("[LC;752]")
 				end
 			end
 		end

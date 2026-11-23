@@ -1,14 +1,14 @@
 quest find_senior_soldier begin
     state start begin
-		when 20300.chat.gameforge.find_senior_soldier._10_npcChat or 20301.chat.gameforge.find_senior_soldier._10_npcChat or 20302.chat.gameforge.find_senior_soldier._10_npcChat or 20303.chat.gameforge.find_senior_soldier._10_npcChat or 20304.chat.gameforge.find_senior_soldier._10_npcChat or 20305.chat.gameforge.find_senior_soldier._10_npcChat or 20306.chat.gameforge.find_senior_soldier._10_npcChat or 20307.chat.gameforge.find_senior_soldier._10_npcChat or 20320.chat.gameforge.find_senior_soldier._10_npcChat or 20321.chat.gameforge.find_senior_soldier._10_npcChat or 20322.chat.gameforge.find_senior_soldier._10_npcChat or 20323.chat.gameforge.find_senior_soldier._10_npcChat or 20324.chat.gameforge.find_senior_soldier._10_npcChat or 20325.chat.gameforge.find_senior_soldier._10_npcChat or 20326.chat.gameforge.find_senior_soldier._10_npcChat or 20327.chat.gameforge.find_senior_soldier._10_npcChat or 20340.chat.gameforge.find_senior_soldier._10_npcChat or 20341.chat.gameforge.find_senior_soldier._10_npcChat or 20342.chat.gameforge.find_senior_soldier._10_npcChat or 20343.chat.gameforge.find_senior_soldier._10_npcChat or 20344.chat.gameforge.find_senior_soldier._10_npcChat or 20345.chat.gameforge.find_senior_soldier._10_npcChat or 20346.chat.gameforge.find_senior_soldier._10_npcChat or 20347.chat.gameforge.find_senior_soldier._10_npcChat with pc_is_novice() and npc_is_same_empire() and npc_is_same_job() and pc.get_level()<=10 begin
+		when 20300.chat."[LC;973]" or 20301.chat."[LC;973]" or 20302.chat."[LC;973]" or 20303.chat."[LC;973]" or 20304.chat."[LC;973]" or 20305.chat."[LC;973]" or 20306.chat."[LC;973]" or 20307.chat."[LC;973]" or 20320.chat."[LC;973]" or 20321.chat."[LC;973]" or 20322.chat."[LC;973]" or 20323.chat."[LC;973]" or 20324.chat."[LC;973]" or 20325.chat."[LC;973]" or 20326.chat."[LC;973]" or 20327.chat."[LC;973]" or 20340.chat."[LC;973]" or 20341.chat."[LC;973]" or 20342.chat."[LC;973]" or 20343.chat."[LC;973]" or 20344.chat."[LC;973]" or 20345.chat."[LC;973]" or 20346.chat."[LC;973]" or 20347.chat."[LC;973]" with pc_is_novice() and npc_is_same_empire() and npc_is_same_job() and pc.get_level()<=10 begin
 			if not next_time_is_now() then
-				say_title(gameforge.find_senior_soldier._20_sayTitle)
-				say(gameforge.find_senior_soldier._30_say)
+				say_title("[LC;991]")
+				say("[LC;993]")
 				else
-				say(gameforge.find_senior_soldier._40_say)
+				say("[LC;994]")
 				wait()
-				say_title(gameforge.find_senior_soldier._20_sayTitle)
-				say(gameforge.find_senior_soldier._50_say)
+				say_title("[LC;991]")
+				say("[LC;995]")
 				find_senior_soldier.save_target_cond()
 				next_time_set(time_hour_to_sec(1), 10)
 				set_state(find)
@@ -17,44 +17,44 @@ quest find_senior_soldier begin
     end
     state failure begin
 		when letter begin
-			send_letter(gameforge.find_senior_soldier._60_sendLetter)
+			send_letter("[LC;996]")
 		end
 		when button or info begin
 			----"12345678901234567890123456789012345678901234567890"|
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-			say(gameforge.find_senior_soldier._70_sayReward)
-			say_reward(gameforge.find_senior_soldier._80_sayReward)
+			say_title("[LC;44]")
+			say("[LC;997]")
+			say_reward("[LC;998]")
 			restart_quest()
 		end
     end
     state find begin
 		when letter begin
 			local v=find_senior_soldier.find_target()
-			test_chat(string.format(gameforge.find_senior_soldier._90_chat, v))
+			test_chat(string.format("[LC;999;%s]", v))
 			if v==0 then 
 			set_state(failure)
 			else
-			target.vid("__TARGET__", v, gameforge.find_senior_soldier._100_targetVid) 
-			send_letter(gameforge.find_senior_soldier._100_targetVid)
+			target.vid("__TARGET__", v, "[LC;972]") 
+			send_letter("[LC;972]")
 			end
 		end
 		when button or info begin
 			-----------"12345678901234567890123456789012345678901234567890"|
-			say_title(gameforge.find_senior_soldier._110_sayTitle)
-					say_reward(gameforge.find_senior_soldier._120_sayReward)
+			say_title("[LC;974]")
+					say_reward("[LC;975]")
 				end
 		when __TARGET__.target.die begin
 			----------"12345678901234567890123456789012345678901234567890"|
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-					say_reward(gameforge.find_senior_soldier._130_sayReward)
-					say_reward(gameforge.find_senior_soldier._80_sayReward)
+			say_title("[LC;44]")
+					say_reward("[LC;976]")
+					say_reward("[LC;998]")
 					restart_quest()
 		end
 		when __TARGET__.target.click begin
 			----------"12345678901234567890123456789012345678901234567890"|
-			say_title(gameforge.find_senior_soldier._140_sayTitle)
-					say_reward(gameforge.find_senior_soldier._150_sayReward)
-			say(gameforge.find_senior_soldier._160_say)
+			say_title("[LC;977]")
+					say_reward("[LC;978]")
+			say("[LC;979]")
 			target.delete("__TARGET__")
 			find_senior_soldier.clear_target_cond()
 			set_state(reward)
@@ -62,21 +62,21 @@ quest find_senior_soldier begin
     end
     state reward begin
 		when letter begin
-			send_letter(gameforge.find_senior_soldier._170_sendLetter)
+			send_letter("[LC;980]")
 		end
 		when button begin
 			----------"12345678901234567890123456789012345678901234567890"|
-			say_title(gameforge.find_senior_soldier._180_sayTitle)
-			say(gameforge.find_senior_soldier._190_say)
+			say_title("[LC;981]")
+			say("[LC;982]")
 
 			local funcList={
-			function() find_senior_soldier.apply_affect(gameforge.find_senior_soldier._191_say, apply.MAX_HP, 100) end,
-			function() find_senior_soldier.apply_affect(gameforge.find_senior_soldier._192_say, apply.HP_REGEN, 50) end,
-			function() find_senior_soldier.apply_affect(gameforge.find_senior_soldier._193_say, apply.STR, 5) end,
-			function() find_senior_soldier.apply_affect(gameforge.find_senior_soldier._194_say, apply.CON, 5) end,
-			function() find_senior_soldier.apply_affect(gameforge.find_senior_soldier._195_say, apply.CRITICAL_PCT, 10) end,
-			function() find_senior_soldier.apply_affect(gameforge.find_senior_soldier._196_say, apply.ATT_SPEED, 10) end,
-			function() find_senior_soldier.apply_affect(gameforge.find_senior_soldier._197_say, apply.ATTBONUS_ANIMAL, 10) end,
+			function() find_senior_soldier.apply_affect("[LC;983]", apply.MAX_HP, 100) end,
+			function() find_senior_soldier.apply_affect("[LC;984]", apply.HP_REGEN, 50) end,
+			function() find_senior_soldier.apply_affect("[LC;985]", apply.STR, 5) end,
+			function() find_senior_soldier.apply_affect("[LC;986]", apply.CON, 5) end,
+			function() find_senior_soldier.apply_affect("[LC;987]", apply.CRITICAL_PCT, 10) end,
+			function() find_senior_soldier.apply_affect("[LC;988]", apply.ATT_SPEED, 10) end,
+			function() find_senior_soldier.apply_affect("[LC;989]", apply.ATTBONUS_ANIMAL, 10) end,
 			}	
 			table_get_random_item(funcList)()
 			restart_quest()
@@ -87,16 +87,16 @@ quest find_senior_soldier begin
 			pc.setqf("Ziel_Beding", 0)
 		end
 		function save_target_cond()
-			test_chat(string.format(gameforge.find_senior_soldier._200_chat, npc_get_job()))
+			test_chat(string.format("[LC;990;%s]", npc_get_job()))
 			pc.setqf("Ziel_Beding", npc_get_job())
 		end
 		function find_target()
 			return find_pc_cond(5, 100, pc.getqf("Ziel_Beding"))
 		end
 		function apply_affect(name, type, value)
-			say_title(gameforge.blacksmith._40_sayTitle)
+			say_title("[LC;29]")
 					say_reward(name)
-			say_reward(gameforge.find_senior_soldier._210_sayReward)
+			say_reward("[LC;992]")
 					affect.add(type, value, 5*60)
 		end
     end

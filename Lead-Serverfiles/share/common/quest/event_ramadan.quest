@@ -91,31 +91,31 @@ quest event_ramadan begin
 		end   --if
 		end --when
 		
-		--gameforge.event_ramadan._010_npcChat	Historiker? 
+		--"[LC;886]"	Historiker? 
 		-- (Referenz 33002 Mob)
-		when 33002.chat.gameforge.event_ramadan._010_npcChat with pc.getf("event_ramadan","first_notice")==0  begin
+		when 33002.chat."[LC;886]" with pc.getf("event_ramadan","first_notice")==0  begin
 			local setting = event_ramadan.setting()
-			--gameforge.event_ramadan._020_sayTitle	Historiker: (referenz auf mob: 33002)
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			-- gameforge.event_ramadan._030_say	review the old and learn the new! why do you find me ?
+			--"[LC;887]"	Historiker: (referenz auf mob: 33002)
+			say_title("[LC;887]")
+			-- "[LC;888]"	review the old and learn the new! why do you find me ?
 			say("")
-			say(gameforge.event_ramadan._030_say)
+			say("[LC;888]")
 			wait()
 
 			say_pc_name()
-			-- gameforge.event_ramadan._040_say	Tut mir leid, kennen wir uns?
-			say(gameforge.event_ramadan._040_say)
+			-- "[LC;889]"	Tut mir leid, kennen wir uns?
+			say("[LC;889]")
 			wait()
 
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			--gameforge.event_ramadan._050_say	Entschuldige, ich vergaß mich vorzustellen. Ich bin der viel gereiste Historiker. 
+			say_title("[LC;887]")
+			--"[LC;890]"	Entschuldige, ich vergaß mich vorzustellen. Ich bin der viel gereiste Historiker. 
 			--									Wenn du Fragen zur Geschichte hast scheue dich nicht mich zu fragen.
-			say(gameforge.event_ramadan._050_say)
+			say("[LC;890]")
 			wait()
 			
 			say_pc_name()
-			-- gameforge.event_ramadan._060_say	Es ehrt mich dich kennen zu lernen. Ich sollte dich öfter aufsuchen
-			say(gameforge.event_ramadan._060_say)
+			-- "[LC;891]"	Es ehrt mich dich kennen zu lernen. Ich sollte dich öfter aufsuchen
+			say("[LC;891]")
 			
 
 			pc.setqf("first_notice",1)
@@ -123,54 +123,54 @@ quest event_ramadan begin
 	
 	-- Brot: Brotkringel
 	-- Süßigkeit: Haloa, baklawa, irgendwas süßes (ihr wisst bescheid)
-	-- gameforge.event_ramadan._070_npcChat	Was Süßes
-	when 33002.chat.gameforge.event_ramadan._070_npcChat with pc.getf("event_ramadan","first_notice")==1 begin
+	-- "[LC;892]"	Was Süßes
+	when 33002.chat."[LC;892]" with pc.getf("event_ramadan","first_notice")==1 begin
 		
 		local setting = event_ramadan.setting()
 		if pc.count_item(setting.bread) == 0  then
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			-- gameforge.event_ramadan._80_say	Kennst du dich mit Süßigkeiten aus? Es wird Baklava (bitte absprechen und referenz auf item: 50183) genannt.
-			say(gameforge.event_ramadan._80_say)
-			-- gameforge.event_ramadan._90_select_1	Ja, das kenne ich
-			-- gameforge.event_ramadan._90_select_2	Nein, tut mir leid
-			local s=select(gameforge.event_ramadan._90_select_1 ,gameforge.event_ramadan._90_select_2)
+			say_title("[LC;887]")
+			-- "[LC;928]"	Kennst du dich mit Süßigkeiten aus? Es wird Baklava (bitte absprechen und referenz auf item: 50183) genannt.
+			say("[LC;928]")
+			-- "[LC;929]"	Ja, das kenne ich
+			-- "[LC;930]"	Nein, tut mir leid
+			local s=select("[LC;929]" ,"[LC;930]")
 			if 2==s then
-				--gameforge.event_ramadan._020_sayTitle	Historiker:
-				say_title(gameforge.event_ramadan._020_sayTitle)
-				--gameforge.event_ramadan._100_say	Schade, bis zum nächsten mal.
-				say(gameforge.event_ramadan._100_say)
+				--"[LC;887]"	Historiker:
+				say_title("[LC;887]")
+				--"[LC;893]"	Schade, bis zum nächsten mal.
+				say("[LC;893]")
 				return
 			end
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			--gameforge.event_ramadan._110_say	Dann weißt du ja was ich meine. Wenn ein solches erhalten willst bringe mir bitte ein Brot (bitte abspreche und referenz auf item: 30315).
-			say(gameforge.event_ramadan._110_say)
+			say_title("[LC;887]")
+			--"[LC;894]"	Dann weißt du ja was ich meine. Wenn ein solches erhalten willst bringe mir bitte ein Brot (bitte abspreche und referenz auf item: 30315).
+			say("[LC;894]")
 			wait()
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			-- gameforge.event_ramadan._120_say	Ich würde dir gerne ein Baklava (item: 50183) für 10 Brote (item: 30315) geben. Bist du damit einverstanden?
-			say(gameforge.event_ramadan._120_say)
-			-- gameforge.event_ramadan._130_select_1	Gerne
-			-- gameforge.event_ramadan._130_select_2	Hab keine Zeit
-			local s=select(gameforge.event_ramadan._130_select_1,gameforge.event_ramadan._130_select_2)
+			say_title("[LC;887]")
+			-- "[LC;895]"	Ich würde dir gerne ein Baklava (item: 50183) für 10 Brote (item: 30315) geben. Bist du damit einverstanden?
+			say("[LC;895]")
+			-- "[LC;896]"	Gerne
+			-- "[LC;897]"	Hab keine Zeit
+			local s=select("[LC;896]","[LC;897]")
 			if 2==s then
-				say_title(gameforge.event_ramadan._020_sayTitle)
-				say(gameforge.event_ramadan._100_say)
+				say_title("[LC;887]")
+				say("[LC;893]")
 			return
 			end
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			-- gameforge.event_ramadan._140_say	Ich würde dir gerne ein Baklava (item: 50183) für 10 Brote (item: 30315) geben. Bist du damit einverstanden?
-			say(gameforge.event_ramadan._140_say)
+			say_title("[LC;887]")
+			-- "[LC;898]"	Ich würde dir gerne ein Baklava (item: 50183) für 10 Brote (item: 30315) geben. Bist du damit einverstanden?
+			say("[LC;898]")
 		elseif	pc.count_item(setting.bread) > 0 and  pc.count_item(setting.bread) < 10  then
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			-- gameforge.event_ramadan._150_say	Das sind zu wenig Brote, ich kann damit nicht viel anfangen.
-			say(gameforge.event_ramadan._150_say)
+			say_title("[LC;887]")
+			-- "[LC;899]"	Das sind zu wenig Brote, ich kann damit nicht viel anfangen.
+			say("[LC;899]")
 		elseif	pc.count_item(setting.bread) >= 10  then
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			-- gameforge.event_ramadan._160_say	Das sind genug Brote, dafür kann ich dir gerne das Baklava geben.
-			say(gameforge.event_ramadan._160_say)
+			say_title("[LC;887]")
+			-- "[LC;900]"	Das sind genug Brote, dafür kann ich dir gerne das Baklava geben.
+			say("[LC;900]")
 			wait()	
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			-- gameforge.event_ramadan._170_say	Sammle mehr und ich kann dir mehr davon bereiten
-			say(gameforge.event_ramadan._170_say)
+			say_title("[LC;887]")
+			-- "[LC;901]"	Sammle mehr und ich kann dir mehr davon bereiten
+			say("[LC;901]")
 			pc.give_item2(setting.candy,1)
 			pc.remove_item(setting.bread,10)
 		end  --if
@@ -178,53 +178,53 @@ quest event_ramadan begin
 			npc.purge()
 		end
 	end	  --when
-		-- gameforge.event_ramadan._180_npcChat	Leckeres Brot (item: 30315)
-		when 33002.chat.gameforge.event_ramadan._180_npcChat with pc.getqf("first_notice")== 1 begin
+		-- "[LC;902]"	Leckeres Brot (item: 30315)
+		when 33002.chat."[LC;902]" with pc.getqf("first_notice")== 1 begin
 			local setting = event_ramadan.setting()
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			-- gameforge.event_ramadan._180_say	Ich bin gesättigt mit dem leckeren Brot das du mir brachtest
-			say(gameforge.event_ramadan._180_say)
-			-- gameforge.event_ramadan._190_say	Hast du gewusst das es viele Bettler gibt die Hunger haben? Es wäre schön wenn du auch mit Ihnen das Fastenbrechen begehen würdest
-			say(gameforge.event_ramadan._190_say)
-			-- gameforge.event_ramadan._200_say	Bringe es Ihnen am besten auf einem Teller (bitte absprechen und refernz auf item:30316)
-			say(gameforge.event_ramadan._200_say)
+			say_title("[LC;887]")
+			-- "[LC;903]"	Ich bin gesättigt mit dem leckeren Brot das du mir brachtest
+			say("[LC;903]")
+			-- "[LC;904]"	Hast du gewusst das es viele Bettler gibt die Hunger haben? Es wäre schön wenn du auch mit Ihnen das Fastenbrechen begehen würdest
+			say("[LC;904]")
+			-- "[LC;905]"	Bringe es Ihnen am besten auf einem Teller (bitte absprechen und refernz auf item:30316)
+			say("[LC;905]")
 			say_item_vnum(setting.plate)
 			wait()
-			say_title(gameforge.event_ramadan._020_sayTitle)
-			-- gameforge.event_ramadan._210_say	Danke für dein Brot es ist gut. So eine weise Person sollte auch Barmherzig sein. Man wird es dir vergelten.
-			say(gameforge.event_ramadan._210_say)
+			say_title("[LC;887]")
+			-- "[LC;906]"	Danke für dein Brot es ist gut. So eine weise Person sollte auch Barmherzig sein. Man wird es dir vergelten.
+			say("[LC;906]")
 		end	
-		-- gameforge.event_ramadan._220_npcChat	Hunger ...
-		when 33003.chat.gameforge.event_ramadan._220_npcChat or 33004.chat.gameforge.event_ramadan._220_npcChat or 33005.chat.gameforge.event_ramadan._220_npcChat or 33006.chat.gameforge.event_ramadan._220_npcChat or 33007.chat.gameforge.event_ramadan._220_npcChat begin
+		-- "[LC;907]"	Hunger ...
+		when 33003.chat."[LC;907]" or 33004.chat."[LC;907]" or 33005.chat."[LC;907]" or 33006.chat."[LC;907]" or 33007.chat."[LC;907]" begin
 			local setting = event_ramadan.setting()
 			if pc.count_item(setting.iftar) == 0  then 
-				-- gameforge.event_ramadan._230_sayTitle	Bettler: (referenz auf Mob: 33003~33007)
-				say_title(gameforge.event_ramadan._230_sayTitle)
+				-- "[LC;908]"	Bettler: (referenz auf Mob: 33003~33007)
+				say_title("[LC;908]")
 				say("")
-				-- gameforge.event_ramadan._240_say	Ich bin wirklich hungrig. Habe erbarmen und bringe mir ein Iftar (bitte mit Abdel absprechen und referenz auf item: 30317). Bitte bringe es mir, damit ich nicht verhungere.
-				say(gameforge.event_ramadan._240_say)
+				-- "[LC;909]"	Ich bin wirklich hungrig. Habe erbarmen und bringe mir ein Iftar (bitte mit Abdel absprechen und referenz auf item: 30317). Bitte bringe es mir, damit ich nicht verhungere.
+				say("[LC;909]")
 
 			elseif pc.count_item(setting.iftar) > 0  then 
 				
-				say_title(gameforge.event_ramadan._230_sayTitle)
+				say_title("[LC;908]")
 				say("")
-				-- gameforge.event_ramadan._250_say	Das ist doch ein Iftar (referenz: 30317)? Ein warmes leckeres Brot (referenz entsprechend). Willst du diese mir geben? Es wäre mir wertvoll!
-				say(gameforge.event_ramadan._250_say)
-				-- gameforge.event_ramadan._260_select_1	Nimm du Hungriger
-				-- gameforge.event_ramadan._260_select_2	Nein, ich behalte es
-				local s = select(gameforge.event_ramadan._260_select_1,gameforge.event_ramadan._260_select_2)
+				-- "[LC;910]"	Das ist doch ein Iftar (referenz: 30317)? Ein warmes leckeres Brot (referenz entsprechend). Willst du diese mir geben? Es wäre mir wertvoll!
+				say("[LC;910]")
+				-- "[LC;911]"	Nimm du Hungriger
+				-- "[LC;912]"	Nein, ich behalte es
+				local s = select("[LC;911]","[LC;912]")
 				if 2==s then
-					say_title(gameforge.event_ramadan._230_sayTitle)
+					say_title("[LC;908]")
 					say("")
-					-- gameforge.event_ramadan._270_say	Du Unbarmherziger sei nicht so geizig mit deinem Essen. Falls du deine Meinung änderst, weißt du wo du mich findest.
-					say(gameforge.event_ramadan._270_say)
+					-- "[LC;913]"	Du Unbarmherziger sei nicht so geizig mit deinem Essen. Falls du deine Meinung änderst, weißt du wo du mich findest.
+					say("[LC;913]")
 					return
 				end
 				-- reward
-				say_title(gameforge.event_ramadan._230_sayTitle)
+				say_title("[LC;908]")
 				say("")
-				-- gameforge.event_ramadan._280_say	Es sei dir gedankt. Du bist wahrlich eine weise Person. Möge deine gute Tat hiermit belohnt sein.
-				say(gameforge.event_ramadan._280_say)
+				-- "[LC;914]"	Es sei dir gedankt. Du bist wahrlich eine weise Person. Möge deine gute Tat hiermit belohnt sein.
+				say("[LC;914]")
 				
 				pc.give_item2(setting.box,1)
 				pc.remove_item(setting.iftar,1)
@@ -235,54 +235,54 @@ quest event_ramadan begin
 				end
 			end	
 		
-		-- gameforge.event_ramadan._290_npcChat	Die Frucht des Segens
-		when 33002.chat.gameforge.event_ramadan._290_npcChat with  pc.getf("event_ramadan","fig_exchange")==0 begin
+		-- "[LC;915]"	Die Frucht des Segens
+		when 33002.chat."[LC;915]" with  pc.getf("event_ramadan","fig_exchange")==0 begin
 			local setting = event_ramadan.setting()
 			if get_time() > pc.getqf("duration") then
-				say_title(gameforge.event_ramadan._020_sayTitle)
+				say_title("[LC;887]")
 				say("")
-				-- gameforge.event_ramadan._300_say	Ich hab auf meinen Reisen die "Frucht des Segens" (bitte Item: 30318 referenzien und ändern) kennen gelernt. Diese Frucht belohnt den Fleißigen der regelmäßig zur selben Stunde wiederkehrt.
-				say(gameforge.event_ramadan._300_say)
+				-- "[LC;916]"	Ich hab auf meinen Reisen die "Frucht des Segens" (bitte Item: 30318 referenzien und ändern) kennen gelernt. Diese Frucht belohnt den Fleißigen der regelmäßig zur selben Stunde wiederkehrt.
+				say("[LC;916]")
 				pc.give_item2(setting.fruit)
 				pc.setqf("duration",get_time()+60*60*24) 			--24h
 			else	
-				say_title(gameforge.event_ramadan._020_sayTitle)
-				-- gameforge.event_ramadan._310_say	Entschuldige, dich hab ich heute gesehen und du wurdest schon belohnt. Denk daran: Nur der wahrlich geduldige erreicht sein Ziel.
-				say(gameforge.event_ramadan._310_say)
+				say_title("[LC;887]")
+				-- "[LC;917]"	Entschuldige, dich hab ich heute gesehen und du wurdest schon belohnt. Denk daran: Nur der wahrlich geduldige erreicht sein Ziel.
+				say("[LC;917]")
 			end
 		end
-		-- gameforge.event_ramadan._320_npcChat	Das Glück des Tüchtigen
-		when 33002.chat.gameforge.event_ramadan._320_npcChat with event_ramadan.reward_period() and  pc.getf("event_ramadan","fig_exchange")==0 begin
+		-- "[LC;918]"	Das Glück des Tüchtigen
+		when 33002.chat."[LC;918]" with event_ramadan.reward_period() and  pc.getf("event_ramadan","fig_exchange")==0 begin
 			local setting = event_ramadan.setting()
-			say_title(gameforge.event_ramadan._020_sayTitle)
+			say_title("[LC;887]")
 			say("")
-			-- gameforge.event_ramadan._330_say	Ich habe dich schon erwartet. Meine Zeit hier geht zu Ende und ich ziehe in die Welt um neue Geschichten zu lernen.
-			say(gameforge.event_ramadan._330_say)
+			-- "[LC;919]"	Ich habe dich schon erwartet. Meine Zeit hier geht zu Ende und ich ziehe in die Welt um neue Geschichten zu lernen.
+			say("[LC;919]")
 			wait()
 			if  pc.count_item(setting.fruit)>= 5 then		--more than 5
-				say_title(gameforge.event_ramadan._020_sayTitle)
+				say_title("[LC;887]")
 				say("")
-				-- gameforge.event_ramadan._340_say	Du hast %d Früchte des Segens (Item: 30318) für mich verwahrt.
-				say(string.format(gameforge.event_ramadan._340_say, pc.count_item(setting.fruit)))
-				-- gameforge.event_ramadan._350_say	Würdest du mir diese geben für meine Reise? Ich will es dir auch entlohnen.
-				say(gameforge.event_ramadan._350_say)
-				-- gameforge.event_ramadan._360_select_1	Hier nimm
-				-- gameforge.event_ramadan._360_select_2	Nein
-				local s=select(gameforge.event_ramadan._360_select_1, gameforge.event_ramadan._360_select_2)
+				-- "[LC;920;%d]"	Du hast %d Früchte des Segens (Item: 30318) für mich verwahrt.
+				say(string.format("[LC;920;%d]", pc.count_item(setting.fruit)))
+				-- "[LC;921]"	Würdest du mir diese geben für meine Reise? Ich will es dir auch entlohnen.
+				say("[LC;921]")
+				-- "[LC;922]"	Hier nimm
+				-- "[LC;923]"	Nein
+				local s=select("[LC;922]", "[LC;923]")
 				if 2==s then 
-					say_title(gameforge.event_ramadan._020_sayTitle)
+					say_title("[LC;887]")
 					say("")
-					-- gameforge.event_ramadan._370_say	Überlege es dir und ich warte auch dich.
-					say(gameforge.event_ramadan._370_say)
+					-- "[LC;924]"	Überlege es dir und ich warte auch dich.
+					say("[LC;924]")
 					return
 				end
-				say_title(gameforge.event_ramadan._020_sayTitle)
+				say_title("[LC;887]")
 				say("")
-				-- gameforge.event_ramadan._380_say	Danke für deine Großzügigkeit und deinen Fleiß. Bitte nehme dieses:
-				say(gameforge.event_ramadan._380_say)
+				-- "[LC;925]"	Danke für deine Großzügigkeit und deinen Fleiß. Bitte nehme dieses:
+				say("[LC;925]")
 				-- Item: Siegel des Rappen
-				-- gameforge.event_ramadan._390_sayReward	Siegel des Rappen (referenz auf items:71131~4)
-				say_reward(gameforge.event_ramadan._390_sayReward)
+				-- "[LC;926]"	Siegel des Rappen (referenz auf items:71131~4)
+				say_reward("[LC;926]")
 				say("")
 				if pc.count_item(setting.fruit)>= 5 and pc.count_item(setting.fruit)<= 10 then
 					pc.give_item2(setting.horse1,1)
@@ -296,10 +296,10 @@ quest event_ramadan begin
 				pc.remove_item(setting.fruit,pc.count_item(setting.fruit))
 				pc.setqf("fig_exchange",1)
 			else										--less  than  5
-				say_title(gameforge.event_ramadan._020_sayTitle)
+				say_title("[LC;887]")
 				say("")
-				-- gameforge.event_ramadan._400_say	Du hast weniger als 5? Schade damit kann ich nicht viel anfangen. Vielleicht beim nächsten mal.
-				say(gameforge.event_ramadan._400_say)
+				-- "[LC;927]"	Du hast weniger als 5? Schade damit kann ich nicht viel anfangen. Vielleicht beim nächsten mal.
+				say("[LC;927]")
 			end
 	end
 	when 30316.use begin

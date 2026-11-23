@@ -22,14 +22,14 @@ quest deviltower_zone begin
         end
     end
         
-    when deviltower_man.chat.gameforge.deviltower_zone._10_npcChat begin
+    when deviltower_man.chat."[LC;678]" begin
         if pc.get_level() < 40 then
-            say_title(gameforge.deviltower_zone._20_sayTitle)
-            say(gameforge.deviltower_zone._30_say)
+            say_title("[LC;688]")
+            say("[LC;698]")
         else
-            say_title(gameforge.deviltower_zone._20_sayTitle)
-            say(gameforge.deviltower_zone._40_say)
-            local s =  select(gameforge.locale.monkey_dungeon.enter, gameforge.locale.monkey_dungeon.no_enter)
+            say_title("[LC;688]")
+            say("[LC;699]")
+            local s =  select("[LC;2132]", "[LC;2136]")
             if s == 1 then
                 pc.warp(216500,727000)
             end
@@ -82,27 +82,27 @@ quest deviltower_zone begin
         server_loop_timer('devil_stone4_update', 10, pc.get_map_index())
         server_timer('devil_stone4_fail1', 5*60, pc.get_map_index())
         
-        notice_multiline(gameforge.deviltower_zone._50_dNotice,d.notice)
+        notice_multiline("[LC;700]",d.notice)
         
     end
 
     when devil_stone4_fail1.server_timer begin
         if d.select(get_server_timer_arg()) then
-            notice_multiline(gameforge.deviltower_zone._60_dNotice,d.notice)
+            notice_multiline("[LC;701]",d.notice)
             server_timer('devil_stone4_fail2', 5*60, get_server_timer_arg())
         end
     end
 
     when devil_stone4_fail2.server_timer begin
         if d.select(get_server_timer_arg()) then
-            notice_multiline(gameforge.deviltower_zone._70_dNotice,d.notice)
+            notice_multiline("[LC;702]",d.notice)
             server_timer('devil_stone4_fail', 5*60, get_server_timer_arg())
         end
     end
 
     when devil_stone4_fail.server_timer begin
         if d.select(get_server_timer_arg()) then
-            notice_multiline(gameforge.deviltower_zone._80_dNotice,d.notice)
+            notice_multiline("[LC;703]",d.notice)
             d.clear_regen()
             d.exit_all()
             clear_server_timer('devil_stone4_update', get_server_timer_arg())
@@ -117,7 +117,7 @@ quest deviltower_zone begin
                         if d.unique_get_hp_perc("fake" .. i) < 50 then
                             d.purge_unique("fake" .. i)
                             d.setf("fakedead" .. i, 1)
-                            notice_multiline(gameforge.deviltower_zone._90_dNotice,d.notice)
+                            notice_multiline("[LC;704]",d.notice)
                         end
                     end
                 end
@@ -125,7 +125,7 @@ quest deviltower_zone begin
                 server_timer("devil_stone4_end", 5, get_server_timer_arg())
                 --d.kill_all()
                 d.purge()
-                notice_multiline(gameforge.deviltower_zone._100_dNotice,d.notice)
+                notice_multiline("[LC;677]",d.notice)
                 clear_server_timer('devil_stone4_fail1', get_server_timer_arg())
                 clear_server_timer('devil_stone4_fail2', get_server_timer_arg())
                 clear_server_timer('devil_stone4_fail', get_server_timer_arg())
@@ -151,7 +151,7 @@ quest deviltower_zone begin
             
             d.setf("level", 5)
             d.setf("stone_count", 5)
-            notice_multiline(gameforge.deviltower_zone._110_dNotice,d.notice)
+            notice_multiline("[LC;679]",d.notice)
             d.jump_all(special.devil_tower[4][1], special.devil_tower[4][2])
             server_timer('devil_stone5_fail1', 5*60, get_server_timer_arg())
             clear_server_timer('devil_stone4_update', get_server_timer_arg())
@@ -167,28 +167,28 @@ quest deviltower_zone begin
     end
     when devil_stone5_fail1.server_timer begin
         if d.select(get_server_timer_arg()) then
-            notice_multiline(gameforge.deviltower_zone._120_dNotice,d.notice)
+            notice_multiline("[LC;680]",d.notice)
             server_timer('devil_stone5_fail2', 5*60, get_server_timer_arg())
         end
     end
 
     when devil_stone5_fail2.server_timer begin
         if d.select(get_server_timer_arg()) then
-            notice_multiline(gameforge.deviltower_zone._60_dNotice,d.notice)
+            notice_multiline("[LC;701]",d.notice)
             server_timer('devil_stone5_fail3', 5*60, get_server_timer_arg())
         end
     end
 
     when devil_stone5_fail3.server_timer begin
         if d.select(get_server_timer_arg()) then
-            notice_multiline(gameforge.deviltower_zone._70_dNotice,d.notice)
+            notice_multiline("[LC;702]",d.notice)
             server_timer('devil_stone5_fail', 5*60, get_server_timer_arg())
         end
     end
 
     when devil_stone5_fail.server_timer begin
         if d.select(get_server_timer_arg()) then
-            notice_multiline(gameforge.deviltower_zone._80_dNotice,d.notice)
+            notice_multiline("[LC;703]",d.notice)
             d.exit_all()
         end
     end
@@ -213,7 +213,7 @@ quest deviltower_zone begin
             d.clear_regen()
             d.regen_file("data/dungeon/deviltower6_regen.txt")
 
-            notice_multiline(gameforge.deviltower_zone._130_dNotice,d.notice)
+            notice_multiline("[LC;681]",d.notice)
             d.jump_all(special.devil_tower[5][1], special.devil_tower[5][2])
             local server_arg = d.get_map_index()
             clear_server_timer('devil_stone5_fail1', server_arg)
@@ -221,30 +221,30 @@ quest deviltower_zone begin
             clear_server_timer('devil_stone5_fail3', server_arg)
             clear_server_timer('devil_stone5_fail', server_arg)
         else
-            d.notice(string.format(gameforge.deviltower_zone._140_dNotice, d.getf("stone_count")))
+            d.notice(string.format("[LC;682;%s]", d.getf("stone_count")))
         end
     end
 
     when devil_stone6.kill with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000 and d.getf("level") == 6 begin
         d.kill_all()
-        notice_multiline(gameforge.deviltower_zone._150_dNotice,d.notice)
+        notice_multiline("[LC;683]",d.notice)
         d.check_eliminated()
-        notice_multiline(gameforge.deviltower_zone._160_dNotice,d.notice)
+        notice_multiline("[LC;684]",d.notice)
         local reward_alchemist = {20074, 20075, 20076}
         d.spawn_mob(reward_alchemist[number(1,3)], 425, 216);
         d.setqf2("deviltower_zone","can_refine", 1)
     end
 
 
-    when 20074.chat.gameforge.deviltower_zone._170_npcChat with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000 and npc.lock() begin
+    when 20074.chat."[LC;685]" with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000 and npc.lock() begin
         say_title(mob_name(20074))
-        say(gameforge.deviltower_zone._190_say)
+        say("[LC;686]")
         wait()
         if pc.level >=75 then
             say_title(mob_name(20074))
 
-            say(gameforge.deviltower_zone._200_say)
-            local s= select(gameforge.deviltower_zone._210_select, gameforge.locale.cancel, gameforge.deviltower_zone._220_select)
+            say("[LC;687]")
+            local s= select("[LC;689]", "[LC;1891]", "[LC;690]")
             if s==3 then
                 pc.warp(590500, 110900)
                 return
@@ -259,21 +259,21 @@ quest deviltower_zone begin
             return
         end
         say_title(mob_name(20074))
-        say(gameforge.deviltower_zone._230_say)
+        say("[LC;691]")
         wait()
         pc.warp(590500, 110500)
         return
     end
 
-    when 20075.chat.gameforge.deviltower_zone._170_npcChat with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000  and npc.lock() begin
+    when 20075.chat."[LC;685]" with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000  and npc.lock() begin
         say_title(mob_name(20075))
-        say(gameforge.deviltower_zone._190_say)
+        say("[LC;686]")
         wait()
         if pc.level >=75 then
             say_title(mob_name(20075))
 
-            say(gameforge.deviltower_zone._200_say)
-            local s= select(gameforge.deviltower_zone._210_select, gameforge.deviltower_zone._220_select)
+            say("[LC;687]")
+            local s= select("[LC;689]", "[LC;690]")
             if s==3 then
                 pc.warp(590500, 110900)
                 return
@@ -288,20 +288,20 @@ quest deviltower_zone begin
             return
         end
         say_title(mob_name(20075))
-        say(gameforge.deviltower_zone._230_say)
+        say("[LC;691]")
         wait()
         pc.warp(590500, 110500)
         return
     end
-    when 20076.chat.gameforge.deviltower_zone._170_npcChat with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000  and npc.lock() begin
+    when 20076.chat."[LC;685]" with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000  and npc.lock() begin
         say_title(mob_name(20076))
-        say(gameforge.deviltower_zone._190_say)
+        say("[LC;686]")
         wait()
         if pc.level >=75 then
             say_title(mob_name(20076))
 
-            say(gameforge.deviltower_zone._200_say)
-            local s= select(gameforge.deviltower_zone._210_select, gameforge.deviltower_zone._220_select)
+            say("[LC;687]")
+            local s= select("[LC;689]", "[LC;690]")
             if s==3 then
                 pc.warp(590500, 110900)
                 return
@@ -316,7 +316,7 @@ quest deviltower_zone begin
             return
         end
         say_title(mob_name(20076))
-        say(gameforge.deviltower_zone._230_say)
+        say("[LC;691]")
         wait()
         pc.warp(590500, 110500)
         return
@@ -332,7 +332,7 @@ quest deviltower_zone begin
         d.setf("level", 7)
 
 
-        notice_multiline(gameforge.deviltower_zone._240_dNotice,d.notice)
+        notice_multiline("[LC;692]",d.notice)
         d.jump_all(2048+590, 6656+638)
     end
 
@@ -370,8 +370,8 @@ quest deviltower_zone begin
             return
         end
             
-        say_title(gameforge.blacksmith._40_sayTitle)
-        say(gameforge.deviltower_zone._250_say)
+        say_title("[LC;29]")
+        say("[LC;693]")
         pc.remove_item("30302", 1)
         timer("devil_jump_8", 6)
         d.clear_regen()
@@ -380,7 +380,7 @@ quest deviltower_zone begin
     when devil_jump_8.timer begin
         d.setf("level", 8)
 
-        notice_multiline(gameforge.deviltower_zone._260_dNotice,d.notice)
+        notice_multiline("[LC;694]",d.notice)
         d.jump_all(2048+590, 6656+403)
         d.set_regen_file("data/dungeon/deviltower8_regen.txt")
         d.spawn_mob(20366, 640, 460)
@@ -413,7 +413,7 @@ quest deviltower_zone begin
         d.setf("level", 9)
 
 
-        notice_multiline(gameforge.deviltower_zone._270_dNotice,d.notice)
+        notice_multiline("[LC;695]",d.notice)
         d.jump_all(2048+590, 6656+155)
         d.regen_file("data/dungeon/deviltower9_regen.txt")
     end
@@ -421,8 +421,8 @@ quest deviltower_zone begin
     when 1093.kill with pc.in_dungeon() and pc.get_map_index() >= 660000 and pc.get_map_index() < 670000 begin
         d.kill_all()
         d.setqf2("deviltower_zone","9_done", 1)
-        notice_multiline(gameforge.deviltower_zone._280_dNotice,d.notice)
-        notice_multiline(gameforge.deviltower_zone._290_dNotice,d.notice)
+        notice_multiline("[LC;696]",d.notice)
+        notice_multiline("[LC;697]",d.notice)
         server_timer("devil_end_jump", 60, d.get_map_index())
     end
 

@@ -1,99 +1,69 @@
--- #################################################################
--- ##                                                             ##
--- ##                        LOCALE.LUA                           ##
--- ##                                                             ##
--- ## Background:                                                 ##
--- ##   This file provides Metin2 with one big array!             ##
--- ##   This array contains some configurations values and a lot  ##
--- ##   of strings to translate. Also every quest-file contains   ##
--- ##   string to translate.                                      ##
--- ##                                                             ##
--- ## Gameforge-Way-To-Do:                                        ##
--- ##   We extract everything we need to translate from this file ##
--- ##   into one big "Key = Value"-file. Simple key-value-files   ##
--- ##   can be managed by our localisation-tool.                  ##
--- ##   Also we extract every string out of every .quest-file and ##
--- ##   generate a lots of new keys. These keys are used in the   ##
--- ##   .quest-files.                                             ##
--- ##                                                             ##
--- ##   !! The key-value-file is called 'translate.lua'           ##
--- ##                                                             ##
--- ## The Advantage:                                              ##
--- ##   1) We can easily translate everything with our tool       ##
--- ##   2) We cant create syntax-errors in this file              ##
--- ##   3) We cant create syntax-errors in the quest-files        ##
--- ##   4) We can compare the quest-files between two languages   ##
--- ##      to find differences if something is broken in only     ##
--- ##      country.                                               ##
--- ##                                                             ##
--- #################################################################
-
 locale = {}
-locale.man_postfix = gameforge.locale.man_postfix
-locale.woman_postfix = gameforge.locale.woman_postfix
-locale.confirm = gameforge.locale.confirm
-locale.reward = gameforge.locale.reward
-locale.exp = gameforge.locale.exp
-locale.count_prefix = gameforge.locale.count_prefix
-locale.count_postfix = gameforge.locale.count_postfix
-locale.level = gameforge.locale.level
-locale.quest_word = gameforge.locale.quest_word
-locale.complete = gameforge.locale.complete
-locale.start = gameforge.locale.start
-locale.chat = gameforge.locale.chat
-locale.eliminate_on_begin = gameforge.locale.eliminate_on_begin
-locale.eliminate_on_end = gameforge.locale.eliminate_on_end
-locale.yes = gameforge.locale.yes
-locale.no = gameforge.locale.no
-locale.cancel = gameforge.locale.cancel
-locale.gold = gameforge.locale.gold
-locale.need_item_prefix = gameforge.locale.need_item_prefix
-locale.need_item_postfix = gameforge.locale.need_item_postfix
+locale.man_postfix = "[LC;2123]"
+locale.woman_postfix = "[LC;3710]"
+locale.confirm = "[LC;1919]"
+locale.reward = "[LC;3558]"
+locale.exp = "[LC;1950]"
+locale.count_prefix = "[LC;1921]"
+locale.count_postfix = "[LC;1920]"
+locale.level = "[LC;2096]"
+locale.quest_word = "[LC;3129]"
+locale.complete = "[LC;1918]"
+locale.start = "[LC;3645]"
+locale.chat = "[LC;1892]"
+locale.eliminate_on_begin = {}
+locale.eliminate_on_end = "[LC;1940]"
+locale.yes = "[LC;3734]"
+locale.no = "[LC;2833]"
+locale.cancel = "[LC;1891]"
+locale.gold = "[LC;2021]"
+locale.need_item_prefix = {}
+locale.need_item_postfix = "[LC;2825]"
 locale.map_name = {
-	[61] = gameforge.locale.map_name_1,
-	[62] = gameforge.locale.map_name_2,
-	[63] = gameforge.locale.map_name_3,
-	[64] = gameforge.locale.map_name_4,
+	[61] = "[LC;2124]",
+	[62] = "[LC;2125]",
+	[63] = "[LC;2126]",
+	[64] = "[LC;2127]",
 }
 locale.empire_names = {
-	[0] = gameforge.locale.empire_names_1,
-	[1] = gameforge.locale.empire_names_2,
-	[2] = gameforge.locale.empire_names_3,
-	[3] = gameforge.locale.empire_names_4,
+	[0] = "[LC;1941]",
+	[1] = "[LC;1942]",
+	[2] = "[LC;1943]",
+	[3] = "[LC;1944]",
 }
-locale.item_drop_pct = gameforge.locale.item_drop_pct
-locale.gold_drop_pct = gameforge.locale.gold_drop_pct
-locale.tengold_drop_pct = gameforge.locale.tengold_drop_pct
-locale.exp_pct = gameforge.locale.exp_pct
-locale.show_guild_ranking_top = gameforge.locale.show_guild_ranking_top
-locale.show_guild_ranking_around = gameforge.locale.show_guild_ranking_around
-locale.show_guild_cur_score = gameforge.locale.show_guild_cur_score
-locale.guild_around_rank_msg = gameforge.locale.guild_around_rank_msg
-locale.guild_top_rank_msg = gameforge.locale.guild_top_rank_msg
-locale.guild_rank_head = gameforge.locale.guild_rank_head
-locale.guild_your_rank1 = gameforge.locale.guild_your_rank1
-locale.guild_your_rank2 = gameforge.locale.guild_your_rank2
-locale.guild_your_rank3 = gameforge.locale.guild_your_rank3
-locale.deviltower_man_chat = gameforge.locale.deviltower_man_chat
-locale.deviltower_man_say = gameforge.locale.deviltower_man_say
-locale.deviltower_man_say_you_cant = gameforge.locale.deviltower_man_say_you_cant 
-locale.deviltower_enter = gameforge.locale.deviltower_enter
-locale.deviltower_no_enter = gameforge.locale.deviltower_no_enter
-locale.forked_man_chat = gameforge.locale.forked_man_chat
-locale.forked_man_say = gameforge.locale.forked_man_say
-locale.forked_man_say_cant = gameforge.locale.forked_man_say_cant
-locale.forked_enter = gameforge.locale.forked_enter
-locale.forked_no_enter = gameforge.locale.forked_no_enter
-locale.forked_open_gate = gameforge.locale.forked_open_gate
-locale.forked_kill_boss = gameforge.locale.forked_kill_boss
-locale.forked_condition = gameforge.locale.forked_condition
-locale.forked_condition2 = gameforge.locale.forked_condition2
-locale.forked_rule = gameforge.locale.forked_rule
-locale.forked_rule_sungzi = gameforge.locale.forked_rule_sungzi
-locale.login_notice = gameforge.locale.login_notice
+locale.item_drop_pct = "[LC;2095]"
+locale.gold_drop_pct = "[LC;2022]"
+locale.tengold_drop_pct = "[LC;3705]"
+locale.exp_pct = "[LC;1951]"
+locale.show_guild_ranking_top = "[LC;3561]"
+locale.show_guild_ranking_around = "[LC;3560]"
+locale.show_guild_cur_score = "[LC;3559]"
+locale.guild_around_rank_msg = "[LC;2060]"
+locale.guild_top_rank_msg = "[LC;2062]"
+locale.guild_rank_head = "[LC;2061]"
+locale.guild_your_rank1 = "[LC;2063]"
+locale.guild_your_rank2 = "[LC;2064]"
+locale.guild_your_rank3 = "[LC;2065]"
+locale.deviltower_man_chat = "[LC;1936]"
+locale.deviltower_man_say = "[LC;1937]"
+locale.deviltower_man_say_you_cant = "[LC;1938]" 
+locale.deviltower_enter = "[LC;1935]"
+locale.deviltower_no_enter = "[LC;1939]"
+locale.forked_man_chat = "[LC;1956]"
+locale.forked_man_say = "[LC;1957]"
+locale.forked_man_say_cant = "[LC;1958]"
+locale.forked_enter = "[LC;1954]"
+locale.forked_no_enter = "[LC;1959]"
+locale.forked_open_gate = "[LC;1960]"
+locale.forked_kill_boss = "[LC;1955]"
+locale.forked_condition = "[LC;1952]"
+locale.forked_condition2 = "[LC;1953]"
+locale.forked_rule = "[LC;1961]"
+locale.forked_rule_sungzi = "[LC;1962]"
+locale.login_notice = {}
 locale.NOTICE_COLOR = color256(255, 230, 186)
 locale.NORMAL_COLOR = color256(196, 196, 196)
-locale.QUEST_TEMP_REWARD = locale.NOTICE_COLOR .. gameforge.locale.quest_temp_reward_1 .. locale.NORMAL_COLOR .. gameforge.locale.quest_temp_reward_2 
+locale.QUEST_TEMP_REWARD = locale.NOTICE_COLOR .. "[LC;3127]" .. locale.NORMAL_COLOR .. "[LC;3128]" 
 
 locale.yeonnahwan = {}
 locale.yeonnahwan.start_level_begin = 99
@@ -101,15 +71,15 @@ locale.yeonnahwan.start_level_end = 99
 locale.yeonnahwan.start_probability = 1
 locale.yeonnahwan.end_level = 99
 locale.yeonnahwan.kill_count = 1
-locale.yeonnahwan.event_item = gameforge.locale.yeonnahwan.event_item
-locale.yeonnahwan.find_yeonnahwan_label = gameforge.locale.yeonnahwan.find_yeonnahwan_label
-locale.yeonnahwan.find_yeonnahwan_text = locale.NOTICE_COLOR .. gameforge.locale.yeonnahwan.find_yeonnahwan_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.yeonnahwan.find_yeonnahwan_text_2
-locale.yeonnahwan.find_eulduji_label = gameforge.locale.yeonnahwan.find_eulduji_label
-locale.yeonnahwan.find_eulduji_text = locale.NOTICE_COLOR .. gameforge.locale.yeonnahwan.find_eulduji_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.yeonnahwan.find_eulduji_text_2
-locale.yeonnahwan.report_label = gameforge.locale.yeonnahwan.report_label
-locale.yeonnahwan.report_text = gameforge.locale.yeonnahwan.report_text
-locale.yeonnahwan.kill_unggwi_label = gameforge.locale.yeonnahwan.kill_unggwi_label
-locale.yeonnahwan.kill_unggwi_text = locale.NOTICE_COLOR .. gameforge.locale.yeonnahwan.kill_unggwi_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.yeonnahwan.kill_unggwi_text_2
+locale.yeonnahwan.event_item = "[LC;3722]"
+locale.yeonnahwan.find_yeonnahwan_label = "[LC;3726]"
+locale.yeonnahwan.find_yeonnahwan_text = locale.NOTICE_COLOR .. "[LC;3727]" .. locale.NORMAL_COLOR .. "[LC;3728]"
+locale.yeonnahwan.find_eulduji_label = "[LC;3723]"
+locale.yeonnahwan.find_eulduji_text = locale.NOTICE_COLOR .. "[LC;3724]" .. locale.NORMAL_COLOR .. "[LC;3725]"
+locale.yeonnahwan.report_label = "[LC;3732]"
+locale.yeonnahwan.report_text = "[LC;3733]"
+locale.yeonnahwan.kill_unggwi_label = "[LC;3729]"
+locale.yeonnahwan.kill_unggwi_text = locale.NOTICE_COLOR .. "[LC;3730]" .. locale.NORMAL_COLOR .. "[LC;3731]"
 
 locale.huanso = {}
 locale.huanso.start_level_begin = 32
@@ -118,21 +88,21 @@ locale.huanso.start_probability = 3
 locale.huanso.end_level = 38
 locale.huanso.kill_count = 3
 locale.huanso.event_item = 30102
-locale.huanso.order_label = gameforge.locale.huanso.order_label
-locale.huanso.order_text = locale.NOTICE_COLOR .. gameforge.locale.huanso.order_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.huanso.order_text_2
-locale.huanso.too_late = gameforge.locale.huanso.too_late
-locale.huanso.find_label = gameforge.locale.huanso.find_label
-locale.huanso.find_text = locale.NOTICE_COLOR .. gameforge.locale.huanso.find_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.huanso.find_text_2
-locale.huanso.kill_label = gameforge.locale.huanso.kill_label
-locale.huanso.kill_text = locale.NOTICE_COLOR .. gameforge.locale.huanso.kill_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.huanso.kill_text_2
-locale.huanso.make_label = gameforge.locale.huanso.make_label
-locale.huanso.make_text = locale.NOTICE_COLOR .. gameforge.locale.huanso.make_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.huanso.make_text_2
-locale.huanso.deliver_label = gameforge.locale.huanso.deliver_label
-locale.huanso.deliver_text = locale.NOTICE_COLOR .. gameforge.locale.huanso.deliver_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.huanso.deliver_text_2
-locale.huanso.success_label = gameforge.locale.huanso.success_label
-locale.huanso.success_text = locale.NOTICE_COLOR .. gameforge.locale.huanso.success_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.huanso.success_text_2
-locale.huanso.failure_label = gameforge.locale.huanso.failure_label
-locale.huanso.failure_text = locale.NOTICE_COLOR .. gameforge.locale.huanso.failure_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.huanso.failure_text_2
+locale.huanso.order_label = "[LC;2088]"
+locale.huanso.order_text = locale.NOTICE_COLOR .. "[LC;2089]" .. locale.NORMAL_COLOR .. "[LC;2090]"
+locale.huanso.too_late = "[LC;2094]"
+locale.huanso.find_label = "[LC;2079]"
+locale.huanso.find_text = locale.NOTICE_COLOR .. "[LC;2080]" .. locale.NORMAL_COLOR .. "[LC;2081]"
+locale.huanso.kill_label = "[LC;2082]"
+locale.huanso.kill_text = locale.NOTICE_COLOR .. "[LC;2083]" .. locale.NORMAL_COLOR .. "[LC;2084]"
+locale.huanso.make_label = "[LC;2085]"
+locale.huanso.make_text = locale.NOTICE_COLOR .. "[LC;2086]" .. locale.NORMAL_COLOR .. "[LC;2087]"
+locale.huanso.deliver_label = "[LC;2073]"
+locale.huanso.deliver_text = locale.NOTICE_COLOR .. "[LC;2074]" .. locale.NORMAL_COLOR .. "[LC;2075]"
+locale.huanso.success_label = "[LC;2091]"
+locale.huanso.success_text = locale.NOTICE_COLOR .. "[LC;2092]" .. locale.NORMAL_COLOR .. "[LC;2093]"
+locale.huanso.failure_label = "[LC;2076]"
+locale.huanso.failure_text = locale.NOTICE_COLOR .. "[LC;2077]" .. locale.NORMAL_COLOR .. "[LC;2078]"
 
 locale.yuhwan = {}
 locale.yuhwan.start_level_begin = 40
@@ -141,15 +111,15 @@ locale.yuhwan.start_probability = 3
 locale.yuhwan.end_level = 45
 locale.yuhwan.kill_count = 3
 locale.yuhwan.event_item = 30102
-locale.yuhwan.find_label = gameforge.locale.yuhwan.find_label
-locale.yuhwan.find_text = locale.NOTICE_COLOR .. gameforge.locale.yuhwan.find_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.yuhwan.find_text_2
-locale.yuhwan.too_late = gameforge.locale.yuhwan.too_late
-locale.yuhwan.kill_label = gameforge.locale.yuhwan.kill_label
-locale.yuhwan.kill_text = locale.NOTICE_COLOR .. gameforge.locale.yuhwan.kill_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.yuhwan.kill_text_2
-locale.yuhwan.success_info_label = gameforge.locale.yuhwan.success_info_label
-locale.yuhwan.success_info_text = locale.NOTICE_COLOR .. gameforge.locale.yuhwan.success_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.yuhwan.success_info_text_2
-locale.yuhwan.failure_info_label = gameforge.locale.yuhwan.failure_info_label
-locale.yuhwan.failure_info_text = locale.NOTICE_COLOR .. gameforge.locale.yuhwan.failure_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.yuhwan.failure_info_text_2
+locale.yuhwan.find_label = "[LC;3738]"
+locale.yuhwan.find_text = locale.NOTICE_COLOR .. "[LC;3739]" .. locale.NORMAL_COLOR .. "[LC;3740]"
+locale.yuhwan.too_late = "[LC;3747]"
+locale.yuhwan.kill_label = "[LC;3741]"
+locale.yuhwan.kill_text = locale.NOTICE_COLOR .. "[LC;3742]" .. locale.NORMAL_COLOR .. "[LC;3743]"
+locale.yuhwan.success_info_label = "[LC;3744]"
+locale.yuhwan.success_info_text = locale.NOTICE_COLOR .. "[LC;3745]" .. locale.NORMAL_COLOR .. "[LC;3746]"
+locale.yuhwan.failure_info_label = "[LC;3735]"
+locale.yuhwan.failure_info_text = locale.NOTICE_COLOR .. "[LC;3736]" .. locale.NORMAL_COLOR .. "[LC;3737]"
 
 locale.deokbae = {}
 locale.deokbae.start_level_begin = 80
@@ -158,15 +128,15 @@ locale.deokbae.start_probability = 3
 locale.deokbae.end_level = 40
 locale.deokbae.kill_count = 3
 locale.deokbae.event_item = 30102
-locale.deokbae.find_deokbae_label = gameforge.locale.deokbae.find_deokbae_label
-locale.deokbae.find_deokbae_text = locale.NOTICE_COLOR .. gameforge.locale.deokbae.find_deokbae_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.deokbae.find_deokbae_text_2
-locale.deokbae.too_late = gameforge.locale.deokbae.too_late
-locale.deokbae.kill_label = gameforge.locale.deokbae.kill_label
-locale.deokbae.kill_text = locale.NOTICE_COLOR .. gameforge.locale.deokbae.kill_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.deokbae.kill_text_2
-locale.deokbae.success_info_label = gameforge.locale.deokbae.success_info_label
-locale.deokbae.success_info_text = locale.NOTICE_COLOR .. gameforge.locale.deokbae.success_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.deokbae.success_info_text_2
-locale.deokbae.failure_info_label = gameforge.locale.deokbae.failure_info_label
-locale.deokbae.failure_info_text = locale.NOTICE_COLOR .. gameforge.locale.deokbae.failure_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.deokbae.failure_info_text_2
+locale.deokbae.find_deokbae_label = "[LC;1925]"
+locale.deokbae.find_deokbae_text = locale.NOTICE_COLOR .. "[LC;1926]" .. locale.NORMAL_COLOR .. "[LC;1927]"
+locale.deokbae.too_late = "[LC;1934]"
+locale.deokbae.kill_label = "[LC;1928]"
+locale.deokbae.kill_text = locale.NOTICE_COLOR .. "[LC;1929]" .. locale.NORMAL_COLOR .. "[LC;1930]"
+locale.deokbae.success_info_label = "[LC;1931]"
+locale.deokbae.success_info_text = locale.NOTICE_COLOR .. "[LC;1932]" .. locale.NORMAL_COLOR .. "[LC;1933]"
+locale.deokbae.failure_info_label = "[LC;1922]"
+locale.deokbae.failure_info_text = locale.NOTICE_COLOR .. "[LC;1923]" .. locale.NORMAL_COLOR .. "[LC;1924]"
 
 locale.bookworm = {}
 locale.bookworm.start_level_begin = 28
@@ -174,40 +144,40 @@ locale.bookworm.start_level_end = 31
 locale.bookworm.start_probability = 3
 locale.bookworm.end_level = 34
 locale.bookworm.kill_count = 3
-locale.bookworm.talk = gameforge.locale.bookworm.talk
-locale.bookworm.aranyeo_talk = gameforge.locale.bookworm.aranyeo_talk
-locale.bookworm.etc_shop_talk_about_bookworm = gameforge.locale.bookworm.etc_shop_talk_about_bookworm
-locale.bookworm.talk_about_milgyo_book = gameforge.locale.bookworm.talk_about_milgyo_book
-locale.bookworm.do_you_find_the_book = gameforge.locale.bookworm.do_you_find_the_book
-locale.bookworm.do_you_mean_this_book = gameforge.locale.bookworm.do_you_mean_this_book
-locale.bookworm.START_say = gameforge.locale.bookworm.start_say
-locale.bookworm.START_say2 = gameforge.locale.bookworm.start_say2
-locale.bookworm.aranyeo_START_say = gameforge.locale.bookworm.aranyeo_start_say
-locale.bookworm.aranyeo_START_say2 = gameforge.locale.bookworm.aranyeo_start_say2
-locale.bookworm.etc_shop_START_say = gameforge.locale.bookworm.etc_shop_start_say
-locale.bookworm.etc_shop_START_say2 = gameforge.locale.bookworm.etc_shop_start_say2
-locale.bookworm.START_find_bookworm_label = gameforge.locale.bookworm.start_find_bookworm_label
-locale.bookworm.START_find_bookworm_text = locale.NOTICE_COLOR .. gameforge.locale.bookworm.start_find_bookworm_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.bookworm.start_find_bookworm_text_2
-locale.bookworm.ORDER_say1 = gameforge.locale.bookworm.order_say1
-locale.bookworm.ORDER_say2 = gameforge.locale.bookworm.order_say2
-locale.bookworm.ORDER_accept = gameforge.locale.bookworm.order_accept
-locale.bookworm.ORDER_refuse = gameforge.locale.bookworm.order_refuse
-locale.bookworm.ORDER_accept_answer = gameforge.locale.bookworm.order_accept_answer
-locale.bookworm.ORDER_refuse_answer = gameforge.locale.bookworm.order_refuse_answer
-locale.bookworm.ORDER_find_book_label = gameforge.locale.bookworm.order_find_book_label
-locale.bookworm.ORDER_find_book_text = locale.NOTICE_COLOR .. gameforge.locale.bookworm.order_find_book_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.bookworm.order_find_book_text_2
-locale.bookworm.ORDER_too_late = gameforge.locale.bookworm.order_too_late
-locale.bookworm.ACCEPT_success_say = locale.NOTICE_COLOR .. gameforge.locale.bookworm.accept_success_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.bookworm.accept_success_say_2
-locale.bookworm.ACCEPT_failure_say = locale.NOTICE_COLOR .. gameforge.locale.bookworm.accept_failure_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.bookworm.accept_failure_say_2
-locale.bookworm.ACCEPT_ask = gameforge.locale.bookworm.accept_ask
-locale.bookworm.ACCEPT_success_info_label = gameforge.locale.bookworm.accept_success_info_label
-locale.bookworm.ACCEPT_success_info_text = locale.NOTICE_COLOR .. gameforge.locale.bookworm.accept_success_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.bookworm.accept_success_info_text_2
-locale.bookworm.ACCEPT_failure_info_label = gameforge.locale.bookworm.accept_failure_info_label
-locale.bookworm.ACCEPT_failure_info_text = locale.NOTICE_COLOR .. gameforge.locale.bookworm.accept_failure_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.bookworm.accept_failure_info_text_2
-locale.bookworm.SUCCESS_thanks = gameforge.locale.bookworm.success_thanks
-locale.bookworm.COMPLETE_say = gameforge.locale.bookworm.complete_say
-locale.bookworm.aranyeo_COMPLETE_say = gameforge.locale.bookworm.aranyeo_complete_say
-locale.bookworm.aranyeo_COMPLETE_say2 = gameforge.locale.bookworm.aranyeo_complete_say2
+locale.bookworm.talk = "[LC;1889]"
+locale.bookworm.aranyeo_talk = "[LC;1866]"
+locale.bookworm.etc_shop_talk_about_bookworm = "[LC;1872]"
+locale.bookworm.talk_about_milgyo_book = "[LC;1890]"
+locale.bookworm.do_you_find_the_book = "[LC;1868]"
+locale.bookworm.do_you_mean_this_book = "[LC;1869]"
+locale.bookworm.START_say = "[LC;1886]"
+locale.bookworm.START_say2 = "[LC;1887]"
+locale.bookworm.aranyeo_START_say = "[LC;1864]"
+locale.bookworm.aranyeo_START_say2 = "[LC;1865]"
+locale.bookworm.etc_shop_START_say = "[LC;1870]"
+locale.bookworm.etc_shop_START_say2 = "[LC;1871]"
+locale.bookworm.START_find_bookworm_label = "[LC;1883]"
+locale.bookworm.START_find_bookworm_text = locale.NOTICE_COLOR .. "[LC;1884]" .. locale.NORMAL_COLOR .. "[LC;1885]"
+locale.bookworm.ORDER_say1 = "[LC;1880]"
+locale.bookworm.ORDER_say2 = "[LC;1881]"
+locale.bookworm.ORDER_accept = "[LC;1873]"
+locale.bookworm.ORDER_refuse = "[LC;1878]"
+locale.bookworm.ORDER_accept_answer = "[LC;1874]"
+locale.bookworm.ORDER_refuse_answer = "[LC;1879]"
+locale.bookworm.ORDER_find_book_label = "[LC;1875]"
+locale.bookworm.ORDER_find_book_text = locale.NOTICE_COLOR .. "[LC;1876]" .. locale.NORMAL_COLOR .. "[LC;1877]"
+locale.bookworm.ORDER_too_late = "[LC;1882]"
+locale.bookworm.ACCEPT_success_say = locale.NOTICE_COLOR .. "[LC;1860]" .. locale.NORMAL_COLOR .. "[LC;1861]"
+locale.bookworm.ACCEPT_failure_say = locale.NOTICE_COLOR .. "[LC;1855]" .. locale.NORMAL_COLOR .. "[LC;1856]"
+locale.bookworm.ACCEPT_ask = "[LC;1851]"
+locale.bookworm.ACCEPT_success_info_label = "[LC;1857]"
+locale.bookworm.ACCEPT_success_info_text = locale.NOTICE_COLOR .. "[LC;1858]" .. locale.NORMAL_COLOR .. "[LC;1859]"
+locale.bookworm.ACCEPT_failure_info_label = "[LC;1852]"
+locale.bookworm.ACCEPT_failure_info_text = locale.NOTICE_COLOR .. "[LC;1853]" .. locale.NORMAL_COLOR .. "[LC;1854]"
+locale.bookworm.SUCCESS_thanks = "[LC;1888]"
+locale.bookworm.COMPLETE_say = "[LC;1867]"
+locale.bookworm.aranyeo_COMPLETE_say = "[LC;1862]"
+locale.bookworm.aranyeo_COMPLETE_say2 = "[LC;1863]"
 
 locale.old_pirate = {}
 locale.old_pirate.start_level_begin = 48
@@ -215,52 +185,52 @@ locale.old_pirate.start_level_end = 51
 locale.old_pirate.start_probability = 3
 locale.old_pirate.end_level = 54
 locale.old_pirate.kill_count = 3
-locale.old_pirate.talk = gameforge.locale.old_pirate.talk
-locale.old_pirate.baekgo_talk = gameforge.locale.old_pirate.baekgo_talk
-locale.old_pirate.etc_shop_talk_about_old_pirate = gameforge.locale.old_pirate.etc_shop_talk_about_old_pirate
-locale.old_pirate.talk_about_medicine = gameforge.locale.old_pirate.talk_about_medicine
-locale.old_pirate.do_you_get_the_medicine = gameforge.locale.old_pirate.do_you_get_the_medicine
-locale.old_pirate.do_you_mean_this_medicine = gameforge.locale.old_pirate.do_you_mean_this_medicine
-locale.old_pirate.baekgo_talk_about_old_pirate = gameforge.locale.old_pirate.baekgo_talk_about_old_pirate
-locale.old_pirate.baekgo_do_you_get_the_virus = gameforge.locale.old_pirate.baekgo_do_you_get_the_virus
-locale.old_pirate.baekgo_iv_got_the_virus = gameforge.locale.old_pirate.baekgo_iv_got_the_virus
-locale.old_pirate.START_say = gameforge.locale.old_pirate.start_say
-locale.old_pirate.etc_shop_START_say = gameforge.locale.old_pirate.etc_shop_start_say
-locale.old_pirate.etc_shop_START_say2 = gameforge.locale.old_pirate.etc_shop_start_say2
-locale.old_pirate.START_find_old_pirate_label = gameforge.locale.old_pirate.start_find_old_pirate_label
-locale.old_pirate.START_find_old_pirate_text = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.start_find_old_pirate_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.start_find_old_pirate_text_2
-locale.old_pirate.ORDER_say1 = gameforge.locale.old_pirate.order_say1
-locale.old_pirate.ORDER_say2 = gameforge.locale.old_pirate.order_say2
-locale.old_pirate.ORDER_accept = gameforge.locale.old_pirate.order_accept
-locale.old_pirate.ORDER_refuse = gameforge.locale.old_pirate.order_refuse
-locale.old_pirate.ORDER_accept_answer = gameforge.locale.old_pirate.order_accept_answer
-locale.old_pirate.ORDER_refuse_answer = gameforge.locale.old_pirate.order_refuse_answer
-locale.old_pirate.ORDER_find_medicine_label = gameforge.locale.old_pirate.order_find_medicine_label
-locale.old_pirate.ORDER_find_medicine_text = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.order_find_medicine_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.order_find_medicine_text_2
-locale.old_pirate.ORDER_too_late = gameforge.locale.old_pirate.order_too_late
-locale.old_pirate.ACCEPT_success_say = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.accept_success_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.accept_success_say_2
-locale.old_pirate.ACCEPT_failure_say = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.accept_failure_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.accept_failure_say_2
-locale.old_pirate.ACCEPT_ask = gameforge.locale.old_pirate.accept_ask
-locale.old_pirate.ACCEPT_success_info_label = gameforge.locale.old_pirate.accept_success_info_label
-locale.old_pirate.ACCEPT_success_info_text = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.accept_success_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.accept_success_info_text_2
-locale.old_pirate.ACCEPT_failure_info_label = gameforge.locale.old_pirate.accept_failure_info_label
-locale.old_pirate.ACCEPT_failure_info_text = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.accept_failure_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.accept_failure_info_text_2
-locale.old_pirate.BAEKGO_START_say = gameforge.locale.old_pirate.baekgo_start_say
-locale.old_pirate.BAEKGO_START_say2 = gameforge.locale.old_pirate.baekgo_start_say2
-locale.old_pirate.BAEKGO_START_say3 = gameforge.locale.old_pirate.baekgo_start_say3
-locale.old_pirate.BAEKGO_ORDER_find_virus_label = gameforge.locale.old_pirate.baekgo_order_find_virus_label
-locale.old_pirate.BAEKGO_ORDER_find_virus_text = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.baekgo_order_find_virus_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.baekgo_order_find_virus_text_2
-locale.old_pirate.BAEKGO_ORDER_too_late = gameforge.locale.old_pirate.baekgo_order_too_late
-locale.old_pirate.BAEKGO_ACCEPT_success_say = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.baekgo_accept_success_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.baekgo_accept_success_say_2
-locale.old_pirate.BAEKGO_ACCEPT_failure_say = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.baekgo_accept_failure_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.baekgo_accept_failure_say_2
-locale.old_pirate.BAEKGO_ACCEPT_ask = gameforge.locale.old_pirate.baekgo_accept_ask
-locale.old_pirate.BAEKGO_ACCEPT_success_info_label = gameforge.locale.old_pirate.baekgo_accept_success_info_label
-locale.old_pirate.BAEKGO_ACCEPT_success_info_text = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.baekgo_accept_success_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.baekgo_accept_success_info_text_2
-locale.old_pirate.BAEKGO_ACCEPT_failure_info_label = gameforge.locale.old_pirate.baekgo_accept_failure_info_label
-locale.old_pirate.BAEKGO_ACCEPT_failure_info_text = locale.NOTICE_COLOR .. gameforge.locale.old_pirate.baekgo_accept_failure_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.old_pirate.baekgo_accept_failure_info_text_2
-locale.old_pirate.BAEKGO_SUCCESS_say = gameforge.locale.old_pirate.baekgo_success_say
-locale.old_pirate.SUCCESS_thanks = gameforge.locale.old_pirate.success_thanks
-locale.old_pirate.COMPLETE_say = gameforge.locale.old_pirate.complete_say
+locale.old_pirate.talk = "[LC;2895]"
+locale.old_pirate.baekgo_talk = "[LC;2872]"
+locale.old_pirate.etc_shop_talk_about_old_pirate = "[LC;2879]"
+locale.old_pirate.talk_about_medicine = "[LC;2896]"
+locale.old_pirate.do_you_get_the_medicine = "[LC;2875]"
+locale.old_pirate.do_you_mean_this_medicine = "[LC;2876]"
+locale.old_pirate.baekgo_talk_about_old_pirate = "[LC;2873]"
+locale.old_pirate.baekgo_do_you_get_the_virus = "[LC;2862]"
+locale.old_pirate.baekgo_iv_got_the_virus = "[LC;2863]"
+locale.old_pirate.START_say = "[LC;2893]"
+locale.old_pirate.etc_shop_START_say = "[LC;2877]"
+locale.old_pirate.etc_shop_START_say2 = "[LC;2878]"
+locale.old_pirate.START_find_old_pirate_label = "[LC;2890]"
+locale.old_pirate.START_find_old_pirate_text = locale.NOTICE_COLOR .. "[LC;2891]" .. locale.NORMAL_COLOR .. "[LC;2892]"
+locale.old_pirate.ORDER_say1 = "[LC;2887]"
+locale.old_pirate.ORDER_say2 = "[LC;2888]"
+locale.old_pirate.ORDER_accept = "[LC;2880]"
+locale.old_pirate.ORDER_refuse = "[LC;2885]"
+locale.old_pirate.ORDER_accept_answer = "[LC;2881]"
+locale.old_pirate.ORDER_refuse_answer = "[LC;2886]"
+locale.old_pirate.ORDER_find_medicine_label = "[LC;2882]"
+locale.old_pirate.ORDER_find_medicine_text = locale.NOTICE_COLOR .. "[LC;2883]" .. locale.NORMAL_COLOR .. "[LC;2884]"
+locale.old_pirate.ORDER_too_late = "[LC;2889]"
+locale.old_pirate.ACCEPT_success_say = locale.NOTICE_COLOR .. "[LC;2849]" .. locale.NORMAL_COLOR .. "[LC;2850]"
+locale.old_pirate.ACCEPT_failure_say = locale.NOTICE_COLOR .. "[LC;2844]" .. locale.NORMAL_COLOR .. "[LC;2845]"
+locale.old_pirate.ACCEPT_ask = "[LC;2840]"
+locale.old_pirate.ACCEPT_success_info_label = "[LC;2846]"
+locale.old_pirate.ACCEPT_success_info_text = locale.NOTICE_COLOR .. "[LC;2847]" .. locale.NORMAL_COLOR .. "[LC;2848]"
+locale.old_pirate.ACCEPT_failure_info_label = "[LC;2841]"
+locale.old_pirate.ACCEPT_failure_info_text = locale.NOTICE_COLOR .. "[LC;2842]" .. locale.NORMAL_COLOR .. "[LC;2843]"
+locale.old_pirate.BAEKGO_START_say = "[LC;2868]"
+locale.old_pirate.BAEKGO_START_say2 = "[LC;2869]"
+locale.old_pirate.BAEKGO_START_say3 = "[LC;2870]"
+locale.old_pirate.BAEKGO_ORDER_find_virus_label = "[LC;2864]"
+locale.old_pirate.BAEKGO_ORDER_find_virus_text = locale.NOTICE_COLOR .. "[LC;2865]" .. locale.NORMAL_COLOR .. "[LC;2866]"
+locale.old_pirate.BAEKGO_ORDER_too_late = "[LC;2867]"
+locale.old_pirate.BAEKGO_ACCEPT_success_say = locale.NOTICE_COLOR .. "[LC;2860]" .. locale.NORMAL_COLOR .. "[LC;2861]"
+locale.old_pirate.BAEKGO_ACCEPT_failure_say = locale.NOTICE_COLOR .. "[LC;2855]" .. locale.NORMAL_COLOR .. "[LC;2856]"
+locale.old_pirate.BAEKGO_ACCEPT_ask = "[LC;2851]"
+locale.old_pirate.BAEKGO_ACCEPT_success_info_label = "[LC;2857]"
+locale.old_pirate.BAEKGO_ACCEPT_success_info_text = locale.NOTICE_COLOR .. "[LC;2858]" .. locale.NORMAL_COLOR .. "[LC;2859]"
+locale.old_pirate.BAEKGO_ACCEPT_failure_info_label = "[LC;2852]"
+locale.old_pirate.BAEKGO_ACCEPT_failure_info_text = locale.NOTICE_COLOR .. "[LC;2853]" .. locale.NORMAL_COLOR .. "[LC;2854]"
+locale.old_pirate.BAEKGO_SUCCESS_say = "[LC;2871]"
+locale.old_pirate.SUCCESS_thanks = "[LC;2894]"
+locale.old_pirate.COMPLETE_say = "[LC;2874]"
 
 locale.stamina_food = {}
 locale.stamina_food.butcher = {}
@@ -270,31 +240,31 @@ locale.stamina_food.start_level_begin = 90
 locale.stamina_food.start_level_end = 90
 locale.stamina_food.end_level = 59
 locale.stamina_food.kill_count = 3
-locale.stamina_food.butcher.talk = gameforge.locale.stamina_food.butcher.talk
-locale.stamina_food.food_manager.talk = gameforge.locale.stamina_food.food_manager.talk
-locale.stamina_food.food_manager.talk_about_greeenfrog_soup = gameforge.locale.stamina_food.food_manager.talk_about_greeenfrog_soup
-locale.stamina_food.i_dont_have_the_greeenfrog_meat_yet = gameforge.locale.stamina_food.i_dont_have_the_greeenfrog_meat_yet
-locale.stamina_food.i_have_the_greenfrog_meat = gameforge.locale.stamina_food.i_have_the_greenfrog_meat
-locale.stamina_food.butcher.START_say = gameforge.locale.stamina_food.butcher.start_say
-locale.stamina_food.butcher.START_say2 = gameforge.locale.stamina_food.butcher.start_say2
-locale.stamina_food.food_manager.ORDER_say = gameforge.locale.stamina_food.food_manager.order_say
-locale.stamina_food.food_manager.ORDER_say2 = gameforge.locale.stamina_food.food_manager.order_say2
-locale.stamina_food.ORDER_accept = gameforge.locale.stamina_food.order_accept
-locale.stamina_food.ORDER_refuse = gameforge.locale.stamina_food.order_refuse
-locale.stamina_food.ORDER_accept_answer = gameforge.locale.stamina_food.order_accept_answer
-locale.stamina_food.ORDER_refuse_answer = gameforge.locale.stamina_food.order_refuse_answer
-locale.stamina_food.ORDER_get_greenfrog_general_meat_label = gameforge.locale.stamina_food.order_get_greenfrog_general_meat_label
-locale.stamina_food.ORDER_get_greenfrog_general_meat_text = locale.NOTICE_COLOR .. gameforge.locale.stamina_food.order_get_greenfrog_general_meat_text
-locale.stamina_food.ORDER_too_late = gameforge.locale.stamina_food.order_too_late
-locale.stamina_food.ACCEPT_success_say = locale.NOTICE_COLOR .. gameforge.locale.stamina_food.accept_success_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.stamina_food.accept_success_say_2
-locale.stamina_food.ACCEPT_failure_say = locale.NOTICE_COLOR .. gameforge.locale.stamina_food.accept_failure_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.stamina_food.accept_failure_say_2
-locale.stamina_food.ACCEPT_ask = gameforge.locale.stamina_food.accept_ask
-locale.stamina_food.ACCEPT_success_info_label = gameforge.locale.stamina_food.accept_success_info_label
-locale.stamina_food.ACCEPT_success_info_text = locale.NOTICE_COLOR .. gameforge.locale.stamina_food.accept_success_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.stamina_food.accept_success_info_text_2
-locale.stamina_food.BAEKGO_ACCEPT_failure_info_label = gameforge.locale.stamina_food.baekgo_accept_failure_info_label
-locale.stamina_food.BAEKGO_ACCEPT_failure_info_text = locale.NOTICE_COLOR .. gameforge.locale.stamina_food.baekgo_accept_failure_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.stamina_food.baekgo_accept_failure_info_text_2
-locale.stamina_food.SUCCESS_say = gameforge.locale.stamina_food.success_say
-locale.stamina_food.COMPLETE_say = gameforge.locale.stamina_food.complete_say
+locale.stamina_food.butcher.talk = "[LC;3629]"
+locale.stamina_food.food_manager.talk = "[LC;3633]"
+locale.stamina_food.food_manager.talk_about_greeenfrog_soup = "[LC;3634]"
+locale.stamina_food.i_dont_have_the_greeenfrog_meat_yet = "[LC;3635]"
+locale.stamina_food.i_have_the_greenfrog_meat = "[LC;3636]"
+locale.stamina_food.butcher.START_say = "[LC;3627]"
+locale.stamina_food.butcher.START_say2 = "[LC;3628]"
+locale.stamina_food.food_manager.ORDER_say = "[LC;3631]"
+locale.stamina_food.food_manager.ORDER_say2 = "[LC;3632]"
+locale.stamina_food.ORDER_accept = "[LC;3637]"
+locale.stamina_food.ORDER_refuse = "[LC;3641]"
+locale.stamina_food.ORDER_accept_answer = "[LC;3638]"
+locale.stamina_food.ORDER_refuse_answer = "[LC;3642]"
+locale.stamina_food.ORDER_get_greenfrog_general_meat_label = "[LC;3639]"
+locale.stamina_food.ORDER_get_greenfrog_general_meat_text = locale.NOTICE_COLOR .. "[LC;3640]"
+locale.stamina_food.ORDER_too_late = "[LC;3643]"
+locale.stamina_food.ACCEPT_success_say = locale.NOTICE_COLOR .. "[LC;3622]" .. locale.NORMAL_COLOR .. "[LC;3623]"
+locale.stamina_food.ACCEPT_failure_say = locale.NOTICE_COLOR .. "[LC;3617]" .. locale.NORMAL_COLOR .. "[LC;3618]"
+locale.stamina_food.ACCEPT_ask = "[LC;3616]"
+locale.stamina_food.ACCEPT_success_info_label = "[LC;3619]"
+locale.stamina_food.ACCEPT_success_info_text = locale.NOTICE_COLOR .. "[LC;3620]" .. locale.NORMAL_COLOR .. "[LC;3621]"
+locale.stamina_food.BAEKGO_ACCEPT_failure_info_label = "[LC;3624]"
+locale.stamina_food.BAEKGO_ACCEPT_failure_info_text = locale.NOTICE_COLOR .. "[LC;3625]" .. locale.NORMAL_COLOR .. "[LC;3626]"
+locale.stamina_food.SUCCESS_say = "[LC;3644]"
+locale.stamina_food.COMPLETE_say = "[LC;3630]"
 
 locale.skeleton_gem = {}
 locale.skeleton_gem.start_probability = 3
@@ -302,29 +272,29 @@ locale.skeleton_gem.start_level_begin = 55
 locale.skeleton_gem.start_level_end = 57
 locale.skeleton_gem.end_level = 60
 locale.skeleton_gem.kill_count = 3
-locale.skeleton_gem.talk_about_skeleton_gem = gameforge.locale.skeleton_gem.talk_about_skeleton_gem
-locale.skeleton_gem.i_dont_have_the_skeleton_gem_yet = gameforge.locale.skeleton_gem.i_dont_have_the_skeleton_gem_yet
-locale.skeleton_gem.i_have_the_skeleton_gem = gameforge.locale.skeleton_gem.i_have_the_skeleton_gem
-locale.skeleton_gem.START_say = gameforge.locale.skeleton_gem.start_say
-locale.skeleton_gem.START_find_peddler_label = gameforge.locale.skeleton_gem.start_find_peddler_label
-locale.skeleton_gem.START_find_peddler_text = locale.NOTICE_COLOR .. gameforge.locale.skeleton_gem.start_find_peddler_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.skeleton_gem.start_find_peddler_text_2
-locale.skeleton_gem.ORDER_say = gameforge.locale.skeleton_gem.order_say
-locale.skeleton_gem.ORDER_say2 = gameforge.locale.skeleton_gem.order_say2
-locale.skeleton_gem.ORDER_accept = gameforge.locale.skeleton_gem.order_accept
-locale.skeleton_gem.ORDER_refuse = gameforge.locale.skeleton_gem.order_refuse
-locale.skeleton_gem.ORDER_accept_answer = gameforge.locale.skeleton_gem.order_accept_answer
-locale.skeleton_gem.ORDER_refuse_answer = gameforge.locale.skeleton_gem.order_refuse_answer
-locale.skeleton_gem.ORDER_get_skeleton_gem_ = gameforge.locale.skeleton_gem.order_get_skeleton_gem_
-locale.skeleton_gem.ORDER_get_skeleton_gem_text = locale.NOTICE_COLOR .. gameforge.locale.skeleton_gem.order_get_skeleton_gem_text
-locale.skeleton_gem.ORDER_too_late = gameforge.locale.skeleton_gem.order_too_late
-locale.skeleton_gem.ACCEPT_success_say = locale.NOTICE_COLOR .. gameforge.locale.skeleton_gem.accept_success_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.skeleton_gem.accept_success_say_2
-locale.skeleton_gem.ACCEPT_failure_say = locale.NOTICE_COLOR .. gameforge.locale.skeleton_gem.accept_failure_say_1 .. locale.NORMAL_COLOR .. gameforge.locale.skeleton_gem.accept_failure_say_2
-locale.skeleton_gem.ACCEPT_ask = gameforge.locale.skeleton_gem.accept_ask
-locale.skeleton_gem.ACCEPT_success_info_label = gameforge.locale.skeleton_gem.accept_success_info_label
-locale.skeleton_gem.ACCEPT_success_info_text = locale.NOTICE_COLOR .. gameforge.locale.skeleton_gem.accept_success_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.skeleton_gem.accept_success_info_text_2
-locale.skeleton_gem.ACCEPT_failure_info_label = gameforge.locale.skeleton_gem.accept_failure_info_label
-locale.skeleton_gem.ACCEPT_failure_info_text = locale.NOTICE_COLOR .. gameforge.locale.skeleton_gem.accept_failure_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.skeleton_gem.accept_failure_info_text_2
-locale.skeleton_gem.SUCCESS_say = gameforge.locale.skeleton_gem.success_say
+locale.skeleton_gem.talk_about_skeleton_gem = "[LC;3589]"
+locale.skeleton_gem.i_dont_have_the_skeleton_gem_yet = "[LC;3573]"
+locale.skeleton_gem.i_have_the_skeleton_gem = "[LC;3574]"
+locale.skeleton_gem.START_say = "[LC;3587]"
+locale.skeleton_gem.START_find_peddler_label = "[LC;3584]"
+locale.skeleton_gem.START_find_peddler_text = locale.NOTICE_COLOR .. "[LC;3585]" .. locale.NORMAL_COLOR .. "[LC;3586]"
+locale.skeleton_gem.ORDER_say = "[LC;3581]"
+locale.skeleton_gem.ORDER_say2 = "[LC;3582]"
+locale.skeleton_gem.ORDER_accept = "[LC;3575]"
+locale.skeleton_gem.ORDER_refuse = "[LC;3579]"
+locale.skeleton_gem.ORDER_accept_answer = "[LC;3576]"
+locale.skeleton_gem.ORDER_refuse_answer = "[LC;3580]"
+locale.skeleton_gem.ORDER_get_skeleton_gem_ = "[LC;3577]"
+locale.skeleton_gem.ORDER_get_skeleton_gem_text = locale.NOTICE_COLOR .. "[LC;3578]"
+locale.skeleton_gem.ORDER_too_late = "[LC;3583]"
+locale.skeleton_gem.ACCEPT_success_say = locale.NOTICE_COLOR .. "[LC;3571]" .. locale.NORMAL_COLOR .. "[LC;3572]"
+locale.skeleton_gem.ACCEPT_failure_say = locale.NOTICE_COLOR .. "[LC;3566]" .. locale.NORMAL_COLOR .. "[LC;3567]"
+locale.skeleton_gem.ACCEPT_ask = "[LC;3562]"
+locale.skeleton_gem.ACCEPT_success_info_label = "[LC;3568]"
+locale.skeleton_gem.ACCEPT_success_info_text = locale.NOTICE_COLOR .. "[LC;3569]" .. locale.NORMAL_COLOR .. "[LC;3570]"
+locale.skeleton_gem.ACCEPT_failure_info_label = "[LC;3563]"
+locale.skeleton_gem.ACCEPT_failure_info_text = locale.NOTICE_COLOR .. "[LC;3564]" .. locale.NORMAL_COLOR .. "[LC;3565]"
+locale.skeleton_gem.SUCCESS_say = "[LC;3588]"
 
 locale.ariyeong = {}
 locale.ariyeong.start_probability = 3
@@ -333,1449 +303,1449 @@ locale.ariyeong.start_level_end = 27
 locale.ariyeong.end_level = 30
 locale.ariyeong.kill_count = 2
 locale.ariyeong.event_item = 30101
-locale.ariyeong.find_ariyeong_label = gameforge.locale.ariyeong.find_ariyeong_label
-locale.ariyeong.find_ariyeong_text = locale.NOTICE_COLOR .. gameforge.locale.ariyeong.find_ariyeong_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.ariyeong.find_ariyeong_text_2
-locale.ariyeong.kill_label = gameforge.locale.ariyeong.kill_label
-locale.ariyeong.kill_text = locale.NOTICE_COLOR .. gameforge.locale.ariyeong.kill_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.ariyeong.kill_text_2
-locale.ariyeong.too_late = gameforge.locale.ariyeong.too_late
-locale.ariyeong.success_info_label = gameforge.locale.ariyeong.success_info_label
-locale.ariyeong.success_info_text = locale.NOTICE_COLOR .. gameforge.locale.ariyeong.success_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.ariyeong.success_info_text_2
-locale.ariyeong.failure_info_label = gameforge.locale.ariyeong.failure_info_label
-locale.ariyeong.failure_info_text = locale.NOTICE_COLOR .. gameforge.locale.ariyeong.failure_info_text_1 .. locale.NORMAL_COLOR .. gameforge.locale.ariyeong.failure_info_text_2
+locale.ariyeong.find_ariyeong_label = "[LC;1840]"
+locale.ariyeong.find_ariyeong_text = locale.NOTICE_COLOR .. "[LC;1841]" .. locale.NORMAL_COLOR .. "[LC;1842]"
+locale.ariyeong.kill_label = "[LC;1843]"
+locale.ariyeong.kill_text = locale.NOTICE_COLOR .. "[LC;1844]" .. locale.NORMAL_COLOR .. "[LC;1845]"
+locale.ariyeong.too_late = "[LC;1849]"
+locale.ariyeong.success_info_label = "[LC;1846]"
+locale.ariyeong.success_info_text = locale.NOTICE_COLOR .. "[LC;1847]" .. locale.NORMAL_COLOR .. "[LC;1848]"
+locale.ariyeong.failure_info_label = "[LC;1837]"
+locale.ariyeong.failure_info_text = locale.NOTICE_COLOR .. "[LC;1838]" .. locale.NORMAL_COLOR .. "[LC;1839]"
 
 locale.levelup = {}
-locale.levelup.choice1 = gameforge.locale.levelup.choice1
-locale.levelup.choice2 = gameforge.locale.levelup.choice2
-locale.levelup.slay_them1 = gameforge.locale.levelup.slay_them1
-locale.levelup.slay_them2 = gameforge.locale.levelup.slay_them2
-locale.levelup.slay_target_is = gameforge.locale.levelup.slay_target_is 
-locale.levelup.slay_target_count = gameforge.locale.levelup.slay_target_count
-locale.levelup.slayed_them = gameforge.locale.levelup.slayed_them
-locale.levelup.remain_count = gameforge.locale.levelup.remain_count
-locale.levelup.cause_of_levelup = gameforge.locale.levelup.cause_of_levelup
-locale.levelup.receive_direct = gameforge.locale.levelup.receive_direct
-locale.levelup.levelup_quest_fail = gameforge.locale.levelup.levelup_quest_fail
-locale.levelup.lets_go = gameforge.locale.levelup.lets_go
-locale.levelup.kill_count = gameforge.locale.levelup.kill_count
-locale.levelup.prev_quest1 = gameforge.locale.levelup.prev_quest1
-locale.levelup.prev_quest2 = gameforge.locale.levelup.prev_quest2
-locale.levelup.prev_quest_info = gameforge.locale.levelup.prev_quest_info
-locale.levelup.prev_quest_go = gameforge.locale.levelup.prev_quest_go
-locale.levelup.random_item = gameforge.locale.levelup.random_item
+locale.levelup.choice1 = "[LC;2098]"
+locale.levelup.choice2 = "[LC;2099]"
+locale.levelup.slay_them1 = "[LC;2113]"
+locale.levelup.slay_them2 = "[LC;2114]"
+locale.levelup.slay_target_is = "[LC;2112]" 
+locale.levelup.slay_target_count = "[LC;2111]"
+locale.levelup.slayed_them = "[LC;2110]"
+locale.levelup.remain_count = "[LC;2109]"
+locale.levelup.cause_of_levelup = "[LC;2097]"
+locale.levelup.receive_direct = "[LC;2108]"
+locale.levelup.levelup_quest_fail = "[LC;2102]"
+locale.levelup.lets_go = "[LC;2101]"
+locale.levelup.kill_count = "[LC;2100]"
+locale.levelup.prev_quest1 = "[LC;2103]"
+locale.levelup.prev_quest2 = "[LC;2104]"
+locale.levelup.prev_quest_info = "[LC;2106]"
+locale.levelup.prev_quest_go = "[LC;2105]"
+locale.levelup.random_item = "[LC;2107]"
 
 locale.stash = {}
-locale.stash.buy_silver_and_gold_bar = gameforge.locale.stash.buy_silver_and_gold_bar
-locale.stash.gold_bar_beginner_info = gameforge.locale.stash.gold_bar_beginner_info
-locale.stash.enlarge_first1_cannot = gameforge.locale.stash.enlarge_first1_cannot
-locale.stash.greet1 = gameforge.locale.stash.greet1
-locale.stash.not_enough_money = gameforge.locale.stash.not_enough_money
-locale.stash.pay_ok = gameforge.locale.stash.pay_ok
-locale.stash.pay_no = gameforge.locale.stash.pay_no
-locale.stash.first_open = gameforge.locale.stash.first_open
-locale.stash.dont_open = gameforge.locale.stash.dont_open
-locale.stash.greet2 = gameforge.locale.stash.greet2
-locale.stash.beginner_info = gameforge.locale.stash.beginner_info
-locale.stash.enlarge = gameforge.locale.stash.enlarge
-locale.stash.nomatter = gameforge.locale.stash.nomatter
-locale.stash.enlarge_first1 = gameforge.locale.stash.enlarge_first1
+locale.stash.buy_silver_and_gold_bar = "[LC;3647]"
+locale.stash.gold_bar_beginner_info = "[LC;3695]"
+locale.stash.enlarge_first1_cannot = "[LC;3687]"
+locale.stash.greet1 = "[LC;3696]"
+locale.stash.not_enough_money = "[LC;3701]"
+locale.stash.pay_ok = "[LC;3704]"
+locale.stash.pay_no = "[LC;3703]"
+locale.stash.first_open = "[LC;3694]"
+locale.stash.dont_open = "[LC;3648]"
+locale.stash.greet2 = "[LC;3697]"
+locale.stash.beginner_info = "[LC;3646]"
+locale.stash.enlarge = "[LC;3649]"
+locale.stash.nomatter = "[LC;3700]"
+locale.stash.enlarge_first1 = "[LC;3686]"
 locale.stash.enlarge_item1 = 50
 locale.stash.enlarge_item2 = 5030
-locale.stash.enlarge_first2 = gameforge.locale.stash.enlarge_first2
-locale.stash.enlarge_first3 = gameforge.locale.stash.enlarge_first3
-locale.stash.enlarge_try_ok = gameforge.locale.stash.enlarge_try_ok
-locale.stash.enlarge_try_no = gameforge.locale.stash.enlarge_try_no
-locale.stash.enlarge_try_ok_answer = gameforge.locale.stash.enlarge_try_ok_answer
-locale.stash.enlarge_1_title = gameforge.locale.stash.enlarge_1_title
-locale.stash.enlarge_1_counter = gameforge.locale.stash.enlarge_1_counter
-locale.stash.enlarge_1_item = gameforge.locale.stash.enlarge_1_item
-locale.stash.enlarge_1_timer = gameforge.locale.stash.enlarge_1_timer
-locale.stash.enlarge_no_need = gameforge.locale.stash.enlarge_no_need
-locale.stash.greet3 = gameforge.locale.stash.greet3
-locale.stash.enlarge_2_no_mark = gameforge.locale.stash.enlarge_2_no_mark
-locale.stash.enlarge_2_again = gameforge.locale.stash.enlarge_2_again
-locale.stash.enlarge_2_title = gameforge.locale.stash.enlarge_2_title
+locale.stash.enlarge_first2 = "[LC;3688]"
+locale.stash.enlarge_first3 = "[LC;3689]"
+locale.stash.enlarge_try_ok = "[LC;3692]"
+locale.stash.enlarge_try_no = "[LC;3691]"
+locale.stash.enlarge_try_ok_answer = "[LC;3693]"
+locale.stash.enlarge_1_title = "[LC;3662]"
+locale.stash.enlarge_1_counter = "[LC;3651]"
+locale.stash.enlarge_1_item = "[LC;3657]"
+locale.stash.enlarge_1_timer = "[LC;3661]"
+locale.stash.enlarge_no_need = "[LC;3690]"
+locale.stash.greet3 = "[LC;3698]"
+locale.stash.enlarge_2_no_mark = "[LC;3669]"
+locale.stash.enlarge_2_again = "[LC;3663]"
+locale.stash.enlarge_2_title = "[LC;3677]"
 locale.stash.enlarge_2_item = 60002
 locale.stash.enlarge_2_mark_item = 60003
-locale.stash.enlarge_2_have_mark = c_item_name(locale.stash.enlarge_2_mark_item .. gameforge.locale.stash.enlarge_2_have_mark)
-locale.stash.enlarge_2_no_mark2 = gameforge.locale.stash.enlarge_2_no_mark2
-locale.stash.enlarge_2_have_mark2 = gameforge.locale.stash.enlarge_2_have_mark2
-locale.stash.enlarge_2_have_mark3 = gameforge.locale.stash.enlarge_2_have_mark3
-locale.stash.enlarge_2_msg1 = gameforge.locale.stash.enlarge_2_msg1
-locale.stash.enlarge_2_msg2 = gameforge.locale.stash.enlarge_2_msg2
-locale.stash.greet4 = gameforge.locale.stash.greet4
-locale.stash.enlarge_3_msg1 = gameforge.locale.stash.enlarge_3_msg1
-locale.stash.enlarge_3_title = gameforge.locale.stash.enlarge_3_title
-locale.stash.enlarge_3_counter = gameforge.locale.stash.enlarge_3_counter
-locale.stash.enlarge_3_timer = gameforge.locale.stash.enlarge_3_timer
-locale.stash.enlarge_4_msg = gameforge.locale.stash.enlarge_4_msg
-locale.stash.enlarge_2_recommendation = gameforge.locale.stash.enlarge_2_recommendation
-locale.stash.enlarge_2_oldwoman_greet = gameforge.locale.stash.enlarge_2_oldwoman_greet
-locale.stash.enlarge_2_oldwoman_reject = gameforge.locale.stash.enlarge_2_oldwoman_reject
-locale.stash.enlarge_2_oldwoman_title1 = gameforge.locale.stash.enlarge_2_oldwoman_title1
-locale.stash.enlarge_2_oldwoman_title2 = gameforge.locale.stash.enlarge_2_oldwoman_title2
-locale.stash.enlarge_2_oldwoman_accept = gameforge.locale.stash.enlarge_2_oldwoman_accept
-locale.stash.enlarge_1_info1 = gameforge.locale.stash.enlarge_1_info1
-locale.stash.enlarge_1_info2 = gameforge.locale.stash.enlarge_1_info2
-locale.stash.enlarge_1_take_bear = gameforge.locale.stash.enlarge_1_take_bear
-locale.stash.enlarge_1_success = gameforge.locale.stash.enlarge_1_success
-locale.stash.enlarge_1_notyet = gameforge.locale.stash.enlarge_1_notyet
-locale.stash.enlarge_1_getone = gameforge.locale.stash.enlarge_1_getone
-locale.stash.enlarge_1_complete = gameforge.locale.stash.enlarge_1_complete
-locale.stash.enlarge_1_fail_info = gameforge.locale.stash.enlarge_1_fail_info
-locale.stash.enlarge_1_fail_msg = gameforge.locale.stash.enlarge_1_fail_msg
-locale.stash.enlarge_3_complete = gameforge.locale.stash.enlarge_3_complete
-locale.stash.enlarge_3_success = gameforge.locale.stash.enlarge_3_success
-locale.stash.enlarge_3_notyet = gameforge.locale.stash.enlarge_3_notyet
-locale.stash.open_mall = gameforge.locale.stash.open_mall
+locale.stash.enlarge_2_have_mark = c_item_name(locale.stash.enlarge_2_mark_item .. "[LC;3664]")
+locale.stash.enlarge_2_no_mark2 = "[LC;3670]"
+locale.stash.enlarge_2_have_mark2 = "[LC;3665]"
+locale.stash.enlarge_2_have_mark3 = "[LC;3666]"
+locale.stash.enlarge_2_msg1 = "[LC;3667]"
+locale.stash.enlarge_2_msg2 = "[LC;3668]"
+locale.stash.greet4 = "[LC;3699]"
+locale.stash.enlarge_3_msg1 = "[LC;3680]"
+locale.stash.enlarge_3_title = "[LC;3684]"
+locale.stash.enlarge_3_counter = "[LC;3679]"
+locale.stash.enlarge_3_timer = "[LC;3683]"
+locale.stash.enlarge_4_msg = "[LC;3685]"
+locale.stash.enlarge_2_recommendation = "[LC;3676]"
+locale.stash.enlarge_2_oldwoman_greet = "[LC;3672]"
+locale.stash.enlarge_2_oldwoman_reject = "[LC;3673]"
+locale.stash.enlarge_2_oldwoman_title1 = "[LC;3674]"
+locale.stash.enlarge_2_oldwoman_title2 = "[LC;3675]"
+locale.stash.enlarge_2_oldwoman_accept = "[LC;3671]"
+locale.stash.enlarge_1_info1 = "[LC;3655]"
+locale.stash.enlarge_1_info2 = "[LC;3656]"
+locale.stash.enlarge_1_take_bear = "[LC;3660]"
+locale.stash.enlarge_1_success = "[LC;3659]"
+locale.stash.enlarge_1_notyet = "[LC;3658]"
+locale.stash.enlarge_1_getone = "[LC;3654]"
+locale.stash.enlarge_1_complete = "[LC;3650]"
+locale.stash.enlarge_1_fail_info = "[LC;3652]"
+locale.stash.enlarge_1_fail_msg = "[LC;3653]"
+locale.stash.enlarge_3_complete = "[LC;3678]"
+locale.stash.enlarge_3_success = "[LC;3682]"
+locale.stash.enlarge_3_notyet = "[LC;3681]"
+locale.stash.open_mall = "[LC;3702]"
 
 locale.guild = {}
-locale.guild.guild_master_greet = gameforge.locale.guild.guild_master_greet
-locale.guild.disband = gameforge.locale.guild.disband
-locale.guild.cancel = gameforge.locale.guild.cancel
-locale.guild.yes = gameforge.locale.guild.yes
-locale.guild.no = gameforge.locale.guild.no
-locale.guild.disband_confirm = gameforge.locale.guild.disband_confirm
-locale.guild.disband_msg = gameforge.locale.guild.disband_msg
-locale.guild.guild_member_greet = gameforge.locale.guild.guild_member_greet
-locale.guild.withdraw = gameforge.locale.guild.withdraw
-locale.guild.withdraw_confirm = gameforge.locale.guild.withdraw_confirm
-locale.guild.withdraw_msg = gameforge.locale.guild.withdraw_msg
-locale.guild.noguild_greet = gameforge.locale.guild.noguild_greet
-locale.guild.create = gameforge.locale.guild.create
-locale.guild.create_confirm = gameforge.locale.guild.create_confirm
-locale.guild.create_not_enough_money = gameforge.locale.guild.create_not_enough_money
-locale.guild.not_enough_leadership = gameforge.locale.guild.not_enough_leadership
-locale.guild.no_guild_create_item = gameforge.locale.guild.no_guild_create_item
-locale.guild.create_confirm_for_china = gameforge.locale.guild.create_confirm_for_china
-locale.guild.cannot_create_guild_withdraw_delay = gameforge.locale.guild.cannot_create_guild_withdraw_delay
-locale.guild.cannot_create_guild_disband_delay = gameforge.locale.guild.cannot_create_guild_disband_delay
-locale.guild.war_entry_ask_head = gameforge.locale.guild.war_entry_ask_head
-locale.guild.war_entry_ask_tail = gameforge.locale.guild.war_entry_ask_tail
-locale.guild.war_list_button = gameforge.locale.guild.war_list_button
-locale.guild.war_list_none = gameforge.locale.guild.war_list_none
-locale.guild.war_list_choose = gameforge.locale.guild.war_list_choose
-locale.guild.war_join_request = gameforge.locale.guild.war_join_request
-locale.guild.war_over = gameforge.locale.guild.war_over
-locale.guild.war_bet_list_button = gameforge.locale.guild.war_bet_list_button
-locale.guild.war_bet_info = gameforge.locale.guild.war_bet_info
-locale.guild.war_bet_no_money = gameforge.locale.guild.war_bet_no_money
-locale.guild.war_bet_price = gameforge.locale.guild.war_bet_price
-locale.guild.war_bet_done = gameforge.locale.guild.war_bet_done
-locale.guild.war_bet_list_none = gameforge.locale.guild.war_bet_list_none
-locale.guild.war_bet_list_choose = gameforge.locale.guild.war_bet_list_choose
-locale.guild.war_bet_already = gameforge.locale.guild.war_bet_already
-locale.guild.war_bet_assume1 = gameforge.locale.guild.war_bet_assume1
-locale.guild.war_bet_assume2 = gameforge.locale.guild.war_bet_assume2
-locale.guild.war_bet_assume3 = gameforge.locale.guild.war_bet_assume3
+locale.guild.guild_master_greet = "[LC;2033]"
+locale.guild.disband = "[LC;2030]"
+locale.guild.cancel = "[LC;2023]"
+locale.guild.yes = "[LC;2059]"
+locale.guild.no = "[LC;2035]"
+locale.guild.disband_confirm = "[LC;2031]"
+locale.guild.disband_msg = "[LC;2032]"
+locale.guild.guild_member_greet = "[LC;2034]"
+locale.guild.withdraw = "[LC;2056]"
+locale.guild.withdraw_confirm = "[LC;2057]"
+locale.guild.withdraw_msg = "[LC;2058]"
+locale.guild.noguild_greet = "[LC;2036]"
+locale.guild.create = "[LC;2026]"
+locale.guild.create_confirm = "[LC;2027]"
+locale.guild.create_not_enough_money = "[LC;2029]"
+locale.guild.not_enough_leadership = "[LC;2037]"
+locale.guild.no_guild_create_item = "[LC;2038]"
+locale.guild.create_confirm_for_china = "[LC;2028]"
+locale.guild.cannot_create_guild_withdraw_delay = "[LC;2025]"
+locale.guild.cannot_create_guild_disband_delay = "[LC;2024]"
+locale.guild.war_entry_ask_head = {}
+locale.guild.war_entry_ask_tail = "[LC;2050]"
+locale.guild.war_list_button = "[LC;2052]"
+locale.guild.war_list_none = "[LC;2054]"
+locale.guild.war_list_choose = "[LC;2053]"
+locale.guild.war_join_request = "[LC;2051]"
+locale.guild.war_over = "[LC;2055]"
+locale.guild.war_bet_list_button = "[LC;2045]"
+locale.guild.war_bet_info = "[LC;2044]"
+locale.guild.war_bet_no_money = "[LC;2048]"
+locale.guild.war_bet_price = "[LC;2049]"
+locale.guild.war_bet_done = "[LC;2043]"
+locale.guild.war_bet_list_none = "[LC;2047]"
+locale.guild.war_bet_list_choose = "[LC;2046]"
+locale.guild.war_bet_already = "[LC;2039]"
+locale.guild.war_bet_assume1 = "[LC;2040]"
+locale.guild.war_bet_assume2 = "[LC;2041]"
+locale.guild.war_bet_assume3 = "[LC;2042]"
 
 locale.oldwoman = {}
-locale.oldwoman.no_matter = gameforge.locale.oldwoman.no_matter
-locale.oldwoman.skill_reset1 = gameforge.locale.oldwoman.skill_reset1
-locale.oldwoman.skill_reset2 = gameforge.locale.oldwoman.skill_reset2
-locale.oldwoman.skill_reset_ok = gameforge.locale.oldwoman.skill_reset_ok
-locale.oldwoman.skill_reset_no = gameforge.locale.oldwoman.skill_reset_no
-locale.oldwoman.not_enough_money = gameforge.locale.oldwoman.not_enough_money
+locale.oldwoman.no_matter = "[LC;2835]"
+locale.oldwoman.skill_reset1 = "[LC;2836]"
+locale.oldwoman.skill_reset2 = "[LC;2837]"
+locale.oldwoman.skill_reset_ok = "[LC;2839]"
+locale.oldwoman.skill_reset_no = "[LC;2838]"
+locale.oldwoman.not_enough_money = "[LC;2834]"
  
 locale.skill_group = {}
 locale.skill_group.lets_join_skill_group = {
-	gameforge.locale.skill_group.lets_join_skill_group_1,
-	gameforge.locale.skill_group.lets_join_skill_group_2,
-	gameforge.locale.skill_group.lets_join_skill_group_3,
-	gameforge.locale.skill_group.lets_join_skill_group_4
+	"[LC;3612]",
+	"[LC;3613]",
+	"[LC;3614]",
+	"[LC;3615]"
 }
-locale.skill_group.invite = gameforge.locale.skill_group.invite
-locale.skill_group.board = gameforge.locale.skill_group.board
+locale.skill_group.invite = "[LC;3611]"
+locale.skill_group.board = "[LC;3590]"
 locale.skill_group.dialog = {{
 	[WARRIOR] = {
 		{
-			gameforge.locale.skill_group.dialog_warrior_1,
-			gameforge.locale.skill_group.dialog_warrior_2,
+			"[LC;3606]",
+			"[LC;3607]",
 		},
 		{
-			gameforge.locale.skill_group.dialog_warrior_3,
-			gameforge.locale.skill_group.dialog_warrior_4,
+			"[LC;3608]",
+			"[LC;3609]",
 		},
-		gameforge.locale.skill_group.dialog_warrior_5,
+		"[LC;3610]",
 	},
 	[ASSASSIN] = {
 		{
-			gameforge.locale.skill_group.dialog_assassin_1,
-			gameforge.locale.skill_group.dialog_assassin_2,
+			"[LC;3591]",
+			"[LC;3592]",
 		},
 		{
-			gameforge.locale.skill_group.dialog_assassin_3,
-			gameforge.locale.skill_group.dialog_assassin_4,
+			"[LC;3593]",
+			"[LC;3594]",
 		},
-		gameforge.locale.skill_group.dialog_assassin_5,
+		"[LC;3595]",
 	},
 	[SURA] = {
 		{
-			gameforge.locale.skill_group.dialog_sura_1,
-			gameforge.locale.skill_group.dialog_sura_2,
+			"[LC;3601]",
+			"[LC;3602]",
 		},
 		{
-			gameforge.locale.skill_group.dialog_sura_3,
-			gameforge.locale.skill_group.dialog_sura_4,
+			"[LC;3603]",
+			"[LC;3604]",
 		},
-		gameforge.locale.skill_group.dialog_sura_5,
+		"[LC;3605]",
 	},
 	[SHAMAN] = {
 		{
-			gameforge.locale.skill_group.dialog_shaman_1,
-			gameforge.locale.skill_group.dialog_shaman_2,
+			"[LC;3596]",
+			"[LC;3597]",
 		},
 		{
-			gameforge.locale.skill_group.dialog_shaman_3,
-			gameforge.locale.skill_group.dialog_shaman_4,
+			"[LC;3598]",
+			"[LC;3599]",
 		},
-		gameforge.locale.skill_group.dialog_shaman_5,
+		"[LC;3600]",
 	}
 }}
 
 locale.neutral_warp = {}
-locale.neutral_warp.greet = gameforge.locale.neutral_warp.greet 
-locale.neutral_warp.go = gameforge.locale.neutral_warp.go
-locale.neutral_warp.not_go = gameforge.locale.neutral_warp.not_go
-locale.neutral_warp.where_to_go = gameforge.locale.neutral_warp.where_to_go
-locale.neutral_warp.money_need1 = gameforge.locale.neutral_warp.money_need1
-locale.neutral_warp.money_need2 = gameforge.locale.neutral_warp.money_need2
-locale.neutral_warp.cannot_go_yet = gameforge.locale.neutral_warp.cannot_go_yet
+locale.neutral_warp.greet = "[LC;2828]" 
+locale.neutral_warp.go = "[LC;2827]"
+locale.neutral_warp.not_go = "[LC;2831]"
+locale.neutral_warp.where_to_go = "[LC;2832]"
+locale.neutral_warp.money_need1 = "[LC;2829]"
+locale.neutral_warp.money_need2 = "[LC;2830]"
+locale.neutral_warp.cannot_go_yet = "[LC;2826]"
 
 locale.blacksmith = {}
-locale.blacksmith.refine_info = gameforge.locale.blacksmith.refine_info
+locale.blacksmith.refine_info = "[LC;1850]"
 
 locale.monster_chat = { 
 	[301] = {
-		gameforge.locale.monster_chat_301_1,
-		gameforge.locale.monster_chat_301_2,
-		gameforge.locale.monster_chat_301_3,
-		gameforge.locale.monster_chat_301_4,
-		gameforge.locale.monster_chat_301_5
+		"[LC;2543]",
+		"[LC;2544]",
+		"[LC;2545]",
+		"[LC;2546]",
+		"[LC;2547]"
 	},
 	[302] = {
-		gameforge.locale.monster_chat_302_1,
-		gameforge.locale.monster_chat_302_2,
-		gameforge.locale.monster_chat_302_3,
-		gameforge.locale.monster_chat_302_4,
-		gameforge.locale.monster_chat_302_5,
-		gameforge.locale.monster_chat_302_6
+		"[LC;2548]",
+		"[LC;2549]",
+		"[LC;2550]",
+		"[LC;2551]",
+		"[LC;2552]",
+		"[LC;2553]"
 	},
 	[303] = {
-		gameforge.locale.monster_chat_303_1,
-		gameforge.locale.monster_chat_303_2,
-		gameforge.locale.monster_chat_303_3,
-		gameforge.locale.monster_chat_303_4,
-		gameforge.locale.monster_chat_303_5,
-		gameforge.locale.monster_chat_303_6
+		"[LC;2554]",
+		"[LC;2555]",
+		"[LC;2556]",
+		"[LC;2557]",
+		"[LC;2558]",
+		"[LC;2559]"
 	},
 	[304] = {
-		gameforge.locale.monster_chat_304_1,
-		gameforge.locale.monster_chat_304_2,
-		gameforge.locale.monster_chat_304_3,
-		gameforge.locale.monster_chat_304_4,
-		gameforge.locale.monster_chat_304_5,
-		gameforge.locale.monster_chat_304_6
+		"[LC;2560]",
+		"[LC;2561]",
+		"[LC;2562]",
+		"[LC;2563]",
+		"[LC;2564]",
+		"[LC;2565]"
 	},
 	[305] = {
-		gameforge.locale.monster_chat_305_1,
-		gameforge.locale.monster_chat_305_2,
-		gameforge.locale.monster_chat_305_3,
-		gameforge.locale.monster_chat_305_4,
-		gameforge.locale.monster_chat_305_5,
-		gameforge.locale.monster_chat_305_6
+		"[LC;2566]",
+		"[LC;2567]",
+		"[LC;2568]",
+		"[LC;2569]",
+		"[LC;2570]",
+		"[LC;2571]"
 	},
 	[306] = {
-		gameforge.locale.monster_chat_306_1,
-		gameforge.locale.monster_chat_306_2,
-		gameforge.locale.monster_chat_306_3,
-		gameforge.locale.monster_chat_306_4,
-		gameforge.locale.monster_chat_306_5,
-		gameforge.locale.monster_chat_306_6
+		"[LC;2572]",
+		"[LC;2573]",
+		"[LC;2574]",
+		"[LC;2575]",
+		"[LC;2576]",
+		"[LC;2577]"
 	},
 	[307] = {
-		gameforge.locale.monster_chat_307_1,
-		gameforge.locale.monster_chat_307_2,
-		gameforge.locale.monster_chat_307_3,
-		gameforge.locale.monster_chat_307_4,
-		gameforge.locale.monster_chat_307_5,
-		gameforge.locale.monster_chat_307_6
+		"[LC;2578]",
+		"[LC;2579]",
+		"[LC;2580]",
+		"[LC;2581]",
+		"[LC;2582]",
+		"[LC;2583]"
 	},
 	[394] = {
-		gameforge.locale.monster_chat_394_1,
-		gameforge.locale.monster_chat_394_2,
-		gameforge.locale.monster_chat_394_3,
-		gameforge.locale.monster_chat_394_4,
-		gameforge.locale.monster_chat_394_5,
-		gameforge.locale.monster_chat_394_6
+		"[LC;2584]",
+		"[LC;2585]",
+		"[LC;2586]",
+		"[LC;2587]",
+		"[LC;2588]",
+		"[LC;2589]"
 	},
 	[401] = {
-		gameforge.locale.monster_chat_401_1,
-		gameforge.locale.monster_chat_401_2,
-		gameforge.locale.monster_chat_401_3,
-		gameforge.locale.monster_chat_401_4,
-		gameforge.locale.monster_chat_401_5,
-		gameforge.locale.monster_chat_401_6
+		"[LC;2590]",
+		"[LC;2591]",
+		"[LC;2592]",
+		"[LC;2593]",
+		"[LC;2594]",
+		"[LC;2595]"
 	},
 	[402] = {
-		gameforge.locale.monster_chat_402_1,
-		gameforge.locale.monster_chat_402_2,
-		gameforge.locale.monster_chat_402_3,
-		gameforge.locale.monster_chat_402_4,
-		gameforge.locale.monster_chat_402_5,
-		gameforge.locale.monster_chat_402_6
+		"[LC;2596]",
+		"[LC;2597]",
+		"[LC;2598]",
+		"[LC;2599]",
+		"[LC;2600]",
+		"[LC;2601]"
 	},
 	[403] = {
-		gameforge.locale.monster_chat_403_1,
-		gameforge.locale.monster_chat_403_2,
-		gameforge.locale.monster_chat_403_3,
-		gameforge.locale.monster_chat_403_4,
-		gameforge.locale.monster_chat_403_5,
-		gameforge.locale.monster_chat_403_6
+		"[LC;2602]",
+		"[LC;2603]",
+		"[LC;2604]",
+		"[LC;2605]",
+		"[LC;2606]",
+		"[LC;2607]"
 	},
 	[404] = {
-		gameforge.locale.monster_chat_404_1,
-		gameforge.locale.monster_chat_404_2,
-		gameforge.locale.monster_chat_404_3,
-		gameforge.locale.monster_chat_404_4,
-		gameforge.locale.monster_chat_404_5,
-		gameforge.locale.monster_chat_404_6
+		"[LC;2608]",
+		"[LC;2609]",
+		"[LC;2610]",
+		"[LC;2611]",
+		"[LC;2612]",
+		"[LC;2613]"
 	},
 	[405] = {
-		gameforge.locale.monster_chat_405_1,
-		gameforge.locale.monster_chat_405_2,
-		gameforge.locale.monster_chat_405_3,
-		gameforge.locale.monster_chat_405_4,
-		gameforge.locale.monster_chat_405_5,
-		gameforge.locale.monster_chat_405_6
+		"[LC;2614]",
+		"[LC;2615]",
+		"[LC;2616]",
+		"[LC;2617]",
+		"[LC;2618]",
+		"[LC;2619]"
 	},
 	[406] = {
-		gameforge.locale.monster_chat_406_1,
-		gameforge.locale.monster_chat_406_2,
-		gameforge.locale.monster_chat_406_3,
-		gameforge.locale.monster_chat_406_4,
-		gameforge.locale.monster_chat_406_5,
-		gameforge.locale.monster_chat_406_6
+		"[LC;2620]",
+		"[LC;2621]",
+		"[LC;2622]",
+		"[LC;2623]",
+		"[LC;2624]",
+		"[LC;2625]"
 	},
 	[491] = {
-		gameforge.locale.monster_chat_491_1,
-		gameforge.locale.monster_chat_491_2,
-		gameforge.locale.monster_chat_491_3,
-		gameforge.locale.monster_chat_491_4,
-		gameforge.locale.monster_chat_491_5,
-		gameforge.locale.monster_chat_491_6
+		"[LC;2626]",
+		"[LC;2627]",
+		"[LC;2628]",
+		"[LC;2629]",
+		"[LC;2630]",
+		"[LC;2631]"
 	},
 	[492] = {
-		gameforge.locale.monster_chat_492_1,
-		gameforge.locale.monster_chat_492_2,
-		gameforge.locale.monster_chat_492_3,
-		gameforge.locale.monster_chat_492_4,
-		gameforge.locale.monster_chat_492_5,
-		gameforge.locale.monster_chat_492_6
+		"[LC;2632]",
+		"[LC;2633]",
+		"[LC;2634]",
+		"[LC;2635]",
+		"[LC;2636]",
+		"[LC;2637]"
 	},
 	[493] = {
-		gameforge.locale.monster_chat_493_1,
-		gameforge.locale.monster_chat_493_2,
-		gameforge.locale.monster_chat_493_3,
-		gameforge.locale.monster_chat_493_4,
-		gameforge.locale.monster_chat_493_5,
-		gameforge.locale.monster_chat_493_6
+		"[LC;2638]",
+		"[LC;2639]",
+		"[LC;2640]",
+		"[LC;2641]",
+		"[LC;2642]",
+		"[LC;2643]"
 	},
 	[494] = {
-		gameforge.locale.monster_chat_494_1,
-		gameforge.locale.monster_chat_494_2,
-		gameforge.locale.monster_chat_494_3,
-		gameforge.locale.monster_chat_494_4,
-		gameforge.locale.monster_chat_494_5,
-		gameforge.locale.monster_chat_494_6
+		"[LC;2644]",
+		"[LC;2645]",
+		"[LC;2646]",
+		"[LC;2647]",
+		"[LC;2648]",
+		"[LC;2649]"
 	},
 	[501] = {
-		gameforge.locale.monster_chat_501_1,
-		gameforge.locale.monster_chat_501_2,
-		gameforge.locale.monster_chat_501_3,
-		gameforge.locale.monster_chat_501_4,
-		gameforge.locale.monster_chat_501_5,
-		gameforge.locale.monster_chat_501_6
+		"[LC;2650]",
+		"[LC;2651]",
+		"[LC;2652]",
+		"[LC;2653]",
+		"[LC;2654]",
+		"[LC;2655]"
 	},
 	[502] = {
-		gameforge.locale.monster_chat_502_1,
-		gameforge.locale.monster_chat_502_2,
-		gameforge.locale.monster_chat_502_3,
-		gameforge.locale.monster_chat_502_4,
-		gameforge.locale.monster_chat_502_5,
-		gameforge.locale.monster_chat_502_6
+		"[LC;2656]",
+		"[LC;2657]",
+		"[LC;2658]",
+		"[LC;2659]",
+		{},
+		"[LC;2660]"
 	},
 	[503] = {
-		gameforge.locale.monster_chat_503_1,
-		gameforge.locale.monster_chat_503_2,
-		gameforge.locale.monster_chat_503_3,
-		gameforge.locale.monster_chat_503_4,
-		gameforge.locale.monster_chat_503_5,
-		gameforge.locale.monster_chat_503_6
+		"[LC;2661]",
+		"[LC;2662]",
+		"[LC;2663]",
+		"[LC;2664]",
+		"[LC;2665]",
+		"[LC;2666]"
 	},
 	[504] = {
-		gameforge.locale.monster_chat_504_1,
-		gameforge.locale.monster_chat_504_2,
-		gameforge.locale.monster_chat_504_3,
-		gameforge.locale.monster_chat_504_4,
-		gameforge.locale.monster_chat_504_5,
-		gameforge.locale.monster_chat_504_6
+		"[LC;2667]",
+		"[LC;2668]",
+		"[LC;2669]",
+		{},
+		"[LC;2670]",
+		"[LC;2671]"
 	},
 	[601] = {
-		gameforge.locale.monster_chat_601_1,
-		gameforge.locale.monster_chat_601_2,
-		gameforge.locale.monster_chat_601_3,
-		gameforge.locale.monster_chat_601_4,
-		gameforge.locale.monster_chat_601_5,
-		gameforge.locale.monster_chat_601_6
+		"[LC;2672]",
+		"[LC;2673]",
+		"[LC;2674]",
+		"[LC;2675]",
+		"[LC;2676]",
+		"[LC;2677]"
 	},
 	[601] = {
-		gameforge.locale.monster_chat_601_7,
-		gameforge.locale.monster_chat_602_1,
-		gameforge.locale.monster_chat_602_2,
-		gameforge.locale.monster_chat_602_3,
-		gameforge.locale.monster_chat_602_4,
-		gameforge.locale.monster_chat_602_5,
-		gameforge.locale.monster_chat_602_6
+		"[LC;2678]",
+		"[LC;2679]",
+		"[LC;2680]",
+		"[LC;2681]",
+		"[LC;2682]",
+		"[LC;2683]",
+		"[LC;2684]"
 	},
 	[603] = {
-		gameforge.locale.monster_chat_603_1,
-		gameforge.locale.monster_chat_603_2,
-		gameforge.locale.monster_chat_603_3,
-		gameforge.locale.monster_chat_603_4,
-		gameforge.locale.monster_chat_603_5,
-		gameforge.locale.monster_chat_603_6
+		"[LC;2685]",
+		"[LC;2686]",
+		"[LC;2687]",
+		"[LC;2688]",
+		"[LC;2689]",
+		"[LC;2690]"
 	},
 	[604] = {
-		gameforge.locale.monster_chat_604_1,
-		gameforge.locale.monster_chat_604_2,
-		gameforge.locale.monster_chat_604_3,
-		gameforge.locale.monster_chat_604_4,
-		gameforge.locale.monster_chat_604_5,
-		gameforge.locale.monster_chat_604_6
+		"[LC;2691]",
+		"[LC;2692]",
+		"[LC;2693]",
+		"[LC;2694]",
+		"[LC;2695]",
+		"[LC;2696]"
 	},
 	[631] = {
-		gameforge.locale.monster_chat_631_1,
-		gameforge.locale.monster_chat_631_2,
-		gameforge.locale.monster_chat_631_3,
-		gameforge.locale.monster_chat_631_4,
-		gameforge.locale.monster_chat_631_5,
-		gameforge.locale.monster_chat_631_6
+		"[LC;2697]",
+		"[LC;2698]",
+		"[LC;2699]",
+		"[LC;2700]",
+		"[LC;2701]",
+		"[LC;2702]"
 	},
 	[632] = {
-		gameforge.locale.monster_chat_632_1,
-		gameforge.locale.monster_chat_632_2,
-		gameforge.locale.monster_chat_632_3,
-		gameforge.locale.monster_chat_632_4,
-		gameforge.locale.monster_chat_632_5,
-		gameforge.locale.monster_chat_632_6
+		"[LC;2703]",
+		"[LC;2704]",
+		"[LC;2705]",
+		"[LC;2706]",
+		{},
+		"[LC;2707]"
 	},
 	[633] = {
-		gameforge.locale.monster_chat_633_1,
-		gameforge.locale.monster_chat_633_2,
-		gameforge.locale.monster_chat_633_3,
-		gameforge.locale.monster_chat_633_4,
-		gameforge.locale.monster_chat_633_5,
-		gameforge.locale.monster_chat_633_6
+		"[LC;2708]",
+		"[LC;2709]",
+		"[LC;2710]",
+		"[LC;2711]",
+		"[LC;2712]",
+		"[LC;2713]"
 	},
 	[634] = {
-		gameforge.locale.monster_chat_634_1,
-		gameforge.locale.monster_chat_634_2,
-		gameforge.locale.monster_chat_634_3,
-		gameforge.locale.monster_chat_634_4,
-		gameforge.locale.monster_chat_634_5,
-		gameforge.locale.monster_chat_634_6
+		"[LC;2714]",
+		"[LC;2715]",
+		"[LC;2716]",
+		"[LC;2717]",
+		"[LC;2718]",
+		"[LC;2719]"
 	},
 	[635] = {
-		gameforge.locale.monster_chat_635_1,
-		gameforge.locale.monster_chat_635_2,
-		gameforge.locale.monster_chat_635_3,
-		gameforge.locale.monster_chat_635_4,
-		gameforge.locale.monster_chat_635_5,
-		gameforge.locale.monster_chat_635_6
+		"[LC;2720]",
+		"[LC;2721]",
+		"[LC;2722]",
+		"[LC;2723]",
+		"[LC;2724]",
+		"[LC;2725]"
 	},
 	[636] = {
-		gameforge.locale.monster_chat_636_1,
-		gameforge.locale.monster_chat_636_2,
-		gameforge.locale.monster_chat_636_3,
-		gameforge.locale.monster_chat_636_4,
-		gameforge.locale.monster_chat_636_5,
-		gameforge.locale.monster_chat_636_6
+		"[LC;2726]",
+		"[LC;2727]",
+		"[LC;2728]",
+		"[LC;2729]",
+		"[LC;2730]",
+		"[LC;2731]"
 	},
 	[636] = {
-		gameforge.locale.monster_chat_636_7,
-		gameforge.locale.monster_chat_637_1,
-		gameforge.locale.monster_chat_637_2,
-		gameforge.locale.monster_chat_637_3,
-		gameforge.locale.monster_chat_637_4,
-		gameforge.locale.monster_chat_637_5,
-		gameforge.locale.monster_chat_637_6
+		"[LC;2732]",
+		"[LC;2733]",
+		"[LC;2734]",
+		"[LC;2735]",
+		"[LC;2736]",
+		"[LC;2737]",
+		"[LC;2738]"
 	},
 	[691] = {
-		gameforge.locale.monster_chat_691_1,
-		gameforge.locale.monster_chat_691_2,
-		gameforge.locale.monster_chat_691_3,
-		gameforge.locale.monster_chat_691_4,
-		gameforge.locale.monster_chat_691_5,
-		gameforge.locale.monster_chat_691_6
+		"[LC;2739]",
+		"[LC;2740]",
+		"[LC;2741]",
+		"[LC;2742]",
+		"[LC;2743]",
+		"[LC;2744]"
 	},
 	[701] = {
-		gameforge.locale.monster_chat_701_1,
-		gameforge.locale.monster_chat_701_2,
-		gameforge.locale.monster_chat_701_3,
-		gameforge.locale.monster_chat_701_4,
-		gameforge.locale.monster_chat_701_5,
-		gameforge.locale.monster_chat_701_6
+		"[LC;2745]",
+		"[LC;2746]",
+		"[LC;2747]",
+		"[LC;2748]",
+		"[LC;2749]",
+		"[LC;2750]"
 	},
 	[702] = {
-		gameforge.locale.monster_chat_702_1,
-		gameforge.locale.monster_chat_702_2,
-		gameforge.locale.monster_chat_702_3,
-		gameforge.locale.monster_chat_702_4,
-		gameforge.locale.monster_chat_702_5,
-		gameforge.locale.monster_chat_702_6
+		"[LC;2751]",
+		"[LC;2752]",
+		"[LC;2753]",
+		"[LC;2754]",
+		{},
+		"[LC;2755]"
 	},
 	[703] = {
-		gameforge.locale.monster_chat_703_1,
-		gameforge.locale.monster_chat_703_2,
-		gameforge.locale.monster_chat_703_3,
-		gameforge.locale.monster_chat_703_4,
-		gameforge.locale.monster_chat_703_5,
-		gameforge.locale.monster_chat_703_6
+		"[LC;2756]",
+		"[LC;2757]",
+		"[LC;2758]",
+		"[LC;2759]",
+		"[LC;2760]",
+		"[LC;2761]"
 	},
 	[704] = {
-		gameforge.locale.monster_chat_704_1,
-		gameforge.locale.monster_chat_704_2,
-		gameforge.locale.monster_chat_704_3,
-		gameforge.locale.monster_chat_704_4,
-		gameforge.locale.monster_chat_704_5,
-		gameforge.locale.monster_chat_704_6
+		"[LC;2762]",
+		"[LC;2763]",
+		"[LC;2764]",
+		"[LC;2765]",
+		"[LC;2766]",
+		"[LC;2767]"
 	},
 	[705] = {
-		gameforge.locale.monster_chat_705_1,
-		gameforge.locale.monster_chat_705_2,
-		gameforge.locale.monster_chat_705_3,
-		gameforge.locale.monster_chat_705_4,
-		gameforge.locale.monster_chat_705_5,
-		gameforge.locale.monster_chat_705_6
+		"[LC;2768]",
+		"[LC;2769]",
+		"[LC;2770]",
+		"[LC;2771]",
+		{},
+		"[LC;2772]"
 	},
 	[706] = {
-		gameforge.locale.monster_chat_706_1,
-		gameforge.locale.monster_chat_706_2,
-		gameforge.locale.monster_chat_706_3,
-		gameforge.locale.monster_chat_706_4,
-		gameforge.locale.monster_chat_706_5,
-		gameforge.locale.monster_chat_706_6
+		"[LC;2773]",
+		"[LC;2774]",
+		"[LC;2775]",
+		"[LC;2776]",
+		"[LC;2777]",
+		"[LC;2778]"
 	},
 	[707] = {
-		gameforge.locale.monster_chat_707_1,
-		gameforge.locale.monster_chat_707_2,
-		gameforge.locale.monster_chat_707_3,
-		gameforge.locale.monster_chat_707_4,
-		gameforge.locale.monster_chat_707_5,
-		gameforge.locale.monster_chat_707_6
+		"[LC;2779]",
+		"[LC;2780]",
+		"[LC;2781]",
+		"[LC;2782]",
+		"[LC;2783]",
+		"[LC;2784]"
 	},
 	[791] = {
-		gameforge.locale.monster_chat_791_1,
-		gameforge.locale.monster_chat_791_2,
-		gameforge.locale.monster_chat_791_3,
-		gameforge.locale.monster_chat_791_4,
-		gameforge.locale.monster_chat_791_5,
-		gameforge.locale.monster_chat_791_6
+		"[LC;2785]",
+		"[LC;2786]",
+		"[LC;2787]",
+		"[LC;2788]",
+		"[LC;2789]",
+		"[LC;2790]"
 	},
 	[901] = {
-		gameforge.locale.monster_chat_901_1,
-		gameforge.locale.monster_chat_901_2,
-		gameforge.locale.monster_chat_901_3,
-		gameforge.locale.monster_chat_901_4,
-		gameforge.locale.monster_chat_901_5
+		"[LC;2791]",
+		"[LC;2792]",
+		"[LC;2793]",
+		"[LC;2794]",
+		"[LC;2795]"
 	},
 	[903] = {
-		gameforge.locale.monster_chat_903_1,
-		gameforge.locale.monster_chat_903_2,
-		gameforge.locale.monster_chat_903_3,
-		gameforge.locale.monster_chat_903_4,
-		gameforge.locale.monster_chat_903_5,
-		gameforge.locale.monster_chat_903_6
+		"[LC;2796]",
+		"[LC;2797]",
+		"[LC;2798]",
+		"[LC;2799]",
+		"[LC;2800]",
+		"[LC;2801]"
 	},
 	[904] = {
-		gameforge.locale.monster_chat_904_1,
-		gameforge.locale.monster_chat_904_2,
-		gameforge.locale.monster_chat_904_3,
-		gameforge.locale.monster_chat_904_4,
-		gameforge.locale.monster_chat_904_5,
-		gameforge.locale.monster_chat_904_6
+		"[LC;2802]",
+		"[LC;2803]",
+		"[LC;2804]",
+		"[LC;2805]",
+		{},
+		"[LC;2806]"
 	},
 	[905] = {
-		gameforge.locale.monster_chat_905_1,
-		gameforge.locale.monster_chat_905_2,
-		gameforge.locale.monster_chat_905_3,
-		gameforge.locale.monster_chat_905_4,
-		gameforge.locale.monster_chat_905_5,
-		gameforge.locale.monster_chat_905_6
+		"[LC;2807]",
+		"[LC;2808]",
+		"[LC;2809]",
+		"[LC;2810]",
+		"[LC;2811]",
+		"[LC;2812]"
 	},
 	[906] = {
-		gameforge.locale.monster_chat_906_1,
-		gameforge.locale.monster_chat_906_2,
-		gameforge.locale.monster_chat_906_3,
-		gameforge.locale.monster_chat_906_4,
-		gameforge.locale.monster_chat_906_5,
-		gameforge.locale.monster_chat_906_6
+		"[LC;2813]",
+		"[LC;2814]",
+		"[LC;2815]",
+		"[LC;2816]",
+		"[LC;2817]",
+		"[LC;2818]"
 	},
 	[907] = {
-		gameforge.locale.monster_chat_907_1,
-		gameforge.locale.monster_chat_907_2,
-		gameforge.locale.monster_chat_907_3,
-		gameforge.locale.monster_chat_907_4,
-		gameforge.locale.monster_chat_907_5,
-		gameforge.locale.monster_chat_907_6
+		"[LC;2819]",
+		"[LC;2820]",
+		"[LC;2821]",
+		"[LC;2822]",
+		"[LC;2823]",
+		"[LC;2824]"
 	},
 	[1001] = {
-		gameforge.locale.monster_chat_1001_1,
-		gameforge.locale.monster_chat_1001_2,
-		gameforge.locale.monster_chat_1001_3,
-		gameforge.locale.monster_chat_1001_4,
-		gameforge.locale.monster_chat_1001_5,
-		gameforge.locale.monster_chat_1001_6
+		"[LC;2139]",
+		"[LC;2140]",
+		"[LC;2141]",
+		"[LC;2142]",
+		"[LC;2143]",
+		"[LC;2144]"
 	},
 	[1002] = {
-		gameforge.locale.monster_chat_1002_1,
-		gameforge.locale.monster_chat_1002_2,
-		gameforge.locale.monster_chat_1002_3,
-		gameforge.locale.monster_chat_1002_4,
-		gameforge.locale.monster_chat_1002_5
+		"[LC;2145]",
+		"[LC;2146]",
+		"[LC;2147]",
+		{},
+		"[LC;2148]"
 	},
 	[1003] = {
-		gameforge.locale.monster_chat_1003_1,
-		gameforge.locale.monster_chat_1003_2,
-		gameforge.locale.monster_chat_1003_3,
-		gameforge.locale.monster_chat_1003_4,
-		gameforge.locale.monster_chat_1003_5,
-		gameforge.locale.monster_chat_1003_6
+		"[LC;2149]",
+		"[LC;2150]",
+		"[LC;2151]",
+		"[LC;2152]",
+		"[LC;2153]",
+		"[LC;2154]"
 	},
 	[1004] = {
-		gameforge.locale.monster_chat_1004_1,
-		gameforge.locale.monster_chat_1004_2,
-		gameforge.locale.monster_chat_1004_3,
-		gameforge.locale.monster_chat_1004_4,
-		gameforge.locale.monster_chat_1004_5,
-		gameforge.locale.monster_chat_1004_6
+		"[LC;2155]",
+		"[LC;2156]",
+		"[LC;2157]",
+		"[LC;2158]",
+		"[LC;2159]",
+		"[LC;2160]"
 	},
 	[1035] = {
-		gameforge.locale.monster_chat_1035_1,
-		gameforge.locale.monster_chat_1035_2,
-		gameforge.locale.monster_chat_1035_3,
-		gameforge.locale.monster_chat_1035_4,
-		gameforge.locale.monster_chat_1035_5,
-		gameforge.locale.monster_chat_1035_6
+		"[LC;2161]",
+		"[LC;2162]",
+		"[LC;2163]",
+		"[LC;2164]",
+		"[LC;2165]",
+		"[LC;2166]"
 	},
 	[1036] = {
-		gameforge.locale.monster_chat_1036_1,
-		gameforge.locale.monster_chat_1036_2,
-		gameforge.locale.monster_chat_1036_3,
-		gameforge.locale.monster_chat_1036_4,
-		gameforge.locale.monster_chat_1036_5,
-		gameforge.locale.monster_chat_1036_6
+		"[LC;2167]",
+		"[LC;2168]",
+		"[LC;2169]",
+		"[LC;2170]",
+		{},
+		"[LC;2171]"
 	},
 	[1037] = {
-		gameforge.locale.monster_chat_1037_1,
-		gameforge.locale.monster_chat_1037_2,
-		gameforge.locale.monster_chat_1037_3,
-		gameforge.locale.monster_chat_1037_4,
-		gameforge.locale.monster_chat_1037_5,
-		gameforge.locale.monster_chat_1037_6
+		"[LC;2172]",
+		"[LC;2173]",
+		"[LC;2174]",
+		"[LC;2175]",
+		"[LC;2176]",
+		"[LC;2177]"
 	},
 	[1038] = {
-		gameforge.locale.monster_chat_1038_1,
-		gameforge.locale.monster_chat_1038_2,
-		gameforge.locale.monster_chat_1038_3,
-		gameforge.locale.monster_chat_1038_4,
-		gameforge.locale.monster_chat_1038_5,
-		gameforge.locale.monster_chat_1038_6
+		"[LC;2178]",
+		"[LC;2179]",
+		"[LC;2180]",
+		"[LC;2181]",
+		{},
+		"[LC;2182]"
 	},
 	[1039] = {
-		gameforge.locale.monster_chat_1039_1,
-		gameforge.locale.monster_chat_1039_2,
-		gameforge.locale.monster_chat_1039_3,
-		gameforge.locale.monster_chat_1039_4,
-		gameforge.locale.monster_chat_1039_5,
-		gameforge.locale.monster_chat_1039_6
+		"[LC;2183]",
+		"[LC;2184]",
+		"[LC;2185]",
+		"[LC;2186]",
+		"[LC;2187]",
+		"[LC;2188]"
 	},
 	[1040] = {
-		gameforge.locale.monster_chat_1040_1,
-		gameforge.locale.monster_chat_1040_2,
-		gameforge.locale.monster_chat_1040_3,
-		gameforge.locale.monster_chat_1040_4,
-		gameforge.locale.monster_chat_1040_5,
-		gameforge.locale.monster_chat_1040_6
+		"[LC;2189]",
+		"[LC;2190]",
+		"[LC;2191]",
+		"[LC;2192]",
+		"[LC;2193]",
+		"[LC;2194]"
 	},
 	[1041] = {
-		gameforge.locale.monster_chat_1041_1,
-		gameforge.locale.monster_chat_1041_2,
-		gameforge.locale.monster_chat_1041_3,
-		gameforge.locale.monster_chat_1041_4,
-		gameforge.locale.monster_chat_1041_5,
-		gameforge.locale.monster_chat_1041_6
+		"[LC;2195]",
+		"[LC;2196]",
+		"[LC;2197]",
+		"[LC;2198]",
+		"[LC;2199]",
+		"[LC;2200]"
 	},
 	[1091] = {
-		gameforge.locale.monster_chat_1091_1,
-		gameforge.locale.monster_chat_1091_2,
-		gameforge.locale.monster_chat_1091_3,
-		gameforge.locale.monster_chat_1091_4,
-		gameforge.locale.monster_chat_1091_5,
-		gameforge.locale.monster_chat_1091_6
+		"[LC;2201]",
+		"[LC;2202]",
+		"[LC;2203]",
+		"[LC;2204]",
+		"[LC;2205]",
+		"[LC;2206]"
 	},
 	[1093] = {
-		gameforge.locale.monster_chat_1093_1,
-		gameforge.locale.monster_chat_1093_2,
-		gameforge.locale.monster_chat_1093_3,
-		gameforge.locale.monster_chat_1093_4,
-		gameforge.locale.monster_chat_1093_5,
-		gameforge.locale.monster_chat_1093_6
+		"[LC;2207]",
+		"[LC;2208]",
+		"[LC;2209]",
+		"[LC;2210]",
+		"[LC;2211]",
+		"[LC;2212]"
 	},
 	[1105] = {
-		gameforge.locale.monster_chat_1105_1,
-		gameforge.locale.monster_chat_1105_2,
-		gameforge.locale.monster_chat_1105_3,
-		gameforge.locale.monster_chat_1105_4,
-		gameforge.locale.monster_chat_1105_5,
-		gameforge.locale.monster_chat_1105_6
+		"[LC;2306]",
+		"[LC;2307]",
+		"[LC;2308]",
+		"[LC;2309]",
+		"[LC;2310]",
+		"[LC;2311]"
 	},
 	[1106] = {
-		gameforge.locale.monster_chat_1106_1,
-		gameforge.locale.monster_chat_1106_2,
-		gameforge.locale.monster_chat_1106_3,
-		gameforge.locale.monster_chat_1106_4,
-		gameforge.locale.monster_chat_1106_5,
-		gameforge.locale.monster_chat_1106_6
+		"[LC;2312]",
+		"[LC;2313]",
+		"[LC;2314]",
+		"[LC;2315]",
+		"[LC;2316]",
+		"[LC;2317]"
 	},
 	[1191] = {
-		gameforge.locale.monster_chat_1191_1,
-		gameforge.locale.monster_chat_1191_2,
-		gameforge.locale.monster_chat_1191_3,
-		gameforge.locale.monster_chat_1191_4,
-		gameforge.locale.monster_chat_1191_5,
-		gameforge.locale.monster_chat_1191_6
+		"[LC;2318]",
+		"[LC;2319]",
+		"[LC;2320]",
+		{},
+		"[LC;2321]",
+		"[LC;2322]"
 	},
 	[1301] = {
-		gameforge.locale.monster_chat_1301_1,
-		gameforge.locale.monster_chat_1301_2,
-		gameforge.locale.monster_chat_1301_3,
-		gameforge.locale.monster_chat_1301_4,
-		gameforge.locale.monster_chat_1301_5,
-		gameforge.locale.monster_chat_1301_6
+		"[LC;2323]",
+		"[LC;2324]",
+		"[LC;2325]",
+		"[LC;2326]",
+		"[LC;2327]",
+		"[LC;2328]"
 	},
 	[1302] = {
-		gameforge.locale.monster_chat_1302_1,
-		gameforge.locale.monster_chat_1302_2,
-		gameforge.locale.monster_chat_1302_3,
-		gameforge.locale.monster_chat_1302_4,
-		gameforge.locale.monster_chat_1302_5,
-		gameforge.locale.monster_chat_1302_6
+		"[LC;2329]",
+		"[LC;2330]",
+		"[LC;2331]",
+		"[LC;2332]",
+		"[LC;2333]",
+		"[LC;2334]"
 	},
 	[1303] = {
-		gameforge.locale.monster_chat_1303_1,
-		gameforge.locale.monster_chat_1303_2,
-		gameforge.locale.monster_chat_1303_3,
-		gameforge.locale.monster_chat_1303_4,
-		gameforge.locale.monster_chat_1303_5,
-		gameforge.locale.monster_chat_1303_6
+		"[LC;2335]",
+		"[LC;2336]",
+		"[LC;2337]",
+		"[LC;2338]",
+		"[LC;2339]",
+		"[LC;2340]"
 	},
 	[1305] = {
-		gameforge.locale.monster_chat_1305_1,
-		gameforge.locale.monster_chat_1305_2,
-		gameforge.locale.monster_chat_1305_3,
-		gameforge.locale.monster_chat_1305_4,
-		gameforge.locale.monster_chat_1305_5,
-		gameforge.locale.monster_chat_1305_6
+		"[LC;2341]",
+		"[LC;2342]",
+		"[LC;2343]",
+		"[LC;2344]",
+		"[LC;2345]",
+		"[LC;2346]"
 	},
 	[1901] = {
-		gameforge.locale.monster_chat_1901_1,
-		gameforge.locale.monster_chat_1901_2,
-		gameforge.locale.monster_chat_1901_3,
-		gameforge.locale.monster_chat_1901_4,
-		gameforge.locale.monster_chat_1901_5,
-		gameforge.locale.monster_chat_1901_6
+		"[LC;2347]",
+		"[LC;2348]",
+		"[LC;2349]",
+		"[LC;2350]",
+		"[LC;2351]",
+		"[LC;2352]"
 	},
 	[2091] = {
-		gameforge.locale.monster_chat_2091_1,
-		gameforge.locale.monster_chat_2091_2,
-		gameforge.locale.monster_chat_2091_3,
-		gameforge.locale.monster_chat_2091_4,
-		gameforge.locale.monster_chat_2091_5,
-		gameforge.locale.monster_chat_2091_6
+		"[LC;2473]",
+		"[LC;2474]",
+		"[LC;2475]",
+		"[LC;2476]",
+		{},
+		"[LC;2477]"
 	},
 	[2092] = {
-		gameforge.locale.monster_chat_2092_1,
-		gameforge.locale.monster_chat_2092_2,
-		gameforge.locale.monster_chat_2092_3,
-		gameforge.locale.monster_chat_2092_4,
-		gameforge.locale.monster_chat_2092_5,
-		gameforge.locale.monster_chat_2092_6
+		"[LC;2478]",
+		"[LC;2479]",
+		"[LC;2480]",
+		"[LC;2481]",
+		"[LC;2482]",
+		"[LC;2483]"
 	},
 	[2104] = {
-		gameforge.locale.monster_chat_2104_1,
-		gameforge.locale.monster_chat_2104_2,
-		gameforge.locale.monster_chat_2104_3,
-		gameforge.locale.monster_chat_2104_4,
-		gameforge.locale.monster_chat_2104_5,
-		gameforge.locale.monster_chat_2104_6
+		"[LC;2484]",
+		"[LC;2485]",
+		"[LC;2486]",
+		"[LC;2487]",
+		"[LC;2488]",
+		"[LC;2489]"
 	},
 	[2105] = {
-		gameforge.locale.monster_chat_2105_1,
-		gameforge.locale.monster_chat_2105_2,
-		gameforge.locale.monster_chat_2105_3,
-		gameforge.locale.monster_chat_2105_4,
-		gameforge.locale.monster_chat_2105_5
+		"[LC;2490]",
+		"[LC;2491]",
+		"[LC;2492]",
+		{},
+		"[LC;2493]"
 	},
 	[2106] = {
-		gameforge.locale.monster_chat_2106_1,
-		gameforge.locale.monster_chat_2106_2,
-		gameforge.locale.monster_chat_2106_3,
-		gameforge.locale.monster_chat_2106_4,
-		gameforge.locale.monster_chat_2106_5,
-		gameforge.locale.monster_chat_2106_6
+		"[LC;2494]",
+		"[LC;2495]",
+		"[LC;2496]",
+		"[LC;2497]",
+		{},
+		"[LC;2498]"
 	},
 	[2107] = {
-		gameforge.locale.monster_chat_2107_1,
-		gameforge.locale.monster_chat_2107_2,
-		gameforge.locale.monster_chat_2107_3,
-		gameforge.locale.monster_chat_2107_4,
-		gameforge.locale.monster_chat_2107_5,
-		gameforge.locale.monster_chat_2107_6
+		"[LC;2499]",
+		"[LC;2500]",
+		"[LC;2501]",
+		{},
+		"[LC;2502]",
+		"[LC;2503]"
 	},
 	[2108] = {
-		gameforge.locale.monster_chat_2108_1,
-		gameforge.locale.monster_chat_2108_2,
-		gameforge.locale.monster_chat_2108_3,
-		gameforge.locale.monster_chat_2108_4,
-		gameforge.locale.monster_chat_2108_5,
-		gameforge.locale.monster_chat_2108_6
+		"[LC;2504]",
+		"[LC;2505]",
+		"[LC;2506]",
+		"[LC;2507]",
+		"[LC;2508]",
+		"[LC;2509]"
 	},
 	[2191] = {
-		gameforge.locale.monster_chat_2191_1,
-		gameforge.locale.monster_chat_2191_2,
-		gameforge.locale.monster_chat_2191_3,
-		gameforge.locale.monster_chat_2191_4,
-		gameforge.locale.monster_chat_2191_5,
-		gameforge.locale.monster_chat_2191_6
+		"[LC;2510]",
+		"[LC;2511]",
+		{},
+		"[LC;2512]",
+		"[LC;2513]",
+		"[LC;2514]"
 	},
 	[2202] = {
-		gameforge.locale.monster_chat_2202_1,
-		gameforge.locale.monster_chat_2202_2,
-		gameforge.locale.monster_chat_2202_3,
-		gameforge.locale.monster_chat_2202_4,
-		gameforge.locale.monster_chat_2202_5,
-		gameforge.locale.monster_chat_2202_6
+		"[LC;2515]",
+		"[LC;2516]",
+		"[LC;2517]",
+		"[LC;2518]",
+		"[LC;2519]",
+		"[LC;2520]"
 	},
 	[2204] = {
-		gameforge.locale.monster_chat_2204_1,
-		gameforge.locale.monster_chat_2204_2,
-		gameforge.locale.monster_chat_2204_3,
-		gameforge.locale.monster_chat_2204_4,
-		gameforge.locale.monster_chat_2204_5,
-		gameforge.locale.monster_chat_2204_6
+		"[LC;2521]",
+		"[LC;2522]",
+		{},
+		"[LC;2523]",
+		{},
+		"[LC;2524]"
 	},
 	[2205] = {
-		gameforge.locale.monster_chat_2205_1,
-		gameforge.locale.monster_chat_2205_2,
-		gameforge.locale.monster_chat_2205_3,
-		gameforge.locale.monster_chat_2205_4,
-		gameforge.locale.monster_chat_2205_5,
-		gameforge.locale.monster_chat_2205_6
+		"[LC;2525]",
+		"[LC;2526]",
+		"[LC;2527]",
+		"[LC;2528]",
+		"[LC;2529]",
+		"[LC;2530]"
 	},
 	[2206] = {
-		gameforge.locale.monster_chat_2206_1,
-		gameforge.locale.monster_chat_2206_2,
-		gameforge.locale.monster_chat_2206_3,
-		gameforge.locale.monster_chat_2206_4,
-		gameforge.locale.monster_chat_2206_5,
-		gameforge.locale.monster_chat_2206_6
+		"[LC;2531]",
+		"[LC;2532]",
+		"[LC;2533]",
+		"[LC;2534]",
+		"[LC;2535]",
+		"[LC;2536]"
 	},
 	[2291] = {
-		gameforge.locale.monster_chat_2291_1,
-		gameforge.locale.monster_chat_2291_2,
-		gameforge.locale.monster_chat_2291_3,
-		gameforge.locale.monster_chat_2291_4,
-		gameforge.locale.monster_chat_2291_5,
-		gameforge.locale.monster_chat_2291_6
+		"[LC;2537]",
+		"[LC;2538]",
+		"[LC;2539]",
+		"[LC;2540]",
+		"[LC;2541]",
+		"[LC;2542]"
 	},
 	[20001] = {
-		gameforge.locale.monster_chat_20001_1,
-		gameforge.locale.monster_chat_20001_2,
-		gameforge.locale.monster_chat_20001_3,
-		gameforge.locale.monster_chat_20001_4,
-		gameforge.locale.monster_chat_20001_5
+		"[LC;2353]",
+		"[LC;2354]",
+		"[LC;2355]",
+		"[LC;2356]",
+		"[LC;2357]"
 	},
 	[20002] = {
-		gameforge.locale.monster_chat_20002_1,
-		gameforge.locale.monster_chat_20002_2,
-		gameforge.locale.monster_chat_20002_3,
-		gameforge.locale.monster_chat_20002_4,
-		gameforge.locale.monster_chat_20002_5
+		"[LC;2358]",
+		"[LC;2359]",
+		"[LC;2360]",
+		"[LC;2361]",
+		"[LC;2362]"
 	},
 	[20003] = {
-		gameforge.locale.monster_chat_20003_1,
-		gameforge.locale.monster_chat_20003_2,
-		gameforge.locale.monster_chat_20003_3,
-		gameforge.locale.monster_chat_20003_4,
-		gameforge.locale.monster_chat_20003_5
+		"[LC;2363]",
+		"[LC;2364]",
+		"[LC;2365]",
+		"[LC;2366]",
+		"[LC;2367]"
 	},
 	[20004] = {
-		gameforge.locale.monster_chat_20004_1,
-		gameforge.locale.monster_chat_20004_2,
-		gameforge.locale.monster_chat_20004_3,
-		gameforge.locale.monster_chat_20004_4,
-		gameforge.locale.monster_chat_20004_5
+		"[LC;2368]",
+		"[LC;2369]",
+		"[LC;2370]",
+		"[LC;2371]",
+		"[LC;2372]"
 	},
 	[20005] = {
-		gameforge.locale.monster_chat_20005_1,
-		gameforge.locale.monster_chat_20005_2,
-		gameforge.locale.monster_chat_20005_3,
-		gameforge.locale.monster_chat_20005_4,
-		gameforge.locale.monster_chat_20005_5
+		"[LC;2373]",
+		"[LC;2374]",
+		"[LC;2375]",
+		"[LC;2376]",
+		"[LC;2377]"
 	},
 	[20006] = {
-		gameforge.locale.monster_chat_20006_1,
-		gameforge.locale.monster_chat_20006_2,
-		gameforge.locale.monster_chat_20006_3,
-		gameforge.locale.monster_chat_20006_4,
-		gameforge.locale.monster_chat_20006_5
+		"[LC;2378]",
+		"[LC;2379]",
+		"[LC;2380]",
+		"[LC;2381]",
+		"[LC;2382]"
 	},
 	[20007] = {
-		gameforge.locale.monster_chat_20007_1,
-		gameforge.locale.monster_chat_20007_2,
-		gameforge.locale.monster_chat_20007_3,
-		gameforge.locale.monster_chat_20007_4,
-		gameforge.locale.monster_chat_20007_5
+		"[LC;2383]",
+		"[LC;2384]",
+		"[LC;2385]",
+		"[LC;2386]",
+		"[LC;2387]"
 	},
 	[20008] = {
-		gameforge.locale.monster_chat_20008_1,
-		gameforge.locale.monster_chat_20008_2,
-		gameforge.locale.monster_chat_20008_3,
-		gameforge.locale.monster_chat_20008_4,
-		gameforge.locale.monster_chat_20008_5
+		"[LC;2388]",
+		"[LC;2389]",
+		"[LC;2390]",
+		"[LC;2391]",
+		"[LC;2392]"
 	},
 	[20009] = {
-		gameforge.locale.monster_chat_20009_1,
-		gameforge.locale.monster_chat_20009_2,
-		gameforge.locale.monster_chat_20009_3,
-		gameforge.locale.monster_chat_20009_4,
-		gameforge.locale.monster_chat_20009_5
+		"[LC;2393]",
+		"[LC;2394]",
+		"[LC;2395]",
+		"[LC;2396]",
+		"[LC;2397]"
 	},
 	[20010] = {
-		gameforge.locale.monster_chat_20010_1,
-		gameforge.locale.monster_chat_20010_2,
-		gameforge.locale.monster_chat_20010_3,
-		gameforge.locale.monster_chat_20010_4,
-		gameforge.locale.monster_chat_20010_5
+		"[LC;2398]",
+		"[LC;2399]",
+		"[LC;2400]",
+		"[LC;2401]",
+		"[LC;2402]"
 	},
 	[20011] = {
-		gameforge.locale.monster_chat_20011_1,
-		gameforge.locale.monster_chat_20011_2,
-		gameforge.locale.monster_chat_20011_3,
-		gameforge.locale.monster_chat_20011_4,
-		gameforge.locale.monster_chat_20011_5
+		"[LC;2403]",
+		"[LC;2404]",
+		"[LC;2405]",
+		"[LC;2406]",
+		"[LC;2407]"
 	},
 	[20012] = {
-		gameforge.locale.monster_chat_20012_1,
-		gameforge.locale.monster_chat_20012_2,
-		gameforge.locale.monster_chat_20012_3,
-		gameforge.locale.monster_chat_20012_4,
-		gameforge.locale.monster_chat_20012_5
+		"[LC;2408]",
+		"[LC;2409]",
+		"[LC;2410]",
+		"[LC;2411]",
+		"[LC;2412]"
 	},
 	[20013] = {
-		gameforge.locale.monster_chat_20013_1,
-		gameforge.locale.monster_chat_20013_2,
-		gameforge.locale.monster_chat_20013_3,
-		gameforge.locale.monster_chat_20013_4,
-		gameforge.locale.monster_chat_20013_5
+		"[LC;2413]",
+		"[LC;2414]",
+		"[LC;2415]",
+		"[LC;2416]",
+		"[LC;2417]"
 	},
 	[20014] = {
-		gameforge.locale.monster_chat_20014_1,
-		gameforge.locale.monster_chat_20014_2,
-		gameforge.locale.monster_chat_20014_3,
-		gameforge.locale.monster_chat_20014_4,
-		gameforge.locale.monster_chat_20014_5
+		"[LC;2418]",
+		"[LC;2419]",
+		"[LC;2420]",
+		"[LC;2421]",
+		"[LC;2422]"
 	},
 	[20015] = {
-		gameforge.locale.monster_chat_20015_1,
-		gameforge.locale.monster_chat_20015_2,
-		gameforge.locale.monster_chat_20015_3,
-		gameforge.locale.monster_chat_20015_4,
-		gameforge.locale.monster_chat_20015_5
+		"[LC;2423]",
+		"[LC;2424]",
+		"[LC;2425]",
+		"[LC;2426]",
+		"[LC;2427]"
 	},
 	[20016] = {
-		gameforge.locale.monster_chat_20016_1,
-		gameforge.locale.monster_chat_20016_2,
-		gameforge.locale.monster_chat_20016_3,
-		gameforge.locale.monster_chat_20016_4,
-		gameforge.locale.monster_chat_20016_5
+		"[LC;2428]",
+		"[LC;2429]",
+		"[LC;2430]",
+		"[LC;2431]",
+		"[LC;2432]"
 	},
 	[20017] = {
-		gameforge.locale.monster_chat_20017_1,
-		gameforge.locale.monster_chat_20017_2,
-		gameforge.locale.monster_chat_20017_3,
-		gameforge.locale.monster_chat_20017_4,
-		gameforge.locale.monster_chat_20017_5
+		"[LC;2433]",
+		"[LC;2434]",
+		"[LC;2435]",
+		"[LC;2436]",
+		"[LC;2437]"
 	},
 	[20018] = {
-		gameforge.locale.monster_chat_20018_1,
-		gameforge.locale.monster_chat_20018_2,
-		gameforge.locale.monster_chat_20018_3,
-		gameforge.locale.monster_chat_20018_4,
-		gameforge.locale.monster_chat_20018_5
+		"[LC;2438]",
+		"[LC;2439]",
+		"[LC;2440]",
+		"[LC;2441]",
+		"[LC;2442]"
 	},
 	[20019] = {
-		gameforge.locale.monster_chat_20019_1,
-		gameforge.locale.monster_chat_20019_2,
-		gameforge.locale.monster_chat_20019_3,
-		gameforge.locale.monster_chat_20019_4,
-		gameforge.locale.monster_chat_20019_5
+		"[LC;2443]",
+		"[LC;2444]",
+		"[LC;2445]",
+		"[LC;2446]",
+		"[LC;2447]"
 	},
 	[20020] = {
-		gameforge.locale.monster_chat_20020_1,
-		gameforge.locale.monster_chat_20020_2,
-		gameforge.locale.monster_chat_20020_3,
-		gameforge.locale.monster_chat_20020_4,
-		gameforge.locale.monster_chat_20020_5
+		"[LC;2448]",
+		"[LC;2449]",
+		"[LC;2450]",
+		"[LC;2451]",
+		"[LC;2452]"
 	},
 	[20021] = {
-		gameforge.locale.monster_chat_20021_1,
-		gameforge.locale.monster_chat_20021_2,
-		gameforge.locale.monster_chat_20021_3,
-		gameforge.locale.monster_chat_20021_4,
-		gameforge.locale.monster_chat_20021_5
+		"[LC;2453]",
+		"[LC;2454]",
+		"[LC;2455]",
+		"[LC;2456]",
+		"[LC;2457]"
 	},
 	[20022] = {
-		gameforge.locale.monster_chat_20022_1,
-		gameforge.locale.monster_chat_20022_2,
-		gameforge.locale.monster_chat_20022_3,
-		gameforge.locale.monster_chat_20022_4,
-		gameforge.locale.monster_chat_20022_5
+		"[LC;2458]",
+		"[LC;2459]",
+		"[LC;2460]",
+		"[LC;2461]",
+		"[LC;2462]"
 	},
 	[20023] = {
-		gameforge.locale.monster_chat_20023_1,
-		gameforge.locale.monster_chat_20023_2,
-		gameforge.locale.monster_chat_20023_3,
-		gameforge.locale.monster_chat_20023_4,
-		gameforge.locale.monster_chat_20023_5
+		"[LC;2463]",
+		"[LC;2464]",
+		"[LC;2465]",
+		"[LC;2466]",
+		"[LC;2467]"
 	},
 	[20024] = {
-		gameforge.locale.monster_chat_20024_1,
-		gameforge.locale.monster_chat_20024_2,
-		gameforge.locale.monster_chat_20024_3,
-		gameforge.locale.monster_chat_20024_4,
-		gameforge.locale.monster_chat_20024_5
+		"[LC;2468]",
+		"[LC;2469]",
+		"[LC;2470]",
+		"[LC;2471]",
+		"[LC;2472]"
 	},
 	[11000] = {
-		gameforge.locale.monster_chat_11000_1,
-		gameforge.locale.monster_chat_11000_2,
-		gameforge.locale.monster_chat_11000_3,
-		gameforge.locale.monster_chat_11000_4,
-		gameforge.locale.monster_chat_11000_5,
-		gameforge.locale.monster_chat_11000_6,
-		gameforge.locale.monster_chat_11000_7,
-		gameforge.locale.monster_chat_11000_8,
-		gameforge.locale.monster_chat_11000_9,
-		gameforge.locale.monster_chat_11000_10,
-		gameforge.locale.monster_chat_11000_11,
-		gameforge.locale.monster_chat_11000_12,
-		gameforge.locale.monster_chat_11000_13,
-		gameforge.locale.monster_chat_11000_14,
-		gameforge.locale.monster_chat_11000_15,
-		gameforge.locale.monster_chat_11000_16,
-		gameforge.locale.monster_chat_11000_17,
-		gameforge.locale.monster_chat_11000_18,
-		gameforge.locale.monster_chat_11000_19,
-		gameforge.locale.monster_chat_11000_20,
-		gameforge.locale.monster_chat_11000_21,
-		gameforge.locale.monster_chat_11000_22,
-		gameforge.locale.monster_chat_11000_23,
-		gameforge.locale.monster_chat_11000_24,
-		gameforge.locale.monster_chat_11000_25,
-		gameforge.locale.monster_chat_11000_26,
-		gameforge.locale.monster_chat_11000_27,
-		gameforge.locale.monster_chat_11000_28,
-		gameforge.locale.monster_chat_11000_29,
-		gameforge.locale.monster_chat_11000_30,
-		gameforge.locale.monster_chat_11000_31
+		"[LC;2213]",
+		"[LC;2224]",
+		"[LC;2235]",
+		"[LC;2238]",
+		"[LC;2239]",
+		"[LC;2240]",
+		"[LC;2241]",
+		"[LC;2242]",
+		"[LC;2243]",
+		"[LC;2214]",
+		"[LC;2215]",
+		"[LC;2216]",
+		"[LC;2217]",
+		"[LC;2218]",
+		"[LC;2219]",
+		"[LC;2220]",
+		"[LC;2221]",
+		"[LC;2222]",
+		"[LC;2223]",
+		"[LC;2225]",
+		"[LC;2226]",
+		"[LC;2227]",
+		"[LC;2228]",
+		"[LC;2229]",
+		"[LC;2230]",
+		"[LC;2231]",
+		"[LC;2232]",
+		"[LC;2233]",
+		"[LC;2234]",
+		"[LC;2236]",
+		"[LC;2237]"
 	},
 	[11002] = {
-		gameforge.locale.monster_chat_11002_1,
-		gameforge.locale.monster_chat_11002_2,
-		gameforge.locale.monster_chat_11002_3,
-		gameforge.locale.monster_chat_11002_4,
-		gameforge.locale.monster_chat_11002_5,
-		gameforge.locale.monster_chat_11002_6,
-		gameforge.locale.monster_chat_11002_7,
-		gameforge.locale.monster_chat_11002_8,
-		gameforge.locale.monster_chat_11002_9,
-		gameforge.locale.monster_chat_11002_10,
-		gameforge.locale.monster_chat_11002_11,
-		gameforge.locale.monster_chat_11002_12,
-		gameforge.locale.monster_chat_11002_13,
-		gameforge.locale.monster_chat_11002_14,
-		gameforge.locale.monster_chat_11002_15,
-		gameforge.locale.monster_chat_11002_16,
-		gameforge.locale.monster_chat_11002_17,
-		gameforge.locale.monster_chat_11002_18,
-		gameforge.locale.monster_chat_11002_19,
-		gameforge.locale.monster_chat_11002_20,
-		gameforge.locale.monster_chat_11002_21,
-		gameforge.locale.monster_chat_11002_22,
-		gameforge.locale.monster_chat_11002_23,
-		gameforge.locale.monster_chat_11002_24,
-		gameforge.locale.monster_chat_11002_25,
-		gameforge.locale.monster_chat_11002_26,
-		gameforge.locale.monster_chat_11002_27,
-		gameforge.locale.monster_chat_11002_28,
-		gameforge.locale.monster_chat_11002_29,
-		gameforge.locale.monster_chat_11002_30,
-		gameforge.locale.monster_chat_11002_31
+		"[LC;2244]",
+		"[LC;2255]",
+		"[LC;2266]",
+		"[LC;2269]",
+		"[LC;2270]",
+		"[LC;2271]",
+		"[LC;2272]",
+		"[LC;2273]",
+		"[LC;2274]",
+		"[LC;2245]",
+		"[LC;2246]",
+		"[LC;2247]",
+		"[LC;2248]",
+		"[LC;2249]",
+		"[LC;2250]",
+		"[LC;2251]",
+		"[LC;2252]",
+		"[LC;2253]",
+		"[LC;2254]",
+		"[LC;2256]",
+		"[LC;2257]",
+		"[LC;2258]",
+		"[LC;2259]",
+		"[LC;2260]",
+		"[LC;2261]",
+		"[LC;2262]",
+		"[LC;2263]",
+		"[LC;2264]",
+		"[LC;2265]",
+		"[LC;2267]",
+		"[LC;2268]"
 	},
 	[11004] = {
-		gameforge.locale.monster_chat_11004_1,
-		gameforge.locale.monster_chat_11004_2,
-		gameforge.locale.monster_chat_11004_3,
-		gameforge.locale.monster_chat_11004_4,
-		gameforge.locale.monster_chat_11004_5,
-		gameforge.locale.monster_chat_11004_6,
-		gameforge.locale.monster_chat_11004_7,
-		gameforge.locale.monster_chat_11004_8,
-		gameforge.locale.monster_chat_11004_9,
-		gameforge.locale.monster_chat_11004_10,
-		gameforge.locale.monster_chat_11004_11,
-		gameforge.locale.monster_chat_11004_12,
-		gameforge.locale.monster_chat_11004_13,
-		gameforge.locale.monster_chat_11004_14,
-		gameforge.locale.monster_chat_11004_15,
-		gameforge.locale.monster_chat_11004_16,
-		gameforge.locale.monster_chat_11004_17,
-		gameforge.locale.monster_chat_11004_18,
-		gameforge.locale.monster_chat_11004_19,
-		gameforge.locale.monster_chat_11004_20,
-		gameforge.locale.monster_chat_11004_21,
-		gameforge.locale.monster_chat_11004_22,
-		gameforge.locale.monster_chat_11004_23,
-		gameforge.locale.monster_chat_11004_24,
-		gameforge.locale.monster_chat_11004_25,
-		gameforge.locale.monster_chat_11004_26,
-		gameforge.locale.monster_chat_11004_27,
-		gameforge.locale.monster_chat_11004_28,
-		gameforge.locale.monster_chat_11004_29,
-		gameforge.locale.monster_chat_11004_30,
-		gameforge.locale.monster_chat_11004_31
+		"[LC;2275]",
+		"[LC;2286]",
+		"[LC;2297]",
+		"[LC;2300]",
+		"[LC;2301]",
+		"[LC;2302]",
+		"[LC;2303]",
+		"[LC;2304]",
+		"[LC;2305]",
+		"[LC;2276]",
+		"[LC;2277]",
+		"[LC;2278]",
+		"[LC;2279]",
+		"[LC;2280]",
+		"[LC;2281]",
+		"[LC;2282]",
+		"[LC;2283]",
+		"[LC;2284]",
+		"[LC;2285]",
+		"[LC;2287]",
+		"[LC;2288]",
+		"[LC;2289]",
+		"[LC;2290]",
+		"[LC;2291]",
+		"[LC;2292]",
+		"[LC;2293]",
+		"[LC;2294]",
+		"[LC;2295]",
+		"[LC;2296]",
+		"[LC;2298]",
+		"[LC;2299]"
 	},
 }
 
 special.questscroll = {
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_1_text,
-		gameforge.locale.questscroll_1_mis,
-		gameforge.locale.questscroll_1_hunt,
+		"[LC;3100]",
+		"[LC;3099]",
+		"[LC;3098]",
 		25,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_2_text,
-		gameforge.locale.questscroll_2_mis,
-		gameforge.locale.questscroll_2_hunt,
+		"[LC;3105]",
+		"[LC;3104]",
+		"[LC;3103]",
 		20,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_3_text,
-		gameforge.locale.questscroll_3_mis,
-		gameforge.locale.questscroll_3_hunt,
+		"[LC;3108]",
+		"[LC;3107]",
+		"[LC;3106]",
 		1,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_4_text,
-		gameforge.locale.questscroll_4_mis,
-		gameforge.locale.questscroll_4_hunt,
+		"[LC;3111]",
+		"[LC;3110]",
+		"[LC;3109]",
 		1,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_5_text,
-		gameforge.locale.questscroll_5_mis,
-		gameforge.locale.questscroll_5_hunt,
+		"[LC;3114]",
+		"[LC;3113]",
+		"[LC;3112]",
 		1,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_6_text,
-		gameforge.locale.questscroll_6_mis,
-		gameforge.locale.questscroll_6_hunt,
+		"[LC;3117]",
+		"[LC;3116]",
+		"[LC;3115]",
 		1,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_7_text,
-		gameforge.locale.questscroll_7_mis,
-		gameforge.locale.questscroll_7_hunt,
+		"[LC;3120]",
+		"[LC;3119]",
+		"[LC;3118]",
 		20,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_8_text,
-		gameforge.locale.questscroll_8_mis,
-		gameforge.locale.questscroll_8_hunt,
+		"[LC;3123]",
+		"[LC;3122]",
+		"[LC;3121]",
 		20,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_9_text,
-		gameforge.locale.questscroll_9_mis,
-		gameforge.locale.questscroll_9_hunt,
+		"[LC;3126]",
+		"[LC;3125]",
+		"[LC;3124]",
 		25,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_10_text,
-		gameforge.locale.questscroll_10_mis,
-		gameforge.locale.questscroll_10_hunt,
+		"[LC;3070]",
+		"[LC;3069]",
+		"[LC;3068]",
 		20,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_11_text,
-		gameforge.locale.questscroll_11_mis,
-		gameforge.locale.questscroll_11_hunt,
+		"[LC;3073]",
+		"[LC;3072]",
+		"[LC;3071]",
 		20,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_12_text,
-		gameforge.locale.questscroll_12_mis,
-		gameforge.locale.questscroll_12_hunt,
+		"[LC;3076]",
+		"[LC;3075]",
+		"[LC;3074]",
 		12,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_13_text,
-		gameforge.locale.questscroll_13_mis,
-		gameforge.locale.questscroll_13_hunt,
+		"[LC;3079]",
+		"[LC;3078]",
+		"[LC;3077]",
 		20,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_14_text,
-		gameforge.locale.questscroll_14_mis,
-		gameforge.locale.questscroll_14_hunt,
+		"[LC;3082]",
+		"[LC;3081]",
+		"[LC;3080]",
 		20,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_15_text,
-		gameforge.locale.questscroll_15_mis,
-		gameforge.locale.questscroll_15_hunt,
+		"[LC;3085]",
+		"[LC;3084]",
+		"[LC;3083]",
 		13,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_16_text,
-		gameforge.locale.questscroll_16_mis,
-		gameforge.locale.questscroll_16_hunt,
+		"[LC;3088]",
+		"[LC;3087]",
+		"[LC;3086]",
 		25,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_17_text,
-		gameforge.locale.questscroll_17_mis,
-		gameforge.locale.questscroll_17_hunt,
+		"[LC;3091]",
+		"[LC;3090]",
+		"[LC;3089]",
 		20,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_18_text,
-		gameforge.locale.questscroll_18_mis,
-		gameforge.locale.questscroll_18_hunt,
+		"[LC;3094]",
+		"[LC;3093]",
+		"[LC;3092]",
 		25,
 	},
 	{ 
 		QUEST_SCROLL_TYPE_KILL_MOB, 
-		gameforge.locale.questscroll_19_text,
-		gameforge.locale.questscroll_19_mis,
-		gameforge.locale.questscroll_19_hunt,
+		"[LC;3097]",
+		"[LC;3096]",
+		"[LC;3095]",
 		25,
 	},	
 	{ 
 		QUEST_SCROLL_TYPE_KILL_ANOTHER_EMPIRE, 
-		gameforge.locale.questscroll_20_text,
-		gameforge.locale.questscroll_20_mis,
-		gameforge.locale.questscroll_20_hunt,
+		"[LC;3102]",
+		"[LC;3101]",
+		{},
 		4,
 	},
 }
 
 locale.questscroll = {}
-locale.questscroll.exist = gameforge.locale.questscroll.exist
-locale.questscroll.finish = gameforge.locale.questscroll.finish
-locale.questscroll.finish_button = gameforge.locale.questscroll.finish_button
+locale.questscroll.exist = "[LC;2897]"
+locale.questscroll.finish = "[LC;2898]"
+locale.questscroll.finish_button = "[LC;2899]"
 
-locale.remove_polymorph_chat = gameforge.locale.remove_polymorph_chat
-locale.remove_polymorph_msg = gameforge.locale.remove_polymorph_msg
+locale.remove_polymorph_chat = "[LC;3556]"
+locale.remove_polymorph_msg = "[LC;3557]"
 
 locale.fortune_words = {
 	{
-		gameforge.locale.fortune_words_1_title,
-		gameforge.locale.fortune_words_1_body
+		"[LC;1964]",
+		"[LC;1963]"
 	},
 	{
-		gameforge.locale.fortune_words_2_title,
-		gameforge.locale.fortune_words_2_body
+		"[LC;1966]",
+		"[LC;1965]"
 	},
 	{
-		gameforge.locale.fortune_words_3_title,
-		gameforge.locale.fortune_words_3_body
+		"[LC;1968]",
+		"[LC;1967]"
 	},
 	{
-		gameforge.locale.fortune_words_4_title,
-		gameforge.locale.fortune_words_4_body
+		"[LC;1970]",
+		"[LC;1969]"
 	},
 	{
-		gameforge.locale.fortune_words_5_title,
-		gameforge.locale.fortune_words_5_body
+		"[LC;1972]",
+		"[LC;1971]"
 	},
 	{
-		gameforge.locale.fortune_words_6_title,
-		gameforge.locale.fortune_words_6_body
+		"[LC;1974]",
+		"[LC;1973]"
 	},
 	{
-		gameforge.locale.fortune_words_7_title,
-		gameforge.locale.fortune_words_7_body
+		"[LC;1976]",
+		"[LC;1975]"
 	},
 }
 
 locale.christmas_tree = {}
-locale.christmas_tree.greet = gameforge.locale.christmas_tree.greet
-locale.christmas_tree.sel_put_sock = gameforge.locale.christmas_tree.sel_put_sock
-locale.christmas_tree.sel_no_need = gameforge.locale.christmas_tree.sel_no_need
-locale.christmas_tree.sel_intro_event = gameforge.locale.christmas_tree.sel_intro_event
-locale.christmas_tree.no_more_sock = gameforge.locale.christmas_tree.no_more_sock
-locale.christmas_tree.gain_item_msg = gameforge.locale.christmas_tree.gain_item_msg
-locale.christmas_tree.no_sock = gameforge.locale.christmas_tree.no_sock
-locale.christmas_tree.not_sock_time = gameforge.locale.christmas_tree.not_sock_time
-locale.christmas_tree.greet2 = gameforge.locale.christmas_tree.greet2
-locale.christmas_tree.intro_msg = gameforge.locale.christmas_tree.intro_msg
-locale.christmas_tree.under_level_10 = gameforge.locale.christmas_tree.under_level_10
-locale.christmas_tree.christmas_say_title = gameforge.locale.christmas_tree.christmas_say_title
+locale.christmas_tree.greet = "[LC;1908]"
+locale.christmas_tree.sel_put_sock = "[LC;1915]"
+locale.christmas_tree.sel_no_need = "[LC;1914]"
+locale.christmas_tree.sel_intro_event = "[LC;1913]"
+locale.christmas_tree.no_more_sock = "[LC;1911]"
+locale.christmas_tree.gain_item_msg = "[LC;1907]"
+locale.christmas_tree.no_sock = "[LC;1912]"
+locale.christmas_tree.not_sock_time = nil
+locale.christmas_tree.greet2 = "[LC;1909]"
+locale.christmas_tree.intro_msg = "[LC;1910]"
+locale.christmas_tree.under_level_10 = "[LC;1917]"
+locale.christmas_tree.christmas_say_title = "[LC;1906]"
 
 locale.christmas_santa = {}
-locale.christmas_santa.intro_msg = gameforge.locale.christmas_santa.intro_msg
+locale.christmas_santa.intro_msg = "[LC;1896]"
 locale.christmas_santa.skill_book_buy_cost = 10000
-locale.christmas_santa.skill_book_msg = locale.christmas_santa.skill_book_buy_cost .. gameforge.locale.christmas_santa.skill_book_msg
-locale.christmas_santa.skill_book_sold_out_msg = gameforge.locale.christmas_santa.skill_book_sold_out_msg
+locale.christmas_santa.skill_book_msg = locale.christmas_santa.skill_book_buy_cost .. "[LC;1902]"
+locale.christmas_santa.skill_book_sold_out_msg = "[LC;1903]"
 locale.christmas_santa.hairdye_buy_cost = 10000
-locale.christmas_santa.hairdye_msg = locale.christmas_santa.hairdye_buy_cost .. gameforge.locale.christmas_santa.hairdye_msg
-locale.christmas_santa.hairdye_sold_out_msg = gameforge.locale.christmas_santa.hairdye_sold_out_msg
-locale.christmas_santa.not_enough_money = gameforge.locale.christmas_santa.want_skillbook
-locale.christmas_santa.want_skillbook = gameforge.locale.christmas_santa.want_skillbook
-locale.christmas_santa.want_hairdye = gameforge.locale.christmas_santa.want_hairdye
-locale.christmas_santa.no_need = gameforge.locale.christmas_santa.no_need
-locale.christmas_santa.bye_msg = gameforge.locale.christmas_santa.bye_msg
-locale.christmas_santa.select_buy = gameforge.locale.christmas_santa.select_buy
-locale.christmas_santa.select_stop = gameforge.locale.christmas_santa.select_stop
+locale.christmas_santa.hairdye_msg = locale.christmas_santa.hairdye_buy_cost .. "[LC;1894]"
+locale.christmas_santa.hairdye_sold_out_msg = "[LC;1895]"
+locale.christmas_santa.not_enough_money = "[LC;1905]"
+locale.christmas_santa.want_skillbook = "[LC;1905]"
+locale.christmas_santa.want_hairdye = "[LC;1904]"
+locale.christmas_santa.no_need = "[LC;1898]"
+locale.christmas_santa.bye_msg = "[LC;1893]"
+locale.christmas_santa.select_buy = "[LC;1900]"
+locale.christmas_santa.select_stop = "[LC;1901]"
 
 locale.years_greetings = {}
-locale.years_greetings.chat_greet = gameforge.locale.years_greetings.chat_greet
-locale.years_greetings.greet_msg = gameforge.locale.years_greetings.greet_msg
-locale.years_greetings.select_1 = gameforge.locale.years_greetings.select_1
-locale.years_greetings.select_2 = gameforge.locale.years_greetings.select_2
-locale.years_greetings.select_3 = gameforge.locale.years_greetings.select_3
-locale.years_greetings.under_level_15 = gameforge.locale.years_greetings.under_level_15
-locale.years_greetings.give_msg = gameforge.locale.years_greetings.give_msg
-locale.years_greetings.not_enoguh_inventory = gameforge.locale.years_greetings.not_enoguh_inventory
-locale.years_greetings.no_money_this_time = gameforge.locale.years_greetings.no_money_this_time
-locale.years_greetings.bless_msg = gameforge.locale.years_greetings.bless_msg
-locale.years_greetings.event_info = gameforge.locale.years_greetings.event_info 
+locale.years_greetings.chat_greet = "[LC;3712]"
+locale.years_greetings.greet_msg = "[LC;3715]"
+locale.years_greetings.select_1 = "[LC;3718]"
+locale.years_greetings.select_2 = "[LC;3719]"
+locale.years_greetings.select_3 = "[LC;3720]"
+locale.years_greetings.under_level_15 = "[LC;3721]"
+locale.years_greetings.give_msg = "[LC;3714]"
+locale.years_greetings.not_enoguh_inventory = "[LC;3716]"
+locale.years_greetings.no_money_this_time = "[LC;3717]"
+locale.years_greetings.bless_msg = "[LC;3711]"
+locale.years_greetings.event_info = "[LC;3713]" 
 
 locale.make_wonso = {}
-locale.make_wonso.want_wonso1 = gameforge.locale.make_wonso.want_wonso1
-locale.make_wonso.how_make = gameforge.locale.make_wonso.how_make
-locale.make_wonso.how_make_detail = gameforge.locale.make_wonso.how_make_detail
-locale.make_wonso.make_msg1 = gameforge.locale.make_wonso.make_msg1
-locale.make_wonso.make_msg2 = gameforge.locale.make_wonso.make_msg2
-locale.make_wonso.make_msg3 = gameforge.locale.make_wonso.make_msg3
+locale.make_wonso.want_wonso1 = "[LC;2120]"
+locale.make_wonso.how_make = "[LC;2115]"
+locale.make_wonso.how_make_detail = "[LC;2116]"
+locale.make_wonso.make_msg1 = "[LC;2117]"
+locale.make_wonso.make_msg2 = "[LC;2118]"
+locale.make_wonso.make_msg3 = "[LC;2119]"
 
 locale.horse_menu = {}
-locale.horse_menu.menu = gameforge.locale.horse_menu.menu
-locale.horse_menu.show_state = gameforge.locale.horse_menu.show_state
-locale.horse_menu.revive = gameforge.locale.horse_menu.revive
-locale.horse_menu.feed = gameforge.locale.horse_menu.feed
-locale.horse_menu.ride = gameforge.locale.horse_menu.ride
-locale.horse_menu.unsummon = gameforge.locale.horse_menu.unsummon
-locale.horse_menu.close = gameforge.locale.horse_menu.close
+locale.horse_menu.menu = "[LC;2068]"
+locale.horse_menu.show_state = "[LC;2071]"
+locale.horse_menu.revive = "[LC;2069]"
+locale.horse_menu.feed = "[LC;2067]"
+locale.horse_menu.ride = "[LC;2070]"
+locale.horse_menu.unsummon = "[LC;2072]"
+locale.horse_menu.close = "[LC;2066]"
 
 locale.monkey_dungeon = {}
-locale.monkey_dungeon.button = gameforge.locale.monkey_dungeon.button
-locale.monkey_dungeon.curse_of_monkey_button = gameforge.locale.monkey_dungeon.curse_of_monkey_button
-locale.monkey_dungeon.curse_of_monkey = gameforge.locale.monkey_dungeon.curse_of_monkey
-locale.monkey_dungeon.cannot_ENTER_yet = gameforge.locale.monkey_dungeon.cannot_ENTER_yet
-locale.monkey_dungeon.low_entrance = gameforge.locale.monkey_dungeon.low_entrance
-locale.monkey_dungeon.middle_entrance = gameforge.locale.monkey_dungeon.middle_entrance
-locale.monkey_dungeon.notice = gameforge.locale.monkey_dungeon.notice
-locale.monkey_dungeon.quest_title = gameforge.locale.monkey_dungeon.quest_title
-locale.monkey_dungeon.quest_rest_time = gameforge.locale.monkey_dungeon.quest_rest_time
-locale.monkey_dungeon.ENTER = gameforge.locale.monkey_dungeon.ENTER
-locale.monkey_dungeon.no_ENTER = gameforge.locale.monkey_dungeon.no_ENTER
+locale.monkey_dungeon.button = "[LC;2128]"
+locale.monkey_dungeon.curse_of_monkey_button = "[LC;2131]"
+locale.monkey_dungeon.curse_of_monkey = "[LC;2130]"
+locale.monkey_dungeon.cannot_ENTER_yet = nil
+locale.monkey_dungeon.low_entrance = "[LC;2133]"
+locale.monkey_dungeon.middle_entrance = "[LC;2134]"
+locale.monkey_dungeon.notice = "[LC;2135]"
+locale.monkey_dungeon.quest_title = "[LC;2138]"
+locale.monkey_dungeon.quest_rest_time = "[LC;2137]"
+locale.monkey_dungeon.ENTER = nil
+locale.monkey_dungeon.no_ENTER = nil
 
 locale.questscroll5 = {}
 locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Aa",
-		gameforge.locale.questscroll5.mission_1_hunt,
-		gameforge.locale.questscroll5.mission_1_text,
-		gameforge.locale.questscroll5.mission_1_mis,
+		"[LC;2930]",
+		"[LC;2932]",
+		"[LC;2931]",
 		"8002",
 		3
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Aa",
-		gameforge.locale.questscroll5.mission_2_hunt,
-		gameforge.locale.questscroll5.mission_2_text,
-		gameforge.locale.questscroll5.mission_2_mis,
+		"[LC;2963]",
+		"[LC;2965]",
+		"[LC;2964]",
 		"8001",
 		2
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Aa",
-		gameforge.locale.questscroll5.mission_3_hunt,
-		gameforge.locale.questscroll5.mission_3_text,
-		gameforge.locale.questscroll5.mission_3_mis,
+		"[LC;2996]",
+		"[LC;2998]",
+		"[LC;2997]",
 		"107",
 		30
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Aa",
-		gameforge.locale.questscroll5.mission_4_hunt,
-		gameforge.locale.questscroll5.mission_4_text,
-		gameforge.locale.questscroll5.mission_4_mis,
+		"[LC;3029]",
+		"[LC;3031]",
+		"[LC;3030]",
 		"106",
 		35
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Aa",
-		gameforge.locale.questscroll5.mission_5_hunt,
-		gameforge.locale.questscroll5.mission_5_text,
-		gameforge.locale.questscroll5.mission_5_mis,
+		"[LC;3053]",
+		"[LC;3055]",
+		"[LC;3054]",
 		"108",
 		40
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Aa",
-		gameforge.locale.questscroll5.mission_6_hunt,
-		gameforge.locale.questscroll5.mission_6_text,
-		gameforge.locale.questscroll5.mission_6_mis,
+		"[LC;3056]",
+		"[LC;3058]",
+		"[LC;3057]",
 		"114"	,
 		25,
 		"110",
@@ -1784,36 +1754,36 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Ab",
-		gameforge.locale.questscroll5.mission_7_hunt,
-		gameforge.locale.questscroll5.mission_7_text,
-		gameforge.locale.questscroll5.mission_7_mis,
+		"[LC;3059]",
+		"[LC;3061]",
+		"[LC;3060]",
 		"8004",
 		2
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Ab",
-		gameforge.locale.questscroll5.mission_8_hunt,
-		gameforge.locale.questscroll5.mission_8_text,
-		gameforge.locale.questscroll5.mission_8_mis,
+		"[LC;3062]",
+		"[LC;3064]",
+		"[LC;3063]",
 		"8003",
 		2
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Ab",
-		gameforge.locale.questscroll5.mission_9_hunt,
-		gameforge.locale.questscroll5.mission_9_text,
-		gameforge.locale.questscroll5.mission_9_mis,
+		"[LC;3065]",
+		"[LC;3067]",
+		"[LC;3066]",
 		"109",
 		30
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Ab",
-		gameforge.locale.questscroll5.mission_10_hunt,
-		gameforge.locale.questscroll5.mission_10_text,
-		gameforge.locale.questscroll5.mission_10_mis,
+		"[LC;2900]",
+		"[LC;2902]",
+		"[LC;2901]",
 		"111",
 		25,
 		"112",
@@ -1822,9 +1792,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Ab",
-		gameforge.locale.questscroll5.mission_11_hunt,
-		gameforge.locale.questscroll5.mission_11_text,
-		gameforge.locale.questscroll5.mission_11_mis,
+		"[LC;2903]",
+		"[LC;2905]",
+		"[LC;2904]",
 		"104",
 		35,
 		"105",
@@ -1833,18 +1803,18 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Ba",
-		gameforge.locale.questscroll5.mission_12_hunt,
-		gameforge.locale.questscroll5.mission_12_text,
-		gameforge.locale.questscroll5.mission_12_mis,
+		"[LC;2906]",
+		"[LC;2908]",
+		"[LC;2907]",
 		"304",
 		20
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Ba",
-		gameforge.locale.questscroll5.mission_13_hunt,
-		gameforge.locale.questscroll5.mission_13_text,
-		gameforge.locale.questscroll5.mission_13_mis,
+		"[LC;2909]",
+		"[LC;2911]",
+		"[LC;2910]",
 		"404",
 		25,
 		"405",
@@ -1853,9 +1823,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Ba",
-		gameforge.locale.questscroll5.mission_14_hunt,
-		gameforge.locale.questscroll5.mission_14_text,
-		gameforge.locale.questscroll5.mission_14_mis,
+		"[LC;2912]",
+		"[LC;2914]",
+		"[LC;2913]",
 		"631",
 		30,
 		"632",
@@ -1864,9 +1834,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Ba",
-		gameforge.locale.questscroll5.mission_15_hunt,
-		gameforge.locale.questscroll5.mission_15_text,
-		gameforge.locale.questscroll5.mission_15_mis,
+		"[LC;2915]",
+		"[LC;2917]",
+		"[LC;2916]",
 		"501",
 		30,
 		"502",
@@ -1875,36 +1845,36 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Bb",
-		gameforge.locale.questscroll5.mission_16_hunt,
-		gameforge.locale.questscroll5.mission_16_text,
-		gameforge.locale.questscroll5.mission_16_mis,
+		"[LC;2918]",
+		"[LC;2920]",
+		"[LC;2919]",
 		"8006",
 		3
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Bb",
-		gameforge.locale.questscroll5.mission_17_hunt,
-		gameforge.locale.questscroll5.mission_17_text,
-		gameforge.locale.questscroll5.mission_17_mis,
+		"[LC;2921]",
+		"[LC;2923]",
+		"[LC;2922]",
 		"8005",
 		2
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Bb",
-		gameforge.locale.questscroll5.mission_18_hunt,
-		gameforge.locale.questscroll5.mission_18_text,
-		gameforge.locale.questscroll5.mission_18_mis,
+		"[LC;2924]",
+		"[LC;2926]",
+		"[LC;2925]",
 		"393",
 		10
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Bb",
-		gameforge.locale.questscroll5.mission_19_hunt,
-		gameforge.locale.questscroll5.mission_19_text,
-		gameforge.locale.questscroll5.mission_19_mis,
+		"[LC;2927]",
+		"[LC;2929]",
+		"[LC;2928]",
 		"633",
 		20,
 		"634",
@@ -1913,9 +1883,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Bb",
-		gameforge.locale.questscroll5.mission_20_hunt,
-		gameforge.locale.questscroll5.mission_20_text,
-		gameforge.locale.questscroll5.mission_20_mis,
+		"[LC;2933]",
+		"[LC;2935]",
+		"[LC;2934]",
 		"5111",
 		30,
 		"5112",
@@ -1924,9 +1894,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Bb",
-		gameforge.locale.questscroll5.mission_21_hunt,
-		gameforge.locale.questscroll5.mission_21_text,
-		gameforge.locale.questscroll5.mission_21_mis,
+		"[LC;2936]",
+		"[LC;2938]",
+		"[LC;2937]",
 		"5101",
 		30,
 		"5102",
@@ -1935,27 +1905,27 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Bc",
-		gameforge.locale.questscroll5.mission_22_hunt,
-		gameforge.locale.questscroll5.mission_22_text,
-		gameforge.locale.questscroll5.mission_22_mis,
+		"[LC;2939]",
+		"[LC;2941]",
+		"[LC;2940]",
 		"494",
 		4
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Bc",
-		gameforge.locale.questscroll5.mission_23_hunt,
-		gameforge.locale.questscroll5.mission_23_text,
-		gameforge.locale.questscroll5.mission_23_mis,
+		"[LC;2942]",
+		"[LC;2944]",
+		"[LC;2943]",
 		"8007",
 		2
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Bc",
-		gameforge.locale.questscroll5.mission_24_hunt,
-		gameforge.locale.questscroll5.mission_24_text,
-		gameforge.locale.questscroll5.mission_24_mis,
+		"[LC;2945]",
+		"[LC;2947]",
+		"[LC;2946]",
 		"5113",
 		15,
 		"5114",
@@ -1964,9 +1934,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Bc",
-		gameforge.locale.questscroll5.mission_25_hunt,
-		gameforge.locale.questscroll5.mission_25_text,
-		gameforge.locale.questscroll5.mission_25_mis,
+		"[LC;2948]",
+		"[LC;2950]",
+		"[LC;2949]",
 		"5103",
 		15,
 		"5104",
@@ -1975,36 +1945,36 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Ca",
-		gameforge.locale.questscroll5.mission_26_hunt,
-		gameforge.locale.questscroll5.mission_26_text,
-		gameforge.locale.questscroll5.mission_26_mis,
+		"[LC;2951]",
+		"[LC;2953]",
+		"[LC;2952]",
 		"8008",
 		2
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Ca",
-		gameforge.locale.questscroll5.mission_27_hunt,
-		gameforge.locale.questscroll5.mission_27_text,
-		gameforge.locale.questscroll5.mission_27_mis,
+		"[LC;2954]",
+		"[LC;2956]",
+		"[LC;2955]",
 		"2001",
 		40
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Ca",
-		gameforge.locale.questscroll5.mission_28_hunt,
-		gameforge.locale.questscroll5.mission_28_text,
-		gameforge.locale.questscroll5.mission_28_mis,
+		"[LC;2957]",
+		"[LC;2959]",
+		"[LC;2958]",
 		"2002",
 		40
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Ca",
-		gameforge.locale.questscroll5.mission_29_hunt,
-		gameforge.locale.questscroll5.mission_29_text,
-		gameforge.locale.questscroll5.mission_29_mis,
+		"[LC;2960]",
+		"[LC;2962]",
+		"[LC;2961]",
 		"703",
 		20,
 		"704",
@@ -2013,9 +1983,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Ca",
-		gameforge.locale.questscroll5.mission_30_hunt,
-		gameforge.locale.questscroll5.mission_30_text,
-		gameforge.locale.questscroll5.mission_30_mis,
+		"[LC;2966]",
+		"[LC;2968]",
+		"[LC;2967]",
 		"701",
 		30,
 		"702",
@@ -2024,9 +1994,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Ca",
-		gameforge.locale.questscroll5.mission_31_hunt,
-		gameforge.locale.questscroll5.mission_31_text,
-		gameforge.locale.questscroll5.mission_31_mis,
+		"[LC;2969]",
+		"[LC;2971]",
+		"[LC;2970]",
 		"706",
 		40,
 		"707",
@@ -2035,18 +2005,18 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Cb",
-		gameforge.locale.questscroll5.mission_32_hunt,
-		gameforge.locale.questscroll5.mission_32_text,
-		gameforge.locale.questscroll5.mission_32_mis,
+		"[LC;2972]",
+		"[LC;2974]",
+		"[LC;2973]",
 		"8009",
 		2
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cb",
-		gameforge.locale.questscroll5.mission_33_hunt,
-		gameforge.locale.questscroll5.mission_33_text,
-		gameforge.locale.questscroll5.mission_33_mis,
+		"[LC;2975]",
+		"[LC;2977]",
+		"[LC;2976]",
 		"2031",
 		35,
 		"2032",
@@ -2055,9 +2025,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cb",
-		gameforge.locale.questscroll5.mission_34_hunt,
-		gameforge.locale.questscroll5.mission_34_text,
-		gameforge.locale.questscroll5.mission_34_mis,
+		"[LC;2978]",
+		"[LC;2980]",
+		"[LC;2979]",
 		"2031",
 		35,
 		"2032",
@@ -2066,9 +2036,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cb",
-		gameforge.locale.questscroll5.mission_35_hunt,
-		gameforge.locale.questscroll5.mission_35_text,
-		gameforge.locale.questscroll5.mission_35_mis,
+		"[LC;2981]",
+		"[LC;2983]",
+		"[LC;2982]",
 		"2033",
 		35,
 		"2034",
@@ -2077,27 +2047,27 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Cb",
-		gameforge.locale.questscroll5.mission_36_hunt,
-		gameforge.locale.questscroll5.mission_36_text,
-		gameforge.locale.questscroll5.mission_36_mis,
+		"[LC;2984]",
+		"[LC;2986]",
+		"[LC;2985]",
 		"2035",
 		40
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Cc",
-		gameforge.locale.questscroll5.mission_37_hunt,
-		gameforge.locale.questscroll5.mission_37_text,
-		gameforge.locale.questscroll5.mission_37_mis,
+		"[LC;2987]",
+		"[LC;2989]",
+		"[LC;2988]",
 		"8010",
 		2
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cc",
-		gameforge.locale.questscroll5.mission_38_hunt,
-		gameforge.locale.questscroll5.mission_38_text,
-		gameforge.locale.questscroll5.mission_38_mis,
+		"[LC;2990]",
+		"[LC;2992]",
+		"[LC;2991]",
 		"2103",
 		30,
 		"2104",
@@ -2106,9 +2076,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cc",
-		gameforge.locale.questscroll5.mission_39_hunt,
-		gameforge.locale.questscroll5.mission_39_text,
-		gameforge.locale.questscroll5.mission_39_mis,
+		"[LC;2993]",
+		"[LC;2995]",
+		"[LC;2994]",
 		"1001",
 		30,
 		"1002",
@@ -2117,9 +2087,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cc",
-		gameforge.locale.questscroll5.mission_40_hunt,
-		gameforge.locale.questscroll5.mission_40_text,
-		gameforge.locale.questscroll5.mission_40_mis,
+		"[LC;2999]",
+		"[LC;3001]",
+		"[LC;3000]",
 		"1003",
 		30,
 		"1004",
@@ -2128,9 +2098,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cd",
-		gameforge.locale.questscroll5.mission_41_hunt,
-		gameforge.locale.questscroll5.mission_41_text,
-		gameforge.locale.questscroll5.mission_41_mis,
+		"[LC;3002]",
+		"[LC;3004]",
+		"[LC;3003]",
 		"5123",
 		15,
 		"5124",
@@ -2139,18 +2109,18 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Cd",
-		gameforge.locale.questscroll5.mission_42_hunt,
-		gameforge.locale.questscroll5.mission_42_text,
-		gameforge.locale.questscroll5.mission_42_mis,
+		"[LC;3005]",
+		"[LC;3007]",
+		"[LC;3006]",
 		"1107",
 		25
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cd",
-		gameforge.locale.questscroll5.mission_43_hunt,
-		gameforge.locale.questscroll5.mission_43_text,
-		gameforge.locale.questscroll5.mission_43_mis,
+		"[LC;3008]",
+		"[LC;3010]",
+		"[LC;3009]",
 		"5121",
 		30,
 		"5122",
@@ -2159,18 +2129,18 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Cd",
-		gameforge.locale.questscroll5.mission_44_hunt,
-		gameforge.locale.questscroll5.mission_44_text,
-		gameforge.locale.questscroll5.mission_44_mis,
+		"[LC;3011]",
+		"[LC;3013]",
+		"[LC;3012]",
 		"1305",
 		30
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cd",
-		gameforge.locale.questscroll5.mission_45_hunt,
-		gameforge.locale.questscroll5.mission_45_text,
-		gameforge.locale.questscroll5.mission_45_mis,
+		"[LC;3014]",
+		"[LC;3016]",
+		"[LC;3015]",
 		"1105",
 		35,
 		"1106",
@@ -2179,9 +2149,9 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Cd",
-		gameforge.locale.questscroll5.mission_46_hunt,
-		gameforge.locale.questscroll5.mission_46_text,
-		gameforge.locale.questscroll5.mission_46_mis,
+		"[LC;3017]",
+		"[LC;3019]",
+		"[LC;3018]",
 		"1301",
 		45,
 		"1302",
@@ -2190,54 +2160,54 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Cd",
-		gameforge.locale.questscroll5.mission_47_hunt,
-		gameforge.locale.questscroll5.mission_47_text,
-		gameforge.locale.questscroll5.mission_47_mis,
+		"[LC;3020]",
+		"[LC;3022]",
+		"[LC;3021]",
 		"1101",
 		45
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Da",
-		gameforge.locale.questscroll5.mission_48_hunt,
-		gameforge.locale.questscroll5.mission_48_text,
-		gameforge.locale.questscroll5.mission_48_mis,
+		"[LC;3023]",
+		"[LC;3025]",
+		"[LC;3024]",
 		"1063",
 		45
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Da",
-		gameforge.locale.questscroll5.mission_49_hunt,
-		gameforge.locale.questscroll5.mission_49_text,
-		gameforge.locale.questscroll5.mission_49_mis,
+		"[LC;3026]",
+		"[LC;3028]",
+		"[LC;3027]",
 		"1064",
 		60
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Da",
-		gameforge.locale.questscroll5.mission_50_hunt,
-		gameforge.locale.questscroll5.mission_50_text,
-		gameforge.locale.questscroll5.mission_50_mis,
+		"[LC;3032]",
+		"[LC;3034]",
+		"[LC;3033]",
 		"2201",
 		45
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Db",
-		gameforge.locale.questscroll5.mission_51_hunt,
-		gameforge.locale.questscroll5.mission_51_text,
-		gameforge.locale.questscroll5.mission_51_mis,
+		"[LC;3035]",
+		"[LC;3037]",
+		"[LC;3036]",
 		"2202",
 		45
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Db",
-		gameforge.locale.questscroll5.mission_52_hunt,
-		gameforge.locale.questscroll5.mission_52_text,
-		gameforge.locale.questscroll5.mission_52_mis,
+		"[LC;3038]",
+		"[LC;3040]",
+		"[LC;3039]",
 		"2201",
 		60,
 		"2203",
@@ -2246,36 +2216,36 @@ locale.questscroll5.mission = {
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Db",
-		gameforge.locale.questscroll5.mission_53_hunt,
-		gameforge.locale.questscroll5.mission_53_text,
-		gameforge.locale.questscroll5.mission_53_mis,
+		"[LC;3041]",
+		"[LC;3043]",
+		"[LC;3042]",
 		"2204",
 		40
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Db",
-		gameforge.locale.questscroll5.mission_54_hunt,
-		gameforge.locale.questscroll5.mission_54_text,
-		gameforge.locale.questscroll5.mission_54_mis,
+		"[LC;3044]",
+		"[LC;3046]",
+		"[LC;3045]",
 		"2205",
 		60
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB,
 		"Dc",
-		gameforge.locale.questscroll5.mission_55_hunt,
-		gameforge.locale.questscroll5.mission_55_text,
-		gameforge.locale.questscroll5.mission_55_mis,
+		"[LC;3047]",
+		"[LC;3049]",
+		"[LC;3048]",
 		"2301",
 		30
 	},
 	{
 		QUEST_SCROLL_TYPE_KILL_MOB2,
 		"Dc",
-		gameforge.locale.questscroll5.mission_56_hunt,
-		gameforge.locale.questscroll5.mission_56_text,
-		gameforge.locale.questscroll5.mission_56_mis,
+		"[LC;3050]",
+		"[LC;3052]",
+		"[LC;3051]",
 		"2302",
 		40,
 		"2303",
@@ -2582,620 +2552,620 @@ locale.questscroll5.reward_item = {
 
 locale.quiz = {
 	{
-		gameforge.locale.quiz_1_0_question,
-		gameforge.locale.quiz_1_1_choice,
-		gameforge.locale.quiz_1_2_choice,
-		gameforge.locale.quiz_1_3_choice,
-		gameforge.locale.quiz_1_4_choice,
-		gameforge.locale.quiz_1_5_answer
-	},
-	{
-		gameforge.locale.quiz_2_0_question,
-		gameforge.locale.quiz_2_1_choice,
-		gameforge.locale.quiz_2_2_choice,
-		gameforge.locale.quiz_2_3_choice,
-		gameforge.locale.quiz_2_4_choice,
-		gameforge.locale.quiz_2_5_answer
-	},
-	{
-		gameforge.locale.quiz_3_0_question,
-		gameforge.locale.quiz_3_1_choice,
-		gameforge.locale.quiz_3_2_choice,
-		gameforge.locale.quiz_3_3_choice,
-		gameforge.locale.quiz_3_4_choice,
-		gameforge.locale.quiz_3_5_answer
-	},
-	{
-		gameforge.locale.quiz_4_0_question,
-		gameforge.locale.quiz_4_1_choice,
-		gameforge.locale.quiz_4_2_choice,
-		gameforge.locale.quiz_4_3_choice,
-		gameforge.locale.quiz_4_4_choice,
-		gameforge.locale.quiz_4_5_answer
-	},
-	{
-		gameforge.locale.quiz_5_0_question,
-		gameforge.locale.quiz_5_1_choice,
-		gameforge.locale.quiz_5_2_choice,
-		gameforge.locale.quiz_5_3_choice,
-		gameforge.locale.quiz_5_4_choice,
-		gameforge.locale.quiz_5_5_answer
-	},
-	{
-		gameforge.locale.quiz_6_0_question,
-		gameforge.locale.quiz_6_1_choice,
-		gameforge.locale.quiz_6_2_choice,
-		gameforge.locale.quiz_6_3_choice,
-		gameforge.locale.quiz_6_4_choice,
-		gameforge.locale.quiz_6_5_answer
-	},
-	{
-		gameforge.locale.quiz_7_0_question,
-		gameforge.locale.quiz_7_1_choice,
-		gameforge.locale.quiz_7_2_choice,
-		gameforge.locale.quiz_7_3_choice,
-		gameforge.locale.quiz_7_4_choice,
-		gameforge.locale.quiz_7_5_answer
-	},
-	{
-		gameforge.locale.quiz_8_0_question,
-		gameforge.locale.quiz_8_1_choice,
-		gameforge.locale.quiz_8_2_choice,
-		gameforge.locale.quiz_8_3_choice,
-		gameforge.locale.quiz_8_4_choice,
-		gameforge.locale.quiz_8_5_answer
-	},
-	{
-		gameforge.locale.quiz_9_0_question,
-		gameforge.locale.quiz_9_1_choice,
-		gameforge.locale.quiz_9_2_choice,
-		gameforge.locale.quiz_9_3_choice,
-		gameforge.locale.quiz_9_4_choice,
-		gameforge.locale.quiz_9_5_answer
-	},
-	{
-		gameforge.locale.quiz_10_0_question,
-		gameforge.locale.quiz_10_1_choice,
-		gameforge.locale.quiz_10_2_choice,
-		gameforge.locale.quiz_10_3_choice,
-		gameforge.locale.quiz_10_4_choice,
-		gameforge.locale.quiz_10_5_answer
-	},
-	{
-		gameforge.locale.quiz_11_0_question,
-		gameforge.locale.quiz_11_1_choice,
-		gameforge.locale.quiz_11_2_choice,
-		gameforge.locale.quiz_11_3_choice,
-		gameforge.locale.quiz_11_4_choice,
-		gameforge.locale.quiz_11_5_answer
-	},
-	{
-		gameforge.locale.quiz_12_0_question,
-		gameforge.locale.quiz_12_1_choice,
-		gameforge.locale.quiz_12_2_choice,
-		gameforge.locale.quiz_12_3_choice,
-		gameforge.locale.quiz_12_4_choice,
-		gameforge.locale.quiz_12_5_answer
-	},
-	{
-		gameforge.locale.quiz_13_0_question,
-		gameforge.locale.quiz_13_1_choice,
-		gameforge.locale.quiz_13_2_choice,
-		gameforge.locale.quiz_13_3_choice,
-		gameforge.locale.quiz_13_4_choice,
-		gameforge.locale.quiz_13_5_answer
+		"[LC;3190]",
+		"[LC;3191]",
+		"[LC;3192]",
+		"[LC;3193]",
+		"[LC;3194]",
+		"[LC;3195]"
+	},
+	{
+		"[LC;3256]",
+		"[LC;3257]",
+		"[LC;3258]",
+		"[LC;3259]",
+		"[LC;3260]",
+		"[LC;3261]"
+	},
+	{
+		"[LC;3322]",
+		"[LC;3323]",
+		"[LC;3324]",
+		"[LC;3325]",
+		"[LC;3326]",
+		"[LC;3327]"
+	},
+	{
+		"[LC;3388]",
+		"[LC;3389]",
+		"[LC;3390]",
+		"[LC;3391]",
+		"[LC;3392]",
+		"[LC;3393]"
+	},
+	{
+		"[LC;3454]",
+		"[LC;3455]",
+		"[LC;3456]",
+		"[LC;3457]",
+		"[LC;3458]",
+		"[LC;3459]"
+	},
+	{
+		"[LC;3520]",
+		"[LC;3521]",
+		"[LC;3522]",
+		"[LC;3523]",
+		"[LC;3524]",
+		"[LC;3525]"
+	},
+	{
+		"[LC;3538]",
+		"[LC;3539]",
+		"[LC;3540]",
+		"[LC;3541]",
+		"[LC;3542]",
+		"[LC;3543]"
+	},
+	{
+		"[LC;3544]",
+		"[LC;3545]",
+		"[LC;3546]",
+		"[LC;3547]",
+		"[LC;3548]",
+		"[LC;3549]"
+	},
+	{
+		"[LC;3550]",
+		"[LC;3551]",
+		"[LC;3552]",
+		"[LC;3553]",
+		"[LC;3554]",
+		"[LC;3555]"
+	},
+	{
+		"[LC;3130]",
+		"[LC;3131]",
+		"[LC;3132]",
+		"[LC;3133]",
+		"[LC;3134]",
+		"[LC;3135]"
+	},
+	{
+		"[LC;3136]",
+		"[LC;3137]",
+		"[LC;3138]",
+		"[LC;3139]",
+		"[LC;3140]",
+		"[LC;3141]"
+	},
+	{
+		"[LC;3142]",
+		"[LC;3143]",
+		"[LC;3144]",
+		"[LC;3145]",
+		"[LC;3146]",
+		"[LC;3147]"
+	},
+	{
+		"[LC;3148]",
+		"[LC;3149]",
+		"[LC;3150]",
+		"[LC;3151]",
+		"[LC;3152]",
+		"[LC;3153]"
 	},
 	{
-		gameforge.locale.quiz_14_0_question,
-		gameforge.locale.quiz_14_1_choice,
-		gameforge.locale.quiz_14_2_choice,
-		gameforge.locale.quiz_14_3_choice,
-		gameforge.locale.quiz_14_4_choice,
-		gameforge.locale.quiz_14_5_answer
+		"[LC;3154]",
+		"[LC;3155]",
+		"[LC;3156]",
+		"[LC;3157]",
+		"[LC;3158]",
+		"[LC;3159]"
 	},
 	{
-		gameforge.locale.quiz_15_0_question,
-		gameforge.locale.quiz_15_1_choice,
-		gameforge.locale.quiz_15_2_choice,
-		gameforge.locale.quiz_15_3_choice,
-		gameforge.locale.quiz_15_4_choice,
-		gameforge.locale.quiz_15_5_answer
+		"[LC;3160]",
+		"[LC;3161]",
+		"[LC;3162]",
+		"[LC;3163]",
+		"[LC;3164]",
+		"[LC;3165]"
 	},
 	{
-		gameforge.locale.quiz_16_0_question,
-		gameforge.locale.quiz_16_1_choice,
-		gameforge.locale.quiz_16_2_choice,
-		gameforge.locale.quiz_16_3_choice,
-		gameforge.locale.quiz_16_4_choice,
-		gameforge.locale.quiz_16_5_answer
+		"[LC;3166]",
+		"[LC;3167]",
+		"[LC;3168]",
+		"[LC;3169]",
+		"[LC;3170]",
+		"[LC;3171]"
 	},
 	{
-		gameforge.locale.quiz_17_0_question,
-		gameforge.locale.quiz_17_1_choice,
-		gameforge.locale.quiz_17_2_choice,
-		gameforge.locale.quiz_17_3_choice,
-		gameforge.locale.quiz_17_4_choice,
-		gameforge.locale.quiz_17_5_answer
+		"[LC;3172]",
+		"[LC;3173]",
+		"[LC;3174]",
+		"[LC;3175]",
+		"[LC;3176]",
+		"[LC;3177]"
 	},
 	{
-		gameforge.locale.quiz_18_0_question,
-		gameforge.locale.quiz_18_1_choice,
-		gameforge.locale.quiz_18_2_choice,
-		gameforge.locale.quiz_18_3_choice,
-		gameforge.locale.quiz_18_4_choice,
-		gameforge.locale.quiz_18_5_answer
+		"[LC;3178]",
+		"[LC;3179]",
+		"[LC;3180]",
+		"[LC;3181]",
+		"[LC;3182]",
+		"[LC;3183]"
 	},
 	{
-		gameforge.locale.quiz_19_0_question,
-		gameforge.locale.quiz_19_1_choice,
-		gameforge.locale.quiz_19_2_choice,
-		gameforge.locale.quiz_19_3_choice,
-		gameforge.locale.quiz_19_4_choice,
-		gameforge.locale.quiz_19_5_answer
+		"[LC;3184]",
+		"[LC;3185]",
+		"[LC;3186]",
+		"[LC;3187]",
+		"[LC;3188]",
+		"[LC;3189]"
 	},
 	{
-		gameforge.locale.quiz_20_0_question,
-		gameforge.locale.quiz_20_1_choice,
-		gameforge.locale.quiz_20_2_choice,
-		gameforge.locale.quiz_20_3_choice,
-		gameforge.locale.quiz_20_4_choice,
-		gameforge.locale.quiz_20_5_answer
+		"[LC;3196]",
+		"[LC;3197]",
+		"[LC;3198]",
+		"[LC;3199]",
+		"[LC;3200]",
+		"[LC;3201]"
 	},
 	{
-		gameforge.locale.quiz_21_0_question,
-		gameforge.locale.quiz_21_1_choice,
-		gameforge.locale.quiz_21_2_choice,
-		gameforge.locale.quiz_21_3_choice,
-		gameforge.locale.quiz_21_4_choice,
-		gameforge.locale.quiz_21_5_answer
+		"[LC;3202]",
+		"[LC;3203]",
+		"[LC;3204]",
+		"[LC;3205]",
+		"[LC;3206]",
+		"[LC;3207]"
 	},
 	{
-		gameforge.locale.quiz_22_0_question,
-		gameforge.locale.quiz_22_1_choice,
-		gameforge.locale.quiz_22_2_choice,
-		gameforge.locale.quiz_22_3_choice,
-		gameforge.locale.quiz_22_4_choice,
-		gameforge.locale.quiz_22_5_answer
+		"[LC;3208]",
+		"[LC;3209]",
+		"[LC;3210]",
+		"[LC;3211]",
+		"[LC;3212]",
+		"[LC;3213]"
 	},
 	{
-		gameforge.locale.quiz_23_0_question,
-		gameforge.locale.quiz_23_1_choice,
-		gameforge.locale.quiz_23_2_choice,
-		gameforge.locale.quiz_23_3_choice,
-		gameforge.locale.quiz_23_4_choice,
-		gameforge.locale.quiz_23_5_answer
+		"[LC;3214]",
+		"[LC;3215]",
+		"[LC;3216]",
+		"[LC;3217]",
+		"[LC;3218]",
+		"[LC;3219]"
 	},
 	{
-		gameforge.locale.quiz_24_0_question,
-		gameforge.locale.quiz_24_1_choice,
-		gameforge.locale.quiz_24_2_choice,
-		gameforge.locale.quiz_24_3_choice,
-		gameforge.locale.quiz_24_4_choice,
-		gameforge.locale.quiz_24_5_answer
+		"[LC;3220]",
+		"[LC;3221]",
+		"[LC;3222]",
+		"[LC;3223]",
+		"[LC;3224]",
+		"[LC;3225]"
 	},
 	{
-		gameforge.locale.quiz_25_0_question,
-		gameforge.locale.quiz_25_1_choice,
-		gameforge.locale.quiz_25_2_choice,
-		gameforge.locale.quiz_25_3_choice,
-		gameforge.locale.quiz_25_4_choice,
-		gameforge.locale.quiz_25_5_answer
+		"[LC;3226]",
+		"[LC;3227]",
+		"[LC;3228]",
+		"[LC;3229]",
+		"[LC;3230]",
+		"[LC;3231]"
 	},
 	{
-		gameforge.locale.quiz_26_0_question,
-		gameforge.locale.quiz_26_1_choice,
-		gameforge.locale.quiz_26_2_choice,
-		gameforge.locale.quiz_26_3_choice,
-		gameforge.locale.quiz_26_4_choice,
-		gameforge.locale.quiz_26_5_answer
+		"[LC;3232]",
+		"[LC;3233]",
+		"[LC;3234]",
+		"[LC;3235]",
+		"[LC;3236]",
+		"[LC;3237]"
 	},
 	{
-		gameforge.locale.quiz_27_0_question,
-		gameforge.locale.quiz_27_1_choice,
-		gameforge.locale.quiz_27_2_choice,
-		gameforge.locale.quiz_27_3_choice,
-		gameforge.locale.quiz_27_4_choice,
-		gameforge.locale.quiz_27_5_answer
+		"[LC;3238]",
+		"[LC;3239]",
+		"[LC;3240]",
+		"[LC;3241]",
+		"[LC;3242]",
+		"[LC;3243]"
 	},
 	{
-		gameforge.locale.quiz_28_0_question,
-		gameforge.locale.quiz_28_1_choice,
-		gameforge.locale.quiz_28_2_choice,
-		gameforge.locale.quiz_28_3_choice,
-		gameforge.locale.quiz_28_4_choice,
-		gameforge.locale.quiz_28_5_answer
+		"[LC;3244]",
+		"[LC;3245]",
+		"[LC;3246]",
+		"[LC;3247]",
+		"[LC;3248]",
+		"[LC;3249]"
 	},
 	{
-		gameforge.locale.quiz_29_0_question,
-		gameforge.locale.quiz_29_1_choice,
-		gameforge.locale.quiz_29_2_choice,
-		gameforge.locale.quiz_29_3_choice,
-		gameforge.locale.quiz_29_4_choice,
-		gameforge.locale.quiz_29_5_answer
+		"[LC;3250]",
+		"[LC;3251]",
+		"[LC;3252]",
+		"[LC;3253]",
+		"[LC;3254]",
+		"[LC;3255]"
 	},
 	{
-		gameforge.locale.quiz_30_0_question,
-		gameforge.locale.quiz_30_1_choice,
-		gameforge.locale.quiz_30_2_choice,
-		gameforge.locale.quiz_30_3_choice,
-		gameforge.locale.quiz_30_4_choice,
-		gameforge.locale.quiz_30_5_answer
+		"[LC;3262]",
+		"[LC;3263]",
+		"[LC;3264]",
+		"[LC;3265]",
+		"[LC;3266]",
+		"[LC;3267]"
 	},
 	{
-		gameforge.locale.quiz_31_0_question,
-		gameforge.locale.quiz_31_1_choice,
-		gameforge.locale.quiz_31_2_choice,
-		gameforge.locale.quiz_31_3_choice,
-		gameforge.locale.quiz_31_4_choice,
-		gameforge.locale.quiz_31_5_answer
+		"[LC;3268]",
+		"[LC;3269]",
+		"[LC;3270]",
+		"[LC;3271]",
+		"[LC;3272]",
+		"[LC;3273]"
 	},
 	{
-		gameforge.locale.quiz_32_0_question,
-		gameforge.locale.quiz_32_1_choice,
-		gameforge.locale.quiz_32_2_choice,
-		gameforge.locale.quiz_32_3_choice,
-		gameforge.locale.quiz_32_4_choice,
-		gameforge.locale.quiz_32_5_answer
+		"[LC;3274]",
+		"[LC;3275]",
+		"[LC;3276]",
+		"[LC;3277]",
+		"[LC;3278]",
+		"[LC;3279]"
 	},
 	{
-		gameforge.locale.quiz_33_0_question,
-		gameforge.locale.quiz_33_1_choice,
-		gameforge.locale.quiz_33_2_choice,
-		gameforge.locale.quiz_33_3_choice,
-		gameforge.locale.quiz_33_4_choice,
-		gameforge.locale.quiz_33_5_answer
+		"[LC;3280]",
+		"[LC;3281]",
+		"[LC;3282]",
+		"[LC;3283]",
+		"[LC;3284]",
+		"[LC;3285]"
 	},
 	{
-		gameforge.locale.quiz_34_0_question,
-		gameforge.locale.quiz_34_1_choice,
-		gameforge.locale.quiz_34_2_choice,
-		gameforge.locale.quiz_34_3_choice,
-		gameforge.locale.quiz_34_4_choice,
-		gameforge.locale.quiz_34_5_answer
+		"[LC;3286]",
+		"[LC;3287]",
+		"[LC;3288]",
+		"[LC;3289]",
+		"[LC;3290]",
+		"[LC;3291]"
 	},
 	{
-		gameforge.locale.quiz_35_0_question,
-		gameforge.locale.quiz_35_1_choice,
-		gameforge.locale.quiz_35_2_choice,
-		gameforge.locale.quiz_35_3_choice,
-		gameforge.locale.quiz_35_4_choice,
-		gameforge.locale.quiz_35_5_answer
+		"[LC;3292]",
+		"[LC;3293]",
+		"[LC;3294]",
+		"[LC;3295]",
+		"[LC;3296]",
+		"[LC;3297]"
 	},
 	{
-		gameforge.locale.quiz_36_0_question,
-		gameforge.locale.quiz_36_1_choice,
-		gameforge.locale.quiz_36_2_choice,
-		gameforge.locale.quiz_36_3_choice,
-		gameforge.locale.quiz_36_4_choice,
-		gameforge.locale.quiz_36_5_answer
+		"[LC;3298]",
+		"[LC;3299]",
+		"[LC;3300]",
+		"[LC;3301]",
+		"[LC;3302]",
+		"[LC;3303]"
 	},
 	{
-		gameforge.locale.quiz_37_0_question,
-		gameforge.locale.quiz_37_1_choice,
-		gameforge.locale.quiz_37_2_choice,
-		gameforge.locale.quiz_37_3_choice,
-		gameforge.locale.quiz_37_4_choice,
-		gameforge.locale.quiz_37_5_answer
+		"[LC;3304]",
+		"[LC;3305]",
+		"[LC;3306]",
+		"[LC;3307]",
+		"[LC;3308]",
+		"[LC;3309]"
 	},
 	{
-		gameforge.locale.quiz_38_0_question,
-		gameforge.locale.quiz_38_1_choice,
-		gameforge.locale.quiz_38_2_choice,
-		gameforge.locale.quiz_38_3_choice,
-		gameforge.locale.quiz_38_4_choice,
-		gameforge.locale.quiz_38_5_answer
+		"[LC;3310]",
+		"[LC;3311]",
+		"[LC;3312]",
+		"[LC;3313]",
+		"[LC;3314]",
+		"[LC;3315]"
 	},
 	{
-		gameforge.locale.quiz_39_0_question,
-		gameforge.locale.quiz_39_1_choice,
-		gameforge.locale.quiz_39_2_choice,
-		gameforge.locale.quiz_39_3_choice,
-		gameforge.locale.quiz_39_4_choice,
-		gameforge.locale.quiz_39_5_answer
+		"[LC;3316]",
+		"[LC;3317]",
+		"[LC;3318]",
+		"[LC;3319]",
+		"[LC;3320]",
+		"[LC;3321]"
 	},
 	{
-		gameforge.locale.quiz_40_0_question,
-		gameforge.locale.quiz_40_1_choice,
-		gameforge.locale.quiz_40_2_choice,
-		gameforge.locale.quiz_40_3_choice,
-		gameforge.locale.quiz_40_4_choice,
-		gameforge.locale.quiz_40_5_answer
+		"[LC;3328]",
+		"[LC;3329]",
+		"[LC;3330]",
+		"[LC;3331]",
+		"[LC;3332]",
+		"[LC;3333]"
 	},
 	{
-		gameforge.locale.quiz_41_0_question,
-		gameforge.locale.quiz_41_1_choice,
-		gameforge.locale.quiz_41_2_choice,
-		gameforge.locale.quiz_41_3_choice,
-		gameforge.locale.quiz_41_4_choice,
-		gameforge.locale.quiz_41_5_answer
+		"[LC;3334]",
+		"[LC;3335]",
+		"[LC;3336]",
+		"[LC;3337]",
+		"[LC;3338]",
+		"[LC;3339]"
 	},
 	{
-		gameforge.locale.quiz_42_0_question,
-		gameforge.locale.quiz_42_1_choice,
-		gameforge.locale.quiz_42_2_choice,
-		gameforge.locale.quiz_42_3_choice,
-		gameforge.locale.quiz_42_4_choice,
-		gameforge.locale.quiz_42_5_answer
+		"[LC;3340]",
+		"[LC;3341]",
+		"[LC;3342]",
+		"[LC;3343]",
+		"[LC;3344]",
+		"[LC;3345]"
 	},
 	{
-		gameforge.locale.quiz_43_0_question,
-		gameforge.locale.quiz_43_1_choice,
-		gameforge.locale.quiz_43_2_choice,
-		gameforge.locale.quiz_43_3_choice,
-		gameforge.locale.quiz_43_4_choice,
-		gameforge.locale.quiz_43_5_answer
+		"[LC;3346]",
+		"[LC;3347]",
+		"[LC;3348]",
+		"[LC;3349]",
+		"[LC;3350]",
+		"[LC;3351]"
 	},
 	{
-		gameforge.locale.quiz_44_0_question,
-		gameforge.locale.quiz_44_1_choice,
-		gameforge.locale.quiz_44_2_choice,
-		gameforge.locale.quiz_44_3_choice,
-		gameforge.locale.quiz_44_4_choice,
-		gameforge.locale.quiz_44_5_answer
+		"[LC;3352]",
+		"[LC;3353]",
+		"[LC;3354]",
+		"[LC;3355]",
+		"[LC;3356]",
+		"[LC;3357]"
 	},
 	{
-		gameforge.locale.quiz_45_0_question,
-		gameforge.locale.quiz_45_1_choice,
-		gameforge.locale.quiz_45_2_choice,
-		gameforge.locale.quiz_45_3_choice,
-		gameforge.locale.quiz_45_4_choice,
-		gameforge.locale.quiz_45_5_answer
+		"[LC;3358]",
+		"[LC;3359]",
+		"[LC;3360]",
+		"[LC;3361]",
+		"[LC;3362]",
+		"[LC;3363]"
 	},
 	{
-		gameforge.locale.quiz_46_0_question,
-		gameforge.locale.quiz_46_1_choice,
-		gameforge.locale.quiz_46_2_choice,
-		gameforge.locale.quiz_46_3_choice,
-		gameforge.locale.quiz_46_4_choice,
-		gameforge.locale.quiz_46_5_answer
+		"[LC;3364]",
+		"[LC;3365]",
+		"[LC;3366]",
+		"[LC;3367]",
+		"[LC;3368]",
+		"[LC;3369]"
 	},
 	{
-		gameforge.locale.quiz_47_0_question,
-		gameforge.locale.quiz_47_1_choice,
-		gameforge.locale.quiz_47_2_choice,
-		gameforge.locale.quiz_47_3_choice,
-		gameforge.locale.quiz_47_4_choice,
-		gameforge.locale.quiz_47_5_answer
+		"[LC;3370]",
+		"[LC;3371]",
+		"[LC;3372]",
+		"[LC;3373]",
+		"[LC;3374]",
+		"[LC;3375]"
 	},
 	{
-		gameforge.locale.quiz_48_0_question,
-		gameforge.locale.quiz_48_1_choice,
-		gameforge.locale.quiz_48_2_choice,
-		gameforge.locale.quiz_48_3_choice,
-		gameforge.locale.quiz_48_4_choice,
-		gameforge.locale.quiz_48_5_answer
+		"[LC;3376]",
+		"[LC;3377]",
+		"[LC;3378]",
+		"[LC;3379]",
+		"[LC;3380]",
+		"[LC;3381]"
 	},
 	{
-		gameforge.locale.quiz_49_0_question,
-		gameforge.locale.quiz_49_1_choice,
-		gameforge.locale.quiz_49_2_choice,
-		gameforge.locale.quiz_49_3_choice,
-		gameforge.locale.quiz_49_4_choice,
-		gameforge.locale.quiz_49_5_answer
+		"[LC;3382]",
+		"[LC;3383]",
+		"[LC;3384]",
+		"[LC;3385]",
+		"[LC;3386]",
+		"[LC;3387]"
 	},
 	{
-		gameforge.locale.quiz_50_0_question,
-		gameforge.locale.quiz_50_1_choice,
-		gameforge.locale.quiz_50_2_choice,
-		gameforge.locale.quiz_50_3_choice,
-		gameforge.locale.quiz_50_4_choice,
-		gameforge.locale.quiz_50_5_answer
+		"[LC;3394]",
+		"[LC;3395]",
+		"[LC;3396]",
+		"[LC;3397]",
+		"[LC;3398]",
+		"[LC;3399]"
 	},
 	{
-		gameforge.locale.quiz_51_0_question,
-		gameforge.locale.quiz_51_1_choice,
-		gameforge.locale.quiz_51_2_choice,
-		gameforge.locale.quiz_51_3_choice,
-		gameforge.locale.quiz_51_4_choice,
-		gameforge.locale.quiz_51_5_answer
+		"[LC;3400]",
+		"[LC;3401]",
+		"[LC;3402]",
+		"[LC;3403]",
+		"[LC;3404]",
+		"[LC;3405]"
 	},
 	{
-		gameforge.locale.quiz_52_0_question,
-		gameforge.locale.quiz_52_1_choice,
-		gameforge.locale.quiz_52_2_choice,
-		gameforge.locale.quiz_52_3_choice,
-		gameforge.locale.quiz_52_4_choice,
-		gameforge.locale.quiz_52_5_answer
+		"[LC;3406]",
+		"[LC;3407]",
+		"[LC;3408]",
+		"[LC;3409]",
+		"[LC;3410]",
+		"[LC;3411]"
 	},
 	{
-		gameforge.locale.quiz_53_0_question,
-		gameforge.locale.quiz_53_1_choice,
-		gameforge.locale.quiz_53_2_choice,
-		gameforge.locale.quiz_53_3_choice,
-		gameforge.locale.quiz_53_4_choice,
-		gameforge.locale.quiz_53_5_answer
+		"[LC;3412]",
+		"[LC;3413]",
+		"[LC;3414]",
+		"[LC;3415]",
+		"[LC;3416]",
+		"[LC;3417]"
 	},
 	{
-		gameforge.locale.quiz_54_0_question,
-		gameforge.locale.quiz_54_1_choice,
-		gameforge.locale.quiz_54_2_choice,
-		gameforge.locale.quiz_54_3_choice,
-		gameforge.locale.quiz_54_4_choice,
-		gameforge.locale.quiz_54_5_answer
+		"[LC;3418]",
+		"[LC;3419]",
+		"[LC;3420]",
+		"[LC;3421]",
+		"[LC;3422]",
+		"[LC;3423]"
 	},
 	{
-		gameforge.locale.quiz_55_0_question,
-		gameforge.locale.quiz_55_1_choice,
-		gameforge.locale.quiz_55_2_choice,
-		gameforge.locale.quiz_55_3_choice,
-		gameforge.locale.quiz_55_4_choice,
-		gameforge.locale.quiz_55_5_answer
+		"[LC;3424]",
+		"[LC;3425]",
+		"[LC;3426]",
+		"[LC;3427]",
+		"[LC;3428]",
+		"[LC;3429]"
 	},
 	{
-		gameforge.locale.quiz_56_0_question,
-		gameforge.locale.quiz_56_1_choice,
-		gameforge.locale.quiz_56_2_choice,
-		gameforge.locale.quiz_56_3_choice,
-		gameforge.locale.quiz_56_4_choice,
-		gameforge.locale.quiz_56_5_answer
+		"[LC;3430]",
+		"[LC;3431]",
+		"[LC;3432]",
+		"[LC;3433]",
+		"[LC;3434]",
+		"[LC;3435]"
 	},
 	{
-		gameforge.locale.quiz_57_0_question,
-		gameforge.locale.quiz_57_1_choice,
-		gameforge.locale.quiz_57_2_choice,
-		gameforge.locale.quiz_57_3_choice,
-		gameforge.locale.quiz_57_4_choice,
-		gameforge.locale.quiz_57_5_answer
+		"[LC;3436]",
+		"[LC;3437]",
+		"[LC;3438]",
+		"[LC;3439]",
+		"[LC;3440]",
+		"[LC;3441]"
 	},
 	{
-		gameforge.locale.quiz_58_0_question,
-		gameforge.locale.quiz_58_1_choice,
-		gameforge.locale.quiz_58_2_choice,
-		gameforge.locale.quiz_58_3_choice,
-		gameforge.locale.quiz_58_4_choice,
-		gameforge.locale.quiz_58_5_answer
+		"[LC;3442]",
+		"[LC;3443]",
+		"[LC;3444]",
+		"[LC;3445]",
+		"[LC;3446]",
+		"[LC;3447]"
 	},
 	{
-		gameforge.locale.quiz_59_0_question,
-		gameforge.locale.quiz_59_1_choice,
-		gameforge.locale.quiz_59_2_choice,
-		gameforge.locale.quiz_59_3_choice,
-		gameforge.locale.quiz_59_4_choice,
-		gameforge.locale.quiz_59_5_answer
-	},
-	{
-		gameforge.locale.quiz_60_0_question,
-		gameforge.locale.quiz_60_1_choice,
-		gameforge.locale.quiz_60_2_choice,
-		gameforge.locale.quiz_60_3_choice,
-		gameforge.locale.quiz_60_4_choice,
-		gameforge.locale.quiz_60_5_answer
-	},
-	{
-		gameforge.locale.quiz_61_0_question,
-		gameforge.locale.quiz_61_1_choice,
-		gameforge.locale.quiz_61_2_choice,
-		gameforge.locale.quiz_61_3_choice,
-		gameforge.locale.quiz_61_4_choice,
-		gameforge.locale.quiz_61_5_answer
-	},
-	{
-		gameforge.locale.quiz_62_0_question,
-		gameforge.locale.quiz_62_1_choice,
-		gameforge.locale.quiz_62_2_choice,
-		gameforge.locale.quiz_62_3_choice,
-		gameforge.locale.quiz_62_4_choice,
-		gameforge.locale.quiz_62_5_answer
-	},
-	{
-		gameforge.locale.quiz_63_0_question,
-		gameforge.locale.quiz_63_1_choice,
-		gameforge.locale.quiz_63_2_choice,
-		gameforge.locale.quiz_63_3_choice,
-		gameforge.locale.quiz_63_4_choice,
-		gameforge.locale.quiz_63_5_answer
-	},
-	{
-		gameforge.locale.quiz_64_0_question,
-		gameforge.locale.quiz_64_1_choice,
-		gameforge.locale.quiz_64_2_choice,
-		gameforge.locale.quiz_64_3_choice,
-		gameforge.locale.quiz_64_4_choice,
-		gameforge.locale.quiz_64_5_answer
-	},
-	{
-		gameforge.locale.quiz_65_0_question,
-		gameforge.locale.quiz_65_1_choice,
-		gameforge.locale.quiz_65_2_choice,
-		gameforge.locale.quiz_65_3_choice,
-		gameforge.locale.quiz_65_4_choice,
-		gameforge.locale.quiz_65_5_answer
-	},
-	{
-		gameforge.locale.quiz_66_0_question,
-		gameforge.locale.quiz_66_1_choice,
-		gameforge.locale.quiz_66_2_choice,
-		gameforge.locale.quiz_66_3_choice,
-		gameforge.locale.quiz_66_4_choice,
-		gameforge.locale.quiz_66_5_answer
-	},
-	{
-		gameforge.locale.quiz_67_0_question,
-		gameforge.locale.quiz_67_1_choice,
-		gameforge.locale.quiz_67_2_choice,
-		gameforge.locale.quiz_67_3_choice,
-		gameforge.locale.quiz_67_4_choice,
-		gameforge.locale.quiz_67_5_answer
-	},
-	{
-		gameforge.locale.quiz_68_0_question,
-		gameforge.locale.quiz_68_1_choice,
-		gameforge.locale.quiz_68_2_choice,
-		gameforge.locale.quiz_68_3_choice,
-		gameforge.locale.quiz_68_4_choice,
-		gameforge.locale.quiz_68_5_answer
-	},
-	{
-		gameforge.locale.quiz_69_0_question,
-		gameforge.locale.quiz_69_1_choice,
-		gameforge.locale.quiz_69_2_choice,
-		gameforge.locale.quiz_69_3_choice,
-		gameforge.locale.quiz_69_4_choice,
-		gameforge.locale.quiz_69_5_answer
-	},
-	{
-		gameforge.locale.quiz_70_0_question,
-		gameforge.locale.quiz_70_1_choice,
-		gameforge.locale.quiz_70_2_choice,
-		gameforge.locale.quiz_70_3_choice,
-		gameforge.locale.quiz_70_4_choice,
-		gameforge.locale.quiz_70_5_answer
-	},
-	{
-		gameforge.locale.quiz_71_0_question,
-		gameforge.locale.quiz_71_1_choice,
-		gameforge.locale.quiz_71_2_choice,
-		gameforge.locale.quiz_71_3_choice,
-		gameforge.locale.quiz_71_4_choice,
-		gameforge.locale.quiz_71_5_answer
+		"[LC;3448]",
+		"[LC;3449]",
+		"[LC;3450]",
+		"[LC;3451]",
+		"[LC;3452]",
+		"[LC;3453]"
+	},
+	{
+		"[LC;3460]",
+		"[LC;3461]",
+		"[LC;3462]",
+		"[LC;3463]",
+		"[LC;3464]",
+		"[LC;3465]"
+	},
+	{
+		"[LC;3466]",
+		"[LC;3467]",
+		"[LC;3468]",
+		"[LC;3469]",
+		"[LC;3470]",
+		"[LC;3471]"
+	},
+	{
+		"[LC;3472]",
+		"[LC;3473]",
+		"[LC;3474]",
+		"[LC;3475]",
+		"[LC;3476]",
+		"[LC;3477]"
+	},
+	{
+		"[LC;3478]",
+		"[LC;3479]",
+		"[LC;3480]",
+		"[LC;3481]",
+		"[LC;3482]",
+		"[LC;3483]"
+	},
+	{
+		"[LC;3484]",
+		"[LC;3485]",
+		"[LC;3486]",
+		"[LC;3487]",
+		"[LC;3488]",
+		"[LC;3489]"
+	},
+	{
+		"[LC;3490]",
+		"[LC;3491]",
+		"[LC;3492]",
+		"[LC;3493]",
+		"[LC;3494]",
+		"[LC;3495]"
+	},
+	{
+		"[LC;3496]",
+		"[LC;3497]",
+		"[LC;3498]",
+		"[LC;3499]",
+		"[LC;3500]",
+		"[LC;3501]"
+	},
+	{
+		"[LC;3502]",
+		"[LC;3503]",
+		"[LC;3504]",
+		"[LC;3505]",
+		"[LC;3506]",
+		"[LC;3507]"
+	},
+	{
+		"[LC;3508]",
+		"[LC;3509]",
+		"[LC;3510]",
+		"[LC;3511]",
+		"[LC;3512]",
+		"[LC;3513]"
+	},
+	{
+		"[LC;3514]",
+		"[LC;3515]",
+		"[LC;3516]",
+		"[LC;3517]",
+		"[LC;3518]",
+		"[LC;3519]"
+	},
+	{
+		"[LC;3526]",
+		"[LC;3527]",
+		"[LC;3528]",
+		"[LC;3529]",
+		"[LC;3530]",
+		"[LC;3531]"
+	},
+	{
+		"[LC;3532]",
+		"[LC;3533]",
+		"[LC;3534]",
+		"[LC;3535]",
+		"[LC;3536]",
+		"[LC;3537]"
 	},
 }
 
 locale.GM_SKILL_NAME_DICT = {
-	[1] = gameforge.locale.gm_skill_name_1,
-	[2] = gameforge.locale.gm_skill_name_2,
-	[3] = gameforge.locale.gm_skill_name_3,
-	[4] = gameforge.locale.gm_skill_name_4,
-	[5] = gameforge.locale.gm_skill_name_5,
-	[16] = gameforge.locale.gm_skill_name_6,
-	[17] = gameforge.locale.gm_skill_name_7,
-	[18] = gameforge.locale.gm_skill_name_8,
-	[19] = gameforge.locale.gm_skill_name_9,
-	[20] = gameforge.locale.gm_skill_name_10,
-	[31] = gameforge.locale.gm_skill_name_11,
-	[32] = gameforge.locale.gm_skill_name_12,
-	[33] = gameforge.locale.gm_skill_name_13,
-	[34] = gameforge.locale.gm_skill_name_14,
-	[35] = gameforge.locale.gm_skill_name_15,
-	[46] = gameforge.locale.gm_skill_name_16,
-	[47] = gameforge.locale.gm_skill_name_17,
-	[48] = gameforge.locale.gm_skill_name_18,
-	[49] = gameforge.locale.gm_skill_name_19,
-	[50] = gameforge.locale.gm_skill_name_20,
-	[61] = gameforge.locale.gm_skill_name_21,
-	[62] = gameforge.locale.gm_skill_name_22,
-	[63] = gameforge.locale.gm_skill_name_23,
-	[64] = gameforge.locale.gm_skill_name_24,
-	[65] = gameforge.locale.gm_skill_name_25,
-	[66] = gameforge.locale.gm_skill_name_26,
-	[76] = gameforge.locale.gm_skill_name_27,
-	[77] = gameforge.locale.gm_skill_name_28,
-	[78] = gameforge.locale.gm_skill_name_29,
-	[79] = gameforge.locale.gm_skill_name_30,
-	[80] = gameforge.locale.gm_skill_name_31,
-	[81] = gameforge.locale.gm_skill_name_32,
-	[91] = gameforge.locale.gm_skill_name_33,
-	[92] = gameforge.locale.gm_skill_name_34,
-	[93] = gameforge.locale.gm_skill_name_35,
-	[94] = gameforge.locale.gm_skill_name_36,
-	[95] = gameforge.locale.gm_skill_name_37,
-	[96] = gameforge.locale.gm_skill_name_38,
-	[106] = gameforge.locale.gm_skill_name_39,
-	[107] = gameforge.locale.gm_skill_name_40,
-	[108] = gameforge.locale.gm_skill_name_41,
-	[109] = gameforge.locale.gm_skill_name_42,
-	[110] = gameforge.locale.gm_skill_name_43,
-	[111] = gameforge.locale.gm_skill_name_44,
+	[1] = "[LC;1977]",
+	[2] = "[LC;1988]",
+	[3] = "[LC;1999]",
+	[4] = "[LC;2010]",
+	[5] = "[LC;2016]",
+	[16] = "[LC;2017]",
+	[17] = "[LC;2018]",
+	[18] = "[LC;2019]",
+	[19] = "[LC;2020]",
+	[20] = "[LC;1978]",
+	[31] = "[LC;1979]",
+	[32] = "[LC;1980]",
+	[33] = "[LC;1981]",
+	[34] = "[LC;1982]",
+	[35] = "[LC;1983]",
+	[46] = "[LC;1984]",
+	[47] = "[LC;1985]",
+	[48] = "[LC;1986]",
+	[49] = "[LC;1987]",
+	[50] = "[LC;1989]",
+	[61] = "[LC;1990]",
+	[62] = "[LC;1991]",
+	[63] = "[LC;1992]",
+	[64] = "[LC;1993]",
+	[65] = "[LC;1994]",
+	[66] = "[LC;1995]",
+	[76] = "[LC;1996]",
+	[77] = "[LC;1997]",
+	[78] = "[LC;1998]",
+	[79] = "[LC;2000]",
+	[80] = "[LC;2001]",
+	[81] = "[LC;2002]",
+	[91] = "[LC;2003]",
+	[92] = "[LC;2004]",
+	[93] = "[LC;2005]",
+	[94] = "[LC;2006]",
+	[95] = "[LC;2007]",
+	[96] = "[LC;2008]",
+	[106] = "[LC;2009]",
+	[107] = "[LC;2011]",
+	[108] = "[LC;2012]",
+	[109] = "[LC;2013]",
+	[110] = "[LC;2014]",
+	[111] = "[LC;2015]",
 }
 locale.dungeon = {}
 locale.dungeon.time_limit_party = "Das Dungeon-Party sosokwon nicht verstrichene Zeit ist begrenzt, da die Position wurde vom Platz gestellt."

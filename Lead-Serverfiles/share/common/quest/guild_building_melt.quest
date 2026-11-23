@@ -53,26 +53,26 @@ quest guild_building_melt begin
 			local to_name = item_name(to_vnum)
 			local to_postfix
 
-			say(gameforge.guild_building_melt._10_say)
+			say("[LC;1301]")
 
 			if item.count >= 100 then
-			say(string.format(gameforge.guild_building_melt._20_say, pct, guild_building_melt.GetOreRefineCost(10000)))
-			local s =  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+			say(string.format("[LC;1311;%s;%s]", pct, guild_building_melt.GetOreRefineCost(10000)))
+			local s =  select("[LC;2059]", "[LC;2035]")
 			if s == 1 then
 				if pc.get_gold() < guild_building_melt.GetOreRefineCost(10000) then
-				say(gameforge.guild_building_melt._30_say)
+				say("[LC;1321]")
 				return
 				end
 
 				if pc.diamond_refine(10000, pct) then
-				say(gameforge.guild_building_melt._40_say)
+				say("[LC;1322]")
 				say_item(to_name, to_vnum, "")
 				else
-				say(gameforge.guild_building_melt._50_say)
+				say("[LC;1323]")
 				end
 			end
 			else
-			say(string.format(gameforge.guild_building_melt._60_say,from_name))
+			say(string.format("[LC;1324;%s]",from_name))
 			end
 		end
 		function DoRefine(pct)
@@ -82,39 +82,39 @@ quest guild_building_melt begin
 			local to_name = item_name(to_vnum)
 			local to_postfix
 
-			say(string.format(gameforge.guild_building_melt._70_say,  from_name , to_name ))
+			say(string.format("[LC;1325;%s;%s]",  from_name , to_name ))
 			if item.count >= 100 then
-			say(string.format(gameforge.guild_building_melt._20_say, pct, guild_building_melt.GetOreRefineCost(3000)))
-			local s =  select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+			say(string.format("[LC;1311;%s;%s]", pct, guild_building_melt.GetOreRefineCost(3000)))
+			local s =  select("[LC;2059]", "[LC;2035]")
 			if s == 1 then
 				if pc.get_gold() < guild_building_melt.GetOreRefineCost(3000) then
-				say(gameforge.guild_building_melt._30_say)
+				say("[LC;1321]")
 				return
 				end
 
 				local selected_item_cell = select_item()
 				if selected_item_cell == 0 then
-				say(gameforge.guild_building_melt._90_say)
+				say("[LC;1326]")
 				return
 				end
 				local old_item = item.get_id()
 
 				if (not item.select_cell(selected_item_cell)) or item.vnum < 28000 or item.vnum >= 28300 then
-				say(gameforge.guild_building_melt._100_say)
+				say("[LC;1300]")
 				return
 				end
 
 				item. select(old_item , old_item )
 
 				if pc.ore_refine(3000, pct, selected_item_cell) then
-				say(gameforge.guild_building_melt._120_say)
+				say("[LC;1302]")
 				say_item(to_name, to_vnum, "")
 				else
-				say(gameforge.guild_building_melt._50_say)
+				say("[LC;1323]")
 				end
 			end
 			else
-			say(string.format(gameforge.guild_building_melt._60_say,from_name))
+			say(string.format("[LC;1324;%s]",from_name))
 			end
 		end
 
@@ -149,33 +149,33 @@ quest guild_building_melt begin
 			with npc.get_guild() == pc.get_guild() and pc.isguildmaster()
 		begin
 			say_npc()
-			say(gameforge.guild_building_melt._130_say)
+			say("[LC;1303]")
 			wait()
 			if pc.get_gold() < 3000000 then
-				say(gameforge.guild_building_melt._140_say)
+				say("[LC;1304]")
 			else
-				-- say(gameforge.guild_building_melt._150_say)
+				-- say("[LC;1305]")
 
 				-- local sel = 0
 				
-				-- local timetable1 = {gameforge.guild_building_melt._180_say, 
-									-- gameforge.guild_building_melt._190_say,
-									-- gameforge.guild_building_melt._200_say,
-									-- gameforge.guild_building_melt._210_say,
-									-- gameforge.guild_building_melt._220_say,
-									-- gameforge.guild_building_melt._230_say,
-									-- gameforge.locale.levelup.prev_quest_go, 
-									-- gameforge.guild_building_melt._170_say}
+				-- local timetable1 = {"[LC;1308]", 
+									-- "[LC;1309]",
+									-- "[LC;1310]",
+									-- "[LC;1312]",
+									-- "[LC;1313]",
+									-- "[LC;1314]",
+									-- "[LC;2105]", 
+									-- "[LC;1307]"}
 				-- local valuetable1 = {14043, 14045, 14046, 14047, 14048, 14049, 0, -1}
 
-				-- local timetable2 = {gameforge.guild_building_melt._240_say,
-									-- gameforge.guild_building_melt._250_say,
-									-- gameforge.guild_building_melt._260_say,
-									-- gameforge.guild_building_melt._270_say,
-									-- gameforge.guild_building_melt._280_say,
-									-- gameforge.guild_building_melt._290_say,
-									-- gameforge.locale.levelup.prev_quest_go, 
-									-- gameforge.guild_building_melt._170_say}
+				-- local timetable2 = {"[LC;1315]",
+									-- "[LC;1316]",
+									-- "[LC;1317]",
+									-- "[LC;1318]",
+									-- "[LC;1319]",
+									-- "[LC;1320]",
+									-- "[LC;2105]", 
+									-- "[LC;1307]"}
 				-- local valuetable2 = {14050, 14051, 14052, 14053, 14054, 14055, 0, -1}
 				
 				-- repeat
@@ -189,7 +189,7 @@ quest guild_building_melt begin
 				-- if sel != -1 then
 					-- npc_num = sel + 20060 - 14043
 					-- if npc_num == npc.get_race() then
-					-- say(gameforge.guild_building_melt._160_say)
+					-- say("[LC;1306]")
 					-- else
 					-- pc.changegold(-3000000)
 					-- building.reconstruct(sel)
@@ -197,36 +197,36 @@ quest guild_building_melt begin
 				-- end
 				
 				local sel = 0
-				local timetable1 = {gameforge.guild_building_melt._180_say, 
-									gameforge.guild_building_melt._190_say,
-									gameforge.guild_building_melt._200_say,
-									gameforge.guild_building_melt._210_say,
-									gameforge.guild_building_melt._220_say,
-									gameforge.guild_building_melt._230_say,
-									gameforge.locale.levelup.prev_quest_go, 
-									gameforge.guild_building_melt._170_say}
+				local timetable1 = {"[LC;1308]", 
+									"[LC;1309]",
+									"[LC;1310]",
+									"[LC;1312]",
+									"[LC;1313]",
+									"[LC;1314]",
+									"[LC;2105]", 
+									"[LC;1307]"}
 				local valuetable1 = {14043, 14045, 14046, 14047, 14048, 14049, 1, 3}
-				local timetable2 = {gameforge.guild_building_melt._240_say,
-									gameforge.guild_building_melt._250_say,
-									gameforge.guild_building_melt._260_say,
-									gameforge.guild_building_melt._270_say,
-									gameforge.guild_building_melt._280_say,
-									gameforge.locale.levelup.prev_quest_go, 
-									gameforge.map_warp._96_select,
-									gameforge.guild_building_melt._170_say}
+				local timetable2 = {"[LC;1315]",
+									"[LC;1316]",
+									"[LC;1317]",
+									"[LC;1318]",
+									"[LC;1319]",
+									"[LC;2105]", 
+									"[LC;5477]",
+									"[LC;1307]"}
 				local valuetable2 = {14050, 10451, 14052, 14053, 14054, 2, 0, 3}
-				local timetable3 = {gameforge.guild_building_melt._290_say,
+				local timetable3 = {"[LC;1320]",
 									"Soul crystal",
 									"Rubin",
 									"Garnet",
 									"Smaragd",
 									"Sapphire",
-									gameforge.map_warp._96_select,
-									gameforge.guild_building_melt._170_say}
+									"[LC;5477]",
+									"[LC;1307]"}
 				local valuetable3 = {14055, 26992, 26993, 26994, 26995, 26996, 1, 3}
 				repeat
 					say_npc()
-					say(gameforge.guild_building_melt._150_say)
+					say("[LC;1305]")
 					if sel == 0 then
 						local s = select_table(timetable1)
 						sel = valuetable1[s]
@@ -242,7 +242,7 @@ quest guild_building_melt begin
 					npc_num = sel + 20060 - 14043
 					--chat("#debug#sel:"..sel.."#npc_num:"..npc_num)
 					if npc_num == npc.get_race() then
-						say(gameforge.guild_building_melt._160_say)
+						say("[LC;1306]")
 					else
 						pc.changegold(-3000000)
 						building.reconstruct(sel)

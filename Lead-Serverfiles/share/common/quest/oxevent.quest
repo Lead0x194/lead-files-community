@@ -41,25 +41,25 @@ quest oxevent_manager begin
 					end
 				end
     
-        when 20011.chat.gameforge.oxevent._10_npcChat begin
+        when 20011.chat."[LC;6448]" begin
 
-            say_title(gameforge.main_quest_lv30._40_sayTitle)
-            say(gameforge.oxevent._20_say)
+            say_title("[LC;4223]")
+            say("[LC;6461]")
             wait()
 
             if game.get_event_flag("oxevent_status") == 0 then
-                say_title(gameforge.main_quest_lv30._40_sayTitle)
-                say(gameforge.oxevent._30_say)
+                say_title("[LC;4223]")
+                say("[LC;6474]")
 
             elseif game.get_event_flag("oxevent_status") == 1 then
-                say_title(gameforge.main_quest_lv30._40_sayTitle)
-                say(gameforge.oxevent._40_say)
+                say_title("[LC;4223]")
+                say("[LC;6482]")
 
-                local s =  select(gameforge.buy_fishrod._120_select, gameforge.locale.cancel)
+                local s =  select("[LC;34]", "[LC;1891]")
 
                 if s == 1 then
-                    say_title(gameforge.main_quest_lv30._40_sayTitle)
-                    say(gameforge.oxevent._50_say)
+                    say_title("[LC;4223]")
+                    say("[LC;6483]")
                     wait()
                     
                     -- read the limits that the admin set hopefully
@@ -67,22 +67,22 @@ quest oxevent_manager begin
                     local max = game.get_event_flag("ox_map_level_max")
                     
                     if pc.level < min or pc.level > max then
-                        say_title(gameforge.main_quest_lv30._40_sayTitle)
-                        say_reward(string.format(gameforge.entry_event_map._040_say, min, max))
+                        say_title("[LC;4223]")
+                        say_reward(string.format("[LC;828;%s;%s]", min, max))
                         return
                     end
 										
                     if get_time() < pc.getqf("ox_end_cooldown_time") then
-                        say_title(gameforge.main_quest_lv30._40_sayTitle)
-                        say(gameforge.locale.monkey_dungeon.cannot_enter_yet)
+                        say_title("[LC;4223]")
+                        say("[LC;2129]")
 												return
                     end
                     
                     
                     -- check again the limit before we warp the player, maybe someone have trigger the limit 
                     if  oxevent_manager.check_limit() == 0 then
-                        say_title(gameforge.main_quest_lv30._40_sayTitle)
-                        say(gameforge.entry_event_map._060_say)
+                        say_title("[LC;4223]")
+                        say("[LC;830]")
                         return
                     end
                     
@@ -94,127 +94,127 @@ quest oxevent_manager begin
                 end
 
             elseif game.get_event_flag("oxevent_status") == 2 then
-                say_title(gameforge.main_quest_lv30._40_sayTitle)
-                say(gameforge.oxevent._60_say)
+                say_title("[LC;4223]")
+                say("[LC;6484]")
 
             end
         end
 
-        when 20358.chat.gameforge.oxevent._70_npcChat with pc.get_gm_level()== 5  begin
+        when 20358.chat."[LC;6485]" with pc.get_gm_level()== 5  begin
 
             local stat = oxevent.get_status()
 
             if stat == 0 then
             
-                say(gameforge.entry_event_map._150_say)
-                local choice = select ("1> min "..oxevent_manager.enter_level(1,1).." max "..oxevent_manager.enter_level(1,2),"2> min "..oxevent_manager.enter_level(2,1).." max "..oxevent_manager.enter_level(2,2), "3> min "..oxevent_manager.enter_level(3,1).." max "..oxevent_manager.enter_level(3,2), "4> min "..oxevent_manager.enter_level(4,1).." max "..oxevent_manager.enter_level(4,2),  "5> min "..oxevent_manager.enter_level(5,1).." max "..oxevent_manager.enter_level(5,2), gameforge.locale.cancel)
+                say("[LC;839]")
+                local choice = select ("1> min "..oxevent_manager.enter_level(1,1).." max "..oxevent_manager.enter_level(1,2),"2> min "..oxevent_manager.enter_level(2,1).." max "..oxevent_manager.enter_level(2,2), "3> min "..oxevent_manager.enter_level(3,1).." max "..oxevent_manager.enter_level(3,2), "4> min "..oxevent_manager.enter_level(4,1).." max "..oxevent_manager.enter_level(4,2),  "5> min "..oxevent_manager.enter_level(5,1).." max "..oxevent_manager.enter_level(5,2), "[LC;1891]")
                 if choice == 6 then
                     return
                 end
                 
-                say(gameforge.entry_event_map._160_say)
-                local amount_choice = input_number(gameforge.entry_event_map._240_say)
+                say("[LC;840]")
+                local amount_choice = input_number("[LC;848]")
 
                  if amount_choice > 200 or amount_choice <= 0 then
-                    say(gameforge.entry_event_map._250_say)
+                    say("[LC;849]")
                     return
                 end
 
-                say(gameforge.oxevent._80_say)
-                say(gameforge.entry_event_map._180_say)
-                say(gameforge.entry_event_map._190_say .. " " .. oxevent_manager.enter_level(choice,1).. " - " ..oxevent_manager.enter_level(choice,2))
-                say(gameforge.entry_event_map._200_say .. " " .. amount_choice)
+                say("[LC;6486]")
+                say("[LC;842]")
+                say("[LC;843]" .. " " .. oxevent_manager.enter_level(choice,1).. " - " ..oxevent_manager.enter_level(choice,2))
+                say("[LC;844]" .. " " .. amount_choice)
 
-                local s =  select(gameforge.oxevent._90_select, gameforge.locale.cancel)
+                local s =  select("[LC;6487]", "[LC;1891]")
 
                 if s == 1 then
                     local v = oxevent.open()
 
                     if v == 0 then
-                        say(gameforge.oxevent._100_say)
-                        say_reward(gameforge.oxevent._110_sayReward)
+                        say("[LC;6447]")
+                        say_reward("[LC;6449]")
                         
                     elseif v == 1 then
-                        say(gameforge.oxevent._120_say)
-                        notice_multiline(gameforge.oxevent._130_notice_all,notice_all)
-                        notice_multiline(gameforge.oxevent._131_notice_all,notice_all)
+                        say("[LC;6450]")
+                        notice_multiline("[LC;6451]",notice_all)
+                        notice_multiline("[LC;6452]",notice_all)
                         -- set the limits we set previous asked
                         game.set_event_flag("ox_map_level_min",oxevent_manager.enter_level(choice,1))
                         game.set_event_flag("ox_map_level_max",oxevent_manager.enter_level(choice,2))
                         game.set_event_flag("ox_map_player_max",amount_choice)
                     else
-                        say(gameforge.oxevent._100_say)
+                        say("[LC;6447]")
                     end
                 end
             elseif stat == 1 then
-                    say(string.format(gameforge.oxevent._140_say, oxevent.get_attender()))
+                    say(string.format("[LC;6453;%s]", oxevent.get_attender()))
 
-                    local s =  select(gameforge.oxevent._150_select, gameforge.locale.cancel)
+                    local s =  select("[LC;6454]", "[LC;1891]")
 
                     if s == 1 then
                         oxevent.close()
-                        say(gameforge.oxevent._160_say)
+                        say("[LC;6455]")
                     end
             elseif stat == 2 then
-                    say(gameforge.oxevent._170_say)
+                    say("[LC;6456]")
 
                     local s =  select(
-                        gameforge.oxevent._180_select, 
-                        gameforge.oxevent._190_select,  
-                        gameforge.oxevent._195_select,
-                        gameforge.locale.cancel
+                        "[LC;6457]", 
+                        "[LC;6458]",  
+                        "[LC;6459]",
+                        "[LC;1891]"
                         )
 
                     if s == 1 then
                         local v = oxevent.quiz(1, 30)
 
                         if v == 0 then
-                            say(gameforge.oxevent._200_say)
+                            say("[LC;6460]")
                         elseif v == 1 then
-                            say(gameforge.oxevent._210_say)
+                            say("[LC;6462]")
                         else
-                            say(gameforge.oxevent._220_say)
+                            say("[LC;6463]")
                         end
                     elseif s == 2 then
                         oxevent_manager.cleanup_event()
-                        say(gameforge.oxevent._230_say)
-                        notice_multiline(gameforge.oxevent._240_notice_all,notice_all)
-                        notice_multiline(gameforge.oxevent._241_notice_all,notice_all)
+                        say("[LC;6464]")
+                        notice_multiline("[LC;6465]",notice_all)
+                        notice_multiline("[LC;6466]",notice_all)
                     elseif s == 3 then
                         oxevent_manager.cleanup_event()
-                        say(gameforge.oxevent._250_say)
-                        notice_multiline(gameforge.oxevent._260_notice_all,notice_all)
-                        notice_multiline(gameforge.oxevent._261_notice_all,notice_all)
+                        say("[LC;6467]")
+                        notice_multiline("[LC;6468]",notice_all)
+                        notice_multiline("[LC;6469]",notice_all)
                     end
             elseif stat == 3 then
-                    say(gameforge.oxevent._270_say)
-                    say_reward(gameforge.oxevent._280_sayReward)
+                    say("[LC;6470]")
+                    say_reward("[LC;6471]")
             else
-                    say(gameforge.oxevent._290_say)
+                    say("[LC;6472]")
                 end
             end
 
-        when 20358.chat.gameforge.oxevent._300_npcChat with pc.get_gm_level()== 5  begin
-            say(gameforge.oxevent._310_say)
+        when 20358.chat."[LC;6473]" with pc.get_gm_level()== 5  begin
+            say("[LC;6475]")
 
-            local s =  select(gameforge.oxevent._320_select, gameforge.locale.cancel)
+            local s =  select("[LC;6476]", "[LC;1891]")
 
             if s == 1 then
                 oxevent.end_event_force()
                 game.set_event_flag("ox_map_login_counter",0)
-                say(gameforge.oxevent._330_say)
+                say("[LC;6477]")
             end
         end
 
-        when 20358.chat.gameforge.oxevent._340_npcChat with pc.get_gm_level()== 5  begin
-            say(gameforge.oxevent._350_say)
+        when 20358.chat."[LC;6478]" with pc.get_gm_level()== 5  begin
+            say("[LC;6479]")
             local item_vnum = input()
-            say(gameforge.oxevent._360_say)
+            say("[LC;6480]")
             local item_count = input()
             
             oxevent.give_item(item_vnum, item_count)
 
-            say(string.format(gameforge.oxevent._370_say, oxevent.get_attender()))
+            say(string.format("[LC;6481;%s]", oxevent.get_attender()))
         end
     end
 end

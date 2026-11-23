@@ -12,22 +12,22 @@ quest main_quest_lv84 begin
 			if v != 0 then
 				target.vid ("__TARGET__",v,"")
 			end
-			send_letter (gameforge.main_quest_lv84._10_sendLetter)
+			send_letter ("[LC;4715]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv84._10_sendLetter)
-			say(gameforge.main_quest_lv84._20_say)
+			say_title("[LC;4715]")
+			say("[LC;4726]")
 		end
-		when 20369.chat.gameforge.main_quest_lv84._10_sendLetter begin
+		when 20369.chat."[LC;4715]" begin
 			target.delete("__TARGET__")
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv84._30_say)
+			say_title ("[LC;4590]")
+			say("[LC;4728]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv84._40_say)
+			say_title ("[LC;4590]")
+			say("[LC;4729]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv84._50_say)
+			say_title ("[LC;4590]")
+			say("[LC;4730]")
 			pc.give_item2(31008) 
 			set_state (state_4)
 		end
@@ -35,11 +35,11 @@ quest main_quest_lv84 begin
 	end
 	state state_4 begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv84._60_sendLetter)
+			send_letter("[LC;4731]")
 		end
 		when button or info begin 
-			say_title(gameforge.main_quest_lv84._60_sendLetter)
-			say(gameforge.main_quest_lv84._70_say)
+			say_title("[LC;4731]")
+			say("[LC;4732]")
 		end
 
 		when 31008.use with pc.get_map_index() >= 2160000 and pc.get_map_index() < 2170000 begin --and pc.getf("devilcatacomb_zone", "level") == 5 begin 
@@ -50,16 +50,16 @@ quest main_quest_lv84 begin
 			party.give_buff(303, POINT_MAX_HP_PCT, 10, 0, 1800, 0, true, true)
 			party.give_buff(303, POINT_MAX_SP_PCT, 10, 0, 1800, 0, true, true)
 
-			say(gameforge.main_quest_lv84._80_say)
+			say("[LC;4733]")
 				
 		end
 
 		when 2591.kill begin
 			say_title(locale.reward)
-			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 63000000))
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71026).." ".."2"..locale.count_postfix))
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(70051)))
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(70050)))
+			say_reward(string.format("[LC;4537;%d]", 63000000))
+			say_reward(string.format("[LC;4540;%s]", item_name(71026).." ".."2"..locale.count_postfix))
+			say_reward(string.format("[LC;4540;%s]", item_name(70051)))
+			say_reward(string.format("[LC;4540;%s]", item_name(70050)))
 
 			pc.give_exp2(63000000)
 			pc.change_money(250000)
@@ -78,23 +78,23 @@ quest main_quest_lv84 begin
 			if v != 0 then
 				target.vid ("__TARGET__",v,"")
 			end
-			send_letter(gameforge.main_quest_lv84._90_sendLetter)
+			send_letter("[LC;4734]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv84._90_sendLetter)
-			say (gameforge.main_quest_lv84._100_say)
+			say_title("[LC;4734]")
+			say ("[LC;4714]")
 		end
-		when 20369.chat.gameforge.main_quest_lv84._90_sendLetter begin
+		when 20369.chat."[LC;4734]" begin
 			target.delete("__TARGET__")
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv84._110_say)
+			say_title ("[LC;4590]")
+			say("[LC;4716]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv84._120_say)
+			say_title ("[LC;4590]")
+			say("[LC;4717]")
 		end
 		when 2597.kill begin
-			say_reward(gameforge.main_quest_lv84._130_sayReward)
-			say(gameforge.main_quest_lv84._140_say)
+			say_reward("[LC;4718]")
+			say("[LC;4719]")
 			set_state (state_3)
 		end
 	end
@@ -104,35 +104,35 @@ quest main_quest_lv84 begin
 			if v != 0 then
 				target.vid ("__TARGET__",v,"")
 			end
-			send_letter(gameforge.main_quest_lv84._150_sendLetter)
+			send_letter("[LC;4720]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv84._150_sendLetter)
-			say (gameforge.main_quest_lv84._160_say)
+			say_title("[LC;4720]")
+			say ("[LC;4721]")
 		end
-		when 20369.chat.gameforge.main_quest_lv84._150_sendLetter begin
+		when 20369.chat."[LC;4720]" begin
 			target.delete("__TARGET__")
 			say_title (" ")
-			say(gameforge.main_quest_lv84._170_say)
+			say("[LC;4722]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv84._180_say)
+			say_title ("[LC;4590]")
+			say("[LC;4723]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv84._190_say)
+			say_title ("[LC;4590]")
+			say("[LC;4724]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv84._200_say)
+			say_title ("[LC;4590]")
+			say("[LC;4725]")
 			wait()
-			say_title (gameforge.main_quest_lv66._300_sayTitle)
-			say(gameforge.main_quest_lv84._210_say)
+			say_title ("[LC;4590]")
+			say("[LC;4727]")
 			wait()
 			say_title (locale.reward)
-			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 84000000))
-			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 250000))
-			say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(71025).." ".."2"..locale.count_postfix))
-			say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(70038)))
-			say_reward(string.format (gameforge.main_quest_lv60._210_sayReward, item_name(71107)))
+			say_reward(string.format ("[LC;4537;%d]", 84000000))
+			say_reward(string.format ("[LC;4538;%d]", 250000))
+			say_reward(string.format ("[LC;4540;%s]", item_name(71025).." ".."2"..locale.count_postfix))
+			say_reward(string.format ("[LC;4540;%s]", item_name(70038)))
+			say_reward(string.format ("[LC;4540;%s]", item_name(71107)))
 
 			pc.give_exp2(84000000)
 			pc.change_money(250000)

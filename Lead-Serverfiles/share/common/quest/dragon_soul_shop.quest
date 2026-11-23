@@ -2,8 +2,8 @@ define alchemist 20001
 define dragon_soul_shop_vnum 13
 quest dragon_soul_shop begin
 	state start begin
-		when alchemist.chat.gameforge.dragon_soul._100_npcChat with ds.is_qualified() begin
-			say (gameforge.dragon_soul._110_say)
+		when alchemist.chat."[LC;762]" with ds.is_qualified() begin
+			say ("[LC;773]")
 			npc.open_shop(dragon_soul_shop_vnum)
 		end
 	end

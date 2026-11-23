@@ -9,23 +9,23 @@ quest make_herb_lv4  begin
 		when letter begin
 			local v = find_npc_by_vnum(20084)
 			if v != 0 then
-				target.vid("__TARGET__", v, gameforge.collect_herb_lv10._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;123]")
 			end
-			send_letter(gameforge.collect_herb_lv4._10_sendLetter)
+			send_letter("[LC;189]")
 		end
 
 		when button or info begin
-			say_title(gameforge.collect_herb_lv4._10_sendLetter)
-			say(gameforge.collect_herb_lv4._20_say)
+			say_title("[LC;189]")
+			say("[LC;197]")
 		end
 		
-		when __TARGET__.target.click or	20084.chat.gameforge.collect_herb_lv10._40_npcChat begin
+		when __TARGET__.target.click or	20084.chat."[LC;137]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.collect_herb_lv10._50_sayTitle)
-			say(gameforge.collect_herb_lv4._30_say)
+			say_title("[LC;138]")
+			say("[LC;198]")
 			wait()
-			say_title(gameforge.collect_herb_lv10._50_sayTitle)
-			say(gameforge.collect_herb_lv4._40_say)
+			say_title("[LC;138]")
+			say("[LC;199]")
 			set_state(go_to_disciple)
 			pc.setqf("collect_count",0)--Current number of items
 			pc.setqf("drink_drug",0) --when take potion of daze
@@ -34,26 +34,26 @@ quest make_herb_lv4  begin
 
 	state go_to_disciple begin
 		when letter begin
-			send_letter(gameforge.collect_herb_lv10._80_sendLetter)
+			send_letter("[LC;141]")
 			
 		end
 		when button or info begin
-			say_title(gameforge.collect_herb_lv4._50_sayTitle)
-			say(gameforge.collect_herb_lv4._60_say)
+			say_title("[LC;200]")
+			say("[LC;201]")
 			say_item_vnum(50701) 
-			say_reward(string.format(gameforge.collect_herb_lv4._70_sayReward, pc.getqf("collect_count")))
+			say_reward(string.format("[LC;202;%s]", pc.getqf("collect_count")))
 					end
 		
 		when 71035.use begin --Potion of Daze
 			if pc.getqf("drink_drug")==1 then
-				say_title(gameforge.collect_herb_lv10._50_sayTitle)
-				say(gameforge.collect_herb_lv4._80_say)
+				say_title("[LC;138]")
+				say("[LC;203]")
 
 				return
 			end
 			if pc.count_item(50701)==0 then
-				say_title(gameforge.collect_herb_lv10._50_sayTitle)
-				say(gameforge.collect_herb_lv4._90_say)
+				say_title("[LC;138]")
+				say("[LC;204]")
 				return
 			end
 			pc.remove_item(71035, 1)
@@ -67,9 +67,9 @@ quest make_herb_lv4  begin
 			end
 		end
 		
-    	when 20084.chat.gameforge.collect_herb_lv4._100_npcChat with pc.count_item(50701) >0   begin
-				say_title(gameforge.collect_herb_lv10._150_sayTitle)
-				say(gameforge.collect_herb_lv10._160_say)
+    	when 20084.chat."[LC;188]" with pc.count_item(50701) >0   begin
+				say_title("[LC;128]")
+				say("[LC;129]")
 				pc.remove_item(50701, 1)
 				wait()
 				
@@ -85,15 +85,15 @@ quest make_herb_lv4  begin
 				   if pc.getqf("collect_count")< 4 then     --Less than 5 
 						local index =pc.getqf("collect_count")+1 
 						pc.setqf("collect_count",index)     --you got one, so you would get +1
-						say_title(gameforge.collect_herb_lv10._50_sayTitle)
-						say(string.format(gameforge.collect_herb_lv4._110_say, 5-pc.getqf("collect_count")))
+						say_title("[LC;138]")
+						say(string.format("[LC;190;%s]", 5-pc.getqf("collect_count")))
 						pc.setqf("drink_drug",0)	 --Initialize the potions
 						return
 					end
-					say_title(gameforge.collect_herb_lv10._50_sayTitle)
-					say(gameforge.collect_herb_lv4._120_say)
-					say_title(gameforge.collect_herb_lv4._130_sayTitle)
-										say_reward(gameforge.collect_herb_lv4._140_sayReward)
+					say_title("[LC;138]")
+					say("[LC;191]")
+					say_title("[LC;192]")
+										say_reward("[LC;193]")
 					pc.setqf("collect_count",0)
 					pc.setqf("drink_drug",0)	
 					clear_letter()
@@ -101,11 +101,11 @@ quest make_herb_lv4  begin
 					
 					if pc.job==3 then		
 						pc.give_item2(07003)
-						say_reward(gameforge.collect_herb_lv4._150_sayReward)
+						say_reward("[LC;194]")
 						return
 					else  	
 						pc.give_item2(00013)
-						say_reward(gameforge.collect_herb_lv4._160_sayReward)
+						say_reward("[LC;195]")
 
 					end
 					pc.change_money(1000)
@@ -113,8 +113,8 @@ quest make_herb_lv4  begin
 					set_quest_state("levelup","run")
 					
 				else								
-				say_title(gameforge.collect_herb_lv10._50_sayTitle)
-				say(gameforge.collect_herb_lv4._170_say)
+				say_title("[LC;138]")
+				say("[LC;196]")
 				pc.setqf("drink_drug",0)	 --Initialize Potions
 				return
 				end

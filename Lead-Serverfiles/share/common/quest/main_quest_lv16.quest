@@ -8,43 +8,43 @@ quest main_quest_lv16 begin
 	end
 	state gotoboss begin
 		when letter begin
-			send_letter(gameforge.main_quest_lv16._10_sendLetter)
+			send_letter("[LC;4142]")
 			
 			local v=find_npc_by_vnum(20355)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv10._10_sendLetter)
+				target.vid("__TARGET__", v, "[LC;4070]")
 			end
 
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv16._20_sayTitle)
+			say_title("[LC;4143]")
 	    		----------                                                   l
-			say(gameforge.main_quest_lv16._30_sayReward)
+			say("[LC;4144]")
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 			
-			say_title(gameforge.main_quest_lv10._30_sayTitle)
-			say(gameforge.main_quest_lv16._40_say)
+			say_title("[LC;4082]")
+			say("[LC;4145]")
 			set_state ( killrobber )
 		end
 	end
 
 	state killrobber begin
 		when letter begin
-           		send_letter(gameforge.main_quest_lv16._60_sendLetter)
+           		send_letter("[LC;4147]")
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv16._60_sendLetter)
-			say(gameforge.main_quest_lv16._70_sayReward)
+			say_title("[LC;4147]")
+			say("[LC;4148]")
 		end
 		when 394.kill or 393.kill or 392.kill or 391.kill or 301.kill or 302.kill or 303.kill or 304.kill begin
 			
 			if number( 1, 10 ) == 1 then
 				pc.give_item2( 30001, 1 )
-				say_title(gameforge.main_quest_lv16._60_sendLetter)
-				say(gameforge.main_quest_lv16._75_say)
+				say_title("[LC;4147]")
+				say("[LC;4149]")
 				set_state (gotoboss2)
 			end
 
@@ -55,20 +55,20 @@ quest main_quest_lv16 begin
 			local v=find_npc_by_vnum(20355)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.main_quest_lv10._10_sendLetter)
+				target.vid("__TARGET__", v, "[LC;4070]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.main_quest_lv10._10_sendLetter)
-			say(gameforge.main_quest_lv16._80_sayReward)
+			say_title("[LC;4070]")
+			say("[LC;4150]")
 		end
 		when __TARGET__.target.click begin
 			target.delete("__TARGET__")
 			if pc.count_item(30001) >= 1 then
-				say_title(gameforge.main_quest_lv10._30_sayTitle)
-				say(gameforge.main_quest_lv16._90_say)
-				say_title(gameforge.collect_herb_lv4._130_sayTitle)
-				say_reward(gameforge.main_quest_lv16._100_sayReward)
+				say_title("[LC;4082]")
+				say("[LC;4151]")
+				say_title("[LC;192]")
+				say_reward("[LC;4141]")
 				
 				pc.remove_item(30001)
 				pc.give_exp2( 40000 )

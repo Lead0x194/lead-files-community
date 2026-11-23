@@ -10,48 +10,48 @@ quest new_quest_lv43 begin
 	-- wonda-rim grew up without parent, wants get to know more about his ancestry -----------------------------------------
 	state information begin
 		when login or enter begin
-			send_letter(gameforge.new_quest_lv43._005_send_letter)
+			send_letter("[LC;5925]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv43._005_send_letter)
+			q.set_title("[LC;5925]")
 			local v=find_npc_by_vnum(20087) -- Wonda-Rim
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.new_quest_lv43._010_target)
+				target.vid("__TARGET__", v, "[LC;5927]")
 			end
 		end
 		when button or info begin
-			say_title(gameforge.new_quest_lv43._005_send_letter)
-			say(gameforge.new_quest_lv43._011_say)
+			say_title("[LC;5925]")
+			say("[LC;5928]")
 			say("")
-			say(string.format(gameforge.new_quest_lv43._012_say, get_map_name_by_number(1)))
+			say(string.format("[LC;5929;%s]", get_map_name_by_number(1)))
 		end
 		
-		when 20087.chat.gameforge.new_quest_lv43._005_send_letter begin
+		when 20087.chat."[LC;5925]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.new_quest_lv43._021_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv43._020_say)
-			say(gameforge.new_quest_lv43._022_say) -- white font text
+			say_title("[LC;5931]") -- yellow text headline
+			say("[LC;5930]")
+			say("[LC;5932]") -- white font text
 			wait()
-			say_title(gameforge.new_quest_lv43._021_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv43._023_say_reward)
+			say_title("[LC;5931]") -- yellow text headline
+			say("[LC;5933]")
 			q.done()
-			local doquest = select(gameforge.new_quest_lv43._024_select, gameforge.subquest_12._50_select, gameforge.new_quest_lv75._290_2_select)
+			local doquest = select("[LC;5934]", "[LC;7304]", "[LC;6200]")
 			if doquest ==1 then 
 				set_state(ask_chaegirab)
 			elseif doquest == 3 then
-				say(gameforge.subquest_06._60_say)
-				local abortquest = select(gameforge.subquest_06._70_select, gameforge.subquest_06._80_select)
+				say("[LC;7170]")
+				local abortquest = select("[LC;7173]", "[LC;7174]")
 				if abortquest == 1 then
 					pc.setqf("collect_count_1", 0) -- resetting collect counter -> to be deleated
 					set_state(__GIVEUP__)
 				else
-					say_title(gameforge.new_quest_lv43._021_say_title) -- yellow text headline
-					say(gameforge.subquest_11._80_say)
+					say_title("[LC;5931]") -- yellow text headline
+					say("[LC;7288]")
 					return
 				end
 			else
-				say_title(gameforge.new_quest_lv43._021_say_title) -- yellow text headline
-				say(gameforge.subquest_11._80_say)
+				say_title("[LC;5931]") -- yellow text headline
+				say("[LC;7288]")
 				return
 			end
 		end
@@ -59,33 +59,33 @@ quest new_quest_lv43 begin
 	-- player shall ask uncle chaegirab about wonda-rims ancestry -----------------------------------------
 	state ask_chaegirab begin
 		when enter or login begin
-			send_letter(gameforge.new_quest_lv43._006_send_letter)
+			send_letter("[LC;5926]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv43._006_send_letter)
+			q.set_title("[LC;5926]")
 			local v=find_npc_by_vnum(20084) --Chaegirab
 			if 0==v then
 			else
-				target.vid("__TARGET2__", v, gameforge.new_quest_lv43._030_target )
+				target.vid("__TARGET2__", v, "[LC;5937]" )
 			end
 		end
 		when button or info begin
-		say_title(gameforge.new_quest_lv43._006_send_letter)
-		say(gameforge.new_quest_lv43._025_say)
+		say_title("[LC;5926]")
+		say("[LC;5935]")
 		say("")
-		say(string.format(gameforge.new_quest_lv43._026_say, get_map_name_by_number(1)))
+		say(string.format("[LC;5936;%s]", get_map_name_by_number(1)))
 		end
 		
-		when 20084.chat.gameforge.new_quest_lv43._006_send_letter begin
+		when 20084.chat."[LC;5926]" begin
 			target.delete("__TARGET2__")
-			say_title(gameforge.new_quest_lv43._031_say_title) -- yellow text headline
-			say(gameforge.new_quest_lv43._032_say)
+			say_title("[LC;5938]") -- yellow text headline
+			say("[LC;5939]")
 		wait()
-			say_title(gameforge.new_quest_lv43._031_say_title)
-			say(gameforge.new_quest_lv43._033_say)
+			say_title("[LC;5938]")
+			say("[LC;5940]")
 		wait()
-			say_title(gameforge.new_quest_lv43._031_say_title)
-			say(gameforge.new_quest_lv43._034_say)
-			say_reward(gameforge.new_quest_lv43._035_say_reward)
+			say_title("[LC;5938]")
+			say("[LC;5941]")
+			say_reward("[LC;5942]")
 			q.done()
 			set_state(hunting)
 		end
@@ -95,9 +95,9 @@ quest new_quest_lv43 begin
 		when enter or login begin
 			new_quest_lv43_dropProb1 = 5
 			new_quest_lv43_drop1 = 30142 -- letter
-			send_letter(gameforge.new_quest_lv43._006_send_letter)
+			send_letter("[LC;5926]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv43._006_send_letter)
+			q.set_title("[LC;5926]")
 		end
 		-------------- the orc drops a letter from wonda-rims parents ------------------------------------------------------
 		-- kill a 603#Ork-Kämpfer
@@ -107,7 +107,7 @@ quest new_quest_lv43 begin
 					local index = pc.getqf("collect_count_1") - 1
 					pc.setqf("collect_count_1",index) --you got one, so you would get -1 item to find
 					pc.give_item2(new_quest_lv43_drop1) -- letter
-					notice_multiline(gameforge.new_quest_lv43._043_notice, notice)
+					notice_multiline("[LC;5945]", notice)
 					if pc.getqf("collect_count_1") == 0 then
 						q.done()
 						set_state(goto_wondarim)
@@ -117,17 +117,17 @@ quest new_quest_lv43 begin
 		end
 		
 		when info or button begin
-			say_title(gameforge.new_quest_lv43._006_send_letter)
+			say_title("[LC;5926]")
 			if pc.getqf("collect_count_1") != 0 then
-				say(gameforge.new_quest_lv43._041_say)
+				say("[LC;5944]")
 			else
 				q.done()
 				set_state(goto_wondarim)
 			end
 		end
-		when 20084.chat.gameforge.new_quest_lv43._006_send_letter begin
-			say_title(gameforge.new_quest_lv43._006_send_letter)
-			say(gameforge.new_quest_lv43._045_say)
+		when 20084.chat."[LC;5926]" begin
+			say_title("[LC;5926]")
+			say("[LC;5946]")
 		end
 	end
 	-------------- the letter contains imformation about wonda-rims parents and why the had to abandon him------------------------------------------------------
@@ -135,41 +135,41 @@ quest new_quest_lv43 begin
 		when enter or login begin
 			new_quest_lv43_amountYang = 32000 
 			new_quest_lv43_amountXp = 1250000
-			send_letter(gameforge.new_quest_lv43._006_send_letter)
+			send_letter("[LC;5926]")
 			q.start()
-			q.set_title(gameforge.new_quest_lv43._006_send_letter)
+			q.set_title("[LC;5926]")
 			local v=find_npc_by_vnum(20087) -- Wonda-Rim
 			if 0==v then
 			else
-				target.vid("__TARGET3__", v, gameforge.new_quest_lv43._010_target)
+				target.vid("__TARGET3__", v, "[LC;5927]")
 			end
 		end
 		
 		when button or info begin
-			say_title(gameforge.new_quest_lv43._006_send_letter)
-			say(gameforge.new_quest_lv43._050_say)
+			say_title("[LC;5926]")
+			say("[LC;5948]")
 			say("")
-			say(string.format(gameforge.new_quest_lv43._012_say, get_map_name_by_number(1)))
+			say(string.format("[LC;5929;%s]", get_map_name_by_number(1)))
 		end
 		
-		when 20087.chat.gameforge.new_quest_lv43._006_send_letter begin
-			say_title(gameforge.new_quest_lv43._021_say_title) -- yellow text headline
+		when 20087.chat."[LC;5926]" begin
+			say_title("[LC;5931]") -- yellow text headline
 			if pc.count_item(new_quest_lv43_drop1) == 1 and pc.getqf("collect_count_1") < 1 then
 				target.delete("__TARGET3__")
-				say(gameforge.new_quest_lv43._049_say) -- locakey needs to be reviewed. Should be a conversation and not a summery!
-				say(gameforge.new_quest_lv43._050_say) -- locakey needs to be reviewed.
-				say(gameforge.new_quest_lv43._051_say) -- locakey needs to be reviewed.
+				say("[LC;5947]") -- locakey needs to be reviewed. Should be a conversation and not a summery!
+				say("[LC;5948]") -- locakey needs to be reviewed.
+				say("[LC;5949]") -- locakey needs to be reviewed.
 				wait()
-				say_title(gameforge.new_quest_lv43._052_say_title) -- locakey needs to be reviewed.
-				say_reward(string.format(gameforge.new_quest_lv43._054_say_reward, new_quest_lv43_amountXp))
-				say_reward(string.format(gameforge.new_quest_lv43._053_say_reward, new_quest_lv43_amountYang))
+				say_title("[LC;5950]") -- locakey needs to be reviewed.
+				say_reward(string.format("[LC;5952]", new_quest_lv43_amountXp))
+				say_reward(string.format("[LC;5951]", new_quest_lv43_amountYang))
 				pc.change_money(new_quest_lv43_amountYang)
 				pc.give_exp2(new_quest_lv43_amountXp)
 				pc.remove_item(30142)
 				q.done()
 				set_state(__COMPLETE__)
 			else
-				say(gameforge.new_quest_lv43._060_say)
+				say("[LC;5953]")
 				set_state(start)
 				return
 			end

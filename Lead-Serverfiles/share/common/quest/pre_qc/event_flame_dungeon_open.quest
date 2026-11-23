@@ -1,45 +1,45 @@
 quest event_flame_dungeon_open begin
     state start begin
-        when 20381.chat.gameforge.event_flame_dungeon_open._010_npcChat with pc.get_level() >= 90 begin
-            say(gameforge.event_flame_dungeon_open._020_say)
+        when 20381.chat."[LC;863]" with pc.get_level() >= 90 begin
+            say("[LC;864]")
             wait()
-            say(gameforge.event_flame_dungeon_open._030_say)
+            say("[LC;865]")
             wait()
-            say(gameforge.event_flame_dungeon_open._080_say)
+            say("[LC;870]")
             pc.setqf("event_FD_time", 0)
             set_state(run)
         end
     end
 
     state run begin
-        when 20381.chat.gameforge.event_flame_dungeon_open._040_npcChat with game.get_event_flag("w21open_event")>0 begin
-            say(gameforge.event_flame_dungeon_open._050_say)
+        when 20381.chat."[LC;866]" with game.get_event_flag("w21open_event")>0 begin
+            say("[LC;867]")
             wait()
             
             local t = pc.getqf("event_FD_time")
             local killcount = pc.getqf("kill_done")
             if killcount == 0 then
-                say(gameforge.event_flame_dungeon_open._080_say)
+                say("[LC;870]")
             elseif (t==0) or (t+86400 < get_global_time()) then
-                say(gameforge.event_flame_dungeon_open._060_say)
+                say("[LC;868]")
                 pc.give_item2(71173, 1)
                 pc.give_item2(71174, 3)
                 pc.setqf("event_FD_time", get_global_time())
                 pc.setqf("kill_count_1", 0)
             else
-                say(gameforge.event_flame_dungeon_open._070_say)
+                say("[LC;869]")
             end	
         end
 
         when letter with game.get_event_flag("w21open_event")>0 begin
-			send_letter(gameforge.event_flame_dungeon_open._010_npcChat) 
-			q.set_counter_name(gameforge.main_quest_lv98._680_counterName)
+			send_letter("[LC;863]") 
+			q.set_counter_name("[LC;5425]")
 			event_flame_dungeon_open.kill_count() 
 		end
         
         when button or info with game.get_event_flag("w21open_event")>0 begin
-			say_title(gameforge.event_flame_dungeon_open._010_npcChat) 
-			say(string.format(gameforge.levelup._26_say, 100 - pc.getqf("kill_count_1")))
+			say_title("[LC;863]") 
+			say(string.format("[LC;1824;%s]", 100 - pc.getqf("kill_count_1")))
 		end
         
         when 3101.kill begin

@@ -2,33 +2,33 @@ quest new_christmas_nog_quest begin
 	state start begin
 	end
 	state nog_first_give begin
-		when 20126.chat.gameforge.new_christmas._050_npcChat  begin
+		when 20126.chat."[LC;5610]"  begin
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas._060_say)
+			say ("[LC;5611]")
 			wait()
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas._070_say)
+			say ("[LC;5612]")
 			wait()
 			pc.give_item2 (50216, 6)
 			pc.setqf ("last_nog_give_time", get_global_time())
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas._080_say)
+			say ("[LC;5613]")
 			set_state(nog_give)
 		end
 	end
 	state nog_give begin
-		when 20126.chat.gameforge.new_christmas._090_npcChat begin
+		when 20126.chat."[LC;5614]" begin
 			say_title(mob_name(20126))
-			say (gameforge.new_christmas._100_say)
+			say ("[LC;5615]")
 			wait()
 			if get_global_time() - pc.getqf ("last_nog_give_time") >= 86400 then
 				say_title(mob_name(20126))
-				say (gameforge.new_christmas._110_say)
+				say ("[LC;5616]")
 				pc.setqf ("last_nog_give_time", get_global_time())
 				pc.give_item2 (50216, 6)
 			else
 				say_title(mob_name(20126))
-				say (gameforge.new_christmas._120_say)
+				say ("[LC;5617]")
 			end
 		end
 	end

@@ -1,29 +1,29 @@
 quest make_wonso begin
     state start begin
 		when oldwoman.chat.locale.make_wonso.want_wonso1 with pc.countitem(50016)>0 and pc.countitem(50019)>0 and game.get_event_flag("newyear_wonso")>0 begin
-			say_title(gameforge.fortune_telling._40_sayTitle)
-			say(gameforge.locale.make_wonso.make_msg1)
+			say_title("[LC;1130]")
+			say("[LC;2117]")
 			pc.removeitem(50016,1)
 			pc.removeitem(50019,1)
 			pc.give_item2(50020,1)
 		end
 		when oldwoman.chat.locale.make_wonso.want_wonso2 with pc.countitem(50017)>0 and pc.countitem(50019)>0 and game.get_event_flag("newyear_wonso")>0 begin
-			say_title(gameforge.fortune_telling._40_sayTitle)
-			say(gameforge.locale.make_wonso.make_msg2)
+			say_title("[LC;1130]")
+			say("[LC;2118]")
 			pc.removeitem(50017,1)
 			pc.removeitem(50019,1)
 			pc.give_item2(50021,1)
 		end
 		when oldwoman.chat.locale.make_wonso.want_wonso3 with pc.countitem(50018)>0 and pc.countitem(50019)>0 and game.get_event_flag("newyear_wonso")>0 begin
-			say_title(gameforge.fortune_telling._40_sayTitle)
-			say(gameforge.locale.make_wonso.make_msg3)
+			say_title("[LC;1130]")
+			say("[LC;2119]")
 			pc.removeitem(50018,1)
 			pc.removeitem(50019,1)
 			pc.give_item2(50022,1)
 		end
 		when oldwoman.chat.locale.make_wonso.how_make with game.get_event_flag("newyear_wonso")>0 and make_wonso.have_item() begin
-			say_title(gameforge.fortune_telling._40_sayTitle)
-			say(gameforge.locale.make_wonso.how_make_detail)
+			say_title("[LC;1130]")
+			say("[LC;2116]")
 		end
 		function have_item()
 			if 	pc.count_item(50016)>0 or

@@ -1,100 +1,100 @@
 quest buy_fishrod begin
 	state start begin
-		when 9009.chat.gameforge.buy_fishrod._10_npcChat with pc.level>=7 and pc.level<=17 begin
-			say_title(gameforge.buy_fishrod._20_sayTitle)
-			say(gameforge.buy_fishrod._30_say)
-			local b= select(gameforge.buy_fishrod._40_select, gameforge.buy_fishrod._50_select)
+		when 9009.chat."[LC;32]" with pc.level>=7 and pc.level<=17 begin
+			say_title("[LC;43]")
+			say("[LC;48]")
+			local b= select("[LC;49]", "[LC;50]")
 			if 1==b then
 				if pc.money>=3980 then
 					pc.changemoney(-3980)
-					say_title(gameforge.buy_fishrod._20_sayTitle)
-					say(gameforge.buy_fishrod._60_say)
+					say_title("[LC;43]")
+					say("[LC;51]")
 					pc.give_item2("27400", 1)
 					pc.give_item2("27800", 100)
 					pc.give_item2("27801", 20)
 					setstate(notify_event)
 				else
-					say_title(gameforge.buy_fishrod._20_sayTitle)
-					say(gameforge.buy_fishrod._70_say)
+					say_title("[LC;43]")
+					say("[LC;52]")
 				end
 			elseif 2==b then
 			else
-				say(string.format(gameforge.buy_fishrod._80_say, b))
+				say(string.format("[LC;53;%s]", b))
 			end
 		end
 	end
 	state notify_event begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.buy_fishrod._90_makequestbutton)
-			q.set_title(gameforge.buy_fishrod._90_makequestbutton)
+			makequestbutton("[LC;54]")
+			q.set_title("[LC;54]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.buy_fishrod._100_sayTitle)
-			say(gameforge.buy_fishrod._110_say)
-			local b= select(gameforge.buy_fishrod._120_select, gameforge.buy_fishrod._130_select)
+			say_title("[LC;31]")
+			say("[LC;33]")
+			local b= select("[LC;34]", "[LC;35]")
 			if 1==b then
 				setstate(play_event)
 			elseif 2==b then
 				setstate(__COMPLETE__)
 				q.done()
 			else
-				say(string.format(gameforge.buy_fishrod._80_say, b))
+				say(string.format("[LC;53;%s]", b))
 			end
 		end
 		when info begin
-			say_title(gameforge.buy_fishrod._20_sayTitle)
-			say(gameforge.buy_fishrod._140_say)
-			local b= select(gameforge.buy_fishrod._120_select, gameforge.buy_fishrod._130_select)
+			say_title("[LC;43]")
+			say("[LC;36]")
+			local b= select("[LC;34]", "[LC;35]")
 			if 1==b then
 				setstate(play_event)
 			elseif 2==b then
 				setstate(__COMPLETE__)
 				q.done()
 			else
-				say(string.format(gameforge.buy_fishrod._80_say, b))
+				say(string.format("[LC;53;%s]", b))
 			end
 		end
 	end
 	state play_event begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.buy_fishrod._150_makequestbutton)
-			q.set_title(gameforge.buy_fishrod._150_makequestbutton)
+			makequestbutton("[LC;37]")
+			q.set_title("[LC;37]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.buy_fishrod._20_sayTitle)
-			say(gameforge.buy_fishrod._160_say)
+			say_title("[LC;43]")
+			say("[LC;38]")
 		end
 		when info begin
-			say_title(gameforge.buy_fishrod._20_sayTitle)
-			say(gameforge.buy_fishrod._160_say)
+			say_title("[LC;43]")
+			say("[LC;38]")
 		end
-		when 9009.chat.gameforge.buy_fishrod._170_npcChat with pc.countitem("27833")>=5 begin
-			say_title(gameforge.buy_fishrod._20_sayTitle)
-			say(gameforge.buy_fishrod._180_say)
+		when 9009.chat."[LC;39]" with pc.countitem("27833")>=5 begin
+			say_title("[LC;43]")
+			say("[LC;40]")
 			setstate(reward)
 		end
-		when 9009.chat.gameforge.buy_fishrod._170_npcChat with pc.countitem("27833")<5 begin
-			say_title(gameforge.buy_fishrod._20_sayTitle)
-			say(gameforge.buy_fishrod._190_say)
+		when 9009.chat."[LC;39]" with pc.countitem("27833")<5 begin
+			say_title("[LC;43]")
+			say("[LC;41]")
 		end
 	end
 	state reward begin
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton(gameforge.buy_fishrod._200_makequestbutton)
-			q.set_title(gameforge.buy_fishrod._200_makequestbutton)
+			makequestbutton("[LC;42]")
+			q.set_title("[LC;42]")
 			q.start()
 		end
 		when button begin
-			say_title(gameforge.buy_fishrod._210_sayTitle)
-			say(gameforge.buy_fishrod._220_say)
+			say_title("[LC;44]")
+			say("[LC;45]")
 			if pc.countitem("27833")>=5 then
 				pc.removeitem("27833", 5)
-				say(gameforge.buy_fishrod._230_say)
+				say("[LC;46]")
 				if pc.job==0 then
 					local r=number(1, 10)
 					if r==1 then
@@ -187,8 +187,8 @@ quest buy_fishrod begin
 					end
 				end
 			else
-				say_title(gameforge.buy_fishrod._20_sayTitle)
-				say(gameforge.buy_fishrod._240_say)
+				say_title("[LC;43]")
+				say("[LC;47]")
 			end
 			setstate(__COMPLETE__)
 			q.done()

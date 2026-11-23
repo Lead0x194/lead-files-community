@@ -10,34 +10,34 @@ quest subquest_22 begin
 			local v=find_npc_by_vnum(20015)
 			if 0==v then
 			else
-				target.vid("__TARGET__", v, gameforge.subquest_22._10_targetVid)
+				target.vid("__TARGET__", v, "[LC;7562]")
 			end
 		end
 
 
-		when __TARGET__.target.click or	20015.chat.gameforge.subquest_22._20_npcChat begin
+		when __TARGET__.target.click or	20015.chat."[LC;7573]" begin
 			target.delete("__TARGET__")
-			say_title(gameforge.subquest_22._30_sayTitle)
-			say(gameforge.subquest_22._40_say)
+			say_title("[LC;7574]")
+			say("[LC;7575]")
 			wait()
-			say_title(gameforge.subquest_22._30_sayTitle)
-			say(gameforge.subquest_22._50_say)
-			local s= select(gameforge.subquest_01._50_select, gameforge.subquest_22._60_select)
+			say_title("[LC;7574]")
+			say("[LC;7576]")
+			local s= select("[LC;6997]", "[LC;7577]")
 			if 2==s then
-				say(gameforge.subquest_22._70_say)
-				local a= select(gameforge.locale.guild.yes, gameforge.locale.guild.no)
+				say("[LC;7578]")
+				local a= select("[LC;2059]", "[LC;2035]")
 				if  2==a then
-					say_title(gameforge.subquest_22._30_sayTitle)
-					say(gameforge.subquest_22._80_say)
+					say_title("[LC;7574]")
+					say("[LC;7579]")
 					return
 				end
-				say_title(gameforge.subquest_22._30_sayTitle)
-				say(gameforge.subquest_22._90_say)
+				say_title("[LC;7574]")
+				say("[LC;7580]")
 				set_state(__GIVEUP__)
 				return
 			end
-			say_title(gameforge.subquest_22._30_sayTitle)
-			say(gameforge.subquest_22._100_say)
+			say_title("[LC;7574]")
+			say("[LC;7561]")
 
 		set_state(hunt_for_goldaxe)
 		end
@@ -48,25 +48,25 @@ quest subquest_22 begin
 
 	state hunt_for_goldaxe begin
 		when letter begin
-			send_letter(gameforge.subquest_22._10_targetVid)
+			send_letter("[LC;7562]")
 
 			if pc.count_item(30102)>0 then
 				local v=find_npc_by_vnum(20015)
 				if 0==v then
 				else
-					target.vid("__TARGET__",v, gameforge.subquest_22._110_targetVid)
+					target.vid("__TARGET__",v, "[LC;7563]")
 				end
 			end
 
 		end
 		when info or  button begin
 			if pc.count_item(30102)>0 then
-				say_title(gameforge.subquest_22._120_sayTitle)
-				say(gameforge.subquest_22._130_say)
+				say_title("[LC;7564]")
+				say("[LC;7565]")
 				return
 			end
-			say_title(gameforge.subquest_22._140_sayTitle)
-			say(gameforge.subquest_22._150_say)
+			say_title("[LC;7566]")
+			say("[LC;7567]")
 		end
 
 
@@ -79,23 +79,23 @@ quest subquest_22 begin
 				local v=find_npc_by_vnum(20015)
 				if 0==v then
 				else
-					target.vid("__TARGET__",v, gameforge.subquest_22._110_targetVid)
+					target.vid("__TARGET__",v, "[LC;7563]")
 				end
 			end
 		end
 
 
 
-		when 20015.chat.gameforge.subquest_22._160_npcChat with pc.count_item("30102")>=1 begin
+		when 20015.chat."[LC;7568]" with pc.count_item("30102")>=1 begin
 			target.delete("__TARGET__")
-			say_title(gameforge.subquest_22._170_sayTitle)
-			say(gameforge.subquest_22._180_say)
+			say_title("[LC;7569]")
+			say("[LC;7570]")
 			pc.remove_item("30102",1)
 
-			say_reward(gameforge.subquest_22._190_sayReward)
+			say_reward("[LC;7571]")
 			pc.give_exp2(400000)
 
-			say_reward(gameforge.subquest_22._200_sayReward)
+			say_reward("[LC;7572]")
 			pc.change_money(30000)
 
 			set_state(__COMPLETE__)
