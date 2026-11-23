@@ -1,21 +1,21 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_09 . _30_say ) 
-local s = select ( gameforge . find_brother_article . _90_select , gameforge . find_brother_article . _100_select ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7238]" ) 
+local s = select ( "[LC;971]" , "[LC;931]" ) 
 if 2 == s then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_09 . _40_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7239]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . subquest_09 . _50_sayTitle ) 
-say ( gameforge . subquest_09 . _60_say ) 
+say_title ( "[LC;7240]" ) 
+say ( "[LC;7241]" ) 
 return 
 end 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_09 . _70_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7242]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_09 . _80_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7243]" ) 
 set_state ( "hunt_for_goldenaxe" ) 

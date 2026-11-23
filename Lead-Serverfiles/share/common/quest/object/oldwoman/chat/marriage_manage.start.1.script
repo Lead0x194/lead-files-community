@@ -1,5 +1,5 @@
-say_title ( gameforge . couple_ring . _20_sayTitle ) 
-say ( gameforge . marriage_manage . _400_say ) 
+say_title ( "[LC;617]" ) 
+say ( "[LC;5518]" ) 
 wait ( ) 
 setskin ( NOWINDOW ) 
 marriage . warp_to_my_marriage_map ( ) 

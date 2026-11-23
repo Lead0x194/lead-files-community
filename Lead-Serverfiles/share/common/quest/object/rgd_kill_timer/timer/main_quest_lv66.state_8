@@ -1,2 +1,2 @@
 local t = pc . getqf ( "state_8_start" ) + 30 * 60 - get_global_time ( ) 
-notice ( string . format ( gameforge . main_quest_lv66 . _420_say , t / 60 ) ) 
+notice ( string . format ( "[LC;4604;%d]" , t / 60 ) ) 

@@ -12,7 +12,7 @@ ride={["start"]=0,Ride= function (vnum,remain_time)ride_info = {
 } 
 if pc . level < ride_info [ vnum ] [ 5 ] then 
 say ( "" ) 
-say ( gameforge . ride . _010_say ) 
+say ( "[LC;6800]" ) 
 say ( "" ) 
 else 
 if 112 == pc . get_map_index ( ) then 

@@ -1,26 +1,26 @@
 levelup={["start"]=0,["run"]=1349952704,show_mob_pos= function (lev)map_index = pc . get_map_index ( ) 
 if map_index <= 0 then 
-test_chat ( string . format ( gameforge . levelup . _210_chat , map_index ) ) 
+test_chat ( string . format ( "[LC;1818;%s]" , map_index ) ) 
 return 
 end 
 if map_index > table . getn ( special . lvq_map ) then 
-test_chat ( string . format ( gameforge . levelup . _220_chat , map_index .. ") > max(" .. table . getn ( special . lvq_map ) ) ) 
+test_chat ( string . format ( "[LC;1819;%s]" , map_index .. ") > max(" .. table . getn ( special . lvq_map ) ) ) 
 return 
 end 
 lev_quest_list = special . lvq_map [ map_index ] 
 if not lev_quest_list then 
-test_chat ( string . format ( gameforge . levelup . _230_chat , map_index ) ) 
+test_chat ( string . format ( "[LC;1820;%s]" , map_index ) ) 
 return 
 end 
 mob_pos_list = lev_quest_list [ lev ] 
 if not mob_pos_list then 
-test_chat ( string . format ( gameforge . levelup . _230_chat , map_index .. ")][lev(" .. lev ) ) 
+test_chat ( string . format ( "[LC;1820;%s]" , map_index .. ")][lev(" .. lev ) ) 
 return 
 end 
 table . foreachi ( 
 mob_pos_list , 
 function ( n , mob_pos ) 
-test_chat ( string . format ( gameforge . levelup . _240_chat , mob_pos [ 1 ] , mob_pos [ 2 ] ) ) 
+test_chat ( string . format ( "[LC;1821;%s;%s]" , mob_pos [ 1 ] , mob_pos [ 2 ] ) ) 
 addmapsignal ( mob_pos [ 1 ] * 100 , mob_pos [ 2 ] * 100 ) 
 end 
 ) 

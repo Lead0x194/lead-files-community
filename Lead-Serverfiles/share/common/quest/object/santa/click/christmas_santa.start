@@ -1,12 +1,12 @@
 local intro_msg = locale . christmas_santa . intro_msg local skill_book_buy_cost = locale . christmas_santa . skill_book_buy_cost local skill_book_msg = locale . christmas_santa . skill_book_msg local skill_book_sold_out_msg = locale . christmas_santa . skill_book_sold_out_msg local hairdye_buy_cost = locale . christmas_santa . hairdye_buy_cost local hairdye_msg = locale . christmas_santa . hairdye_msg local hairdye_sold_out_msg = locale . christmas_santa . hairdye_sold_out_msg local not_enough_money = locale . christmas_santa . not_enough_money local SKILL_BOOK_GROUP = 50300 
 local HAIRDYE_GROUP = 70201 
 say ( intro_msg ) 
-local s = select ( locale . christmas_santa . want_skillbook , gameforge . locale . christmas_santa . want_hairdye ) 
+local s = select ( locale . christmas_santa . want_skillbook , "[LC;1904]" ) 
 if s == 1 then 
 local r = npc . get_remain_skill_book_count ( ) ; 
 if r > 0 then 
 say ( skill_book_msg ) 
-local s = select ( locale . christmas_santa . select_buy , gameforge . locale . christmas_santa . select_stop ) 
+local s = select ( locale . christmas_santa . select_buy , "[LC;1901]" ) 
 if s == 1 then 
 if npc . get_remain_skill_book_count ( ) > 0 then 
 if pc . gold >= skill_book_buy_cost then 
@@ -14,7 +14,7 @@ npc . dec_remain_skill_book_count ( )
 pc . changegold ( - skill_book_buy_cost ) 
 pc . give_item_from_special_item_group ( SKILL_BOOK_GROUP ) 
 else 
-say ( gameforge . locale . christmas_santa . not_enough_money ) 
+say ( "[LC;1897]" ) 
 end 
 else 
 say ( skill_book_sold_out_msg ) 
@@ -27,7 +27,7 @@ elseif s == 2 then
 local r = npc . get_remain_hairdye_count ( ) ; 
 if r > 0 then 
 say ( hairdye_msg ) 
-local s = select ( locale . christmas_santa . select_buy , gameforge . locale . christmas_santa . select_stop ) 
+local s = select ( locale . christmas_santa . select_buy , "[LC;1901]" ) 
 if s == 1 then 
 if npc . get_remain_hairdye_count ( ) > 0 then 
 if pc . gold >= hairdye_buy_cost then 
@@ -35,7 +35,7 @@ npc . dec_remain_hairdye_count ( )
 pc . changegold ( - hairdye_buy_cost ) 
 pc . give_item_from_special_item_group ( HAIRDYE_GROUP ) 
 else 
-say ( gameforge . locale . christmas_santa . not_enough_money ) 
+say ( "[LC;1897]" ) 
 end 
 else 
 say ( hairdye_sold_out_msg ) 

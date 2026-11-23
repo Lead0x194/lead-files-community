@@ -1,20 +1,20 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_06 . _140_say ) 
-local s = select ( gameforge . subquest_06 . _150_select , gameforge . subquest_06 . _160_select ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7110]" ) 
+local s = select ( "[LC;7111]" , "[LC;7112]" ) 
 if 2 == s then 
-say ( gameforge . subquest_06 . _170_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . subquest_05 . _320_select ) 
+say ( "[LC;7113]" ) 
+local a = select ( "[LC;2059]" , "[LC;7095]" ) 
 if 2 == a then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_06 . _180_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7114]" ) 
 return 
 end 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_06 . _190_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7115]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_06 . _200_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7116]" ) 
 set_state ( "to_get_material" ) 

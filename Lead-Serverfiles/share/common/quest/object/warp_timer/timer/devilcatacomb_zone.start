@@ -1,13 +1,13 @@
 local level = d . getf ( "level" ) 
 local level_switch = { 
-[ 3 ] = gameforge . devilcatacomb_zone . _60_say , 
-[ 4 ] = gameforge . devilcatacomb_zone . _70_say , 
-[ 5 ] = gameforge . devilcatacomb_zone . _80_say , 
-[ 6 ] = gameforge . devilcatacomb_zone . _90_say , 
+[ 3 ] = "[LC;673]" , 
+[ 4 ] = "[LC;674]" , 
+[ 5 ] = "[LC;675]" , 
+[ 6 ] = "[LC;676]" , 
 } 
 local t = 3600 - ( get_global_time ( ) - d . getf ( "enter_time" ) ) 
 local t_r = math . mod ( t , 60 ) 
 local t_m = ( t - t_r ) / 60 
 d . notice ( level_switch [ level ] ) 
-d . notice ( string . format ( gameforge . devilcatacomb_zone . _20_say , t_m ) ) 
+d . notice ( string . format ( "[LC;655;%s]" , t_m ) ) 
 d . set_warp_location ( 0 , 0 , 0 ) 

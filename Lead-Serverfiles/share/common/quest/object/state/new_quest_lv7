@@ -23,12 +23,12 @@ end ,when_one_killed= function (neededAmount,dropProb,itemIcon)if pc . count_ite
 local drop = math . random ( 1 , 100 ) 
 if drop <= dropProb then 
 pc . give_item2 ( itemIcon ) 
-notice_multiline ( gameforge . new_quest_lv7 . _088_notice , notice ) 
+notice_multiline ( "[LC;6108]" , notice ) 
 if ( pc . count_item ( new_quest_lv7_drop3 ) == new_quest_lv7_AmountNeed3 and pc . count_item ( new_quest_lv7_drop2 ) == new_quest_lv7_AmountNeed2 and pc . count_item ( new_quest_lv7_drop1 ) == new_quest_lv7_AmountNeed1 ) then 
 return true 
 end 
 else 
-notice_multiline ( gameforge . new_quest_lv7 . _082_say , notice ) 
+notice_multiline ( "[LC;6099]" , notice ) 
 end 
 end 
 end }

@@ -1,20 +1,20 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . npc_talk . _580_sayTitle ) 
-say ( gameforge . subquest_08 . _20_say ) 
-local s = select ( gameforge . subquest_08 . _30_select , gameforge . find_brother_article . _100_select ) 
+say_title ( "[LC;6396]" ) 
+say ( "[LC;7204]" ) 
+local s = select ( "[LC;7215]" , "[LC;931]" ) 
 if 2 == s then 
-say ( gameforge . subquest_08 . _40_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7225]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . npc_talk . _580_sayTitle ) 
-say ( gameforge . subquest_08 . _50_say ) 
+say_title ( "[LC;6396]" ) 
+say ( "[LC;7226]" ) 
 return 
 end 
-say_title ( gameforge . npc_talk . _580_sayTitle ) 
-say ( gameforge . subquest_08 . _60_say ) 
+say_title ( "[LC;6396]" ) 
+say ( "[LC;7227]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . npc_talk . _580_sayTitle ) 
-say ( gameforge . subquest_08 . _70_say ) 
+say_title ( "[LC;6396]" ) 
+say ( "[LC;7228]" ) 
 set_state ( "ask_for_ricecake" ) 

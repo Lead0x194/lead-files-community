@@ -1,20 +1,20 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . main_quest_lv3 . _160_sayTitle ) 
-say ( gameforge . subquest_06 . _30_say ) 
-local s = select ( gameforge . subquest_06 . _40_select , gameforge . subquest_06 . _50_select ) 
+say_title ( "[LC;4200]" ) 
+say ( "[LC;7135]" ) 
+local s = select ( "[LC;7148]" , "[LC;7159]" ) 
 if 2 == s then 
-say ( gameforge . subquest_06 . _60_say ) 
-local a = select ( gameforge . subquest_06 . _70_select , gameforge . subquest_06 . _80_select ) 
+say ( "[LC;7170]" ) 
+local a = select ( "[LC;7173]" , "[LC;7174]" ) 
 if 2 == a then 
-say_title ( gameforge . main_quest_lv3 . _160_sayTitle ) 
-say ( gameforge . subquest_06 . _90_say ) 
+say_title ( "[LC;4200]" ) 
+say ( "[LC;7175]" ) 
 return 
 end 
-say_title ( gameforge . main_quest_lv3 . _160_sayTitle ) 
-say ( gameforge . subquest_06 . _100_say ) 
+say_title ( "[LC;4200]" ) 
+say ( "[LC;7105]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . main_quest_lv3 . _160_sayTitle ) 
-say ( gameforge . subquest_06 . _110_say ) 
+say_title ( "[LC;4200]" ) 
+say ( "[LC;7107]" ) 
 set_state ( "ask_blacksmith" ) 

@@ -18,9 +18,9 @@ else
 return 1 
 end 
 end ,player_dialog= function ()if pc . get_map_index ( ) == 200 then 
-say_title ( gameforge . entry_event_map . _010_sayTitle ) 
-say ( gameforge . entry_event_map . _020_say ) 
-local sub_sel = select ( gameforge . locale . yes , gameforge . locale . no ) 
+say_title ( "[LC;825]" ) 
+say ( "[LC;826]" ) 
+local sub_sel = select ( "[LC;3734]" , "[LC;2833]" ) 
 if sub_sel == 2 then 
 return 
 end 
@@ -31,30 +31,30 @@ end
 if game . get_event_flag ( "event_map_active" ) == 0 then 
 say ( locale . forked_man_say_cant ) 
 else 
-say_title ( gameforge . entry_event_map . _010_sayTitle ) 
-say ( gameforge . entry_event_map . _030_say ) 
+say_title ( "[LC;825]" ) 
+say ( "[LC;827]" ) 
 local s = select ( locale . forked_enter , locale . forked_no_enter ) 
 local min = game . get_event_flag ( "event_map_level_min" ) 
 local max = game . get_event_flag ( "event_map_level_max" ) 
 local empire = game . get_event_flag ( "event_map_empire" ) 
 if s == 1 then 
 if pc . level < min or pc . level > max then 
-say_title ( gameforge . entry_event_map . _010_sayTitle ) 
-say_reward ( string . format ( gameforge . entry_event_map . _040_say , min , max ) ) 
+say_title ( "[LC;825]" ) 
+say_reward ( string . format ( "[LC;828;%s;%s]" , min , max ) ) 
 return 
 end 
 if pc . get_empire ( ) ~= empire and empire ~= 0 then 
-say_title ( gameforge . entry_event_map . _010_sayTitle ) 
-say ( gameforge . entry_event_map . _050_say ) 
+say_title ( "[LC;825]" ) 
+say ( "[LC;829]" ) 
 return 
 end 
 if entry_event_map . check_limit ( ) == 0 then 
-say_title ( gameforge . entry_event_map . _010_sayTitle ) 
-say ( gameforge . entry_event_map . _060_say ) 
+say_title ( "[LC;825]" ) 
+say ( "[LC;830]" ) 
 return 
 end 
-say_title ( gameforge . entry_event_map . _010_sayTitle ) 
-say ( gameforge . entry_event_map . _070_say ) 
+say_title ( "[LC;825]" ) 
+say ( "[LC;831]" ) 
 if empire == 0 then 
 entry_event_map . warp_to_map ( pc . get_empire ( ) ) 
 else 
