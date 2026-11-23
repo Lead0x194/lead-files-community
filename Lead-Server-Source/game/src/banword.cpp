@@ -46,22 +46,12 @@ bool CBanwordManager::CheckString(const char * c_pszString, size_t _len)
 
 		while (len > 0)
 		{
-			if (is_twobyte(tmp))
-			{
-				if (!strncmp(tmp, r.c_str(), r.size()))
-					return true;
+			if (!strncmp(tmp, r.c_str(), r.size()))
+				return true;
 
-				tmp += 2;
-				len -= 2;
-			}
-			else
-			{
-				if (!strncmp(tmp, r.c_str(), r.size()))
-					return true;
-
-				++tmp;
-				--len;
-			}
+			const int step = utf8_char_length(tmp);
+			tmp += step;
+			len -= step;
 		}
 
 		it++;
@@ -83,40 +73,24 @@ void CBanwordManager::ConvertString(char * c_pszString, size_t _len)
 
 		while (len > 0)
 		{
-			if (is_twobyte(tmp))
+			if (*tmp == '*')
 			{
-				if (!strncmp(tmp, r.c_str(), r.size()))
-				{
-					memset(tmp, '*', r.size());
-					tmp += r.size();
-					len -= r.size();
-				}
-				else
-				{
-					tmp += 2;
-					len -= 2;
-				}
+				++tmp;
+				--len;
+				continue;
+			}
+
+			if (!strncmp(tmp, r.c_str(), r.size()))
+			{
+				memset(tmp, '*', r.size());
+				tmp += r.size();
+				len -= r.size();
 			}
 			else
 			{
-				if (*tmp == '*')
-				{
-					++tmp;
-					--len;
-					continue;
-				}
-
-				if (!strncmp(tmp, r.c_str(), r.size()))
-				{
-					memset(tmp, '*', r.size());
-					tmp += r.size();
-					len -= r.size();
-				}
-				else
-				{
-					++tmp;
-					--len;
-				}
+				const int step = utf8_char_length(tmp);
+				tmp += step;
+				len -= step;
 			}
 		}
 

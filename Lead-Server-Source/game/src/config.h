@@ -39,13 +39,13 @@ extern uint32_t	g_global_time;
 const char *	get_table_postfix();
 
 extern std::string	g_stHostname;
-extern std::string	g_stLocale;
+extern std::string	g_stDatabaseCharset;
 
 extern char		g_szPublicIP[16];
 extern char		g_szInternalIP[16];
 
-extern int (*is_twobyte) (const char * str);
-extern int (*check_name) (const char * str);
+int utf8_char_length(const char * str);
+int check_name(const char * str);
 
 extern bool		g_bSkillDisable;
 

@@ -37,7 +37,7 @@ namespace quest
 {
 	int _get_locale(lua_State* L)
 	{
-		lua_pushstring(L, g_stLocale.c_str());
+		lua_pushstring(L, g_stDatabaseCharset.c_str());
 		return 1;
 	}
 

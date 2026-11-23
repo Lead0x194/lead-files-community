@@ -1095,35 +1095,14 @@ void CPythonNetworkStream::__ConvertEmpireText(DWORD dwEmpireID, char* szText)
 	if (dwEmpireID<1 || dwEmpireID>3)
 		return;
 
-	UINT uHanPos;
-
 	STextConvertTable& rkTextConvTable=m_aTextConvTable[dwEmpireID-1];
 
-	BYTE* pbText=(BYTE*)szText;
-	while (*pbText)
+	for (BYTE* pbText=(BYTE*)szText; *pbText; ++pbText)
 	{
-		if (*pbText & 0x80)
-		{
-			if (pbText[0]>=0xb0 && pbText[0]<=0xc8 && pbText[1]>=0xa1 && pbText[1]<=0xfe)
-			{
-				uHanPos = (pbText[0] - 0xb0) * (0xfe - 0xa1 + 1) + (pbText[1] - 0xa1);
-				pbText[0]=rkTextConvTable.aacHan[uHanPos][0];
-				pbText[1]=rkTextConvTable.aacHan[uHanPos][1];
-			}
-			pbText+=2;
-		}
-		else
-		{
-			if (*pbText>='a' && *pbText<='z')
-			{
-				*pbText=rkTextConvTable.acLower[*pbText-'a'];
-			}
-			else if (*pbText>='A' && *pbText<='Z')
-			{
-				*pbText=rkTextConvTable.acUpper[*pbText-'A'];
-			}
-			pbText++;
-		}
+		if (*pbText>='a' && *pbText<='z')
+			*pbText=rkTextConvTable.acLower[*pbText-'a'];
+		else if (*pbText>='A' && *pbText<='Z')
+			*pbText=rkTextConvTable.acUpper[*pbText-'A'];
 	}
 }
 

@@ -51,53 +51,13 @@ void ConvertEmpireText(DWORD dwEmpireID, char* szText, size_t len, int iPct)
 
 	for (BYTE* pbText = reinterpret_cast<BYTE*>(szText) ; len > 0 && *pbText != '\0' ; --len, ++pbText)
 	{
-		if (number(1,100) > iPct)
-		{
-			if (*pbText & 0x80)
-			{
-				if (pbText[0] >= 0xB0 && pbText[0] <= 0xC8 && pbText[1] >= 0xA1 && pbText[1] <= 0xFE)
-				{
-					UINT uHanPos = (pbText[0] - 0xB0) * (0xFE - 0xA1 + 1) + (pbText[1] - 0xA1);
-					pbText[0] = rkTextConvTable.aacHan[uHanPos][0];
-					pbText[1] = rkTextConvTable.aacHan[uHanPos][1];
-				}
-				else if ( pbText[0] == 0xA4 )
-				{
-					if ( pbText[1] >=0xA1 && pbText[1] <= 0xBE )
-					{
-						pbText[0] = rkTextConvTable.aacJaum[pbText[1]-0xA1][0];
-						pbText[1] = rkTextConvTable.aacJaum[pbText[1]-0xA1][1];
-					}
-					else if ( pbText[1] >= 0xBF && pbText[1] <= 0xD3 )
-					{
-						pbText[0] = rkTextConvTable.aacMoum[pbText[1]-0xBF][0];
-						pbText[1] = rkTextConvTable.aacMoum[pbText[1]-0xBF][1];
-					}
-				}
+		if ((*pbText & 0x80) || number(1,100) <= iPct)
+			continue;
 
-				++pbText;
-				--len;
-			}
-			else
-			{
-				if (*pbText >= 'a' && *pbText <= 'z')
-				{
-					*pbText = rkTextConvTable.acLower[*pbText - 'a'];
-				}
-				else if (*pbText >= 'A' && *pbText <= 'Z')
-				{
-					*pbText = rkTextConvTable.acUpper[*pbText - 'A'];
-				}
-			}
-		}
-		else
-		{
-			if (*pbText & 0x80)
-			{
-				++pbText;
-				--len;
-			}
-		}
+		if (*pbText >= 'a' && *pbText <= 'z')
+			*pbText = rkTextConvTable.acLower[*pbText - 'a'];
+		else if (*pbText >= 'A' && *pbText <= 'Z')
+			*pbText = rkTextConvTable.acUpper[*pbText - 'A'];
 	}
 }
 
