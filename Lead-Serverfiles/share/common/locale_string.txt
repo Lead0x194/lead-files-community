@@ -1,2285 +1,889 @@
-"잠시후 해당 마을은  마을로 이동됩니다.";
-"Alle werden gleich in die Stadt teleportiert.";
-
-"존재하지 않는 아이템 입니다";
-"Dieser Gegenstand existiert nicht.";
-
-"상자가 갑자기 폭발하였습니다! 생명력이 감소했습니다.";
-"Die Kiste ist explodiert! Du hast Trefferpunkte verloren.";
-
-"상자에서 나온 녹색 연기를 들이마시자 독이 온몸으로 퍼집니다!";
-"Wenn du den grünen Rauch aus der Kiste einatmest, verteilt sich Gift in deinem Körper!";
-
-"%s 아이템 을 획득하셨습니다";
-"Du erhältst %s, %d Stück.";
-
-"상자에서 %s 가 나왔습니다.";
-"Die Kiste enthält: %s";
-
-"열쇠가 맞지 않는 것 같다.";
-"Dieser Schlüssel scheint nicht zu passen.";
-
-"아무것도 얻을 수 없었습니다.";
-"Du hast nichts erhalten.";
-
-"개량을 하기 위한 돈이 부족합니다.";
-"Du hast nicht genügend Yang, um den Gegenstand zu benutzen.";
-
-"소지금이 부족하여 이 아이템을 사용할 수 없습니다.";
-"Du hast nicht genügend Yang, um den Gegenstand zu benutzen.";
-
-"스킬 레벨을 내리는데 성공하였습니다.";
-"Du hast dein Fertigkeits-Level verringert.";
-
-"스킬 레벨을 내릴 수 없습니다.";
-"Du kannst dein Fertigkeits-Level nicht verringern.";
-
-"이미 효과가 걸려 있습니다.";
-"Dieser Effekt ist bereits aktiv.";
-
-"이 아이템은 PC방에서만 사용할 수 있습니다.";
-"Dieser Gegenstand kann nur in einem Internetcafé genutzt werden.";
-
-"사용 제한량을 초과하였습니다.";
-"Das ist über dem Limit.";
-
-"상품을 받을 인벤토리가 부족합니다. 인벤토리를 비워주세요!";
-"Du hast leider nicht genug Platz in deinem Inventar.";
-
-"월병 또는 종자 를 사용하였습니다";
-"Benutzter Mondkuchen oder Samen.";
-
-"결혼 상태가 아니면 결혼반지를 사용할 수 없습니다.";
-"Du kannst keinen Ehering tragen, wenn du nicht verheiratet bist.";
-
-"이 곳에선 이벤트용 감지기가 동작하지 않는것 같습니다.";
-"Der Event-Detektor kann von hier aus nicht bedient werden.";
-
-"이 개량서로 개량할 수 없습니다.";
-"Dieser Gegenstand kann nicht aufgenommen werden.";
-
-"이벤트용 감지기가 신비로운 빛을 내며 사라집니다.";
-"Der Event-Detektor ist mit dem mysteriösen Licht verschwunden.";
-
-"이벤트용 감지기가 흔적도 없이 사라집니다.";
-"Der Event-Detektor ist verschwunden.";
-
-"이 곳에서 영석 감지기가 동작하지 않는것 같습니다.";
-"Der Kompass des Metinsteins funktioniert nicht in Dungeons.";
-
-"영석 감지기가 신비로운 빛을 내며 사라집니다.";
-"Der Kompass des Metinsteins ist mit dem mysteriösen Licht verschwunden.";
-
-"상자에서 %s 가 %d 개 나왔습니다.";
-"Du erhältst: %s %dx";
-
-"영석 감지기가 흔적도 없이 사라집니다.";
-"Der Kompass des Metinsteins ist verschwunden.";
-
-"조개에서 돌조각이 나왔습니다.";
-"Du findest nur ein einfaches Steinstück in der Muschel.";
-
-"조개가 흔적도 없이 사라집니다.";
-"Die Muschel ist verschwunden.";
-
-"조개에서 백진주가 나왔습니다.";
-"In der Muschel ist eine weiße Perle.";
-
-"조개에서 청진주가 나왔습니다.";
-"In der Muschel ist eine blaue Perle.";
-
-"조개에서 피진주가 나왔습니다.";
-"In der Muschel ist eine blutrote Perle.";
-
-"이 책은 너무 어려워 이해하기가 힘듭니다.";
-"Dieses Buch ist schwer zu verstehen.";
-
-"이 책은 아무리 봐도 도움이 될 것 같지 않습니다.";
-"Dieses Buch hilft dir nicht weiter.";
-
-"레벨 30이 되기 전에는 습득할 수 있을 것 같지 않습니다.";
-"Du benötigst Level 30, um dieses Buch zu verstehen.";
-
-"레벨 50이 되기 전에는 습득할 수 있을 것 같지 않습니다.";
-"Du benötigst Level 50, um dieses Buch zu verstehen.";
-
-"연계기는 더이상 수련할 수 없습니다.";
-"Du kannst keine weiteren Combos trainieren.";
-
-"%s 길드의 깃발을 %s 님이 획득하였습니다.";
-"%s hat die Fahne von %s erobert!";
-
-"이미 완벽하게 알아들을 수 있는 언어이다.";
-"Du verstehst diese Sprache bereits.";
-
-"이 책을 읽으려면 레벨을 더 올려야 합니다.";
-"Du musst dein Level steigern, um dieses Buch lesen zu können.";
-
-"이 책은 너무 어려워서 수련할 수 없습니다.";
-"Das Buch ist zum Üben zu schwer.";
-
-"이 책으로는 더 이상 수련할 수 없습니다.";
-"Mit diesem Buch kannst du nicht weiter trainieren.";
-
-"세금이 %d %로 설정되었습니다";
-"Die Steuer ist auf %d%% gesetzt.";
-
-"아직 승마 스킬을 수련할 수 있는 레벨이 아닙니다.";
-"Du kannst erst ab Level 50 Reittraining bekommen.";
-
-"주안술서를 통해 주화입마에서 빠져나왔습니다.";
-"Du bist dem Fluch des bösen Geistes mit Hilfe einer Exorzismus-Schriftrolle entkommen.";
-
-"더 이상 승마 수련서를 읽을 수 없습니다.";
-"Du kannst keine weiteren Reitanleitungen lesen.";
-
-"승마 수련서를 읽어 승마 스킬 포인트를 얻었습니다.";
-"Du hast die Reitanleitung gelesen und einen Reitpunkt erhalten.";
-
-"얻은 포인트로는 승마 스킬의 레벨을 올릴 수 있습니다.";
-"Du kannst diesen Punkt zur Verbesserung deiner Reitkunst verwenden!";
-
-"%s 길드가 %s 길드의 깃발을 빼앗았습니다!";
-"Die Flagge der Gilde %s wurde von Spieler %s gestohlen.";
-
-"승마 수련서 이해에 실패하였습니다.";
-"Du hast die Reitanleitung nicht verstanden.";
-
-"마음이 맑아지는군. 가슴을 짓누르던 무언가가 좀 가벼워진 느낌이야.";
-"Dein Geist ist klar. Du kannst dich jetzt gut konzentrieren.";
-
-"선악치가 %d 증가하였습니다.";
-"Dein Rang ist um %d Punkte gestiegen.";
-
-"현재 헤어스타일에서는 염색과 탈색이 불가능합니다.";
-"Du kannst deine aktuelle Frisur nicht färben oder bleichen.";
-
-"%d 레벨이 되어야 다시 염색하실 수 있습니다.";
-"Du musst Level %d erreichen, um dein Haar wieder färben zu können.";
-
-"성별이 맞지않아 이 아이템을 열 수 없습니다.";
-"Dieser Gegenstand kann nur vom anderen Geschlecht geöffnet werden.";
-
-"현재 위치에서 사용할 수 없습니다.";
-"Du kannst das von deiner aktuellen Position aus nicht nutzen.";
-
-"이동할 준비가 되어있음으로 귀환부를 사용할수 없습니다";
-"Du bist bereit zum Warpen, deshalb kannst du die Schriftrolle des Ortes nicht benutzen.";
-
-"원래 위치로 복귀";
-"Du wirst zum ursprünglichen Ort zurückgebracht.";
-
-"던전 안에서는 %s%s 사용할 수 없습니다.";
-"%s%s kann in einem Dungeon nicht benutzt werden.";
-
-"<퀘스트> 이전에 같은 보상을 받은 적이 있어 다시 받지 않습니다.";
-"[Quest] Du hast deine Belohnung bereits erhalten.";
-
-"À»";
-"den";
-
-"¸¦";
-"das";
-
-"청소할 석이 박혀있지 않습니다.";
-"Es sind keine Steinsplitter zum Entfernen vorhanden.";
-
-"속성을 변경할 수 없는 아이템입니다.";
-"Du kannst die Verbesserung dieses Gegenstands nicht ändern.";
-
-"변경할 속성이 없습니다.";
-"Du hast keine Verbesserung, die du ändern kannst.";
-
-"속성을 바꾼지 %d분 이내에는 다시 변경할 수 없습니다.(%d 분 남음)";
-"Du kannst dies erst %d Minuten nach einer Verbesserung vornehmen. (%d Minuten übrig)";
-
-"속성을 변경하였습니다.";
-"Du hast die Verbesserung geändert.";
-
-"속성 추가에 성공하였습니다.";
-"Verbesserung wurde erfolgreich hinzugefügt.";
-
-"속성 추가에 실패하였습니다.";
-"Keine Verbesserung hinzugefügt.";
-
-"더이상 이 아이템을 이용하여 속성을 추가할 수 없습니다.";
-"Diesem Gegenstand kannst du nur mit der Segenskugel einen weiteren Bonus hinzufügen.";
-
-"대련장에서 사용하실 수 없습니다.";
-"Du kannst das nicht in der Duellarena nutzen.";
-
-"더 이상 이 아이템을 이용하여 속성을 추가할 수 없습니다.";
-"Dieser Gegenstand kann nicht weiter verbessert werden. Die maximale Anzahl Boni ist bereits erreicht.";
-
-"먼저 재가비서를 이용하여 속성을 추가시켜 주세요.";
-"Du kannst die Segenskugel erst dann mit einem Gegenstand benutzen, wenn er bereits 4 Boni besitzt.";
-
-"소켓이 성공적으로 추가되었습니다.";
-"Fassung wurde erfolgreich hinzugefügt.";
-
-"소켓 추가에 실패하였습니다.";
-"Keine Fassung hinzugefügt.";
-
-"이 액세서리에는 더이상 소켓을 추가할 공간이 없습니다.";
-"Diesem Gegenstand können keine weiteren Fassungen hinzugefügt werden.";
-
-"이 아이템으로 소켓을 추가할 수 없는 아이템입니다.";
-"Diesem Gegenstand kann keine Fassung hinzugefügt werden.";
-
-"장착에 성공하였습니다.";
-"Ausrüsten erfolgreich.";
-
-"장착에 실패하였습니다.";
-"Ausrüsten gescheitert.";
-
-"먼저 다이아몬드로 악세서리에 소켓을 추가해야합니다.";
-"Du musst zuerst eine Fassung hinzufügen. Benutze dazu einen Diamanten.";
-
-"이 액세서리에는 더이상 장착할 소켓이 없습니다.";
-"In diesem Gegenstand gibt es keine Fassung für Edelsteine.";
-
-"열정의 가면을 착용시에만 할 수 있습니다.";
-"Du brauchst eine Emotionsmaske, um diese Handlung auszuführen.";
-
-"다이아몬드로 소켓을 추가해야합니다.";
-"Du musst eine Fassung hinzufügen, wenn du einen Diamanten nutzen willst.";
-
-"이 액세서리에는 더이상 보석을 장착할 수 없습니다.";
-"Diesem Gegenstand können keine weiteren Edelsteine hinzugefügt werden.";
-
-"이 아이템을 장착할 수 없습니다.";
-"Diese Gegenstände können nicht miteinander verwendet werden.";
-
-"낚시 중에 미끼를 갈아끼울 수 없습니다.";
-"Du kannst den Köder während des Fischens nicht wechseln.";
-
-"이미 꽂혀있던 미끼를 빼고 %s를 끼웁니다.";
-"Du tauschst den aktuellen Köder gegen %s.";
-
-"낚시대에 %s를 미끼로 끼웁니다.";
-"Du hast %s als Köder am Haken befestigt.";
-
-"물약 조합을 위한 재료가 부족합니다.";
-"Es fehlen Zutaten für die Mischung des Tranks.";
-
-"재료(%s)가 부족합니다.";
-"Du hast nicht genügend Material (%s).";
-
-"빈 병이 모자릅니다.";
-"Du hast nicht genügend leere Flaschen.";
-
-"물약 제조에 실패했습니다.";
-"Die Herstellung des Tranks ist fehlgeschlagen.";
-
-"여자만 할 수 있습니다.";
-"Das können nur Frauen tun.";
-
-"같은 종류의 메틴석은 여러개 부착할 수 없습니다.";
-"Du kannst nicht mehrere Geiststeine der gleichen Art anbringen.";
-
-"이 메틴석은 장비에 부착할 수 없습니다.";
-"Dieser Geiststein kann nicht an dieser Art von Gegenstand angebracht werden.";
-
-"이 메틴석은 무기에 부착할 수 없습니다.";
-"Du kannst diesen Geiststein nicht an einer Waffe anbringen.";
-
-"메틴석 부착에 성공하였습니다.";
-"Du hast den Geiststein erfolgreich angebracht.";
-
-"메틴석 부착에 실패하였습니다.";
-"Der Geiststein ist beim Einsetzen zerbrochen.";
-
-"부착할 수 있는 슬롯이 없습니다.";
-"Es ist kein Slot frei.";
-
-"사용할수 없습니다.";
-"Diese Funktion ist hier und jetzt nicht verfügbar.";
-
-"삼거리 전투 참가중에는 귀환부,귀환기억부를 사용할수 없습니다.";
-"Während der Teilnahme an einer Reichsschlacht kannst du die Schriftrolle des Ortes nicht benutzen.";
-
-"창고를 연후 %d초 이내에는 귀환부,귀환기억부를 사용할 수 없습니다.";
-"Nach Öffnen des Lagers kannst du für %d Sek. keine Schriftrolle des Ortes benutzen.";
-
-"거래창,창고 등을 연 상태에서는 귀환부,귀환기억부 를 사용할수 없습니다.";
-"Du kannst die Schriftrolle des Ortes nicht benutzen, solange ein anderes Fenster geöffnet ist.";
-
-"그런 사람이 없습니다.";
-"Diese Person existiert nicht.";
-
-"아이템 개량후 %d초 이내에는 귀환부,귀환기억부를 사용할 수 없습니다.";
-"Nach einem Handel kannst du für %d Sek. keine Schriftrolle benutzen.";
-
-"개인상점 사용후 %d초 이내에는 귀환부,귀환기억부를 사용할 수 없습니다.";
-"Nach Öffnen des Lagers kannst du für %d Sek. keine Schriftrolle des Ortes benutzen.";
-
-"이동 되어질 위치와 너무 가까워 귀환부를 사용할수 없습니다.";
-"Du kannst die Schriftrolle des Ortes nicht benutzen, da die Entfernung zu gering ist.";
-
-"거래 후 %d초 이내에는 귀환부,귀환기억부등을 사용할 수 없습니다.";
-"Nach einem Handel kannst du für %d Sek. keine Schriftrolle des Ortes benutzen.";
-
-"거래창,창고 등을 연 상태에서는 보따리,비단보따리를 사용할수 없습니다.";
-"Du kannst das Lager nicht öffnen, solange ein anderes Fenster geöffnet ist.";
-
-"버릴 수 없는 아이템입니다.";
-"Du kannst diesen Gegenstand nicht fallen lassen.";
-
-"떨어진 아이템은 3분 후 사라집니다.";
-"Der fallen gelassene Gegenstand wird in 5 Minuten verschwinden.";
-
-"아이템 획득: %s";
-"%s erhalten";
-
-"소지하고 있는 아이템이 너무 많습니다.";
-"Du trägst zu viele Gegenstände bei dir.";
-
-"아이템 획득: %s 님으로부터 %s";
-"%s erhält %s.";
-
-"잠시후 모두 마을로 이동됩니다.";
-"Alle werden in Kürze in die Stadt teleportiert.";
-
-"너무 가까이 있습니다.";
-"Du bist zu nah.";
-
-"아이템 전달: %s 님에게 %s";
-"Gegenstandshandel: %s, %s";
-
-"둔갑 중에는 착용중인 장비를 변경할 수 없습니다.";
-"Du kannst deine Ausrüstung nicht ändern, solange du verwandelt bist.";
-
-"가만히 있을 때만 착용할 수 있습니다.";
-"Du musst stillstehen, um den Gegenstand ausrüsten zu können.";
-
-"죽지 않은 말에게 선초를 먹일 수 없습니다.";
-"Affenkraut kann nicht verfüttert werden. Es wird zum Wiederbeleben toter Pferde verwendet.";
-
-"죽은 말에게 사료를 먹일 수 없습니다.";
-"Du kannst ein totes Pferd nicht füttern.";
-
-"말에게 선초를 주었습니다.";
-"Du hast das Pferd mit Kräutern gefüttert.";
-
-"말에게 사료를 주었습니다.";
-"Du hast das Pferd gefüttert.";
-
-"아직 이 머리를 사용할 수 없는 레벨입니다.";
-"Dein Level ist zu niedrig, um diese Frisur zu tragen.";
-
-"동일한 머리 스타일로는 교체할 수 없습니다.";
-"Du trägst diese Frisur bereits.";
-
-"이미 둔갑중인 상태입니다.";
-"Du bist bereits verwandelt.";
-
-"너무 멀리 있습니다";
-"Du bist zu weit weg.";
-
-"잘못된 둔갑 아이템입니다.";
-"Das ist der falsche Verwandlungsgegenstand.";
-
-"나보다 너무 높은 레벨의 몬스터로는 변신 할 수 없습니다.";
-"Du kannst dich nicht in ein Monster verwandeln, das ein höheres Level hat als du.";
-
-"레벨이 낮아 착용할 수 없습니다.";
-"Dein Level ist zu niedrig, um diesen Gegenstand anzulegen.";
-
-"근력이 낮아 착용할 수 없습니다.";
-"Du bist nicht stark genug, um diesen Gegenstand anzulegen.";
-
-"지능이 낮아 착용할 수 없습니다.";
-"Deine Intelligenz ist zu niedrig, um diesen Gegenstand anzulegen.";
-
-"민첩이 낮아 착용할 수 없습니다.";
-"Deine Beweglichkeit ist zu niedrig, um diesen Gegenstand anzulegen.";
-
-"체력이 낮아 착용할 수 없습니다.";
-"Deine Vitalität ist zu niedrig, um diesen Gegenstand anzulegen.";
-
-"결혼하지 않은 상태에서 예물을 착용할 수 없습니다.";
-"Du kannst diesen Gegenstand nicht verwenden, da du nicht verheiratet bist.";
-
-"같은 종류의 유니크 아이템 두 개를 동시에 장착할 수 없습니다.";
-"Du kannst diesen Gegenstand nicht zweimal ausrüsten.";
-
-"%s 에서 소켓 빠질때까지 남은 시간 %d";
-"Bis zur Fassungsentfernung von %s verbleibende Zeit: %d";
-
-"이성간에만 할 수 있습니다.";
-"Diese Aktion kann nur mit dem anderen Geschlecht ausgeführt werden.";
-
-"%s에 박혀있던 보석이 사라집니다.";
-"Aus %s ist ein Edelstein verschwunden.";
-
-"<길드> 길드 이름이 적합하지 않습니다.";
-"[Gilde] Der Gildenname ist ungültig.";
-
-"<길드> 이미 같은 이름의 길드가 있습니다.";
-"[Gilde] Dieser Gildenname ist bereits vergeben.";
-
-"<길드> 길드를 생성할 수 없습니다.";
-"[Gilde] Du kannst keine Gilde erstellen.";
-
-"%s 길드가 %s 길드에 선전포고를 하였습니다!";
-"Die Gilde %s hat der Gilde %s den Krieg erklärt!";
-
-"<길드> %s 길드가 길드전을 거부하였습니다.";
-"[Gilde] %s hat den Gildenkrieg abgelehnt.";
-
-"%s 길드와 %s 길드가 잠시 후 전쟁을 시작합니다!";
-"Der Gildenkrieg zwischen %s und %s beginnt in wenigen Sekunden!";
-
-"%s 길드와 %s 길드가 전쟁을 시작하였습니다!";
-"Der Gildenkrieg zwischen %s und %s hat begonnen!";
-
-"%s 길드와 %s 길드 사이의 전쟁이 무승부로 끝났습니다.";
-"Der Gildenkrieg zwischen %s und %s endet unentschieden.";
-
-"%s 길드가 %s 길드와의 전쟁에서 승리 했습니다.";
-"%s hat den Gildenkrieg gegen %s gewonnen.";
-
-"이 행동은 상호동의 하에 가능 합니다.";
-"Für diese Aktion benötigst du die Zustimmung deines Mitspielers.";
-
-"<길드> 길드전이 취소 되었습니다.";
-"[Gilde] Der Gildenkrieg wurde abgebrochen.";
-
-"%s 길드와 %s 길드 사이의 전쟁이 취소되었습니다.";
-"Der Gildenkrieg zwischen %s und %s wurde abgebrochen.";
-
-"닫기";
-"Schließen";
-
-"전투가 시작 되어 취소 되었습니다.";
-"Aktion abgebrochen. Du hast angefangen zu kämpfen.";
-
-"다른 컴퓨터에서 로그인 하여 접속을 종료 합니다.";
-"Jemand hat sich mit deinen Account-Daten eingeloggt. Du wirst vom Server getrennt.";
-
-"나무에서 부터 신비한 빛이 나옵니다.";
-"Ein mystisches Licht erscheint vom Baum.";
-
-"%d분의 결제시간이 추가 되었습니다. (결제번호 %d)";
-"%d Spielzeit wird deinem Konto hinzugefügt. (Zahlung Nr. %d)";
-
-"관전 모드로 길드전에 참가하셨습니다.";
-"Du kannst am Gildenkampf im Beobachter-Modus teilnehmen.";
-
-"자신을 선택하시면 밖으로 나갈 수 있는 <관람 종료> 버튼이 나옵니다.";
-"Beim Auswählen des Charakters erscheint ein Icon.";
-
-"길드전에 참가한 상대방 길드원이 아무도 없습니다.";
-"Es gibt keine Gegner.";
-
-"%s님과의 대결 시작!";
-"Der Kampf mit %s hat begonnen!";
-
-"1분 이내에 아무도 접속하지 않으면 길드전이 자동 종료됩니다.";
-"Findet sich kein Gegner, wird der Gildenkrieg automatisch beendet.";
-
-"길드전이 일찍 종료되어 무승부로 판정 되었습니다. (5분이 지나지 않음)";
-"Da der Gildenkrieg vorzeitig beendet wurde, wird das Ergebnis als Unentschieden gewertet.";
-
-"군주가 내린 축복으로 모든 에너지가 가득 채워집니다";
-"Wegen des Segens des Kaisers wird die Energie zurückgeworfen.";
-
-"%d 초 후에 군주의 축복을 사용할 수 있습니다";
-"Nach %d Sekunden kann der Segen des Kaisers verwendet werden.";
-
-"쿨타임 적용중  %d 후 사용가능";
-"Nach %d Sekunden kann der Segen des Kaisers verwendet werden.";
-
-"국고에 자금이 모자랍니다 국고 : %d ";
-"Nicht genügend Steuereinnahmen : %d";
-
-"[TEST_ONLY]현재 국고 : %d ";
-"[TEST_ONLY]Steuerhöhe : %d";
-
-"둔갑에 실패 하였습니다";
-"Fehler bei der Verwandlung.";
-
-"둔갑서 수련을 마첬습니다. 신선에게 찾아가세요.";
-"Du hast die Verwandlung fertig gelernt.";
-
-"말을 먼저 소환해주세요.";
-"Bitte ruf zuerst dein Pferd.";
-
-"말을 돌려보냈습니다.";
-"Du hast dein Pferd fortgeschickt.";
-
-"%s님이 대결신청을 했습니다. 승낙하려면 대결동의를 하세요.";
-"%s hat dich zum Kampf aufgefordert!";
-
-"말에서 먼저 내려야 합니다.";
-"Du musst absteigen.";
-
-"말을 탄 상태에서는 먹이를 줄 수 없습니다.";
-"Du kannst dein Pferd nicht füttern, während du aufsitzt.";
-
-"말에게 %s%s 주었습니다.";
-"Du hast das Pferd mit %s%s gefüttert.";
-
-"%s 아이템이 필요합니다";
-"Du brauchst %s.";
-
-"셧다운이 %d초 남았습니다.";
-"%d Sekunden bis zum Beenden.";
-
-"%d초 후 게임이 셧다운 됩니다.";
-"Nach %d Sekunden wird das Spiel beendet.";
-
-"%d초 남았습니다.";
-"%d Sekunden bis zum Beenden.";
-
-"취소 되었습니다.";
-"Das Ausloggen wurde abgebrochen.";
-
-"로그인 화면으로 돌아 갑니다. 잠시만 기다리세요.";
-"Zurück zum Login-Fenster. Bitte warten.";
-
-"게임을 종료 합니다. 잠시만 기다리세요.";
-"Du wirst vom Server getrennt. Bitte warten.";
-
-"%s에게 대결신청을 했습니다.";
-"Du hast %s zum Kampf aufgefordert.";
-
-"캐릭터를 전환 합니다. 잠시만 기다리세요.";
-"Du wechselst den Charakter. Bitte warten.";
-
-"아직 재시작 할 수 없습니다. (%d초 남음)";
-"Noch kein Neustart möglich. Warte %d Sekunden.";
-
-"아직 재시작 할 수 없습니다.(%d초 남음)";
-"Noch kein Neustart möglich. Warte %d Sekunden.";
-
-"아직 재시작 할 수 없습니다.(%d초 남음 )";
-"Noch kein Neustart möglich. Warte %d Sekunden.";
-
-"아직 마을에서 재시작 할 수 없습니다. (%d 초 남음)";
-"Noch kein Neustart in der Stadt möglich. Warte %d Sekunden.";
-
-"성지에서 부활 기회를 모두 잃었습니다! 마을로 이동합니다!";
-"Die Wartezeit ist abgelaufen. Du wirst in der Stadt wiederbelebt.";
-
-"둔갑 중에는 능력을 올릴 수 없습니다.";
-"Du kannst deinen Status nicht ändern, solange du verwandelt bist.";
-
-"상대방이 대련중입니다.";
-"Der Spieler duelliert sich gerade.";
-
-"<길드> 길드에 속해있지 않습니다.";
-"[Gilde] Es gehört nicht der Gilde.";
-
-"<길드> 길드 스킬 레벨을 변경할 권한이 없습니다.";
-"[Gilde] Du bist nicht berechtigt, das Level der Gildenfertigkeiten zu ändern.";
-
-"잘못된 선택을 했습니다";
-"Die Auswahl ist falsch.";
-
-"<창고> 잘못된 암호를 입력하셨습니다.";
-"[Lager] Du hast ein falsches Passwort eingegeben.";
-
-"<창고> 창고가 이미 열려있습니다.";
-"[Lager] Das Lager ist bereits geöffnet.";
-
-"<창고> 창고를 닫은지 10초 안에는 열 수 없습니다.";
-"[Lager] Du musst 10 Sekunden warten, bevor du das Lager wieder öffnen kannst.";
-
-"<창고> 거리가 멀어서 창고를 열 수 없습니다.";
-"[Lager] Du bist zu weit entfernt, um das Lager zu öffnen.";
-
-"<파티> 서버 문제로 파티 관련 처리를 할 수 없습니다.";
-"[Gruppe] Der Server kann die Gruppenaufgabe nicht bearbeiten.";
-
-"<파티> 던전 안에서는 파티에서 나갈 수 없습니다.";
-"[Gruppe] Du kannst deine Gruppe nicht verlassen, während ihr in einem Dungeon seid.";
-
-"<파티> 파티에서 나가셨습니다.";
-"[Gruppe] Du bist aus der Gruppe ausgetreten.";
-
-"<길드> 이미 다른 전쟁에 참전 중 입니다.";
-"[Gilde] Deine Gilde nimmt bereits an einem anderen Krieg teil.";
-
-"<길드> 길드전에 대한 권한이 없습니다.";
-"[Gilde] Ein Gildenkrieg ist nicht gerechtfertigt.";
-
-"<길드> 그런 길드가 없습니다.";
-"[Gilde] Es gibt keine Gilde dieses Namens.";
-
-"이미 입후보되어있습니다";
-"Es besteht schon eine Kandidatur.";
-
-"이미 선전포고 중인 길드입니다.";
-"[Gilde] Die Gilde ist bereits im Krieg.";
-
-"<길드> 전비가 부족하여 길드전을 할 수 없습니다.";
-"[Gilde] Nicht genug Yang, um an einem Gildenkrieg teilzunehmen.";
-
-"<길드> 상대방 길드의 전비가 부족하여 길드전을 할 수 없습니다.";
-"[Gilde] Die Gilde hat nicht genug Yang, um an einem Gildenkrieg teilzunehmen.";
-
-"<길드> 이미 전쟁이 예약된 길드 입니다.";
-"[Gilde] Die Gilde ist bereits für einen anderen Krieg vorgemerkt.";
-
-"<길드> 상대방 길드가 이미 전쟁 중 입니다.";
-"[Gilde] Die Gilde ist bereits in einem Krieg.";
-
-"<길드> 길드전을 하기 위해선 최소한 %d명이 있어야 합니다.";
-"[Gilde] Es werden mindestens %d Spieler benötigt, um an einem Gildenkrieg teilzunehmen.";
-
-"<길드> 상대방 길드의 레더 점수가 모자라서 길드전을 할 수 없습니다.";
-"[Gilde] Die Gilde hat nicht genügend Punkte, um an einem Gildenkrieg teilzunehmen.";
-
-"<길드> 상대방 길드의 길드원 수가 부족하여 길드전을 할 수 없습니다.";
-"[Gilde] Die Gilde hat nicht genug Mitglieder, um an einem Gildenkrieg teilzunehmen.";
-
-"레벨 20 이하는 핸드폰 번호를 등록할 수 없습니다.";
-"Dein Level muss höher als 20 sein, um eine Handynummer zu registrieren.";
-
-"군주의 자격을 가지고 있지 않습니다";
-"Du hast nicht die Qualifikation eines Kaisers.";
-
-"%s 님으로 부터 친구 등록을 거부 당했습니다.";
-"%s hat die Einladung abgelehnt.";
-
-"이미 파티에 속해 있으므로 가입신청을 할 수 없습니다.";
-"Du kannst die Einladung nicht annehmen, da du bereits in der Gruppe bist.";
-
-"군주만이 사용가능 한 기능입니다";
-"Nur der Kaiser kann das benutzen.";
-
-"%d 초간 쿨타임이 적용중입니다.";
-"Cooldown-Zeit ungefähr %d Sekunden";
-
-"국고에 돈이 부족합니다. 현재 : %lu 필요금액 : %lu";
-"Mangel an Steuern. Derzeitiges Kapital : %u fehlendes Kapital : %u";
-
-"사용법: warpto <character name>";
-"Befehl: warpen zu <character name>";
-
-"타제국 유저에게는 이동할수 없습니다";
-"Du kannst nicht zu einem fremden Reichsspieler warpen.";
-
-"해당 유저는 %d 채널에 있습니다. (현재 채널 %d)";
-"Hinzufügen vom Spieler %d in den Channel. (Geschenk Channel %d)";
-
-"%s 에게로 이동합니다";
-"Warpen zu Spieler %s.";
-
-"타제국 유저는 소환 할수 없습니다";
-"Du kannst keine fremden Reichsspieler zusammenrufen.";
-
-"<길드> 길드전중에는 사냥에 따른 이익이 없습니다.";
-"[Gilde] Während eines Gildenkrieges gibt es keine Erfahrungspunkte für die Jagd.";
-
-"군주의 축복으로 이지역 %s 유저는 HP,SP가 모두 채워집니다.";
-"Beim Verwenden des Segen des Monarchen %s werden die TP und die MP wiederhergestellt.";
-
-"나의 군주 정보";
-"Meine Informationen über den Kaiser";
-
-"[%s군주] : %s  보유금액 %lld ";
-"[%sMonarch] : %s Yang Besitz %lld";
-
-"[%s군주] : %s  ";
-"[%sMonarch] : %s";
-
-"군주 정보";
-"Informationen über den Kaiser";
-
-"군주만이 사용할수 있는 기능입니다";
-"Nur ein Kaiser kann das benutzen.";
-
-"1-50 사이의 수치를 선택해주세요";
-"Wähle eine Zahl zwischen 1 und 50.";
-
-"소환할수 없는 몬스터 입니다. 소환가능한 몬스터는 홈페이지를 참조하세요";
-"Das Monster kann nicht gerufen werden, überprüfe die Mob-Nummer.";
-
-"최대 생명력 +%d";
-"Trefferpunkte +%d";
-
-"최대 정신력 +%d";
-"Manapunkte +%d";
-
-"군주의 축복을 사용하였습니다.";
-"Der Segen des Kaisers ist aktiv.";
-
-"체력 +%d";
-"Ausdauer +%d";
-
-"지능 +%d";
-"Intelligenz +%d";
-
-"근력 +%d";
-"Stärke +%d";
-
-"민첩 +%d";
-"Beweglichkeit +%d";
-
-"공격속도 +%d";
-"Angriffsgeschwindigkeit +%d";
-
-"이동속도 %d";
-"Bewegungsgeschwindigkeit %d";
-
-"쿨타임 -%d";
-"Abklingzeit -%d";
-
-"생명력 회복 +%d";
-"Lebenserholung +%d";
-
-"정신력 회복 +%d";
-"Manaerholung +%d";
-
-"독공격 %d";
-"Giftangriff %d";
-
-"스턴 +%d";
-"Stern +%d";
-
-"슬로우 +%d";
-"Geschwindigkeitsreduzierung +%d";
-
-"%d%% 확률로 치명타 공격";
-"Kritischer Angriff mit einer Chance von %d%%";
-
-"%d%% 확률로 관통 공격";
-"Durchdringender Angriff mit einer Chance von %d%%";
-
-"인간류 몬스터 타격치 +%d%%";
-"Spielerangriffskraft gegen Monster +%d%%";
-
-"동물류 몬스터 타격치 +%d%%";
-"Pferdeangriffskraft gegen Monster +%d%%";
-
-"웅귀족 타격치 +%d%%";
-"Angriffsverstärkung gegen Wonggui + %d%%";
-
-"밀교류 타격치 +%d%%";
-"Angriffsverstärkung gegen Milgyo + %d%%";
-
-"시체류 타격치 +%d%%";
-"Angriffsverstärkung gegen Untote + %d%%";
-
-"악마류 타격치 +%d%%";
-"Angriffsverstärkung gegen Teufel + %d%%";
-
-"군주의 사자후 영향으로 이지역 %s 유저는 3분간 10 %% 의 공격력이  증가됩니다";
-"Herrscher Sa-Za-Hu gewährt dem Spieler %s für 3 Minuten eine um 10 %% erhöhte Angriffskraft in diesem Gebiet.";
-
-"타격치 %d%% 를 생명력으로 흡수";
-"Absorb von Leben %d%% beim Angriff.";
-
-"타력치 %d%% 를 정신력으로 흡수";
-"Absorb von Mana %d%% beim Angriff.";
-
-"%d%% 확률로 타격시 상대 전신력 소모";
-"Mit einer Wahrscheinlickeit von %d%% wird Mana vom Gegner genommen.";
-
-"%d%% 확률로 피해시 정신력 회복";
-"Absorb mit einer Wahrscheinlichkeit von %d%% Mana.";
-
-"물리타격시 블럭 확률 %d%%";
-"%d%% Chance, einen Nahkampfangriff abzublocken";
-
-"활 공격 회피 확률 %d%%";
-"%d%% Chance, einen Fernangriff abzuwehren";
-
-"한손검 방어 %d%%";
-"Einhandschwert-Verteidigung %d%%";
-
-"양손검 방어 %d%%";
-"Zweihandschwert-Verteidigung %d%%";
-
-"두손검 방어 %d%%";
-"Zweihandschwert-Verteidigung %d%%";
-
-"방울 방어 %d%%";
-"Glockenverteidigung %d%%";
-
-"군주의 금강권 영향으로 이지역 %s 유저는 3분간 10 %% 의 방어력이  증가됩니다";
-"Durch den Herrscher Geum-Gang-Gwon, wird zu dem Spieler %s in diesem Gebiet für 3 Minuten 10 %% seiner Rüstung gestiegen";
-
-"부채 방어 %d%%";
-"Fächerverteidigung %d%%";
-
-"활공격 저항 %d%%";
-"Fernangriff-Widerstand %d%%";
-
-"화염 저항 %d%%";
-"Feuerwiderstand %d%%";
-
-"전기 저항 %d%%";
-"Blitzwiderstand %d%%";
-
-"마법 저항 %d%%";
-"Magiewiderstand %d%%";
-
-"바람 저항 %d%%";
-"Windwiderstand %d%%";
-
-"직접 타격치 반사 확률 : %d%%";
-"Direkten Angriff reflektieren: %d%%";
-
-"저주 되돌리기 확률 %d%%";
-"Fluch reflektieren: %d%%";
-
-"독 저항 %d%%";
-"Giftwiderstand %d%%";
-
-"%d%% 확률로 적퇴치시 정신력 회복";
-"Manaerhöhung von %d%% bei einem Sieg über den Gegner.";
-
-"OX 이벤트가 이미 진행중입니다(flag: %d)";
-"Das Event läuft schon. (Flag: %d)";
-
-"%d%% 확률로 적퇴치시 경험치 추가 상승";
-"Erfahrungserhöhung von %d%% bei einem Sieg über den Gegner.";
-
-"%d%% 확률로 적퇴치시 돈 2배 드롭";
-"Erhöhung des erbeuteten Yang um %d%% bei einem Sieg über den Gegner.";
-
-"%d%% 확률로 적퇴치시 아이템 2배 드롭";
-"Erhöhung der erbeuteten Gegenstände um %d%% bei einem Sieg über den Gegner.";
-
-"물약 사용시 %d%% 성능 증가";
-"Erhöhung der Leistung um %d%% durch Einnahme des Tranks.";
-
-"%d%% 확률로 적퇴치시 생명력 회복";
-"%d%% Chance, nach dem Sieg über einen Gegner Trefferpunkte aufzufüllen.";
-
-"기절하지 않음 %d%%";
-"Keine Benommenheit %d%%";
-
-"느려지지 않음 %d%%";
-"Keine Verlangsamung %d%%";
-
-"넘어지지 않음 %d%%";
-"Kein Umfallen %d%%";
-
-"공격력 +%d";
-"Angriffskraft + %d";
-
-"방어력 +%d";
-"Rüstung + %d";
-
-"OX 문제 스크립트 로딩 실패";
-"OX Quiz-Script konnte nicht geladen werden.";
-
-"마법 공격력 +%d";
-"Magie-Angriff + %d";
-
-"마법 방어력 +%d";
-"Magie-Verteidigung + %d";
-
-"최대 지구력 +%d";
-"Maximale Ausdauer + %d";
-
-"무사에게 강함 +%d%%";
-"Stark gegen Krieger + %d%%";
-
-"자객에게 강함 +%d%%";
-"Stark gegen Ninja + %d%%";
-
-"수라에게 강함 +%d%%";
-"Stark gegen Sura + %d%%";
-
-"무당에게 강함 +%d%%";
-"Stark gegen Schamanen + %d%%";
-
-"몬스터에게 강함 +%d%%";
-"Stark gegen Monster +%d%%";
-
-"공격력 +%d%%";
-"Angriff + %d%%";
-
-"방어력 +%d%%";
-"Verteidigung + %d%%";
-
-"OX 문제 스크립트 로딩 성공";
-"OX Quiz-Script wurde geladen.";
-
-"경험치 %d%%";
-"Erfahrung %d%%";
-
-"아이템 드롭율 %.1f배";
-"Wahrscheinlichkeit einen Gegenstand zu finden %.1f";
-
-"돈 드롭율 %.1f배";
-"Wahrscheinlichkeit Yang zu finden %.1f";
-
-"최대 생명력 +%d%%";
-"Maximales Leben +%d%%";
-
-"최대 정신력 +%d%%";
-"Maximales Leben +%d%%";
-
-"스킬 데미지 %d%%";
-"Fertigkeitsschaden %d%%";
-
-"평타 데미지 %d%%";
-"Schlagschaden %d%%";
-
-"스킬 데미지 저항 %d%%";
-"Widerstand gegen Fertigkeitsschaden %d%%";
-
-"평타 데미지 저항 %d%%";
-"Widerstand gegen Schläge %d%%";
-
-"무사공격에 %d%% 저항";
-"%d%% Widerstand gegen Krieger-Angriffe";
-
-"안녕하세요. 메틴2 입니다.";
-"Willkommen in Metin2.";
-
-"자객공격에 %d%% 저항";
-"%d%% Widerstand gegen Ninja-Angriffe";
-
-"수라공격에 %d%% 저항";
-"%d%% Widerstand gegen Sura-Angriffe";
-
-"무당공격에 %d%% 저항";
-"%d%% Widerstand gegen Schamanen-Angriffe";
-
-" (만료일 : %d년 %d월 %d일)";
-"(Ablauf: %d j- %d m - %d t)";
-
-"채팅 금지 상태입니다.";
-"Dein Chat ist gesperrt.";
-
-"외치기는 유료회원만 사용할수 있습니다";
-"Du benötigst ein höheres Level, um rufen zu können.";
-
-"외치기는 레벨 %d 이상만 사용 가능 합니다.";
-"Du benötigst mindestens Level %d, um rufen zu können.";
-
-"파티 중이 아닙니다.";
-"Du bist nicht in der Gruppe.";
-
-"길드에 가입하지 않았습니다.";
-"Du bist der Gilde nicht beigetreten.";
-
-"상대방이 메신져 추가 거부 상태입니다.";
-"Der Spieler hat abgelehnt, deiner Freundesliste hinzugefügt zu werden.";
-
-"OX 이벤트가 시작되었습니다.";
-"OX Event ist gestartet.";
-
-"<메신져> 운영자는 메신져에 추가할 수 없습니다.";
-"[Freunde] Du kannst keinen GM zu deiner Liste hinzufügen.";
-
-"%s 님은 접속되 있지 않습니다.";
-"%s ist nicht online.";
-
-"거래 후 %d초 이내에 창고를 열수 없습니다.";
-"Nach einem Handel musst du %d Sekunden warten, bevor du einen Laden eröffnen darfst.";
-
-"창고를 연후 %d초 이내에는 거래를 할수 없습니다.";
-"Du kannst erst in %d Sekunden wieder handeln.";
-
-"액수가 20억 냥을 초과하여 거래를 할수가 없습니다..";
-"Du besitzt mehr als 2 Mrd. Yang. Du kannst nicht handeln.";
-
-"다른 거래중일경우 개인상점을 열수가 없습니다.";
-"Du kannst keinen privaten Laden eröffnen, solange ein anderes Fenster offen ist.";
-
-"상대방의 총금액이 20억 냥을 초과하여 거래를 할수가 없습니다..";
-"Der Spieler besitzt mehr als 2 Mrd. Yang. Du kannst nicht mit ihm handeln.";
-
-"<창고> 옮길 수 없는 위치입니다.";
-"[Lager] Keine Bewegung möglich.";
-
-"<창고> 이 아이템은 넣을 수 없습니다.";
-"[Lager] Der Gegenstand kann nicht gelagert werden.";
-
-"<파티> 파티요청을 한 캐릭터를 찾을수 없습니다.";
-"[Gruppe] Der Spieler, der die Einladung ausgesprochen hat, ist nicht online.";
-
-"을두지를 통하여 입장 가능합니다.";
-"Uriel erlaubt einzutreten.";
-
-"<파티> 리더만 변경할 수 있습니다.";
-"[Gruppe] Nur der Gruppenanführer kann das ändern.";
-
-"<파티> 상태를 변경하려는 사람이 파티원이 아닙니다.";
-"[Gruppe] Das Ziel ist kein Mitglied deiner Gruppe.";
-
-"<파티> 던전 안에서는 파티에서 추방할 수 없습니다.";
-"[Gruppe] Du kannst in einem Dungeon keinen Spieler ausschließen.";
-
-"<파티> 던젼내에서는 파티원을 추방할 수 없습니다.";
-"[Gruppe] Du kannst in einem Dungeon keinen Spieler ausschließen.";
-
-"<파티> 파티에서 추방당하셨습니다.";
-"[Gruppe] Du wurdest aus der Gruppe ausgeschlossen.";
-
-"<파티> 던젼내에서는 파티를 나갈 수 없습니다.";
-"[Gruppe] Du kannst in einem Dungeon keine Gruppe verlassen.";
-
-"<파티> 다른 파티원을 탈퇴시킬 수 없습니다.";
-"[Gruppe] Du kannst die Gruppenmitglieder nicht ausschließen.";
-
-"<길드> 해산한 후 %d일 이내에는 길드를 만들 수 없습니다.";
-"[Gilde] Nach Auflösung einer Gilde kannst du %d Tage lang keine neue erstellen.";
-
-"<길드> 탈퇴한 후 %d일 이내에는 길드를 만들 수 없습니다.";
-"[Gilde] Nach Verlassen einer Gilde kannst du %d Tage lang keine neue erstellen.";
-
-"적합하지 않은 길드 이름 입니다.";
-"Der Gildenname ist ungültig.";
-
-"많은 참여 부탁드립니다.";
-"Wir bitten um die Teilnahme vieler Spieler.";
-
-"<길드> [%s] 길드가 생성되었습니다.";
-"[Gilde] [%s] wurde erstellt.";
-
-"<길드> 길드 생성에 실패하였습니다.";
-"[Gilde] Erstellen der Gilde fehlgeschlagen.";
-
-"<파티> 파티 기술은 파티장만 사용할 수 있습니다.";
-"[Gruppe] Gruppenfertigkeiten stehen nur dem Gruppenanführer zur Verfügung.";
-
-"<파티> 소환하려는 대상을 찾을 수 없습니다.";
-"[Gruppe] Das Ziel wurde nicht gefunden.";
-
-"<길드> 잘못된 금액입니다.";
-"[Gilde] Der Yangbetrag ist nicht korrekt.";
-
-"<길드> 가지고 있는 돈이 부족합니다.";
-"[Gilde] Du hast nicht genügend Yang dabei.";
-
-"<길드> 그러한 사람을 찾을 수 없습니다.";
-"[Gilde] Die gesuchte Person kann nicht gefunden werden.";
-
-"<길드> 상대방이 같은 길드가 아닙니다.";
-"[Gilde] Die Person gehört nicht derselben Gilde an.";
-
-"<길드> 길드원을 강제 탈퇴 시킬 권한이 없습니다.";
-"[Gilde] Du bist nicht berechtigt, Gildenmitglieder zu entlassen.";
-
-"<길드> 길드원 %s 님을 강제 탈퇴 시켰습니다.";
-"[Gilde] Gildenmitglied %s wurde von der Gilde ausgeschlossen.";
-
-"OX이벤트가 닫히지 않았거나, 퀴즈 출제중입니다.(flag: %d)";
-"OX Das Event ist nicht beendet. Es sind Fehler aufgetreten. (Flag: %d)";
-
-"<길드> 길드원을 강제 탈퇴 시켰습니다.";
-"[Gilde] Du hast ein Gildenmitglied entlassen.";
-
-"<길드> 직위 이름을 변경할 권한이 없습니다.";
-"[Gilde] Du bist nicht berechtigt, deinen Rangnamen zu ändern.";
-
-"<길드> 길드장의 직위 이름은 변경할 수 없습니다.";
-"[Gilde] Die Rechte des Gildenleiters können nicht verändert werden.";
-
-"<길드> 적합하지 않은 직위 이름 입니다.";
-"[Gilde] Der Rangname ist ungültig.";
-
-"<길드> 직위 권한을 변경할 권한이 없습니다.";
-"[Gilde] Du bist nicht berechtigt, deine Machtposition zu ändern.";
-
-"<길드> 길드장의 권한은 변경할 수 없습니다.";
-"[Gilde] Die Rechte des Gildenleiters können nicht verändert werden.";
-
-"<길드> %u의 경험치를 투자하였습니다.";
-"[Gilde] %u Erfahrungspunkte eingesetzt.";
-
-"<길드> 경험치 투자에 실패하였습니다.";
-"[Gilde] Erfahrungseinsatz fehlgeschlagen.";
-
-"<길드> 돈이 부족합니다.";
-"[Gilde] Nicht genügend Yang in der Gildenkasse.";
-
-"<길드> 용신력 회복에 실패하였습니다.";
-"[Gilde] Drachengeist wurde nicht wiederhergestellt.";
-
-"잠시 후 OX 이벤트를 다시 시작하겠습니다.";
-"In kurzer Zeit wird das OX Event neu gestartet.";
-
-"<길드> 공지글을 작성할 권한이 없습니다.";
-"[Gilde] Du bist nicht berechtigt, eine Ankündigung zu machen.";
-
-"<길드> 직위를 변경할 권한이 없습니다.";
-"[Gilde] Du bist nicht berechtigt, die Position zu ändern.";
-
-"<길드> 길드장의 직위는 변경할 수 없습니다.";
-"[Gilde] Die Stellung des Gildenleiters kann nicht geändert werden.";
-
-"<길드> 길드장으로 직위를 변경할 수 없습니다.";
-"[Gilde] Du kannst dich nicht selbst zum Gildenleiter ernennen.";
-
-"<길드> 장군을 지정할 권한이 없습니다.";
-"[Gilde] Du bist nicht berechtigt, den Gildenleiter zu wählen.";
-
-"<길드> 더이상 장수를 지정할 수 없습니다.";
-"[Gilde] Du kannst keine weiteren Gildenleiter auswählen.";
-
-"아이템을 건네줄 수 없습니다.";
-"Du kannst diesen Gegenstand nicht abgeben.";
-
-"불법 프로그램이 감지 되어 게임이 종료 됩니다.";
-"Illegale Software wurde entdeckt. Dein Spiel wird beendet.";
-
-"소유 돈이 20억냥을 넘어 거래를 핼수가 없습니다.";
-"Du hast mehr als 2 Mrd. Yang bei dir. Du kannst nicht handeln.";
-
-"금액이 부족합니다.";
-"Unzulängliches Yang.";
-
-"현재 이벤트 참가자 분들은 마을로 이동 되겠습니다.";
-"Das Geschenk Event wird auf ein Gebiet begrenzt.";
-
-"아이템 룰렛 시작.";
-"Gegenstand-Roulette starten";
-
-"머니  룰렛 시작.";
-"Yang-Roulette starten";
-
-"현재 온라인 상태 입니다. 귓말을 이용하세요.";
-"Der Spieler ist online. Bitte nutze Flüstern.";
-
-"핸드폰 번호가 등록되어 있지 않습니다.";
-"Die Handynummer ist nicht registriert.";
-
-"문자 메세지 전송은 레벨 20부터 할 수 있습니다.";
-"Du musst mindestens auf Level 20 sein, um eine SMS zu schicken.";
-
-"문자 메세지 전송에는 2000원이 필요 합니다.";
-"Du benötigst 2000 DT, um eine SMS zu schicken.";
-
-"문자 메세지를 전송 했습니다.";
-"Deine SMS wurde verschickt.";
-
-"%s 길드의 %s이 %d%% 증가했습니다!";
-"%s der Gilde %s ist um %d%% angestiegen!";
-
-"%s 길드의 %s이 정상으로 돌아왔습니다.";
-"%s der Gilde %s hat sich normalisiert.";
-
-"%s의 %s이 %d%% 증가했습니다!";
-"%s: %s ist um %d%% angestiegen!";
-
-"%s의 %s이 정상으로 돌아왔습니다.";
-"%s 's %s hat sich normalisiert.";
-
-"곡괭이 수련도가 최대(%d)가 되었습니다.";
-"Deine Abbau-Punkte haben ihr Maximum erreicht. (%d)";
-
-"곡괭이가 최대 수련도에 도달하였습니다.";
-"Deine Abbau-Punkte haben die maximale Stufe erreicht.";
-
-"나무꾼를 통해 다음 레벨의 곡괭이로 업그레이드 할 수 있습니다.";
-"Du kannst deine Spitzhacke beim Holzfäller Deokbae verbessern.";
-
-"곡괭이의 수련도가 증가하였습니다! (%d/%d)";
-"Deine Abbau-Punkte sind gestiegen! (%d/%d)";
-
-"곡괭이를 들고 있지 않아서 캘 수 없습니다.";
-"Ohne Spitzhacke kannst du nichts abbauen.";
-
-"더이상 캐낼 수 없습니다.";
-"Es gibt nichts abzubauen.";
-
-"채광에 성공하였습니다.";
-"Der Abbau war erfolgreich.";
-
-"채광에 실패하였습니다.";
-"Der Abbau ist fehlgeschlagen.";
-
-"<메신져> %s 님을 친구로 추가하였습니다.";
-"[Freunde] Du hast %s als Freund hinzugefügt.";
-
-"잠시 후 마을로 이동되겠습니다.";
-"In Kürze wird der Spieler in die Stadt teleportiert.";
-
-"<메신져> %s 님을 메신저에서 삭제하였습니다.";
-"[Freunde] Du hast %s von der Liste gelöscht.";
-
-"서버에 치명적인 오류가 발생하여 자동으로 재부팅됩니다.";
-"Ein schwerwiegender Server-Fehler ist aufgetreten. Der Server wird automatisch neu gestartet.";
-
-"10초후 자동으로 접속이 종료되며,";
-"In 10 Sekunden wirst du automatisch getrennt.";
-
-"5분 후에 정상적으로 접속하실수 있습니다.";
-"Du kannst dich nach 5 Minuten verbinden.";
-
-"(%s) 길드가 생성되었습니다. [임시]";
-"(%s) wurde erstellt. [Temporär]";
-
-"현재 전쟁중인 길드 입니다";
-"Diese Gilde ist im Krieg.";
-
-"%s: 존재하지 않는 길드 입니다.";
-"%s: Diese Gilde existiert nicht.";
-
-"그런 이름 또는 번호의 길드가 없습니다.";
-"Eine Gilde mit diesem Namen oder dieser Nummer existiert nicht.";
-
-"존재하지 않는 건물입니다.";
-"Das Gebäude existiert nicht.";
-
-"같이 지을 수 없는 종류의 건물이 지어져 있습니다.";
-"Dieser Gebäudetyp kann nur einmal errichtet werden.";
-
-"OX이벤트 맵을 먼저 닫아 주세요.(Flag: %d)";
-"Schließe zuerst die OX Eventkarte. (Flag: %d)";
-
-"건설에 필요한 건물이 지어져 있지 않습니다.";
-"Das Hauptgebäude muss zuerst errichtet werden.";
-
-"건물 비용 정보 이상으로 건설 작업에 실패했습니다.";
-"Bau wegen eines falschen Baupreises fehlgeschlagen.";
-
-"건설 비용이 부족합니다.";
-"Deine Gilde besitzt nicht genug Yang, um das Gebäude zu errichten.";
-
-"자재가 부족하여 건설할 수 없습니다.";
-"Du hast nicht genügend Material zum Bauen.";
-
-"건물을 지을 수 없는 위치입니다.";
-"Du kannst an diesem Ort kein Gebäude errichten.";
-
-"존재하지 않는 캐릭터 입니다.";
-"Der Charakter existiert nicht.";
-
-"대련 강제 종료 실패";
-"Duell nicht erfolgreich abgebrochen.";
-
-"대련 강제 종료 성공";
-"Duell erfolgreich abgebrochen.";
-
-"대련이 성공적으로 시작 되었습니다.";
-"Das Duell wurde erfolgreich begonnen.";
-
-"대련 시작에 문제가 있습니다.";
-"Es gibt ein Problem, das Duell zu beginnen.";
-
-"문제를 출제하지 못했습니다.";
-"Es ist kein Fehler aufgetreten.";
-
-"대련자가 없습니다.";
-"Es gibt keine Duellanten.";
-
-"남은 스탯 포인트가 없습니다.";
-"Es sind keine Statuspunkte übrig.";
-
-"남은 스탯 포인트가 적습니다.";
-"Verbleibende Statuspunkte sind zu niedrig.";
-
-"값을 잘못 입력하였습니다.";
-"Du hast einen falschen Wert eingegeben.";
-
-"명령어의 서브 커맨드가 잘못 되었습니다.";
-"Unterbefehl des Befehls ist falsch.";
-
-"플레이어 %d 와 플레이어  %d를 파혼시킵니다..";
-"Nicht eingehaltene Verpflichtung zwischen dem Spieler %d und dem Spieler %d.";
-
-"룻렛을 돌립니다. 금액 %d";
-"Roulette drehen für einen Betrag von %d Yang.";
-
-"아이템로그가 syslog 에 남았습니다";
-"Die Itemlog wurde in der syslog abgelegt.";
-
-"각제국 진행 정보";
-"Erfolgsinformationen der Reiche.";
-
-"선택 맵 정보 성지 %d 통로 %d %d %d";
-"Wähle die Karten Informationen des Heiligen Boden %d Durchgang %d %d %d";
-
-"문제를 출제하였습니다.";
-"Es ist ein Fehler aufgetreten.";
-
-"%s killcount %d mobkillcount %d bosskillcount %d 성지 진입수 %d";
-"%s killcount %d mobkillcount %d bosskillcount %d Zahl heiligen Boden %d";
-
-"나의 삼거리 진행정보";
-"Information über den Stand der Reichsschlacht";
-
-"퀘스트를 로드하는 중입니다. 잠시만 기다려 주십시오.";
-"Die Anfrage wird geladen. Bitte gedulde dich einen Moment.";
-
-"다른거래창이 열린상태에서는 창고를 열수가 없습니다.";
-"Du kannst kein Lager eröffnen, solange ein anderes Fenster offen ist.";
-
-"<창고> 창고 비밀번호가 변경되었습니다.";
-"[Lager] Lagerkennwort wurde geändert.";
-
-"<창고> 기존 비밀번호가 틀렸습니다.";
-"[Lager] Du hast das falsche Passwort eingegeben.";
-
-"결재기간이 %d분 후 만료 됩니다.";
-"Deine Spielzeit läuft in %d Minuten ab.";
-
-"정상적으로 투표를하였습니다.";
-"Regelgerecht gewählt.";
-
-"이미투표를 했음";
-"Bereits gewählt.";
-
-"%s 님은 정상적으로 출마를 하였습니다.";
-"%s Spieler ist schon in der Wahl.";
-
-"OX이벤트가 열려 있지 않거나 문제 출제중입니다.(Flag: %d)";
-"OX Event ist beendet. Es gab keinen Fehler. (Flag: %d)";
-
-"출마를 할수가 없습니다";
-"Kann nicht zur Wahl aufgestellt werden.";
-
-"현재 %s 국고에는 %lu 의 돈이 있습니다";
-"%s hat noch %u Yang zur Verfügung.";
-
-"현재 %s 국고에는 %d 의 돈이 있습니다";
-"%s hat noch %d Yang zur Verfügung.";
-
-"국고에 돈이 부족하거나 돈을 가져올수 없는 상황입니다";
-"Du hast nicht genügend Yang.";
-
-" %s 군주 후보에서 삭제하였습니다";
-"%s ist als Kaiserkandidat gelöscht.";
-
-" %s 는 군주 후보가 아닙니다.";
-"%s ist kein Kandidat für die Kaiserwahl.";
-
-" %s 군주로 입명 했습니다.";
-"%s ist als Kaiser nominiert.";
-
-" %s 는 군주로 입명할수 없습니다 .";
-"%s kann nicht als Kaiser nominiert werden.";
-
-" %s 군주르 제거 하였습니다..";
-"Der %s Kaiser wird entfernt.";
-
-" %s 군주를 제거 할수 없습니다.";
-"Der %s Kaiser kann nicht entfernt werden.";
-
-"더 이상 OX이벤트 참가자를 받지 않습니다.";
-"OX Event akzeptiert keine Teilnehmer mehr.";
-
-"신수국";
-"Shinsoo-Reich";
-
-"천조국";
-"Chunjo-Reich";
-
-"진노국";
-"Jinno-Reich";
-
-"낚시대의 수련도가 증가하였습니다! (%d/%d)";
-"Deine Angelpunkte sind gestiegen! (%d/%d)";
-
-"낚시대가 최대 수련도에 도달하였습니다.";
-"Du hast die maximale Anzahl Angelpunkte erreicht.";
-
-"어부를 통해 다음 레벨의 낚시대로 업그레이드 할 수 있습니다.";
-"Geh zum Fischer und lass deine Angelrute verbessern!";
-
-"고기가 미끼만 빼먹고 잽싸게 도망칩니다.";
-"Du hast deinen Köder an den Fisch verloren.";
-
-"고기가 잡혔습니다! (%s)";
-"Du hast einen Fisch gefangen! (%s)";
-
-"이번에 잡은 물고기의 길이는 %.2fcm";
-"Die Länge des gefangenen Fisches beträgt %.2cm.";
-
-"낚시이벤트월척붕어";
-"Angelveranstaltung 'Beste Fischer'";
-
-"OX이벤트의 나머지 인원을 기록하였습니다.";
-"OX Die restlichen Eventteilnehmer werden notiert.";
-
-"낚시이벤트잉어";
-"Angelveranstaltung 'In der Ruhe liegt die Kraft'";
-
-"%s : %d 마리";
-"%s: %d";
-
-"%d 종류 %d 마리 낚음";
-"Du hast %d von %d gefangen.";
-
-"고기가 흔적도 없이 사라집니다.";
-"Der Fisch ist in den Tiefen des Wassers verschwunden.";
-
-"배 속에서 조개가 나왔습니다.";
-"Im Fisch ist eine Muschel.";
-
-"배 속에서 지렁이가 나왔습니다.";
-"Im Fisch ist ein Wurm.";
-
-"%s를 구웠습니다.";
-"Du röstest %s über dem Feuer.";
-
-"20억 냥을 초과하여 상점을 열수가 없습니다";
-"Du hast mehr als 2 Milliarden Yang bei dir. Deshalb kannst du nicht handeln.";
-
-"비속어나 은어가 포함된 상점 이름으로 상점을 열 수 없습니다.";
-"Du kannst deinem Laden keinen ungültigen Namen geben.";
-
-"유료화 아이템은 개인상점에서 판매할 수 없습니다.";
-"Du kannst keine Gegenstände aus dem Item-Shop in einem privaten Laden verkaufen.";
-
-"OX이벤트의 나머지 인원 기록을 실패했습니다.";
-"OX Die restlichen Eventteilnehmer wurden nicht notiert.";
-
-"채광을 중단하였습니다.";
-"Abbauen beendet.";
-
-"곡괭이를 장착하세요.";
-"Du benötigst eine Spitzhacke für den Erzabbau!";
-
-"낚시대를 장착 하세요.";
-"Bitte wähle eine Angel aus.";
-
-"미끼를 끼고 던져 주세요.";
-"Befestige zuerst einen Köder am Haken.";
-
-"낚시대가 아닌 물건으로 낚시를 할 수 없습니다!";
-"Du kannst nicht ohne Angel fischen!";
-
-"파티장이 접속 상태가 아니라서 요청을 할 수 없습니다.";
-"[Gruppe] Du kannst keine Anfrage stellen, da der Gruppenanführer nicht online ist.";
-
-"<파티> 다른 제국과 파티를 이룰 수 없습니다.";
-"[Gruppe] Mit Spielern eines anderen Reichs kannst du keine Gruppe bilden.";
-
-"<파티> 던전 안에서는 파티 초대를 할 수 없습니다.";
-"[Gruppe] Du kannst in einem Dungeon keine Einladung aussprechen.";
-
-"<파티> 관전 모드에선 파티 초대를 할 수 없습니다.";
-"[Gruppe] Du kannst im Zuschauer-Modus keine Einladung aussprechen.";
-
-"<파티> -30 ~ +30 레벨 이내의 상대방만 초대할 수 있습니다.";
-"[Gruppe] Es können nur Spieler im Levelunterschied von -30 bis +30 eingeladen werden.";
-
-"현재 남은 참가자수 : %d";
-"Die Nummern der restlichen Teilnehmer : %d";
-
-"<파티> 파티내 최고 레벨 보다 30레벨이 낮아 초대할 수 없습니다.";
-"[Gruppe] Du kannst den Spieler nicht einladen, da sein Level zu niedrig ist.";
-
-"<파티> 파티내 최저 레벨 보다 30레벨이 높아 초대할 수 없습니다.";
-"[Gruppe] Du kannst den Spieler nicht einladen, da sein Level zu hoch ist.";
-
-"<파티> 더 이상 파티원을 초대할 수 없습니다.";
-"[Gruppe] Du kannst keine weiteren Spieler in deine Gruppe einladen.";
-
-"%s 님에게 파티가입 신청을 했습니다.";
-"Du möchtest der Gruppe von %s beitreten.";
-
-"상대방이 파티에 속해있지 않습니다.";
-"Der Spieler befindet sich nicht in der Gruppe.";
-
-"<파티> 파티의 인원제한이 초과하여 파티에 참가할 수 없습니다.";
-"[Gruppe] Du kannst der Gruppe nicht beitreten, da sie bereits voll ist.";
-
-"<파티> 파티원을 초대할 수 있는 권한이 없습니다.";
-"[Gruppe] Du hast nicht das Recht, eine Einladung auszusprechen.";
-
-"<파티> %s 님이 파티 거부 상태입니다.";
-"[Gruppe] %s lehnt die Einladung in deine Gruppe ab.";
-
-"<파티> 이미 %s님은 파티에 속해 있습니다.";
-"[Gruppe] %s ist bereits in der Gruppe.";
-
-"<파티> 던전 안에서는 파티 초대에 응할 수 없습니다.";
-"[Gruppe] Du kannst in einem Dungeon keine Einladung annehmen.";
-
-"OX 이벤트를 마치겟습니다.";
-"OX Event wird beendet.";
-
-"OX이벤트를 강제 종료 시킵니다.";
-"OX Event wird beendet.";
-
-"<파티> 파티 초대에 응할 수 없습니다.";
-"[Gruppe] Du bist nicht in der Lage, die Einladung anzunehmen.";
-
-"<파티> %s님이 파티 초대를 거절하셨습니다.";
-"[Gruppe] Deine Einladung wurde von %s abgelehnt.";
-
-"<파티> %s님이 파티에 참가하셨습니다.";
-"[Gruppe] %s ist deiner Gruppe beigetreten.";
-
-"<파티> %s님의 파티에 참가하셨습니다.";
-"[Gruppe] %s ist deiner Gruppe beigetreten.";
-
-"다른 거래중(창고,교환,상점)에는 개인상점을 사용할 수 없습니다.";
-"Du kannst jetzt keinen privaten Laden nutzen.";
-
-"상대방이 다른 거래를 하고 있는 중입니다.";
-"Dieser Spieler handelt gerade mit jemand anderem.";
-
-"메틴2인증번호: %s";
-"Metin2 Bestätigungs-Nr.: %s";
-
-"인증번호가 틀렸습니다. 다시 시도하세요.";
-"Deine Bestätigungs-Nr. ist falsch. Bitte versuche es noch einmal.";
-
-"핸드폰 번호가 등록 되었습니다.";
-"Die Handynummer ist registriert.";
-
-"상대방이 있는 곳으로 워프할 수 없습니다.";
-"Du kannst dich nicht zum Spieler teleportieren.";
-
-"OX 상품을 지급하였습니다. ID: %d 수량: %d";
-"OX Der Preis ist vergeben: %d, %d Stück.";
-
-"상대방이 온라인 상태가 아닙니다.";
-"Der Spieler ist nicht online.";
-
-"상대방이 %d 채널에 있습니다. (현재 채널 %d)";
-"Der Spieler ist in Channel %d. (Du bist in Channel %d.)";
-
-"창고를 연후 %d초 이내에는 다른곳으로 이동할수 없습니다.";
-"Nach Öffnen des Lagers kannst du %d Sekunden nicht woanders hingehen.";
-
-"거래창,창고 등을 연 상태에서는 다른곳으로 이동,종료 할수 없습니다";
-"Nach dem Handel kannst du eine Zeit lang nicht woanders hingehen.";
-
-"거래 후 %d초 이내에는 다른지역으로 이동 할 수 없습니다.";
-"Du musst nach einem Handel %d Sekunden warten, bevor du die Karte wechseln darfst.";
-
-"대련 상대가 사라져 대련을 종료합니다.";
-"Duell beendet, da dein Gegner verschwunden ist.";
-
-"물약 제한이 없습니다.";
-"Es gibt keine Begrenzung für Tränke.";
-
-"물약을 %d 개 까지 사용 가능합니다.";
-"Du kannst bis zu %d Tränke nutzen.";
-
-"10초뒤 대련이 시작됩니다.";
-"Der Kampf beginnt in 10 Sekunden.";
-
-"대련이 시작되었습니다.";
-"Das Duell hat begonnen.";
-
-"Âü";
-"TRUE";
-
-"대련장 문제로 인하여 대련을 종료합니다.";
-"Das Duell wird beendet, da es ein Problem mit der Duellarena gibt.";
-
-"대련 시간 초과로 대련을 중단합니다.";
-"Das Duell wird wegen Zeitüberschreitung beendet.";
-
-"10초뒤 마을로 이동합니다.";
-"In 10 Sekunden wirst du in die Stadt teleportiert.";
-
-"대련자 문제로 인하여 대련을 중단합니다.";
-"Das Duell wird gestoppt, da es ein Problem mit der Duellarena gibt.";
-
-"상대방 캐릭터의 문제로 인하여 대련을 종료합니다.";
-"Der Duellgegner hat Probleme. Das Duell wird beendet.";
-
-"대련자 문제로 인하여 대련을 종료합니다.";
-"Das Duell wird beendet, da es ein Problem mit dem Duellanten gibt.";
-
-"%s 님이 대련에서 승리하였습니다.";
-"%s hat das Duell gewonnen.";
-
-"%s 님이 승리하였습니다.";
-"%s hat gewonnen.";
-
-"10초뒤 마을로 되돌아갑니다.";
-"In 10 Sekunden wirst du in die Stadt teleportiert.";
-
-"10초뒤 다음 판을 시작합니다.";
-"In 10 Sekunden beginnt die nächste Runde.";
-
-"거짓";
-"FALSE";
-
-"상대방 캐릭터가 접속을 종료하여 대련을 중지합니다.";
-"Der Duellgegner wurde getrennt. Das Duell wird angehalten.";
-
-"아이템 드롭률  %d%% 추가 이벤트 중입니다.";
-"Die Quote des Item-Drop ist im Moment zusätzlich %d%%";
-
-"골드 드롭률 %d%% 추가 이벤트 중입니다.";
-"Die Quote des Yang-Drop ist im Moment zusätzlich %d%%";
-
-"대박골드 드롭률 %d%% 추가 이벤트 중입니다.";
-"Die Drop-Quote des Yang-Regen ist im Moment zusätzlich %d%%.";
-
-"경험치 %d%% 추가 획득 이벤트 중입니다.";
-"Der Erfahrungsbonus beträgt im Moment zusätzlich %d%%.";
-
-"클라이언트 버전이 틀려 로그아웃 됩니다. 정상적으로 패치 후 접속하세요.";
-"Deine Clientversion ist falsch. Bitte installiere den normalen Patch.";
-
-"다른 거래창이 열린상태에서는 상점거래를 할수 가 없습니다.";
-"Du kannst im Laden nicht handeln, wenn ein anderes Fenster geöffnet ist.";
-
-"상점과의 거리가 너무 멀어 물건을 살 수 없습니다.";
-"Du bist zu weit vom Shop entfernt, um etwas zu kaufen.";
-
-"상점과의 거리가 너무 멀어 물건을 팔 수 없습니다.";
-"Du bist zu weit vom Shop entfernt, um etwas zu verkaufen.";
-
-"20억냥이 초과하여 물품을 팔수 없습니다.";
-"Du hast mehr als 2 Milliarden Yang bei dir. Deshalb kannst du nicht handeln.";
-
-"총 퀴즈 수: %d";
-"Gesamtzahl des Quiz: %d";
-
-"판매금액의 %d %% 가 세금으로 나가게됩니다";
-"Der Verkauf wird mit %d%% besteuert.";
-
-"변신 상태에서는 말에 탈 수 없습니다.";
-"Du kannst kein Pferd reiten, solange du verwandelt bist.";
-
-"예복을 입은 상태에서 말을 탈 수 없습니다.";
-"Du kannst nicht reiten, solange du ein Brautkleid oder einen Smoking trägst.";
-
-"말을 소유하고 있지 않습니다.";
-"Du besitzt kein Pferd.";
-
-"말이 죽어있는 상태 입니다.";
-"Dein Pferd ist tot.";
-
-"말의 스테미너가 부족하여 말을 탈 수 없습니다.";
-"Die Ausdauer deines Pferdes ist zu niedrig.";
-
-"말 소환에 실패하였습니다.";
-"Pferd rufen fehlgeschlagen.";
-
-"님의 말";
-"s Pferd";
-
-"결혼식이 종료됩니다.";
-"Die Hochzeit endet bald.";
-
-"자동으로 나가게됩니다.";
-"Wird automatisch verlassen.";
-
-"이미 전쟁이 끝났습니다.";
-"Der Krieg ist bereits vorbei.";
-
-"10초뒤 판정하겠습니다.";
-"Das Ergebnis folgt in 10 Sekunden.";
-
-"관전 상태에서는 교환을 할 수 없습니다.";
-"Während du beobachtest, kannst du nicht handeln.";
-
-"다른 거래창이 열려있을경우 거래를 할수 없습니다.";
-"Wenn Fenster geöffnet ist, kannst du nicht mit anderen handeln.";
-
-"상대방이 다른 거래중이라 거래를 할수 없습니다.";
-"Die andere Person ist gerade beschäftigt, deshalb kannst du jetzt nicht mit ihr handeln.";
-
-"상대방이 교환 거부 상태입니다.";
-"Die andere Person hat den Handel abgebrochen.";
-
-"돈이 부족하거나 아이템이 제자리에 없습니다.";
-"Nicht genügend Yang oder kein Platz im Inventar.";
-
-"상대방의 돈이 부족하거나 아이템이 제자리에 없습니다.";
-"Die andere Person hat nicht genügend Yang oder sie hat keinen Platz im Inventar.";
-
-"상대방의 소지품에 빈 공간이 없습니다.";
-"Die andere Person hat keinen Platz im Inventar.";
-
-"%s 님과의 교환이 성사 되었습니다.";
-"Der Handel mit %s wurde erfolgreich durchgeführt.";
-
-"용신의 가호로 경험치가 떨어지지 않았습니다.";
-"Der Segen des Drachengottes hat dich davor bewahrt, Erfahrungspunkte zu verlieren.";
-
-"현재 스코어 신수국:%d 천조국:%d 진노국:%d";
-"Aktueller Punktestand: Shinsoo %d, Chunjo %d, Jinno %d";
-
-"정답은";
-"Die korrekte Antwort lautet:";
-
-"죽은 정보 %s deadcount %d Empire %d killcount %d(Purpose %d) killmobcount %d, RegenFlag %d";
-"%s deadcount %d Empire %d killcount %d(Purpose %d) killmobcount %d, RegenFlag %d";
-
-"성지의 마왕: 너희 ";
-"Der Teufel des geheiligten Ortes: [ENTER][ENTER]";
-
-"녀석들은 이곳 성지에 있을 자격을 잃었다. 모두 성지에서 물러나거라~~[ENTER][ENTER] 10초 후에 모두 마을로 이동하게 됩니다. ";
-", du hast kein Recht, hier zu sein! In 10 Sekunden werden die Angehörigen deines Reiches diesen heiligen Boden verlassen.";
-
-"삼거리 전투에서 %s 국가가 가장먼저 탈락을 하였습니다";
-"Das %s wurde besiegt und scheidet aus der Reichsschlacht aus.";
-
-"삼거리 몹 리젠";
-"Monster in der Reichsschlacht";
-
-". 너희가 성지의 수호자를 잡게 된다면 너희는 성지의 주인이 된다.[ENTER][ENTER] ";
-"Wenn ihr den Wächter des Heiligen Platzes besiegt, seid ihr Besitzer des Heiligen Platzes.";
-
-"용신의 보호로 아이템이 떨어지지 않았습니다.";
-"Der Schutz des Drachengottes hat dafür gesorgt, dass du keine Gegenstände verlierst.";
-
-"관통 추가 데미지 %d";
-"Zusätzlicher Stichwaffenschaden %d";
-
-"%s 블럭! (%ld%%)";
-"%s blocken! (%d%%)";
-
-"%s 회피! (%ld%%)";
-"%s ausweichen! (%d%%)";
-
-"O 입니다";
-"Ja (O)";
-
-"%s[%ld]가 공격 위치: %d %d";
-"%s[%d]s Angriffsposition: %d %d";
-
-"명령어를 모두 입력하세요.";
-"Bitte gib den Befehl in voller Länge ein.";
-
-"탄 상태에서는 할 수 없습니다.";
-"Du kannst das nicht machen, während du auf dem Pferd sitzt.";
-
-"쓰러진 상태에서는 할 수 없습니다.";
-"Du kannst das nicht ausführen, während du am Boden liegst.";
-
-"꿈속에서 어떻게요?";
-"In meinen Träumen? Wie?";
-
-"먼저 일어 나세요.";
-"Steh zuerst auf.";
-
-"그런 명령어는 없습니다";
-"Dieser Befehl existiert nicht.";
-
-"<파티> 파티가 해산 되었습니다.";
-"[Gruppe] Die Gruppe hat sich aufgelöst.";
-
-"<파티> 대상을 소환할 수 없습니다.";
-"[Gruppe] Du kannst das Ziel nicht rufen.";
-
-"<파티> 파티원을 현재 위치로 소환할 수 없습니다.";
-"[Gruppe] Du kannst die Gruppenmitglieder nicht zu deiner aktuellen Position rufen.";
-
-"X 입니다";
-"Nein (X)";
-
-"파티의 협동력이 높아져 지금부터 추가 경험치 보너스를 받습니다.";
-"Deine Gruppe arbeitet gut zusammen und Gruppenmitglieder, die sich in der Nähe des Anführers aufhalten, erhalten einen Erfahrungsbonus.";
-
-"길드장";
-"Leader";
-
-"길드원";
-"Member";
-
-"<길드> 제공하고자 하는 경험치가 남은 경험치보다 많습니다.";
-"[Gilde] Angebotene Erfahrung ist größer als verbleibende Erfahrung.";
-
-"<길드> 삭제할 수 없는 글입니다.";
-"[Gilde] Die Nachricht kann nicht gelöscht werden.";
-
-"<길드> 용신력이 부족합니다. (%d, %d)";
-"[Gilde] Nicht genügend Drachengeist. (%d, %d)";
-
-"<길드> 쿨타임이 끝나지 않아 길드 스킬을 사용할 수 없습니다.";
-"[Gilde] Du kannst jetzt noch nicht die Gildenfertigkeit nutzen.";
-
-"<길드> %d 스킬을 사용함 (%d, %d) to %lu";
-"[Gilde] %d-Fertigkeit wurde angewendet (%d, %d) auf %u.";
-
-"<길드> 상대가 %d 채널에 있습니다. (현재 채널 %d)";
-"[Gilde] Der Spieler ist in Channel %d. (Aktueller Channel: %d)";
-
-"<길드> 상대가 온라인 상태가 아닙니다.";
-"[Gilde] Der Spieler ist nicht online.";
-
-"5초 뒤 틀리신 분들을 바깥으로 이동 시키겠습니다.";
-"Nach 5 Sek. werden alle Teilnehmer entfernt, die eine falsche Antwort gegeben haben.";
-
-"<길드> 길드 스킬은 길드전 중에만 사용할 수 있습니다.";
-"[Gilde] Diese Gildenfertigkeit kann nur im Krieg benutzt werden.";
-
-"<길드> %lu의 용신력을 회복하였습니다.";
-"[Gilde] %u Punkte Drachengeist wurden wiederhergestellt.";
-
-"<길드> 길드 금고에선 길드장만 출금할 수 있습니다.";
-"[Gilde] Nur der Gildenleiter kann Yang abheben.";
-
-"<길드> 상대방이 길드 초대 거부 상태입니다.";
-"[Gilde] Der Spieler lehnt die Gildeneinladung ab.";
-
-"<길드> 길드원을 초대할 권한이 없습니다.";
-"[Gilde] Du bist nicht berechtigt, jemanden in die Gilde einzuladen.";
-
-"<길드> 다른 제국 사람을 길드에 초대할 수 없습니다.";
-"[Gilde] Spieler aus einem anderen Reich können nicht in die Gilde eingeladen werden.";
-
-"<길드> 탈퇴한 후 %d일이 지나지 않은 사람은 길드에 초대할 수 없습니다.";
-"[Gilde] Du kannst diesen Spieler erst nach %d Tag(en) wieder einladen.";
-
-"<길드> 길드를 해산한 지 %d일이 지나지 않은 사람은 길드에 초대할 수 없습니다.";
-"[Gilde] Nach einer Umgestaltung kannst du erst nach %d Tagen wieder neue Mitglieder einladen.";
-
-"<길드> 상대방이 이미 다른 길드에 속해있습니다.";
-"[Gilde] Die Person gehört bereits einer anderen Gilde an.";
-
-"<길드> 최대 길드원 수를 초과했습니다.";
-"[Gilde] Die maximale Gildenkapazität ist erreicht.";
-
-"다음 문제 준비해주세요.";
-"Bereit für die nächste Frage?";
-
-"수련할 수 없는 스킬입니다.";
-"Du kannst diese Fertigkeit nicht trainieren.";
-
-"더 이상 수련할 수 없습니다.";
-"Du kannst diese Fertigkeit nicht trainieren.";
-
-"그랜드 마스터 수련을 할 수 없는 스킬입니다.";
-"Diese Fertigkeit kannst du nicht bis zum Großmeister trainieren.";
-
-"퍼펙트 마스터된 스킬입니다. 더 이상 수련 할 수 없습니다.";
-"Du bist bereits ein Meister dieser Fertigkeit. Du kannst sie nicht trainieren.";
-
-"이 스킬은 아직 그랜드 마스터 수련을 할 경지에 이르지 않았습니다.";
-"Deine Fertigkeit ist nicht hoch genug für das Großmeistertraining.";
-
-"크윽, 기가 역류하고 있어! 이거 설마 주화입마인가!? 젠장!";
-"Das hat nicht geklappt. Verdammt!";
-
-"수련이 실패로 끝났습니다. 다시 도전해주시기 바랍니다.";
-"Training fehlgeschlagen. Bitte versuch es später noch einmal.";
-
-"몸에서 뭔가 힘이 터져 나오는 기분이야!";
-"Mein Körper ist voller Energie!";
-
-"뜨거운 무엇이 계속 용솟음치고 있어! 이건, 이것은!";
-"Das Training scheint bereits zu wirken...";
-
-"더 높은 경지의 수련을 성공적으로 끝내셨습니다.";
-"Du hast dein Training mit dem Buch erfolgreich abgeschlossen.";
-
-"경험치가 부족하여 책을 읽을 수 없습니다.";
-"Du kannst es aufgrund mangelnder Erfahrung nicht lesen.";
-
-"Pregunta.";
-"Frage.";
-
-"이 스킬은 책으로 더이상 수련할 수 없습니다.";
-"Du kannst diese Fertigkeit nicht mehr mit einem Buch trainieren.";
-
-"이 스킬은 아직 책으로 수련할 경지에 이르지 않았습니다.";
-"Diese Fertigkeit ist nicht hoch genug, um sie mit einem Buch zu trainieren.";
-
-"어느정도 이 기술에 대해 이해가 되었지만 조금 부족한듯 한데..";
-"Ich komme voran, aber ich habe noch nicht alles verstanden.";
-
-"드디어 끝이 보이는 건가...  이 기술은 이해하기가 너무 힘들어..";
-"Diese Anweisungen sind schwer zu verstehen. Ich muss weiter studieren.";
-
-"열심히 하는 배움을 가지는 것만이 기술을 배울수 있는 유일한 길이다..";
-"Dieses Kapitel habe ich verstanden. Aber ich muss weiter hart arbeiten.";
-
-"책으로 더 높은 경지의 수련을 성공적으로 끝내셨습니다.";
-"Du hast dein Training mit dem Buch erfolgreich abgeschlossen.";
-
-"귀환에 실패하였습니다.";
-"Teleportation fehlgeschlagen.";
-
-"말이 없습니다. 마굿간 경비병을 찾아가세요.";
-"Kein Pferd vorhanden. Bitte frag den Stallburschen.";
-
-"말 소환 아이템을 사용하세요.";
-"Bitte benutze einen Gegenstand, um ein Pferd zu rufen.";
-
-"%s SP소모: %d";
-"%s FP-Verbrauch: %d";
-
-"맞으면 O, 틀리면 X로 이동해주세요";
-"Ist das richtig, dann gehe zu O. Ist es falsch, dann zu X.";
-
-"몸 속이 뜨겁군. 하지만 아주 편안해. 이대로 기를 안정시키자.";
-"Ich brenne innerlich, aber es beruhigt meinen Körper. Mein Chi muss sich stabilisieren.";
-
-"그래, 천천히. 좀더 천천히, 그러나 막힘 없이 빠르게!";
-"Etwas langsam, aber stetig... ohne zu stoppen!";
-
-"그래, 이 느낌이야. 체내에 기가 아주 충만해.";
-"Ja, das fühlt sich gut an. Mein Körper ist voller Chi.";
-
-"다 읽었다! 이제 비급에 적혀있는 대로 전신에 기를 돌리기만 하면,";
-"Ich habe es gelesen! Jetzt muss sich das Chi in meinem Körper verteilen.";
-
-"그것으로 수련은 끝난 거야!";
-"Das Training ist abgeschlossen.";
-
-"이제 책의 마지막 장이야! 수련의 끝이 눈에 보이고 있어!";
-"Ich bin auf der letzten Seite des Buchs angelangt. Das Training ist fast abgeschlossen!";
-
-"얼마 안 남았어! 조금만 더!";
-"Es ist fast geschafft! Nur noch ein wenig!";
-
-"좋았어! 조금만 더 읽으면 끝이다!";
-"Erleuchtet! Ich habe es fast durchgelesen!";
-
-"책장도 이제 얼마 남지 않았군.";
-"Es fehlen nur noch wenige Seiten, dann habe ich alles gelesen.";
-
-"뭔가 몸 안에 힘이 생기는 기분인 걸.";
-"Ich fühle mich erfrischt.";
-
-"정답입니다!";
-"Korrekt!";
-
-"ÀÌÁ¦ Á» ½½½½ °¡´ÚÀÌ ÀâÈ÷´Â °Í °°Àºµ¥.";
-"Jetzt verstehe ich es!";
-
-"좋아, 이 기세로 계속 나간다!";
-"Gut, ich muss mich weiter konzentrieren!";
-
-"아니 어떻게 된 게 종일 읽어도 머리에 안 들어오냐.";
-"Ich lese immer wieder dieselbe Zeile.";
-
-"공부하기 싫어지네.";
-"Ich will nicht weiterlernen.";
-
-"생각만큼 읽기가 쉽지가 않군. 이해도 어렵고 내용도 난해해.";
-"Es ist komplizierter und schwerer zu verstehen, als ich dachte.";
-
-"이래서야 공부가 안된다구.";
-"Es fällt mir schwer, mich zu konzentrieren. Ich sollte eine Pause einlegen.";
-
-"운영자 제제로 채팅이 금지 되었습니다.";
-"Dein Chat wurde von einem GM blockiert.";
-
-"채팅 금지가 풀렸습니다.";
-"Deine Chat-Sperre wurde aufgehoben.";
-
-"이미 제조창이 열려있습니다.";
-"Das Herstellfenster ist bereits offen.";
-
-"다른 거래중(창고,교환,상점)에는 사용할 수 없습니다.";
-"Du kannst nichts herstellen, wenn noch ein Handels- oder Lagerfenster geöffnet ist.";
-
-"더 이상 개량할 수 없습니다.";
-"Keine weitere Verbesserung möglich.";
-
-"제조창이 열려있지 않습니다";
-"Das Herstellfenster ist nicht geöffnet.";
-
-"제조 재료가 부족합니다";
-"Du hast nicht das richtige Material.";
-
-"<길드> 잠시후에 이용해주십시오";
-"[Gilde] Bitte versuche es später noch mal.";
-
-"%d 권을 더 읽어야 수련을 완료 할 수 있습니다.";
-"Du musst %d weitere Fertigkeitsbücher lesen, um diese Fertigkeit zu verbessern.";
-
-"<길드> 잠시후에 이용해주십시오.";
-"[Gilde] Bitte versuche es später erneut.";
-
-"성에서만 사용할 수 있는 기능입니다.";
-"Diese Funktion kann nur im Schloss verwendet werden.";
-
-"TEST : 황금두꺼비가 국고로 환원되었습니다.";
-"TEST: Der Goldbarren wurde in den Tresor deines Reiches zurückgezahlt.";
-
-"TEST : 현재 국고 : %d";
-"TEST: Im Tresor deines Reiches befinden sich: %d";
-
-"TEST : 황금두꺼비를 국고로 환원할 수 없습니다.";
-"TEST: Du kannst den Goldbarren nicht in den Tresor deines Reiches zurückzahlen.";
-
-"<길드> 래더 점수가 %d 점이 되었습니다";
-"[Gilde] Die Gilde hat %d Punkte erreicht.";
-
-"이 아이템은 개량할 수 없습니다.";
-"Dieser Gegenstand kann nicht verbessert werden.";
-
-"무료 개량 기회는 20 이하의 무기만 가능합니다";
-"Die kostenlose Verbesserung von Waffen kann nur auf Waffen bis Level 20 angewandt werden.";
-
-"군직이 맞지않아 이 아이템을 사용할 수 없습니다.";
-"Du kannst dieses Item nicht verwenden, da du die Voraussetzungen nicht erfüllst.";
-
-"성별이 맞지않아 이 아이템을 사용할 수 없습니다.";
-"Du kannst dieses Item nicht verwenden, da es für das andere Gechlecht gedacht ist.";
-
-"사용법: transfer <name>";
-"Benutze: transfer <name>";
-
-"군주만이 사용 가능한 기능입니다";
-"Diese Funktion kann nur der Kaiser verwenden.";
-
-"다른 제국 유저는 소환할 수 없습니다.";
-"Du kannst keine Spieler aus den anderen Reichen rekrutieren.";
-
-"%s 님은 %d 채널에 접속 중 입니다. (현재 채널: %d)";
-"Der Spieler %s befindet sich gerade auf Channel %d. (Dein Channel: %d)";
-
-"%s 님을 소환하였습니다.";
-"Du hast %s Spieler rekrutiert.";
-
-"입력하신 이름을 가진 사용자가 없습니다.";
-"Es gibt keinen Spieler mit dem von dir genannten Namen.";
-
-"자신을 소환할 수 없습니다.";
-"Du kannst dich nicht selbst rekrutieren.";
-
-"아이템의 레벨 제한보다 레벨이 낮습니다.";
-"Dein Level ist zu niedrig, um diesen Gegenstand zu benutzen.";
-
-"창고,거래창등이 열린 상태에서는 개량을 할수가 없습니다";
-"Du kannst nichts verbessern, wenn ein anders Fenster geöffnet ist.";
-
-"%s의 군주가 %s 님으로 교체되었습니다.";
-"Der Kaiser von %s wurde geändert in %s.";
-
-"%s에서 봉화를 둘러싸고 전투가 진행중입니다.";
-"Es gibt in %s einen Krieg um die Leuchtfeuer zu entzünden.";
-
-"%s이 수성에 성공했습니다.";
-"%s ist die Verteidigung gelungen.";
-
-"지금부터 %s은 30분간 봉화를 파괴하여 보상을 획득 할 수 있습니다.";
-"Innerhalb der nächsten 30 Minuten kann %s eine Belohnung für die Zerstörung des Leuchtfeuers erhalten.";
-
-"30분이 경과했습니다.. 봉화가 사라집니다.";
-"30 Minuten sind vorbei. Die Lagerfeuer sind verschwunden.";
-
-"%s에 전쟁의 시작을 알리는 봉화가 나타났습니다.";
-"Ein Lagerfeuer wurde bei %s entzündet, um vor einer Schlacht zu warnen.";
-
-"%s이 봉화를 파괴했습니다.";
-"%s hat das Lagerfeuer zerstört.";
-
-"%s이 수성에 실패하여 전쟁에 패배하였습니다..";
-"%s hat den Krieg verloren, da sie das Schloss nicht verteidigen konnten.";
-
-"%s이 모든 봉화를 파괴하였습니다.";
-"%s hat alle Lagerfeuer zerstört.";
-
-"갑옷을 벗어야 개인 상점을 열 수 있습니다.";
-"Du kannst den Laden nur öffnen, wenn du die Rüstung ablegst.";
-
-"%d 시간 %d 분 %d 초 동안 채팅금지 상태입니다";
-"Deine Chat-Sperre dauert noch %d Stunden %d Minuten %d Sekunden.";
-
-"%d 시간 %d 초 동안 채팅금지 상태입니다";
-"Deine Chat-Sperre dauert noch %d Stunden %d Sekunden";
-
-"%d 분 %d 초 동안 채팅금지 상태입니다";
-"Deine Chat-Sperre dauert noch %d Minuten %d Sekunden.";
-
-"돈 대박이 나올 확률";
-"Droprate Yang-Regen";
-
-"개량을 하기 위한 재료가 부족합니다.";
-"Du hast nicht das richtige Material, um das herzustellen.";
-
-"전제국";
-"Alle Reiche";
-
-"아이템이 나올 확률";
-"Item-Droprate in Prozent";
-
-"돈이 나올 확률";
-"Yang-Droprate in Prozent";
-
-"경험치 배율";
-"Prozentsatz für Erfahrungspunkte";
-
-"%d 초 동안 채팅금지 상태입니다";
-"Deine Chat-Sperre dauert noch %d Sekunden";
-
-"말을 탄 상태에서 감정표현을 할 수 없습니다.";
-"Du kannst keine Emotionen benutzen, während du reitest.";
-
-"말을 탄 상대와 감정표현을 할 수 없습니다.";
-"Du kannst keine Emotionen mit einem Spieler benutzen, der reitet.";
-
-"<길드> 상대방 길드의 길드장이 접속중이 아닙니다.";
-"[Gilde] Der Gildenleiter des Gegners ist offline.";
-
-"전쟁 서버가 열려있지 않아 길드전을 시작할 수 없습니다.";
-"[Gilde] Der Gildenleiter des Gegners ist offline.";
-
-"<길드> 이미 전쟁 중인 길드입니다.";
-"[Gilde] Diese Gilde befindet sich gerade in einer Schlacht.";
-
-"이미 탈것을 이용중입니다.";
-"Du reitest bereits. Steige zuerst ab.";
-
-"이 개량서로 더 이상 개량할 수 없습니다.";
-"Du kannst nicht mit dieser Schriftrolle verbessern.";
-
-"사귀 타워 완료 보상은 한번까지 사용가능합니다.";
-"Du kannst nur einmal für den Dämonenturm-Auftrag belohnt werden.";
-
-"용혼석 추출에 성공하였습니다.";
-"Drachenstein wurde erfolgreich entfernt.";
-
-"강화창을 연 상태에서는 아이템을 옮길 수 없습니다.";
-"Du kannst den Gegenstand nicht innerhalb des Veredelungsfensters verschieben.";
-
-"용심 추출에 성공하였습니다.";
-"Restlaufzeit des Drachensteins wurde erfolgreich extrahiert.";
-
-"용심 추출에 실패하였습니다.";
-"Extrahieren der Restlaufzeit ist fehlgeschlagen.";
-
-"용혼석 추출에 실패하여 %s를 얻었습니다.";
-"Entfernen des Drachensteins fehlgeschlagen. Aber du hast Folgendes erhalten: %s";
-
-"용혼석 추출에 실패하였습니다.";
-"Entfernen des Drachensteins ist fehlgeschlagen.";
-
-"등급 개량에 필요한 재료가 아닙니다.";
-"Dieser Gegenstand wird nicht zur Verbesserung des Reinheitsgrades benötigt.";
-
-"강화에 필요한 재료가 아닙니다.";
-"Dieser Gegenstand wird nicht zur Verbesserung des Reinheitsgrades benötigt.";
-
-"등급 개량할 수 없는 용혼석입니다.";
-"Dieser Gegenstand kann nicht auf diese Art verbessert werden.";
-
-"이 아이템은 이 방식으로는 개량할 수 없습니다.";
-"Dieser Gegenstand kann nicht auf diese Art verbessert werden.";
-
-"단계 개량에 성공했습니다.";
-"Verbesserung des Reinheitsgrades war erfolgreich.";
-
-"등급 개량에 실패했습니다.";
-"Veredelung um eine Klasse höher ist fehlgeschlagen.";
-
-"단계 개량할 수 없는 용혼석입니다.";
-"Dieser Gegenstand wird zur Veredelung nicht benötigt.";
-
-"등급 개량에 성공했습니다.";
-"Veredelung um eine Klasse höher war erfolgreich.";
-
-"단계 개량에 실패했습니다.";
-"Verbesserung des Reinheitsgrades ist fehlgeschlagen.";
-
-"단계 개량에 필요한 재료가 아닙니다.";
-"Du besitzt nicht die notwendigen Materialien zum Verstärken des Drachensteins.";
-
-"강화할 수 없는 용혼석입니다.";
-"Dieser Drachenstein kann nicht zum Verstärken verwendet werden.";
-
-"강화에 성공했습니다.";
-"Verstärken war erfolgreich.";
-
-"강화에 실패했습니다.";
-"Verstärken fehlgeschlagen";
-
-"이미 같은 종류의 용혼석을 착용하고 있습니다.";
-"Diese Art Drachenstein trägst du bereits.";
-
-"착용 중인 용혼석은 추출할 수 없습니다.";
-"Der Drachenstein kann nicht entfernt werden.";
-
-"이미 장비를 착용하고 있습니다.";
-"Du hast bereits einen solchen Drachenstein ausgerüstet.";
-
-"인벤이 활성화 되지 않음.";
-"Bevor du das Cor Draconis öffnest, musst du die Drachenstein-Quest abgeschlossen und die Drachensteinalchemie aktiviert haben.";
-
-"먼저 용혼석 퀘스트를 완료하셔야 합니다.";
-"Bevor du das Cor Draconis öffnest, musst du die Drachenstein-Quest abgeschlossen und die Drachensteinalchemie aktiviert haben.";
-
-"벨트 인벤토리에 아이템이 존재하면 해제할 수 없습니다.";
-"Du kannst den Gürtel erst ablegen, wenn sich kein Gegenstand mehr in seinem Inventar befindet.";
-
-"축복의 서와 현철을 합칠 수 있습니다.";
-"Du kannst die Segensschriftrolle und das Magische Eisenerz kombinieren.";
-
-"이 아이템은 벨트 인벤토리로 옮길 수 없습니다.";
-"Diesen Gegenstand kannst du nicht in deinem Gürtel-Inventar ausrüsten.";
-
-"같은 개량서를 합칠 수는 없습니다.";
-"[1106-??]No puedes unir esto.";
-
-"%d 냥을 투자하셨습니다.";
-"Du hast %d Yang investiert.";
-
-"빼낼 수 있는 메틴석이 없습니다.";
-"Es gibt keinen Stein zum Herausnehmen.";
-
-"기억해 둘 수 없는 위치 입니다.";
-"Du kannst diesen Standort nicht speichern.";
-
-"소지품에 빈 공간이 없습니다.";
-"Es ist nicht genügend Platz im Inventar.";
-
-"기억된 위치가 타제국에 속해 있어서 귀환할 수 없습니다.";
-"Du kannst dich in einem fremden Reich nicht zu einem sicheren Punkt teleportieren.";
-
-"남은 생명력 양이 모자라 사용할 수 없습니다.";
-"Du hast nicht genügend TP.";
-
-"남은 정신력 양이 모자라 사용할 수 없습니다.";
-"Du hast nicht genügend Mana, um das zu benutzen.";
-
-"%d 초후 목적지로 이동됩니다.";
-"%d Sekunden nach dem Ausführen kommst du zu dem Bestimmungsort.";
-
-"개량된 후 아이템의 레벨 제한보다 레벨이 낮습니다.";
-"Dein Level ist zu niedrig, um diesen Gegenstand zu benutzen.";
-
-"월병,종자 사용후 5초동안 사용할수 없습니다. ";
-"Du kannst nur alle 5 Sekunden einen Mondkuchen benutzen.";
-
-"대련 중에는 이용할 수 없는 물품입니다.";
-"Du kannst diesen Gegenstand im Duell nicht benutzen.";
-
-"%d 냥을 획득하셨습니다.";
-"Du hast %d Yang gewonnen.";
-
-"모닥불을 피울 수 없는 지점입니다.";
-"Du kannst hier kein Lagerfeuer machen.";
-
-"물 속에 모닥불을 피울 수 없습니다.";
-"Du kannst kein Lagerfeuer im Wasser machen.";
-
-"열쇠로 잠겨 있어서 열리지 않는것 같다. 열쇠를 구해보자.";
-"Verschlossen. Du solltest den Schlüssel suchen.";
-
-"열쇠로 여는 물건이 아닌것 같다.";
-"Dieser Gegenstand kann nicht mit einem Schlüssel geöffnet werden.";
-
-"열쇠는 맞으나 아이템 주는 부분 구현이 안되었습니다.";
-"Das ist der richtige Schlüssel.";
-
-"돈 %d 냥을 획득했습니다.";
-"Du hast %d Yang erhalten.";
-
-"상자에서 부터 신비한 빛이 나옵니다.";
-"Mysteriöses Licht kommt aus der Kiste.";
-
-"%d의 경험치를 획득했습니다.";
-"Du hast %d Erfahrungspunkte erhalten.";
-
-"상자에서 몬스터가 나타났습니다!";
-"Siehe, was aus der Kiste kam!";
-
-"<길드> 레더 점수가 모자라서 길드전을 할 수 없습니다.";
-"[Gilde] Das Gildenlevel ist zu niedrig.";
-
-"상자에서 나온 빨간 연기를 들이마시자 움직이는 속도가 느려졌습니다!";
-"Wenn du den roten Rauch aus der Kiste einatmest, steigert sich deine Schnelligkeit!";
-
-"더 이상 이 아이템으로 속성을 추가할 수 없습니다";
-"You cannot add more bonus.";
-
-"성공적으로 속성이 추가 되었습니다";
-"New bonus added successfully.";
-
-"변경 시킬 속성이 없습니다";
-"You cannot change the bonuses.";
-
-"%s이 필요합니다.";
-"%s needed.";
-
-"문제 입니다.";
-"OX-Question: ";
+1	Everyone will be teleported into the city shortly.
+3	The box suddenly exploded! You have lost Hit Points (HP).
+13	If you inhale the green smoke that is coming out of the box, the poison will spread through your body!
+35	The box contains %s.
+46	This key does not seem to fit the lock.
+56	You have not received anything.
+67	You do not have enough Yang to use this item.
+78	You have lowered your Skill Level.
+88	You cannot lower your Skill Level.
+99	This effect is already activated.
+122	That is over the limit.
+132	Used Moon Cake or Seed.
+143	You cannot wear a Wedding Ring if you are not married.
+154	You cannot use the Event Detector from this position.
+162	This item cannot be absorbed.
+165	The Event Detector vanished in a mysterious light.
+176	The Event Detector has vanished.
+204	Receive: %s - %d
+221	You find a simple Piece of Stone in the Clam.
+232	The Clam has vanished.
+243	There is a White Pearl inside the Clam.
+253	There is a Blue Pearl inside the Clam.
+264	There is a Blood-Red Pearl inside the Clam.
+274	It isn't easy to understand this book.
+284	This book will not help you.
+295	You need to have a minimum level of 30 to understand this book.
+305	You need a minimum level of 50 to understand this book.
+316	You can't train any more Combos.
+327	%s has captured the flag of %s!
+328	You already understand this language.
+350	You have to improve your Level to read this Book.
+370	%s
+371	You cannot train with this Book any more.
+376	You need a minimum level of 50 to get riding training.
+377	You have escaped the evil ghost curse with the help of an Exorcism Scroll.
+378	You cannot read any more Riding Guides.
+379	You read the Horse Riding Manual and received a Riding Point.
+380	You can use this point to improve your riding skill!
+381	The guild %s's flag has been stolen by player %s.
+382	You did not understand the riding guide.
+383	Your mind is clear. You can concentrate really well now.
+384	Your rank has increased by %d points.
+385	You cannot dye or bleach your current hairstyle.
+386	You need to have reached level %d to be able to dye your hair again.
+387	This item can only be opened by the another gender.
+388	You cannot use this from your current position.
+389	You are ready to warp, so you cannot use the Scroll of the Location.
+390	You are being brought back to the place of origin.
+391	%s%s cannot be used in a dungeon.
+392	[Quest] You have already received your reward.
+393	the
+395	There aren't any Pieces of Broken Stone available for removal.
+396	You cannot change the upgrade of this item.
+397	There is no upgrade that you can change.
+398	You can only do this %d minutes after an upgrade. (%d minutes left)
+399	You have changed the upgrade.
+400	Upgrade successfully added.
+401	No upgrade added.
+402	You must use the Blessing Marble in order to add another bonus to this item.
+403	You cannot use this in the duel arena.
+404	This item can no longer be improved. The maximum number of bonuses has been reached.
+405	You can only use the Blessing Marble with an item which already has 4 bonuses.
+406	Socket successfully added.
+407	No socket added.
+408	No additional sockets could be added to this item.
+409	You cannot add a socket to this item.
+410	Arming successful.
+411	Arming has failed.
+412	You have to add a socket first. Use a diamond in order to do this.
+413	There are no sockets for gemstones in this item.
+414	You can do this when you wear an Emotion Mask.
+415	You have to add a socket if you want to use a Diamond.
+416	No more gems can be added to this item.
+417	These items cannot be used together.
+418	You cannot change the Bait whilst fishing.
+419	You are exchanging the current Bait for %s.
+420	You attached %s to the hook as bait.
+421	You are missing some ingredients to make the potion.
+422	You do not have enough material (%s).
+423	You do not have enough empty bottles.
+424	The potion production has failed.
+425	Only women can do this.
+426	You cannot attach several stones of the same type.
+427	This Spirit Stone cannot be attached to this type of item.
+428	You cannot attach this Spirit Stone to a weapon.
+429	You have attached the Spirit Stone successfully.
+430	The Spirit Stone broke while being attached.
+431	No slot free.
+432	This function is not available right now.
+434	After opening the Storeroom you cannot use a Scroll of the Location for %d seconds.
+435	You cannot use a Scroll of the Location while another window is open.
+436	This person does not exist.
+437	After a trade, you cannot use a scroll for another %d seconds.
+438	After opening a storeroom you cannot use a Scroll of the Location for another %d seconds.
+439	You cannot use the Scroll of the Location because the distance is too small.
+440	After a trade you cannot use a Scroll of the Location for %d seconds.
+441	You cannot open the Storeroom if another window is already open.
+442	You cannot drop this item.
+443	The dropped item will vanish in 5 minutes.
+444	%s received
+445	You have too many items in your inventory.
+446	%s receives %s.
+448	You are too near.
+449	Item Trade: %s, %s
+450	You cannot change the equipped item while you are transformed.
+451	You have to stand still to equip the item.
+452	Monkey Herbs cannot be fed to living horses. It is used to revive dead horses.
+453	You cannot feed a dead Horse.
+454	You fed the Horse with Herbs.
+455	You have fed the Horse.
+456	Your level is too low to wear this Hairstyle.
+457	You already have this Hairstyle.
+458	You have already transformed.
+459	You are too far away.
+460	That's the wrong trading item.
+461	You cannot transform into a monster who has a higher level than you.
+462	Your level is too low to equip this item.
+463	You are not strong enough to equip yourself with this item.
+464	Your intelligence is too low to equip yourself with this item.
+465	Your dexterity is too low to equip yourself with this item.
+466	Your vitality is too low to equip yourself with this item.
+467	You cannot use this item because you are not married.
+468	You cannot equip this item twice.
+470	This action can only be done with another gender.
+471	A gem socketed in the %s has vanished.
+472	[Guild] This guild name is invalid.
+473	[Guild] This guild name is already taken.
+474	[Guild] You cannot found a guild.
+475	The guild %s has declared war on %s!
+476	[Guild] %s has refused the Guild war.
+477	The guild war between %s and %s will start in a few seconds!
+478	The guild war between %s and %s has begun!
+479	The guild war between %s and %s has ended in a draw.
+480	%s has won the guild war against %s.
+481	You need your fellow player's approval for this.
+482	[Guild] The guild war has been cancelled.
+483	The guild war between %s and %s has been cancelled.
+484	Close
+485	Action cancelled. You have entered a battle.
+486	Someone has logged into your account. You will be disconnected from the server.
+487	A mysterious light appears from the tree.
+489	You can participate in the guild battle in viewer mode.
+490	While choosing a character, an icon appears.
+491	There are no opponents.
+492	The battle with %s has begun!
+493	If no enemy can be found, the guild war will be ended automatically.
+494	Because the guild war finished early, the result will judged as a draw.
+499	Transformation error.
+500	You learned the transmutation completely.
+501	Please call your Horse first.
+502	You have sent your horse away.
+503	%s challenged you to a battle!
+504	You have to get off your Horse.
+505	You cannot feed your Horse whilst sitting on it.
+506	You have fed the Horse with %s%s.
+507	You need %s.
+508	%d seconds until Exit.
+509	The game will be closed in %d seconds.
+511	Your logout has been cancelled.
+512	Back to login window. Please wait.
+513	You have been disconnected from the server. Please wait.
+514	You have challenged %s to a battle.
+515	You are changing character. Please wait.
+516	A new start is not possible at the moment. Please wait %d seconds.
+519	You cannot restart in the city yet. Wait another %d seconds.
+521	You cannot change your status while you are transformed.
+522	This player is currently fighting.
+523	[Guild] It does not belong to the guild.
+524	[Guild] You do not have the authority to change the level of the guild skills.
+526	[Storeroom] You have entered an incorrect password.
+527	[Storeroom] The Storeroom is already open.
+528	[Storeroom] You have to wait 10 seconds before you can open the Storeroom again.
+529	[Storeroom] You are too far away to open the storeroom.
+530	[Group] The server cannot execute this group request.
+531	[Group] You cannot leave a group while you are in a dungeon.
+532	[Group] You have left the group.
+533	[Guild] Your guild is already participating in another war.
+534	[Guild] No one is entitled to a guild war.
+535	[Guild] No guild with this name exists.
+537	[Guild] This guild is already participating in a war.
+538	[Guild] Not enough Yang to participate in a guild war.
+539	[Guild] The guild does not have enough Yang to participate in a guild war.
+540	[Guild] This Guild is already scheduled for another war.
+541	[Guild] This guild is already participating in another war.
+543	[Guild] A minimum of %d players are needed to participate in a guild war.
+544	[Guild] The guild does not have enough points to participate in a guild war.
+545	[Guild] The guild does not have enough members to participate in a guild war.
+548	%s declined the invitation.
+549	You cannot accept the invitation because you are already in the group.
+558	[Guild] There are no experience points for hunting during a guild war.
+568	Hit Points +%d
+569	Spell Points +%d
+571	Endurance +%d
+572	Intelligence +%d
+573	Strength +%d
+574	Dexterity +%d
+575	Attack Speed +%d
+576	Movement Speed %d
+577	Cooldown Time -%d
+578	Energy Recovery +%d
+579	Spell Point Recovery +%d
+580	Poison Attack %d
+582	Star +%d
+583	Speed Reduction +%d
+584	Critical Attack with a chance of %d%%
+585	Chance of a Speared Attack of %d%%
+586	Player's Attack Power against Monsters +%d%%
+587	Horse's Attack Power against Monsters +%d%%
+588	Attack Boost against Wonggui + %d%%
+589	Attack Boost against Milgyo + %d%%
+590	Attack boost against zombies + %d%%
+591	Attack boost against devils + %d%%
+593	Absorbing of Energy %d%% while attacking.
+594	Absorption of Spell Points (SP) %d%% while attacking.
+595	With a chance of %d%% Spell Points (SP) will be taken from the enemy.
+596	Absorbing of Spell Points (SP) with a chance of %d%%
+597	%d%% Chance of blocking a close-combat attack
+598	%d%% Chance of blocking a long range attack
+599	One-Handed Sword defence %d%%
+600	Two-Handed Sword Defence %d%%
+602	Bell Defence %d%%
+604	Fan Defence %d%%
+605	Distant Attack Resistance %d%%
+606	Fire Resistance %d%%
+607	Lightning Resistance %d%%
+608	Magic Resistance %d%%
+609	Wind Resistance %d%%
+610	Reflect Direct Hit: %d%%
+611	Reflect Curse: %d%%
+612	Poison Resistance %d%%
+613	Spell Points (SP) will be increased by %d%% if you win.
+615	Experience increases by %d%% if you win against an opponent.
+616	Increase of Yang up to %d%% if you win.
+617	Increase of captured Items up to %d%% if you win.
+618	Power increase of up to %d%% after taking the potion.
+619	%d%% Chance of filling up Hit Points after a victory.
+620	No Dizziness %d%%
+621	No Slowing Down %d%%
+622	No falling down %d%%
+623	Attack Power + %d
+624	Armour + %d
+626	Magical Attack + %d
+627	Magical Defence + %d
+628	Maximum Endurance + %d
+629	Strong against Warriors + %d%%
+630	Strong against Ninjas + %d%%
+631	Strong against Sura + %d%%
+632	Strong against Shamans + %d%%
+633	Strength against monsters + %d%%
+634	Attack + %d%%
+635	Defence + %d%%
+637	Experience %d%%
+638	Chance to find an Item %. 1f
+639	Chance to find Yang %. 1f
+640	Maximum Energy +%d%%
+642	Skill Damage %d%%
+643	Hit Damage %d%%
+644	Resistance against Skill Damage %d%%
+645	Resistance against Hits %d%%
+646	%d%% Resistance against Warrior Attacks
+648	%d%% Resistance against Ninja Attacks
+649	%d%% Resistance against Sura Attacks
+650	%d%% Resistance against Shaman Attacks
+651	(Procedure: %d y- %d m - %d d)
+652	Your chat is blocked.
+654	You need a minimum level of %d to be able to call.
+655	You are not in this Group.
+656	You did not join this Guild.
+657	The player has rejected your request to add him to your friend list.
+659	[Friends] You cannot add a GM to your list.
+660	%s is not online.
+661	After a trade, you have to wait %d seconds before you can open a shop.
+662	You can trade again in %d seconds.
+663	You have more than 2 Billion Yang. You cannot trade.
+664	You cannot open a private shop while another window is open.
+665	The player has more than 2 Billion Yang. You cannot trade with him.
+666	[Storeroom] No movement possible.
+667	[Storeroom] The item cannot be stored.
+668	[Group] The player who invited you is not online.
+671	[Group] Only the group leader can change this.
+672	[Group] The target is not a member of your group.
+673	[Group] You cannot kick out a player while you are in a dungeon.
+675	[Group] You have been out kicked of the group.
+677	[Group] You cannot kick out group members.
+678	[Guild] After disbanding a guild, you cannot create a new one for %d days.
+679	[Guild] After leaving a guild, you cannot create a new one for %d days.
+680	This guild name is invalid.
+682	[Guild] [%s] guild has been created.
+683	[Guild] Creation of the guild has failed.
+684	[Group] Only the group leader can use group skills.
+685	[Group] The target has not been found.
+688	[Guild] The person you were searching for cannot be found.
+689	[Guild] This person is not in the same guild.
+690	[Guild] You do not have the authority to kick out guild members.
+693	[Guild] You have kicked a guild member out.
+694	[Guild] You do not have the authority to change your rank name.
+695	[Guild] The guild leader's rights cannot be changed.
+696	[Guild] This rank name is invalid.
+697	[Guild] You do not have the authority to change your position.
+698	[Guild] The rights of the guild leader cannot be changed.
+699	[Guild] %u experience points used.
+700	[Guild] Experience usage has failed.
+701	[Guild] Insufficient Yang in the guild treasury.
+702	[Guild] Dragon ghost was not restored.
+704	[Guild] You do not have the authority to make an announcement.
+705	[Guild] You do not have the authority to change the position.
+706	[Guild] The guild leader's position cannot be changed.
+707	[Guild] You cannot make yourself guild leader.
+708	[Guild] You do not have the authority to choose the guild leader.
+709	[Guild] You cannot choose any more guild leaders.
+710	You cannot trade this item.
+712	You have more than 2 Billion Yang with you. You cannot trade.
+722	%s of the Guild %s raised up to %d%% !
+723	%s of the Guild %s normal again.
+724	%s: %s has increased by %d%%!
+726	%s 's %s normal again.
+728	Your mining points have reached their maximum level.
+729	You can get lumberjack Deokbae to upgrade your Pickaxe.
+731	You cannot mine without a Pick.
+732	Nothing to mine here.
+733	The mining has been successful.
+734	The mining has failed.
+735	[Friends] You have added %s as a friend.
+737	[Friends] You have deleted %s from the list.
+738	A critical server error has occurred. The server will restart automatically.
+739	You will be disconnected automatically in 10 seconds.
+740	You can connect again after 5 minutes.
+741	(%s) Guild has been created. [temporary]
+743	%s: This guild does not exist.
+753	This character does not exist.
+772	Your request is loading. Please wait.
+773	You cannot open a Storeroom while another window is open.
+774	[Storeroom] Storeroom password has been changed.
+775	[Storeroom] You have entered the wrong password.
+793	Shinsoo Kingdom
+794	Chunjo Kingdom
+795	Jinno Kingdom
+796	Your fishing points have increased! (%d/%d)
+797	You have reached the maximum number of fishing points.
+798	Go to the Fisherman and get your Fishing Pole upgraded!
+799	You lost your bait to the fish.
+800	You have caught a fish! (%s)
+801	The length of the captured fish is %.2fcm.
+803	OX The other event participants are being noted down.
+805	%s: %d
+806	You have caught %d of %d .
+807	The fish vanished in the depths of the water.
+808	There is a Clam inside the Fish.
+809	There is a Worm inside the Fish.
+810	You are roasting %s over the fire.
+811	You cannot trade because you are carrying more than 2 billion Yang.
+812	You can't give your shop an invalid name.
+813	You can't sell Item-Shop items in a private shop.
+814	OX The other event participants have not been noted down.
+815	Mining is finished.
+816	You need a Pickaxe in order to extract ore!
+817	Please choose a Fishing Pole.
+818	Place the Bait on the Hook first.
+819	You can't go fishing without a fishing pole!
+820	[Group] You cannot make a request because the group leader is not online.
+821	[Group] You cannot form a group with players from another kingdom.
+822	[Group] You cannot invite players while you are in a dungeon.
+823	[Group] You cannot invite a player while you are in observer mode.
+824	[Group] Only players with a level difference of -30 to +30 can be invited.
+825	Number of other participants : %d
+826	[Group] You cannot invite this player, as their level is too low.
+827	[Group] You cannot invite this player, as their level is too high.
+828	[Group] You cannot invite any more players into your group.
+829	You want to join %s's group.
+830	This player is not in this group.
+831	[Group] You cannot join this group because it is already full.
+832	[Group] You do not have the right to invite someone.
+833	[Group] %s has declined your group invitation.
+834	[Group] %s is already in the group.
+835	[Group] You cannot accept an invitation into a dungeon.
+837	[Group] You cannot accept the invitation.
+838	[Group] %s has declined your invitation.
+839	[Group] %s has joined your group.
+841	You can't use a private shop now.
+842	This player is already trading with another player.
+846	You cannot teleport to the player.
+848	This player is not online.
+849	The player is playing on channel %d. (You are on channel %d.)
+850	After opening the Storeroom, you cannot go anywhere else for %d seconds.
+851	You cannot go elsewhere for a period of time after the trade.
+852	After trading you cannot go elsewhere for %d seconds.
+853	The duel has finished, because your combatant vanished.
+854	There is no limit for Potions.
+855	You can use up to %d potions.
+856	The fight will start in 10 seconds.
+857	The duel has begun.
+858	TRUE
+859	The duel is being finished because there is a problem in the duel arena.
+860	The duel has finished because of a timeout.
+861	In 10 seconds you will be teleported into the city.
+862	The duel has been stopped because there is a problem in the arena.
+863	Your combatant has got some problems. The duel is being cancelled.
+864	The duel is being cancelled as there is a problem with the combatant.
+865	%s has won the duel.
+866	%s has won.
+867	You will be teleported into the city in 10 seconds.
+868	The next round will begin in 10 seconds.
+869	FALSE
+870	The combatants have been separated. The duel has been stopped.
+871	The quota of the Item Drop is at the moment plus %d%%
+872	The quota of the Yang Drop is at the moment plus %d%%
+873	The drop rate for Yang rain is currently %d%% higher.
+874	The experience bonus is currently an additional %d%%.
+876	You cannot trade in the shop while another window is open.
+877	You are too far away from the shop to buy something.
+878	You are too far away from the shop to sell something.
+880	Total number of the Quiz: %d
+881	This sale will be taxed %d%%.
+882	You cannot ride a Horse while you are transformed.
+883	You cannot ride while you are wearing a Wedding Dress or a Tuxedo.
+884	You do not have a Horse.
+885	Your Horse is dead.
+886	Your Horse's endurance is too low.
+887	Calling the Horse has failed.
+888	's Horse
+889	The wedding is finishing soon.
+890	Will be left automatically.
+891	The war is already over.
+892	The result will follow in 10 seconds.
+893	You cannot trade while observing.
+894	If the window is open, you cannot trade with others.
+895	The other person is currently busy so you cannot trade right now.
+896	The other person has cancelled the trade.
+897	Not enough Yang or not enough space in the inventory.
+898	The other person does not have enough Yang or does not have any space left in their inventory.
+899	The other person has no space left in their inventory.
+900	The trade with %s has been successful.
+901	You did not lose any Experience because of the Blessing of the Dragon God.
+903	The correct answer is:
+910	You did not drop any Item(s) as you are protected by the Dragon God.
+911	Additional Stabbing Weapon Damage %d
+912	%s block! (%d%%)
+914	Yes (O)
+916	Please enter the Order in full length.
+917	You cannot do this whilst sitting on a Horse.
+918	You cannot do that while you are lying on the ground.
+919	In my Dreams? What?
+920	Get up first.
+921	This command does not exist.
+922	[Group] This group has been disbanded.
+923	[Group] You cannot call the target.
+924	[Group] You cannot call group members over to your current position.
+925	No (X)
+926	Your group works well together, and group members near the group leader will receive an experience bonus.
+927	Leader
+928	Member
+929	[Guild] Provided Experience is larger then left Experience.
+930	[Guild] This message cannot be deleted.
+931	[Guild] Not enough Dragon Ghost. (%d, %d)
+932	[Guild] You cannot use the guild skills yet.
+934	[Guild] This player is on channel %d. (Current channel: %d)
+935	[Guild] This player is not online.
+936	In 5 sec. everyone who gave an incorrect answer will be removed.
+937	[Guild] This guild skill can only be used during war.
+940	[Guild] The player has declined the guild invitation.
+941	[Guild] You do not have the authority to invite someone to join the guild.
+942	[Guild] You cannot invite players from another kingdom into the guild.
+943	[Guild] This player can be invited again after %d day(s).
+944	[Guild] After the rearrangement you can invite members again after %d days.
+945	[Guild] This person is already a member of another Guild.
+946	[Guild] The maximum guild capacity has been reached.
+947	Ready for the next question?
+948	You cannot train this skill.
+949	You cannot train this skill up to Grand Master level.
+950	You already are a Master of this skill. You cannot train this skill any further.
+951	Your Skill is not high enough to become a Grand Master.
+952	That did not work. Damn!
+953	Training has failed. Please try again later.
+954	My body is full of energy!
+955	The training seems to be working already...
+956	You successfully finished your training with the book.
+957	You cannot read this due to your lack of experience.
+959	You cannot train this skill with a Book.
+960	This skill's level is not high enough to be trained with a Book.
+964	You have successfully finished your training with the Book.
+965	Teleportation has failed.
+966	No Horse here. Ask the Stable Boy.
+967	Please use an item to call a Horse.
+968	%s FP-Consumption: %d
+969	If it's correct, then go to O. If it's wrong, go to X.
+970	I am burning inside, but it is calming down my body. My Chi has to stabilise.
+971	A little slow, but steady... Without stopping!
+972	Yes, that feels great. My body is full of Chi.
+973	I have read it! Now the Chi will spread through my body.
+974	The training is completed.
+975	I am on the last page of the book. The training is nearly finished!
+976	Nearly finished! Just a little bit more to go!
+977	Eureka! I have nearly finished reading it!
+978	Only a few more pages and then I'll have read everything.
+979	I feel refreshed.
+980	Correct!
+981	Now I understand it!
+982	Okay I have to stay concentrated!
+983	I keep reading the same line over and over again.
+984	I do not want to learn any more.
+985	It is a lot more complicated and more difficult to understand than I thought.
+986	It's hard for me to concentrate. I should take a break.
+988	Your chat block has been lifted.
+989	The Build window is already open.
+990	You cannot build something while another trade/storeroom window is open.
+991	No further improvements possible.
+992	The build window is not open.
+993	You do not have the right material.
+1001	[Guild] The guild has reached %d points.
+1002	This item cannot be improved.
+1003	The free weapon improvements can only be used on weapons up to level 20.
+1004	You cannot use this item because you do not fulfil all the requirements.
+1005	You are not able to use that item because you do not have the right gender.
+1013	Your level is too low to use this item.
+1014	You cannot upgrade anything while another window is open.
+1025	You can only open the shop if you take off your armour.
+1028	%d hours %d minutes %d seconds left on your chat block
+1029	%d hours %d seconds left on your chat block
+1030	%d minutes %d seconds left on your chat block
+1035	Not the right material for an upgrade.
+1042	%d seconds left on your chat block
+1043	You cannot express emotions whilst riding a horse.
+1044	You cannot use emotions with a player who is riding on a Horse.
+1048	[Guild] The enemy's guild leader is offline.
+1050	[Guild] This guild is taking part in a battle at the moment.
+1054	You're already riding. Get off first.
+1056	You cannot upgrade items with this Scroll.
+1067	You can only be rewarded once for the Demon Tower Quest.
+1068	Dragon Stone has been removed.
+1069	You cannot move the item within the refinement window.
+1072	Dragon Stone remaining duration has been extracted.
+1073	Remaining duration extraction failed.
+1074	Removal of Dragon Stone failed. But you have received the following: %s
+1075	Removal of Dragon Stone failed.
+1076	This item is not required for improving the clarity level.
+1077	This item cannot be advanced this way.
+1078	Improvement of the clarity level successful.
+1079	Refinement up one class failed.
+1080	This item is not required for refinement.
+1082	Refinement up one class was successful.
+1083	Improvement of the clarity level failed.
+1084	You do not own the materials required to strengthen the Dragon Stone.
+1085	This Dragon Stone cannot be used for strengthening.
+1087	Strengthening was successful.
+1088	Strengthening failed.
+1090	You are already carrying a Dragon Stone of this type.
+1091	The Dragon Stone cannot be removed.
+1092	You have already equipped this kind of Dragon Stone.
+1094	Before you open the Cor Draconis, you have to complete the Dragon Stone quest and activate the Dragon Stone Alchemy.
+1096	You can combine the Blessing Scroll with the Magic Iron Ore.
+1097	You cannot equip this item in your belt inventory.
+1108	There is no Stone available to take out.
+1119	You cannot store this location.
+1130	There isn't enough space in your inventory.
+1141	You cannot teleport to a safe position in a foreign Kingdom.
+1145	
+1152	You don't have enough HP.
+1162	You don't have enough Spell Points (SP) to use this.
+1205	You cannot use this item in a duel.
+1217	You cannot build a campfire here.
+1228	You cannot build a campfire under water.
+1229	Your inventory is full.
+1237	Closed. You should look for the key.
+1248	This item cannot be opened with a key.
+1258	That's the right key.
+1269	You have received %d Yang.
+1279	A mysterious light comes out of the box.
+1290	You have received %d experience points.
+1299	Look what came out of the box!
+1308	[Guild] The guild level is too low.
+1310	If you inhale the red smoke coming out of the box, your speed will increase!
+5000	#%d cannot create item.
+5001	#%d item not exist by that vnum.
+5002	#%u item not exist by that vnum.
+5003	%4d %5d %5d %8d %u
+5004	%d %d
+5005	%d %s %s
+5006	%d ms
+5007	%s %d
+5008	%s %d : %d %s
+5009	%s %d prob 1000
+5010	%s %d prob 500
+5011	%s %d prob 800
+5012	%s %s
+5013	%s %s (%d)
+5014	%s %s sec
+5015	%s %s(%ld%%) FAIL
+5016	%s %s(%ld%%) SUCCESS
+5017	%s attack hack! time (delta, limit)=(%u, %u) hack_count %d
+5018	%s dodge! (%d%%)
+5019	%s for empire : %d
+5020	%s for guild : %d
+5021	%s for player : %d
+5022	%s is not in same map
+5023	%s needed.
+5024	%s not exist
+5025	%s rolled the dice and got %d. (%d-%d)
+5026	%s spawned in %dx%d
+5027	%s's %s change %d to %d
+5028	%s's %s set to [%d]
+5029	%s's %s set to [%lld]
+5030	%s(%d%%) -> %s FAIL
+5031	%s(%d%%) -> %s SUCCESS
+5032	%s: no such a player
+5033	%s: no such a player.
+5034	%s[%d] attacks at: %d %d
+5035	%s[%d] vs %s[%d] time %u sec.
+5036	+3 Arcanum cannot be improved with this item
+5037	-- Affect List of %s -------------------------------
+5038	-> %s, DAM %d HP %d(%d%%) %s%s
+5039	5 minutes left until the monsters attack!!!
+5040	<- %s, DAM %d HP %d(%d%%) %s%s
+5041	<Guild> %d dragon power has been restored.
+5042	<Guild> New membership is currently restricted.
+5043	<Guild> Only the guild leader can use guild skills.
+5044	<Guild> The guild is already at the highest level.
+5045	<Guild> The guild is currently at war.
+5046	<Guild> The other party cannot receive invitation requests.
+5047	<Guild> Uses %d skill (%d, %d) to %u
+5048	<Guild> You cannot withdraw a guild member during a guild war.
+5049	<IMMUNE_FAIL> (%s)
+5050	<IMMUNE_FAIL> (%s) NO_IMMUNE_FLAG
+5051	<IMMUNE_SUCCESS> (%s)
+5052	<Party> Attacker setup failed.
+5053	<Party> You can only invite parties within -%d to +%d levels.
+5054	<Party> You have left the party.
+5055	<Warehouse> This item cannot be moved to the warehouse.
+5056	<duration>  hour
+5057	<empire>    0 - 3 (0==all)
+5058	<type>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp
+5059	<value>     percent
+5060	===== OX QUIZ LIST =====
+5061	===== OX QUIZ LIST END =====
+5062	ARROW %s -> %s, DAM %d DIST %d GAP %d %% %d
+5063	ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%
+5064	ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d
+5065	Abilities cannot be increased while transformed.
+5066	Affect successfully removed.
+5067	After a while, we return to the village.
+5068	Attack :name[%s] Vnum[%d] can't use skill by attack(warning)
+5069	Attack Speed Hack(%s), (delta, limit)=(%u, %u)
+5070	BODY : %s
+5071	BONUS:
+5072	Bonuschange of %s (Slot: %d) successfully finished.
+5073	Breaks off the engagement between player %d and player %d.
+5074	Building rotation feature is not yet available
+5075	COSTUME status:
+5076	Can only be used on weapons and armor.
+5077	Can't find map by index %d
+5078	Cannot equip items directly from switchbot.
+5079	Cannot find map (index %d)
+5080	Cannot find map command syntax: /goto <mapname> [empire]
+5081	Cannot find player(%s). %s is not in your game server.
+5082	Cannot find player(%s). Perhaps %s doesn't login or exist.
+5083	Cannot move active switchbot item.
+5084	Cannot move equipped items to switchbot.
+5085	Cannot remove item from switchbot. Inventory is full.
+5086	Cannot set stat under initial stat.
+5087	Charged for %d seconds.
+5088	Charging is not possible.
+5089	Chat block requested.
+5090	Cold Resistance %d%%
+5091	Construction costs are insufficient.
+5092	Construction is not possible due to lack of materials.
+5093	DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%
+5094	DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%
+5095	Dalian has started successfully.
+5096	Dark Resistance %d%%
+5097	Defeated the noble lord and all his subordinates.
+5098	Delete failed. Quest flag does not exist.
+5099	Delete success.
+5100	Dragon Soulstone Chest is not activated.
+5101	Dropped items will disappear after %d minutes.
+5102	Due to lack of mental power, you cannot see other people's equipment.
+5103	Earth Resistance %d%%
+5104	Equipped items cannot be sold in personal stores.
+5105	Event Helper Delete
+5106	Event Helper Spawn
+5107	Evil energy gathers at the central altar.
+5108	Example) 10s, 10m, 1m 30s
+5109	FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%
+5110	Find %d, count %d, require %d
+5111	Fire Damage %d
+5112	Forced shutdown of Dalian failed
+5113	Get closer and get off.
+5114	Get closer and get on it.
+5115	Guild Land(%d) Cleared
+5116	GuildID: %d
+5117	GuildMasterPID: %d
+5118	HAIR : %s
+5119	HP %d/%d
+5120	HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%
+5121	Health %d/%d (%d%%)
+5122	Horse Information:
+5123	I am fighting for my life. Stay focused.
+5124	I can't wear it because I don't have the item.
+5125	I'm having trouble starting sparring.
+5126	ICE:%3d%% EARTH:%3d%% DARK:%3d%%
+5127	Invalid argument.
+5128	Invalid command %s
+5129	Invalid format of time. Please specify by adding h, m, or s.
+5130	Invalid item type for switchbot.
+5131	Invalid syntax
+5132	Invalid syntax: no command
+5133	Inventory is not activated.
+5134	IsInWar: %d
+5135	It doesn't work. Check the skill formula
+5136	It is higher than the application level and cannot be used.
+5137	It is in a state where it cannot be disguised.
+5138	Items in use cannot be sold in personal stores.
+5139	Items that are being worn cannot be sold.
+5140	LEV %d
+5141	LUA_ERROR: quest %s.%s %s
+5142	Level  %d
+5143	MALL:
+5144	Manufacturing failed.
+5145	MapIndex: %d MobCount %d
+5146	MapInfo
+5147	Monsters are advancing towards %s' castle.
+5148	Monsters have started attacking the castle.
+5149	New bonus added successfully.
+5150	No one currently blocked.
+5151	No such a skill by that name.
+5152	No such mob by that vnum
+5153	Not a place for fishing
+5154	Not affected by that type and point.
+5155	Not enough inventory space.
+5156	Not yet available.
+5157	OX-Question: 
+5158	One minute left until the monsters attack!!!
+5159	Opponent's critical hit chance reduced by %d%%
+5160	Opponent's piercing attack probability decreases by %d%%
+5161	Please defeat the Demon Lord within 30 minutes.
+5162	Poison Damage %d
+5163	PossibleDistant %f nNowDist %f
+5164	QUEST_SYSERR %s
+5165	QUEST_SYSLOG %s
+5166	Quest flag set: %s %d
+5167	RESISTANCES:
+5168	Reloading Admin information.
+5169	Reloading crafting information.
+5170	Reloading notice string.
+5171	Reloading prototype tables,
+5172	Reloading quest.
+5173	Reloading state_user_count.
+5174	RequestSetEventFlag %s %d
+5175	Respaw around
+5176	Respaw everywhere
+5177	SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%
+5178	SP %d/%d
+5179	SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%
+5180	Safebox size set to %d
+5181	Save done.
+5182	Save failed.
+5183	Spawn failed.
+5184	Spiritstones cannot be improved with this item.
+5185	Stam   %d/%d (%d%%)
+5186	Subskill of [%s] was reset
+5187	Successful forced shutdown of Dalian
+5188	Switchbot stopped. Not enough money.
+5189	Switchbot stopped. Out of switchers.
+5190	Syntax: /affect_remove <player name>
+5191	Syntax: /affect_remove <type> <point>
+5192	Syntax: /saveati <map_index> <filename>
+5193	Syntax: advance <name> <level>
+5194	Syntax: delqf <flagname> [<character name>]
+5195	Syntax: level <level>
+5196	Syntax: mm <one>
+5197	Syntax: setqf <flagname> <value> [<character name>]
+5198	Syntax: setskill <name> <lev>
+5199	Syntax: setskillother <target> <skillname> <lev>
+5200	TREE:%3d%% MONSTER:%3d%%
+5201	Target is in %d channel (my channel %d)
+5202	Test server timeout passed
+5203	The Dragon's Lair will collapse in %d seconds!
+5204	The buildings required for construction have not been built.
+5205	The construction task failed beyond the building cost information.
+5206	The leader of the monsters has appeared.
+5207	The monsters are showing signs of retreating.
+5208	The monsters began to retreat.
+5209	The noble lord has retreated.
+5210	The other person is unable to add you as a friend.
+5211	The sensor was activated, but no Arcanum was detected.
+5212	The subcommand of the command is incorrect.
+5213	The value was entered incorrectly.
+5214	There are few stat points left.
+5215	There are no spammers.
+5216	There are no stat points left.
+5217	There are types of buildings that cannot be built together.
+5218	There is no character(%s) by that name
+5219	There is no guild with that name or number.
+5220	There is no one by that name
+5221	There is no spirit stone to take out.
+5222	There is no such a skill.
+5223	There is no such character.
+5224	There is no such command
+5225	This building does not exist.
+5226	This guild is currently at war.
+5227	This is a location where buildings cannot be built.
+5228	This is an inappropriate guild name.
+5229	Time remaining until socket is removed from %s: %d
+5230	Total %d
+5231	Total [%d] %d / %d / %d (this server %d)
+5232	Transfer me?!?
+5233	Transfer requested.
+5234	Type Point Modif Duration Flag
+5235	Unknown error
+5236	Usage : /horse_set_stat <hp> <stamina>
+5237	Usage: %s <name>
+5238	Usage: block_chat <name> <time> (0 to off)
+5239	Usage: cube open
+5240	Usage: empire money
+5241	Usage: fishing_simul <level> <prob index> <count>
+5242	Usage: goto <x meter> <y meter>
+5243	Usage: group <group vnum>
+5244	Usage: inventory <start_index> <count>
+5245	Usage: private <map index>
+5246	Usage: reset_subskill <name>
+5247	Usage: set <name> <field> <value>
+5248	Usage: transfer <name>
+5249	Usage: vote_block_chat <name>
+5250	Usage: warp <character name> | <x meter> <y meter>
+5251	Use: grrandom <group one>
+5252	Use: item <item one>
+5253	Use: mc <one>
+5254	Use: mob <mob one>
+5255	WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%
+5256	We plan to attack the castle in 10 minutes.
+5257	Weekly Event End
+5258	Weekly Event Start
+5259	You can no longer increase the value of good and evil.
+5260	You can't ride there.
+5261	You can't throw away gold yet.
+5262	You cannot add more bonus.
+5263	You cannot change the bonuses.
+5264	You cannot move to another area within 1 minute after the transaction.
+5265	You cannot move to another location while the trading window or warehouse is open.
+5266	You cannot read books while transformed.
+5267	You cannot ride a horse while downed.
+5268	You cannot unequip the belt while items are inside the beld inventory.
+5269	You cannot wear robes while riding a horse.
+5270	You goto ( %d, %d )
+5271	You have destroyed %s.
+5272	You have gained %d exp.
+5273	You roll a die and roll %d. (%d-%d)
+5274	You warp to ( %d, %d )
+5275	Your Mining Points have increased! (%lld/%d)
+5276	Your chat has been blocked by a GM.
+5277	Your inventory is full and you cannot unload.
+5278	Your mining points have reached their maximum. (%lld)
+5279	[1106-??]No puedes unir esto.
+5280	[Only Test] Success_Prob %d, RefineLevel %d
+5281	[SYSTEM ERROR]You cannot upgrade dragon soul without refine window.
+5282	[SYSTEM ERROR]You cannot use dragon soul refine window.
+5283	[TEST_SERVER] Failed to learn skill
+5284	[TEST_SERVER] Success to learn skill
+5285	[TestOnly]Pulse %d LoadTime %d PASS %d
+5286	[TestOnly][Safebox]Pulse %d LoadTime %d PASS %d
+5287	cannot disconnect myself
+5288	cell : %d, name : %s, id : %d
+5289	cooltime not finished %s %d
+5290	cube add <inveltory_index>
+5291	cube cancel
+5292	cube close
+5293	cube delete <cube_index>
+5294	cube list
+5295	cube make [all]
+5296	cube[%d]: cube[%d]: %s deleted
+5297	cube[%d]: inventory[%d]: %s
+5298	cube[%d]: inventory[%d]: %s added
+5299	error occurred on [%s:%d]
+5300	ex) /dc <player name>
+5301	ex) /kill <player name>
+5302	exp bonus %d%%
+5303	gold_mul %d rate %d
+5304	guild.wall.build unknown_direction[%s]
+5305	horse level set (%s: %d)
+5306	horse level set to %d.
+5307	inventory [%d] = %s
+5308	lovepoint bykill %.3g total %d
+5309	pc_warp %d %d %d
+5310	sent find position packet for guild teleport
+5311	sent find position packet for teleport
+5312	setting quest state flag %s %s %d
+5313	setting quest state flag failed
+5314	skill group to %d.
+5315	usage : /flush player_id
+5316	usage : /horse_level <name> <level>
+5317	usage : priv_empire <empire> <type> <value> <duration>
