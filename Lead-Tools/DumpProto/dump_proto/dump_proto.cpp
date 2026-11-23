@@ -72,7 +72,6 @@ typedef struct SMobTable
 {
 	DWORD	dwVnum;
 	char	szName[CHARACTER_NAME_MAX_LEN + 1];
-	char	szLocaleName[CHARACTER_NAME_MAX_LEN + 1];
 
 	BYTE	bType;			// Monster, NPC
 	BYTE	bRank;			// PAWN, KNIGHT, KING
@@ -176,7 +175,6 @@ typedef struct
 	DWORD       dwVnum;
 	DWORD		dwVnumRange;
 	char        szName[ITEM_NAME_MAX_LEN + 1];
-	char	szLocaleName[ITEM_NAME_MAX_LEN + 1];
 	BYTE	bType;
 	BYTE	bSubType;
 
@@ -211,21 +209,12 @@ TClientItemTable * m_pItemTable = NULL;
 int m_iItemTableSize = 0;
 
 
-bool Set_Proto_Mob_Table(TMobTable *mobTable, cCsvTable &csvTable, std::map<int,const char*> &nameMap)
+bool Set_Proto_Mob_Table(TMobTable *mobTable, cCsvTable &csvTable)
 {
 	int col = 0;
 
 	mobTable->dwVnum               = atoi(csvTable.AsStringByIndex(col++));
 	strncpy(mobTable->szName, csvTable.AsStringByIndex(col++), CHARACTER_NAME_MAX_LEN);
-	//네임 파일이 존재하면 정보를 읽어옴.
-	map<int,const char*>::iterator it;
-	it = nameMap.find(mobTable->dwVnum);
-	if (it != nameMap.end()) {
-		const char * localeName = it->second;
-		strncpy(mobTable->szLocaleName, localeName, sizeof (mobTable->szLocaleName));
-	} else {	//네임 파일이 없으면, 한글을 그대로 사용.
-		strncpy(mobTable->szLocaleName, mobTable->szName, sizeof (mobTable->szLocaleName));
-	}
 	//4. RANK
 	int rankValue = get_Mob_Rank_Value(csvTable.AsStringByIndex(col++));
 	mobTable->bRank                = rankValue;
@@ -301,10 +290,8 @@ bool Set_Proto_Mob_Table(TMobTable *mobTable, cCsvTable &csvTable, std::map<int,
 bool BuildMobTable()
 {
 	//%%% <함수 설명> %%%//
-	//1. 요약 : 'mob_proto.txt', 'mob_proto_test.txt', 'mob_names.txt' 파일을 읽고,
 	//		m_pMobTable 를 구성한다.
 	//2. 순서
-	//	1)'mob_names.txt' 파일을 읽어서 vnum:name 맵을 만든다.
 	//	2)'mob_proto_test.txt' 파일을 읽어서,
 	//		test_mob_table 를 만들고,
 	//		vnum:TMobTable 맵을 만든다.
@@ -313,7 +300,6 @@ bool BuildMobTable()
 	//	4)test_mob_table 데이터중에, m_pMobTable 에 없는 데이터를 추가한다.
 	//3. 테스트
 	//	1)'mob_proto.txt' 정보가 m_pMobTable에 잘 들어갔는지. -> 완료
-	//	2)'mob_names.txt' 정보가 m_pMobTable에 잘 들어갔는지. -> 완료
 	//	3)'mob_proto_test.txt' 에서 [겹치는] 정보가 m_pMobTable 에 잘 들어갔는지. -> 완료
 	//	4)'mob_proto_test.txt' 에서 [새로운] 정보가 m_pMobTable 에 잘 들어갔는지. -> 완료
 	//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
@@ -321,23 +307,6 @@ bool BuildMobTable()
 	fprintf(stderr, "sizeof(TMobTable): %u\n", sizeof(TMobTable));
 
 
-	//==============================================================//
-	//======local별 몬스터 이름을 저장하고 있는 [맵] vnum:name======//
-	//==============================================================//
-	bool isNameFile = true;
-	map<int,const char*> localMap;
-	cCsvTable nameData;
-	if(!nameData.Load("mob_names.txt",'\t'))
-	{
-		fprintf(stderr, "mob_names.txt 파일을 읽어오지 못했습니다\n");
-		isNameFile = false;
-	} else {
-		nameData.Next();
-		while(nameData.Next()) {
-			localMap[atoi(nameData.AsStringByIndex(0))] = nameData.AsStringByIndex(1);
-		}
-	}
-	//______________________________________________________________//
 
 	//=========================================//
 	//======몬스터들의 vnum을 저장할 [셋]======//
@@ -372,7 +341,7 @@ bool BuildMobTable()
 		//3. 테스트 몬스터 테이블에 값을 넣고, 맵에까지 넣기.
 		while(test_data.Next()) {
 			
-			if (!Set_Proto_Mob_Table(test_mob_table, test_data, localMap))
+			if (!Set_Proto_Mob_Table(test_mob_table, test_data))
 			{
 				fprintf(stderr, "몹 프로토 테이블 셋팅 실패.\n");			
 			}
@@ -441,7 +410,7 @@ bool BuildMobTable()
 		it_map_mobTable = test_map_mobTableByVnum.find(atoi(data.AsStringByIndex(col)));
 		if(it_map_mobTable == test_map_mobTableByVnum.end()) {
 			
-			if (!Set_Proto_Mob_Table(mob_table, data, localMap))
+			if (!Set_Proto_Mob_Table(mob_table, data))
 			{
 				fprintf(stderr, "몹 프로토 테이블 셋팅 실패.\n");			
 			}
@@ -451,7 +420,6 @@ bool BuildMobTable()
 
 			mob_table->dwVnum               = tempTable->dwVnum;
 			strncpy(mob_table->szName, tempTable->szName, CHARACTER_NAME_MAX_LEN);
-			strncpy(mob_table->szLocaleName, tempTable->szLocaleName, CHARACTER_NAME_MAX_LEN);
 			mob_table->bRank                = tempTable->bRank;
 			mob_table->bType                = tempTable->bType;
 			mob_table->bBattleType          = tempTable->bBattleType;
@@ -491,7 +459,7 @@ bool BuildMobTable()
 
 		}
 
-		fprintf(stdout, "MOB #%-5d %-16s %-16s sight: %u color %u[%s]\n", mob_table->dwVnum, mob_table->szName, mob_table->szLocaleName, mob_table->wAggressiveSight, mob_table->dwMobColor, 0);
+		fprintf(stdout, "MOB #%-5d %-16s sight: %u color %u[%s]\n", mob_table->dwVnum, mob_table->szName, mob_table->wAggressiveSight, mob_table->dwMobColor, 0);
 
 		//셋에 vnum 추가
 		vnumSet.insert(mob_table->dwVnum);
@@ -525,12 +493,12 @@ bool BuildMobTable()
 			}
 
 			
-			if (!Set_Proto_Mob_Table(mob_table, test_data, localMap))
+			if (!Set_Proto_Mob_Table(mob_table, test_data))
 			{
 				fprintf(stderr, "몹 프로토 테이블 셋팅 실패.\n");			
 			}
 
-			fprintf(stdout, "[New]MOB #%-5d %-16s sight: %u color %u[%s]\n", mob_table->dwVnum, mob_table->szLocaleName, mob_table->wAggressiveSight, mob_table->dwMobColor, test_data.AsStringByIndex(54));
+			fprintf(stdout, "[New]MOB #%-5d %-16s sight: %u color %u[%s]\n", mob_table->dwVnum, mob_table->szName, mob_table->wAggressiveSight, mob_table->dwMobColor, test_data.AsStringByIndex(54));
 
 			//셋에 vnum 추가
 			vnumSet.insert(mob_table->dwVnum);
@@ -644,7 +612,7 @@ void LoadMobProto()
 //==													==//
 //==													==//
 
-bool Set_Proto_Item_Table(TClientItemTable *itemTable, cCsvTable &csvTable, std::map<int,const char*> &nameMap)
+bool Set_Proto_Item_Table(TClientItemTable *itemTable, cCsvTable &csvTable)
 {
 	// vnum 및 vnum range 읽기.
 	{
@@ -681,15 +649,6 @@ bool Set_Proto_Item_Table(TClientItemTable *itemTable, cCsvTable &csvTable, std:
 	int col = 1;
 
 	strncpy(itemTable->szName, csvTable.AsStringByIndex(col++), ITEM_NAME_MAX_LEN);
-	//네임 파일이 존재하면 정보를 읽어옴.
-	map<int,const char*>::iterator it;
-	it = nameMap.find(itemTable->dwVnum);
-	if (it != nameMap.end()) {
-		const char * localeName = it->second;
-		strncpy(itemTable->szLocaleName, localeName, sizeof(itemTable->szLocaleName));
-	} else { //네임 파일이 존재하지 않으면 한글로..
-		strncpy(itemTable->szLocaleName, itemTable->szName, sizeof(itemTable->szLocaleName));
-	}
 	itemTable->bType = get_Item_Type_Value(csvTable.AsStringByIndex(col++));
 	itemTable->bSubType = get_Item_SubType_Value(itemTable->bType, csvTable.AsStringByIndex(col++));
 	itemTable->bSize = atoi(csvTable.AsStringByIndex(col++));
@@ -732,10 +691,8 @@ bool Set_Proto_Item_Table(TClientItemTable *itemTable, cCsvTable &csvTable, std:
 bool BuildItemTable()
 {
 	//%%% <함수 설명> %%%//
-	//1. 요약 : 'item_proto.txt', 'item_proto_test.txt', 'item_names.txt' 파일을 읽고,
 	//		m_pItemTable 를 구성한다.
 	//2. 순서
-	//	1)'item_names.txt' 파일을 읽어서 vnum:name 맵을 만든다.
 	//	2)'item_proto_test.txt' 파일을 읽어서,
 	//		test_item_table 를 만들고,
 	//		vnum:TClientItemTable 맵을 만든다.
@@ -744,30 +701,12 @@ bool BuildItemTable()
 	//	4)test_item_table 데이터중에, m_pItemTable 에 없는 데이터를 추가한다.
 	//3. 테스트
 	//	1)'item_proto.txt' 정보가 m_pItemTable에 잘 들어갔는지.
-	//	2)'item_names.txt' 정보가 m_pItemTable에 잘 들어갔는지.
 	//	3)'item_proto_test.txt' 에서 [겹치는] 정보가 m_pItemTable 에 잘 들어갔는지.
 	//	4)'item_proto_test.txt' 에서 [새로운] 정보가 m_pItemTable 에 잘 들어갔는지.
 	//^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^//
 
 	fprintf(stderr, "sizeof(TClientItemTable): %u\n", sizeof(TClientItemTable));
 
-	//=================================================================//
-	//	1)'item_names.txt' 파일을 읽어서 vnum:name 맵을 만든다.
-	//=================================================================//
-	bool isNameFile = true;
-	map<int,const char*> localMap;
-	cCsvTable nameData;
-	if(!nameData.Load("item_names.txt",'\t'))
-	{
-		fprintf(stderr, "item_names.txt 파일을 읽어오지 못했습니다\n");
-		isNameFile = false;
-	} else {
-		nameData.Next();
-		while(nameData.Next()) {
-			localMap[atoi(nameData.AsStringByIndex(0))] = nameData.AsStringByIndex(1);
-		}
-	}
-	//_________________________________________________________________//
 
 	//===================== =======================//
 	//	2)'item_proto_test.txt' 파일을 읽어서,
@@ -794,7 +733,7 @@ bool BuildItemTable()
 		//3. 테스트 몬스터 테이블에 값을 넣고, 맵에까지 넣기.
 		while(test_data.Next()) {
 			
-			if (!Set_Proto_Item_Table(test_item_table, test_data, localMap))
+			if (!Set_Proto_Item_Table(test_item_table, test_data))
 			{
 				fprintf(stderr, "몹 프로토 테이블 셋팅 실패.\n");			
 			}
@@ -867,7 +806,7 @@ bool BuildItemTable()
 		if(it_map_itemTable == test_map_itemTableByVnum.end()) {
 
 			
-			if (!Set_Proto_Item_Table(item_table, data, localMap))
+			if (!Set_Proto_Item_Table(item_table, data))
 			{
 				fprintf(stderr, "몹 프로토 테이블 셋팅 실패.\n");			
 			}
@@ -876,7 +815,6 @@ bool BuildItemTable()
 
 			item_table->dwVnum = tempTable->dwVnum;
 			strncpy(item_table->szName, tempTable->szName, ITEM_NAME_MAX_LEN);
-			strncpy(item_table->szLocaleName, tempTable->szLocaleName, ITEM_NAME_MAX_LEN);
 			item_table->bType = tempTable->bType;
 			item_table->bSubType = tempTable->bSubType;
 			item_table->bSize = tempTable->bSize;
@@ -914,10 +852,9 @@ bool BuildItemTable()
 		}
 
 
-		fprintf(stdout, "ITEM #%-5u %-24s %-24s VAL: %ld %ld %ld %ld %ld %ld WEAR %u ANTI %u IMMUNE %u REFINE %u\n",
+		fprintf(stdout, "ITEM #%-5u %-24s VAL: %ld %ld %ld %ld %ld %ld WEAR %u ANTI %u IMMUNE %u REFINE %u\n",
 				item_table->dwVnum,
 				item_table->szName,
-				item_table->szLocaleName,
 				item_table->alValues[0],
 				item_table->alValues[1],
 				item_table->alValues[2],
@@ -954,15 +891,14 @@ bool BuildItemTable()
 				continue;
 			}
 
-			if (!Set_Proto_Item_Table(item_table, test_data, localMap))
+			if (!Set_Proto_Item_Table(item_table, test_data))
 			{
 				fprintf(stderr, "몹 프로토 테이블 셋팅 실패.\n");			
 			}
 
-			fprintf(stdout, "[NEW]ITEM #%-5u %-24s %-24s VAL: %ld %ld %ld %ld %ld %ld WEAR %u ANTI %u IMMUNE %u REFINE %u\n",
+			fprintf(stdout, "[NEW]ITEM #%-5u %-24s VAL: %ld %ld %ld %ld %ld %ld WEAR %u ANTI %u IMMUNE %u REFINE %u\n",
 					item_table->dwVnum,
 					item_table->szName,
-					item_table->szLocaleName,
 					item_table->alValues[0],
 					item_table->alValues[1],
 					item_table->alValues[2],

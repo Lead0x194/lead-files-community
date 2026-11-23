@@ -197,7 +197,7 @@ int get_Item_SubType_Value(int type_value, string inputString)
 	
 
 	//아이템 타입의 서브타입 어레이가 존재하는지 알아보고, 없으면 0 리턴
-	if (arSubType[type_value]==0) {
+	if (type_value < 0 || arSubType[type_value]==0) {
 		return 0;
 	}
 	//

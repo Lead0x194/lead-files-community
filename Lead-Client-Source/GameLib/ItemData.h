@@ -380,7 +380,6 @@ class CItemData
 			DWORD       dwVnum;
 			DWORD       dwVnumRange;
 			char        szName[ITEM_NAME_MAX_LEN + 1];
-			char        szLocaleName[ITEM_NAME_MAX_LEN + 1];
 			BYTE        bType;
 			BYTE        bSubType;
 			
