@@ -1630,6 +1630,8 @@ class Interface(object):
 		questButtonList = [(btn.index, btn.name, btn.iconType, btn.iconName) for btn in self.questButtonList]
 		partyMemberList = [(board.GetCharacterPID(), board.GetCharacterName(), board.GetCharacterVID()) for board in self.wndParty.partyMemberInfoBoardList]
 
+		sentenceStack = self.wndChat.chatInputSet.chatLine.lastSentenceStack
+
 		self.HideAllWindows()
 		self.Close()
 		gc.collect()
@@ -1637,6 +1639,7 @@ class Interface(object):
 		self.__init__()
 		miniMap.LoadAtlas()
 		self.MakeInterface()
+		self.wndChat.chatInputSet.chatLine.lastSentenceStack = sentenceStack
 		self.ShowDefaultWindows()
 
 		questButtonList.reverse()
