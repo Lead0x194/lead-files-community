@@ -4,6 +4,7 @@
 #include "PythonItem.h"
 
 #include "AbstractPlayer.h"
+#include "PythonNonPlayer.h"
 
 void SNetworkActorData::UpdatePosition()
 {
@@ -87,6 +88,7 @@ void SNetworkActorData::__copy__(const SNetworkActorData& src)
 	m_dwGuildID = src.m_dwGuildID;
 	m_dwLevel = src.m_dwLevel;
 	m_stName = src.m_stName;
+	m_bLocalName = src.m_bLocalName;
 }
 // END_OF_NETWORK_ACTOR_DATA_COPY
 	
@@ -117,6 +119,7 @@ SNetworkActorData::SNetworkActorData()
 	m_dwMountVnum=0;
 
 	m_stName="";
+	m_bLocalName=false;
 
 	m_kAffectFlags.Clear();
 }
@@ -130,6 +133,25 @@ CNetworkActorManager::CNetworkActorManager()
 
 CNetworkActorManager::~CNetworkActorManager()
 {
+}
+
+void CNetworkActorManager::RefreshLocalNames()
+{
+	CPythonCharacterManager& rkChrMgr = CPythonCharacterManager::Instance();
+	CPythonNonPlayer& rkNonPlayer = CPythonNonPlayer::Instance();
+
+	for (std::map<DWORD, SNetworkActorData>::iterator itor = m_kNetActorDict.begin(); itor != m_kNetActorDict.end(); ++itor)
+	{
+		SNetworkActorData& rkNetActorData = itor->second;
+		if (!rkNetActorData.m_bLocalName)
+			continue;
+
+		rkNetActorData.m_stName = rkNonPlayer.GetMonsterName(rkNetActorData.m_dwRace);
+
+		CInstanceBase* pkInst = rkChrMgr.GetInstancePtr(rkNetActorData.m_dwVID);
+		if (pkInst && rkNetActorData.m_stName != pkInst->GetNameString())
+			pkInst->ChangeName(rkNetActorData.m_stName.c_str());
+	}
 }
 
 void CNetworkActorManager::Destroy()

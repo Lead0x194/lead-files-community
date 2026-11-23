@@ -99,8 +99,7 @@ bool CPythonNetworkStream::RecvCharacterAppendPacket()
 	kNetActorData.m_fRot=chrAddPacket.angle;
 
 	kNetActorData.m_stName="";
-
-	kNetActorData.m_stName="";
+	kNetActorData.m_bLocalName=false;
 	kNetActorData.m_kAffectFlags.CopyData(0, sizeof(chrAddPacket.dwAffectFlag[0]), &chrAddPacket.dwAffectFlag[0]);
 	kNetActorData.m_kAffectFlags.CopyData(32, sizeof(chrAddPacket.dwAffectFlag[1]), &chrAddPacket.dwAffectFlag[1]);
 	
@@ -123,7 +122,10 @@ bool CPythonNetworkStream::RecvCharacterAppendPacket()
 		const char * c_szName;
 		CPythonNonPlayer& rkNonPlayer=CPythonNonPlayer::Instance();
 		if (rkNonPlayer.GetName(kNetActorData.m_dwRace, &c_szName))
+		{
 			kNetActorData.m_stName = c_szName;
+			kNetActorData.m_bLocalName = true;
+		}
 		//else
 		//	kNetActorData.m_stName=chrAddPacket.name;
 
@@ -151,7 +153,8 @@ bool CPythonNetworkStream::RecvCharacterAdditionalInfo()
 	if(kNetActorData.m_dwVID == chrInfoPacket.dwVID)
 	{
 		const char * c_szName;
-		if (!chrInfoPacket.name[0] && CPythonNonPlayer::Instance().GetName(kNetActorData.m_dwRace, &c_szName))
+		kNetActorData.m_bLocalName = !chrInfoPacket.name[0] && CPythonNonPlayer::Instance().GetName(kNetActorData.m_dwRace, &c_szName);
+		if (kNetActorData.m_bLocalName)
 			kNetActorData.m_stName = c_szName;
 		else
 			kNetActorData.m_stName = chrInfoPacket.name;
@@ -176,6 +179,11 @@ bool CPythonNetworkStream::RecvCharacterAdditionalInfo()
 		TraceError("TPacketGCCharacterAdditionalInfo name=%s vid=%d race=%d Error",chrInfoPacket.name,chrInfoPacket.dwVID,kNetActorData.m_dwRace);
 	}
 	return true;
+}
+
+void CPythonNetworkStream::RefreshActorNames()
+{
+	m_rokNetActorMgr->RefreshLocalNames();
 }
 
 bool CPythonNetworkStream::RecvCharacterUpdatePacket()

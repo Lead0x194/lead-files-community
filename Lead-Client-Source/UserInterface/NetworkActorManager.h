@@ -40,6 +40,7 @@ struct SNetworkActorData
 
 	DWORD	m_dwGuildID;
 	DWORD	m_dwLevel;
+	bool	m_bLocalName;
 	
 	SNetworkActorData();
 
@@ -124,6 +125,7 @@ class CNetworkActorManager : public CReferenceObject
 
 		void RemoveActor(DWORD dwVID);
 		void AppendActor(const SNetworkActorData& c_rkNetActorData);
+		void RefreshLocalNames();
 		void UpdateActor(const SNetworkUpdateActorData& c_rkNetUpdateActorData);
 		void MoveActor(const SNetworkMoveActorData& c_rkNetMoveActorData);
 

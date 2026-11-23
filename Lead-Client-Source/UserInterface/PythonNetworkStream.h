@@ -531,6 +531,10 @@ class CPythonNetworkStream : public CNetworkStream, public CSingleton<CPythonNet
 		void OnConnectFailure();
 		void OnScriptEventStart(int iSkin, int iIndex);
         void HideQuestWindows();
+	public:
+		void RefreshActorNames();
+
+	protected:
 
 		void OnRemoteDisconnect();
 		void OnDisconnect();

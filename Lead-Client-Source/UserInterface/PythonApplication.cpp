@@ -756,24 +756,9 @@ bool LoadLocaleTexts(const char* localePath)
 	snprintf(szFileName, sizeof(szFileName), "%s/itemdesc.txt", localePath);
 	CItemManager::Instance().LoadItemDesc(szFileName);
 
-	CPythonNonPlayer& rkNonPlayer = CPythonNonPlayer::Instance();
-	CPythonCharacterManager& rkChrMgr = CPythonCharacterManager::Instance();
-	std::vector<CInstanceBase*> kInstVector;
-	const char* c_szName;
-
-	for (CPythonCharacterManager::CharacterIterator i = rkChrMgr.CharacterInstanceBegin(); i != rkChrMgr.CharacterInstanceEnd(); ++i)
-	{
-		CInstanceBase* pkInst = *i;
-		if (!pkInst->IsPC() && rkNonPlayer.GetName(pkInst->GetRace(), &c_szName) && !strcmp(c_szName, pkInst->GetNameString()))
-			kInstVector.push_back(pkInst);
-	}
-
 	snprintf(szFileName, sizeof(szFileName), "%s/mob_names.txt", localePath);
-	rkNonPlayer.LoadNames(szFileName);
-
-	for (CInstanceBase* pkInst : kInstVector)
-		if (rkNonPlayer.GetName(pkInst->GetRace(), &c_szName))
-			pkInst->ChangeName(c_szName);
+	CPythonNonPlayer::Instance().LoadNames(szFileName);
+	CPythonNetworkStream::Instance().RefreshActorNames();
 
 	CPythonItem::Instance().RefreshNames();
 	LocaleService_LoadStrings(localePath);

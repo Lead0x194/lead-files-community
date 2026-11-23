@@ -31,8 +31,35 @@ bool LocaleService_SetLanguage(const char* c_szName)
 	return true;
 }
 
+static const char* DetectSystemLanguage()
+{
+	static const struct
+	{
+		WORD wLanguage;
+		const char* c_szName;
+	} c_akLanguage[] =
+	{
+		{ LANG_ARABIC, "ae" }, { LANG_CZECH, "cz" }, { LANG_GERMAN, "de" }, { LANG_DANISH, "dk" },
+		{ LANG_ENGLISH, "en" }, { LANG_SPANISH, "es" }, { LANG_FRENCH, "fr" }, { LANG_GREEK, "gr" },
+		{ LANG_HUNGARIAN, "hu" }, { LANG_ITALIAN, "it" }, { LANG_DUTCH, "nl" }, { LANG_POLISH, "pl" },
+		{ LANG_PORTUGUESE, "pt" }, { LANG_ROMANIAN, "ro" }, { LANG_RUSSIAN, "ru" }, { LANG_TURKISH, "tr" },
+	};
+
+	const WORD c_wLanguage = PRIMARYLANGID(GetUserDefaultUILanguage());
+	for (size_t i = 0; i < sizeof(c_akLanguage) / sizeof(c_akLanguage[0]); ++i)
+	{
+		if (c_akLanguage[i].wLanguage == c_wLanguage)
+			return c_akLanguage[i].c_szName;
+	}
+
+	return "en";
+}
+
 void LocaleService_LoadConfig(const char* fileName)
 {
+	strcpy_s(MULTI_LOCALE_NAME, sizeof(MULTI_LOCALE_NAME), DetectSystemLanguage());
+	sprintf_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), "locale/%s", MULTI_LOCALE_NAME);
+
 	FILE* fp = NULL;
 	fopen_s(&fp, fileName, "rt");
 
@@ -372,6 +399,37 @@ void LocaleService_ResolveNameCommand(std::string& rstCommand)
 		return;
 
 	rstCommand.replace(c_uNameStart + 1, uNameEnd - c_uNameStart - 1, std::to_string(dwVnum));
+}
+
+void LocaleService_LocalizeItemLinks(std::string& rstText)
+{
+	static const std::string c_stLink = "|Hitem:";
+	static const std::string c_stNameStart = "|h[";
+	static const std::string c_stNameEnd = "]|h";
+
+	size_t uPos = 0;
+	while (std::string::npos != (uPos = rstText.find(c_stLink, uPos)))
+	{
+		uPos += c_stLink.length();
+
+		const DWORD c_dwVnum = static_cast<DWORD>(strtoul(rstText.c_str() + uPos, NULL, 16));
+		const size_t c_uNameStart = rstText.find(c_stNameStart, uPos);
+		if (std::string::npos == c_uNameStart)
+			break;
+
+		const size_t c_uNameEnd = rstText.find(c_stNameEnd, c_uNameStart);
+		if (std::string::npos == c_uNameEnd)
+			break;
+
+		CItemData* pItemData;
+		if (CItemManager::Instance().GetItemDataPointer(c_dwVnum, &pItemData))
+		{
+			const size_t c_uStart = c_uNameStart + c_stNameStart.length();
+			rstText.replace(c_uStart, c_uNameEnd - c_uStart, pItemData->GetName());
+		}
+
+		uPos = c_uNameStart;
+	}
 }
 
 unsigned LocaleService_GetLastExp(int level)
