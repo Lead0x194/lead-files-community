@@ -15,7 +15,7 @@ class MapNameShower(ui.ExpandedImageBox):
 	STATE_FADE_OUT = 3
 
 	def __init__(self):
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			self.MAP_NAME_IMAGE =	{
 							"metin2_map_a1"  : LOCALE_PATH+"a1.tga",
 							"map_a2"         : LOCALE_PATH+"a2.tga",

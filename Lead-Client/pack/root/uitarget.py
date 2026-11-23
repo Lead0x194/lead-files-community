@@ -476,7 +476,7 @@ class TargetBoard(ui.ThinBoard):
 		closeButton.SetDownVisual("d:/ymir work/ui/public/close_button_03.sub")
 		closeButton.SetPosition(30, 13)
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			hpGauge.SetPosition(55, 17)
 			hpGauge.SetWindowHorizontalAlignLeft()
 			closeButton.SetWindowHorizontalAlignLeft()
@@ -506,7 +506,7 @@ class TargetBoard(ui.ThinBoard):
 			button = ui.Button()
 			button.SetParent(self)
 		
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				button.SetUpVisual("d:/ymir work/ui/public/Small_Button_01.sub")
 				button.SetOverVisual("d:/ymir work/ui/public/Small_Button_02.sub")
 				button.SetDownVisual("d:/ymir work/ui/public/Small_Button_03.sub")
@@ -732,7 +732,7 @@ class TargetBoard(ui.ThinBoard):
 
 			self.SetSize(200 + 7*self.nameLength, self.GetHeight())
 
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				self.name.SetPosition( self.GetWidth()-23, 13)
 			else:
 				self.name.SetPosition(23, 13)

@@ -176,7 +176,7 @@ class WhisperDialog(ui.ScriptWindow):
 			if 0 != self.targetName:
 				chat.SetWhisperBoxSize(self.targetName, width - 50, height - 90)			
 			
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				self.textRenderer.SetPosition(width-20, 28)
 				self.scrollBar.SetPosition(width-25+self.scrollBar.GetWidth(), 35)
 				self.editBar.SetPosition(10 + self.editBar.GetWidth(), height-60)

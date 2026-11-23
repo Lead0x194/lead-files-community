@@ -485,7 +485,7 @@ class GameWindow(ui.ScriptWindow):
 		self.pressNumber=ui.__mem_func__(self.__SelectQuickPage)
 
 	def __PressQuickSlot(self, localSlotIndex):
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			if 0 <= localSlotIndex and localSlotIndex < 4:
 				player.RequestUseLocalQuickSlot(3-localSlotIndex)
 			else:

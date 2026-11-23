@@ -22,7 +22,7 @@ class HelpWindow(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 			
-			if localeInfo.IsARABIC():
+			if localeInfo.IsRTL():
 				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "HelpWindow.py")
 			else:
 				pyScrLoader.LoadScriptFile(self, "UIScript/HelpWindow.py")

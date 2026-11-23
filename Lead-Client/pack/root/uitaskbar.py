@@ -442,7 +442,7 @@ class TaskBar(ui.ScriptWindow):
 			TaskBar.IS_EXPANDED = True
 		
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			systemButton = toggleButtonDict[TaskBar.BUTTON_SYSTEM]
 			if systemButton.ToolTipText:
 				tx, ty = systemButton.ToolTipText.GetLocalPosition()

@@ -180,7 +180,7 @@ class RefineDialog(ui.ScriptWindow):
 		textLine.SetWindowVerticalAlignCenter()
 		textLine.SetVerticalAlignCenter()
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			(x,y) = textLine.GetTextSize()
 			textLine.SetPosition(x, 0)
 		else:
@@ -224,7 +224,7 @@ class RefineDialog(ui.ScriptWindow):
 
 		newHeight -= 8
 
-		if localeInfo.IsARABIC():
+		if localeInfo.IsRTL():
 			self.board.SetPosition( newWidth, 0 )
 
 			(x, y) = self.titleBar.GetLocalPosition()

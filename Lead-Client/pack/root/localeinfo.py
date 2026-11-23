@@ -39,7 +39,7 @@ __IS_EUROPE		= "EUROPE" == app.GetLocaleServiceName()
 __IS_CANADA		= "locale/ca" == app.GetLocalePath()
 __IS_SINGAPORE	= "locale/sg" == app.GetLocalePath()
 __IS_VIETNAM	= "locale/vn" == app.GetLocalePath()
-__IS_ARABIC		= "locale/ae" == app.GetLocalePath()
+__IS_RTL		= "locale/ae" == app.GetLocalePath()
 __IS_WE_KOREA	= "locale/we_korea" == app.GetLocalePath()
 __IS_TAIWAN		= "locale/taiwan" == app.GetLocalePath()
 LOGIN_FAILURE_WRONG_SOCIALID = "ASDF"
@@ -75,9 +75,9 @@ def IsSINGAPORE():
 	global __IS_SINGAPORE
 	return __IS_SINGAPORE
 	
-def IsARABIC():
-	global __IS_ARABIC
-	return __IS_ARABIC
+def IsRTL():
+	global __IS_RTL
+	return __IS_RTL
 
 def IsWE_KOREA():
 	return "locale/we_korea" == app.GetLocalePath()
@@ -233,7 +233,7 @@ def CutMoneyString(sourceText, startIndex, endIndex, insertingText, backText):
 
 def SecondToDHM(time):
 	if time < 60:
-		if IsARABIC():
+		if IsRTL():
 			return "%.2f %s" % (time, SECOND)
 		else:
 			return "0" + MINUTE
@@ -261,7 +261,7 @@ def SecondToDHM(time):
 def SecondToHM(time):
 
 	if time < 60:
-		if IsARABIC():
+		if IsRTL():
 			return "%.2f %s" % (time, SECOND)
 		else:
 			return "0" + MINUTE

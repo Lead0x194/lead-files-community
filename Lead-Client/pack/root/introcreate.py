@@ -428,7 +428,7 @@ class CreateCharacterWindow(ui.Window):
 		event.ClearEventSet(self.descIndex)
 		self.descIndex = event.RegisterEventSet(self.DESCRIPTION_FILE_NAME[self.slot])
 		
-		if localeInfo.IsARABIC(): 
+		if localeInfo.IsRTL(): 
 			event.SetEventSetWidth(self.descIndex, 170)
 
 		chr_id = self.__GetSlotChrID(self.gender, slot)
