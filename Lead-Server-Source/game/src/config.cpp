@@ -1096,7 +1096,6 @@ void config_init(const string& st_localeServiceName)
 	}
 
 	// LOCALE_SERVICE
-	LocaleService_LoadLocaleStringFile();
 	LocaleService_TransferDefaultSetting();
 	LocaleService_LoadEmpireTextConvertTables();
 	// END_OF_LOCALE_SERVICE

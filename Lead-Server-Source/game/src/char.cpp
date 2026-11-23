@@ -865,37 +865,18 @@ void CHARACTER::EncodeInsertPacket(LPENTITY entity)
 			addPacket.dwLevel = 0;
 		}
 
-		if (false)
-		{
-			LPCHARACTER ch = (LPCHARACTER) entity;
+		strlcpy(addPacket.name, GetName(), sizeof(addPacket.name));
 
-			if (GetEmpire() == ch->GetEmpire() || ch->GetGMLevel() > GM_PLAYER || m_bCharType == CHAR_TYPE_NPC)
-			{
-				goto show_all_info;
-			}
-			else
-			{
-				memset(addPacket.name, 0, CHARACTER_NAME_MAX_LEN);
-				addPacket.dwGuildID = 0;
-				addPacket.sAlignment = 0;
-			}
+		if (GetGuild() != NULL)
+		{	
+			addPacket.dwGuildID = GetGuild()->GetID();
 		}
 		else
 		{
-		show_all_info:
-			strlcpy(addPacket.name, GetName(), sizeof(addPacket.name));
-
-			if (GetGuild() != NULL)
-			{	
-				addPacket.dwGuildID = GetGuild()->GetID();
-			}
-			else
-			{
-				addPacket.dwGuildID = 0;
-			}
-
-			addPacket.sAlignment = m_iAlignment / 10;
+			addPacket.dwGuildID = 0;
 		}
+
+		addPacket.sAlignment = m_iAlignment / 10;
 
 		d->Packet(&addPacket, sizeof(TPacketGCCharacterAdditionalInfo));
 	}
@@ -971,7 +952,6 @@ void CHARACTER::UpdatePacket()
 	if (GetSectree() == NULL) return;
 
 	TPacketGCCharacterUpdate pack;
-	TPacketGCCharacterUpdate pack2;
 
 	pack.header = HEADER_GC_CHARACTER_UPDATE;
 	pack.dwVID = m_vid;
@@ -995,56 +975,7 @@ void CHARACTER::UpdatePacket()
 
 	pack.dwMountVnum	= GetMountVnum();
 
-	pack2 = pack;
-	pack2.dwGuildID = 0;
-	pack2.sAlignment = 0;
-
-	if (false)
-	{
-		if (m_bIsObserver != true)
-		{
-			for (ENTITY_MAP::iterator iter = m_map_view.begin(); iter != m_map_view.end(); iter++)
-			{
-				LPENTITY pEntity = iter->first;
-
-				if (pEntity != NULL)
-				{
-					if (pEntity->IsType(ENTITY_CHARACTER) == true)
-					{
-						if (pEntity->GetDesc() != NULL)
-						{
-							LPCHARACTER pChar = (LPCHARACTER)pEntity;
-
-							if (GetEmpire() == pChar->GetEmpire() || pChar->GetGMLevel() > GM_PLAYER)
-							{
-								pEntity->GetDesc()->Packet(&pack, sizeof(pack));
-							}
-							else
-							{
-								pEntity->GetDesc()->Packet(&pack2, sizeof(pack2));
-							}
-						}
-					}
-					else
-					{
-						if (pEntity->GetDesc() != NULL)
-						{
-							pEntity->GetDesc()->Packet(&pack, sizeof(pack));
-						}
-					}
-				}
-			}
-		}
-
-		if (GetDesc() != NULL)
-		{
-			GetDesc()->Packet(&pack, sizeof(pack));
-		}
-	}
-	else
-	{
-		PacketAround(&pack, sizeof(pack));
-	}
+	PacketAround(&pack, sizeof(pack));
 }
 
 LPCHARACTER CHARACTER::FindCharacterInView(const char * c_pszName, bool bFindPCOnly)
