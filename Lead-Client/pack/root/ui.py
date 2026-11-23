@@ -2924,7 +2924,10 @@ class ListBox2(ListBox):
 		self.showLineCount = 0
 		for textLine in self.itemList:
 			x, y = self._CalcRenderPos(pos, self.showLineCount)
-			textLine.SetPosition(x, y)
+			if localeInfo.IsRTL():
+				textLine.SetPosition(x + textLine.GetTextSize()[0] + 10, y)
+			else:
+				textLine.SetPosition(x, y)
 			textLine.Show()
 
 			self.showLineCount += 1
@@ -3153,7 +3156,8 @@ class PythonScriptLoader(object):
 	SCROLLBAR_KEY_LIST = ( "size", )
 	LIST_BOX_KEY_LIST = ( "width", "height", )
 
-	def __init__(self):
+	def __init__(self, mirror = True):
+		self.mirror = mirror and localeInfo.IsRTL()
 		self.Clear()
 
 	def Clear(self):
@@ -3204,7 +3208,7 @@ class PythonScriptLoader(object):
 
 		window.SetPosition(int(Body["x"]), int(Body["y"]))
 
-		if localeInfo.IsRTL(): 
+		if self.mirror:
 			w = wndMgr.GetScreenWidth()
 			h = wndMgr.GetScreenHeight()
 			if Body.has_key("width"):
@@ -3224,7 +3228,7 @@ class PythonScriptLoader(object):
 
 	def LoadChildren(self, parent, dicChildren):
 
-		if localeInfo.IsRTL():
+		if self.mirror:
 			parent.AddFlag( "rtl" )
 
 		if True == dicChildren.has_key("style"):
@@ -3646,7 +3650,7 @@ class PythonScriptLoader(object):
 		if True == value.has_key("y_blank"):
 			yBlank = int(value["y_blank"])
 
-		if localeInfo.IsRTL():
+		if self.mirror:
 			pass
 		else:
 			window.SetPosition(int(value["x"]), int(value["y"]))
@@ -3676,7 +3680,7 @@ class PythonScriptLoader(object):
 		if True == value.has_key("style"):
 			if "select" == value["style"]:
 				wndMgr.SetSlotStyle(window.hWnd, wndMgr.SLOT_STYLE_SELECT)
-		if localeInfo.IsRTL():
+		if self.mirror:
 			self.LoadDefaultData(window, value, parentWindow)
 		else:
 			window.Show()

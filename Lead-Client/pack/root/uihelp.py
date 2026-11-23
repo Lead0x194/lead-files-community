@@ -22,10 +22,7 @@ class HelpWindow(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 			
-			if localeInfo.IsRTL():
-				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "HelpWindow.py")
-			else:
-				pyScrLoader.LoadScriptFile(self, "UIScript/HelpWindow.py")
+			pyScrLoader.LoadScriptFile(self, "UIScript/HelpWindow.py")
 		except:
 			import exception
 			exception.Abort("HelpWindow.LoadDialogSinglePage.LoadScript")

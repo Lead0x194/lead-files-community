@@ -322,10 +322,7 @@ class MiniMap(ui.ScriptWindow):
 
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
-			if localeInfo.IsRTL():
-				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "Minimap.py")
-			else:
-				pyScrLoader.LoadScriptFile(self, "UIScript/MiniMap.py")
+			pyScrLoader.LoadScriptFile(self, "UIScript/MiniMap.py")
 		except:
 			import exception
 			exception.Abort("MiniMap.LoadWindow.LoadScript")

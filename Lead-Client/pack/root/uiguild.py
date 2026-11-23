@@ -803,10 +803,7 @@ class GuildWindow(ui.ScriptWindow):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
 
-			if localeInfo.IsRTL() :
-				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "guildwindow.py")
-			else:
-				pyScrLoader.LoadScriptFile(self, "uiscript/guildwindow.py")
+			pyScrLoader.LoadScriptFile(self, "uiscript/guildwindow.py")
 
 			self.popupDialog = ui.ScriptWindow()
 			pyScrLoader.LoadScriptFile(self.popupDialog, "UIScript/PopupDialog.py")
@@ -820,7 +817,7 @@ class GuildWindow(ui.ScriptWindow):
 					"BOARD"			: self.PageWindow(self, "uiscript/guildwindow_boardpage.py"),
 					"MEMBER"		: self.PageWindow(self, "uiscript/guildwindow_memberpage.py"),
 					"BASE_INFO"		: self.PageWindow(self, "uiscript/guildwindow_baseinfopage.py"),
-					"SKILL"			: self.PageWindow(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "guildwindow_guildskillpage.py"),
+					"SKILL"			: self.PageWindow(self, "uiscript/guildwindow_guildskillpage.py"),
 					"GRADE"			: self.PageWindow(self, "uiscript/guildwindow_gradepage.py"),
 				}
 			else:
@@ -1979,10 +1976,7 @@ class BuildGuildBuildingWindow(ui.ScriptWindow):
 
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
-			if localeInfo.IsRTL():
-				pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "buildguildbuildingwindow.py")
-			else:
-				pyScrLoader.LoadScriptFile(self, "uiscript/buildguildbuildingwindow.py")
+			pyScrLoader.LoadScriptFile(self, "uiscript/buildguildbuildingwindow.py")
 		except:
 			import exception
 			exception.Abort("DeclareGuildWarWindow.__CreateDialog - LoadScript")

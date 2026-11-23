@@ -61,7 +61,7 @@ class LoadingWindow(ui.ScriptWindow):
 		#app.HideCursor()
 
 		try:
-			pyScrLoader = ui.PythonScriptLoader()
+			pyScrLoader = ui.PythonScriptLoader(False)
 			
 			pyScrLoader.LoadScriptFile(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "LoadingWindow.py")
 		except:

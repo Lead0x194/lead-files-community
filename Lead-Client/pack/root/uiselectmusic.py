@@ -129,10 +129,7 @@ class FileListDialog(ui.ScriptWindow):
 	def __Load(self):
 		self.popupDialog=PopupDialog(self)
 
-		if localeInfo.IsRTL():
-			self.__Load_LoadScript(uiScriptLocale.LOCALE_UISCRIPT_PATH + "MusicListWindow.py")
-		else:
-			self.__Load_LoadScript("UIScript/MusicListWindow.py")
+		self.__Load_LoadScript("UIScript/MusicListWindow.py")
 
 		self.__Load_BindObject()
 

@@ -113,6 +113,15 @@ const char* FindToken(const char* begin, const char* end)
 	return end;
 }
 
+static bool HasRTLCharacter(const wchar_t* c_wszText, int iLength)
+{
+	for (int i = 0; i < iLength; ++i)
+		if ((c_wszText[i] >= 0x0590 && c_wszText[i] <= 0x08FF) || (c_wszText[i] >= 0xFB1D && c_wszText[i] <= 0xFEFC))
+			return true;
+
+	return false;
+}
+
 int ReadToken(const char* token)
 {
 	int nRet = (token[1]-'0')*1000 + (token[2]-'0')*100 + (token[3]-'0')*10 + (token[4]-'0');
@@ -178,7 +187,7 @@ void CGraphicTextInstance::Update()
 		} 
 		else 
 		{
-			if (IsDefaultRTL()) // ARABIC
+			if (IsDefaultRTL() && HasRTLCharacter(wText, wTextLen))
 			{
 
 				wchar_t* wArabicText = (wchar_t*)_alloca(sizeof(wchar_t) * wTextLen);

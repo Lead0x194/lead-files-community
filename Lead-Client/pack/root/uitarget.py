@@ -485,17 +485,17 @@ class TargetBoard(ui.ThinBoard):
 			hpGauge.SetWindowHorizontalAlignRight()
 			closeButton.SetWindowHorizontalAlignRight()
 
-			infoButton = ui.Button()
-			infoButton.SetParent(self)
-			infoButton.SetUpVisual("d:/ymir work/ui/pattern/q_mark_01.tga")
-			infoButton.SetOverVisual("d:/ymir work/ui/pattern/q_mark_02.tga")
-			infoButton.SetDownVisual("d:/ymir work/ui/pattern/q_mark_01.tga")
-			infoButton.SetEvent(ui.__mem_func__(self.OnPressedInfoButton))
-			infoButton.Hide()
+		infoButton = ui.Button()
+		infoButton.SetParent(self)
+		infoButton.SetUpVisual("d:/ymir work/ui/pattern/q_mark_01.tga")
+		infoButton.SetOverVisual("d:/ymir work/ui/pattern/q_mark_02.tga")
+		infoButton.SetDownVisual("d:/ymir work/ui/pattern/q_mark_01.tga")
+		infoButton.SetEvent(ui.__mem_func__(self.OnPressedInfoButton))
+		infoButton.Hide()
 
-			infoBoard = self.InfoBoard()
-			infoBoard.Hide()
-			infoButton.showWnd = infoBoard
+		infoBoard = self.InfoBoard()
+		infoBoard.Hide()
+		infoButton.showWnd = infoBoard
 
 		closeButton.SetEvent(ui.__mem_func__(self.OnPressedCloseButton))
 		closeButton.Show()
