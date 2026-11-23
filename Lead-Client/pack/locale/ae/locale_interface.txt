@@ -7,7 +7,6 @@ CHANGE_PASSWORD_NEW	كلمة المرور الجديدة
 CHANGE_PASSWORD_OLD	كلمة المرور القديمة
 CHANGE_PASSWORD_TITLE	تغيير كلمة المرور
 CHARACTER_ACTION	انفعال
-CHARACTER_EMOTICON	انفعال
 CHARACTER_MAIN	الشخصية
 CHARACTER_MUTUAL_ACTION	انفعال متبادل
 CHARACTER_NORMAL_ACTION	انفعال عادي
@@ -20,7 +19,6 @@ CREATE_ATT_GRADE	القوة
 CREATE_CREATE	إنشاء
 CREATE_DEX_GRADE	المناورة
 CREATE_HP	نقاط الحياة
-CREATE_LAST_POINT	النقاط
 CREATE_MAN	رجل
 CREATE_NAME	الاسم
 CREATE_NEXT	التالي
@@ -28,7 +26,6 @@ CREATE_PREV	رجوع
 CREATE_SEX	الجنس
 CREATE_SHAPE	الشكل
 CREATE_SP	الذكاء
-CREATE_STAT_RESET	إعادة ضبط
 CREATE_WOMAN	امرأة
 CUBE_INFO_TITLE	دليل الصقل
 CUBE_REQUIRE_MATERIAL	المواد المطلوبة
@@ -85,7 +82,6 @@ GUILD_BUILDING_REFRESH	تحديث (F5)
 GUILD_BUILDING_STONE	حجر
 GUILD_BUILDING_TITLE	بناء دار الرابطة
 GUILD_CRYSTAL	بلّور
-GUILD_DEPOSIT	إيداع
 GUILD_DROP_RESOURCE1	هنا
 GUILD_DROP_RESOURCE2	رمي المورد
 GUILD_GEM	جوهرة
@@ -103,7 +99,6 @@ GUILD_INFO_DECALRE_WAR	إعلان الحرب
 GUILD_INFO_ENEMY_GUILD	الرابطة المعادية
 GUILD_INFO_ENEMY_GUILD_EMPTY	لا شيء
 GUILD_INFO_LEVEL	مستوى الرابطة
-GUILD_INFO_MARK	شعار الرابطة
 GUILD_INFO_MASTER	القائد
 GUILD_INFO_MASTER_VALUE	القائد
 GUILD_INFO_MEMBER_AVG_LEVEL	متوسط المستوى
@@ -141,7 +136,6 @@ GUILD_WAR_NORMAL	ميدان
 GUILD_WAR_WARP	حلبة
 GUILD_WATER	ماء
 GUILD_WATER_STONE	حجر الماء
-GUILD_WITHDRAW	أخذ
 HELP_ATTACK_KEY	الهجوم: زر الفأرة الأيسر أو مفتاح المسافة
 HELP_CHANGE_PK_MODE	تغيير وضع الهجوم: غيّر إعداد زر الفأرة الأيسر
 HELP_CHARACTER_BUTTON1	(نافذة الشخصية، نافذة الحقيبة،
@@ -180,14 +174,11 @@ LOGIN_CONNECT	اتصال
 LOGIN_CONNECTING	جارٍ الاتصال بالخادم
 LOGIN_DEFAULT_SERVERADDR	اسم الخادم، القناة 1
 LOGIN_EXIT	خروج
-LOGIN_REGION_TITLE	اختر مكان إصدار الفاتورة.
 LOGIN_SELECT_BUTTON	اختيار
 LOGIN_SELECT_EXIT	خروج
-LOGIN_SELECT_OK	موافق
 LOGIN_SELECT_TITLE	اختر الخادم
 MALL_PASSWORD_TITLE	كلمة المرور
 MALL_TITLE	مخزن متجر الأغراض
-MARKET_TITLE	تحميل
 MARKLIST_REFRESH	تحديث
 MARKLIST_TITLE	تسجيل شعار الرابطة
 MESSAGE	هذه رسالة
@@ -195,7 +186,6 @@ MESSENGER_ADD_FRIEND	إضافة صديق
 MESSENGER_DELETE_FRIEND	حذف صديق
 MESSENGER_OPEN_GUILD	فتح نافذة الرابطة
 MESSENGER_TITLE	الأصدقاء
-MESSENGER_USE_GUILD_MOVE_SKILL	استخدام مهارة انتقال الرابطة
 MESSENGER_WHISPER	همس
 MINIMIZE	تصغير
 MOUSEBUTTON_ATTACK	هجوم
@@ -203,8 +193,6 @@ MOUSEBUTTON_AUTO_ATTACK	هجوم تلقائي
 MOUSEBUTTON_CAMERA	الكاميرا
 MOUSEBUTTON_SKILL	المهارات
 MUSICLIST_TITLE	اختيارات الموسيقى
-NO	لا
-OK	موافق
 OPTION_ALWAYS_SHOW_NAME	الاسم
 OPTION_ALWAYS_SHOW_NAME_OFF	محدود
 OPTION_ALWAYS_SHOW_NAME_ON	دائمًا
@@ -253,7 +241,6 @@ OPTION_TILING	الرسوميات
 OPTION_TILING_APPLY	تطبيق
 OPTION_TILING_CPU	CPU
 OPTION_TILING_GPU	GPU
-OPTION_TITLE	الخيارات
 OPTION_VIEW_CHAT	سطر المحادثة
 OPTION_VIEW_CHAT_OFF	إخفاء
 OPTION_VIEW_CHAT_ON	إظهار
@@ -270,10 +257,7 @@ PRIVATE_SHOP_NAME	اسم المتجر
 PRIVATE_SHOP_TITLE	فتح متجر خاص
 REFINE_COST	تكلفة الترقية: 0 يانغ
 REFINE_INFO	فرصة نجاح الترقية: 100%
-REFINE_MONEY	رسوم الصقل
-REFINE_SELECT	الصقل
 REFINE_TTILE	الترقيات
-REPORT_VIOLENT_WHISPER	
 RESTART_HERE	البدء من هنا
 RESTART_TOWN	البدء من المدينة
 SAFE_CHANGE_PASSWORD	تغيير كلمة المرور
@@ -292,7 +276,6 @@ SELECT_NO_GUILD	بلا رابطة
 SELECT_PLAYTIME	وقت اللعب (د.)
 SELECT_SELECT	بدء
 SELECT_SP	الأسلوب
-SELECT_TITLE	اختر اللقب
 SHOP_BUY	شراء
 SHOP_SELL	بيع
 SHOP_TITLE	المتجر
@@ -307,7 +290,6 @@ SYSTEM_EXIT	الخروج من اللعبة
 SYSTEM_HELP	مساعدة
 SYSTEM_LOGOUT	تسجيل الخروج
 SYSTEM_MALL	متجر الأغراض
-SYSTEM_OPTION	خيارات النظام
 TASKBAR_CHARACTER	الشخصية [C/V/B/N]
 TASKBAR_CHAT	نافذة المحادثة [Enter]
 TASKBAR_DISABLE	معطّل
@@ -324,3 +306,5 @@ WHISPER_REPORT
 WHISPER_SEND	إرسال
 YES	نعم
 ZONE_MAP	الخريطة الكبيرة
+NO	لا
+OK	موافق

@@ -1,6 +1,5 @@
 AFF_LOVE_POINT	Очки любви: %d%%
 ALIGNMENT_NAME	Ранг:
-ATTACK_ERROR_UNKNOWN	Неизвестная ошибка атаки: %s
 CANNOT_ATTACK_DEST_IN_SAFE	Противник слишком далеко.
 CANNOT_ATTACK_SELF_IN_SAFE	Я не могу атаковать.
 CANNOT_EQUIP_IN_EXCHANGE	Вы не можете менять снаряжение во время торга.
@@ -11,7 +10,6 @@ CANNOT_SHOOT_EMPTY_ARROW	Мне нужна стрела.
 CANNOT_SHOOT_SELF_IN_SAFE	Я не могу сделать этого.
 CANNOT_SKILL_APPROACH	Я уверен, что не могу подойти ближе.
 CANNOT_SKILL_ATTACK	Я не могу атаковать.
-CANNOT_SKILL_BLUE	Пока активирована Огненная душа волка, Небесную душу волка активировать невозможно.
 CANNOT_SKILL_DEST_IN_SAFE	Противник слишком далеко.
 CANNOT_SKILL_EQUIP_FISHING_ROD	Мне нужна удочка.
 CANNOT_SKILL_HAVE_TO_RIDE	Мне нужен конь, чтобы применить это.
@@ -25,7 +23,6 @@ CANNOT_SKILL_NOT_MATCHABLE_WEAPON	Я не могу применить этот �
 CANNOT_SKILL_NOT_YET_LEARN	Я не изучил этот Навык.
 CANNOT_SKILL_ONLY_FOR_ALLIANCE	Это распространяется только на участников группы.
 CANNOT_SKILL_ONLY_FOR_CORPSE	Это распространяется только на убитых.
-CANNOT_SKILL_RED	Пока активирована Небесная душа волка, Огненную душу волка активировать невозможно.
 CANNOT_SKILL_REMOVE_FISHING_ROD	Я не могу применить этот навык, пользуясь удочкой.
 CANNOT_SKILL_SELF_IN_SAFE	Я не могу атаковать противника с этой позиции.
 CANNOT_SKILL_USE_SELF	Я не могу применить это на себе.
@@ -34,8 +31,6 @@ CANNOT_USE	Использовать его невозможно.
 CANNOT_WHISPER_DEST_REFUSE	%s шептание заблокировано.	SA
 CANNOT_WHISPER_NOT_LOGON	%s вне сети.	SA
 CANNOT_WHISPER_SELF_REFUSE	Вы не можете использовать режим шепнуть, полностью блокировав его.	SNA
-CHANNEL	Канал
-CHANNELING_CANNOT_LOGOUT	Выход обратно к окну регистрации невозможен.
 CHANNEL_EMPTY_SERVER	Сервер отсутствует.
 CHANNEL_NORMAL	Канал %d
 CHANNEL_NOTIFY_FULL	Этот канал перегружен.  Пожалуйста выберите другой.
@@ -44,12 +39,7 @@ CHANNEL_PVP	Свободный поединок
 CHANNEL_SELECT_CHANNEL	Выберите канал
 CHANNEL_SELECT_REGION	Выберите регион.
 CHANNEL_SELECT_SERVER	Выбрать сервер
-CHANNEL_TEST_SERVER	Тестовый сервер
-CHANNEL_TEST_SERVER_ADDR	Тест %s:%d
-CHARACTER_CREATE_MODE	Создание персонажа
-CHARACTER_SELECT_MODE	Выбор персонажа
 CHAT_ALL	Все
-CHAT_BLOCK	Заблокировать
 CHAT_GUILD	Гильдия
 CHAT_INFORMATION	Инфо
 CHAT_INSULT_STRING	Фраза содержит недопустимые слова.
@@ -62,32 +52,13 @@ CHAT_SEND_CHAT	Отправить
 CHAT_SEND_MEMO	Шепнуть [Shift+Enter]
 CHAT_SHOUT	Крикнуть
 CHAT_SHOUT_LIMIT	Крикнуть можно только один раз в 15 секунд.
-CHAT_WHISPER	Шепнуть
-COMB_ALREADY_APPEND	
-COMB_CANT_APPEND_ITEM	Этот предмет невозможно использовать.
-COMB_CANT_APPEND_SEALED_ITEM	Предмет зачарованный оковами души невозможно использовать.
-COMB_COST	Цена: %s
-COMB_IS_CONTINUE_PROCESS	Желаете продолжить?
-COMB_NOTICE	Во время обмена книг открыть свою лавку невзоможно.
-COMB_NOTICE_NOT_OPEN	Обмен книг невозможен пока у вас открыта лавка.
-COMB_NOT_ALL_SLOT_APPEND_ITEM	Для поглощения бонусов вам нужен второй костюм.
-COMB_NOT_FULL_BOOK	Нет, так сделка не получится. Как я уже говорил, для обмена вы должны принести 10 книг.
-COMB_NOT_ITEM_IN_INVENTORY	Вы не можете использовать снаряженные предметы.
-COMB_NOT_MEDIUM_ITEM	Этот предмет невозможно использовать.
-COMB_WILL_REMOVE_MATERIAL	Костюм 2 будет уничтожен.
 CREATE_ERROR_GM_NAME	Имя персонажа не должно содержать ,ГМ‘ .
 CREATE_ERROR_INSULT_NAME	Это имя недопустимо.
-CREATE_ERROR_LIMIT_LEVEL	Ваш персонаж должен достигнуть как минимум 80 уровня.
-CREATE_ERROR_TIME_LIMIT	Создание персонажа возможно лишь каждые 30 сек.
-CREATE_ERROR_WRONG_STRING	Название персонажа не должно содержать специальных символов.
 CREATE_EXIST_SAME_NAME	Персонаж с таким именем уже существует.
 CREATE_FAILURE	Создание персонажа невозможно.
-CREATE_FULL	Создание дальнейших персонажей невозможно.
 CREATE_GM_NAME	ГМ
 CREATE_INPUT_NAME	Введите имя.
-CREATE_PLUS_STAT	Очки статуса пока доступны.
 DAY	Дней
-DONT_USE_ITEM_WHEN_SHOW_CONFIRM	Во время запроса невозможно перемещать предметы.
 DO_YOU_BUY_ITEM1	Хотите купить %s за %s?
 DO_YOU_BUY_ITEM2	Купить %s %s за %s?
 DO_YOU_DROP_MONEY	Хотите выбросить %d янг?
@@ -102,7 +73,6 @@ DRAGON_SOUL_INVALID_DRAGON_SOUL	Это не тот Камень Дракона.
 DRAGON_SOUL_IS_NOT_DRAGON_SOUL	Это не Камень Дракона.
 DRAGON_SOUL_NOT_DRAGON_SOUL_REFINE_STONE	Это не тот Камень Дракона.
 DRAGON_SOUL_NOT_ENOUGH_MATERIAL	У вас недостаточно материалов для улучшения.
-DRAGON_SOUL_NOT_MATCHED_SLOT	Камень Дракона не помещается в эту ячейку.
 DRAGON_SOUL_STEP_LEVEL1	Чистота: матовый.
 DRAGON_SOUL_STEP_LEVEL2	Чистота: прозрачный.
 DRAGON_SOUL_STEP_LEVEL3	Чистота: безупречный.
@@ -141,7 +111,6 @@ EMOTION_SLAP	Удар
 EMPIRE_A	Империя Шиньзо
 EMPIRE_B	Империя Хунджо
 EMPIRE_C	Империя Джинно
-EMPIRE_SELECT_MODE	Выбор империи
 EXCHANGE_CANNOT_GIVE	Торговать этим предметом нельзя.
 EXCHANGE_CANT_EDIT_MONEY	Изменить стоимость в данный момент невозможно.
 EXCHANGE_FAILURE_EQUIP_ITEM	Вы не можете сменить используемые предметы..
@@ -177,9 +146,6 @@ GUILDMARK_UPLOADER_ERROR_PATH	Скопируйте файлы в папку meti
 GUILDMARK_UPLOADER_ERROR_SELECT	Файл изображения не выбран.
 GUILDWAR_CTF_TITLE	Флаг захвачен.
 GUILDWAR_NORMAL_TITLE	Поле битвы
-GUILDWAR_QUESTION_LINE_1	Гильдия %s объявила войну вашей гильдии.
-GUILDWAR_QUESTION_LINE_2	Принять? (%s)
-GUILDWAR_UNKNOWN_TITLE	...
 GUILDWAR_WARP_TITLE	Арена войны гильдий
 GUILD_BUILDING_GRADE	Ранг
 GUILD_BUILDING_NAME	Название здания
@@ -188,11 +154,9 @@ GUILD_COMMENT	Писать
 GUILD_CREATE_ERROR_INSULT_NAME	Имя гильдии недопустимо.
 GUILD_DEFAULT_GRADE	Член гильдии
 GUILD_DELETE	Удалить
-GUILD_DEPOSIT	Отложить
 GUILD_DO_YOU_HEAL_GSP	Желаете восстановить за %d янг %d Духа Дракона?
 GUILD_DO_YOU_JOIN	 хотите присоединиться к гильдии?
 GUILD_EMPTY_AREA	Пустая Земля
-GUILD_ENEMY_GUILD_NAME	Имя гильдии противника
 GUILD_FACILITY	Пристройка
 GUILD_GEM	Самоцвет
 GUILD_HEADQUARTER	Главный корпус
@@ -212,13 +176,6 @@ GUILD_TILE_GRADE	Управление позицией
 GUILD_TILE_INFO	Гильдия-инфо
 GUILD_TILE_MEMBER	Члены гильдии
 GUILD_TILE_SKILL	Навыки гильдии
-GUILD_VILLAGE_01	Мирйанг
-GUILD_VILLAGE_02	Сонгпа
-GUILD_VILLAGE_03	Даэйами
-GUILD_WAR1	Территория войны гильдий
-GUILD_WAR2	Территория войны гильдий
-GUILD_WAR3	Территория войны гильдий
-GUILD_WAR4	Территория войны гильдий
 GUILD_WAR_LIMIT_30MIN	Время: 30 минут
 GUILD_WAR_REWARD_POTION	Награда: победитель получает зелье
 GUILD_WAR_USE_BATTLE_MAP	Местность: арена войны гильдий
@@ -227,7 +184,6 @@ GUILD_WAR_WIN_CHECK_SCORE	Лучший результат приносит по�
 GUILD_WAR_WIN_TAKE_AWAY_FLAG1	Захватите флаг противника
 GUILD_WAR_WIN_TAKE_AWAY_FLAG2	и принесите его к Вашей базе.
 GUILD_WAR_WIN_WIPE_OUT_GUILD	Устраните всех противников, чтобы победить.
-GUILD_WITHDRAW	Отвод
 GUILD_YOU_DO_NOT_JOIN	Вы не состоите ни в одной гильдии.
 HORSE_HEALTH0	Убит
 HORSE_HEALTH1	Голоден
@@ -241,24 +197,11 @@ HOW_MANY_ITEM_DO_YOU_DROP1	Хотите выбросить %s?
 HOW_MANY_ITEM_DO_YOU_DROP2	Хотите выбросить %s %d ?
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Введите код удаления из управления учётной записью.
 INPUT_PRIVATE_CODE_DIALOG_TITLE	Удалить персонаж
-INVENTORY_DO_NOT_PACK_WARP_SCROLL	Комбинирование свитка Возвращения невозможно.
 INVENTORY_REALLY_USE_ITEM	Применить на этом предмете?
 JOB_ASSASSIN	Ниндзя
-JOB_ASSASSIN0	Ниндзя-новичок
-JOB_ASSASSIN1	Сила Ниндзя
-JOB_ASSASSIN2	Нежить
 JOB_SHAMAN	Шаман
-JOB_SHAMAN0	Шаман-новичок
-JOB_SHAMAN1	Могущество Дракона
-JOB_SHAMAN2	Сила молнии
 JOB_SURA	Сура
-JOB_SURA0	Сура-новичок
-JOB_SURA1	Могущество Фата Моргана
-JOB_SURA2	Могущество Чёрной магии
 JOB_WARRIOR	Воин
-JOB_WARRIOR0	Воин-новичок
-JOB_WARRIOR1	Могущество Арахана
-JOB_WARRIOR2	Могущество Партизанов
 LEFT_TIME	Остав.время
 LOGIN_CONNECT_FAILURE	Ошибка при соединении с сервером.
 LOGIN_CONNECT_SUCCESS	Вы соединены с сервером.
@@ -284,124 +227,38 @@ MALL_CANNOT_INSERT	Вы не можете  внести предмет.
 MALL_PASSWORD_TITLE	Пароль
 MAP_A1	Земля Йонган
 MAP_A2	Долина Сеунгрийонг
-MAP_A2_1	
 MAP_A3	Земля Яянг
 MAP_AG	Юнгранг
 MAP_B1	Земля Йоан
 MAP_B2	Долина Имджи
 MAP_B3	Земля Бокъюнг
 MAP_BAY	Нефритовый залив
-MAP_BAYBLACKSAND	Нефритовый залив
 MAP_BG	Варйонг
 MAP_C1	Земля Пуингмо
 MAP_C2	Долина Бангзан
 MAP_C3	Земля Бакра
 MAP_CAPE	Мыс пламя дракона
-MAP_CAPEDRAGONHEAD	Мыс пламя дракона
 MAP_CG	Имха
 MAP_DAWN	Утес Гаутама
-MAP_DAWNMISTWOOD	Утес Гаутама
 MAP_DESERT	Пустыня Йонгби
-MAP_DEVILCATACOMB	Катакомбы дьявола
-MAP_DEVILTOWER1	Башня демонов
-MAP_DUEL	Арена для учебных боев
-MAP_E	Колония
-MAP_EMPIREWAR01	Битва Замков
-MAP_EMPIREWAR02	Битва Замков
-MAP_EMPIREWAR03	Битва Замков
 MAP_FLAME	Доюмхван
-MAP_GUILD_01	Юнгранг
-MAP_GUILD_02	Варйонг
-MAP_GUILD_03	Имха
-MAP_HOLYPLACE_DESERT	Битва Империй-Пустынные земли
-MAP_HOLYPLACE_FLAME	Битва Империй-Огненные земли
-MAP_HOLYPLACE_ICE	Битва Империй-Ледяные земли
-MAP_MILGYO	Храм Хванг
-MAP_MILGYO_A	
-MAP_MONKEY_DUNGEON	Хасун Донг
-MAP_MONKEY_DUNGEON2	Юнгсун Донг
-MAP_MONKEY_DUNGEON3	Сангсун Донг
-MAP_MONKEY_DUNGEON_11	Хасун Донг
-MAP_MONKEY_DUNGEON_12	Хасун Донг
-MAP_MONKEY_DUNGEON_13	Хасун Донг
-MAP_MT_THUNDER	Горы грома
 MAP_NUSLUCK	Земля Громил
-MAP_NUSLUCK01	Земля Громил
-MAP_N_DESERT_01	Пустыня Йонгби
-MAP_N_DESERT_02	
-MAP_N_FLAME_01	Огненные земли
-MAP_N_FLAME_02	
-MAP_N_FLAME_DUNGEON_01	Крепость красного дракона
-MAP_N_SNOWM_01	Гора Сохан
-MAP_N_SNOWM_02	
-MAP_N_SNOW_DUNGEON_01	Башня Немера
-MAP_N_THREEWAY	Долина Сеунгрийонг
-MAP_OXEVENT	OX-соревнование
-MAP_PATHWAY_DESERT_01	Битва Империй-Пустынные земли
-MAP_PATHWAY_DESERT_02	Битва Империй-Пустынные земли
-MAP_PATHWAY_DESERT_03	Битва Империй-Пустынные земли
-MAP_PATHWAY_FLAME_01	Битва Империй-Огненные земли
-MAP_PATHWAY_FLAME_02	Битва Империй-Огненные земли
-MAP_PATHWAY_FLAME_03	Битва Империй-Огненные земли
-MAP_PATHWAY_ICE_01	Битва Империй-Ледяные земли
-MAP_PATHWAY_ICE_02	Страна Развлечений
-MAP_PATHWAY_ICE_03	Битва Империй-Ледяные земли
 MAP_SKELTOWER	Башня Гумсан
-MAP_SKIPIA_DUNGEON_01	Грот изгнанников
-MAP_SKIPIA_DUNGEON_011	
-MAP_SKIPIA_DUNGEON_012	
-MAP_SKIPIA_DUNGEON_013	
-MAP_SKIPIA_DUNGEON_02	Грот изгнанников 2
-MAP_SKIPIA_DUNGEON_021	
-MAP_SKIPIA_DUNGEON_022	
-MAP_SKIPIA_DUNGEON_023	
-MAP_SKIPIA_DUNGEON_BOSS	Логово дракона
-MAP_SKIPIA_DUNGEON_BOSS_1	Подземелье пауков 1
-MAP_SKIPIA_DUNGEON_BOSS_2	Подземелье пауков 2
-MAP_SKIPIA_DUNGEON_BOSS_3	Подземелье пауков 3
 MAP_SNOW	Гора Сохан
 MAP_SPIDER	Куало Донг
-MAP_SPIDERDUNGEON	Подземелье пауков 1
-MAP_SPIDERDUNGEON_02	Подземелье пауков 2
-MAP_SPIDERDUNGEON_02_1	Подземелье пауков 2
-MAP_SPIDERDUNGEON_03	Подземелье пауков 3
-MAP_SUNGZI	Битва Империй
-MAP_SUNGZI_DESERT_01	Битва Империй-Пустынные земли
-MAP_SUNGZI_DESERT_HILL_01	Битва Империй-Пустынные земли
-MAP_SUNGZI_DESERT_HILL_02	Битва Империй-Пустынные земли
-MAP_SUNGZI_DESERT_HILL_03	Битва Империй-Пустынные земли
-MAP_SUNGZI_FLAME_HILL_01	Битва Империй-Огненные земли
-MAP_SUNGZI_FLAME_HILL_02	Битва Империй-Огненные земли
-MAP_SUNGZI_FLAME_HILL_03	Битва Империй-Огненные земли
-MAP_SUNGZI_SNOW	Битва Империй-Ледяные земли
-MAP_SUNGZI_SNOW_PASS01	Битва Империй-Ледяные земли
-MAP_SUNGZI_SNOW_PASS02	Битва Империй-Ледяные земли
-MAP_SUNGZI_SNOW_PASS03	Битва Империй-Ледяные земли
-MAP_T1	Территория войны гильдий
-MAP_T2	Территория войны гильдий
-MAP_T3	Территория войны гильдий
-MAP_T4	Территория войны гильдий
 MAP_TEMPLE	Храм Хванг
 MAP_THUNDER	Горы грома
 MAP_TREE	Лунгсам
-MAP_TRENT	Призрачный лес
 MAP_TRENT02	Красный лес
-MAP_TRENT02_A	Красный лес
-MAP_TRENT_A	
-MAP_WEDDING_01	Свадебная локация
 MAP_WL	Змеиное поле
-MAP_WL_01	Змеиное Поле
 MESSENGER_ADD_FRIEND	Добавить друга
 MESSENGER_DO_YOU_ACCEPT_ADD_FRIEND_1	%s принял вас в список друзей.
 MESSENGER_DO_YOU_ACCEPT_ADD_FRIEND_2	Принять?
 MESSENGER_DO_YOU_DELETE	Удалить?
-MESSENGER_DO_YOU_DELETE_PHONE_NUMBER	Удалить номер моб.телефона?
-MESSENGER_DO_YOU_MOVE	Дальше?
 MESSENGER_EMPTY_LIST	Пусто
 MESSENGER_FAMILY	Семья
 MESSENGER_FRIEND	Друзья
 MESSENGER_GUILD	Гильдия
-METIN_TEST	
 MINIMAP	Открыть мини-карту
 MINIMAP_CANNOT_SEE	Показ мини-карты невозможен.
 MINIMAP_CAN_NOT_SHOW_AREAMAP	Показ карты невозможен.
@@ -411,8 +268,6 @@ MINIMAP_OBSERVER_COUNT	%d Наблюдатель
 MINIMAP_SHOW_AREAMAP	Открыть большую карту
 MINUTE	Мин.
 MONETARY_UNIT0	янг
-MONETARY_UNIT1	десять тысяч
-MONETARY_UNIT2	сто миллионов
 MONEY_INPUT_DIALOG_SELLPRICE	Продажная цена:
 MOVE_ITEM_FAILURE_PRIVATE_SHOP	Вы не можешь перемещать предмет, когда открыта ваша лавка.
 MUSIC_EMPTY_MUSIC_LIST	Без фоновой музыки.
@@ -423,7 +278,6 @@ NOT_YET_SUPPORT	Не поддерживается.
 OPTION_PVPMODE_CANNOT_SET_GUILD_MODE	Вы не можете активировать режим Гильдии, пока не являетесь её членом.
 OPTION_PVPMODE_NOT_SUPPORT	Вы не можете выбрать режим PvP.
 OPTION_PVPMODE_PROTECT	Чтобы использовать PvP Режим, нужно достигнуть хотя бы уровень %d.
-PARTY_ANSWER_TIMEOVER	Приглашение отклонено.
 PARTY_BONUS_ATTACKER	Атака: +%d	SA
 PARTY_BONUS_BERSERKER	Скорость атаки: +%d	SA
 PARTY_BONUS_BUFFER	Продолжительность действия навыков: +%d	SA
@@ -443,10 +297,8 @@ PARTY_HEAL_ALL_MEMBER	Восстановить всё
 PARTY_INCREASE_AREA_150	Диапазон группы увеличен в 1,5 раза.	SNA
 PARTY_INCREASE_AREA_200	Диапазон группы увеличен в 2 раза.	SNA
 PARTY_LEAVE	Покинуть группу
-PARTY_LONGTIME_BONUS_EXP	Бонус к опыту за долгую групповую игру: +%d%%	SA
 PARTY_MEMBER_OFFLINE	[оффлайн]
 PARTY_RECALL_MEMBER	Позвать участника группы.
-PARTY_REGEN_BONUS	Бонус за ХП- + МП-регенерация: +%d%%	SA
 PARTY_REQUEST_DENIED	Ваше приглашение не принято.
 PARTY_SET_ATTACKER	Определить Бойцом атаки.
 PARTY_SET_BERSERKER	Определить  Берсеркером.
@@ -459,10 +311,7 @@ PARTY_SKILL_ATTACKER	Базовый показатель Боец атаки +%.
 PARTY_SKILL_BERSERKER	Скорость атаки Берсеркер +%.0f
 PARTY_SKILL_BUFFER	Длительность навыка Блокирущий +%.0f
 PARTY_SKILL_DEFENDER	Защита Защитник +%.0f
-PARTY_SKILL_HP_REGEN	ХП-регенерация +%.0f%%
-PARTY_SKILL_PARTY_AREA	Диапазон группы +%d%%
 PARTY_SKILL_SKILL_MASTER	Максим. МП Мастер навыков +%.0f
-PARTY_SKILL_SP_REGEN	МП-регенерация +%.0f%%
 PARTY_SKILL_TANKER	Максим. ХП Боец ближнего боя +%.0f
 PARTY_SKILL_WARP	Вправе вызвать участника группы.
 PASSWORD_TITLE	Пароль для склада
@@ -495,7 +344,6 @@ QUEST_MIN	Мин.
 QUEST_SEC	Сек.
 QUEST_TIMEOVER	Время исстекло.
 QUEST_UNLIMITED_TIME	Без ограничения времени
-QUEST_ZEROSEC	0 сек.
 QUICKSLOT_REGISTER_DISABLE_ITEM	Этот предмет не может быть добавлен в поле быстрого доступа.
 RECEIVE_MESSAGE	%s отправил вам сообщение.
 REFINE_COST	Затраты на улучшение: %s
@@ -534,11 +382,9 @@ SELECT_DELEING	Персонаж будет удалён
 SELECT_DELETED	Удаление прошло успешно.
 SELECT_DO_YOU_DELETE_REALLY	Продолжить?
 SELECT_EMPTY_SLOT	Это пустое поле.
-SELECT_GM_NAME	ГМ
 SELECT_INPUT_CHANGING_NAME	Введите новое имя персонажа.
 SELECT_NOT_JOIN_GUILD	Гильдия отсутсвует
 SHOP_BUY_INFO	Выберите в окне магазина, предмет который хотите купить.
-SHOP_CANNOT_SELL_EQUIPMENT	Вы не можете продать снаряженный предмет.
 SHOP_CANNOT_SELL_ITEM	Этот предмет не продаётся.
 SHOP_ERROR_UNKNOWN	Неизвестная ошибка магазина: %s
 SHOP_INVALID_POS	Применить этот предмет невозможно.
@@ -548,24 +394,13 @@ SHOP_NOT_ENOUGH_MONEY_EX	У вас недостаточно янг.
 SHOP_SELL_INFO	Выберите в окне инвентаря предмет, который хотите продать.
 SHOP_SOLDOUT	Продано
 SHOT_ERROR_UNKNOWN	Неизвестная ошибка дальней атаки: %s
-SKILL_BLEEDING	Кровотечение
 SKILL_BOHO	Отражать
-SKILL_BUDONG	Больше не используется
-SKILL_CANNOT_LEVEL_UP_ANYMORE_BY_BOOK	Вам необходим опыт, чтобы обучиться этому навыку.
-SKILL_CANNOT_LEVEL_UP_ANYMORE_BY_STAT	Вам необходима книга, обучающая этому навыку.
 SKILL_CHEONGEUN	Сильное тело.
-SKILL_CRITICAL	Критический удар
-SKILL_ENCHANT_POISON	Использовать яд
 SKILL_EUNHYEONG	Невидимый
-SKILL_FAINT	Головокружение
-SKILL_FIND_TRAP	Искать западню
 SKILL_FIRE	Сжечь
 SKILL_FISHMIND	Рыба-шар активен
-SKILL_GAMJI	взять
 SKILL_GEOMGYEONG	Аура меча
-SKILL_GEONGON	SKILL_GEONGON больше не применяется
 SKILL_GICHEON	Помощь Дракона
-SKILL_GIGONG	Циркуляция Ши
 SKILL_GONGPO	Страх
 SKILL_GRADE_NAME_GRAND_MASTER	%s Большой мастер
 SKILL_GRADE_NAME_MASTER	%s Мастер
@@ -583,48 +418,24 @@ SKILL_GWIGEOM	Заколдованный клинок
 SKILL_GYEONGGONG	Легкая походка
 SKILL_HEUKSIN	Защита тёмных сил
 SKILL_HOSIN	Благословение
-SKILL_HWAYEOM	SKILL_HWAYEOM больше не применятся
-SKILL_HYEOLMA	SKILL_HYEOLMA больше не применяется
 SKILL_INC_ATKSPD	Скорость атаки повышена
 SKILL_INC_MOVSPD	Скорость движения повышена
-SKILL_INMA	SKILL_INMA больше не применяется
-SKILL_JEOJU	Заклинание
-SKILL_JEONGEOP	Лечение
 SKILL_JEONGWI	Берсерк
-SKILL_JEONSINBANGEO	Полная защита
-SKILL_JEONSINGONGGYEOK	Полная атака	
-SKILL_JEUNGCHE	SKILL_JEUNGCHE больше не применяется
-SKILL_JEUNGHON	SKILL_JEUNGHON больше не применяется
 SKILL_JEUNGRYEOK	Атака+
-SKILL_JEUNGSOK	Скорость+
-SKILL_JIGAM	SKILL_JIGAM больше не применяется
-SKILL_JIPJUNG	SKILL_JIPJUNG больше не применяется
 SKILL_JUMAGAP	Заколдованная броня
-SKILL_JUMAGEOM	SKILL_JUMAGEOM больше не применяется
-SKILL_KWAEGEOM	SKILL_KWAEGEOM больше не применяется
 SKILL_KWAESOK	Быстрота
-SKILL_LEGBOUND	SKILL_LEGBOUND больше не применяется
-SKILL_MUSA	SKILL_MUSA больше не применяется
 SKILL_MUYEONG	Дух Огня
 SKILL_NEED_EMPTY_BOTTLE	У меня нет пустого кувшина.
 SKILL_NEED_POISON_BOTTLE	У меня нет бутылки с ядом.
 SKILL_ONLY_FOR_GUILD_WAR	Вы  можете пользоваться этим навыком только в Войне Гильдий.
 SKILL_PABEOP	Отменить волшебство.
 SKILL_POWERFUL_STRIKE	Парализирующая атака
-SKILL_SEOMGWANG	Бомба-молния
-SKILL_SINCHAK	SKILL_SINCHAK больше не применяется
-SKILL_SLEEP	Сон
 SKILL_SLOW	Медленно
 SKILL_STUN	Парализовать
-SKILL_SUHO	Стражник
 SKILL_SUMMON_DESCRIPTION	Шанс на вызов: %d%%
 SKILL_TOOLTIP_INT	Интеллект
 SKILL_TOOLTIP_LEVEL	Уровень
 SKILL_TOXICDIE	Отравление
-SKILL_TOXICPOWER	Показатель атаки ядом улучшен
-SKILL_TUSOK	Удар Духа
-SKILL_WONSIN	SKILL_WONSIN больше не применяется
-SKILL_YONGSIN	SKILL_YONGSIN больше не применяется
 STAT_MINUS_CON	Регулировка здоровья (Остающ. шанс: %d)
 STAT_MINUS_DEX	Регулировка подвижности ( Оставш. шанс: %d)
 STAT_MINUS_INT	Регулировка интеллекта (Оставш. шанс:%d)
@@ -672,11 +483,9 @@ TASKBAR_MOVE	Двигать
 TASKBAR_SKILL	Навык
 TASKBAR_SP	МП
 TASKBAR_ST	СП
-THING_COUNT	все
 TOOLTIP_ANTI_CRITICAL_PCT	Сопротивление критическим ударам +%d%%	SA
 TOOLTIP_ANTI_PENETRATE_PCT	Сопротивление пронзающим ударам +%d%%	SA
 TOOLTIP_ANTI_SELL	В магазине не продаётся.
-TOOLTIP_APPLY_ACCEDRAIN_RATE	Количество поглощения: %d%%	SA
 TOOLTIP_APPLY_ATTBONUS_ANIMAL	Сила против зверей +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_ASSASSIN	Сила против Ниндзя +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_DEVIL	Сила против Дьявола +%d%%	SA
@@ -688,10 +497,7 @@ TOOLTIP_APPLY_ATTBONUS_SHAMAN	Сила против Шаманов +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_SURA	Сила против Сура +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_UNDEAD	Сила против Нежити +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_WARRIOR	Сила против Воинов +%d%%	SA
-TOOLTIP_APPLY_BLEEDING_PCT	Вызвать кровотечение + %d%%	SA
-TOOLTIP_APPLY_BLEEDING_REDUCE	Сопротивление кровотечению + %d%%	SA
 TOOLTIP_APPLY_BLOCK	Шанс на блокацию физической атаки %d%%	SA
-TOOLTIP_APPLY_COMBAT_SP_RECOVER	Восстановление МП в бою каждые 5 Сек. %d	SA
 TOOLTIP_APPLY_CRITICAL_PCT	%d%% шансов на Критический удар	SA
 TOOLTIP_APPLY_DAMAGE_SP_RECOVER	%d%% шансов восстановить МП при попадании	SA
 TOOLTIP_APPLY_DODGE	Шанс на увернуться от стрелы %d%%	SA
@@ -750,7 +556,6 @@ TOOLTIP_DRAGON_SOUL_DECK1	Земля	SNA
 TOOLTIP_DRAGON_SOUL_DECK2	Небеса	SNA
 TOOLTIP_EAR	Серьги
 TOOLTIP_ENERGY	Энергия %d	SA
-TOOLTIP_ETC	и т.д.
 TOOLTIP_FISHINGROD_EXP	Очки: %d / %d
 TOOLTIP_FISHINGROD_LEVEL	Уровень:  %d
 TOOLTIP_FISHINGROD_UPGRADE1	Отдать рыбаку,
@@ -763,7 +568,6 @@ TOOLTIP_INT	Интеллект +%d	SA
 TOOLTIP_ITEM_ATT_GRADE	Показатель атаки %d
 TOOLTIP_ITEM_ATT_POWER	Показатель атаки %d - %d
 TOOLTIP_ITEM_ATT_POWER_ONE_ARG	Показатель атаки  %d
-TOOLTIP_ITEM_ATT_POWER_REFINE	Показатель атаки %d - %d (+%d)
 TOOLTIP_ITEM_ATT_SPEED	Скорость атаки %s
 TOOLTIP_ITEM_DEF_GRADE	Защита %d
 TOOLTIP_ITEM_FAST	Быстро
@@ -780,8 +584,6 @@ TOOLTIP_ITEM_SLOW	медленно
 TOOLTIP_ITEM_VERY_FAST	очень быстро
 TOOLTIP_ITEM_VERY_SLOW	очень медленно
 TOOLTIP_ITEM_WEARABLE_JOB	[можно снаряжать]
-TOOLTIP_LOTTERY_STEP_NUMBER	%d
-TOOLTIP_LOTTO_NUMBER	Счастливое число: %d
 TOOLTIP_MAGIC_ATTBONUS_PER	Магическая атака +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	Показатель магической атаки +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Магическая защита +%d	SA
@@ -813,30 +615,12 @@ TOOLTIP_NEED_ALL_SP	Необходимые МП: Максим.
 TOOLTIP_NEED_GSP	Необходимо Дух Дракона: %d
 TOOLTIP_NEED_HP	Необходимые ХП: %d
 TOOLTIP_NEED_HP_PER_SEC	ХП: %d / Сек.
-TOOLTIP_NEED_SKILL_POINT	Необходимые очки навыков:
 TOOLTIP_NEED_SP	Необходимые МП: %d
 TOOLTIP_NEED_SP_PER_SEC	МП / Сек.: %d
 TOOLTIP_NEXT_SKILL_LEVEL_1	Следующий уровень:%d (Максим. %d)
-TOOLTIP_NEXT_SKILL_LEVEL_2	Следующий уровень: %d (Максим. %d-%d)
 TOOLTIP_NORMAL_HIT_DAMAGE_BONUS	Средний урон %d%%	SA
 TOOLTIP_NORMAL_HIT_DEFEND_BONUS	Средн.устойчивость урону %d%%	SA
-TOOLTIP_PARTY_INFO_GRADE_UP1	Больше чем %d участников группы
-TOOLTIP_PARTY_INFO_GRADE_UP2	Ступень атаки +%d
-TOOLTIP_PARTY_INFO_GRADE_UP3	Ступень защиты +%d
-TOOLTIP_PARTY_INFO_HEAL_18_LEVEL	Восстановить ХП/МП всех участников группы через 60 Минут.
-TOOLTIP_PARTY_INFO_HEAL_40_LEVEL	Восстановить ХП/МП всех участников группы через 30 Минут.
-TOOLTIP_PARTY_INFO_RECALL_12_LEVEL	Время ожидания после смерти участника группы составляет 3 минуты.
-TOOLTIP_PARTY_INFO_RECALL_20_LEVEL	Созвать участников группы на одном и том же сервере можно в любое время.
-TOOLTIP_PARTY_INFO_SET_ATTACKER	Ступень атаки +(кол.участников группы/ 2) Бойцы атаки %d могут быть выбранны.
-TOOLTIP_PARTY_INFO_SET_TANKER	Ступень защиты+(кол.участников группы). Бойцы ближнего боя 1 могут быть выбраны.
 TOOLTIP_PARTY_SKILL_LEVEL	Актуальный уровень: %d
-TOOLTIP_PARTY_TITLE_GRADE_UP	[Атака/Защита улучшены]
-TOOLTIP_PARTY_TITLE_HEAL	[Восстановить]
-TOOLTIP_PARTY_TITLE_INFO_BONUS_EXP	Больше %d  участников группы дают бонус к опыту %d%%.
-TOOLTIP_PARTY_TITLE_MEMBER_BONUS_EXP	[Бонус к опыту]
-TOOLTIP_PARTY_TITLE_RECALL	[Созвать]
-TOOLTIP_PARTY_TITLE_SET_ATTACKER	[Определить бойцов атаки]
-TOOLTIP_PARTY_TITLE_SET_TANKER	[Определить Бойцом ближнего боя]
 TOOLTIP_PICK_EXP	Очки:  %d / %d
 TOOLTIP_PICK_LEVEL	Уровень: %d
 TOOLTIP_PICK_UPGRADE1	Отдать лесорубу
@@ -852,9 +636,6 @@ TOOLTIP_POTION_PLUS_SP_PERCENT	МП +%d%%
 TOOLTIP_POTION_PLUS_SP_POINT	МП +%d
 TOOLTIP_POTION_SEC	Сек.
 TOOLTIP_POTION_TIME	Длительность:
-TOOLTIP_REQUIREMENT_21_LEVEL	Необходимо достигнуть хотя бы 21 уровень.
-TOOLTIP_REQUIREMENT_41_LEVEL	Необходимо достигнуть хотя бы 41 уровень.
-TOOLTIP_REQUIREMENT_LEVEL	Необходимо достигнуть хотя бы уровень %d
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	%s уровень %d обязателен.
 TOOLTIP_REQUIREMENT_STAT_LEVEL	%s %d обязателен
 TOOLTIP_RESIST_BOW	Сопротивляемость стрелам %d%%	SA
@@ -865,12 +646,10 @@ TOOLTIP_RESIST_FIRE	Сопротивляемость огню %d%%	SA
 TOOLTIP_RESIST_ICE	Сопротивление льду +%d%%	SA
 TOOLTIP_RESIST_MAGIC	Сопротивляемость Магии %d%%	SA
 TOOLTIP_REST_USABLE_COUNT	Осталось: %d
-TOOLTIP_SEALED	Предмет зачарован оковами души
 TOOLTIP_SELLPRICE	Цена: %s
 TOOLTIP_SHAMAN	Шаман
 TOOLTIP_SHIELD	Щит
 TOOLTIP_SHOES	Туфли
-TOOLTIP_SKILL	Навык	SNA
 TOOLTIP_SKILLBOOK_NAME	Книга навыков
 TOOLTIP_SKILL_AFFECT_ATT_GRADE	Показатель атаки: +
 TOOLTIP_SKILL_AFFECT_ATT_POWER	Показатель атаки:
@@ -897,7 +676,6 @@ TOOLTIP_SURA	Сура
 TOOLTIP_TIME_CHARGER_FIX	Время восстановления %d сек.	SA
 TOOLTIP_TIME_CHARGER_PER	Время восстановления %d%%	SA
 TOOLTIP_UNIQUE	Уникальный
-TOOLTIP_UNSEAL_LEFT_TIME	Разрушение оков души через: %dH %dM
 TOOLTIP_WARRIOR	Воин
 TOOLTIP_WEAPON	Оружие
 TOOLTIP_WRISTLET	Браслет
@@ -917,18 +695,14 @@ UI_NONAME	Имя отсутсвует
 UI_OK	ОК
 UI_POS_UNKNOWN	Неизвестное место
 UI_PREVPAGE	Назад
-UI_UNKNOWN	Неизвестно
-UPLOAD_MARK_CHECK_NEED_RECONNECT	Необходимо запустить аплоад повторно.
 UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Необходимо запустить аплоад повторно.
 USE_ITEM_FAILURE_PRIVATE_SHOP	Вы не можете пользоваться предметом, когда ваша лавка открыта.
-USE_SKILL_ERROR_UNKNOWN	Неизвестная ошибка навыков: %s
 TARGET_INFO_RESISTS	Сопротивляемость:
 TARGET_INFO_RESISTS_LINE0	Меч: %d%% Двуручное оружие: %d%% Колокольчик: %d%%
 TARGET_INFO_RESISTS_LINE1	Кинжал: %d%% Веер: %d%% Лук: %d%%
 TARGET_INFO_REGEN_INFO	ХП-регенерация: %d%% каждые %d сек.
 TARGET_INFO_GOLD_MIN_MAX	Янг: %s ~ %s
 TARGET_INFO_DAMAGE	Урон: %s - %s
-TARGET_INFO_DEFENSE	Защита: %s
 TARGET_INFO_EXP	Опыт: %s
 TARGET_INFO_MAINRACE	Раса: %s
 TARGET_INFO_MAX_HP	Макс. ХП: %s
@@ -954,3 +728,14 @@ TARGET_INFO_RACE_UNDEAD	Нежить
 TARGET_INFO_RACE_WIND	Ветер
 TARGET_INFO_STONE_NAME	Камень духа
 TARGET_INFO_SUBRACE	Стихия: %s
+SWITCHBOT_TITLE	Свитчбот
+SWITCHBOT_START	Старт
+SWITCHBOT_STOP	Стоп
+SWITCHBOT_EMPTY_ATTR	- Пусто -
+SWITCHBOT_SELECT_ATTR	Выбрать бонус
+SWITCHBOT_CLEAR_ATTR	Убрать
+SWITCHBOT_CONFIGURATION_TITLE	Сохранённые настройки
+SWITCHBOT_SAVE_BUTTON	Открыть сохранённые настройки
+SWITCHBOT_SAVE	Сохранить
+SWITCHBOT_LOAD_CONFIGURATION	Применить
+SWITCHBOT_CLEAR_CONFIGURATION	Удалить

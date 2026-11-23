@@ -7,7 +7,6 @@ CHANGE_PASSWORD_NEW	Neues Passwort
 CHANGE_PASSWORD_OLD	Altes Passwort
 CHANGE_PASSWORD_TITLE	Passwortänderung
 CHARACTER_ACTION	Aktionen
-CHARACTER_EMOTICON	Emotion
 CHARACTER_MAIN	Charakter
 CHARACTER_MUTUAL_ACTION	Interaktive Aktionen
 CHARACTER_NORMAL_ACTION	Normale Aktionen
@@ -20,7 +19,6 @@ CREATE_ATT_GRADE	STR
 CREATE_CREATE	Erstellen
 CREATE_DEX_GRADE	DEX
 CREATE_HP	VIT
-CREATE_LAST_POINT	Punkte
 CREATE_MAN	Mann
 CREATE_NAME	Name
 CREATE_NEXT	Weiter
@@ -28,7 +26,6 @@ CREATE_PREV	Zurück
 CREATE_SEX	Geschlecht
 CREATE_SHAPE	Aussehen
 CREATE_SP	INT
-CREATE_STAT_RESET	Zurück
 CREATE_WOMAN	Frau
 CUBE_INFO_TITLE	Veredelungshandbuch
 CUBE_REQUIRE_MATERIAL	Erforderliche Materialien
@@ -85,7 +82,6 @@ GUILD_BUILDING_REFRESH	Aktualisieren (F5)
 GUILD_BUILDING_STONE	Fu.stein
 GUILD_BUILDING_TITLE	Gildenhausbau
 GUILD_CRYSTAL	Kristall
-GUILD_DEPOSIT	Zahlen
 GUILD_DROP_RESOURCE1	hier
 GUILD_DROP_RESOURCE2	Ressource fallen lassen
 GUILD_GEM	Edelstein
@@ -103,7 +99,6 @@ GUILD_INFO_DECALRE_WAR	Krieg erklären
 GUILD_INFO_ENEMY_GUILD	Feindliche Gilde
 GUILD_INFO_ENEMY_GUILD_EMPTY	Keine
 GUILD_INFO_LEVEL	Gilden-Level
-GUILD_INFO_MARK	Gildenzeichen
 GUILD_INFO_MASTER	Leader
 GUILD_INFO_MASTER_VALUE	Leader
 GUILD_INFO_MEMBER_AVG_LEVEL	Durchschnittliches Level
@@ -141,7 +136,6 @@ GUILD_WAR_NORMAL	Feld
 GUILD_WAR_WARP	Arena
 GUILD_WATER	Wasser
 GUILD_WATER_STONE	Wasserstein
-GUILD_WITHDRAW	Nehmen
 HELP_ATTACK_KEY	Angreifen: linke Maustaste oder Leertaste
 HELP_CHANGE_PK_MODE	Angriffsmodus wechseln: Belegung der linken Maustaste ändern
 HELP_CHARACTER_BUTTON1	(Charakterfenster, Inventarfenster,
@@ -180,14 +174,11 @@ LOGIN_CONNECT	Verbinden
 LOGIN_CONNECTING	Du wirst mit dem Server verbunden.
 LOGIN_DEFAULT_SERVERADDR	Servername, Channel 1
 LOGIN_EXIT	Beenden
-LOGIN_REGION_TITLE	Ort für die Rechnungsstellung wählen
 LOGIN_SELECT_BUTTON	Wählen
 LOGIN_SELECT_EXIT	Beenden
-LOGIN_SELECT_OK	OK
 LOGIN_SELECT_TITLE	Server wählen
 MALL_PASSWORD_TITLE	Passwort
 MALL_TITLE	Itemshop-Lager
-MARKET_TITLE	Laden
 MARKLIST_REFRESH	Aktualisieren
 MARKLIST_TITLE	Gildenzeichen registrieren
 MESSAGE	Dies ist eine Nachricht
@@ -195,7 +186,6 @@ MESSENGER_ADD_FRIEND	Freund hinzufügen
 MESSENGER_DELETE_FRIEND	Freund löschen
 MESSENGER_OPEN_GUILD	Gildenfenster öffnen
 MESSENGER_TITLE	Freunde
-MESSENGER_USE_GUILD_MOVE_SKILL	Verwende die Gildenbewegungsfertigkeit
 MESSENGER_WHISPER	Flüstern
 MINIMIZE	Minimieren
 MOUSEBUTTON_ATTACK	Angreifen
@@ -203,8 +193,6 @@ MOUSEBUTTON_AUTO_ATTACK	Automatisch angreifen
 MOUSEBUTTON_CAMERA	Kamera
 MOUSEBUTTON_SKILL	Fertigkeiten
 MUSICLIST_TITLE	Musikauswahl
-NO	Nein
-OK	OK
 OPTION_ALWAYS_SHOW_NAME	Name
 OPTION_ALWAYS_SHOW_NAME_OFF	begrenzt
 OPTION_ALWAYS_SHOW_NAME_ON	immer
@@ -253,7 +241,6 @@ OPTION_TILING	Grafikspeicher
 OPTION_TILING_APPLY	Anwenden
 OPTION_TILING_CPU	CPU
 OPTION_TILING_GPU	GPU
-OPTION_TITLE	Optionen
 OPTION_VIEW_CHAT	Chatzeile
 OPTION_VIEW_CHAT_OFF	ausblenden
 OPTION_VIEW_CHAT_ON	einblenden
@@ -270,10 +257,7 @@ PRIVATE_SHOP_NAME	Name des Ladens
 PRIVATE_SHOP_TITLE	Privaten Laden einrichten
 REFINE_COST	Verbesserungskosten: 0 Yang
 REFINE_INFO	Wahrscheinlichkeit auf erfolgreiche Verbesserung: 100%
-REFINE_MONEY	Veredelungsgebühr
-REFINE_SELECT	Veredelung
 REFINE_TTILE	Verbesserungen
-REPORT_VIOLENT_WHISPER	Petzen
 RESTART_HERE	Hier neu starten
 RESTART_TOWN	In der Stadt neu starten
 SAFE_CHANGE_PASSWORD	Passwort ändern
@@ -292,7 +276,6 @@ SELECT_NO_GUILD	Keine Gilde
 SELECT_PLAYTIME	Spielzeit (Min.)
 SELECT_SELECT	Start
 SELECT_SP	INT
-SELECT_TITLE	Titel auswählen
 SHOP_BUY	Kaufen
 SHOP_SELL	Verkaufen
 SHOP_TITLE	Laden
@@ -307,7 +290,6 @@ SYSTEM_EXIT	Spiel beenden
 SYSTEM_HELP	Hilfe
 SYSTEM_LOGOUT	Ausloggen
 SYSTEM_MALL	Item-Shop
-SYSTEM_OPTION	Systemoptionen
 TASKBAR_CHARACTER	Charakter [C/V/B/N]
 TASKBAR_CHAT	Chat-Fenster [Enter]
 TASKBAR_DISABLE	Deaktiviert
@@ -324,3 +306,5 @@ WHISPER_REPORT	report
 WHISPER_SEND	Senden
 YES	Ja
 ZONE_MAP	Übersichtskarte
+NO	Nein
+OK	OK

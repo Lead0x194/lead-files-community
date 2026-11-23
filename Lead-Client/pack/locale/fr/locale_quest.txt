@@ -403,7 +403,6 @@
 403	Vous ne pouvez pas encore utiliser l'élixir du[ENTER]Chercheur.
 404	Vous avez déjà utilisé un élixir !
 405	Vous pouvez utiliser l'élixir dès que vous avez[ENTER]trouvé un Certificat de Tugyis.
-406	Vous avez trouvé un Certificat de Tugyis.
 407	Certificat de Tugyis
 408	Oh, vous avez trouvé un certificat ![ENTER]Laissez moi y jeter un œil ...
 409	Oh, ce certificat est d'excellente qualité ! Je[ENTER]vais commencer à l'étudier dès maintenant.[ENTER]Cependant, il m'en fait encore %s . Allez les[ENTER]chercher s'il vous plait ![ENTER][ENTER]Et n'oubliez pas : j'ai besoin de temps pour[ENTER]étudier celui que vous m'avez apporté, je ne[ENTER]pourrai prendre le prochain que demain.
@@ -437,7 +436,6 @@
 437	La recherche du biologiste
 438	Le biologiste Chaegirab, l'apprenti d'Uriel, a[ENTER]désespérément besoin de vous. Allez vite voir ce[ENTER]qu'il veut.
 439	Ecoutez moi.
-440	Le biologiste Chaegirab :
 441	Oh, vous revoilà ! Je ne vous remercierais jamais[ENTER]assez de bien vouloir m'aider à nouveau. Je[ENTER]travaille sur un livre à propos du Bois Rouge à[ENTER]l'heure actuelle. Bien sûr je devrais y aller[ENTER]moi-même, mais comme vous le savez, je ne suis[ENTER]pas assez fort. J'ai aussi besoin du temps pour[ENTER]lire et étudier. Aidez-moi s'il vous plaît. Je[ENTER]vous donnerai une grosse récompense !
 442	Le biologiste Chaegirab :
 443	Je veux en apprendre plus à propos du Bois Rouge.[ENTER]C'était habituellement une paisible forêt emplie[ENTER]d'immenses arbres. Mais l'influence des Metins a[ENTER]contaminé les lieux et l'a envahi d'énergies[ENTER]négatives et de mauvais esprits. Pour étudier cet[ENTER]endroit, j'ai besoin de rameaux d'arbres fantômes[ENTER]rouges.
@@ -499,19 +497,14 @@
 499	La recherche du biologiste
 500	Certificat du Chef
 501	Le biologiste Chaegirab, l'apprenti d'Uriel,[ENTER]regroupe les informations concernant les Boss. Il[ENTER]a besoin de 50 certificats du Chef pour ses[ENTER]recherches. Apportez lui un certificat par jour[ENTER]afin qu'il puisse prendre le temps de les[ENTER]examiner individuellement. Vous pourrez en[ENTER]trouver sur les Boss.
-502	Vous en avez déjà apporté
-503	certificat(s).
 504	Vous avez déjà apporté %s certificat(s) .
 505	Vous ne pouvez pas encore utiliser l'élixir du[ENTER]Chercheur.
 506	Vous avez déjà utilisé un élixir !
-507	Le biologiste Chaegirab :
 508	Vous pouvez utiliser l'élixir dès que vous avez[ENTER]trouvé un Certificat du Chef.
 509	Vous avez trouvé un Certificat du Chef
 510	Certificat du Chef
 511	Oh, vous avez trouvé un certificat ![ENTER]Laissez moi y jeter un œil ...
 512	Oh magnifique ! Bon travail !
-513	Cependant, il me faut encore
-514	Certificat(s) du Chef.
 515	Cependant, il m'en faut encore %s.
 516	S'il vous plait, allez essayer d'en trouver ![ENTER][ENTER]Et n'oubliez pas, cela me prend du temps de les[ENTER]examiner. Je ne pourrai donc pas en étudier un[ENTER]nouveau avant demain.
 517	Vous avez apporté les 50 certificats, c'est[ENTER]fantastique ! Vous devez vous douter de ce dont[ENTER]j'ai besoin à présent. Il me manque toujours la[ENTER]Pierre d'âme du Chef. Alors j'aurai tout ce qu'il[ENTER]me faut. Vous pouvez aller la chercher, n'est ce[ENTER]pas ? Allez-y et apportez la moi. Vous pourrez la[ENTER]trouver sur les Boss.
@@ -523,8 +516,6 @@
 523	Vous avez enfin trouvé la Pierre d'âme du Chef ![ENTER]Apportez la au biologiste Chaegirab. Il vous[ENTER]attend déjà avec impatience.
 524	La Pierre d'âme du Chef
 525	Vous avez apporté les 50 Certificats du Chef pour[ENTER]la recherche du biologiste. À présent il a juste[ENTER]besoin de la Pierre d'âme du Chef pour[ENTER]interpréter ses recherches.
-526	Vous la trouverez sur :
-527	.
 528	Vous la trouverez sur :
 529	Pierre d'âme du Chef trouvée.
 530	J'ai trouvé la Pierre d'âme.
@@ -750,15 +741,6 @@
 750	Je vous remercie pour vos efforts.[ENTER]Tout s'est bien passé, je n'ai pas encore perdu[ENTER]mon savoir-faire. Voici :
 751	Oh non, mes mains usées m'ont encore joué un[ENTER]tour : je n'ai pas réussi à fabriquer les orbes[ENTER]de polymorphie. Je t'offre l'objet suivant en[ENTER]tant que dédommagement :
 752	Comme vous voulez.
-753	Fragment de pierre-dragon+ ?!
-754	Vous tenez en main un fragment de pierre[ENTER]précieuse. Il brille d'une lueur énigmatique, et[ENTER]vous sentez sa force vous gagner.[ENTER]Quelle est cette pierre ? Apportez ce fragment à[ENTER]l'alchimiste, il devrait pouvoir vous le dire.
-755	Fragment de pierre-dragon+ ?!
-756	C'est un fragment de pierre-dragon, un cristal[ENTER]rarissime de grande valeur au pouvoir immense. On[ENTER]raconte que ces pierres sont les âmes de dragons.[ENTER]Comme ce fragment est beau ![ENTER]Percevez-vous sa force vous parcourir quand vous[ENTER]le prenez ?[ENTER]Apportez-m'en 10 en tout et je pourrai les[ENTER]transmuer en une pierre-dragon entière.
-757	Transmutation en pierre-dragon
-758	Pas si vite, l'ami ! Il me faut 10 fragments pour[ENTER]pouvoir les transmuter en une pierre-dragon.[ENTER]Continuez à chercher !
-759	Ah, vous avez trouvé dix fragments de[ENTER]pierre-dragon, très bien ! Attendez un instant.[ENTER]...[ENTER]Ça y est ! Comme c'est étrange... la[ENTER]transmutation a donné ce qu'on appelle un « Cor[ENTER]Draconis », un cœur de dragon cristallin qui[ENTER]enveloppe et protège une pierre-dragon.[ENTER]Brisez-le pour découvrir laquelle. Elle sera[ENTER]alors placée directement dans votre inventaire[ENTER]d'alchimie des pierres-dragons. Saviez-vous que[ENTER]vous pouvez raffiner davantage encore les[ENTER]pierres-dragons ?
-760	Vous voulez un autre Cor Draconis ? Ouh, mais[ENTER]c'est que je ne suis plus tout jeune. Et puis la[ENTER]fabrication d'un objet aussi complexe demande[ENTER]beaucoup de forces.[ENTER]Pour vous, je veux bien essayer. Mais je[ENTER]n'arriverai pas à en transmuter plus de dix par[ENTER]jour, même avec la meilleure volonté du monde !
-761	Ça suffit pour aujourd'hui, je ne peux tout[ENTER]simplement pas transmuter plus de dix Cor[ENTER]Draconis par jour. Je suis épuisé, je dois me[ENTER]reposer.[ENTER]Revenez demain.
 762	Voir le magasin
 763	Arrivée du fragment de pierre-dragon
 764	Le plus grand alchimiste du royaume en matière de[ENTER]minerais vous cherche. Allez vite le voir !
@@ -1057,7 +1039,6 @@
 1057	Le délai est écoulé. Vous serez téléportés devant[ENTER]la porte de la forteresse dans dix secondes
 1058	Dans dix secondes, le groupe sera téléporté hors[ENTER]de la forteresse du dragon rouge.
 1059	Réveiller les gorges d'Am-Heh
-1060	Seul le chef du groupe est habilité à réveiller[ENTER]les gorges d'Am-Heh !
 1061	Les gorges d'Am-Heh sont réveillées. Plus[ENTER]personne ne peut y entrer – ou en sortir.
 1062	Les portes de la forteresse du dragon rouge se[ENTER]ferment durant une heure.
 1063	Temps restant : 60 minute(s)
@@ -1088,33 +1069,11 @@
 1088	Vous avez détruit la Metin du Purgatoire.
 1089	Vous avez vaincu Razador.
 1090	Dans une minute, tous les combattants seront[ENTER]téléportés hors du temple du dragon.
-1091	Afin de pouvoir traverser les gorges d'Am-Heh, le[ENTER]chef de groupe doit être de niveau 104 minimum.
 1092	Vous n'êtes pas suffisamment fort pour traverser[ENTER]les gorges d'Am-Heh. Veuillez revenir lorsque[ENTER]vous aurez atteint le niveau 104.
 1093	Vous vous êtes attardé pendant plus de 5 minutes[ENTER]devant les portes de la forteresse du dragon[ENTER]rouge et ne pouvez maintenant plus y pénétrer.
 1094	Le délai avant que vous puissiez à nouveau[ENTER]pénétrer dans la forteresse du dragon rouge n'est[ENTER]pas encore écoulé.
 1095	ATTENTION ! Afin de pouvoir pénétrer dans la[ENTER]forteresse du dragon rouge, chaque membre du[ENTER]groupe doit posséder un ticket. Les joueurs[ENTER]suivants ne sont PAS munis d'un ticket :
 1096	ATTENTION ! Afin de pénétrer dans la forteresse[ENTER]du dragon rouge, chaque membre du groupe doit[ENTER]avoir atteint le niveau 100. Les joueurs suivants[ENTER]n'ont PAS encore atteint ce niveau :
-1097	The group from %s has killed the Razador!
-1098	L'Empire Jinno pénètre dans le territoire sacré.
-1099	Vous ne pouvez pas participer!
-1100	GM : engager une bataille des empires
-1101	Commencer la bataille des Empires
-1102	Terminer bataille des empires
-1103	Engager une bataille des empires
-1104	Entrer le niveau minimum requis pour qu'un joueur[ENTER]puisse participer à la bataille des empires.
-1105	Saisissez le niveau maximum à partir duquel un[ENTER]joueur n'est plus autorisé à participer à une[ENTER]bataille des empires.
-1106	Niveau minimum : %s[ENTER]Cette configuration est-elle correcte ?
-1107	La bataille des trois empires commence dès à[ENTER]présent. SI vous voulez y participer, parlez-en[ENTER]au Maître d'Armes .
-1108	La bataille des empires a pris fin.
-1109	Pour participer à la bataille des empires votre[ENTER]niveau doit être compris entre %s et %s.
-1110	Une fois la porte qui mène au territoire sacré[ENTER]ouverte, vous n'êtes plus autorisé à venir[ENTER]prendre part à la bataille. Priez pour la[ENTER]victoire de notre empire sur le sol sacré!![ENTER]Longue vie à Shinsoo!
-1111	Une fois la porte qui mène au territoire sacré[ENTER]ouverte, vous n'êtes plus autorisé à venir[ENTER]prendre part à la bataille. Priez pour la[ENTER]victoire de notre empire sur le sol sacré!![ENTER]Longue vie à Chunjo!
-1112	Une fois la porte qui mène au territoire sacré[ENTER]ouverte, vous n'êtes plus autorisé à venir[ENTER]prendre part à la bataille. Priez pour la[ENTER]victoire de notre empire sur le sol sacré!![ENTER]Longue vie à Jinno!
-1113	Une fois la porte qui mène au territoire sacré[ENTER]ouverte, vous n'êtes plus autorisé à venir[ENTER]prendre part à la bataille. Priez pour la[ENTER]victoire de notre empire sur le sol sacré!![ENTER]Longue vie à Jinno!
-1114	L'Empire %s a gagné la guerre !
-1115	Tuer
-1116	L'empire Shinsoo entre sur le territoire sacré.
-1117	L'empire Chunjo entre sur le territoire sacré.
 1118	Vieille Dame
 1119	On m'a dit que vous étiez voyante.
 1120	Vous êtes trop jeune pour soupirer ainsi ![ENTER]Voulez-vous connaître votre avenir ?[ENTER]Sachez qu'il existe d'étranges pouvoirs capables[ENTER]de répondre aux questions que vous vous posez à[ENTER]propos de votre destin.
@@ -1148,17 +1107,6 @@
 1148	Désert de Yongbi
 1149	Temple de Hwang
 1150	Grotte de l'Exil
-1151	Nachricht der Turnier-Leitung
-1152	Willkommen zum großen Metin2-Turnier! In deinem[ENTER]Inventar findest du die Rätselhafte Truhe. Sobald[ENTER]du mit der rechten Maustaste darauf klickst,[ENTER]wirst du in das Feuerland teleportiert - und die[ENTER]Kämpfe können beginnen!
-1153	Nur die Besten kommen eine Runde weiter! Gehörst[ENTER]du dazu? Prüfe dein Itemshop-Lager, ob sich eine[ENTER]Truhe darin befindet und ziehe sie in dein[ENTER]Inventar. Sobald du mit der rechten Maustaste[ENTER]darauf klickst, wirst du auf die nächste Map[ENTER]teleportiert.
-1154	Du hast nun alle Herausforderungen gemeistert.[ENTER]Vielen Dank für deinen großartigen Kampfeinsatz![ENTER]Die Finalteilnehmer stehen nach Ende des letzten[ENTER]Durchgangs fest. Wenn du Fragen hast, wende dich[ENTER]an die Turnier-Helfer vor Ort.
-1155	Bevor der Kampf beginnt, musst du in deinen[ENTER]Spieloptionen den PvP-Modus auf "Frei" stellen.[ENTER]Öffne die Optionen über die Schaltfläche rechts[ENTER]unten auf deinem Bildschirm oder über die Taste[ENTER]"Esc", wähle "Spieloptionen" und stelle[ENTER]deinen PvP-Modus auf "Frei".
-1156	Leider sind alle Plätze schon belegt. Warte auf[ENTER]den nächsten Durchgang, um am Turnier[ENTER]teilzunehmen.
-1157	Runde 1: Zerstöre so viele Metinsteine wie[ENTER]möglich.
-1158	Runde 2: Vernichte so viele Bosse wie möglich!
-1159	Runde 3: Erledige möglichst viele Gegner im[ENTER]PvP-Duell!
-1160	Du hast noch 10 Minuten.
-1161	Du hast noch eine Minute. Gib alles!
 1162	Bloquer:
 1163	Echanger
 1164	Guilde
@@ -1198,8 +1146,6 @@
 1198	Fantôme d'un guerrier :
 1199	Pourquoi êtes-vous transparent ?
 1200	Qu'est-ce que vous croyez ? Je suis un fantôme[ENTER]enfermé dans la roche depuis des millénaires...
-1201	Au secours, un fantôme !
-1202	En effet, un fantôme ! Si je t'attrape, je te[ENTER]mange !
 1203	Vous êtes qui?
 1204	J'étais un mercenaire, un homme du commun. Mes[ENTER]parents étaient des paysans, mais je ne voulait[ENTER]pas passer ma vie à cultiver le même champ, donc[ENTER]j'ai choisi de m'engager. C'était très dur et[ENTER]sanglant, mais je ne regrette pas. Mais un jour[ENTER]j'en ai eu assez de suivre au doigt et à l’œil[ENTER]les directives de nobles arrogants et j'ai[ENTER]déserté. C'est un malheureux hasard qui m'a[ENTER]conduit dans ce lieu lugubre.
 1205	Connaissez-vous l'histoire de la grotte ?
@@ -1212,7 +1158,6 @@
 1212	Les deux dragons ont glissé sur le haut des[ENTER]montagnes, faisant chuter par là même la cime,[ENTER]décapitant pour ainsi dire la montagne. Des[ENTER]éclairs brûlaient régulièrement le museau du[ENTER]dragon bleuté alors que le dragon argenté devait[ENTER]subir incessamment la morsure d'une grêle grosse[ENTER]comme le poing, mais pointue comme lances. La[ENTER]couche de glace accumulée au cours des années[ENTER]précédentes de glaciation commençait à fondre[ENTER]sous leur assauts et provoquait des coulées de[ENTER]boue. Paralysé par la peur, je me suis caché dans[ENTER]une anfractuosité de la roche, incapable de[ENTER]quitter ce spectacle des yeux.
 1213	Après quelques heures de combat. leur forces ont[ENTER]commencé à faiblir. J'ai alors saisi[ENTER]l'opportunité qui s'offrait à moi et j'ai couru[ENTER]vers la grotte pour récupérer mes affaires.[ENTER]C'est ce qui a entraîné mon terrible destin.[ENTER]J'étais déjà en train de revenir quand les[ENTER]dragons sont revenus devant l'entrée de la[ENTER]grotte, le dragon bleuté semblait très blessé et[ENTER]en train de battre en retraite vers la grotte.
 1214	Juste avant qu'il ne disparaisse dans la grotte,[ENTER]l'argenté l'a rattrapé, et il s'est passé quelque[ENTER]chose de très inhabituel. L'air s'est mis à[ENTER]scintiller, puis ce scintillement s'est[ENTER]transformé en brise, qui s'est lui-même[ENTER]transformé en tourbillon d'énergie dans lequel,[ENTER]hurlant et se débattant, le dragon bleuté[ENTER]semblait crier de douleur et de colère. Il[ENTER]semblait rétrécir et son grondement se réduire,[ENTER]jusqu'à ce que ses écailles perdent leur couleur,[ENTER]devenant ternes et émoussées...
-1215	Finalement le dragon argenté abandonna l'autre[ENTER]dans la grotte. Le perdant du duel a alors[ENTER]utilisé ses dernières forces pour se cacher dans[ENTER]l'obscurité au cœur de la montagne. L'argenté[ENTER]lança alors une tempête de magie qui a scellé[ENTER]avec une barrière d'énergie magique qui a fait en[ENTER]partie s'effondrer la montagne. Le dragon des[ENTER]ténèbres et moi étions piégés au sein de la[ENTER]montagne, damnés à mourir de faim ...
 1216	J'en ai entendu assez.
 1217	Merci de m'avoir écouté, les derniers millénaires[ENTER]ont été un peu ennuyeux ...
 1218	Avant d'échapper au Vent noir, j'ai réussi à[ENTER]découvrir où ils cachent leur or! Ils ont une[ENTER]montagne de lingots d'or! Ils ne remarqueraient[ENTER]pas si quelques-uns venaient à manquer. Ils sont[ENTER]tellement niais. Si vous me payez un bon prix[ENTER]j'irai chercher des lingots d'or pour vous.[ENTER]Mais je ne peux ramener qu'un lingot à la fois !
@@ -1394,12 +1339,9 @@
 1394	Vous appelez ça une coiffure ? Très drôle.[ENTER]Sérieusement, su vous n'avez pas de coiffure de[ENTER]l'ancien système, je ne peux rien faire pour[ENTER]vous. Je vous souhaite une bonne journée.
 1395	Je ne connais pas cette coiffure.
 1396	Malheureusement, je ne peux pas vous aider.[ENTER]Adressez-vous au support.
-1397	Vous avez obtenu une nouvelle coiffure.
 1398	Cette coiffure a déjà été échangée.
 1399	Et voilà. À présent, vous pouvez utiliser le[ENTER]nouveau système de costumes.
-1400	USE_ITEM(%s)
 1401	Notification : le chef du premier village vous[ENTER]cherche. Vous possédez encore une ancienne[ENTER]coiffure. Allez le voir et échangez votre[ENTER]coiffure actuelle contre une nouvelle, compatible[ENTER]avec le nouveau système de costumes. Ainsi, vous[ENTER]serez sûr de ne pas la perdre.
-1402	END_SEC(%s)
 1403	Vous n'avez pas assez de yangs.[ENTER]Cela coûte 500.000 yangs ... 500.000 yangs!
 1404	Réinitialiser coiffure
 1405	Quel dommage. J'aurais aimé jouer des ciseaux de[ENTER]nouveau. Mais votre coiffure actuelle me plaît[ENTER]aussi beaucoup. À bientôt !
@@ -1419,7 +1361,6 @@
 1419	Plus tard.
 1420	Revenez si vous changez d'avis.
 1421	Quelle récompense souhaitez-vous obtenir ?
-1422	Revenez lorsque vous aurez pris une décision.
 1423	Boîte d'ébène rouge (55 galettes)
 1424	Boîte d'ébène d'apparat (50 galettes)
 1425	Élixir de la lune (m) (45 galettes)
@@ -1450,7 +1391,6 @@
 1450	Je vous aiderai plus tard.
 1451	Je vous attends ici.
 1452	Mission %s[ENTER]Vous pouvez accepter cette mission 10 fois en[ENTER]tout.
-1453	Sans vous, nous serions perdus. Est-ce que vous[ENTER]pourriez continuer à nous aider ? Il nous manque[ENTER]encore une grande partie de nos réserves.
 1454	Je continue !
 1455	Je reviendrai plus tard.
 1456	Vous êtes un combattant courageux. Continuez[ENTER]comme ça ![ENTER][ENTER]Mission %s[ENTER]Vous pouvez accepter cette mission 10 fois en[ENTER]tout.
@@ -1677,8 +1617,6 @@
 1677	Un cheval de niveau expert a été appelé.
 1678	Vous n'avez pas réussi à appeler un cheval[ENTER]militaire. Vous pouvez augmenter vos chances de[ENTER]succès en améliorant votre compétence d'appel de[ENTER]chevaux.
 1679	Votre force mentale n'est pas assez élevée. Une[ENTER]force mentale de 300 est nécessaire pour appeler[ENTER]un cheval de niveau expert.
-1680	(restant: %s %s, %s %s)
-1681	Tant que vous êtes à dos de monture, vous ne pouvez pas invoquer le Phœnix flamboyant.
 1682	Voici votre nouveau dessin de cheval. Tâchez de[ENTER]ne pas le perdre cette fois-ci.
 1683	Vous n'avez pas assez de yangs.
 1684	Nouveau livre de cheval de combat
@@ -1772,7 +1710,6 @@
 1772	Eine neue Aktion ist im Item-Shop gestartet![ENTER]Verpasse nicht diese günstige Gelegenheit und[ENTER]besuche direkt den Item-Shop.
 1773	Juste arrivé
 1774	Ne pas manquer l'opportunité. [ENTER]Maintenant, avec le nouvel élément de matériel. [ENTER]Ne pas oublier de visiter le marché.
-1775	Ein Geschenk der Götter
 1776	Dieu est bien disposé envers toi: [ENTER]Accepte ce beau cadeau et utilise sa force.
 1777	Accepter
 1778	Refuser
@@ -1789,12 +1726,8 @@
 1789	Avez-vous bien réfléchi ?[ENTER]Voulez-vous vraiment changer de sexe ?[ENTER]Vous serez ensuite automatiquement téléporté dans[ENTER]la ville.
 1790	Votre sexe vient d'être changé. Vos compétences[ENTER]et vos capacités n'ont pas changé.
 1791	Le changement de sexe a été annulé.
-1792	N'essayez pas d'utiliser cet objet avant d'avoir[ENTER]atteint le niveau 50.
 1793	Le joueurs mariés ne peuvent pas changer de sexe.[ENTER]Seuls les joueurs non marriés ont accès à cette[ENTER]option.
-1794	Si vous vous mariez, vous ne pourrez pas changer[ENTER]de sexe. Seuls les joueurs non mariés peuvent[ENTER]changer de sexe.
-1795	Vous devez divorcer pour pouvoir changer de sexe.
 1796	Vous ne pouvez pas changer votre sexe pendant que[ENTER]vous êtes transformés.
-1797	Utilisez cet item une fois que vous n'êtes plus[ENTER]transformés.
 1798	Vous ne pouvez changer de sexe qu'une fois tous[ENTER]les trois jours.
 1799	Vous pouvez rechanger dans:
 1800	Utiliser le dépôt de la boutique
@@ -1813,17 +1746,14 @@
 1813	Momentan müssen noch %s getötet werden, um den Jagdauftrag abzuschließen.
 1814	spécimens du type:
 1815	Informations sur la mission de chasse
-1816	![ENTER]Tuez la cible!
 1817	Tuez: %s !
 1818	show_mob_pos: map_index(%s) < 0
 1819	show_mob_pos: map_index(%s)
 1820	show_mob_pos: special.lvq_map[map_index(%s)] est nul
 1821	addmapsignal(%s,%s)
 1822	Restant
-1823	![ENTER]Tuez la cible! :
 1824	Nombre de cibles: %s
 1825	Récompense: %s %% d'exp.
-1826	% expérience
 1827	Mission %s - terminée
 1828	Mission %s
 1829	Mission %s - terminée
@@ -1896,7 +1826,6 @@
 1896	Ho, ho, ho! Joyeux Noël! Vous avez de la chance[ENTER]de me trouver. Je suis très occupé en cette[ENTER]saison. Voulez-vous m'acheter quelque chose ?
 1897	Je suis désolé, mais vous n'avez pas assez de[ENTER]Yangs pour acheter quelque chose. Joyeuses fêtes[ENTER]tout de même !
 1898	C'est d'accord.
-1899	Père Noël :
 1900	Je l'achète.
 1901	Non, merci.
 1902	Ce livre de compétence coûte %d Yangs. Vous[ENTER]découvrirez de quel type de livre il s'agit quand[ENTER]vous l'aurez en main. Souhaitez-vous quand même[ENTER]tenter votre chance et l'acheter ?
@@ -1913,7 +1842,6 @@
 1913	Pourquoi y-a-t-il des chaussettes accrochées ici ?
 1914	Non, merci. Je n'ai besoin de rien.
 1915	Je voudrais accrocher une chaussette.
-1916	Non, je ne veux pas accrocher de chaussette.
 1917	Afin d'être autorisé(e) à accrocher des[ENTER]chaussettes, vous devez avoir atteint le niveau[ENTER]10.
 1918	Terminer
 1919	Continuer
@@ -1942,11 +1870,6 @@
 1942	Empire Shinsoo
 1943	Empire Chunjo
 1944	Empire Jinno
-1945	Annuler l'évènement.
-1946	Terminer l'évènement.
-1947	Vérifier les informations concernant l'évènement.
-1948	Modifier le cours de l'évènement.
-1949	L'évènement est en cours.
 1950	Expérience
 1951	Pourcentage d'expérience
 1952	Nous devons trouver le gardien du portail, avant[ENTER]qu'un des autres empires ne le fasse.[ENTER]Montrons notre puissance et agrandissons notre[ENTER]territoire !
@@ -2118,8 +2041,6 @@
 2118	Vous avez tous les ingrédients ? Bien. Je vous[ENTER]prends la Pâte de sucre et le Riz sucré et je[ENTER]vous fait un Gâteau de sucre ! Bon appétit !
 2119	Vous avez tous les ingrédients ? Bien. Je vous[ENTER]prends la Pâte de fruit et le Riz sucré et je[ENTER]vous fait un Gâteau de fruits ! Bon appétit !
 2120	Faire un gâteau de haricots
-2121	Faire un gâteau de sucre
-2122	Faire un gâteau de fruits
 2123	Monsieur
 2124	Mont Sohan
 2125	Doyyumhwan
@@ -3868,7 +3789,6 @@
 3868	Bonne nouvelle ! J'ai découvert comment[ENTER]neutraliser la force de la matière obscure.
 3869	Toutes les forces de la nature ont un contrepoids.La lumière et l'ombre, l'eau et le feu, le bien[ENTER]et le mal. La matière obscure n'échappe pas à[ENTER]cette règle et elle a son pendant lumineux,[ENTER]capable de la neutraliser : le Lumen pur !
 3870	Afin de produire du Lumen pur, il faut faire[ENTER]fondre des fragments d'énergie dans de l'eau de[ENTER]Mong. Pouvez-vous aller chercher 50 bouteilles[ENTER]d'eau de Mong ainsi que 100 fragments d'énergie,[ENTER]puis les rapporter à Yu-Hwan ? Merci.
-3871	C'est comme si c'était fait.
 3872	Rassemblez 50 bouteilles d'eau de Mong ainsi que[ENTER]100 fragments d'énergie et rapportez tout cela à[ENTER]Yu-Hwan.
 3873	Lumen pur
 3874	Rassemblez 50 bouteilles d'eau de Mong ainsi que[ENTER]100 fragments d'énergie et rapportez tout cela à[ENTER]Yu-Hwan.
@@ -4143,7 +4063,6 @@
 4143	Capturez l'espion
 4144	Il y a un espion ennemi dans le village. Le[ENTER]Capitaine vous donnera plus d'informations le[ENTER]concernant.
 4145	J'ai l'impression que nous avons un espion dans[ENTER]notre village. Un des habitants semble collaborer[ENTER]avec le Serment Blanc. J'ai besoin de votre[ENTER]aide : Allez tuer les soldats du Serment Blanc,[ENTER]peut-être que nous trouverons quelques[ENTER]informations sur l'espion.
-4146	Votre récompense sera de 100 000 points[ENTER]d'expérience et de 5 000 Yangs.
 4147	Démasquez l'espion
 4148	Le Capitaine pense qu'il y a un espion du Serment[ENTER]Blanc. Allez chercher des preuves au clan du[ENTER]Serment Blanc et amenez-les au Capitaine.
 4149	Vous avez trouvé une lettre.[ENTER]Apportez-la au capitaine.
@@ -4176,7 +4095,6 @@
 4176	Récompense pour l'élimination des chiens errants[ENTER]Points d'expérience : 550[ENTER]Yang : 1 000[ENTER]Objet : %s, quantité : %s
 4177	Chiens errants:
 4178	La Metin Noire a été détruite
-4179	Vous avez brisé une Metin Noire.[ENTER]Allez voir le capitaine et faites-lui part de[ENTER]votre réussite.
 4180	Détruisez la Metin Noire
 4181	Avez-vous détruit la pierre Metin? Merci ! Le[ENTER]village est sauvé. D'où viennent ces pierres ?[ENTER]Nous ne savons quasiment rien d'elles à part[ENTER]qu'elles causent énormément de problèmes...[ENTER]J'ai entendu dire qu'Uriel le Sage a entrepris[ENTER]des recherches à leur sujet mais je ne sais pas[ENTER]ce qu'il a pu découvrir. En tous cas vous avez[ENTER]fait du bon travail.
 4182	Récompense :
@@ -4514,9 +4432,6 @@
 4514	Vous êtes revenu plus vite que ce que je[ENTER]pensais ! Soyez toujours si rapide, cela vous[ENTER]aidera plus tard. Écoutez-moi attentivement, j'ai[ENTER]d'importantes informations pour vous.
 4515	Connaissez-vous le raffinage ? Mais non, bien[ENTER]sûr, vous êtes encore si jeune. Alors voilà : si[ENTER]vous me donnez un objet de votre équipement, pour[ENTER]quelques Yangs, je pourrai enrichir ses[ENTER]performances en le raffinant.
 4516	L'art du raffinage peut se dérouler de plusieurs[ENTER]manières. Plus vos attentes sont grandes, plus la[ENTER]tâche sera difficile. Pour un raffinage de[ENTER]jusqu'à +3, quelques Yangs suffiront, au-delà, il[ENTER]vous faudra un objet supplémentaire, par exemple[ENTER]le groin que vous m'avez apporté.[ENTER]Cependant, même quelqu'un de mon expérience peut[ENTER]voir l'objet se détruire au cours du procédé.[ENTER]Venez me voir si vous avec un peu de temps. Je[ENTER]pourrais vous forger des armes fantastiques !
-4517	Vous avez reçu %s points d'expérience.
-4518	Vous avez reçu %s yangs.
-4519	Vous recevez une fourrure de loup+.
 4520	Hey toi! Ne tourne pas dans le village en disant[ENTER]qu'il n'y a rien à faire. Tu as besoin de plus[ENTER]d'entraînement. Dans ces temps sombres,[ENTER]l'entraînement est la seule voie pour augmenter[ENTER]tes chances de survie.
 4521	Puisque vous êtes là, j'ai une mission pour[ENTER]vous : il y a quelque temps le Forgeron parlait[ENTER]d'une commande urgente et de Groin. Je pense[ENTER]qu'il a besoin d'aide. Allez le voir pour savoir[ENTER]comment l'aider !
 4522	Si vous réussissez la mission vous aurez une[ENTER]récompense.
@@ -4574,7 +4489,6 @@
 4574	Vous vous êtes fait rare ces derniers temps,[ENTER]non ? Je dois vous donner cette lettre. Je ne[ENTER]sais pas du tout qui en est l'auteur, il ne s'est[ENTER]pas présenté.
 4575	Le papier sur lequel la lettre a été écrite[ENTER]semble très ancien. Ces quelques mots ont été[ENTER]tracés rapidement :[ENTER]J'ai des informations importantes sur les sept[ENTER]prêtresses du Dragon et sur Sung Mahi. Je vous[ENTER]attends derrière la Tour des démons au temple de[ENTER]Hwang.[ENTER]Vous me trouverez à l'ombre de l'arbre.[ENTER]Dépêchez-vous, le temps presse !
 4576	Lettre anonyme
-4577	Rendez-vous au temple de Hwang et rencontrez-y le[ENTER]mystérieux expéditeur derrière la Tour des[ENTER]démons.
 4578	Lee Chung
 4579	Je vous souhaite la bienvenue ! Permettez-moi[ENTER]d'abord de me présenter : je m'appelle Lee Chung.[ENTER]C'est très courageux de votre part de suivre les[ENTER]consignes d'un inconnu. Je ne me suis pas trompé[ENTER]à votre sujet, et vous n'allez pas le regretter.[ENTER]Écoutez ce que j'ai à vous dire !
 4580	Uriel a de nouvelles informations sur la dernière[ENTER]survivante des prêtresses du Dragon. Son journal[ENTER]doit se trouver dans la Tour des démons. Allez[ENTER]voir Uriel afin d'en savoir plus.
@@ -4666,7 +4580,6 @@
 4666	Lee Chung, le commandant des combattants de[ENTER]l'ombre voudrait vous parler. Il a trouvé comment[ENTER]battre l'Agwi des Catacombes du diable.
 4667	Le trésor du Neuf-Queues est gardé par des golems[ENTER]de glace, des yétis et des hommes de glace[ENTER]furieux.[ENTER]Pour fabriquer la larme du ciel, vous avez besoin[ENTER]de 50 essences de cristal bleu.
 4668	Le quartz de l'enfer rouge se trouve[ENTER]vraisemblablement dans le temple de Hwang ou dans[ENTER]la Terre de Feu.[ENTER]J'ai envoyé un éclaireur afin d'en savoir plus.
-4669	Le commandant Lee Chung vous a dit que le premier[ENTER]élément de la larme du ciel, l'essence de cristal[ENTER]bleu, est le trésor légendaire gardé par[ENTER]Neuf-Queues sur le mont Sohan.[ENTER]Elle est surveillée très étroitement par les[ENTER]golems de glace, les yétis et les hommes de glace[ENTER]furieux. Chassez ces monstres pour vous[ENTER]approprier l'essence de cristal bleu.
 4670	Vous fouillez les cadavres des monstres vaincus[ENTER]et trouvez une pierre précieuse bleue brillante.[ENTER]Ça doit être l'essence de cristal bleu.
 4671	Vous devez encore trouver %d essence(s) de[ENTER]cristal bleu.
 4672	Vous avez reçu assez de conseils pour[ENTER]aujourd'hui. Revenez demain.
@@ -4762,10 +4675,8 @@
 4762	Explorez le rocher du Dragon Sombre. Commencez[ENTER]par ici : (%d, %d).
 4763	Départ pour l'île
 4764	Allez au téléporteur. Il vous emmènera au rocher[ENTER]du Dragon Sombre.
-4765	La flèche sur le PNJ vous indique que celui-ci[ENTER]souhaite vous parler. Si vous ne voyez pas le PNJ[ENTER]sur votre écran, suivez le point clignotant sur[ENTER]votre mini-carte.
 4766	Suivez le point clignotant sur la mini-carte.
 4767	Restants
-4768	Das Item %s bekommst du in %s kills.
 4769	%s : %d pièces
 4770	L'aventure continue dès que vous avez atteint le[ENTER]niveau 91.
 4771	Rapport
@@ -5042,7 +4953,6 @@
 5042	Vous trouverez ces plantes dans les endroits les[ENTER]plus divers du continent. Pendant que vous serez[ENTER]en chemin, je m'occuperai de mes préparations.
 5043	La recette du millénium
 5044	Partez à la recherche de la racine de gango, du[ENTER]champignon Tue et de la rose des montagnes.[ENTER]Vous avez besoin de 200 exemplaires de chaque.
-5045	Vous trouverez ces plantes dans les endroits les[ENTER]plus divers du continent. Pendant que vous serez[ENTER]en chemin, je m'occuperai de mes préparations.
 5046	Ah, très bien, vous êtes de retour. Et vous avez[ENTER]tout trouvé. Alors je me mets immédiatement au[ENTER]travail. Il ne faut pas me déranger. Revenez[ENTER]demain à la même heure. L'essence devrait être[ENTER]prête.
 5047	Très bien. À demain.
 5048	Je comprends que vous êtes pressé. Cependant, il[ENTER]faut que vous preniez patience. Revenez plus[ENTER]tard.
@@ -5089,7 +4999,6 @@
 5089	Votre troisième destination est : %d, %d
 5090	Vous avez atteint la première destination. Le[ENTER]prochain lieu où il vous faut vous rendre est :[ENTER](%d, %d)
 5091	Vous avez atteint votre deuxième destination. Le[ENTER]prochain lieu où il vous faut vous rendre est :[ENTER](%d, %d)
-5092	Vous avez atteint la troisième destination.
 5093	Vous avez pu vous faire une idée de la situation[ENTER]sur les montagnes fulgurantes.[ENTER]Allez faire votre rapport à l'amiral Angmur.
 5094	Retournez auprès de l'amiral Angmur.
 5095	Ah, vous êtes de retour ! Très bien, nous allons[ENTER]pouvoir évaluer les informations que vous avez[ENTER]recueillies afin d'élaborer une stratégie.
@@ -5118,7 +5027,6 @@
 5118	Soyez sur vos gardes !
 5119	Combattez les cyclopes !
 5120	Vainquez le général Outis %d fois, Argès %d[ENTER]autres fois et enfin, %d fois Polyphème.
-5121	J'ai du mal à croire que précisément les cyclopes[ENTER]puissent vous être supérieurs. Allons, je sais[ENTER]que vous pouvez y arriver !
 5122	Vous avez vaincu les commandants des cyclopes.
 5123	Allez faire votre rapport à l'amiral Angmur.
 5124	Allez voir l'amiral Angmur.
@@ -5412,7 +5320,6 @@
 5412	Reconstruction du fort
 5413	Combattez la tribu des crustacéens et rassemblez[ENTER]100 carapaces crustacées.
 5414	Parlez à l'amiral Angmur.
-5415	Renforcer les défenses
 5416	Attaquez les tritons et ramenez 100 javelots de[ENTER]triton.
 5417	Allez voir l'amiral Angmur.
 5418	Les ogres pilleurs
@@ -5427,13 +5334,7 @@
 5427	Habitants :
 5428	Confucius (%s)[ENTER]Magasin d'armures (%s)
 5429	Marchande (%s)[ENTER]Magasin d'armes (%s)
-5430	La ferme aux poissons
 5431	Le Pêcheur :
-5432	Je voudrais agrandir ma ferme aux poissons. Pour[ENTER]cela, j'ai besoin de carpe toujours vivantes.[ENTER]Ces poissons sont bons à cuisiner, et vraiment[ENTER]populaire auprès des pêcheurs, mais ils sont[ENTER]difficiles à attraper.
-5433	Si vous m'apportez une carpe vous aurez une[ENTER]récompense. Je garde un coffre dans mon grenier[ENTER]depuis une éternité. Je ne sais même plus ce[ENTER]qu'il contient. Il y a peut-être quelque chose[ENTER]d'important, ou d'inutile. Peut-être même qu'un[ENTER]monstre est caché dedans. Si vous le voulez,[ENTER]ramenez-moi une carpe vivante.
-5434	Echangez la carpe contre le coffre
-5435	Vous m'apportez une carpe pour mon élevage ?[ENTER]Je vous remercie ! voilà la boite que je vous[ENTER]avais promise. Bonne chance !
-5436	Vous avez reçu une boite ![ENTER]Ouvrez-la avec un clic droit.
 5437	Dépêche-toi de me dire où tu veux être téléporté,[ENTER]je suis fatigué.
 5438	Je voudrais voyager.
 5439	Cela coute %s Yangs.
@@ -5601,8 +5502,6 @@
 5601	Où voulez-vous aller? Cela coûte %s Yangs.
 5602	Mont Sohan
 5603	Doyyumhwan
-5604	Aller voir la soeur de la vieille dame.
-5605	La vieille dame m'a déjà dit que tu allais venir,[ENTER]et que je ne devais rien te facturer pour le[ENTER]trajet car tu lui rends un service. Je le fais[ENTER]pour elle car nous buvons le thé ensemble, de[ENTER]temps en temps. Mais ne t'imagine pas que ce sera[ENTER]pareil à chaque fois ![ENTER]Une fois là-bas, fais attention à toi. Les[ENTER]étrangers venant d'autres empires ne sont pas[ENTER]toujours les bienvenus.
 5606	Ho ho ho !
 5607	Ah, c'est vous ![ENTER]Ça fait un bail qu'on ne s'est pas vus ![ENTER]Déjà un an, ho ho ![ENTER]Vous vous demandez peut-être pourquoi je suis de[ENTER]retour au village.[ENTER]Je vais vous expliquer…
 5608	Les temps sont durs. De nos jours, plus personne[ENTER]n'achète de livres ou ce genre de choses.[ENTER]À mon âge, c'est bien trop fatigant de parcourir[ENTER]les airs en traîneau. C'est pourquoi cette année[ENTER]j'ai décidé de passer Noël au village.
@@ -5638,7 +5537,6 @@
 5638	Uriel
 5639	Parlez avec Uriel de Chaegirab, son ancien élève.
 5640	Uriel se trouve à %s.
-5641	Wonda-Rim veut faire un cadeau à Chaegirab...
 5642	Le plaisir d'un scientifique commence par la[ENTER]recherche. C'est aussi simple que cela. La[ENTER]meilleure façon de faire plaisir à Chaegirab est[ENTER]de l'aider dans ses recherches. Le loup Mu-Rang[ENTER]se fait rare dans notre région, et sa fourrure[ENTER]est un plaisir tout aussi rare pour n'importe[ENTER]quel biologiste. 5 fourrures de loup devraient[ENTER]suffire. Allez dire ceci à Wonda-Rim.
 5643	Je suis sûr que le biologiste sera impressionné[ENTER]par une si belle fourrure.
 5644	Oui, je vais lui dire.
@@ -5668,7 +5566,6 @@
 5668	Non, pas du tout.
 5669	Super ! J'aime faire plaisir aux autres. Et bien[ENTER]sûr vous aurez droit à une jolie récompense.[ENTER]Tenez, prenez ceci !
 5670	Vous recevez 20.000 points d'expérience.[ENTER]Vous recevez 20.000 Yangs.[ENTER]Vous recevez une pépite d'or.
-5671	Vous avez menti à Wonda-Rim et vous en perdez des[ENTER]points de grade.
 5672	Il n'a pas voulu acheter la fourrure ? Hum,[ENTER]peut-être que ce n'était pas une si bonne idée de[ENTER]vous envoyer chasser à ma place. Je m'y prendrai[ENTER]autrement la prochaine fois.
 5673	Mais vous n'avez pas fait tout ce travail pour[ENTER]rien, Yang-Shin vous rachètera cette fourrure à[ENTER]un bon prix.
 5674	Les évènements ont pris une tournure bien[ENTER]décevante. Heureusement, vous avez toujours la[ENTER]fourrure avec vous. Allez voir Yang-Shin le[ENTER]chasseur à Jayan et vendez-lui la fourrure.
@@ -5687,7 +5584,6 @@
 5687	Garde de la Tour des démons
 5688	Je m'inquiète pour mon frère, le Garde de la Tour[ENTER]des démons. Il ne se sentait pas bien récemment[ENTER]et à présent il est vraiment malade. Il a une[ENTER]grosse migraine et d'étranges éruptions cutanées,[ENTER]mais il ne peut quitter son poste. Pourriez-vous[ENTER]lui apporter un médicament de Baek-Go ?
 5689	Je l'aurais bien fait moi-même, mais la Tour des[ENTER]démons se trouve dans le temple de Hwang, en[ENTER]plein milieu de la Vallée de Seungryong. Et[ENTER]l'endroit est complètement envahi par de[ENTER]dangereuses créatures...
-5690	Vous revoilà. Vous avez oublié les symptômes ?[ENTER]Vous pourriez écouter quand quelqu'un vous parle.[ENTER]Mon frère a une migraine et une éruption cutanée.[ENTER]Allez le dire à Baek-Go !
 5691	Aider le frère
 5692	Le médicament de Baek-Go
 5693	Parlez à Baek-Go pour qu'il trouve un remède pour[ENTER]guérir le Garde de la Tour des démons.
@@ -5703,7 +5599,6 @@
 5703	J'ai aussi besoin de :
 5704	Je n'ai jamais entendu parler d'une telle[ENTER]maladie. Êtes-vous sûr des symptômes que vous me[ENTER]rapportez ? SI j'étais vous, j'irais à nouveau[ENTER]demander.
 5705	Je ne peux faire de diagnostique sans les[ENTER]symptômes. Retournez demander.
-5706	Médicament
 5707	Bien, il ne me manque plus que %s herbes.
 5708	C'est toutes les herbes dont j'ai besoin. Allez[ENTER]vite voir Baek-Go.
 5709	Bien, il ne manque plus que %s foies.
@@ -5745,7 +5640,6 @@
 5745	Cherchez Nakajima
 5746	Nakajima doit savoir où l'on peut trouver de bons[ENTER]endroits pour chasser. Allez lui demander.
 5747	Nakajima est à %s.
-5748	Êtes-vous Nakajima ? C'est Yank-Shin qui[ENTER]m'envoie ! Il cherche de bons coins pour chasser,[ENTER]peut-être connaissez-vous un lieu ou chasser ne[ENTER]sera pas trop dangereux ?
 5749	Ah-Yu
 5750	Nakajima est un déserteur et doit se cacher de[ENTER]l'armée. Sa femme Ah-Yu pense qu'il est mort au[ENTER]combat. Allez lui annoncer que Nakajima est[ENTER]toujours en vie.
 5751	Ah-Yu est à %s.
@@ -5772,7 +5666,6 @@
 5772	J'ai trouvé une Patte d'Ours !
 5773	Cela devrait suffire. Allez voir Yang-Shin !
 5774	Cette Patte d'Ours est inutilisable.
-5775	Vous avez besoin d'encore %s Pattes d'Ours.
 5776	Vous devez chasser:
 5777	Ah-Yu vous a demandé de satisfaire la demande de[ENTER]Yang-Shin.
 5778	Vous avez encore besoin de %s Pattes d'ours.[ENTER]Tuez Bera pour en trouver.
@@ -5781,7 +5674,6 @@
 5781	Yang-Shin est à %s.
 5782	Yang-Shin:
 5783	Le chantage
-5784	Pattes d'Ours
 5785	Vous m'avez apporté des pattes d'Ours ? Je vous[ENTER]en supplie ne me prenez pas pour un monstre ! Les[ENTER]temps sont durs et je dois joindre les deux[ENTER]bouts, surtout depuis la chute des Pierres Metins[ENTER]qui rendent la chasse si difficile à cause des[ENTER]animaux se comportant comme des bêtes enragées.[ENTER]La vie de Chasseur n'a jamais été aussi difficile.
 5786	S'il vous plait dites à Ah-Yu qu'elle n'a pas de[ENTER]soucis à se faire. Elle peut en être sûre.[ENTER]Jusqu'à ce que j'ai besoin de quelque chose[ENTER]d'autre ... hé hé hé !
 5787	Quoi, vous voulez vous débarrasser de moi sans[ENTER]rien ? Je voulais des Pattes d'Ours fraîches !
@@ -5794,7 +5686,6 @@
 5794	Oh, merci ! Votre place aux côtés du Dieu Dragon[ENTER]est assurée !
 5795	Vous avez reçu %s yangs.
 5796	Vous avez reçu %s points d'expérience.
-5797	J'ai besoin de:
 5798	Yonah
 5799	La porcelaine brisée
 5800	Yonah:
@@ -5826,15 +5717,11 @@
 5826	Si vous lui ramenez du Foin, il pourrait[ENTER]éventuellement protéger sa porcelaine dans leurs[ENTER]cartons de manière plus sûre. Je suis certain que[ENTER]ça serait une bonne façon de le rassurer.
 5827	Le palefrenier est à[ENTER]%s ou à %s.
 5828	Taurean n'est pas responsable des vases brisés de[ENTER]Yonah. Ce sont les radiations diaboliques des[ENTER]Pierres metins qui cassent tout. Apportez du Foin[ENTER]à Yonah afin qu'il protège sa porcelaine de façon[ENTER]plus sûre. Je suis sûre que certains villageois[ENTER]peuvent vous en donner.
-5829	Vous pouvez trouver %s et %s devant les portes du[ENTER]village Vous devriez pouvoir trouver suffisamment[ENTER]de Foin grâce aux chapeaux de paille qu'ils[ENTER]portent.
-5830	J'ai trouvé une bonne quantité de Foin. Il ne[ENTER]m'en manque plus que %s.
 5831	Ce chapeau n'est pas fait de paille, mais de[ENTER]fibres de noix de coco. Il m'est inutile.
 5832	Je vois que vous avez un chapeau de paille sur[ENTER]vous. Je suis sûr que Yonah serait plus agréable[ENTER]si vous m'en donniez un peu.
-5833	Ce chapeau n'est pas fait de paille, mais de[ENTER]fibres de noix de coco. Il est aussi très[ENTER]abimé...
 5834	Vous pouvez aussi tuer des Soldats Barbares et[ENTER]des Forts Soldats Barbares. Vous pourrez[ENTER]récupérer du foin sur leurs chapeaux de paille.
 5835	Vous avez trouvé %s sur %s bottes de Foin.
 5836	Vous avez trouvé une botte de Foin.
-5837	La meule de foin
 5838	Taurean, vous avez mentionné avoir été proche des[ENTER]meules de foin tout à l'heure. Avez-vous pris un[ENTER]peu de Foin avec vous ?
 5839	Ah ah, voyons voir ... Tout était dans mes[ENTER]cheveux et dans mes chaussures. Vous voyez ?[ENTER]Prenez le tout !
 5840	Ce n'est pas grand chose, mais cela devrait être[ENTER]suffisant pour une petite botte. Il ne m'en[ENTER]manque plus que %s .
@@ -5844,14 +5731,12 @@
 5844	Puis-je l'avoir ?
 5845	Je suppose donc ...
 5846	Je n'ai pas le temps là. Je dois aller calmer[ENTER]Taurean à propos de cette histoire de vases.
-5847	Du Foin pour Yonah
 5848	Y a-t-il encore un peu de foin dans la grange que[ENTER]je pourrait apporter à Yonah?
 5849	Le palefrenier:
 5850	Nous n'avons pas beaucoup de Foin. Les animaux[ENTER]sauvages et les bandits à l'extérieur du village[ENTER]nous ont empêchés d'en prendre plus.
 5851	Mais je peux vous en donner un peu !
 5852	Ce n'est vraiment pas beaucoup, mais c'est assez[ENTER]pour une botte. Il ne m'en manque plus que %s .
 5853	J'ai bien peur de ne rien pouvoir faire de plus[ENTER]pour vous.
-5854	Du Foin et non des Coups
 5855	Vous avez trouvé assez de Foin pour Yonah.[ENTER]Apportez-lui les %s.
 5856	Ce n'est pas la faute de Taurean. Les radiations[ENTER]des Pierres Metins ont brisé votre porcelaine.
 5857	Yonah:
@@ -5897,7 +5782,6 @@
 5897	J'ai besoin de:
 5898	Processus :
 5899	Le forgeron:
-5900	Pierre de Diamant
 5901	Voyons. J'ai besoin d'une pioche pour extraire le[ENTER]minerai. Je me demande s'il est préférable que je[ENTER]cherche ou j'ai posé la mienne, ou bien que j'en[ENTER]demande une nouvelle à Deokbae ?
 5902	Vous avez encore besoin de %s Pierres de Diamant.
 5903	Vous avez ce qu'il faut. Retournez vite voir le[ENTER]Forgeron.
@@ -5906,9 +5790,7 @@
 5906	Le Forgeron a besoin de Pierre de Diamant pour[ENTER]fabriquer des lances spéciales tueuses de[ENTER]baleines. Cherchez des Veines de Diamant afin[ENTER]d'en extraire des Pierres de Diamant.Si vous[ENTER]n'avez pas de pioche, allez en acheter une à[ENTER]Deokbae.
 5907	Le Forgeron est à %s.
 5908	Nous avons encore besoin de %s Pierres de Diamant[ENTER]avant de pouvoir travailler sur des lances.
-5909	Les Lances
 5910	Temps d'attente
-5911	Le Forgeron a surement terminé maintenant. Allez[ENTER]le voir et récupérez les lances spéciales tueuses[ENTER]de baleines.
 5912	Les lances ne sont pas terminées. Soyez encore un[ENTER]petit peu patient.
 5913	Voici vos lances. Apportez-les au pêcheur.
 5914	Je vous ai déjà demandé d'attendre encore un peu[ENTER]pour avoir vos lances. Repassez plus tard.
@@ -5918,10 +5800,6 @@
 5918	En guise de reconnaissance vous avez reçu 3x:
 5919	Ces lances ne sont pas suffisamment solides pour[ENTER]maîtriser une baleine. Tout juste à les[ENTER]chatouiller.
 5920	S'il vous plait retournez voir le Forgeron et[ENTER]demandez-lui de faire d'autres lances.
-5921	Les pêcheurs sont mieux équipés et peuvent partir[ENTER]en mer. Retournez voir Octavio et expliquez lui[ENTER]qu'il peut être certain d'avoir sa livraison[ENTER]bientôt.
-5922	Que dites-vous ? Nos gentilles baleines sont[ENTER]devenues d'affreux monstres agressifs ? C'est[ENTER]terrible ... Merci d'avoir aidé les pêcheurs.[ENTER]Une grosse partie de ma carte dépend de leurs[ENTER]livraisons.
-5923	Oh et à propos de votre estomac criant famine :[ENTER]Bien sûr je peux vous offrir du ragoût de fruits[ENTER]de mer, mais vous ne préféreriez pas du sushi ?
-5924	Vous avez reçu 750.000 points d'expérience.[ENTER]Vous avez reçu 2 sushis.
 5925	Aller voir Wonda-Rim
 5926	L'orphelin
 5927	Wonda-Rim
@@ -5940,7 +5818,6 @@
 5940	Je l'ai trouvé avec une horde de Combattants Orcs[ENTER]dans la Vallée de Seungryong. S'il est toujours[ENTER]possible d'en apprendre sur la famille de[ENTER]Wonda-Rim, vous devriez en trouver auprès des[ENTER]Orcs.
 5941	Je peux être strict avec lui, mais je serai[ENTER]toujours son Oncle. Même s'il reste un bon à[ENTER]rien.
 5942	Allez à la Vallée de Seungryong et chassez des[ENTER]Combattants Orcs jusqu'à ce que vous trouviez un[ENTER]indice concernant la famille de Wonda-Rim.
-5943	Vous avez découvert une vieille lettre dans une[ENTER]véritable tuerie d'orcs. C'est à peine[ENTER]déchiffrable, mais vous pouvez reconnaître le nom[ENTER]de Wonda-Rim. C'est la preuve que vous cherchiez,[ENTER]apportez-la à Wonda-Rim.
 5944	Allons-y ! La meilleure façon de trouver des[ENTER]indices concernant la famille de Wonda-Rim est de[ENTER]tuer des Combattants Orcs. Ils peuvent avoir des[ENTER]preuves sur eux.
 5945	Indices à propos de Wonda-Rim...
 5946	Je vous ai dit tout ce que je savais. La seule[ENTER]preuve que vous avons, c'est les Combattants[ENTER]Orcs. Malheureusement, il est difficile d'avoir[ENTER]une conversation avec eux ...
@@ -6005,7 +5882,6 @@
 6005	J'espérais que vous diriez cela.[ENTER]Malheureusement, j'ignore quels bourreaux et[ENTER]invocateurs les ont tué. Je suppose qu'une fois[ENTER]qu'ils seront morts, je le ressentirai.
 6006	Je vous ai envoyé une lettre. Les fantômes m'ont[ENTER]expliqué que la vengeance doit avoir lieu au[ENTER]Triangle du Dieu Dragon. Il y a trois piliers[ENTER]formant un triangle là-bas.
 6007	4 Soldats à venger
-6008	Lettre du Capitaine
 6009	Encore 3 Soldats à venger !
 6010	Vous semblez avoir réussi, je viens d'entendre la[ENTER]voix d'un de mes soldats. Il a dit qu'il me[ENTER]pardonnait et qu'il savait que sa mort avait été[ENTER]vengée. Et plein de remerciements pour vous !
 6011	S'il vous plaît, vengez les autres soldats qui[ENTER]sont morts et tuez des Bourreaux funestes, des[ENTER]Invocateurs funestes, des Hauts Tourmenteurs et[ENTER]des Hauts Évocateurs. Souvenez-vous que vous ne[ENTER]devez le faire qu'à l'intérieur du Triangle que[ENTER]forment les trois piliers du Dieu Dragon.
@@ -6027,8 +5903,6 @@
 6027	Et voici quelques yangs de ma part. Je vais aller[ENTER]dormir un peu à présent.
 6028	Je vous suis profondément redevable, mon fils.
 6029	Je vous serai redevable à vie.
-6030	Information:
-6031	Vous avez reçu 3.300.000 points d'expérience.[ENTER]Vous avez reçu 270.000 yangs.[ENTER]Vous avez reçu un Livre de Maître.
 6032	Plus tard, peut-être ? Quand vous serez prêt,[ENTER]allez voir Baek-Go !
 6033	Capitaine
 6034	Les provisions
@@ -6036,7 +5910,6 @@
 6036	S'il vous plait allez voir la Marchande afin de[ENTER]savoir ce qu'il se passe.
 6037	Je vous procurerai les potions !
 6038	La marchande :
-6039	Des produits frais
 6040	La marchande
 6041	Oui, trouver des produits frais est devenu[ENTER]problématique de nos jours. Les routes sont[ENTER]devenues dangereuses, les voleurs de grands[ENTER]chemins et les bêtes sauvages sont de plus en[ENTER]plus nombreux. Les marchands ambulants, qui me[ENTER]fournissent la marchandise, n'ont aucune chance[ENTER]contre les tigres.
 6042	Peut-être que le Capitaine et ses soldats peuvent[ENTER]aider. Allez le voir s'il vous plait, et[ENTER]demandez-lui s'il peut envoyer ses soldats[ENTER]protéger nos marchands.
@@ -6057,13 +5930,11 @@
 6057	Allez voir yang-Shin et tentez de le convaincre[ENTER]de sécuriser les routes contre les Tigres.
 6058	Yang-Shin:
 6059	Yang-Shin est à %s.
-6060	La Fourrure de Tigre
 6061	Ah, splendide spécimen! Plus que %s !
 6062	C'est fait! Allez vite voir Yang-Shin.
 6063	Cette Fourrure de Tigre est inutile.
 6064	Vous avez besoin de %s Fourrures de Tigre[ENTER]éclatantes.
 6065	Trouvez des Fourrures de Tigre éclatantes sur les[ENTER]Tigres Blancs Maudits.
-6066	J'ai la Fourrure de Tigre.
 6067	Ce n'est pas assez selon moi. Comment puis-je[ENTER]savoir si les routes sont sûres avec le peu de[ENTER]fourrures que vous m'apportez ?
 6068	Ahh enfin! Ces fourrures vont m'enrichir ...[ENTER]euh! Vous êtes toujours ici ? Grâce à vous les[ENTER]routes sont enfin sûres de nouveau! Je suis sûr[ENTER]que le Capitaine vous donnera une belle[ENTER]récompense.
 6069	Partez maintenant. Je dois nettoyer les fourrures.
@@ -6097,8 +5968,6 @@
 6097	Revenez me voir quand vous aurez les trois[ENTER]variétés de fleurs. Je vérifierai qu'elles ne[ENTER]soient pas fanées et pourrai ainsi préparer un[ENTER]joli bouquet. Vous pourrez alors l'apporter à ma[ENTER]sœur. Elle organisera la cérémonie.
 6098	Trouvez une fleur de chaque variété. Vous pouvez[ENTER]en trouver en tuant des : Loup alpha affamé, Loup[ENTER]bleu affamé, Loup alpha bleu affamé.
 6099	Cette fleur fanée n'est pas très décorative.[ENTER]Tout ce travail pour ne rien avoir à exposer !
-6100	Cette fleur fanée n'est pas très décorative.[ENTER]Tout ce travail pour ne rien avoir à exposer !
-6101	Cette fleur fanée n'est pas très décorative.[ENTER]Tout ce travail pour ne rien avoir à exposer !
 6102	Il vous manque %s Fleur rouge-sang. Vous en[ENTER]trouverez en tuant des Loups Alphas Affamés.
 6103	Il vous manque toujours %s Fleur Orange. Vous[ENTER]pouvez en trouver en tuant des Loups Bleus[ENTER]Affamés.
 6104	Il vous manque toujours %s Fleur jaune parfumée.[ENTER]Vous pouvez en trouver en tuant des Loups Alphas[ENTER]Bleus Affamés.
@@ -6106,21 +5975,15 @@
 6106	Vous avez toujours besoin d'%s Fleur Orange.
 6107	Vous avez toujours besoin d'%s Fleur jaune[ENTER]parfumée.
 6108	Cette fleur est splendide. Parfait !
-6109	Cette fleur est splendide. Parfait !
-6110	Cette fleur est splendide. Parfait !
 6111	Terminé ! Ces fleurs feront un magnifique[ENTER]bouquet. Retournez vite voir la Vieille Dame[ENTER]avant que les fleurs ne commencent à faner.
 6112	Trouvez les fleurs pour le bouquet de la mariée.
 6113	Ce sont de jolies fleurs, mais pas encore assez[ENTER]jolies pour un grand mariage.
-6114	Vous pouvez en trouver en tuant des Loups alphas[ENTER]affamés, des loups bleus affamés et des loups[ENTER]bleus alphas affamés.
-6115	Ces fleurs feront un magnifique bouquet de mariée.
 6116	Merci, cette étude va révolutionner la science ![ENTER]Tenez, prenez ce bouquet de mariée et allez voir[ENTER]ma sœur.
 6117	Vous pouvez la trouver à Bokjung, dans l'Empire[ENTER]Chunjo.
 6118	Vous pouvez la trouver à Bakra, dans l'Empire[ENTER]Jinno.
 6119	Vous pouvez la trouver à Jayan, dans l'Empire[ENTER]Shinsoo.
-6120	La sœur
 6121	C'est le bon empire, je pense que je peux trouver[ENTER]la sœur de la vieille dame ici.
 6122	C'est le bon empire. Je devrais y trouver Octavio.
-6123	Cela semble être le bon empire. Il faut chercher[ENTER]la sœur de la vieille dame maintenant.
 6124	Cela ne semble pas être le bon empire.
 6125	Vous devez vous rendre à Bokjung dans l'empire[ENTER]Chunjo.
 6126	Vous devez vous rendre à Bakra dans l'Empire[ENTER]Jinno.
@@ -6150,7 +6013,6 @@
 6150	Je commence à avoir rassemblé beaucoup de choses[ENTER]pouvant intéresser Heuk-Young. Je devrais aller[ENTER]la voir et lui donner le morceau de papier et en[ENTER]profiter pour lui parler du cadavre que j'ai[ENTER]trouvé.
 6151	Heuk-Young m'a demandé d'être à l'affût du[ENTER]moindre indice concernant les légendaires Sura.[ENTER]Malheureusement je n'ai aucune idée de la forme[ENTER]sous laquelle je pourrais trouver ces indices.
 6152	Partez à la recherche du légendaire Guerrier[ENTER]Akuma. Il est probablement le Sura le plus connu[ENTER]qui ait jamais existé : un guerrier réputé[ENTER]invincible. On dit même qu'il aurait provoqué[ENTER]l'empereur en Duel. Je pense que l'endroit où[ENTER]nous nous trouvons est l'endroit où il a disparu,[ENTER]il y a plusieurs siècles. Ouvrez les yeux, il se[ENTER]pourrait qu'il y ait des indices quant à son[ENTER]passage qui aient survécu aux aléas des siècles.
-6153	dummy
 6154	Observer le cadavre du guerrier
 6155	Il s'agit du cadavre d'un guerrier, mais son bras[ENTER]gauche ne semble pas humain ... C'est[ENTER]probablement un Sura ! Il faut que j'en parle à[ENTER]Heuk-Young.
 6156	Une page de livre ... gelée dans les entrailles[ENTER]d'un Golem de glace d'enfer ...
@@ -6301,7 +6163,6 @@
 6301	Vous devez chasser:
 6302	La marchande
 6303	Trouvez le marchand d'armes et demandez-lui[ENTER]pourquoi il ne passe plus ses nuits à chanter[ENTER]sous la fenêtre de la marchande.
-6304	Trouver du lilas
 6305	Ah, tu as récupéré une jolie branche de lilas !
 6306	Fini! Retournez vite voir le marchand d'armes!
 6307	Malheureusement, ce lilas est fané.
@@ -6310,10 +6171,8 @@
 6310	Ahh, le lilas! Mais il me manque toujours une[ENTER]huile de Musc. Vous ne pourrez en commander que[ENTER]dans un magasin très spécial. La pièce qui tourne[ENTER]en bas à gauche de votre écran vous y mènera.[ENTER]Vous aurez besoin de Marques du Dragon, mais vous[ENTER]en avez sûrement dans vos manches, hein? Je vous[ENTER]serais éternellement reconnaissant! Après, vous[ENTER]pourrez passer prendre votre commande chez le[ENTER]magasinier. Alors, enfin, j'aurai tous les[ENTER]ingrédients!
 6311	S'il vous plaît, faites vite et ramenez-moi[ENTER]l'huile de Musc! Vous recevrez une récompense!
 6312	Continuez à chercher jusqu'à ce que vous ayez[ENTER]trouvé %s branches de lilas!
-6313	Mon trésor
 6314	Tuez des loups bleus afin d'en recevoir.
 6315	C'est tout. Retournez vite chez le marchand[ENTER]d'armes!
-6316	L'huile de Musc
 6317	Je vous remercie du fond du cœur. Je peux enfin[ENTER]créer une nouvelle huile parfumée.
 6318	Vous pouvez dire à ma tourterelle que je[ENTER]chanterai aujourd'hui sous sa fenêtre. Elle sera[ENTER]réjouie.
 6319	Vous méritez une récompense:
@@ -6322,18 +6181,15 @@
 6322	Revenez avec %s x Huile de Musc!
 6323	Je dois ramener de l'huile de Musc au marchand[ENTER]d'armes. Il faut que j'aille à la boutique (en[ENTER]cliquant sur la pièce en bas à gauche de mon[ENTER]écran) afin de commander une huile parfumée[ENTER]inhabituelle et la récupérer chez le magasinier.
 6324	Je m'ennuie de mon trésor, le marchand d'armes.[ENTER]Pendant des semaines, il a chanté tous les soirs[ENTER]sous ma fenêtre, mais je ne l'ai pas entendu[ENTER]depuis quelques jours. Il a peut-être peur de mon[ENTER]père? Pourriez-vous découvrir ce qui l'empêche de[ENTER]venir?
-6325	Le marchand d'armes
 6326	Oh, merci beaucoup! Ce n'était qu'un empêchement,[ENTER]vous me dites? Je suis si contente![ENTER]Je l'attendrai ce soir.
 6327	Pour votre peine vous recevez: %s points[ENTER]d'expérience.
 6328	Retournez vite chez la marchande!
 6329	Lilas
 6330	Parlez avec le marchand d'armes
-6331	L'huile de Musc
 6332	Un nouvel arôme
 6333	Chassez des loups bleus
 6334	Le marchand d'armes:
 6335	Retourner au marchand d'armes
-6336	Le coquin
 6337	Rapportez l'Huile de Musc au marchand d'armes.
 6338	C'est vrai, je ne chante plus sous sa fenêtre.[ENTER]C'est parce-que... ouf, c'est gênant d'en parler![ENTER]Mon odeur corporelle est devenue un peu[ENTER]repoussante... Je me lave et me relave, mais[ENTER]l'odeur persiste. Je voudrais créer une huile[ENTER]parfumée afin d'ensorceler ma tourterelle avec[ENTER]mon parfum envoûtant. L'apparence extérieure[ENTER]compte beaucoup pour elle.
 6339	Vers la Marchande
@@ -6432,8 +6288,6 @@
 6432	Pourriez-vous m'aider ?
 6433	Médaille de héros
 6434	Enfin, vous êtes de retour ![ENTER]Avez-vous retrouvé la médaille ?
-6435	Mais pourquoi ? Qu'est-ce que ces voleurs[ENTER]comptent faire de ma médaille ? Pour des[ENTER]étrangers, elle n'a aucune valeur marchande ![ENTER]Pourriez-vous m'aider à la retrouver ?
-6436	Trouvez la médaille de héros !
 6437	Vous revenez les mains vides ? Oh non, je suis[ENTER]désespéré. Si vous ne pouvez pas m'aider, qui le[ENTER]pourra ? Cherchez encore, je vous en prie !
 6438	Vous avez retrouvé ma médaille ! Mais attendez,[ENTER]elle n'est pas complète. Ces sauvages l'ont[ENTER]brisée en cinq morceaux ! Rapportez-les-moi tous,[ENTER]pour que je puisse reconstituer la médaille.
 6439	Ces misérables ont brisé mon précieux héritage[ENTER]familial ![ENTER]Je vous remercie d'avoir retrouvé tous les[ENTER]morceaux. Je vais pouvoir les recoller.
@@ -6493,27 +6347,9 @@
 6493	Point de contrôle n°1.
 6494	Allez au point de contrôle n°1.
 6495	Vous avez trouvé le point de contrôle n°1.
-6496	Allez au point de contrôle n°5.
-6497	Vous avez trouvé le point de contrôle n°4.
-6498	Allez au point de contrôle n°3.
-6499	Vous avez trouvé le point de contrôle n°3.
 6500	Allez au point de contrôle n°5.
-6501	Allez au point de contrôle n°2.
-6502	Vous avez trouvé le point de contrôle n°2.
-6503	Allez au point de contrôle n°1.
-6504	Vous avez trouvé le point de contrôle n°1.
 6505	Point de contrôle n°5.
-6506	Allez au point de contrôle n°5.
-6507	Vous avez trouvé le point de contrôle n°5.
-6508	Point de contrôle n°6.
-6509	Allez au point de contrôle n°6.
-6510	Vous avez trouvé le point de contrôle n°6
 6511	Vous avez trouvé le point de contrôle n°5.
-6512	Point de contrôle n°3.[ENTER][ENTER]Allez au point de contrôle n°3.
-6513	Point de contrôle n°5.[ENTER][ENTER]Allez au point de contrôle n°5.
-6514	Point de contrôle n°6.[ENTER][ENTER]Allez au point de contrôle n°6.
-6515	Point de contrôle n°2.[ENTER][ENTER]Allez au point de contrôle n°2.
-6516	Point de contrôle n°1.[ENTER][ENTER]Allez au point de contrôle n°1.
 6517	Allez en patrouille.
 6518	La patrouille du château Yongan.
 6519	1 valeur(1)
@@ -6525,7 +6361,6 @@
 6525	Patrouille royale de la zone Pyungmoo
 6526	Patrouille terminée.
 6527	Comme récompense pour avoir patrouillé, vous[ENTER]obtenez un bonus d'expérience.
-6528	Trouvez le point de contrôle n°4.
 6529	Allez au point de contrôle n°4.
 6530	Vous avez trouvé le point de contrôle n°4.
 6531	Point de contrôle n°3.
@@ -6640,12 +6475,9 @@
 6640	Votre cheval n'a pas besoin d'entraînement[ENTER]supplémentaire. Tentez d'obtenir le livre[ENTER]d'équitation militaire.
 6641	Venez jusqu'à moi à cheval.
 6642	Votre formation est presque finie![ENTER]Partez et explorez la carte sur votre cheval.[ENTER]Peut-être ce sera plus dur qu'auparavant, mais ne[ENTER]vous inquiétez pas. Partez et soyez juste[ENTER]prudent. Je sais que vous allez réussir. Au[ENTER]revoir, mon ami et revenez bientôt. Les résultats[ENTER]de votre formation sont notés sur votre médaille[ENTER]de cheval. Cela ne durera pas longtemps avant que[ENTER]vous atteignez le niveau intermédiaire.
-6643	1 val(1) 12.50%
 6644	But atteint ! (8)
 6645	Il semble que vous avez amélioré votre compétence[ENTER]en tant que cavalier.[ENTER]Partez et explorez la carte sur votre cheval.[ENTER]Même si c'est un peu dangereux; avec votre[ENTER]formation, vous devriez être capable de le faire.[ENTER]C'est un long voyage, donc vous devriez vite[ENTER]partir. Adieu, mon ami et revenez bientôt. Les[ENTER]résultats de votre formation sont notés sur votre[ENTER]médaille équestre. Il est grand temps d'augmenter[ENTER]le niveau de votre cheval!
-6646	1 val(1) 11.11%
 6647	Vous semblez en avoir appris assez. C'est le[ENTER]moment d'en apprendre plus. Allez voir[ENTER]l'avant-poste principal. Vérifiez votre médaille[ENTER]équestre ! Elle vous montrera les résultats de[ENTER]votre formation.
-6648	1 val(1) 25.00%
 6649	Il semble que votre cheval s'est développé! Mais[ENTER]selon moi, vous êtes toujours un novice[ENTER]concernant votre cheval. Vous devriez améliorer[ENTER]votre entraînement, puisque c'est la base pour[ENTER]améliorer un cheval. Montez sur votre cheval[ENTER]arrière faites un tour. Les résultats de votre[ENTER]formation sont notés sur votre médaille équestre.
 6650	Le statut de la quête est étrange
 6651	Trouvez une médaille équestre !
@@ -6742,7 +6574,6 @@
 6742	Choisissez le pourcentage de bonus[ENTER]supplémentaire :
 6743	구현중입니다.
 6744	Une quête est déjà en cours. Pour pouvoir[ENTER]commencer une autre quête vous devez terminer ou[ENTER]annuler celle en cours.
-6745	Aa
 6746	annuler %s
 6747	Voulez-vous vraiment abandonner cette quête?
 6748	Oui, abandonner.
@@ -6753,7 +6584,6 @@
 6753	questscroll5.kill_race:%s]
 6754	Pour avoir terminé la quête vous recevez une[ENTER]récompense.
 6755	%s terminé!
-6756	Ab%sDc
 6757	select_reward_item.prob_pos=%s
 6758	select_reward_item.overflow
 6759	Reçu %s yangs
@@ -6772,10 +6602,8 @@
 6772	Rapport remis à zéro
 6773	Remise à zéro des compétences : confirmation
 6774	Vous ne pourrez revenir en arrière. Voulez-vous[ENTER]vraiment le faire?
-6775	RESET_SKILL[%s]
 6776	Compétence oubliée
 6777	Compétence[ENTER]%s[ENTER]réinitialisée.
-6778	La compétence choisie a été réinitialisée.
 6779	Ce parchemin vous permet de réinitialiser tous[ENTER]les points de progression. Toutes vos[ENTER]statistiques sont concernées : VIT, INT, STR et[ENTER]DEX seront ramenées à 1.[ENTER]Les points ainsi récupérés pourront être utilisés[ENTER]comme bon vous semble.[ENTER][ENTER]Voulez-vous utiliser le parchemin ?
 6780	Veuillez confirmez l'oubli des compétences
 6781	Tous vos points de compétences vont être[ENTER]supprimés et vous devrez tout recommencer.[ENTER][ENTER]Etes-vous sûr de vouloir utiliser le parchemin[ENTER]d'oubli des compétences ?
@@ -6800,7 +6628,6 @@
 6800	Votre niveau est trop bas !
 6801	Vous ne pouvez monter à cheval lorsque vous êtes[ENTER]transformé en monstre !
 6802	Vous êtes déjà à cheval ! Si vous souhaitez[ENTER]changer de monture, descendez d'abord de cheval.
-6803	Vous devez d'abord renvoyer votre cheval, avant[ENTER]de pouvoir utiliser une autre monture.
 6804	Echanger Sceau Animal
 6805	Bonjour ! J'ai entendu dire que vous échangiez[ENTER]les Sceaux d'animaux ? Ces Sceaux ont trop de[ENTER]pouvoir pour moi, je ne peux pas encore les[ENTER]utiliser ...
 6806	Heuk-Young:
@@ -6905,7 +6732,6 @@
 6905	Si vous voulez oublier vos compétences, revenez[ENTER]me voir à nouveau
 6906	Vous n'avez pas assez de Yangs. Je ne peux pas[ENTER]vous aider; j'ai besoin d'argent pour vivre.
 6907	Cet article vous offre la possibilité d'oublier[ENTER]votre apprentissage et d'en commencer un nouveau.[ENTER]Cependant, vous devez avoir atteint au moins le[ENTER]niveau 31 pour l'utiliser. Vous êtes alors libre[ENTER]de changer votre destin. Voulez-vous vraiment[ENTER]oublier les compétences que vous avez apprises[ENTER]jusque-là ?
-6908	Vous ne suivez aucun apprentissage et n'avez pas[ENTER]encore de points de compétence qui puissent être[ENTER]réinitialisés !
 6909	Cet objet ne peut être utilisé qu'à partir du[ENTER]niveau 31.
 6910	Vous n'avez pas encore commencé à apprendre ![ENTER]Tant que vous n'aurez pas dépensé de point de[ENTER]compétence, vous ne pourrez pas les[ENTER]réinitialiser. Revenez me voir si vous faites un[ENTER]erreur lors de votre apprentissage et que vous[ENTER]voulez la corriger, alors je me ferais une joie[ENTER]de vous aider.
 6911	Votre niveau est %s. Je ne peux pas vous aider. A[ENTER]ce niveau, vous ne pouvez plus changer vos[ENTER]compétences. C'est uniquement avant le niveau 30[ENTER]que vous pouvez choisir à nouveau.
@@ -6934,9 +6760,7 @@
 6934	Oh non ! Un araignée démoniaque et agressive a[ENTER]fait son nid au troisième niveau du donjon des[ENTER]araignées, la baronne araignée. Selon[ENTER]l'inscription, une clé spéciale est nécessaire[ENTER]pour accéder à cette caverne cachée. Allez voir[ENTER]Uriel et demandez-lui ce qu'il sait sur cette[ENTER]clé. Rassemblez ensuite une troupe de guerriers[ENTER]compétents et donnez l'assaut ensemble à la[ENTER]cachette de la baronne araignée ! Tenez, j'ai un[ENTER]autre ticket pour vous.
 6935	Cette porte ne peut être ouverte qu'avec la clé[ENTER]des araignées.
 6936	La clé des araignées
-6937	Je dois maintenant rendre visite à Uriel le plus[ENTER]vite possible.
 6938	Ah, vous êtes de retour. Alors le capitaine a dû[ENTER]aussi vous demander d'aller tuer la baronne[ENTER]araignée ? Mais l'entrée de la caverne du nid est[ENTER]fermée et ne peut être ouverte qu'avec la clé des[ENTER]araignées. Sa fabrication est très coûteuse. Mais[ENTER]si vous m'apportez une glande de venin[ENTER]d'araignée, une poche avec des oeufs d'araignée,[ENTER]une toile d'araignée, des yeux d'araignée, des[ENTER]pattes d'araignée ainsi que le poison de la reine[ENTER]Araignée, je la fabriquerai pour vous.
-6939	Vous voulez que je fabrique la clé des araignées[ENTER]pour vous ? Pour cela j'ai besoin d'une glande de[ENTER]venin d'araignée, d'une poche avec des oeufs[ENTER]d'araignée, d'une toile d'araignée, d'yeux[ENTER]d'araignée, de pattes d'araignée ainsi que de[ENTER]poison de la reine Araignée. Pouvez-vous trouver[ENTER]tous les ingrédients ?
 6940	Impressionnant ! Vous avez trouvé tous les[ENTER]ingrédients nécessaires à la fabrication de la[ENTER]clé des araignées. Attendez un instant. Cela ne[ENTER]doit pas durer trop longtemps...
 6941	Ah, réussi ! Voici la clé des araignées. Elle[ENTER]ouvre la porte de la cachette de la baronne[ENTER]araignée. Je vous souhaite bonne chance, à vous[ENTER]et à vos camarades, pour votre combat contre ce[ENTER]monstre aux longues pattes ! Mais vous devez vous[ENTER]dépêcher, la clé est très instable. Au bout de 24[ENTER]heures, les différents éléments qui la composent[ENTER]ne tiennent plus ensemble, la clé se désagrège.
 6942	Oh oh ! Ma crainte s'est réalisée, c'est bien en[ENTER]forgeant qu'on devient forgeron. Vous devez[ENTER]savoir que le procédé utilisé pour forger cette[ENTER]clé est très compliqué. La plus petite erreur[ENTER]fait tout échouer. Malheureusement, j'ai gaspillé[ENTER]tous les ingrédients à base d'araignée que vous[ENTER]avez consciencieusement collecté. Ça fonctionnera[ENTER]sûrement mieux la prochaine fois !
@@ -7086,15 +6910,11 @@
 7086	Je ne suis pas sûr que ça soit exact.[ENTER]Pourriez-vous vérifier s'il vous plaît?
 7087	Oui, c'est bien cela.
 7088	Je ne suis pas sûr.
-7089	C'est bon d'entendre ça. Revenez me voir.
-7090	Dommage! Allez-vous-en...
 7091	Merveilleux, c'est parfait. N'hésitez pas à[ENTER]revenir.
 7092	Êtes-vous sûr que c'est le bon ordre?
 7093	Soon:
 7094	Oui, bien sûr.
 7095	Non, pas vraiment.
-7096	C'est bon d'entendre ça. Revenez me voir.
-7097	Ç'eut été trop beau... Hors de ma vue!
 7098	Parfait, tout simplement parfait! Je vous[ENTER]remercie beaucoup!
 7099	Bla, bla ... Par l'enfer... Qui êtes vous? Ne me[ENTER]dérangez jamais pendant ma lecture! Argh! une[ENTER]minute. Désolé je ne voulais pas vous hurler[ENTER]dessus. Parfois dans mes lectures je tombe sur[ENTER]des choses que je ne comprends pas et c'est[ENTER]vraiment très frustrant. Pourriez-vous me donner[ENTER]un coup de main ?
 7100	J'examine les éventails de guerre des chamanes.[ENTER]J'ai du mal à déterminer lesquels sont les[ENTER]meilleurs. Il m'est impossible de tous les[ENTER]tester. Uriel l'érudit doit tout savoir de ces[ENTER]éventails. Pourriez-vous aller lui demander? Je[ENTER]suis intéressé en particulier par ceux-ci:[ENTER]Éventail aile de grue, éventail aquatique,[ENTER]éventail triple et éventail oiseau céleste.
@@ -8133,7 +7953,6 @@
 8133	Voulez-vous abandonner cette quête ?
 8134	Le Mont Sohan est trop loin pour vous ?[ENTER]Repensez-y. C'est une importante mission.
 8135	Hum, vous avez peur des archers pestiférés ?[ENTER]Je vous ai donc surestimé ...[ENTER]Bon, il n'y a plus d'espoir à présent...
-8136	Que lisez-vous ?
 8137	Vous avez réuni les 100 "Œil d'araignée " pour la[ENTER]nouvelle recette d'Octavio. Vous devriez vite lui[ENTER]apporter.
 8138	Yeux d'araignée spéciaux
 8139	Trouvez les "Œil d'araignée"
@@ -8272,7 +8091,6 @@
 8272	Si vous êtes trop occupé, revenez plus tard.
 8273	Vous abandonnez? Vraiment? Donc, je suppose que[ENTER]je devrais chercher tout moi-même. J'ai vraiment[ENTER]besoin de cette porcelaine. Au revoir et bonne[ENTER]chance.
 8274	Ah ! C'est ça.
-8275	Ennemi aperçu à l'horizon
 8276	Capitaine
 8277	Je ne sais pas.
 8278	Montrez-moi à nouveau.
@@ -8285,7 +8103,6 @@
 8285	Vous avez reçu 1.300.000 points d'expérience.
 8286	Pourquoi ce silence? Vous ne comprenez pas ?
 8287	Je dois encore y réfléchir.
-8288	Ennemi aperçu à l'horizon
 8289	À propos du code secret ...
 8290	J'abandonne.
 8291	C'est donc si difficile ? Vous étiez mon dernier[ENTER]espoir ... Qui pourra déchiffrer cela à présent ?
