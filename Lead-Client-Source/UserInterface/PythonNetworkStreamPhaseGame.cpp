@@ -2075,6 +2075,7 @@ bool CPythonNetworkStream::RecvScriptPacket()
 		return false;
 
 	str.resize(strlen(str.c_str()));
+	LocaleService_RememberQuestButton(str);
 	LocaleService_ReplaceTags(str);
 
 	if (str.compare(0, 13, "[DESTROY_ALL]") == 0)

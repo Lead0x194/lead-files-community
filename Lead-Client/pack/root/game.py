@@ -1452,10 +1452,7 @@ class GameWindow(ui.ScriptWindow):
 		name = localeInfo.REQUESTED_LANGUAGE
 		localeInfo.REQUESTED_LANGUAGE = None
 
-		if not localeInfo.SetLanguage(name):
-			return
-
-		self.interface.Rebuild()
+		self.interface.Rebuild(lambda: localeInfo.SetLanguage(name))
 		self.interface.SetMapName(getattr(self, "currentMapName", ""))
 		self.affectShower.RefreshDescription(uiAffectShower.AffectShower.AFFECT_DATA_DICT)
 

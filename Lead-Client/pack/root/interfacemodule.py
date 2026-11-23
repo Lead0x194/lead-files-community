@@ -6,6 +6,8 @@ import systemSetting
 import wndMgr
 import chat
 import app
+import net
+import gc
 import player
 import uiTaskBar
 import uiCharacter
@@ -1325,9 +1327,9 @@ class Interface(object):
 			buttonImageFileName=iconName
 
 		if "highlight" == iconType:
-			btn.SetUpVisual("locale/ymir_ui/highlighted_quest.tga")
-			btn.SetOverVisual("locale/ymir_ui/highlighted_quest_r.tga")
-			btn.SetDownVisual("locale/ymir_ui/highlighted_quest_r.tga")
+			btn.SetUpVisual("locale/common/ui/highlighted_quest.tga")
+			btn.SetOverVisual("locale/common/ui/highlighted_quest_r.tga")
+			btn.SetDownVisual("locale/common/ui/highlighted_quest_r.tga")
 		else:
 			btn.SetUpVisual(localeInfo.GetLetterCloseImageName())
 			btn.SetOverVisual(localeInfo.GetLetterOpenImageName())
@@ -1615,7 +1617,7 @@ class Interface(object):
 
 	REBUILD_KEEP_OPEN_LIST = ("wndCharacter", "wndInventory", "wndDragonSoul", "wndMessenger", "wndGuild", "wndChatLog", "wndExpandedTaskBar")
 
-	def Rebuild(self):
+	def Rebuild(self, changeEvent):
 		openDict = {}
 		for windowName in self.REBUILD_KEEP_OPEN_LIST:
 			window = getattr(self, windowName, None)
@@ -1631,14 +1633,16 @@ class Interface(object):
 
 		self.HideAllWindows()
 		self.Close()
+		gc.collect()
+		changeEvent()
 		self.__init__()
 		miniMap.LoadAtlas()
 		self.MakeInterface()
 		self.ShowDefaultWindows()
 
 		questButtonList.reverse()
-		for questButton in questButtonList:
-			self.BINARY_RecvQuest(*questButton)
+		for index, name, iconType, iconName in questButtonList:
+			self.BINARY_RecvQuest(index, net.GetQuestButtonName(index) or name, iconType, iconName)
 
 		for pid, memberName, vid in partyMemberList:
 			self.AddPartyMember(pid, memberName)

@@ -33,7 +33,9 @@ class PopupDialog(ui.ScriptWindow):
 		PythonScriptLoader = ui.PythonScriptLoader()
 		PythonScriptLoader.LoadScriptFile(self, "UIScript/PopupDialog.py")
 
-	def Open(self, Message, event = 0, ButtonName = localeInfo.UI_CANCEL):
+	def Open(self, Message, event = 0, ButtonName = None):
+		if ButtonName is None:
+			ButtonName = localeInfo.UI_CANCEL
 
 		if True == self.IsShow():
 			self.Close()
