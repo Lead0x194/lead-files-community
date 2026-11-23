@@ -1,7 +1,6 @@
 import app
 import ui
 import uiScriptLocale
-import localeInfo
 
 class MapNameShower(ui.ExpandedImageBox):
 
@@ -13,91 +12,41 @@ class MapNameShower(ui.ExpandedImageBox):
 	STATE_FADE_OUT = 3
 
 	def __init__(self):
-		if localeInfo.IsRTL():
-			self.MAP_NAME_IMAGE =	{
-							"metin2_map_a1"  : uiScriptLocale.MAPNAME_PATH+"a1.tga",
-							"map_a2"         : uiScriptLocale.MAPNAME_PATH+"a2.tga",
-							"season2/metin2_map_a2_1": uiScriptLocale.MAPNAME_PATH+"a2_2.tga",
-							"metin2_map_a3"  : uiScriptLocale.MAPNAME_PATH+"a3.tga",
-							"metin2_map_b1"  : uiScriptLocale.MAPNAME_PATH+"b1.tga",
-							"map_b2"         : uiScriptLocale.MAPNAME_PATH+"b2.tga",
-							"metin2_map_b3"  : uiScriptLocale.MAPNAME_PATH+"b3.tga",
-							"metin2_map_c1"  : uiScriptLocale.MAPNAME_PATH+"c1.tga",
-							"map_c2"         : uiScriptLocale.MAPNAME_PATH+"c2.tga",
-							"metin2_map_c3"  : uiScriptLocale.MAPNAME_PATH+"c3.tga",
-							"metin2_map_deviltower1" : uiScriptLocale.MAPNAME_PATH+"devil1_title.tga",
-							"metin2_map_n_desert_01" : uiScriptLocale.MAPNAME_PATH+"desert1.tga",
-							"season2/metin2_map_n_desert_02": uiScriptLocale.MAPNAME_PATH+"desert2.tga",
-							"metin2_map_n_flame_01" : uiScriptLocale.MAPNAME_PATH+"frame1.tga",
-							"season2/metin2_map_n_flame_02": uiScriptLocale.MAPNAME_PATH+"frame2.tga",
-							"metin2_map_milgyo" : uiScriptLocale.MAPNAME_PATH+"milgyo.tga",
-							"season2/metin2_map_milgyo_a": uiScriptLocale.MAPNAME_PATH+"milgyo2.TGA",
-							"metin2_map_monkeydungeon" : uiScriptLocale.MAPNAME_PATH+"monkey1.tga",
-							"metin2_map_monkeydungeon_02" : uiScriptLocale.MAPNAME_PATH+"monkey2.tga",
-							"metin2_map_monkeydungeon_03" : uiScriptLocale.MAPNAME_PATH+"monkey3.tga",
-							"metin2_map_guild_01" : uiScriptLocale.MAPNAME_PATH+"guild1.tga",
-							"metin2_map_guild_02" : uiScriptLocale.MAPNAME_PATH+"guild2.tga",
-							"metin2_map_guild_03" : uiScriptLocale.MAPNAME_PATH+"guild3.tga",
-							"season2/metin2_map_skipia_dungeon_01": uiScriptLocale.MAPNAME_PATH+"skipia.tga",
-							"season2/metin2_map_skipia_dungeon_02": uiScriptLocale.MAPNAME_PATH+"skipia.tga",
-							"map_n_snowm_01" : uiScriptLocale.MAPNAME_PATH+"snow1.tga",
-							"season2/map_n_snowm_02": uiScriptLocale.MAPNAME_PATH+"snow2.tga",
-							"metin2_map_spiderdungeon" : uiScriptLocale.MAPNAME_PATH+"spider1.tga",
-							"metin2_map_trent" : uiScriptLocale.MAPNAME_PATH+"trent.tga",
-							"metin2_map_trent02" : uiScriptLocale.MAPNAME_PATH+"trent02.tga",
-							"season2/metin2_map_trent_a": uiScriptLocale.MAPNAME_PATH+"trent_a.tga",
-							"season2/metin2_map_trent02_a": uiScriptLocale.MAPNAME_PATH+"trent02_a.tga",
-							"metin2_map_dd"	:	uiScriptLocale.MAPNAME_PATH+"devil_basement.tga",
-							"metin2_map_devilsCatacomb"	:	uiScriptLocale.MAPNAME_PATH+"devil_basement.tga",
-							"metin2_map_dd"	:	uiScriptLocale.MAPNAME_PATH+"devil_basement.tga",
-							"season1/metin2_map_WL_01" :	uiScriptLocale.MAPNAME_PATH+"wl.tga",
-							"season1/metin2_map_nusluck01":	uiScriptLocale.MAPNAME_PATH+"nusluck.tga",	
-						}
-		else:
-			self.MAP_NAME_IMAGE =	{
-							"metin2_map_a1"  : uiScriptLocale.MAPNAME_PATH+"a1.tga",
-							"map_a2"         : uiScriptLocale.MAPNAME_PATH+"a2.tga",
-							"metin2_map_a3"  : uiScriptLocale.MAPNAME_PATH+"a3.tga",
-							"metin2_map_b1"  : uiScriptLocale.MAPNAME_PATH+"b1.tga",
-							"map_b2"         : uiScriptLocale.MAPNAME_PATH+"b2.tga",
-							"metin2_map_b3"  : uiScriptLocale.MAPNAME_PATH+"b3.tga",
-							"metin2_map_c1"  : uiScriptLocale.MAPNAME_PATH+"c1.tga",
-							"map_c2"         : uiScriptLocale.MAPNAME_PATH+"c2.tga",
-							"metin2_map_c3"  : uiScriptLocale.MAPNAME_PATH+"c3.tga",
-							"map_n_snowm_01" : uiScriptLocale.MAPNAME_PATH+"snow1.tga",
-							"metin2_map_deviltower1" : uiScriptLocale.MAPNAME_PATH+"devil1_title.tga",
-							"metin2_map_n_flame_01" : uiScriptLocale.MAPNAME_PATH+"frame1.tga",
-							"metin2_map_n_desert_01" : uiScriptLocale.MAPNAME_PATH+"desert1.tga",
-							"metin2_map_milgyo" : uiScriptLocale.MAPNAME_PATH+"milgyo.tga",
-							"metin2_map_monkeydungeon" : uiScriptLocale.MAPNAME_PATH+"monkey1.tga",
-							"metin2_map_monkeydungeon_02" : uiScriptLocale.MAPNAME_PATH+"monkey2.tga",
-							"metin2_map_monkeydungeon_03" : uiScriptLocale.MAPNAME_PATH+"monkey3.tga",
-							"metin2_map_guild_01" : uiScriptLocale.MAPNAME_PATH+"guild1.tga",
-							"metin2_map_guild_02" : uiScriptLocale.MAPNAME_PATH+"guild2.tga",
-							"metin2_map_guild_03" : uiScriptLocale.MAPNAME_PATH+"guild3.tga",
-							"metin2_map_trent" : uiScriptLocale.MAPNAME_PATH+"trent.tga",
-							"metin2_map_trent02" : uiScriptLocale.MAPNAME_PATH+"trent02.tga",
-							"season2/map_n_snowm_02": uiScriptLocale.MAPNAME_PATH+"snow2.tga",
-							"season2/metin2_map_a2_1": uiScriptLocale.MAPNAME_PATH+"a2_2.tga",
-							"season2/metin2_map_n_desert_02": uiScriptLocale.MAPNAME_PATH+"desert2.tga",
-							"season2/metin2_map_n_flame_02": uiScriptLocale.MAPNAME_PATH+"frame2.tga",
-							"season2/metin2_map_milgyo_a": uiScriptLocale.MAPNAME_PATH+"milgyo2.TGA",
-							"season2/metin2_map_trent_a": uiScriptLocale.MAPNAME_PATH+"trent_a.tga",
-							"season2/metin2_map_trent02_a": uiScriptLocale.MAPNAME_PATH+"trent02_a.tga",
-							"season2/metin2_map_skipia_dungeon_01": uiScriptLocale.MAPNAME_PATH+"skipia.tga",
-							"season2/metin2_map_skipia_dungeon_02": uiScriptLocale.MAPNAME_PATH+"skipia.tga",
-							"metin2_map_devilsCatacomb"	:	uiScriptLocale.MAPNAME_PATH+"devil_basement.tga",
-							"metin2_guild_village_01"	:	uiScriptLocale.MAPNAME_PATH+"a4.tga",
-							"metin2_guild_village_02"	:	uiScriptLocale.MAPNAME_PATH+"b4.tga",
-							"metin2_guild_village_03"	:	uiScriptLocale.MAPNAME_PATH+"c4.tga",
-							"metin2_map_BayBlackSand"	:	uiScriptLocale.MAPNAME_PATH+"bay.tga",
-							"metin2_map_Mt_Thunder"		:	uiScriptLocale.MAPNAME_PATH+"thunder.tga",
-							"metin2_map_dawnmistwood"	:	uiScriptLocale.MAPNAME_PATH+"dawn.tga",
-							"Metin2_map_CapeDragonHead"	:	uiScriptLocale.MAPNAME_PATH+"cape.tga",
-							"metin2_map_spiderdungeon"	:	uiScriptLocale.MAPNAME_PATH+"spider1.tga",
-							"metin2_map_spiderdungeon_02"	:	uiScriptLocale.MAPNAME_PATH+"spider1.tga",
-							"metin2_map_spiderdungeon_03"		:	uiScriptLocale.MAPNAME_PATH+"spider1.tga",
-						}
+		self.MAP_NAME_IMAGE = {
+			"metin2_map_a1" : "a1.tga",
+			"map_a2" : "a2.tga",
+			"metin2_map_a3" : "a3.tga",
+			"metin2_map_b1" : "b1.tga",
+			"metin2_map_b3" : "b3.tga",
+			"metin2_map_c1" : "c1.tga",
+			"metin2_map_c3" : "c3.tga",
+			"metin2_map_guild_01" : "guild1.tga",
+			"metin2_map_guild_02" : "guild2.tga",
+			"metin2_map_guild_03" : "guild3.tga",
+			"metin2_guild_village_01" : "a4.tga",
+			"metin2_guild_village_02" : "b4.tga",
+			"metin2_guild_village_03" : "c4.tga",
+			"map_n_snowm_01" : "snow1.tga",
+			"metin2_map_n_flame_01" : "frame1.tga",
+			"metin2_map_n_desert_01" : "desert1.tga",
+			"metin2_map_milgyo" : "milgyo.tga",
+			"metin2_map_trent" : "trent.tga",
+			"metin2_map_trent02" : "trent02.tga",
+			"metin2_map_BayBlackSand" : "bay.tga",
+			"metin2_map_Mt_Thunder" : "thunder.tga",
+			"metin2_map_dawnmistwood" : "dawn.tga",
+			"Metin2_map_CapeDragonHead" : "cape.tga",
+			"metin2_map_monkeydungeon" : "monkey1.tga",
+			"metin2_map_monkeydungeon_02" : "monkey2.tga",
+			"metin2_map_monkeydungeon_03" : "monkey3.tga",
+			"metin2_map_spiderdungeon" : "spider1.tga",
+			"metin2_map_spiderdungeon_02" : "spider1.tga",
+			"metin2_map_spiderdungeon_03" : "spider1.tga",
+			"season2/metin2_map_skipia_dungeon_01" : "skipia.tga",
+			"metin2_map_skipia_dungeon_02" : "skipia.tga",
+			"metin2_map_deviltower1" : "devil1_title.tga",
+			"metin2_map_devilsCatacomb" : "devil_basement.tga",
+		}
 
 		ui.ExpandedImageBox.__init__(self, "TOP_MOST")
 		self.AddFlag("not_pick")
@@ -159,7 +108,7 @@ class MapNameShower(ui.ExpandedImageBox):
 			return
 
 		try:
-			self.LoadImage(self.MAP_NAME_IMAGE[mapName])
+			self.LoadImage(uiScriptLocale.MAPNAME_PATH + self.MAP_NAME_IMAGE[mapName])
 		except RuntimeError:
 			return
 
