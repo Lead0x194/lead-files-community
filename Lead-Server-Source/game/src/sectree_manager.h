@@ -27,7 +27,7 @@ struct TAreaInfo
 struct npc_info
 {
 	BYTE bType;
-	const char* name;
+	std::string name;
 	long x, y;
 	npc_info(BYTE bType, const char* name, long x, long y)
 		: bType(bType), name(name), x(x), y(y)

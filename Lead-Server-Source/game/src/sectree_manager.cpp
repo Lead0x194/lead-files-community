@@ -1116,7 +1116,7 @@ void SECTREE_MANAGER::SendNPCPosition(LPCHARACTER ch)
 	for (it = m_mapNPCPosition[lMapIndex].begin(); it != m_mapNPCPosition[lMapIndex].end(); ++it)
 	{
 		np.bType = it->bType;
-		strlcpy(np.name, it->name, sizeof(np.name));
+		strlcpy(np.name, it->name.c_str(), sizeof(np.name));
 		np.x = it->x;
 		np.y = it->y;
 		buf.write(&np, sizeof(np));
