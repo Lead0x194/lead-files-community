@@ -112,6 +112,7 @@ namespace UI
 
 			void		RunMouseMove(long x, long y);
 			void		RunMouseLeftButtonDown(long x, long y);
+			bool		RunMouseWheel(int nLen);
 			void		RunMouseLeftButtonUp(long x, long y);
 			void		RunMouseLeftButtonDoubleClick(long x, long y);
 			void		RunMouseRightButtonDown(long x, long y);

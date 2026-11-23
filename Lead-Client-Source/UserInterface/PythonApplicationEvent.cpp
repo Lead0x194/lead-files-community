@@ -60,6 +60,9 @@ void CPythonApplication::OnMouseMiddleButtonUp(int x, int y)
 
 void CPythonApplication::OnMouseWheel(int nLen)
 {
+	if (UI::CWindowManager::Instance().RunMouseWheel(nLen))
+		return;
+
 	CCameraManager& rkCmrMgr=CCameraManager::Instance();
 	CCamera* pkCmrCur=rkCmrMgr.GetCurrentCamera();
 	if (pkCmrCur)
