@@ -19,12 +19,12 @@
 19	Ha a %s szint alatt vagy, nem iratkozhatsz be[ENTER]gyakorló órára.
 20	Szeretnél jelentkezni egy gyakorló harcra?[ENTER]Akkor add meg az edzőpartnered nevét.
 21	Nem tudod, kivel szeretnél harcolni? Ha nem adod[ENTER]meg a nevet, nem tudlak bejegyezni.
-22	Rendben, %s. Feliratkoztál egy gyakorló harcra %s[ENTER]ellen.
+22	Rendben, %s. Feliratkoztál egy gyakorló harcra %s ellen.
 23	%s a kihívás elfogadását várja %s-tól.
 24	%s, készen állsz a gyakorló harcra %s ellen?
 25	%s pillanatnyilag nincs bejelentkezve. Próbáld[ENTER]újra később, vagy intézkedj, hogy találkozhass az[ENTER]edzőpartnereddel.
 26	Szeretnék valamit feljavíttatni.
-27	Kovács
+27	Kovács:
 28	Üdvözöllek![ENTER]Én felelek a tárgyak feljavításáért. Ha fel[ENTER]szeretnél javíttatni egy tárgyat, hozd csak ide[ENTER]nekem.
 29	Információ:
 30	Húzz rá egy tárgyat a leltáradból a Kovácsra.
@@ -50,10 +50,10 @@
 50	Nem venni
 51	Megvetted a 3-az-egyben Horgász felszerelést. Jó[ENTER]szórakozást! És kérlek, szentelj egy kis[ENTER]figyelmet a Horgászversenyről szóló felhívásnak[ENTER]is. Viszlát hamarosan!
 52	Sajnálom, nincs elég Yangod. De ne aggódj,[ENTER]hamarosan lesz másik lehetőséged. Hamarosan[ENTER]találkozunk!
-53	Ismeretlen gomb [%s]
+53	inaktív gomb [%s]
 54	Információ a Horgászversenyről
 55	Ha házas vagy, nem válthatsz birodalmat. Csak a[ENTER]nem házas játékosok tudnak birodalmat váltani.
-56	Birodalomváltás:
+56	Birodalomváltás
 57	El kell válnod, ha birodalmat akarsz váltani.
 58	Nem válthatsz birodalmat, amíg át vagy változva.
 59	Akkor használd ezt a tárgyat, ha már nem vagy[ENTER]átváltozva.
@@ -172,10 +172,10 @@
 172	Chaegirab biológus, Uriel tanítványa sürgősen[ENTER]keres téged. Menj el hozzá és kérdezd meg,[ENTER]tudsz-e neki segíteni.
 173	Most már van elég Tue gombám. Jó munka! Hálám[ENTER]jeléül adok neked egy kis Yangot és a kutatásom[ENTER]eredményét.
 174	Jutalmul kapsz 200.000 tapasztalati pontot és[ENTER]20.000 Yangot. Továbbá kapsz még egy Sisak+2-t.
-175	Fémsisak
-176	Lánckapucni
-177	Gúnyolódó sisak
-178	Főnix kalap
+175	Vas sisak+2
+176	Lánc csuklya+2
+177	Gúnyolódó sisak+2
+178	Főnix kalap+2
 179	Sajnálom, de ez a Tue gomba nem olyan jó[ENTER]minőségű, és számomra nem megfelelő. Kérlek,[ENTER]keress egy másikat!
 180	Egek ura, kérlek, segíts...[ENTER]Minden fajta növényt tanulmányozok ebben a[ENTER]birodalomban. Rengeteg az elvégzendő munka és[ENTER]nincs időm felfedező túrákra menni. Tudnál[ENTER]segíteni?
 181	Épp a Tue gombát tanulmányozom. Néhány kísérletet[ENTER]kell elvégeznem a Tue gombával és ehhez 10-re van[ENTER]szükségem. Tudnál nekem hozni? Nagyon hálás[ENTER]leszek a segítségedért![ENTER]Mindig csak egy Tue gombát hozz egyszerre, amit[ENTER]meg tudok vizsgálni!
@@ -205,7 +205,7 @@
 205	Jutalmul Chaegirab biológus ad neked 2000[ENTER]tapasztalati pontot és 3000 Yangot. Továbbá kapsz[ENTER]egy páncél+3-at.
 206	Chaegirab biológus, Uriel tanítványa sürgősen[ENTER]keres téged. Menj el hozzá és kérdezd meg,[ENTER]tudsz-e neki segíteni.
 207	Szerzetes lemezvért+3
-208	Azúr ruha
+208	Azúr ruha+3
 209	Requiem lemezvért+3
 210	Crimson ruha+3
 211	Sajnálom, de ez a Harangvirág rossz minőségű.[ENTER]Kérlek, hozz egy újat!
@@ -458,7 +458,7 @@
 458	Chaegirab Biológus:
 459	Oh! Ez a Vörös szellemfa ág nagyon jó minőségű![ENTER]Azonnal megkezdem a kutatást.
 460	Viszont még szükségem van
-461	 darabra belőlük.
+461	darabra belőlük.
 462	Kérlek, keress még néhányat![ENTER][ENTER]És ne feledd, időre van szükségem az elemzéshez.[ENTER]Holnapig nem tudok megvizsgálni másik faágat.
 463	Chaegirab Biológus:
 464	Összegyűjtötted mind a 40 faágat! Köszönöm.[ENTER]Most már csak a Erdei szellem Lélekkövére van[ENTER]szükségem, hogy megértsem ezeket az élő fákban[ENTER]rejtőző lényeket. Megtennéd ezt még nekem?[ENTER]A Vörös Erdőben lévő fáknál találod.
@@ -486,7 +486,7 @@
 486	Továbbá oda kell adnom ezt a Bíbor ében ládát.[ENTER]Vigyázz rá!
 487	Ez a jutalmad, mert teljesítetted Chaegirab[ENTER]kérését.
 488	Jutalmul, amiért teljesítetted Chaegirab kérését,[ENTER]a más játékosok feléd irányuló támadásai (PvP)[ENTER]elleni sebzés ellenállásod véglegesen meg lett[ENTER]növelve 10%-kal.
-489	A hatás végleges.
+489	A növekedés végleges.
 490	Chaegirab Biológus:
 491	A biológus kérése
 492	A biológus kutatása
@@ -511,7 +511,7 @@
 511	Oh, találtál még jegyzetet![ENTER]Egy pillanat és megnézem...
 512	Oh, remek! Jó munka!
 513	Viszont még szükségem van
-514	 darabra belőlük.
+514	darabra belőlük.
 515	Viszont még szükségem van %s jegyzetre.
 516	Kérlek keress még belőlük![ENTER][ENTER]És ne feledd, időre van szükségem, hogy[ENTER]megvizsgáljam őket. Holnapig nem tudom[ENTER]tanulmányozni a másikat.
 517	Összegyűjtöttél 50 jegyzetet, ez fantasztikus![ENTER]Gondolom, mostanra már tudod, mire van még[ENTER]szükségem.[ENTER]Még mindig hiányzik a Vezér Lélekköve. Ha az is[ENTER]megvan, készen is vagyunk.[ENTER]Ezt még meg tudod csinálni, ugye? Szerezd meg egy[ENTER]Vezér Lélekkövét és hozd el nekem. Ezt a Vezér[ENTER]Szörnyekből kaphatod meg.
@@ -539,7 +539,7 @@
 539	Ezúttal a Kék ében láda az. Kíváncsi vagy? Akkor[ENTER]nyisd ki gyorsan!
 540	Ez a jutalmad, mert teljesítetted Chaegirab[ENTER]kérését.
 541	Jutalmul, amiért teljesítetted Chaegirab kérését,[ENTER]támadó értéked a más játékos karakterek elleni[ENTER]harcokban (PvP) meg lett növelve 8%-kal.
-542	A hatás végleges.
+542	A növekedés végleges.
 543	Seon-Pyeong
 544	Seon-Pyeong kutatása
 545	Seon-Pyeongnak a Seungryong-völgyben szüksége van[ENTER]a segítségedre. Menj és kérdezd meg tőle, mit[ENTER]szeretne.
@@ -633,7 +633,7 @@
 633	Üdvözöllek! Érdekel talán a különböző italok[ENTER]előállítása, amik megerősíteni, vagy gyógyítani[ENTER]tudnak téged?[ENTER]Én orvosként az italkeveréssel foglalkozok.[ENTER]Kitaláltam néhány receptet. Ki akarod őket[ENTER]próbálni?
 634	A dolgok nemesítése fontos mesterség. Téged is[ENTER]érdekelnek az ilyen dolgok? Mutathatok neked[ENTER]néhány gyógynövényes receptet. Ezek rendkívül[ENTER]hatásosak ismert bájitalok erősebb változatainak[ENTER]elkészítéséhez! De azt is megmutathatom, hogyan[ENTER]készíts egy mindennapi övből valódi harci[ENTER]segédeszközt.
 635	Titkos recept
-636	Huahn-So
+636	Huahn-So:
 637	Találtam egy titkos családi receptet. Ezen[ENTER]receptet használva tudok készíteni egy bájitalt,[ENTER]amivel szinte sebezhetetlenné válsz! Ki akarod[ENTER]próbálni az italom?
 638	E páncél nemesítéséhez a következőkre van[ENTER]szükségem: %s.
 639	Anyagok:
@@ -675,7 +675,7 @@
 675	Győzd le a Démon őröket, hogy megszerezd a[ENTER]Grimaszoló totemet. Ez szolgál kulcsként a 6.[ENTER]emelethez.
 676	Győzd le Charont és bérenceit!
 677	Bizonyítottad, hogy kiváló a hallásod és jók az[ENTER]ösztöneid, megsemmisítetted az igazi Metinkövet![ENTER]Most beléphetsz a 4. szintre.
-678	A Démon-toronyban...
+678	A Démon-toronyba...
 679	A Pecsétkapunál vagy a 4. emeleten. Ki kell[ENTER]nyitnod az öt Ősi pecsétet, hogy feljuss a[ENTER]következő emeletre. Az út teli van olyan[ENTER]lényekkel, akik arra várnak, hogy lecsaphassanak[ENTER]rád. Néhányuknak van kulcsa a Pecsétekhez. Ha[ENTER]elegendő Kulcsköved van, nyisd ki mind az öt Ősi[ENTER]pecsétet, és menj az 5. emeletre. De vigyázz:[ENTER]Csak 20 perced van!
 680	15 perced maradt.
 681	Kinyitottad a Kulcskő pecsétjét, így beléphetsz[ENTER]az 5. szintre. Semmisíts meg minden szörnyet az[ENTER]5. szinten, a Büszke démon király emeletén.
@@ -686,7 +686,7 @@
 686	A torony 6. szintjére akarsz jutni? Remek[ENTER]képességeket és nagy ügyességet kíván, hogy[ENTER]legyőzd ezt az emeletet. Csak akkor tudlak[ENTER]odateleportálni, ha elérted a 75. szintet.
 687	Rendelkezel a szükséges tapasztalattal, hogy jó[ENTER]eséllyel túléld a felsőbb szinteket.[ENTER]Bemehetsz!
 688	Démon torony őr
-689	Indulás
+689	Indulj!
 690	Elhagyni a tornyot
 691	Túl alacsony a szinted. Nem engedhetlek a felső[ENTER]emeletre. Gyere vissza, ha több tapasztalatod[ENTER]lesz. El kell érned legalább a 75-ös szintet.
 692	A Zin-Sa-Gui Torony térkép nyit utat a következő[ENTER]emeletre. Hozzájuthatsz a Metinkövek[ENTER]megsemmisítésével.
@@ -713,7 +713,7 @@
 713	%s csoportja megpróbálja megölni a Kék Sárkányt!
 714	Nincs elegendő kulcsod! A portál aktiválásához[ENTER]szükségem van
 715	Beszerezheted a gonosz Yonghan és Huashin[ENTER]vezetőktől.
-716	El akarom hagyni ezt a helyet!
+716	El akarom hagyni ezt a helyet
 717	Visszaviszlek a barlang bejáratához.
 718	Igen, tedd meg.
 719	Ne, itt maradok.
@@ -735,7 +735,7 @@
 735	Nem, ez túl nehéznek hangzik.
 736	Rendben, megértem a döntésed.
 737	Az idő most nem alkalmas, túl korán jöttél! Még[ENTER]várnod kell ennyit: %s.
-738	Hátralévő idő
+738	Maradék idő:
 739	Gyűjts anyagokat
 740	Anyagok az Átváltoztató gömbhöz
 741	Anyagok összegyűjtve
@@ -743,16 +743,16 @@
 743	Még szükséged van %s darabra ebből:
 744	Minden szükséges anyagot összegyűjtöttél.[ENTER]Térj vissza a Harcos szelleméhez! A Száműzött[ENTER]barlangjának második szintjén találod meg őt.[ENTER]Szükséged lesz még 150.000 Yangra is, hogy[ENTER]megkaphasd a gömböt.
 745	Nem sikerült összegyűjtened az összes anyagot a[ENTER]rendelkezésre álló időben.
-746	Szeretnél nekem adni %s darabot ebből az anyagból?
+746	Szeretnél nekem adni %s darabot ebből az anyagból? 
 747	Sajnos nem tudod megfizetni a munkámat.[ENTER]Szükségem van tőled 150.000 Yangra.
-748	Tessék, szívesen.
+748	Tessék, itt van!
 749	Köszönöm nem, inkább megtartom magamnak!
 750	Köszönöm, keményen dolgoztál.[ENTER]Minden a tervek szerint alakult. Mégsem vagyok[ENTER]annyira berozsdásodva, ahogy gondoltam. Tessék,[ENTER]vedd el ezt:
 751	Jaj ne, a törékeny vén csontjaim ismét cserben[ENTER]hagytak. Nem sikerült Átváltoztató gömböt[ENTER]készítenem. Engedd meg, hogy neked adjam ezt a[ENTER]tárgyat kárpótlásként:
 752	Ahogy kívánod.
-753	Sárkánykő-szilánk?!
+753	Sárkánykő-szilánk+?!
 754	Kezeidben nyugszik egy kődarab. Titkokkal telve[ENTER]csillog, és érzed, amint ereje átáramlik rajtad.[ENTER]Miféle kő ez? Vidd el az Alkimistának. Ő tud[ENTER]neked segíteni a továbbiakban.
-755	Sárkánykő-szilánk?!
+755	Sárkánykő-szilánk+?!
 756	Az egy Sárkánykő töredéke - egy óriási hatalommal[ENTER]bíró, rendkívül ritka és értékes kristály része.[ENTER]Azt mondják, ilyen kő a sárkányok lelke.[ENTER]Hihetetlenül gyönyörű![ENTER]Érzed az erejét, ahogy átáramlik rajtad, amint[ENTER]felveszed és tartod?[ENTER]Hozz nekem összesen tízet ezekből a[ENTER]Sárkánykő-szilánkokból. Akkor át tudom alakítani[ENTER]őket egy teljes kővé.
 757	Sárkánykő átalakítás
 758	Ne légy ilyen türelmetlen. Csak tíz szilánkot[ENTER]tudok átalakítani egy Sárkánykővé. Folytasd a[ENTER]kutatást!
@@ -771,7 +771,7 @@
 771	A Sárkányszem ereje
 772	Fennmaradó Sárkányszem ereje: %d
 773	Választás.
-774	Es gibt keine Drachensteinsplitter mehr
+774	Ott nincs több Sárkánykő-szilánk.
 775	Add nekem a Sárkányszem erejét
 776	Hello! Ma már megkaptad a Sárkányszem erejét. Az[ENTER]eljárás nagyon legyengít, úgyhogy naponta csak[ENTER]egyszer tudok neked segíteni. Gyere vissza[ENTER]holnap!
 777	Hello! Lefogadom, hogy a Sárkányszem erejéért[ENTER]jöttél. Ugye? Nagyszerű akkor, helyben vagy. Sok[ENTER]szerencsét a vadászathoz! Remélem, elég szilánkot[ENTER]találsz a tíz Sárkánykőhöz!
@@ -806,7 +806,7 @@
 806	Ez a tárgy nem felel meg a technológiámnak.[ENTER]Hozz valami mást.
 807	Ennek a tárgynak nincs elég energiája. Hozz nekem[ENTER]egy minimum 35-ös szintűt - csak így leszek képes[ENTER]kivonni az energiáját a technológiámmal.
 808	Megsemmisíthetem ezt a tárgyat?
-809	Igen
+809	Igen!
 810	Nem, még nem!
 811	Hibáztam - sajnos nem sikerült Energia-töredéket[ENTER]kinyernem. Következő alkalommal talán[ENTER]szerencsésebb leszek.
 812	Csodálatos! Sikerült %d Energia-töredéket[ENTER]találnom. Tessék.
@@ -815,7 +815,7 @@
 815	Nincs elég Energia-töredéked.[ENTER]Ebből nem tudok előállítani Energia-kristályt.[ENTER]Gyere vissza, ha már összegyűjtöttél legalább %d[ENTER]töredéket.
 816	Nagyon jó, megszerezted a szükséges %d[ENTER]Energia-töredéket. Ebből elő tudok állítani egy[ENTER]Energia-kristályt. Kérlek, várj egy percet.[ENTER]Megpróbálom, de nem tudom garantálni, hogy[ENTER]működik.
 817	Minden készen áll a töredékek Energia-kristállyá[ENTER]olvasztásához. Ugyanakkor nekem is élnem kell[ENTER]valamiből, és az eszközeim nem az égből[ENTER]potyognak. Költségeim fedezéséhez szükségem van[ENTER]%d Yangra. Hajlandó vagy kifizetni?
-818	Természetesen.
+818	Természetesen!
 819	Köszönöm, most nem.
 820	Rendben, tiszteletben tartom a döntésed.[ENTER]Gyere vissza, ha meggondoltad magad és mégis[ENTER]szükséged van egy Energia-kristályra.
 821	Sajnálom, előbb fizetned kell. Nem vagyok[ENTER]jótékonysági szolgálat.[ENTER]Ez csak üzlet - add át a pénzt, utána elvégzem a[ENTER]munkám.
@@ -856,7 +856,7 @@
 856	Találtál néhány Hímes tojást?
 857	Ezért %d tojást kell adnod!
 858	Rendben, elviszem!
-859	Inkább mégsem
+859	Nem, inkább nem!
 860	Köszönet a tojásokért. Jó szórakozást a Húsvéti[ENTER]ajándékoddal!
 861	Üres kosár:
 862	Szeretnéd megkapni ezt a tárgyat?
@@ -883,13 +883,13 @@
 883	Megint te! Eláruljak egy titkot? Egy kis[ENTER]szerencsével Tökfej maszk kártyát találhatsz[ENTER]azokban a Halloween Ládákban.
 884	Felhasználhatod ezt a kártyát, hogy megszerezd a[ENTER]kísérteties tökfej maszkok egyikét. Szeretnél egy[ENTER]maszkot?
 885	Nincs Tökfej maszk kártyád?[ENTER]Akkor nem kapsz Tök maszkot! Haha!
-886	Történész:
+886	Történész?
 887	Történész:
 888	Tanulj a múltból és lény nyitott a jövőre! Miben[ENTER]lehetek a segítségedre?
 889	Bocsánat, ismerjük mi egymást?
 890	Bocsásd meg modorom, elfelejtettem bemutatkozni![ENTER]Én egy világot járt Történész vagyok. Ha van[ENTER]bármi kérdésed a történelemmel kapcsolatban, ne[ENTER]félj megkérdezni!
 891	Megtiszteltetés, hogy megismerhetlek! Gyakrabban[ENTER]kellene meglátogatnom téged.
-892	Was Süßes
+892	Valami édes
 893	Kár. Majd legközelebb.
 894	Akkor érted, mire gondolok. Ha szeretnéd ezt az[ENTER]Édességet, kérlek, hozz nekem egy darab Kenyeret!
 895	10 Kenyérért adok neked egy Édességet.[ENTER]Megegyeztünk?
@@ -959,7 +959,7 @@
 959	Meg tudod javítani a kardot?
 960	Ez egy csodálatos kard! Mirine tulajdona volt,[ENTER]nem? Hallottam hogy segítettél neki. Őszinte,[ENTER]rendes embernek tűnsz, szóval nem fogok pénzt[ENTER]kérni a fegyver javíttatásáért. Várj egy[ENTER]percet...
 961	Tessék, a penge olyan mint új korában. Tökéletes[ENTER]fegyver. Vedd el, barátom.
-962	Ezüst kard+3 -at kaptál.
+962	Ezüst kard+2-t kaptál.
 963	Orchideakard+2-t kaptál.
 964	Egy Másfélkezes kard+2-t kaptál.
 965	Egy Barbár kard+2-t kaptál.
@@ -976,7 +976,7 @@
 976	Egy hirtelen jött széllökés elfújja a tapasztalt[ENTER]katona hollétét tartalmazó levelet.
 977	Megtaláltam a tapasztalt katonát.
 978	A levél hirtelen lángolni kezd, majd fekete[ENTER]hamuvá válik. Azután
-979	Wärme deinen Körper
+979	a meleg elárasztja a tested.
 980	A tapasztalt katona megáldott téged.
 981	Megáld a tapasztalt katona!
 982	A tapasztalt katona hollétéről szóló levél áldás[ENTER]az új kalandor számára, ha ő is megtalálja a[ENTER]tapasztalt katonát.
@@ -991,18 +991,18 @@
 991	Tanító:
 992	5 percig tart a hatás.
 993	Tapasztalt harcost csak óránként egyszer[ENTER]találhatsz.
-994	Szeretnék többet megtudni a készségekről, mielőtt[ENTER]választok.[ENTER]A tanár gondolkodik kicsit és[ENTER]válaszol:
+994	Szeretnék többet megtudni a készségekről, mielőtt[ENTER]választok.[ENTER]A tanár gondolkodik kicsit és válaszol:
 995	Jobb, ha magad megtapasztalod, mint ha én[ENTER]magyarázom el. Végül is, az ember csak azt képes[ENTER]elhinni, amit a saját szemével lát.[ENTER]Adok neked egy levelet, amiben egy tapasztalt[ENTER]katona tartózkodási helye van lerajzolva.
 996	Nem egy tapasztalt katona
 997	Sajnos a tapasztalt katona épp bevetésen van,[ENTER]ezért nem áll rendelkezésre. Próbáld meg később[ENTER]újra.
 998	Nem sikerült megtalálnod a tapasztalt katonát.
 999	Célt keres %s
 1000	Hol tudok vörös italt vásárolni?
-1001	Gondnok:
+1001	Őr
 1002	Gondnok:
 1003	Vörös italt a Vegyeskereskedő eladónőnél[ENTER]kaphatsz, aki ott van. Ha nem látod őt, kövesd a[ENTER]villogó kört a nagy térképen, vagy a villogó[ENTER]vörös pontot a mini térképen!
 1004	Vegyeskereskedő Eladónő:
-1005	Vegyeskereskedő Eladónő:
+1005	Vegyeskereskedő Eladónő
 1006	Légy üdvözölve kalandor![ENTER]Oh, az Őr küldött? Szüksége van Vörös italra?[ENTER]Adok belőle ötöt.[ENTER]Itt van. Ezek helyreállítják az életerőd, és[ENTER]valójában elég finomak.
 1007	Habár új vagy ezen a környéken, én mégis meg[ENTER]vagyok győződve arról, hogy nemsokára rendszeres[ENTER]vásárló leszel.[ENTER]Ezért ingyen adom neked az italokat. Térj vissza[ENTER]hamarosan.
 1008	5 Vörös Italt kaptál a Vegyeskereskedő Eladónőtől.
@@ -1017,7 +1017,7 @@
 1017	Üdvözöllek falunkban, kalandor! Megköszönném, ha[ENTER]meg tudnál nekem tenni egy szívességet. Ha adok[ENTER]neked 200 Yangot, veszel nekem egy kis Vörös[ENTER]italt?[ENTER]A Vegyeskereskedő Eladónőnél veheted meg.[ENTER]Én most szolgálatban vagyok, ezért nem hagyhatom[ENTER]el a Főteret.
 1018	Igen
 1019	200 Yangot kaptál a Gondnoktól. Ezzel a[ENTER]fizetőeszközzel tudsz a boltokban tárgyakat[ENTER]vásárolni, vagy szolgáltatásokat igénybe venni a[ENTER]különböző falusiaktól. Menj el a Vegyeskereskedő[ENTER]Eladónőhöz és vegyél egy Vörös Italt.
-1020	Ismeretlen gomb [%s]
+1020	inaktív gomb [%s]
 1021	Vegyél egy Vörös Italt
 1022	Vegyél egy Vörös Italt a Vegyeskereskedő[ENTER]Eladónőtől, és hozd el a Gondnoknak.
 1023	Nem vagyok benne teljesen biztos, hogy elég ügyes[ENTER]vagyok feljavítani ezt a Horgászbotot.
@@ -1036,64 +1036,64 @@
 1036	Ez a Horgászbot még nem gyűjtött össze elegendő[ENTER]pontot. Még nem tudom feljavítani. Gyere vissza,[ENTER]ha a horgászbotod elérte a maximális pontszámát.
 1037	Ezt a horgászbotot akarod javíttatni? Hadd[ENTER]lássam...
 1038	A Horgászbotod szintje %s.
-1039	Szeretnél átkelni az Am-heh szurdokon és[ENTER]szembenézni végzeteddel?
+1039	Szeretnél átkelni az Am-heh szurdokon, és[ENTER]szembenézni a végzeteddel?
 1040	Entrer
 1041	Peut ętre plus tard
-1042	Vous ne pouvez passer que par la Gorges d Am Heh aprčs avoir complété la quęte du niveau 103
-1043	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1044	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1045	Un seul groupe peut prendre d assaut la forteresse du dragon rouge Vous aurez également besoin d un laissez passer pour entrer
-1046	Je ne peux vous laisser entrer que si vous avez un laissez passer
-1047	Le niveau de tous les membres du groupe doit ętre d au moins 100 Sinon je ne peux pas vous laisser passer
-1048	Je ne vous laisserai passer que si tous les membres du groupe ont au moins le niveau 100
+1042	Akkor kelhetsz át először az Am-heh szurdokon, ha[ENTER]már teljesítetted a 103-as szintű küldetést.
+1043	Még nem járt le a Vörös sárkány-erődbe történő[ENTER]újra-belépés várakozási ideje.
+1044	Még nem járt le a Vörös sárkány-erődbe történő[ENTER]újra-belépés várakozási ideje.
+1045	Csak egy csoport indíthat támadást a Vörös[ENTER]sárkány-erőd ellen. Ezenkívül egy Belépési[ENTER]engedély is szükséges a belépéshez.
+1046	Csak akkor engedhetlek belépni, ha van nálad egy[ENTER]Belépési engedély.
+1047	A csoport minden tagjának legalább 100-as[ENTER]szintűnek kell lennie, különben nem engedhetlek[ENTER]belépni.
+1048	Akkor engedlek majd áthaladni, ha a csoport[ENTER]minden tagja legalább 100-as szintű.
 1049	Forteresse du dragon rouge
-1050	Voulez vous entrer dans la forteresse du dragon rouge
+1050	Szeretnél belépni a Vörös sárkány-erődbe?
 1051	Entrer
 1052	Peut ętre plus tard
-1053	Seul le chef du groupe peut demander l admission
-1054	J apprécie votre courage mais vous serez seul ŕ vous ruiner dans la forteresse du dragon rouge Mettez en place un groupe fort et je vous laisserai rentrer
+1053	Csak a csoport vezetője kérheti a belépést.
+1054	Értékelem a bátorságod, de nem rohanhatsz a[ENTER]vesztedbe egyedül a Vörös sárkány-erődben.[ENTER]Alakíts ki egy erős csoportot, és akkor[ENTER]engedélyezem a belépést.
 1055	Lorsque le temps est écoulé le groupe est téléporté hors de la forteresse
 1056	Temps restant Minute n
-1057	Votre temps est écoulé Dans dix secondes vous serez téléporté aux portes de la forteresse
-1058	Dans dix secondes le groupe sera téléporté hors de la forteresse du dragon rouge
-1059	Réveillez la Gorges d Am Heh
-1060	Seul le chef peut réveiller la gorge de Am heh
-1061	La Gorge d Am heh est réveillée Maintenant personne n entre ni ne sort
-1062	Les portes de la forteresse du dragon rouge se ferment pendant une heure
-1063	Temps restant 60 Minute n
-1064	Mission Osez entrer dans l anneau des démons et en sortir victorieux
-1065	Tous les démons n ont pas encore été vaincus
+1057	Lejárt az időd. Tíz másodperc múlva az erőd[ENTER]bejárata elé leszel teleportálva.
+1058	Tíz másodperc múlva a csoport el lesz[ENTER]teleportálva a Vörös sárkány-erődből.
+1059	Az Am-heh szurdok felébresztése
+1060	Csak a vezér ébresztheti fel az Am-heh szurdokot!
+1061	Az Am-heh szurdok felébredt. Most már senki sem[ENTER]jöhet be – vagy mehet ki.
+1062	A Vörös sárkány-erőd kapui bezárulnak egy órára.
+1063	Hátralevő idő: 60 perc
+1064	Feladat: vesd magad a démonok gyűrűjébe, és[ENTER]kerülj ki győztesen!
+1065	Még nem lett minden démon legyőzve.
 1066	Restant
 1067	Tâche Trouvez l engrenage en or et activez le mécanisme caché dans la Stčle de l Isfet
-1068	Le mécanisme de la stčle de l Isfet ne peut ętre déclenché qu avec l engrenage en or Revenez quand la tâche a été accomplie
-1069	Mission vaincre Ignator gardien des braises
-1070	Ignator n a pas encore été vaincu Travailler dur ou recevoir sa damnation éternelle Revenez lorsque la tâche est terminée
-1071	Tâche Trouvez les Pierre de Maât et placez les dans le bon ordre sur les sept stčles de l Isfet
-1072	Si vous utilisez la Pierre de Maât sur la mauvaise stčle elle se brisera
-1073	L erreur est humaine Par conséquent choisissez judicieusement pour résoudre le puzzle Renvenez lorsque la tâche est terminée
-1074	Mission Seuls ceux qui n ont pas peur de la chaleur accablante vont détruire le Metin du Purgatoire
-1075	Laissez le Metin du Purgatoire se transformer en cendres et revenez lorsque la tâche sera accomplie
+1068	Isfet emlékkövének működése csak az Arany[ENTER]fogaskerékkel indítható be. Gyere vissza, ha[ENTER]teljesítetted a feladatot.
+1069	Feladat: győzd le Ignitort, a parázs őrét.
+1070	Ignitor még nem lett legyőzve. Próbáld[ENTER]keményebben, máskülönben az örök kárhozata vár[ENTER]rád. Gyere vissza, ha teljesítetted a feladatot.
+1071	Feladat: találd meg a Maat köveket, és a[ENTER]megfelelő sorrendben helyezd el őket a hét Isfet[ENTER]emlékkövön.
+1072	Ha nem megfelelő Emlékkövön használod a Maat[ENTER]követ, el fog törni.
+1073	Tévedni emberi dolog, bölcsen dönts a feladvány[ENTER]megfejtéséhez! Gyere vissza, ha teljesítetted a[ENTER]feladatot.
+1074	Feladat: csak azok képesek elpusztítani a[ENTER]Tisztítótűz metinjét, akik nem félnek a pokoli[ENTER]hőségtől.
+1075	Zúzd hamuvá a Tisztítótűz metinjét. Gyere vissza,[ENTER]ha teljesítetted a feladatot.
 1076	Tous les démons ont été vaincus
-1077	Visitez la Gorge d Am heh pour ouvrir un autre Verrou du destin
-1078	La stčle d Isfet a été détruite
-1079	Cet engin était un faux et a été détruit Trouvez l original
-1080	Ignator gardien des braises a été tué
-1081	C était un choix judicieux Détruire la prochaine stčle
-1082	C était un choix judicieux Détruire la prochaine stčle
-1083	Mauvais ordre La pierre du Maat a été détruite
-1084	C était un choix judicieux Détruire la prochaine stčle
-1085	C était un choix judicieux Détruire la prochaine stčle
-1086	C était un choix judicieux Détruire la prochaine stčle
-1087	Bölcs döntés volt. Most semmisítsd meg a legvégső[ENTER]emlékkövet és Maat győzedelmeskedni fog Isfet[ENTER]felett.
-1088	La Metin du Purgatoire a été détruite
-1089	Razador a été tué
-1090	Tous les combattants seront téléportés hors du Temple du Dragon dans une minute
-1091	Pour passer par la Gorge d Am heh votre chef doit avoir au moins le niveau 104
-1092	Votre force n est pas suffisante pour traverser la Gorge d Am heh Revenez dčs que vous atteignez le niveau 104 ou supérieur
-1093	Vous ętes ŕ l extérieur des portes de la forteresse du dragon rouge depuis plus de cinq minutes et vous ne pouvez plus rentrer
-1094	Le temps de rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1095	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe nécessite un passe Les joueurs suivants n en portent pas actuellement
-1096	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe doit avoir atteint le niveau 100 Les joueurs suivants n ont pas atteint le niveau pour le moment
+1077	Menj az Am-heh szurdokhoz egy újabb Végzetzár[ENTER]kinyitásához.
+1078	Az Isfet emlékköve megsemmisült.
+1079	Ez az Arany fogaskerék hamisítvány volt és[ENTER]megsemmisült. Találd meg az eredetit.
+1080	Ignitor, a parázs őre le lett győzve.
+1081	Ez egy bölcs döntés volt. Most semmisítsd meg a[ENTER]következő Emlékkövet!
+1082	Ez egy bölcs döntés volt. Most semmisítsd meg a[ENTER]következő Emlékkövet!
+1083	Helytelen a sorrend. Emiatt a Maat kő[ENTER]megsemmisült.
+1084	Ez egy bölcs döntés volt. Most semmisítsd meg a[ENTER]következő Emlékkövet!
+1085	Ez egy bölcs döntés volt. Most semmisítsd meg a[ENTER]következő Emlékkövet!
+1086	Ez egy bölcs döntés volt. Most semmisítsd meg a[ENTER]következő Emlékkövet!
+1087	Ez egy bölcs döntés volt. Most semmisítsd meg a[ENTER]legvégső Emlékkövet, és Maat győzedelmeskedni fog[ENTER]Isfet felett!
+1088	A Tisztítótűz metinje megsemmisült.
+1089	Razador le lett győzve.
+1090	Egy perc múlva minden harcos el lesz teleportálva[ENTER]a Sárkány templomából.
+1091	Hogy átkelhess az Am-heh szurdokon, vezetődnek[ENTER]legalább 104-es szintűnek kell lennie.
+1092	Nem vagy elég erős ahhoz, hogy átkelj az Am-heh[ENTER]szurdokon. Térj vissza, ha már elérted a 104-es[ENTER]szintet.
+1093	Több mint öt percet időztél a Vörös sárkány-erőd[ENTER]kapui előtt, és most már nem léphetsz be.
+1094	Még nem járt le a Vörös sárkány-erődbe történő[ENTER]újra-belépés várakozási ideje.
+1095	FIGYELEM! A Vörös sárkány-erődbe történő[ENTER]belépéshez minden egyes csoporttagnak[ENTER]rendelkeznie kell Belépési engedéllyel. A[ENTER]következő játékosoknál jelenleg nincs egy sem:
+1096	FIGYELEM! A Vörös sárkány-erődbe történő[ENTER]belépéshez minden egyes csoporttagnak el kell[ENTER]érnie a 100-as szintet. A következő játékosok[ENTER]jelenleg még NEM érték el ezt a szintet:
 1097	The group from %s has killed the Razador!
 1098	A Jinno birodalom belép a Szentföldre.
 1099	Nem vehetsz részt!
@@ -1146,7 +1146,7 @@
 1146	Sohan-hegy
 1147	Doyyumhwan
 1148	Desert Yongbi
-1149	Temple Hwang
+1149	Hwang templom
 1150	Grotte de l exil
 1151	Nachricht der Turnier-Leitung
 1152	Willkommen zum großen Metin2-Turnier! In deinem[ENTER]Inventar findest du die Rätselhafte Truhe. Sobald[ENTER]du mit der rechten Maustaste darauf klickst,[ENTER]wirst du in das Feuerland teleportiert - und die[ENTER]Kämpfe können beginnen!
@@ -1363,7 +1363,7 @@
 1363	Idő a feloszlatásig: %s nap
 1364	Várakozási idő
 1365	Legkorábbi lehetőség a próbálkozás[ENTER]megismétlésére: %s óra
-1366	Hátralévő idő
+1366	Maradék idő:
 1367	Azonnali hozzáigazítás
 1368	Azonnali regisztrálás lehetséges.
 1369	Itt láthatod céhed helyezését a feletted és[ENTER]alattad lévő ranghelyű céhekkel kapcsolatban:[ENTER][DELAY value;0][ENTER]|Céh név |Pontok |Győzelem |Döntetlen |Vereség[ENTER]%s[/DELAY][ENTER]
@@ -1377,7 +1377,7 @@
 1377	Vásárolj szerencse szelvényeket a birodalmadnak.[ENTER][ENTER]1. Minden céhháborúban van egy előre kihirdetett[ENTER]várható eredmény a potenciális győztes céhet[ENTER]illetően.[ENTER]2. Vehetsz egy fogadó szelvényt, amin[ENTER]megtippeled, hogy az általad választott céh[ENTER]eléri-e az előre jelzett eredményt vagy sem.[ENTER]3. A választás a fogadó standtól függ, és a[ENTER]céhháború után értesítést kapsz, hogy nyertél[ENTER]vagy vesztettél.[ENTER][ENTER]* A nyeremény 10%-a birodalom számára lesz[ENTER]kifizetve.
 1378	%s vs %s
 1379	Csata irányító:
-1380	 -  -val
+1380	-  -val
 1381	Most nincs céh háború, amire fogadni tudnál.
 1382	Melyik céh háborúhoz szeretnél fogadószelvényt[ENTER]vásárolni?
 1383	A lista alapján már vettél szelvényt ehhez a céh[ENTER]háborúhoz. Céhenként csak egy szelvényt vehetsz.
@@ -1433,7 +1433,7 @@
 1433	Mégsem
 1434	Még nincs elegendő Rizs sütid, hogy beválthasd[ENTER]erre a tárgyra. Menj vissza vadászni!
 1435	Bölcsen döntöttél.
-1436	Köszönetként a %s Rizs sütiért, ezt adom neked: %s
+1436	Köszönetként a %s Rizs sütiért, ezt adom neked: %s 
 1437	Biztos, hogy ezt a tárgyat akarod?
 1438	Igen, biztos!
 1439	%s-t kaptál.
@@ -1446,12 +1446,12 @@
 1446	Nem kellene ok nélkül veszélybe sodornod magad![ENTER]Vidd a Rizs sütiket Wonda-Rim-nek, megjutalmaz[ENTER]értük. Ha több Rizs sütit viszel neki, értékesebb[ENTER]jutalmat fogsz kapni.
 1447	Visszahoztad az összes ellátmányunkat! Nagy[ENTER]hálával tartozunk neked. Nélküled valódi bajban[ENTER]lettünk volna!
 1448	Ellátmányunk nagyobb része még mindig hiányzik.[ENTER]Továbbra is számíthatunk rád?
-1449	Természetesen.
+1449	Természetesen!
 1450	Később fogok segíteni nektek.
 1451	Itt fogok várni rád.
 1452	Feladat %s[ENTER]Ezt a feladatot összesen tíz alkalommal[ENTER]fogadhatod el.
 1453	Elvesztünk volna nélküled. Segítesz még?[ENTER]Ellátmányunk nagy része még mindig hiányzik.
-1454	Igen, tovább csinálom.
+1454	Folytatni fogom!
 1455	Később visszajövök.
 1456	Bátor harcos vagy. Kérjük, folytasd![ENTER][ENTER]Feladat %s[ENTER]Ezt a feladatot összesen tíz alkalommal[ENTER]fogadhatod el.
 1457	Pokolkutya
@@ -1714,7 +1714,7 @@
 1714	Nem szeretném még egyszer elmondani: Ha lovagolni[ENTER]szeretnél, magadnál kell tartanod a Ló képet!
 1715	Ha van saját Felfegyverzett ló könyved,[ENTER]megtámadhatod az ellenfeleidet lóhátról. Próbára[ENTER]teszem a harci tapasztalataidat és a lovas[ENTER]tudásodat. Menj a sivatagba és ölj meg néhány[ENTER]Skorpió íjászt. Mehetsz csoporttal is, de NEKED[ENTER]kell lenni a csoportvezetőnek.
 1716	Ok, gyere vissza később.
-1717	Ismeretlen gomb [%s]
+1717	inaktív gomb [%s]
 1718	Nem hiszem, hogy volna olyan ok, amiért ne[ENTER]szerezhetnéd meg a Felfegyverzett ló könyvet.[ENTER]Talán beszélned kellene egy Játék Mesterrel (GM).
 1719	Szükséged van egy Ló medálra, hogy a elkezdhesd a[ENTER]küldetésed a Felfegyverzett ló könyvért. Ló[ENTER]medált a majom kazamatában szerezhetsz.
 1720	Íjász maradt
@@ -1734,7 +1734,7 @@
 1734	Rendben. Sok szerencsét legközelebb!
 1735	Egy döglött lovat nem tudsz fejleszteni![ENTER]Tehetsz bármit, ez nem működik. Menj, szerezz[ENTER]majom növényt és hozd vissza a lovat az életbe.[ENTER]Azután beszélhetünk a lovad fejlesztéséről.
 1736	Ha szeretnél átmenni a vizsgán, nincs időd itt[ENTER]téblábolni! Menj Démon íjászokat ölni!
-1737	Ismeretlen gomb [%s]
+1737	inaktív gomb [%s]
 1738	Vissza a lovászinashoz
 1739	Értesítsd a Lovászinast a próba eredményéről!
 1740	Alkalmassági vizsga állapot
@@ -1809,27 +1809,27 @@
 1809	 %s-t ölni.
 1810	Jó! Megcsináljuk.
 1811	Du hast die Herausforderung angenommen zu töten
-1812	 %s-t ölni.
+1812	%s-t ölni.
 1813	Momentan müssen noch getötet werden um den Jagdauftrag abzuschließen
-1814	 Darab ebből a fajtából:
+1814	Darab ebből a fajtából:
 1815	Információ a vadász megbízásról
-1816	Cél megölése!
+1816	Célt megölni!
 1817	Ölj %s-t!
 1818	show_mob_pos: map_index(%s) < 0
 1819	show_mob_pos: map_index(%s)
 1820	show_mob_pos: special.lvq_map[map_index(%s)] is nil
 1821	addmapsignal(%s,%s)
 1822	Maradék mennyiség
-1823	Cél megölése!
+1823	![ENTER]Célt megölni! :
 1824	Célok száma
 1825	Jutalom: %s%% tapasztalat
-1826	Tapasztalat
+1826	% tapasztalat
 1827	Küldetés befejezve.
 1828	Feladat:
 1829	Küldetés befejezve.
 1830	Kitűnő, a megbízást sikerrel végrehajtottad!
 1831	Szint
-1832	 Tárgy
+1832	Tárgy
 1833	Tapasztalat
 1834	%s-t kaptál.
 1835	Jutalom:
@@ -1838,7 +1838,7 @@
 1838	Visszatérés Ariyoung-hoz.
 1839	Térj vissza a faluba Ariyoung-hoz és tájékoztasd,[ENTER]hogy a férje emlékét nem tudod megszerezni.
 1840	Ariyoung felkeresése
-1841	Menj Ariyounghoz
+1841	Menj Ariyounghoz.
 1842	Keresd fel Ariyoung-ot és mondd el neki férje[ENTER]halálát.
 1843	A Feketeszél banda vezetőjének megölése.
 1844	A Feketeszél banda vezetőjének megölése.
@@ -1932,11 +1932,11 @@
 1932	Hozd vissza Deokbae favágó Arany fejszéjét.
 1933	Hozd vissza Deokbae favágó Arany fejszéjét és[ENTER]hozd el a jutalmad.
 1934	A segítsége nélkül soha nem találtam volna meg[ENTER]ezt a fejszét. Ahogy elveszítettem, azt hittem,[ENTER]mindennek vége. De ez a kalandor habozás nélkül[ENTER]harcba szállt, és visszahozta a fejszém! Azóta[ENTER]éjjel-nappal magamnál tartom a fejszét.
-1935	Belépés
+1935	Belépni.
 1936	A Démon-toronyban...
 1937	Ebben a toronyban hemzsegnek az démonok. Csak a[ENTER]legerősebb harcosok érhetik el a csúcsát. Ez azt[ENTER]is jelenti, hogy aki belép, nem hagyja el a[ENTER]tornyot élve. Biztos, hogy be szeretnél lépni a[ENTER]Démon-toronyba?
 1938	Ebben a toronyban hemzsegnek az démonok. Csak a[ENTER]legerősebb harcosok érhetik el a csúcsát. Ez azt[ENTER]is jelenti, hogy aki belép, nem hagyja el a[ENTER]tornyot élve. Csak akkor léphetsz be, ha már[ENTER]elérted a 40-es szintet.
-1939	Nem lépni be
+1939	Nem belépni.
 1940	Kikapcsolni
 1941	Junjeh birodalom
 1942	Shinsoo birodalom
@@ -1975,7 +1975,7 @@
 1975	A mai nap életed egyik lehető legrosszabb napja.[ENTER]Az Istenek égen-földön elfordultak tőled. Ma[ENTER]semmi sem sikerül neked. Ha tüzet akarsz[ENTER]gyújtani, esni fog; ha szomjas vagy, tűzni fog a[ENTER]nap. Keményen fogsz dolgozni, mint mindenki más,[ENTER]de nem lesz túl sok eredménye. "Nagyon nagy[ENTER]balszerencséről" szenvedsz![ENTER]Talizmán nélkül nehéz idők járnak rád.[ENTER]Érdekel, szeretnél vásárolni egyet?
 1976	Egészen nagy pech
 1977	Háromirányú vágás
-1978	Kardcsapás
+1978	Kard ütés
 1979	Rejtőzés
 1980	Villám támadás
 1981	Forgó tőr
@@ -1988,8 +1988,8 @@
 1988	Forgó kard
 1989	Méregnyíl
 1990	Ujjcsapás
-1991	Sárkány forgatag
-1992	Varázs penge
+1991	Sárkány örvény
+1992	Elvarázsolt penge
 1993	Félelem
 1994	Elvarázsolt vértezés
 1995	Varázslat kioltás
@@ -2058,7 +2058,7 @@
 2058	Na jó.[ENTER][ENTER]Eltávolítalak a céhből.
 2059	Igen
 2060	A tiedhez hasonló céheknek a következő harci[ENTER]eredményei vannak:[ENTER][DELAY value;0]
-2061	  |Céh név |Pont |Győzelem[ENTER]|Döntetlen |Vereség
+2061	|Céh név |Pont |Győzelem |Döntetlen |Vereség
 2062	A harci eredmények az 1. és 10. rangú között:[ENTER][DELAY value;0]
 2063	A céhed állása a táblázaton
 2064	, és a táblázat állása
@@ -2085,13 +2085,13 @@
 2085	Vidd el Baek-Go-nak az összetevőket
 2086	Hozd el Baek-Go-nak a gyógyszer összetevőit.
 2087	Térj vissza Baek-Go-hoz, hozd el neki a csípős[ENTER]skorpió farkat és készítsd el a gyógyszert[ENTER]Yu-Rang-nak.
-2088	Huahn-So keresése.
+2088	Huahn-So keresése
 2089	Huahn-So keresése.
 2090	Menj Huahn-So-hoz, és hallgasd meg a történetét.
 2091	Vissza Huahn-Sohoz
 2092	Számolj be Huahn-So-nak a sikeredről.
 2093	Számolj be Huahn-So-nak a sikeredről, és vedd át[ENTER]a jutalmad.
-2094	Huahn-So
+2094	Huahn-So:
 2095	Tárgydobási gyakoriságának aránya
 2096	Szint
 2097	A szintemelkedés miatt
@@ -2107,9 +2107,9 @@
 2107	Véletlenszerű tárgy
 2108	Egy közvetlen jutalmat kapsz a[ENTER]szint-megbízatásért.
 2109	Hátralevő szám
-2110	Megöl
+2110	Megölve!
 2111	Célok száma
-2112	Cél megölése!
+2112	Célt megölni!
 2113	Megöl
 2114	!
 2115	Hogyan tudok rizs gombócot csinálni?
@@ -2134,7 +2134,7 @@
 2134	Bejárat a Nehéz majom kazamatába
 2135	1. Ha belépsz a majom kazamatába, 20 percen belül[ENTER]el kell pusztítanod a legfőbb majmot.[ENTER]2. Nem használhatsz visszaszállító tekercseket[ENTER]sem a városba, sem más helyre.[ENTER]Sokan, akik nem tartották be ezeket a[ENTER]szabályokat, majommá változtak, szóval légy[ENTER]óvatos.
 2136	Nem lépni be
-2137	Hátralévő idő
+2137	Maradék idő:
 2138	Majom kazamata
 2139	Mindenki meg fog halni!
 2140	Kicsi, kicsi, kicsi darabok...
@@ -2822,7 +2822,7 @@
 2822	Ahhhhh, igeeeeen!
 2823	Hadd fertőzzelek meg ezzel a kórokozóval!
 2824	Ez a makacs kórokozója a rejtélyes betegségnek!
-2825	 = A szükséges tárgy.
+2825	= A szükséges tárgy.
 2826	Oda még nem tudsz elmenni. Ott még én sem voltam.
 2827	Utazás
 2828	Üdv! Tudom, hogyan juthatsz innen egy másik[ENTER]régióba. Néhány Yangért cserébe el tudlak[ENTER]teleportálni.
@@ -2843,7 +2843,7 @@
 2843	Mond meg az Öreg kalóznak, hogy nem tudtad[ENTER]megszerezni a gyógyszert.
 2844	Térj vissza az Öreg kalózhoz.
 2845	Nem találom a gyógyszert! Mit mondjak az Öreg[ENTER]kalóznak?
-2846	Hozd el a gyógyszert az Öreg kalóznak.
+2846	Vidd el a gyógyszert az Öreg kalóznak
 2847	Hozd el a gyógyszert az Öreg kalóznak.
 2848	Hozd el a gyógyszert az Öreg kalóznak a[ENTER]jutalmadért!
 2849	Megvan a gyógyszer.
@@ -2887,7 +2887,7 @@
 2887	Öreg kalóz:[ENTER]Basszus, mit akarsz tőlem? Francba! Az a[ENTER]nyavalyás vegyeskereskedő beszélt rólam, ugye?[ENTER]Igen, minden igaz, amit mond. De nincs időm[ENTER]orvoshoz menni. Annyi ellenségem van!
 2888	Öreg kalóz:[ENTER]Sohasem tudhatja az ember, hogy nem áll-e elé egy[ENTER]csavargó hirtelen és döfi le egyszerűen! De olyan[ENTER]szörnyen viszket, hogy nem bírom már. Tudod mit?[ENTER]El tudnál menni az orvoshoz, és viszketés elleni[ENTER]szert hozni nekem? Ha hozol orvosságot, bőségesen[ENTER]megjutalmazlak.
 2889	Öreg kalóz:[ENTER]Valaki más már hozott nekem orvosságot. Nos,[ENTER]attól tartok, így jutalom sem jár neked!
-2890	Menj az öreg kalózhoz.
+2890	Menj az Öreg kalózhoz
 2891	Menj az öreg kalózhoz.
 2892	Menj az öreg kalózhoz és kérdezd meg, hogy miért[ENTER]nem megy orvoshoz!
 2893	Öreg kalóz:[ENTER]Mindenhol viszketek! Nem lett volna szabad[ENTER]összefutnom azzal a fickóval! Csak egyetlen[ENTER]érintés volt! Azóta gennyezik a helye és viszket[ENTER]az egész testem! Olyan, mintha élve rothadnék.[ENTER]Rohadék!
@@ -3126,7 +3126,7 @@
 3126	Már sok idő telt el azóta, amióta a barbárok a[ENTER]határt átlépték és a falut megtámadták. Az[ENTER]általuk legyilkolt emberek száma a több százat[ENTER]közelítette meg. Azoknak a száma, akit[ENTER]megkárosítottak, lényegesen nagyobb. A gonosz[ENTER]barbárok olyan brutálisak, hogy senki nem merte[ENTER]őket megbosszulni. De mi nem tűrjük őket hosszabb[ENTER]ideig.[ENTER][ENTER]Ölj meg 25 törzsvezért. Ha ezt a megbízást[ENTER]sikeresen teljesítetted, akkor a következő[ENTER]jutalomban részesülsz:
 3127	Jutalom
 3128	A megbízások teszt idejében nincs jutalom.[ENTER]Később, miután megkaptál egy jutalmat, az[ENTER]aktuális megbízatás megismételhető.
-3129	Feladat:
+3129	Küldetés
 3130	Melyik nyíl nem létezik a Metin2-ben?
 3131	Fa nyíl
 3132	Vas nyíl
@@ -3196,7 +3196,7 @@
 3196	Melyik készség nem tartozik a mentális harc[ENTER]tanhoz?
 3197	Csapás
 3198	Erős test
-3199	Kardcsapás
+3199	Kard ütés
 3200	Ferde vágás
 3201	4
 3202	Melyik készség nem tartozik az íjász tanhoz?
@@ -3248,7 +3248,7 @@
 3248	Sámán
 3249	4
 3250	Melyik készség tartozik a mágikus fegyver[ENTER]képzéshez?
-3251	Varázs penge
+3251	Elvarázsolt penge
 3252	Szellem csapás
 3253	Sötét védelem
 3254	Láng szelleme
@@ -3261,7 +3261,7 @@
 3261	2
 3262	Melyik a fekete mágia tanok készsége?
 3263	Ujjcsapás
-3264	Sárkány forgatag
+3264	Sárkány örvény
 3265	Sötét csapás
 3266	Elvarázsolt vértezés
 3267	3
@@ -3434,9 +3434,9 @@
 3434	Rozsdás penge
 3435	4
 3436	Mikor van szükséged egy tárgyra és Yangra az[ENTER]Ezüst Kard fejlesztéséhez?
-3437	+5-re fejlesztésnél
-3438	+5-re fejlesztésnél
-3439	+5-re fejlesztésnél
+3437	+1-re fejlesztésnél
+3438	+2-re fejlesztésnél
+3439	+4-re fejlesztésnél
 3440	+5-re fejlesztésnél
 3441	4
 3442	Melyik megnevezést használják, ha a karakter[ENTER]rangpontja negatív?
@@ -3543,7 +3543,7 @@
 3543	4
 3544	Melyik a legjobb kétkezes tőr
 3545	Mágneses penge
-3546	Óriásfejsze+0
+3546	Óriásfejsze
 3547	Lefejező penge
 3548	Glefe
 3549	1
@@ -3582,7 +3582,7 @@
 3582	Házaló:[ENTER]Kérlek, segíts nekem! Ha el tudod venni a Démoni[ENTER]Ékkő+ -t a Démonmágustól, gazdagon[ENTER]megjutalmazlak!
 3583	Házaló:[ENTER]Valaki más már megszerezte nekem. Már ne törd a[ENTER]fejedet e miatt.
 3584	Menj a Házalóhoz.
-3585	Menj a házaló kereskedőhöz
+3585	Menj a Házalóhoz.
 3586	Menj el a Házalóhoz, és kérdezd a Démoni[ENTER]Ékkő+-ról.
 3587	A kereskedő levele:[ENTER]Nem tudom, mit csináljak. Ellopták tőlem a Démoni[ENTER]ékkő+ -t. A csőd szélén állok, mert ráköltöttem[ENTER]minden pénzem.[ENTER]Tudsz nekem segíteni? Teljesen kétségbe vagyok[ENTER]esve!
 3588	Házaló:[ENTER]Tényleg sikerült? Drága kövem, gyere a karjaimba![ENTER]Köszönöm! El sem tudod képzelni, mennyire[ENTER]megkönnyebbültem.
@@ -3647,7 +3647,7 @@
 3647	Ezüst- vagy Aranyrudat venni
 3648	Na jó, akkor ne. Nem kényszeríthetek senkit, hogy[ENTER]olyat tegyen, amit nem akar, igaz?
 3649	Bővíteni a Raktáram.
-3650	 : 30 darabom van, tehát vidd el[ENTER]hozzá.
+3650	: 30 darabom van, tehát vidd el hozzá.
 3651	maradék medve epe
 3652	Lejárt az idő. Elbuktam.
 3653	Miért tart ez ilyen sokáig?[ENTER]A te 30 perced lejárt.[ENTER]Ezzel az alkalommal
@@ -3685,7 +3685,7 @@
 3685	Megint te? Még mindig nem volt elég?[ENTER]Nem, elegem van! Nem a Télapó vagyok!
 3686	Bővíteni akarod a raktárad? Hmm, hadd lássam[ENTER]csak, hogyan szolgálod a birodalmad.
 3687	Sajnálom, de pillanatnyilag nem tehetek semmit[ENTER]sem érted. Már sok ember rakterét kibővítettem,[ENTER]nem maradt már több üres hely. Eltart egy ideig,[ENTER]mire újra bővíteni tudom a raktáram. Miért nem[ENTER]használod azt az üres helyet, amivel most[ENTER]rendelkezel?
-3688	Elérhető 30 Medveepe számára.[ENTER]30 percet kapsz, hogy 30 medve epét tudjál hozni[ENTER]nekem. Akkor elismerlek! Ehhez szükséged[ENTER]van
+3688	Elérhető 30 Medveepe számára.[ENTER]30 percet kapsz, hogy 30 medve epét tudjál hozni[ENTER]nekem. Akkor elismerlek! Ehhez szükséged van
 3689	.
 3690	Persze, persze, mondd csak meg nekem, ha valamire[ENTER]szükséged van!
 3691	Később is meg fogom próbálni.
@@ -3695,7 +3695,7 @@
 3695	Tudod, hogy mire való egy aranyrúd? Persze, hogy[ENTER]tudod.[ENTER]De tudod, mire jó még?[ENTER][ENTER]Ez egyszerű. Ha a Yangot magaddal hordozod, akkor[ENTER]ez azt jelenti, mintha azt mondanád, hogy:[ENTER]'Kérlek! Ölj meg és vedd el minden pénzem!' Ezért[ENTER]az emberek Yangját aranyrúdra váltom át és a[ENTER]raktárban megőrzöm nekik. Így nem éri őket[ENTER]veszteség.[ENTER][ENTER]Jó, én többet követelek, mint amennyit egy[ENTER]aranyrúdért kaphat az ember. De hé, nekem is[ENTER]élnem kell! Nincsen okod arra, hogy becsapottnak[ENTER]érezd magad.[ENTER]Mint tudod, kint nagyon veszélyes.
 3696	Akarod a raktárt használni?[ENTER]A raktár használatáért azonban valamit fizetned[ENTER]kell. Ma én mindenesetre olyan jó kedvemben[ENTER]vagyok, hogy 500 Yangért felkínálom neked. Mit[ENTER]szólsz hozzá? Igazán olcsó, nem igaz? Ha, ha, ha!
 3697	Oh, Isten hozott!
-3698	Üdvözöllek!
+3698	Isten hozott.
 3699	Hm, ő egy jövőbeli hős?
 3700	Á, semmi.
 3701	Micsoda? Nincs elég Yangod?[ENTER]Akkor gyere vissza később, ha elég lesz.
@@ -3704,7 +3704,7 @@
 3704	Fizetni
 3705	Yang-bomba ledobása százalékban
 3706	%d nap és %d óra
-3707	%d óra %d perc
+3707	%d perc és %d másodperc
 3708	%d perc és %d másodperc
 3709	%d másodperc
 3710	Nő
@@ -3713,7 +3713,7 @@
 3713	Mindenki, aki ma előttem meghajol, egy kis újévi[ENTER]ajándékot kap tőlem. De legalább 15 szintet kell[ENTER]elérnie. Remélem jó neveltetésben volt részed, és[ENTER]tiszteled az idősebbeket és a bölcsességüket.
 3714	Nem tudom ezt neked eléggé megköszönni! A[ENTER]Sárkányisten áldása kísérjen! Elismerésem jeléül[ENTER]fogadd el ezt a kis Yangot. Minden jót kívánok az[ENTER]Új évben!
 3715	Azért jöttél, hogy egy meghajlással üdvözölj[ENTER]engem?
-3716	Kár! Nincs helyed a leltárban. Gyere akkor[ENTER]vissza, ha megint hely van a leltárban.
+3716	Nagyon kár. Nincs helyed a leltárban. Gyere akkor[ENTER]vissza, ha megint hely van a leltárban.
 3717	Minden jót kívánok neked a következő évre.[ENTER]Bár már megkaptad az ajándékod. Azt gondoltad,[ENTER]hogy nem fogok rád emlékezni?
 3718	Sok szerencsét az Újévben.
 3719	Nem
@@ -3721,10 +3721,10 @@
 3721	Ó, köszönöm! A legnagyobb szerencsét az Új évben![ENTER]Sajnos nincs ajándékom a számodra.[ENTER]Csak azok kaphatják meg az ajándékot, akik[ENTER]legalább 15. szintűek. Ne keseredj el, biztos[ENTER]vagyok abban, hogy az Új év rengeteg jó dolgot[ENTER]tartogat számodra!
 3722	Óriásfejsze+0
 3723	Találd meg Soon-t
-3724	Találd meg Soon-t
+3724	Soon-t keresni
 3725	Soont keresni. Hallgasd meg Soon utalásait a[ENTER]porcalánkészítésről és számolj be Yonahnak.
 3726	Felkeresni Yonah-t
-3727	Keresd meg a fazekas Yonah-t
+3727	A fazekas Yonah-t keresni.
 3728	Keresd fel Yonah-t. Van egy megbízása számodra.
 3729	Gyűjtsed a sötétorkok aranyfogait.
 3730	Gyűjtsed a sötétorkok aranyfogait.
@@ -3736,7 +3736,7 @@
 3736	Térj vissza a zenészhez Yu-Hwanhoz.
 3737	Magyarázd meg a zenésznek, Yu-Hwannak, hogy nem[ENTER]találtad meg a pókhálót.
 3738	Keresd Yu-Hwan zenészt
-3739	Keresd Yu-Hwan zenészt
+3739	A zenészt, Yu-Hwant keresni.
 3740	Keresd a zenészt, Yu-Hwant és hallgasd a dalát.
 3741	Fogd meg az ollós pókot.
 3742	Elfogni az ollós pókot.
@@ -3753,7 +3753,7 @@
 3753	Természetesen.
 3754	Köszönöm. Most siess!
 3755	Ölj meg 300 tűzföldi démont az erőd környékén és[ENTER]a Nap-növények helyénél.
-3756	Dämonenhatz
+3756	Démonvadászat
 3757	Erledige 300 Feuerland Dämonen in der Nähe der Festung und dem Fundort der Sonnenkräuter
 3758	Félek, még nem öltél meg elég démont. Menj vissza[ENTER]Tűzföldre és folytasd a küzdelmet.
 3759	Megölted az összes démont.[ENTER]Most tegyél jelentést Yak-Hwan-nak.
@@ -3773,11 +3773,11 @@
 3773	Megtaláltad valamennyi összetevőt! Nagyszerű, már[ENTER]tudok dolgozni. Hívatni foglak, amint elkészült a[ENTER]Dicsfény tinktúra.
 3774	Ha nem állítjuk meg hamarosan a Sötét anyagot,[ENTER]semmi jónak nem nézünk elébe. Menj, hozd el[ENTER]valamennyi összetevőt a Dicsfény tinktúrához!
 3775	Megvan valamennyi szükséges összetevő. Térj[ENTER]vissza az alkimistához.
-3776	Beszélj az Alkimistával.
+3776	Beszélj az alkimistával.
 3777	Állítsd meg a Sötét anyagot
 3778	Micsoda egy... hmph... Reklamáltam a kovácsnál,[ENTER]mert túl durvára lett törve az Alapkő. És most?[ENTER]Megsértődött, és nem hajlandó a többi követ porrá[ENTER]zúzni. Micsoda csökönyös szamár! Kérlek, tudnál[ENTER]vele beszélni?
 3779	Minden bizonnyal.
-3780	Danke Hier sind die Fundamentsteine Und bringe ihm diesen Korb mit Leckereien als Entschuldigung
+3780	Köszönöm. Kérlek, add át neki ezt a kosárnyi[ENTER]finomságot bocsánatkérésem jeléül és győzd meg,[ENTER]hogy őrölje finom porrá az Alapköveket.
 3781	Nyugtasd meg a Kovácsot
 3782	Nyugtasd meg a Kovácsot és győzd meg, hogy őrölje[ENTER]finom porrá az Alapköveket.
 3783	Alapkő-por: 1 egység
@@ -3813,7 +3813,7 @@
 3813	Kapkodva leírt szavak:
 3814	Yak-Hwan, nem fogok visszatérni élve, de remélem,[ENTER]eljut hozzád ez a levél. Találtam egy erődöt[ENTER]Tűzföldön, ami semmilyen térképen nincs jelölve.[ENTER]Uralkodója egy erőteljes tűzföldi démon –[ENTER]különleges aura veszi körül őt és az őt követő[ENTER]egyéb démonokat is.[ENTER]Üvöltése fülsiketítő és úgy tűnik, hogy valamit[ENTER]őriz, de nem tudom megmondani, mit. Bocsásd meg,[ENTER]hogy elbuktam...
 3815	Ki kell találnunk, mi van elrejtve ebben az[ENTER]erődben.[ENTER]Nézd csak, a Szegecselt nyaklánc belsejében van[ENTER]egy véset. Tanácsot fogok kérni Yon-I-Walker-től.[ENTER]Ő majd kapcsolatba lép veled, ha szüksége van a[ENTER]segítségedre.
-3816	Gravur entschlüsseln
+3816	A gravírozás megfejtése
 3817	Yon-I-Walker keres téged. Menj el hozzá.
 3818	Willkommen ich habe dich bereits erwartet Ich brauche etwas Hilfe dabei die Gravur in diesem Nietenhalsband zu entschlüsseln
 3819	A Szegecselt nyakék belsejében lévő karakterek[ENTER]egy régmúlt időkben létezett, ősi kultúrából[ENTER]származnak. Megfejtésükhöz Lángkirály-vérre van[ENTER]szükségem. Lávaként áramlik az ereiben.
@@ -3868,14 +3868,14 @@
 3868	Jó híreim vannak! Megtaláltam, hogyan lehet[ENTER]semlegesíteni a Sötét anyagot.
 3869	Minden természeti erőnek van egy ellentéte – fény[ENTER]és sötétség, tűz és víz, jó és gonosz. Még a[ENTER]Sötét anyagnak is van ellentéte, valami, aminek[ENTER]van ereje semlegesíteni azt: Tiszta fény!
 3870	Tiszta fény előállításához Energia-töredékeket[ENTER]kell Mong-vízzé olvasztani. Tudnál gyűjteni 50[ENTER]üveg Mong-vizet és 100 Energia-töredéket, utána[ENTER]elvinni azokat Yu-Hwan-nak? Köszönöm.
-3871	El van intézve!
+3871	Megteszem.
 3872	Gyűjts 50 üveg Mong-vizet valamint 100[ENTER]Energia-töredéket és vidd el mindet Yu-Hwan-hoz.
 3873	Tiszta fény
 3874	Gyűjts 50 üveg Mong-vizet valamint 100[ENTER]Energia-töredéket és vidd el mindet Yu-Hwan-hoz.
 3875	Huh, Yon-I-Walker már figyelmeztetett, hogy jönni[ENTER]fogsz. Hát akkor lássunk is neki a munkának.[ENTER]Miért nem pihensz addig egy kicsit?
 3876	Huh, Yon-I-Walker már figyelmeztetett, hogy jönni[ENTER]fogsz. Szeretnék hozzákezdeni a munkához, de az[ENTER]anyagok még nem megfelelőek Tiszta fény[ENTER]előállításához. Menj vissza és folytasd a[ENTER]gyűjtést.
 3877	Elegendő Mong-vized és Energia-töredéked van.[ENTER]Vidd el mindet Yu-Hwan-nak.
-3878	Menj Yu-Hwanhoz
+3878	Menj Yu-Hwan-hoz.
 3879	A Tiszta fény leszállítása
 3880	Yu-Hwan előállította a Tiszta fényt. Menj el[ENTER]hozzá.
 3881	Hát itt vagy! Pontosan a megfelelő időben. Éppen[ENTER]most készült el a Tiszta fény. Jelentsd a híreket[ENTER]Yak-Hwan-nak.
@@ -3955,7 +3955,7 @@
 3955	Még nem voltál Yon-I-Walker-nél? Hogyan akarod[ENTER]legyőzni Razador-t?! Menj! Mire vársz még?!
 3956	Igen, igaz. Razador visszatért – és most[ENTER]izgatottabb, mint valaha volt. Csak egy[ENTER]lehetőségünk van, hogy megállítsuk a Sötétség[ENTER]szolgáit tervük végrehajtásában...
 3957	Razador nem fog nyugodni, míg véghez nem viszi[ENTER]feladatát és ki nem szabadítja a Vörös sárkányt.[ENTER]Hogy ezt megállítsuk, száműznünk kell a sárkányt.
-3958	Das Element des Rotdrachen ist das Feuer und Feuer bekämpft man am Besten mit Feuer Jeder Flammendämon trägt einen Magmakern in sich Beschaffe mir jeweils fünf Kerne der folgenden Monster Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral und Glut Flammenfürst
+3958	A Vörös sárkány eleme a tűz... és a tűz ellen[ENTER]harcolni leginkább – tűzzel lehet! Minden[ENTER]Parázs-lángdémon egy Magmagyűrűt visel a szíve[ENTER]körül. Hozz nekem öt ilyen Magmagyűrűt!
 3959	Beschaffe die Magmakerne der Flammendämonen
 3960	Beschaffe jeweils fünf Magmakerne dieser Gegner Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral Glut Flammenfürst Kehre damit zu Yon I Walker zurück
 3961	Oh ja du hast schon einige gefunden Bringe noch das sollte dann reichen
@@ -4003,7 +4003,7 @@
 4003	Győzd le Razadort, a Tűz urát a Vörös[ENTER]sárkány-erődben.
 4004	Túl sok volt neked Razador ez alkalommal? Nehezen[ENTER]tudom elhinni! Már egyszer megcsináltad – meg[ENTER]fogod tudni tenni ez alkalommal is!
 4005	Legyőzted Razador-t. Jelentsd Yak-Hwan-nak.
-4006	Ich wusste du würdest es schaffen Großartig Nun werden wir alles für die Verbannung des Rotdrachen vorbereiten Ich lasse dich rufen sobald wir bereit sind
+4006	Tudtam, hogy képes vagy megtenni! Most elkezdem a[ENTER]száműzési rituálé előkészületeit. Amint készen[ENTER]állunk, hívatni foglak.
 4007	Verbannung des Rotdrachen
 4008	Itt az idő. Minden készen áll a Vörös sárkány[ENTER]száműzésére.
 4009	Meine Männer haben bereits bereits zwei Bannkreise aufgestellt Deine Aufgabe ist es nun sie zu entzünden Wirf den Bannbeutel auf die Kreise und sie werden sich entflammen Das wird die Verbannung des Rotdrachen vollziehen
@@ -4086,7 +4086,7 @@
 4086	Minden egyes birodalom próbálja a zavargásokat[ENTER]kiheverni, amit a Metinkövet becsapódása az[ENTER]országban okozott, hogy ismét a fejlődés útjára[ENTER]léphessenek. Sokan kívánják, hogy a földrész[ENTER]ismét egységessé váljon. Ez az, amiért neked is[ENTER]ki kell állnod! Ezt soha ne felejtsd el.
 4087	Az első megbízásodat fogom most veled közölni.[ENTER]Ne izgulj, ez egy olyan feladat, amivel könnyen[ENTER]megbirkózol. A szomszéd faluban él egy zenész,[ENTER]Yu-Hwan a neve. De valójában titkos kémként[ENTER]ténykedik, hogy fontos dokumentumokhoz[ENTER]hozzájusson. Szükségem van azokra a[ENTER]dokumentumokra tőle. Hozd el nekem. És ne feledd,[ENTER]ez egy titkos küldetés.
 4088	Nyomd meg az M billentyűt, hogy megtudd, hogyan[ENTER]jutsz el a következő faluba a térképen. Használd[ENTER]a teleportációs kaput, ami a megfelelő falu[ENTER]nevével rendelkezik. Siess! Yu-Hwan nagyon magas[ENTER]- de felismered majd nálad lévő információk[ENTER]alapján.
-4089	Ölj Alfa szürkefarkasokat
+4089	Alfa szürkefarkasokat legyilkolni:
 4090	A Kapitánynak egy új feladata van számodra. Menj,[ENTER]beszélj vele.
 4091	Meg akarod szakítani a küldetést?
 4092	Sikeres voltál? Jól csináltad! Abból indulok ki,[ENTER]hogy nem volt túl sok gondod! Mindegy, menjünk[ENTER]együtt a következő szintre.
@@ -4149,7 +4149,7 @@
 4149	Találtál egy levelet.[ENTER]Vidd el a kapitánynak.
 4150	Találtál egy levelet a fehér eskü katonáknál.[ENTER]Talán ez az a bizonyíték, amit a kapitány keres.[ENTER]Vidd el a levelet a kapitánynak.
 4151	Van valami bizonyítékod? Egy levél? Hadd[ENTER]nézzem... Bizonyítéknak talán elég, hogy[ENTER]kiderítsük, ki a kém. Neked köszönhetően[ENTER]kilábalhatnánk ebből a krízisből. Ez jó munka[ENTER]volt! Kicsit most pihend ki magad. Fogadd el ezt[ENTER]köszönetem jeléül.
-4152	Első gyakorlat:
+4152	Első gyakorlat
 4153	Mit csinálsz?
 4154	Első gyakorlat:
 4155	Ölj meg 9 vadkutyát. Közvetlenül a városkapu[ENTER]előtt találod őket.
@@ -4181,7 +4181,7 @@
 4181	Elpusztítottad a Metinkövet? Köszönöm! A falu[ENTER]egyelőre újra biztonságos. Honnan származnak[ENTER]egyébként ezek a kövek? Jelenleg alig van valami[ENTER]információnk róluk, annak ellenére, hogy rengeteg[ENTER]problémát okoznak. Úgy hallottam, hogy Uriel, a[ENTER]Bölcs vizsgálta a Metinköveket, de nem tudom, mit[ENTER]fejtett meg róluk eddig.[ENTER]De akárhogy van is, jó munkát végeztél!
 4182	Jutalom:
 4183	3.300.000 tapasztalat pontot kaptál.[ENTER]270.000 Yangot kaptál.[ENTER]Egy Mester könyvet kaptál.
-4184	%s-t kaptál.
+4184	Ezt kaptál: %s
 4185	A Metinkövek okozta pusztítás egyre rosszabb. Az[ENTER]ország szenved. Meg kell semmisíteni a[ENTER]Metinköveket! Menj a Kapitányhoz.
 4186	A Metinkövek okozta pusztítás egyre rosszabb. Az[ENTER]ország szenved. Meg kell semmisíteni a[ENTER]Metinköveket! Menj a Kapitányhoz.
 4187	Ahogy hallom, keményen dolgoztál. Az emberek a jó[ENTER]munkádról beszélnek. Tartozol nekem valamivel,[ENTER]amiért jó helyre küldtelek![ENTER]Haha! Na, ne mérgelődj már, csak vicceltem![ENTER]Nagyon jól végezted a dolgod.[ENTER][ENTER]De a Metinkövek egyre csak szaporodnak. Ez komoly[ENTER]problémát jelent.
@@ -4280,7 +4280,7 @@
 4280	A második oldal
 4281	Megtaláltad a második oldalt
 4282	Sikeresen vadásztál a Büszke ork varázslókra:[ENTER]megtaláltad a Titkos könyv második oldalát. Vidd[ENTER]el a tudós Uriel-nek.
-4283	Ez a második oldal? Hadd nézzem meg. Hát ezt[ENTER]tényleg nem könnyű kibetűzni. Az áll[ENTER]itt:
+4283	Ez a második oldal? Hadd nézzem meg. Hát ezt[ENTER]tényleg nem könnyű kibetűzni. Az áll itt:
 4284	Második oldal:
 4285	Mihelyt megtalálod a régi oldalakat, hozd ide[ENTER]nekem. Akkor majd megpróbálom megfejteni. Hmmm...[ENTER]Hol kezdd a keresést? Régen egy, a szomszéd[ENTER]faluban lévő Házaló mondta nekem, hogy talált egy[ENTER]régi könyvoldalt. Menj el hozzá, lássuk, mire[ENTER]jutsz.
 4286	Megtaláltuk a sötét mágia követőit.[ENTER]Rejtve élnek a Sárkány-völgyben. Nagyon jól[ENTER]informáltak az évek alatt felhalmozódott[ENTER]boszorkányságot illetően. Sokakat kellett[ENTER]meggyőznünk, némelyeket fenyegetéssel, másokat[ENTER]hízelgéssel, hogy segítenek. És az eredmény:[ENTER]Szükséged van egy különleges helyre a tiltott[ENTER]boszorkányság folytatásához. A hely telítve volt[ENTER]gonosz energiával. Fogytán az idő, így a lehető[ENTER]leggyorsabban meg kellett találnom a megfelelő[ENTER]helyet.
@@ -4411,7 +4411,7 @@
 4411	A hatodik oldal
 4412	Hé, ne olyan gyorsan! Ne feledd a jutalmad a[ENTER]kilencedik oldalért!
 4413	Ölj büszke katona mérgespókokat
-4414	5.000.000 tapasztalat pontot kaptál.
+4414	5.000.000 tapasztalatot kaptál
 4415	125.000 Yangot kaptál.
 4416	Egy Bölcs császár szimbólumát kaptál.
 4417	Nyom Jégföldön
@@ -4766,7 +4766,7 @@
 4766	Kövesd a minitérképen villogó pontot.
 4767	(Fennmarad: %s %s, %s %s)
 4768	Das Item bekommst du in kills
-4769	%s: %d darab
+4769	%s : %d darab
 4770	A kaland folytatódik, amint elérted a 91-es[ENTER]szintet.
 4771	Helyzetjelentés
 4772	Nézz körül a szigeten, majd megfigyeléseidet[ENTER]jelentsd Angmur Admirálisnak.
@@ -4793,7 +4793,7 @@
 4793	A következő lények egyikénél van Lee Chung[ENTER]levele: Gnoll harcos, Gnoll íjász, Gnoll[ENTER]védelmező, Gnoll mágus, Gnoll tábornok, Gnoll[ENTER]Nagyúr vagy a Legfőbb Gnoll-őr.
 4794	Ha meg akarjuk állítani Sung Mahi-t, szükségünk[ENTER]van erre a levélre! A tolvaj a gnoll-törzs[ENTER]soraiból származik.
 4795	Megtaláltad a levelet.
-4796	Vidd el Angmur Admirálisnak.
+4796	Vidd el Angmur Admirálisnak!
 4797	Beszélj Angmur Admirálissal.
 4798	Visszatértél, és nálad a levél is! Igen, tudtam,[ENTER]hogy számíthatok rád! Lássuk hát!
 4799	Üdv, Angmur![ENTER]Barátom, Sung Mahi üres táboraiban találtunk[ENTER]valamit: a Sötétség szolgái titkos üzenetek által[ENTER]érték el szövetségeseiket a szigeten. Ezen[ENTER]üzenetek egyike a Gnoll törzsnek lett küldve. Ha[ENTER]ezt meg tudod szerezni, egy fontos lépéssel[ENTER]leszünk a démonok előtt! Támogatásként küldök[ENTER]%s-t. Jó erőt és bátorságot kívánok neked ezekben[ENTER]a sötét időkben.[ENTER]L.C.
@@ -4821,7 +4821,7 @@
 4821	Megtaláltad a második lapot. Vidd el Angmur[ENTER]Admirálisnak.
 4822	Kitűnő, most már meg tudjuk fejteni az üzenetet:[ENTER]Hmm. Úgy tűnik, ez a világ szívében mélyen alvó[ENTER]sárkányokról szól. Egy eljárásról beszél, amivel[ENTER]felébresztheted és megőrjítheted őket.[ENTER]Oh ne! Ez nem hangzik jól...
 4823	Úgy tűnik, a Mantikórok és a Vörös tolvaj banda[ENTER]szintén kaptak leveleket. Amint megtudok erről[ENTER]többet, hívatni foglak.
-4824	Angmur Admirálisnak új feladata van számodra.
+4824	Angmur Admirálisnak feladata van számodra.
 4825	A Mantikórok
 4826	Angmur Admirálisnak új feladata van számodra.
 4827	Jó, megjöttél! Az információnk a mantikórokról[ENTER]meglehetősen régi. Ki kell derítenünk, jelenleg[ENTER]milyen haderővel rendelkeznek.
@@ -4856,7 +4856,7 @@
 4856	Angmur Admirális a segítséged kéri. Derítsd ki,[ENTER]mit akar.
 4857	Az építkezés befejezéséhez Agyagtéglákra van[ENTER]szükségünk. A mantikórok aranyként gyűjtik[ENTER]ezeket.[ENTER]Azt hiszem, 100 tégla elég lenne. Természetesen[ENTER]bőkezűen meg leszel jutalmazva a segítségedért.
 4858	A Mantikór levél
-4859	Angmur Admirálisnak új feladata van számodra.
+4859	Angmur Admirálisnak feladata van számodra.
 4860	Nos, ismét itt az ideje egy kis figyelmet[ENTER]szentelni a cselszövő Sötétség szolgáinak.[ENTER]Szükségünk van a mantikóroknak, valamint a vörös[ENTER]tolvajoknak küldött levelükre.[ENTER]Először tégy látogatást a mantikóroknál.
 4861	Minden rendben.
 4862	Kór tábornok elindult, hogy átadja a levelet[ENTER]Martyaxwar-nak. Meg kell akadályoznod az átadást!
@@ -4900,7 +4900,7 @@
 4900	A mantikórok levele dekódolva.
 4901	Yon-I-Walker keres téged. Menj és tudd meg,[ENTER]sikerült-e már megfejtenie a levelet vagy sem.
 4902	*motyogás* ...ah! Te vagy az! A segítségednek[ENTER]köszönhetően meg tudtam fejteni az üzenet nagy[ENTER]részét, de még nem tudtam semmit sem kezdeni az[ENTER]utolsó résszel. Attól tartok, újra a segítséged[ENTER]kell kérnem. Sürgősen szükségem van[ENTER]Carapax-porra.[ENTER]A rákfélék törzsébe tartozó Homár tábornoknál[ENTER]vagy a Tarisznyarák királynál találod.
-4903	Carapax-por
+4903	Carapax-por?
 4904	Igen, csak a rákfélék törzse birtokolja. Már egy[ENTER]kis adag por is halálos! Három adag elég lesz.[ENTER]Sok szerencsét!
 4905	Haladéktalanul útnak indulok.
 4906	Carapax-por
@@ -5113,11 +5113,11 @@
 5113	Angmur Admirális beszélni akar veled.
 5114	Bevált a tervünk: a köpeny láttán hatalmas[ENTER]zűrzavar tört ki a Vörös tolvajok között. Végül a[ENTER]démonok és az emberek egymás torkának estek,[ENTER]úgyhogy ez a banda most teljesen rendezetlen.[ENTER]A következő lépés a Küklopszok.
 5115	Hogyan kivitelezzük?
-5116	A Küklopszok imádják vezérüket. Ha megsemmisítjük[ENTER]a vezérkarukat, a Küklopszok pánikba esnek és[ENTER]szétszóródnak. Győzd le Outis tábornokot %d,[ENTER]Arges-t %d és Polyphemos-t %d alkalommal.
+5116	A Küklopszok imádják vezérüket. Ha megsemmisítjük[ENTER]a vezetőiket, a Küklopszok pánikba esnek és[ENTER]szétszóródnak. Győzd le Outis tábornokot %d,[ENTER]Argészt %d és Polyphemost %d alkalommal.
 5117	Örömmel megteszem.
 5118	Légy óvatos!
 5119	Küzdj meg a Küklopszokkal!
-5120	Győzd le Outis tábornokot %d, Arges-t %d és[ENTER]Polyphemos-t %d alkalommal.
+5120	Győzd le Outis tábornokot %d, Argészt %d és[ENTER]Polyphemost %d alkalommal.
 5121	Nehéz elhinnem, hogy minden Küklopsz jobb nálad.[ENTER]Menj, tudom, hogy meg tudod csinálni!
 5122	Legyőzted a Küklopszok vezetőit.
 5123	Jelentsd Angmur Admirálisnak.
@@ -5158,7 +5158,7 @@
 5158	Angmur Admirális a Fekete aranyról szeretne veled[ENTER]beszélni.
 5159	Az Alkimista nem tudta kielemezni a Fekete[ENTER]aranyat, túl kicsi volt a minta. Meg kell tudnunk[ENTER]a jellemzőit, és azt is, hogy a Sötétség szolgái[ENTER]miért keresik! Vissza tudnál térni a[ENTER]Mennydörgés-hegységbe, hogy további mintákat[ENTER]biztosíts a Fekete aranyból?
 5160	Előbb menj az Alkimistához. Meg fogja mondani,[ENTER]hány mintára van szüksége.
-5161	Beszélj az Alkimistával.
+5161	Beszélj az alkimistával.
 5162	Üdvözöllek. Felvilágosított már Angmur Admirális[ENTER]a feladatodról?
 5163	Igen. Hány mintadarabra van szükséged a Fekete[ENTER]aranyból?
 5164	Hmm, hadd gondolkodjam egy pillanatot. Azt[ENTER]hiszem, %d mintának elegendőnek kell lennie az[ENTER]elemzéshez.
@@ -5341,7 +5341,7 @@
 5341	Angmur Admirálisnak a segítségedre van szüksége!
 5342	Jó, megérkeztél. Skeletos, a Fekete Halál[ENTER]brigádjának vezére túlélte az előző akciót és[ENTER]megtámadta az embereim, amint a bázis lerohanását[ENTER]tervezték. Senki sem tudta legyőzni.
 5343	Egyszer már legyőzted őt, kérlek, segíts az[ENTER]embereimnek a Gautama-sziklán! Indulj Skeletos[ENTER]ellen! Ezután rohamozd meg a bázist és öld meg a[ENTER]Templomszolga Yah-Ki-t.
-5344	Megértettem.
+5344	Megértettem!
 5345	Győzd le Yah-Ki-t
 5346	Győzd le a Templomszolga Yah-Ki-t és állítsd meg,[ENTER]nehogy megidézze a holtak seregét.
 5347	Elérkezett a döntő nap. Ha elbukunk, velünk bukik[ENTER]a világ is. De ha győzünk, még száz év múlva is[ENTER]dalokban zengik tetteinket. Állítsd meg a[ENTER]Sötétség szolgáit! Győzd le a Templomszolga[ENTER]Yah-Ki-t!
@@ -5429,7 +5429,7 @@
 5429	Vegyeskereskedő Eladónő (%s)[ENTER]Fegyverkereskedő (%s)
 5430	A haltenyészet
 5431	Halász:
-5432	A haltenyészetemet ki akarom bővíteni, ezért[ENTER]szükségem van élő pontyra. Ez a halfajta a[ENTER]tenyészetre jól alkalmas és a halászok körében[ENTER]nagyon kedvelt, de nem könnyű a[ENTER]halászata.
+5432	A haltenyészetemet ki akarom bővíteni, ezért[ENTER]szükségem van élő pontyra. Ez a halfajta a[ENTER]tenyészetre jól alkalmas és a halászok körében[ENTER]nagyon kedvelt, de nem könnyű a halászata.
 5433	Ha hozol nekem egy pontyot, akkor meg foglak[ENTER]jutalmazni. Egy ládám van, ami már ősidök óta a[ENTER]padláson van. Már azt sem tudom, hogy mi van[ENTER]benne. Talán valami haszontalan dolog, vagy[ENTER]valami értékes. De még szörnyek is meghúzhatták[ENTER]magukat benne. Ha meg akarod kapmi a ládát, akkor[ENTER]hozz nekem egy élő pontyot.
 5434	Váltsd át a pontyot a ládára
 5435	Hoztál egy pontyot a haltenyészetembe?[ENTER]Köszönöm! Itt a láda, amit megígértem. Sok[ENTER]szerencsét!
@@ -5496,7 +5496,7 @@
 5496	Egy másik esküvő zajlik most, vár egy pillanatot,[ENTER]vagy gyere vissza később!
 5497	A partnerednek közel kell lennie hogy tudjak[ENTER]foglalkozni a gondoddal. Hozd ide a partneredet.
 5498	%s túl messze van.
-5499	Nem a te nevedet, hanem a partnered[ENTER]nevét.
+5499	Nem a te nevedet, hanem a partnered nevét.
 5500	Írd fel a partnered nevét.
 5501	Sajnálom.[ENTER][ENTER]Azonos nemű párokat nem tudok[ENTER]összeadni.---LOCA::SPACE--
 5502	Csak ugyanazon birodalomból való párok tudnak[ENTER]házasságot kötni.
@@ -5504,11 +5504,11 @@
 5504	%s házas, ill. férjezett.
 5505	A személy még nem elég érett.[ENTER]A te partnerednek is legalább 25 szintet kell[ENTER]birtokolnia.
 5506	Ti ketten nem illetek egymáshoz. Ha ők ketten nem[ENTER]illenek egymáshoz, akkor nem engedhetem meg a[ENTER]esküvőt.[ENTER]A szintkülönbség több mint 15 szintet tesz ki,[ENTER]ezért nem köthettek házasságot.
-5507	Te még túl fiatal vagy, hogy házasodjál...[ENTER]Sok felelősségre van szükség és erre te még nem[ENTER]értél meg. Fiatal emberek manapság nagyon hamar[ENTER]válnak . A házasságodat nem engedélyezem. Menj[ENTER]vissza és gyűjts még több[ENTER]tapasztalatot
+5507	Te még túl fiatal vagy, hogy házasodjál...[ENTER]Sok felelősségre van szükség és erre te még nem[ENTER]értél meg. Fiatal emberek manapság nagyon hamar[ENTER]válnak . A házasságodat nem engedélyezem. Menj[ENTER]vissza és gyűjts még több tapasztalatot
 5508	Adjátok át a gyűrűket.
 5509	Öreg asszony:[ENTER]A házasságkötés az életben olyan fontos mozzanat,[ENTER]nem tudott volna a partnered legalább egy[ENTER]jegygyűrűt hozni?
-5510	A partnerednek egy jegygyűrűt is kell[ENTER]hoznia.
-5511	A partnered nem visel esküvői ruhát! Te nem[ENTER]szégyenled, hogy így megjelensz vele[ENTER]itt?
+5510	A partnerednek egy jegygyűrűt is kell hoznia.
+5511	A partnered nem visel esküvői ruhát! Te nem[ENTER]szégyenled, hogy így megjelensz vele itt?
 5512	A partnerednek egy szmokingot kell viselnie.
 5513	A partnerednek egy menyasszonyi ruhát kell[ENTER]viselnie.
 5514	%s megkért téged. Elfogadod?
@@ -5519,10 +5519,10 @@
 5519	Információ:
 5520	A esküvő engedélyezése
 5521	Esküvőszervező:
-5522	Beszélek a partnereddel. Egy[ENTER]pillanat
+5522	Beszélek a partnereddel. Egy pillanat
 5523	Én az esküvőnek csak egy asszisztense vagyok, írd[ENTER]le ott alul a partnered nevét.
-5524	Egy ilyen nevet nem is tartunk nyilván,[ENTER]ellenőrizd le még egyszer az[ENTER]adataidat?
-5525	Elnézést. Hozd ide a partneredet, nekem[ENTER]értesítenem kell őt és át kell[ENTER]vizsgálnom.
+5524	Egy ilyen nevet nem is tartunk nyilván,[ENTER]ellenőrizd le még egyszer az adataidat?
+5525	Elnézést. Hozd ide a partneredet, nekem[ENTER]értesítenem kell őt és át kell vizsgálnom.
 5526	%s közelebb kell lenni.
 5527	A partnered nevét kell leírnod, nem a saját neved.
 5528	Esküvőszervező:
@@ -5536,7 +5536,7 @@
 5536	Éjszaka
 5537	Hó
 5538	Az esküvő vége
-5539	Várj egy pillanatot. Én beszélek a[ENTER]partnereddel?
+5539	Várj egy pillanatot. Én beszélek a partnereddel?
 5540	Szeretnéd folytatni az esküvőt?
 5541	Gyűrű nélkül akarsz házasságot kötni?
 5542	Igen
@@ -5547,7 +5547,7 @@
 5547	A partnered nem akar.
 5548	Válás
 5549	Válás
-5550	A partner nélkül nem lehet jogerősen elválni.[ENTER]Gyere partnereddel. Egy válás nagyon[ENTER]fontos.
+5550	A partner nélkül nem lehet jogerősen elválni.[ENTER]Gyere partnereddel. Egy válás nagyon fontos.
 5551	A jogerős váláshoz szükséged van 500.000 Yangra[ENTER]és a partnered beleegyezésére. Tényleg el akarsz[ENTER]válni?
 5552	Eljegyzési gyűrű
 5553	Nem, csak egy tréfa volt.
@@ -5559,17 +5559,17 @@
 5559	Tényleg el akarsz válni. Ez egy nagy veszteség.[ENTER][ENTER]Valóban akarod?
 5560	Nem. Megváltoztattam a véleményemet.
 5561	Megváltoztattam a véleményemet. Nem akarok[ENTER]elválni.
-5562	Ez így jobb.[ENTER]Egy hosszú és boldog életet kívánok[ENTER]neked.
+5562	Ez így jobb.[ENTER]Egy hosszú és boldog életet kívánok neked.
 5563	Először egy eljegyzési gyűrűt kell beszerezned.[ENTER]Utána házasodhatsz.
 5564	A válás le van zárva.
 5565	Elfogadod a válást?
 5566	A válás megtörtént. Most te egy elvált ember vagy.
-5567	A papírok még nem teljesek. Gyere[ENTER]újra.
+5567	A papírok még nem teljesek. Gyere újra.
 5568	A válást visszavonták.
-5569	A partner nem akar válni, egyezzetek[ENTER]meg.
+5569	A partner nem akar válni, egyezzetek meg.
 5570	Jegygyűrűt eltűntetni
 5571	Jegygyűrűt eltűntetni
-5572	Kellemetlen emlékeket gyorsan el kell[ENTER]felejteni
+5572	Kellemetlen emlékeket gyorsan el kell felejteni
 5573	Jegygyűrű eltűnt
 5574	Egyoldalú válás
 5575	Tényleg így akarsz megesküdni?[ENTER]Csak egyszer házasodik meg az ember életben és[ENTER]neked legalább ennek megfelelően kellene[ENTER]felöltöznöd?
@@ -5580,9 +5580,9 @@
 5580	Tényleg el akarsz válni. Gondold meg még egyszer.
 5581	Igen, akarom
 5582	Még át kellene gondolnom.
-5583	Jól van.[ENTER]Talán így jobb lesz.[ENTER]Ha tényleg akarsz, akkor gyere el még egyszer, de[ENTER]akkor komolynak kell lenni a[ENTER]szándékodnak.
+5583	Jól van.[ENTER]Talán így jobb lesz.[ENTER]Ha tényleg akarsz, akkor gyere el még egyszer, de[ENTER]akkor komolynak kell lenni a szándékodnak.
 5584	Ha biztos vagy benne, akkor válj el.[ENTER]Ennek ellenére minden jót kívánok neked.[ENTER][ENTER]Az egyoldalú válás le van zárva.
-5585	Deokbae, a favágó:
+5585	Favágó Deokbae:
 5586	A kapádat nem tudjuk feljavítani, mert hiányzik[ENTER]az elegendő edzés.
 5587	Fejleszteni szeretnéd a Csákányod? Lássuk csak...[ENTER]Csákányod jelenlegi szintje %s.
 5588	Ki akarod javítani?
@@ -5593,7 +5593,7 @@
 5593	Óh, ne, hibáztam! Sajnálom! Sajnos Csákányod[ENTER]pontjai csökkentek.
 5594	Ki akarod nyitni a dobozt a kulccsal?
 5595	Igen, doboz kinyitása
-5596	Köszönöm, most nem.
+5596	Nem, most nem
 5597	Egy Rubin kulcsra vagy egy Gyémánt kulcsra van[ENTER]szükséged a Titokzatos rubin doboz kinyitásához!
 5598	Üdv!
 5599	Öreg ember:
@@ -5624,7 +5624,7 @@
 5624	Hoztam neked zoknikat!
 5625	Hozz nekem legalább 5 zoknit, és jutalmat kapsz.[ENTER]Urrgh, a dohos zokni szaga elviselhetetlen![ENTER]Gyere vissza, ha eleget gyűjtöttél. Boldog[ENTER]Karácsonyt!
 5626	Ho ho ho, elegendő zoknit gyűjtöttél![ENTER]Hmm, hadd lássam.[ENTER]URRGH, ez a szag! Nos, ezek egyértelműen a jó[ENTER]zoknik![ENTER]Boldog Karácsonyt!
-5627	 - Rénszarvasgida
+5627	Rénszarvasgida
 5628	Ma már kaptál tőlem egy Rénszarvasgida pecsétet.[ENTER]Attól tartok, a kis gidának most pihennie kell.[ENTER]Holnapra már teljesen visszatér az ereje. Ha nem[ENTER]szeretnél olyan sokáig várni, akkor vess egy[ENTER]pillantást a bal alsó sarokban forgó érme mögé,[ENTER]úgy tudom, egy másik Rénszarvasgida vár ott rád.[ENTER]De én annak is örülök, ha holnap újra[ENTER]meglátogatsz!
 5629	Ma már elhoztad nekem a zoknijaid. Ne feledd,[ENTER]csak 24 óránként adhatsz át néhányat.
 5630	Wonda-Rim:
@@ -5678,7 +5678,7 @@
 5678	40.000 tapasztalat pontot kaptál.[ENTER]10.000 Yangot kaptál.[ENTER]Készségkönyvet kaptál.
 5679	Yang-Shin:
 5680	Yang-Shin:
-5681	Gondnok:
+5681	Őr
 5682	Az Őrnek van számodra egy küldetése. Keresd őt és[ENTER]megtudod, miről van szó.
 5683	A beteg fivér
 5684	A beteg őr
@@ -5737,7 +5737,7 @@
 5737	A szökevény
 5738	Yang-Shin-nek sikerült jó vadászterületet[ENTER]találnia. Keresd fel és tudakold meg, hogyan[ENTER]tudnál segíteni neki.
 5739	Semmi sem működik már ugyanúgy, mióta eljött a[ENTER]Metinkövek ideje. Még a vadászat is[ENTER]ellehetetlenült sok helyen, mert a vadállatok[ENTER]veszettként kezdtek el viselkedni. Valahol kint[ENTER]él a vándor Nakajima, biztos vagyok benne, hogy[ENTER]tudja, merre vannak jó vadászterületek. Fel[ENTER]tudnád keresni őt, hogy megkérdezd?
-5740	Nakajima:
+5740	Nakajima
 5741	Szóval jó vadászterületet szeretnél találni? Ne[ENTER]siess annyira, ha már szívességet kérsz tőlem,[ENTER]neked is meg kell tenned valamit számomra.
 5742	Tudnod kell... nem önszántamból élek itt. El[ENTER]kellett menekülnöm a hadsereg zaklatásai elől.[ENTER]Csak remélni merem, hogy a feleségem, Ah-Yu[ENTER]tudja, hogy még mindig élek. Átadnád neki ezt az[ENTER]üzenetet? De ne feledd, ezt csak Ah-Yu hallhatja![ENTER]Cserébe ő elárulja neked, hol csókoltam meg[ENTER]először - ott szeretnék vele találkozni, és még[ENTER]vadászni is jól lehet ott.
 5743	Nakajima:
@@ -5803,7 +5803,7 @@
 5803	Örömmel
 5804	Ez nem az én dolgom
 5805	Nincs időm neveletlen kölykök megleckéztetésére.[ENTER]Neked kell rendezned vele. Azonban kétlem, hogy[ENTER]neked sikerülne...
-5806	Taurean :
+5806	Taurean
 5807	Eltörött Yonah értékes családi örökségéből három,[ENTER]Halványzöld porcelánból készült váza. Azt hiszi,[ENTER]Taurean a hibás. Menj Taurean-hoz, és derítsd ki.
 5808	Taurean itt van: %s.
 5809	Taurean :
@@ -5812,7 +5812,7 @@
 5812	Vázák? Yonah? Azt sem tudom, miről beszélsz!
 5813	Akkor magyarázd el nekem újra, kérlek, miért tört[ENTER]el három váza.
 5814	Esküszöm, nem voltam semmilyen váza közelében ma,[ENTER]és nem láttam Yonah-t sem. Ami azt illeti, egész[ENTER]nap Harang-gal veszekedtem. Még a pajtába is[ENTER]bezárt egy időre! Kérdezd csak meg őt, ha nem[ENTER]hiszel nekem!
-5815	Harang:
+5815	Harang
 5816	Taurean azt állítja, ártatlan. Egész nap[ENTER]Harang-gal játszott, és nem törhette el a[ENTER]vázákat. Menj Harang-hoz, és kérdezd meg, mi az[ENTER]igazság.
 5817	Harang, láttad Taurean-t mostanában?
 5818	Harang:
@@ -5876,7 +5876,7 @@
 5876	Viszont napok óta nem járt errefelé. Esetleg el[ENTER]tudnál menni hozzá megkérdezni, mi folyik itt?
 5877	Octavio itt van: %s.
 5878	Megyek, megkeresem a Halászt!
-5879	Halász:
+5879	Halász
 5880	Vége a nyugodt tengeren töltött napoknak! A[ENTER]halászok eltűnőben vannak, ez szörnyű! Mióta[ENTER]Metinkövek estek a tengerbe, a valaha békés[ENTER]bálnák brutális tengeri szörnyekké alakultak. A[ENTER]halászat veszélyes foglalkozássá vált.
 5881	Szigonyaink nem tudnak többé ártani a bálnáknak.[ENTER]Keményebb a bőrük, mint egy Ogre bőre.
 5882	Talán Yonah tudja, mit kell tenni. Éveken[ENTER]keresztül gyakran járt a tengerre bálnákra[ENTER]vadászni.
@@ -5889,14 +5889,14 @@
 5889	Yonah :
 5890	Hallottam, mi történt a bálnákkal. Ez rossz üzlet[ENTER]a Halászoknak. Még ha ki is merészkednek a[ENTER]tengerre, a szigonyaik túl gyengék átszakítani a[ENTER]bálnák bőrét. Amikor bálnavadász hajón dolgoztam,[ENTER]különleges fegyvereket használtunk az öreg és[ENTER]sebhelyes bálnák ellen. Azok képesek voltak[ENTER]áthatolni mindenen...
 5891	Ez egy különleges eljárás a bálnavadász szigonyok[ENTER]megerősítésére. A Kovács az egyetlen ember, aki[ENTER]tud ilyen típusú szigonyt készíteni.
-5892	Menj a kovácshoz
+5892	Menj a Kovácshoz.
 5893	Yonah :
 5894	Yonah nagyon erős és éles lándzsák használatát[ENTER]ajánlja a bálnavadászathoz. Menj a Kovácshoz, és[ENTER]kérdezd meg, készítene-e néhány ilyen szigonyt.
 5895	Kovács
 5896	Igen, hallottam azokról a szigonyokról, és[ENTER]készítettem is olyanokat. Viszont ahhoz, hogy[ENTER]megkapják a szükséges tartósságukat, egy Gyémánt[ENTER]kőre van szükségem.
 5897	Szükségem van:
 5898	Eljárás:
-5899	Kovács
+5899	Kovács:
 5900	Gyémánt kő
 5901	Lássuk csak. Szükségem van egy Csákányra az érc[ENTER]bányászatához. Kíváncsi vagyok, az enyém[ENTER]megfelelő-e, vagy Deokbae inkább ad egy újat?
 5902	Szükséged van további %s x Gyémánt kőre.
@@ -6037,7 +6037,7 @@
 6037	Biztosítani fogom a bájitalokat!
 6038	Vegyeskereskedő Eladónő:
 6039	Friss árukészlet
-6040	Vegyeskereskedő Eladónő:
+6040	Vegyeskereskedő Eladónő
 6041	Igen, mostanában egyre nehezebb volt beszerezni a[ENTER]friss árukészletet. A kereskedelmi utak[ENTER]meglehetősen veszélyesekké váltak, gyakran tűnnek[ENTER]fel útonállók és vadállatok. A Vándor[ENTER]kereskedőknek, akiktől beszerzem az árum, esélye[ENTER]sincs a tigrisekkel szemben.
 6042	Talán a Kapitány és a katonái tudnak segíteni.[ENTER]Kérlek, menj el hozzá és kérdezd meg, oda tudná-e[ENTER]küldeni a katonáit a kereskedők védelmére.
 6043	Menj a Vegyeskereskedő Eladónőhöz, és derítsd ki,[ENTER]miért késik a friss bájital ellátmány.
@@ -6142,7 +6142,7 @@
 6142	%s Yangot kaptál.
 6143	Valószínűleg összetévesztesz egy távoli[ENTER]rokonoddal. Nekem nincs lányom, és nincs elegendő[ENTER]Yangom sem esküvőt rendezni.
 6144	Szeretnél megkóstolni egy kanálnyi kecskebéka[ENTER]levest? Egyik idős nagynéném receptje szerint[ENTER]készítettem el.
-6145	Heuk-Young:
+6145	Heuk-Young
 6146	Egy Legenda Naplója
 6147	Találtam ezeket a harcos maradványokat. Nem tudom[ENTER]hogy ez az a Sura-e akit Heuk-Young keres, de[ENTER]biztos vagyok benne hogy érdekli majd.
 6148	Nem csak egy Sura halt itt meg. Láttam a[ENTER]maradványaikat. Kíváncsi vagok hogy vajon az a[ENTER]legendás harcos is köztük volt-e? Megyek[ENTER]jelenteni Heuk-Young-nak erről.
@@ -6162,7 +6162,7 @@
 6162	Egy halott Sura... ez lehet hogy ő lesz, de az is[ENTER]lehet hogy csak egy követője. De többre van[ENTER]szükségünk hogy biztosak legyünk benne. Keress[ENTER]nyomokat arról hogy ki lehet ez. Fegyverek,[ENTER]Ékszerek, vagy talán valami jegyzetek.
 6163	Egy Surának a csontváza és egy könyv oldal?[ENTER]Vessek egy pillantást erre a papírra... Hmmm[ENTER]lehet hogy megtaláltad Akuma maradványait. De[ENTER]több bizonyítékra van szükség. Keress még több[ENTER]könyv oldalt.
 6164	Már találtam bizonyítékot, de nem vagyok biztos[ENTER]benne hogy a legendás Sura tényleg itt volt-e[ENTER]vagy nem. Több információra van szükségem.
-6165	Jó
+6165	Jó.
 6166	Jég Teremtmény
 6167	Az elkeseredés határán
 6168	Sötét terror
@@ -6299,7 +6299,7 @@
 6299	Továbbá kaptál 120000000 tapasztalati pontot.
 6300	Bolt megnyitása
 6301	Vadásznod kell:
-6302	Vegyeskereskedő Eladónő:
+6302	Vegyeskereskedő Eladónő
 6303	Keresd meg a Fegyverkereskedőt és kérdezd meg[ENTER]hogy miért nem énekel a Vegyeskereskedő Hölgy[ENTER]ablaka alatt.
 6304	Orgona Begyűjtése
 6305	Egy szép orgonacsokrot szedtél össze!
@@ -6394,7 +6394,7 @@
 6394	Egyre több embert veszítünk el a háborúban, ezért[ENTER]az asszonyok a faluban összegyűltek és megkérték[ENTER]Huahn-So-t, készítsen egy jobb gyógyitalt. Hosszú[ENTER]kutatás után létrehozott egy olyan italt, ami[ENTER]megnöveli a védelmet, így kevesebb élet-italt[ENTER]kell használni. Menj, látogasd meg őt. Biztos[ENTER]vagyok benne, hogy elkészíti neked az italt, amit[ENTER]ő SamBo-víznek hív. Csak egy kis Dok-vízre és[ENTER]Alpesi rózsára van szüksége ehhez.
 6395	Oh, milyen aranyos gyerek...
 6396	Ah-Yu:
-6397	Már megint ordít ...[ENTER]Valami finomságra fáj a foga, vagy ... oh[ENTER]nem!
+6397	Már megint ordít ...[ENTER]Valami finomságra fáj a foga, vagy ... oh nem!
 6398	Hogy vagytok?
 6399	Mondj valamit a cserépáruról.
 6400	Gyermekem! Most, hogy a férjem elesett a[ENTER]háborúban, nekem kell gondoskodnom magamról.[ENTER]Saját erőből próbálom eltartani magam és[ENTER]gyermekemet, és a Bo-víznek köszönhetően találtam[ENTER]egy módot a túlélésre. Vinnem kell Yu-Hwan-nak[ENTER]100 Datolyaszilva-virág levet és egy Tue gombát.[ENTER]Ebből ő Bo-vizet főz, amit könnyen el lehet adni.[ENTER]Végtére is, valamiből meg kell élnem...
@@ -6406,7 +6406,7 @@
 6406	Miért vagy ilyen rosszkedvű?
 6407	Taurean :
 6408	Harang egy gonosz lány![ENTER]Én utálom őt! Gyenge vagyok, és ő az életemet[ENTER]gyakran megkeseríti!
-6409	Te egy férfi vagy és izmos vagy. Edz egy[ENTER]kicsit!
+6409	Te egy férfi vagy és izmos vagy. Edz egy kicsit!
 6410	Yonah, a fazekas:
 6411	Mit csinálsz?
 6412	Harang:
@@ -6444,13 +6444,13 @@
 6444	Vadássz a szörnyekre, akik megloptak! De légy[ENTER]óvatos, nagyon erősek - legalább 30-as szintűek.[ENTER]Ha visszahozod a Hősi medálom, nagylelkűen[ENTER]megjutalmazlak!
 6445	Találd meg a Hősi medált és add át Yu-Hwan-nak.
 6446	Yu-Hwan-nak a segítségedre van szüksége. Látogasd[ENTER]meg! A második faluban találod.
-6447	Az OX-versenyt nem tudtuk[ENTER]elindítani!
+6447	Az OX-versenyt nem tudtuk elindítani!
 6448	OX-verseny
 6449	Hiba a szkript töltésében![ENTER]Ellenőrizd a fájlokat és próbáld meg újra!
 6450	OX-verseny: Megindítottuk
 6451	Az OX-verseny elindult![ENTER]Beszélj Uriellel, ha részt akarsz venni.
 6452	Ő el fog teleportálni téged oda, ahol a verseny[ENTER]van.
-6453	OX-verseny: a jelentkezés folyik[ENTER]Jelentkezett résztvevők: %s[ENTER]játékos
+6453	OX-verseny: a jelentkezés folyik[ENTER]Jelentkezett résztvevők: %s játékos
 6454	Jelentkezést lezárni
 6455	Már nem lehet jelentkezni.[ENTER]Most elindíthatod a Quizt.
 6456	OX-verseny:[ENTER]Jelentkezés lezárva.
@@ -6458,16 +6458,16 @@
 6458	Az esemény újraindítása
 6459	Az esemény lezárása
 6460	A Quizt nem tudtuk megindítani.
-6461	Hé - Te ott![ENTER]Te elég intelligensnek nézel ki. Van egy verseny,[ENTER]amit OX-versenynek hívnak, ennek a keretében a[ENTER]tudásodat kérdezik ki. Ha nyersz, akkor egy[ENTER]csodás jutalomban fogsz[ENTER]részesülni.
+6461	Hé - Te ott![ENTER]Te elég intelligensnek nézel ki. Van egy verseny,[ENTER]amit OX-versenynek hívnak, ennek a keretében a[ENTER]tudásodat kérdezik ki. Ha nyersz, akkor egy[ENTER]csodás jutalomban fogsz részesülni.
 6462	A Quizt sikeresen megindítottuk.
-6463	Hiba! A Quizt nem tudtuk[ENTER]megindítani.
+6463	Hiba! A Quizt nem tudtuk megindítani.
 6464	OX-verseny: újra indítjuk
 6465	Az OX-versenyt egy új fordulója nemsokára indul.[ENTER]Az utolsó forduló összes résztvevőjét a városba[ENTER]teleportáljuk.
 6466	Az utolsó kör minden résztvevője vissza lesz[ENTER]teleportálva a városba.
 6467	OX-verseny: Lezárjuk
 6468	Az OX-versenyt nemsokára lezárjuk.[ENTER]Az összes résztvevőt a városba teleportáljuk.
 6469	Minden résztvevő teleportálva lesz a városba.
-6470	OX-verseny: Éppen a Quizt[ENTER]csinálják
+6470	OX-verseny: Éppen a Quizt csinálják
 6471	Kérlek várj egy pillanatot
 6472	OX-verseny: Nem üzemképes.
 6473	OX-verseny: Még sem
@@ -6477,11 +6477,11 @@
 6477	OX-verseny: Még sem folytattuk
 6478	OX-verseny: Jutalom
 6479	OX-verseny: Jutalom[ENTER]Egy jutalmat kap a résztvevő. Kérlek írd le ide a[ENTER]tárgy számát:
-6480	Kérlek írd le ide, hogy hány tárgy van[ENTER]összesen:
+6480	Kérlek írd le ide, hogy hány tárgy van összesen:
 6481	A jutalmat kapta: %s játékos.
 6482	Willst du jetzt mitmachen Du kannst natürlich auch nur zugucken
 6483	Meg akarod próbálni?[ENTER]Okay - akkor most kezdünk.
-6484	A versenyt már elkezdődött.[ENTER]Ez alkalommal nem tudsz részt venni rajta![ENTER]Nem sokára azonban valószínü a következő versenyt[ENTER]indítják... Majd időben meg fogod[ENTER]tudni
+6484	A versenyt már elkezdődött.[ENTER]Ez alkalommal nem tudsz részt venni rajta![ENTER]Nem sokára azonban valószínü a következő versenyt[ENTER]indítják... Majd időben meg fogod tudni
 6485	OX-verseny: Indítás
 6486	OX-verseny: Indítás[ENTER]Ezennel most megindítjuk az OX-versenyt. Tényleg[ENTER]meg akarod indítani?
 6487	Indítani
@@ -6531,21 +6531,21 @@
 6531	A 3. őrpont.
 6532	Menj el a harmadik őrponthoz.
 6533	 - Tűzfőnix
-6534	 - Rénszarvasgida
+6534	- Rénszarvasgida
 6535	Most nem tudod megidézni kedvenced.
-6536	 - Jégfőnix
-6537	 - Baby-Azrael
-6538	 Leonidásza
-6539	 Kánja
-6540	 - Porky-ja
-6541	 - Rufusza
-6542	 - Bambija
-6543	 - Knuudja
-6544	 - Bao Baoja
-6545	 - Pufók Minihóhérja
-6546	 - Pufók Minihóhérja (arany)
-6547	 - Csontija
-6548	 - Jáde főnix
+6536	- Jégfőnix
+6537	- Baby-Azrael
+6538	Leonidásza
+6539	Kánja
+6540	- Porky-ja
+6541	- Rufusza
+6542	- Bambija
+6543	- Knuudja
+6544	- Bao Baoja
+6545	- Pufók Minihóhérja
+6546	- Pufók Minihóhérja (arany)
+6547	- Csontija
+6548	- Jáde főnix
 6549	Ölj meg 30 perc alatt 20 vad íjászt és jelentsd[ENTER]az eredményt a lovászinasnak!
 6550	Szeretnék lovagolni
 6551	STÁTUSZFELJAVÍTÁS PÓNI-MEGBÍZÁS
@@ -6573,7 +6573,7 @@
 6573	A kép segítségével a lovat mindenhová oda tudod[ENTER]hívni. Ha elveszted a képet, akkor az új[ENTER]kiadásért ismét fizetnek kell. Tehát jól vigyázz[ENTER]rá!
 6574	Nincs elég Yangod a ló képre!
 6575	Gyere vissza később.
-6576	Mégsem akarod végbe vinni a ló képpel kapcsolatos[ENTER]megbízást? Ha most befejezed, akkor az összes[ENTER]feladatot újból meg kell[ENTER]oldalnod.
+6576	Mégsem akarod végbe vinni a ló képpel kapcsolatos[ENTER]megbízást? Ha most befejezed, akkor az összes[ENTER]feladatot újból meg kell oldalnod.
 6577	Nem
 6578	A rendelkezésre álló időt átlépted!
 6579	Nem sikerült a minősítési vizsgád, mert nem[ENTER]tudtál megölni 20 vad íjászt 30 perc alatt.
@@ -6605,7 +6605,7 @@
 6605	Lovagló edzés(1)
 6606	Menj a célponthoz (1).
 6607	Teleportálódás az edzési térképhez.
-6608	Indulás
+6608	Indulj!
 6609	Tényleg fel akarod adni?
 6610	Elértük a célpontot (1)!
 6611	Elértük a célpontot (9)!
@@ -6623,7 +6623,7 @@
 6623	Célpont (1): még nem érted el
 6624	Célpont (2): elérve
 6625	Célpont (2): még nem érted el
-6626	Mégsem akarod tovább folytatni?[ENTER]Az edzést akkor csak holnap tudjuk újra[ENTER]kezdeni.
+6626	Mégsem akarod tovább folytatni?[ENTER]Az edzést akkor csak holnap tudjuk újra kezdeni.
 6627	A célpontot (1) megjelöltük.
 6628	A célpontot (2) megjelöltük.
 6629	Lovagolj el a célponthoz
@@ -6634,8 +6634,8 @@
 6634	Tcélpontot megjelöltük.
 6635	Tcélpontot megjelöltük.
 6636	Hogy edzeni tudj, szükséged van egy Ló medálra.[ENTER]Az eredményeket a medálra jegyzik fel.
-6637	A lovaknak is szükségük van egy kis nyugalomra.[ENTER]Jobb lenne, ha holnap megint[ENTER]eljönnél.
-6638	A lovad nagyon fáradtnak néz ki. Hagyd[ENTER]pihenni.
+6637	A lovaknak is szükségük van egy kis nyugalomra.[ENTER]Jobb lenne, ha holnap megint eljönnél.
+6638	A lovad nagyon fáradtnak néz ki. Hagyd pihenni.
 6639	A lovad valószínű éhes. Mi lenne, ha az edzés[ENTER]előtt még megetetnéd?
 6640	A lovadnak már nincs szüksége edzésre. Próbáld[ENTER]meg megszerezni a Felfegyverzett ló könyvet.
 6641	Gyere, lovagolj ide hozzám.
@@ -6726,7 +6726,7 @@
 6726	közvetlenül beadni
 6727	A prémium időtartamát beadni:
 6728	%s Prémium : %s %s %% ( %s óra )
-6729	Véghez akarod-e vinni fenti[ENTER]beállításokat?
+6729	Véghez akarod-e vinni fenti beállításokat?
 6730	A beállításokat megerősítettük.
 6731	Folyamat leállítva.
 6732	Birodalmi bónuszt megadni
@@ -6744,11 +6744,11 @@
 6744	Éppen egy megbízás van folyamatban. Csak úgy[ENTER]lehet másik küldetést indítani, ha befejezed vagy[ENTER]elutasítod a jelenlegi küldetést.
 6745	Aa
 6746	%s mégsem
-6747	Mégsem akarod ezt a megbízást végbe[ENTER]vinni?
+6747	Mégsem akarod ezt a megbízást végbe vinni?
 6748	Igen, mégsem.
 6749	%s Megbízás mégsem.
 6750	(Fennmarad: %s %s, %s %s)
-6751	questscroll5.kill_race:%s]
+6751	questscroll5.kill_race:%s
 6752	(Fennmarad: %s %s, %s %s)
 6753	questscroll5.kill_race:%s]
 6754	Teljesítetted a küldetést és elnyerted a jutalmad!
@@ -6778,10 +6778,10 @@
 6778	A kiválasztott készség vissza lett állítva.
 6779	Ez a tekercs lehetővé teszi, hogy visszaállítsd[ENTER]az eredeti állapotodat. Az egész állapotodat[ENTER]érinti ez: a VIT, INT, Erő és ÜGY vissza lesz[ENTER]állítva 1-re. A visszakapott pontokat újra[ENTER]eloszthatod.[ENTER][ENTER]Akarod most használni a tekercset?
 6780	Állapot visszaállító: Megerősít
-6781	Az eddig kiadott állapot pontok újra fel lesznek[ENTER]osztva.[ENTER][ENTER]El akarod tényleg felejteni a[ENTER]létet?
+6781	Az eddig kiadott állapot pontok újra fel lesznek[ENTER]osztva.[ENTER][ENTER]El akarod tényleg felejteni a létet?
 6782	Készség visszaállító
 6783	Egy kiválasztott készség ismét vissza lesz[ENTER]állítva, tehát a pontokat te ismét ki tudod[ENTER]osztani. Azokat a pontokat azonban, melyeket[ENTER]könyvekkel szereztél meg, el fogod veszteni. Csak[ENTER]17 pontot kapsz vissza, akkor is, ha a készségre[ENTER]több pontot használtál fel.
-6784	Nincs készség, amit működésbe kellene[ENTER]hozni.
+6784	Nincs készség, amit működésbe kellene hozni.
 6785	Kérlek válassz egy készséget, amit vissza akarsz[ENTER]állítani.
 6786	Egy kiválasztott készség újra vissza lesz[ENTER]állítva, tehát a pontokat te ismét eloszthatod.[ENTER]De azokat a pontokat elveszted, amit könyvekkel[ENTER]szereztél meg. Csak maximálisan 17 pontot kapsz[ENTER]vissza, akkor is, ha készségre több pontot[ENTER]használtál fel.
 6787	Folytat
@@ -6797,7 +6797,7 @@
 6797	visszaállítva 1-re.
 6798	A megmaradó pontjaid visszakerülnek training[ENTER]pontokhoz.
 6799	Biztosan folytatod?
-6800	A szinted túl alacsony.
+6800	A szinted túl alacsony!
 6801	Nem lovagolhatsz amíg át vagy változva!
 6802	Már lovagolsz! Ha hátast akarsz változtatni,[ENTER]előbb le kell szállnod erről a hátasról.
 6803	El kell küldened a lovadat ha másik hátast akarsz[ENTER]használni.
@@ -6883,9 +6883,9 @@
 6883	Te a mágikus fegyverek képzést választottad.
 6884	Mágikus fegyverek oktató
 6885	Kezdd el a Fekete-Mágia-kiképzést
-6886	Sajnálom.[ENTER]Csak Surak választhatják a Fekete-Mágia[ENTER]kiképzést
+6886	Sajnálom.[ENTER]Csak Surak választhatják a Fekete-Mágia kiképzést
 6887	Fekete-Mágia-kiképzés
-6888	A Fekete-Mágia-kiképzésben sötét müvészetet[ENTER]használnak fel, hogy az ellenséget távolból[ENTER]átokkal és káromlással[ENTER]gyengítsék.
+6888	A Fekete-Mágia-kiképzésben sötét müvészetet[ENTER]használnak fel, hogy az ellenséget távolból[ENTER]átokkal és káromlással gyengítsék.
 6889	Te a Fekete-Mágia-kiképzést választottad.
 6890	Kezdd el a sárkány hatalom képzést
 6891	Sajnálom.[ENTER]Csak egy sámán választhatja a sárkány hatalom[ENTER]képzést.
@@ -6899,7 +6899,7 @@
 6899	Gyógyulás képzés
 6900	A gyógyulás képzés során megtanulod, hogyan lehet[ENTER]az ellenséget áramütésekkel elkábítani.[ENTER]Ezen felül a csoport tagjainak gyógyítását és[ENTER]erősítésének módját is megtanulod.
 6901	A gyógyulás képzést választottad.
-6902	Sárkány hatalom oktató:
+6902	Sárkány hatalom oktató
 6903	Gyógyulás oktató
 6904	Készségeket visszaállítani
 6905	Ahogy gondolod. Ha meggondolnád magad, gyere el[ENTER]még egyszer.
@@ -6962,7 +6962,7 @@
 6962	A Pók kazamata harmadik emeletén találsz majd egy[ENTER]régi sírkövet egy vésett felirattal. Másold le és[ENTER]vidd el a Kapitánynak.
 6963	Tökéletes! Megtaláltad a régi sírkövet és[ENTER]készítettél egy másolatot a feliratáról! Menj[ENTER]vissza a Kapitányhoz és mutasd meg neki.
 6964	Vegyeskereskedő Eladónő:
-6965	Üres Üvegek Beszerzése
+6965	Üres üveget beszerezni.
 6966	Ez jó.[ENTER]Kaphatsz Üres üvegeket a fazekas Yonah-tól.[ENTER]Köszönöm szépen.
 6967	Keresd meg a fazekas Yonah-t
 6968	A Vegyeskereskedő nőnek szüksége van a fazekas[ENTER]Yonah-tól egy üres üvegre a vörös itala miatt.
@@ -7040,9 +7040,9 @@
 7040	Egy levél a kovácstól
 7041	Találd meg Deokbaet, a favágót.
 7042	Egy levél a kovácstól
-7043	Deokbae, a favágó:
+7043	Favágó Deokbae:
 7044	Üdv néked! Van pár jó fejszém itt. Szeretnél[ENTER]venni egyet? Nincs szükséged fejszére? Akkor[ENTER]miért jöttél? Oh, egy levél a Kovácstól.[ENTER]Köszönöm. Én favágó vagyok, de foglalkozom[ENTER]csákányok és más eszközök eladásával is. Néha[ENTER]rendelek tőle eszközöket. Így lettünk jó barátok.
-7045	Tényleg innom kellene vele valamit a[ENTER]Seo-Pyung-Bárban. Köszönöm, hogy elhoztad a[ENTER]levelet. Add át üdvözletemet a[ENTER]kovácsnak.
+7045	Tényleg innom kellene vele valamit a[ENTER]Seo-Pyung-Bárban. Köszönöm, hogy elhoztad a[ENTER]levelet. Add át üdvözletemet a kovácsnak.
 7046	Egy levél a kovácstól? Hát ilyen már régen volt.[ENTER]Hol van a levél? Csal nem veszítetted el út[ENTER]közben, vagy igen?
 7047	Itt van.
 7048	Hát mégsem
@@ -7050,7 +7050,7 @@
 7050	Feladatot befejezni?
 7051	Ennek igazán örülök.[ENTER]Gyere gyorsan újra vissza
 7052	Tehát elveszítetted?[ENTER]Tűnj el...
-7053	Menj el a kovácshoz és hozd el megint a levelet.[ENTER]De most nehogy elveszítsd. Minden[ENTER]jót.
+7053	Menj el a kovácshoz és hozd el megint a levelet.[ENTER]De most nehogy elveszítsd. Minden jót.
 7054	Menj vissza a kovácshoz és megkapod a jutalmadat.
 7055	Vissza a Kovácshoz
 7056	Elvittem a levelet.
@@ -7123,7 +7123,7 @@
 7123	Uriel adott neked vasércet.
 7124	Octavio adott neked bőrt.
 7125	Yonah adott neked szenet.
-7126	Octaviohoz menni
+7126	Menj Octavióhoz.
 7127	Menj Urielhez.
 7128	Menj Yonahhoz
 7129	Ich brauche Eisenerz
@@ -7149,12 +7149,12 @@
 7149	Adj szenet
 7150	Micsoda? Már adtam neked Szenet! Megpróbálsz[ENTER]átverni?
 7151	Megvan az összes anyag.
-7152	Úgy tűnik, nincsen vasérced. Menj[ENTER]Urielhez...
+7152	Úgy tűnik, nincsen vasérced. Menj Urielhez...
 7153	Nincs bőröd.[ENTER]Menj Octaviohoz...
 7154	Nincs nálad semmi Szén. Hmm, nincs Szén? Menj és[ENTER]kérj Yonah-tól.
 7155	Nálam van az összes anyag.
 7156	Anyagok a Kovácsnak
-7157	Menj a Kovácshoz
+7157	Menj a kovácshoz.
 7158	A megrendelt páncél
 7159	Nem, nincs időm rá.
 7160	Megvan minden szükséges anyag. Megyek a kovácshoz.
@@ -7190,7 +7190,7 @@
 7190	Soon odaadta neked az idegen szakácskönyvet. Vidd[ENTER]el Octavio-nak.
 7191	Itt a szakácskönyved!
 7192	Menj a Fegyverkereskedőhöz és kérdezd meg, hogy[ENTER]hol tudsz venni Rizs Sütiket.
-7193	Rizs Süti
+7193	Rizs Süti?
 7194	Mit akarsz tudni a Rizs Sütikről?
 7195	Fegyverkereskedő:
 7196	Mi? Rizs Süti? Az egy új fegyver? Na akkor azzal[ENTER]tudnál... Ja hogy ehető Rizs Sütik! Miért nem[ENTER]ezzel kezdted? Menj el Octavio-hoz. Ő mindent tud[ENTER]az ételekről.
@@ -7211,7 +7211,7 @@
 7211	Yu-Rangot gyakran zavarja Taurean. Büntesd meg[ENTER]Taurean-t és akkor kapsz Rizs Sütiket.
 7212	Miért mérgesíted Yu-Rangot?
 7213	Micsoda, kit zavartam én? Oh hogy azt a lányt aki[ENTER]Rizs Sütiket árul? Nem, én nem zavartam őt! Csak[ENTER]unatkoztam és ő szépnek tűnt és nem tűnt túl[ENTER]elfoglaltnak. Szóval odamentem hozzá néhányszor[ENTER]hogy játsszak vele, de aztán ő mérges lett... A[ENTER]lányok furcsák. Akkor lehet hogy nem megyek oda[ENTER]hozzá többet!
-7214	Vissza Yu-Ranghoz
+7214	Vissza Yu-Rang-hoz
 7215	Elfogadni.
 7216	Rizs Süti
 7217	Taurean nem zaklatja Yu-Rang-ot tovább. Menj el[ENTER]hozzá és kérj tőle Rizs Sütit.
@@ -7237,7 +7237,7 @@
 7237	Az Arany Fejsze
 7238	Emlékszel még a barátomra, Deokbae-ra. Azt[ENTER]ígértem, hogy egy fejszét készítek neki, de egy[ENTER]pillanatra nem figyeltem oda és egy fehér eskü[ENTER]katona ellopta tőlem. Még egyszer meg tudod[ENTER]szerezni a fejszét? Egy fehér eskü katonánál kell[ENTER]lennie. Fel kell tudnod ismerni a fejszét, mert[ENTER]nincs sok belőle. Fejedelmi jutalomban lesz[ENTER]részed, ha megtalálod!
 7239	Meg akarod szakítani a küldetést?
-7240	Kovács
+7240	Kovács:
 7241	Feltétlenül szükségem van arra a fejszére![ENTER]Fogunk még találkozni? Viszlát!
 7242	Köszönöm, hogy te meg akarod szerezni nekem.[ENTER]Vigyázz magadra, mert a klán gondot okoz.
 7243	Köszönöm, hogy te meg akarod szerezni nekem.[ENTER]Vigyázz magadra, mert a klán igazán sok[ENTER]bosszúságot okoz
@@ -7270,7 +7270,7 @@
 7270	Megkeresed nekem?[ENTER]Oh, köszönöm szépen!
 7271	Menj a Kovácshoz
 7272	Kérdezd Yu-Hwant Mirine bátyjáról.
-7273	 Találd meg a bátyámat.
+7273	Találd meg a bátyámat.
 7274	Láttad Mirine bátyját?
 7275	Szerelmes lettem anélkül, hogy tudtam volna, mit[ENTER]jelent... Lalalaa...[ENTER]Kit keresel? Mirine bátyját? Beszéltem vele pár[ENTER]szót, még mielőtt a hegyekbe ment volna ritka[ENTER]gyógynövények keresésére. Nem tudom, hol van[ENTER]most.[ENTER]A falu vadásza gyakran megy a hegyekbe. Miért nem[ENTER]kérdezed meg őt?[ENTER]La, la, la a szerelem szomorú, de szép...
 7276	Kérdezd meg Yang-Shint, hogy hol van Mirine[ENTER]bátyja.
@@ -7279,11 +7279,11 @@
 7279	Újság Mirine bátyjáról.
 7280	Nézd, kaptam egy levelet a testvéremtől! Azt[ENTER]írta, talált egy helyet tele rengeteg gyógyfűvel,[ENTER]és hogy sokára jön haza.[ENTER]Sajnálom, nem kellett volna ezzel zavarnom téged.[ENTER]Tessék, nem sok, de remélem, elfogadod és[ENTER]megbocsátasz nekem. Köszönöm, hogy felvállaltál[ENTER]egy ilyen nagy utat.
 7281	Kaptál 122.000 tapasztalat pontot.[ENTER]Kaptál 5.000 Yangot.
-7282	 Találd meg a bátyámat.
+7282	Találd meg a bátyámat.
 7283	Megkérhetlek egy szívességre?[ENTER]A bátyám már régen elment, és azóta nem hallottam[ENTER]róla. Lassan már aggódom miatta. Megkeresnéd őt,[ENTER]ha nem túl sokat követelek?
 7284	A bátyám Yu-Hwant, a zenészt akarta meglátogatni[ENTER]a következő faluban. Ha Yu-Hwanhoz mész, biztos[ENTER]megtudsz valami újat a bátyámról.[ENTER]Köszönöm előre is.
 7285	Igen, csinálom
-7286	Végérvényesen feladod ezt a küldetést?
+7286	Végleg fel akarod adni ezt a küldetést??
 7287	Köszönöm szépen.[ENTER]Kérlek keresd meg nekem.[ENTER]Nagyon aggódom.[ENTER]Viszlát.
 7288	Kár, hogy nem akarsz nekem segíteni ...[ENTER]Viszlát.
 7289	Te meg akarod őt nekem keresni?[ENTER]Köszönöm szépen, sokat aggódom miatta.[ENTER]Sok sikert.
@@ -7298,15 +7298,15 @@
 7298	Megöltem Mi-Jung-ot.
 7299	Oh! Te tényleg olyan jó vagy, ahogy mesélték.[ENTER]Te igazán meglepően jó vagy. Neked köszönhetjük,[ENTER]hogy a Fehér esküvel kapcsolatos problémánk már[ENTER]egyszerűbbé vált. Jó munka volt!
 7300	Kaptál 122.000 tapasztalat pontot.[ENTER]Kaptál 20.000 Yangot.[ENTER]Kaptál egy Ezüst Karkötőt.
-7301	Gyere ide egy pillanatra.[ENTER]Te egy jó harcos vagy.[ENTER]A kapitány már sokat mesélt[ENTER]rólad.
+7301	Gyere ide egy pillanatra.[ENTER]Te egy jó harcos vagy.[ENTER]A kapitány már sokat mesélt rólad.
 7302	Tudsz egy kicsit Mi-Junggal a Fehér eskütől[ENTER]törődni, aki olyan sok problémát okoz?[ENTER]Nehéz a falut és lakóit a Fehér eskü gyakori[ENTER]támadásától megvédeni. Ha Mi-Jungot, az egyik[ENTER]vezérüket megöljük, akkor a helyzet meg fog[ENTER]változni. A falu biztonsága a Te kezedben van.[ENTER]Megbízom benned!
 7303	Igen meg fogom
 7304	Most nem
-7305	Te tényleg nem akarsz nekünk[ENTER]segíteni?
+7305	Te tényleg nem akarsz nekünk segíteni?
 7306	Most nem megfelelő a pillanat Gyere később vissza
 7307	Ha nem akarsz, akkor nem lehet mit csinálni.[ENTER]Akkor menj el ...
-7308	Tényleg nem akarsz nekünk[ENTER]segíteni?
-7309	Menj Ariyounghoz
+7308	Tényleg nem akarsz nekünk segíteni?
+7309	Menj Ariyounghoz.
 7310	Fegyverekhez anyagot készíteni.
 7311	Menj Ah-Yuhoz.
 7312	A Fegyverkereskedőnek szüksége van a segítségedre.Kérj számára Vasércet Uriel-től és Vásznat[ENTER]Ariyoung-tól.
@@ -7316,7 +7316,7 @@
 7316	Megvan a csomagod.
 7317	Köszönöm![ENTER]Én túl gyakran kérlek egy szívességre.[ENTER]Itt van! Fogadd ezt a kevés vasércet. Remélem, ez[ENTER]a célnak megfelel.
 7318	Micsoda? Még több Vasércre van szükséged? Ez nem[ENTER]terem csak úgy, magától! Adok neked még több[ENTER]Vasércet, de előbb meg kell tenned nekem egy[ENTER]szívességet. Tigrisek lopták el a csomagomat.[ENTER]Mentenem kellett a bőrömet, és abban a csomagban[ENTER]nagyon fontos dokumentumok voltak. Ha nincs meg,[ENTER]nem tudom folytatni a kutatásomat a[ENTER]Metinkövekről.[ENTER]Kérlek, keresd meg a csomagot, amit a tigrisek[ENTER]elloptak tőlem.
-7319	Már odaadtam neked. Nem[ENTER]emlékszel?
+7319	Már odaadtam neked. Nem emlékszel?
 7320	Csomag megtalálva
 7321	Anyagok fegyverekhez
 7322	Te megtaláltad Uriel csomagját Menj vissza hozzá
@@ -7344,7 +7344,7 @@
 7344	Keress anyagokat
 7345	Térj vissza a Város Őrhöz
 7346	Eun-Jung a Fehér Esküből
-7347	Megölted Eun-Jung-ot a Fehér Esküből. Menj vissza[ENTER]a Város Őrhöz és jelentsd neki.
+7347	Megölted Eun-Jung-ot a Fehér Esküből.[ENTER]Menj vissza a Gondnokhoz, és jelentsd neki.
 7348	Fantasztikus vagy! Jobb vagy, mint amire[ENTER]számítottam. Mi nem tudtunk mit kezdeni a Fehér[ENTER]Eskü két vezetőjével, te pedig ilyen egyszerűen[ENTER]legyőzted őket.
 7349	Ez rendkívüli. Megfelelő jutalmat kapsz ezért.[ENTER]Kérlek vedd ezt át és dolgozz tovább a város[ENTER]békéjéért!
 7350	Kaptál 150.000 tapasztalat pontot.[ENTER]Kaptál 25.000 Yangot.[ENTER]Kaptál egy Arany Nyaklánc+4-t.
@@ -7365,7 +7365,7 @@
 7365	Ez volt a legjobb sereg amit ez a kontinens[ENTER]valaha látott. Sok ország lett alárendelve mert[ENTER]semmi sem tudta megállítani a lovasságot. Ma is[ENTER]hasonló lenne. Csakhogy durva edzési módszerekre[ENTER]és sok jó minőségű vasra lenne szükséged egy[ENTER]ilyen sereg felállításához. Kérdezhetnéd erről a[ENTER]Házalót és Urielt. Ők talán több részletet[ENTER]tudnak.
 7366	Menj a Házalóhoz
 7367	A páncélos lovasság
-7368	Házaló:
+7368	Házaló
 7369	Yu-Hwan, a muzsikus azt mondja hogy a Házaló és[ENTER]Uriel talán több információval szolgálhat a[ENTER]páncélos lovasságról. Előbb keresd fel a Házalót.
 7370	Házaló:
 7371	A páncélos lovasság
@@ -7380,7 +7380,7 @@
 7380	A páncélos lovasság mindenkinél erősebb volt,[ENTER]leginkább talán az érdekes kiképzésnek volt[ENTER]köszönhető ez. Csak a legjobbak tudták[ENTER]végigcsinálni a kiképzést, sok közülük meghalt.[ENTER]Szerintem ha most is azt a kiképzési módszert[ENTER]alkalmaznánk, akkor a végére egy katona se[ENTER]maradna életben.
 7381	Adok neked részletes információt a kiképzésről,[ENTER]hogy ne legyél teljesen tanácstalan. Tudom hogy[ENTER]most szörnyű háborúk folynak, de nem vagyok[ENTER]biztos benne hogy jó ötlet újra felállítani egy[ENTER]olyan félelmetes sereget mint a páncélos[ENTER]lovasság.
 7382	Egy új megbízásom van számodra. Azt a parancsot[ENTER]kaptad, hogy a páncélos lovasságról információt[ENTER]gyűjtsél. Ez volt Isup, az alapító király és a[ENTER]kontinens újraegyesítője hadseregének[ENTER]legfontosabb egysége.[ENTER]A páncélos lovasságtól a szomszédos országok a[ENTER]meglepő gyorsasága és támadási ereje miatt[ENTER]féltek.
-7383	Menj el a kapitányhoz és számolj be neki arról,[ENTER]hogy mit tudtál meg a páncélos[ENTER]lovasságról.
+7383	Menj el a kapitányhoz és számolj be neki arról,[ENTER]hogy mit tudtál meg a páncélos lovasságról.
 7384	Menj el a kapitányhoz
 7385	Jelentés a páncélos lovasságról
 7386	Kapitány
@@ -7432,7 +7432,7 @@
 7432	300.000 tapasztalatpontot kaptál.
 7433	10.000 Yangot kaptál.
 7434	Nem, nincs időm rá.
-7435	Végérvényesen feladod ezt a küldetést?
+7435	Végleg fel akarod adni ezt a küldetést??
 7436	Gyere vissza, ha meggondoltad magad! Kérlek...
 7437	Nincs egy kis időd sem?[ENTER]Nincs időd egy ilyen egyszerű feladatra?[ENTER]Hát jó...
 7438	Köszönöm kedvességed! Aaah, csak tudnám, hol van[ENTER]a férjem...
@@ -7445,7 +7445,7 @@
 7445	Te nem ide valósi vagy.[ENTER]A feleségem küldött?[ENTER][ENTER][ENTER]Oh, ne! Tudja, hogy ki vagyok? Mit mondjak?
 7446	Ha, ha. Én csak véletlenségből vagyok itt.
 7447	Hát valójában
-7448	Aha. Örülök, hogy megismerkedhetem veled, ha, ha.[ENTER]Csodálatos időnk van, nem igaz?[ENTER]Olvastál egy jó könyvet az utóbbi időben?[ENTER]Én most Oja könyvét olvasom. Csak ajánlani[ENTER]tudom.
+7448	Aha. Örülök, hogy megismerkedhetem veled, ha, ha.[ENTER]Csodálatos időnk van, nem igaz?[ENTER]Olvastál egy jó könyvet az utóbbi időben?[ENTER]Én most Oja könyvét olvasom. Csak ajánlani tudom.
 7449	Igazam van, ugye? A feleségem gúnyolódása már[ENTER]annyira rossz hogy nem tudok otthon nyugodtan[ENTER]olvasni. Egyszerűen nem ért meg engem, és másokat[ENTER]küld utánam... Te most megtaláltál, de bármikor[ENTER]elmehetek máshova. Mi lenne ha inkább nem[ENTER]mondanád meg hogy megtaláltál? Adok neked egy jó[ENTER]vadászati tanácsot ha megteszed ezt nekem.
 7450	Vissza Aranyohoz
 7451	Menj el Aranyohoz és mond meg neki hogy nem[ENTER]találtad meg Soon-t.
@@ -7479,7 +7479,7 @@
 7479	Vissza az öregasszonyhoz
 7480	Farkas Irha leszállítás
 7481	Egy Farkas Irha, ez nagyszerű... Jaj ne. Ez a[ENTER]darab nem jó. Menj vissza a Szürke farkasokhoz.[ENTER]Talán találsz egy jobbat.
-7482	Egy rendes porolóra van szükségem.[ENTER]Sorry, de ezzel nem tudok semmit[ENTER]kezdeni.
+7482	Egy rendes porolóra van szükségem.[ENTER]Sorry, de ezzel nem tudok semmit kezdeni.
 7483	Még egyszer megpróbálom
 7484	Nincs már kedvem.
 7485	Tényleg be akarod fejezni ezt a feladatot?
@@ -7491,7 +7491,7 @@
 7491	Egy, kettő, egy, kettő. Egyik láb a másik elé...[ENTER]Rendben, itt is vagyok újra. Köszönöm szépen![ENTER]Végre rendesen kitakaríthatom a házamat. Valamint[ENTER]találtam valamit amit odaadnék neked. Nem igazán[ENTER]tudom hogy ér-e valamit, de talán a hasznodra[ENTER]lesz. Köszönöm. Ég veled!
 7492	Egy poros valami
 7493	Te fizetésként egy tárgyat kaptál, de úgy[ENTER]látszik, hogy ez csak szemét.[ENTER]Leporolod kiváncsiságból.
-7494	Ez egy régi, jó minőségű fegyver, egy jó[ENTER]kovácsmester műve. Milyen[ENTER]szerencse!
+7494	Ez egy régi, jó minőségű fegyver, egy jó[ENTER]kovácsmester műve. Milyen szerencse!
 7495	Ez egy páncél. Öreg darab, de még használható.[ENTER]Nos, ez legalább valami!
 7496	Ez egy páncél, de a reményeid ellenére kiderült[ENTER]hogy nem sokat ér.
 7497	Kaptál 15000 tapasztalat pontot.
@@ -7499,7 +7499,7 @@
 7499	*köh* *köh* Minden tiszta poros.[ENTER]Szükségem van végre egy rendes porolóra. Akarsz[ENTER]nekem segíteni?
 7500	Eléggé régen volt, de úgy rémlik hogy a férjem,[ENTER]nyugodjon békében, Farkas Irhából csinálta.[ENTER]Köh-köhém![ENTER][ENTER]Tudnál szerezni egy Farkas Irhát egy szegény idős[ENTER]hölgynek? Ilyet a Szürke Farkasoknál találsz.[ENTER]Sokat segítenél nekem ezzel.
 7501	Mégsem akarod végbe vinni a feladatot?
-7502	Hu, Kár és én azt hittem, hogy te segítesz nekem.[ENTER]Ha meggondolod, akkor gyere vissza[ENTER]hozzám.
+7502	Hu, Kár és én azt hittem, hogy te segítesz nekem.[ENTER]Ha meggondolod, akkor gyere vissza hozzám.
 7503	Milyen jutalmat várhat el az ember egy ilyen[ENTER]szegény öregasszonytól?
 7504	Nem könnyű Farkas Irhát szerezni, de megteszem a[ENTER]tőlem telhetőt. Hiszen szeretnék nagy hős lenni[ENTER]egy nap!
 7505	Fel akarod adni a keresést?
@@ -7540,7 +7540,7 @@
 7540	Keresem
 7541	Nincs időm
 7542	Köszönöm barátom![ENTER]Remélem sikerrel jársz.
-7543	 Balso?
+7543	Balso?
 7544	Gyógyszer Balsonak
 7545	Menj Balsohoz
 7546	Megtaláltad a gyógyszert Balsonak, aki a[ENTER]fertőzött embereknél egy ismeretlen betegséggel[ENTER]fertőzte meg magát. Vidd el Balsonak.
@@ -7566,12 +7566,12 @@
 7566	Keresd az Arany Fejszét
 7567	Hozd vissza Deokbae szeretett Arany Fejszéjét a[ENTER]Vad generálisoktól!
 7568	Megtaláltam az Arany Fejszéd!
-7569	Deokbae, a favágó:
+7569	Favágó Deokbae:
 7570	A segítséged nélkül soha nem kaptam volna vissza[ENTER]a Fejszét. Nagyon szépen köszönöm. Ezentúl jobban[ENTER]vigyázok rá, és mindig magamnál tartom.
 7571	400.000 tapasztalat pontot kaptál.
 7572	30.000 Yangot kaptál.
 7573	Az Arany Fejszédről...
-7574	Deokbae, a favágó:
+7574	Favágó Deokbae:
 7575	Oh nem, oh nem! Elvesztettem a Fejszét! Talán[ENTER]tudod, melyik fejszére gondolok? Ez az Arany[ENTER]Fejsze, amit a Kovácstól kaptam. Egy Kegyetlen[ENTER]ellopta.
 7576	Ha a kovács ezt megtudja, akkor nagyon dühös[ENTER]lesz, és többé már nem fogja megjavítani a[ENTER]fejszéimet. Ez egy igen jó fejsze volt. Esetleg[ENTER]vissza tudnád hozni?
 7577	Lemondani.
@@ -7640,7 +7640,7 @@
 7640	Nem, túl késő. Még ha meg is szereznéd, akkor is[ENTER]kiszáradt. Nem tudnám már eladni.
 7641	A földre nézel és látod a süti maradékot, amit a[ENTER]pókok meghagytak. Sajnos már mind kiszáradt.
 7642	Túl sok időt vesztegettél, hogy megtaláld a Rizs[ENTER]sütit. A sütik kiszáradtak. Nem sikerült.
-7643	Vissza Yu-Ranghoz
+7643	Vissza Yu-Rang-hoz
 7644	Szia, hogy van az édesanyád?
 7645	Menj vissza Yu-Ranghoz
 7646	Időben megmentetted Yu-Rang Rizs sütijét a[ENTER]pókoktól. Vidd el neki.
@@ -7731,7 +7731,7 @@
 7731	Menj Octaviohoz
 7732	Na ez az, amit én békacombnak hívok! Kisebbeket[ENTER]használnak ugyan, de biztos vagyok benne, hogy ez[ENTER]is nagyon ízletes. Várj egy pillanatot... Ez már[ENTER]egész jó illatú. Még egy csipet só... Kész! Itt[ENTER]az adagod. Hahaha, most már van elég energiám egy[ENTER]teljes heti munkára.
 7733	És ne mondd el senkinek, különösen a Raktárosnak[ENTER]ne! Ő szeret fecsegni, és ha a leves[ENTER]tulajdonságai kiderülnek, nem lesz egyetlen perc[ENTER]nyugtom sem, mert folyamatosan jönnek majd[ENTER]kóstolni a levesem.
-7734	5.000.000 tapasztalat pontot kaptál.
+7734	5.000.000 tapasztalatot kaptál
 7735	Nem voltam valami jól mostanában. A testem már[ENTER]nem igazán a régi. Amikor fiatal voltam, késő[ENTER]éjszakáig tudtam dolgozni, a hét minden napján,[ENTER]közben alkoholt is ittam. De manapság már fáraszt[ENTER]a reggeli felkelés is. Nagy szükségem van a[ENTER]békacomblevesre, hogy visszanyerjem az energiám.
 7736	50.000 Yangot kaptál.
 7737	Nem tudod, mi a békacomb leves? Ha megiszol[ENTER]belőle egy tállal iszol, akkor azonnal magadhoz[ENTER]térsz, és teli leszel energiával. Utána egész[ENTER]héten át dolgozhatsz anélkül, hogy elfáradnál.[ENTER]Octavio főzte ezt a levest, de nemrégiben[ENTER]valamiért abbahagyta a készítését.
@@ -7741,7 +7741,7 @@
 7741	Rendben, ha nem érsz rá, gyere vissza később,[ENTER]amikor lesz egy kis időd.
 7742	Szégyellhetné, hogy apának hívja magát! Ha[ENTER]megtalálom, Isten irgalmazzon a lelkének! Hidd[ENTER]el, nem túlzok. Kérdezd meg a többieket a[ENTER]faluban, mindannyian egyetértenek velem.
 7743	Soon :
-7744	Vegyeskereskedő Eladónő:
+7744	Vegyeskereskedő Eladónő
 7745	Menj a Vegyeskereskedő Eladónőhöz
 7746	Talán a Vegyeskereskedő eladónő tudja, mi[ENTER]történik Soon-nal. Menj el hozzá és kérdezd meg,[ENTER]hallott-e valamit Soon-ról.
 7747	Mi van Soonnal?
@@ -7768,7 +7768,7 @@
 7768	Menj vissza Soonhoz
 7769	Győzd le a Sötét fanatikusokat!
 7770	Megölted a sötét fanatikusokat.
-7771	Vidd el a Titkos templomi könyvet[ENTER]Soonhoz.
+7771	Vidd el a Titkos templomi könyvet Soonhoz.
 7772	Soon nagyon érdeklődik a Titkos templomi könyv[ENTER]iránt. Ha megölöd a sötét fanatikusokat, talán[ENTER]megtalálod a Titkos templomi könyvet.
 7773	A Titkos templomi könyv
 7774	Oh, ez az! Nagyon köszönöm![ENTER]Itt a jutalmad.[ENTER]És most hagyj békén, el kell olvasnom!
@@ -7953,7 +7953,7 @@
 7953	Jelents a kapitánynak
 7954	Menj vissza a kapitányhoz és számolj be arról,[ENTER]hogy megölted a generálisokat.
 7955	Megöltem a generálisokat!
-7956	Hmmmm....Megölted a generálisokat.[ENTER]A többi a generálisok nélkül már csak[ENTER]gyerekjáték. Mi elintézzük a többit.[ENTER]Már fájt a fejünk a Fekete szél klán miatt, de a[ENTER]segítségeddel, sikerül.[ENTER]Fogadd el ezt a jutalmat.[ENTER]Remélem, hogy viszontlátjuk[ENTER]egymást!
+7956	Hmmmm....Megölted a generálisokat.[ENTER]A többi a generálisok nélkül már csak[ENTER]gyerekjáték. Mi elintézzük a többit.[ENTER]Már fájt a fejünk a Fekete szél klán miatt, de a[ENTER]segítségeddel, sikerül.[ENTER]Fogadd el ezt a jutalmat.[ENTER]Remélem, hogy viszontlátjuk egymást!
 7957	1,000,000 tapasztalati pontot kapsz.
 7958	Kapitány
 7959	Nyelv gyűrűt kaptál.
@@ -7998,7 +7998,7 @@
 7998	A halványzöld porcelán titka
 7999	Ismered a Celadon porcelánt?
 8000	Uriel :
-8001	Seladon-porcelán?[ENTER]Nos, én jártas vagyok a történelemben és a[ENTER]tudományokban, de a művészet iránt nem[ENTER]érdeklődöm. A Seladon-porcelánról sajnos nem[ENTER]tudok neked semmit mesélni. Talán Soon tud[ENTER]valamit. Ő nem igazán kedvelt, de különböző[ENTER]könyveket olvas, talán többet tud[ENTER]erről.
+8001	Seladon-porcelán?[ENTER]Nos, én jártas vagyok a történelemben és a[ENTER]tudományokban, de a művészet iránt nem[ENTER]érdeklődöm. A Seladon-porcelánról sajnos nem[ENTER]tudok neked semmit mesélni. Talán Soon tud[ENTER]valamit. Ő nem igazán kedvelt, de különböző[ENTER]könyveket olvas, talán többet tud erről.
 8002	Menj Soonhoz
 8003	Menj Soonhoz
 8004	Sajnos Uriel nem tud semmit a porcelánról. De[ENTER]Soon, a könyvmoly sokat olvasott róla a[ENTER]könyveiben. Menj el hozzá és érdeklődd meg[ENTER]ismeri-e az előállítási eljárást.
@@ -8011,7 +8011,7 @@
 8011	Soon a könyvmoly ismeri a Seladon porcelánt, de[ENTER]csak akkor fogja a tudását megosztani veled, ha[ENTER]elhozod a könyvét a házaló kereskedőtől. Indulj a[ENTER]házaló kereskedőhöz és hozd el a könyvet, amit[ENTER]Soon megrendelt.
 8012	Soon küldött...
 8013	Hé, azért jöttél vissza, hogy ismét segíts nekem?[ENTER]Ah, te Soon könyvére gondolsz. Én nem sokára[ENTER]eljöttem volna a városba, de ő túlságosan[ENTER]türelmetlen. Megkér másokat, hogy hozzák el neki[ENTER]a könyvet. Hmm. Ah! Itt van. Nem értem, hogy ez a[ENTER]papírhalom miért olyan fontos. Sokkal fontosabb,[ENTER]hogy az ember gyorsan Yangot keressen.
-8014	Visszatérés Soon
+8014	Visszatérés Soonhoz.
 8015	Visszatérés Soon
 8016	A szomszéd város kereskedőjétől megkaptad Soon[ENTER]könyvét. Most pedig térj vissza Soonhoz, hogy[ENTER]odaadd neki a könyvet, és hogy a tudását s[ENTER]Celadonról megossza veled.
 8017	Nálam van a könyv
@@ -8197,7 +8197,7 @@
 8197	Nem akarod megtenni? De Te nem mondod el[ENTER]Yu-Rangnak az igazságot sem?[ENTER]Kérlek, segíts nekem! Gyere vissza, amikor lesz[ENTER]rám egy kis időd!
 8198	Most már Yu-Rang soha többé nem fog velem újra[ENTER]szóba állni! Csak nevet rajtam...
 8199	Ah, igazam volt. Tudtam, hogy ugyanolyan kedves[ENTER]vagy, mint amilyennek kinézel. Köszönöm szépen a[ENTER]segítséged. Sok szerencsét!
-8200	Vissza Yu-Ranghoz
+8200	Vissza Yu-Rang-hoz
 8201	Menj vissza Yu-Ranghoz, és számolj be neki[ENTER]Taurean hazugságáról.
 8202	Yu-Rang nagyot csalódott benned.
 8203	Te elmondtad neki?![ENTER]Meg tudom érteni, ha többé már nem akar a barátom[ENTER]lenni. De ez nagyon elszomorít. Remélem,[ENTER]valamikor meg tudom majd változtatni a[ENTER]véleményét. Talán ha tudok tenni érte valami[ENTER]jót...
@@ -8285,7 +8285,7 @@
 8285	1.300.000 tapasztalat pontot kaptál.
 8286	Miért vagy ilyen csendben? Nem tudod?
 8287	Újra át kell gondolnom.
-8288	Ellenségek a láthatáron
+8288	Ellenfelek a láthatáron.
 8289	A rejtjelekről...
 8290	Feladom.
 8291	Oh, Istenem! Ilyen nehéz? Te voltál az utolsó[ENTER]reményem... Ki fogja most ezt megfejteni?
@@ -8342,7 +8342,7 @@
 8342	Mi van veled? Az utolsó alkalommal olyan[ENTER]nagyszerű munkát végeztél! Nem hiszem el, hogy a[ENTER]birodalmunkat cserben hagyod. De nem tudok mit[ENTER]tenni. Viszont látásra.
 8343	Tudtam, hogy benned bízhatok! Sok szerencsét! És[ENTER]vigyázz magadra!
 8344	Találkozás a kémmel
-8345	Mi van Bingsu?!
+8345	Mi a Bingsu
 8346	Bingsu?
 8347	Taurean leszidta Harangot, mert nem hiszi el[ENTER]neki, hogy nyáron tudsz jégkrémet készíteni. Menj[ENTER]Haranghoz és kérdezd meg, mit tud a Bingsuról.
 8348	Kérdezd Harangot
@@ -8372,7 +8372,7 @@
 8372	Igen. Ismét megpróbálni
 8373	Tudom, hogy ez messze van, és a szörnyek erősek.[ENTER]Ha ez túl nehéz neked, nem tehetünk semmi mást.[ENTER]Viszlát.
 8374	Próbáld újra! A bátorságoddal és a kitartásoddal[ENTER]meg tudod csinálni!
-8375	Bingsu?
+8375	Bingsu!
 8376	Készen van: Octavio elkészítette a Bingsut a[ENTER]Jéghegyről származó jégből. Gyorsan menj vissza[ENTER]Taureanhoz, mielőtt elolvad!
 8377	Tessék! Bingsu!
 8378	Ez a Bingsu? Valóban nagyon jó ízű! Szép és[ENTER]hűvös. Soha nem ízleltem még ilyet előtte,[ENTER]köszönöm! Tehát Harangnak igaza van. Tudom,[ENTER]bocsánatot kell kérnem tőle...
@@ -8401,22 +8401,22 @@
 8401	Ha nem akarsz edzeni, akkor nyomd meg az 'ENTER'[ENTER]gombot.
 8402	Siker!
 8403	Gratulálok! Sikerrel jártál!
-8404	Még nem jelentkeztél egy[ENTER]oktatásra.
+8404	Még nem jelentkeztél egy oktatásra.
 8405	ist nun eine Großmeister Fertigkeit
 8406	Ez azt jelenti, hogy elérted ezen készség[ENTER]tökéletes szintjét, és nem tudod már tovább[ENTER]fejleszteni.
 8407	Gratulálok! Sikerrel jártál! A nagymester[ENTER]készségtanulás folytán
-8408	 %s %s szintre nőtt.
+8408	%s %s szintre nőtt.
 8409	Sikeresen megemelted a szintet!
 8410	Te %s rangpontot használtál fel.
 8411	Nem sikerült!
-8412	Nem sikerült a képességeidet[ENTER]feljavítani.
+8412	Nem sikerült a képességeidet feljavítani.
 8413	Te elvesztettél néhány rangpontot és[ENTER]felhasználtad a Lélekkövet.
 8414	Mivel elolvastad az ördögűző tekercset, további[ENTER]képzésen vehetsz részt anélkül, hogy szünetet[ENTER]kellene tartanod.
 8415	Ha kész vagy az edzéssel, akkor be kell iktatnod[ENTER]egy fél nap szünetet. Próbáld meg később még[ENTER]egyszer, vagy használj egy Ördögűző tekercset.
 8416	Egyetlen készséged sem ismered még annyira jól,[ENTER]hogy bármelyik is elérné a nagymester szintet.
 8417	Kérlek válassz ki egy készséget, amivel el akarod[ENTER]érni a nagymester szintet.
 8418	Aktuális rangpontok: %s
-8419	 Szükséges rangpontok:
+8419	Szükséges rangpontok:
 8420	%s nagymester készségtanulás
 8421	A nagymesteri képzés során rangpontokat használsz[ENTER]fel. Így előfordulhat, hogy a rangod negatívvá[ENTER]válik.
 8422	Sajnálom, de nincs meg a szükséges lovaglási[ENTER]tapasztalatod hátasod fejlesztéséhez. Legalább[ENTER]Felfegyverzett ló könyvre van hozzá szükséged.
@@ -8477,7 +8477,7 @@
 8477	Kovács kézikönyv előállítása
 8478	Hallottál már a Kovács kövéről?[ENTER]Ez egy olyan kő, amit a kovácsok véréből és[ENTER]izzadtságából készítenek. Ha elhozod nekem a[ENTER]Kovács kövét és egy Áldástekercset, akkor egy[ENTER]olyan kézikönyvet fogok készíteni neked, amit a[ENTER]családomban már generációk óta tovább adunk.[ENTER]Hasonló funkciója van, mint a Sárkánytekercsnek,[ENTER]csak nagyobb a siker esélye.
 8479	Ezek a rejtélyes Harci tekercsek a +0~+3[ENTER]tárgyakat feljavítják 100%-os sikerrel.[ENTER]De nem hatnak a +4 és annál feljebb levő[ENTER]tárgyakra.
-8480	Az előállításához egy kovácsok kövére van[ENTER]szükség.
+8480	Az előállításához egy kovácsok kövére van szükség.
 8481	Kovácsok köve
 8482	Az előállításához egy Áldástekercsre van szükség.
 8483	Beszerezted a szükséges tárgyakat?[ENTER]Szóval elő akarod állítani a kézikönyvet, amit a[ENTER]családomban már generációk óta tovább adunk?

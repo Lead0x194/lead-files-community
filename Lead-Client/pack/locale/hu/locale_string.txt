@@ -91,7 +91,7 @@
 435	Nem használhatod a Visszaszállító tekercset, amíg egy másik ablak nyitva van.
 436	Ez a személy nem létezik.
 437	Kereskedés után nem használhatod a tekercset %d másodpercig.
-438	A raktár megnyitása után %d másodpercig nem használhatod a Visszaszállító tekercset.
+438	A raktár megnyitása után nem használhatod a Visszaszállító tekercset további %d másodpercig.
 439	Nem használhatod a Visszaszállító tekercset, mivel túl kicsi a távolság.
 440	Kereskedés után nem használhatsz Visszaszállító tekercset %d másodpercig.
 441	Nem nyithatod ki a raktárat, amíg más ablak nyitva van.
@@ -297,7 +297,7 @@
 695	[Céh] A céh vezető jogai nem változtathatók meg
 696	[Céh] A rangnév érvénytelen.
 697	[Céh] Nincs jogosultságod a hatalmi pozíciód megváltoztatására.
-698	[Céh] A céh vezető jogai nem változtathatók meg
+698	[Céh] A céh vezetőjének a jogai nem változtathatók meg.
 699	[Céh] %u tapasztalati pont lett felhasználva.
 700	[Céh] Nem sikerült a tapasztalat bevetése.
 701	[Céh] Kevés a Yang a céh-kincstárban.
@@ -389,7 +389,7 @@
 855	Legfeljebb %d italt használhatsz.
 856	A harc 10 másodperc múlva kezdődik.
 857	A párbaj megkezdődött.
-858	IGAZ
+858	TRUE
 859	A párbaj befejeződik, probléma van az arénával.
 860	A párbaj időtúllépés miatt befejeződik.
 861	10 másodperc múlva a városba teleportálódsz.
@@ -400,7 +400,7 @@
 866	%s nyert.
 867	10 másodperc múlva a városba teleportálódsz.
 868	10 másodperc múlva kezdődik a következő menet.
-869	HAMIS
+869	FALSE
 870	A párbajozókat szétválasztották. A párbajnak vége.
 871	A tárgy eldobás hányada a pillanatban plusz %d%%
 872	A Yang eldobás hányada pillanatnyilag plusz %d%%
@@ -477,7 +477,7 @@
 957	Hiányos tapasztalat miatt nem tudod elolvasni.
 959	Nem fejlesztheted többé ezt a képességedet könyv segítségével.
 960	Nem elég jó ez a képességed, hogy könyv segítségével fejleszd.
-964	Sikeresen befejezted a tréninget a könyv segítségével.
+964	Sikeresen befejezted a tanfolyamot a könyv segítségével.
 965	A teleportálás sikertelen.
 966	Nincs rendelkezésre álló ló. Kérdezd a Lovászinast!
 967	Használj egy tárgyat a ló hívásához.
@@ -559,7 +559,7 @@
 1205	A párbajban nem használhatod ezt a tárgyat.
 1217	Itt nem csinálhatsz tábortüzet.
 1228	Nem csinálhatsz vízben tábortüzet.
-1229	A készleted tele van.
+1229	Leltárad tele van.
 1237	Zárva. Meg kell keresned a kulcsot.
 1248	Ez a tárgy nem nyitható kulccsal.
 1258	Ez a helyes kulcs.
@@ -887,7 +887,7 @@
 5315	usage : /flush player_id
 5316	usage : /horse_level <name> <level>
 5317	usage : priv_empire <empire> <type> <value> <duration>
-5318	Minden birodalom
+5318	Összes királyság
 5319	Tárgydobási esély
 5320	Yang-dobási esély
 5321	Yang-eső esély

@@ -297,7 +297,7 @@
 695	[Cech] Práva cechovního vůdce nemohou být změněny.
 696	[Cech] Hodnostní jméno je neplatné.
 697	[Cech] Nemůžeš změnit svoji pozici.
-698	[Cech] Práva cechovního vůdce nemohou být změněny.
+698	[Cech] Práva cechovního vůdce nemůžou být změněny.
 699	[Cech] Použito %u zkušeností.
 700	[Cech] Užití zkušeností selhalo.
 701	[Cech] V cechovní pokladnici nemáš dostatek Yangů!
@@ -389,7 +389,7 @@
 855	Můžeš použít až %d elixírů.
 856	Souboj začne za 10 vteřin.
 857	Souboj začal.
-858	ANO
+858	TRUE
 859	Souboj skončil kvůli problému s arénou.
 860	Souboj skončil, čas vypršel.
 861	Za 10 vteřin budeš přesunut do města.
@@ -398,9 +398,9 @@
 864	Souboj skončil kvůli problému se soupeřem.
 865	%s vyhrál souboj.
 866	%s vyhrál.
-867	Za 10 vteřin budeš přesunut do města.
+867	Budeš přesunut do města za 10 vteřin.
 868	Další kolo začne za 10 vteřin.
-869	NE
+869	FALSE
 870	Soupeř byl oddělený. Souboj skončil.
 871	Šance na upuštění předmětů je v tuto chvíli plus %d%%
 872	Kvóta upuštěných Yangů je v tuto chvíli plus %d%%
@@ -887,7 +887,7 @@
 5315	usage : /flush player_id
 5316	usage : /horse_level <name> <level>
 5317	usage : priv_empire <empire> <type> <value> <duration>
-5318	Všechny říše
+5318	Všechna království
 5319	Šance na předměty
 5320	Šance na Yangy
 5321	Šance na déšť Yangů

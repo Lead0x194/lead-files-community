@@ -19,12 +19,12 @@
 19	Eğitim dövüşüne katılabilmek için %s kademeye[ENTER]erişmen gerekiyor. Sen o kademeye erişmiş[ENTER]değilsin.
 20	Eğitim dövüşüne kaydolmak mı istiyorsun?[ENTER]Öyleyse bana eğitim ortağının ismini ver.
 21	Kimle dövüşeceğini bilmiyor musun? Bana bir isim[ENTER]vermezsen seni kaydedemem.
-22	Tamam, %s. %s karşısında bir eğitim dövüşüne[ENTER]kaydoldun.
+22	Tamam, %s. %s katılımcısına karşı bir eğitim dövüşüne kaydoldun.
 23	%s karşılaşmanın %s tarafından onaylanmasını[ENTER]bekliyor.
 24	Sen %s, eğitim dövüşünü %s ile yapmak istiyor[ENTER]musun?
 25	%s şu anda yok. Daha sonra dene veya eğitim[ENTER]ortağınla buluş!
 26	Eşya geliştirmek istiyorum
-27	Demirci.
+27	Demirci:
 28	Merhaba![ENTER]Ben eşyaların geliştirilmesinden sorumluyum. Eğer[ENTER]bir eşyanı geliştirmek istiyorsan, onu bana[ENTER]vermen yeterli.
 29	Bilgi:
 30	Envanterinden bir eşyayı Demirci'ye sürükle.
@@ -50,10 +50,10 @@
 50	Alma.
 51	3'ü 1 arada olta paketi satın aldın. İyi[ENTER]eğlenceler! Lütfen balıkçılık yarışmasıyla ilgili[ENTER]pakete iliştirilmiş nota dikkat et. Sonra[ENTER]görüşürüz!
 52	Üzgünüm, yeterince Yang sahibi değilsin.[ENTER]Ama üzülme, başka fırsatlar da çıkacaktır. Sonra[ENTER]görüşürüz!
-53	Bilinmeyen Fonksiyon [%s]
+53	BİLİNMEYEN BUTON [%s]
 54	Balıkçılık Yarışması Notu
 55	Eğer şimdi evlenirsen, krallığını[ENTER]değiştiremezsin. Yalnızca evli olmayan oyuncular[ENTER]krallık değiştirebilirler.
-56	İmparatorluk Değiştir:
+56	İmparatorluk Değiştir
 57	Eğer krallık değiştirmek istiyorsan, boşanmalısın.
 58	Dönüşmüşken krallık değiştiremezsin.
 59	Bu nesneyi dönüşmemiş olduğunda kullan.
@@ -172,10 +172,10 @@
 172	Uriel'in öğrencisi Biyolog Chaegirab, seni arıyor.Lütfen kendisini bul ve nasıl yardımcı[ENTER]olabileceğini sor.
 173	Şimdi yeterince Tue Mantarım var. İyi iş![ENTER]Memnuniyetimin bir göstergesi olarak sana biraz[ENTER]Yang ve araştırma sonuçlarımı vereceğim.
 174	Ödül olarak 200,000 tecrübe puanı ve 20,000 Yang[ENTER]alacaksın. Ayrıca Kask+2 kazanacaksın.
-175	Demir kask
-176	Zincir kapşon
-177	Alaycı kask
-178	Anka şapka
+175	Demir Kask+2
+176	Zincir Kapşon+2
+177	Alaycı Kask+2
+178	Anka Şapkası+2
 179	Üzgünüm ama bu Tue Mantarının kalitesi çok düşük[ENTER]ve işime yaramaz.[ENTER]Lütfen başka bir tane getir.
 180	Cennet, lütfen bana yardım et...[ENTER]Bu krallıktaki tüm bitkileri araştırmaktayım.[ENTER]Yapılması gereken tonlarca iş var ve benim[ENTER]bitkileri toplamak için çıkıp gezecek vaktim[ENTER]olmuyor. Bana yardımcı olur musun?
 181	Şu an Tue Mantarı üzerinde çalışıyorum. Daha[ENTER]fazla deney yapabilmem için bana bu bitkiden[ENTER]lazim.[ENTER]Bu araştırmam için sanırım 10 adet Tue Mantarı[ENTER]yeterli olacaktır.[ENTER]Bana her seferinde 1 adet olacak şekilde toplam[ENTER]10 adet Tue Mantarı getirir misin? Bu sayede[ENTER]onları keşfedebilirim.
@@ -205,7 +205,7 @@
 205	Ödül olarak, Biyolog Chaegirab sana 2000 tecrübe[ENTER]puanı ve 3000 Yang verecek.[ENTER]Ayrıca zırh+3 kazanacaksın.
 206	Uriel'in öğrencisi Biyolog Chaegirab, seni arıyor.Lütfen kendisini bul ve nasıl yardımcı[ENTER]olabileceğini sor.
 207	Keşiş Plaka Zırh+3
-208	Gök Mavisi Takım
+208	Gök Mavisi Takım+3
 209	Ağıt Plaka Zırh+3
 210	Gök Mavisi Elbise+3
 211	Üzgünüm ama bu Çançiçeğinin kalitesi çok kötü...[ENTER]Lütfen bana yeni bir tane getir.
@@ -458,7 +458,7 @@
 458	Biyolog Chaegirab:
 459	Ah! Bu kırmızı hayalet ağacı dalı en yüksek[ENTER]kalitede! Hemen araştırmaya başlayacağım.
 460	Ancak
-461	 tane daha gerekli.
+461	tane daha gerekli.
 462	Lütfen biraz bulmaya çalış![ENTER][ENTER]Ve unutma ki analiz için zaman ihtiyacım var.[ENTER]Yarına kadar yeni bir dal inceleyemem.
 463	Biyolog Chaegirab:
 464	40 dalı topladın! Teşekkür ederim.[ENTER]Şimdi bu yaşayan ağaçların ardındaki yaratıkları[ENTER]anlamam için Orman Ruh Taşı gerekli. Benim için[ENTER]bulabilir misin?[ENTER]Taşı Kızıl Ormandaki ağaçlardan elde edebilirsin.
@@ -486,7 +486,7 @@
 486	Aynı zamanda sana bu Koyu Kırmızı Abanoz Sandığı[ENTER]da vermeliyim. Ona iyi bak.
 487	Bu Chaegirab'ın ricasını yerine getirdiğin için[ENTER]ödülün.
 488	Biyolog Chaegirab'ın ricasını yerine getirmenin[ENTER]ödülü olarak sana karşı yapılan saldırılara(PvP)[ENTER]karşı dayanıklılığın kalıcı olarak %10 artıyor.
-489	Bu etki kalıcıdır.
+489	Bu artış kalıcıdır.
 490	Biyolog Chaegirab:
 491	Biyolog'un ricası
 492	Biyolog'un araştırması
@@ -511,7 +511,7 @@
 511	Ah, bazı notlar bulmuşsun.[ENTER]Biraz bekle de kontrol edeyim...
 512	Ah, harika! İyi iş!
 513	Ancak
-514	 tane daha gerekli.
+514	tane daha gerekli.
 515	Ancak, %s tane daha gerekli.
 516	Lütfen biraz bulmaya çalış![ENTER][ENTER]Ve unutma ki incelemek için zamana ihtiyacım var.[ENTER]Yarına kadar yeni not inceleyemem.
 517	50 not topladın, bu müthiş![ENTER]Sanırım ne isteyeceğimi tahmin ediyorsundur. Hala[ENTER]Liderlerin Ruh Taşına ihtiyacım var. Sonra[ENTER]istediğim herşeye sahip olacağım. Bunu yaparsın[ENTER]değil mi? Ruh taşını bul ve bana getir.[ENTER]Onu patron canavarlardan bulabilirsin.
@@ -539,9 +539,9 @@
 539	Bu kez Mavi Abanoz Sandık.[ENTER]Merak ettin mi? Çabuk aç!
 540	Bu Chaegirab'ın ricasını yerine getirdiğin için[ENTER]ödülün.
 541	Chaegirab'ın isteğini yerine getirdiğin için[ENTER]diğer oyuncularla savaşırken (PvP) saldırı[ENTER]değerin kalıcı olarak %8 arttı.
-542	Bu etki kalıcıdır.
+542	Bu artış kalıcıdır.
 543	Seon-Pyeong:
-544	Seon-Pyeongun Araştırması
+544	Seon-Pyeong"un Araştırması
 545	Seungryong Vadisi'ndeki Seon-Pyeong'un yardımına[ENTER]ihtyacı var. O'na git ve sorun neymiş diye öğren.
 546	Araştırma Yardımı
 547	Seon-Pyeong:
@@ -567,7 +567,7 @@
 567	Saldırı +51
 568	Hmm... yani bu değerli taş gerçekten de Sürgün[ENTER]Mağarası'ndan mı? Güzel olmasına güzel ama bunun[ENTER]iç enerjisi eksik. Korkarım bu benim işime[ENTER]yaramaz. Ben bunu daha yakından incelerken sen de[ENTER]bir sonrakini getir, tamam mı?
 569	Seon-Pyeong:
-570	Seon-Pyeongun Araştırması
+570	Seon-Pyeong"un Araştırması
 571	Seungryong Vadisi'ndeki Seon-Pyeong'un yardımına[ENTER]ihtyacı var. O'na git ve sorun neymiş diye öğren.
 572	Araştırma Yardımı
 573	Seon-Pyeong:
@@ -633,7 +633,7 @@
 633	Merhaba, nasılsın?[ENTER]Seni güçlendirecek yada iyileştirecek iksirler[ENTER]yaratmakka ilgileniyormusun?[ENTER]Bir şifacı olarak kendimi iksirlere adadım.[ENTER]Birçok tarif buldum. Onları denemek istermisin?
 634	Nesnelerin arındırılması önemli bir zanaattır. Bu[ENTER]tür işlemlerle ilgileniyor musun? Sana şifalı[ENTER]bitki bilimiyle ilgili bazı reçeteler[ENTER]gösterebilirim. Bunlarla, bilinen iksirlerin daha[ENTER]güçlü çeşitleri üretilebilir. Ya da sana basit[ENTER]kemerleri kudret aletlerine dönüştürmeyi[ENTER]öğretebilirim.
 635	Gizli tarif
-636	Huahn-So
+636	Huahn-So:
 637	Gizli bir aile tarifi buldum. Bununla neredeyse[ENTER]zarar verilemez olacaksın![ENTER]Hahaha Sanırım ülkede bunu bilen tek kişi benim.[ENTER]Bu iksirlerle neredeyse sana hiç birşey olmaz.[ENTER]İksirleri denemek istermisin?
 638	Bu zırhı arındırabilmek için şunlara ihtiyacım[ENTER]var: %s
 639	Malzemeler:
@@ -675,7 +675,7 @@
 675	Surat Totemi'ni ele geçirmek için iblis[ENTER]bekçilerini yen. Bu 6. katın anahtarıdır.
 676	Kharoon ve cellatlarını yen!
 677	Mükemmel bir duyma yeteneği ve iyi bir içgüdüye[ENTER]sahip oldugunu kanıtlayarak gerçek Metin Taşını[ENTER]yok ettin![ENTER]Şimdi 4.kata gireceksin.
-678	Şeytan Kulesinin içine...
+678	Şeytan kulesine...
 679	4.Kattaki Mühürlü Kapıdasın.[ENTER]Bir sonraki kata çıkmak için beş Eski Mühürü[ENTER]açman gerek. Bu alan sana saldırmak için bekleyen[ENTER]canavarlarla dolu. Bazılarının üzerinde anahtar[ENTER]var.[ENTER]Yeteri kadar Kilit Açma Taşı elde eder ve tüm[ENTER]mühürleri açarsan 5. kata çıkabilirsin. Ama bil[ENTER]ki sadece 20 dakikan var!
 680	15 dakika kaldı
 681	Tüm mühürleri açtın ve artık 5. kata girebilirsin.[ENTER]Bu katta Kibirli Şeytan Kralı da var.[ENTER]5. kattaki tüm canavarları öldür.
@@ -686,7 +686,7 @@
 686	Kulenin 6.katına girmek mi istiyorsun? Bu katla[ENTER]mücadele etmek muhtesem beceriler ve büyük bir[ENTER]yazgi gerektirir.[ENTER]Sadece 75. seviyeye ulastıysan seni oraya[ENTER]ışınlayabilirim.
 687	Üst kata çıkmak icin yeterli deneyime ve güce[ENTER]sahipsin.[ENTER]Girebilirsin!
 688	Şeytan Kulesi Bekçisi
-689	Git
+689	Git bakalım!
 690	Kuleyi terket!
 691	Seviyen çok düşük. Üst kata cıkmana izin veremem.[ENTER]Daha fazla tecrübe kazandığında geri gel.[ENTER]75 veya daha üst seviyede olman gerekiyor.
 692	Zin-Sa-Gui haritasini bulana kadar Metin[ENTER]Taslarini yok et.[ENTER]Bu seni bir sonraki kata taşıyacak.
@@ -713,7 +713,7 @@
 713	%s grubu, Mavi Ejderha'yı öldürmeye çalışıyor!
 714	Anahtar miktarı yetersiz! Geçidi etkinleştirmeye[ENTER]lâzım olanlar:
 715	Onu sana Yonghan ile Huashin adlı hain liderler[ENTER]verecek.
-716	Bu bölgeden çıkmak istiyorum!
+716	Bu bölgeden çıkmak istiyorum
 717	Seni mağaranın girişine geri götüreceğim.
 718	Olur.
 719	Hayır, ben burda kalacağım.
@@ -735,7 +735,7 @@
 735	Hayır, bu çok yorucu.
 736	Pekala, karar senin.
 737	Yıldızlar henüz doğru konumda değil. Henüz çok[ENTER]erken! Daha %s beklemelisin.
-738	Kalan süre
+738	Kalan süre:
 739	Malzemeleri topla
 740	Dönüşüm küresi için malzemeler
 741	Malzemeler toplandı
@@ -745,14 +745,14 @@
 745	Gereken malzemeleri verilen sürede toplayamadın.
 746	Bana bu malzemeden %s vermek ister misin?
 747	Ne yazık ki himzetimden faydalanamazsın.[ENTER]Senden 150.000 Yang istiyorum.
-748	Al, buyur.
+748	Al, buyur!
 749	Hayır, bende kalsın!
 750	Teşekkürler, çok uğraştın.[ENTER]Her şey yolunda gitti, demek ki henüz[ENTER]paslanmadım. İşte sana:
 751	Amanın! İhtiyar ellerim beni yarı yolda bıraktı:[ENTER]Dönüşüm Kürelerini üretemedim. Telafi olarak,[ENTER]sana şu eşyayı hediye ediyorum:
 752	Nasıl istersen.
-753	Ejderha Taşı Parçası?!
+753	Ejderha taşı parçası+?!
 754	Elinde bir taş parçası tutuyorsun. Işıl ılşıl[ENTER]parlıyor ve gücünün iliklerine kadar işlediğini[ENTER]hissediyorsun.[ENTER]Bu nasıl bir taş böyle? Onu Simyacı'ya götür. O[ENTER]sana yardımcı olacaktır.
-755	Ejderha Taşı Parçası?!
+755	Ejderha taşı parçası+?!
 756	Bu bir ejderha taşı parçası, çok ender bulunan[ENTER]değerli ve tarif edilemeyecek kadar güçlü bir[ENTER]kristal. Söylenenlere göre bu bir ejderhanın[ENTER]ruhuymuş. İnanılmaz güzel bir şey.[ENTER]Üzerinde taşıdığında gücünün iliklerine kadar[ENTER]işlediğini hissediyor musun?[ENTER]Bana toplam on tane ejderha taşı parçası getir.[ENTER]Onları bütün bir taşa dönüştürebilirim.
 757	Ejderha Taşı Dönüştürme
 758	O kadar sabırsızlanma. Şimdilik senin için on[ENTER]parçayı bir ejderha taşına dönüştürebilirim.[ENTER]Aramaya devam et!
@@ -771,7 +771,7 @@
 771	Ejderha Gözü Gücü
 772	Ejderha gözü gücünün kalan süresi: %d
 773	Seç.
-774	Es gibt keine Drachensteinsplitter mehr
+774	Ejderha taşı parçaları bitti.
 775	Bana ejderha gözü gücünü ver
 776	Selam! Ejderha gözünün gücünü bugün zaten aldın.[ENTER]İşlem beni fazla yoruyor, sana günde sadece bir[ENTER]kez yardım edebilirim. Yarın yine gel!
 777	Selam! Bahse girerim ejderha gözü gücü nedeniyle[ENTER]buradasın. Doğru mu? İyi öyleyse, al bakalım.[ENTER]Sana aramada bol şanslar! Umarım on ejderha[ENTER]taşına yetecek sayıda parça bulabilirsin.
@@ -806,7 +806,7 @@
 806	Bu eşya benim tekniğim için elverişli değil. Bana[ENTER]başka bir şey getir.
 807	Bu eşya yeterli enerjiye sahip değil.[ENTER]Bana seviyesi en az 35 olan bir tane getirirsen[ENTER]tekniğimle içindeki gücü çıkarabilirim.
 808	Bu eşyayı tahrip edeyim mi?
-809	Evet
+809	Evet!
 810	Hayır, şimdi etme!
 811	Beceremedim, enerji paçası elde edemedim ne yazık[ENTER]ki. Bir dahaki sefer başarılı oluruz belki.
 812	Efsanevi! %d enerji parçası buldum. İşte buyur.
@@ -815,7 +815,7 @@
 815	Henüz yeterli enerji parçasına sahip değilsin.[ENTER]Bunlardan enerji kristali üretemem.[ENTER]En az %d parça topladığında tekrar gel.
 816	Güzel. Lazım olan %d enerji parçasını getirdin.[ENTER]Bunlardan bir enerji kristali üretebilirim. Biraz[ENTER]bekle lütfen. Deneyeceğim ama olacağına dair[ENTER]garanti veremem.
 817	Her şey hazır durumda. Parçaları birleştirip[ENTER]enerji kristali üretebiliriz.[ENTER]Ama ben de bir şekilde ekmeğimi kazanmalıyım.[ENTER]Tamir aletleri de gökten inmiyor yani. Masrafları[ENTER]karşılamak için %d Yang ödemeni istiyorum.[ENTER]Ödemeye hazır mısın?
-818	Tabii ki.
+818	Elbette!
 819	Hayır, şimdi değil.
 820	Tamam, kararına saygı duyuyorum.[ENTER]Fikrini değiştirdiğinde ve enerji kristaline[ENTER]ihtiyacın olduğunda tekrar gel.
 821	Kusura bakma ama ilk önce parayı ödemen lazım.[ENTER]Burası yardım kurumu değil. Parayı veren düdüğü[ENTER]çalar - bu işler böyle yürür.
@@ -856,7 +856,7 @@
 856	Paskalya yumurtası buldun mu?
 857	Bunu almak için bana %d yumurta vermelisin!
 858	Evet, almak istiyorum!
-859	Hayır.
+859	Hayır, almak istemiyorum!
 860	Yumurtalar için teşekkür ederim. Paskalya[ENTER]hediyeni güle güle kullan!
 861	Boş Sepet:
 862	Bu eşyayı almak istiyor musun?
@@ -883,13 +883,13 @@
 883	Yine mi sen! Sana birşey söyleyeyim mi? Cadılar[ENTER]Bayramı Sandığı'ndan şansına belki bir Jack[ENTER]Pumpkin Maskesi Kartı çıkabilir.
 884	Bu kartla böyle bir ürkütücü Jack Pumpkin[ENTER]Maskesi'ne sahip olabilirsin. Maske ister misin?
 885	Jack Pumpkin Maskesi Kartın yok mu? O halde Jack[ENTER]Pumpkin Maskesi de alamazsın! Haha!
-886	Tarihçi:
+886	Tarihçi mi?
 887	Tarihçi:
 888	Geçmişi olmayanın geleceği olmaz! Sana nasıl[ENTER]yardımcı olabilirim?
 889	Pardon, tanışıyor muyuz?
 890	Affedersin, kendimi tanıtmaya unutmuşum. Bir[ENTER]tarihçi olarak gezip görmediğim yer yoktur. Eğer[ENTER]tarihle ilgili birşey bilmek istersen, çekinmeden[ENTER]sorabilirsin.
 891	Seninle tanıştığıma çok memnun oldum. Artık sık[ENTER]sık ziyaretine gelirim.
-892	Was Süßes
+892	Tatlı yiyelim tatlı konuşalım
 893	Tüh. Neyse, tekrar görüşmek üzere.
 894	Demek ne olduğunu biliyorsun?! Bu tatlıları[ENTER]istiyorsan, bana bir tane simit getirmelisin.
 895	10 simit karşılığında sana bir tatlı verebilirim.[ENTER]Anlaştık mı?
@@ -913,7 +913,7 @@
 913	Ne kadar cimri ve katı yürekli bir insansın.[ENTER]Fikrini değiştirirsen nerede olduğumu biliyorsun.
 914	Çok teşekkür ederim. Hakikaten çok yardımsever ve[ENTER]merhametli bir insanmışsın.[ENTER]Bu iyiliğini hiç unutmayacağım. Bütün duaların[ENTER]kabul olsun!
 915	Bereket Meyvesi
-916	Bereket Meyvesi diye bilinen bir meyve varmış.[ENTER]Tembellik yapmayıp düzenli olarak aynı saatte[ENTER]gelirsen bu meyveden istifade edebileceksin.
+916	"Bereket Meyvesi" diye bilinen bir meyve varmış.[ENTER]Tembellik yapmayıp düzenli olarak aynı saatte[ENTER]gelirsen bu meyveden istifade edebileceksin.
 917	Senin karnını doyurmadım mı ben bugün?![ENTER]Bak sana çok önemli birşey söyleyeceğim, kulağını[ENTER]dört aç: Sabreden derviş muradına ermiş!
 918	Çalışan kazanır.
 919	Senin gelmeni sabırsızlıkla bekledim. Başka[ENTER]ülkelerin tarihini araştırmak için artık yoluma[ENTER]devam etmeliyim.
@@ -959,7 +959,7 @@
 959	Bu kılıcı tamir edebilir misin?
 960	Bu muhteşem bir kılıç! Bu kılıç Mirine'nindi[ENTER]değil mi? Ona yardım ettiğini duydum. Aferin,[ENTER]dürüst bir insan olduğunu gösterdin. Bu yüzden[ENTER]kılıcın tamiri için senden para almayacağım. Bir[ENTER]saniye bekle...
 961	Al, bak namlu gıcır gıcır olmuş. Hakikaten çok[ENTER]kıymetli bir kılıç. Senin olsun dostum.
-962	Gümüş Kılıç+3 kazandın
+962	Gümüş Kılıç +2 kazandın.
 963	Orkide Kılıcı +2 kazandın.
 964	Sahte Kılıç +2 kazandın.
 965	Barbar Kılıcı +2 kazandın.
@@ -976,7 +976,7 @@
 976	Birden rüzgar mektubu alip götürdü. Becerikli[ENTER]askerin nerede oldugunu bilmiyorsun.
 977	Deneyimli askeri buldum.
 978	O anda, mektup alev alarak kayboldu ve külleri[ENTER]ellerine yağdı. Daha sonra
-979	Wärme deinen Körper
+979	vücudundan bir ısı dalgasının geçtiğini hissettin.
 980	Deneyimli asker seni kutsadı!
 981	Deneyimli asker seni kutsuyor!
 982	Mektup yeni maceracıların onları bulmalarıyla;[ENTER]kendilerini kutsayabilecek deneyimli askerlerin[ENTER]nerede bulunduklarına dair bilgi içeriyor
@@ -998,11 +998,11 @@
 998	Deneyimli asker bulmayı beceremedin.
 999	Hedef arıyor %s
 1000	Kırmızı iksiri nereden alabilirim?
-1001	Gardiyan:
+1001	Köy Gardiyanı
 1002	Gardiyan:
 1003	Kırmızı iksiri Satıcı Kadından alabilirsin. Hemen[ENTER]şurada. Eğer onu göremiyorsan, küçük haritada[ENTER]yanıp sönen kırmızı noktaya doğru gidebilirsin!
 1004	Satıcı:
-1005	Satıcı:
+1005	Satıcı
 1006	Merhaba maceracı![ENTER]Ah, seni Köy Gardiyanı mı gönderdi? Kırmızı iksir[ENTER]mi istiyor? Sana hemen 5 tane veriyorum.[ENTER]İşte burada. Bunlar yaşam enerjini yeniler ve[ENTER]tatları da çok güzeldir.
 1007	Sen buralarda yenisin, ama eminim, buraya daha[ENTER]çok geleceksin, onun için sana bu kirmizi suyu[ENTER]hediye ediyorum.Görüşmek üzere.
 1008	5 tane kirmizi iksir kazandın.
@@ -1017,7 +1017,7 @@
 1017	Merhaba maceracı! Bana yardım edebilir misin?[ENTER]Sana 200 Yang versem, bana kırmızı iksir alabilir[ENTER]misin? Ben buradan ayrılamam, kırmızı iksiri[ENTER]satıcıdan alabilirsin.
 1018	Evet
 1019	Köy Gardiyanından 200 Yang aldın. Satıcıya git ve[ENTER]kırmızı iksiri al. Yangları köylülerden çeşitli[ENTER]mal ve hizmetleri almak için kullanabilirsin..
-1020	Bilinmeyen Fonksiyon [%s]
+1020	BİLİNMEYEN BUTON [%s]
 1021	Kırmızı iksir al
 1022	Satıcıdan kırmızı iksirleri al ve Köy Gardiyanına[ENTER]götür.
 1023	Bu oltayı geliştirebilecek kadar yetenekli[ENTER]olduğumdan emin değilim.
@@ -1039,61 +1039,61 @@
 1039	Am-heh Yutağı'ndan geçip kaderinle yüzleşmek[ENTER]ister misin?
 1040	Entrer
 1041	Peut être plus tard
-1042	Vous ne pouvez passer que par la Gorges d Am Heh après avoir complété la quête du niveau 103
-1043	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1044	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1045	Un seul groupe peut prendre d assaut la forteresse du dragon rouge Vous aurez également besoin d un laissez passer pour entrer
-1046	Je ne peux vous laisser entrer que si vous avez un laissez passer
-1047	Le niveau de tous les membres du groupe doit être d au moins 100 Sinon je ne peux pas vous laisser passer
-1048	Je ne vous laisserai passer que si tous les membres du groupe ont au moins le niveau 100
+1042	Seviye 103'e ait görevi tamamladıktan sonra[ENTER]Am-heh Yutağı'ndan geçebilirsin.
+1043	Kırmızı Ejderha Kalesi'ne tekrar girebilmek için[ENTER]bekleme süresi dolmalı.
+1044	Kırmızı Ejderha Kalesi'ne tekrar girebilmek için[ENTER]bekleme süresi dolmalı.
+1045	Kırmızı Ejderha Kalesi'ne sadece bir grup hücum[ENTER]edebilir. Ayrıca giriş için bir geçit bileti[ENTER]gerekir.
+1046	Elinde geçit biletin varsa, geçmene izin[ENTER]verebilirim.
+1047	Tüm grup üyelerinin seviyesi en az 100 olmalı.[ENTER]Aksi halde geçmenize izin veremem.
+1048	Tüm grup üyelerinin seviyesi en az 100 olmadan[ENTER]geçmenize izin vermeyeceğim.
 1049	Forteresse du dragon rouge
-1050	Voulez vous entrer dans la forteresse du dragon rouge
+1050	Kırmızı Ejderha Kalesi'ne girmek istiyor musun?
 1051	Entrer
 1052	Peut être plus tard
-1053	Seul le chef du groupe peut demander l admission
-1054	J apprécie votre courage mais vous serez seul à vous ruiner dans la forteresse du dragon rouge Mettez en place un groupe fort et je vous laisserai rentrer
+1053	Grup liderinden başkası giriş izni isteyemez.
+1054	Cesaretini takdir ediyorum ama Kırmızı Ejderha[ENTER]Kalesi'nde tek başına heder olursun. Güçlü bir[ENTER]grup kur ki seni içeri bırakabileyim.
 1055	Lorsque le temps est écoulé le groupe est téléporté hors de la forteresse
 1056	Temps restant Minute n
-1057	Votre temps est écoulé Dans dix secondes vous serez téléporté aux portes de la forteresse
-1058	Dans dix secondes le groupe sera téléporté hors de la forteresse du dragon rouge
-1059	Réveillez la Gorges d Am Heh
-1060	Seul le chef peut réveiller la gorge de Am heh
-1061	La Gorge d Am heh est réveillée Maintenant personne n entre ni ne sort
-1062	Les portes de la forteresse du dragon rouge se ferment pendant une heure
-1063	Temps restant 60 Minute n
-1064	Mission Osez entrer dans l anneau des démons et en sortir victorieux
-1065	Tous les démons n ont pas encore été vaincus
+1057	Süreniz doldu. On saniye içinde kalenin kapısının[ENTER]önüne ışınlanacaksınız.
+1058	Grup on saniye içinde Kırmızı Ejderha Kalesi'nden[ENTER]dışarı ışınlanacak.
+1059	Am-heh Yutağı'nı canlandır
+1060	Am-heh Yutağı'nı sadece grup lideri[ENTER]canlandırabilir!
+1061	Am-heh Yutağı canlandırıldı. Artık hiç kimse ne[ENTER]içeri girebilecek ne de dışarı çıkabilecek.
+1062	Kırmızı Ejderha Kalesi'nin kapıları bir[ENTER]saatliğine kapanıyor.
+1063	Kalan süre: 60 dakika
+1064	Görev: Şeytanların arasına girin ve ordan galip[ENTER]ayrılın.
+1065	Şeytanlar henüz tümüyle mağlup edilmedi.
 1066	Restant
 1067	Tâche Trouvez l engrenage en or et activez le mécanisme caché dans la Stèle de l Isfet
-1068	Le mécanisme de la stèle de l Isfet ne peut être déclenché qu avec l engrenage en or Revenez quand la tâche a été accomplie
-1069	Mission vaincre Ignator gardien des braises
-1070	Ignator n a pas encore été vaincu Travailler dur ou recevoir sa damnation éternelle Revenez lorsque la tâche est terminée
-1071	Tâche Trouvez les Pierre de Maât et placez les dans le bon ordre sur les sept stèles de l Isfet
-1072	Si vous utilisez la Pierre de Maât sur la mauvaise stèle elle se brisera
-1073	L erreur est humaine Par conséquent choisissez judicieusement pour résoudre le puzzle Renvenez lorsque la tâche est terminée
-1074	Mission Seuls ceux qui n ont pas peur de la chaleur accablante vont détruire le Metin du Purgatoire
-1075	Laissez le Metin du Purgatoire se transformer en cendres et revenez lorsque la tâche sera accomplie
+1068	İsfet Steli'ndeki mekanızma ancak altın dişli[ENTER]çarkla harekete geçirilebilir. Görev[ENTER]tamamlandığında geri dön.
+1069	Görev: Korun Koruyucusu olan İgnatör'ü mağlup[ENTER]edin.
+1070	İgnatör henüz mağlup edilmedi. Ya gayret[ENTER]edersiniz ya da ebediyyen onun azabına[ENTER]uğrarsınız. Görev tamamlandığında geri dönün.
+1071	Görev: Maat taşlarını arayın ve onları sıralamaya[ENTER]göre İsfet'in yedi steline çekip bırakın.
+1072	Maat taşını yanlış stele uygularsanız kırılır.
+1073	Hatasız kul olmaz! Bu yüzden bilmeceyi dikkatlice[ENTER]çözün. Görev tamamlandığında geri dönün.
+1074	Görev: Cehennem ateşinin metinini ancak kavurucu[ENTER]sıcaktan korkmayanlar yok edebilir.
+1075	Cehennem ateşinin metinini kül edin. Görev[ENTER]tamamlandığında geri dönün.
 1076	Tous les démons ont été vaincus
-1077	Visitez la Gorge d Am heh pour ouvrir un autre Verrou du destin
-1078	La stèle d Isfet a été détruite
-1079	Cet engin était un faux et a été détruit Trouvez l original
-1080	Ignator gardien des braises a été tué
-1081	C était un choix judicieux Détruire la prochaine stèle
-1082	C était un choix judicieux Détruire la prochaine stèle
-1083	Mauvais ordre La pierre du Maat a été détruite
-1084	C était un choix judicieux Détruire la prochaine stèle
-1085	C était un choix judicieux Détruire la prochaine stèle
-1086	C était un choix judicieux Détruire la prochaine stèle
+1077	Am-heh Yutağı'na tekrar girin ve bir kader kilidi[ENTER]daha açın.
+1078	İsfet Steli yok edildi.
+1079	Bu dişli çark sahteydi ve yok edildi. Orijinalini[ENTER]bulun.
+1080	Korun Koruyucusu İgnatör yok edildi.
+1081	Güzel bir seçimdi. Şimdi de diğer steli yok et.
+1082	Güzel bir seçimdi. Şimdi de diğer steli yok et.
+1083	Sıralama yanlış. Maat taşı yok oldu.
+1084	Güzel bir seçimdi. Şimdi de diğer steli yok et.
+1085	Güzel bir seçimdi. Şimdi de diğer steli yok et.
+1086	Güzel bir seçimdi. Şimdi de diğer steli yok et.
 1087	Güzel bir seçimdi. Şimdi de son steli yok et ki[ENTER]İsfet Maat'a mağlup olsun.
-1088	La Metin du Purgatoire a été détruite
-1089	Razador a été tué
-1090	Tous les combattants seront téléportés hors du Temple du Dragon dans une minute
-1091	Pour passer par la Gorge d Am heh votre chef doit avoir au moins le niveau 104
-1092	Votre force n est pas suffisante pour traverser la Gorge d Am heh Revenez dès que vous atteignez le niveau 104 ou supérieur
-1093	Vous êtes à l extérieur des portes de la forteresse du dragon rouge depuis plus de cinq minutes et vous ne pouvez plus rentrer
-1094	Le temps de rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1095	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe nécessite un passe Les joueurs suivants n en portent pas actuellement
-1096	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe doit avoir atteint le niveau 100 Les joueurs suivants n ont pas atteint le niveau pour le moment
+1088	Cehennem ateşinin metini yok edildi.
+1089	Razadör yok edildi.
+1090	Bütün savaşçılar bir dakika içerisinde Ejderha[ENTER]Tapınağı'ndan dışarı ışınlanacak.
+1091	Am-heh Yutağı'ndan geçebilmeniz için lideriniz en[ENTER]az 104'üncü seviyede olmalı.
+1092	Am-heh Yutağı'ndan geçebilecek kadar güçlü[ENTER]değilsin. En az 104'üncü seviyeye ulaştığında[ENTER]tekrar gel.
+1093	Kırmızı Ejderha Kalesi'nin kapısında beş[ENTER]dakikadan fazla bekledin. Artık içeri giremezsin.
+1094	Kırmızı Ejderha Kalesi'ne tekrar girebilmek için[ENTER]bekleme süresi dolmalı.
+1095	DİKKAT! Kırmızı Ejderha Kalesi'ne girebilmek için[ENTER]grubun her üyesinin bir geçit bileti olmalı.[ENTER]Bileti OLMAYAN oyuncular şunlar:
+1096	DİKKAT! Kırmızı Ejderha Kalesi'ne girmek için[ENTER]bütün grup üyelerinin seviye 100'e ulaşmış olması[ENTER]gerekir. Bu seviyeye ULAŞMAMIŞ oyuncular:
 1097	The group from %s has killed the Razador!
 1098	Jinno-krallığı kutsal alana girdi.
 1099	Sen katılamazsın!
@@ -1122,7 +1122,7 @@
 1122	Benim falıma bakma
 1123	Doğru. Hayatta en önemli şey, kendi istediğini[ENTER]yapabilmek ve doğru yoldan şaşmamaktır. Görüşmek[ENTER]üzere!
 1124	Evet, bir tane istiyorum.
-1125	Hayır, teşekkür ederim.
+1125	Hayır, teşekkürler.
 1126	İyi biriyim ama sana muskayı hediye edemem[ENTER]uğursuzlukdan korunmak istiyorsan bana onun için[ENTER]para ver.[ENTER]Fiyatı %s Yang.
 1127	Gidiyor musun? Belki haklısın. Uğursuzluk ve[ENTER]üzüntü hayatın bir parçası.Kendine dikkat et[ENTER]Görüşmek üzere. Şayet kararını değiştirirsen,[ENTER]bana geri gel.
 1128	Yüzüne göre uzun zamandır buralarda değilsin.[ENTER]Neden bu kadar çabuk kısmetini öğrenmek[ENTER]istiyorsun? Problemlerin mi var? Kısmetin bol[ENTER]çalışma istiyor. Sonra bir daha gel.
@@ -1146,13 +1146,13 @@
 1146	Sohan Dağı
 1147	Doyum-Paper
 1148	Desert Yongbi
-1149	Temple Hwang
+1149	Hwang Tapınağı
 1150	Grotte de l exil
 1151	Turnuva Yönetimi'nden Mesaj
 1152	Büyük Metin2 Turnuvası'na hoş geldin![ENTER]Envanterinde bulmaca kutusunu bulabilirsin. Buna[ENTER]sağ fare tuşuyla tıkladığında Ateş Diyarı'na[ENTER]ışınlanırsın - ve savaş başlar!
 1153	Sadece en iyiler tur atlayabilir! Sen de[ENTER]bunlardan biri misin? Eşya dükkanı deponu kontrol[ENTER]et, kutuyu bul ve envanterine çek. Sağ fare[ENTER]tuşuyla üzerine tıkladığın anda sonraki haritaya[ENTER]ışınlanırsın.
 1154	Tüm zorlu mücadelelerin üstesinden geldin.[ENTER]Müthiş katılımın için çok teşekkürler![ENTER]Final katılımcıları son aşamadan sonra[ENTER]belirlenir. Eğer soruların varsa turnuva[ENTER]yardımcılarıyla iletişime geç.
-1155	Mücadele başlamadan önce oyun seçeneklerinde, PvP[ENTER]modunu serbeste çevirmelisin.[ENTER]Ekranının sağ alt tarafındaki buttondan veya[ENTER]Esc tuşuyla aç, oyun seçeneklerini seç ve PvP[ENTER]modunu serbeste çevir.
+1155	Mücadele başlamadan önce oyun seçeneklerinde, PvP[ENTER]modunu "serbeste" çevirmelisin.[ENTER]Ekranının sağ alt tarafındaki buttondan veya[ENTER]"Esc" tuşuyla aç, "oyun seçeneklerini" seç ve PvP[ENTER]modunu "serbeste" çevir.
 1156	Ne yazık ki tüm yerler doldu. Turnuvaya katılmak[ENTER]için bir sonraki aşamayı bekle.
 1157	Tur 1: Mümkün olduğu kadar çok Metin Taşı yok et.
 1158	Tur 2: Mümkün olduğu kadar çok patron yok et!
@@ -1363,7 +1363,7 @@
 1363	Kapanışa kadar kalan süre: %s gün
 1364	Bekleme süresi
 1365	Deneyi tekrarlamak için en erken olasılık: %s sa.
-1366	Kalan süre
+1366	Kalan süre:
 1367	Acil düzenleme
 1368	Hızlı kayıt mümkün
 1369	Burada loncanı, sıralamada loncana yakın olan[ENTER]diğer loncaları görebilirsin:[ENTER][DELAY value;0][ENTER]|Lonca adı |Puanı |Zaferleri |Beraberlikleri[ENTER]|Yenilgileri[ENTER]%s[/DELAY][ENTER]
@@ -1377,7 +1377,7 @@
 1377	Kendi devletine piyango bileti al.[ENTER][ENTER]1. Her Lonca Savaşında, loncalarin kazanması[ENTER]halindeki kar miktarları önceden ilan edilir.[ENTER]2. Bir piyango bileti alip, tahmin sonuçlarını ve[ENTER]oyun farklarını söyleyerek, istediğin loncaya[ENTER]oynayabilirsin.[ENTER]3. Seçim işlemi piyango standında yapılır.[ENTER]Kazanıp kaybettiğin konusundaki haberi, lonca[ENTER]savaşından sonra alacaksın.[ENTER][ENTER]* Kazancının %10'u devletine gidecek.
 1378	%s vs. %s
 1379	Savaş yöneticisi:
-1380	 ile
+1380	ile
 1381	Şu an lonca savaşı yok, bahis oynayamazsın.
 1382	Hangi lonca için piyango bileti almak istiyorsun?
 1383	Listeye göre piyango bileti aldin bile. Her lonca[ENTER]için yanliz bir bilet alabilirsin.
@@ -1446,12 +1446,12 @@
 1446	Kendini boşuna tehlikeye atmış olmayacaksın![ENTER]Pirinç patlaklarını Wonda-Rim'e götür. O seni[ENTER]mükafatlandıracak. Ona ne kadar çok pirinç[ENTER]patlağı götürürsen, o kadar değerli bir ödül[ENTER]alırsın.
 1447	Tüm stoklarımızı bize geri getirdin! Sana[ENTER]inanılmaz minnettarız. Sen olmasaydın büyük[ENTER]sıkıntı çekecektik.
 1448	Stoklarımızın büyük bir kısmı halâ eksik.[ENTER]Bize yardım etmeye devam edecek misin?
-1449	Elbette.
+1449	Elbette!
 1450	Daha sonra yardım ederim.
 1451	Seni burada bekleyeceğim.
 1452	Görev: %s[ENTER]Bu görevi toplam on kere kabul edebilirsin.
 1453	Sen olmasaydın mahvolmuştuk. Bize yardım etmeye[ENTER]devam edecek misin? Stoklarımızın büyük bir kısmı[ENTER]halâ başkalarının elinde.
-1454	Devam edeceğim.
+1454	Devam edeceğim!
 1455	Daha sonra gelirim yine.
 1456	Cesur bir savaşçısın. Devam et![ENTER][ENTER]Görev: %s[ENTER]Bu görevi toplam on kere kabul edebilirsin.
 1457	Cehennem Köpeği
@@ -1475,7 +1475,7 @@
 1475	Sen yokken köyümüz yine yağmalandı!
 1476	Cehennem Deniz Anası
 1477	Zombi
-1478	Alev savaşçılar
+1478	Alev Savaşçı
 1479	Kurbağa Generali
 1480	Karanlık Haberci
 1481	Mistik Arahan Savaşçısı
@@ -1714,7 +1714,7 @@
 1714	Bunu tekrar söylemek istemiyorum. Eğer atını[ENTER]sürmek istiyorsan at resmine ihtiyacın olacak.
 1715	Eger bir zırhlı at kitabin olursa, rakiplerine at[ENTER]üzerinden saldirabilirsin.[ENTER]Senin savas tecrübeni ve binicilik becerini test[ENTER]edecegim..[ENTER]Çöle git ve bir kaç Akrep Okçusu öldür.. Oraya[ENTER]grubunla gidebilirsin, fakat SEN grup lideri[ENTER]olmak zorundasin.
 1716	Tamam, daha sonra gel.
-1717	Bilinmeyen Fonksiyon [%s]
+1717	BİLİNMEYEN BUTON [%s]
 1718	Sanirim zırhlı kitabi alamazsin.[ENTER]Bu garip.. Ne için oldugunu bilmiyorum.. Ne[ENTER]oldugunu Game Master'a sormalisin.
 1719	Zırhlı at kitabını alabilmen için gereken görevi[ENTER]yapmalısın.[ENTER]Göreve katılabilmek için At madalyonuna ihtiyacın[ENTER]var, onu maymun zindanından bulabilirsin.
 1720	Kalan Okçu
@@ -1734,7 +1734,7 @@
 1734	Tamam. Bir sonrakine iyi şanslar.
 1735	Ölü bir atı geliştiremezsin! Atını canlandırmamız[ENTER]için git ve gerekli bitkileri getir. Daha sonra[ENTER]atını geliştirme işine bakabiliriz.
 1736	Sınavı geçmek istiyorsan buralarda fazla[ENTER]oyalanamamalısın! Git ve Şeytan Okçuları öldür!
-1737	Bilinmeyen Fonksiyon [%s]
+1737	BİLİNMEYEN BUTON [%s]
 1738	Seyise geri dön
 1739	Seyise sınav sonucunu ilet
 1740	Yetenek sınavı durumu
@@ -1809,27 +1809,27 @@
 1809	 %s öldür
 1810	Tamam! Hadi başla!
 1811	Du hast die Herausforderung angenommen zu töten
-1812	 %s öldür
+1812	%s öldür
 1813	Momentan müssen noch getötet werden um den Jagdauftrag abzuschließen
-1814	 tane daha öldürmen gereken:
+1814	tane daha öldürmen gereken:
 1815	Avlanma görevi hakkında bilgi
-1816	Hedefi öldür!
+1816	![ENTER]Hedefi öldür!
 1817	Öldürmen gereken: %s
 1818	show_mob_pos: map_index(%s) < 0
 1819	show_mob_pos: map_index(%s)
 1820	show_mob_pos: special.lvq_map[map_index(%s)] is nil
 1821	addmapsignal(%s,%s)
 1822	Kalan
-1823	Hedefi öldür!
+1823	![ENTER]Hedefi öldür! :---LOCA::SPACE--
 1824	Hedef sayısı
 1825	Ödül: %s %% oranında tecrübe
-1826	Deneyim
+1826	% oranında tecrübe
 1827	Görev tamamlandı.
 1828	Görev:
 1829	Görev tamamlandı.
 1830	Harika, verilen görevi bitirdin.
 1831	Seviye
-1832	 eşya
+1832	eşya
 1833	Deneyim
 1834	%s kazandın
 1835	Ödül:
@@ -1838,7 +1838,7 @@
 1838	Ariyoung'a geri dön.
 1839	Köye dön ve Ariyoung'a eşinin hatırasını[ENTER]bulamadığını söyle.
 1840	Ariyoung'u ziyaret et.
-1841	Ariyoung'a git
+1841	Ariyoung'a git.
 1842	Ariyoung'a git ve eşinin ölümünden bahset.
 1843	Siyah Rüzgar Çetesinin liderini öldür.
 1844	Siyah Rüzgar Çetesinin liderini öldür.
@@ -1932,11 +1932,11 @@
 1932	Altın baltayı oduncu Deokbae'ye götür.
 1933	Altın baltayı oduncu Deokbae'ye götür ve ödülünü[ENTER]al.
 1934	Yardımı olmadan, baltamı tekrar bulmam[ENTER]imkansızdı. Onu kaybetmek benim herşeyimi[ENTER]kaybetmemle aynı şey. Ama bu kahraman onlarla[ENTER]savaşa girdi ve kazanarak baltamı geri getirdi![ENTER]Şimdi, baltamı gece-gündüz yanımda taşıyorum.
-1935	Gir
+1935	Gir.
 1936	Şeytan Kulesinin içine...
 1937	Bu kule şeytanlarla dolu. Sadece en güçlü kişi ne[ENTER]üst katına ulaşabilir. Söylenenlere göre daha[ENTER]hiçkimse oraya çıkmayı başaramamış. Deneyenler[ENTER]ise canlı dönmemişler. Hala girmeyi düşünüyor[ENTER]musun?
 1938	Bu kule şeytanlarla doludur. Sadece en güçlü kişi[ENTER]onun en üst katına çıkabilir. Söylenenlere göre[ENTER]daha hiçkimse oraya çıkmayı başaramamış,[ENTER]deneyenler ise ölmüş. Oraya seviye 40'tan önce[ENTER]giremezsin.
-1939	Girme
+1939	Girme.
 1940	Yok et
 1941	Junjeh Krallığı
 1942	Shinsoo krallığı
@@ -1960,22 +1960,22 @@
 1960	Şimdiye kadar kapalı olan bu kapı artık açıldı.[ENTER]Hadi kutsal topraklara girelim! Onları[ENTER]kuşatacağız![ENTER]Kısa bir süre içinde herkes kutsal topraklara[ENTER]transfer edilecek.
 1961	İmparatorluk savaşına katılma kuralları:[ENTER]1. Burada ölen herkes şehre tekrar transfer[ENTER]edilir ama Savş Sorumlusu onları hemen buraya[ENTER]geri gönderebilir.[ENTER]2. Bir defa kapılar açıldı mı, bu bölge kapatılır.3. Kutsal topraklara girebilmek için uyumlu[ENTER]anahtarın bulunması gerekir.
 1962	Savaş kuralları:[ENTER]1. Diğer krallıklara karşı en az zafer kazanan[ENTER]kralıklar önce elenir.[ENTER]2. Canavarlar görünmeye başlayacak. Belli sayıda[ENTER]canavarı ilk öldüren krallık kazanır.[ENTER]3. Bundan sonra eğer dokuz kuyruk öldürülürse,[ENTER]savaş biter.[ENTER]4. Savaş sırasında hiçbir eşya alınamaz.[ENTER]5. Kim burada 3 kere ölürse, şehrine ışınlanır ve[ENTER]Krallık Savaşından elenir.
-1963	Kader senin yüzüne gülümsüyor! Enerjinin vücuduna[ENTER]akışını hisset! Bugün çok şanslı günündesin![ENTER]Bu kadar uyum sayesinde bugün çok güzel şeyler[ENTER]yaşanacak!
+1963	Kader senin yüzüne gülümsüyor! Enerjinin vücuduna[ENTER]akışını hisset! Bugün "çok şanslı" günündesin![ENTER]Bu kadar uyum sayesinde bugün çok güzel şeyler[ENTER]yaşanacak!
 1964	Çok şanslı!
-1965	Bu iyi. Ne demişler? Ne ekersen onu biçersin.[ENTER]Bugün pek şanslı günündesin! Senin adına[ENTER]sevindim. Bugün biraz çabayla bile daha fazla[ENTER]şeyler kazanacaksın!
+1965	Bu iyi. Ne demişler? Ne ekersen onu biçersin.[ENTER]Bugün "pek şanslı" günündesin! Senin adına[ENTER]sevindim. Bugün biraz çabayla bile daha fazla[ENTER]şeyler kazanacaksın!
 1966	Pek şanslı!
-1967	Bu fena değil. Bugün biraz şanslı günündesin.[ENTER]Günün normalden biraz daha iyi geçecek ama çok[ENTER]büyük şeyler bekleme!
+1967	Bu fena değil. Bugün "biraz şanslı" günündesin.[ENTER]Günün normalden biraz daha iyi geçecek ama çok[ENTER]büyük şeyler bekleme!
 1968	Biraz şanslı.
-1969	İyi birşey yok, ancak kötü birşey de yok! Bugün[ENTER]normal şanslı günüdesin. Bir şey kazanacağın[ENTER]söylenemez ama bu talihsiz olmaktan daha iyidir.[ENTER]Normal günler küçümsenemez, git ve keyfini çıkar!
+1969	İyi birşey yok, ancak kötü birşey de yok! Bugün[ENTER]"normal şanslı" günüdesin. Bir şey kazanacağın[ENTER]söylenemez ama bu talihsiz olmaktan daha iyidir.[ENTER]Normal günler küçümsenemez, git ve keyfini çıkar!
 1970	Normal şanslı.
-1971	Bugün şanslı gününde değilsin. Bugün her zamanki[ENTER]gibi ağını hesaplı bir şekilde atsan da çok balık[ENTER]tutamayacaksın. Diğer taraftan çok da fazla açlık[ENTER]çekmeyeceksin. Bugün sadece birazcık şanssız[ENTER]günündesin o kadar! Ama hazırlıklı olmanda fayda[ENTER]var. Eğer dilersen sana bir tılsım satabilirim.[ENTER]Bu senin kötü şansını döndürür. Bir tılsım ister[ENTER]misin?
+1971	Bugün şanslı gününde değilsin. Bugün her zamanki[ENTER]gibi ağını hesaplı bir şekilde atsan da çok balık[ENTER]tutamayacaksın. Diğer taraftan çok da fazla açlık[ENTER]çekmeyeceksin. Bugün sadece "birazcık şanssız"[ENTER]günündesin o kadar! Ama hazırlıklı olmanda fayda[ENTER]var. Eğer dilersen sana bir tılsım satabilirim.[ENTER]Bu senin kötü şansını döndürür. Bir tılsım ister[ENTER]misin?
 1972	Birazcık şanssız.
-1973	Bugün berbat bir gün. Bugün elinden gelenin en[ENTER]iyisini bile yapsan hiçbir şey kazanamazsın.[ENTER]Bugün şanssız günündesin ve nerede olursan ol,[ENTER]ne yaparsan yap, gözün kulağın açık olmalı.[ENTER]İstersen yardımcı olmak için sana bir tılsım[ENTER]satabilirim. Tılsım kötü şansını döndürür. Bir[ENTER]tılsım ister misin?
+1973	Bugün berbat bir gün. Bugün elinden gelenin en[ENTER]iyisini bile yapsan hiçbir şey kazanamazsın.[ENTER]Bugün "şanssız" günündesin ve nerede olursan ol,[ENTER]ne yaparsan yap, gözün kulağın açık olmalı.[ENTER]İstersen yardımcı olmak için sana bir tılsım[ENTER]satabilirim. Tılsım kötü şansını döndürür. Bir[ENTER]tılsım ister misin?
 1974	Şanssız.
-1975	Bugün hayatındaki en kötü günlerden biri.[ENTER]Tanrılar sana arkasını dönmüş. Bugün hiçbir işin[ENTER]yolunda gitmeyecek. Ateş yakmak istesen, yağmur[ENTER]yağacak. Susasan, güneş seni yakacak. Herkesten[ENTER]çok daha fazla çalışacaksın ama sana birşey[ENTER]kazandırmayacak. Bugün inanılmaz şanssız[ENTER]günündesin ve çekeceğin var! Tılsım kullanmazsan[ENTER]zor bir gün geçirebilirsin. Satın almak ister[ENTER]misin?
+1975	Bugün hayatındaki en kötü günlerden biri.[ENTER]Tanrılar sana arkasını dönmüş. Bugün hiçbir işin[ENTER]yolunda gitmeyecek. Ateş yakmak istesen, yağmur[ENTER]yağacak. Susasan, güneş seni yakacak. Herkesten[ENTER]çok daha fazla çalışacaksın ama sana birşey[ENTER]kazandırmayacak. Bugün "inanılmaz şanssız"[ENTER]günündesin ve çekeceğin var! Tılsım kullanmazsan[ENTER]zor bir gün geçirebilirsin. Satın almak ister[ENTER]misin?
 1976	İnanılmaz şanssız.
-1977	Üç yönlü kesme
-1978	Kılıç darbesi
+1977	Üç Yönlü Kesme
+1978	Kılıç Darbesi
 1979	Suikast
 1980	Hızlı saldırı
 1981	Bıçak çevirme
@@ -1985,15 +1985,15 @@
 1985	Ok Yağmuru
 1986	Ateşli ok
 1987	Hafif Adım
-1988	Kılıç çevirme
+1988	Kılıç Çevirme
 1989	Zehirli Ok
-1990	Parmak darbesi
-1991	Ejderha dönüşü
+1990	Parmak Darbesi
+1991	Ejderha Dönüşü
 1992	Büyülü Keskinlik
 1993	Dehşet
 1994	Büyülü zırh
 1995	Büyü Çözme
-1996	Karanlık vuruş
+1996	Karanlık Vuruş
 1997	Ateş Vuruş
 1998	Ateş hayaleti
 1999	Öfke
@@ -2001,7 +2001,7 @@
 2001	Hayalet vuruş
 2002	Karanlık Taş
 2003	Uçan tılsım
-2004	Ejderha atışı
+2004	Ejderha darbesi
 2005	Ejderha Kükremesi
 2006	Kutsama
 2007	Yansıtma
@@ -2058,7 +2058,7 @@
 2058	Peki o zaman.[ENTER][ENTER]Seni loncadan alıyorum.
 2059	Evet
 2060	Senin loncanın seviyesindeki loncaların sonuçları:[DELAY value;0]
-2061	  |Lonca adı |Puanlar |Zaferler[ENTER]|Beraberlikler |Yenilgiler
+2061	|Lonca adı |Puanlar |Zaferler |Beraberlikler[ENTER]|Yenilgiler
 2062	1 ile 10 arasında yer alan savaş sonuçları:[ENTER][DELAY value;0]
 2063	Senin loncanın sırası
 2064	, tablo sonuçları ise
@@ -2085,13 +2085,13 @@
 2085	Malzemeleri Baek-Go'ya götür
 2086	İlacın malzemelerini al ve Baek-Go'ya götür.
 2087	Baek-Go'ya geri dön, ona akrep kuyruğunu ver ve[ENTER]Yu-Rang için ilaç yaptır.
-2088	Huahn-So'yu bul.
+2088	Huahn-So'yu bul
 2089	Huahn-So'yu bul.
 2090	Huahn-So'ya git ve hikayesini dinle.
 2091	Huahn-So'ya geri dön
 2092	Huahn-So'ya başarını haber ver.
 2093	Huahn-So'ya başarını haber ver ve ödülünü al.
-2094	Huahn-So
+2094	Huahn-So:
 2095	Eşya düşürme oran yüzdesi
 2096	Seviye
 2097	Seviye atlamak için yap
@@ -2107,9 +2107,9 @@
 2107	Rastgele eşya
 2108	seviye göreviyle ilgili direkt ödül verildi.
 2109	Kalan Sayı
-2110	Öldürüldü
+2110	öldürüldü!
 2111	Hedef sayısı
-2112	Hedefi öldür!
+2112	![ENTER]Hedefi öldür!
 2113	Öldürüldü
 2114	!
 2115	Pirinçli köfte nasıl yapılıyor?
@@ -2134,7 +2134,7 @@
 2134	Zor Maymun zindanı girişi
 2135	1. Kolay maymun zindanına girdiğin zaman, kaya[ENTER]maymunu 20 dakika içinde öldürmelisin.[ENTER]2. Normal maymun zindanındayken şehre veya başka[ENTER]yere dönebilmek için herhangi bir parşömen[ENTER]kullanamazsın.[ENTER]Bu kurallara uymayan çok kişi geri dönemedi ve[ENTER]maymuna dönüştürüldü, bu sebeple dikkatli olmanda[ENTER]fayda var.
 2136	Girme
-2137	Kalan süre
+2137	Kalan süre:
 2138	Maymun zindanı
 2139	Hehe, herkes ölecek! Kyaaa!
 2140	Isırık, ısırık, ısırık, ısırık!
@@ -2822,7 +2822,7 @@
 2822	Ahhh, eveeet!
 2823	İzin ver de hastalığı sana da geçireyim!
 2824	İnat, bu gizemli hastalığın en büyük sebebi!
-2825	 = Gereken eşya.
+2825	= Gereken eşya.
 2826	Oraya henüz ben bile gitmedim, sen gidemezsin.
 2827	Işınlan
 2828	Merhaba! Buradan diğer yerlere nasıl gideceğini[ENTER]biliyorum. Eğer bana biraz Yang verirsen, seni[ENTER]gitmek istediğin yere ışınlayabilirim.
@@ -2843,7 +2843,7 @@
 2843	Yaşlı korsana ilacı alamadığını söyle.
 2844	Yaşı korsana dön.
 2845	İlacı bulamadım! Yaşlı korsana ne söyleyeceğim?
-2846	İlacı yaşlı korsana götür.
+2846	İlacı Yaşlı Korsana götür
 2847	İlacı yaşlı korsana götür.
 2848	İlacı yaşlı korsana götür ve ödülünü al.
 2849	İlacı aldım.
@@ -2887,7 +2887,7 @@
 2887	Yaşlı korsan:[ENTER]Lanet olsun, benden ne istiyorsun? Saçmalık![ENTER]Satıcı sana hakkımda bir sürü şey anlattı değil[ENTER]mi?[ENTER]Evet, söylediklerinin hepsi doğru. Ama doktora[ENTER]gidecek vaktim yok. Çok fazla düşmanım var!
 2888	Yaşlı korsan: Bu alçaklardan hangisinin birden[ENTER]karşına çıkıp seni bıçaklayacağını anlamak[ENTER]imkansız! Ama şu kaşıntılar çok korkunç olmaya[ENTER]başladı; daha fazla dayanamıyorum! Ne oldu,[ENTER]doktora gidip ilacı alabildin mi? Eğer aldıysan[ENTER]sana ödülünü vereceğim.
 2889	Yaşlı korsan:[ENTER]Başka biri bana ilacı getirdi. Eh, bu sana ödül[ENTER]yok demek!
-2890	Yaşlı korsana git.
+2890	Yaşlı Korsan'a git
 2891	Yaşlı korsana git.
 2892	Yaşlı korsana git ve neden doktora gitmediğini[ENTER]sor.
 2893	Yaşlı korsan:[ENTER]Herşey el yakıyor! Bu adama kendimi çarptırmam![ENTER]Bir ara midem rahatsızlandığı için gitmiştim ve[ENTER]bana uyguladığı tedaviden sonra bütün vücudum[ENTER]kızarıklıklar içinde kaldı! Hala yaşadığıma[ENTER]şükretmeliyim!
@@ -3041,7 +3041,7 @@
 3041	Alevleri İncele
 3042	40 Alev öldür
 3043	Alev canavarları inanılmaz derecede acımasızlar.[ENTER]İnsanların derilerini yüzerek acı çektirmekten[ENTER]zevk alıyorlar. Onları nasıl öldüreceğimizi hala[ENTER]bilmiyoruz. Gidip nasıl öldürebileceğimizi öğren.
-3044	Alev savaşçılar
+3044	Alev Savaşçı
 3045	60 alev savaşçı öldür
 3046	Çok geçmişte değil, bir asilzadenin oğlu[ENTER]doyyumhwaji'ye gitmişti ve bir alev savaşçı[ENTER]tarafından öldürüldü. Eğer alev savaşçılarıı[ENTER]öldürürsen ödüllendirileceksin. Neden[ENTER]denemiyorsun?
 3047	Hayalet ağaçları araştır
@@ -3126,7 +3126,7 @@
 3126	Yabaniler sınırlarımızı geçip şehirlerimize[ENTER]saldırmaya başladıklarından beri çok sorun[ENTER]yaşıyoruz. Öldürdükleri insanların sayısı yüzleri[ENTER]geçti.[ENTER]Şeytani yabaniler çok acımasızlar ve onlara[ENTER]saldırabilecek kadar yürekli kimse yok. Ancak[ENTER]bunu daha fazla tölere edemeyiz.[ENTER]25 tane yabani şefini öldür. Eğer başarırsan[ENTER]alacağın ödül:
 3127	Ödül
 3128	Görevlerin deneme aşamalarında ödül kazanılamaz.[ENTER]Bir görevin ödülü bir defa alındığında o görev[ENTER]tekrar yapılabilir.
-3129	Görev:
+3129	Görev
 3130	Hangi ok Metin2'de mevcut değildir?
 3131	Tahta ok
 3132	Demir ok
@@ -3182,8 +3182,8 @@
 3182	Master
 3183	2
 3184	Hangisi bedensel savaş eğitiminin yetenekleri[ENTER]arasında DEĞİLDİR?
-3185	Üç yönlü kesme
-3186	Kılıç çevirme
+3185	Üç Yönlü Kesme
+3186	Kılıç Çevirme
 3187	Koşma
 3188	Aura des Schwerts
 3189	3
@@ -3196,7 +3196,7 @@
 3196	Hangisi zihinsel savaş eğitiminin yeteneklerinden[ENTER]biri DEĞİLDİR?
 3197	Şiddetli vuruş
 3198	Güçlü beden
-3199	Kılıç darbesi
+3199	Kılıç Darbesi
 3200	Açısal vuruş
 3201	4
 3202	Hangisi uzak dövüş eğitiminin yeteneklerinden[ENTER]biri DEĞİLDİR?
@@ -3260,9 +3260,9 @@
 3260	Chunjo krallığı
 3261	2
 3262	Hangisi kara büyü eğitimine ait bir yetenektir?
-3263	Parmak darbesi
-3264	Ejderha dönüşü
-3265	Karanlık vuruş
+3263	Parmak Darbesi
+3264	Ejderha Dönüşü
+3265	Karanlık Vuruş
 3266	Büyülü zırh
 3267	3
 3268	Hangisi Metin2'deki ikinci şehir değildir?
@@ -3285,7 +3285,7 @@
 3285	3
 3286	Hangisi Ejderha gücü öğretisine ait bir yetenek[ENTER]değildir?
 3287	Yerleştirme
-3288	Ejderha atışı
+3288	Ejderha darbesi
 3289	Uçan tılsım
 3290	Kutsama
 3291	1
@@ -3434,9 +3434,9 @@
 3434	Paslı Bıçak
 3435	4
 3436	Gümüş kılıcı geliştirmek için, ne zaman Yang[ENTER]dışında bir eşya daha gerekir?
-3437	+5'e geliştirirken
-3438	+5'e geliştirirken
-3439	+5'e geliştirirken
+3437	+1'e geliştirirken
+3438	+2'ye geliştirirken
+3439	+4'e geliştirirken
 3440	+5'e geliştirirken
 3441	4
 3442	Sıralama puanı negatif ise bir Karaktere hangi[ENTER]sıfat verilir?
@@ -3543,7 +3543,7 @@
 3543	4
 3544	Hangisi en iyi çift-el silahıdır?
 3545	Elektromanyetik pala
-3546	Dev balta +0
+3546	Dev balta
 3547	Giyotin pala
 3548	Kılıç
 3549	1
@@ -3582,7 +3582,7 @@
 3582	Seyyar satıcı:[ENTER]Lütfen bana yardım et. Eğer şeytan şamanında[ENTER]şeytan mücevheri+'yı alırsan seni ödüllendiririm.
 3583	Seyyar satıcı:[ENTER]Başka biri onu benim için getirdi.[ENTER]Artık bu işi önemsemene gerek yok.
 3584	Seyyar satıcıya dön.
-3585	Seyyar satıcıya git
+3585	Seyyar satıcıya dön.
 3586	Seyyar satıcıya dön ve şeytan mücevherini sor.
 3587	Seyyar satıcının mektubu:[ENTER]Daha fazla ne yapılır bilmiyorum.[ENTER]Şeytan mücevherim çalındığından beri yıkıldım.[ENTER]Elimdeki herşeyi o mücevherin bedeli olarak[ENTER]ödemiştim çünkü.[ENTER]Bana yardım edebilir misin lütfen?
 3588	Seyyar satıcı:[ENTER]İyi iş! Çok etkilendim! Bu gerçekten çok harika!
@@ -3647,7 +3647,7 @@
 3647	Gümüş ve Altın külçe al
 3648	Belki de belediye başkanı bunu yapmak[ENTER]istemiyordur.
 3649	Depoyu genişlet
-3650	 : Bende onlardan 30 tane var,[ENTER]bunları O'na götüreceğim.
+3650	: Bende onlardan 30 tane var, bunları O'na[ENTER]götüreceğim.
 3651	kalan ayı safraları.
 3652	Zaman doldu. Başaramadım.
 3653	Bu neden çok zaman alıyor?[ENTER]30 dakikan doldu.[ENTER]Deponu genişletemem.
@@ -3664,7 +3664,7 @@
 3664	Sembolü aldım.
 3665	Sembol yok![ENTER]Nerde kaybetmiştin?[ENTER]Yalancılardan nefret ederim! Sembolü ara.
 3666	Yaşlı bayan seni kutsadı! Sana söylemiştim! Bir[ENTER]kahraman oldun! Ünlü olduğunda beni de[ENTER]ödüllendirmeyi unutma.[ENTER][ENTER]Eşya deponu 15 kutu daha fazla genişletiyorum.
-3667	Tekrar genişletmemi istiyor musun? Hayırsever[ENTER]gibi mi gorunuyorum?[ENTER][ENTER]Bu arada...Sende bir kahramanın yüzü var.[ENTER]Hmm...
+3667	Tekrar genişletmemi istiyor musun? Hayırsever[ENTER]gibi mi gorunuyorum?[ENTER][ENTER]Bu arada...Sende bir kahramanın yüzü var. Hmm...
 3668	Sende bir kahraman siması var. Sana bir öğüt[ENTER]vereyim. Bu öneriler listesini yaşlı bayana[ENTER]götür. O sana gerçek bir kahraman kanı taşıyıp[ENTER]taşımadığını söyleyebilir.
 3669	Yaşlı bayan beni kabul etmedi.
 3670	Bebek surat? Sana ne söyledi? hahaha! Her zamanki[ENTER]gibi inatçı.[ENTER]Neden seviyeni yükseltip tekrar gelmiyorsun?
@@ -3695,7 +3695,7 @@
 3695	Hangi altın kalıbının daha iyi olduğunu biliyor[ENTER]musun?[ENTER]Eğer dolaşırken üzerinde Yang taşıyorsan bu[ENTER]Lütfen![ENTER][ENTER]Beni öldürün! demekle aynı şey. Son zamanlar çok[ENTER]güvensiz.[ENTER][ENTER]Ben bu yüzden Yanglarımı altına çeviriyorum ve[ENTER]saklıyorum.
 3696	Depoyu kullanmak istiyor musun?[ENTER]Kullanacaksan bunun için ücret ödemelisin. Ama[ENTER]bugün iyi günümdeyim. Bu yüzden sana sadece 500[ENTER]Yang ödemen karşılığında kullandıracağım. Ucuz,[ENTER]değil mi? Hahaha!
 3697	Oh, hoşgeldin!
-3698	Hoşgeldin!
+3698	Hoşgeldin.
 3699	Pekala, geleceğin kahramanı bu mu?
 3700	Ah, hiçbir şey.
 3701	Ne? Yeterince Yang mı yok?[ENTER]Yeterli Yang'ı bulduğunda geri gel.
@@ -3704,7 +3704,7 @@
 3704	Öde
 3705	Düşürülen 10'luk Yang banknot oranı
 3706	%d gün ve %d sa.
-3707	%d sa., %d dk.
+3707	%d dakika ve %d saniye
 3708	%d dakika ve %d saniye
 3709	%d saniye
 3710	Kadın
@@ -3724,7 +3724,7 @@
 3724	Soon'u bul.
 3725	Soon'u bul. Kendisinin yeni porselen üretimindeki[ENTER]ipuçlarını dinle ve Yonah'a bildir.
 3726	Yonah'ı bul.
-3727	Çömlekçi Yonah'ı bul.
+3727	Yonah'ı bul.
 3728	Yonah'a git. Sana kısa süreli bir iş verecek.
 3729	Unggwis'teki altın dişleri topla.
 3730	Unggwis'teki altın dişleri topla.
@@ -3753,7 +3753,7 @@
 3753	Tabii ki.
 3754	Teşekkürler. Şimdi acele et!
 3755	Kale ve güneş bitkilerinin çevresinde 300 Ateş[ENTER]Diyarı Şeytanı'nın işini bitir.
-3756	Dämonenhatz
+3756	Şeytan Avı
 3757	Erledige 300 Feuerland Dämonen in der Nähe der Festung und dem Fundort der Sonnenkräuter
 3758	Korkarım yeterli sayıda Şeytan'ın işini[ENTER]bitiremedin. Ateş Diyarı'na geri dön ve savaşmaya[ENTER]devam et.
 3759	Tüm Şeytanları'n işini bitirdin. Şimdi Yak-Hwan'a[ENTER]rapor ver.
@@ -3773,11 +3773,11 @@
 3773	Tüm malzemeleri buldun! Harika, ben hemen iş[ENTER]başına geçeyim. Ayla tentürü hazır olur olmaz[ENTER]seni çağırırım.
 3774	Kara maddeyi hemen durduramazsak yakında her şey[ENTER]berbat olacak. Hadi, bana ayla tentürü için tüm[ENTER]malzemeleri getir.
 3775	Gerekli tüm malzemeleri topladın, şimdi[ENTER]Simyacı'ya geri dön.
-3776	Simyacı'yla konuş.
+3776	Simyacıyla konuş.
 3777	Kara Maddeyi Tut
 3778	Of ya... Temel taşlar çok kaba öğütüldüğü için[ENTER]demirciye şikayette bulundum. Ne mi oldu? Demirci[ENTER]alındı ve kalan temel taşlarını öğütmek[ENTER]istemiyor.[ENTER]Dikkafalı işte! Bir de sen konuşsan olmaz mı?
 3779	Tabii ki.
-3780	Danke Hier sind die Fundamentsteine Und bringe ihm diesen Korb mit Leckereien als Entschuldigung
+3780	Teşekkürler. Ona bu lezzetli yiyeceklerle dolu[ENTER]sepeti götür ve temel taşlarını ince toz haline[ENTER]getirmesi için onu ikna et.
 3781	Demirciyi yumuşat
 3782	Demirciyi yumuşat ve temel taşlarını ince toz[ENTER]haline getirmesi için onu ikna et.
 3783	Temel Taşı Tozu: 1 Adet
@@ -3813,7 +3813,7 @@
 3813	Aceleyle yazılmış birkaç kelime:
 3814	Yak-Hwan, buradan sağ çıkamayacağımı biliyorum[ENTER]ama umarın bu mektup eline geçer. Ateş Diyarı'nda[ENTER]hiçbir haritada işaretli olmayan bir Kale buldum.[ENTER]Hükümdarı güçlü bir Ateş Diyarı Şeytanı - tuhaf[ENTER]bir aura hem onu hem de tüm yardımcılarını[ENTER]sarıyor. Görünüşe bakılırsa bir şeye bekçilik[ENTER]ediyor, ama ne olduğunu bilmiyorum. Attığı[ENTER]çığlıklar kulakları sağır ediyor. Kusura bakma,[ENTER]elimden daha fazlası gelmiyor.
 3815	Bu Kale'de ne gizlendiğini öğrenmeliyiz. Bak,[ENTER]zımbalı tasmanın içinde bir baskı var. Yon-I[ENTER]Gezgini'ne danışacağım. Yardımına ihtiyaç[ENTER]duyduğunda seni çağırır.
-3816	Gravur entschlüsseln
+3816	Baskılı şifreyi çöz
 3817	Yon-I Gezgini seni arıyor. Yanına git.
 3818	Willkommen ich habe dich bereits erwartet Ich brauche etwas Hilfe dabei die Gravur in diesem Nietenhalsband zu entschlüsseln
 3819	Zımbalı tasmanın içindeki yazılar çok uzun zaman[ENTER]önce var olan antik bir kültüre ait. Bunları[ENTER]çözebilmek için Alev Kralı'nın kanına ihtiyacım[ENTER]var. Bu, damarlarında lavdan bile sıcak şekilde[ENTER]akar.
@@ -3868,7 +3868,7 @@
 3868	Haberler iyi! Kara maddenin nasıl etkisiz hale[ENTER]getirileceğini öğrendim.
 3869	Doğanın tüm güçleri bir denge halinde. Işık ve[ENTER]gölge, ateş ve su, iyi ve kötü. Kara maddenin de[ENTER]onu söndürecek bir karşılığı var: saf lumen!
 3870	Saf lumen üretmek için enerji parçalarını mong[ENTER]suyunda eritmek gerekir. 50 şişe mong suyu ve 100[ENTER]enerji parçası bulup Yu-Hwan'a götürebilir misin?[ENTER]Teşekkürler.
-3871	Anlaşıldı!
+3871	Tabii ki.
 3872	50 şişe mong suyu ve 100 enerji parçası topla,[ENTER]Yu-Hwan'a götür.
 3873	Saf Lumen
 3874	50 şişe mong suyu ve 100 enerji parçası topla,[ENTER]Yu-Hwan'a götür.
@@ -3955,7 +3955,7 @@
 3955	Yon-I Gezgini'ne halâ gitmedin mi? Razadör'ü[ENTER]nasıl yeneceksin? Hadi durma, daha ne[ENTER]bekliyorsun!
 3956	Evet, doğru. Razadör döndü ve eskisinden daha da[ENTER]huysuz. Karanlığın Köleleri'nin planlarını boşa[ENTER]çıkarmak için tek çaremiz var...
 3957	Razadör, görevini tamamlayıp Kırmızı Ejderha'yı[ENTER]kurtarana kadar rahat vermeyecek. Buna engel[ENTER]olmak için ejderhaya buraları dar edeceğiz.
-3958	Das Element des Rotdrachen ist das Feuer und Feuer bekämpft man am Besten mit Feuer Jeder Flammendämon trägt einen Magmakern in sich Beschaffe mir jeweils fünf Kerne der folgenden Monster Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral und Glut Flammenfürst
+3958	Kırmızı Ejderha'nın elementi ateş...ateşi de[ENTER]ancak ateş yener! Her Kor Ateş Şeytanı'nın[ENTER]kalbinde magmadan bir çember vardır. Bu magma[ENTER]çemberden bana beş tane getir!
 3959	Beschaffe die Magmakerne der Flammendämonen
 3960	Beschaffe jeweils fünf Magmakerne dieser Gegner Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral Glut Flammenfürst Kehre damit zu Yon I Walker zurück
 3961	Oh ja du hast schon einige gefunden Bringe noch das sollte dann reichen
@@ -4003,7 +4003,7 @@
 4003	Kırmızı Ejderha Kalesi'nde Ateş Efendisi[ENTER]Razadör'ü alt et.
 4004	Razadör bu kez senden üstün mü? Buna inanmam. Bir[ENTER]kez başardın - bu kez de başaracaksın!
 4005	Razadör yok edildi. Yak-Hwan'a rapor ver.
-4006	Ich wusste du würdest es schaffen Großartig Nun werden wir alles für die Verbannung des Rotdrachen vorbereiten Ich lasse dich rufen sobald wir bereit sind
+4006	Başarabileceğini biliyordum! Ben şimdi kovalama[ENTER]töreni için son hazırlıkları yapacağım. Her şey[ENTER]hazır olduğunda seni çağırtırım.
 4007	Verbannung des Rotdrachen
 4008	Zamanı geldi. Kırmızı Ejderha'yı kovalamak için[ENTER]her şey hazır.
 4009	Meine Männer haben bereits bereits zwei Bannkreise aufgestellt Deine Aufgabe ist es nun sie zu entzünden Wirf den Bannbeutel auf die Kreise und sie werden sich entflammen Das wird die Verbannung des Rotdrachen vollziehen
@@ -4086,7 +4086,7 @@
 4086	Her krallık Metin taşlarının başlarına açtığı[ENTER]belaları gidermeye çalışıyor, krallıkların tekrar[ENTER]birleşmesi için çalışılıyor. Sen de bunun için[ENTER]çalışacaksın! Bu aşırı önemli ve bunu unutma.
 4087	Sana ilk görevini veriyorum. Rahatla, basit bir[ENTER]görev olacak.[ENTER]İlerdeki köyde, müzisyen Yu-Hwan'ı bulacaksın.[ENTER]İnsanlar onun ordudan ayrılıp müzisyen olduğunu[ENTER]düşünürler.[ENTER]Ancak gerçekte, o bir casus. Onda benim ihtiyacım[ENTER]olan bir doküman var.[ENTER]Bana onu getirmelisin. Unutma, bu gizli bir görev.
 4088	M-tuşuna bas ve köyden nasıl çıkabileceğini gör.[ENTER]Haritada mavi nokta ile işaretlenen portal ile[ENTER]ışınlan.[ENTER]Acele et! Müzisyen Yu-Hwan elinde büyük bir[ENTER]enstrüman taşıyor.
-4089	Alfa Gri Kurtları öldür
+4089	Alfa Gri Kurtları öldür:
 4090	Yüzbaşı'nın sana verecek yeni bir görevi var.[ENTER]Git ve kendisiyle görüş.
 4091	Bu görevi tamamen bırakmak istiyor musun?
 4092	Yaptın mı? Aferin! Çok zorlanmadın umarım. Neyse,[ENTER]bir sonraki adıma geçelim.
@@ -4149,7 +4149,7 @@
 4149	Bir mektup buldun. Onu Yüzbaşı'na götür.
 4150	Beyaz Yeminli savaşçılarda bir mektup buldun.[ENTER]Belki Yüzbaşı'nın casuslarla ilgili aradığı bir[ENTER]ipucu içeriyordur.[ENTER]Bu mektubu Yüzbaşı'ya götür.
 4151	Bir kanıt mı buldun? Ver bir bakayım. Bu ilginç[ENTER]bir mektup.[ENTER]Sanırım casusun kim olduğunu ortaya çıkarmak için[ENTER]yeterli olacaktır. Sana teşekkür borçluyuz.[ENTER]Sanırım bu safhadan sonra olayla başa[ENTER]çıkabiliriz. Senin gibi bir askerimiz olduğu için[ENTER]gurur duyuyoruz! İyi çalışmalar![ENTER]Git ve biraz dinlen, kendine zaman ayır. Bunu[ENTER]teşekkürümün nişanı olarak kabul etmeni[ENTER]istiyorum.
-4152	İlk alıştırma:
+4152	İlk alıştırma
 4153	Ne yapıyorsun?
 4154	İlk alıştırma:
 4155	9 tane Yabani Köpek öldür. Onları şehir[ENTER]surlarında bulabilirsin.
@@ -4181,7 +4181,7 @@
 4181	Metin taşını yok ettin mi? Teşekkürler![ENTER]Şehir şimdi güvende! Bu taşlar nereden geldi?[ENTER]Onlar hakkında hiçbir bilgi yok. Fakat çok fazla[ENTER]soruna yol açıyorlar. Duyduğuma göre bilge Uriel[ENTER]bu taşlar hakkında incelemeler yapıyormuş. Ama[ENTER]şimdiye kadar ne keşfetti bilmiyorum. Sen çok iyi[ENTER]iş çıkardın.
 4182	Ödül:
 4183	3.300.000 Tecrübe puanı alırsın.[ENTER]270.000 Yang alırsın.[ENTER]Bir Ustalık Kitabı alırsın.
-4184	%s kazandın.
+4184	%s eşya kazandın.
 4185	Metin taşları gittikçe daha fazla zarar veriyor.[ENTER]Ülke zor durumda. Taşları yok etmeliyiz. Git ve[ENTER]Yüzbaşı'ya başvur.
 4186	Metin taşları gittikçe daha fazla zarar veriyor.[ENTER]Ülke zor durumda. Taşları yok etmeliyiz. Git ve[ENTER]Yüzbaşı'ya başvur.
 4187	Duyduğuma göre çok sıkı çalışıyormuşsun. İnsanlar[ENTER]iyi işler çıkardığını söylüyorlar. Çok yetenekli[ENTER]olduğunu biliyorum.[ENTER]Metin taşları çoğalıyor, bu çok büyük bir[ENTER]sorunumuz olduğu anlamına gelir.
@@ -4766,7 +4766,7 @@
 4766	Mini Harita'daki yanıp sönen noktayı takip et.
 4767	(Kalan: %s %s, %s %s)
 4768	Das Item bekommst du in kills
-4769	%s: %d tane
+4769	%s : %d adet
 4770	Seviye 91'e ulaştığın anda macera devam edecek.
 4771	Durum Raporu
 4772	Adaya bir göz gedir ve Amiral Angmur'a rapor ver.
@@ -4821,7 +4821,7 @@
 4821	İkinci sayfayı buldun. Bunu Amiral Angmur'a götür.
 4822	Harika, işte şimdi mesajdaki şifreleri[ENTER]çözebiliriz: Hm, burada ormanın derinliklerinde[ENTER]yaşayan bir ejderhadan bahsediliyor. Bir de[ENTER]uyanmasını hatta koşmasını sağlayan bir de yöntem[ENTER]anlatılıyor.[ENTER]Eyvah eyvah, kulağa pek hoş gelmiyor.
 4823	Görünüşe bakılırsa Mantikorlar ve Kızılhırsızlar[ENTER]da mektup almış. Konu hakkında bilgi edineceğim,[ENTER]sonra seni çağırtırırım.
-4824	Amiral Angmur'un sana vermek istediği bir görev[ENTER]var.
+4824	Amiral Angmur sana bir görev vermek istiyor.
 4825	Mantikorlar
 4826	Amiral Angmur sana yeni bir görev vermek istiyor.
 4827	İyi ki buradasın! Mantikorlar hakkında[ENTER]bildiklerimiz eskidi artık. Silahlı kuvvetleri şu[ENTER]an ne kadar güçlü, bunu öğrenmeliyiz.
@@ -4856,7 +4856,7 @@
 4856	Amiral Angmur senden yardım istiyor. Ne[ENTER]istediğine bir bak bakalım.
 4857	İnşaatı tamamlamak için kiremite ihtiyacımız var.[ENTER]Mantikorlar bunları altın gibi saklıyor. Sanırım[ENTER]100 tane yeter. Yardımın karşılığında cömertçe[ENTER]ödüllendirileceksin.
 4858	Mantikor Mektubu
-4859	Amiral Angmur'un sana vermek istediği bir görev[ENTER]var.
+4859	Amiral Angmur sana bir görev vermek istiyor.
 4860	Eh, Karanlığın Köleleri'nin entrikalarıyla[ENTER]ilgilenmesinin vakti geldi. Mantikorlara ve[ENTER]Kızılhırsızlara gönderdikleri tüm mektupları ele[ENTER]geçirmeliyiz. Öncelikle Mantikorları ziyaret et.
 4861	Tamam.
 4862	General Kor mektubu Martyaxwar'a götürmek için[ENTER]yola koyuldu. Bu mektubu vermesine engel[ENTER]olmalsın.
@@ -4900,7 +4900,7 @@
 4900	Mantikor mektubunun şifresi çözüldü
 4901	Yon-I Gezgini seni arıyor. Yanına git ve mektubu[ENTER]çözüp çözemediğini öğren.
 4902	*fısıl fısıl* ... Ah, geldin mi! Yardımın[ENTER]sayesinde mesajın büyük bir kısmını çözdüm. Ama[ENTER]son kısmında tıkandım.[ENTER]Senden bir daha yardım istemek zorundayım. Acilen[ENTER]kabuk tozuna ihtiyacım var. Bunu Kabuk[ENTER]Kabilesi'ndeki General Istakoz veya Kral[ENTER]Yengeç'te bulabilirsin.
-4903	Kabuk Tozu
+4903	Kabuk tozu mu?
 4904	Evet, bu sadece Kabuk Kabilesi'nde bulunur. Bu[ENTER]tozun birazı bile ölümcüldür! Üç doz işimi görür.[ENTER]Başarılar.
 4905	Hemen yola çıkıyorum.
 4906	Kabuk Tozu
@@ -5158,7 +5158,7 @@
 5158	Amiral Angmur seninle bu kara altın hakkında[ENTER]konuşmak istiyor.
 5159	Simyacı bu kara altını inceleyemedi. Parça çok[ENTER]küçük. Hangi özelliklere sahip olduğunu ve[ENTER]Karanlığın Köleleri'nin bunu neden istediğini[ENTER]mutlaka öğrenmeliyiz! Yıldırım Dağları'na geri[ENTER]dönüp kara altından birkaç numune daha[ENTER]getirebilir misin?
 5160	Önce Simyacı'ya git, o sana kaç numuneye ihtiyacı[ENTER]olduğunu söyler.
-5161	Simyacı'yla konuş.
+5161	Simyacıyla konuş.
 5162	Selam. Angmur seni görevin konusunda[ENTER]bilgilendirdi mi?
 5163	Evet. Kara altından kaç numuneye ihtiyacın var?
 5164	Hm, dur bir düşüneyim. İnceleme için %d numune[ENTER]yeter sanırım.
@@ -5341,7 +5341,7 @@
 5341	Amiral Angmur'un yardımına ihtiyacı var!
 5342	İyiki buradasın. Kara Ölüm Tugayı'nın lideri[ENTER]Skeletos ölmedi. Adamlarım üsse hücüm edecekleri[ENTER]sırada onların üzerlerine saldırdı. Kimse onu[ENTER]ezip geçemiyor.
 5343	Sen onu daha önce de yenmiştin. Lütfen Gautama[ENTER]Uçurumu'ndaki admalarıma yardım et! Skeletos'a[ENTER]gününü göster. Ardından üsse hücüm et ve Tapınak[ENTER]Kölesi Yah-Ki'yi yok et.
-5344	Anlaşıldı.
+5344	Anlaşıldı!
 5345	Yah-Ki'yi yok et
 5346	Tapınak Kölesi Yah-Ki'yi mağlup et ve ölüler[ENTER]ordusunu çağırmasına engel ol.
 5347	Karar günü geldi. Biz düşersek, bütün dünya düşer.Eğer zafere ulaşırsak, kahramanlıklarımız[ENTER]yüzyıllar boyunca şarkılara dökülecek. Karanlığın[ENTER]Köleleri'ni durdur. Yah-Ki'yi yok et!
@@ -5488,13 +5488,13 @@
 5488	Evlenmek istiyorsan gelinlik giymelisin.
 5489	Sevgin, tek başına bir düğün için yeterli olamaz,[ENTER]bir miktar Yang'a ihtiyacın olacak. Şu anda[ENTER]yeterince Yang'ın yok. En az 1 milyon yang[ENTER]biriktirdiğinde, senin için düğün planı yapmaktan[ENTER]mutluluk duyacağım.
 5490	1 milyon Yang'a ihtiyacın var.
-5491	Artık yeterince olgunlaştın ve kararlı[ENTER]görünüyorsun. Kiminle evlenmek[ENTER]istiyorsun?
+5491	Artık yeterince olgunlaştın ve kararlı[ENTER]görünüyorsun. Kiminle evlenmek istiyorsun?
 5492	Lütfen evlenmek istediğin kişinin ismini belirt.
 5493	Çok heyecanlı olduğundan mı ismi yazamıyorsun?[ENTER]Tekrar dene.
 5494	İsmi bilmiyor musun... Evlenmek istediğinden emin[ENTER]misin?
 5495	%s şu an online değil.
 5496	Şu anda başka bir nikah yapılıyor. Biraz bekle ya[ENTER]da daha sonra gel!
-5497	Partnerin yanında olmalı ki töreni[ENTER]düzenleyebileyim. Lütfen partnerini buraya[ENTER]getir.
+5497	Partnerin yanında olmalı ki töreni[ENTER]düzenleyebileyim. Lütfen partnerini buraya getir.
 5498	%s çok uzakta.
 5499	Kendi adın değil, partnerinin adı.
 5500	Partnerinin adını yaz.
@@ -5593,7 +5593,7 @@
 5593	Hayır olamaz. Bir hata yaptım. Üzgünüm. Maalesef[ENTER]kazmanın seviyesi düştü.
 5594	Anahtarla sandığı açmak ister misin?
 5595	Evet, sandığı aç
-5596	Hayır, şimdi değil.
+5596	Hayır, şimdi değil
 5597	Esrarengiz Yakut Sandığı'nı açmak için ya yakut[ENTER]anahtar yada elmas anahtar lâzım.
 5598	Merhaba!
 5599	Yaşlı adam:
@@ -5624,7 +5624,7 @@
 5624	Sana çorap getiririm!
 5625	Bana en az 5 çorap getirirsen bir ödül[ENTER]kazanırsın. Iğğ giyilmiş çorapların kokusuna[ENTER]tahammül etmek çok zor! Yeterince topladığında[ENTER]tekrar gel. İyi Noeller!
 5626	Ho ho ho, yeterince çorap topladın.[ENTER]Öyleyse bir bakayım.[ENTER]Öğğ bu koku … Bunlar doğru çoraplar![ENTER]Mutlu Noeller!
-5627	 - Ren Geyiği Yavrusu
+5627	Ren Geyiği Yavrusu
 5628	Bugün benden bir Ren Geyiği Yavrusu Mührü aldın[ENTER]zaten. Korkarım bu küçük Ren Geyiği Yavrusu'nun[ENTER]önce küçük bir molaya ihtiyacı var. Ancak yarın[ENTER]aramaya devam edebilir. Eğer o kadar beklemek[ENTER]istemiyorsun aşağıda dönen paranın arkasına bak -[ENTER]orada bir Ren Geyiği Yavrusu daha olduğunu[ENTER]duydum. Ama beni yarın bir kez daha ziyaret[ENTER]etmene de çok sevinirim!
 5629	Çoraplarını bugün bana getirdin bile. Sadece 24[ENTER]saatte bir çorap teslim edebileceğini unutma.
 5630	Wonda-Rim:
@@ -5678,7 +5678,7 @@
 5678	40.000 tecrübe puanı kazandın.[ENTER]10.000 Yang kazandın.[ENTER]Bir Beceri Kitabı kazandın.
 5679	Yang-Shin:
 5680	Yang-Shin:
-5681	Gardiyan:
+5681	Köy Gardiyanı
 5682	Köy Gardiyanı'nında sana göre bir iş var. O'na[ENTER]bir uğrayıp ne işiymiş öğren.
 5683	Hasta Kardeş
 5684	Hasta Muhafız
@@ -5737,7 +5737,7 @@
 5737	Kaçak
 5738	Avcı Yang-Shin ava çıkılacak iyi bir yer bulmakta[ENTER]zorlanıyor. O'na uğra ve bir yardımın olur mu[ENTER]diye bak bakalım.
 5739	Metin taşları ortaya çıktığından beri, hiç bir[ENTER]şey eskisi gibi değil. Yabani hayvanlar da[ENTER]neredeyse kuduz gibi davrandıklarından pek çok[ENTER]yerde ava çıkmak imkansız oldu. Ama dışarıda,[ENTER]vahşi bir yerlerde gezgin Nakajima yaşıyor[ENTER]olmalı. Nerede ava çıkılacağını biliyordur kesin.[ENTER]O'nu bulup sorar mısın?
-5740	Nakajima:
+5740	Nakajima
 5741	Buradaki en iyi av yerini bilmek istiyorsun[ENTER]demek? Öyle aceleci olma. Senin için bir şey[ENTER]yapmam için senin de bana bir iyiliğin dokunması[ENTER]lazım.
 5742	Şunu bilmen lazım ki, ben dışarıda kendi arzumla[ENTER]yaşamıyorum. Askerlerin zulmünden kaçtığım için[ENTER]saklanmam gerek. Sevgili karıcığım Ah-Yu'nun[ENTER]yaşadığımı bilmesini isterdim. O'na bu haberi[ENTER]götürür müsün?[ENTER]Ama unutma, O'nu sadece kulaklarından tanırsın![ENTER]Bunun için sana O'nu ilk kez nerede öptüğümü sana[ENTER]söylemesi lazım. O'nunla tam orada buluşacağım ve[ENTER]sende ava çıkılacak yeri bulmuş olacaksın.
 5743	Nakajima:
@@ -5803,7 +5803,7 @@
 5803	Ne demezsin, seve seve!
 5804	Bu beni ilgilendirmiyor.
 5805	Yaramaz çocukları terbiye edecek vaktim yok.[ENTER]O'nu kendin haşlaman lazım. Ama bunu[ENTER]yapabileceğinden şüpheliyim...
-5806	Taurean:
+5806	Taurean
 5807	Yonah'ın paha biçilmez aile yadigarı Seladon[ENTER]Porseleni vazolarından üçü kırıldı. Bunun[ENTER]Taurean'ın işi olduğunu düşünüyor. Taurean'a git[ENTER]ve O'nu sorguya çek.
 5808	Taurean'ı burada bulabilirsin: %s.
 5809	Taurean:
@@ -5812,7 +5812,7 @@
 5812	Vazo mu? Yonah mı? Neden sözettiğini cidden[ENTER]anlamıyorum!
 5813	O zaman üç tanesinin niye kırıldığını açıkla[ENTER]bakalım.
 5814	Yemin ederim ki, ne bugün bir vazoya dokundum ne[ENTER]de Yonah'ı gördüm. Tam aksine bütün gün Harang'la[ENTER]dalaştım. Hatta beni bir kaç saatliğine samanlığa[ENTER]kilitledi! İstersen git O'na sor! Doğruyu[ENTER]söylüyorum!
-5815	Harang:
+5815	Harang
 5816	Taurean, suçsuz olduğunu iddia ediyor: Bütün gün[ENTER]Harang'la oynamış ve o yüzden vazoları kırmış[ENTER]olamazmış. Harang'a git ve doğru muymuş diye sor.
 5817	Harang, bugün Taurean'ı gördün mü hiç?
 5818	Harang:
@@ -5865,7 +5865,7 @@
 5865	Çok ince bir davranış ama vazolarımın gerçekten[ENTER]de güvende olabilmesi için bana %s deste daha[ENTER]saman getirir misin?
 5866	Sanırım daha fazla saman bulmak gittikçe[ENTER]zorlaşacak ama vazolarım benim için kutsaldır.[ENTER]Sana çok içten şükran borçlu olurum ve biraz da[ENTER]Yang veririm.
 5867	O halde şu arsız afacan Harang da Taurean'la[ENTER]birlikte işin parçası.
-5868	Öyle anlaşılıyor ki; Ben bu iki ufaklığı daha[ENTER]önce ambarın yakınında gördüm dediğimde bana[ENTER]kimse inanmamış.
+5868	Öyle anlaşılıyor ki; "Ben bu iki ufaklığı daha[ENTER]önce ambarın yakınında gördüm" dediğimde bana[ENTER]kimse inanmamış.
 5869	Dert etme. Hizmetin karşılığındaki tazminatın[ENTER]burada.
 5870	Al hadi, %s Yang.
 5871	Gurrrulll
@@ -5876,7 +5876,7 @@
 5876	Ama kaç zamandır ortalarda görünmüyor. O'na bir[ENTER]uğrayıp, ne olmuş diye sorar mısın?
 5877	Octavio'yu burada bulabilirsin: %s.
 5878	Balıkçı'yı bulmaya gidiyorum!
-5879	Balıkçı:
+5879	Balıkçı
 5880	Denizdeki iyi günler geride kaldı! Balıklar her[ENTER]gün korkunç bir şekilde biraz daha azalıyor![ENTER]Metin taşları denize döküldüğünden beri, dostane[ENTER]balinalar deniz canavarlarına dönüştü. Bu zamanda[ENTER]ava çıkmak yürek ister.
 5881	Artık mızraklarımız balinalara işlemiyor.[ENTER]Derileri bir dev öcününkinden daha sert oldu!
 5882	Muhtemelen Yonah ne yapılacağını biliyordur. O[ENTER]yıllarca denize açılarak balina avlamıştı.
@@ -5896,7 +5896,7 @@
 5896	Doğrudur, söz ettiğin türden mızrakları bilirim[ENTER]ve bunları yapmak elimden gelir. Lakin, yeteri[ENTER]sağlamlığı yakalayabilmek için elmas taşına[ENTER]ihtiyacım var.
 5897	İhtiyacım olan:
 5898	Bunun için işlemen gereken:
-5899	Demirci.
+5899	Demirci:
 5900	Elmas Taşı
 5901	Göreceğiz. Taşı çıkarmak için bana bir kazma[ENTER]lazım. Benimki buralarda bir yerde mi, yoksa[ENTER]Deokbae'ye gidip yeni bir tane mi alsam?
 5902	Hala %s x elmas taşına ihtiyacın var.
@@ -6037,7 +6037,7 @@
 6037	Sana iksirleri getireceğim!
 6038	Satıcı:
 6039	Taze Erzak
-6040	Satıcı:
+6040	Satıcı
 6041	Evet, son zamanlarda taze erzak sağlamakta sorun[ENTER]yaşıyorum. Daha sık ortaya çıkan eşkiyalar ve[ENTER]vahşi canavarlar yüzünden yollar tehlikeli olmaya[ENTER]başladı. Hepsinden öte, kaplanlara karşı bana mal[ENTER]getiren tüccarların hiç bir şansı yok.
 6042	Belki yüzbaşı askerleriyle yardım edebilir.[ENTER]Lütfen ona git ve tüccarları korumak için[ENTER]askerleriyle yolu kollar mı diye sor.
 6043	Satıcıya git ve taze iksir nakliyatının neden[ENTER]aksadığını öğren.
@@ -6142,7 +6142,7 @@
 6142	%s Yang alırsın.
 6143	Beni uzak akrabalarımdan biriyle karıştırıyor[ENTER]olmalısın. Benim ne kızım var, ne de düğün[ENTER]yapacak kadar Yang'im.
 6144	Ama konuğum olup, bir kaşık kurbağa çorbası[ENTER]denemek istemez misin? Teyzemden aldığım eski bir[ENTER]tarife göre yaptım.
-6145	Heuk-Young:
+6145	Heuk-Yong
 6146	Bir Efsanenin Günlüğü
 6147	Bu savaşçı kalıntısını buldum. Bu Heuk-Yong'un[ENTER]aradığı Sura mı bilmiyorum ama eminim[ENTER]ilgilenecektir.
 6148	Burada sadece bir Sura ölmemiş. Başka kalıntılar[ENTER]da görüyorum. Acaba Efsanevi Savaşçı da[ENTER]aralarında mıydı? Heuk-Yong'a bunu bildirmeliyim.
@@ -6162,7 +6162,7 @@
 6162	Ölü bir Sura...bu o olabilir, ama belki de sadece[ENTER]adamlarından biridir. Emin olmak için daha fazla[ENTER]kanıta ihtiyacım var. Bunun kim olduğunu bulmak[ENTER]için daha çok kanıt bul. Silahlar, takılar veya[ENTER]notlar gibi.
 6163	Bir Sura iskeleti ve kitap sayfası mı? Parşömene[ENTER]bakmama izin ver... Hmm, Akuma'nın kalıntılarını[ENTER]bulmuş olabilirsin. Ancak daha fazla kanıt gerek.[ENTER]Lütfen başka kitap sayfaları bulmaya çalış.
 6164	Şimdiye kadar biraz kanıt buldum ancak efsanevi[ENTER]Sura'nın burada olup olmadığından emin değilim.[ENTER]Daha fazla bilgiye ihtiyacım var.
-6165	İyi
+6165	İyi.
 6166	Buz Canavarı
 6167	Umutsuzluğun kıyısında
 6168	Karanlık dehşet
@@ -6170,10 +6170,10 @@
 6170	Savaşçının kaderi
 6171	Hayır, ilgilenmiyorum.
 6172	Sadece cümle parçalarını deşifre edebiliyorum.[ENTER]Saygıdeğer yaşamdan ve aşırı macera sevgisinden[ENTER]bahsediyor...
-6173	Sararmış parşömendeki yazı, sanki yaşlı ve zayıf[ENTER]biri tarafından yazılmış gibi soluk ve titrek:[ENTER]...Buz Yaratıkları. Sura güçlerim bile onları[ENTER]yenmeme yetmedi. Bazıları hala mağarada dolaşıyor[ENTER]ve beni bulmamaları için çok dikkatli olmalıyım.[ENTER]Kısa zaman öncesine kadar bana koruma[ENTER]önermişlerdi, ama şimdi... Bu noktada sayfa[ENTER]gözden kayboluyor.
-6174	Sayfa çok eski. Üstteki tarihten bunun bir günlük[ENTER]olduğu anlaşılıyor: Mağarayı ararken farklı[ENTER]davrandığımı ilk kez fark etmiyorum. Kendimle çok[ENTER]övünüyordum ve mutluydum! Tüm bunlar beni ani[ENTER]ölümüme sürükledi... Ölüm kelimesinin altı[ENTER]çizilmişti.
-6175	Parşömen çok yıpranmış ve yer yer kopmuş. Sadece[ENTER]şunlar okunuyor: ...İmparator mahkemesi...[ENTER]bilginler bunu çaresizce öğrenmek istediğimi[ENTER]düşündüklerinde...[ENTER]kapı kolayca açıldı ama... karanlıkta ölüm ve[ENTER]kargaşa... Büyük ve dik bir yırtık gerisini[ENTER]okumanı engelliyor.
-6176	Parşömenin bu sayfasında bir karalama bulacaksın:[ENTER]Bu bir kadının yüzü. Bunun altında tanıdık bazı[ENTER]kelimeler yazılı. Ancak bunlar daha titrek ve[ENTER]huzursuz: Ölümdü beni pençesine alan - bunu dün[ENTER]fark ettim. Korku beni almadan ve geri çekilmeden[ENTER]önce yaratığa sadece bir an baktım. Ah Sumni,[ENTER]keşke bilseydim! Bu tarif edilemez korkuyu[ENTER]bilseydim, bu noktaya gelmezdim!
+6173	Sararmış parşömendeki yazı, sanki yaşlı ve zayıf[ENTER]biri tarafından yazılmış gibi soluk ve titrek:[ENTER]"...Buz Yaratıkları. Sura güçlerim bile onları[ENTER]yenmeme yetmedi. Bazıları hala mağarada dolaşıyor[ENTER]ve beni bulmamaları için çok dikkatli olmalıyım.[ENTER]Kısa zaman öncesine kadar bana koruma[ENTER]önermişlerdi, ama şimdi..." Bu noktada sayfa[ENTER]gözden kayboluyor.
+6174	Sayfa çok eski. Üstteki tarihten bunun bir günlük[ENTER]olduğu anlaşılıyor: "Mağarayı ararken farklı[ENTER]davrandığımı ilk kez fark etmiyorum. Kendimle çok[ENTER]övünüyordum ve mutluydum! Tüm bunlar beni ani[ENTER]ölümüme sürükledi..." Ölüm kelimesinin altı[ENTER]çizilmişti.
+6175	Parşömen çok yıpranmış ve yer yer kopmuş. Sadece[ENTER]şunlar okunuyor: "...İmparator mahkemesi...[ENTER]bilginler bunu çaresizce öğrenmek istediğimi[ENTER]düşündüklerinde...[ENTER]kapı kolayca açıldı ama... karanlıkta ölüm ve[ENTER]kargaşa..." Büyük ve dik bir yırtık gerisini[ENTER]okumanı engelliyor.
+6176	Parşömenin bu sayfasında bir karalama bulacaksın:[ENTER]Bu bir kadının yüzü. Bunun altında tanıdık bazı[ENTER]kelimeler yazılı. Ancak bunlar daha titrek ve[ENTER]huzursuz: "Ölümdü beni pençesine alan - bunu dün[ENTER]fark ettim. Korku beni almadan ve geri çekilmeden[ENTER]önce yaratığa sadece bir an baktım. Ah Sumni,[ENTER]keşke bilseydim! Bu tarif edilemez korkuyu[ENTER]bilseydim, bu noktaya gelmezdim!"
 6177	Hee-Se Hanedanında Akuma isimli efsanevi bir Sura[ENTER]yaşamıştı. Savaşta çok yetenekliydi ve her[ENTER]rakibini, kendi gücünü test etmek için[ENTER]kullanırdı. Bir gün, gizli bir yer hakkında[ENTER]mühürlenmiş notlar buldu ve hayatını bu yeri[ENTER]bulmaya adadı. Kapıların nasıl açıldığını[ENTER]öğrendi. Eylemlerini bitirdikten sonra aşkı[ENTER]Sumni'ye geri dönmeye söz verdi... ancak geri[ENTER]dönemedi.
 6178	Yazılar çok eski görünüyor... sanki yazarının[ENTER]gücü kalmamış gibi çok titrek ve eğri büğrü...
 6179	Bunun bir anlamı yok. Başka sayfalara ihtiyacımız[ENTER]var.
@@ -6299,7 +6299,7 @@
 6299	Ayrıca 120.000.000 Tecrübe puanı kazandın.
 6300	Marketi aç
 6301	Avlaman gereken:
-6302	Satıcı:
+6302	Satıcı
 6303	Silah Satıcısına git ve artık neden Satıcı[ENTER]Bayan'ın penceresinde şarkı söylemediğini sor.
 6304	Leylak topla
 6305	Güzel bir Leylak Dalı elde geçirdin!
@@ -6343,7 +6343,7 @@
 6343	Ben gerçekten yaşlı bir adamım, ancak hala[ENTER]sağlıklı ve dincim. Çünkü bir sırrım var.[ENTER]Gango Kökü Suyu ve Tue Mantarından yapılan ömür[ENTER]uzatıcı bir karışım buldum. Eğer bu karışımdan[ENTER]istersen, malzemeleri Yu-Hwan'a götürmelisin,[ENTER]senin için o iksiri yapacaktır.
 6344	Sessiz ve disiplinli ol. Kendine hakim ol.[ENTER]Herhangi bir sorun başlatma. Yoldaşlarına saygılı[ENTER]olmayı öğrenmelisin. Anladın mı?
 6345	Çok güçlü görünüyorsun...
-6346	Yıllardan beridir, gücümüzün sırrı ailemiz için[ENTER]nesilden nesile geçer. Babam bana demişti ki,[ENTER]eğer çan çiçeğini doğru şekilde karıştırırsan[ENTER]sana güç verecek bir iksir yapabilirsin. Bildiğim[ENTER]kadarıyla Baek-Go bu iksiri yapabiliyor. Tek[ENTER]ihtiyacın ona çan çiçeği[ENTER]götürmek.
+6346	Yıllardan beridir, gücümüzün sırrı ailemiz için[ENTER]nesilden nesile geçer. Babam bana demişti ki,[ENTER]eğer çan çiçeğini doğru şekilde karıştırırsan[ENTER]sana güç verecek bir iksir yapabilirsin. Bildiğim[ENTER]kadarıyla Baek-Go bu iksiri yapabiliyor. Tek[ENTER]ihtiyacın ona çan çiçeği götürmek.
 6347	Git, onu dağlara söyle...
 6348	Müzisyen Yu-Hwan:
 6349	...tepelere ve her yere...[ENTER]Sen de müziği sever misin? Burada her tür parçayı[ENTER]söylerim, savaşa dahil olmuyorum. Ancak eğer[ENTER]ülkem beni korumazsa, sevdiğim bu işi yapmaya[ENTER]devam edemem.
@@ -6531,21 +6531,21 @@
 6531	Devriye noktası 3
 6532	Devriye noktası 3'e git.
 6533	 - Ateş Ankası
-6534	 - Ren Geyiği Yavrusu
+6534	- Ren Geyiği Yavrusu
 6535	Şu anda petini çağıramazsın.
-6536	 - Buz Ankası
-6537	 - Yavru Azrail
-6538	 - Leonidas
-6539	 - Khan
-6540	 - Porki
-6541	 - Rufus
-6542	 - Bambi
-6543	 - Knuud
-6544	 - Bao Bao
-6545	 - Şişko Cellatcık
-6546	 - Şişko Cellatcık (altın)
-6547	 - Boney
-6548	 - Yeşim Ankası
+6536	- Buz Ankası
+6537	- Yavru Azrail
+6538	- Leonidas
+6539	- Khan
+6540	- Porki
+6541	- Rufus
+6542	- Bambi
+6543	- Knuud
+6544	- Bao Bao
+6545	- Şişko Cellatcık
+6546	- Şişko Cellatcık (altın)
+6547	- Boney
+6548	- Yeşim Ankası
 6549	20 tane yabani okçuyu 30 dakika içinde öldür ve[ENTER]sonuçları seyise götür.
 6550	At sürmek istiyorum.
 6551	Durum yükseltmesi midilli görevi.
@@ -6605,7 +6605,7 @@
 6605	Binici eğitimi (1)
 6606	Hedefe git (1).
 6607	Eğitim alanına ışınlan.
-6608	Git
+6608	Git bakalım!
 6609	Pes etmek istediğinden emin misin?
 6610	Hedefe erişildi (1)!
 6611	Hedefe erişildi (9)!
@@ -6748,7 +6748,7 @@
 6748	Evet, bırak.
 6749	Görev %s iptal edildi.
 6750	(Kalan: %s %s, %s %s)
-6751	questscroll5.kill_race:%s]
+6751	questscroll5.kill_race:%s
 6752	(Kalan: %s %s, %s %s)
 6753	questscroll5.kill_race:%s]
 6754	Görevi tamamladın ve bir ödül kazandın!
@@ -6797,7 +6797,7 @@
 6797	1 değerine getiriliyor.
 6798	Kalan puanlarınız, eğitim puanı olarak geri[ENTER]verildi.
 6799	Devam etmek istiyor musunuz?
-6800	Seviyen çok düşük.
+6800	Seviyen çok düşük!
 6801	Dönüşüm esnasında binicilik yapamazsın.
 6802	Şu anda biniyorsun zaten! Hayvanını değiştirmek[ENTER]için, önce binmiş olduğundan inmen lazım.
 6803	Başka bir binek hayvan kullanmak istiyorsan ilk[ENTER]önce atını göndermelisin.
@@ -6899,7 +6899,7 @@
 6899	İyileştirme eğitimi
 6900	İyileştirme sanatını öğrendiğinde, düşmanlarını[ENTER]elektrik saldırılarıyla şoke etmeyi öğreneceksin.[ENTER]Ayrıca grup üyelerini de iyileştirme ve[ENTER]güçlendirme yetenekleri kazanacaksın.
 6901	İyileştirme eğitimini seçtin.
-6902	Ejderha gücü öğretmeni:
+6902	Ejderha gücü öğretmeni
 6903	İyileştirme öğretmeni
 6904	Becerileri sıfırla.
 6905	Eğer fikrini değiştirirsen, tekrar ziyaretime gel.
@@ -6962,7 +6962,7 @@
 6962	Örümcek Zindanı'nın üçüncü katında üzerinde[ENTER]yazılar bulunan eski bir mezar taşı var. Onun[ENTER]kopyasını al ve Yüzbaşıya götür.
 6963	Yaşasın, eski mezar taşını buldun ve üzerindeki[ENTER]yazının kopyasını aldın! Yüzbaşıya göstermek için[ENTER]geri dön.
 6964	Satıcı:
-6965	Boş Şişeleri Al
+6965	Boş şişe al.
 6966	Bu iyi.[ENTER]Çömlekçi Yonah'tan Boş Şişeler alabilirsin.[ENTER]Çok teşekkür ederim.
 6967	Çömlekçi Yonah'ı bul.
 6968	Satıcının, kırmızı iksirler için çömlekçi[ENTER]Yonah'tan alınacak boş bir şişeye ihtiyacı var.
@@ -7057,7 +7057,7 @@
 7057	Eh, Deokbae nasıl iyi mi? Hala aynı değil mi?[ENTER]Teşekkür ederim. Ödülün burada. Çok değil[ENTER]biliyorum ama bir gün mutlaka ihtiyacın olacak.[ENTER]Teşekkürler tekrar.
 7058	4.000 tecrübe puanı kazandın.[ENTER]3.000 Yang kazandın.
 7059	Bir süredir görmüyorum onu. Kendisine halini[ENTER]hatrını soran bir mektup yazdım. Bu mektubu ona[ENTER]iletmeni istiyorum fakat yollar çok tehlikeli. Bu[ENTER]yüzden dikkatli ol. Ayrıca mektubu sakın[ENTER]kaybetme!
-7060	Ah, diğer köye nasıl gideceğini bilmiyor musun?[ENTER]Küçük haritayı görüntülemek için M tuşuna bas.[ENTER]Haritada mavi bir nokta belirecek. Bu nokta, seni[ENTER]yandaki alana götürecek olan kapıyı simgeler.[ENTER]İkinci köy, bu alandadır.
+7060	Ah, diğer köye nasıl gideceğini bilmiyor musun?[ENTER]Küçük haritayı görüntülemek için "M" tuşuna bas.[ENTER]Haritada mavi bir nokta belirecek. Bu nokta, seni[ENTER]yandaki alana götürecek olan kapıyı simgeler.[ENTER]İkinci köy, bu alandadır.
 7061	Bu işi yapacağım.
 7062	Hayır, teşekkür ederim.
 7063	Bu görevi tamamen bırakmak istiyor musun?
@@ -7123,7 +7123,7 @@
 7123	Demir madeni sana Uriel verdi.
 7124	Deriyi sana Octavio verdi.
 7125	Kömürü sana Yonah verdi.
-7126	Octavio'ya git
+7126	Octavio'ya git.
 7127	Uriel'e git.
 7128	Yonah'a git.
 7129	Ich brauche Eisenerz
@@ -7154,7 +7154,7 @@
 7154	Kömürün yok. Hmm, kömür yoksa? Yonah'tan[ENTER]alabilirsin.
 7155	Tüm malzemeleri topladım
 7156	Demirci için Malzemeler
-7157	Demirci'ye git.
+7157	Demirciye git.
 7158	Zırh Siparişi
 7159	Hayır, bu işi yapmak için yeterli vaktim yok.
 7160	Tüm malzemeleri topladım. Demirci'ye gitmeliyim.
@@ -7190,7 +7190,7 @@
 7190	Soon sana yabancı yemek kitabını verdi. Onu[ENTER]Octavio'ya götür.
 7191	İşte yemek kitabın!
 7192	Silah Satıcısı'na git ve nereden yaş pasta[ENTER]alabileceğini sor.
-7193	Yaş Pasta
+7193	Pirinç pastası?
 7194	Biraz pirinç pastası ver.
 7195	Silah satıcısı:
 7196	Ehm, ne? Pirinç pastası mı? Ona neden ihtiyacın[ENTER]var? Bu bilmediğim bir tür silah mı? Anlamadım...[ENTER][ENTER]Ahh! Pirinç pastası, sen yiyecek olarak[ENTER]bahsediyorsun! Onun için Octavio'ya sorabilirsin,[ENTER]o yemekler hakkındaki herşeyi bilir.
@@ -7211,7 +7211,7 @@
 7211	Taurean sürekli Yu-Rang ile alay ediyor. Onu[ENTER]cezalandırırsan Yu-Rang sana yaş pasta verecek.
 7212	Neden Yu-Rang'a sataşıyorsun?
 7213	Kime sataşıyormuşum? Ah, şu pirinç pastası satan[ENTER]kız mı? Sadece oynamak istiyorum. Ne demeye[ENTER]çalıştığımı anlıyorsundur. Senin düşündüğün gibi[ENTER]değil! Amacım ona sataşmak değil yani, çok[ENTER]sıkılıyorum... Tamam peki,onunla konuşmak[ENTER]istemiştim, kızdırmak değil. Tekrar olmayacak.[ENTER]Söz veriyorum.
-7214	Yu-Rang'a geri dön.
+7214	Yu-Rang'a dön
 7215	Kabul et.
 7216	Yaş Pasta
 7217	Taurean artık Yu-Rang'ı rahatsız etmeyecek. Ona[ENTER]git ve yaş pastayı al.
@@ -7237,7 +7237,7 @@
 7237	Altın Balta
 7238	Arkadaşım Deokbae'yi hatırlıyor musun? Ona altın[ENTER]bir balta yapacağıma söz vermiştim. Fakat beyaz[ENTER]yeminli askerlerden biri baltayı çaldı. Onu benim[ENTER]için bulabilir misin? Beyaz yeminli askerde[ENTER]olmalı. O baltayı gördüğünde hemen ayırt[ENTER]edebilirsin, diğerleri gibi değil. Emeğin için[ENTER]seni ödüllendireceğim.
 7239	Bu görevi tamamen bırakmak istiyor musun?
-7240	Demirci.
+7240	Demirci:
 7241	O baltayı gerçekten istiyorum...[ENTER]Geri dönecek misin?[ENTER]Kendine iyi bak.
 7242	Yardımın için teşekkür ederim. Dikkatli ol; Beyaz[ENTER]Yeminli çetesi çok tehlikelidir.
 7243	Bana yardım ettiğin için teşekkür ederim. Ama[ENTER]dikkatli ol. Beyaz Yeminli çetesi sorun[ENTER]çıkarmakta ustadır.
@@ -7270,7 +7270,7 @@
 7270	Bununla ilgilenecek misin? Ah, teşekkür ederim!
 7271	Demirci'ye git.
 7272	Mirine'nin kardeşini Yu-Hwan'a sor.
-7273	 Kardeşimi bul
+7273	Kardeşimi bul
 7274	Mirine'nin ağabeyini gördün mü?
 7275	*Şarkı söyler* Ben aşkın daha ne olduğunu[ENTER]bilmezken aşık oldum...[ENTER][ENTER]Sen de kimsin ve ne arıyorsun? Mirine'nin kardeşi[ENTER]mi? Kendisi dağlara gitmeden kısa bir süre önce[ENTER]konuşmuştuk. Nadir bulunan bitkileri arayacakmış.[ENTER]Şu an nerede olduğunu bilmiyorum. Avcı da sık sık[ENTER]dağlara gider. Kendisini bu köyde bulabilirsin[ENTER]sanırım. Neden avcıya sormuyorsun?[ENTER][ENTER]*Şarkı söylemeye devam eder* La, la, la, aşk[ENTER]kederli ama çok güzel...
 7276	Yang-Shin'e Mirine'nin kardeşini sor.
@@ -7279,7 +7279,7 @@
 7279	Mirine'nin kardeşi hakkında haber.
 7280	Bak, kardeşimden bir mektup geldi! Bitkilerle[ENTER]dolu bir yer bulduğunu ve eve gelmesinin biraz[ENTER]zaman alacağını yazmış.[ENTER]Üzgünüm, seni bununla rahatsız etmemeliydim.[ENTER]İşte, çok değil, umarım bunu kabul edersin ve[ENTER]beni affedersin. Bu uzun yolculuğa çıktığın için[ENTER]teşekkür ederim.
 7281	122.000 tecrübe puanı kazandın.[ENTER]5.000 Yang kazandın.
-7282	 Kardeşimi bul
+7282	Kardeşimi bul
 7283	Bir iyilik isteyebilir miyim? Kardeşim uzun[ENTER]zamandır ortalarda yok. Hakkında da hiç haber[ENTER]alamadım. Onun için endişeleniyourm. Benim için[ENTER]kendisine bakar mısın?
 7284	Kardeşim diğer köydeki Yu-Hwan'ı görmeye gitmek[ENTER]istiyordu. Yu-Hwan'a gidip kardeşimi sorabilir[ENTER]misin? Zamanın varsa onu arar mısın?
 7285	Evet, yapacağım.
@@ -7306,7 +7306,7 @@
 7306	Sanırım şu an doğru zaman değil. Daha sonra[ENTER]tekrar gel.
 7307	Eğer yardım etmek istemiyorsan, yapılabilecek[ENTER]birşey yok gibi görünüyor. Gidebilirsin...
 7308	Gerçekten yardım etmeyecek misin?
-7309	Ariyoung'a git
+7309	Ariyoung'a git.
 7310	Silah yapmak için malzemeler.
 7311	Ah-Yu'ya git.
 7312	Silah Satıcısı'nın sana ihtiyacı var. Onun için[ENTER]Uriel'den Demir ve Ariyoung'dan Keten al.
@@ -7344,7 +7344,7 @@
 7344	Malzemeleri ara
 7345	Şehir Bekçisine geri dön
 7346	Beyaz Yeminlilerden Eun-Jung
-7347	Beyaz Yeminlilerden Eun-Jung'u öldürdün. Köy[ENTER]Gardiyanına geri dön ve rapor ver.
+7347	Beyaz Yeminlilerden Eun-Jung'u öldürdün.[ENTER]Köy meydanının bekçisine geri dön ve rapor ver.
 7348	Harikasın! Beklediğimden daha iyisin. Beyaz[ENTER]Yeminlilerin bu iki lideri hakkında elimizden[ENTER]birşey gelmiyordu ve sen ikisini de yeniverdin.
 7349	Bu inanılmaz. Uygun bir ödül almalısın. Bunu al[ENTER]ve köyün huzuru için çalışmaya devam et!
 7350	150.000 tecrübe puanı kazandın.[ENTER]25.000 Yang kazandın.[ENTER]Altın Kolye+4 kazandın.
@@ -7365,7 +7365,7 @@
 7365	O, bu kıtanın gördüğü en iyi orduydu. Süvarileri[ENTER]kimse durduramadığı için çok ülke mağlup oldu.[ENTER]Bugün de öyle olabilirdi. Ancak sert eğitim[ENTER]yöntemlerine ve bu tip zırhlar yapmak için çok[ENTER]fazla iyi kalite demire ihtiyacınız var. Bu[ENTER]konuyu Seyyar Satıcıya ve bilge Uriel'e sor.[ENTER]Muhtemelen onlar daha fazla ayrıntı biliyordur.
 7366	Seyyar Satıcıya git
 7367	Zırhlı süvariler.
-7368	Satıcı:
+7368	Seyyar satıcı
 7369	Müzisyen Yu-Hwan Seyyar Satıcı ve Uriel'in Zırhlı[ENTER]Süvariler hakkında daha fazla bilgisi[ENTER]olabileceğini söylüyor. Önce Seyyar Satıcıya git.
 7370	Satıcı:
 7371	Zırhlı süvariler.
@@ -7540,7 +7540,7 @@
 7540	Onları arayacağım.
 7541	Bunun için vaktim yok.
 7542	Teşekkür ederim, arkadaşım![ENTER]Umarım başarılı olursun.
-7543	 Balso?
+7543	Balso?
 7544	Balso için ilaç
 7545	Balso'ya git
 7546	Bilinmeyen hastalığa yakalanan Balso için gereken[ENTER]ilacı buldun. Bu ilacı kendisine yetiştir.
@@ -7640,7 +7640,7 @@
 7640	Hayır, artık çok geç. Sen onu bulsan bile artık[ENTER]sıcaktan erimiş olacaktır ve ben onu[ENTER]satamayacağım...
 7641	Yere bak ve örümceklerin bıraktığı pastaya bak.[ENTER]Çok geç. Herşey erimiş...
 7642	Çok fazla zaman kaybettin. Pasta eridi.[ENTER]Görevde başarısız oldun.
-7643	Yu-Rang'a geri dön.
+7643	Yu-Rang'a dön
 7644	Hey, annen nasıl?
 7645	Yu-Rang'a geri dön.
 7646	Yu-Rang'ın Yaş Pastasını tam zamanında[ENTER]örümceklerden kurtardın. Ona götür.
@@ -7677,7 +7677,7 @@
 7677	Huahn-So'nun Ariyoung'a karşı hisleri[ENTER]anlatabilmesi için özel Çiçekler toplamalısın.[ENTER]Çiçekleri ilk köyün haritasında köşede[ENTER]bulabilirsin.
 7678	Çiçekleri bulamadım.
 7679	Off, kahretsin...[ENTER]Ona duygularımı açıklamak istiyordum. Kalbinde[ENTER]taht kurmak çok zor.[ENTER]Ah, benim sevgili Ariyoung'um.
-7680	Bayan Ariyoung'ı tanıyor musun? O evli, yani[ENTER]evlenmişti. Fakat eşi bir kaç yıl önce vefaat[ENTER]ettiğinden beri yalnız yaşıyor. Çok etkileyici[ENTER]bir kişiliği var ve hala çok güzel bir kadın. Çok[ENTER]genç evlendi ve ben çok geç[ENTER]kaldım...
+7680	Bayan Ariyoung'ı tanıyor musun? O evli, yani[ENTER]evlenmişti. Fakat eşi bir kaç yıl önce vefaat[ENTER]ettiğinden beri yalnız yaşıyor. Çok etkileyici[ENTER]bir kişiliği var ve hala çok güzel bir kadın. Çok[ENTER]genç evlendi ve ben çok geç kaldım...
 7681	Tekrar deneyeceğim.
 7682	Bırakıyorum.
 7683	Bu görevi tamamen bırakmak istiyor musun?
@@ -7741,7 +7741,7 @@
 7741	Pekala, eğer meşgulsen...[ENTER]Eğer vaktin olursa tekrar gel.
 7742	Bir kitap bize yiyecek ve giyecek verebilir mi?[ENTER]Eğer onu bulursam... Tanrı o zaman ona yardımcı[ENTER]olsun işte! Köydeki herkese sordum, herkes aynı[ENTER]şeyi söylüyor.
 7743	Soon:
-7744	Satıcı:
+7744	Satıcı
 7745	Satıcıya git.
 7746	Soon'un neler yaptığını belki bayan bakkalcı[ENTER]bilir. Onun yanına git ve ona, Soon ile ilgili[ENTER]birşeyler biliyor mu diye sor.
 7747	Soon'a ne olmuş?
@@ -8197,7 +8197,7 @@
 8197	Yapmak istemiyor musun? Bu konuştuklarımızı[ENTER]Yu-Rang'a anlatmayacaksın değil mi?![ENTER]Ne olursun bana yardım et. Müsait olduğunda yine[ENTER]yanıma gel!
 8198	Yu-Rang bir daha benimle konuşmayacak.[ENTER]Ya da benimle alay edecek...
 8199	Ah, haklıydım. Göründüğün kadar iyi biri olduğunu[ENTER]biliyordum. Bol şanslar!
-8200	Yu-Rang'a geri dön.
+8200	Yu-Rang'a dön
 8201	Yu-Rang'a geri dön ve Taurean'ın yalanını anlat.
 8202	Yu-Rang'ı hayal kırıklığına uğrattın.
 8203	Anlattın mı ona?![ENTER]Benimle arkadaş olmak istememesini anlıyorum.[ENTER]Yine de bu durum beni çok üzüyor. Umarım bir gün[ENTER]fikrini değiştirir. Belki aklıma onu sevindirecek[ENTER]güzel birşey gelir...
@@ -8285,7 +8285,7 @@
 8285	1.300.000 Tecrübe Puanı kazandın.
 8286	Neden çok sessizsin? Bilmiyor musun?
 8287	Tekrar düşünmeliyim
-8288	Ufukta düşman göründü
+8288	Ufukta düşman göründü.
 8289	Şifreli yazı hakkında...
 8290	Pes ediyorum.
 8291	Aah, bu kadar zor muydu? Son umudumdun...Bu[ENTER]yazıyı şimdi kim çözecek?
@@ -8342,7 +8342,7 @@
 8342	Senin sorunun nedir? En son çok güzel bir iş[ENTER]başarmıştın yurdun uğruna! Şimdiyse krallığını[ENTER]sırt üstü mü bırakıyorsun? Ama yapacak birşey[ENTER]yok.[ENTER]Hoşçakal.
 8343	Evet! Sana güvenebileceğimi biliyordum. Bol[ENTER]şanslar! Kendine dikkat et!
 8344	Casusla görüş
-8345	Bingsu nedir?
+8345	Bingsu nedir
 8346	Bingsu mu?
 8347	Taurean, yazın dondurma yapılabildiğine[ENTER]inanmadığı için Harang ile kavga etti. Harang'ın[ENTER]yanına git ve Bingsu hakkında neler bildiğini[ENTER]sor.
 8348	Harang'a sor
@@ -8372,7 +8372,7 @@
 8372	Tekrar dene
 8373	Biliyorum yol uzun ve canavarlar da çok güçlü.[ENTER]Eğer çok zor geldiyse yapabileceğimiz birşey yok.[ENTER]Görüşürüz.
 8374	Tekrar dene. Cesaretin ve dayanıklılığınla bunu[ENTER]başarabilirsin!
-8375	Bingsu mu?
+8375	Bingsu!
 8376	Bu kadar: Octavio, Sohan dağından gelen buzlarla[ENTER]Bingsu yaptı. Erimeden onu Taurean'a götür.
 8377	İşte! Bingsu!
 8378	Ah, Bingsu denilen şey bu mu? Tadı güzel.[ENTER]Lezzetli ve serin. Daha önce hiç böyle birşey[ENTER]tatmamıştım, teşekkür ederim! Harang haklıymış.[ENTER]Sanırım ona bir özür borçluyum...
@@ -8405,7 +8405,7 @@
 8405	ist nun eine Großmeister Fertigkeit
 8406	Bu beceri için Perfect Seviyesine ulaştınız ve[ENTER]daha fazla geliştirilemez.
 8407	Tebrikler! Başardın. Grand Master beceri eğitimi[ENTER]için teşekkürler,
-8408	 %s ulaştığı seviye %s.
+8408	%s ulaştığı seviye %s.
 8409	Seviyeni başarıyla yükselttin!
 8410	%s sıralama puanı kullandın.
 8411	Hata!
@@ -8416,7 +8416,7 @@
 8416	Becerilerinin hiç biri Grand Master eğitimini[ENTER]denemek ve başarmak için yeteri kadar iyi değil.
 8417	Grand master seviyesini artırmak istediğin[ENTER]beceriyi seç.
 8418	Mevcut sıralama puanı: %s
-8419	 Gerekli sıralama puanı:
+8419	Gerekli sıralama puanı:
 8420	%s grand master beceri eğitimi
 8421	Grand master becerisi için sıralama puanı[ENTER]harcanır. Yani sıralama puanın negatif değere[ENTER]düşebilir.
 8422	Ne yazık ki bineğini geliştirecek kadar binicilik[ENTER]tecrüben yok. En azından savaş atı ruhsatına[ENTER]sahip olman gerekir.
@@ -8503,7 +8503,7 @@
 8503	Ne? Yeterince Yang yok mu?[ENTER]Yeterince paran olunca tekrar gel.
 8504	Senin için ayrılan depo açıldı. Onu kullanmak[ENTER]istediğin zaman benimle konuşman yeterli.[ENTER]Deponun şifresi:
 8505	000000
-8506	Güvenlik sebebiyle bunu değiştirmelisin.[ENTER][ENTER]Belki 45 kutunun yetmeyeceğini düşünebilirsin.[ENTER]Ama kimbilir, eğer benimle uzun süre çalışırsan[ENTER]sana daha çok kutu ayırabilirim.[ENTER]Hehe!
+8506	Güvenlik sebebiyle bunu değiştirmelisin.[ENTER][ENTER]Belki 45 kutunun yetmeyeceğini düşünebilirsin.[ENTER]Ama kimbilir, eğer benimle uzun süre çalışırsan[ENTER]sana daha çok kutu ayırabilirim. Hehe!
 8507	Pekala, kimseyi zorlamıyorum. Fikrini[ENTER]değiştirirsen sonra tekrar uğra.
 8508	Depoyu aç
 9001	Kılıç Aurası Sura için bir beceridir.

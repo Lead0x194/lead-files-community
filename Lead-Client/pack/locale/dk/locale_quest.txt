@@ -2,29 +2,29 @@
 2	Start en øvelseskamp
 3	Level på den anden gruppe er lavere end %s.
 4	For at afslutte øvelseskampen bliver %s nødt til[ENTER]at komme tættere på.
-5	%s er undervejs i[ENTER]øvelseskamp-timerne.
+5	%s er undervejs i øvelseskamp-timerne.
 6	Beslutning
-7	%s vil ikke gå i øvelseskamp mod[ENTER]dig.
+7	%s vil ikke gå i øvelseskamp mod dig.
 8	Vi har et problem.[ENTER]Vil du tilmelde dig senere?
 9	Den anden gruppe er i gang med en øvelses kamp.[ENTER]Prøv igen senere.
-10	Øvelseskamphallen er i brug. Tilmeld dig[ENTER]senere.
+10	Øvelseskamphallen er i brug. Tilmeld dig senere.
 11	Overvær en øvelseskamp.
 12	%s imod %s
 13	Luk
 14	Yu-Hwan:
-15	Pt. er der ingen øvelseskamp[ENTER]igang.
+15	Pt. er der ingen øvelseskamp igang.
 16	Pt. er der %s øvelseskampe.
 17	Øvelseskamp-hallen blev ødelagt ved en vild kamp.[ENTER]Indtil den er blevet genopbygget kan der ikke[ENTER]laves øvelseskampe.
 18	En anden person har allerede tilmeldt sig til en[ENTER]øvelseskamp-time.
 19	Når du har et level under %s kan du ikke deltage[ENTER]i øvelseskampe.
 20	Angiv navn på den person du ønsker at kæmpe mod.
 21	Ved du ikke hvem du vil kæmpe imod? Hvis du ikke[ENTER]kan give mig et navn så kan jeg ikke skrive dig[ENTER]op.
-22	Okay, %s. Du er tilmeldt til at gå i øvelseskamp[ENTER]mod %s.
+22	Okay, %s. Du er blevet tilmeldt til en trænings kamp imod %s.
 23	%s venter på at %s accepterer udfordringen
 24	%s ønsker du at kæmpe mod %s i en øvelseskamp?
 25	%s er ikke logget på i øjeblikket. Prøv igen[ENTER]senere, eller arrangere at mødes med din træning[ENTER]partner!
 26	Jeg ønsker at forbedre noget.
-27	Smed
+27	Smed:
 28	Hej![ENTER]Jeg er ansvarligt for at forbedre genstande. Hvis[ENTER]du ønsker at forbedre nogle genstande, så bring[ENTER]dem til mig.
 29	Information:
 30	Træk genstanden over på Smeden
@@ -45,15 +45,15 @@
 45	Du har deltaget i fisketurneringen og har fanget[ENTER]5 karusser.[ENTER]Som belønning får du en flot kiste.
 46	I kisten findes et begyndervåben +3.
 47	Da du ikke har afleveret 5 døde karusser, har du[ENTER]fået en tom kiste.
-48	En ufattelig pris! En fiskestang med et[ENTER]fantastisk håndtag.[ENTER]Oveni får du 100 agn og 20 orme gratis![ENTER]Vi, De Beste Fiskestangs Mestre, tilbyder vores[ENTER]kunder et 3-i-1 fiskegrejssæt for 3980 Yang.[ENTER]Ønsker du at købe[ENTER]Fiskegrejssættet?
+48	En ufattelig pris! En fiskestang med et[ENTER]fantastisk håndtag.[ENTER]Oveni får du 100 agn og 20 orme gratis![ENTER]Vi, De Beste Fiskestangs Mestre, tilbyder vores[ENTER]kunder et 3-i-1 fiskegrejssæt for 3980 Yang.[ENTER]Ønsker du at købe Fiskegrejssættet?
 49	Køb
 50	Køb ikke
 51	Du har købt 3-i-1 fiskestang Pakken. Have det[ENTER]sjovt! Og vær opmærksom på vedlagte notat om[ENTER]Fiske konkurencen. Vi ses snart!
 52	Jeg er ked af det, men du har ikke nok Yang.[ENTER]Men fortvivl ikke, der vil snart være en anden[ENTER]mulighed. Vi ses!
-53	UKENDT KNAP [%s]
+53	inactive key [%s]
 54	Seddel fra fisketurneringen
-55	Hvis du gifter dig nu, kan du ikke skifte Rige,[ENTER]da kun ikke-gifte personer kan skifte[ENTER]Rige
-56	Rigeskifte:
+55	Hvis du gifter dig nu, kan du ikke skifte Rige,[ENTER]da kun ikke-gifte personer kan skifte Rige
+56	Rigeskifte
 57	Du bliver nød til at blive skilt, for at kunne[ENTER]skifte Rige.
 58	Du kan ikke skifte Rige mens du er forvandlet.
 59	Du kan først bruge denne genstand, når du ikke er[ENTER]forvandlet.
@@ -172,10 +172,10 @@
 172	Biologen Chaegirab, Uriels læring, søger dig. Gå[ENTER]hen til ham, og spørg om du kan hjælpe.
 173	Nu har jeg nok tue svampe. Godt arbejde! Som[ENTER]bevis på min taknemlighed, vil jeg give dig nogle[ENTER]Yang og mine forsknings resultater.
 174	Som belønning får du 200.000 erfaringspoints og[ENTER]20.000 Yang. Yderligere modtager du en hjelm +2.
-175	Jernhjelm
-176	Kæde hætte
-177	Forhånende hjelm
-178	Phønix hat
+175	Jernhjelm +2
+176	Kæde hætte +2
+177	Forhånende hjelm +2
+178	Phønix hat +2
 179	Undskyld, men denne tue svamp er af meget dårlig[ENTER]kvalitet og ubrugelig for mig. Bring mig venligst[ENTER]en anden en.
 180	Hjælp mig...[ENTER]Jeg studerer alle slags blomster i dette Rige.[ENTER]Der er masse af arbejde jeg skal lave og jeg har[ENTER]ikke tid til at gå på ekspedition.[ENTER]Hjælp mig venligst.
 181	Jeg er igang med nogle studier omkring tue-svampe[ENTER]og har brug for adskillige svamper.[ENTER]Kan du hjælpe mig og finde nogle tue-svamper?[ENTER]10 stk burde være nok.[ENTER]Vær venlig og hjælpe mig! Giv mig altid en af[ENTER]gangen, så jeg kan undersøge svampen!
@@ -205,7 +205,7 @@
 205	Som belønning vil biologen Chaegirab give dig[ENTER]2000 erfaringspoint og 3000 Yang. Du vil også[ENTER]modtage en rustning +3.
 206	Biologen Chaegirab, Uriels læring, søger dig. Gå[ENTER]hen til ham, og spørg om du kan hjælpe.
 207	Munke pladerustning +3
-208	Azurblå dragt
+208	Azurdragt +3
 209	Rekviem-pladerustning +3
 210	Purpurklædning +3
 211	Undskyld, men denne klokkeblomst har lav[ENTER]kvalitet. Vær venlig og find en ny.
@@ -458,7 +458,7 @@
 458	Biologen Chaegirab:
 459	Oh! Denne Røde Spøgelsestræs Gren er det højeste[ENTER]kvalitet! Jeg vil starte min forskning med det[ENTER]samme.
 460	Men jeg har brug for
-461	 mere af dem!
+461	mere af dem!
 462	Prøv og find nogle![ENTER][ENTER]Og husk, at jeg har brug for tid til analyse. Jeg[ENTER]vil ikke være i stand til at undersøge den næste[ENTER]gren, før i morgen.
 463	Biologen Chaegirab:
 464	Du har samlet alle 40 grene! Tak.[ENTER]Nu har jeg bare brug for en[ENTER]Skovspøgelses-sjælesten til at hjælpe mig med at[ENTER]forstå de væsner bag disse levende træer. Vil du[ENTER]tage dig af dette for mig? Du kan finde den ved[ENTER]træerne i Rød Skov.
@@ -486,7 +486,7 @@
 486	Det er meningen at jeg skal give dig denne Purpur[ENTER]ibentræskiste. Pas godt på den.
 487	Dette er din belønning for at opfylde Chaegirab's[ENTER]anmodning.
 488	Som en belønning for opfyldelsen af Chaegirab`s[ENTER]anmodning, er din skade modstand mod angreb mod[ENTER]dig (PvP) permanent steget med 10%.
-489	Stigningen er permanent.
+489	Denne stigning er permanent.
 490	Biologen Chaegirab:
 491	Biologen`s anmodning
 492	Biologen's forskning
@@ -511,7 +511,7 @@
 511	Åh, du har fundet nogle notits![ENTER]Giv mig et sekund til at tjekke dem...
 512	Åh, fantastisk! Godt arbejde!
 513	Men jeg har brug for
-514	 mere af dem!
+514	mere af dem!
 515	Men jeg har brug for en anden %s af dem.
 516	Prøv og find nogle![ENTER][ENTER]Og husk, at jeg har brug for tid til at undersøge[ENTER]dem. Jeg vil ikke være i stand til at undersøge[ENTER]den næste, før imorgen.
 517	Du har samlet alle 50 notitser, det er[ENTER]fantastisk! Du har sikkert allerede gættet hvad[ENTER]jeg har brug for nu. Jeg mangler stadig en[ENTER]Lederens sjælesten. Så har jeg alt, hvad jeg har[ENTER]brug for. Du kan gøre det, kan du ikke? Få en[ENTER]Lederens sjælesten og bringe den til mig. Du kan[ENTER]få den fra Boss Monsterne.
@@ -539,7 +539,7 @@
 539	Og denne gang er det den blå ibentræskiste. Er du[ENTER]nysgerrig? Så åben den hurtigt!
 540	Dette er din belønning for at opfylde Chaegirab's[ENTER]anmodning.
 541	Som en belønning for opfyldelsen af Chaegirab[ENTER]anmodning, er din angrebs værdi for kampe mod[ENTER]andre spillere (PvP) permanent steget med 8%.
-542	Stigningen er permanent.
+542	Denne stigning er permanent.
 543	Seon-Pyeong:
 544	Seon-Pyeong's forskning
 545	Seon-Pyeong i Seungryong Dalen har brug for din[ENTER]hjælp. Gå til ham og se hvad der sker.
@@ -633,7 +633,7 @@
 633	hejsa, hvordan har du det?[ENTER]Er du interesseret i fremstilling af diverse[ENTER]eliksirer der kan øge din styrke eller har[ENTER]helende virkning? Jeg er læge og har beskæftiget[ENTER]mig med eliksirfremstilling.[ENTER]Jeg har fundet ud af adskillige opskrifter. Vil[ENTER]du prøve nogen?
 634	Raffinering af ting er et vigtigt håndværk. Er du[ENTER]interesseret i sådan nogen færdigheder? Jeg kan[ENTER]vise dig nogle af mine urte opskrifter. De er[ENTER]meget brugbare til at producere stærkere[ENTER]variationer af kendte eliksirer. Eller kan jeg[ENTER]lære dig hvordan man forvandler et hverdags bælte[ENTER]om til et mægtigt værktøj.
 635	Hemmelig opskrift
-636	Huahn-So
+636	Huahn-So:
 637	Jeg har fundet en gammel familie-opskrift.[ENTER]Med denne bliver du næsten usårlig![ENTER]Hahaha Jeg er nok den eneste her i landet, der[ENTER]kender denne opskrift. Med denne eliksir kan der[ENTER]i grunden ikke ske noget for personen.[ENTER]Ønsker du at afprøve?
 638	Jeg har brug for følgende ting for at være i[ENTER]stand til at forædle rustningen: %s.
 639	Materialer:
@@ -675,7 +675,7 @@
 675	Besejr Demon Vagterne for at modtage Grimasse[ENTER]Totemmet. Det vil tjene dig som nøglen til 6.[ENTER]sal.
 676	Besejr Charon og hans håndlangere!
 677	Du har bevist dit udmærket instikt og har ødelagt[ENTER]den korrekte metin-sten![ENTER]Du bliver sendt videre til 4. etage.
-678	I dæmontårnet ...
+678	I djævletårnet ...
 679	Du er ved den forseglede port på 4 sal. Du er nød[ENTER]til at åbne de fem antikke segl for at komme til[ENTER]næste sal. Stien som er fuld af væsner som vil[ENTER]vente på at kaste sig over dig. Nogen af dem har[ENTER]nøgler på sig. Få fat i nok nøglesten, til at[ENTER]åbne alle fem antikke segl og kom til 5. sal. Men[ENTER]pas på: Du har kun 20 minutter til det!
 680	Minutter tilovers: 15
 681	Du har åbnet nøgle stens seglet, og kan dermed gå[ENTER]videre til 5. etage. Den stolte Demon Konge er[ENTER]også på denne etage. Ødelæg alle de skabninger du[ENTER]møder der.
@@ -686,7 +686,7 @@
 686	Du ønsker at nå op på 6. etage af tårnet?[ENTER]Dette kræver adskillige færdigheder, smidighed og[ENTER]styrke hvis du vil overleve denne etage.[ENTER]Når du har opnået level 75 kan du teleporteres[ENTER]til denne etage.
 687	Du har den nødvendige erfaring og har derfor en[ENTER]god chance for at overleve de øverste etager. Du[ENTER]kan gå ind nu!
 688	Dæmontårn-vagt
-689	Afsted
+689	Afsted med dig
 690	Forlad tårnet!
 691	Din level er for lav.[ENTER]Det er ikke tilladt for dig at betræde de øvre[ENTER]etager. Kom tilbage når du er mere erfaren. Du[ENTER]skal mindst være level 75!
 692	Zin-Bong-In nøglen åbner porten til næste etage.[ENTER]Du kan finde dem ved at ødelægge Metin Sten.
@@ -702,7 +702,7 @@
 702	Minutter tilbage: 5
 703	Tiden er udløbet.
 704	De forkerte metin-sten forsvinder...
-705	Jeg vil dræbe dragen!
+705	Jeg vil gerne dræbe dragen!
 706	Du er ikke den første der forlanger adgang.[ENTER]Fortæl mig den hemmelige kode, ellers vil jeg[ENTER]ikke lukke dig ind!
 707	Det var ikke den rigtige kode!
 708	Jeg prøver igen
@@ -713,7 +713,7 @@
 713	%s's gruppe forsøger at dræbe den blå drage!
 714	Du har ikke nok nøgler! For at aktivere portalen[ENTER]skal jeg bruge
 715	Du kan få det fra de onde ledere Yonghan og[ENTER]Huashin.
-716	Jeg vil forlade dette sted!
+716	Jeg vil gerne forlade dette sted
 717	Jeg tager dig tilbage til grottens indgang.
 718	Ja, gør det.
 719	Nej, jeg bliver her.
@@ -735,7 +735,7 @@
 735	Nej, det lyder alt for besværligt.
 736	Fint, det er din beslutning.
 737	Stjernerne er ikke på linje, du er kommet for[ENTER]tidligt! Du skal vente i %s.
-738	Resterende tid
+738	Resterende tid:
 739	Indsaml Materialer
 740	Materialer til Forvandlingskuglen
 741	Materialer Indsamlet
@@ -745,14 +745,14 @@
 745	Du har ikke formået at indsamle de krævede[ENTER]materialer inden for den tilladte tid.
 746	Ønsker du at give mig %s af disse materialer?
 747	Desværre har du ikke råd til mine tjenester.[ENTER]Jeg har brug for 150.000 Yang fra dig.
-748	Her, det var så lidt.
+748	Værsgo!
 749	Nej tak, jeg vil hellere beholde dem selv!
 750	Mange tak, du har arbejdet hårdt.[ENTER]Alt gik efter planen. Jeg er tydeligvis ikke så[ENTER]rusten som jeg troede. Her, tag dette:
 751	Oh gud, mine skøre gamle knogler har svigtet mig[ENTER]igen. Jeg var ikke i stand til at lave nogen[ENTER]Forvandlingskugler. Tillad mig at give dig denne[ENTER]genstand som kompensation:
 752	Som du ønsker.
-753	Delt drage sten?!
+753	Dragestens Skår?!
 754	I din hånd ligger et fragment af en sten. Det[ENTER]skinner, som om det er fuld af hemmelighedder, og[ENTER]du kan mærke dets magt, mens det flyder igennem[ENTER]dig.[ENTER]Hvad er det for en slags sten? Tag den med til[ENTER]alkymisten. Han vil være i stand til at hjælpe[ENTER]dig videre.
-755	Delt drage sten?!
+755	Dragestens Skår?!
 756	Det er et fragment af en drage sten - en ekstrem[ENTER]sparsom og værdifuld krystal med en kæmpe magt.[ENTER]Det bliver dat at en sådan sten er sjælen af en[ENTER]drage. Helt utrolig smuk![ENTER]Kan du mærke dens magt, mens den flyder igennem[ENTER]dig så snart du samlede den op og bar den?[ENTER]Bring mig ti af disse delte drage sten mere. Jeg[ENTER]kan lave dem til en komplet sten.
 757	Drage stens forvandling
 758	Vær ikke så utålmodig. Jeg kan kun forvandle ti[ENTER]dele til en drage sten. Bliv ved med at lede!
@@ -771,7 +771,7 @@
 771	Drageøjets Styrke
 772	Resterende varighed af Drageøjets Styrke: %d
 773	Vælg.
-774	Es gibt keine Drachensteinsplitter mehr
+774	Der er ikke flere delte drage sten.
 775	Giv mig Drageøjets Styrke
 776	Hallo! Du har allerede modtaget Drageøjets Styrke[ENTER]i dag. Denne process svækker mig så meget, at jeg[ENTER]kun kan hjælpe dig en gang om dagen. Kom igen i[ENTER]morgen!
 777	Hallo! Jeg vil vædde med du er her for styrke af[ENTER]et drage øje. Korrekt? Godt så, værsgo. Held og[ENTER]lykke med din jagt! Jeg håber du vil finde nok[ENTER]delte drage sten til ti drage sten!
@@ -806,7 +806,7 @@
 806	Denne genstand er ikke egnet til min teknologi.[ENTER]Bring mig noget andet.
 807	Denne genstand har ikke nok energi. Bring mig et[ENTER]som er minimum level 35 - det er den eneste måde[ENTER]jeg er istand til at udtrække energi med min[ENTER]teknologi.
 808	Skal jeg tilintetgøre denne genstand?
-809	Ja
+809	Ja!
 810	Nej, ikke enenu!
 811	Jeg har fejlet - desværre jeg kunne ikke udtrække[ENTER]nogle Energi Fragmenter. Måske vil jeg have bedre[ENTER]held næste gang.
 812	Vidunderligt! Det lykkedes mig at finde %d Energi[ENTER]Fragmenter.[ENTER]Værsgo.
@@ -815,7 +815,7 @@
 815	Du har ikke nok Energi Fragmenter.[ENTER]Jeg kan ikke producere en Energi Krystal med det.[ENTER]Kom igen når du har samlet mindst %d fragmenter.
 816	Meget godt, du har de %d nødvendige Energi[ENTER]Fragmenter. Jeg kan producere en Energi Krystal[ENTER]med det. Vent venligst et øjeblik. Jeg vil prøve[ENTER]men kan ikke garantere at det virker.
 817	Alt er klart til at smelte Fragmenterne ind i en[ENTER]Energi Krystal. Dog, jeg er nød til at leve af[ENTER]noget også og værktøj falder ikke ned fra himlen.[ENTER]Jeg kræver et lille omkost dækning på %d Yang. Er[ENTER]du villig til at betale?
-818	Naturligvis.
+818	Selvfølgelig!
 819	Nej, ikke lige nu.
 820	Okay, jeg respektere din beslutning.[ENTER]Kom igen når du har ændret din mening og[ENTER]alligevel har brug for Energi Krystallen.
 821	Undskyld, du er nød til at betale først. Jeg er[ENTER]ikke en velgørenhedsorganisation.[ENTER]Det er bare en forretning - giv mig pengene og[ENTER]jeg kan udføre mit arbejde.
@@ -856,7 +856,7 @@
 856	Fandt du nogle påskeæg?
 857	Du er nødt til at give mig %d æg for det!
 858	Ok, jeg tager det!
-859	Nej, alligevel ikke
+859	Nej, det vil jeg ikke!
 860	Tak for æggene. God fornøjelse med din Påskegave!
 861	Tom kurv:
 862	Vil du gerne have denne genstand?
@@ -883,13 +883,13 @@
 883	Dig igen! Vil du vide en hemmelighed? Med lidt[ENTER]held, vil du finde en Jack O'Lantern Maske kort i[ENTER]disse Halloween Kister.
 884	Du kan bruge dette kort til at modtage en af[ENTER]disse uhyggelige Jack O'Lantern masker. Vil du[ENTER]have en maske?
 885	Har du ikke et Jack O'Lantern Maske Kort?[ENTER]Så får du bare ikke en Jack O'Lantern maske![ENTER]Haha!
-886	Historiker:
+886	Historiker?
 887	Historiker:
 888	Lær af fortiden og vær åben for fremtiden![ENTER]Hvordan kan jeg assistere?
 889	Undskyld, kender vi hinanden?
 890	Beklager mine mannerer, jeg glemte at introducere[ENTER]mig selv.[ENTER]Jeg er den meget berejste historiker. Hvis du har[ENTER]nogle spørgsmål til historien, så vær ikke bleg[ENTER]for at spørge mig!
 891	Det er mig en ære at lære dig at kende.[ENTER]Jeg burde besøge dig oftere.
-892	Was Süßes
+892	Noget sødt
 893	En skam. Til vi mødes igen.
 894	Så forstår du hvad jeg mener. Hvis du vil have[ENTER]disse søde sager, så bring mig et stykke brød.
 895	Jeg vil give dig en af de søde for 10 brød.[ENTER]Er du med på det?
@@ -959,7 +959,7 @@
 959	Kan du reparere sværdet?
 960	Det er et vidunderligt sværd! Det tilhørte Mirine[ENTER]gjorde det ikke? Jeg hørte at du hjalp hende.[ENTER]Flot arbejde, du ser ud til at være en retfærdig[ENTER]og ærlig person, så jeg vil ikke kræve betaling[ENTER]for at reparere våbnet. Vent et øjeblik...
 961	Her, sværdet er så godt som nyt. Et sandt smukt[ENTER]våben. Tag det min ven.
-962	Du får et sølvsværd +3.
+962	Du har fået et Sølvsværd +2.
 963	Du har fået et Orkidesværd +2.
 964	Du har fået et Halvandenhåndssværd +2.
 965	Du har fået et Barbarsværd +2.
@@ -976,7 +976,7 @@
 976	Pludselig kommer der et vindstød.[ENTER]Brevet som jeg havde med mig med opholdsstedet af[ENTER]den erfarende soldat er væk.
 977	Jeg fandt den erfarnede soldat.
 978	Pludselig, ud af det blå, bogstaverne går op i[ENTER]røg og bliver til sort aske. Derefter
-979	Wärme deinen Körper
+979	varme strømmer gennem kroppen.
 980	Den erfarende soldat velsigner dig!
 981	Den erfarende soldat velsigner dig!
 982	Brevet med opholdsstedet af en erfarende soldat[ENTER]kan velsigne en nybegynder, når denne finder den[ENTER]erfarende soldat.
@@ -998,13 +998,13 @@
 998	Det mislykkes at finde den erfarende soldat.
 999	Søger %s
 1000	Hvor kan jeg købe en rød eliksir?
-1001	Landsby vagt:
+1001	Landsby vagt
 1002	Landsby vagt:
 1003	Du kan få den røde eliksir fra handelsdamen. Hun[ENTER]er derovre. Hvis du ikke kan se hende, så gå i[ENTER]retning af den blinkende cirkel på de store kort,[ENTER]eller den blinkende røde prik på minikortet!
 1004	Handelsdame:
-1005	Handelsdame:
+1005	Handelsdame
 1006	Vær hilset eventyrer![ENTER]Oh, landsbyens vagt har sendt dig? Han har brug[ENTER]for en rød drik? Jeg vil give dig fem af dem.[ENTER]Værsgo. Disse er til regenerering af livskraft,[ENTER]og smager faktisk ret godt.
-1007	Du er ny her, men jeg er overbevist om, at du[ENTER]snart vil være en regelmæssig kunde. Derfor får[ENTER]du disse eliksirer gratis. Vi[ENTER]ses!
+1007	Du er ny her, men jeg er overbevist om, at du[ENTER]snart vil være en regelmæssig kunde. Derfor får[ENTER]du disse eliksirer gratis. Vi ses!
 1008	Du har fået 5 røde eliksirer af handelsdamen.
 1009	De røde eliksire gendanner livspoint (HP).
 1010	Tilbage til vagten
@@ -1017,7 +1017,7 @@
 1017	Velkommen til vores by, eventyrer! Jeg ville være[ENTER]dig taknemmelig hvis du ville gøre mig en[ENTER]tjeneste. Hvis jeg giver dig 200 Yang, vil du så[ENTER]købe en rød eliksir til mig?[ENTER]Du kan få den fra handelsdamen. Jeg arbejder for[ENTER]tiden, så jeg kan desværre ikke forlade[ENTER]landsbypladsen.
 1018	Ja
 1019	Du har fået 200 Yang af vagten. Med disse penge[ENTER]kan du købe udrustning hos handelsmænd eller[ENTER]bruge håndværkernes service. Hos handelsdamen kan[ENTER]du få en rød eliksir.
-1020	UKENDT KNAP [%s]
+1020	inactive key [%s]
 1021	Køb en rød eliksir
 1022	Køb en rød eliksir hos handelsdamen og aflever[ENTER]den til landsby vagten.
 1023	Jeg er ikke sikker på, at jeg er dygtig nok til[ENTER]at forbedre denne fiskestang.
@@ -1039,61 +1039,61 @@
 1039	Vil du gerne gå gennem Am-heh Gorge og møde din[ENTER]skæbne?
 1040	Entrer
 1041	Peut être plus tard
-1042	Vous ne pouvez passer que par la Gorges d Am Heh après avoir complété la quête du niveau 103
-1043	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1044	Le temps pour rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1045	Un seul groupe peut prendre d assaut la forteresse du dragon rouge Vous aurez également besoin d un laissez passer pour entrer
-1046	Je ne peux vous laisser entrer que si vous avez un laissez passer
-1047	Le niveau de tous les membres du groupe doit être d au moins 100 Sinon je ne peux pas vous laisser passer
-1048	Je ne vous laisserai passer que si tous les membres du groupe ont au moins le niveau 100
+1042	Du må først komme igennem Am-heh Gorge, når du[ENTER]har gennemført level 103 missionen.
+1043	Nedkølings tiden for at komme ind igen i den røde[ENTER]drages skov er endnu ikke udløbet.
+1044	Nedkølings tiden for at komme ind igen i den røde[ENTER]drages skov er endnu ikke udløbet.
+1045	Kun en gruppe må storme ind i den røde drage skov.[ENTER]Endvidere er et passage dokument påkrævet for at[ENTER]få adgang.
+1046	Jeg kan kun tillade dig at komme ind, når du er i[ENTER]besiddelse af et passage dokument.
+1047	Levelet på alle medlemmer af gruppen skal være[ENTER]mindst level 100. Ellers kan jeg ikke lade dig[ENTER]passere.
+1048	Jeg vil først lade dig passere igennem, når alle[ENTER]medlemmer af gruppen er mindste level 100.
 1049	Forteresse du dragon rouge
-1050	Voulez vous entrer dans la forteresse du dragon rouge
+1050	Vil du gerne igenmme til den røde drages skov?
 1051	Entrer
 1052	Peut être plus tard
-1053	Seul le chef du groupe peut demander l admission
-1054	J apprécie votre courage mais vous serez seul à vous ruiner dans la forteresse du dragon rouge Mettez en place un groupe fort et je vous laisserai rentrer
+1053	Kun en gruppeleder kan bede om adgang.
+1054	Jeg sætter pris på dit mod, men du vil ikke løbe[ENTER]til din død i den røde drages skov alene. Lav en[ENTER]stærk gruppe og jeg vil give dig adgang.
 1055	Lorsque le temps est écoulé le groupe est téléporté hors de la forteresse
 1056	Temps restant Minute n
-1057	Votre temps est écoulé Dans dix secondes vous serez téléporté aux portes de la forteresse
-1058	Dans dix secondes le groupe sera téléporté hors de la forteresse du dragon rouge
-1059	Réveillez la Gorges d Am Heh
-1060	Seul le chef peut réveiller la gorge de Am heh
-1061	La Gorge d Am heh est réveillée Maintenant personne n entre ni ne sort
-1062	Les portes de la forteresse du dragon rouge se ferment pendant une heure
-1063	Temps restant 60 Minute n
-1064	Mission Osez entrer dans l anneau des démons et en sortir victorieux
-1065	Tous les démons n ont pas encore été vaincus
+1057	Din tid er udløbet. Du vil blive teleporteret til[ENTER]foran fæstnings portene om ti sekunder.
+1058	Gruppen vil blive teleporteret fra den røde drage[ENTER]skov om ti sekunder.
+1059	Væk Am-heh Gorge
+1060	Kun lederen må vække Am-heh Gorge!
+1061	Am-heh Gorge er blevet vækket. Nu kan ingen komme[ENTER]ind eller ud.
+1062	Portene til den røde drages skov vil være lukket[ENTER]i en time.
+1063	Tid tilbage: 60 minut(ter)
+1064	Opgave: begiv dig ind i dæmons ring og bliv[ENTER]sejrherre.
+1065	Ikke alle dæmoner er blevet besejret endnu.
 1066	Restant
 1067	Tâche Trouvez l engrenage en or et activez le mécanisme caché dans la Stèle de l Isfet
-1068	Le mécanisme de la stèle de l Isfet ne peut être déclenché qu avec l engrenage en or Revenez quand la tâche a été accomplie
-1069	Mission vaincre Ignator gardien des braises
-1070	Ignator n a pas encore été vaincu Travailler dur ou recevoir sa damnation éternelle Revenez lorsque la tâche est terminée
-1071	Tâche Trouvez les Pierre de Maât et placez les dans le bon ordre sur les sept stèles de l Isfet
-1072	Si vous utilisez la Pierre de Maât sur la mauvaise stèle elle se brisera
-1073	L erreur est humaine Par conséquent choisissez judicieusement pour résoudre le puzzle Renvenez lorsque la tâche est terminée
-1074	Mission Seuls ceux qui n ont pas peur de la chaleur accablante vont détruire le Metin du Purgatoire
-1075	Laissez le Metin du Purgatoire se transformer en cendres et revenez lorsque la tâche sera accomplie
+1068	Mekanismen i Isfet stål kan kun blive trigget med[ENTER]det gyldne tandhjul. Kom tilbage, når den opgave[ENTER]er gennemført.
+1069	Opgave: besejr Ignitor, glødens vogter.
+1070	Ignitor er endnu ikke besejret. Prøv hårdere[ENTER]eller bliv mødt af hans evige fordømmelse. Kom[ENTER]tilbage, når opgaven er gennemført.
+1071	Opgave: led efter Maats sten og plaser dem i de[ENTER]syv Isfet stål i den rigtige rækkefølge.
+1072	Hvis du bruger Maats sten i den forkerte stål,[ENTER]vil det gå i stykker.
+1073	Det er kun menneskeligt at lave fejl, så vælg med[ENTER]omtanke for at løse puslespillet. Kom tilbage når[ENTER]opgaven er blevet gennemført.
+1074	Opgave: kun dem, som ikke viger fra den syngende[ENTER]varme, vil være i stand til at besejre[ENTER]Skærsildens ild Metin.
+1075	Reducer Skærsildens ild Metin til aske. Kom[ENTER]tilbage, når opgave er gennemført.
 1076	Tous les démons ont été vaincus
-1077	Visitez la Gorge d Am heh pour ouvrir un autre Verrou du destin
-1078	La stèle d Isfet a été détruite
-1079	Cet engin était un faux et a été détruit Trouvez l original
-1080	Ignator gardien des braises a été tué
-1081	C était un choix judicieux Détruire la prochaine stèle
-1082	C était un choix judicieux Détruire la prochaine stèle
-1083	Mauvais ordre La pierre du Maat a été détruite
-1084	C était un choix judicieux Détruire la prochaine stèle
-1085	C était un choix judicieux Détruire la prochaine stèle
-1086	C était un choix judicieux Détruire la prochaine stèle
-1087	Det var et klogt valg. Ødelæg nu det sidste stål[ENTER]og Maat vil sejre over Isfet.
-1088	La Metin du Purgatoire a été détruite
-1089	Razador a été tué
-1090	Tous les combattants seront téléportés hors du Temple du Dragon dans une minute
-1091	Pour passer par la Gorge d Am heh votre chef doit avoir au moins le niveau 104
-1092	Votre force n est pas suffisante pour traverser la Gorge d Am heh Revenez dès que vous atteignez le niveau 104 ou supérieur
-1093	Vous êtes à l extérieur des portes de la forteresse du dragon rouge depuis plus de cinq minutes et vous ne pouvez plus rentrer
-1094	Le temps de rentrer dans la forteresse du dragon rouge n a pas encore expiré
-1095	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe nécessite un passe Les joueurs suivants n en portent pas actuellement
-1096	ATTENTION Pour entrer dans la forteresse du dragon rouge chaque membre du groupe doit avoir atteint le niveau 100 Les joueurs suivants n ont pas atteint le niveau pour le moment
+1077	Besøg Am-heh Gorge for at åbne en skæbne lås mere.
+1078	Isfet stål er blevet ødelagt.
+1079	Dette gyldne tandhjul var falsk og er blevet[ENTER]ødelagt.[ENTER]Find den originale.
+1080	Ignitor, glødens vogter, er blevet besejret.
+1081	Det var et klogt valg. Ødelæg nu det næste Stel.
+1082	Det var et klogt valg. Ødelæg nu det næste Stel.
+1083	Forkert sekvens. Som resultat er Maat stenen[ENTER]blevet ødelagt.
+1084	Det var et klogt valg. Ødelæg nu det næste Stel.
+1085	Det var et klogt valg. Ødelæg nu det næste Stel.
+1086	Det var et klogt valg. Ødelæg nu det næste Stel.
+1087	Det var et klogt valg. Ødelæg nu det sidste Stel[ENTER]og Maat vil sejre over Isfet.
+1088	Skærsildens ild Metin er blevet ødelagt.
+1089	Razador er blevet besejret.
+1090	Alle krigere vil blive teleporteret fra dragens[ENTER]tempel om et minut.
+1091	For at gå gennem Am-heh Gorge skal din leder[ENTER]mindst være level 104.
+1092	Din styrke er ikke tilstrækkelige for at gå[ENTER]gennem Am- heh Gorge. Kom tilbage når du er nået[ENTER]level 104.
+1093	Du har hvilet foran portene til den røde drages[ENTER]skov i mere end fem minutter, og du må ikke[ENTER]længere komme ind.
+1094	Nedkølings tiden for at komme ind igen i den røde[ENTER]drages skov er endnu ikke udløbet.
+1095	ADVARSEL! For at kunne få adgang til den røde[ENTER]drages skov, skal hvert medlem af gruppen have et[ENTER]passage dokument. De følgende spillere har på[ENTER]nuværende tidspunkt ikke et:
+1096	ADVARSEL: For at være i stand til at få adgang[ENTER]til den røde drages skov, må hvem medlem af[ENTER]gruppen være nået level 100. De følgende spillere[ENTER]har IKKE nået dette level:
 1097	The group from %s has killed the Razador!
 1098	Jinno-riget betræder det hellige land.
 1099	Deltagelse ikke muligt!
@@ -1132,7 +1132,7 @@
 1132	Du vil have en del uheld, og du har ikke købt[ENTER]talismanen mod det onde.. Er du interesseret i at[ENTER]købe min rigdom-talisman?
 1133	Ja, jeg køber den.
 1134	Nej, den har jeg ikke brug for.
-1135	Jeg er venlig, men jeg kan ikke give jer nogen[ENTER]talisman. Hvis i ønsker at modstå uheld, burde i[ENTER]betale en fornunftig pris for denne[ENTER]talisman.
+1135	Jeg er venlig, men jeg kan ikke give jer nogen[ENTER]talisman. Hvis i ønsker at modstå uheld, burde i[ENTER]betale en fornunftig pris for denne talisman.
 1136	Yongan
 1137	Joan
 1138	Pyungmoo
@@ -1146,7 +1146,7 @@
 1146	Sohan Bjerget
 1147	Doyyumhwan
 1148	Desert Yongbi
-1149	Temple Hwang
+1149	Hwang-Tempel
 1150	Grotte de l exil
 1151	Nachricht der Turnier-Leitung
 1152	Willkommen zum großen Metin2-Turnier! In deinem[ENTER]Inventar findest du die Rätselhafte Truhe. Sobald[ENTER]du mit der rechten Maustaste darauf klickst,[ENTER]wirst du in das Feuerland teleportiert - und die[ENTER]Kämpfe können beginnen!
@@ -1246,7 +1246,7 @@
 1246	Hvad? Du vil aflevere din guldbarre? Hvorfor i[ENTER]alverden har du så overhoved købt den? Hvis du[ENTER]absolut vil bringe den tilbage, så har jeg intet[ENTER]imod det.[ENTER]Sort-vind-banden holder vagt, så jeg kan ikke[ENTER]gøre det for ofte. Ønsker du stadig at give den[ENTER]tilbage igen?
 1247	Tilbage.
 1248	Behold.
-1249	Her er dine Yang.[ENTER]Well, nu bliver jeg nød til at bringe den[ENTER]tilbage!
+1249	Her er dine Yang.[ENTER]Well, nu bliver jeg nød til at bringe den tilbage!
 1250	Har du overhoved guldbarrer?[ENTER]Jeg er meget beskæftigt! Så venlig kun at komme[ENTER]hvis du ønsker at handle.
 1251	'Et offer af sort-vind-bande'-opgaven er kun[ENTER]tilgængeligt for karakterer med level 30 eller[ENTER]højere.
 1252	Vær forsigtigt! Sort-vind-krigerne er blevet[ENTER]mistroiske. Det er bedst, at man forholder sig[ENTER]absolut stille. Lev i fred.
@@ -1326,12 +1326,12 @@
 1326	Uden en ånde-sten kan jeg ikke fremstille det.
 1327	Våbensmed:
 1328	Oh, du er medlem af min orden! Hvis du ønsker at[ENTER]opgradere dit våben, så bring dem til mig, og[ENTER]ikke til de nybegyndere inde i byen. Min[ENTER]succesrate er 10% højere. Vores medlemmer får[ENTER]også 5% rabat. Bare giv mig våbnet du ønsker at[ENTER]opgradere, og jeg vil klare arbejdet.
-1329	Mit navn er Sanley, og jeg er ansvarligt for at[ENTER]forbedre våben.[ENTER]Jeg er meget bedre end landsby-smeden![ENTER]Når jeg forbedrer dit våben øges sandsynligheden[ENTER]for succes med 10%.[ENTER]Giv mig det våben, der skal[ENTER]forbedres
+1329	Mit navn er Sanley, og jeg er ansvarligt for at[ENTER]forbedre våben.[ENTER]Jeg er meget bedre end landsby-smeden![ENTER]Når jeg forbedrer dit våben øges sandsynligheden[ENTER]for succes med 10%.[ENTER]Giv mig det våben, der skal forbedres
 1330	Rustningssmed:
 1331	Ah, du er medlem af min orden! Det betyder at du[ENTER]kan give mig din rustning, skjold, sko og hjelm[ENTER]til opgradering. Min succesrate er 10% højere end[ENTER]by smedjen! Jeg kan også give medlemmer i ordenen[ENTER]5% rabat. Det er simpelt giv mig udstyret du[ENTER]ønsker at få opgraderet.
 1332	Mit navn er Stanton. Jeg er ansvarlig for[ENTER]opgradering af rustninger. Jeg er meget bedre end[ENTER]bysmedjen: Min succesrate er 10% højre. Giv mig[ENTER]simpelt din rustning som du ønsker at jeg skal[ENTER]forbedre.
 1333	Juvelér:
-1334	Oh, du er medlem i min Orden![ENTER]Din succes-sandsynlighed øges med 10% når du[ENTER]lader dine smykker forbedre hos mig.[ENTER]Yderligere giver jeg vores medlemmer 5% rabat.[ENTER]Jeg kan forbedre armbånd, ørering og kæder.[ENTER]Giv mig dit smykke, der skal blive[ENTER]forbedres!
+1334	Oh, du er medlem i min Orden![ENTER]Din succes-sandsynlighed øges med 10% når du[ENTER]lader dine smykker forbedre hos mig.[ENTER]Yderligere giver jeg vores medlemmer 5% rabat.[ENTER]Jeg kan forbedre armbånd, ørering og kæder.[ENTER]Giv mig dit smykke, der skal blive forbedres!
 1335	Mit navn er Starbuck, og jeg er ansvarligt for at[ENTER]forbedre smykker.[ENTER]Jeg er meget bedre end landsby-smeden![ENTER]Når jeg forbedrer dine smykker øges[ENTER]sandsynligheden for succes med 10%.[ENTER]Jeg kan forbedre armbånd, ørering og kæder.[ENTER]Giv mig det smykke, der skal forbedres!
 1336	Hent bogen
 1337	Forsynets Bog kræves for at oprette en Orden.
@@ -1363,7 +1363,7 @@
 1363	Tid indtil opløsning: %s dag(e)
 1364	Ventetid
 1365	Tidligste chance for at gentage forsøget: %s[ENTER]time(r)
-1366	Resterende tid
+1366	Resterende tid:
 1367	Tilpas her og nu
 1368	Registrer her og nu.
 1369	Din Orden har følgende kampresultater:[ENTER][DELAY value;0][ENTER]|Ordensnavn |Points |Vundet |Uafgjort |Nederlag[ENTER]%s[/DELAY][ENTER]
@@ -1377,7 +1377,7 @@
 1377	Køb en væddemåls seddel til dit Rige.[ENTER][ENTER]1. For alle ordenskrige, er der en[ENTER]forudannonceret forudsigelse af det mulige[ENTER]resultat, annoncerende de potentielle vindere.[ENTER]2. Du kan købe en væddemåls seddel, herpå kan du[ENTER]skrive om du tror at den orden du tror på vil[ENTER]opnå det forudsagte resultat.[ENTER]3. Valget bliver bestemt af vædde-butikken. Efter[ENTER]Ordenskrigen får du en meddelelse om du vandt[ENTER]eller tabte.[ENTER][ENTER]*10% af det vundne beløb bliver udbetalt til dit[ENTER]Rige.
 1378	%s imod %s
 1379	Slagforvalter:
-1380	 med
+1380	med
 1381	Pt. er der ingen Ordens-krig, som du kan sætte[ENTER]væddemål på.
 1382	For hvilken Ordens-kamp vil du købe vædde-sedler?
 1383	Listen viser, at du allerede har købt en[ENTER]væddeseddel for denne Ordenskamp.[ENTER]Du kan kun købe en væddeseddel for hver Orden.
@@ -1446,12 +1446,12 @@
 1446	Du bør ikke sætte dig selv i fare uden grund![ENTER]Bring riskagerne til Wonda-Rim. Han vil belønne[ENTER]dig for dem. Jo flere riskager du aflevere til[ENTER]ham, jo mere værdifuld vil din belønning være.
 1447	Du har bragt alle vores forsyninger tilbage! Vi[ENTER]skylder dig en stor tak. Uden dig, ville vi have[ENTER]været i virkelige problemer!
 1448	En stor del af vores forsyninger mangler stadig.[ENTER]Kan vi fortsætte med at stole på dig?
-1449	Selvfølgelig.
+1449	Selvfølgelig!
 1450	Jeg vil hjælpe jer alle senere.
 1451	Jeg vil vente på dig her.
 1452	Opgave %s[ENTER]Du kan acceptere denne opgave i alt ti gange.
 1453	Vi ville have være fortabt uden dig. vil du[ENTER]fortsætte med at hjælpe? En stor del af vores[ENTER]forsyninger mangler stadig.
-1454	Ja, jeg fortsætter
+1454	Jeg vil forsætte!
 1455	Jeg kommer tilbage senere.
 1456	Du er en modig kriger. Vær rar at fortsætte![ENTER][ENTER]Opgave %s[ENTER]Du kan acceptere denne opgave i alt ti gange.
 1457	Helveds Hund
@@ -1585,7 +1585,7 @@
 1585	Hvordan kæmper man fra en hest?
 1586	Stald-knægt:
 1587	Din hest er blevet fuldt uddannet. Du bør[ENTER]koncentrere dig om at styrke din hest nu.
-1588	Du har brug for en heste medalje, for at træne[ENTER]din hest.[ENTER]Resultatet vil blive noteret i[ENTER]den.
+1588	Du har brug for en heste medalje, for at træne[ENTER]din hest.[ENTER]Resultatet vil blive noteret i den.
 1589	Heste har brug for pauser.[ENTER]Prøv igen imorgen.
 1590	Din hest er meget udmattet.[ENTER]Giv den en lille pause.
 1591	Din hest er meget sulten.[ENTER]Giv den noget at spise.
@@ -1608,7 +1608,7 @@
 1608	Hestetræning lykkes
 1609	Dit heste-level er %s
 1610	Tag tilbage til stald-knægten for at vidreuddanne[ENTER]din hest til en eksperthest.
-1611	For at få ekspert level, bliver du nød til at[ENTER]trænere indtil din hest har nået level[ENTER]20.
+1611	For at få ekspert level, bliver du nød til at[ENTER]trænere indtil din hest har nået level 20.
 1612	Uden heste medalje kan du ikke nedskrive dine[ENTER]fremskridt med hesten.
 1613	Dræb Chuong fra hesteryg Står du af, har du tabt.
 1614	Dræb stolt ork-general!
@@ -1668,7 +1668,7 @@
 1668	For at kalde på hesten, skal du bestå[ENTER]kvalifikations-prøven.
 1669	For at kalde på begynder hesten, har du brug for[ENTER]et hestebillede.
 1670	Den erfarne hest blev tilkaldt.
-1671	Du har tabt et hestebillede![ENTER]For et gebyr på 400.000 Yang får du et nyt af[ENTER]mig.
+1671	Du har tabt et hestebillede![ENTER]For et gebyr på 400.000 Yang får du et nyt af mig.
 1672	Det virkede ikke - den mellemliggende hest kunne[ENTER]ikke tilkaldes. Du kan forøge din chance for[ENTER]succesfuldt at tilkalde hesten ved at træne heste[ENTER]tilkaldeegenskaber.
 1673	Din mentale styrke er for lav. Du har brug for[ENTER]minimum 200 magi points for at tilkalde[ENTER]mellemliggende hest.
 1674	For at tilkalde en hest til en ekspert rytter,[ENTER]skal du bruge en Militær-hestebog.
@@ -1682,7 +1682,7 @@
 1682	Dette er det ny udleverede hestebillede. Tab det[ENTER]ikke igen.
 1683	Du har ikke nok Yang.
 1684	Ny våben-hestebog
-1685	Du har mistet din Våben-hestebog![ENTER]Gebyr for en ny ligger på 500.000[ENTER]Yang.
+1685	Du har mistet din Våben-hestebog![ENTER]Gebyr for en ny ligger på 500.000 Yang.
 1686	Dette er din nye Våben-hestebog. Tab den ikke[ENTER]igen.
 1687	Du har ikke nok Yang.
 1688	Ny Militær-hestebog
@@ -1714,7 +1714,7 @@
 1714	Jeg ønsker ikke at sige dette igen: Hvis du[ENTER]ønsker at ride på en hest, skal du have et[ENTER]hestebilled med dig!
 1715	Hvis du ejer våbenhestebogen kan du angribe dine[ENTER]modstandere fra ryggen af din hest. Jeg vil teste[ENTER]din kamp evne erfaring og dine rytteregenskaber.[ENTER]Drag til ørkenen og dræb nogle Skorpion[ENTER]bueskytter. Du kan gå der med en gruppe, men DU[ENTER]er nød til at være gruppeleder.
 1716	Okay, kom igen senere.
-1717	UKENDT KNAP [%s]
+1717	inactive key [%s]
 1718	Jeg kan ikke se nogen grund til at du ikke skulle[ENTER]have modtaget våbenhestebogen. Måske skulle du[ENTER]konsultere en Game Master.
 1719	Du har brug for en heste medalje, for at starte[ENTER]våben-hestebog opgaven.[ENTER]Heste medaljen findes i abe-grotten.
 1720	Skytter tilbage
@@ -1728,13 +1728,13 @@
 1728	Du kan gå i en gruppe, men kun gruppelederen får[ENTER]tilregnet det
 1729	Fremskridt med Militær-hestebog...
 1730	Dræb 300 dæmon bueskytter på 30 minutter.[ENTER][ENTER]Du kan gå i en gruppe, men kun gruppelederen får[ENTER]tilregnet det
-1731	Er du sikker på, du ønsker at afbryde[ENTER]testen?
+1731	Er du sikker på, du ønsker at afbryde testen?
 1732	Ja
 1733	Haha - var bare for sjov!
 1734	Okay. Held og lykke med næste test.
 1735	Du kan ikke forbedre en død hest![ENTER]Gå, og led efter urter fra aber og bring din hest[ENTER]tilbage i livet. Så kan vi snakke om forbedringer[ENTER]af din hest.
 1736	Hvis du ønsker at bestå prøven har du ikke tid[ENTER]til at hænge her! Drag ud og dræb Dæmon[ENTER]bueskytterne!
-1737	UKENDT KNAP [%s]
+1737	inactive key [%s]
 1738	Tilbage til stald-drengen
 1739	Rapporter resultaterne af prøven til[ENTER]stald-knægten.
 1740	Egnethedsprøve status
@@ -1811,25 +1811,25 @@
 1811	Du hast die Herausforderung angenommen zu töten
 1812	Dræb %s.
 1813	Momentan müssen noch getötet werden um den Jagdauftrag abzuschließen
-1814	 Stk af:
+1814	Stk af:
 1815	Informationer til jagt-opgaven
-1816	Dræb målet!
+1816	![ENTER]Dræb! :
 1817	Dræb %s!
 1818	show_mob_pos: map_index(%s) < 0
 1819	show_mob_pos: map_index(%s)
 1820	show_mob_pos: special.lvq_map[map_index(%s)] is nil
 1821	addmapsignal(%s,%s)
 1822	Resterende antal
-1823	Dræb målet!
+1823	![ENTER]Dræb! :
 1824	Antal mål
 1825	Belønning: %s%% erfaring
-1826	Erfaring
+1826	% erfaring
 1827	Mission afsluttet.
 1828	Mission:
 1829	Mission afsluttet.
-1830	Udmærket, du har afsluttet denne[ENTER]mission!
+1830	Udmærket, du har afsluttet denne mission!
 1831	Level
-1832	 Genstand
+1832	Genstand
 1833	Erfaring
 1834	fået %s.
 1835	Belønning:
@@ -1838,7 +1838,7 @@
 1838	Gå tilbage til Ariyoung.
 1839	Gå tilbage til Ariyeong i landsbyen og fortæl at[ENTER]du ikke kunne få fat i mindet af hendes ægtemand.
 1840	Besøg Ariyeong
-1841	Gå til Ariyoung
+1841	Gå til Ariyoung.
 1842	Besøg Ariyeong og fortæl om døden af hendes[ENTER]ægtemand.
 1843	Dræb sort-vind-bandens anfører.
 1844	Dræb sort-vind-bandens anfører.
@@ -1872,8 +1872,8 @@
 1872	Om den lærte Soon.
 1873	Godt! Jeg vil finde den for dig!
 1874	Tak! Jeg stoler på dig.
-1875	Dræb Milgyo`s disciple!
-1876	Dræb Milgyo`s disciple!
+1875	Dræb den unge Milgyo!
+1876	Dræb den unge Milgyo!
 1877	Tag Milgyo-bogen fra Milgyos discipel.
 1878	Det bliver nok temmelig svært.
 1879	Soon : Hvorfor prøver du ikke? Jeg ved, at du er[ENTER]i stand til at klare det!
@@ -1932,11 +1932,11 @@
 1932	Bring den gyldne økse til skovarbejderen Deokbae.
 1933	Bring den gyldne økse til skovarbejderen Deokbae[ENTER]og få din belønning.
 1934	Uden hans hjælp, havde jeg aldrig fundet denne[ENTER]økse. Da jeg mistede den, troede jeg alt var[ENTER]forbi. Men denne eventyre gik i krig uden at tøve[ENTER]og fik min økse tilbage! Nu, har jeg min økse med[ENTER]mig, dag og nat.
-1935	Betræd.
+1935	Gå ind.
 1936	I dæmontårnet ...
 1937	Dette tårn sværmer med dæmoner. Kun de stærkeste[ENTER]krigere kan nå toppen. Men rygtet siger at ingen[ENTER]der er gået ind i tårnet er kommet ud i live. Er[ENTER]du sikker på du vil gå ind i Dæmontårnet?
 1938	I dette tårn myldre det med dæmoner. Kun de[ENTER]stærkeste krigere kan nå toppen. Dog siger rygtet[ENTER]at ingen som har trådt ind i tårnet er kommet ud[ENTER]i live. Du kan første betræde Dæmontårnet når du[ENTER]har nået level 40.
-1939	Gå ikke ind.
+1939	Betræd ikke.
 1940	Sluk
 1941	Junjeh-Riget
 1942	Shinsoo-Riget
@@ -1975,7 +1975,7 @@
 1975	Dette kommer til at være din værste dag i dit[ENTER]liv. Alle guder i himlen og på jorden har vent[ENTER]dig ryggen. Ingenting vil komme til at virke i[ENTER]dag. Hvis du vil starte et bål vil det regne;[ENTER]Hvis du er tørstig, vil solen skinde ned på dig.[ENTER]Du vil arbejde lige så hårdt som alle andre, men[ENTER]du vil ikke modtage nogen belønning for det. Du[ENTER]vil lide af "Virkelig dårlig held"! Uden en[ENTER]talisman, vil du have en sværd tid. Er du[ENTER]interesseret i at købe en?
 1976	Stort uheld.
 1977	Tre-vejs-snit
-1978	Sværd slag
+1978	Sværdstødet
 1979	Baghold
 1980	Lynangreb
 1981	Rullende dolk
@@ -2058,7 +2058,7 @@
 2058	Okay.[ENTER][ENTER]Jeg fjerner dig fra den Orden.
 2059	Ja
 2060	Din Orden har følgende kampresultater:[ENTER][DELAY value;0]
-2061	  |Ordensnavn |Points |Vundet[ENTER]|Uafgjort |Nederlag
+2061	|Ordensnavn |Points |Vundet |Uafgjort |Nederlag
 2062	Kampresultater fra 1. til 10. plads:[ENTER][DELAY value;0]
 2063	Din Orden er på plads
 2064	, og dens tabelresultat er
@@ -2085,13 +2085,13 @@
 2085	Bring ingredienserne til medicinen til Baek-Go.
 2086	Bring Baek-Go ingredienserne til medicinen.
 2087	Gå tilbage til Baek-Go og aflever skorpionhalen[ENTER]og fremstil medicinen til Yu-Rang.
-2088	Led efter Huahn-So.
+2088	Led efter Huahn-So
 2089	Led efter Huahn-So.
 2090	Gå til Huahn-So og lyt til hans historie.
 2091	Tilbage til Huahn-So
 2092	Reporter din succes til Huahn-So.
 2093	Snak med Huahn-So og hent din belønning.
-2094	Huahn-So
+2094	Huahn-So:
 2095	Procent genstand sandsynlighed
 2096	Level
 2097	På grund af levelstigningen
@@ -2107,9 +2107,9 @@
 2107	Tilfældig genstand
 2108	fåes en direkte belønning for levelmissionen.
 2109	Rest antal
-2110	Dræb
+2110	dræb!
 2111	Antal mål
-2112	Dræb målet!
+2112	![ENTER]Dræb! :
 2113	Dræb
 2114	!
 2115	Hvordan kan jeg lave risboller?
@@ -2134,7 +2134,7 @@
 2134	Indgangen til den svære abe-grotte
 2135	1. Når du betræder abe-grotten skal du dræbe[ENTER]abelederen i løbet af 20 minutter.[ENTER]2. Du må ikke bruge dokumenter til at returnere[ENTER]til byen eller noget andet sted.[ENTER]Dem, der ikke holder sig til reglerne, vil blive[ENTER]forvandlet til en abe. Så pas godt på dig selv.
 2136	Gå ikke ind.
-2137	Resterende tid
+2137	Resterende tid:
 2138	Abe-grotten
 2139	hæ, hæ! Alle burde dø. Kyaaa!
 2140	Små, små, små stykker...
@@ -2657,7 +2657,7 @@
 2657	Ikke glo, kæmp!
 2658	Jeg syntes ikke om måden du beglor mig på. Kom her!
 2659	Det er en ære, at dø gennem mit sværd!
-2660	Fantastisk!
+2660	Dejligt!
 2661	Hey, du der! Fingerne væk!
 2662	Ser ud til, at min buestreng er gået i stykker!
 2663	Lort. Idioterne er ankommet.
@@ -2822,7 +2822,7 @@
 2822	Ahhhh, jaaaa!
 2823	Lad mig overføre denne sygdom til dig!
 2824	Denne onde mystiske sygdom!
-2825	 = den forlangte genstand.
+2825	= den forlangte genstand.
 2826	Derhen kan du ikke endnu. Jeg selv har ikke været[ENTER]der.
 2827	Transport
 2828	Hej![ENTER]Jeg ved hvordan man kan komme til andre regioner[ENTER]herfra.[ENTER]Hvis du betaler nogle Yang, skal jeg nok[ENTER]transportere dig til de forskellige steder.
@@ -2843,7 +2843,7 @@
 2843	Forklar Piraten, at du ikke kunne skaffe[ENTER]medicinen.
 2844	Gå tilbage til den gamle Pirat.
 2845	Jeg kan ikke finde medicinen![ENTER]Hvad skal jeg sige til den gamle Pirat?
-2846	Aflever medicinen hos den gamle Pirat.
+2846	Aflever medicinen til den gamle Pirat.
 2847	Aflever medicinen hos den gamle Pirat.
 2848	Aflever medicinen hos den gamle Pirat og få din[ENTER]belønning.
 2849	Jeg har medicinen.
@@ -2887,7 +2887,7 @@
 2887	Gamle Pirat:[ENTER]Hvad i alverden vil du mig? Lort! Den blandet[ENTER]forretningsdame har fortalt dig om det, hmm? Ja,[ENTER]det hun siger er sandt. Men jeg har ikke tid til[ENTER]at gå til lægen. Jeg har så mange fjender!
 2888	Gamle Pirat:[ENTER]Man ved aldrig om en eller anden idiot ikke[ENTER]pludselig dukker op, og stikker en ned![ENTER]Men det klør så meget, at jeg absolut ikke kan[ENTER]holde det ud længere![ENTER]Hvad siger du? Kan du gå til lægen og hente noget[ENTER]medicin mod de kløende sår?[ENTER]Hvis du bringer mig en medicin vil du få en[ENTER]belønning.
 2889	Gamle Pirat:[ENTER]En anden person har allerede afleveret medicinen.[ENTER]Tja, og derfor får du heller ikke nogen belønning.
-2890	Gå til den gamle Pirat.
+2890	Gå til den gamle Pirat
 2891	Gå til den gamle Pirat.
 2892	Gå til den gamle Pirat og spørg hvorfor han ikke[ENTER]går til lægen.
 2893	Gamle Pirat:[ENTER]Det klør over det hele! Havde jeg ikke stødt ind[ENTER]i den knægt, dengang, havde jeg aldrig fået[ENTER]sygdommen. Det var kun en berøring! Det føles som[ENTER]om man rådner op indefra. Svin der!
@@ -3126,7 +3126,7 @@
 3126	Det er noget tid siden barbarene sidst krydsede[ENTER]grænsen og angreb landsbyen. Antallet dræbt af[ENTER]dem var over hundrede. Antallet af dem der blev[ENTER]skadet var højere. Disse onde barbarer er så[ENTER]brutale at ingen har forsøgt at stoppe dem. Men[ENTER]vi kan ikke tolerere dem længere.[ENTER][ENTER]Dræb 25 barbar høvdinge. Hvis du har succes får[ENTER]du følgende belønning:
 3127	Missionsbelønning
 3128	Mens testfasen køre, fåes ingen belønning.[ENTER]Senere, efter du har fået belønningen, kan du[ENTER]gentage denne mission.
-3129	Mission:
+3129	Mission
 3130	Hvilken pil findes ikke i Metin2?
 3131	Træ pil
 3132	Jern pil
@@ -3196,7 +3196,7 @@
 3196	Hvilken færdighed er ikke del af mental kamp[ENTER]færdigheden?
 3197	Slag
 3198	Stærk kroppen
-3199	Sværd slag
+3199	Sværdstødet
 3200	Skråt snit
 3201	4
 3202	Hvilken færdighed er ikke en del af bueskytte[ENTER]lærdommen?
@@ -3434,9 +3434,9 @@
 3434	Rusten klinge
 3435	4
 3436	Hvornår kræver forbedringen af et sølv sværd en[ENTER]genstand udover Yang?
-3437	Når opgradering til +5
-3438	Når opgradering til +5
-3439	Når opgradering til +5
+3437	Når opgradering til +1
+3438	Når opgradering til +2
+3439	Når opgradering til +4
 3440	Når opgradering til +5
 3441	4
 3442	Hvilken genstand gives til en karakter hvis rang[ENTER]point er negativ?
@@ -3543,7 +3543,7 @@
 3543	4
 3544	Hvem er en dame?
 3545	Magnetisk klinge
-3546	Kæmpeøkse+0
+3546	Kæmpe økse
 3547	Halshugningsklinge
 3548	Langspyd
 3549	1
@@ -3582,7 +3582,7 @@
 3582	Handelsmanden:[ENTER]Hjælp mig! Hvis du kan få fat i dæmon-magierens[ENTER]dæmon-ædelsten, vil jeg belønne dig.
 3583	Handelsmanden:[ENTER]En anden har allerede givet mig den.[ENTER]Du skal ikke bekymre dig mere om det.
 3584	Gå til handelsmanden.
-3585	Gå til handelsmanden
+3585	Gå til handelsmanden.
 3586	Gå til handelsmanden og spørg ham om dæmon-[ENTER]ædelstenen +.
 3587	Handelsmandens brev:[ENTER]Jeg ved ikke hvad jeg skal gøre.[ENTER]Min dæmon-ædelsten + blev stjålet. Jeg betalte[ENTER]alt for denne sten![ENTER]Kan du måske hjælpe mig?[ENTER]Jeg har seriøst brug for din hjælp!
 3588	Handelsmand:[ENTER]Du klarede det virkelig? Kom her mine elskede[ENTER]sten! Mange tak. Du kan ikke forestille dig hvor[ENTER]lettet jeg er.
@@ -3647,7 +3647,7 @@
 3647	Køb sølv eller guldbarrer
 3648	Ohh well, så lad være. Jeg tvinger ikke nogen til[ENTER]at gøre noget, vel?
 3649	Udvid mit lagerrum
-3650	 :Jeg har 30 stk, så aflever dem.
+3650	:Jeg har 30 stk, så aflever dem.
 3651	forblivende bjørnegalde
 3652	Tiden er gået. Jeg har ikke nået det.
 3653	Hvorfor tager det så lang tid?[ENTER]De 30 minutter er gået.[ENTER]Denne gang kan jeg ikke forøge dit lager!
@@ -3685,7 +3685,7 @@
 3685	Dig igen? Du virker ikke til nogensinde at få[ENTER]nok! Nej, nok er nok. Jeg er ikke Julemanden!
 3686	Du ønsker at udvide din lagerplads? Hmm, lad os[ENTER]finde ud af hvor godt du tjener dit imperium.
 3687	Jeg er ked af det, men jeg kan ikke gøre noget[ENTER]for dig i øjeblikket. Jeg har udvidet så mange[ENTER]spilleres lagerpladser at der ikke er plads[ENTER]tilbage nu. Det vil vare et stykke tid inden jeg[ENTER]kan udvide min lagerplads igen. Hvorfor bruger du[ENTER]ikke bare det lagerplads du har i øjeblikket?
-3688	Er muligt, mod bjørnegalde.[ENTER]Du får 30 minutter, til at jage 30 bjørnegalde.[ENTER]Så anerkender jeg dig! Men du har brug[ENTER]for
+3688	Er muligt, mod bjørnegalde.[ENTER]Du får 30 minutter, til at jage 30 bjørnegalde.[ENTER]Så anerkender jeg dig! Men du har brug for
 3689	.
 3690	Klart - bare tag en snak med mig, når du skal[ENTER]bruge noget!
 3691	Jeg vil prøve igen senere.
@@ -3695,7 +3695,7 @@
 3695	Ved du hvad en guldbar er? Selvfølgelig gør du[ENTER]det. Men ved du også hvad den kan bruges til?[ENTER][ENTER]Det er simpelt. Hvis du har en masse Yang på dig,[ENTER]er det som at gå rundt med et skilt med teksten[ENTER]'Hey, dræb mig venligst og tag alle mine penge!'[ENTER]Det er derfor jeg bytter folks Yang for disse[ENTER]guld bare og opbevare dem for dem. Så vil de ikke[ENTER]miste dem.[ENTER][ENTER]Ganske vist kræver jeg lidt mere Yang end[ENTER]guldbarene faktisk er værd. Men hey, jeg har også[ENTER]brug for at leve. Der er ingen grund til at føle[ENTER]dig narret. Sim du ved, det er en farlig verden[ENTER]der ude.
 3696	Ønsker du at bruge lageret?[ENTER]For at benytte lageret skal du betale lidt.[ENTER]Jeg er i godt humør i dag, og tilbyder, at du kan[ENTER]bruge lageret for 500 Yang. Hvad siger du til[ENTER]det? Det da billig, hva? Ha, ha, ha!
 3697	Oh, velkommen!
-3698	Velkommen!
+3698	Velkommen.
 3699	Hm, er det fremtidens superhelt?
 3700	Ah, intet..
 3701	Hvad? Du har ikke nok Yang?[ENTER]Så kom igen senere, når du har nok.
@@ -3704,7 +3704,7 @@
 3704	Betal
 3705	Procent sandsynlighed for Yang-bombe
 3706	%d dag(e) og %d t.
-3707	%d t. %d min.
+3707	%d minut(ter) og %d sekunder(s)
 3708	%d minut(ter) og %d sekunder(s)
 3709	%d sekunder(s)
 3710	Kvinde
@@ -3713,7 +3713,7 @@
 3713	Alle der bukker for mig i dag vil modtage en[ENTER]lille nytårs gave, forudsat at de møder kravet[ENTER]med at være blevet level 15 eller højere. Jeg[ENTER]håber du er blevet opdraget godt, og respektere[ENTER]dine ældre og deres visdom?
 3714	Jeg kan ikke takke nok! Må drageguden velsigne[ENTER]dig. Som tegn på min taknemmelighed tag denne[ENTER]pung med Yang. Hav et godt nytår.
 3715	Er du her for at hilse på mig med et buk?
-3716	Desværre! Du har ingen plads i dit inventar. Kom[ENTER]igen, når du har plads.
+3716	Ærgerligt. Du har ingen plads i din inventar. Kom[ENTER]igen, når du har plads.
 3717	Jeg ønsker dig alt det bedste for det kommende[ENTER]år. Hvor om alt er, har du allerede modtaget din[ENTER]gave. Troede du at jeg ikke ville huske dig?
 3718	Ja! Held og lykke i det nye år.
 3719	Nej
@@ -3724,7 +3724,7 @@
 3724	Søg Soon.
 3725	Søg Soon. Lyt til hans henvisninger om[ENTER]fremstilling af procelæn og fortæl det til Yonah.
 3726	Søg pottemageren Yonah.
-3727	Find Yonah pottemageren
+3727	Søg pottemageren Yonah.
 3728	Søg pottemageren Yonag. Han har en mission til[ENTER]dig.
 3729	Find guldtænder fra de mørke orker
 3730	Find guldtænder fra mørke orker.
@@ -3736,7 +3736,7 @@
 3736	Gå tilbage til, musikeren, Yu-Hwan.
 3737	Forklar, musikeren, Yu-Hwan, at du ikke kunne[ENTER]finde edderkoppe-nettet.
 3738	Søg Musikeren Yu-Hwan
-3739	Søg Musikeren Yu-Hwan
+3739	Søg, musikeren, Yu-Hwan.
 3740	Søg, musikeren, Yu-Hwan og lyt til sangen.
 3741	Fang en klo-edderkop.
 3742	Fang klo-edderkoppen.
@@ -3753,7 +3753,7 @@
 3753	Naturligvis.
 3754	Tak. Skynd dig!
 3755	Besejr 300 af Ildlands dæmoner i fortets[ENTER]omgivelser og ved sol urternes position.
-3756	Dämonenhatz
+3756	Dæmon jagt
 3757	Erledige 300 Feuerland Dämonen in der Nähe der Festung und dem Fundort der Sonnenkräuter
 3758	Jeg er bage for, at du ikke har besejret nok[ENTER]dæmoner endnu. Tag tilbage til Ildland og kæmp[ENTER]videre.
 3759	Du har besejret alle dæmonerne.[ENTER]Rapporter tilbage til Yak-Hwan.
@@ -3777,7 +3777,7 @@
 3777	Stop den sorte substans
 3778	Sådan en...hmph...Jeg forklarede smeden, fordi[ENTER]fundament stenene var blevet malet for groft. Og[ENTER]nu?[ENTER]Han er fornærmet og nægter at omdanne resten af[ENTER]stenene til pulver. Det stædige æsel! Kunne du[ENTER]være venlig at tale med ham?
 3779	Selvfølgelig.
-3780	Danke Hier sind die Fundamentsteine Und bringe ihm diesen Korb mit Leckereien als Entschuldigung
+3780	Tak. Vær venlig at tage denne kurv med godbidder[ENTER]med dig, som en undskyldning og overbevis ham om[ENTER]at male fundamentstenene til fint pulver.
 3781	Berolig smeden
 3782	Berolig smeden og overbevis ham om at male[ENTER]fundamentstenene til fint pulver.
 3783	Fundamentstens pulver: 1 stykke
@@ -3813,7 +3813,7 @@
 3813	Hastigt skrevne ord:
 3814	Yak-Hwan, jeg vil ikke komme tilbage i live, men[ENTER]jeg håber, dette brev når dig. Jeg har fundet et[ENTER]fort i Ildland, som ikke er markeret på noget[ENTER]kort. Dets hersker er en kræftfuld Ildlands dæmon[ENTER]- en unik aura omringer ham, samt alle de dæmoner[ENTER]der følger ham.[ENTER]Hans brøl er øredøvende, og han synes at vogte[ENTER]noget. Men hvad det er, kan jeg ikke sige. Tilgiv[ENTER]mig, jeg har mislykkedes ...
 3815	Vi er nødt til at finde ud af, hvad der er gemt i[ENTER]fortet.[ENTER]Se her, inde i den nittede halskæde er der en[ENTER]ingravering. Jeg vil spørge Yon-I-Walker til[ENTER]råds. Han vil kontakte dig, hvis han behøver din[ENTER]hjælp.
-3816	Gravur entschlüsseln
+3816	Afkodning af ingraveringen
 3817	Yon-I-Walker leder efter dig. Gå til ham.
 3818	Willkommen ich habe dich bereits erwartet Ich brauche etwas Hilfe dabei die Gravur in diesem Nietenhalsband zu entschlüsseln
 3819	Tegnene på indersiden af den nittede halskæde[ENTER]stammer fra en gammel kultur, som eksisterede for[ENTER]lang tid siden. For at tyde den har jeg brug for[ENTER]Flammekongens blod. De flyder, som lava, i hans[ENTER]åre.
@@ -3868,14 +3868,14 @@
 3868	gode nyhedder! Jeg har fundet ud af, hvordan[ENTER]kræften fra den sorte substans kan blive[ENTER]neutraliseret.
 3869	alle natures kræfter har et modstykke - lys og[ENTER]mørke, ild og vand, god og ond. Selv sort[ENTER]substans har et modstykke, noget som har kraften[ENTER]til at neutralisere den: Ren lumen!
 3870	for at producere ren lumen, skal du bruge energi[ENTER]fragmenter i Mong wand. Kunne du samle 50 flasker[ENTER]af Mong vand, samt 100 energi fragmenter, og[ENTER]bringe dem til Yu-Hwan? Tak.
-3871	Betragt det som gjort!
+3871	Jeg er på det.
 3872	Saml 50 flasker Mong vand, samt 100 energi[ENTER]fragmenter, og bring dem til Yu-Hwan
 3873	Ren lumen
 3874	Saml 50 flasker Mong vand, samt 100 energi[ENTER]fragmenter, og bring dem til Yu-Hwan
 3875	Wow, You-I-Walker har allerede advaret mig om, at[ENTER]du ville komme. Nå, lad os komme til at arbejde.[ENTER]Hvorfor slapper du ikke af imens?
 3876	Wow, Yon-I-Walker har allerede advaret mig om, at[ENTER]du kkom. Jeg vil gerne arbejde, men disse[ENTER]materialer er ikke nok til at producere ren[ENTER]lumen. Gå ud og saml nogle flere.
 3877	Du har nok Mong vand og energi fragmenter. Bring[ENTER]dem til Yu-Hwan.
-3878	Gå til Yu-Hwan
+3878	Gå til Yu-Hwan.
 3879	Aflever den ren lumen
 3880	yu-Hwan har produceret den rene lumen. Gå til ham.
 3881	Der er du! Lige til tide. Den rene lumen er netop[ENTER]lige blevet færdig. Rapporter nyhedderne til[ENTER]Yak-Hwan.
@@ -3955,7 +3955,7 @@
 3955	Du har ikke talt med Yon-I-Walker endnu? Hvordan[ENTER]forslår du at besejre Razador?! Gå! Hvad venter[ENTER]du på!
 3956	Ja, det er rigtigt. Razador er tilbage - og endnu[ENTER]mere ophidset end nogensinde før. Vi har kun én[ENTER]mulighed at stoppe mørkets tjenere i at udføre[ENTER]deres plan ...
 3957	Razador vil ikke hvile før han har fuldført sin[ENTER]opgave, og befriet den røde drage. For at stoppe[ENTER]dette, er vil nødt til at forvise dragen.
-3958	Das Element des Rotdrachen ist das Feuer und Feuer bekämpft man am Besten mit Feuer Jeder Flammendämon trägt einen Magmakern in sich Beschaffe mir jeweils fünf Kerne der folgenden Monster Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral und Glut Flammenfürst
+3958	Den røde drages element er ild...og il kan bedst[ENTER]blive bekæmpet med - ild! Hver glødende flamme[ENTER]dæmon bærer en ring af magma omkring sit hjerte.[ENTER]Bring mig fem af disse Magma ringe!
 3959	Beschaffe die Magmakerne der Flammendämonen
 3960	Beschaffe jeweils fünf Magmakerne dieser Gegner Glut Flammenkönig Glut Flammenbart Glut Flammengolem Glut Flammengeneral Glut Flammenfürst Kehre damit zu Yon I Walker zurück
 3961	Oh ja du hast schon einige gefunden Bringe noch das sollte dann reichen
@@ -4003,7 +4003,7 @@
 4003	Besejr Razador, herskeren af ild, i den røde[ENTER]drages fort.
 4004	Var Razador for meget for dig denne gang? Jeg kan[ENTER]næsten ikke tro det! Du klarede det en gang - du[ENTER]vil også klare de denne gang!
 4005	Razador er blevet besejret. Rapporter tilbage til[ENTER]Yak- Hwan.
-4006	Ich wusste du würdest es schaffen Großartig Nun werden wir alles für die Verbannung des Rotdrachen vorbereiten Ich lasse dich rufen sobald wir bereit sind
+4006	Jeg vidste, du ville være i stand til at klare[ENTER]det! Nu vil jeg forberede til forvisning[ENTER]ritualet. Så snart vi er klar, vil jeg kalde på[ENTER]dig.
 4007	Verbannung des Rotdrachen
 4008	Tiden er inde. Alt er klart til at forvise den[ENTER]røde drage.
 4009	Meine Männer haben bereits bereits zwei Bannkreise aufgestellt Deine Aufgabe ist es nun sie zu entzünden Wirf den Bannbeutel auf die Kreise und sie werden sich entflammen Das wird die Verbannung des Rotdrachen vollziehen
@@ -4071,7 +4071,7 @@
 4071	Uddannelse hos kaptajnen
 4072	Kaptajnens første mision bringer dig til nabo[ENTER]byen. Der skal du besøge musikeren Yu-Hwan og[ENTER]spørge efter det hemmelige dokument til[ENTER]kaptajnen.
 4073	Musikeren Yu-Hwan:
-4074	Livet er som en drøm, som alt i livet. Hvorfra[ENTER]kommer vi? Hvor går vi hen?[ENTER]Vores verden er fuld af had.[ENTER]Hjertelig flid belønnes ikke.[ENTER]Er du her for at lytte til min[ENTER]musik?
+4074	Livet er som en drøm, som alt i livet. Hvorfra[ENTER]kommer vi? Hvor går vi hen?[ENTER]Vores verden er fuld af had.[ENTER]Hjertelig flid belønnes ikke.[ENTER]Er du her for at lytte til min musik?
 4075	Oh, kaptajnen har sendt dig![ENTER]Psst, ikke så højt ... Ingen må få min sande[ENTER]identitet af vide. Du er nok troværdig når[ENTER]kaptajnen sender dig! Her har du det. Dokumentet[ENTER]indeholder alle de informationer jeg kunne samle.[ENTER]Aflever dem til kaptajnen.
 4076	Musikeren Yu-Hwan:
 4077	Skynd dig videre! Hvis du bliver her for længe,[ENTER]vil noget skidt ske. Husk: Livet er kort, nyd det[ENTER]så længe du kan.
@@ -4081,12 +4081,12 @@
 4081	Du er nu erfaren nok til at tjene dit kongerige[ENTER]som fuldt udviklet kriger. Fra nu af vil[ENTER]kaptajnen give dig nye opgaver. Du vil finde ham[ENTER]i den første by. Gå og se ham; han venter på dig.
 4082	Kaptajn
 4083	Jeg kender dig... Nå ja - jeg har hørt om dig. Du[ENTER]er den nye eventyre og har allerede vist hvad du[ENTER]kan. Jeg ved ikke hvor uddannet du er, men du vil[ENTER]i fremtid få flere opgaver.
-4084	Du vil møde adskillige udfordringer, så forbered[ENTER]dig godt. Har du hørt historien om de tre Riger[ENTER]fra kontinenten på den lyse himmel?[ENTER]Du kender den ikke?[ENTER]Hvad får man da lært idag af uddannelse? Er jeg[ENTER]nød til at lære dig de grundlæggende[ENTER]ting?
+4084	Du vil møde adskillige udfordringer, så forbered[ENTER]dig godt. Har du hørt historien om de tre Riger[ENTER]fra kontinenten på den lyse himmel?[ENTER]Du kender den ikke?[ENTER]Hvad får man da lært idag af uddannelse? Er jeg[ENTER]nød til at lære dig de grundlæggende ting?
 4085	Dette er vigtigt, da det er historien om[ENTER]kontinentet. Så jeg vil opsummere den for dig.[ENTER]Engang for længe siden var kongeriget forenet.[ENTER]Men så kom Metin stenen ned og bragte krig og[ENTER]konflikt. Kontinentet blev delt i tre[ENTER]individuelle lande: Shinsoo er handels[ENTER]kongeriget, Chunjo er religions kongeriget og[ENTER]Jinno er det militære kongerige.
-4086	Rigernes ledere prøver at få afsluttet uroen, som[ENTER]opstod med metin-stenene, for at samle[ENTER]kontinenten igen.[ENTER]Du skal også arbejde hårdt for at forene[ENTER]kontinentet igen![ENTER]Det er vigtigt, og må aldrig[ENTER]glemmes!
+4086	Rigernes ledere prøver at få afsluttet uroen, som[ENTER]opstod med metin-stenene, for at samle[ENTER]kontinenten igen.[ENTER]Du skal også arbejde hårdt for at forene[ENTER]kontinentet igen![ENTER]Det er vigtigt, og må aldrig glemmes!
 4087	Jeg vil give dig din første mission.[ENTER]Vær ikke bange, det er en let mission. I den[ENTER]næste landsby findes en musiker, kaldet Yu-Hwan.[ENTER]Folk tror han har afsluttet sin militærkarriere[ENTER]for at blive musiker. Men i grunden er han en[ENTER]spion. Jeg har brug for et dokument fra Yu-Hwan.[ENTER]Hent det. Glem ikke, at det her er en hemmelig[ENTER]mission.
 4088	Tryk på m for at finde ud af hvordan du kommer[ENTER]til den næste by på kortet. Brug telepotterings[ENTER]portalen med det tilsvarende bynavn.[ENTER]Skynd dig! Yu-Hwan er en høj fyr - men du vil[ENTER]kende ham på hans musikinstrumenter.
-4089	Dræb alpha-gråulve
+4089	Dræb Alpha-gråulv:
 4090	Kaptajnen har en ny opgave for dig. Mød ham.
 4091	Vil du afslutte denne mission?
 4092	Hvordan har du dog klaret det? Du har ikke snydt,[ENTER]vel? Nå - men lad os gå til næste trin.
@@ -4135,7 +4135,7 @@
 4135	Vores rige, Shinsoo, har altid været et centrum[ENTER]for handel. Vores omfattende handels ruter bragte[ENTER]mange handlende og varer over til os fra hele[ENTER]verden. Men siden Metin Stenene kom, er disse[ENTER]forbindelser brudt ned, og vores økonomi har fået[ENTER]det meget værre. Vi var velstående én gang, men[ENTER]vi har aldrig haft megen militær magt, hvilket er[ENTER]hvorfor vi har hyret nogle lejesoldater. Disse[ENTER]krigere er meget pålidelige og loyale overfor[ENTER]dem, der betaler dem.
 4136	Takket været lejesvendene har vores land fået[ENTER]stabiliteten igen. For at forberede os mod[ENTER]kommende krige har vi brug for flere lejesvende[ENTER]og en stærk økonomi.
 4137	Jeg har en anden opgave til dig. Tag denne[ENTER]specialiteter til Yu-Hwan, der bor i nabo[ENTER]landsbyen. Vores land var og er stadig et[ENTER]kongerige af handel og vi handler med forskellige[ENTER]specialiteter fra forskellige regioner. Afkastet[ENTER]vi får fra det gavner landsbyen.
-4138	Chunjo: Vores Rige bliver styret af guvernør Yoo[ENTER]Young. Grundlaget er vores religion. Den hjælper[ENTER]os, og vi var de første der havde viden om Sung[ENTER]Mahi´s eksistens. Vores shamaner havde advaret os[ENTER]om metin-stenene. Vores store shamaner arbejder[ENTER]hårdt for landets sikkerhed. Shamanerne har mange[ENTER]færdigheder, deres styrke ligger i vores tro.[ENTER]Uden den ville det kun være et spørgsmål om tid,[ENTER]inden vi ville blive erobret af andre[ENTER]Riger.
+4138	Chunjo: Vores Rige bliver styret af guvernør Yoo[ENTER]Young. Grundlaget er vores religion. Den hjælper[ENTER]os, og vi var de første der havde viden om Sung[ENTER]Mahi´s eksistens. Vores shamaner havde advaret os[ENTER]om metin-stenene. Vores store shamaner arbejder[ENTER]hårdt for landets sikkerhed. Shamanerne har mange[ENTER]færdigheder, deres styrke ligger i vores tro.[ENTER]Uden den ville det kun være et spørgsmål om tid,[ENTER]inden vi ville blive erobret af andre Riger.
 4139	De mennesker i vores land har en meget stærk tro[ENTER]og beder til Drage Guden hver dag. Den velvillige[ENTER]Drage Gud beskytter os mod opstandelsen af Sung[ENTER]Mahi. Med hans hjælp vi fortsætter med at[ENTER]forsvare os selv fra disse barbariske angreb og[ENTER]genforener imperiumet under vores kontrol.
 4140	Jeg vil give dig en opgave du skal udføre.[ENTER]Aflever denne stenstatue af drageguden til[ENTER]Yu-Hwan i nabo byen. Vores land er religiøs, og[ENTER]den dybe tro på drageguden er meget vigtig for[ENTER]os. Hvis du afleverer statuen til Yu-Hwan hjælper[ENTER]du med til at styrke troen i byen.
 4141	Du har modtaget 3.000 erfaringspoint.[ENTER]Du har modtaget 5.000 Yang.[ENTER]Du har fået noget ulve pels.
@@ -4149,7 +4149,7 @@
 4149	Du har fundet et brev.[ENTER]Bring det til Kaptajnen.
 4150	Du har fundet et brev med Hvide-Ed Soldater.[ENTER]Måske dette er et bevis på spionen som Kaptajnen[ENTER]er på udkig efter. Bring brevet til Kaptajnen.
 4151	Fandt du nogen beviser? Et brev? Lad mig tage et[ENTER]kig... Det kunne være nok til at finde ud af,[ENTER]hvem spionen er. Takket være dig, bør vi være i[ENTER]stand til at slippe af med dette problem. Godt[ENTER]gået! Du skulle tage et hvil. Tag dette som et[ENTER]tegn på min taknemmelighed.
-4152	Første øvelse:
+4152	Første øvelse
 4153	Hvad laver du?
 4154	Første øvelse:
 4155	Dræb 9 Vildhunde. Du vil finde dem direkte foran[ENTER]byens porte.
@@ -4161,7 +4161,7 @@
 4161	Hvis du har problemer med at dræbe 9 vild-hunde,[ENTER]så kan du ikke kalde dig selv, som en rigtig[ENTER]eventyrer, vel?
 4162	Øvelsesopgave:
 4163	Vil du permanent afslutte denne mission?[ENTER]Den vil blive slettet fra din mission overblik og[ENTER]vil ikke være tilgængelig igen.
-4164	Hvordan har du dog klaret det?[ENTER]Du har ikke snydt, vel?[ENTER]Nå - men lad os gå til næste[ENTER]trin.
+4164	Hvordan har du dog klaret det?[ENTER]Du har ikke snydt, vel?[ENTER]Nå - men lad os gå til næste trin.
 4165	Praktisk opgaven fuldført
 4166	Byvagt:[ENTER]Din interesse er prisværdig, men du bør indsamle[ENTER]flere erfaringer point. Kom tilbage når du har[ENTER]nået et højere level!
 4167	Du er bedre end jeg troede![ENTER]Men jeg formoder at hvem som helst kunne have[ENTER]gjort det. Ha ha! Tilbage i mine dage, var[ENTER]opgaverne meget vanskeligere. Vær forberedt til[ENTER]den næste. Her, har du tjent dig nogle eliksir og[ENTER]Yang, så du kan forbedre dit udstyr. Jeg ringer[ENTER]til dig, så snart jeg har en ny opgave til dig.
@@ -4171,7 +4171,7 @@
 4171	Find byvagten
 4172	Når du læser dette brev har du opnået en nyt[ENTER]level. Tillykke! Gå til byvagten så du kan få din[ENTER]første øvelsesopgave!
 4173	Du mangler stadig disciplin, selvom du har vist[ENTER]mig, at du kan håndtere et våben! Tror du[ENTER]virkelig, at du er klar til at tage nogle vilde[ENTER]dyr? Jeg har tænkt mig at se hvor dygtig du er[ENTER]først. Forlad landsbyen og dræb 9 Vildhunde, kom[ENTER]så tilbage og få din belønning.
-4174	De er ikke farlige, så det burde ikke være alt[ENTER]for svært. Hvis du ikke gennemfører denne opgave,[ENTER]vil du aldrig kunne overleve i denne egn![ENTER]Drag afsted - jo før du er færdig, jo[ENTER]bedre!
+4174	De er ikke farlige, så det burde ikke være alt[ENTER]for svært. Hvis du ikke gennemfører denne opgave,[ENTER]vil du aldrig kunne overleve i denne egn![ENTER]Drag afsted - jo før du er færdig, jo bedre!
 4175	Fra tid til anden vil Landsbyboerne give dig[ENTER]opgaver, der giver dig erfaringspoint og Yang.[ENTER]Det betaler sig at kigge efter folk, der giver[ENTER]dig opgaver!
 4176	For at dræbe de Vilde Hunde vil du modtage:[ENTER]Erfaringspoint: 550[ENTER]Yang: 1.000[ENTER]Genstand: %s, Antal: %s
 4177	Vilde hunde:
@@ -4181,7 +4181,7 @@
 4181	Har du ødelagt Metin stenen? Tak! Landsbyen er i[ENTER]sikkerhed for nu! Hvor kommer disse sten fra? Vi[ENTER]har knap nok nogle oplysninger om dem, selvom de[ENTER]skaber så mange problemer. Jeg hørte, at Uriel[ENTER]den kloge undersøger Metin Sten. Men jeg ved[ENTER]ikke, hvad han har fundet ud af indtil videre.[ENTER]Uanset hvad, du gjorde et godt stykke arbejde!
 4182	Belønning:
 4183	Du har modtaget 3,300,000 erfaringspoint.[ENTER]Du har modtaget 270,000 Yang.[ENTER]Du har modtaget en færdighedsmanual Bog.
-4184	Du modtager %s.
+4184	Du har modtaget: %s
 4185	Ødelæggelsen forårsaget af Metin Stenene er[ENTER]blevet værre. Landet lider. Metin Stenene skal[ENTER]ødelægges. Gå til kaptajnen.
 4186	Ødelæggelsen forårsaget af Metin Stenene er[ENTER]blevet værre. Landet lider. Metin Stenene skal[ENTER]ødelægges. Gå til kaptajnen.
 4187	Jeg hørte, at du har arbejdet meget hårdt. Folk[ENTER]har talt om dit gode arbejde. Du skylder mig[ENTER]noget for at sende dig til det rette sted. Ha,[ENTER]ha! Blive ikke irriteret, det var kun for sjov![ENTER]Du har gjort dit job rigtig godt.[ENTER][ENTER]Men der kommer flere og flere Metin Sten. Det er[ENTER]et alvorligt problem.
@@ -4190,7 +4190,7 @@
 4190	Den metin-sten som du skal ødelægge er Skumlens[ENTER]Metin. Søg den!
 4191	Flere og flere Metin Sten er for nylig blevet[ENTER]observeret. Deres onde stråling skal stoppes![ENTER]Ødelæg en Skumlens Metin.
 4192	Du har ødelagt Skumlens Metin.[ENTER]Tilbage til kaptajnen.
-4193	Vær hilset. Har byvagten sendt dig?[ENTER]Jeg har en nem opgave for dig. Min far har glemt[ENTER]en vigtig bog her. Han har brug for[ENTER]den.
+4193	Vær hilset. Har byvagten sendt dig?[ENTER]Jeg har en nem opgave for dig. Min far har glemt[ENTER]en vigtig bog her. Han har brug for den.
 4194	Jeg har færdiggjort den første opgave.
 4195	Kunne du aflevere bogen til min far?[ENTER]Jeg ville selv gøre det, men jeg skal blive i[ENTER]butikken.[ENTER]Hvis du gører det for ham, vil han vise dig[ENTER]taknemmelighed.[ENTER]Du skal vide, at han sælger rustninger i denne[ENTER]landsby.
 4196	Fremstilling af rustninger
@@ -4199,7 +4199,7 @@
 4199	Aflever bogen, som handelsdamens fader glemte,[ENTER]til ham. Det er rustnings-handelsmanden fra byen.
 4200	Rustnings-handelsmand:
 4201	Hvad fører dig til mig?[ENTER]Nå - min datter har sendt dig? Mange tak.[ENTER]Jeg har brug for denne bog så jeg kan fremstille[ENTER]nye rustninger.
-4202	Min datter er nok meget optaget, når hun sender[ENTER]dig for at aflevere bogen. Lad mig se.. Hvad[ENTER]kunne være en passende belønning til[ENTER]dig...?
+4202	Min datter er nok meget optaget, når hun sender[ENTER]dig for at aflevere bogen. Lad mig se.. Hvad[ENTER]kunne være en passende belønning til dig...?
 4203	Som belønning vil jeg give dig nogle Yang, så du[ENTER]kan købe noget ordentligt udstyr til dig selv.[ENTER]Det skulle være nok ikke? Mange tak. Når jeg har[ENTER]brug for hjælp igen vil jeg nok bede dig om endnu[ENTER]en tjeneste. Og når du har brug for en ny[ENTER]rustning så kom og besøg mig. Min butik er altid[ENTER]åben.
 4204	Du har modtaget 850 erfaringspoint.[ENTER]Du har modtaget 5,000 Yang.[ENTER]Du har modtaget 20 Blå Eliksirer.
 4205	Det ser ud som om du har haft det sjovt med at[ENTER]klare din første opgave. Venter du allerede på[ENTER]den næste? Søg mig når du er nået næste level. Så[ENTER]vil jeg give dig et nyt job.
@@ -4411,7 +4411,7 @@
 4411	Den sjette side
 4412	Hey, ikke så hurtigt, Brushoved! Glem ikke din[ENTER]belønning for den niende side!
 4413	Dræb Stolt soldatgiftedderkop
-4414	Du modtager 5.000.000 erfaringspoint.
+4414	Du har fået 5.000.000 erfaringspoints
 4415	Du har modtaget 125,000 Yang.
 4416	Du har modtaget Den Viise Kejsers Symbol
 4417	Sporet er i Island
@@ -4505,7 +4505,7 @@
 4505	Gå til Lagerforvalteren
 4506	Smeden venter en presserende levering fra[ENTER]Lagerforvalteren. Gå til Lagerforvalteren og bed[ENTER]ham om en Svinenæse til smeden.
 4507	Lagerforvalter:
-4508	Velkommen. Jeg er lagerforvalteren i denne[ENTER]landsby. Når du har for mange ting og sager, kan[ENTER]du lagre dem i lagerhuset. Det er meget[ENTER]praktisk.
+4508	Velkommen. Jeg er lagerforvalteren i denne[ENTER]landsby. Når du har for mange ting og sager, kan[ENTER]du lagre dem i lagerhuset. Det er meget praktisk.
 4509	Ønsker du at... Ah, smeden sendt dig for at hente[ENTER]en Svinenæse!
 4510	Jeg er bange for jeg ved at blive gammel og[ENTER]glemsom. Tidligere ville sådan noget aldrig være[ENTER]sket. Her er den Svinenæse. Aflevere den straks[ENTER]til Smeden. Vi ses senere.
 4511	Tilbage til smeden
@@ -4736,7 +4736,7 @@
 4736	Snak med byvagten
 4737	Du har taget de første skridt på vejen til at[ENTER]blive en sand helt. Det er nu tid til større[ENTER]ting. Drag til byvagten og modtag din sidste[ENTER]begynder mission fra ham.
 4738	Er du klar til at gennemføre sværer opgaver? Det[ENTER]bliver nok næppe så nemt som nu. Hvis Riget skal[ENTER]opleve en god fremtid skal du arbejde hårdt! Du[ENTER]har gennemført adskillige opgaver. Derfor har du[ENTER]fortjent følgende..[ENTER]Det vil nytte dig en del.
-4739	Fra nu af vil kaptajnen stille dig opgaverne. Han[ENTER]vil holde øje med dig i fremtiden. Sammel lidt[ENTER]erfaring og gå til kaptajnen. Held og[ENTER]lykke!
+4739	Fra nu af vil kaptajnen stille dig opgaverne. Han[ENTER]vil holde øje med dig i fremtiden. Sammel lidt[ENTER]erfaring og gå til kaptajnen. Held og lykke!
 4740	Mørk Drage Klippe
 4741	Din rejse har været lang og besværlig. Men nu har[ENTER]du endelig nået dit mål: Mørk Drage Klippe. Opsøg[ENTER]Admiral Angur. Du vil finde ham i Kap Drageild.
 4742	Velkommen til Mørk Drage Klippe, fremmede! Er du[ENTER]kommet for at hjælpe os i kampen mod Sung Mahi?
@@ -4766,7 +4766,7 @@
 4766	Følg den blinkende prik på minimappet.
 4767	(Resterende: %s %s, %s %s)
 4768	Das Item bekommst du in kills
-4769	%s: %d stykker
+4769	%s : %d stykker
 4770	Eventyret fortsætter så snart du er nået level 91.
 4771	Situations rapport
 4772	Kig dig godt omkring på øen, og rapporter så dine[ENTER]observationer til Admiral Angmur efterfølgende.
@@ -4793,7 +4793,7 @@
 4793	Et af de følgedende væsner har Lee Chungs brev:[ENTER]Gnoll kriger, Gnoll bueskytte, Gnoll forsvarer,[ENTER]Gnoll magiker, Gnoll general,Gnoll Lord eller[ENTER]Øverste Gnoll vagt
 4794	Hvis vi vil stoppe Sung Mahi, behøver vi dette[ENTER]brev![ENTER]Tyvene kommer fra rækkerne i Gnoll stammen.
 4795	Du har fundet brevet.
-4796	Bring det til Admiral Angmur.
+4796	Bring det til Admiral Angmur!
 4797	Tal med admiral Angmur.
 4798	Du er tilbage, og du har brevet! Ja, jeg vidste,[ENTER]jeg kunne regne med dig. Lad os så se.
 4799	Hilsner Angmur![ENTER]Min ven, i Sung Mahis tomme lejre fandt vi noget:[ENTER]Mørkets tjenere har henvendt sig til deres[ENTER]allierede på øen ved at bruge hemmelige beskeder.[ENTER]En sådan besked var sendt til Gnoll stammen. Hvis[ENTER]du kunne opfange dette, vil vi være et vigtigt[ENTER]skridt foran dæmonerne! Jeg sender %s som støtte,[ENTER]og ønsker dig styrke og mod i denne mørke tid.[ENTER]L.C.
@@ -4821,7 +4821,7 @@
 4821	Du har fundet den anden side. Bring den til[ENTER]Admiral Angmur!
 4822	Fantastisk, nu kan vi afkode beskeden: Hmm, det[ENTER]ser ud til der bliver talt om dragerne, som over[ENTER]dybt i hjertet af verden. Det taler om en metode,[ENTER]hvorpå du kan vække dem og gøre dem gale.[ENTER]Oh ho! Det lyder ikke godt...
 4823	Det ser ud til at Manticore og Rød tyvs banden[ENTER]også har modtaget breve. Jeg vil finde ud af mere[ENTER]omkring disse nyhedder, og så vil jeg sende bud[ENTER]efter dig.
-4824	Admiral Angmur har en ny opgave til dig.
+4824	Admiral Angmur har en opgave til dig.
 4825	Manticore
 4826	Admiral Angmur har en ny opgave til dig.
 4827	Godt, du er her! Vores informationer omkring[ENTER]Manticore er meget gamle. Vi er nødt til at finde[ENTER]ud af, hvor stærke deres tropper er nu.
@@ -4836,7 +4836,7 @@
 4836	Har du gennemført din opgave? Rigtig godt. Så giv[ENTER]mig en rapport på den nuværende situation.
 4837	Manticores troper er ikke særlig store. Du har en[ENTER]fordel i antal.[ENTER]Men deres krigere er meget godt trænet og de er[ENTER]ekstremt hårde.[ENTER]Jeg ville anbefale, at du styrker forsvars muren[ENTER]omkring fortet. Det vil ikke på nuværende[ENTER]tidspunkt kunne modstå et angreb fra Manticore.
 4838	Ja, det er den information, vi har brug for. Jeg[ENTER]vil bruge dit råd og styrke forsvars muren.[ENTER]Tag venligst dette som belønning.
-4839	Tal med admiral Angmur.
+4839	Tal med Admiral Angmur.
 4840	Manticore tropperne
 4841	Besejre 50 Manticore krigere, 40 Manticore[ENTER]soldater, 20 Manticore bødler, samt besejrer[ENTER]General Cor 10 gange.
 4842	Styrk forsvaret I
@@ -4856,7 +4856,7 @@
 4856	Admiral Angmur kigger efter dig. Find ud af, hvad[ENTER]han vil.
 4857	For at færdiggøre konstruktionen har vi brug for[ENTER]ler sten.[ENTER]Manticores hamstre disse som guld. Jeg tænker, at[ENTER]100 sten vil være nok. Du vil selvfølgelig blive[ENTER]generøst belønnet for din hjælp.
 4858	Manticore brevet
-4859	Admiral Angmur har en ny opgave til dig.
+4859	Admiral Angmur har en opgave til dig.
 4860	Ja, det er endnu engang tid til at lede vores[ENTER]opmærksomhed hen til de intrigante tjenere af[ENTER]Mørket.[ENTER]Vi har brug for at komme i besiddelse af de breve[ENTER]de har send til Manticore og Rød tyvene![ENTER]Besøg Manticore først.
 4861	Forstået.
 4862	General Cor er taget ud for at aflevere brevet[ENTER]til Martyaxwar. Du er nødt til at stoppe[ENTER]overdragelsen!
@@ -4900,7 +4900,7 @@
 4900	Manticore brevet er afkodet.
 4901	Yon-I-Walker leder efter dig. Gå til ham og find[ENTER]ud af om han allerede har afkodet brevet eller[ENTER]ikke.
 4902	*mumlen* ...ah! Der er du! Tak for din hjælp. Jeg[ENTER]har været i stand til at afkode en stor del af[ENTER]brevet. Men jeg gør ikke nogen fremskridt i den[ENTER]sidste det. Jeg er bange for, jeg har brug for at[ENTER]bede om din hjælp endnu en gang. Jeg har hårdt[ENTER]brug for Carapax pulver.[ENTER]Du kan finde det på Hummer generalen eller Konge[ENTER]krabben fra krabsdyrs stammen.
-4903	Carapax pulver
+4903	Carapax pulver?
 4904	Ja, krabsdyrs stammen har det i deres besiddelse.[ENTER]Selv en lille dosis af dette pulver er dødeligt![ENTER]Tre doser skulle være nok. Held og lykke.
 4905	Jeg tager afsted med det samme.
 4906	Carapax pulver
@@ -5034,7 +5034,7 @@
 5034	Millenium essensen
 5035	Octavio vil tale med dig.
 5036	Så, jeg har tænkt over, hvad du efterspurgte hele[ENTER]natten. Jeg løber en stor risiko med dette, men[ENTER]jeg er sikker på, at jeg gør det rigtige. Ja, jeg[ENTER]vil hjælpe dig.
-5037	Fantastisk!
+5037	Dejligt!
 5038	Men jeg har det ikke på lagret i øjeblikket. Kan[ENTER]du få fat på nogle få ingredienser for mig? Så[ENTER]vil jeg vil jeg lave essensen til dig.
 5039	Selvfølgelig. Hvad skal du bruge?
 5040	Jeg mangler Gango-rod, Tue-svamp og Alperose. Jeg[ENTER]mangler 200 af hver ingrediens.
@@ -5341,7 +5341,7 @@
 5341	Admiral Angmur har brug for din hjælp!
 5342	Godt du er her. Skeletos, lederen af Den sorte[ENTER]døds brigade, har overlevet og angreb mine mænd,[ENTER]lige da de planlagde at angribe basen. Ingen[ENTER]kunne komme forbi ham.
 5343	Du har besejret ham en gang, vær venlig at hjælp[ENTER]mit folk på Gautama Klippen! Gå op i mod[ENTER]Skeletos.[ENTER]Storm efterfølgende basen og dræb tempel tjeneren[ENTER]Yah-Ki.
-5344	Forstået.
+5344	Forstået!
 5345	Besejr Yah-Ki
 5346	Besejr tempel tjeneren Yah-Ki og stop hende i at[ENTER]tilkalde hæren af døde.
 5347	Den afgørende dag er kommet. Hvis vi falder,[ENTER]falder verden med os. Men hvis vi sejrer. vil[ENTER]vores gerninger stdig blive sunget om hundrede år[ENTER]fra nu. Stop mørkets tjenere. Besejr tempel[ENTER]tjeneren Yah-Ki!
@@ -5496,18 +5496,18 @@
 5496	Et bryllup er lige igang, vent et øjeblik, eller[ENTER]kom igen senere!
 5497	Din partner skal være i nærheden, før jeg kan[ENTER]begynde på ceremonien. Sørg for at bringe din[ENTER]partner hertil.
 5498	%s er ikke i nærheden.
-5499	Ikke dit navn, men navnet på din[ENTER]partner.
+5499	Ikke dit navn, men navnet på din partner.
 5500	Skriv navnet på din partner.
 5501	Desværre. Et bryllup med 2 af sammen køn er ikke[ENTER]tilladt.
-5502	Kun folk fra samme Rige kan[ENTER]giftes.
+5502	Kun folk fra samme Rige kan giftes.
 5503	Den person du ønsker at blive gift med, er[ENTER]allerede gift - var du ikke klar over det? Søg en[ENTER]ledig partner.
 5504	%s er allerede gift.
-5505	Denne person er ikke moden nok.[ENTER]Din partner skal mindst være level[ENTER]25.
+5505	Denne person er ikke moden nok.[ENTER]Din partner skal mindst være level 25.
 5506	I to passer ikke sammen. Når to folk ikke passer[ENTER]sammen, kan jeg ikke tillade at de giftes.[ENTER]Level-forskellen må ikke være større end 15;[ENTER]derfor kan i ikke blive gift.
 5507	Er du ikke lidt ung til at blive gift? Du har[ENTER]brug for en masse ansvarlighed for et gift liv og[ENTER]du virker ikke til at du er moden nok endnu. Unge[ENTER]folk bliver skilt meget hurtigt, så jeg er bange[ENTER]for at jeg ikke vil tillade dette. Få noget mere[ENTER]erfaring først.
 5508	Nu byttes ringene.
 5509	Et bryllup er en meget vigtig del i livet, da[ENTER]kunne din partner i det mindste have medbragt en[ENTER]vielsesring?
-5510	Din partner skal have en vielsesring[ENTER]parat.
+5510	Din partner skal have en vielsesring parat.
 5511	Din partner bære slet ikke nogen bryllupsdragt.[ENTER]Er det ikke pinligt for dig?
 5512	Din partner skal bære en smoking.
 5513	Din partner skal bære en bryllupskjole.
@@ -5553,36 +5553,36 @@
 5553	Nej, det var bare gas.
 5554	Bring vielsesringen.
 5555	Din partner skal have ringen på sig.
-5556	Du har ikke nok Yang til en[ENTER]skilsmisse.
-5557	For at blive skilt, har du brug for[ENTER]%s
+5556	Du har ikke nok Yang til en skilsmisse.
+5557	For at blive skilt, har du brug for %s
 5558	Der kræves 500.000 Yang for at blive skilt.
 5559	Ønsker du virkelig at blive skilt? Du bør ikke[ENTER]tage let på en beslutning som denne.
 5560	Nej. Jeg har ændret mening.
 5561	Jeg har ændret min mening.[ENTER]Jeg vil alligevel ikke skilles.
-5562	Det er bedre på den måde.[ENTER]Jeg ønsker dig et langt og lykkeligt[ENTER]liv.
+5562	Det er bedre på den måde.[ENTER]Jeg ønsker dig et langt og lykkeligt liv.
 5563	Du er nød til at få fat i en forlovelsesring[ENTER]først. Så kan du blive gift.
 5564	Skilsmissen blev gennemført.
 5565	Er du enig i at skilsmissen skal finde sted?
 5566	Skilsmissen er gennemført.[ENTER]Du er nu skilt.
 5567	Dokumenterne er ikke fuldstændige.[ENTER]Kom igen senere.
 5568	Skilsmissen er blevet erklæret ugyldig.
-5569	Din partner vil ikke skilles. I skal være[ENTER]enige.
+5569	Din partner vil ikke skilles. I skal være enige.
 5570	Fjern vielsesringen
 5571	Fjern vielsesringen
-5572	Ubehagelige minder, bør man hurtigt[ENTER]glemme
+5572	Ubehagelige minder, bør man hurtigt glemme
 5573	Vielsesringen er forsvundet
 5574	Ene skilsmisse
 5575	Ønsker du virkelig at giftes?[ENTER]Kun en gang i livet giftes man, og man burde[ENTER]klæde sig passende?
 5576	Landsby vagt:
-5577	Du har brug for 1 Million Yang for en ensidet[ENTER]skilsmisse. Ønsker du virklig at blive[ENTER]skilt?
+5577	Du har brug for 1 Million Yang for en ensidet[ENTER]skilsmisse. Ønsker du virklig at blive skilt?
 5578	Nej, jeg ville bare informere mig
 5579	Du har ikke nok Yang til skilsmissen. Du har brug[ENTER]for lige så mange Yang som til selve brylluppet.[ENTER]Overvej det en ekstra omgang.
 5580	Ønsker du virkelig at blive skilt?
 5581	Ja, jeg vil
 5582	Jeg bør genoverveje
-5583	Godt.[ENTER]Måske er det bedre sådan.[ENTER]Hvis du virkelig er interesseret, så kom[ENTER]igen.
+5583	Godt.[ENTER]Måske er det bedre sådan.[ENTER]Hvis du virkelig er interesseret, så kom igen.
 5584	Hvis du er sikker, så gør vi det. Jeg ønsker[ENTER]alligevel fortsat held og lykke. Den ensidet[ENTER]skillsmisse er gennemført.
-5585	Træsamleren Deokbae:
+5585	Deokbae:
 5586	Din spidshakke kan ikke blive forbedret, da du[ENTER]ikke har trænet nok.
 5587	Ønsker du at forbedre din spidshakke? Lad os[ENTER]se... Det nuværende level af din spidshakke er[ENTER]%s.
 5588	Ønsker du at forbedre den?
@@ -5593,7 +5593,7 @@
 5593	Oh nej, jeg lavede en fejl! Jeg beklager,[ENTER]desværre er din spidshakkes point blevet[ENTER]reduceret.
 5594	Vil du åbne boksen med nøglen?
 5595	Ja, åben boksen
-5596	Nej, ikke lige nu.
+5596	Nej, ikke nu
 5597	Du behøver en Rubin Nøgle eller en Diamant Nøgle[ENTER]for at kunne åbne den Mystiske Rubin Boks!
 5598	Hej!
 5599	Gammel mand:
@@ -5624,7 +5624,7 @@
 5624	Jeg bringer dig sokker!
 5625	Bring mig mindst 5 sokker, og du vil modtage en[ENTER]belønning.[ENTER]Urrgh, duften af muggen sokke er uudholdelig![ENTER]Kom tilbage når du har indsamlet nok.[ENTER]Glædelig jul!
 5626	Ho ho ho, har du samlet sokker nok.[ENTER]Hmm, lad mig se.[ENTER]URRGH denne lugt! Nå det er absolut de rigtige[ENTER]sokker![ENTER]Glædelig jul!
-5627	 - Rensdyr Kalv
+5627	Rensdyr Kalv
 5628	Du har allerede modtaget et Rensdyr Kalv Segl fra[ENTER]mig i dag. Jeg er bange for at den lille fyr har[ENTER]brug for en pause nu. Det vil være tilbage i fuld[ENTER]vigør igen i morgen. Hvis du ikke ønsker at vente[ENTER]så længe, så tag et kig ned til venstre og se[ENTER]hvad der gemmer sig bag den roterende mønt, jeg[ENTER]har hørt at en anden Rensdyr Kalv venter der. Men[ENTER]jeg vil også være glad for at se dig hvis du[ENTER]besøger mig igen i morgen!
 5629	Du har allerede bragt mig dine strømper i dag.[ENTER]Husk, du kan kun aflevere hver 24 timer.
 5630	Wonda-Rim:
@@ -5678,7 +5678,7 @@
 5678	Du har modtaget 40,000 erfaringspoint.[ENTER]Du har modtaget 10,000 Yang.[ENTER]Du har modtaget en Færdighedsbog.
 5679	Yang-Shin:
 5680	Yang-Shin:
-5681	Landsby vagt:
+5681	Landsby vagt
 5682	Landsby vagten har en mission til dig. Gå til ham[ENTER]og find ud af, hvad det hele handler om.
 5683	Den syge bror
 5684	Den syge vagt
@@ -5737,7 +5737,7 @@
 5737	Desertøren
 5738	Yang-Shin har problemer med at finde gode jagt[ENTER]marker. Gå til ham og find ud af hvordan du kan[ENTER]hjælpe ham.
 5739	Intet er som, det plejer at være, før Metin[ENTER]Stenene kom ned. Selv det at gå på jagt er blevet[ENTER]umulige masser af steder, fordi vilde dyr begyndt[ENTER]at opføre sig som om de har hundegalskab.[ENTER]Vandreren Nakajima bor derude et eller andet[ENTER]sted, jeg er sikker på at han vil vide, hvor der[ENTER]er nogle gode jagtområde. Kunne du lede efter ham[ENTER]og spørge?
-5740	Nakajima:
+5740	Nakajima
 5741	Så du ønsker at vide et godt sted at jage?[ENTER]Vær ikke så forhastet, hvis jeg skulle gøre noget[ENTER]for dig, så skal du også gøre mig en tjeneste.
 5742	Du bør vide ... Jeg bor ikke her frivilligt. Jeg[ENTER]har brug for at skjule mig, fordi jeg flygtede[ENTER]fra de grusomheder i militæret. Jeg ønsker blot,[ENTER]at min elskede kone Ah-Yu skulle vide, at jeg[ENTER]stadig er i live. Kan du aflevere denne besked[ENTER]til hende? Men husk, at det er kun for Ah-Yu's[ENTER]ører! Til gengæld vil hun fortælle dig, hvor vi[ENTER]kyssede for første gang - Jeg ønsker at møde[ENTER]hende der, og dens område er et godt sted at[ENTER]jage.
 5743	Nakajima:
@@ -5803,7 +5803,7 @@
 5803	Med glæde
 5804	Dette kommer ikke mig ved
 5805	Jeg har ikke tid til at opdrage onde børn.[ENTER]Du bliver nødt til at fange ham selv. Men jeg[ENTER]tvivl på om at du kan klarer det...
-5806	Taurean:
+5806	Taurean
 5807	Yonah`s dyrebare familie arvestykker, tre vaser[ENTER]lavet af Celadon porcelæn, er alle i stykker. Han[ENTER]mener, at Taurean har skylden. Gå til Taurean og[ENTER]find ud af det.
 5808	Taurean er i %s.
 5809	Taurean:
@@ -5812,7 +5812,7 @@
 5812	Vaser? Yonah? Jeg ved bare ikke, hvad du taler om!
 5813	Så vær venlig at forklare mig igen, hvorfor tre[ENTER]af dem er itu.
 5814	Jeg sværger, at jeg ikke har været i nærheden af[ENTER]en vase nogen steder i dag, og jeg har heller[ENTER]ikke set Yonah's i dag. I virkeligheden,[ENTER]tilbragte jeg hele dagen med at slåse med Harang.[ENTER]Hun låset mig enda inde i laden for en tid! Gå ud[ENTER]og spørg hende, hvis du ikke tror mig!
-5815	Harang:
+5815	Harang
 5816	Taurean hævder, at han er uskyldig. Han spillede[ENTER]med Harang hele dagen og kunne ikke have slået[ENTER]vaser itu. Gå til Harang og spørge, om det er[ENTER]sandt.
 5817	Harang, har du set Taurean for nylig?
 5818	Harang:
@@ -5876,7 +5876,7 @@
 5876	Godt han har ikke været her i dagevis. Kunne du[ENTER]måske gå hen og spørge ham, hvad der sker?
 5877	Octavio er i %s.
 5878	Jeg er taget afsted for at finde fiskeren!
-5879	Fisker:
+5879	Fisker
 5880	De ubekymrede dage på havet er over! Fiskere[ENTER]forsvinde hver dag, det er forfærdeligt! Siden de[ENTER]Metin sten blev kastet i havet, dengang så[ENTER]fredelige hvaler har forvandlet sig til brutale[ENTER]søuhyrer. Fiskeri er blevet en farlig handel.
 5881	Vores spyd kan ikke skade hvalerne mere. Deres[ENTER]hud er hårdere end Ork hud!
 5882	Måske Yonah ved, hvad de skal gøre. Han plejede[ENTER]at gå til havet ganske ofte og jager hvaler hvert[ENTER]år.
@@ -5889,14 +5889,14 @@
 5889	Yonah:
 5890	Jeg har hørt om hvad der er sket med hvalerne.[ENTER]Det er en dårlig forretning for fiskerne. Selv[ENTER]hvis de tør at vove sig ud på havet, er deres[ENTER]spyd bare for svage til at trænge igennem[ENTER]hvalhud. Da jeg arbejdede på en hvalfanger,[ENTER]brugte vi specielle våben til hvaler med gamle og[ENTER]arret hud. De var i stand til at trænge gennem[ENTER]alt...
 5891	Det er en speciel teknik til at hærde hval fanger[ENTER]spyd. Den eneste person, der kan lave denne type[ENTER]spyd er en Smed.
-5892	Gå til smeden
+5892	Gå til Smeden.
 5893	Yonah:
 5894	Yonah anbefaler at vi bruge meget robuste og[ENTER]skarpe spyd til hval jagt. Gå til Smeden og[ENTER]spørge ham, om han kan lave nogle af disse spyd.
 5895	Smed
 5896	Ja, jeg har hørt om de spyd og jeg kan også lave[ENTER]dem. Men, for at de kan få den nødvendige[ENTER]holdbarhed, skal jeg bruge en Diamant Sten.
 5897	Jeg behøver:
 5898	Proces:
-5899	Smed
+5899	Smed:
 5900	Diamantsten
 5901	Lad os se. Jeg har brug for en hakke til mine[ENTER]sten. Jeg spekulerer på, om min er her omkring et[ENTER]sted eller hvorvidt Deokbae er nødt til at skaffe[ENTER]mig en ny?
 5902	Du har brug for %s x Diamantsten
@@ -6037,7 +6037,7 @@
 6037	Jeg vil give dig de eliksirer!
 6038	Handelsdame:
 6039	Friske forsyninger
-6040	Handelsdame:
+6040	Handelsdame
 6041	Ja, at få friske forsyninger har været rigtig[ENTER]vanskeligt for nylig. Handels ruterne er blevet[ENTER]ganske usikre og landevejsrøvere og vilde dyr[ENTER]bliver ved med at dukke op. Den Rejsende[ENTER]Handelsmand, fra hvem jeg får mine varer, har[ENTER]ikke en chance mod de tigre.
 6042	Måske kan Kaptajnen og hans soldater hjælpe.[ENTER]Gå venligst til ham og spørge ham, om han ikke[ENTER]kan sende sine soldater der for at beskytte de[ENTER]handlende.
 6043	Gå til Handelsdameen og find ud af hvorfor der er[ENTER]forsinkelse på friske eliksir forsyninger.
@@ -6142,7 +6142,7 @@
 6142	Du har modtaget %s Yang.
 6143	Du forveksler mig åbenbart med en fjern[ENTER]slægtning. Jeg har ikke en datter og har ikke nok[ENTER]Yang til at kunne arrangere et bryllup.
 6144	Vil du prøve en skefuld af min Tyrefrø suppe?[ENTER]Jeg brugte en gammel opskrift fra min Tante.
-6145	Heuk-Young:
+6145	Heuk-Young
 6146	Den legendariskes dagbog
 6147	Jeg har fundet disse kriger rester. Jeg ved ikke[ENTER]om det er den Sura som Heuk-Young leder efter,[ENTER]men jeg er sikker på at hun er interesseret i[ENTER]dem.
 6148	Ikke bare en Sura døde her. Jeg har set deres[ENTER]rester. Jeg spekulerer på om den legendariske[ENTER]kriger også er blandt dem? Jeg bør rapportere[ENTER]tilbage til Heuk-Young angående dette.
@@ -6162,7 +6162,7 @@
 6162	En død Sura... Det kunne være ham, eller bare en[ENTER]af hans tilhængere. Men vi skal bruge flere[ENTER]beviser for at være sikker. Led efter beviser på[ENTER]hvem det kunne være. Våben, smykker, eller måske[ENTER]noter eller noget i den retning.
 6163	Skelettet af en Sura og en bogside? Lad mig se[ENTER]pergamentet... Hmm, du har måske fundet Akumas[ENTER]rester. Men, vi skal bruge flere beviser. Prøv at[ENTER]finde nogle flere bogsider.
 6164	Jeg har fundet nogle beviser, men jeg er ikke[ENTER]sikker på om den legendariske Sura virkelig var[ENTER]her eller ej. Jeg skal bruge mere information.
-6165	Godt
+6165	Godt.
 6166	Is kreatur
 6167	På fortvivlelsens rand
 6168	Mørk terror
@@ -6299,7 +6299,7 @@
 6299	Du har også modtaget 120,000,000 erfarings- point.
 6300	Åben butik
 6301	Du skal jagte:
-6302	Handelsdame:
+6302	Handelsdame
 6303	Find våben-handelsmanden og spørg ham hvorfor han[ENTER]ikke synger under handelsdamens vindue længere
 6304	Saml syrener
 6305	Du har fundet en flot syren gren!
@@ -6324,7 +6324,7 @@
 6324	Jeg savner min skat, våben-handelsmanden. I uger[ENTER]har han sunget under mit vindue hver nat og nu[ENTER]har jeg ikke hørt fra ham i dage. Måske er han[ENTER]bange for min far. Kan du finde ud af hvad der er[ENTER]galt med ham?
 6325	Våben-handelsmanden
 6326	Oh, mange tak. Så du siger at han kun var[ENTER]optaget? Sikke en lettelse. Jeg vil vente på ham[ENTER]denne aften.
-6327	For dine anstrengelser får du: %s erfaringspoints.
+6327	For dine anstrengelser får du: %s erfaringspoints. 
 6328	Skynd dig tilbage til handelsdamen.
 6329	Syren
 6330	Snak med våben-handelsmanden
@@ -6485,21 +6485,21 @@
 6485	OX-turnering: Start
 6486	OX-turnering: Start[ENTER]Hermed bliver OX-turneringen startet.[ENTER]Ønsker du virklig at starte?
 6487	Start
-6488	Du er nået til det tredje[ENTER]patrulje-point.
+6488	Du er nået til det tredje patrulje-point.
 6489	Patrulje point 5
 6490	Patrulje point 2
 6491	Gå til det andet patrulje-point.
-6492	Du er nået til det andet[ENTER]patrulje-point.
+6492	Du er nået til det andet patrulje-point.
 6493	Patrulje point 1
 6494	Gå til det første patrulje-point.
 6495	Du er nået til det første[ENTER]patrulje-point.
 6496	Gennemfør patrulje nr. 5
 6497	Du er nået til det fjerde patrulje-point.
 6498	Gå til tredje patrulje-point.
-6499	Du er nået til det tredje[ENTER]patrulje-point.
+6499	Du er nået til det tredje patrulje-point.
 6500	Gennemfør patrulje nr. 5
 6501	Gå til det andet patrulje-point.
-6502	Du er nået til det andet[ENTER]patrulje-point.
+6502	Du er nået til det andet patrulje-point.
 6503	Gå til det første patrulje-point.
 6504	Du er nået til det første[ENTER]patrulje-point.
 6505	Patrulje point 5
@@ -6531,30 +6531,30 @@
 6531	Patrulje point 3
 6532	Gå til tredje patrulje-point.
 6533	 - Ild Føniks
-6534	 - Rensdyr Kalv
+6534	- Rensdyr Kalv
 6535	Du kan ikke tilkalde dit kæledyr lige nu.
 6536	s Is Føniks
-6537	 - Baby Azrael
-6538	 - Leonidas
-6539	 - Khan
-6540	 - Porkie
-6541	 - Rufus
-6542	 - Bambi
-6543	 - Knuud
-6544	 - Bao Bao
-6545	 - Buttet Mini Executor
-6546	 - Buttet Mini Executor (guld)
-6547	 - Boney
-6548	 - Jade føniks
+6537	- Baby Azrael
+6538	- Leonidas
+6539	- Khan
+6540	- Porkie
+6541	- Rufus
+6542	- Bambi
+6543	- Knuud
+6544	- Bao Bao
+6545	- Buttet Mini Executor
+6546	- Buttet Mini Executor (guld)
+6547	- Boney
+6548	- Jade føniks
 6549	Dræb 20 vilde bueskytter i løbet af 30 minutter[ENTER]og meld det til stald-knægten.
 6550	Jeg ønsker at ride
 6551	Statusforbedring pony-opgave
 6552	Fremskridt af kvalifikationsprøven
 6553	Dræb 20 vilde bueskytter i løbet af 30 minutter[ENTER]og kom tilbage!
 6554	Forlad
-6555	Ønsker du virklig at afbryde[ENTER]kvalifikationen?
+6555	Ønsker du virklig at afbryde kvalifikationen?
 6556	Var bare for sjov.
-6557	Vær sikker på du næste gang er[ENTER]heldig.
+6557	Vær sikker på du næste gang er heldig.
 6558	Stald-knægt:
 6559	Du har ingen tid til snak! Skynd dig! Dræb de[ENTER]vilde bueskytter og kom tilbage!
 6560	Du har færdiggjort testen succesfuldt, meget[ENTER]godt. Du har brug for et hestebilled for at være[ENTER]i stand til at ride. Det vil tage noget tid at[ENTER]lave et til dig. Kom tilbage i morgen. Glem ikke[ENTER]at et hestebilled koster 100.000 Yang!
@@ -6569,9 +6569,9 @@
 6569	Stald-knægt:
 6570	Jeg har fremstillet hestebilledet, dermed kan du[ENTER]ride på begynderheste. Med begynderheste kan du[ENTER]bevæge dig hurtigere. Det koster 100.000 Yang.[ENTER]Ønsker du at købe en?
 6571	Køb ikke
-6572	For at ride, skal du gennemføre en[ENTER]kvalifikationsprøve. For at deltage i den, skal[ENTER]du overbringe en heste medalje.[ENTER]Du kan få den i den nemme abe-grotte i den anden[ENTER]by. Men aberne vil næppe give den gratis[ENTER]...
+6572	For at ride, skal du gennemføre en[ENTER]kvalifikationsprøve. For at deltage i den, skal[ENTER]du overbringe en heste medalje.[ENTER]Du kan få den i den nemme abe-grotte i den anden[ENTER]by. Men aberne vil næppe give den gratis ...
 6573	Du kan med hestebilledet påkalde hesten. Når du[ENTER]mister billedet, skal du betale for et nyt. Så[ENTER]pas godt på det!
-6574	Du har ikke nok Yang til at købe[ENTER]hestebilledet!
+6574	Du har ikke nok Yang til at købe hestebilledet!
 6575	Kom igen senere.
 6576	Ønsker du virkelig at afbryde hestebilled-[ENTER]opgaven? Hvis du afbryder nu, skal du starte[ENTER]forfra.
 6577	Nej
@@ -6579,7 +6579,7 @@
 6579	Da du ikke har nået at dræbe 20 vilde bueskytter[ENTER]i løbet af 30 minutter, har du ikke bestået[ENTER]kvalifikationsprøven.
 6580	For at gentage prøven, skal du aflevere en heste[ENTER]medalje hos stald-knægten.
 6581	Oh du har en heste medalje, super![ENTER]Nu skal du bare bevise, at du har den nødvendige[ENTER]evne for at ride. Dræb 20 vilde bueskytter i[ENTER]løbet af 30 minutter. Hvis du klarer det, har du[ENTER]evnen til at ride.
-6582	Kom igen når du igen har[ENTER]interesse.
+6582	Kom igen når du igen har interesse.
 6583	Øjensynligt er der et porblem med[ENTER]rider-informationerne.
 6584	Bring stald-drengen en heste medalje! Så kan du[ENTER]fortsætte rider-træningen. Heste medaljen findes[ENTER]i abe-grotten.
 6585	Kvalifikation for ridning
@@ -6605,7 +6605,7 @@
 6605	Ridetræning (1)
 6606	Gå til målet (1).
 6607	Teleportation til trænings-kortet.
-6608	Afsted
+6608	Afsted med dig
 6609	Vil du virklig give op?
 6610	Nået til målet (1)!
 6611	Nået til målet (9)!
@@ -6623,7 +6623,7 @@
 6623	Mål 1: endnu ikke nået
 6624	Mål 2: Afsluttet
 6625	Mål 2: endnu ikke nået
-6626	Vil du virklig afbryde?[ENTER]Træningen kan så først startes igen i[ENTER]morgen.
+6626	Vil du virklig afbryde?[ENTER]Træningen kan så først startes igen i morgen.
 6627	Mål 1 markeret.
 6628	Mål 2 markeret.
 6629	Rid til målet
@@ -6634,9 +6634,9 @@
 6634	Målet markeret.
 6635	Målet markeret.
 6636	For at træne, har du brug for en hestemedalje.[ENTER]Resultaterne bliver gemt på den.
-6637	Heste har også brug for lidt ro. Det ville være[ENTER]bedre, hvis du kom igen i[ENTER]morgen.
+6637	Heste har også brug for lidt ro. Det ville være[ENTER]bedre, hvis du kom igen i morgen.
 6638	Din hest ser meget udmattet ud.[ENTER]Du burde lade den hvile lidt.
-6639	Din hest ser ud til at være sulten.[ENTER]Hvad med at du fodrer hesten inden du[ENTER]træner?
+6639	Din hest ser ud til at være sulten.[ENTER]Hvad med at du fodrer hesten inden du træner?
 6640	Din hest har ikke brug for mere træning.[ENTER]Prøv at få fat i en våben-hestebog.
 6641	Kom til mig.
 6642	Din træning er næsten afsluttet![ENTER]Rid afsted og lær kortet at kende.[ENTER]Det bliver måske lidt sværer denne gang, men vær[ENTER]ikke bekymret. Jeg ved du kan klare det.[ENTER]Det er en lang vej, så afsted med dig. På gensyn[ENTER]min ven, vi ses snart igen. Resultaterne af din[ENTER]træning bliver noteret på din hestemedalje. Du[ENTER]kan allerede forberede dig på opstigning på den[ENTER]mellemste level.
@@ -6726,7 +6726,7 @@
 6726	Indtast direkte
 6727	Indtast længden af bonus:
 6728	%s Bonus : %s %s%% ( %s timer )
-6729	Skal de ovenvalgte indstillinger[ENTER]gennemføres?
+6729	Skal de ovenvalgte indstillinger gennemføres?
 6730	Modifikationerne blev gennemført.
 6731	Afbrudt!
 6732	Tillad bonus til Riget
@@ -6741,14 +6741,14 @@
 6741	%s Bonus: %s
 6742	Vælg bonusprocent:
 6743	¸ÇöÁßÀÔ´Ï´Ù
-6744	Der bliver allerede bearbejdet en anden mission.[ENTER]Du kan kun starte en ny mission, hvis du[ENTER]afslutter eller afbryder den[ENTER]aktuelle.
+6744	Der bliver allerede bearbejdet en anden mission.[ENTER]Du kan kun starte en ny mission, hvis du[ENTER]afslutter eller afbryder den aktuelle.
 6745	Aa
 6746	%s afbryde
-6747	Ønsker du virkelig at afbryde denne[ENTER]mission?
+6747	Ønsker du virkelig at afbryde denne mission?
 6748	Ja, afbryd.
 6749	mission %s afbrudt.
 6750	(Resterende: %s %s, %s %s)
-6751	questscroll5.kill_race:%s]
+6751	questscroll5.kill_race:%s
 6752	(Resterende: %s %s, %s %s)
 6753	questscroll5.kill_race:%s]
 6754	Du har fuldført missionen og fået en belønning!
@@ -6781,8 +6781,8 @@
 6781	Alle dine statuspoints kan fordeles på ny.[ENTER]Ønsker du virklig at glemme det hele?
 6782	Færdigheds-nulstilling
 6783	En udvalgt færdighed nulstilles, så du kan bruge[ENTER]de points til andre færdigheder.[ENTER]Du taber de points du har modtaget ved at læse[ENTER]bøger, og du får maximalt 17 points tilbage, også[ENTER]selv om du har brugt flere på færdigheden.
-6784	Der eksistere ingen færdighed der kan[ENTER]nulstilles.
-6785	Vælg en færdighed der skal[ENTER]nulstilles.
+6784	Der eksistere ingen færdighed der kan nulstilles.
+6785	Vælg en færdighed der skal nulstilles.
 6786	En udvalgt færdighed nulstilles, så kan bruge de[ENTER]points til andre færdigheder.[ENTER]Du taber de points du har modtaget ved at læse[ENTER]bøger, og du får maximalt 17 points tilbage, også[ENTER]selv om du har brugt flere på færdigheden.
 6787	Fortsæt
 6788	Din vitalitet
@@ -6797,7 +6797,7 @@
 6797	bliver nulstillet til 1.
 6798	Dine resterende point bliver refunderet som[ENTER]trænings point.
 6799	Vil du fortsætte?
-6800	Dit level er for lavt.
+6800	Dit level er for lavt!
 6801	Du kan ikke ride mens du er forvandlet!
 6802	Du rider allerede! Hvis du vil skifte din ganger,[ENTER]så skal du stige af den først.
 6803	Du bliver nødt til at sende den hest væk hvis du[ENTER]vil bruge en anden ganger.
@@ -6883,9 +6883,9 @@
 6883	Du har valgt Magisk-våben-læren.
 6884	Magisk-våben læren
 6885	Start sort-magi-læren
-6886	Desværre. Kun Suraer kan vælge[ENTER]sort-magi-læren
+6886	Desværre. Kun Suraer kan vælge sort-magi-læren
 6887	Sort-magi-læren
-6888	I den sorte-magi-lære bruges mørke magier og[ENTER]forbandelser for at svække fjenden på[ENTER]distance.
+6888	I den sorte-magi-lære bruges mørke magier og[ENTER]forbandelser for at svække fjenden på distance.
 6889	Du har valgt sort-magi-læren.
 6890	Start Dragemagt læren
 6891	Undskyld. Kun Shamaner kan vælge Dragemagt læren.
@@ -6899,7 +6899,7 @@
 6899	Helbredelses læren
 6900	I helbredelses-læren benytter man sig af lynslag[ENTER]der bedøver fjenden. Yderligere læres hvordan man[ENTER]helbreder gruppemedlemmer og øger deres styrke.
 6901	Du har valgt Helbredelses læren
-6902	Dragemagtens lærer:
+6902	Læren om Dragemagten
 6903	Helbredelses læren
 6904	Nulstil færdigheder
 6905	Hvis du skifter mening, kan du komme igen.
@@ -6962,13 +6962,13 @@
 6962	På den tredje etage i Edderkoppe grotten vil du[ENTER]finde en gammel gravsten med en inskription[ENTER]indgraveret på den. Lav en kopi af denne og bring[ENTER]den til Kaptajnen.
 6963	Perfekt, du fandt den gamle gravsten og lavede en[ENTER]kopi af inskriptionen på den! Gå tilbage til[ENTER]Kaptajnen og vis det til ham.
 6964	Handelsdame:
-6965	Få fat i tom flaske
+6965	Få fat i en tom flaske.
 6966	Det er godt.[ENTER]Du kan få tomme flasker fra Yonah pottemageren.[ENTER]Mange tak.
 6967	Find Yonah pottemageren
 6968	Handelsdamen har brug for en tom flaske fra[ENTER]pottemageren Yonah, så hun kan fremstille en rød[ENTER]eliksir.
 6969	Yonah:
 6970	Oh kære! Pokkers også! Jeg kan ikke stoppe den[ENTER]hoste! Hvordan skal jeg kunne arbejde på den[ENTER]måde? Har handelsdamen sendt dig?[ENTER]Jeg har tomme flasker, men jeg kan ikke give dig[ENTER]en gratis.
-6971	Jeg har astma.[ENTER]Folk har fortalt mig, at ferskenfrø skulle være[ENTER]et dejligt middel mod astma. Hvis du finder nogen[ENTER]til mig, kan du få min tomme flaske.[ENTER]Du kan finde ferskenfrø hos vores vildsvin ude[ENTER]for byen. Når landsmændene planter ferskentræer,[ENTER]er det vildsvinene som graver dem op[ENTER]igen.
+6971	Jeg har astma.[ENTER]Folk har fortalt mig, at ferskenfrø skulle være[ENTER]et dejligt middel mod astma. Hvis du finder nogen[ENTER]til mig, kan du få min tomme flaske.[ENTER]Du kan finde ferskenfrø hos vores vildsvin ude[ENTER]for byen. Når landsmændene planter ferskentræer,[ENTER]er det vildsvinene som graver dem op igen.
 6972	Få fat i ferskenfrø.
 6973	Handelsdamen har brug for en tom flaske til[ENTER]hendes mikstur fra Yonah pottermageren.[ENTER]Yonah, der har astma, vil give dig en tom flaske,[ENTER]hvis du finder nogle Ferskenfrø til ham. Du[ENTER]finder disse frø ved at jagte vildsvin.
 6974	For at få ferskenfrø...
@@ -6978,12 +6978,12 @@
 6978	Gå tilbage til Yonah
 6979	Du har fundet ferskenfrø, aflever dem til Yonah.
 6980	Oh, du har fundet dem!
-6981	Tak. Nu kan jeg i det mindste gøre noget imod min[ENTER]astma og kan fortsætte mit[ENTER]arbejde.
+6981	Tak. Nu kan jeg i det mindste gøre noget imod min[ENTER]astma og kan fortsætte mit arbejde.
 6982	Her er en tom flaske. Tag den med til handelsdamen
 6983	Levere den tomme flaske
 6984	Handelsdamen ved landhandlen har brug for den[ENTER]tomme flaske fra pottemageren. Aflever den.
 6985	Handelsdame:
-6986	Tak.[ENTER]Jeg håber det var ikke alt for besværligt.[ENTER]Du får det her, som tak for dit[ENTER]arbejde.
+6986	Tak.[ENTER]Jeg håber det var ikke alt for besværligt.[ENTER]Du får det her, som tak for dit arbejde.
 6987	Undskyld? Hvis du ikke lige har for travlt, kunne[ENTER]du måske gøre mig en tjeneste? Jeg har brug for[ENTER]en tom flaske til min røde eliksir.
 6988	Du får 1500 erfaringspoint.[ENTER]Du får 1000 Yang.
 6989	Du har stadig ingen tom flaske?
@@ -7002,7 +7002,7 @@
 7002	Rustnings-handelsmand:
 7003	Aftensmaden
 7004	Alt den snak om mad gør mig sulten, og jeg kunne[ENTER]så godt tænke mig sammenkogt vild, bjørn, kål og[ENTER]to æg.
-7005	Har min far sagt hvad han ønsker at[ENTER]spise?
+7005	Har min far sagt hvad han ønsker at spise?
 7006	Sammenkogt svin, bjørn, kål og et æg
 7007	Sammenkogt vild, bjørn, kål og et æg
 7008	Sammenkogt vild, bjørn, kål og to æg
@@ -7023,7 +7023,7 @@
 7023	Ingrediens til Medicinen
 7024	Du har fundet leveren, aflever den hos Baek-Go.
 7025	Tusind tak!
-7026	Patienterne vil være meget[ENTER]taknemmelige.
+7026	Patienterne vil være meget taknemmelige.
 7027	Værsgo, tag det her som belønning.[ENTER]Du får nok bruge det en dag.
 7028	Du har modtaget 3.000 erfaringspoint.[ENTER]Du har modtaget 5.000 Yang.[ENTER]Du har fået noget ulve pels.
 7029	Kan du hjælpe mig?[ENTER]Siden Metin-stene styrter ned, er der opstået en[ENTER]ukendt sygdom. Mange læger arbejder hårdt på en[ENTER]behandling, men de mangler de nødvendige[ENTER]ingredienser til at fremstille medicinen.
@@ -7040,7 +7040,7 @@
 7040	Et brev fra smeden
 7041	Find brændehuggeren, Deokbae.
 7042	Et brev fra smeden
-7043	Træsamleren Deokbae:
+7043	Deokbae:
 7044	Velkommen. Jeg har nogle gode økser her. Vil du[ENTER]købe en? Du behøver ikke en økse? Så hvorfor er[ENTER]du her? Ah, et brev fra Smeden. Tak.[ENTER]Jeg er en skovhugger, men jeg sælger også økser[ENTER]og andre værktøjer. Nogle gange bestiller jeg[ENTER]nogle værktøjer hos ham. Sådan blev vi gode[ENTER]venner.
 7045	Jeg ville virkelig gerne have en drink med ham i[ENTER]Seo-Pyung Bar. Tak fordi du bragte mig brevet.[ENTER]Send mine bedste ønsker til Smeden.
 7046	Et brev fra smeden?[ENTER]Det er lang tid siden jeg har hørt noget fra ham.[ENTER]Hvor er brevet? Du har ikke tabt det undervejs,[ENTER]vel?
@@ -7070,13 +7070,13 @@
 7070	Hjælp Soon
 7071	Gå til Uriel og spørg hvilke vifter der er bedst.
 7072	Oprems vifter efter deres angreb værdier?
-7073	Hvad kan jeg gøre for dig?[ENTER]Bogormen sender dig?[ENTER]Alt hvad han gør, er at læse, læse, læse...[ENTER]Men jeg tvivler han lærer noget ved det. Han[ENTER]forstyrer hele tiden.[ENTER]Lad se, hvad han vil vide denne[ENTER]gang!
+7073	Hvad kan jeg gøre for dig?[ENTER]Bogormen sender dig?[ENTER]Alt hvad han gør, er at læse, læse, læse...[ENTER]Men jeg tvivler han lærer noget ved det. Han[ENTER]forstyrer hele tiden.[ENTER]Lad se, hvad han vil vide denne gang!
 7074	Han vil have mig til at vise vifter efter deres[ENTER]angreb værdier? Det er temmelig nemt: Himlens[ENTER]fuglevifte, Trearmede vifter, Aquanske vifter og[ENTER]Tranevingens vifter.[ENTER]Fik du det?
 7075	Tilbage til Soon
 7076	Gå tilbage til Soon
 7077	Gå tilbage til Soon og fortæl om vifterne.
-7078	En Tjeneste for Soon
-7079	Og, kunne Uriel give et klart[ENTER]svar?
+7078	En tjeneste for Soon
+7079	Og, kunne Uriel give et klart svar?
 7080	Fugl, Enkelt, Aquanske, Tranevinge.
 7081	Fugl, Trearmet, Aquanske, Tranevinge.
 7082	Fugl, Dobbelt, Aquanske, Tranevinge.
@@ -7089,7 +7089,7 @@
 7089	Godt at høre. Bare kom igen engang.
 7090	Det er ikke godt at høre...[ENTER]Forsvind...
 7091	Dejligt, meget godt Så kom igen
-7092	Er du helt sikker på, at rækkefølgen er[ENTER]korrekt?
+7092	Er du helt sikker på, at rækkefølgen er korrekt?
 7093	Soon:
 7094	Ja, jeg er.
 7095	Nej, jeg er ikke.
@@ -7123,7 +7123,7 @@
 7123	Uriel har givet dig Jern Malm.
 7124	Octavio har givet dig Læder.
 7125	Yonah har givet dig Kul.
-7126	Gå til Octavio
+7126	Gå til Octavio.
 7127	Gå til Uriel.
 7128	Gå til Yonah.
 7129	Ich brauche Eisenerz
@@ -7149,12 +7149,12 @@
 7149	Jeg har brug for kul.
 7150	Hvad? Jeg har allerede givet dig Kul! Forsøger du[ENTER]at narre mig?
 7151	Jeg har alle materialerne.
-7152	Åbenbart har du intet jernmalm. Gå til[ENTER]Uriel...
-7153	Du har ingen læder Gå til[ENTER]Octavio...
+7152	Åbenbart har du intet jernmalm. Gå til Uriel...
+7153	Du har ingen læder Gå til Octavio...
 7154	Du har ikke nogen kul. Hmm, ingen Kul? Få noget[ENTER]fra Yonah.
 7155	Jeg har alle materialer
 7156	Materialer til Smeden.
-7157	Gå til Smeden
+7157	Gå til smeden.
 7158	Den bestilte rustning
 7159	Nej, desværre ingen tid.
 7160	Jeg har alle de nødvendige materialer. Afsted til[ENTER]Smeden.
@@ -7190,7 +7190,7 @@
 7190	Soon har givet dig den udenlandske kogebog. Bring[ENTER]den til Octavio.
 7191	Her er kogebogen!
 7192	Gå til våben-handelsmanden og spørg ham hvor du[ENTER]kan købe Riskager.
-7193	Riskage
+7193	Riskage?
 7194	Hvad ved du om Ris Kager?
 7195	Våben-handelsmand:
 7196	Hvad? Ris kage? Er det et nyt våben?! Ja, godt så[ENTER]kan du ...[ENTER]Åh, du mener spiselige Ris Kager. Hvorfor sagde[ENTER]du ikke det i første omgang? Du må hellere gå til[ENTER]Octavio. Han ved alt hvad der er at vide om mad.
@@ -7211,7 +7211,7 @@
 7211	Yu-Rang bliver altid drillet af Taurean. Straf[ENTER]ham og hun vil give dig en Riskage.
 7212	Hvorfor driller du Yu-Rang?
 7213	Hvad, hvem er det jeg skal have irriteret? Åh, du[ENTER]mener den pige, der sælger RisKager? Nej, jeg[ENTER]ønskede ikke at irritere hende! Jeg keder mig[ENTER]bare, og hun så, så flot ud og hun havde ikke[ENTER]meget at lave. Så jeg besøgte hende et par gange[ENTER]og ønskede at spille med hende, men hun blev[ENTER]vred... Piger er mærkelige. Jeg formoder jeg vil[ENTER]ikke besøge hende mere!
-7214	Gå tilbage til Yu-Rang
+7214	Tilbage til Yu-Rang
 7215	Acceptere
 7216	Riskage
 7217	Taurean vil ikke genere Yu-Rang mere. Gå til[ENTER]hende og få din Riskage.
@@ -7237,10 +7237,10 @@
 7237	Den Gyldne Økse
 7238	Kan du huske min ven Deokbae? Jeg har lovet at[ENTER]smede ham en flot økse. Men desværre holdt jeg[ENTER]ikke øje med den og så kom en kvindelig Hvid-Ed[ENTER]soldat og stjal den fra mig. Kan du bringe øksen[ENTER]tilbage? En Hvid-Ed soldat burde have den. Du[ENTER]skulle kunne genkende den. Der er ikke mange af[ENTER]dem. Jeg vil give dig en fantastisk belønning for[ENTER]at gøre det!
 7239	Vil du afslutte denne mission?
-7240	Smed
+7240	Smed:
 7241	Jeg ønsker virkelig denne økse! Vil vi se[ENTER]hinanden igen? Farvel.
 7242	Tak for at du vil finde den.[ENTER]Pas godt på dig, klanen driller nok.
-7243	Tak for at du vil finde den.[ENTER]Pas godt på dig, klanen driller[ENTER]nok.
+7243	Tak for at du vil finde den.[ENTER]Pas godt på dig, klanen driller nok.
 7244	Find den Gyldne Økse
 7245	Spørg smeden om hårnålen.
 7246	Find Hårnålen
@@ -7262,7 +7262,7 @@
 7262	Ja, de er absolut ikke et let bytte... Måske bør[ENTER]du tage en pause og prøve igen senere?
 7263	Hvor er min ynglings hårnål?[ENTER]Det var vel intet... farvel
 7264	Mange tak. Det betyder virkelig meget for mig.
-7265	Min far gav mig den dekorative hårnål i[ENTER]fødselsdagsgave. Jeg elsker den. Jeg kan ikke[ENTER]forlade min forretning, ellers bliver der bare[ENTER]stjålet endnu mere. Kunne du måske gå og søge[ENTER]den? Jeg tror det var smeden, som fortalte for[ENTER]lang tid siden, at han havde brug for en[ENTER]hårnål.
+7265	Min far gav mig den dekorative hårnål i[ENTER]fødselsdagsgave. Jeg elsker den. Jeg kan ikke[ENTER]forlade min forretning, ellers bliver der bare[ENTER]stjålet endnu mere. Kunne du måske gå og søge[ENTER]den? Jeg tror det var smeden, som fortalte for[ENTER]lang tid siden, at han havde brug for en hårnål.
 7266	Jeg søger den
 7267	Sikker på du vil afbryde opgaven?
 7268	Vi ses næste gang Farvel
@@ -7270,7 +7270,7 @@
 7270	Du søger den for mig?[ENTER]Oh.. Tusind tak
 7271	Gå til Smeden
 7272	Spørg Yu-Hwan om Mirines bror.
-7273	 Find min bror.
+7273	Find min bror.
 7274	Har du set Mirines storebror?
 7275	Jeg blev forelsket uden at vide, hvad kærlighed[ENTER]betyder ... Lalalaa ...[ENTER]Hvem er det du leder efter? Mirines bror? Vi[ENTER]havde en hurtig snak, før han gik ind i bjergene[ENTER]for at lede efter nogle sjældne urter. Jeg ved[ENTER]ikke, hvor han er nu. Landsbyen jæger går ofte[ENTER]ind i bjergene. Hvorfor kan du ikke spørge ham?[ENTER]La, la, la, kærlighed er trist, men smuk ...
 7276	Spørg Yang-Shin om Mirines bror.
@@ -7279,11 +7279,11 @@
 7279	Nyhederne om Mirines bror.
 7280	Se, jeg har modtaget et brev fra min bror! Han[ENTER]har skrevet, at han fandt et sted med masser af[ENTER]urter og at det vil være et stykke tid, før han[ENTER]kommer hjem.[ENTER]Undskyld, jeg skulle ikke kede dig med dette.[ENTER]Her, det er ikke meget, men jeg håber du[ENTER]acceptere det og tilgiver mig. Tak fordi du vil[ENTER]påtage dig den lange rejse.
 7281	Du har fået 122.000 erfaringspoints.[ENTER]Du har fået 5.000 Yang.
-7282	 Find min bror.
-7283	Kan jeg bede dig om en tjeneste?[ENTER]Min bror har været undervejs i lang tid, og jeg[ENTER]har ikke hørt noget fra ham. Jeg er lidt[ENTER]bekymret. Kunne du måske gå ud og lede efter[ENTER]ham?
+7282	Find min bror.
+7283	Kan jeg bede dig om en tjeneste?[ENTER]Min bror har været undervejs i lang tid, og jeg[ENTER]har ikke hørt noget fra ham. Jeg er lidt[ENTER]bekymret. Kunne du måske gå ud og lede efter ham?
 7284	Min bror ville besøge musikeren Yu-Hwan i den[ENTER]næste landsby. Hvis du går til Yu-Hwan, kan du få[ENTER]nogle nyheder om min bror. Tak på forhånd.
 7285	Ja det gør jeg
-7286	Vil du opgive din søgning for altid ?
+7286	Vil du afbryde missionen for altid?
 7287	Mange tak.[ENTER]Søg efter ham for mig.[ENTER]Jeg er meget bekymret.[ENTER]Ses.
 7288	Det er synd, at du ikke vil hjælpe...[ENTER]Ses.
 7289	Du vil søge ham for mig?[ENTER]Tusind tak, jeg er meget bekymret for ham.[ENTER]Held og lykke.
@@ -7298,7 +7298,7 @@
 7298	Jeg dræbte Mi-Jung.
 7299	Oh! Du er virkelig så god som jeg har hørt.[ENTER]Fantastisk. Takket være dig vil det være meget[ENTER]nemmere at klare problemerne med Hvid-Ed nu. Godt[ENTER]arbejde!
 7300	Du har modtaget 122.000 erfaringspoint.[ENTER]Du har modtaget 20.000 Yang.[ENTER]Du har modtaget et Sølv armbånd.
-7301	Kom lige herover.[ENTER]Du ser ud til at være en god kæmper.[ENTER]Jeg har hørt en masse om dig fra[ENTER]kaptajnen.
+7301	Kom lige herover.[ENTER]Du ser ud til at være en god kæmper.[ENTER]Jeg har hørt en masse om dig fra kaptajnen.
 7302	Kan du gå efter Mi-Jung af Hvid-Ed?[ENTER]Det er svært for os at beskytte landsbyen mod de[ENTER]konstante angreb fra Hvid-Ed. Hvis vi dræber[ENTER]Mi-Jung, en af deres ledere, så vil situationen[ENTER]ændres. Byens sikkerhed ligger i dine hænder. Jeg[ENTER]stoler på at du ikke fejler!
 7303	Ja det gør jeg
 7304	Ikke nu
@@ -7306,7 +7306,7 @@
 7306	Det er ikke det rigtige tidspunkt.[ENTER]Kom igen senere
 7307	Hvis du ikke vil, kan der ikke gøres noget ved[ENTER]det, Altså gå...
 7308	du vil ikke hjælpe os?
-7309	Gå til Ariyoung
+7309	Gå til Ariyoung.
 7310	Materialer til at fremstille våben.
 7311	Gå til Ah-Yu.
 7312	Våben-handelsmanden skal bruge din hjælp. Skaf[ENTER]jernmalm fra Uriel og linned fra Ariyoung til[ENTER]ham.
@@ -7322,14 +7322,14 @@
 7322	Du har fundet Uriels taske.[ENTER]Gå tilbage til Uriel
 7323	Giv mig hørlærred.
 7324	Du har brug for Linned? Jeg har givet det til[ENTER]Ah-Yu. Vent![ENTER]Hvis du vil se hende alligevel kan du tage dette[ENTER]brev. Vi er gode venner, men på grund af hendes[ENTER]barn har ikke set hinanden i et stykke tid. Jeg[ENTER]vil også fortælle hende, at hun skulle give dig[ENTER]noget Linned ... Ja, dette hjælper alle![ENTER]Og give hende min hilsen.
-7325	Ariyoung:[ENTER]Du har sikkert fået hørlærredet fra Ah-Yu,[ENTER]eller?
+7325	Ariyoung:[ENTER]Du har sikkert fået hørlærredet fra Ah-Yu, eller?
 7326	Ariyoungs brev
 7327	Et brev fra Ariyoung? Det er dejligt at høre fra[ENTER]hende efter al denne tid. Vi plejede at mødes til[ENTER]en snak ganske ofte. Men sidst, har det været[ENTER]lidt svært. Vent et øjeblik.[ENTER]Der står her at du har brug for noget Linned?[ENTER]Ariyoung gav mig noget. Jeg kan give dig noget af[ENTER]det. Tak for at bringe mig hendes brev. Jeg vil[ENTER]svare hende med det samme ...
 7328	Lad os gå til våben-handelsmanden
 7329	Gå til våben-handelsmanden.
 7330	Aflever materialet
 7331	Jeg har alle materialerne.[ENTER]Afsted til våben-handelsmanden.
-7332	Hey, kan jeg bede dig om en tjeneste?[ENTER]Jeg prøver at smede nye våbentyper. Det er ikke[ENTER]nemt at finde de passende materialer. Jeg har[ENTER]mange bestillinger og kan derfor selv ikke lede[ENTER]efter materialer. Kunne du søge det for[ENTER]mig?
+7332	Hey, kan jeg bede dig om en tjeneste?[ENTER]Jeg prøver at smede nye våbentyper. Det er ikke[ENTER]nemt at finde de passende materialer. Jeg har[ENTER]mange bestillinger og kan derfor selv ikke lede[ENTER]efter materialer. Kunne du søge det for mig?
 7333	Godt klaret. Du er virkelig god og meget hurtig.[ENTER]Lad mig nu arbejde på disse våben![ENTER]*Clank, Clank*[ENTER]Her er de. Det er de nye våbentyper.[ENTER]Jeg gjorde mit bedste. Jeg håber du kan lide dit[ENTER]nye våben.[ENTER]Hav det sjovt med det!
 7334	Belønning:
 7335	Du har modtaget 122.000 erfaringspoint.[ENTER]Du har modtaget 20.000 Yang.
@@ -7344,7 +7344,7 @@
 7344	Kig efter materialer
 7345	Gå tilbage til Byvagten
 7346	Eun-Jung fra Hvid Eid
-7347	Du har dræbt Eun-Jung fra Hvid Eid. Gå tilbage[ENTER]til Byvagten og rapportere til ham.
+7347	Du har dræbt Eun-Jung fra den Hvide Ed.[ENTER]Gå tilbage til Vagten og rapporter tilbage til[ENTER]ham.
 7348	Du er fantastisk! Du er endnu bedre end jeg[ENTER]forventede. Vi var ikke i stand til at gøre noget[ENTER]ved de to ledere af Hvid Eid, og du besejrede dem[ENTER]begge lige sådan.
 7349	Det er utroligt. Du modtager en passende[ENTER]belønning. Vær venlig at tage dette og fortsæt[ENTER]med at arbejde for freden i landsbyen!
 7350	Du har modtaget 150.000 erfaringspoint.[ENTER]Du har modtaget 25.000 Yang.[ENTER]Du har modtaget en Guld Halskæde +4.
@@ -7365,7 +7365,7 @@
 7365	Det var den bedste hær dette kontinent nogensinde[ENTER]havde set. Mange riger faldt fordi intet kunne[ENTER]stoppe kavaleriet. Det ville være det samme i[ENTER]dag. Men du skal bruge skrappe træningsmetoder og[ENTER]en masse højkvalitets jern for at mønstre sådan[ENTER]en hær. Du bør spørge handelsmanden og den lærte[ENTER]Uriel om det. De kender sikkert flere detaljer.
 7366	Gå til handelsmanden
 7367	Det tunge kavaleri
-7368	Handelsmand:
+7368	Handelsmand
 7369	Musikeren Yu-Hwan siger at handelsmanden og den[ENTER]lærte Uriel måske har informationer om det[ENTER]pansrede kavaleri. Gå først til handelsmanden.
 7370	Handelsmand:
 7371	Det tunge kavaleri
@@ -7380,7 +7380,7 @@
 7380	Den tunge kavaleri var overlegen i forhold til[ENTER]alle andre, primært på grund af sin intense[ENTER]træning. Kun de allerbedste var i stand til at[ENTER]afslutte uddannelsen, mange af dem døde. Jeg tror[ENTER]at hvis den samme træning blev brugt nutildags,[ENTER]ville der ikke være en eneste soldat tilbage når[ENTER]de var færdige.
 7381	Jeg vil give dig nogle detaljerede oplysninger om[ENTER]træningen, så vil du ikke være helt uvidende. Jeg[ENTER]ved, at nogle forfærdelige krige foregår i[ENTER]øjeblikket, men jeg er ikke sikker på, at det en[ENTER]god idé at oprette en frygtindgydende hær som Det[ENTER]tunge kavaleri igen.
 7382	Jeg har en ny opgave til dig.[ENTER]Du har fået ordre om at samle informationer om[ENTER]det tunge kavaleri. De var for lang tid siden de[ENTER]vigtigste rytter under kongen Isup, grundlæggeren[ENTER]og foreneren af kontinentet. Det kavaleri blev[ENTER]frygtet af andre lande pga. deres utrolige[ENTER]hastighed og angrebsstyrke.
-7383	Gå til kaptajnen og fortæl ham hvad du har fundet[ENTER]ud af omkring det tunge[ENTER]kavaleri.
+7383	Gå til kaptajnen og fortæl ham hvad du har fundet[ENTER]ud af omkring det tunge kavaleri.
 7384	Gå til kaptajnen
 7385	Fortæl om det tunge kavaleri
 7386	Kaptajn
@@ -7417,7 +7417,7 @@
 7417	Hvordan gik det? Har du fundet et minde om min[ENTER]ægtemand? Han betød alt for mig. Noget som helst?
 7418	Ikke endnu. Jeg søger stadig!
 7419	Goo-Pae af sort-vind er ikke nem. Tag en lille[ENTER]pause. Tak for din hjælp.
-7420	Jeg håber at den blandet handelsdame har hørt[ENTER]noget om min ægtemand. Hun har så mange kunder,[ENTER]måske har nogen fortalt hende[ENTER]noget.
+7420	Jeg håber at den blandet handelsdame har hørt[ENTER]noget om min ægtemand. Hun har så mange kunder,[ENTER]måske har nogen fortalt hende noget.
 7421	Så jeg bliver nødt til at vente på en anden helt,[ENTER]der vil hjælpe mig. Farvel.
 7422	Oh, tusind tak.[ENTER]Vær så venlig at levere mig et minde om min[ENTER]ægtemand.
 7423	Ariyoungs Vielsesring
@@ -7427,12 +7427,12 @@
 7427	Jeg har fundet denne Ring.
 7428	Denne ring... er... min ægtemands! Tusind tak![ENTER]Nu kan min mand finde fred og ro. Jeg vil begrave[ENTER]ringen sammen med en brev fra mig![ENTER]Fra nu af vil jeg leve alene.[ENTER]Men i det mindste har jeg fået vielsesringen![ENTER]Det er en dejlig følelse.. jeg takker dig så[ENTER]mange, mange gange.
 7429	Mission afsluttet!
-7430	Dine handlinger for Ariyoung fortælles vidt[ENTER]omkring. Mange folk værdiger din[ENTER]hjælp.
+7430	Dine handlinger for Ariyoung fortælles vidt[ENTER]omkring. Mange folk værdiger din hjælp.
 7431	Jeg går til handelsdamen.
 7432	Du får 300.000 erfaring.
 7433	Du har modtaget 10.000 Yang.
 7434	Nej, desværre ingen tid.
-7435	Vil du opgive din søgning for altid ?
+7435	Vil du afbryde missionen for altid?
 7436	Kom igen, når du har overvejet det en ekstra[ENTER]gang..
 7437	Du har ikke tid?[ENTER]Ikke tid til sådan en let opgave?[ENTER]Okay, så ...
 7438	Mange tak for din venlighed.[ENTER]Aaah, hvor er dog min ægtemand.
@@ -7460,7 +7460,7 @@
 7460	Du har modtaget 10.000 Yang.
 7461	Gå tilbage til Aranyo og fortæl hende hvor du har[ENTER]fundet Soon.
 7462	Gemmelegen er svær
-7463	Tusind tak, fordi du ikke fortalte hvor jeg[ENTER]gemmer mig.[ENTER]Det er svært at gemme sig, så min kone ikke[ENTER]finder mig. Jeg ønsker jo bare at læse[ENTER]lidt.
+7463	Tusind tak, fordi du ikke fortalte hvor jeg[ENTER]gemmer mig.[ENTER]Det er svært at gemme sig, så min kone ikke[ENTER]finder mig. Jeg ønsker jo bare at læse lidt.
 7464	Min ægtemand er meget irriterende. Han kalder sig[ENTER]selv for en af de lærte! Mens vi skal kæmpe for[ENTER]vores daglige brød, læser han bare bøger. Har du[ENTER]set ham? Hvorfor har jeg dog giftet mig med en[ENTER]sådan en bogorm?
 7465	Soons gemmested
 7466	Du har fundet ham?[ENTER]Tusind tak! Hvis han opdager, at han er blevet[ENTER]fundet, prøver han måske at flygte igen. Jeg[ENTER]tager dertil med det samme. Det er på tide jeg[ENTER]får ham! Og du får dette som bevis på min[ENTER]taknemmelighed. Bare vent, solstråle!
@@ -7479,7 +7479,7 @@
 7479	Gå tilbage til den gamle dame
 7480	Lever ulvepels
 7481	En ulvepels, det er godt... Ohh, nej. Denne er[ENTER]ikke god. Drag tilbage til Gråulvene. Du er måske[ENTER]i stand til at finde en bedre en.
-7482	Jeg har brug for en støvkost. Undskyld, men det[ENTER]der kan jeg ikke bruge til[ENTER]noget.
+7482	Jeg har brug for en støvkost. Undskyld, men det[ENTER]der kan jeg ikke bruge til noget.
 7483	Jeg prøver igen,
 7484	gider ikke mere.
 7485	Ønsker du virkelig at afbryde opgaven?
@@ -7499,12 +7499,12 @@
 7499	Alt er støvet! Jeg har brug for en fjer kost. Kan[ENTER]du hjælp mig?
 7500	Det er et stykke tid siden, men jeg tror at min[ENTER]mand, må han hvile i fred, lavede det af[ENTER]ulvepels.[ENTER]Host! Host![ENTER][ENTER]Kunne du måske finde et ulveskind til en fattig[ENTER]gammel dame? Du kan få et fra en Grå ulv. Du vil[ENTER]virkelig hjælpe mig meget.
 7501	Ønsker du virkelig at afbryde?
-7502	Hovsa, det var ærgerligt, men jeg regnede med du[ENTER]ville hjælpe mig. Måske overvejer du det en[ENTER]ekstra gang - så kan du sagtens komme forbi[ENTER]igen.
+7502	Hovsa, det var ærgerligt, men jeg regnede med du[ENTER]ville hjælpe mig. Måske overvejer du det en[ENTER]ekstra gang - så kan du sagtens komme forbi igen.
 7503	Hvilken belønning kan du forvente fra en gammel,[ENTER]fattig dame?
 7504	Det er ikke nemt at få fat i sådan en ulvepels,[ENTER]men jeg vil prøve. For jeg vil jo når alt kommer[ENTER]til alt gerne blive en stor helt en dag!
 7505	Vil du afbryde søgningen?
 7506	Hjælp Ah-Yu!
-7507	Det er i orden. Kom igen, når du har[ENTER]tid.
+7507	Det er i orden. Kom igen, når du har tid.
 7508	Du er en bangebuks.[ENTER]Du ville nok alligevel løbe væk, hvis du møder de[ENTER]vilde! Farvel.
 7509	Tak du fordi du hjalp mig. Det er tre spyd.
 7510	Spyddene
@@ -7531,7 +7531,7 @@
 7531	Jeg opgiver.
 7532	Du har opgivet jagten efter Ah-Yus ægtemands spyd.
 7533	Tak for ikke at give op!
-7534	Ohh, der er de![ENTER]Jeg er meget taknemmelig, tusind tak![ENTER]Det er ikke mange Yang, men tag[ENTER]dem.
+7534	Ohh, der er de![ENTER]Jeg er meget taknemmelig, tusind tak![ENTER]Det er ikke mange Yang, men tag dem.
 7535	Du modtog 300.000 erfaringspoint.[ENTER]Du modtog 20.000 Yang.
 7536	Ohh, du virker lidt nede i tiden. Du er normalt[ENTER]så glad! Er der sket noget?
 7537	Min mand plejede at holde øje med mig, og sikre[ENTER]sig at ingen ting slemt skete med mig. Men så[ENTER]døde han i krigen. Det eneste jeg har tilbage[ENTER]efter ham er vores barn og hans spyd.
@@ -7540,7 +7540,7 @@
 7540	Jeg vil lede efter dem
 7541	Jeg har ikke tid
 7542	Tusind tak min ven![ENTER]Jeg håber du har succes.
-7543	 Balso?
+7543	Balso?
 7544	Medicin til Balso
 7545	Gå til Balso
 7546	Du har fundet medicinen til Balso, der har[ENTER]inficeret sig med en ukendt sygdom hos[ENTER]pest-mændene. Aflever den til Balso.
@@ -7566,12 +7566,12 @@
 7566	Søg efter guldøksen
 7567	Bring Deokbaes elskede guld økse tilbage fra de[ENTER]vilde Generaler.
 7568	Jeg har fundet din guldøks!
-7569	Træsamleren Deokbae:
+7569	Deokbae:
 7570	Uden din hjælp ville jeg aldrig havde fået øksen[ENTER]tilbage. Tusind tak. Jeg vil være mere påpasselig[ENTER]i fremtiden og altid have den med mig.
 7571	Du får 400.000 erfaringspoints
 7572	Du har modtaget 30.000 Yang.
 7573	Omkring den Gyldne Økse...
-7574	Træsamleren Deokbae:
+7574	Deokbae:
 7575	Åhh Nej, Åhh nej! Jeg har tabt min økse. Måske[ENTER]ved du, hvilken økse jeg mener? Det er den gyldne[ENTER]økse jeg fik fra smeden. En af de vilde stjal[ENTER]den.
 7576	Hvis smeden finder ud af det, bliver han blive[ENTER]rasende og nægte at reparere mine økser. Det var[ENTER]også en rigtig god økse. Kan du måske bringe den[ENTER]tilbage?
 7577	Frasige
@@ -7617,7 +7617,7 @@
 7617	Vil du afbryde søgningen?
 7618	Ohh...[ENTER]Jeg venter her. Måske senere? Vil du ikke nok?
 7619	Jeg har ikke tide![ENTER]Held og lykke til din bror.
-7620	At hjælpe den fattige pige er meget venligt, men[ENTER]heller ikke et stort arbejde. så[ENTER]afsted!
+7620	At hjælpe den fattige pige er meget venligt, men[ENTER]heller ikke et stort arbejde. så afsted!
 7621	Vil du afslutte denne mission?
 7622	Yu-Rangs riskage
 7623	Hvis du har tid senere, så kom venligst forbi[ENTER]igen. Jeg ved ikke, hvordan vi skal overleve uden[ENTER]at sælge riskagerne.
@@ -7637,10 +7637,10 @@
 7637	Jeg kan ikke tro det. Hvem kan nu hjælpe os?
 7638	Vær så venlig![ENTER]Hjælp mig!
 7639	Så du vil fortsætte søgningen? Mange tak! Forsøg[ENTER]venligst at finde riskagerne så hurtigt som[ENTER]muligt.
-7640	Nej, det er for sent.[ENTER]Selv når du finder den, er den nok allerede[ENTER]tørret ind og kan ikke sælges[ENTER]vidre...
+7640	Nej, det er for sent.[ENTER]Selv når du finder den, er den nok allerede[ENTER]tørret ind og kan ikke sælges vidre...
 7641	Du kigger på jorden og ser kagerester, som[ENTER]edderkopperne har efterladt. Desværre er de alle[ENTER]tørret ind.
 7642	Du har brugt for meget tid på at lede efter[ENTER]kagen. Opgaven mislykkes.
-7643	Gå tilbage til Yu-Rang
+7643	Tilbage til Yu-Rang
 7644	Hej, hvordan har din mor det?
 7645	Gå tilbage til Yu-Rang
 7646	Du har redet Yu-Rangs riskage fra edderkopperne i[ENTER]sidste øjeblik. Bring dem hende.
@@ -7688,7 +7688,7 @@
 7688	Disse blomster ligner dem, som Ariyoung beskrev.[ENTER]Jeg har tænkt mig at tage nogle.
 7689	Tilbage til Huahn-So
 7690	Jeg har fundet Ariyoung foretrukne blomster og[ENTER]har plukket nogle. Jeg vil tage dem til Huahn-So[ENTER]så han kan bekende sin kærlighed til Ariyoung.
-7691	Men hendes mand blev dræbt i krigen, derfor er[ENTER]hun en ung enke.[ENTER]Selvom hun stadig er gift, ønsker jeg at hun får[ENTER]af vide, hvad jeg føler!![ENTER]Jeg ved godt, at jeg forlanger rimelig meget, men[ENTER]vil du ikke være så venlig, og[ENTER]hjælpe?
+7691	Men hendes mand blev dræbt i krigen, derfor er[ENTER]hun en ung enke.[ENTER]Selvom hun stadig er gift, ønsker jeg at hun får[ENTER]af vide, hvad jeg føler!![ENTER]Jeg ved godt, at jeg forlanger rimelig meget, men[ENTER]vil du ikke være så venlig, og hjælpe?
 7692	Her er Ariyoung foretrukne blomster.
 7693	Åh, det er de Blomster? Nu kan jeg fortælle[ENTER]Ariyoung hvordan jeg føler for hende! Tror du,[ENTER]det er for tidligt til det? Oh, det gør ikke[ENTER]noget hvis det er for tidligt. Jeg er nødt til at[ENTER]fortælle hende det ellers vil jeg briste.[ENTER]Her er din belønning og mange tak.
 7694	Du får 400.000 erfaringspoints
@@ -7698,7 +7698,7 @@
 7698	Gå til Ariyoung
 7699	Afsted til Ariyoung
 7700	Huan-So elsker enken Ariyoung.[ENTER]For at Huahn-So tør at fortælle hvad han føler[ENTER]for Ariyoung, vil han først finde ud af, hvad hun[ENTER]kan lide. Så spørg Airyoung hvad hun kan lide,[ENTER]men pas på du ikke fortæller for meget!
-7701	Det er dit tab, Du går glip af dit livs[ENTER]chance.
+7701	Det er dit tab, Du går glip af dit livs chance.
 7702	Gå til lagerforvalteren
 7703	Meget godt! Jeg vidste du ville være[ENTER]interesseret. Hvis du får nogen så kom tilbage[ENTER]her til, og del dem venligst med mig!
 7704	Gå til Octavio
@@ -7714,7 +7714,7 @@
 7714	Vil du afslutte denne mission?
 7715	Du er optaget? Hvis du skifter mening, kom igen.
 7716	Min suppe er ikke kendt. Hvis du kendte til den,[ENTER]ville du tilberede den.
-7717	Skynd dig![ENTER]Jeg forbereder alt til[ENTER]frølårsuppen.
+7717	Skynd dig![ENTER]Jeg forbereder alt til frølårsuppen.
 7718	Modtaget frølår
 7719	Octavio:
 7720	Find frølår
@@ -7731,7 +7731,7 @@
 7731	Gå til Octavio
 7732	Se det er hvad jeg kalder et frølår! De plejede[ENTER]at være mindre, men jeg er sikker på at dette[ENTER]kommer til at smage godt også. Vent et øjeblik...[ENTER]Det dufter allerede temmelig godt. En smule mere[ENTER]salt... Rigtigt! Her er din potion. Hahaha, nu[ENTER]har jeg energi nok til en hel uges arbejde.
 7733	Fortæl ikke nogen om det. Specielt ikke[ENTER]butiksejeren. Han kan lide og snakke, hvis[ENTER]kvaliteten af suppen bliver kendt, vil jeg ikke[ENTER]have et minuts fred, alle vil konstant komme[ENTER]hertil for at smage min suppe.
-7734	Du modtager 5.000.000 erfaringspoint.
+7734	Du har fået 5.000.000 erfaringspoints
 7735	Jeg har ikke haft det så godt på det sidste. Min[ENTER]krop er ikke hvad den var engang. Da jeg var[ENTER]yngre, kunne jeg arbejde indtil natten, hver dag[ENTER]i ugen, og samtidig drikke alkohol. Nu er det for[ENTER]meget arbejde bare at komme op om morgenen. Jeg[ENTER]har brug for en stor portion hjælpende[ENTER]frølårsuppe for at få min energi tilbage.
 7736	Du har modtaget 50,000 Yang.
 7737	Ved du ikke hvad frølårsuppe er? Når du drikker[ENTER]en skål af det, vil du vågne op med det samme[ENTER]fuld af energi. Så kan du arbejde en hel uge i[ENTER]træk, uden at blive træt![ENTER]Octavio plejede at lave denne suppe, men af en[ENTER]eller anden grund stoppede han for kort tid siden[ENTER]med at lave den.
@@ -7741,7 +7741,7 @@
 7741	Okay, når du har travlt, så kom igen, hvis du får[ENTER]tid tilovers.
 7742	Han skulle være skamfuld over at kalde sig selv[ENTER]for far! Hvis jeg finder ham, så gud nåde og[ENTER]trøste hans sjæl![ENTER]Tro mig, jeg overdriver ikke. Spørg de andre i[ENTER]landsbyen, de vil være enige med mig.
 7743	Soon:
-7744	Handelsdame:
+7744	Handelsdame
 7745	Gå til handelsdamen
 7746	Måske ved handelsdamen hvad Soon laver. Gå til[ENTER]hende og spørg om hun har hørt noget fra Soon.
 7747	Hvad er der med Soon?
@@ -7755,7 +7755,7 @@
 7755	Gå til Soon[ENTER]Gå til Soon og spørg om Tempel-bogen.
 7756	Hvad er den hemmelige tempel bog?
 7757	Ved du hvad, jeg har læst alle bøger i hele[ENTER]verden. For nyligt, har jeg hørt om en hemmelig[ENTER]tempel bog. Rygterne siger at bogen indeholder[ENTER]Mørkets Tempels hemmelighed. Den forklare også[ENTER]hvordan du bliver en helgen.
-7758	Jeg ønsker at læse denne bog.[ENTER]Kunne du få fat i den?[ENTER]Hvis du kan det, får du også noget for det. Selv[ENTER]hvis jeg bliver nød til at sælge mit[ENTER]hus.
+7758	Jeg ønsker at læse denne bog.[ENTER]Kunne du få fat i den?[ENTER]Hvis du kan det, får du også noget for det. Selv[ENTER]hvis jeg bliver nød til at sælge mit hus.
 7759	Jeg gør det!
 7760	Jeg kan desværre ikke
 7761	Vil du afslutte denne mission?
@@ -7768,7 +7768,7 @@
 7768	Gå tilbage til Soon
 7769	Besejr De Mørke Fanatikere
 7770	Du har dræbt de mørke fanatikere.
-7771	Aflever den hemmelige tempel bog til[ENTER]Soon.
+7771	Aflever den hemmelige tempel bog til Soon.
 7772	Soon har en dybtgående interesse i Den Hemmelige[ENTER]Tempel bog. Hvis du dræber De Mørke Fanatikere,[ENTER]finder du måske Den Hemmelige bog.
 7773	Den hemmelige tempel bog
 7774	Ohh, der er den! Tusind tak![ENTER]Her er din belønning.[ENTER]Lad mig nu være i fred, jeg er nød til at læse!
@@ -7824,7 +7824,7 @@
 7824	Prøv igen
 7825	Opgive
 7826	Vil du afslutte denne mission?
-7827	Er det for svært?[ENTER]Det er selvfølgelig ikke kun held, men også hårt[ENTER]arbejde. Hvorfor prøver du det ikke igen[ENTER]senere.
+7827	Er det for svært?[ENTER]Det er selvfølgelig ikke kun held, men også hårt[ENTER]arbejde. Hvorfor prøver du det ikke igen senere.
 7828	Har du stadig brug for mere malm?
 7829	Well, der forsvandt mine planer om en ny[ENTER]rustning. Den ide kunne have ændret verden! Sikke[ENTER]en skam...
 7830	Vær stærk! Jeg ved du kan klare det!
@@ -7992,7 +7992,7 @@
 7992	Jeg drager afsted med det samme!
 7993	Nej, det er et simpel job.
 7994	I nutiden findes der flere og flere folk som[ENTER]ønsker at have en hest. Men ingen har overvejet[ENTER]kendsgerningen om at vi er ved at løbe tør for[ENTER]foder til hestene. De sulter i staldene. Hvis du[ENTER]ændre mening, så kom tilbage.
-7995	Ahh.. Vores heste lider under[ENTER]underernæring....
+7995	Ahh.. Vores heste lider under underernæring....
 7996	Jeg ved godt du har travlt og jeg påskynder din[ENTER]hjælp. Heste er virkelig vigtige nu tildags.[ENTER]Derfor har vi også virkelig brug for høet.
 7997	Yonah gør sit bedste for at producere nyt[ENTER]porcelæn men gør ingen fremskridt med sine[ENTER]eksperimenter. Gå til Uriel den lærde og spørg[ENTER]ham om han ved noget om Celadon Porcelæn.
 7998	Hemmeligheden omkring Celadon Porcelænet
@@ -8011,7 +8011,7 @@
 8011	Bogormen Soon kender alt til Celadon porcelæn.[ENTER]Han vil ikke dele sin viden uden at få noget[ENTER]igen. Tag til handelsmanen og hent den bog som[ENTER]Soon har bestilt.
 8012	Soon sende mig...
 8013	Hey, du kom tilbage for at hjælpe mig igen? Ahh.[ENTER]Du ønsker, bogen til Soon. Jeg ville snart have[ENTER]været inde i byen alligevel, men han er meget[ENTER]utålmodig og beder andre om at hente det fo ham.[ENTER]Hmm. Her er det. Jeg forstår ikke, hvad det er[ENTER]Soon kan lide ved en stak papirer. Det er meget[ENTER]mere vigtigt hurtigt at tjene Yang!
-8014	Gå tilbage til Soon
+8014	Tilbage til Soon.
 8015	Gå tilbage til Soon
 8016	Du har fået Soons bog fra handelsmanden. Gå[ENTER]tilbage til Soon og giv ham bogen så fortæller[ENTER]han dig hvordan man laver Celadon porcelæn.
 8017	Jeg har bogen.
@@ -8024,10 +8024,10 @@
 8024	Du har modtaget 2,500,000 erfaringspoint.
 8025	Du har modtaget 35.000 Yang.
 8026	Du får jade sko +3
-8027	Jeg vil afprøve en ny metode...[ENTER]Seladon-porcelæn er svært at fremstille, derfor[ENTER]kankun få personer det.[ENTER]Men jeg har brug for det, så jeg kan danne[ENTER]kunstværker![ENTER]I hvert fald...[ENTER]Ja, den lærte Uriel kunne vide noget om det![ENTER]Gå til den lærte Uriel og spørg om fremstilling[ENTER]af Seladon-porcelæn, han kan sikkert hjælpe[ENTER]dig!
+8027	Jeg vil afprøve en ny metode...[ENTER]Seladon-porcelæn er svært at fremstille, derfor[ENTER]kankun få personer det.[ENTER]Men jeg har brug for det, så jeg kan danne[ENTER]kunstværker![ENTER]I hvert fald...[ENTER]Ja, den lærte Uriel kunne vide noget om det![ENTER]Gå til den lærte Uriel og spørg om fremstilling[ENTER]af Seladon-porcelæn, han kan sikkert hjælpe dig!
 8028	Vil du afslutte denne mission?
 8029	Hm, jeg tror du har for travlt? Husk at komme[ENTER]tilbage, hvis du har noget tid til overs.
-8030	Jeg vil fremstille det bedste porcelæn..[ENTER]Aha... Det forstår jeg -[ENTER]farvel...
+8030	Jeg vil fremstille det bedste porcelæn..[ENTER]Aha... Det forstår jeg - farvel...
 8031	Tak. Uriel ved hvad der skal gøres. Vi ses snart!
 8032	Lad os gå til Uriel
 8033	Jægeren Yang-Shin og hans dekorerede buer, som er[ENTER]et familie arvestykke, er blevet stjålet fra ham.[ENTER]Drag til Sangsun Dong og tag den dekorerede bue[ENTER]med tilbage fra de tyvagtige aber.
@@ -8086,7 +8086,7 @@
 8086	Jeg kan ikke gøre det.
 8087	Jeg vil hjælpe!
 8088	Aberne er for stærke for mig. Jeg kan ikke komme[ENTER]til urterne. Undskyld.
-8089	Jeg ved, at der i næste by bor en doktor. Kan du[ENTER]besøge ham og forklare min tilstand? Så han[ENTER]fortælle dig, hvordan jeg kan helbredes? Som du[ENTER]selv kan se, er jeg ikke selv i stand til at gå[ENTER]til byen. Jeg er stadig meget taknemmelig da du[ENTER]hjalp mig sidst og jeg vil selvfølgelig også give[ENTER]dig en belønning denne gang[ENTER]også.
+8089	Jeg ved, at der i næste by bor en doktor. Kan du[ENTER]besøge ham og forklare min tilstand? Så han[ENTER]fortælle dig, hvordan jeg kan helbredes? Som du[ENTER]selv kan se, er jeg ikke selv i stand til at gå[ENTER]til byen. Jeg er stadig meget taknemmelig da du[ENTER]hjalp mig sidst og jeg vil selvfølgelig også give[ENTER]dig en belønning denne gang også.
 8090	Du nægter at hjælpe folk som lider fra en mystisk[ENTER]og forfærdelig sygdom. Kom ud af mit syn.
 8091	Du har ret. Nogen er nød til at finde disse[ENTER]urter, ellers vil alle disse mennesker lide[ENTER]skrækkeligt. Jeg vil tage hånd om det.
 8092	Okay så. Skynd dig!
@@ -8151,7 +8151,7 @@
 8151	Jeg vil virkelig gerne prøve denne ret, men[ENTER]hvordan skal jeg formodes at få fat i Edderkops[ENTER]øje? Jeg har virkelig brug for din hjælp igen![ENTER]Vær venlig og hent Edderkops øje fra[ENTER]Edderkopperne i Yongbi ørkenen.
 8152	Vil du gøre det for mig? Jeg vil virkelig være[ENTER]meget taknemmelig. For at prøve denne opskrift[ENTER]har jeg brug for hundrede øje for at få en[ENTER]rimelig portion størrelse. Jeg er virkelig spændt[ENTER]...
 8153	Vil du afslutte denne mission?
-8154	Jeg vil absolut koge den opskrift, så hvis du vil[ENTER]gøre mig den tjeneste kom og besøg[ENTER]mig!.
+8154	Jeg vil absolut koge den opskrift, så hvis du vil[ENTER]gøre mig den tjeneste kom og besøg mig!.
 8155	Hm... Hvor får jeg så de øjne fra...[ENTER]Ok, farvel.
 8156	Tak. Jeg vidste du ville hjælpe mig. Du får også[ENTER]serveret en dejlig ret.
 8157	Tilbage til Octavio
@@ -8197,7 +8197,7 @@
 8197	Du vil ikke gøre det? Men du fortæller ikke[ENTER]Yu-Rang sandheden?[ENTER]Vil du ikke nok hjælpe mig. Kom tilbage når du[ENTER]har tid til mig!
 8198	Nu vil Yu-Rang aldrig tale med mig igen![ENTER]Eller bare grine af mig...
 8199	Ah! Jeg havde ret! Jeg viste du var lige så sød[ENTER]som du ser ud. Held og lykke!
-8200	Gå tilbage til Yu-Rang
+8200	Tilbage til Yu-Rang
 8201	Gå tilbage til Yu-Rang og fortæl om Taureans[ENTER]løgnhistorie.
 8202	Yu-Rang er meget skuffet over dig.
 8203	Har du fortalt hende det?![ENTER]Jeg kan ikke forstå at hun ikke ønsker at være[ENTER]min ven mere. Men det gør mig meget ked. Jeg[ENTER]håber at jeg kan ændre hendes holdning engang.[ENTER]Måske kan jeg finde på noget virkelig rart til[ENTER]hende...
@@ -8252,7 +8252,7 @@
 8252	Jeg spurgte om din hjælp og du vender bare ryggen[ENTER]til mig?[ENTER]Ohh, well jeg har ikke brug for dig alligevel...[ENTER]Forsvind!
 8253	Tak!
 8254	Mørkets tempel
-8255	Held og lykke med din søgning.[ENTER]Først når jeg har de rigtige materialer, kan jeg[ENTER]producere den rigtige porcelæn.[ENTER]Mine købere venter allerede[ENTER]utålmodigt!!!!
+8255	Held og lykke med din søgning.[ENTER]Først når jeg har de rigtige materialer, kan jeg[ENTER]producere den rigtige porcelæn.[ENTER]Mine købere venter allerede utålmodigt!!!!
 8256	Hemmelighederne om det Lysegrønne Porcelæn
 8257	Lysegrønne porcelæn
 8258	Lysegrønne porcelæn
@@ -8318,7 +8318,7 @@
 8318	En af disse spioner lever som Fisker i området[ENTER]Yongan i Shinsoo riget.[ENTER]Prøv diskret at komme i kontakt med ham og[ENTER]aflevere hans rapport til Kaptajnen.
 8319	En af disse spioner lever som Fisker i området[ENTER]Joan i Chunjo riget. Prøv diskret at komme i[ENTER]kontakt med ham og aflevere hans rapport til[ENTER]Kaptajnen.
 8320	Hvad har du gang i
-8321	Psst, vær stille! Du skræmmer alle fiskene! Hvad[ENTER]vil du overhoved her? Som du råber og skriger er[ENTER]du nok næppe kommet for at[ENTER]fiske.
+8321	Psst, vær stille! Du skræmmer alle fiskene! Hvad[ENTER]vil du overhoved her? Som du råber og skriger er[ENTER]du nok næppe kommet for at fiske.
 8322	Ah! Jeg forstår! Jeg har ventet i lang tid på[ENTER]dig. Du er sent på den. Det var ikke nemt at få[ENTER]de informationer uden at blive opdaget. Du skal[ENTER]vide, at der overalt lurer fjender og venter på[ENTER]at man begår en fejl.
 8323	Vi bør ikke blive set for meget sammen.[ENTER]Efter alt, ønsker vi ikke at nogen opdager os.[ENTER]Her er dokumenterne. Tag nu straks afsted og[ENTER]aflevere dem direkte til Kaptajnen.
 8324	Ah - et sekund! Jeg har en lille gave til dig.[ENTER]Og nu afsted. Farvel!
@@ -8342,7 +8342,7 @@
 8342	Hvad er der galt med dig? Sidste gang, gjorde du[ENTER]et fantastisk arbejde for os! Og nu vil du bare[ENTER]opgive dit land? Men der er intet, jeg kan gøre[ENTER]ved det. Farvel.
 8343	Jeg vidste, jeg kunne stole på dig. Held og[ENTER]lykke, og vær forsigtig!
 8344	Mød spionen
-8345	Hvad er Bingsu?!
+8345	Hvad er Bingsu
 8346	Bingsu?
 8347	Taurean har haft et skænderi med Harang fordi han[ENTER]ikke tror på at du kan lave is om sommeren. Drag[ENTER]til Harang og spørg hende hvad hun ved om Bingsu.
 8348	Spørg Harang
@@ -8372,7 +8372,7 @@
 8372	Ja. Prøv igen
 8373	Jeg ved der er langt og monsterene er stærke.[ENTER]Hvis det er for svært for dig er der ikke noget[ENTER]at gøre ved et. Ses.
 8374	Prøv igen. Med dit mod og udholdenhed kan du[ENTER]klare det!
-8375	Bingsu?
+8375	Bingsu!
 8376	Det er gjort: Octvio har lavet Bingsu ud af is[ENTER]fra Sohan bjerget. Skynd dig tilbage til Taurean[ENTER]inden det smelter.
 8377	Værsgo! Bingsu!
 8378	Er det Bingsu? Det smager virkelig godt. Dejligt[ENTER]og koldt. Jeg har aldrig smagt noget lignende[ENTER]før, tak! Så har Harang ret. Jeg er nød til at[ENTER]give hende en undskyldning...
@@ -8401,11 +8401,11 @@
 8401	Hvis du ikke vil træne, så tryk ENTER.
 8402	Fuldført!
 8403	Tillykke! Du har klaret det.
-8404	Du har indtil nu ikke valgt nogen[ENTER]lære.
+8404	Du har indtil nu ikke valgt nogen lære.
 8405	ist nun eine Großmeister Fertigkeit
 8406	Dette betyder, at du behersker denne færdighed på[ENTER]højste niveau og ikke kan forbedres yderligere.
 8407	Tillykke! Du har klaret det. Gennem din[ENTER]færdighedstræning steg
-8408	 %s på level %s.
+8408	%s på level %s.
 8409	Du har øget din level succesrigt!
 8410	Du har brugt %s rang point.
 8411	Mislykket!
@@ -8414,9 +8414,9 @@
 8414	Siden du har læst eksorcisme rullen, kan du[ENTER]fortsætte med at træne uden at være nød til at[ENTER]holde en pause.
 8415	Når du er færdig med træning, skal du holde en[ENTER]halv dags pause.[ENTER]Prøv igen senere, eller brug et[ENTER]Eksorcisme-dokument.
 8416	Du har ikke lært en færdighed så langt, at du kan[ENTER]blive Stormester i den.
-8417	Vælg en færdighed du ønsker at blive Stormester[ENTER]i.
+8417	Vælg en færdighed du ønsker at blive Stormester i.
 8418	Aktuelle rang points: %s
-8419	 Nødvendige rang point:
+8419	Nødvendige rang point:
 8420	%s Stormester færdighedstræning
 8421	Stormester træning bruges rank pointene op. Så[ENTER]det er muligt at dit level måske falder til en[ENTER]negativ point værdi.
 8422	Jeg er ked af det, men du har ikke den nødvendige[ENTER]ride erfaring for at forbedre din hest. Du skal[ENTER]mindst have Krigs Hest License.
@@ -8464,16 +8464,16 @@
 8464	Rulle af Mutation indeholder en stor magt! Den[ENTER]kan forlænge levetiden på din Tapre Ganger op til[ENTER]fire dage. Et forsøg vil koste dig 200.000 Yang.[ENTER]Din Ganger skal være udkørt, og have mindre end[ENTER]en dag tilbage at leve i, for at gøre forsøget.[ENTER]Selvfølgelig vil lidt held også hjælpe en del på[ENTER]processen! Skulle forsøget fejle, vil jeg[ENTER]anbefale dig at fodre den med en Energi Snack. De[ENTER]kan findes bag den roterende mønt.
 8465	Din Ganger er stadig for stærk. Rulle af Mutation[ENTER]vil ikke have nogen virkning her. Kom tilbage når[ENTER]den har mindre end en dag tilbage at leve i.
 8466	Desværre kan jeg ikke hjælpe dig. Enten har du[ENTER]ikke en Rulle af Mutation, eller også har du[ENTER]mindre end 200.000 Yang.
-8467	Dit forsøg på at fremstille dokumentet er[ENTER]mislykket, da du ikke havde alle[ENTER]materialer.
+8467	Dit forsøg på at fremstille dokumentet er[ENTER]mislykket, da du ikke havde alle materialer.
 8468	Fremstil krigsgudens dokument
 8469	Dragens dokument
 8470	Dragens dokument øger din chance for succes, når[ENTER]du forbedre en genstand. Selv hvis det fejler,[ENTER]vil genstandens level kun blive reduceret med en.[ENTER]Dette er en mystisk genstand, som kan ses som en[ENTER]slags opgraderings velsignelses dokument.
 8471	For at fremstille det, har du brug for Magisk[ENTER]jernmalm.
 8472	Magisk jernmalm
 8473	For at fremstille det, har man brug for et[ENTER]velsignelses dokument
-8474	Har du alle genstande der kræves?[ENTER]Vil du fremstille det?[ENTER]Hvis du har et velsignelses dokument og magisk[ENTER]jernmalm, kan det dannes til Dragens[ENTER]dokument.
+8474	Har du alle genstande der kræves?[ENTER]Vil du fremstille det?[ENTER]Hvis du har et velsignelses dokument og magisk[ENTER]jernmalm, kan det dannes til Dragens dokument.
 8475	Du har produceret drage rullen! Det er virkelig[ENTER]meget lettere at producere Dragerullen hvis du[ENTER]bruger magisk jernmalm. Det kan jeg lide!
-8476	Dit forsøg på at fremstille dokumentet er[ENTER]mislykket, da du ikke havde alle[ENTER]materialer.
+8476	Dit forsøg på at fremstille dokumentet er[ENTER]mislykket, da du ikke havde alle materialer.
 8477	Fremstil smede håndbogen
 8478	Har ud hørt at stenene kaldes smedens sten?[ENTER]Åbenbart er stenene lavet af blod og sved fra en[ENTER]smed. Hvis du bringer mig smede stenene og en[ENTER]velsignelses rulle, vil jeg lave en håndbog til[ENTER]dig som er givet videre i min familie i[ENTER]generationer. Den har en lignende funktion som[ENTER]dragerullen, men har en højere succes rate.
 8479	Disse mystiske krigsruller forbedre +0 til +3[ENTER]genstande og har en 100% succes rate. Dog virker[ENTER]de ikke på genstande med +4 eller over.
