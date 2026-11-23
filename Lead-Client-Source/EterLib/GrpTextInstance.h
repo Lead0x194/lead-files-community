@@ -70,7 +70,7 @@ class CGraphicTextInstance
 
 	protected:
 		void __Initialize();
-		int  __DrawCharacter(CGraphicFontTexture * pFontTexture, WORD codePage, wchar_t text, DWORD dwColor);
+		int  __DrawCharacter(CGraphicFontTexture * pFontTexture, wchar_t text, DWORD dwColor);
 		void __GetTextPos(DWORD index, float* x, float* y);
 		int __GetTextTag(const wchar_t * src, int maxLen, int & tagLen, std::wstring & extraInfo);
 
@@ -127,8 +127,5 @@ class CGraphicTextInstance
 
 		static CDynamicPool<CGraphicTextInstance>		ms_kPool;
 };
-
-extern const char* FindToken(const char* begin, const char* end);
-extern int ReadToken(const char* token);
 
 #endif

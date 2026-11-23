@@ -683,16 +683,6 @@ namespace UI
 		return FALSE;
 	}
 
-	BOOL CWindow::OnIMEChangeCodePage()
-	{
-		long lValue;
-		if (PyCallClassMemberFunc(m_poHandler, "OnIMEChangeCodePage", BuildEmptyTuple(), &lValue))
-		if (0 != lValue)
-			return TRUE;
-
-		return FALSE;
-	}
-
 	BOOL CWindow::OnIMEOpenCandidateListEvent()
 	{
 		long lValue;

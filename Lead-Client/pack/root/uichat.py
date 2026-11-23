@@ -116,7 +116,6 @@ class ChatLine(ui.EditLine):
 		self.eventReturn = lambda *arg: None
 		self.eventTab = None
 		self.chatMode = chat.CHAT_TYPE_TALKING
-		self.bCodePage = True
 
 		self.overTextLine = ui.TextLine()
 		self.overTextLine.SetParent(self)

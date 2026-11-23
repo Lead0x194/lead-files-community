@@ -101,7 +101,7 @@ window = {
 					"height" : 18,
 
 					"input_limit" : 16,
-					"enable_codepage" : 0,
+					"enable_ime" : 0,
 
 					"r" : 1.0,
 					"g" : 1.0,
@@ -120,7 +120,7 @@ window = {
 
 					"input_limit" : 16,
 					"secret_flag" : 1,
-					"enable_codepage" : 0,
+					"enable_ime" : 0,
 
 					"r" : 1.0,
 					"g" : 1.0,

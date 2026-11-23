@@ -23,8 +23,6 @@ WHITE_COLOR = grp.GenerateColor(1.0, 1.0, 1.0, 0.5)
 HALF_WHITE_COLOR = grp.GenerateColor(1.0, 1.0, 1.0, 0.2)
 
 createToolTipWindowDict = {}
-def RegisterCandidateWindowClass(codePage, candidateWindowClass):
-	EditLine.candidateWindowClassDict[codePage]=candidateWindowClass
 def RegisterToolTipWindow(type, createToolTipWindow):
 	createToolTipWindowDict[type]=createToolTipWindow
 
@@ -852,8 +850,6 @@ class EmptyCandidateWindow(Window):
 		pass
 
 class EditLine(TextLine):
-	candidateWindowClassDict = {}
-
 	def __init__(self):
 		TextLine.__init__(self)
 
@@ -863,11 +859,8 @@ class EditLine(TextLine):
 		self.numberMode = False
 		self.useIME = True
 
-		self.bCodePage = False
-
-		self.candidateWindowClass = None
-		self.candidateWindow = None
-		self.SetCodePage(app.GetDefaultCodePage())
+		self.candidateWindow = EmptyCandidateWindow()
+		self.candidateWindow.Hide()
 
 		self.readingWnd = ReadingWnd()
 		self.readingWnd.Hide()
@@ -879,19 +872,6 @@ class EditLine(TextLine):
 		self.eventEscape = Window.NoneMethod
 		self.eventTab = None
 
-
-	def SetCodePage(self, codePage):
-		candidateWindowClass=EditLine.candidateWindowClassDict.get(codePage, EmptyCandidateWindow)
-		self.__SetCandidateClass(candidateWindowClass)
-
-	def __SetCandidateClass(self, candidateWindowClass):
-		if self.candidateWindowClass==candidateWindowClass:
-			return
-
-		self.candidateWindowClass = candidateWindowClass
-		self.candidateWindow = self.candidateWindowClass()
-		self.candidateWindow.Load()
-		self.candidateWindow.Hide()
 
 	def RegisterWindow(self, layer):
 		self.hWnd = wndMgr.RegisterTextLine(self, layer)
@@ -963,15 +943,12 @@ class EditLine(TextLine):
 		wndMgr.ShowCursor(self.hWnd, True)
 
 	def OnKillFocus(self):
-		self.SetText(ime.GetText(self.bCodePage))
+		self.SetText(ime.GetText())
 		self.OnIMECloseCandidateList()
 		self.OnIMECloseReadingWnd()
 		ime.DisableIME()
 		ime.DisableCaptureInput()
 		wndMgr.HideCursor(self.hWnd)
-
-	def OnIMEChangeCodePage(self):
-		self.SetCodePage(ime.GetCodePage())
 
 	def OnIMEOpenCandidateList(self):
 		self.candidateWindow.Show()
@@ -1008,7 +985,7 @@ class EditLine(TextLine):
 
 	def OnIMEUpdate(self):
 		snd.PlaySound("sound/ui/type.wav")
-		TextLine.SetText(self, ime.GetText(self.bCodePage))
+		TextLine.SetText(self, ime.GetText())
 
 	def OnIMETab(self):
 		if self.eventTab:
@@ -1088,7 +1065,7 @@ class EditLine(TextLine):
 		# Delete
 		if app.VK_DELETE == key:
 			ime.Delete()
-			TextLine.SetText(self, ime.GetText(self.bCodePage))
+			TextLine.SetText(self, ime.GetText())
 			return True
 			
 		return True
@@ -3774,14 +3751,9 @@ class PythonScriptLoader(object):
 
 		if value.has_key("secret_flag"):
 			window.SetSecret(value["secret_flag"])
-		if value.has_key("with_codepage"):
-			if value["with_codepage"]:
-				window.bCodePage = True
 		if value.has_key("only_number"):
 			if value["only_number"]:
 				window.SetNumberMode()
-		if value.has_key("enable_codepage"):
-			window.SetIMEFlag(value["enable_codepage"])
 		if value.has_key("enable_ime"):
 			window.SetIMEFlag(value["enable_ime"])
 		if value.has_key("limit_width"):

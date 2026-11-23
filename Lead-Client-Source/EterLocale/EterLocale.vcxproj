@@ -135,23 +135,16 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arabic.cpp" />
-    <ClCompile Include="Japanese.cpp" />
     <ClCompile Include="StdAfx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|x64'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|x64'=='Debug|x64'">stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeader Condition="'$(Configuration)|x64'=='Release|x64'">Create</PrecompiledHeader>
       <PrecompiledHeaderFile Condition="'$(Configuration)|x64'=='Release|x64'">stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="StringCodec.cpp" />
-    <ClCompile Include="StringCodec_Vietnamese.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Arabic.h" />
-    <ClInclude Include="CodePageId.h" />
-    <ClInclude Include="Japanese.h" />
     <ClInclude Include="StdAfx.h" />
-    <ClInclude Include="StringCodec.h" />
-    <ClInclude Include="StringCodec_Vietnamese.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

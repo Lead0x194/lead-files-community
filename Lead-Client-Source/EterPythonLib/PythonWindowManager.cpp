@@ -1043,15 +1043,6 @@ namespace UI
 		// NOTE: This event is sent only to the activated EditLine, not to the entire system.
 	}
 
-	void CWindowManager::RunChangeCodePage()
-	{
-		if (m_pActiveWindow)
-		if (m_pActiveWindow->IsRendering())
-		{
-			if (m_pActiveWindow->OnIMEChangeCodePage())
-				return;
-		}
-	}
 	void CWindowManager::RunOpenCandidate()
 	{
 		if (m_pLockWindow)

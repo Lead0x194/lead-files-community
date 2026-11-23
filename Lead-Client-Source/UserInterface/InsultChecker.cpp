@@ -64,7 +64,7 @@ void CInsultChecker::FilterInsult(char* szLine, UINT uLineLen)
 		}
 		else
 		{
-			uPos += GetDefaultCodePageCharLength(szLine + uPos);
+			uPos += GetUTF8CharLength(szLine + uPos);
 		}
 	}
 }
@@ -76,7 +76,7 @@ bool CInsultChecker::IsInsultIn(const char* c_szLine, UINT uLineLen)
 		if (__IsInsult(c_szLine+uPos))
 			return true;
 
-		uPos += GetDefaultCodePageCharLength(c_szLine + uPos);
+		uPos += GetUTF8CharLength(c_szLine + uPos);
 	}
 
 	return false;

@@ -127,14 +127,6 @@ IIMEEventSink* CIME::ms_pEvent;
 int CIME::ms_ulbegin;
 int CIME::ms_ulend;
 
-UINT CIME::ms_uOutputCodePage = 0;
-UINT CIME::ms_uInputCodePage = 0;
-
-extern DWORD gs_codePage=0;
-extern DWORD GetDefaultCodePage();
-extern int ReadToken(const char* token);
-extern const char* FindToken(const char* begin, const char* end);
-
 ///////////////////////////////////////////////////////////////////////////////
 //
 //  CTsfUiLessMode
@@ -422,9 +414,8 @@ int CIME::GetReading(std::string & rstrText)
 	
 	if(ms_wstrReading.size() == 0)
 		return 0;
-	int readingLen = WideCharToMultiByte(ms_uOutputCodePage, 0, &ms_wstrReading[0], static_cast<int>(ms_wstrReading.size()), reading, sizeof(reading), NULL, NULL);
+	int readingLen = WideCharToMultiByte(CP_UTF8, 0, &ms_wstrReading[0], static_cast<int>(ms_wstrReading.size()), reading, sizeof(reading), NULL, NULL);
 
-	rstrText.append(GetCodePageText());
 	rstrText.append(reading, reading + readingLen);
 
 	return static_cast<int>(rstrText.size());
@@ -451,84 +442,25 @@ void CIME::SetText(const char* szText, int len)
 	ms_ulbegin = 0;
 	ms_ulend = 0;
 
-	const char* begin = szText;
-	const char* end = begin + len;
-	const char* iter = FindToken(begin, end);
-
 	int m_wTextLen = sizeof(m_wText)/sizeof(wchar_t);
 
-	ms_lastpos = MultiByteToWideChar(ms_uOutputCodePage, 0, begin, static_cast<int>(iter-begin), m_wText, m_wTextLen);
-
-	if (iter < end)
-		ms_lastpos += MultiByteToWideChar(ReadToken(iter), 0, (iter+5), static_cast<int>(end-(iter+5)), m_wText+ms_lastpos, m_wTextLen-ms_lastpos);
+	ms_lastpos = MultiByteToWideChar(CP_UTF8, 0, szText, len, m_wText, m_wTextLen);
 
 	ms_curpos = min(ms_curpos, ms_lastpos);
 }
 
-int  CIME::GetText(std::string & rstrText, bool addCodePage)
+int  CIME::GetText(std::string & rstrText)
 {
-	int outCodePage = ms_uOutputCodePage;
-	int dataCodePage;
-	switch (outCodePage)
-	{
-		//case 1256: // ARABIC
-		case 1268: // VIETNAM
-			dataCodePage = CP_UTF8;
-			break;
-		default:
-			dataCodePage = outCodePage;
-	}
-
 	int len = 0;
 	char text[IMESTR_MAXLEN];
 
-	len += WideCharToMultiByte(dataCodePage, 0, m_wText, ms_curpos, text, sizeof(text)-len, NULL, NULL);
-	len += WideCharToMultiByte(dataCodePage, 0, m_wszComposition, ms_compLen, text+len, sizeof(text)-len, NULL, NULL);
-	len += WideCharToMultiByte(dataCodePage, 0, m_wText+ms_curpos, ms_lastpos-ms_curpos, text+len, sizeof(text)-len, NULL, NULL);
+	len += WideCharToMultiByte(CP_UTF8, 0, m_wText, ms_curpos, text, sizeof(text)-len, NULL, NULL);
+	len += WideCharToMultiByte(CP_UTF8, 0, m_wszComposition, ms_compLen, text+len, sizeof(text)-len, NULL, NULL);
+	len += WideCharToMultiByte(CP_UTF8, 0, m_wText+ms_curpos, ms_lastpos-ms_curpos, text+len, sizeof(text)-len, NULL, NULL);
 
-	int i;
-	for(i=0; i<len; ++i)
-		if((BYTE)text[i] > 0x7F) break;
-
-	if(i == len)
-	{
-		rstrText.append(text, text+len);
-	}
-	else
-	{
-		rstrText.append(text, text+i);
-
-		//if (addCodePage)
-		//	rstrText.append(GetCodePageText());
-
-		rstrText.append(text+i, text+len);
-	}
+	rstrText.append(text, text+len);
 
 	return static_cast<int>(rstrText.size());
-}
-
-const char* CIME::GetCodePageText()
-{
-	static char szCodePage[16];
-
-	const int defCodePage = GetDefaultCodePage();
-	const int outCodePage = ms_uOutputCodePage;
-
-	if (outCodePage != defCodePage)
-	{
-		sprintf_s(szCodePage, sizeof(szCodePage), "@%04d", outCodePage);
-	}
-	else
-	{
-		szCodePage[0] = 0;
-	}
-
-	return szCodePage;
-}
-
-int CIME::GetCodePage()
-{
-	return ms_uOutputCodePage;
 }
 
 int CIME::GetCandidatePageCount()
@@ -557,7 +489,6 @@ int  CIME::GetCandidate(DWORD index, std::string & rstrText)
 	char text[IMESTR_MAXLEN];
 	int len = ::WideCharToMultiByte(CP_UTF8, 0, wszText, wTextLen, text, sizeof(text), 0, 0);
 
-	rstrText.append("@9999");
 	rstrText.append(text, text+len);
 
 	return wTextLen;
@@ -631,39 +562,35 @@ void CIME::PasteTextFromClipBoard()
 	if (!OpenClipboard(NULL))
 		return;
 
-	if (!IsClipboardFormatAvailable(CF_TEXT))
+	if (!IsClipboardFormatAvailable(CF_UNICODETEXT))
 	{
 		CloseClipboard();
 		return;
 	}
 
-	HANDLE handle = GetClipboardData(CF_TEXT);
+	HANDLE handle = GetClipboardData(CF_UNICODETEXT);
 	if (!handle)
 	{
 		CloseClipboard();
 		return;
 	}
 
-	char * buffer = (char*)GlobalLock(handle);
+	const wchar_t * buffer = (const wchar_t*)GlobalLock(handle);
 	if (!buffer)
 	{
 		CloseClipboard();
 		return;
 	}
 
-	std::string strClipboard = buffer;
+	std::wstring wstrClipboard = buffer;
 	GlobalUnlock(handle);
 	CloseClipboard();
 
-	if (strClipboard.empty())
+	if (wstrClipboard.empty())
 		return;
 
-	const char* begin = strClipboard.c_str();
-	const char* end = begin + strClipboard.length();
-	wchar_t m_wText[IMESTR_MAXLEN];
-	int wstrLen = MultiByteToWideChar(ms_uInputCodePage, 0, begin, static_cast<int>(end-begin), m_wText, IMESTR_MAXLEN);
-
-	InsertString(m_wText, wstrLen);
+	if (wstrClipboard.length() <= IMESTR_MAXLEN)
+		InsertString(&wstrClipboard[0], static_cast<int>(wstrClipboard.length()));
 	if(ms_pEvent)
 		ms_pEvent->OnUpdate();
 }
@@ -749,9 +676,6 @@ void CIME::ChangeInputLanguage()
 		// Other languages use the level that is specified by ImeUi_SetSupportLevel()
 		SetSupportLevel( ( GETPRIMLANG() == LANG_KOREAN ) ? 3 : ms_dwIMELevelSaved );
 	}
-
-	if(ms_pEvent)
-		ms_pEvent->OnChangeCodePage();
 
 	//HWND hwndImeDef = ImmGetDefaultIMEWnd(ms_hWnd);
 	//if ( hwndImeDef )
@@ -850,7 +774,7 @@ void CIME::PasteString(const char * str)
 	const char * begin = str;
 	const char * end = str + strlen(str);
 	wchar_t m_wText[IMESTR_MAXLEN];
-	int wstrLen = MultiByteToWideChar(ms_uOutputCodePage, 0, begin, static_cast<int>(end - begin), m_wText, IMESTR_MAXLEN);
+	int wstrLen = MultiByteToWideChar(CP_UTF8, 0, begin, static_cast<int>(end - begin), m_wText, IMESTR_MAXLEN);
 	InsertString(m_wText, wstrLen);
 	if(ms_pEvent)
 		ms_pEvent->OnUpdate();
@@ -895,80 +819,6 @@ void CIME::OnChar(wchar_t c)
 	InsertString(&c, 1);
 }
 
-UINT CIME::GetCodePageFromLang(LANGID langid)
-{
-	unsigned pri_langid = PRIMARYLANGID(langid);
-	switch (pri_langid)
-	{
-		case LANG_JAPANESE:
-			//setlocale(LC_ALL, ".932");
-			return 932;
-		case LANG_KOREAN:
-			//setlocale(LC_ALL, ".949");
-			return 949;
-		case LANG_CHINESE:
-			{
-				switch (SUBLANGID(langid))
-				{
-					case SUBLANG_CHINESE_SIMPLIFIED:
-					case SUBLANG_CHINESE_SINGAPORE:
-						//setlocale(LC_ALL, ".936");
-						return 936;
-					case SUBLANG_CHINESE_TRADITIONAL:
-					case SUBLANG_CHINESE_MACAU:
-					case SUBLANG_CHINESE_HONGKONG:
-						//setlocale(LC_ALL, ".950");
-						return 950;
-				}
-			}
-			//setlocale(LC_ALL, ".936");
-			return 936;
-		case LANG_ARABIC:
-			return 1256;
-		case LANG_GREEK:
-			//setlocale(LC_ALL, ".1253");
-			return 1253;
-		case LANG_TURKISH:
-			//setlocale(LC_ALL, ".1254");
-			return 1254;
-		case LANG_HEBREW:
-			//setlocale(LC_ALL, ".1255");
-			return 1255;
-		case LANG_ESTONIAN:
-		case LANG_LATVIAN:
-		case LANG_LITHUANIAN:
-			//setlocale(LC_ALL, ".1257");
-			return 1257;
-		case LANG_VIETNAMESE:
-			return 1258;
-		case LANG_THAI:
-			//setlocale(LC_ALL, ".874");
-			return 874;
-		case LANG_CZECH:
-		case LANG_HUNGARIAN:
-		case LANG_POLISH:
-		case LANG_CROATIAN:
-		case LANG_MACEDONIAN:
-		case LANG_ROMANIAN:
-		case LANG_SLOVAK:
-		case LANG_SLOVENIAN:
-			//setlocale(LC_ALL, ".1250");
-			return 1250;
-		case LANG_RUSSIAN:
-		case LANG_BELARUSIAN:
-		case LANG_BULGARIAN:
-		case LANG_UKRAINIAN:
-			return 1251;
-		case LANG_GERMAN:
-			//_wsetlocale(LC_ALL, ".1252");
-			return 1252;
-		default:
-			//TraceError("UNKNOWN IME[%d]\n", langid);
-			//setlocale(LC_ALL, ".949");
-			return 1252;
-	}
-}
-
 void CIME::CompositionProcess(HIMC hImc)
 {
 	ms_compLen = ImmGetCompositionStringW(hImc, GCS_COMPSTR, m_wszComposition, sizeof(m_wszComposition))/sizeof(wchar_t);
@@ -994,7 +844,7 @@ void CIME::CompositionProcess(HIMC hImc)
 
 void CIME::CompositionProcessBuilding(HIMC hImc)
 {
-	int textLen = WideCharToMultiByte(ms_uOutputCodePage, 0, m_wText, ms_lastpos, 0, 0, NULL, NULL);
+	int textLen = WideCharToMultiByte(CP_UTF8, 0, m_wText, ms_lastpos, 0, 0, NULL, NULL);
 
 	if (textLen >= m_max)
 	{
@@ -1132,7 +982,6 @@ void CIME::ReadingProcess(HIMC hImc)
         // IMEs that doesn't implement Reading String API
 		wchar_t* temp = NULL;
 		DWORD tempLen = 0;
-	    bool bUnicodeIme = false;
 		INPUTCONTEXT *lpIC = _ImmLockIMC(hImc);
 
 		if (lpIC == NULL)
@@ -1153,18 +1002,6 @@ void CIME::ReadingProcess(HIMC hImc)
 					tempLen = *(DWORD *)(p + 7 * 4 + 32 * 4);
 					dwErr = *(DWORD *)(p + 8 * 4 + 32 * 4);
 					temp = (wchar_t *)(p + 56);
-					bUnicodeIme = true;
-					break;
-
-				case IMEID_CHT_VER50: // 5.0.x.x // WinME
-					p = *(LPBYTE *)((LPBYTE)_ImmLockIMCC(lpIC->hPrivate) + 3 * 4);
-					if(!p) break;
-					p = *(LPBYTE *)((LPBYTE)p + 1*4 + 5*4 + 4*2);
-					if(!p) break;
-					tempLen = *(DWORD *)(p + 1*4 + (16*2+2*4) + 5*4 + 16);
-					dwErr = *(DWORD *)(p + 1*4 + (16*2+2*4) + 5*4 + 16 + 1*4);
-					temp = (wchar_t *)(p + 1*4 + (16*2+2*4) + 5*4);
-					bUnicodeIme = false;
 					break;
 
 				case IMEID_CHT_VER51: // 5.1.x.x // IME2002(w/OfficeXP)
@@ -1177,7 +1014,6 @@ void CIME::ReadingProcess(HIMC hImc)
 					tempLen = *(DWORD *)(p + 1*4 + (16*2+2*4) + 5*4 + 16 * 2);
 					dwErr = *(DWORD *)(p + 1*4 + (16*2+2*4) + 5*4 + 16 * 2 + 1*4);
 					temp  = (wchar_t *) (p + 1*4 + (16*2+2*4) + 5*4);
-					bUnicodeIme = true;
 					break;
 
 				// the code tested only with Win 98 SE (MSPY 1.5/ ver 4.1.0.21)
@@ -1192,7 +1028,6 @@ void CIME::ReadingProcess(HIMC hImc)
 						dwErr = *(DWORD *)(p + 8*4 + 16*2*4);
 						dwErr = min(dwErr, tempLen);
 						temp = (wchar_t *)(p + 6*4 + 16*2*1);
-						bUnicodeIme = true;
 					}
 					break;
 
@@ -1205,7 +1040,6 @@ void CIME::ReadingProcess(HIMC hImc)
 						tempLen = *(DWORD*)(p + 1 * 4 + (16 * 2 + 2 * 4) + 5 * 4 + 16 * nTcharSize);
 						dwErr = *(DWORD*)(p + 1 * 4 + (16 * 2 + 2 * 4) + 5 * 4 + 16 * nTcharSize + 1 * 4);
 						temp = (wchar_t*)(p + 1 * 4 + (16 * 2 + 2 * 4) + 5 * 4);
-						bUnicodeIme = true;
 					}
 					break;
 
@@ -1219,14 +1053,7 @@ void CIME::ReadingProcess(HIMC hImc)
 		if(tempLen == 0) {
 			ms_wstrReading.resize(0);
 		} else {
-			if(bUnicodeIme) {
-				ms_wstrReading.assign(temp, temp+tempLen);
-			} else {
-				int wstrLen = MultiByteToWideChar(ms_uInputCodePage, 0, (char*)temp, tempLen, NULL, 0); 
-				wchar_t* wstr = (wchar_t*)alloca(sizeof(wchar_t)*wstrLen);
-				MultiByteToWideChar(ms_uInputCodePage, 0, (char*)temp, tempLen, wstr, wstrLen); 
-				ms_wstrReading.assign(wstr, wstr+wstrLen);
-			}
+			ms_wstrReading.assign(temp, temp+tempLen);
 		}
 
 		_ImmUnlockIMCC(lpIC->hPrivate);
@@ -1248,8 +1075,8 @@ bool CIME::IsMax(const wchar_t* wInput, int len)
 	if (ms_lastpos + len > IMESTR_MAXLEN)
 		return true;
 
-	int textLen = WideCharToMultiByte(ms_uOutputCodePage, 0, m_wText, ms_lastpos, 0, 0, NULL, NULL);
-	int inputLen = WideCharToMultiByte(ms_uOutputCodePage, 0, wInput, len, 0, 0, NULL, NULL);
+	int textLen = WideCharToMultiByte(CP_UTF8, 0, m_wText, ms_lastpos, 0, 0, NULL, NULL);
+	int inputLen = WideCharToMultiByte(CP_UTF8, 0, wInput, len, 0, 0, NULL, NULL);
 	//return textLen + inputLen > m_max;
 
 	if (textLen + inputLen > m_max)
@@ -1258,8 +1085,8 @@ bool CIME::IsMax(const wchar_t* wInput, int len)
 	{
 		std::wstring str = GetTextTagOutputString(m_wText, ms_lastpos);
 		std::wstring input = GetTextTagOutputString(wInput, len);
-		int textLen = WideCharToMultiByte(ms_uOutputCodePage, 0, str.c_str(), static_cast<int>(str.length()), 0, 0, NULL, NULL);
-		int inputLen = WideCharToMultiByte(ms_uOutputCodePage, 0, input.c_str(), static_cast<int>(input.length()), 0, 0, NULL, NULL);
+		int textLen = WideCharToMultiByte(CP_UTF8, 0, str.c_str(), static_cast<int>(str.length()), 0, 0, NULL, NULL);
+		int inputLen = WideCharToMultiByte(CP_UTF8, 0, input.c_str(), static_cast<int>(input.length()), 0, 0, NULL, NULL);
 		return textLen + inputLen > m_userMax;
 	}
 	return false;
@@ -1455,20 +1282,12 @@ static unsigned long _strtoul( LPCSTR psz, LPTSTR*, int )
 
 void CIME::CheckInputLocale()
 {
-	static UINT s_uPrevCodePage = 0xFFFF;
 	static HKL	s_hklPrev = NULL;
 
 	ms_hklCurrent = GetKeyboardLayout( 0 );
 	if ( s_hklPrev == ms_hklCurrent )
 		return;
 	s_hklPrev = ms_hklCurrent;
-
-	char szCodePage[8];
-	int iRc = GetLocaleInfoA( MAKELCID( GETLANG(), SORT_DEFAULT ), LOCALE_IDEFAULTANSICODEPAGE, szCodePage, COUNTOF( szCodePage ) ); iRc;
-	ms_uInputCodePage = _strtoul( szCodePage, NULL, 0 );
-	if ( s_uPrevCodePage == ms_uInputCodePage )
-		return;
-	s_uPrevCodePage = ms_uInputCodePage;
 
 	GetKeyboardLayoutName(ms_szKeyboardLayout);
 
@@ -1520,13 +1339,6 @@ void CIME::CheckInputLocale()
         ms_wszCurrentIndicator[0] = szLang[0];
         ms_wszCurrentIndicator[1] = towlower(szLang[1]);
     }
-
-	ms_uOutputCodePage = GetDefaultCodePage();
-
-	//for ( int i = 0; i < 256; i++ )
-	//{
-	//	LeadByteTable[i] = (BYTE)IsDBCSLeadByteEx( g_uCodePage, (BYTE)i );
-	//}
 }
 
 void CIME::CheckToggleState()
@@ -2142,6 +1954,22 @@ LRESULT CIME::WMStartComposition(HWND /*hWnd*/, UINT /*uiMsg*/, WPARAM /*wParam*
 	return 1L;
 }
 
+static bool IsTraditionalChineseInputLocale()
+{
+	if (GETPRIMLANG() != LANG_CHINESE)
+		return false;
+
+	switch (GETSUBLANG())
+	{
+		case SUBLANG_CHINESE_TRADITIONAL:
+		case SUBLANG_CHINESE_HONGKONG:
+		case SUBLANG_CHINESE_MACAU:
+			return true;
+	}
+
+	return false;
+}
+
 LRESULT CIME::WMComposition(HWND hWnd, UINT /*uiMsg*/, WPARAM /*wParam*/, LPARAM lParam)
 {
 	LRESULT		result = 0;
@@ -2160,7 +1988,7 @@ LRESULT CIME::WMComposition(HWND hWnd, UINT /*uiMsg*/, WPARAM /*wParam*/, LPARAM
 		AttributeProcess(hImc);
 	if(lParam&GCS_COMPSTR)
 	{
-		if (ms_uInputCodePage == 950) // ´ë¸¸ ÁÖÀ½ ÀÔ·Â Ã³¸®
+		if (IsTraditionalChineseInputLocale()) // ´ë¸¸ ÁÖÀ½ ÀÔ·Â Ã³¸®
 		{
 			if (lParam&GCS_COMPATTR) 
 				CompositionProcessBuilding(hImc);
@@ -2213,7 +2041,7 @@ LRESULT CIME::WMNotify(HWND hWnd, UINT uiMsg, WPARAM wParam, LPARAM lParam)
 			if(ms_pEvent)
 				ms_pEvent->OnOpenCandidateList();
 		} else
-			result = ::DefWindowProc(hWnd, uiMsg, wParam, lParam);
+			result = ::DefWindowProcW(hWnd, uiMsg, wParam, lParam);
 		ImmReleaseContext(hWnd, hImc);
 		break;
 		}
@@ -2223,7 +2051,7 @@ LRESULT CIME::WMNotify(HWND hWnd, UINT uiMsg, WPARAM wParam, LPARAM lParam)
 		if (!m_bUseDefaultIME)
 			CloseCandidateList();
 		else
-			result = DefWindowProc(hWnd, uiMsg, wParam, lParam);
+			result = DefWindowProcW(hWnd, uiMsg, wParam, lParam);
 		break;
 
 	case IMN_SETCONVERSIONMODE:
@@ -2275,7 +2103,7 @@ LRESULT CIME::WMNotify(HWND hWnd, UINT uiMsg, WPARAM wParam, LPARAM lParam)
 
 LRESULT CIME::WMChar(HWND /*hWnd*/, UINT /*uiMsg*/, WPARAM wParam, LPARAM lParam)
 {
-	unsigned char c = unsigned char(wParam & 0xff);
+	wchar_t c = static_cast<wchar_t>(wParam);
 
 	switch (c) 
 	{
@@ -2299,12 +2127,9 @@ LRESULT CIME::WMChar(HWND /*hWnd*/, UINT /*uiMsg*/, WPARAM wParam, LPARAM lParam
 		}
 		if(ms_bCaptureInput == false)
 			return 0;
-		wchar_t w[10];
-		MultiByteToWideChar(ms_uInputCodePage, 0, (char*)&c, 1, w, 1);
-
-		OnChar(w[0]);
-		if (w[0] == L'|')
-			OnChar(w[0]);
+		OnChar(c);
+		if (c == L'|')
+			OnChar(c);
 		if(ms_pEvent)
 			ms_pEvent->OnUpdate();
 		break;

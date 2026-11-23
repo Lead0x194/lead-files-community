@@ -28,7 +28,6 @@ protected:
 
 	virtual bool OnWM_CHAR( WPARAM wParam, LPARAM lParam );
 	virtual void OnUpdate();
-	virtual void OnChangeCodePage();
 	virtual void OnOpenCandidateList();
 	virtual void OnCloseCandidateList();
 	virtual void OnOpenReadingWnd();

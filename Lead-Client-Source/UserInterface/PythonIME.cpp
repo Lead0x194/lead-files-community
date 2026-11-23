@@ -70,7 +70,7 @@ void CPythonIME::OnEscape()
 
 bool CPythonIME::OnWM_CHAR( WPARAM wParam, LPARAM lParam )
 {
-	unsigned char c = unsigned char(wParam & 0xff);
+	wchar_t c = static_cast<wchar_t>(wParam);
 
 	switch (c) 
 	{
@@ -91,11 +91,6 @@ bool CPythonIME::OnWM_CHAR( WPARAM wParam, LPARAM lParam )
 		return true;
 	}
 	return false;
-}
-
-void CPythonIME::OnChangeCodePage()
-{
-	IAbstractApplication::GetSingleton().RunIMEChangeCodePage();
 }
 
 void CPythonIME::OnOpenCandidateList()

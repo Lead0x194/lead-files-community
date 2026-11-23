@@ -58,18 +58,9 @@ PyObject* imeSetText(PyObject* poSelf, PyObject* poArgs)
 
 PyObject* imeGetText(PyObject* poSelf, PyObject* poArgs)
 {	
-	int bCodePage;
-	if (!PyTuple_GetInteger(poArgs, 0, &bCodePage))
-		bCodePage = 0;
-
 	std::string strText;
-	CPythonIME::Instance().GetText(strText, bCodePage ? true : false);
+	CPythonIME::Instance().GetText(strText);
 	return Py_BuildValue("s", strText.c_str());
-}
-
-PyObject* imeGetCodePage(PyObject* poSelf, PyObject* poArgs)
-{
-	return Py_BuildValue("i", CPythonIME::Instance().GetCodePage());
 }
 
 PyObject* imeGetCandidateCount(PyObject* poSelf, PyObject* poArgs)
@@ -242,7 +233,6 @@ void initime()
 		{ "SetUserMax",				imeSetUserMax,				METH_VARARGS },
 		{ "SetText",				imeSetText,					METH_VARARGS },
 		{ "GetText",				imeGetText,					METH_VARARGS },
-		{ "GetCodePage",			imeGetCodePage,				METH_VARARGS },
 		{ "GetCandidateCount",		imeGetCandidateCount,		METH_VARARGS },
 		{ "GetCandidate",			imeGetCandidate,			METH_VARARGS },
 		{ "GetCandidateSelection",	imeGetCandidateSelection,	METH_VARARGS },

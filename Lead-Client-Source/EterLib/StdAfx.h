@@ -36,7 +36,6 @@
 
 #include "../eterBase/StdAfx.h"
 #include "../eterBase/Debug.h"
-#include "../eterLocale/CodePageId.h"
 
 #ifndef VC_EXTRALEAN
 #include <winsock.h>

@@ -4,15 +4,13 @@
 
 #pragma comment(lib, "imm32.lib")
 
-#include "DIMM.h"
+#include <immdev.h>
 
 class IIMEEventSink
 {
 public:
 	virtual bool	OnWM_CHAR( WPARAM wParam, LPARAM lParam )	= 0;
 	virtual void	OnUpdate()									= 0;
-
-	virtual void	OnChangeCodePage()							= 0;
 
 	virtual void	OnOpenCandidateList()						= 0;
 	virtual void	OnCloseCandidateList()						= 0;
@@ -45,9 +43,7 @@ public:
 	void SetMax(int iMax);
 	void SetUserMax(int iMax);
 	void SetText(const char* c_szText, int len);
-	int GetText(std::string & rstrText, bool addCodePage=false);
-	const char* GetCodePageText();
-	int GetCodePage();
+	int GetText(std::string & rstrText);
 
 	// Candidate List
 	int  GetCandidateCount();
@@ -115,7 +111,6 @@ protected:
 
 	void	OnChar(wchar_t c);
 
-	UINT	GetCodePageFromLang( LANGID langid );
 	void	ResultProcess(HIMC hImc);
 	void	CompositionProcessBuilding(HIMC hImc);
 	void	CompositionProcess(HIMC hImc);
@@ -202,7 +197,4 @@ public:
 	static int				ms_lastpos;
 	static int				ms_ulbegin;
 	static int				ms_ulend;
-
-	static UINT				ms_uOutputCodePage;
-	static UINT				ms_uInputCodePage;
 };

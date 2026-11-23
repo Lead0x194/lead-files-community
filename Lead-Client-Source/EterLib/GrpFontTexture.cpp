@@ -25,7 +25,7 @@ void CGraphicFontTexture::Initialize()
 
 bool CGraphicFontTexture::IsEmpty() const
 {
-	return m_fontMap.size() == 0;
+	return m_hFont == NULL;
 }
 
 void CGraphicFontTexture::Destroy()
@@ -41,18 +41,8 @@ void CGraphicFontTexture::Destroy()
 	stl_wipe(m_pFontTextureVector);
 	m_charInfoMap.clear();
 
-	if (m_fontMap.size())
-	{
-		TFontMap::iterator i = m_fontMap.begin();
-
-		while(i != m_fontMap.end())
-		{
-			DeleteObject((HGDIOBJ)i->second);
-			++i;
-		}
-
-		m_fontMap.clear();
-	}
+	if (m_hFont)
+		DeleteObject((HGDIOBJ)m_hFont);
 	
 	Initialize();
 }
@@ -89,7 +79,7 @@ bool CGraphicFontTexture::Create(const char* c_szFontName, int fontSize, bool bI
 
 	HDC hDC = m_dib.GetDCHandle();
 
-	m_hFont = GetFont(static_cast<WORD>(GetDefaultCodePage()));
+	m_hFont = CreateFontHandle();
 
 	m_hFontOld=(HFONT)SelectObject(hDC, m_hFont);
 	SetTextColor(hDC, RGB(255, 255, 255));
@@ -103,43 +93,27 @@ bool CGraphicFontTexture::Create(const char* c_szFontName, int fontSize, bool bI
 
 
 
-HFONT CGraphicFontTexture::GetFont(WORD codePage)
+HFONT CGraphicFontTexture::CreateFontHandle()
 {
-	HFONT hFont = NULL;
-	TFontMap::iterator i = m_fontMap.find(codePage);
+	LOGFONT logFont;
 
-	if(i != m_fontMap.end())
-	{
-		hFont = i->second;
-	}
-	else
-	{
-		LOGFONT logFont;
+	memset(&logFont, 0, sizeof(LOGFONT));
 
-		memset(&logFont, 0, sizeof(LOGFONT));
+	logFont.lfHeight			= m_fontSize;
+	logFont.lfEscapement		= 0;
+	logFont.lfOrientation		= 0;
+	logFont.lfWeight			= FW_NORMAL;
+	logFont.lfItalic			= (BYTE) m_bItalic;
+	logFont.lfUnderline			= FALSE;
+	logFont.lfStrikeOut			= FALSE;
+	logFont.lfCharSet			= DEFAULT_CHARSET;
+	logFont.lfOutPrecision		= OUT_DEFAULT_PRECIS;
+	logFont.lfClipPrecision		= CLIP_DEFAULT_PRECIS;
+	logFont.lfQuality			= ANTIALIASED_QUALITY;
+	logFont.lfPitchAndFamily	= DEFAULT_PITCH;
+	strcpy_s(logFont.lfFaceName, sizeof(logFont.lfFaceName), m_fontName);
 
-		logFont.lfHeight			= m_fontSize;
-		logFont.lfEscapement		= 0;
-		logFont.lfOrientation		= 0;
-		logFont.lfWeight			= FW_NORMAL;
-		logFont.lfItalic			= (BYTE) m_bItalic;
-		logFont.lfUnderline			= FALSE;
-		logFont.lfStrikeOut			= FALSE;
-		logFont.lfCharSet			= GetCharsetFromCodePage(codePage);
-		logFont.lfOutPrecision		= OUT_DEFAULT_PRECIS;
-		logFont.lfClipPrecision		= CLIP_DEFAULT_PRECIS;
-		logFont.lfQuality			= ANTIALIASED_QUALITY;
-		logFont.lfPitchAndFamily	= DEFAULT_PITCH;
-		//Tracenf("font: %s", GetFontFaceFromCodePage(codePage));
-		strcpy_s(logFont.lfFaceName, sizeof(logFont.lfFaceName), m_fontName); //GetFontFaceFromCodePage(codePage));
-		//strcpy(logFont.lfFaceName, GetFontFaceFromCodePage(codePage));
-
-		hFont = CreateFontIndirect(&logFont);
-
-		m_fontMap.insert(TFontMap::value_type(codePage, hFont));
-	}
-
-	return hFont;
+	return CreateFontIndirect(&logFont);
 }
 
 bool CGraphicFontTexture::AppendTexture()
@@ -189,15 +163,13 @@ bool CGraphicFontTexture::UpdateTexture()
 	return true;
 }
 
-CGraphicFontTexture::TCharacterInfomation* CGraphicFontTexture::GetCharacterInfomation(WORD codePage, wchar_t keyValue)
+CGraphicFontTexture::TCharacterInfomation* CGraphicFontTexture::GetCharacterInfomation(wchar_t keyValue)
 {
-	TCharacterKey code(codePage, keyValue);
-
-	TCharacterInfomationMap::iterator f = m_charInfoMap.find(code);
+	TCharacterInfomationMap::iterator f = m_charInfoMap.find(keyValue);
 
 	if (m_charInfoMap.end() == f)
 	{
-		return UpdateCharacterInfomation(code);
+		return UpdateCharacterInfomation(keyValue);
 	}
 	else
 	{
@@ -205,12 +177,12 @@ CGraphicFontTexture::TCharacterInfomation* CGraphicFontTexture::GetCharacterInfo
 	}
 }
 
-CGraphicFontTexture::TCharacterInfomation* CGraphicFontTexture::UpdateCharacterInfomation(TCharacterKey code)
+CGraphicFontTexture::TCharacterInfomation* CGraphicFontTexture::UpdateCharacterInfomation(wchar_t code)
 {
 	HDC hDC = m_dib.GetDCHandle();
-	SelectObject(hDC, GetFont(code.first));
+	SelectObject(hDC, m_hFont);
 
-	wchar_t keyValue = code.second;
+	wchar_t keyValue = code;
 
 	if (keyValue == 0x08)
 		keyValue = L' '; // Tabs are replaced with spaces (Use tabs when printing in Arabic: NAME:\tTEXT -> converted to TEXT\t:NAME)

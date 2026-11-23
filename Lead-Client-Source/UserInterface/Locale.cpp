@@ -545,7 +545,6 @@ const char*	LocaleService_GetSecurityKey()
 	return __SECURITY_KEY_STRING__.c_str();
 }
 
-unsigned int LocaleService_GetCodePage()		{ return CP_UTF8; }
 const char*	LocaleService_GetLocaleName()		{ return MULTI_LOCALE_NAME; }
 const char*	LocaleService_GetLocalePath()		{ return MULTI_LOCALE_PATH; }
 

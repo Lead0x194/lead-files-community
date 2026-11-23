@@ -32,7 +32,6 @@
 #include "Locale.h"
 
 #include "GameType.h"
-extern DWORD __DEFAULT_CODE_PAGE__;
 
 #define APP_NAME	"Metin 2"
 
