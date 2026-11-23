@@ -28,22 +28,10 @@ add_goto_info("skel", 3, 65, 5905, 1108)
 
 add_goto_info("trent", 0 , 67, 2887 , 57 )
 add_goto_info("trent2",0 , 68, 11199 , 708 )
-add_goto_info("sungzi",0 , 114, 9216+250, 0+250 )
 add_goto_info("fp1", 0, 115, 10240+82, 1024+235 )
 add_goto_info("fp2", 0, 116, 10240+82, 2048+235 )
 add_goto_info("fp3", 0, 117, 10240+82, 2048+235 )
-add_goto_info("fh1", 0, 118, 11264+250, 1024 + 800 )
-add_goto_info("fh2", 0, 119, 11264+250, 2048 + 800 )
-add_goto_info("fh3", 0, 120, 11264+250, 3072 + 800 )
-add_goto_info("sungzisnow", 0,121, 11520+450, 0+250 )
-add_goto_info("fs1", 0, 122, 11776+225, 1024 + 655 )
-add_goto_info("fs2", 0, 123, 11776+225, 2048 + 655 )
-add_goto_info("fs3", 0, 124, 11776+225, 3072 + 655 )
 
-add_goto_info("sungzidesert", 0,125, 12288+450, 0+250 )
-add_goto_info("fd1", 0, 126, 12288+225, 1024 + 655 )
-add_goto_info("fd2", 0, 127, 12288+225, 2048 + 655 )
-add_goto_info("fd3", 0, 128, 12288+225, 3072 + 655 )
 
 add_goto_info("milgyomid|밀교사원중앙", 0 , 65, 5905,1106 )
 
