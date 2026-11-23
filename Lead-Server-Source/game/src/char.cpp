@@ -6134,13 +6134,24 @@ namespace {
 				m_bInvalid = false;
 				m_bEmpire = pkWarp->GetEmpire();
 
-				char szTmp[64];
+				std::string stName(pkWarp->GetName());
+				stName.erase(stName.find_last_not_of(' ') + 1);
 
-#ifdef _WIN32
-				if (3 != sscanf_s(pkWarp->GetName(), " %s %ld %ld ", szTmp, (unsigned)sizeof(szTmp), &m_lTargetX, &m_lTargetY))
-#else
-				if (3 != sscanf(pkWarp->GetName(), " %s %ld %ld ", szTmp, &m_lTargetX, &m_lTargetY))
-#endif
+				const size_t uPosY = stName.find_last_of(' ');
+				const size_t uPosX = (std::string::npos == uPosY || 0 == uPosY) ? std::string::npos : stName.find_last_of(' ', uPosY - 1);
+
+				bool bParsed = false;
+				if (std::string::npos != uPosX)
+				{
+					const char * pszX = stName.c_str() + uPosX;
+					char * pszY = NULL;
+					char * pszEnd = NULL;
+					m_lTargetX = strtol(pszX, &pszY, 10);
+					m_lTargetY = strtol(pszY, &pszEnd, 10);
+					bParsed = pszY != pszX && pszEnd != pszY && '\0' == *pszEnd;
+				}
+
+				if (!bParsed)
 				{
 					if (number(1, 100) < 5)
 						sys_err("Warp NPC name wrong : vnum(%d) name(%s)", pkWarp->GetRaceNum(), pkWarp->GetName());
