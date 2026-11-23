@@ -8506,3 +8506,570 @@
 8506	Vous devriez le changer pour des raisons de[ENTER]sécurité.[ENTER]Peut être pensez vous que 45 cases ne sont pas[ENTER]assez. Mais qui sait, peut être je te donnerais[ENTER]de l'espace supplémentaire si notre contrat[ENTER]s'éternise !
 8507	Mais je n'oblige personne. Si vous n'avez pas[ENTER]envie maintenant, revenez quand vous voudrez.
 8508	Ouvrir l'entrepôt
+9001	Aura de l'Epée est une compétence de la Sura.
+9002	White Liquid donne 10 FOR pendant 1 heure.
+9003	La DEX peut augmenter la durée de Furtif.
+9004	Attaque de flammes tire sa puissance de l'INT et de la DEX.
+9005	Au G3, Ritual of Doom dure 68 secondes.
+9006	Spirit Assault est une compétence de la Sura.
+9007	Si vous utilisez Eel, vous gagnez 10 FOR pendant 10 minutes.
+9008	Taichi augmente la CA.
+9009	La compétence Charge peut empoisonner la cible.
+9010	La Loche grillée peut vous rendre invisible pendant un court instant.
+9011	Quand vous êtes tué, vous perdez toujours de l'expérience.
+9012	La Pierre de Magie+3 donne +240 PM.
+9013	La Pierre de Magie+2 donne 150 PM.
+9014	Poison Cloud inflige des dégâts magiques.
+9015	Peur étourdit l'ennemi.
+9016	Dance with Wind est une compétence de l'Archer.
+9017	Flame Arrow brûle la cible.
+9018	Les Graines magiques ne sont lâchées que par les Dryads.
+9019	Le Chef esot. réincarné est un démon.
+9020	Le perroquet du Téléporteur est rouge et vert.
+9021	La Marchande a une queue de cheval.
+9022	Le Store Keeper a 3 couteaux.
+9023	Yonah est cuisinière.
+9024	Octavio est un érudit.
+9025	Anh-Yu a un bébé.
+9026	L'Armure de fantôme du Magasin d'armures coûte 10.000 pièces d'or.
+9027	L'Eventail de fer+0 du Magasin d'armes coûte 400 pièces d'or.
+9028	Orbe des Ténèbres est le sort le plus puissant d'une Sura de magie noire.
+9029	Aura de l'Epée augmente sa puissance avec la DEX.
+9030	La Vieille dame a un petit sac rouge.
+9031	À Elgoria, il y a 5 chevaux dans l'écurie.
+9032	La baguette à gemmes de l'Alchimiste est jaune.
+9033	Mirine a perdu sa mère.
+9034	Il y a exactement 259 arbres sur la carte 1 d'Elgoria.
+9035	Si un Cheval meurt 10 fois, il s'enfuit pour toujours.
+9036	Chez le Pêcheur, 50 vers coûtent 2000 pièces d'or.
+9037	La Boule piscicomancienne est un appât.
+9038	Les boules de riz et les vers sont les seuls appâts de Metin2.
+9039	Il y a 20 terrains de guilde dans chaque ville du jeu.
+9040	La Faucheuse est un Demi-humain.
+9041	Heavens Golem est le seul monstre qui lâche un Cristal aqueux.
+9042	Le Haricot Zen donne 500 points de Karma mais seulement si vous êtes négatif.
+9043	Se-Rang est un monstre de type loup.
+9044	Starbuck est le Forgeron créateur d'accessoires.
+9045	Cherogirayb est le Biologiste de Metin2.
+9046	Zin Heavens Commander lâche un Orbe de bénédiction.
+9047	Stanh est l'un des 3 Forgerons de guilde.
+9048	Tigris a un collier rouge.
+9049	Pour améliorer Wood Bracelet à +6, il faut 20k pièces d'or.
+9050	Pour améliorer Wood Bracelet à +7, il faut Bear Feet et 25k pièces d'or.
+9051	Pour améliorer Wood Bracelet à +8, il faut White Pigtail Ribbon et 45k pièces d'or.
+9052	Pour améliorer Wood Bracelet à +9, il faut Facial Cream et 75k pièces d'or.
+9053	Pour améliorer le bracelet de cuivre à +5, il faut 15k pièces d'or.
+9054	Pour améliorer le bracelet de cuivre à +7, il faut Bear Feet et 30k pièces d'or.
+9055	Pour améliorer le bracelet de cuivre à +8, il faut White Pigtail Ribbon+ et 40k pièces d'or.
+9056	Pour améliorer le bracelet de cuivre à +9, il faut Facial Cream et 70k pièces d'or.
+9057	Pour améliorer le Bracelet d'argent à +8, il faut White Pigtail Ribbon+ et 45k pièces d'or.
+9058	Pour améliorer le Bracelet d'or à +6, il faut 20k pièces d'or.
+9059	Pour améliorer le Bracelet d'or à +8, il faut White Pigtail Ribbon+ et 45k pièces d'or.
+9060	Pour améliorer le Bracelet de jade à +3, il faut 5k pièces d'or.
+9061	Pour améliorer le Bracelet de jade à +6, il faut Shuriken+ (x2) et 20k pièces d'or.
+9062	Pour améliorer le Bracelet d'ébène à +4, il faut 8k pièces d'or.
+9063	Pour améliorer le Bracelet d'ébène à +7, il faut Toile d'araignée (x2), Fishbone et 50k pièces d'or.
+9064	Pour améliorer le Bracelet de perles à +5, il faut Lame rouillée (x2) et 13k pièces d'or.
+9065	Pour améliorer le Bracelet de perles à +8, il faut Glande venin d'araignée (x2), Palourde et 70k pièces d'or.
+9066	Pour améliorer le Bracelet d'or blanc à +2, il faut 2k pièces d'or.
+9067	Pour améliorer le Bracelet d'or blanc à +9, il faut Peau de serpent (x2), Palourde et 100k pièces d'or.
+9068	Pour améliorer le Bracelet de cristal à +6, il faut Souvenir de Démon (x2) et 30k pièces d'or.
+9069	Pour améliorer le Bracelet de cristal à +7, il faut Gemme de Démon+ (x2), Perle blanche et 45k pièces d'or.
+9070	Pour améliorer le Bracelet d'améthyste à +5, il faut Médicament inconnu+ et 20k pièces d'or.
+9071	Pour améliorer le Bracelet d'améthyste à +9, il faut Crinière flamboyante (x2), Red Pearl et 120k pièces d'or.
+9072	Pour améliorer le Bracelet larme céleste à +4, il faut 10k pièces d'or.
+9073	Pour améliorer le Bracelet larme céleste à +8, il faut Fourrure de Yeti+ (x2), Perle bleue et 90k pièces d'or.
+9074	Pour améliorer le Collier de bois à +4, il faut 2,5k pièces d'or.
+9075	Pour améliorer le Collier de bois à +6, il faut 20k pièces d'or.
+9076	Pour améliorer le Collier de cuivre à +5, il faut 15k pièces d'or.
+9077	Pour améliorer le Collier de cuivre à +7, il faut Fourrure de loup+ (x2) et 25k pièces d'or.
+9078	Pour améliorer le Collier d'argent à +8, il faut Red Pigtail Ribbon et 50k pièces d'or.
+9079	Pour améliorer le Collier d'argent à +1, il faut 500 pièces d'or.
+9080	Pour améliorer le Collier d'or à +9, il faut Epingle de cheveux déco. (x2) et 75k pièces d'or.
+9081	Pour améliorer le Collier d'or à +3, il faut 2,5k pièces d'or.
+9082	Pour améliorer le Collier de jade à +8, il faut Queue de scorpion+ (x2), Palourde et 70k pièces d'or.
+9083	Pour améliorer le Collier de jade à +2, il faut 2,5k pièces d'or.
+9084	Pour améliorer le Collier d'ébène à +6, il faut Amulette d'orc+ et 20k pièces d'or.
+9085	Pour améliorer le Collier d'ébène à +2, il faut 2k pièces d'or.
+9086	Pour améliorer le Collier de perles à +5, il faut Shuriken (x2) et 13k pièces d'or.
+9087	Pour améliorer le Collier de perles à +9, il faut Orc Thoot+ (x2), Palourde et 120k pièces d'or.
+9088	Pour améliorer le Collier d'or blanc à +4, il faut 8k pièces d'or.
+9089	Pour améliorer le Collier d'or blanc à +7, il faut Talisman inconnu (x2), Fishbone et 40k pièces d'or.
+9090	Pour améliorer le Collier de cristal à +6, il faut Morceau de tissu (x2) et 30k pièces d'or.
+9091	Pour améliorer le Collier de cristal à +9, il faut Orbe de glace (x2), Red Pearl et 150k pièces d'or.
+9092	Pour améliorer le Collier d'améthyste à +5, il faut Médicament inconnu (x2) et 20k pièces d'or.
+9093	Pour améliorer le Collier d'améthyste à +7, il faut Feuille (x2), Perle blanche et 50k pièces d'or.
+9094	Pour améliorer le Collier larme céleste à +8, il faut Morceau de glace+ (x2), Perle bleue et 90k pièces d'or.
+9095	Pour améliorer le Collier larme céleste à +1, il faut 1,2k pièces d'or.
+9096	Pour améliorer les Boucles oreille bois à +2, il faut 1,2k pièces d'or.
+9097	Pour améliorer les Boucles oreille bois à +5, il faut 8k pièces d'or.
+9098	Pour améliorer les Boucles oreille cuivre à +7, il faut Bear Gail et 30k pièces d'or.
+9099	Pour améliorer les Boucles oreille cuivre à +9, il faut Uniforme noir usé et 70k pièces d'or.
+9100	Pour améliorer les Boucles oreille argent à +8, il faut Bear Feet+ et 45k pièces d'or.
+9101	Pour améliorer les Boucles oreille argent à +6, il faut 20k pièces d'or.
+9102	Pour améliorer les Boucles d'oreille or à +4, il faut 7,5k pièces d'or.
+9103	Pour améliorer les Boucles d'oreille or à +3, il faut 5k pièces d'or.
+9104	Pour améliorer les Boucles oreille jade à +3, il faut 5k pièces d'or.
+9105	Pour améliorer les Boucles oreille jade à +7, il faut Spider Eye, Fishbone et 40k pièces d'or.
+9106	Pour améliorer les Boucles oreille ébène à +4, il faut 10k pièces d'or.
+9107	Pour améliorer les Boucles oreille ébène à +5, il faut Morceau de Gemme et 13k pièces d'or.
+9108	Pour améliorer les Boucles oreille perle à +9, il faut Orc Thoot+ (x2), Palourde et 120k pièces d'or.
+9109	Pour améliorer les Boucles oreille perle à +6, il faut Manuel d'Esotérisme (x2) et 20k pièces d'or.
+9110	Pour améliorer les Boucle oreil. or blanc à +2, il faut 2k pièces d'or.
+9111	Pour améliorer les Boucle oreil. or blanc à +8, il faut Orc Thoot, Palourde et 70k pièces d'or.
+9112	Pour améliorer les Boucles oreil. cristal à +3, il faut 5k pièces d'or.
+9113	Pour améliorer les Boucles oreil. cristal à +6, il faut Morceau de tissu et 25k pièces d'or.
+9114	Pour améliorer les Boucles oreil. cristal à +9, il faut Orbe de glace (x2), Red Pearl et 150k pièces d'or.
+9115	Pour améliorer les Boucle oreille améth. à +2, il faut 2,5k pièces d'or.
+9116	Pour améliorer les Boucle oreille améth. à +7, il faut Gemme du Démon (x2), Perle blanche et 45k pièces d'or.
+9117	Pour améliorer les Boucle oreille améth. à +1, il faut 1,5k pièces d'or.
+9118	Pour améliorer les Boucle oreil. larme C à +8, il faut Souvenir de Démon+, Perle bleue et 80k pièces d'or.
+9119	Pour améliorer les Boucle oreil. larme C à +5, il faut Queue de serpent+ (x2) et 20k pièces d'or.
+9120	Pour améliorer le Bouclier de bataille à +5, il faut 20k pièces d'or.
+9121	Pour améliorer le Bouclier de bataille à +6, il faut 20k pièces d'or.
+9122	Pour améliorer le Bouclier de bataille à +7, il faut Bear Gail+ (x2) et 25k pièces d'or.
+9123	Pour améliorer le Bouclier de bataille à +8, il faut Peau de tigre blanc et 45k pièces d'or.
+9124	Pour améliorer le Bouclier de bataille à +9, il faut Uniforme noir usé (x2) et 75k pièces d'or.
+9125	Pour améliorer le Bouclier de bataille à +1, il faut 1k pièces d'or.
+9126	Pour améliorer le Bouclier pentagonal à +5, il faut Morceau d'armure cassée (x2) et 13k pièces d'or.
+9127	Pour améliorer le Bouclier pentagonal à +6, il faut Manuel d'Esotérisme+ et 20k pièces d'or.
+9128	Pour améliorer le Bouclier pentagonal à +7, il faut Talisman inconnu (x2), Fishbone et 40k pièces d'or.
+9129	Pour améliorer le Bouclier pentagonal à +8, il faut Queue de scorpion (x2), Palourde et 70k pièces d'or.
+9130	Pour améliorer le Bouclier pentagonal à +9, il faut Livre maléfique (x2), Palourde et 120k pièces d'or.
+9131	Pour améliorer le Bouclier pentagonal à +2, il faut 2k pièces d'or.
+9132	Pour améliorer le Bouclier rond noir à +5, il faut Pattes d'araignée (x2) et 20k pièces d'or.
+9133	Pour améliorer le Bouclier rond noir à +6, il faut Livre maudit+ (x2) et 30k pièces d'or.
+9134	Pour améliorer le Bouclier rond noir à +7, il faut Morceau de tissu+ (x2), Perle blanche et 50k pièces d'or.
+9135	Pour améliorer le Bouclier rond noir à +8, il faut Corne de baleine (x2), Perle bleue et 75k pièces d'or.
+9136	Pour améliorer le Bouclier rond noir à +9, il faut Fighting Tiger Fang (x2), Red Pearl et 150k pièces d'or.
+9137	Pour améliorer le Bouclier rond noir à +3, il faut 5k pièces d'or.
+9138	Pour améliorer le Bouclier du faucon à +4, il faut 10k pièces d'or.
+9139	Pour améliorer le Bouclier du faucon à +6, il faut Manuel d'Esotérisme+ et 20k pièces d'or.
+9140	Pour améliorer Tiger Monk Shield à +3, il faut 10k pièces d'or.
+9141	Pour améliorer Tiger Monk Shield à +9, il faut Livre maléfique (x2), Palourde et 120k pièces d'or.
+9142	Pour améliorer le Boucl. tranc. du lion à +7, il faut Talisman inconnu, Fishbone et 50k pièces d'or.
+9143	Pour améliorer le Boucl. tranc. du lion à +1, il faut 1,2k pièces d'or.
+9144	Pour améliorer le Boucl. écaille dragon à +2, il faut 2,5k pièces d'or.
+9145	Pour améliorer le Boucl. écaille dragon à +5, il faut Morceau d'armure cassée et 13k pièces d'or.
+9146	Pour améliorer Bloody Helm à +6, il faut 20k pièces d'or.
+9147	Pour améliorer Bloody Helm à +2, il faut 1,5k pièces d'or.
+9148	Pour améliorer le Capuchon en cuir à +4, il faut 4k pièces d'or.
+9149	Pour améliorer le Capuchon en cuir à +3, il faut 2,5k pièces d'or.
+9150	Pour améliorer Traditional Helm à +8, il faut White Pigtail Ribbon+ (x2) et 40k pièces d'or.
+9151	Pour améliorer Traditional Helm à +1, il faut 600 pièces d'or.
+9152	Pour améliorer le Chapeau de moine à +9, il faut Facial Cream et 75k pièces d'or.
+9153	Pour améliorer le Chapeau de moine à +7, il faut White Pigtail Ribbon et 30k pièces d'or.
+9154	Pour améliorer Iron Helm à +2, il faut 2k pièces d'or.
+9155	Pour améliorer Iron Helm à +4, il faut 10k pièces d'or.
+9156	Pour améliorer le Capuchon de maille à +5, il faut Drapeau (x2) et 20k pièces d'or.
+9157	Pour améliorer le Capuchon de maille à +9, il faut Poche d'œuf d'araignée (x2), Palourde et 120k pièces d'or.
+9158	Pour améliorer Mocking Helm à +8, il faut Glande venin d'araignée (x2), Palourde et 75k pièces d'or.
+9159	Pour améliorer Mocking Helm à +6, il faut Queue de scorpion (x2) et 20k pièces d'or.
+9160	Pour améliorer le Chapeau de phoenix à +7, il faut Toile d'araignée (x2), Fishbone et 30k pièces d'or.
+9161	Pour améliorer le Chapeau de phoenix à +3, il faut 4k pièces d'or.
+9162	Pour améliorer Castle Helm à +8, il faut Morceau de glace+, Perle bleue et 90k pièces d'or.
+9163	Pour améliorer Castle Helm à +7, il faut Frog Legs (x2), Os de doigt (x3) et 45k pièces d'or.
+9164	Pour améliorer le Chap. lumiere du sol. à +6, il faut Langue de grenouille (x2) et 30k pièces d'or.
+9165	Pour améliorer le Chap. lumiere du sol. à +5, il faut Médicament inconnu+ (x2) et 25k pièces d'or.
+9166	Pour améliorer le Capuchon de fer à +9, il faut Crinière flamboyante (x2), Os de doigt (x8) et 150k pièces d'or.
+9167	Pour améliorer le Capuchon de fer à +1, il faut 2k pièces d'or.
+9168	Pour améliorer le Casque masque spectr. à +3, il faut 5k pièces d'or.
+9169	Pour améliorer le Casque masque spectr. à +4, il faut 8k pièces d'or.
+9170	Pour améliorer les Chaussures de bambou à +8, il faut Skein (x2) et 45k pièces d'or.
+9171	Pour améliorer les Chaussures de bambou à +5, il faut 12k pièces d'or.
+9172	Pour améliorer les Chaussures de bois à +7, il faut Fourrure de tigre (x2) et 30k pièces d'or.
+9173	Pour améliorer les Chaussures fil d'Or à +9, il faut Uniforme noir usé+ et 75k pièces d'or.
+9174	Pour améliorer les Bottes de cuir à +8, il faut Pince de scorpion (x2), Palourde et 70k pièces d'or.
+9175	Pour améliorer les Bottes de cuir à +6, il faut Queue de scorpion+ (x2) et 20k pièces d'or.
+9176	Pour améliorer les Chaussures en or à +4, il faut 10k pièces d'or.
+9177	Pour améliorer les Chaussures en or à +7, il faut Dard de scorpion (x2), Fishbone et 40k pièces d'or.
+9178	Pour améliorer les Bottes de bronze à +5, il faut Amulette d'orc (x2) et 13k pièces d'or.
+9179	Pour améliorer les Chaussures de jade à +9, il faut Poche d'œuf d'araignée (x2), Palourde et 120k pièces d'or.
+9180	Pour améliorer Ecstatic Shoes à +2, il faut 2,5k pièces d'or.
+9181	Pour améliorer Ecstatic Shoes à +9, il faut Fighting Tiger Fang (x2), Red Pearl et 150k pièces d'or.
+9182	Pour améliorer les Bottes des nimbes à +7, il faut Frog Legs (x2), Perle blanche et 50k pièces d'or.
+9183	Pour améliorer les Bottes des nimbes à +5, il faut Pattes d'araignée (x2) et 20k pièces d'or.
+9184	Pour améliorer les Chaussures de phoenix à +6, il faut Frog Legs (x2) et 30k pièces d'or.
+9185	Pour améliorer les Chauss. oiseau de feu à +8, il faut Fourrure de Yéti (x2), Perle bleue et 90k pièces d'or.
+9186	Pour améliorer le Gong de cuivre à +8, il faut White Pigtail Ribbon (x2) et 45k pièces d'or.
+9187	Pour améliorer le Gong d'argent à +7, il faut Bear Gail+ (x2) et 30k pièces d'or.
+9188	Pour améliorer le Gong d'or à +9, il faut Epingle de cheveux déco. (x2) et 75k pièces d'or.
+9189	Pour améliorer le Gong de jade à +7, il faut Unknown Tailsman (x2), Fishbone et 40k pièces d'or.
+9190	Pour améliorer le Gong de fontaine à +6, il faut Amulette d'orc+ (x2) et 20k pièces d'or.
+9191	Pour améliorer le Gong abricot à +8, il faut Queue de scorpion+ (x2), Palourde et 70k pièces d'or.
+9192	Pour améliorer le Gong abricot à +9, il faut Livre maléfique (x2), Palourde et 120k pièces d'or.
+9193	Pour améliorer le Gong d'insecte d'or à +8, il faut Feuille (x2), Perle bleue et 90k pièces d'or.
+9194	Pour améliorer le Gong d'insecte d'acier à +9, il faut Corne de baleine (x2), Red Pearl et 150k pièces d'or.
+9195	Pour améliorer le Gong oiseau tonnerre à +7, il faut Feuille (x2), Perle blanche et 45k pièces d'or.
+9196	Pour améliorer le Gong de bambou à +5, il faut Médicament inconnu et 20k pièces d'or.
+9197	Pour améliorer le Gong antique à +8, il faut 90k pièces d'or.
+9198	Pour améliorer le Gong antique à +3, il faut 12k pièces d'or.
+9199	Bear Feet sert à améliorer le Bracelet de bois à +8.
+9200	Bear Feet sert à améliorer le Bracelet d'argent à +7.
+9201	Bear Feet+ sert à améliorer Golden Bracelet à +7.
+9202	White Pigtail Ribbon+ sert à améliorer le Bracelet d'argent à +7.
+9203	White Pigtail Ribbon+ sert à améliorer le Bracelet de bois à +8.
+9204	White Pigtail Ribbon sert à améliorer le Bracelet de bois à +8.
+9205	Facial Cream sert à améliorer Golden Bracelet à +9.
+9206	Facial Cream sert à améliorer le Bracelet d'argent à +8.
+9207	Lame rouillée sert à améliorer le Bracelet de jade à +5.
+9208	Lame rouillée sert à améliorer le Bracelet d'ébène à +6.
+9209	Shuriken+ sert à améliorer le Bracelet d'ébène à +6.
+9210	Shuriken+ sert à améliorer le Bracelet d'or blanc à +7.
+9211	Shuriken sert à améliorer le Bracelet d'or blanc à +6.
+9212	Toile d'araignée sert à améliorer le Bracelet de perles à +6.
+9213	Toile d'araignée sert à améliorer le Bracelet de jade à +7.
+9214	Glande venin d'araignée sert à améliorer le Bracelet d'ébène à +8.
+9215	Glande venin d'araignée sert à améliorer le Bracelet de perles à +9.
+9216	Peau de serpent sert à améliorer le Bracelet d'or blanc à +9.
+9217	Peau de serpent sert à améliorer le Bracelet de perles à +8.
+9218	Médicament inconnu+ sert à améliorer le Bracelet larme céleste à +5.
+9219	Médicament inconnu+ sert à améliorer le Bracelet de cristal à +6.
+9220	Médicament inconnu sert à améliorer le Bracelet d'améthyste à +5.
+9221	Souvenir de Démon sert à améliorer le Bracelet larme céleste à +6.
+9222	Souvenir de Démon sert à améliorer le Bracelet d'améthyste à +7.
+9223	Souvenir de Démon+ sert à améliorer le Bracelet de cristal à +6.
+9224	Gemme du Démon sert à améliorer le Bracelet larme céleste à +7.
+9225	Gemme du Démon sert à améliorer le Bracelet de cristal à +8.
+9226	Gemme de Démon+ sert à améliorer le Bracelet d'améthyste à +7.
+9227	Fourrure de Yeti+ sert à améliorer le Bracelet de cristal à +8.
+9228	Fourrure de Yeti+ sert à améliorer le Bracelet larme céleste à +7.
+9229	Fourrure de Yéti sert à améliorer le Bracelet d'améthyste à +8.
+9230	Crinière flamboyante sert à améliorer le Bracelet d'améthyste à +9.
+9231	Crinière flamboyante sert à améliorer le Bracelet larme céleste à +8.
+9232	Fourrure de loup+ sert à améliorer le Collier de bois à +7.
+9233	Fourrure de loup+ sert à améliorer le Collier de cuivre à +6.
+9234	Fourrure de loup sert à améliorer le Collier de bois à +7.
+9235	Red Pigtail Ribbon sert à améliorer le Collier de cuivre à +7.
+9236	Red Pigtail Ribbon sert à améliorer le Collier de bois à +8.
+9237	Epingle de cheveux déco. sert à améliorer le Collier d'argent à +9.
+9238	Epingle de cheveux déco. sert à améliorer le Collier d'or à +8.
+9239	Shuriken sert à améliorer le Collier de jade à +5.
+9240	Shuriken sert à améliorer le Collier d'ébène à +6.
+9241	Shuriken+ sert à améliorer le Collier de perles à +5.
+9242	Amulette d'orc+ sert à améliorer le Collier d'or blanc à +6.
+9243	Amulette d'orc+ sert à améliorer le Collier de jade à +7.
+9244	Amulette d'orc sert à améliorer le Collier de perles à +6.
+9245	Talisman inconnu sert à améliorer le Collier de jade à +7.
+9246	Talisman inconnu sert à améliorer le Collier d'or blanc à +8.
+9247	Talisman inconnu+ sert à améliorer le Collier de perles à +7.
+9248	Queue de scorpion+ sert à améliorer le Collier de jade à +8.
+9249	Queue de scorpion+ sert à améliorer le Collier d'ébène à +9.
+9250	Queue de scorpion sert à améliorer le Bracelet de bois à +8.
+9251	Orc Thoot+ sert à améliorer le Collier d'ébène à +9.
+9252	Orc Thoot+ sert à améliorer le Bracelet de bois à +8.
+9253	Orc Thoot sert à améliorer le Collier de jade à +9.
+9254	Médicament inconnu sert à améliorer le Collier de cristal à +5.
+9255	Médicament inconnu sert à améliorer le Collier larme céleste à +6.
+9256	Médicament inconnu+ sert à améliorer le Collier d'améthyste à +5.
+9257	Morceau de tissu sert à améliorer le Collier de cristal à +6.
+9258	Morceau de tissu sert à améliorer le Collier larme céleste à +5.
+9259	Morceau de tissu+ sert à améliorer le Collier d'améthyste à +6.
+9260	Feuille sert à améliorer le Collier de cristal à +7.
+9261	Feuille sert à améliorer le Collier d'améthyste à +8.
+9262	Morceau de glace sert à améliorer le Collier larme céleste à +8.
+9263	Morceau de glace sert à améliorer le Collier de cristal à +9.
+9264	Morceau de glace+ sert à améliorer le Collier d'améthyste à +8.
+9265	Orbe de glace+ sert à améliorer le Collier de cristal à +9.
+9266	Orbe de glace+ sert à améliorer le Collier larme céleste à +8.
+9267	Orbe de glace sert à améliorer le Collier d'améthyste à +9.
+9268	Le Loup bleu est de niveau 7.
+9269	Le Tigre est de niveau 17.
+9270	Le Loup alpha gris est de niveau 16.
+9271	L'Ours noir affamé est de niveau 19.
+9272	Le Tigre blanc est de niveau 26.
+9273	Le Sanglier sauvage affamé est de niveau 10.
+9274	Le Grizzly est de niveau 13.
+9275	Le Soldat du Serment Blanc est de niveau 18.
+9276	Mi-Jung Déprimée est de niveau 23.
+9277	Eun-Jung Déprimée est de niveau 28.
+9278	Jin-Hee déprimée est de niveau 29.
+9279	Le Général du Serment Blanc est de niveau 25.
+9280	L'Ours est de niveau 12.
+9281	White 0ath Archer est de niveau 20.
+9282	Gu-Ryung du Vent Noir est de niveau 32.
+9283	Bo est de niveau 36.
+9284	L'Archer du Vent Noir est de niveau 29.
+9285	Le Maniac du Vent Noir est de niveau 28.
+9286	Le Soldat du Vent Noir est de niveau 26.
+9287	Jak-To du Vent Noir est de niveau 30.
+9288	Le Soldat Barbare est de niveau 29.
+9289	Evil Black Storm Joh-Hwa est de niveau 29.
+9290	L'Archer Tempête Noire maléfique est de niveau 30.
+9291	Le Minion Barbare est de niveau 31.
+9292	Le Loup maudit est de niveau 9.
+9293	Le Loup alpha bleu maudit est de niveau 14.
+9294	L'Ours maudit est de niveau 18.
+9295	L'Ours noir maudit est de niveau 24.
+9296	L'Ours brun maudit est de niveau 26.
+9297	Le Sanglier sauvage maudit est de niveau 12.
+9298	Le Tigre maudit est de niveau 23.
+9299	Le Tigre blanc maudit est de niveau 29.
+9300	Le Soldat bestial est de niveau 35.
+9301	Spécialiste bestial est de niveau 42.
+9302	Maniac bestial est de niveau 38.
+9303	Archer bestial est de niveau 41.
+9304	Fort Archer Barbare est de niveau 35.
+9305	Fort Soldat Barbare est de niveau 29.
+9306	Fort Général Barbare est de niveau 35.
+9307	Fort Minion Barbare est de niveau 31.
+9308	Orc est de niveau 26.
+9309	Eclaireur Orc est de niveau 30.
+9310	Combattant Orc est de niveau 32.
+9311	Sorcier Orc est de niveau 33.
+9312	Orc élite est de niveau 34.
+9313	Eclaireur Orc élite est de niveau 36.
+9314	Combattant Orc élite est de niveau 39.
+9315	Sorcier Orc élite est de niveau 40.
+9316	Général Orc élite est de niveau 45.
+9317	Orc noir est de niveau 47.
+9318	Orc noir Géant est de niveau 49.
+9319	Esoteric Fanatic est de niveau 35.
+9320	Esoteric Arahan est de niveau 39.
+9321	Combattant funeste est de niveau 41.
+9322	Chef arahan funeste est de niveau 43.
+9323	Exécuteur funeste est de niveau 46.
+9324	Tourmenteur ésotérique est de niveau 47.
+9325	Invocateur ésotérique est de niveau 51.
+9326	Fier fanatique funeste est de niveau 50.
+9327	Fier Arahan funeste est de niveau 52.
+9328	Fier combattant funeste est de niveau 54.
+9329	Fier chef funeste est de niveau 54.
+9330	Fier exécuteur funeste est de niveau 57.
+9331	Chien pestiféré est de niveau 51.
+9332	Pestiféré est de niveau 54.
+9333	Soldat pestiféré est de niveau 56.
+9334	Lancier pestiféré est de niveau 58.
+9335	Archer pestiféré est de niveau 57.
+9336	Chef pestiféré est de niveau 59.
+9337	Soldat démoniaque est de niveau 57.
+9338	Archer démon est de niveau 59.
+9339	Lancier démoniaque est de niveau 58.
+9340	Chamane démoniaque est de niveau 60.
+9341	Vil Soldat démoniaque est de niveau 65.
+9342	Vil Archer démoniaque est de niveau 69.
+9343	Vil lancier démoniaque est de niveau 70.
+9344	Vil Chamane démoniaque est de niveau 69.
+9345	Esprit de rancune est de niveau 72.
+9346	Esprit du Chaos est de niveau 72.
+9347	Vil Chef démoniaque est de niveau 73.
+9348	Maître à épée squelette est de niveau 72.
+9349	Tête de mort volante est de niveau 69.
+9350	Esprit éternel est de niveau 73.
+9351	Bête démoniaque est de niveau 75.
+9352	Roi démon est de niveau 74.
+9353	Faucheuse est de niveau 78.
+9354	Glace enchantée est de niveau 62.
+9355	Baleine de glace est de niveau 63.
+9356	Insecte de glace est de niveau 65.
+9357	Lion de glace est de niveau 64.
+9358	Homme de glace est de niveau 63.
+9359	Yéti est de niveau 65.
+9360	Golem de glace est de niveau 66.
+9361	Glace enchantée céleste est de niveau 82.
+9362	Baleine de glace céleste est de niveau 82.
+9363	Insecte de glace céleste est de niveau 82.
+9364	Lion de glace céleste est de niveau 83.
+9365	Homme de glace céleste est de niveau 83.
+9366	Yéti céleste est de niveau 83.
+9367	Golem de glace céleste est de niveau 86.
+9368	Soldat gren. arboricole est de niveau 57.
+9369	Chef gren. arboricole est de niveau 60.
+9370	Croque-mitaine est de niveau 59.
+9371	Esprit du Tigre jaune est de niveau 75.
+9372	Gal Grenouille-taureau est de niveau 60.
+9373	Giant Soldier est de niveau 66.
+9374	Giant Scout est de niveau 73.
+9375	Millier Combattant géant est de niveau 76.
+9376	Stone Thrower est de niveau 68.
+9377	Stone Shooter est de niveau 72.
+9378	Giant Stone Shooter est de niveau 72.
+9379	Giant Worker est de niveau 68.
+9380	Giant Inspector est de niveau 72.
+9381	Giant Hundred Combatant est de niveau 75.
+9382	Neuf-Queues est de niveau 74.
+9383	Jeune Araignée est de niveau 43.
+9384	Deadly Spider est de niveau 45.
+9385	Crimson Spider est de niveau 47.
+9386	Araignée à griffes est de niveau 49.
+9387	Soldat Araignée est de niveau 51.
+9388	Jeune Araignée venimeuse est de niveau 50.
+9389	Araignée mortelle est de niveau 52.
+9390	Araignée rouge venimeuse est de niveau 53.
+9391	Araignée à griffes est de niveau 5.
+9392	Soldat Araignée venim. est de niveau 58.
+9393	Reine araignée est de niveau 60.
+9394	Renard est de niveau 22.
+9395	Oeil Volant est de niveau 35.
+9396	Roi scorpion est de niveau 39.
+9397	Scorpion Man est de niveau 45.
+9398	Archer scorpion est de niveau 47.
+9399	Epéiste serpent est de niveau 48.
+9400	Archer serpent est de niveau 52.
+9401	Hors la loi du Désert est de niveau 54.
+9402	Giant Turtle est de niveau 66.
+9403	Tigre minion Combattant est de niveau 69.
+9404	Esprit flamme est de niveau 70.
+9405	Tigre de combat est de niveau 70.
+9406	Flame Soldier est de niveau 72.
+9407	Guerrier flamme est de niveau 73.
+9408	Roi flamme est de niveau 73.
+9409	Haunted Tree est de niveau 65.
+9410	Haunted Stump est de niveau 67.
+9411	Dryade est de niveau 68.
+9412	Haunted Willow est de niveau 69.
+9413	Evil Haunted Tree est de niveau 72.
+9414	Red Brutal Tree est de niveau 73.
+9415	Red Haunted Stump est de niveau 76.
+9416	Dryade rouge est de niveau 77.
+9417	Red Haunted Willow est de niveau 79.
+9418	Red Haunted Tree est de niveau 82.
+9419	Heaven Soldier est de niveau 85.
+9420	Heaven Archer est de niveau 88.
+9421	Heaven Cleric est de niveau 87.
+9422	Heaven Commander est de niveau 88.
+9423	Zin Heaven Soldier est de niveau 90.
+9424	Zin Heaven Archer est de niveau 92.
+9425	Zin Heaven Cleric est de niveau 93.
+9426	Zin Heaven Commander est de niveau 95.
+9427	Aqua Dragon est de niveau 97.
+9428	Combattant gnoll est de niveau 96.
+9429	Archer gnoll est de niveau 96.
+9430	Défenseur gnoll est de niveau 98.
+9431	Magicien gnoll est de niveau 98.
+9432	Général gnoll est de niveau 99.
+9433	Seigneur gnoll est de niveau 102.
+9434	Garde gnoll suprême est de niveau 104.
+9435	Casseur N'a-qu'un-œil est de niveau 97.
+9436	Soldat cyclope est de niveau 99.
+9437	Magicien cyclope est de niveau 100.
+9438	Bourreau cyclope est de niveau 99.
+9439	Général Outis est de niveau 102.
+9440	Argès est de niveau 104.
+9441	Polyphème est de niveau 105.
+9442	Combattant manticore est de niveau 96.
+9443	Soldat manticore est de niveau 98.
+9444	Mage manticore est de niveau 99.
+9445	Bourreau manticore est de niveau 99.
+9446	Général core est de niveau 101.
+9447	Rakshasa est de niveau 102.
+9448	Martyaxwar est de niveau 105.
+9449	Combattant lémure est de niveau 98.
+9450	Soldat lémure est de niveau 98.
+9451	Magicien lémure est de niveau 99.
+9452	Bourreau lémure est de niveau 101.
+9453	Général lémure est de niveau 102.
+9454	Prince lémure est de niveau 103.
+9455	Garde du corps lémure est de niveau 104.
+9456	Murène tritonique est de niveau 96.
+9457	Soldat requin est de niveau 98.
+9458	Magicien tritonique est de niveau 99.
+9459	Chasseur tritonique est de niveau 98.
+9460	Éventreur tritonique est de niveau 101.
+9461	Général kappa est de niveau 103.
+9462	Triton est de niveau 105.
+9463	Voleur rouge amazone est de niveau 95.
+9464	Voleur rouge assassin est de niveau 97.
+9465	Voleur rouge magicien est de niveau 97.
+9466	Voleur rouge bourreau est de niveau 98.
+9467	Général noir est de niveau 98.
+9468	Face d'os est de niveau 102.
+9469	Chef rouge est de niveau 104.
+9470	Guerrier crabe est de niveau 96.
+9471	Archer scorpionique est de niveau 97.
+9472	Soldat crevette est de niveau 99.
+9473	Ermite diabolique est de niveau 98.
+9474	Crabe cuirassé est de niveau 102.
+9475	Général homard est de niveau 103.
+9476	Roi des crabes est de niveau 105.
+9477	Croqueur géant est de niveau 100.
+9478	Tueur géant est de niveau 102.
+9479	Magicien géant est de niveau 103.
+9480	Bigéant est de niveau 104.
+9481	Capitaine Crochet est de niveau 105.
+9482	Gargouille est de niveau 105.
+9483	Roi Wobba est de niveau 105.
+9484	Bourrogre est de niveau 98.
+9485	Archie l'Orgre est de niveau 100.
+9486	Ogre de bataille est de niveau 102.
+9487	Ogre magicien est de niveau 101.
+9488	Général ogre est de niveau 103.
+9489	Capitaine Shrouk est de niveau 105.
+9490	Le gros ogre est de niveau 105.
+9491	Metin de Tristesse est de niveau 10.
+9492	Metin de Combat est de niveau 10.
+9493	Metin Battle est de niveau 15.
+9494	Metin de Cupidité est de niveau 20.
+9495	Metin Noire est de niveau 30.
+9496	Metin des Ténèbres est de niveau 30.
+9497	Metin Jalousie est de niveau 40.
+9498	Metin d' Ame est de niveau 45.
+9499	Metin de l'Ombre est de niveau 40.
+9500	Metin de Force est de niveau 50.
+9501	Metin du Diable est de niveau 60.
+9502	Metin Déchue est de niveau 55.
+9503	Metin de Mort est de niveau 65.
+9504	Metin de Meurtre est de niveau 70.
+9505	Metin of Wind Devil est de niveau 80.
+9506	Metin of Devil Eyes est de niveau 80.
+9507	Metin of Fighting Dragon est de niveau 85.
+9508	Metin of Lightning Cloud est de niveau 85.
+9509	Metin de l'Obscurité est de niveau 100.
+9510	Metin de Braise est de niveau 95.
+9511	Metin de la Vanité est de niveau 100.
+9512	Metin de la Colère est de niveau 105.
+9513	Metin du Malheur est de niveau 105.
+9514	Metin de l'Infamie est de niveau 100.
+9515	Faible Singe Soldat est de niveau 22.
+9516	Faible Singe lanceur est de niveau 24.
+9517	Faible Singe Combattant est de niveau 27.
+9518	Faible Singe général est de niveau 29.
+9519	Ape Soldier est de niveau 36.
+9520	Ape Thrower est de niveau 37.
+9521	Ape Fighter est de niveau 40.
+9522	Singe général est de niveau 40.
+9523	Singe de pierre est de niveau 41.
+9524	Chef Singe est de niveau 42.
+9525	Fort Singe Soldat est de niveau 46.
+9526	Fort Singe lanceur est de niveau 48.
+9527	Fort Singe Combattant est de niveau 48.
+9528	Fort Singe général est de niveau 52.
+9529	Fort Singe de pierre est de niveau 53.
+9530	Singe de pierre est de niveau 35.
+9531	seigneur Singe est de niveau 55.
+9532	Devil est de niveau 80.
+9533	Devil's Wolf est de niveau 80.
+9534	Devil's Wraith est de niveau 81.
+9535	Devil's Skulker est de niveau 85.
+9536	Devil's Spearman est de niveau 84.
+9537	Devil's Cockatrice est de niveau 83.
+9538	Devil's Dominator est de niveau 85.
+9539	Spectral Crusher est de niveau 79.
+9540	Spectral Bower est de niveau 80.
+9541	Spectral Spikeman est de niveau 82.
+9542	Spectral Shaman est de niveau 10.
+9543	Spectral Axeman est de niveau 83.
+9544	Spectral Titan est de niveau 85.
+9545	Spectral Hunter est de niveau 86.
+9546	Hateful Crusher est de niveau 80.
+9547	Hateful Bower est de niveau 10.
+9548	Hateful Spikeman est de niveau 10.
+9549	Hateful Shaman est de niveau 82.
+9550	Hateful Axeman est de niveau 84.
+9551	Hateful Titan est de niveau 85.
+9552	Hateful Hunter est de niveau 86.
+9553	Tartare est de niveau 89.
+9554	Erebus est de niveau 90.
+9555	Charon est de niveau 91.
+9556	Lord Gahnasel est de niveau 92.
+9557	Cung-Mok est de niveau 8.
+9558	Mu-Rang est de niveau 15.
+9559	Jug-Hyul est de niveau 10.
+9560	Young-Ji est de niveau 21.
+9561	Li-An est de niveau 24.
+9562	Lykos est de niveau 30.
+9563	Scrofa est de niveau 30.
+9564	Bera est de niveau 32.
+9565	Tigris est de niveau 35.
+9566	Se-Rang est de niveau 25.
+9567	Eun-Jung est de niveau 26.
