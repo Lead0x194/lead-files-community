@@ -55,7 +55,6 @@ class Interface(object):
 	def __init__(self):
 		systemSetting.SetInterfaceHandler(self)
 		self.windowOpenPosition = 0
-		self.requestedLanguage = None
 		self.dlgWhisperWithoutTarget = None
 		self.inputDialog = None
 		self.tipBoard = None
@@ -1614,12 +1613,9 @@ class Interface(object):
 		self.__ShowWindows(self.wndGuildBuilding.wnds)
 		self.wndGuildBuilding = None
 
-	def RequestLanguage(self, name):
-		self.requestedLanguage = name
-
 	def __ChangeLanguage(self):
-		name = self.requestedLanguage
-		self.requestedLanguage = None
+		name = localeInfo.REQUESTED_LANGUAGE
+		localeInfo.REQUESTED_LANGUAGE = None
 
 		if not localeInfo.SetLanguage(name):
 			return
@@ -1650,7 +1646,7 @@ class Interface(object):
 		self.RefreshMessenger()
 
 	def BUILD_OnUpdate(self):
-		if self.requestedLanguage:
+		if localeInfo.REQUESTED_LANGUAGE:
 			self.__ChangeLanguage()
 			return
 

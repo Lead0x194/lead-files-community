@@ -42,6 +42,8 @@ class OptionDialog(ui.ScriptWindow):
 		self.fogModeButtonList = []
 		self.tilingModeButtonList = []
 		self.ctrlShadowQuality = 0
+		self.languageComboBox = 0
+		self.languageList = []
 		
 	def Destroy(self):
 		self.ClearDictionary()
@@ -109,6 +111,18 @@ class OptionDialog(ui.ScriptWindow):
 
 		self.tilingApplyButton.SAFE_SetEvent(self.__OnClickTilingApplyButton)
 
+		self.languageList = localeInfo.GetLanguageList()
+		self.languageComboBox = ui.ComboBox()
+		self.languageComboBox.SetParent(self.GetChild("board"))
+		self.languageComboBox.SetPosition(110, 212)
+		self.languageComboBox.SetSize(150, 18)
+		self.languageComboBox.SetEvent(ui.__mem_func__(self.__OnSelectLanguage))
+		for index, (code, name) in enumerate(self.languageList):
+			self.languageComboBox.InsertItem(index, name)
+			if code == app.GetLocaleName():
+				self.languageComboBox.SetCurrentItem(name)
+		self.languageComboBox.Show()
+
 		self.__SetCurTilingMode()
 
 		self.__ClickRadioButton(self.fogModeButtonList, constInfo.GET_FOG_LEVEL_INDEX())
@@ -118,6 +132,11 @@ class OptionDialog(ui.ScriptWindow):
 			self.selectMusicFile.SetText(localeInfo.MUSIC_METIN2_DEFAULT_THEMA)
 		else:
 			self.selectMusicFile.SetText(musicInfo.fieldMusic[:MUSIC_FILENAME_MAX_LEN])
+
+	def __OnSelectLanguage(self, index):
+		code, name = self.languageList[index]
+		if code != app.GetLocaleName():
+			localeInfo.REQUESTED_LANGUAGE = code
 
 	def __OnClickTilingModeCPUButton(self):
 		self.__NotifyChatLine(localeInfo.SYSTEM_OPTION_CPU_TILING_1)
