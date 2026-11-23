@@ -1159,10 +1159,12 @@ bool CPythonNetworkStream::RecvChatPacket()
 		bServerText = pkInstTalker && !pkInstTalker->IsPC();
 	}
 
+	std::string stChatLines;
 	if (bServerText)
 	{
 		std::string stText(buf);
 		LocaleService_ReplaceTags(stText);
+		stChatLines = stText;
 		for (size_t uPos = stText.find("[ENTER]"); std::string::npos != uPos; uPos = stText.find("[ENTER]", uPos))
 			stText.replace(uPos, 7, " ");
 		strncpy_s(buf, sizeof(buf), stText.c_str(), _TRUNCATE);
@@ -1258,7 +1260,25 @@ bool CPythonNetworkStream::RecvChatPacket()
 			}
 		}
 
-		CPythonChat::Instance().AppendChat(kChat.type, buf);
+		if (std::string::npos == stChatLines.find("[ENTER]"))
+		{
+			CPythonChat::Instance().AppendChat(kChat.type, buf);
+		}
+		else
+		{
+			size_t uStart = 0;
+			while (uStart < stChatLines.length())
+			{
+				size_t uEnd = stChatLines.find("[ENTER]", uStart);
+				if (std::string::npos == uEnd)
+					uEnd = stChatLines.length();
+
+				if (uEnd > uStart)
+					CPythonChat::Instance().AppendChat(kChat.type, stChatLines.substr(uStart, uEnd - uStart).c_str());
+
+				uStart = uEnd + 7;
+			}
+		}
 		
 	}
 	return true;
