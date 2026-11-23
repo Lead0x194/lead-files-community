@@ -261,7 +261,7 @@
 648	%d%% Weerstand tegen Ninja Aanvallen
 649	%d%% Weerstand tegen Sura Aanvallen
 650	%d%% Weerstand tegen Sjamaan Aanvallen
-651	(Procedure: %d y- %d m - %d d)
+651	(Procedure: %d j - %d m - %d d)
 652	Je Chat is geblokkeerd.
 654	Je hebt level %d nodig om te kunnen roepen.
 655	Je zit niet in deze Groep.
@@ -389,7 +389,7 @@
 855	Je kunt tot %d Brouwsels gebruiken.
 856	Het gevecht begint in 10 seconden.
 857	Het duel is begonnen.
-858	TRUE
+858	WAAR
 859	Het duel is beëindigd omdat er een probleem is met de arena.
 860	Het duel is beëindigd vanwege de timeout.
 861	Over 10 seconden word je verplaatst naar de stad.
@@ -400,7 +400,7 @@
 866	%s heeft gewonnen.
 867	Over 10 seconden word je verplaatst naar de stad.
 868	De volgende ronde begint over 10 seconden.
-869	FALSE
+869	ONWAAR
 870	De Tegenstanders werden opgesplits. Het duel is beëindigd.
 871	De Quota van Gevallen Voorwerpen is op het moment plus %d%%
 872	De Quota van Gevallen Yang is op dit moment plus %d%%
@@ -493,7 +493,7 @@
 977	Ik ben verlicht! Ik heb het bijna helemaal gelezen!
 978	Nog maar een paar pagina's en dan heb ik alles gelezen.
 979	Ik voel me verfrist.
-980	Correct!
+980	Juist!
 981	Nu begrijp ik het!
 982	Okee, ik moet geconcentreerd blijven!
 983	Ik heb dezelfde zin steeds opnieuw gelezen.
@@ -559,7 +559,7 @@
 1205	Je kunt dit Voorwerp niet in een Duel gebruiken.
 1217	Je kunt hier geen kampvuur maken.
 1228	Je kunt geen kampvuur onder water maken.
-1229	Your inventory is full.
+1229	Je inventaris is vol.
 1237	Gesloten. Je zou naar een Sleutel moeten zoeken.
 1248	Dit Voorwerp kan niet geopenend worden met een Sleutel.
 1258	Dit is de juiste Sleutel.
@@ -569,9 +569,9 @@
 1299	Kijk wat er uit de doos komt!
 1308	[Gilde] Het gildelevel is te laag.
 1310	Als je de rode rook inhaleert die uit de doos komt, ben je sneller!
-5000	#%d cannot create item.
-5001	#%d item not exist by that vnum.
-5002	#%u item not exist by that vnum.
+5000	#%d kan geen voorwerp aanmaken.
+5001	#%d voorwerp bestaat niet onder dat vnum.
+5002	#%u voorwerp bestaat niet onder dat vnum.
 5003	%4d %5d %5d %8d %u
 5004	%d %d
 5005	%d %s %s
@@ -584,181 +584,181 @@
 5012	%s %s
 5013	%s %s (%d)
 5014	%s %s sec
-5015	%s %s(%ld%%) FAIL
-5016	%s %s(%ld%%) SUCCESS
+5015	%s %s(%ld%%) MISLUKT
+5016	%s %s(%ld%%) GESLAAGD
 5017	%s attack hack! time (delta, limit)=(%u, %u) hack_count %d
-5018	%s dodge! (%d%%)
-5019	%s for empire : %d
-5020	%s for guild : %d
-5021	%s for player : %d
-5022	%s is not in same map
-5023	%s needed.
-5024	%s not exist
-5025	%s rolled the dice and got %d. (%d-%d)
-5026	%s spawned in %dx%d
-5027	%s's %s change %d to %d
-5028	%s's %s set to [%d]
-5029	%s's %s set to [%lld]
-5030	%s(%d%%) -> %s FAIL
-5031	%s(%d%%) -> %s SUCCESS
-5032	%s: no such a player
-5033	%s: no such a player.
+5018	%s ontwijkt! (%d%%)
+5019	%s voor rijk: %d
+5020	%s voor gilde: %d
+5021	%s voor speler: %d
+5022	%s is niet op dezelfde map
+5023	%s nodig.
+5024	%s bestaat niet
+5025	%s gooide met de dobbelsteen en kreeg %d. (%d-%d)
+5026	%s verscheen in %dx%d
+5027	%s's %s veranderd van %d naar %d
+5028	%s's %s ingesteld op [%d]
+5029	%s's %s ingesteld op [%lld]
+5030	%s(%d%%) -> %s MISLUKT
+5031	%s(%d%%) -> %s GESLAAGD
+5032	%s: speler bestaat niet
+5033	%s: speler bestaat niet.
 5034	%s[%d] attacks at: %d %d
 5035	%s[%d] vs %s[%d] time %u sec.
-5036	+3 Arcanum cannot be improved with this item
-5037	-- Affect List of %s -------------------------------
+5036	+3 Arcanum kan niet verbeterd worden met dit voorwerp
+5037	-- Effectenlijst van %s -------------------------------
 5038	-> %s, DAM %d HP %d(%d%%) %s%s
-5039	5 minutes left until the monsters attack!!!
+5039	Nog 5 minuten tot de monsters aanvallen!!!
 5040	<- %s, DAM %d HP %d(%d%%) %s%s
-5041	<Guild> %d dragon power has been restored.
-5042	<Guild> New membership is currently restricted.
-5043	<Guild> Only the guild leader can use guild skills.
-5044	<Guild> The guild is already at the highest level.
-5045	<Guild> The guild is currently at war.
-5046	<Guild> The other party cannot receive invitation requests.
-5047	<Guild> Uses %d skill (%d, %d) to %u
-5048	<Guild> You cannot withdraw a guild member during a guild war.
+5041	<Gilde> %d drakenkracht is hersteld.
+5042	<Gilde> Nieuwe leden zijn momenteel beperkt.
+5043	<Gilde> Alleen de gildeleider kan gildevaardigheden gebruiken.
+5044	<Gilde> Het gilde heeft al het hoogste niveau.
+5045	<Gilde> Het gilde is momenteel in oorlog.
+5046	<Gilde> De andere partij kan geen uitnodigingen ontvangen.
+5047	<Gilde> Gebruikt vaardigheid %d (%d, %d) op %u
+5048	<Gilde> Je kunt geen gildelid verwijderen tijdens een gildeoorlog.
 5049	<IMMUNE_FAIL> (%s)
 5050	<IMMUNE_FAIL> (%s) NO_IMMUNE_FLAG
 5051	<IMMUNE_SUCCESS> (%s)
-5052	<Party> Attacker setup failed.
-5053	<Party> You can only invite parties within -%d to +%d levels.
-5054	<Party> You have left the party.
-5055	<Warehouse> This item cannot be moved to the warehouse.
+5052	<Groep> Instellen van aanvaller mislukt.
+5053	<Groep> Je kunt alleen groepen uitnodigen binnen -%d tot +%d niveaus.
+5054	<Groep> Je hebt de groep verlaten.
+5055	<Opslagplaats> Dit voorwerp kan niet naar de opslagplaats worden verplaatst.
 5056	<duration>  hour
 5057	<empire>    0 - 3 (0==all)
 5058	<type>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp
 5059	<value>     percent
-5060	===== OX QUIZ LIST =====
-5061	===== OX QUIZ LIST END =====
+5060	===== OX-QUIZLIJST =====
+5061	===== EINDE OX-QUIZLIJST =====
 5062	ARROW %s -> %s, DAM %d DIST %d GAP %d %% %d
 5063	ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%
 5064	ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d
-5065	Abilities cannot be increased while transformed.
-5066	Affect successfully removed.
-5067	After a while, we return to the village.
+5065	Vaardigheden kunnen niet verhoogd worden tijdens een transformatie.
+5066	Effect succesvol verwijderd.
+5067	Na een tijdje keren we terug naar het dorp.
 5068	Attack :name[%s] Vnum[%d] can't use skill by attack(warning)
 5069	Attack Speed Hack(%s), (delta, limit)=(%u, %u)
-5070	BODY : %s
+5070	LICHAAM : %s
 5071	BONUS:
-5072	Bonuschange of %s (Slot: %d) successfully finished.
-5073	Breaks off the engagement between player %d and player %d.
-5074	Building rotation feature is not yet available
-5075	COSTUME status:
-5076	Can only be used on weapons and armor.
-5077	Can't find map by index %d
-5078	Cannot equip items directly from switchbot.
-5079	Cannot find map (index %d)
-5080	Cannot find map command syntax: /goto <mapname> [empire]
-5081	Cannot find player(%s). %s is not in your game server.
-5082	Cannot find player(%s). Perhaps %s doesn't login or exist.
-5083	Cannot move active switchbot item.
-5084	Cannot move equipped items to switchbot.
-5085	Cannot remove item from switchbot. Inventory is full.
-5086	Cannot set stat under initial stat.
-5087	Charged for %d seconds.
-5088	Charging is not possible.
-5089	Chat block requested.
-5090	Cold Resistance %d%%
-5091	Construction costs are insufficient.
-5092	Construction is not possible due to lack of materials.
+5072	Bonuswijziging van %s (Slot: %d) succesvol voltooid.
+5073	Verbreekt de verloving tussen speler %d en speler %d.
+5074	Gebouwen draaien is nog niet beschikbaar
+5075	KOSTUUMSTATUS:
+5076	Kan alleen op wapens en harnassen worden gebruikt.
+5077	Kan map niet vinden met index %d
+5078	Je kunt voorwerpen niet rechtstreeks uitrusten vanuit de switchbot.
+5079	Kan map niet vinden (index %d)
+5080	Kan map niet vinden. Syntaxis: /goto <mapnaam> [rijk]
+5081	Kan speler(%s) niet vinden. %s is niet op jouw gameserver.
+5082	Kan speler(%s) niet vinden. Misschien is %s niet ingelogd of bestaat de speler niet.
+5083	Je kunt een actief switchbot-voorwerp niet verplaatsen.
+5084	Je kunt uitgeruste voorwerpen niet naar de switchbot verplaatsen.
+5085	Kan voorwerp niet uit de switchbot halen. Inventaris is vol.
+5086	Kan statistiek niet lager instellen dan de beginwaarde.
+5087	%d seconden opgeladen.
+5088	Opladen is niet mogelijk.
+5089	Chatblokkade aangevraagd.
+5090	Koudeweerstand %d%%
+5091	De bouwkosten zijn ontoereikend.
+5092	Bouwen is niet mogelijk door gebrek aan materialen.
 5093	DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%
-5094	DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%
-5095	Dalian has started successfully.
-5096	Dark Resistance %d%%
-5097	Defeated the noble lord and all his subordinates.
-5098	Delete failed. Quest flag does not exist.
-5099	Delete success.
-5100	Dragon Soulstone Chest is not activated.
-5101	Dropped items will disappear after %d minutes.
-5102	Due to lack of mental power, you cannot see other people's equipment.
-5103	Earth Resistance %d%%
-5104	Equipped items cannot be sold in personal stores.
-5105	Event Helper Delete
-5106	Event Helper Spawn
-5107	Evil energy gathers at the central altar.
-5108	Example) 10s, 10m, 1m 30s
-5109	FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%
+5094	DUIVEL:%3d%% INSECT:%3d%% VUUR:%3d%% IJS:%3d%% WOESTIJN:%3d%%
+5095	Dalian is succesvol gestart.
+5096	Duisterisweerstand %d%%
+5097	De edelman en al zijn ondergeschikten zijn verslagen.
+5098	Verwijderen mislukt. Questvlag bestaat niet.
+5099	Verwijderen gelukt.
+5100	De Drakenzielsteenkist is niet geactiveerd.
+5101	Gedropte voorwerpen verdwijnen na %d minuten.
+5102	Door gebrek aan mentale kracht kun je de uitrusting van anderen niet zien.
+5103	Aardeweerstand %d%%
+5104	Uitgeruste voorwerpen kunnen niet in privewinkels worden verkocht.
+5105	Evenementhulp verwijderen
+5106	Evenementhulp laten verschijnen
+5107	Kwade energie verzamelt zich bij het centrale altaar.
+5108	Voorbeeld) 10s, 10m, 1m 30s
+5109	VUUR:%3d%% ELEC:%3d%% MAGIE:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%
 5110	Find %d, count %d, require %d
-5111	Fire Damage %d
-5112	Forced shutdown of Dalian failed
-5113	Get closer and get off.
-5114	Get closer and get on it.
-5115	Guild Land(%d) Cleared
+5111	Vuurschade %d
+5112	Geforceerd afsluiten van Dalian mislukt
+5113	Ga dichterbij staan en stap af.
+5114	Ga dichterbij staan en stap op.
+5115	Gildeland(%d) gewist
 5116	GuildID: %d
 5117	GuildMasterPID: %d
-5118	HAIR : %s
+5118	HAAR : %s
 5119	HP %d/%d
-5120	HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%
-5121	Health %d/%d (%d%%)
-5122	Horse Information:
-5123	I am fighting for my life. Stay focused.
-5124	I can't wear it because I don't have the item.
-5125	I'm having trouble starting sparring.
-5126	ICE:%3d%% EARTH:%3d%% DARK:%3d%%
-5127	Invalid argument.
-5128	Invalid command %s
-5129	Invalid format of time. Please specify by adding h, m, or s.
-5130	Invalid item type for switchbot.
-5131	Invalid syntax
-5132	Invalid syntax: no command
-5133	Inventory is not activated.
+5120	MENS:%3d%% DIER:%3d%% ORK:%3d%% MILGYO:%3d%% ONDOOD:%3d%%
+5121	Gezondheid %d/%d (%d%%)
+5122	Paardinformatie:
+5123	Ik vecht voor mijn leven. Blijf geconcentreerd.
+5124	Ik kan het niet dragen omdat ik het voorwerp niet heb.
+5125	Ik heb moeite om het sparren te starten.
+5126	IJS:%3d%% AARDE:%3d%% DUISTER:%3d%%
+5127	Ongeldig argument.
+5128	Ongeldig commando %s
+5129	Ongeldig tijdformaat. Geef de tijd op met h, m of s.
+5130	Ongeldig voorwerptype voor switchbot.
+5131	Ongeldige syntaxis
+5132	Ongeldige syntaxis: geen commando
+5133	Inventaris is niet geactiveerd.
 5134	IsInWar: %d
-5135	It doesn't work. Check the skill formula
-5136	It is higher than the application level and cannot be used.
-5137	It is in a state where it cannot be disguised.
-5138	Items in use cannot be sold in personal stores.
-5139	Items that are being worn cannot be sold.
+5135	Het werkt niet. Controleer de vaardigheidsformule
+5136	Het is hoger dan het toepassingsniveau en kan niet worden gebruikt.
+5137	Je bevindt je in een toestand waarin je je niet kunt vermommen.
+5138	Voorwerpen in gebruik kunnen niet in privewinkels worden verkocht.
+5139	Voorwerpen die gedragen worden kunnen niet worden verkocht.
 5140	LEV %d
 5141	LUA_ERROR: quest %s.%s %s
-5142	Level  %d
+5142	Niveau  %d
 5143	MALL:
-5144	Manufacturing failed.
+5144	Vervaardigen mislukt.
 5145	MapIndex: %d MobCount %d
 5146	MapInfo
-5147	Monsters are advancing towards %s' castle.
-5148	Monsters have started attacking the castle.
-5149	New bonus added successfully.
-5150	No one currently blocked.
-5151	No such a skill by that name.
-5152	No such mob by that vnum
-5153	Not a place for fishing
-5154	Not affected by that type and point.
-5155	Not enough inventory space.
-5156	Not yet available.
-5157	OX-Question: 
-5158	One minute left until the monsters attack!!!
-5159	Opponent's critical hit chance reduced by %d%%
-5160	Opponent's piercing attack probability decreases by %d%%
-5161	Please defeat the Demon Lord within 30 minutes.
-5162	Poison Damage %d
+5147	Monsters trekken op naar het kasteel van %s.
+5148	Monsters zijn begonnen het kasteel aan te vallen.
+5149	Nieuwe bonus succesvol toegevoegd.
+5150	Momenteel is niemand geblokkeerd.
+5151	Geen vaardigheid met die naam.
+5152	Geen monster met dat vnum
+5153	Geen plek om te vissen
+5154	Niet beinvloed door dat type en die punten.
+5155	Niet genoeg inventarisruimte.
+5156	Nog niet beschikbaar.
+5157	OX-vraag:
+5158	Nog 1 minuut tot de monsters aanvallen!!!
+5159	Kritieke treffer-kans van de tegenstander verlaagd met %d%%
+5160	Doordringende aanvalskans van de tegenstander daalt met %d%%
+5161	Versla de Demonenheer binnen 30 minuten.
+5162	Gifschade %d
 5163	PossibleDistant %f nNowDist %f
 5164	QUEST_SYSERR %s
 5165	QUEST_SYSLOG %s
-5166	Quest flag set: %s %d
-5167	RESISTANCES:
-5168	Reloading Admin information.
-5169	Reloading crafting information.
-5170	Reloading notice string.
-5171	Reloading prototype tables,
-5172	Reloading quest.
-5173	Reloading state_user_count.
+5166	Questvlag ingesteld: %s %d
+5167	WEERSTANDEN:
+5168	Beheerdersinformatie wordt opnieuw geladen.
+5169	Vervaardigingsinformatie wordt opnieuw geladen.
+5170	Mededelingentekst wordt opnieuw geladen.
+5171	Prototypetabellen worden opnieuw geladen,
+5172	Quest wordt opnieuw geladen.
+5173	state_user_count wordt opnieuw geladen.
 5174	RequestSetEventFlag %s %d
 5175	Respaw around
 5176	Respaw everywhere
 5177	SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%
 5178	SP %d/%d
 5179	SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%
-5180	Safebox size set to %d
-5181	Save done.
-5182	Save failed.
-5183	Spawn failed.
-5184	Spiritstones cannot be improved with this item.
-5185	Stam   %d/%d (%d%%)
-5186	Subskill of [%s] was reset
-5187	Successful forced shutdown of Dalian
-5188	Switchbot stopped. Not enough money.
-5189	Switchbot stopped. Out of switchers.
+5180	Opslagruimte-grootte ingesteld op %d
+5181	Opslaan voltooid.
+5182	Opslaan mislukt.
+5183	Verschijnen mislukt.
+5184	Geeststenen kunnen niet verbeterd worden met dit voorwerp.
+5185	Uith.  %d/%d (%d%%)
+5186	Subvaardigheid van [%s] is gereset
+5187	Geforceerd afsluiten van Dalian gelukt
+5188	Switchbot gestopt. Niet genoeg geld.
+5189	Switchbot gestopt. Geen switchers meer.
 5190	Syntax: /affect_remove <player name>
 5191	Syntax: /affect_remove <type> <point>
 5192	Syntax: /saveati <map_index> <filename>
@@ -769,42 +769,42 @@
 5197	Syntax: setqf <flagname> <value> [<character name>]
 5198	Syntax: setskill <name> <lev>
 5199	Syntax: setskillother <target> <skillname> <lev>
-5200	TREE:%3d%% MONSTER:%3d%%
-5201	Target is in %d channel (my channel %d)
-5202	Test server timeout passed
-5203	The Dragon's Lair will collapse in %d seconds!
-5204	The buildings required for construction have not been built.
-5205	The construction task failed beyond the building cost information.
-5206	The leader of the monsters has appeared.
-5207	The monsters are showing signs of retreating.
-5208	The monsters began to retreat.
-5209	The noble lord has retreated.
-5210	The other person is unable to add you as a friend.
-5211	The sensor was activated, but no Arcanum was detected.
-5212	The subcommand of the command is incorrect.
-5213	The value was entered incorrectly.
-5214	There are few stat points left.
-5215	There are no spammers.
-5216	There are no stat points left.
-5217	There are types of buildings that cannot be built together.
-5218	There is no character(%s) by that name
-5219	There is no guild with that name or number.
-5220	There is no one by that name
-5221	There is no spirit stone to take out.
-5222	There is no such a skill.
-5223	There is no such character.
-5224	There is no such command
-5225	This building does not exist.
-5226	This guild is currently at war.
-5227	This is a location where buildings cannot be built.
-5228	This is an inappropriate guild name.
-5229	Time remaining until socket is removed from %s: %d
-5230	Total %d
-5231	Total [%d] %d / %d / %d (this server %d)
-5232	Transfer me?!?
-5233	Transfer requested.
-5234	Type Point Modif Duration Flag
-5235	Unknown error
+5200	BOOM:%3d%% MONSTER:%3d%%
+5201	Doel bevindt zich in kanaal %d (mijn kanaal %d)
+5202	Time-out van testserver verstreken
+5203	De Drakenhol stort in over %d seconden!
+5204	De gebouwen die nodig zijn voor de bouw zijn niet gebouwd.
+5205	De bouwopdracht is mislukt buiten de gebouwkosteninformatie om.
+5206	De leider van de monsters is verschenen.
+5207	De monsters vertonen tekenen van terugtrekking.
+5208	De monsters begonnen zich terug te trekken.
+5209	De edelman heeft zich teruggetrokken.
+5210	De andere persoon kan je niet als vriend toevoegen.
+5211	De sensor werd geactiveerd, maar er is geen Arcanum gedetecteerd.
+5212	Het subcommando van het commando is onjuist.
+5213	De waarde is onjuist ingevoerd.
+5214	Er zijn weinig statistiekpunten over.
+5215	Er zijn geen spammers.
+5216	Er zijn geen statistiekpunten meer over.
+5217	Er zijn soorten gebouwen die niet samen gebouwd kunnen worden.
+5218	Er is geen personage(%s) met die naam
+5219	Er is geen gilde met die naam of dat nummer.
+5220	Er is niemand met die naam
+5221	Er is geen geeststeen om eruit te halen.
+5222	Zo'n vaardigheid bestaat niet.
+5223	Zo'n personage bestaat niet.
+5224	Zo'n commando bestaat niet
+5225	Dit gebouw bestaat niet.
+5226	Dit gilde is momenteel in oorlog.
+5227	Dit is een locatie waar geen gebouwen gebouwd kunnen worden.
+5228	Dit is een ongepaste gildenaam.
+5229	Resterende tijd tot de sokkel van %s wordt verwijderd: %d
+5230	Totaal %d
+5231	Totaal [%d] %d / %d / %d (deze server %d)
+5232	Mij overdragen?!?
+5233	Overdracht aangevraagd.
+5234	Type Punt Modif Duur Vlag
+5235	Onbekende fout
 5236	Usage : /horse_set_stat <hp> <stamina>
 5237	Usage: %s <name>
 5238	Usage: block_chat <name> <time> (0 to off)
@@ -820,40 +820,40 @@
 5248	Usage: transfer <name>
 5249	Usage: vote_block_chat <name>
 5250	Usage: warp <character name> | <x meter> <y meter>
-5251	Use: grrandom <group one>
-5252	Use: item <item one>
-5253	Use: mc <one>
-5254	Use: mob <mob one>
-5255	WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%
-5256	We plan to attack the castle in 10 minutes.
-5257	Weekly Event End
-5258	Weekly Event Start
-5259	You can no longer increase the value of good and evil.
-5260	You can't ride there.
-5261	You can't throw away gold yet.
-5262	You cannot add more bonus.
-5263	You cannot change the bonuses.
-5264	You cannot move to another area within 1 minute after the transaction.
-5265	You cannot move to another location while the trading window or warehouse is open.
-5266	You cannot read books while transformed.
-5267	You cannot ride a horse while downed.
-5268	You cannot unequip the belt while items are inside the beld inventory.
-5269	You cannot wear robes while riding a horse.
-5270	You goto ( %d, %d )
-5271	You have destroyed %s.
-5272	You have gained %d exp.
-5273	You roll a die and roll %d. (%d-%d)
-5274	You warp to ( %d, %d )
-5275	Your Mining Points have increased! (%lld/%d)
-5276	Your chat has been blocked by a GM.
-5277	Your inventory is full and you cannot unload.
-5278	Your mining points have reached their maximum. (%lld)
-5279	[1106-??]No puedes unir esto.
+5251	Gebruik: grrandom <group one>
+5252	Gebruik: item <item one>
+5253	Gebruik: mc <one>
+5254	Gebruik: mob <mob one>
+5255	KRIJG:%3d%% NINJA:%3d%% SURA:%3d%% SJAM:%3d%%
+5256	We zijn van plan het kasteel over 10 minuten aan te vallen.
+5257	Wekelijks evenement beeindigd
+5258	Wekelijks evenement gestart
+5259	Je kunt de waarde van goed en kwaad niet meer verhogen.
+5260	Je kunt daar niet rijden.
+5261	Je kunt nog geen goud weggooien.
+5262	Je kunt geen extra bonus meer toevoegen.
+5263	Je kunt de bonussen niet veranderen.
+5264	Je kunt binnen 1 minuut na de transactie niet naar een ander gebied gaan.
+5265	Je kunt niet naar een andere locatie gaan terwijl het handelsvenster of de opslagplaats open is.
+5266	Je kunt geen boeken lezen tijdens een transformatie.
+5267	Je kunt niet paardrijden terwijl je neergeslagen bent.
+5268	Je kunt de riem niet afdoen zolang er voorwerpen in de riem-inventaris zitten.
+5269	Je kunt geen gewaden dragen terwijl je paardrijdt.
+5270	Je gaat naar ( %d, %d )
+5271	Je hebt %s vernietigd.
+5272	Je hebt %d exp gekregen.
+5273	Je gooit met een dobbelsteen en gooit %d. (%d-%d)
+5274	Je warpt naar ( %d, %d )
+5275	Je mijnpunten zijn gestegen! (%lld/%d)
+5276	Je chat is geblokkeerd door een GM.
+5277	Je inventaris is vol en je kunt niet uitladen.
+5278	Je mijnpunten hebben hun maximum bereikt. (%lld)
+5279	[1106-??]Je kunt dit niet samenvoegen.
 5280	[Only Test] Success_Prob %d, RefineLevel %d
-5281	[SYSTEM ERROR]You cannot upgrade dragon soul without refine window.
-5282	[SYSTEM ERROR]You cannot use dragon soul refine window.
-5283	[TEST_SERVER] Failed to learn skill
-5284	[TEST_SERVER] Success to learn skill
+5281	[SYSTEM ERROR]Je kunt de drakenziel niet verbeteren zonder verbeteringsvenster.
+5282	[SYSTEM ERROR]Je kunt het verbeteringsvenster van de drakenziel niet gebruiken.
+5283	[TEST_SERVER] Vaardigheid leren mislukt
+5284	[TEST_SERVER] Vaardigheid leren gelukt
 5285	[TestOnly]Pulse %d LoadTime %d PASS %d
 5286	[TestOnly][Safebox]Pulse %d LoadTime %d PASS %d
 5287	cannot disconnect myself

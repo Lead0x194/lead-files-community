@@ -340,7 +340,7 @@
 798	Du kan forbedre din fiskestang ved fiskeren.
 799	Fisken har spist din agn.
 800	Du har fanget en fisk! (%s)
-801	The length of the captured fish is %.2fcm.
+801	Længden på den fangede fisk er %.2f cm.
 803	OX de resterende eventdeltagere bliver noteret.
 805	%s: %d
 806	Du har fanget %d %d.
@@ -559,7 +559,7 @@
 1205	Du kan ikke bruge denne genstand i en duel.
 1217	Du kan ikke lave et lejrbål her.
 1228	Du kan ikke lave et lejrbål i vandet.
-1229	Your inventory is full.
+1229	Dit inventar er fuldt.
 1237	Låst. Du burde søge efter nøglen.
 1248	Denne genstand kan ikke åbnes med en nøgle.
 1258	Det er ikke den rigtig nøgle.
@@ -569,9 +569,9 @@
 1299	Se hvad der kom ud af kisten!
 1308	[Orden] Ordenslevel er for lavt.
 1310	Hvis du indånder rød røg fra kisten, forøges din hastighed!
-5000	#%d cannot create item.
-5001	#%d item not exist by that vnum.
-5002	#%u item not exist by that vnum.
+5000	#%d kan ikke oprette genstand.
+5001	#%d genstand findes ikke med det vnum.
+5002	#%u genstand findes ikke med det vnum.
 5003	%4d %5d %5d %8d %u
 5004	%d %d
 5005	%d %s %s
@@ -583,182 +583,182 @@
 5011	%s %d prob 800
 5012	%s %s
 5013	%s %s (%d)
-5014	%s %s sec
-5015	%s %s(%ld%%) FAIL
-5016	%s %s(%ld%%) SUCCESS
+5014	%s %s sek
+5015	%s %s(%ld%%) MISLYKKEDES
+5016	%s %s(%ld%%) LYKKEDES
 5017	%s attack hack! time (delta, limit)=(%u, %u) hack_count %d
-5018	%s dodge! (%d%%)
-5019	%s for empire : %d
+5018	%s undviger! (%d%%)
+5019	%s for rige : %d
 5020	%s for guild : %d
-5021	%s for player : %d
-5022	%s is not in same map
-5023	%s needed.
-5024	%s not exist
-5025	%s rolled the dice and got %d. (%d-%d)
-5026	%s spawned in %dx%d
-5027	%s's %s change %d to %d
-5028	%s's %s set to [%d]
-5029	%s's %s set to [%lld]
-5030	%s(%d%%) -> %s FAIL
-5031	%s(%d%%) -> %s SUCCESS
-5032	%s: no such a player
-5033	%s: no such a player.
-5034	%s[%d] attacks at: %d %d
-5035	%s[%d] vs %s[%d] time %u sec.
-5036	+3 Arcanum cannot be improved with this item
-5037	-- Affect List of %s -------------------------------
+5021	%s for spiller : %d
+5022	%s er ikke på samme kort
+5023	%s påkrævet.
+5024	%s findes ikke
+5025	%s kastede terningen og slog %d. (%d-%d)
+5026	%s dukkede op i %dx%d
+5027	%s's %s ændret fra %d til %d
+5028	%s's %s sat til [%d]
+5029	%s's %s sat til [%lld]
+5030	%s(%d%%) -> %s MISLYKKEDES
+5031	%s(%d%%) -> %s LYKKEDES
+5032	%s: ingen sådan spiller
+5033	%s: ingen sådan spiller.
+5034	%s[%d] angriber ved: %d %d
+5035	%s[%d] mod %s[%d] tid %u sek.
+5036	+3 Arcanum kan ikke forbedres med denne genstand
+5037	-- Effektliste for %s -------------------------------
 5038	-> %s, DAM %d HP %d(%d%%) %s%s
-5039	5 minutes left until the monsters attack!!!
+5039	Der er 5 minutter, til monstrene angriber!!!
 5040	<- %s, DAM %d HP %d(%d%%) %s%s
-5041	<Guild> %d dragon power has been restored.
-5042	<Guild> New membership is currently restricted.
-5043	<Guild> Only the guild leader can use guild skills.
-5044	<Guild> The guild is already at the highest level.
-5045	<Guild> The guild is currently at war.
-5046	<Guild> The other party cannot receive invitation requests.
-5047	<Guild> Uses %d skill (%d, %d) to %u
-5048	<Guild> You cannot withdraw a guild member during a guild war.
+5041	<Guild> %d drageenergi er blevet genoprettet.
+5042	<Guild> Nye medlemmer er i øjeblikket begrænset.
+5043	<Guild> Kun guildlederen kan bruge guildfærdigheder.
+5044	<Guild> Guilden er allerede på det højeste niveau.
+5045	<Guild> Guilden er i øjeblikket i krig.
+5046	<Guild> Den anden part kan ikke modtage invitationer.
+5047	<Guild> Bruger %d færdighed (%d, %d) på %u
+5048	<Guild> Du kan ikke udmelde et guildmedlem under en guildkrig.
 5049	<IMMUNE_FAIL> (%s)
 5050	<IMMUNE_FAIL> (%s) NO_IMMUNE_FLAG
 5051	<IMMUNE_SUCCESS> (%s)
-5052	<Party> Attacker setup failed.
-5053	<Party> You can only invite parties within -%d to +%d levels.
-5054	<Party> You have left the party.
-5055	<Warehouse> This item cannot be moved to the warehouse.
-5056	<duration>  hour
-5057	<empire>    0 - 3 (0==all)
+5052	<Gruppe> Opsætning af angriber mislykkedes.
+5053	<Gruppe> Du kan kun invitere grupper inden for -%d til +%d niveauer.
+5054	<Gruppe> Du har forladt gruppen.
+5055	<Lager> Denne genstand kan ikke flyttes til lageret.
+5056	<duration>  time
+5057	<empire>    0 - 3 (0==alle)
 5058	<type>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp
-5059	<value>     percent
-5060	===== OX QUIZ LIST =====
-5061	===== OX QUIZ LIST END =====
+5059	<value>     procent
+5060	===== OX QUIZ LISTE =====
+5061	===== OX QUIZ LISTE SLUT =====
 5062	ARROW %s -> %s, DAM %d DIST %d GAP %d %% %d
 5063	ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%
 5064	ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d
-5065	Abilities cannot be increased while transformed.
-5066	Affect successfully removed.
-5067	After a while, we return to the village.
+5065	Evner kan ikke forøges, mens du er forvandlet.
+5066	Effekten blev fjernet.
+5067	Om lidt vender vi tilbage til landsbyen.
 5068	Attack :name[%s] Vnum[%d] can't use skill by attack(warning)
 5069	Attack Speed Hack(%s), (delta, limit)=(%u, %u)
-5070	BODY : %s
+5070	KROP : %s
 5071	BONUS:
-5072	Bonuschange of %s (Slot: %d) successfully finished.
-5073	Breaks off the engagement between player %d and player %d.
-5074	Building rotation feature is not yet available
-5075	COSTUME status:
-5076	Can only be used on weapons and armor.
-5077	Can't find map by index %d
-5078	Cannot equip items directly from switchbot.
-5079	Cannot find map (index %d)
-5080	Cannot find map command syntax: /goto <mapname> [empire]
-5081	Cannot find player(%s). %s is not in your game server.
-5082	Cannot find player(%s). Perhaps %s doesn't login or exist.
-5083	Cannot move active switchbot item.
-5084	Cannot move equipped items to switchbot.
-5085	Cannot remove item from switchbot. Inventory is full.
-5086	Cannot set stat under initial stat.
-5087	Charged for %d seconds.
-5088	Charging is not possible.
-5089	Chat block requested.
-5090	Cold Resistance %d%%
-5091	Construction costs are insufficient.
-5092	Construction is not possible due to lack of materials.
+5072	Bonusændring af %s (Plads: %d) er gennemført.
+5073	Bryder forlovelsen mellem spiller %d og spiller %d.
+5074	Bygningsrotation er endnu ikke tilgængelig
+5075	KOSTUME-status:
+5076	Kan kun bruges på våben og rustninger.
+5077	Kan ikke finde kort med indeks %d
+5078	Du kan ikke udstyre genstande direkte fra switchbot.
+5079	Kan ikke finde kort (indeks %d)
+5080	Kan ikke finde kort. Kommandosyntaks: /goto <mapname> [empire]
+5081	Kan ikke finde spilleren (%s). %s er ikke på din spilserver.
+5082	Kan ikke finde spilleren (%s). Måske er %s ikke logget ind eller findes ikke.
+5083	Du kan ikke flytte en aktiv switchbot-genstand.
+5084	Du kan ikke flytte udstyrede genstande til switchbot.
+5085	Genstanden kan ikke fjernes fra switchbot. Inventaret er fuldt.
+5086	Du kan ikke sætte stat under startstatten.
+5087	Opladet i %d sekunder.
+5088	Opladning er ikke mulig.
+5089	Chatblokering anmodet.
+5090	Kolderesistens %d%%
+5091	Byggeomkostningerne er utilstrækkelige.
+5092	Bygning er ikke mulig på grund af mangel på materialer.
 5093	DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%
 5094	DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%
-5095	Dalian has started successfully.
-5096	Dark Resistance %d%%
-5097	Defeated the noble lord and all his subordinates.
-5098	Delete failed. Quest flag does not exist.
-5099	Delete success.
-5100	Dragon Soulstone Chest is not activated.
-5101	Dropped items will disappear after %d minutes.
-5102	Due to lack of mental power, you cannot see other people's equipment.
-5103	Earth Resistance %d%%
-5104	Equipped items cannot be sold in personal stores.
+5095	Dalian er startet.
+5096	Mørkeresistens %d%%
+5097	Den ædle herre og alle hans undersåtter er besejret.
+5098	Sletning mislykkedes. Quest-flaget findes ikke.
+5099	Sletning lykkedes.
+5100	Dragesjælesten-kisten er ikke aktiveret.
+5101	Tabte genstande forsvinder efter %d minutter.
+5102	På grund af manglende mental styrke kan du ikke se andres udstyr.
+5103	Jordresistens %d%%
+5104	Udstyrede genstande kan ikke sælges i personlige butikker.
 5105	Event Helper Delete
 5106	Event Helper Spawn
-5107	Evil energy gathers at the central altar.
-5108	Example) 10s, 10m, 1m 30s
+5107	Ond energi samles ved det centrale alter.
+5108	Eksempel) 10s, 10m, 1m 30s
 5109	FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%
 5110	Find %d, count %d, require %d
-5111	Fire Damage %d
-5112	Forced shutdown of Dalian failed
-5113	Get closer and get off.
-5114	Get closer and get on it.
-5115	Guild Land(%d) Cleared
+5111	Ildskade %d
+5112	Tvungen nedlukning af Dalian mislykkedes
+5113	Kom tættere på og stig af.
+5114	Kom tættere på og stig på.
+5115	Guildland(%d) ryddet
 5116	GuildID: %d
 5117	GuildMasterPID: %d
-5118	HAIR : %s
+5118	HÅR : %s
 5119	HP %d/%d
 5120	HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%
-5121	Health %d/%d (%d%%)
-5122	Horse Information:
-5123	I am fighting for my life. Stay focused.
-5124	I can't wear it because I don't have the item.
-5125	I'm having trouble starting sparring.
+5121	Helbred %d/%d (%d%%)
+5122	Hesteinformation:
+5123	Jeg kæmper for mit liv. Hold fokus.
+5124	Jeg kan ikke bære den, fordi jeg ikke har genstanden.
+5125	Jeg har problemer med at starte duellen.
 5126	ICE:%3d%% EARTH:%3d%% DARK:%3d%%
-5127	Invalid argument.
-5128	Invalid command %s
-5129	Invalid format of time. Please specify by adding h, m, or s.
-5130	Invalid item type for switchbot.
-5131	Invalid syntax
-5132	Invalid syntax: no command
-5133	Inventory is not activated.
+5127	Ugyldigt argument.
+5128	Ugyldig kommando %s
+5129	Ugyldigt tidsformat. Angiv det ved at tilføje h, m eller s.
+5130	Ugyldig genstandstype til switchbot.
+5131	Ugyldig syntaks
+5132	Ugyldig syntaks: ingen kommando
+5133	Inventaret er ikke aktiveret.
 5134	IsInWar: %d
-5135	It doesn't work. Check the skill formula
-5136	It is higher than the application level and cannot be used.
-5137	It is in a state where it cannot be disguised.
-5138	Items in use cannot be sold in personal stores.
-5139	Items that are being worn cannot be sold.
-5140	LEV %d
+5135	Det virker ikke. Tjek færdighedsformlen
+5136	Den er højere end brugsniveauet og kan ikke bruges.
+5137	Du er i en tilstand, hvor du ikke kan forklæde dig.
+5138	Genstande i brug kan ikke sælges i personlige butikker.
+5139	Genstande, der bæres, kan ikke sælges.
+5140	NIV %d
 5141	LUA_ERROR: quest %s.%s %s
-5142	Level  %d
+5142	Niveau  %d
 5143	MALL:
-5144	Manufacturing failed.
+5144	Fremstilling mislykkedes.
 5145	MapIndex: %d MobCount %d
 5146	MapInfo
-5147	Monsters are advancing towards %s' castle.
-5148	Monsters have started attacking the castle.
-5149	New bonus added successfully.
-5150	No one currently blocked.
-5151	No such a skill by that name.
-5152	No such mob by that vnum
-5153	Not a place for fishing
-5154	Not affected by that type and point.
-5155	Not enough inventory space.
-5156	Not yet available.
-5157	OX-Question: 
-5158	One minute left until the monsters attack!!!
-5159	Opponent's critical hit chance reduced by %d%%
-5160	Opponent's piercing attack probability decreases by %d%%
-5161	Please defeat the Demon Lord within 30 minutes.
-5162	Poison Damage %d
+5147	Monstrene rykker frem mod %s' slot.
+5148	Monstrene er begyndt at angribe slottet.
+5149	Ny bonus tilføjet.
+5150	Ingen er blokeret i øjeblikket.
+5151	Ingen færdighed med det navn.
+5152	Ingen mob med det vnum
+5153	Ikke et sted til fiskeri
+5154	Ikke påvirket af den type og det punkt.
+5155	Ikke nok plads i inventaret.
+5156	Endnu ikke tilgængelig.
+5157	OX-spørgsmål:
+5158	Der er et minut, til monstrene angriber!!!
+5159	Modstanderens chance for kritisk slag reduceret med %d%%
+5160	Modstanderens sandsynlighed for gennemtrængende angreb falder med %d%%
+5161	Besejr dæmonkongen inden for 30 minutter.
+5162	Giftskade %d
 5163	PossibleDistant %f nNowDist %f
 5164	QUEST_SYSERR %s
 5165	QUEST_SYSLOG %s
-5166	Quest flag set: %s %d
-5167	RESISTANCES:
-5168	Reloading Admin information.
-5169	Reloading crafting information.
-5170	Reloading notice string.
-5171	Reloading prototype tables,
-5172	Reloading quest.
-5173	Reloading state_user_count.
+5166	Quest-flag sat: %s %d
+5167	RESISTENSER:
+5168	Genindlæser admin-information.
+5169	Genindlæser fremstillingsinformation.
+5170	Genindlæser meddelelsesstreng.
+5171	Genindlæser prototypetabeller,
+5172	Genindlæser quest.
+5173	Genindlæser state_user_count.
 5174	RequestSetEventFlag %s %d
 5175	Respaw around
 5176	Respaw everywhere
 5177	SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%
 5178	SP %d/%d
 5179	SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%
-5180	Safebox size set to %d
-5181	Save done.
-5182	Save failed.
-5183	Spawn failed.
-5184	Spiritstones cannot be improved with this item.
-5185	Stam   %d/%d (%d%%)
-5186	Subskill of [%s] was reset
-5187	Successful forced shutdown of Dalian
-5188	Switchbot stopped. Not enough money.
-5189	Switchbot stopped. Out of switchers.
+5180	Pengeskabets størrelse sat til %d
+5181	Gemt.
+5182	Gemning mislykkedes.
+5183	Spawn mislykkedes.
+5184	Åndesten kan ikke forbedres med denne genstand.
+5185	Udh.   %d/%d (%d%%)
+5186	Underfærdighed for [%s] blev nulstillet
+5187	Tvungen nedlukning af Dalian lykkedes
+5188	Switchbot stoppet. Ikke nok penge.
+5189	Switchbot stoppet. Ikke flere switchers.
 5190	Syntax: /affect_remove <player name>
 5191	Syntax: /affect_remove <type> <point>
 5192	Syntax: /saveati <map_index> <filename>
@@ -770,41 +770,41 @@
 5198	Syntax: setskill <name> <lev>
 5199	Syntax: setskillother <target> <skillname> <lev>
 5200	TREE:%3d%% MONSTER:%3d%%
-5201	Target is in %d channel (my channel %d)
-5202	Test server timeout passed
-5203	The Dragon's Lair will collapse in %d seconds!
-5204	The buildings required for construction have not been built.
-5205	The construction task failed beyond the building cost information.
-5206	The leader of the monsters has appeared.
-5207	The monsters are showing signs of retreating.
-5208	The monsters began to retreat.
-5209	The noble lord has retreated.
-5210	The other person is unable to add you as a friend.
-5211	The sensor was activated, but no Arcanum was detected.
-5212	The subcommand of the command is incorrect.
-5213	The value was entered incorrectly.
-5214	There are few stat points left.
-5215	There are no spammers.
-5216	There are no stat points left.
-5217	There are types of buildings that cannot be built together.
-5218	There is no character(%s) by that name
-5219	There is no guild with that name or number.
-5220	There is no one by that name
-5221	There is no spirit stone to take out.
-5222	There is no such a skill.
-5223	There is no such character.
-5224	There is no such command
-5225	This building does not exist.
-5226	This guild is currently at war.
-5227	This is a location where buildings cannot be built.
-5228	This is an inappropriate guild name.
-5229	Time remaining until socket is removed from %s: %d
-5230	Total %d
-5231	Total [%d] %d / %d / %d (this server %d)
-5232	Transfer me?!?
-5233	Transfer requested.
-5234	Type Point Modif Duration Flag
-5235	Unknown error
+5201	Målet er på kanal %d (min kanal %d)
+5202	Testserverens timeout er overskredet
+5203	Dragehulen kollapser om %d sekunder!
+5204	De bygninger, der kræves til byggeriet, er ikke bygget.
+5205	Byggeopgaven mislykkedes ud over bygningsomkostningerne.
+5206	Monstrenes leder er dukket op.
+5207	Monstrene viser tegn på at trække sig tilbage.
+5208	Monstrene begyndte at trække sig tilbage.
+5209	Den ædle herre har trukket sig tilbage.
+5210	Den anden person kan ikke tilføje dig som ven.
+5211	Sensoren blev aktiveret, men ingen Arcanum blev opdaget.
+5212	Kommandoens underkommando er forkert.
+5213	Værdien blev indtastet forkert.
+5214	Der er få statpoint tilbage.
+5215	Der er ingen spammere.
+5216	Der er ingen statpoint tilbage.
+5217	Der er bygningstyper, som ikke kan bygges sammen.
+5218	Der er ingen karakter(%s) med det navn
+5219	Der er ingen guild med det navn eller nummer.
+5220	Der er ingen med det navn
+5221	Der er ingen åndesten at tage ud.
+5222	Der er ingen sådan færdighed.
+5223	Der er ingen sådan karakter.
+5224	Der er ingen sådan kommando
+5225	Denne bygning findes ikke.
+5226	Denne guild er i øjeblikket i krig.
+5227	Dette er et sted, hvor der ikke kan bygges bygninger.
+5228	Dette er et upassende guildnavn.
+5229	Tid tilbage, før soklen fjernes fra %s: %d
+5230	I alt %d
+5231	I alt [%d] %d / %d / %d (denne server %d)
+5232	Overfør mig?!?
+5233	Overførsel anmodet.
+5234	Type Point Modif Varighed Flag
+5235	Ukendt fejl
 5236	Usage : /horse_set_stat <hp> <stamina>
 5237	Usage: %s <name>
 5238	Usage: block_chat <name> <time> (0 to off)
@@ -820,43 +820,43 @@
 5248	Usage: transfer <name>
 5249	Usage: vote_block_chat <name>
 5250	Usage: warp <character name> | <x meter> <y meter>
-5251	Use: grrandom <group one>
-5252	Use: item <item one>
-5253	Use: mc <one>
-5254	Use: mob <mob one>
+5251	Brug: grrandom <group one>
+5252	Brug: item <item one>
+5253	Brug: mc <one>
+5254	Brug: mob <mob one>
 5255	WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%
-5256	We plan to attack the castle in 10 minutes.
-5257	Weekly Event End
-5258	Weekly Event Start
-5259	You can no longer increase the value of good and evil.
-5260	You can't ride there.
-5261	You can't throw away gold yet.
-5262	You cannot add more bonus.
-5263	You cannot change the bonuses.
-5264	You cannot move to another area within 1 minute after the transaction.
-5265	You cannot move to another location while the trading window or warehouse is open.
-5266	You cannot read books while transformed.
-5267	You cannot ride a horse while downed.
-5268	You cannot unequip the belt while items are inside the beld inventory.
-5269	You cannot wear robes while riding a horse.
-5270	You goto ( %d, %d )
-5271	You have destroyed %s.
-5272	You have gained %d exp.
-5273	You roll a die and roll %d. (%d-%d)
-5274	You warp to ( %d, %d )
-5275	Your Mining Points have increased! (%lld/%d)
-5276	Your chat has been blocked by a GM.
-5277	Your inventory is full and you cannot unload.
-5278	Your mining points have reached their maximum. (%lld)
-5279	[1106-??]No puedes unir esto.
+5256	Vi planlægger at angribe slottet om 10 minutter.
+5257	Ugentlig event slut
+5258	Ugentlig event start
+5259	Du kan ikke længere forøge værdien af godt og ondt.
+5260	Du kan ikke ride dér.
+5261	Du kan ikke smide Yang væk endnu.
+5262	Du kan ikke tilføje flere bonusser.
+5263	Du kan ikke ændre bonusserne.
+5264	Du kan ikke flytte til et andet område inden for 1 minut efter handlen.
+5265	Du kan ikke flytte til et andet sted, mens handelsvinduet eller lageret er åbent.
+5266	Du kan ikke læse bøger, mens du er forvandlet.
+5267	Du kan ikke ride på en hest, mens du er nedslået.
+5268	Du kan ikke tage bæltet af, mens der er genstande i bæltets inventar.
+5269	Du kan ikke bære kapper, mens du rider på en hest.
+5270	Du går til ( %d, %d )
+5271	Du har ødelagt %s.
+5272	Du har fået %d exp.
+5273	Du kaster en terning og slår %d. (%d-%d)
+5274	Du warper til ( %d, %d )
+5275	Dine minepoint er steget! (%lld/%d)
+5276	Din chat er blevet blokeret af en GM.
+5277	Dit inventar er fuldt, og du kan ikke aflæsse.
+5278	Dine minepoint har nået deres maksimum. (%lld)
+5279	[1106-??]Du kan ikke forene dette.
 5280	[Only Test] Success_Prob %d, RefineLevel %d
-5281	[SYSTEM ERROR]You cannot upgrade dragon soul without refine window.
-5282	[SYSTEM ERROR]You cannot use dragon soul refine window.
+5281	[SYSTEM ERROR]Du kan ikke opgradere dragesjælesten uden forbedringsvindue.
+5282	[SYSTEM ERROR]Du kan ikke bruge forbedringsvinduet til dragesjælesten.
 5283	[TEST_SERVER] Failed to learn skill
 5284	[TEST_SERVER] Success to learn skill
 5285	[TestOnly]Pulse %d LoadTime %d PASS %d
 5286	[TestOnly][Safebox]Pulse %d LoadTime %d PASS %d
-5287	cannot disconnect myself
+5287	Du kan ikke afbryde forbindelsen til dig selv
 5288	cell : %d, name : %s, id : %d
 5289	cooltime not finished %s %d
 5290	cube add <inveltory_index>
@@ -868,14 +868,14 @@
 5296	cube[%d]: cube[%d]: %s deleted
 5297	cube[%d]: inventory[%d]: %s
 5298	cube[%d]: inventory[%d]: %s added
-5299	error occurred on [%s:%d]
+5299	Fejl opstod ved [%s:%d]
 5300	ex) /dc <player name>
 5301	ex) /kill <player name>
-5302	exp bonus %d%%
+5302	exp-bonus %d%%
 5303	gold_mul %d rate %d
 5304	guild.wall.build unknown_direction[%s]
-5305	horse level set (%s: %d)
-5306	horse level set to %d.
+5305	hesteniveau sat (%s: %d)
+5306	hesteniveau sat til %d.
 5307	inventory [%d] = %s
 5308	lovepoint bykill %.3g total %d
 5309	pc_warp %d %d %d

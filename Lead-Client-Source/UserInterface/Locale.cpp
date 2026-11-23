@@ -336,17 +336,62 @@ std::string LocaleService_GetQuestButtonName(int iIndex)
 
 static std::string NormalizeName(const std::string& c_rstName)
 {
-	std::string stResult(c_rstName);
-	for (size_t i = 0; i < stResult.length(); ++i)
+	std::wstring wstName(c_rstName.length() + 1, L'\0');
+	const int c_iLength = MultiByteToWideChar(CP_UTF8, 0, c_rstName.c_str(), static_cast<int>(c_rstName.length()), &wstName[0], static_cast<int>(wstName.length()));
+	wstName.resize(c_iLength > 0 ? c_iLength : 0);
+	if (!wstName.empty())
+		CharLowerBuffW(&wstName[0], static_cast<DWORD>(wstName.length()));
+
+	std::wstring wstResult;
+	for (size_t i = 0; i < wstName.length(); ++i)
 	{
-		const unsigned char c = static_cast<unsigned char>(stResult[i]);
-		if ('_' == c)
-			stResult[i] = ' ';
-		else if (c < 0x80)
-			stResult[i] = static_cast<char>(tolower(c));
+		wchar_t c = wstName[i];
+		if (L'"' == c)
+			continue;
+
+		if (L'_' == c)
+			c = L' ';
+
+		if (L' ' == c && (wstResult.empty() || L' ' == wstResult[wstResult.length() - 1]))
+			continue;
+
+		if (L'+' == c && !wstResult.empty() && L' ' == wstResult[wstResult.length() - 1])
+			wstResult.erase(wstResult.length() - 1);
+
+		wstResult += c;
 	}
 
+	while (!wstResult.empty() && L' ' == wstResult[wstResult.length() - 1])
+		wstResult.erase(wstResult.length() - 1);
+
+	std::string stResult(wstResult.length() * 4 + 1, '\0');
+	const int c_iBytes = WideCharToMultiByte(CP_UTF8, 0, wstResult.c_str(), static_cast<int>(wstResult.length()), &stResult[0], static_cast<int>(stResult.length()), NULL, NULL);
+	stResult.resize(c_iBytes > 0 ? c_iBytes : 0);
 	return stResult;
+}
+
+static DWORD FindVnumByName(bool bItem, const std::string& c_rstName)
+{
+	if (bItem)
+	{
+		const CItemManager::TItemMap& c_rkItemMap = CItemManager::Instance().GetItemMap();
+		for (CItemManager::TItemMap::const_iterator itor = c_rkItemMap.begin(); itor != c_rkItemMap.end(); ++itor)
+		{
+			if (NormalizeName(itor->second->GetName()) == c_rstName)
+				return itor->first;
+		}
+
+		return 0;
+	}
+
+	const std::map<DWORD, std::string>& c_rkNameMap = CPythonNonPlayer::Instance().GetNameMap();
+	for (std::map<DWORD, std::string>::const_iterator itor = c_rkNameMap.begin(); itor != c_rkNameMap.end(); ++itor)
+	{
+		if (NormalizeName(itor->second) == c_rstName)
+			return itor->first;
+	}
+
+	return 0;
 }
 
 void LocaleService_ResolveNameCommand(std::string& rstCommand)
@@ -361,44 +406,39 @@ void LocaleService_ResolveNameCommand(std::string& rstCommand)
 	if (!c_bItem && !c_bMonster)
 		return;
 
-	size_t uNameEnd = rstCommand.find(' ', c_uNameStart + 1);
-	if (std::string::npos == uNameEnd)
-		uNameEnd = rstCommand.length();
-
-	const std::string c_stName = NormalizeName(rstCommand.substr(c_uNameStart + 1, uNameEnd - c_uNameStart - 1));
-	if (c_stName.empty() || isdigit(static_cast<unsigned char>(c_stName[0])))
+	const std::string c_stRest = rstCommand.substr(c_uNameStart + 1);
+	if (c_stRest.empty() || isdigit(static_cast<unsigned char>(c_stRest[0])))
 		return;
 
-	DWORD dwVnum = 0;
-	if (c_bItem)
+	std::vector<size_t> kEndVector;
+	if ('"' == c_stRest[0])
 	{
-		const CItemManager::TItemMap& c_rkItemMap = CItemManager::Instance().GetItemMap();
-		for (CItemManager::TItemMap::const_iterator itor = c_rkItemMap.begin(); itor != c_rkItemMap.end(); ++itor)
-		{
-			if (NormalizeName(itor->second->GetName()) == c_stName)
-			{
-				dwVnum = itor->first;
-				break;
-			}
-		}
+		const size_t c_uQuote = c_stRest.find('"', 1);
+		kEndVector.push_back(std::string::npos == c_uQuote ? c_stRest.length() : c_uQuote + 1);
 	}
 	else
 	{
-		const std::map<DWORD, std::string>& c_rkNameMap = CPythonNonPlayer::Instance().GetNameMap();
-		for (std::map<DWORD, std::string>::const_iterator itor = c_rkNameMap.begin(); itor != c_rkNameMap.end(); ++itor)
+		kEndVector.push_back(c_stRest.length());
+		for (size_t i = c_stRest.length(); i > 0; --i)
 		{
-			if (NormalizeName(itor->second) == c_stName)
-			{
-				dwVnum = itor->first;
-				break;
-			}
+			if (' ' == c_stRest[i - 1])
+				kEndVector.push_back(i - 1);
 		}
 	}
 
-	if (0 == dwVnum)
-		return;
+	for (size_t i = 0; i < kEndVector.size(); ++i)
+	{
+		const std::string c_stName = NormalizeName(c_stRest.substr(0, kEndVector[i]));
+		if (c_stName.empty())
+			continue;
 
-	rstCommand.replace(c_uNameStart + 1, uNameEnd - c_uNameStart - 1, std::to_string(dwVnum));
+		const DWORD c_dwVnum = FindVnumByName(c_bItem, c_stName);
+		if (0 == c_dwVnum)
+			continue;
+
+		rstCommand = c_stCommand + " " + std::to_string(c_dwVnum) + c_stRest.substr(kEndVector[i]);
+		return;
+	}
 }
 
 void LocaleService_LocalizeItemLinks(std::string& rstText)

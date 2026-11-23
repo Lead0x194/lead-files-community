@@ -139,7 +139,7 @@
 485	Действие отменено. Вы вступили в бой.
 486	Кто-то уже воспользовался вашей учётной записью. Вы будете отсоединенны.
 487	Таинственный свет исходит от дерева.
-489	You can participate in the guild battle in viewer mode.
+489	Вы можете участвовать в битве гильдий в режиме наблюдателя.
 490	Вы можете принять участие в сражении Гильдий в режиме Наблюдателя.
 491	길드전에 참가한 상대방 길드원이 아무도 없습니다.
 492	%s님과의 대결 시작!
@@ -250,8 +250,8 @@
 634	공격력 +%d%%
 635	방어력 +%d%%
 637	경험치 %d%%
-638	Chance to find an Item %. 1f
-639	Chance to find Yang %. 1f
+638	Шанс найти предмет %. 1f
+639	Шанс найти Yang %. 1f
 640	최대 생명력 +%d%%
 642	스킬 데미지 %d%%
 643	평타 데미지 %d%%
@@ -559,7 +559,7 @@
 1205	대련 중에는 이용할 수 없는 물품입니다.
 1217	모닥불을 피울 수 없는 지점입니다.
 1228	물 속에 모닥불을 피울 수 없습니다.
-1229	Your inventory is full.
+1229	Ваш инвентарь полон.
 1237	열쇠로 잠겨 있어서 열리지 않는것 같다. 열쇠를 구해보자.
 1248	열쇠로 여는 물건이 아닌것 같다.
 1258	열쇠는 맞으나 아이템 주는 부분 구현이 안되었습니다.
@@ -569,9 +569,9 @@
 1299	상자에서 몬스터가 나타났습니다!
 1308	<길드> 레더 점수가 모자라서 길드전을 할 수 없습니다.
 1310	상자에서 나온 빨간 연기를 들이마시자 움직이는 속도가 느려졌습니다!
-5000	#%d cannot create item.
-5001	#%d item not exist by that vnum.
-5002	#%u item not exist by that vnum.
+5000	#%d не удаётся создать предмет.
+5001	Предмета с таким vnum не существует: #%d
+5002	Предмета с таким vnum не существует: #%u
 5003	%4d %5d %5d %8d %u
 5004	%d %d
 5005	%d %s %s
@@ -583,182 +583,182 @@
 5011	%s %d prob 800
 5012	%s %s
 5013	%s %s (%d)
-5014	%s %s sec
-5015	%s %s(%ld%%) FAIL
-5016	%s %s(%ld%%) SUCCESS
+5014	%s %s сек.
+5015	%s %s(%ld%%) НЕУДАЧА
+5016	%s %s(%ld%%) УСПЕХ
 5017	%s attack hack! time (delta, limit)=(%u, %u) hack_count %d
-5018	%s dodge! (%d%%)
-5019	%s for empire : %d
-5020	%s for guild : %d
-5021	%s for player : %d
-5022	%s is not in same map
-5023	%s needed.
-5024	%s not exist
-5025	%s rolled the dice and got %d. (%d-%d)
-5026	%s spawned in %dx%d
-5027	%s's %s change %d to %d
-5028	%s's %s set to [%d]
-5029	%s's %s set to [%lld]
-5030	%s(%d%%) -> %s FAIL
-5031	%s(%d%%) -> %s SUCCESS
-5032	%s: no such a player
-5033	%s: no such a player.
+5018	%s уклоняется! (%d%%)
+5019	%s для империи: %d
+5020	%s для гильдии: %d
+5021	%s для игрока: %d
+5022	%s не на этой карте
+5023	Требуется: %s.
+5024	%s не существует
+5025	%s бросает кубик и выбрасывает %d. (%d-%d)
+5026	%s появился в %dx%d
+5027	%s: %s изменено с %d на %d
+5028	%s: %s установлено на [%d]
+5029	%s: %s установлено на [%lld]
+5030	%s(%d%%) -> %s НЕУДАЧА
+5031	%s(%d%%) -> %s УСПЕХ
+5032	%s: такого игрока нет
+5033	%s: такого игрока нет.
 5034	%s[%d] attacks at: %d %d
 5035	%s[%d] vs %s[%d] time %u sec.
-5036	+3 Arcanum cannot be improved with this item
-5037	-- Affect List of %s -------------------------------
+5036	Арканум +3 нельзя улучшить этим предметом
+5037	-- Список эффектов %s -------------------------------
 5038	-> %s, DAM %d HP %d(%d%%) %s%s
-5039	5 minutes left until the monsters attack!!!
+5039	До нападения монстров осталось 5 минут!!!
 5040	<- %s, DAM %d HP %d(%d%%) %s%s
-5041	<Guild> %d dragon power has been restored.
-5042	<Guild> New membership is currently restricted.
-5043	<Guild> Only the guild leader can use guild skills.
-5044	<Guild> The guild is already at the highest level.
-5045	<Guild> The guild is currently at war.
-5046	<Guild> The other party cannot receive invitation requests.
-5047	<Guild> Uses %d skill (%d, %d) to %u
-5048	<Guild> You cannot withdraw a guild member during a guild war.
+5041	<Гильдия> Сила драконов (%d) восстановлена.
+5042	<Гильдия> Приём новых участников сейчас ограничен.
+5043	<Гильдия> Только лидер гильдии может использовать навыки гильдии.
+5044	<Гильдия> Гильдия уже достигла максимального уровня.
+5045	<Гильдия> Гильдия сейчас находится в состоянии войны.
+5046	<Гильдия> Другой игрок не может получать приглашения.
+5047	<Гильдия> Использует навык %d (%d, %d) на %u
+5048	<Гильдия> Нельзя исключить участника гильдии во время войны гильдий.
 5049	<IMMUNE_FAIL> (%s)
 5050	<IMMUNE_FAIL> (%s) NO_IMMUNE_FLAG
 5051	<IMMUNE_SUCCESS> (%s)
-5052	<Party> Attacker setup failed.
-5053	<Party> You can only invite parties within -%d to +%d levels.
-5054	<Party> You have left the party.
-5055	<Warehouse> This item cannot be moved to the warehouse.
+5052	<Группа> Не удалось настроить атакующего.
+5053	<Группа> Вы можете приглашать только группы с уровнями от -%d до +%d.
+5054	<Группа> Вы покинули группу.
+5055	<Склад> Этот предмет нельзя переместить на склад.
 5056	<duration>  hour
 5057	<empire>    0 - 3 (0==all)
 5058	<type>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp
 5059	<value>     percent
-5060	===== OX QUIZ LIST =====
-5061	===== OX QUIZ LIST END =====
+5060	===== СПИСОК ВОПРОСОВ OX =====
+5061	===== КОНЕЦ СПИСКА ВОПРОСОВ OX =====
 5062	ARROW %s -> %s, DAM %d DIST %d GAP %d %% %d
 5063	ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%
 5064	ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d
-5065	Abilities cannot be increased while transformed.
-5066	Affect successfully removed.
-5067	After a while, we return to the village.
+5065	Нельзя повышать способности в превращённом состоянии.
+5066	Эффект успешно снят.
+5067	Через некоторое время мы вернёмся в деревню.
 5068	Attack :name[%s] Vnum[%d] can't use skill by attack(warning)
 5069	Attack Speed Hack(%s), (delta, limit)=(%u, %u)
-5070	BODY : %s
-5071	BONUS:
-5072	Bonuschange of %s (Slot: %d) successfully finished.
-5073	Breaks off the engagement between player %d and player %d.
-5074	Building rotation feature is not yet available
-5075	COSTUME status:
-5076	Can only be used on weapons and armor.
-5077	Can't find map by index %d
-5078	Cannot equip items directly from switchbot.
-5079	Cannot find map (index %d)
-5080	Cannot find map command syntax: /goto <mapname> [empire]
-5081	Cannot find player(%s). %s is not in your game server.
-5082	Cannot find player(%s). Perhaps %s doesn't login or exist.
-5083	Cannot move active switchbot item.
-5084	Cannot move equipped items to switchbot.
-5085	Cannot remove item from switchbot. Inventory is full.
-5086	Cannot set stat under initial stat.
-5087	Charged for %d seconds.
-5088	Charging is not possible.
-5089	Chat block requested.
-5090	Cold Resistance %d%%
-5091	Construction costs are insufficient.
-5092	Construction is not possible due to lack of materials.
+5070	ТЕЛО: %s
+5071	БОНУС:
+5072	Смена бонуса для %s (слот: %d) успешно завершена.
+5073	Разрывает помолвку между игроками %d и %d.
+5074	Поворот строения пока недоступен
+5075	Статус КОСТЮМА:
+5076	Можно использовать только на оружии и броне.
+5077	Не удаётся найти карту по индексу %d
+5078	Нельзя надевать предметы прямо из свитч-бота.
+5079	Не удаётся найти карту (индекс %d)
+5080	Карта не найдена. Синтаксис команды: /goto <mapname> [empire]
+5081	Не удаётся найти игрока (%s). %s не на вашем игровом сервере.
+5082	Не удаётся найти игрока (%s). Возможно, %s не в игре или не существует.
+5083	Нельзя перемещать активный предмет свитч-бота.
+5084	Нельзя переместить надетые предметы в свитч-бот.
+5085	Нельзя убрать предмет из свитч-бота. Инвентарь полон.
+5086	Нельзя установить характеристику ниже начальной.
+5087	Заряжено на %d сек.
+5088	Зарядка невозможна.
+5089	Запрошена блокировка чата.
+5090	Сопротивление холоду %d%%
+5091	Недостаточно средств на строительство.
+5092	Строительство невозможно из-за нехватки материалов.
 5093	DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%
 5094	DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%
-5095	Dalian has started successfully.
-5096	Dark Resistance %d%%
-5097	Defeated the noble lord and all his subordinates.
-5098	Delete failed. Quest flag does not exist.
-5099	Delete success.
-5100	Dragon Soulstone Chest is not activated.
-5101	Dropped items will disappear after %d minutes.
-5102	Due to lack of mental power, you cannot see other people's equipment.
-5103	Earth Resistance %d%%
-5104	Equipped items cannot be sold in personal stores.
-5105	Event Helper Delete
-5106	Event Helper Spawn
-5107	Evil energy gathers at the central altar.
-5108	Example) 10s, 10m, 1m 30s
+5095	Далиан успешно запущен.
+5096	Сопротивление тьме %d%%
+5097	Благородный лорд и все его подчинённые побеждены.
+5098	Не удалось удалить. Флаг квеста не существует.
+5099	Удаление выполнено.
+5100	Сундук с камнями души дракона не активирован.
+5101	Выпавшие предметы исчезнут через %d мин.
+5102	Из-за нехватки ментальной силы вы не можете видеть экипировку других игроков.
+5103	Сопротивление земле %d%%
+5104	Надетые предметы нельзя продавать в личных магазинах.
+5105	Удалить помощника события
+5106	Призвать помощника события
+5107	Злая энергия собирается у центрального алтаря.
+5108	Пример) 10s, 10m, 1m 30s
 5109	FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%
 5110	Find %d, count %d, require %d
-5111	Fire Damage %d
-5112	Forced shutdown of Dalian failed
-5113	Get closer and get off.
-5114	Get closer and get on it.
-5115	Guild Land(%d) Cleared
+5111	Урон огнём %d
+5112	Не удалось принудительно завершить Далиан
+5113	Подойдите ближе и спешьтесь.
+5114	Подойдите ближе и сядьте верхом.
+5115	Земля гильдии (%d) очищена
 5116	GuildID: %d
 5117	GuildMasterPID: %d
-5118	HAIR : %s
+5118	ВОЛОСЫ: %s
 5119	HP %d/%d
 5120	HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%
-5121	Health %d/%d (%d%%)
-5122	Horse Information:
-5123	I am fighting for my life. Stay focused.
-5124	I can't wear it because I don't have the item.
-5125	I'm having trouble starting sparring.
+5121	Здоровье %d/%d (%d%%)
+5122	Информация о лошади:
+5123	Я сражаюсь не на жизнь, а на смерть. Сосредоточься.
+5124	Я не могу это надеть, так как у меня нет предмета.
+5125	Мне трудно начать спарринг.
 5126	ICE:%3d%% EARTH:%3d%% DARK:%3d%%
-5127	Invalid argument.
-5128	Invalid command %s
-5129	Invalid format of time. Please specify by adding h, m, or s.
-5130	Invalid item type for switchbot.
-5131	Invalid syntax
-5132	Invalid syntax: no command
-5133	Inventory is not activated.
+5127	Неверный аргумент.
+5128	Неверная команда %s
+5129	Неверный формат времени. Укажите время, добавив h, m или s.
+5130	Недопустимый тип предмета для свитч-бота.
+5131	Неверный синтаксис
+5132	Неверный синтаксис: нет команды
+5133	Инвентарь не активирован.
 5134	IsInWar: %d
-5135	It doesn't work. Check the skill formula
-5136	It is higher than the application level and cannot be used.
-5137	It is in a state where it cannot be disguised.
-5138	Items in use cannot be sold in personal stores.
-5139	Items that are being worn cannot be sold.
-5140	LEV %d
+5135	Не работает. Проверьте формулу навыка
+5136	Уровень выше допустимого, использовать нельзя.
+5137	В этом состоянии невозможно замаскироваться.
+5138	Используемые предметы нельзя продавать в личных магазинах.
+5139	Надетые предметы нельзя продавать.
+5140	УР. %d
 5141	LUA_ERROR: quest %s.%s %s
-5142	Level  %d
-5143	MALL:
-5144	Manufacturing failed.
+5142	Уровень  %d
+5143	МАГАЗИН:
+5144	Изготовление не удалось.
 5145	MapIndex: %d MobCount %d
 5146	MapInfo
-5147	Monsters are advancing towards %s' castle.
-5148	Monsters have started attacking the castle.
-5149	New bonus added successfully.
-5150	No one currently blocked.
-5151	No such a skill by that name.
-5152	No such mob by that vnum
-5153	Not a place for fishing
-5154	Not affected by that type and point.
-5155	Not enough inventory space.
-5156	Not yet available.
-5157	OX-Question: 
-5158	One minute left until the monsters attack!!!
-5159	Opponent's critical hit chance reduced by %d%%
-5160	Opponent's piercing attack probability decreases by %d%%
-5161	Please defeat the Demon Lord within 30 minutes.
-5162	Poison Damage %d
+5147	Монстры продвигаются к замку %s.
+5148	Монстры начали атаковать замок.
+5149	Новый бонус успешно добавлен.
+5150	Сейчас никто не заблокирован.
+5151	Навыка с таким названием нет.
+5152	Монстра с таким vnum нет
+5153	Здесь нельзя рыбачить
+5154	Этот тип и параметр не затронуты.
+5155	Недостаточно места в инвентаре.
+5156	Пока недоступно.
+5157	Вопрос OX:
+5158	До нападения монстров осталась 1 минута!!!
+5159	Шанс критического удара противника снижен на %d%%
+5160	Шанс пробивающей атаки противника снижен на %d%%
+5161	Победите Повелителя демонов в течение 30 минут.
+5162	Урон ядом %d
 5163	PossibleDistant %f nNowDist %f
 5164	QUEST_SYSERR %s
 5165	QUEST_SYSLOG %s
-5166	Quest flag set: %s %d
-5167	RESISTANCES:
-5168	Reloading Admin information.
-5169	Reloading crafting information.
-5170	Reloading notice string.
-5171	Reloading prototype tables,
-5172	Reloading quest.
-5173	Reloading state_user_count.
+5166	Флаг квеста установлен: %s %d
+5167	СОПРОТИВЛЕНИЯ:
+5168	Перезагрузка информации об администраторах.
+5169	Перезагрузка информации о создании предметов.
+5170	Перезагрузка строки объявления.
+5171	Перезагрузка таблиц прототипов,
+5172	Перезагрузка квеста.
+5173	Перезагрузка state_user_count.
 5174	RequestSetEventFlag %s %d
 5175	Respaw around
 5176	Respaw everywhere
 5177	SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%
 5178	SP %d/%d
 5179	SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%
-5180	Safebox size set to %d
-5181	Save done.
-5182	Save failed.
-5183	Spawn failed.
-5184	Spiritstones cannot be improved with this item.
-5185	Stam   %d/%d (%d%%)
-5186	Subskill of [%s] was reset
-5187	Successful forced shutdown of Dalian
-5188	Switchbot stopped. Not enough money.
-5189	Switchbot stopped. Out of switchers.
+5180	Размер склада установлен на %d
+5181	Сохранение выполнено.
+5182	Не удалось сохранить.
+5183	Не удалось призвать.
+5184	Духовные камни нельзя улучшить этим предметом.
+5185	Выносл. %d/%d (%d%%)
+5186	Поднавык [%s] был сброшен
+5187	Далиан успешно принудительно завершён
+5188	Свитч-бот остановлен. Недостаточно денег.
+5189	Свитч-бот остановлен. Закончились предметы для переключения.
 5190	Syntax: /affect_remove <player name>
 5191	Syntax: /affect_remove <type> <point>
 5192	Syntax: /saveati <map_index> <filename>
@@ -770,41 +770,41 @@
 5198	Syntax: setskill <name> <lev>
 5199	Syntax: setskillother <target> <skillname> <lev>
 5200	TREE:%3d%% MONSTER:%3d%%
-5201	Target is in %d channel (my channel %d)
-5202	Test server timeout passed
-5203	The Dragon's Lair will collapse in %d seconds!
-5204	The buildings required for construction have not been built.
-5205	The construction task failed beyond the building cost information.
-5206	The leader of the monsters has appeared.
-5207	The monsters are showing signs of retreating.
-5208	The monsters began to retreat.
-5209	The noble lord has retreated.
-5210	The other person is unable to add you as a friend.
-5211	The sensor was activated, but no Arcanum was detected.
-5212	The subcommand of the command is incorrect.
-5213	The value was entered incorrectly.
-5214	There are few stat points left.
-5215	There are no spammers.
-5216	There are no stat points left.
-5217	There are types of buildings that cannot be built together.
-5218	There is no character(%s) by that name
-5219	There is no guild with that name or number.
-5220	There is no one by that name
-5221	There is no spirit stone to take out.
-5222	There is no such a skill.
-5223	There is no such character.
-5224	There is no such command
-5225	This building does not exist.
-5226	This guild is currently at war.
-5227	This is a location where buildings cannot be built.
-5228	This is an inappropriate guild name.
-5229	Time remaining until socket is removed from %s: %d
-5230	Total %d
-5231	Total [%d] %d / %d / %d (this server %d)
-5232	Transfer me?!?
-5233	Transfer requested.
+5201	Цель на канале %d (мой канал %d)
+5202	Время тестового сервера истекло
+5203	Логово дракона обрушится через %d сек.!
+5204	Здания, необходимые для строительства, не построены.
+5205	Строительство не удалось: превышена информация о стоимости здания.
+5206	Появился предводитель монстров.
+5207	Монстры проявляют признаки отступления.
+5208	Монстры начали отступать.
+5209	Благородный лорд отступил.
+5210	Этот игрок не может добавить вас в друзья.
+5211	Датчик сработал, но Арканум не обнаружен.
+5212	Подкоманда этой команды неверна.
+5213	Значение введено неверно.
+5214	Осталось мало очков характеристик.
+5215	Спамеров нет.
+5216	Очков характеристик не осталось.
+5217	Некоторые типы зданий нельзя строить вместе.
+5218	Персонажа с таким именем нет (%s)
+5219	Гильдии с таким названием или номером нет.
+5220	Игрока с таким именем нет
+5221	Нет духовного камня, который можно вынуть.
+5222	Такого навыка нет.
+5223	Такого персонажа нет.
+5224	Такой команды нет
+5225	Этого здания не существует.
+5226	Эта гильдия сейчас находится в состоянии войны.
+5227	Здесь нельзя строить здания.
+5228	Недопустимое название гильдии.
+5229	Время до удаления гнезда у %s: %d
+5230	Всего %d
+5231	Всего [%d] %d / %d / %d (этот сервер %d)
+5232	Телепортировать меня?!?
+5233	Запрос на перенос отправлен.
 5234	Type Point Modif Duration Flag
-5235	Unknown error
+5235	Неизвестная ошибка
 5236	Usage : /horse_set_stat <hp> <stamina>
 5237	Usage: %s <name>
 5238	Usage: block_chat <name> <time> (0 to off)
@@ -825,33 +825,33 @@
 5253	Use: mc <one>
 5254	Use: mob <mob one>
 5255	WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%
-5256	We plan to attack the castle in 10 minutes.
-5257	Weekly Event End
-5258	Weekly Event Start
-5259	You can no longer increase the value of good and evil.
-5260	You can't ride there.
-5261	You can't throw away gold yet.
-5262	You cannot add more bonus.
-5263	You cannot change the bonuses.
-5264	You cannot move to another area within 1 minute after the transaction.
-5265	You cannot move to another location while the trading window or warehouse is open.
-5266	You cannot read books while transformed.
-5267	You cannot ride a horse while downed.
-5268	You cannot unequip the belt while items are inside the beld inventory.
-5269	You cannot wear robes while riding a horse.
-5270	You goto ( %d, %d )
-5271	You have destroyed %s.
-5272	You have gained %d exp.
-5273	You roll a die and roll %d. (%d-%d)
-5274	You warp to ( %d, %d )
-5275	Your Mining Points have increased! (%lld/%d)
-5276	Your chat has been blocked by a GM.
-5277	Your inventory is full and you cannot unload.
-5278	Your mining points have reached their maximum. (%lld)
-5279	[1106-??]No puedes unir esto.
+5256	Мы планируем атаковать замок через 10 минут.
+5257	Конец еженедельного события
+5258	Начало еженедельного события
+5259	Вы больше не можете повышать значение добра и зла.
+5260	Туда нельзя ездить верхом.
+5261	Пока нельзя выбросить Yang.
+5262	Больше нельзя добавить бонусов.
+5263	Вы не можете изменить бонусы.
+5264	В течение 1 минуты после сделки нельзя переходить в другую область.
+5265	Нельзя перейти в другое место, пока открыто окно обмена или склад.
+5266	Нельзя читать книги в превращённом состоянии.
+5267	Нельзя садиться на лошадь в нокауте.
+5268	Нельзя снять пояс, пока в инвентаре пояса есть предметы.
+5269	Нельзя носить мантии верхом на лошади.
+5270	Вы телепортировались в ( %d, %d )
+5271	Вы уничтожили %s.
+5272	Вы получили %d опыта.
+5273	Вы бросаете кубик и выбрасываете %d. (%d-%d)
+5274	Вы перемещаетесь в ( %d, %d )
+5275	Ваши очки добычи увеличились! (%lld/%d)
+5276	Ваш чат заблокирован ГМ.
+5277	Ваш инвентарь полон, разгрузка невозможна.
+5278	Ваши очки добычи достигли максимума. (%lld)
+5279	[1106-??]Вы не можете это объединить.
 5280	[Only Test] Success_Prob %d, RefineLevel %d
-5281	[SYSTEM ERROR]You cannot upgrade dragon soul without refine window.
-5282	[SYSTEM ERROR]You cannot use dragon soul refine window.
+5281	[SYSTEM ERROR]Нельзя улучшить Дух дракона без окна улучшения.
+5282	[SYSTEM ERROR]Нельзя использовать окно улучшения Духа дракона.
 5283	[TEST_SERVER] Failed to learn skill
 5284	[TEST_SERVER] Success to learn skill
 5285	[TestOnly]Pulse %d LoadTime %d PASS %d
@@ -871,11 +871,11 @@
 5299	error occurred on [%s:%d]
 5300	ex) /dc <player name>
 5301	ex) /kill <player name>
-5302	exp bonus %d%%
+5302	Бонус опыта %d%%
 5303	gold_mul %d rate %d
 5304	guild.wall.build unknown_direction[%s]
-5305	horse level set (%s: %d)
-5306	horse level set to %d.
+5305	Уровень лошади установлен (%s: %d)
+5306	Уровень лошади установлен на %d.
 5307	inventory [%d] = %s
 5308	lovepoint bykill %.3g total %d
 5309	pc_warp %d %d %d
@@ -883,7 +883,7 @@
 5311	sent find position packet for teleport
 5312	setting quest state flag %s %s %d
 5313	setting quest state flag failed
-5314	skill group to %d.
+5314	Группа навыков: %d.
 5315	usage : /flush player_id
 5316	usage : /horse_level <name> <level>
 5317	usage : priv_empire <empire> <type> <value> <duration>
