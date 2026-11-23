@@ -989,7 +989,7 @@ void CPythonEventManager::__InsertLine(TEventSet& rEventSet, BOOL isCenter, int 
 			int textWidth;
 			int textHeight;
 			rEventSet.pCurrentTextLine->GetTextSize(&textWidth,&textHeight);
-			if (GetDefaultCodePage() == CP_1256)
+			if (IsDefaultRTL())
 			{
 				kLine.ixLocal = rEventSet.iWidth;
 				if (iX_pos != 0)
@@ -1044,7 +1044,7 @@ void CPythonEventManager::__InsertLine(TEventSet& rEventSet, BOOL isCenter, int 
 	}
 	else
 	{
-		if (GetDefaultCodePage() == CP_1256)
+		if (IsDefaultRTL())
 		{
 			rEventSet.pCurrentTextLine->SetHorizonalAlign(CGraphicTextInstance::HORIZONTAL_ALIGN_LEFT);
 			rEventSet.pCurrentTextLine->SetPosition(static_cast<float>(rEventSet.ix + rEventSet.iWidth), static_cast<float>(rEventSet.iy + rEventSet.iyLocal));
@@ -1077,7 +1077,7 @@ void CPythonEventManager::RefreshLinePosition(TEventSet * pEventSet)
 	}
 	else
 	{
-		if (GetDefaultCodePage() == CP_1256)
+		if (IsDefaultRTL())
 			ixTextPos = pEventSet->ix+pEventSet->iWidth;
 		else
 			ixTextPos = pEventSet->ix;

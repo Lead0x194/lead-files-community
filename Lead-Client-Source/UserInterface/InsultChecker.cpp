@@ -1,5 +1,6 @@
 ﻿#include "StdAfx.h"
 #include "InsultChecker.h"
+#include "../EterLib/Util.h"
 
 CInsultChecker& CInsultChecker::GetSingleton()
 {
@@ -55,7 +56,6 @@ void CInsultChecker::FilterInsult(char* szLine, UINT uLineLen)
 	const char INSULT_FILTER_CHAR = '*'; 
 	for (UINT uPos=0; uPos<uLineLen;)
 	{
-		BYTE bChr=szLine[uPos];
 		UINT uInsultLen;
 		if (__GetInsultLength(szLine+uPos, &uInsultLen))
 		{
@@ -64,10 +64,7 @@ void CInsultChecker::FilterInsult(char* szLine, UINT uLineLen)
 		}
 		else
 		{
-			if ( LocaleService_IsLeadByte( bChr ) )
-				uPos += 2;
-			else
-				uPos++;
+			uPos += GetDefaultCodePageCharLength(szLine + uPos);
 		}
 	}
 }
@@ -76,21 +73,10 @@ bool CInsultChecker::IsInsultIn(const char* c_szLine, UINT uLineLen)
 {
 	for (UINT uPos=0; uPos<uLineLen;)
 	{
-		BYTE bChr=c_szLine[uPos];
-		if (bChr & 0x80)
-		{
-			if (__IsInsult(c_szLine+uPos))
-				return true;
+		if (__IsInsult(c_szLine+uPos))
+			return true;
 
-			uPos+=2;
-		}
-		else
-		{
-			if (__IsInsult(c_szLine+uPos))
-				return true;
-
-			uPos++;
-		}
+		uPos += GetDefaultCodePageCharLength(c_szLine + uPos);
 	}
 
 	return false;

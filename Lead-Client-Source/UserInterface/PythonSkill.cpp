@@ -609,23 +609,13 @@ bool CPythonSkill::RegisterSkill(DWORD dwSkillIndex, const char * c_szFileName)
 		}
 	}
 
+	if (!TextFileLoader.GetTokenString("name", &SkillData.strName))
 	{
-		char szName[256];
-		sprintf_s(szName, sizeof(szName), "%dname", LocaleService_GetCodePage());
-		if (!TextFileLoader.GetTokenString(szName, &SkillData.strName))
-			if (!TextFileLoader.GetTokenString("name", &SkillData.strName))
-			{
-				TraceError("CPythonSkill::RegisterSkill(dwSkillIndex=%d, c_szFileName=%s) - Failed to find [%s]", dwSkillIndex, c_szFileName, szName);
-				return false;	
-			}
+		TraceError("CPythonSkill::RegisterSkill(dwSkillIndex=%d, c_szFileName=%s) - Failed to find [name]", dwSkillIndex, c_szFileName);
+		return false;
 	}
 
-	{
-		char szName[256];
-		sprintf_s(szName, sizeof(szName), "%ddescription", LocaleService_GetCodePage());
-		if (!TextFileLoader.GetTokenString(szName, &SkillData.strDescription))
-			TextFileLoader.GetTokenString("description", &SkillData.strDescription);
-	}
+	TextFileLoader.GetTokenString("description", &SkillData.strDescription);
 
 	if (!TextFileLoader.GetTokenString("iconfilename", &SkillData.strIconFileName))
 	{
@@ -636,13 +626,9 @@ bool CPythonSkill::RegisterSkill(DWORD dwSkillIndex, const char * c_szFileName)
 	{
 		CTokenVector * pConditionDataVector;
 
-		char szConditionData[256];
-		sprintf_s(szConditionData, sizeof(szConditionData), "%dconditiondata", LocaleService_GetCodePage());
-
 		bool isConditionData=true;
-		if (!TextFileLoader.GetTokenVector(szConditionData, &pConditionDataVector))
-			if (!TextFileLoader.GetTokenVector("conditiondata", &pConditionDataVector))
-				isConditionData=false;
+		if (!TextFileLoader.GetTokenVector("conditiondata", &pConditionDataVector))
+			isConditionData=false;
 
 		if (isConditionData)
 		{
@@ -659,13 +645,9 @@ bool CPythonSkill::RegisterSkill(DWORD dwSkillIndex, const char * c_szFileName)
 	{
 		CTokenVector * pAffectDataVector;
 
-		char szAffectData[256];
-		sprintf_s(szAffectData, sizeof(szAffectData), "%daffectdata", LocaleService_GetCodePage());
-
 		bool isAffectData=true;
-		if (!TextFileLoader.GetTokenVector(szAffectData, &pAffectDataVector))
-			if (!TextFileLoader.GetTokenVector("affectdata", &pAffectDataVector))
-				isAffectData=false;
+		if (!TextFileLoader.GetTokenVector("affectdata", &pAffectDataVector))
+			isAffectData=false;
 
 		if (isAffectData)
 		{
@@ -677,26 +659,6 @@ bool CPythonSkill::RegisterSkill(DWORD dwSkillIndex, const char * c_szFileName)
 				SkillData.AffectDataVector[i].strAffectDescription = pAffectDataVector->at(i*3+0);
 				SkillData.AffectDataVector[i].strAffectMinFormula = pAffectDataVector->at(i*3+1);
 				SkillData.AffectDataVector[i].strAffectMaxFormula = pAffectDataVector->at(i*3+2);
-			}
-		}
-	}
-
-	{
-		CTokenVector * pGradeDataVector;
-
-		char szGradeData[256];
-		sprintf_s(szGradeData, sizeof(szGradeData), "%dgradedata", LocaleService_GetCodePage());
-
-		if (TextFileLoader.GetTokenVector(szGradeData, &pGradeDataVector))
-		{
-			if (SKILL_GRADE_COUNT*2 != pGradeDataVector->size())
-				TraceError("CPythonSkill::RegisterSkill(dwSkillIndex=%d, c_szFileName=%s) - Strange Grade Data Count", dwSkillIndex, c_szFileName);
-
-			for (DWORD i = 0; i < min(SKILL_GRADE_COUNT, pGradeDataVector->size()/2); ++i)
-			{
-				SkillData.GradeData[i].strName = pGradeDataVector->at(i*2+0);
-				std::string strIconFileName = g_strImagePath + pGradeDataVector->at(i*2+1);
-				SkillData.GradeData[i].pImage = (CGraphicImage *)CResourceManager::Instance().GetResourcePointer(strIconFileName.c_str());
 			}
 		}
 	}
@@ -1307,7 +1269,7 @@ const char * CPythonSkill::SSkillData::GetAffectDescription(DWORD dwIndex, float
 	if (fMaxValue < 0.0)
 		fMaxValue = - fMaxValue;
 
-	if (CP_ARABIC == ::GetDefaultCodePage())
+	if (IsDefaultRTL())
 	{
 		// #0000870: [M2AE] Crash occurs in certain Arabic sentences in Korean mode
 		static std::string strDescription;

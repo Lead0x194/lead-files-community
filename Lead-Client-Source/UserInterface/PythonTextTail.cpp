@@ -241,7 +241,7 @@ void CPythonTextTail::ArrangeTextTail()
 
 			fxAdd = 8.0f;
 
-			if( GetDefaultCodePage() == CP_ARABIC )
+			if( IsDefaultRTL() )
 			{
 				pTitle->SetPosition(pTextTail->x - (iNameWidth / 2) - iTitleWidth - 4.0f, pTextTail->y, pTextTail->z);
 			}
@@ -258,7 +258,7 @@ void CPythonTextTail::ArrangeTextTail()
 				int iLevelWidth, iLevelHeight;
 				pLevel->GetTextSize(&iLevelWidth, &iLevelHeight);
 				
-				if( GetDefaultCodePage() == CP_ARABIC )
+				if( IsDefaultRTL() )
 				{
 					pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - iTitleWidth - 8.0f, pTextTail->y, pTextTail->z);
 				}
@@ -281,7 +281,7 @@ void CPythonTextTail::ArrangeTextTail()
 				int iLevelWidth, iLevelHeight;
 				pLevel->GetTextSize(&iLevelWidth, &iLevelHeight);
 				
-				if( GetDefaultCodePage() == CP_ARABIC )
+				if( IsDefaultRTL() )
 				{
 					pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - 4.0f, pTextTail->y, pTextTail->z);
 				}
