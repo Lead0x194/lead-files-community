@@ -31,8 +31,8 @@ LOGIN_PATH = "locale/common/ui/login/"
 EMPIRE_PATH = "locale/common/ui/empire/"
 GUILD_PATH = "locale/common/ui/guild/"
 SELECT_PATH = "locale/common/ui/select/"
-WINDOWS_PATH = "locale/common/ui/windows/"
-MAPNAME_PATH = "locale/common/ui/mapname/"
+WINDOWS_PATH = "%s/ui/windows/" % (name)
+MAPNAME_PATH = "%s/ui/mapname/" % (name)
 
 JOBDESC_WARRIOR_PATH = "%s/jobdesc_warrior.txt" % (name)
 JOBDESC_ASSASSIN_PATH = "%s/jobdesc_assassin.txt" % (name)
