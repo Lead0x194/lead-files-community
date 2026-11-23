@@ -53,7 +53,7 @@ bool CHARACTER::ExchangeStart(LPCHARACTER victim)
 
 	if (IsObserverMode())
 	{
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot trade while observing."));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;893]");
 		return false;
 	}
 
@@ -63,13 +63,13 @@ bool CHARACTER::ExchangeStart(LPCHARACTER victim)
 	//PREVENT_TRADE_WINDOW
 	if ( IsOpenSafebox() || GetShopOwner() || GetMyShop() || IsCubeOpen())
 	{
-		ChatPacket( CHAT_TYPE_INFO, LC_TEXT("If the window is open, you cannot trade with others.") );
+		ChatPacket( CHAT_TYPE_INFO, "[LS;894]" );
 		return false;
 	}
 
 	if ( victim->IsOpenSafebox() || victim->GetShopOwner() || victim->GetMyShop() || victim->IsCubeOpen() )
 	{
-		ChatPacket( CHAT_TYPE_INFO, LC_TEXT("The other person is currently busy so you cannot trade right now.") );
+		ChatPacket( CHAT_TYPE_INFO, "[LS;895]" );
 		return false;
 	}
 	//END_PREVENT_TRADE_WINDOW
@@ -90,7 +90,7 @@ bool CHARACTER::ExchangeStart(LPCHARACTER victim)
 
 	if (victim->IsBlockMode(BLOCK_EXCHANGE))
 	{
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The other person has cancelled the trade."));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;896]");
 		return false;
 	}
 
@@ -154,7 +154,7 @@ bool CExchange::AddItem(TItemPos item_pos, BYTE display_pos)
 
 	if (IS_SET(item->GetAntiFlag(), ITEM_ANTIFLAG_GIVE))
 	{
-		m_pOwner->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot trade this item."));
+		m_pOwner->ChatPacket(CHAT_TYPE_INFO, "[LS;710]");
 		return false;
 	}
 
@@ -496,39 +496,39 @@ bool CExchange::Accept(bool bAccept)
 		// returns .
 		if (!Check(&iItemCount))
 		{
-			GetOwner()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Not enough Yang or not enough space in the inventory."));
-			victim->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The other person does not have enough Yang or does not have any space left in their inventory."));
+			GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;897]");
+			victim->ChatPacket(CHAT_TYPE_INFO, "[LS;898]");
 			goto EXCHANGE_END;
 		}
 
 		// Check whether there is space left in the other person's belongings based on the number of returned items. .
 		if (!CheckSpace())
 		{
-			GetOwner()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The other person has no space left in their inventory."));
-			victim->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There isn't enough space in your inventory."));
+			GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;899]");
+			victim->ChatPacket(CHAT_TYPE_INFO, "[LS;1130]");
 			goto EXCHANGE_END;
 		}
 
 		// Likewise the other party ..
 		if (!GetCompany()->Check(&iItemCount))
 		{
-			victim->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Not enough Yang or not enough space in the inventory."));
-			GetOwner()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The other person does not have enough Yang or does not have any space left in their inventory."));
+			victim->ChatPacket(CHAT_TYPE_INFO, "[LS;897]");
+			GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;898]");
 			goto EXCHANGE_END;
 		}
 
 		if (!GetCompany()->CheckSpace())
 		{
-			victim->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The other person has no space left in their inventory."));
-			GetOwner()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There isn't enough space in your inventory."));
+			victim->ChatPacket(CHAT_TYPE_INFO, "[LS;899]");
+			GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;1130]");
 			goto EXCHANGE_END;
 		}
 
 		if (db_clientdesc->GetSocket() == INVALID_SOCKET)
 		{
 			sys_err("Cannot use exchange feature while DB cache connection is dead.");
-			victim->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Unknown error"));
-			GetOwner()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Unknown error"));
+			victim->ChatPacket(CHAT_TYPE_INFO, "[LS;5235]");
+			GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;5235]");
 			goto EXCHANGE_END;
 		}
 
@@ -543,8 +543,8 @@ bool CExchange::Accept(bool bAccept)
 					victim->Save();
 
 				// INTERNATIONAL_VERSION
-				GetOwner()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The trade with %s has been successful."), victim->GetName());
-				victim->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The trade with %s has been successful."), GetOwner()->GetName());
+				GetOwner()->ChatPacket(CHAT_TYPE_INFO, "[LS;900;%s]", victim->GetName());
+				victim->ChatPacket(CHAT_TYPE_INFO, "[LS;900;%s]", GetOwner()->GetName());
 				// END_OF_INTERNATIONAL_VERSION
 			}
 		}

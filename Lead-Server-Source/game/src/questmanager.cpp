@@ -571,7 +571,7 @@ namespace quest
 				LPCHARACTER ch = CHARACTER_MANAGER::instance().FindByPID(pc);
 
 				if (ch)
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your request is loading. Please wait."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;772]");
 
 				return;
 			}
@@ -596,7 +596,7 @@ namespace quest
 				LPCHARACTER ch = CHARACTER_MANAGER::instance().FindByPID(pc);
 				if (ch)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your request is loading. Please wait."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;772]");
 				}
 				return;
 			}
@@ -621,7 +621,7 @@ namespace quest
 				LPCHARACTER ch = CHARACTER_MANAGER::instance().FindByPID(pc);
 				if (ch)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your request is loading. Please wait."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;772]");
 				}
 				return false;
 			}
@@ -649,7 +649,7 @@ namespace quest
 				LPCHARACTER ch = CHARACTER_MANAGER::instance().FindByPID(pc);
 				if (ch)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your request is loading. Please wait."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;772]");
 				}
 				return false;
 			}
@@ -693,7 +693,7 @@ namespace quest
 				LPCHARACTER ch = CHARACTER_MANAGER::instance().FindByPID(pc);
 				if (ch)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your request is loading. Please wait."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;772]");
 				}
 				return false;
 			}
@@ -747,7 +747,7 @@ namespace quest
 				LPCHARACTER ch = CHARACTER_MANAGER::instance().FindByPID(pc);
 
 				if (ch)
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your request is loading. Please wait."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;772]");
 
 				return false;
 			}
@@ -1158,13 +1158,13 @@ namespace quest
 			int value = it->second;
 
 			if (!test_server && value == 1 && flagname == "valentine_drop")
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s %d prob 800"), flagname.c_str(), value);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5011;%s;%d]", flagname.c_str(), value);
 			else if (!test_server && value == 1 && flagname == "newyear_wonso")
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s %d prob 500"), flagname.c_str(), value);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5010;%s;%d]", flagname.c_str(), value);
 			else if (!test_server && value == 1 && flagname == "newyear_fire")
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s %d prob 1000"), flagname.c_str(), value);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5009;%s;%d]", flagname.c_str(), value);
 			else
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s %d"), flagname.c_str(), value);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5007;%s;%d]", flagname.c_str(), value);
 		}
 	}
 
@@ -1666,7 +1666,7 @@ namespace quest
 
 		sys_err("LUA_ERROR: quest %s.%s %s", GetCurrentQuestName().c_str(), state_name, event_index_name.c_str() );
 		if (GetCurrentCharacterPtr() && test_server)
-			GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("LUA_ERROR: quest %s.%s %s"), GetCurrentQuestName().c_str(), state_name, event_index_name.c_str() );
+			GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_PARTY, "[LS;5141;%s;%s;%s]", GetCurrentQuestName().c_str(), state_name, event_index_name.c_str() );
 	}
 
 #ifndef __WIN32__
@@ -1685,8 +1685,8 @@ namespace quest
 			LPCHARACTER ch = GetCurrentCharacterPtr();
 			if (ch)
 			{
-				ch->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("error occurred on [%s:%d]"), func,line);
-				ch->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("%s"), szMsg);
+				ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;5299;%s;%d]", func,line);
+				ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;370;%s]", szMsg);
 			}
 		}
 	}
@@ -1706,8 +1706,8 @@ namespace quest
 			LPCHARACTER ch = GetCurrentCharacterPtr();
 			if (ch)
 			{
-				ch->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("error occurred on [%s:%d]"), func,line);
-				ch->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("%s"), szMsg);
+				ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;5299;%s;%d]", func,line);
+				ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;370;%s]", szMsg);
 			}
 		}
 	}
@@ -1785,7 +1785,7 @@ namespace quest
 				LPCHARACTER ch = CHARACTER_MANAGER::instance().FindByPID(pc);
 				if (ch)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your request is loading. Please wait."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;772]");
 				}
 				return false;
 			}

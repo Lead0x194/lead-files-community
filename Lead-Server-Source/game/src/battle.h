@@ -48,12 +48,12 @@ inline void AttackAffect(LPCHARACTER pkAttacker,
 
 			if (test_server)
 			{
-				pkVictim->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("%s %s(%ld%%) SUCCESS"), pkAttacker->GetName(), name, pkAttacker->GetPoint(att_point));
+				pkVictim->ChatPacket(CHAT_TYPE_PARTY, "[LS;5016;%s;%s;%ld]", pkAttacker->GetName(), name, pkAttacker->GetPoint(att_point));
 			}
 		}
 		else if (test_server)
 		{
-			pkVictim->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("%s %s(%ld%%) FAIL"), pkAttacker->GetName(), name, pkAttacker->GetPoint(att_point));
+			pkVictim->ChatPacket(CHAT_TYPE_PARTY, "[LS;5015;%s;%s;%ld]", pkAttacker->GetName(), name, pkAttacker->GetPoint(att_point));
 		}
 	}
 }
@@ -77,13 +77,13 @@ inline void SkillAttackAffect(LPCHARACTER pkVictim,
 			// SKILL_ATTACK_NO_LOG_TARGET_NAME_FIX
 			if (test_server)
 				pkVictim->ChatPacket(CHAT_TYPE_PARTY, 
-						LC_TEXT("%s(%d%%) -> %s SUCCESS"), name, success_pct, name);
+						"[LS;5031;%s;%d;%s]", name, success_pct, name);
 			// END_OF_SKILL_ATTACK_LOG_NO_TARGET_NAME_FIX
 		}
 		else if (test_server)
 		{
 			// SKILL_ATTACK_NO_LOG_TARGET_NAME_FIX
-			pkVictim->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("%s(%d%%) -> %s FAIL"), name, success_pct, name);
+			pkVictim->ChatPacket(CHAT_TYPE_PARTY, "[LS;5030;%s;%d;%s]", name, success_pct, name);
 			// END_OF_SKILL_ATTACK_LOG_NO_TARGET_NAME_FIX
 		}
 	}

@@ -10,9 +10,9 @@ char g_nation_name[4][32] =
 	"Jinno",
 };
 
-//	LC_TEXT("Shinsoo Kingdom")
-//	LC_TEXT("Chunjo Kingdom")
-//	LC_TEXT("Jinno Kingdom")
+//	"[LS;793]"
+//	"[LS;794]"
+//	"[LS;795]"
 
 long g_start_map[4] =
 {

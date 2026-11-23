@@ -57,7 +57,7 @@ ACMD(do_emotion_allow)
 {
 	if ( ch->GetArena() )
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot use this in the duel arena."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;403]");
 		return;
 	}
 
@@ -93,7 +93,7 @@ ACMD(do_emotion)
 	{
 		if (ch->IsRiding())
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot express emotions whilst riding a horse."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1043]");
 			return;
 		}
 	}
@@ -115,13 +115,13 @@ ACMD(do_emotion)
 
 	if (!CHARACTER_CanEmotion(*ch))
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can do this when you wear an Emotion Mask."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;414]");
 		return;
 	}
 
 	if (IS_SET(emotion_types[i].flag, WOMAN_ONLY) && SEX_MALE==GET_SEX(ch))
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Only women can do this."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;425]");
 		return;
 	}
 
@@ -137,7 +137,7 @@ ACMD(do_emotion)
 	{
 		if (!victim)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This person does not exist."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;436]");
 			return;
 		}
 	}
@@ -149,7 +149,7 @@ ACMD(do_emotion)
 
 		if (victim->IsRiding())
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot use emotions with a player who is riding on a Horse."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1044]");
 			return;
 		}
 
@@ -157,13 +157,13 @@ ACMD(do_emotion)
 
 		if (distance < 10)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You are too near."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;448]");
 			return;
 		}
 
 		if (distance > 500)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You are too far away."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;459]");
 			return;
 		}
 
@@ -171,7 +171,7 @@ ACMD(do_emotion)
 		{
 			if (GET_SEX(ch)==GET_SEX(victim))
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This action can only be done with another gender."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;470]");
 				return;
 			}
 		}
@@ -188,13 +188,13 @@ ACMD(do_emotion)
 
 					if (0 == other || other != victim->GetPlayerID())
 					{
-						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You need your fellow player's approval for this."));
+						ch->ChatPacket(CHAT_TYPE_INFO, "[LS;481]");
 						return;
 					}
 				}
 				else
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You need your fellow player's approval for this."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;481]");
 					return;
 				}
 			}

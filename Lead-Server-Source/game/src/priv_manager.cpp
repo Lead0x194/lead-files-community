@@ -105,13 +105,13 @@ void CPrivManager::GiveGuildPriv(DWORD guild_id, BYTE type, int value, BYTE bLog
 		if (value)
 		{
 			char buf[100];
-			snprintf(buf, sizeof(buf), LC_TEXT("%s of the Guild %s raised up to %d%% !"), g->GetName(), GetPrivName(type), value);
+			snprintf(buf, sizeof(buf), "[LS;722;%s;%s;%d]", g->GetName(), GetPrivName(type), value);
 			SendNotice(buf);
 		}
 		else
 		{
 			char buf[100];
-			snprintf(buf, sizeof(buf), LC_TEXT("%s of the Guild %s normal again."), g->GetName(), GetPrivName(type));
+			snprintf(buf, sizeof(buf), "[LS;723;%s;%s]", g->GetName(), GetPrivName(type));
 			SendNotice(buf);
 		}
 
@@ -160,7 +160,7 @@ void CPrivManager::GiveEmpirePriv(BYTE empire, BYTE type, int value, BYTE bLog, 
 	if (value)
 	{
 		char buf[100];
-		snprintf(buf, sizeof(buf), LC_TEXT("%s: %s has increased by %d%%!"), GetEmpireName(empire), GetPrivName(type), value);
+		snprintf(buf, sizeof(buf), "[LS;724;%s;%s;%d]", GetEmpireName(empire), GetPrivName(type), value);
 
 		if (empire)
 			SendNotice(buf);
@@ -170,7 +170,7 @@ void CPrivManager::GiveEmpirePriv(BYTE empire, BYTE type, int value, BYTE bLog, 
 	else
 	{
 		char buf[100];
-		snprintf(buf, sizeof(buf), LC_TEXT("%s 's %s normal again."), GetEmpireName(empire), GetPrivName(type));
+		snprintf(buf, sizeof(buf), "[LS;726;%s;%s]", GetEmpireName(empire), GetPrivName(type));
 
 		if (empire)
 			SendNotice(buf);

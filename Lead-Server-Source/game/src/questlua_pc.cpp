@@ -182,7 +182,7 @@ namespace quest
 		//END_PREVENT_HACK
 	
 		if ( test_server )
-			ch->ChatPacket( CHAT_TYPE_INFO, LC_TEXT("pc_warp %d %d %d"),(int)lua_tonumber(L,1),
+			ch->ChatPacket( CHAT_TYPE_INFO, "[LS;5309;%d;%d;%d]",(int)lua_tonumber(L,1),
 					(int)lua_tonumber(L,2),map_index );
 		ch->WarpSet((int)lua_tonumber(L, 1), (int)lua_tonumber(L, 2), map_index);
 		
@@ -233,7 +233,7 @@ namespace quest
 		int iPulse = thecore_pulse();	
 		if ( pkChr->GetExchange() || pkChr->GetMyShop() || pkChr->GetShopOwner() || pkChr->IsOpenSafebox() )
 		{
-			pkChr->ChatPacket( CHAT_TYPE_INFO, LC_TEXT("You cannot move to another location while the trading window or warehouse is open."));
+			pkChr->ChatPacket( CHAT_TYPE_INFO, "[LS;5265]");
 
 			return;
 		}
@@ -241,7 +241,7 @@ namespace quest
 		// Check time after exchange
 		if ( iPulse - pkChr->GetExchangeTime()  < PASSES_PER_SEC(60) )
 		{
-			pkChr->ChatPacket( CHAT_TYPE_INFO, LC_TEXT("You cannot move to another area within 1 minute after the transaction.") );
+			pkChr->ChatPacket( CHAT_TYPE_INFO, "[LS;5264]" );
 			return;
 		}
 		//END_PREVENT_PORTAL_AFTER_EXCHANGE
@@ -249,7 +249,7 @@ namespace quest
 		{
 			if ( iPulse - pkChr->GetMyShopTime() < PASSES_PER_SEC(60) )
 			{
-				pkChr->ChatPacket( CHAT_TYPE_INFO, LC_TEXT("You cannot move to another area within 1 minute after the transaction.") );
+				pkChr->ChatPacket( CHAT_TYPE_INFO, "[LS;5264]" );
 				return;
 			}
 
@@ -406,12 +406,12 @@ namespace quest
 			{
 				if (dwVnums[i] == 1)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have received %d Yang."), dwCounts[i]);
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1269;%d]", dwCounts[i]);
 				}
 				else if (dwVnums[i] == 2)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("A mysterious light appears from the tree."));
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have received %d experience points."), dwCounts[i]);
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;487]");
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;1290;%d]", dwCounts[i]);
 				}
 			}
 		}
@@ -1882,7 +1882,7 @@ namespace quest
 				{
 					if (pkCCI->bChannel != g_bChannel)
 					{
-						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Target is in %d channel (my channel %d)"), pkCCI->bChannel, g_bChannel);
+						ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5201;%d;%d]", pkCCI->bChannel, g_bChannel);
 					}
 					else
 					{
@@ -1891,11 +1891,11 @@ namespace quest
 
 						if (!SECTREE_MANAGER::instance().GetCenterPositionOfMap(pkCCI->lMapIndex, pos))
 						{
-							ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Cannot find map (index %d)"), pkCCI->lMapIndex);
+							ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5079;%d]", pkCCI->lMapIndex);
 						}
 						else
 						{
-							ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You warp to ( %d, %d )"), pos.x, pos.y);
+							ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5274;%d;%d]", pos.x, pos.y);
 							ch->WarpSet(pos.x, pos.y);
 							lua_pushnumber(L, 1 );
 						}
@@ -1903,7 +1903,7 @@ namespace quest
 				}
 				else if (NULL == CHARACTER_MANAGER::instance().FindPC(arg1))
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no one by that name"));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5220]");
 				}
 
 				lua_pushnumber(L, 0 );
@@ -1922,7 +1922,7 @@ teleport_area:
 		x *= 100;
 		y *= 100;
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You warp to ( %d, %d )"), x, y);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5274;%d;%d]", x, y);
 		ch->WarpSet(x,y);
 		ch->Stop();
 		lua_pushnumber(L, 1 );

@@ -79,7 +79,7 @@ namespace quest
 		ostringstream s;
 		combine_lua_string(L, s);
 
-		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), s.str().c_str());
+		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", s.str().c_str());
 		return 0;
 	}
 
@@ -95,7 +95,7 @@ namespace quest
 	{
 		ostringstream s;
 		combine_lua_string(L, s);
-		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s"), s.str().c_str());
+		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", s.str().c_str());
 		return 0;
 	}
 
@@ -103,7 +103,7 @@ namespace quest
 	{
 		ostringstream s;
 		combine_lua_string(L, s);
-		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s"), s.str().c_str());
+		CQuestManager::Instance().GetCurrentCharacterPtr()->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", s.str().c_str());
 		return 0;
 	}
 
@@ -373,7 +373,7 @@ namespace quest
 
 		if (test_server)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("QUEST_SYSLOG %s"), lua_tostring(L, 2));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5165;%s]", lua_tostring(L, 2));
 		}
 
 		return 0;
@@ -395,7 +395,7 @@ namespace quest
 			return 0;
 
 		sys_err("QUEST: quest: %s player: %s : %s", pc->GetCurrentQuestName().c_str(), ch->GetName(), lua_tostring(L, 1));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("QUEST_SYSERR %s"), lua_tostring(L, 1));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5164;%s]", lua_tostring(L, 1));
 		return 0;
 	}
 	
@@ -964,7 +964,7 @@ namespace quest
 
 		event_create(warp_all_to_village_event, info, PASSES_PER_SEC(iSec));
 
-		SendNoticeMap(LC_TEXT("Everyone will be teleported into the city shortly."), iMapIndex, false);
+		SendNoticeMap("[LS;1]", iMapIndex, false);
 
 		return 0;
 	}

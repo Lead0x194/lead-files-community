@@ -627,7 +627,7 @@ namespace quest
 	{
 		if (m_bIsGivenReward)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Quest] You have already received your reward."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;392]");
 			m_bIsGivenReward = false;
 		}
 
@@ -714,11 +714,11 @@ namespace quest
 			{
 				const string quest_name = it->first.substr(0, it->first.size()-9);
 				const char* state_name = CQuestManager::instance().GetQuestStateName(quest_name, static_cast<int>(it->second));
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s %s (%d)"), quest_name.c_str(), state_name, it->second);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5013;%s;%s;%d]", quest_name.c_str(), state_name, it->second);
 			}
 			else
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s %d"), it->first.c_str(), it->second);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5007;%s;%d]", it->first.c_str(), it->second);
 			}
 		}
 	}

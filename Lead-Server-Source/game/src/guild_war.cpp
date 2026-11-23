@@ -43,7 +43,7 @@ void CGuild::GuildWarPacket(DWORD dwOppGID, BYTE bWarType, BYTE bWarState)
 		LPCHARACTER ch = *it;
 
 		if (bWarState == GUILD_WAR_ON_WAR)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] There are no experience points for hunting during a guild war."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;558]");
 
 		LPDESC d = ch->GetDesc();
 
@@ -313,7 +313,7 @@ void CGuild::RequestDeclareWar(DWORD dwOppGID, BYTE type)
 					GetID(), dwOppGID, type, GuildWar_GetTypeMapIndex(type));
 
 			map_allow_log();
-			NotifyGuildMaster(LC_TEXT("[Guild] The enemy's guild leader is offline."));
+			NotifyGuildMaster("[LS;1048]");
 			return;
 		}
 
@@ -353,7 +353,7 @@ void CGuild::RequestDeclareWar(DWORD dwOppGID, BYTE type)
 							GetID(), dwOppGID, type, GuildWar_GetTypeMapIndex(type));
 
 					map_allow_log();
-					NotifyGuildMaster(LC_TEXT("[Guild] The enemy's guild leader is offline."));
+					NotifyGuildMaster("[LS;1048]");
 					return;
 				}
 
@@ -379,7 +379,7 @@ void CGuild::RequestDeclareWar(DWORD dwOppGID, BYTE type)
 			break;
 		case GUILD_WAR_SEND_DECLARE:
 			{
-				NotifyGuildMaster(LC_TEXT("[Guild] This guild is already participating in a war."));
+				NotifyGuildMaster("[LS;537]");
 			}
 			break;
 		default:
@@ -651,7 +651,7 @@ void CGuild::GuildWarEntryAccept(DWORD dwOppGID, LPCHARACTER ch)
 
 	if (gw.state != GUILD_WAR_ON_WAR)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The war is already over."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;891]");
 		return;
 	}
 
@@ -727,7 +727,7 @@ void CGuild::SetLadderPoint(int point)
 	if (m_data.ladder_point != point)
 	{
 		char buf[256];
-		snprintf(buf, sizeof(buf), LC_TEXT("[Guild] The guild has reached %d points."), point);
+		snprintf(buf, sizeof(buf), "[LS;1001;%d]", point);
 		for (itertype(m_memberOnline) it = m_memberOnline.begin(); it!=m_memberOnline.end();++it)
 		{
 			LPCHARACTER ch = (*it);

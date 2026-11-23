@@ -69,14 +69,14 @@ bool CPolymorphUtils::PolymorphCharacter(LPCHARACTER pChar, LPITEM pItem, const 
 
 	if (iPolyPercent <= 0)
 	{
-		pChar->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Transformation error."));
+		pChar->ChatPacket(CHAT_TYPE_INFO, "[LS;499]");
 		return false;
 	}
 	else
 	{
 		if (number(1, 100) > iPolyPercent)
 		{
-			pChar->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Transformation error."));
+			pChar->ChatPacket(CHAT_TYPE_INFO, "[LS;499]");
 			return false;
 		}
 	}
@@ -116,7 +116,7 @@ bool CPolymorphUtils::UpdateBookPracticeGrade(LPCHARACTER pChar, LPITEM pItem)
 	if (pItem->GetSocket(1) > 0)
 		pItem->SetSocket(1, pItem->GetSocket(1) - 1);
 	else
-		pChar->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You learned the transmutation completely."));
+		pChar->ChatPacket(CHAT_TYPE_INFO, "[LS;500]");
 
 	return true;
 }

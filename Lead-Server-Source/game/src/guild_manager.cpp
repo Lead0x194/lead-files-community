@@ -77,7 +77,7 @@ DWORD CGuildManager::CreateGuild(TGuildCreateParameter& gcp)
 
 	if (!check_name(gcp.name))
 	{
-		gcp.master->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] This guild name is invalid."));
+		gcp.master->ChatPacket(CHAT_TYPE_INFO, "[LS;472]");
 		return 0;
 	}
 
@@ -92,13 +92,13 @@ DWORD CGuildManager::CreateGuild(TGuildCreateParameter& gcp)
 
 		if (!(row[0] && row[0][0] == '0'))
 		{
-			gcp.master->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] This guild name is already taken."));
+			gcp.master->ChatPacket(CHAT_TYPE_INFO, "[LS;473]");
 			return 0;
 		}
 	}
 	else
 	{
-		gcp.master->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] You cannot found a guild."));
+		gcp.master->ChatPacket(CHAT_TYPE_INFO, "[LS;474]");
 		return 0;
 	}
 
@@ -545,7 +545,7 @@ void CGuildManager::DeclareWar(DWORD guild_id1, DWORD guild_id2, BYTE bType)
 		g2->DeclareWar(guild_id1, bType, GUILD_WAR_RECV_DECLARE))
 	{
 		char buf[256];
-		snprintf(buf, sizeof(buf), LC_TEXT("The guild %s has declared war on %s!"), TouchGuild(guild_id1)->GetName(), TouchGuild(guild_id2)->GetName());
+		snprintf(buf, sizeof(buf), "[LS;475;%s;%s]", TouchGuild(guild_id1)->GetName(), TouchGuild(guild_id2)->GetName());
 		SendNotice(buf);
 	}
 }
@@ -558,7 +558,7 @@ void CGuildManager::RefuseWar(DWORD guild_id1, DWORD guild_id2)
 	if (g1 && g2)
 	{
 		if (g2->GetMasterCharacter())
-			g2->GetMasterCharacter()->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] %s has refused the Guild war."), g1->GetName());
+			g2->GetMasterCharacter()->ChatPacket(CHAT_TYPE_INFO, "[LS;476;%s]", g1->GetName());
 	}
 
 	if ( g1 != NULL )
@@ -582,7 +582,7 @@ void CGuildManager::WaitStartWar(DWORD guild_id1, DWORD guild_id2)
 	if (g1->WaitStartWar(guild_id2) || g2->WaitStartWar(guild_id1) )
 	{
 		char buf[256];
-		snprintf(buf, sizeof(buf), LC_TEXT("The guild war between %s and %s will start in a few seconds!"), g1->GetName(), g2->GetName());
+		snprintf(buf, sizeof(buf), "[LS;477;%s;%s]", g1->GetName(), g2->GetName());
 		SendNotice(buf);
 	}
 }
@@ -630,7 +630,7 @@ void CGuildManager::StartWar(DWORD guild_id1, DWORD guild_id2)
 	g2->StartWar(guild_id1);
 
 	char buf[256];
-	snprintf(buf, sizeof(buf), LC_TEXT("The guild war between %s and %s has begun!"), g1->GetName(), g2->GetName());
+	snprintf(buf, sizeof(buf), "[LS;478;%s;%s]", g1->GetName(), g2->GetName());
 	SendNotice(buf);
 
 	if (guild_id1 > guild_id2)
@@ -648,17 +648,17 @@ void SendGuildWarOverNotice(CGuild* g1, CGuild* g2, bool bDraw)
 
 		if (bDraw)
 		{
-			snprintf(buf, sizeof(buf), LC_TEXT("The guild war between %s and %s has ended in a draw."), g1->GetName(), g2->GetName());
+			snprintf(buf, sizeof(buf), "[LS;479;%s;%s]", g1->GetName(), g2->GetName());
 		}
 		else
 		{
 			if ( g1->GetWarScoreAgainstTo( g2->GetID() ) > g2->GetWarScoreAgainstTo( g1->GetID() ) )
 			{
-				snprintf(buf, sizeof(buf), LC_TEXT("%s has won the guild war against %s."), g1->GetName(), g2->GetName());
+				snprintf(buf, sizeof(buf), "[LS;480;%s;%s]", g1->GetName(), g2->GetName());
 			}
 			else
 			{
-				snprintf(buf, sizeof(buf), LC_TEXT("%s has won the guild war against %s."), g2->GetName(), g1->GetName());
+				snprintf(buf, sizeof(buf), "[LS;480;%s;%s]", g2->GetName(), g1->GetName());
 			}
 		}
 
@@ -742,7 +742,7 @@ void CGuildManager::CancelWar(DWORD guild_id1, DWORD guild_id2)
 		LPCHARACTER master1 = g1->GetMasterCharacter();
 
 		if (master1)
-			master1->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The guild war has been cancelled."));
+			master1->ChatPacket(CHAT_TYPE_INFO, "[LS;482]");
 	}
 
 	if (g2)
@@ -750,13 +750,13 @@ void CGuildManager::CancelWar(DWORD guild_id1, DWORD guild_id2)
 		LPCHARACTER master2 = g2->GetMasterCharacter();
 
 		if (master2)
-			master2->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] The guild war has been cancelled."));
+			master2->ChatPacket(CHAT_TYPE_INFO, "[LS;482]");
 	}
 
 	if (g1 && g2)
 	{
 		char buf[256+1];
-		snprintf(buf, sizeof(buf), LC_TEXT("The guild war between %s and %s has been cancelled."), g1->GetName(), g2->GetName());
+		snprintf(buf, sizeof(buf), "[LS;483;%s;%s]", g1->GetName(), g2->GetName());
 		SendNotice(buf);
 	}
 }
@@ -784,7 +784,7 @@ void CGuildManager::ShowGuildWarList(LPCHARACTER ch)
 
 		if (A && B)
 		{
-			ch->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s[%d] vs %s[%d] time %u sec."),
+			ch->ChatPacket(CHAT_TYPE_NOTICE, "[LS;5035;%s;%d;%s;%d;%u]",
 					A->GetName(), A->GetID(),
 					B->GetName(), B->GetID(),
 					get_global_time() - A->GetWarStartTime(B->GetID()));

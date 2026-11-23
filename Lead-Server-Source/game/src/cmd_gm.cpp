@@ -51,14 +51,14 @@ void Command_ApplyAffect(LPCHARACTER ch, const char* argument, const char* affec
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: %s <name>"), affectName);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5237;%s]", affectName);
 		return;
 	}
 
 	LPCHARACTER tch = CHARACTER_MANAGER::instance().FindPC(arg1);
 	if (!tch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s is not in same map"), arg1);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5022;%s]", arg1);
 		return;
 	}
 
@@ -74,7 +74,7 @@ void Command_ApplyAffect(LPCHARACTER ch, const char* argument, const char* affec
 
 	sys_log(0, "%s %s", arg1, affectName);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s %s"), arg1, affectName);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5012;%s;%s]", arg1, affectName);
 }
 // END_OF_ADD_COMMAND_SLOW_STUN
 
@@ -95,7 +95,7 @@ ACMD(do_transfer)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: transfer <name>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5248]");
 		return;
 	}
 
@@ -108,7 +108,7 @@ ACMD(do_transfer)
 		{
 			if (pkCCI->bChannel != g_bChannel)
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Target is in %d channel (my channel %d)"), pkCCI->bChannel, g_bChannel);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5201;%d;%d]", pkCCI->bChannel, g_bChannel);
 				return;
 			}
 
@@ -120,11 +120,11 @@ ACMD(do_transfer)
 			pgg.lY = ch->GetY();
 
 			P2P_MANAGER::instance().Send(&pgg, sizeof(TPacketGGTransfer));
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Transfer requested."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5233]");
 		}
 		else
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no character(%s) by that name"), arg1);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5218;%s]", arg1);
 			sys_log(0, "There is no character(%s) by that name", arg1);
 		}
 
@@ -133,7 +133,7 @@ ACMD(do_transfer)
 
 	if (ch == tch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Transfer me?!?"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5232]");
 		return;
 	}
 
@@ -245,7 +245,7 @@ bool CHARACTER_GoToName(LPCHARACTER ch, BYTE empire, int mapIndex, const char* g
 			int x = c_eachGotoInfo.x * 100;
 			int y = c_eachGotoInfo.y * 100;
 
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You warp to ( %d, %d )"), x, y);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5274;%d;%d]", x, y);
 			ch->WarpSet(x, y);
 			ch->Stop();
 			return true;
@@ -306,7 +306,7 @@ ACMD(do_goto)
 
 	if (!*arg1 && !*arg2)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: goto <x meter> <y meter>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5242]");
 		return;
 	}
 
@@ -323,7 +323,7 @@ ACMD(do_goto)
 			y += p.y / 100;
 		}
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You goto ( %d, %d )"), x, y);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5270;%d;%d]", x, y);
 	}
 	else
 	{
@@ -343,7 +343,7 @@ ACMD(do_goto)
 
 		if (CHARACTER_GoToName(ch, empire, mapIndex, arg1))
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Cannot find map command syntax: /goto <mapname> [empire]"));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5080]");
 			return;
 		}
 
@@ -366,7 +366,7 @@ ACMD(do_goto)
 		   x = aWarpInfo[i].x * 100;
 		   y = aWarpInfo[i].y * 100;
 
-		   ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You warp to ( %d, %d )"), x, y);
+		   ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5274;%d;%d]", x, y);
 		   ch->WarpSet(x, y);
 		   ch->Stop();
 		   return;
@@ -391,7 +391,7 @@ ACMD(do_warp)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: warp <character name> | <x meter> <y meter>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5250]");
 		return;
 	}
 
@@ -414,7 +414,7 @@ ACMD(do_warp)
 			{
 				if (pkCCI->bChannel != g_bChannel)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Target is in %d channel (my channel %d)"), pkCCI->bChannel, g_bChannel);
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5201;%d;%d]", pkCCI->bChannel, g_bChannel);
 					return;
 				}
 
@@ -422,7 +422,7 @@ ACMD(do_warp)
 			}
 			else
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no one by that name"));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5220]");
 			}
 
 			return;
@@ -437,7 +437,7 @@ ACMD(do_warp)
 	x *= 100;
 	y *= 100;
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You warp to ( %d, %d )"), x, y);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5274;%d;%d]", x, y);
 	ch->WarpSet(x, y);
 	ch->Stop();
 }
@@ -449,7 +449,7 @@ ACMD(do_item)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Use: item <item one>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5252]");
 		return;
 	}
 
@@ -469,7 +469,7 @@ ACMD(do_item)
 	{
 		if (!ITEM_MANAGER::instance().GetVnum(arg1, dwVnum))
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("#%u item not exist by that vnum."), dwVnum);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5002;%u]", dwVnum);
 			return;
 		}
 	}
@@ -492,10 +492,10 @@ ACMD(do_item)
 				M2_DESTROY_ITEM(item);
 				if (!ch->DragonSoul_IsQualified())
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Inventory is not activated."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5133]");
 				}
 				else
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Not enough inventory space."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5155]");
 			}
 		}
 		else
@@ -510,13 +510,13 @@ ACMD(do_item)
 			else
 			{
 				M2_DESTROY_ITEM(item);
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Not enough inventory space."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5155]");
 			}
 		}
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("#%u item not exist by that vnum."), dwVnum);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5002;%u]", dwVnum);
 	}
 }
 
@@ -527,7 +527,7 @@ ACMD(do_group_random)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Use: grrandom <group one>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5251]");
 		return;
 	}
 
@@ -543,7 +543,7 @@ ACMD(do_group)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: group <group vnum>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5243]");
 		return;
 	}
 
@@ -566,7 +566,7 @@ ACMD(do_mob_coward)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Use: mc <one>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5253]");
 		return;
 	}
 
@@ -589,7 +589,7 @@ ACMD(do_mob_coward)
 
 	if (vnum == 0)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("No such mob by that vnum"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5152]");
 		return;
 	}
 
@@ -624,7 +624,7 @@ ACMD(do_mob_map)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: mm <one>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5196]");
 		return;
 	}
 
@@ -633,9 +633,9 @@ ACMD(do_mob_map)
 	LPCHARACTER tch = CHARACTER_MANAGER::instance().SpawnMobRandomPosition(vnum, ch->GetMapIndex());
 
 	if (tch)
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s spawned in %dx%d"), tch->GetName(), tch->GetX(), tch->GetY());
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5026;%s;%d;%d]", tch->GetName(), tch->GetX(), tch->GetY());
 	else
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Spawn failed."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5183]");
 }
 
 ACMD(do_mob_aggresive)
@@ -648,7 +648,7 @@ ACMD(do_mob_aggresive)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Use: mob <mob one>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5254]");
 		return;
 	}
 
@@ -671,7 +671,7 @@ ACMD(do_mob_aggresive)
 
 	if (vnum == 0)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("No such mob by that vnum"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5152]");
 		return;
 	}
 
@@ -708,7 +708,7 @@ ACMD(do_mob)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Use: mob <mob one>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5254]");
 		return;
 	}
 
@@ -731,7 +731,7 @@ ACMD(do_mob)
 
 	if (vnum == 0)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("No such mob by that vnum"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5152]");
 		return;
 	}
 
@@ -769,7 +769,7 @@ ACMD(do_mob_ld)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Use: mob <mob one>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5254]");
 		return;
 	}
 
@@ -792,7 +792,7 @@ ACMD(do_mob_ld)
 
 	if (vnum == 0)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("No such mob by that vnum"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5152]");
 		return;
 	}
 
@@ -1009,7 +1009,7 @@ ACMD(do_state)
 	if (ch->GetExchange())
 		strlcat(buf, ", Exchange", sizeof(buf));
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s"), buf);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", buf);
 
 	int len;
 	len = snprintf(buf, sizeof(buf), "Coordinate %dx%d (%dx%d)", 
@@ -1027,83 +1027,83 @@ ACMD(do_state)
 			tch->GetMapIndex(), pSec->GetAttribute(tch->GetX(), tch->GetY()), (tch->GetX() - map_setting.iBaseX)/100, (tch->GetY() - map_setting.iBaseY)/100);
 	}
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s"), buf);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", buf);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("LEV %d"), tch->GetLevel());
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("HP %d/%d"), tch->GetHP(), tch->GetMaxHP());
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("SP %d/%d"), tch->GetSP(), tch->GetMaxSP());
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("ATT %d MAGIC_ATT %d SPD %d CRIT %d%% PENE %d%% ATT_BONUS %d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5140;%d]", tch->GetLevel());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5119;%d;%d]", tch->GetHP(), tch->GetMaxHP());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5178;%d;%d]", tch->GetSP(), tch->GetMaxSP());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5063;%d;%d;%d;%d;%d;%d]",
 			tch->GetPoint(POINT_ATT_GRADE),
 			tch->GetPoint(POINT_MAGIC_ATT_GRADE),
 			tch->GetPoint(POINT_ATT_SPEED),
 			tch->GetPoint(POINT_CRITICAL_PCT),
 			tch->GetPoint(POINT_PENETRATE_PCT),
 			tch->GetPoint(POINT_ATT_BONUS));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("DEF %d MAGIC_DEF %d BLOCK %d%% DODGE %d%% DEF_BONUS %d%%"), 
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5093;%d;%d;%d;%d;%d]", 
 			tch->GetPoint(POINT_DEF_GRADE),
 			tch->GetPoint(POINT_MAGIC_DEF_GRADE),
 			tch->GetPoint(POINT_BLOCK),
 			tch->GetPoint(POINT_DODGE),
 			tch->GetPoint(POINT_DEF_BONUS));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("RESISTANCES:"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5167]");
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5255;%3d;%3d;%3d;%3d]",
 			tch->GetPoint(POINT_RESIST_WARRIOR),
 			tch->GetPoint(POINT_RESIST_ASSASSIN),
 			tch->GetPoint(POINT_RESIST_SURA),
 			tch->GetPoint(POINT_RESIST_SHAMAN));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("SWORD:%3d%% THSWORD:%3d%% DAGGER:%3d%% BELL:%3d%% FAN:%3d%% BOW:%3d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5179;%3d;%3d;%3d;%3d;%3d;%3d]",
 			tch->GetPoint(POINT_RESIST_SWORD),
 			tch->GetPoint(POINT_RESIST_TWOHAND),
 			tch->GetPoint(POINT_RESIST_DAGGER),
 			tch->GetPoint(POINT_RESIST_BELL),
 			tch->GetPoint(POINT_RESIST_FAN),
 			tch->GetPoint(POINT_RESIST_BOW));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("FIRE:%3d%% ELEC:%3d%% MAGIC:%3d%% WIND:%3d%% CRIT:%3d%% PENE:%3d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5109;%3d;%3d;%3d;%3d;%3d;%3d]",
 			tch->GetPoint(POINT_RESIST_FIRE),
 			tch->GetPoint(POINT_RESIST_ELEC),
 			tch->GetPoint(POINT_RESIST_MAGIC),
 			tch->GetPoint(POINT_RESIST_WIND),
 			tch->GetPoint(POINT_RESIST_CRITICAL),
 			tch->GetPoint(POINT_RESIST_PENETRATE));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("ICE:%3d%% EARTH:%3d%% DARK:%3d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5126;%3d;%3d;%3d]",
 			tch->GetPoint(POINT_RESIST_ICE),
 			tch->GetPoint(POINT_RESIST_EARTH),
 			tch->GetPoint(POINT_RESIST_DARK));
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("MALL:"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("ATT:%3d%% DEF:%3d%% EXP:%3d%% ITEMx%d GOLDx%d"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5143]");
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5064;%3d;%3d;%3d;%d;%d]",
 			tch->GetPoint(POINT_MALL_ATTBONUS),
 			tch->GetPoint(POINT_MALL_DEFBONUS),
 			tch->GetPoint(POINT_MALL_EXPBONUS),
 			tch->GetPoint(POINT_MALL_ITEMBONUS) / 10,
 			tch->GetPoint(POINT_MALL_GOLDBONUS) / 10);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("BONUS:"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("SKILL:%3d%% NORMAL:%3d%% SKILL_DEF:%3d%% NORMAL_DEF:%3d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5071]");
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5177;%3d;%3d;%3d;%3d]",
 			tch->GetPoint(POINT_SKILL_DAMAGE_BONUS),
 			tch->GetPoint(POINT_NORMAL_HIT_DAMAGE_BONUS),
 			tch->GetPoint(POINT_SKILL_DEFEND_BONUS),
 			tch->GetPoint(POINT_NORMAL_HIT_DEFEND_BONUS));
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("HUMAN:%3d%% ANIMAL:%3d%% ORC:%3d%% MILGYO:%3d%% UNDEAD:%3d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5120;%3d;%3d;%3d;%3d;%3d]",
 			tch->GetPoint(POINT_ATTBONUS_HUMAN),
 			tch->GetPoint(POINT_ATTBONUS_ANIMAL),
 			tch->GetPoint(POINT_ATTBONUS_ORC),
 			tch->GetPoint(POINT_ATTBONUS_MILGYO),
 			tch->GetPoint(POINT_ATTBONUS_UNDEAD));
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("DEVIL:%3d%% INSECT:%3d%% FIRE:%3d%% ICE:%3d%% DESERT:%3d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5094;%3d;%3d;%3d;%3d;%3d]",
 			tch->GetPoint(POINT_ATTBONUS_DEVIL),
 			tch->GetPoint(POINT_ATTBONUS_INSECT),
 			tch->GetPoint(POINT_ATTBONUS_FIRE),
 			tch->GetPoint(POINT_ATTBONUS_ICE),
 			tch->GetPoint(POINT_ATTBONUS_DESERT));
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("TREE:%3d%% MONSTER:%3d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5200;%3d;%3d]",
 			tch->GetPoint(POINT_ATTBONUS_TREE),
 			tch->GetPoint(POINT_ATTBONUS_MONSTER));
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("WARR:%3d%% ASAS:%3d%% SURA:%3d%% SHAM:%3d%%"),
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5255;%3d;%3d;%3d;%3d]",
 			tch->GetPoint(POINT_ATTBONUS_WARRIOR),
 			tch->GetPoint(POINT_ATTBONUS_ASSASSIN),
 			tch->GetPoint(POINT_ATTBONUS_SURA),
@@ -1121,13 +1121,13 @@ ACMD(do_state)
 			int iByPlayer = CPrivManager::instance().GetPrivByCharacter(tch->GetPlayerID(), i);
 
 			if (iByEmpire)
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s for empire : %d"), LC_TEXT(c_apszPrivNames[i]), iByEmpire);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5019;%s;%d]", LC_TEXT(c_apszPrivNames[i]), iByEmpire);
 
 			if (iByGuild)
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s for guild : %d"), LC_TEXT(c_apszPrivNames[i]), iByGuild);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5020;%s;%d]", LC_TEXT(c_apszPrivNames[i]), iByGuild);
 
 			if (iByPlayer)
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s for player : %d"), LC_TEXT(c_apszPrivNames[i]), iByPlayer);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5021;%s;%d]", LC_TEXT(c_apszPrivNames[i]), iByPlayer);
 		}
 }
 
@@ -1144,7 +1144,7 @@ struct notice_packet_func
 		if (!d->GetCharacter())
 			return;
 
-		d->GetCharacter()->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s"), m_str);
+		d->GetCharacter()->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", m_str);
 	}
 };
 
@@ -1169,7 +1169,7 @@ struct notice_map_packet_func
 		if (d->GetCharacter() == NULL) return;
 		if (d->GetCharacter()->GetMapIndex() != m_mapIndex) return;
 
-		d->GetCharacter()->ChatPacket(m_bBigFont == true ? CHAT_TYPE_BIG_NOTICE : CHAT_TYPE_NOTICE, LC_TEXT("%s"), m_str);
+		d->GetCharacter()->ChatPacket(m_bBigFont == true ? CHAT_TYPE_BIG_NOTICE : CHAT_TYPE_NOTICE, "[LS;370;%s]", m_str);
 	}
 };
 
@@ -1193,7 +1193,7 @@ struct log_packet_func
 			return;
 
 		if (d->GetCharacter()->GetGMLevel() > GM_PLAYER)
-			d->GetCharacter()->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s"), m_str);
+			d->GetCharacter()->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", m_str);
 	}
 };
 
@@ -1231,7 +1231,7 @@ ACMD(do_map_notice)
 
 ACMD(do_big_notice)
 {
-	ch->ChatPacket(CHAT_TYPE_BIG_NOTICE, LC_TEXT("%s"), argument);
+	ch->ChatPacket(CHAT_TYPE_BIG_NOTICE, "[LS;370;%s]", argument);
 }
 
 ACMD(do_who)
@@ -1242,7 +1242,7 @@ ACMD(do_who)
 
 	DESC_MANAGER::instance().GetUserCount(iTotal, &paiEmpireUserCount, iLocal);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Total [%d] %d / %d / %d (this server %d)"), 
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5231;%d;%d;%d;%d;%d]", 
 			iTotal, paiEmpireUserCount[1], paiEmpireUserCount[2], paiEmpireUserCount[3], iLocal);
 }
 
@@ -1304,7 +1304,7 @@ ACMD(do_user)
 	if (func.count % 4)
 		ch->ChatPacket(CHAT_TYPE_INFO, func.str);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Total %d"), func.count);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5230;%d]", func.count);
 }
 
 ACMD(do_disconnect)
@@ -1314,7 +1314,7 @@ ACMD(do_disconnect)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("ex) /dc <player name>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5300]");
 		return;
 	}
 
@@ -1323,13 +1323,13 @@ ACMD(do_disconnect)
 
 	if (!tch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s: no such a player."), arg1);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5033;%s]", arg1);
 		return;
 	}
 
 	if (tch == ch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cannot disconnect myself"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5287]");
 		return;
 	}
 	
@@ -1343,7 +1343,7 @@ ACMD(do_kill)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("ex) /kill <player name>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5301]");
 		return;
 	}
 
@@ -1352,7 +1352,7 @@ ACMD(do_kill)
 
 	if (!tch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s: no such a player"), arg1);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5032;%s]", arg1);
 		return;
 	}
 
@@ -1394,7 +1394,7 @@ ACMD(do_set)
 
 	if (!*arg1 || !*arg2 || !*arg3)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: set <name> <field> <value>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5247]");
 		return;
 	}
 
@@ -1402,7 +1402,7 @@ ACMD(do_set)
 
 	if (!tch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s not exist"), arg1);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5024;%s]", arg1);
 		return;
 	}
 
@@ -1483,13 +1483,13 @@ ACMD(do_set)
 		{
 			GoldType amount = 0;
 			str_to_number(amount, arg3);
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s's %s set to [%lld]"), tch->GetName(), set_fields[i].cmd, static_cast<long long>(amount));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5029;%s;%s;%lld]", tch->GetName(), set_fields[i].cmd, static_cast<long long>(amount));
 		}
 		else
 		{
 			int amount = 0;
 			str_to_number(amount, arg3);
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s's %s set to [%d]"), tch->GetName(), set_fields[i].cmd, amount);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5028;%s;%s;%d]", tch->GetName(), set_fields[i].cmd, amount);
 		}
 	}
 }
@@ -1508,7 +1508,7 @@ ACMD(do_advance)
 
 	if (!*arg1 || !*arg2)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: advance <name> <level>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5193]");
 		return;
 	}
 
@@ -1516,7 +1516,7 @@ ACMD(do_advance)
 
 	if (!tch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s not exist"), arg1);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5024;%s]", arg1);
 		return;
 	}
 
@@ -1533,12 +1533,12 @@ ACMD(do_respawn)
 
 	if (*arg1 && !_stricmp(arg1, "all"))
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Respaw everywhere"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5176]");
 		regen_reset(0, 0);
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Respaw around"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5175]");
 		regen_reset(ch->GetX(), ch->GetY());
 	}
 }
@@ -1557,7 +1557,7 @@ ACMD(do_safebox_size)
 	if (size > 3 || size < 0)
 		size = 0;
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Safebox size set to %d"), size);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5180;%d]", size);
 	ch->ChangeSafeboxSize(size);
 }
 
@@ -1579,12 +1579,12 @@ ACMD(do_makeguild)
 
 	if (!check_name(cp.name))
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This is an inappropriate guild name."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5228]");
 		return;
 	}
 
 	gm.CreateGuild(cp);
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("(%s) Guild has been created. [temporary]"), cp.name);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;741;%s]", cp.name);
 }
 
 ACMD(do_deleteguild)
@@ -1657,7 +1657,7 @@ ACMD(do_fishing_simul)
 	int prob_idx = 0;
 	int level = 100;
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: fishing_simul <level> <prob index> <count>"));
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5241]");
 
 	if (*arg1)
 		str_to_number(level, arg1);
@@ -1710,7 +1710,7 @@ ACMD(do_event_flag)
 
 	//quest::CQuestManager::instance().SetEventFlag(arg1, atoi(arg2));
 	quest::CQuestManager::instance().RequestSetEventFlag(arg1, value);
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("RequestSetEventFlag %s %d"), arg1, value);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5174;%s;%d]", arg1, value);
 	sys_log(0, "RequestSetEventFlag %s %d", arg1, value);
 }
 
@@ -1726,7 +1726,7 @@ ACMD(do_private)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: private <map index>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5245]");
 		return;
 	}
 
@@ -1741,7 +1741,7 @@ ACMD(do_private)
 		ch->WarpSet(pkSectreeMap->m_setting.posSpawn.x, pkSectreeMap->m_setting.posSpawn.y, lMapIndex); 
 	}
 	else
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Can't find map by index %d"), map_index);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5077;%d]", map_index);
 }
 
 ACMD(do_qf)
@@ -1777,11 +1777,11 @@ ACMD(do_qf)
 			++it;
 		}
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("setting quest state flag %s %s %d"), questname.c_str(), arg1, value);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5312;%s;%s;%d]", questname.c_str(), arg1, value);
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("setting quest state flag failed"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5313]");
 	}
 }
 
@@ -1938,7 +1938,7 @@ ACMD(do_book)
 
 	if (!pkProto)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no such a skill."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5222]");
 		return;
 	}
 
@@ -1954,7 +1954,7 @@ ACMD(do_setskillother)
 
 	if (!*arg1 || !*arg2 || !*arg3 || !isdigit(*arg3))
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: setskillother <target> <skillname> <lev>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5199]");
 		return;
 	}
 
@@ -1964,7 +1964,7 @@ ACMD(do_setskillother)
 
 	if (!tch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no such character."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5223]");
 		return;
 	}
 
@@ -1981,7 +1981,7 @@ ACMD(do_setskillother)
 
 	if (!pk)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("No such a skill by that name."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5151]");
 		return;
 	}
 
@@ -1999,7 +1999,7 @@ ACMD(do_setskill)
 
 	if (!*arg1 || !*arg2 || !isdigit(*arg2))
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: setskill <name> <lev>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5198]");
 		return;
 	}
 
@@ -2017,7 +2017,7 @@ ACMD(do_setskill)
 
 	if (!pk)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("No such a skill by that name."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5151]");
 		return;
 	}
 
@@ -2054,7 +2054,7 @@ ACMD(do_set_skill_group)
 	ch->SetSkillGroup(skill_group);
 	
 	ch->ClearSkill();
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("skill group to %d."), skill_group);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5314;%d]", skill_group);
 }
 
 ACMD(do_reload)
@@ -2075,22 +2075,22 @@ ACMD(do_reload)
 		switch (LOWER(*arg1))
 		{
 			case 'u': // User Count
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Reloading state_user_count."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5173]");
 				LoadStateUserCount();
 				break;
 
 			case 'p': // Proto
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Reloading prototype tables,"));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5171]");
 				db_clientdesc->DBPacket(HEADER_GD_RELOAD_PROTO, 0, NULL, 0);
 				break;
 
 			case 's': // Strings
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Reloading notice string."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5170]");
 				DBManager::instance().LoadDBString();
 				break;
 
 			case 'q': // Quest
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Reloading quest."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5172]");
 				quest::CQuestManager::instance().Reload();
 				break;
 
@@ -2099,12 +2099,12 @@ ACMD(do_reload)
 				break;
 
 			case 'a': // Admin
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Reloading Admin information."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5168]");
 				db_clientdesc->DBPacket(HEADER_GD_RELOAD_ADMIN, 0, NULL, 0);
 				break;
 
 			case 'c': // Cube
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Reloading crafting information."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5169]");
 				Cube_init();
 				break;
 
@@ -2159,11 +2159,11 @@ ACMD(do_reload)
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Reloading state_user_count."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5173]");
 		LoadStateUserCount();
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Reloading prototype tables,"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5171]");
 		db_clientdesc->DBPacket(HEADER_GD_RELOAD_PROTO, 0, NULL, 0);
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Reloading notice string."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5170]");
 		DBManager::instance().LoadDBString();
 	}
 }
@@ -2180,7 +2180,7 @@ ACMD(do_level)
 
 	if (!*arg2)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: level <level>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5195]");
 		return;
 	}
 
@@ -2194,7 +2194,7 @@ ACMD(do_level)
 
 ACMD(do_gwlist)
 {
-	ch->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("This guild is currently at war."));
+	ch->ChatPacket(CHAT_TYPE_NOTICE, "[LS;5226]");
 	CGuildManager::instance().ShowGuildWarList(ch);
 }
 
@@ -2219,7 +2219,7 @@ ACMD(do_stop_guild_war)
 		std::swap(id1, id2);
 	}
 
-	ch->ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%d %d"), id1, id2);
+	ch->ChatPacket(CHAT_TYPE_TALKING, "[LS;5004;%d;%d]", id1, id2);
 	CGuildManager::instance().RequestEndWar(id1, id2);
 }
 
@@ -2246,13 +2246,13 @@ ACMD(do_guild_state)
 	CGuild* pGuild = CGuildManager::instance().FindGuildByName(arg1);
 	if (pGuild != NULL)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("GuildID: %d"), pGuild->GetID());
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("GuildMasterPID: %d"), pGuild->GetMasterPID());
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("IsInWar: %d"), pGuild->UnderAnyWar());
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5116;%d]", pGuild->GetID());
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5117;%d]", pGuild->GetMasterPID());
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5134;%d]", pGuild->UnderAnyWar());
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s: This guild does not exist."), arg1);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;743;%s]", arg1);
 	}
 }
 
@@ -2311,7 +2311,7 @@ ACMD(do_getqf)
 
 		if (!tch)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no such character."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5223]");
 			return;
 		}
 	}
@@ -2358,11 +2358,11 @@ ACMD(do_set_state)
 			++it;
 		}
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("setting quest state flag %s %s %d"), questname.c_str(), arg1, value);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5312;%s;%s;%d]", questname.c_str(), arg1, value);
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("setting quest state flag failed"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5313]");
 	}
 }
 
@@ -2376,7 +2376,7 @@ ACMD(do_setqf)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: setqf <flagname> <value> [<character name>]"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5197]");
 		return;
 	}
 
@@ -2387,7 +2387,7 @@ ACMD(do_setqf)
 
 	if (!tch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no such character."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5223]");
 		return;
 	}
 
@@ -2398,7 +2398,7 @@ ACMD(do_setqf)
 		int value = 0;
 		str_to_number(value, arg2);
 		pPC->SetFlag(arg1, value);
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Quest flag set: %s %d"), arg1, value);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5166;%s;%d]", arg1, value);
 	}
 }
 
@@ -2411,7 +2411,7 @@ ACMD(do_delqf)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: delqf <flagname> [<character name>]"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5194]");
 		return;
 	}
 
@@ -2422,7 +2422,7 @@ ACMD(do_delqf)
 
 	if (!tch)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no such character."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5223]");
 		return;
 	}
 
@@ -2431,9 +2431,9 @@ ACMD(do_delqf)
 	if (pPC)
 	{
 		if (pPC->DeleteFlag(arg1))
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Delete success."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5099]");
 		else
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Delete failed. Quest flag does not exist."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5098]");
 	}
 }
 
@@ -2503,12 +2503,12 @@ ACMD(do_polymorph_item)
 			else
 			{
 				M2_DESTROY_ITEM(item);
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Not enough inventory space."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5155]");
 			}
 		}
 		else
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("#%d item not exist by that vnum."), 70103);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5001;%d]", 70103);
 		}
 		//ch->SetPolymorph(dwVnum, bMaintainStat);
 	}
@@ -2565,11 +2565,11 @@ ACMD(do_priv_empire)
 	return;
 
 USAGE:
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("usage : priv_empire <empire> <type> <value> <duration>"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("<empire>    0 - 3 (0==all)"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("<type>      1:item_drop, 2:gold_drop, 3:gold10_drop, 4:exp"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("<value>     percent"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("<duration>  hour"));
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5317]");
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5057]");
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5058]");
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5059]");
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5056]");
 }
 
 /**
@@ -2595,7 +2595,7 @@ ACMD(do_priv_guild)
 		}
 
 		if (!g)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no guild with that name or number."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5219]");
 		else
 		{
 			char buf[1024+1];
@@ -2658,7 +2658,7 @@ ACMD(do_socket_item)
 		{
 			if (!ITEM_MANAGER::instance().GetVnum(arg1, dwVnum))
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("#%d item not exist by that vnum."), dwVnum);
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5001;%d]", dwVnum);
 				return;
 			}
 		}
@@ -2672,7 +2672,7 @@ ACMD(do_socket_item)
 		}
 		else
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("#%d cannot create item."), dwVnum);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5000;%d]", dwVnum);
 		}
 	}
 }
@@ -2710,7 +2710,7 @@ ACMD(do_block_chat_list)
 	// GM Either this or block_chat_privilege People without a command cannot use the command.
 	if (!ch || (ch->GetGMLevel() < GM_HIGH_WIZARD && ch->GetQuestFlag("chat_privilege.block") <= 0))
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no such command"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5224]");
 		return;
 	}
 
@@ -2728,7 +2728,7 @@ ACMD(do_vote_block_chat)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: vote_block_chat <name>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5249]");
 		return;
 	}
 
@@ -2762,7 +2762,7 @@ ACMD(do_vote_block_chat)
 		}
 
 		if (ch)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Chat block requested."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5089]");
 
 		return;
 	}
@@ -2776,7 +2776,7 @@ ACMD(do_block_chat)
 	// GM Either this or block_chat_privilege People without a command cannot use the command.
 	if (ch && (ch->GetGMLevel() < GM_HIGH_WIZARD && ch->GetQuestFlag("chat_privilege.block") <= 0))
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There is no such command"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5224]");
 		return;
 	}
 
@@ -2786,7 +2786,7 @@ ACMD(do_block_chat)
 	if (!*arg1)
 	{
 		if (ch)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: block_chat <name> <time> (0 to off)"));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5238]");
 
 		return;
 	}
@@ -2798,8 +2798,8 @@ ACMD(do_block_chat)
 	{
 		if (ch)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Invalid format of time. Please specify by adding h, m, or s."));
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Example) 10s, 10m, 1m 30s"));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5129]");
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5108]");
 		}
 		return;
 	}
@@ -2831,7 +2831,7 @@ ACMD(do_block_chat)
 		}
 
 		if (ch)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Chat block requested."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5089]");
 
 		return;
 	}
@@ -2862,7 +2862,7 @@ ACMD(do_build)
 
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Invalid syntax: no command"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5132]");
 		return;
 	}
 
@@ -2895,7 +2895,7 @@ ACMD(do_build)
 
 				if (!*arg1 || !*arg2 || !*arg3 || !*arg4 || !*arg5 || !*arg6)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Invalid syntax"));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5131]");
 					return;
 				}
 
@@ -2907,7 +2907,7 @@ ACMD(do_build)
 				const TObjectProto * t = CManager::instance().GetObjectProto(dwVnum);
 				if (!t)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This building does not exist."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5225]");
 					return;
 				}
 
@@ -2917,7 +2917,7 @@ ACMD(do_build)
 				{
 					if (pkLand->FindObjectByGroup(t->dwGroupVnum))
 					{
-						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There are types of buildings that cannot be built together."));
+						ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5217]");
 						return;
 					}
 				}
@@ -2931,7 +2931,7 @@ ACMD(do_build)
 						// Is it built? ?
 						if (!pkLand->FindObjectByGroup(t->dwDependOnGroupVnum))
 						{
-							ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The buildings required for construction have not been built."));
+							ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5204]");
 							return;
 						}
 					}
@@ -2943,13 +2943,13 @@ ACMD(do_build)
 					// Construction cost check
 					if (t->dwPrice > BUILDING_MAX_PRICE)
 					{
-						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The construction task failed beyond the building cost information."));
+						ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5205]");
 						return;
 					}
 
 					if (ch->GetGold() < (int)t->dwPrice)
 					{
-						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Construction costs are insufficient."));
+						ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5091]");
 						return;
 					}
 
@@ -2966,7 +2966,7 @@ ACMD(do_build)
 
 						if ((int) dwItemCount > ch->CountSpecifyItem(dwItemVnum))
 						{
-							ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Construction is not possible due to lack of materials."));
+							ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5092]");
 							return;
 						}
 					}
@@ -2979,7 +2979,7 @@ ACMD(do_build)
 				/*
 				   if (x_rot != 0.0f || y_rot != 0.0f || z_rot != 0.0f)
 				   {
-				   ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Building rotation feature is not yet available"));
+				   ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5074]");
 				   return;
 				   }
 				 */
@@ -3000,7 +3000,7 @@ ACMD(do_build)
 				if (!isSuccess)
 				{
 					if (test_server)
-						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This is a location where buildings cannot be built."));
+						ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5227]");
 					return;
 				}
 
@@ -3036,7 +3036,7 @@ ACMD(do_build)
 
 				if (!*arg1)
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Invalid syntax"));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5131]");
 					return;
 				}
 
@@ -3073,7 +3073,7 @@ ACMD(do_build)
 						pkLand->RequestCreateWall(mapIndex, 270.0f);
 						break;
 					default:
-						ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("guild.wall.build unknown_direction[%s]"), arg1);
+						ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5304;%s]", arg1);
 						sys_err("guild.wall.build unknown_direction[%s]", arg1);
 						break;
 				}
@@ -3136,7 +3136,7 @@ ACMD(do_build)
 			break;
 
 		default:
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Invalid command %s"), arg1);
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5128;%s]", arg1);
 			break;
 	}
 }
@@ -3157,10 +3157,10 @@ ACMD(do_clear_quest)
 
 ACMD(do_horse_state)
 {
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Horse Information:"));
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Level  %d"), ch->GetHorseLevel());
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Health %d/%d (%d%%)"), ch->GetHorseHealth(), ch->GetHorseMaxHealth(), ch->GetHorseHealth() * 100 / ch->GetHorseMaxHealth());
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Stam   %d/%d (%d%%)"), ch->GetHorseStamina(), ch->GetHorseMaxStamina(), ch->GetHorseStamina() * 100 / ch->GetHorseMaxStamina());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5122]");
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5142;%d]", ch->GetHorseLevel());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5121;%d;%d;%d]", ch->GetHorseHealth(), ch->GetHorseMaxHealth(), ch->GetHorseHealth() * 100 / ch->GetHorseMaxHealth());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5185;%d;%d;%d]", ch->GetHorseStamina(), ch->GetHorseMaxStamina(), ch->GetHorseStamina() * 100 / ch->GetHorseMaxStamina());
 }
 
 ACMD(do_horse_level)
@@ -3174,7 +3174,7 @@ ACMD(do_horse_level)
 
 	if (!*arg1 || !*arg2)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("usage : /horse_level <name> <level>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5316]");
 		return;
 	}
 
@@ -3182,14 +3182,14 @@ ACMD(do_horse_level)
 
 	if (NULL == victim)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This character does not exist."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;753]");
 		return;
 	}
 
 	str_to_number(level, arg2);
 	level = MINMAX(0, level, HORSE_MAX_LEVEL);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("horse level set (%s: %d)"), victim->GetName(), level);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5305;%s;%d]", victim->GetName(), level);
 
 	victim->SetHorseLevel(level);
 	victim->ComputePoints();
@@ -3202,7 +3202,7 @@ ACMD(do_horse_level)
 
 	int level = MINMAX(0, atoi(arg1), HORSE_MAX_LEVEL);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("horse level set to %d."), level);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5306;%d]", level);
 	ch->SetHorseLevel(level);
 	ch->ComputePoints();
 	ch->SkillLevelPacket();
@@ -3245,7 +3245,7 @@ ACMD(do_horse_set_stat)
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage : /horse_set_stat <hp> <stamina>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5236]");
 	}
 }
 
@@ -3258,7 +3258,7 @@ ACMD(do_save_attribute_to_image) // command "/saveati" for alias
 
 	if (!*szMapIndex || !*szFileName)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: /saveati <map_index> <filename>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5192]");
 		return;
 	}
 
@@ -3266,9 +3266,9 @@ ACMD(do_save_attribute_to_image) // command "/saveati" for alias
 	str_to_number(lMapIndex, szMapIndex);
 
 	if (SECTREE_MANAGER::instance().SaveAttributeToImage(lMapIndex, szFileName))
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Save done."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5181]");
 	else
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Save failed."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5182]");
 }
 
 ACMD(do_affect_remove)
@@ -3280,8 +3280,8 @@ ACMD(do_affect_remove)
 
 	if (!*arg1 || !*arg2)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: /affect_remove <player name>"));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Syntax: /affect_remove <type> <point>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5190]");
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5191]");
 
 		LPCHARACTER tch = ch;
 
@@ -3289,8 +3289,8 @@ ACMD(do_affect_remove)
 			if (!(tch = CHARACTER_MANAGER::instance().FindPC(arg1)))
 				tch = ch;
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("-- Affect List of %s -------------------------------"), tch->GetName());
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Type Point Modif Duration Flag"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5037;%s]", tch->GetName());
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5234]");
 
 		const std::list<CAffect *> & cont = tch->GetAffectContainer();
 
@@ -3300,7 +3300,7 @@ ACMD(do_affect_remove)
 		{
 			CAffect * pkAff = *it++;
 
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%4d %5d %5d %8d %u"), 
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5003;%4d;%5d;%5d;%8d;%u]", 
 					pkAff->dwType, pkAff->bApplyOn, pkAff->lApplyValue, pkAff->lDuration, pkAff->dwFlag);
 		}
 		return;
@@ -3321,9 +3321,9 @@ ACMD(do_affect_remove)
 	}
 
 	if (removed)
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Affect successfully removed."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5066]");
 	else
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Not affected by that type and point."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5154]");
 }
 
 ACMD(do_change_attr)
@@ -3366,17 +3366,17 @@ ACMD(do_end_duel)
 	LPCHARACTER pChar = CHARACTER_MANAGER::instance().FindPC(szName);
 	if (pChar == NULL)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This character does not exist."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;753]");
 		return;
 	}
 
 	if (CArenaManager::instance().EndDuel(pChar->GetPlayerID()) == false)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Forced shutdown of Dalian failed"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5112]");
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Successful forced shutdown of Dalian"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5187]");
 	}
 }
 
@@ -3424,7 +3424,7 @@ ACMD(do_duel)
 			}
 			else
 			{
-				pChar1->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("<Party> You have left the party."));
+				pChar1->ChatPacket(CHAT_TYPE_INFO, "[LS;5054]");
 				pParty->Quit(pChar1->GetPlayerID());
 			}
 		}
@@ -3438,23 +3438,23 @@ ACMD(do_duel)
 			}
 			else
 			{
-				pChar2->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("<Party> You have left the party."));
+				pChar2->ChatPacket(CHAT_TYPE_INFO, "[LS;5054]");
 				pParty->Quit(pChar2->GetPlayerID());
 			}
 		}
 		
 		if (CArenaManager::instance().StartDuel(pChar1, pChar2, set, minute) == true)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Dalian has started successfully."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5095]");
 		}
 		else
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("I'm having trouble starting sparring."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5125]");
 		}
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There are no spammers."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5215]");
 	}
 }
 
@@ -3469,7 +3469,7 @@ ACMD(do_stat_plus_amount)
 
 	if (ch->IsPolymorphed())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Abilities cannot be increased while transformed."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5065]");
 		return;
 	}
 
@@ -3477,7 +3477,7 @@ ACMD(do_stat_plus_amount)
 
 	if (nRemainPoint <= 0)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There are no stat points left."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5216]");
 		return;
 	}
 
@@ -3486,13 +3486,13 @@ ACMD(do_stat_plus_amount)
 
 	if (nRemainPoint < nPoint)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There are few stat points left."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5214]");
 		return;
 	}
 
 	if (nPoint < 0)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The value was entered incorrectly."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5213]");
 		return;
 	}
 	
@@ -3527,7 +3527,7 @@ ACMD(do_stat_plus_amount)
 			break;
 
 		default :
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The subcommand of the command is incorrect."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5212]");
 			return;
 			break;
 	}
@@ -3560,7 +3560,7 @@ ACMD(do_break_marriage)
 	str_to_number(pids.pid1, arg1);
 	str_to_number(pids.pid2, arg2);
 	
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Breaks off the engagement between player %d and player %d."), pids.pid1, pids.pid2);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5073;%d;%d]", pids.pid1, pids.pid2);
 	db_clientdesc->DBPacket(HEADER_GD_BREAK_MARRIAGE, 0, &pids, sizeof(pids));
 }
 
@@ -3600,7 +3600,7 @@ ACMD(do_reset_subskill)
 	
 	if (!*arg1)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: reset_subskill <name>"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5246]");
 		return;
 	}
 	
@@ -3610,7 +3610,7 @@ ACMD(do_reset_subskill)
 		return;
 
 	tch->ClearSubSkill();
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Subskill of [%s] was reset"), tch->GetName());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5186;%s]", tch->GetName());
 }
 
 
@@ -3624,7 +3624,7 @@ ACMD(do_temp)
 
 	if (0 == arg1[0] || 0 == arg2[0])
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Usage: empire money"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5240]");
 		return;
 	}
 
@@ -3642,7 +3642,7 @@ ACMD(do_flush)
 
 	if (0 == arg1[0])
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("usage : /flush player_id"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5315]");
 		return;
 	}
 
@@ -3686,12 +3686,12 @@ ACMD(do_weeklyevent)
 		{
 			CBattleArena::instance().Start(rand()%3 + 1);
 		}
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Weekly Event Start"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5258]");
 	}
 	else
 	{
 		CBattleArena::instance().ForceEnd();
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Weekly Event End"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5257]");
 	}
 }
 
@@ -3706,12 +3706,12 @@ ACMD(do_event_helper)
 	if (mode == 1)
 	{
 		xmas::SpawnEventHelper(true);
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Event Helper Spawn"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5106]");
 	}
 	else
 	{
 		xmas::SpawnEventHelper(false);
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Event Helper Delete"));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5105]");
 	}
 }
 
@@ -3745,7 +3745,7 @@ ACMD(do_get_mob_count)
 
 	pSectree->for_each(f);
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("MapIndex: %d MobCount %d"), ch->GetMapIndex(), f.nCount);
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5145;%d;%d]", ch->GetMapIndex(), f.nCount);
 }
 
 ACMD(do_clear_land)
@@ -3757,7 +3757,7 @@ ACMD(do_clear_land)
 		return;
 	}
 
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Guild Land(%d) Cleared"), pLand->GetID());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5115;%d]", pLand->GetID());
 
 	building::CManager::instance().ClearLand(pLand->GetID());
 }
@@ -3771,7 +3771,7 @@ ACMD(do_set_stat)
 
 	if (*szName == '\0' || *szChangeAmount == '\0')
 	{
-		ch->ChatPacket (CHAT_TYPE_INFO, LC_TEXT("Invalid argument."));
+		ch->ChatPacket (CHAT_TYPE_INFO, "[LS;5127]");
 		return;
 	}
 
@@ -3783,12 +3783,12 @@ ACMD(do_set_stat)
 
 		if (pkCCI)
 		{
-			ch->ChatPacket (CHAT_TYPE_INFO, LC_TEXT("Cannot find player(%s). %s is not in your game server."), szName, szName);
+			ch->ChatPacket (CHAT_TYPE_INFO, "[LS;5081;%s;%s]", szName, szName);
 			return;
 		}
 		else
 		{
-			ch->ChatPacket (CHAT_TYPE_INFO, LC_TEXT("Cannot find player(%s). Perhaps %s doesn't login or exist."), szName, szName);
+			ch->ChatPacket (CHAT_TYPE_INFO, "[LS;5082;%s;%s]", szName, szName);
 			return;
 		}
 	}
@@ -3796,13 +3796,13 @@ ACMD(do_set_stat)
 	{
 		if (tch->IsPolymorphed())
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Abilities cannot be increased while transformed."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5065]");
 			return;
 		}
 
 		if (subcmd != POINT_HT && subcmd != POINT_IQ && subcmd != POINT_ST && subcmd != POINT_DX)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The subcommand of the command is incorrect."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5212]");
 			return;
 		}
 		int nRemainPoint = static_cast<int>(tch->GetPoint(POINT_STAT));
@@ -3817,7 +3817,7 @@ ACMD(do_set_stat)
 		case POINT_HT:
 			if (nPoint < JobInitialPoints[tch->GetJob()].ht)
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Cannot set stat under initial stat."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5086]");
 				return;
 			}
 			n = 0;
@@ -3825,7 +3825,7 @@ ACMD(do_set_stat)
 		case POINT_IQ:
 			if (nPoint < JobInitialPoints[tch->GetJob()].iq)
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Cannot set stat under initial stat."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5086]");
 				return;
 			}
 			n = 1;
@@ -3833,7 +3833,7 @@ ACMD(do_set_stat)
 		case POINT_ST:
 			if (nPoint < JobInitialPoints[tch->GetJob()].st)
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Cannot set stat under initial stat."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5086]");
 				return;
 			}
 			n = 2;
@@ -3841,7 +3841,7 @@ ACMD(do_set_stat)
 		case POINT_DX:
 			if (nPoint < JobInitialPoints[tch->GetJob()].dx)
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Cannot set stat under initial stat."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5086]");
 				return;
 			}
 			n = 3;
@@ -3856,7 +3856,7 @@ ACMD(do_set_stat)
 
 		if (nRemainPoint < nChangeAmount)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("There are few stat points left."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5214]");
 			return;
 		}
 
@@ -3870,7 +3870,7 @@ ACMD(do_set_stat)
 
 		const char* stat_name[4] = {"con", "int", "str", "dex"};
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s's %s change %d to %d"), szName, stat_name[n], nCurPoint, nPoint);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5027;%s;%s;%d;%d]", szName, stat_name[n], nCurPoint, nPoint);
 	}
 }
 
@@ -3880,7 +3880,7 @@ ACMD(do_get_item_id_list)
 	{
 		LPITEM item = ch->GetInventoryItem(i);
 		if (item != NULL)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cell : %d, name : %s, id : %d"), item->GetCell(), item->GetName(), item->GetID());
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5288;%d;%s;%d]", item->GetCell(), item->GetName(), item->GetID());
 	}
 }
 
@@ -4201,7 +4201,7 @@ ACMD (do_use_item)
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("I can't wear it because I don't have the item."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5124]");
 	}
 }
 
@@ -4243,7 +4243,7 @@ ACMD (do_ds_list)
 		
 		LPITEM item = ch->GetItem(cell);
 		if (item != NULL)
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cell : %d, name : %s, id : %d"), item->GetCell(), item->GetName(), item->GetID());
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5288;%d;%s;%d]", item->GetCell(), item->GetName(), item->GetID());
 	}
 }
 

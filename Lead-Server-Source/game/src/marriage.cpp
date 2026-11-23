@@ -440,10 +440,10 @@ namespace marriage
 				LPCHARACTER ch;
 				ch = CHARACTER_MANAGER::instance().FindByPID(m_pid1);
 				if (ch)
-					ch->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("lovepoint bykill %.3g total %d"), love_point / 1000000., GetMarriagePoint());
+					ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;5308;%.3g;%d]", love_point / 1000000., GetMarriagePoint());
 				ch = CHARACTER_MANAGER::instance().FindByPID(m_pid2);
 				if (ch)
-					ch->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("lovepoint bykill %.3g total %d"), love_point / 1000000., GetMarriagePoint());
+					ch->ChatPacket(CHAT_TYPE_PARTY, "[LS;5308;%.3g;%d]", love_point / 1000000., GetMarriagePoint());
 			}
 		}
 	}

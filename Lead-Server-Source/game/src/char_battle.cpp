@@ -286,14 +286,14 @@ void CHARACTER::DeathPenalty(BYTE bTown)
 	if (GetLevel() < 10)
 	{
 		sys_log(0, "NO_DEATH_PENALTY_LESS_LV10(%s)", GetName());
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You did not lose any Experience because of the Blessing of the Dragon God."));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;901]");
 		return;
 	}
 
    	if (number(0, 2))
 	{
 		sys_log(0, "NO_DEATH_PENALTY_LUCK(%s)", GetName());
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You did not lose any Experience because of the Blessing of the Dragon God."));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;901]");
 		return;
 	}
 
@@ -307,7 +307,7 @@ void CHARACTER::DeathPenalty(BYTE bTown)
 			if (FindAffect(AFFECT_NO_DEATH_PENALTY))
 			{
 				sys_log(0, "NO_DEATH_PENALTY_AFFECT(%s)", GetName());
-				ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You did not lose any Experience because of the Blessing of the Dragon God."));
+				ChatPacket(CHAT_TYPE_INFO, "[LS;901]");
 				RemoveAffect(AFFECT_NO_DEATH_PENALTY);
 				return;
 			}
@@ -560,7 +560,7 @@ void CHARACTER::RewardGold(LPCHARACTER pkAttacker)
 	// --------- Money Drop Multiplier Determination ----------
 	//
 	if (test_server)
-		pkAttacker->ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("gold_mul %d rate %d"), iGoldMultipler, CHARACTER_MANAGER::instance().GetMobGoldAmountRate(pkAttacker));
+		pkAttacker->ChatPacket(CHAT_TYPE_PARTY, "[LS;5303;%d;%d]", iGoldMultipler, CHARACTER_MANAGER::instance().GetMobGoldAmountRate(pkAttacker));
 
 	//
 	// --------- Actual drop handling -------------
@@ -1267,7 +1267,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 
 
 					if (number(1, 100) < iNoPenaltyProb)
-						pkKiller->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You did not drop any Item(s) as you are protected by the Dragon God."));
+						pkKiller->ChatPacket(CHAT_TYPE_INFO, "[LS;910]");
 					else
 					{
 						pkKiller->UpdateAlignment(-20000);
@@ -1335,7 +1335,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				if (pkKiller->m_dwUnderGuildWarInfoMessageTime < get_dword_time())
 				{
 					pkKiller->m_dwUnderGuildWarInfoMessageTime = get_dword_time() + 60000;
-					pkKiller->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("[Guild] There are no experience points for hunting during a guild war."));
+					pkKiller->ChatPacket(CHAT_TYPE_INFO, "[LS;558]");
 				}
 			}
 		}
@@ -1690,7 +1690,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 						IsPenetrate = true;
 
 						if (test_server)
-							ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Additional Stabbing Weapon Damage %d"), GetPoint(POINT_DEF_GRADE) * (100 + GetPoint(POINT_DEF_BONUS)) / 100);
+							ChatPacket(CHAT_TYPE_INFO, "[LS;911;%d]", GetPoint(POINT_DEF_GRADE) * (100 + GetPoint(POINT_DEF_BONUS)) / 100);
 
 						dam += static_cast<int>(GetPoint(POINT_DEF_GRADE) * (100 + GetPoint(POINT_DEF_BONUS)) / 100);
 
@@ -1714,8 +1714,8 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				{
 					if (test_server)
 					{
-						pAttacker->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s block! (%d%%)"), GetName(), GetPoint(POINT_BLOCK));
-						ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s block! (%d%%)"), GetName(), GetPoint(POINT_BLOCK));
+						pAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;912;%s;%d]", GetName(), GetPoint(POINT_BLOCK));
+						ChatPacket(CHAT_TYPE_INFO, "[LS;912;%s;%d]", GetName(), GetPoint(POINT_BLOCK));
 					}
 
 					SendDamagePacket(pAttacker, 0, DAMAGE_BLOCK);
@@ -1729,8 +1729,8 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 				{
 					if (test_server)
 					{
-						pAttacker->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s dodge! (%d%%)"), GetName(), GetPoint(POINT_DODGE));
-						ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s dodge! (%d%%)"), GetName(), GetPoint(POINT_DODGE));
+						pAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;5018;%s;%d]", GetName(), GetPoint(POINT_DODGE));
+						ChatPacket(CHAT_TYPE_INFO, "[LS;5018;%s;%d]", GetName(), GetPoint(POINT_DODGE));
 					}
 
 					SendDamagePacket(pAttacker, 0, DAMAGE_DODGE);
@@ -1816,7 +1816,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 						IsPenetrate = true;
 
 						if (test_server)
-							ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Additional Stabbing Weapon Damage %d"), GetPoint(POINT_DEF_GRADE) * (100 + GetPoint(POINT_DEF_BONUS)) / 100);
+							ChatPacket(CHAT_TYPE_INFO, "[LS;911;%d]", GetPoint(POINT_DEF_GRADE) * (100 + GetPoint(POINT_DEF_BONUS)) / 100);
 						dam += static_cast<int>(GetPoint(POINT_DEF_GRADE) * (100 + GetPoint(POINT_DEF_BONUS)) / 100);
 					}
 				}
@@ -2118,7 +2118,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 			{
 				if(pAttacker)
 				{
-					pAttacker->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("-> %s, DAM %d HP %d(%d%%) %s%s"),
+					pAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;5038;%s;%d;%d;%d;%s;%s]",
 							GetName(),
 							dam,
 							GetHP(),
@@ -2128,7 +2128,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 							IsDeathBlow ? "deathblow " : "");
 				}
 
-				ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("<- %s, DAM %d HP %d(%d%%) %s%s"),
+				ChatPacket(CHAT_TYPE_PARTY, "[LS;5040;%s;%d;%d;%d;%s;%s]",
 						pAttacker ? pAttacker->GetName() : 0,
 						dam,
 						GetHP(),
@@ -2140,7 +2140,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 
 			if (m_bDetailLog)
 			{
-				ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s[%d] attacks at: %d %d"), pAttacker->GetName(), (DWORD) pAttacker->GetVID(), pAttacker->GetX(), pAttacker->GetY());
+				ChatPacket(CHAT_TYPE_INFO, "[LS;5034;%s;%d;%d;%d]", pAttacker->GetName(), (DWORD) pAttacker->GetVID(), pAttacker->GetX(), pAttacker->GetY());
 			}
 		}
 
@@ -2290,7 +2290,7 @@ void CHARACTER::Dead(LPCHARACTER pkKiller, bool bImmediateDead)
 		if (test_server)
 		{
 			if (quest::CQuestManager::instance().GetEventFlag("exp_bonus_log") && iBaseExp>0)
-				to->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("exp bonus %d%%"), (iExp-iBaseExp)*100/iBaseExp);
+				to->ChatPacket(CHAT_TYPE_INFO, "[LS;5302;%d]", (iExp-iBaseExp)*100/iBaseExp);
 		}
 
 		iExp = AdjustExpByLevel(to, iExp);

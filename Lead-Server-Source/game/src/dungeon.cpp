@@ -1094,7 +1094,7 @@ namespace
 			if (ent->IsType(ENTITY_CHARACTER))
 			{
 				LPCHARACTER ch = (LPCHARACTER) ent;
-				ch->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("%s"), m_psz);
+				ch->ChatPacket(CHAT_TYPE_NOTICE, "[LS;370;%s]", m_psz);
 			}
 		}
 

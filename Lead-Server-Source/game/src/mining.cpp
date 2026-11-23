@@ -292,7 +292,7 @@ namespace mining
 		CItem& pick = *item;
 		Pick_MaxCurExp(pick);
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your mining points have reached their maximum. (%lld)"), Pick_GetCurExp(pick));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5278;%lld]", Pick_GetCurExp(pick));
 	}
 
 	void PracticePick(LPCHARACTER ch, LPITEM item)
@@ -312,20 +312,20 @@ namespace mining
 
 			if (Pick_Refinable(pick))
 			{
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your mining points have reached their maximum level."));
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can get lumberjack Deokbae to upgrade your Pickaxe."));
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;728]");
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;729]");
 			}
 			else
 			{
 				Pick_IncCurExp(pick);	
 
-				ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your Mining Points have increased! (%lld/%d)"),
+				ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5275;%lld;%d]",
 						Pick_GetCurExp(pick), Pick_GetMaxExp(pick));
 
 				if (Pick_Refinable(pick))
 				{
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your mining points have reached their maximum level."));
-					ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You can get lumberjack Deokbae to upgrade your Pickaxe."));
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;728]");
+					ch->ChatPacket(CHAT_TYPE_INFO, "[LS;729]");
 				}
 			}
 		}
@@ -355,14 +355,14 @@ namespace mining
 		// REFINE_PICK
 		if (!pick || !Pick_Check(*pick))
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot mine without a Pick."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;731]");
 			return 0;
 		}
 		// END_OF_REFINE_PICK
 
 		if (!load)
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Nothing to mine here."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;732]");
 			return 0;
 		}
 
@@ -371,11 +371,11 @@ namespace mining
 		if (number(1, 100) <= iPct)
 		{
 			OreDrop(ch, load->GetRaceNum());
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The mining has been successful."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;733]");
 		}
 		else
 		{
-			ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The mining has failed."));
+			ch->ChatPacket(CHAT_TYPE_INFO, "[LS;734]");
 		}
 
 		PracticePick(ch, pick);

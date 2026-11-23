@@ -10,25 +10,25 @@
 
 ACMD(do_oxevent_show_quiz)
 {
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("===== OX QUIZ LIST ====="));
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5060]");
 	COXEventManager::instance().ShowQuizList(ch);
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("===== OX QUIZ LIST END ====="));
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5061]");
 }
 
 ACMD(do_oxevent_log)
 {
 	if ( COXEventManager::instance().LogWinner() == false )
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("OX The other event participants are being noted down."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;803]");
 	}
 	else
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("OX The other event participants have not been noted down."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;814]");
 	}
 }
 
 ACMD(do_oxevent_get_attender)
 {
-	ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Number of other participants : %d"), COXEventManager::instance().GetAttenderCount());
+	ch->ChatPacket(CHAT_TYPE_INFO, "[LS;825;%d]", COXEventManager::instance().GetAttenderCount());
 }
 

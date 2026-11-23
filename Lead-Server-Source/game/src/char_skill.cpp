@@ -268,7 +268,7 @@ bool CHARACTER::LearnGrandMasterSkill(DWORD dwSkillVnum)
 
 	if (!IsLearnableSkill(dwSkillVnum))
 	{
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot train this skill."));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;948]");
 		return false;
 	}
 
@@ -283,7 +283,7 @@ bool CHARACTER::LearnGrandMasterSkill(DWORD dwSkillVnum)
 	   {
 	// Ignore the time limit while using the magic spell.
 	RemoveAffect(AFFECT_SKILL_NO_BOOK_DELAY);
-	ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have escaped the evil ghost curse with the help of an Exorcism Scroll."));
+	ChatPacket(CHAT_TYPE_INFO, "[LS;377]");
 	}
 	else 	    
 	{
@@ -297,16 +297,16 @@ bool CHARACTER::LearnGrandMasterSkill(DWORD dwSkillVnum)
 	// bType this 0 You can train with books from the beginning
 	if (pkSk->dwType == 0)
 	{
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot train this skill up to Grand Master level."));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;949]");
 		return false;
 	}
 
 	if (GetSkillMasterType(dwSkillVnum) != SKILL_GRAND_MASTER)
 	{
 		if (GetSkillMasterType(dwSkillVnum) > SKILL_GRAND_MASTER)
-			ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You already are a Master of this skill. You cannot train this skill any further."));
+			ChatPacket(CHAT_TYPE_INFO, "[LS;950]");
 		else
-			ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Your Skill is not high enough to become a Grand Master."));
+			ChatPacket(CHAT_TYPE_INFO, "[LS;951]");
 		return false;
 	}
 
@@ -364,15 +364,15 @@ bool CHARACTER::LearnGrandMasterSkill(DWORD dwSkillVnum)
 
 	if (bLastLevel == GetSkillLevel(dwSkillVnum))
 	{
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("That did not work. Damn!"));
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Training has failed. Please try again later."));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;952]");
+		ChatPacket(CHAT_TYPE_INFO, "[LS;953]");
 		LogManager::instance().CharLog(this, dwSkillVnum, "GM_READ_FAIL", "");
 		return false;
 	}
 
-	ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("My body is full of energy!"));
-	ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("The training seems to be working already..."));
-	ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You successfully finished your training with the book."));
+	ChatPacket(CHAT_TYPE_TALKING, "[LS;954]");
+	ChatPacket(CHAT_TYPE_TALKING, "[LS;955]");
+	ChatPacket(CHAT_TYPE_INFO, "[LS;956]");
 	LogManager::instance().CharLog(this, dwSkillVnum, "GM_READ_SUCCESS", "");
 	return true;
 }
@@ -387,13 +387,13 @@ bool CHARACTER::LearnSkillByBook(DWORD dwSkillVnum, BYTE bProb)
 
 	if (!IsLearnableSkill(dwSkillVnum))
 	{
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot train this skill."));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;948]");
 		return false;
 	}
 
 	if (GetExp() < (DWORD)g_SkillBookExp)
 	{
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot read this due to your lack of experience."));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;957]");
 		return false;
 	}
 
@@ -402,9 +402,9 @@ bool CHARACTER::LearnSkillByBook(DWORD dwSkillVnum, BYTE bProb)
 		if (GetSkillMasterType(dwSkillVnum) != SKILL_MASTER)
 		{
 			if (GetSkillMasterType(dwSkillVnum) > SKILL_MASTER)
-				ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot train this skill with a Book."));
+				ChatPacket(CHAT_TYPE_INFO, "[LS;959]");
 			else
-				ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This skill's level is not high enough to be trained with a Book."));
+				ChatPacket(CHAT_TYPE_INFO, "[LS;960]");
 			return false;
 		}
 	}
@@ -417,7 +417,7 @@ bool CHARACTER::LearnSkillByBook(DWORD dwSkillVnum, BYTE bProb)
 			{
 				// Ignore the time limit while using the magic spell.
 				RemoveAffect(AFFECT_SKILL_NO_BOOK_DELAY);
-				ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have escaped the evil ghost curse with the help of an Exorcism Scroll."));
+				ChatPacket(CHAT_TYPE_INFO, "[LS;377]");
 			}
 			else 	    
 			{
@@ -468,17 +468,17 @@ bool CHARACTER::LearnSkillByBook(DWORD dwSkillVnum, BYTE bProb)
 		SkillLevelUp(dwSkillVnum, SKILL_UP_BY_BOOK);
 		if (test_server) sys_log(0, "LearnSkillByBook %u SUCC", dwSkillVnum);
 
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("My body is full of energy!"));
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("The training seems to be working already..."));
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You have successfully finished your training with the Book."));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;954]");
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;955]");
+		ChatPacket(CHAT_TYPE_INFO, "[LS;964]");
 		LogManager::instance().CharLog(this, dwSkillVnum, "READ_SUCCESS", "");
 	}
 	else
 	{
 		if (test_server) sys_log(0, "LearnSkillByBook %u FAIL", dwSkillVnum);
 
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("That did not work. Damn!"));
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Training has failed. Please try again later."));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;952]");
+		ChatPacket(CHAT_TYPE_INFO, "[LS;953]");
 		LogManager::instance().CharLog(this, dwSkillVnum, "READ_FAIL", "");
 	}
 
@@ -562,7 +562,7 @@ void CHARACTER::SkillLevelUp(DWORD dwVnum, BYTE bMethod)
 
 	if (IsPolymorphed())
 	{
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot change your status while you are transformed."));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;521]");
 		return;
 	}
 
@@ -1050,7 +1050,7 @@ struct FuncSplashDamage
 
 		if (test_server && iAmount == 0 && m_pkSk->bPointOn != POINT_NONE)
 		{
-			m_pkChr->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("It doesn't work. Check the skill formula"));
+			m_pkChr->ChatPacket(CHAT_TYPE_INFO, "[LS;5135]");
 		}
 		////////////////////////////////////////////////////////////////////////////////
 		iAmount = -iAmount;
@@ -1486,7 +1486,7 @@ EVENTFUNC(skill_gwihwan_event)
 	else
 	{
 		// failure
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Teleportation has failed."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;965]");
 	}
 	return 0;
 }
@@ -1601,7 +1601,7 @@ int CHARACTER::ComputeSkillAtPosition(DWORD dwVnum, const PIXEL_POSITION& posTar
 
 	if (test_server && iAmount == 0 && pkSk->bPointOn != POINT_NONE)
 	{
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("It doesn't work. Check the skill formula"));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;5135]");
 	}
 
 	if (IS_SET(pkSk->dwFlag, SKILL_FLAG_REMOVE_BAD_AFFECT))
@@ -1946,7 +1946,7 @@ int CHARACTER::ComputeSkill(DWORD dwVnum, LPCHARACTER pkVictim, BYTE bSkillLevel
 
 	if (test_server && iAmount == 0 && pkSk->bPointOn != POINT_NONE)
 	{
-		ChatPacket(CHAT_TYPE_INFO, LC_TEXT("It doesn't work. Check the skill formula"));
+		ChatPacket(CHAT_TYPE_INFO, "[LS;5135]");
 	}
 	// END_OF_ADD_GRANDMASTER_SKILL
 
@@ -2269,9 +2269,9 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 			return false;
 
 		if (GetHorseLevel() <= 0)
-			ChatPacket(CHAT_TYPE_INFO, LC_TEXT("No Horse here. Ask the Stable Boy."));
+			ChatPacket(CHAT_TYPE_INFO, "[LS;966]");
 		else
-			ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Please use an item to call a Horse."));
+			ChatPacket(CHAT_TYPE_INFO, "[LS;967]");
 
 		return true;
 	}
@@ -2408,7 +2408,7 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 			return false;
 
 		if (test_server)
-			ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s FP-Consumption: %d"), pkSk->szName, iNeededSP);
+			ChatPacket(CHAT_TYPE_INFO, "[LS;968;%s;%d]", pkSk->szName, iNeededSP);
 
 		PointChange(POINT_SP, -iNeededSP);
 	}
@@ -2435,7 +2435,7 @@ bool CHARACTER::UseSkill(DWORD dwVnum, LPCHARACTER pkVictim, bool bUseGrandMaste
 				   	lMaxHit))
 		{
 			if (test_server)
-				ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("cooltime not finished %s %d"), pkSk->szName, iCooltime);
+				ChatPacket(CHAT_TYPE_NOTICE, "[LS;5289;%s;%d]", pkSk->szName, iCooltime);
 
 			return false;
 		}
@@ -2594,41 +2594,41 @@ void CHARACTER::SkillLearnWaitMoreTimeMessage(DWORD ms)
 	//const char* str = "";
 	//
 	if (ms < 3 * 60)
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("I am burning inside, but it is calming down my body. My Chi has to stabilise."));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;970]");
 	else if (ms < 5 * 60)
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("A little slow, but steady... Without stopping!"));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;971]");
 	else if (ms < 10 * 60) // 10 minute
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("Yes, that feels great. My body is full of Chi."));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;972]");
 	else if (ms < 30 * 60) // 30 minute
 	{
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("I have read it! Now the Chi will spread through my body."));
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("The training is completed."));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;973]");
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;974]");
 	}
 	else if (ms < 1 * 3600) // 1 hour
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("I am on the last page of the book. The training is nearly finished!"));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;975]");
 	else if (ms < 2 * 3600) // 2 hour
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("Nearly finished! Just a little bit more to go!"));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;976]");
 	else if (ms < 3 * 3600)
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("Eureka! I have nearly finished reading it!"));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;977]");
 	else if (ms < 6 * 3600)
 	{
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("Only a few more pages and then I'll have read everything."));
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("I feel refreshed."));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;978]");
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;979]");
 	}
 	else if (ms < 12 * 3600)
 	{
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("Now I understand it!"));
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("Okay I have to stay concentrated!"));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;981]");
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;982]");
 	}
 	else if (ms < 18 * 3600)
 	{
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("I keep reading the same line over and over again."));
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("I do not want to learn any more."));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;983]");
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;984]");
 	}
 	else //if (ms < 2 * 86400)
 	{
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("It is a lot more complicated and more difficult to understand than I thought."));
-		ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), LC_TEXT("It's hard for me to concentrate. I should take a break."));
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;985]");
+		ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", "[LS;986]");
 	}
 	/*
 	   str = "30%";
@@ -2639,7 +2639,7 @@ void CHARACTER::SkillLearnWaitMoreTimeMessage(DWORD ms)
 	   else
 	   str = "0%";*/
 
-	//ChatPacket(CHAT_TYPE_TALKING, LC_TEXT("%s"), str);
+	//ChatPacket(CHAT_TYPE_TALKING, "[LS;370;%s]", str);
 }
 
 void CHARACTER::DisableCooltime()

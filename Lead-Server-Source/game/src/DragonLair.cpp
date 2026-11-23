@@ -91,7 +91,7 @@ EVENTFUNC( DragonLair_Collapse_Event )
 	if (0 == pInfo->step)
 	{
 		char buf[512];
-			snprintf(buf, 512, LC_TEXT("The Dragon's Lair will collapse in %d seconds!"), pInfo->pLair->GetEstimatedTime());
+			snprintf(buf, 512, "[LS;5203;%d]", pInfo->pLair->GetEstimatedTime());
 		SendNoticeMap(buf, pInfo->InstanceMapIndex, true);
 
 		pInfo->step++;

@@ -59,7 +59,7 @@ EVENTFUNC(poison_event)
 	LPCHARACTER pkAttacker = CHARACTER_MANAGER::instance().FindByPID(info->attacker_pid);
 
 	int dam = ch->GetMaxHP() * GetPoisonDamageRate(ch) / 1000;
-	if (test_server) ch->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("Poison Damage %d"), dam);
+	if (test_server) ch->ChatPacket(CHAT_TYPE_NOTICE, "[LS;5162;%d]", dam);
 
 	if (ch->Damage(pkAttacker, dam, DAMAGE_TYPE_POISON))
 	{
@@ -111,7 +111,7 @@ EVENTFUNC(fire_event)
 	LPCHARACTER pkAttacker = CHARACTER_MANAGER::instance().FindByPID(info->attacker_pid);
 
 	int dam = info->amount;
-	if (test_server) ch->ChatPacket(CHAT_TYPE_NOTICE, LC_TEXT("Fire Damage %d"), dam);
+	if (test_server) ch->ChatPacket(CHAT_TYPE_NOTICE, "[LS;5111;%d]", dam);
 
 	if (ch->Damage(pkAttacker, dam, DAMAGE_TYPE_FIRE))
 	{
@@ -215,7 +215,7 @@ void CHARACTER::AttackedByPoison(LPCHARACTER pkAttacker)
 	{
 		char buf[256];
 		snprintf(buf, sizeof(buf), "POISON %s -> %s", pkAttacker->GetName(), GetName());
-		pkAttacker->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("%s"), buf);
+		pkAttacker->ChatPacket(CHAT_TYPE_INFO, "[LS;370;%s]", buf);
 	}
 }
 
@@ -256,21 +256,21 @@ bool CHARACTER::IsImmune(DWORD dwImmuneFlag)
 		if (percent <= immune_pct)	// 90% Immune
 		{
 			if (test_server && IsPC())
-				ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("<IMMUNE_SUCCESS> (%s)"), GetName()); 
+				ChatPacket(CHAT_TYPE_PARTY, "[LS;5051;%s]", GetName()); 
 
 			return true;
 		}
 		else
 		{
 			if (test_server && IsPC())
-				ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("<IMMUNE_FAIL> (%s)"), GetName());
+				ChatPacket(CHAT_TYPE_PARTY, "[LS;5049;%s]", GetName());
 
 			return false;
 		}
 	}
 
 	if (test_server && IsPC())
-		ChatPacket(CHAT_TYPE_PARTY, LC_TEXT("<IMMUNE_FAIL> (%s) NO_IMMUNE_FLAG"), GetName());
+		ChatPacket(CHAT_TYPE_PARTY, "[LS;5050;%s]", GetName());
 
 	return false;
 }

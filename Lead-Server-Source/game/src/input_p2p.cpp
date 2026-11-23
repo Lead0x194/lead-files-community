@@ -177,7 +177,7 @@ struct FuncShout
 		if (!d->GetCharacter() || (d->GetCharacter()->GetGMLevel() == GM_PLAYER && d->GetEmpire() != m_bEmpire))
 			return;
 
-		d->GetCharacter()->ChatPacket(CHAT_TYPE_SHOUT, LC_TEXT("%s"), m_str);
+		d->GetCharacter()->ChatPacket(CHAT_TYPE_SHOUT, "[LS;370;%s]", m_str);
 	}
 };
 

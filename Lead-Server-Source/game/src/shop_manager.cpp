@@ -119,7 +119,7 @@ bool CShopManager::StartShopping(LPCHARACTER pkChr, LPCHARACTER pkChrShopKeeper,
 	//PREVENT_TRADE_WINDOW
 	if (pkChr->IsOpenSafebox() || pkChr->GetExchange() || pkChr->GetMyShop() || pkChr->IsCubeOpen())
 	{
-		pkChr->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot trade in the shop while another window is open."));
+		pkChr->ChatPacket(CHAT_TYPE_INFO, "[LS;876]");
 		return false;
 	}
 	//END_PREVENT_TRADE_WINDOW
@@ -221,7 +221,7 @@ void CShopManager::Buy(LPCHARACTER ch, BYTE pos)
 
 	if (DISTANCE_APPROX(ch->GetX() - ch->GetShopOwner()->GetX(), ch->GetY() - ch->GetShopOwner()->GetY()) > 2000)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You are too far away from the shop to buy something."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;877]");
 		return;
 	}
 
@@ -278,7 +278,7 @@ void CShopManager::Sell(LPCHARACTER ch, BYTE bCell, ItemStackType bCount)
 
 	if (DISTANCE_APPROX(ch->GetX()-ch->GetShopOwner()->GetX(), ch->GetY()-ch->GetShopOwner()->GetY())>2000)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You are too far away from the shop to sell something."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;878]");
 		return;
 	}
 	
@@ -289,7 +289,7 @@ void CShopManager::Sell(LPCHARACTER ch, BYTE bCell, ItemStackType bCount)
 
 	if (item->IsEquipped() == true)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Items that are being worn cannot be sold."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5139]");
 		return;
 	}
 
@@ -335,7 +335,7 @@ void CShopManager::Sell(LPCHARACTER ch, BYTE bCell, ItemStackType bCount)
 	if (GOLD_MAX <= nTotalMoney)
 	{
 		sys_err("[OVERFLOW_GOLD] id %u name %s gold %lld", ch->GetPlayerID(), ch->GetName(), static_cast<long long>(ch->GetGold()));
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot trade because you are carrying more than 2 billion Yang."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;811]");
 		return;
 	}
 
@@ -343,7 +343,7 @@ void CShopManager::Sell(LPCHARACTER ch, BYTE bCell, ItemStackType bCount)
 	sys_log(0, "SHOP: SELL: %s item name: %s(x%d):%u price: %lld", ch->GetName(), item->GetName(), bCount, item->GetID(), static_cast<long long>(dwPrice));
 
 	if (iVal > 0)
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This sale will be taxed %d%%."), iVal);
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;881;%d]", iVal);
 
 	DBManager::instance().SendMoneyLog(MONEY_LOG_SHOP, item->GetVnum(), dwPrice);
 

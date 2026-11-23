@@ -343,7 +343,7 @@ int CShop::Buy(LPCHARACTER ch, BYTE pos)
 		m_pkPC->PointChange(POINT_GOLD, dwPrice, false);
 
 		if (iVal > 0)
-			m_pkPC->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("This sale will be taxed %d%%."), iVal);
+			m_pkPC->ChatPacket(CHAT_TYPE_INFO, "[LS;881;%d]", iVal);
 
 	}
 	else

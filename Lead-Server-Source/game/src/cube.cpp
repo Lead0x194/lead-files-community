@@ -316,12 +316,12 @@ void Cube_open (LPCHARACTER ch)
 
 	if (ch->IsCubeOpen())
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The Build window is already open."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;989]");
 		return;
 	}
 	if ( ch->GetExchange() || ch->GetMyShop() || ch->GetShopOwner() || ch->IsOpenSafebox() || ch->IsCubeOpen() )
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You cannot build something while another trade/storeroom window is open."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;990]");
 		return;
 	}
 
@@ -543,7 +543,7 @@ bool Cube_make (LPCHARACTER ch)
 
 	if (!(ch)->IsCubeOpen())
 	{
-		(ch)->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("The build window is not open."));
+		(ch)->ChatPacket(CHAT_TYPE_INFO, "[LS;992]");
 		return false;
 	}
 
@@ -558,13 +558,13 @@ bool Cube_make (LPCHARACTER ch)
 
 	if (NULL == cube_proto)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("You do not have the right material."));
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;993]");
 		return false;
 	}
 
 	if (ch->GetGold() < cube_proto->gold)
 	{
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Not enough Yang or not enough space in the inventory."));	// This text is already widely used so no further translation is needed.
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;897]");	// This text is already widely used so no further translation is needed.
 		return false;
 	}
 
@@ -591,7 +591,7 @@ bool Cube_make (LPCHARACTER ch)
 	else
 	{
 		// failure
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("Manufacturing failed."));	// 2012.11.12 Newly added message (locale_string.txt Must be added to )
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5144]");	// 2012.11.12 Newly added message (locale_string.txt Must be added to )
 		ch->ChatPacket(CHAT_TYPE_COMMAND, "cube fail");
 		LogManager::instance().CubeLog(ch->GetPlayerID(), ch->GetX(), ch->GetY(),
 				reward_value->vnum, 0, 0, 0);
@@ -617,7 +617,7 @@ void Cube_show_list (LPCHARACTER ch)
 		item = cube_item[i];
 		if (NULL==item)	continue;
 
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cube[%d]: inventory[%d]: %s"),
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5297;%d;%d;%s]",
 				i, item->GetCell(), item->GetName());
 	}
 }
@@ -659,7 +659,7 @@ void Cube_add_item (LPCHARACTER ch, int cube_index, int inven_index)
 	cube_item[cube_index] = item;
 
 	if (test_server)
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cube[%d]: inventory[%d]: %s added"),
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5298;%d;%d;%s]",
 									cube_index, inven_index, item->GetName());
 
 	// Provide information to the client about what can be made with the items currently in the box
@@ -687,7 +687,7 @@ void Cube_delete_item (LPCHARACTER ch, int cube_index)
 	cube_item[cube_index] = NULL;
 
 	if (test_server)
-		ch->ChatPacket(CHAT_TYPE_INFO, LC_TEXT("cube[%d]: cube[%d]: %s deleted"),
+		ch->ChatPacket(CHAT_TYPE_INFO, "[LS;5296;%d;%d;%s]",
 				cube_index, item->GetCell(), item->GetName());
 
 	// Provide information to the client about what can be made with the items currently in the box
