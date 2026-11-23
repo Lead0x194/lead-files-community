@@ -1,4 +1,4 @@
-send_letter ( gameforge . main_quest_lv93 . _400_npcChat ) 
+send_letter ( "[LC;5034]" ) 
 local v = find_npc_by_vnum ( 20008 ) 
 if 0 ~= v then 
 target . vid ( "__TARGET__" , v , mob_name ( 20008 ) ) 

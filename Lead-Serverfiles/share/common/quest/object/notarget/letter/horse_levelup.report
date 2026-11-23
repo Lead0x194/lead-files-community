@@ -4,6 +4,6 @@ else
 target . vid ( "__TARGET__" , v , "" ) 
 end 
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . horse_levelup . _360_makequestbutton ) 
-q . set_title ( gameforge . horse_levelup . _360_makequestbutton ) 
+makequestbutton ( "[LC;1599]" ) 
+q . set_title ( "[LC;1599]" ) 
 q . start ( ) 

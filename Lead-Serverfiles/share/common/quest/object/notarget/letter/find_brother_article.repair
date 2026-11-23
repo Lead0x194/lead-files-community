@@ -1,5 +1,5 @@
-send_letter ( gameforge . find_brother_article . _310_sendLetter ) 
+send_letter ( "[LC;956]" ) 
 local v = find_npc_by_vnum ( 20016 ) 
 if v ~= 0 then 
-target . vid ( "__TARGET__" , v , gameforge . find_brother_article . _330_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;958]" ) 
 end 

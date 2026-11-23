@@ -1,7 +1,7 @@
-send_letter ( gameforge . main_quest_flame_lv100 . _320_sendLetter ) 
+send_letter ( "[LC;3777]" ) 
 local v = find_npc_by_vnum ( 20016 ) 
 if 0 ~= v then 
 target . vid ( "__TARGET__" , v , mob_name ( 20016 ) ) 
 end 
-q . set_counter_name ( gameforge . main_quest_flame_lv100 . _250_say ) 
+q . set_counter_name ( "[LC;3770]" ) 
 q . set_counter_value ( 1 ) 

@@ -1,7 +1,7 @@
-send_letter ( gameforge . main_quest_lv94 . _690_sendLetter ) 
-q . set_counter_name ( gameforge . main_quest_lv94 . _1080_say ) 
+send_letter ( "[LC;5140]" ) 
+q . set_counter_name ( "[LC;5079]" ) 
 if pc . count_item ( 31035 ) >= 1 and pc . count_item ( 31013 ) >= 1 then 
-notice_multiline ( gameforge . main_quest_lv94 . _770_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv94 . _770_2_notice , notice ) 
+notice_multiline ( "[LC;5148]" , notice ) 
+notice_multiline ( "[LC;5149]" , notice ) 
 set_state ( "state6_3" ) 
 end 

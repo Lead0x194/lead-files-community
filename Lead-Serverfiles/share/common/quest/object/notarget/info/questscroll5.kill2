@@ -1,5 +1,5 @@
 say_title ( questscroll5 . get_title ( ) ) 
 say ( questscroll5 . get_desc ( ) ) 
 say_reward ( questscroll5 . get_summ ( ) ) 
-say_reward ( string . format ( gameforge . questscroll5 . _170_sayReward , questscroll5 . get_mob1_name ( ) , questscroll5 . get_mob1_rest_kill_count ( ) , questscroll5 . get_mob2_name ( ) , questscroll5 . get_mob2_rest_kill_count ( ) ) ) 
+say_reward ( string . format ( "[LC;6752;%s;%s;%s;%s]" , questscroll5 . get_mob1_name ( ) , questscroll5 . get_mob1_rest_kill_count ( ) , questscroll5 . get_mob2_name ( ) , questscroll5 . get_mob2_rest_kill_count ( ) ) ) 
 questscroll5 . show_mission_menu ( ) 

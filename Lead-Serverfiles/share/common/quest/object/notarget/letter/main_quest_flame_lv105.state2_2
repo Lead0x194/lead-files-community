@@ -1,5 +1,5 @@
-send_letter ( gameforge . main_quest_flame_lv105 . _160_sendLetter ) 
-q . set_counter_name ( gameforge . main_quest_lv98 . _680_counterName ) 
+send_letter ( "[LC;3998]" ) 
+q . set_counter_name ( "[LC;5425]" ) 
 if party . is_party ( ) then 
 local map_index = pc . get_map_index ( ) 
 if map_index >= 351 * 10000 and map_index < ( 351 + 1 ) * 10000 then 

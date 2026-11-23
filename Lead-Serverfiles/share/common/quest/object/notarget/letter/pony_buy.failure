@@ -1,4 +1,4 @@
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . pony_buy . _360_makequestbutton ) 
-q . set_title ( gameforge . pony_buy . _360_makequestbutton ) 
+makequestbutton ( "[LC;6578]" ) 
+q . set_title ( "[LC;6578]" ) 
 q . start ( ) 

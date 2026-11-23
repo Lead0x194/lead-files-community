@@ -1,5 +1,5 @@
-send_letter ( gameforge . collect_quest_lv60 . _310_sendLetter ) 
+send_letter ( "[LC;357]" ) 
 local v = find_npc_by_vnum ( 20018 ) 
 if v ~= 0 then 
-target . vid ( "__TARGET__" , v , gameforge . collect_quest_lv30 . _310_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;245]" ) 
 end 

@@ -1,6 +1,6 @@
 restart_quest ( ) 
 say_title ( questscroll5 . get_complete_title ( ) ) 
-say ( gameforge . questscroll5 . _190_say ) 
+say ( "[LC;6754]" ) 
 local reward_type = questscroll5 . get_reward_type ( ) 
 if number ( 0 , 100 ) <= 90 then 
 local s = number ( 1 , 3 ) 

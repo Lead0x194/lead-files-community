@@ -1,4 +1,4 @@
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . buy_fishrod . _150_makequestbutton ) 
-q . set_title ( gameforge . buy_fishrod . _150_makequestbutton ) 
+makequestbutton ( "[LC;37]" ) 
+q . set_title ( "[LC;37]" ) 
 q . start ( ) 

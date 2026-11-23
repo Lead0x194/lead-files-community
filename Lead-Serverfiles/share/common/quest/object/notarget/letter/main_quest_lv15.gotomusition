@@ -1,9 +1,9 @@
 local v = find_npc_by_vnum ( 20017 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . locale . yuhwan . find_label ) 
+target . vid ( "__TARGET__" , v , "[LC;3738]" ) 
 end 
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . locale . yuhwan . find_label ) 
-q . set_title ( gameforge . locale . yuhwan . find_label ) 
+makequestbutton ( "[LC;3738]" ) 
+q . set_title ( "[LC;3738]" ) 
 q . start ( ) 

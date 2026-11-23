@@ -1,4 +1,4 @@
-send_letter ( gameforge . collect_quest_lv90 . _195_send_letter ) 
+send_letter ( "[LC;521]" ) 
 if pc . count_item ( 30227 ) > 0 then 
 local v = find_npc_by_vnum ( 20084 ) 
 if v ~= 0 then 

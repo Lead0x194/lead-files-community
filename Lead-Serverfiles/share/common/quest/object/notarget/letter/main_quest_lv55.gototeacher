@@ -1,6 +1,6 @@
-send_letter ( gameforge . main_quest_lv55 . _200_sendLetter ) 
+send_letter ( "[LC;4470]" ) 
 local v = find_npc_by_vnum ( 20011 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . main_quest_lv47 . _390_targetVid ) 
+target . vid ( "__TARGET__" , v , "[LC;4385]" ) 
 end 

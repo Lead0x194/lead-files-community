@@ -1,5 +1,5 @@
-send_letter ( gameforge . main_quest_flame_lv99 . _310_sendLetter ) 
-q . set_counter_name ( gameforge . main_quest_lv97 . _670_counterName ) 
+send_letter ( "[LC;4048]" ) 
+q . set_counter_name ( "[LC;5362]" ) 
 local v = find_npc_by_vnum ( 20391 ) 
 if 0 ~= v then 
 target . vid ( "__TARGET__" , v , mob_name ( 20391 ) ) 
