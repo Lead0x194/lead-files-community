@@ -923,15 +923,15 @@ UPLOAD_MARK_UPLOAD_NEED_RECONNECT	La carga tiene que ser iniciada de nuevo.
 USE_ITEM_FAILURE_PRIVATE_SHOP	No puedes utilizar ningún objeto mientras tengas abierta una tienda privada.
 USE_SKILL_ERROR_UNKNOWN	Error de habilidad desconocido: %s
 TARGET_INFO_RESISTS	Resistencias:
-TARGET_INFO_RESISTS_LINE0	Espada: %d%% A dos manos: %d%% Campana: %d%%
-TARGET_INFO_RESISTS_LINE1	A dos manos: %d%% Abanico: %d%% Arco: %d%%
-TARGET_INFO_REGEN_INFO	TP reg. %d%% cada %d seg.
+TARGET_INFO_RESISTS_LINE0	Espada: %d%% Dos Manos: %d%% Campana: %d%%
+TARGET_INFO_RESISTS_LINE1	Daga: %d%% Abanico: %d%% Arco: %d%%
+TARGET_INFO_REGEN_INFO	Regeneración de HP: %d%% cada %d seg.
 TARGET_INFO_GOLD_MIN_MAX	Yang: %s ~ %s
 TARGET_INFO_DAMAGE	Daño por golpe: %s - %s
 TARGET_INFO_DEFENSE	Defensa: %s
 TARGET_INFO_EXP	Experiencia: %s
 TARGET_INFO_MAINRACE	Raza: %s
-TARGET_INFO_MAX_HP	Puntos de vida máximos: %s
+TARGET_INFO_MAX_HP	Max. HP: %s
 TARGET_INFO_NO_ITEM_TEXT	No hay objetos disponibles
 TARGET_INFO_NO_RACE	Sin raza
 TARGET_INFO_NEWRACE_INSECT	Insecto
@@ -940,18 +940,18 @@ TARGET_INFO_NEWRACE_ICE	Monstruo de hielo
 TARGET_INFO_NEWRACE_DESERT	Desierto
 TARGET_INFO_NEWRACE_TREE	Árbol
 TARGET_INFO_RACE_ANIMAL	Animales
-TARGET_INFO_RACE_DARK	Resistencia a la oscuridad
-TARGET_INFO_RACE_DEVIL	Diablo
-TARGET_INFO_RACE_EARTH	Resistencia a la tierra
-TARGET_INFO_RACE_ELEC	Resistencia al rayo
-TARGET_INFO_RACE_FIRE	Resistencia al fuego
-TARGET_INFO_RACE_HUMAN	Semihumanos
-TARGET_INFO_RACE_ICE	Resistencia al hielo
+TARGET_INFO_RACE_DARK	Resistencia contra oscuridad
+TARGET_INFO_RACE_DEVIL	Demonio
+TARGET_INFO_RACE_EARTH	Resistencia de tierra
+TARGET_INFO_RACE_ELEC	Resistencia de Relámpago
+TARGET_INFO_RACE_FIRE	Resistencia de Fuego
+TARGET_INFO_RACE_HUMAN	Medio Humanos
+TARGET_INFO_RACE_ICE	Resistencia de hielo
 TARGET_INFO_RACE_METIN	Piedra Metin
-TARGET_INFO_RACE_MILGYO	Esotérico
+TARGET_INFO_RACE_MILGYO	Místicos
 TARGET_INFO_RACE_ORC	Orcos
-TARGET_INFO_RACE_UNDEAD	No muertos
-TARGET_INFO_RACE_WIND	Resistencia al viento
-TARGET_INFO_STONE_NAME	Piedra fantasma
+TARGET_INFO_RACE_UNDEAD	Nomuertos
+TARGET_INFO_RACE_WIND	Resistencia de Viento
+TARGET_INFO_STONE_NAME	Piedra Espíritu
 TARGET_INFO_SUBRACE	Subraza: %s
 
