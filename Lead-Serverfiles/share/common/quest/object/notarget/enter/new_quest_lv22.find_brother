@@ -1,15 +1,15 @@
 new_quest_lv22_timeToFind = 1200 
 new_quest_lv22_MoneyReward = 12000 
 new_quest_lv22_MoneyReward_Low = 8000 
-send_letter ( gameforge . new_quest_lv22 . _016_send_letter ) 
-q . set_title ( gameforge . new_quest_lv22 . _016_send_letter ) 
+send_letter ( "[LC;5684]" ) 
+q . set_title ( "[LC;5684]" ) 
 local timeLeft = new_quest_lv22_timeToFind - ( get_time ( ) - pc . getqf ( "new_quest_lv22_startTime" ) ) 
 displayTime = timeLeft / 60 
-q . set_clock ( gameforge . new_quest_lv22 . _082_set_clock , timeLeft ) 
+q . set_clock ( "[LC;5722]" , timeLeft ) 
 q . start ( ) 
 if is_destination_village ( 65 ) then 
 local v = find_npc_by_vnum ( 20348 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET4__" , v , gameforge . new_quest_lv22 . _080_target ) 
+target . vid ( "__TARGET4__" , v , "[LC;5721]" ) 
 end 
 end 

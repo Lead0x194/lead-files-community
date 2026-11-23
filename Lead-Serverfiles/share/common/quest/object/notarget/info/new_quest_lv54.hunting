@@ -1,8 +1,8 @@
-say_title ( gameforge . new_quest_lv54 . _020_say_title ) 
-say ( gameforge . new_quest_lv54 . _085_say ) 
+say_title ( "[LC;6034]" ) 
+say ( "[LC;6065]" ) 
 if new_quest_lv54_neededAmountDrop1 ~= pc . getqf ( "collect_count_1" ) then 
 say ( "" ) 
-say_reward ( string . format ( gameforge . new_quest_lv54 . _084_say , new_quest_lv54_neededAmountDrop1 - pc . getqf ( "collect_count_1" ) ) ) 
+say_reward ( string . format ( "[LC;6064;%s]" , new_quest_lv54_neededAmountDrop1 - pc . getqf ( "collect_count_1" ) ) ) 
 else 
-notice_multiline ( gameforge . new_quest_lv54 . _082_notice , notice ) 
+notice_multiline ( "[LC;6062]" , notice ) 
 end 

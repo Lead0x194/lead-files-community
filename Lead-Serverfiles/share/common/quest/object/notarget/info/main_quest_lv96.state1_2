@@ -1,11 +1,11 @@
-say_title ( gameforge . main_quest_lv96 . _080_sayTitle ) 
-say ( gameforge . main_quest_lv96 . _090_say ) 
+say_title ( "[LC;5249]" ) 
+say ( "[LC;5250]" ) 
 say ( "" ) 
 say_item_vnum ( 31038 ) 
-say ( gameforge . main_quest_lv96 . _570_counterName ) 
+say ( "[LC;5296]" ) 
 local remain = 100 - pc . count_item ( 31038 ) 
 if remain < 0 then 
 remain = 0 
 end 
 q . set_counter_value ( remain ) 
-say_reward ( string . format ( gameforge . main_quest_lv60 . _210_sayReward , item_name ( 31038 ) , remain ) ) 
+say_reward ( string . format ( "[LC;4540;%s]" , item_name ( 31038 ) , remain ) ) 

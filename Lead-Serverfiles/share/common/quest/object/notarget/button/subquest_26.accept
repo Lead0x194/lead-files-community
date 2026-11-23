@@ -1,7 +1,7 @@
 if pc . count_item ( 30116 ) > 0 then 
-say_title ( gameforge . subquest_26 . _250_sendLetter ) 
-say ( gameforge . subquest_26 . _280_say ) 
+say_title ( "[LC;7718]" ) 
+say ( "[LC;7721]" ) 
 return 
 end 
-say_title ( gameforge . subquest_26 . _290_sayTitle ) 
-say ( gameforge . subquest_26 . _300_say ) 
+say_title ( "[LC;7722]" ) 
+say ( "[LC;7723]" ) 

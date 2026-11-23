@@ -1,5 +1,5 @@
 if pc . count_item ( "30136" ) == 0 then 
-send_letter ( gameforge . subquest_38 . _10_targetVid ) 
+send_letter ( "[LC;8034]" ) 
 else 
-send_letter ( gameforge . subquest_38 . _110_sendLetter ) 
+send_letter ( "[LC;8035]" ) 
 end 

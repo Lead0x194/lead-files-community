@@ -6,14 +6,14 @@ new_quest_lv80_figure = 30183
 new_quest_lv80_ember = 30184 
 new_quest_lv80_blackice = 30185 
 if pc . getqf ( "gotreward" ) == 1 then 
-send_letter ( gameforge . new_quest_lv80 . _390_send_letter ) 
+send_letter ( "[LC;6264]" ) 
 local goto_npc = 20023 
 local v = find_npc_by_vnum ( goto_npc ) 
 if 0 ~= v then 
-target . vid ( "__TARGET__" , v , gameforge . new_quest_lv80 . _010_target ) 
+target . vid ( "__TARGET__" , v , "[LC;6224]" ) 
 end 
 else 
-q . set_title ( gameforge . new_quest_lv80 . _400_set_title ) 
+q . set_title ( "[LC;6265]" ) 
 end 
 new_quest_lv80_dropProb = 25 
 new_quest_lv80_spawnlocationx = 99999 

@@ -1,8 +1,8 @@
 if pc . count_item ( "30162" ) >= 100 then 
-say_title ( gameforge . subquest_41 . _90_sayTitle ) 
-say ( gameforge . subquest_41 . _100_say ) 
+say_title ( "[LC;8157]" ) 
+say ( "[LC;8137]" ) 
 return 
 end 
-say_title ( gameforge . subquest_41 . _110_sayTitle ) 
-say ( gameforge . subquest_41 . _120_say ) 
+say_title ( "[LC;8139]" ) 
+say ( "[LC;8140]" ) 
 say_item_vnum ( "30162" ) 

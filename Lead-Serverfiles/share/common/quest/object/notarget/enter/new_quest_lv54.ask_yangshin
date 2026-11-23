@@ -1,11 +1,11 @@
 new_quest_lv54_neededAmountDrop1 = 20 
 new_quest_lv54_mob1 = 144 
 new_quest_lv54_drop1 = 30176 
-send_letter ( gameforge . new_quest_lv54 . _020_say_title ) 
+send_letter ( "[LC;6034]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv54 . _020_say_title ) 
+q . set_title ( "[LC;6034]" ) 
 local v = find_npc_by_vnum ( 20019 ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET4__" , v , gameforge . new_quest_lv54 . _070_target ) 
+target . vid ( "__TARGET4__" , v , "[LC;6051]" ) 
 end 

@@ -1,7 +1,7 @@
 if pc . count_item ( "30147" ) >= 1 and pc . count_item ( "30148" ) >= 1 and pc . count_item ( "30164" ) >= 1 then 
-say_title ( gameforge . subquest_45 . _100_sayTitle ) 
-say ( gameforge . subquest_45 . _110_say ) 
+say_title ( "[LC;8233]" ) 
+say ( "[LC;8235]" ) 
 return 
 end 
-say_title ( gameforge . subquest_45 . _100_sayTitle ) 
-say ( gameforge . subquest_45 . _120_say ) 
+say_title ( "[LC;8233]" ) 
+say ( "[LC;8236]" ) 

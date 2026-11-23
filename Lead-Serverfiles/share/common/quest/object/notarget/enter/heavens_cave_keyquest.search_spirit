@@ -12,9 +12,9 @@ local heavens_cave_keyquest_RedForestCoordsList =
 [ 10 ] = { 539 , 294 , } , 
 [ 11 ] = { 410 , 335 , } , 
 } 
-send_letter ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
+send_letter ( "[LC;1507]" ) 
 q . start ( ) 
-q . set_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
+q . set_title ( "[LC;1507]" ) 
 if pc . get_map_index ( ) == 68 then 
 target . pos ( "__VOICE__" , heavens_cave_keyquest_RedForestCoordsList [ pc . getqf ( "heavens_cave_keyquest_RedForestRndNum" ) ] [ 1 ] , heavens_cave_keyquest_RedForestCoordsList [ pc . getqf ( "heavens_cave_keyquest_RedForestRndNum" ) ] [ 2 ] , 68 , "Stimme von Barah Taraji" ) 
 end 

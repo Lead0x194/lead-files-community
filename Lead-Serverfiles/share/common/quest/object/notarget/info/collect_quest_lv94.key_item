@@ -1,9 +1,9 @@
 if pc . count_item ( 30228 ) > 0 then 
-say_title ( gameforge . collect_quest_lv94 . _270_say_title ) 
-say ( gameforge . collect_quest_lv94 . _280_say ) 
+say_title ( "[LC;596]" ) 
+say ( "[LC;597]" ) 
 return 
 end 
-say_title ( gameforge . collect_quest_lv94 . _290_say_title ) 
-say ( gameforge . collect_quest_lv94 . _300_say ) 
+say_title ( "[LC;598]" ) 
+say ( "[LC;599]" ) 
 say_item_vnum ( 30228 ) 
-say ( gameforge . collect_quest_lv94 . _310_say ) 
+say ( "[LC;600]" ) 

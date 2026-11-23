@@ -1,8 +1,8 @@
-send_letter ( gameforge . new_quest_lv80 . _310_set_title ) 
+send_letter ( "[LC;6255]" ) 
 if pc . get_map_index ( ) == 1 or 21 or 41 then 
 local goto_npc = 20023 
 local v = find_npc_by_vnum ( goto_npc ) 
 if 0 ~= v then 
-target . vid ( "__TARGET__" , v , gameforge . new_quest_lv80 . _010_target ) 
+target . vid ( "__TARGET__" , v , "[LC;6224]" ) 
 end 
 end 

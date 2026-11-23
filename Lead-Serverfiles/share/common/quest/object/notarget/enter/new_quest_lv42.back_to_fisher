@@ -2,15 +2,15 @@ new_quest_lv42_neededAmountDrop1 = 20
 new_quest_lv42_mob1 = 20047 
 new_quest_lv42_drop1 = 50601 
 new_quest_lv42_timeToWait = 86400 
-send_letter ( gameforge . new_quest_lv42 . _037_send_letter ) 
+send_letter ( "[LC;5886]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv42 . _037_send_letter ) 
+q . set_title ( "[LC;5886]" ) 
 local v = find_npc_by_vnum ( 9009 ) 
 local v2 = find_npc_by_vnum ( 20013 ) 
 if 0 == v2 then 
 if 0 ~= v then 
-target . vid ( "__TARGET5__" , v , gameforge . new_quest_lv42 . _030_target ) 
+target . vid ( "__TARGET5__" , v , "[LC;5879]" ) 
 end 
 else 
-target . vid ( "__TARGET5__" , v2 , gameforge . new_quest_lv42 . _030_target ) 
+target . vid ( "__TARGET5__" , v2 , "[LC;5879]" ) 
 end 

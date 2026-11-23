@@ -1,3 +1,3 @@
-say_title ( gameforge . main_quest_lv90 . _120_sayTitle ) 
-say ( gameforge . main_quest_lv90 . _130_say ) 
-say_reward ( string . format ( gameforge . main_quest_lv90 . _140_sayReward , 226 , 731 ) ) 
+say_title ( "[LC;4771]" ) 
+say ( "[LC;4772]" ) 
+say_reward ( string . format ( "[LC;4773;%d;%d]" , 226 , 731 ) ) 

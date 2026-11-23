@@ -1,6 +1,6 @@
-send_letter ( gameforge . new_quest_lv22 . _015_npcChat ) 
+send_letter ( "[LC;5683]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv22 . _015_npcChat ) 
+q . set_title ( "[LC;5683]" ) 
 local find_npc_vnum = 0 
 if pc . get_empire ( ) == 1 then 
 find_npc_vnum = 11000 
@@ -12,5 +12,5 @@ end
 local v = find_npc_by_vnum ( find_npc_vnum ) 
 if 0 == v then 
 else 
-target . vid ( "__TARGET__" , v , gameforge . new_quest_lv22 . _010_target ) 
+target . vid ( "__TARGET__" , v , "[LC;5681]" ) 
 end 

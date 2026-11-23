@@ -1,4 +1,4 @@
-say_title ( gameforge . new_quest_lv29 . _015_npcChat ) 
-say ( gameforge . new_quest_lv29 . _031_say ) 
+say_title ( "[LC;5799]" ) 
+say ( "[LC;5807]" ) 
 say ( "" ) 
-say ( string . format ( gameforge . new_quest_lv29 . _032_say , get_map_name_by_number ( 3 ) ) ) 
+say ( string . format ( "[LC;5808;%s]" , get_map_name_by_number ( 3 ) ) ) 

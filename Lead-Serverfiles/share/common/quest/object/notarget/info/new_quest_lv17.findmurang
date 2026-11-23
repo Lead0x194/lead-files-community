@@ -1,3 +1,3 @@
-say_title ( gameforge . new_quest_lv17 . _020_say_title ) 
-say ( gameforge . new_quest_lv17 . _075_say ) 
-say_reward ( string . format ( gameforge . new_quest_lv17 . _076_say_reward , 5 - pc . getqf ( "collect_count" ) ) ) 
+say_title ( "[LC;5632]" ) 
+say ( "[LC;5653]" ) 
+say_reward ( string . format ( "[LC;5654;%s]" , 5 - pc . getqf ( "collect_count" ) ) ) 

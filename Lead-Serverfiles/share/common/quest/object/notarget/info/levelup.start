@@ -9,9 +9,9 @@ local s = pc . getqf ( "select" )
 if s == 0 then s = 1 end 
 addimage ( 20 , 12 , special . levelup_img [ special . levelup_quest [ lev ] [ s * 2 - 1 ] ] ) 
 setcolor ( 0 , 0 , 0 ) 
-say ( string . format ( gameforge . levelup . _20_say , mob_name ( special . levelup_quest [ lev ] [ s * 2 - 1 ] ) ) ) 
-say ( string . format ( gameforge . levelup . _26_say , special . levelup_quest [ lev ] [ s * 2 ] ) ) 
-raw_script ( string . format ( gameforge . levelup . _27_say , special . levelup_quest [ lev ] [ 5 ] ) ) 
+say ( string . format ( "[LC;1817;%s]" , mob_name ( special . levelup_quest [ lev ] [ s * 2 - 1 ] ) ) ) 
+say ( string . format ( "[LC;1824;%s]" , special . levelup_quest [ lev ] [ s * 2 ] ) ) 
+raw_script ( string . format ( "[LC;1825;%s]" , special . levelup_quest [ lev ] [ 5 ] ) ) 
 say ( "" ) 
 if lev <= table . getn ( special . levelup_reward1 ) then 
 raw_script ( item_name ( special . levelup_reward1 [ lev ] [ pc . job + 1 ] ) ) 
@@ -29,6 +29,6 @@ raw_script ( reward_gold [ 1 ] [ 1 ] .. "-" .. reward_gold [ max_gold_i ] [ 1 ] 
 end 
 raw_script ( newline ) 
 levelup . show_mob_pos ( lev ) 
-select ( gameforge . locale . confirm ) 
+select ( "[LC;1919]" ) 
 clearmapsignal ( ) 
 setskin ( NOWINDOW ) 

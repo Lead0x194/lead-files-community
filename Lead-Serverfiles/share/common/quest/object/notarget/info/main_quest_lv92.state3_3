@@ -1,7 +1,7 @@
-say_title ( gameforge . main_quest_lv92 . _500_sayTitle ) 
-say ( gameforge . main_quest_lv92 . _510_say ) 
+say_title ( "[LC;4982]" ) 
+say ( "[LC;4983]" ) 
 say_item_vnum ( 31022 ) 
-say ( gameforge . main_quest_lv90 . _1180_say ) 
+say ( "[LC;4767]" ) 
 local remain_item = 10 - pc . count_item ( 31022 ) 
 if remain_item <= 0 then 
 remain_item = 0 

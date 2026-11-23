@@ -9,15 +9,15 @@ new_quest_lv52_successMulti = 2
 new_quest_lv52_neededAmount = 4 
 letterindex = new_quest_lv52_neededAmount - pc . getqf ( "ghostsleft" ) 
 if letterindex == 0 then 
-send_letter ( gameforge . new_quest_lv52 . _030_set_title ) 
+send_letter ( "[LC;5958]" ) 
 elseif letterindex == 1 then 
-send_letter ( gameforge . new_quest_lv52 . _170_send_letter ) 
+send_letter ( "[LC;6019]" ) 
 elseif letterindex == 2 then 
-send_letter ( gameforge . new_quest_lv52 . _171_send_letter ) 
+send_letter ( "[LC;6020]" ) 
 elseif letterindex == 3 then 
-send_letter ( gameforge . new_quest_lv52 . _172_send_letter ) 
+send_letter ( "[LC;6021]" ) 
 else 
-send_letter ( gameforge . new_quest_lv52 . _173_send_letter ) 
+send_letter ( "[LC;6022]" ) 
 end 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv52 . _030_set_title ) 
+q . set_title ( "[LC;5958]" ) 

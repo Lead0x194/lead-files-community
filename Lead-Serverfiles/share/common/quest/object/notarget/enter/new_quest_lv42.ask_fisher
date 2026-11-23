@@ -1,12 +1,12 @@
-send_letter ( gameforge . new_quest_lv42 . _010_send_letter ) 
+send_letter ( "[LC;5871]" ) 
 q . start ( ) 
-q . set_title ( gameforge . new_quest_lv42 . _010_send_letter ) 
+q . set_title ( "[LC;5871]" ) 
 local v = find_npc_by_vnum ( 9009 ) 
 local v2 = find_npc_by_vnum ( 20013 ) 
 if 0 == v2 then 
 if 0 ~= v then 
-target . vid ( "__TARGET2__" , v , gameforge . new_quest_lv42 . _030_target ) 
+target . vid ( "__TARGET2__" , v , "[LC;5879]" ) 
 end 
 else 
-target . vid ( "__TARGET2__" , v2 , gameforge . new_quest_lv42 . _030_target ) 
+target . vid ( "__TARGET2__" , v2 , "[LC;5879]" ) 
 end 

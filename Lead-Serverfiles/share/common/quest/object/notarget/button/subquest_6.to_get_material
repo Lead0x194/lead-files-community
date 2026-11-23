@@ -1,23 +1,23 @@
-say_title ( gameforge . subquest_06 . _20_npcChat ) 
-say ( gameforge . subquest_06 . _220_sayReward ) 
+say_title ( "[LC;7117]" ) 
+say ( "[LC;7119]" ) 
 if pc . getqf ( "asked_20011" ) == 1 then 
-say ( gameforge . subquest_06 . _285_say ) 
+say ( "[LC;7132]" ) 
 elseif pc . getqf ( "ironore_done" ) == 1 then 
-say_reward ( gameforge . subquest_06 . _224_sayReward ) 
+say_reward ( "[LC;7123]" ) 
 else 
-say ( gameforge . subquest_06 . _221_say ) 
+say ( "[LC;7120]" ) 
 end 
 if pc . getqf ( "asked_20008" ) == 1 then 
-say ( gameforge . subquest_06 . _345_say ) 
+say ( "[LC;7140]" ) 
 elseif pc . getqf ( "leather_done" ) == 1 then 
-say_reward ( gameforge . subquest_06 . _225_sayReward ) 
+say_reward ( "[LC;7124]" ) 
 else 
-say ( gameforge . subquest_06 . _222_say ) 
+say ( "[LC;7121]" ) 
 end 
 if pc . getqf ( "asked_20005" ) == 1 then 
-say ( gameforge . subquest_06 . _395_say ) 
+say ( "[LC;7146]" ) 
 elseif pc . getqf ( "coal_done" ) == 1 then 
-say_reward ( gameforge . subquest_06 . _226_sayReward ) 
+say_reward ( "[LC;7125]" ) 
 else 
-say ( gameforge . subquest_06 . _223_say ) 
+say ( "[LC;7122]" ) 
 end 
