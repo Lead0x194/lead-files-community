@@ -1,8 +1,8 @@
-ACCEPT	Bestätigen
+ACCEPT	OK
 ATTACH_METIN_INFO	Willst du den Geiststein einsetzen?
 ATTACH_METIN_TITLE	Geiststein einsetzen
 CANCEL	Abbruch
-CHANGE_PASSWORD_CONFIRM	Neues Passwort bestätigen
+CHANGE_PASSWORD_CONFIRM	Passwort wiederholen
 CHANGE_PASSWORD_NEW	Neues Passwort
 CHANGE_PASSWORD_OLD	Altes Passwort
 CHANGE_PASSWORD_TITLE	Passwortänderung
@@ -51,7 +51,7 @@ EMPIRE_EXIT	Beenden
 EMPIRE_NEXT	Weiter
 EMPIRE_PREV	Zurück
 EMPIRE_SELECT	Wählen
-EXCHANGE_ACCEPT	Annehmen
+EXCHANGE_ACCEPT	OK
 EXCHANGE_TITLE	Handeln
 GAMEOPTION_TITLE	Spieloptionen
 GAME_EXIT_OBSERVER	Zuschauermodus beenden
@@ -63,7 +63,7 @@ GRADE	Klasse
 GRADE_SELECT	Klasse
 GUILD_BASENAME	Basisname
 GUILD_BOARD_ID	Name
-GUILD_BOARD_REFRESH	Aktualisieren (F5)
+GUILD_BOARD_REFRESH	Aktualisieren
 GUILD_BOARD_TEXT	Nachricht
 GUILD_BUILDING_CATEGORY_TITLE	Baueinheiten
 GUILD_BUILDING_CHANGE	Wechseln
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Sperrholz
 GUILD_BUILDING_POSITION	Lage
 GUILD_BUILDING_PREVIEW	Vorschau
 GUILD_BUILDING_PRICE	Preis
-GUILD_BUILDING_REFRESH	Aktualisieren (F5)
+GUILD_BUILDING_REFRESH	Aktualisieren
 GUILD_BUILDING_STONE	Fu.stein
 GUILD_BUILDING_TITLE	Gildenhausbau
 GUILD_CRYSTAL	Kristall
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Ressource fallen lassen
 GUILD_GEM	Edelstein
 GUILD_GRADE_CHANGE_GRADE_NAME	Neuer Rangname
 GUILD_GRADE_NUM	Nr.
-GUILD_GRADE_PERMISSION_DELETE	Entlassen
-GUILD_GRADE_PERMISSION_JOIN	Einladen
-GUILD_GRADE_PERMISSION_NOTICE	Schreiben
-GUILD_GRADE_PERMISSION_SKILL	Fertigkeiten
+GUILD_GRADE_PERMISSION_DELETE	Aus Gilde entfernen
+GUILD_GRADE_PERMISSION_JOIN	Darf Spieler in die Gilde aufnehmen
+GUILD_GRADE_PERMISSION_NOTICE	Darf Gildennotizen anpinnen
+GUILD_GRADE_PERMISSION_SKILL	Gildenfertigkeiten
 GUILD_GRADE_RANK	Rang
 GUILD_GRADE_WRITE	Schreiben
 GUILD_INFO	Gildeninformationen
@@ -111,7 +111,7 @@ GUILD_INFO_UPLOAD_MARK	Zeichen hochladen
 GUILD_INFO_UPLOAD_SYMBOL	Flagge hochladen
 GUILD_MARK	Gildenzeichen
 GUILD_MEMBER_JOB	Klasse
-GUILD_MEMBER_KNIGHT	Leader
+GUILD_MEMBER_KNIGHT	Kämpfer
 GUILD_MEMBER_LEVEL	Level
 GUILD_MEMBER_NAME	Name
 GUILD_MEMBER_RANK	Rang
@@ -140,8 +140,8 @@ HELP_ATTACK_KEY	Angreifen: linke Maustaste oder Leertaste
 HELP_CHANGE_PK_MODE	Angriffsmodus wechseln: Belegung der linken Maustaste ändern
 HELP_CHARACTER_BUTTON1	(Charakterfenster, Inventarfenster,
 HELP_CHARACTER_BUTTON2	Freundesliste und Optionen)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Kamerasicht: mittlere oder rechte Maustaste
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Kamerasicht: rechte oder mittlere Maustaste
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Voreinstellung Kamerasicht: mittlere Maustaste
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Einstellung Kamerasicht ändern: rechte oder linke Maustaste belegen
 HELP_EXP	Erfahrung
 HELP_FURY	Ingame Item-Shop
 HELP_GUILD_WINDOW	Gildenfenster öffnen: Alt + G
@@ -183,7 +183,7 @@ MARKLIST_REFRESH	Aktualisieren
 MARKLIST_TITLE	Gildenzeichen registrieren
 MESSAGE	Dies ist eine Nachricht
 MESSENGER_ADD_FRIEND	Freund hinzufügen
-MESSENGER_DELETE_FRIEND	Freund löschen
+MESSENGER_DELETE_FRIEND	Löschen
 MESSENGER_OPEN_GUILD	Gildenfenster öffnen
 MESSENGER_TITLE	Freunde
 MESSENGER_WHISPER	Flüstern
@@ -194,8 +194,8 @@ MOUSEBUTTON_CAMERA	Kamera
 MOUSEBUTTON_SKILL	Fertigkeiten
 MUSICLIST_TITLE	Musikauswahl
 OPTION_ALWAYS_SHOW_NAME	Name
-OPTION_ALWAYS_SHOW_NAME_OFF	begrenzt
-OPTION_ALWAYS_SHOW_NAME_ON	immer
+OPTION_ALWAYS_SHOW_NAME_OFF	Begrenzt
+OPTION_ALWAYS_SHOW_NAME_ON	Immer
 OPTION_BLOCK	Abblocken
 OPTION_BLOCK_EXCHANGE	Handeln
 OPTION_BLOCK_FRIEND	Freunde
@@ -231,8 +231,8 @@ OPTION_PVPMODE_PEACE_TOOLTIP	Du darfst keine Spieler deines Reiches angreifen.
 OPTION_PVPMODE_REVENGE	Feindlich
 OPTION_PVPMODE_REVENGE_TOOLTIP	Du darfst nur Spieler mit einer anderen Gesinnung angreifen.
 OPTION_SALESTEXT	Ladenname
-OPTION_SALESTEXT_VIEW_OFF	ausblenden
-OPTION_SALESTEXT_VIEW_ON	einblenden
+OPTION_SALESTEXT_VIEW_OFF	Ausblenden
+OPTION_SALESTEXT_VIEW_ON	Einblenden
 OPTION_SOUND	Effekte
 OPTION_TARGET_BOARD	Zielmenü
 OPTION_TARGET_BOARD_NO_VIEW	Schließen
@@ -242,8 +242,8 @@ OPTION_TILING_APPLY	Anwenden
 OPTION_TILING_CPU	CPU
 OPTION_TILING_GPU	GPU
 OPTION_VIEW_CHAT	Chatzeile
-OPTION_VIEW_CHAT_OFF	ausblenden
-OPTION_VIEW_CHAT_ON	einblenden
+OPTION_VIEW_CHAT_OFF	Ausblenden
+OPTION_VIEW_CHAT_ON	Einblenden
 PARTY_MEMBER_INFO_NAME	Name des Gruppenmitglieds
 PASSWORD_DESC_1	Gib dein Passwort ein,
 PASSWORD_DESC_2	um das Lager zu öffnen.
@@ -273,7 +273,7 @@ SELECT_LEVEL	Level
 SELECT_METIN_STONE_TITLE	Geiststein wählen
 SELECT_NAME	Name
 SELECT_NO_GUILD	Keine Gilde
-SELECT_PLAYTIME	Spielzeit (Min.)
+SELECT_PLAYTIME	Spielzeit
 SELECT_SELECT	Start
 SELECT_SP	INT
 SHOP_BUY	Kaufen

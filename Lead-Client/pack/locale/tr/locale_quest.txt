@@ -1,7 +1,7 @@
 1	Kendine karşı savaşmak mı istiyorsun?[ENTER]Nasıl istersen öyle yap, ama bunun için bir[ENTER]arenaya ihtiyacın yok.[ENTER]Ciddi olarak bunu yapmak istediğinde tekrar gel.
 2	Eğitim dövüşüne başla
 3	Eğitim ortağın henüz gereken %s seviyesine[ENTER]erişemedi. Üzgünüm ancak bu dövüşe izin veremem.
-4	Eğitim dövüşü anlaşmasını tamamlamak için, %s[ENTER]yanıma gelmeli.
+4	Eğitim dövüşü anlaşması düzenlendi. %s kişisi de yanıma gelmeli.
 5	%s şu an uygun değil.
 6	Karar
 7	%s seninle dövüşmek istemiyor.
@@ -21,7 +21,7 @@
 21	Kimle dövüşeceğini bilmiyor musun? Bana bir isim[ENTER]vermezsen seni kaydedemem.
 22	Tamam, %s. %s katılımcısına karşı bir eğitim dövüşüne kaydoldun.
 23	%s karşılaşmanın %s tarafından onaylanmasını[ENTER]bekliyor.
-24	Sen %s, eğitim dövüşünü %s ile yapmak istiyor[ENTER]musun?
+24	%s, %s ile bir eğitim dövüşü yapmaya hazır mısın?
 25	%s şu anda yok. Daha sonra dene veya eğitim[ENTER]ortağınla buluş!
 26	Eşya geliştirmek istiyorum
 27	Demirci:
@@ -691,7 +691,7 @@
 700	3.Kat Seçenek Kapısındasın; Gözlerini ve[ENTER]kulaklarını aldatacak bir çok sahte Metin Taşı[ENTER]mevcut.[ENTER]15 dakika içerisinde gerçek Metin Taşını bul ve[ENTER]yok et! Kapıdan geçmenin tek yolu budur.
 701	10 dakika kaldı
 702	5 dakika kaldı
-703	Zaman doldu!
+703	Süre geçti.
 704	Sahte Metin taşları yok oldu...
 705	Ejderhayı öldürmek istiyorum!
 706	Giriş izni isteyen ilk kişi sen değilsin.[ENTER]Şifreyi söylemeden seni içeri bırakamam!
@@ -702,7 +702,7 @@
 711	Şimdi şifreyi belirle:
 712	Şifre, sadece rakam içerebilir.
 713	%s grubu, Mavi Ejderha'yı öldürmeye çalışıyor!
-714	Anahtar miktarı yetersiz! Geçidi etkinleştirmeye[ENTER]lâzım olanlar:
+714	Anahtar miktarı yetersiz! Geçidi etkinleştirmek[ENTER]için 3x lazım
 715	Onu sana Yonghan ile Huashin adlı hain liderler[ENTER]verecek.
 716	Bu bölgeden çıkmak istiyorum
 717	Seni mağaranın girişine geri götüreceğim.
@@ -790,7 +790,7 @@
 808	Bu eşyayı tahrip edeyim mi?
 809	Evet!
 810	Hayır, şimdi etme!
-811	Beceremedim, enerji paçası elde edemedim ne yazık[ENTER]ki. Bir dahaki sefer başarılı oluruz belki.
+811	Beceremedim, enerji parçası elde edemedim ne[ENTER]yazık ki. Bir dahaki sefer başarılı olurum belki.
 812	Efsanevi! %d enerji parçası buldum. İşte buyur.
 813	Enerji kristali üret
 814	Gücün şimdiden tükendi mi yoksa? Kendini o kadar[ENTER]hırpalayıp hayatını tehlikeye atmamalısın.[ENTER]Enerji kristali üretmek için %d enerji parçasına[ENTER]ihtiyacım var.
@@ -1988,7 +1988,7 @@
 2065	.
 2066	Hiçbirşey (pencereyi kapat)
 2067	Besle
-2068	Atımla ne yapmak istiyorsun?
+2068	Atınla ne yapmak istiyorsun?
 2069	Canlandır
 2070	Bin
 2071	Durumu kontrol et
@@ -3295,7 +3295,7 @@
 3374	Beşgen kalkan
 3375	3
 3376	Aşağıdaki hangi bileziğin seviyesi en düşüktür?
-3377	Cennetin gözü bilezik
+3377	Cennetin Gözyaşı Bilezik
 3378	Ametist bilezik
 3379	Kristal bilezik
 3380	Tahta bilezik
@@ -3314,13 +3314,13 @@
 3393	1
 3394	Hangi küpeler çeviklik bonusu sağlamaz?
 3395	Tahta küpe
-3396	Cennetin gözü küpe
+3396	Cennetin Gözyaşı Küpe
 3397	Yeşimtaşı küpe
 3398	Kristal küpe
 3399	2
 3400	Hangi küpe en düşük seviyelidir?
 3401	Ametist küpe
-3402	Cennetin gözü küpe
+3402	Cennetin Gözyaşı Küpe
 3403	Beyaz altın küpe
 3404	Tahta küpe
 3405	4
@@ -3627,7 +3627,7 @@
 3706	%d gün ve %d sa.
 3707	%d dakika ve %d saniye
 3708	%d dakika ve %d saniye
-3709	%d saniye
+3709	%d sn.
 3710	Kadın
 3711	Büyüklerine daha fazla saygı göstermelisin.[ENTER]Neyse, sana iyi yıllar dilerim.
 3712	Mutlu Yıllar!
@@ -6897,7 +6897,7 @@
 7073	Bana ne getirdin? Ah, seni kitap kurdu mu[ENTER]gönderdi? Bütün yaptığı okumaktır. Umarım[ENTER]okuduklarından birşeyler öğreniyordur. Beni her[ENTER]zaman rahatsız ediyor. Neyse, bana bu sefer ne[ENTER]istediğini söyle.
 7074	Benden saldırı değerlerine göre yelpazelerin[ENTER]sıralamasını söylememi mi istiyor? Basit bir[ENTER]mevzu, kısaca şöyle sıralanırlar: Cennet Kuşu[ENTER]yelpazesi, Üçkat yelpazesi, Su yelpazesi ve Turna[ENTER]kanadı yelpazesi. Anladın mı?
 7075	Soon'a dön
-7076	Soon'a dön
+7076	Soon'a geri dön.
 7077	Soon'a geri dön ve ona bilgileri ver.
 7078	Soon için bir iyilik.
 7079	Ee, Uriel sana net bir bilgi verdi mi?
@@ -6991,7 +6991,7 @@
 7171	Kötü Şans Zırhı +3 kazandın.
 7172	Pembe Elbise +3 kazandın.
 7173	Evet, istiyorum.
-7174	Hayır.
+7174	Hayır, kalsın.
 7175	Daha sonra mı yapacaksın? Çabuk gel, bu görev[ENTER]acil!
 7176	Bekle bir dakika, bu okuduğumun doğru kitap[ENTER]olduğundan emin olmalıyım. Evet, bu harika bir[ENTER]kitap. Bu yemeği kesinlikle pişireceğim![ENTER]Teşekkürler!
 7177	En iyi yemek kitabı
@@ -7487,7 +7487,7 @@
 7667	Evet, neden bana yardımcı olmuyorsun? O[ENTER]çiçeklerden bana getirmeye ne dersin? Bu durum[ENTER]ikimize de yardımcı olur. Bir anlaşma yapamaz[ENTER]mıyız? Hadi, onun aşkını kazanmak için neleri[ENTER]göze alabileceğimi bilmiyorsun... Sadece yardım[ENTER]et! Sana yang vereceğim.
 7668	Reddet
 7669	Ah aşkım Ariyoung
-7670	Bu görevi tamamen bırakmak istiyor musun?
+7670	Görevi bırakmak istiyor musun?
 7671	Lanet. O Çiçekleri nasıl bulacağım? Fikrini[ENTER]değiştirirsen lütfen geri gel.
 7672	Sen hiç aşık olmadın mı? Ariyoung'a karşı neler[ENTER]hissettiğim hakkında bir fikrin yok değil mi? Ah[ENTER]Ariyoung...
 7673	Çok teşekkür ederim! Lütfen bana o çiçeklerden[ENTER]getir.
@@ -7658,7 +7658,7 @@
 7838	Merhaba, bana bir dakikanı bağışlar mısın? Yeni[ENTER]silah yapımında bana yardım ettiğini hala[ENTER]unutmadım. Şimdi tekrar ihtiyacım var yardımına.[ENTER]Bu sefer yeni zırh imal etmek istiyorum. Kaliteli[ENTER]bir silah yapımından sonra kaliteli bir zırh[ENTER]yapmak istemem gayet normal.
 7839	İmalat için doğal olarak yine malzemeye ihtiyacım[ENTER]var. Onları benim için temin edebilir misin? İlk[ENTER]zırhı yine sana vereceğim. Bu sefer 100'er tane[ENTER]Bakır Cevheri, Abanoz Cevheri ve İnci Tanesi[ENTER]lazım bana. Bu işi artık biliyorsun. Başarılar!
 7840	Kabul et
-7841	Bu görevi tamamen bırakmak istiyor musun?
+7841	Görevi bırakmak istiyor musun?
 7842	O halde niye tereddüt ediyorsun? Maden ocağında[ENTER]yardım etmeye hazır olduğun zaman gel.
 7843	Şu kadarcık cevheri çok mu gördün? Nasıl[ENTER]istersen. Defol!
 7844	Bana yine yardım ediyorsun, öyle mi? Sen çok iyi[ENTER]bir arkadaşsın. Merak etme, ilk zırh senin[ENTER]olacak!
@@ -7832,7 +7832,7 @@
 8012	Beni Soon gönderdi...
 8013	Merhaba! Bana bir daha yardım etmek için mi[ENTER]geldin? Hmm, Soon'un kitabını istiyorsun. Zaten[ENTER]şehire inecektim ama o çok aceleci. Kitabı almak[ENTER]için başkalarını yolluyor. Hmm.[ENTER]İşte kitap. Soon'un, bu kağıt yığınlarında ne[ENTER]bulduğunu anlamıyorum. Aslında hızlı Yang[ENTER]kazanmak daha önemli.
 8014	Soon'a dön
-8015	Soon'a dön
+8015	Soon'a geri dön.
 8016	Seyyar satıcıdan Soon'un kitabını aldın.[ENTER]Soon'un yanına dön ve sana Celadon porselenini[ENTER]nasıl imal ettiğine dair ipucu vermesi için[ENTER]kitabı ona ver.
 8017	Kitabı aldım
 8018	Yaşasın! Hele şükür okunacak yeni konular geldi![ENTER]Teşekkür ederim sana! Tanımadığım pek fazla kitap[ENTER]yoktur...[ENTER]Al, Celadon porseleni yapımı için neyin önemli[ENTER]olduğunu yazdım sana. Tarife uyarsan muhteşem[ENTER]porselenler imal edeceksin.[ENTER]Şimdi yeni kitabı okumanın zamanı geldi.[ENTER]Hoşçakal.
@@ -7917,7 +7917,7 @@
 8097	İlacı Balso'ya verdin.
 8098	Balso'nun ilacı.
 8099	Baek-Go sana ağır maymun bitkisinden ilaç yaptı.[ENTER]Nadir rastlanan birçok hastalıklara şifa olan bir[ENTER]ilaç. İlacı, komşu köydeki Hain Balso'ya götür.
-8100	Bu görevi tamamen bırakmak istiyor musun?
+8100	Görevi bırakmak istiyor musun?
 8101	İlaç burada
 8102	Yeni ilaç mı getirdin bana? İlaç araştırmalarında[ENTER]gelişmeler var demekki?[ENTER]Başına böyle bir iş açtığım için özür dilerim. En[ENTER]başından bir doktora görünmeliydim. Her neyse, bu[ENTER]ilaca kanaat etmek mecburiyetindeyim..
 8103	Sıkıntılı zamanımda bana yardım ettiğin için çok[ENTER]teşekkür ederim. Benim fazla arkadaşım yok.[ENTER]Buyur, az bir miktar ama kalpten veriyorum.[ENTER]Lütfen al. Bir gün kalkınırsam seni unutmayacağım!
@@ -8045,7 +8045,7 @@
 8226	Kabul et
 8227	Söylediği yalanın ortaya çıkmaması için yardımcı[ENTER]olduğun için Taurean sana ödül olarak 30.000 Yang[ENTER]veriyor.
 8228	700.000 Tecrübe Puanı kazandın.
-8229	Bu görevi tamamen bırakmak istiyor musun?
+8229	Görevi bırakmak istiyor musun?
 8230	Neden? Yoksa sen de mi korkuyorsun?[ENTER]Fikrin değişirse haber ver.
 8231	Aah, sen de mi korkuyorsun?[ENTER]Benden hem daha uzun hem daha güçlü olduğun[ENTER]halde! Haha, korkak şey! Ben de başkasına[ENTER]sorarım.
 8232	Örümcekler çölde yaşıyor.[ENTER]Çok güçlüsün. Bunu başaracağından eminim. Bol[ENTER]şanslar!
@@ -8087,14 +8087,14 @@
 8268	Çöl kumunu çöl haydutlarından, kristal cevheri[ENTER]maden damarından, maymun kanını da Sangsung[ENTER]Dong'da maymun öldürerek temin edebilirsin.[ENTER]Bu malzemeleri bana getirebilir misin?[ENTER]Kolay olmayacağını bildiğim için hakkını[ENTER]fazlasıyla ödeyeceğim.
 8269	Kabul et
 8270	Reddet
-8271	Bu görevi tamamen bırakmak istiyor musun?
+8271	Görevi bırakmak istiyor musun?
 8272	Eğer şu sıralar çok meşgulsen, daha sonra gel.
 8273	Gerçekten pes mi edeceksin? Pekala, öyle[ENTER]görünüyor ki malzemeleri kendim bulacağım. Bu[ENTER]porselene gerçekten ihtiyacım var. Hoşçakal ve[ENTER]bol şans dilerim.
 8274	Ah! İşte bu.
 8276	Yüzbaşı
 8277	Bilmiyorum.
 8278	Tekrar göster bana.
-8279	Bu görevi tamamen bırakmak istiyor musun?
+8279	Görevi bırakmak istiyor musun?
 8280	Tekrar düşün ve daha sonra tekrar gel. Bundan[ENTER]sakın kimseye söz etme!
 8281	Aah, bu kadar zor muydu? Son umudumdun...Bu[ENTER]yazıyı şimdi kim çözecek?
 8282	Tamam, ama acele et yoksa şüphelenirler...[ENTER][ENTER]AKUTUF[ENTER]ŞAMNÜD[ENTER]DÜRNÜGÖ
@@ -8123,7 +8123,7 @@
 8306	Evet, haklısın! Şimdi ben de anlıyorum.[ENTER]Seninle gurur duyuyorum. Sen en iyi[ENTER]askerlerimizden birisin! Bu cümle[ENTER]kararlaştırılmış bir paroladır. Parola,[ENTER]Yu-Hwan'ın düşman casuslar deşifre ettiğini ve[ENTER]onlara karşı harekete geçmemiz gerektiği anlamına[ENTER]geliyor. Gerekenlerin yapılması için hemen[ENTER]talimat vereceğim.
 8307	20.000 Yang kazandın.
 8308	Sonunda çözeceksin. Kendini hazır hissettiğinde[ENTER]tekrar gel!
-8309	Bu görevi tamamen bırakmak istiyor musun?
+8309	Görevi bırakmak istiyor musun?
 8310	Ama... Son defasında, yapmıştın. Neden tereddüt[ENTER]ediyorsun ki? Lütfen bu konuyu tekrar düşün.
 8311	Anlıyorum. Artık bizimle birlikte çalışmak[ENTER]istemiyorsun, değil mi? Gerçekten üzgünüm çünkü[ENTER]cesur savaşçı bulmak pek kolay değil.
 8312	Paçamı kurtardın! İşte şifreli mesaj, iyi bak!
@@ -8173,7 +8173,7 @@
 8356	Neden sordun? Taurean ve Harang kavga mı ediyor?[ENTER]Bu yeni bir haber değil. Ama Harang haklı. Bingsu[ENTER]özellikle sıcak yaz günlerinin sevilen bir[ENTER]yiyeceğidir. Taurean iyi bir çocuk ama zaman[ENTER]zaman böyle dar kafalı olabiliyor. Eğer[ENTER]malzemeleri alırsan onun için Bingsu yapabilirim.
 8357	Bingsu mu?
 8358	Taurean'a ödül olarak Bingsu vermek istiyorum.[ENTER]Ne düşünüyorsun? Sohan dağından buz alabilir[ENTER]misin?
-8359	Bu görevi tamamen bırakmak istiyor musun?
+8359	Görevi bırakmak istiyor musun?
 8360	Dondurma sevmez misin? Yoksa çok mu fazla yedin?[ENTER]Bu Taurean için, lütfen bir kez daha düşün.
 8361	Ne kötü. Taurean çok üzülecek. Görüşürüz.
 8362	Çok güzel. Sohan dağındaki Büyülü Buzlardan Buz[ENTER]Parçaları almalıyım. Bana 50 tane Buz Parçası[ENTER]getir. Böylece lezzetli bir Bingsu yapabilirim.

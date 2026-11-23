@@ -1,7 +1,7 @@
 1	Vuoi lottare contro te stesso?[ENTER]Beh, fai pure, ma per questo non ti serve alcuna[ENTER]arena.[ENTER]Ritorna quando sarai sicuro di ciò che vuoi fare!
 2	Iniziare un duello di allenamento
 3	Il tuo compagno di allenamento non ha ancora[ENTER]raggiunto il livello richiesto (%s). Mi spiace ma[ENTER]non posso permettere questo duello.
-4	Per concludere le trattative per il combattimento[ENTER]d'allenamento, anche %s deve avvicinarsi a me.
+4	È stato preso un accordo per esercitarsi in combattimento. Anche %s deve ancora venire da me.
 5	%s sta disputando un combattimento d'allenamento.
 6	Decisione
 7	%s non desidera fare un combattimento[ENTER]d'allenamento con te.
@@ -21,7 +21,7 @@
 21	Non sai contro chi devi lottare? Se non mi dici[ENTER]alcun nome, non ti posso iscrivere.
 22	Bene, %s. Ti eserciterai contro %s.
 23	%s aspetta che %s accetti la sfida
-24	%s, vuoi allenarti alla lotta contro %s?
+24	%s vuoi combattere in allenamento contro %s?
 25	%s attualmente non è loggato. Riprova più tardi[ENTER]oppure datti appuntamento col tuo compagno[ENTER]d'allenamento!
 26	Desidero far migliorare qualcosa.
 27	Fabbro:
@@ -76,7 +76,7 @@
 76	Per cambiare Regno devi possedere i seguenti[ENTER]requisiti:[ENTER]1.Non devi essere membro di una Gilda.[ENTER]2. Non devi essere sposato.[ENTER]3. Non puoi stare per sposarti.[ENTER]4. Per cambiare Regno ti servono 500.000 Yang[ENTER]Vuoi cambiare Regno?
 77	Con queso Item puoi cambiare Regno.
 78	Non puoi usare questo Item!
-79	Puoi cambiare Regno solo una volta.
+79	Puoi cambiare regno solo una volta.
 80	GM - Il tempo deve essere portato a zero?
 81	Il tempo necessario è stato azzerato.
 82	I giocatori sposati non possono cambiare Regno.
@@ -691,7 +691,7 @@
 700	Sei al portale della scelta al terzo piano. Ci[ENTER]sono molte false Rocce Metin che illudono la tua[ENTER]vista ed il tuo udito. Trova la Roccia Metin[ENTER]giusta e distruggila entro 15 minuti. È l'unico[ENTER]modo per superare questo portale.
 701	10 minuti rimasti
 702	5 minuti rimasti
-703	Tempo scaduto!
+703	Il tempo è scaduto.
 704	La Roccia Metin falsa scompare...
 705	Voglio uccidere il drago!
 706	Tu non sei il primo che mi chiede di entrare.[ENTER]Dimmi il numero segreto, altrimenti non ti lascio[ENTER]accedere
@@ -702,7 +702,7 @@
 711	OK, ora definisco il codice:
 712	Il codice può contenere solo cifre.
 713	Il gruppo di %s sta provando a uccidere il Drago[ENTER]Blu!
-714	Non hai abbastanza chiavi! Per attivare il[ENTER]portale, ho bisogno di
+714	Non hai abbastanza chiavi! Per attivare il[ENTER]portale, mi servono 3x
 715	E' possibile ottenerla dai capi del male Yonghan[ENTER]& Huashin
 716	Voglio lasciare questo posto
 717	Ti riporterò all'entrata della grotta.
@@ -3627,7 +3627,7 @@
 3706	%d giorno/i e %d ora/e
 3707	%d minuti e %d secondi
 3708	%d minuti e %d secondi
-3709	%d secondi
+3709	%d sec.
 3710	Donna
 3711	Dovresti avere più rispetto per gli anziani. Ti[ENTER]auguro comunque buona fortuna per il nuovo anno.
 3712	Auguri per l'anno nuovo!
@@ -5019,7 +5019,7 @@
 5110	L'Ammiraglio Angmur ti sta aspettando.
 5111	Il Mantello! Sapevo che ce l'avresti fatta. La[ENTER]prossima mossa è la seguente: bisognerà appendere[ENTER]il Mantello nei pressi del loro accampamento.[ENTER]Vedere il Mantello renderà la Banda dei Ladri[ENTER]Rossi molto insicura.[ENTER]Se ne occuperà la mia gente. Tu nel frattempo[ENTER]potrai riposarti.
 5112	Indebolisci i Ciclopi
-5113	L'Ammiraglio Angmur vorrebbe parlare con te.
+5113	L'Ammiraglio Angmur vuole parlare con te.
 5114	Il nostro piano ha funzionato: non appena i Ladri[ENTER]Rossi non hanno visto il Mantello si è diffuso il[ENTER]panico all'interno del gruppo. Alla fine demoni e[ENTER]umani si sono attaccati a vicenda. Ora la banda è[ENTER]completamente disorganizzata.[ENTER]E ora il prossimo passo: ci occuperemo dei[ENTER]Ciclopi.
 5115	E come procediamo?
 5116	I Ciclopi adorano il loro capo. Se riusciamo a[ENTER]eliminare la guida, i Ciclopi andranno in panico[ENTER]e si disperderanno. Sconfiggi %d Generale[ENTER]Nessuno, %d Arge e %d Polifemo.
@@ -5150,7 +5150,7 @@
 5242	(Rimasti %s %s, %s %s )
 5243	%s : %d
 5244	Arresta la maledizione
-5245	L'Ammiraglio Angmur vorrebbe parlare con te.
+5245	L'Ammiraglio Angmur vuole parlare con te.
 5246	Sono felice che tu sia qui. Abbiamo trovato un[ENTER]modo per sabotare i piani dei Servitori e della[ENTER]Banshee.
 5247	Occorre un Medium affinché le anime dei morti[ENTER]possano abbandonare i propri corpi. Questo mezzo[ENTER]è la Terra sacra. I Giganti la conservano in[ENTER]sacchi. Se riesci a prenderne 100 sacchi,[ENTER]potremmo neutralizzare la Maledizione della vita.
 5248	Vado subito!
@@ -6342,11 +6342,11 @@
 6488	Hai raggiunto il punto di pattugliamento numero 3.
 6489	Trova il Punto di pattugliamento 5
 6490	Punto di pattugliamento 2
-6491	Vai al punto ti pattugliamento numero[ENTER]2.
+6491	Vai al punto ti pattugliamento numero 2.
 6492	Hai raggiunto il punto di pattugliamento numero 2.
 6493	Punto di pattugliamento 1
 6494	Vai al punto di pattugliamento numero 1.
-6495	Hai raggiunto il punto di pattugliamento[ENTER]numero 1.
+6495	Hai raggiunto il punto di pattugliamento numero 1.
 6500	Vai alla pattuglia numero 5.
 6505	Trova il Punto di pattugliamento 5
 6511	Hai raggiunto il punto di pattugliamento[ENTER]numero 5.
@@ -6991,7 +6991,7 @@
 7171	Ricevi una Corazza della sfortuna +3.
 7172	Ricevi un Vestito rosa+3.
 7173	Si, va bene.
-7174	No, davvero no
+7174	No, meglio di no.
 7175	Ci penserai più tardi? Torna presto, questa[ENTER]missione è urgente!
 7176	Aspetta un momento, voglio assicurami che si[ENTER]tratti del libro giusto...[ENTER]Mmm, davvero fantastico. Voglio assolutamente[ENTER]preparare queste ricette![ENTER]Grazie mille!
 7177	Il miglior libro di cucina
@@ -7487,7 +7487,7 @@
 7667	Si, perché non mi aiuti? Perché non prendi tu i[ENTER]fiori per me?[ENTER]Potremmo aiutarci a vicenda.[ENTER]Huh? Non erano questi i patti?[ENTER]Dai, non vedi quanto mi sforzo a ricevere il suo[ENTER]amore?[ENTER]Aiutami! Ti ricompenserò con un mucchio di yang
 7668	Rifiuta
 7669	Oh mia amata Ariyoung
-7670	Sei davvero sicuro di voler rinunciare per sempre[ENTER]alla quest?
+7670	Vuoi rinunciare definitivamente alla quest?
 7671	Accidenti. Come faccio a procurare questi fiori?[ENTER]Ti prego, se mai dovessi cambiare idea, torna da[ENTER]me!
 7672	Non sei mai stato innamorato?[ENTER]Non hai idea di cosa io provi per Ariyoung? Oh[ENTER]Ariyoung...
 7673	Grazie mille! Ti prego portami i fiori.
@@ -7658,7 +7658,7 @@
 7838	Ciao, hai un minuto per me?[ENTER]Ho davvero apprezzato l'aiuto che mi hai fornito[ENTER]per la creazione della nuova arma. Ora vorrei[ENTER]chiederti di aiutarmi di nuovo. Stavolta vorrei[ENTER]produrre una nuova armatura. Dopo una buona arma[ENTER]ci vuole per forza una buona armatura!
 7839	Ovviamente necessiterò di minerali per[ENTER]l'armatura. Potresti procurarteli per me? In[ENTER]cambio ti regalerò la prima armatura che creerò.[ENTER]Stavolta mi servono 100 unità di rame, 100 di[ENTER]ebano e 100 di perle. Sai cosa fare, buona[ENTER]fortuna!
 7840	Accetta
-7841	Sei davvero sicuro di voler rinunciare per sempre[ENTER]alla quest?
+7841	Vuoi rinunciare definitivamente alla quest?
 7842	Perchè esiti? Torna quando ti sentirai pronto.
 7843	Un po' di minerali, non chiedo tanto. Beh,[ENTER]contento tu. Sparisci!
 7844	Mi aiuterai di nuovo? Sei un vero amico.[ENTER]E non temere, la prima armatura sarà tua!
@@ -7917,7 +7917,7 @@
 8097	Dai la medicina a Balso
 8098	La medicina di Balso
 8099	Baek-Go ti ha preparato una medicina con l'erba[ENTER]medicinale delle Scimmie Difficili. A quanto pare[ENTER]è in grado di curare molte malattie. Portala al[ENTER]traditore Balso, nel villaggio qui vicino.
-8100	Sei davvero sicuro di voler rinunciare per sempre[ENTER]alla quest?
+8100	Vuoi rinunciare definitivamente alla quest?
 8101	Eccoti la medicina
 8102	Mi porti della nuova medicina? Allora le ricerche[ENTER]in ambito medico hanno fatto progressi? Mi spiace[ENTER]di averti procurato così tanto lavoro. Forse[ENTER]avrei dovuto chiedere subito il consiglio di un[ENTER]medico. Ad ogni modo, ora devo sforzarmi di[ENTER]prendere questa medicina.
 8103	Grazie per avermi aiutato in questo momento di[ENTER]estremo bisogno. Purtroppo non ho molti amici.[ENTER]Ecco, prendi: non è una gran somma, ma vien dal[ENTER]cuore. Accettala per favore. E se un giorno[ENTER]dovessi far fortuna, mi ricorderò di te.
@@ -8045,7 +8045,7 @@
 8226	Accetta
 8227	Taurean ti da una ricompensa per avergli retto il[ENTER]gioco: ricevi 30.000 Yang.
 8228	Ricevi 700.000 punti esperienza.
-8229	Sei davvero sicuro di voler rinunciare per sempre[ENTER]alla quest?
+8229	Vuoi rinunciare definitivamente alla quest?
 8230	Perchè no? Non avrai mica paura? Torna pure se[ENTER]cambi idea.
 8231	Anche tu hai paura? Ma se sei più grande e più[ENTER]forte di me!? Ahah, sei un codardo! Mi sa proprio[ENTER]che dovrà chiedere a qualcun altro.
 8232	I ragni vivono nel deserto. Sei molto forte, puoi[ENTER]farcela! Buona fortuna!
@@ -8087,14 +8087,14 @@
 8268	Recati nel deserto e ruba ai banditi che vi[ENTER]abitano la sabbia del deserto. Il minerale di[ENTER]cristallo si trova in un giacimento di minerali,[ENTER]mentre per procurare il sangue di scimmia devi[ENTER]eliminare le scimmiea Sangsun Dong. Lo so che non[ENTER]è facile, ma ti ricompenserò adeguatamente.
 8269	Accetta
 8270	Rifiuta
-8271	Sei davvero sicuro di voler rinunciare per sempre[ENTER]alla quest?
+8271	Vuoi rinunciare definitivamente alla quest?
 8272	Se hai troppo da fare ora, torna dopo.
 8273	Ti arrendi già? Allora dovrò procurarmi tutto da[ENTER]solo. Mi servono davvero quelle porcellane.[ENTER]Buona fortuna e arrivederci.
 8274	Ah, ecco.
 8276	Comandante
 8277	Non lo so
 8278	Mostramelo ancora.
-8279	Sei davvero sicuro di voler rinunciare per sempre[ENTER]alla quest?
+8279	Vuoi rinunciare definitivamente alla quest?
 8280	Riflettici ancora un po' e torna più tardi. Ma[ENTER]non dirlo a nessuno!
 8281	Oh, è così difficile? Eri la mia ultima[ENTER]speranza... e ora chi mi aiuta a decifrarlo?
 8282	Ok, ma cerca di essere veloce. Altrimenti[ENTER]qualcuno potrebbe insospettirsi...[ENTER][ENTER]LDA[ENTER]ONDR[ENTER]ROVINARA[ENTER]TLOMI[ENTER]CIEMNI
@@ -8123,7 +8123,7 @@
 8306	Hai perfettamente ragione! Adesso capisco... sono[ENTER]davvero orgoglioso di te! Sei uno dei nostri[ENTER]solfati migliori! Questa frase è stata[ENTER]anagrammata. Questo significa che Yu-Hwan ha[ENTER]camuffato delle spie nemiche e che noi dobbiamo[ENTER]attaccarle. Impartirò subito gli ordini!
 8307	Ricevi 20.000 Yang.
 8308	Sono sicuro che riuscirai a scoprirlo. Torna[ENTER]quando ti sentirai pronto!
-8309	Sei davvero sicuro di voler rinunciare per sempre[ENTER]alla quest?
+8309	Vuoi rinunciare definitivamente alla quest?
 8310	Ma... l'altra volta ce l'hai fatta.[ENTER]Perchè stai esitando?[ENTER]Ripensaci...
 8311	Ho capito. Non vuoi più lavorare con noi, non è[ENTER]così? È un vero peccato. Non capita tutti i[ENTER]giorni di trovare valorosi guerrieri come te.
 8312	Sei la mia salvezza! Ecco, questo è il messaggio[ENTER]segreto. Guardalo attentamente!
@@ -8173,7 +8173,7 @@
 8356	Perché mi chiedi questa cosa? Perché Taurean e[ENTER]Harang stanno litigando? Non è certo una novità.[ENTER]Ma Harang ha ragione. Soprattutto d'estate,[ENTER]quando fa caldo, il Bingsu è una prelibatezza.[ENTER]Taurean è davvero un bravo ragazzo, anche se a[ENTER]volte è tropo ambizioso. Se mi procurerai gli[ENTER]ingredienti, ti produrrò del Bingsu.
 8357	Bingsu?
 8358	Vorrei fare felice Taurean e preparargli del buon[ENTER]Bingsu. Cosa ne pensi? Te la senti di portarmi[ENTER]del ghiaccio dal Monte Sohan?
-8359	Sei davvero sicuro di voler rinunciare per sempre[ENTER]alla quest?
+8359	Vuoi rinunciare definitivamente alla quest?
 8360	Non ti piace il ghiaccio? O hai mangiato troppo?[ENTER]È per Taurean, riflettici ancora un attimo.
 8361	Peccato... Taurean sarà deluso! A presto.
 8362	Benissimo. Mi servono alcuni pezzi di ghiaccio[ENTER]incantato del Monte Sohan. Portamene 50, così[ENTER]potrò preparare del buon Bingsu.

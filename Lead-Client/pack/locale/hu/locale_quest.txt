@@ -1,7 +1,7 @@
 1	Magad ellen akarsz harcolni? Ahogy gondolod, de[ENTER]ehhez nem szükséges arénában lenned. Gyere vissza[ENTER]amikor komolyan készen állsz.
 2	Gyakorló harc elkezdése
 3	Az edzőpartnered még nem érte el a %s szintet.[ENTER]Sajnálom, de nem engedélyezhetem ezt a harcot.
-4	A gyakorló harc egyeztetéséhez %s-nek közelebb[ENTER]kell jönnie hozzám.
+4	A gyakorló harc bejegyzésre került. Még szükséges, hogy %s is idefáradjon hozzám.
 5	%s épp gyakorló harc órán van.
 6	Döntés
 7	%s nem akar veled gyakorló harcot folytatni.
@@ -702,7 +702,7 @@
 711	Rendben, akkor most megadom a kódot:
 712	A kód csak számjegyekből állhat.
 713	%s csoportja megpróbálja megölni a Kék Sárkányt!
-714	Nincs elegendő kulcsod! A portál aktiválásához[ENTER]szükségem van
+714	Nincs nálad elegendő kulcs! A portál[ENTER]aktiválásához szükségem van 3x
 715	Beszerezheted a gonosz Yonghan és Huashin[ENTER]vezetőktől.
 716	El akarom hagyni ezt a helyet
 717	Visszaviszlek a barlang bejáratához.
@@ -1988,7 +1988,7 @@
 2065	.
 2066	Semmit (ablak bezárása)
 2067	Etetés
-2068	Mit szeretnél csinálni a lovaddal?
+2068	Mit szeretnél tenni a lovaddal?
 2069	Felélesztés
 2070	Lovaglás
 2071	Állapot ellenőrzése
@@ -3627,7 +3627,7 @@
 3706	%d nap és %d óra
 3707	%d perc és %d másodperc
 3708	%d perc és %d másodperc
-3709	%d másodperc
+3709	%d mp.
 3710	Nő
 3711	Jobban kellett volna tisztelned az őseidet.[ENTER]Ennek ellenére minden jót kívánok az új[ENTER]esztendőre.
 3712	Boldog Új Évet!
@@ -6897,7 +6897,7 @@
 7073	Mi szél hozott hozzám? Oh, a könyvmoly küldött?[ENTER]Minden nap visszahúzódik a könyveivel és az[ENTER]írástekercseivel, és mégsem lesz intelligensebb.[ENTER]És mindig zavar engem. Lássuk csak, hogy most mit[ENTER]akar tudni!
 7074	Szeretné, hogy rendezzem sorba a legyezőket a[ENTER]támadási értékeik szerint? Ez eléggé könnyű:[ENTER]Égimadár legyező, Tripla legyező, Vízi legyező és[ENTER]Daruszárny legyező. Érted?
 7075	Vissza Soon-hoz
-7076	Visszatérés Soon
+7076	Vissza Soon-hoz
 7077	Menj vissza Soon-hoz és add át az információt.
 7078	Szívesség Soon-nak
 7079	Tudott neked Uriel világos választ adni?
@@ -6991,7 +6991,7 @@
 7171	Kaptál egy Balszerencse Lemezvért+3-t.
 7172	Kaptál egy Rózsaszín Ruha+3-t.
 7173	Igen, akarom
-7174	Inkább mégsem
+7174	Nem, inkább mégsem.
 7175	Megcsinálod később? Gyere vissza később, ez a[ENTER]küldetés fontos!
 7176	Várj egy kicsit, biztos akarok lenni benne hogy[ENTER]ez a jó könyv... Hmm, igen, ez fantasztikus.[ENTER]Biztos hogy megfőzöm ezeket az ételeket![ENTER]Köszönöm!
 7177	A legjobb szakácskönyv
@@ -7487,7 +7487,7 @@
 7667	Pontosan! Miért nem segítesz nekem? Miért nem[ENTER]hozod el nekem a virágokat? Ez mindkettőnk javára[ENTER]válna. Micsoda? Ez nem tartozott az[ENTER]egyezségünkhöz? Na ne, hát nem látod, hogy[ENTER]mennyire fáradozom a szeretetéért? Csak segíts[ENTER]nekem! Rengeteg Yanggal foglak megjutalmazni!
 7668	Visszautasít
 7669	Oh, legdrágább Ariyoungom
-7670	Ki akarsz lépni ebből a küldetésből?
+7670	Meg akarod szakítani a küldetést?
 7671	Francba. Hogy szerezzem be neki a virágot?[ENTER]Kérlek gyere vissza, ha megváltoztattad a[ENTER]véleményedet.
 7672	Soha nem voltál szerelmes?[ENTER]Nem tudod, hogy mit érzek Ariyoung iránt?...[ENTER]Oh Ariyoung...
 7673	Köszönöm szépen! Kérlek, hozz nekem ilyen virágot!
@@ -7658,7 +7658,7 @@
 7838	Szia, van egy perced számomra? Igazán nagyra[ENTER]értékelem, hogy a múltkor segítettél új fegyvert[ENTER]készíteni. Most újra a segítséged szeretném[ENTER]kérni. Ez alkalommal új vértet szeretnék[ENTER]készíteni. Miután új fegyvert alkottam,[ENTER]egyértelmű, hogy egy jó vértre is szükségem van.
 7839	Természetesen szükségem van nyersanyagokra az új[ENTER]vért készítéséhez. Be tudod nekem szerezni?[ENTER]Cserébe megkapod az első befejezett vértet. Ez[ENTER]alkalommal 100 db Réz ércre, 100 db Ébenfa ércre[ENTER]és 100 Igazgyöngy darabra van szükségem. Ezt is[ENTER]tudnod kell. Sok sikert kívánok!
 7840	Elfogadni.
-7841	Ki akarsz lépni ebből a küldetésből?
+7841	Meg akarod szakítani a küldetést?
 7842	Miért habozol? Gyere vissza, ha készen állsz a[ENTER]bányászatra.
 7843	Ez a kis érc nem túl nagy kérés.[ENTER]Nos, magadnak köszönheted. Tűnj el!
 7844	Újra segíteni fogsz? Jó barát vagy.[ENTER]És ne aggódj: az első vért a tied!
@@ -7832,7 +7832,7 @@
 8012	Soon küldött...
 8013	Hé, azért jöttél vissza, hogy ismét segíts nekem?[ENTER]Ah, te Soon könyvére gondolsz. Én nem sokára[ENTER]eljöttem volna a városba, de ő túlságosan[ENTER]türelmetlen. Megkér másokat, hogy hozzák el neki[ENTER]a könyvet. Hmm. Ah! Itt van. Nem értem, hogy ez a[ENTER]papírhalom miért olyan fontos. Sokkal fontosabb,[ENTER]hogy az ember gyorsan Yangot keressen.
 8014	Visszatérés Soonhoz.
-8015	Visszatérés Soon
+8015	Vissza Soon-hoz
 8016	A szomszéd város kereskedőjétől megkaptad Soon[ENTER]könyvét. Most pedig térj vissza Soonhoz, hogy[ENTER]odaadd neki a könyvet, és hogy a tudását s[ENTER]Celadonról megossza veled.
 8017	Nálam van a könyv
 8018	Juhu...végre nálam van az új könyv! Köszönöm[ENTER]szépen. Nincs sok könyv amit még nem olvastam...[ENTER]Leírtam minden fontosat a Celadon porcelán[ENTER]készítéséről. Kövesd az útmutatóm és tökéletes[ENTER]porcelánt fogsz készíteni. És most itt az ideje[ENTER]hogy elolvassam az új könyvemet. Viszont látásra!
@@ -7917,7 +7917,7 @@
 8097	Átadod Balsonak a gyógyszert.
 8098	Áruló Balso gyógyszere
 8099	Baek-Go elkészítette a gyógyszert a Nehéz majom[ENTER]növényből, mely számos ritka betegség[ENTER]gyógyítására képes. Vidd el Áruló Balsonak a[ENTER]szomszéd faluba.
-8100	Ki akarsz lépni ebből a küldetésből?
+8100	Meg akarod szakítani a küldetést?
 8101	Itt van a gyógyszer
 8102	Új orvosságot hozol nekem? Történt némi[ENTER]előrelépés az orvosi kutatásban? Sajnálom, hogy[ENTER]zavartalak. Kezdetektől fogva ki kellett volna[ENTER]kérnem egy orvos tanácsát. Most viszont elfogadom[ENTER]ezt a gyógyszert, amit kaptam.
 8103	Köszönöm, hogy ebben a nyomorúságos helyzetemben[ENTER]segítettél nekem. Nincs sok barátom. Tessék,[ENTER]tudom, hogy nem valami túl sok, de szívből adom.[ENTER]Kérlek, fogadd el! Bármi lesz is velem, soha nem[ENTER]foglak elfeledni.
@@ -8045,7 +8045,7 @@
 8226	Elfogadni.
 8227	Taurean megajándékozott, mert segítettél neki a[ENTER]hazugságban: 30.000 Yangot kaptál.
 8228	700.000 tapasztalat pontot kaptál.
-8229	Ki akarsz lépni ebből a küldetésből?
+8229	Meg akarod szakítani a küldetést?
 8230	Miért nem? Félsz?[ENTER]Látogass meg, ha megváltoztattad a véleményed.
 8231	Ah, szóval félsz?[ENTER]Pedig te sokkal nagyobb és erősebb vagy, mint én![ENTER]Haha, te gyáva vagy! Akkor megkérek majd valaki[ENTER]mást.
 8232	A pókok a sivatagban élnek. Te erős vagy. Biztos[ENTER]vagyok benne, hogy meg tudod tenni. Sok[ENTER]szerencsét!
@@ -8087,14 +8087,14 @@
 8268	Sivatagi homokot a Sivatagi banditáktól, Kristály[ENTER]ércet a kristály erekből kapsz, míg a Majomvér[ENTER]megszerzéséhez majmokat kell ölnöd Sangsun[ENTER]Dong-ban. Be tudod nekem szerezni ezeket az[ENTER]anyagokat? Tudom, hogy nem lesz könnyű, de[ENTER]nagylelkűen megjutalmazlak érte.
 8269	Elfogadni.
 8270	Lemondani.
-8271	Ki akarsz lépni ebből a küldetésből?
+8271	Meg akarod szakítani a küldetést?
 8272	Ha most túl elfoglalt vagy, gyere vissza később.
 8273	Tényleg feladod? Akkor mindent magamnak kell[ENTER]megkeresnem. Tényleg sürgősen szükségem van a[ENTER]porcelánra. Viszontlátásra és minden jót.
 8274	Ah! Ez az.
 8276	Kapitány
 8277	Nem tudom.
 8278	Mutasd meg újra.
-8279	Ki akarsz lépni ebből a küldetésből?
+8279	Meg akarod szakítani a küldetést?
 8280	Gondold át újra, és gyere vissza később. De[ENTER]senkinek ne beszélj erről!
 8281	Oh, Istenem! Ilyen nehéz? Te voltál az utolsó[ENTER]reményem... Ki fogja most ezt megfejteni?
 8282	Rendben, de siess! Különben valaki gyanakodni[ENTER]fog...[ENTER][ENTER]ESEKELNÉLG[ENTER]A[ENTER]LRÁHTATÁON
@@ -8123,7 +8123,7 @@
 8306	Igen, igazad van! Most már én is értem. Büszke[ENTER]vagyok rád! Te vagy az egyik legjobb katonánk! Ez[ENTER]a mondat egy egyeztetett jelszó. Azt jelenti,[ENTER]hogy Yu-Hwan ellenséges kémeknek van kitéve, és[ENTER]fel kell lépnünk ellenük. Azonnal ki fogom adni a[ENTER]szükséges parancsokat.
 8307	20.000 Yang-ot kaptál.
 8308	Ki fogod találni. Gyere vissza, ha készen állsz!
-8309	Ki akarsz lépni ebből a küldetésből?
+8309	Meg akarod szakítani a küldetést?
 8310	De legutóbb sikerült. Miért habozol most? Gondold[ENTER]át újra!
 8311	Tudom, mire gondolsz.[ENTER]Nem akarsz már velünk együtt dolgozni, igaz?[ENTER]Igazán kár. Itt nincs túl sok bátor harcos.
 8312	Oh! Te vagy a megmentőm! Látod, ez a titkosírás.[ENTER]Nézd meg közelebbről!
@@ -8173,7 +8173,7 @@
 8356	Miért kérdezed? Mert Taurean és Harang[ENTER]vitatkoznak? Ez nem újdonság. De Harangnak igaza[ENTER]van. A Bingsu egy különösen népszerű étel forró[ENTER]nyarakon. Taurean voltaképpen egy jó fiú még[ENTER]akkor is, ha néha egy kissé kicsinyes. Ha kapsz[ENTER]hozzávalókat, készíthetek neki Bingsut.
 8357	Bingsu?
 8358	Szeretnék Taureannak örömet okozni, és Bingsut[ENTER]adni neki. Mit gondolsz? Tudsz jeget hozni[ENTER]Jéghegyről?
-8359	Ki akarsz lépni ebből a küldetésből?
+8359	Meg akarod szakítani a küldetést?
 8360	Nem szereted a jégkrémet? Vagy már túl sokat[ENTER]ettél belőle? Ez Taureané, kérlek, gondold át[ENTER]újra.
 8361	Kár. Taurean nagyon csalódott lesz.[ENTER]Viszlát.
 8362	Nagyon jó! Szükségem van jégrögre a Jéghegyen[ENTER]lévő Elvarázsolt jégből. Hozz nekem 50 jégrögöt![ENTER]Akkor tudok finom Bingsut készíteni.

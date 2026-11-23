@@ -1,7 +1,7 @@
 1	Er du sikker på, at du vil kæmpe mod dig selv?
 2	Start en øvelseskamp
 3	Level på den anden gruppe er lavere end %s.
-4	For at afslutte øvelseskampen bliver %s nødt til[ENTER]at komme tættere på.
+4	Trænings kamp aftalen er på plads. %s skal også komme til mig.
 5	%s er undervejs i øvelseskamp-timerne.
 6	Beslutning
 7	%s vil ikke gå i øvelseskamp mod dig.
@@ -21,7 +21,7 @@
 21	Ved du ikke hvem du vil kæmpe imod? Hvis du ikke[ENTER]kan give mig et navn så kan jeg ikke skrive dig[ENTER]op.
 22	Okay, %s. Du er blevet tilmeldt til en trænings kamp imod %s.
 23	%s venter på at %s accepterer udfordringen
-24	%s ønsker du at kæmpe mod %s i en øvelseskamp?
+24	%s, er du klar til en trænings kamp imod %s?
 25	%s er ikke logget på i øjeblikket. Prøv igen[ENTER]senere, eller arrangere at mødes med din træning[ENTER]partner!
 26	Jeg ønsker at forbedre noget.
 27	Smed:
@@ -76,7 +76,7 @@
 76	For at skifte Rige skal du opfylde følgende krav:[ENTER]1. Du må ikke være medlem af en Orden.[ENTER]2. Du må ikke være gift.[ENTER]3. Du må ikke være på dit eget bryllup.[ENTER]4. Du har brug for 500.000 Yang[ENTER]Vil du skifte Rige?
 77	Med denne genstand kan du skifte Rige.
 78	Du kan ikke bruge denne genstand!
-79	Du kan kun skifte Rige en gang.
+79	Du kan kun skifte rige en gang.
 80	GM - skal tidsspærren sættes til 0?
 81	Tiden blev sat til 0.
 82	Gifte spillere kan ikke skifte Rige.
@@ -240,7 +240,7 @@
 240	Jeg har Jinunggyis sjæle sten.
 241	Tusind tak![ENTER]For at belønne dig, vil jeg give dig denne[ENTER]opskrift. Dens sammensætning er kendt af meget[ENTER]få, og bliver omhyggeligt vogtet. Drikken du kan[ENTER]lave af opskriften giver dine føder vinger. Gå og[ENTER]søg Beak-Go. Han vil lave drikken til dig.[ENTER]Farewell, min ven. Med din hjælp var jeg i stand[ENTER]til at lære nogle vigtige ting omkring orkerne.
 242	Vær så venlig og kom tilbage efter du har fundet[ENTER]en Jinunggyis sjæle-sten.
-243	Chaegirab's belønning
+243	Chaegirabs belønning
 244	Hør på mig.
 245	Chaegirab's belønning
 246	Som belønning for kindtænderne og Jinunggyis[ENTER]sjæle-sten har biologen Chaegirab givet dig en[ENTER]hemmelig opskrift.[ENTER]Gå til Baek-Go - han vil tilberede eliksiren.
@@ -279,7 +279,7 @@
 279	Jeg har Tempel sjæle stenen.
 280	Tusind tak![ENTER]Som belønning, vil jeg give dig denne opskrift.[ENTER]Dens ingredienser er kun kendt af meget få og[ENTER]dens hemmelighed er højt beskyttet. Drikken der[ENTER]kan fremstilles af denne opskrift vil accelerere[ENTER]din sværd arm. Gå og søg efter Beak-Go. Han vil[ENTER]producere drikken til dig.[ENTER]Farewell, min ven. Takket være dig, er det[ENTER]lykkedes mig at finde en masse vigtig information[ENTER]omkring den forhistoriske magi.
 281	Kom venligst tilbage når du har fundet Tempel[ENTER]sjæle-stenen.
-282	Chaegirab's belønning
+282	Chaegirabs belønning
 283	Biologen Chaegirab, Uriel's lærling, leder[ENTER]desperat efter dig. Gå hurtigt derhen og find ud[ENTER]af hvordan du kan hjælpe ham.
 284	Chaegirab's belønning
 285	Som belønning for de forbandede bøger og sjæle[ENTER]stenene, giver biologen Chaegirab dig en hemmelig[ENTER]opskrift. Gå til Beak-Go nu, han vil lave mirakel[ENTER]kuren til dig.
@@ -314,7 +314,7 @@
 314	Du har fundet Sagyis sjæle sten.
 315	Jeg har Sagyis sjæle sten.
 316	Tusind tak! For at belønne dig, vil jeg give dig[ENTER]denne opskrift. Dens sammensætning er kun kendt[ENTER]af ganske få, og dens hemmelighed der skarpt[ENTER]bevogtet. Drikken der kan laves af denne opskrift[ENTER]forbedre dit undvigelses instinkt. Gå ud og find[ENTER]Baek-Go.[ENTER]Han vil brygge drikken til dig.[ENTER]Farewell, min ven. Takket være din hjælp var jeg[ENTER]i stand til at finde ud af vigtigt nyt omkring[ENTER]dæmonerne.
-317	Chaegirab's belønning
+317	Chaegirabs belønning
 318	Kom venligst tilbage når du har fundet Sagyis[ENTER]sjæle-sten.
 319	Chaegirab's belønning
 320	Biologen Chaegirab, Uriel's lærling, leder[ENTER]desperat efter dig. Gå hurtigt derhen og find ud[ENTER]af hvordan du kan hjælpe ham.
@@ -329,7 +329,7 @@
 329	Dæmonens minde
 330	Iskugle fra Sohan bjerget
 331	Biologen`s anmodning
-332	Biologen Chaegirab, Uriels lærling, undersøger[ENTER]bjerget Sohan i den vestlige del af kontinentet.[ENTER]Han skal bruge 20 Iskugler til hans forskning.[ENTER]Bring dem til ham en af gangen så han kan[ENTER]undersøge dem enkeltvis. Du kan få dem fra[ENTER]Is-golem.
+332	Biologen Chaegirab, Uriels lærling, undersøger[ENTER]Bjerg Sohan i den vestlige del af kontinentet.[ENTER]Han har brug for 20 Iskugler til hans forskning.[ENTER]Bring dem til ham en af gangen, så han kan[ENTER]undersøge dem enkeltvis. Du kan få dem fra Is[ENTER]Golems.
 333	Du har leveret %s Iskugle indtil videre.
 334	Du kan ikke bruge Forskerens eliksir endnu.
 335	Du har allerede brugt en eliksir!
@@ -354,7 +354,7 @@
 354	Tusind tak! Som belønning, vil jeg give dig denne[ENTER]opskrift. Dens sammensætning er kun kendt af[ENTER]meget få, og bliver varsomt bevogtet. Drikken som[ENTER]du kan lave med denne opskrift vil forbedre din[ENTER]angrebs styrke. Gå og søg Baek-Go. Han vil brygge[ENTER]drikken til dig.[ENTER]Farewell, min ven. Tak for din hjælp, jeg var i[ENTER]stand til at finde ud af vigtige ting om is[ENTER]landet.
 355	Kom venligst tilbage når du har fundet Aurtumryus[ENTER]sjæle-sten.
 356	Biologen Chaegirab, Uriel's lærling, leder[ENTER]desperat efter dig. Gå hurtigt derhen og find ud[ENTER]af hvordan du kan hjælpe ham.
-357	Chaegirab's belønning
+357	Chaegirabs belønning
 358	Som belønning for Iskugler og sjæle stenene, har[ENTER]biologen Chaegirab givet dig en hemmelig[ENTER]opskrift. Gå nu til Baek-Go, han vil lave en[ENTER]mirakel kur til dig.
 359	Den hemmelige opskrift
 360	Ohh er det biologen Chaegirabs hemmelige[ENTER]opskrift? Hmm, den vil forøge din angrebs værdi[ENTER]med 50 point. Her er din drik! Jeg vil også give[ENTER]dig denne træboks. Tag godt hånd om den.
@@ -474,7 +474,7 @@
 476	Jeg har Skovspøgelses-sjælesten.
 477	Biologen Chaegirab:
 478	Mange tak![ENTER]Som belønning vil jeg give dig denne hemmelig[ENTER]opskrift. Ikke mange mennesker ved, hvad den[ENTER]består af, og dens indhold er en omhyggelig[ENTER]bevogtet hemmelighed. Gå ud og kigge efter[ENTER]Baek-Go. Han vil producere eliksiren for dig.[ENTER]Farvel, min ven. Takket være dig, var jeg i stand[ENTER]til at finde ud af en masse vigtige oplysninger[ENTER]om Rød Skov.
-479	Chaegirab's belønning
+479	Chaegirabs belønning
 480	Baek-Go:
 481	Chaegirab's belønning
 482	Som belønning for Rød Spøgelsestræ Grene og[ENTER]sjælesten, har biologen Chaegirab givet dig en[ENTER]hemmelig opskrift. Gå nu til Baek-Go, han vil[ENTER]producere mirakel kuren til dig.
@@ -521,7 +521,7 @@
 530	Jeg har fundet Sjæle Sten.
 531	Åh, godt arbejde! Nu kan jeg endelig færdiggøre[ENTER]min forskning med succes. Som en belønning, vil[ENTER]jeg give dig en hemmelige opskrift på en[ENTER]mirakelkur, Baek-Go kan brygge for dig. Ha`en[ENTER]dejlig dag! Og tak for al din hjælp. Jeg ville[ENTER]ikke have klaret det uden dig!
 532	mangler!
-533	Chaegirab's belønning
+533	Chaegirabs belønning
 534	Baek-Go:
 535	Chaegirab's belønning
 536	Som en belønning for at få Lederens notits og[ENTER]sjælesten, biologen Chaegirab har givet dig en[ENTER]hemmelig opskrift. Gå nu til Baek-Go, han vil[ENTER]lave mirakel kuren til dig.
@@ -702,7 +702,7 @@
 711	OK, jeg vil indsætte koden nu:
 712	Koden kan kun indeholde tal.
 713	%s's gruppe forsøger at dræbe den blå drage!
-714	Du har ikke nok nøgler! For at aktivere portalen[ENTER]skal jeg bruge
+714	Du har ikke nok nøgler! For at aktivere portalen,[ENTER]skal jeg bruge 3x
 715	Du kan få det fra de onde ledere Yonghan og[ENTER]Huashin.
 716	Jeg vil gerne forlade dette sted
 717	Jeg tager dig tilbage til grottens indgang.
@@ -1395,7 +1395,7 @@
 1455	Jeg kommer tilbage senere.
 1456	Du er en modig kriger. Vær rar at fortsætte![ENTER][ENTER]Opgave %s[ENTER]Du kan acceptere denne opgave i alt ti gange.
 1457	Helveds Hund
-1458	Flamme-ånd
+1458	Flamme Spøgelse
 1459	Mørk fanatiker
 1460	Vild infanterist
 1461	Hvid-Ed soldat
@@ -1415,7 +1415,7 @@
 1475	Mens du var væk, blev vores landsby angrebet igen!
 1476	Helveds Vandmand
 1477	Zombie
-1478	Flamme-kriger
+1478	Flamme Kriger
 1479	Oksefrø-general
 1480	Mørk besværger
 1481	Mørk kriger
@@ -1562,7 +1562,7 @@
 1622	Plageånd tilbage
 1623	Edderkop tilbage
 1624	Bandit tilbage
-1625	Is-golem tilbage
+1625	Is Golems tilbage
 1626	Tiger tilbage
 1627	Det nye navn er for langt.
 1628	Observering af hestens form.
@@ -1988,7 +1988,7 @@
 2065	.
 2066	Ingen ting (luk vindue)
 2067	Foder
-2068	Hvad vil du med min hest?
+2068	Hvad vil du gerne gøre med din hest?
 2069	Genopliv
 2070	Ride på en hest.
 2071	Find ud af hestens tilstand.
@@ -2962,7 +2962,7 @@
 3041	Udforsk flammerne
 3042	Dræb 40 flammer.
 3043	Flammerne er ubeskriveligt brutale. De holder af[ENTER]at smerten fra de mennesker hvis skind de[ENTER]fortære. Vi ved stadig ikke hvordan vi skal dræbe[ENTER]dem. Kunne du finde ud af mere om disse flammer?
-3044	Flamme-kriger
+3044	Flamme Kriger
 3045	Dræb 60 flamme-kriger.
 3046	Sidst blev et barn af en adelig familie dræbt af[ENTER]en flamme-krigere, da det kom for tæt på[ENTER]ildlandet! Når du dræber flamme-krigerne får du[ENTER]en belønning! Hvorfor udfordrer du dem ikke?
 3047	Undersøgelserne af åndetræerne
@@ -3627,7 +3627,7 @@
 3706	%d dag(e) og %d t.
 3707	%d minut(ter) og %d sekunder(s)
 3708	%d minut(ter) og %d sekunder(s)
-3709	%d sekunder(s)
+3709	%d sek.
 3710	Kvinde
 3711	Du burde havde mere respekt for dine ældre.[ENTER]Ikke desto mindre, ønsker jeg dig alt det bedste[ENTER]for det nye år.
 3712	Godt nytår!
@@ -4309,15 +4309,15 @@
 4391	Ohh ja, overser: Inden jeg koncentrere mig om den[ENTER]næste side, bør jeg nok fortælle dig hvad der var[ENTER]på den sjette side. Hrm-hrm...
 4392	sjette side:
 4393	Tiden løber ud. Nu har vi endda forsøgt at bruge[ENTER]mørke heksekræfter i Edderkoppe grotten og det[ENTER]virker stadig ikke.[ENTER]Hvad overser vi? Nogen af vores mystikere tror at[ENTER]de mørke heksekræfter kræver støre ofre.[ENTER]Hvis det er sandt må det være en ekstremt[ENTER]magtfuld kraft.
-4394	Ifølge eventyr og legender, kræver denne type[ENTER]magi altid menneskelige ofringer. Men hvis jeg[ENTER]dræber deres kære ved alteret, vil mit ry iblandt[ENTER]folk blive virkelig skadet. Vi har brug for en[ENTER]passende stedfortræder. Lad os prøve med Slange[ENTER]sværdkrigerne fra ørkenen.
-4395	Aha. Så fordi de ikke kunne ofre mennesker,[ENTER]besluttede de at bruge Slange krigere. Jeg kan[ENTER]ikke lade som om jeg kan lide denne nye[ENTER]udvikling. Det kommer til at blive barbarisk...[ENTER]Vi har dog stadig behov for at følge deres spor.[ENTER]Gå ud i ørkenen og dræb nogle Slange sværdkrigere[ENTER]og Slange bueskytter. Hvem ved hvad vi ellers[ENTER]måske finder der. Forresten: Din belønning er i[ENTER]denne pung!
+4394	Ifølge eventyr og legender, kræver denne type[ENTER]magi altid et menneskeligt offer. Men hvis jeg[ENTER]dræber deres kære ved alteret, vil mit ry iblandt[ENTER]folk få et slag. Vi har brug for en passende[ENTER]erstatning. Lad os prøve det med Slange[ENTER]Sværdkrigerne fra ørkenen.
+4395	Aha. Så fordi de ikke kunne ofre mennesker,[ENTER]besluttede de sig for at bruge slange kæmpere.[ENTER]Jeg kan ikke lade som om, at jeg kan lide denne[ENTER]nye udvikling. Det kommer til at ende slemt... Vi[ENTER]skal dog stadig følge deres spor. Gå til ørkenen[ENTER]og dræb nogle Slange Sværdkrigere og Slange[ENTER]Bueskyttere der. Hvem ved hvad vi ellers kan[ENTER]finde der. Forresten: din belønning er i denne[ENTER]pung!
 4396	Dræb slangevæsener
 4397	Den ottende side
 4398	Femte side:
-4399	Dagbogen beskriver forsøget på at ofre Slange[ENTER]sværdkrigere og Slange bueskytter for at udføre[ENTER]sort heksekunst. Drag til Yongbi Ørkenen og dræb[ENTER]Slange sværdkrigere. Hold udkig efter flere[ENTER]informationer.
+4399	Dagbogen beskriver forsøget på at ofre Slange[ENTER]Sværdkrigere og Slange Bueskyttere for at udføre[ENTER]sort trolddom. Gå til Yongbi Ørkenen og dræb[ENTER]Slange Sværdkrigere. Hold udkig efter noget mere[ENTER]information.
 4400	Fundet den ottende side
 4401	Gå til Uriel den lærte
-4402	Du har fundet den ottende side af dagbogen med[ENTER]Slange sværdkrigerne i ørkenen. Tag det til den[ENTER]lærde Uriel.
+4402	Du har fundet den ottende side af dagbogen med[ENTER]Slange Sværdkrigerne i Ørkenen. Tag den til Uriel[ENTER]den lærde.
 4403	Det er den ottende side. Meget godt. Siden den er[ENTER]meget kort, tror jeg jeg kan læse den med det[ENTER]samme. Vent venligst et øjeblik... Ahh, ja.
 4404	Ottende side:
 4405	De nødvendige ofre fundet. Vi er heldige. Jeg[ENTER]overvejer om det er et tegn? Vi har brug for en[ENTER]ceremoniel klokke. Hvis jeg husker rigtigt har[ENTER]Edderkopperne noget i den stil. Well drag videre[ENTER]nu.
@@ -5019,7 +5019,7 @@
 5110	Admiral Angmur venter på dig.
 5111	Kappen! Jeg vidste, du kunne gøre det. Vi vil[ENTER]hænge den op nær deres lejr, så de kan se den -[ENTER]det vil tage modet fra rød tyvs banden.[ENTER]Mit folk vil tage sig af det. På den måde kan du[ENTER]komme dig.
 5112	Svæk kykloperne
-5113	Admiral Angmur vil gerne tale med dig.
+5113	Admiral Angmur vil tale med dig.
 5114	Vores plan virkede: da rød tyvene så kappen brød[ENTER]en stor mængde af forstyrrelser ud. I sidste[ENTER]ende, endte det med at dæmonerne og menneskerne[ENTER]kæmpede mod hinanden. Nu er banden fuldstændig[ENTER]uorganiseret.[ENTER]De næste for os er kykloperne.
 5115	Hvordan skal vi fortsætte?
 5116	Kykloperne tilbeder deres leder. Hvis vi fjerner[ENTER]ledelse trup, vil kykloperne bryde ud i panik og[ENTER]sprede sig. Besejr General Outis %d gange, Arges[ENTER]%d gange og Polyphemos %d gange.
@@ -5150,7 +5150,7 @@
 5242	(Resterende: %s %s, %s %s)
 5243	%s : %d
 5244	Forhindre forbandelsen
-5245	Admiral Angmur vil gerne tale med dig.
+5245	Admiral Angmur vil tale med dig.
 5246	Godt, at du er her. Vi har fundet en måde at[ENTER]sabotere tjenerenes og Banshee planer.
 5247	For at de dødes sjæle kan opgive deres kroppe, er[ENTER]et medium nødvendigt. Dette medium er den hellige[ENTER]jord, som giganterne opbevarer i sække. Hvis du[ENTER]er i stand til at stjæle 100 sække, vil vi være i[ENTER]stand til at forhindre livets forbandelse.
 5248	Jeg vil tage af sted med det samme!
@@ -6346,7 +6346,7 @@
 6492	Du er nået til det andet patrulje-point.
 6493	Patrulje point 1
 6494	Gå til det første patrulje-point.
-6495	Du er nået til det første[ENTER]patrulje-point.
+6495	Du er nået til det første patrulje-point.
 6500	Gennemfør patrulje nr. 5
 6505	Patrulje point 5
 6511	Du er nået til det femte[ENTER]patrulje-point.
@@ -6897,7 +6897,7 @@
 7073	Hvad kan jeg gøre for dig?[ENTER]Bogormen sender dig?[ENTER]Alt hvad han gør, er at læse, læse, læse...[ENTER]Men jeg tvivler han lærer noget ved det. Han[ENTER]forstyrer hele tiden.[ENTER]Lad se, hvad han vil vide denne gang!
 7074	Han vil have mig til at vise vifter efter deres[ENTER]angreb værdier? Det er temmelig nemt: Himlens[ENTER]fuglevifte, Trearmede vifter, Aquanske vifter og[ENTER]Tranevingens vifter.[ENTER]Fik du det?
 7075	Tilbage til Soon
-7076	Gå tilbage til Soon
+7076	Tilbage til Soon
 7077	Gå tilbage til Soon og fortæl om vifterne.
 7078	En tjeneste for Soon
 7079	Og, kunne Uriel give et klart svar?
@@ -6991,7 +6991,7 @@
 7171	Du har modtaget en Uhelds pladerustning +3.
 7172	Du har modtaget en Lyserød påklædning +3.
 7173	Ja, jeg vil
-7174	Nej, alligevel ikke
+7174	Nej, jeg vil helst ikke.
 7175	Vil du gøre det senere? Kom snart tilbage, denne[ENTER]mission haster!
 7176	Vent et øjeblik, jeg vil være sikker på at det er[ENTER]den rigtige bog ... Hmm, ja, det er virkelig[ENTER]fantastisk. Jeg vil helt sikkert koge disse[ENTER]retter! Tak!
 7177	Den bedste kogebog
@@ -7487,7 +7487,7 @@
 7667	Lige netop! Hvorfor hjælper du mig ikke? Hvorfor[ENTER]henter du ikke blomsten for mig?[ENTER]Det ville være en stor hjælp for os begge.[ENTER]Hvad? Det er ikke en del af aftalen?[ENTER]Kom nu, ser du ikke hvor hårdt jeg forsøger at[ENTER]vinde hendes kærlighed? Bare hjælp mig! Jeg vil[ENTER]belønne dig med masser af Yang!
 7668	Afvise
 7669	Oh, min kæreste Ariyoung
-7670	Vil du opgive missionen?
+7670	Ønsker du at opgive denne opgave?
 7671	Arg... Hvordan skal jeg få fat i blomsterne?[ENTER]Vær venlig at komme tilbage, hvis du ombestemmer[ENTER]dig.
 7672	Har du aldrig elsket nogen?[ENTER]Ved du ikke, hvad jeg føler for Ariyoung?...[ENTER]Oh Ariyoung...
 7673	Mange tak![ENTER]Bring mig disse blomster.
@@ -7658,7 +7658,7 @@
 7838	Hej, har du et minut til mig?[ENTER]Jeg var meget taknemmelig over din hjælp til at[ENTER]lave et nyt våben. Nu vil jeg gerne spørge om din[ENTER]hjælp igen. Denne gang vil jeg gerne lave en ny[ENTER]rustning. Efter jeg har lavet et nyt våben har[ENTER]jeg selvfølgelig også brug for en god rustning.
 7839	Selvfølgelig har jeg brug for materialer til at[ENTER]lave en ny rustning. Kan du finde dem til mig?[ENTER]Som belønning vil du få den første komplette[ENTER]rustning. Denne gang skal jeg bruge 100[ENTER]kobbermalm, 100 Ibenholt mal og 100 perlestykker.[ENTER]Du burde allerede vide dette. Jeg ønsker dig held[ENTER]og lykke.
 7840	Acceptere.
-7841	Vil du opgive missionen?
+7841	Ønsker du at opgive denne opgave?
 7842	Hvorfor tøver du? Kom tilbage når du er klar til[ENTER]at arbejde i minerne.
 7843	Den lille smule malm er da ikke for meget at[ENTER]spørge om.[ENTER]Nå, gør som du vil. Forsvind!
 7844	Du vil hjælpe mig igen? Du er en god ven. Og bare[ENTER]rolig: Den første rustning er din!
@@ -7832,7 +7832,7 @@
 8012	Soon sende mig...
 8013	Hey, du kom tilbage for at hjælpe mig igen? Ahh.[ENTER]Du ønsker, bogen til Soon. Jeg ville snart have[ENTER]været inde i byen alligevel, men han er meget[ENTER]utålmodig og beder andre om at hente det fo ham.[ENTER]Hmm. Her er det. Jeg forstår ikke, hvad det er[ENTER]Soon kan lide ved en stak papirer. Det er meget[ENTER]mere vigtigt hurtigt at tjene Yang!
 8014	Tilbage til Soon.
-8015	Gå tilbage til Soon
+8015	Tilbage til Soon
 8016	Du har fået Soons bog fra handelsmanden. Gå[ENTER]tilbage til Soon og giv ham bogen så fortæller[ENTER]han dig hvordan man laver Celadon porcelæn.
 8017	Jeg har bogen.
 8018	Yay! Jeg har endelig fået den nye bog! Mange tak.[ENTER]Der er ikke mange bøger, jeg ikke har læst ...[ENTER]Jeg har skrevet ned, hvad der er vigtigt omkring[ENTER]det at lave Celadon Porcelæn. Hold dig til mine[ENTER]noter, og du vil producere fantastiske porcelæn.[ENTER]Og nu er det tid for mig at læse den nye bog.[ENTER]Farvel.
@@ -7917,7 +7917,7 @@
 8097	Du giver forræderen Balso sin medicin
 8098	Forræder Balsos medicin
 8099	Baek-Go har lavet medicinen fra urterne fra de[ENTER]hårde aber som kan kurere mange sjældne sygdomme.[ENTER]Bring det til forræderen Balso i nabo landsbyen.
-8100	Vil du opgive missionen?
+8100	Ønsker du at opgive denne opgave?
 8101	Her er medicinen
 8102	Bringer du mig den nye medicin? Har der været[ENTER]nogen fremskridt i den medicinske forskning?[ENTER]Undskyld jeg har besværet dig. Jeg burde have[ENTER]spurgt en læge efter råd fra begyndelsen af. Dog[ENTER]er jeg nød til at acceptere det, jeg er nød til[ENTER]at tage denne medicin nu.
 8103	Tusind tak for at du hjælp mig ud af klemmen.[ENTER]Jeg har ikke mange venner. Her, jeg ved det ikke[ENTER]er meget, men det kommer fra hjertet. Acceptere[ENTER]det venligst. Hvis jeg nogensinde kommer mig, vil[ENTER]jeg aldrig glemme dig.
@@ -8045,7 +8045,7 @@
 8226	Acceptere.
 8227	Taurean giver dig en belønning for at hjælpe med[ENTER]hans løgn: Du har modtaget 30.000 Yang.
 8228	Du har modtaget 700.000 erfaringspoints.
-8229	Vil du opgive missionen?
+8229	Ønsker du at opgive denne opgave?
 8230	Hvorfor ikke? Du er bange?[ENTER]Besøg mig, når du skifter mening.
 8231	Ahh, er du bange?[ENTER]Men du er meget større og stærkere end mig! Haha,[ENTER]du er en kujon! Så er jeg nød til at spørge en[ENTER]anden.
 8232	Edderkopper lever i ørkenen. Du er stærk. Jeg er[ENTER]sikker på du kan gøre det. Held og lykke!
@@ -8087,14 +8087,14 @@
 8268	Du får ørken sandet fra ørkenbanditterne, du kan[ENTER]få krystalmalm fra krystalminerne og for at få[ENTER]abeblod, skal du dræbe aber i Sangsung Dong. Kan[ENTER]du få fat i disse materialer for mig? Jeg ved,[ENTER]det vil ikke blive let, men jeg vil belønne dig[ENTER]generøst.
 8269	Acceptere.
 8270	frasige.
-8271	Vil du opgive missionen?
+8271	Ønsker du at opgive denne opgave?
 8272	Hvis du har for travlt pt. kan du komme forbi[ENTER]senere.
 8273	Du giver op? Seriøst?[ENTER]Så bliver jeg selv nød til at finde de ting.[ENTER]Jeg har virkelig brug for det porcelæn.. På[ENTER]gensyn, og held og lykke.
 8274	Ah! Der er det
 8276	Kaptajn
 8277	Jeg ved det ikke.
 8278	Vis mig igen.
-8279	Vil du opgive missionen?
+8279	Ønsker du at opgive denne opgave?
 8280	Tænk over det en ekstra gang og kom tilbage[ENTER]senere. Men fortæl ikke nogen omkring det!
 8281	Oh gud ske lov!! Så svært? Du var vores sidste[ENTER]håb... Hvem skal nu afkode det?
 8282	Okay men vær hurtig. Ellers vil nogen blive[ENTER]mistænkelig...[ENTER][ENTER]njefedr[ENTER]tstgie[ENTER]i[ENTER]onoerisnth
@@ -8123,7 +8123,7 @@
 8306	Ja du har ret! Nu forstår jeg det også. Jeg er[ENTER]stolt af dig. Du er en af vores bedste soldater![ENTER]Denne sætning er helt sikkert et aftalt kodeord.[ENTER]Det betyder at Yu-Hwan har opdaget fjendens[ENTER]spioner og vi er nød til at handle imod dem. Jeg[ENTER]vil give de nødvendige ordre med det samme.
 8307	Du har modtaget 20.000 Yang.
 8308	Du vil finde ud af det. Kom tilbage når du er[ENTER]klar!
-8309	Vil du opgive missionen?
+8309	Ønsker du at opgive denne opgave?
 8310	Men.. sidste gang har du klaret det.[ENTER]Hvad overvejer du nu?[ENTER]Tænk dig om engang merel.
 8311	Jeg ved, hvad du mener..[ENTER]Du vil ikke arbejde sammen med os længere, ikke[ENTER]sandt? Det er en skam. Der er ikke mange tapre[ENTER]krigere.
 8312	Ja da! Du er min redning. Se på denne kode. Tjek[ENTER]den nøje ud!
@@ -8173,7 +8173,7 @@
 8356	Hvorfor spørger du? Fordi Taurean og Harang[ENTER]skændes? Det er jo ikke noget nyt. Men Harang har[ENTER]ret. Specielt på en varm sommerdag er Bingsu en[ENTER]eftertragtet ret.[ENTER]Taurean er en god dreng, også når han er lidt[ENTER]enerådig. Hvis du bringer mig ingredienserne, så[ENTER]laver jeg noget Bingsu til ham.
 8357	Bingsu?
 8358	Vil du byde Taurean på Bingsu. Hvad tror du? Kan[ENTER]du finde Is fra Sohan bjerget?
-8359	Vil du opgive missionen?
+8359	Ønsker du at opgive denne opgave?
 8360	Kan du ikke lide is? eller er du allerede mæt??[ENTER]Det er til Taureanm så tænk venligst over det[ENTER]igen.
 8361	Synd. Taurean bliver meget skuffet.[ENTER]Ses.
 8362	Rigtigt godt. Jeg skal bruge isklumperne fra[ENTER]fortryllet is der er på bjerget Sohan. Aflever 50[ENTER]stykker, så kan jeg lave noget dejligt Bingsu.

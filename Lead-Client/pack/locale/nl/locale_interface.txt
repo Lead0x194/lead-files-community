@@ -1,8 +1,8 @@
-ACCEPT	Accepteer
-ATTACH_METIN_INFO	Wil je de Zielsteen toevoegen?
-ATTACH_METIN_TITLE	De Zielsteen word toegevoegd.
+ACCEPT	OK
+ATTACH_METIN_INFO	Wil je de Geestensteen toevoegen?
+ATTACH_METIN_TITLE	De Geestensteen word toegevoegd.
 CANCEL	Annuleer
-CHANGE_PASSWORD_CONFIRM	Bevestig nieuw wachtwoord
+CHANGE_PASSWORD_CONFIRM	Nieuw wachtwoord bev.
 CHANGE_PASSWORD_NEW	Nieuw wachtwoord
 CHANGE_PASSWORD_OLD	Oude wachtwoord
 CHANGE_PASSWORD_TITLE	Wachtwoord veranderen
@@ -51,7 +51,7 @@ EMPIRE_EXIT	Exit
 EMPIRE_NEXT	Volgende
 EMPIRE_PREV	Terug
 EMPIRE_SELECT	Kies
-EXCHANGE_ACCEPT	Accepteer
+EXCHANGE_ACCEPT	OK
 EXCHANGE_TITLE	Handelen
 GAMEOPTION_TITLE	Spel Opties
 GAME_EXIT_OBSERVER	Beëindig Observatie Modus
@@ -63,7 +63,7 @@ GRADE	Klasse
 GRADE_SELECT	Klasse
 GUILD_BASENAME	Basis Naam
 GUILD_BOARD_ID	Naam
-GUILD_BOARD_REFRESH	Vernieuwen (F5)
+GUILD_BOARD_REFRESH	Vernieuwen
 GUILD_BOARD_TEXT	Bericht
 GUILD_BUILDING_CATEGORY_TITLE	Bouw Eenheden
 GUILD_BUILDING_CHANGE	Verander
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Triplex
 GUILD_BUILDING_POSITION	Positie
 GUILD_BUILDING_PREVIEW	Preview
 GUILD_BUILDING_PRICE	Prijs
-GUILD_BUILDING_REFRESH	Refresh (F5)
+GUILD_BUILDING_REFRESH	Vernieuwen
 GUILD_BUILDING_STONE	Steen
 GUILD_BUILDING_TITLE	Gilde Huis Bouw
 GUILD_CRYSTAL	Kristal
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Grondstof laten vallen
 GUILD_GEM	Edelsteen
 GUILD_GRADE_CHANGE_GRADE_NAME	Nieuwe rank naam
 GUILD_GRADE_NUM	Nr.
-GUILD_GRADE_PERMISSION_DELETE	Ontslaan
-GUILD_GRADE_PERMISSION_JOIN	Uitnodigen
-GUILD_GRADE_PERMISSION_NOTICE	Schrijven
-GUILD_GRADE_PERMISSION_SKILL	Vaardigheden
+GUILD_GRADE_PERMISSION_DELETE	Verwijderen uit gilde
+GUILD_GRADE_PERMISSION_JOIN	Mag spelers accepteren voor gilde
+GUILD_GRADE_PERMISSION_NOTICE	Mag gildeberichten opstellen
+GUILD_GRADE_PERMISSION_SKILL	Gilde Vaardigheden
 GUILD_GRADE_RANK	Rank
 GUILD_GRADE_WRITE	Schrijf
 GUILD_INFO	Gilde Informatie
@@ -111,12 +111,12 @@ GUILD_INFO_UPLOAD_MARK	Teken Uploaden
 GUILD_INFO_UPLOAD_SYMBOL	Vlag Uploaden
 GUILD_MARK	Gilde Teken
 GUILD_MEMBER_JOB	Klasse
-GUILD_MEMBER_KNIGHT	Leider
+GUILD_MEMBER_KNIGHT	Strijder
 GUILD_MEMBER_LEVEL	Niveau
 GUILD_MEMBER_NAME	Naam
 GUILD_MEMBER_RANK	Rank
 GUILD_MEMBER_SPECIFIC_GRAVITY	Investeer
-GUILD_METIN_STONE	Zielen Steen
+GUILD_METIN_STONE	Geestensteen
 GUILD_MINENAL	Mineraal
 GUILD_MONEY	Yang
 GUILD_NAME	Gilde
@@ -140,8 +140,8 @@ HELP_ATTACK_KEY	Aanval: linker muisknop of spatiebalk
 HELP_CHANGE_PK_MODE	Verander aanvalmode: verander de setting van de linker muis knop
 HELP_CHARACTER_BUTTON1	(Karakter Venster, Inventaris Venster,
 HELP_CHARACTER_BUTTON2	Lijst van vrienden en opties)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Camera standpunt: middelste en rechter muis knop
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Camera standpunt: rechter of middelste muis knop
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Standaard camerapositie: middenmuisknop
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Alternatieve camerapositie: toewijzen aan rechter- of linkermuisknop
 HELP_EXP	Ervaring
 HELP_FURY	Ingame Voorwerpen Winkel
 HELP_GUILD_WINDOW	Open Gilde venster: Alt Toets + G
@@ -160,7 +160,7 @@ HELP_OPEN_QUEST	Open Taken Venster: N
 HELP_OPEN_SKILL	Open vaardigheden venster: V
 HELP_OPEN_WHISPER	Open fluister venster: Shift + Enter
 HELP_OPEN_ZONEMAP	Open grote map: M
-HELP_PICK_ITEM	Voorwerpen oppakken: ^ of Y of linker muis knop
+HELP_PICK_ITEM	Items oprapen: `, z of linkermuisknop
 HELP_QUICKSLOT	Snelle Toegang Velden
 HELP_SCREEN_CAPTURE	Save Screenshot: Print (word dan bewaard in "Metin2\screenshot")
 HELP_SHOW_ALL_NAME	Display namen: Alt
@@ -183,7 +183,7 @@ MARKLIST_REFRESH	Vernieuwen
 MARKLIST_TITLE	Registreer Gilde Teken
 MESSAGE	Dit is een Bericht
 MESSENGER_ADD_FRIEND	Vriend Toevoegen
-MESSENGER_DELETE_FRIEND	Vriend Verwijderen
+MESSENGER_DELETE_FRIEND	Verwijderen
 MESSENGER_OPEN_GUILD	Open Gilde Venster
 MESSENGER_TITLE	Vrienden
 MESSENGER_WHISPER	Fluister
@@ -252,7 +252,7 @@ PASSWORD_DESC_4	Zo niet, je wachtwoord is '000000'.
 PASSWORD_DESC_5	Verander je opslag wachtwoord.
 PASSWORD_TITLE	Wachtwoord Opslaan
 PICK_MONEY_TITLE	Delen
-PRIVATE_SHOP_CLOSE_BUTTON	Warenhuis Sluiten
+PRIVATE_SHOP_CLOSE_BUTTON	Warenhuis sluiten
 PRIVATE_SHOP_NAME	Naam van het Warenhuis
 PRIVATE_SHOP_TITLE	Open Privé Warenhuis
 REFINE_COST	Verrijkings Kosten: 0 Yang
@@ -270,7 +270,7 @@ SELECT_EMPIRE_NAME	Naam van Keizerrijk
 SELECT_EXIT	Sluit
 SELECT_HP	LP
 SELECT_LEVEL	Niveau
-SELECT_METIN_STONE_TITLE	Selecteer Zielensteen
+SELECT_METIN_STONE_TITLE	Selecteer Geestensteen
 SELECT_NAME	Naam
 SELECT_NO_GUILD	Geen Gilde
 SELECT_PLAYTIME	Speeltijd

@@ -11,7 +11,7 @@ CANNOT_SHOOT_SELF_IN_SAFE	Jeg kan ikke angribe fjenden herfra.
 CANNOT_SKILL_APPROACH	Jeg er sikker på, at jeg ikke kan komme tættere på.
 CANNOT_SKILL_ATTACK	Det kan jeg ikke angribe.
 CANNOT_SKILL_DEST_IN_SAFE	Afstanden til fjenden er for stor.
-CANNOT_SKILL_EQUIP_FISHING_ROD	Jeg har brug for en fiskestang.
+CANNOT_SKILL_EQUIP_FISHING_ROD	Du kan ikke fiske uden en udstyret fiskestang.
 CANNOT_SKILL_HAVE_TO_RIDE	Jeg har brug for en hest for at kunne anvende det.
 CANNOT_SKILL_NEED_EMPTY_BOTTLE	Jeg har ingen tom flaske.
 CANNOT_SKILL_NEED_POISON_BOTTLE	Jeg har ingen giftflaske.
@@ -46,7 +46,7 @@ CHAT_INSULT_STRING	Sætningen indeholder spærrede ord.
 CHAT_LOG	Vis gamle meddelelser [L]
 CHAT_LOG_TITLE	Chat-log
 CHAT_NORMAL	Normal
-CHAT_NOTICE	Bekendtgørelse
+CHAT_NOTICE	Server
 CHAT_PARTY	Gruppe
 CHAT_SEND_CHAT	Send chat
 CHAT_SEND_MEMO	Send hvisken [Shift+Enter]
@@ -58,13 +58,13 @@ CREATE_EXIST_SAME_NAME	En anden karakter har allerede dette navn.
 CREATE_FAILURE	Du kan ikke oprette denne karakter.
 CREATE_GM_NAME	GM
 CREATE_INPUT_NAME	Vælg et navn
-DAY	Dage
-DO_YOU_BUY_ITEM1	Vil du købe %s for %s ?
-DO_YOU_BUY_ITEM2	Vil du købe %s %s for %s ?
+DAY	d
+DO_YOU_BUY_ITEM1	Vil du købe %s for %s Yang?
+DO_YOU_BUY_ITEM2	Vil du gerne købe %s (%s stykker) for %s Yang?
 DO_YOU_DROP_MONEY	Vil du smide %d Yang væk?
-DO_YOU_SELL_ITEM1	Vil du sælge %s for %s ?
-DO_YOU_SELL_ITEM2	Vil du sælge %s %s for %s ?
-DRAGON_SOUL_CANNOT_REFINE	Denne drage sten kan ikke blive forfinet.
+DO_YOU_SELL_ITEM1	Vil du sælge %s for %s Yang?
+DO_YOU_SELL_ITEM2	Vil du gerne sælge %s (%s stykker) for %s Yang?
+DRAGON_SOUL_CANNOT_REFINE	Denne drage sten kan ikke blive forædlet.
 DRAGON_SOUL_CANNOT_REFINE_MORE	Denne drage sten har allerede nået det højeste level.
 DRAGON_SOUL_EQUIP_WARNING1	Det er svært at fjerne en drage sten, når den først er tilføjet.
 DRAGON_SOUL_EQUIP_WARNING2	Vil du stadig gerne fortsætte?
@@ -72,7 +72,7 @@ DRAGON_SOUL_EXPIRED	Udløbet drage sten
 DRAGON_SOUL_INVALID_DRAGON_SOUL	Det er den forkerte drage sten.
 DRAGON_SOUL_IS_NOT_DRAGON_SOUL	Det er ikke en drage sten.
 DRAGON_SOUL_NOT_DRAGON_SOUL_REFINE_STONE	Dette er ikke den rigtige drage sten.
-DRAGON_SOUL_NOT_ENOUGH_MATERIAL	Du har ikke materialer nok til forfinelsen.
+DRAGON_SOUL_NOT_ENOUGH_MATERIAL	Du har ikke materialer nok til forædlingen.
 DRAGON_SOUL_STEP_LEVEL1	Klarhed: mat,
 DRAGON_SOUL_STEP_LEVEL2	Klarhed: klar,
 DRAGON_SOUL_STEP_LEVEL3	Klarhed: fejlfri,
@@ -144,7 +144,7 @@ GUILDMARK_UPLOADER_ERROR_64_WIDTH	Bredde skal være 64 pixel
 GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	Spillet understøtter ikke den slags billedformater.
 GUILDMARK_UPLOADER_ERROR_PATH	Flyt filerne i mappen metin2/upload.
 GUILDMARK_UPLOADER_ERROR_SELECT	Du har ikke valgt nogen billed-fil.
-GUILDWAR_CTF_TITLE	Erobre flag
+GUILDWAR_CTF_TITLE	Fang Flaget
 GUILDWAR_NORMAL_TITLE	Kampfelt
 GUILDWAR_WARP_TITLE	Arena krig
 GUILD_BUILDING_GRADE	Rang
@@ -170,11 +170,11 @@ GUILD_NO_NOTICE_PERMISSION	Du har ingen rettigheder til bekendtgørelser.
 GUILD_OBJECT	Objekter
 GUILD_OFFER_EXP	Investere erfaring
 GUILD_SHORT_EXP	Ikke nok erfaring.
-GUILD_TILE_BASEINFO	Basis-informationer
-GUILD_TILE_BOARD	Tavle
+GUILD_TILE_BASEINFO	Område Informationer
+GUILD_TILE_BOARD	Ordens Meddelelser
 GUILD_TILE_GRADE	Forvaltning af rettigheder
 GUILD_TILE_INFO	Ordensinformationer
-GUILD_TILE_MEMBER	Ordensmedlemmer
+GUILD_TILE_MEMBER	Medlem
 GUILD_TILE_SKILL	Ordensfærdigheder
 GUILD_WAR_LIMIT_30MIN	Tid: 30 Minutter
 GUILD_WAR_REWARD_POTION	Belønning: Vinderen får eliksirer.
@@ -192,7 +192,7 @@ HORSE_HEALTH3	Fuld
 HORSE_LEVEL1	Normal hest
 HORSE_LEVEL2	Krigs hest
 HORSE_LEVEL3	Militærhest
-HOUR	timer
+HOUR	t
 HOW_MANY_ITEM_DO_YOU_DROP1	Ønsker du at smide %s væk?
 HOW_MANY_ITEM_DO_YOU_DROP2	Vil du smide %s %d væk
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Indtast slet-koden fra din account-forvaltning.
@@ -205,15 +205,15 @@ JOB_WARRIOR	Kriger
 LEFT_TIME	Resterende tid	
 LOGIN_CONNECT_FAILURE	En fejl opstod ved forbindelsen til serveren.	
 LOGIN_CONNECT_SUCCESS	Du er forbundet til serveren.
-LOGIN_CONNETING	Forbinder til Serveren...
-LOGIN_FAILURE_ALREAY	Din account er allerede forbundet.	
+LOGIN_CONNETING	Vent venligst mens du er forbundet til serveren.
+LOGIN_FAILURE_ALREAY	Din konto er allerede forbundet.	
 LOGIN_FAILURE_BE_SAME_KEY	Registrerings problem.	
-LOGIN_FAILURE_BLOCK_ID	Din account er spærret.	
-LOGIN_FAILURE_BLOCK_LOGIN	Vælg venligst en anden servere.
-LOGIN_FAILURE_NOBILL	Denne konto har ingen spilletid tilovers.
-LOGIN_FAILURE_NOT_AVAIL	Denne konto er ikke tilgængeligt.
+LOGIN_FAILURE_BLOCK_ID	Denne konto er blevet blokeret.	
+LOGIN_FAILURE_BLOCK_LOGIN	Lukket server: Vælg venligst en anden servere.
+LOGIN_FAILURE_NOBILL	Denne konto har ingen spilletid.
+LOGIN_FAILURE_NOT_AVAIL	Denne konto er ikke tilgængelig.
 LOGIN_FAILURE_NOT_EXIST_ID	Forkert brugernavn eller password.
-LOGIN_FAILURE_REPAIR_ID	For denne konto bliver der gendannet nogle genstande.
+LOGIN_FAILURE_REPAIR_ID	Genstandene er blevet gendannet på denne konto.
 LOGIN_FAILURE_SAMELOGIN	En person har forbundet sig til din konto.
 LOGIN_FAILURE_SHUTDOWN	Denne server er ikke åben.
 LOGIN_FAILURE_TOO_MANY_USER	Du kan ikke få forbindelse med serveren, da der er for mange spillere online.
@@ -266,7 +266,7 @@ MINIMAP_DEC_SCALE	Minimer
 MINIMAP_INC_SCALE	Maximer
 MINIMAP_OBSERVER_COUNT	%d tilskuer
 MINIMAP_SHOW_AREAMAP	Åben stort kort
-MINUTE	Min
+MINUTE	min
 MONETARY_UNIT0	Yang
 MONEY_INPUT_DIALOG_SELLPRICE	Salgspris:
 MOVE_ITEM_FAILURE_PRIVATE_SHOP	Du kan ikke flytte genstande mens du har en privat butik åben.
@@ -287,7 +287,7 @@ PARTY_BONUS_SKILL_MASTER	Max. MP: +%d	SA
 PARTY_BONUS_TANKER	Max HP: +%d	SA
 PARTY_BREAK_UP	Fjern gruppe
 PARTY_DO_YOU_ACCEPT	 vil være med i gruppen.
-PARTY_DO_YOU_JOIN	 har inviteret dig til gruppen. Accepter?
+PARTY_DO_YOU_JOIN	 har inviteret dig til at deltage i en gruppe. Accepter?
 PARTY_EXP_DISTRIBUTION_MODE	EXP-fordeling
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL	Level-fordeling
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Højere level får mere EXP.
@@ -347,12 +347,12 @@ QUEST_UNLIMITED_TIME	Ingen tidsbegrænsning.
 QUICKSLOT_REGISTER_DISABLE_ITEM	Denne genstand kan ikke aktiveres via hurtigmenuen.
 RECEIVE_MESSAGE	%s har sendt dig en meddelelse.
 REFINE_COST	Forbedringsomkostninger: %d Yang
-REFINE_DESTROY_WARNING	Denne genstand kan gå i stykker ved forbedring.
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Dette øger forbedrings-sandsynligheden,
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	men hvis det mislykkes bliver genstanden ødelagt. Vil du fortsætte?
+REFINE_DESTROY_WARNING	Denne genstand kan gå i stykker ved forædling.
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Ønsker du virkelig at opgradere denne genstand?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	Hvis du fejler, så vil genstanden blive ødelagt. Ønsker du at fortsætte?
 REFINE_DOWN_GRADE_WARNING	Det kan ske at genstanden mister en level.
 REFINE_DO_YOU_SEPARATE_METIN	Vil du fjerne alle ånde-stenene?
-REFINE_FAILURE	Desværre... Det mislykkede!
+REFINE_FAILURE	Åh nej, det virkede ikke! Vi har fejlet.
 REFINE_FAILURE_CAN_NOT_ATTACH	%s kan ikke tilføjes til denne genstand.
 REFINE_FAILURE_EQUIP_ITEM	Du kan ikke forbedre den udvalgte genstand, da den er i brug.
 REFINE_FAILURE_METIN_INSEPARABLE_ITEM	Der kan ikke fjernes en ånde-sten.
@@ -364,7 +364,7 @@ REFINE_FAILURE_SOCKET_DISABLE_ITEM	På denne genstand der der ikke tilføjes en 
 REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Denne genstand kan ikke blive forbedret.
 REFINE_SUCCESS	Succesfuld forbedringen!
 REFINE_SUCCESS_PROBALITY	Forbedrings-sandsynlighed: %d%%
-REFINE_WARNING2	Ønsker du at fortsætte?
+REFINE_WARNING2	Ønsker du at fortsætte med opgraderingen?
 SAFEBOX_ERROR	Du har indtastet et forkert kodeord.
 SAFEBOX_SELL_DISABLE_SAFEITEM	Du kan ikke sælge gemte genstande.
 SAFEBOX_WRONG_PASSWORD	Kodeorderne skal være identiske.
@@ -376,9 +376,9 @@ SELECT_CAN_NOT_DELETE	Du kan ikke slette denne karakter.
 SELECT_CHANGED_NAME	Du har skiftet navn på karakteren.
 SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	Dette navn er allerede i brug.
 SELECT_CHANGE_FAILURE_STRANGE_INDEX	Prøv igen.
-SELECT_CHANGE_FAILURE_STRANGE_NAME	Dette er et forkert karakternavn.
+SELECT_CHANGE_FAILURE_STRANGE_NAME	Det er det forkerte karakter navn.
 SELECT_CHANGE_NAME_TITLE	Skift karakternavn
-SELECT_DELEING	Karakteren bliver slettet
+SELECT_DELEING	Sletter...
 SELECT_DELETED	Sletning succesfuld.
 SELECT_DO_YOU_DELETE_REALLY	Ønsker du at fortsætte?
 SELECT_EMPTY_SLOT	Dette er et tomt felt.
@@ -389,7 +389,7 @@ SHOP_CANNOT_SELL_ITEM	Denne genstand kan ikke sælges.
 SHOP_ERROR_UNKNOWN	Ukendt load-fejl: %s
 SHOP_INVALID_POS	Denne genstand er ikke egnet til det.
 SHOP_INVENTORY_FULL	Dit inventar er fyldt.
-SHOP_NOT_ENOUGH_MONEY	Ikke nok Yang
+SHOP_NOT_ENOUGH_MONEY	Ikke nok Won eller Yang
 SHOP_NOT_ENOUGH_MONEY_EX	Du har ikke Yang nok.
 SHOP_SELL_INFO	Vælg i dit inventarvindue, hvilken genstand du ønsker at sælge.
 SHOP_SOLDOUT	Udsolgt
@@ -420,7 +420,7 @@ SKILL_HEUKSIN	Mørk beskyttelse
 SKILL_HOSIN	Velsignelse
 SKILL_INC_ATKSPD	Angrebshastighed øges
 SKILL_INC_MOVSPD	Bevægelseshastighed øges
-SKILL_JEONGWI	Kamprus
+SKILL_JEONGWI	Bersærk
 SKILL_JEUNGRYEOK	Angreb +
 SKILL_JUMAGAP	Fortryllet rustning
 SKILL_KWAESOK	Hastighed
@@ -442,7 +442,7 @@ STAT_MINUS_INT	Intelligens-tilpasning (Sandsynlighed: %d)
 STAT_MINUS_STR	Styrke-tilpasning (Sandsynlighed: %d)
 STAT_TOOLTIP_CON	HP og forsvar bliver forbedret
 STAT_TOOLTIP_DEX	Nøjagtighed og flugt bliver forbedret
-STAT_TOOLTIP_INT	MP, magisk styrke og forsvar bliver forbedret.
+STAT_TOOLTIP_INT	MP, magisk angreb og forsvar bliver forbedret.
 STAT_TOOLTIP_STR	Angrebsværdi og skade bliver forbedret
 SYMBOLLIST_TITLE	Tilmeld Ordensflag
 SYSTEM_OPTION_CPU_TILING_1	CPU-Tiling-Mode kan øge hastigheden for svage computere.
@@ -530,7 +530,7 @@ TOOLTIP_APPLY_RESIST_SWORD	Sværdforsvar %d%%	SA
 TOOLTIP_APPLY_RESIST_TWOHAND	Tohåndssværdforsvar %d%%	SA
 TOOLTIP_APPLY_RESIST_WARRIOR	Forsvar mod krigerangreb: %d%%	SA
 TOOLTIP_APPLY_RESIST_WIND	Luftmodstand %d%%	SA
-TOOLTIP_APPLY_SKILL_BOOK_BONUS	Sandsynlighed at lære ved læsning af bøger er øget med faktor 2½.	SNA
+TOOLTIP_APPLY_SKILL_BOOK_BONUS	Sandsynlighed at lære ved læsning af bøger er øget med faktor 2½	SNA
 TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	Hvis læsningen mislykkes kan du læse en anden bog med det samme.	SNA
 TOOLTIP_APPLY_SLOW_PCT	Chance for at sløve modstanderen %d%%	SA
 TOOLTIP_APPLY_STEAL_HP	%d%% af skaden vil blive absorberet af HP	SA
@@ -545,15 +545,15 @@ TOOLTIP_AUTO_POTION_HP	Sol Eliksir
 TOOLTIP_AUTO_POTION_REST	Resterende: %.2f%%
 TOOLTIP_AUTO_POTION_SP	Måne Eliksir
 TOOLTIP_AUTO_POTION_USING	Aktiv
-TOOLTIP_BOW_DISTANCE	Buerækkevidde +%dm	SA
+TOOLTIP_BOW_DISTANCE	Rækkevidde +%dm	SA
 TOOLTIP_BUYPRICE	Pris: %s
 TOOLTIP_CAST_SPEED	Magihastighed +%d%%	SA
 TOOLTIP_CON	Vitalitet +%d	SA
 TOOLTIP_COSTUME_ATTR_BONUS	Kostume bonus %d%%	SA
 TOOLTIP_DEF_GRADE	Forsvar +%d	SA
 TOOLTIP_DEX	Smidighed +%d	SA
-TOOLTIP_DRAGON_SOUL_DECK1	Jorden	SNA
-TOOLTIP_DRAGON_SOUL_DECK2	Hilmmel	SNA
+TOOLTIP_DRAGON_SOUL_DECK1	Himmel	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Jord	SNA
 TOOLTIP_EAR	Ørering
 TOOLTIP_ENERGY	Energi %d	SA
 TOOLTIP_FISHINGROD_EXP	Points: %d / %d
@@ -588,17 +588,17 @@ TOOLTIP_MAGIC_ATTBONUS_PER	Magisk angreb +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	Magisk angrebsværdi +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Magisk forsvar +%d	SA
 TOOLTIP_MALL_ATTBONUS	Angrebsværdi +%d%%	SA
-TOOLTIP_MALL_ATTBONUS_STATIC	Angrebsværdi +12~15%	SNA
+TOOLTIP_MALL_ATTBONUS_STATIC	Angrebsværdi	SNA
 TOOLTIP_MALL_AUTOLOOT	Automatisk samles alt Yang.	SNA
 TOOLTIP_MALL_DEFBONUS	Forsvar +%d%%	SA
-TOOLTIP_MALL_DEFBONUS_STATIC	Forsvar +12~15%	SNA
+TOOLTIP_MALL_DEFBONUS_STATIC	Forsvar	SNA
 TOOLTIP_MALL_EXPBONUS	EXP +%d%%	SA
 TOOLTIP_MALL_EXPBONUS_STATIC	50% mere EXP	SNA
 TOOLTIP_MALL_FISH_MIND	Sandsynligheden at fange en fisk er øget	SNA
 TOOLTIP_MALL_GOLDBONUS	Sandsynlighed for Yang (%.1f)	SA
-TOOLTIP_MALL_GOLDBONUS_STATIC	Doppelt Yang-sandsynlighed	SNA
+TOOLTIP_MALL_GOLDBONUS_STATIC	Dobbelt Yang sandsynlighed	SNA
 TOOLTIP_MALL_ITEMBONUS	Sandsynlighed for tab af genstande (%.1f)	SA
-TOOLTIP_MALL_ITEMBONUS_STATIC	Doppelt tab af genstand-sandsynlighed	SNA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Genstands drop chancen bliver øget med 200%.	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	Kærlighedspoints gendannes hurtigere.	SNA
 TOOLTIP_MALL_SAFEBOX	Du har øget lastrummet i din kiste.	SNA
 TOOLTIP_MAX_HP	Max. HP +%d	SA
@@ -638,7 +638,7 @@ TOOLTIP_POTION_SEC	Sek.
 TOOLTIP_POTION_TIME	Længde:
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	Kræver %s Level %d
 TOOLTIP_REQUIREMENT_STAT_LEVEL	Kræver %s %d
-TOOLTIP_RESIST_BOW	Pilemodstand %d%%	SA
+TOOLTIP_RESIST_BOW	Pil Forsvar %d%%	SA
 TOOLTIP_RESIST_DARK	Forsvar mod mørke +%d%%	SA
 TOOLTIP_RESIST_EARTH	Forsvar mod Jorden +%d%%	SA
 TOOLTIP_RESIST_ELEC	Lynmodstand %d%%	SA
@@ -663,7 +663,7 @@ TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Modstand mod fysisk skade:
 TOOLTIP_SKILL_COOL_TIME	Opladningstid: 
 TOOLTIP_SKILL_DAMAGE_BONUS	Færdighedsskade %d%%	SA
 TOOLTIP_SKILL_DEFEND_BONUS	Modstand mod færdighedsskade %d%%	SA
-TOOLTIP_SKILL_DURATION	Længde: %d Sek.
+TOOLTIP_SKILL_DURATION	Varighed: %d sek.
 TOOLTIP_SKILL_FORGET_BOOK_NAME	Forglemmelses bog
 TOOLTIP_SKILL_LEVEL	Level: %d
 TOOLTIP_SKILL_LEVEL_MASTER	Level: %d (mester)

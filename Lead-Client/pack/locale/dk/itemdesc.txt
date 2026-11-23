@@ -211,11 +211,11 @@
 27876	Stegt havkat	Gendanner øjeblikkeligt nogle manapoint (MP).
 27877	Stegt smerling	Gør dig usynlig i 5 minutter.
 27878	Stegt Lotusfisk	Gendanner øjeblikkeligt mange livspoint (HP).
-27879	Stegt Ayu	Denne fisk får dens dejlige røget duft fra at være tilberedt over ild.
-27880	Stegt smelt	Ved tilberedning over åben ild får fisken en dejlig røget smag.
-27881	Stegt Shiri	Denne fisk får dens dejlige røget duft fra at være tilberedt over ild.
-27882	Stegt spejlkarpe	Ved tilberedning over åben ild får fisken en dejlig røget smag.
-27883	Stegt guldfisk	Ved tilberedning over åben ild får fisken en dejlig røget smag.
+27879	Stegt Ayu	Øger erfaring med 10%.
+27880	Stegt smelt	Øger styrke imod monstre med 5%.
+27881	Stegt Shiri	Øger magisk/nærkamps angreb med 3%.
+27882	Stegt spejlkarpe	Gendanner 1.000 HP med det samme.
+27883	Stegt guldfisk	Øger erfaring med 50%.
 27987	Musling	En musling med flot skal. Kan indeholde en perle.
 27988	Skattekort	Et slidt kort, som viser lokationen på en gammel skat.
 27989	Metinstenens kompas	Kompasset viser dis retning og afstand til den næste Metin sten. Jo kraftigere den lyser, desto tættere er du på målet. Den kan aktiveres 6 gange.
@@ -438,7 +438,7 @@
 30330	Maat sten	Som gudinden af retfædighed, Maat stræber efter orden blandt kaos.
 30331	Frost nøgle	Denne nøgle er kold, som is, og giver adgang til 3. sal af Nemeres vagttårn. Kan kun blive brugt af Shamaner.
 30332	Nord stjerne	Seglsten lavet af ren is. Giver adgang til 6. sal af Nemeres vagttårn.
-30333	Frostblomst nøgle	Denne nøgle lavet af is, giver adgagn til 9. sal af Nemeres vagttårn. Kan kun blive brugt af Ninjaer og Shamaner.
+30333	Frostblomst nøgle	Denne nøgle lavet af is, giver adgang til 9. sal af Nemeres vagttårn.
 30500	Rubin indgraveret kniv	Værktøj til forfinelse af dit våben
 30501	Guld spænde	Element til forfinelse af dit våben
 30502	Rubin dekoration	Element til forfinelse af dit våben
@@ -534,7 +534,7 @@
 31006	Rød helveds kvarts	Det glitrende røde kvarts består af vulkansk jord, skinnende hårpragt og Fundamentsten.
 31007	Vulkansk jord	Aske lignende substands fra Doyyuhwan, er nødvendigt for at skabe Rød helveds kvarts.
 31008	Himlens tåre	Magis krystal lavet af blå krystal essens, rød helveds kvarts og helligt gummi træ. Holder onde væsner væk og vare i syv dage.
-31009	Gnom brev	Hemmelig besked send af mørkets tjenere til gnomerne.
+31009	Gnom brev	Hemmelig besked send af mørkets tjenere til Gnollerne.
 31010	Rød tyvs brev	De mørke tjeneres besked til Rød tyv banden er blevet revet i mange stykker.
 31011		
 31012		
@@ -621,11 +621,11 @@
 31093	Ukendt sten	Denne type sten er fuldkommen ukendt for dig, men den udseender et håndgribeligt kulde og mørke.
 31094	Skår	Fragmenter af den Dæmoniske Meteorit
 31095		
-31096		
-31097		
-31098		
-31099		
-31100		
+31096		Fint træ.
+31097		En-Tai dug
+31098		Jordens ånd
+31099		Træ smaragd
+31100		Hjælpepakke
 31101		
 31102		
 31103		
@@ -646,7 +646,7 @@
 38102	Energi Snack (30 dage)	Forøger levetiden for din Ganger med 30 dage.
 38200	Rufus segl	Du kan bruge dette selg at tilkalde din ulve hvalp, Rufus.
 38201	Rufus segl	Du kan bruge dette selg at tilkalde din ulve hvalp, Rufus.
-39001	Magisk sten	Denne sten garanterer en største succes rate for forbedring. Oven i dette, vil elementet ikke blive ødelagt eller nedgraderet.  Disse genstande er omsættelige.
+39001	Magisk sten	Denne sten giver fremragende chancer når man opgraderer genstande. Oven på dette, vil genstanden ikke blive ødelagt eller nedgraderet hellere. Denne genstand er handelbar.
 39002	Erfaringsring	Øger din erfaring med 50% i 60 minutter. Disse genstande er omsættelige.
 39003	Ferskenblomst vin	En bryg der øjeblikkeligt regenerer dine livspoint med 500 points. Disse genstande er omsættelige.
 39004	Velsignelseskugle	Denne legendariske kugle tilføjer en yderligere attribut, hvis en genstand allerede har 4 attributter. Tilføjelsen kan dog også fejle. Disse genstande er omsættelige.
@@ -663,12 +663,12 @@
 39015	Smedens sten	Hos smeden kan du med denne sten og et velsignelses dokument lave smede-håndbogen. Disse genstande er omsættelige.
 39016	Magisk jernmalm	Dette malm kan bruges til at fremstille et drage dokument - dertil bruges yderligere et velsignet dokument, som smeden så kan omdanne. Disse genstande er omsættelige.
 39017	Dragegudens liv	Øger dine maksimale livspoint (HP) i 30 minutter med 20%.  Disse genstande er omsættelige.
-39018	Dragegudens angreb	Øger din kampskade i 30 minutter med 12-15%  Disse genstande er omsættelige.
+39018	Dragegudens angreb	Øger din angrebsværdi med 20% i 30 minutter. Denne genstand kan handles.
 39019	Dragegudens intelligens	Øger dine maksimale manapoint (MP) i 30 minutter med 20%. Disse genstande er omsættelige.
-39020	Dragegudens forsvar	Øger dit forsvar således du får i 30 minutter 12-15% mindre skade. Disse genstande er omsættelige.
+39020	Dragegudens forsvar	Reducerer skaden du modtager i kamp med 20% i 30 minutter. Denne genstand kan handles.
 39021	Dragegudens hjælp	Vitalitet, styrke, intelligens og smidighed vil midlertidigt femdobles. Disse genstande er omsættelige.
 39022	Dragens dokument	Med dette dokument fjernes risikoen for, at en genstand går i stykker under en forbedring. Istedet for ødelæggelsen falder den med 1 i kvaliteten. Yderligere øges sandsynligheden for, at forbedringen lykkes med 10%. Disse genstande er omsættelige.
-39023	Forskerens eliksir	Øger kvaliteten af de samlede forskningsobjekter og dermed også deres accepterings-sandsynlighed. Disse genstande er omsættelige.
+39023	Forskerens eliksir	Denne eliksir forbedrer kvaliteten af forsknings objekterne som du har indsamlet, og dermed øger den også sandsynligheden for at de vil blive accepteret. Denne genstand er handelbar. Gælder ikke for missioner i Yohara.
 39024	Kritisk angreb	Øger chancen for et kritisk slag i kamp med 20% i 10 minutter. Disse genstande er omsættelige.
 39025	Gennemborende angreb	Øger sandsynligheden for at du laver et gennemborende slag i 10 minutter med 20%. Disse genstande er omsættelige.
 39026	Hastighedseliksir	Bevægelseshastigheden øges med 60 i 30 minutter. Disse genstande er omsættelige.
@@ -676,8 +676,8 @@
 39028	Fortrylle genstand	Fjerner bonusser på en genstand og tilføjer nye. Disse genstande er omsættelige.
 39029	Forstærk genstand	Hvis du er heldig vil den tilføje en ny bonus til en af dine genstande. (op til maks 4 bonusser).  Disse genstande er omsættelige.
 39030	Koncentreret læsning	Øger chancen for at forbedre din færdighed når du læser den næste bog (eller Sjælesten) 2.5-gang. Denne genstand er omsættelige.
-39031	Hastigheds eliksir	Denne drik reducerer nedkølings-tiden på dine færdigheder med 20% i 30 minutter. Disse genstande er omsættelige.
-39032	Livets frugt	Øger din rang med 2000 points (nedkølings-tid: 8 timer). Disse genstande er omsættelige.
+39031	Hastigheds eliksir	Denne drik reducerer klargørings-tiden på dine færdigheder med 20% i 30 minutter. Denne genstand kan handles.
+39032	Livets frugt	Øger din rang med 2000 points (klargørings-tid: 8 timer). Denne genstand kan handles.
 39033	Korrektions dokument	Dette dokument kan fjerne den senest tilføjede åndesten fra en genstand. Disse genstande er omsættelige.
 39034	Heste sukker	Dette stykke sukker gør det muligt at navgive din hest. Derudover øger det dens forsvar med 20. Disse genstande er omsættelige.
 39035	Forståelsesglas	Tillader dig at vise en anden spiller genstande fra dit inventar. Glasset ødelægges i processen. Disse genstande er omsættelige.
@@ -720,7 +720,7 @@
 41026	TUR Bokse dragt (F)	Kamp klar dragt til kvindelige boksere i de Tyrkiske national farver.
 41027	BRA Bokse dragt (M)	Kamp klar dragt til mandelige boksere i de Brasilianske national farver.
 41028	BRA Bokse dragt (F)	Kamp klar dragt til kvindelige boksere i de Brasilianske national farver.
-41029	Ørken kriger (M,Bonus)	Kamp dragt til mænd, for at sikre overlevelse i de umenneskelige ørken forhold. Genstanden er omsættelige.
+41029	Ørken kriger (M,Bonus)	Kamp klædning til mænd, ideal til at overleve i de ugæstfri ørken forhold. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 41030	Ørken kriger (F,Bonus)	Kamp dragt til kvinder, for at sikre overlevelse i de umenneskelige ørken forhold. Genstanden er omsættelige.
 41031	Olym. Fægte dragt (M)	Sporti beskyttende dragt til mandelige fægtere. Genstanden er omsættelige.
 41032	Olym. Fægte dragt (F)	Sporti beskyttende dragt til kvindelige fægtere. Genstanden er omsættelige.
@@ -912,14 +912,14 @@
 41224	Yongan FC+ (F)	Fodbloddragt i rød og hvid til kvinder. Gives til dig med mindst en tilfældig bonus.
 41225	FC Bakra+ (M)	Fodbloddragt i mørke blå og rød til mænd. Gives til dig med mindst en tilfældig bonus.
 41226	FC Bakra+ (F)	Fodbloddragt i mørke blå og rød til kvinder. Gives til dig med mindst en tilfældig bonus.
-41227	FC Bokjung+ (M)	Fodbloddragt i gul og blå til mænd. Gives til dig med mindst en tilfældig bonus.
-41228	FC Bokjung+ (F)	Fodbloddragt i gul og blå til kvinder. Gives til dig med mindst en tilfældig bonus.
-41229	FC Bavaria Hwang+ (M)	Fodbloddragt i rød og guld til mænd. Gives til dig med mindst en tilfældig bonus.
-41230	FC Bavaria Hwang+ (F)	Fodbloddragt i rød og guld til kvinder. Gives til dig med mindst en tilfældig bonus.
+41227	FC Bokjung+ (M)	Outfit til mandlige fodboldspillere i de Ukrainske national farver. Giver dig mindst en tilfældig bonus.
+41228	FC Bokjung+ (F)	Outfit til kvindelige fodboldspillere i de Ukrainske national farver. Giver dig mindst en tilfældig bonus.
+41229	FC Bavaria Hwang+ (M)	Outfit til mandlige fodboldspillere i de Walisiske national farver. Giver dig mindst en tilfældig bonus.
+41230	FC Bavaria Hwang+ (F)	Outfit til kvindelige fodboldspillere i de Walisiske national farver. Giver dig mindst en tilfældig bonus.
 41231	Borussia Chunjo+ (M)	Fodbloddragt i sort og gul til mænd. Gives til dig med mindst en tilfældig bonus.
 41232	Borussia Chunjo+ (F)	Fodbloddragt i sort og gul til kvinder. Gives til dig med mindst en tilfældig bonus.
-41233	SC Doyyum+ (M)	Fodbloddragt i rød og hvid til mænd. Gives til dig med mindst en tilfældig bonus.
-41234	SC Doyyum+ (F)	Fodbloddragt i rød og hvid til kvinder. Gives til dig med mindst en tilfældig bonus.
+41233	SC Doyyum+ (M)	Outfit til mandlige fodboldspillere i de Østrigske national farver. Giver dig mindst en tilfældig bonus.
+41234	SC Doyyum+ (F)	Outfit til kvindelige fodboldspillere i de Østrigske national farver. Giver dig mindst en tilfældig bonus.
 41235	Hasun Dong FC+ (M)	Fodbloddragt i grøn og hvid til mænd. Gives til dig med mindst en tilfældig bonus.
 41236	Hasun Dong FC+ (F)	Fodbloddragt i grøn og hvid til kvinder. Gives til dig med mindst en tilfældig bonus.
 41237	CFR Drageild 07+ (M)	Fodbloddragt i bordeaux til mænd. Gives til dig med mindst en tilfældig bonus.
@@ -950,20 +950,20 @@
 41262	Dragedalen SC+ (F)	Fodbloddragt i mørke blå og orange til kvinder. Gives til dig med mindst en tilfældig bonus.
 41263	Tordenbjergene FC+ (M)	Fodbloddragt i rød og hvid til mænd. Gives til dig med mindst en tilfældig bonus.
 41264	Tordenbjergene FC+ (F)	Fodbloddragt i rød og hvid til kvinder. Gives til dig med mindst en tilfældig bonus.
-41265	Pyungmoo Saint Hwang+ (M)	Fodbloddragt i mørke blå til mænd. Gives til dig med mindst en tilfældig bonus.
-41266	Pyungmoo Saint Hwang+ (F)	Fodbloddragt i mørke blå til kvinder. Gives til dig med mindst en tilfældig bonus.
+41265	Pyungmoo Saint Hwang+ (M)	Outfit til mandlige fodboldspillere i de Skotske national farver. Giver dig mindst en tilfældig bonus.
+41266	Pyungmoo Saint Hwang+ (F)	Outfit til kvindelige fodboldspillere i de Skotske national farver. Giver dig mindst en tilfældig bonus.
 41267	Real Sohan+ (M)	Fodbloddragt i hvid til mænd. Gives til dig med mindst en tilfældig bonus.
 41268	Real Sohan+ (F)	Fodbloddragt i hvid til kvinder. Gives til dig med mindst en tilfældig bonus.
 41269	FC Jinno 04+ (M)	Fodbloddragt i royal blå og hvid til mænd. Gives til dig med mindst en tilfældig bonus.
 41270	FC Jinno 04+ (F)	Fodbloddragt i royal blå og hvid til kvinder. Gives til dig med mindst en tilfældig bonus.
-41271	FC Sangsun Dong+ (M)	Fodbloddragt i sort og orange til mænd. Gives til dig med mindst en tilfældig bonus.
-41272	FC Sangsun Dong+ (F)	Fodbloddragt i sort og orange til kvinder. Gives til dig med mindst en tilfældig bonus.
+41271	FC Sangsun Dong+ (M)	Outfit til mandlige fodboldspillere i de Nordmakedoniske national farver. Giver dig mindst en tilfældig bonus.
+41272	FC Sangsun Dong+ (F)	Outfit til kvindelige fodboldspillere i de Nordmakedoniske national farver. Giver dig mindst en tilfældig bonus.
 41273	SL Jungsun Dong+ (M)	Fodbloddragt i rød og hvid til mænd. Gives til dig med mindst en tilfældig bonus.
 41274	SL Jungsun Dong+ (F)	Fodbloddragt i rød og hvid til kvinder. Gives til dig med mindst en tilfældig bonus.
-41275	Spartak Jungrang+ (M)	Fodbloddragt i rød og hvid til mænd. Gives til dig med mindst en tilfældig bonus.
-41276	Spartak Jungrang+ (F)	Fodbloddragt i rød og hvid til kvinder. Gives til dig med mindst en tilfældig bonus.
-41277	Ildland CF+ (M)	Fodbloddragt i hvid og sort til mænd. Gives til dig med mindst en tilfældig bonus.
-41278	Ildland CF+ (F)	Fodbloddragt i hvid og sort til kvinder. Gives til dig med mindst en tilfældig bonus.
+41275	Spartak Jungrang+ (M)	Outfit til mandlige fodboldspillere i de Tjekkiske national farver. Giver dig mindst en tilfældig bonus.
+41276	Spartak Jungrang+ (F)	Outfit til kvindelige fodboldspillere i de Tjekkiske national farver. Giver dig mindst en tilfældig bonus.
+41277	Ildland CF+ (M)	Outfit til mandlige fodboldspillere i de Finske national farver. Giver dig mindst en tilfældig bonus.
+41278	Ildland CF+ (F)	Outfit til kvindelige fodboldspillere i de Finske national farver. Giver dig mindst en tilfældig bonus.
 41279	FC St. Seungryong+ (M)	Fodbloddragt i blå til mænd. Gives til dig med mindst en tilfældig bonus.
 41280	FC St. Seungryong+ (F)	Fodbloddragt i blå til kvinder. Gives til dig med mindst en tilfældig bonus.
 41291	Hare kostume (sort)	Hare kostume til mænd lavet af sort plys
@@ -974,8 +974,8 @@
 41296	Kanin kostume (blå)	Kanin kostume til kvinder lavet af blåt plys
 41297	Kanin kostume (grøn)	Kanin kostume til kvinder lavet af grønt plys
 41298	Kanin kostume (pink)	Kanin kostume til kvinder lavet af pink farvet plys
-41299	Hare kostume+ (sort)	Hare kostume til mænd lavet af sort plys. Gives til dig med mindst en tilfældig bonus.
-41300	Hare kostume+ (blå)	Hare kostume til mænd lavet af blåt plys. Gives til dig med mindst en tilfældig bonus.
+41299	Hare kostume+ (sort)	Hare kostume til mænd lavet af sort plys. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
+41300	Hare kostume+ (blå)	Hare kostume til mænd lavet af blåt plys. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 41301	Hare kostume+ (grøn)	Hare kostume til mænd lavet af grønt plys. Gives til dig med mindst en tilfældig bonus.
 41302	Hare kostume+ (pink)	Hare kostume til mænd lavet af pink farvet plys. Gives til dig med mindst en tilfældig bonus.
 41303	Kanin kostume+ (sort)	Kanin kostume til kvinder lavet af sort plys. Gives til dig med mindst en tilfældig bonus.
@@ -988,7 +988,7 @@
 41310	Kobra Outfit+ (f)	Sort glimtende outfit med slange symboler. Gives til dig med mindst en tilfældig bonus.
 41311	Ørken kriger (M, sort)	Sort kamp bekældning til mænd.
 41312	Ørken kriger (F,sort)	Sort kamp beklædning til kvinder.
-41313	Ørken kriger+ (M,sort)	Sort kamp beklædning til mænd. Gives til dig med mindst en tilfældig bonus.
+41313	Ørken kriger+ (M,sort)	Sort kamp klædning til mænd. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 41314	Ørken kriger+ (F, sort)	Sort kamp beklædning til kvinder. Gives til dig med mindst en tilfældig bonus.
 41315	Azraels rustning (m)	Stålsat rustning tilhører den berygtede dæmon leder.
 41316	Azraels rustning (f)	Stålsat rustning tilhører den berygtede dæmon leder.
@@ -998,10 +998,10 @@
 41321	Græskar Jack kjole (f)	Fantastisk uhyggeligt Halloween kostume
 41322	Græskar Jack dragt+ (m)	Fantastisk uhyggeligt Halloween kostume. Gives til dig med mindst en tilfældig bonus. Genstaden er omsættelig.
 41323	Græskar Jack kjole+ (f)	Fantastisk uhyggeligt Halloween kostume. Gives til dig med mindst en tilfældig bonus. Genstaden er omsættelig.
-41324		
-41325		
-41326		
-41327		
+41324		Kampuniform til mænd, med stjerne og halvmåne emblem.
+41325		Kampuniform til kvinder, med stjerne og halvmåne emblem.
+41326		Kampuniform til mænd, med stjerne og halvmåne emblem. Giver dig mindst en tilfældig bonus.
+41327		Kampuniform til kvinder, med stjerne og halvmåne emblem. Giver dig mindst en tilfældig bonus.
 41328	ALG VM sæt (M)	Verdensmesterskabs fodboldsæt i de algeriske national farver
 41329	ALG VM sæt (F)	Verdensmesterskabs fodboldsæt i de algeriske national farver
 41330	ARG VM SÆT (M)	Verdensmesterskabes fodboldsæt i de Argentinske national farver
@@ -1072,8 +1072,8 @@
 41395	ARG VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Argentinske national farver. Giver dig mindst en tilfældig bonus.
 41396	AUS VM SÆT (M/Bonus)	Verdensmesterskabs fodboldsæt i de australske  national farver. Giver dig mindst én tilfældig bonus.
 41397	ALG VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de australske national farver. Giver dig mindst én tilfældig bonus.
-41398	BEL VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Belgiske national farver. Giver dig mindst en tilfældig bonus.
-41399	BEL VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Belgiske national farver. Giver dig mindst en tilfældig bonus.
+41398	BEL VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Belgiske national farver. Giver dig mindst en tilfældig bonus.
+41399	BEL VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Belgiske national farver. Giver dig mindst en tilfældig bonus.
 41400	BIH VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de Bosnisk-hercegovinske national farver. Giver dig mindst én tilfældig bonus.
 41401	BIH VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de Bosnisk-hercegovinske national farver. Giver dig mindst én tilfældig bonus.
 41402	BRA VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Brasilianske national farver. Giver dig mindst en tilfældig bonus.
@@ -1088,47 +1088,47 @@
 41411	CRC VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de costaricanske national farver. Giver dig mindst én tilfældig bonus.
 41412	CIV VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de ivorianske national farver. Giver dig mindst én tilfældig bonus.
 41413	CIV VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de ivorianske national farver. Giver dig mindst én tilfældig bonus.
-41414	CRO VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de Kroatiske national farver. Giver dig mindst én tilfældig bonus.
-41415	CRO VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de Kroatiske national farver. Giver dig mindst én tilfældig bonus.
+41414	CRO VM sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Kroatiske national farver. Giver dig mindst en tilfældig bonus.
+41415	CRO VM sæt (F/Bonus)	Outfit til kvindelige fodboldspillere i de Kroatiske national farver. Giver dig mindst en tilfældig bonus.
 41416	ECU VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de ecuadorianske national farver. Giver dig mindst én tilfældig bonus.
 41417	ECU VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de ecuadorianske national farver. Giver dig mindst én tilfældig bonus.
-41418	ENG VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Engelske national farver. Giver dig mindst en tilfældig bonus.
-41419	ENG VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Engelske national farver. Giver dig mindst en tilfældig bonus.
-41420	FRA VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Franske national farver. Giver dig mindst en tilfældig bonus.
-41421	FRA VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Franske national farver. Giver dig mindst en tilfældig bonus.
-41422	GER VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Tyske national farver. Giver dig mindst en tilfældig bonus.
-41423	GER VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Tyske national farver. Giver dig mindst en tilfældig bonus.
+41418	ENG VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Engelske national farver. Giver dig mindst en tilfældig bonus.
+41419	ENG VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Engelske national farver. Giver dig mindst en tilfældig bonus.
+41420	FRA VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Franske national farver. Giver dig mindst en tilfældig bonus.
+41421	FRA VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Franske national farver. Giver dig mindst en tilfældig bonus.
+41422	GER VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Tyske national farver. Giver dig mindst en tilfældig bonus.
+41423	GER VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Tyske national farver. Giver dig mindst en tilfældig bonus.
 41424	GHA VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de ghanesiske national farver. Giver dig mindst én tilfældig bonus.
 41425	GHA VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de ghanesiske national farver. Giver dig mindst én tilfældig bonus.
-41426	GRE VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Græske national farver. Giver dig mindst en tilfældig bonus.
+41426	GRE VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Græske national farver. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 41427	GRE VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Græske national farver. Giver dig mindst en tilfældig bonus.
 41428	HON VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de honduranske national farver. Giver dig mindst én tilfældig bonus.
 41429	HON VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de honduranske national farver. Giver dig mindst én tilfældig bonus.
 41430	IRN VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de iranske national farver. Giver dig mindst én tilfældig bonus.
 41431	IRN VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de iranske national farver. Giver dig mindst én tilfældig bonus.
-41432	ITA VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Italienske national farver. Giver dig mindst en tilfældig bonus.
-41433	ITA VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Italienske national farver. Giver dig mindst en tilfældig bonus.
+41432	ITA VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Italienske national farver. Giver dig mindst en tilfældig bonus.
+41433	ITA VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Italienske national farver. Giver dig mindst en tilfældig bonus.
 41434	JPN VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de japanske national farver. Giver dig mindst én tilfældig bonus.
 41435	JPN VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de japanske national farver. Giver dig mindst én tilfældig bonus.
-41436	KOR VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Koreanske national farver. Giver dig mindst en tilfældig bonus.
+41436	KOR VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Koreanske national farver. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 41437	KOR VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Koreanske national farver. Giver dig mindst en tilfældig bonus.
-41438	MEX VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Mexikanske national farver. Giver dig mindst en tilfældig bonus.
+41438	MEX VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Mexikanske national farver. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 41439	MEX VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Mexikanske national farver. Giver dig mindst en tilfældig bonus.
-41440	NED VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Hollandske national farver. Giver dig mindst en tilfældig bonus.
-41441	NED VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Hollandske national farver. Giver dig mindst en tilfældig bonus.
+41440	NED VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Hollandske national farver. Giver dig mindst en tilfældig bonus.
+41441	NED VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Hollandske national farver. Giver dig mindst en tilfældig bonus.
 41442	NGA VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de nigerianske national farver. Giver dig mindst én tilfældig bonus.
 41443	NGA VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de nigerianske national farver. Giver dig mindst én tilfældig bonus.
-41444	POR VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Portugisiske national farver. Giver dig mindst en tilfældig bonus.
-41445	POR VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Portugisiske national farver. Giver dig mindst en tilfældig bonus.
-41446	RUS VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Russiske national farver. Giver dig mindst en tilfældig bonus.
-41447	RUS VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Russiske national farver. Giver dig mindst en tilfældig bonus.
-41448	ESP VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Spanske national farver. Giver dig mindst en tilfældig bonus.
-41449	ESP VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Spanske national farver. Giver dig mindst en tilfældig bonus.
-41450	SUI VM Sæt (M/Bonus)	Verdensmesterskabes fodboldsæt i de Schweiziske national farver. Giver dig mindst en tilfældig bonus.
-41451	SUI VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Schweiziske national farver. Giver dig mindst en tilfældig bonus.
+41444	POR VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Portugisiske national farver. Giver dig mindst en tilfældig bonus.
+41445	POR VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Portugisiske national farver. Giver dig mindst en tilfældig bonus.
+41446	RUS VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Russiske national farver. Giver dig mindst en tilfældig bonus.
+41447	RUS VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Russiske national farver. Giver dig mindst en tilfældig bonus.
+41448	ESP VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Spanske national farver. Giver dig mindst en tilfældig bonus.
+41449	ESP VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Spanske national farver. Giver dig mindst en tilfældig bonus.
+41450	SUI VM Sæt (M/Bonus)	Outfit til mandlige fodboldspillere i de Schweiziske national farver. Giver dig mindst en tilfældig bonus.
+41451	SUI VM Sæt (K/Bonus)	Outfit til kvindelige fodboldspillere i de Schweiziske national farver. Giver dig mindst en tilfældig bonus.
 41452	URU VM sæt (M/Bonus)	Verdensmesterskabs fodboldsæt i de uruguayanske national farver. Giver dig mindst én tilfældig bonus.
 41453	URU VM sæt (F/Bonus)	Verdensmesterskabs fodboldsæt i de uruguayanske national farver. Giver dig mindst én tilfældig bonus.
-41454	USA VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Amerikanske national farver. Giver dig mindst en tilfældig bonus.
+41454	USA VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Amerikanske national farver. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 41455	USA VM Sæt (K/Bonus)	Verdensmesterskabes fodboldsæt i de Amerikanske national farver. Giver dig mindst en tilfældig bonus.
 41472	Zombiedragt	Blodspattet tøj, råddent kød, udstikkende knogler - det perfekte set-up for enhver zombie.
 41473	Zombiekjole	Blodspattet tøj, råddent kød, udstikkende knogler - det perfekte set-up for enhver kvindelig zombie.
@@ -1172,7 +1172,7 @@
 45008	Fodbold frisure GER (F)	En sporti frisure med et hårbånd til kvindelige fodboldspillere i de tyske national farver.
 45009	Dreadlocks (M)	Langt hår med dreadlocks, som er bundet sammen i nakken.
 45010	Bokse frisure GER (F)	En sporti frisure med et hårbånd til kvindelige boksere i de tyske national farver.
-45011	Hovedbeklædning (M)	En hovedbeklædning til mænd lavet af de fineste materialer. Genstanden er omsættelige.
+45011	Hovedbeklædning (M)	En hovedbeklædning til mænd lavet af de fineste materialer. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 45012	Hovedbeklædning (F)	En hovedbeklædning til kvinder lavet af de fineste materialer. Genstanden er omsættelige.
 45013	LotoShosi (M)	Lang i toppen og kort i siderne - en ekstravagant side klippet frisure til mænd. Genstanden er omsættelige.
 45014	Fægte frisure (F)	En sporti frisure til kvindelige fægtere. Genstanden er omsættelige.
@@ -1268,8 +1268,8 @@
 45124	Kanin ører (blå)	Blå kanin ører til kvinder
 45125	Kanin ører (grøn)	Grønne kanin ører til kvinder
 45126	Kanin ører (pink)	Pink farvet kanin ører til kvinder
-45127	Hare ører+ (sort)	Sort hat med hare øre til mænd. Gives til dig med mindst en tilfældig bonus.
-45128	Hare ører+ (blå)	Blå hat med hare øre til mænd. Gives til dig med mindst en tilfældig bonus.
+45127	Hare ører+ (sort)	Sort hat med hare øre til mænd. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
+45128	Hare ører+ (blå)	Blå hat med hare øre til mænd. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 45129	Hare ører+ (grøn)	Grøn hat med hare øre til mænd. Gives til dig med mindst en tilfældig bonus.
 45130	Hare ører+ (pink)	Pink farvet hat med hare øre til mænd. Gives til dig med mindst en tilfældig bonus.
 45131	Kanin ører+ (sort)	Sorte kanin ører til kvinder. Gives til dig med mindst en tilfældig bonus.
@@ -1290,7 +1290,7 @@
 45146	Maya maske+	Frygtindgydende Maya kriger maske. Gives til dig med mindst to tilfældig bonus.
 45147	Sort turban (M)	En hovedbeklædning lavet af sort materiale til mænd.
 45148	Sort turban (F)	En hovedbeklædning lavet af sort materiale til kvinder.
-45149	Sort turban+ (M)	En hovedbeklædning lavet af sort materiale til mænd. Gives til dig med mindst en tilfældig bonus.
+45149	Sort turban+ (M)	En hovedbeklædning lavet af sort materiale til mænd. Giver dig mindst en tilfældig bonus. Genstanden kan handles.
 45150	Sort turban+ (F)	En hovedbeklædning lavet af sort materiale til kvinder. Gives til dig med mindst en tilfældig bonus.
 45151	Azraels hjelm (m)	Hovedbeklædning med grimasse af den berygtede dæmon leder.
 45152	Azraels hjelm (f)	Hovedbeklædning med grimasse af den berygtede dæmon leder.
@@ -1300,10 +1300,10 @@
 45157	Græskar Jack hoved (f)	Fantastisk uhyggeligt Halloween maske
 45158	Græskar Jack hoved+ (m)	Fantastisk uhyggeligt Halloween maske. Gives til dig med mindst en tilfældig bonus. Genstaden er omsættelig.
 45159	Græskar Jack hoved+ (f)	Fantastisk uhyggeligt Halloween maske. Gives til dig med mindst en tilfældig bonus. Genstaden er omsættelig.
-45160		
-45161		
-45162		
-45163		
+45160		Opbundet dreadlocks, farvet røde og hvide.
+45161		Opbundet dreadlocks, farvet røde og hvide, med et pandebånd.
+45162		Opbundet dreadlocks, farvet røde og hvide. Giver dig mindst en tilfældig bonus.
+45163		Opbundet dreadlocks, farvet røde og hvide, med et pandebånd. Giver dig mindst en tilfældig bonus.
 45164	Snehare hat	Hovedbeklædning i form af en snehare
 45165	Isbjørne hat	Hovedbeklædning i form af en isbjørn
 45166	Sneleopard hat	Hovedbeklædning i form af en sneleopard
@@ -1342,7 +1342,7 @@
 50002	Guldring	En simpel guldring. | Kan blive solgt for høj pris hos adskillige handelsmand.
 50003	Annulleringsdokument	Tillader at nulstille færdigheder for at kunne lære andre.
 50004	Begivenheds-detektor	Denne detektor, viser dig hvor en mission kan blive fundet.
-50005	Rytterkort (HM)	Med dette Rytterkort kan du få en hestemedalje hos stald-knægten.
+50005	Rytterkort (HM)	Denne billet kan byttes til en Heste Medalje fra Stalddrengen.
 50006	Guld skattekiste	En kiste udsmykket med guld. | Kisten kan åbnes med en guld nøgle.
 50007	Sølv skattekiste	En kiste udsmykket med sølv. | Kisten kan åbnes med en sølv nøgle.
 50008	Guld nøgle	En nøgle af guld. | Den kan bruges til at åbne guld skattekiste og guld skattekiste +
@@ -1395,13 +1395,13 @@
 50080	Rød Drages kiste	Kisten fra den røde drage. I denne kiste findes noget værdifuldt.
 50081	Dæmonkongens kiste	Kisten fra dæmonkongen. I denne kiste findes noget værdifuldt.
 50082	Høstmandens kiste	Kisten fra høstmanden. I denne kiste findes noget værdifuldt.
-50083	Rytterkort	Efter du har vist kortet en staldknægt, kan du ridde for begrænset tid på en pony.
+50083	Rytterkort	Åben Ridningstilladelsen for at modtage din Heste Ridnings Billet. Fra level 10 kan du bruge det til at ride en Pony i et stykke tid.
 50084	Nøglesten	En energi-ladet aura omgiver denne sten. Det virker mod forseglings magi.
 50091	Guldfisk sushi	Sushi lavet af guldfisk | en speciel madret, ikke nogen almindelig ret!
 50092	Karpe sushi	Sushi lavet af karper | en speciel madret, ikke nogen almindelig ret!
 50093	Laks sushi	En speciel ret lavet af rå torsk og kolde ris. Øger din angrebs værdi med 10 point i 30 sekunder.
 50094	Havkat sushi	En særlig ret lavet af rå havkat og kolde ris. Øger din forsvars styrke med 10 point i 30 sekunder.
-50096	Fodbold	Spark bolden ligesom Baljit-Elvedin!
+50096	Fodbold	Bøj den ligesom Baljit-Elvedin! Bolden er ikke handelbar.
 50100	Fyrværkeri	Affyres ved festlige lejligheder. Lyser violet.
 50101	Fyrværkeri	Affyres ved festlige lejligheder. Lyser gult.
 50102	Fyrværkeri	Affyres ved festlige lejligheder. Lyser blåt.
@@ -1409,7 +1409,7 @@
 50104	Fyrværkeri	Affyres ved festlige lejligheder. Lyser grønt.
 50105	Fyrværkeri	Affyres ved festlige lejligheder. Lyser hvidt.
 50106	Jule-fyrværkeri	Jul-fyrværkeri | Mere pragtfuld end et normalt fyrværkeri.
-50108	Fyrværkeri-kreds	En lille kreds hvor gnister springer ud.
+50108	Fyrværkeri-kreds	Et håndlavede Fyrværkeri Kreds, som børnene kan lide at se spinde for underholdningens skyld. | | Chance for bevidstløshed: 5% | Varighed: 10 minutter
 50118		
 50119		
 50120	Jern-skrin	Denne stabile beholder stammer fra Forbandelsens Grotte.
@@ -1460,7 +1460,7 @@
 50180	Tom kurv:	En tom kurv du kan putte Påskeæg ind i
 50181	Kurv med Påskeæg	En kurv fyldt med Påskeæg.
 50182	Velsignelses Kiste	En velsignet kiste med ukendt indhold.
-50183	Søde sager	Disse søde sager har en speciel effekt: Bevægelseshastighed +10%, skade +5% og erfaring +10%. Den varer i 30 minutter.
+50183	Søde sager	Disse søde sager har en speciel effekt: bevægelseshastighed +10, skade +5% og erfaring +10%. De varer i 30 minutter.
 50184		
 50185		
 50186	Azraels Kiste	Dæmoniske kræfter holder denne kiste lukket. Der må være værdifulde skatte inden i den.
@@ -1481,7 +1481,7 @@
 50212	Lærlinge kiste I	Din velkomst gave indeholder et basis udstyrs sæt til en optimal start på dine eventyr.
 50213	Lærlinge kiste I	Din velkomst gave indeholder et basis udstyrs sæt til en optimal start på dine eventyr.
 50215	Halloween Kiste	En kiste med et uhyggeligt græskar ansigt på siden. Med et hvin, der lyder som et fnis, åbner låget og afslører, hvad der er indeni.
-50216	Gløgg	En varm drik fremstillet af vin og krydderier, der giver dig +10% hastighed, +5% skade og +10% exp. for 30 minutter.
+50216	Gløgg	En varm drik som er fremstillet af vin og krydderier der giver dig +10% hastighed, +5% skade og +10% erfaring.
 50249	Kiste af triumf	Kisten indeholder en tilfældig genstand som belønning til alle olympiere.
 50252	Cor Draconis	Det krystallinske drage hjerte indeholder sjælen, dragon stenen, indeni sig.
 50253		
@@ -1513,7 +1513,7 @@
 50315	Forvandlingens bog 2.udg	Succesfulde studier af denne bog øger dine forvandlings færdigheder. Den forsvinder efter at du har læst den.
 50316	Forvandlingens bog 3.udg	Den sucessfulde læsning af bogen øger forvandlingsfærdigheden. Bogen forsvinder efter læsning.
 50401	Trevejssnit-Manual	Læs denne bog for at lære tre-vejs-snits færdigheden. Bogen forsvinder efter læsningen.
-50402	Sværdspin-Manual	Læs denne bog for at lære sværd-hvirvels færdigheden. Bogen forsvinder efter læsningen.
+50402	Sværdspin-Manual	Læs denne bog for at lære Sværd-hvirvel færdigheden. Bogen forsvinder efter læsningen.
 50403	Berserker-Manual	Læs denne bog for at lære berserks færdigheden. Bogen forsvinder efter læsningen.
 50404	Sværdaura-Manual	Læs denne bog for at lære sværdaura færdigheden. Bogen forsvinder efter læsningen.
 50405	Fart-Manual	Læs denne bog for at lære om fart færdigheden. Bogen forsvinder efter læsningen.
@@ -1535,7 +1535,7 @@
 50448	Ildpils-Manual	Læs denne bog for at lære ildpile færdigheden. Bogen forsvinder efter læsningen.
 50449	Fjerlet Gangs-Manual	Læs denne bog for at lære fjerlet gangart færdigheden. Bogen forsvinder efter læsningen.
 50450	Giftpils-Manual	Læs denne bog for at lære giftpile færdigheden. Bogen forsvinder efter læsningen.
-50451	Gnist manual	Brug denne bog til at mestre gnist egenskab. Bogen forsvinder efter at være blevet læst.
+50451	Gnist manual	Brug denne bog til at mestre Gnist færdigheden. Bogen forsvinder efter at være blevet læst.
 50461	Fingerslags-Manual	Læs denne bog for at lære fingerangrebs færdigheden. Bogen forsvinder efter læsningen.
 50462	Dragehvirvel-Manual	Læs denne bog for at lære drage-hvirvels færdigheden. Bogen forsvinder efter læsningen.
 50463	Fortryllet Klinge Manual	Læs denne bog for at lære fortryllede klinge færdigheden. Bogen forsvinder efter læsningen.
@@ -1569,19 +1569,19 @@
 50534	Højrød ulve sjæls manual	Brug denne bog til at mestre højrød ulve sjæl egenskaben. Bogen forsvinder efter at være blevet læst.
 50535	Indigo ulve sjæl manual	Brug denne bog til at mestre indigo ulve sjæl egenskaben. Bogen forsvinder efter at være blevet læst.
 50600	Minedrifts Guide	Denne bog bliver brugt for at øge minedrifts-færdigheden. | Bogen forsvinder efter læsningen.
-50601	Diamantsten	Kan, ved at anvende en højovn i Ordenen, forvandles til en Diamant.
-50602	Rav	Kan, ved at anvende en højovn i Ordenen, forvandles til en Ravsten.
-50603	Fossil gren	Kan, ved at anvende en højovn i Ordenen, forvandles til en Fossiltræ
-50604	Kobbermalm	Kan, ved at anvende en højovn i Ordenen, forvandles til Kobber
-50605	Sølvmalm	Kan, ved at anvende en højovn i Ordenen, forvandles til Sølv
-50606	Guldmalm	Kan, ved at anvende en højovn i Ordenen, forvandles til Guld
-50607	Jademalm	Kan, ved at anvende en højovn i Ordenen, forvandles til Jade.
-50608	Ibentræmalm	Kan, ved at anvende en højovn i Ordenen, forvandles til Ibentræ.
-50609	Perlestykke	Kan, ved at anvende en højovn i Ordenen, forvandles til en Perle.
-50610	Hvidguldmalm	Kan, ved at anvende en højovn i Ordenen, forvandles til Hvidguld.
-50611	Krystalmalm	Kan, ved at anvende en højovn i Ordenen, forvandles til Krystal.
-50612	Kvartsmalm	Kan, ved at anvende en højovn i Ordenen, forvandles til kvarts.
-50613	Himmeltåremalm	Kan, ved at anvende en højovn i Ordenen, forvandles til en Himmeltåre.
+50601	Diamantsten	Ved at bruge Ordens Smelteovn, kan du producere en Diamant ud af denne sten.
+50602	Rav	Ved at bruge Ordens Smelteovn, kan du producere en gylden rav ud af denne ruet sten.
+50603	Fossil gren	Denne træstamme kan blive raffineret til Fossilt Træ, ved at bruge Ordens Smelteovn.
+50604	Kobbermalm	Ved at bruge Ordens Smelteovn, kan du producere Kobber ud af denne malm.
+50605	Sølvmalm	Ved at bruge Ordens Smelteovn, kan du producere Sølv ud af denne malm.
+50606	Guldmalm	Ved at bruge Ordens Smelteovn, kan du producere Guld ud af denne malm.
+50607	Jademalm	Ved at bruge Ordens Smelteovn, kan du producere Jade ud af denne malm.
+50608	Ibentræmalm	Ved at bruge Ordens Smelteovn, kan du producere Ibenholt ud af denne malm.
+50609	Perlestykke	Ved at bruge Ordens Smelteovn, kan du producere en Perle ud af denne stykke.
+50610	Hvidguldmalm	Ved at bruge Ordens Smelteovn, kan du producere Hvidt Guld ud af denne malm.
+50611	Krystalmalm	Ved at bruge Ordens Smelteovn, kan du producere Krystal ud af denne malm.
+50612	Kvartsmalm	Ved at bruge Ordens Smelteovn, kan du producere Ametyst ud af denne malm.
+50613	Himmeltåremalm	Ved at bruge Ordens Smelteovn, kan du producere en Himmels Tår ud af denne malm.
 50614	Sjæle krystal malm	Ved hjælp af en Ordens Alkymist, kan du producere Sjæle krystal ud af denne malm.
 50615	Rubin malm	Ved hjælp af en Ordens Alkymist, kan du producere Rubin ud af denne malm.
 50616	Granat malm	Ved hjælp af en Ordens Alkymist, kan du producere Granat ud af denne malm.
@@ -1643,8 +1643,8 @@
 50810	Tidsel saft	Saft af tidsler.
 50811	Daddel saft	Saft af daddler.
 50812	Sam-Zi plantens saft	Saft af Sam-Zi planter.
-50813	Sim-vand	Denne eliksir lavet af ferskenblomst-saft og syren øger din chance for at lave gennemborende angreb med 10% i 3 minutter.
-50814	Dok vand	En eliksir lavet af klokkeblomst saft og syren, som øger dine chancer for at lave et kritisk slag med 10% i 3 minutter.
+50813	Sim-vand	En eliksir som er fremstillet af Ferskenblomst Saft og Syren, som øger din chance for at lave et gennemborende træf med 10%.
+50814	Dok vand	En eliksir som er fremstillet af Klokkeblomst Saft og Syren, som øger din chance for at lave et kritisk slag med 10%.
 50815	Bo-vand	Denne eliksir består af Kakiblomst saft og tue-svampe. Eliksiren forbedrer hjerneaktiviten.
 50816	Young-vand	Denne eliksir består af gango-rod og tue-svamp. Eliksiren giver din krop ny livsånd.
 50817	Zin-vand	Denne eliksir lavet af Sim-vand og alperoser øger din angrebsværdi med 50 point i 3 minutter.
@@ -1668,7 +1668,7 @@
 51503	Cor Draconis (normal)	Krystal drage hjertet. Klasse: normal. Indeholder mat drage sten fra klassen uslebbe til slebne.
 51504	Cor Draconis (ædel)	Krystal drage hjertet. Klasse: ædel. Indeholder mat drage sten fra klassen uslebne til sjælden.
 51505	Cor Draconis (værdifuld)	Krystal drage hjertet. Klasse: værdifuld. Indeholder mat drage sten fra klassen uslebne til antik.
-51506	Cor Draconis (gådefuld)	Krystal drage hjertet. Klasse: gådefuld. Indeholder mat drage sten fra klassen uslebne til mystisk.
+51506	Cor Draconis (gådefuld)	Krystal drage hjerte. Rang: mystisk. Indeholder en mat Dragesten af klassen skåret til legendarisk.
 51507	Cor Draconis (slebet)	Krystal drage hjertet indeholder en tilfældig drage sten fra den slebne klasse.
 51508	Cor Draconis (sjælden)	Krystal drage hjertet indeholder en tilfældig drage sten fra den sjældne klasse.
 51509	Cor Draconis (antik)	Krystal drage hjertet indeholder en tilfældig drage sten fra antik klassen.
@@ -1718,12 +1718,12 @@
 51553	Cor Saphirum (evig)	Blå Cor Draconis. Rang: evig. Indeholder en mat drage safir fra klassen slebne til antik.
 51554	Cor Granatum (evig)	Orange Cor Draconis. Rang: evig. Indeholder en mat drage granat fra klassen slebne til antik.
 51555	Cor Atrum (evig)	Sort Cor Draconis. Rang: evig. Indeholder en mat drage onyx fra klassen slebne til antik.
-51556	Cor Diamas (mystisk)	Hvid Cor Draconis. Rang: gådefuld. Indeholder en mat drage diamant fra klassen slebne til mystisk.
-51557	Cor Rubinum (mystisk)	Rød Cor Draconis. Rang: gådefuld. Indeholder en mat drage rubin fra klassen slebne til mystisk.
-51558	Cor Jadeit (mystisk)	Grøn Cor Draconis. Rang: gådefuld. Indeholder en mat drage jade fra klassen slebne til mystisk.
-51559	Cor Saphirum (mystisk)	Blå Cor Draconis. Rang: gådefuld. Indeholder en mat drage safir fra klassen slebne til mystisk.
-51560	Cor Granatum (mystisk)	Orange Cor Draconis. Rang: gådefuld. Indeholder en mat drage granat fra klassen slebne til mystisk.
-51561	Cor Atrum (mystisk)	Sort Cor Draconis. Rang: gådefuld. Indeholder en mat drage onyx fra klassen slebne til mystisk.
+51556	Cor Diamas (mystisk)	Hvid Cor Draconis. Rang: mystisk. Indeholder en mat Drage Diamant af klassen skåret til legendarisk.
+51557	Cor Rubinum (mystisk)	Rød Cor Draconis. Rang: mystisk. Indeholder en mat Drage Rubin af klassen skåret til legendarisk.
+51558	Cor Jadeit (mystisk)	Grøn Cor Draconis. Rang: mystisk. Indeholder en mat Drage Jade af klassen skåret til legendarisk.
+51559	Cor Saphirum (mystisk)	Blå Cor Draconis. Rang: mystisk. Indeholder en mat Drage Safir af klassen skåret til legendarisk.
+51560	Cor Granatum (mystisk)	Orange Cor Draconis. Rang: mystisk. Indeholder en mat Drage Granat af klassen skåret til legendarisk.
+51561	Cor Atrum (mystisk)	Sort Cor Draconis. Rang: mystisk. Indeholder en mat Drage Onyx af klassen skåret til legendarisk.
 51562	Cor Draconis (episk)	Krystal drage hjertet. Klasse: episk. Indeholder mat drage sten fra klassen sjælden til antik.
 51563	Cor Diamas (episk)	Hvid Cor Draconis. Rang: episk. Indeholder en mat drage diamant fra klassen sjælden til mystisk.
 51564	Cor Rubinum (episk)	Rød Cor Draconis. Rang: episk. Indeholder en mat drage rubin fra klassen sjælden til mystisk.
@@ -1780,13 +1780,13 @@
 51615	Cor Saphirum+ (evig)	Kraftfuld Cor Draconis. Rang: evig. Indeholder en drage safir fra klassen sleben til antik med en tilfældig klarhedsgrad.
 51616	Cor Granatum+ (evig)	Kraftfuld Cor Draconis. Rang: evig. Indeholder en drage granat fra klassen sleben til antik med en tilfældig klarhedsgrad.
 51617	Cor Atrum+ (evig)	Kraftfuld Cor Draconis. Rang: evig. Indeholder en drage onyx fra klassen sleben til antik med en tilfældig klarhedsgrad.
-51618	Cor Draconis+ (mystisk)	Kraftfuld Cor Draconis. Rang: gådefuld. Indeholder en drage sten fra klassen sleben til mystisk med en tilfældig klarhedsgrad.
-51619	Cor Diamas+ (mystisk)	Kraftfuld Cor Draconis. Rang: gådefuld. Indeholder en drage diamant fra klassen sleben til mystisk med en tilfældig klarhedsgrad.
-51620	Cor Rubinum+ (mystisk)	Kraftfuld Cor Draconis. Rang: gådefuld. Indeholder en drage rubin fra klassen sleben til mystisk med en tilfældig klarhedsgrad.
-51621	Cor Jadeit+ (mystisk)	Kraftfuld Cor Draconis. Rang: gådefuld. Indeholder en drage jade fra klassen sleben til mystisk med en tilfældig klarhedsgrad.
-51622	Cor Saphirum+ (mystisk)	Kraftfuld Cor Draconis. Rang: gådefuld. Indeholder en drage safir fra klassen sleben til mystisk med en tilfældig klarhedsgrad.
-51623	Cor Granatum+ (mystisk)	Kraftfuld Cor Draconis. Rang: gådefuld. Indeholder en drage granat fra klassen sleben til mystisk med en tilfældig klarhedsgrad.
-51624	Cor Atrum+ (mystisk)	Kraftfuld Cor Draconis. Rang: gådefuld. Indeholder en drage onyx fra klassen sleben til mystisk med en tilfældig klarhedsgrad.
+51618	Cor Draconis+ (mystisk)	Kraftfuld Cor Draconis. Rang: mystisk. Indeholder en Dragesten af klassen skåret til legendarisk med en tilfældig klarhedsgrad.
+51619	Cor Diamas+ (mystisk)	Kraftfuld Cor Draconis. Rang: mystisk. Indeholder en Drage Diamant af klassen skåret til legendarisk med en tilfældig klarhedsgrad.
+51620	Cor Rubinum+ (mystisk)	Kraftfuld Cor Draconis. Rang: mystisk. Indeholder en Drage Rubin af klassen skåret til legendarisk med en tilfældig klarhedsgrad.
+51621	Cor Jadeit+ (mystisk)	Kraftfuld Cor Draconis. Rang: mystisk. Indeholder en Drage Jade af klassen skåret til legendarisk med en tilfældig klarhedsgrad.
+51622	Cor Saphirum+ (mystisk)	Kraftfuld Cor Draconis. Rang: mystisk. Indeholder en Drage Safir af klassen skåret til legendarisk med en tilfældig klarhedsgrad.
+51623	Cor Granatum+ (mystisk)	Kraftfuld Cor Draconis. Rang: mystisk. Indeholder en Drage Granat af klassen skåret til legendarisk med en tilfældig klarhedsgrad.
+51624	Cor Atrum+ (mystisk)	Kraftfuld Cor Draconis. Rang: mystisk. Indeholder en Drage Onyx af klassen skåret til legendarisk med en tilfældig klarhedsgrad.
 51625	Cor Draconis+ (episk)	Kraftfuld Cor Draconis. Rang: episk. Indeholder en drage sten fra klassen sjældne til antik med en tilfældig klarhedsgrad.
 51626	Cor Diamas+ (episk)	Kraftfuld Cor Draconis. Rang: episk. Indeholder en drage diamant fra klassen sjældne til antik med en tilfældig klarhedsgrad.
 51627	Cor Rubinum+ (episk)	Kraftfuld Cor Draconis. Rang: episk. Indeholder en drage rubin fra klassen sjældne til antik med en tilfældig klarhedsgrad.
@@ -1869,8 +1869,8 @@
 52058	Tapper Tiger (Segl)	Seglet tilkalder din Tapre Tiger. Han øger sin rytters HP med 500.
 52059	Tapper Tiger (Segl)	Seglet tilkalder din Tapre Tiger. Han øger sin rytters forsvar med 150.
 52060	Tapper Tiger (Segl)	Seglet tilkalder din Tapre Tiger. Han øger sin rytters angreb med 100.
-52061	Ung Rensdyr (Segl)	Seglet tilkalder dit Unge Rensdyr (m). Efter kamp uddannelsen, giver han sin rytter op til 5% styrke mod monstre.
-52062	Ung Rensdyr (Segl)	Seglet tilkalder dit Unge Rensdyr (m). Efter kamp uddannelsen, øger han indsamling af erfaringer med op til 5%.
+52061	Ung Rensdyr (Segl)	Denne segl tilkalder dit Unge Rensdyr (m).
+52062	Ung Rensdyr (Segl)	Denne segl tilkalder dit Unge Rensdyr (m).
 52063	Ung Rensdyr (Segl)	Seglet tilkalder dit Unge Rensdyr (m). Efter kamp uddannelsen, øger han sin rytters HP med op til 500.
 52064	Ung Rensdyr (Segl)	Seglet tilkalder dit Unge Rensdyr (m). Efter kamp uddannelsen, øger han sin rytters forsvar med op til 150.
 52065	Ung Rensdyr (Segl)	Seglet tilkalder dit Unge Rensdyr (m). Efter kamp uddannelsen, øger han sin rytters angreb med op til 100.
@@ -1884,7 +1884,7 @@
 52073	Tapper Rensdyr (Segl)	Seglet tilkalder dit Tapre Rensdyr (m). Han øger sin rytters HP med 500.
 52074	Tapper Rensdyr (Segl)	Seglet tilkalder dit Tapre Rensdyr (m). Han øger sin rytters forsvar med 150.
 52075	Tapper Rensdyr (Segl)	Seglet tilkalder dit Tapre Rensdyr (m). Han øger sin rytters angreb med 100.
-52076	Ung Rensdyr (Segl)	Seglet tilkalder dit Unge Rensdyr (f). Efter kamp uddannelsen, giver hun sin rytter op til 5% styrke mod monstre.
+52076	Ung Rensdyr (Segl)	Denne segl tilkalder dit Unge Rensdyr (k).
 52077	Ung Rensdyr (Segl)	Seglet tilkalder dit Unge Rensdyr (f). Efter kamp uddannelsen, øger hun indsamling af erfaringer med op til 5%.
 52078	Ung Rensdyr (Segl)	Seglet tilkalder dit Unge Rensdyr (f). Efter kamp uddannelsen, øger hun sin rytters HP med op til 500.
 52079	Ung Rensdyr (Segl)	Seglet tilkalder dit Unge Rensdyr (f). Efter kamp uddannelsen, øger hun sin rytters forsvar med op til 150.
@@ -1899,21 +1899,21 @@
 52088	Tapper Rensdyr (Segl)	Seglet tilkalder dit Tapre Rensdyr (f). Hun øger sin rytters HP med 500.
 52089	Tapper Rensdyr (Segl)	Seglet tilkalder dit Tapre Rensdyr (f). Hun øger sin rytters forsvar med 150.
 52090	Tapper Rensdyr (Segl)	Seglet tilkalder dit Tapre Rensdyr (f). Hun øger sin rytters angreb med 100.
-52091	Ungt Dragor segl	Dette selg tilkalder din unge Dragor. Med hensyn til hans kamp træning, giver han sin rytter op til 5% stærk mod monster.
-52092	Ungt Dragor segl	Dette selg tilkalder din unge Dragor. Med hensyn til hans kamp træning, øger han erfarings opsamlingen med op til 5%.
-52093	Ungt Dragor segl	Dette selg tilkalder din unge Dragor. Med hensyn til hans kamp træning, øger han sin rytters HP med op til 500.
-52094	Ungt Dragor segl	Dette selg tilkalder din unge Dragor. Med hensyn til hans kamp træning, øger han sin rytters forsvar med op til 150.
-52095	Ungt Dragor segl	Dette selg tilkalder din unge Dragor. Med hensyn til hans kamp træning, øger han sin rytters angreb med op til 100.
+52091	Ungt Dragor segl	Seglet tilkalder din Unge Dragor.
+52092	Ungt Dragor segl	Seglet tilkalder din Unge Dragor.
+52093	Ungt Dragor segl	Seglet tilkalder din Unge Dragor.
+52094	Ungt Dragor segl	Seglet tilkalder din Unge Dragor.
+52095	Ungt Dragor segl	Seglet tilkalder din Unge Dragor.
 52096	Vildt Dragor segl	Dette selg tilkalder din vilde Dragor. Han giver sin rytter 3% stærk mod monster.
 52097	Vildt Dragor segl	Dette selg tilkalder din vilde Dragor. Han øger erfarings opsamlingen med 3%
 52098	Vildt Dragor segl	Dette selg tilkalder din vilde Dragor. Han øger sin rytters HP med 250.
 52099	Vildt Dragor segl	Dette selg tilkalder din vilde Dragor. Han øger sin rytters forsvar med 50.
 52100	Vildt Dragor segl	Dette selg tilkalder din vilde Dragor. Han øger sin rytters angreb med 30.
-52101	Tapper Dragor segl	Dette selg tilkalder din tapre Dragor. Han giver sin rytter 5% stærk mod monster.
-52102	Tapper Dragor segl	Dette selg tilkalder din tapre Dragor. Han øger erfarings opsamlingen med 5%.
-52103	Tapper Dragor segl	Dette selg tilkalder din tapre Dragor. Han øger sin rytters HP med 500.
-52104	Tapper Dragor segl	Dette selg tilkalder din tapre Dragor. Han øger sin rytters forsvar med 150.
-52105	Tapper Dragor segl	Dette selg tilkalder din tapre Dragor. Han øger sin rytters angreb med 100.
+52101	Tapper Dragor segl	Dette segl tilkalder din Tapper Dragor. Han giver sin rytter +5% styrke imod monstre.
+52102	Tapper Dragor segl	Dette segl tilkalder din Tapper Dragor. Han øger erfaring med 5%.
+52103	Tapper Dragor segl	Dette segl tilkalder din Tapper Dragor. Han øger sin rytters HP med 500.
+52104	Tapper Dragor segl	Dette segl tilkalder din Tapper Dragor. Han øger sin rytters forsvarsværdi med 150.
+52105	Tapper Dragor segl	Dette segl tilkalder din Tapper Dragor. Han øger sin rytters angrebsværdi med 100.
 52106	Ung Moa (segl)	Dette segl tilkalder din unge Moa. Efter træning øger han hans rytters styrke mod monster med op til 5%.
 52107	Ung Moa (segl)	Dette segl tilkalder din unge Moa. Efter træning øger han hans rytters indsamling af erfaring med op til 5%.
 52108	Ung Moa (segl)	Dette segl tilkalder din unge Moa. Efter træning øger han hans rytters HP med op til 500.
@@ -1924,11 +1924,11 @@
 52113	Vild Moa (segl)	Dette segl tilkalder din Vilde Moa. Han øger sin rytters HP med 250.
 52114	Vild Moa (segl)	Dette segl tilkalder din Vilde Moa. Han øger sin rytters forsvar med 50.
 52115	Vild Moa (segl)	Dette segl tilkalder din Vilde Moa. Han øger sin rytters angrebs værdi med 30.
-52116	Tapper Moa (segl)	Dette segl tilkalder din Tapre Moa. Han giver sin rytter +5% styrke mod monstre.
-52117	Tapper Moa (segl)	Dette segl tilkalder din Tapre Moa. Han øger sin rytters indsamling af erfaring med 5%.
-52118	Tapper Moa (segl)	Dette segl tilkalder din Tapre Moa. Han øger sin rytters HP med 500.
-52119	Tapper Moa (segl)	Dette segl tilkalder din Tapre Moa. Han øger sin rytters forsvar med 150.
-52120	Tapper Moa (segl)	Dette segl tilkalder din Tapre Moa. Han øger sin rytters angrebs værdi med 100.
+52116	Tapper Moa (segl)	Dette segl tilkalder din Tapper Moa. Han giver sin rytter +5% styrke imod monstre.
+52117	Tapper Moa (segl)	Dette segl tilkalder din Tapper Moa. Han øger erfaring med 5%.
+52118	Tapper Moa (segl)	Dette segl tilkalder din Tapper Moa. Han øger sin rytters HP med 500.
+52119	Tapper Moa (segl)	Dette segl tilkalder din Tapper Moa. Han øger sin rytters forsvarsværdi med 150.
+52120	Tapper Moa (segl)	Dette segl tilkalder din Tapper Moa. Han øger sin rytters angrebsværdi med 100.
 52701	Løve Certifikat	Ejerskab Certifikat for en Ung Løve
 52702	Tiger Certifikat	Ejerskab Certifikat for en Ung Tiger
 52703	Vildsvin Certifikat	Ejerskab Certifikat for en Ung Vildsvin
@@ -1937,46 +1937,46 @@
 52706	Rensdyr Certifikat (f)	Ejerskab Certifikat for et Ung Rensdyr (f)
 52707	Dragor certifikat	Ejerskabs certifikat for en ung Dragor.
 52708	Moa certifikat	Dette certifikat fungerer som bekræftelse på, at du er ejer af en ung Moa.
-53001		
-53002	Unge Rensdyr Segl	Du kan bruge dette segl til at tilkalde det søde unge rensdyr.
+53001		Du kan bruge dette segl til at tilkalde din ven Ild Føniksen.
+53002	Unge Rensdyr Segl	Du kan bruge dette segl til at tilkalde den søde Rensdyr Kalv.
 53003	Is Føniks Segl	Du kan bruge dette segl for at tilkalde din ven, Is Føniks.
-53005	Baby Azrael	Mini versionen af dæmon lederen er ekstremt kærlig og vil give dig en bonus på 1500 HP og 15% angrebs skade og fra 2. sal af dæmon tårnet og djævlens katakomber.
-53006	Baby Azrael (guld)	Denne mini dæmon er ekstremt kærlig og vil give dig en bonus på 1500 HP og 15% skade fra 2. etage af både Dæmon tårnet og djævle katakomberne.
-53007	Bambi Segl	Du kan bruge dette segl at tilkalde dit unge rensdyr, Bambi.
-53008	Knuud segl	Dette segl tillader dig at tilkalde din søde isbjørne unge.
-53009	Bao Bao segl	Dette segl tillader dig at tilkalde din søde panda unge.
-53010	Leonidas segl	Du kan bruge dette segl at tilkalde din løve unge, Leonidas.
-53011	Khan segl	Du kan bruge dette selg at tilkalde din tiger unge, Khan.
-53012	Porkie segl	Du kan bruge dette segl at tilkalde din vildsvine unge, Porkie.
-53013	Rufus segl	Du kan bruge dette selg at tilkalde din ulve hvalp, Rufus.
-53014	Mini Executor segl	Dette segl tilkalder din buttede Mini Executor i sort rustning.
-53015	Mini Executor segl(guld)	Dette segl tilkalder din buttede Mini Executor i en gylden rustning.
-53016	Boney segl	Dette segl tilkalder dit benede kæledyr.
-53017	Jade Føniks segl	Dette segl tilkalder den yndefulde jade føniks.
-53018	Sne Leonidas (segl)	Du kan bruge dette segl til at tilkalde dit kæledyr.
-53019	Arktis Khan (segl)	Du kan bruge dette segl til at tilkalde dit kæledyr.
-53020	Polar Porkie (segl)	Du kan bruge dette segl til at tilkalde dit kæledyr.
-53021	Frost Rufus (segl)	Du kan bruge dette segl til at tilkalde dit kæledyr.
-53022	Sheldon segl	Dette segl får dit kæledyr Sheldon til at klæge ud af sit æg.
-53023	Cooper segl	Dette segl bringer dit kæledyr Cooper hoppende over.
-53024	Panter unge (7dage)	Dette segl tilkalder din sorte panter unge.
-53025	Leopard unge (7dage)	Dette segl tilkalder din nuttede leopard unge.
-53026		
-53218	Panter unge (30 dage)	Dette segl tilkalder din sorte panter unge.
-53219	Panter unge (120 dage)	Dette segl tilkalder din sorte panter unge.
-53220	Leopard unge (30 dage)	Dette segl tilkalder din nuttede leopard unge.
-53221	Leopard unge (120 dage)	Dette segl tilkalder din nuttede leopard unge.
-53222	Græskarhoved Segl	Du kan bruge dette segl til at hidkalde dit Græskarhoved.
-53223	Lille Kostesegl	Du kan bruge dette segl til at hidkalde din Lille Kost,
-53224	Snefnug segl	Du kan bruge dette segl til at hidkalde snefnug den søde lille snemand.
-53225	Sneklokke segl	Du kan bruge dette segl til at hidkalde sneklokke, den festlige lille snemand.
-53226	Cupido (Segl)	Du kan bruge dette segl til at tilkalde din egen personlige matchmaker. Han giver dig 5% øget chance for gennemborende slag og forøger dine livs point med 1500.
-53227	Rasende hjerte (Segl)	Du kan bruge dette segl til at tilkalde det rasende hjerte. Han giver dig 5% forøget chance for kritisk slag og forøger dine livs point med 1500.
-53228	Halvmåne (Segl)	Du kan bruge dette segl til at tilkalde din blå halvmåne.
-53229	Halvmåne (Segl)	Du kan bruge dette segl til at tilkalde din røde halvmåne.
-53232	Baby Huashin	Miniature udgaven af General Huashin giver dig en 5% højere chance for et gennemborende angreb og øger dine HP med 1500.
-53501		
-53502	Unge Rensdyr Kiste	Det Unge Rensdyr venter utålmodigt i denne kiste på dig for at lukke det ud.
+53005	Baby Azrael	Mini versionen af dæmon lederen er ekstremt kærlig. Fra den 2. sal af Dæmon Tårnet og Djævelens Katakombe, giver han dig en bonus på | +15% magisk/nærkamps angreb | +1500 HP
+53006	Baby Azrael (guld)	Mini versionen af dæmon lederen er ekstremt kærlig. Fra den 2. sal af Dæmon Tårnet og Djævelens Katakombe, giver han dig en bonus på | +15% magisk/nærkamps angreb | +1500 HP
+53007	Bambi Segl	Du kan bruge dette segl til at tilkalde din rensdyr kalv, Bambi. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53008	Knuud segl	Dette segl tillader dig at tilkalde din søde isbjørne unge. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53009	Bao Bao segl	Dette segl tillader dig at tilkalde din søde panda unge. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53010	Leonidas segl	Du kan bruge dette segl at tilkalde din løve unge, Leonidas. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53011	Khan segl	Du kan bruge dette segl at tilkalde din tiger unge, Khan. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53012	Porkie segl	Du kan bruge dette segl at tilkalde din vildsvine unge, Porkie. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53013	Rufus segl	Du kan bruge dette segl at tilkalde din ulve hvalp, Rufus. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53014	Mini Executor segl	Dette segl tilkalder din buttede Mini-Bobestyrer i sort rustning. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53015	Mini Executor segl(guld)	Dette segl tilkalder din buttede Mini-Bobestyrer i en gylden rustning. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53016	Boney segl	Seglet tilkalder dit benede kæledyr. Den giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53017	Jade Føniks segl	Dette segl tilkalder den yndefulde Jade Føniks. Kæledyret giver dig | +15% magisk/nærkamps angreb | +50% chance for en 30% EXP Bonus
+53018	Sne Leonidas (segl)	Du kan bruge dette segl til at tilkalde den lille sne løve. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53019	Arktis Khan (segl)	Du kan bruge dette segl til at tilkalde den lille sne tiger. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53020	Polar Porkie (segl)	Du kan bruge dette segl til at tilkalde din lille polar pattegris. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53021	Frost Rufus (segl)	Du kan bruge dette segl til at tilkalde din lille polar ulv. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53022	Sheldon segl	Seglet får dit kæledyr Sheldon til at klække ud af sit æg. Den giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53023	Cooper segl	Seglet bringer dit kæledyr Cooper hoppende over. Den giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53024	Panter unge (7dage)	Dette segl tilkalder din sorte Panter Unge. Kæledyret giver dig | +5% færdigheds skade modstand | +5% chance for gennemborende træf | +1500 HP
+53025	Leopard unge (7dage)	Dette segl tilkalder din søde Leopard Unge. Kæledyret giver dig | +10 forsvarsværdi | +5% chance for kritiske slag | +1500 HP
+53026		Du kan bruge dette segl til at tilkalde din Føniks Pepita. Kæledyret øger erfaring med +5%.
+53218	Panter unge (30 dage)	Dette segl tilkalder din sorte Panter Unge. Kæledyret giver dig | +5% færdigheds skade modstand | +5% chance for gennemborende træf | +1500 HP
+53219	Panter unge (120 dage)	Dette segl tilkalder din sorte Panter Unge. Kæledyret giver dig | +5% færdigheds skade modstand | +5% chance for gennemborende træf | +1500 HP
+53220	Leopard unge (30 dage)	Dette segl tilkalder din søde Leopard Unge. Kæledyret giver dig | +10 forsvarsværdi | +5% chance for kritiske slag | +1500 HP
+53221	Leopard unge (120 dage)	Dette segl tilkalder din søde Leopard Unge. Kæledyret giver dig | +10 forsvarsværdi | +5% chance for kritiske slag | +1500 HP
+53222	Græskarhoved Segl	Du kan bruge dette segl til at tilkalde dit Græskarhoved. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53223	Lille Kostesegl	Du kan bruge dette segl til at tilkalde din Lille Kost. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53224	Snefnug segl	Du kan bruge dette segl til at tilkalde Snefnug den søde lille snemand. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53225	Sneklokke segl	Du kan bruge dette segl til at tilkalde Sneklokke, den festlige lille snemand. Kæledyret giver dig | +15% magisk/nærkamps angreb | +5% kritiske slag
+53226	Cupido (Segl)	Du kan bruge dette segl til at tilkalde din egen personlige matchmaker. Den giver dig | +5% chance for gennemborende træf | +1500 HP
+53227	Rasende hjerte (Segl)	Du kan bruge dette segl til at tilkalde det Rasende Hjerte. Den giver dig | +5% chance for kritiske slag | +1500 HP
+53228	Halvmåne (Segl)	Du kan bruge dette segl til at tilkalde din Blå Halvmåne. Kæledyret giver dig | +15% magisk/nærkamps angreb | +1500 HP
+53229	Halvmåne (Segl)	Du kan bruge dette segl til at tilkalde din Røde Halvmåne.  Den giver dig | +15% magisk/nærkamps angreb | +5% chance for kritiske slag
+53232	Baby Huashin	Mini versionen af General Huashin giver dig | +5% chance for gennemborende træf | +1500 HP
+53501		Ild Føniksen venter i dette bur på at du lukker den ud.
+53502	Unge Rensdyr Kiste	Rensdyr Kalven venter utålmodigt i denne kiste på at du lukker den ud.
 53503	Is Føniks Bur	Is Føniks venter i dette bur så du kan lukke den ud.
 53504		
 53505	Baby Azrael kiste	Baby Azrael, miniature versionen af dæmon herskeren, venter på at blive sluppet fri fra denne kiste.
@@ -1992,10 +1992,10 @@
 53515	MiniExecutor kiste(guld)	Den buttede Mini Executor i hans gyldne rustning venter på at blive lukket ud fra denne kiste.
 53516	Knogle kiste	Indeholde en tilfældig genstand. Men lidt held vil du måske finde skelet hunden, Boney, inden i.
 53517	Jade bur	Den sjældne jade føniks venter i dette bur på, at du sætter den fri.
-53518	Sne Leonidas	Denne kiste indeholder et Sne Leonidas segl.
-53519	Arktis Khan	Denne kiste indeholder et Arktis Khan segl.
-53520	Polar Porkie	Denne kiste indeholder et Polar Porkie segl.
-53521	Frost Rufus	Denne kiste indeholder et Frost Rufus segl.
+53518	Sne Leonidas	Buret indeholder Sne Leonidas segl.
+53519	Arktis Khan	Buret indeholder Arktis Khan segl.
+53520	Polar Porkie	Buret indeholder Polar Porkie segl.
+53521	Frost Rufus	Buret indeholder Frost Rufus segl.
 53522	Sheldons rede	Dit kæledyr Sheldon har gemt sig i denne rede.
 53523	Kanin bur	Den lille kanin Cooper gemmer sig i dette bur.
 53526		
@@ -2017,7 +2017,7 @@
 70002	Tredje hånd	En hånd der automatisk opsamler Yang.
 70003	Lederens bog	I den tid hvor gruppens leder er udrustet med denne bog, får alle gruppemedlemmer i tre timer 30% mere erfaring.
 70004	Flittigheds medalje	Belønning for dit hårde arbejde. Giver dig 20% flere erfarings point i kamp.
-70005	Erfaringsring	Du får 50% mere erfaring i kampe.
+70005	Erfaringsring	Øger indsamlingen af erfaring med 50% i 60 minutter.
 70006	Sprogring	Ringen er fremstillet til diplomati i en gammel æra. Brug den til at snakke med folk fra andre Riger.
 70008	Hvidt flag	Et hvidt flag, der viser man kapitulerer.
 70009	Skattekiste	En dekoreret  kiste. Kan kun åbnes med en speciel nøgle.
@@ -2028,24 +2028,24 @@
 70015	Billig børste	En almindelig robust børste med træhåndtag.
 70020	Ferskenblomst vin	En bryg der øjeblikkeligt regenerer dine livspoint med 500 points.
 70024	Velsignelseskugle	Denne legendariske kugle tilføjer en yderligere attribut, hvis en genstand allerede har 4 attributter.
-70027	Notits fra smeden	En notits af smeden der forklarer, hvordan du kan forbedre dine våben.
+70027	Notits fra smeden	En note fra smeden, der viser dig hvordan du opgraderer genstande. Øger chancen for at opgradere en genstand fra +4 til +5 til 100%.
 70031	Fægtnings skrifter	Disse skrifter indeholder, blandt andet, potentialet og svaghederne ved menneskets anatomi.
 70035	Magisk kobbermalm	Når du kombinerer dette malm med et velsignelses dokument hos smeden, så får du krigsgudens dokument.
-70037	Glemsomhedens Bog	Det legendariske bog, der muliggør at fjerne hukommelsen om en lært færdighed. Du kan flytte på 1 færdigheds-point.
+70037	Glemsomhedens Bog	Med denne bog, kan din helt glemme at han har lært en færdighed. På denne måde kan du flytte 1 færdighedspoint.
 70038	Tapperhedens kappe	En kulørt kappe, der i sin tid blev brugt af krigerne for at vise deres tapperhed: Alle monster blever tillokket.
 70039	Smede håndbog	Bogen står i forbindelse med en gammel smed´s ånd. Når det bruges øger sandsynligheden for at genstande bliver forbedret.
 70040	Orkstædighed	Reducere udholdenheds forbruget til det halve.
-70043	Tyvehandsker	Fordobler sandsynligheden for at finde genstande.
+70043	Tyvehandsker	Fordobl chancen for at plyndre genstande.
 70047	Sprogring (eksempel)	I fordums tid, var denne ring fremstillet for diplomaternes kreds. Den tillader brugeren at tale de andre rigers sprog.
-70048	Flygtninge kappe	En uvurderlig kappe som benyttes af mange som flygter. Når den bæres, skjuler den din rang.
-70049	Lucys ring	På ringen står der: "Drageguden velsigner dig". Ringen mindsker sandsynligheden for at du mister genstande i kampen.
+70048	Flygtninge kappe	Brug denne mystiske kappe til at skjule dit sande rang.
+70049	Lucys ring	Graveringen på ringen siger: 'Må Drageguden velsigne dig.' Ringen reducerer din chance for at miste genstande i kampen. I stede for at miste en genstand, mister du Lucys Ring.
 70050	Den Viise Kejsers Symbol	Et nedarvet symbol fra den gamle royale familie som giver den store mester store kræfter.
 70051	Den Viise Kejser Handske	Handsker der gives videre fra generation til generation i den gamle kongefamilie. Den som bærer symbolet får kejserens styrke.
 70052	Karma-magi 1	En magisk karma der bruges af buddhisterne for at beskytte sig mod uheld.
 70053	Karma-magi 2	En magisk karma der bruges af buddhisterne for at beskytte sig mod uheld.
 70054	Karma-magi 3	En magisk karma der bruges af buddhisterne for at beskytte sig mod uheld.
 70056	Granatæble Juice+	En eliksir der øjeblikkeligt regenererer dine HP med 1000 point.
-70057	Tapperhedens kappe	En kulørt kappe, som krigere engang beviste deres tapperhed med, da det tiltrak sig opmærksomhed fra forskellige monstre. Disse genstande er omsættelige.
+70057	Tapperhedens kappe	En farverig kappe, som krigere engang beviste deres tapperhed med, da det tiltrak sig opmærksomhed fra forskellige monstre.
 70058	Teleporterings ring	Denne ring vil teleportere dig til et sted du selv ønsker i dit kongerige 50 gange. Ikke omsættelig.
 70063	Omdan kostume	Fjerner en af bonusserne fra en af dine kostumer og erstatter dem med en ny. Med lidt held, vil antallet af bonusser måske også ændre sig (op til max. 3).
 70064	Fortrylle kostume	Fjerner bonusserne fra en af dine kostumer og erstatter dem med en ny.
@@ -2070,16 +2070,16 @@
 71005	Sprogring	Du kan i 7 dage forstå alle rigssprog.
 71006	Sprogring	I 15 dage kan du forstå alle rigssprog.
 71007	Sprogring	I 30 dage kan du forstå alle rigssprog.
-71008	Fiskeriets ABC	Fordobler sandsynligheden for at du fanger en sjælden fisk.
+71008	Fiskeriets ABC	Kræves til at fange sjældne fisk og fordobler dine chancer for at fange dem.
 71009	Lagerkiste	Dit lager får yderligere to lagerrum.
 71010	Tredje hånd	En hånd der automatisk opsamler Yang.
 71011	Følelsesmaske	Du kan lade dine føleser få frit løb med denne maske.
 71012	Lederens Bog	I den tid hvor gruppelederen er udrustet med denne bog får alle gruppemedlemmer, i tre timer 30% mere erfaring.
 71013	Fyrværkeri	Raket der belyser himlen.
-71014	Angrebs eliksir +10	Øger angrebshastigheden for 30 minutter med 10%.
-71015	Erfaringsring	Du samler 50% mere erfaring når du kæmper.
-71016	Tyvens handsker	Fordobler sandsynligheden for at finde genstande i 30 minutter.
-71017	Lykkens medalje	Fordobler sandsynligheden for at finde Yangs.
+71014	Angrebs eliksir +10	Forøger din angrebshastighed med 10%.
+71015	Erfaringsring	Du indsamler 50% flere erfaringspoint under kampen.
+71016	Tyvens handsker	Fordobler sandsynligheden for at plyndre genstande.
+71017	Lykkens medalje	Fordobler sandsynligheden for at plyndre Yang.
 71018	Livets velsignelse	En velsignelse der øjeblikkeligt gendanner alle dine livspoint (HP).
 71019	Magiens velsignelse	En velsignelse der øjeblikkeligt gendanner alle dine manapoint (MP).
 71020	Dragens velsignelse	En velsignelse der øjeblikkeligt gendanner alle dine livspoint (HP) og manapoint (MP).
@@ -2089,15 +2089,15 @@
 71024	Styrke returnering	Gendanner din styrke til basis level, så du på ny, kan distribuere dem.
 71025	Smedens sten	Hos smeden kan du med denne sten og et velsignelses dokument lave smede-håndbogen.
 71026	Magisk jernmalm	Dette malm kan bruges til at fremstille et drage dokument - dertil bruges yderligere et velsignet dokument, som smeden så kan omdanne.
-71027	Dragegudens liv	Øger dine maksimale livspoint (HP) i 30 minutter med 20%.
-71028	Dragegudens angreb	Øger din kampskade i 30 minutter med 12-15%
-71029	Dragegudens intelligens	Øger dine maksimale manapoint (MP) i 30 minutter med 20%.
-71030	Dragegudens forsvar	Øger dit forsvar således du får i 30 minutter 12-15% mindre skade.
+71027	Dragegudens liv	Øger dit maksimale HP med 20%.
+71028	Dragegudens angreb	Øger din angrebsværdi med 20%.
+71029	Dragegudens intelligens	Øger dit maksimale MP med 20%.
+71030	Dragegudens forsvar	Reducerer den skade du modtager under kampen med 20%.
 71031	Dragegudens hjælp	Vitalitet, styrke, intelligens og smidighed vil midlertidigt femdobles.
 71032	Dragens dokument	Med dette dokument fjernes risikoen for, at en genstand går i stykker under en forbedring. Istedet for ødelæggelsen falder den med 1 i kvaliteten. Yderligt øges sandsynligheden for at forbedringen lykkes med 10%.
 71033	Følelsesmaske	Du kan lade dine føleser få frit løb med denne maske.
-71034	Angrebs eliksir +15	Din angrebshastighed øges i 30 minutter med 15%.
-71035	Forskerens eliksir	Øger kvaliteten af de samlede forskningsobjekter og dermed også deres accepterings-sandsynlighed.
+71034	Angrebs eliksir +15	Forøger din angrebshastighed med 15%.
+71035	Forskerens eliksir	Forbedrer kvaliteten af forsknings objekterne som du har indsamlet, og dermed øger den også sandsynligheden for at de vil blive accepteret. Gælder ikke for missioner i Yohara.
 71036	Dokument: ork-leder	En ork-leder dukker op ved siden af dig. Pas på: Det drejer sig om en Boss!
 71037	Dokument: Leder	En leder dukker op ved siden af dig. Pas på: Det er et boss-monster.
 71038	Dokument: Kongeedderkop	En kongeedderkop dukker op ved siden af dig. Pas på: Det er et boss-monster.
@@ -2106,14 +2106,14 @@
 71041	Dokument: Nihalede	En nihalede dukker op ved siden af dig. Pas på: Det er et boss-monster.
 71042	Dokument: Dæmonkonge	En stolt dæmonkonge dukker op ved siden af dig. Pas på: Det er et boss-monster.
 71043	Dokument: Tigerånd	En gul tigerånd dukker op ved siden af dig. Pas på: Det er et boss-monster.
-71044	Kritisk angreb	Øger chancen for et kritisk træf i kamp med 20% i 10 minutter.
-71045	Gennemborende angreb	Øger sandsynligheden for at du laver et gennemborende slag i 10 minutter med 20%.
+71044	Kritisk angreb	Øger chancen for at udføre et kritisk slag med 20%.
+71045	Gennemborende angreb	Øger chancen for at udføre et gennemborende træf med 20%.
 71047	Åndestenens Skær	Fjerner alle indsatte ånde-sten fra en genstand.
 71048	Ændringsmagi	Hermed kan du skifte dit køn.
 71049	Silkebundt	Du kan åbne dine butikker gratis de næste 10 dage.
 71050	Hastighedseliksir	Bevægelseshastigheden øges med 60 i 30 minutter.
-71051	Forheks genstand	Føjer en special bonus til en af dine genstande, hvis der ikke var en i forvejen.
-71052	Velsign genstand	Fjerner en special bonus fra din genstand og tilføjer en ny.
+71051	Forheks genstand	Fjerner en special bonus fra din genstand og tilføjer en ny.
+71052	Velsign genstand	Føjer en special bonus til en af dine genstande, hvis der ikke var en i forvejen.
 71054	Rigets Skær	Du får muligheden at gå i exil i et andet Rige.
 71055	Navnets Skær	Du får muligheden at skifte navn på din karakter.
 71056	Himlens Skær	Øger chancen for succesfuldt at forbedre en åndesten.
@@ -2129,7 +2129,7 @@
 71066	Dokument: Kvarts-åre	En Kvarts-åre oprettes ved siden af din karakter.
 71067	Dokument: Himmels-åre	En Himmeltåre-åre oprettes ved siden af din karakter.
 71068	De Elskendes Fjer	Når du er udstyret med fjeren, gendannes kærlighedspoints af et par dobbelt så hurtigt.
-71069	Harmoniets øreringe	Øger chancen for et gennemborende slag med maximum 8% i 3 timer, for begge ægtefæller, hvis den er båret af en af dem. Effekten af smykket afhænger af procentdel af kærlighed point. Hvis et par har, for eksempel, 50% kærlighed point, er den maksimale effekt reduceres til det halve.
+71069	Harmoniets øreringe	Øger chancen for et gennemborende træf med maksimum 8% i 3 timer, for begge ægtefæller, hvis den er båret af en af dem. Effekten af smykket afhænger af procentdel af kærlighed point. Hvis et par har, for eksempel, 50% kærlighed point, er den maksimale effekt reduceres til det halve.
 71070	Kærlighedens armbånd	Øger indsamling af erfaringspoint under kamp med maximum 20% i 3 timer, for begge ægtefæller, hvis den er båret af en af dem. Effekten af smykket afhænger af procentdel af kærlighed point. Hvis et par har, for eksempel, 50% kærlighed point, er den maksimale effekt reduceres til det halve.
 71071	Kærlighedens øreringe	Øger chancen for et kritisk slag med maximum 8% i 3 timer, for begge ægtefæller, hvis den er båret af en af dem. Effekten af smykket afhænger af procentdel af kærlighed point. Hvis et par har, for eksempel, 50% kærlighed point, er den maksimale effekt reduceres til det halve.
 71072	Harmoni-armbånd	Reducerer angreb af fjendtlige monstre med maximum 15% for 3 timer, for begge ægtefæller hvis den er båret af en af dem. Effekten af smykket afhænger af procentdel af kærligheds point. Hvis et par har, for eksempel, 50% kærligheds point, er den maksimale effekt reduceres til det halve.
@@ -2144,7 +2144,7 @@
 71081	Metinsten (normal)	En mellemstor Metinsten styrter ned ved siden af dig.
 71082	Metinsten (stor)	En stor Metinsten styrter ned ved siden af dig.
 71083	Sten-håndbog	Fjerner alle ødelagte sten på en genstand. Derved får du en yderlig mulighed for at forbedre våben eller rustning.
-71084	Fortrylle genstand	Fjerner bonusser på en genstand og tilføjer nye.
+71084	Fortrylle genstand	Fjerner bonusserne fra en af dine genstande og tilføjer en ny en. Gælder kun for bonusserne 1-5.
 71085	Forstærk genstand	Hvis du er heldig vil den tilføje en ny bonus til en af dine genstande. (op til maks 4 bonusser)
 71088	Missionsbog (nem)	En brun læder- indbundet bog, som indeholder en quest, som selv nybegyndere kan løse.
 71089	Missionsbog (normal)	En brun læder-indbundet bog, som kun kan løses af dem der har noget kamp erfaring.
@@ -2153,121 +2153,121 @@
 71092	Forvandlingsbog	Succesfulde studier af denne bog øger dine forvandlings færdigheder. Den forsvinder efter at du har læst den.
 71093	Forvandlingskugle	Ved hjælp af denne kugle kan du forvandle dig til et monster.
 71094	Koncentreret læsning	Øger chancen for at forbedre din færdighed, når du læser den næste bog(eller Sjælesten) 2.5 gang.
-71095	Passage Dokument	Hvis du viser dette passage dokument til vagten, vil du være i stand til at komme ind til en yderligere egn af ederkoppe-grotten, samt den røde drages fort.
+71095	Passage Dokument	Hvis du giver denne billet til den ansvarlige vagt, vil du have tilladelse til at komme ind til en yderligere egn af udvalgte fangehuller.
 71096	Tavle for at passere	Med denne tavle kan du passere gennem en port.
 71099	Efterfølgerens ring	Ordenslederen kan derved vælge efterfølgeren og give ledelsen over til personen der modtager ringen.
 71100	Uddannelses certifikat	Glem din lære og start på ny. Du skal være minimum level 31 for at kunne gøre det.
-71101	Hastigheds eliksir	Denne eliksir nedsætter cooldown tiden i 30 minutter med 20 procent.
-71102		
+71101	Hastigheds eliksir	Denne eliksir reducerer nedkølingstiden på dine færdigheder med 20%.
+71102		Forøger din tryllehastighed med 30%.
 71103	Omfordeling (VIT)	Sætter din vitalitet tilbage til 1 og tillader dig at redistribuere dine point.
 71104	Omfordeling (INT)	Din intelligens sættes tilbage på 1, hvorved du kan fordele dine points på ny.
 71105	Omfordeling (STR)	Din styrke sættes tilbage på 1, hvorved du kan fordele dine points på ny.
 71106	Omfordeling (DEX)	Nulstiller din smidighed tilbage til 1 og tillader dig at omfordele dine point.
-71107	Livets frugt	Øger din rang med 2000 points(nedkølings-tid: 8 timer).
+71107	Livets frugt	Øger din rang med 2000 points(klargørings-tid: 8 timer).
 71108	Granatæble Juice	En eliksir der øjeblikkeligt regenererer dine HP med 800 point. Denne genstand er omsættelig.
 71109	Korrektions dokument	Dette dokument kan fjerne den senest tilføjede åndesten fra en genstand.
 71110	Heste sukker	Dette stykke sukker gør det muligt at navgive din hest. Derudover øger det dens forsvar med 20.
 71113	Forståelsesglas	Tillader dig at vise en anden spiller genstande fra dit inventar. Glasset ødelægges i processen.
-71114	Vildsvin segl (gul)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
+71114	Vildsvin segl (gul)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til din destination efter dit ønske. Den øger dens rytters forsvarsværdi med 75.
 711151	Vildsvin segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711152	Vildsvin segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711153	Vildsvin segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711154	Vildsvin segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
-71115	Vildsvin segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
-71116	Ulv segl (gul)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
+71115	Vildsvin segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til din destination efter dit ønske. Den øger dens rytters forsvarsværdi med 100.
+71116	Ulv segl (gul)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til din destination efter dit ønske. Den øger dens rytters forsvarsværdi med 100.
 711171	Ulv segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711172	Ulv segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711173	Ulv segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711174	Ulv segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
-71117	Ulv segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
-71118	Tiger segl (gul)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
+71117	Ulv segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til din destination efter dit ønske. Den øger dens rytters forsvarsværdi med 150.
+71118	Tiger segl (gul)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til din destination efter dit ønske. Den øger dens rytters forsvarsværdi med 125.
 711191	Tiger segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711192	Tiger segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711193	Tiger segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711194	Tiger segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
-71119	Tiger segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
-71120	Løve segl (gul)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
+71119	Tiger segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til din destination efter dit ønske. Den øger dens rytters forsvarsværdi med 200.
+71120	Løve segl (gul)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til din destination efter dit ønske. Den øger dens rytters angrebsværdi med 200.
 711211	Løve segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711212	Løve segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711213	Løve segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
 711214	Løve segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
-71121	Løve segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til et sted efter dit ønske.
-71122		
+71121	Løve segl (blå)	Dette segls magi påkalder en mægtig dyre-ånd der hurtigt vil bære dig til din destination efter dit ønske. Den øger dens rytters angrebsværdi med 300.
+71122		Kan bruges til at komme ind i Dragens Tempel.
 71123	Drageskæl	Drageskæl er kendt som en af de stærkeste materialer.
-71124	Hvid løve	Dyr med hvid pels er meget sjældne og mange kulturer tilbeder dem, da de mener, at de har bemærkelsesværdige kræfter.
-71125	Krigs-Vildsvin-segl	At tæmme onde dyreånder kræver store magiske kræfter. Men resultatet er overbevisende.
-71126	Kamp Ulv-Segl	At tæmme onde dyreånder kræver store magiske kræfter. Men resultatet er overbevisende.
-71127	Storm Tiger-Segl	At tæmme onde dyreånder kræver store magiske kræfter. Men resultatet er overbevisende.
-71128	Kamp Løve-Segl	At tæmme onde dyreånder kræver store magiske kræfter. Men resultatet er overbevisende.
+71124	Hvid løve	Dyr med hvid pels er meget sjældne og mange kulturer tilbeder dem, da de tror på at de har bemærkelsesværdige kræfter. Den øger erfaring med 30%.
+71125	Krigs-Vildsvin-segl	Tæmning af onde dyr ånder kræver noget dygtigt brug af magi, men resultaterne kan være meget imponerende. Den giver sin rytter +20% styrke imod monstre.
+71126	Kamp Ulv-Segl	Tæmning af onde dyr ånder kræver noget dygtigt brug af magi, men resultaterne kan være meget imponerende. Den øger din chance for kritiske slag med 10%.
+71127	Storm Tiger-Segl	Tæmning af onde dyr ånder kræver noget dygtigt brug af magi, men resultaterne kan være meget imponerende. Den øger din chance for kritiske slag med 10%.
+71128	Kamp Løve-Segl	Tæmning af onde dyr ånder kræver noget dygtigt brug af magi, men resultaterne kan være meget imponerende. Den reducerer den skade du modtager når du forsvarer med 10%.
 71129	Drageklo	Synet af denne skræmmende klo bringer minder frem...
-71130	Passage Dokument	Hvis du viser dette passage dokument til vagten, vil du være i stand til at komme ind til en yderligere egn af ederkoppe-grotten, samt den røde drages fort. Denne genstand er omsættelig.
-71131	Heste segl	Segl til en adelig sort hest.
-71132	Heste segl	Segl til en adelig sort hest.
-71133	Heste segl	Segl til en adelig sort hest.
-71134	Heste segl	Segl til en adelig sort hest.
-71135	Halvmåne Ring	En ring med en kunstnerisk udført indgravering der forestiller en halvmåne.
-71136	Lolly den Mægtige	En Slikkepind lavet af hemmelige ingredienser, som giver erfaring og styrke til kamp.
-71137	Royalt Tiger Segl (blå)	Magien i seglet tilkalder din ganger, den majestætiske Royale Tiger (blå).
-71138	Royalt Tiger Segl (rød)	Magien i seglet tilkalder din ganger, den majestætiske Royale Tiger (rød).
-71139	Royalt Tiger Segl (guld)	Magien i seglet tilkalder din ganger, den majestætiske Royale Tiger (guld).
-71140	Royalt Tiger Segl (grøn)	Magien i seglet tilkalder din ganger, den majestætiske Royale Tiger (grøn).
-71141	Royalt Tiger Segl (grå)	Magien i seglet tilkalder din ganger, den majestætiske Royale Tiger (grå).
-71142	Royal Tiger Segl (hvid)	Magien i seglet tilkalder din ganger, den majestætiske Royale Tiger (hvid).
+71130	Passage Dokument	Hvis du giver denne billet til den ansvarlige vagt, vil du have tilladelse til at komme ind til en yderligere egn af udvalgte fangehuller. Denne genstand er handelbar.
+71131	Heste segl	Segl til en Adelig Sort Hest. Den øger din bevægelseshastighed med 60.
+71132	Heste segl	Segl til en Adelig Sort Hest. Den øger din bevægelseshastighed med 60.
+71133	Heste segl	Segl til en Adelig Sort Hest. Den øger din bevægelseshastighed med 60.
+71134	Heste segl	Segl til en Adelig Sort Hest. Den øger din bevægelseshastighed med 60.
+71135	Halvmåne Ring	Den giver dig: | +50% erfaringspoint | +20% angrebshastighed | +20% tryllehastighed | +30% fysisk skade | +10% maksimum HP | +10% maksimum MP | +5% til alle dragt bonusserne
+71136	Lolly den Mægtige	Slikkepinden som er lavet af hemmelige ingredienser giver dig | +50% erfaringspoint | +30% fysisk skade | +20 angrebshastighed | +20 tryllehastighed | +10% maksimum HP | +10% maksimum MP
+71137	Royalt Tiger Segl (blå)	Dette segls magi påkalder din ganger, den majestætiske Royal Tiger (blå). Den øger erfaring med 30%.
+71138	Royalt Tiger Segl (rød)	Dette segls magi påkalder din ganger, den majestætiske Royal Tiger (rød). Den øger erfaring med 30%.
+71139	Royalt Tiger Segl (guld)	Dette segls magi påkalder din ganger, den majestætiske Royal Tiger (guld). Den øger erfaring med 30%.
+71140	Royalt Tiger Segl (grøn)	Dette segls magi påkalder din ganger, den majestætiske Royal Tiger (grøn). Den øger erfaring med 30%.
+71141	Royalt Tiger Segl (grå)	Dette segls magi påkalder din ganger, den majestætiske Royal Tiger (grå). Den øger erfaring med 30%.
+71142	Royal Tiger Segl (hvid)	Dette segls magi påkalder din ganger, den majestætiske Royal Tiger (hvid). Den øger erfaring med 30%.
 71143	Ring af Glæde	En ring med en værdifuld udsmykning lavet af jade og himmelske sten, som har følgende bonusser: +50% Erfarings point +20% Angrebshastighed +20% Tryllehastighed +30% Stærk mod monstre +10% Livspoint (HP) +10% Manapoint (MP)
 71144	Julekiste	En kærlig pakket julegave, der indeholder en overraskelse.
-71145	Evig Kærligheds-amulet	En hjerteformet amulet i sølv, dekoreret med magiske ædelsten.
+71145	Evig Kærligheds-amulet	En hjerteformet amulet i sølv, dekoreret med magiske ædelsten. Den giver dig | +30% EXP | +10 angrebshastighed | +10 tryllehastighed | +5% HP og MP | +10% styrke imod monstre
 71146	Amors Kiste (pink)	Hjerteformet kiste med 5 overraskelser indeni. Kan åbnes hvert 30. minut.
 71147	Amors Kiste (blå)	Hjerteformet kiste med 5 overraskelser indeni. Kan åbnes hvert 30. minut.
-71148	Viljestyrkens Ring	Giver dig +30% EXP, +20% forsvarschance mod Krigere, +20% forsvarschance mod Ninja, +20% forsvarschance mod Lycans, +30% styrke mod monstre, +10% maksimum HP og +10% maksimum MP for 7 dage.
-71149	Ring af Dødlig Styrke	Giver dig +30% EXP, +20% forsvarschance mod Sura, +20% forsvarschance mod Shamaner, +20% forsvarschance mod Lycans, +30% styrke mod monstre, +10% maksimum HP og +10% maksimum MP for 7 dage.
+71148	Viljestyrkens Ring	Giver dig +30% EXP, +20% forsvars chance imod Krigere, +20% forsvars chance imod Ninjaer, +20% forsvars chance imod Lycaner, +30% styrke imod monstre, +10% maksimum HP og +10% maksimum MP i en vis varighed.
+71149	Ring af Dødlig Styrke	Giver dig +30% EXP, +20% forsvarschance imod Suraer, +20% forsvarschance imod Shamaner, +20% forsvarschance imod Lycaner, +30% styrke imod monstre, +10% maksimum HP og +10% maksimum MP i en tidsperiode.
 71150	Magisk æg	Den kunstfærdige dekoreret ovale kiste indeholder mere end blot en påske overraskelse, den afslører sine skatte lidt efter lidt.
 71151	Grøn magi	Fjerner bonussen fra en af dine genstande og tilføjer en ny. Kan kun bruges på våben og pansring op til level 40. Genstand fra level kisten, ikke omsættelig.
 71152	Grøn styrke	Med lidt held, kan denne give dig en ny bonus til en af dine genstande (max. 4 bonusser). Kan kun bruges på våben og pansring op til level 40. Genstand fra level kisten, ikke omsættelig.
 71153	Eliksir af visdom	Denne eliksir giver dig 100% mere erfaring i en spil time. Ikke omsættelig.
 71154	Eliksir af himmelfart/3t	Denne eliksir giver dig mulighed for at samle 80% mere erfaring i tre spil timer. Kan ikke handles.
 71155	Eliksir af visdom (3t)	Denne eliksir giver dig mulighed for at få 100% mere erfaring i tre timers spil tid. Kan ikke handles.
-71156	Eliksir af ånd (3t)	Denne eliksir giver dig mulighed for at samle 150% mere erfaring i tre spil timer. Kan ikke handles.
+71156	Eliksir af ånd (3t)	Øger erfaring med 150%.
 71157		
-71158	Helte medalje	Giver +50% EXP, +30% skade, +20% angrebs hastighed, +20% casting hastighed, +10% HP og +10% SP.
+71158	Helte medalje	Giver +50% EXP, +30 fysisk skade, +20% angrebshastighed, +20% tryllehastighed, +10% HP og +10% MP.
 71159	Milon`s Kiste	En kiste for sande helte. Indeholder en tilfældig genstand som løn for din triumf.
 71160	Athena`s Kiste	En kiste for sande heltinder. Indeholder en tilfældig genstand som løn for din triumf.
-71161	Equus Purpur	Segl til en af de smukke og yderst sjældne lilla hest.
-71164	Komet segl	Du kan bruge dette segl at tilkalde dit rensdyr, Komet.
-71166	Ammeret panda segl	Dette segl tillader dig at tilkalde din ammeret panda.
-71171	Enhjørning segl	Dette segl tilkalder din enhjørning.
-71172	Mareridts segl	Dette selg tilkalder dit mareridt.
+71161	Equus Purpur	Segl til en af de smukke og yderst sjældne lilla heste. Den øger din bevægelseshastighed med 60.
+71164	Komet segl	Du kan bruge dette segl til at tilkalde dit rensdyr Komet. Den øger din bevægelseshastighed med 60.
+71166	Ammeret panda segl	Du kan bruge dette segl til at tilkalde din Pansrede Panda. Den øger din bevægelseshastighed med 60.
+71171	Enhjørning segl	Du kan bruge dette segl til at tilkalde din Enhjørning. Den øger din bevægelseshastighed med 60.
+71172	Mareridts segl	Du kan bruge dette segl til at tilkalde dit Mareridt. Den øger din bevægelseshastighed med 60.
 71173	Teleporterings dokument	Dette dokument bringer dig direkte til portene til den røde drages fort.
 71174	Passage dokument	Du må indstræde i den røde drages fort når du viser dit passage dokument til den ansvarlige vagt.
 71175	Passage dokument	Du må indstræde i den røde drages fort når du viser dit passage dokument til den ansvarlige vagt.
-71176	Sort panter	Dette segl tilkalder den mystiske sorte panter.
-71177	Leopard segl	Dette segl tilkalder din tapre leopard.
+71176	Sort panter	Dette segl tilkalder den mystiske Sorte Panter. Den øger din bevægelseshastighed med 30.
+71177	Leopard segl	Dette segl tilkalder din tapre Leopard. Den øger din bevægelseshastighed med 30.
 71178	Måne leksikon (L)	Pakken indeholder 10 tilfældig valgte færdigheds bøger til Lycans.
 71179	Måne leksikon (S)	Pakken indeholder 25 tilfældig valgte færdigheds bøger til Lycans.
 71180	Eliksir af himmelfart/3t	Denne eliksir giver dig mulighed for at samle 80% mere erfaring i tre spil timer. Kan ikke handles.
-71181	Eliksir af visdom (3t)	Denne eliksir giver dig mulighed for at få 100% mere erfaring i tre timers spil tid. Kan ikke handles.
-71182	Muffin-segl (Brun)	Du kan bruge dette segl til at tilkalde Muffin, den kølige kamp kylling.
-71183	Nugget-Segl (Brun)	Du kan bruge dette segl til at tilkalde Nugget, den kolossale kamp hanekylling.
-71184	Muffin-segl (Blå)	Du kan bruge dette segl til at tilkalde Muffin, den kølige kamp kylling.
-71185	Nugget-Segl (Blå)	Du kan bruge dette segl til at tilkalde Nugget, den kolossale kamp hanekylling.
-71186	Muffin-segl (Grøn)	Du kan bruge dette segl til at tilkalde Muffin, den kølige kamp kylling.
-71187	Nugget-Segl (Grøn)	Du kan bruge dette segl til at tilkalde Nugget, den kolossale kamp hanekylling.
-71188	Lolly den Magiske	En Slikkepind lavet af hemmelige ingredienser, som giver magisk energi og erfaring til kamp.
-72001	Erfaringsring	Øger erfarings modtagelsen med 50% i én time.
+71181	Eliksir af visdom (3t)	Denne eliksir giver dig mulighed for at samle 100% mere erfaring i et bestemt antal tid. Ikke handelbar.
+71182	Muffin-segl (Brun)	Du kan bruge dette segl til at tilkalde Muffin, den kølige kamp kylling. Den øger din bevægelseshastighed med 20.
+71183	Nugget-Segl (Brun)	Du kan bruge dette segl til at tilkalde Nugget, den kolossale kamp hanekylling. Den øger din bevægelseshastighed med 20.
+71184	Muffin-segl (Blå)	Du kan bruge dette segl til at tilkalde Muffin, den kølige kamp kylling. Den øger din bevægelseshastighed med 20.
+71185	Nugget-Segl (Blå)	Du kan bruge dette segl til at tilkalde Nugget, den kolossale kamp hanekylling. Den øger din bevægelseshastighed med 20.
+71186	Muffin-segl (Grøn)	Du kan bruge dette segl til at tilkalde Muffin, den kølige kamp kylling. Den øger din bevægelseshastighed med 20.
+71187	Nugget-Segl (Grøn)	Du kan bruge dette segl til at tilkalde Nugget, den kolossale kamp hanekylling. Den øger din bevægelseshastighed med 20.
+71188	Lolly den Magiske	Slikkepinden som er lavet af hemmelige ingredienser giver dig | +50% erfaringspoint | +30% magisk skade | +20 angrebshastighed | +20 tryllehastighed | +10% maksimum HP | +10% maksimum MP
+72001	Erfaringsring	Øger indsamlingen af erfaring med 50% i 10 timer.
 72002	Erfaringsring	Øger erfarings modtagelsen med 50% i 30 minutter.
-72003	Erfaringsring	Øger erfarings modtagelsen med 50% i 3 timer.
-72004	Tyvens handsker	Fordobler sandsynligheden for at finde genstande de næste 10 timer.
-72005	Tyvens handsker	Fordobler sandsynligheden for at finde genstande de næste 30 minutter.
-72006	Tyvens handsker	Fordobler sandsynligheden for at finde genstande de næste 3 timer.
+72003	Erfaringsring	Øger indsamlingen af erfaring med 50% i 3 timer.
+72004	Tyvens handsker	Fordobl din chance for at plyndre genstande i 10 timer.
+72005	Tyvens handsker	Fordobl din chance for at plyndre genstande i 30 minutter.
+72006	Tyvens handsker	Fordobl din chance for at plyndre genstande i 3 timer.
 72007	Silkebundt	Du kan åbne en privat butik i 10 timer.
 72008	Silkebundt	Du kan åbne en privat butik i 30 minutter.
 72009	Silkebundt	Du kan åbne en privat butik i 3 timer.
 72010	Elskendes Fjer	Når fjeren er i brug stiger kærlighedspoint dobbelt så hurtigt i 15 minutter.
 72011	Elskendes Fjer	Når fjeren er i brug stiger kærlighedspoint dobbelt så hurtigt i 30 minutter.
 72012	Elskendes Fjer	Når fjeren er i brug stiger kærlighedspoint dobbelt så hurtigt i 3 timer.
-72013	Fiskeriets ABC	Fordobler sandsynligheden for at fange sjældne fisk i 15 minutter.
-72014	Fiskeriets ABC	Fordobler sandsynligheden for at fange sjældne fisk i 30 minutter.
-72015	Fiskeriets ABC	Fordobler sandsynligheden for at fange sjældne fisk i 3 timer.
-72016	Tredje hånd	En hånd der automatisk samler Yang op i 15 minutter.
+72013	Fiskeriets ABC	Kræves til at fange sjældne fisk og fordobler dine chancer for at fange dem i 15 minutter.
+72014	Fiskeriets ABC	Kræves til at fange sjældne fisk og fordobler dine chancer for at fange dem i 30 minutter.
+72015	Fiskeriets ABC	Kræves til at fange sjældne fisk og fordobler dine chancer for at fange dem i 3 timer.
+72016	Tredje hånd	En hånd der automatisk indsamler tabte Yang for en vis periode.
 72017	Tredje hånd	En hånd der automatisk samler Yang op i 30 minutter.
 72018	Tredje hånd	En hånd der automatisk samler Yang op i 3 timer.
 72019	Lagerkiste	Dit lager vil få yderligere 2 lagerrum i 15 minutter.
@@ -2276,15 +2276,15 @@
 72022	Lykkens medalje	Fordobler sandsynligheden for at finde Yang i 10 timer.
 72023	Lykkens medalje	Fordobler sandsynligheden for at finde Yang i 30 minutter.
 72024	Lykkens medalje	Fordobler sandsynligheden for at finde Yang i 3 timer.
-72025	Kritisk kamp	Øger changen for et kritisk hit i kamp med 20% i 10 minutter.
-72026	Kritisk kamp	Øger changen for et kritisk hit i kamp med 20% i 10 minutter.
-72027	Kritisk kamp	Øger changen for et kritisk hit i kamp med 20% i 10 minutter.
+72025	Kritisk kamp	Øger chancen for at udføre et gennemborende træf med 10%.
+72026	Kritisk kamp	Øger chancen for at udføre et gennemborende træf med 10%.
+72027	Kritisk kamp	Øger chancen for at udføre et gennemborende træf med 10%.
 72028	Følelsesmaske	Du kan give dine følelser frit løb i 7 dage.
 72029	Følelsesmaske	Du kan give dine følelser frit løb i 15 dage.
 72030	Følelsesmaske	Du kan give dine følelser frit løb i 30 dage.
-72031	Dragegudens angreb	Øger din kampskade med 12-15% i 30 minutter
-72032	Dragegudens angreb	Øger din kampskade med 12-15% i 30 minutter.
-72033	Dragegudens angreb	Øger din kampskade med 12-15% i 30 minutter
+72031	Dragegudens angreb	Øger din angrebsværdi med 15% i 30 minutter.
+72032	Dragegudens angreb	Øger din angrebsværdi med 15% i 30 minutter.
+72033	Dragegudens angreb	Øger din angrebsværdi med 15% i 30 minutter.
 72034	Dragegudens forsvar	Øger dit forsvar, således du får 12-15% mindre skade.
 72035	Dragegudens forsvar	Øger dit forsvar, således du får 12-15% mindre skade.
 72036	Dragegudens forsvar	Øger dit forsvar, således du får 12-15% mindre skade.
@@ -2297,38 +2297,38 @@
 72043	Lederens Bog	I den tid hvor gruppelederen er udrustet med denne bog får alle gruppemedlemmer tre timer 30% mere erfaring.
 72044	Lederens Bog	I den tid hvor gruppelederen er udrustet med denne bog får alle gruppemedlemmer tre timer 30% mere erfaring.
 72045	Lederens Bog	I den tid hvor gruppelederen er udrustet med denne bog får alle gruppemedlemmer tre timer 30% mere erfaring.
-72046	Vigtig Chance	Øger din chance for at få gennemborende slag med 20% i 10 minutter.
-72047	Vigtig Chance	Øger din chance for at få gennemborende slag med 20% i 10 minutter.
-72048	Vigtig Chance	Øger din chance for at få gennemborende slag med 20% i 10 minutter.
+72046	Vigtig Chance	Øger chancen for at udføre et kritisk slag med 10%.
+72047	Vigtig Chance	Øger chancen for at udføre et kritisk slag med 10%.
+72048	Vigtig Chance	Øger chancen for at udføre et kritisk slag med 10%.
 72301	Velsignelses dok.	Eliminere risikoen for at en genstand går i stykker når en forbedring fejler. I stedet for ødelæggelsen falder kvaliteten med 1.
-72302		
-72303		
-72304		
-72305		
-72306		
-72307		
+72302		I den tid hvor gruppelederen er udrustet med denne bog, får alle gruppemedlemmer i 3 timer 30% mere erfaring.
+72303		Øger indsamlingen af erfaring med 50% i en time.
+72304		Denne legendariske kugle tilføjer en yderligere attribut, hvis en genstand allerede har 4 attributter. Tilføjelsen kan også mislykkes!
+72305		Usynligheds spejl
+72306		En note fra smeden, der viser dig hvordan du opgraderer genstande. Øger chancen for at opgradere en genstand fra +4 til +5 til 100%.
+72307		En note fra smeden, der viser dig hvordan du opgraderer genstande. Øger chancen for at opgradere en genstand fra +5 til +6 til 100%.
 72308	Magisk kobbermalm	Når du kombinerer dette malm med et velsignelses dokument hos smeden, så får du et krigs dokument.
-72309		
-72310		
-72311		
-72312		
-72313		
-72314		
+72309		Denne bog indeholder sjælen af en gammel smed. Hvis den bruges, øger den sandsynligheds chancen for at forbedre en genstand.
+72310		Befrier dig af den onde ånds forbandelse - dvs. når du ikke lærer ting af bøgerne. Ved hjælp af dette dokument kan du samme dag læse endnu et færdigheds-dokument.
+72311		En velsignelse der øjeblikkeligt gendanner alle dine livspoint (HP) og manapoint (MP).
+72312		Øger din angrebsværdi med 20%.
+72313		Reducerer den skade du modtager under kampen med 20%.
+72314		Fjerner risikoen for at en genstand ødelægges, når en forbedring fejler. Hvis dette sker reduceres kvaliteten blot med 1 trin i stedet. Desuden vil sandsynligheden for forbedring forøges med 10%.
 72501	Erfaringsring (iCafe)	Øger sandsynligheden for medlemmer af iCafe med 20%.
 72502	Tyvens handsker (iCafe)	Sandsynligheden for at finde genstande er 1½-gange højere for medlemmer af iCafe.
 72701	Vindsko	Øger bevægelseshastigheden med 30.
 72703	Tigerknogleørering	Din angreb vil blive øget med 200 point for 2 timer (Tiden går kun når det bliver båret). Denne genstand er ikke omsættelige.
 72704	Drageknogleørering	Din forsvar vil blive øget med 200 point for 2 timer (Tiden går kun når det bliver båret). Denne genstand er ikke omsættelige.
-72705	Tigerknoglearmbånd	Skaden dine færdigheder påføre vil blive forhøjet med 15% i 2 timer  (Tiden går kun når det bliver båret). Denne genstand er ikke omsættelige.
-72706	Drageknoglearmbånd	Dine forsvar mod færdigheder vil blive forøget med 15% i 2 timer  (Tiden går kun når det bliver båret). Denne genstand er ikke omsættelige.
+72705	Tigerknoglearmbånd	Skaden som dine færdigheder påfører vil blive forøget med 15 point i 2 timer (tiden tæller kun ned imens at genstanden bliver båret). Genstanden er ikke handelbar.
+72706	Drageknoglearmbånd	Dit forsvar imod færdigheder vil blive forøget med 15 point i 2 timer (tiden tæller kun ned imens at genstanden bliver båret). Genstanden er ikke handelbar.
 72723	Sol Eliksir (L)	Fylder automatisk din HP. Indeholder 1.000.000 HP.
 72724	Sol Eliksir (M)	Fylder automatisk din HP. Indeholder 3.000.000 HP.
 72725	Sol Eliksir (S)	Fylder automatisk din HP. Indeholder 7.000.000 HP.
-72726	Sol Eliksir (E)	Fylder automatisk din Hp. op. Indeholder 10.000.000 HP. Denne kan du handle med.
+72726	Sol Eliksir (E)	Indeholder 10.000.000 HP. Genopfylder automatisk dit HP og har en yderligere positiv effekt på din maks. HP. Denne genstand er handelbar.
 72727	Måne Eliksir (L)	Fylder automatisk din MP. Indeholder 100.000 MP.
 72728	Måne Eliksir (M)	Fylder automatisk din MP. Indeholder 300.000 MP.
 72729	Måne Eliksir (S)	Fylder automatisk din MP. Indeholder 700.000 MP.
-72730	Måne Eliksir (E)	Fylder automatisk din MP. op. Indeholder 1.000.000 MP. Denne kan du handle med.
+72730	Måne Eliksir (E)	Indeholder 1.000.000 MP. Genopfylder automatisk din MP og har en yderligere positiv effekt på din maks. MP. Denne genstand er handelbar.
 73001	Trendy Frisure (Rød)	En smart frisure, der sørger for et specielt udseende.
 73002	Trendy Frisure (lys)	En smart frisure, der sørger for et specielt udseende.
 73003	Trendy Frisure (blå)	En smart frisure, der sørger for et specielt udseende.
@@ -2579,7 +2579,7 @@
 76000	Ferskenblomst vin	En bryg der øjeblikkeligt regenerer dine livspoint med 500 points. Ikke omsættelig.
 76001	Status-Nulstillings dok.	Brugen af denne genstand tillader dig at omstrukturere dine status point. Du kan bruge den til at styre udviklingen af dine karakterer i en ny retning. Ikke omsættelig.
 76002	Skrumpe-hovede	Denne dæmons Skrumpe-hoved åbner seglet til den 3. etage i Djævelens Katakomber. Ikke omsættelig.
-76003	Hastigheds eliksir	Denne eliksir nedsætter cooldown tiden i 30 minutter med 20 procent. Ikke omsættelig.
+76003	Hastigheds eliksir	Denne eliksir reducerer nedkølingstiden på dine færdigheder med 20%.
 76004	Måne eliksir (L)	Fylder automatisk din MP. Indeholder 10.000 MP. Ikke omsættelig.
 76005	Måne eliksir (M)	Fylder automatisk dine MP. Indeholder 300,000 MP. Ikke omsættelig.
 76006	Kompas til metin sten	Kompasset viser dis retning og afstand til den næste Metin sten. Jo kraftigere den lyser, desto tættere er du på målet. Den kan aktiveres 6 gange. Ikke omsættelig.
@@ -2593,10 +2593,10 @@
 76014	Fortryl genstand (b)	Fjerner bonussen fra en af dine genstande og tilføjer en ny en. Genstad fra level kisten, ikke omsættelig.
 76015	Velsignelseskugle	Legendarisk velsignet kugle. Når en genstand har fire attributter, vil den tilføje endnu en attribut. Ikke omsættelig.
 76016	Velsignelses dokument	Eliminere risikoen for at en genstand går i stykker når en forbedring fejler. I stedet for ødelæggelsen falder kvaliteten med 1. Ikke omsættelig.
-76017	Angrebs eliksir +10	Forøg din angrebs hastighed med 10% i 30 minutter. Ikke omsættelig.
-76018	Angrebs eliksir +15	Forøger din angrebs hastighed med 15% i 30 minutter. Ikke omsættelig.
-76019	Passage dokument	Hvis du viser dette passage dokument til vagten, vil du være i stand til at komme ind til en yderligere egn af ederkoppe-grotten, samt den røde drages fort. Ikke omsættelig.
-76020	Forskerens eliksir	Øger kvaliteten af de samlede forskningsobjekter og dermed også deres accepterings-sandsynlighed. Ikke omsættelig.
+76017	Angrebs eliksir +10	Forøger din angrebshastighed med 15%.
+76018	Angrebs eliksir +15	Forøger din angrebshastighed med 20%.
+76019	Passage dokument	Hvis du giver denne billet til den ansvarlige vagt, vil du have tilladelse til at komme ind til en yderligere egn af udvalgte fangehuller. Ikke handelbar.
+76020	Forskerens eliksir	Forbedrer kvaliteten af forsknings objekterne som du har indsamlet, og dermed øger den også sandsynligheden for at de vil blive accepteret. Gælder ikke for missioner i Yohara. Ikke handelbar.
 76021	Sol Eliksir (L)	Fylder automatisk din HP. Indeholder 100.000 HP. Ikke omsættelig.
 76022	Sol Eliksir (M)	Fylder automatisk din HP. Indeholder 3,000,000 HP. Ikke omsættelig.
 76023	Grøn magi	Fjerner bonussen fra en af dine genstande og tilføjer en ny. Kan kun bruges på våben og pansring op til level 40. Genstand fra level kisten, ikke omsættelig.

@@ -2,12 +2,12 @@
 100001	Idő Elixír (Közepes)	Újratölti a Sárkánykő időtartamát.
 100002	Idő Elixír (Nagy)	Újratölti a Sárkánykő időtartamát.
 100100	Sárkány-fogó	Hasznos eszköz, mely megnöveli a Sárkánykő-eltávolítás sikerességi esélyét.
-100200	Időfogó	Megállítja a Sárkánykő lejárati idejét.
+100200	Időfogó	Elszívja a Sárkánykő lejárati idejét.
 100300	Zöld sárkány-bab	A mágikus bab megnöveli Sárkányköved szintjét. A megerősítő eljárás sikertelen is lehet.
 100400	Kék sárkány-bab	A mágikus bab megnöveli az esélyét annak, hogy sikeresen fejleszd egy szinttel a Sárkánykövet.
 100500	Rózsaszín sárkány-bab	A Sárkánykő egy szinttel történő fejlesztésének sikerességi esélye 10%-kal magasabb.
-11901	Szmoking	Fekete férfi öltöny, amit esküvőn hordanak.
-11902	Szmoking	Fekete férfi öltöny, amit esküvőn hordanak.
+11901	Szmoking	Elegáns férfi öltöny, amit esküvőn hordanak.
+11902	Szmoking	Elegáns férfi öltöny, amit esküvőn hordanak.
 11903	Menyasszonyi ruha	Egy különleges ruha, amit a nők esküvőjükön hordanak.
 11904	Menyasszonyi ruha	Egy különleges ruha, amit a nők esküvőjükön hordanak.
 18000	Textil öv+0	
@@ -93,7 +93,7 @@
 18900	Tűzvörös kő	Megerősíti öved bónuszait.
 22000	Vissza a városba	Ez a tekercs lehetővé teszi számodra, hogy visszateleportáld magad a városba.
 22010	Visszaszállító tekercs	A tekercs visszaszállít arra a helyre, amelyet legutoljára megjelöltél.
-25040	Áldástekercs	Csökkenti a tárgy megsemmisülésének kockázatát, amennyiben a feljavítás nem sikerül. Ennek a mentésnek az ára, hogy a minőség 1 ponttal romlik.
+25040	Áldástekercs	Megszünteti a tárgy megsemmisülésének kockázatát, amennyiben sikertelen a fejlesztés. Ennek a mentésnek az ára, hogy a minőség 1 ponttal romlik.
 25041	Mágikus kő	Egy legendás fém darabja megnövelheti egy tárgyfejlesztés sikerének esélyét. A fejlesztett tárgy nem semmisül meg, és vissza sem törik.
 25100	Szellemkő Tekercs	A tekercs lehetővé teszi, hogy eltávolítsd a szellemkövet egy fegyverből vagy felszerelésből. Nyoma marad az eltávolításnak.
 27051	Vörös ital (kicsi)	Feltölt legfeljebb 300 életerő pontot. Nem adható át.
@@ -105,7 +105,7 @@
 27620	Horgászkönyv	Könyv, amivel 3 napig dupla mennyiségű ritka halat fogsz.
 27799	Halszálka	Egy hal szálkái.
 27800	Kenőcs	Könnyű, olcsó csali.
-27801	Giliszta	kedvelt csali, amire jól kapnak a halak.
+27801	Giliszta	Kedvelt csali, amire jól kapnak a halak.
 27802	Kis hal	Csali hal, amivel nagyobb halakat lehet fogni.
 27803	Süllő	Közönséges hal, ami általában tavakban él.
 27804	Mandarinhal	Nagyon ízletes hal.
@@ -129,26 +129,26 @@
 27822	Tükörponty	Őshonos ponty faj.
 27823	Aranyhal	Ritka, aranyosan csillogó hal.
 27833	Döglött süllő	Ez a hal kivállóan alkalmas arra, hogy nyílt tűz felett grillezzék meg.
-27834	Döglött mandarinhal	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27835	Döglött fogas	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27836	Döglött ponty	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27837	Döglött lazac	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27838	Döglött amur	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27839	Döglött pisztráng	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27840	Döglött angolna	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27841	Döglött sziv. pisztráng	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27842	Döglött sebes pisztráng	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27843	Döglött vörössz. keszeg	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27844	Döglött sügér	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27845	Döglött tenchi	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27846	Döglött harcsa	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27847	Döglött csíkhal	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27848	Döglött lótuszhal	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27849	Döglött ayu	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27850	Döglött viaszlazac	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27851	Döglött shiri	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27852	Döglött tükörponty	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
-27853	Döglött aranyhal	Ez a hal kivállóan alkalmas a nyílt tűz feletti grillezzésre.
+27834	Döglött mandarinhal	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27835	Döglött fogas	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27836	Döglött ponty	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27837	Döglött lazac	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27838	Döglött amur	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27839	Döglött pisztráng	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27840	Döglött angolna	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27841	Döglött sziv. pisztráng	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27842	Döglött sebes pisztráng	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27843	Döglött vörössz. keszeg	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27844	Döglött sügér	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27845	Döglött tenchi	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27846	Döglött harcsa	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27847	Döglött csíkhal	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27848	Döglött lótuszhal	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27849	Döglött ayu	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27850	Döglött viaszlazac	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27851	Döglött shiri	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27852	Döglött tükörponty	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
+27853	Döglött aranyhal	Ez a hal kiválóan alkalmas a nyílt tűz feletti grillezésre.
 27863	Grillezett süllő	Visszaállít néhány TP-t.
 27864	Grillezett mandarinhal	Visszaállít néhány MP-t.
 27865	Grillezett fogas	Visszaállít néhány TP-t.
@@ -160,16 +160,16 @@
 27871	Grillezett sziv. pisztr.	Sok MP-t helyreállít.
 27872	Grillezett sebes pisztr.	Visszaállít pár MP-t.
 27873	Grill. vörössz. keszeg	Megnöveli az ügyességedet 10 ponttal 10 percig.
-27874	Grillezett sügér	Eltávolítja a rossz hatásokat.
+27874	Grillezett sügér	Eltávolítja a mérgezést.
 27875	Grillezett tenchi	Azonnal visszaállít néhány TP-t.
 27876	Grillezett harcsa	Pillanatra visszaállít néhány MP-t.
 27877	Grillezett csíkhal	Láthatatlanná változtat 5 percig.
 27878	Grillezett lótuszhal	Azonnal visszaállít néhány TP-t.
-27879	Grillezett ayu	Ez a hal onnan kapta a kellemes füstös ízét hogy tűzön készítik.
-27880	Grillezett viaszlazac	A tűz feletti grillezéstől a hús kellemes füstölt ízt kap.
-27881	Grillezett shiri	Ez a hal onnan kapta a kellemes füstös ízét hogy tűzön készítik.
-27882	Grillezett tükörponty	A tűz feletti grillezéstől a hal kellemes füstölt ízt kap.
-27883	Grillezett aranyhal	A tűz feletti grillezéstől a hús kellemes füstölt ízt kap.
+27879	Grillezett ayu	Megnöveli a tapasztalat szerzést 10%-kal.
+27880	Grillezett viaszlazac	Megnöveli a szörnyek elleni erőt 5%-kal.
+27881	Grillezett shiri	Megnöveli a mágikus/közelharci támadást 3%-kal.
+27882	Grillezett tükörponty	Azonnal helyreállít 1.000 TP-t.
+27883	Grillezett aranyhal	Megnöveli a tapasztalat szerzést 50%-kal.
 27987	Kagyló	Szép héjjú kagyló. Értékes gyöngyöt tartalmazhat.
 27988	Kincs térkép	Elnyűtt térkép, amely egy ősi kincs helyét mutatja.
 27989	Metinkő iránytű	Az iránytű megmutatja a következő Metin kő irányát és távolságát. Minél fényesebben fénylik, annál közelebb vagy. 6-szor aktiválható.
@@ -188,8 +188,8 @@
 29003	Sárga fésűkagyló	A gyöngrétege ennek a kagylónak számtalan sárga színben fénylik.
 29004	Piros fésűkagyló	A gyöngyrétege ennek a kagylónak számtalan piros egymásbaolvadó színben fénylik.
 29005	Zöld fésűkagyló	A gyöngyrétege ennek a kagylónak számtalan egymásbaolvadó zöld színben tündököl.
-29006	Sárga borkő	Sötétsárga borkő
-29007	Sötétkék borkő	Sötétkék borkő
+29006	Sárga borkő	Sötétsárga borkő.
+29007	Sötétkék borkő	Sötétkék borkő.
 29008	Kék szenteltvíz	Napfényben ennek a szenteltvíznek a felszíne enyhe kék színben fénylik.
 29009	Sárga szenteltvíz	Napfényben ennek a szenteltvíznek a felszíne enyhe sárga színben fénylik.
 29010	Vörös szenteltvíz	Napfényben ennek a szenteltvíznek a felszíne enyhe piros színben fénylik.
@@ -375,10 +375,10 @@
 30270	Sárkánykő-szilánk	Szilánk egy ritka sárkánykőből
 30311	Lélekkristály-kulcs	A finoman kidolgozott kulcs egy kék Lélekkristállyal nyitja meg a 2. emelet ajtaját az Ördög Katakombájában.
 30312	Grimaszoló totem	Ez a fából készült jel a belevésett grimasszal szolgál kulcsként az Ördög Katakombájának 6. szintjéhez.
-30315		
-30316		
-30317		
-30318		
+30315		A böjt megtörésekor használt kenyér.
+30316		Tányér, csodálatos díszítéssel.
+30317		Ételadomány a böjt megtörésére.
+30318		Egy rendkívüli gyümölcs. Gyűjts belőle eleget és jutalmat kapsz!
 30319	Zsugorított fej	Ez a Zsugorított démonfej nyitja az Ördög Katakombájában a 3. emeletre vezető pecsétet. Ez a tárgy átadható.
 30320	Zsugorított fej	Ez a Zsugorított démonfej nyitja az Ördög Katakombájában a 3. emeletre vezető pecsétet.
 30321	Halloween Tök	A tök újratölti a TP-d vagy az MP-d. Ha megérinted egy Varázspálcával, Halloween Ládává alakul át.
@@ -392,7 +392,7 @@
 30330	Maat kő	Az Igazság Istennőjeként Maat igyekszik rendet teremteni a káoszban.
 30331	Fagy-kulcs	A kulcs jéghideg és hozzáférést biztosít Nemere őrtornyának harmadik szintjéhez. Csak Sámánok használhatják.
 30332	Északi sarkcsillag	Tiszta jégből készült pecsétkő. Hozzáférést biztosít Nemere őrtornyának hatodik szintjéhez.
-30333	Jégvirág-kulcs	A jégből készült kulcs belépést engedélyez Nemere őrtornyának kilencedik szintjére. Csak Nindzsák vagy Sámánok használhatják.
+30333	Jégvirág-kulcs	A jégből készült kulcs belépést biztosít Nemere őrtornyának kilencedik szintjére.
 30500	Rubin metszetű kés	Eszköz a fegyvered tökéletesítéséhez
 30501	Arany kapocs	Elem a fegyvered tökéletesítéséhez
 30502	Rubin díszítés	Elem a fegyvered tökéletesítéséhez
@@ -589,7 +589,7 @@
 38102	Erő Snack (30 napos)	Megnöveli Fejleszthető hátasod élettartamát 30 nappal.
 38200	Rufusz pecsét	Ezt a pecsétet farkaskölyköd, Rufusz megidézésére használhatod.
 38201	Rufusz pecsét	Ezt a pecsétet farkaskölyköd, Rufusz megidézésére használhatod.
-39001	Mágikus kő	Ez a kő biztosítja a tárgyfejlesztés legnagyobb sikerének esélyét. Ezen felül a tárgy nem semmisül meg és vissza sem törik. Ez a tárgy átadható.
+39001	Mágikus kő	Ez a kő kiváló esélyeket nyújt a tárgyak fejlesztésekor. Ezen felül a tárgy nem semmisülhet meg és a szintje sem csökkenhet. Ez a tárgy átadható.
 39002	Tapasztalat gyűrű	60 percre megnöveli az összegyűjthető tapasztalat mennyiségét 50%-kal. Ez a tárgy átadható.
 39003	Barackvirág bor	Ital, amely azonnal regenerálja TP-d 500 ponttal. Ez a tárgy átadható.
 39004	Megáldó márvány	Ez a legendás márvány ad egy ötödik tulajdonságot a tárgyakhoz, amiknek már 4 tulajdonsága van. A hozzáadás viszont sikertelen is lehet. Ez a tárgy átadható.
@@ -606,12 +606,12 @@
 39015	Kovács köve	A kovácsnál készíthetsz Kovács kézikönyvet ennek a kőnek a segítségével és az áldástekerccsel. Ez a tárgy átadható.
 39016	Mágikus vasérc	Ezzel az érccel és egy áldástekerccsel a kovácsnál elkészíthető egy sárkánytekercs. Ez a tárgy átadható.
 39017	Sárkányisten élet	Megnöveli a maximális TP-det 30 percre 20%-kal. Ez a tárgy átadható.
-39018	Sárkányisten támadás	12-15%-kal növeli 30 percen át az általad csatában okozott veszteségeket. Ez a tárgy átadható.
+39018	Sárkányisten támadás	Megnöveli támadó értéked 20%-kal 30 percen át. Ez a tárgy átadható.
 39019	Sárkányisten intellig.	Megnöveli a maximális MP-t 30 percen keresztül 20%-kal. Ez a tárgy átadható.
-39020	Sárkányisten védekezés	30 percen át 12-15%-kal csökkenti a csatában elszenvedett veszteségeidet. Ez a tárgy átadható.
+39020	Sárkányisten védekezés	30 percen át 20%-kal csökkenti a csatában elszenvedett veszteségeidet. Ez a tárgy átadható.
 39021	Sárkányisten támogatás	A karaktered életereje, ereje, intelligenciája és ügyessége ideiglenesen az ötszörösére emelkedik. Ez a tárgy átadható.
 39022	Sárkánytekercs	Megszünteti annak a rizikóját, hogy egy tárgy feljavítás közben tönkre megy. Csak a minősége romlik egy szinttel. Közben a sikeres feljavítás valószínűségét is megnöveli 10%-kal. Ez a tárgy átadható.
-39023	Kutatói Elixír	Ez az elixír növeli azon kutatási tárgyak minőségét amiket találsz, ezzel növelve az esélyt arra, hogy elfogadottak lesznek. Ez a tárgy átadható.
+39023	Kutatói Elixír	Ez az elixír növeli az összegyűjtött kutatási tárgyak minőségét, ezzel növelve az esélyt arra, hogy elfogadottak lesznek. Ez a tárgy átadható. Nem használható a küldetésekhez Yoharán.
 39024	Kritikus Csapás	Megnöveli esélyedet 10 percen át 20%-kal arra, hogy a csatában kritikus találatot érj el. Ez a tárgy átadható.
 39025	Átütő Csapás	Megnöveli esélyed 10 percen át 20%-kal arra, hogy a csatában áthatoló találatot érj el. Ez a tárgy átadható.
 39026	Sebesség ital	30 percen át megnöveli sebességed 60-nal. Ez a tárgy átadható.
@@ -621,7 +621,7 @@
 39030	Koncentrált olvasás	2.5-szeresével növeli a készséged fejlesztésének esélyét, amikor a következő könyvet (vagy Lélekkövet) olvasod. Ez a tárgy átadható.
 39031	Sietség itala	Ez az ital lerövidíti a képességeid újratöltődési idejét 20 százalékkal 30 percen át. Ez a tárgy átadható.
 39032	Élet Gyümölcse	Növeli a rang pontot 2000-rel (újratöltési idő: 8 óra). Ez a tárgy átadható.
-39033	Javítás tekercse	Ezzel a tekerccsel el tudod távolítani az utoljára sikeresen hozzáadott Szellem Követ a tárgyból. Ez a tárgy átadható.
+39033	Javítás tekercse	Ezzel a tekerccsel el tudod távolítani az utoljára sikeresen hozzáadott Szellemkövet a tárgyból. Ez a tárgy átadható.
 39034	Ló Cukra	Ez a cukor lehetővé teszi, hogy nevet adj a lovadnak, továbbá növeli a védelmi szintjét 20-szal. Ez a tárgy átadható.
 39035	Betekintés üvege	Lehetővé teszi, hogy más játékosnak mutass tárgyakat a tárolódból. Az üveg eltörik a használat során. Ez a tárgy átadható.
 39036	Szél cipő	30-cal növeli mozgási sebességed addig, amíg fel van szerelve, 30 játékórán át. Ez a tárgy átadható.
@@ -660,7 +660,7 @@
 41026	TUR box öltözék (N)	Harcra kész öltözék férfi ökölvívók számára török nemzeti színekben.
 41027	BRA box öltözék (F)	Harcra kész öltözék férfi ökölvívók számára brazil nemzeti színekben.
 41028	BRA box öltözék (N)	Harcra kész öltözék női ökölvívók számára brazil nemzeti színekben.
-41029	Siv. harcos (f, bónusz)	Harci ruha férfiaknak, hogy túléljék az embertelen sivatagi körülményeket. Átadható.
+41029	Siv. harcos (f, bónusz)	Harci ruha férfiaknak, ideális a barátságtalan sivatagi körülmények túlélésére. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 41030	Siv. harcos (N, bónusz)	Harci ruha nőknek, hogy túléljék az embertelen sivatagi körülményeket. Átadható.
 41031	Olimpiai vívóruha (F)	Sportos védőruha férfi vívóknak. Átadható.
 41032	Olimpiai vívóruha (N)	Sportos védőruha női vívók számára. Átadható.
@@ -852,14 +852,14 @@
 41224	Yongan FC+ (N)	Piros-fehér futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
 41225	FC Bakra+ (F)	Sötétkék-piros futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
 41226	FC Bakra+ (N)	Sötétkék-piros futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
-41227	FC Bokjung+ (F)	Sárga-kék futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
-41228	FC Bokjung+ (N)	Sárga-kék futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
-41229	FC Bavaria Hwang+ (F)	Piros-arany futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
-41230	FC Bavaria Hwang+ (N)	Piros-arany futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
+41227	FC Bokjung+ (F)	Ukrán nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41228	FC Bokjung+ (N)	Ukrán nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41229	FC Bavaria Hwang+ (F)	Walesi nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41230	FC Bavaria Hwang+ (N)	Walesi nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41231	Borussia Chunjo+ (F)	Fekete-sárga futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
 41232	Borussia Chunjo+ (N)	Fekete-sárga futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
-41233	SC Doyyum+ (F)	Piros-fehér futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
-41234	SC Doyyum+ (N)	Piros-fehér futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
+41233	SC Doyyum+ (F)	Osztrák nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41234	SC Doyyum+ (N)	Osztrák nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41235	Hasun Dong FC+ (F)	Zöld-fehér futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
 41236	Hasun Dong FC+ (N)	Zöld-fehér futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
 41237	CFR Sárkánytűz 07+ (F)	Bordó futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
@@ -890,20 +890,20 @@
 41262	Sárkány-völgy SC+ (N)	Sötétkék-narancs futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
 41263	Mennydörgés-hegy FC+ (F)	Piros-fehér futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
 41264	Mennydörgés-hegy FC+ (N)	Piros-fehér futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
-41265	Pyungmoo Szent Hwang+ (F)	Sötétkék futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
-41266	Pyungmoo Szent Hwang+ (N)	Sötétkék futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
+41265	Pyungmoo Szent Hwang+ (F)	Skót nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41266	Pyungmoo Szent Hwang+ (N)	Skót nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41267	Real Sohan+ (F)	Fehér futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
 41268	Real Sohan+ (N)	Fehér futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
 41269	FC Jinno 04+ (F)	Királykék-fehér futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
 41270	FC Jinno 04+ (N)	Királykék-fehér futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
-41271	FC Sangsun Dong+ (F)	Fekete-narancs futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
-41272	FC Sangsun Dong+ (N)	Fekete-narancs futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
+41271	FC Sangsun Dong+ (F)	Észak-macedón nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41272	FC Sangsun Dong+ (N)	Észak-macedón nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41273	SL Jungsun Dong+ (F)	Piros-fehér futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
 41274	SL Jungsun Dong+ (N)	Piros-fehér futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
-41275	Sparta Jungrang+ (F)	Piros-fehér futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
-41276	Sparta Jungrang+ (N)	Piros-fehér futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
-41277	Tűzföld CF+ (F)	Fehér-fekete futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
-41278	Tűzföld CF+ (N)	Fehér-fekete futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
+41275	Sparta Jungrang+ (F)	Cseh nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41276	Sparta Jungrang+ (N)	Cseh nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41277	Tűzföld CF+ (F)	Finn nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41278	Tűzföld CF+ (N)	Finn nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41279	FC Szt. Seungryong+ (F)	Kék futballmez férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
 41280	FC Szt. Seungryong+ (N)	Kék futballmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
 41291	Nyúl jelmez (fekete)	Fekete plüssből készült nyúl jelmez férfiaknak.
@@ -914,8 +914,8 @@
 41296	Nyuszi jelmez (kék)	Kék plüssből készült nyuszi jelmez nők részére.
 41297	Nyuszi jelmez (zöld)	Zöld plüssből készült nyuszi jelmez nők részére.
 41298	Nyuszi jelmez (pink)	Pink plüssből készült nyuszi jelmez nők részére.
-41299	Nyúl jelmez+ (fekete)	Fekete plüssből készült nyúl jelmez férfiaknak. Legalább egy véletlenszerű bónuszt biztosít.
-41300	Nyúl jelmez+ (kék)	Kék plüssből készült nyúl jelmez férfiaknak. Legalább egy véletlenszerű bónuszt biztosít.
+41299	Nyúl jelmez+ (fekete)	Fekete plüssből készült nyúl jelmez férfiaknak. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
+41300	Nyúl jelmez+ (kék)	Kék plüssből készült nyúl jelmez férfiaknak. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 41301	Nyúl jelmez+ (zöld)	Zöld plüssből készült nyúl jelmez férfiaknak. Legalább egy véletlenszerű bónuszt biztosít.
 41302	Nyúl jelmez+ (pink)	Pink plüssből készült nyúl jelmez férfiaknak. Legalább egy véletlenszerű bónuszt biztosít.
 41303	Nyuszi jelmez+ (fekete)	Fekete plüssből készült nyuszijelmez nők részére. Legalább egy véletlenszerű bónuszt biztosít.
@@ -928,7 +928,7 @@
 41310	Kobra jelmez+ (n)	Csillogó fekete ruha kígyó szimbólummal. Legalább egy véletlenszerű bónuszt biztosít.
 41311	Sivatagi harcos (f, fek)	Fekete harci ruha férfiak részére.
 41312	Sivatagi harcos (n, fek)	Fekete harci ruha nők részére.
-41313	Siv. harcos+ (f, fekete)	Fekete harci ruha férfiak részére. Legalább egy véletlenszerű bónuszt biztosít.
+41313	Siv. harcos+ (f, fekete)	Fekete harci ruha férfiaknak. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 41314	Siv. harcos+ (N, bónusz)	Fekete harci ruha nők részére. Legalább egy véletlenszerű bónuszt biztosít.
 41315	Azrael páncélja (f)	A hírhedt démonvezérhez tartozó acélvért.
 41316	Azrael páncélja (n)	A hírhedt démonvezérhez tartozó acélvért.
@@ -938,10 +938,10 @@
 41321	Sütőtök Jack ruha (n)	Kísértetiesen remek Halloween jelmez
 41322	Sütőtök Jack öltözék+ (f)	Kísértetiesen remek Halloween jelmez. Legalább egy véletlenszerű bónuszt biztosít. Átadható.
 41323	Sütőtök Jack ruha+ (n)	Kísértetiesen remek Halloween jelmez. Legalább egy véletlenszerű bónuszt biztosít. Átadható.
-41324		
-41325		
-41326		
-41327		
+41324		Férfi harci öltözék csillag és félhold emblémával díszítve.
+41325		Női harci ruha csillag és félhold emblémával díszítve.
+41326		Férfi harci öltözék csillag és félhold emblémával díszítve. Legalább egy véletlenszerű bónuszt biztosít.
+41327		Női harci öltözék csillag és félhold emblémával díszítve. Legalább egy véletlenszerű bónuszt biztosít.
 41328	ALG VB-mez (f)	Világbajnoksági labdarúgó mez az Algériai nemzeti színekben
 41329	ALG VB-mez (n)	Világbajnoksági labdarúgó mez az Algériai nemzeti színekben
 41330	ARG VB-mez (f)	Világbajnoksági labdarúgó mez az Argentin nemzeti színekben
@@ -1012,8 +1012,8 @@
 41395	ARG VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Argentin nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41396	AUS VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Ausztrál nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41397	AUS VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Ausztrál nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41398	BEL VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Belga nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41399	BEL VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Belga nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41398	BEL VB-mez (f/bónuszos)	Belgiumi nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41399	BEL VB-mez (n/bónuszos)	Belgiumi nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41400	BIH VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Bosnyák-Hercegovinai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41401	BIH VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Bosnyák-Hercegovinai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41402	BRA VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Brazil nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
@@ -1028,47 +1028,47 @@
 41411	CRC VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Costa Rica-i nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41412	CIV VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Elefántcsontparti nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41413	CIV VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Elefántcsontparti nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41414	CRO VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Horvát nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41415	CRO VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Horvát nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41414	CRO VB-mez (f/bónuszos)	Horvát nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41415	CRO VB-mez (n/bónuszos)	Horvát nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41416	ECU VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Ecuadori nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41417	ECU VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Ecuadori nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41418	ENG VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Angol nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41419	ENG VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Angol nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41420	FRA VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Francia nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41421	FRA VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Francia nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41422	GER VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Német nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41423	GER VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Német nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41418	ENG VB-mez (f/bónuszos)	Angol nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41419	ENG VB-mez (n/bónuszos)	Angol nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41420	FRA VB-mez (f/bónuszos)	Francia nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41421	FRA VB-mez (n/bónuszos)	Francia nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41422	GER VB-mez (f/bónuszos)	Német nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41423	GER VB-mez (n/bónuszos)	Német nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41424	GHA VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Ghánai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41425	GHA VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Ghánai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41426	GRE VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Görög nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41426	GRE VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Görög nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 41427	GRE VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Görög nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41428	HON VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Hondurasi nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41429	HON VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Hondurasi nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41430	IRN VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Iráni nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41431	IRN VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Iráni nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41432	ITA VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Olasz nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41433	ITA VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Olasz nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41432	ITA VB-mez (f/bónuszos)	Olasz nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41433	ITA VB-mez (n/bónuszos)	Olasz nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41434	JPN VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Japán nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41435	JPN VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Japán nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41436	KOR VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Koreai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41436	KOR VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Koreai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 41437	KOR VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Koreai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41438	MEX VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Mexikói nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41438	MEX VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Mexikói nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 41439	MEX VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Mexikói nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41440	NED VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Holland nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41441	NED VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Holland nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41440	NED VB-mez (f/bónuszos)	Holland nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41441	NED VB-mez (n/bónuszos)	Holland nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41442	NGA VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Nigériai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41443	NGA VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Nigériai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41444	POR VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Portugál nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41445	POR VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Portugál nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41446	RUS VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Orosz nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41447	RUS VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Orosz nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41448	ESP VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Spanyol nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41449	ESP VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Spanyol nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41450	SUI VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez a Svájci nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41451	SUI VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez a Svájci nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41444	POR VB-mez (f/bónuszos)	Portugál nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41445	POR VB-mez (n/bónuszos)	Portugál nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41446	RUS VB-mez (f/bónuszos)	Orosz nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41447	RUS VB-mez (n/bónuszos)	Orosz nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41448	ESP VB-mez (f/bónuszos)	Spanyol nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41449	ESP VB-mez (n/bónuszos)	Spanyol nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41450	SUI VB-mez (f/bónuszos)	Svájci nemzeti színű mez férfi labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
+41451	SUI VB-mez (n/bónuszos)	Svájci nemzeti színű mez női labdarúgóknak. Legalább egy véletlenszerű bónuszt biztosít.
 41452	URU VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Uruguayi nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 41453	URU VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Uruguayi nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
-41454	USA VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Amerikai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
+41454	USA VB-mez (f/bónuszos)	Világbajnoksági labdarúgó mez az Amerikai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 41455	USA VB-mez (n/bónuszos)	Világbajnoksági labdarúgó mez az Amerikai nemzeti színekben. Legalább egy véletlenszerű bónuszt biztosít.
 45001	Nyuszifül (barna)	Barna Nyuszifül nők részére.
 45002	Nyúlfül (barna)	Barna fej nyúlfüllel férfiaknak.
@@ -1080,7 +1080,7 @@
 45008	Labdarúgó frizura GER(N)	Sportos frizura női labdarúgók számára a német nemzeti színekben.
 45009	Raszta fürtök (F)	Hosszú, raszta fürtökbe alakított haj hátul összekötve a fejen.
 45010	Boxoló frizura GER (N)	Sportos frizura női ökölvívók számára a német nemzeti színekben.
-45011	Fejkendő (F)	A legfinomabb anyagból készült fejkendő férfiaknak. Átadható.
+45011	Fejkendő (F)	A legfinomabb anyagból készült fejkendő férfiaknak. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 45012	Fejkendő (N)	A legfinomabb anyagból készült fejkendő nőknek. Átadható.
 45013	FehoKorö (F)	Fejtetőn hosszú, kétoldalt rövid - extravagáns oldalvágás férfiak részére. Átadható.
 45014	Vívó frizura (N)	Sportos frizura női vívók számára. Átadható.
@@ -1176,8 +1176,8 @@
 45124	Nyuszifül (kék)	Kék nyuszifül nők részére.
 45125	Nyuszifül (zöld)	Zöld nyuszifül nők részére.
 45126	Nyuszifül (pink)	Pink nyuszifül nők részére.
-45127	Nyúlfül+ (fekete)	Fekete fej nyúlfüllel férfiaknak. Legalább egy véletlenszerű bónuszt biztosít.
-45128	Nyúlfül+ (kék)	Kék fej nyúlfüllel férfiaknak. Legalább egy véletlenszerű bónuszt biztosít.
+45127	Nyúlfül+ (fekete)	Fekete sapka nyúlfüllel férfiaknak. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
+45128	Nyúlfül+ (kék)	Kék sapka nyúlfüllel férfiaknak. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 45129	Nyúlfül+ (zöld)	Zöld fej nyúlfüllel férfiaknak. Legalább egy véletlenszerű bónuszt biztosít.
 45130	Nyúlfül+ (pink)	Pink fej nyúlfüllel férfiaknak. Legalább egy véletlenszerű bónuszt biztosít.
 45131	Nyuszifül+ (fekete)	Fekete nyuszifül nők részére. Legalább egy véletlenszerű bónuszt biztosít.
@@ -1198,7 +1198,7 @@
 45146	Maja maszk+	Egy Maja harcos félelmetes maszkja. Legalább két véletlenszerű bónuszt biztosít.
 45147	Fekete turbán (F)	Fekete anyagból készült fejfedő férfiaknak.
 45148	Fekete turbán (N)	Fekete anyagból készült fejfedő nőknek.
-45149	Fekete turbán+ (F)	Fekete anyagból készült fejfedő férfiaknak. Legalább egy véletlenszerű bónuszt biztosít.
+45149	Fekete turbán+ (F)	Fekete anyagból készült fejfedő férfiaknak. Legalább egy véletlenszerű bónuszt biztosít. A tárgy átadható.
 45150	Fekete turbán+ (N)	Fekete anyagból készült fejfedő nőknek. Legalább egy véletlenszerű bónuszt biztosít.
 45151	Azrael sisakja (f)	Fejfedő a félelmetes démonvezér fintorával.
 45152	Azrael sisakja (n)	Fejfedő a félelmetes démonvezér fintorával.
@@ -1208,13 +1208,13 @@
 45157	Sütőtök Jack fej (n)	Kísértetiesen remek Halloween maszk.
 45158	Sütőtök Jack fej+ (f)	Kísértetiesen remek Halloween maszk. Legalább egy véletlenszerű bónuszt biztosít. Átadható.
 45159	Sütőtök Jack fej+ (n)	Kísértetiesen remek Halloween maszk. Legalább egy véletlenszerű bónuszt biztosít. Átadható.
-45160		
-45161		
-45162		
-45163		
-45164	Hófehér nyúl kalap	Egy hófehér nyulat formázó fejfedő
-45165	Jegesmedve kalap	Egy jegesmedvét formázó fejfedő
-45166	Hópárduc kalap	Egy hópárducot formázó fejfedő
+45160		Magasra kötött, piros-fehérre festett raszta copf.
+45161		Magasra kötött, piros-fehérre festett raszta copf fejpánttal.
+45162		Magasra kötött, piros-fehérre festett raszta copf. Legalább egy véletlenszerű bónuszt biztosít.
+45163		Magasra kötött, piros-fehérre festett raszta copf fejpánttal. Legalább egy véletlenszerű bónuszt biztosít.
+45164	Hófehér nyúl kalap	Egy hófehér nyulat formázó fejfedő.
+45165	Jegesmedve kalap	Egy jegesmedvét formázó fejfedő.
+45166	Hópárduc kalap	Egy hópárducot formázó fejfedő.
 45167	Hófehér nyúl kalap+	Egy hófehér nyulat formázó fejfedő. Legalább egy véletlenszerű bónuszt biztosít.
 45168	Jegesmedve kalap+	Egy jegesmedvét formázó fejfedő. Legalább egy véletlenszerű bónuszt biztosít.
 45169	Hópárduc kalap+	Egy hópárducot formázó fejfedő. Legalább egy véletlenszerű bónuszt biztosít.
@@ -1222,7 +1222,7 @@
 50002	Aranygyűrű	Egyszerű aranygyűrű. A boltban drágán eladható.
 50003	Készség visszaállító	Lehetővé teszi hogy visszaállítsad a képességeidet hogy újakat tanulhass.
 50004	Esemény érzékelő	Ez a tárgy megmutatja, hogy hol találhatsz feladatot.
-50005	Lovaglójegy	Ezt a jegyet az istállófiúnál ló medálra cserélheted.
+50005	Lovaglójegy	Ez a jegy becserélhető egy Ló medálra a Lovászinasnál.
 50006	Arany kincsesláda	Egy aranykulccsal nyitható díszes aranyláda.
 50007	Ezüst kincsesláda	Ezüsttel díszített láda, mely egy Ezüst kulccsal nyitható.
 50008	Arany kulcs	Aranyból készült kulcs. Ki tudja nyitni az arany kincsesládát és az arany kincsesláda+-t is.
@@ -1275,13 +1275,13 @@
 50080	Vörös sárkány ládája	A Vörös sárkány ládája. Ebben a ládában valami értékes található.
 50081	Démonkirály ládája	Démonkirály ládája. Ebben a ládában valami értékes található.
 50082	Kaszás ládája	A "Kaszás" ládája. Ebben a ládában valami értékes dolog található.
-50083	Lovaglójegy	Egy ideig lovagolhatsz egy pónin, ha ezt a kártyát az istállófiúnak megmutatod.
+50083	Lovaglójegy	Bontsd ki a Lovagló engedélyt, hogy megkapd a Lovaglójegyed. 10-es szinttől lovagolhatsz vele egy Pónin egy ideig.
 50084	Kulcskő	Egy legendás laden-energia aura veszi körül ezt a követ. Működik a pecsét mágia ellen.
 50091	Aranyhal szusi	Aranyhalból készül. Különleges étel.
 50092	Ponty szusi	Pontyból készül. Különleges étel.
 50093	Lazac szusi	Egy különleges étel amit nyers lazacból és hideg rizsből készítenek. Megnöveli a támadási értékedet 10 ponttal 30 másodpercen át.
 50094	Harcsa szusi	Egy speciális fogás harcsából és hideg rizsből. Megnöveli a védelmi erődet 10 ponttal 30 másodpercig.
-50096	Foci	Csavard meg mint Baljit-Elvedin!
+50096	Foci	Csavard meg, mint Baljit-Elvedin! A labda nem átadható.
 50100	Tűzijáték	Ünnep idején lilára festi az égboltot.
 50101	Tűzijáték	Ünnep idején sárgára festi az égboltot.
 50102	Tűzijáték	Ünnep idején kékre festi az égboltot.
@@ -1289,14 +1289,14 @@
 50104	Tűzijáték	Ünnep idején zöldre festi az égboltot.
 50105	Tűzijáték	Ünnep idején fehérre festi az égboltot.
 50106	Karácsonyi tűzijáték	Karácsonyi tűzijáték. Pompásabb egy átlagos tűzijátéknál.
-50108	Tűzijáték pörgettyű	Egy földi tűzijáték, mely arany és ezüst szikrákat szór.
+50108	Tűzijáték pörgettyű	Egy kézzel készített tűzijáték pörgettyű, amit a gyerekek csodálkozva bámulnak, míg forog. | | Esély ájulásra: 5% | Időtartama: 10 perc
 50118		
 50119		
 50120	Vas Ékszertároló	A tároló a Száműzött Barlangjából származik.
 50121	Vas Doboz	A tároló a Száműzött Barlangjából származik.
 50122	Vas Láda	A tároló a Száműzött Barlangjából származik.
-50123		
-50124	Rothadt Fadoboz	Gyengéd állathangok hallattszódnak a belsejéből.
+50123		Energiabomba! Ez a fagylalt meggyorsítja mozgási sebességed 60-nal 30 percre. Figyelem: A gyorsító érvényessége alatti újraaktiválása felülírja a korábbi időtartamot.
+50124	Rothadt Fadoboz	Halk állathangok szűrődnek ki belsejéből.
 50125	Titokzatos láda	Ez a láda nagyon könnyű - mintha üres lenne...
 50126	Titokzatos láda	Ez a láda nagyon könnyű - mintha üres lenne...
 50127	Titokzatos Smaragd doboz	Nyitott Smaragd doboz
@@ -1340,7 +1340,7 @@
 50180	Üres kosár	Egy üres kosár, amibe belerakhatod a Hímes tojásokat
 50181	Kosár Hímes tojásokkal	Egy Hímes tojásokkal teli kosár.
 50182	Áldás láda	Egy áldott láda ismeretlen tartalommal.
-50183		
+50183		Ennek az édességnek különleges hatása van: +10 mozgási sebesség, +5% sebzés és +10% tapasztalat, mely 30 percig tart.
 50184		
 50185		
 50186	Azrael ládája	Démoni erők tartják zárva ezt a ládát. Értékes kincset rejt a belseje.
@@ -1361,7 +1361,7 @@
 50212	Gyakornok ládája I	Üdvözlő csomagod egy alap felszerelés készletet tartalmaz kalandjaid optimális kezdéséhez.
 50213	Gyakornok ládája I	Üdvözlő csomagod egy alap felszerelés készletet tartalmaz kalandjaid optimális kezdéséhez.
 50215	Halloween Láda	Egy láda, kísérteties tökfejjel az oldalán. Vihogásnak hangzó nyikorgással nyílik a fedele és kiderül, mit rejt a belseje.
-50216	Forralt bor	Egy borból és fűszerekből készült forró ital, mely +10% sebességet, +5% támadást és +10% tapasztalatot ad 30 percen át.
+50216	Forralt bor	Egy borból és fűszerekből készült forró ital, mely +10% sebességet, +5% sebzést és +10% tapasztalatot ad.
 50249	Diadal ládája	A láda egy véletlenszerű tárgyat tartalmaz valamennyi Olimpikon számára.
 50252	Cor Draconis	A megkristályosodott sárkányszív hordozza magában a lelket, a Sárkánykövet.
 50253		
@@ -1372,8 +1372,8 @@
 50258	Cor Draconis (Antik)	A megkristályosodott sárkányszív hordozza magában a lelket, a Sárkánykövet.
 50259	Cor Draconis (Legendás)	A megkristályosodott sárkányszív hordozza magában a lelket, a Sárkánykövet.
 50260	Cor Draconis (Nyers)	A megkristályosodott sárkányszív hordozza magában a lelket, a Sárkánykövet.
-50263		
-50264		
+50263		Ez a szerződés a karaktered lelkéhez köt egy általad választott tárgyat. A lélekhez kötött tárggyal nem lehet kereskedni, eldobni vagy fejleszteni.
+50264		Eltávolítja lelkedről egy tárgy kötését.
 50265	Arany focilabda	A labda kerek és aranyból van.
 50300	Készségkönyv	Növeli a mesteri készség szintjét.
 50301	Sun-zi harcművészet	Az első a három harcművészeti könyvből. Növeli a vezetői erőt. A könyv eltűnik olvasás után.
@@ -1439,24 +1439,24 @@
 50512	Szivárvány kő	A kő, mely felnyitja a spirituális szemeket és minden képességet felfed.
 50513	Lélekkő	A legendás kő nagymester készséged fejlesztésére használható. A kő eltűnik használat után.
 50600	Bányászati könyv	A bányászati szint növelésére szolgál. A könyv eltűnik olvasás után.
-50601	Gyémánt kő	A céh gyémántkohójának segítségével gyémánttá változtatható.
-50602	Borostyánkő	A céh borostyánkohójának segítségével borostyánná változtatható.
-50603	Megkövesedett törzs	A céh megkövesedett fa kohójának segítségével megkövesedett fává változtatható.
-50604	Réz érc	A céh rézkohójának segítségével rézzé változtatható.
-50605	Ezüst érc	A céh ezüstkohójának segítségével ezüstté változtatható.
-50606	Arany érc	A céh aranykohójának segítségével arannyá változtatható.
-50607	Jáde érc	A céh jáde-kohójának segítségével jádévá változtatható.
-50608	Ébenfa érc	A céh ébenfakohójának segítségével ébenfává változtatható.
-50609	Igazgyöngy darab	A céh igazgyöngykohójának segítségével igazgyönggyé változtatható.
-50610	Fehérarany érc	A céh fehéraranykohójának segítségével fehérarannyá változtatható.
-50611	Kristály érc	A céh kristálykohójának segítségével kristállyá változtatható.
-50612	Ametiszt érc	A céh ametisztkohójának segítségével ametisztté változtatható.
-50613	Mennyei könny érc	A céh mennyei könny kohójának segítségével mennyei könnyé változtatható.
-50614	Lélekkristály érc	Céh-kohó használatával Lélekkristályt készíthetsz ebből az ércből.
-50615	Rubin érc	Céh-kohó használatával Rubint készíthetsz ebből az ércből.
-50616	Gránát érc	Céh-kohó használatával Gránátot készíthetsz ebből az ércből.
-50617	Smaragd érc	Céh-kohó használatával Smaragdot készíthetsz ebből az ércből.
-50618	Zafír érc	Céh-kohó használatával Zafírt készíthetsz ebből az ércből.
+50601	Gyémánt kő	Céhkohó használatával Gyémánt készíthető ebből a kőből.
+50602	Borostyánkő	Céhkohó használatával arany színű Borostyánkő készíthető ebből a csiszolatlan kőből.
+50603	Megkövesedett törzs	Céhkohó használatával Megkövesedett fa készíthető ebből a törzsből.
+50604	Réz érc	Céhkohó használatával Réz készíthető ebből az ércből.
+50605	Ezüst érc	Céhkohó használatával Ezüst készíthető ebből az ércből.
+50606	Arany érc	Céhkohó használatával Arany készíthető ebből az ércből.
+50607	Jáde érc	Céhkohó használatával Jáde készíthető ebből az ércből.
+50608	Ébenfa érc	Céhkohó használatával Ébenfa készíthető ebből az ércből.
+50609	Igazgyöngy darab	Céhkohó használatával Gyöngy nyerhető ki ebből a darabból.
+50610	Fehérarany érc	Céhkohó használatával Fehérarany készíthető ebből az ércből.
+50611	Kristály érc	Céhkohó használatával Kristály készíthető ebből az ércből.
+50612	Ametiszt érc	Céhkohó használatával Ametiszt készíthető ebből az ércből.
+50613	Mennyei könny érc	Céhkohó használatával Mennyei könny készíthető ebből az ércből.
+50614	Lélekkristály érc	Céhkohó használatával Lélekkristályt készíthetsz ebből az ércből.
+50615	Rubin érc	Céhkohó használatával Rubint készíthetsz ebből az ércből.
+50616	Gránát érc	Céhkohó használatával Gránátot készíthetsz ebből az ércből.
+50617	Smaragd érc	Céhkohó használatával Smaragdot készíthetsz ebből az ércből.
+50618	Zafír érc	Céhkohó használatával Zafírt készíthetsz ebből az ércből.
 50621	Gyémánt	A legkeményebb kő, amely foglalatot ad a dísztárgyakhoz.
 50622	Borostyánkő	Szép borostyánkő. A dísztárgyakhoz adható.
 50623	Megkövesedett fa	Értékes fa, mely stabilitást nyújthat ékszereknek.
@@ -1511,11 +1511,11 @@
 50810	Bogáncs lé	Ital a bogáncsból.
 50811	Datolya lé	Ital a datolyából.
 50812	Sam-Zi növény lé	Ital a Sam-Zi növényből.
-50813	Sim-víz	Ez a Baracklevélből és Orgonából készült ital megnöveli az áthatoló találtra az esélyedet 10%-kal 3 percen át.
-50814	Dok-víz	Ez a Harangvirágból és Orgonából készült ital megnöveli a kritikus találatra az esélyedet 10%-kal 3 percig.
+50813	Sim-víz	Ez a Barackvirág léből és Orgonából készült ital 10%-kal megnöveli esélyed átható találat bevitelére.
+50814	Dok-víz	Ez a Harangvirág léből és Orgonából készült ital 10%-kal megnöveli esélyed kritikus találat bevitelére.
 50815	Bo-víz	Ez az ital datolyaszilva léből és Tue gombából készül. Erősíti az agyat.
 50816	Young-víz	Ez az ital Gango-gyökér léből és Tue gombából készül. Erősíti fizikai és mentális teljesítményed.
-50817	Zin-víz	Ez a Zin-vízből és Alpesi rózsából készült ital megnöveli a támadási értékedet 50 ponttal 3 percig.
+50817	Zin-víz	Ez a Sim-vízből és Alpesi rózsából készült ital megnöveli támadási értéked 50 ponttal 3 percig.
 50818	SamBo-víz	Ez a Dok-vízből és Alpesi rózsából készült ital megnöveli a védelmedet 70 ponttal 3 percig.
 50819	Mong-víz	Ez az ital Bo-vízből és a szederfa gyümölcséből készül. Növeli a mágikus védelmedet 10%-kal 3 percig.
 50820	Hwal-víz	Ez az ital Young-vízből és a szederfa gyümölcséből készül. Növeli a támadási sebességedet 3 ponttal 3 percig.
@@ -1536,7 +1536,7 @@
 51503	Cor Draconis (Normál)	Kristály sárkányszív. Rang: normál. Egy nyerstől metszettig terjedő osztályú matt sárkánykövet tartalmaz.
 51504	Cor Draconis (nemes)	Kristály sárkányszív. Rang: nemes. Egy nyerstől ritkáig terjedő osztályú matt sárkánykövet tartalmaz.
 51505	Cor Draconis (értékes)	Kristály sárkányszív. Rang: értékes. Egy nyerstől antikig terjedő osztályú matt sárkánykövet tartalmaz.
-51506	Cor Draconis (titokzatos)	Kristály sárkányszív. Rang: titokzatos. Egy metszettől legendásig terjedő osztályú matt sárkánykövet tartalmaz.
+51506	Cor Draconis (titokzatos)	Kristály sárkányszív. Rang: titokzatos. Egy metszettől legendásig terjedő osztályú matt Sárkánykövet tartalmaz.
 51507	Cor Draconis (metszett)	A kristály sárkányszív egy véletlenszerű Sárkánykövet tartalmaz a metszett osztályból.
 51508	Cor Draconis (ritka)	A kristály sárkányszív egy véletlenszerű Sárkánykövet tartalmaz a ritka osztályból.
 51509	Cor Draconis (antik)	A kristály sárkányszív egy véletlenszerű Sárkánykövet tartalmaz az antik osztályból.
@@ -1737,51 +1737,51 @@
 52058	Szelídített tigris (p.)	A pecsét megidézi Szelídített tigrised. Megnöveli lovasa TP-jét 500-zal.
 52059	Szelídített tigris (p.)	A pecsét megidézi Szelídített tigrised. Megnöveli lovasa védelmét 150-nel.
 52060	Szelídített tigris (p.)	A pecsét megidézi Szelídített tigrised. Megnöveli lovasa támadóértékét 100-zal.
-52061	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (hím). Harci képzés után lovasának legfeljebb 5% szörnyek elleni erőt biztosít.
-52062	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (hím). Harci képzés után megnöveli legfeljebb 5%-kal a megszerezhető tapasztalat mennyiségét.
-52063	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (hím). Harci képzés után megnöveli lovasa TP-jét legfeljebb 500-zal.
-52064	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (hím). Harci képzés után megnöveli lovasa védelmét legfeljebb 150-nel.
-52065	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (hím). Harci képzés után megnöveli lovasa támadóértékét legfeljebb 100-zal.
+52061	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (hím).
+52062	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (hím).
+52063	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (hím). A harci kiképzés után megnöveli lovasa TP-jét legfeljebb 500-zal.
+52064	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (hím). A harci kiképzés után megnöveli lovasa védelmi értékét legfeljebb 150-nel.
+52065	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (hím). A harci kiképzés után megnöveli lovasa támadóértékét legfeljebb 100-zal.
 52066	Vad rénszarvas (pecsét)	Ez a pecsét idézi meg vad rénszarvasod (h). +3% szörnyek elleni erőt ad lovasának.
 52067	Vad rénszarvas (pecsét)	Ez a pecsét idézi meg vad rénszarvasod (h). Megnöveli az összegyűjthető tapasztalatot +3%-kal.
 52068	Vad rénszarvas (pecsét)	A pecsét megidézi Vad rénszarvasod (hím). Megnöveli lovasa TP-jét 250-nel.
 52069	Vad rénszarvas (pecsét)	A pecsét megidézi Vad rénszarvasod (hím). Megnöveli lovasa védelmét 50-nel.
 52070	Vad rénszarvas (pecsét)	A pecsét megidézi Vad rénszarvasod (hím). Megnöveli lovasa támadóértékét 30-cal.
-52071	Szelíd rénszarvas (p.)	Ez a pecsét idézi meg szelíd rénszarvasod (hím). +5% szörnyek elleni erőt ad lovasának.
-52072	Szelíd rénszarvas (p.)	Ez a pecsét idézi meg Szelíd rénszarvasod (hím). Megnöveli az összegyűjthető tapasztalatot +5%-kal.
-52073	Szelíd rénszarvas (p.)	A pecsét megidézi Szelíd rénszarvasod (hím). Megnöveli lovasa TP-jét 500-zal.
-52074	Szelíd rénszarvas (p.)	A pecsét megidézi Szelíd rénszarvasod (hím). Megnöveli lovasa védelmét 150-nel.
-52075	Szelíd rénszarvas (p.)	A pecsét megidézi Szelíd rénszarvasod (hím). Megnöveli lovasa támadóértékét 100-zal.
-52076	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (nőstény). Harci képzés után lovasának legfeljebb 5% szörnyek elleni erőt biztosít.
-52077	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (nőstény). Harci képzés után megnöveli legfeljebb 5%-kal a megszerezhető tapasztalat mennyiségét.
-52078	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (nőstény). Harci képzés után megnöveli lovasa TP-jét legfeljebb 500-zal.
-52079	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (nőstény). Harci képzés után megnöveli lovasa védelmét legfeljebb 150-nel.
-52080	Ifjú rénszarvas (pecsét)	A pecsét megidézi Ifjú rénszarvasod (nőstény). Harci képzés után megnöveli lovasa támadóértékét legfeljebb 100-zal.
+52071	Szelíd rénszarvas (p.)	Ez a pecsét idézi meg Szelídített rénszarvasod (hím). +5% szörnyek elleni erőt ad lovasának.
+52072	Szelíd rénszarvas (p.)	Ez a pecsét idézi meg Szelídített rénszarvasod (hím). Megnöveli a tapasztalat-gyűjtést +5%-kal.
+52073	Szelíd rénszarvas (p.)	A pecsét megidézi Szelídített rénszarvasod (hím). Megnöveli lovasa TP-jét 500-zal.
+52074	Szelíd rénszarvas (p.)	A pecsét megidézi Szelídített rénszarvasod (hím). Megnöveli lovasa védelmi értékét 150-nel.
+52075	Szelíd rénszarvas (p.)	A pecsét megidézi Szelídített rénszarvasod (hím). Megnöveli lovasa támadóértékét 100-zal.
+52076	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (nőstény).
+52077	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (nőstény). A harci kiképzés után megnöveli legfeljebb 5%-kal a tapasztalat-gyűjtést.
+52078	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (nőstény). A harci kiképzés után megnöveli lovasa TP-jét legfeljebb 500-zal.
+52079	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (nőstény). A harci kiképzés után megnöveli lovasa védelmi értékét legfeljebb 150-nel.
+52080	Ifjú rénszarvas (pecsét)	A pecsét megidézi Fiatal rénszarvasod (nőstény). A harci kiképzés után megnöveli lovasa támadóértékét legfeljebb 100-zal.
 52081	Vad rénszarvas (pecsét)	A pecsét megidézi Vad rénszarvasod (nőstény). Lovasának +3% szörnyek elleni erőt biztosít.
 52082	Vad rénszarvas (pecsét)	A pecsét megidézi Vad rénszarvasod (nőstény). Megnöveli 3%-kal a megszerezhető tapasztalat mennyiségét.
 52083	Vad rénszarvas (pecsét)	A pecsét megidézi Vad rénszarvasod (nőstény). Megnöveli lovasa TP-jét 250-nel.
 52084	Vad rénszarvas (pecsét)	A pecsét megidézi Vad rénszarvasod (nőstény). Megnöveli lovasa védelmét 50-nel.
 52085	Vad rénszarvas (pecsét)	A pecsét megidézi Vad rénszarvasod (nőstény). Megnöveli lovasa támadóértékét 30-cal.
-52086	Szelíd rénszarvas (p.)	A pecsét megidézi Szelíd rénszarvasod (nőstény). Lovasának 5% szörnyek elleni erőt biztosít.
-52087	Szelíd rénszarvas (p.)	A pecsét megidézi Szelíd rénszarvasod (nőstény). Megnöveli 5%-kal a megszerezhető tapasztalat mennyiségét.
-52088	Szelíd rénszarvas (p.)	A pecsét megidézi Szelíd rénszarvasod (nőstény). Megnöveli lovasa TP-jét 500-zal.
-52089	Szelíd rénszarvas (p.)	A pecsét megidézi Szelíd rénszarvasod (nőstény). Megnöveli lovasa védelmét 150-nel.
-52090	Szelíd rénszarvas (p.)	A pecsét megidézi Szelíd rénszarvasod (nőstény). Megnöveli lovasa támadóértékét 100-zal.
-52091	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod. Harci kiképzése szerint lovasának legfeljebb 5% szörnyek elleni erőt biztosít.
-52092	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod. Harci kiképzése szerint megnöveli legfeljebb 5%-kal a tapasztalatszerzést.
-52093	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod. Harci kiképzése szerint legfeljebb 500-zal megnöveli lovasa TP-jét.
-52094	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod. Harci kiképzése szerint legfeljebb 150-nel megnöveli lovasa védelmét.
-52095	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod. Harci kiképzése szerint legfeljebb 100-zal megnöveli lovasa támadását.
+52086	Szelíd rénszarvas (p.)	A pecsét megidézi Szelídített rénszarvasod (nőstény). Lovasának 5% szörnyek elleni erőt biztosít.
+52087	Szelíd rénszarvas (p.)	A pecsét megidézi Szelídített rénszarvasod (nőstény). Megnöveli 5%-kal a tapasztalat-gyűjtést.
+52088	Szelíd rénszarvas (p.)	A pecsét megidézi Szelídített rénszarvasod (nőstény). Megnöveli lovasa TP-jét 500-zal.
+52089	Szelíd rénszarvas (p.)	A pecsét megidézi Szelídített rénszarvasod (nőstény). Megnöveli lovasa védelmi értékét 150-nel.
+52090	Szelíd rénszarvas (p.)	A pecsét megidézi Szelídített rénszarvasod (nőstény). Megnöveli lovasa támadóértékét 100-zal.
+52091	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod.
+52092	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod.
+52093	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod.
+52094	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod.
+52095	Fiatal Dragor pecsét	A pecsét megidézi Fiatal Dragorod.
 52096	Vad Dragor pecsét	A pecsét megidézi Vad Dragorod. Lovasának 3% szörnyek elleni erőt biztosít.
 52097	Vad Dragor pecsét	A pecsét megidézi Vad Dragorod. Megnöveli 3%-kal a tapasztalatszerzést.
 52098	Vad Dragor pecsét	A pecsét megidézi Vad Dragorod. 250-nel megnöveli lovasa TP-jét.
 52099	Vad Dragor pecsét	A pecsét megidézi Vad Dragorod. 50-nel megnöveli lovasa védelmét.
 52100	Vad Dragor pecsét	A pecsét megidézi Vad Dragorod. 30-cal megnöveli lovasa támadását.
-52101	Bátor Dragor pecsét	A pecsét megidézi Bátor Dragorod. Lovasának 5% szörnyek elleni erőt biztosít.
-52102	Bátor Dragor pecsét	A pecsét megidézi Bátor Dragorod. Megnöveli 5%-kal a tapasztalatszerzést.
-52103	Bátor Dragor pecsét	A pecsét megidézi Bátor Dragorod. 500-zal megnöveli lovasa TP-jét.
-52104	Bátor Dragor pecsét	A pecsét megidézi Bátor Dragorod. 150-nel megnöveli lovasa védelmét.
-52105	Bátor Dragor pecsét	A pecsét megidézi Bátor Dragorod. 100-zal megnöveli lovasa támadását.
+52101	Bátor Dragor pecsét	A pecsét megidézi Szelídített Dragorod. +5% szörnyek elleni erőt ad lovasának.
+52102	Bátor Dragor pecsét	A pecsét megidézi Szelídített Dragorod. Megnöveli 5%-kal a tapasztalatszerzést.
+52103	Bátor Dragor pecsét	A pecsét megidézi Szelídített Dragorod. 500-zal megnöveli lovasa TP-jét.
+52104	Bátor Dragor pecsét	A pecsét megidézi Szelídített Dragorod. Megnöveli lovasa védelmi értékét 150-nel.
+52105	Bátor Dragor pecsét	A pecsét megidézi Szelídített Dragorod. Megnöveli lovasa támadóértékét 100-zal.
 52106	Fiatal Moa (pecsét)	A pecsét megidézi fiatal Moa-d. Harci kiképzés után megnöveli lovasa szörnyek elleni erejét legfeljebb 5%-kal.
 52107	Fiatal Moa (pecsét)	A pecsét megidézi fiatal Moa-d. Harci kiképzés után megnöveli a gyűjthető tapasztalati pontokat legfeljebb 5%-kal.
 52108	Fiatal Moa (pecsét)	A pecsét megidézi fiatal Moa-d. Harci kiképzés után legfeljebb 500-zal megnöveli lovasa TP-jét legfeljebb 500-zal.
@@ -1792,11 +1792,11 @@
 52113	Vad Moa (pecsét)	A pecsét megidézi Vad Moa-d. Megnöveli lovasa TP-jét 250-nel.
 52114	Vad Moa (pecsét)	A pecsét megidézi Vad Moa-d. Megnöveli lovasa védelmi értékét 50-nel.
 52115	Vad Moa (pecsét)	A pecsét megidézi Vad Moa-d. Megnöveli lovasa támadóértékét 30-cal.
-52116	Bátor Moa (pecsét)	A pecsét megidézi Bátor Moa-d. +5% szörnyek elleni erőt ad lovasának.
-52117	Bátor Moa (pecsét)	A pecsét megidézi Bátor Moa-d. Megnöveli 5%-kal a gyűjthető tapasztalatot.
-52118	Bátor Moa (pecsét)	A pecsét megidézi Bátor Moa-d. Megnöveli lovasa TP-jét 500-zal.
-52119	Bátor Moa (pecsét)	A pecsét megidézi Bátor Moa-d. Megnöveli lovasa védelmi értékét 150-nel.
-52120	Bátor Moa (pecsét)	A pecsét megidézi Bátor Moa-d. Megnöveli lovasa támadóértékét 100-zal.
+52116	Bátor Moa (pecsét)	A pecsét megidézi Szelídített Moád. +5% szörnyek elleni erőt ad lovasának.
+52117	Bátor Moa (pecsét)	A pecsét megidézi Szelídített Moád. Megnöveli 5%-kal a tapasztalatszerzést.
+52118	Bátor Moa (pecsét)	A pecsét megidézi Szelídített Moád. 500-zal megnöveli lovasa TP-jét.
+52119	Bátor Moa (pecsét)	A pecsét megidézi Szelídített Moád. Megnöveli lovasa védelmi értékét 150-nel.
+52120	Bátor Moa (pecsét)	A pecsét megidézi Szelídített Moád. Megnöveli lovasa támadóértékét 100-zal.
 52701	Oroszlán tanúsítvány	Egy Fiatal oroszlán tulajdonosi igazolása
 52702	Tigris tanúsítvány	Egy Fiatal tigris tulajdonosi igazolása
 52703	Vadkan tanúsítvány	Egy Fiatal vadkan tulajdonosi igazolása
@@ -1805,57 +1805,57 @@
 52706	Rénszarvas tanúsítv. (n)	Egy Fiatal rénszarvas (nőstény) tulajdonosi igazolása
 52707	Dragor tanúsítvány	Egy Fiatal Dragor tulajdonosi tanúsítványa
 52708	Moa tanúsítvány	Ez a tanúsítvány igazolja, hogy egy Fiatal Moa tulajdonosa vagy.
-53001	Tűzfőnix pecsét	Ezzel a pecséttel idézheted meg barátod a Tűzfőnixet.
-53002	Szarvasgida pecsét	Ezzel a pecséttel tudod megidézni az aranyos Rénszarvas gidát.
+53001	Tűzfőnix pecsét	Ezt a pecsétet használhatod barátod, a Tűzfőnix megidézésére.
+53002	Szarvasgida pecsét	Ezzel a pecséttel tudod megidézni aranyos Rénszarvasgidád.
 53003	Jégfőnix pecsét	Ezzel a pecséttel idézheted meg barátod a Jégfőnixet.
-53005	Baby Azrael	A démonok vezetőjének mini változata rendkívül gyengéd, 1500 TP és 15% támadás bónuszt biztosít a Démon Torony valamint az Ördög Katakombája 2. emeletétől kezdve.
-53006	Baby Azrael (arany)	A démonok vezetőjének mini változata rendkívül gyengéd, 1500 TP és 15% támadás bónuszt biztosít a Démon Torony valamint az Ördög Katakombája 2. emeletétől kezdve.
-53007	Bambi pecsét	Ezt a pecsétet használhatod fiatal rénszarvasod, Bambi megidézésére.
-53008	Knuud pecsét	Ezzel a pecséttel tudod megidézni kedves kis jegesmedvebocsod.
-53009	Bao Bao pecsét	Ezzel a pecséttel tudod megidézni kedves kis pandabocsod.
-53010	Leonidász pecsét	Ezt a pecsétet Leonidász, az oroszlánkölyök megidézésére használhatod.
-53011	Kán pecsét	Ezt a pecsétet Kán, a tigriskölyök megidézésére használhatod.
-53012	Porky pecsét	Ezt a pecsétet kismalacod, Porky megidézésére használhatod.
-53013	Rufusz pecsét	Ezt a pecsétet farkaskölyköd, Rufusz megidézésére használhatod.
-53014	Minihóhér-pecsét	Ez a pecsét idézi meg fekete páncélba öltözött pufók Minihóhérod.
-53015	Minihóhér-pecsét (arany)	Ez a pecsét idézi meg arany páncélba öltözött pufók Minihóhérod.
-53016	Csonti pecsét	A pecsét megidézi csonti kedvenced.
-53017	Jáde főnix-pecsét	Ez a pecsét idézi meg kecses Jáde főnixed.
-53018	Hó-Leonidász (pecsét)	Ezzel a pecséttel tudod kisállatod megidézni.
-53019	Sarkvidéki Kán (pecsét)	Ezzel a pecséttel tudod kisállatod megidézni.
-53020	Sarki Porky (pecsét)	Ezzel a pecséttel tudod kisállatod megidézni.
-53021	Fagyos Rufusz (pecsét)	Ezzel a pecséttel tudod kisállatod megidézni.
-53022	Sheldon-pecsét	A pecsét hatására kisállatod, Sheldon kikel a tojásából.
-53023	Cooper-pecsét	A pecsét hatására előugrik kisállatod, Cooper.
-53024	Párduckölyök (7 napos)	Ez a pecsét idézi meg fekete Párduckölyköd.
-53025	Leopárdkölyök (7 napos)	Ez a pecsét idézi meg aranyos Leopárdkölyköd.
-53026		
-53218	Párduckölyök (30 napos)	Ez a pecsét idézi meg fekete Párduckölyköd.
-53219	Párduckölyök (120 napos)	Ez a pecsét idézi meg fekete Párduckölyköd.
-53220	Leopárdkölyök (30 napos)	Ez a pecsét idézi meg aranyos Leopárdkölyköd.
-53221	Leopárdkölyök (120 nap)	Ez a pecsét idézi meg aranyos Leopárdkölyköd.
-53501		
-53502	Rénszarvas gida láda	A Rénszarvas gida ebben a ládában várja türelmetlenül, hogy kiengedd.
+53005	Baby Azrael	A démonvezér miniatűr verziója igazán szeretnivaló. A Démon-torony és az Ördög Katakombájának 2. szintjétől az alábbi bónuszokat nyújtja: | +15% mágikus/közelharci támadás | +1500 TP
+53006	Baby Azrael (arany)	A démonvezér miniatűr verziója igazán szeretnivaló. A Démon-torony és az Ördög Katakombájának 2. szintjétől az alábbi bónuszokat nyújtja: | +15% mágikus/közelharci támadás | +1500 TP
+53007	Bambi pecsét	Ezzel a pecséttel tudod megidézni Bambit, a rénszarvas gidád. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53008	Knuud pecsét	Ezzel a pecséttel tudod megidézni kedves kis jegesmedvebocsod. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53009	Bao Bao pecsét	Ezzel a pecséttel tudod megidézni kedves kis pandabocsod. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53010	Leonidász pecsét	Ezt a pecsétet Leonidász, az oroszlánkölyök megidézésére használhatod. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53011	Kán pecsét	Ezt a pecsétet Kán, a tigriskölyköd megidézésére használhatod. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53012	Porky pecsét	Ezt a pecsétet kismalacod, Porky megidézésére használhatod. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53013	Rufusz pecsét	Ezt a pecsétet farkaskölyköd, Rufusz megidézésére használhatod. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53014	Minihóhér-pecsét	Ez a pecsét idézi meg fekete páncélba öltözött pufók Minihóhérod. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53015	Minihóhér-pecsét (arany)	Ez a pecsét idézi meg arany páncélba öltözött pufók Minihóhérod. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53016	Csonti pecsét	A pecsét megidézi csontos házikedvenced. Ezt nyújtja neked: | +15% mágikus/közelharci támadás | +1500 TP
+53017	Jáde főnix-pecsét	Ez a pecsét idézi meg kecses Jáde főnixed. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +50% esély 30% EXP bónuszra
+53018	Hó-Leonidász (pecsét)	Ezzel a pecséttel idézheted meg kis hó oroszlánod. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53019	Sarkvidéki Kán (pecsét)	Ezzel a pecséttel idézheted meg kis hó tigrised. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53020	Sarki Porky (pecsét)	Ezzel a pecséttel tudod sarki malacodat megidézni. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53021	Fagyos Rufusz (pecsét)	Ezzel a pecséttel tudod sarki farkasodat megidézni. A kis kedvenc biztosít neked: | +15% mágikus/közelharci támadás | +1500 TP
+53022	Sheldon-pecsét	A pecsét hatására kis Sheldon kedvenced előbújik a tojásából. Ezt nyújtja neked: | +15% mágikus/közelharci támadás | +1500 TP
+53023	Cooper-pecsét	A pecsét hatására előugrik kis Cooper kedvenced. Ezt nyújtja neked: | +15% mágikus/közelharci támadás | +1500 TP
+53024	Párduckölyök (7 napos)	Ez a pecsét idézi meg fekete Párduckölyköd. A kis kedvenc ezt nyújtja neked: | +5% készség kár ellenállás | +5% esély átható találatra | +1500 TP
+53025	Leopárdkölyök (7 napos)	Ez a pecsét idézi meg aranyos Leopárdkölyköd. A kis kedvenc ezt nyújtja neked: | +10 védelmi érték | +5% esély kritikus találatra | +1500 TP
+53026		Ezzel a pecséttel tudod megidézni Pepita főnixed. A házikedvenc növeli a tapasztalatszerzést +5%-kal.
+53218	Párduckölyök (30 napos)	Ez a pecsét idézi meg fekete Párduckölyköd. A kis kedvenc ezt nyújtja neked: | +5% készség kár ellenállás | +5% esély átható találatra | +1500 TP
+53219	Párduckölyök (120 napos)	Ez a pecsét idézi meg fekete Párduckölyköd. A kis kedvenc ezt nyújtja neked: | +5% készség kár ellenállás | +5% esély átható találatra | +1500 TP
+53220	Leopárdkölyök (30 napos)	Ez a pecsét idézi meg aranyos Leopárdkölyköd. A kis kedvenc ezt nyújtja neked: | +10 védelmi érték | +5% esély kritikus találatra | +1500 TP
+53221	Leopárdkölyök (120 nap)	Ez a pecsét idézi meg aranyos Leopárdkölyköd. A kis kedvenc ezt nyújtja neked: | +10 védelmi érték | +5% esély kritikus találatra | +1500 TP
+53501		A Tűzfőnix várja ebben a kalitkában, hogy kiszabadítsd.
+53502	Rénszarvas gida láda	A Rénszarvasgida ebben a ládában várja türelmetlenül, hogy kiengedd.
 53503	Jégfőnix kalitka	Ebben a kalitkában vár rád a Jégfőnix, hogy kiengedd.
 53504		
-53505		
-53506		
+53505		Baby Azrael, a démonvezér miniatűr változata arra vár, hogy kiszabaduljon ebből a ládából.
+53506		Baby Azrael (arany), a démonvezér miniatűr változata arra vár, hogy kiszabaduljon ebből a ládából.
 53516	Csontláda	Egy véletlenszerű tárgyat tartalmaz. Egy kis szerencsével megtalálhatod benne a csontváz kutyát, Csontit.
 53517	Jáde kalitka	A ritka Jáde főnix várja ebben a kalitkában, hogy kiszabadítsd.
-53518	Hó-Leonidász	A láda tartalmazza a Hó-Leonidász pecsétet.
-53519	Sarkvidéki Kán	A láda tartalmazza a Sarkvidéki Kán pecsétet.
-53520	Sarki Porky	A láda tartalmazza a Sarki Porky pecsétet.
-53521	Fagyos Rufusz	A láda tartalmazza a Fagyos Rufusz pecsétet.
+53518	Hó-Leonidász	Ebben a ketrecben található a Hó-Leonidász pecsét.
+53519	Sarkvidéki Kán	Ebben a ketrecben található a Sarkvidéki Kán pecsét.
+53520	Sarki Porky	Ebben a ketrecben található a Sarki Porky pecsét.
+53521	Fagyos Rufusz	Ebben a ketrecben található a Fagyos Rufusz pecsét.
 53522	Sheldon fészke	Kisállatod, Sheldon ebben a fészekben rejtőzött el.
 53523	Nyúlketrec	Ebben a ketrecben rejtőzik Cooper, a kisnyúl.
 53526		
 60001	Epe	Egy makacs testi folyadék ami az epéből van nyerve.
 60002	Raktár őrök levele	A raktárt őrzők ajánlása
 60003	Hősi szimbólum	Egy tárgy, amit nem adnak könnyelműen.
-70002	Harmadik kéz	Egy kéz, melyet Yang automatikusan felvesz.
+70002	Harmadik kéz	Egy kéz, ami automatikusan felveszi a Yangot.
 70003	Vezér könyve	Ameddig egy csapat vezére rendelkezik ezzel a könyvvel, minden csapattag 30%-kal több tapasztalati pontot szerez.
 70004	Szorgalom medálja	Jutalom a kemény munkáért. 20%-kal több tapasztalati pontot biztosít a harc idejére.
-70005	Tapasztalat gyűrű	A harcban 50%-kal több tapasztalati pontot szerzel.
+70005	Tapasztalat gyűrű	Növeli a tapasztalat gyűjtést 50%-kal 60 percen keresztül.
 70006	Nyelv gyűrű	Régmúlt időkben a diplomáciának készült. Más birodalmakból érkezőkkel beszélhetsz segítségével.
 70008	Fehér zászló	Fehér zászló amivel jelezni lehet, ha megadod magad.
 70009	Kincsesláda	Egy láda ami sok kis dísszel van díszítve. Csak egy speciális kulcscsal lehet kinyitni.
@@ -1866,24 +1866,24 @@
 70015	Olcsó kefe	Egy átlagos, nagy keve, kemény fa fogóval.
 70020	Barackvirág bor	Ital, amely azonnal 500 ponttal regenerálja TP-jeid számát.
 70024	Megáldó márvány	Legendás áldott márvány. Ha egy tárgynak 4 jellemzője van, hozzáad még egyet.
-70027	Kovács jegyzete	Egy jegyzet a kovácstól, ami elmagyarázza, hogy hogyan javítsd fel fegyvered.
-70031	Körülzáró Pamflet	Ez a pamflet, több dologgal együtt, az emberi test potenciális gyenge pontjaira koncentrál.
+70027	Kovács jegyzete	Egy jegyzet a kovácstól, ami elmagyarázza, hogyan fejlessz tárgyakat. 100%-ra növeli az esélyét egy tárgy fejlesztésének +4-ről +5-re.
+70031	Körülzáró Pamflet	Az irat, több dologgal együtt, az emberi test gyenge pontjait hivatott megerősíteni a lehetőségeit pedig kihasználni.
 70035	Mágikus rézérc	Ha kombinálod az áldástekercset és ezt az ércet a kovácsnál, készíthetsz harc tekercsét.
-70037	Feledés könyve	A legendás könyv, mely egy kitanult készséget teljesen elfeledtet. 1 készségpontot mozoghatsz.
+70037	Feledés könyve	Ezzel a könyvvel hősöd elfelejthet egy korábban megtanult készséget. Segítségével 1 készségpontot mozgathatsz.
 70038	Bátorság köpeny	Egy színes köpeny, amellyel a harcosok bátorságukat bizonyítják, mivel minden szörnyet odacsalogat.
 70039	Kovács kézikönyv	Könyv, amely egy kovács lelkét őrzi. Használatával növelhető a tárgyak javításának esélye.
 70040	Ork makacsság	A kitartás eltűnését csökkenti a felére.
-70043	Tolvaj kesztyű	Megduplázza esélyed tárgyak zsákmányolására.
+70043	Tolvaj kesztyű	Megduplázza az esélyt tárgyak zsákmányolására.
 70047	Nyelv gyűrű (Minta)	Korábban ez a gyűrű a diplomaták körében volt használatos. Használójának lehetővé teszi, hogy más birodalmak nyelvén is beszéljen.
-70048	Menekült köpeny	Köpeny, amelyet sok menekülő hord. Elrejtedi rangodat, ha nálad van.
-70049	Lucy gyűrűje	A gyűrű az áll, hogy "A sárkányisten áld téged". Csökkenti az esélyét, hogy egy csatában elveszíts egy tárgyat.
+70048	Menekült köpeny	Ezzel a titokzatos köpennyel elrejtheted a valódi rangodat.
+70049	Lucy gyűrűje	A felirat a gyűrűn ezt írja: "A Sárkányisten áldása legyen veled!" A gyűrű csökkenti az esélyét, hogy egy csatában elveszíts egy tárgyat. Tárgyak elvesztése helyett Lucy gyűrűjét veszíted el.
 70050	Bölcs császár szimbóluma	Egy örökölt szimbólum a régi királyi családtól, amely az uralkodónak nagy erőt kölcsönöz.
 70051	Bölcs császár kesztyűje	A régi királyi család öröksége, amely titokzatos erőt ad az uralkodónak.
 70052	Karma varázslat 1	Varázslat, amelyet pech ellen használnak a buddhisták.
 70053	Karma varázslat 2	Varázslat, amelyet pech ellen használnak a buddhisták.
 70054	Karma varázslat 3	Varázslat, amelyet pech ellen használnak a buddhisták.
 70056	Gránátalma ital+	A bájital azonnal helyreállít 1000 pontot a TP-dből.
-70057	Bátorság köpeny	Egy színes köpeny, amellyel a harcosok bátorságukat bizonyítják, mivel minden szörnyet odacsalogat. Ez a tárgy átadható.
+70057	Bátorság köpeny	Egy színes köpeny, amellyel a harcosok bátorságukat bizonyítják, mivel minden szörnyet odacsalogat.
 70058	Teleport-gyűrű	Ez a gyűrű 50 alkalommal teleportál téged a kívánt helyre a birodalmon belül. Nem adható át.
 70102	Zen-bab	Csökkenti az ellenséges, növeli a jó rangot.
 70104	Átváltoztató gömb	A gömb segítségével szörnnyé változtathatod magad.
@@ -1905,16 +1905,16 @@
 71005	Nyelv gyűrű	7 napon keresztül minden birodalmi nyelvet megértesz.
 71006	Nyelv gyűrű	15 napon keresztül minden birodalmi nyelvet megértesz.
 71007	Nyelv gyűrű	30 napon keresztül minden birodalmi nyelvet megértesz.
-71008	Horgászkönyv	Megduplázza esélyed arra, hogy ritka halat fogjál.
+71008	Horgászkönyv	Szükséges a ritka halak kifogásához, illetve megduplázza esélyed a sikeres kifogásukra.
 71009	Raktár láda	Raktárad még két termet tartalmaz.
 71010	Harmadik kéz	Egy kéz, ami  automatikusan felveszi a Yangot.
 71011	Érzelem maszk	Ezzel a maszkkal szabadjára engedheted érzelmeidet.
 71012	Vezér könyve	Ameddig egy csapat vezére rendelkezik ezzel a könyvvel, minden csapattag 3 órán keresztül 30%-kal több tapasztalati pontot szerez.
 71013	Tűzijáték	Rakéta, amely mindenki számára megvilágítja az égboltot.
-71014	Támadó ital +10	Megnöveli a támadósebességedet 30 percre 10%-kal.
-71015	Tapasztalat gyűrű	50%-kal több tapasztalati pontot gyűjtesz, miközben harcolsz.
+71014	Támadó ital +10	Megnöveli a támadósebességedet 10%-kal.
+71015	Tapasztalat gyűrű	A harcban 50%-kal több tapasztalati pontot szerzel.
 71016	Tolvaj kesztyű	Megduplázza esélyed tárgyak zsákmányolására.
-71017	Szerencse medál	Megduplázza esélyed, hogy Yangot zsákmányolj.
+71017	Szerencse medál	Megduplázza esélyed Yang zsákmányolására.
 71018	Élet áldása	Áldás, amely azonnal visszaadja az összes TP-det.
 71019	Mágia áldása	Egy áldás, amely azonnal visszaadja az összes MP-det.
 71020	Sárkány áldása	Áldás, amely teljes mértékben, azonnal regenerálja TP-det és MP-det.
@@ -1924,15 +1924,15 @@
 71024	Erő visszatérése	Erőd státuszpontjait visszaállítja a kiinduló helyzetire. A pontokat újra eloszthatod.
 71025	Kovács köve	A kovácsnál készíthetsz Kovács kézikönyvet ennek a kőnek a segítségével és az áldástekerccsel.
 71026	Mágikus vasérc	Ezzel az érccel és egy áldástekerccsel a kovácsnál elkészíthető egy sárkánytekercs.
-71027	Sárkányisten élet	Megnöveli a maximális TP-det 30 percre 20%-kal.
-71028	Sárkányisten támadás	12-15%-kal növeli 30 percen át az általad csatában okozott veszteségeket.
-71029	Sárkányisten intellig.	Megnöveli a maximális MP-t 30 percen keresztül 20%-kal.
-71030	Sárkányisten védekezés	30 percen át 12-15%-kal csökkenti a csatában elszenvedett veszteségeidet.
+71027	Sárkányisten élet	Megnöveli a maximális TP-det 20%-kal.
+71028	Sárkányisten támadás	Megnöveli támadóértéked 20%-kal.
+71029	Sárkányisten intellig.	Megnöveli a maximális MP-det 20%-kal.
+71030	Sárkányisten védekezés	20%-kal csökkenti a csatában elszenvedett sebzésed.
 71031	Sárkányisten támogatás	A karaktered életereje, ereje, intelligenciája és ügyessége ideiglenesen az ötszörösére emelkedik.
 71032	Sárkánytekercs	Megszünteti annak a rizikóját, hogy egy tárgy feljavítás közben tönkre megy. Csak a minősége romlik egy szinttel. Közben a sikeres feljavítás valószínűségét is megnöveli 10%-kal.
 71033	Érzelem maszk	Ezzel a maszkkal szabadjára engedheted érzelmeidet.
-71034	Támadó ital+15	Megnöveli a támadósebességedet 30 percre 15%-kal.
-71035	Kutatói Elixír	Növeli azoknak a kutatási tárgyaknak a minőségét amiket összegyűjtöttél, ezzel növelve az esélyét annak hogy elfogadottak lesznek.
+71034	Támadó ital+15	Megnöveli a támadósebességedet 15%-kal.
+71035	Kutatói Elixír	Növeli az összegyűjtött kutatási tárgyak minőségét, ezzel növelve az esélyt arra, hogy elfogadottak lesznek. Nem használható a küldetésekhez Yoharán.
 71036	Főork tekercse	Egy főork jelenik meg karaktered mellett. Vigyázz, egy főnökről van szó!
 71037	Vezető tekercse	Egy sötét vezető jelenik meg karaktered mellett. Vigyázz, egy főnökről van szó!
 71038	Pókkirálynő tekercse	Egy pókkirálynő jelenik meg karaktered mellett. Vigyázz, egy főnökről van szó!
@@ -1941,14 +1941,14 @@
 71041	Kilencfarkú tekercse	Egy kilencfarkú jelenik meg karaktered mellett. Vigyázz, egy főnökről van szó!
 71042	Démonkirály tekercse	Egy Büszke démonkirály jelenik meg karaktered mellett. Vigyázz, egy főnökről van szó!
 71043	Tekercs - Tigris Szellem	Egy tigris szellem jelenik meg a karaktered mellett. Légy óvatos, ez egy Főnök!
-71044	Kritikus Csapás	Megnöveli esélyedet 10 percen át 20%-kal arra, hogy a csatában kritikus találatot érj el.
-71045	Átütő Csapás	Megnöveli esélyed 10 percen át 20%-kal arra, hogy a csatában áthatoló találatot érj el.
+71044	Kritikus Csapás	20%-kal növeli esélyed, hogy kritikus találatot vigyél be.
+71045	Átütő Csapás	20%-kal növeli esélyed, hogy átható találatot vigyél be.
 71047	Szellemkő oldat	Eltávolít egy szellemkövet egy tárgyadból.
 71048	Megváltoztató varázslat	Ez a varázslat megváltoztatja karaktered nemét.
 71049	Selyem köteg	Ezzel 10 napig ingyen nyithatsz saját boltot.
 71050	Sebesség ital	30 percen át megnöveli sebességed 60-nal.
-71051	Tárgy elvarázsolás	Hozzáad egy új speciális bónuszt egy tárgyadhoz, ha még nincs neki.
-71052	Áldó tárgy	Levesz egy speciális bónuszt az egyik tárgyadról és hozzáad egy másikat.
+71051	Tárgy elvarázsolás	Levesz egy speciális bónuszt az egyik tárgyadról és hozzáad egy másikat.
+71052	Áldó tárgy	Hozzáad egy új speciális bónuszt egy tárgyadhoz, ha még nincs neki.
 71054	Birodalmak oldata	Lehetővé teszi egy másik birodalomba való számüzetésbe menést.
 71055	Név oldata	Lehetőség, hogy karaktered más nevet válasszon.
 71056	Menny oldata	Növeli a Szellemkő fejlesztés sikerének esélyt.
@@ -1979,7 +1979,7 @@
 71081	Metinkő (normál)	Egy normál Metinkő fog lezuhanni melléd.
 71082	Metinkő (nehéz)	Egy nagy Metinkő fog lezuhanni melléd.
 71083	Kő kézikönyv	Eltávolít minden törött követ egy tárgyból. Ezzel kapsz még egy lehetőséget a fegyverzet, vagy a felszerelés feljavítására.
-71084	Megbűvölő tárgy	Eltávolítja a bónuszokat a tárgyadból és újakat ad hozzá.
+71084	Megbűvölő tárgy	Eltávolítja a bónuszokat egy tárgyadból, majd újakat ad hozzá. Csak az első öt bónuszra vonatkozik.
 71085	Tárgy-megerősítő	Ha szerencsés vagy, az egyik tárgyadhoz egy új bónuszt ad. (Maximum 4 bónuszig)
 71088	Missziókönyv(könnyű)	A könyv ami barna bőrrel van borítva, egy küldetést tartalmaz ami zöldszarv harcosok által is teljesíthető.
 71089	Missziókönyv (normál)	A könyv ami barna bőrrel van bevonva, olyan küldetést tartalmaz amit csak azok tudnak teljesíteni akik már tapasztalt harcosok.
@@ -1988,127 +1988,127 @@
 71092	Átváltoztató könyv	Eme könyv sikeres tanulmányozása megnöveli az átváltozási képzettségedet. Eltűnik miután elolvastad.
 71093	Átváltoztató gömb	A gömb segítségével szörnnyé változtathatod magad.
 71094	Koncentrált olvasás	2.5-szeresével növeli a készséged fejlesztésének esélyét, amikor a következő könyvet (vagy Lélekkövet) olvasod.
-71095	Belépési engedély	Ha átadod ezt az engedélyt az illetékes őrnek, beléphetsz a pók kazamata egy további szintjére és a Vörös sárkány-erődbe is.
+71095	Belépési engedély	Ha átadod ezt az engedélyt az illetékes őrnek, beléphetsz bizonyos kazamaták további szintjeire.
 71096	Belépő tábla	Ezzel a medállal átmehetsz egy kapun.
-71099	Utód gyűrű	Felhatalmaz egy céh vezetőt arra, hogy kiválassza utódát és átadja a vezetést neki.
+71099	Utód gyűrű	Felhatalmazza a céhvezért, hogy kiválassza utódját és átadja a vezetést neki.
 71100	Tancsere bizonyítvány	Felejtsd el a tudományod, és kezdj egy újat. Ehhez legalább a 31. szinten kell lenned.
-71101	Sietség itala	Ez az ital csökkenti az újratöltődési időt 20 százalékkal 30 percig.
-71102		
+71101	Sietség itala	Ez az ital 20%-kal lerövidíti a képességeid újratöltési idejét.
+71102		Megnöveli a varázssebességedet 30%-kal.
 71103	Újraelosztás (VIT)	Visszaállítja az életerő pontjaidat 1-re és lehetőséget ad a pontok újraosztására.
 71104	Újraelosztás (INT)	Visszaállítja az Intelligencia pontokat 1-re és lehetőséget ad a pontok újraosztására.
 71105	Újraelosztás (ERŐ)	Visszaállítja az erő pontjaidat 1-re és lehetőséget ad a pontok újraosztására.
 71106	Újraelosztás (ÜGY)	Visszaállítja az ügyességedet 1-re és lehetővé teszi hogy újra kioszd a pontjaidat.
-71107	Élet Gyümölcse	Növeli a rang pontot 2000-rel (újratltési idő: 8 óra).
+71107	Élet Gyümölcse	Növeli a rang pontot 2000-rel (újratöltési idő: 8 óra).
 71108	Gránátalma ital	A bájital azonnal helyreállít 800 pontot a TP-dből. Ez a tárgy átadható.
-71109	Javítás tekercse	Ezzel a tekerccsel el tudod távolítani az utoljára sikeresen hozzáadott Szellem Követ a tárgyból.
+71109	Javítás tekercse	Ezzel a tekerccsel el tudod távolítani az utoljára sikeresen hozzáadott Szellemkövet a tárgyból.
 71110	Ló Cukra	Ez a cukor lehetővé teszi, hogy nevet adj a lovadnak.  Továbbá növeli a védelmi szintjét 20-szal.
 71113	Betekintés üvege	Lehetővé teszi hogy más játékosnak mutass tárgyakat a tárolódból. Az üveg eltörik a használat során.
-71114	Vadkan Pecsét (sárga)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
+71114	Vadkan Pecsét (sárga)	A pecsét mágiája megidéz egy hatalmas állat szellemet, amivel pillanatok alatt a célodhoz érhetsz. Megnöveli lovaglója védelmi értékét 75-tel.
 711151	Vadkan Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711152	Vadkan Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711153	Vadkan Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711154	Vadkan Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
-71115	Vadkan Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
-71116	Farkas Pecsét (sárga)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
+71115	Vadkan Pecsét (kék)	A pecsét mágiája megidéz egy hatalmas állat szellemet, amivel pillanatok alatt a célodhoz érhetsz. Megnöveli lovaglója védelmi értékét 100-zal.
+71116	Farkas Pecsét (sárga)	A pecsét mágiája megidéz egy hatalmas állat szellemet, amivel pillanatok alatt a célodhoz érhetsz. Megnöveli lovaglója védelmi értékét 100-zal.
 711171	Farkas Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711172	Farkas Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711173	Farkas Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711174	Farkas Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
-71117	Farkas Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
-71118	Tigris Pecsét (sárga)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
+71117	Farkas Pecsét (kék)	A pecsét mágiája megidéz egy hatalmas állat szellemet, amivel pillanatok alatt a célodhoz érhetsz. Megnöveli lovaglója védelmi értékét 150-nel.
+71118	Tigris Pecsét (sárga)	A pecsét mágiája megidéz egy hatalmas állat szellemet, amivel pillanatok alatt a célodhoz érhetsz. Megnöveli lovaglója védelmi értékét 125-tel.
 711191	Tigris Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711192	Tigris Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711193	Tigris Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711194	Tigris Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
-71119	Tigris Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
-71120	Oroszlán Pecsét (sárga)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
+71119	Tigris Pecsét (kék)	A pecsét mágiája megidéz egy hatalmas állat szellemet, amivel pillanatok alatt a célodhoz érhetsz. Megnöveli lovaglója védelmi értékét 200-zal.
+71120	Oroszlán Pecsét (sárga)	A pecsét mágiája megidéz egy hatalmas állat szellemet, amivel pillanatok alatt a célodhoz érhetsz. Megnöveli lovaglója támadó értékét 200-zal.
 711211	Tigris Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711212	Oroszlán Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711213	Oroszlán Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
 711214	Oroszlán Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
-71121	Oroszlán Pecsét (kék)	Eme pecsét mágiája hív egy hatalmas állat szellemet ami pillanatok alatt elvisz téged arra a helyre ahova menni szeretnél.
-71122		
+71121	Oroszlán Pecsét (kék)	A pecsét mágiája megidéz egy hatalmas állat szellemet, amivel pillanatok alatt a célodhoz érhetsz. Megnöveli lovaglója támadó értékét 300-zal.
+71122		Beléphetsz vele a Sárkány templomába.
 71123	Sárkány pikkely	A Sárkány pikkely a legkeményebb anyagok egyike.
-71124	Fehér oroszlán	A fehér bundás állatok nagyon ritkák és számos kultúrában imádják őket, mert azt gondolják hogy nagy hatalommal rendelkeznek.
-71125	Harci vadkan pecsét	Vadállatokat szelídíteni nagyon sok energiába kerül. Bár az eredmény lenyűgöző.
-71126	Harci farkas pecsét	Vadállatokat szelídíteni nagyon sok energiába kerül. Bár az eredmény lenyűgöző.
-71127	Vihar tigris pecsét	Vadállatokat szelídíteni nagyon sok energiába kerül. Bár az eredmény lenyűgöző.
-71128	Harci oroszlán pecsét	Vadállatokat szelídíteni nagyon sok energiába kerül. Bár az eredmény lenyűgöző.
+71124	Fehér oroszlán	A fehér bundás állatok nagyon ritkák és számos kultúrában imádják őket, mert azt gondolják, hogy nagy hatalommal rendelkeznek. Megnöveli a tapasztalat szerzést 30%-kal.
+71125	Harci vadkan pecsét	A vadállatok megszelídítése gyakorlott mágiahasználatot igényel, de az eredmények lenyűgözőek lehetnek. Lovaglójának +20% szörnyek elleni erőt biztosít.
+71126	Harci farkas pecsét	A vadállatok megszelídítése gyakorlott mágiahasználatot igényel, de az eredmények lenyűgözőek lehetnek. Megnöveli esélyed a kritikus találatra 10%-kal.
+71127	Vihar tigris pecsét	A vadállatok megszelídítése gyakorlott mágiahasználatot igényel, de az eredmények lenyűgözőek lehetnek. Megnöveli esélyed a kritikus találatra 10%-kal.
+71128	Harci oroszlán pecsét	A vadállatok megszelídítése gyakorlott mágiahasználatot igényel, de az eredmények lenyűgözőek lehetnek. 10%-kal csökkenti az elszenvedett sérüléseid mértékét.
 71129	Sárkány karom	Egy pillantás erre a félelmetes karomra emlékeket idéz elő...
-71130	Belépési engedély	Ha átadod ezt az engedélyt az illetékes őrnek, beléphetsz a pók kazamata egy további szintjére és a Vörös sárkány-erődbe is. Ez a tárgy átadható.
-71131		
-71132		
-71133		
-71134		
-71135	Holdsarló gyűrű	Egy holdsarló stílusban művészien gravírozott gyűrű.
-71136	Nyalóka	Egy titkos összetevőkből készült nyalóka, mely tapasztalatot és erőt biztosít a csatához.
-71137	Királytigris pecsét (k)	A mágikus pecsét megidézi hátasod, a fenséges Királytigrist (kék).
-71138	Királytigris pecsét (v)	A mágikus pecsét megidézi hátasod, a fenséges Királytigrist (vörös).
-71139	Királytigris pecsét (a)	A mágikus pecsét megidézi hátasod, a fenséges Királytigrist (arany).
-71140	Királytigris pecsét (z)	A mágikus pecsét megidézi hátasod, a fenséges Királytigrist (zöld).
-71141	Királytigris pecsét (sz)	A mágikus pecsét megidézi hátasod, a fenséges Királytigrist (szürke).
-71142	Királytigris pecsét (f)	A mágikus pecsét megidézi hátasod, a fenséges Királytigrist (fehér).
+71130	Belépési engedély	Ha átadod ezt az engedélyt az illetékes őrnek, beléphetsz bizonyos kazamaták további szintjeire. Ez a tárgy átadható.
+71131		Egy nemes Fekete ló pecsétje. Megnöveli mozgási sebességedet 60-nal.
+71132		Egy nemes Fekete ló pecsétje. Megnöveli mozgási sebességedet 60-nal.
+71133		Egy nemes Fekete ló pecsétje. Megnöveli mozgási sebességedet 60-nal.
+71134		Egy nemes Fekete ló pecsétje. Megnöveli mozgási sebességedet 60-nal.
+71135	Holdsarló gyűrű	Ezeket biztosítja számodra: | +50% tapasztalati pont | +20% támadósebesség | +20% varázssebesség | +30% fizikai támadás | +10% maximum TP | +10% maximum MP | +5% minden öltözék bónuszhoz
+71136	Nyalóka	A titkos összetevőkből készült nyalóka ad neked: | +50% tapasztalati pont | +30% fizikai sebzés | +20 támadósebesség | +20 varázssebesség | +10% maximum TP | +10% maximum MP
+71137	Királytigris pecsét (k)	Ez a mágikus pecsét megidézi hátasod, a fenséges Királytigrist (kék). Megnöveli a tapasztalat szerzést 30%-kal.
+71138	Királytigris pecsét (v)	Ez a mágikus pecsét megidézi hátasod, a fenséges Királytigrist (vörös). Megnöveli a tapasztalat szerzést 30%-kal.
+71139	Királytigris pecsét (a)	Ez a mágikus pecsét megidézi hátasod, a fenséges Királytigrist (arany). Megnöveli a tapasztalat szerzést 30%-kal.
+71140	Királytigris pecsét (z)	Ez a mágikus pecsét megidézi hátasod, a fenséges Királytigrist (zöld). Megnöveli a tapasztalat szerzést 30%-kal.
+71141	Királytigris pecsét (sz)	Ez a mágikus pecsét megidézi hátasod, a fenséges Királytigrist (szürke). Megnöveli a tapasztalat szerzést 30%-kal.
+71142	Királytigris pecsét (f)	Ez a mágikus pecsét megidézi hátasod, a fenséges Királytigrist (fehér). Megnöveli a tapasztalat szerzést 30%-kal.
 71143	Öröm gyűrűje	Gyűrű értékes jáde és türkiz dísszel és a következő bónuszokkal: +50% tapasztalatpont +20% támadósebesség +20% varázssebesség +30% szörnyek elleni erő +10% maximum TP +10% maximum MP
 71144	Karácsonyi láda	Egy szépen becsomagolt karácsonyi ajándék, mely ünnepi meglepetést rejt.
-71145	Örök szerelem amulettje	Egy szív alakú ezüst amulett, mágikus drágakövekkel díszítve.
-71146	Ámor kincse (rózsa)	Szív alakú láda, benne 10 meglepetéssel. 30 percenként nyitható.
-71147	Ámor kincse (kék)	Szív alakú láda, benne 10 meglepetéssel. 30 percenként nyitható.
-71148	Akaraterő gyűrűje	7 napra +30% EXP-t, +20% védelmi esélyt Harcosok ellen, +20% védelmi esélyt Nindzsák ellen, +30% Szörnyek elleni erőt, +10% maximum TP-t és +10% maximum MP-t ad.
-71149	A halálos erő gyűrűje	7 napra +30% EXP-t, +20% védelmi esélyt  Surák ellen, +20% védelmi esélyt  Sámánok ellen, +30% Szörnyek elleni erőt, +10% maximum TP-t és +10% maximum MP-t ad.
+71145	Örök szerelem amulettje	Egy szív alakú ezüst amulett, mágikus drágakövekkel díszítve. Biztosít neked: | +30% EXP | +10 támadósebesség | +10 varázssebesség | +5% TP és MP | +10% szörnyek elleni erő.
+71146	Ámor kincse (rózsa)	Szív alakú láda, benne 5 meglepetéssel. 30 percenként nyitható.
+71147	Ámor kincse (kék)	Szív alakú láda, benne 5 meglepetéssel. 30 percenként nyitható.
+71148	Akaraterő gyűrűje	Ezt nyújtja az időtartama alatt: +30% EXP, +20% védekezési esély Harcosok ellen, +20% védekezési esély Nindzsák ellen, +20% védekezési esély Vérfarkasok ellen, +30% Szörnyek elleni erő, +10% maximum TP és +10% maximum MP.
+71149	A halálos erő gyűrűje	Egy bizonyos ideig +30% EXP-t, +20% védekezési esélyt Surák ellen, +20% védekezési esélyt Sámánok ellen, +20% védekezési esélyt Vérfarkasok ellen, +30% szörnyek elleni erőt, +10% maximum TP-t és +10% maximum MP-t ad neked.
 71150	Mágikus tojás	A művészien díszített ovális láda több, mint egy Húsvéti meglepetés, apránként fedi fel kincseit.
 71151	Zöld Mágia	Eltávolítja a bónuszokat a tárgyadból és újakat ad hozzá. Csak legfeljebb 40-es szintű fegyvereken és vérteken használható. A szint-ládából származó tárgy, nem adható át.
 71152	Zöld Erő	Ha szerencsés vagy, az egyik tárgyadhoz egy új bónuszt ad (Maximum 4 bónuszig). Csak legfeljebb 40-es szintű fegyvereken és vérteken használható. A szint-ládából származó tárgy, nem adható át.
 71153	Bölcsesség itala	Ez az ital hozzásegít, hogy egy játékórán át 100%-kal több tapasztalatot gyűjts. Nem adható át.
-71154		
-71155		
-71156		
+71154		Ezen ital segítségével 80%-kal több tapasztalatot gyűjtesz három játékórán át. Nem adható át.
+71155		Ez a bájital lehetővé teszi, hogy 100%-kal több tapasztalatot gyűjts három játékórán át. Nem adható át.
+71156		Megnöveli a tapasztalat szerzést 150%-kal.
 71157		
-71158	Hősi medál	+50% EXP-t, +30% támadást, +20% támadósebességet, +20% Varázssebességet, +10% TP-t +10% MP-t ad.
+71158	Hősi medál	+50% EXP-t, +30% fizikai támadást, +20% támadósebességet, +20% varázssebességet, +10% TP-t +10% MP-t ad.
 71159	Milon ládája	Egy láda valódi hősöknek. Győzelmed jutalmaként egy véletlenszerű tárgyat tartalmaz.
 71160	Athene ládája	Egy láda valódi hősnőknek. Győzelmed jutalmaként egy véletlenszerű tárgyat tartalmaz.
-71161	Equus Porphyreus	Az egyik legszebb és rendkívül ritka lila ló pecsétje.
-71164	Üstökös-pecsét	Ezzel a pecséttel tudod megidézni rénszarvasod, Üstököst.
-71166	Páncélozott panda-pecsét	Ezzel a pecséttel tudod megidézni Páncélozott pandád.
-71171	Egyszarvú-pecsét	Ez a pecsét idézi meg Egyszarvúd.
-71172	Rémálom-pecsét	Ez a pecsét idézi meg Rémálmod.
+71161	Equus Porphyreus	Az egyik gyönyörű és rendkívül ritka lila ló pecsétje. Megnöveli mozgási sebességedet 60-nal.
+71164	Üstökös-pecsét	Ezzel a pecséttel tudod megidézni rénszarvasod, Üstököst. Megnöveli mozgási sebességedet 60-nal.
+71166	Páncélozott panda-pecsét	Ezzel a pecséttel idézheted meg Páncélozott pandádat. Megnöveli mozgási sebességedet 60-nal.
+71171	Egyszarvú-pecsét	Ezzel a pecséttel idézheted meg Egyszarvúdat. Megnöveli mozgási sebességedet 60-nal.
+71172	Rémálom-pecsét	Ezzel a pecséttel idézheted meg Rémálmot. Megnöveli mozgási sebességedet 60-nal.
 71173	Teleport tekercs	Ez a Tekercs közvetlenül a Vörös sárkány-erőd kapuja elé juttat téged.
 71174	Belépési engedély	Ha felmutatod ezt a Belépési engedélyt a megfelelő őrnek, beléphetsz vele a Vörös sárkány-erődbe.
 71175	Belépési engedély	Ha felmutatod ezt a Belépési engedélyt a megfelelő őrnek, beléphetsz vele a Vörös sárkány-erődbe.
-71176	Fekete párduc	Ez a pecsét idézi meg rejtélyes Fekete párducod.
-71177	Leopárd pecsét	Ez a pecsét idézi meg bátor Leopárdod.
-72001	Tapasztalat gyűrű	Növeli a tapasztalat gyűjtést 50%-kal 1 órán át.
+71176	Fekete párduc	Ez a pecsét idézi meg titokzatos Fekete párducod. Megnöveli mozgási sebességedet 30-cal.
+71177	Leopárd pecsét	Ez a pecsét idézi meg rettenthetetlen Leopárdod. Megnöveli mozgási sebességedet 30-cal.
+72001	Tapasztalat gyűrű	Növeli a tapasztalat gyűjtést 50%-kal 10 órán keresztül.
 72002	Tapasztalat gyűrű	Növeli a tapasztalat gyűjtést 50%-kal 30 percen keresztül
 72003	Tapasztalat gyűrű	Növeli a tapasztalat gyűjtést 50%-kal 3 órán keresztül.
-72004	Tolvaj kesztyű	Megduplázza a tárgyak zsákmányolására az esélyedet 10 órán át.
-72005	Tolvaj kesztyű	Megduplázza a tárgyak zsákmányolására az esélyedet 30 percen át.
-72006	Tolvaj kesztyű	Megduplázza a tárgyak zsákmányolására az esélyedet 3 órán át.
+72004	Tolvaj kesztyű	Megduplázza esélyed tárgyak zsákmányolására 10 órán át.
+72005	Tolvaj kesztyű	Megduplázza esélyed tárgyak zsákmányolására 30 percen át.
+72006	Tolvaj kesztyű	Megduplázza esélyed tárgyak zsákmányolására 3 órán át.
 72007	Selyem nyaláb	Ezzel nyithatsz saját boltot 10 órán át.
 72008	Selyem köteg	Ezzel 30 percre nyithatsz saját boltot.
 72009	Selyem köteg	Ezzel 3 órára nyithatsz saját boltot.
-72010	Szerelmesek tolla	Ha ez föl van véve, a szerelem pontjai egy párnak kétszer olyan gyorsan növekednek 15 percen át.
-72011	Szerelmesek tolla	Ha ez föl van véve, a szerelem pontjai egy párnak kétszer olyan gyorsan növekednek 30 percen át.
-72012	Szerelmesek tolla	Ha ez föl van véve, a szerelem pontjai egy párnak kétszer olyan gyorsan növekednek 3 órán át.
-72013	Horgászkönyv	Az esélyed hogy ritka halat fogjál kétszer akkora lesz 15 percen át.
-72014	Horgászkönyv	Az esélyed hogy ritka halat fogjál kétszer akkora lesz 30 percen át.
-72015	Horgászkönyv	Az esélyed hogy ritka halat fogjál kétszer akkora lesz 3 órán át.
-72016	Harmadik kéz	Egy kéz ami automatikusan felvesz minden eldobott Yang-et 15 percen át.
-72017	Harmadik kéz	Egy kéz ami automatikusan felvesz minden eldobott Yang-et 30 percen át.
-72018	Harmadik kéz	Egy kéz ami automatikusan felvesz minden eldobott Yang-et 3 órán át.
+72010	Szerelmesek tolla	Ha fel van szerelve, a pár szerelmi pontjait kétszeres gyorsasággal növeli 15 percen át.
+72011	Szerelmesek tolla	Ha fel van szerelve, a pár szerelmi pontjait kétszeres gyorsasággal növeli 30 percen át.
+72012	Szerelmesek tolla	Ha fel van szerelve, a pár szerelmi pontjait kétszeres gyorsasággal növeli 3 órán át.
+72013	Horgászkönyv	Szükséges a ritka halak kifogásához, illetve megduplázza esélyed a sikeres kifogásukra 15 percen keresztül.
+72014	Horgászkönyv	Szükséges a ritka halak kifogásához, illetve megduplázza esélyed a sikeres kifogásukra 30 percen keresztül.
+72015	Horgászkönyv	Szükséges a ritka halak kifogásához, illetve megduplázza esélyed a sikeres kifogásukra 3 órán keresztül.
+72016	Harmadik kéz	Egy kéz, ami egy bizonyos időn át automatikusan felveszi az eldobott Yangot.
+72017	Harmadik kéz	Egy kéz, ami 30 percen át automatikusan felveszi az eldobott Yangot.
+72018	Harmadik kéz	Egy kéz, ami 3 órán át automatikusan felveszi az eldobott Yangot.
 72019	Raktár láda	A tárolód kap plussz kettő raktárhelyet 15 percen át.
 72020	Raktár láda	A tárolód kap plussz kettő raktárhelyet 30 percen át.
 72021	Raktár láda	A tárolód kap plussz kettő raktárhelyet 3 órán át.
 72022	Szerencse medál	Megduplázza esélyed 10 órára, hogy Yangot zsákmányolj.
 72023	Szerencse medál	Megduplázza esélyed 30 percre, hogy Yangot zsákmányolj.
 72024	Szerencse medál	Megduplázza esélyed 3 órára, hogy Yangot zsákmányolj.
-72025	Kritikus Csapás	Növeli az esélyt 10 percen át 20%-kal arra, hogy a harcban átható találatot érj el.
-72026	Kritikus Csapás	Növeli az esélyt 10 percen át 20%-kal arra, hogy a harcban átható találatot érj el.
-72027	Kritikus Csapás	Növeli az esélyt 10 percen át 20%-kal arra, hogy a harcban átható találatot érj el.
+72025	Kritikus Csapás	10%-kal növeli esélyed, hogy átható találatot vigyél be.
+72026	Kritikus Csapás	10%-kal növeli esélyed, hogy átható találatot vigyél be.
+72027	Kritikus Csapás	10%-kal növeli esélyed, hogy átható találatot vigyél be.
 72028	Érzelem maszk	7 napig szabadjára engedheted érzelmeidet.
 72029	Érzelem maszk	15 napig szabadjára engedheted érzelmeidet.
 72030	Érzelem maszk	30 napig szabadjára engedheted érzelmeidet.
-72031	Sárkányisten támadás	12-15%-kal növeli a támadási értékedet 30 percen át.
-72032	Sárkányisten támadás	12-15%-kal növeli a támadási értékedet 30 percen át.
-72033	Sárkányisten támadás	12-15%-kal növeli a támadási értékedet 30 percen át.
+72031	Sárkányisten támadás	Megnöveli támadó értéked 15%-kal 30 percen át.
+72032	Sárkányisten támadás	Megnöveli támadóértéked 15%-kal 30 percen át.
+72033	Sárkányisten támadás	Megnöveli támadóértéked 15%-kal 30 percen át.
 72034	Sárkányisten védekezés	12-15%-kal csökkenti a csatában elszenvedett veszteségeidet.
 72035	Sárkányisten védekezés	12-15%-kal csökkenti a csatában elszenvedett veszteségeidet.
 72036	Sárkányisten védekezés	12-15%-kal csökkenti a csatában elszenvedett veszteségeidet.
@@ -2121,38 +2121,38 @@
 72043	Vezér könyve	Ameddig egy csapat vezére rendelkezik ezzel a könyvvel, minden csapattag 3 órán keresztül 30%-kal több tapasztalati pontot szerez.
 72044	Vezér könyve	Ameddig egy csapat vezére rendelkezik ezzel a könyvvel, minden csapattag 3 órán keresztül 30%-kal több tapasztalati pontot szerez.
 72045	Vezér könyve	Ameddig egy csapat vezére rendelkezik ezzel a könyvvel, minden csapattag 3 órán keresztül 30%-kal több tapasztalati pontot szerez.
-72046	Kritikus esély	Növeli az áthatoló találatra az esélyt 20%-kal 10 percen át.
-72047	Kritikus esély	Növeli az áthatoló találatra az esélyt 20%-kal 10 percen át.
-72048	Kritikus esély	Növeli az áthatoló találatra az esélyt 20%-kal 10 percen át.
-72301	Áldástekercs	Csökkenti a tárgy megsemmisülésének kockázatát, amennyiben a feljavítás nem sikerül. Ennek a mentésnek az ára, hogy a minőség 1 ponttal romlik.
-72302		
-72303		
-72304		
-72305		
-72306		
-72307		
+72046	Kritikus esély	10%-kal növeli esélyed, hogy kritikus találatot vigyél be.
+72047	Kritikus esély	10%-kal növeli esélyed, hogy kritikus találatot vigyél be.
+72048	Kritikus esély	10%-kal növeli esélyed, hogy kritikus találatot vigyél be.
+72301	Áldástekercs	Megszünteti a tárgy megsemmisülésének kockázatát, amennyiben sikertelen a fejlesztés. Ennek a mentésnek az ára, hogy a minőség 1 ponttal romlik.
+72302		Ameddig egy csapat vezére rendelkezik ezzel a könyvvel, minden csapattag három órán keresztül 30%-kal több tapasztalati pontot szerez.
+72303		Növeli a tapasztalat gyűjtést 50%-kal egy órán át.
+72304		Ez a legendás márvány ad egy ötödik tulajdonságot a tárgyakhoz, amiknek már négy tulajdonsága van. A hozzáadás viszont sikertelen is lehet.
+72305		Láthatatlanság tükör
+72306		Egy jegyzet a kovácstól, ami elmagyarázza, hogyan fejlessz tárgyakat. 100%-ra növeli az esélyét egy tárgy fejlesztésének +4-ről +5-re.
+72307		Egy jegyzet a kovácstól, ami elmagyarázza, hogyan fejlessz tárgyakat. 100%-ra növeli az esélyét egy tárgy fejlesztésének +5-ről +6-ra.
 72308	Mágikus rézérc	Ha kombinálod ezt az ércet egy áldástekerccsel a kovácsnál, készíthetsz egy Harc tekercsét.
-72309		
-72310		
-72311		
-72312		
-72313		
-72314		
+72309		Könyv, amely egy régi kovács lelkét őrzi. Használatával növelhető a tárgyak javításának esélye.
+72310		Megszabadít a gonosz szellem átkától, ha a tanulás nem sikerül. A tekercs segítségével egy további készségfejlesztőt olvashatsz el ugyanazon a napon.
+72311		Áldás, amely teljes mértékben, azonnal 100%-ra regenerálja TP-det és MP-det.
+72312		Megnöveli támadóértéked 20%-kal.
+72313		20%-kal csökkenti a csatában elszenvedett sebzésed.
+72314		Megszünteti a tárgy megsemmisülésének kockázatát, amennyiben sikertelen a fejlesztés. Sikertelenség esetén a tárgy minősége csak egy szinttel romlik. Közben a sikeres feljavítás valószínűségét is megnöveli 10%-kal.
 72501	Tapasztalat gyűrű(iCafe)	Növeli a tapasztalatszerzést 20%-kal a tag iCafe-ban.
 72502	Tolvaj kesztyű (iCafe)	Másfélszerezi esélyed tárgyak zsákmányolására a tag iCafe-ban.
 72701	Szélcipő	30-cal növeli mozgási sebességed addig, amíg fel van szerelve.
 72703	Tigriscsont fülbevaló	Támadóértéked megnövekszik 200 ponttal 2 órán át (az idő csak akkor telik, ha viselik a tárgyat). A tárgy nem adható át.
 72704	Sárkánycsont fülbevaló	Védelmi értéked megnövekszik 200 ponttal 2 órán át (az idő csak akkor telik, ha viselik a tárgyat). A tárgy nem adható át.
-72705	Tigriscsont karkötő	A készségeid 15%-kal több kárt okoznak 2 órán át (az idő csak akkor telik, ha viselik a tárgyat). A tárgy nem adható át.
-72706	Sárkánycsont karkötő	A készségek elleni védelem megemelkedik 15%-kal 2 órán át (az idő csak akkor telik, ha viselik a tárgyat). A tárgy nem adható át.
+72705	Tigriscsont karkötő	15 ponttal növeli készségeid sebzését 2 órán át (az idő csak akkor telik, amikor viselik a tárgyat). A tárgy nem adható át.
+72706	Sárkánycsont karkötő	A készségekkel szembeni védelmed megemelkedik 15 ponttal 2 órán át (az idő csak akkor telik, amikor viselik a tárgyat). A tárgy nem adható át.
 72723	Nap Elixír (Kicsi)	Automatikusan újratölti a TP-d. 1.000.000 TP-t tartalmaz.
 72724	Nap Elixír (Közepes)	Automatikusan újratölti a TP-d. 3.000.000 TP-t tartalmaz.
 72725	Nap Elixír (Nagy)	Automatikusan újratölti a TP-d. 7.000.000 TP-t tartalmaz.
-72726	Nap Elixír (különleges)	Automatikusan újratölti a TP-d. 10.000.000 TP-t tartalmaz. Ez a tárgy átadható.
+72726	Nap Elixír (különleges)	10.000.000 TP-t tartalmaz. Automatikusan újratölti a TP-d, illetve ezen felül bónuszt nyújt a max. TP-dhez. Ez a tárgy átadható.
 72727	Hold Elixír (Kicsi)	Automatikusan újratölti a MP-d. 100.000 MP-t tartalmaz.
 72728	Hold Elixír (Közepes)	Automatikusan újratölti a MP-d. 300.000 MP-t tartalmaz.
 72729	Hold Elixír (Nagy)	Automatikusan újratölti a MP-d. 700.000 MP-t tartalmaz.
-72730	Hold Elixír (különleges)	Automatikusan újratölti a MP-d. 1.000.000 MP-t tartalmaz. Ez a tárgy átadható.
+72730	Hold Elixír (különleges)	1.000.000 MP-t tartalmaz. Automatikusan újratölti a MP-d, illetve ezen felül bónuszt nyújt a max. MP-dhez. Ez a tárgy átadható.
 73001	Divatos frizura (vörös)	Divatos frizura, amely jellegzetes külsőt eredményez.
 73002	Divatos frizura (vil.)	Divatos frizura, amely jellegzetes külsőt eredményez.
 73003	Divatos frizura (kék)	Divatos frizura, amely jellegzetes külsőt eredményez.
@@ -2364,24 +2364,24 @@
 76000	Barackvirág bor	Ital, amely azonnal 500 ponttal regenerálja TP-jeid számát. Nem adható át.
 76001	Állapot visszaállító	E tárgy felhasználásával újraoszthatod a státusz pontjaidat. Így tudod a karaktered fejlődését egy más irányba terelni. Nem adható át.
 76002	Zsugorított fej	Ez a Zsugorított démonfej nyitja az Ördög Katakombájában a 3. emeletre vezető pecsétet. Nem adható át.
-76003	Sietség itala	Ez az ital csökkenti az újratöltődési időt 20 százalékkal 30 percig. Nem adható át.
+76003	Sietség itala	Ez az ital 20%-kal lerövidíti a képességeid újratöltési idejét.
 76004	Hold Elixír (Kicsi)	Automatikusan újratölti a MP-d. 10.000 MP-t tartalmaz. Nem adható át.
 76005	Hold Elixír (Közepes)	Automatikusan újratölti a MP-d. 300.000 MP-t tartalmaz. Nem adható át.
 76006	Metinkő iránytű	Az iránytű megmutatja a következő Metin kő irányát és távolságát. Minél fényesebben fénylik, annál közelebb vagy. 6-szor aktiválható. Nem adható át.
 76007	Bátorság köpeny	Egy színes köpeny, amellyel a harcosok bátorságukat bizonyítják, mivel minden szörnyet odacsalogat. Nem adható át.
 76008	Sárkány medálja	Megóv attól, hogy a következő újjáéledésnél tapasztalati pontokat veszíts. Nem adható át.
 76009	Sárkánytekercs	Megszünteti annak a rizikóját, hogy egy tárgy feljavítás közben tönkre megy. Csak a minősége romlik egy szinttel. Közben a sikeres feljavítás valószínűségét is megnöveli 10%-kal. Nem adható át.
-76010	Vérkő	Ez a kő a Bahar-Taraji istenség véréből készült és belépést biztosít neked a Száműzött Barlangjába.
+76010	Vérkő	Ez a kő a Bahar-Taraji istenség véréből készült és belépést biztosít neked a Száműzött Barlangjába. Nem adható át.
 76011	Vezér könyve	Ameddig egy csapat vezére rendelkezik ezzel a könyvvel, minden csapattag 30%-kal több tapasztalati pontot szerez. Nem adható át.
 76012	Sebesség ital	30 percen át megnöveli sebességed 60-nal. Nem adható át.
 76013	Tárgy-megerősítő (kék)	Ha szerencsés vagy, az egyik tárgyadhoz egy új bónuszt ad (Maximum 4 bónuszig). A szint-ládából származó tárgy, nem adható át.
 76014	Megbűvölő tárgy (kék)	Eltávolítja a bónuszokat a tárgyadból és újakat ad hozzá. A szint-ládából származó tárgy, nem adható át.
 76015	Megáldó márvány	Legendás áldott márvány. Ha egy tárgynak 4 jellemzője van, hozzáad még egyet. Nem adható át.
-76016	Áldástekercs	Csökkenti a tárgy megsemmisülésének kockázatát, amennyiben a feljavítás nem sikerül. Ennek a mentésnek az ára, hogy a minőség 1 ponttal romlik. Nem adható át.
-76017	Támadó ital +10	Megnöveli a támadósebességedet 30 percre 10%-kal. Nem adható át.
-76018	Támadó ital+15	Megnöveli a támadósebességedet 30 percre 15%-kal. Nem adható át.
-76019	Belépési engedély	Ha átadod ezt az engedélyt az illetékes őrnek, beléphetsz a pók kazamata egy további szintjére és a Vörös sárkány-erődbe is. Nem adható át.
-76020	Kutatói Elixír	Növeli azoknak a kutatási tárgyaknak a minőségét, amiket összegyűjtöttél, ezzel emelve az esélyét annak, hogy elfogadottak lesznek. Nem adható át.
+76016	Áldástekercs	Megszünteti a tárgy megsemmisülésének kockázatát, amennyiben sikertelen a fejlesztés. Ennek a mentésnek az ára, hogy a minőség 1 ponttal romlik. Nem adható át.
+76017	Támadó ital +10	Megnöveli a támadósebességedet 15%-kal.
+76018	Támadó ital+15	Megnöveli a támadósebességedet 20%-kal.
+76019	Belépési engedély	Ha átadod ezt az engedélyt az illetékes őrnek, beléphetsz bizonyos kazamaták további szintjeire. Nem adható át.
+76020	Kutatói Elixír	Növeli az összegyűjtött kutatási tárgyak minőségét, ezzel növelve az esélyt arra, hogy elfogadottak lesznek. Nem használható a küldetésekhez Yoharán. Nem adható át.
 76021	Nap Elixír (Kicsi)	Automatikusan újratölti a TP-d. 100.000 TP-t tartalmaz. Nem adható át.
 76022	Nap Elixír (Közepes)	Automatikusan újratölti a TP-d. 3.000.000 TP-t tartalmaz. Nem adható át.
 76023	Zöld Mágia	Eltávolítja a bónuszokat a tárgyadból és újakat ad hozzá. Csak legfeljebb 40-es szintű fegyvereken és vérteken használható. A szint-ládából származó tárgy, nem adható át.

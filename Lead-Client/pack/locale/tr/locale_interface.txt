@@ -1,8 +1,8 @@
-ACCEPT	Kabul Et.
-ATTACH_METIN_INFO	Ruh Taşı'nı eklemek istiyor musun?
-ATTACH_METIN_TITLE	Ruh Taşı'nı ekle
+ACCEPT	Tamam
+ATTACH_METIN_INFO	Zihin taşını eklemek istiyor musun?
+ATTACH_METIN_TITLE	Zihin taşını ekle
 CANCEL	iptal
-CHANGE_PASSWORD_CONFIRM	Yeni şifreyi tekrarla
+CHANGE_PASSWORD_CONFIRM	Şifreyi tekrarla
 CHANGE_PASSWORD_NEW	Yeni şifre
 CHANGE_PASSWORD_OLD	Eski şifre
 CHANGE_PASSWORD_TITLE	Şifre Değiştir
@@ -25,7 +25,7 @@ CREATE_NEXT	Sonraki
 CREATE_PREV	Önceki
 CREATE_SEX	Cinsiyet
 CREATE_SHAPE	Biçim
-CREATE_SP	Zeka
+CREATE_SP	INT
 CREATE_WOMAN	Kadın
 CUBE_INFO_TITLE	Arındırma Kılavuzu
 CUBE_REQUIRE_MATERIAL	Gerekli malzemeler:
@@ -63,7 +63,7 @@ GRADE	Sınıf
 GRADE_SELECT	Sınıf
 GUILD_BASENAME	Temel isim
 GUILD_BOARD_ID	Isim
-GUILD_BOARD_REFRESH	Yenile (F5)
+GUILD_BOARD_REFRESH	Yenile
 GUILD_BOARD_TEXT	Mesaj
 GUILD_BUILDING_CATEGORY_TITLE	İnşaat Birimleri
 GUILD_BUILDING_CHANGE	Değiştir
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Kontrplak
 GUILD_BUILDING_POSITION	Pozisyon
 GUILD_BUILDING_PREVIEW	Önizleme
 GUILD_BUILDING_PRICE	Fiyat
-GUILD_BUILDING_REFRESH	Yenile (F5)
+GUILD_BUILDING_REFRESH	Yenile
 GUILD_BUILDING_STONE	Taş
 GUILD_BUILDING_TITLE	Lonca Meclis Binaları
 GUILD_CRYSTAL	Kristal
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Düşen Kaynak
 GUILD_GEM	Değerli Taş
 GUILD_GRADE_CHANGE_GRADE_NAME	Yeni rütbe ismi
 GUILD_GRADE_NUM	No.
-GUILD_GRADE_PERMISSION_DELETE	Kov
-GUILD_GRADE_PERMISSION_JOIN	Davet
-GUILD_GRADE_PERMISSION_NOTICE	Mesaj yaz
-GUILD_GRADE_PERMISSION_SKILL	Beceriler
+GUILD_GRADE_PERMISSION_DELETE	Loncadan çıkar
+GUILD_GRADE_PERMISSION_JOIN	Loncaya oyuncular alabilir
+GUILD_GRADE_PERMISSION_NOTICE	Lonca notlarını asabilir
+GUILD_GRADE_PERMISSION_SKILL	Lonca becerileri
 GUILD_GRADE_RANK	Sıra
 GUILD_GRADE_WRITE	Yaz
 GUILD_INFO	Lonca Bilgisi
@@ -111,12 +111,12 @@ GUILD_INFO_UPLOAD_MARK	İmza Yükle
 GUILD_INFO_UPLOAD_SYMBOL	Bayrak Yükle
 GUILD_MARK	Lonca İmzası
 GUILD_MEMBER_JOB	Sınıf
-GUILD_MEMBER_KNIGHT	Lider
+GUILD_MEMBER_KNIGHT	Savaşçı
 GUILD_MEMBER_LEVEL	Seviye
 GUILD_MEMBER_NAME	Isim
 GUILD_MEMBER_RANK	Sıra
 GUILD_MEMBER_SPECIFIC_GRAVITY	Yatırım
-GUILD_METIN_STONE	Ruh Taşı
+GUILD_METIN_STONE	Zihin Taşı
 GUILD_MINENAL	Mineral
 GUILD_MONEY	Yang
 GUILD_NAME	Lonca
@@ -140,8 +140,8 @@ HELP_ATTACK_KEY	Saldır: sol fare tuşu veya boşluk tuşu ile
 HELP_CHANGE_PK_MODE	Saldırı modunu değiştir: sol fare tuşu ayarını değiştir
 HELP_CHARACTER_BUTTON1	(Karakter Penceresi, Envanter Penceresi,
 HELP_CHARACTER_BUTTON2	Arkadaş Listesi ve Seçenekler)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Kamera görüntüsü: orta veya sağ fare tuşu ile
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Kamera görüntüsü: sağ veya orta fare tuşu ile
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Kamera görüntüsü ayarlama: orta fare tuşu ile
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Kamera görüntüsü ayarını değiştir: sağ veya sol fare tuşu ile
 HELP_EXP	Tecrübe
 HELP_FURY	Oyun Nesnet Marketi
 HELP_GUILD_WINDOW	Lonca Penceresini aç: Alt + G tuşları ile
@@ -160,11 +160,11 @@ HELP_OPEN_QUEST	Görev Penceresini aç: N tuşu ile
 HELP_OPEN_SKILL	Beceri Penceresini aç: V tuşu ile
 HELP_OPEN_WHISPER	Fısıltı Penceresini aç: üst karakter + giriş tuşu ile
 HELP_OPEN_ZONEMAP	Genel Görünüm Haritası'nı aç: M tuşu ile
-HELP_PICK_ITEM	Nesneleri topla: ^ , Y veya sol fare tuşu ile
+HELP_PICK_ITEM	Nesneleri topla: ", Z veya sol fare tuşu ile
 HELP_QUICKSLOT	Hızlı Erişim Alanları
 HELP_SCREEN_CAPTURE	Ekran görüntüsünü kaydet: Yazdır veya Print tuşu ile ("Metin2\screenshot" dosyası altında kaydedilecek)
 HELP_SHOW_ALL_NAME	İsimleri göster: Alt tuşu ile
-HELP_SP	Zihin Puanı (SP)
+HELP_SP	Mana Puanı (SP)
 HELP_SYSTEM_BUTTON	Sistem Tuşları
 INVENTORY_PAGE_BUTTON_TOOLTIP	{}. Envanter
 INVENTORY_TITLE	Envanter
@@ -183,7 +183,7 @@ MARKLIST_REFRESH	Yenile
 MARKLIST_TITLE	Lonca imzasını kaydet
 MESSAGE	Bu bir Mesaj
 MESSENGER_ADD_FRIEND	Arkadaş Ekle
-MESSENGER_DELETE_FRIEND	Arkadaş Sil
+MESSENGER_DELETE_FRIEND	Sil
 MESSENGER_OPEN_GUILD	Lonca Penceresini Aç
 MESSENGER_TITLE	Arkadaşlar
 MESSENGER_WHISPER	Fısıltı
@@ -270,12 +270,12 @@ SELECT_EMPIRE_NAME	Krallık İsmi
 SELECT_EXIT	Çıkış
 SELECT_HP	HP
 SELECT_LEVEL	Seviye
-SELECT_METIN_STONE_TITLE	Ruh Taşı Seç
+SELECT_METIN_STONE_TITLE	Zihin Taşı Seç
 SELECT_NAME	Isim
 SELECT_NO_GUILD	Lonca Yok
 SELECT_PLAYTIME	Oyun Süresi
 SELECT_SELECT	Başla
-SELECT_SP	SP
+SELECT_SP	INT
 SHOP_BUY	Satın Al
 SHOP_SELL	Sat
 SHOP_TITLE	Dükkan

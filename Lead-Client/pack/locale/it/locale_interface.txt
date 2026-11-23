@@ -1,8 +1,8 @@
-ACCEPT	Conferma
+ACCEPT	OK
 ATTACH_METIN_INFO	Vuoi utilizzare la Pietra Spirituale?
 ATTACH_METIN_TITLE	Utilizza la Pietra Spirituale
 CANCEL	Interrompi
-CHANGE_PASSWORD_CONFIRM	Conferma nuova pass
+CHANGE_PASSWORD_CONFIRM	Ripeti password
 CHANGE_PASSWORD_NEW	Nuova password
 CHANGE_PASSWORD_OLD	Vecchia password
 CHANGE_PASSWORD_TITLE	Modifica password
@@ -63,7 +63,7 @@ GRADE	Classe
 GRADE_SELECT	Classe
 GUILD_BASENAME	Nome base
 GUILD_BOARD_ID	Nome
-GUILD_BOARD_REFRESH	Attualizzare(F5)
+GUILD_BOARD_REFRESH	Aggiorna
 GUILD_BOARD_TEXT	Messaggio
 GUILD_BUILDING_CATEGORY_TITLE	Unità di costruzione
 GUILD_BUILDING_CHANGE	Cambia
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Compensato
 GUILD_BUILDING_POSITION	Posizione
 GUILD_BUILDING_PREVIEW	Anteprima
 GUILD_BUILDING_PRICE	Prezzo
-GUILD_BUILDING_REFRESH	Attualizzare(F5)
+GUILD_BUILDING_REFRESH	Aggiorna
 GUILD_BUILDING_STONE	Pietra fond.
 GUILD_BUILDING_TITLE	Edificio della Gilda
 GUILD_CRYSTAL	Cristallo
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Far cadere risorse
 GUILD_GEM	Pietre preziose
 GUILD_GRADE_CHANGE_GRADE_NAME	Nuovo nome di Rango
 GUILD_GRADE_NUM	Nr.
-GUILD_GRADE_PERMISSION_DELETE	Estrometti
-GUILD_GRADE_PERMISSION_JOIN	Invita
-GUILD_GRADE_PERMISSION_NOTICE	Scrivi
-GUILD_GRADE_PERMISSION_SKILL	Abilità
+GUILD_GRADE_PERMISSION_DELETE	Espelli dalla gilda
+GUILD_GRADE_PERMISSION_JOIN	Si possono ammettere dei giocatori nella gilda
+GUILD_GRADE_PERMISSION_NOTICE	Appendi appunti della gilda
+GUILD_GRADE_PERMISSION_SKILL	Abilità della gilda
 GUILD_GRADE_RANK	Rango
 GUILD_GRADE_WRITE	Scrivi
 GUILD_INFO	Informazioni della Gilda
@@ -111,7 +111,7 @@ GUILD_INFO_UPLOAD_MARK	Carica Stemma
 GUILD_INFO_UPLOAD_SYMBOL	Carica bandiera
 GUILD_MARK	Stemma della gilda
 GUILD_MEMBER_JOB	Classe
-GUILD_MEMBER_KNIGHT	Capo
+GUILD_MEMBER_KNIGHT	Guerriero
 GUILD_MEMBER_LEVEL	Livello
 GUILD_MEMBER_NAME	Nome
 GUILD_MEMBER_RANK	Posizione
@@ -140,8 +140,8 @@ HELP_ATTACK_KEY	Attacco: tasto sinistro del mouse o barra spaziatrice
 HELP_CHANGE_PK_MODE	Cambiare il tipo di attacco: modifica impostazioni del tasto sinistro del mouse
 HELP_CHARACTER_BUTTON1	(Finestra del personaggio, finestra dell'inventario,
 HELP_CHARACTER_BUTTON2	lista degli amici e opzioni)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Modalità telecamera: tasto centrale o destro del mouse
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Modalità telecamera: tasto destro o centrale del mouse
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Modalità videocamera: tasto centrale del mouse
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Modalità videocamera: tasto destro o sinistro del mouse
 HELP_EXP	Esperienza
 HELP_FURY	Item Shop Ingame
 HELP_GUILD_WINDOW	Aprire la finestra della Gilda: Alt + G
@@ -155,16 +155,16 @@ HELP_OPEN_CHARACTER	Finestra del personaggio: C
 HELP_OPEN_CHAT	Aprire la finestra di chat: invio
 HELP_OPEN_INVENTORY	Aprire la finestra dell'inventario: I
 HELP_OPEN_LOG	Aprire il protocollo chat (log): L
-HELP_OPEN_MINIMAP	Aprire la mini-mappa: Shift + M
+HELP_OPEN_MINIMAP	Aprire la mini-mappa: MAIUSC + M
 HELP_OPEN_QUEST	Aprire la finestra delle missioni: N
 HELP_OPEN_SKILL	Aprire la finestra delle abilità: V
-HELP_OPEN_WHISPER	Aprire la chat privata: shift + invio
+HELP_OPEN_WHISPER	Aprire la chat privata: MAIUSC + INVIO
 HELP_OPEN_ZONEMAP	Aprire la mappa grande: M
-HELP_PICK_ITEM	Raccogliere oggetti: \ o z o il tasto sinistro del mouse
+HELP_PICK_ITEM	Raccogliere oggetti: \ o Z o il tasto sinistro del mouse
 HELP_QUICKSLOT	Campi di accesso rapido
 HELP_SCREEN_CAPTURE	Fare uno screenshot: Stamp o Print (l'immagine sarà salvata nella cartella "Metin2\screenshot")
 HELP_SHOW_ALL_NAME	Visualizza nome: Alt
-HELP_SP	Punti Mana (PM)
+HELP_SP	Punti Mana (MP)
 HELP_SYSTEM_BUTTON	Tasti di sistema
 INVENTORY_PAGE_BUTTON_TOOLTIP	{}° Inventario
 INVENTORY_TITLE	Inventario
@@ -183,7 +183,7 @@ MARKLIST_REFRESH	Attualizza
 MARKLIST_TITLE	Registra il logo della Gilda
 MESSAGE	Questo è un messaggio
 MESSENGER_ADD_FRIEND	Aggiungi amico
-MESSENGER_DELETE_FRIEND	Cancella amico
+MESSENGER_DELETE_FRIEND	Cancella
 MESSENGER_OPEN_GUILD	Apri la finestra della Gilda
 MESSENGER_TITLE	Amici
 MESSENGER_WHISPER	Chat privata
@@ -297,8 +297,8 @@ TASKBAR_DRAGON_SOUL	Alchimia delle Pietre del drago
 TASKBAR_EXPAND	Ingrandisci la finestra
 TASKBAR_INVENTORY	Inventario [I]
 TASKBAR_MESSENGER	Amici [Alt+M]
-TASKBAR_NEXT_QUICKSLOT	Prossimo campo di utilizzo veloce [Shift + Numero, Alt]
-TASKBAR_PREV_QUICKSLOT	Precedente campo di utilizzo veloce [Shift + Numero]
+TASKBAR_NEXT_QUICKSLOT	Prossimo campo di utilizzo veloce [MAIUSC + Numero, Alt]
+TASKBAR_PREV_QUICKSLOT	Precedente campo di utilizzo veloce [MAIUSC + Numero]
 TASKBAR_SYSTEM	Opzioni[ESC]
 WHISPER_BAN	Blocca
 WHISPER_NAME	Sussurra

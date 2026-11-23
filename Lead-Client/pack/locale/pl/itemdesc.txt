@@ -211,11 +211,11 @@
 27876	Pieczony Sum	Natychmiast regeneruje trochę Punktów Energii.
 27877	Pieczony Piskorz	Stajesz się niewidzialny na 5 minut.
 27878	Pieczona Ryba Lotosu	Natychmiast regeneruje trochę Punktów Życia.
-27879	Pieczona Słodka Ryba	Ryba przyrządzona nad ogniskiem to wspaniały wędzony przysmak.
-27880	Pieczony Gromadnik	Ryba przyrządzona nad ogniskiem. Wspaniały wędzony przysmak.
-27881	Pieczona Shiri	Ryba przyrządzona nad ogniskiem to wspaniały wędzony przysmak.
-27882	Pieczony Lustrzany Karp	Ryba przyrządzona nad ogniskiem. Wspaniały wędzony przysmak.
-27883	Pieczony Złoty Karaś	Ryba przyrządzona nad ogniskiem. Wspaniały wędzony przysmak.
+27879	Pieczona Słodka Ryba	Zwiększa otrzymywane doświadczenie o 10%.
+27880	Pieczony Gromadnik	Zwiększa siłę w walce z potworami o 5%.
+27881	Pieczona Shiri	Zwiększa atak magiczny i w walce wręcz o 3%.
+27882	Pieczony Lustrzany Karp	Natychmiast przywraca 1000 PŻ.
+27883	Pieczony Złoty Karaś	Zwiększa otrzymywane doświadczenie o 50%.
 27987	Małż	Mięczak w ładnej muszli. W środku może znajdować się cenna perła.
 27988	Mapa Skarbów	Tajemnicza mapa zawierająca położenie starożytnego skarbu.
 27989	Wykrywacz Kamieni Metin	Wykrywacz pokazuje położenie i odległość do najbliższego Kamienia Metin. Im jaśniejsza strzałka kierunku, tym bliżej jesteś. Może być uaktywniony 6 razy.
@@ -226,7 +226,7 @@
 27994	Krwawa Perła	Krwawo-czerwona perła. |Kobiety je kochają.
 27995	Pusta Butelka	Pusta butelka.
 27996	Butelka Z Trucizną	Butelka wypełniona trucizną. |Powoduje śmierć.
-27997	Marmur Witalności	Marmur regenerujący trochę Punktów Życia.
+27997	Marmur Witalności	Kula regenerująca trochę PŻ.
 27998	Sakiewka Alchemika	Zniszczony worek, w którym przechowywane były tajemnice Alchemików.
 27999	Sakiewka Kamieni Dusz	Sakiewka do przechowywania Kamieni Dusz.
 29001	Muszla	Jedna z największych i najsmaczniejszych muszli. Posiada grzebień w interesującym kształcie.
@@ -438,7 +438,7 @@
 30330	Kamień Maat	Maat jest boginią sprawiedliwości i czuwa nad ładem i chaosem.
 30331	Mroźny Klucz	Klucz jest zimny jak lód. Otwiera dostęp na trzecie piętro Strażnicy Nemere. Mogą go użyć tylko Szamani.
 30332	Gwiazda Północy	Pieczęć z czystego lodu. Otwiera dostęp na szóste piętro Strażnicy Nemere.
-30333	Klucz Lodowego Kwiatu	Lodowy klucz otwiera dostęp na dziewiąte piętro Strażnicy Nemere. Mogą go użyć tylko Szamani lub Ninja.
+30333	Klucz Lodowego Kwiatu	Lodowy klucz otwiera dostęp na dziewiąte piętro Strażnicy Nemere.
 30500	Rubinowy Ozdobny Nóż	Narządzie do uszlachetniania twojej broni
 30501	Złota Sprzączka	Element do uszlachetniania twojej broni
 30502	Rubinowa Ozdoba	Element do uszlachetnienia twojej broni
@@ -621,11 +621,11 @@
 31093	Nieznany Kamień	Zupełnie nie wiesz, co to za rodzaj kamienia, ale promieniuje on chłodem i mrokiem.
 31094	Odłamek	Kawałek demonicznego meteorytu
 31095		
-31096		
-31097		
-31098		
-31099		
-31100		
+31096		Szlachetne Drzewo
+31097		Rosa En-Tai
+31098		Duch Ziemi
+31099		Drzewny Szmaragd
+31100		Apteczka
 31101		
 31102		
 31103		
@@ -646,10 +646,10 @@
 38102	Mega Przekąska (30 dni)	Przedłuża życie Twojego Mega Wierzchowca o 30 dni.
 38200	Pieczęć Rufusa	Za pomocą tej pieczęci możesz przywołać wilka Rufusa.
 38201	Pieczęć Rufusa	Za pomocą tej pieczęci możesz przywołać wilka Rufusa.
-39001	Magiczny Kamień	Kamień ten daje ci największą szansę podczas ulepszania przedmiotów. Przedmiot ten nie możesz zostać zniszczony ani pogorszony. Przedmiot ten jest zdatny do handlu.
+39001	Magiczny Kamień	Kamień ten daje ci doskonałą szansę powodzenia podczas ulepszania przedmiotów. Przedmiot ten nie możesz zostać zniszczony ani pogorszony. Przedmiot ten jest zdatny do handlu.
 39002	Pierścień Doświadczenia	Zwiększa otrzymywane Punkty Doświadczenia o 50% na 60 minut. Przedmiot ten jest zdatny do handlu.
 39003	Wino z Kwiatu Brzoskwini	Mikstura, która natychmiast regeneruje 500 Punktów Życia. Przedmiot ten jest zdatny do handlu.
-39004	Marmur Błogosławieństwa	Ten legendarny Marmur może dodać piąty bonus do przedmiotów, które mają już cztery bonusy. Dodawanie może się nie udać. Przedmiot ten jest zdatny do handlu.
+39004	Marmur Błogosławieństwa	Ta legendarna kula może dodać piąty bonus do przedmiotów, które mają już cztery bonusy. Dodawanie może się nie udać. Przedmiot ten jest zdatny do handlu.
 39005	Magiczna Ruda Miedzi	Jeśli użyjesz go na ulepszonym Zwoju Błogosławieństwa, możesz stworzyć Zwój Błogosławieństwa Boga Wojny. Przedmiot ten jest zdatny do handlu.
 39006	Peleryna Męstwa	Starożytni wojownicy okazywali swoje męstwo poprzez noszenie kolorowych peleryn. Był to sposób na zwabienie wszystkich potworów z okolicy. Przedmiot ten jest zdatny do handlu.
 39007	Podręcznik Kowala	Księga zawiera duszę starego kowala. Jeśli jej użyjesz, zwiększy to szansę na pomyślne ulepszenie przedmiotu. Przedmiot ten jest zdatny do handlu.
@@ -663,12 +663,12 @@
 39015	Kamień Kowala	Dzięki temu Kamieniowi i Zwojowi Błogosławieństwa, możesz wytworzyć u Kowala Podręcznik Kowala. Przedmiot ten jest zdatny do handlu.
 39016	Magiczny Metal	Metal potrzebny do wytworzenia Zwoju Smoka - wraz ze Zwojem Błogosławieństwa u Kowala. Przedmiot ten jest zdatny do handlu.
 39017	Życie Boga Smoków	Zwiększa ilość Punktów Życia o 20% na okres 30 minut. Przedmiot ten jest zdatny do handlu.
-39018	Atak Boga Smoków	Zwiększa obrażenie jakie zadajesz podczas walki o 12-15% przez 30 min. Przedmiot ten jest zdatny do handlu.
+39018	Atak Boga Smoków	Zwiększa twoją wartość ataku na 30 minut o 20%. Przedmiot ten jest zdatny do handlu.
 39019	Inteligencja Boga Smoków	Zwiększa ilość Punktów Energii o 20% przez 30 min. Przedmiot ten jest zdatny do handlu.
-39020	Obrona Boga Smoków	Zmniejsza obrażenia jakie otrzymujesz podczas walki o 12-15% przez 30 min. Przedmiot ten jest zdatny do handlu.
+39020	Obrona Boga Smoków	Zmniejsza obrażenia jakie otrzymujesz podczas walki o 20% przez 30 min. Przedmiot ten jest zdatny do handlu.
 39021	Wsparcie Boga Smoków	Witalność, Siła, Inteligencja oraz Zręczność twojej postaci zostaną tymczasowo zwiększone pięciokrotnie. Przedmiot ten jest zdatny do handlu.
 39022	Zwój Boga Smoków	Zwiększa szansę na ulepszenie przedmiotu o 10% i przedmiot nie ulega zniszczeniu gdy ulepszenie zawiedzie. W przypadku niepowodzenia, jakość przedmiotu jest redukowana o 1 poziom. Przedmiot ten jest zdatny do handlu.
-39023	Eliksir Poszukiwacza	Eliksir poprawia jakość przedmiotów przeznaczonych do badań, co powoduje zwiększenie szansy na ich przyjęcie. Przedmiot ten jest zdatny do handlu.
+39023	Eliksir Poszukiwacza	Eliksir poprawia jakość przedmiotów przeznaczonych do badań, co powoduje zwiększenie szansy na ich przyjęcie. Przedmiot ten jest zdatny do handlu. Nie dotyczy misji na Yohara.
 39024	Dłoń Krytyka	Podnosi szansę na zadanie krytycznego uderzenia podczas walki o 20% przez 10 minut. Przedmiot ten jest zdatny do handlu.
 39025	Dłoń Przebicia	Podnosi szansę na zadanie przeszywającego uderzenia podczas walki o 20% przez 10 minut. Przedmiot ten jest zdatny do handlu.
 39026	Mikstura Szybkości	Zwiększa Szybkość Ruchu o 60 na 30 minut. Przedmiot ten jest zdatny do handlu.
@@ -720,7 +720,7 @@
 41026	Strój Boksera TUR (k)	Wojowniczy strój w tureckich narodowych barwach dla bokserów.
 41027	Strój Boksera BRA (m)	Wojowniczy strój w brazylijskich narodowych barwach dla bokserów.
 41028	Strój Boksera BRA (k)	Wojowniczy strój w brazylijskich narodowych barwach dla bokserów.
-41029	Pustynny Bojownik (bonus)	Wojenna szata dla mężczyzn, pomaga stawić czoło nieprzyjaznej dla ludzi pustyni. Przedmiotem tym można handlować.
+41029	Pustynny Bojownik (bonus)	Wojenna szata dla mężczyzn, pomaga stawić czoło nieprzyjaznej dla ludzi pustyni. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 41030	Pust. Bojowniczka (bonus)	Wojenna szata dla kobiet, pomaga stawić czoło nieprzyjaznej dla ludzi pustyni. Przedmiotem tym można handlować.
 41031	Strój Szermi. Olympia(m)	Sportowy stój ochrony dla szermierzy. Przedmiotem tym można handlować.
 41032	Strój Szermi. Olympia(k)	Sportowy stój ochrony dla szermierzy. Przedmiotem tym można handlować.
@@ -912,14 +912,14 @@
 41224	Yongan FC+ (k)	Komplet Piłkarski w kolorze czerwono-białym dla niej. Daje ci min. jeden losowy bonus.
 41225	FC Bakra+ (m)	Komplet Piłkarski w kolorze granatowo-czerwonym dla niego. Daje ci min. jeden losowy bonus.
 41226	FC Bakra+ (k)	Komplet Piłkarski w kolorze granatowo-czerwonym dla niej. Daje ci min. jeden losowy bonus.
-41227	FC Bokjung+ (m)	Komplet Piłkarski w kolorze żółto-niebieskim dla niego. Daje ci min. jeden losowy bonus.
-41228	FC Bokjung+ (k)	Komplet Piłkarski w kolorze żółto-niebieskim dla niej. Daje ci min. jeden losowy bonus.
-41229	FC Bawaria Hwang+ (m)	Komplet Piłkarski w kolorze czerwono-złotym dla niego. Daje ci min. jeden losowy bonus.
-41230	FC Bawaria Hwang+ (k)	Komplet Piłkarski w kolorze czerwono-złotym dla niej. Daje ci min. jeden losowy bonus.
+41227	FC Bokjung+ (m)	Koszulka w ukraińskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41228	FC Bokjung+ (k)	Koszulka w ukraińskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
+41229	FC Bawaria Hwang+ (m)	Koszulka w walijskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41230	FC Bawaria Hwang+ (k)	Koszulka w walijskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41231	Borussia Chunjo+ (m)	Komplet Piłkarski w kolorze czarno-żółtym dla niego. Daje ci min. jeden losowy bonus.
 41232	Borussia Chunjo+ (k)	Komplet Piłkarski w kolorze czarno-żółtym dla niej. Daje ci min. jeden losowy bonus.
-41233	SC Doyyum+ (m)	Komplet Piłkarski w kolorze czerwono-białym dla niego. Daje ci min. jeden losowy bonus.
-41234	SC Doyyum+ (k)	Komplet Piłkarski w kolorze czerwono-białym dla niej. Daje ci min. jeden losowy bonus.
+41233	SC Doyyum+ (m)	Koszulka w austriackich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41234	SC Doyyum+ (k)	Koszulka w austriackich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41235	Hasun Dong FC+ (m)	Komplet Piłkarski w kolorze zielono-białym dla niego. Daje ci min. jeden losowy bonus.
 41236	Hasun Dong FC+ (k)	Komplet Piłkarski w kolorze zielono-białym dla niej. Daje ci min. jeden losowy bonus.
 41237	CFR Smoczy Ogień 07+ (m)	Komplet Piłkarski w kolorze bordowym dla niego. Daje ci min. jeden losowy bonus.
@@ -950,20 +950,20 @@
 41262	Smocza Dolina SC+ (k)	Komplet Piłkarski w kolorze granatowo-pomarańczowym dla niej. Daje ci min. jeden losowy bonus.
 41263	Gromista Góra FC+ (m)	Komplet Piłkarski w kolorze czerwono-białym dla niego. Daje ci min. jeden losowy bonus.
 41264	Gromista Góra FC+ (k)	Komplet Piłkarski w kolorze czerwono-białym dla niego. Daje ci min. jeden losowy bonus.
-41265	Pyungmoo Saint Hwang+(m)	Komplet Piłkarski w kolorze granatowym dla niego. Daje ci min. jeden losowy bonus.
-41266	Pyungmoo Saint Hwang+(k)	Komplet Piłkarski w kolorze granatowym dla niej. Daje ci min. jeden losowy bonus.
+41265	Pyungmoo Saint Hwang+(m)	Koszulka w szkockich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41266	Pyungmoo Saint Hwang+(k)	Koszulka w szkockich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41267	Real Sohan+ (m)	Komplet Piłkarski w kolorze białym dla niego. Daje ci min. jeden losowy bonus.
 41268	Real Sohan+ (k)	Komplet Piłkarski w kolorze białym dla niej. Daje ci min. jeden losowy bonus.
 41269	FC Jinno 04+ (m)	Komplet Piłkarski w kolorze błękitu królewskiego i białym dla niego. Daje ci min. jeden losowy bonus.
 41270	FC Jinno 04+ (k)	Komplet Piłkarski w kolorze błękitu królewskiego i białym dla niej. Daje ci min. jeden losowy bonus.
-41271	FC Sangsun Dong+ (m)	Komplet Piłkarski w kolorze czarno-pomarańczowym dla niego. Daje ci min. jeden losowy bonus.
-41272	FC Sangsun Dong+ (k)	Komplet Piłkarski w kolorze czarno-pomarańczowym dla niej. Daje ci min. jeden losowy bonus.
+41271	FC Sangsun Dong+ (m)	Koszulka w północno-macedońskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41272	FC Sangsun Dong+ (k)	Koszulka w północno-macedońskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41273	SL Jungsun Dong+ (m)	Komplet Piłkarski w kolorze czerwono-białym dla niego. Daje ci min. jeden losowy bonus.
 41274	SL Jungsun Dong+ (k)	Komplet Piłkarski w kolorze czerwono-białym dla niej. Daje ci min. jeden losowy bonus.
-41275	Sparta Jungrang+ (m)	Komplet Piłkarski w kolorze czerwono-białym dla niego. Daje ci min. jeden losowy bonus.
-41276	Sparta Jungrang+ (k)	Komplet Piłkarski w kolorze czerwono-białym dla niej. Daje ci min. jeden losowy bonus.
-41277	FC Ognista Ziemia+ (m)	Komplet Piłkarski w kolorze biało-czarnym dla niego. Daje ci min. jeden losowy bonus.
-41278	FC Ognista Ziemia+ (k)	Komplet Piłkarski w kolorze biało-czarnym dla niej. Daje ci min. jeden losowy bonus.
+41275	Sparta Jungrang+ (m)	Koszulka w czeskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41276	Sparta Jungrang+ (k)	Koszulka w czeskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
+41277	FC Ognista Ziemia+ (m)	Koszulka w fińskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41278	FC Ognista Ziemia+ (k)	Koszulka w fińskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41279	FC St. Seungryong+ (m)	Komplet Piłkarski w kolorze niebieskim dla niego. Daje ci min. jeden losowy bonus.
 41280	FC St. Seungryong+ (k)	Komplet Piłkarski w kolorze niebieskim dla niej. Daje ci min. jeden losowy bonus.
 41291	Kostium Zająca (czarny)	Kostium z czarnego pluszu dla niego
@@ -974,8 +974,8 @@
 41296	Kostium Zajączka (nieb.)	Kostium z niebieskiego pluszu dla niej
 41297	Kostium Zajączka (ziel.)	Kostium z zielonego pluszu dla niej
 41298	Kostium Zajączka (róż.)	Kostium z różowego pluszu dla niej
-41299	Kostium Zająca+ (czarny)	Kostium z czarnego pluszu dla niego. Daje ci min. jeden losowy bonus.
-41300	Kostium Zająca+ (nieb.)	Kostium z niebieskiego pluszu dla niego. Daje ci min. jeden losowy bonus.
+41299	Kostium Zająca+ (czarny)	Kostium zająca z czarnego pluszu dla niego. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
+41300	Kostium Zająca+ (nieb.)	Kostium zająca z niebieskiego pluszu dla niego. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 41301	Kostium Zająca+ (ziel.)	Kostium z zielonego pluszu dla niego. Daje ci min. jeden losowy bonus.
 41302	Kostium Zająca+ (różowy)	Kostium z różowego pluszu dla niego. Daje ci min. jeden losowy bonus.
 41303	Kostium Zajączka+(czar.)	Kostium z czarnego pluszu dla niej. Daje ci min. jeden losowy bonus.
@@ -988,7 +988,7 @@
 41310	Szata kobry+ (k)	Szata o czarnym połysku z symbolami węża. Daje ci min. jeden losowy bonus.
 41311	Pustynny Bojownik(czar.)	Wojenna szata w kolorze czarnym dla mężczyzn
 41312	Pust. Bojowniczka(czar.)	Wojenna szata w kolorze czarnym dla kobiet.
-41313	Pust. Bojownik+ (czar.)	Wojenna szata w kolorze czarnym dla mężczyzn. Daje ci min. jeden losowy bonus.
+41313	Pust. Bojownik+ (czar.)	Wojenna szata w kolorze czarnym dla mężczyzn. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 41314	Pust.Bojowniczka+(czar.)	Wojenna szata w kolorze czarnym dla kobiet. Daje ci min. jeden losowy bonus.
 41315	Zbroja Azraela (m)	Stalowa zbroja sławnego Księcia Demonów
 41316	Zbroja Azraela (k)	Stalowa zbroja sławnego Księcia Demonów
@@ -998,10 +998,10 @@
 41321	Sukienka Jacka Pumpkina (k)	Pięknie upiorny kostium na Halloween
 41322	Strój Jacka Pumpkina+ (m)	Pięknie upiorny kostium na Halloween - daje min. jeden losowy bonus. Przedmiotem tym można handlować.
 41323	Sukienka Jacka Pumpkina+ (k)	Pięknie upiorny kostium na Halloween - daje min. jeden losowy bonus. Przedmiotem tym można handlować.
-41324		
-41325		
-41326		
-41327		
+41324		Bojowa szata z księżycowym emblematem dla mężczyzn
+41325		Bojowa szata z księżycowym emblematem dla kobiet
+41326		Bojowa szata z księżycowym emblematem dla mężczyzn. Daje ci min. jeden losowy bonus.
+41327		Bojowa szata z księżycowym emblematem dla kobiet. Daje ci min. jeden losowy bonus.
 41328	Koszulka MŚ ALG (m)	Koszulka MŚ w barwach narodowych Algerii
 41329	Koszulka MŚ ALG (k)	Koszulka MŚ w barwach narodowych Algerii
 41330	Koszulka MŚ ARG (m)	Strój na mundial reprezentacji Argentyny
@@ -1072,8 +1072,8 @@
 41395	Koszul. MŚ ARG (k/bonus)	Strój na mundial reprezentacji Argentyny - daje ci min. jeden losowy bonus.
 41396	Koszul. MŚ AUS (m/bonus)	Koszulka MŚ w barwach narodowych Australii. Daje przynajmniej jeden losowy bonus.
 41397	Koszul. MŚ AUS (k/bonus)	Koszulka MŚ w barwach narodowych Australii. Daje przynajmniej jeden losowy bonus.
-41398	Koszul. MŚ BEL (m/bonus)	Strój na mundial reprezentacji Belgii - daje ci min. jeden losowy bonus.
-41399	Koszul. MŚ BEL (k/bonus)	Strój na mundial reprezentacji Belgii - daje ci min. jeden losowy bonus.
+41398	Koszul. MŚ BEL (m/bonus)	Koszulka w belgijskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41399	Koszul. MŚ BEL (k/bonus)	Koszulka w belgijskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41400	Koszul. MŚ BIH (m/bonus)	Koszulka MŚ w barwach narodowych Bośni i Hercegowiny. Daje przynajmniej jeden losowy bonus.
 41401	Koszul. MŚ BIH (k/bonus)	Koszulka MŚ w barwach narodowych Bośni i Hercegowiny. Daje przynajmniej jeden losowy bonus.
 41402	Koszul. MŚ BRA (m/bonus)	Strój na mundial reprezentacji Brazylii - daje ci min. jeden losowy bonus.
@@ -1088,47 +1088,47 @@
 41411	Koszul. MŚ CRC (k/bonus)	Koszulka MŚ w barwach narodowych Kostaryki. Daje przynajmniej jeden losowy bonus.
 41412	Koszul. MŚ CIV (m/bonus)	Koszulka MŚ w barwach narodowych Wybrzeża Kości Słoniowej. Daje przynajmniej jeden losowy bonus.
 41413	Koszul. MŚ CIV (k/bonus)	Koszulka MŚ w barwach narodowych Wybrzeża Kości Słoniowej. Daje przynajmniej jeden losowy bonus.
-41414	Koszul. MŚ CRO (m/bonus)	Koszulka MŚ w barwach narodowych Chorwacji. Daje przynajmniej jeden losowy bonus.
-41415	Koszul. MŚ CRO (k/bonus)	Koszulka MŚ w barwach narodowych Chorwacji. Daje przynajmniej jeden losowy bonus.
+41414	Koszul. MŚ CRO (m/bonus)	Koszulka w chorwackich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41415	Koszul. MŚ CRO (k/bonus)	Koszulka w chorwackich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41416	Koszul. MŚ ECU (m/bonus)	Koszulka MŚ w barwach narodowych Ekwadoru. Daje przynajmniej jeden losowy bonus.
 41417	Koszul. MŚ ECU (k/bonus)	Koszulka MŚ w barwach narodowych Ekwadoru. Daje przynajmniej jeden losowy bonus.
-41418	Koszul. MŚ ENG (m/bonus)	Strój na mundial reprezentacji Anglii - daje ci min. jeden losowy bonus.
-41419	Koszul. MŚ ENG (k/bonus)	Strój na mundial reprezentacji Anglii - daje ci min. jeden losowy bonus.
-41420	Koszul. MŚ FRA (m/bonus)	Strój na mundial reprezentacji Francji - daje ci min. jeden losowy bonus.
-41421	Koszul. MŚ FRA (k/bonus)	Strój na mundial reprezentacji Francji - daje ci min. jeden losowy bonus.
-41422	Koszul. MŚ GER (m/bonus)	Strój na mundial reprezentacji Niemiec - daje ci min. jeden losowy bonus.
-41423	Koszul. MŚ GER (k/bonus)	Strój na mundial reprezentacji Niemiec - daje ci min. jeden losowy bonus.
+41418	Koszul. MŚ ENG (m/bonus)	Koszulka w angielskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41419	Koszul. MŚ ENG (k/bonus)	Koszulka w angielskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
+41420	Koszul. MŚ FRA (m/bonus)	Koszulka w francuskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41421	Koszul. MŚ FRA (k/bonus)	Koszulka w francuskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
+41422	Koszul. MŚ GER (m/bonus)	Koszulka w niemieckich narodowych barwach dla piłkarzy. Daje ci min. jeden losowy bonus.
+41423	Koszul. MŚ GER (k/bonus)	Koszulka w niemieckich narodowych barwach dla piłkarek. Daje ci min. jeden losowy bonus.
 41424	Koszul. MŚ GHA (m/bonus)	Koszulka MŚ w barwach narodowych Ghany. Daje przynajmniej jeden losowy bonus.
 41425	Koszul. MŚ GHA (k/bonus)	Koszulka MŚ w barwach narodowych Ghany. Daje przynajmniej jeden losowy bonus.
-41426	Koszul. MŚ GRE (m/bonus)	Strój na mundial reprezentacji Grecji - daje ci min. jeden losowy bonus.
+41426	Koszul. MŚ GRE (m/bonus)	Strój na mundial w stylu reprezentacji Grecji. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 41427	Koszul. MŚ GRE (k/bonus)	Strój na mundial reprezentacji Grecji - daje ci min. jeden losowy bonus.
 41428	Koszul. MŚ HON (m/bonus)	Koszulka MŚ w barwach narodowych Hondurasu. Daje przynajmniej jeden losowy bonus.
 41429	Koszul. MŚ HON (k/bonus)	Koszulka MŚ w barwach narodowych Hondurasu. Daje przynajmniej jeden losowy bonus.
 41430	Koszul. MŚ IRN (m/bonus)	Koszulka MŚ w barwach narodowych Iranu. Daje przynajmniej jeden losowy bonus.
 41431	Koszul. MŚ IRN (k/bonus)	Koszulka MŚ w barwach narodowych Iranu. Daje przynajmniej jeden losowy bonus.
-41432	Koszul. MŚ ITA (m/bonus)	Strój na mundial reprezentacji Włoch - daje ci min. jeden losowy bonus.
-41433	Koszul. MŚ ITA (k/bonus)	Strój na mundial reprezentacji Włoch - daje ci min. jeden losowy bonus.
+41432	Koszul. MŚ ITA (m/bonus)	Koszulka we włoskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41433	Koszul. MŚ ITA (k/bonus)	Koszulka we włoskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41434	Koszul. MŚ JPN (m/bonus)	Koszulka MŚ w barwach narodowych Japonii. Daje przynajmniej jeden losowy bonus.
 41435	Koszul. MŚ JPN (k/bonus)	Koszulka MŚ w barwach narodowych Japonii. Daje przynajmniej jeden losowy bonus.
-41436	Koszul. MŚ KOR (m/bonus)	Strój na mundial reprezentacji Korei - daje ci min. jeden losowy bonus.
+41436	Koszul. MŚ KOR (m/bonus)	Strój na mundial w stylu reprezentacji Korei. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 41437	Koszul. MŚ KOR (k/bonus)	Strój na mundial reprezentacji Korei - daje ci min. jeden losowy bonus.
-41438	Koszul. MŚ MEX (m/bonus)	Strój na mundial reprezentacji Meksyku - daje ci min. jeden losowy bonus.
+41438	Koszul. MŚ MEX (m/bonus)	Strój na mundial w stylu reprezentacji Meksyku. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 41439	Koszul. MŚ MEX (k/bonus)	Strój na mundial reprezentacji Meksyku - daje ci min. jeden losowy bonus.
-41440	Koszul. MŚ NED (m/bonus)	Strój na mundial reprezentacji Holandii - daje ci min. jeden losowy bonus.
-41441	Koszul. MŚ NED (k/bonus)	Strój na mundial reprezentacji Holandii - daje ci min. jeden losowy bonus.
+41440	Koszul. MŚ NED (m/bonus)	Koszulka w holenderskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41441	Koszul. MŚ NED (k/bonus)	Koszulka w holenderskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41442	Koszul. MŚ NGA (m/bonus)	Koszulka MŚ w barwach narodowych Nigerii. Daje przynajmniej jeden losowy bonus.
 41443	Koszul. MŚ NGA (k/bonus)	Koszulka MŚ w barwach narodowych Nigerii. Daje przynajmniej jeden losowy bonus.
-41444	Koszul. MŚ POR (m/bonus)	Strój na mundial reprezentacji Portugalii - daje ci min. jeden losowy bonus.
-41445	Koszul. MŚ POR (k/bonus)	Strój na mundial reprezentacji Portugalii - daje ci min. jeden losowy bonus.
-41446	Koszul. MŚ RUS (m/bonus)	Strój na mundial reprezentacji Rosji - daje ci min. jeden losowy bonus.
-41447	Koszul. MŚ RUS (k/bonus)	Strój na mundial reprezentacji Rosji - daje ci min. jeden losowy bonus.
-41448	Koszul. MŚ ESP (m/bonus)	Strój na mundial reprezentacji Hiszpanii - daje ci min. jeden losowy bonus.
-41449	Koszul. MŚ ESP (k/bonus)	Strój na mundial reprezentacji Hiszpanii - daje ci min. jeden losowy bonus.
-41450	Koszul. MŚ SUI (m/bonus)	Strój na mundial reprezentacji Szwajcarii - daje ci min. jeden losowy bonus.
-41451	Koszul. MŚ SUI (k/bonus)	Strój na mundial reprezentacji Szwajcarii - daje ci min. jeden losowy bonus.
+41444	Koszul. MŚ POR (m/bonus)	Koszulka w portugalskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41445	Koszul. MŚ POR (k/bonus)	Koszulka w portugalskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
+41446	Koszul. MŚ RUS (m/bonus)	Koszulka w rosyjskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41447	Koszul. MŚ RUS (k/bonus)	Koszulka w rosyjskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
+41448	Koszul. MŚ ESP (m/bonus)	Koszulka w hiszpańskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41449	Koszul. MŚ ESP (k/bonus)	Koszulka w hiszpańskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
+41450	Koszul. MŚ SUI (m/bonus)	Koszulka w szwajcarskich barwach narodowych dla piłkarzy. Daje ci min. jeden losowy bonus.
+41451	Koszul. MŚ SUI (k/bonus)	Koszulka w szwajcarskich barwach narodowych dla piłkarek. Daje ci min. jeden losowy bonus.
 41452	Koszul. MŚ URU (m/bonus)	Koszulka MŚ w barwach narodowych Urugwaju. Daje przynajmniej jeden losowy bonus.
 41453	Koszul. MŚ URU (k/bonus)	Koszulka MŚ w barwach narodowych Urugwaju. Daje przynajmniej jeden losowy bonus.
-41454	Koszul. MŚ USA (m/bonus)	Strój na mundial reprezentacji USA - daje ci min. jeden losowy bonus.
+41454	Koszul. MŚ USA (m/bonus)	Strój na mundial w stylu reprezentacji USA. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 41455	Koszul. MŚ USA (k/bonus)	Strój na mundial reprezentacji USA - daje ci min. jeden losowy bonus.
 41472	Strój Zombie	Zakrwawione ubranie, gnijąca skóra i bielejące kości nadają ci wygląd zombie.
 41473	Sukienka Zombie	Zakrwawione ubranie, gnijąca skóra i bielejące kości nadają ci wygląd narzeczonej zombie.
@@ -1172,7 +1172,7 @@
 45008	Fryzura Piłkarza GER (k)	Sportowa fryzura dla piłkarek - z opaską w barwach narodowych Niemiec.
 45009	Dreadloki  (m)	Długie sfilcowane włosy zawiązywane z tyłu głowy w kucyk.
 45010	Fryzura Boksera GER (k)	Sportowa fryzura dla bokserów - z opaską w barwach narodowych Niemiec.
-45011	Chusta (m)	Okrycie na głowę z delikatnej tkaniny dla mężczyzn. Przedmiotem tym można handlować.
+45011	Chusta (m)	Okrycie na głowę z delikatnej tkaniny dla mężczyzn. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 45012	Chusta (k)	Okrycie na głowę z delikatnej tkaniny dla kobiet. Przedmiotem tym można handlować.
 45013	Przybokrót (m)	Fryzura przystrzyżona z boku na krótko - ekstrawagancka fryzura dla mężczyzn. Przedmiot zdatny do handlu.
 45014	Fryzura Szermierza (k)	Sportowa fryzura dla szermierzy. Przedmiotem tym można handlować.
@@ -1268,8 +1268,8 @@
 45124	Uszy Zajączka (nieb.)	Niebieskie uszy zajączka dla niej
 45125	Uszy Zajączka (ziel.)	Zielone uszy zajączka dla niej
 45126	Uszy Zajączka (róż.)	Różowe uszy zajączka dla niej
-45127	Uszy Zająca+ (czar.)	Czarna czapka z uszami zająca dla niego. Daje ci min. jeden losowy bonus.
-45128	Uszy Zająca+ (nieb.)	Niebieska czapka z uszami zająca dla niego. Daje ci min. jeden losowy bonus.
+45127	Uszy Zająca+ (czar.)	Czarna czapka z uszami zająca dla niego. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
+45128	Uszy Zająca+ (nieb.)	Niebieska czapka z uszami zająca dla niego. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 45129	Uszy Zająca+ (ziel.)	Zielona czapka z uszami zająca dla niego. Daje ci min. jeden losowy bonus.
 45130	Uszy Zająca+ (róż.)	Różowa czapka z uszami zająca dla niego. Daje ci min. jeden losowy bonus.
 45131	Uszy Zajączka+ (czar.)	Czarne uszy zajączka dla niej. Daje ci min. jeden losowy bonus.
@@ -1290,7 +1290,7 @@
 45146	Maska Majów+	Wzbudzająca strach maska wojowników plemienia Majów. Nadaje ci co najmniej dwa bonusy.
 45147	Czarny Turban (m)	Okrycie na głowę z czarnej tkaniny dla mężczyzn.
 45148	Czarny Turban (k)	Okrycie na głowę z czarnej tkaniny dla kobiet.
-45149	Czarny Turban+ (m)	Okrycie na głowę z czarnej tkaniny dla mężczyzn. Daje ci min. jeden losowy bonus.
+45149	Czarny Turban+ (m)	Okrycie na głowę z czarnej tkaniny dla mężczyzn. Daje ci min. jeden losowy bonus. Przedmiotem tym można handlować.
 45150	Czarny Turban+ (k)	Okrycie na głowę z czarnej tkaniny dla kobiet. Daje ci min. jeden losowy bonus.
 45151	Hełm Azraela (m)	Nakrycie głowy z grymasem sławnego Księcia Demonów
 45152	Hełm Azraela (k)	Nakrycie głowy z grymasem sławnego Księcia Demonów
@@ -1300,10 +1300,10 @@
 45157	Czerep Jacka Pumpkina (k)	Pięknie upiorna maska na Halloween
 45158	Czerep Jacka Pumpkina+ (m)	Pięknie upiorna maska na Halloween - daje min. jeden losowy bonus. Przedmiotem tym można handlować.
 45159	Czerep Jacka Pumpkina+ (k)	Pięknie upiorna maska na Halloween - daje min. jeden losowy bonus. Przedmiotem tym można handlować.
-45160		
-45161		
-45162		
-45163		
+45160		Spięte u góry warkocze rasta, koloru biało-czerwonego
+45161		Spięte u góry warkocze rasta, koloru biało-czerwonego, z opaską na czoło
+45162		Spięte u góry warkocze rasta, koloru biało-czerwonego, dają min. jeden losowy bonus
+45163		Spięte u góry warkocze rasta, koloru biało-czerwonego, z opaską na czoło, dają min. jeden losowy bonus
 45164	Śnieżna Czapa Zajęcza	Nakrycie głowy w postaci zająca bielaka
 45165	Śnie. Czapa Niedźwiedzia	Nakrycie głowy w postaci niedźwiedzia polarnego
 45166	Śnieżna Czapa Leoparda	Nakrycie głowy w postaci śnieżnego leoparda
@@ -1342,7 +1342,7 @@
 50002	Złoty Pierścień	Prosty, Złoty Pierścionek. | Może być sprzedany w sklepie za wysoką cenę.
 50003	Zwój Cofania Umiejętn.	Pozwala na ponowne wybranie profesji postaci.
 50004	Wykrywacz Zdarzeń	Pokazuje, gdzie można znaleźć misje.
-50005	Bilet Na Jazdę Konną	Po okazaniu tego biletu Stajennemu, będziesz mógł jeździć konno przez określony czas.
+50005	Bilet Na Jazdę Konną	Bilet ten możesz wymienić na medal konny u stajennego.
 50006	Złota Szkatułka	Ozdobiona złotymi ornamentami szkatułka. Można otworzyć ją Złotym Kluczem.
 50007	Srebrna Szkatułka	Ozdobiona srebrnymi ornamentami szkatułka. Można otworzyć ją Srebrnym Kluczem.
 50008	Złoty Klucz	Klucz zrobiony z czystego złota. Można nim otworzyć Złotą Szkatułkę i Złotą Szkatułkę+.
@@ -1395,13 +1395,13 @@
 50080	Szkat. Czerwonego Smoka	Szkatułka Czerwonego Smoka. Coś cennego znajduje się w środku.
 50081	Szkat. Króla Demonów	Szkatułka Króla Demonów. Coś cennego znajduje się w środku.
 50082	Szkat. Umarłego Rozpruw.	Szkatułka Umarłego Rozpruwacza. Coś cennego znajduje się w środku.
-50083	Bilet Na Jazdę Konną	Po okazaniu tego biletu Stajennemu, będziesz mógł jeździć konno przez określony czas.
+50083	Bilet Na Jazdę Konną	Otwórz zezwolenie jazdy konnej, by otrzymać swój bilet na jazdę konną. Od poziomu 10 możesz użyć tego biletu do przejażdżki na kucyku przez określony czas.
 50084	Kamień Otwarcia	Kamień otacza aura przepełniona energią. Działa przeciw sile Magicznej Pieczęci.
 50091	Sushi z Welonki	Jest to bardzo lubiany specjał z surowego złotego karasia i zimnego ryżu - serwowany zazwyczaj w małych porcjach.
 50092	Sushi Z Karpia	Jest to bardzo lubiany specjał z surowego karpia i zimnego ryżu - serwowany zazwyczaj w małych porcjach.
 50093	Sushi Z Łososia	Specjalne danie zrobione z Łososia i zimnego ryżu. Zwiększa siłę Ataku o 10 punktów na 30 sekund.
 50094	Sushi z Suma	Specjalne danie zrobione z Suma i zimnego ryżu. Zwiększa siłę Obrony o 10 punktów na 30 sekund.
-50096	Piłka	Podkręć piłkę jak Baljit-Elvedin!
+50096	Piłka	Podkręć piłkę jak Baljit-Elvedin! Piłka jest niezdatna do handlu.
 50100	Ogniste Petardy	Fioletowe fajerwerki wypełniają niebo podczas festiwalu.
 50101	Ogniste Petardy	Żółte fajerwerki wypełniają niebo podczas festiwalu.
 50102	Ogniste Petardy	Błękitne fajerwerki wypełniają niebo podczas festiwalu.
@@ -1409,7 +1409,7 @@
 50104	Ogniste Petardy	Zielone fajerwerki wypełniają niebo podczas festiwalu.
 50105	Ogniste Petardy	Białe fajerwerki wypełniają niebo podczas festiwalu.
 50106	Świąt. Ogniste Petardy	Świąteczne fajerwerki. W porównaniu ze zwykłymi petardami, te zapewniają lepsze wrażenia wizualne.
-50108	Fajerwerki	Bąk miotający iskry.
+50108	Fajerwerki	Zrobione ręcznie fajerwerki w formie bączka, którym dzieci się chętnie przyglądają, gdy się śmiesznie kręcą dookoła. | | Szansa na ogłuszenie: 5% | Czas: 10 min.
 50118		
 50119		
 50120	Żelazna Szkatułka	Stabilny pojemnik pochodzący z Groty Wygnańców.
@@ -1437,30 +1437,30 @@
 50154	Topazowy Klucz	Za pomocą tego klucza można otworzyć zamkniętą Topazową Skrzynie. Ciekawe, co skrywa jej wnętrze.
 50155	Cytrynowy Klucz	Za pomocą tego klucza można otworzyć zamkniętą Cytrynową Skrzynie. Ciekawe, co skrywa jej wnętrze.
 50156	Diamentowy Klucz	Po mistrzowsku szlifowany klucz, który mieni się wszystkimi kolorami tęczy. Za pomocą tego klucza można otworzyć każdą skrzynię.
-50160	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50161	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50162	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50163	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50164	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50165	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50166	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50167	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50168	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50169	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50170	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50171	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50172	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50173	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50174	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50175	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50176	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50177	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50178	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50179	Jajko wielkanocne	Kolorowe jajko wielkanocne
-50180	Pusty koszyk	Pusty koszyk, do którego możesz wkładać jajka wielkanocne
-50181	Koszyk z jajkami	Koszyk napełniony jajkami wielkanocnymi.
+50160	Jajko wielkanocne	Kolorowa Pisanka
+50161	Jajko wielkanocne	Kolorowa Pisanka
+50162	Jajko wielkanocne	Kolorowa Pisanka
+50163	Jajko wielkanocne	Kolorowa Pisanka
+50164	Jajko wielkanocne	Kolorowa Pisanka
+50165	Jajko wielkanocne	Kolorowa Pisanka
+50166	Jajko wielkanocne	Kolorowa Pisanka
+50167	Jajko wielkanocne	Kolorowa Pisanka
+50168	Jajko wielkanocne	Kolorowa Pisanka
+50169	Jajko wielkanocne	Kolorowa Pisanka
+50170	Jajko wielkanocne	Kolorowa Pisanka
+50171	Jajko wielkanocne	Kolorowa Pisanka
+50172	Jajko wielkanocne	Kolorowa Pisanka
+50173	Jajko wielkanocne	Kolorowa Pisanka
+50174	Jajko wielkanocne	Kolorowa Pisanka
+50175	Jajko wielkanocne	Kolorowa Pisanka
+50176	Jajko wielkanocne	Kolorowa Pisanka
+50177	Jajko wielkanocne	Kolorowa Pisanka
+50178	Jajko wielkanocne	Kolorowa Pisanka
+50179	Jajko wielkanocne	Kolorowa Pisanka
+50180	Pusty koszyk	Pusty koszyk, do którego możesz wkładać pisanki.
+50181	Koszyk z jajkami	Koszyk napełniony pisankami.
 50182	Skrzynia Błogosławieństw	Błogosławiona skrzynia z tajemniczą zawartością.
-50183	Słodycze	Słodycze te posiadają wyjątkowe działanie: Szybkość Ruchu +10%, Obrażenia +5%, Doświadczenie +10%. Efekt trwa przez 30 minut.
+50183	Słodycze	Słodycze te posiadają wyjątkowe działanie: szybkość ruchu +10, obrażenia +5%, doświadczenie +10%. Efekt trwa 30 minut.
 50184		
 50185		
 50186	Skrzynia Azraela	Potężne demoniczne moce zamknęły tę skrzynię. Niewątpliwie zawiera ona bardzo cenne przedmioty.
@@ -1481,7 +1481,7 @@
 50212	Skrzynia Ucznia I	Twój prezent powitalny zawiera podstawowe wyposażenie na rozpoczęcia przygód.
 50213	Skrzynia Ucznia I	Twój prezent powitalny zawiera podstawowe wyposażenie na rozpoczęcia przygód.
 50215	Upiorna Skrzynia	Jest to skrzynia z grawerunkiem upiornego oblicza dyni. Otwórz ją, aby poznać jej cenną zawartość.
-50216	Grzaniec	Gorące wino z przyprawami, które przez 30 minut obdarzy cię następującymi bonusami: +10% szybkości, +5% obrażeń i +10% doświadczenia.
+50216	Grzaniec	Gorąca mikstura z przyprawami obdarzy cię następującymi bonusami: +10% szybkości, +5% obrażeń i +10% doświadczenia.
 50249	Skrzynia Triumfu	Skrzynia zawiera losowy przedmiot jako nagrodę dla olimpijczyków.
 50252	Cor Draconis	To kryształowe smocze serce skrywa w sobie duszę, Smoczy Kamień.
 50253		
@@ -1569,19 +1569,19 @@
 50534	Instr. Dusza Purp.Wilka	Użyj księgi, aby opanować umiejętność - Dusza Purpurowego Wilka. Księga znika po przeczytaniu.
 50535	Instr.Dusza Wilka Indygo	Użyj księgi, aby opanować umiejętność - Dusza Wilka Indygo. Księga znika po przeczytaniu.
 50600	Przewodnik Do Górnictwa	Używany do zwiększenia zdolności górnictwa.| Znika po przeczytaniu.
-50601	Diamentowy Kamień	Może być uszlachetniony do Diamentu używając pieca gildii.
-50602	Kawałek Bursztynu	Może być uszlachetniony do Bursztynu używając pieca gildii bursztynu.
-50603	Skamieniały Pień	Używając pieca gildii można wyprodukować z tego pnia Skamieniałe Drewno.
-50604	Ruda Miedzi	Używając pieca do miedzi gildii można wyprodukować z tej Rudy Miedź.
-50605	Ruda Srebra	Używając pieca do srebra gildii można wyprodukować z tej Rudy Srebro.
-50606	Ruda Złota	Używając pieca do złota gildii można wyprodukować z tej Rudy Złoto.
-50607	Ruda Jadeitu	Używając pieca do jadeitu gildii można wyprodukować z tej Rudy Jadeit.
-50608	Ruda Ebonitu	Używając pieca do ebonitu gildii można wyprodukować z tej Rudy Ebonit.
+50601	Diamentowy Kamień	Używając pieca gildii można wyprodukować z tego kamienia diament.
+50602	Kawałek Bursztynu	Używając pieca gildii można wyprodukować z tego surowego kamienia złotą ozdobę z bursztynem.
+50603	Skamieniały Pień	Używając pieca gildii można wyprodukować z tego pnia skamieniałe drewno.
+50604	Ruda Miedzi	Używając pieca gildii można wyprodukować z tej rudy miedź.
+50605	Ruda Srebra	Używając pieca gildii można wyprodukować z tej rudy srebro.
+50606	Ruda Złota	Używając pieca gildii można wyprodukować z tej rudy złoto.
+50607	Ruda Jadeitu	Używając pieca gildii można wyprodukować z tej rudy jadeit.
+50608	Ruda Ebonitu	Używając pieca gildii można wyprodukować z tej rudy ebonit.
 50609	Kawałek Perły	Może być uszlachetniony do Perły używając pieca gildii.
-50610	Ruda Biał. Złota	Używając pieca do białego złota gildii można wyprodukować z tej Rudy Białe Złoto.
-50611	Ruda Kryształu	Używając pieca do kryształu gildii można wyprodukować z tej Rudy Kryształ.
-50612	Ruda Ametystu	Używając pieca do ametystu gildii można wyprodukować z tej Rudy Ametyst.
-50613	Ruda Niebiań. Łez	Może być uszlachetniona do Niebiańskich Łez używając pieca gildii.
+50610	Ruda Biał. Złota	Używając pieca gildii można wyprodukować z tej rudy białe złoto.
+50611	Ruda Kryształu	Używając pieca gildii można wyprodukować z tej rudy kryształ.
+50612	Ruda Ametystu	Używając pieca gildii można wyprodukować z tej rudy ametyst.
+50613	Ruda Niebiań. Łez	Używając pieca gildii można wyprodukować z tej rudy niebiańskie łzy.
 50614	Dusza Rudy Kryształu	Używając pieca gildii można wyprodukować z tej Rudy Duszę Kryształu.
 50615	Ruda Rubinu	Używając pieca gildii można wyprodukować z tej Rudy Rubin.
 50616	Ruda Granatu	Używając pieca gildii można wyprodukować z tej Rudy Granat.
@@ -1643,8 +1643,8 @@
 50810	Sok Z Ostu	Ta mikstura zrobiona jest z Ostu.
 50811	Sok Z Daktyla	Ta mikstura zrobiona jest z Daktyli.
 50812	Sok Z Rośliny Sam-Zi	Ta mikstura zrobiona jest z Rośliny Sam-Zi.
-50813	Woda Sim	Mikstura sporządzona z Soku Z Kwiatu Brzoskwini i Bzu. Zwiększa szansę na zadanie Przeszywającego Ciosu o 10% na 3 minuty.
-50814	Woda Dok	Mikstura sporządzona z Soku Z Pokrzywy i Bzu. Zwiększa szansę na zadanie krytycznego ciosu o 10% na 3 minuty.
+50813	Woda Sim	Mikstura sporządzona z soku z kwiatu brzoskwini i bzu, która zwiększa o 10% szansę na zadanie przeszywającego ciosu.
+50814	Woda Dok	Mikstura sporządzona z soku z pokrzywy i bzu, która zwiększa o 10% szansę na zadanie ciosu krytycznego.
 50815	Woda Bo	Ta mikstura sporządzona jest z Soku Z Kwiatów Kaki i Grzyba Tue. Wzmacnia twój umysł.
 50816	Woda Young	Ta mikstura sporządzona jest z Soku Z Korzeni Gango i Grzyba Tue. Wzmacnia twoje ciało.
 50817	Woda Zin	Mikstura sporządzona z Wody Sim i Róży Alpejskiej. Zwiększa twoją Wartość Ataku o 50 punktów na 3 minuty.
@@ -1668,7 +1668,7 @@
 51503	Cor Draconis (zwyczajne)	Kryształowe smocze serce. Ranga: zwyczajna. Zawiera matowy Smoczy Kamień klasy surowej do szlifowanej.
 51504	Cor Draconis (szlachetne)	Kryształowe smocze serce. Ranga: szlachetna. Zawiera matowy Smoczy Kamień klasy surowej do rzadkiej.
 51505	Cor Draconis (drogocenne)	Kryształowe smocze serce. Ranga: drogocenna. Zawiera matowy Smoczy Kamień klasy surowej do antycznej.
-51506	Cor Draconis (mityczne)	Kryształowe smocze serce. Ranga: mityczna. Zawiera matowy Smoczy Kamień klasy szlifowana do legendarna.
+51506	Cor Draconis (mityczne)	Kryształowe smocze serce. Ranga: mistyczna. Zawiera matowy smoczy kamień klasy szlifowana do legendarna.
 51507	Cor Draconis (szlifowane)	Kryształowe smocze serce zawiera losowy Smoczy Kamień klasy szlifowana.
 51508	Cor Draconis (rzadkie)	Kryształowe smocze serce zawiera losowy Smoczy Kamień klasy rzadka.
 51509	Cor Draconis (antyczne)	Kryształowe smocze serce zawiera losowy Smoczy Kamień klasy antyczna.
@@ -1714,16 +1714,16 @@
 51549	Cor Draconis (wieczne)	Kryształowe smocze serce. Ranga: wieczna. Zawiera matowy Smoczy Kamień klasy szlifowana do antyczna.
 51550	Cor Diamas (wieczne)	Białe Cor Draconis. Ranga: wieczna. Zawiera matowy Smoczy Diament klasy szlifowana do antyczna.
 51551	Cor Rubinum (wieczne)	Czerwone Cor Draconis. Ranga: wieczna. Zawiera matowy Smoczy Rubin klasy szlifowana do antyczna.
-51552	Cor Jadeit (wieczne)	Zielone Cor Draconis. Ranga: zawiera matowy Smoczy Jadeit klasy szlifowana do antyczna.
+51552	Cor Jadeit (wieczne)	Zielone Cor Draconis. Ranga: wieczna. Zawiera matowy Smoczy Jadeit klasy szlifowana do antyczna.
 51553	Cor Saphirum (wieczne)	Niebieskie Cor Draconis. Ranga: wieczna. Zawiera matowy Smoczy Szafir klasy szlifowana do antyczna.
 51554	Cor Granatum (wieczne)	Pomarańczowe Cor Draconis. Ranga: wieczna. Zawiera matowy Smoczy Granat klasy szlifowana do antyczna.
 51555	Cor Atrum (wieczne)	Czarne Cor Draconis. Ranga: wieczna. Zawiera matowy Smoczy Onyks klasy szlifowana do antyczna.
-51556	Cor Diamas (mityczne)	Białe Cor Draconis. Ranga: mityczna. Zawiera matowy Smoczy Diament klasy szlifowana do legendarna.
-51557	Cor Rubinum (mityczne)	Czerwone Cor Draconis. Ranga: mityczna. Zawiera matowy Smoczy Rubin klasy szlifowana do legendarna.
-51558	Cor Jadeit (mityczne)	Zielone Cor Draconis. Ranga: mityczna. Zawiera matowy Smoczy Jadeit klasy szlifowana do legendarna.
-51559	Cor Saphirum (mityczne)	Niebieskie Cor Draconis. Ranga: mityczna. Zawiera matowy Smoczy Szafir klasy szlifowana do legendarna.
-51560	Cor Granatum (mityczne)	Pomarańczowe Cor Draconis. Ranga: mityczna. Zawiera matowy Smoczy Granat klasy szlifowana do legendarna.
-51561	Cor Atrum (mityczne)	Czarne Cor Draconis. Ranga: mityczna. Zawiera matowy Smoczy Onyks klasy szlifowana do legendarna.
+51556	Cor Diamas (mityczne)	Białe Cor Draconis. Ranga: mistyczna. Zawiera matowy smoczy diament klasy szlifowana do legendarna.
+51557	Cor Rubinum (mityczne)	Czerwone Cor Draconis. Ranga: mistyczna. Zawiera matowy smoczy rubin klasy szlifowana do legendarna.
+51558	Cor Jadeit (mityczne)	Zielone Cor Draconis. Ranga: mistyczna. Zawiera matowy smoczy jadeit klasy szlifowana do legendarna.
+51559	Cor Saphirum (mityczne)	Niebieskie Cor Draconis. Ranga: mistyczna. Zawiera matowy smoczy szafir klasy szlifowana do legendarna.
+51560	Cor Granatum (mityczne)	Pomarańczowe Cor Draconis. Ranga: mistyczna. Zawiera matowy smoczy granat klasy szlifowana do legendarna.
+51561	Cor Atrum (mityczne)	Czarne Cor Draconis. Ranga: mistyczna. Zawiera matowy smoczy onyks klasy szlifowana do legendarna.
 51562	Cor Draconis (epickie)	Kryształowe smocze serce. Ranga: epicka. Zawiera matowy Smoczy Kamień klasy rzadka do antyczna.
 51563	Cor Diamas (epickie)	Białe Cor Draconis. Ranga: epicka. Zawiera matowy Smoczy Diament klasy rzadka do antyczna.
 51564	Cor Rubinum (epickie)	Czerwone Cor Draconis. Ranga: epicka. Zawiera matowy Smoczy Rubin klasy rzadka do antyczna.
@@ -1780,13 +1780,13 @@
 51615	Cor Saphirum+ (wieczne)	Potężne Cor Draconis. Ranga: wieczna. Zawiera Smoczy Szafir klasy szlifowana do antyczna o losowym stopniu jakości.
 51616	Cor Granatum+ (wieczne)	Potężne Cor Draconis. Ranga: wieczna. Zawiera Smoczy Granat klasy szlifowana do antyczna o losowym stopniu jakości.
 51617	Cor Atrum+ (wieczne)	Potężne Cor Draconis. Ranga: wieczna. Zawiera Smoczy Onyks klasy szlifowana do antyczna o losowym stopniu jakości.
-51618	Cor Draconis+ (mityczne)	Potężne Cor Draconis. Ranga: mityczna. Zawiera Smoczy Kamień klasy szlifowana do legendarna o losowym stopniu jakości.
-51619	Cor Diamas+ (mityczne)	Potężne Cor Draconis. Ranga: mityczna. Zawiera Smoczy Diament klasy szlifowana do legendarna o losowym stopniu jakości.
-51620	Cor Rubinum+ (mityczne)	Potężne Cor Draconis. Ranga: mityczna. Zawiera Smoczy Rubin klasy szlifowana do legendarna o losowym stopniu jakości.
-51621	Cor Jadeit+ (mityczne)	Potężne Cor Draconis. Ranga: mityczna. Zawiera Smoczy Jadeit klasy szlifowana do legendarna o losowym stopniu jakości.
-51622	Cor Saphirum+ (mityczne)	Potężne Cor Draconis. Ranga: mityczna. Zawiera Smoczy Szafir klasy szlifowana do legendarna o losowym stopniu jakości.
-51623	Cor Granatum+ (mityczne)	Potężne Cor Draconis. Ranga: mityczna. Zawiera Smoczy Granat klasy szlifowana do legendarna o losowym stopniu jakości.
-51624	Cor Atrum+ (mityczne)	Potężne Cor Draconis. Ranga: mityczna. Zawiera Smoczy Onyks klasy szlifowana do legendarna o losowym stopniu jakości.
+51618	Cor Draconis+ (mityczne)	Potężne Cor Draconis. Ranga: mistyczna. Zawiera smoczy kamień klasy szlifowana do legendarna o losowym stopniu jakości.
+51619	Cor Diamas+ (mityczne)	Potężne Cor Draconis. Ranga: mistyczna. Zawiera smoczy diament klasy szlifowana do legendarna o losowym stopniu jakości.
+51620	Cor Rubinum+ (mityczne)	Potężne Cor Draconis. Ranga: mistyczna. Zawiera smoczy rubin klasy szlifowana do legendarna o losowym stopniu jakości.
+51621	Cor Jadeit+ (mityczne)	Potężne Cor Draconis. Ranga: mistyczna. Zawiera smoczy jadeit klasy szlifowana do legendarna o losowym stopniu jakości.
+51622	Cor Saphirum+ (mityczne)	Potężne Cor Draconis. Ranga: mistyczna. Zawiera smoczy szafir klasy szlifowana do legendarna o losowym stopniu jakości.
+51623	Cor Granatum+ (mityczne)	Potężne Cor Draconis. Ranga: mistyczna. Zawiera smoczy granat klasy szlifowana do legendarna o losowym stopniu jakości.
+51624	Cor Atrum+ (mityczne)	Potężne Cor Draconis. Ranga: mistyczna. Zawiera smoczy onyks klasy szlifowana do legendarna o losowym stopniu jakości.
 51625	Cor Draconis+ (epickie)	Potężne Cor Draconis. Ranga: epicka. Zawiera Smoczy Kamień klasy rzadka do antyczna o losowym stopniu jakości.
 51626	Cor Diamas+ (epickie)	Potężne Cor Draconis. Ranga: epicka. Zawiera Smoczy Diament klasy rzadka do antyczna o losowym stopniu jakości.
 51627	Cor Rubinum+ (epickie)	Potężne Cor Draconis. Ranga: epicka. Zawiera Smoczy Rubin klasy rzadka do antyczna o losowym stopniu jakości.
@@ -1869,8 +1869,8 @@
 52058	Dzielny Tygrys (Pieczęć)	Pieczęć ta przywołuje Dzielnego Tygrysa, który podwyższa PŻ swojego jeźdźca o 500.
 52059	Dzielny Tygrys (Pieczęć)	Pieczęć ta przywołuje Dzielnego Tygrysa, który podwyższa obronę swojego jeźdźca o 150.
 52060	Dzielny Tygrys (Pieczęć)	Pieczęć ta przywołuje Dzielnego Tygrysa, który podwyższa atak swojego jeźdźca o 100.
-52061	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (m), który, po przejściu szkolenia bojowego, nadaje swojemu jeźdźcowi maks. 5% siły w walce z potworami.
-52062	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (m), który, po przejściu szkolenia bojowego, przynosi swojemu jeźdźcowi maks. 5% dodatkowych PD.
+52061	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (m).
+52062	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (m).
 52063	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (m), który, po przejściu szkolenia bojowego, podwyższa PŻ swojego jeźdźca o maks. 500.
 52064	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (m), który, po przejściu szkolenia bojowego, podwyższa obronę swojego jeźdźca o maks. 150.
 52065	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (m), który, po przejściu szkolenia bojowego, podwyższa atak swojego jeźdźca o maks. 100.
@@ -1884,7 +1884,7 @@
 52073	Piecz. Dziel. Renifera	Pieczęć ta przywołuje Dzielnego Renifera (m), który podwyższa PŻ swojego jeźdźca o 500.
 52074	Piecz. Dziel. Renifera	Pieczęć ta przywołuje Dzielnego Renifera (m), który podwyższa obronę swojego jeźdźca o 150.
 52075	Piecz. Dziel. Renifera	Pieczęć ta przywołuje Dzielnego Renifera (m), który podwyższa atak swojego jeźdźca o 100.
-52076	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (ż), który, po przejściu szkolenia bojowego, nadaje swojemu jeźdźcowi maks. 5% siły w walce z potworami.
+52076	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (k).
 52077	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (ż), który, po przejściu szkolenia bojowego, przynosi swojemu jeźdźcowi maks. 5% dodatkowych PD.
 52078	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (ż), który, po przejściu szkolenia bojowego, podwyższa PŻ swojego jeźdźca o maks. 500.
 52079	Pieczęć Młodego Renifera	Pieczęć ta przywołuje Młodego Renifera (ż), który, po przejściu szkolenia bojowego, podwyższa obronę swojego jeźdźca o maks. 150.
@@ -1899,11 +1899,11 @@
 52088	Piecz. Dzieln. Renifera	Pieczęć ta przywołuje Dzielnego Renifera (ż), który podwyższa PŻ swojego jeźdźca o 500.
 52089	Piecz. Dzieln. Renifera	Pieczęć ta przywołuje Dzielnego Renifera (ż), który podwyższa obronę swojego jeźdźca o 150.
 52090	Piecz. Dzieln. Renifera	Pieczęć ta przywołuje Dzielnego Renifera (ż), który podwyższa atak swojego jeźdźca o 100.
-52091	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora. Po przejściu szkolenia bojowego daje on swojemu właścicielowi do 5% siły przeciwko potworom.
-52092	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora. Po przejściu szkolenia bojowego daje on swojemu właścicielowi do 5% więcej doświadczenia.
-52093	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora. Po przejściu szkolenia bojowego zwiększa on PŻ swojego właściciela o maks. 500.
-52094	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora. Po przejściu szkolenia bojowego podnosi on obronę swojego właściciela o maks. 150.
-52095	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora. Po przejściu szkolenia bojowego podnosi on atak swojego właściciela o maks. 100.
+52091	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora.
+52092	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora.
+52093	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora.
+52094	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora.
+52095	Pieczęć Młodego Dragora	Pieczęć ta przywołuje Młodego Dragora.
 52096	Pieczęć Dzikiego Dragora	Pieczęć ta przywołuje Dzikiego Dragora. Dodaje on swojemu właścicielowi +3% do siły przeciwko potworom.
 52097	Pieczęć Dzikiego Dragora	Pieczęć ta przywołuje Dzikiego Dragora. Dodaje on swojemu właścicielowi +3% do zebranego doświadczenia.
 52098	Pieczęć Dzikiego Dragora	Pieczęć ta przywołuje Dzikiego Dragora. Dodaje on swojemu właścicielowi +250 do PŻ.
@@ -1937,45 +1937,45 @@
 52706	Świadectwo Renifera (ż)	Świadectwo posiadania Młodego Renifera (ż)
 52707	Certyfikat Dragora	Certyfikat posiadania Młodego Dragora
 52708	Świadectwo Moy	Ten dokument stanowi dowód na to, że jesteś teraz właścicielem Młodego Moy.
-53001		
+53001		Za pomocą tej pieczęci możesz przywołać swojego przyjaciela Ognistego Feniksa.
 53002	Pieczęć Reniferka	Za pomocą tej pieczęci możesz przywołać Reniferka.
 53003	Pieczęć Lodowego Feniksa	Za pomocą tej pieczęci możesz przywołać swojego przyjaciela, Lodowego Feniksa.
-53005	Azraeluś	Mini-wersja władcy demonów wymaga wyjątkowo dużo miłości, a w zamian da Ci od 2. poziomu Wieży Demonów oraz Diabelskich Katakumb bonus w postaci 1500 PŻ oraz +15 % do zadawanych obrażeń.
-53006	Azraeluś (złoty)	Mini-wersja władcy demonów wymaga wyjątkowo dużo miłości, a w zamian da ci od 2. poziomu Wieży Demonów oraz 2. poziomu Diabelskich Katakumb bonus w postaci 1500 PŻ oraz +15% do zadawanych obrażeń.
-53007	Pieczęć Bambi	Za pomocą tej pieczęci możesz przywołać renifera Bambi.
-53008	Knuud (Pieczęć)	Za pomocą tej pieczęci możesz przywołać ślicznego polarnego niedźwiadka.
-53009	Bao Bao (Pieczęć)	Za pomocą tej pieczęci możesz przywołać śliczniutką pandę.
-53010	Pieczęć Leonidasa	Za pomocą tej pieczęci możesz przywołać lwa Leonidasa.
-53011	Pieczęć Khana	Za pomocą tej pieczęci możesz przywołać tygrysa Khana.
-53012	Pieczęć Boczusia	Za pomocą tej pieczęci możesz przywołać warchlaka Boczusia.
-53013	Pieczęć Rufusa	Za pomocą tej pieczęci możesz przywołać wilka Rufusa.
-53014	Pieczęć Kata	Pieczęć ta przywołuje grubiutkiego kata w czarnej zbroi.
-53015	Pieczęć Kata (złota)	Pieczęć ta przywołuje grubiutkiego kata w złotej zbroi.
-53016	Pieczęć Kostka	Pieczęć ta przywołuje twojego kościanego pupila Kostka.
-53017	Pieczęć Feniksa Jadeitu	Ta pieczęć przywołuje uroczego Feniksa Jadeitu.
-53018	Śnieżny Leonidas(piecz.)	Dzięki tej pieczęci możesz przywołać swojego zwierzaka.
-53019	Arktyczny Khan (pieczęć)	Dzięki tej pieczęci możesz przywołać swojego zwierzaka.
-53020	Polarny Boczuś (pieczęć)	Dzięki tej pieczęci możesz przywołać swojego zwierzaka.
-53021	Mroźny Rufus (pieczęć)	Dzięki tej pieczęci możesz przywołać swojego zwierzaka.
-53022	Pieczęć Sheldona	Dzięki tej pieczęci z jaja wykluje się Sheldon.
-53023	Pieczęć Coopera	Dzięki tej pieczęci przywędruje do ciebie Cooper.
-53024	Panterka (7 dni)	Pieczęć ta przywołuje czarną małą panterkę.
-53025	Leopardzik (7 dni)	Pieczęć ta przywołuje słodkiego małego leoparda.
-53026		
-53218	Panterka (30 dni)	Pieczęć ta przywołuje czarną małą panterkę.
-53219	Panterka (120 dni)	Pieczęć ta przywołuje czarną małą panterkę.
-53220	Leopardzik (30 dni)	Pieczęć ta przywołuje słodkiego małego leoparda.
-53221	Leopardzik (120 dni)	Pieczęć ta przywołuje słodkiego małego leoparda.
-53222	Pieczęć Dyniowej Główki	Za pomocą tej pieczęci przywołujesz swoją Dyniową Główkę.
-53223	Pieczęć Małej Miotełki	Za pomocą tej pieczęci przywołujesz swoją Małą Miotełkę.
-53224	Płatkowa Pieczęć	Za pomocą tej pieczęci przywołujesz Płatek Śniegu, rozkosznego bałwanka.
-53225	Dzwoneczkowa Pieczęć	Za pomocą tej pieczęci przywołujesz Dzwoneczka, rozkosznego bałwanka.
-53226	Cupido (pieczęć)	Za pomocą tej pieczęci przywołujesz swój osobisty talizman szczęścia. Obdarza cię on o 5% wyższą szansą na przeszywające ciosy i podnosi twoje PŻ o 1500 pkt.
-53227	Gniewne Serce (pieczęć)	Za pomocą tej pieczęci przywołujesz Gniewne Serce. Obdarza cię ono o 5% wyższą szansą na trafienia krytyczne i podnosi twoje PŻ o 1500 pkt.
-53228	Sierp (Pieczęć)	Za pomocą tej pieczęci przywołujesz swój niebieski sierp.
-53229	Sierp (Pieczęć)	Za pomocą tej pieczęci przywołujesz swój czerwony sierp.
-53232	Huashinek	Mini-wersja Generała Huashina daje ci o 5% wyższe szanse na zadanie przeszywającego ciosu i podwyższa twoje PŻ o 1500.
-53501		
+53005	Azraeluś	Mini-wersja władcy demonów wymaga wyjątkowo dużo miłości, a w zamian da Ci od 2. poziomu Wieży Demonów oraz Diabelskich Katakumb bonus w postaci | +15% do ataków walki wręcz/magicznych | +1500 PŻ.
+53006	Azraeluś (złoty)	Mini-wersja władcy demonów wymaga wyjątkowo dużo miłości, a w zamian da Ci od 2. poziomu Wieży Demonów oraz Diabelskich Katakumb bonus w postaci | +15% do ataków walki wręcz/magicznych | +1500 PŻ.
+53007	Pieczęć Bambi	Za pomocą tej pieczęci możesz przywołać renifera Bambi. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53008	Knuud (Pieczęć)	Za pomocą tej pieczęci możesz przywołać ślicznego polarnego niedźwiadka. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53009	Bao Bao (Pieczęć)	Za pomocą tej pieczęci możesz przywołać śliczniutką pandę. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53010	Pieczęć Leonidasa	Za pomocą tej pieczęci możesz przywołać lwa Leonidasa. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53011	Pieczęć Khana	Za pomocą tej pieczęci możesz przywołać tygrysa Khana. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53012	Pieczęć Boczusia	Za pomocą tej pieczęci możesz przywołać warchlaka Boczusia. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53013	Pieczęć Rufusa	Za pomocą tej pieczęci możesz przywołać wilka Rufusa. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53014	Pieczęć Kata	Pieczęć ta przywołuje grubiutkiego kata w czarnej zbroi. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53015	Pieczęć Kata (złota)	Pieczęć ta przywołuje grubiutkiego kata w złotej zbroi. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53016	Pieczęć Kostka	Pieczęć ta przywołuje twojego kościanego zwierzaka Kostka. Daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53017	Pieczęć Feniksa Jadeitu	Pieczęć przywołuje uroczego Feniksa Jadeitu. Zwierzak daje ci | +15% do ataków walki wręcz/magicznych | +50% szansy na 30% bonus PD
+53018	Śnieżny Leonidas(piecz.)	Za pomocą tej pieczęci możesz przywołać małego śnieżnego lwa. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53019	Arktyczny Khan (pieczęć)	Za pomocą tej pieczęci możesz przywołać małego śnieżnego tygrysa. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53020	Polarny Boczuś (pieczęć)	Dzięki tej pieczęci możesz przywołać małą świnkę polarną. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53021	Mroźny Rufus (pieczęć)	Za pomocą tej pieczęci możesz przywołać małego wilka polarnego. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53022	Pieczęć Sheldona	Dzięki tej pieczęci z jaja wykluje się zwierzak Sheldon. Daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53023	Pieczęć Coopera	Dzięki tej pieczęci przywędruje do ciebie zwierzak Cooper. Daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53024	Panterka (7 dni)	Pieczęć ta przywołuje czarną małą panterkę. Ten zwierzak daje ci | +5% odporności na obrażenia umiejętności | +5% szansy na przeszywający cios | +1500 PŻ.
+53025	Leopardzik (7 dni)	Pieczęć ta przywołuje słodkiego małego leoparda. Ten zwierzak daje ci | +10% siły obrony | +5% szansy na cios krytyczny | +1500 PŻ.
+53026		Za pomocą tej pieczęci możesz przywołać feniksa Pepitę. Zwierzak ten zwiększa otrzymywane punkty doświadczenia o +5%.
+53218	Panterka (30 dni)	Pieczęć ta przywołuje czarną małą panterkę. Ten zwierzak daje ci | +5% odporności na obrażenia umiejętności | +5% szansy na przeszywający cios | +1500 PŻ.
+53219	Panterka (120 dni)	Pieczęć ta przywołuje czarną małą panterkę. Ten zwierzak daje ci | +5% odporności na obrażenia umiejętności | +5% szansy na przeszywający cios | +1500 PŻ.
+53220	Leopardzik (30 dni)	Pieczęć ta przywołuje słodkiego małego leoparda. Ten zwierzak daje ci | +10% siły obrony | +5% szansy na cios krytyczny | +1500 PŻ.
+53221	Leopardzik (120 dni)	Pieczęć ta przywołuje słodkiego małego leoparda. Ten zwierzak daje ci | +10% siły obrony | +5% szansy na cios krytyczny | +1500 PŻ.
+53222	Pieczęć Dyniowej Główki	Za pomocą tej pieczęci przywołujesz swoją Dyniową Główkę. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53223	Pieczęć Małej Miotełki	Za pomocą tej pieczęci przywołujesz swoją Małą Miotełkę. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53224	Płatkowa Pieczęć	Za pomocą tej pieczęci przywołujesz Płatek Śniegu, rozkosznego bałwanka. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53225	Dzwoneczkowa Pieczęć	Za pomocą tej pieczęci przywołujesz Dzwoneczka, rozkosznego bałwanka. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +5% ciosów krytycznych
+53226	Cupido (pieczęć)	Za pomocą tej pieczęci przywołujesz swój osobisty talizman szczęścia. Daje ci | +5% szansy na przeszywający cios | +1500 PŻ.
+53227	Gniewne Serce (pieczęć)	Za pomocą tej pieczęci przywołujesz Gniewne Serce. Daje ci | +5% szansy na cios krytyczny | +1500 PŻ.
+53228	Sierp (Pieczęć)	Za pomocą tej pieczęci przywołujesz swój niebieski sierp. Zwierzak daje ci | +15% ataków walki wręcz/magicznych | +1500 PŻ.
+53229	Sierp (Pieczęć)	Za pomocą tej pieczęci przywołujesz swój czerwony sierp.  Daje ci | +15% ataków walki wręcz/magicznych | +5% szansy na cios krytyczny
+53232	Huashinek	Ta miniaturowa wersja Generała Huashina daje ci | +5% szansy na przeszywający cios | +1500 PŻ.
+53501		W tej klatce czeka na ciebie Ognisty Feniks z nadzieją, że go wypuścisz.
 53502	Skrzynia Reniferka	W tej skrzyni wierci się mały Reniferek i czeka, aby go wypuścić.
 53503	Klatka Lodowego Feniksa	W klatce tej czeka Lodowy Feniks, aby go wypuścić.
 53504		
@@ -1992,10 +1992,10 @@
 53515	Skrzynia Kata (złota)	We wnętrzu tej skrzyni czeka na ciebie grubiutki kat w złotej zbroi.
 53516	Trupia Skrzynia	Zawiera losowy przedmiot. Przy odrobinie szczęścia znajdziesz tam kościanego pupila, który wabi się Kostek.
 53517	Jadeitowa Klatka	W tej klatce czeka na uwolnienie przez ciebie rzadki Feniks Jadeitu.
-53518	Śnieżny Leonidas	W tej skrzyni znajduje się pieczęć Śnieżnego Leonidasa.
-53519	Arktyczny Khan	W tej skrzyni znajduje się pieczęć Arktycznego Khana.
-53520	Polarny Boczuś	W tej skrzyni znajduje się pieczęć Polarnego Boczusia.
-53521	Mroźny Rufus	W tej skrzyni znajduje się pieczęć Mroźnego Rufusa.
+53518	Śnieżny Leonidas	W tej klatce znajduje się pieczęć Śnieżnego Leonidasa.
+53519	Arktyczny Khan	W tej klatce znajduje się pieczęć Arktycznego Khana.
+53520	Polarny Boczuś	W tej klatce znajduje się pieczęć Polarnego Boczusia.
+53521	Mroźny Rufus	W tej klatce znajduje się pieczęć Mroźnego Rufusa.
 53522	Gniazdo Sheldona	W tym gnieździe ukrywa się Sheldon.
 53523	Zajęcza Klatka	W tej klatce ukrywa się mały zając Cooper.
 53526		
@@ -2017,7 +2017,7 @@
 70002	Trzecia Ręka	Ręka, która automatycznie podnosi Yang.
 70003	Książka Lidera	Kiedy przedmiot ten noszony jest przez lidera grupy, Punkty Doświadczenia zdobywane przez grupę są zwiększone o 30%.
 70004	Medal Za Pracowitość	Nagroda dla ciężko pracującego. Otrzymujesz 20% więcej punktów doświadczenia w walce.
-70005	Pierścień Doświadczenia	Kiepsko wyglądający pierścień noszony przez starożytnych bohaterów. Zdobywasz więcej punktów doświadczenia kiedy go używasz. | Nie może być zdjęty.
+70005	Pierścień Doświadczenia	Zwiększa otrzymywane punkty doświadczenia o 50% na 60 minut.
 70006	Pierścień Języka	Starożytny pierścień, który został wykuty dla dyplomatów. Dzięki niemu możesz porozumiewać się z osobami z innych królestw.
 70008	Biała Flaga	Sygnalizuje poddanie się.
 70009	Szkatułka	Bogato zdobiona Szkatułka. Może zostać otworzona tylko przy użyciu specjalnego klucza.
@@ -2027,34 +2027,34 @@
 70014	Pigułka Krwi	Pigułka zrobiona z martwej krwi. Ma zdolności halucynogenne.
 70015	Tania Szczotka	Powszechnie stosowana solidna szczotka z drewnianym uchwytem.
 70020	Wino z Kwiatu Brzoskwini	Mikstura, która natychmiast regeneruje 500 Punktów Życia.
-70024	Marmur Błogosławieństwa	Legendarny, błogosławiony marmur. Jeżeli przedmiot ma 4 atrybuty, dodaje kolejny atrybut.
-70027	Notatka Kowala	Notatka Kowala pokazująca jak ulepszać bronie.
+70024	Marmur Błogosławieństwa	Legendarna, błogosławiona kula. Jeżeli przedmiot ma 4 atrybuty, dodaje kolejny atrybut.
+70027	Notatka Kowala	Notatka brońmistrza pokazująca, jak ulepszać przedmioty. Do 100% zwiększa szansę na ulepszenie przedmiotu z +4 do +5.
 70031	Broszura Szermierki	Ta broszura zawiera informacje o potencjale i słabościach ludzkiej anatomii.
 70035	Magiczna Ruda Miedzi	Jeśli użyjesz go na ulepszonym Zwoju Błogosławieństwa, możesz stworzyć Zwój Błogosławieństwa Boga Wojny.
-70037	Księga Zapomnienia	Legendarna książka, która usuwa z pamięci nauczoną umiejętność całkowicie. Możesz przenieść jeden punkt umiejętności.
+70037	Księga Zapomnienia	Księga ta sprawia, że bohater zapomni nauczoną umiejętność. I w ten sposób możesz przenieść 1 punkt umiejętności.
 70038	Peleryna Męstwa	Starożytni wojownicy okazywali swoje męstwo poprzez noszenie kolorowych peleryn. Był to sposób na zwabienie wszystkich potworów z okolicy.
 70039	Podręcznik Kowala	Księga zawiera duszę starego kowala. Jeśli jej użyjesz, zwiększy to szansę na pomyślne ulepszenie przedmiotu.
 70040	Upartość Orków	Zmniejsza zużycie Wytrzymałości o połowę.
-70043	Rękawica Złodzieja	Podwaja szansę na wypadnięcie przedmiotu.
+70043	Rękawica Złodzieja	Podwajają twoją szansę na zdobycie przedmiotu.
 70047	Pierścień Jęz.(Przykład)	Niegdyś pierścień ten został wyprodukowany dla kręgów dyplomatycznych. Dzięki niemu można rozmawiać w języku innych królestw.
-70048	Płaszcz Uciekiniera	Bezcenna peleryna używana przez wielu uciekinierów. Gdy ją założysz, twoja ranga zostanie ukryta.
-70049	Pierścień Lucy	Grawerunek na pierścieniu głosi: "Niech błogosławi Cię Bóg Smoków". Pierścień ten obniża ryzyku utracenia przedmiotu w walce.
+70048	Płaszcz Uciekiniera	Dzięki tej tajemniczej pelerynie, ukryjesz swoją prawdziwą rangę.
+70049	Pierścień Lucy	Grawerunek na pierścieniu głosi: "Niech błogosławi Cię Bóg Smoków". Pierścień ten obniża ryzyko utracenia przedmiotu w walce. Jeśli zgubisz przedmiot, zostanie upuszczony tylko pierścień Lucy.
 70050	Symb. Króla Przepowiedni	Dziedziczony symbol starożytnej królewskiej rodziny, który daje właścicielowi wielką moc.
 70051	Rękawica Króla Przepow.	Dziedziczony symbol starożytnej królewskiej rodziny, który daje właścicielowi tajemniczą moc.
 70052	Amulet Karmy 1	Talizman używany przez Buddystów do ochrony przez pechem.
 70053	Amulet Karmy 2	Talizman używany przez Buddystów do ochrony przez pechem.
 70054	Amulet Karmy 3	Talizman używany przez Buddystów do ochrony przez pechem.
-70056	Sok z Owocu Granatu+	Napój, który natychmiastowo regeneruje 1000 PŻ
-70057	Peleryna Męstwa	Za pomocą tej peleryny wojownicy niegdyś dowodzili swej odwagi, ponieważ jej jaskrawe kolory zwabiają wszystkie potwory z okolic. Przedmiot ten jest zdatny do handlu.
+70056	Sok z Owocu Granatu+	Napój, który natychmiastowo regeneruje 1000 PŻ.
+70057	Peleryna Męstwa	Za pomocą tej peleryny wojownicy niegdyś dowodzili swej odwagi, ponieważ jej jaskrawe kolory zwabiają wszystkie potwory z okolic.
 70058	Pierścień Teleportacji	Pierścień ten teleportuje Cię 50 razy do wybranego przez Ciebie miejsca wewnątrz Twojego królestwa. Przedmiot ten jest niezdatny do handlu.
 70063	Transformuj kostium	Usuwa bonus z jednego z twoich kostiumów i dodaje nowe. Przy odrobinie szczęścia zmienia się przy tym ilość bonusów (do maks. 3).
 70064	Zaczaruj kostium	Usuwa bonus z jednego z twoich kostiumów i dodaje nowe.
 70065	Transfer bonusów	Przenosi bonusy z jednego kostiumu na drugi. Jeden z tych kostiumów ulega zniszczeniu.
 70102	Fasolka Zen	Zmniejsza przynależność do zła|Zwiększa przynależność do dobra
-70104	Marmur Polimorfii	Możesz zamienić się w potwora ukrytego w marmurze.
-70105	Marmur Polimorfii	Możesz zamienić się w potwora ukrytego w marmurze.
-70106	Marmur Polimorfii	Możesz zamienić się w potwora ukrytego w marmurze.
-70107	Marmur Polimorfii	Możesz zamienić się w potwora ukrytego w marmurze.
+70104	Marmur Polimorfii	Za pomocą tej kuli możesz zamienić się w potwora.
+70105	Marmur Polimorfii	Za pomocą tej kuli możesz zamienić się w potwora.
+70106	Marmur Polimorfii	Za pomocą tej kuli możesz zamienić się w potwora.
+70107	Marmur Polimorfii	Za pomocą tej kuli możesz zamienić się w potwora.
 70201	Wybielacz	Przywraca oryginalny kolor włosów. Takie włosy mogą być farbowane.
 70202	Biała Farba Do Włosów	Farbuje włosy na biało.|Możesz farbować włosy raz na 3 poziomy.
 70203	Blond Farba Do Włosów	Farbuje włosy na blond.|Możesz farbować włosy raz na 3 poziomy.
@@ -2064,22 +2064,22 @@
 70301	Pierścionek Zaręczynowy	Pierścionek noszony przez kochanków.
 70302	Obrączka Ślubna	Pierścionek noszony przez małżeństwo.
 71001	Zwój Egzorcyzmu	Uwalnia Cię od klątwy złego ducha. (Brak możliwości przekazywania!)
-71002	Zwój Powrotu Statusu	Przedmiot ten umożliwia Ci ponowne wydanie twoich Punktów Statystyk. Tak więc możesz rozwijać postać w inny sposób.
+71002	Zwój Powrotu Statusu	Przedmiot ten umożliwia Ci ponowne wydanie twoich punktów statusu. Tak więc możesz rozwijać postać w inny sposób.
 71003	Zwój Powrotu Umiejętn.	Resetuje Punkty Umiejętności.
 71004	Medal Smoka	Chroni przed utratą Punktów Doświadczenia po śmierci postaci.
 71005	Pierścień Języka	Możesz używać wszystkich imperialnych języków przez 7 dni. (Brak możliwości przekazywania!)
 71006	Pierścień Języka	Możesz używać wszystkich imperialnych języków przez 15 dni. (Brak możliwości przekazywania!)
 71007	Pierścień Języka	Możesz używać wszystkich imperialnych języków przez 30 dni. (Brak możliwości przekazywania!)
-71008	Rybie Wnętrzności	Szansa na złapanie rzadkiej ryby podwaja się. (Brak możliwości przekazywania!)
+71008	Rybie Wnętrzności	Przedmiot jest potrzebny nie tylko, by złowić rzadkie ryby, ale też podwaja twoją szansę na nie.
 71009	Powiększony Skład	Do twojego magazynu zostaną dodane dwie dodatkowe zakładki.
 71010	Trzecia Ręka	Ręka, która automatycznie podnosi Yang.
 71011	Maska Uczuć	Dzięki tej masce wreszcie możesz pokazać swoje prawdziwe uczucia.
 71012	Książka Lidera	Kiedy przedmiot noszony jest przez lidera grupy, punkty zdobywane przez grupę są zwiększone o 30%. (Brak możliwości przekazywania!)
 71013	Fajerwerki	Wypełniają niebo podczas festiwalu. (Brak możliwości przekazywania!)
-71014	Mikstura Ataku +10	Zwiększa twoją Szybkość Ataku o 10% na okres 30 minut.
-71015	Pierścień Doświadczenia	Otrzymujesz w walce 50% więcej Punktów Doświadczenia.
-71016	Rękawica Złodzieja	Podwaja na 30 minut szansę na zdobycie przedmiotu.
-71017	Medal Szczęścia	Podwaja szansę na zdobycie Yang. | Czas trwania 30 minut. (Brak możliwości przekazywania!)
+71014	Mikstura Ataku +10	Zwiększa twoją szybkość ataku o 10%.
+71015	Pierścień Doświadczenia	Zdobywasz 50% więcej punktów doświadczenia podczas walki.
+71016	Rękawica Złodzieja	Podwaja szansę na zdobycie przedmiotu.
+71017	Medal Szczęścia	Podwaja szansę na zdobycie Yang.
 71018	Błogosławieństwo Życia	Błogosławieństwo, które natychmiast regeneruje twoje Punkty Życia do 100%.
 71019	Błogosławieństwo Magii	Natychmiastowo odnawia wszystkie Punkty Energii.
 71020	Błogosławieństwo Smoka	Błogosławieństwo, które natychmiast regeneruje twoje Punkty Życia oraz Punkty Energii do 100%.
@@ -2089,15 +2089,15 @@
 71024	Powrót - Siła	Resetuje status Siły.
 71025	Kamień Kowala	Dzięki temu Kamieniowi i Zwojowi Błogosławieństwa, możesz wytworzyć u Kowala Podręcznik Kowala.
 71026	Magiczny Metal	Metal potrzebny do wytworzenia Zwoju Smoka - wraz ze Zwojem Błogosławieństwa u Kowala.
-71027	Życie Boga Smoków	Zwiększa ilość Punktów Życia o 20% na okres 30 minut.
-71028	Atak Boga Smoków	Zwiększa obrażenie jakie zadajesz podczas walki o 12-15% przez 30 min.
-71029	Inteligencja Boga Smoków	Zwiększa ilość Punktów Energii o 20% przez 30 min.
-71030	Obrona Boga Smoków	Zmniejsza obrażenia jakie otrzymujesz podczas walki o 12-15% przez 30 min.
+71027	Życie Boga Smoków	Zwiększa maksymalną ilość PŻ o 20%.
+71028	Atak Boga Smoków	Zwiększa twoją siłę ataku o 20%.
+71029	Inteligencja Boga Smoków	Zwiększa maksymalną ilość PE o 20%.
+71030	Obrona Boga Smoków	Zmniejsza obrażenia, które otrzymujesz podczas walki o 20%.
 71031	Wsparcie Boga Smoków	Witalność, Siła, Inteligencja oraz Zręczność twojej postaci zostaną tymczasowo zwiększone pięciokrotnie.
 71032	Zwój Boga Smoków	Zwiększa szansę na ulepszenie przedmiotu o 10% i przedmiot nie ulega zniszczeniu gdy ulepszenie zawiedzie. W przypadku niepowodzenia, jakość przedmiotu jest redukowana o 1 poziom.
 71033	Maska Uczuć	Dzięki tej masce wreszcie możesz pokazać swoje prawdziwe uczucia.
-71034	Mikstura Ataku +15	Zwiększa twoją Szybkość Ataku o 15% na okres 30 minut.
-71035	Eliksir Poszukiwacza	Poprawia jakość przedmiotów przeznaczonych do badań, co powoduje zwiększenie szansy na ich przyjęcie.
+71034	Mikstura Ataku +15	Zwiększa twoją szybkość ataku o 15%.
+71035	Eliksir Poszukiwacza	Poprawia jakość przedmiotów przeznaczonych do badań, co powoduje zwiększenie szansy na ich przyjęcie. Nie dotyczy misji na Yohara.
 71036	Zwój Przyw. - Wódz Orków	Użyj, aby przyzwać Wodza Orków blisko postaci. Bądź ostrożny! To BOSS!
 71037	Zwój Przyw. - Ezot. Wł.	Użyj, aby przyzwać Ezoterycznego Władcę blisko postaci. Bądź ostrożny! To BOSS!
 71038	Zwój Przyw. - Król. Paj.	Użyj, aby przyzwać Królową Pająków blisko postaci. Bądź ostrożny! To BOSS!
@@ -2106,14 +2106,14 @@
 71041	Zwój Przyw. - 9 Ogonów	Użyj, aby przyzwać Dziewięć Ogonów blisko postaci. Bądź ostrożny! To BOSS!
 71042	Zwój Przyw. - Król Dem.	Użyj, aby przyzwać Elitarnego Króla Demonów blisko postaci. Bądź ostrożny! To BOSS!
 71043	Zwój Przyw. - Duch Tygr.	Użyj, aby przyzwać Zjawę Żółtego Tygrysa blisko postaci. Bądź ostrożny! To BOSS!
-71044	Dłoń Krytyka	Podnosi szansę na zadanie krytycznego uderzenia podczas walki o 20% przez 10 minut.
-71045	Dłoń Przebicia	Podnosi szansę na zadanie przeszywającego uderzenia podczas walki o 20% przez 10 minut.
+71044	Dłoń Krytyka	Podnosi szansę na zadanie ciosu krytycznego podczas walki o 20%.
+71045	Dłoń Przebicia	Podnosi szansę na zadanie przeszywający cios podczas walki o 20%.
 71047	Olejek Kamienia Dusz	Usuwa umieszczony Kamień Duszy z jednego z twoich przedmiotów.
 71048	Zaklęcie Modyfikacji	Zaklęcie pozwala zmienić płeć twojej postaci.
 71049	Szpula Jedwabiu	Dzięki temu przedmiotowi możesz za darmo otwierać swój Sklep przez 10 dni.
 71050	Mikstura Szybkości	Zwiększa Szybkość Ruchu o 60 na 30 minut.
-71051	Magiczny Przedmiot	Dodaje specjalny nowy Bonus do jednego z twoich przedmiotów, jeżeli już go nie posiada.
-71052	Błogosław. Przedmiotu	Usuwa specjalny bonus z jednego z twoich przedmiotów i dodaje nowy.
+71051	Magiczny Przedmiot	Usuwa specjalny bonus z jednego z twoich przedmiotów i dodaje nowy.
+71052	Błogosław. Przedmiotu	Dodaje specjalny nowy Bonus do jednego z twoich przedmiotów, jeżeli już go nie posiada.
 71054	Olejek Wygnania	Przedmiot ten umożliwia przeniesienie postaci do innego Królestwa. Uwaga: za zmianę Królestwa pobierana jest opłata w wysokości 500 000 Yang.
 71055	Olejek Nazwy	Zmienia nazwę gracza.
 71056	Olejek Niebios	Zwiększa szansę na pomyślne ulepszenie Kamienia Duszy.
@@ -2144,21 +2144,21 @@
 71081	Kamień Metin (Średni)	Przyzywa normalnej jakości Kamień Metin blisko postaci.
 71082	Kamień Metin (Silny)	Przyzywa wysokiej jakości Kamień Metin blisko postaci.
 71083	Księga Obróbki Kamienia	Usuwa zepsuty kamień z kieszeni żeby zwolnić kieszeń przedmiotu.
-71084	Zaczarowanie Przedmiotu	Usuwa wszystkie bonusy z twojego jednego przedmiotu, po czym dodaje nowe - losowe. Ilość bonusów nie ulega zmianie.
+71084	Zaczarowanie Przedmiotu	Usuwa bonusy z twojego przedmiotu, po czym dodaje nowe. Dotyczy tylko bonusów 1-5.
 71085	Wzmocnienie Przedmiotu	Z odrobiną szczęścia dodaje do jednego z twoich przedmiotów nowy bonus. (maks. 4 bonusy)
 71088	Księga Misji (Łatwa)	Księga, która jest związana brązowym skórzanym paskiem. Zawiera misję, która może zostać wykonana nawet przez niedoświadczonego wojownika.
 71089	Księga Misji (Normalna)	Księga, która jest związana brązowym skórzanym paskiem. Zawiera misję, która może zostać wykonana tylko przez doświadczone osoby.
 71090	Księga Misji (Trudna)	Księga, która jest związana brązowym skórzanym paskiem. Zawiera misję, która może zostać wykonana tylko przez doświadczonych wojowników.
 71091	Olejek Handlu	Możesz wybrać kolor szyldu twojego sklepu.
 71092	Księga Polimorfii	Pomyślne przeczytanie tej Księgi pozwala na rozwinięcie umiejętności Polimorfia. Po przeczytaniu Książka znika.
-71093	Marmur Polimorfii	Możesz zamienić się w potwora używając marmuru.
+71093	Marmur Polimorfii	Za pomocą tej kuli możesz zamienić się w potwora.
 71094	Rada Pustelnika	Podnosi szansę na pomyślne przeczytanie następnej Księgi Umiejętności (lub Kamienia Duchowego) na 250%.
-71095	Przepustka	Bilet ten umożliwia dostanie się na nowy poziom w Lochu Pająków, jak również w Twierdzy Czerwonego Smoka. Wystarczy pokazać go odpowiedniemu strażnikowi.
+71095	Przepustka	Po pokazaniu przepustki odpowiedniemu strażnikowi, możesz wejść na kolejny poziom wybranego lochu.
 71096	Medal Portalu	Ten medal umożliwia Ci przejście przez wrota.
 71099	Pierścień Zastępstwa	Pozwala liderowi gildii wyznaczyć swojego zastępce.
 71100	Zwój Zmiany Profesji	Przedmiot ten umożliwia wybranie innej profesji postaci. Aby móc skorzystać z tego przedmiotu, twoja postać musi mieć co najmniej 31. poziom.
-71101	Mikstura Pośpiechu	Ta mikstura zwiększa Szybkość Regeneracji Zaklęcia o 20 procent na okres 30 minut.
-71102		
+71101	Mikstura Pośpiechu	Mikstura ta zmniejsza czas regeneracji twoich umiejętności o 20%.
+71102		Zwiększa twoją szybkość zaklęcia o 30%.
 71103	Zwój Redystrybucji (WIT)	Ustawia Punkty Witalności na 1 i pozwala Ci ponownie rozdać punkty.
 71104	Zwój Redystrybucji (INT)	Ustawia Punkty Inteligencji na 1 i pozwala Ci ponownie rozdać punkty.
 71105	Zwój Redystrybucji (SIŁ)	Ustawia Punkty Siły na 1 i pozwala Ci ponownie rozdać punkty.
@@ -2168,123 +2168,123 @@
 71109	Zwój Korekcji	Zwój ten umożliwia usunięcie ostatnio pomyślnie dodanego Kamienia Duszy ze wskazanego przedmiotu.
 71110	Cukier dla Konia	Ten Cukier pozwala nazwać twojego konia. Dodatkowo, zwiększa jego poziom obrony.
 71113	Szkło Intuicji	Pozwala Ci na pokazanie innemu graczowi przedmiotu z twojego ekwipunku. Podczas tego procesu, Szkło ulega zniszczeniu.
-71114	Pieczęć Dzika (żółta)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
+71114	Pieczęć Dzika (żółta)	Czar pieczęci wzywa potężnego ducha zwierząt, który przeniesie cię szybko do miejsca twojego wyboru. Zwiększa siłę obrony swojego jeźdźca o 75.
 711151	Pieczęć Dzika (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711152	Pieczęć Dzika (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711153	Pieczęć Dzika (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711154	Pieczęć Dzika (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
-71115	Pieczęć Dzika (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
-71116	Pieczęć Wilka (żółta)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
+71115	Pieczęć Dzika (nieb.)	Czar pieczęci wzywa potężnego ducha zwierząt, który przeniesie cię szybko do miejsca twojego wyboru. Zwiększa on siłę obrony swojego jeźdźca o 100.
+71116	Pieczęć Wilka (żółta)	Czar pieczęci wzywa potężnego ducha zwierząt, który przeniesie cię szybko do miejsca twojego wyboru. Zwiększa on siłę obrony swojego jeźdźca o 100.
 711171	Pieczęć Wilka (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711172	Pieczęć Wilka (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711173	Pieczęć Wilka (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711174	Pieczęć Wilka (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
-71117	Pieczęć Wilka (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
-71118	Pieczęć Tygrysa (żółta)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
+71117	Pieczęć Wilka (nieb.)	Czar pieczęci wzywa potężnego ducha zwierząt, który przeniesie cię szybko do miejsca twojego wyboru. Zwiększa on siłę obrony swojego jeźdźca o 150.
+71118	Pieczęć Tygrysa (żółta)	Czar pieczęci wzywa potężnego ducha zwierząt, który przeniesie cię szybko do miejsca twojego wyboru. Zwiększa on siłę obrony swojego jeźdźca o 125.
 711191	Pieczęć Tygrysa (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711192	Pieczęć Tygrysa (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711193	Pieczęć Tygrysa (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711194	Pieczęć Tygrysa (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
-71119	Pieczęć Tygrysa (nieb.)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
-71120	Pieczęć Lwa (żółta)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
+71119	Pieczęć Tygrysa (nieb.)	Czar pieczęci wzywa potężnego ducha zwierząt, który przeniesie cię szybko do miejsca twojego wyboru. Zwiększa on siłę obrony swojego jeźdźca o 200.
+71120	Pieczęć Lwa (żółta)	Czar pieczęci wzywa potężnego ducha zwierząt, który przeniesie cię szybko do miejsca twojego wyboru. Zwiększa on siłę ataku swojego jeźdźca o 200.
 711211	Pieczęć Lwa (niebieska)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711212	Pieczęć Lwa (niebieska)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711213	Pieczęć Lwa (niebieska)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
 711214	Pieczęć Lwa (niebieska)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
-71121	Pieczęć Lwa (niebieska)	Czar Pieczęci wzywa potężnego Ducha Zwierząt, aby cię szybko przenieść do miejsca twojego wyboru.
-71122		
+71121	Pieczęć Lwa (niebieska)	Czar pieczęci wzywa potężnego ducha zwierząt, który przeniesie cię szybko do miejsca twojego wyboru. Zwiększa on siłę ataku swojego jeźdźca o 300.
+71122		Za pomocą tego przedmiotu można wejść do Świątyni Smoka.
 71123	Smocza Łuska	Smocze Łuski należą do najtwardszych znanych materiałów.
-71124	Biały Lew	Zwierzęta o białym futrze są rzadkością i wiele kultur przypisuje im nadzwyczajne siły.
-71125	Pieczęć Dzika Wojennego	Okiełznanie złych Duchów Zwierząt wymaga nie lada kunsztu magicznego. Odpowiednio zadziwiający jest rezultat.
-71126	Pieczęć Wilka Wojennego	Okiełznanie złych Duchów Zwierząt wymaga nie lada kunsztu magicznego. Odpowiednio zadziwiający jest rezultat.
-71127	Pieczęć Szarż. Tygrysa	Okiełznanie złych Duchów Zwierząt wymaga nie lada kunsztu magicznego. Odpowiednio zadziwiający jest rezultat.
-71128	Pieczęć Walecznego Lwa	Okiełznanie złych Duchów Zwierząt wymaga nie lada kunsztu magicznego. Odpowiednio zadziwiający jest rezultat.
+71124	Biały Lew	Zwierzęta o białym futrze są rzadkością i wiele kultur przypisuje im nadzwyczajne siły. Zwiększa otrzymywane punkty doświadczenia o 30%.
+71125	Pieczęć Dzika Wojennego	Okiełznanie złych duchów zwierząt wymaga nie lada kunsztu magicznego. Odpowiednio zadziwiający jest rezultat. Daje swojemu właścicielowi +20% do siły w walce z potworami.
+71126	Pieczęć Wilka Wojennego	Okiełznanie złych duchów zwierząt wymaga nie lada kunsztu magicznego. Odpowiednio zadziwiający jest rezultat. Zwiększa szansę na cios krytyczny o 10%.
+71127	Pieczęć Szarż. Tygrysa	Okiełznanie złych duchów zwierząt wymaga nie lada kunsztu magicznego. Odpowiednio zadziwiający jest rezultat. Zwiększa szansę na cios krytyczny o 10%.
+71128	Pieczęć Walecznego Lwa	Okiełznanie złych duchów zwierząt wymaga nie lada kunsztu magicznego. Odpowiednio zadziwiający jest rezultat. Zmniejsza obrażenia, jakie otrzymujesz podczas obrony o 10%.
 71129	Smoczy Szpon	Widok tego strasznego szponu budzi wspomnienia...
-71130	Przepustka	Przepustka ta umożliwia dostanie się na nowy poziom w Lochu Pająków, jak również w Twierdzy Czerwonego Smoka. Wystarczy pokazać ją odpowiedniemu strażnikowi. Przedmiot ten nadaje się do handlu.
-71131	Pieczęć Czarnego Konia	Pieczęć dla Szlachetnego Czarnego Konia.
-71132	Pieczęć Czarnego Konia	Pieczęć dla Szlachetnego Czarnego Konia.
-71133	Pieczęć Czarnego Konia	Pieczęć dla Szlachetnego Czarnego Konia.
-71134	Pieczęć Czarnego Konia	Pieczęć dla Szlachetnego Czarnego Konia.
-71135	Pierścień Półksiężyca	Pierścień z kunsztownie wykonanym grawerunkiem w kształcie półksiężyca.
-71136	Lizak Potęgi	Jest to lizak o tajemniczym składzie, doda ci siły oraz doświadczenia w walce.
-71137	Pieczęć T.B. (niebieski)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (niebieski).
-71138	Pieczęć T.B. (czerwona)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (czerwony).
-71139	Pieczęć T.B. (złoty)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (złoty).
-71140	Pieczęć T.B. (zielony)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (zielony).
-71141	Pieczęć T.B. (szary)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (szary).
-71142	Pieczęć T.B. (biały)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (biały).
+71130	Przepustka	Po pokazaniu przepustki odpowiedniemu strażnikowi, możesz wejść na kolejny poziom wybranego lochu. Przedmiot ten jest zdatny do handlu.
+71131	Pieczęć Czarnego Konia	Pieczęć dla szlachetnego czarnego konia. Zwiększa szybkość ruchu o 60.
+71132	Pieczęć Czarnego Konia	Pieczęć dla szlachetnego czarnego konia. Zwiększa szybkość ruchu o 60.
+71133	Pieczęć Czarnego Konia	Pieczęć dla szlachetnego czarnego konia. Zwiększa szybkość ruchu o 60.
+71134	Pieczęć Czarnego Konia	Pieczęć dla szlachetnego czarnego konia. Zwiększa szybkość ruchu o 60.
+71135	Pierścień Półksiężyca	Dodaje ci | +50% punktów doświadczenia | +20% szybkość ataku | +20% szybkość zaklęcia | +30% fizycznych obrażeń | +10% maks. PŻ | +10% maks. PE | +5% do wszystkich bonusów kostiumu
+71136	Lizak Potęgi	Lizak o tajemniczych składnikach doda ci | +50% punktów doświadczenia | +30% do fizycznych obrażeń | +20 szybkości ataku | +20 szybkości zaklęcia | +10% maks. PŻ | +10% maks. PE
+71137	Pieczęć T.B. (niebieski)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (niebieski). Zwiększa otrzymywane punkty doświadczenia o 30%.
+71138	Pieczęć T.B. (czerwona)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (czerwony). Zwiększa otrzymywane punkty doświadczenia o 30%.
+71139	Pieczęć T.B. (złoty)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (złoty). Zwiększa otrzymywane punkty doświadczenia o 30%.
+71140	Pieczęć T.B. (zielony)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (zielony). Zwiększa otrzymywane punkty doświadczenia o 30%.
+71141	Pieczęć T.B. (szary)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (szary). Zwiększa otrzymywane punkty doświadczenia o 30%.
+71142	Pieczęć T.B. (biały)	Czar tej pieczęci przywołuje twojego wierzchowca, majestatycznego Tygrysa Bengalskiego (biały). Zwiększa otrzymywane punkty doświadczenia o 30%.
 71143	Pierścień Radości	Drogocenny pierścień przyozdobiony nefrytem i turkusem posiada następujące bonusy: +50% punktów doświadczenia +20% szybkości ataku +20% szybkości zaklęcia +30% siły przeciwko potworom  +10% maks. PŻ +10% maks. PE
 71144	Świąteczna Skrzynia	Ten ślicznie zapakowany prezent świąteczny skrywa pyszną niespodziankę.
-71145	Amulet Wiecznej Miłości	Jest to srebrny wisiorek w kształcie serca, wysadzany magicznymi klejnotami.
+71145	Amulet Wiecznej Miłości	Jest to srebrny wisiorek w kształcie serca, wysadzany magicznymi klejnotami. Daje ci on | +30% PD | +10 szybkość ataku | +10 szybkość zaklęcia | +5% PŻ i PE | +10% siła w walce z potworami
 71146	Skrzynia Amora (różowa)	Ta skrzynia w kształcie serca zawiera 5 niespodzianek. Można ją otwierać co 30 min.
 71147	Skrzynia Amora (nieb.)	Ta skrzynia w kształcie serca zawiera 5 niespodzianek. Można ją otwierać co 30 min.
-71148	Pierścień Siły Woli	Na 7 dni otrzymujesz: +30% PD, +20% szansy na obronę w walce z wojownikami, +20% szansy na obronę w walce z ninja, +20% szansy na obronę w walce z Likanami, +30% siły przeciwko potworom, +10% maks. PŻ i +10% maks. PE.
-71149	Pierścień Śmier. Mocy	Na 7 dni otrzymujesz: +30% PD, +20% szansy na obronę w walce z surami, +20% szansy na obronę w walce z szamanami, +20% szansy na obronę w walce z Likanami, +30% siły przeciwko potworom, +10% maks. PŻ i +10% maks. PE.
+71148	Pierścień Siły Woli	W trakcie trwania otrzymujesz: +30% PD, +20% szansy na obronę w walce z wojownikami, +20% szansy na obronę w walce z ninja, +20% szansy na obronę w walce z Likanami, +30% siły w walce z potworami, +10% maks. PŻ i +10% maks. PE.
+71149	Pierścień Śmier. Mocy	Otrzymujesz na pewien czas: +30% PD, +20% szansy na obronę w walce z surami, +20% szansy na obronę w walce z szamanami, +20% szansy na obronę w walce z Likanami, +30% siły w walce z potworami, +10% maks. PŻ i +10% maks. PE.
 71150	Magiczne Jajo	Ta pięknie ozdobiona owalna skrzynia zawiera niejedną wielkanocną niespodziankę. Swoją zawartość odsłania jednak stopniowo.
 71151	Zielony Czar	Usuwa wszystkie bonusy w jednym z Twoich przedmiotów, po czym dodaje nowe. Można go używać tylko przy broniach i zbrojach do poziomu 40. Niezdatny do handlu.
 71152	Zielona Siła	Z odrobiną szczęścia dodaje do jednego z Twoich przedmiotów nowy bonus (maks. 4 bonusy). Można go używać tylko na broń i zbroje do poziomu 40. Niezdatny do handlu.
 71153	Mikstura Mądrości	Za pomocą tej mikstury zdobywasz 100% więcej doświadczenia podczas godziny grania. Przedmiot ten jest niezdatny do handlu.
 71154	Mikstura Zarania (3h)	Dzięki tej miksturze w ciągu 3 godz. gry zbierzesz 80% więcej doświadczenia. Niezdatna do handlu.
 71155	Mikstura Mądrości (3h)	Dzięki tej miksturze w ciągu 3 godz. gry zbierzesz 100% więcej doświadczenia. Niezdatna do handlu.
-71156	Mikstura Ducha (3h)	Dzięki tej miksturze w ciągu 3 godz. gry zbierzesz 150% więcej doświadczenia. Niezdatna do handlu.
+71156	Mikstura Ducha (3h)	Zwiększa otrzymywane doświadczenie o 150%.
 71157		
-71158	Medal Bohatera	Daje +50 % PD, +30 % obrażeń, +20 % szybkości ataku, +20 % szybkości zaklęć, +10 % PŻ oraz +10 % PE.
+71158	Medal Bohatera	Daje +50% PD, +30% fizycznych obrażeń, +20% szybkości ataku, +20% szybkości zaklęcia, +10% PŻ oraz +10% PE.
 71159	Skrzynia Milona	Skrzynia dla prawdziwych bohaterów - zawiera losowy przedmiot, nagrodę za Twój tryumf.
 71160	Skrzynia Ateny	Skrzynia dla prawdziwych bohaterek - zawiera losowy przedmiot, nagrodę za Twój tryumf.
-71161	Equus Purpur	Pieczęć do jednego z pięknych i nadzwyczaj rzadkich purpurowych koni.
-71164	Pieczęć Kometka	Za pomocą tej pieczęci możesz przywołać renifera Kometka.
-71166	Pancerna Panda (Pieczęć)	Za pomocą tej pieczęci możesz przywołać pancerną pandę.
-71171	Pieczęć Jednorożca	Dzięki tej pieczęci możesz przywołać jednorożca.
-71172	Pieczęć Mary Sennej	Dzięki tej pieczęci możesz przywołać marę senną.
+71161	Equus Purpur	Pieczęć do jednego z pięknych i nadzwyczaj rzadkich purpurowych koni. Zwiększa szybkość ruchu o 60.
+71164	Pieczęć Kometka	Za pomocą tej pieczęci możesz przywołać renifera Kometka. Zwiększa szybkość ruchu o 60.
+71166	Pancerna Panda (Pieczęć)	Za pomocą tej pieczęci możesz przywołać pancerną pandę. Zwiększa szybkość ruchu o 60.
+71171	Pieczęć Jednorożca	Za pomocą tej pieczęci możesz przywołać jednorożca. Zwiększa szybkość ruchu o 60.
+71172	Pieczęć Mary Sennej	Za pomocą tej pieczęci możesz przywołać marę senną. Zwiększa szybkość ruchu o 60.
 71173	Zwój Teleportacji	Zwój ten przeniesie cię bezpośrednio pod bramy Twierdzy Czerwonego Smoka.
 71174	Przepustka	Pokaż tę przepustkę strażnikowi, aby wkroczyć do Twierdzy Czerwonego Smoka.
 71175	Przepustka	Pokaż tę przepustkę strażnikowi, aby wkroczyć do Twierdzy Czerwonego Smoka.
-71176	Czarna Pantera	Pieczęć ta przywołuje tajemniczą czarną panterę.
-71177	Pieczęć Leoparda	Pieczęć ta przywołuje dzielnego leoparda.
+71176	Czarna Pantera	Pieczęć ta przywołuje tajemniczą czarną panterę. Zwiększa szybkość ruchu o 30.
+71177	Pieczęć Leoparda	Pieczęć ta przywołuje dzielnego leoparda. Zwiększa szybkość ruchu o 30.
 71178	Encyklopedia Księżyca(m)	Pakiet zawierający 10 losowo wybranych ksiąg z instrukcjami umiejętności dla Likanów.
 71179	Encyklopedia Księżyca(d)	Pakiet zawierający 25 losowo wybranych ksiąg z instrukcjami umiejętności dla Likanów.
 71180	Mikstura Zarania (3h)	Dzięki tej miksturze w ciągu 3 godz. gry zbierzesz 80% więcej doświadczenia. Niezdatna do handlu.
-71181	Mikstura Mądrości (3h)	Dzięki tej miksturze w ciągu 3 godz. gry zbierzesz 100% więcej doświadczenia. Niezdatna do handlu.
-71182	Pieczęć Muffina (brąz.)	Za pomocą tej pieczęci możesz przywołać Muffina, groźnego bojowego kurczaczka.
-71183	Pieczęć Nuggeta (brąz.)	Za pomocą tej pieczęci możesz przywołać Nuggeta, strasznego bojowego kurczaczka.
-71184	Pieczęć Muffina (nieb.)	Za pomocą tej pieczęci możesz przywołać Muffina, groźnego bojowego kurczaczka.
-71185	Pieczęć Nuggeta (nieb.)	Za pomocą tej pieczęci możesz przywołać Nuggeta, strasznego bojowego kurczaczka.
-71186	Pieczęć Muffina (ziel.)	Za pomocą tej pieczęci możesz przywołać Muffina, groźnego bojowego kurczaczka.
-71187	Pieczęć Nuggeta (ziel.)	Za pomocą tej pieczęci możesz przywołać Nuggeta, strasznego bojowego kurczaczka.
-71188	Lizak Magii	Jest to lizak o tajemniczym składzie, który doda ci magicznej energii oraz doświadczenia w walce.
-72001	Pierścień Doświadczenia	Zwiększa otrzymywane Punkty Doświadczenia o 50% przez 1 godzinę.
+71181	Mikstura Mądrości (3h)	Dzięki tej miksturze będziesz zbierać przez określony czas 100% więcej doświadczenia. Brak możliwości handlu.
+71182	Pieczęć Muffina (brąz.)	Za pomocą tej pieczęci możesz przywołać Muffina, groźnego bojowego kurczaczka. Zwiększa szybkość ruchu o 20.
+71183	Pieczęć Nuggeta (brąz.)	Za pomocą tej pieczęci możesz przywołać Nuggeta, strasznego bojowego kurczaczka. Zwiększa szybkość ruchu o 20.
+71184	Pieczęć Muffina (nieb.)	Za pomocą tej pieczęci możesz przywołać Muffina, groźnego bojowego kurczaczka. Zwiększa szybkość ruchu o 20.
+71185	Pieczęć Nuggeta (nieb.)	Za pomocą tej pieczęci możesz przywołać Nuggeta, strasznego bojowego kurczaczka. Zwiększa szybkość ruchu o 20.
+71186	Pieczęć Muffina (ziel.)	Za pomocą tej pieczęci możesz przywołać Muffina, groźnego bojowego kurczaczka. Zwiększa szybkość ruchu o 20.
+71187	Pieczęć Nuggeta (ziel.)	Za pomocą tej pieczęci możesz przywołać Nuggeta, strasznego bojowego kurczaczka. Zwiększa szybkość ruchu o 20.
+71188	Lizak Magii	Lizak o tajemniczych składnikach doda ci | +50% punktów doświadczenia | +30% do magicznych obrażeń | +20 szybkości ataku | +20 szybkości zaklęcia | +10% maks. PŻ | +10% maks. PE
+72001	Pierścień Doświadczenia	Zwiększa otrzymywane punkty doświadczenia o 50% na 10 godzin.
 72002	Pierścień Doświadczenia	Zwiększa otrzymywane Punkty Doświadczenia o 50% na 30 minut.
-72003	Pierścień Doświadczenia	Zwiększa otrzymywane Punkty Doświadczenia o 50% na 3 godziny.
-72004	Rękawica Złodzieja	Podwaja szansę na zdobycie przedmiotu na 10 godzin.
-72005	Rękawica Złodzieja	Podwaja szansę na zdobycie przedmiotu na 30 minut.
-72006	Rękawica Złodzieja	Podwaja szansę na zdobycie przedmiotu na 3 godziny.
+72003	Pierścień Doświadczenia	Zwiększa otrzymywane punkty doświadczenia o 50% na 3 godziny.
+72004	Rękawica Złodzieja	Podwajają przez 10 godzin szansę na zdobycie przedmiotów.
+72005	Rękawica Złodzieja	Podwajają przez 30 minut szansę na zdobycie przedmiotów.
+72006	Rękawica Złodzieja	Podwajają przez 3 godzin szansę na zdobycie przedmiotów.
 72007	Szpula Jedwabiu	Możesz otworzyć prywatny sklep przez 10 godzin.
 72008	Szpula Jedwabiu	Możesz otworzyć prywatny sklep przez 30 minut.
 72009	Szpula Jedwabiu	Możesz otworzyć prywatny sklep przez 3 godziny.
 72010	Pióro Ptaka Miłości	Kiedy użyte, Punkty Miłości rosną dwa razy szybciej przez 15 minut.
 72011	Pióro Ptaka Miłości	Kiedy użyte, Punkty Miłości rosną dwa razy szybciej przez 30 minut.
 72012	Pióro Ptaka Miłości	Kiedy użyte, Punkty Miłości rosną dwa razy szybciej przez 3 godziny.
-72013	Rybie Wnętrzności	Zwiększa szansę na złapanie rzadkiej ryby przez 15 minut.
-72014	Rybie Wnętrzności	Zwiększa szansę na złapanie rzadkiej ryby przez 30 minut.
-72015	Rybie Wnętrzności	Zwiększa szansę na złapanie rzadkiej ryby przez 3 godziny.
-72016	Trzecia Ręka	Ręka podnosi upuszczone pieniądze automatycznie przez 15 minut.
-72017	Trzecia Ręka	Ręka podnosi upuszczone pieniądze automatycznie przez 30 minut.
-72018	Trzecia Ręka	Ręka podnosi upuszczone pieniądze automatycznie przez 3 godziny.
+72013	Rybie Wnętrzności	Przedmiot jest potrzebny nie tylko, by złowić rzadkie ryby, ale też podwaja przez 15 minut twoją szansę na nie.
+72014	Rybie Wnętrzności	Przedmiot jest potrzebny nie tylko, by złowić rzadkie ryby, ale też podwaja przez 30 minut twoją szansę na nie.
+72015	Rybie Wnętrzności	Przedmiot jest potrzebny nie tylko, by złowić rzadkie ryby, ale też podwaja przez 3 godziny twoją szansę na nie.
+72016	Trzecia Ręka	Ręka ta automatycznie zbiera przez pewien czas upuszczone Yang.
+72017	Trzecia Ręka	Ręka ta automatycznie zbiera leżące w pobliżu Yang.
+72018	Trzecia Ręka	Ręka ta automatycznie zbiera leżące w pobliżu Yang.
 72019	Powiększony Skład	Do twojego magazynu zostaną dodane dwie dodatkowe zakładki na 15 minut.
 72020	Powiększony Skład	Do twojego magazynu zostaną dodane dwie dodatkowe zakładki na 30 minut.
 72021	Powiększony Skład	Do twojego magazynu zostaną dodane dwie dodatkowe zakładki na 3 godziny.
 72022	Medal Szczęścia	Szansa na zdobycie Yang jest podwojona na 10 godzin.
 72023	Medal Szczęścia	Szansa na zdobycie Yang jest podwojona na 30 minut.
 72024	Medal Szczęścia	Szansa na zdobycie Yang jest podwojona na 3 godziny.
-72025	Dłoń Przebicia	Szansa na przebicie +10%
-72026	Dłoń Krytyka	Szansa na przebicie +10%
-72027	Dłoń Krytyka	Szansa na przebicie +10%
+72025	Dłoń Przebicia	Podnosi szansę na zadanie przeszywający cios podczas walki o 10%.
+72026	Dłoń Krytyka	Podnosi szansę na zadanie przeszywający cios podczas walki o 10%.
+72027	Dłoń Krytyka	Podnosi szansę na zadanie przeszywający cios podczas walki o 10%.
 72028	Maska Uczuć	Możesz okazywać swoje emocje.
 72029	Maska Uczuć	Możesz okazywać swoje emocje.
 72030	Maska Uczuć	Możesz okazywać swoje emocje.
-72031	Atak Boga Smoków	Zwiększa zadawane obrażenia o 12% do 15% gdy atakujesz. Działa przez 30 minut.
-72032	Atak Boga Smoków	Zwiększa zadawane obrażenia o 12% do 15% gdy atakujesz. Działa przez 30 minut.
-72033	Atak Boga Smoków	Zwiększa zadawane obrażenia o 12% do 15% gdy atakujesz. Działa przez 30 minut.
+72031	Atak Boga Smoków	Zwiększa twoją wartość ataku na 30 minut o 15%.
+72032	Atak Boga Smoków	Zwiększa twoją siłę ataku na 30 minut o 15%.
+72033	Atak Boga Smoków	Zwiększa twoją siłę ataku na 30 minut o 15%.
 72034	Obrona Boga Smoków	Redukuje obrażenia o 12% ~ 15% gdy się bronisz.
 72035	Obrona Boga Smoków	Redukuje obrażenia o 12% ~ 15% gdy się bronisz.
 72036	Obrona Boga Smoków	Redukuje obrażenia o 12% ~ 15% gdy się bronisz.
@@ -2297,38 +2297,38 @@
 72043	Książka Lidera	Kiedy przedmiot noszony jest przez lidera grupy, punkty zdobywane przez grupę są zwiększone o 30%.
 72044	Książka Lidera	Kiedy przedmiot noszony jest przez lidera grupy, punkty zdobywane przez grupę są zwiększone o 30%.
 72045	Książka Lidera	Kiedy przedmiot noszony jest przez lidera grupy, punkty zdobywane przez grupę są zwiększone o 30%.
-72046	Dłoń Krytyka	Podnosi szansę na zadanie przeszywającego uderzenia podczas walki o 20% przez 10 minut.
-72047	Dłoń Krytyka	Podnosi szansę na zadanie przeszywającego uderzenia podczas walki o 20% przez 10 minut.
-72048	Dłoń Krytyka	Podnosi szansę na zadanie przeszywającego uderzenia podczas walki o 20% przez 10 minut.
+72046	Dłoń Krytyka	Podnosi szansę na zadanie ciosu krytycznego podczas walki o 10%.
+72047	Dłoń Krytyka	Podnosi szansę na zadanie ciosu krytycznego podczas walki o 10%.
+72048	Dłoń Krytyka	Podnosi szansę na zadanie ciosu krytycznego podczas walki o 10%.
 72301	Zwój Błogosławieństwa	Usuwa ryzyko zniszczenia przedmiotu podczas jego ulepszania. Jeżeli ulepszanie się nie powiedzie, to jakość przedmiotu jest redukowana o 1 poziom.
-72302		
-72303		
-72304		
-72305		
-72306		
-72307		
+72302		Kiedy przedmiot noszony jest przez lidera grupy, punkty doświadczenia zdobywane przez grupę są zwiększone o 30% przez 3 godz.
+72303		Zwiększa otrzymywane punkty doświadczenia o 50% przez 1 godzinę.
+72304		Ta legendarna kula może dodać piąty bonus do przedmiotów, które mają już cztery bonusy. Dodawanie może się nie udać.
+72305		Ginące Lustro
+72306		Notatka brońmistrza pokazująca, jak ulepszać przedmioty. Do 100% zwiększa szansę na ulepszenie przedmiotu z +4 do +5.
+72307		Notatka brońmistrza pokazująca, jak ulepszać przedmioty. Do 100% zwiększa szansę na ulepszenie przedmiotu z +5 do +6.
 72308	Magiczna Ruda Miedzi	Za pomocą tej rudy w połączeniu ze Zwojem Błogosławieństwa można wytworzyć u kowala Zwój Wojny.
-72309		
-72310		
-72311		
-72312		
-72313		
-72314		
+72309		Księga połączona jest z duszą starego kowala. Jeśli jej użyjesz, zwiększy to szansę na pomyślne ulepszenie przedmiotu.
+72310		Uwalnia cię od klątwy złego ducha, jeśli nauka się nie powiedzie. Za pomocą tego zwoju możesz przeczytać w ciągu jednego dnia kolejny dokument umiejętności.
+72311		Błogosławieństwo, które natychmiast regeneruje twoje punkty życia oraz punkty energii do 100%.
+72312		Zwiększa twoją siłę ataku o 20%.
+72313		Zmniejsza obrażenia, które otrzymujesz podczas walki o 20%.
+72314		Usuwa ryzyko zniszczenia przedmiotu podczas jego ulepszania. Tylko jakość przedmiotu zostanie zmniejszona o 1 poziom. Ponadto zwiększa się prawdopodobieństwo pomyślnego ulepszenia o 10%.
 72501	Pierścień Dośw. (iCafe)	Zwiększa otrzymywane Punkty Doświadczenia o 20% dla członków iCafe.
 72502	Rękawica Złodz. (iCafe)	Szansa na wyrzucanie przedmiotów zwiększona 1.5 raza dla członków iCafe.
 72701	Buty Wiatru	Gdy ich używasz, Szybkość Ruchu twojej postaci jest zwiększona o 30.
 72703	Kolczyk z kości tygrysa	Wartość ataku wzrasta na 2 godziny o 200 punktów (czas upływa, tylko gdy przedmiot jest założony). Przedmiot ten jest niezdatny do handlu.
 72704	Kolczyk z kości smoka	Wartość obrony wzrasta na 2 godziny o 200 punktów (czas upływa, tylko gdy przedmiot jest założony). Przedmiot ten jest niezdatny do handlu.
-72705	Brans. z kości tygrysa	Obrażenia twoich umiejętności wzrastają na 2 godziny o 15% (czas upływa, tylko gdy przedmiot jest założony). Przedmiot ten jest niezdatny do handlu.
-72706	Brans. z kości smoka	Twoja obrona przeciwko umiejętnościom wzrasta na 2 godziny o 15% (czas upływa, tylko gdy przedmiot jest założony). Przedmiot ten jest niezdatny do handlu.
+72705	Brans. z kości tygrysa	Obrażenia twoich umiejętności wzrastają na 2 godziny o 15 punktów (czas upływa, tylko gdy przedmiot jest założony). Przedmiot ten jest niezdatny do handlu.
+72706	Brans. z kości smoka	Twoja obrona przeciwko umiejętnościom wzrasta na 2 godziny o 15 punktów (czas upływa, tylko gdy przedmiot jest założony). Przedmiot ten jest niezdatny do handlu.
 72723	Eliksir Słońca (M)	Automatycznie regeneruje twoje PŻ. Zawiera 1.000.000 PŻ.
 72724	Eliksir Słońca (Ś)	Automatycznie regeneruje twoje PŻ. Zawiera 3.000.000 PŻ.
 72725	Eliksir Słońca (D)	Automatycznie regeneruje twoje PŻ. Zawiera 7.000.000 PŻ.
-72726	Eliksir Słońca (S)	Automatycznie uzupełnia twoje PŻ. Zawiera 10.000.000 PŻ. Przedmiot ten jest zdatny do handlu.
+72726	Eliksir Słońca (S)	Zawiera 10 000 000 PŻ. Automatycznie regeneruje twoje PŻ i dodatkowo ma pozytywny efekt na twoje maks. PŻ. Przedmiot ten jest zdatny do handlu.
 72727	Eliksir Księżyca (M)	Automatycznie regeneruje twoje PE. Zawiera 100.000 PE.
 72728	Eliksir Księżyca (Ś)	Automatycznie regeneruje twoje PE. Zawiera 300.000 PE.
 72729	Eliksir Księżyca (D)	Automatycznie regeneruje twoje PE. Zawiera 700.000 PE.
-72730	Eliksir Księżyca (S)	Automatycznie uzupełnia twoje PE. Zawiera 1.000.000 PE. Przedmiot ten zdatny jest do handlu.
+72730	Eliksir Księżyca (S)	Zawiera 1 000 000 PE. Automatycznie regeneruje twoje PE i dodatkowo ma pozytywny efekt na twoje maks. PE. Przedmiot ten jest zdatny do handlu.
 73001	Modna Fryzura (czerw.)	Ulubiona fryzura samotnych wojowników, wygląda świetnie gdy wieje wiatr.
 73002	Modna Fryzura (jasna)	Ulubiona fryzura samotnych wojowników, wygląda świetnie gdy wieje wiatr.
 73003	Modna Fryzura (nieb.)	Ulubiona fryzura samotnych wojowników, wygląda świetnie gdy wieje wiatr.
@@ -2496,14 +2496,14 @@
 74768	Pustynny Szal Szamanki	Pustynny szal ze szlachetnego materiału dla żeńskich szamanów. (czas trwania: 7 dni)
 74769	Turban Szamanki	Turban dla żeńskich szamanów z bardzo cennego materiału. (czas trwania: 7 dni)
 74770	Maska Dyni Szaman (k)	Maska dla Szamanki. Atrybuty oraz czas trwania są ustalane losowo. Zastępuje obecną fryzurę.
-75001	Modna Fryzura (czerwona)	Modna czerwona fryzura z piękną wstążką
-75002	Modna Fryzura (jasna)	Modna jasna fryzura z piękną wstążką
-75003	Modna Fryzura (nieb.)	Modna niebieska fryzura z piękną wstążką
-75004	Modna fryzura (brązowa)	Modna brązowa fryzura z piękną wstążką
+75001	Modna Fryzura (czerwona)	Modna czerwona fryzura z piękną wstążką.
+75002	Modna Fryzura (jasna)	Modna jasna fryzura z piękną wstążką.
+75003	Modna Fryzura (nieb.)	Modna niebieska fryzura z piękną wstążką.
+75004	Modna fryzura (brązowa)	Modna brązowa fryzura z piękną wstążką.
 75005	Opaska (brązowe)	Zmierzwiona fryzura z opaską na czoło
 75006	Opaska (blond)	Zmierzwiona fryzura z opaską na czoło
 75007	Opaska (nieb.)	Zmierzwiona fryzura z opaską na czoło
-75008	Opaska (ziel.)	Zmierzwiona fryzura z opaską
+75008	Opaska (ziel.)	Zmierzwiona fryzura z opaską.
 75009	Włosy (czar.)	Wspaniałe czarne włosy, fryzura
 75010	Włosy (czerw.)	Wspaniałe czerwone włosy
 75011	Włosy (brąz.)	Wspaniałe brązowe włosy
@@ -2577,9 +2577,9 @@
 75619	Turban Szamana	Nakrycie głowy ze szlachetnego materiału dla męskich szamanów. (czas trwania: 7 dni)
 75620	Maska Dyni Szaman (m)	Maska dla Szamana. Atrybuty oraz czas trwania są ustalane losowo. Zastępuje obecną fryzurę.
 76000	Wino z Kwiatu Brzoskwini	Mikstura, która natychmiast regeneruje 500 PŻ. Niezdatna do handlu.
-76001	Zwój Powrotu Statusu	Przedmiot ten umożliwia Ci ponowne wydanie Twoich Punktów Statystyk. Tak więc możesz rozwijać postać w inny sposób. Niezdatny do handlu.
+76001	Zwój Powrotu Statusu	Przedmiot ten umożliwia Ci ponowne wydanie Twoich punktów statusu. Tak więc możesz rozwijać postać w inny sposób. Niezdatny do handlu.
 76002	Zasuszona Głowa	Ta zasuszona głowa demona otwiera pieczęć 3. poziomu Diabelskich Katakumb. Przedmiot ten jest niezdatny do handlu.
-76003	Mikstura Pośpiechu	Ta mikstura zwiększa Szybkość Regeneracji Zaklęcia o 20 procent na okres 30 minut. Niezdatna do handlu.
+76003	Mikstura Pośpiechu	Mikstura ta zmniejsza czas regeneracji twoich umiejętności o 20%.
 76004	Eliksir Księżyca (M)	Automatycznie regeneruje Twoje PE. Zawiera 10.000 PE. Niezdatny do handlu.
 76005	Eliksir Księżyca (Ś)	Automatycznie regeneruje Twoje PE. Zawiera 300.000 PE. Niezdatny do handlu.
 76006	Wykrywacz Kamieni Metin	Wykrywacz pokazuje położenie i odległość do najbliższego Kamienia Metin. Im jaśniejsza strzałka kierunku, tym bliżej jesteś. Może być uaktywniony 6 razy. Niezdatny do handlu.
@@ -2591,12 +2591,12 @@
 76012	Mikstura Szybkości	Zwiększa Szybkość Ruchu o 60 na okres 30 minut. Przedmiot niezdatny do handlu.
 76013	Wzmocnienie Przedmiot(n)	Z odrobiną szczęścia dodaje do jednego z Twoich przedmiotów nowy bonus (maks. 4 bonusy). Przedmiot ze skrzyni poziomów, niezdatny do handlu.
 76014	Zaczarowanie Przedm.(n)	Usuwa wszystkie bonusy w jednym z Twoich przedmiotów, po czym dodaje nowe. Przedmiot ze skrzyni poziomów, niezdatny do handlu.
-76015	Marmur Błogosławieństwa	Legendarny, błogosławiony marmur. Jeżeli przedmiot ma 4 atrybuty, dodaje kolejny atrybut. Przedmiot niezdatny do handlu.
+76015	Marmur Błogosławieństwa	Legendarna, błogosławiona kula. Jeżeli przedmiot ma 4 atrybuty, dodaje kolejny atrybut. Brak możliwości handlu.
 76016	Zwój Błogosławieństwa	Usuwa ryzyko zniszczenia przedmiotu podczas jego ulepszania. Jeżeli ulepszanie się nie powiedzie, to jakość przedmiotu jest redukowana o 1 poziom. Przedmiot niezdatny do handlu.
-76017	Mikstura Ataku +10	Zwiększa Twoją Szybkość Ataku o 10% na okres 30 minut. Niezdatna do handlu.
-76018	Mikstura Ataku +15	Zwiększa Twoją Szybkość Ataku o 15% na okres 30 minut. Niezdatna do handlu.
-76019	Przepustka	Bilet ten umożliwia dostanie się na nowy poziom w Lochu Pająków, jak również w Twierdzy Czerwonego Smoka. Wystarczy pokazać go odpowiedniemu strażnikowi. Przedmiot ten jest niezdatny do handlu.
-76020	Eliksir Poszukiwacza	Poprawia jakość przedmiotów przeznaczonych do badań, co powoduje zwiększenie szansy na ich przyjęcie. Przedmiot ten jest niezdatny do handlu.
+76017	Mikstura Ataku +10	Zwiększa twoją szybkość ataku o 15%.
+76018	Mikstura Ataku +15	Zwiększa twoją szybkość ataku o 20%.
+76019	Przepustka	Po pokazaniu przepustki odpowiedniemu strażnikowi, możesz wejść na kolejny poziom wybranego lochu. Przedmiot ten jest niezdatny do handlu.
+76020	Eliksir Poszukiwacza	Poprawia jakość przedmiotów przeznaczonych do badań, co powoduje zwiększenie szansy na ich przyjęcie. Nie dotyczy misji na Yohara. Brak możliwości handlu.
 76021	Eliksir Słońca (M)	Automatycznie regeneruje Twoje PŻ. Zawiera 100.000 PŻ. Przedmiot ten jest niezdatny do handlu.
 76022	Eliksir Słońca (Ś)	Automatycznie regeneruje Twoje PŻ. Zawiera 3.000.000 PŻ. Przedmiot ten jest niezdatny do handlu.
 76023	Zielony Czar	Usuwa wszystkie bonusy w jednym z Twoich przedmiotów, po czym dodaje nowe. Można go używać tylko przy broniach i zbrojach do poziomu 40. Przedmiot ze skrzyni poziomów, niezdatny do handlu.

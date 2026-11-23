@@ -6,8 +6,8 @@
 100300	Green Dragon Bean	The magical bean increases your Dragon Stone's level. The strengthening process may fail.
 100400	Blue Dragon Bean	The magical bean increases the chance of a successful improvement of the Dragon Stone by one level.
 100500	Pink Dragon Bean	The chance of a successful improvement of the Dragon Stone by one level is 10% higher.
-11901	Tuxedo	A black suit for a man to wear at a wedding.
-11902	Tuxedo	A black suit for a man to wear at a wedding.
+11901	Tuxedo	An elegant suit for a man to wear at a wedding.
+11902	Tuxedo	An elegant suit for a man to wear at a wedding.
 11903	Wedding Dress	A special dress for a woman to wear at her wedding.
 11904	Wedding Dress	A special dress for a woman to wear at her wedding.
 18000	Linen Belt +0	
@@ -93,7 +93,7 @@
 18900	Red Flame Stone	Enhances your belt's bonuses.
 22000	Town Scroll	The scroll allows you to teleport back to the town.
 22010	Scroll of the Location	The scroll enables your return to the location you last marked.
-25040	Blessing Scroll	Reduces the risk of destroying an Item if the upgrade fails. The cost of this save is that the quality is reduced by 1 point.
+25040	Blessing Scroll	Eliminates the risk of an item being destroyed when an improvement fails. In the case of failure, the item's quality is merely reduced by 1 instead.
 25041	Magic Stone	A chunk of the legendary metal can increase your chances when upgrading an item. The upgraded item can then neither be destroyed nor downgraded.
 25100	Spirit Stone Scroll	The scroll allows you to extract the Spirit Stone from a weapon or armour. It leaves a mark of extraction.
 27051	Red Potion (S)	Fills up 300 hit points. Not tradeable.
@@ -152,7 +152,7 @@
 27863	Grilled Zander	Restores some HP.
 27864	Grilled Mandarin Fish	Recovers some SP
 27865	Grilled Large Zander	Restores some HP.
-27866	Grilled Carp	Increases moving speed for a duration of time.
+27866	Grilled Carp	Increases movement speed for a duration of time.
 27867	Grilled Salmon	Recovers some SP
 27868	Grilled Grass Carp	Increases attack speed for a duration of time.
 27869	Grilled Brook Trout	Restores a large amount of HP.
@@ -160,24 +160,24 @@
 27871	Grilled Rainbow Trout	Recovers some SP
 27872	Grilled River Trout	Recovers some SP immediately
 27873	Grilled Rudd	Increases your dexterity by 10 points for 10 minutes.
-27874	Grilled Perch	Removes bad effects.
+27874	Grilled Perch	Removes poison.
 27875	Grilled Tenchi	Recovers some HP immediately.
 27876	Grilled Catfish	Recovers some SP immediately.
 27877	Grilled Loach	Makes you invisible for 5 minutes.
 27878	Grilled Lotus Fish	Recovers some HP immediately.
-27879	Grilled Sweetfish	This fish gets its pleasant smoky taste from being prepared over a fire.
-27880	Grilled Smelt	By preparing it over the fire this fish gets a pleasant smoky taste.
-27881	Grilled Shiri	This fish gets its pleasant smoky taste from being prepared over a fire.
-27882	Grilled Mirror Carp	By preparing it over the fire this fish gets a pleasant-smoky taste.
-27883	Grilled Goldfish	By preparing it over the fire this fish gets a pleasant smoky taste.
-27987	Clam	A shellfish with a pretty shell. Sometimes it holds a precious pearl inside it.
+27879	Grilled Sweetfish	Increases experience gain by 10%.
+27880	Grilled Smelt	Increases strength against monsters by 5%.
+27881	Grilled Shiri	Increases magic/melee attack by 3%.
+27882	Grilled Mirror Carp	Immediately restores 1,000 HP.
+27883	Grilled Goldfish	Increases experience gain by 50%.
+27987	Clam	A clam with a pretty shell. Sometimes it holds a precious pearl inside.
 27988	Treasure Map	A worn out map which reveals the location of an ancient treasure.
 27989	Compass for Metin Stones	The compass shows you the position and distance to the next Metin Stone. The brighter it glows, the closer you are. It can be activated 6 times.
 27990	Piece of Stone	Because of the small size it can be transported very well. It can be used in many different ways.
 27991	Water Stone	A hard, coarse stone which can be used to grind weapons or kitchen utensils.
 27992	White Pearl	The pure white treasure found inside a seashell.
 27993	Blue Pearl	A magnificent deep blue pearl found inside a seashell.
-27994	Blood-Red Pearl	The tawny-coloured treasure from the inside of a mollusc.
+27994	Blood-Red Pearl	The tawny-coloured treasure from the inside of a seashell.
 27995	Empty Bottle	An empty, but intact bottle made from glass.
 27996	Poison Bottle	A bottle with a deadly poison in it.
 27997	Vitality Marble	A marble that restores some HP.
@@ -375,10 +375,10 @@
 30270	Dragon Stone Shard	Fragment of a scarce Dragon Stone
 30311	Soul Crystal Key	The delicate detailed key with a Blue Soul Crystal opens the gate to the 2nd floor of the Devil's Catacomb.
 30312	Grimace Totem	This wooden sign with the grimace carved into it serves as a key to the 6th floor of the Devil's Catacomb.
-30315		
-30316		
-30317		
-30318		
+30315		Bread used when breaking fast.
+30316		A plate with a splendid decoration.
+30317		A donation of food for breaking fast with.
+30318		An extraordinary fruit. Gather enough and you will receive a reward.
 30319	Shrunken Head	This demon's Shrunken Head opens the seal to the 3rd floor of the Devil's Catacomb. This item is tradeable.
 30320	Shrunken Head	This demon's Shrunken Head opens the seal to the 3rd floor of the Devil's Catacomb.
 30321	Halloween Pumpkin	The pumpkin refills HP or SP. If you tap it with a Magic Wand, it transforms into the Halloween Chest.
@@ -392,7 +392,7 @@
 30330	Maat Stone	As Goddess of Justice, Maat strives for order amongst the chaos.
 30331	Frost Key	The key is as cold as ice and allows access to the third floor of Nemere's Watchtower. Can only be used by Shamans.
 30332	North Star	Sealstone made of pure ice. Allows access to the sixth floor of Nemere's Watchtower.
-30333	Frostflower Key	The key made of ice allows access to the ninth floor of Nemere's Watchtower. Can only be used by Ninjas or Shamans.
+30333	Frostflower Key	The key made of ice allows access to the ninth floor of Nemere's Watchtower.
 30500	Ruby Engraving Knife	Tool for the refinement of your weapon
 30501	Gold Clasp	Element for the refinement of your weapon
 30502	Ruby Decoration	Element for the refinement of your weapon
@@ -589,7 +589,7 @@
 38102	Power Snack (30 days)	Increases the lifespan of your Power Mount by 30 days.
 38200	Rufus Seal	You can use this seal to summon your wolf whelp, Rufus.
 38201	Rufus Seal	You can use this seal to summon your wolf whelp, Rufus.
-39001	Magic Stone	This stone guarantees the greatest success chance in item improvement. On top of this, the item will neither be destroyed nor downgraded. This item is tradeable.
+39001	Magic Stone	This stone provides excellent chances when upgrading items. On top of this, the item will neither be destroyed nor downgraded. This item is tradeable.
 39002	Experience Ring	Increases the collection of experience by 50% for 60 minutes. This item is tradeable.
 39003	Peach Flower Wine	Beverage that will immediately regenerate your HP by 500 points. This item is tradeable.
 39004	Blessing Marble	This legendary marble adds a fifth attribute to items that already have four attributes. The addition can also fail though. This item is tradeable.
@@ -606,12 +606,12 @@
 39015	Stone of the Blacksmith	At the blacksmith's you can create a blacksmith handbook with the help of this stone and a blessing scroll. This item is tradeable.
 39016	Magic Iron Ore	This ore, when combined with a blessing scroll, enables the crafting of a dragon scroll at the blacksmiths. This item is tradeable.
 39017	Dragon God Life	Increases your maximum HP by 20% for 30 minutes. This item is tradeable.
-39018	Dragon God Attack	Increases the damage you cause during a fight by 12-15% for 30 minutes. This item is tradeable.
+39018	Dragon God Attack	Increases your attack value by 20% for 30 minutes. This item is tradeable.
 39019	Dragon God Intelligence	Increases your maximum SP by 20% for 30 minutes. This item is tradeable.
-39020	Dragon God Defence	Lowers the damage you receive during a fight by 12-15% for 30 minutes. This item is tradeable.
+39020	Dragon God Defence	Lowers the damage you receive during combat by 20% for 30 minutes. This item is tradeable.
 39021	Dragon God Support	The vitality, strength, intelligence and dexterity of your character will temporarily quintuple. This item is tradeable.
-39022	Dragon Scroll	Eliminates the risk of destroying an item if the improvement fails. Only its quality will be decreased by 1. Additionally, the probability of a successful improvement will increase by 10%. This item is tradeable.
-39023	Researcher's Elixir	This elixir improves the quality of the research objects which you have collected, thereby increasing the likelihood that they will be accepted. This item is tradeable.
+39022	Dragon Scroll	Eliminates the risk of an item being destroyed when an improvement fails. In the case of failure, the item's quality is merely reduced by 1 instead. In addition, the chance of a successful improvement is increased by 10%. This item is tradeable.
+39023	Researcher's Elixir	This elixir improves the quality of the research objects which you have collected, thereby increasing the likelihood that they will be accepted. This item is tradeable. Does not apply to quests in Yohara.
 39024	Critical Strike	Increases the chance of landing a critical hit by 20% for 10 minutes. This item is tradeable.
 39025	Piercing Strike	Increases the chance of a piercing hit by 20% for 10 minutes. This item is tradeable.
 39026	Potion of Speed	Boosts your motion speed by 60 for 30 minutes. This item is tradeable.
@@ -660,7 +660,7 @@
 41026	TUR Boxing Outfit (F)	Fight-ready outfit for female boxers in the Turkish national colours.
 41027	BRA Boxing Outfit (M)	Fight-ready outfit for male boxers in the Brazilian national colours.
 41028	BRA Boxing Outfit (F)	Fight-ready outfit for female boxers in the Brazilian national colours.
-41029	Desert Warrior (M,Bonus)	Battle dress for men, to assist survival in the inhumane desert conditions. Item is tradeable.
+41029	Desert Warrior (M,Bonus)	Battle dress for men, ideal for surviving in inhospitable desert conditions. Provides you with at least one random bonus. Item is tradeable.
 41030	Desert Warrior (F,Bonus)	Battle dress for women, to assist survival in the inhumane desert conditions. Item is tradeable.
 41031	Olym. Fencing Outfit (M)	Sporty protective outfit for male fencers. Item is tradeable.
 41032	Olym. Fencing Outfit (F)	Sporty protective outfit for female fencers. Item is tradeable.
@@ -852,14 +852,14 @@
 41224	Yongan FC+ (F)	Football kit set in red and white for women. Provides you with at least one random bonus.
 41225	FC Bakra+ (M)	Football kit set in dark blue and red for men. Provides you with at least one random bonus.
 41226	FC Bakra+ (F)	Football kit set in dark blue and red for women. Provides you with at least one random bonus.
-41227	FC Bokjung+ (M)	Football kit set in yellow and blue for men. Provides you with at least one random bonus.
-41228	FC Bokjung+ (F)	Football kit set in yellow and blue for women. Provides you with at least one random bonus.
-41229	FC Bavaria Hwang+ (M)	Football kit set in red and gold for men. Provides you with at least one random bonus.
-41230	FC Bavaria Hwang+ (F)	Football kit set in red and gold for women. Provides you with at least one random bonus.
+41227	FC Bokjung+ (M)	Outfit for male footballers in the Ukrainian national colours. Provides you with at least one random bonus.
+41228	FC Bokjung+ (F)	Outfit for female footballers in the Ukrainian national colours. Provides you with at least one random bonus.
+41229	FC Bavaria Hwang+ (M)	Outfit for male footballers in the Welsh national colours. Provides you with at least one random bonus.
+41230	FC Bavaria Hwang+ (F)	Outfit for female footballers in the Welsh national colours. Provides you with at least one random bonus.
 41231	Borussia Chunjo+ (M)	Football kit set in black and yellow for men. Provides you with at least one random bonus.
 41232	Borussia Chunjo+ (F)	Football kit set in black and yellow for women. Provides you with at least one random bonus.
-41233	SC Doyyum+ (M)	Football kit set in red and white for men. Provides you with at least one random bonus.
-41234	SC Doyyum+ (F)	Football kit set in red and white for women. Provides you with at least one random bonus.
+41233	SC Doyyum+ (M)	Outfit for male footballers in the Austrian national colours. Provides you with at least one random bonus.
+41234	SC Doyyum+ (F)	Outfit for female footballers in the Austrian national colours. Provides you with at least one random bonus.
 41235	Hasun Dong FC+ (M)	Football kit set in green and white for men. Provides you with at least one random bonus.
 41236	Hasun Dong FC+ (F)	Football kit set in green and white for women. Provides you with at least one random bonus.
 41237	CFR Dragon Fire 07+ (M)	Football kit set in bordeaux for men. Provides you with at least one random bonus.
@@ -890,20 +890,20 @@
 41262	Dragon Valley SC+ (F)	Football kit set in dark blue and orange for women. Provides you with at least one random bonus.
 41263	Thunder Mountains FC+ (M)	Football kit set in red and white for men. Provides you with at least one random bonus.
 41264	Thunder Mountains FC+ (F)	Football kit set in red and white for women. Provides you with at least one random bonus.
-41265	Pyungmoo Saint Hwang+ (M)	Football kit set in dark blue for men. Provides you with at least one random bonus.
-41266	Pyungmoo Saint Hwang+ (F)	Football kit set in dark blue for women. Provides you with at least one random bonus.
+41265	Pyungmoo Saint Hwang+ (M)	Outfit for male footballers in the Scottish national colours. Provides you with at least one random bonus.
+41266	Pyungmoo Saint Hwang+ (F)	Outfit for female footballers in the Scottish national colours. Provides you with at least one random bonus.
 41267	Real Sohan+ (M)	Football kit set in white for men. Provides you with at least one random bonus.
 41268	Real Sohan+ (F)	Football kit set in white for women. Provides you with at least one random bonus.
 41269	FC Jinno 04+ (M)	Football kit set in royal blue and white for men. Provides you with at least one random bonus.
 41270	FC Jinno 04+ (F)	Football kit set in royal blue and white for women. Provides you with at least one random bonus.
-41271	FC Sangsun Dong+ (M)	Football kit set in black and orange for men. Provides you with at least one random bonus.
-41272	FC Sangsun Dong+ (F)	Football kit set in black and orange for women. Provides you with at least one random bonus.
+41271	FC Sangsun Dong+ (M)	Outfit for male footballers in the North Macedonian national colours. Provides you with at least one random bonus.
+41272	FC Sangsun Dong+ (F)	Outfit for female footballers in the North Macedonian national colours. Provides you with at least one random bonus.
 41273	SL Jungsun Dong+ (M)	Football kit set in red and white for men. Provides you with at least one random bonus.
 41274	SL Jungsun Dong+ (F)	Football kit set in red and white for women. Provides you with at least one random bonus.
-41275	Spartak Jungrang+ (M)	Football kit set in red and white for men. Provides you with at least one random bonus.
-41276	Spartak Jungrang+ (F)	Football kit set in red and white for women. Provides you with at least one random bonus.
-41277	Fireland CF+ (M)	Football kit set in white and black for men. Provides you with at least one random bonus.
-41278	Fireland CF+ (F)	Football kit set in white and black for women. Provides you with at least one random bonus.
+41275	Spartak Jungrang+ (M)	Outfit for male footballers in the Czech national colours. Provides you with at least one random bonus.
+41276	Spartak Jungrang+ (F)	Outfit for female footballers in the Czech national colours. Provides you with at least one random bonus.
+41277	Fireland CF+ (M)	Outfit for male footballers in the Finnish national colours. Provides you with at least one random bonus.
+41278	Fireland CF+ (F)	Outfit for female footballers in the Finnish national colours. Provides you with at least one random bonus.
 41279	FC St. Seungryong+ (M)	Football kit set in blue for men. Provides you with at least one random bonus.
 41280	FC St. Seungryong+ (F)	Football kit set in blue for women. Provides you with at least one random bonus.
 41291	Rabbit Costume (black)	Rabbit costume for men made from black plush
@@ -914,8 +914,8 @@
 41296	Bunny Costume (blue)	Bunny costume for women made from blue plush
 41297	Bunny Costume (green)	Bunny costume for women made from green plush
 41298	Bunny Costume (pink)	Bunny costume for women made from pink-coloured plush
-41299	Rabbit Costume+ (black)	Rabbit costume for men made from black plush. Provides you with at least one random bonus.
-41300	Rabbit Costume+ (blue)	Rabbit costume for men made from blue plush. Provides you with at least one random bonus.
+41299	Rabbit Costume+ (black)	Rabbit costume for men made from black plush. Provides you with at least one random bonus. Item is tradeable.
+41300	Rabbit Costume+ (blue)	Rabbit costume for men made from blue plush. Provides you with at least one random bonus. Item is tradeable.
 41301	Rabbit Costume+ (green)	Rabbit costume for men made from green plush. Provides you with at least one random bonus.
 41302	Rabbit Costume+ (pink)	Rabbit costume for men made from pink-coloured plush. Provides you with at least one random bonus.
 41303	Bunny Costume+ (black)	Bunny costume for women made from black plush. Provides you with at least one random bonus.
@@ -928,7 +928,7 @@
 41310	Cobra Outfit+ (f)	Black shimmering outfit with snake symbols. Provides you with at least one random bonus.
 41311	Desert Warrior (M, blk)	Black battle clothing for men.
 41312	Desert Warrior (F, blk)	Black battle clothing for women.
-41313	Desert Warrior+ (M, blk)	Black battle clothing for men. Provides you with at least one random bonus.
+41313	Desert Warrior+ (M, blk)	Black battle clothing for men. Provides you with at least one random bonus. Item is tradeable.
 41314	Desert Warrior+ (F, blk)	Black battle clothing for women. Provides you with at least one random bonus.
 41315	Azrael's Armour (m)	Steely armour belonging to the infamous demon leader.
 41316	Azrael's Armour (f)	Steely armour belonging to the infamous demon leader.
@@ -938,10 +938,10 @@
 41321	Pumpkin Jack Dress (f)	Spookily superb Halloween costume
 41322	Pumpkin Jack Suit+ (m)	Spookily superb Halloween costume. Provides you with at least one random bonus. Item is tradeable.
 41323	Pumpkin Jack Dress+ (f)	Spookily superb Halloween costume. Provides you with at least one random bonus. Item is tradeable.
-41324		
-41325		
-41326		---seg--- Provides you with at least one random bonus.
-41327		---seg--- Provides you with at least one random bonus.
+41324		Male battle dress featuring a star and crescent emblem.
+41325		Female battle dress featuring a star and crescent emblem.
+41326		Male battle dress featuring a star and crescent emblem. Provides you with at least one random bonus.
+41327		Female battle dress featuring a star and crescent emblem. Provides you with at least one random bonus.
 41328	ALG World Cup Kit (M)	World Cup football kit in the Algerian national colours
 41329	ALG World Cup Kit (F)	World Cup football kit in the Algerian national colours
 41330	ARG World Cup Kit (M)	World Cup football kit in the Argentinian national colours
@@ -1012,8 +1012,8 @@
 41395	ARG W. Cup Kit (F/Bonus)	World Cup football kit in the Argentinian national colours. Provides you with at least one random bonus.
 41396	AUS W. Cup Kit (M/Bonus)	World Cup football kit in the Australian national colours. Provides you with at least one random bonus.
 41397	AUS W. Cup Kit (F/Bonus)	World Cup football kit in the Australian national colours. Provides you with at least one random bonus.
-41398	BEL W. Cup Kit (M/Bonus)	World Cup football kit in the Belgian national colours. Provides you with at least one random bonus.
-41399	BEL W. Cup Kit (F/Bonus)	World Cup football kit in the Belgian national colours. Provides you with at least one random bonus.
+41398	BEL W. Cup Kit (M/Bonus)	Outfit for male footballers in the Belgian national colours. Provides you with at least one random bonus.
+41399	BEL W. Cup Kit (F/Bonus)	Outfit for female footballers in the Belgian national colours. Provides you with at least one random bonus.
 41400	BIH W. Cup Kit (M/Bonus)	World Cup football kit in the Bosnian-Herzegovinian national colours. Provides you with at least one random bonus.
 41401	BIH W. Cup Kit (F/Bonus)	World Cup football kit in the Bosnian-Herzegovinian national colours. Provides you with at least one random bonus.
 41402	BRA W. Cup Kit (M/Bonus)	World Cup football kit in the Brazilian national colours. Provides you with at least one random bonus.
@@ -1028,47 +1028,47 @@
 41411	CRC W. Cup Kit (F/Bonus)	World Cup football kit in the Costa Rican national colours. Provides you with at least one random bonus.
 41412	CIV W. Cup Kit (M/Bonus)	World Cup football kit in the Ivorian national colours. Provides you with at least one random bonus.
 41413	CIV W. Cup Kit (F/Bonus)	World Cup football kit in the Ivorian national colours. Provides you with at least one random bonus.
-41414	CRO W. Cup Kit (M/Bonus)	World Cup football kit in the Croatian national colours. Provides you with at least one random bonus.
-41415	CRO W. Cup Kit (F/Bonus)	World Cup football kit in the Croatian national colours. Provides you with at least one random bonus.
+41414	CRO W. Cup Kit (M/Bonus)	Outfit for male footballers in the Croatian national colours. Provides you with at least one random bonus.
+41415	CRO W. Cup Kit (F/Bonus)	Outfit for female footballers in the Croatian national colours. Provides you with at least one random bonus.
 41416	ECU W. Cup Kit (M/Bonus)	World Cup football kit in the Ecuadorian national colours. Provides you with at least one random bonus.
 41417	ECU W. Cup Kit (F/Bonus)	World Cup football kit in the Ecuadorian national colours. Provides you with at least one random bonus.
-41418	ENG W. Cup Kit (M/Bonus)	World Cup football kit in the English national colours. Provides you with at least one random bonus.
-41419	ENG W. Cup Kit (F/Bonus)	World Cup football kit in the English national colours. Provides you with at least one random bonus.
-41420	FRA W. Cup Kit (M/Bonus)	World Cup football kit in the French national colours. Provides you with at least one random bonus.
-41421	FRA W. Cup Kit (F/Bonus)	World Cup football kit in the French national colours. Provides you with at least one random bonus.
-41422	GER W. Cup Kit (M/Bonus)	World Cup football kit in the German national colours. Provides you with at least one random bonus.
-41423	GER W. Cup Kit (F/Bonus)	World Cup football kit in the German national colours. Provides you with at least one random bonus.
+41418	ENG W. Cup Kit (M/Bonus)	Outfit for male footballers in the English national colours. Provides you with at least one random bonus.
+41419	ENG W. Cup Kit (F/Bonus)	Outfit for female footballers in the English national colours. Provides you with at least one random bonus.
+41420	FRA W. Cup Kit (M/Bonus)	Outfit for male footballers in the French national colours. Provides you with at least one random bonus.
+41421	FRA W. Cup Kit (F/Bonus)	Outfit for female footballers in the French national colours. Provides you with at least one random bonus.
+41422	GER W. Cup Kit (M/Bonus)	Outfit for male footballers in the German national colours. Provides you with at least one random bonus.
+41423	GER W. Cup Kit (F/Bonus)	Outfit for female footballers in the German national colours. Provides you with at least one random bonus.
 41424	GHA W. Cup Kit (M/Bonus)	World Cup football kit in the Ghanaian national colours. Provides you with at least one random bonus.
 41425	GHA W. Cup Kit (F/Bonus)	World Cup football kit in the Ghanaian national colours. Provides you with at least one random bonus.
-41426	GRE W. Cup Kit (M/Bonus)	World Cup football kit in the Greek national colours. Provides you with at least one random bonus.
+41426	GRE W. Cup Kit (M/Bonus)	World Cup football kit in the Greek national colours. Provides you with at least one random bonus. Item is tradeable.
 41427	GRE W. Cup Kit (F/Bonus)	World Cup football kit in the Greek national colours. Provides you with at least one random bonus.
 41428	HON W. Cup Kit (M/Bonus)	World Cup football kit in the Honduran national colours. Provides you with at least one random bonus.
 41429	HON W. Cup Kit (F/Bonus)	World Cup football kit in the Honduran national colours. Provides you with at least one random bonus.
 41430	IRN W. Cup Kit (M/Bonus)	World Cup football kit in the Iranian national colours. Provides you with at least one random bonus.
 41431	IRN W. Cup Kit (F/Bonus)	World Cup football kit in the Iranian national colours. Provides you with at least one random bonus.
-41432	ITA W. Cup Kit (M/Bonus)	World Cup football kit in the Italian national colours. Provides you with at least one random bonus.
-41433	ITA W. Cup Kit (F/Bonus)	World Cup football kit in the Italian national colours. Provides you with at least one random bonus.
+41432	ITA W. Cup Kit (M/Bonus)	Outfit for male footballers in the Italian national colours. Provides you with at least one random bonus.
+41433	ITA W. Cup Kit (F/Bonus)	Outfit for female footballers in the Italian national colours. Provides you with at least one random bonus.
 41434	JPN W. Cup Kit (M/Bonus)	World Cup football kit in the Japanese national colours. Provides you with at least one random bonus.
 41435	JPN W. Cup Kit (F/Bonus)	World Cup football kit in the Japanese national colours. Provides you with at least one random bonus.
-41436	KOR W. Cup Kit (M/Bonus)	World Cup football kit in the Korean national colours. Provides you with at least one random bonus.
+41436	KOR W. Cup Kit (M/Bonus)	World Cup football kit in the Korean national colours. Provides you with at least one random bonus. Item is tradeable.
 41437	KOR W. Cup Kit (F/Bonus)	World Cup football kit in the Korean national colours. Provides you with at least one random bonus.
-41438	MEX W. Cup Kit (M/Bonus)	World Cup football kit in the Mexican national colours. Provides you with at least one random bonus.
+41438	MEX W. Cup Kit (M/Bonus)	World Cup football kit in the Mexican national colours. Provides you with at least one random bonus. Item is tradeable.
 41439	MEX W. Cup Kit (F/Bonus)	World Cup football kit in the Mexican national colours. Provides you with at least one random bonus.
-41440	NED W. Cup Kit (M/Bonus)	World Cup football kit in the Dutch national colours. Provides you with at least one random bonus.
-41441	NED W. Cup Kit (F/Bonus)	World Cup football kit in the Dutch national colours. Provides you with at least one random bonus.
+41440	NED W. Cup Kit (M/Bonus)	Outfit for male footballers in the Dutch national colours. Provides you with at least one random bonus.
+41441	NED W. Cup Kit (F/Bonus)	Outfit for female footballers in the Dutch national colours. Provides you with at least one random bonus.
 41442	NGA W. Cup Kit (M/Bonus)	World Cup football kit in the Nigerian national colours. Provides you with at least one random bonus.
 41443	NGA W. Cup Kit (F/Bonus)	World Cup football kit in the Nigerian national colours. Provides you with at least one random bonus.
-41444	POR W. Cup Kit (M/Bonus)	World Cup football kit in the Portuguese national colours. Provides you with at least one random bonus.
-41445	POR W. Cup Kit (F/Bonus)	World Cup football kit in the Portuguese national colours. Provides you with at least one random bonus.
-41446	RUS W. Cup Kit (M/Bonus)	World Cup football kit in the Russian national colours. Provides you with at least one random bonus.
-41447	RUS W. Cup Kit (F/Bonus)	World Cup football kit in the Russian national colours. Provides you with at least one random bonus.
-41448	ESP W. Cup Kit (M/Bonus)	World Cup football kit in the Spanish national colours. Provides you with at least one random bonus.
-41449	ESP W. Cup Kit (F/Bonus)	World Cup football kit in the Spanish national colours. Provides you with at least one random bonus.
-41450	SUI W. Cup Kit (M/Bonus)	World Cup football kit in the Swiss national colours. Provides you with at least one random bonus.
-41451	SUI W. Cup Kit (F/Bonus)	World Cup football kit in the Swiss national colours. Provides you with at least one random bonus.
+41444	POR W. Cup Kit (M/Bonus)	Outfit for male footballers in the Portuguese national colours. Provides you with at least one random bonus.
+41445	POR W. Cup Kit (F/Bonus)	Outfit for female footballers in the Portuguese national colours. Provides you with at least one random bonus.
+41446	RUS W. Cup Kit (M/Bonus)	Outfit for male footballers in the Russian national colours. Provides you with at least one random bonus.
+41447	RUS W. Cup Kit (F/Bonus)	Outfit for female footballers in the Russian national colours. Provides you with at least one random bonus.
+41448	ESP W. Cup Kit (M/Bonus)	Outfit for male footballers in the Spanish national colours. Provides you with at least one random bonus.
+41449	ESP W. Cup Kit (F/Bonus)	Outfit for female footballers in the Spanish national colours. Provides you with at least one random bonus.
+41450	SUI W. Cup Kit (M/Bonus)	Outfit for male footballers in the Swiss national colours. Provides you with at least one random bonus.
+41451	SUI W. Cup Kit (F/Bonus)	Outfit for female footballers in the Swiss national colours. Provides you with at least one random bonus.
 41452	URU W. Cup Kit (M/Bonus)	World Cup football kit in the Uruguayan national colours. Provides you with at least one random bonus.
 41453	URU W. Cup Kit (F/Bonus)	World Cup football kit in the Uruguayan national colours. Provides you with at least one random bonus.
-41454	USA W. Cup Kit (M/Bonus)	World Cup football kit in the US national colours. Provides you with at least one random bonus.
+41454	USA W. Cup Kit (M/Bonus)	World Cup football kit in the US national colours. Provides you with at least one random bonus. Item is tradeable.
 41455	USA W. Cup Kit (F/Bonus)	World Cup football kit in the US national colours. Provides you with at least one random bonus.
 45001	Bunny Ears (brown)	Brown Bunny Ears for women
 45002	Rabbit Ears (brown)	Brown hat with rabbit ears for men
@@ -1080,7 +1080,7 @@
 45008	Football Hair GER (F)	A sporty hairstyle with a hairband for female footballers in the German national colours.
 45009	Dreadlocks (M)	The long hair is knitted into Rasta locks and is then tied together at the back of the head.
 45010	Boxing Hair GER (F)	A sporty hairstyle with a hairband for female boxers in the German national colours.
-45011	Headdress (M)	A headdress for men made from the finest materials. Item is tradeable.
+45011	Headdress (M)	A headdress for men made from the finest materials. Provides you with at least one random bonus. Item is tradeable.
 45012	Headdress (F)	A headdress for women made from the finest materials. Item is tradeable.
 45013	LotoShosi (M)	Long on top and short at the sides - an extravagant side cut for men. Item is tradeable.
 45014	Fencing Hairstyle (F)	A sporty hairstyle for female fencers. Item is tradeable.
@@ -1176,8 +1176,8 @@
 45124	Bunny Ears (blue)	Blue bunny ears for women
 45125	Bunny Ears (green)	Green bunny ears for women
 45126	Bunny Ears (pink)	Pink-coloured bunny ears for women
-45127	Rabbit Ears+ (black)	Black hat with rabbit ears for men. Provides you with at least one random bonus.
-45128	Rabbit Ears+ (blue)	Blue hat with rabbit ears for men. Provides you with at least one random bonus.
+45127	Rabbit Ears+ (black)	Black hat with rabbit ears for men. Provides you with at least one random bonus. Item is tradeable.
+45128	Rabbit Ears+ (blue)	Blue hat with rabbit ears for men. Provides you with at least one random bonus. Item is tradeable.
 45129	Rabbit Ears+ (green)	Green hat with rabbit ears for men. Provides you with at least one random bonus.
 45130	Rabbit Ears+ (pink)	Pink-coloured hat with rabbit ears for men. Provides you with at least one random bonus.
 45131	Bunny Ears+ (black)	Black bunny ears for women. Provides you with at least one random bonus.
@@ -1198,7 +1198,7 @@
 45146	Maya Mask+	Fearsome mask of the Maya warrior. Provides you with at least two random bonuses.
 45147	Black Turban (M)	A headdress made of black material for men.
 45148	Black Turban (F)	A headdress made of black material for women.
-45149	Black Turban+ (M)	A headdress made of black material for men. Provides you with at least one random bonus.
+45149	Black Turban+ (M)	A headdress made of black material for men. Provides you with at least one random bonus. Item is tradeable.
 45150	Black Turban+ (F)	A headdress made of black material for women. Provides you with at least one random bonus.
 45151	Azrael's Helmet (m)	Headdress with the grimace of the infamous demon leader on it.
 45152	Azrael's Helmet (f)	Headdress with the grimace of the infamous demon leader on it.
@@ -1208,10 +1208,10 @@
 45157	Pumpkin Jack Head (f)	Spookily superb Halloween mask
 45158	Pumpkin Jack Head+ (m)	Spookily superb Halloween mask. Provides you with at least one random bonus. Item is tradeable.
 45159	Pumpkin Jack Head+ (f)	Spookily superb Halloween mask. Provides you with at least one random bonus. Item is tradeable.
-45160		
-45161		
-45162		
-45163		
+45160		Tied up dreadlocks, dyed red and white.
+45161		Tied up dreadlocks, dyed red and white, with a headband.
+45162		Tied up dreadlocks, dyed red and white. Provides you with at least one random bonus.
+45163		Tied up dreadlocks, dyed red and white, with a headband. Provides you with at least one random bonus.
 45164	Snow Rabbit Hat	Headdress in the form of a snow rabbit
 45165	Polar Bear Hat	Headdress in the form of a polar bear
 45166	Snow Leopard Hat	Headdress in the form of a snow leopard
@@ -1222,7 +1222,7 @@
 50002	Gold Ring	A simple gold ring, that can be sold in shops for high prices.
 50003	Skill Reset Document	Allows you to reset your skills in order to learn new ones.
 50004	Event Detector	This item shows you, where missions can be found.
-50005	Horse Riding Ticket	You can ride a horse for free if you show it to a stable guard. Required level is 40.
+50005	Horse Riding Ticket	This ticket can be exchanged for a Horse Medal from the Stable Boy.
 50006	Gold Treasure Chest	A decorated gold box that can be opened with a gold key.
 50007	Silver Treasure Chest	A silver decorated box that can be opened with a silver key.
 50008	Gold Key	A key made of gold. It can unlock the Gold Treasure Chest as well as the Gold Treasure Chest+.
@@ -1275,13 +1275,13 @@
 50080	Red Dragon's Chest	The chest of the Red Dragon. Apparently something valuable is in the box.
 50081	Demon King's Chest	The chest of the Demon Lord. Apparently something valuable is in the box.
 50082	Grim Reaper's Chest	The chest of the Grim Reaper. Apparently something valuable is in the box.
-50083	Horse Riding Ticket	You can ride a horse for free if you show it to the stable guard.
+50083	Horse Riding Ticket	Open the Riding Permit to receive your Horse Riding Ticket. From level 10 you can use this to ride a Pony for a while.
 50084	Key Stone	An energy-laden aura surrounds this stone. It works against seal magic.
 50091	Goldfish Sushi	A popular dish made from goldfish and cold rice.
 50092	Carp Sushi	A special dish made from raw carp and cold rice.
 50093	Salmon Sushi	A special dish made from raw salmon and cold rice. Increases your attack value by 10 points for 30 seconds.
 50094	Catfish Sushi	A special dish made from raw catfish and cold rice. Increases your defence by 10 points for 30 seconds.
-50096	Football	Bend it like Baljit-Elvedin!
+50096	Football	Bend it like Baljit-Elvedin! The ball is not tradeable.
 50100	Fire Crackers	Fireworks fill the sky during a festival.(Purple)
 50101	Fire Crackers	Fireworks fill the sky during a festival.(Yellow)
 50102	Fire Crackers	Fireworks fill the sky during a festival.(Sky Blue)
@@ -1289,13 +1289,13 @@
 50104	Fire Crackers	Fireworks fill the sky during a festival. (Green)
 50105	Fire Crackers	Fireworks fill the sky during a festival.(White)
 50106	Christmas Fire Cracker	Christmas fireworks are more magnificent than normal fireworks and also last longer.
-50108	Fireworks Top	A ground firework that throws sparks.
+50108	Fireworks Top	A hand-made Fireworks Top which children like to watch spin for amusement. | | Chance of stun: 5% | Duration: 10 minutes
 50118		
 50119		
 50120	Iron Casket	The stable container is from the Grotto of Exile.
 50121	Iron Box	The stable container is from the Grotto of Exile.
 50122	Iron Chest	The stable container is from the Grotto of Exile.
-50123		
+50123		Energy boost! This ice cream will boost your movement speed by 60 for 30 minutes. Caution: Reactivating this while the boost is in effect will overwrite the duration.
 50124	Rotten Wooden Box	Soft animal sounds seem to be coming out from within.
 50125	Mysterious Chest	This chest is incredibly light - it almost feels empty...
 50126	Mysterious Chest	This chest is incredibly light - it almost feels empty...
@@ -1340,7 +1340,7 @@
 50180	Empty Basket	An empty basket that you can put Easter Eggs into
 50181	Basket with Easter Eggs	A basket filled with Easter Eggs.
 50182	Blessing Chest	A blessed chest with unknown contents.
-50183	Sweets	
+50183	Sweets	These sweets have a special effect: movement speed +10, damage +5% and experience +10%. They last for 30 minutes.
 50184		
 50185		
 50186	Azrael's Chest	Demonic powers are keeping this chest locked. Valuable treasure must be within it.
@@ -1361,7 +1361,7 @@
 50212	Apprentice Chest I	Your greeting gift contains a base equipment set for the optimal start to your adventure.
 50213	Apprentice Chest I	Your greeting gift contains a base equipment set for the optimal start to your adventure.
 50215	Halloween Chest	A chest with a spooky pumpkin face on the side. With a squeak that sounds like a snigger, the lid opens and reveals what's inside.
-50216	Mulled Wine	A warm drink made from wine and spices that gives you +10% speed, +5% damage and +10% experience for 30 minutes.
+50216	Mulled Wine	A warm drink made from wine and spices that gives you +10% speed, +5% damage and +10% experience.
 50249	Chest of Triumph	The chest contains a random item as a reward for all Olympians.
 50252	Cor Draconis	The crystalline dragon heart holds the soul, the Dragon Stone, within.
 50253		
@@ -1372,8 +1372,8 @@
 50258	Cor Draconis (Antique)	The crystalline dragon heart holds the soul, the Dragon Stone, within.
 50259	Cor Draconis (Legendary)	The crystalline dragon heart holds the soul, the Dragon Stone, within.
 50260	Cor Draconis (Rough)	The crystalline dragon heart holds the soul, the Dragon Stone, within.
-50263		
-50264		
+50263		This contract binds an item of your choice to your character's soul. Soulbound items cannot be traded, dropped or enchanted.
+50264		Removes an item's bond to your soul.
 50265	Golden Football	The ball is round and golden.
 50300	Skill Book	Increases Master Skill Level
 50301	Sun Zi Art of War	One of the three books of war strategy - it increases its owner's leadership skills. The book disappears after being read.
@@ -1439,19 +1439,19 @@
 50512	Rainbow Stone	The stone that opens spiritual eyes and reveals all skills.
 50513	Soul Stone	The legendary stone used to increase your grand master skills. It disappears after use.
 50600	Mining Guide	It is used to increase mining level. The book disappears after reading.
-50601	Diamond Stone	It can be refined to a diamond using the guild diamond furnace.
-50602	Amber Stone	It can be refined to a amber using the guild amber furnace.
-50603	Fossil Trunk	It can be refined to fossil wood using the guild fossil wood furnace.
-50604	Copper Ore	It can be refined to copper using the guild copper furnace.
-50605	Silver Ore	It can be refined to silver using the guild silver furnace.
-50606	Gold Ore	It can be refined to gold using the guild gold furnace.
-50607	Jade Ore	It can be refined to jade using the guild jade furnace.
-50608	Ebony Ore	It can be refined to ebony using the guild ebony furnace.
-50609	Piece of Pearl	It can be refined to a pearl using the guild pearl furnace.
-50610	White Gold Ore	It can be refined to white gold using the guild white gold furnace.
-50611	Crystal Ore	It can be refined to a crystal using the guild crystal furnace.
-50612	Amethyst Ore	It can be refined to an amethyst using the guild amethyst furnace.
-50613	Heaven's Tear Ore	It can be refined to a heaven tear using the guild heaven's tear smelter.
+50601	Diamond Stone	Using the Guild Smelter, you can produce a Diamond out of this stone.
+50602	Amber Stone	Using the Guild Smelter, you can produce a golden amber out of this unhewn stone.
+50603	Fossil Trunk	This trunk can be refined to Fossil Wood using the Guild Smelter.
+50604	Copper Ore	Using the Guild Smelter, you can produce Copper out of this ore.
+50605	Silver Ore	Using the Guild Smelter, you can produce Silver out of this ore.
+50606	Gold Ore	Using the Guild Smelter, you can produce Gold out of this ore.
+50607	Jade Ore	Using the Guild Smelter, you can produce Jade out of this ore.
+50608	Ebony Ore	Using the Guild Smelter, you can produce Ebony out of this ore.
+50609	Piece of Pearl	Using the Guild Smelter, you can produce a Pearl out of this piece.
+50610	White Gold Ore	Using the Guild Smelter, you can produce White Gold out of this ore.
+50611	Crystal Ore	Using the Guild Smelter, you can produce Crystal out of this ore.
+50612	Amethyst Ore	Using the Guild Smelter, you can produce Amethyst out of this ore.
+50613	Heaven's Tear Ore	Using the Guild Smelter, you can produce a Heaven's Tear out of this ore.
 50614	Soul Crystal Ore	Using the Guild Smelter, you can produce a Soul Crystal out of this ore.
 50615	Ruby Ore	Using the Guild Smelter, you can produce a Ruby out of this ore.
 50616	Garnet Ore	Using the Guild Smelter, you can produce a Garnet out of this ore.
@@ -1511,8 +1511,8 @@
 50810	Thistle Juice	A juice made from Dates that strengthens bones.
 50811	Date Extract	This is juice made from dates is nutritious and satiable.
 50812	Juice of Sam-Zi Plant	This is a juice made from the Sam-Zi plant and has a strengthening effect.
-50813	Sim Water	A potion made from Peach Blossom Juice and Lilac, which increases your chance of scoring a piercing hit by 10% for 3 minutes.
-50814	Dok Water	A potion made from Bellflower Juice and Lilac, which increases your chance of scoring a critical hit by 10% for 3 minutes.
+50813	Sim Water	A potion made from Peach Blossom Juice and Lilac, which increases your chance of scoring a piercing hit by 10%.
+50814	Dok Water	A potion made from Bellflower Juice and Lilac, which increases your chance of scoring a critical hit by 10%.
 50815	Bo Water	This potion is made of kaki blossom juice and tue fungi. It strengthens your brain.
 50816	Young Water	This potion is made from Gango root juice and tue fungi. It strengthens your physical and mental performance.
 50817	Zin Water	A potion made from Sim Water and Alpine Roses, which increases your attack value by 50 points for 3 minutes.
@@ -1536,7 +1536,7 @@
 51503	Cor Draconis (Normal)	Crystal dragon heart. Class: normal. Contains a matt dragon stone of the class rough to cut.
 51504	Cor Draconis (Noble)	Crystal dragon heart. Class: noble. Contains a matt dragon stone of the class rough to rare.
 51505	Cor Draconis (Precious)	Crystal dragon heart. Class: precious. Contains a matt dragon stone of the class rough to antique.
-51506	Cor Draconis (Mystical)	Crystal dragon heart. Class: mystical. Contains a matt dragon stone of the class cut to legendary.
+51506	Cor Draconis (Mystical)	Crystal dragon heart. Rank: mystical. Contains a matt Dragon Stone of the class cut to legendary.
 51507	Cor Draconis (Cut)	The crystal dragon heart contains a random Dragon Stone from the cut class.
 51508	Cor Draconis (Rare)	The crystal dragon heart contains a random Dragon Stone from the rare class.
 51509	Cor Draconis (Antique)	The crystal dragon heart contains a random Dragon Stone from the antique class.
@@ -1737,8 +1737,8 @@
 52058	Valiant Tiger (Seal)	The seal summons your Valiant Tiger. He increases his rider's HP by 500.
 52059	Valiant Tiger (Seal)	The seal summons your Valiant Tiger. He increases his rider's defence value by 150.
 52060	Valiant Tiger (Seal)	The seal summons your Valiant Tiger. He increases his rider's attack value by 100.
-52061	Young Reindeer (Seal)	This seal summons your Young Reindeer (m). After battle training, he gives his rider up to 5% strength against monsters.
-52062	Young Reindeer (Seal)	The seal summons your Young Reindeer (m). After battle training, he increases the collection of experience by up to 5%.
+52061	Young Reindeer (Seal)	This seal summons your Young Reindeer (m).
+52062	Young Reindeer (Seal)	This seal summons your Young Reindeer (m).
 52063	Young Reindeer (Seal)	The seal summons your Young Reindeer (m). After battle training, he increases his rider's HP by up to 500.
 52064	Young Reindeer (Seal)	The seal summons your Young Reindeer (m). After battle training, he increases his rider's defence value by up to 150.
 52065	Young Reindeer (Seal)	The seal summons your Young Reindeer (m). After battle training, he increases his rider's attack value by up to 100.
@@ -1752,7 +1752,7 @@
 52073	Valiant Reindeer (Seal)	The seal summons your Valiant Reindeer (m). He increases his rider's HP by 500.
 52074	Valiant Reindeer (Seal)	The seal summons your Valiant Reindeer (m). He increases his rider's defence value by 150.
 52075	Valiant Reindeer (Seal)	The seal summons your Valiant Reindeer (m). He increases his rider's attack value by 100.
-52076	Young Reindeer (Seal)	This seal summons your Young Reindeer (f). After battle training, she gives her rider up to 5% strength against monsters.
+52076	Young Reindeer (Seal)	This seal summons your Young Reindeer (f).
 52077	Young Reindeer (Seal)	The seal summons your Young Reindeer (f). After battle training, she increases the collection of experience by up to 5%.
 52078	Young Reindeer (Seal)	The seal summons your Young Reindeer (f). After battle training, she increases her rider's HP by up to 500.
 52079	Young Reindeer (Seal)	The seal summons your Young Reindeer (f). After battle training, she increases her rider's defence value by up to 150.
@@ -1767,21 +1767,21 @@
 52088	Valiant Reindeer (Seal)	The seal summons your Valiant Reindeer (f). She increases her rider's HP by 500.
 52089	Valiant Reindeer (Seal)	The seal summons your Valiant Reindeer (f). She increases her rider's defence value by 150.
 52090	Valiant Reindeer (Seal)	The seal summons your Valiant Reindeer (f). She increases her rider's attack value by 100.
-52091	Young Dragor Seal	The seal summons your Young Dragor. According to his battle training, he gives his rider up to 5% strength against monsters.
-52092	Young Dragor Seal	The seal summons your Young Dragor. According to his battle training, he increases the gathering of experience by up to 5%.
-52093	Young Dragor Seal	The seal summons your Young Dragor. According to his battle training, he increases his rider's HP by up to 500.
-52094	Young Dragor Seal	The seal summons your Young Dragor. According to his battle training, he increases his rider's defence by up to 150.
-52095	Young Dragor Seal	The seal summons your Young Dragor. According to his battle training, he increases his rider's attack by up to 100.
+52091	Young Dragor Seal	The seal summons your Young Dragor.
+52092	Young Dragor Seal	The seal summons your Young Dragor.
+52093	Young Dragor Seal	The seal summons your Young Dragor.
+52094	Young Dragor Seal	The seal summons your Young Dragor.
+52095	Young Dragor Seal	The seal summons your Young Dragor.
 52096	Wild Dragor Seal	The seal summons your Wild Dragor. He gives his rider 3% strength against monsters.
 52097	Wild Dragor Seal	The seal summons your Wild Dragor. He increases the gathering of experience by 3%.
 52098	Wild Dragor Seal	The seal summons your Wild Dragor. He increases his rider's HP by 250.
 52099	Wild Dragor Seal	The seal summons your Wild Dragor. He increases his rider's defence by 50.
 52100	Wild Dragor Seal	The seal summons your Wild Dragor. He increases his rider's attack by 30.
-52101	Brave Dragor Seal	The seal summons your Brave Dragor. He gives his rider 5% strength against monsters.
-52102	Brave Dragor Seal	The seal summons your Brave Dragor. He increases the gathering of experience by 5%.
-52103	Brave Dragor Seal	The seal summons your Brave Dragor. He increases his rider's HP by 500.
-52104	Brave Dragor Seal	The seal summons your Brave Dragor. He increases his rider's defence by 150.
-52105	Brave Dragor Seal	The seal summons your Brave Dragor. He increases his rider's attack by 100.
+52101	Brave Dragor Seal	The seal summons your Valiant Dragor. He gives his rider +5% strength against monsters.
+52102	Brave Dragor Seal	The seal summons your Valiant Dragor. He increases experience gain by 5%.
+52103	Brave Dragor Seal	The seal summons your Valiant Dragor. He increases his rider's HP by 500.
+52104	Brave Dragor Seal	The seal summons your Valiant Dragor. He increases his rider's defence value by 150.
+52105	Brave Dragor Seal	The seal summons your Valiant Dragor. He increases his rider's attack value by 100.
 52106	Young Moa (Seal)	The seal summons your Young Moa. After battle training, he increases his rider's strength against monsters by up to 5%.
 52107	Young Moa (Seal)	The seal summons your Young Moa. After battle training, he increases the collection of experience points by up to 5%.
 52108	Young Moa (Seal)	The seal summons your Young Moa. After battle training, he increases his rider's HP by up to 500.
@@ -1792,11 +1792,11 @@
 52113	Wild Moa (Seal)	The seal summons your Wild Moa. He increases his rider's HP by 250.
 52114	Wild Moa (Seal)	The seal summons your Wild Moa. He increases his rider's defence value by 50.
 52115	Wild Moa (Seal)	The seal summons your Wild Moa. He increases his rider's attack value by 30.
-52116	Brave Moa (Seal)	The seal summons your Brave Moa. He gives his rider +5% strength against monsters.
-52117	Brave Moa (Seal)	The seal summons your Brave Moa. He increases the collection of experience by 5%.
-52118	Brave Moa (Seal)	The seal summons your Brave Moa. He increases his rider's HP by 500.
-52119	Brave Moa (Seal)	The seal summons your Brave Moa. He increases his rider's defence value by 150.
-52120	Brave Moa (Seal)	The seal summons your Brave Moa. He increases his rider's attack value by 100.
+52116	Brave Moa (Seal)	The seal summons your Valiant Moa. He gives his rider +5% strength against monsters.
+52117	Brave Moa (Seal)	The seal summons your Valiant Moa. He increases experience gain by 5%.
+52118	Brave Moa (Seal)	The seal summons your Valiant Moa. He increases his rider's HP by 500.
+52119	Brave Moa (Seal)	The seal summons your Valiant Moa. He increases his rider's defence value by 150.
+52120	Brave Moa (Seal)	The seal summons your Valiant Moa. He increases his rider's attack value by 100.
 52701	Lion Certificate	Ownership Certificate for a Young Lion
 52702	Tiger Certificate	Ownership Certificate for a Young Tiger
 52703	Wild Boar Certificate	Ownership Certificate for a Young Wild Boar
@@ -1805,57 +1805,57 @@
 52706	Reindeer Certificate (f)	Ownership Certificate for a Young Reindeer (f)
 52707	Dragor Certificate	Ownership Certificate for a Young Dragor
 52708	Moa Certificate	This certificate acts as confirmation that you are the owner of a Young Moa.
-53001	Fire Phoenix	You can use this seal to summon your friend, the Fire Phoenix.
-53002	Young Reindeer Seal	You can use this seal to summon the cute Young Reindeer.
+53001	Fire Phoenix	You can use this seal to summon your friend the Fire Phoenix.
+53002	Young Reindeer Seal	You can use this seal to summon the cute Reindeer Calf.
 53003	Ice Phoenix Seal	You can use this seal to summon your friend, the Ice Phoenix.
-53005	Baby Azrael	The mini version of the demon leader is extremely affectionate and will give you a bonus of 1500 HP and 15% damage from the 2nd floor of the Demon Tower and the Devil's Catacomb.
-53006	Baby Azrael (gold)	This mini demon is extremely affectionate and will give you a bonus of 1500 HP and 15% damage from the 2nd floor of both the Demon Tower and the Devil's Catacomb.
-53007	Bambi Seal	You can use this seal to summon your young reindeer, Bambi.
-53008	Knuud Seal	This seal allows you to summon your cute polar bear cub.
-53009	Bao Bao Seal	This seal allows you to summon your cute panda cub.
-53010	Leonidas Seal	You can use this seal to summon your lion cub, Leonidas.
-53011	Khan Seal	You can use this seal to summon your tiger cub, Khan.
-53012	Porky Seal	You can use this seal to summon your young boar, Porky.
-53013	Rufus Seal	You can use this seal to summon your wolf whelp, Rufus.
-53014	Mini-Executor Seal	This seal summons your chubby Mini-Executor in black armour.
-53015	Mini-Executor Seal(gold)	This seal summons your chubby Mini-Executor in golden armour.
-53016	Boney Seal	The seal summons your bony pet.
-53017	Jade Phoenix Seal	This seal summons the graceful Jade Phoenix.
-53018	Snow Leonidas (Seal)	You can use this seal to summon your pet.
-53019	Arctis Khan (Seal)	You can use this seal to summon your pet.
-53020	Polar Porkie (Seal)	You can use this seal to summon your pet.
-53021	Frost Rufus (Seal)	You can use this seal to summon your pet.
-53022	Sheldon Seal	The seal causes your pet Sheldon to hatch out of his egg.
-53023	Cooper Seal	The seal brings your pet Cooper hopping over.
-53024	Panther Cub (7 Days)	This seal summons your black Panther Cub.
-53025	Leopard Cub (7 Days)	This seal summons your cute Leopard Cub.
-53026		
-53218	Panther Cub (30 Days)	This seal summons your black Panther Cub.
-53219	Panther Cub (120 Days)	This seal summons your black Panther Cub.
-53220	Leopard Cub (30 Days)	This seal summons your cute Leopard Cub.
-53221	Leopard Cub (120 Days)	This seal summons your cute Leopard Cub.
-53501		
-53502	Young Reindeer Chest	The Young Reindeer is waiting impatiently in this chest for you to let it out.
+53005	Baby Azrael	The mini version of the demon leader is extremely affectionate. From the 2nd floor of the Demon Tower and the Devil's Catacomb, he provides you a bonus of | +15% magic/melee attack | +1500 HP
+53006	Baby Azrael (gold)	The mini version of the demon leader is extremely affectionate. From the 2nd floor of the Demon Tower and the Devil's Catacomb, he provides you a bonus of | +15% magic/melee attack | +1500 HP
+53007	Bambi Seal	You can use this seal to summon your reindeer calf, Bambi. The pet grants you | +15% magic/melee attack | +1500 HP
+53008	Knuud Seal	This seal allows you to summon your cute polar bear cub. The pet grants you | +15% magic/melee attack | +1500 HP
+53009	Bao Bao Seal	This seal allows you to summon your cute panda cub. The pet grants you | +15% magic/melee attack | +1500 HP
+53010	Leonidas Seal	You can use this seal to summon your lion cub, Leonidas. The pet grants you | +15% magic/melee attack | +1500 HP
+53011	Khan Seal	You can use this seal to summon your tiger cub, Khan. The pet grants you | +15% magic/melee attack | +1500 HP
+53012	Porky Seal	You can use this seal to summon your young boar, Porky. The pet grants you | +15% magic/melee attack | +1500 HP
+53013	Rufus Seal	You can use this seal to summon your wolf whelp, Rufus. The pet grants you | +15% magic/melee attack | +1500 HP
+53014	Mini-Executor Seal	This seal summons your chubby Mini-Executor in black armour. The pet grants you | +15% magic/melee attack | +1500 HP
+53015	Mini-Executor Seal(gold)	This seal summons your chubby Mini-Executor in golden armour. The pet grants you | +15% magic/melee attack | +1500 HP
+53016	Boney Seal	The seal summons your bony pet. It grants you | +15% magic/melee attack | +1500 HP
+53017	Jade Phoenix Seal	This seal summons the graceful Jade Phoenix. The pet grants you | +15% magic/melee attack | +50% chance of a 30% EXP Bonus
+53018	Snow Leonidas (Seal)	You can use this seal to summon the little snow lion. The pet grants you | +15% magic/melee attack | +1500 HP
+53019	Arctis Khan (Seal)	You can use this seal to summon the little snow tiger. The pet grants you | +15% magic/melee attack | +1500 HP
+53020	Polar Porkie (Seal)	You can use this seal to summon your little polar piglet. The pet grants you | +15% magic/melee attack | +1500 HP
+53021	Frost Rufus (Seal)	You can use this seal to summon your little polar wolf. The pet grants you | +15% magic/melee attack | +1500 HP
+53022	Sheldon Seal	The seal causes your pet Sheldon to hatch out of his egg. It grants you | +15% magic/melee attack | +1500 HP
+53023	Cooper Seal	The seal brings your pet Cooper hopping over. It grants you | +15% magic/melee attack | +1500 HP
+53024	Panther Cub (7 Days)	This seal summons your black Panther Cub. The pet grants you | +5% skill damage resistance | +5% chance of piercing hits | +1500 HP
+53025	Leopard Cub (7 Days)	This seal summons your cute Leopard Cub. The pet grants you | +10 defence value | +5% chance of critical hits | +1500 HP
+53026		You can use this seal to summon your Phoenix Pepita. The pet increases experience gain by +5%.
+53218	Panther Cub (30 Days)	This seal summons your black Panther Cub. The pet grants you | +5% skill damage resistance | +5% chance of piercing hits | +1500 HP
+53219	Panther Cub (120 Days)	This seal summons your black Panther Cub. The pet grants you | +5% skill damage resistance | +5% chance of piercing hits | +1500 HP
+53220	Leopard Cub (30 Days)	This seal summons your cute Leopard Cub. The pet grants you | +10 defence value | +5% chance of critical hits | +1500 HP
+53221	Leopard Cub (120 Days)	This seal summons your cute Leopard Cub. The pet grants you | +10 defence value | +5% chance of critical hits | +1500 HP
+53501		The Fire Phoenix waits in this cage for you to let it out.
+53502	Young Reindeer Chest	The Reindeer Calf is waiting impatiently in this chest for you to let it out.
 53503	Ice Phoenix Cage	The Ice Phoenix waits in this cage for you to let it out.
 53504		
-53505		
-53506		
+53505		Baby Azrael, the miniature version of the demon lord, is waiting to be released from this chest.
+53506		Baby Azrael (Gold), the miniature version of the demon lord, is waiting to be released from this chest.
 53516	Bone Chest	Contains a random item. With a little luck, you might find the skeletal dog, Boney, inside.
 53517	Jade Cage	The rare Jade Phoenix waits in this cage for you to free it.
-53518	Snow Leonidas	The chest contains the Snow Leonidas seal.
-53519	Arctis Khan	The chest contains the Arctis Khan seal.
-53520	Polar Porkie	The chest contains the Polar Porkie seal.
-53521	Frost Rufus	The chest contains the Frost Rufus seal.
+53518	Snow Leonidas	The cage contains the Snow Leonidas seal.
+53519	Arctis Khan	The cage contains the Arctis Khan seal.
+53520	Polar Porkie	The cage contains the Polar Porkie seal.
+53521	Frost Rufus	The cage contains the Frost Rufus seal.
 53522	Sheldon's Nest	Your pet Sheldon has hidden himself in this nest.
 53523	Rabbit Cage	The little rabbit Cooper is hiding in this cage.
-53526		
+53526		Open this can to obtain Pepita's seal.
 60001	Gall	A dogged body fluid which is won from the liver.
 60002	Note from Storage Guard	The parchment bears the energetic handwriting of the storage guard.
 60003	Heroic Symbol	An item which is not passed on with levity.
 70002	Third Hand	A hand which picks up Yang automatically.
 70003	Book of the Leader	One of the seven war strategy books. Provided the leader of a group has this book on them, all their group members will receive 30% more experience points.
 70004	Medal of Diligence	Reward for your hard work. Gives you 20% more experience points during combat.
-70005	Experience Ring	You collect 50% more experience points during a battle.
+70005	Experience Ring	Increases the collection of experience by 50% for 60 minutes.
 70006	Language Ring	This ring was crafted for diplomacy in the ancient era. Use it to talk to people from other kingdoms.
 70008	White Flag	A white flag that indicates surrender.
 70009	Treasure Chest	A chest which is decorated with a lot of ornaments. Can only be opened with a special key.
@@ -1866,24 +1866,24 @@
 70015	Cheap Brush	A ordinary, robust brush with a solid wooden handle.
 70020	Peach Flower Wine	Beverage that will immediately regenerate your Hit Points (HP) by 500 points.
 70024	Blessing Marble	Legendary blessed marble. When an item has four attributes, it adds another attribute.
-70027	Blacksmith's Memo	A memo from the blacksmith which shows you how to upgrade your weapons.
+70027	Blacksmith's Memo	A memo from the blacksmith which shows you how to upgrade items. Increases the chance of upgrading an item from +4 to +5 to 100%.
 70031	Fencing Pamphlet	This pamphlet concerns, amongst other things, the potential and weaknesses of the human anatomy.
 70035	Magic Copper Ore	When you combine this ore with a Blessing Scroll at the blacksmith's, you can create a Scroll of War.
-70037	Book of Forgetfulness	The legendary book that removes the memory of a learned skill completely. You can move 1 skill point.
+70037	Book of Forgetfulness	With this book, your hero can forget the memory of a learned skill. This way you can move 1 skill point.
 70038	Bravery Cape	Ancient Warriors showed off their bravery by wearing a colourful cape with which they attracted the attention of monsters.
 70039	Blacksmith Handbook	This book contains the soul of an old blacksmith. If it is used, it raises the chance of successfully ameliorating an item.
 70040	Orc Stubbornness	Reduces stamina use by half.
-70043	Thief's Glove	Doubles the probability of looting items.
+70043	Thief's Glove	Double the chance of looting items.
 70047	Language Ring(Sample)	In previous times, this ring was produced for the circle of diplomats. It allows the user to speak the languages of other kingdoms.
-70048	Fugitive's Cape	A priceless cape that helps you to become inconspicuous and that is used by lots of runaways.
-70049	Lucy's Ring	The engraving on the ring says: "May the Dragon God bless you." The ring reduces your chance of losing items in battle.
+70048	Fugitive's Cape	Use this mysterious cloak to hide your true rank.
+70049	Lucy's Ring	The engraving on the ring says: 'May the Dragon God bless you.' The ring reduces your chance of losing items in battle. Instead of losing an item, you lose Lucy's Ring.
 70050	Sage King's Symbol	An inherited symbol from the ancient royal family that grants the master great power.
 70051	Sage King's Glove	An inherited article from the ancient royal family that grants the master mysterious power.
 70052	Charm of Karma1	A charm that is used by Buddhists to safeguard against bad luck.
 70053	Charm of Karma2	A charm that is used by Buddhists to safeguard against bad luck.
 70054	Charm of Karma3	A charm that is used by Buddhists to safeguard against bad luck.
 70056	Pomegranate Juice+	A potion that instantly regenerates your HP by 1000 points.
-70057	Bravery Cape	A colourful cape with which warriors once proved their bravery, as it attracted the attention of various monsters. This item is tradeable.
+70057	Bravery Cape	A colourful cape with which warriors once proved their bravery, as it attracted the attention of various monsters.
 70058	Teleportation Ring	This ring will teleport you to a desired location within your kingdom 50 times. Not tradeable.
 70102	Zen Bean	Reduces the evil and raises the good in a character's disposition.
 70104	Polymorph Marble	You can use this marble to transform into a monster.
@@ -1905,16 +1905,16 @@
 71005	Language Ring	You can understand all kingdom languages for 7 days.
 71006	Language Ring	You can understand all kingdom languages for 15 days.
 71007	Language Ring	You can understand all kingdom languages for 30 days.
-71008	Fishing Book	Book that doubles the chance of catching rare fish.
+71008	Fishing Book	Required for catching rare fish and doubles your chances of catching them.
 71009	Storage Chest	Your Storeroom will receive 2 additional storage slots.
 71010	Third Hand	A hand which picks up Yang automatically.
 71011	Emotion Mask	You can let you feelings run free with this mask.
 71012	Book of the Leader	While the leader of a group is equipped with this book, all members will gain 30% more Experience points.
 71013	Firework	Rocket that lights up the sky for all players.
-71014	Potion of Attack+10	Increases your attack speed by 10% for 30 minutes.
-71015	Experience Ring	You collect 50% more experience points while fighting.
+71014	Potion of Attack+10	Increases your attack speed by 10%.
+71015	Experience Ring	You collect 50% more experience points during combat.
 71016	Thief's Gloves	Doubles the probability of looting items.
-71017	Lucky Medal	Doubles the probability of looting Yang by 50%.
+71017	Lucky Medal	Doubles the probability of looting Yang.
 71018	Blessing of Life	A blessing with which your HP are immediately recovered to 100%.
 71019	Blessing of Magic	A blessing that regenerates all your SP immediately.
 71020	Blessing of the Dragon	A blessing with which your HP and SP are immediately recovered to 100%.
@@ -1924,15 +1924,15 @@
 71024	Return of Strength	Resets your Strength points back to basic level, so you can redistribute them.
 71025	Stone of the Blacksmith	At the blacksmith's you can create a blacksmith handbook with the help of this stone and a blessing scroll.
 71026	Magic Iron Ore	This ore, when combined with a blessing scroll, enables the crafting of a dragon scroll at the blacksmiths.
-71027	Dragon God Life	Increases your maximum HP by 20% for 30 minutes.
-71028	Dragon God Attack	Increases the damage you cause during a fight by 12-15% for 30 minutes.
-71029	Dragon God Intelligence	Increases your maximum SP by 20% for 30 minutes.
-71030	Dragon God Defence	Lowers the damage you receive during a fight by 12-15% for 30 minutes.
+71027	Dragon God Life	Increases your maximum HP by 20%.
+71028	Dragon God Attack	Increases your attack value by 20%.
+71029	Dragon God Intelligence	Increases your maximum SP by 20%.
+71030	Dragon God Defence	Reduces the damage you receive during combat by 20%.
 71031	Dragon God Support	The vitality, strength, intelligence and dexterity of your character will temporarily quintuple.
-71032	Dragon Scroll	Eliminates the risk of destroying an item if the improvement fails. Only its quality will be decreased by 1. Additionally, the probability of a successful improvement will increase by 10%.
+71032	Dragon Scroll	Eliminates the risk of an item being destroyed when an improvement fails. In the case of failure, the item's quality is merely reduced by 1 instead. In addition, the chance of a successful improvement is increased by 10%.
 71033	Emotion Mask	You can let you feelings run free with this mask.
-71034	Potion of Attack +15	Increases your attack speed by 15% for 30 minutes.
-71035	Researcher's Elixir	Improves the quality of the research objects which you have collected, thereby increasing the likelihood that they will be accepted.
+71034	Potion of Attack +15	Increases your attack speed by 15%.
+71035	Researcher's Elixir	Improves the quality of the research objects which you have collected, thereby increasing the likelihood that they will be accepted. Does not apply to quests in Yohara.
 71036	Scroll - Chief Orc	Will summon an Orc Chieftain next to your Character. Beware! It is a Boss Monster!
 71037	Scroll - Leader	Will summon a Dark Leader next to your character. Beware! It is a Boss Monster!
 71038	Scroll - Queen Spider	Will summon a King Spider next to your Character. Beware! It is a Boss Monster!
@@ -1941,14 +1941,14 @@
 71041	Scroll - Nine Tails	Will summon a Nine tail next to your Character. Beware! It is a Boss Monster!
 71042	Scroll - Demon King	Will summon a Proud Demon King next to your character. Beware! It is a Boss Monster!
 71043	Scroll - Tiger Ghost	Makes a yellow tiger ghost appear next to your character. Be careful, it's a boss!
-71044	Critical Strike	Increases the chance of landing a critical hit by 20% for 10 minutes.
-71045	Piercing Strike	Increases the chance of a piercing hit by 20% for 10 minutes.
+71044	Critical Strike	Increases the chance of landing a critical hit by 20%.
+71045	Piercing Strike	Increases the chance of landing a piercing hit by 20%.
 71047	Spirit Stone Tincture	Removes a Spirit Stone from one of your items.
 71048	Modification Charm	This charm can change the gender of your character.
 71049	Silk Bundle	With this bundle you can open a private shop for 10 days free of charge.
 71050	Potion of Speed	Boosts your motion speed by 60 for 30 minutes.
-71051	Bewitch Item	Add a special new bonus onto one of your items, if it does not already have one.
-71052	Bless Item	Removes the special-bonus on one of your items and adds another one.
+71051	Bewitch Item	Removes the special-bonus on one of your items and adds another one.
+71052	Bless Item	Add a special new bonus onto one of your items, if it does not already have one.
 71054	Tincture of Kingdoms	A character is able to go into exile in another kingdom, this means changing the kingdom.
 71055	Tincture of the Name	Changes the name of a Character.
 71056	Tincture of Heaven	Increases the chance of successfully improving a Spirit Stone.
@@ -1979,7 +1979,7 @@
 71081	Metin Stone(N)	A medium Metin stone will be dropped near your character.
 71082	Metin Stone(H)	A large Metin stone will be dropped near your character.
 71083	Stone Handbook	Removes all broken stones from an item. With that you will get another chance to improve your weapon or armour.
-71084	Enchant Item	Removes the bonuses from one of your items and adds new ones.
+71084	Enchant Item	Removes the bonuses from one of your items and adds new ones. Only applies to bonuses 1-5.
 71085	Reinforce Item	If you're lucky it will add a new bonus onto one of your items. (up to a max. of 4 bonuses)
 71088	Mission Book (Easy)	The book which is bound in brown leather contains a mission which can also be solved by greenhorn fighters.
 71089	Mission Book (Normal)	The book which is bound in brown leather contains a mission which can only be solved by those who are already experienced in fighting.
@@ -1988,12 +1988,12 @@
 71092	Polymorph Book	Successfully studying this book increases your transformation skills. It disappears after you have read it.
 71093	Polymorph Marble	You can use this marble to transform into a monster.
 71094	Concentrated Reading	Increases the chance of improving your talent when reading the next book (or Soul Stone) by 2.5 times.
-71095	Passage Ticket	If you give this ticket to the guard, you will be allowed to enter a new floor of the Spider Dungeon as well as the Red Dragon Fortress.
+71095	Passage Ticket	If you give this ticket to the responsible guard, you will be allowed to enter a new floor of selected dungeons.
 71096	Passage Tablet	This medal allows you to pass through a gate.
 71099	Ring of Successor	Allows the leader of a guild to set up a successor.
-71100	Scroll of Lore Change	Forget your lore and start a new one. You need to be at least on level 31 to do it.
-71101	Potion of Haste	This potion decreases your cooldown time by 20 percent for 30 minutes.
-71102		
+71100	Scroll of Lore Change	Forget your lore and start a new one. You need to be at least level 31.
+71101	Potion of Haste	This potion reduces the cooldown time of your abilities by 20%.
+71102		Increases your casting speed by 30%.
 71103	Redistribution (VIT)	Puts your vitality back to 1 and allows you to redistribute your points.
 71104	Redistribution (INT)	Puts your intelligence back to 1 and allows you to redistribute your points.
 71105	Redistribution (STR)	Puts your strength back to 1 and allows you to redistribute your points.
@@ -2003,95 +2003,95 @@
 71109	Scroll of Correction	This scroll allows you to remove the last successfully added Spirit Stone from an item.
 71110	Horse Sugar	This piece of sugar allows you to give your mount a name. It also increases is defence value by 20.
 71113	Glass of Insight	Allows you to show another player items from your inventory. The glass breaks in the process.
-71114	Wild Boar Seal (yellow)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
+71114	Wild Boar Seal (yellow)	The magic of this seal summons a mighty animal spirit that will quickly carry you to your destination of choice. It increases its rider's defence value by 75.
 711151	Wild Boar Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711152	Wild Boar Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711153	Wild Boar Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711154	Wild Boar Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
-71115	Wild Boar Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
-71116	Wolf Seal (yellow)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
+71115	Wild Boar Seal (blue)	The magic of this seal summons a mighty animal spirit that will quickly carry you to your destination of choice. It increases its rider's defence value by 100.
+71116	Wolf Seal (yellow)	The magic of this seal summons a mighty animal spirit that will quickly carry you to your destination of choice. It increases its rider's defence value by 100.
 711171	Wolf Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711172	Wolf Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711173	Wolf Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711174	Wolf Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
-71117	Wolf Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
-71118	Tiger Seal (yellow)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
+71117	Wolf Seal (blue)	The magic of this seal summons a mighty animal spirit that will quickly carry you to your destination of choice. It increases its rider's defence value by 150.
+71118	Tiger Seal (yellow)	The magic of this seal summons a mighty animal spirit that will quickly carry you to your destination of choice. It increases its rider's defence value by 125.
 711191	Tiger Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711192	Tiger Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711193	Tiger Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711194	Tiger Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
-71119	Tiger Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
-71120	Lion Seal (yellow)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
+71119	Tiger Seal (blue)	The magic of this seal summons a mighty animal spirit that will quickly carry you to your destination of choice. It increases its rider's defence value by 200.
+71120	Lion Seal (yellow)	The magic of this seal summons a mighty animal spirit that will quickly carry you to your destination of choice. It increases its rider's attack value by 200.
 711211	Lion Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711212	Lion Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711213	Lion Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
 711214	Lion Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
-71121	Lion Seal (blue)	This seal's magic calls upon a mighty animal spirit that will quickly carry you to the place of your choice.
-71122		
-71123	Dragon Scales	Dragon Scales are some of the toughest known materials.
-71124	White Lion	Animals with white fur are very rare and many cultures worship them, as they believe that they carry remarkable powers.
-71125	Wild Battle Boar Seal	Taming evil animal spirits takes a lot of magical skill. However, the result is very impressive.
-71126	Fight Wolf Seal	Taming evil animal spirits takes a lot of magical skill. However, the result is very impressive.
-71127	Storm Tiger Seal	Taming evil animal spirits takes a lot of magical skill. However, the result is very impressive.
-71128	Battle Lion Seal	Taming evil animal spirits takes a lot of magical skill. However, the result is very impressive.
+71121	Lion Seal (blue)	The magic of this seal summons a mighty animal spirit that will quickly carry you to your destination of choice. It increases its rider's attack value by 300.
+71122		Can be used to enter the Dragon's Temple.
+71123	Dragon Scales	Dragon scales are some of the toughest known materials.
+71124	White Lion	Animals with white fur are very rare and many cultures worship them, believing that they carry remarkable powers. It increases experience gain by 30%.
+71125	Wild Battle Boar Seal	Taming evil animal spirits requires some skilful use of magic, but the results can be very impressive. It grants its rider +20% strength against monsters.
+71126	Fight Wolf Seal	Taming evil animal spirits requires some skilful use of magic, but the results can be very impressive. It increases your chance of critical hits by 10%.
+71127	Storm Tiger Seal	Taming evil animal spirits requires some skilful use of magic, but the results can be very impressive. It increases your chance of critical hits by 10%.
+71128	Battle Lion Seal	Taming evil animal spirits requires some skilful use of magic, but the results can be very impressive. It reduces the damage you take when defending by 10%.
 71129	Dragon Claw	The look of this terrifying claw brings back memories...
-71130	Passage Ticket	If you give this ticket to the guard, you will be allowed to enter a new floor of the Spider Dungeon as well as the Red Dragon Fortress. This item is tradeable.
-71131		
-71132		
-71133		
-71134		
-71135	Crescent Moon Ring	A ring with an artistically finished engraving in the style of a crescent moon.
-71136	Lolly	A lolly made of secret ingredients which provides experience and strength for battle.
-71137	Royal Tiger Seal (blue)	The magic of the seal summons your mount, the majestic Royal Tiger (blue).
-71138	Royal Tiger Seal (red)	The magic of the seal summons your mount, the majestic Royal Tiger (red).
-71139	Royal Tiger Seal (gold)	The magic of the seal summons your mount, the majestic Royal Tiger (gold).
-71140	Royal Tiger Seal (green)	The magic of the seal summons your mount, the majestic Royal Tiger (green).
-71141	Royal Tiger Seal (grey)	The magic of the seal summons your mount, the majestic Royal Tiger (grey).
-71142	Royal Tiger Seal (white)	The magic of the seal summons your mount, the majestic Royal Tiger (white).
+71130	Passage Ticket	If you give this ticket to the responsible guard, you will be allowed to enter a new floor of selected dungeons. This item is tradeable.
+71131		Seal for a Noble Black Horse. It increases your movement speed by 60.
+71132		Seal for a Noble Black Horse. It increases your movement speed by 60.
+71133		Seal for a Noble Black Horse. It increases your movement speed by 60.
+71134		Seal for a Noble Black Horse. It increases your movement speed by 60.
+71135	Crescent Moon Ring	It grants you: | +50% experience points | +20% attack speed | +20% casting speed | +30% physical damage | +10% maximum HP | +10% maximum SP | +5% to all outfit bonuses
+71136	Lolly	The lolly made of secret ingredients grants you | +50% experience points | +30% physical damage | +20 attack speed | +20 casting speed | +10% maximum HP | +10% maximum SP
+71137	Royal Tiger Seal (blue)	The magic of this seal summons your mount, the majestic Royal Tiger (blue). It increases experience gain by 30%.
+71138	Royal Tiger Seal (red)	The magic of this seal summons your mount, the majestic Royal Tiger (red). It increases experience gain by 30%.
+71139	Royal Tiger Seal (gold)	The magic of this seal summons your mount, the majestic Royal Tiger (gold). It increases experience gain by 30%.
+71140	Royal Tiger Seal (green)	The magic of this seal summons your mount, the majestic Royal Tiger (green). It increases experience gain by 30%.
+71141	Royal Tiger Seal (grey)	The magic of this seal summons your mount, the majestic Royal Tiger (grey). It increases experience gain by 30%.
+71142	Royal Tiger Seal (white)	The magic of this seal summons your mount, the majestic Royal Tiger (white). It increases experience gain by 30%.
 71143	Ring of Joy	A ring with a valuable decoration made from jade and celestial stone, which has the following bonuses: +50% experience points +20% attack speed +20% casting speed +30% strength against monsters +10% maximum HP +10% maximum SP
 71144	Christmas Chest	A lovingly packed Christmas gift that contains a festive surprise.
-71145	Amulet of Eternal Love	A silver heart-shaped amulet, decorated with magic gemstones.
-71146	Cupid's Chest (pink)	Heart-shaped chest with 10 surprises inside. Can be opened every 30 mins.
-71147	Cupid's Chest (blue)	Heart-shaped chest with 10 surprises inside. Can be opened every 30 mins.
-71148	Ring of Will Power	Gives you +30% EXP, +20% defence chance against Warriors, +20% defence chance against Ninjas, +30% strength against monsters, +10% maximum HP and +10% maximum SP for 7 days.
-71149	Ring of Deadly Power	Gives you +30% EXP, +20% defence chance against Suras, +20% defence chance against Shamans, +30% strength against monsters, +10% maximum HP and +10% maximum SP for 7 days.
+71145	Amulet of Eternal Love	A silver heart-shaped amulet, decorated with magic gemstones. It grants you | +30% EXP | +10 attack speed | +10 casting speed | +5% HP and SP | +10% strength against monsters
+71146	Cupid's Chest (pink)	Heart-shaped chest with 5 surprises inside. Can be opened every 30 mins.
+71147	Cupid's Chest (blue)	Heart-shaped chest with 5 surprises inside. Can be opened every 30 mins.
+71148	Ring of Will Power	Gives you +30% EXP, +20% defence chance against Warriors, +20% defence chance against Ninjas, +20% defence chance against Lycans, +30% strength against monsters, +10% maximum HP and +10% maximum SP for the duration.
+71149	Ring of Deadly Power	Gives you +30% EXP, +20% defence chance against Suras, +20% defence chance against Shamans, +20% defence chance against Lycans, +30% strength against monsters, +10% maximum HP and +10% maximum SP for a period of time.
 71150	Magic Egg	The artfully decorated oval chest contains more than just an Easter surprise, it reveals its treasures little by little.
 71151	Green Magic	Removes the bonuses from one of your items and adds new ones. Can only be used on weapons and armour up to level 40. Item from the level chest, not tradeable.
 71152	Green Strength	With a little luck, this will add a new bonus to one of your items (max. 4 bonuses). Can only be used on weapons and armour up to level 40. Item from the level chest, not tradeable.
 71153	Potion of Wisdom	This potion allows you to gather 100% more experience in one hour of game time. Not tradeable.
-71154		
-71155		
-71156		
+71154		This potion allows you to gather 80% more experience in three hours of game time. Not tradeable.
+71155		This potion allows you to gather 100% more experience in three hours of game time. Not tradeable.
+71156		Increases experience gain by 150%.
 71157		
-71158	Hero's Medal	Gives +50% EXP, +30% damage, +20% attack speed, +20% casting speed, +10% HP and +10% SP.
+71158	Hero's Medal	Gives +50% EXP, +30 physical damage, +20% attack speed, +20% casting speed, +10% HP and +10% SP.
 71159	Milon's Chest	A chest for true heroes. Contains a random item as pay for your triumph.
 71160	Athena's Chest	A chest for true heroines. Contains a random item as pay for your triumph.
-71161	Equus Porphyreus	Seal for one of the beautiful and extremely rare purple horses.
-71164	Comet Seal	You can use this seal to summon your reindeer, Comet.
-71166	Armoured Panda Seal	This seal allows you to summon your Armoured Panda.
-71171	Unicorn Seal	This seal summons your Unicorn.
-71172	Nightmare Seal	This seal summons your Nightmare.
+71161	Equus Porphyreus	Seal for one of the beautiful and extremely rare purple horses. It increases your movement speed by 60.
+71164	Comet Seal	You can use this seal to summon your reindeer Comet. It increases your movement speed by 60.
+71166	Armoured Panda Seal	You can use this seal to summon your Armoured Panda. It increases your movement speed by 60.
+71171	Unicorn Seal	You can use this seal to summon your Unicorn. It increases your movement speed by 60.
+71172	Nightmare Seal	You can use this seal to summon your Nightmare. It increases your movement speed by 60.
 71173	Teleportation Scroll	This Scroll brings you directly to the gates of the Red Dragon Fortress.
 71174	Passage Ticket	You may enter the Red Dragon Fortress when you present this Passage Ticket to the responsible guard.
 71175	Passage Ticket	You may enter the Red Dragon Fortress when you present this Passage Ticket to the responsible guard.
-71176	Black Panther	This seal summons your mysterious Black Panther.
-71177	Leopard Seal	This seal summons your valiant Leopard.
-72001	Experience Ring	Increases the collection of experience by 50% for one hour.
+71176	Black Panther	This seal summons your mysterious Black Panther. It increases your movement speed by 30.
+71177	Leopard Seal	This seal summons your valiant Leopard. It increases your movement speed by 30.
+72001	Experience Ring	Increases the collection of experience by 50% for 10 hours.
 72002	Experience Ring	Increases the collection of experience by 50% for 30 minutes.
 72003	Experience Ring	Increases the collection of experience by 50% for 3 hours.
-72004	Thief's Gloves	Doubles your chance of looting items for 10 hours.
-72005	Thief's Gloves	Doubles your chance of looting items for 30 minutes.
-72006	Thief's Gloves	Doubles your chance of looting items for 3 hours.
+72004	Thief's Gloves	Double your chance of looting items for 10 hours.
+72005	Thief's Gloves	Double your chance of looting items for 30 minutes.
+72006	Thief's Gloves	Double your chance of looting items for 3 hours.
 72007	Silk Bundle	You can open a private shop for 10 hours.
 72008	Silk Bundle	You can open a private shop for 30 minutes.
 72009	Silk Bundle	You can open a private shop for 3 hours.
 72010	Lovebird Feather	When it is equipped, the love points of a couple increase twice as fast for 15 minutes.
 72011	Lovebird Feather	When it is equipped, the love points of a couple increase twice as fast for 30 minutes.
 72012	Lovebird Feather	When it is equipped, the love points of a couple increase twice as fast for 3 hours.
-72013	Fishing Book	Your chance of catching a rare fish is doubled for 15 minutes.
-72014	Fishing Book	Your chance of catching a rare fish is doubled for 30 minutes.
-72015	Fishing Book	Your chance of catching a rare fish is doubled for 3 hours.
-72016	Third Hand	A hand that picks up dropped Yang automatically for 15 minutes.
+72013	Fishing Book	Required for catching rare fish and doubles your chances of catching them for 15 minutes.
+72014	Fishing Book	Required for catching rare fish and doubles your chances of catching them for 30 minutes.
+72015	Fishing Book	Required for catching rare fish and doubles your chances of catching them for 3 hours.
+72016	Third Hand	A hand that automatically picks up dropped Yang for a certain period of time.
 72017	Third Hand	A hand that picks up dropped Yang automatically for 30 minutes.
 72018	Third Hand	A hand that picks up dropped Yang automatically for 3 hours.
 72019	Storage Chest	Your Storeroom gets two additional storage rooms for a duration of 15 minutes.
@@ -2100,15 +2100,15 @@
 72022	Lucky Gold Coin	Doubles your chance of capturing Yang for 10 hours.
 72023	Lucky Gold Coin	Doubles your chance of capturing Yang for 30 minutes.
 72024	Lucky Gold Coin	Doubles your chance of capturing Yang for 3 hours.
-72025	Critical Strike	Increases the chance of landing a critical hit by 20% for 10 minutes.
-72026	Critical Strike	Increases the chance of landing a critical hit by 20% for 10 minutes.
-72027	Critical Strike	Increases the chance of landing a critical hit by 20% for 10 minutes.
+72025	Critical Strike	Increases the chance of landing a piercing hit by 10%.
+72026	Critical Strike	Increases the chance of landing a piercing hit by 10%.
+72027	Critical Strike	Increases the chance of landing a piercing hit by 10%.
 72028	Emotion Mask	You can let your emotions run free for 7 days.
 72029	Emotion Mask	You can let your emotions run free for 15 days.
 72030	Emotion Mask	You can let your emotions run free for 30 days.
-72031	Dragon God Attack	Increases your attack value by 12 to 15% for 30 minutes.
-72032	Dragon God Attack	Increases your attack value by 12 to 15% for 30 minutes.
-72033	Dragon God Attack	Increases your attack value by 12 to 15% for 30 minutes.
+72031	Dragon God Attack	Increases your attack value by 15% for 30 minutes.
+72032	Dragon God Attack	Increases your attack value by 15% for 30 minutes.
+72033	Dragon God Attack	Increases your attack value by 15% for 30 minutes.
 72034	Dragon God Defence	Reduces damage by 12% - 15% when you defend.
 72035	Dragon God Defence	Reduces damage by 12% - 15% when you defend.
 72036	Dragon God Defence	Reduces damage by 12% - 15% when you defend.
@@ -2121,38 +2121,38 @@
 72043	Book of the Leader	When the group leader is equipped with it, it increases the experience points of group members and the leader by 30%.
 72044	Book of the Leader	When the group leader is equipped with it, it increases the experience points of group members and the leader by 30%.
 72045	Book of the Leader	When the party leader is equipped with it, it increases the experience point of group members and the leader by 30%.
-72046	Critical Chance	Increases your chance of a piercing hit by 20% for 10 minutes.
-72047	Criticial Chance	Increases your chance of a piercing hit by 20% for 10 minutes.
-72048	Critical Chance	Increases your chance of a piercing hit by 20% for 10 minutes.
-72301	Blessing Scroll	Reduces the risk of destroying an Item if the upgrade fails. The cost of this save is that the quality is reduced by 1 point.
-72302		
-72303		
-72304		
-72305		
-72306		
-72307		
+72046	Critical Chance	Increases the chance of landing a critical hit by 10%.
+72047	Criticial Chance	Increases the chance of landing a critical hit by 10%.
+72048	Critical Chance	Increases the chance of landing a critical hit by 10%.
+72301	Blessing Scroll	Eliminates the risk of an item being destroyed when an improvement fails. In the case of failure, the item's quality is merely reduced by 1 instead.
+72302		While the leader of a group is equipped with this book, all members will gain 30% more Experience points for three hours.
+72303		Increases the collection of experience by 50% for one hour.
+72304		This legendary marble adds a fifth attribute to items that already have four attributes. The addition can also fail though.
+72305		Vanishing Mirror
+72306		A memo from the blacksmith which shows you how to upgrade items. Increases the chance of upgrading an item from +4 to +5 to 100%.
+72307		A memo from the blacksmith which shows you how to upgrade items. Increases the chance of upgrading an item from +5 to +6 to 100%.
 72308	Magic Copper Ore	When you combine this ore with a Blessing Scroll at the blacksmith's, you can create a Scroll of War.
-72309		
-72310		
-72311		
-72312		
-72313		
-72314		
+72309		This book contains the soul of an old blacksmith. If it is used, it raises the chance of successfully improving an item.
+72310		Will lift the curse of the evil spirit, if learning is not successful. With the help of this scroll you can read another skill document on the same day.
+72311		A blessing with which your HP and SP are immediately recovered to 100%.
+72312		Increases your attack value by 20%.
+72313		Reduces the damage you receive during combat by 20%.
+72314		Eliminates the risk of an item being destroyed when an upgrade fails. In the case of failure, the item's quality is merely reduced by one level instead. In addition, the chance of a successful upgrade is increased by 10%.
 72501	Experience Ring (iCafe)	Increases collection of experience points by 20% in the membership iCafe.
 72502	Thief's Glove (iCafe)	Chance of items being dropped increases by 1.5 times in Membership iCafe.
 72701	Wind Shoes	Increases your movement speed by 30 when equipped.
 72703	Tiger Bone Earring	Your attack value will be increased by 200 points for 2 hours (time only counts down while the item is being worn). The item is not tradeable.
 72704	Dragon Bone Earring	Your defence value will be increased by 200 points for 2 hours (time only counts down while the item is being worn). The item is not tradeable.
-72705	Tiger Bone Bracelet	The damage your skills inflict will be increased by 15% for 2 hours (time only counts down while the item is being worn). The item is not tradeable.
-72706	Dragon Bone Bracelet	Your defences against skills will be increased by 15% for 2 hours (time only counts down while the item is being worn). The item is not tradeable.
+72705	Tiger Bone Bracelet	The damage your skills inflict will be increased by 15 points for 2 hours (time only counts down while the item is being worn). The item is not tradeable.
+72706	Dragon Bone Bracelet	Your defences against skills will be increased by 15 points for 2 hours (time only counts down while the item is being worn). The item is not tradeable.
 72723	Sun Elixir (S)	Automatically refills your HP. Contains 1,000,000 HP.
 72724	Sun Elixir (M)	Automatically refills your HP. Contains 3,000,000 HP.
 72725	Sun Elixir (L)	Automatically refills your HP. Contains 7,000,000 HP.
-72726	Sun Elixir (E)	Automatically fills up HP. Contains 10,000,000 HP. This item is tradeable.
+72726	Sun Elixir (E)	Contains 10,000,000 HP. Automatically refills your HP and has an additional positive effect on your max. HP. This item is tradeable.
 72727	Moon Elixir (S)	Automatically refills your SP. Contains 100,000 SP.
 72728	Moon Elixir (M)	Automatically refills your SP. Contains 300,000 SP.
 72729	Moon Elixir (L)	Automatically refills your SP. Contains 700,000 SP.
-72730	Moon Elixir (E)	Automatically fills up SP. Contains 1,000,000 SP. This item is tradeable.
+72730	Moon Elixir (E)	Contains 1,000,000 SP. Automatically refills your SP and has an additional positive effect on your max. SP. This item is tradeable.
 73001	Trendy Hairstyle (Red)	A trendy hairstyle, that gives you a striking appearance.
 73002	Trendy Hairstyle (Light)	A trendy hairstyle, that gives you a striking appearance.
 73003	Trendy Hairstyle (Blue)	A trendy hairstyle, that gives you a striking appearance.
@@ -2166,14 +2166,14 @@
 73011	Long Hair (Brown)	An impressive hairstyle with magnificent, brown hair.
 73012	Long Hair (Green)	An impressive hairstyle with magnificent, green hair.
 73251	Ponytail (Brown)	Long hair done up in a plait.
-73252	Ponytail (Green)	Long hair done up a plait.
+73252	Ponytail (Green)	Long hair done up in a plait.
 73253	Ponytail (Blue)	Long hair done up in a plait.
 73254	Ponytail (Light)	Long hair done up in a plait.
 73255	Shoulder Length (Red)	A natural-looking shoulder-length hairstyle.
 73256	Shoulder Length (Brown)	A natural-looking shoulder-length hair cut.
 73257	Shoulder Length (Light)	A natural-looking shoulder-length hairstyle.
 73258	Shoulder Length (Purple)	A natural-looking shoulder-length hairstyle.
-73259	Short Hair (Red)	A hairstyle that gives you a threatening look.
+73259	Short Hair (Red)	A short hairstyle that gives you a threatening look.
 73260	Short Hair (Blue)	A short hairstyle giving you a threatening look.
 73261	Short Hair (Black)	A short hairstyle that gives you a threatening look.
 73262	Short Hair (Blonde)	A short hairstyle that gives you a threatening look.
@@ -2201,10 +2201,10 @@
 73760	Old Hairstyle (Light)	Long hair, worn in a traditional way.
 73761	Old Hairstyle (Purple)	Long hair, worn in a traditional way.
 73762	Old Hairstyle (Red)	Long hair, worn in a traditional way.
-74001	Trendy Hairstyle (Red)	A hairstyle giving you a distinctive look
-74002	Trendy Hairstyle (Light)	A hairstyle giving you a distinctive look
-74003	Trendy Hairstyle (Blue)	A hairstyle giving you a distinctive look
-74004	Trendy Hairstyle (Brown)	A hairstyle giving you a distinctive look
+74001	Trendy Hairstyle (Red)	A hairstyle giving you a distinctive look.
+74002	Trendy Hairstyle (Light)	A hairstyle giving you a distinctive look.
+74003	Trendy Hairstyle (Blue)	A hairstyle giving you a distinctive look.
+74004	Trendy Hairstyle (Brown)	A hairstyle giving you a distinctive look.
 74005	Headband (Red)	Short brown hair worn with a red headband
 74006	Headband (Brown plaid)	Short blonde hair with a bright headband
 74007	Headband (Blue)	Short blue hairstyle worn with a headband
@@ -2225,10 +2225,10 @@
 74252	Ponytail (Green)	A hairstyle in which the hair has been tied up into a long plait
 74253	Ponytail (Blue)	Long blue hair that has been tied up into a plait - a popular women's hairstyle
 74254	Ponytail (Light)	Long fair hair that has been tied up into a plait - a very popular women's hairstyle
-74255	Shoulder Length (Red)	A hairstyle with a sassy, trendy look
-74256	Shoulder Length (Brown)	A sassy, trendy hairstyle
-74257	Shoulder Length (Light)	A sassy, trendy hairstyle
-74258	Shoulder Length (Purple)	A sassy, trendy hairstyle
+74255	Shoulder Length (Red)	A hairstyle with a sassy, trendy look.
+74256	Shoulder Length (Brown)	A sassy, trendy hairstyle.
+74257	Shoulder Length (Light)	A sassy, trendy hairstyle.
+74258	Shoulder Length (Purple)	A sassy, trendy hairstyle.
 74259	Short Hair (Red)	Red fringed hair in the Ninja style
 74260	Short Hair (Blue)	Blue fringed hair in the Ninja style
 74261	Short Hair (Black)	Black, fringed hair in the Ninja style
@@ -2241,18 +2241,18 @@
 74268	Ninja Desert Scarf (F)	A desert scarf for female Ninjas made from a precious material (duration: 7 days).
 74269	Ninja Turban (F)	A turban for female Ninjas made from a very valuable material (duration: 7 days).
 74270	Jack O' Ninja (f)	A mask for female ninjas in the shape of a pumpkin. Attributes and duration are set at random. It replaces any existing hairstyles.
-74501	Sporty Hairstyle (White)	A short hairstyle that gives you a military look
-74502	Sporty Hairstyle (Brown)	A short hairstyle that gives you a military look
-74503	Sporty Hairstyle(Blonde)	A short hairstyle that gives you a military look
-74504	Sporty Hairstyle (Green)	A short hairstyle that gives you military look
-74505	Charisma Hair (White)	A hairstyle accentuating a strong individual character
-74506	Charisma Hair (Red)	A hairstyle accentuating a strong individual character
-74507	Charisma Hair (Black)	A hairstyle accentuating a strong individual character
-74508	Charisma Hair (Purple)	A hairstyle accentuating a strong individual character
-74509	Long Plait (White)	A plaited old fashioned hairstyle that was symbolic of the rich
-74510	Long Plait (Blue)	A plaited old fashioned hairstyle that was symbolic of the rich
-74511	Long Plait (Black)	A plaited old fashioned hairstyle that was symbolic of the rich
-74512	Long Plait (Brown)	A plaited old fashioned hairstyle that was symbolic of the rich
+74501	Sporty Hairstyle (White)	A short hairstyle that gives you a military look.
+74502	Sporty Hairstyle (Brown)	A short hairstyle that gives you a military look.
+74503	Sporty Hairstyle(Blonde)	A short hairstyle that gives you a military look.
+74504	Sporty Hairstyle (Green)	A short hairstyle that gives you a military look.
+74505	Charisma Hair (White)	A hairstyle accentuating a strong individual character.
+74506	Charisma Hair (Red)	A hairstyle accentuating a strong individual character.
+74507	Charisma Hair (Black)	A hairstyle accentuating a strong individual character.
+74508	Charisma Hair (Purple)	A hairstyle accentuating a strong individual character.
+74509	Long Plait (White)	A plaited old-fashioned hairstyle that was symbolic of the rich.
+74510	Long Plait (Blue)	A plaited old-fashioned hairstyle that was symbolic of the rich.
+74511	Long Plait (Black)	A plaited old-fashioned hairstyle that was symbolic of the rich.
+74512	Long Plait (Brown)	A plaited old-fashioned hairstyle that was symbolic of the rich.
 74513	Sura Afro (Male)	Gives a male Sura an HP bonus of 1%. Replaces existing hairstyle (duration: 7 days).
 74514	Sura Afro (Male)	Gives a male Sura an SP bonus of 1%. Replaces existing hairstyle (duration: 7 days).
 74515	Sura Samurai Helmet (M)	Gives a male Sura an HP bonus of 1%. Replaces existing hairstyle (duration: 7 days).
@@ -2261,18 +2261,18 @@
 74518	Sura Keffiyeh (M)	A headdress for male Suras (duration: 7 days).
 74519	Sura Turban (M)	A headdress made from the best quality material for male Suras (duration: 7 days).
 74520	Jack O' Sura (m)	A mask for the Sura in the shape of a pumpkin. Attributes and duration are set at random. It replaces any existing hairstyles.
-74751	Elegant Hairstyle(Brown)	An elegant, hairstyle pinned up with a butterfly hairpin
-74752	Elegant Hairstyle(Black)	An elegant, hairstyle pinned up with a butterfly hairpin
-74753	Elegant Hairstyle (Blue)	An elegant, hairstyle pinned up with a butterfly hairpin
-74754	Elegant Hairstyle(Light)	An elegant, hairstyle pinned up with a butterfly hairpin
-74755	Med.Length Hair (Brown)	An elegant Shaman hairstyle
-74756	Med. Length Hair (Black)	An elegant Shaman hairstyle
-74757	Med.Length Hair (Blonde)	An elegant Shaman hairstyle
-74758	Med.Length Hair (Purple)	An elegant Shaman hairstyle
-74759	Old Hairstyle (Brown)	A feminine hairstyle with long, layered hair
-74760	Old Hairstyle (Blonde)	A feminine hairstyle with long, layered hair
-74761	Old Hairstyle (Purple)	A feminine hairstyle with long, layered hair
-74762	Old Hairstyle (Red)	A feminine hairstyle with long, layered hair
+74751	Elegant Hairstyle(Brown)	An elegant hairstyle pinned up with a butterfly hairpin.
+74752	Elegant Hairstyle(Black)	An elegant hairstyle pinned up with a butterfly hairpin.
+74753	Elegant Hairstyle (Blue)	An elegant hairstyle pinned up with a butterfly hairpin.
+74754	Elegant Hairstyle(Light)	An elegant hairstyle pinned up with a butterfly hairpin.
+74755	Med.Length Hair (Brown)	An elegant Shaman hairstyle.
+74756	Med. Length Hair (Black)	An elegant Shaman hairstyle.
+74757	Med.Length Hair (Blonde)	An elegant Shaman hairstyle.
+74758	Med.Length Hair (Purple)	An elegant Shaman hairstyle.
+74759	Old Hairstyle (Brown)	A feminine hairstyle with long, layered hair.
+74760	Old Hairstyle (Blonde)	A feminine hairstyle with long, layered hair.
+74761	Old Hairstyle (Purple)	A feminine hairstyle with long, layered hair.
+74762	Old Hairstyle (Red)	A feminine hairstyle with long, layered hair.
 74763	Shaman Afro (Female)	Gives a female Shaman an HP bonus of 1%. Replaces existing hairstyle (duration: 7 days).
 74764	Shaman Afro (Female)	Gives a female Shaman an SP bonus of 1%. Replaces existing hairstyle (duration: 7 days).
 74765	Shaman Flower Hat (F)	Gives a female Shaman an HP bonus of 1%. Replaces existing hairstyle (duration: 7 days).
@@ -2281,10 +2281,10 @@
 74768	Shaman Desert Scarf (F)	A desert scarf for female Shamans made from a precious material (duration: 7 days).
 74769	Shaman Turban (F)	A turban made from a very valuable material for female Shamans (duration: 7 days).
 74770	Jack O' Shaman (f)	A mask for female shamans in the shape of a pumpkin. Attributes and duration are set at random. It replaces any existing hairstyles.
-75001	Trendy Hairstyle (Red)	Trendy hairstyle with red hair and a hair-band
-75002	Trendy Hairstyle (Light)	Trendy hairstyle with light coloured hair and a hair-band
-75003	Trendy Hairstyle (Blue)	Trendy hairstyle with blue hair and a hair-band
-75004	Trendy Hairstyle (Brown)	Trendy hairstyle with brown hair and a hair-band
+75001	Trendy Hairstyle (Red)	Trendy hairstyle with red hair and a hairband.
+75002	Trendy Hairstyle (Light)	Trendy hairstyle with light coloured hair and a hairband.
+75003	Trendy Hairstyle (Blue)	Trendy hairstyle with blue hair and a hairband.
+75004	Trendy Hairstyle (Brown)	Trendy hairstyle with brown hair and a hairband.
 75005	Headband (Brown)	Short, tousled hair controlled with a headband
 75006	Headband (Blonde)	Short, tousled hair controlled with a headband
 75007	Headband (Blue)	Short, tousled hair controlled with a headband
@@ -2305,10 +2305,10 @@
 75202	Ponytail (Green)	Green hair with a nice, long ponytail
 75203	Ponytail (Blue)	Blue hair with a nice, long ponytail
 75204	Ponytail (Light)	Grey hair with a nice, long ponytail
-75205	Shoulder Length (Red)	A discreet hairstyle with a white headband
-75206	Shoulder Length (Brown)	A discreet hairstyle with a green headband
-75207	Shoulder Length (Light)	A discreet hairstyle with a light headband
-75208	Shoulder Length (Purple)	A discreet hairstyle with a red headband
+75205	Shoulder Length (Red)	A discreet hairstyle with a white headband.
+75206	Shoulder Length (Brown)	A discreet hairstyle with a green headband.
+75207	Shoulder Length (Light)	A discreet hairstyle with a light headband.
+75208	Shoulder Length (Purple)	A discreet hairstyle with a red headband.
 75209	Short Hair (Red)	A hairstyle that gives you a sinister look
 75210	Short Hair (Blue)	A hairstyle that gives you a sinister look
 75211	Short Hair (Black)	A hairstyle that gives you a sinister look
@@ -2364,24 +2364,24 @@
 76000	Peach Flower Wine	Beverage that will immediately regenerate your HP by 500 points. Not tradeable.
 76001	Status Reset Document	The use of this item allows you to redistribute your status points. You can use it to steer the development of your character into a new direction. Not tradeable.
 76002	Shrunken Head	This demon's Shrunken Head opens the seal to the 3rd floor of the Devil's Catacomb. Not tradeable.
-76003	Potion of Haste	This potion reduces cooldown time by 20 percent for 30 minutes. Not tradeable.
+76003	Potion of Haste	This potion reduces the cooldown time of your abilities by 20%.
 76004	Moon Elixir (S)	Automatically refills your SP. Contains 10,000 SP. Not tradeable.
 76005	Moon Elixir (M)	Automatically refills your SP. Contains 300,000 SP. Not tradeable.
 76006	Compass for Metin Stones	The compass shows you the position and distance to the next Metin Stone. The brighter it glows, the closer you are. It can be activated 6 times. Not tradeable.
 76007	Bravery Cape	Ancient Warriors showed off their bravery by wearing a colourful cape with which they attracted the attention of monsters. Not tradeable.
 76008	Medal of the Dragon	Protects you from a loss of experience points at your next revival. Not tradeable.
-76009	Dragon Scroll	Eliminates the risk of destroying an item if the improvement fails. Only its quality will be decreased by 1. Additionally, the probability of a successful improvement will increase by 10%. Not tradeable.
+76009	Dragon Scroll	Eliminates the risk of an item being destroyed when an improvement fails. In the case of failure, the item's quality is merely reduced by 1 instead. In addition, the chance of a successful improvement is increased by 10%. Not tradeable.
 76010	Blood Stone	This stone is made from the blood of Bahar-Taraji and grants you entrance into the Grotto of Exile. Not tradeable.
 76011	Book of the Leader	Provided the leader of a group has this book on them, all their group members will receive 30% more experience points. Not tradeable.
 76012	Potion of Speed	Boosts your motion speed by 60 for 30 minutes. Not tradeable.
 76013	Reinforce Item (b)	With a little luck, this will add a new bonus to one of your items (max. 4 bonuses). Item from the level chest, not tradeable.
 76014	Enchant Item (b)	Removes the bonuses from one of your items and adds new ones. Item from the level chest, not tradeable.
 76015	Blessing Marble	Legendary blessed marble. When an item has four attributes, it adds another attribute. Not tradeable.
-76016	Blessing Scroll	Reduces the risk of destroying an Item if the upgrade fails. The cost of this save is that the quality is reduced by 1 point. Not tradeable.
-76017	Potion of Attack +10	Increases your attack speed by 10% for 30 minutes. Not tradeable.
-76018	Potion of Attack +15	Increases your attack speed by 15% for 30 minutes. Not tradeable.
-76019	Passage Ticket	If you give this ticket to the guard, you will be allowed to enter a new floor of the Spider Dungeon as well as the Red Dragon Fortress. Not tradeable.
-76020	Researcher's Elixir	Improves the quality of the research objects which you have collected, thereby increasing the likelihood that they will be accepted. Not tradeable.
+76016	Blessing Scroll	Eliminates the risk of an item being destroyed when an improvement fails. In the case of failure, the item's quality is merely reduced by 1 instead. Not tradeable.
+76017	Potion of Attack +10	Increases your attack speed by 15%.
+76018	Potion of Attack +15	Increases your attack speed by 20%.
+76019	Passage Ticket	If you give this ticket to the responsible guard, you will be allowed to enter a new floor of selected dungeons. Not tradeable.
+76020	Researcher's Elixir	Improves the quality of the research objects which you have collected, thereby increasing the likelihood that they will be accepted. Does not apply to quests in Yohara. Not tradeable.
 76021	Sun Elixir (S)	Automatically refills your HP. Contains 100,000 HP. Not tradeable.
 76022	Sun Elixir (M)	Automatically refills your HP. Contains 3,000,000 HP. Not tradeable.
 76023	Green Magic	Removes the bonuses from one of your items and adds new ones. Can only be used on weapons and armour up to level 40. Item from the level chest, not tradeable.

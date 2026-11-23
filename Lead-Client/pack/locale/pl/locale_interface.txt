@@ -1,8 +1,8 @@
-ACCEPT	Akceptuj
+ACCEPT	OK
 ATTACH_METIN_INFO	Czy chcesz użyć Kamienia Duszy?
 ATTACH_METIN_TITLE	Użyj Kamienia Duszy
 CANCEL	Anuluj
-CHANGE_PASSWORD_CONFIRM	Potwierdź nowe Hasło
+CHANGE_PASSWORD_CONFIRM	Powtórz nowe hasło
 CHANGE_PASSWORD_NEW	Nowe Hasło
 CHANGE_PASSWORD_OLD	Stare Hasło
 CHANGE_PASSWORD_TITLE	Zmiana Hasła
@@ -51,7 +51,7 @@ EMPIRE_EXIT	Wyjdź
 EMPIRE_NEXT	Dalej
 EMPIRE_PREV	Wstecz
 EMPIRE_SELECT	Wybierz
-EXCHANGE_ACCEPT	Akceptuj
+EXCHANGE_ACCEPT	OK
 EXCHANGE_TITLE	Handel
 GAMEOPTION_TITLE	Opcje Gry
 GAME_EXIT_OBSERVER	Zakończ Obserwowanie
@@ -63,7 +63,7 @@ GRADE	Klasa
 GRADE_SELECT	Klasa
 GUILD_BASENAME	Podstawowa Nazwa
 GUILD_BOARD_ID	Nick
-GUILD_BOARD_REFRESH	Odśwież (F5)
+GUILD_BOARD_REFRESH	Odśwież
 GUILD_BOARD_TEXT	Wiadomość
 GUILD_BUILDING_CATEGORY_TITLE	Jednostki Budowlane
 GUILD_BUILDING_CHANGE	Zmień
@@ -78,7 +78,7 @@ GUILD_BUILDING_PLY	Dykta
 GUILD_BUILDING_POSITION	Miejsce
 GUILD_BUILDING_PREVIEW	Podgląd
 GUILD_BUILDING_PRICE	Cena
-GUILD_BUILDING_REFRESH	Odśwież (F5)
+GUILD_BUILDING_REFRESH	Odśwież
 GUILD_BUILDING_STONE	Kamień
 GUILD_BUILDING_TITLE	Budowa Siedziby Gildii
 GUILD_CRYSTAL	Kryształ
@@ -87,10 +87,10 @@ GUILD_DROP_RESOURCE2	Upuść Surowiec
 GUILD_GEM	Klejnot
 GUILD_GRADE_CHANGE_GRADE_NAME	Nowa nazwa Rangi
 GUILD_GRADE_NUM	Nr
-GUILD_GRADE_PERMISSION_DELETE	Usuń
-GUILD_GRADE_PERMISSION_JOIN	Zapraszanie
-GUILD_GRADE_PERMISSION_NOTICE	Pisanie
-GUILD_GRADE_PERMISSION_SKILL	Umiejętności
+GUILD_GRADE_PERMISSION_DELETE	Usuń z gildii
+GUILD_GRADE_PERMISSION_JOIN	Może przyjąć gracza do gildii
+GUILD_GRADE_PERMISSION_NOTICE	Może przypiąć notatkę gildii
+GUILD_GRADE_PERMISSION_SKILL	Umiejętności gildii
 GUILD_GRADE_RANK	Ranga
 GUILD_GRADE_WRITE	Napisz
 GUILD_INFO	Informacje o Gildii
@@ -111,12 +111,12 @@ GUILD_INFO_UPLOAD_MARK	Wgraj Logo
 GUILD_INFO_UPLOAD_SYMBOL	Wgraj Flagę
 GUILD_MARK	Znak Gildii
 GUILD_MEMBER_JOB	Klasa
-GUILD_MEMBER_KNIGHT	Lider
+GUILD_MEMBER_KNIGHT	Wojownik
 GUILD_MEMBER_LEVEL	Poziom
 GUILD_MEMBER_NAME	Nazwa
 GUILD_MEMBER_RANK	Ranga
 GUILD_MEMBER_SPECIFIC_GRAVITY	Inwest.
-GUILD_METIN_STONE	Kamień Metin
+GUILD_METIN_STONE	Kamień Duszy
 GUILD_MINENAL	Minerał
 GUILD_MONEY	Yang
 GUILD_NAME	Gildia
@@ -140,8 +140,8 @@ HELP_ATTACK_KEY	Atak: lewy przycisk myszy lub spacja
 HELP_CHANGE_PK_MODE	Zmiana trybu ataku: zmień akcję Lewego Przycisku Myszy
 HELP_CHARACTER_BUTTON1	(Okno Postaci, Ekwipunek
 HELP_CHARACTER_BUTTON2	oraz Lista Przyjaciół i Opcje)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Widok Kamery: środkowy lub prawy przycisk myszy.
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Widok Kamery: prawy oraz środkowy przycisk myszy.
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Domyślny widok z kamery: środkowy przycisk myszy
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Zmień ustawienie widoku z kamery: przypisz prawy lub lewy przycisk myszy
 HELP_EXP	Doświadczenie
 HELP_FURY	Sklep z Przedmiotami w grze
 HELP_GUILD_WINDOW	Otwórz Okno Gildii: ALT + G
@@ -160,7 +160,7 @@ HELP_OPEN_QUEST	Otwórz Okno Zadań: N
 HELP_OPEN_SKILL	Otwórz Okno Umiejętności: V
 HELP_OPEN_WHISPER	Otwórz Okno Szeptania: Shift + Enter
 HELP_OPEN_ZONEMAP	Otwórz Podgląd Mapy: M
-HELP_PICK_ITEM	Podnoszenie Przedmiotów: ` (tylda), Z lub Lewy Przycisk Myszki
+HELP_PICK_ITEM	Podnoszenie Przedmiotów: ` lub Z lub lewy przycisk myszki
 HELP_QUICKSLOT	Pole Szybkiego Dostępu
 HELP_SCREEN_CAPTURE	Zapisz Screenshota:  Print (Screen będzie zapisany w podkatalogu gry "Metin2\screenshot")
 HELP_SHOW_ALL_NAME	Pokaż Nazwy: Alt
@@ -178,12 +178,12 @@ LOGIN_SELECT_BUTTON	Wybierz
 LOGIN_SELECT_EXIT	Wyjdź
 LOGIN_SELECT_TITLE	Wybierz Serwer
 MALL_PASSWORD_TITLE	Hasło
-MALL_TITLE	Przedmioty z ItemShop
+MALL_TITLE	Magazyn ItemShopu
 MARKLIST_REFRESH	Odśwież
 MARKLIST_TITLE	Zarejestruj Znak Gildii
 MESSAGE	To jest Wiadomość
 MESSENGER_ADD_FRIEND	Dodaj przyjaciela
-MESSENGER_DELETE_FRIEND	Usuń przyjaciela
+MESSENGER_DELETE_FRIEND	Usuń
 MESSENGER_OPEN_GUILD	Otwórz Okno Gildii
 MESSENGER_TITLE	Przyjaciele
 MESSENGER_WHISPER	Szept

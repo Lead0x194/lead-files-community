@@ -1,7 +1,7 @@
 1	¿Estás seguro de que quieres luchar contigo mismo?Está bien, pero para eso no necesitas ninguna[ENTER]arena.[ENTER]¡Vuelve cuando estés listo para tomar esto[ENTER]seriamente!
 2	Iniciar una lucha de entrenamiento
 3	Tu compañero de entrenamiento no ha alcanzado[ENTER]todavía el nivel %s . Lo siento, pero no puedo[ENTER]permitir esta lucha.
-4	Para completar el acuerdo del entrenamiento de[ENTER]lucha, %s tiene que venir a[ENTER]verme.
+4	Se ha hecho el acuerdo de lucha de entrenamiento. %s todavía tiene que venir a verme.
 5	%s no está actualmente disponible.
 6	Decisión
 7	%s no quiere luchar contigo.
@@ -21,7 +21,7 @@
 21	¿No sabes con quién quieres luchar? Si no me das[ENTER]un nombre, no puedo inscribirte.
 22	Bien, %s. Te has inscrito para la lucha de entrenamiento contra %s.
 23	%s está esperando la aceptación del desafío con %s 
-24	Tú, %s, ¿quieres hacer una lucha de entrenamiento[ENTER]contra %s?
+24	%s, ¿quieres entrenar con %s?
 25	%s no está en línea de momento. Inténtalo de[ENTER]nuevo más tarde o queda con tu compañero de[ENTER]entremaniento.
 26	Quiero mejorar algo
 27	Herrero:
@@ -76,7 +76,7 @@
 76	Para cambiar de reino tienes que cumplir las[ENTER]siguientes condiciones:[ENTER]1. No puedes ser miembro de un gremio.[ENTER]2. No puedes estar casado.[ENTER]3. No puedes casarte enseguida.[ENTER]4. y necesitas 500.000 Yang para cambiar de[ENTER]reino. 500.000 Yang[ENTER]¿Quieres cambiar de reino?
 77	Con este objeto puedes cambiar tu reino.
 78	¡No puedes usar este objeto!
-79	Solo puedes cambiar de reino una vez
+79	Solo puedes cambiar de reino una vez.
 80	GM - ¿debe ponerse el tiempo a cero?
 81	El tiempo necesario ha sido fijado a cero.
 82	Personajes casados no pueden cambiar el reino.
@@ -329,7 +329,7 @@
 329	Los Recuerdos del Demonio
 330	Bolas de Hielo del Monte Sohan
 331	La petición del Biólogo
-332	El Biólogo Chaegirab, aprendiz de Uriel, está[ENTER]examinando el Monte Sohan en la parte occidental[ENTER]del continente. Necesita 20 Bolas de Hielo para[ENTER]su investigación. Llévale una cada vez, para que[ENTER]pueda examinarlas individualmente.[ENTER]Puedes conseguirlas de los Golem de Hielo.
+332	El Biólogo Chaegirab, aprendiz de Uriel, está[ENTER]examinando el Monte Sohan en la parte occidental[ENTER]del continente. Necesita 20 Bolas de hielo para[ENTER]su investigación. Llévaselas de una en una, para[ENTER]que pueda examinarlas individualmente.[ENTER]Las conseguirás de los Gólems de hielo.
 333	Has entregado %s Bolas de Hielo hasta ahora.
 334	No puedes utilizar todavía el Elixir del[ENTER]Investigador.
 335	¡Ya utilizaste un elixir!
@@ -539,7 +539,7 @@
 548	¡Hola, valiente guerrero! Has llegado justo a[ENTER]tiempo. Estoy buscando un cierto tipo de gema[ENTER]para realizar mis investigaciones de armas.[ENTER]¿Podrías ayudarme a buscarlas?[ENTER]Algunas criaturas en la Gruta del Exilio poseen[ENTER]estas gemas. Pero, yo soy una persona muy[ENTER]importante como para arriesgar mi vida en un[ENTER]lugar tan peligroso como ese.
 549	De momento necesito las Joyas de la Envidia, unas[ENTER]piedras preciosas que sólo pueden ser encontradas[ENTER]en las profundidades de esta montaña. Se trata de[ENTER]unos diamantes especiales que por largo tiempo[ENTER]han estado expuestos a la poderosa influencia del[ENTER]Dios Malvado Beran-Setaou, y que han absorbido[ENTER]una pequeña parte del su energía. Necesito 10[ENTER]ejemplares perfectos.[ENTER]¡Mucha suerte y hasta pronto!
 550	Joyas para Seon-Pyeong
-551	El herrero e investigador Seon-Pyeong necesita 10[ENTER]Joyas de la Envidia para su investigación sobre[ENTER]armas. Tráelas una tras otra para que las pueda[ENTER]examinar meticulosamente.[ENTER]Puedes obtenerlas de los Hombres de Hielo[ENTER]Infernal y de los Golems de Hielo Infernal.
+551	El herrero e investigador Seon-Pyeong necesita 10[ENTER]Joyas de la envidia para su investigación sobre[ENTER]armas. Tráelas de una en una para que las pueda[ENTER]examinar meticulosamente.[ENTER]Puedes obtenerlas de los Hombres de Hielo[ENTER]Infernal y de los Gólems de hielo Infernal.
 552	Has entregado %s joyas hasta ahora.
 553	No puedes utilizar todavía el Elixir del[ENTER]Investigador.
 554	¡Ya utilizaste un elixir!
@@ -691,7 +691,7 @@
 700	Estás en la puerta sellada en el tercer piso.[ENTER]Muchas piedras falsas estan esperando aquí para[ENTER]confundirte, pero una de ellas es un Metin muy[ENTER]importante. Tienes que destruirlo en menos de 15[ENTER]minutos o no podrás atravesar la puerta.
 701	10 minutos restantes
 702	5 minutos restantes
-703	¡Se acabó el tiempo!
+703	Se ha terminado el tiempo.
 704	Las piedras Metin falsas desaparecen...
 705	¡Quiero eliminar al Dragón!
 706	No eres el primero que me pide entrar.[ENTER]Dime el número secreto, de lo contrario no te[ENTER]dejo acceder.
@@ -702,7 +702,7 @@
 711	Ok, ahora fijaré el código:
 712	El código puede contener sólo cifras.
 713	¡El grupo de %s está intentando eliminar al[ENTER]Dragón Azul!
-714	¡No tienes suficientes llaves! Para activar el[ENTER]portal, necesito
+714	¡No tienes suficientes llaves! Para activar el[ENTER]portal, necesito 3 unidades de
 715	Puedes obtenerla de los capitanes malvados[ENTER]Yonghan y Huashin.
 716	Quiero abandonar este lugar
 717	Te llevaré de regreso a la entrada de la Gruta[ENTER]del Exilio.
@@ -1415,7 +1415,7 @@
 1475	¡Mientras estabas fuera han vuelto a saquear[ENTER]nuestro pueblo!
 1476	Medusa infernal
 1477	Zombi
-1478	Guerrero Llama
+1478	Guerrero llama
 1479	General Rana Toro
 1480	Requeridor Oscuro
 1481	Luchador Arahan Esotér.
@@ -1515,10 +1515,10 @@
 1575	Mata a la araña garra venenosa mientras montas a[ENTER]caballo. Si desmontas del caballo, fallas.
 1576	¡Mata al desierto proscrito!
 1577	Mata al desierto proscrito mientras montas a[ENTER]caballo.[ENTER]Si desmontas del caballo, fallas.
-1578	¡Mata al golem de hielo!
-1579	¡Mata un golem de hielo!
-1580	Mata al golem de hielo mientras montas a caballo.[ENTER]Si desmontas del caballo, fallas.
-1581	Mata al golem de hielo mientras montas a caballo.[ENTER]Si desmontas del caballo, fallas.
+1578	¡Mata al Gólem de hielo!
+1579	¡Mata un Gólem de hielo!
+1580	Mata al Gólem de hielo mientras montas a caballo.[ENTER]Si bajas del caballo, pierdes.
+1581	Mata al Gólem de hielo mientras montas a caballo.[ENTER]Si bajas del caballo, pierdes.
 1582	Mata a Bo mientas montas a caballo.[ENTER]Si bajas del caballo, fallas.
 1583	¡Mata al tigre luchador!
 1584	Mata al tigre luchador mientras montas a caballo.[ENTER]Si bajas del caballo, fallas.
@@ -1562,7 +1562,7 @@
 1622	Tortur.restantes
 1623	Arañas restantes
 1624	Band. restantes
-1625	Golems restantes
+1625	Gólems de hielo restantes
 1626	Tigres restantes
 1627	El nombre nuevo es demasiado largo.
 1628	Observar la constitución del caballo
@@ -2924,7 +2924,7 @@
 3003	Mata 15 soldados mono fuerte y 15 generales mono[ENTER]fuerte.
 3004	La localización de la mazmorra difícil de los[ENTER]monos ha sido finalmente encontrada. Normalmente,[ENTER]esos monos no son una amenaza, pero cuando se[ENTER]juntan, se pueden convertir en una amenaza para[ENTER]nuestro reino. Ve a la mazmorra difícil de los[ENTER]monos y descubre qué está pasando.
 3005	El hielo se derretirá algún día
-3006	Mata 25 golems de hielo en la montaña Sohan.
+3006	Mata 25 Gólems de hielo en el Monte Sohan.
 3007	¿Conoces la montaña Sohan que está cubierta de[ENTER]hielo? Muchos exploradores y guerreros fueron[ENTER]allí, pero nunca volvieron. Descubre el motivo de[ENTER]su desaparición y si fueron atacados. Quizá[ENTER]puedas descubrir algo más si capturas algunos[ENTER]monstruos allí.
 3008	El secreto de la mazmorra difícil de los monos 1
 3009	Mata 30 soldados mono fuerte y 30 lanzadores mono[ENTER]fuerte.
@@ -2962,9 +2962,9 @@
 3041	Examina las Llamas
 3042	Mata 40 Llamas.
 3043	Las Llamas son increíblemente brutales. Disfrutan[ENTER]del dolor de la gente a la que devoran la piel.[ENTER]Aun no sabemos cómo matarlos. ¿Podrías[ENTER]averiguarlo?
-3044	Guerrero Llama
-3045	Mata 60 Guerreros Llama
-3046	No hace mucho tiempo, el hijo de un noble que se[ENTER]adentró en el Tierra de Fuego fue asesinado por[ENTER]un guerrero llama. Si matas a los guerreros[ENTER]llama, serás recompensado. ¿Por qué no lo[ENTER]intentas?
+3044	Guerrero llama
+3045	Mata 60 Guerreros llama.
+3046	No hace mucho tiempo, el hijo de un noble que se[ENTER]adentró en el Tierra de Fuego fue asesinado por[ENTER]un Guerrero llama. Si acabas con los Guerreros[ENTER]llama, te llevarás una recompensa. ¿Por qué no lo[ENTER]intentas?
 3047	Examina los árboles fantasma
 3048	Destruye 30 árboles fantasma.
 3049	Normalmente, son como simples árboles - y[ENTER]entonces, de repente, atacan animales y humanos.[ENTER]Su número está incrementando. Descubre cómo[ENTER]podemos destruir a los árboles fantasma
@@ -3627,7 +3627,7 @@
 3706	%d día(s) y %d hora(s).
 3707	%d minuto/s y %d segundo/s
 3708	%d minuto/s y %d segundo/s
-3709	%d segundo/s
+3709	%d s
 3710	Mujer
 3711	Deberías tener más respecto a la vejez. No[ENTER]obstante, te deseo buena suerte para el Año[ENTER]Nuevo.
 3712	Felicidades para el Año Nuevo
@@ -4575,10 +4575,10 @@
 4661	¿El monarca de la Tierra de hielo? Hmmm... Se[ENTER]referirá al Monte Sohan.[ENTER]Le voy a mostrar tus notas a los magos de los[ENTER]Guerreros de las Sombras para que me den su[ENTER]opinión sobre ellas.[ENTER]¡Te avisaré en cuanto sepa más!
 4662	Toma esto como recompensa por todo lo que has[ENTER]hecho. ¡Sigo contando con tu ayuda!
 4663	Tesoro gélido
-4664	El comandante Lee Chung te ha comunicado que el[ENTER]primer elemento necesario para fabricar la[ENTER]Lágrima Celestial, la Esencia de Cristal Azul, se[ENTER]debe de tratar del legendario tesoro de Nueve[ENTER]Colas del Monte Sohan.[ENTER]Lo vigilan atentamente Golems de Hielo, Yetis y[ENTER]Hombres de Hielo Glaciales. Da caza a esos[ENTER]monstruos para hacerte con la codiciada Esencia[ENTER]de Cristal Azul.[ENTER]Habla de nuevo con Lee Chung antes de lanzarte a[ENTER]la batalla.
+4664	El comandante Lee Chung te ha comunicado que el[ENTER]primer elemento necesario para fabricar la[ENTER]Lágrima celestial, la Esencia de cristal azul, se[ENTER]debe de tratar del legendario Tesoro de Nueve[ENTER]Colas del Monte Sohan.[ENTER]Lo vigilan atentamente Gólems de hielo, Yetis y[ENTER]Hombres de hielo glaciales. Da caza a esos[ENTER]monstruos para hacerte con la codiciada Esencia[ENTER]de cristal azul.[ENTER]Habla de nuevo con Lee Chung antes de lanzarte a[ENTER]la batalla.
 4665	Los magos de los Guerreros de las Sombras han[ENTER]descubierto que el temible Nueve Colas del Monte[ENTER]Sohan guarda la Esencia de Cristal Azul como oro[ENTER]en paño.
 4666	Lee Chung, el comandante de los Guerreros de las[ENTER]Sombras, quiere hablar contigo. Ha descubierto[ENTER]cómo vencer a los Agwi de la Catacumba del[ENTER]Diablo.
-4667	Golems de Hielo, Yetis y Hombres de Hielo[ENTER]Glaciales custodian el tesoro de Nueve Colas.[ENTER][ENTER]Se necesitan 50 Esencias de Cristal Azul para[ENTER]fabricar la Lágrima Celestial.
+4667	Gólems de Hielo, Yetis y Hombres de hielo[ENTER]glaciales custodian el Tesoro de Nueve Colas.[ENTER][ENTER]Se necesitan 50 Esencias de cristal azul para[ENTER]fabricar la Lágrima celestial.
 4668	Se cree que el Cuarzo Rojo Infernal se puede[ENTER]encontrar o bien en el Templo Hwang o bien en la[ENTER]Tierra de Fuego.[ENTER]He enviado a un explorador para que investigue[ENTER]más.
 4670	Registras el cadáver del monstruo derrotado y[ENTER]descubres una piedra preciosa que refulge con un[ENTER]brillo azulado.[ENTER]Esta debe de ser la Esencia de Cristal Azul.
 4671	Aún tienes que encontrar %d Esencia(s) de Cristal[ENTER]Azul.
@@ -4606,7 +4606,7 @@
 4693	Sí, en efecto.
 4694	¡Ah, estupendo! Entonces llévale los tres[ENTER]elementos. Él seguramente sepa elaborar la[ENTER]Lágrima Celestial.
 4695	Te aguarda un viaje agotador. Por favor, toma[ENTER]esta recompensa por las molestias.
-4696	Lee Chung, el comandante de los Guerreros de las[ENTER]Sombras, ha descubierto más acerca del Cuarzo[ENTER]Rojo Infernal. Para fabricarlo se necesitan tres[ENTER]sustancias diferentes: Tierra Volcánica de[ENTER]Doyyumhwan, Melena Llameante y Piedra Fundación.[ENTER]Da caza a Llamas, Guerreros Llama y Tigres[ENTER]Luchadores para conseguirlas y crea con ellas 20[ENTER]unidades del Cuarzo Rojo Infernal.[ENTER]Habla de nuevo con Lee Chung antes de lanzarte a[ENTER]la batalla.
+4696	Lee Chung, el comandante de los Guerreros de las[ENTER]Sombras, ha descubierto más acerca del Cuarzo[ENTER]rojo infernal.[ENTER]Para fabricarlo se necesitan tres sustancias[ENTER]diferentes: Tierra volcánica de Doyyumhwan,[ENTER]Melena llameante y Piedra fundación. Da caza a[ENTER]Llamas, Guerreros llama y Tigres luchadores de la[ENTER]Tierra de Fuego para conseguirlas y crea con[ENTER]ellas 20 unidades del Cuarzo rojo infernal.[ENTER]Habla de nuevo con Lee Chung antes de lanzarte a[ENTER]la batalla.
 4697	Lágrima Celestial
 4698	Vuelve a tu ciudad natal, busca a Baek-Go y[ENTER]pídele en nombre de Lee Chung que fabrique la[ENTER]Lágrima Celestial a partir de los tres elementos.
 4699	Has estado ausente mucho tiempo. Ya comenzaba a[ENTER]preguntarme si te habría pasado algo. ¿Qué te[ENTER]trae hasta aquí?
@@ -6009,13 +6009,13 @@
 6146	Diario de una Leyenda
 6147	Encontré los restos de un guerrero. No sé si se[ENTER]trata del Sura que Heuk-Young está buscando, pero[ENTER]seguro le interesará.
 6148	Seguramente aquí ha muerto más de un Sura. Yo he[ENTER]visto sus restos. ¿Será que ese legendario[ENTER]guerrero está entre ellos? Creo que debería ir[ENTER]decirle a Heuk-Young.
-6149	Encontré un antiguo pedazo de papel congelado en[ENTER]un Golem de Hielo Infernal. Apenas lo puedo leer,[ENTER]pero podría tratarse de un indicio que le[ENTER]interesaría a Heuk-Young.
+6149	Encontré un antiguo pedazo de papel congelado en[ENTER]un Gólem de hielo infernal.[ENTER]Apenas lo puedo leer, pero podría tratarse de un[ENTER]indicio que le interesaría a Heuk-Young.
 6150	Entretanto he encontrado algo que le podría[ENTER]interesar a Heuk-Young. Debería ir a verla y[ENTER]llevarle este pedazo de papel. Y de una vez le[ENTER]podría contar también del cadáver.
 6151	Heuk-Young me pidió abrir bien los ojos y captar[ENTER]cualquier indicio sobre ese legendario Sura.[ENTER]Lastimosamente no tengo ni la más mínima idea de[ENTER]la cosa que estoy buscando...
 6152	Busca al legendario guerrero Akuma. Él fue el[ENTER]Sura más famoso de todos los tiempos - un[ENTER]guerrero casi invencible. Se dice que le desafío[ENTER]incluso al emperador. Creo que este lugar es[ENTER]lugar donde Akuma desapareció hace muchos siglos.[ENTER]Busca atentamente cualquier indico que pueda[ENTER]testimoniar su estancia aquí.
 6154	Examinar guerreros caídos
 6155	Se trata de los restos de un guerrero. Pero, el[ENTER]brazo izquierdo no parece ser de un humano...[ENTER]debe ser un Sura. Tengo que contarle esto a[ENTER]Heuk-Young
-6156	Una página del libro... congelada en los restos[ENTER]de un Golem de Hielo Infernal...
+6156	Una página del libro... congelada en los restos[ENTER]de un Gólem de hielo infernal...
 6157	No puedo decir exactamente qué estamos buscando.[ENTER]Echa un vistazo alrededor y regresa cuando hayas[ENTER]encontrado algo.
 6158	¿Qué tienes ahí? ¡Déjame ver!
 6159	Una nota... ¿qué tipo de escritura es está? Debe[ENTER]ser muy antigua. Podría ser que has encontrado[ENTER]algo realmente importante. Sea como sea, me[ENTER]parece ya conocer lo que está escrito aquí.[ENTER]Pareciese como si esta página habría sido una[ENTER]parte del libro.
@@ -6046,9 +6046,9 @@
 6184	No falta mucho. ¿Quieres saber lo que descubierto[ENTER]hasta ahora?
 6185	Parece que no faltan muchas páginas.
 6186	¿Quieres saber lo que he encontrado hasta ahora?
-6187	Encontré la última página del libro en el Golem[ENTER]de Hielo Infernal.
+6187	Encontré la última página del libro en el Gólem[ENTER]de hielo infernal.
 6188	¡Ahora las páginas deben estar completas!
-6189	Encontré una página del libro en el Golem de[ENTER]Hielo Infernal.
+6189	Encontré una página del libro en el Gólem de[ENTER]hielo infernal.
 6190	¡Encontré una página!
 6191	Requisar guerreros caídos
 6192	Junto a los restos humanos se hallan 3 páginas[ENTER]del pergamino casi destrozado. Los bordes[ENTER]dentados indican que han sido sacados de un[ENTER]libro. La escrita sobre está desvanecida y es[ENTER]difícil de descifrar.
@@ -6897,7 +6897,7 @@
 7073	¿Qué te trae por aquí? ¿El ratón de biblioteca te[ENTER]envía? Lo único que hace es leer. Ojalá aprenda[ENTER]algo de sus libros. Siempre me está molestando.[ENTER]Bueno, ¡dime qué quiere saber esta vez!
 7074	¿Quiere que le liste los tipos de abanicos según[ENTER]su valor de ataque? Eso es más bien fácil: Fan[ENTER]Pájaro Divino, Triple Fan, Fan Acuático y Fan Ala[ENTER]Grulla. ¿Lo tienes?
 7075	Vuelve con Soon
-7076	Volver con Soon
+7076	Vuelve con Soon
 7077	Vuelve con Soon y dale la información.
 7078	Un favor para Soon.
 7079	Así pues, ¿te ha dado Uriel una respuesta clara?
@@ -7487,7 +7487,7 @@
 7667	Sí, ¿por qué no me ayudas? ¿Por qué no coges la[ENTER]flor para mí? Eso nos ayudaría a ambos. ¿Eh? ¿Ese[ENTER]no era el trato? Vamos, ¿no ves cuánto intento[ENTER]conseguir su amor? ¡Solo ayúdame! Te recompensaré[ENTER]con mucho Yang.
 7668	Declinar
 7669	Oh mi amada Ariyoung
-7670	¿Quieres abandonar esta misión?
+7670	¿Quieres abandonar la misión para siempre?
 7671	Maldición. ¿Cómo se supone que voy a conseguir[ENTER]esas Flores?[ENTER]Por favor, vuelve si cambias de opinión.
 7672	¿Nunca has amado? ¿No tienes idea de lo que[ENTER]siento por Ariyoung? Oh Ariyoung...
 7673	¡Muchas gracias! Por favor, tráeme esa flor.
@@ -7658,7 +7658,7 @@
 7838	Hola, ¿tienes un minuto para mi?[ENTER]Aprecio mucho que me ayudaras a hacer un arma[ENTER]nueva. Ahora me gustaría pedirte ayuda de nuevo.[ENTER]Esta vez quiero hacer una nueva armadura. Después[ENTER]de haber hecho un arma nueva, es obvio que[ENTER]también necesito una buena armadura.
 7839	Por supuesto necesito materiales para hacer la[ENTER]armadura nueva. ¿Puedes conseguírmelos? A cambio[ENTER]recibirás la primera armadura completa. Esta vez[ENTER]necesito 100 de Mineral de Cobre, 100 de Mineral[ENTER]de Ébano y 100 Piezas de Perla. Ya deberías[ENTER]saberlo. ¡Te deseo lo mejor!
 7840	Aceptar
-7841	¿Quieres abandonar esta misión?
+7841	¿Quieres abandonar la misión para siempre?
 7842	¿Por qué estás dudando? Vuelve cuando estés listo[ENTER]para trabajar en las minas.
 7843	Esa pequeña cantidad de mineral no es pedir[ENTER]mucho. Bueno, allá tú. ¡Piérdete!
 7844	¿Me ayudarás otra vez? Eres un buen amigo.[ENTER]Y no te preocupes: ¡la primera armadura es tuya!
@@ -7832,7 +7832,7 @@
 8012	Soon me envía...
 8013	Hey, ¿vuelves a ayudarme de nuevo? Ahh. Quieres[ENTER]el libro para Soon. Habría ido pronto a la ciudad[ENTER]de todos modos, pero es muy impaciente y le pide[ENTER]a otros que lo recojan. Hmm. Aquí está. No[ENTER]entiendo qué le gusta a Soon de este montón de[ENTER]papeles. ¡Es mucho más importante ganar Yang[ENTER]rápidamente!
 8014	Volver con Soon
-8015	Volver con Soon
+8015	Vuelve con Soon
 8016	Has conseguido el libro de Soon de Peddler.[ENTER]Vuelve con Soon y entrégale el libro para que te[ENTER]diga cómo hacer Porcelana Celadon.
 8017	Tengo el libro
 8018	¡Sí! ¡Al fin tengo el libro nuevo! Muchas[ENTER]gracias. No hay muchos libros que no haya[ENTER]leído... He escrito lo que es importante para[ENTER]hacer Porcelana Celadon. Sigue mis notas y[ENTER]producirás porcelana fantástica. Es mi hora de[ENTER]leer el libro nuevo. Adiós.
@@ -7917,7 +7917,7 @@
 8097	Le das la medicina a Balso.
 8098	La medicina de Balso
 8099	Baek-Go ha hecho medicina de la Hierba de Monos[ENTER]Difícil que puede curar muchas enfermedades[ENTER]raras. Llévasela al Traidor Balso en la aldea[ENTER]vecina.
-8100	¿Quieres abandonar esta misión?
+8100	¿Quieres abandonar la misión para siempre?
 8101	Aquí está la medicina
 8102	¿Me traes la medicina nueva? ¿Ha habido progresos[ENTER]en investigación médica? Siento causarte[ENTER]molestias. Debería haber pedido consejo a un[ENTER]médico desde el principio. Sin embargo, tengo que[ENTER]aceptar que debo tomar esta medicina ahora.
 8103	Gracias por ayudarme a salir de mi miserable[ENTER]condición. No tengo muchos amigos. Toma, sé que[ENTER]no es mucho, pero te lo doy de corazón. Por favor[ENTER]acéptalo. Si alguna vez lo logro, nunca te[ENTER]olvidaré.
@@ -8045,7 +8045,7 @@
 8226	Aceptar
 8227	Taurean te da una recompensa por ayudarle a[ENTER]mentir: has recibido 30.000 Yang.
 8228	Has recibido 700.000 puntos de experiencia.
-8229	¿Quieres abandonar esta misión?
+8229	¿Quieres abandonar la misión para siempre?
 8230	¿Por qué no? ¿Tienes miedo?[ENTER]Visítame cuando hayas cambiado de opinión.
 8231	Aaah, ¿tienes miedo?[ENTER]¡Pero eres mucho más alto y fuerte que yo![ENTER]Jaja, ¡eres un cobarde! Entonces tendré que[ENTER]pedírselo a otro.
 8232	Las arañas viven en el desierto. Tú eres fuerte.[ENTER]Seguro de que puedes hacerlo. ¡Buena suerte!
@@ -8087,14 +8087,14 @@
 8268	Puedes conseguir la Arena del Desierto de los[ENTER]Bandidos del Desierto, el Mineral Cristal de las[ENTER]vetas de cristal y para conseguir la Sangre de[ENTER]Mono, tendrás que matar monos en Sansung Dong.[ENTER]¿Puedes conseguir esos materiales para mí? Lo sé,[ENTER]no será fácil pero te recompensaré generosamente.
 8269	Aceptar
 8270	Declinar
-8271	¿Quieres abandonar esta misión?
+8271	¿Quieres abandonar la misión para siempre?
 8272	Si estas demasiado ocupado ahora, vuelve más[ENTER]tarde.
 8273	¿Lo dejas? ¿En serio? Entonces supongo que tendré[ENTER]que buscarlo todo yo mismo. Realmente necesito[ENTER]esta porcelana. Adiós y buena suerte.
 8274	¡Ah! Ya está.
 8276	Capitán
 8277	No lo sé.
 8278	Enséñamelo otra vez.
-8279	¿Quieres abandonar esta misión?
+8279	¿Quieres abandonar la misión para siempre?
 8280	Piénsalo de nuevo y vuelve más tarde. ¡Pero no se[ENTER]lo cuentes a nadie!
 8281	¡Oh cielo! ¿Tan difícil es? Eras mi última[ENTER]esperanza... ¿Quién va a descifrarlo ahora?
 8282	Bien, pero rápido. De otro modo alguien[ENTER]sospechará...[ENTER][ENTER]GMEIENSO[ENTER]STIVOS[ENTER]NE[ENTER]OHZENORIT
@@ -8123,7 +8123,7 @@
 8306	Sí, ¡tienes razón! Ahora también lo entiendo.[ENTER]Estoy orgulloso de ti. ¡Eres uno de nuestros[ENTER]mejores soldados! Esta frase es una contraseña[ENTER]concertada. Significa que Yu-Hwan ha descubierto[ENTER]a los espías enemigos y hemos tomado acciones[ENTER]contra ellos. Daré las órdenes necesarias[ENTER]inmediatamente.
 8307	Has recibido 20.000 Yang.
 8308	Lo averiguarás. ¡Vuelve cuando estés listo!
-8309	¿Quieres abandonar esta misión?
+8309	¿Quieres abandonar la misión para siempre?
 8310	Pero... la última vez, lo hiciste.[ENTER]¿Por qué estás dudando? Por favor, replantéatelo.
 8311	Sé a lo que te refieres.[ENTER]No quieres volver a trabajar con nosotros, ¿no?[ENTER]Es una lástima. No hay muchos guerreros valientes.
 8312	¡Oh! ¡Eres mi salvador! Mira, este es el código.[ENTER]¡Míralo bien!
@@ -8173,7 +8173,7 @@
 8356	¿Por qué lo preguntas? ¿Porque Taurean y Harang[ENTER]están discutiendo? Eso no es nuevo. Pero Harang[ENTER]tiene razón. El Bingsu es una comida[ENTER]especialmente popular en los veranos calurosos.[ENTER]Taurean es un buen chico en realidad, incluso[ENTER]siendo un poco mezquino a veces. Si consigues los[ENTER]ingredientes, podría hacerle Bingsu.
 8357	¿Bingsu?
 8358	Me gustaría darle un regalo a Taurean y darle[ENTER]Bingsu. ¿Qué piensas? ¿Puedes ir a conseguir[ENTER]Hielo del Monte Sohan?
-8359	¿Quieres abandonar esta misión?
+8359	¿Quieres abandonar la misión para siempre?
 8360	¿No quieres helado? ¿O ya has comido mucho? Es[ENTER]para Taurean, así que por favor piénsatelo de[ENTER]nuevo.
 8361	Lástima. Taurean va a estar muy decepcionado.[ENTER]Nos vemos.
 8362	Muy bien. Necesito Pedazos de Hielo de los Hielos[ENTER]Encantados del Monte Sohan. Tráeme 50 Pedazos de[ENTER]Hielo. Entonces podré hacer un sabroso Bingsu.

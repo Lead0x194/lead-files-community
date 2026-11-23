@@ -7,12 +7,12 @@ CANNOT_EQUIP_IN_SHOP	You cannot change your equipment whilst trading.
 CANNOT_OPEN_PRIVATE_SHOP_IN_SAFE_AREA	You cannot open a private shop in a public area.
 CANNOT_SHOOT_DEST_IN_SAFE	The enemy is too far away.	
 CANNOT_SHOOT_EMPTY_ARROW	I need an arrow.	
-CANNOT_SHOOT_SELF_IN_SAFE	I cannot attack my opponent from here. 	
+CANNOT_SHOOT_SELF_IN_SAFE	I cannot attack my opponent from here.	
 CANNOT_SKILL_APPROACH	I am sure that I cannot get any closer.	
 CANNOT_SKILL_ATTACK	I cannot attack that.	
 CANNOT_SKILL_DEST_IN_SAFE	The opponent is too far away.	
-CANNOT_SKILL_EQUIP_FISHING_ROD	I need a Fishing Pole.
-CANNOT_SKILL_HAVE_TO_RIDE	I need a Horse to be able to use this. 	
+CANNOT_SKILL_EQUIP_FISHING_ROD	You cannot fish without a fishing rod equipped.
+CANNOT_SKILL_HAVE_TO_RIDE	I need a Horse to be able to use this.	
 CANNOT_SKILL_NEED_EMPTY_BOTTLE	I do not have an empty bottle.	
 CANNOT_SKILL_NEED_POISON_BOTTLE	I do not have a Poison Bottle.	
 CANNOT_SKILL_NEED_TARGET	Who is the target?	
@@ -30,7 +30,7 @@ CANNOT_SKILL_WAIT_COOLTIME	I cannot use this skill yet.
 CANNOT_USE	You cannot use this.
 CANNOT_WHISPER_DEST_REFUSE	%s has blocked whispering.	SA
 CANNOT_WHISPER_NOT_LOGON	%s is not online.	SA
-CANNOT_WHISPER_SELF_REFUSE	You cannot whisper something to someone when you have completely blocked whispering. 	SNA
+CANNOT_WHISPER_SELF_REFUSE	You cannot whisper something to someone when you have completely blocked whispering.	SNA
 CHANNEL_EMPTY_SERVER	No server	
 CHANNEL_NORMAL	Channel %d	
 CHANNEL_NOTIFY_FULL	This channel is full! Please choose another one.
@@ -46,10 +46,10 @@ CHAT_INSULT_STRING	This sentence has invalid words in it.
 CHAT_LOG	Show old messages [L]	
 CHAT_LOG_TITLE	Chat-log	
 CHAT_NORMAL	Normal	
-CHAT_NOTICE	Announcement	
+CHAT_NOTICE	Server	
 CHAT_PARTY	Group	
 CHAT_SEND_CHAT	Send chat	
-CHAT_SEND_MEMO	Send whisper[Shift+Enter]	
+CHAT_SEND_MEMO	Send whisper [Shift+Enter]	
 CHAT_SHOUT	Call	
 CHAT_SHOUT_LIMIT	You can only call every 15 seconds.	
 CREATE_ERROR_GM_NAME	You are not allowed to use 'GM' in your character name.	
@@ -58,12 +58,12 @@ CREATE_EXIST_SAME_NAME	Another character already has this name.
 CREATE_FAILURE	You cannot create the character	
 CREATE_GM_NAME	GM	
 CREATE_INPUT_NAME	Enter the name.	
-DAY	Days	
-DO_YOU_BUY_ITEM1	Do you want to buy %s for %s?	
-DO_YOU_BUY_ITEM2	Do you want to buy %s %s for %s?	
+DAY	d	
+DO_YOU_BUY_ITEM1	Do you want to buy %s for %s Yang?	
+DO_YOU_BUY_ITEM2	Do you want to buy %s (%s pieces) for %s Yang?	
 DO_YOU_DROP_MONEY	Do you want to drop %d Yang?
-DO_YOU_SELL_ITEM1	Do you want to sell %s for %s?	
-DO_YOU_SELL_ITEM2	Do you want to sell %s %s for %s?
+DO_YOU_SELL_ITEM1	Do you want to sell %s for %s Yang?	
+DO_YOU_SELL_ITEM2	Do you want to sell %s (%s pieces) for %s Yang?
 DRAGON_SOUL_CANNOT_REFINE	This Dragon Stone cannot be refined.
 DRAGON_SOUL_CANNOT_REFINE_MORE	This Dragon Stone has already reached the highest level.
 DRAGON_SOUL_EQUIP_WARNING1	It is difficult to remove a Dragon Stone once it is attached.
@@ -117,7 +117,7 @@ EXCHANGE_FAILURE_EQUIP_ITEM	You cannot exchange equipped Items.
 EXCHANGE_MONEY	Sum	
 EXCHANGE_TITLE	Trade with %s
 FISHING_FAILURE	You lost the Bait.	
-FISHING_NOTIFY1	It looks like  %s is hooked.	
+FISHING_NOTIFY1	It looks like %s is hooked.	
 FISHING_NOTIFY2	It looks like %s is on the hook.	
 FISHING_SUCCESS1	You captured %s!	
 FISHING_SUCCESS2	You have pulled %s out of the water!	
@@ -144,7 +144,7 @@ GUILDMARK_UPLOADER_ERROR_64_WIDTH	Width is not 64 Pixel
 GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	The game does not support this picture.	
 GUILDMARK_UPLOADER_ERROR_PATH	Move the data into the folder metin2/upload.	
 GUILDMARK_UPLOADER_ERROR_SELECT	No picture file chosen.	
-GUILDWAR_CTF_TITLE	Flag captured.	
+GUILDWAR_CTF_TITLE	Capture the Flag	
 GUILDWAR_NORMAL_TITLE	Field Battle	
 GUILDWAR_WARP_TITLE	Arena Battle
 GUILD_BUILDING_GRADE	Rank	
@@ -154,7 +154,7 @@ GUILD_COMMENT	Write
 GUILD_CREATE_ERROR_INSULT_NAME	Guildname is not valid.	
 GUILD_DEFAULT_GRADE	Guild members	
 GUILD_DELETE	Delete	
-GUILD_DO_YOU_HEAL_GSP	Do you want to restore %d units of Dragon Ghost for %d Yang?
+GUILD_DO_YOU_HEAL_GSP	Do you want to use %d Yang to restore %d units of Dragon Ghost?
 GUILD_DO_YOU_JOIN	 has invited you. Do you want to join the guild?
 GUILD_EMPTY_AREA	Empty land	
 GUILD_FACILITY	Outbuilding	
@@ -170,11 +170,11 @@ GUILD_NO_NOTICE_PERMISSION	You do not have the rights to make an announcement.
 GUILD_OBJECT	Objects	
 GUILD_OFFER_EXP	Invest experience
 GUILD_SHORT_EXP	Not enough experience points.
-GUILD_TILE_BASEINFO	Basic Information	
-GUILD_TILE_BOARD	Blackboard	
+GUILD_TILE_BASEINFO	Territory Information	
+GUILD_TILE_BOARD	Guild Messages	
 GUILD_TILE_GRADE	Rights Administration	
 GUILD_TILE_INFO	Guild Information	
-GUILD_TILE_MEMBER	Guild Members	
+GUILD_TILE_MEMBER	Member	
 GUILD_TILE_SKILL	Guild Skills	
 GUILD_WAR_LIMIT_30MIN	Time: 30 Minutes	
 GUILD_WAR_REWARD_POTION	Reward: The winner receives a Potion	
@@ -192,12 +192,12 @@ HORSE_HEALTH3	Full
 HORSE_LEVEL1	Normal Horse
 HORSE_LEVEL2	Battle Horse
 HORSE_LEVEL3	Military Horse
-HOUR	Hours	
+HOUR	hr	
 HOW_MANY_ITEM_DO_YOU_DROP1	Do you want to drop %s?	
 HOW_MANY_ITEM_DO_YOU_DROP2	Do you want to drop %s %d?	
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Enter deletion-code from your account settings here.	
 INPUT_PRIVATE_CODE_DIALOG_TITLE	Delete character	
-INVENTORY_REALLY_USE_ITEM	Do you want to use this Item?	
+INVENTORY_REALLY_USE_ITEM	Use item on this item?	
 JOB_ASSASSIN	Ninja	
 JOB_SHAMAN	Shaman	
 JOB_SURA	Sura	
@@ -205,16 +205,16 @@ JOB_WARRIOR	Warrior
 LEFT_TIME	Time Remaining	
 LOGIN_CONNECT_FAILURE	Error while connecting to the server.	
 LOGIN_CONNECT_SUCCESS	You have been connected to the server.
-LOGIN_CONNETING	You will be connected to the server...
+LOGIN_CONNETING	Please wait while you are connected to the server.
 LOGIN_FAILURE_ALREAY	Your account is already connected.	
 LOGIN_FAILURE_BE_SAME_KEY	Registration problem.	
-LOGIN_FAILURE_BLOCK_ID	Your account is banned.	
-LOGIN_FAILURE_BLOCK_LOGIN	Please choose one of the other servers!
-LOGIN_FAILURE_NOBILL	Your account had no play time.	
-LOGIN_FAILURE_NOT_AVAIL	Your account cannot be used.	
+LOGIN_FAILURE_BLOCK_ID	This account has been blocked.	
+LOGIN_FAILURE_BLOCK_LOGIN	Closed server: only accounts created before the closure may enter. Please choose another one!
+LOGIN_FAILURE_NOBILL	The account has no playing time.	
+LOGIN_FAILURE_NOT_AVAIL	The account is not available.	
 LOGIN_FAILURE_NOT_EXIST_ID	Account name or password incorrect.
 LOGIN_FAILURE_REPAIR_ID	Items have been restored for this account.	
-LOGIN_FAILURE_SAMELOGIN	Someone has logged in to your account.
+LOGIN_FAILURE_SAMELOGIN	Somebody has connected to your account.
 LOGIN_FAILURE_SHUTDOWN	The server is not open yet.	
 LOGIN_FAILURE_TOO_MANY_USER	You could not connect because too many players are online.	
 LOGIN_FAILURE_UNKNOWN	You could not register for unknown reasons.	
@@ -266,7 +266,7 @@ MINIMAP_DEC_SCALE	Zoom out
 MINIMAP_INC_SCALE	Zoom in	
 MINIMAP_OBSERVER_COUNT	%d observers	
 MINIMAP_SHOW_AREAMAP	Open Large Map	
-MINUTE	Minutes	
+MINUTE	min	
 MONETARY_UNIT0	Yang
 MONEY_INPUT_DIALOG_SELLPRICE	Sales Price:	
 MOVE_ITEM_FAILURE_PRIVATE_SHOP	You cannot move items while you have a private shop open.
@@ -287,7 +287,7 @@ PARTY_BONUS_SKILL_MASTER	Max. SP: +%d	SA
 PARTY_BONUS_TANKER	Max. HP: +%d	SA
 PARTY_BREAK_UP	Delete Group	
 PARTY_DO_YOU_ACCEPT	 would like to join the Group.	
-PARTY_DO_YOU_JOIN	 has invited you to join his group. Accept?
+PARTY_DO_YOU_JOIN	 has invited you to join a group. Accept?
 PARTY_EXP_DISTRIBUTION_MODE	EXP Distribution	
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL	Level dependant
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Higher level group members receive more EXP.
@@ -348,23 +348,23 @@ QUICKSLOT_REGISTER_DISABLE_ITEM	This Item cannot be added to the Fast Access Fie
 RECEIVE_MESSAGE	%s sent you a message.	
 REFINE_COST	Costs for Advancement: %s
 REFINE_DESTROY_WARNING	This Item could be destroyed while upgrading.	
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	This will improve the chance for upgrading,
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	but if you fail the Item could be destroyed. /n Do you want to continue?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Do you really want to upgrade this item?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	If you fail, the item will be destroyed. Do you want to continue?
 REFINE_DOWN_GRADE_WARNING	The Item could be down graded this way.	
 REFINE_DO_YOU_SEPARATE_METIN	Do you want to remove all available spirit stones?
-REFINE_FAILURE	You failed.	
+REFINE_FAILURE	Oh no, that didn't work! We've failed.	
 REFINE_FAILURE_CAN_NOT_ATTACH	%s cannot be included in that Item.	
 REFINE_FAILURE_EQUIP_ITEM	You cannot upgrade equipped Items.
 REFINE_FAILURE_METIN_INSEPARABLE_ITEM	No spirit stone can be taken away.	
 REFINE_FAILURE_NEED_BETTER_SCROLL	You need a better Advancement Scroll.	
 REFINE_FAILURE_NO_GOLD_SOCKET	There is no Gold socket to include %s .	
-REFINE_FAILURE_NO_MORE_SOCKET	You cannot make more Sockets.	
-REFINE_FAILURE_NO_SOCKET0	There is no Socket to include the %s.
-REFINE_FAILURE_SOCKET_DISABLE_ITEM	You cannot make any Sockets on this Item.	
+REFINE_FAILURE_NO_MORE_SOCKET	You cannot add any more sockets.	
+REFINE_FAILURE_NO_SOCKET0	There is no free socket for the %s.
+REFINE_FAILURE_SOCKET_DISABLE_ITEM	You cannot add any more sockets to this item.	
 REFINE_FAILURE_UPGRADE_DISABLE_ITEM	This Item cannot be upgraded.
 REFINE_SUCCESS	The advancement of the Item was successful.	
 REFINE_SUCCESS_PROBALITY	Chance for Advancement %d%%	
-REFINE_WARNING2	Do you want to continue?	
+REFINE_WARNING2	Do you want to continue with the upgrade?	
 SAFEBOX_ERROR	You entered the wrong password.	
 SAFEBOX_SELL_DISABLE_SAFEITEM	You cannot sell any of the saved Items.	
 SAFEBOX_WRONG_PASSWORD	The passwords have to be identical.	
@@ -376,9 +376,9 @@ SELECT_CAN_NOT_DELETE	You cannot delete the character.
 SELECT_CHANGED_NAME	You changed the name of the character.	
 SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	The character name is already existing.	
 SELECT_CHANGE_FAILURE_STRANGE_INDEX	Try again.	
-SELECT_CHANGE_FAILURE_STRANGE_NAME	That	
+SELECT_CHANGE_FAILURE_STRANGE_NAME	That is the wrong character name.	
 SELECT_CHANGE_NAME_TITLE	Change character name.	
-SELECT_DELEING	Character will be deleted.	
+SELECT_DELEING	Deleting...	
 SELECT_DELETED	Deletion successful.	
 SELECT_DO_YOU_DELETE_REALLY	Do you want to continue?	
 SELECT_EMPTY_SLOT	This is an empty field.	
@@ -389,9 +389,9 @@ SHOP_CANNOT_SELL_ITEM	This Item cannot be sold.
 SHOP_ERROR_UNKNOWN	Unknown Shop Error: %s
 SHOP_INVALID_POS	This Item cannot be used here.
 SHOP_INVENTORY_FULL	Your inventory is full.
-SHOP_NOT_ENOUGH_MONEY	Not enough Yang
+SHOP_NOT_ENOUGH_MONEY	Not enough Won or Yang
 SHOP_NOT_ENOUGH_MONEY_EX	You do not have enough Yang.
-SHOP_SELL_INFO	Choose the Item you want to sell  in your inventory window.
+SHOP_SELL_INFO	Choose the item you want to sell in your inventory window.
 SHOP_SOLDOUT	Sold Out
 SHOT_ERROR_UNKNOWN	Unknown Error during Long Distance Attack: %s
 SKILL_BOHO	Reflect	
@@ -419,8 +419,8 @@ SKILL_GYEONGGONG	Feather Walking
 SKILL_HEUKSIN	Dark Protection	
 SKILL_HOSIN	Blessing	
 SKILL_INC_ATKSPD	Attack speed raised
-SKILL_INC_MOVSPD	Moving speed raised
-SKILL_JEONGWI	Battle Flush	
+SKILL_INC_MOVSPD	Movement speed raised
+SKILL_JEONGWI	Berserk	
 SKILL_JEUNGRYEOK	Attack +	
 SKILL_JUMAGAP	Enchanted Armour	
 SKILL_KWAESOK	Speed	
@@ -497,8 +497,8 @@ TOOLTIP_APPLY_ATTBONUS_SHAMAN	Strong against Shamans +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_SURA	Strong against Sura +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_UNDEAD	Strong against Undead +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_WARRIOR	Strong against Warriorr +%d%%	SA
-TOOLTIP_APPLY_BLOCK	Chance to block a close-combat attack %d%% 	SA
-TOOLTIP_APPLY_CRITICAL_PCT	Chance of critical hit +%d%% 	SA
+TOOLTIP_APPLY_BLOCK	Chance to block a close-combat attack %d%%	SA
+TOOLTIP_APPLY_CRITICAL_PCT	Chance of critical hit +%d%%	SA
 TOOLTIP_APPLY_DAMAGE_SP_RECOVER	%d%% Chance to get back SP when hit	SA
 TOOLTIP_APPLY_DODGE	Chance to avoid Arrows %d%%	SA
 TOOLTIP_APPLY_EXP_DOUBLE_BONUS	%d%% Chance for EXP Bonus	SA
@@ -511,15 +511,15 @@ TOOLTIP_APPLY_KILL_HP_RECOVER	%d%% Chance, to restore HP	SA
 TOOLTIP_APPLY_KILL_SP_RECOVER	%d%% Chance to restore SP	SA
 TOOLTIP_APPLY_MANA_BURN_PCT	%d%% chance to rob SP	SA
 TOOLTIP_APPLY_MAX_HP_PCT	Max. HP +%d%%	SA
-TOOLTIP_APPLY_MAX_SP_PCT	Max. SP +%d%% 	SA
+TOOLTIP_APPLY_MAX_SP_PCT	Max. SP +%d%%	SA
 TOOLTIP_APPLY_NOAFFECT	No effect	
-TOOLTIP_APPLY_NO_DEATH_PENALTY	No experience points will be lost if your character is revived at the place of his death. 	SNA
+TOOLTIP_APPLY_NO_DEATH_PENALTY	No experience points will be lost if your character is revived at the place of his death.	SNA
 TOOLTIP_APPLY_PENETRATE_PCT	%d%% Chance for piercing Hits	SA
 TOOLTIP_APPLY_POISON_PCT	Poisoning chance %d%%	SA
 TOOLTIP_APPLY_POISON_REDUCE	Poison Resistance %d%%	SA
 TOOLTIP_APPLY_POTION_BONUS	Potion %d%% effect raise	SA
 TOOLTIP_APPLY_REFLECT_CURSE	Chance to reflect Curse: %d%%	SA
-TOOLTIP_APPLY_REFLECT_MELEE	%d%% Chance to reflect close combat hits  	SA
+TOOLTIP_APPLY_REFLECT_MELEE	%d%% Chance to reflect close combat hits	SA
 TOOLTIP_APPLY_RESIST_ASSASSIN	Defence chance against ninja attacks: %d%%	SA
 TOOLTIP_APPLY_RESIST_BELL	Bell Defence %d%%	SA
 TOOLTIP_APPLY_RESIST_DAGGER	Dagger Defence %d%%	SA
@@ -530,7 +530,7 @@ TOOLTIP_APPLY_RESIST_SWORD	Sword Defence %d%%	SA
 TOOLTIP_APPLY_RESIST_TWOHAND	Two-Handed Defence %d%%	SA
 TOOLTIP_APPLY_RESIST_WARRIOR	Defence chance against warrior attacks: %d%%	SA
 TOOLTIP_APPLY_RESIST_WIND	Wind Resistance %d%%	SA
-TOOLTIP_APPLY_SKILL_BOOK_BONUS	Chance to learn from books upgraded by factor 2.5 .	SNA
+TOOLTIP_APPLY_SKILL_BOOK_BONUS	Chance to learn from books upgraded by factor 2.5	SNA
 TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	If learning fails you immediately have another try for free	SNA
 TOOLTIP_APPLY_SLOW_PCT	Slowing chance %d%%	SA
 TOOLTIP_APPLY_STEAL_HP	%d%% damage  will be absorbed by HP	SA
@@ -545,17 +545,17 @@ TOOLTIP_AUTO_POTION_HP	Sun Elixir
 TOOLTIP_AUTO_POTION_REST	Remainder: %.2f%%
 TOOLTIP_AUTO_POTION_SP	Moon Elixir
 TOOLTIP_AUTO_POTION_USING	Active
-TOOLTIP_BOW_DISTANCE	Arc Range +%dm	SA
+TOOLTIP_BOW_DISTANCE	Range +%d m	SA
 TOOLTIP_BUYPRICE	Price: %s	
 TOOLTIP_CAST_SPEED	Casting Speed +%d%%	SA
 TOOLTIP_CON	Vitality +%d	SA
-TOOLTIP_COSTUME_ATTR_BONUS	Costume bonus %d%% 	SA
+TOOLTIP_COSTUME_ATTR_BONUS	Costume bonus %d%%	SA
 TOOLTIP_DEF_GRADE	Defence +%d	SA
 TOOLTIP_DEX	Dexterity +%d	SA
-TOOLTIP_DRAGON_SOUL_DECK1	Earth	SNA
-TOOLTIP_DRAGON_SOUL_DECK2	Sky	SNA
+TOOLTIP_DRAGON_SOUL_DECK1	Sky	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Earth	SNA
 TOOLTIP_EAR	Earring	
-TOOLTIP_ENERGY	Energy %d 	SA
+TOOLTIP_ENERGY	Energy %d	SA
 TOOLTIP_FISHINGROD_EXP	Points %d / %d	
 TOOLTIP_FISHINGROD_LEVEL	Level: %d	
 TOOLTIP_FISHINGROD_UPGRADE1	Give to the Fisherman
@@ -583,22 +583,22 @@ TOOLTIP_ITEM_NORMAL	Normal
 TOOLTIP_ITEM_SLOW	Slow	
 TOOLTIP_ITEM_VERY_FAST	Very fast	
 TOOLTIP_ITEM_VERY_SLOW	Very slow	
-TOOLTIP_ITEM_WEARABLE_JOB	[ Wearable ]
+TOOLTIP_ITEM_WEARABLE_JOB	[Wearable]
 TOOLTIP_MAGIC_ATTBONUS_PER	Magic attack +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	Magical Attack Value +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Magical Defence +%d	SA
 TOOLTIP_MALL_ATTBONUS	Attack Value +%d%%	SA
-TOOLTIP_MALL_ATTBONUS_STATIC	Attack Value +12~15%	SNA
+TOOLTIP_MALL_ATTBONUS_STATIC	Attack Value	SNA
 TOOLTIP_MALL_AUTOLOOT	A hand that picks up dropped Yang automatically	SNA
 TOOLTIP_MALL_DEFBONUS	Defence +%d%%	SA
-TOOLTIP_MALL_DEFBONUS_STATIC	Defence +12~15%	SNA
+TOOLTIP_MALL_DEFBONUS_STATIC	Defence	SNA
 TOOLTIP_MALL_EXPBONUS	EXP +%d%%	SA
 TOOLTIP_MALL_EXPBONUS_STATIC	Increases gaining EXP by 50%	SNA
 TOOLTIP_MALL_FISH_MIND	Your chance of catching a rare fish is doubled.	SNA
 TOOLTIP_MALL_GOLDBONUS	Chance of capturing Yang multiplied with %.1f	SA
-TOOLTIP_MALL_GOLDBONUS_STATIC	Doubles your chance to capture Yang	SNA
+TOOLTIP_MALL_GOLDBONUS_STATIC	Double Yang drop chance	SNA
 TOOLTIP_MALL_ITEMBONUS	Chance of capturing Items multiplied with %.1f	SA
-TOOLTIP_MALL_ITEMBONUS_STATIC	Doubles your chances of capturing items	SNA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Item drop chance increased by 200%.	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	Lovepoints raise faster.	SNA
 TOOLTIP_MALL_SAFEBOX	Your Storeroom gets 2 storage rooms	SNA
 TOOLTIP_MAX_HP	Max. HP +%d	SA
@@ -609,7 +609,7 @@ TOOLTIP_MAX_STAMINA	Max. Endurance +%d	SA
 TOOLTIP_MELEE_MAGIC_ATTBONUS_PER	Magic/melee attack +%d%%	SA
 TOOLTIP_MEMORIZED_POSITION	%s(%d, %d)	
 TOOLTIP_MEMORIZED_POSITION_ERROR	GPS ERROR(%d, %d)	
-TOOLTIP_MOV_SPEED	Moving Speed %d%%	SA
+TOOLTIP_MOV_SPEED	Movement Speed %d%%	SA
 TOOLTIP_NECK	Necklace	
 TOOLTIP_NEED_ALL_SP	Needed SP: Max.	
 TOOLTIP_NEED_GSP	Needed Dragon ghost: %d
@@ -638,7 +638,7 @@ TOOLTIP_POTION_SEC	Sec.
 TOOLTIP_POTION_TIME	Duration:	
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	%s Level %d needed.	
 TOOLTIP_REQUIREMENT_STAT_LEVEL	%s %d needed	
-TOOLTIP_RESIST_BOW	Arrow Resistance %d%%	SA
+TOOLTIP_RESIST_BOW	Arrow Defence %d%%	SA
 TOOLTIP_RESIST_DARK	Resistance against darkness +%d%%	SA
 TOOLTIP_RESIST_EARTH	Earth resistance +%d%%	SA
 TOOLTIP_RESIST_ELEC	Lightning Resistance %d%%	SA
@@ -657,14 +657,14 @@ TOOLTIP_SKILL_AFFECT_ATT_SPEED	Attack Speed: +
 TOOLTIP_SKILL_AFFECT_DEF_GRADE	Defence:	
 TOOLTIP_SKILL_AFFECT_DODGE	Opponent Attack Value: -	
 TOOLTIP_SKILL_AFFECT_HEAL	Restore HP:	
-TOOLTIP_SKILL_AFFECT_MOV_SPEED	Moving Speed: +	
+TOOLTIP_SKILL_AFFECT_MOV_SPEED	Movement Speed: +	
 TOOLTIP_SKILL_AFFECT_REFLECT_MELEE	Chance to reflect close combat attack:
 TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Resistance against Body Damage:	
 TOOLTIP_SKILL_COOL_TIME	Recharge: 
 TOOLTIP_SKILL_DAMAGE_BONUS	Skill Damage %d%%	SA
 TOOLTIP_SKILL_DEFEND_BONUS	Resistance against Skill Damage %d%%	SA
-TOOLTIP_SKILL_DURATION	Duration: %d Sek.	
-TOOLTIP_SKILL_FORGET_BOOK_NAME	Band of Oblivion	
+TOOLTIP_SKILL_DURATION	Duration: %d sec.	
+TOOLTIP_SKILL_FORGET_BOOK_NAME	Book of Forgetfulness	
 TOOLTIP_SKILL_LEVEL	Current Level: %d	
 TOOLTIP_SKILL_LEVEL_MASTER	Current Level: %d (Master)	
 TOOLTIP_SKILL_LEVEL_WITH_MAX	Current Level: %d (Max. %d)	

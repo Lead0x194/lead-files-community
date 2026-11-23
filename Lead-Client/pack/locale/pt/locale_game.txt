@@ -11,7 +11,7 @@ CANNOT_SHOOT_SELF_IN_SAFE	Não posso fazer isto.
 CANNOT_SKILL_APPROACH	Tenho a certeza que não posso chegar mais perto.
 CANNOT_SKILL_ATTACK	Não posso atacar.
 CANNOT_SKILL_DEST_IN_SAFE	O inimigo está muito longe.
-CANNOT_SKILL_EQUIP_FISHING_ROD	Preciso de uma Cana de Pesca.
+CANNOT_SKILL_EQUIP_FISHING_ROD	Não podes pescar sem uma cana equipada.
 CANNOT_SKILL_HAVE_TO_RIDE	Preciso de um Cavalo para usar isto.
 CANNOT_SKILL_NEED_EMPTY_BOTTLE	Não tenho uma Garrafa Vazia.
 CANNOT_SKILL_NEED_POISON_BOTTLE	Não tenho uma Garrafa de Veneno.
@@ -46,7 +46,7 @@ CHAT_INSULT_STRING	Esta frase contém palavras inválidas.
 CHAT_LOG	Mostrar mensagens antigas [L]
 CHAT_LOG_TITLE	Mostrar Log
 CHAT_NORMAL	Normal
-CHAT_NOTICE	Anúncio
+CHAT_NOTICE	Servidor
 CHAT_PARTY	Grupo
 CHAT_SEND_CHAT	Enviar
 CHAT_SEND_MEMO	Enviar Segredo [Shift+Enter]
@@ -58,12 +58,12 @@ CREATE_EXIST_SAME_NAME	Já existe uma personagem com este nome.
 CREATE_FAILURE	Não podes criar a personagem.
 CREATE_GM_NAME	GM
 CREATE_INPUT_NAME	Insere o nome.
-DAY	Dias
-DO_YOU_BUY_ITEM1	Queres comprar %s por %s?
-DO_YOU_BUY_ITEM2	Queres comprar %s %s por %s?
+DAY	d
+DO_YOU_BUY_ITEM1	Queres comprar %s por %s Yang?
+DO_YOU_BUY_ITEM2	Queres comprar %s (%s unidades) por %s Yang?
 DO_YOU_DROP_MONEY	Queres largar %d Yang?
-DO_YOU_SELL_ITEM1	Queres vender %s por %s?
-DO_YOU_SELL_ITEM2	Queres vender %s %s por %s?
+DO_YOU_SELL_ITEM1	Queres vender %s por %s Yang?
+DO_YOU_SELL_ITEM2	Queres vender %s (%s unidades) por %s Yang?
 DRAGON_SOUL_CANNOT_REFINE	Esta Pedra do Dragão não pode ser refinada.
 DRAGON_SOUL_CANNOT_REFINE_MORE	Esta Pedra do Dragão já se encontra no nível mais alto possível.
 DRAGON_SOUL_EQUIP_WARNING1	É difícil remover uma Pedra do Dragão assim que estiver embutida.
@@ -144,8 +144,8 @@ GUILDMARK_UPLOADER_ERROR_64_WIDTH	A Largura não é 64 Pixeis
 GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	O jogo não suporta esta imagem.
 GUILDMARK_UPLOADER_ERROR_PATH	Move os dados para a pasta metin2/upload.
 GUILDMARK_UPLOADER_ERROR_SELECT	Nenhum ficheiro de imagem foi escolhido.
-GUILDWAR_CTF_TITLE	Bandeira capturada.
-GUILDWAR_NORMAL_TITLE	Campal
+GUILDWAR_CTF_TITLE	Capturar a Bandeira
+GUILDWAR_NORMAL_TITLE	Batalha Campal
 GUILDWAR_WARP_TITLE	Arena de Guerra
 GUILD_BUILDING_GRADE	Nível
 GUILD_BUILDING_NAME	Nome do Edifício
@@ -170,11 +170,11 @@ GUILD_NO_NOTICE_PERMISSION	Não tens permissões para fazer um anúncio.
 GUILD_OBJECT	Objectos
 GUILD_OFFER_EXP	Experiência a investir
 GUILD_SHORT_EXP	Pontos de Experiência insuficientes.
-GUILD_TILE_BASEINFO	Informação Básica
-GUILD_TILE_BOARD	Quadro de Mensagens
+GUILD_TILE_BASEINFO	Informações do Território
+GUILD_TILE_BOARD	Mensagens de Guild
 GUILD_TILE_GRADE	Administração de Permissões
 GUILD_TILE_INFO	Informação da Guild
-GUILD_TILE_MEMBER	Membros da Guild
+GUILD_TILE_MEMBER	Membro
 GUILD_TILE_SKILL	Habilidades de Guild
 GUILD_WAR_LIMIT_30MIN	Duração: 30 Minutos
 GUILD_WAR_REWARD_POTION	Recompensa: O vencedor recebe uma Poção.
@@ -192,7 +192,7 @@ HORSE_HEALTH3	Cheio
 HORSE_LEVEL1	Cavalo Normal
 HORSE_LEVEL2	Cavalo Armado
 HORSE_LEVEL3	Cavalo Militar
-HOUR	Horas
+HOUR	hr
 HOW_MANY_ITEM_DO_YOU_DROP1	Queres largar %s?
 HOW_MANY_ITEM_DO_YOU_DROP2	Queres largar %s %d?
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Introduz aqui o código de apagar personagem da tua conta.
@@ -205,16 +205,16 @@ JOB_WARRIOR	Guerreiro
 LEFT_TIME	Tempo Restante
 LOGIN_CONNECT_FAILURE	Ocorreu um erro enquanto te ligavas ao Servidor.
 LOGIN_CONNECT_SUCCESS	Estás ligado ao Servidor.
-LOGIN_CONNETING	Vais ser ligado ao Servidor...
+LOGIN_CONNETING	Por favor, aguarda. Estás a ser ligado ao servidor.
 LOGIN_FAILURE_ALREAY	A tua conta já está ligada.
 LOGIN_FAILURE_BE_SAME_KEY	Problema de registo.
-LOGIN_FAILURE_BLOCK_ID	A tua conta está bloqueada.
-LOGIN_FAILURE_BLOCK_LOGIN	Por favor escolhe um dos outros Servidores!
-LOGIN_FAILURE_NOBILL	A tua conta não tinha tempo de jogo.
-LOGIN_FAILURE_NOT_AVAIL	A tua conta não pode ser usada.
+LOGIN_FAILURE_BLOCK_ID	Esta conta foi bloqueada.
+LOGIN_FAILURE_BLOCK_LOGIN	Servidor fechado: Por favor escolhe um dos outros Servidores!
+LOGIN_FAILURE_NOBILL	A conta não tem tempo de jogo.
+LOGIN_FAILURE_NOT_AVAIL	A conta não está disponível.
 LOGIN_FAILURE_NOT_EXIST_ID	O nome da conta ou a palavra-passe está/ão incorrecta(s).
-LOGIN_FAILURE_REPAIR_ID	Foram restaurados Itens a esta conta.
-LOGIN_FAILURE_SAMELOGIN	Alguém se ligou à tua conta.
+LOGIN_FAILURE_REPAIR_ID	Foram restaurados itens a esta conta.
+LOGIN_FAILURE_SAMELOGIN	Alguém ligou-se à tua conta.
 LOGIN_FAILURE_SHUTDOWN	O Servidor ainda não está aberto.
 LOGIN_FAILURE_TOO_MANY_USER	Não te podes ligar ao Servidor porque estão muitos jogadores ligados.
 LOGIN_FAILURE_UNKNOWN	Não te foi possível registar por razões desconhecidas.
@@ -266,7 +266,7 @@ MINIMAP_DEC_SCALE	Minimizar
 MINIMAP_INC_SCALE	Maximizar
 MINIMAP_OBSERVER_COUNT	%d observadores
 MINIMAP_SHOW_AREAMAP	Abrir Mapa Grande
-MINUTE	Minutos
+MINUTE	min
 MONETARY_UNIT0	Yang
 MONEY_INPUT_DIALOG_SELLPRICE	Preço de Venda:
 MOVE_ITEM_FAILURE_PRIVATE_SHOP	Não podes mover um Item quando tens uma Loja Privada aberta.
@@ -287,7 +287,7 @@ PARTY_BONUS_SKILL_MASTER	Máx. MN: +%d	SA
 PARTY_BONUS_TANKER	Máx. VD: +%d	SA
 PARTY_BREAK_UP	Apagar Grupo
 PARTY_DO_YOU_ACCEPT	 gostaria de se juntar ao Grupo.
-PARTY_DO_YOU_JOIN	 fez-te um convite para o seu grupo. Queres aceitar o convite?
+PARTY_DO_YOU_JOIN	 convidou-te para te juntares a um grupo. Aceitas?
 PARTY_EXP_DISTRIBUTION_MODE	Distribuição de EXP
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL	Distribuição de Níveis
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Os Níveis mais altos do grupo recebem mais EXP.
@@ -348,14 +348,14 @@ QUICKSLOT_REGISTER_DISABLE_ITEM	Este Item não pode ser adicionado ao campo de A
 RECEIVE_MESSAGE	%s enviou-te uma mensagem.
 REFINE_COST	Custos do melhoramento: %s
 REFINE_DESTROY_WARNING	Este Item pode ser destruído enquanto é melhorado.
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Isto vai aumentar a probabilidade de ser melhorado,
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	mas se falhares o item pode ser destruído. Queres continuar?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Queres mesmo melhorar este item?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	Se falhares, o item será destruído. Queres continuar?
 REFINE_DOWN_GRADE_WARNING	O Item pode ser piorado desta forma.
-REFINE_DO_YOU_SEPARATE_METIN	Queres mesmo retirar todas as Pedras Espíritas?
-REFINE_FAILURE	Melhoramento falhado!
+REFINE_DO_YOU_SEPARATE_METIN	Queres mesmo retirar todas as Pedras Espíritas disponíveis?
+REFINE_FAILURE	Oh não, não funcionou! Falhámos.
 REFINE_FAILURE_CAN_NOT_ATTACH	Não podes incluir %s nesse Item.
 REFINE_FAILURE_EQUIP_ITEM	Não podes melhorar um Item equipado.
-REFINE_FAILURE_METIN_INSEPARABLE_ITEM	As Pedras Espíritas não podem ser retiradas.
+REFINE_FAILURE_METIN_INSEPARABLE_ITEM	Não existem Pedras Espíritas que possam ser retiradas.
 REFINE_FAILURE_NEED_BETTER_SCROLL	Precisas de um tipo de Pergaminho diferente.
 REFINE_FAILURE_NO_GOLD_SOCKET	Não existe Socket para se adicionar %s.
 REFINE_FAILURE_NO_MORE_SOCKET	Não podes abrir mais Sockets.
@@ -364,7 +364,7 @@ REFINE_FAILURE_SOCKET_DISABLE_ITEM	Não podes criar nenhum Socket neste item.
 REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Este Item não pode ser melhorado.
 REFINE_SUCCESS	O melhoramento do Item foi bem sucedido!
 REFINE_SUCCESS_PROBALITY	Probabilidade de Melhorar %d%%
-REFINE_WARNING2	Queres continuar?
+REFINE_WARNING2	Queres continuar com o melhoramento?
 SAFEBOX_ERROR	Inseriste a palavra-passe errada.
 SAFEBOX_SELL_DISABLE_SAFEITEM	Não podes vender nenhum dos Itens guardados.
 SAFEBOX_WRONG_PASSWORD	As palavras-passe têm de ser idênticas.
@@ -376,9 +376,9 @@ SELECT_CAN_NOT_DELETE	Não podes apagar a personagem.
 SELECT_CHANGED_NAME	Alteraste o nome da personagem.
 SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	O nome da personagem já existe.
 SELECT_CHANGE_FAILURE_STRANGE_INDEX	Tenta de novo.
-SELECT_CHANGE_FAILURE_STRANGE_NAME	Que
+SELECT_CHANGE_FAILURE_STRANGE_NAME	O nome da personagem não está correto.
 SELECT_CHANGE_NAME_TITLE	Altera o nome da personagem.
-SELECT_DELEING	A personagem irá ser apagada.
+SELECT_DELEING	A apagar...
 SELECT_DELETED	Apagada com sucesso.
 SELECT_DO_YOU_DELETE_REALLY	Queres continuar?
 SELECT_EMPTY_SLOT	Este é um campo vazio.
@@ -389,7 +389,7 @@ SHOP_CANNOT_SELL_ITEM	Este Item não pode ser vendido.
 SHOP_ERROR_UNKNOWN	Erro de Loja Desconhecido: %s
 SHOP_INVALID_POS	Este Item não pode ser usado aqui.
 SHOP_INVENTORY_FULL	O teu Inventário está cheio.
-SHOP_NOT_ENOUGH_MONEY	Yang insuficiente
+SHOP_NOT_ENOUGH_MONEY	Won ou Yang insuficientes
 SHOP_NOT_ENOUGH_MONEY_EX	Não tens Yang suficiente.
 SHOP_SELL_INFO	Escolhe o Item a ser vendido, na janela do inventário.
 SHOP_SOLDOUT	Esgotado
@@ -418,9 +418,9 @@ SKILL_GWIGEOM	Lâmina Encantada - 16
 SKILL_GYEONGGONG	Flutuar - 17
 SKILL_HEUKSIN	Protecção Sombria - 18
 SKILL_HOSIN	Bênção - 19
-SKILL_INC_ATKSPD	Aumento da Velocidade de Ataque
-SKILL_INC_MOVSPD	Aumento da Velocidade de Movimento
-SKILL_JEONGWI	Raiva - 27
+SKILL_INC_ATKSPD	Aumento da Rapidez de Ataque
+SKILL_INC_MOVSPD	Aumento da Rapidez de Movimento
+SKILL_JEONGWI	Raiva
 SKILL_JEUNGRYEOK	Ataque + - 32
 SKILL_JUMAGAP	Armadura Encantada - 36
 SKILL_KWAESOK	Rapidez - 39
@@ -497,45 +497,45 @@ TOOLTIP_APPLY_ATTBONUS_SHAMAN	Forte contra Xamãs: +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_SURA	Forte contra Suras: +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_UNDEAD	Forte contra Mortos-Vivos: +%d%%	SA
 TOOLTIP_APPLY_ATTBONUS_WARRIOR	Forte contra Guerreiros: +%d%%	SA
-TOOLTIP_APPLY_BLOCK	Chance de bloquear ataques físicos %d%%	SA
-TOOLTIP_APPLY_CRITICAL_PCT	Chance de Golpes Críticos +%d%%	SA
-TOOLTIP_APPLY_DAMAGE_SP_RECOVER	%d%% Chance de recuperar MN quando atingido	SA
-TOOLTIP_APPLY_DODGE	Chance de evitar Flechas: %d%%	SA
-TOOLTIP_APPLY_EXP_DOUBLE_BONUS	%d%% Chance de EXP Bónus	SA
-TOOLTIP_APPLY_GOLD_DOUBLE_BONUS	%d%% Chance de receber Yang a dobrar	SA
+TOOLTIP_APPLY_BLOCK	Probabilidade de bloquear ataques físicos %d%%	SA
+TOOLTIP_APPLY_CRITICAL_PCT	Probabilidade de Golpes Críticos +%d%%	SA
+TOOLTIP_APPLY_DAMAGE_SP_RECOVER	%d%% Probabilidade de recuperar MN quando atingido	SA
+TOOLTIP_APPLY_DODGE	Probabilidade de evitar Flechas: %d%%	SA
+TOOLTIP_APPLY_EXP_DOUBLE_BONUS	%d%% Probabilidade de EXP Bónus	SA
+TOOLTIP_APPLY_GOLD_DOUBLE_BONUS	%d%% Probabilidade de receber Yang a dobrar	SA
 TOOLTIP_APPLY_IMMUNE_FALL	Imune contra Quedas	SNA
 TOOLTIP_APPLY_IMMUNE_SLOW	Defesa contra Abrandamento	SNA
 TOOLTIP_APPLY_IMMUNE_STUN	Defesa contra Atordoamento	SNA
-TOOLTIP_APPLY_ITEM_DROP_BONUS	%d%% Chance de receber Itens a dobrar	SA
-TOOLTIP_APPLY_KILL_HP_RECOVER	%d%% Chance de restaurar VD	SA
-TOOLTIP_APPLY_KILL_SP_RECOVER	%d%% Chance de restaurar MN	SA
-TOOLTIP_APPLY_MANA_BURN_PCT	%d%% Chance de roubar MN	SA
+TOOLTIP_APPLY_ITEM_DROP_BONUS	%d%% Probabilidade de receber Itens a dobrar	SA
+TOOLTIP_APPLY_KILL_HP_RECOVER	%d%% Probabilidade de restaurar VD	SA
+TOOLTIP_APPLY_KILL_SP_RECOVER	%d%% Probabilidade de restaurar MN	SA
+TOOLTIP_APPLY_MANA_BURN_PCT	%d%% Probabilidade de roubar MN	SA
 TOOLTIP_APPLY_MAX_HP_PCT	Máx. VD +%d%%	SA
 TOOLTIP_APPLY_MAX_SP_PCT	Máx. MN +%d%%	SA
 TOOLTIP_APPLY_NOAFFECT	Sem efeito
 TOOLTIP_APPLY_NO_DEATH_PENALTY	A personagem não irá perder pontos de experiência se for reanimada no local onde morreu.	SNA
-TOOLTIP_APPLY_PENETRATE_PCT	%d%% Chance de Golpes Perfurantes	SA
-TOOLTIP_APPLY_POISON_PCT	Chance de Envenenamento %d%%	SA
+TOOLTIP_APPLY_PENETRATE_PCT	%d%% Probabilidade de Golpes Perfurantes	SA
+TOOLTIP_APPLY_POISON_PCT	Probabilidade de Envenenamento %d%%	SA
 TOOLTIP_APPLY_POISON_REDUCE	Resistência a Envenenamento: %d%%	SA
 TOOLTIP_APPLY_POTION_BONUS	O efeito da Poção %d%% aumentou.	SA
-TOOLTIP_APPLY_REFLECT_CURSE	Chance de reflectir Maldição: %d%%	SA
-TOOLTIP_APPLY_REFLECT_MELEE	%d%% Chance de reflectir ataques físicos	SA
+TOOLTIP_APPLY_REFLECT_CURSE	Probabilidade de reflectir Maldição: %d%%	SA
+TOOLTIP_APPLY_REFLECT_MELEE	%d%% Probabilidade de reflectir ataques físicos	SA
 TOOLTIP_APPLY_RESIST_ASSASSIN	Resistência a dano de Ninjas: %d%%	SA
-TOOLTIP_APPLY_RESIST_BELL	Defesa contra Campainhas: %d%%	SA
+TOOLTIP_APPLY_RESIST_BELL	Defesa contra Campainhas %d%%	SA
 TOOLTIP_APPLY_RESIST_DAGGER	Defesa contra Punhais: %d%%	SA
-TOOLTIP_APPLY_RESIST_FAN	Defesa contra Leques: %d%%	SA
+TOOLTIP_APPLY_RESIST_FAN	Defesa contra Leques %d%%	SA
 TOOLTIP_APPLY_RESIST_SHAMAN	Resistência a dano de Xamãs: %d%%	SA
 TOOLTIP_APPLY_RESIST_SURA	Resistência a dano de Suras: %d%%	SA
 TOOLTIP_APPLY_RESIST_SWORD	Defesa contra Espadas: %d%%	SA
 TOOLTIP_APPLY_RESIST_TWOHAND	Defesa contra Duas Mãos: %d%%	SA
 TOOLTIP_APPLY_RESIST_WARRIOR	Resistência a dano de Guerreiros: %d%%	SA
 TOOLTIP_APPLY_RESIST_WIND	Resistência ao Vento: %d%%	SA
-TOOLTIP_APPLY_SKILL_BOOK_BONUS	Probabilidade de ler livros com sucesso aumentada 2,5 vezes.	SNA
+TOOLTIP_APPLY_SKILL_BOOK_BONUS	Probabilidade de ler livros com sucesso aumentada 2,5 vezes	SNA
 TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	Se a leitura do Livro de Habilidades falhar terás imediatamente uma nova tentativa.	SNA
-TOOLTIP_APPLY_SLOW_PCT	Chance de Abrandamento %d%%	SA
+TOOLTIP_APPLY_SLOW_PCT	Probabilidade de Abrandamento %d%%	SA
 TOOLTIP_APPLY_STEAL_HP	%d%% dos danos serão absorvidos pela VD	SA
 TOOLTIP_APPLY_STEAL_SP	%d%% dos danos serão absorvidos pelo MN	SA
-TOOLTIP_APPLY_STUN_PCT	Chance de Atordoamento %d%%	SA
+TOOLTIP_APPLY_STUN_PCT	Probabilidade de Atordoamento %d%%	SA
 TOOLTIP_ARMOR	Armadura
 TOOLTIP_ARROW	Flecha
 TOOLTIP_ASSASSIN	Ninja
@@ -545,15 +545,15 @@ TOOLTIP_AUTO_POTION_HP	Elixir do Sol
 TOOLTIP_AUTO_POTION_REST	Restante: %.2f%%
 TOOLTIP_AUTO_POTION_SP	Elixir da Lua
 TOOLTIP_AUTO_POTION_USING	Activo
-TOOLTIP_BOW_DISTANCE	Alcance do Arco: +%dm	SA
+TOOLTIP_BOW_DISTANCE	Alcance: +%dm	SA
 TOOLTIP_BUYPRICE	Preço: %s
 TOOLTIP_CAST_SPEED	Rapidez de Feitiço: +%d%%	SA
 TOOLTIP_CON	Vitalidade +%d	SA
 TOOLTIP_COSTUME_ATTR_BONUS	Bónus de disfarce %d	SA
 TOOLTIP_DEF_GRADE	Defesa: +%d	SA
 TOOLTIP_DEX	Destreza +%d	SA
-TOOLTIP_DRAGON_SOUL_DECK1	Terra	SNA
-TOOLTIP_DRAGON_SOUL_DECK2	Céu	SNA
+TOOLTIP_DRAGON_SOUL_DECK1	Céu	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Terra	SNA
 TOOLTIP_EAR	Brinco
 TOOLTIP_ENERGY	Energia %d	SA
 TOOLTIP_FISHINGROD_EXP	Pontos %d / %d
@@ -588,17 +588,17 @@ TOOLTIP_MAGIC_ATTBONUS_PER	Ataque Mágico +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	Valor de Ataque Mágico: +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Defesa vs Magias: +%d	SA
 TOOLTIP_MALL_ATTBONUS	Valor de Ataque: +%d	SA
-TOOLTIP_MALL_ATTBONUS_STATIC	Valor de Ataque: +12~15%	SNA
+TOOLTIP_MALL_ATTBONUS_STATIC	Valor de Ataque	SNA
 TOOLTIP_MALL_AUTOLOOT	Mão que apanha automaticamente o Yang caído.	SNA
 TOOLTIP_MALL_DEFBONUS	Defesa: +%d%%	SA
-TOOLTIP_MALL_DEFBONUS_STATIC	Defesa: +12~15%	SNA
+TOOLTIP_MALL_DEFBONUS_STATIC	Defesa	SNA
 TOOLTIP_MALL_EXPBONUS	EXP: +%d%%	SA
 TOOLTIP_MALL_EXPBONUS_STATIC	Mais 50% de Experiência.	SNA
 TOOLTIP_MALL_FISH_MIND	Dobro da probabilidade de apanhar Peixes Raros.	SNA
 TOOLTIP_MALL_GOLDBONUS	Probabilidade de apanhar Yangs multiplicada por %.1f	SA
-TOOLTIP_MALL_GOLDBONUS_STATIC	Dobro da probabilidade de apanhar Yang.	SNA
+TOOLTIP_MALL_GOLDBONUS_STATIC	Probabilidade de Queda de Yang a Duplicar	SNA
 TOOLTIP_MALL_ITEMBONUS	Probabilidade de apanhar Itens multiplicada por %.1f	SA
-TOOLTIP_MALL_ITEMBONUS_STATIC	Dobro da probabilidade de apanhar Itens.	SNA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Probabilidade de Queda de Itens aumentada em 200%.	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	Pontos de Amor aumentam mais rapidamente.	SNA
 TOOLTIP_MALL_SAFEBOX	O teu Armazém recebe mais 2 espaços de arrumação.	SNA
 TOOLTIP_MAX_HP	Máx. VD: +%d	SA
@@ -638,7 +638,7 @@ TOOLTIP_POTION_SEC	Seg.
 TOOLTIP_POTION_TIME	Duração:
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	%s Nível %d necessário.
 TOOLTIP_REQUIREMENT_STAT_LEVEL	%s %d necessário.
-TOOLTIP_RESIST_BOW	Resistência contra Flechas: %d%%	SA
+TOOLTIP_RESIST_BOW	Defesa contra Flechas %d%%	SA
 TOOLTIP_RESIST_DARK	Resistência contra Trevas +%d%%	SA
 TOOLTIP_RESIST_EARTH	Resistência contra Terra +%d%%	SA
 TOOLTIP_RESIST_ELEC	Resistência a Relâmpagos: %d%%	SA
@@ -658,12 +658,12 @@ TOOLTIP_SKILL_AFFECT_DEF_GRADE	Defesa:
 TOOLTIP_SKILL_AFFECT_DODGE	Rapidez de Ataque do Oponente: -
 TOOLTIP_SKILL_AFFECT_HEAL	Restaura VD:
 TOOLTIP_SKILL_AFFECT_MOV_SPEED	Rapidez de Movimento: +
-TOOLTIP_SKILL_AFFECT_REFLECT_MELEE	Chance de reflectir ataques ao corpo:
+TOOLTIP_SKILL_AFFECT_REFLECT_MELEE	Probabilidade de reflectir ataques físicos:
 TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Resistência a Danos Corporais:
 TOOLTIP_SKILL_COOL_TIME	Tempo de carregamento: 
 TOOLTIP_SKILL_DAMAGE_BONUS	Dano de Habilidades: %d%%	SA
 TOOLTIP_SKILL_DEFEND_BONUS	Resistência contra Dano de Habilidades: %d%%	SA
-TOOLTIP_SKILL_DURATION	Duração: %d Seg.
+TOOLTIP_SKILL_DURATION	Duração: %d seg.
 TOOLTIP_SKILL_FORGET_BOOK_NAME	Livro do Esquecimento
 TOOLTIP_SKILL_LEVEL	Nível Actual: %d
 TOOLTIP_SKILL_LEVEL_MASTER	Nível Actual: %d (Mestre)

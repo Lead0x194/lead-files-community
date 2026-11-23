@@ -6,8 +6,8 @@
 100300	Grüne Drachenbohne	Die magische Bohne erhöht die Stufe deines Drachensteins. Das Verstärken kann fehlschlagen.
 100400	Blaue Drachenbohne	Die magische Bohne erhöht die Wahrscheinlichkeit, den Drachenstein um eine Stufe zu verbessern.
 100500	Rosa Drachenbohne	Die Wahrscheinlichkeit einer erfolgreichen Verbesserung des Drachensteins um eine Stufe steigt um 10%.
-11901	Smoking	Ein schwarzer Anzug, den man bei der Hochzeit trägt.
-11902	Smoking	Ein schwarzer Anzug, den man bei der Hochzeit trägt.
+11901	Smoking	Ein eleganter Anzug, den man bei der Hochzeit trägt.
+11902	Smoking	Ein eleganter Anzug, den man bei der Hochzeit trägt.
 11903	Brautkleid	Ein besonderes Kleid, das eine Frau bei ihrer Hochzeit trägt.
 11904	Brautkleid	Ein besonderes Kleid, das eine Frau bei ihrer Hochzeit trägt.
 18000	Leinengürtel+0	
@@ -94,7 +94,7 @@
 22000	Schriftrolle Stadt	Die Schriftrolle ermöglicht es dir, dich zurück in die Stadt zu teleportieren.
 22010	Schriftrolle des Ortes	Die Schriftrolle ermöglicht dir den Rücktransport zu dem Ort, den du dir zuletzt gemerkt hast.
 25040	Segensschriftrolle	Beseitigt das Risiko, einen Gegenstand zu zerstören, wenn seine Verbesserung fehlschlägt. In diesem Fall wird lediglich seine Qualität um 1 verringert.
-25041	Magischer Stein	Ein Klumpen des legendären Metalls, das die besten Chancen beim Verbessern eines Gegenstandes gewährt. Der verbesserte Gegenstand kann außerdem weder zerstört noch verschlechtert werden.
+25041	Magischer Stein	Ein Klumpen des legendären Metalls, das hervorragende Chancen beim Verbessern eines Gegenstandes gewährt. Der verbesserte Gegenstand kann außerdem weder zerstört noch verschlechtert werden.
 25100	Geiststein-Schriftrolle	Die Schriftrolle ermöglicht es dir, den Geiststein aus einer Waffe oder Rüstung zu entfernen. Ein Splitter bleibt dabei zurück.
 27051	Roter Trank (K)	Füllt 300 Trefferpunkte auf. Nicht handelbar.
 27052	Blauer Trank (K)	Füllt 100 Manapunkte auf. Nicht handelbar.
@@ -160,16 +160,16 @@
 27871	Gegr. Regenbogenforelle	Stellt viele MP wieder her.
 27872	Gegrillte Flussforelle	Stellt einige MP wieder her.
 27873	Gegrillte Rotfeder	Erhöht deine Beweglichkeit für 10 Minuten um 10 Punkte.
-27874	Gegrillter Barsch	Entfernt negative Auswirkungen.
+27874	Gegrillter Barsch	Entfernt Gift.
 27875	Gegrillter Tenchi	Stellt augenblicklich einige TP wieder her.
 27876	Gegrillter Wels	Stellt augenblicklich einige MP wieder her.
 27877	Gegrillte Schmerle	Macht dich 5 Minuten lang unsichtbar.
 27878	Gegrillter Lotusfisch	Stellt augenblicklich einige TP wieder her.
-27879	Gegrillter Ayu	Durch die Zubereitung über dem Feuer erhält dieser Fisch einen angenehm rauchigen Geschmack.
-27880	Gegrillter Stint	Durch die Zubereitung über dem Feuer erhält dieser Fisch einen angenehm rauchigen Geschmack.
-27881	Gegrillter Shiri	Durch die Zubereitung über dem Feuer erhält dieser Fisch einen angenehm rauchigen Geschmack.
-27882	Gegr. Spiegelkarpfen	Durch die Zubereitung über dem Feuer erhält dieser Fisch einen angenehm rauchigen Geschmack.
-27883	Gegrillter Goldfisch	Durch die Zubereitung über dem Feuer erhält dieser Fisch einen angenehm rauchigen Geschmack.
+27879	Gegrillter Ayu	Erhöht das Sammeln von Erfahrung um 10%.
+27880	Gegrillter Stint	Erhöht Stark gegen Monster um 5%.
+27881	Gegrillter Shiri	Erhöht Magie-/Nahkampfangriff um 3%.
+27882	Gegr. Spiegelkarpfen	Stellt 1000 TP sofort wieder her.
+27883	Gegrillter Goldfisch	Erhöht das Sammeln von Erfahrung um 50%.
 27987	Muschel	Eine Muschel mit einer schönen Schale. Sie kann eine kostbare Perle enthalten.
 27988	Schatzkarte	Eine abgegriffene Karte, auf welcher der Lagerort eines alten Schatzes verzeichnet ist.
 27989	Kompass des Metinsteins	Der Kompass zeigt dir Richtung und Entfernung des nächsten Metin-Steins an. Je heller er leuchtet, desto näher bist du. Er kann 6 Mal aktiviert werden.
@@ -375,9 +375,9 @@
 30270	Drachensteinsplitter	Fragment eines seltenen Drachensteins
 30311	Seelenkristall-Schlüssel	Der filigran gearbeitete Schlüssel mit einem blauen Seelenkristall öffnet das Tor zur 2. Ebene der Devil's Catacomb.
 30312	Fratzen-Totem	Diese Holztafel mit eingeritzter Fratze dient als Schlüssel zur 6. Ebene der Devil's Catacomb.
-30315	???	I dont know what this is
+30315	???	Brot für das Fastenbrechen.
 30316	Spendenteller	Ein Teller mit einer reichen Verzierung.
-30317	Iftar	Fastenbrechen
+30317	Iftar	Eine Essensspende für das Fastenbrechen.
 30318	Frucht des Segens	Eine außergewöhnliche Frucht, sammle genügend und du erhältst eine Belohnung.
 30319	Schrumpfkopf	Dieser Dämonenschrumpfkopf öffnet das Siegel zur 3. Ebene der Devil's Catacomb. Dieses Item ist handelbar.
 30320	Schrumpfkopf	Dieser Dämonenschrumpfkopf öffnet das Siegel zur 3. Ebene der Devil's Catacomb.
@@ -392,7 +392,7 @@
 30330	Stein der Maat	Maat sorgt als Göttin der Gerechtigkeit für Ordnung im Chaos.
 30331	Frostschlüssel	Der Schlüssel ist so kalt wie Eis und öffnet den Zugang zum dritten Stock von Nemeres Warte. Kann nur von Schamanen benutzt werden.
 30332	Nordstern	Siegelstein aus purem Eis. Öffnet den Zugang zum sechsten Stock von Nemeres Warte.
-30333	Eisblumenschlüssel	Der Schlüssel aus Eis öffnet den Zugang zum neunten Stock von Nemeres Warte. Kann nur von Schamanen oder Ninjas benutzt werden.
+30333	Eisblumenschlüssel	Der Schlüssel aus Eis öffnet den Zugang zum neunten Stock von Nemeres Warte.
 30500	Rubin-Gravurmesser	Werkzeug zur Veredelung deiner Waffe
 30501	Goldschelle	Element zur Veredelung deiner Waffe
 30502	Rubinverzierung	Element zur Veredelung deiner Waffe
@@ -589,7 +589,7 @@
 38102	Powersnack (30 Tage)	Verlängert das Leben deines Power Mounts um 30 Tage.
 38200	Rufus-Siegel	Mit diesem Siegel rufst du deinen Wolfswelpen, Rufus, herbei.
 38201	Rufus-Siegel	Mit diesem Siegel rufst du deinen Wolfswelpen, Rufus, herbei.
-39001	Magischer Stein	Dieser Stein gewährt die größte Erfolgschance bei der Itemverbesserung. Der Gegenstand kann außerdem weder zerstört noch verschlechtert werden. Dieses Item ist handelbar.
+39001	Magischer Stein	Dieser Stein gewährt hervorragende Erfolgschancen bei der Itemverbesserung. Der Gegenstand kann außerdem weder zerstört noch verschlechtert werden. Dieses Item ist handelbar.
 39002	Erfahrungsring	Erhöht das Sammeln von Erfahrung 60 Minuten lang um 50%. Dieses Item ist handelbar.
 39003	Pfirsichblütenwein	Getränk, das deine TP augenblicklich um 500 Punkte regeneriert. Dieses Item ist handelbar.
 39004	Segenskugel	Die legendäre Kugel fügt Gegenständen, die bereits mit vier Attributen ausgestattet sind, ein fünftes hinzu. Das Hinzufügen kann allerdings fehlschlagen. Dieses Item ist handelbar.
@@ -606,12 +606,12 @@
 39015	Stein des Schmieds	Mit diesem Stein und einer Segensschriftrolle kann beim Schmied ein Schmiede-Handbuch hergestellt werden. Dieses Item ist handelbar.
 39016	Magisches Eisenerz	Mit diesem Erz und einer Segensschriftrolle kann beim Schmied eine Schriftrolle des Drachen hergestellt werden. Dieses Item ist handelbar.
 39017	Drachengott-Leben	Erhöht deine maximalen TP 30 Minuten lang um 20%. Dieses Item ist handelbar.
-39018	Drachengott-Angriff	Erhöht den Schaden, den du anderen im Kampf zufügst, 30 Minuten lang um 12 bis 15%. Dieses Item ist handelbar.
+39018	Drachengott-Angriff	Erhöht deinen Angriffswert 30 Minuten lang um 20%. Dieses Item ist handelbar.
 39019	Drachengott-Intelligenz	Erhöht deine maximalen MP 30 Minuten lang um 20%. Dieses Item ist handelbar.
-39020	Drachengott-Verteidigung	Verringert den Schaden, den du im Kampf erleidest, 30 Minuten lang um 12 bis 15%. Dieses Item ist handelbar.
+39020	Drachengott-Verteidigung	Verringert den Schaden, den du im Kampf erleidest, 30 Minuten lang um 20%. Dieses Item ist handelbar.
 39021	Drachengottunterstützung	Vitalität, Stärke, Intelligenz und Beweglichkeit deines Charakters erhöhen sich vorübergehend auf das Fünffache. Dieses Item ist handelbar.
 39022	Schriftrolle des Drachen	Beseitigt das Risiko, einen Gegenstand zu zerstören, wenn seine Verbesserung fehlschlägt. Lediglich die Qualität wird um eine Stufe verringert. Zudem erhöht sich die Wahrscheinlichkeit einer erfolgreichen Verbesserung um 10 %. Dieses Item ist handelbar.
-39023	Elixier des Forschers	Dieses Elixier steigert die Qualität gesammelter Forschungsobjekte und damit die Wahrscheinlichkeit ihrer Annahme von dem Auftraggeber. Dieses Item ist handelbar.
+39023	Elixier des Forschers	Dieses Elixier steigert die Qualität gesammelter Forschungsobjekte und damit die Wahrscheinlichkeit ihrer Annahme von dem Auftraggeber. Dieses Item ist handelbar. Gilt nicht für Quests auf Yohara.
 39024	Kritischer Kampf	Erhöht deine Chance, im Kampf einen kritischen Treffer zu landen, 10 Minuten lang um 20%. Dieses Item ist handelbar.
 39025	Durchbohrender Kampf	Erhöht deine Chance, im Kampf einen durchbohrenden Treffer zu landen, 10 Minuten lang um 20%. Dieses Item ist handelbar.
 39026	Geschwindigkeitstrank	Erhöht 30 Minuten lang deine Bewegungsgeschwindigkeit um 60. Dieses Item ist handelbar.
@@ -660,7 +660,7 @@
 41026	Box-Outfit TUR (w)	Kämpferisches Outfit in türkischen Nationalfarben für Boxerinnen.
 41027	Box-Outfit BRA (m)	Kämpferisches Outfit in brasilianischen Nationalfarben für Boxer.
 41028	Box-Outfit BRA (w)	Kämpferisches Outfit in brasilianischen Nationalfarben für Boxerinnen.
-41029	Wüstenkämpfer (Bonus)	Kriegsgewand für Männer, um der menschenfeindlichen Wüste zu trotzen. Item ist handelbar.
+41029	Wüstenkämpfer (Bonus)	Kriegsgewand für Männer, um der menschenfeindlichen Wüste zu trotzen. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
 41030	Wüstenkämpferin (Bonus)	Kriegsgewand für Frauen, um der menschenfeindlichen Wüste zu trotzen. Item ist handelbar.
 41031	Fechtanzug Olympia (m)	Sportlicher Schutzanzug für Fechter. Item ist handelbar.
 41032	Fechtanzug Olympia (w)	Sportlicher Schutzanzug für Fechterinnen. Item ist handelbar.
@@ -852,14 +852,14 @@
 41224	Yongan FC+ (w)	Fußballtrikotsatz in Rot-Weiß für sie. Verleiht dir mindestens einen zufälligen Bonus.
 41225	FC Bakra+ (m)	Fußballtrikotsatz in Dunkelblau-Rot für ihn. Verleiht dir mindestens einen zufälligen Bonus.
 41226	FC Bakra+ (w)	Fußballtrikotsatz in Dunkelblau-Rot für sie. Verleiht dir mindestens einen zufälligen Bonus.
-41227	FC Bokjung+ (m)	Fußballtrikotsatz in Gelb-Blau für ihn. Verleiht dir mindestens einen zufälligen Bonus.
-41228	FC Bokjung+ (w)	Fußballtrikotsatz in Gelb-Blau für sie. Verleiht dir mindestens einen zufälligen Bonus.
-41229	FC Bavaria Hwang+ (m)	Fußballtrikotsatz in Rot-Gold für ihn. Verleiht dir mindestens einen zufälligen Bonus.
-41230	FC Bavaria Hwang+ (w)	Fußballtrikotsatz in Rot-Gold für sie. Verleiht dir mindestens einen zufälligen Bonus.
+41227	FC Bokjung+ (m)	Trikot in ukrainischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41228	FC Bokjung+ (w)	Trikot in ukrainischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
+41229	FC Bavaria Hwang+ (m)	Trikot in walisischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41230	FC Bavaria Hwang+ (w)	Trikot in walisischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41231	Borussia Chunjo+ (m)	Fußballtrikotsatz in Schwarz-Gelb für ihn. Verleiht dir mindestens einen zufälligen Bonus.
 41232	Borussia Chunjo+ (w)	Fußballtrikotsatz in Schwarz-Gelb für sie. Verleiht dir mindestens einen zufälligen Bonus.
-41233	SC Doyum+ (m)	Fußballtrikotsatz in Rot-Weiß für ihn. Verleiht dir mindestens einen zufälligen Bonus.
-41234	SC Doyum+ (w)	Fußballtrikotsatz in Rot-Weiß für sie. Verleiht dir mindestens einen zufälligen Bonus.
+41233	SC Doyum+ (m)	Trikot in österreichischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41234	SC Doyum+ (w)	Trikot in österreichischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41235	SC Hasun Dong+ (m)	Fußballtrikotsatz in Grün-Weiß für ihn. Verleiht dir mindestens einen zufälligen Bonus.
 41236	SC Hasun Dong+ (w)	Fußballtrikotsatz in Grün-Weiß für sie. Verleiht dir mindestens einen zufälligen Bonus.
 41237	CFR Drachenfeuer 07+ (m)	Fußballtrikotsatz in Bordeaux für ihn. Verleiht dir mindestens einen zufälligen Bonus.
@@ -890,20 +890,20 @@
 41262	Drachental SC+ (w)	Fußballtrikotsatz in Dunkelblau-Orange für sie. Verleiht dir mindestens einen zufälligen Bonus.
 41263	Donnerberg FC+ (m)	Fußballtrikotsatz in Rot-Weiß für ihn. Verleiht dir mindestens einen zufälligen Bonus.
 41264	Donnerberg FC+ (w)	Fußballtrikotsatz in Rot-Weiß für sie. Verleiht dir mindestens einen zufälligen Bonus.
-41265	Pyungmoo Saint-Hwang+(m)	Fußballtrikotsatz in Dunkelblau für ihn. Verleiht dir mindestens einen zufälligen Bonus.
-41266	Pyungmoo Saint-Hwang+(w)	Fußballtrikotsatz in Dunkelblau für sie. Verleiht dir mindestens einen zufälligen Bonus.
+41265	Pyungmoo Saint-Hwang+(m)	Trikot in schottischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41266	Pyungmoo Saint-Hwang+(w)	Trikot in schottischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41267	Real Sohan+ (m)	Fußballtrikotsatz in Weiß für ihn. Verleiht dir mindestens einen zufälligen Bonus.
 41268	Real Sohan+ (w)	Fußballtrikotsatz in Weiß für sie. Verleiht dir mindestens einen zufälligen Bonus.
 41269	FC Jinno 04+ (m)	Fußballtrikotsatz in Königsblau-Weiß für ihn. Verleiht dir mindestens einen zufälligen Bonus.
 41270	FC Jinno 04+ (w)	Fußballtrikotsatz in Königsblau-Weiß für sie. Verleiht dir mindestens einen zufälligen Bonus.
-41271	FC Sangsun Dong+ (m)	Fußballtrikotsatz in Schwarz-Orange für ihn. Verleiht dir mindestens einen zufälligen Bonus.
-41272	FC Sangsun Dong+ (w)	Fußballtrikotsatz in Schwarz-Orange für sie. Verleiht dir mindestens einen zufälligen Bonus.
+41271	FC Sangsun Dong+ (m)	Trikot in nordmazedonischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41272	FC Sangsun Dong+ (w)	Trikot in nordmazedonischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41273	SL Jungsun Dong+ (m)	Fußballtrikotsatz in Rot-Weiß für ihn. Verleiht dir mindestens einen zufälligen Bonus.
 41274	SL Jungsun Dong+ (w)	Fußballtrikotsatz in Rot-Weiß für sie. Verleiht dir mindestens einen zufälligen Bonus.
-41275	Sparta Jungrang+ (m)	Fußballtrikotsatz in Rot-Weiß für ihn. Verleiht dir mindestens einen zufälligen Bonus.
-41276	Sparta Jungrang+ (w)	Fußballtrikotsatz in Rot-Weiß für sie. Verleiht dir mindestens einen zufälligen Bonus.
-41277	FC Feuerland+ (m)	Fußballtrikotsatz in Weiß-Schwarz für ihn. Verleiht dir mindestens einen zufälligen Bonus.
-41278	FC Feuerland+ (w)	Fußballtrikotsatz in Weiß-Schwarz für sie. Verleiht dir mindestens einen zufälligen Bonus.
+41275	Sparta Jungrang+ (m)	Trikot in tschechischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41276	Sparta Jungrang+ (w)	Trikot in tschechischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
+41277	FC Feuerland+ (m)	Trikot in finnischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41278	FC Feuerland+ (w)	Trikot in finnischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41279	FC St. Seungryong+ (m)	Fußballtrikotsatz in Blau für ihn. Verleiht dir mindestens einen zufälligen Bonus.
 41280	FC St. Seungryong+ (w)	Fußballtrikotsatz in Blau für sie. Verleiht dir mindestens einen zufälligen Bonus.
 41291	Hasenkostüm (schwarz)	Hasenkostüm aus schwarzem Plüsch für ihn
@@ -914,8 +914,8 @@
 41296	Häschenkostüm (blau)	Hasenkostüm aus blauem Plüsch für sie
 41297	Häschenkostüm (grün)	Hasenkostüm aus grünem Plüsch für sie
 41298	Häschenkostüm (pink)	Hasenkostüm aus pinkfarbenem Plüsch für sie
-41299	Hasenkostüm+ (schwarz)	Hasenkostüm aus schwarzem Plüsch für ihn. Verleiht dir mind. einen zufälligen Bonus.
-41300	Hasenkostüm+ (blau)	Hasenkostüm aus blauem Plüsch für ihn. Verleiht dir mind. einen zufälligen Bonus.
+41299	Hasenkostüm+ (schwarz)	Hasenkostüm aus schwarzem Plüsch für ihn. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
+41300	Hasenkostüm+ (blau)	Hasenkostüm aus blauem Plüsch für ihn. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
 41301	Hasenkostüm+ (grün)	Hasenkostüm aus grünem Plüsch für ihn. Verleiht dir mind. einen zufälligen Bonus.
 41302	Hasenkostüm+ (pink)	Hasenkostüm aus pinkfarbenem Plüsch für ihn. Verleiht dir mind. einen zufälligen Bonus.
 41303	Häschenkostüm+ (schwarz)	Hasenkostüm aus schwarzem Plüsch für sie. Verleiht dir mind. einen zufälligen Bonus.
@@ -928,7 +928,7 @@
 41310	Kobragewand+ (w)	Schwarzschimmerndes Gewand mit Schlangensymbolen. Verleiht dir mindestens einen zufälligen Bonus.
 41311	Wüstenkämpfer (schwarz)	Schwarzes Kriegsgewand für Männer.
 41312	Wüstenkämpferin (schw.)	Schwarzes Kriegsgewand für Frauen.
-41313	Wüstenkämpfer+ (schwarz)	Schwarzes Kriegsgewand für Männer. Verleiht dir mindestens einen zufälligen Bonus.
+41313	Wüstenkämpfer+ (schwarz)	Schwarzes Kriegsgewand für Männer. Verleiht dir mindestens einen zufälligen Bonus. Item ist handelbar.
 41314	Wüstenkämpferin+ (schw.)	Schwarzes Kriegsgewand für Frauen. Verleiht dir mindestens einen zufälligen Bonus.
 41315	Azraels Rüstung (m)	Stählerne Rüstung des berüchtigten Dämonenfürsten
 41316	Azraels Rüstung (w)	Stählerne Rüstung des berüchtigten Dämonenfürsten
@@ -1012,8 +1012,8 @@
 41395	WM-Trikot ARG (w/Bonus)	WM-Trikotsatz im Stil der argentinischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41396	WM-Trikot AUS (m/Bonus)	WM-Trikotsatz im Stil der australischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41397	WM-Trikot AUS (w/Bonus)	WM-Trikotsatz im Stil der australischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41398	WM-Trikot BEL (m/Bonus)	WM-Trikotsatz im Stil der belgischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41399	WM-Trikot BEL (w/Bonus)	WM-Trikotsatz im Stil der belgischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41398	WM-Trikot BEL (m/Bonus)	Trikot in belgischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41399	WM-Trikot BEL (w/Bonus)	Trikot in belgischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41400	WM-Trikot BIH (m/Bonus)	WM-Trikotsatz im Stil der bosnisch-herzegowinischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41401	WM-Trikot BIH (w/Bonus)	WM-Trikotsatz im Stil der bosnisch-herzegowinischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41402	WM-Trikot BRA (m/Bonus)	WM-Trikotsatz im Stil der brasilianischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
@@ -1028,47 +1028,47 @@
 41411	WM-Trikot CRC (w/Bonus)	WM-Trikotsatz im Stil der costa-ricanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41412	WM-Trikot CIV (m/Bonus)	WM-Trikotsatz im Stil der ivorischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41413	WM-Trikot CIV (w/Bonus)	WM-Trikotsatz im Stil der ivorischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41414	WM-Trikot CRO (m/Bonus)	WM-Trikotsatz im Stil der kroatischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41415	WM-Trikot CRO (w/Bonus)	WM-Trikotsatz im Stil der kroatischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41414	WM-Trikot CRO (m/Bonus)	Trikot in kroatischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41415	WM-Trikot CRO (w/Bonus)	Trikot in kroatischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41416	WM-Trikot ECU (m/Bonus)	WM-Trikotsatz im Stil der ecuadorianischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41417	WM-Trikot ECU (w/Bonus)	WM-Trikotsatz im Stil der ecuadorianischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41418	WM-Trikot ENG (m/Bonus)	WM-Trikotsatz im Stil der englischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41419	WM-Trikot ENG (w/Bonus)	WM-Trikotsatz im Stil der englischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41420	WM-Trikot FRA (m/Bonus)	WM-Trikotsatz im Stil der französischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41421	WM-Trikot FRA (w/Bonus)	WM-Trikotsatz im Stil der französischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41422	WM-Trikot GER (m/Bonus)	WM-Trikotsatz im Stil der deutschen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41423	WM-Trikot GER (w/Bonus)	WM-Trikotsatz im Stil der deutschen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41418	WM-Trikot ENG (m/Bonus)	Trikot in englischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41419	WM-Trikot ENG (w/Bonus)	Trikot in englischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
+41420	WM-Trikot FRA (m/Bonus)	Trikot in französischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41421	WM-Trikot FRA (w/Bonus)	Trikot in französischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
+41422	WM-Trikot GER (m/Bonus)	Trikot in deutschen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41423	WM-Trikot GER (w/Bonus)	Trikot in deutschen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41424	WM-Trikot GHA (m/Bonus)	WM-Trikotsatz im Stil der ghanaischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41425	WM-Trikot GHA (w/Bonus)	WM-Trikotsatz im Stil der ghanaischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41426	WM-Trikot GRE (m/Bonus)	WM-Trikotsatz im Stil der griechischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41426	WM-Trikot GRE (m/Bonus)	WM-Trikotsatz im Stil der griechischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
 41427	WM-Trikot GRE (w/Bonus)	WM-Trikotsatz im Stil der griechischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41428	WM-Trikot HON (m/Bonus)	WM-Trikotsatz im Stil der honduranischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41429	WM-Trikot HON (w/Bonus)	WM-Trikotsatz im Stil der honduranischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41430	WM-Trikot IRN (m/Bonus)	WM-Trikotsatz im Stil der iranischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41431	WM-Trikot IRN (w/Bonus)	WM-Trikotsatz im Stil der iranischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41432	WM-Trikot ITA (m/Bonus)	WM-Trikotsatz im Stil der italienischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41433	WM-Trikot ITA (w/Bonus)	WM-Trikotsatz im Stil der italienischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41432	WM-Trikot ITA (m/Bonus)	Trikot in italienischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41433	WM-Trikot ITA (w/Bonus)	Trikot in italienischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41434	WM-Trikot JPN (m/Bonus)	WM-Trikotsatz im Stil der japanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41435	WM-Trikot JPN (w/Bonus)	WM-Trikotsatz im Stil der japanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41436	WM-Trikot KOR (m/Bonus)	WM-Trikotsatz im Stil der koreanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41436	WM-Trikot KOR (m/Bonus)	WM-Trikotsatz im Stil der koreanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
 41437	WM-Trikot KOR (w/Bonus)	WM-Trikotsatz im Stil der koreanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41438	WM-Trikot MEX (m/Bonus)	WM-Trikotsatz im Stil der mexikanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41438	WM-Trikot MEX (m/Bonus)	WM-Trikotsatz im Stil der mexikanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
 41439	WM-Trikot MEX (w/Bonus)	WM-Trikotsatz im Stil der mexikanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41440	WM-Trikot NED (m/Bonus)	WM-Trikotsatz im Stil der niederländischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41441	WM-Trikot NED (w/Bonus)	WM-Trikotsatz im Stil der niederländischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41440	WM-Trikot NED (m/Bonus)	Trikot in niederländischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41441	WM-Trikot NED (w/Bonus)	Trikot in niederländischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41442	WM-Trikot NGA (m/Bonus)	WM-Trikotsatz im Stil der nigerianischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41443	WM-Trikot NGA (w/Bonus)	WM-Trikotsatz im Stil der nigerianischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41444	WM-Trikot POR (m/Bonus)	WM-Trikotsatz im Stil der portugiesischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41445	WM-Trikot POR (w/Bonus)	WM-Trikotsatz im Stil der portugiesischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41446	WM-Trikot RUS (m/Bonus)	WM-Trikotsatz im Stil der russischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41447	WM-Trikot RUS (w/Bonus)	WM-Trikotsatz im Stil der russischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41448	WM-Trikot ESP (m/Bonus)	WM-Trikotsatz im Stil der spanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41449	WM-Trikot ESP (w/Bonus)	WM-Trikotsatz im Stil der spanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41450	WM-Trikot SUI (m/Bonus)	WM-Trikotsatz im Stil der schweizerischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41451	WM-Trikot SUI (w/Bonus)	WM-Trikotsatz im Stil der schweizerischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41444	WM-Trikot POR (m/Bonus)	Trikot in portugiesischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41445	WM-Trikot POR (w/Bonus)	Trikot in portugiesischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
+41446	WM-Trikot RUS (m/Bonus)	Trikot in russischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41447	WM-Trikot RUS (w/Bonus)	Trikot in russischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
+41448	WM-Trikot ESP (m/Bonus)	Trikot in spanischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41449	WM-Trikot ESP (w/Bonus)	Trikot in spanischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
+41450	WM-Trikot SUI (m/Bonus)	Trikot in schweizerischen Nationalfarben für Fußballer. Verleiht dir mindestens einen zufälligen Bonus.
+41451	WM-Trikot SUI (w/Bonus)	Trikot in schweizerischen Nationalfarben für Fußballerinnen. Verleiht dir mindestens einen zufälligen Bonus.
 41452	WM-Trikot URU (m/Bonus)	WM-Trikotsatz im Stil der uruguayischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 41453	WM-Trikot URU (w/Bonus)	WM-Trikotsatz im Stil der uruguayischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
-41454	WM-Trikot USA (m/Bonus)	WM-Trikotsatz im Stil der amerikanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
+41454	WM-Trikot USA (m/Bonus)	WM-Trikotsatz im Stil der amerikanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
 41455	WM-Trikot USA (w/Bonus)	WM-Trikotsatz im Stil der amerikanischen Fußballnationalmannschaft. Verleiht dir mind. einen zufälligen Bonus.
 45001	Häschenohren (braun)	Braune Hasenohren für sie
 45002	Hasenohren (braun)	Braune Mütze mit Hasenohren für ihn
@@ -1080,7 +1080,7 @@
 45008	Fußballfrisur GER (w)	Eine sportliche Frisur mit Haarband in den deutschen Nationalfarben für Fußballerinnen.
 45009	Rastalocken (m)	Die langen Haare sind zu Rastalocken gedreht und am Hinterkopf zusammengebunden.
 45010	Boxfrisur GER (w)	Eine sportliche Frisur mit Haarband in den deutschen Nationalfarben für Boxerinnen.
-45011	Kopftuch+ (m)	Eine Kopfbedeckung aus feinstem Stoff für Männer. Item ist handelbar.
+45011	Kopftuch+ (m)	Eine Kopfbedeckung aus feinstem Stoff für Männer. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
 45012	Kopftuch+ (w)	Eine Kopfbedeckung aus feinstem Stoff für Frauen. Item ist handelbar.
 45013	OlaSeku (m)	Oben lang, Seite kurz - extravaganter Sidecut für Männer. Item ist handelbar.
 45014	Fechtfrisur (w)	Eine sportliche Frisur für Fechterinnen. Item ist handelbar.
@@ -1176,8 +1176,8 @@
 45124	Häschenohren (blau)	Blaue Hasenohren für sie
 45125	Häschenohren (grün)	Grüne Hasenohren für sie
 45126	Häschenohren (pink)	Pinkfarbene Hasenohren für sie
-45127	Hasenohren+ (schwarz)	Schwarze Mütze mit Hasenohren für ihn. Verleiht dir mind. einen zufälligen Bonus.
-45128	Hasenohren+ (blau)	Blaue Mütze mit Hasenohren für ihn. Verleiht dir mind. einen zufälligen Bonus.
+45127	Hasenohren+ (schwarz)	Schwarze Mütze mit Hasenohren für ihn. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
+45128	Hasenohren+ (blau)	Blaue Mütze mit Hasenohren für ihn. Verleiht dir mind. einen zufälligen Bonus. Item ist handelbar.
 45129	Hasenohren+ (grün)	Grüne Mütze mit Hasenohren für ihn. Verleiht dir mind. einen zufälligen Bonus.
 45130	Hasenohren+ (pink)	Pinkfarbene Mütze mit Hasenohren für ihn. Verleiht dir mind. einen zufälligen Bonus.
 45131	Häschenohren+ (schwarz)	Schwarze Hasenohren für sie. Verleiht dir mind. einen zufälligen Bonus.
@@ -1198,7 +1198,7 @@
 45146	Maya-Maske+	Furchterregende Maske der Mayakrieger. Verleiht dir mindestens zwei Boni.
 45147	Schwarzer Turban (m)	Eine Kopfbedeckung aus schwarzem Stoff für Männer.
 45148	Schwarzer Turban (w)	Eine Kopfbedeckung aus schwarzem Stoff für Frauen.
-45149	Schwarzer Turban+ (m)	Eine Kopfbedeckung aus schwarzem Stoff für Männer. Verleiht dir mindestens einen zufälligen Bonus.
+45149	Schwarzer Turban+ (m)	Eine Kopfbedeckung aus schwarzem Stoff für Männer. Verleiht dir mindestens einen zufälligen Bonus. Item ist handelbar.
 45150	Schwarzer Turban+ (w)	Eine Kopfbedeckung aus schwarzem Stoff für Frauen. Verleiht dir mindestens einen zufälligen Bonus.
 45151	Azraels Helm (m)	Kopfbedeckung mit der Fratze des berüchtigten Dämonenfürsten.
 45152	Azraels Helm (w)	Kopfbedeckung mit der Fratze des berüchtigten Dämonenfürsten.
@@ -1255,7 +1255,7 @@
 50053	Militär-Pferdebuch	Sobald du die Qualifikationsprüfung der Profis beim Stallburschen bestanden hast, ermöglicht dir diese Lizenz, dein Pferd zu rufen.
 50054	Heu	Getrocknete Gräser für die Fütterung eines Anfängerpferdes.
 50055	Karotte	Das gängige Futter der Pferde, die längere Strecken zurücklegen müssen.
-50056	Roter Ginseng	Dieser mit heißem Wasserdampf behandelter Ginseng ist das ideale Futter für erfahrene Kriegspferde.
+50056	Roter Ginseng	Dieser mit heißem Wasserdampf behandelte Ginseng ist das ideale Futter für erfahrene Kriegspferde.
 50057	Kraut der leichten Affen	Ein legendäres Kraut, mit dem Reitanfänger ihr Pferd wiederbeleben können. Um an die Pflanzen zu gelangen, muss man an den Affen im Anfängerdungeon vorbeikommen.
 50058	Kraut d. normalen Affen	Ein legendäres Kraut, mit dem fortgeschrittene Reiter ihr Kampfpferd wiederbeleben können. Um an die Pflanzen zu gelangen, muss man an den Affen im mittleren Dungeon vorbeikommen.
 50059	Kraut d. schweren Affen	Ein legendäres Kraut, mit dem Reit-Profis ihr Militärpferd wiederbeleben können. Um an die Pflanzen zu gelangen, muss man an den Affen im Expertendungeon vorbeikommen.
@@ -1275,13 +1275,13 @@
 50080	Truhe des roten Drachen	Die Truhe des roten Drachen. Das schwere Schloss weist darauf hin, dass sie etwas Wertvolles enthalten muss.
 50081	Dämonenkönigtruhe	Die Truhe des Dämonenkönigs. Das schwere Schloss weist darauf hin, dass sie etwas Wertvolles enthalten muss.
 50082	Sensenmanntruhe	Die Truhe des Sensenmanns. Das schwere Schloss weist darauf hin, dass sie etwas Wertvolles enthalten muss.
-50083	Reitkarte	Du kannst für einige Zeit ein Pony reiten, wenn du die Karte einem Stallburschen zeigst.
+50083	Reitkarte	Öffne die Reiterlaubnis, um deine Reitkarte zu erhalten. Mit ihr kannst du ab Level 10 für einige Zeit ein Pony reiten.
 50084	Schlüsselstein	Diesen Stein umgibt eine energiegeladene Aura. Er wirkt gegen Siegel-Magie.
 50091	Goldfisch-Sushi	Eine beliebte Spezialität aus rohem Goldfisch und erkaltetem Reis, die in kleinen Stücken angeboten wird.
 50092	Karpfen-Sushi	Eine beliebte Spezialität aus rohem Karpfen und erkaltetem Reis, die in kleinen Stücken angeboten wird.
 50093	Lachs-Sushi	Eine beliebte Spezialität aus rohem Lachs und kaltem Reis. Erhöht deinen Angriffswert für 30 Sekunden um 10 Punkte.
 50094	Wels-Sushi	Eine beliebte Spezialität aus rohem Wels und kaltem Reis. Erhöht deine Verteidigung für 30 Sekunden um 10 Punkte.
-50096	Fußball	Kick it like Baljit-Elvedin!
+50096	Fußball	Kick it like Baljit-Elvedin! Der Ball ist nicht handelbar.
 50100	Feuerwerk	Erleuchtet den Himmel während eines Festivals violett.
 50101	Feuerwerk	Erleuchtet den Himmel während eines Festivals gelb.
 50102	Feuerwerk	Erleuchtet den Himmel während eines Festivals blau.
@@ -1289,13 +1289,13 @@
 50104	Feuerwerk	Erleuchtet den Himmel während eines Festivals grün.
 50105	Feuerwerk	Erleuchtet den Himmel während eines Festivals weiß.
 50106	Weihnachtsfeuerwerk	Dieses Festfeuerwerk ist nicht nur farbenprächtiger, sondern brennt auch länger als ein normales.
-50108	Feuerwerkskreisel	Ein Bodenfeuerwerk, das goldene und silberne Funken versprüht.
+50108	Feuerwerkskreisel	Ein handgefertigter Feuerwerkskreisel, dem Kinder gerne zuschauen, wenn er sich lustig dreht. | | Chance auf Betäubung: 5 % | Dauer: 10 Minuten
 50118	Drachen-Schatztruhe	
 50119	Metinstein-Beutel	
 50120	Eisenkassette	Das stabile Behältnis stammt aus der Grotte der Verbannung.
 50121	Eisenkiste	Das stabile Behältnis stammt aus der Grotte der Verbannung.
 50122	Eisentruhe	Das stabile Behältnis stammt aus der Grotte der Verbannung.
-50123	Eiscreme	
+50123	Eiscreme	Energieschub! Diese Eiscreme erhöht deine Bewegungsgeschwindigkeit für 30 Minuten um 60. Achtung: Erneutes Aktivieren, während der Energieschub noch anhält, überschreibt die Laufzeit.
 50124	Morsche Holzkiste	Aus dem Inneren scheinen leise Tierlaute zu dringen.
 50125	Mysteriöse Truhe	Die Truhe ist erstaunlich leicht - als wäre sie leer...
 50126	Mysteriöse Truhe	Die Truhe ist erstaunlich leicht - als wäre sie leer...
@@ -1340,7 +1340,7 @@
 50180	Leerer Korb	Ein leerer Korb, in den du Ostereier legen kannst
 50181	Korb mit Ostereiern	Ein Korb, gefüllt mit Ostereiern.
 50182	Segenstruhe	Eine gesegnete Truhe mit unbekanntem Inhalt.
-50183	Süßigkeiten	Diese Süßigkeiten haben eine besondere Wirkung: Bewegungsgeschwindigkeit + 10%, Schaden +5%, Erfahrung +10%. Sie hält 30 Minuten.
+50183	Süßigkeiten	Diese Süßigkeiten haben eine besondere Wirkung: Bewegungsgeschwindigkeit +10, Schaden +5%, Erfahrung +10%. Sie hält 30 Minuten.
 50184	Siehe Kommentar	
 50185	Siehe Kommentar	
 50186	Truhe des Azrael	Dämonische Kräfte halten diese Truhe verschlossen. Es müssen sich wertvolle Schätze darin verbergen.
@@ -1361,7 +1361,7 @@
 50212	Lehrlingstruhe I	Dein Begrüßungsgeschenk enthält eine Grundausstattung für den optimalen Start ins Abenteuer.
 50213	Lehrlingstruhe I	Dein Begrüßungsgeschenk enthält eine Grundausstattung für den optimalen Start ins Abenteuer.
 50215	Halloween-Truhe	Eine Truhe mit einer Kürbisfratze auf der Seite. Mit einem Quietschen, das einem Kichern gleicht, öffnet sich der Deckel und gibt ihren Inhalt preis.
-50216	Glühwein	Ein heißes Getränk aus Wein und Gewürzen, das dir 30 Minuten lang +10% Geschwindigkeit, +5% Schaden und +10% Erfahrung verleiht.
+50216	Glühwein	Ein heißes Getränk aus Wein und Gewürzen, das dir +10 % Geschwindigkeit, +5 % Schaden und +10 % Erfahrung verleiht.
 50249	Truhe des Triumphs	Die Truhe enthält ein zufälliges Item als Belohnung für alle Olympioniken.
 50252	Cor Draconis	Das kristallene Drachenherz birgt die Seele, den Drachenstein, in sich.
 50253	Purpurne Blattgold-Kiste	
@@ -1372,8 +1372,8 @@
 50258	Cor Draconis (Antik)	Das kristallene Drachenherz birgt die Seele, den Drachenstein, in sich.
 50259	Cor Draconis (Legendär)	Das kristallene Drachenherz birgt die Seele, den Drachenstein, in sich.
 50260	Cor Draconis (Roh)	Das kristallene Drachenherz birgt die Seele, den Drachenstein, in sich.
-50263	Pergament der Bindung	Mit diesem Vertrag bindest du ein Item deiner Wahl fest an die Seele deines Charakters. Solang er besteht, kann das Item nicht gehandelt, fallen gelassen oder verzaubert werden.
-50264	Pergament der Lösung	Dieses Item löst die Bindung eines Gegenstandes an deine Seele wieder auf.
+50263	Pergament der Bindung	Dieser Vertrag bindet einen Gegenstand deiner Wahl fest an die Seele deines Charakters. Solange er besteht, kann der Gegenstand nicht gehandelt, fallen gelassen oder verzaubert werden.
+50264	Pergament der Lösung	Löst die Bindung eines Gegenstandes an deine Seele wieder auf.
 50265	Goldener Fußball	Der Ball ist rund und golden.
 50300	Fertigkeitsbuch	Erhöht das Level der Meisterfertigkeit.
 50301	Sun-zi-Kriegskunst	Das erste der drei Bücher der Kriegsstrategie - es verstärkt die Führungskraft seines Besitzers. Das Buch verschwindet nach dem Lesen.
@@ -1439,19 +1439,19 @@
 50512	Regenbogenstein	Ein Stein, der die spirituelle Wahrnehmung öffnet und alle Fertigkeiten enthüllt.
 50513	Seelenstein	Der legendäre Stein, der verwendet wird, um die Großmeisterfertigkeiten zu erhöhen. Der Stein verschwindet nach dem Benutzen.
 50600	Bergbau-Buch	Die Lektüre dieses Buches ermöglicht es, deine Bergbau-Fertigkeit zu verbessern. Das Buch verschwindet nach dem Lesen.
-50601	Diamantstein	Durch Verwendung des Diamantenofens der Gilde kann aus diesem Stein ein Diamant hergestellt werden.
-50602	Bernstein	Durch Verwendung des Bernsteinofens der Gilde kann aus diesem Rohstein ein goldener Schmuck-Bernstein hergestellt werden.
-50603	Fossiler Stamm	Durch Verwendung des Fossilholzofens der Gilde kann aus diesem Stamm Fossilholz hergestellt werden.
-50604	Kupfererz	Durch Verwendung des Kupferofens der Gilde kann aus diesem Erz Kupfer hergestellt werden.
-50605	Silbererz	Durch Verwendung des Silberofens der Gilde kann aus diesem Erz Silber hergestellt werden.
-50606	Golderz	Durch Verwendung des Goldofens der Gilde kann aus diesem Erz Gold hergestellt werden.
-50607	Jadeerz	Durch Verwendung des Jadeofens der Gilde kann aus diesem Erz Jade hergestellt werden.
-50608	Ebenholzerz	Durch Verwendung des Ebenholzofens der Gilde kann aus diesem Erz Ebenholz hergestellt werden.
-50609	Stück Perle	Durch Verwendung des Perlenofens der Gilde kann aus diesem Stück eine Perle hergestellt werden.
-50610	Weißgolderz	Durch Verwendung des Weißgoldofens der Gilde kann aus diesem Erz Weißgold hergestellt werden.
-50611	Kristallerz	Durch Verwendung des Kristallofens der Gilde kann aus diesem Erz ein Kristall hergestellt werden.
-50612	Amethysterz	Durch Verwendung des Amethystofens der Gilde kann aus diesem Erz ein Amethyst hergestellt werden.
-50613	Himmelstränenerz	Durch Verwendung des Himmelstränenofens der Gilde kann aus diesem Erz eine Himmelsträne hergestellt werden.
+50601	Diamantstein	Durch Verwendung des Gildenofens kann aus diesem Stein ein Diamant hergestellt werden.
+50602	Bernstein	Durch Verwendung des Gildenofens kann aus diesem Rohstein ein goldener Schmuck-Bernstein hergestellt werden.
+50603	Fossiler Stamm	Durch Verwendung des Gildenofens kann aus diesem Stamm Fossilholz hergestellt werden.
+50604	Kupfererz	Durch Verwendung des Gildenofens kann aus diesem Erz Kupfer hergestellt werden.
+50605	Silbererz	Durch Verwendung des Gildenofens kann aus diesem Erz Silber hergestellt werden.
+50606	Golderz	Durch Verwendung des Gildenofens kann aus diesem Erz Gold hergestellt werden.
+50607	Jadeerz	Durch Verwendung des Gildenofens kann aus diesem Erz Jade hergestellt werden.
+50608	Ebenholzerz	Durch Verwendung des Gildenofens kann aus diesem Erz Ebenholz hergestellt werden.
+50609	Stück Perle	Durch Verwendung des Gildenofens kann aus diesem Stück eine Perle hergestellt werden.
+50610	Weißgolderz	Durch Verwendung des Gildenofens kann aus diesem Erz Weißgold hergestellt werden.
+50611	Kristallerz	Durch Verwendung des Gildenofens kann aus diesem Erz ein Kristall hergestellt werden.
+50612	Amethysterz	Durch Verwendung des Gildenofens kann aus diesem Erz ein Amethyst hergestellt werden.
+50613	Himmelstränenerz	Durch Verwendung des Gildenofens kann aus diesem Erz eine Himmelsträne hergestellt werden.
 50614	Seelenkristallerz	Durch Verwendung des Gildenofens kann aus diesem Erz ein Seelenkristall hergestellt werden.
 50615	Rubinerz	Durch Verwendung des Gildenofens kann aus diesem Erz ein Rubin hergestellt werden.
 50616	Granaterz	Durch Verwendung des Gildenofens kann aus diesem Erz ein Granat hergestellt werden.
@@ -1511,8 +1511,8 @@
 50810	Distelsaft	Der aus Disteln gewonnene Saft stärkt die Knochen.
 50811	Dattelextrakt	Der aus Datteln gewonnene, süße Extrakt ist äußerst nahrhaft und sättigend.
 50812	Sam-Zi Pflanzensaft	Der aus der Sam-Zi Pflanze gewonnene Saft wirkt stärkend.
-50813	Sim-Wasser	Ein Trank aus Pfirsichblütensaft und Flieder, der 3 Minuten lang die Chance auf durchbohrende Treffer um 10% erhöht.
-50814	Dok-Wasser	Ein Trank aus Glockenblumensaft und Flieder, der 3 Minuten lang die Chance auf kritische Treffer um 10% erhöht.
+50813	Sim-Wasser	Ein Trank aus Pfirsichblütensaft und Flieder, der die Chance auf durchbohrende Treffer um 10 % erhöht.
+50814	Dok-Wasser	Ein Trank aus Glockenblumensaft und Flieder, der die Chance auf kritische Treffer um 10 % erhöht.
 50815	Bo-Wasser	Ein Trank aus Kakiblütensaft und Tue-Pilzen, der die Konzentrationsfähigkeit stärkt.
 50816	Young-Wasser	Ein Trank aus Gango-Wurzelsaft und Tue-Pilzen, der die Leistungsfähigkeit unterstützt.
 50817	Zin-Wasser	Ein Trank aus Sim-Wasser und Alpenrosen, der den Angriffswert 3 Minuten lang um 50 Punkte erhöht.
@@ -1536,7 +1536,7 @@
 51503	Cor Draconis (normal)	Kristallenes Drachenherz. Rang: normal. Beinhaltet einen matten Drachenstein der Klasse Roh bis Schliff.
 51504	Cor Draconis (edel)	Kristallenes Drachenherz. Rang: edel. Beinhaltet einen matten Drachenstein der Klasse Roh bis Rar.
 51505	Cor Draconis (kostbar)	Kristallenes Drachenherz. Rang: kostbar. Beinhaltet einen matten Drachenstein der Klasse Roh bis Antik.
-51506	Cor Draconis (mythisch)	Kristallenes Drachenherz. Rang: mythisch. Beinhaltet einen matten Drachenstein der Klasse Schliff bis Legendär.
+51506	Cor Draconis (mythisch)	Kristallenes Drachenherz. Rang: mystisch. Beinhaltet einen matten Drachenstein der Klasse Schliff bis Legendär.
 51507	Cor Draconis (Schliff)	Das kristallene Drachenherz beinhaltet einen zufälligen Drachenstein der Klasse Schliff.
 51508	Cor Draconis (Rar)	Das kristallene Drachenherz beinhaltet einen zufälligen Drachenstein der Klasse Rar.
 51509	Cor Draconis (Antik)	Das kristallene Drachenherz beinhaltet einen zufälligen Drachenstein der Klasse Antik.
@@ -1586,12 +1586,12 @@
 51553	Cor Saphirum (ewig)	Blauer Cor Draconis. Rang: ewig. Beinhaltet einen matten Drachensaphir der Klasse Schliff bis Antik.
 51554	Cor Granatum (ewig)	Orangefarbener Cor Draconis. Rang: ewig. Beinhaltet einen matten Drachengranat der Klasse Schliff bis Antik.
 51555	Cor Atrum (ewig)	Schwarzer Cor Draconis. Rang: ewig. Beinhaltet einen matten Drachenonyx der Klasse Schliff bis Antik.
-51556	Cor Diamas (mythisch)	Weißer Cor Draconis. Rang: mythisch. Beinhaltet einen matten Drachendiamant der Klasse Schliff bis Legendär.
-51557	Cor Rubinum (mythisch)	Roter Cor Draconis. Rang: mythisch. Beinhaltet einen matten Drachenrubin der Klasse Schliff bis Legendär.
-51558	Cor Jadeit (mythisch)	Grüner Cor Draconis. Rang: mythisch. Beinhaltet einen matten Drachenjade der Klasse Schliff bis Legendär.
-51559	Cor Saphirum (mythisch)	Blauer Cor Draconis. Rang: mythisch. Beinhaltet einen matten Drachensaphir der Klasse Schliff bis Legendär.
-51560	Cor Granatum (mythisch)	Orangefarbener Cor Draconis. Rang: mythisch. Beinhaltet einen matten Drachengranat der Klasse Schliff bis Legendär.
-51561	Cor Atrum (mythisch)	Schwarzer Cor Draconis. Rang: mythisch. Beinhaltet einen matten Drachenonyx der Klasse Schliff bis Legendär.
+51556	Cor Diamas (mythisch)	Weißer Cor Draconis. Rang: mystisch. Beinhaltet einen matten Drachendiamant der Klasse Schliff bis Legendär.
+51557	Cor Rubinum (mythisch)	Roter Cor Draconis. Rang: mystisch. Beinhaltet einen matten Drachenrubin der Klasse Schliff bis Legendär.
+51558	Cor Jadeit (mythisch)	Grüner Cor Draconis. Rang: mystisch. Beinhaltet einen matten Drachenjade der Klasse Schliff bis Legendär.
+51559	Cor Saphirum (mythisch)	Blauer Cor Draconis. Rang: mystisch. Beinhaltet einen matten Drachensaphir der Klasse Schliff bis Legendär.
+51560	Cor Granatum (mythisch)	Orangefarbener Cor Draconis. Rang: mystisch. Beinhaltet einen matten Drachengranat der Klasse Schliff bis Legendär.
+51561	Cor Atrum (mythisch)	Schwarzer Cor Draconis. Rang: mystisch. Beinhaltet einen matten Drachenonyx der Klasse Schliff bis Legendär.
 51562	Cor Draconis (episch)	Kristallenes Drachenherz. Rang: episch. Beinhaltet einen matten Drachenstein der Klasse Rar bis Antik.
 51563	Cor Diamas (episch)	Weißer Cor Draconis. Rang: episch. Beinhaltet einen matten Drachendiamant der Klasse Rar bis Antik.
 51564	Cor Rubinum (episch)	Roter Cor Draconis. Rang: episch. Beinhaltet einen matten Drachenrubin der Klasse Rar bis Antik.
@@ -1648,13 +1648,13 @@
 51615	Cor Saphirum+ (ewig)	Mächtiger Cor Draconis. Rang: ewig. Beinhaltet einen Drachensaphir der Klasse Schliff bis Antik mit zufälligem Reinheitsgrad.
 51616	Cor Granatum+ (ewig)	Mächtiger Cor Draconis. Rang: ewig. Beinhaltet einen Drachengranat der Klasse Schliff bis Antik mit zufälligem Reinheitsgrad.
 51617	Cor Atrum+ (ewig)	Mächtiger Cor Draconis. Rang: ewig. Beinhaltet einen Drachenonyx der Klasse Schliff bis Antik mit zufälligem Reinheitsgrad.
-51618	Cor Draconis+ (mythisch)	Mächtiger Cor Draconis. Rang: mythisch. Beinhaltet einen Drachenstein der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
-51619	Cor Diamas+ (mythisch)	Mächtiger Cor Draconis. Rang: mythisch. Beinhaltet einen Drachendiamant der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
-51620	Cor Rubinum+ (mythisch)	Mächtiger Cor Draconis. Rang: mythisch. Beinhaltet einen Drachenrubin der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
-51621	Cor Jadeit+ (mythisch)	Mächtiger Cor Draconis. Rang: mythisch. Beinhaltet einen Drachenjade der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
-51622	Cor Saphirum+ (mythisch)	Mächtiger Cor Draconis. Rang: mythisch. Beinhaltet einen Drachensaphir der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
-51623	Cor Granatum+ (mythisch)	Mächtiger Cor Draconis. Rang: mythisch. Beinhaltet einen Drachengranat der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
-51624	Cor Atrum+ (mythisch)	Mächtiger Cor Draconis. Rang: mythisch. Beinhaltet einen Drachenonyx der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
+51618	Cor Draconis+ (mythisch)	Mächtiger Cor Draconis. Rang: mystisch. Beinhaltet einen Drachenstein der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
+51619	Cor Diamas+ (mythisch)	Mächtiger Cor Draconis. Rang: mystisch. Beinhaltet einen Drachendiamant der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
+51620	Cor Rubinum+ (mythisch)	Mächtiger Cor Draconis. Rang: mystisch. Beinhaltet einen Drachenrubin der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
+51621	Cor Jadeit+ (mythisch)	Mächtiger Cor Draconis. Rang: mystisch. Beinhaltet einen Drachenjade der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
+51622	Cor Saphirum+ (mythisch)	Mächtiger Cor Draconis. Rang: mystisch. Beinhaltet einen Drachensaphir der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
+51623	Cor Granatum+ (mythisch)	Mächtiger Cor Draconis. Rang: mystisch. Beinhaltet einen Drachengranat der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
+51624	Cor Atrum+ (mythisch)	Mächtiger Cor Draconis. Rang: mystisch. Beinhaltet einen Drachenonyx der Klasse Schliff bis Legendär mit zufälligem Reinheitsgrad.
 51625	Cor Draconis+ (episch)	Mächtiger Cor Draconis. Rang: episch. Beinhaltet einen Drachenstein der Klasse Rar bis Antik mit zufälligem Reinheitsgrad.
 51626	Cor Diamas+ (episch)	Mächtiger Cor Draconis. Rang: episch. Beinhaltet einen Drachendiamant der Klasse Rar bis Antik mit zufälligem Reinheitsgrad.
 51627	Cor Rubinum+ (episch)	Mächtiger Cor Draconis. Rang: episch. Beinhaltet einen Drachenrubin der Klasse Rar bis Antik mit zufälligem Reinheitsgrad.
@@ -1682,121 +1682,121 @@
 52003	Junger Keiler (Siegel)	Das Siegel ruft deinen Jungen Keiler herbei. Nach seiner Kampfausbildung erhöht er die TP seines Reiters um bis zu 500.
 52004	Junger Keiler (Siegel)	Das Siegel ruft deinen Jungen Keiler herbei. Nach seiner Kampfausbildung erhöht er den Verteidigungswert seines Reiters um bis zu 150.
 52005	Junger Keiler (Siegel)	Das Siegel ruft deinen Jungen Keiler herbei. Nach seiner Kampfausbildung erhöht er den Angriffswert seines Reiters um bis zu 100.
-52006	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei. Er verleiht seinem Reiter +3% Stärke gegen Monster.
-52007	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei. Er erhöht das Sammeln von Erfahrung um 3%.
-52008	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei. Er erhöht die TP seines Reiters um 250.
-52009	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei. Er erhöht den Verteidigungswert seines Reiters um 50.
-52010	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei. Er erhöht den Angriffswert seines Reiters um 30.
-52011	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei. Er verleiht seinem Reiter +5% Stärke gegen Monster.
-52012	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei. Er erhöht das Sammeln von Erfahrung um 5%.
-52013	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei. Er erhöht die TP seines Reiters um 500.
-52014	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei. Er erhöht den Verteidigungswert seines Reiters um 150.
-52015	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei. Er erhöht den Angriffswert seines Reiters um 100.
-52016	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei. Nach seiner Kampfausbildung verleiht er seinem Reiter bis zu 5% Stärke gegen Monster.
-52017	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei. Nach seiner Kampfausbildung erhöht er das Sammeln von Erfahrung um bis zu 5%.
-52018	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei. Nach seiner Kampfausbildung erhöht er die TP seines Reiters um bis zu 500.
-52019	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei. Nach seiner Kampfausbildung erhöht er den Verteidigungswert seines Reiters um bis zu 150.
-52020	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei. Nach seiner Kampfausbildung erhöht er den Angriffswert seines Reiters um bis zu 100.
-52021	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei. Er verleiht seinem Reiter +3% Stärke gegen Monster.
-52022	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei. Er erhöht das Sammeln von Erfahrung um 3%.
-52023	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei. Er erhöht die TP seines Reiters um 250.
-52024	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei. Er erhöht den Verteidigungswert seines Reiters um 50.
-52025	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei. Er erhöht den Angriffswert seines Reiters um 30.
-52026	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei. Er verleiht seinem Reiter +5% Stärke gegen Monster.
-52027	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei. Er erhöht das Sammeln von Erfahrung um 5%.
-52028	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei. Er erhöht die TP seines Reiters um 500.
-52029	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei. Er erhöht den Verteidigungswert seines Reiters um 150.
-52030	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei. Er erhöht den Angriffswert seines Reiters um 100.
-52031	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei. Nach seiner Kampfausbildung verleiht er seinem Reiter bis zu 5% Stärke gegen Monster.
-52032	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei. Nach seiner Kampfausbildung erhöht er das Sammeln von Erfahrung um bis zu 5%.
-52033	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei. Nach seiner Kampfausbildung erhöht er die TP seines Reiters um bis zu 500.
-52034	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei. Nach seiner Kampfausbildung erhöht er den Verteidigungswert seines Reiters um bis zu 150.
-52035	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei. Nach seiner Kampfausbildung erhöht er den Angriffswert seines Reiters um bis zu 100.
-52036	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei. Er verleiht seinem Reiter +3% Stärke gegen Monster.
-52037	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei. Er erhöht das Sammeln von Erfahrung um 3%.
-52038	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei. Er erhöht die TP seines Reiters um 250.
-52039	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei. Er erhöht den Verteidigungswert seines Reiters um 50.
-52040	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei. Er erhöht den Angriffswert seines Reiters um 30.
-52041	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei. Er verleiht seinem Reiter +5% Stärke gegen Monster.
-52042	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei. Er erhöht das Sammeln von Erfahrung um 5%.
-52043	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei. Er erhöht die TP seines Reiters um 500.
-52044	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei. Er erhöht den Verteidigungswert seines Reiters um 150.
-52045	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei. Er erhöht den Angriffswert seines Reiters um 100.
-52046	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei. Nach seiner Kampfausbildung verleiht er seinem Reiter bis zu 5% Stärke gegen Monster.
-52047	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei. Nach seiner Kampfausbildung erhöht er das Sammeln von Erfahrung um bis zu 5%.
-52048	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei. Nach seiner Kampfausbildung erhöht er die TP seines Reiters um bis zu 500.
-52049	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei. Nach seiner Kampfausbildung erhöht er den Verteidigungswert seines Reiters um bis zu 150.
-52050	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei. Nach seiner Kampfausbildung erhöht er den Angriffswert seines Reiters um bis zu 100.
-52051	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei. Er verleiht seinem Reiter +3% Stärke gegen Monster.
-52052	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei. Er erhöht das Sammeln von Erfahrung um 3%.
-52053	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei. Er erhöht die TP seines Reiters um 250.
-52054	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei. Er erhöht den Verteidigungswert seines Reiters um 50.
-52055	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei. Er erhöht den Angriffswert seines Reiters um 30.
-52056	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei. Er verleiht seinem Reiter +5% Stärke gegen Monster.
-52057	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei. Er erhöht das Sammeln von Erfahrung um 5%.
-52058	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei. Er erhöht die TP seines Reiters um 500.
-52059	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei. Er erhöht den Verteidigungswert seines Reiters um 150.
-52060	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei. Er erhöht den Angriffswert seines Reiters um 100.
-52061	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei. Nach seiner Kampfausbildung verleiht es seinem Reiter bis zu 5% Stärke gegen Monster.
-52062	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei. Nach seiner Kampfausbildung erhöht es das Sammeln von Erfahrung um bis zu 5%.
-52063	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei. Nach seiner Kampfausbildung erhöht es die TP seines Reiters um bis zu 500.
-52064	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei. Nach seiner Kampfausbildung erhöht es den Verteidigungswert seines Reiters um bis zu 150.
-52065	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei. Nach seiner Kampfausbildung erhöht es den Angriffswert seines Reiters um bis zu 100.
-52066	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei. Es verleiht seinem Reiter +3% Stärke gegen Monster.
-52067	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei. Es erhöht das Sammeln von Erfahrung um 3%.
-52068	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei. Es erhöht die TP seines Reiters um 250.
-52069	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei. Es erhöht den Verteidigungswert seines Reiters um 50.
-52070	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei. Es erhöht den Angriffswert seines Reiters um 30.
-52071	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (m) herbei. Es verleiht seinem Reiter +5% Stärke gegen Monster.
-52072	Tapferes Rentier-Siegel	Dieses Siegel ruft dein Tapferes Rentier (m) herbei. Es erhöht das Sammeln von Erfahrung um 5%.
-52073	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (m) herbei. Es erhöht die TP seines Reiters um 500.
-52074	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (m) herbei. Es erhöht den Verteidigungswert seines Reiters um 150.
-52075	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (m) herbei. Es erhöht den Angriffswert seines Reiters um 100.
-52076	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei. Nach seiner Kampfausbildung verleiht es seinem Reiter bis zu 5% Stärke gegen Monster.
-52077	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei. Nach seiner Kampfausbildung erhöht es das Sammeln von Erfahrung um bis zu 5%.
-52078	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei. Nach seiner Kampfausbildung erhöht es die TP seines Reiters um bis zu 500.
-52079	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei. Nach seiner Kampfausbildung erhöht es den Verteidigungswert seines Reiters um bis zu 150.
-52080	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei. Nach seiner Kampfausbildung erhöht es den Angriffswert seines Reiters um bis zu 100.
-52081	Wildes Rentier-Siegel	Dieses Siegel ruft dein Wildes Rentier (w) herbei. Es verleiht seinem Reiter +3% Stärke gegen Monster.
-52082	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (w) herbei. Es erhöht das Sammeln von Erfahrung um 3%.
-52083	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (w) herbei. Es erhöht die TP seines Reiters um 250.
-52084	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (w) herbei. Es erhöht den Verteidigungswert seines Reiters um 50.
-52085	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (w) herbei. Es erhöht den Angriffswert seines Reiters um 30.
-52086	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (w) herbei. Es verleiht seinem Reiter +5% Stärke gegen Monster.
-52087	Tapferes Rentier-Siegel	Dieses Siegel ruft dein Tapferes Rentier (w) herbei. Es erhöht das Sammeln von Erfahrung um 5%.
-52088	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (w) herbei. Es erhöht die TP seines Reiters um 500.
-52089	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (w) herbei. Es erhöht den Verteidigungswert seines Reiters um 150.
-52090	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (w) herbei. Es erhöht den Angriffswert seines Reiters um 100.
-52091	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei. Nach seiner Kampfausbildung verleiht er seinem Reiter bis zu 5% Stärke gegen Monster.
-52092	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei. Nach seiner Kampfausbildung erhöht er das Sammeln von Erfahrung um bis zu 5%.
-52093	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei. Nach seiner Kampfausbildung erhöht er die TP seines Reiters um bis zu 500.
-52094	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei. Nach seiner Kampfausbildung erhöht er den Verteidigungswert seines Reiters um bis zu 150.
-52095	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei. Nach seiner Kampfausbildung erhöht er den Angriffswert seines Reiters um bis zu 100.
-52096	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei. Er verleiht seinem Reiter +3% Stärke gegen Monster.
-52097	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei. Er erhöht das Sammeln von Erfahrung um 3%.
-52098	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei. Er erhöht die TP seines Reiters um 250.
-52099	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei. Er erhöht den Verteidigungswert seines Reiters um 50.
-52100	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei. Er erhöht den Angriffswert seines Reiters um 30.
-52101	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei. Er verleiht seinem Reiter +5% Stärke gegen Monster.
-52102	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei. Er erhöht das Sammeln von Erfahrung um 5%.
-52103	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei. Er erhöht die TP seines Reiters um 500.
-52104	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei. Er erhöht den Verteidigungswert seines Reiters um 150.
-52105	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei. Er erhöht den Angriffswert seines Reiters um 100.
-52106	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei. Nach seiner Kampfausbildung verleiht er seinem Reiter bis zu 5% Stärke gegen Monster.
-52107	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei. Nach seiner Kampfausbildung erhöht er das Sammeln von Erfahrung um bis zu 5%.
-52108	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei. Nach seiner Kampfausbildung erhöht er die TP seines Reiters um bis zu 500.
-52109	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei. Nach seiner Kampfausbildung erhöht er den Verteidigungswert seines Reiters um bis zu 150.
-52110	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei. Nach seiner Kampfausbildung erhöht er den Angriffswert seines Reiters um bis zu 100.
-52111	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei. Er verleiht seinem Reiter +3% Stärke gegen Monster.
-52112	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei. Er erhöht das Sammeln von Erfahrung um 3%.
-52113	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei. Er erhöht die TP seines Reiters um 250.
-52114	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei. Er erhöht den Verteidigungswert seines Reiters um 50.
-52115	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei. Er erhöht den Angriffswert seines Reiters um 30.
-52116	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei. Er verleiht seinem Reiter +5% Stärke gegen Monster.
-52117	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei. Er erhöht das Sammeln von Erfahrung um 5%.
-52118	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei. Er erhöht die TP seines Reiters um 500.
-52119	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei. Er erhöht den Verteidigungswert seines Reiters um 150.
-52120	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei. Er erhöht den Angriffswert seines Reiters um 100.
+52006	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei.
+52007	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei.
+52008	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei.
+52009	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei.
+52010	Wilder Keiler (Siegel)	Das Siegel ruft deinen Wilden Keiler herbei.
+52011	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei.
+52012	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei.
+52013	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei.
+52014	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei.
+52015	Tapferer Keiler (Siegel)	Das Siegel ruft deinen Tapferen Keiler herbei.
+52016	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei.
+52017	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei.
+52018	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei.
+52019	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei.
+52020	Junger Wolf (Siegel)	Das Siegel ruft deinen Jungen Wolf herbei.
+52021	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei.
+52022	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei.
+52023	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei.
+52024	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei.
+52025	Wilder Wolf (Siegel)	Das Siegel ruft deinen Wilden Wolf herbei.
+52026	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei.
+52027	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei.
+52028	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei.
+52029	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei.
+52030	Tapferer Wolf (Siegel)	Das Siegel ruft deinen Tapferen Wolf herbei.
+52031	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei.
+52032	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei.
+52033	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei.
+52034	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei.
+52035	Junger Löwe (Siegel)	Das Siegel ruft deinen Jungen Löwen herbei.
+52036	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei.
+52037	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei.
+52038	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei.
+52039	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei.
+52040	Wilder Löwe (Siegel)	Das Siegel ruft deinen Wilden Löwen herbei.
+52041	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei.
+52042	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei.
+52043	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei.
+52044	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei.
+52045	Tapferer Löwe (Siegel)	Das Siegel ruft deinen Tapferen Löwen herbei.
+52046	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei.
+52047	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei.
+52048	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei.
+52049	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei.
+52050	Junger Tiger (Siegel)	Das Siegel ruft deinen Jungen Tiger herbei.
+52051	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei.
+52052	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei.
+52053	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei.
+52054	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei.
+52055	Wilder Tiger (Siegel)	Das Siegel ruft deinen Wilden Tiger herbei.
+52056	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei.
+52057	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei.
+52058	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei.
+52059	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei.
+52060	Tapferer Tiger (Siegel)	Das Siegel ruft deinen Tapferen Tiger herbei.
+52061	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei.
+52062	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei.
+52063	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei.
+52064	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei.
+52065	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (m) herbei.
+52066	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei.
+52067	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei.
+52068	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei.
+52069	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei.
+52070	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (m) herbei.
+52071	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (m) herbei.
+52072	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (m) herbei.
+52073	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (m) herbei.
+52074	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (m) herbei.
+52075	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (m) herbei.
+52076	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei.
+52077	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei.
+52078	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei.
+52079	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei.
+52080	Junges Rentier-Siegel	Das Siegel ruft dein Junges Rentier (w) herbei.
+52081	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (w) herbei.
+52082	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (w) herbei.
+52083	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (w) herbei.
+52084	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (w) herbei.
+52085	Wildes Rentier-Siegel	Das Siegel ruft dein Wildes Rentier (w) herbei.
+52086	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (w) herbei.
+52087	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (w) herbei.
+52088	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (w) herbei.
+52089	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (w) herbei.
+52090	Tapferes Rentier-Siegel	Das Siegel ruft dein Tapferes Rentier (w) herbei.
+52091	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei.
+52092	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei.
+52093	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei.
+52094	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei.
+52095	Junger Dragor-Siegel	Das Siegel ruft deinen Jungen Dragor herbei.
+52096	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei.
+52097	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei.
+52098	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei.
+52099	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei.
+52100	Wilder Dragor-Siegel	Das Siegel ruft deinen Wilden Dragor herbei.
+52101	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei.
+52102	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei.
+52103	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei.
+52104	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei.
+52105	Tapferer Dragor-Siegel	Das Siegel ruft deinen Tapferen Dragor herbei.
+52106	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei.
+52107	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei.
+52108	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei.
+52109	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei.
+52110	Junger Moa (Siegel)	Das Siegel ruft deinen Jungen Moa herbei.
+52111	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei.
+52112	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei.
+52113	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei.
+52114	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei.
+52115	Wilder Moa (Siegel)	Das Siegel ruft deinen Wilden Moa herbei.
+52116	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei.
+52117	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei.
+52118	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei.
+52119	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei.
+52120	Tapferer Moa (Siegel)	Das Siegel ruft deinen Tapferen Moa herbei.
 52701	Löwen-Urkunde	Besitz-Urkunde über einen Jungen Löwen.
 52702	Tiger-Urkunde	Besitz-Urkunde über einen Jungen Tiger.
 52703	Keiler-Urkunde	Besitz-Urkunde über einen Jungen Keiler.
@@ -1808,44 +1808,44 @@
 53001	Feuerphönix-Siegel	Mit diesem Siegel rufst du deinen Freund, den Feuerphönix, herbei.
 53002	Rentierjunges-Siegel	Mit diesem Siegel rufst du das niedliche Rentierjunge herbei.
 53003	Eisphönix-Siegel	Mit diesem Siegel rufst du deinen Freund, den Eisphönix, herbei.
-53005	Baby-Azrael	Die Mini-Version des Dämonenherrschers ist äußerst anhänglich und bringt dir ab der 2. Ebene des Dämonenturms und der Devil's Catacomb einen Bonus von 1500 TP und +15 % Schaden.
-53006	Baby-Azrael (gold)	Die Mini-Version des Dämonenherrschers ist äußerst anhänglich und bringt dir ab der 2. Ebene des Dämonenturms und der Devil's Catacomb einen Bonus von 1500 TP und +15 % Schaden.
-53007	Bambi-Siegel	Mit diesem Siegel rufst du dein Rentierjunges, Bambi, herbei.
-53008	Knuud-Siegel	Mit diesem Siegel rufst du dein niedliches Eisbärenbaby herbei.
-53009	Bao Bao-Siegel	Mit diesem Siegel rufst du dein niedliches Pandababy herbei.
-53010	Leonidas-Siegel	Mit diesem Siegel rufst du dein Löwenbaby, Leonidas, herbei.
-53011	Khan-Siegel	Mit diesem Siegel rufst du dein Tigerjunges, Khan, herbei.
-53012	Porkie-Siegel	Mit diesem Siegel rufst du deinen Frischling, Porkie, herbei.
-53013	Rufus-Siegel	Mit diesem Siegel rufst du deinen Wolfswelpen, Rufus, herbei.
-53014	Henkerchen-Siegel	Dieses Siegel ruft dein dickes Henkerchen in schwarzer Rüstung herbei.
-53015	Henkerchen-Siegel (gold)	Dieses Siegel ruft dein dickes Henkerchen in goldener Rüstung herbei.
-53016	Boney-Siegel	Dieses Siegel ruft dein knochiges Pet herbei.
-53017	Jadephönix-Siegel	Dieses Siegel ruft den anmutigen Jadephönix herbei.
-53018	Schnee-Leonidas (Siegel)	Mit diesem Siegel rufst du dein Pet herbei.
-53019	Arktis-Khan (Siegel)	Mit diesem Siegel rufst du dein Pet herbei.
-53020	Polar-Porkie (Siegel)	Mit diesem Siegel rufst du dein Pet herbei.
-53021	Frost-Rufus (Siegel)	Mit diesem Siegel rufst du dein Pet herbei.
-53022	Sheldon-Siegel	Das Siegel lässt dein Pet Sheldon aus dem Ei schlüpfen.
-53023	Cooper-Siegel	Das Siegel lässt dein Pet Cooper herbeihoppeln.
-53024	Pantherbaby (7 Tage)	Dieses Siegel ruft dein schwarzes Pantherbaby herbei.
-53025	Leopardenbaby (7 Tage)	Dieses Siegel ruft dein süßes Leopardenbaby herbei.
-53026	Pepita-Siegel	Mit diesem Siegel rufst du deinen Phönix Pepita herbei.
-53218	Pantherbaby (30 Tage)	Dieses Siegel ruft dein schwarzes Pantherbaby herbei.
-53219	Pantherbaby (120 Tage)	Dieses Siegel ruft dein schwarzes Pantherbaby herbei.
-53220	Leopardenbaby (30 Tage)	Dieses Siegel ruft dein süßes Leopardenbaby herbei.
-53221	Leopardenbaby (120 Tage)	Dieses Siegel ruft dein süßes Leopardenbaby herbei.
-53501	Feuerphönix-Käfig	In diesem Käfig wartet der Feuerphönix darauf, dass du ihn heraus lässt.
+53005	Baby-Azrael	Die Mini-Version des Dämonenherrschers ist äußerst anhänglich und bringt dir ab der 2. Ebene des Dämonenturms und der Devil's Catacomb einen Bonus von | +15% Magie-/Nahkampfangriff | +1500 TP
+53006	Baby-Azrael (gold)	Die Mini-Version des Dämonenherrschers ist äußerst anhänglich und bringt dir ab der 2. Ebene des Dämonenturms und der Devil's Catacomb einen Bonus von | +15% Magie-/Nahkampfangriff | +1500 TP
+53007	Bambi-Siegel	Mit diesem Siegel rufst du dein Rentierjunges, Bambi, herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53008	Knuud-Siegel	Mit diesem Siegel rufst du dein niedliches Eisbärenbaby herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53009	Bao Bao-Siegel	Mit diesem Siegel rufst du dein niedliches Pandababy herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53010	Leonidas-Siegel	Mit diesem Siegel rufst du dein Löwenbaby, Leonidas, herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53011	Khan-Siegel	Mit diesem Siegel rufst du dein Tigerjunges, Khan, herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53012	Porkie-Siegel	Mit diesem Siegel rufst du deinen Frischling, Porkie, herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53013	Rufus-Siegel	Mit diesem Siegel rufst du deinen Wolfswelpen, Rufus, herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53014	Henkerchen-Siegel	Das Siegel ruft dein dickes Henkerchen in schwarzer Rüstung herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53015	Henkerchen-Siegel (gold)	Das Siegel ruft dein dickes Henkerchen in goldener Rüstung herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53016	Boney-Siegel	Das Siegel ruft dein knochiges Pet herbei. Es verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53017	Jadephönix-Siegel	Das Siegel ruft den anmutigen Jadephönix herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +50% Chance auf 30% EXP-Bonus
+53018	Schnee-Leonidas (Siegel)	Mit diesem Siegel rufst du den kleinen Schneelöwen herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53019	Arktis-Khan (Siegel)	Mit diesem Siegel rufst du den kleinen Schneetiger herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53020	Polar-Porkie (Siegel)	Mit diesem Siegel rufst du dein kleines Polarschweinchen herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53021	Frost-Rufus (Siegel)	Mit diesem Siegel rufst du deinen kleinen Polarwolf herbei. Das Pet verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53022	Sheldon-Siegel	Das Siegel lässt dein Pet Sheldon aus dem Ei schlüpfen. Es verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53023	Cooper-Siegel	Das Siegel lässt dein Pet Cooper herbeihoppeln. Es verleiht dir | +15% Magie-/Nahkampfangriff | +1500 TP
+53024	Pantherbaby (7 Tage)	Das Siegel ruft dein schwarzes Pantherbaby herbei. Das Pet verleiht dir | +5% Widerstand vs. Fertigkeitsschaden | +5% Chance auf durchbohrende Treffer | +1500 TP
+53025	Leopardenbaby (7 Tage)	Das Siegel ruft dein süßes Leopardenbaby herbei. Das Pet verleiht dir | +10 Verteidigungswert | +5% Chance auf kritische Treffer | +1500 TP
+53026	Pepita-Siegel	Mit diesem Siegel rufst du deinen Phönix Pepita herbei. Das Pet erhöht das Sammeln von Erfahrung um +5%.
+53218	Pantherbaby (30 Tage)	Das Siegel ruft dein schwarzes Pantherbaby herbei. Das Pet verleiht dir | +5% Widerstand vs. Fertigkeitsschaden | +5% Chance auf durchbohrende Treffer | +1500 TP
+53219	Pantherbaby (120 Tage)	Das Siegel ruft dein schwarzes Pantherbaby herbei. Das Pet verleiht dir | +5% Widerstand vs. Fertigkeitsschaden | +5% Chance auf durchbohrende Treffer | +1500 TP
+53220	Leopardenbaby (30 Tage)	Das Siegel ruft dein süßes Leopardenbaby herbei. Das Pet verleiht dir | +10 Verteidigungswert | +5% Chance auf kritische Treffer | +1500 TP
+53221	Leopardenbaby (120 Tage)	Das Siegel ruft dein süßes Leopardenbaby herbei. Das Pet verleiht dir | +10 Verteidigungswert | +5% Chance auf kritische Treffer | +1500 TP
+53501	Feuerphönix-Käfig	In diesem Käfig wartet der Feuerphönix darauf, dass du ihn herauslässt.
 53502	Truhe des Rentierjungen	In dieser Truhe wartet das Rentierjunge ungeduldig darauf, dass du es rauslässt.
 53503	Eisphönix-Käfig	In diesem Käfig wartet der Eisphönix darauf, dass du ihn heraus lässt.
 53504	Truhe4	Truhe4
-53505	Hörner-Aufbewahrungsfach	
-53506	Azrael Box	Azrael Box wo er gefangen ist und die flasch rauskommt
+53505	Hörner-Aufbewahrungsfach	In dieser Truhe verbirgt sich Baby-Azrael, die Miniversion des Dämonenherrschers, und wartet auf seine Freilassung.
+53506	Azrael Box	In dieser Truhe verbirgt sich Baby-Azrael (gold), die Miniversion des Dämonenherrschers, und wartet auf seine Freilassung.
 53516	Knochentruhe	Enthält einen zufälligen Gegenstand. Mit etwas Glück befindet sich Skeletthund Boney darin.
 53517	Jadekäfig	In diesem Käfig wartet der seltene Jadephönix darauf, dass du ihn befreist.
-53518	Schnee-Leonidas	In der Truhe befindet sich das Siegel des Schnee-Leonidas.
-53519	Arktis-Khan	In der Truhe befindet sich das Siegel des Arktis-Khan.
-53520	Polar-Porkie	In der Truhe befindet sich das Siegel des Polar-Porkies.
-53521	Frost-Rufus	In der Truhe befindet sich das Siegel des Frost-Rufus.
+53518	Schnee-Leonidas	In dem Käfig befindet sich das Siegel des Schnee-Leonidas.
+53519	Arktis-Khan	In dem Käfig befindet sich das Siegel des Arktis-Khan.
+53520	Polar-Porkie	In dem Käfig befindet sich das Siegel des Polar-Porkies.
+53521	Frost-Rufus	In dem Käfig befindet sich das Siegel des Frost-Rufus.
 53522	Sheldons Nest	In diesem Nest hat sich dein Pet Sheldon versteckt.
 53523	Hasenkäfig	In diesem Käfig versteckt sich der kleine Hase Cooper.
 53526	Pepita-Dose	Öffne diese Dose, um das Siegel der Pepita zu erhalten.
@@ -1855,7 +1855,7 @@
 70002	Dritte Hand	Eine Hand, die Yang automatisch aufnimmt.
 70003	Buch des Anführers	Solange der Anführer einer Gruppe mit diesem Buch ausgerüstet ist, sammeln alle Gruppenmitglieder 30% mehr Erfahrungspunkte.
 70004	Fleißmedaille	Belohnung für deine Mühen am Tag der Arbeit. Gewährt 20% mehr Erfahrungspunkte im Kampf.
-70005	Erfahrungsring	Du sammelst im Kampf 50% mehr Erfahrungspunkte.
+70005	Erfahrungsring	Erhöht das Sammeln von Erfahrung 60 Minuten lang um 50%.
 70006	Sprachenring	Dieser Ring wurde in vergangenen Zeiten für die Kreise der Diplomaten hergestellt. Er ermöglicht es, die Sprachen anderer Reiche zu sprechen.
 70008	Weiße Flagge	Eine Flagge, die dem Gegner Kapitulation signalisiert.
 70009	Schatztruhe	Eine reichhaltig mit Ornamenten geschmückte Truhe, die mit einem speziellen Schlüssel geöffnet werden kann.
@@ -1866,24 +1866,24 @@
 70015	Billige Bürste	Eine gebräuchliche, robuste Bürste mit festem Holzgriff.
 70020	Pfirsichblütenwein	Getränk, das deine TP augenblicklich um 500 Punkte regeneriert.
 70024	Segenskugel	Eine legendäre, gesegnete Kugel. Gegenständen, die bereits mit vier Attributen ausgestattet sind, vermag sie ein weiteres Attribut hinzuzufügen.
-70027	Notiz des Schmieds	Eine Aufzeichnung des Waffenschmiedes über die notwendigen Schritte zur Verbesserung einer Waffe.
+70027	Notiz des Schmieds	Eine Aufzeichnung des Waffenschmiedes über die notwendigen Schritte zur Verbesserung von Gegenständen. Erhöht die Chance, einen Gegenstand von +4 auf +5 zu verbessern, auf 100 %.
 70031	Traktat zur Fechtkunst	Diese grundlegende Abhandlung zum Waffenhandwerk beschäftigt sich unter anderem mit den Möglichkeiten und Schwachstellen der menschlichen Anatomie.
 70035	Magisches Kupfererz	Mit diesem Erz und einer Segensschriftrolle kann beim Schmied eine Schriftrolle des Krieges hergestellt werden.
-70037	Buch des Vergessens	Das legendäre Buch, das die Erinnerung an eine erlernte Fertigkeit komplett löscht. Ein Fertigkeitspunkt kann daher bewegt werden.
+70037	Buch des Vergessens	Mit diesem Buch vergisst der Held die Erinnerung an eine erlernte Fertigkeit. So kann 1 Fertigkeitspunkt bewegt werden.
 70038	Tapferkeitsumhang	Ein farbiger Umhang, der sämtliche Monster anlockte. Mit diesem bewiesen Krieger einst ihre Tapferkeit.
 70039	Schmiede-Handbuch	Das Buch ist mit der Seele eines alten Schmieds verbunden. Bei Nutzung vermag es die Chance der Gegenstandsverbesserung zu erhöhen.
 70040	Orkhartnäckigkeit	Reduziert den Verbrauch der Ausdauer um die Hälfte.
-70043	Diebeshandschuh	Verdoppelt deine Chance, Gegenstände zu erbeuten.
+70043	Diebeshandschuh	Verdoppeln deine Chance, Gegenstände zu erbeuten.
 70047	Sprachenring (Beispiel)	Dieser Ring wurde in vergangenen Zeiten für die Kreise der Diplomaten hergestellt. Er ermöglicht es, die Sprachen anderer Reiche zu sprechen.
-70048	Flüchtlingsumhang	Ein Umhang, der zu Unauffälligkeit verhilft und daher von vielen Flüchtlingen getragen wird.
-70049	Lucys Ring	Die Gravur besagt: "Der Drachengott segne dich". Der Ring verringert die Chance auf Gegenstandsverlust im Kampf.
+70048	Flüchtlingsumhang	Mit diesem geheimnisvollen Umhang verbirgst du deinen wahren Rang.
+70049	Lucys Ring	Die Gravur besagt: "Der Drachengott segne dich". Der Ring verringert die Chance auf Gegenstandsverlust im Kampf. Wenn du einen Gegenstand verlierst, droppt nur Lucys Ring.
 70050	Symbol d. weisen Kaisers	Ein innerhalb der alten Königsfamilie vererbtes Symbol, das dem jeweiligen Herrscher große Kraft verleiht.
 70051	Handschuh weiser Kaiser	Ein innerhalb der alten Königsfamilie vererbter Gegenstand, der dem jeweiligen Herrscher große Kraft verleiht.
 70052	Karma-Zauber 1	Ein Zauber, der von vielen Gläubigen als Schutz vor Unglück verwendet wird.
 70053	Karma-Zauber 2	Ein Zauber, der von vielen Gläubigen als Schutz vor Unglück verwendet wird.
 70054	Karma-Zauber 3	Ein Zauber, der von vielen Gläubigen als Schutz vor Unglück verwendet wird.
 70056	Granatapfelsaft+	Getränk, das deine TP augenblicklich um 1000 Punkte regeneriert.
-70057	Tapferkeitsumhang	Ein farbiger Umhang, mit dem Krieger einst ihre Tapferkeit bewiesen, da er sämtliche Monster anlockte. Dieses Item ist handelbar.
+70057	Tapferkeitsumhang	Ein farbiger Umhang, mit dem Krieger einst ihre Tapferkeit bewiesen, da er sämtliche Monster anlockte.
 70058	Teleportationsring	Dieser Ring teleportiert dich 50-mal an einen gewünschten Ort innerhalb deines Reiches. Nicht handelbar.
 70102	Zen-Bohne	Senkt die böse und hebt die gute Gesinnung eines Charakters.
 70104	Verwandlungskugel	Mit Hilfe dieser Kugel kannst du dich in ein Monster verwandeln.
@@ -1899,40 +1899,40 @@
 70301	Verlobungsring	Ein Ring, der von Verliebten getragen wird.
 70302	Ehering	Ein Ring, der von Verheirateten getragen wird.
 71001	Exorzismus-Schriftrolle	Befreit dich vom Fluch des bösen Geistes, wenn das Lernen fehlschlägt. Mit Hilfe dieser Rolle kannst du ein weiteres Fertigkeitsdokument an einem Tag lesen.
-71002	Status-Neuverteilung	Die Anwendung dieses Gegenstandes ermöglicht es dir, deine Status-Punkte neu zu verteilen. So kannst du die Entwicklung deines Charakters in eine andere Richtung lenken.
+71002	Status-Neuverteilung	Die Anwendung dieses Gegenstandes ermöglicht es dir, deine Statuspunkte neu zu verteilen. So kannst du die Entwicklung deines Charakters in eine andere Richtung lenken.
 71003	Fertigkeit-Neuverteilung	Die Anwendung dieses Gegenstandes ermöglicht es dir, die Punkte einer deiner Fertigkeiten neu zu verteilen.
 71004	Medaille des Drachen	Bewahrt dich bei deiner nächsten Wiederbelebung davor, Erfahrungspunkte zu verlieren.
 71005	Sprachenring	Du kannst 7 Tage lang alle Reichssprachen verstehen.
 71006	Sprachenring	Du kannst 15 Tage lang alle Reichssprachen verstehen.
 71007	Sprachenring	Du kannst 30 Tage lang alle Reichssprachen verstehen.
-71008	Fischereibuch	Verdoppelt deine Chance, einen seltenen Fisch zu fangen
+71008	Fischereibuch	Wird benötigt, um seltene Fische fangen zu können und verdoppelt deine Chance auf diese.
 71009	Lagertruhe	Dein Lager erhält zwei zusätzliche Lagerräume.
 71010	Dritte Hand	Eine Hand, die Yang automatisch aufnimmt.
 71011	Emotionsmaske	Mit dieser Maske kannst du deinen Gefühlen freien Lauf lassen.
 71012	Buch des Anführers	Solange der Anführer einer Gruppe mit diesem Buch ausgerüstet ist, sammeln alle Gruppenmitglieder drei Stunden lang 30% mehr Erfahrungspunkte.
 71013	Feuerwerk	Rakete, die für alle sichtbar den Himmel erleuchtet.
-71014	Trank des Angriffs +10	Erhöht deine Angriffsgeschwindigkeit für 30 Minuten um 10%.
-71015	Erfahrungsring	Du sammelst im Kampf 50% mehr Erfahrungspunkte.
+71014	Trank des Angriffs +10	Erhöht deine Angriffsgeschwindigkeit um 10 %.
+71015	Erfahrungsring	Du sammelst im Kampf 50 % mehr Erfahrungspunkte.
 71016	Handschuhe des Diebes	Verdoppelt deine Chance, Gegenstände zu erbeuten.
 71017	Medaille des Glücks	Verdoppelt deine Chance, Yang zu erbeuten.
 71018	Segen des Lebens	Ein Segen, der deine TP augenblicklich vollständig regeneriert.
 71019	Segen der Magie	Ein Segen, der deine MP augenblicklich vollständig regeneriert.
 71020	Segen des Drachen	Ein Segen, der deine TP und MP augenblicklich vollständig regeneriert.
 71021	Schriftrolle des Krieges	Die Verbesserung von Gegenständen gelingt vollständig. Nur anwendbar bei Gegenständen +0 bis +3.
-71022	Rückkehr der Intelligenz	Setzt deine Status-Punkte der Intelligenz auf den Grundwert zurück. Anschließend kannst du die Punkte neu verteilen.
-71023	Rückkehr der Vitalität	Setzt deine Status-Punkte der Vitalität auf den Grundwert zurück. Anschließend kannst du die Punkte neu verteilen.
-71024	Rückkehr der Stärke	Setzt deine Status-Punkte der Stärke auf den Grundwert zurück. Anschließend kannst du die Punkte neu verteilen.
+71022	Rückkehr der Intelligenz	Setzt deine Statuspunkte der Intelligenz auf den Grundwert zurück. Anschließend kannst du die Punkte neu verteilen.
+71023	Rückkehr der Vitalität	Setzt deine Statuspunkte der Vitalität auf den Grundwert zurück. Anschließend kannst du die Punkte neu verteilen.
+71024	Rückkehr der Stärke	Setzt deine Statuspunkte der Stärke auf den Grundwert zurück. Anschließend kannst du die Punkte neu verteilen.
 71025	Stein des Schmieds	Mit diesem Stein und einer Segensschriftrolle kann beim Schmied ein Schmiede-Handbuch hergestellt werden.
 71026	Magisches Eisenerz	Mit diesem Erz und einer Segensschriftrolle kann beim Schmied eine Schriftrolle des Drachen hergestellt werden.
-71027	Drachengott-Leben	Erhöht deine maximalen TP 30 Minuten lang um 20%.
-71028	Drachengott-Angriff	Erhöht den Schaden, den du anderen im Kampf zufügst, 30 Minuten lang um 12 bis 15%.
-71029	Drachengott-Intelligenz	Erhöht deine maximalen MP 30 Minuten lang um 20%.
-71030	Drachengott-Verteidigung	Verringert den Schaden, den du im Kampf erleidest, 30 Minuten lang um 12 bis 15%.
+71027	Drachengott-Leben	Erhöht deine maximalen TP um 20 %.
+71028	Drachengott-Angriff	Erhöht deinen Angriffswert um 20 %.
+71029	Drachengott-Intelligenz	Erhöht deine maximalen MP um 20 %.
+71030	Drachengott-Verteidigung	Verringert den Schaden, den du im Kampf erleidest, um 20 %.
 71031	Drachengottunterstützung	Vitalität, Stärke, Intelligenz und Beweglichkeit deines Charakters erhöhen sich vorübergehend auf das Fünffache.
 71032	Schriftrolle des Drachen	Beseitigt das Risiko, einen Gegenstand zu zerstören, wenn seine Verbesserung fehlschlägt. Es wird nur die Qualität um eine Stufe verringert. Zudem erhöht sich die Wahrscheinlichkeit einer erfolgreichen Verbesserung um 10 %.
 71033	Emotionsmaske	Mit dieser Maske kannst du deinen Gefühlen freien Lauf lassen.
-71034	Trank des Angriffs +15	Erhöht deine Angriffsgeschwindigkeit 30 Minuten lang um 15%.
-71035	Elixier des Forschers	Steigert die Qualität gesammelter Forschungsobjekte und damit auch ihre Annahmewahrscheinlichkeit.
+71034	Trank des Angriffs +15	Erhöht deine Angriffsgeschwindigkeit um 15 %.
+71035	Elixier des Forschers	Steigert die Qualität gesammelter Forschungsobjekte und damit auch ihre Annahmewahrscheinlichkeit. Gilt nicht für Quests auf Yohara.
 71036	Ruf-Rolle Oberork	Lässt einen Oberork neben deinem Charakter erscheinen. Vorsicht, es handelt sich um einen Boss!
 71037	Ruf-Rolle Anführer	Lässt einen dunklen Anführer neben deinem Charakter erscheinen. Vorsicht, es handelt sich um einen Boss!
 71038	Ruf-Rolle Königsspinne	Lässt eine Königsspinne neben deinem Charakter erscheinen. Vorsicht, es handelt sich um einen Boss!
@@ -1941,14 +1941,14 @@
 71041	Ruf-Rolle Neunschwanz	Lässt einen Neunschwanz neben deinem Charakter erscheinen. Vorsicht, es handelt sich um einen Boss!
 71042	Ruf-Rolle Dämonenkönig	Lässt einen stolzen Dämonenkönig neben deinem Charakter erscheinen. Vorsicht, es handelt sich um einen Boss!
 71043	Ruf-Rolle Tigergeist	Lässt einen gelben Tigergeist neben deinem Charakter erscheinen. Vorsicht, es handelt sich um einen Boss!
-71044	Kritischer Kampf	Erhöht deine Chance, im Kampf einen kritischen Treffer zu landen, 10 Minuten lang um 20%.
-71045	Durchbohrender Kampf	Erhöht deine Chance, im Kampf einen durchbohrenden Treffer zu landen, 10 Minuten lang um 20%.
+71044	Kritischer Kampf	Erhöht deine Chance, im Kampf einen kritischen Treffer zu landen, um 20 %.
+71045	Durchbohrender Kampf	Erhöht deine Chance, im Kampf einen durchbohrenden Treffer zu landen, um 20 %.
 71047	Tinktur des Geiststeins	Entfernt einen eingefassten Geiststein aus einem deiner Gegenstände.
 71048	Wandelzauber	Dieser Zauber kann das Geschlecht deines Spielercharakters ändern.
 71049	Seidenbündel	Mit diesem Bündel kannst du 10 Tage lang kostenlos private Läden eröffnen.
 71050	Geschwindigkeitstrank	Erhöht 30 Minuten lang deine Bewegungsgeschwindigkeit um 60.
-71051	Gegenstand verhexen	Fügt einem deiner Gegenstände einen neuen Spezial-Bonus hinzu, falls noch keiner vorhanden war.
-71052	Gegenstand segnen	Entfernt den Spezial-Bonus eines deiner Gegenstände und fügt einen neuen hinzu.
+71051	Gegenstand verhexen	Entfernt den Spezial-Bonus eines deiner Gegenstände und fügt einen neuen hinzu.
+71052	Gegenstand segnen	Fügt einem deiner Gegenstände einen neuen Spezial-Bonus hinzu, falls noch keiner vorhanden war.
 71054	Tinktur der Reiche	Bietet die Möglichkeit, in einem anderen Reich ins Exil zu gehen.
 71055	Tinktur des Namens	Gibt dir die Möglichkeit, einen neuen Namen für deinen Charakter zu wählen.
 71056	Tinktur des Himmels	Erhöht die Wahrscheinlichkeit, einen Geiststein erfolgreich zu verbessern.
@@ -1979,7 +1979,7 @@
 71081	Metinstein (normal)	Lässt einen normal großen Metinstein neben dir abstürzen.
 71082	Metinstein (schwer)	Lässt einen schweren Metinstein neben dir abstürzen.
 71083	Stein-Handbuch	Entfernt alle zerbrochenen Steine aus einem Gegenstand. Somit erhältst du einen weiteren Versuch, Waffe oder Rüstung zu verbessern.
-71084	Gegenstand verzaubern	Entfernt die Boni eines deiner Gegenstände und fügt neue hinzu.
+71084	Gegenstand verzaubern	Entfernt die Boni eines deiner Gegenstände und fügt neue hinzu. Gilt nur für die Boni 1-5.
 71085	Gegenstand verstärken	Fügt mit etwas Glück einem deiner Gegenstände einen neuen Bonus hinzu. (bis max. 4 Boni)
 71088	Missionsbuch (leicht)	Das in braunes Leder gebundene Werk enthält eine Mission, die auch von unerfahrenen Kämpfern gelöst werden kann.
 71089	Missionsbuch (normal)	Das in braunes Leder gebundene Werk enthält eine Mission, die nur von jenen gelöst werden kann, die bereits über Erfahrung im Kampf verfügen.
@@ -1988,12 +1988,12 @@
 71092	Buch der Verwandlung	Das erfolgreiche Studium des Buches erhöht die Verwandlungsfertigkeit. Das Buch verschwindet nach dem Lesen.
 71093	Verwandlungskugel	Mit Hilfe dieser Kugel kannst du dich in ein Monster verwandeln.
 71094	Konzentriertes Lesen	Erhöht die Chance auf eine Verbesserung deines Talents beim Lesen des nächsten Buches (oder Seelensteins) um den Faktor 2,5.
-71095	Passierschein	Du darfst eine weitere Ebene des Spinnendungeons sowie die Rotdrachenfestung betreten, wenn du diesen Passierschein dem zuständigen Wächter vorlegst.
+71095	Passierschein	Du darfst eine weitere Ebene ausgewählter Dungeons betreten, wenn du diesen Passierschein dem zuständigen Wächter vorlegst.
 71096	Tafel zum Durchgehen	Diese Medaille ermöglicht die eine Torpassage.
 71099	Ring der Nachfolge	Ermächtigt den Anführer einer Gilde seinen Nachfolger zu bestimmen und übergibt die Führung an diesen.
 71100	Lehrwechselzertifikat	Du kannst deine Lehre hinter dir lassen und eine neue beginnen. Dazu musst du dich mindestens auf Level 31 befinden.
-71101	Trank der Hast	Dieser Trank verringert die Abklingzeit 30 Minuten lang um 20 Prozent.
-71102	Schnelligkeitstrank+	
+71101	Trank der Hast	Dieser Trank verringert die Abklingzeit deiner Fähigkeiten um 20 %.
+71102	Schnelligkeitstrank+	Erhöht deine Zaubergeschwindigkeit um 30 %.
 71103	Neuverteilung (VIT)	Setzt deine Vitalität auf 1 zurück und erlaubt dir, deine Punkte neu zu verteilen.
 71104	Neuverteilung (INT)	Setzt deine Intelligenz auf 1 zurück und erlaubt dir, deine Punkte neu zu verteilen.
 71105	Neuverteilung (STR)	Setzt deine Stärke auf 1 zurück und erlaubt dir, deine Punkte neu zu verteilen.
@@ -2027,7 +2027,7 @@
 711213	Löwen-Siegel (blau)	Der Zauber des Siegels ruft einen mächtigen Tiergeist, der dich schnell an den Ort deiner Wahl trägt.
 711214	Löwen-Siegel (blau)	Der Zauber des Siegels ruft einen mächtigen Tiergeist, der dich schnell an den Ort deiner Wahl trägt.
 71121	Löwen-Siegel (blau)	Der Zauber des Siegels ruft einen mächtigen Tiergeist, der dich schnell an den Ort deiner Wahl trägt.
-71122	Siehe Kommentar	
+71122	Siehe Kommentar	Hiermit kann der Drachenraum betreten werden.
 71123	Drachenschuppe	Drachenschuppen gehören zu den härtesten bekannten Materialien.
 71124	Weißer Löwe	Tiere mit weißem Fell sind äußerst selten und werden von vielen Kulturen als Träger außergewöhnlicher Kräfte verehrt.
 71125	Kriegskeiler-Siegel	Böse Tiergeister zu bändigen, bedarf erheblicher magischer Künste. Entsprechend beeindruckend ist das Ergebnis.
@@ -2035,35 +2035,35 @@
 71127	Sturmtiger-Siegel	Böse Tiergeister zu bändigen, bedarf erheblicher magischer Künste. Entsprechend beeindruckend ist das Ergebnis.
 71128	Schlachtenlöwen-Siegel	Böse Tiergeister zu bändigen, bedarf erheblicher magischer Künste. Entsprechend beeindruckend ist das Ergebnis.
 71129	Drachenkralle	Der Anblick dieser furchterregenden Kralle weckt Erinnerungen...
-71130	Passierschein	Du darfst eine weitere Ebene des Spinnendungeons sowie die Rotdrachenfestung betreten, wenn du diesen Passierschein dem zuständigen Wächter vorlegst. Dieses Item ist handelbar.
+71130	Passierschein	Du darfst eine weitere Ebene ausgewählter Dungeons betreten, wenn du diesen Passierschein dem zuständigen Wächter vorlegst. Dieses Item ist handelbar.
 71131	Rappen-Siegel	Pferdesiegel für einen edlen Rappen.
 71132	Rappen-Siegel	Pferdesiegel für einen edlen Rappen.
 71133	Rappen-Siegel	Pferdesiegel für einen edlen Rappen.
 71134	Rappen-Siegel	Pferdesiegel für einen edlen Rappen.
-71135	Halbmondring	Ring mit einer kunstvoll gearbeiteten Gravur in der Form eines Halbmondes.
-71136	Lolli	Ein Lolli aus geheimen Zutaten, der Erfahrung und Kraft für den Kampf spendet.
+71135	Halbmondring	Einzigartiges Schmuckstück mit einer kunstvoll gearbeiteten Gravur in der Form eines Halbmondes. Spüre wie seine unglaubliche Macht dich durchströmt.
+71136	Lolli	Der Lolli aus geheimen Zutaten verleiht dir | +50% Erfahrungspunkte | +30% physischen Schaden | +20 Angriffsgeschwindigkeit | +20 Zaubergeschwindigkeit | +10% Maximum-TP | +10% Maximum-MP
 71137	Königstiger-Siegel(blau)	Der Zauber des Siegels ruft dein Reittier, den majestätischen Königstiger (blau), herbei.
 71138	Königstiger-Siegel (rot)	Der Zauber des Siegels ruft dein Reittier, den majestätischen Königstiger (rot), herbei.
 71139	Königstiger-Siegel(gold)	Der Zauber des Siegels ruft dein Reittier, den majestätischen Königstiger (gold), herbei.
 71140	Königstiger-Siegel(grün)	Der Zauber des Siegels ruft dein Reittier, den majestätischen Königstiger (grün), herbei.
 71141	Königstiger-Siegel(grau)	Der Zauber des Siegels ruft dein Reittier, den majestätischen Königstiger (grau), herbei.
 71142	Königstiger-Siegel(weiß)	Der Zauber des Siegels ruft dein Reittier, den majestätischen Königstiger (weiß), herbei.
-71143	Ring der Freude	Der Ring mit einer wertvollen Verzierung aus Jade und Türkis besitzt folgende Boni:  +50% Erfahrungspunkte  +20% Angriffsgeschwindigkeit  +20% Zaubergeschwindigkeit  +30% Stark gegen Monster  +10% Maximum-TP  +10% Maximum-MP
+71143	Ring der Freude	Der Ring mit einer wertvollen Verzierung aus Jade und Türkis besitzt folgende Boni:  +50% EXP  +30% Stark gegen Monster  +20% Angriffsgeschwindigkeit  +20% Zaubergeschwindigkeit  +10% Maximum-TP  +10% Maximum-MP
 71144	Weihnachtstruhe	Das liebevoll verpackte Weihnachtsgeschenk enthält eine festliche Überraschung.
-71145	Amulett der Ewigen Liebe	Ein silberner Kettenanhänger in Herzform, besetzt mit magischen Edelsteinen.
-71146	Amors Truhe (rosa)	Truhe in Herzform mit 10-fach überraschendem Inhalt. Lässt sich alle 30 Min. erneut öffnen.
-71147	Amors Truhe (blau)	Truhe in Herzform mit 10-fach überraschendem Inhalt. Lässt sich alle 30 Min. erneut öffnen.
-71148	Ring der Willenskraft	Verleiht dir 7 Tage lang +30% EXP, +20% Abwehrchance gegen Krieger, +20% Abwehrchance gegen Ninja, +30% Stärke gegen Monster, +10% Maximum-TP und +10% Maximum-MP.
-71149	Ring der tödlichen Macht	Verleiht dir 7 Tage lang +30% EXP, +20% Abwehrchance gegen Sura, +20% Abwehrchance gegen Schamanen, +30% Stärke gegen Monster, +10% Maximum-TP und +10% Maximum-MP.
+71145	Amulett der Ewigen Liebe	Ein silberner Kettenanhänger in Herzform, besetzt mit magischen Edelsteinen. Er verleiht dir: | +30% EXP | +10 Angriffsgeschwindigkeit | +10 Zaubergeschwindigkeit | +5% TP und MP | +10% Stark gegen Monster
+71146	Amors Truhe (rosa)	Truhe in Herzform mit 5-fach überraschendem Inhalt. Lässt sich alle 30 Min. erneut öffnen.
+71147	Amors Truhe (blau)	Truhe in Herzform mit 5-fach überraschendem Inhalt. Lässt sich alle 30 Min. erneut öffnen.
+71148	Ring der Willenskraft	Verleiht dir während der Laufzeit +30 % EXP, +20 % Abwehrchance gegen Krieger, +20 % Abwehrchance gegen Ninja, +20 % Abwehrchance gegen Lykaner, +30 % Stärke gegen Monster, +10 % Maximum-TP und +10 % Maximum-MP.
+71149	Ring der tödlichen Macht	Verleiht dir eine Zeit lang +30% EXP, +20% Abwehrchance gegen Sura, +20% Abwehrchance gegen Schamanen, +20% Abwehrchance gegen Lykaner, +30% Stärke gegen Monster, +10% Maximum-TP und +10% Maximum-MP.
 71150	Zauber-Ei	Die kunstvoll verzierte ovale Truhe enthält mehr als nur eine Osterüberraschung und gibt ihre Schätze erst nach und nach preis.
 71151	Grüner Zauber	Entfernt die Boni eines deiner Gegenstände und fügt neue hinzu. Kann nur bei Waffen und Rüstungen bis Level 40 angewendet werden. Nicht handelbar.
 71152	Grüne Stärke	Fügt mit etwas Glück einem deiner Gegenstände einen neuen Bonus hinzu (bis max. 4 Boni). Kann nur bei Waffen und Rüstungen bis Level 40 angewendet werden. Nicht handelbar.
 71153	Trank der Weisheit	Mit diesem Trank sammelst du in einer Stunde Spielzeit 100 % mehr Erfahrung. Nicht handelbar.
-71154	Erfahrungstrank	
-71155	Erfahrungstrank	
-71156	Erfahrungstrank	
+71154	Erfahrungstrank	Mit diesem Trank sammelst du in drei Stunden Spielzeit 80% mehr Erfahrung. Nicht handelbar.
+71155	Erfahrungstrank	Mit diesem Trank sammelst du in drei Stunden Spielzeit 100% mehr Erfahrung. Nicht handelbar.
+71156	Erfahrungstrank	Erhöht das Sammeln von Erfahrung um 150 %.
 71157	Erfahrungstrank	
-71158	Heldenmedaille	Verleiht +50 % EXP, +30 % Schaden, +20 % Angriffsgeschwindigkeit, +20 % Zaubergeschwindigkeit, +10 % TP und +10 % MP.
+71158	Heldenmedaille	Verleiht +50 % EXP, +30 physischen Schaden, +20 % Angriffsgeschwindigkeit, +20 % Zaubergeschwindigkeit, +10 % TP und +10 % MP.
 71159	Truhe des Milon	Truhe für wahre Helden. Enthält ein zufälliges Item als Lohn für deinen Triumph.
 71160	Truhe der Athene	Truhe für wahre Heldinnen. Enthält ein zufälliges Item als Lohn für deinen Triumph.
 71161	Equus Purpur	Siegel für eines der wunderschönen und äußerst seltenen Purpurpferde.
@@ -2074,24 +2074,24 @@
 71173	Teleportationsrolle	Diese Rolle bringt dich direkt vor die Tore der Rotdrachenfestung.
 71174	Passierschein	Du darfst die Rotdrachenfestung betreten, wenn du diesen Passierschein dem zuständigen Wächter vorlegst.
 71175	Passierschein	Du darfst die Rotdrachenfestung betreten, wenn du diesen Passierschein dem zuständigen Wächter vorlegst.
-71176	Schwarzer Panther	Dieses Siegel ruft deinen geheimnisvollen schwarzen Panther herbei.
-71177	Leoparden-Siegel	Dieses Siegel ruft deinen mutigen Leoparden herbei.
-72001	Erfahrungsring	Erhöht das Sammeln von Erfahrung eine Stunde lang um 50%.
+71176	Schwarzer Panther	Das Siegel ruft deinen geheimnisvollen schwarzen Panther herbei.
+71177	Leoparden-Siegel	Das Siegel ruft deinen mutigen Leoparden herbei.
+72001	Erfahrungsring	Erhöht das Sammeln von Erfahrung 10 Stunden lang um 50%.
 72002	Erfahrungsring	Erhöht das Sammeln von Erfahrung 30 Minuten lang um 50%.
 72003	Erfahrungsring	Erhöht das Sammeln von Erfahrung 3 Stunden lang um 50%.
-72004	Handschuhe des Diebes	Verdoppelt 10 Stunden lang deine Chance, Gegenstände zu erbeuten.
-72005	Handschuhe des Diebes	Verdoppelt 30 Minuten lang deine Chance, Gegenstände zu erbeuten.
-72006	Handschuhe des Diebes	Verdoppelt 3 Stunden lang deine Chance, Gegenstände zu erbeuten.
+72004	Handschuhe des Diebes	Verdoppeln 10 Stunden lang deine Chance, Gegenstände zu erbeuten.
+72005	Handschuhe des Diebes	Verdoppeln 30 Minuten lang deine Chance, Gegenstände zu erbeuten.
+72006	Handschuhe des Diebes	Verdoppeln 3 Stunden lang deine Chance, Gegenstände zu erbeuten.
 72007	Seidenbündel	Du kannst 10 Stunden lang einen privaten Laden eröffnen.
 72008	Seidenbündel	Du kannst 30 Minuten lang einen privaten Laden eröffnen.
 72009	Seidenbündel	Du kannst 3 Stunden lang einen privaten Laden eröffnen.
 72010	Feder der Liebenden	Ist sie ausgerüstet, erhöhen sich die Liebespunkte eines Paares 15 Minuten lang doppelt so schnell.
 72011	Feder der Liebenden	Ist sie ausgerüstet, erhöhen sich die Liebespunkte eines Paares 30 Minuten lang doppelt so schnell.
 72012	Feder der Liebenden	Ist sie ausgerüstet, erhöhen sich die Liebespunkte eines Paares 3 Stunden lang doppelt so schnell.
-72013	Fischereibuch	Verdoppelt 15 Minuten lang deine Chance, einen seltenen Fisch zu fangen.
-72014	Fischereibuch	Verdoppelt 30 Minuten lang deine Chance, einen seltenen Fisch zu fangen.
-72015	Fischereibuch	Verdoppelt 3 Stunden lang deine Chance, einen seltenen Fisch zu fangen.
-72016	Dritte Hand	Eine Hand, die 15 Minuten lang Yang automatisch aufnimmt.
+72013	Fischereibuch	Wird benötigt, um seltene Fische fangen zu können und verdoppelt 15 Minuten lang deine Chance auf diese.
+72014	Fischereibuch	Wird benötigt, um seltene Fische fangen zu können und verdoppelt 30 Minuten lang deine Chance auf diese.
+72015	Fischereibuch	Wird benötigt, um seltene Fische fangen zu können und verdoppelt 3 Stunden lang deine Chance auf diese.
+72016	Dritte Hand	Eine Hand, die eine gewisse Zeit lang automatisch Yang aufnimmt.
 72017	Dritte Hand	Eine Hand, die 30 Minuten lang Yang automatisch aufnimmt.
 72018	Dritte Hand	Eine Hand, die 3 Stunden lang Yang automatisch aufnimmt.
 72019	Lagertruhe	Dein Lager erhält 15 Minuten lang zwei zusätzliche Lagerräume.
@@ -2100,15 +2100,15 @@
 72022	Medaille des Glücks	Verdoppelt 10 Stunden lang deine Chance, Yang zu erbeuten.
 72023	Medaille des Glücks	Verdoppelt 30 Minuten lang deine Chance, Yang zu erbeuten.
 72024	Medaille des Glücks	Verdoppelt 3 Stunden lang deine Chance, Yang zu erbeuten.
-72025	Kritischer Kampf	Erhöht deine Chance, im Kampf einen kritischen Treffer zu landen, 10 Minuten lang um 20%.
-72026	Kritischer Kampf	Erhöht deine Chance, im Kampf einen kritischen Treffer zu landen, 10 Minuten lang um 20%.
-72027	Kritischer Kampf	Erhöht deine Chance, im Kampf einen kritischen Treffer zu landen, 10 Minuten lang um 20%.
+72025	Kritischer Kampf	Erhöht deine Chance, im Kampf einen durchbohrenden Treffer zu landen, um 10 %.
+72026	Kritischer Kampf	Erhöht deine Chance, im Kampf einen durchbohrenden Treffer zu landen, um 10 %.
+72027	Kritischer Kampf	Erhöht deine Chance, im Kampf einen durchbohrenden Treffer zu landen, um 10 %.
 72028	Emotionsmaske	Du kannst deinen Gefühlen 7 Tage lang freien Lauf lassen.
 72029	Emotionsmaske	Du kannst deinen Gefühlen 15 Tage lang freien Lauf lassen.
 72030	Emotionsmaske	Du kannst deinen Gefühlen 30 Tage lang freien Lauf lassen.
-72031	Drachengott-Angriff	Erhöht deinen Angriffswert 30 Minuten lang um 12 bis 15%.
-72032	Drachengott-Angriff	Erhöht deinen Angriffswert 30 Minuten lang um 12 bis 15%.
-72033	Drachengott-Angriff	Erhöht deinen Angriffswert 30 Minuten lang um 12 bis 15%.
+72031	Drachengott-Angriff	Erhöht deinen Angriffswert 30 Minuten lang um 15%.
+72032	Drachengott-Angriff	Erhöht deinen Angriffswert 30 Minuten lang um 15%.
+72033	Drachengott-Angriff	Erhöht deinen Angriffswert 30 Minuten lang um 15%.
 72034	Drachengott-Verteidigung	Verringert den Schaden, den du bei der Verteidigung erleidest, um 12-15 %.
 72035	Drachengott-Verteidigung	Verringert den Schaden, den du bei der Verteidigung erleidest, um 12-15 %.
 72036	Drachengott-Verteidigung	Verringert den Schaden, den du bei der Verteidigung erleidest, um 12-15 %.
@@ -2121,38 +2121,38 @@
 72043	Buch des Anführers	Solange der Anführer einer Gruppe mit diesem Buch ausgerüstet ist, sammeln alle Gruppenmitglieder 30% mehr Erfahrungspunkte.
 72044	Buch des Anführers	Solange der Anführer einer Gruppe mit diesem Buch ausgerüstet ist, sammeln alle Gruppenmitglieder 30% mehr Erfahrungspunkte.
 72045	Buch des Anführers	Solange der Anführer einer Gruppe mit diesem Buch ausgerüstet ist, sammeln alle Gruppenmitglieder 30% mehr Erfahrungspunkte.
-72046	Wichtige Chance	Erhöht 10 Minuten lang deine Chance auf einen durchbohrenden Treffer um 20%.
-72047	Wichtige Chance	Erhöht 10 Minuten lang deine Chance auf einen durchbohrenden Treffer um 20%.
-72048	Wichtige Chance	Erhöht 10 Minuten lang deine Chance auf einen durchbohrenden Treffer um 20%.
+72046	Wichtige Chance	Erhöht deine Chance, im Kampf einen kritischen Treffer zu landen, um 10 %.
+72047	Wichtige Chance	Erhöht deine Chance, im Kampf einen kritischen Treffer zu landen, um 10 %.
+72048	Wichtige Chance	Erhöht deine Chance, im Kampf einen kritischen Treffer zu landen, um 10 %.
 72301	Segensschriftrolle	Beseitigt das Risiko, einen Gegenstand zu zerstören, wenn seine Verbesserung fehlschlägt. In diesem Fall wird lediglich seine Qualität um 1 verringert.
-72302	ETC icon/item/70003.tga	ETC icon/item/70003.tga
-72303	ETC icon/item/70005.tga	ETC icon/item/70005.tga
-72304	ETC icon/item/70024.tga	ETC icon/item/70024.tga
-72305	ETC icon/item/70026.tga	ETC icon/item/70026.tga
-72306	ETC icon/item/70027.tga	ETC icon/item/70027.tga
-72307	ETC icon/item/70028.tga	ETC icon/item/70028.tga
+72302	ETC icon/item/70003.tga	Solange der Anführer einer Gruppe mit diesem Buch ausgerüstet ist, sammeln alle Gruppenmitglieder drei Stunden lang 30% mehr Erfahrungspunkte.
+72303	ETC icon/item/70005.tga	Erhöht das Sammeln von Erfahrung eine Stunde lang um 50%.
+72304	ETC icon/item/70024.tga	Die legendäre Kugel fügt Gegenständen, die bereits mit vier Attributen ausgestattet sind, ein fünftes hinzu. Das Hinzufügen kann allerdings fehlschlagen.
+72305	ETC icon/item/70026.tga	Unsichtbarkeitsspiegel
+72306	ETC icon/item/70027.tga	Eine Aufzeichnung des Waffenschmiedes über die notwendigen Schritte zur Verbesserung von Gegenständen. Erhöht die Chance, einen Gegenstand von +4 auf +5 zu verbessern, auf 100 %.
+72307	ETC icon/item/70028.tga	Eine Aufzeichnung des Waffenschmiedes über die notwendigen Schritte zur Verbesserung von Gegenständen. Erhöht die Chance, einen Gegenstand von +5 auf +6 zu verbessern, auf 100 %.
 72308	Magisches Kupfererz	Mit diesem Erz und einer Segensschriftrolle kann beim Schmied eine Schriftrolle des Krieges hergestellt werden.
-72309	ETC icon/item/70039.tga	ETC icon/item/70039.tga
-72310	ETC icon/item/71001.tga	ETC icon/item/71001.tga
-72311	ETC icon/item/71020.tga	ETC icon/item/71020.tga
-72312	ETC icon/item/71028.tga	ETC icon/item/71028.tga
-72313	ETC icon/item/71030.tga	ETC icon/item/71030.tga
-72314	ETC icon/item/71032.tga	ETC icon/item/71032.tga
+72309	ETC icon/item/70039.tga	Das Buch ist mit der Seele eines alten Schmiedes verbunden. Bei Nutzung kann es die Chance der Gegenstandsverbesserung erhöhen.
+72310	ETC icon/item/71001.tga	Befreit dich vom Fluch des bösen Geistes, wenn das Lernen fehlschlägt. Mit Hilfe dieser Rolle kannst du ein weiteres Fertigkeitsdokument an einem Tag lesen.
+72311	ETC icon/item/71020.tga	Ein Segen, der deine TP und MP augenblicklich vollständig regeneriert.
+72312	ETC icon/item/71028.tga	Erhöht deinen Angriffswert um 20 %.
+72313	ETC icon/item/71030.tga	Verringert den Schaden, den du im Kampf erleidest, um 20 %.
+72314	ETC icon/item/71032.tga	Beseitigt das Risiko, einen Gegenstand zu zerstören, wenn dessen Verbesserung fehlschlägt. Lediglich die Qualität wird um eine Stufe verringert. Zudem erhöht sich die Wahrscheinlichkeit einer erfolgreichen Verbesserung um 10 %.
 72501	Erfahrungsring (iCafe)	Erhöht das Sammeln von Erfahrung um 20 % im Mitglieder-iCafe.
 72502	Diebeshandschuh (iCafe)	Die Erfolgsrate für das Erbeuten von Gegenständen erhöht sich um das Anderthalbfache im Mitglieder-iCafe.
 72701	Windschuhe	Sie erhöhen deine Bewegungsgeschwindigkeit um 30, solange sie ausgerüstet sind.
 72703	Tigerknochenohrring	Dein Angriffswert wird für 2 Stunden um 200 Punkte erhöht (Zeit läuft nur ab, wenn das Item angelegt ist). Das Item ist nicht handelbar.
 72704	Drachenknochenohrring	Dein Verteidigungswert wird für 2 Stunden um 200 Punkte erhöht (Zeit läuft nur ab, wenn das Item angelegt ist). Das Item ist nicht handelbar.
-72705	Tigerknochenarmband	Der Schaden deiner Fertigkeiten wird für 2 Stunden um 15% erhöht (Zeit läuft nur ab, wenn das Item angelegt ist). Das Item ist nicht handelbar.
-72706	Drachenknochenarmband	Deine Abwehr gegen Fertigkeiten wird für 2 Stunden um 15% erhöht (Zeit läuft nur ab, wenn das Item angelegt ist). Das Item ist nicht handelbar.
+72705	Tigerknochenarmband	Der Schaden deiner Fertigkeiten wird für 2 Stunden um 15 Punkte erhöht (Zeit läuft nur ab, wenn das Item angelegt ist). Das Item ist nicht handelbar.
+72706	Drachenknochenarmband	Deine Abwehr gegen Fertigkeiten wird für 2 Stunden um 15 Punkte erhöht (Zeit läuft nur ab, wenn das Item angelegt ist). Das Item ist nicht handelbar.
 72723	Elixier der Sonne (K)	Füllt deine TP automatisch auf. Enthält 1.000.000 TP.
 72724	Elixier der Sonne (M)	Füllt deine TP automatisch auf. Enthält 3.000.000 TP.
 72725	Elixier der Sonne (G)	Füllt deine TP automatisch auf. Enthält 7.000.000 TP.
-72726	Elixier der Sonne (S)	Füllt deine TP automatisch auf. Enthält 10.000.000 TP. Dieses Item ist handelbar.
+72726	Elixier der Sonne (S)	Enthält 10.000.000 TP. Füllt deine TP automatisch auf und hat zusätzlich einen positiven Effekt auf deine max. TP. Dieses Item ist handelbar.
 72727	Elixier des Mondes (K)	Füllt deine MP automatisch auf. Enthält 100.000 MP.
 72728	Elixier des Mondes (M)	Füllt deine MP automatisch auf. Enthält 300.000 MP.
 72729	Elixier des Mondes (G)	Füllt deine MP automatisch auf. Enthält 700.000 MP.
-72730	Elixier des Mondes (S)	Füllt deine MP automatisch auf. Enthält 1.000.000 MP. Dieses Item ist handelbar.
+72730	Elixier des Mondes (S)	Enthält 1.000.000 MP. Füllt deine MP automatisch auf und hat zusätzlich einen positiven Effekt auf deine max. MP. Dieses Item ist handelbar.
 73001	Modische Frisur (rot)	Eine modische Frisur, die ein charakteristisches Äußeres schafft.
 73002	Modische Frisur (hell)	Eine modische Frisur, die ein charakteristisches Äußeres schafft.
 73003	Modische Frisur (blau)	Eine modische Frisur, die ein charakteristisches Äußeres schafft.
@@ -2362,9 +2362,9 @@
 75619	Turban für Schamanen	Eine Kopfbedeckung aus feinstem Stoff für männliche Schamanen. (Dauer 7 Tage)
 75620	Kürbismaske-Schamane (m)	Eine Maske für den Schamanen in Form eines Kürbisses. Attribute und Dauer werden durch Zufall bestimmt. Sie ersetzt bereits vorhandene Frisuren.
 76000	Pfirsichblütenwein	Getränk, das deine TP augenblicklich um 500 Punkte regeneriert. Nicht handelbar.
-76001	Status-Neuverteilung	Die Anwendung dieses Gegenstandes ermöglicht es dir, deine Status-Punkte neu zu verteilen. So kannst du die Entwicklung deines Charakters in eine andere Richtung lenken. Nicht handelbar.
+76001	Status-Neuverteilung	Die Anwendung dieses Gegenstandes ermöglicht es dir, deine Statuspunkte neu zu verteilen. So kannst du die Entwicklung deines Charakters in eine andere Richtung lenken. Nicht handelbar.
 76002	Schrumpfkopf	Dieser Dämonenschrumpfkopf öffnet das Siegel zur 3. Ebene der Devil's Catacomb. Nicht handelbar.
-76003	Trank der Hast	Dieser Trank verringert die Abklingzeit 30 Minuten lang um 20 Prozent. Nicht handelbar.
+76003	Trank der Hast	Dieser Trank verringert die Abklingzeit deiner Fähigkeiten um 20 %.
 76004	Elixier des Mondes (K)	Füllt deine MP automatisch auf. Enthält 10.000 MP. Nicht handelbar.
 76005	Elixier des Mondes (M)	Füllt deine MP automatisch auf. Enthält 300.000 MP. Nicht handelbar.
 76006	Kompass des Metinsteins	Der Kompass zeigt dir Richtung und Entfernung des nächsten Metin-Steins an. Je heller er leuchtet, desto näher bist du. Er kann 6 Mal aktiviert werden. Nicht handelbar.
@@ -2378,10 +2378,10 @@
 76014	Gegenstand verzaubern(b)	Entfernt die Boni eines deiner Gegenstände und fügt neue hinzu. Item aus Leveltruhe, nicht handelbar.
 76015	Segenskugel	Eine legendäre, gesegnete Kugel. Gegenständen, die bereits mit vier Attributen ausgestattet sind, vermag sie ein weiteres Attribut hinzuzufügen. Nicht handelbar.
 76016	Segensschriftrolle	Beseitigt das Risiko, einen Gegenstand zu zerstören, wenn seine Verbesserung fehlschlägt. In diesem Fall wird lediglich seine Qualität um 1 verringert. Nicht handelbar.
-76017	Trank des Angriffs +10	Erhöht deine Angriffsgeschwindigkeit für 30 Minuten um 10%. Nicht handelbar.
-76018	Trank des Angriffs +15	Erhöht deine Angriffsgeschwindigkeit 30 Minuten lang um 15%. Nicht handelbar.
-76019	Passierschein	Du darfst eine weitere Ebene des Spinnendungeons sowie die Rotdrachenfestung betreten, wenn du diesen Passierschein dem zuständigen Wächter vorlegst. Nicht handelbar.
-76020	Elixier des Forschers	Steigert die Qualität gesammelter Forschungsobjekte und damit auch ihre Annahmewahrscheinlichkeit. Nicht handelbar.
+76017	Trank des Angriffs +10	Erhöht deine Angriffsgeschwindigkeit um 15 %.
+76018	Trank des Angriffs +15	Erhöht deine Angriffsgeschwindigkeit um 20 %.
+76019	Passierschein	Du darfst eine weitere Ebene ausgewählter Dungeons betreten, wenn du diesen Passierschein dem zuständigen Wächter vorlegst. Nicht handelbar.
+76020	Elixier des Forschers	Steigert die Qualität gesammelter Forschungsobjekte und damit auch ihre Annahmewahrscheinlichkeit. Gilt nicht für Quests auf Yohara. Nicht handelbar.
 76021	Elixier der Sonne (K)	Füllt deine TP automatisch auf. Enthält 100.000 TP. Nicht handelbar.
 76022	Elixier der Sonne (M)	Füllt deine TP automatisch auf. Enthält 3.000.000 TP. Nicht handelbar.
 76023	Grüner Zauber	Entfernt die Boni eines deiner Gegenstände und fügt neue hinzu. Kann nur bei Waffen und Rüstungen bis Level 40 angewendet werden. Item aus Leveltruhe, nicht handelbar.

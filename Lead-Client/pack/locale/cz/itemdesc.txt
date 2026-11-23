@@ -211,11 +211,11 @@
 27876	Grilovaný sumec	Obnoví okamžitě několik MB.
 27877	Grilovaná mřenka	Způsobí tvou neviditelnost na 5 minut.
 27878	Grilovaná lotosová ryba	Obnoví okamžitě několik tvých ZB.
-27879	Grilovaný ayu	Přípravou nad ohněm dostane tato ryba příjemně čadivou příchuť.
-27880	Grilovaná koruška	Přípravou nad ohněm dostane tato ryba příjemně čadivou příchuť.
-27881	Grilovaný shiri	Přípravou nad ohněm dostane tato ryba příjemně čadivou příchuť.
-27882	Grilovaný kapr hladký	Přípravou nad ohněm dostane tato ryba příjemně čadivou příchuť.
-27883	Grilovaná zlatá rybka	Přípravou nad ohněm dostane tato ryba příjemně čadivou příchuť.
+27879	Grilovaný ayu	Zvyšuje zisk zkušeností o 10 %.
+27880	Grilovaná koruška	Zvyšuje efekt síly proti monstrům o 5 %.
+27881	Grilovaný shiri	Zvyšuje magický útok/útok zbraní o 3 %.
+27882	Grilovaný kapr hladký	Okamžitě obnoví 1 000 ZB.
+27883	Grilovaná zlatá rybka	Zvyšuje zisk zkušeností o 50 %.
 27987	Mušle	Mušle s pěknou skořápkou. Může obsahovat vzácnou perlu.
 27988	Mapa pokladu	Ohmataná mapa, na které je vyznačené umístění starého pokladu.
 27989	Kompas kamene Metin	Kompas ti ukáže intenzitou šipky směr a vzdálenost nejbližšího kamene Metin. Čím více svítí, tím jsi blíže. Muže být aktivován šestkrát.
@@ -310,7 +310,7 @@
 30063	Lék na pleť	Lék léčí kožní onemocnění.
 30064	Ostrý kámen	Kámen se používá k výrobě šípového hrotu.
 30065	Zvoneček	Zvoneček, který vydává cinkavý tón.
-30066	Ostrý pepř	Moc ostrý pepř
+30066	Ostrý pepř	Moc ostrý pepř.
 30067	Hadí kůže	Kůže hada.
 30068	Steak z tofu	Vegetariánské maso.
 30069	Vlčí dráp+	Ostré drápy vlka se používají k výrobě módních doplňků.
@@ -383,7 +383,7 @@
 30188	Obsidián	Původně tekutý, rychle zmražený vulkanický kámen.
 30189	Baljit-Elvedinovy slzy	Tato umělecky provedená váza obsahuje slzy boha Baljit-Elvedin.
 30190	Krvavý kámen	Tento kámen je vyroben z krve bohyně Bahar-Taraji a zaručuje Vám vstup do Jeskyně vyhnanství.
-30191	Krvavý kámen	Krvavé kameny Vám zaručují vstup do Jeskyně vyhnanství.
+30191	Krvavý kámen	Krvavé kameny ti zaručují vstup do Jeskyně vyhnanství.
 30192	Mléčnice	Vysoce kvalitní rostlinný výměšek
 30193	Prstní kůstky	Poslední zbytky padlého hrdiny.
 30194	Kyj orků	Ošklivá zbraň s velkými ostny.
@@ -438,25 +438,25 @@
 30330	Kámen Maat	Maat, bohyně spravedlnosti, podporuje řád proti chaosu.
 30331	Mrazivý klíč	Tento klíč je chladný jako led a umožňuje přístup do třetího podlaží Nemerovy strážní věže. Mohou jej použít pouze šamani.
 30332	Severka	Pečetní kámen vyrobený z čistého ledu. Umožňuje přístup do šestého patra Nemerovy strážní věže.
-30333	Klíč mrazivé květiny	Klíč vyrobený z ledu a umožňující přístup do devátého patra Nemerovy strážní věže. Použít jej mohou jen ninjové a šamani.
-30500	Nůž vykládaný rubíny	Nástroj pro zušlechtění tvé zbraně
-30501	Zlatá svorka	Element pro zušlechtění tvé zbraně
-30502	Rubínová dekorace	Element pro zušlechtění tvé zbraně
-30503	Nůž vykládaný ametysty	Nástroj pro zušlechtění tvé zbraně
-30504	Stříbrná svorka	Element pro zušlechtění tvé zbraně
-30505	Smaragdová dekorace	Element pro zušlechtění tvé zbraně
-30506	Nůž vykládaný safíry	Nástroj pro zušlechtění tvé zbraně
-30507	Bronzová svorka	Element pro zušlechtění tvé zbraně
-30508	Safírová dekorace	Element pro zušlechtění tvé zbraně
+30333	Klíč mrazivé květiny	Klíč je vyrobený z ledu a umožňující přístup do devátého patra Nemerovy strážní věže.
+30500	Nůž vykládaný rubíny	Nástroj pro zušlechtění tvé zbraně.
+30501	Zlatá svorka	Element pro zušlechtění tvé zbraně.
+30502	Rubínová dekorace	Element pro zušlechtění tvé zbraně.
+30503	Nůž vykládaný ametysty	Nástroj pro zušlechtění tvé zbraně.
+30504	Stříbrná svorka	Element pro zušlechtění tvé zbraně.
+30505	Smaragdová dekorace	Element pro zušlechtění tvé zbraně.
+30506	Nůž vykládaný safíry	Nástroj pro zušlechtění tvé zbraně.
+30507	Bronzová svorka	Element pro zušlechtění tvé zbraně.
+30508	Safírová dekorace	Element pro zušlechtění tvé zbraně.
 30509	Modrá dračí ocel	Dračí kůže je extrémně lehká a flexibilní, ovšem také téměř nezničitelná. Lze je zpracovávat jako kov a použít ji na výrobu brnění.
-30510	Velká epoleta	Element pro zušlechtění brnění
-30511	Rudá tkanina	Jemná tkanina pro zušlechtění brnění
+30510	Velká epoleta	Element pro zušlechtění brnění.
+30511	Rudá tkanina	Jemná tkanina pro zušlechtění brnění.
 30512	Červená dračí ocel	Dračí kůže je extrémně lehká a flexibilní, ovšem také téměř nezničitelná. Lze je zpracovávat jako kov a použít ji na výrobu brnění.
-30513	Noblesní epoleta	Element pro zušlechtění brnění
-30514	Fialová tkanina	Jemná tkanina pro zušlechtění brnění
+30513	Noblesní epoleta	Element pro zušlechtění brnění.
+30514	Fialová tkanina	Jemná tkanina pro zušlechtění brnění.
 30515	Růžová dračí ocel	Dračí kůže je extrémně lehká a flexibilní, ovšem také téměř nezničitelná. Lze je zpracovávat jako kov a použít ji na výrobu brnění.
-30516	Starodávná epoleta	Element pro zušlechtění brnění
-30517	Zlatá tkanina	Jemná tkanina pro zušlechtění brnění
+30516	Starodávná epoleta	Element pro zušlechtění brnění.
+30517	Zlatá tkanina	Jemná tkanina pro zušlechtění brnění.
 30518	Zlatá příze	Magické klubko vyrobené z roztaveného zlata. Společně s drahokamem jej lze použít pro výrobu cenného šperku.
 30519	Zlatý hák	Vyrobeno z čistého zlata. Lze jej zpracovat společně s drahokamem na cenný klenot.
 30520	Zlatá přezka	Vyrobeno z čistého zlata. Lze jej zpracovat společně s drahokamem na cenný klenot.
@@ -555,7 +555,7 @@
 31027	Jemný písek	Tento velmi jemný písek je ideálním stavebním materiálem.
 31028	Jílová cihla	Cihla ve tvaru kostky, vypálená z jílu.
 31029	Vnitřní světlo	Vnitřní zdroj energie Polyphemose
-31030	Vnitřní světlo	Vnitřní zdroj energie Krále gigantů
+31030	Vnitřní světlo	Vnitřní zdroj energie Krále gigantů.
 31031	Esence milénia	Směs, vyrobená z Kořenu gango, Houby tue a Rododendronu.  Důležitá ingredience pro Leviatanské perly.
 31032	Leviatanské perly	Efektně posilující kapsle, vyrobené z Vnitřního světla tajemných bytostí a Esence milénia.
 31033	Šéfovská kápě	Tato kápě je pro Červené zloděje symbolem nezranitelnosti
@@ -621,11 +621,11 @@
 31093	Neznámý kámen	Tento typ kamene je ti zcela neznámý, ale zřetelně vyzařuje chlad a temnotu.
 31094	Fragment	Fragment Démonického meteoritu
 31095		
-31096		
-31097		
-31098		
-31099		
-31100		
+31096		Jemné dřevo
+31097		Rosa En-Tai
+31098		Duše Země.
+31099		Smaragd stromu
+31100		Lékárnička
 31101		
 31102		
 31103		
@@ -646,7 +646,7 @@
 38102	Posilující svačinka (30)	Prodlouží život tvého jezdeckého zvířete o 30 dnů.
 38200	Pečeť Rufuse	Tuto pečeť můžeš použít pro zavolání tvého mladého vlka Rufuse.
 38201	Pečeť Rufuse	Tuto pečeť můžeš použít pro zavolání tvého mladého vlka Rufuse.
-39001	Magický kámen	Tento kámen zvyšuje úspěšnost při vylepšování předmětu. A co je nejlepší, předmět není při neúspěchu vylepšení zničen nebo není snížena jeho úroveň. S předmětem je možné obchodovat.
+39001	Magický kámen	Tento kámen poskytuje excelentní šanci při vylepšování předmětů. A co je nejlepší, předmět není při neúspěchu vylepšení zničen nebo není snížena jeho úroveň. S předmětem je možné obchodovat.
 39002	Prsten zkušeností	Zvyšuje zisk zkušeností o 50 % na 60 minut. S předmětem lze obchodovat.
 39003	Broskvové víno	Elixír, který ti dodá okamžitě 500 ZB. S předmětem lze obchodovat.
 39004	Mramor požehnání	Legendární požehnaná koule. Když má předmět 4 atributy, přidá k nim ještě jeden další. Ovšem vylepšení může také selhat. S předmětem lze obchodovat.
@@ -663,12 +663,12 @@
 39015	Kámen kováře	Pomocí tohoto kamene a Požehnaného pergamenu můžeš vyrobit u kováře Příručku kování. S předmětem lze obchodovat.
 39016	Magická železná ruda	S touto rudou a požehnaným pergamenem se dá vyrobit u kováře pergamen draka. S předmětem lze obchodovat.
 39017	Život dračího boha	Zvýší maximální ZB na 30 minut o 20 %. S předmětem lze obchodovat.
-39018	Útok dračího boha	Zvýší škodu, kterou způsobíš druhým v boji, na 30 minut o 12 až 15 %. S předmětem lze obchodovat.
+39018	Útok dračího boha	Zvýší tvou hodnotu útoku na 30 minut o 20 %. S předmětem lze obchodovat.
 39019	Inteligence dračího boha	Zvýší maximální MB na 30 minut o 20 %. S předmětem lze obchodovat.
-39020	Obrana dračího boha	Sníží škodu, kterou utrpíš v boji, na 30 minut o 12 až 15 %. S předmětem lze obchodovat.
+39020	Obrana dračího boha	Sníží škodu, kterou utrpíš v boji, na 30 minut o 20 %. S předmětem lze obchodovat.
 39021	Podpora dračího boha	Vitalita, síla, inteligence a pohyblivost tvojí postavy se zvýší přechodně o pětinásobek. S předmětem lze obchodovat.
 39022	Pergamen draka	Odstraní riziko, že se při zlepšování předmět zničí. Pouze jeho kvalita se sníží o jeden stupeň. Navíc se zvýší pravděpodobnost úspěšného zlepšení o 10 %. S předmětem lze obchodovat.
-39023	Výzkumníkův elixír	Zvyšuje kvalitu zkoumaných věcí, které máte nasbírat, čímž zvyšuje šanci, že budou akceptovány. S předmětem lze obchodovat.
+39023	Výzkumníkův elixír	Tento elixír zvyšuje kvalitu zkoumaných věcí které máte nasbírat, čímž zvyšuje šanci, že budou akceptovány. S předmětem lze obchodovat. Nefunguje na úkoly v Yohaře.
 39024	Kritický útok	Zvýší šanci docílit kritický zásah na 10 minut o 20 %. S předmětem lze obchodovat.
 39025	Pronikavý útok	Zvýší šanci docílit v boji pronikavý zásah na 10 minut o 20 %. S předmětem lze obchodovat.
 39026	Elixír rychlosti	Zvýší na 30 minut tvou rychlost pohybu o 60. S předmětem lze obchodovat.
@@ -720,7 +720,7 @@
 41026	TUR boxerský úbor (Ž)	Boxerský úbor pro ženy v tureckých národních barvách.
 41027	BRA boxerský úbor (M)	Boxerský úbor pro muže v brazilských národních barvách.
 41028	BRA boxerský úbor (Ž)	Boxerský úbor pro ženy v brazilských národních barvách.
-41029	Pouštní oblek (M, Bonus)	Uniforma pro muže, která pomáhá v přežití v nelidských pouštních podmínkách. S předmětem lze obchodovat.
+41029	Pouštní oblek (M, Bonus)	Bojový úbor pro muže, ideální pro přežití v nehostinných pouštních podmínkách. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 41030	Pouštní oblek (Ž, Bonus)	Uniforma pro ženy, která pomáhá v přežití v nelidských pouštních podmínkách. S předmětem lze obchodovat.
 41031	Olym. šermířský úbor (M)	Sportovní ochranný oblek pro šermíře. S předmětem lze obchodovat.
 41032	Olym. šermířský úbor (Ž)	Sportovní ochranný oblek pro šermířky. S předmětem lze obchodovat.
@@ -912,14 +912,14 @@
 41224	Yongan FC+ (Ž)	Fotbalová sada v červené a bílé barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
 41225	FC Bakra+ (M)	Fotbalová sada v tmavě modré barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
 41226	FC Bakra+ (Ž)	Fotbalová sada v tmavě modré barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
-41227	FC Bokjung+ (M)	Fotbalová sada ve žluté a modré barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
-41228	FC Bokjung+ (Ž)	Fotbalová sada ve žluté a modré barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
-41229	FC Bavaria Hwang+ (M)	Fotbalová sada v červené a zlaté barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
-41230	FC Bavaria Hwang+ (Ž)	Fotbalová sada v červené a zlaté barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
+41227	FC Bokjung+ (M)	Sportovní úbor pro fotbalisty v ukrajinských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41228	FC Bokjung+ (Ž)	Sportovní úbor pro fotbalistky v ukrajinských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41229	FC Bavaria Hwang+ (M)	Sportovní úbor pro fotbalisty ve velšských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41230	FC Bavaria Hwang+ (Ž)	Sportovní úbor pro fotbalistky ve velšských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41231	Borussia Chunjo+ (M)	Fotbalová sada v černé a žluté barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
 41232	Borussia Chunjo+ (Ž)	Fotbalová sada v černé a žluté barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
-41233	SC Doyyum+ (M)	Fotbalová sada v černé a bílé barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
-41234	SC Doyyum+ (Ž)	Fotbalová sada v černé a bílé barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
+41233	SC Doyyum+ (M)	Sportovní úbor pro fotbalisty v rakouských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41234	SC Doyyum+ (Ž)	Sportovní úbor pro fotbalistky v rakouských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41235	Hasun Dong FC+ (M)	Fotbalová sada v zelené a bílé barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
 41236	Hasun Dong FC+ (Ž)	Fotbalová sada v zelené a bílé barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
 41237	CFR Dračí oheň 07+ (M)	Fotbalová sada v tmavě červené barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
@@ -950,20 +950,20 @@
 41262	Dračí údolí SC+ (Ž)	Fotbalová sada v tmavě modré a oranžové barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
 41263	Bouřné hory FC+ (M)	Fotbalová sada v červené a bílé barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
 41264	Bouřné hory FC+ (Ž)	Fotbalová sada v červené a bílé barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
-41265	Pyungmoo Saint Hwang+ (M)	Fotbalová sada v tmavě modré barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
-41266	Pyungmoo Saint Hwang+ (Ž)	Fotbalová sada v tmavě modré barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
+41265	Pyungmoo Saint Hwang+ (M)	Sportovní úbor pro fotbalisty ve skotských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41266	Pyungmoo Saint Hwang+ (Ž)	Sportovní úbor pro fotbalistky ve skotských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41267	Real Sohan+ (M)	Fotbalová sada v bílé barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
 41268	Real Sohan+ (Ž)	Fotbalová sada v bílé barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
 41269	FC Jinno 04+ (M)	Fotbalová sada v azurově modré a bílé barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
 41270	FC Jinno 04+ (Ž)	Fotbalová sada v azurově modré a bílé barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
-41271	FC Sangsun Dong+ (M)	Fotbalová sada v černé a oranžové barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
-41272	FC Sangsun Dong+ (Ž)	Fotbalová sada v černé a oranžové barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
+41271	FC Sangsun Dong+ (M)	Sportovní úbor pro fotbalisty v severomakedonských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41272	FC Sangsun Dong+ (Ž)	Sportovní úbor pro fotbalistky v severomakedonských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41273	SL Jungsun Dong+ (M)	Fotbalová sada v červené a bílé barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
 41274	SL Jungsun Dong+ (Ž)	Fotbalová sada v červené a bílé barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
-41275	Spartak Jungrang+ (M)	Fotbalová sada v červené a bílé barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
-41276	Spartak Jungrang+ (Ž)	Fotbalová sada v červené a bílé barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
-41277	Ohnivá země CF+ (M)	Fotbalová sada v červené a černé barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
-41278	Ohnivá země CF+ (Ž)	Fotbalová sada v červené a černé barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
+41275	Spartak Jungrang+ (M)	Sportovní úbor pro fotbalisty v českých národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41276	Spartak Jungrang+ (Ž)	Sportovní úbor pro fotbalistky v českých národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41277	Ohnivá země CF+ (M)	Sportovní úbor pro fotbalisty ve finských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41278	Ohnivá země CF+ (Ž)	Sportovní úbor pro fotbalistky ve finských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41279	FC St. Seungryong+ (M)	Fotbalová sada v modré barvě pro muže. Poskytuje alespoň jeden náhodný bonus.
 41280	FC St. Seungryong+ (Ž)	Fotbalová sada v modré barvě pro ženy. Poskytuje alespoň jeden náhodný bonus.
 41291	Králičí kostým (černý)	Králičí kostým pro muže vyrobený z černé plyše.
@@ -974,8 +974,8 @@
 41296	Zaječí kostým (modrý)	Zaječí kostým pro ženy vyrobený z modré plyše.
 41297	Zaječí kostým (zelený)	Zaječí kostým pro ženy vyrobený ze zelené plyše.
 41298	Zaječí kostým (růžový)	Zaječí kostým pro ženy vyrobený z růžové plyše.
-41299	Králičí kostým+ (černý)	Králičí kostým pro muže vyrobený z černé plyše. Poskytuje alespoň jeden náhodný bonus.
-41300	Králičí kostým+ (modrý)	Králičí kostým pro muže vyrobený z modré plyše. Poskytuje alespoň jeden náhodný bonus.
+41299	Králičí kostým+ (černý)	Králičí kostým pro muže vyrobený z černé plyše. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
+41300	Králičí kostým+ (modrý)	Králičí kostým pro muže vyrobený z modré plyše. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 41301	Králičí kostým+ (zelený)	Králičí kostým pro muže vyrobený ze zelené plyše. Poskytuje alespoň jeden náhodný bonus.
 41302	Králičí kostým+ (růžový)	Králičí kostým pro muže vyrobený z růžové plyše. Poskytuje alespoň jeden náhodný bonus.
 41303	Zaječí kostým+ (černý)	Zaječí kostým pro ženy vyrobený z černé plyše. Poskytuje alespoň jeden náhodný bonus.
@@ -988,7 +988,7 @@
 41310	Oblek kobry+ (ž)	Černě se třpytící oblek s hadími symboly. Poskytuje alespoň jeden náhodný bonus.
 41311	Pouštní válečník (M, č.)	Černé bojové oblečení pro muže.
 41312	Pouštní válečník (Ž, č.)	Černé bojové oblečení pro ženy.
-41313	Pouštní válečník+ (M, č)	Černé bojové oblečení pro muže. Poskytuje alespoň jeden náhodný bonus.
+41313	Pouštní válečník+ (M, č)	Černé bojové oblečení pro muže. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 41314	Pouštní válečník+ (Ž, č)	Černé bojové oblečení pro ženy. Poskytuje alespoň jeden náhodný bonus.
 41315	Azraelovo brnění (m)	Ocelové brnění, které patřilo nechvalně proslulému vůdci démonů.
 41316	Azraelovo brnění (ž)	Ocelové brnění, které patřilo nechvalně proslulému vůdci démonů.
@@ -998,10 +998,10 @@
 41321	Šaty Dýně Jacka (ž)	Super strašidelný Halloweenský kostým
 41322	Oblek Dýně Jacka+ (m)	Super strašidelný Halloweenský kostým. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 41323	Šaty Dýně Jacka+ (ž)	Super strašidelný Halloweenský kostým. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
-41324		
-41325		
-41326		
-41327		
+41324		Mužský bitevní oblek s emblémem hvězdy a půlměsíce.
+41325		Ženský bitevní oblek s emblémem hvězdy a půlměsíce.
+41326		Mužský bitevní oblek s emblémem hvězdy a půlměsíce. Poskytuje alespoň jeden náhodný bonus.
+41327		Ženský bitevní oblek s emblémem hvězdy a půlměsíce. Poskytuje alespoň jeden náhodný bonus.
 41328	Sada pro MS - ALG (M)	Fotbalová sada pro mistrovství světa v alžírských národních barvách.
 41329	Sada pro MS - ALG (Ž)	Fotbalová sada pro mistrovství světa v alžírských národních barvách.
 41330	Sada pro MS - ARG (M)	Fotbalová sada pro mistrovství světa v argentinských národních barvách.
@@ -1072,8 +1072,8 @@
 41395	Sada pro MS+ - ARG (Ž)	Fotbalová sada pro mistrovství světa v argentinských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41396	Sada pro MS+ - AUS (M)	Fotbalová sada pro mistrovství světa v australských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41397	Sada pro MS+ - AUS (Ž)	Fotbalová sada pro mistrovství světa v australských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41398	Sada pro MS+ - BEL (M)	Fotbalová sada pro mistrovství světa v belgických národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41399	Sada pro MS+ - BEL (Ž)	Fotbalová sada pro mistrovství světa v belgických národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41398	Sada pro MS+ - BEL (M)	Sportovní úbor pro fotbalisty v belgických národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41399	Sada pro MS+ - BEL (Ž)	Sportovní úbor pro fotbalistky v belgických národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41400	Sada pro MS+ - BIH (M)	Fotbalová sada pro mistrovství světa v bosensko-hercegovinských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41401	Sada pro MS+ - BIH (Ž)	Fotbalová sada pro mistrovství světa v bosensko-hercegovinských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41402	Sada pro MS+ - BRA (M)	Fotbalová sada pro mistrovství světa v brazilských národních barvách. Poskytuje alespoň jeden náhodný bonus.
@@ -1088,47 +1088,47 @@
 41411	Sada pro MS+ - CRC (Ž)	Fotbalová sada pro mistrovství světa v kostarických národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41412	Sada pro MS+ - CIV (M)	Fotbalová sada pro mistrovství světa v národních barvách Pobřeží slonoviny. Poskytuje alespoň jeden náhodný bonus.
 41413	Sada pro MS+ - CIV (Ž)	Fotbalová sada pro mistrovství světa v národních barvách Pobřeží slonoviny. Poskytuje alespoň jeden náhodný bonus.
-41414	Sada pro MS+ - CRO (M)	Fotbalová sada pro mistrovství světa v chorvatských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41415	Sada pro MS+ - CRO (Ž)	Fotbalová sada pro mistrovství světa v chorvatských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41414	Sada pro MS+ - CRO (M)	Sportovní úbor pro fotbalisty v chorvatských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41415	Sada pro MS+ - CRO (Ž)	Sportovní úbor pro fotbalistky v chorvatských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41416	Sada pro MS+ - ECU (M)	Fotbalová sada pro mistrovství světa v ekvádorských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41417	Sada pro MS+ - ECU (Ž)	Fotbalová sada pro mistrovství světa v ekvádorských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41418	Sada pro MS+ - ENG (M)	Fotbalová sada pro mistrovství světa v anglických národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41419	Sada pro MS+ - ENG (Ž)	Fotbalová sada pro mistrovství světa v anglických národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41420	Sada pro MS+ - FRA (M)	Fotbalová sada pro mistrovství světa ve francouzských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41421	Sada pro MS+ - FRA (Ž)	Fotbalová sada pro mistrovství světa ve francouzských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41422	Sada pro MS+ - GER (M)	Fotbalová sada pro mistrovství světa v německých národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41423	Sada pro MS+ - GER (Ž)	Fotbalová sada pro mistrovství světa v německých národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41418	Sada pro MS+ - ENG (M)	Sportovní úbor pro fotbalisty v anglických národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41419	Sada pro MS+ - ENG (Ž)	Sportovní úbor pro fotbalistky v anglických národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41420	Sada pro MS+ - FRA (M)	Sportovní úbor pro fotbalisty ve francouzských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41421	Sada pro MS+ - FRA (Ž)	Sportovní úbor pro fotbalistky ve francouzských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41422	Sada pro MS+ - GER (M)	Sportovní úbor pro fotbalisty v německých národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41423	Sada pro MS+ - GER (Ž)	Sportovní úbor pro fotbalistky v německých národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41424	Sada pro MS+ - GHA (M)	Fotbalová sada pro mistrovství světa v ghanských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41425	Sada pro MS+ - GHA (Ž)	Fotbalová sada pro mistrovství světa v ghanských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41426	Sada pro MS+ - GRE (M)	Fotbalová sada pro mistrovství světa v řeckých národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41426	Sada pro MS+ - GRE (M)	Fotbalová sada pro mistrovství světa v řeckých národních barvách. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 41427	Sada pro MS+ - GRE (Ž)	Fotbalová sada pro mistrovství světa v řeckých národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41428	Sada pro MS+ - HON (M)	Fotbalová sada pro mistrovství světa v honduraských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41429	Sada pro MS+ - HON (Ž)	Fotbalová sada pro mistrovství světa v honduraských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41430	Sada pro MS+ - IRN (M)	Fotbalová sada pro mistrovství světa v íránských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41431	Sada pro MS+ - IRN (Ž)	Fotbalová sada pro mistrovství světa v íránských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41432	Sada pro MS+ - ITA (M)	Fotbalová sada pro mistrovství světa v italských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41433	Sada pro MS+ - ITA (Ž)	Fotbalová sada pro mistrovství světa v italských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41432	Sada pro MS+ - ITA (M)	Sportovní úbor pro fotbalisty v italských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41433	Sada pro MS+ - ITA (Ž)	Sportovní úbor pro fotbalistky v italských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41434	Sada pro MS+ - JPN (M)	Fotbalová sada pro mistrovství světa v japonských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41435	Sada pro MS+ - JPN (Ž)	Fotbalová sada pro mistrovství světa v japonských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41436	Sada pro MS+ - KOR (M)	Fotbalová sada pro mistrovství světa v korejských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41436	Sada pro MS+ - KOR (M)	Fotbalová sada pro mistrovství světa v korejských národních barvách. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 41437	Sada pro MS+ - KOR (Ž)	Fotbalová sada pro mistrovství světa v korejských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41438	Sada pro MS+ - MEX (M)	Fotbalová sada pro mistrovství světa v mexických národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41438	Sada pro MS+ - MEX (M)	Fotbalová sada pro mistrovství světa v mexických národních barvách. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 41439	Sada pro MS+ - MEX (Ž)	Fotbalová sada pro mistrovství světa v mexických národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41440	Sada pro MS+ - NED (M)	Fotbalová sada pro mistrovství světa v nizozemských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41441	Sada pro MS+ - NED (Ž)	Fotbalová sada pro mistrovství světa v nizozemských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41440	Sada pro MS+ - NED (M)	Sportovní úbor pro fotbalisty v nizozemských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41441	Sada pro MS+ - NED (Ž)	Sportovní úbor pro fotbalistky v nizozemských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41442	Sada pro MS+ - NGA (M)	Fotbalová sada pro mistrovství světa v nigerijských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41443	Sada pro MS+ - NGA (Ž)	Fotbalová sada pro mistrovství světa v nigerijských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41444	Sada pro MS+ - POR (M)	Fotbalová sada pro mistrovství světa v portugalských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41445	Sada pro MS+ - POR (Ž)	Fotbalová sada pro mistrovství světa v portugalských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41446	Sada pro MS+ - RUS (M)	Fotbalová sada pro mistrovství světa v ruských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41447	Sada pro MS+ - RUS (Ž)	Fotbalová sada pro mistrovství světa v ruských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41448	Sada pro MS+ - ESP (M)	Fotbalová sada pro mistrovství světa ve španělských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41449	Sada pro MS+ - ESP (Ž)	Fotbalová sada pro mistrovství světa ve španělských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41450	Sada pro MS+ - SUI (M)	Fotbalová sada pro mistrovství světa ve švýcarských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41451	Sada pro MS+ - SUI (Ž)	Fotbalová sada pro mistrovství světa ve švýcarských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41444	Sada pro MS+ - POR (M)	Sportovní úbor pro fotbalisty v portugalských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41445	Sada pro MS+ - POR (Ž)	Sportovní úbor pro fotbalistky v portugalských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41446	Sada pro MS+ - RUS (M)	Sportovní úbor pro fotbalisty v ruských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41447	Sada pro MS+ - RUS (Ž)	Sportovní úbor pro fotbalistky v ruských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41448	Sada pro MS+ - ESP (M)	Sportovní úbor pro fotbalisty ve španělských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41449	Sada pro MS+ - ESP (Ž)	Sportovní úbor pro fotbalistky ve španělských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41450	Sada pro MS+ - SUI (M)	Sportovní úbor pro fotbalisty ve švýcarských národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41451	Sada pro MS+ - SUI (Ž)	Sportovní úbor pro fotbalistky ve švýcarských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41452	Sada pro MS+ - URU (M)	Fotbalová sada pro mistrovství světa v uruguayských národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41453	Sada pro MS+ - URU (Ž)	Fotbalová sada pro mistrovství světa v uruguayských národních barvách. Poskytuje alespoň jeden náhodný bonus.
-41454	Sada pro MS+ - USA (M)	Fotbalová sada pro mistrovství světa v amerických národních barvách. Poskytuje alespoň jeden náhodný bonus.
+41454	Sada pro MS+ - USA (M)	Fotbalová sada pro mistrovství světa v amerických národních barvách. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 41455	Sada pro MS+ - USA (Ž)	Fotbalová sada pro mistrovství světa v amerických národních barvách. Poskytuje alespoň jeden náhodný bonus.
 41472	Zombie oblek	Krví potřísněné oblečení, hnijící maso, vylezlé kosti - perfektní oblečení pro každou zombie.
 41473	Zombie šaty	Krví potřísněné oblečení, hnijící maso, vylezlé kosti - perfektní oblečení pro každou zombie.
@@ -1172,7 +1172,7 @@
 45008	GER Fotbalový účes (Ž)	Sportovní účes pro fotbalistky v německých národních barvách.
 45009	Dredy (M)	Dlouhé vlasy, spletené do dredů a stažené do copu.
 45010	GER Boxerský účes (Ž)	Sportovní účes pro boxerky v německých národních barvách.
-45011	Pokrývka hlavy (M)	Pokrývka hlavy pro muže, vyrobená z nejlepších materiálů. S předmětem lze obchodovat.
+45011	Pokrývka hlavy (M)	Pokrývka hlavy pro muže, vyrobená z nejlepších materiálů. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 45012	Pokrývka hlavy (Ž)	Pokrývka hlavy pro ženy, vyrobená z nejlepších materiálů. S předmětem lze obchodovat.
 45013	LotoShosi (M)	Dlouhé vlasy nahoře, krátké po stranách - extravagantní účes pro muže. S předmětem lze obchodovat.
 45014	Šermířský účes (Ž)	Sportovní účes pro šermířky. S předmětem lze obchodovat.
@@ -1268,8 +1268,8 @@
 45124	Zaječí uši (modré)	Modré zaječí uši pro ženy.
 45125	Zaječí uši (zelené)	Zelené zaječí uši pro ženy.
 45126	Zaječí uši (růžové)	Růžové zaječí uši pro ženy.
-45127	Králičí uši+ (černé)	Černý klobouk s králičíma ušima pro muže. Poskytuje alespoň jeden náhodný bonus.
-45128	Králičí uši+ (modré)	Modrý klobouk s králičíma ušima pro muže. Poskytuje alespoň jeden náhodný bonus.
+45127	Králičí uši+ (černé)	Černý klobouk s králičíma ušima pro muže. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
+45128	Králičí uši+ (modré)	Modrý klobouk s králičíma ušima pro muže. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 45129	Králičí uši+ (zelené)	Zelený klobouk s králičíma ušima pro muže. Poskytuje alespoň jeden náhodný bonus.
 45130	Králičí uši+ (růžové)	Růžový klobouk s králičíma ušima pro muže. Poskytuje alespoň jeden náhodný bonus.
 45131	Zaječí uši+ (černé)	Černé zaječí uši pro ženy. Poskytují alespoň jeden náhodný bonus.
@@ -1282,7 +1282,7 @@
 45138	Účes kobry+ (ž)	Pokrývka hlavy, která doplňuje oblek kobry. Poskytuje alespoň jeden náhodný bonus.
 45139	Maska Tengu	Umělecky vyrobená maska japonského božstva
 45140	Benátská maska	Honosná maska benátského karnevalu
-45141	Maska Kifwebe	Umě vyrobená dřevěná maska s černou plátěnou kapucí
+45141	Maska Kifwebe	Umě vyrobená dřevěná maska s černou plátěnou kapucí.
 45142	Mayská maska	Hrozivá maska mayského válečníka
 45143	Maska Tengu+	Umělecky vyrobená maska japonského božstva. Poskytuje alespoň dva náhodné bonusy.
 45144	Benátská maska+	Honosná maska benátského karnevalu. Poskytuje alespoň dva náhodné bonusy.
@@ -1290,7 +1290,7 @@
 45146	Mayská maska+	Hrozivá maska mayského válečníka. Poskytuje alespoň dva náhodné bonusy.
 45147	Černý turban (M)	Pokrývka hlavy pro muže, vyrobená z černého materiálu.
 45148	Černý turban (Ž)	Pokrývka hlavy pro ženy, vyrobená z černého materiálu.
-45149	Černý turban+ (M)	Pokrývka hlavy pro muže, vyrobená z černého materiálu. Poskytuje alespoň jeden náhodný bonus.
+45149	Černý turban+ (M)	Pokrývka hlavy pro muže, vyrobená z černého materiálu. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 45150	Černý turban+ (Ž)	Pokrývka hlavy pro ženy, vyrobená z černého materiálu. Poskytuje alespoň jeden náhodný bonus.
 45151	Azraelova helma (m)	Pokrývka hlavy, zobrazující grimasu vůdce démonů.
 45152	Azraelova helma (ž)	Pokrývka hlavy, zobrazující grimasu vůdce démonů.
@@ -1300,10 +1300,10 @@
 45157	Hlava Dýně Jacka (ž)	Super strašidelná Halloweenská maska
 45158	Hlava Dýně Jacka+ (m)	Super strašidelná Halloweenská maska. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
 45159	Hlava Dýně Jacka+ (ž)	Super strašidelná Halloweenská maska. Poskytuje alespoň jeden náhodný bonus. S předmětem lze obchodovat.
-45160		
-45161		
-45162		
-45163		
+45160		Svázané dredy, obarvené na červenou a bílou.
+45161		Svázané dredy, obarvené na červenou a bílou, s čelenkou.
+45162		Svázané dredy, obarvené na červenou a bílou. Poskytuje alespoň jeden náhodný bonus.
+45163		Svázané dredy, obarvené na červenou a bílou, s čelenkou. Poskytuje alespoň jeden náhodný bonus.
 45164	Klobouk sněžného králíka	Pokrývka hlavy imitující sněžného králíka
 45165	Klobouk ledního medvěda	Pokrývka hlavy imitující ledního medvěda.
 45166	Klobouk sněž. leoparda	Pokrývka hlavy imitující sněžného leoparda.
@@ -1342,7 +1342,7 @@
 50002	Zlatý prsten	Obyčejný zlatý prsten. V obchodě se dá prodat za vysokou cenu.
 50003	Reset	Umožňuje zaměnit schopnosti oproti jiným schopnostem.
 50004	Detektor úkolů	Tento předmět ti ukáže, kde najdeš další úlohu.
-50005	Jezdecká propustka	Za tento dobropis dostaneš ve stáji medaili koně.
+50005	Jezdecká propustka	Tento lístek lze vyměnit za Koňskou medaili u Pacholka.
 50006	Zlatá pokladnice	Pozlacená truhla. Dá se otevřít zlatým klíčem.
 50007	Stříbrná pokladnice	Postříbřená truhla. Dá se otevřít stříbrným klíčem.
 50008	Zlatý klíč	Zlatý klíč odemkne zlatou pokladnici a zlatou pokladnici+
@@ -1391,17 +1391,17 @@
 50076	Truhla pouštní želvy	Truhla pouštní želvy. Obsahuje něco vzácného.
 50077	Truhla devítiocasu	Truhla devítiocasu. Obsahuje něco vzácného.
 50078	Truhla žlutého tygra	Truhla žlutého ducha tygra. Obsahuje něco vzácného.
-50079	Truhla krále plamenů	Truhla krále plamenů. Vychází z ní magická síla.  	
+50079	Truhla krále plamenů	Truhla krále plamenů. Vychází z ní magická síla.	
 50080	Truhla červeného draka	Truhla červeného draka. Obsahuje něco vzácného.
 50081	Truhla krále démonů	Truhla krále démonů. Obsahuje něco vzácného.
 50082	Truhla zubaté s kosou	Truhla smrtky. Obsahuje něco vzácného.
-50083	Jezdecký lístek	Když ukážeš tento lístek pacholkovi, můžeš jezdit nějakou dobu na poníku.
+50083	Jezdecký lístek	Otevři Jezdeckou propustku pro zisk Jezdeckého lístku. Od úrovně 10 jej můžeš použít pro jízdu na poníkovi po omezenou dobu.
 50084	Klíčový kámen	Tento kámen působí proti magii a je obklopen tajemnou září..
 50091	Sushi ze zlatých rybek	Připravené ze zlatých rybek. Neobyčejné, jedinečné jídlo.
 50092	Sushi z kapra	Připravené z kapra. Neobyčejné, jedinečné jídlo.
-50093	Sushi z lososa	Speciální pokrm, připravený z lososa a rýže. Zvýší Vaši útočnou sílu o 10 bodů na 30 sekund.
+50093	Sushi z lososa	Speciální pokrm, připravený z lososa a rýže. Zvýší tvou hodnotu útoku o 10 bodů na 30 sekund.
 50094	Sushi ze sumce	Připravené ze sumce a rýže. Zvýší obrannou sílu o 10 bodů na 30 sekund.
-50096	Fotbalový míč	Napal to jako Baljit-Elvedin!
+50096	Fotbalový míč	Napal to jako Baljit-Elvedin! S míčem nelze obchodovat.
 50100	Ohňostroj	Po dobu festivalu osvítí nebe fialově.
 50101	Ohňostroj	Po dobu festivalu osvítí nebe žlutě.
 50102	Ohňostroj	Po dobu festivalu osvítí nebe modře.
@@ -1409,7 +1409,7 @@
 50104	Ohňostroj	Po dobu festivalu osvítí nebe zeleně.
 50105	Ohňostroj	Po dobu festivalu osvítí nebe bíle.
 50106	Vánoční ohňostroj	Vánoční ohňostroj. Větší než normální ohňostroj.
-50108	Odstředivý ohňostroj	Ohňostroj ve tvaru káči, ze kterého stříkají jiskry.
+50108	Odstředivý ohňostroj	Ručně vyrobená Odstředivý ohňostroj, který děti rády pro zábavu roztáčejí. | | Šance na omráčení: 5 % | Doba trvání: 10 minut
 50118		
 50119		
 50120	Železná rakev	Tato pevná bedna je z Jeskyně vyhnanství.
@@ -1460,7 +1460,7 @@
 50180	Prázdný košík	Barevně malované velikonoční vajíčko
 50181	Košík s vajíčky	Koš naplněný Velikonočními vajíčky.
 50182	Truhla požehnání	Požehnaná truhla s neznámým obsahem.
-50183	Sladkosti	Tyto sladkosti mají specifický účinek: rychlost pohybu +10 %, poškození +5 % a zkušenosti +10 %. Efekt trvá 30 minut.
+50183	Sladkosti	Tyto sladkosti mají specifický účinek: rychlost pohybu +10, poškození +5 % a zkušenosti +10 %. Efekt trvá 30 minut.
 50184		
 50185		
 50186	Azraelova truhla	Démonické síly drží tuto truhlu zamčenou. Uvnitř musí být opravdu cenný poklad.
@@ -1481,7 +1481,7 @@
 50212	Truhla učedníka I	Tvůj uvítací dar obsahuje základní výbavu pro optimální začátek tvých dobrodružství.
 50213	Truhla učedníka I	Tvůj uvítací dar obsahuje základní výbavu pro optimální začátek tvých dobrodružství.
 50215	Halloweenská truhla	Truhla s rozšklebenou halloweenskou tváří na straně. Zámek se otevírá se strašidelným skřípěním, ale obsah za chvíli strachu stojí.
-50216	Svařák	Horký nápoj z červeného vína a koření, který ti přidá +10 % rychlosti, +5 % poškození a +10 % zisku zkušenosti na 30 minut.
+50216	Svařák	Horký nápoj z červeného vína a koření, který ti přidá +10 % rychlosti, +5 % poškození a +10 % zisku zkušeností.
 50249	Truhla triumfu	Truhla obsahující náhodný předmět jako odměnu pro všechny olympioniky.
 50252	Cor Draconis	Krystalické dračí srdce má v sobě duši - Dračí kámen.
 50253		
@@ -1569,19 +1569,19 @@
 50534	Manuál Duše purpur. vlka	Použij tuto knihu pro zlepšení schopnosti Duše purpurového vlka. Kniha po přečtení zmizí.
 50535	Manuál Duše modrého vlka	Použij tuto knihu pro zlepšení schopnosti Duše modrého vlka. Kniha po přečtení zmizí.
 50600	Kniha těžby	Se používá k zvýšení stupně dolování. Kniha zmizí po přečtení.
-50601	Diamantový kámen	Může být pomocí cechové diamantové pece přetaven na diamant.
-50602	Jantar	Může být pomocí cechové jantarové pece přetaven na pěkný jantar.
-50603	Fosilní kmen	Může být pomocí cechové fosilní pece přetaven na fosilní dřevo.
-50604	Měděná ruda	Může být pomocí cechové měděné pece přetavena na měď.
-50605	Stříbrná ruda	Může být pomocí cechové stříbrné pece přetavena na stříbro.
-50606	Zlatá ruda	Může být pomocí cechové zlaté pece přetavena na zlato.
-50607	Nefritová ruda	Může být pomocí cechové nefritové pece přetavena na nefrit.
-50608	Ebenová ruda	Může být pomocí cechové ebenové pece přetavena na ebenové dřevo.
-50609	Kus perly	Může být pomocí cechové perlové pece přeměněn na perlu.
-50610	Ruda s bílým zlatem	Může být pomocí cechové pece na bílé zlato přetavena na bílé zlato.
-50611	Křišťálová ruda	Může být pomocí cechové křišťálové pece přetavena na křišťály.
-50612	Křemenová ruda	Může být pomocí cechové křemenové pece přetavena na křemen.
-50613	Ruda nebeských slz	Může být pomocí cechové pece na nebeské slzy přetavena na nebeské slzy.
+50601	Diamantový kámen	Z tohoto kamene lze v cechovní peci vyrobit Diamant.
+50602	Jantar	Z tohoto kamene lze v cechovní peci vyrobit zlatý Jantar.
+50603	Fosilní kmen	Tento kmen lze v cechovní peci přetavit na fosilní dřevo.
+50604	Měděná ruda	Z této rudy lze v cechovní peci vyrobit Měď.
+50605	Stříbrná ruda	Z této rudy lze v cechovní peci vyrobit Stříbro.
+50606	Zlatá ruda	Z této rudy lze v cechovní peci vyrobit Zlato.
+50607	Nefritová ruda	Z této rudy lze v cechovní peci vyrobit Nefrit.
+50608	Ebenová ruda	Z této rudy lze v cechovní peci vyrobit Ebenové dřevo.
+50609	Kus perly	Z tohoto kamene lze v cechovní peci vyrobit Perlu.
+50610	Ruda s bílým zlatem	Z této rudy lze v cechovní peci vyrobit Bílé zlato.
+50611	Křišťálová ruda	Z této rudy lze v cechovní peci vyrobit Křišťál.
+50612	Křemenová ruda	Z této rudy lze v cechovní peci vyrobit Ametyst.
+50613	Ruda nebeských slz	Z této rudy lze v cechovní peci vyrobit Nebeskou slzu.
 50614	Ruda krystalu duše	Z této rudy lze v cechovní peci vyrobit Krystal duše.
 50615	Rubínová ruda	Z této rudy lze v cechovní peci vyrobit Rubín.
 50616	Granátová ruda	Z této rudy lze v cechovní peci vyrobit Granát.
@@ -1619,18 +1619,18 @@
 50710	Bodlák	Tento květ zesiluje kosti.	Výzkum
 50711	Datle	Ovoce, které dobře chutná a vzbuzuje v těle nové energie.	Výzkum
 50712	Rostlina Sam-Zi	Tato velice vzácná rostlina posiluje organismus, když se správně připraví. 	Výzkum
-50721	Broskvový květ	Dříve se používal broskvový květ k výrobě krému na pleť.	Výroba lektvarů
-50722	Zvonek	Tato květina je silně rozšířená a dobrá proti nachlazení a kašli.	Výroba lektvarů
-50723	Kakikvět	Říká se, že ženy, které si upnou tuto květinu kolem krku, porodí syna.	Výroba lektvarů
-50724	Kořen gango	Kořen gango posiluje imunitní systém a odolnost těla.	Výroba lektvarů
-50725	Šeřík	Rostlina, která zvyšuje koncentraci a paměť.	Výroba lektvarů
-50726	Houby tue	Tato houba se používá málokdy jako lék. Působí proti nespavosti. 	Výroba lektvarů
-50727	Rododendron	Tato rostlina posiluje nervový systém.	Výroba lektvarů
-50728	Moruše	Moruše dodává sílu a působí svěže.	Výroba lektvarů
-50729	Smetánka lékařská	Smetánka lékařská pomáhá proti kašli a je chuťově velice dobrá. 	Výroba lektvarů
-50730	Bodlák	Tento květ posiluje kosti.	Výroba lektvarů
-50731	Datle	Ovoce, které dobře chutná a vzbuzuje v těle nové energie.	Výroba lektvarů
-50732	Rostlina Sam-Zi	Tato velice vzácná rostlina posiluje organismus, když se správně připraví. 	Výroba lektvarů
+50721	Broskvový květ	Dříve se používal broskvový květ k výrobě krému na pleť.	Výroba lektvarů.
+50722	Zvonek	Tato květina je silně rozšířená a dobrá proti nachlazení a kašli.	Výroba lektvarů.
+50723	Kakikvět	Říká se, že ženy, které si upnou tuto květinu kolem krku, porodí syna.	Výroba lektvarů.
+50724	Kořen gango	Kořen gango posiluje imunitní systém a odolnost těla.	Výroba lektvarů.
+50725	Šeřík	Rostlina, která zvyšuje koncentraci a paměť.	Výroba lektvarů.
+50726	Houby tue	Tato houba se používá málokdy jako lék. Působí proti nespavosti. 	Výroba lektvarů.
+50727	Rododendron	Tato rostlina posiluje nervový systém.	Výroba lektvarů.
+50728	Moruše	Moruše dodává sílu a působí svěže.	Výroba lektvarů.
+50729	Smetánka lékařská	Smetánka lékařská pomáhá proti kašli a je chuťově velice dobrá. 	Výroba lektvarů.
+50730	Bodlák	Tento květ posiluje kosti.	Výroba lektvarů.
+50731	Datle	Ovoce, které dobře chutná a vzbuzuje v těle nové energie.	Výroba lektvarů.
+50732	Rostlina Sam-Zi	Tato velice vzácná rostlina posiluje organismus, když se správně připraví. 	Výroba lektvarů.
 50801	Šťáva z broskvov. květů	Šťáva z květů broskve. To tě posilní.
 50802	Zvonková šťáva	Šťáva ze zvonku. Na 3 minuty zvýší Vaši sílu o 5 bodů.
 50803	Kakikvětová šťáva	Šťáva z kakikvětu. Zvyšuje koncentraci.
@@ -1638,16 +1638,16 @@
 50805	Šeříková šťáva	Šťáva ze šeříku.
 50806	Šťáva z hub tue	Šťáva vyrobená z  hub tue
 50807	Rododendronová šťáva	Šťáva z rododendronu
-50808	Morušová šťáva	Šťáva z moruší
-50809	Šťáva ze smetanky lék.	Šťáva vyrobená ze smetanky lékařské
+50808	Morušová šťáva	Šťáva z moruší.
+50809	Šťáva ze smetanky lék.	Šťáva vyrobená ze smetanky lékařské.
 50810	Šťáva z bodláku	Šťáva vyrobená z bodláku
-50811	Výtažek z datlí	Šťáva z datlí
+50811	Výtažek z datlí	Šťáva z datlí.
 50812	Šťáva z rostliny Sam-Zi	Šťáva vyrobená z rostliny Sam-Zi
-50813	Voda Sim	Lektvar ze šťávy z broskvových květů a šeříku. Na 3 minuty zvyšuje šanci na pronikavý zásah o 10 %.
-50814	Voda Dok	Tento lektvar se vyrábí ze zvonkové šťávy a šeříku. Zvýší tvoji šanci na kritický zásah o 10 % po dobu 3 minut.
+50813	Voda Sim	Lektvar ze šťávy z broskvových květů a šeříku, který zvyšuje šanci na pronikavý zásah o 10 %.
+50814	Voda Dok	Tento lektvar se vyrábí ze zvonkové šťávy a šeříku. Zvýší tvoji šanci na kritický zásah o 10 %.
 50815	Voda Bo	Tento lektvar se vyrábí ze šťávy kakikvětu a hub tue. Posílí tvůj mozek.
 50816	Voda Young	Tento lektvar se vyrábí ze šťávy kořenu gango a hub tue. Vzbuzuje nové energie.
-50817	Voda Zin	Tento lektvar se vyrábí z vody Sim a rododendronu. Po dobu 3 minut zvýší Váš útok o 50 bodů.
+50817	Voda Zin	Tento lektvar se vyrábí z vody Sim a rododendronu. Po dobu 3 minut zvýší tvou hodnotu útoku o 50 bodů.
 50818	Voda SamBo	Tento lektvar se vyrábí z vody Dok a rododendronu. Po dobu 3 minut zvýší Vaši obranu o 70 bodů.
 50819	Voda Mong	Tento lektvar se vyrábí z vody Bo a moruše. Zvýší Vaši obranu magií o 10 % po dobu tří minut.
 50820	Voda Hwal	Tento lektvar se vyrábí z vody Young a moruše. Na tři minuty zvýší rychlost útoku o 3 body.
@@ -1720,7 +1720,7 @@
 51555	Cor Atrum (věčné)	Černé Cor Draconis. Třída: věčné. Obsahuje matný Dračí onyx, který může být stupně broušený až starověký.
 51556	Cor Diamas (tajemné)	Bílé Cor Draconis. Třída: tajemné. Obsahuje matný Dračí diamant, který může být stupně broušený až legendární.
 51557	Cor Rubinum (tajemné)	Červené Cor Draconis. Třída: tajemné. Obsahuje matný Dračí rubín, který může být stupně broušený až legendární.
-51558	Cor Jadeit (tajemné)	Zelené Cor Draconis. Třída: tajemné. Obsahuje matný Dračí nefirt, který může být stupně broušený až legendární.
+51558	Cor Jadeit (tajemné)	Zelené Cor Draconis. Třída: tajemné. Obsahuje matný Dračí nefrit, který může být stupně broušený až legendární.
 51559	Cor Saphirum (tajemné)	Modré Cor Draconis. Třída: tajemné. Obsahuje matný Dračí safír, který může být stupně broušený až legendární.
 51560	Cor Granatum (tajemné)	Oranžové Cor Draconis. Třída: tajemné. Obsahuje matný Dračí granát, který může být stupně broušený až legendární.
 51561	Cor Atrum (tajemné)	Černé Cor Draconis. Třída: tajemné. Obsahuje matný Dračí onyx, který může být stupně broušený až legendární.
@@ -1869,8 +1869,8 @@
 52058	Odvážný tygr (pečeť)	Pečeť vyvolá Odvážného tygra. Zvýší hodnotu života svého jezdce o 500.
 52059	Odvážný tygr (pečeť)	Pečeť vyvolá Odvážného tygra. Zvýší hodnotu obrany svého jezdce o 150.
 52060	Odvážný tygr (pečeť)	Pečeť vyvolá Odvážného tygra. Zvýší hodnotu útoku svého jezdce o 100.
-52061	Mladý sob (pečeť)	Pečeť vyvolá Mladého samce soba. Po bojovém výcviku zvýší hodnotu síly proti monstrům svého jezdce až o 5 %.
-52062	Mladý sob (pečeť)	Pečeť vyvolá Mladého samce soba. Po bojovém výcviku zvýší zisk zkušeností svého jezdce až o 5 %.
+52061	Mladý sob (pečeť)	Pečeť vyvolá Mladého samce soba (m).
+52062	Mladý sob (pečeť)	Pečeť vyvolá Mladého samce soba (m).
 52063	Mladý sob (pečeť)	Pečeť vyvolá Mladého samce soba. Po bojovém výcviku zvýší hodnotu života svého jezdce až o 500.
 52064	Mladý sob (pečeť)	Pečeť vyvolá Mladého samce soba. Po bojovém výcviku zvýší hodnotu obrany svého jezdce až o 150.
 52065	Mladý sob (pečeť)	Pečeť vyvolá Mladého samce soba. Po bojovém výcviku zvýší hodnotu útoku svého jezdce až o 100.
@@ -1884,7 +1884,7 @@
 52073	Odvážný sob (pečeť)	Pečeť vyvolá samce Odvážného soba. Zvýší hodnotu života svého jezdce o 500.
 52074	Odvážný sob (pečeť)	Pečeť vyvolá samce Odvážného soba. Zvýší hodnotu obrany svého jezdce o 150.
 52075	Odvážný sob (pečeť)	Pečeť vyvolá samce Odvážného soba. Zvýší hodnotu útoku svého jezdce o 100.
-52076	Mladý sob (pečeť)	Pečeť vyvolá Mladou samici soba. Po bojovém výcviku zvýší hodnotu síly proti monstrům svého jezdce až o 5 %.
+52076	Mladý sob (pečeť)	Pečeť vyvolá Mladou samici soba (ž).
 52077	Mladý sob (pečeť)	Pečeť vyvolá Mladou samici soba. Po bojovém výcviku zvýší zisk zkušeností svého jezdce až o 5 %.
 52078	Mladý sob (pečeť)	Pečeť vyvolá Mladou samici soba. Po bojovém výcviku zvýší hodnotu života svého jezdce až o 500.
 52079	Mladý sob (pečeť)	Pečeť vyvolá Mladou samici soba. Po bojovém výcviku zvýší hodnotu obrany svého jezdce až o 150.
@@ -1899,21 +1899,21 @@
 52088	Odvážný sob (pečeť)	Pečeť vyvolá samici Odvážného soba. Zvýší hodnotu života svého jezdce o 500.
 52089	Odvážný sob (pečeť)	Pečeť vyvolá samici Odvážného soba. Zvýší hodnotu obrany svého jezdce o 150.
 52090	Odvážný sob (pečeť)	Pečeť vyvolá samici Odvážného soba. Zvýší hodnotu útoku svého jezdce o 100.
-52091	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora. Podle jeho bojového tréninku dodá svému jezdci až 5 % síly proti monstrům.
-52092	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora. Podle jeho bojového tréninku může zvýšit zisk zkušeností až o 5 %.
-52093	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora. Podle jeho bojového tréninku dodá svému jezdci až 500 života navíc.
-52094	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora. Podle jeho bojového tréninku dodá svému jezdci až 150 obrany.
-52095	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora. Podle jeho bojového tréninku dodá svému jezdci až 100 útoku.
+52091	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora.
+52092	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora.
+52093	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora.
+52094	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora.
+52095	Pečeť mladého Dragora	Pečeť vyvolá mladého Dragora.
 52096	Pečeť divokého Dragora	Pečeť vyvolá divokého Dragora. Přidá jeho jezdci 3 % síly proti monstrům.
 52097	Pečeť divokého Dragora	Pečeť vyvolá divokého Dragora. Přidá jeho jezdci 3 % zisku zkušeností.
 52098	Pečeť divokého Dragora	Pečeť vyvolá divokého Dragora. Přidá jeho jezdci 250 života.
 52099	Pečeť divokého Dragora	Pečeť vyvolá divokého Dragora. Přidá jeho jezdci 50 obrany.
 52100	Pečeť divokého Dragora	Pečeť vyvolá divokého Dragora. Přidá jeho jezdci 30 útoku.
-52101	Pečeť statečného Dragora	Pečeť vyvolá statečného Dragora. Přidá jeho jezdci 5 % síly proti monstrům.
-52102	Pečeť statečného Dragora	Pečeť vyvolá statečného Dragora. Přidá jeho jezdci 5 % zisku zkušeností.
-52103	Pečeť statečného Dragora	Pečeť vyvolá statečného Dragora. Přidá jeho jezdci 500 života.
-52104	Pečeť statečného Dragora	Pečeť vyvolá statečného Dragora. Přidá jeho jezdci 150 obrany.
-52105	Pečeť statečného Dragora	Pečeť vyvolá statečného Dragora. Přidá jeho jezdci 100 útoku.
+52101	Pečeť statečného Dragora	Pečeť vyvolá Odvážného Dragora. Přidává svému jezdci +5 % síly proti monstrům.
+52102	Pečeť statečného Dragora	Pečeť vyvolá Odvážného Dragora. Zvyšuje zisk zkušeností o 5 %.
+52103	Pečeť statečného Dragora	Pečeť vyvolá Odvážného Dragora. Přidá jeho jezdci 500 ZB.
+52104	Pečeť statečného Dragora	Pečeť vyvolá Odvážného Dragora. Zvyšuje svému jezdci hodnotu obrany o 150.
+52105	Pečeť statečného Dragora	Pečeť vyvolá Odvážného Dragora. Zvyšuje svému jezdci hodnotu útoku o 100.
 52106	Mladý Moa (pečeť)	Tato pečeť ti přivolá Mladého Moa. Po bojovém výcviku bude svému jezdci přidávat sílu proti monstrům až do 5 %.
 52107	Mladý Moa (pečeť)	Tato pečeť ti přivolá Mladého Moa. Po bojovém výcviku bude svému jezdci přidávat zisk zkušeností až do 5 %.
 52108	Mladý Moa (pečeť)	Tato pečeť ti přivolá Mladého Moa. Po bojovém výcviku bude svému jezdci přidávat až 500 bodů života.
@@ -1924,11 +1924,11 @@
 52113	Divoký Moa (pečeť)	Tato pečeť ti přivolá Divokého Moa. Zvyšuje body života svého jezdce o 250.
 52114	Divoký Moa (pečeť)	Tato pečeť ti přivolá Divokého Moa. Zvyšuje hodnotu obrany svého jezdce o 50.
 52115	Divoký Moa (pečeť)	Tato pečeť ti přivolá Divokého Moa. Zvyšuje hodnotu útoku svého jezdce o 30.
-52116	Statečný Moa (pečeť)	Tato pečeť ti přivolá Statečného Moa. Přidává svému jezdci +5 % síly proti monstrům.
-52117	Statečný Moa (pečeť)	Tato pečeť ti přivolá Statečného Moa. Přidává svému jezdci +5 % zisku zkušeností.
-52118	Statečný Moa (pečeť)	Tato pečeť ti přivolá Statečného Moa. Přidává svému jezdci 500 bodů života.
-52119	Statečný Moa (pečeť)	Tato pečeť ti přivolá Statečného Moa. Zvyšuje svému jezdci hodnotu obrany o 150.
-52120	Statečný Moa (pečeť)	Tato pečeť ti přivolá Statečného Moa. Zvyšuje svému jezdci hodnotu útoku o 100.
+52116	Statečný Moa (pečeť)	Pečeť vyvolá Odvážného Moa. Přidává svému jezdci +5 % síly proti monstrům.
+52117	Statečný Moa (pečeť)	Pečeť vyvolá Odvážného Moa. Zvyšuje zisk zkušeností o 5 %.
+52118	Statečný Moa (pečeť)	Pečeť vyvolá Odvážného Moa. Přidá jeho jezdci 500 ZB.
+52119	Statečný Moa (pečeť)	Pečeť vyvolá Odvážného Moa. Zvyšuje svému jezdci hodnotu obrany o 150.
+52120	Statečný Moa (pečeť)	Pečeť vyvolá Odvážného Moa. Zvyšuje svému jezdci hodnotu útoku o 100.
 52701	Lví certifikát	Certifikát vlastnictví Mladého lva
 52702	Tygří certifikát	Certifikát vlastnictví Mladého tygra
 52703	Kančí certifikát	Certifikát vlastnictví Mladého divokého kance
@@ -1937,46 +1937,46 @@
 52706	Sobí certifikát (Ž)	Certifikát vlastnictví Mladé samice soba
 52707	Certifikát Dragora	Vlastnický certifikát mladého Dragora.
 52708	Moův certifikát	Tento certifikát slouží jako potvrzení, že jsi vlastníkem Mladého Moa.
-53001		
-53002	Pečeť mladého soba	Tuto pečeť můžeš použít na přivolání mladého soba.
+53001		Tuto pečeť můžeš použít pro přivolání svého přítele - Ohnivého fénixe.
+53002	Pečeť mladého soba	Tuto pečeť můžeš použít na přivolání roztomilého Sobího mláděte.
 53003	Pečeť ledového Fénixe	Tuto pečeť můžeš použít k přivolání ledového Fénixe.
-53005	Baby Azrael	Tahle mini verze vůdce démonů je neobyčejně oddaná a přidá ti 1500 bodů života a 15 % poškození od druhého patra Věže démonů a v Ďáblově katakombách.
-53006	Baby Azrael (zlaté)	Tahle mini verze vůdce démonů je neobyčejně oddaná a přidá ti 1500 bodů života a 15 % poškození od druhého patra Věže démonů a v Ďáblově katakombách.
-53007	Pečeť Bambiho	Tuto pečeť můžeš použít pro zavolání tvého mladého soba Bambiho.
-53008	Pečeť Knuuda	Tato pečeť ti umožní přivolat tvé roztomilé mládě polárního medvěda.
-53009	Bao Baova pečeť	Tato pečeť ti umožní přivolat tvé roztomilé mládě pandy.
-53010	Pečeť Leonidase	Tuto pečeť můžeš použít pro zavolání tvého mladého lva Leonidase.
-53011	Pečeť Khana	Tuto pečeť můžeš použít pro zavolání tvého mladého tygra Khana.
-53012	Pečeť Porkyho	Tuto pečeť můžeš použít pro zavolání tvého mladého kance Porkyho.
-53013	Pečeť Rufuse	Tuto pečeť můžeš použít pro zavolání tvého mladého vlka Rufuse.
-53014	Pečeť Mini-Exekutora	Tato pečeť vyvolá Mini-Exekutora v černé zbroji.
-53015	Pečeť Mini-Exekutora (z)	Tato pečeť vyvolá Mini-Exekutora ve zlaté zbroji.
-53016	Kostěná pečeť	Tato pečeť přivolá tvé kostlivecké zvíře.
-53017	Pečeť Nefritového fénixe	Tato pečeť přivolá elegantního Nefritového fénixe.
-53018	Sněžný Leonidas (pečeť)	Tuto pečeť můžeš použít pro vyvolání tvého mazlíčka.
-53019	Arktický Khan (pečeť)	Tuto pečeť můžeš použít pro vyvolání tvého mazlíčka.
-53020	Polární Porkie (pečeť)	Tuto pečeť můžeš použít pro vyvolání tvého mazlíčka.
-53021	Mrazivý Rufus (pečeť)	Tuto pečeť můžeš použít pro vyvolání tvého mazlíčka.
-53022	Pečeť Sheldona	Tato pečeť způsobí vylíhnutí tvého zvířátka Sheldona z vajíčka.
-53023	Pečeť Coopera	Tahle pečeť způsobí, že k tobě přihopká tvé zvířátko Cooper.
-53024	Mládě pantera (7 dnů)	Tato pečeť přivolá mládě černého pantera.
-53025	Mládě leoparda (7 dnů)	Tato pečeť přivolá mládě leoparda.
-53026		
-53218	Mládě pantera (30 dnů)	Tato pečeť přivolá mládě černého pantera.
-53219	Mládě pantera (120 dnů)	Tato pečeť přivolá mládě černého pantera.
-53220	Mládě leoparda (30 dnů)	Tato pečeť přivolá mládě leoparda.
-53221	Mládě leoparda (120 dnů)	Tato pečeť přivolá mládě leoparda.
-53222	Pečeť Hlavy dýně	Tuto pečeť můžeš použít pro přivolání tvé Hlavy dýně.
-53223	Pečeť Malého koštěte	Tuto pečeť můžeš použít pro přivolání tvého Malého koštěte.
-53224	Pečeť Sněhové vločky	Můžeš použít tuto pečeť pro vyvolání Sněhové vločky, roztomilé malé sněhulandy.
-53225	Pečeť Sněhošlapa	Můžeš použít tuto pečeť pro vyvolání Sněhošlapa, rozpustilého malého sněhuláka.
-53226	Andílek (pečeť)	Tuto pečeť můžeš použít pro přivolání svého osobního dohazovače. Garantuje ti 5% zvýšení šance na pronikavý zásah a zvýší tvé ZB o 1500.
-53227	Vášnivé srdce (pečeť)	Tuto pečeť můžeš použít pro přivolání Vášnivého srdce. Garantuje ti 5% zvýšení šance na kritický zásah a zvýší tvé ZB o 1500.
-53228	Srpovitý měsíc (pečeť)	Můžeš použít tuto pečeť pro vyvolání Modrého srpovitého měsíce.
-53229	Srpovitý měsíc (pečeť)	Můžeš použít tuto pečeť pro vyvolání Červeného srpovitého měsíce.
-53232	Baby Huashin	Tato miniaturní verze Generála Huashina ti poskytne o 5 % vyšší šanci na pronikavý zásah zvýší ti ZB o 1500.
-53501		
-53502	Truhla mladého soba	V této truhle netrpělivě čeká mladý sob, abys ho vypustil ven.
+53005	Baby Azrael	Mini verze vůdce démonů je extrémně oddaná. Od 2. patra Věže démonů a Ďáblovy katakomby poskytuje bonus | +15 % fyzického a magického poškození | +1500 ZB
+53006	Baby Azrael (zlaté)	Mini verze vůdce démonů je extrémně oddaná. Od 2. patra Věže démonů a Ďáblovy katakomby poskytuje bonus | +15 % fyzického a magického poškození | +1500 ZB
+53007	Pečeť Bambiho	Tuto pečeť můžeš použít pro přivolání sobího mláděte Bambiho. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53008	Pečeť Knuuda	Tato pečeť ti umožní přivolat tvé roztomilé mládě polárního medvěda. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53009	Bao Baova pečeť	Tato pečeť ti umožní přivolat tvé roztomilé mládě pandy. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53010	Pečeť Leonidase	Tuto pečeť můžeš použít pro zavolání tvého mladého lva Leonidase. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53011	Pečeť Khana	Tuto pečeť můžeš použít pro zavolání tvého mladého tygra Khana. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53012	Pečeť Porkyho	Tuto pečeť můžeš použít pro zavolání tvého mladého kance Porkyho. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53013	Pečeť Rufuse	Tuto pečeť můžeš použít pro zavolání tvého mladého vlka Rufuse. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53014	Pečeť Mini-Exekutora	Tato pečeť vyvolá Mini-Exekutora v černé zbroji. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53015	Pečeť Mini-Exekutora (z)	Tato pečeť vyvolá Mini-Exekutora ve zlaté zbroji. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53016	Kostěná pečeť	Tato pečeť přivolá tvé kostlivecké zvíře. Přidá ti | +15 % fyzického a magického poškození | +1500 ZB
+53017	Pečeť Nefritového fénixe	Tato pečeť přivolá elegantního Nefritového fénixe. Mazlík ti přidá | +15 % fyzického a magického poškození | +50% šanci na 30% bonus BZK
+53018	Sněžný Leonidas (pečeť)	Tuto pečeť můžeš použít pro přivolání malého sněžného lva. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53019	Arktický Khan (pečeť)	Tuto pečeť můžeš použít pro přivolání malého sněžného tygra. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53020	Polární Porkie (pečeť)	Tuto pečeť můžeš použít pro přivolání malého polárního prasátka. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53021	Mrazivý Rufus (pečeť)	Tuto pečeť můžeš použít pro přivolání malého polárního vlka. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53022	Pečeť Sheldona	Tato pečeť způsobí vylíhnutí tvého zvířátka Sheldona z vajíčka. Přidá ti | +15 % fyzického a magického poškození | +1500 ZB
+53023	Pečeť Coopera	Tato pečeť způsobí, že k tobě přihopká tvé zvířátko Cooper. Přidá ti | +15 % fyzického a magického poškození | +1500 ZB
+53024	Mládě pantera (7 dnů)	Tato pečeť přivolá mládě černého pantera. Přidá ti | +5 % odolnosti proti poškození schopností | +5 % šanci na pronikavý zásah | +1500 ZB
+53025	Mládě leoparda (7 dnů)	Tato pečeť přivolá mládě leoparda. Přidá ti | +10 hodnoty obrany | +5 % šanci na kritický zásah | +1500 ZB
+53026		Tuto pečeť můžeš použít pro vyvolání tvého mazlíčka fénixe Pepita. Zvyšuje zisk zkušeností o +5 %.
+53218	Mládě pantera (30 dnů)	Tato pečeť přivolá mládě černého pantera. Přidá ti | +5 % odolnosti proti poškození schopností | +5 % šanci na pronikavý zásah | +1500 ZB
+53219	Mládě pantera (120 dnů)	Tato pečeť přivolá mládě černého pantera. Přidá ti | +5 % odolnosti proti poškození schopností | +5 % šanci na pronikavý zásah | +1500 ZB
+53220	Mládě leoparda (30 dnů)	Tato pečeť přivolá mládě leoparda. Přidá ti | +10 hodnoty obrany | +5 % šanci na kritický zásah | +1500 ZB
+53221	Mládě leoparda (120 dnů)	Tato pečeť přivolá mládě leoparda. Přidá ti | +10 hodnoty obrany | +5 % šanci na kritický zásah | +1500 ZB
+53222	Pečeť Hlavy dýně	Tuto pečeť můžeš použít pro přivolání tvé Hlavy dýně. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53223	Pečeť Malého koštěte	Tuto pečeť můžeš použít pro přivolání tvého Malého koštěte. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53224	Pečeť Sněhové vločky	Můžeš použít tuto pečeť pro vyvolání Sněhové vločky, roztomilé malé sněhulandy. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53225	Pečeť Sněhošlapa	Můžeš použít tuto pečeť pro vyvolání Sněhošlapa, rozpustilého malého sněhuláka. Mazlík ti přidá | +15 % fyzického a magického poškození | +5 % šance na kritický zásah
+53226	Andílek (pečeť)	Tuto pečeť můžeš použít pro přivolání svého osobního dohazovače. Přidá ti | +5 % šance na pronikavý zásah | +1500 ZB
+53227	Vášnivé srdce (pečeť)	Tuto pečeť můžeš použít pro přivolání Vášnivého srdce. Přidá ti | +5 % šance na kritický zásah | +1500 ZB
+53228	Srpovitý měsíc (pečeť)	Můžeš použít tuto pečeť pro vyvolání Modrého srpovitého měsíce. Mazlík ti přidá | +15 % fyzického a magického poškození | +1500 ZB
+53229	Srpovitý měsíc (pečeť)	Můžeš použít tuto pečeť pro vyvolání Červeného srpovitého měsíce.  Mazlík ti přidá | +15 % fyzického a magického poškození | +5 % šance na kritický zásah.
+53232	Baby Huashin	Mini verze Generála Huashina ti přidá | +5 % šance na pronikavý zásah | +1500 ZB
+53501		Ohnivý fénix čeká ve své kleci na to, až jej osvobodíš.
+53502	Truhla mladého soba	V této truhle netrpělivě čeká Sobí mládě, abys ho vypustil ven.
 53503	Klec ledového Fénixe	Ledový Fénix čeká v kleci, abys ho vypustil ven.
 53504		
 53505	Truhla Baby Azraela	Baby Azrael, miniaturní verze pána démonů, čeká na vysvobození z této truhly.
@@ -1992,10 +1992,10 @@
 53515	Truhla Mini-Exekut. (zl)	Mini-exekutor ve zlaté zbroji se již nemůže dočkat, až bude moci vyskočit z této truhly ven.
 53516	Kostěná truhla	Obsahuje náhodný předmět. S trochou štěstí najdeš uvnitř Booneyho, psa - kostlivce.
 53517	Nefritová klec	Vzácný Nefritový fénix čeká v této kleci až jej osvobodíš.
-53518	Sněžný Leonidas	Truhla obsahující pečeť Sněžného Leonidase
-53519	Arktický Khan	Truhla obsahující pečeť Arktického Khana.
-53520	Polární Porkie	Truhla obsahující pečeť Polárního Porkieho.
-53521	Mrazivý Rufus	Truhla obsahující pečeť Mrazivého Rufuse.
+53518	Sněžný Leonidas	Klec obsahující pečeť Sněžného Leonidase.
+53519	Arktický Khan	Klec obsahující pečeť Arktického Khana.
+53520	Polární Porkie	Klec obsahující pečeť Polárního Porkieho.
+53521	Mrazivý Rufus	Klec obsahující pečeť Mrazivého Rufuse.
 53522	Sheldonovo hnízdo	Tvé zvířátko Sheldon se schovává v tomto hnízdě.
 53523	Králičí klec	Králíček Cooper se schovává v této kleci.
 53526		
@@ -2017,7 +2017,7 @@
 70002	Třetí ruka	Ruka, která automaticky sbírá Yangy.
 70003	Kniha náčelníka	Po tu dobu, co je náčelník vybaven touto knihou, sbírají všichni členové skupiny o 30 % víc bodů zkušenosti.
 70004	Medaile za píli	Odměna za tvoji těžkou práci. Dává ti během boje o 20 % zkušenostních bodů více.
-70005	Prsten zkušeností	V boji nasbíráš o 50 % víc bodů zkušeností.
+70005	Prsten zkušeností	Zvyšuje zisk zkušeností o 50 % na 60 minut.
 70006	Prsten jazyků	Prsten, který byl  vyroben před dávnými časy pro diplomacii. Používej ho, když chceš mluvit s lidmi z jiných království.
 70008	Bílý prapor	Bílý prapor signalizuje kapitulaci.
 70009	Pokladnice	Truhla bohatě zdobená ornamenty, která se dá otevřít pouze speciálním klíčem.
@@ -2028,24 +2028,24 @@
 70015	Levný kartáč	Běžní, robustní kartáč s pevným, dřevěným úchytem.
 70020	Broskvové víno	Elixír, který ti dodá okamžitě 500 ZB.
 70024	Mramor požehnání	Legendární požehnaná koule. Když má předmět 4 atributy, přidá k nim ještě jeden další.
-70027	Kovářova poznámka	Poznámka od kováře, která ti vysvětlí, jak si máš zlepšit zbraň.
+70027	Kovářova poznámka	Poznámka od kováře, která ti vysvětlí, jak si máš vylepšit předmět. Zvyšuje šanci na vylepšení předmětu z +4 na +5 na 100 %.
 70031	Strategie protiútoku	Tento spis se kromě jiného týká také možností a slabých míst lidské anatomie.
 70035	Magická měděná ruda	Ruda na výrobu Pergamenu války. K tomu je u kováře nutný požehnaný pergamen.
-70037	Kniha zapomínání	Legendární kniha, která vymaže vzpomínku na naučenou schopnost. Umožňuje ti nově přidělit 1 bod schopnosti.
+70037	Kniha zapomínání	Díky této knize si tvůj hrdina vymaže vzpomínku na naučenou schopnost. Umožňuje ti nově přidělit 1 bod schopnosti.
 70038	Plášť statečnosti	Barevný plášť, se kterým bojovníci kdysi dokazovali svou statečnost, poněvadž plášť přitahoval veškeré nestvůry.
 70039	Příručka o kování	Kniha obsahuje duši starého kováře. Po použití může zvýšit šance na zlepšení předmětů.
 70040	Neústupnost Orka	Zredukuje ubývání vytrvalosti o polovinu.
-70043	Zlodějské rukavice	Zdvojnásobí šance ukořistit předměty.
+70043	Zlodějské rukavice	Zdvojnásobí šanci na ukořistění předmětů.
 70047	Prsten jazyků (příklad)	Dříve byl tento prsten vyráběn pro potřeby diplomatů. Umožňuje svému nositeli mluvit jazyky jiných království.
-70048	Plášť uprchlíků	Tento plášť nosí často uprchlíci. Pokud je součástí tvé výstroje, zakryje tvou hodnost.
-70049	Prsten Lucye	Na prstenu je napsáno: "Dračí bůh ti žehná". Zredukuje šanci během boje ztratit předmět.
+70048	Plášť uprchlíků	Použij tajemný plášť pro skrytí své hodnosti.
+70049	Prsten Lucye	Na prstenu je napsáno: "Dračí bůh ti žehná". Zredukuje šanci během boje ztratit předmět. Místo ztráty předmětu ztratíš Prsten Lucye.
 70050	Symbol moudrého císaře	Od staré královské rodiny zděděný symbol, který dodá panovníkovi velkou sílu.
 70051	Rukavice moudrého císaře	Od staré královské rodiny zděděný symbol, který dodá panovníkovi tajemnou sílu.
 70052	Kouzlo karmy 1	Tuto kouzlo používají buddhisté k ochraně proti smůle.
 70053	Kouzlo karmy 2	Tuto kouzlo používají buddhisté k ochraně proti smůle.
 70054	Kouzlo karmy 3	Tuto kouzlo používají buddhisté k ochraně proti smůle.
 70056	Džus z granát. jablka+	Elixír, který ti dodá okamžitě 1000 ZB.
-70057	Plášť statečnosti	Barevný plášť, se kterým bojovníci kdysi dokazovali svou statečnost, poněvadž plášť přitahoval veškeré nestvůry. S předměty lze obchodovat.
+70057	Plášť statečnosti	Barevný plášť, se kterým bojovníci kdysi dokazovali svou statečnost, protože přitahoval veškeré nestvůry.
 70058	Teleportační prsten	Tento prsten tě 50x teleportuje na jakékoliv místo v království. S předmětem nelze obchodovat.
 70063	Transformovat kostým	Odebere bonusy z jednoho z tvých kostýmů a nahradí je novými. S trochou štěstí se může také změnit počet bonusů (až max. 3).
 70064	Začarovat kostým	Odebere bonusy z jednoho z tvých kostýmů a nahradí je novými.
@@ -2070,16 +2070,16 @@
 71005	Prsten jazyků	Rozumíš po sedm dní všem jazykům říše.
 71006	Prsten jazyků	Rozumíš 15 dní všem jazykům říše.
 71007	Prsten jazyků	Rozumíš 30 dní všem jazykům říše.
-71008	Kniha o rybaření	Zdvojnásobí šanci chytit vzácnou rybu.
+71008	Kniha o rybaření	Je potřeba pro chycení vzácné ryby a zdvojnásobuje šanci na její ulovení.
 71009	Skladová truhla	Tvůj sklad se rozšíří o další dvě místnosti.
 71010	Třetí ruka	Ruka automaticky sbírá Yangy.
 71011	Maska emocí	Díky této masce můžeš dát svým pocitům volný průběh.
 71012	Kniha náčelníka	Po tu dobu, co je náčelník vybaven touto knihou, sbírají všichni členové skupiny 3 hodiny o 30 % víc bodů zkušeností (BZK).
 71013	Ohňostroj	Raketa osvítí nebe tak, že to všichni vidí.
-71014	Lektvar útoku +10	Zvýší rychlost útoku na 30 minut o 10 %.
-71015	Prsten zkušeností	V boji nasbíráš o 50 % víc zkušeností.
-71016	Zlodějské rukavice	Na 30 minut zdvojnásobí šanci ukořistit předměty.
-71017	Medaile štěstí	Zdvojnásobí šanci ukořistit Yangy.
+71014	Lektvar útoku +10	Zvýší rychlost útoku o 10 %.
+71015	Prsten zkušeností	V boji nasbíráš o 50 % víc bodů zkušeností.
+71016	Zlodějské rukavice	Zdvojnásobí šance ukořistit předměty.
+71017	Medaile štěstí	Zdvojnásobí šance ukořistit Yangy.
 71018	Požehnání života	Požehnání, které okamžitě obnoví tvoje ZB.
 71019	Požehnání magie	Požehnání, které okamžitě obnoví tvoje MB.
 71020	Požehnání draka	Požehnání, které okamžitě obnoví tvoje ZB a MB.
@@ -2089,15 +2089,15 @@
 71024	Obnovení síly	Vrátí body síly ve vlastnostech těla do původního stavu. Následně si můžeš body nově rozvrhnout.
 71025	Kámen kováře	Pomocí tohoto kamene a Požehnaného pergamenu můžete vyrobit u kováře Přiručku kování.
 71026	Magická železná ruda	S touto rudou a požehnaným pergamenem se dá vyrobit u kováře pergamen draka.
-71027	Život dračího boha	Zvýší maximální ZB na 30 minut o 20 %.
-71028	Útok dračího boha	Zvýší škodu, kterou způsobíš druhým v boji, na 30 minut o 12 až 15 %.
-71029	Inteligence dračího boha	Zvýší maximální MB na 30 minut o 20 %.
-71030	Obrana dračího boha	Sníží škodu, kterou utrpíš v boji, na 30 minut o 12 až 15 %.
+71027	Život dračího boha	Zvýší maximální ZB o 20 %.
+71028	Útok dračího boha	Zvýší hodnotu útoku o 20 %.
+71029	Inteligence dračího boha	Zvýší maximální MB o 20 %.
+71030	Obrana dračího boha	Sníží škodu, kterou utrpíš v boji, o 20 %.
 71031	Podpora dračího boha	Vitalita, síla, inteligence a pohyblivost tvojí postavy se zvýší přechodně o pětinásobek.
 71032	Pergamen draka	Odstraní riziko, že se při zlepšování předmět zničí. Pouze jeho kvalita se sníží o jeden stupeň. Navíc se zvýší pravděpodobnost úspěšného zlepšení o 10 %.
 71033	Maska emocí	Díky této masce můžeš dát svým pocitům volný průběh.
-71034	Lektvar útoku +15	Zvýší tvojí rychlost útoku na 30 minut o 15 %.
-71035	Výzkumníkův elixír	Zvyšuje kvalitu zkoumaných věcí, které máte nasbírat, čímž zvyšuje šanci, že budou akceptovány.
+71034	Lektvar útoku +15	Zvýší rychlost útoku o 15 %.
+71035	Výzkumníkův elixír	Zvyšuje kvalitu zkoumaných věcí, které máte nasbírat, čímž zvyšuje šanci, že budou akceptovány. Nefunguje na úkoly v Yohaře.
 71036	Perg. volání náčel. Orků	Umožní náčelníkovi Orků zjevit se vedle tvojí postavy. Pozor, je to boss!
 71037	Perg. volání náčelníka	Umožní temnému náčelníkovi zjevit se vedle tvojí postavy. Pozor, je to boss!
 71038	Perg. volání pavou.krále	Umožní pavoučímu králi zjevit se vedle tvojí postavy. Pozor, je to boss!
@@ -2106,14 +2106,14 @@
 71041	Perg. volání Devítiocase	Umožní devítiocasu zjevit se vedle tvojí postavy. Pozor, je to boss!
 71042	Perg.volání krále dém.	Vyvolá Hrdého krále démonů vedle tvé postavy. Pozor, je to boss!
 71043	Perg.volání tygř. ducha	Umožní žlutému tygřímu duchovi zjevit se vedle tvojí postavy. Pozor, je to boss!
-71044	Kritický útok	Zvýší šanci docílit kritický zásah na 10 minut o 20 %.
-71045	Pronikavý útok	Zvýší šanci docílit v boji pronikavý zásah na 10 minut o 20 %.
+71044	Kritický útok	Zvýší šanci docílit v boji kritický zásah o 20 %.
+71045	Pronikavý útok	Zvýší šanci docílit v boji pronikavý zásah o 20 %.
 71047	Tinktura kamene ducha	Vyjme zasazený kámen ducha z jednoho z tvých předmětů.
 71048	Kouzlo změny	S tímto kouzlem můžeš změnit pohlaví tvé postavy.
 71049	Hedvábný raneček	S tímto ranečkem si můžeš na 10 dní zadarmo otevřít soukromý stánek.
 71050	Elixír rychlosti	Zvýší na 30 minut tvou rychlost pohybu o 60.
-71051	Uhranutá věc	Přidá jeden speciální bonus Vaší věci, pokud žádný ještě nemá.
-71052	Požehnaná věc	Odebere speciální bonus na jedné vaší věci a přidá jiný.
+71051	Uhranutá věc	Odebere speciální bonus na jedné vaší věci a přidá jiný.
+71052	Požehnaná věc	Přidá jeden speciální bonus Vaší věci, pokud žádný ještě nemá.
 71054	Tinktura království	Umožňuje odejít do exilu v jiném království.
 71055	Tinktura jména	Umožňuje změnit jméno tvojí postavy.
 71056	Tinktura nebe	Zvyšuje šanci úspěšného vložení kamenu ducha.
@@ -2144,7 +2144,7 @@
 71081	Kámen Metin (normální)	Nechá vedle tebe spadnout normálně velký kámen Metin.
 71082	Kámen Metin (těžký)	Nechá vedle tebe spadnout těžký kámen Metin.
 71083	Příručka kamenů	Odstraní všechny rozdrcené kameny z předmětu. Tím pádem obdržíš další pokus zlepšit zbraň nebo brnění.
-71084	Začarovat předmět	Odstraní bonusy jednoho z tvých předmětů a přidá nové.
+71084	Začarovat předmět	Odstraní bonusy jednoho z tvých předmětů a přidá nové. Aplikuje se pouze na bonusy 1-5.
 71085	Zesílit předmět	Pokud budeš mít štěstí, přidá jednomu z tvých předmětů bonus. (Maximálně 4 bonusy)
 71088	Kniha misí (lehká)	Ta v hnědé kůži vázaná kniha obsahuje misi, kterou zvládnou i nezkušení bojovníci.
 71089	Kniha misí (normální)	Ta v hnědé kůži vázaná kniha obsahuje misi, kterou zvládnou pouze bojovníci se zkušeností v boji.
@@ -2153,12 +2153,12 @@
 71092	Kniha proměn	Úspěšné přečtení této knihy ti zvýší stupeň schopnosti proměny. Po přečtení kniha zmizí.
 71093	Kulička proměn	Pomocí této kuličky se proměníš v nestvůru.
 71094	Soustředěné čtení	Zvýší šanci na zlepšení tvého talentu při čtení další knihy (nebo kamene duše) o dvaapůlnásobek.
-71095	Propustka	Můžeš vstoupit na další úroveň pavoučího podzemí nebo do Pevnosti Červeného draka, když ukážeš tuto propustku příslušnému strážci.
+71095	Propustka	Pokud dáš tento lístek strážci, budete moci vstoupit do nového patra vybraného bludiště.
 71096	Tabule průchodu	S touto propustkou v podobě medaile můžeš projít bránou.
 71099	Prsten následnictví	Opravňuje náčelníka cechu určit následovníka a předat mu vedení.
 71100	Certifikát změny výcviku	Umožňuje ti nechat výcvik za sebou a začít nový. K tomu musíš mít minimálně úroveň 31.
-71101	Lektvar spěchu	Tento lektvar snižuje dobu obnovení kouzla o 20 procent během následujících třiceti minut.
-71102		
+71101	Lektvar spěchu	Tento lektvar zkracuje dobu čekání na nabití schopností o 20 %.
+71102		Zvýší rychlost kouzel o 30 %.
 71103	Svitek znovurozd. (VIT)	Vrací vitalitu na 1 a umožňuje znovu rozdělit všechny body.
 71104	Svitek znovurozd. (INT)	Nastaví Vaši inteligenci zpět na 1 a umožní znovu rozdělit body.
 71105	Znovurozdělení (SÍLA)	Vrátí Vaši sílu zpět na 1 a umožní nové rozdělení bodů.
@@ -2168,106 +2168,106 @@
 71109	Svitek opravy	Pomocí tohoto svitku můžete z věci odebrat naposledy přidaný kámen.
 71110	Koňský cukr	Tento cukřík ti umožní dát tvému koni jméno. Zároveň zvýší obranou sílu o 20.
 71113	Sklenice porozumění	Umožňuje ti ukázat věc z tvého inventáře jinému hráči. Sklenice se při použití rozbije.
-71114	Pečeť divokého kance (Ž)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
+71114	Pečeť divokého kance (Ž)	Kouzlo této pečetě přivolá mocného ducha zvířete, který tě rychle přenese na místo, které si vybereš. Zvyšuje hodnotu obrany svého jezdce o 75.
 711151	Pečeť divokého kance (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711152	Pečeť divokého kance (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711153	Pečeť divokého kance (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711154	Pečeť divokého kance (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
-71115	Pečeť divokého kance (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
-71116	Pečeť vlka (Ž)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
+71115	Pečeť divokého kance (M)	Kouzlo této pečetě přivolá mocného ducha zvířete, který tě rychle přenese na místo, které si vybereš. Zvyšuje hodnotu obrany svého jezdce o 100.
+71116	Pečeť vlka (Ž)	Kouzlo této pečetě přivolá mocného ducha zvířete, který tě rychle přenese na místo, které si vybereš. Zvyšuje hodnotu obrany svého jezdce o 100.
 711171	Pečeť vlka (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711172	Pečeť vlka (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711173	Pečeť vlka (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711174	Pečeť vlka (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
-71117	Pečeť vlka (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
-71118	Pečeť tygra (Ž)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
+71117	Pečeť vlka (M)	Kouzlo této pečetě přivolá mocného ducha zvířete, který tě rychle přenese na místo, které si vybereš. Zvyšuje hodnotu obrany svého jezdce o 150.
+71118	Pečeť tygra (Ž)	Kouzlo této pečetě přivolá mocného ducha zvířete, který tě rychle přenese na místo, které si vybereš. Zvyšuje hodnotu obrany svého jezdce o 125.
 711191	Pečeť tygra (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711192	Pečeť tygra (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711193	Pečeť tygra (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711194	Pečeť tygra (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
-71119	Pečeť tygra (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
-71120	Pečeť lva (Ž)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
+71119	Pečeť tygra (M)	Kouzlo této pečetě přivolá mocného ducha zvířete, který tě rychle přenese na místo, které si vybereš. Zvyšuje hodnotu obrany svého jezdce o 200.
+71120	Pečeť lva (Ž)	Kouzlo této pečetě přivolá mocného ducha zvířete, který tě rychle přenese na místo, které si vybereš. Zvyšuje hodnotu útoku svého jezdce o 200.
 711211	Pečeť lva (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711212	Pečeť lva (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711213	Pečeť lva (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
 711214	Pečeť lva (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
-71121	Pečeť lva (M)	Kouzlo pečetě vyvolá mocnou zvířecí duši, která tě rychle přenese na místo určení.
-71122		
+71121	Pečeť lva (M)	Kouzlo této pečetě přivolá mocného ducha zvířete, který tě rychle přenese na místo, které si vybereš. Zvyšuje hodnotu útoku svého jezdce o 300.
+71122		Lze jej použít pro vstup do Dračího chrámu.
 71123	Dračí šupiny	Dračí šupiny jsou jeden z nejodolnějších materiálů.
-71124	Bílý Lev	Zvířata s bílou kožešinou jsou velmi vzácná a mnoho kultur je uctívá, protože věří, že jsou nositelé pozoruhodných sil.
-71125	Pečeť div. boj. kance	Divoká zlá zvířecí duše potřebuje mnoho magických schopností. Ovšem výsledky jsou překvapivé.
-71126	Pečeť bojového vlka	Divoká zlá zvířecí duše potřebuje mnoho magických schopností. Ovšem výsledky jsou překvapivé.
-71127	Pečeť bouřlivého tygra	Divoká zlá zvířecí duše potřebuje mnoho magických schopností. Ovšem výsledky jsou překvapivé.
-71128	Pečeť bojového lva	Divoká zlá zvířecí duše potřebuje mnoho magických schopností. Ovšem výsledky jsou překvapivé.
-71129	Dračí čelist	Pohled na tuto příšernou čelist vyvolává temné vzpomínky...
-71130	Propustka	Pokud dáte tento lístek strážci, budete moci vstoupit do nového patra pavoučího podzemí  nebo do Pevnosti Červeného draka. S předmětem lze obchodovat.
-71131	Pečeť Černého koně	Pečeť vznešeného černého koně.
-71132	Pečeť Černého koně	Pečeť vznešeného černého koně.
-71133	Pečeť Černého koně	Pečeť vznešeného černého koně.
-71134	Pečeť Černého koně	Pečeť vznešeného černého koně.
-71135	Prsten půlměsíce	Prsten s uměleckým gravírováním ve tvaru půlměsíce.
-71136	Mocné lízátko	Lízátko vyrobené z tajných přísad, které dává zkušenosti a sílu do bitvy.
-71137	Pečeť Král. tygra (m)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (modrého).
-71138	Pečeť Král. tygra (č)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (červeného).
-71139	Pečeť Král. tygra (zlat)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (zlatého).
-71140	Pečeť Král. tygra (z)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (zeleného).
-71141	Pečeť Král. tygra (š)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (šedivého).
-71142	Pečeť Král. tygra (b)	Magie pečeti vyvolá jezdecké zvíře, majestátního královského tygra (bílého).
+71124	Bílý Lev	Zvířata s bílou kožešinou jsou velmi vzácná a mnoho kultur je uctívá, protože věří, že jsou nositelé pozoruhodných sil. Zvyšuje zisk zkušeností o 30 %.
+71125	Pečeť div. boj. kance	Ochočení si zlého zvířecího ducha vyžaduje dobré schopnosti užití magie, ale výsledky mohou být velmi působivé. Přidává svému jezdci +20 % síly proti monstrům.
+71126	Pečeť bojového vlka	Ochočení si zlého zvířecího ducha vyžaduje dobré schopnosti užití magie, ale výsledky mohou být velmi působivé. Zvyšuje šanci na kritický zásah o 10 %.
+71127	Pečeť bouřlivého tygra	Ochočení si zlého zvířecího ducha vyžaduje dobré schopnosti užití magie, ale výsledky mohou být velmi působivé. Zvyšuje šanci na kritický zásah o 10 %.
+71128	Pečeť bojového lva	Ochočení si zlého zvířecího ducha vyžaduje dobré schopnosti užití magie, ale výsledky mohou být velmi působivé. Sníží škodu, kterou utrpíš v boji o 10 %.
+71129	Dračí čelist	Pohled na tento příšerný dráp vyvolává temné vzpomínky...
+71130	Propustka	Pokud dáš tento lístek strážci, budete moci vstoupit do nového patra vybraného bludiště. S předmětem lze obchodovat.
+71131	Pečeť Černého koně	Pečeť Vznešeného černého koně. Zvýší rychlost tvého pohybu o 60.
+71132	Pečeť Černého koně	Pečeť Vznešeného černého koně. Zvýší rychlost tvého pohybu o 60.
+71133	Pečeť Černého koně	Pečeť Vznešeného černého koně. Zvýší rychlost tvého pohybu o 60.
+71134	Pečeť Černého koně	Pečeť Vznešeného černého koně. Zvýší rychlost tvého pohybu o 60.
+71135	Prsten půlměsíce	Přidá ti: | +50 % bodů zkušeností | +20 % rychlost útoku | +20 % Rychlost kouzel | +30 % Fyzického poškození | +10 % maximální ZB | +10 % maximální MB | +5 % ke všem bonusům výbavy
+71136	Mocné lízátko	Lízátko, vyrobené z tajných přísad, ti přidá | +50 % zkušenostních bodů | +30 % magického poškození | +20 rychlost útoku | +20 rychlost kouzel | +10 % maximální ZB | +10 % maximální MB
+71137	Pečeť Král. tygra (m)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (modrého). Zvyšuje zisk zkušeností o 30 %.
+71138	Pečeť Král. tygra (č)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (červeného). Zvyšuje zisk zkušeností o 30 %.
+71139	Pečeť Král. tygra (zlat)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (zlatého). Zvyšuje zisk zkušeností o 30 %.
+71140	Pečeť Král. tygra (z)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (zeleného). Zvyšuje zisk zkušeností o 30 %.
+71141	Pečeť Král. tygra (š)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (šedého). Zvyšuje zisk zkušeností o 30 %.
+71142	Pečeť Král. tygra (b)	Kouzlo pečetě vyvolá jezdecké zvíře, majestátního Královského tygra (bílého). Zvyšuje zisk zkušeností o 30 %.
 71143	Prsten radosti	Prsten s bohatými dekoracemi, vyrobený z nefritu a nebeského kamene, který přidává následující bonusy: +50 % bodů zkušeností +20 % rychlost útoku +20 % rychlost kouzel +30 % síly proti monstrům +10 % maximální ZB +10 % maximální MB
 71144	Vánoční truhla	S láskou zabalený vánoční dárek, který obsahuje překvapení.
-71145	Amulet věčné lásky	Stříbrný amulet ve tvaru srdce, ozdobený magickými drahokamy.
+71145	Amulet věčné lásky	Stříbrný amulet ve tvaru srdce, ozdobený magickými drahokamy. Přidá ti | +30 % zisk BZK | +10 rychlost útoku | +10 rychlost kouzel | +5 % ZB a MB | +10 % síla proti monstrům
 71146	Amorkův košík (růžový)	Košík ve tvaru srdce, obsahující 5 překvapení. Lze jej otevřít každých 30 minut.
 71147	Amorkův košík (modrý)	Košík ve tvaru srdce, obsahující 5 překvapení. Lze jej otevřít každých 30 minut.
-71148	Prsten síly vůle	Přidá ti +30 % zisku zkušeností, +20 % obrany proti válečníkům, +20 % obrany proti ninjům, +20 % obrany proti Lycanům, +30 % síly proti monstrům, +10 % ZB a +10 % MB po dobu 7 dnů.
-71149	Prsten smrtelné síly	Přidá ti +30 % zisku zkušeností, +20 % obrany proti surům, +20 % obrany proti šamanům, +20 % obrany proti Lycanům, +30 % síly proti monstrům, +10 % ZB a +10 % MB po dobu 7 dnů.
+71148	Prsten síly vůle	Přidá ti +30 % BZK, +20 % obrany proti válečníkům, +20 % obrany proti ninjům, +20 % obrany proti Lycanům, +30 % síly proti monstrům, +10 % ZB a +10 % MB po dobu trvání efektu.
+71149	Prsten smrtelné síly	Přidá ti +30 % BZK, +20 % obrany proti Surům, +20 % obrany proti šamanům, +20 % obrany proti Lycanům, +30 % síly proti monstrům, +10 % ZB a +10 % MB po určitý čas.
 71150	Kouzelné vejce	Umělecky zdobená oválná truhla skrývá více, než jen Velikonoční překvapení - odkrývá svá překvapení jedno po druhém.
 71151	Zelené kouzlo	Odebere předměty z jednoho předmětu a přidá na něj nové. Lze jej použít pouze na zbraně a brnění od úrovně 40. S předmětem nelze obchodovat.
 71152	Zelená síla	S trochou štěstí ti přidá další bonus na jeden tvůj předmět (max. 4 bonusy). Lze jej použít pouze na zbraně a brnění do úrovně 40. S předmětem nelze obchodovat.
 71153	Lektvar vědomostí	Tento lektvar ti umožní získat 100 % více zkušeností za jednu herní hodinu. S předmětem nelze obchodovat.
-71154	Lektvar vzestupu (3h)	Tento lektvar ti umožní získávat o 80% více zkušeností po dobu tří hodin herního času. S předmětem nelze obchodovat.
-71155	Lektvar vědomostí (3h)	Tento lektvar ti umožní získávat o 100% více zkušeností po dobu tří hodin herního času. S předmětem nelze obchodovat.
-71156	Lektvar duše (3h)	Tento lektvar ti umožní získávat o 150% více zkušeností po dobu tří hodin herního času. S předmětem nelze obchodovat.
+71154	Lektvar vzestupu (3h)	Tento lektvar ti umožní získávat o 80 % více zkušeností po dobu tří hodin herního času. S předmětem nelze obchodovat.
+71155	Lektvar vědomostí (3h)	Tento lektvar ti umožní získávat o 100 % více zkušeností po dobu tří hodin herního času. S předmětem nelze obchodovat.
+71156	Lektvar duše (3h)	Zvyšuje zisk zkušeností o 150 %.
 71157		
-71158	Medaile hrdiny	Přidá +50 % BZK, +30 % poškození, +20 % rychlost útoku, +20 % rychlost kouzel, +10 % ZB a +10 % MB.
+71158	Medaile hrdiny	Přidá +50 % BZK, +30 fyzického poškození, +20 % rychlost útoku, +20 % rychlost kouzel, +10 % ZB a +10 % MB.
 71159	Milónova truhla	Truhla pro opravdové hrdiny. Obsahuje náhodný předmět jako odměnu za tvůj triumf.
 71160	Athénina truhla	Truhla pro opravdové hrdinky. Obsahuje náhodný předmět jako odměnu za tvůj triumf.
-71161	Equus Porphyreus	Pečeť k jednomu z nejvzácnějších a nejkrásnějších koní.
-71164	Pečeť Komety	Tuto pečeť můžeš použít pro zavolání tvého soba Komety.
-71166	Pečeť obrněné pandy	Tato pečeť ti přivolá tvou Obrněnou pandu.
-71171	Pečeť Jednorožce	Tato pečeť přivolá Jednorožce.
-71172	Pečeť Nočního běsu	Tato pečeť přivolá Noční běs.
+71161	Equus Porphyreus	Pečeť jednoho z nejkrásnějších a extrémně vzácných růžových koní. Zvýší rychlost tvého pohybu o 60.
+71164	Pečeť Komety	Tuto pečeť můžeš použít pro zavolání tvého soba Komety. Zvýší rychlost tvého pohybu o 60.
+71166	Pečeť obrněné pandy	Tuto pečeť můžeš použít pro přivolání tvé Obrněné pandy. Zvýší rychlost tvého pohybu o 60.
+71171	Pečeť Jednorožce	Tuto pečeť můžeš použít pro přivolání Jednorožce. Zvýší rychlost tvého pohybu o 60.
+71172	Pečeť Nočního běsu	Tuto pečeť můžeš použít pro přivolání Nočního běse. Zvýší rychlost tvého pohybu o 60.
 71173	Teleportační svitek	Tento svitek tě přenese přímo do bran Pevnosti červeného draka.
 71174	Propustka	Pokud tuto propustku ukážek strážnému, pustí tě do Pevnosti červeného draka.
 71175	Propustka	Pokud tuto propustku ukážek strážnému, pustí tě do Pevnosti červeného draka.
-71176	Černý panter	Tato pečeť přivolá tajemného černého pantera.
-71177	Pečeť leoparda	Tato pečeť přivolá statečného leoparda.
+71176	Černý panter	Tato pečeť přivolá tajemného Černého pantera. Zvýší rychlost tvého pohybu o 30.
+71177	Pečeť leoparda	Tato pečeť přivolá odvážného Leoparda. Zvýší rychlost tvého pohybu o 30.
 71178	Měsíční encyklopedie (M)	Balík obsahující 10 náhodných knih pro Lycany.
 71179	Měsíční encyklopedie (V)	Balík obsahující 25 náhodných knih pro Lycany.
-71180	Lektvar vzestupu (3h)	Tento lektvar ti umožní získávat o 80% více zkušeností po dobu tří hodin herního času. S předmětem nelze obchodovat.
-71181	Lektvar vědomostí (3h)	Tento lektvar ti umožní získávat o 100% více zkušeností po dobu tří hodin herního času. S předmětem nelze obchodovat.
-71182	Pečeť Muffina (hnědého)	Tuto pečeť můžeš použít pro přivolání Muffina, hrozivého bojového kuřete.
-71183	Pečeť Nuggeta (hnědého)	Tuto pečeť můžeš použít pro přivolání Nuggeta, obrovského bojového kohoutka.
-71184	Pečeť Muffina (modrého)	Tuto pečeť můžeš použít pro přivolání Muffina, hrozivého bojového kuřete.
-71185	Pečeť Nuggeta (modrého)	Tuto pečeť můžeš použít pro přivolání Nuggeta, obrovského bojového kohoutka.
-71186	Pečeť Muffina (zeleného)	Tuto pečeť můžeš použít pro přivolání Muffina, hrozivého bojového kuřete.
-71187	Pečeť Nuggeta (zeleného)	Tuto pečeť můžeš použít pro přivolání Nuggeta, obrovského bojového kohoutka.
-71188	Kouzelné lízatko	Lízátko vyrobené z tajných ingrediencí, které poskytuje magickou energii a zkušenosti v bitvě.
-72001	Prsten zkušeností	Zvýší sbírání zkušeností o 50 % po dobu jedné hodiny.
+71180	Lektvar vzestupu (3h)	Tento lektvar ti umožní získávat o 80 % více zkušeností po dobu tří hodin herního času. S předmětem nelze obchodovat.
+71181	Lektvar vědomostí (3h)	Tento lektvar ti umožní získávat o 100 % více zkušeností po určitou dobu. S předmětem nelze obchodovat.
+71182	Pečeť Muffina (hnědého)	Tuto pečeť můžeš použít pro přivolání Muffina, hrozivého bojového kuřete. Zvýší rychlost tvého pohybu o 20.
+71183	Pečeť Nuggeta (hnědého)	Tuto pečeť můžeš použít pro přivolání Nuggeta, obrovského bojového kohoutka. Zvýší rychlost tvého pohybu o 20.
+71184	Pečeť Muffina (modrého)	Tuto pečeť můžeš použít pro přivolání Muffina, hrozivého bojového kuřete. Zvýší rychlost tvého pohybu o 20.
+71185	Pečeť Nuggeta (modrého)	Tuto pečeť můžeš použít pro přivolání Nuggeta, obrovského bojového kohoutka. Zvýší rychlost tvého pohybu o 20.
+71186	Pečeť Muffina (zeleného)	Tuto pečeť můžeš použít pro přivolání Muffina, hrozivého bojového kuřete. Zvýší rychlost tvého pohybu o 20.
+71187	Pečeť Nuggeta (zeleného)	Tuto pečeť můžeš použít pro přivolání Nuggeta, obrovského bojového kohoutka. Zvýší rychlost tvého pohybu o 20.
+71188	Kouzelné lízatko	Lízátko, vyrobené z tajných přísad, ti přidá | +50 % zkušenostních bodů | +30 % magického poškození | +20 rychlost útoku | +20 rychlost kouzel | +10 % maximální ZB | +10 % maximální MB
+72001	Prsten zkušeností	Zvyšuje zisk zkušeností o 50 % na 10 hodin.
 72002	Prsten zkušeností	Zvýší sbírání zkušeností na 30 minut o 50 %.
-72003	Prsten zkušeností	Zvýší sbírání zkušeností na 3 hodiny o 50 %.
+72003	Prsten zkušeností	Zvyšuje zisk zkušeností o 50 % na 3 hodiny.
 72004	Zlodějské rukavice	Zdvojnásobí na 10 hodin šanci ukořistit předměty.
 72005	Zlodějské rukavice	Zdvojnásobí na 30 minut šanci ukořistit předměty.
-72006	Zlodějské rukavice	Zdvojnásobí na 3 hodiny šanci ukořistit předměty.
+72006	Zlodějské rukavice	Zdvojnásobí na 3 hodin šanci ukořistit předměty.
 72007	Hedvábný raneček	Umožní ti na 10 hodin otevřít soukromý stánek.
 72008	Hedvábný raneček	Umožní ti na 30 minut otevřít soukromý stánek.
 72009	Hedvábný raneček	Umožní ti na 3 hodiny otevřít soukromý stánek.
 72010	Peříčko milenců	Když je součástí výstroje, zvyšují se páru body lásky po dobu patnácti minut dvakrát tak rychle.
 72011	Peříčko milenců	Když je součástí vybavení, zvyšují se body lásky páru podobu třiceti minut dvakrát tak rychle.
 72012	Peříčko milenců	Když je součástí vybavení, zvyšují se body lásky páru po dobu 3 hodin dvakrát tak rychle.
-72013	Kniha o rybaření	Zdvojnásobí na 15 minut šanci chytit vzácnou rybu.
-72014	Kniha o rybaření	Zdvojnásobí na 30 minut šanci chytit vzácnou rybu.
-72015	Kniha o rybaření	Zdvojnásobí na 3 hodiny šanci chytit vzácnou rybu.
-72016	Třetí ruka	Ruka sbírá 15 minut automaticky Yangy.
+72013	Kniha o rybaření	Je potřeba pro chycení vzácné ryby a zdvojnásobuje šanci na její ulovení po dobu 15 minut.
+72014	Kniha o rybaření	Je potřeba pro chycení vzácné ryby a zdvojnásobuje šanci na její ulovení po dobu 30 minut.
+72015	Kniha o rybaření	Je potřeba pro chycení vzácné ryby a zdvojnásobuje šanci na její ulovení po dobu 3 hodin.
+72016	Třetí ruka	Ruka, která po určitý čas automaticky sbírá spadlé Yangy.
 72017	Třetí ruka	Ruka sbírá 30 minut automaticky Yangy.
 72018	Třetí ruka	Ruka sbírá 3 hodiny automaticky Yangy.
 72019	Skladová truhla	Tvůj sklad se na 15 minut zvětší o dvě další místnosti.
@@ -2276,15 +2276,15 @@
 72022	Medaile štěstí	Po dobu deseti hodin zdvojnásobí šanci ukořistit Yangy.
 72023	Medaile štěstí	Po dobu třiceti minut zdvojnásobí šanci ukořistit Yangy.
 72024	Medaile štěstí	Po dobu 3 hodin zdvojnásobí šanci ukořistit Yangy.
-72025	Kritický útok	Na 10 minut zvýší šanci o 20 % docílit v boji kritický zásah.
-72026	Kritický útok	Na 10 minut zvýší šanci o 20 % docílit v boji kritický zásah.
-72027	Kritický útok	Na 10 minut zvýší šanci o 20 % docílit v boji kritický zásah.
+72025	Kritický útok	Zvýší šanci docílit v boji pronikavý zásah o 10 %.
+72026	Kritický útok	Zvýší šanci docílit v boji pronikavý zásah o 10 %.
+72027	Kritický útok	Zvýší šanci docílit v boji pronikavý zásah o 10 %.
 72028	Maska emocí	Můžeš dát svým pocitům po sedm dní volný průběh.
 72029	Maska emocí	Můžeš dát svým pocitům 15 dní volný průběh.
 72030	Maska emocí	Můžeš dát svým pocitům 30 dní volný průběh.
-72031	Útok dračího boha	Zvýší škodu, kterou způsobíš jiným, o 12 až 15 % po dobu 30 minut.
-72032	Útok dračího boha	Zvýší škodu, kterou v boji způsobíš jiným, o 12 až 15 % po dobu 30 minut.
-72033	Útok dračího boha	Zvýší škodu, kterou v boji způsobíš jiným, o 12 až 15 % po dobu 30 minut.
+72031	Útok dračího boha	Zvýší tvojí hodnotu útoku o 15 % po dobu 30 minut.
+72032	Útok dračího boha	Zvýší tvojí hodnotu útoku o 15 % po dobu 30 minut.
+72033	Útok dračího boha	Zvýší tvojí hodnotu útoku o 15 % po dobu 30 minut.
 72034	Obrana dračího boha	Sníží škodu, kterou utrpíš pří obraně, o 12 až 15 %.
 72035	Obrana dračího boha	Sníží škodu, kterou utrpíš pří obraně, o 12 až 15 %.
 72036	Obrana dračího boha	Sníží škodu, kterou utrpíš pří obraně, o 12 až 15 %.
@@ -2297,38 +2297,38 @@
 72043	Kniha náčelníka	Po celou dobu, co je náčelník vybaven touto knihou, sbírají všichni členové skupiny o 30 % víc bodů zkušeností.
 72044	Kniha náčelníka	Po celou dobu, co je náčelník vybaven touto knihou, sbírají všichni členové skupiny o 30 % víc bodů zkušeností.
 72045	Kniha náčelníka	Po celou dobu, co je náčelník vybaven touto knihou, sbírají všichni členové skupiny o 30 % víc bodů zkušeností.
-72046	Nástroj důležité šance	Zvýší šanci na pronikavý zásah o 20 % po dobu 10 minut.
-72047	Nástroj důležité šance	Zvýší šanci na pronikavý zásah o 20 % po dobu 10 minut.
-72048	Nástroj důležité šance	Zvýší šanci na pronikavý zásah o 20 % po dobu 10 minut.
+72046	Nástroj důležité šance	Zvýší šanci docílit v boji kritický zásah o 10 %.
+72047	Nástroj důležité šance	Zvýší šanci docílit v boji kritický zásah o 10 %.
+72048	Nástroj důležité šance	Zvýší šanci docílit v boji kritický zásah o 10 %.
 72301	Požehnaný pergamen	Odstraní riziko, že se předmět při zlepšování rozbije. V tomto případě se sníží jeho kvalita o 1.
-72302		
-72303		
-72304		
-72305		
-72306		
-72307		
+72302		Po tu dobu, co je náčelník vybaven touto knihou, sbírají všichni členové skupiny 3 hodiny o 30 % víc bodů zkušeností (BZK).
+72303		Zvýší sbírání zkušeností o 50 % po dobu jedné hodiny.
+72304		Legendární požehnaná koule. Když má předmět 4 atributy, přidá k nim ještě jeden další. Přidání bonusu může také selhat.
+72305		Zrcadlo neviditelnosti
+72306		Poznámka od kováře, která ti vysvětlí, jak si máš vylepšit předmět. Zvyšuje šanci na vylepšení předmětu z +4 na +5 na 100 %.
+72307		Poznámka od kováře, která ti vysvětlí, jak si máš vylepšit předmět. Zvyšuje šanci na vylepšení předmětu z +5 na +6 na 100 %.
 72308	Magická měděná ruda	Pokud u kováře zkombinuješ tuto rudu s Požehnaným pergamenem, vytvoříš pergamen války.
-72309		
-72310		
-72311		
-72312		
-72313		
-72314		
+72309		Kniha obsahuje duši starého kováře. Po použití může zvýšit šance na zlepšení předmětů.
+72310		Osvobodí tě od kletby zlého ducha, když se ti nevydaří učení. Pergamen ti umožní ještě ten samý den přečíst další dokument schopností.
+72311		Požehnání, které okamžitě obnoví tvoje ZB a MB na 100 %.
+72312		Zvýší hodnotu útoku o 20 %.
+72313		Sníží škodu, kterou utrpíš v boji, o 20 %.
+72314		Odstraní riziko, že se předmět při zlepšování rozbije. V případě selhání je místo toho snížena úroveň předmětu o jednu. Navíc se zvýší pravděpodobnost úspěšného zlepšení o 10 %.
 72501	Prsten zkuš.  (iCafe)	Zvýší sbírání zkušeností o 20 % pokud máš členství v iCafe.
 72502	Zloděj. rukavice (iCafe)	V iCafe členů zvýší o jedenapůlnásobek úspěšné ukořistění předmětů.
 72701	Větrné boty	Zvýší rychlost pohybu o 30, pokud jsou součástí výbavy.
 72703	Náušnice z tygří kosti	Hodnota útoku bude zvýšena o 200 bodů na 2 hodiny (čas se počítá, pouze když se předmět používá). S předmětem nelze obchodovat.
 72704	Náušnice z dračí kosti	Hodnota obrany bude zvýšena o 200 bodů na 2 hodiny (čas se počítá, pouze když se předmět používá). S předmětem nelze obchodovat.
-72705	Náramek z tygří kosti	Poškození za schopnosti bude zvýšeno o 15 % na 2 hodiny (čas se počítá, pouze když se předmět používá). S předmětem nelze obchodovat.
-72706	Náramek z dračí kosti	Hodnota obrany proti útoku schopnostmi bude zvýšena o 15 % na 2 hodiny (čas se počítá, pouze když se předmět používá). S předmětem nelze obchodovat.
+72705	Náramek z tygří kosti	Poškození za schopnosti bude zvýšeno o 15 bodů na 2 hodiny (čas se počítá, pouze když se předmět používá). S předmětem nelze obchodovat.
+72706	Náramek z dračí kosti	Hodnota obrany proti útoku schopnostmi bude zvýšena o 15 bodů na 2 hodiny (čas se počítá, pouze když se předmět používá). S předmětem nelze obchodovat.
 72723	Elixír Slunce (M)	Automaticky doplní tvoje ZB. Obsahuje 1.000.000 ZB.
 72724	Elixír Slunce (S)	Automaticky doplní tvoje ZB. Obsahuje 3.000.000 ZB.
 72725	Elixír Slunce (V)	Automaticky doplní tvoje ZB. Obsahuje 7.000.000 ZB.
-72726	Elixír Slunce (E)	Automaticky doplňuje ZB. Obsahuje 10.000.000 ZB. S předmětem lze obchodovat.
+72726	Elixír Slunce (E)	Obsahuje 10 000 000 ZB. Automaticky doplní tvoje ZB a má další pozitivní efekt na maximální ZB. S předmětem lze obchodovat.
 72727	Elixír Měsíce (M)	Automaticky doplní tvoje MB. Obsahuje 100.000 MB.
 72728	Elixír Měsíce (S)	Automaticky doplní tvoje MB. Obsahuje 300.000 MB.
 72729	Elixír Měsíce (V)	Automaticky doplní tvoje MB. Obsahuje 700.000 MB.
-72730	Elixír Měsíce (E)	Automaticky doplňuje MB. Obsahuje 1.000.000 MB. S předmětem lze obchodovat.
+72730	Elixír Měsíce (E)	Obsahuje 1 000 000 MB. Automaticky doplní tvoje MB a má další pozitivní efekt na maximální MB. S předmětem lze obchodovat.
 73001	Módní účes (červený)	Módní účes, který vytvoří charakteristický vzhled.
 73002	Módní účes (světlý)	Módní účes, který vytvoří charakteristický vzhled.
 73003	Módní účes (modrý)	Módní účes, který vytvoří charakteristický vzhled.
@@ -2516,10 +2516,10 @@
 75018	Válečnická šála (Ž)	Pouštní šála pro ženy válečnice, vyrobená z cenného materiálu (doba trvání: 7 dnů).
 75019	Válečnický turban (Ž)	Pokrývka hlavy pro ženy válečnice, vyrobená z kvalitního materiálu (doba trvání: 7 dnů).
 75020	Maska dýně (válečnice)	Maska pro válečnice ve tvaru dýně. Atributy a doba výdrže jsou náhodné. Nahradí existující účes.
-75201	Koňský ohon (hnědý)	Účes se svázanými vlasy vzadu na hlavě
-75202	Koňský ohon (zelený)	Účes se svázanými vlasy vzadu na hlavě
-75203	Koňský ohon (modrý)	Účes se svázanými vlasy vzadu na hlavě
-75204	Koňský ohon (světlý)	Účes se svázanými vlasy vzadu na hlavě
+75201	Koňský ohon (hnědý)	Účes se svázanými vlasy vzadu na hlavě.
+75202	Koňský ohon (zelený)	Účes se svázanými vlasy vzadu na hlavě.
+75203	Koňský ohon (modrý)	Účes se svázanými vlasy vzadu na hlavě.
+75204	Koňský ohon (světlý)	Účes se svázanými vlasy vzadu na hlavě.
 75205	Stř.dlouhé vlasy (červ.)	Decentní účes s bílou čelenkou
 75206	Stř.dlouhé vlasy (hnědé)	Decentní účes se zelenou čelenkou
 75207	Stř.dlouhé vlasy (svět.)	Decentní účes se světlou čelenkou
@@ -2536,10 +2536,10 @@
 75218	Keffiyeh pro ninjy (M)	Pokrývka hlavy pro muže ninjy, chránící před písky pouštní bouře (doba trvání: 7 dnů).
 75219	Turban pro ninjy (M)	Pokrývka hlavy pro muže ninjy, vyrobená z nejkvalitnějšího materiálu (doba trvání: 7 dnů).
 75220	Maska dýně (ninja muž)	Maska pro ninjy ve tvaru dýně. Atributy a doba výdrže jsou náhodné. Nahradí existující účes.
-75401	Sportovní účes (světlý)	Extravagantní účes, který je typický pro příslušnice Surů
-75402	Sportovní účes (hnědý)	Extravagantní účes, který je typický pro příslušnice Surů
-75403	Sportovní účes (blond)	Extravagantní účes, který je typický pro příslušnice Surů
-75404	Sportovní účes (zelený)	Extravagantní účes, který je typický pro příslušnice Surů
+75401	Sportovní účes (světlý)	Extravagantní účes, který je typický pro příslušnice Surů.
+75402	Sportovní účes (hnědý)	Extravagantní účes, který je typický pro příslušnice Surů.
+75403	Sportovní účes (blond)	Extravagantní účes, který je typický pro příslušnice Surů.
+75404	Sportovní účes (zelený)	Extravagantní účes, který je typický pro příslušnice Surů.
 75405	Charismatický účes(bílý)	Bílé, dlouhé vlasy ve svéhlavém stylu
 75406	Charismatický účes(červ)	Červené, dlouhé vlasy ve svéhlavém stylu
 75407	Charismatický účes(čern)	Černé, dlouhé vlasy ve svéhlavém stylu
@@ -2579,7 +2579,7 @@
 76000	Broskvové víno	Elixír, který ti dodá okamžitě 500 ZB. S předmětem nelze obchodovat.
 76001	Reset vlastností těla	Použití tohoto předmětu ti umožní nově přerozdělit svoje body vlastností těla (VTB). Takto můžeš dát vývoji tvojí postavy nový směr. S předmětem nelze obchodovat.
 76002	Vysušená hlava	Tato ďábelská vysušená hlava otevírá pečeť do třetího patra Ďáblovy katakomby. S předmětem nelze obchodovat.
-76003	Lektvar spěchu	Tento lektvar snižuje dobu obnovení kouzla o 20 procent během následujících třiceti minut. S předmětem nelze obchodovat.
+76003	Lektvar spěchu	Tento lektvar zkracuje dobu čekání na nabití schopností o 20 %.
 76004	Elixír Měsíce (M)	Automaticky doplní tvoje MB. Obsahuje 10.000 MB. S předmětem nelze obchodovat.
 76005	Elixír Měsíce (S)	Automaticky doplní tvoje MB. Obsahuje 300.000 MB. S předmětem nelze obchodovat.
 76006	Kompas kamene Metin	Kompas ti ukáže intenzitou šipky směr a vzdálenost nejbližšího kamene Metin. Čím více svítí, tím jsi blíže. Muže být aktivován šestkrát. S předmětem nelze obchodovat.
@@ -2593,10 +2593,10 @@
 76014	Začarovat předmět	Odebere bonusy z jednoho předmětu a přidá na něj nové. S předmětem nelze obchodovat.
 76015	Mramor požehnání	Legendární požehnaná koule. Když má předmět 4 atributy, přidá k nim ještě jeden další. S předmětem nelze obchodovat.
 76016	Požehnaný pergamen	Odstraní riziko, že se předmět při zlepšování rozbije. V tomto případě se sníží jeho kvalita o 1. S předmětem nelze obchodovat.
-76017	Lektvar útoku +10	Zvýší rychlost útoku na 30 minut o 10 %. S předmětem nelze obchodovat.
-76018	Lektvar útoku +15	Zvýší tvojí rychlost útoku na 30 minut o 15 %. S předmětem nelze obchodovat.
-76019	Propustka	Můžeš vstoupit na další úroveň pavoučího podzemí nebo do Pevnosti Červeného draka, když ukážeš tuto propustku příslušnému strážci. S předmětem nelze obchodovat.
-76020	Výzkumníkův elixír	Zvyšuje kvalitu zkoumaných věcí, které máte nasbírat, čímž zvyšuje šanci, že budou akceptovány. S předmětem nelze obchodovat.
+76017	Lektvar útoku +10	Zvýší rychlost útoku o 15 %.
+76018	Lektvar útoku +15	Zvýší rychlost útoku o 20 %.
+76019	Propustka	Pokud dáš tento lístek strážci, budete moci vstoupit do nového patra vybraného bludiště. S předmětem nelze obchodovat.
+76020	Výzkumníkův elixír	Zvyšuje kvalitu zkoumaných věcí, které máte nasbírat, čímž zvyšuje šanci, že budou akceptovány. Nefunguje na úkoly v Yohaře. S předmětem nelze obchodovat.
 76021	Elixír Slunce (M)	Automaticky doplní tvoje ZB. Obsahuje 100.000 ZB. S předmětem nelze obchodovat.
 76022	Elixír Slunce (S)	Automaticky doplní tvoje ZB. Obsahuje 3.000.000 ZB. S předmětem nelze obchodovat.
 76023	Zelené kouzlo	Odebere předměty z jednoho předmětu a přidá na něj nové. Lze jej použít pouze na zbraně a brnění do úrovně 40. S předmětem nelze obchodovat.

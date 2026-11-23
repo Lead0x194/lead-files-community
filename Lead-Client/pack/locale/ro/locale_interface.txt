@@ -1,8 +1,8 @@
-ACCEPT	Acceptă
+ACCEPT	OK
 ATTACH_METIN_INFO	Doreşti să utilizezi Piatra Spiritului?
 ATTACH_METIN_TITLE	Foloseşte Piatra Spiritului
 CANCEL	Anulare
-CHANGE_PASSWORD_CONFIRM	Confirmă noua parolă
+CHANGE_PASSWORD_CONFIRM	Confirmă Noua Parolă
 CHANGE_PASSWORD_NEW	Parolă nouă
 CHANGE_PASSWORD_OLD	Parolă veche
 CHANGE_PASSWORD_TITLE	Schimbare parolă
@@ -11,7 +11,7 @@ CHARACTER_MAIN	Caracter
 CHARACTER_MUTUAL_ACTION	Acţiuni interactive
 CHARACTER_NORMAL_ACTION	Acţiuni normale
 CHARACTER_QUEST	Misiuni
-CHARACTER_SKILL	Competenţe
+CHARACTER_SKILL	Abilitate
 CLOSE	Închide
 COSTUME_TITLE	Costume
 COSTUME_WINDOW_TITLE	Costume
@@ -51,19 +51,19 @@ EMPIRE_EXIT	Sfârşit
 EMPIRE_NEXT	Continuă
 EMPIRE_PREV	Înapoi
 EMPIRE_SELECT	Alege
-EXCHANGE_ACCEPT	Acceptă
+EXCHANGE_ACCEPT	OK
 EXCHANGE_TITLE	Negociază
 GAMEOPTION_TITLE	Opţiuni joc
 GAME_EXIT_OBSERVER	Închide modul spectator
 GAME_HELP	Ajutor
 GAME_QUEST	Sarcini
-GAME_SKILL_UP	Creşte competenţa
+GAME_SKILL_UP	Creşte Abilităţile
 GAME_STAT_UP	Creşte statusul
 GRADE	Clasa
 GRADE_SELECT	Clasa
 GUILD_BASENAME	Nume bază
 GUILD_BOARD_ID	Nume
-GUILD_BOARD_REFRESH	Actualizează (F5)
+GUILD_BOARD_REFRESH	Actualizează
 GUILD_BOARD_TEXT	Mesaj
 GUILD_BUILDING_CATEGORY_TITLE	Unităţi de construcţie
 GUILD_BUILDING_CHANGE	Schimbă
@@ -78,19 +78,19 @@ GUILD_BUILDING_PLY	Placaj
 GUILD_BUILDING_POSITION	Poziţie
 GUILD_BUILDING_PREVIEW	Preview
 GUILD_BUILDING_PRICE	Preţ
-GUILD_BUILDING_REFRESH	Actualizează (F5)
+GUILD_BUILDING_REFRESH	Actualizează
 GUILD_BUILDING_STONE	Piatră
 GUILD_BUILDING_TITLE	Construcţie casa breslei
 GUILD_CRYSTAL	Cristal
 GUILD_DROP_RESOURCE1	aici
 GUILD_DROP_RESOURCE2	Aruncă resursa
 GUILD_GEM	Piatră preţioasă
-GUILD_GRADE_CHANGE_GRADE_NAME	Nume nou rank
+GUILD_GRADE_CHANGE_GRADE_NAME	Nume rang nou
 GUILD_GRADE_NUM	Nr.
-GUILD_GRADE_PERMISSION_DELETE	Concediază
-GUILD_GRADE_PERMISSION_JOIN	Invită
-GUILD_GRADE_PERMISSION_NOTICE	Scrie
-GUILD_GRADE_PERMISSION_SKILL	Aptitudini
+GUILD_GRADE_PERMISSION_DELETE	Înlătură din breaslă
+GUILD_GRADE_PERMISSION_JOIN	Poate accepta jucători in breaslă
+GUILD_GRADE_PERMISSION_NOTICE	Poate compune mesaje breaslă
+GUILD_GRADE_PERMISSION_SKILL	Abilităţi breaslă
 GUILD_GRADE_RANK	Poziţie
 GUILD_GRADE_WRITE	Scrie
 GUILD_INFO	Informaţii breaslă
@@ -102,7 +102,7 @@ GUILD_INFO_LEVEL	Nivel breaslă
 GUILD_INFO_MASTER	Conducător
 GUILD_INFO_MASTER_VALUE	Conducător
 GUILD_INFO_MEMBER_AVG_LEVEL	Nivel mediu
-GUILD_INFO_MEMBER_NUM	Nr de membri
+GUILD_INFO_MEMBER_NUM	Nr de membrii
 GUILD_INFO_NAME	Nume breaslă
 GUILD_INFO_NAME_VALUE	Acesta este un nume de breaslă
 GUILD_INFO_OFFER_EXP	Invest.
@@ -111,12 +111,12 @@ GUILD_INFO_UPLOAD_MARK	Upload simbol
 GUILD_INFO_UPLOAD_SYMBOL	Upload steag
 GUILD_MARK	Simbol breaslă
 GUILD_MEMBER_JOB	Clasă
-GUILD_MEMBER_KNIGHT	Conducător
+GUILD_MEMBER_KNIGHT	Combatant
 GUILD_MEMBER_LEVEL	Nivel
 GUILD_MEMBER_NAME	Nume
 GUILD_MEMBER_RANK	Grad
 GUILD_MEMBER_SPECIFIC_GRAVITY	Investi.
-GUILD_METIN_STONE	Piatră stafie
+GUILD_METIN_STONE	Piatra Spiritului
 GUILD_MINENAL	Mineral
 GUILD_MONEY	Yang
 GUILD_NAME	Alianţă
@@ -136,12 +136,12 @@ GUILD_WAR_NORMAL	Câmp
 GUILD_WAR_WARP	Arena
 GUILD_WATER	Apă
 GUILD_WATER_STONE	Piatră acvatică
-HELP_ATTACK_KEY	Atac: buton stânga mouse sau space
-HELP_CHANGE_PK_MODE	Schimbare mod de atac: schimbă setările butonului stânga de la mouse.
+HELP_ATTACK_KEY	Atac: buton stînga mouse sau space
+HELP_CHANGE_PK_MODE	Schimbare mod de atac: schimbă setările butonului stînga de la mouse.
 HELP_CHARACTER_BUTTON1	(Fereastră caracter, Fereastră inventar,
 HELP_CHARACTER_BUTTON2	Lista prieteni şi Opţiuni)
-HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Perspectiva camerei poate fi ajustată cu butonul drept al mouselui
-HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Perspectiva camerei: butonul drept sau mijlociu de la mouse
+HELP_CONTROL_CAMERA_BY_MIDDLEBUTTON	Cameră Vedere Standard: butonul din mijloc al mouse-ului
+HELP_CONTROL_CAMERA_BY_RIGHTBUTTON	Cameră Vedere Alternativă: botonul drept sau stâng al mouse-ului
 HELP_EXP	Experienţă
 HELP_FURY	Magazin Obiecte în joc
 HELP_GUILD_WINDOW	Pentru a deschide fereastra breslei: ALT + G
@@ -160,7 +160,7 @@ HELP_OPEN_QUEST	Pentru a deschide fereastra cu sarcini: N
 HELP_OPEN_SKILL	Pentru a deschide fereastra pentru aptitudini: V
 HELP_OPEN_WHISPER	Pentru a deschide fereastra pentru şoaptă: SHIFT + ENTER
 HELP_OPEN_ZONEMAP	Pentru a deschide harta mare: M
-HELP_PICK_ITEM	Pentru a strânge itemurile: ^ sau apasă butonul stâng de la mouse
+HELP_PICK_ITEM	Adună Obiectele: `sau Z sau butonul stâng al mouse-ului
 HELP_QUICKSLOT	Câmp acces rapid
 HELP_SCREEN_CAPTURE	Pentru a salva screenshoturile: Print (se va salva în "Metin2\screenshot")
 HELP_SHOW_ALL_NAME	Afişează nume: ALT
@@ -168,8 +168,8 @@ HELP_SP	Puncte de mana (PM)
 HELP_SYSTEM_BUTTON	Taste Sistem
 INVENTORY_PAGE_BUTTON_TOOLTIP	{}. Inventar
 INVENTORY_TITLE	Inventar
-ITEM_MALL	Magazin Obiecte (Itemuri)
-LOAD_ERROR	Fişierul cu date este stricat. Instalează din nou clientul. Apasă acum tasta ESC.
+ITEM_MALL	Magazin de Obiecte
+LOAD_ERROR	Fişierul cu date este stricat. Instalează dinnou clientul. Apasă acum tasta ESC.
 LOGIN_CONNECT	Conectează
 LOGIN_CONNECTING	Conectarea la server rulează.
 LOGIN_DEFAULT_SERVERADDR	Nume server, Canal 1
@@ -178,12 +178,12 @@ LOGIN_SELECT_BUTTON	Alege
 LOGIN_SELECT_EXIT	Închide
 LOGIN_SELECT_TITLE	Alege server
 MALL_PASSWORD_TITLE	Parola
-MALL_TITLE	Depozit Item-Shop
+MALL_TITLE	Depozit Magazin Obiecte
 MARKLIST_REFRESH	Actualizează
 MARKLIST_TITLE	Înregistrează simbolul breslei
 MESSAGE	Acesta este un mesaj
 MESSENGER_ADD_FRIEND	Adaugă prieten
-MESSENGER_DELETE_FRIEND	Şterge prieten
+MESSENGER_DELETE_FRIEND	Şterge
 MESSENGER_OPEN_GUILD	Deschide fereastra breslei
 MESSENGER_TITLE	Prieteni
 MESSENGER_WHISPER	Şoaptă
@@ -191,7 +191,7 @@ MINIMIZE	Minimează
 MOUSEBUTTON_ATTACK	Atacă
 MOUSEBUTTON_AUTO_ATTACK	Atacă automat
 MOUSEBUTTON_CAMERA	Cameră
-MOUSEBUTTON_SKILL	Competenţe
+MOUSEBUTTON_SKILL	Abilităţi
 MUSICLIST_TITLE	Alege muzica
 OPTION_ALWAYS_SHOW_NAME	Nume
 OPTION_ALWAYS_SHOW_NAME_OFF	limitat
@@ -279,7 +279,7 @@ SELECT_SP	INT
 SHOP_BUY	Cumpără
 SHOP_SELL	Vinde
 SHOP_TITLE	Magazin
-SKILL_SUPPORT_TITLE	Competenţe standard
+SKILL_SUPPORT_TITLE	Abilităţi Standard
 STEP	Grad de claritate
 STEP_SELECT	Grad de claritate
 STRENGTH	Întărire

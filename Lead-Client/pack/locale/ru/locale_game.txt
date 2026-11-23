@@ -11,7 +11,7 @@ CANNOT_SHOOT_SELF_IN_SAFE	Я не могу сделать этого.
 CANNOT_SKILL_APPROACH	Я уверен, что не могу подойти ближе.
 CANNOT_SKILL_ATTACK	Я не могу атаковать.
 CANNOT_SKILL_DEST_IN_SAFE	Противник слишком далеко.
-CANNOT_SKILL_EQUIP_FISHING_ROD	Мне нужна удочка.
+CANNOT_SKILL_EQUIP_FISHING_ROD	Без выбранного удилища рыбы не поймать.
 CANNOT_SKILL_HAVE_TO_RIDE	Мне нужен конь, чтобы применить это.
 CANNOT_SKILL_NEED_EMPTY_BOTTLE	У меня нет пустого кувшина.
 CANNOT_SKILL_NEED_POISON_BOTTLE	У меня нет кувшина с ядом.
@@ -46,7 +46,7 @@ CHAT_INSULT_STRING	Фраза содержит недопустимые слов
 CHAT_LOG	Показывать все сообщения [L]
 CHAT_LOG_TITLE	Показать лог чата.
 CHAT_NORMAL	Норм.
-CHAT_NOTICE	Уведомление
+CHAT_NOTICE	Сервер
 CHAT_PARTY	Группа
 CHAT_SEND_CHAT	Отправить
 CHAT_SEND_MEMO	Шепнуть [Shift+Enter]
@@ -58,12 +58,12 @@ CREATE_EXIST_SAME_NAME	Персонаж с таким именем уже сущ
 CREATE_FAILURE	Создание персонажа невозможно.
 CREATE_GM_NAME	ГМ
 CREATE_INPUT_NAME	Введите имя.
-DAY	Дней
-DO_YOU_BUY_ITEM1	Хотите купить %s за %s?
-DO_YOU_BUY_ITEM2	Купить %s %s за %s?
+DAY	Д
+DO_YOU_BUY_ITEM1	Купить %s за %s янг?
+DO_YOU_BUY_ITEM2	Купить %s (%s шт.) за %s янг?
 DO_YOU_DROP_MONEY	Хотите выбросить %d янг?
-DO_YOU_SELL_ITEM1	Хотите продать %s за %s?
-DO_YOU_SELL_ITEM2	Хотите продать %s %s за %s ?
+DO_YOU_SELL_ITEM1	Продать %s за %s янг?
+DO_YOU_SELL_ITEM2	Продать %s (%s шт.) за %s янг?
 DRAGON_SOUL_CANNOT_REFINE	Улучшение этого Камня Дракона невозможно.
 DRAGON_SOUL_CANNOT_REFINE_MORE	Этот Камень Дракона уже достиг наивысшего уровня.
 DRAGON_SOUL_EQUIP_WARNING1	Удаление Камня Дракона, сложный процесс.
@@ -78,7 +78,7 @@ DRAGON_SOUL_STEP_LEVEL2	Чистота: прозрачный.
 DRAGON_SOUL_STEP_LEVEL3	Чистота: безупречный.
 DRAGON_SOUL_STEP_LEVEL4	Чистота: бриллиантовый.
 DRAGON_SOUL_STEP_LEVEL5	Чистота: великолепный.
-DRAGON_SOUL_STRENGTH	Уровень: +%d 	SA
+DRAGON_SOUL_STRENGTH	Уровень: +%d	SA
 DRAGON_SOUL_UNEQUIP_WARNING1	Камень Дракона может быть уничтожен.
 DRAGON_SOUL_UNEQUIP_WARNING2	И все же вы желаете попробовать?
 DRAGON_SOUL_UNMATCHED_SLOT	Это не та ячейка.
@@ -144,7 +144,7 @@ GUILDMARK_UPLOADER_ERROR_64_WIDTH	Ширина изображения не 64 п
 GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	Игра не поддерживает данное изображение.
 GUILDMARK_UPLOADER_ERROR_PATH	Скопируйте файлы в папку metin2/upload.
 GUILDMARK_UPLOADER_ERROR_SELECT	Файл изображения не выбран.
-GUILDWAR_CTF_TITLE	Флаг захвачен.
+GUILDWAR_CTF_TITLE	Сражение за флаги
 GUILDWAR_NORMAL_TITLE	Поле битвы
 GUILDWAR_WARP_TITLE	Арена войны гильдий
 GUILD_BUILDING_GRADE	Ранг
@@ -170,11 +170,11 @@ GUILD_NO_NOTICE_PERMISSION	Вы не вправе делать уведомле�
 GUILD_OBJECT	Объекты
 GUILD_OFFER_EXP	Инвестировать опыт
 GUILD_SHORT_EXP	Недостаточно опыта
-GUILD_TILE_BASEINFO	Базовая информация
-GUILD_TILE_BOARD	Плитка
+GUILD_TILE_BASEINFO	Информация о земле
+GUILD_TILE_BOARD	Заметки гильдии
 GUILD_TILE_GRADE	Управление позицией
 GUILD_TILE_INFO	Гильдия-инфо
-GUILD_TILE_MEMBER	Члены гильдии
+GUILD_TILE_MEMBER	Участники
 GUILD_TILE_SKILL	Навыки гильдии
 GUILD_WAR_LIMIT_30MIN	Время: 30 минут
 GUILD_WAR_REWARD_POTION	Награда: победитель получает зелье
@@ -192,7 +192,7 @@ HORSE_HEALTH3	перегружен
 HORSE_LEVEL1	Обычный конь
 HORSE_LEVEL2	Броневой конь
 HORSE_LEVEL3	Боевой конь
-HOUR	Час.
+HOUR	Ч.
 HOW_MANY_ITEM_DO_YOU_DROP1	Хотите выбросить %s?
 HOW_MANY_ITEM_DO_YOU_DROP2	Хотите выбросить %s %d ?
 INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Введите код удаления из управления учётной записью.
@@ -205,16 +205,16 @@ JOB_WARRIOR	Воин
 LEFT_TIME	Остав.время
 LOGIN_CONNECT_FAILURE	Ошибка при соединении с сервером.
 LOGIN_CONNECT_SUCCESS	Вы соединены с сервером.
-LOGIN_CONNETING	Происходит соединение с сервером...
-LOGIN_FAILURE_ALREAY	Ваша учётная запись  уже соединена.
+LOGIN_CONNETING	Подождите. Идет соединение с сервером.
+LOGIN_FAILURE_ALREAY	Ваш аккаунт уже подключен.
 LOGIN_FAILURE_BE_SAME_KEY	Проблема с регистрацией
-LOGIN_FAILURE_BLOCK_ID	Учетная запись заблокирована.
-LOGIN_FAILURE_BLOCK_LOGIN	Выберите другой сервер!
-LOGIN_FAILURE_NOBILL	В вашей учётной записи нет игрового времени.
-LOGIN_FAILURE_NOT_AVAIL	Учётная запись недоступна.
+LOGIN_FAILURE_BLOCK_ID	Ваш аккаунт заблокирован.
+LOGIN_FAILURE_BLOCK_LOGIN	Закрытый сервер: Выберите другой сервер!
+LOGIN_FAILURE_NOBILL	На вашем аккаунте нет игрового времени.
+LOGIN_FAILURE_NOT_AVAIL	Аккаунт недоступен.
 LOGIN_FAILURE_NOT_EXIST_ID	Неверное имя или пароль.
-LOGIN_FAILURE_REPAIR_ID	Предметы для данного учётной записи  сейчас восстанавливаются.
-LOGIN_FAILURE_SAMELOGIN	Кто-то зашел на ваш аккаунт.
+LOGIN_FAILURE_REPAIR_ID	Предметы для этого аккаунта восстанавливаются.
+LOGIN_FAILURE_SAMELOGIN	Кто-то подключился через ваш аккаунт.
 LOGIN_FAILURE_SHUTDOWN	Сервер пока ещё закрыт.
 LOGIN_FAILURE_TOO_MANY_USER	В соединении отказано. Сервер переполнен.
 LOGIN_FAILURE_UNKNOWN	Регистрация  не состоялась по неизвестным причинам.
@@ -278,7 +278,7 @@ NOT_YET_SUPPORT	Не поддерживается.
 OPTION_PVPMODE_CANNOT_SET_GUILD_MODE	Вы не можете активировать режим Гильдии, пока не являетесь её членом.
 OPTION_PVPMODE_NOT_SUPPORT	Вы не можете выбрать режим PvP.
 OPTION_PVPMODE_PROTECT	Чтобы использовать PvP Режим, нужно достигнуть хотя бы уровень %d.
-PARTY_BONUS_ATTACKER	Атака: +%d	SA
+PARTY_BONUS_ATTACKER	Показатель атаки: +%d	SA
 PARTY_BONUS_BERSERKER	Скорость атаки: +%d	SA
 PARTY_BONUS_BUFFER	Продолжительность действия навыков: +%d	SA
 PARTY_BONUS_DEFENDER	Защита: +%d	SA
@@ -287,7 +287,7 @@ PARTY_BONUS_SKILL_MASTER	Макс. МП: +%d	SA
 PARTY_BONUS_TANKER	Макс. ХП: +%d	SA
 PARTY_BREAK_UP	Ликвидировать группу
 PARTY_DO_YOU_ACCEPT	---LOCA::SPACE--хотел бы присоединиться к группе.
-PARTY_DO_YOU_JOIN	 пригласил вас в группу. Принять приглашение?
+PARTY_DO_YOU_JOIN	 пригласил(а) вас в группу. Принять приглашение?
 PARTY_EXP_DISTRIBUTION_MODE	Распределение опыта
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL	В зависимости от уровня
 PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Участники группы с более высоким уровнем получают больше опыта.
@@ -307,7 +307,7 @@ PARTY_SET_DEFENDER	Определить Защитником.
 PARTY_SET_NORMAL	Отменить установку.
 PARTY_SET_SKILL_MASTER	Определить  Мастером навыков.
 PARTY_SET_TANKER	Определить Бойцом ближнего боя.
-PARTY_SKILL_ATTACKER	Базовый показатель Боец атаки +%.0f
+PARTY_SKILL_ATTACKER	Базовый показатель атаки Нападающий +%.0f
 PARTY_SKILL_BERSERKER	Скорость атаки Берсеркер +%.0f
 PARTY_SKILL_BUFFER	Длительность навыка Блокирущий +%.0f
 PARTY_SKILL_DEFENDER	Защита Защитник +%.0f
@@ -348,8 +348,8 @@ QUICKSLOT_REGISTER_DISABLE_ITEM	Этот предмет не может быть
 RECEIVE_MESSAGE	%s отправил вам сообщение.
 REFINE_COST	Затраты на улучшение: %s
 REFINE_DESTROY_WARNING	Вероятность разрушения предмета при его улучшении.
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Это повышает вероятность улучшения,
-REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	но в случае неудачи предмет будет разрушен. Вы уверенны, что хотите продолжить?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Вы точно хотите улучшить предмет?
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	В случае неудачи предмет будет разрушен. Хотите продолжить?
 REFINE_DOWN_GRADE_WARNING	Вероятность потери некоторых свойств предмета при попытке его улучшить.
 REFINE_DO_YOU_SEPARATE_METIN	Вы хотите удалить Камень духа?
 REFINE_FAILURE	Да уж, не сработало. Мы не справились.
@@ -364,7 +364,7 @@ REFINE_FAILURE_SOCKET_DISABLE_ITEM	Добавление ячеек к этому
 REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Этот предмет нельзя улучшить.
 REFINE_SUCCESS	Улучшение предмета прошло успешно.
 REFINE_SUCCESS_PROBALITY	Шанс на улучшение: %d%%
-REFINE_WARNING2	Продолжить?
+REFINE_WARNING2	Хотите продолжить улучшение?
 SAFEBOX_ERROR	Введён неверный пароль.
 SAFEBOX_SELL_DISABLE_SAFEITEM	Продажа сохраннёных предметов невозможна.
 SAFEBOX_WRONG_PASSWORD	Пароли должны быть идентичными.
@@ -378,7 +378,7 @@ SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	Персонаж с таким имен
 SELECT_CHANGE_FAILURE_STRANGE_INDEX	Попробуйте еще раз.
 SELECT_CHANGE_FAILURE_STRANGE_NAME	Это неверное имя персонажа.
 SELECT_CHANGE_NAME_TITLE	Изменить имя персонажа.
-SELECT_DELEING	Персонаж будет удалён
+SELECT_DELEING	Удаление запускается...
 SELECT_DELETED	Удаление прошло успешно.
 SELECT_DO_YOU_DELETE_REALLY	Продолжить?
 SELECT_EMPTY_SLOT	Это пустое поле.
@@ -389,7 +389,7 @@ SHOP_CANNOT_SELL_ITEM	Этот предмет не продаётся.
 SHOP_ERROR_UNKNOWN	Неизвестная ошибка магазина: %s
 SHOP_INVALID_POS	Применить этот предмет невозможно.
 SHOP_INVENTORY_FULL	В инвентаре нет свободного места.
-SHOP_NOT_ENOUGH_MONEY	Недостаточно янг.
+SHOP_NOT_ENOUGH_MONEY	Недостаточно вон или янг
 SHOP_NOT_ENOUGH_MONEY_EX	У вас недостаточно янг.
 SHOP_SELL_INFO	Выберите в окне инвентаря предмет, который хотите продать.
 SHOP_SOLDOUT	Продано
@@ -530,7 +530,7 @@ TOOLTIP_APPLY_RESIST_SWORD	Защита от удара мечом %d%%	SA
 TOOLTIP_APPLY_RESIST_TWOHAND	Защита от двуручного оружия %d%%	SA
 TOOLTIP_APPLY_RESIST_WARRIOR	Шансы на отражение атак Воинов %d%%	SA
 TOOLTIP_APPLY_RESIST_WIND	Сопротивляемость ветру %d%%	SA
-TOOLTIP_APPLY_SKILL_BOOK_BONUS	Шансы при обучении по книгам увеличены в 2,5 раза.	SNA
+TOOLTIP_APPLY_SKILL_BOOK_BONUS	Шансы при обучении по книгам увеличены в 2,5 раза	SNA
 TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	Если обучение не удалось, Вы можете тут же попробовать еще раз.	SNA
 TOOLTIP_APPLY_SLOW_PCT	Шансы на замедление: %d%%	SA
 TOOLTIP_APPLY_STEAL_HP	Урон %d%% добавляется к ХП.	SA
@@ -545,15 +545,15 @@ TOOLTIP_AUTO_POTION_HP	Эликсир солнца
 TOOLTIP_AUTO_POTION_REST	Остаток: %.2f%%
 TOOLTIP_AUTO_POTION_SP	Эликсир луны
 TOOLTIP_AUTO_POTION_USING	Активен
-TOOLTIP_BOW_DISTANCE	Диапазон стрельбы +%dm	SA
+TOOLTIP_BOW_DISTANCE	Радиус действия +%dm	SA
 TOOLTIP_BUYPRICE	Цена: %s
 TOOLTIP_CAST_SPEED	Скорость заклинания +%d%%	SA
 TOOLTIP_CON	Здоровье +%d	SA
 TOOLTIP_COSTUME_ATTR_BONUS	Бонус костюма %d%%	SA
 TOOLTIP_DEF_GRADE	Защита +%d	SA
 TOOLTIP_DEX	Подвижность+%d	SA
-TOOLTIP_DRAGON_SOUL_DECK1	Земля	SNA
-TOOLTIP_DRAGON_SOUL_DECK2	Небеса	SNA
+TOOLTIP_DRAGON_SOUL_DECK1	Небеса	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Земля	SNA
 TOOLTIP_EAR	Серьги
 TOOLTIP_ENERGY	Энергия %d	SA
 TOOLTIP_FISHINGROD_EXP	Очки: %d / %d
@@ -588,17 +588,17 @@ TOOLTIP_MAGIC_ATTBONUS_PER	Магическая атака +%d%%	SA
 TOOLTIP_MAGIC_ATT_GRADE	Показатель магической атаки +%d	SA
 TOOLTIP_MAGIC_DEF_GRADE	Магическая защита +%d	SA
 TOOLTIP_MALL_ATTBONUS	Показатель атаки +%d%%	SA
-TOOLTIP_MALL_ATTBONUS_STATIC	Показатель атаки +12~15%	SNA
+TOOLTIP_MALL_ATTBONUS_STATIC	Показатель атаки	SNA
 TOOLTIP_MALL_AUTOLOOT	Янг принимается автом.	SNA
 TOOLTIP_MALL_DEFBONUS	Защита +%d%%	SA
-TOOLTIP_MALL_DEFBONUS_STATIC	Защита +12~15%	SNA
+TOOLTIP_MALL_DEFBONUS_STATIC	Защита	SNA
 TOOLTIP_MALL_EXPBONUS	Опыт +%d%%	SA
 TOOLTIP_MALL_EXPBONUS_STATIC	на 50% больше опыта	SNA
 TOOLTIP_MALL_FISH_MIND	Повышенный шанс поймать рыбу.	SNA
 TOOLTIP_MALL_GOLDBONUS	Шансы на выпадение янг (%.1f)	SA
 TOOLTIP_MALL_GOLDBONUS_STATIC	Удвоенные шансы на выпадение янг	SNA
 TOOLTIP_MALL_ITEMBONUS	Шансы на выпадение предметов (%.1f)	SA
-TOOLTIP_MALL_ITEMBONUS_STATIC	Удвоенные шансы на выпадение предметов	SNA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Шанс на выпадение предметов увеличен на 200%.	SNA
 TOOLTIP_MALL_MARRIAGE_FAST	Очки любви возрастают быстрее.	SNA
 TOOLTIP_MALL_SAFEBOX	В вашем распоряжении больше складских помещений.	SNA
 TOOLTIP_MAX_HP	Максим. ХП +%d	SA
@@ -638,7 +638,7 @@ TOOLTIP_POTION_SEC	Сек.
 TOOLTIP_POTION_TIME	Длительность:
 TOOLTIP_REQUIREMENT_SKILL_LEVEL	%s уровень %d обязателен.
 TOOLTIP_REQUIREMENT_STAT_LEVEL	%s %d обязателен
-TOOLTIP_RESIST_BOW	Сопротивляемость стрелам %d%%	SA
+TOOLTIP_RESIST_BOW	Защита от стрел %d%%	SA
 TOOLTIP_RESIST_DARK	Сопротивление темноте +%d%%	SA
 TOOLTIP_RESIST_EARTH	Сопротивление земле +%d%%	SA
 TOOLTIP_RESIST_ELEC	Сопротивляемость молниям %d%%	SA
@@ -663,7 +663,7 @@ TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Сопротивляемость физиче
 TOOLTIP_SKILL_COOL_TIME	Время загрузки: 
 TOOLTIP_SKILL_DAMAGE_BONUS	Урон навыков %d%%	SA
 TOOLTIP_SKILL_DEFEND_BONUS	Сопротивляемость урону навыков %d%%	SA
-TOOLTIP_SKILL_DURATION	Длительность: %d Сек.
+TOOLTIP_SKILL_DURATION	Длительность: %d сек.
 TOOLTIP_SKILL_FORGET_BOOK_NAME	Лента забвения
 TOOLTIP_SKILL_LEVEL	Актуальный уровень: %d
 TOOLTIP_SKILL_LEVEL_MASTER	Актуальный уровень: %d (Мастер)

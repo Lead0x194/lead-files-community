@@ -1,7 +1,7 @@
 1	Queres combater contra ti mesmo?[ENTER]Faz como quiseres, mas não precisas de uma Arena[ENTER]para isso.[ENTER]Volta quando quiseres levar isto a sério.
 2	Começar Combate
 3	O teu parceiro de treino ainda não chegou ao[ENTER]nível requerido: %s. Peço desculpa, mas não posso[ENTER]permitir este combate.
-4	Para completar o acordo de combate, %s tem de vir[ENTER]ter comigo.
+4	Foi definido um acordo de combate de treino. %s também tem de vir ter comigo.
 5	De momento, %s está num combate de treino.
 6	Decisão
 7	%s não quer participar num combate de treino[ENTER]contigo.
@@ -21,7 +21,7 @@
 21	Não sabes com quem queres lutar? Se não me podes[ENTER]dar um nome, não poderei registar-te.
 22	Ok, %s. Inscreveste-te num combate de treino contra %s.
 23	%s está à espera que %s aceite o desafio.
-24	%s, estás pronto para um combate de treino contra[ENTER]%s?
+24	%s, queres combater em treino contra %s agora?
 25	%s não está ligado de momento. Tenta novamente[ENTER]mais tarde ou combina de novo com o teu parceiro[ENTER]de treino!
 26	Eu quero melhorar algo
 27	Ferreiro:
@@ -691,7 +691,7 @@
 700	Encontras-te agora selado no 3º Andar. Várias[ENTER]Pedras Metin estão aqui para te confundir, mas[ENTER]uma delas é verdadeira. Tens de destruí-la em 15[ENTER]minutos ou não poderás passar para o próximo[ENTER]andar.
 701	Faltam 10 minutos.
 702	Faltam 5 minutos.
-703	Acabou o tempo!
+703	O tempo terminou.
 704	A Pedra Metin falsa desaparece...
 705	Quero matar o dragão!
 706	Não és o primeiro que exige entrar. Diz-me o[ENTER]número secreto, caso contrário eu não te irei[ENTER]deixar entrar!
@@ -702,7 +702,7 @@
 711	Ok, irei agora escrever o código:
 712	O código só poderá conter números.
 713	O grupo de %s está a tentar matar Beran-Setaou!
-714	Não tens chaves suficientes! Para activar o[ENTER]portal, preciso de
+714	Não tens chaves suficientes! Para ativar o[ENTER]portal, preciso de 3x
 715	Podes obter nos líderes maléficos Yonghan e[ENTER]Huashin.
 716	Quero sair daqui
 717	Eu levo-te novamente à entrada da Gruta das Almas.
@@ -1988,7 +1988,7 @@
 2065	.
 2066	Nada (fechar janela)
 2067	Alimentar
-2068	O que queres fazer com o Cavalo?
+2068	O que pretendes fazer com o teu cavalo?
 2069	Ressuscitar
 2070	Montar
 2071	Consultar Estado
@@ -3627,7 +3627,7 @@
 3706	%d dia(s) e %d hrs.
 3707	%d minuto(s) e %d segundo(s)
 3708	%d minuto(s) e %d segundo(s)
-3709	%d segundo(s)
+3709	%d seg.
 3710	Mulher
 3711	Devias ter mais respeito pelos mais velhos.[ENTER]Ainda assim, desejo-te o melhor para este novo[ENTER]ano.
 3712	Feliz Ano Novo!
@@ -5019,7 +5019,7 @@
 5110	O Almirante Angmur está à tua espera.
 5111	A capa! Sabia que o ias conseguir. Iremos[ENTER]pendurá-la perto do seu acampamento para que eles[ENTER]a consigam ver - isso irá desconcertar o Gang dos[ENTER]Ladrões Rubros. Os meus companheiros irão tratar[ENTER]disso. Dessa forma poderás ter algum tempo para[ENTER]recuperar.
 5112	Enfraquece os Ciclopes
-5113	O Almirante Angmur gostaria de falar contigo.
+5113	O Almirante Angmur quer falar contigo.
 5114	O nosso plano está a funcionar: quando os Ladrões[ENTER]Rubros viram a capa, houve um grande distúrbio.[ENTER]No fim, os demónios e os humanos acabaram a lutar[ENTER]uns com os outros. Agora esse Gang encontra-se[ENTER]completamente desorganizado. De seguida, temos os[ENTER]Ciclopes.
 5115	Como vamos proceder?
 5116	Os Ciclopes veneram o seu líder. Se eliminarmos o[ENTER]esquadrão de liderança, os Ciclopes irão entrar[ENTER]em pânico e dispersar. Derrota o General Outis %d[ENTER]vezes, o Arges %d vezes e o Polyphemos %d vezes.
@@ -5150,7 +5150,7 @@
 5242	(Em falta: %s %s, %s %s)
 5243	%s : %d
 5244	Evitar a Maldição
-5245	O Almirante Angmur gostaria de falar contigo.
+5245	O Almirante Angmur quer falar contigo.
 5246	Ainda bem que aqui estás. Descobrimos uma forma[ENTER]de sabotar os planos dos Servos e da Banshee.
 5247	Para que as almas dos mortos possam abandonar os[ENTER]seus corpos é necessário um medium. Este medium é[ENTER]o Terreno Sagrado, que os Gigantes andam a[ENTER]armazenar em sacos.[ENTER]Se fores capaz de roubar 100 sacos, poderemos[ENTER]conseguir evitar a Maldição da Vida.
 5248	Vou pôr-me já a caminho!
@@ -6897,7 +6897,7 @@
 7073	O que te traz aqui? Oh, o Sr. Soon enviou-te?[ENTER]Todos os dias ele desaparece com os seus livros e[ENTER]pergaminhos, mas não parece estar a ficar mais[ENTER]inteligente. E está sempre a incomodar-me.[ENTER]Bom, vamos lá ouvir o que ele quer desta vez!
 7074	Ele quer que eu ordene os Leques de acordo com o[ENTER]seu Valor de Ataque? Isso é bastante simples: Ave[ENTER]do Paraíso, Triplo, Aquático, Asa de Grou.[ENTER]Apanhaste?
 7075	Regressa ao Soon
-7076	Regressa ao Sr. Soon
+7076	Regressar ao Sr. Soon
 7077	Regressa ao Sr. Soon e passa-lhe a informação.
 7078	Favor para o Sr. Soon
 7079	Então... O Uriel deu-te a resposta?
@@ -6991,7 +6991,7 @@
 7171	Recebeste uma Armadura da Desgraça+3.
 7172	Recebeste um Robe Cor-de-Rosa+3.
 7173	Aceitar
-7174	Recusar
+7174	Não, é melhor não.
 7175	Irás fazê-lo mais tarde? Então regressa[ENTER]brevemente, esta missão é urgente!
 7176	Espera um segundo. Quero certificar-me que este é[ENTER]o Livro certo... Hum, sim, é realmente[ENTER]fantástico. Irei definitivamente cozinhar estes[ENTER]pratos! Obrigado!
 7177	O melhor Livro de Culinária
@@ -7487,7 +7487,7 @@
 7667	Exactamente! Porque não me dás uma ajuda? Porque[ENTER]não vais colher as Flores por mim? Seria óptimo[ENTER]para ambos.[ENTER]O quê? Isto não era parte do negócio? Vá lá, não[ENTER]vês quanto me estou a esforçar para conseguir o[ENTER]seu amor? Anda lá, ajuda-me! Irei recompensar-te[ENTER]com bastante Yang!
 7668	Recusar
 7669	Oh, minha querida Ariyoung
-7670	Queres desistir desta Missão?
+7670	Queres desistir da missão?
 7671	Raios! Como é que eu vou conseguir essas Flores[ENTER]agora?[ENTER]Por favor, volta se mudares de ideias.
 7672	Nunca amaste alguém? Tens ideia do que sinto pela[ENTER]Ariyoung? Oh, Ariyoung...
 7673	Muito obrigado! Por favor traz-me essas Flores.
@@ -7658,7 +7658,7 @@
 7838	Olá, tens um minuto para mim?[ENTER]Estou muito agradecido por me teres ajudado a[ENTER]forjar uma nova arma. Mas agora preciso de te[ENTER]pedir um favor mais uma vez. Desta vez quero[ENTER]fazer novas armaduras. Depois de ter forjado uma[ENTER]nova arma é óbvio que também preciso de fazer uma[ENTER]nova armadura.
 7839	É claro que irei precisar de materiais para fazer[ENTER]a nova armadura. Podes recolhê-los por mim?[ENTER]Como recompensa irei dar-te a primeira armadura[ENTER]que completar.[ENTER]Desta vez preciso de 100 unidades de Minério de[ENTER]Cobre, 100 unidades de Minério de Ébano e 100[ENTER]unidades de Peça de Pérola. Já deverias sabê-lo.[ENTER]Desejo-te sucesso!
 7840	Aceitar
-7841	Queres desistir desta Missão?
+7841	Queres desistir da missão?
 7842	Porque estás a hesitar? Regressa quando estiveres[ENTER]pronto para recolher os Minérios.
 7843	Tão pouca quantidade de Minério não é um pedido[ENTER]muito grande.[ENTER]Bom, faz como entenderes. Vai-te embora!
 7844	Vais ajudar-me de novo? És uma boa pessoa.[ENTER]E não te preocupes: a primeira armadura é tua!
@@ -7832,7 +7832,7 @@
 8012	O Soon enviou-me...
 8013	Hey! Vieste ajudar-me de novo?[ENTER]Ahh. Queres o livro que o Sr. Soon me encomendou.[ENTER]Eu iria acabar por passar pela vila dele, mas ele[ENTER]é demasiado impaciente e até envia outros para ir[ENTER]buscar o que encomendou.[ENTER]Hmm. Aqui o tens. Eu não entendo o que o Soon[ENTER]gosta nesses montes de papeis. É mais importante[ENTER]ganhar Yang rapidamente!
 8014	Regressa ao Sr. Soon
-8015	Regressa ao Sr. Soon
+8015	Regressar ao Sr. Soon
 8016	Recebeste o livro do Sr. Soon do Vendedor[ENTER]Ambulante. Regressa ao Sr. Soon para lhe[ENTER]entregares o livro e ele te dizer como produzir[ENTER]Porcelana Celadon.
 8017	Tenho o livro
 8018	Yay! Finalmente já tenho o livro novo! Muito[ENTER]obrigado. Não existem muitos livros que eu ainda[ENTER]não tenha lido...[ENTER]Eu escrevi tudo o que era mais importante para[ENTER]fazer a Porcelana Celadon. Segue as minhas[ENTER]instruções e vais produzir uma fantástica[ENTER]porcelana.[ENTER]E agora é tempo de eu ler o novo livro. Até à[ENTER]próxima.
@@ -7917,7 +7917,7 @@
 8097	Entregas o Remédio ao Traidor Balso.
 8098	O Remédio do Traidor Balso
 8099	O Baek-Go fez um Remédio que pode criar diversas[ENTER]doenças raras a partir da Erva Azul. Leva-o ao[ENTER]Traidor Balso que se encontra na próxima vila.
-8100	Queres desistir desta Missão?
+8100	Queres desistir da missão?
 8101	Aqui tens o Remédio
 8102	Estás a trazer-me o novo Remédio? Houve[ENTER]progressos nas investigações médicas? Desculpa[ENTER]por te dar tanto trabalho. Devia ter pedido[ENTER]conselhos a um médico logo quando adoeci. No[ENTER]entanto tenho de aceitar que agora preciso de[ENTER]tomar este Remédio.
 8103	Obrigado por ajudares a curar a minha miserável[ENTER]doença. Não tenho muitos amigos.[ENTER]Toma, não é muito, mas é oferecido do meu[ENTER]coração. Por favor aceita. Se conseguir[ENTER]sobreviver nunca te irei esquecer.
@@ -8045,7 +8045,7 @@
 8226	Aceitar
 8227	Taurean deu-te uma recompensa por teres ajudado[ENTER]na mentira: Recebeste 30.000 Yang.
 8228	Recebeste 700.000 Pontos de Experiência.
-8229	Queres desistir desta Missão?
+8229	Queres desistir da missão?
 8230	Porque não? Tens medo?[ENTER]Vem ter comigo quando mudares de ideias.
 8231	Aaah, estás com medo?[ENTER]Mas tu és muito maior e mais forte que eu![ENTER]Haha, és um cobarde! Então vou ter de pedir a[ENTER]outro.
 8232	As aranhas vivem no deserto. Tu és forte. Eu sei[ENTER]que vais conseguir. Boa sorte!
@@ -8087,14 +8087,14 @@
 8268	Podes obter a Areia do Deserto dos Bandidos do[ENTER]Deserto, o Minério de Cristal dos Veios de[ENTER]Cristal e para o Sangue de Macaco terás de matar[ENTER]macacos na Caverna dos Macacos Difíceis.[ENTER]Podes arranjar-me estes materiais? Sei que não[ENTER]será fácil, mas irei dar-te uma recompensa[ENTER]generosa.
 8269	Aceitar
 8270	Recusar
-8271	Queres desistir desta Missão?
+8271	Queres desistir da missão?
 8272	Se estás demasiado ocupado de momento, volta mais[ENTER]tarde.
 8273	Estás a desistir? A sério? Parece que tenho de[ENTER]procurar os materiais por mim mesmo. Preciso[ENTER]mesmo desta Porcelana. Adeus e boa sorte.
 8274	Ah! É isso.
 8276	Capitão
 8277	Não sei.
 8278	Mostra-me de novo.
-8279	Queres desistir desta Missão?
+8279	Queres desistir da missão?
 8280	Pensa de novo e volta mais tarde. Mas não contes[ENTER]isto a outros!
 8281	Oh meu Deus! É assim tão difícil? Eras a minha[ENTER]última esperança... E agora quem o irá decifrar?
 8282	Ok, mas despacha-te. Caso contrário alguém vai[ENTER]começar a suspeitar de algo:[ENTER][ENTER]Imoginis[ENTER]on[ENTER]enothizor
@@ -8123,7 +8123,7 @@
 8306	Sim, está certo! Agora também já compreendo.[ENTER]Tenho orgulho em ti. És um dos nossos melhores[ENTER]soldados![ENTER]Esta frase é uma palavra-passe combinada.[ENTER]Significa que o Yu-Hwan encontrou espiões[ENTER]inimigos e que precisamos de tomar acções contra[ENTER]eles. Irei dar as ordens imediatamente.
 8307	Recebeste 20.000 Yang.
 8308	Tu irás descobrir. Volta quando estiveres pronto!
-8309	Queres desistir desta Missão?
+8309	Queres desistir da missão?
 8310	Mas tu conseguiste fazê-lo da última vez. Porque[ENTER]estás a hesitar agora? Pensa melhor.
 8311	Percebo o que queres dizer.[ENTER]Não queres trabalhar mais connosco, não é?[ENTER]É uma pena. Não há muitos guerreiros corajosos.
 8312	Oh! És a minha salvação! Vê, este é o código. Dá[ENTER]uma boa vista de olhos!
@@ -8173,7 +8173,7 @@
 8356	Porque perguntas? O Taurean e a Harang andam a[ENTER]discutir? Isso não é novidade. Mas a Harang tem[ENTER]razão. O Bingsu é algo extremamente popular em[ENTER]Verões quentes. O Taurean é um bom rapaz, mesmo[ENTER]que por vezes seja um pouco picuinhas. Se me[ENTER]arranjares os ingredientes poderei fazer Bingsu[ENTER]para ele.
 8357	Bingsu?
 8358	Gostaria de dar um presente ao Taurean e dar-lhe[ENTER]Bingsu. O que achas? Podes arranjar-me Peças de[ENTER]Gelo da Montanha Sohan?
-8359	Queres desistir desta Missão?
+8359	Queres desistir da missão?
 8360	Não gostas de gelado? Ou já comeste demasiado? É[ENTER]para o Taurean, por isso por favor pensa melhor[ENTER]nisso.
 8361	Que pena. O Taurean vai ficar muito desapontado.[ENTER]Adeus.
 8362	Muito bem. Preciso de Peças de Gelo que podes[ENTER]obter dos Gelos Encantados na Montanha Sohan.[ENTER]Traz-me 50 Peças de Gelo. Depois poderei fazer o[ENTER]delicioso Bingsu.
