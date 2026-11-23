@@ -725,19 +725,6 @@ bool LoadLocaleData(const char* localePath)
 		Tracenf("CPythonApplication - CPythonNetworkStream::LoadInsultList(%s)", szInsultList);				
 	}
 
-	if (LocaleService_IsYMIR())
-	{	
-		char szEmpireTextConvFile[256];
-		for (DWORD dwEmpireID=1; dwEmpireID<=3; ++dwEmpireID)
-		{			
-			sprintf_s(szEmpireTextConvFile, sizeof(szEmpireTextConvFile), "%s/lang%d.cvt", localePath, dwEmpireID);
-			if (!rkNetStream.LoadConvertTable(dwEmpireID, szEmpireTextConvFile))
-			{
-				TraceError("LoadLocaleData - CPythonNetworkStream::LoadConvertTable(%d, %s) FAILURE", dwEmpireID, szEmpireTextConvFile);			
-			}
-		}
-	}
-
 	NANOEND
 		return true;
 }
@@ -778,7 +765,7 @@ bool CPythonApplication::Create(PyObject * poSelf, const char * c_szName, int wi
 	// It's full screen mode
 	// Use the default IME or the European version
 	// Use Windows full screen mode
-	if (!m_pySystem.IsWindowed() && (m_pySystem.IsUseDefaultIME() || LocaleService_IsEUROPE()))
+	if (!m_pySystem.IsWindowed())
 	{
 		m_isWindowed = false;
 		m_isWindowFullScreenEnable = TRUE;

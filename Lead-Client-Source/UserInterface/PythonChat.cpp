@@ -702,11 +702,7 @@ void CWhisper::AppendChat(int iType, const char * c_szChat)
 	// DEFAULT_FONT
 	//static CResource * s_pResource = CResourceManager::Instance().GetResourcePointer(g_strDefaultFontName.c_str());
 
-#if defined(LOCALE_SERVICE_YMIR) || defined(LOCALE_SERVICE_JAPAN) || defined(LOCALE_SERVICE_HONGKONG) || defined(LOCALE_SERVICE_TAIWAN) 
-	CGraphicText* pkDefaultFont = static_cast<CGraphicText*>(DefaultFont_GetResource());
-#else
 	CGraphicText* pkDefaultFont = (iType == CPythonChat::WHISPER_TYPE_GM) ? static_cast<CGraphicText*>(DefaultItalicFont_GetResource()) : static_cast<CGraphicText*>(DefaultFont_GetResource());
-#endif
 
 	if (!pkDefaultFont)
 	{

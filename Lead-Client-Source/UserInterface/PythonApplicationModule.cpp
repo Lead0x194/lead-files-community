@@ -221,21 +221,6 @@ PyObject* appGetLocaleServiceName(PyObject* poSelf, PyObject* poArgs)
 // 
 bool LoadLocaleData(const char* localePath);
 
-PyObject* appSetCHEONMA(PyObject* poSelf, PyObject* poArgs)
-{
-	int enable;
-	if (!PyTuple_GetInteger(poArgs, 0, &enable))
-		return Py_BuildException();
-	
-	LocaleService_SetCHEONMA(enable ? true : false);
-	return Py_BuildNone();
-}
-
-PyObject* appIsCHEONMA(PyObject* poSelf, PyObject* poArgs)
-{
-	return Py_BuildValue("i", LocaleService_IsCHEONMA());
-}
-
 #include "../eterBase/tea.h"
 
 PyObject* appLoadLocaleAddr(PyObject* poSelf, PyObject* poArgs)
@@ -1102,27 +1087,18 @@ PyObject * appSetGuildMarkPath(PyObject * poSelf, PyObject * poArgs)
 PyObject* appIsDevStage(PyObject* poSelf, PyObject* poArgs)
 {
 	int nIsDevelopmentStage = 0;
-#if defined(LOCALE_SERVICE_STAGE_DEVELOPMENT)
-	nIsDevelopmentStage = 1;
-#endif
 	return Py_BuildValue("i", nIsDevelopmentStage);
 }
 
 PyObject* appIsTestStage(PyObject* poSelf, PyObject* poArgs)
 {
 	int nIsTestStage = 0;
-#if defined(LOCALE_SERVICE_STAGE_TEST)
-	nIsTestStage = 1;
-#endif
 	return Py_BuildValue("i", nIsTestStage);
 }
 
 PyObject* appIsLiveStage(PyObject* poSelf, PyObject* poArgs)
 {
-	int nIsLiveStage = 0;
-#if !defined(LOCALE_SERVICE_STAGE_TEST) && !defined(LOCALE_SERVICE_STAGE_DEVELOPMENT)
-	nIsLiveStage = 1;
-#endif
+	int nIsLiveStage = 1;
 	return Py_BuildValue("i", nIsLiveStage);
 }
 
@@ -1268,12 +1244,8 @@ void initapp()
 		{ "ForceSetLocale",				appForceSetLocale,				METH_VARARGS },
 		// END_OF_LOCALE
 
-		// CHEONMA
 		{ "LoadLocaleAddr",				appLoadLocaleAddr,				METH_VARARGS },
 		{ "LoadLocaleData",				appLoadLocaleData,				METH_VARARGS },
-		{ "SetCHEONMA",					appSetCHEONMA,					METH_VARARGS },
-		{ "IsCHEONMA",					appIsCHEONMA,					METH_VARARGS },
-		// END_OF_CHEONMA
 		
 		{ "GetDefaultCodePage",			appGetDefaultCodePage,			METH_VARARGS },
 		{ "SetControlFP",				appSetControlFP,				METH_VARARGS },

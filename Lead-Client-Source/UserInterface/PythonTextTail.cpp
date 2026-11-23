@@ -241,21 +241,14 @@ void CPythonTextTail::ArrangeTextTail()
 
 			fxAdd = 8.0f;
 
-			if (LocaleService_IsEUROPE()) // German names are right-aligned because their names are long.
+			if( GetDefaultCodePage() == CP_ARABIC )
 			{
-				if( GetDefaultCodePage() == CP_ARABIC )
-				{
-					pTitle->SetPosition(pTextTail->x - (iNameWidth / 2) - iTitleWidth - 4.0f, pTextTail->y, pTextTail->z);
-				}
-				else
-				{
-					pTitle->SetPosition(pTextTail->x - (iNameWidth / 2), pTextTail->y, pTextTail->z);
-				}
+				pTitle->SetPosition(pTextTail->x - (iNameWidth / 2) - iTitleWidth - 4.0f, pTextTail->y, pTextTail->z);
 			}
 			else
 			{
-				pTitle->SetPosition(pTextTail->x - (iNameWidth / 2) - fxAdd, pTextTail->y, pTextTail->z);
-			}			
+				pTitle->SetPosition(pTextTail->x - (iNameWidth / 2), pTextTail->y, pTextTail->z);
+			}
 			pTitle->Update();
 
 			// Level location update
@@ -265,20 +258,13 @@ void CPythonTextTail::ArrangeTextTail()
 				int iLevelWidth, iLevelHeight;
 				pLevel->GetTextSize(&iLevelWidth, &iLevelHeight);
 				
-				if (LocaleService_IsEUROPE()) // German names are right-aligned because their names are long.
+				if( GetDefaultCodePage() == CP_ARABIC )
 				{
-					if( GetDefaultCodePage() == CP_ARABIC )
-					{
-						pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - iTitleWidth - 8.0f, pTextTail->y, pTextTail->z);
-					}
-					else
-					{
-						pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - iTitleWidth, pTextTail->y, pTextTail->z);
-					}
+					pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - iTitleWidth - 8.0f, pTextTail->y, pTextTail->z);
 				}
 				else
 				{
-					pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - fxAdd - iTitleWidth, pTextTail->y, pTextTail->z);
+					pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - iTitleWidth, pTextTail->y, pTextTail->z);
 				}
 
 				pLevel->Update();
@@ -295,20 +281,13 @@ void CPythonTextTail::ArrangeTextTail()
 				int iLevelWidth, iLevelHeight;
 				pLevel->GetTextSize(&iLevelWidth, &iLevelHeight);
 				
-				if (LocaleService_IsEUROPE()) // German names are right-aligned because their names are long.
+				if( GetDefaultCodePage() == CP_ARABIC )
 				{
-					if( GetDefaultCodePage() == CP_ARABIC )
-					{
-						pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - 4.0f, pTextTail->y, pTextTail->z);
-					}
-					else
-					{
-						pLevel->SetPosition(pTextTail->x - (iNameWidth / 2), pTextTail->y, pTextTail->z);
-					}
+					pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - iLevelWidth - 4.0f, pTextTail->y, pTextTail->z);
 				}
 				else
 				{
-					pLevel->SetPosition(pTextTail->x - (iNameWidth / 2) - fxAdd, pTextTail->y, pTextTail->z);
+					pLevel->SetPosition(pTextTail->x - (iNameWidth / 2), pTextTail->y, pTextTail->z);
 				}
 
 				pLevel->Update();
@@ -904,10 +883,7 @@ void CPythonTextTail::AttachTitle(DWORD dwVID, const char * c_szName, const D3DX
 		prTitle->SetTextPointer(ms_pFont);
 		prTitle->SetOutline(true);
 
-		if (LocaleService_IsEUROPE())
-			prTitle->SetHorizonalAlign(CGraphicTextInstance::HORIZONTAL_ALIGN_RIGHT);
-		else
-			prTitle->SetHorizonalAlign(CGraphicTextInstance::HORIZONTAL_ALIGN_CENTER);
+		prTitle->SetHorizonalAlign(CGraphicTextInstance::HORIZONTAL_ALIGN_RIGHT);
 		prTitle->SetVerticalAlign(CGraphicTextInstance::VERTICAL_ALIGN_BOTTOM);
 	}
 
