@@ -429,35 +429,7 @@ static bool __LoadConnectionDetailConfigurations(const char *configName)
 
 	fprintf(stdout, "CommonSQL connected\n");
 
-	// Let's get locale information
-	// < warning > Absolute conditional statement in query statement (WHERE) Don't sweeten it . ( Problems may arise in other areas )
-	{
-		char szQuery[512];
-		snprintf(szQuery, sizeof(szQuery), "SELECT mKey, mValue FROM locale");
-
-		std::unique_ptr<SQLMsg> pMsg(AccountDB::instance().DirectQuery(szQuery));
-
-		if (pMsg->Get()->uiNumRows == 0)
-		{
-			fprintf(stderr, "COMMON_SQL: DirectQuery failed : %s\n", szQuery);
-			exit(1);
-		}
-
-		MYSQL_ROW row;
-
-		while (NULL != (row = mysql_fetch_row(pMsg->Get()->pSQLResult)))
-		{
-			// Locale settings
-			if (strcasecmp(row[0], "LOCALE") == 0)
-			{
-				if (LocaleService_Init(row[1]) == false)
-				{
-					fprintf(stderr, "COMMON_SQL: invalid locale key %s\n", row[1]);
-					exit(1);
-				}
-			}
-		}
-	}
+	LocaleService_Init();
 
 	// locale information COMMON SQL Set it to .
 	// For reference g_stLocale The information is LocaleService_Init() It is set internally .

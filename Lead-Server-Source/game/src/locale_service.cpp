@@ -13,9 +13,8 @@ using namespace std;
 extern string		g_stQuestDir;
 extern set<string> 	g_setQuestObjectDir;
 
-string g_stServiceName;
-string g_stServiceBasePath = ".";
-string g_stServiceMapPath = "data/map";
+string g_stServiceBasePath = "common";
+string g_stServiceMapPath = "common/map";
 
 string g_stLocale = "euckr";
 
@@ -97,17 +96,7 @@ void LocaleService_LoadEmpireTextConvertTables()
 	}
 }
 
-static void __LocaleService_Init_DEFAULT()
-{
-	g_stServiceBasePath = "locale/" + g_stServiceName;
-	g_stServiceMapPath = g_stServiceBasePath + "/map";
-	g_stQuestDir = g_stServiceBasePath + "/quest";
-
-	g_setQuestObjectDir.clear();	
-	g_setQuestObjectDir.insert(g_stQuestDir + "/object");
-}
-
-static void __CheckPlayerSlot(const std::string& service_name)
+static void __CheckPlayerSlot()
 {
 	if (PLAYER_PER_ACCOUNT != 4)
 	{
@@ -116,23 +105,14 @@ static void __CheckPlayerSlot(const std::string& service_name)
 	}
 }
 
-bool LocaleService_Init(const std::string& c_rstServiceName)
+void LocaleService_Init()
 {
-	if (!g_stServiceName.empty())
-	{
-		sys_err("ALREADY exist service");
-		return false;
-	}
+	g_stQuestDir = g_stServiceBasePath + "/quest";
 
-	g_stServiceName = c_rstServiceName;
+	g_setQuestObjectDir.clear();
+	g_setQuestObjectDir.insert(g_stQuestDir + "/object");
 
-	__LocaleService_Init_DEFAULT();
-
-	fprintf(stdout, "Setting Locale \"%s\" (Path: %s)\n", g_stServiceName.c_str(), g_stServiceBasePath.c_str());
-
-	__CheckPlayerSlot(g_stServiceName);
-
-	return true;
+	__CheckPlayerSlot();
 }
 
 void LocaleService_TransferDefaultSetting()
