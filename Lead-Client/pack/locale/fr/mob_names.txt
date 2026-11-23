@@ -19,7 +19,7 @@
 134	Loup alpha bleu maudit
 135	Loup gris maudit
 136	Loup alpha gris maudit
-137	Sanglier sauvage maudit
+137	Sanglier maudit
 138	Sanglier rouge maudit
 139	Ours maudit
 140	Grizzly maudit
@@ -108,26 +108,26 @@
 591	Capitaine bestial
 595	Geum-Chul bestial
 601	Orc
-602	Eclaireur Orc
-603	Combattant Orc
-604	Sorcier Orc
-631	Orc élite
-632	Eclaireur Orc élite
-633	Combattant Orc élite
-634	Sorcier Orc élite
-635	Général Orc élite
+602	Éclaireur orc
+603	Combattant orc
+604	Sorcier orc
+631	Orc d'élite
+632	Éclaireur orc d'élite
+633	Combattant orc d'élite
+634	Sorcier orc d'élite
+635	Général orc d'élite
 636	Orc noir
-637	Orc noir Géant
-651	Gros Orc intrépide
-652	Gros Eclaireur Orc
-653	Gros Combattant Orc
-654	Gros sorcier Orc
-655	Gros général Orc
+637	Géant orc noir
+651	Orc intrépide
+652	Éclaireur orc intrépide
+653	Combattant orc intrépide
+654	Sorcier orc intrépide
+655	Général orc intrépide
 656	Orc noir intrépide
-657	Orc noir Géant intrépide
-691	Chef Orc
-692	Chef Orc élite
-693	Chef Orc régéneré
+657	Géant orc noir intrépide
+691	Chef orc
+692	Chef orc obscur
+693	Leader orc spectral
 701	Fanatique funeste
 702	Arahan funeste
 703	Combattant funeste
@@ -178,7 +178,7 @@
 937	Chef pestiféré furieux
 991	Ouf infecté
 992	Porteur pestiféré
-993	Porteur Géant pestiféré
+993	Porteur géant pestiféré
 1001	Soldat démoniaque
 1002	Archer démon
 1003	Lancier démoniaque
@@ -210,7 +210,7 @@
 1093	Faucheuse
 1094	Vil Roi démon élite
 1095	Mort Bleue
-1096	????
+1096	Roi démon élite
 1101	Glace enchantée
 1102	Baleine de glace
 1103	Insecte de glace
@@ -230,7 +230,7 @@
 1153	Insecte de glace
 1154	Seol-Gu
 1155	Homme de glace
-1156	Géant des glace
+1156	Géant de glace
 1157	Golem de glace
 1171	Glace enchantée moyenne
 1172	Baleine tueuse moyenne
@@ -248,9 +248,9 @@
 1305	Gal Grenouille-taureau
 1306	Esprit Tigre jaune élite
 1307	Esprit Tigre jaune élite
-1308	NoNAme
-1309	NoNAme
-1310	NoNAme
+1308	Esprit Tigre jaune élite
+1309	Esprit Tigre jaune élite
+1310	Esprit Tigre jaune élite
 1331	Gr. soldat gren. arbori.
 1332	Gr. chef gren. arbori.
 1333	Croque-mitaine géant
@@ -268,9 +268,9 @@
 1901	Neuf-Queues
 1902	Neuf-Queues d'élite
 1903	Neuf-Queues d'élite
-1904	NoNAme
-1905	NoNAme
-1906	NoNAme
+1904	Neuf-Queues d'élite
+1905	Neuf-Queues d'élite
+1906	Neuf-Queues d'élite
 2001	Jeune Araignée
 2002	Araignée venimeuse
 2003	Araignée rouge venimeuse
@@ -304,16 +304,16 @@
 2094	Baron araignée
 2095	Oeuf d'araignée
 2101	Renard
-2102	Oeil Volant
+2102	Œil Volant
 2103	Roi scorpion
 2104	Jeune homme scorpion
 2105	Archer scorpion
-2106	Epéiste serpent
+2106	Épéiste serpent
 2107	Archer serpent
 2108	Hors la loi du Désert
 2131	Homme scorpion bestial
 2132	Archer scorpion
-2133	Epéiste serpent
+2133	Épéiste serpent
 2134	Archer serpent
 2135	hors la loi du désert
 2151	Fort renard du désert
@@ -326,16 +326,16 @@
 2158	Fort bandit du désert
 2191	Tortue des sables Géante
 2192	Tortue Géante élite
-2201	Tigre minion Combattant
+2201	Tigre minion
 2202	Esprit flamme
 2203	Tigre de combat
 2204	Flamme
 2205	Guerrier flamme
 2206	Roi flamme
 2207	Roi flamme d'élite
-2231	Fort Tigre Combattant
+2231	Tigre minion fort
 2232	Fort esprit flamme
-2233	Fort Combattant Tigre
+2233	Tigre de combat fort
 2234	Fort Esprit des flammes
 2235	Fort guerrier flamme
 2291	Dragon rouge
@@ -343,7 +343,7 @@
 2302	Esprit de la souche
 2303	Dryade
 2304	Esprit du saule pleureur
-2305	arbre maléfique
+2305	Arbre maléfique
 2306	Esprit d'arbre Géant
 2307	Seigneur Esprit d'arbre
 2311	Esprit rouge de l'arbre
@@ -359,14 +359,14 @@
 2412	Archer Setaou
 2413	Maîtresse Setaou
 2414	Chef Setaou
-2431	????
-2432	????
-2433	????
-2434	????
-2451	?????
-2452	?????
-2453	?????
-2454	?????
+2431	Guerrier Setaou
+2432	Chasseur Setaou
+2433	Voyante Setaou
+2434	Commandant Setaou
+2451	Soldat Setaou
+2452	Archer Setaou
+2453	Maîtresse Setaou
+2454	Chef Setaou
 2491	Capitaine Yonghan
 2492	Général Yonghan
 2493	Beran-Setaou
@@ -530,7 +530,7 @@
 6003	Flamme ardente
 6004	Guerrier flamme ardent
 6005	Roi flamme ardent
-6006	Golem flamme ardent
+6006	Troll flamme ardent
 6007	Barbeflamme ardent
 6008	Général flamme ardent
 6009	Prince flamme ardent
@@ -561,7 +561,7 @@
 7013	roi scorpion
 7014	Homme scorpion rusé
 7015	Archer scorpion
-7016	Epeiste Serpent
+7016	Épéiste Serpent
 7017	Archer serpent
 7018	hors la loi du désert
 7019	Soldat Tu-ji
@@ -574,82 +574,82 @@
 7026	Juk-Mok
 7027	Hwaryu Juk
 7028	Juk-Guimok Noir
-7029	NoNAme
-7030	NoNAme
-7031	NoNAme
-7032	NoNAme
-7033	NoNAme
-7034	NoNAme
-7035	NoNAme
-7036	NoNAme
-7037	NoNAme
-7038	NoNAme
-7039	NoNAme
-7040	NoNAme
-7041	NoNAme
-7042	NoNAme
-7043	NoNAme
-7044	NoNAme
-7045	NoNAme
-7046	NoNAme
-7047	NoNAme
-7048	NoNAme
-7049	NoNAme
-7050	NoNAme
-7051	NoNAme
-7052	NoNAme
-7053	NoNAme
-7054	NoNAme
-7055	NoNAme
-7056	NoNAme
-7057	NoNAme
-7058	NoNAme
-7059	NoNAme
-7060	NoNAme
-7061	NoNAme
-7062	NoNAme
-7063	NoNAme
-7064	NoNAme
-7065	NoNAme
-7066	NoNAme
-7067	NoNAme
-7068	NoNAme
-7069	NoNAme
-7070	NoNAme
-7071	NoNAme
-7072	NoNAme
-7073	NoNAme
-7074	NoNAme
-7075	NoNAme
-7076	NoNAme
-7077	NoNAme
-7078	NoNAme
-7079	NoNAme
-7080	NoNAme
-7081	NoNAme
-7082	NoNAme
-7083	NoNAme
-7084	NoNAme
-7085	NoNAme
-7086	NoNAme
-7087	NoNAme
-7088	NoNAme
-7089	NoNAme
-7090	NoNAme
-7091	NoNAme
-7092	NoNAme
-7093	NoNAme
-7094	NoNAme
-7095	NoNAme
-7096	NoNAme
+7029	Diable de glace
+7030	Baleine tueuse à corne
+7031	Insecte de glace
+7032	Seol-Gu
+7033	Homme de glace
+7034	Géant de glace
+7035	Golem de glace
+7036	Diable de glace
+7037	Baleine tueuse à corne
+7038	Insecte de glace
+7039	Seol-Gu
+7040	Homme de glace
+7041	Géant de glace
+7042	Golem de glace
+7043	Diable de glace
+7044	Baleine tueuse à corne
+7045	Insecte de glace
+7046	Seol-Gu
+7047	Homme de glace
+7048	Géant de glace
+7049	Golem de glace
+7050	Œil Volant
+7051	Roi scorpion
+7052	Jeune homme scorpion
+7053	Archer scorpion
+7054	Épéiste serpent
+7055	Archer serpent
+7056	Hors la loi du désert
+7057	Œil Volant
+7058	Roi scorpion
+7059	Jeune homme scorpion
+7060	Archer scorpion
+7061	Épéiste serpent
+7062	Archer serpent
+7063	Hors la loi du désert
+7064	Œil Volant
+7065	Roi scorpion
+7066	Jeune homme scorpion
+7067	Archer scorpion
+7068	Épéiste serpent
+7069	Archer serpent
+7070	Hors la loi du désert
+7071	Tigre minion
+7072	Esprit igné
+7073	Tigre de combat
+7074	Flamme
+7075	Guerrier flamme
+7076	Tigre minion
+7077	Esprit igné
+7078	Tigre de combat
+7079	Flamme
+7080	Guerrier flamme
+7081	Tigre minion
+7082	Esprit igné
+7083	Tigre de combat
+7084	Flamme
+7085	Guerrier flamme
+7086	Esprit de la souche
+7087	Dryade
+7088	Esprit du saule pleureur
+7089	Arbre maléfique
+7090	Esprit de la souche
+7091	Dryade
+7092	Esprit du saule pleureur
+7093	Arbre maléfique
+7094	Esprit de la souche
+7095	Dryade
+7096	Esprit du saule pleureur
 8001	Metin de Tristesse
 8002	Metin de Combat
-8003	Metin Battle
+8003	Metin de Bataille
 8004	Metin de Cupidité
 8005	Metin Noire
 8006	Metin des Ténèbres
 8007	Metin Jalousie
-8008	Metin d' Ame
+8008	Metin d'âme
 8009	Metin de l'Ombre
 8010	Metin de Force
 8011	Metin du Diable
@@ -677,7 +677,7 @@
 8036	Metin de la Trahison
 8037	Metin de l'Amertume
 8038	Metin de la Vengeance
-8039	Metin de l'Orgueil
+8039	Metin de la fierté
 8040	Metin de la Jalousie
 8041	Metin pascale
 8042	Metin pascale
@@ -714,29 +714,29 @@
 8502	Sanglier
 8503	Ours
 8504	Tigre blanc
-8505	Orc noir Géant
+8505	Géant orc noir
 8506	Chef gren. arboricole
 8507	Hors-la-loi du désert
 8508	Tourmenteur ésotérique
 8509	Invocateur ésotérique
-8510	Guerrier des flammes
+8510	Guerrier flamme
 8511	Golem de glace
-8600	?????
-8601	?????
-8602	?????
-8603	?????
-8604	????
-8605	????
-8606	??
-8607	??
-8608	???
-8609	???
-8610	?????
-8611	?????
-8612	????
-8613	????
-8614	??????
-8615	??????
+8600	Leader orc spectral
+8601	Leader orc spectral
+8602	Combattant élite
+8603	Combattant élite
+8604	Vil Roi démon élite
+8605	Vil Roi démon élite
+8606	Faucheuse
+8607	Faucheuse
+8608	Neuf-Queues
+8609	Neuf-Queues
+8610	Esprit Tigre jaune élite
+8611	Esprit Tigre jaune élite
+8612	Reine araignée
+8613	Reine araignée
+8614	Tortue des sables Géante
+8615	Tortue des sables Géante
 9001	Magasin d'armes
 9002	Magasin d'armures
 9003	Marchande
@@ -785,36 +785,36 @@
 10034	Grotte_Zin_2 10594 7525
 10035	Deon-Zeon 917 5253
 10036	2_Deon-Zeon 7041 4642
-10037	??? 3809 8233
-10038	??? 9752 1330
-10039	??? 1917 2900
-10040	??? 9239 1836
-10041	??? 8316 2154
-10042	??? 9772 1850
-10043	??? 3819 2969
-10044	??? 10189 1484
-10045	??? 3819 2969
-10046	??? 9774 1501
-10047	??? 2699 6752
-10048	??? 9679 1994
-10049	??? 2699 6752
-10050	??? 9256 2012
-10051	???? 3478 6189
-10052	??? 9780 1995
-10053	???? 3478 6189
-10054	??? 10190 2002
-10055	???? 6011 6874
-10056	??? 4368 2158
-10057	??? 3355 7558
-10058	???? 5943 1337
-10059	???1 0 10496
-10060	????1 1536 10496
-10061	????1 4608 10496
-10062	???1 6144 10496
-10063	??? 3031 266
-10064	???? 11133 534
-10065	???? 7754 10553
-10066	????? 9915 11195
+10037	Zone_Jayan 3809 8233
+10038	Shinsoo 9752 1330
+10039	Zone_Bokjung 1917 2900
+10040	Jinno 9239 1836
+10041	Zone_Bakra 8316 2154
+10042	Chunjo 9772 1850
+10043	Mont_Sohan 3819 2969
+10044	Shinsoo 10189 1484
+10045	Mont_Sohan 3819 2969
+10046	Shinsoo 9774 1501
+10047	Seungryong 2699 6752
+10048	Jinno 9679 1994
+10049	Seungryong 2699 6752
+10050	Jinno 9256 2012
+10051	Désert_Yongbi 3478 6189
+10052	Chunjo 9780 1995
+10053	Désert_Yongbi 3478 6189
+10054	Chunjo 10190 2002
+10055	Terre-de-feu 6011 6874
+10056	Mont_Sohan 4368 2158
+10057	Seungryong 3355 7558
+10058	Temple_Hwang 5943 1337
+10059	Mont_Sohan 0 10496
+10060	Temple_Hwang 1536 10496
+10061	Terre-de-feu 4608 10496
+10062	Seungryong 6144 10496
+10063	Lungsam 3031 266
+10064	Bois_Rouge 11133 534
+10065	New Ghost Forest 7754 10553
+10066	New Red Forest 9915 11195
 10067	Donjon_Singes 7752 4477
 10068	Zone_Jayan 4062 8756
 10069	Donjon_Singes 8520 4477
@@ -825,22 +825,22 @@
 10074	Donjon_Singes 1352 6532
 10075	Désert_Yongbi 2879 5407
 10076	Donjon_Singes 1352 7300
-10077	????1? 9 12078
-10078	??? 2842 8106
-10079	????1? 1459 13236
-10080	????2? 2413 12755
-10081	????1? 99 13618
-10082	???? 5028 9998
-10083	????1? 1360 14972
-10084	????2? 2414 14289
-10085	????1? 99 15154
-10086	???? 616 1148
-10087	????1? 1360 16508
-10088	????2? 2414 15825
-10089	????1? 99 16690
-10090	???? 9609 3188
-10091	????1? 1360 18044
-10092	????2? 2414 17361
+10077	Grotte_de_Zin 9 12078
+10078	Seungryong 2842 8106
+10079	Grotte_de_Zin 1459 13236
+10080	Grotte_Zin_2 2413 12755
+10081	Grotte_de_Zin 99 13618
+10082	Zone_Yongan 5028 9998
+10083	Grotte_de_Zin 1360 14972
+10084	Grotte_Zin_2 2414 14289
+10085	Grotte_de_Zin 99 15154
+10086	Zone_Joan 616 1148
+10087	Grotte_de_Zin 1360 16508
+10088	Grotte_Zin_2 2414 15825
+10089	Grotte_de_Zin 99 16690
+10090	Zone_Pyungmoo 9609 3188
+10091	Grotte_de_Zin 1360 18044
+10092	Grotte_Zin_2 2414 17361
 10093	Porte_Dragon 1731 12205
 10094	Porte_Dragon 1733 13743
 10095	Porte_Dragon 1728 15277
@@ -971,30 +971,30 @@
 11003	Maître d'Armes
 11004	Gardien du Village
 11005	Maître d'Armes
-11100	Gardien du Village
-11101	Maître d'Armes
-11102	Gardien du Village
-11103	Maître d'Armes
-11104	Gardien du Village
-11105	Maître d'Armes
-11106	???
-11107	???
-11108	???
-11109	???
-11110	???
-11111	???
-11112	???
-11113	???
-11114	???
-11115	???
-11116	???
-11117	???
+11100	Gardien du village
+11101	Maître d'armes
+11102	Gardien du village
+11103	Maître d'armes
+11104	Gardien du village
+11105	Maître d'armes
+11106	Gardien du village
+11107	Maître d'armes
+11108	Gardien du village
+11109	Maître d'armes
+11110	Gardien du village
+11111	Maître d'armes
+11112	Gardien du village
+11113	Maître d'armes
+11114	Gardien du village
+11115	Maître d'armes
+11116	Gardien du village
+11117	Maître d'armes
 11505	Grenouille dorée
-11506	??
-11507	??
-11508	??
-11509	??
-11510	??
+11506	Flambeau
+11507	Flambeau
+11508	Flambeau
+11509	Flambeau
+11510	Flambeau
 12000	Feu de Camp
 13000	Porte de bois
 13001	Porte de pierre
@@ -1143,7 +1143,7 @@
 20093	Koe-Pung
 20094	Hong-Hae
 20095	Seon-Hae
-20096	??? ???
+20096	Obélisque
 20097	Porte du château
 20098	Porte du château
 20099	Porte du château
@@ -1165,32 +1165,32 @@
 20116	Loup bagarreur
 20117	Tigre tempétueux
 20118	Lion carnassier
-20119	NoNAme
-20120	?????
-20121	?????
-20122	?????
-20123	?????
-20124	?????
-20125	?????
+20119	Noble cheval noir
+20120	Blue Armoured Tiger
+20121	Crimson Armoured Tiger
+20122	Yellow Armoured Tiger
+20123	Green Armoured Tiger
+20124	Black Armoured Tiger
+20125	White Armoured Tiger
 20126	Père Noël
-20201	??????
-20202	??????
-20203	?????
-20204	???????
-20205	?????? ??????
-20206	?????? ??????
-20207	?????? ?????
-20208	?????? ???????
-20209	?????? ??????
-20210	?????? ??????
-20211	?????? ?????
-20212	?????? ???????
-20213	?????????
-20214	?????? ?????????
-20215	?????? ?????????
-20216	????????
-20217	?????? ????????
-20218	?????? ????????
+20201	Armoured Boar
+20202	Armoured Wolf
+20203	Armoured Tiger
+20204	Armoured Lion
+20205	Wild Armoured Boar
+20206	Wild Armoured Wolf
+20207	Wild Armoured Tiger
+20208	Wild Armoured Lion
+20209	Valiant Armoured Boar
+20210	Valiant Armoured Wolf
+20211	Valiant Armoured Tiger
+20212	Valiant Armoured Lion
+20213	Armoured Reindeer (m)
+20214	Wild Armoured Reindeer (m)
+20215	Valiant Armoured Reindeer (m)
+20216	Armoured Reindeer (f)
+20217	Wild Armoured Reindeer (f)
+20218	Valiant Armoured Reindeer (f)
 20219	blackpony
 20220	Comète
 20221	Prédateur polaire
@@ -1268,12 +1268,12 @@
 20389	Taureau mexicain
 20390	Tombe de Taramor
 20391	Herbe solaire
-20392	NoNAme
+20392	Soldat mort
 20393	Soldat blessé
 20394	Gardien de Doyyumhwan
 20395	Garde de Terre glaciaire
-30000	????
-30001	????
+30000	Private Shop
+30001	Private Shop
 30101	Statue mythique
 30102	Obélisque basaltique
 30103	Rocher de la Tortue
@@ -1303,17 +1303,17 @@
 30303	Filon de grenat
 30304	Filon d'émeraude
 30305	Filon de saphir
-33001	?????? ???
-33002	NoNAme
-33003	NoNAme
-33004	NoNAme
-33005	NoNAme
-33006	NoNAme
-33007	NoNAme
+33001	Adventurer's Skull
+33002	Historien
+33003	Citoyen qui jeûne
+33004	Citoyen qui jeûne
+33005	Citoyen qui jeûne
+33006	Citoyen qui jeûne
+33007	Citoyen qui jeûne
 33008	Jack Pumpkin
-34001	phoenix1
-34002	??? ???
-34003	?????????
+34001	Phœnix flamboyant
+34002	Faon
+34003	Phœnix de glace
 34004	Bébé Azraël
 34005	Porky
 34006	Rufus
@@ -1323,12 +1323,12 @@
 34010	Bambi
 34011	Knuud
 34012	Bao Bao
-34013	Mini-bourreau
-34014	Mini-bourreau (or)
+34013	Mini bourreau dodu
+34014	Mini bourreau dodu (or)
 34015	Boney
-34016	Phoenix de jade
-33009	Alchimiste de cristal d'â
-33010	Alchimiste de rubis
+34016	Phœnix de jade
+33009	Autel sanglant
+33010	Bonhomme de neige
 33011	Alchimiste de grenat
 33012	Alchimiste de émeraude
 33013	alchimiste de saphir
