@@ -90,8 +90,8 @@
             new_quest_lv7_mob1 = 173 -- kill a 173#Hungriger Alpha-Wolf
             new_quest_lv7_mob2 = 174 -- kill a 174#Hungriger Blauwolf
             new_quest_lv7_mob3 = 175 -- kill a 175#Hungriger Alpha-Blauwolf
-            -- Einige deser Mobs werden auch in der Level 7 Aufgabe verwendet, was dazu führt, 
-            -- dass diese dort nicht mehr hoch zählen wenn man sie tötet.
+            -- Einige deser Mobs werden auch in der Level 7 Aufgabe verwendet, was dazu fÃ¼hrt, 
+            -- dass diese dort nicht mehr hoch zÃ¤hlen wenn man sie tÃ¶tet.
             new_quest_lv7_drop1 = 30169 -- Blutrote Blume
             new_quest_lv7_drop2 = 30170 -- Orangefarbene Blume
             new_quest_lv7_drop3 = 30171 --  Duftende gelbe Blume
@@ -125,7 +125,7 @@
         wait()
             say_title(gameforge.new_quest_lv7._012_say_title) -- yellow text headline
             say(gameforge.new_quest_lv7._052_say)
-            -- "vom Bräutigam an seine Liebste überreicht" versteht das unsere Zielgruppe?
+            -- "vom BrÃ¤utigam an seine Liebste Ã¼berreicht" versteht das unsere Zielgruppe?
         wait()	
             say(gameforge.new_quest_lv7._054_say)
             say_reward(string.format("%s x", new_quest_lv7_AmountNeed1))

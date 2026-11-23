@@ -1,97 +1,89 @@
---2012.08 김용욱
---메인퀘스트 레벨 95
 
---퀘스트 진행 npc
-define GUARD 20378 -- 경비대장 악무르
-define ICHUNG 20369 -- 이충
-define TELEPORT 9012 -- 공간이동술사
-define YACKHWAN 20377 -- 약령도장 약환
-define SCHOLAR 20380 -- 학자
-define OCKGU 20008 -- 옥구
-define ALCHEMIST 20001 -- 연금술사
-define UNDERLING 20379 -- 악무르의 부하
+define GUARD 20378
+define ICHUNG 20369
+define TELEPORT 9012
+define YACKHWAN 20377
+define SCHOLAR 20380
+define OCKGU 20008
+define ALCHEMIST 20001
+define UNDERLING 20379
 
---괴력의 지무신왕--
-define MOB1_1 3904 -- 지무신왕
-define MAP_INDEX1 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS1_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MOB1_1 3904
+define MAP_INDEX1 1
+define MAP_POS1_1_X 500
 define MAP_POS1_1_Y 500
 define MAP_POS1_2_X 600
 define MAP_POS1_2_Y 500
 define MAP_POS1_3_X 700
 define MAP_POS1_3_Y 300
-define ITEM1_1 31015 -- 지무신왕의 서찰
-define REWARD1_EXP 27532396 --  보상 : 경험치
-define REWARD1_GOLD 302000 --  보상 : 골드
-define REWARD1_ITEM1 27994 --  보상 : 피진주
-define REWARD1_ITEM1_COUNT 1 --  보상 갯수
+define ITEM1_1 31015
+define REWARD1_EXP 27532396
+define REWARD1_GOLD 302000
+define REWARD1_ITEM1 27994
+define REWARD1_ITEM1_COUNT 1
 
---검은황금 전달 저지--
-define MOB2_1 3890 -- 저인족 보스 (테스트 : 들개)
-define MAP_INDEX2 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS2_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MOB2_1 3890
+define MAP_INDEX2 1
+define MAP_POS2_1_X 500
 define MAP_POS2_1_Y 500
 define MAP_POS2_2_X 600
 define MAP_POS2_2_Y 500
 define MAP_POS2_3_X 700
 define MAP_POS2_3_Y 300
-define ITEM2_1 31037 -- 검은 황금 꾸러미
-define ITEM2_1_PCT_GET 5 -- 획득 확률 : 검은 황금 꾸러미  (1/n)
-define REWARD2_EXP 29032586 -- 보상 : 경험치
-define REWARD2_GOLD 0 -- 보상 : 골드
-define REWARD2_ITEM1 30048 -- 보상 : 얼음조각
-define REWARD2_ITEM1_COUNT 1 -- 보상 갯수
+define ITEM2_1 31037
+define ITEM2_1_PCT_GET 5
+define REWARD2_EXP 29032586
+define REWARD2_GOLD 0
+define REWARD2_ITEM1 30048
+define REWARD2_ITEM1_COUNT 1
 
---검은황금 정제 차단 --
-define MOB3_1 3891 -- 저인족장
-define MAP_INDEX3 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS3_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MOB3_1 3891
+define MAP_INDEX3 1
+define MAP_POS3_1_X 500
 define MAP_POS3_1_Y 500
 define MAP_POS3_2_X 600
 define MAP_POS3_2_Y 500
 define MAP_POS3_3_X 700
 define MAP_POS3_3_Y 300
-define REWARD3_EXP 33003907 -- 보상 : 경험치
-define REWARD3_GOLD 0 -- 보상 : 골드
-define REWARD3_ITEM1 71094 -- 보상 : 선인의 교훈
-define REWARD3_ITEM1_COUNT 1 -- 보상 갯수
-define REWARD3_ITEM2 72024 -- 보상 : 행운의 금화
-define REWARD3_ITEM2_COUNT 1 -- 보상 갯수
+define REWARD3_EXP 33003907
+define REWARD3_GOLD 0
+define REWARD3_ITEM1 71094
+define REWARD3_ITEM1_COUNT 1
+define REWARD3_ITEM2 72024
+define REWARD3_ITEM2_COUNT 1
 
---천기의 조화1-1--
-define MOB4_1 3303 -- 망량족 주술사
-define MAP_INDEX4 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS4_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MOB4_1 3303
+define MAP_INDEX4 1
+define MAP_POS4_1_X 500
 define MAP_POS4_1_Y 500
 define MAP_POS4_2_X 600
 define MAP_POS4_2_Y 500
 define MAP_POS4_3_X 700
 define MAP_POS4_3_Y 300
-define ITEM4_1 31043 -- 수상한 석판
-define ITEM4_1_PCT_GET 5 -- 획득 확률 : 수상한 석판 (1/n)
-define REWARD4_EXP 30943586 -- 보상 : 경험치
-define REWARD4_GOLD 335000 -- 보상 : 골드
-define REWARD4_ITEM1 72301 -- 보상 : 축복의 서
-define REWARD4_ITEM1_COUNT 5 -- 보상 갯수
+define ITEM4_1 31043
+define ITEM4_1_PCT_GET 5
+define REWARD4_EXP 30943586
+define REWARD4_GOLD 335000
+define REWARD4_ITEM1 72301
+define REWARD4_ITEM1_COUNT 5
 
---천기의 조화1-2--
-define MOB5_1 3303 -- 망량족 주술사
-define MAP_INDEX5 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS5_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MOB5_1 3303
+define MAP_INDEX5 1
+define MAP_POS5_1_X 500
 define MAP_POS5_1_Y 500
 define MAP_POS5_2_X 600
 define MAP_POS5_2_Y 500
 define MAP_POS5_3_X 700
 define MAP_POS5_3_Y 300
-define ITEM5_1 31043 -- 수상한 석판
-define ITEM5_1_PCT_GET 4 -- 획득 확률 : 수상한 석판 (1/n)
-define ITEM5_1_NEEDED 2 -- 필요한 갯수
-define REWARD5_EXP 31932545 -- 보상 : 경험치
-define REWARD5_GOLD 337000 -- 보상 : 골드
-define REWARD5_ITEM1 72723 -- 보상 : 화룡의 축복(소)
-define REWARD5_ITEM1_COUNT 1 -- 보상 갯수
-define REWARD5_ITEM2 70050 -- 보상 : 선왕의 증표
-define REWARD5_ITEM2_COUNT 1 -- 보상 갯수
+define ITEM5_1 31043
+define ITEM5_1_PCT_GET 4
+define ITEM5_1_NEEDED 2
+define REWARD5_EXP 31932545
+define REWARD5_GOLD 337000
+define REWARD5_ITEM1 72723
+define REWARD5_ITEM1_COUNT 1
+define REWARD5_ITEM2 70050
+define REWARD5_ITEM2_COUNT 1
 
 quest main_quest_lv95 begin
 	state start begin
@@ -101,17 +93,6 @@ quest main_quest_lv95 begin
 			set_state (state1_1)
 		end
 	end
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
 	state state1_1 begin
 	
 		when letter begin
@@ -142,7 +123,6 @@ quest main_quest_lv95 begin
 			set_state (state1_2)
 		end
 	end
-	--퀘스트 수행--
 	state state1_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._010_sendLetter)
@@ -163,7 +143,6 @@ quest main_quest_lv95 begin
 			-- clearmapsignal()
 		end
 				
-		--클리어 전에 돌아왔다.--
 		when GUARD.chat.gameforge.main_quest_lv95._010_sendLetter begin
 			say_title(mob_name(GUARD))
 			say(gameforge.main_quest_lv95._090_say)
@@ -197,7 +176,6 @@ quest main_quest_lv95 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when MOB1_1.kill begin
 			if pc.count_item(ITEM1_1) < 1 then
 				pc.give_item2 ( ITEM1_1, 1 )
@@ -228,7 +206,6 @@ quest main_quest_lv95 begin
 				say(gameforge.main_quest_lv95._170_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD1_EXP))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD1_GOLD))
@@ -240,7 +217,7 @@ quest main_quest_lv95 begin
 				pc.give_item2(REWARD1_ITEM1, REWARD1_ITEM1_COUNT)
 				
 				set_state (state2_1)
-			else --중간에 아이템을 빼놓고 왔다.
+			else
 				say_title(mob_name(GUARD))
 				say(gameforge.main_quest_lv95._090_say)
 				say("")
@@ -250,17 +227,6 @@ quest main_quest_lv95 begin
 		end
 	end
 	
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._180_sendLetter)
@@ -307,7 +273,6 @@ quest main_quest_lv95 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when GUARD.chat.gameforge.main_quest_lv95._180_sendLetter begin
 			say_title(mob_name(GUARD))
 			say(gameforge.main_quest_lv95._250_say)
@@ -343,7 +308,6 @@ quest main_quest_lv95 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when MOB2_1.kill begin
 			if pc.count_item(ITEM2_1) < 1 then
 				if	number (1,ITEM2_1_PCT_GET) == 1 then	
@@ -378,7 +342,6 @@ quest main_quest_lv95 begin
 				say(gameforge.main_quest_lv95._310_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD2_EXP))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD2_GOLD))
@@ -390,7 +353,7 @@ quest main_quest_lv95 begin
 				pc.give_item2(REWARD2_ITEM1, REWARD2_ITEM1_COUNT)
 				
 				set_state (state3_1)
-			else -- 아이템이 없다.
+			else
 				say_title(mob_name(GUARD))
 				say(gameforge.main_quest_lv95._250_say)
 				
@@ -398,17 +361,6 @@ quest main_quest_lv95 begin
 			end
 		end
 	end
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._320_sendLetter)
@@ -454,7 +406,6 @@ quest main_quest_lv95 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when GUARD.chat.gameforge.main_quest_lv95._320_sendLetter begin
 			say_title(mob_name(GUARD))
 			say(gameforge.main_quest_lv95._390_say)
@@ -501,7 +452,6 @@ quest main_quest_lv95 begin
 			say(gameforge.main_quest_lv95._460_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD3_EXP))
 			--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD3_GOLD))
@@ -519,17 +469,6 @@ quest main_quest_lv95 begin
 		end
 	end
 	
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._470_sendLetter)
@@ -565,7 +504,6 @@ quest main_quest_lv95 begin
 			set_state (state4_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state4_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._470_sendLetter)
@@ -586,7 +524,6 @@ quest main_quest_lv95 begin
 			-- clearmapsignal()
 		end
 		
-		-- 클리어 전에 클릭 --
 		when GUARD.chat.gameforge.main_quest_lv95._470_sendLetter begin
 			say_title(mob_name(GUARD ))
 			say(gameforge.main_quest_lv95._560_say)
@@ -619,7 +556,6 @@ quest main_quest_lv95 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when MOB4_1.kill begin
 			if pc.count_item(ITEM4_1) < 1 then
 				if	number (1,ITEM4_1_PCT_GET) == 1 then	
@@ -652,7 +588,6 @@ quest main_quest_lv95 begin
 				say(gameforge.main_quest_lv95._620_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD4_EXP))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD4_GOLD))
@@ -677,18 +612,6 @@ quest main_quest_lv95 begin
 		end
 	end
 	
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	-- 퀘스트 진행 --
 	state state5_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._630_sendLetter)
@@ -717,7 +640,6 @@ quest main_quest_lv95 begin
 			-- clearmapsignal()
 		end
 		
-		-- 클리어 전에 클릭 --
 		when GUARD.chat.gameforge.main_quest_lv95._630_sendLetter begin
 			say_title(mob_name(GUARD ))
 			say(gameforge.main_quest_lv95._660_say)
@@ -758,7 +680,6 @@ quest main_quest_lv95 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when MOB5_1.kill begin
 			if pc.count_item(ITEM5_1) < 2 then
 				if	number (1,ITEM5_1_PCT_GET) == 1 then	
@@ -792,7 +713,6 @@ quest main_quest_lv95 begin
 				say(gameforge.main_quest_lv95._720_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD5_EXP))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD5_GOLD))

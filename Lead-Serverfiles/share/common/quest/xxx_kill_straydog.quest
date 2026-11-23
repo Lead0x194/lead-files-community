@@ -1,27 +1,27 @@
 quest kill_straydog begin
 	state start begin
-		when 20008.chat."Lästige Wildhunde!!" with number(1, 10)==1 and pc.level>=25 begin
+		when 20008.chat."LÃ¤stige Wildhunde!!" with number(1, 10)==1 and pc.level>=25 begin
 		        ----"12345678901234567890123456789012345678901234567890"|   
                         say_title("Octavio:")
                         say("")
 			say("Sei willkommen!Du hast sicher schon von der")
-			say("Wildhund Plage gehört.Die Viecher machen uns ")
+			say("Wildhund Plage gehÃ¶rt.Die Viecher machen uns ")
 			say("schwer zu schaffen, sogar das Dorf haben sie")
 			say("schon heimgesucht, man ist nirgends vor ihnen")
 			say("sicher, deshalb habe ich einen Wettbewerb")
-			say("ausgerufen. Jage soviele Wildhunde wie möglich")
-			say("in kürzester Zeit. Wir erwarten hohen Besuch,")
+			say("ausgerufen. Jage soviele Wildhunde wie mÃ¶glich")
+			say("in kÃ¼rzester Zeit. Wir erwarten hohen Besuch,")
 			say("deshalb ist Eile geboten. Wenn Du schnell bist,")
                         say("bekommst Du auch eine Belohnung.")
 			local b=select("Du willst teilnehmen", "Du hast kein Interesse?")
 			if 1==b then
 				say("Ja, ich werde teilnehmen.")
 				say("Ich mach mich sofort an die Arbeit.")
-				say("Ich komme zurück, sobald ich fertig bin.")
+				say("Ich komme zurÃ¼ck, sobald ich fertig bin.")
 			elseif 2==b then
 				say("Ich habe schon genug zu tun.")
 				say("Ich kann nicht noch mehr tun.")
-				say("Ihr müsst schon jemand anderen finden.")
+				say("Ihr mÃ¼sst schon jemand anderen finden.")
 			else
 				say("UNKNOWN BUTTON ["..b.."]")
 			end
@@ -49,7 +49,7 @@ quest kill_straydog begin
 		when button begin
 			say_title("Die Einladung zum Wettbewerb der Wildhundejagd")
 			say("")
-			say("Für 1000 Wildhunde, je nach Zeit,")
+			say("FÃ¼r 1000 Wildhunde, je nach Zeit,")
                         say("gibt es folgende Geldpreise")
 			say("")
 			say("    1. Rang : 300000 yang (Innerhalb von 30 Minuten)")
@@ -58,7 +58,7 @@ quest kill_straydog begin
 			say("")
 			say("                 - Der Gastgeber Octavio -")
 			say("")
-			say("Möchtest du an dem Wettbewerb zur Wildhundejagd von Octavio teilnehmen?")
+			say("MÃ¶chtest du an dem Wettbewerb zur Wildhundejagd von Octavio teilnehmen?")
 			local b=select("die Einladung", "teilnehmen", "nicht teilnehmen")
 			if 1==b then
 				if pc.getqf("best_time")==0 then
@@ -66,7 +66,7 @@ quest kill_straydog begin
 				else
 					say("Die 1000 Wildhundejagd")
 					say("")
-					say("Die kürzeste Jagdzeit "..(math.floor(pc.getqf("best_time")/60)).." Minute")
+					say("Die kÃ¼rzeste Jagdzeit "..(math.floor(pc.getqf("best_time")/60)).." Minute")
 					say("Die vorherige Jagdzeit  "..(math.floor(pc.getqf("prev_time")/60)).." Minute")
 				end
 			elseif 2==b then
@@ -90,7 +90,7 @@ quest kill_straydog begin
 			say("")
 			say("                 - Der Gastgeber Octavio  -")
 			say("")
-			say("Möchtest du an dem Wettbewerb zur Wildhundejagd von Octavio teilnehmen?")
+			say("MÃ¶chtest du an dem Wettbewerb zur Wildhundejagd von Octavio teilnehmen?")
 			say("")
 			local b=select("die Einladung", "teilnehmen", "nicht teilnehmen")
 			if 1==b then
@@ -99,7 +99,7 @@ quest kill_straydog begin
 				else
 					say_title("Die 1000 Wildhundejagd")
 					say("")
-					say("Die kürzeste Jagdzeit "..(math.floor(pc.getqf("best_time")/60)).." Minute")
+					say("Die kÃ¼rzeste Jagdzeit "..(math.floor(pc.getqf("best_time")/60)).." Minute")
 					say("Die vorherige Jagdzeit "..(math.floor(pc.getqf("prev_time")/60)).." Minute")
 				end
 			elseif 2==b then
@@ -123,13 +123,13 @@ quest kill_straydog begin
 			say_title("Die Anleitung zur Wildhundejagd")
 			say("")
 			say("Das ist sehr einfach!")
-			say("Jage so schnell wie möglich 1000 Wildhunde")
-			say("Die ersten drei Plätze werden belohnt.")
+			say("Jage so schnell wie mÃ¶glich 1000 Wildhunde")
+			say("Die ersten drei PlÃ¤tze werden belohnt.")
 			say("Bitte, mit allen Besten!")
 			say("")
 			say("Es gibt aber nur drei mal Chance!!")
 			say("")
-			say("[beginnen] wenn man beginnen drückt, wird protokolliert")
+			say("[beginnen] wenn man beginnen drÃ¼ckt, wird protokolliert")
 			say("")
 			local b=select("Beginnen", "Anhalten", "Aufgeben")
 			if 1==b then
@@ -147,13 +147,13 @@ quest kill_straydog begin
 			say_title("Die Anleitung zur Wildhundejagd")
 			say("")
 			say("Das ist sehr einfach!")
-			say("Jage so schnell wie möglich 1000 Wildhunde")
-			say("Die ersten drei Plätze werden belohnt")
+			say("Jage so schnell wie mÃ¶glich 1000 Wildhunde")
+			say("Die ersten drei PlÃ¤tze werden belohnt")
 			say("Bitte, mit allen Besten!")
 			say("")
 			say("Es gibt aber nur drei mal Chance!!")
 			say("")
-			say("[beginnen] wenn man beginnen drückt, wird protokolliert")
+			say("[beginnen] wenn man beginnen drÃ¼ckt, wird protokolliert")
 			say("")
 			local b=select("Beginnen", "Anhalten", "Aufgeben")
 			if 1==b then
@@ -190,18 +190,18 @@ quest kill_straydog begin
 			say_title("Jage die 1000 Wildhunde!")
 			say("")
 			say("Nachdem die 1000 Wildhundejagd beendet ist,")
-			say("meldet man sich bei Octavio und erhält den Preis.")
+			say("meldet man sich bei Octavio und erhÃ¤lt den Preis.")
 			say("")
 			say("gejagte Zahl "..(pc.getqf("kill_count")).."")
 			say("Verlaufszeit "..(math.floor((get_time()-pc.getqf("start_time"))/60)).."")
 			say("")
-			say("(übrige Chance  "..(pc.getqf("life"))..")")
+			say("(Ã¼brige Chance  "..(pc.getqf("life"))..")")
 			local b=select("Fortfahren", "Neu beginnen", "Aufgeben")
 			if 1==b then
 			elseif 2==b then
 				if pc.getqf("life")>0 then
-					say("Bei erneutem Versuch wird das alte Ergebniss gelöscht")
-					say("Möchtest du wirklich neu beginnen?")
+					say("Bei erneutem Versuch wird das alte Ergebniss gelÃ¶scht")
+					say("MÃ¶chtest du wirklich neu beginnen?")
 					say("")
 					local b=select("Ja", "Nein")
 					if 1==b then
@@ -215,7 +215,7 @@ quest kill_straydog begin
 					say("Leider ist es letzte Chance!")
 				end
 			elseif 3==b then
-				say("Möchtest du wirklich die Wildhundejagd beenden?")
+				say("MÃ¶chtest du wirklich die Wildhundejagd beenden?")
 				say("")
 				local b=select("Ja", "Nein")
 				if 1==b then
@@ -233,18 +233,18 @@ quest kill_straydog begin
 			say_title("Jage die 1000 Wildhunde!")
 			say("")
 			say("Nachdem die 1000 Wildhundejagd beendet ist,")
-			say("meldet man sich bei Octavio und erhält seinen Preis.")
+			say("meldet man sich bei Octavio und erhÃ¤lt seinen Preis.")
 			say("")
 			say("gejagte Zahl "..(pc.getqf("kill_count")).."")
 			say("Verlaufszeit "..(math.floor((get_time()-pc.getqf("start_time"))/60)).."")
 			say("")
-			say("(übrige Chance "..(pc.getqf("life"))..")")
+			say("(Ã¼brige Chance "..(pc.getqf("life"))..")")
 			say("")
 			local b=select("fortfahren", "neu beginnen", "aufgeben")
 			if 1==b then
 			elseif 2==b then
 				if pc.getqf("life")>0 then
-					say("bei Neubeginn wird das bisherige Ergebnis gelöscht.")
+					say("bei Neubeginn wird das bisherige Ergebnis gelÃ¶scht.")
 					say("trotzdem neu versuchen?")
 					say("")
 					local b=select("Ja", "Nein")
@@ -259,7 +259,7 @@ quest kill_straydog begin
 					say("leider ist es die letzte Chance!")
 				end
 			elseif 3==b then
-				say("Möchtst du wirklich die Wildhundejagd beenden?")
+				say("MÃ¶chtst du wirklich die Wildhundejagd beenden?")
 				say("")
 				local b=select("Ja", "Nein")
 				if 1==b then
@@ -288,12 +288,12 @@ quest kill_straydog begin
 		end
 		when letter begin
 			setskin(NOWINDOW)
-			makequestbutton("Durchführung der 1000 Wildhundejagd!!")
-			q.set_title("Durchführung der 1000 Wildhundejagd!!")
+			makequestbutton("DurchfÃ¼hrung der 1000 Wildhundejagd!!")
+			q.set_title("DurchfÃ¼hrung der 1000 Wildhundejagd!!")
 			q.start()
 		end
 		when button begin
-			say_title("Durchführung der 1000 Wildhundejagd!!")
+			say_title("DurchfÃ¼hrung der 1000 Wildhundejagd!!")
 			say("")
 			say("die Wildhunde "..(pc.getqf("kill_count")).."Du hast die Wildhunde gejagt")
 			say("Melde Dich bei Octavio")
@@ -302,7 +302,7 @@ quest kill_straydog begin
 			say("")
 		end
 		when info begin
-			say_title("Durchführung der 1000 Wildhundejagd!!")
+			say_title("DurchfÃ¼hrung der 1000 Wildhundejagd!!")
 			say("")
 			say("die Wildhunde "..(pc.getqf("kill_count")).."Du hast die Wildhunde gejagt")
 			say("Melde Dich bei Octavio")
@@ -317,7 +317,7 @@ quest kill_straydog begin
 					say_title("Octavio:")
 					say("")
 					say("Du hast die Wildhundejagd innerhalb von 30")
-					say("Minuten durchgeführt!")
+					say("Minuten durchgefÃ¼hrt!")
 					say("Das ist wirklich sehr schnell!")
 					say("Ich gratuliere Dir")
 					setstate(reward_1st)
@@ -325,7 +325,7 @@ quest kill_straydog begin
 					say_title("Octavio:")
 					say("")
 					say("Du hast die Wildhundejagd innerhalb von")
-					say("40 Minuten durchgeführt!")
+					say("40 Minuten durchgefÃ¼hrt!")
 					say("Das ist wirklich sehr schnell!")
 					say("Ich gratuliere dir")
 					setstate(reward_2st)
@@ -333,7 +333,7 @@ quest kill_straydog begin
 					say_title("Octavio:")
 					say("")
 					say("Du hast die Wildhundejagd innerhalb von")
-					say("50 Minuten durchgeführt!")
+					say("50 Minuten durchgefÃ¼hrt!")
 					say("Du stehst in der Rangliste. Gratuliere ")
 					setstate(reward_3st)
 				else
@@ -364,7 +364,7 @@ quest kill_straydog begin
 			say("ich hatte selbst nicht daran geglaubt, aber")
 			say("ich war einfach froh, als ich den Preis")
 			say("erhalten habe. Heute sieht der Kahlkopf")
-			say("von Octavio besonders süss aus")
+			say("von Octavio besonders sÃ¼ss aus")
 			pc.changemoney(300000)
 			setstate(__COMPLETE__)
 			q.done()
@@ -384,7 +384,7 @@ quest kill_straydog begin
 			say("ich hatte selbst nicht daran geglaubt, aber")
 			say("ich war einfach froh, als ich den Preis")
 			say("erhalten habe. Heute sieht der Kahlkopf")
-			say("von Octavio besonders süss aus")
+			say("von Octavio besonders sÃ¼ss aus")
 			pc.changemoney(100000)
 			setstate(__COMPLETE__)
 			q.done()

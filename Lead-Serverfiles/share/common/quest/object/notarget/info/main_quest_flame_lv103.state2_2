@@ -1,5 +1,5 @@
 say_title ( gameforge . main_quest_flame_lv103 . _240_sayTitle ) 
 say ( gameforge . main_quest_flame_lv103 . _250_say ) 
 say ( gameforge . main_quest_lv98 . _680_counterName ) 
-say ( string . format ( gameforge . main_quest_lv98 . _670_sayReward , "¿˚∑Êº∫ ∏∂π∞" , 1000 - pc . getqf ( "kill_count_1" ) ) ) 
+say ( string . format ( gameforge . main_quest_lv98 . _670_sayReward , "Ï†ÅÎ£°ÏÑ± ÎßàÎ¨º" , 1000 - pc . getqf ( "kill_count_1" ) ) ) 
 say_reward ( gameforge . main_quest_flame_lv103 . _260_sayReward ) 

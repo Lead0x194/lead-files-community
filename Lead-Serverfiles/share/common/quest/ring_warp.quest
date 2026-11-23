@@ -2,7 +2,6 @@ quest ring_warp begin
 	state start begin
 		when 10031.sig_use begin
 		--	if pc.get_level() < item.get_value (0) then
-		--		say("·¹º§ÀÌ ³·¾Æ ¸ø°¡³×")
 		--		say("")
 		--		return
 		--	end
@@ -37,7 +36,7 @@ quest ring_warp begin
 					gameforge.functions._150_say,
 				}
 			sub_set = select(town1[empire],town2[empire],locale.map_name[64], locale.map_name[63], locale.map_name[61],locale.map_name[62],gameforge.locale.cancel)
-			if sub_set == 7 then -- ´İ±â
+			if sub_set == 7 then
 				return
 			end
 			

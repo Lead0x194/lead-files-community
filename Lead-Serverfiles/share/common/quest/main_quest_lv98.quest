@@ -1,19 +1,15 @@
---2012.08 김용욱
---명시진 재건
---퀘스트 진행 npc
-define GUARD 20378 -- 경비대장 악무르
-define ICHUNG 20369 -- 이충
-define TELEPORT 9012 -- 공간이동술사
-define YACKHWAN 20377 -- 약령도장 약환
-define SCHOLAR 20380 -- 학자
-define OCKGU 20008 -- 옥구
-define ALCHEMIST 20001 -- 연금술사
-define UNDERLING 20379 -- 악무르의 부하
+define GUARD 20378
+define ICHUNG 20369
+define TELEPORT 9012
+define YACKHWAN 20377
+define SCHOLAR 20380
+define OCKGU 20008
+define ALCHEMIST 20001
+define UNDERLING 20379
 
--- 명시진 재건1-1 --
-define ITEM1_1 31026 --갑각종의 껍질
-define ITEM1_1_NEEDED 100 -- 필요한 갯수
-define ITEM1_1_PCT_GET 50 -- 획득 확률 (1/n)
+define ITEM1_1 31026
+define ITEM1_1_NEEDED 100
+define ITEM1_1_PCT_GET 50
 define MOB1_1 3601
 define MOB1_2 3602
 define MOB1_3 3603
@@ -21,24 +17,23 @@ define MOB1_4 3604
 define MOB1_5 3605
 define MOB1_6 3690
 define MOB1_7 3691
-define MAP_INDEX1 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS1_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MAP_INDEX1 1
+define MAP_POS1_1_X 500
 define MAP_POS1_1_Y 500
 define MAP_POS1_2_X 600
 define MAP_POS1_2_Y 500
 define MAP_POS1_3_X 700
 define MAP_POS1_3_Y 300
-define REWARD1_EXP 40898550 -- 보상 : 경험치
-define REWARD1_GOLD 346000 -- 보상 : 골드
-define REWARD1_ITEM1 72308 -- 보상 : 만년한철
-define REWARD1_ITEM1_COUNT 1 -- 보상 갯수
-define REWARD1_ITEM2 76011 -- 보상 : 육도
-define REWARD1_ITEM2_COUNT 1 -- 보상 갯수
+define REWARD1_EXP 40898550
+define REWARD1_GOLD 346000
+define REWARD1_ITEM1 72308
+define REWARD1_ITEM1_COUNT 1
+define REWARD1_ITEM2 76011
+define REWARD1_ITEM2_COUNT 1
 
--- 명시진 재건1-2 --
-define ITEM2_1 31042 --날카로운 작살
-define ITEM2_1_NEEDED 100 -- 필요한 갯수
-define ITEM2_1_PCT_GET 50 -- 획득 확률 (1/n)
+define ITEM2_1 31042
+define ITEM2_1_NEEDED 100
+define ITEM2_1_PCT_GET 50
 define MOB2_1 3401
 define MOB2_2 3402
 define MOB2_3 3403
@@ -46,56 +41,53 @@ define MOB2_4 3404
 define MOB2_5 3405
 define MOB2_6 3490
 define MOB2_7 3491
-define MAP_INDEX2 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS2_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MAP_INDEX2 1
+define MAP_POS2_1_X 500
 define MAP_POS2_1_Y 500
 define MAP_POS2_2_X 600
 define MAP_POS2_2_Y 500
 define MAP_POS2_3_X 700
 define MAP_POS2_3_Y 300
-define REWARD2_EXP 42646751 -- 보상 : 경험치
-define REWARD2_GOLD 357000 -- 보상 : 골드
-define REWARD2_ITEM1 71026 -- 보상 : 현철
-define REWARD2_ITEM1_COUNT 1 -- 보상 갯수
-define REWARD2_ITEM2 71025 -- 보상 : 야공석
-define REWARD2_ITEM2_COUNT 2 -- 보상 갯수
-define REWARD2_ITEM3 70102 -- 보상 : 선두
-define REWARD2_ITEM3_COUNT 5 -- 보상 갯수
+define REWARD2_EXP 42646751
+define REWARD2_GOLD 357000
+define REWARD2_ITEM1 71026
+define REWARD2_ITEM1_COUNT 1
+define REWARD2_ITEM2 71025
+define REWARD2_ITEM2_COUNT 2
+define REWARD2_ITEM3 70102
+define REWARD2_ITEM3_COUNT 5
 
--- 생활 안정 --
 define MOB3_1 3805
 define MOB3_1_COUNT 50
 define MOB3_2 3890
 define MOB3_2_COUNT 1
-define MAP_INDEX3 1 -- 몬스터가 나오는 맵 번호
-define MAP_POS3_1_X 500 -- 맵에 반짝이도록 보이는 좌표.
+define MAP_INDEX3 1
+define MAP_POS3_1_X 500
 define MAP_POS3_1_Y 500
 define MAP_POS3_2_X 600
 define MAP_POS3_2_Y 500
 define MAP_POS3_3_X 700
 define MAP_POS3_3_Y 300
-define REWARD3_EXP 48584941 -- 보상 : 경험치
-define REWARD3_GOLD 0 -- 보상 : 골드
-define REWARD3_ITEM1 30021 -- 보상 : 깨진 보석조각
-define REWARD3_ITEM1_COUNT 1 -- 보상 갯수
+define REWARD3_EXP 48584941
+define REWARD3_GOLD 0
+define REWARD3_ITEM1 30021
+define REWARD3_ITEM1_COUNT 1
 
--- 마지막 인사 --
-define NPC4_1 20381 -- 촌장
-define NPC4_2 9002 -- 방어구 상인
-define NPC4_3 9003 -- 잡화 상인
-define NPC4_4 9001 -- 무기 상인
-define REWARD4_EXP 32033398 -- 보상 : 경험치
-define REWARD4_GOLD 379000 -- 보상 : 골드
-define REWARD4_ITEM1 30015 -- 보상 : 사귀의 유품
-define REWARD4_ITEM1_COUNT 2 -- 보상 갯수
-define REWARD4_ITEM2 70043 -- 보상 : 도둑의 장갑
-define REWARD4_ITEM2_COUNT 1 -- 보상 갯수
+define NPC4_1 20381
+define NPC4_2 9002
+define NPC4_3 9003
+define NPC4_4 9001
+define REWARD4_EXP 32033398
+define REWARD4_GOLD 379000
+define REWARD4_ITEM1 30015
+define REWARD4_ITEM1_COUNT 2
+define REWARD4_ITEM2 70043
+define REWARD4_ITEM2_COUNT 1
 
---다시 대륙으로 --
-define REWARD5_EXP 38739560 -- 보상 : 경험치
-define REWARD5_GOLD 390000 -- 보상 : 골드
-define REWARD5_ITEM1 30006 -- 보상 : 웅귀의 어금니
-define REWARD5_ITEM1_COUNT 1 -- 보상 갯수
+define REWARD5_EXP 38739560
+define REWARD5_GOLD 390000
+define REWARD5_ITEM1 30006
+define REWARD5_ITEM1_COUNT 1
 
 quest main_quest_lv98 begin
 	state start begin
@@ -105,7 +97,6 @@ quest main_quest_lv98 begin
 			set_state (state1_1)
 		end
 	end
-	----------------------------------명시진 재건 1-1----------------------------------
 	state state1_1 begin
 	
 		when letter begin
@@ -150,7 +141,6 @@ quest main_quest_lv98 begin
 			set_state (state1_2)
 		end
 	end
-	--껍질 모으기 퀘스트 수행--
 	state state1_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._010_sendLetter)
@@ -180,7 +170,6 @@ quest main_quest_lv98 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전에 돌아왔다.--
 		when GUARD.chat.gameforge.main_quest_lv98._010_sendLetter begin
 			say_title(mob_name(GUARD))
 			say(gameforge.main_quest_lv98._070_say)
@@ -226,7 +215,6 @@ quest main_quest_lv98 begin
 			say("")
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when MOB1_1.kill or MOB1_2.kill or MOB1_3.kill or MOB1_4.kill or MOB1_5.kill or MOB1_6.kill or MOB1_7.kill begin
 			if	number (1,ITEM1_1_PCT_GET) == 1 then	
 				if pc.count_item(ITEM1_1) < ITEM1_1_NEEDED then
@@ -251,7 +239,6 @@ quest main_quest_lv98 begin
 				say("")
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD1_EXP))
@@ -267,7 +254,7 @@ quest main_quest_lv98 begin
 				item.set_socket(2, 120)
 				
 				set_state (state2_1)
-			else --중간에 아이템을 빼놓고 왔다.
+			else
 				say_title(mob_name(GUARD))
 				say(gameforge.main_quest_lv98._070_say)
 				say("")
@@ -277,7 +264,6 @@ quest main_quest_lv98 begin
 		end
 	end
 	
-	---------------------------------- 명시진 재건 1-2 ----------------------------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._130_sendLetter)
@@ -338,7 +324,6 @@ quest main_quest_lv98 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when GUARD.chat.gameforge.main_quest_lv98._130_sendLetter begin
 			say_title(mob_name(GUARD))
 			say(gameforge.main_quest_lv98._170_say)
@@ -383,7 +368,6 @@ quest main_quest_lv98 begin
 			say("")
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when MOB2_1.kill or MOB2_2.kill or MOB2_3.kill or MOB2_4.kill or MOB2_5.kill or MOB2_6.kill or MOB2_7.kill begin
 			if	number (1,ITEM2_1_PCT_GET) == 1 then	
 				if pc.count_item(ITEM2_1) < ITEM2_1_NEEDED then
@@ -406,7 +390,6 @@ quest main_quest_lv98 begin
 				say(gameforge.main_quest_lv98._190_say)
 				say("")
 				wait()
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD2_EXP))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD2_GOLD))
@@ -428,7 +411,7 @@ quest main_quest_lv98 begin
 				pc.give_item2(REWARD2_ITEM3, 1)
 				
 				set_state (state3_1)
-			else -- 중간에 아이템을 빠뜨렸다.
+			else
 				say_title(mob_name(GUARD))
 				say(gameforge.main_quest_lv98._170_say)
 				say("")
@@ -439,7 +422,6 @@ quest main_quest_lv98 begin
 		end
 	end
 	
-	---------------------------------- 생활 안정----------------------------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._200_sendLetter)
@@ -584,7 +566,6 @@ quest main_quest_lv98 begin
 			say("")
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, REWARD3_EXP))
 			--say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, REWARD3_GOLD))
@@ -598,7 +579,6 @@ quest main_quest_lv98 begin
 			set_state (state4_1)
 		end
 	end
-	---------------------------------- 마지막 인사----------------------------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._330_sendLetter)
@@ -635,7 +615,6 @@ quest main_quest_lv98 begin
 			set_state (state4_2)
 		end
 	end
-	-- 인사 퀘스트 진행 --
 	state state4_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._330_sendLetter)
@@ -690,7 +669,6 @@ quest main_quest_lv98 begin
 			
 		end
 		
-		-- 클리어 전에 클릭 --
 		when YACKHWAN.chat.gameforge.main_quest_lv98._330_sendLetter begin
 			say_title(mob_name(YACKHWAN ))
 			say(gameforge.main_quest_lv98._390_say)
@@ -698,7 +676,7 @@ quest main_quest_lv98 begin
 			wait()
 		end
 		
-		when __target_npc1__.target.click or NPC4_1.click with pc.getqf("click_npc1") ~= 1 begin -- 촌장
+		when __target_npc1__.target.click or NPC4_1.click with pc.getqf("click_npc1") ~= 1 begin
 			target.delete("__target_npc1__")
 			pc.setqf("click_npc1",1)
 		
@@ -717,7 +695,7 @@ quest main_quest_lv98 begin
 				set_state (state4_3)
 			end
 		end
-		when __target_npc2__.target.click or NPC4_2.click with pc.getqf("click_npc2") ~= 1 begin -- 방어구
+		when __target_npc2__.target.click or NPC4_2.click with pc.getqf("click_npc2") ~= 1 begin
 			target.delete("__target_npc2__")
 			pc.setqf("click_npc2",1)
 		
@@ -737,7 +715,7 @@ quest main_quest_lv98 begin
 			end
 			
 		end
-		when __target_npc3__.target.click or NPC4_3.click with pc.getqf("click_npc3") ~= 1 begin -- 잡화상점
+		when __target_npc3__.target.click or NPC4_3.click with pc.getqf("click_npc3") ~= 1 begin
 			target.delete("__target_npc3__")
 			pc.setqf("click_npc3",1)
 		
@@ -757,7 +735,7 @@ quest main_quest_lv98 begin
 				set_state (state4_3)
 			end
 		end
-		when __target_npc4__.target.click or NPC4_4.click with pc.getqf("click_npc4") ~= 1 begin -- 무기상점
+		when __target_npc4__.target.click or NPC4_4.click with pc.getqf("click_npc4") ~= 1 begin
 			target.delete("__target_npc4__")
 			pc.setqf("click_npc4",1)
 		
@@ -801,7 +779,6 @@ quest main_quest_lv98 begin
 			say(gameforge.main_quest_lv98._450_say)
 			say("")
 			wait()
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD4_EXP))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD4_GOLD))
@@ -818,7 +795,6 @@ quest main_quest_lv98 begin
 			set_state (state5_1)
 		end
 	end
-	----------------------------------다시 대륙으로----------------------------------
 	state state5_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._480_sendLetter)
@@ -849,7 +825,6 @@ quest main_quest_lv98 begin
 			say("")
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD5_EXP))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD5_GOLD))

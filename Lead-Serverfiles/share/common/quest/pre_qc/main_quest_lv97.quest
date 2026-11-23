@@ -6,7 +6,6 @@ quest main_quest_lv97 begin
 			set_state (state1_1)
 		end
 	end
-	----------------------------------천무신녀 처치----------------------------------
 	state state1_1 begin
 	
 		when letter begin
@@ -56,7 +55,6 @@ quest main_quest_lv97 begin
 			set_state (state1_2)
 		end
 	end
-	--퀘스트 수행--
 	state state1_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv97._010_sendLetter)
@@ -76,7 +74,6 @@ quest main_quest_lv97 begin
 			-- clearmapsignal()
 		end
 				
-		--클리어 전에 돌아왔다.--
 		when 20378.chat.gameforge.main_quest_lv97._010_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv97._650_say)
@@ -116,7 +113,6 @@ quest main_quest_lv97 begin
 			say("")
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3905.kill begin
 			if pc.count_item(31074) < 1 then
 				pc.give_item2 ( 31074, 1 )
@@ -157,7 +153,6 @@ quest main_quest_lv97 begin
 				say("")
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 45941088))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -169,7 +164,7 @@ quest main_quest_lv97 begin
 				pc.give_item2(30045, 2)
 				
 				set_state (state2_1)
-			else --중간에 아이템을 빼놓고 왔다.
+			else
 				say_title(mob_name(20378))
 				say(gameforge.main_quest_lv97._650_say)
 				
@@ -178,7 +173,6 @@ quest main_quest_lv97 begin
 		end
 	end
 	
-	---------------------------------- 초마단의 명패 ----------------------------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv97._200_sendLetter)
@@ -231,7 +225,6 @@ quest main_quest_lv97 begin
 			
 			say("")
 		end
-		--클리어 전--
 		when 20377.chat.gameforge.main_quest_lv97._200_sendLetter begin
 			say_title(mob_name(20377))
 			say(gameforge.main_quest_lv97._290_say)
@@ -279,7 +272,6 @@ quest main_quest_lv97 begin
 				say(gameforge.main_quest_lv97._310_say)
 				say("")
 				wait()
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 41032531))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -291,7 +283,7 @@ quest main_quest_lv97 begin
 				pc.give_item2(71001, 3)
 				
 				set_state (state3_1)
-			else -- 중간에 아이템을 빠뜨렸다.
+			else
 				say_title(mob_name(20377))
 				say(gameforge.main_quest_lv97._170_say)
 				say("")
@@ -302,7 +294,6 @@ quest main_quest_lv97 begin
 		end
 	end
 	
-	---------------------------------- 후방 활로 확보----------------------------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv97._320_sendLetter)
@@ -473,7 +464,6 @@ quest main_quest_lv97 begin
 			say(gameforge.main_quest_lv97._430_say)
 			say("")
 			wait()
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 47898648))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 214000))
@@ -487,7 +477,6 @@ quest main_quest_lv97 begin
 			set_state (state4_1)
 		end
 	end
-	---------------------------------- 초호신녀의 직계, 천무신녀----------------------------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv97._440_sendLetter)
@@ -524,7 +513,6 @@ quest main_quest_lv97 begin
 			set_state (state4_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state4_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv97._440_sendLetter)
@@ -534,7 +522,6 @@ quest main_quest_lv97 begin
 			say(gameforge.main_quest_lv97._710_say)
 		end
 		
-		-- 클리어 전에 클릭 --
 		when 20378.chat.gameforge.main_quest_lv97._440_sendLetter begin
 			say_title(mob_name(20378 ))
 			say(gameforge.main_quest_lv97._530_say)
@@ -548,7 +535,6 @@ quest main_quest_lv97 begin
 			set_state (state4_3)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state4_3 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv97._440_sendLetter)
@@ -559,14 +545,13 @@ quest main_quest_lv97 begin
 			say("")
 		end
 		
-		-- 클리어 전에 클릭 --
 		when 20378.chat.gameforge.main_quest_lv97._440_sendLetter begin
 			say_title(mob_name(20378 ))
 			say(gameforge.main_quest_lv97._540_say)
 			say("")
 		end
 		
-		when 3906.kill begin -- 천무신녀 처치 
+		when 3906.kill begin
 			notice_multiline(gameforge.main_quest_lv97._560_notice,notice)
 		
 			say(gameforge.main_quest_lv97._570_say)
@@ -629,7 +614,6 @@ quest main_quest_lv97 begin
 			say("")
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 49586571))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 225000))

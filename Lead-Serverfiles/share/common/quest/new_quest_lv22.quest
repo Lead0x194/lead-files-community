@@ -30,7 +30,7 @@ quest new_quest_lv22 begin
 			elseif pc.get_empire()==3 then
 				find_npc_vnum = 11004
 			end
-			local v=find_npc_by_vnum(find_npc_vnum) -- Wächter des Dorfplatzes
+			local v=find_npc_by_vnum(find_npc_vnum) -- WÃ¤chter des Dorfplatzes
 			if 0==v then
 			else
 				target.vid("__TARGET__", v, gameforge.new_quest_lv22._010_target)
@@ -308,7 +308,7 @@ quest new_quest_lv22 begin
 			q.set_clock(gameforge.new_quest_lv22._082_set_clock, timeLeft)
 			q.start()
 			if is_destination_village(65) then -- 
-				local v=find_npc_by_vnum(20348) -- Wächter des Dämonenturms
+				local v=find_npc_by_vnum(20348) -- WÃ¤chter des DÃ¤monenturms
 				if 0!=v then
 					target.vid("__TARGET4__", v, gameforge.new_quest_lv22._080_target)
 				end

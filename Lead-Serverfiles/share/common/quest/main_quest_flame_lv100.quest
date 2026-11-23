@@ -1,23 +1,20 @@
---2013.01.30 김용욱
 
---퀘스트 진행 npc
-define YACKHWAN 20377 -- 약령도장 약환
-define SCHOLAR 20380 -- 학자
-define ALCHEMIST 20001 -- 연금술사
-define BLACKSMITH 20016 -- 대장장이
+define YACKHWAN 20377
+define SCHOLAR 20380
+define ALCHEMIST 20001
+define BLACKSMITH 20016
 
-	-- 탁기의 저지1-1
-define ITEM2_1 90010 -- 초석
+define ITEM2_1 90010
 define ITEM2_1_NEEDED 10
-define ITEM2_2 30010 -- 곰의 쓸개
+define ITEM2_2 30010
 define ITEM2_2_NEEDED 50
-define ITEM2_3 30025 -- 거미의 독주머니
+define ITEM2_3 30025
 define ITEM2_3_NEEDED 10
-define ITEM2_4 51001 -- 활석
+define ITEM2_4 51001
 define ITEM2_4_NEEDED 200
 
 
-define ITEM3_1 31077 -- 초석가루
+define ITEM3_1 31077
 
 quest main_quest_flame_lv100 begin
 	state start begin
@@ -27,11 +24,9 @@ quest main_quest_flame_lv100 begin
 			set_state (state1_1)
 		end
 	end
-	-- 탁기의 정체
 	state state1_1 begin 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv100._010_sendLetter) 
- 			--npc 타겟 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -41,7 +36,6 @@ quest main_quest_flame_lv100 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv100._010_sendLetter) 
 			say(gameforge.main_quest_flame_lv100._020_say) 
-			--npc 타겟 안내문
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -49,23 +43,22 @@ quest main_quest_flame_lv100 begin
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv100._030_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv100._040_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv100._060_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv100._070_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv100._080_say) 
-			--다음 스테이트로
 			set_state (state1_2)
 		end
 
@@ -75,15 +68,12 @@ quest main_quest_flame_lv100 begin
 	end	
 	state state1_2 begin 
 		when enter begin 
-			--몬스터 처치 수 설정
 			pc.setqf("kill_count_1", 0)
-			-- notice 설정
 			notice_multiline(gameforge.main_quest_flame_lv100._090_notice,notice)
 		end
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv100._010_sendLetter) 
- 			--남은 처치 수 안내문 
 			q.set_counter_name(gameforge.main_quest_lv98._680_counterName)
 			main_quest_flame_lv100.kill_count() 
 		end
@@ -91,7 +81,6 @@ quest main_quest_flame_lv100 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv100._100_sayTitle) 
 			say(gameforge.main_quest_flame_lv100._110_say) 
-			--남은 처치 수 안내문
 			say(gameforge.main_quest_lv98._680_counterName)
 			say(string.format(gameforge.main_quest_lv98._670_sayReward, 300 - pc.getqf("kill_count_1")))
 		end
@@ -125,7 +114,6 @@ quest main_quest_flame_lv100 begin
 			main_quest_flame_lv100.kill_count() 
 		end
 
-		-- 이 아래는 보험용으로 같은 이름의 vnum이 다른 몬스터를 잡았을때도 퀘스트가 클리어 되도록 하였다.
 		when 7020.kill begin
 			local kill_count = pc.getqf("kill_count_1")
 			pc.setqf("kill_count_1", kill_count+1)
@@ -170,13 +158,11 @@ quest main_quest_flame_lv100 begin
 	end	
 	state state1_3 begin 
 		when enter begin 
-			-- notice 설정
 			notice_multiline(gameforge.main_quest_flame_lv100._130_notice,notice)
 		end
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv100._010_sendLetter) 
- 			--npc 타겟 
 			local v = find_npc_by_vnum(YACKHWAN) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(YACKHWAN))
@@ -186,7 +172,6 @@ quest main_quest_flame_lv100 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv100._010_sendLetter) 
 			say(gameforge.main_quest_flame_lv100._140_say) 
-			--npc 타겟 안내문
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -194,7 +179,6 @@ quest main_quest_flame_lv100 begin
 			target.delete("__TARGET__") 
 			say_title(mob_name(YACKHWAN)) 
 			say(gameforge.main_quest_flame_lv100._150_say) 
-			--보상
 			wait()--reward
 
 			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 38143000))
@@ -207,7 +191,6 @@ quest main_quest_flame_lv100 begin
 			pc.give_item2(50814, 10)
 			say()
 
-			--다음 스테이트로
 			set_state (state2_1)
 		end
 
@@ -217,12 +200,10 @@ quest main_quest_flame_lv100 begin
 	end
 	
 
-	-- 탁기의 저지1-1
 	state state2_1 begin 
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv100._160_sendLetter) 
- 			--npc 타겟 
 			local v = find_npc_by_vnum(ALCHEMIST) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(ALCHEMIST))
@@ -232,7 +213,6 @@ quest main_quest_flame_lv100 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv100._160_sendLetter) 
 			say(gameforge.main_quest_flame_lv100._170_say) 
-			--npc 타겟 안내문
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -240,27 +220,26 @@ quest main_quest_flame_lv100 begin
 			target.delete("__TARGET__") 
 			say_title(mob_name(ALCHEMIST)) 
 			say(gameforge.main_quest_flame_lv100._180_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(mob_name(ALCHEMIST)) 
 			say(gameforge.main_quest_flame_lv100._190_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv100._200_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(mob_name(ALCHEMIST)) 
 			say(gameforge.main_quest_flame_lv100._210_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv100._220_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(mob_name(ALCHEMIST)) 
 			say(gameforge.main_quest_flame_lv100._230_say) 
-			--다음 스테이트로
 			set_state (state2_2)
 		end
 
@@ -268,9 +247,8 @@ quest main_quest_flame_lv100 begin
 			--q.done()
 		end
 	end
-	state state2_2 begin -- 재료를 모아오는 부분. 재료를 모두 모은 시점이 파악이 안될 경우 이 state 에서 퀘스트를 완료할 수 있다.
+	state state2_2 begin
 		when enter begin 
-			-- notice 설정
 			notice_multiline(gameforge.main_quest_flame_lv100._240_notice,notice)
 		end
 		when letter begin
@@ -346,15 +324,13 @@ quest main_quest_flame_lv100 begin
 			--q.done()
 		end
 	end
-	state state2_3 begin -- 재료를 모두 모았다. 하지만 이 후에 재료를 다시 제거할 경우, 연금술사에게 말을 걸면 state2_2로 다시 넘어가게 된다.
+	state state2_3 begin
 		when enter begin 
-			-- notice 설정
 			notice_multiline(gameforge.main_quest_flame_lv100._300_notice,notice)
 		end
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv100._160_sendLetter) 
- 			--npc 타겟 
 			local v = find_npc_by_vnum(ALCHEMIST) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(ALCHEMIST))
@@ -364,7 +340,6 @@ quest main_quest_flame_lv100 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv100._160_sendLetter) 
 			say(gameforge.main_quest_flame_lv100._310_say) 
-			--npc 타겟 안내문
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -407,11 +382,9 @@ quest main_quest_flame_lv100 begin
 		end
 	end
 	
-	-- 탁기의 저지1-2
 	state state3_1 begin 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv100._320_sendLetter) 
- 			--npc 타겟 
 			local v = find_npc_by_vnum(ALCHEMIST) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(ALCHEMIST))
@@ -421,7 +394,6 @@ quest main_quest_flame_lv100 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv100._320_sendLetter) 
 			say(gameforge.main_quest_flame_lv100._170_say) 
-			--npc 타겟 안내문
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -429,15 +401,14 @@ quest main_quest_flame_lv100 begin
 			target.delete("__TARGET__") 
 			say_title(mob_name(ALCHEMIST)) 
 			say(gameforge.main_quest_flame_lv100._330_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv100._340_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(mob_name(ALCHEMIST)) 
 			say(gameforge.main_quest_flame_lv100._350_say) 
-			--다음 스테이트로
 			set_state (state3_2)
 		end
 
@@ -447,13 +418,11 @@ quest main_quest_flame_lv100 begin
 	end
 	state state3_2 begin 
 		when enter begin 
-			-- notice 설정
 			notice_multiline(gameforge.main_quest_flame_lv100._240_notice,notice)
 		end
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv100._320_sendLetter) 
- 			--npc 타겟 
 			local v = find_npc_by_vnum(BLACKSMITH) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(BLACKSMITH))
@@ -467,7 +436,6 @@ quest main_quest_flame_lv100 begin
 			say(gameforge.main_quest_flame_lv100._370_say) 
 			say(gameforge.main_quest_flame_lv100._250_say)
 			say(gameforge.main_quest_flame_lv100._380_say)
-			--npc 타겟 안내문
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -475,21 +443,20 @@ quest main_quest_flame_lv100 begin
 			target.delete("__TARGET__") 
 			say_title(mob_name(BLACKSMITH)) 
 			say(gameforge.main_quest_flame_lv100._390_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv100._400_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(mob_name(BLACKSMITH)) 
 			say(gameforge.main_quest_flame_lv100._410_say) 
-			wait()--추가 대화 
+			wait()
 
 			say_title(pc.getname()) 
 			say(gameforge.main_quest_flame_lv100._420_say) 
 			
 			pc.give_item2(ITEM3_1, 1)
-			--다음 스테이트로
 			set_state (state3_3)
 		end
 
@@ -504,13 +471,11 @@ quest main_quest_flame_lv100 begin
 	end
 	state state3_3 begin 
 		when enter begin 
-			-- notice 설정
 			notice_multiline(gameforge.main_quest_flame_lv100._440_notice,notice)
 		end
 
 		when letter begin 
 			send_letter(gameforge.main_quest_flame_lv100._320_sendLetter) 
- 			--npc 타겟 
 			local v = find_npc_by_vnum(ALCHEMIST) 
 			if 0 != v then
 				target.vid("__TARGET__", v, mob_name(ALCHEMIST))
@@ -520,7 +485,6 @@ quest main_quest_flame_lv100 begin
 		when button or info begin 
 			say_title(gameforge.main_quest_flame_lv100._320_sendLetter) 
 			say(gameforge.main_quest_flame_lv100._310_say) 
-			--npc 타겟 안내문
 			--say_reward(locale.target_npc_info) 
 		end
 
@@ -529,7 +493,6 @@ quest main_quest_flame_lv100 begin
 			pc.remove_item(ITEM3_1, pc.count_item(ITEM3_1)) 
 			say_title(mob_name(ALCHEMIST)) 
 			say(gameforge.main_quest_flame_lv100._450_say) 
-			--보상
 			wait()--reward
 
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 35843000))
@@ -544,7 +507,6 @@ quest main_quest_flame_lv100 begin
 			say()
 			say_reward(string.format(gameforge.main_quest_flame_lv99._430_say, 101))
 			
-			--다음 스테이트로
 			set_state (__COMPLETE__)
 			set_quest_state ("main_quest_flame_lv101", "state0")
 		end

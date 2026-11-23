@@ -33,7 +33,6 @@ quest event_flame_dungeon_open begin
 
         when letter with game.get_event_flag("w21open_event")>0 begin
 			send_letter(gameforge.event_flame_dungeon_open._010_npcChat) 
- 			--남은 처치 수 안내문 
 			q.set_counter_name(gameforge.main_quest_lv98._680_counterName)
 			event_flame_dungeon_open.kill_count() 
 		end

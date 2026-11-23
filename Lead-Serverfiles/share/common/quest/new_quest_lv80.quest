@@ -321,9 +321,9 @@ quest new_quest_lv80 begin
 					if mobtype <= 4 then
 						spawnamount = mobtype
 						if mobtype == 1 then
-							spawningmob = 2191 -- Grosse Wüstenschildkröte
+							spawningmob = 2191 -- Grosse WÃ¼stenschildkrÃ¶te
 						else
-							spawningmob = 993 -- Riesiger Plagenträger
+							spawningmob = 993 -- Riesiger PlagentrÃ¤ger
 							spawndistancex = mobtype *2
 							spawndistancey = mobtype *2
 						end

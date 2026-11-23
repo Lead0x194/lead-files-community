@@ -212,7 +212,7 @@ quest collect_quest_lv70  begin
 			say(gameforge.collect_quest_lv70._280_say)
 			say_reward(gameforge.collect_quest_lv70._290_sayReward)
 						affect.add_collect(apply.MOV_SPEED,11,60*60*24*365*60)	
-			affect.add_collect_point(POINT_DEF_BONUS,10,60*60*24*365*60) --60³â		
+			affect.add_collect_point(POINT_DEF_BONUS,10,60*60*24*365*60) --60Â³Ã¢		
 			pc.give_item2(50113)
 			clear_letter()
 			set_quest_state("collect_quest_lv80", "run")

@@ -6,17 +6,6 @@ quest main_quest_lv92 begin
             set_state (state1_1)
         end
     end
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
     state state1_1 begin
 
         when letter begin
@@ -73,7 +62,6 @@ quest main_quest_lv92 begin
             q.set_counter_value(4)
         end
     end
-    --ƒ˘Ω∫∆Æ ºˆ«‡--
     state state1_2 begin
         when letter begin
             send_letter(gameforge.main_quest_lv92._010_sendLetter)
@@ -82,7 +70,7 @@ quest main_quest_lv92 begin
             if remain_item <= 0 then
                 remain_item = 0
             end
-            q.set_counter_name("≥≤¿∫ æ∆¿Ã≈€")
+            q.set_counter_name("ÎÇ®ÏùÄ ÏïÑÏù¥ÌÖú")
             q.set_counter_value(remain_item)
         end
         when button or info begin
@@ -112,7 +100,6 @@ quest main_quest_lv92 begin
             
         end
         
-        --≈¨∏ÆæÓ ¿¸--
         when 20378.chat.gameforge.main_quest_lv92._010_sendLetter begin
             
             if pc.count_item(31010) >= 4 then
@@ -121,7 +108,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._160_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 33874000))
                 say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 200000))
@@ -146,7 +132,6 @@ quest main_quest_lv92 begin
                 if pc.count_item(31010) < 4 then
                     pc.give_item2(31010, 1)
                     
-                    --ƒ˘Ω∫∆Æ ∏ﬁ¥∫ √¢ ƒ´øÓ∆Æ
                     local remain_item = 4 - pc.count_item(31010)
                     if remain_item <= 0 then
                         remain_item = 0
@@ -180,13 +165,11 @@ quest main_quest_lv92 begin
             
         end
         
-        -- ¡ﬂ∞£ø° ƒ˘Ω∫∆Æ æ∆¿Ã≈€¿ª πˆ∏± ∞ÊøÏ∏¶ ¥Î∫Ò«— ∫Œ∫–.
         when 3504.kill or 3505.kill begin
             if number(1,500) == 1 then
                 if pc.count_item(31010) < 4 then
                     pc.give_item2(31010, 1)
                     
-                    --ƒ˘Ω∫∆Æ ∏ﬁ¥∫ √¢ ƒ´øÓ∆Æ
                     local remain_item = 4 - pc.count_item(31010)
                     if remain_item <= 0 then
                         remain_item = 0
@@ -210,7 +193,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._160_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 33874000))
                 say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 200000))
@@ -231,18 +213,6 @@ quest main_quest_lv92 begin
         end
     end
 
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
     state state2_1 begin
         when letter begin
             q.set_counter_name("")
@@ -288,7 +258,6 @@ quest main_quest_lv92 begin
             set_state (state2_2)
         end
     end
-    --ƒ˘Ω∫∆Æ ºˆ«‡--
     state state2_2 begin
         when letter begin
             send_letter(gameforge.main_quest_lv92._170_sendLetter)
@@ -316,7 +285,6 @@ quest main_quest_lv92 begin
             -- clearmapsignal()
         end
         
-        --≈¨∏ÆæÓ ¿¸--
         when 20378.chat.gameforge.main_quest_lv92._170_sendLetter begin
             say_title(mob_name(20378))
             say(gameforge.main_quest_lv92._270_say)
@@ -378,7 +346,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._350_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 20874600))
                 --say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -398,17 +365,6 @@ quest main_quest_lv92 begin
             end
         end
     end
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
     state state3_1 begin
         when letter begin
             send_letter(gameforge.main_quest_lv92._370_sendLetter)
@@ -489,7 +445,7 @@ quest main_quest_lv92 begin
     end
     state state3_3 begin
         when letter begin
-            q.set_counter_name("≥≤¿∫ æ∆¿Ã≈€")
+            q.set_counter_name("ÎÇ®ÏùÄ ÏïÑÏù¥ÌÖú")
             send_letter(gameforge.main_quest_lv92._370_sendLetter)
         end
         when button or info begin
@@ -518,7 +474,6 @@ quest main_quest_lv92 begin
             -- clearmapsignal()
         end
         
-        --≈¨∏ÆæÓ ¿¸--
         when 20380.chat.gameforge.main_quest_lv92._370_sendLetter begin
             if pc.count_item(31022) >= 10 then
                 pc.remove_item ( 31022, pc.count_item(31022))	
@@ -526,7 +481,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._540_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 34874000))
                 --say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -585,7 +539,6 @@ quest main_quest_lv92 begin
             
         end
         
-        -- ¡ﬂ∞£ø° ƒ˘Ω∫∆Æ æ∆¿Ã≈€¿ª πˆ∏± ∞ÊøÏ∏¶ ¥Î∫Ò«— ∫Œ∫–.
         when 3490.kill or 3491.kill begin
             if number(1,500) == 1 then
                 if pc.count_item(31022) < 10 then
@@ -608,7 +561,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._540_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 34874000))
                 --say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -630,17 +582,6 @@ quest main_quest_lv92 begin
         end
     end
 
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
     state state4_1 begin
         when letter begin
             send_letter(gameforge.main_quest_lv92._560_sendLetter)
@@ -670,7 +611,6 @@ quest main_quest_lv92 begin
             say(gameforge.main_quest_lv92._600_say)
             wait()
             
-            --∫∏ªÛ
             say_title(locale.reward)
             say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 24911280))
             --say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))

@@ -3,7 +3,7 @@ quest priv_guild begin
 		when guild_man1.chat."GM: Bonus nach Gilde" or 	guild_man2.chat."GM: Bonus nach Gilde" or guild_man3.chat."GM: Bonus nach Gilde" with pc.get_gm_level()== 5 begin
 
 			-- Select guild
-			say_title("Gildenbonus gew‰hren")
+			say_title("Gildenbonus gew√§hren")
 			say( "Gildenname eingeben" )
 
 			local g_name = input()
@@ -14,16 +14,16 @@ quest priv_guild begin
 			end
 
 			-- Select bonus type
-			say_title("Gildenbonus gew‰hren")
+			say_title("Gildenbonus gew√§hren")
 			say('Aktueller Parameter:')
 			say( __get_guild_priv_string( g_id ) )
-			say('Typ w‰hlen')
+			say('Typ w√§hlen')
 
 			local titles = {
-				"Prozentsatz f. fallen gelassene Gegenst‰nde", 
+				"Prozentsatz f. fallen gelassene Gegenst√§nde", 
 				"Prozentsatz f. fallen gelassenes Gold", 
 				"Prozentsatz f. fallen gelassene Gold-Zehner",
-				"Erfahrungsverh‰ltnis",
+				"Erfahrungsverh√§ltnis",
 			}
 
 			local t = select(
@@ -38,7 +38,7 @@ quest priv_guild begin
 			end
 
 			-- Select the number of bonus
-			say_title("Gildenbonus gew‰hren")
+			say_title("Gildenbonus gew√§hren")
 			say(string.format('%s Bonus : %s', g_name, titles[t]))
 			say('')
 			local g = {0,10,20,30,40,50}
@@ -49,11 +49,11 @@ quest priv_guild begin
 			end
 
 			-- Select bonus time
-			say_title("Gildenbonus gew‰hren")
+			say_title("Gildenbonus gew√§hren")
 			say(string.format('%s Bonus : %s %d%%', g_name, titles[t], g[p]))
 			say('')
 
-			say('Bonuszeit w‰hlen')
+			say('Bonuszeit w√§hlen')
 			local v = 0
 			local h = select("6 Stunden", "12 Stunden", "24 Stunden", "Direkt eingeben", "Abbrechen")
 			if 5 == h then
@@ -61,7 +61,7 @@ quest priv_guild begin
 			elseif 4 == h then
 
 				-- Enter bonus time directly
-				say_title("Gildenbonus gew‰hren")
+				say_title("Gildenbonus gew√§hren")
 				say(string.format('%s Bonus : %s %d%%', g_name, titles[t], g[p]))
 				say('')
 				say('Bonuszeit eingeben')
@@ -82,10 +82,10 @@ quest priv_guild begin
 			end
 
 			-- Confirm setting
-			say_title("Gildenbonus gew‰hren")
+			say_title("Gildenbonus gew√§hren")
 			say(string.format('%s Bonus : %s %d%% (%dZeit)', g_name, titles[t], g[p], v))
 			say('')
-			say('Obige Einstellung ¸bernehmen?')
+			say('Obige Einstellung √ºbernehmen?')
 
 			local s = select('Ja', 'Nein')
 			if 1 == s then

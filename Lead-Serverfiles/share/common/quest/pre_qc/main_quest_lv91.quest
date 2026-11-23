@@ -8,17 +8,6 @@ quest main_quest_lv91 begin
 	end
 	
 	
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
-	-----------------<1> 초마단의 서신을 찾아라!1-1-----------------
 	state state1_1 begin 
 		when letter begin 
 			send_letter (gameforge.main_quest_lv91._010_sendLetter)
@@ -82,7 +71,6 @@ quest main_quest_lv91 begin
 		end
 		
 		--[[
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv91._010_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv91._520_say)
@@ -141,7 +129,6 @@ quest main_quest_lv91 begin
 			say(gameforge.main_quest_lv91._150_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 18803050))
 			--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -158,17 +145,6 @@ quest main_quest_lv91 begin
 		end
 	end
 	
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
-	-----------------<2> 초마단의 서신을 탈환하라!-----------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv91._160_sendLetter)
@@ -220,7 +196,6 @@ quest main_quest_lv91 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv91._160_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv91._220_say)
@@ -237,7 +212,6 @@ quest main_quest_lv91 begin
 			end
 		end
 	end
-	-- 퀘스트 완료
 	state state2_3 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv91._160_sendLetter)
@@ -253,7 +227,6 @@ quest main_quest_lv91 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3291.kill begin
 			if number(1,500) == 1 then
 				if pc.count_item(31075) < 1 then
@@ -278,7 +251,6 @@ quest main_quest_lv91 begin
 				say(gameforge.main_quest_lv91._260_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 24873650))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -301,17 +273,6 @@ quest main_quest_lv91 begin
 			end
 		end
 	end
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
-	-----------------<3> 두번째 서신 판독1-1-----------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv91._270_sendLetter)
@@ -384,12 +345,11 @@ quest main_quest_lv91 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20380.chat.gameforge.main_quest_lv91._270_sendLetter with pc.count_item(31018) > 0  begin
 			if pc.count_item(31018) > 0 then
 				pc.remove_item(31018, 1)
 				
-				if number(1, 100 ) <= 70 then -- 납품 성공
+				if number(1, 100 ) <= 70 then
 					say_title(mob_name(20380 ))
 					say(gameforge.main_quest_lv91._380_say)
 					pc.setqf("item3_1_checked", pc.getqf("item3_1_checked") + 1)
@@ -400,7 +360,7 @@ quest main_quest_lv91 begin
 					end
 					q.set_counter_value(remain)
 					
-					if pc.getqf("item3_1_checked") >= 10 then -- 납품 갯수 달성
+					if pc.getqf("item3_1_checked") >= 10 then
 						pc.remove_item(31018, pc.count_item(31018))
 						
 						wait()
@@ -409,7 +369,6 @@ quest main_quest_lv91 begin
 						say(gameforge.main_quest_lv91._390_say)
 						wait()
 						
-						--보상
 						say_title(locale.reward)
 						say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 25805450))
 						say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 214000))
@@ -422,10 +381,10 @@ quest main_quest_lv91 begin
 						
 						set_state (state4_1)
 						q.set_counter_name("")
-					else  -- 납품 갯수 미달
+					else
 						say(string.format(gameforge.main_quest_lv91._400_say,remain))
 					end
-				else -- 납품 실패
+				else
 					say_title(mob_name(20380 ))
 					say(gameforge.main_quest_lv91._370_say)
 				end
@@ -443,17 +402,6 @@ quest main_quest_lv91 begin
 		end
 	end
 	
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
-	-----------------<4> 두번째 서신 판독1-2-----------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv91._420_sendLetter)
@@ -519,7 +467,6 @@ quest main_quest_lv91 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20380.chat.gameforge.main_quest_lv91._420_sendLetter with pc.count_item(31019) > 0  begin
 			if pc.count_item(31019) > 0 then				
 				local cur_t = get_global_time() - 60 * 60 * 9
@@ -533,13 +480,13 @@ quest main_quest_lv91 begin
 				end
 				
 				local today_item4_1_checked = pc.getqf("today_item4_1_checked")
-				if today_item4_1_checked >= 1 then 					--1일 납품 갯수 초과
+				if today_item4_1_checked >= 1 then
 					say_title(mob_name(20380 ))
 					say(gameforge.main_quest_lv91._500_say)
-				else																									-- 납품 시도.
+				else
 					pc.remove_item(31019, 1)
 					
-					if number(1, 100 ) <= 70 then -- 납품 성공
+					if number(1, 100 ) <= 70 then
 						say_title(mob_name(20380 ))
 						say(gameforge.main_quest_lv91._510_say)
 						pc.setqf("item4_1_checked", pc.getqf("item4_1_checked") + 1)
@@ -551,7 +498,7 @@ quest main_quest_lv91 begin
 						end
 						q.set_counter_value(remain)
 						
-						if pc.getqf("item4_1_checked") >= 3 then -- 납품 갯수 달성
+						if pc.getqf("item4_1_checked") >= 3 then
 							pc.remove_item(31019, pc.count_item(31019))
 							
 							wait()
@@ -560,7 +507,6 @@ quest main_quest_lv91 begin
 							say(gameforge.main_quest_lv91._520_say)
 							wait()
 							
-							--보상
 							say_title(locale.reward)
 							say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 27874000))
 							say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 225000))
@@ -571,10 +517,10 @@ quest main_quest_lv91 begin
 							
 							set_state (state5_1)
 							q.set_counter_name("")
-						else 																						-- 납품 갯수 미달
+						else
 							say(string.format(gameforge.main_quest_lv91._530_say,remain))
 						end
-					else																	-- 납품 실패
+					else
 						say_title(mob_name(20380 ))
 						say(gameforge.main_quest_lv91._540_say)
 					end
@@ -591,17 +537,6 @@ quest main_quest_lv91 begin
 			end
 		end
 	end
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
-	-----------------<5> 학자의 병환-----------------
 	state state5_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv91._560_sendLetter)
@@ -683,7 +618,6 @@ quest main_quest_lv91 begin
 			say(gameforge.main_quest_lv91._670_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 6766050))
 			--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -700,7 +634,6 @@ quest main_quest_lv91 begin
 			set_state (__COMPLETE__)
 		end
 	end
-	-- 퀘스트 완료
 	state state5_3 begin
 	
 		when letter begin
@@ -718,7 +651,6 @@ quest main_quest_lv91 begin
 			
 		end
 		
-		-- 아이템 분실 대비.
 		when 20382.click begin
 			if pc.count_item(31020) < 1 then
 				pc.give_item2(31020, 1)
@@ -742,7 +674,6 @@ quest main_quest_lv91 begin
 			say(gameforge.main_quest_lv91._670_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 6766050))
 			--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))

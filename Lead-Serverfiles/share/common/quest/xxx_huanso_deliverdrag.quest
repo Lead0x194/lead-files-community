@@ -105,9 +105,9 @@ quest huanso_deliverdrag begin
 			local dst_kill_count=locale.huanso.kill_count
 
 			if pc.level>end_level then
-				--chat("Übersteigt Level")
+				--chat("Ãœbersteigt Level")
 				if kill_count>dst_kill_count then
-					--chat("Übersteigt Anzahl für erfolgreiches Fangen")
+					--chat("Ãœbersteigt Anzahl fÃ¼r erfolgreiches Fangen")
 					say(locale.huanso.kill_giveup_say)
 					setstate(failure)
 					makequestbutton(locale.huanso.failure_label)

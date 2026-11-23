@@ -416,7 +416,7 @@ quest heavens_cave_keyquest begin
 			send_letter(gameforge.heavens_cave_keyquest._020_npcChat)
 			q.start()
 			q.set_title(gameforge.heavens_cave_keyquest._020_npcChat)
-			--q.set_counter("Tränen benötigt:", pc.getqf("heavens_cave_keyquest_NeededTearsAmount")-pc.getqf("tears_collected"))
+			--q.set_counter("TrÃ¤nen benÃ¶tigt:", pc.getqf("heavens_cave_keyquest_NeededTearsAmount")-pc.getqf("tears_collected"))
 			-- painting the locations for the tears if on fireland map
 			if pc.get_map_index() == 62 then
                 local allTearsTaken = true

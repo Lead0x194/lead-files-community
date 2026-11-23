@@ -54,7 +54,7 @@ quest pre_event_heavens_cave begin
 			if randomvalue == 2 then
 				herbvnum = 50722 -- Glockenblume - LV20
 			elseif randomvalue == 3 then
-				herbvnum = 50723 -- Kakiblüte - LV24
+				herbvnum = 50723 -- KakiblÃ¼te - LV24
 			elseif randomvalue == 4 then
 				herbvnum = 50724 -- Gango-Wurzel - LV28
 			elseif randomvalue == 5 or randomvalue == 6 then
@@ -66,7 +66,7 @@ quest pre_event_heavens_cave begin
 			elseif randomvalue >= 10 then
 				herbvnum = 50728 -- Maulbeeren - LV50
 			else
-				herbvnum = 50721 -- Pfirsichblüte  - LV16
+				herbvnum = 50721 -- PfirsichblÃ¼te  - LV16
 			end
 			return herbvnum
 		end
@@ -75,23 +75,23 @@ quest pre_event_heavens_cave begin
 			local randomvalue = math.random(1,6)
 			local potionvnum = 0
 			if maxlevel <= 18 then
-				if randomvalue <= 3 then potionvnum = 27100 -- Grüner Trank(K)
+				if randomvalue <= 3 then potionvnum = 27100 -- GrÃ¼ner Trank(K)
 				else potionvnum = 27103 -- Violetter Trank(K)
 				end
 			elseif maxlevel > 18 and maxlevel <= 25 + randomvalue then
-				if randomvalue == 1 then potionvnum = 27100 -- Grüner Trank(K)
+				if randomvalue == 1 then potionvnum = 27100 -- GrÃ¼ner Trank(K)
 				elseif randomvalue == 2 then potionvnum = 27103 -- Violetter Trank(K)
 				elseif randomvalue == 3 then potionvnum = 27002 -- Roter Trank(M)
 				elseif randomvalue == 4 then potionvnum = 27005 -- Blauer Trank(M)
-				elseif randomvalue == 5 then potionvnum = 27101 -- Grüner Trank(M)
+				elseif randomvalue == 5 then potionvnum = 27101 -- GrÃ¼ner Trank(M)
 				else potionvnum = 27104 -- Violetter Trank(M)
 				end
 			else
-				if randomvalue == 1 then potionvnum = 27101 -- Grüner Trank(M)
+				if randomvalue == 1 then potionvnum = 27101 -- GrÃ¼ner Trank(M)
 				elseif randomvalue == 2 then potionvnum = 27104 -- Violetter Trank(M)
 				elseif randomvalue == 3 then potionvnum = 27003 -- Roter Trank(G)
 				elseif randomvalue == 4 then potionvnum = 27006 -- Blauer Trank(G)
-				elseif randomvalue == 5 then potionvnum = 27102 -- Grüner Trank(G)
+				elseif randomvalue == 5 then potionvnum = 27102 -- GrÃ¼ner Trank(G)
 				else potionvnum = 27105 -- Violetter Trank(G)
 				end
 			end

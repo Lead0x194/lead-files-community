@@ -69,10 +69,10 @@ quest main_quest_lv84 begin
 			pc.give_exp2(63000000)
 			pc.change_money(250000)
 
-			pc.give_item2(71026) -- 현철
-			pc.give_item2(71026) -- 현철
-			pc.give_item2(70051) -- 선왕의 장갑
-			pc.give_item2(70050) -- 선왕의 증표 
+			pc.give_item2(71026)
+			pc.give_item2(71026)
+			pc.give_item2(70051)
+			pc.give_item2(70050)
 
 			set_state (state_2)
 		end
@@ -142,10 +142,10 @@ quest main_quest_lv84 begin
 			pc.give_exp2(84000000)
 			pc.change_money(250000)
 
-			pc.give_item2(71025) -- 야공석
-			pc.give_item2(71025) -- 야공석 
-			pc.give_item2(70038) -- 용기의 망토
-			pc.give_item2(71107) -- 천도복숭아
+			pc.give_item2(71025)
+			pc.give_item2(71025)
+			pc.give_item2(70038)
+			pc.give_item2(71107)
 			set_state (__COMPLETE__)
 		end
 	end

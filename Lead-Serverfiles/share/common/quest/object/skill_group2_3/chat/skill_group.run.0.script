@@ -28,7 +28,7 @@ end
 set_state ( "start" ) 
 pc . set_skill_group ( 1 ) 
 pc . clear_skill ( ) 
-char_log ( 0 , "CLEAR_SKILL" , "Fertigkeit nach Fertigkeitsmeister löschen" ) 
+char_log ( 0 , "CLEAR_SKILL" , "Fertigkeit nach Fertigkeitsmeister lÃ¶schen" ) 
 say_title ( gameforge . skill_group . _480_sayTitle ) 
 say ( gameforge . skill_group . _320_say ) 
 if not pc . is_clear_skill_group ( ) then 

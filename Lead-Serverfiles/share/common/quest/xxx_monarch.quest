@@ -5,7 +5,7 @@ quest Kaiser begin
 	
 			if game.get_event_flag("Kaiser") == 1 then 
 				say("Du kannst hier die Kaiserwahl beenden.")
-				say("Möchtest Du die Kaiserwahl jetzt beenden?")
+				say("MÃ¶chtest Du die Kaiserwahl jetzt beenden?")
 				local s = select("Beenden.","Nicht beenden.")
 
 				if s == 1 then
@@ -13,7 +13,7 @@ quest Kaiser begin
 				end
 			else
 				say("Du kannst hier die Kaiser Wahl anfangen.")
-				say("Möchtest du die Kaiser Wahl jetzt anfangen?")
+				say("MÃ¶chtest du die Kaiser Wahl jetzt anfangen?")
 				local s = select("Anfangen","Nicht anfangen.")
 
 				if s == 1 then
@@ -28,7 +28,7 @@ quest Kaiser begin
 	
 			if game.get_event_flag("Kaiserwahl") == 1 then 
 				say("Du kannst hier die Kaiserwahl beenden.")
-				say("Möchtest Du die Kaiserwahl jetzt beenden?")
+				say("MÃ¶chtest Du die Kaiserwahl jetzt beenden?")
 				local s = select("Beenden.","Nicht beenden.")
 
 				if s == 1 then
@@ -36,7 +36,7 @@ quest Kaiser begin
 				end
 			else
 				say("Du kannst hier die Kaiserwahl anfangen.")
-				say("Möchtest Du die Kaiserwahl anfangen?")				
+				say("MÃ¶chtest Du die Kaiserwahl anfangen?")				
 				local s = select("Anfangen","Nicht Anfangen.")
 
 				if s == 1 then
@@ -48,7 +48,7 @@ quest Kaiser begin
 		end
 	
 
-		when electionman1.chat."Wähle einen Kaiser" or electionman2.chat."Wähle einen Kaiser" or electionman3.chat."Wähle einen Kaiser"  begin
+		when electionman1.chat."WÃ¤hle einen Kaiser" or electionman2.chat."WÃ¤hle einen Kaiser" or electionman3.chat."WÃ¤hle einen Kaiser"  begin
 		
 
 			if  game.get_event_flag("Kaiserwahl") != 1 then
@@ -71,11 +71,11 @@ quest Kaiser begin
 				say("Es gibt noch keine Kanditaten")
 			else
 				gname_table[table.getn(g)+1] = locale.cancel
-				say("Du kannst hier für einen Kaiser stimmen.")
-				say("Während der Kaiserwahlen beruhigen sich die Nationen ein wenig")
-				say("Bitte, Wähle vorsichtig")
+				say("Du kannst hier fÃ¼r einen Kaiser stimmen.")
+				say("WÃ¤hrend der Kaiserwahlen beruhigen sich die Nationen ein wenig")
+				say("Bitte, WÃ¤hle vorsichtig")
 				say("Du hast nur eine Stimme.")
-				say("Bitte Wähle einen Kanditaten")
+				say("Bitte WÃ¤hle einen Kanditaten")
 				wait()
 				local s = select_table(gname_table)
 
@@ -84,17 +84,17 @@ quest Kaiser begin
 				else
 					ret = oh.election( s -1 )
 					
-					say(oh.candidacy_name(s-1).."Du hast gewählt")
+					say(oh.candidacy_name(s-1).."Du hast gewÃ¤hlt")
 				end
 			end	
 		end
 		when electionman1.chat."Zeigt die Kaiser Kanditaten" 	or electionman2.chat."Zeigt die Kaiser Kanditaten" 	or electionman3.chat."Zeigt die Kaiser Kanditaten"  begin
 	    
 			if  game.get_event_flag("Kaiser") != 1 then
-				say("Folgende Qualifikationen sind für einen") 
-				say("Kaiser nötig.")
+				say("Folgende Qualifikationen sind fÃ¼r einen") 
+				say("Kaiser nÃ¶tig.")
 				say("")
-				say_reward("1. Eine Wahl Gebühr von 1 Million Yang")
+				say_reward("1. Eine Wahl GebÃ¼hr von 1 Million Yang")
 				say_reward("2. Du musst Gilden Leader oder Vize-Gilden leader sein")
 				say_reward("3. Level 50 muss erreicht sein")
 				
@@ -103,15 +103,15 @@ quest Kaiser begin
 				say("Komm wieder wenn sie gestartet ist.")
 				return 	
 			end
-			say("Du bist im Begriff, dich für die Wahl einzutragen.")
-			say("Als ein Kanditat musst du folgende Vorrausetzngen erfüllen")
+			say("Du bist im Begriff, dich fÃ¼r die Wahl einzutragen.")
+			say("Als ein Kanditat musst du folgende Vorrausetzngen erfÃ¼llen")
 			say("")
-			say_reward("1. Eine Wahl Gebühr von 1 Million Yang")
+			say_reward("1. Eine Wahl GebÃ¼hr von 1 Million Yang")
 			say_reward("2. Du musst Gilden Leader oder Vize-Gilden leader sein")
 			say_reward("3. Level 50 muss erreicht sein")
 
 			say("")
-			say("Möchtest du dich zur Wahl stellen?")
+			say("MÃ¶chtest du dich zur Wahl stellen?")
 
 		    local s = select("Ja, ich stelle mich zur Wahl.","Nein Danke.")
 
@@ -121,7 +121,7 @@ quest Kaiser begin
 				if oh.candidacycount() >= 8 then
 					say("Es tut uns leid.")
 					say("Wir haben genug Kanditaten.")
-					say("Versuche es bei der nächsten Wahl.")
+					say("Versuche es bei der nÃ¤chsten Wahl.")
 					return 
 				end
 				if pc.get_gold() >= NEED_MONEY and pc.get_level() >= 50 and oh.isguildmaster() == 1 then 

@@ -11,17 +11,6 @@ quest main_quest_lv90 begin
 	end
 	
 	
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
-	-----------------<01> 이충의 호출-----------------
 	state state01_1 begin 
 		when letter begin 
 			send_letter (gameforge.main_quest_lv90._1070_sendLetter)
@@ -67,13 +56,10 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._1120_say)
 		end
 		
-		-------<<< 공간 이동 술사가 캐릭터를 이동 시켜주는 내용이 추가되어야 한다. >>>--------
-		--필요한 내용 : 이동할 좌표, npc 번호, 관련 스크립트.
 		--
 		--
 		
 		when login or enter with pc.get_map_index() == 301 begin
-			--보상
 			say_title(locale.reward)
 			--say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 0))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 50000))
@@ -88,17 +74,6 @@ quest main_quest_lv90 begin
 		end
 	end
 	
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
-	-----------------<1> 악룡군도의 상황-----------------
 	state state1_1 begin 
 		when letter begin 
 			send_letter (gameforge.main_quest_lv90._010_sendLetter)
@@ -154,7 +129,6 @@ quest main_quest_lv90 begin
 			set_state (state1_2)
 		end
 	end
-	-- 첫번째 지역 정찰
 	state state1_2 begin 
 		when letter begin 
 			target.pos ("__TARGET__",226,731,301,"")
@@ -187,7 +161,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._160_say)
 		end
 	end 
-	-- 두번째 지역 정찰
 	state state1_3 begin 
 		when letter begin 
 			target.pos ("__TARGET__",1093,285,301,"")
@@ -219,7 +192,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._160_say)
 		end
 	end 
-	-- 세번째 지역 정찰
 	-- state state1_4 begin 
 		-- when letter begin 
 			-- target.pos ("__TARGET__",RECON3_X,RECON3_Y,RECON3_MAPINDEX,"")
@@ -251,7 +223,6 @@ quest main_quest_lv90 begin
 			-- say(locale.main_quest_lv90.say_14)
 		-- end
 	-- end 
-	-- 네번째 지역 정찰
 	state state1_5 begin 
 		when letter begin 
 			target.pos ("__TARGET__",1081,1289,301,"")
@@ -283,7 +254,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._160_say)
 		end
 	end 
-	-- 정찰 완료
 	state state1_6 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv90._010_sendLetter)
@@ -309,7 +279,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._250_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			--say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 0))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 100000))
@@ -324,17 +293,6 @@ quest main_quest_lv90 begin
 		end
 	end
 	
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
-	-----------------<2> 이충의 편지-----------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv90._260_sendLetter)
@@ -404,7 +362,6 @@ quest main_quest_lv90 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv90._260_sendLetter begin
 			if pc.count_item(31016) >= 1 then
 				pc.remove_item ( 31016, pc.count_item(31016))	
@@ -421,7 +378,6 @@ quest main_quest_lv90 begin
 				say(gameforge.main_quest_lv90._420_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 6247460))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 137000))
@@ -450,7 +406,6 @@ quest main_quest_lv90 begin
 			end
 		end
 	end
-	-- 퀘스트 완료
 	state state2_3 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv90._260_sendLetter)
@@ -465,7 +420,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._390_say)
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3001.kill or 3002.kill or 3003.kill or 3004.kill or 3005.kill or 3090.kill or 3091.kill begin
 			if number(1,1) == 1 then
 				if pc.count_item(31016) < 1 then
@@ -495,7 +449,6 @@ quest main_quest_lv90 begin
 				say(gameforge.main_quest_lv90._420_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 6247460))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 137000))
@@ -515,17 +468,6 @@ quest main_quest_lv90 begin
 			end
 		end
 	end
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
-	-----------------<3> 낭인족의 단서1-1-----------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv90._430_sendLetter)
@@ -579,7 +521,6 @@ quest main_quest_lv90 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv90._430_sendLetter begin
 			if pc.count_item(31009) >= 1 then
 				pc.remove_item ( 31009, pc.count_item(31009))	
@@ -588,7 +529,6 @@ quest main_quest_lv90 begin
 				say(gameforge.main_quest_lv90._530_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 10421740))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 148000))
@@ -624,7 +564,6 @@ quest main_quest_lv90 begin
 			end
 		end
 	end
-	-- 퀘스트 완료
 	state state3_3 begin
 	
 		when letter begin
@@ -641,7 +580,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._520_say)
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3005.kill begin
 			if number(1,500) == 1 then
 				if pc.count_item(31009) < 1 then
@@ -665,7 +603,6 @@ quest main_quest_lv90 begin
 				say_title(mob_name(20378))
 				say(gameforge.main_quest_lv90._530_say)
 				wait()
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 10421740))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 148000))
@@ -689,17 +626,6 @@ quest main_quest_lv90 begin
 		end
 	end
 	
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
-	-----------------<4> 낭인족의 단서1-2-----------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv90._560_sendLetter)
@@ -751,7 +677,6 @@ quest main_quest_lv90 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv90._560_sendLetter begin
 			if pc.count_item(31009) >= 1 then
 				pc.remove_item ( 31009, pc.count_item(31009))	
@@ -764,7 +689,6 @@ quest main_quest_lv90 begin
 				say(gameforge.main_quest_lv90._670_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 15421740))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 100000))
@@ -799,7 +723,6 @@ quest main_quest_lv90 begin
 			end
 		end
 	end
-	-- 퀘스트 완료
 	state state4_3 begin
 	
 		when letter begin
@@ -816,7 +739,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._680_say)
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3090.kill begin
 			if number(1,200) == 1 then
 				if pc.count_item(31009) < 1 then
@@ -845,7 +767,6 @@ quest main_quest_lv90 begin
 				say(gameforge.main_quest_lv90._670_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 15421740))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 100000))
@@ -867,17 +788,6 @@ quest main_quest_lv90 begin
 			end
 		end
 	end
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
-	-----------------<5> 범익족의 규모 파악-----------------
 	state state5_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv90._690_sendLetter)
@@ -955,7 +865,6 @@ quest main_quest_lv90 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv90._690_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv90._770_say)
@@ -1037,7 +946,6 @@ quest main_quest_lv90 begin
 			end
 		end
 	end
-	-- 퀘스트 완료
 	state state5_3 begin
 	
 		when letter begin
@@ -1072,7 +980,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._810_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 12933740))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 170000))
@@ -1086,17 +993,6 @@ quest main_quest_lv90 begin
 			set_state (state6_1)
 		end
 	end
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
-	-----------------<6> 명시진의 방벽 강화1-1-----------------
 	state state6_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv90._850_sendLetter)
@@ -1160,7 +1056,6 @@ quest main_quest_lv90 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv90._010_sendLetter begin
 			if pc.count_item(31027) >= 50 then
 				pc.remove_item ( 31027, pc.count_item(31027))	
@@ -1169,7 +1064,6 @@ quest main_quest_lv90 begin
 				say(gameforge.main_quest_lv90._960_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 14425740))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -1209,7 +1103,6 @@ quest main_quest_lv90 begin
 			end
 		end
 	end
-	-- 퀘스트 완료
 	state state6_3 begin
 	
 		when letter begin
@@ -1227,7 +1120,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._520_say)
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3001.kill or 3002.kill or 3003.kill or 3004.kill or 3005.kill or 3090.kill or 3091.kill begin
 			if number(1,200) == 1 then
 				if pc.count_item(31027) < 50 then
@@ -1256,7 +1148,6 @@ quest main_quest_lv90 begin
 				say(gameforge.main_quest_lv90._960_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 14425740))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -1278,17 +1169,6 @@ quest main_quest_lv90 begin
 			end
 		end
 	end
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
-	-----------------<7> 명시진의 방벽 강화1-2-----------------
 	state state7_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv90._970_sendLetter)
@@ -1346,7 +1226,6 @@ quest main_quest_lv90 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv90._010_sendLetter begin
 			if pc.count_item(31028) >= 100 then
 				pc.remove_item ( 31028, pc.count_item(31028))	
@@ -1355,7 +1234,6 @@ quest main_quest_lv90 begin
 				say(gameforge.main_quest_lv90._1060_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 14922580))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 192000))
@@ -1399,7 +1277,6 @@ quest main_quest_lv90 begin
 			end
 		end
 	end
-	-- 퀘스트 완료
 	state state7_3 begin
 	
 		when letter begin
@@ -1417,7 +1294,6 @@ quest main_quest_lv90 begin
 			say(gameforge.main_quest_lv90._1050_say)
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3201.kill or 3202.kill or 3203.kill or 3204.kill or 3205.kill or 3290.kill or 3291.kill begin
 			if number(1,200) == 1 then
 				if pc.count_item(31028) < 100 then
@@ -1446,7 +1322,6 @@ quest main_quest_lv90 begin
 				say(gameforge.main_quest_lv90._1060_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 14922580))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 192000))

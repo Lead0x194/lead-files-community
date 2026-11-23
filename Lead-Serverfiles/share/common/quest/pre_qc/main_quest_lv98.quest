@@ -6,7 +6,6 @@ quest main_quest_lv98 begin
 			set_state (state1_1)
 		end
 	end
-	----------------------------------명시진 재건 1-1----------------------------------
 	state state1_1 begin
 	
 		when letter begin
@@ -51,7 +50,6 @@ quest main_quest_lv98 begin
 			set_state (state1_2)
 		end
 	end
-	--껍질 모으기 퀘스트 수행--
 	state state1_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._010_sendLetter)
@@ -81,7 +79,6 @@ quest main_quest_lv98 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전에 돌아왔다.--
 		when 20378.chat.gameforge.main_quest_lv98._010_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv98._070_say)
@@ -127,7 +124,6 @@ quest main_quest_lv98 begin
 			say("")
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3601.kill or 3602.kill or 3603.kill or 3604.kill or 3605.kill or 3690.kill or 3691.kill begin
 			if	number (1,50) == 1 then	
 				if pc.count_item(31026) < 100 then
@@ -152,7 +148,6 @@ quest main_quest_lv98 begin
 				say("")
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 40898550))
@@ -168,7 +163,7 @@ quest main_quest_lv98 begin
 				item.set_socket(2, 120)
 				
 				set_state (state2_1)
-			else --중간에 아이템을 빼놓고 왔다.
+			else
 				say_title(mob_name(20378))
 				say(gameforge.main_quest_lv98._070_say)
 				say("")
@@ -178,7 +173,6 @@ quest main_quest_lv98 begin
 		end
 	end
 	
-	---------------------------------- 명시진 재건 1-2 ----------------------------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._130_sendLetter)
@@ -239,7 +233,6 @@ quest main_quest_lv98 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv98._130_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv98._170_say)
@@ -284,7 +277,6 @@ quest main_quest_lv98 begin
 			say("")
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3401.kill or 3402.kill or 3403.kill or 3404.kill or 3405.kill or 3490.kill or 3491.kill begin
 			if	number (1,50) == 1 then	
 				if pc.count_item(31042) < 100 then
@@ -307,7 +299,6 @@ quest main_quest_lv98 begin
 				say(gameforge.main_quest_lv98._190_say)
 				say("")
 				wait()
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 42646751))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 357000))
@@ -329,7 +320,7 @@ quest main_quest_lv98 begin
 				pc.give_item2(70102, 1)
 				
 				set_state (state3_1)
-			else -- 중간에 아이템을 빠뜨렸다.
+			else
 				say_title(mob_name(20378))
 				say(gameforge.main_quest_lv98._170_say)
 				say("")
@@ -340,7 +331,6 @@ quest main_quest_lv98 begin
 		end
 	end
 	
-	---------------------------------- 생활 안정----------------------------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._200_sendLetter)
@@ -485,7 +475,6 @@ quest main_quest_lv98 begin
 			say("")
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format(gameforge.main_quest_lv60._190_sayReward, 48584941))
 			--say_reward(string.format(gameforge.main_quest_lv60._200_sayReward, 0))
@@ -499,7 +488,6 @@ quest main_quest_lv98 begin
 			set_state (state4_1)
 		end
 	end
-	---------------------------------- 마지막 인사----------------------------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._330_sendLetter)
@@ -536,7 +524,6 @@ quest main_quest_lv98 begin
 			set_state (state4_2)
 		end
 	end
-	-- 인사 퀘스트 진행 --
 	state state4_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._330_sendLetter)
@@ -591,7 +578,6 @@ quest main_quest_lv98 begin
 			
 		end
 		
-		-- 클리어 전에 클릭 --
 		when 20377.chat.gameforge.main_quest_lv98._330_sendLetter begin
 			say_title(mob_name(20377 ))
 			say(gameforge.main_quest_lv98._390_say)
@@ -599,7 +585,7 @@ quest main_quest_lv98 begin
 			wait()
 		end
 		
-		when __target_npc1__.target.click or 20381.click with pc.getqf("click_npc1") ~= 1 begin -- 촌장
+		when __target_npc1__.target.click or 20381.click with pc.getqf("click_npc1") ~= 1 begin
 			target.delete("__target_npc1__")
 			pc.setqf("click_npc1",1)
 		
@@ -618,7 +604,7 @@ quest main_quest_lv98 begin
 				set_state (state4_3)
 			end
 		end
-		when __target_npc2__.target.click or 9002.click with pc.getqf("click_npc2") ~= 1 begin -- 방어구
+		when __target_npc2__.target.click or 9002.click with pc.getqf("click_npc2") ~= 1 begin
 			target.delete("__target_npc2__")
 			pc.setqf("click_npc2",1)
 		
@@ -638,7 +624,7 @@ quest main_quest_lv98 begin
 			end
 			
 		end
-		when __target_npc3__.target.click or 9003.click with pc.getqf("click_npc3") ~= 1 begin -- 잡화상점
+		when __target_npc3__.target.click or 9003.click with pc.getqf("click_npc3") ~= 1 begin
 			target.delete("__target_npc3__")
 			pc.setqf("click_npc3",1)
 		
@@ -658,7 +644,7 @@ quest main_quest_lv98 begin
 				set_state (state4_3)
 			end
 		end
-		when __target_npc4__.target.click or 9001.click with pc.getqf("click_npc4") ~= 1 begin -- 무기상점
+		when __target_npc4__.target.click or 9001.click with pc.getqf("click_npc4") ~= 1 begin
 			target.delete("__target_npc4__")
 			pc.setqf("click_npc4",1)
 		
@@ -702,7 +688,6 @@ quest main_quest_lv98 begin
 			say(gameforge.main_quest_lv98._450_say)
 			say("")
 			wait()
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 32033398))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 379000))
@@ -719,7 +704,6 @@ quest main_quest_lv98 begin
 			set_state (state5_1)
 		end
 	end
-	----------------------------------다시 대륙으로----------------------------------
 	state state5_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv98._480_sendLetter)
@@ -750,7 +734,6 @@ quest main_quest_lv98 begin
 			say("")
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 38739560))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 390000))

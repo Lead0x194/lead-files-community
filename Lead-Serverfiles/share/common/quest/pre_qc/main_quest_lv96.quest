@@ -6,7 +6,6 @@ quest main_quest_lv96 begin
 			set_state (state1_1)
 		end
 	end
-	------------------------------------강령술 저지1-1------------------------------------
 	state state1_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv96._010_sendLetter)
@@ -44,7 +43,6 @@ quest main_quest_lv96 begin
 			set_state (state1_2)
 		end
 	end
-	--퀘스트 수행--
 	state state1_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv96._010_sendLetter)
@@ -74,7 +72,6 @@ quest main_quest_lv96 begin
 			-- clearmapsignal()
 		end
 				
-		--클리어 전에 돌아왔다.--
 		when 20378.chat.gameforge.main_quest_lv96._010_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv96._100_say)
@@ -121,7 +118,6 @@ quest main_quest_lv96 begin
 			say("")
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3701.kill or 3702.kill or 3703.kill or 3704.kill or 3705.kill or 3790.kill or 3791.kill begin
 			if pc.count_item(31038) < 100 then
 				if	number (1,50) == 1 then	
@@ -146,7 +142,6 @@ quest main_quest_lv96 begin
 				say("")
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 39032537))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 346000))
@@ -158,7 +153,7 @@ quest main_quest_lv96 begin
 				pc.give_item2(30051, 1)
 				
 				set_state (state2_1)
-			else --중간에 아이템을 빼놓고 왔다.
+			else
 				say_title(mob_name(20378))
 				say(gameforge.main_quest_lv96._100_say)
 				say("")
@@ -168,7 +163,6 @@ quest main_quest_lv96 begin
 		end
 	end
 	
-	------------------------------------강령술 저지1-2------------------------------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv96._140_sendLetter)
@@ -234,7 +228,6 @@ quest main_quest_lv96 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv96._140_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv96._220_say)
@@ -288,7 +281,6 @@ quest main_quest_lv96 begin
 			say("")
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3801.kill or 3802.kill or 3803.kill or 3804.kill or 3805.kill or 3890.kill or 3891.kill begin
 			if pc.count_item(31039) < 1 or  pc.count_item(31040) < 1 then
 				if	number (1,100) == 1 then	
@@ -327,7 +319,6 @@ quest main_quest_lv96 begin
 			end
 		end
 	end
-	--학자에게로
 	state state2_4 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv96._140_sendLetter)
@@ -360,7 +351,6 @@ quest main_quest_lv96 begin
 		end
 		
 	end
-	--다시 경비대장에게
 	state state2_5 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv96._140_sendLetter)
@@ -386,7 +376,6 @@ quest main_quest_lv96 begin
 			say(gameforge.main_quest_lv96._590_say)
 			say("")
 			wait()
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 40732586))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 357000))
@@ -402,7 +391,6 @@ quest main_quest_lv96 begin
 		end
 	end
 	
-	------------------------------------강령술 저지1-3------------------------------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv96._300_sendLetter)
@@ -494,7 +482,7 @@ quest main_quest_lv96 begin
 		
 		when 20380.chat.gameforge.main_quest_lv96._300_sendLetter with pc.count_item(31039) > 0 begin
 			pc.remove_item (31039, 1)
-			if number(1,100) <= 70 then -- 감정 성공
+			if number(1,100) <= 70 then
 				say_title(mob_name(20380 ))
 				say(gameforge.main_quest_lv96._370_say)
 				say("")
@@ -518,7 +506,6 @@ quest main_quest_lv96 begin
 					say("")
 					wait()
 					
-					--보상
 					say_title(locale.reward)
 					say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 42983593))
 					--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -534,7 +521,7 @@ quest main_quest_lv96 begin
 					say(string.format(gameforge.main_quest_lv96._390_say,remain))
 					say("")
 				end
-			else -- 감정 실패
+			else
 				say_title(mob_name(20380 ))
 				say(gameforge.main_quest_lv96._630_say)
 				say("")
@@ -542,7 +529,6 @@ quest main_quest_lv96 begin
 		end
 	end
 	
-	------------------------------------강령술 저지1-4-----------------------------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv96._400_sendLetter)
@@ -580,7 +566,6 @@ quest main_quest_lv96 begin
 			set_state (state4_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state4_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv96._400_sendLetter)
@@ -618,7 +603,6 @@ quest main_quest_lv96 begin
 			-- clearmapsignal()
 		end
 		
-		-- 클리어 전에 클릭 --
 		when 20378.chat.gameforge.main_quest_lv96._400_sendLetter begin
 			say_title(mob_name(20378 ))
 			say(gameforge.main_quest_lv96._500_say)
@@ -723,7 +707,6 @@ quest main_quest_lv96 begin
 			say("")
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 44941086))
 			say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 379000))

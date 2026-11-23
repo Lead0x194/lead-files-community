@@ -6,17 +6,6 @@ quest main_quest_lv95 begin
 			set_state (state1_1)
 		end
 	end
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
-	------------------------------------괴력의 지무신왕------------------------------------
 	state state1_1 begin
 	
 		when letter begin
@@ -47,7 +36,6 @@ quest main_quest_lv95 begin
 			set_state (state1_2)
 		end
 	end
-	--퀘스트 수행--
 	state state1_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._010_sendLetter)
@@ -68,7 +56,6 @@ quest main_quest_lv95 begin
 			-- clearmapsignal()
 		end
 				
-		--클리어 전에 돌아왔다.--
 		when 20378.chat.gameforge.main_quest_lv95._010_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv95._090_say)
@@ -102,7 +89,6 @@ quest main_quest_lv95 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3904.kill begin
 			if pc.count_item(31015) < 1 then
 				pc.give_item2 ( 31015, 1 )
@@ -133,7 +119,6 @@ quest main_quest_lv95 begin
 				say(gameforge.main_quest_lv95._170_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 27532396))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 302000))
@@ -145,7 +130,7 @@ quest main_quest_lv95 begin
 				pc.give_item2(27994, 1)
 				
 				set_state (state2_1)
-			else --중간에 아이템을 빼놓고 왔다.
+			else
 				say_title(mob_name(20378))
 				say(gameforge.main_quest_lv95._090_say)
 				say("")
@@ -155,17 +140,6 @@ quest main_quest_lv95 begin
 		end
 	end
 	
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
-	------------------------------------검은황금 전달 저지------------------------------------
 	state state2_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._180_sendLetter)
@@ -212,7 +186,6 @@ quest main_quest_lv95 begin
 			-- setskin(NOWINDOW)
 			-- clearmapsignal()
 		end
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv95._180_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv95._250_say)
@@ -248,7 +221,6 @@ quest main_quest_lv95 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3890.kill begin
 			if pc.count_item(31037) < 1 then
 				if	number (1,5) == 1 then	
@@ -283,7 +255,6 @@ quest main_quest_lv95 begin
 				say(gameforge.main_quest_lv95._310_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 29032586))
 				--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -295,7 +266,7 @@ quest main_quest_lv95 begin
 				pc.give_item2(30048, 1)
 				
 				set_state (state3_1)
-			else -- 아이템이 없다.
+			else
 				say_title(mob_name(20378))
 				say(gameforge.main_quest_lv95._250_say)
 				
@@ -303,17 +274,6 @@ quest main_quest_lv95 begin
 			end
 		end
 	end
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
-	------------------------------------검은황금 정제 차단------------------------------------
 	state state3_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._320_sendLetter)
@@ -359,7 +319,6 @@ quest main_quest_lv95 begin
 			-- clearmapsignal()
 		end
 		
-		--클리어 전--
 		when 20378.chat.gameforge.main_quest_lv95._320_sendLetter begin
 			say_title(mob_name(20378))
 			say(gameforge.main_quest_lv95._390_say)
@@ -406,7 +365,6 @@ quest main_quest_lv95 begin
 			say(gameforge.main_quest_lv95._460_say)
 			wait()
 			
-			--보상
 			say_title(locale.reward)
 			say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 33003907))
 			--say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 0))
@@ -424,17 +382,6 @@ quest main_quest_lv95 begin
 		end
 	end
 	
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
-	------------------------------------천기의 조화1-1-----------------------------------
 	state state4_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._470_sendLetter)
@@ -470,7 +417,6 @@ quest main_quest_lv95 begin
 			set_state (state4_2)
 		end
 	end
-	-- 퀘스트 진행 --
 	state state4_2 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._470_sendLetter)
@@ -491,7 +437,6 @@ quest main_quest_lv95 begin
 			-- clearmapsignal()
 		end
 		
-		-- 클리어 전에 클릭 --
 		when 20378.chat.gameforge.main_quest_lv95._470_sendLetter begin
 			say_title(mob_name(20378 ))
 			say(gameforge.main_quest_lv95._560_say)
@@ -524,7 +469,6 @@ quest main_quest_lv95 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3303.kill begin
 			if pc.count_item(31043) < 1 then
 				if	number (1,5) == 1 then	
@@ -557,7 +501,6 @@ quest main_quest_lv95 begin
 				say(gameforge.main_quest_lv95._620_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 30943586))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 335000))
@@ -582,18 +525,6 @@ quest main_quest_lv95 begin
 		end
 	end
 	
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	------------------------------------천기의 조화1-2-----------------------------------
-	-- 퀘스트 진행 --
 	state state5_1 begin
 		when letter begin
 			send_letter(gameforge.main_quest_lv95._630_sendLetter)
@@ -622,7 +553,6 @@ quest main_quest_lv95 begin
 			-- clearmapsignal()
 		end
 		
-		-- 클리어 전에 클릭 --
 		when 20378.chat.gameforge.main_quest_lv95._630_sendLetter begin
 			say_title(mob_name(20378 ))
 			say(gameforge.main_quest_lv95._660_say)
@@ -663,7 +593,6 @@ quest main_quest_lv95 begin
 			
 		end
 		
-		-- 중간에 퀘스트 아이템을 버릴 경우를 대비한 부분.
 		when 3303.kill begin
 			if pc.count_item(31043) < 2 then
 				if	number (1,4) == 1 then	
@@ -697,7 +626,6 @@ quest main_quest_lv95 begin
 				say(gameforge.main_quest_lv95._720_say)
 				wait()
 				
-				--보상
 				say_title(locale.reward)
 				say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, 31932545))
 				say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, 337000))

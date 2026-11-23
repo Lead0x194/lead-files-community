@@ -1,75 +1,68 @@
---2012.08 ±ËøÎøÌ
---∏ﬁ¿Œƒ˘Ω∫∆Æ ∑π∫ß 92
 
---ƒ˘Ω∫∆Æ ¡¯«‡ npc
-define GUARD 20378 -- ∞Ê∫Ò¥Î¿Â æ«π´∏£
-define ICHUNG 20369 -- ¿Ã√Ê
-define TELEPORT 9012 -- ∞¯∞£¿Ãµøº˙ªÁ
-define YACKHWAN 20377 -- æ‡∑…µµ¿Â æ‡»Ø
-define SCHOLAR 20380 -- «–¿⁄
-define OCKGU 20008 -- ø¡±∏
-define ALCHEMIST 20001 -- ø¨±›º˙ªÁ
-define UNDERLING 20379 -- æ«π´∏£¿« ∫Œ«œ
+define GUARD 20378
+define ICHUNG 20369
+define TELEPORT 9012
+define YACKHWAN 20377
+define SCHOLAR 20380
+define OCKGU 20008
+define ALCHEMIST 20001
+define UNDERLING 20379
 
 --<1>--
---√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2--
-define MOB1_1 3504 -- ∫”¿∫µµ¿˚¥‹ ¿Â±∫
-define MOB1_2 3505 -- ∫”¿∫µµ¿˚¥‹ ªÛ±ﬁ¿Âºˆ
-define MAP_INDEX1 1 -- ∏ÛΩ∫≈Õ∞° ≥™ø¿¥¬ ∏  π¯»£
-define MAP_POS1_1_X 500 -- ∏ ø° π›¬¶¿Ãµµ∑œ ∫∏¿Ã¥¬ ¡¬«•.
+define MOB1_1 3504
+define MOB1_2 3505
+define MAP_INDEX1 1
+define MAP_POS1_1_X 500
 define MAP_POS1_1_Y 500
 define MAP_POS1_2_X 600
 define MAP_POS1_2_Y 500
 define MAP_POS1_3_X 700
 define MAP_POS1_3_Y 300
-define ITEM1_1 31010 -- ∫”¿∫ µµ¿˚¥‹¿« º≠Ω≈ ¡∂∞¢
-define ITEM1_1_NEEDED 4 -- « ø‰«— ∞πºˆ 
-define ITEM1_1_PCT_GET 500 -- »πµÊ »Æ∑¸ (1/n)
-define REWARD1_EXP 33874000 --  ∫∏ªÛ : ∞Ê«Ëƒ°
-define REWARD1_GOLD 200000 --  ∫∏ªÛ : ∞ÒµÂ
-define REWARD1_ITEM1 50817 --  ∫∏ªÛ : ¡¯»∞Ω…æ◊
-define REWARD1_ITEM1_COUNT 10 --  ∫∏ªÛ ∞πºˆ
+define ITEM1_1 31010
+define ITEM1_1_NEEDED 4
+define ITEM1_1_PCT_GET 500
+define REWARD1_EXP 33874000
+define REWARD1_GOLD 200000
+define REWARD1_ITEM1 50817
+define REWARD1_ITEM1_COUNT 10
 
 --<2>--
---∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢--
-define ITEM2_1 31010 -- ∫”¿∫ º≠Ω≈¡∂∞¢
-define MAP_INDEX2 1 -- ∏ÛΩ∫≈Õ∞° ≥™ø¿¥¬ ∏  π¯»£
-define MAP_POS2_1_X 500 -- ∏ ø° π›¬¶¿Ãµµ∑œ ∫∏¿Ã¥¬ ¡¬«•.
+define ITEM2_1 31010
+define MAP_INDEX2 1
+define MAP_POS2_1_X 500
 define MAP_POS2_1_Y 500
 define MAP_POS2_2_X 600
 define MAP_POS2_2_Y 500
 define MAP_POS2_3_X 700
 define MAP_POS2_3_Y 300
-define REWARD2_EXP 20874600 -- ∫∏ªÛ : ∞Ê«Ëƒ°
-define REWARD2_GOLD 0 -- ∫∏ªÛ : ∞ÒµÂ
-define REWARD2_ITEM1 30047 -- ∫∏ªÛ : ¿˙¡÷¿« º≠
-define REWARD2_ITEM1_COUNT 2 -- ∫∏ªÛ ∞πºˆ
+define REWARD2_EXP 20874600
+define REWARD2_GOLD 0
+define REWARD2_ITEM1 30047
+define REWARD2_ITEM1_COUNT 2
 
 --<3>--
---ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1 --
-define MOB3_1 3490 -- æÓ¿Œ¡∑ ∫∏Ω∫
-define MOB3_2 3491 -- æÓ¿Œ¡∑ √÷¡æ∫∏Ω∫
-define MAP_INDEX3 1 -- ∏ÛΩ∫≈Õ∞° ≥™ø¿¥¬ ∏  π¯»£
-define MAP_POS3_1_X 500 -- ∏ ø° π›¬¶¿Ãµµ∑œ ∫∏¿Ã¥¬ ¡¬«•.
+define MOB3_1 3490
+define MOB3_2 3491
+define MAP_INDEX3 1
+define MAP_POS3_1_X 500
 define MAP_POS3_1_Y 500
 define MAP_POS3_2_X 600
 define MAP_POS3_2_Y 500
 define MAP_POS3_3_X 700
 define MAP_POS3_3_Y 300
-define ITEM3_1 31022 -- æÓ¿Œ¡∑¿« ∫Ò¥√ (≈◊Ω∫∆Æ : µµ+2)
-define ITEM3_1_NEEDED 10 -- « ø‰«— ∞πºˆ 
-define ITEM3_1_PCT_GET 500 -- »πµÊ »Æ∑¸ (1/n)
-define REWARD3_EXP 34874000 -- ∫∏ªÛ : ∞Ê«Ëƒ°
-define REWARD3_GOLD 0 -- ∫∏ªÛ : ∞ÒµÂ
-define REWARD3_ITEM1 27992 -- ∫∏ªÛ : πÈ¡¯¡÷
-define REWARD3_ITEM1_COUNT 2 -- ∫∏ªÛ ∞πºˆ
+define ITEM3_1 31022 -- ¬æ√Æ√Ä√é√Å¬∑√Ä√á ¬∫√±¬¥√É (√Ö√ó¬Ω¬∫√Ü¬Æ : ¬µ¬µ+2)
+define ITEM3_1_NEEDED 10
+define ITEM3_1_PCT_GET 500
+define REWARD3_EXP 34874000
+define REWARD3_GOLD 0
+define REWARD3_ITEM1 27992
+define REWARD3_ITEM1_COUNT 2
 
 --<4>--
---√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«--
-define REWARD4_EXP 24911280 -- ∫∏ªÛ : ∞Ê«Ëƒ°
-define REWARD4_GOLD 0 -- ∫∏ªÛ : ∞ÒµÂ
-define REWARD4_ITEM1 27993 -- ∫∏ªÛ : √ª¡¯¡÷
-define REWARD4_ITEM1_COUNT 2 -- ∫∏ªÛ ∞πºˆ
+define REWARD4_EXP 24911280
+define REWARD4_GOLD 0
+define REWARD4_ITEM1 27993
+define REWARD4_ITEM1_COUNT 2
 
 
 quest main_quest_lv92 begin
@@ -80,17 +73,6 @@ quest main_quest_lv92 begin
             set_state (state1_1)
         end
     end
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿ª √£æ∆∂Û!1-2------------------------------------
     state state1_1 begin
 
         when letter begin
@@ -147,7 +129,6 @@ quest main_quest_lv92 begin
             q.set_counter_value(ITEM1_1_NEEDED)
         end
     end
-    --ƒ˘Ω∫∆Æ ºˆ«‡--
     state state1_2 begin
         when letter begin
             send_letter(gameforge.main_quest_lv92._010_sendLetter)
@@ -156,7 +137,7 @@ quest main_quest_lv92 begin
             if remain_item <= 0 then
                 remain_item = 0
             end
-            q.set_counter_name("≥≤¿∫ æ∆¿Ã≈€")
+            q.set_counter_name("ÎÇ®ÏùÄ ÏïÑÏù¥ÌÖú")
             q.set_counter_value(remain_item)
         end
         when button or info begin
@@ -186,7 +167,6 @@ quest main_quest_lv92 begin
             
         end
         
-        --≈¨∏ÆæÓ ¿¸--
         when GUARD.chat.gameforge.main_quest_lv92._010_sendLetter begin
             
             if pc.count_item(ITEM1_1) >= ITEM1_1_NEEDED then
@@ -195,7 +175,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._160_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD1_EXP))
                 say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD1_GOLD))
@@ -220,7 +199,6 @@ quest main_quest_lv92 begin
                 if pc.count_item(ITEM1_1) < ITEM1_1_NEEDED then
                     pc.give_item2(ITEM1_1, 1)
                     
-                    --ƒ˘Ω∫∆Æ ∏ﬁ¥∫ √¢ ƒ´øÓ∆Æ
                     local remain_item = ITEM1_1_NEEDED - pc.count_item(ITEM1_1)
                     if remain_item <= 0 then
                         remain_item = 0
@@ -254,13 +232,11 @@ quest main_quest_lv92 begin
             
         end
         
-        -- ¡ﬂ∞£ø° ƒ˘Ω∫∆Æ æ∆¿Ã≈€¿ª πˆ∏± ∞ÊøÏ∏¶ ¥Î∫Ò«— ∫Œ∫–.
         when MOB1_1.kill or MOB1_2.kill begin
             if number(1,ITEM1_1_PCT_GET) == 1 then
                 if pc.count_item(ITEM1_1) < ITEM1_1_NEEDED then
                     pc.give_item2(ITEM1_1, 1)
                     
-                    --ƒ˘Ω∫∆Æ ∏ﬁ¥∫ √¢ ƒ´øÓ∆Æ
                     local remain_item = ITEM1_1_NEEDED - pc.count_item(ITEM1_1)
                     if remain_item <= 0 then
                         remain_item = 0
@@ -284,7 +260,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._160_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD1_EXP))
                 say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD1_GOLD))
@@ -305,18 +280,6 @@ quest main_quest_lv92 begin
         end
     end
 
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
-    ------------------------------------∏∂¡ˆ∏∑ º≠Ω≈ ¡∂∞¢------------------------------------
     state state2_1 begin
         when letter begin
             q.set_counter_name("")
@@ -362,7 +325,6 @@ quest main_quest_lv92 begin
             set_state (state2_2)
         end
     end
-    --ƒ˘Ω∫∆Æ ºˆ«‡--
     state state2_2 begin
         when letter begin
             send_letter(gameforge.main_quest_lv92._170_sendLetter)
@@ -390,7 +352,6 @@ quest main_quest_lv92 begin
             -- clearmapsignal()
         end
         
-        --≈¨∏ÆæÓ ¿¸--
         when GUARD.chat.gameforge.main_quest_lv92._170_sendLetter begin
             say_title(mob_name(GUARD))
             say(gameforge.main_quest_lv92._270_say)
@@ -452,7 +413,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._350_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD2_EXP))
                 --say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD2_GOLD))
@@ -472,17 +432,6 @@ quest main_quest_lv92 begin
             end
         end
     end
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
-    ------------------------------------ººπ¯¬∞ º≠Ω≈ ∆«µ∂1-1------------------------------------
     state state3_1 begin
         when letter begin
             send_letter(gameforge.main_quest_lv92._370_sendLetter)
@@ -563,7 +512,7 @@ quest main_quest_lv92 begin
     end
     state state3_3 begin
         when letter begin
-            q.set_counter_name("≥≤¿∫ æ∆¿Ã≈€")
+            q.set_counter_name("ÎÇ®ÏùÄ ÏïÑÏù¥ÌÖú")
             send_letter(gameforge.main_quest_lv92._370_sendLetter)
         end
         when button or info begin
@@ -592,7 +541,6 @@ quest main_quest_lv92 begin
             -- clearmapsignal()
         end
         
-        --≈¨∏ÆæÓ ¿¸--
         when SCHOLAR.chat.gameforge.main_quest_lv92._370_sendLetter begin
             if pc.count_item(ITEM3_1) >= ITEM3_1_NEEDED then
                 pc.remove_item ( ITEM3_1, pc.count_item(ITEM3_1))	
@@ -600,7 +548,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._540_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD3_EXP))
                 --say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD3_GOLD))
@@ -659,7 +606,6 @@ quest main_quest_lv92 begin
             
         end
         
-        -- ¡ﬂ∞£ø° ƒ˘Ω∫∆Æ æ∆¿Ã≈€¿ª πˆ∏± ∞ÊøÏ∏¶ ¥Î∫Ò«— ∫Œ∫–.
         when MOB3_1.kill or MOB3_2.kill begin
             if number(1,ITEM3_1_PCT_GET) == 1 then
                 if pc.count_item(ITEM3_1) < ITEM3_1_NEEDED then
@@ -682,7 +628,6 @@ quest main_quest_lv92 begin
                 say(gameforge.main_quest_lv92._540_say)
                 wait()
                 
-                --∫∏ªÛ
                 say_title(locale.reward)
                 say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD3_EXP))
                 --say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD3_GOLD))
@@ -704,17 +649,6 @@ quest main_quest_lv92 begin
         end
     end
 
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
-    ------------------------------------√ ∏∂¥‹¿« º≠Ω≈¿« ¡¯Ω«-----------------------------------
     state state4_1 begin
         when letter begin
             send_letter(gameforge.main_quest_lv92._560_sendLetter)
@@ -744,7 +678,6 @@ quest main_quest_lv92 begin
             say(gameforge.main_quest_lv92._600_say)
             wait()
             
-            --∫∏ªÛ
             say_title(locale.reward)
             say_reward(string.format (gameforge.main_quest_lv60._190_sayReward, REWARD4_EXP))
             --say_reward(string.format (gameforge.main_quest_lv60._200_sayReward, REWARD4_GOLD))

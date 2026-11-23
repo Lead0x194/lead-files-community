@@ -1,193 +1,193 @@
-Group	L01_µé°³(PAWN)-µé°³(PAWN)
+Group	L01_ë“¤ê°œ(PAWN)-ë“¤ê°œ(PAWN)
 {
 	Leader	Wildhund	101
 	Vnum	101
 	1	Wildhund	101
 	2	Wildhund	101
 }
-Group	L03_´Á´ë(PAWN)-µé°³(PAWN)
+Group	L03_ëŠ‘ëŒ€(PAWN)-ë“¤ê°œ(PAWN)
 {
 	Leader	Wolf	102
 	Vnum	102
 	1	Wildhund	101
 	2	Wildhund	101
 }
-Group	L03_´Á´ë(PAWN)-´Á´ë(PAWN)
+Group	L03_ëŠ‘ëŒ€(PAWN)-ëŠ‘ëŒ€(PAWN)
 {
 	Leader	Wolf	102
 	Vnum	103
 	1	Wolf	102
 	2	Wolf	102
 }
-Group	L04_µÎ¸ñ´Á´ë(S_PAWN)-´Á´ë(PAWN)
+Group	L04_ë‘ëª©ëŠ‘ëŒ€(S_PAWN)-ëŠ‘ëŒ€(PAWN)
 {
 	Leader	Alpha-Wolf	103
 	Vnum	104
 	1	Wolf	102
 	2	Wolf	102
 }
-Group	L06_Çª¸¥´Á´ë(PAWN)-Çª¸¥´Á´ë(PAWN)
+Group	L06_í‘¸ë¥¸ëŠ‘ëŒ€(PAWN)-í‘¸ë¥¸ëŠ‘ëŒ€(PAWN)
 {
 	Leader	Blauwolf	104
 	Vnum	105
 	1	Blauwolf	104
 	2	Blauwolf	104
 }
-Group	L09_¸äµÅÁö(PAWN)-Çª¸¥´Á´ë(PAWN)
+Group	L09_ë©§ë¼ì§€(PAWN)-í‘¸ë¥¸ëŠ‘ëŒ€(PAWN)
 {
 	Leader	Keiler	108
 	Vnum	106
 	1	Blauwolf	104
 	2	Blauwolf	104
 }
-Group	L13_Çª¸¥_µÎ¸ñ´Á´ë(S_PAWN)-¸äµÅÁö(PAWN)
+Group	L13_í‘¸ë¥¸_ë‘ëª©ëŠ‘ëŒ€(S_PAWN)-ë©§ë¼ì§€(PAWN)
 {
 	Leader	Alpha-Blauwolf	105
 	Vnum	107
 	1	Keiler	108
 	2	Keiler	108
 }
-Group	L16_Çª¸¥_µÎ¸ñ´Á´ë(S_PAWN)-Çª¸¥_µÎ¸ñ´Á´ë(S_PAWN)
+Group	L16_í‘¸ë¥¸_ë‘ëª©ëŠ‘ëŒ€(S_PAWN)-í‘¸ë¥¸_ë‘ëª©ëŠ‘ëŒ€(S_PAWN)
 {
 	Leader	Alpha-Blauwolf	105
 	Vnum	108
 	1	Alpha-Blauwolf	105
 	2	Alpha-Blauwolf	105
 }
-Group	L16_ºÓÀº_¸äµÅÁö(S_PAWN)-Çª¸¥_µÎ¸ñ´Á´ë(S_PAWN)
+Group	L16_ë¶‰ì€_ë©§ë¼ì§€(S_PAWN)-í‘¸ë¥¸_ë‘ëª©ëŠ‘ëŒ€(S_PAWN)
 {
 	Leader	"Roter Keiler"	109
 	Vnum	109
 	1	Alpha-Blauwolf	105
 	2	Alpha-Blauwolf	105
 }
-Group	L16_ºÓÀº_¸äµÅÁö(S_PAWN)-ºÓÀº_¸äµÅÁö(S_PAWN)
+Group	L16_ë¶‰ì€_ë©§ë¼ì§€(S_PAWN)-ë¶‰ì€_ë©§ë¼ì§€(S_PAWN)
 {
 	Leader	"Roter Keiler"	109
 	Vnum	110
 	1	"Roter Keiler"	109
 	2	"Roter Keiler"	109
 }
-Group	L16_°õ(PAWN)-ºÓÀº_¸äµÅÁö(S_PAWN)
+Group	L16_ê³°(PAWN)-ë¶‰ì€_ë©§ë¼ì§€(S_PAWN)
 {
 	Leader	B?r	110
 	Vnum	111
 	1	"Roter Keiler"	109
 	2	"Roter Keiler"	109
 }
-Group	L16_°õ(PAWN)-°õ(PAWN)
+Group	L16_Â°Ãµ(PAWN)-Â°Ãµ(PAWN)
 {
 	Leader	B?r	110
 	Vnum	112
 	1	B?r	110
 	2	B?r	110
 }
-Group	L16_È¸»ö´Á´ë(PAWN)-°õ(PAWN)
+Group	L16_íšŒìƒ‰ëŠ‘ëŒ€(PAWN)-ê³°(PAWN)
 {
 	Leader	Grauwolf	106
 	Vnum	113
 	1	B?r	110
 	2	B?r	110
 }
-Group	L16_È¸»ö´Á´ë(PAWN)-È¸»ö´Á´ë(PAWN)
+Group	L16_íšŒìƒ‰ëŠ‘ëŒ€(PAWN)-íšŒìƒ‰ëŠ‘ëŒ€(PAWN)
 {
 	Leader	Grauwolf	106
 	Vnum	114
 	1	Grauwolf	106
 	2	Grauwolf	106
 }
-Group	L19_È¸»ö°õ(S_PAWN)-È¸»ö´Á´ë(PAWN)
+Group	L19_íšŒìƒ‰ê³°(S_PAWN)-íšŒìƒ‰ëŠ‘ëŒ€(PAWN)
 {
 	Leader	Grizzlyb?r	111
 	Vnum	115
 	1	Grauwolf	106
 	2	Grauwolf	106
 }
-Group	L21_È¸»ö°õ(S_PAWN)-È¸»ö°õ(PAWN)
+Group	L21_íšŒìƒ‰ê³°(S_PAWN)-íšŒìƒ‰ê³°(PAWN)
 {
 	Leader	Grizzlyb?r	111
 	Vnum	116
 	1	Grizzlyb?r	111
 	2	Grizzlyb?r	111
 }
-Group	L21_È¸»ö_µÎ¸ñ´Á´ë(S_PAWN)-È¸»ö°õ(S_PAWN)
+Group	L21_íšŒìƒ‰_ë‘ëª©ëŠ‘ëŒ€(S_PAWN)-íšŒìƒ‰ê³°(S_PAWN)
 {
 	Leader	Alpha-Grauwolf	107
 	Vnum	117
 	1	Grizzlyb?r	111
 	2	Grizzlyb?r	111
 }
-Group	L21_È¸»ö_µÎ¸ñ´Á´ë(S_PAWN)-È¸»ö_µÎ¸ñ´Á´ë(S_PAWN)
+Group	L21_íšŒìƒ‰_ë‘ëª©ëŠ‘ëŒ€(S_PAWN)-íšŒìƒ‰_ë‘ëª©ëŠ‘ëŒ€(S_PAWN)
 {
 	Leader	Alpha-Grauwolf	107
 	Vnum	118
 	1	Alpha-Grauwolf	107
 	2	Alpha-Grauwolf	107
 }
-Group	L24_È£¶ûÀÌ(PAWN)-È¸»ö_µÎ¸ñ´Á´ë(S_PAWN)
+Group	L24_í˜¸ë‘ì´(PAWN)-íšŒìƒ‰_ë‘ëª©ëŠ‘ëŒ€(S_PAWN)
 {
 	Leader	Tiger	114
 	Vnum	119
 	1	Alpha-Grauwolf	107
 	2	Alpha-Grauwolf	107
 }
-Group	L24_È£¶ûÀÌ(PAWN)-È£¶ûÀÌ(PAWN)
+Group	L24_í˜¸ë‘ì´(PAWN)-í˜¸ë‘ì´(PAWN)
 {
 	Leader	Tiger	114
 	Vnum	120
 	1	Tiger	114
 	2	Tiger	114
 }
-Group	L08_°ËÀº°õ(S_PWAN)-È£¶ûÀÌ(PWAN)
+Group	L08_ê²€ì€ê³°(S_PWAN)-í˜¸ë‘ì´(PWAN)
 {
 	Leader	Schwarzb?r	112
 	Vnum	121
 	1	Tiger	114
 	2	Tiger	114
 }
-Group	L09_°ËÀº°õ(S_PWAN)-°ËÀº°õ(S_PWAN)
+Group	L09_ê²€ì€ê³°(S_PWAN)-ê²€ì€ê³°(S_PWAN)
 {
 	Leader	Schwarzb?r	112
 	Vnum	122
 	1	Schwarzb?r	112
 	2	Schwarzb?r	112
 }
-Group	L11_ºÒ°õ(S_PWAN)-°ËÀº°õ(S-PWAN)
+Group	L11_ë¶ˆê³°(S_PWAN)-ê²€ì€ê³°(S-PWAN)
 {
 	Leader	Braunb?r	113
 	Vnum	123
 	1	Schwarzb?r	112
 	2	Braunb?r	113
 }
-Group	L14_ºÒ°õ(S_PWAN)-ºÒ°õ(S-PWAN)
+Group	L14_ë¶ˆê³°(S_PWAN)-ë¶ˆê³°(S-PWAN)
 {
 	Leader	Braunb?r	113
 	Vnum	124
 	1	Braunb?r	113
 	2	Braunb?r	113
 }
-Group	L18_´ëÈ£(S_PWAN)-ºÒ°õ(S_PWAN)
+Group	L18_ëŒ€í˜¸(S_PWAN)-ë¶ˆê³°(S_PWAN)
 {
-	Leader	"Wei©¬er Tiger"	115
+	Leader	"WeiÂ©Â¬er Tiger"	115
 	Vnum	125
 	1	Braunb?r	113
 	2	Braunb?r	113
 }
-Group	L21_´ëÈ£(S_PWAN)-´ëÈ£(S_PWAN)
+Group	L21_ëŒ€í˜¸(S_PWAN)-ëŒ€í˜¸(S_PWAN)
 {
-	Leader	"Wei©¬er Tiger"	115
+	Leader	"WeiÂ©Â¬er Tiger"	115
 	Vnum	126
-	1	"Wei©¬er Tiger"	115
-	2	"Wei©¬er Tiger"	115
+	1	"WeiÂ©Â¬er Tiger"	115
+	2	"WeiÂ©Â¬er Tiger"	115
 }
-Group	L30_ÀúÁÖ¹ŞÀº´Á´ë
+Group	L30_ì €ì£¼ë°›ì€ëŠ‘ëŒ€
 {
 	Leader	"Verfl. Wolf"	131
 	Vnum	127
 	1	"Verfl. Wolf"	131
 	2	"Verfl. Wolf"	131
 }
-Group	L31_ÀúÁÖ¹ŞÀºµÎ¸ñ´Á´ë
+Group	L31_ì €ì£¼ë°›ì€ë‘ëª©ëŠ‘ëŒ€
 {
 	Leader	"Verfl. Alpha-Wolf"	132
 	Vnum	128
@@ -195,14 +195,14 @@ Group	L31_ÀúÁÖ¹ŞÀºµÎ¸ñ´Á´ë
 	2	"Verfl. Wolf"	131
 	3	"Verfl. Wolf"	131
 }
-Group	L32_ÀúÁÖ¹ŞÀºÇª¸¥´Á´ë
+Group	L32_ì €ì£¼ë°›ì€í‘¸ë¥¸ëŠ‘ëŒ€
 {
 	Leader	"Verfl. Blauwolf"	133
 	Vnum	129
 	1	"Verfl. Blauwolf"	133
 	2	"Verfl. Blauwolf"	133
 }
-Group	L34_ÀúÁÖ¹ŞÀºÇª¸¥µÎ¸ñ´Á´ë
+Group	L34_ì €ì£¼ë°›ì€í‘¸ë¥¸ë‘ëª©ëŠ‘ëŒ€
 {
 	Leader	"Verfl. Alpha-Blauwolf"	134
 	Vnum	130
@@ -210,28 +210,28 @@ Group	L34_ÀúÁÖ¹ŞÀºÇª¸¥µÎ¸ñ´Á´ë
 	2	"Verfl. Blauwolf"	133
 	3	"Verfl. Blauwolf"	133
 }
-Group	L36_ÀúÁÖ¹ŞÀºÈ¸»ö´Á´ë
+Group	L36_ì €ì£¼ë°›ì€íšŒìƒ‰ëŠ‘ëŒ€
 {
 	Leader	"Verfl. Grauwolf"	135
 	Vnum	131
 	1	"Verfl. Grauwolf"	135
 	2	"Verfl. Grauwolf"	135
 }
-Group	L37_ÀúÁÖ¹ŞÀººÓÀº¸äµÅÁö
+Group	L37_ì €ì£¼ë°›ì€ë¶‰ì€ë©§ë¼ì§€
 {
 	Leader	"Verfl. roter Keiler"	138
 	Vnum	132
 	1	"Verfl. roter Keiler"	138
 	2	"Verfl. roter Keiler"	138
 }
-Group	L21_ÀúÁÖ¹ŞÀº°õ
+Group	L21_ì €ì£¼ë°›ì€ê³°
 {
 	Leader	"Verfl. B?r"	139
 	Vnum	133
 	1	"Verfl. B?r"	139
 	2	"Verfl. B?r"	139
 }
-Group	L21_ÀúÁÖ¹ŞÀºÈ¸»ö°õ
+Group	L21_ì €ì£¼ë°›ì€íšŒìƒ‰ê³°
 {
 	Leader	"Verfl. Grizzlyb?r"	140
 	Vnum	134
@@ -240,14 +240,14 @@ Group	L21_ÀúÁÖ¹ŞÀºÈ¸»ö°õ
 	3	"Verfl. B?r"	139
 	4	"Verfl. B?r"	139
 }
-Group	L21_ÀúÁÖ¹ŞÀº°ËÀº°õ
+Group	L21_ì €ì£¼ë°›ì€ê²€ì€ê³°
 {
 	Leader	"Verfl. Schwarzb?r"	141
 	Vnum	135
 	1	"Verfl. Schwarzb?r"	141
 	2	"Verfl. Schwarzb?r"	141
 }
-Group	L21_ÀúÁÖ¹ŞÀºÈ£¶ûÀÌ
+Group	L21_ì €ì£¼ë°›ì€í˜¸ë‘ì´
 {
 	Leader	"Verfl. Tiger"	143
 	Vnum	136
@@ -256,269 +256,269 @@ Group	L21_ÀúÁÖ¹ŞÀºÈ£¶ûÀÌ
 	3	"Verfl. Schwarzb?r"	141
 	4	"Verfl. Schwarzb?r"	141
 }
-Group	L29_ÀúÁÖ¹ŞÀº_´ëÈ£(S_KNIGHT)-ÀúÁÖ¹ŞÀº_È£¶ûÀÌ(KNIGHT)
+Group	L29_ì €ì£¼ë°›ì€_ëŒ€í˜¸(S_KNIGHT)-ì €ì£¼ë°›ì€_í˜¸ë‘ì´(KNIGHT)
 {
-	Leader	"Verfl. wei©¬er Tiger"	144
+	Leader	"Verfl. weiÂ©Â¬er Tiger"	144
 	Vnum	137
 	1	"Verfl. Tiger"	143
 	2	"Verfl. Tiger"	143
 }
-Group	L29_»ê°ß½Å(BOSS)-ÀúÁÖ¹ŞÀº_È¸»ö_µÎ¸ñ´Á´ë(S_KNIGHT)
+Group	L29_ì‚°ê²¬ì‹ (BOSS)-ì €ì£¼ë°›ì€_íšŒìƒ‰_ë‘ëª©ëŠ‘ëŒ€(S_KNIGHT)
 {
 	Leader	Lykos	191
 	Vnum	139
 	1	"Verfl. Alpha-Grauwolf"	136
 	2	"Verfl. Alpha-Grauwolf"	136
 }
-Group	L30_Àú½Å(BOSS)-ÀúÁÖ¹ŞÀº_ºÓÀº_¸äµÅÁö(S_KNIGHT)
+Group	L30_ì €ì‹ (BOSS)-ì €ì£¼ë°›ì€_ë¶‰ì€_ë©§ë¼ì§€(S_KNIGHT)
 {
 	Leader	Scrofa	192
 	Vnum	140
 	1	"Verfl. roter Keiler"	138
 	2	"Verfl. roter Keiler"	138
 }
-Group	L32_¿õ½Å(BOSS)-ÀúÁÖ¹ŞÀº_ºÒ°õ(S_KNIGHT)
+Group	L32_ì›…ì‹ (BOSS)-ì €ì£¼ë°›ì€_ë¶ˆê³°(S_KNIGHT)
 {
 	Leader	Bera	193
 	Vnum	141
 	1	"Verfl. Braunb?r"	142
 	2	"Verfl. Braunb?r"	142
 }
-Group	L34_È£½Å(BOSS)-ÀúÁÖ¹ŞÀº_´ëÈ£(S_KNIGHT)
+Group	L34_í˜¸ì‹ (BOSS)-ì €ì£¼ë°›ì€_ëŒ€í˜¸(S_KNIGHT)
 {
 	Leader	Tigris	194
 	Vnum	142
-	1	"Verfl. wei©¬er Tiger"	144
-	2	"Verfl. wei©¬er Tiger"	144
+	1	"Verfl. weiÂ©Â¬er Tiger"	144
+	2	"Verfl. weiÂ©Â¬er Tiger"	144
 }
-Group	Äù½ºÆ®¿ë_µé°³
+Group	í€˜ìŠ¤íŠ¸ìš©_ë“¤ê°œ
 {
 	Leader	"Hungriger Wildhund"	171
 	Vnum	171
 	1	"Hungriger Wildhund"	171
 	2	"Hungriger Wildhund"	171
 }
-Group	Äù½ºÆ®¿ë_´Á°³
+Group	í€˜ìŠ¤íŠ¸ìš©_ëŠ‘ê°œ
 {
 	Leader	"Hungriger Wolf"	172
 	Vnum	172
 	1	"Hungriger Wolf"	172
 	2	"Hungriger Wolf"	172
 }
-Group	Äù½ºÆ®¿ë_µÎ¸ñ´Á´ë
+Group	í€˜ìŠ¤íŠ¸ìš©_ë‘ëª©ëŠ‘ëŒ€
 {
 	Leader	"Hungriger Alpha-Wolf"	173
 	Vnum	173
 	1	"Hungriger Alpha-Wolf"	173
 	2	"Hungriger Alpha-Wolf"	173
 }
-Group	Äù½ºÆ®¿ë_Çª¸¥´Á´ë
+Group	í€˜ìŠ¤íŠ¸ìš©_í‘¸ë¥¸ëŠ‘ëŒ€
 {
 	Leader	"Hungriger Blauwolf"	174
 	Vnum	174
 	1	"Hungriger Blauwolf"	174
 	2	"Hungriger Blauwolf"	174
 }
-Group	Äù½ºÆ®¿ë_Çª¸¥µÎ¸ñ´Á´ë
+Group	í€˜ìŠ¤íŠ¸ìš©_í‘¸ë¥¸ë‘ëª©ëŠ‘ëŒ€
 {
 	Leader	"Hungriger Alpha-Blauwolf"	175
 	Vnum	175
 	1	"Hungriger Alpha-Blauwolf"	175
 	2	"Hungriger Alpha-Blauwolf"	175
 }
-Group	Äù½ºÆ®¿ë_È¸»ö´Á´ë
+Group	í€˜ìŠ¤íŠ¸ìš©_íšŒìƒ‰ëŠ‘ëŒ€
 {
 	Leader	"Hungriger Grauwolf"	176
 	Vnum	176
 	1	"Hungriger Grauwolf"	176
 	2	"Hungriger Grauwolf"	176
 }
-Group	Äù½ºÆ®¿ë_È¸»öµÎ¸ñ´Á´ë
+Group	í€˜ìŠ¤íŠ¸ìš©_íšŒìƒ‰ë‘ëª©ëŠ‘ëŒ€
 {
 	Leader	"Hungriger Alpha-Grauwolf"	177
 	Vnum	177
 	1	"Hungriger Alpha-Grauwolf"	177
 	2	"Hungriger Alpha-Grauwolf"	177
 }
-Group	Äù½ºÆ®¿ë_¸äµÅÁö
+Group	í€˜ìŠ¤íŠ¸ìš©_ë©§ë¼ì§€
 {
 	Leader	"Hungriger Keiler"	178
 	Vnum	178
 	1	"Hungriger Keiler"	178
 	2	"Hungriger Keiler"	178
 }
-Group	Äù½ºÆ®¿ë_ºÓÀº¸äµÅÁö
+Group	í€˜ìŠ¤íŠ¸ìš©_ë¶‰ì€ë©§ë¼ì§€
 {
 	Leader	"Hungriger Roter Keiler"	179
 	Vnum	179
 	1	"Hungriger Roter Keiler"	179
 	2	"Hungriger Roter Keiler"	179
 }
-Group	Äù½ºÆ®¿ë_°õ
+Group	í€˜ìŠ¤íŠ¸ìš©_ê³°
 {
 	Leader	"Hungriger B?r"	180
 	Vnum	180
 	1	"Hungriger B?r"	180
 	2	"Hungriger B?r"	180
 }
-Group	Äù½ºÆ®¿ë_È¸»ö°õ
+Group	í€˜ìŠ¤íŠ¸ìš©_íšŒìƒ‰ê³°
 {
 	Leader	"Hungriger Grizzlyb?r"	181
 	Vnum	181
 	1	"Hungriger Grizzlyb?r"	181
 	2	"Hungriger Grizzlyb?r"	181
 }
-Group	Äù½ºÆ®¿ë_°ËÀº°õ
+Group	í€˜ìŠ¤íŠ¸ìš©_ê²€ì€ê³°
 {
 	Leader	"Hungriger Schwarzb?r"	182
 	Vnum	182
 	1	"Hungriger Schwarzb?r"	182
 	2	"Hungriger Schwarzb?r"	182
 }
-Group	Äù½ºÆ®¿ë_ºÒ°õ
+Group	í€˜ìŠ¤íŠ¸ìš©_ë¶ˆê³°
 {
 	Leader	"Hungriger Braunb?r"	183
 	Vnum	183
 	1	"Hungriger Braunb?r"	183
 	2	"Hungriger Braunb?r"	183
 }
-Group	Äù½ºÆ®¿ë_È£¶ûÀÌ
+Group	í€˜ìŠ¤íŠ¸ìš©_í˜¸ë‘ì´
 {
 	Leader	"Hungriger Tiger"	184
 	Vnum	184
 	1	"Hungriger Tiger"	184
 	2	"Hungriger Tiger"	184
 }
-Group	Äù½ºÆ®¿ë_´ëÈ£
+Group	í€˜ìŠ¤íŠ¸ìš©_ëŒ€í˜¸
 {
-	Leader	"Hungriger Wei©¬er Tiger"	185
+	Leader	"Hungriger WeiÂ©Â¬er Tiger"	185
 	Vnum	185
-	1	"Hungriger Wei©¬er Tiger"	185
-	2	"Hungriger Wei©¬er Tiger"	185
+	1	"Hungriger WeiÂ©Â¬er Tiger"	185
+	2	"Hungriger WeiÂ©Â¬er Tiger"	185
 }
-Group	L46_¹é°áÀå¼ö(S_PAWN)-¹é°á´Ü¿ø(S_PAWN)
+Group	L46_ë°±ê²°ì¥ìˆ˜(S_PAWN)-ë°±ê²°ë‹¨ì›(S_PAWN)
 {
-	Leader	"Wei©¬er-Eid Soldatin"	301
+	Leader	"WeiÂ©Â¬er-Eid Soldatin"	301
 	Vnum	305
-	1	"Wei©¬er-Eid Soldatin"	301
-	2	"Wei©¬er-Eid Soldatin"	301
-	3	"Wei©¬er-Eid Soldatin"	301
+	1	"WeiÂ©Â¬er-Eid Soldatin"	301
+	2	"WeiÂ©Â¬er-Eid Soldatin"	301
+	3	"WeiÂ©Â¬er-Eid Soldatin"	301
 }
-Group	L00_¹é°áÀå¼ö(S_PAWN)-¹é°á±Ãº´(S_PAWN)
+Group	L00_ë°±ê²°ì¥ìˆ˜(S_PAWN)-ë°±ê²°ê¶ë³‘(S_PAWN)
 {
-	Leader	"Wei©¬er-Eid Bogensch?tzin"	302
+	Leader	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
 	Vnum	306
-	1	"Wei©¬er-Eid Soldatin"	301
-	2	"Wei©¬er-Eid Soldatin"	301
-	3	"Wei©¬er-Eid Soldatin"	301
+	1	"WeiÂ©Â¬er-Eid Soldatin"	301
+	2	"WeiÂ©Â¬er-Eid Soldatin"	301
+	3	"WeiÂ©Â¬er-Eid Soldatin"	301
 }
-Group	L00_¹é°á±Ãº´(S_PAWN)-¹é°á±Ãº´(S_PAWN)
+Group	L00_ë°±ê²°ê¶ë³‘(S_PAWN)-ë°±ê²°ê¶ë³‘(S_PAWN)
 {
-	Leader	"Wei©¬er-Eid Bogensch?tzin"	302
+	Leader	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
 	Vnum	307
-	1	"Wei©¬er-Eid Bogensch?tzin"	302
-	2	"Wei©¬er-Eid Soldatin"	301
-	3	"Wei©¬er-Eid Soldatin"	301
+	1	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
+	2	"WeiÂ©Â¬er-Eid Soldatin"	301
+	3	"WeiÂ©Â¬er-Eid Soldatin"	301
 }
-Group	L00_¹é°á±Ãº´(S_PAWN)-¹é°á±Ãº´(S_PAWN)
+Group	L00_ë°±ê²°ê¶ë³‘(S_PAWN)-ë°±ê²°ê¶ë³‘(S_PAWN)
 {
-	Leader	"Wei©¬er-Eid Bogensch?tzin"	302
+	Leader	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
 	Vnum	308
-	1	"Wei©¬er-Eid Bogensch?tzin"	302
-	2	"Wei©¬er-Eid Bogensch?tzin"	302
+	1	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
+	2	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
 }
-Group	L50_¹é°áÀå¼ö(KNIGHT)-¹é°á´Ü¿ø(PAWN)
+Group	L50_ë°±ê²°ì¥ìˆ˜(KNIGHT)-ë°±ê²°ë‹¨ì›(PAWN)
 {
-	Leader	"Wei©¬er-Eid Kommandantin"	304
+	Leader	"WeiÂ©Â¬er-Eid Kommandantin"	304
 	Vnum	309
-	1	"Wei©¬er-Eid Soldatin"	301
-	2	"Wei©¬er-Eid Soldatin"	301
-	3	"Wei©¬er-Eid Soldatin"	301
+	1	"WeiÂ©Â¬er-Eid Soldatin"	301
+	2	"WeiÂ©Â¬er-Eid Soldatin"	301
+	3	"WeiÂ©Â¬er-Eid Soldatin"	301
 }
-Group	L50_¹é°áÀå¼ö(KNIGHT)-¹é°á´Ü¿ø(PAWN)
+Group	L50_ë°±ê²°ì¥ìˆ˜(KNIGHT)-ë°±ê²°ë‹¨ì›(PAWN)
 {
-	Leader	"Wei©¬er-Eid Kommandantin"	304
+	Leader	"WeiÂ©Â¬er-Eid Kommandantin"	304
 	Vnum	310
-	1	"Wei©¬er-Eid Bogensch?tzin"	302
-	2	"Wei©¬er-Eid Bogensch?tzin"	302
-	3	"Wei©¬er-Eid Soldatin"	301
+	1	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
+	2	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
+	3	"WeiÂ©Â¬er-Eid Soldatin"	301
 }
-Group	L50_¼ö¼®_¹é°áÀå¼ö(S_KNIGHT)-¹é°á´Ü¿ø(S_KNIGHT)
+Group	L50_ìˆ˜ì„_ë°±ê²°ì¥ìˆ˜(S_KNIGHT)-ë°±ê²°ë‹¨ì›(S_KNIGHT)
 {
-	Leader	"Wei©¬er-Eid Kommandantin"	304
+	Leader	"WeiÂ©Â¬er-Eid Kommandantin"	304
 	Vnum	313
-	1	"Wei©¬er-Eid Generalin"	303
-	2	"Wei©¬er-Eid Bogensch?tzin"	302
-	3	"Wei©¬er-Eid Soldatin"	301
+	1	"WeiÂ©Â¬er-Eid Generalin"	303
+	2	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
+	3	"WeiÂ©Â¬er-Eid Soldatin"	301
 }
-Group	L52_¹ÌÁ¤(S_KNIGHT)-¼ö¼®_¹é°áÀå¼ö(S_KNIGHT)
+Group	L52_ë¯¸ì •(S_KNIGHT)-ìˆ˜ì„_ë°±ê²°ì¥ìˆ˜(S_KNIGHT)
 {
 	Leader	Mi-Jung	391
 	Vnum	315
 	1	"Feiger W.-Eid-Kommandant"	354
-	2	"Wei©¬er-Eid Generalin"	303
-	3	"Wei©¬er-Eid Bogensch?tzin"	302
+	2	"WeiÂ©Â¬er-Eid Generalin"	303
+	3	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
 }
-Group	L54_ÀºÁ¤(S_KNIGHT)-¼ö¼®_¹é°áÀå¼ö(S_KNIGHT)
+Group	L54_ì€ì •(S_KNIGHT)-ìˆ˜ì„_ë°±ê²°ì¥ìˆ˜(S_KNIGHT)
 {
 	Leader	Eun-Jung	392
 	Vnum	316
-	1	"Wei©¬er-Eid Kommandantin"	304
-	2	"Wei©¬er-Eid Generalin"	303
-	3	"Wei©¬er-Eid Bogensch?tzin"	302
+	1	"WeiÂ©Â¬er-Eid Kommandantin"	304
+	2	"WeiÂ©Â¬er-Eid Generalin"	303
+	3	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
 }
-Group	L29_¼¼¶û(S_KNIGHT)-¼ö¼®_¹é°áÀå¼ö(S_KNIGHT)
+Group	L29_ì„¸ë‘(S_KNIGHT)-ìˆ˜ì„_ë°±ê²°ì¥ìˆ˜(S_KNIGHT)
 {
 	Leader	Se-Rang	393
 	Vnum	317
-	1	"Wei©¬er-Eid Kommandantin"	304
-	2	"Wei©¬er-Eid Generalin"	303
-	3	"Wei©¬er-Eid Bogensch?tzin"	302
+	1	"WeiÂ©Â¬er-Eid Kommandantin"	304
+	2	"WeiÂ©Â¬er-Eid Generalin"	303
+	3	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
 }
-Group	L31_ÁøÈñ(BOSS)-¼ö¼®_Àû¹ÌÀå¼ö(S_KNIGHT)
+Group	L31_ì§„í¬(BOSS)-ìˆ˜ì„_ì ë¯¸ì¥ìˆ˜(S_KNIGHT)
 {
 	Leader	Jin-Hee	394
 	Vnum	318
-	1	"Wei©¬er-Eid Kommandantin"	304
-	2	"Wei©¬er-Eid Generalin"	303
-	3	"Wei©¬er-Eid Bogensch?tzin"	302
-	4	"Wei©¬er-Eid Bogensch?tzin"	302
+	1	"WeiÂ©Â¬er-Eid Kommandantin"	304
+	2	"WeiÂ©Â¬er-Eid Generalin"	303
+	3	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
+	4	"WeiÂ©Â¬er-Eid Bogensch?tzin"	302
 }
-Group	Äù½ºÆ®¿ë_¹é°á´Ü¿ø
+Group	í€˜ìŠ¤íŠ¸ìš©_ë°±ê²°ë‹¨ì›
 {
-	Leader	"Feiger Wei©¬er-Eid-Soldat"	351
+	Leader	"Feiger WeiÂ©Â¬er-Eid-Soldat"	351
 	Vnum	351
-	1	"Feiger Wei©¬er-Eid-Soldat"	351
-	2	"Feiger Wei©¬er-Eid-Soldat"	351
+	1	"Feiger WeiÂ©Â¬er-Eid-Soldat"	351
+	2	"Feiger WeiÂ©Â¬er-Eid-Soldat"	351
 }
-Group	Äù½ºÆ®¿ë_¹é°á±Ãº´
+Group	í€˜ìŠ¤íŠ¸ìš©_ë°±ê²°ê¶ë³‘
 {
 	Leader	"Feiger W.-Eid Sch?tze"	352
 	Vnum	352
 	1	"Feiger W.-Eid Sch?tze"	352
 	2	"Feiger W.-Eid Sch?tze"	352
 }
-Group	Äù½ºÆ®¿ë_¼Ò½ÉÇÑ¹ÌÁ¤
+Group	í€˜ìŠ¤íŠ¸ìš©_ì†Œì‹¬í•œë¯¸ì •
 {
 	Leader	"Mutlose Mi-Jung"	395
 	Vnum	395
 }
-Group	Äù½ºÆ®¿ë_¼Ò½ÉÇÑÀºÁ¤
+Group	í€˜ìŠ¤íŠ¸ìš©_ì†Œì‹¬í•œì€ì •
 {
 	Leader	"Mutlose Eun-Jung"	396
 	Vnum	396
 }
-Group	Äù½ºÆ®¿ë_¼Ò½ÉÇÑ¼¼¶û
+Group	í€˜ìŠ¤íŠ¸ìš©_ì†Œì‹¬í•œì„¸ë‘
 {
 	Leader	"Mutlose Se-Rang"	397
 	Vnum	397
 }
-Group	Äù½ºÆ®¿ë_¼Ò½ÉÇÑÁøÈñ
+Group	í€˜ìŠ¤íŠ¸ìš©_ì†Œì‹¬í•œì§„í¬
 {
 	Leader	"Mutlose Jin-Hee"	398
 	Vnum	398
 }
-Group	L20_ÈæÇ³´Ü¿ø(PAWN)-¿À¶ûÄÉº¸º´(PAWN)
+Group	L20_í‘í’ë‹¨ì›(PAWN)-ì˜¤ë‘ì¼€ë³´ë³‘(PAWN)
 {
 	Leader	Schwarzwindsoldat	401
 	Vnum	401
@@ -526,7 +526,7 @@ Group	L20_ÈæÇ³´Ü¿ø(PAWN)-¿À¶ûÄÉº¸º´(PAWN)
 	2	"Wilder Infanterist"	501
 	3	"Wilder Infanterist"	501
 }
-Group	L20_ÈæÇ³µ¹°İ´ë(PAWN)-ÈæÇ³µ¹°İ´ë(PAWN)
+Group	L20_í‘í’ëŒê²©ëŒ€(PAWN)-í‘í’ëŒê²©ëŒ€(PAWN)
 {
 	Leader	Schwarzwindbesessener	402
 	Vnum	402
@@ -534,7 +534,7 @@ Group	L20_ÈæÇ³µ¹°İ´ë(PAWN)-ÈæÇ³µ¹°İ´ë(PAWN)
 	2	Schwarzwindsoldat	401
 	3	"Wilder Infanterist"	501
 }
-Group	L20_ÈæÇ³µ¹°İ´ë(PAWN)-ÈæÇ³µ¹°İ´ë(PAWN)
+Group	L20_í‘í’ëŒê²©ëŒ€(PAWN)-í‘í’ëŒê²©ëŒ€(PAWN)
 {
 	Leader	Schwarzwindbesessener	402
 	Vnum	403
@@ -542,7 +542,7 @@ Group	L20_ÈæÇ³µ¹°İ´ë(PAWN)-ÈæÇ³µ¹°İ´ë(PAWN)
 	2	Schwarzwindsoldat	401
 	3	"B?ser Schw. Sturmsoldat"	451
 }
-Group	L25_ÈæÇ³±Ã¼ö(PAWN)-ÈæÇ³µ¹°İ´ë(PAWN)
+Group	L25_í‘í’ê¶ìˆ˜(PAWN)-í‘í’ëŒê²©ëŒ€(PAWN)
 {
 	Leader	Schwarzwindbogensch?tze	403
 	Vnum	404
@@ -550,7 +550,7 @@ Group	L25_ÈæÇ³±Ã¼ö(PAWN)-ÈæÇ³µ¹°İ´ë(PAWN)
 	2	Schwarzwindbesessener	402
 	3	"Wilder Ergebener"	502
 }
-Group	L25_ÈæÇ³±Ã¼ö(PAWN)-ÈæÇ³±Ã¼ö(PAWN)
+Group	L25_í‘í’ê¶ìˆ˜(PAWN)-í‘í’ê¶ìˆ˜(PAWN)
 {
 	Leader	Schwarzwindbogensch?tze	403
 	Vnum	405
@@ -558,7 +558,7 @@ Group	L25_ÈæÇ³±Ã¼ö(PAWN)-ÈæÇ³±Ã¼ö(PAWN)
 	2	"Wilder Ergebener"	502
 	3	Schwarzwindbesessener	402
 }
-Group	L25_ÈæÇ³Àå¼ö_»ï·É(S_PAWN)-ÈæÇ³±Ã¼ö(PAWN)
+Group	L25_í‘í’ì¥ìˆ˜_ì‚¼ë ¹(S_PAWN)-í‘í’ê¶ìˆ˜(PAWN)
 {
 	Leader	Schwarzwind-Jak-To	404
 	Vnum	406
@@ -566,7 +566,7 @@ Group	L25_ÈæÇ³Àå¼ö_»ï·É(S_PAWN)-ÈæÇ³±Ã¼ö(PAWN)
 	2	Schwarzwindbesessener	402
 	3	Schwarzwindbesessener	402
 }
-Group	L25_ÈæÇ³Àå¼ö_»ï·É(S_PAWN)-ÈæÇ³±Ã¼ö(PAWN)
+Group	L25_í‘í’ì¥ìˆ˜_ì‚¼ë ¹(S_PAWN)-í‘í’ê¶ìˆ˜(PAWN)
 {
 	Leader	Schwarzwind-Jak-To	404
 	Vnum	407
@@ -574,7 +574,7 @@ Group	L25_ÈæÇ³Àå¼ö_»ï·É(S_PAWN)-ÈæÇ³±Ã¼ö(PAWN)
 	2	Schwarzwindbogensch?tze	403
 	3	Schwarzwindbesessener	402
 }
-Group	L23_ÈæÇ³Àå¼ö_ÀÌ·É(S_PAWN)-ÈæÇ³Àå¼ö_»ï·É(S_PAWN)
+Group	L23_í‘í’ì¥ìˆ˜_ì´ë ¹(S_PAWN)-í‘í’ì¥ìˆ˜_ì‚¼ë ¹(S_PAWN)
 {
 	Leader	Schwarzwind-To-Su	405
 	Vnum	408
@@ -582,7 +582,7 @@ Group	L23_ÈæÇ³Àå¼ö_ÀÌ·É(S_PAWN)-ÈæÇ³Àå¼ö_»ï·É(S_PAWN)
 	2	Schwarzwindbogensch?tze	403
 	3	Schwarzwindbesessener	402
 }
-Group	L23_ÈæÇ³Àå¼ö_ÀÌ·É(S_PAWN)-ÈæÇ³Àå¼ö_»ï·É(S_PAWN)
+Group	L23_í‘í’ì¥ìˆ˜_ì´ë ¹(S_PAWN)-í‘í’ì¥ìˆ˜_ì‚¼ë ¹(S_PAWN)
 {
 	Leader	Schwarzwind-To-Su	405
 	Vnum	409
@@ -590,7 +590,7 @@ Group	L23_ÈæÇ³Àå¼ö_ÀÌ·É(S_PAWN)-ÈæÇ³Àå¼ö_»ï·É(S_PAWN)
 	2	Schwarzwindbogensch?tze	403
 	3	Schwarzwindbogensch?tze	403
 }
-Group	L25_ÈæÇ³Àå¼ö_ÀÏ·É(S_PAWN)-ÈæÇ³Àå¼ö_ÀÌ·É(S_PAWN)
+Group	L25_í‘í’ì¥ìˆ˜_ì¼ë ¹(S_PAWN)-í‘í’ì¥ìˆ˜_ì´ë ¹(S_PAWN)
 {
 	Leader	Schwarzwind-Gu-Ryung	406
 	Vnum	410
@@ -598,7 +598,7 @@ Group	L25_ÈæÇ³Àå¼ö_ÀÏ·É(S_PAWN)-ÈæÇ³Àå¼ö_ÀÌ·É(S_PAWN)
 	2	Schwarzwindbogensch?tze	403
 	3	Schwarzwindbesessener	402
 }
-Group	L25_ÈæÇ³Àå¼ö_ÀÏ·É(S_PAWN)-ÈæÇ³Àå¼ö_ÀÌ·É(S_PAWN)
+Group	L25_í‘í’ì¥ìˆ˜_ì¼ë ¹(S_PAWN)-í‘í’ì¥ìˆ˜_ì´ë ¹(S_PAWN)
 {
 	Leader	Schwarzwind-Gu-Ryung	406
 	Vnum	411
@@ -606,7 +606,7 @@ Group	L25_ÈæÇ³Àå¼ö_ÀÏ·É(S_PAWN)-ÈæÇ³Àå¼ö_ÀÌ·É(S_PAWN)
 	2	Schwarzwind-Jak-To	404
 	3	Schwarzwindbogensch?tze	403
 }
-Group	L30_»ìÇ³µ¹°İ´ë(KNIGHT)-»ìÇ³´Ü¿ø(KNIGHT)
+Group	L30_ì‚´í’ëŒê²©ëŒ€(KNIGHT)-ì‚´í’ë‹¨ì›(KNIGHT)
 {
 	Leader	"Schwarzer Sturmbesessene"	432
 	Vnum	412
@@ -614,7 +614,7 @@ Group	L30_»ìÇ³µ¹°İ´ë(KNIGHT)-»ìÇ³´Ü¿ø(KNIGHT)
 	2	"Schwarzer Sturmsoldat"	431
 	3	"Schwarzer Sturmsoldat"	431
 }
-Group	L30_»ìÇ³µ¹°İ´ë(KNIGHT)-»ìÇ³µ¹°İ´ë(KNIGHT)
+Group	L30_ì‚´í’ëŒê²©ëŒ€(KNIGHT)-ì‚´í’ëŒê²©ëŒ€(KNIGHT)
 {
 	Leader	"Schwarzer Sturmbesessene"	432
 	Vnum	413
@@ -622,7 +622,7 @@ Group	L30_»ìÇ³µ¹°İ´ë(KNIGHT)-»ìÇ³µ¹°İ´ë(KNIGHT)
 	2	"Schwarzer Sturmsoldat"	431
 	3	"Schwarzer Sturmsoldat"	431
 }
-Group	L30_»ìÇ³µ¹°İ´ë(KNIGHT)-»ìÇ³µ¹°İ´ë(KNIGHT)
+Group	L30_ì‚´í’ëŒê²©ëŒ€(KNIGHT)-ì‚´í’ëŒê²©ëŒ€(KNIGHT)
 {
 	Leader	"Schwarzer Sturmbesessene"	432
 	Vnum	414
@@ -630,7 +630,7 @@ Group	L30_»ìÇ³µ¹°İ´ë(KNIGHT)-»ìÇ³µ¹°İ´ë(KNIGHT)
 	2	"Schwarzer Sturmbesessene"	432
 	3	"Schwarzer Sturmsoldat"	431
 }
-Group	L23_»ìÇ³±Ã¼ö(KNIGHT)-»ìÇ³µ¹°İ´ë(KNIGHT)
+Group	L23_ì‚´í’ê¶ìˆ˜(KNIGHT)-ì‚´í’ëŒê²©ëŒ€(KNIGHT)
 {
 	Leader	"Schwarzer Bogensch?tze"	433
 	Vnum	415
@@ -638,7 +638,7 @@ Group	L23_»ìÇ³±Ã¼ö(KNIGHT)-»ìÇ³µ¹°İ´ë(KNIGHT)
 	2	"Schwarzer Sturmbesessene"	432
 	3	"Schwarzer Sturmbesessene"	432
 }
-Group	L23_»ìÇ³±Ã¼ö(KNIGHT)-»ìÇ³±Ã¼ö(KNIGHT)
+Group	L23_ì‚´í’ê¶ìˆ˜(KNIGHT)-ì‚´í’ê¶ìˆ˜(KNIGHT)
 {
 	Leader	"Schwarzer Bogensch?tze"	433
 	Vnum	416
@@ -646,7 +646,7 @@ Group	L23_»ìÇ³±Ã¼ö(KNIGHT)-»ìÇ³±Ã¼ö(KNIGHT)
 	2	"Schwarzer Sturmbesessene"	432
 	3	"Schwarzer Sturmbesessene"	432
 }
-Group	L26_»ìÇ³Àå¼ö_»ï·É(S_KNIGHT)-»ìÇ³±Ã¼ö(KNIGHT)
+Group	L26_ì‚´í’ì¥ìˆ˜_ì‚¼ë ¹(S_KNIGHT)-ì‚´í’ê¶ìˆ˜(KNIGHT)
 {
 	Leader	"Schwarzer Sturm-Joh-Hwan"	434
 	Vnum	417
@@ -654,7 +654,7 @@ Group	L26_»ìÇ³Àå¼ö_»ï·É(S_KNIGHT)-»ìÇ³±Ã¼ö(KNIGHT)
 	2	"Schwarzer Sturmbesessene"	432
 	3	"Schwarzer Sturmbesessene"	432
 }
-Group	L26_»ìÇ³Àå¼ö_»ï·É(S_KNIGHT)-»ìÇ³±Ã¼ö(KNIGHT)
+Group	L26_ì‚´í’ì¥ìˆ˜_ì‚¼ë ¹(S_KNIGHT)-ì‚´í’ê¶ìˆ˜(KNIGHT)
 {
 	Leader	"Schwarzer Sturm-Joh-Hwan"	434
 	Vnum	418
@@ -662,7 +662,7 @@ Group	L26_»ìÇ³Àå¼ö_»ï·É(S_KNIGHT)-»ìÇ³±Ã¼ö(KNIGHT)
 	2	"Schwarzer Bogensch?tze"	433
 	3	"Schwarzer Sturmbesessene"	432
 }
-Group	L28_»ìÇ³Àå¼ö_ÀÌ·É(S_KNIGHT)-»ìÇ³Àå¼ö_»ï·É(S_KNIGHT)
+Group	L28_ì‚´í’ì¥ìˆ˜_ì´ë ¹(S_KNIGHT)-ì‚´í’ì¥ìˆ˜_ì‚¼ë ¹(S_KNIGHT)
 {
 	Leader	"Schwarzer Sturm-Kyuk-Jan"	435
 	Vnum	419
@@ -670,7 +670,7 @@ Group	L28_»ìÇ³Àå¼ö_ÀÌ·É(S_KNIGHT)-»ìÇ³Àå¼ö_»ï·É(S_KNIGHT)
 	2	"Schwarzer Bogensch?tze"	433
 	3	"Schwarzer Sturmbesessene"	432
 }
-Group	L28_»ìÇ³Àå¼ö_ÀÌ·É(S_KNIGHT)-»ìÇ³Àå¼ö_»ï·É(S_KNIGHT)
+Group	L28_ì‚´í’ì¥ìˆ˜_ì´ë ¹(S_KNIGHT)-ì‚´í’ì¥ìˆ˜_ì‚¼ë ¹(S_KNIGHT)
 {
 	Leader	"Schwarzer Sturm-Kyuk-Jan"	435
 	Vnum	420
@@ -678,7 +678,7 @@ Group	L28_»ìÇ³Àå¼ö_ÀÌ·É(S_KNIGHT)-»ìÇ³Àå¼ö_»ï·É(S_KNIGHT)
 	2	"Schwarzer Bogensch?tze"	433
 	3	"Schwarzer Bogensch?tze"	433
 }
-Group	L31_»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)-»ìÇ³Àå¼ö_ÀÌ·É(S_KNIGHT)
+Group	L31_ì‚´í’ì¥ìˆ˜_ì¼ë ¹(S_KNIGHT)-ì‚´í’ì¥ìˆ˜_ì´ë ¹(S_KNIGHT)
 {
 	Leader	"Schwarzer Sturm-Pho-Hwan"	436
 	Vnum	421
@@ -686,7 +686,7 @@ Group	L31_»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)-»ìÇ³Àå¼ö_ÀÌ·É(S_KNIGHT)
 	2	"Schwarzer Bogensch?tze"	433
 	3	"Schwarzer Bogensch?tze"	433
 }
-Group	L31_»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)-»ìÇ³Àå¼ö_ÀÌ·É(S_KNIGHT)
+Group	L31_ì‚´í’ì¥ìˆ˜_ì¼ë ¹(S_KNIGHT)-ì‚´í’ì¥ìˆ˜_ì´ë ¹(S_KNIGHT)
 {
 	Leader	"Schwarzer Sturm-Pho-Hwan"	436
 	Vnum	422
@@ -694,7 +694,7 @@ Group	L31_»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)-»ìÇ³Àå¼ö_ÀÌ·É(S_KNIGHT)
 	2	"Schwarzer Sturm-Joh-Hwan"	434
 	3	"Schwarzer Bogensch?tze"	433
 }
-Group	L26_¸ÍÈ¯(BOSS)-»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)
+Group	L26_ë§¹í™˜(BOSS)-ì‚´í’ì¥ìˆ˜_ì¼ë ¹(S_KNIGHT)
 {
 	Leader	Mahon	491
 	Vnum	423
@@ -703,7 +703,7 @@ Group	L26_¸ÍÈ¯(BOSS)-»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)
 	3	Schwarzwindbogensch?tze	403
 	4	Schwarzwindbogensch?tze	403
 }
-Group	L27_º¸¿ì(BOSS)-»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)
+Group	L27_ë³´ìš°(BOSS)-ì‚´í’ì¥ìˆ˜_ì¼ë ¹(S_KNIGHT)
 {
 	Leader	Bo	492
 	Vnum	424
@@ -712,7 +712,7 @@ Group	L27_º¸¿ì(BOSS)-»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)
 	3	Schwarzwindbogensch?tze	403
 	4	Schwarzwindbogensch?tze	403
 }
-Group	L29_±¸ÆĞ(BOSS)-»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)
+Group	L29_êµ¬íŒ¨(BOSS)-ì‚´í’ì¥ìˆ˜_ì¼ë ¹(S_KNIGHT)
 {
 	Leader	Goo-Pae	493
 	Vnum	425
@@ -721,7 +721,7 @@ Group	L29_±¸ÆĞ(BOSS)-»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)
 	3	Schwarzwindbogensch?tze	403
 	4	Schwarzwindbogensch?tze	403
 }
-Group	L30_ÃßÈç(KING)-»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)
+Group	L30_ì¶”í”(KING)-ì‚´í’ì¥ìˆ˜_ì¼ë ¹(S_KNIGHT)
 {
 	Leader	Chuong	494
 	Vnum	426
@@ -730,35 +730,35 @@ Group	L30_ÃßÈç(KING)-»ìÇ³Àå¼ö_ÀÏ·É(S_KNIGHT)
 	3	Schwarzwind-Jak-To	404
 	4	Schwarzwindbogensch?tze	403
 }
-Group	Äù½ºÆ®¿ë_ÈæÇ³±Ã¼ö
+Group	í€˜ìŠ¤íŠ¸ìš©_í‘í’ê¶ìˆ˜
 {
 	Leader	"B?ser Sturmbogensch?tze"	453
 	Vnum	453
 	1	"B?ser Sturmbogensch?tze"	453
 	2	"B?ser Sturmbogensch?tze"	453
 }
-Group	Äù½ºÆ®¿ë_ÈæÇ³Àå¼ö
+Group	í€˜ìŠ¤íŠ¸ìš©_í‘í’ì¥ìˆ˜
 {
 	Leader	"B?ser Sturm-Joh-Hwan"	454
 	Vnum	454
 	1	"B?ser Sturm-Joh-Hwan"	454
 	2	"B?ser Sturm-Joh-Hwan"	454
 }
-Group	Äù½ºÆ®¿ë_ÈæÇ³Àå¼ö
+Group	í€˜ìŠ¤íŠ¸ìš©_í‘í’ì¥ìˆ˜
 {
 	Leader	"B?ser Sturm-Kyuk-Jang"	455
 	Vnum	455
 	1	"B?ser Sturm-Kyuk-Jang"	455
 	2	"B?ser Sturm-Kyuk-Jang"	455
 }
-Group	Äù½ºÆ®¿ë_ÈæÇ³Àå¼ö
+Group	í€˜ìŠ¤íŠ¸ìš©_í‘í’ì¥ìˆ˜
 {
 	Leader	"B?ser Sturm-Pho-Hwan"	456
 	Vnum	456
 	1	"B?ser Sturm-Pho-Hwan"	456
 	2	"B?ser Sturm-Pho-Hwan"	456
 }
-Group	L34_¿À¶ûÄ³Á¹°³(PAWN)-¿À¶ûÄ³º¸º´(PAWN)
+Group	L34_ì˜¤ë‘ìºì¡¸ê°œ(PAWN)-ì˜¤ë‘ìºë³´ë³‘(PAWN)
 {
 	Leader	"Wilder Infanterist"	501
 	Vnum	501
@@ -766,7 +766,7 @@ Group	L34_¿À¶ûÄ³Á¹°³(PAWN)-¿À¶ûÄ³º¸º´(PAWN)
 	2	Schwarzwindsoldat	401
 	3	Schwarzwindsoldat	401
 }
-Group	L34_¿À¶ûÄ³Á¹°³(PAWN)-¿À¶ûÄ³Á¹°³(PAWN)
+Group	L34_ì˜¤ë‘ìºì¡¸ê°œ(PAWN)-ì˜¤ë‘ìºì¡¸ê°œ(PAWN)
 {
 	Leader	"Wilder Ergebener"	502
 	Vnum	502
@@ -774,7 +774,7 @@ Group	L34_¿À¶ûÄ³Á¹°³(PAWN)-¿À¶ûÄ³Á¹°³(PAWN)
 	2	"Wilder Infanterist"	501
 	3	Schwarzwindsoldat	401
 }
-Group	L34_¿À¶ûÄ³Á¹°³(PAWN)-¿À¶ûÄ³Á¹°³(PAWN)
+Group	L34_ì˜¤ë‘ìºì¡¸ê°œ(PAWN)-ì˜¤ë‘ìºì¡¸ê°œ(PAWN)
 {
 	Leader	"Wilder Ergebener"	502
 	Vnum	503
@@ -782,7 +782,7 @@ Group	L34_¿À¶ûÄ³Á¹°³(PAWN)-¿À¶ûÄ³Á¹°³(PAWN)
 	2	"Wilder Infanterist"	501
 	3	"Wilder Infanterist"	501
 }
-Group	L31_¿À¶ûÄ³±Ã¼ö(S_PAWN)-¿À¶ûÄ³Á¹°³(PAWN)
+Group	L31_ì˜¤ë‘ìºê¶ìˆ˜(S_PAWN)-ì˜¤ë‘ìºì¡¸ê°œ(PAWN)
 {
 	Leader	"Wilder Ergebener"	502
 	Vnum	504
@@ -790,7 +790,7 @@ Group	L31_¿À¶ûÄ³±Ã¼ö(S_PAWN)-¿À¶ûÄ³Á¹°³(PAWN)
 	2	"Wilder Ergebener"	502
 	3	"Wilder Infanterist"	501
 }
-Group	L31_¿À¶ûÄ³±Ã¼ö(S_PAWN)-¿À¶ûÄ³±Ã¼ö(S_PAWN)
+Group	L31_ì˜¤ë‘ìºê¶ìˆ˜(S_PAWN)-ì˜¤ë‘ìºê¶ìˆ˜(S_PAWN)
 {
 	Leader	"Wilder Bogensch?tze"	503
 	Vnum	505
@@ -798,7 +798,7 @@ Group	L31_¿À¶ûÄ³±Ã¼ö(S_PAWN)-¿À¶ûÄ³±Ã¼ö(S_PAWN)
 	2	"Wilder Ergebener"	502
 	3	"Wilder Ergebener"	502
 }
-Group	L32_¿À¶ûÄ³Àå¼ö(S_PAWN)-¿À¶ûÄ³±Ã¼ö(S_PAWN)
+Group	L32_ì˜¤ë‘ìºì¥ìˆ˜(S_PAWN)-ì˜¤ë‘ìºê¶ìˆ˜(S_PAWN)
 {
 	Leader	"Wilder General"	504
 	Vnum	506
@@ -806,7 +806,7 @@ Group	L32_¿À¶ûÄ³Àå¼ö(S_PAWN)-¿À¶ûÄ³±Ã¼ö(S_PAWN)
 	2	"Wilder Ergebener"	502
 	3	"Wilder Ergebener"	502
 }
-Group	L32_¿À¶ûÄ³Àå¼ö(S_PAWN)-¿À¶ûÄ³±Ã¼ö(S_PAWN)
+Group	L32_ì˜¤ë‘ìºì¥ìˆ˜(S_PAWN)-ì˜¤ë‘ìºê¶ìˆ˜(S_PAWN)
 {
 	Leader	"Wilder General"	504
 	Vnum	507
@@ -814,7 +814,7 @@ Group	L32_¿À¶ûÄ³Àå¼ö(S_PAWN)-¿À¶ûÄ³±Ã¼ö(S_PAWN)
 	2	"Wilder Ergebener"	502
 	3	"Wilder Ergebener"	502
 }
-Group	L35_ºñ·ù´Üµ¹°İ´ë(KNIGHT)-ºñ·ù´Ü¿ø(KNIGHT)
+Group	L35_ë¹„ë¥˜ë‹¨ëŒê²©ëŒ€(KNIGHT)-ë¹„ë¥˜ë‹¨ì›(KNIGHT)
 {
 	Leader	"Brutaler Besessener"	532
 	Vnum	508
@@ -822,7 +822,7 @@ Group	L35_ºñ·ù´Üµ¹°İ´ë(KNIGHT)-ºñ·ù´Ü¿ø(KNIGHT)
 	2	"Brutaler Soldat"	531
 	3	"Brutaler Soldat"	531
 }
-Group	L35_ºñ·ù´Üµ¹°İ´ë(KNIGHT)-ºñ·ù´Üµ¹°İ´ë(KNIGHT)
+Group	L35_ë¹„ë¥˜ë‹¨ëŒê²©ëŒ€(KNIGHT)-ë¹„ë¥˜ë‹¨ëŒê²©ëŒ€(KNIGHT)
 {
 	Leader	"Brutaler Besessener"	532
 	Vnum	509
@@ -830,7 +830,7 @@ Group	L35_ºñ·ù´Üµ¹°İ´ë(KNIGHT)-ºñ·ù´Üµ¹°İ´ë(KNIGHT)
 	2	"Brutaler Soldat"	531
 	3	"Brutaler Soldat"	531
 }
-Group	L35_ºñ·ù´Üµ¹°İ´ë(KNIGHT)-ºñ·ù´Üµ¹°İ´ë(KNIGHT)
+Group	L35_ë¹„ë¥˜ë‹¨ëŒê²©ëŒ€(KNIGHT)-ë¹„ë¥˜ë‹¨ëŒê²©ëŒ€(KNIGHT)
 {
 	Leader	"Brutaler Besessener"	532
 	Vnum	510
@@ -838,7 +838,7 @@ Group	L35_ºñ·ù´Üµ¹°İ´ë(KNIGHT)-ºñ·ù´Üµ¹°İ´ë(KNIGHT)
 	2	"Brutaler Besessener"	532
 	3	"Brutaler Soldat"	531
 }
-Group	L37_ºñ·ù´Ü±Ã¼ö(S_KNIGHT)-ºñ·ù´Üµ¹°İ´ë(KNIGHT)
+Group	L37_ë¹„ë¥˜ë‹¨ê¶ìˆ˜(S_KNIGHT)-ë¹„ë¥˜ë‹¨ëŒê²©ëŒ€(KNIGHT)
 {
 	Leader	"Brutaler Bogensch?tze"	533
 	Vnum	511
@@ -846,7 +846,7 @@ Group	L37_ºñ·ù´Ü±Ã¼ö(S_KNIGHT)-ºñ·ù´Üµ¹°İ´ë(KNIGHT)
 	2	"Brutaler Soldat"	531
 	3	"Brutaler Soldat"	531
 }
-Group	L37_ºñ·ù´Ü±Ã¼ö(S_KNIGHT)-ºñ·ù´Ü±Ã¼ö(S_KNIGHT)
+Group	L37_ë¹„ë¥˜ë‹¨ê¶ìˆ˜(S_KNIGHT)-ë¹„ë¥˜ë‹¨ê¶ìˆ˜(S_KNIGHT)
 {
 	Leader	"Brutaler Bogensch?tze"	533
 	Vnum	512
@@ -854,7 +854,7 @@ Group	L37_ºñ·ù´Ü±Ã¼ö(S_KNIGHT)-ºñ·ù´Ü±Ã¼ö(S_KNIGHT)
 	2	"Brutaler Besessener"	532
 	3	"Brutaler Besessener"	532
 }
-Group	L39_ºñ·ù´ÜÀå(S_KNIGHT)-ºñ·ù´Ü±Ã¼ö(S_KNIGHT)
+Group	L39_ë¹„ë¥˜ë‹¨ì¥(S_KNIGHT)-ë¹„ë¥˜ë‹¨ê¶ìˆ˜(S_KNIGHT)
 {
 	Leader	"Brutaler Spezialist"	534
 	Vnum	513
@@ -862,7 +862,7 @@ Group	L39_ºñ·ù´ÜÀå(S_KNIGHT)-ºñ·ù´Ü±Ã¼ö(S_KNIGHT)
 	2	"Brutaler Besessener"	532
 	3	"Brutaler Besessener"	532
 }
-Group	L39_ºñ·ù´ÜÀå(S_KNIGHT)-ºñ·ù´Ü±Ã¼ö(S_KNIGHT)
+Group	L39_ë¹„ë¥˜ë‹¨ì¥(S_KNIGHT)-ë¹„ë¥˜ë‹¨ê¶ìˆ˜(S_KNIGHT)
 {
 	Leader	"Brutaler Spezialist"	534
 	Vnum	514
@@ -870,7 +870,7 @@ Group	L39_ºñ·ù´ÜÀå(S_KNIGHT)-ºñ·ù´Ü±Ã¼ö(S_KNIGHT)
 	2	"Brutaler Bogensch?tze"	533
 	3	"Brutaler Besessener"	532
 }
-Group	L31_ºñ·ù´Ü´ëÀå(BOSS)-ºñ·ù´ÜÀå(S_KNIGHT)
+Group	L31_ë¹„ë¥˜ë‹¨ëŒ€ì¥(BOSS)-ë¹„ë¥˜ë‹¨ì¥(S_KNIGHT)
 {
 	Leader	"Brutaler Hauptmann"	591
 	Vnum	515
@@ -879,35 +879,35 @@ Group	L31_ºñ·ù´Ü´ëÀå(BOSS)-ºñ·ù´ÜÀå(S_KNIGHT)
 	3	"Wilder Bogensch?tze"	503
 	4	"Wilder Bogensch?tze"	503
 }
-Group	Äù½ºÆ®¿ë_¿À¶ûÄÉº¸º´
+Group	í€˜ìŠ¤íŠ¸ìš©_ì˜¤ë‘ì¼€ë³´ë³‘
 {
 	Leader	"St. Wilder Infanterist"	551
 	Vnum	551
 	1	"St. Wilder Infanterist"	551
 	2	"St. Wilder Infanterist"	551
 }
-Group	Äù½ºÆ®¿ë_¿À¶ûÄÉÁ¹°³
+Group	í€˜ìŠ¤íŠ¸ìš©_ì˜¤ë‘ì¼€ì¡¸ê°œ
 {
 	Leader	"St. Wilder Ergebener"	552
 	Vnum	552
 	1	"St. Wilder Ergebener"	552
 	2	"St. Wilder Ergebener"	552
 }
-Group	Äù½ºÆ®¿ë_¿À¶ûÄÉ±Ã¼ö
+Group	í€˜ìŠ¤íŠ¸ìš©_ì˜¤ë‘ì¼€ê¶ìˆ˜
 {
 	Leader	"St. Wilder Bogensch?tze"	553
 	Vnum	553
 	1	"St. Wilder Bogensch?tze"	553
 	2	"St. Wilder Bogensch?tze"	553
 }
-Group	Äù½ºÆ®¿ë_¿À¶ûÄÉÀå¼ö
+Group	í€˜ìŠ¤íŠ¸ìš©_ì˜¤ë‘ì¼€ì¥ìˆ˜
 {
 	Leader	"St. Wilder General"	554
 	Vnum	554
 	1	"St. Wilder General"	554
 	2	"St. Wilder General"	554
 }
-Group	L38_Áø¿õ±Í_Ã´ÈÄº´(PAWN)-Áø¿õ±Íº´(PAWN)
+Group	L38_ì§„ì›…ê·€_ì²™í›„ë³‘(PAWN)-ì§„ì›…ê·€ë³‘(PAWN)
 {
 	Leader	"Stolzer Ork"	631
 	Vnum	601
@@ -915,7 +915,7 @@ Group	L38_Áø¿õ±Í_Ã´ÈÄº´(PAWN)-Áø¿õ±Íº´(PAWN)
 	2	K?nigsskorpion	2103
 	3	K?nigsskorpion	2103
 }
-Group	L38_Áø¿õ±Íº´(PAWN)-Áø¿õ±Íº´(PAWN)
+Group	L38_ì§„ì›…ê·€ë³‘(PAWN)-ì§„ì›…ê·€ë³‘(PAWN)
 {
 	Leader	"Stolzer Ork"	631
 	Vnum	602
@@ -923,7 +923,7 @@ Group	L38_Áø¿õ±Íº´(PAWN)-Áø¿õ±Íº´(PAWN)
 	2	"Stolzer Ork"	631
 	3	K?nigsskorpion	2103
 }
-Group	L44_Áø¿õ±Í_Åõº´(S_PAWN)-Áø¿õ±Í_Ã´ÈÄº´(PAWN)
+Group	L44_ì§„ì›…ê·€_íˆ¬ë³‘(S_PAWN)-ì§„ì›…ê·€_ì²™í›„ë³‘(PAWN)
 {
 	Leader	"Stolzer Ork-K?mpfer"	633
 	Vnum	603
@@ -931,7 +931,7 @@ Group	L44_Áø¿õ±Í_Åõº´(S_PAWN)-Áø¿õ±Í_Ã´ÈÄº´(PAWN)
 	2	"Stolzer Ork-Sp?her"	632
 	3	"Stolzer Ork-Sp?her"	632
 }
-Group	L44_Áø¿õ±Í_Åõº´(S_PAWN)-Áø¿õ±Í_Åõº´(S_PAWN)
+Group	L44_ì§„ì›…ê·€_íˆ¬ë³‘(S_PAWN)-ì§„ì›…ê·€_íˆ¬ë³‘(S_PAWN)
 {
 	Leader	"Stolzer Ork-K?mpfer"	633
 	Vnum	604
@@ -939,7 +939,7 @@ Group	L44_Áø¿õ±Í_Åõº´(S_PAWN)-Áø¿õ±Í_Åõº´(S_PAWN)
 	2	"Stolzer Ork-Sp?her"	632
 	3	"Stolzer Ork-Sp?her"	632
 }
-Group	L34_Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)-Áø¿õ±Íº´(KNIGHT)
+Group	L34_ì§„ì›…ê·€_ì²™í›„ë³‘(KNIGHT)-ì§„ì›…ê·€ë³‘(KNIGHT)
 {
 	Leader	"Stolzer Ork-Sp?her"	632
 	Vnum	605
@@ -947,7 +947,7 @@ Group	L34_Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)-Áø¿õ±Íº´(KNIGHT)
 	2	"Stolzer Ork"	631
 	3	"Stolzer Ork"	631
 }
-Group	L34_Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)-Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)
+Group	L34_ì§„ì›…ê·€_ì²™í›„ë³‘(KNIGHT)-ì§„ì›…ê·€_ì²™í›„ë³‘(KNIGHT)
 {
 	Leader	"Stolzer Ork-Sp?her"	632
 	Vnum	606
@@ -955,7 +955,7 @@ Group	L34_Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)-Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)
 	2	"Stolzer Ork"	631
 	3	"Stolzer Ork"	631
 }
-Group	L35_Áø¿õ±Í_Åõº´(KNIGHT)-Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)
+Group	L35_ì§„ì›…ê·€_íˆ¬ë³‘(KNIGHT)-ì§„ì›…ê·€_ì²™í›„ë³‘(KNIGHT)
 {
 	Leader	"Stolzer Ork-K?mpfer"	633
 	Vnum	607
@@ -963,7 +963,7 @@ Group	L35_Áø¿õ±Í_Åõº´(KNIGHT)-Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)
 	2	"Stolzer Ork"	631
 	3	"Stolzer Ork"	631
 }
-Group	L35_Áø¿õ±Í_Åõº´(KNIGHT)-Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)
+Group	L35_ì§„ì›…ê·€_íˆ¬ë³‘(KNIGHT)-ì§„ì›…ê·€_ì²™í›„ë³‘(KNIGHT)
 {
 	Leader	"Stolzer Ork-K?mpfer"	633
 	Vnum	608
@@ -971,7 +971,7 @@ Group	L35_Áø¿õ±Í_Åõº´(KNIGHT)-Áø¿õ±Í_Ã´ÈÄº´(KNIGHT)
 	2	"Stolzer Ork-Sp?her"	632
 	3	"Stolzer Ork"	631
 }
-Group	L34_Áø¿õ±Í_¸¶º´(KNIGHT)-Áø¿õ±Í_Åõº´(KNIGHT)
+Group	L34_ì§„ì›…ê·€_ë§ˆë³‘(KNIGHT)-ì§„ì›…ê·€_íˆ¬ë³‘(KNIGHT)
 {
 	Leader	"Stolzer Ork-Zauberer"	634
 	Vnum	609
@@ -979,7 +979,7 @@ Group	L34_Áø¿õ±Í_¸¶º´(KNIGHT)-Áø¿õ±Í_Åõº´(KNIGHT)
 	2	"Stolzer Ork-K?mpfer"	633
 	3	"Stolzer Ork-Sp?her"	632
 }
-Group	L29_Áø¿õ±Í_¸¶º´(S_PAWN)-Áø¿õ±Í_Åõº´(S_PAWN)
+Group	L29_ì§„ì›…ê·€_ë§ˆë³‘(S_PAWN)-ì§„ì›…ê·€_íˆ¬ë³‘(S_PAWN)
 {
 	Leader	"Stolzer Ork-Zauberer"	634
 	Vnum	610
@@ -987,7 +987,7 @@ Group	L29_Áø¿õ±Í_¸¶º´(S_PAWN)-Áø¿õ±Í_Åõº´(S_PAWN)
 	2	"Stolzer Ork-K?mpfer"	633
 	3	"Stolzer Ork-K?mpfer"	633
 }
-Group	L29_Áø¿õ±Í_¸¶º´(S_PAWN)-Áø¿õ±Í_¸¶º´(S_PAWN)
+Group	L29_ì§„ì›…ê·€_ë§ˆë³‘(S_PAWN)-ì§„ì›…ê·€_ë§ˆë³‘(S_PAWN)
 {
 	Leader	"Stolzer Ork-Zauberer"	634
 	Vnum	611
@@ -995,7 +995,7 @@ Group	L29_Áø¿õ±Í_¸¶º´(S_PAWN)-Áø¿õ±Í_¸¶º´(S_PAWN)
 	2	"Stolzer Ork-K?mpfer"	633
 	3	"Stolzer Ork-K?mpfer"	633
 }
-Group	L36_Áø¿õ±Í_Àå±º(S_KNIGHT)-Áø¿õ±Í_¸¶º´(KNIGHT)
+Group	L36_ì§„ì›…ê·€_ì¥êµ°(S_KNIGHT)-ì§„ì›…ê·€_ë§ˆë³‘(KNIGHT)
 {
 	Leader	"Stolzer Ork-General"	635
 	Vnum	612
@@ -1003,7 +1003,7 @@ Group	L36_Áø¿õ±Í_Àå±º(S_KNIGHT)-Áø¿õ±Í_¸¶º´(KNIGHT)
 	2	"Stolzer Ork-Sp?her"	632
 	3	"Stolzer Ork-Sp?her"	632
 }
-Group	L36_Áø¿õ±Í_Àå±º(S_KNIGHT)-Áø¿õ±Í_¸¶º´(KNIGHT)
+Group	L36_ì§„ì›…ê·€_ì¥êµ°(S_KNIGHT)-ì§„ì›…ê·€_ë§ˆë³‘(KNIGHT)
 {
 	Leader	"Stolzer Ork-General"	635
 	Vnum	613
@@ -1011,7 +1011,7 @@ Group	L36_Áø¿õ±Í_Àå±º(S_KNIGHT)-Áø¿õ±Í_¸¶º´(KNIGHT)
 	2	"Stolzer Ork-Zauberer"	634
 	3	"Stolzer Ork-K?mpfer"	633
 }
-Group	L39_Èæ¿õ±Í(S_KNIGHT)-ÁøÁø¿õ±Í_Àå±º(S_KNIGHT)
+Group	L39_í‘ì›…ê·€(S_KNIGHT)-ì§„ì§„ì›…ê·€_ì¥êµ°(S_KNIGHT)
 {
 	Leader	"Schwarzer Ork"	636
 	Vnum	614
@@ -1019,7 +1019,7 @@ Group	L39_Èæ¿õ±Í(S_KNIGHT)-ÁøÁø¿õ±Í_Àå±º(S_KNIGHT)
 	2	"Stolzer Ork-Sp?her"	632
 	3	"Stolzer Ork-Sp?her"	632
 }
-Group	L39_Èæ¿õ±Í(S_KNIGHT)-ÁøÁø¿õ±Í_Àå±º(S_KNIGHT)
+Group	L39_í‘ì›…ê·€(S_KNIGHT)-ì§„ì§„ì›…ê·€_ì¥êµ°(S_KNIGHT)
 {
 	Leader	"Schwarzer Ork"	636
 	Vnum	615
@@ -1027,21 +1027,21 @@ Group	L39_Èæ¿õ±Í(S_KNIGHT)-ÁøÁø¿õ±Í_Àå±º(S_KNIGHT)
 	2	"Stolzer Ork-Zauberer"	634
 	3	"Stolzer Ork-K?mpfer"	633
 }
-Group	L41_°Å´ë_Èæ¿õ±Í(S_KNIGHT)-Èæ¿õ±Í(S_KNIGHT)
+Group	L41_ê±°ëŒ€_í‘ì›…ê·€(S_KNIGHT)-í‘ì›…ê·€(S_KNIGHT)
 {
 	Leader	"Schwarzer Ork-Riese"	637
 	Vnum	616
 	1	"Schwarzer Ork"	636
 	2	"Stolzer Ork-Zauberer"	634
 }
-Group	L41_°Å´ë_Èæ¿õ±Í(S_KNIGHT)-°Å´ë_Èæ¿õ±Í(S_KNIGHT)
+Group	L41_ê±°ëŒ€_í‘ì›…ê·€(S_KNIGHT)-ê±°ëŒ€_í‘ì›…ê·€(S_KNIGHT)
 {
 	Leader	"Schwarzer Ork-Riese"	637
 	Vnum	617
 	1	"Schwarzer Ork"	636
 	2	"Schwarzer Ork"	636
 }
-Group	L41_¿õ±Í_Á·Àå(BOSS)-°Å´ë_Èæ¿õ±Í(S_KNIGHT)
+Group	L41_ì›…ê·€_ì¡±ì¥(BOSS)-ê±°ëŒ€_í‘ì›…ê·€(S_KNIGHT)
 {
 	Leader	Oberork	691
 	Vnum	621
@@ -1050,70 +1050,70 @@ Group	L41_¿õ±Í_Á·Àå(BOSS)-°Å´ë_Èæ¿õ±Í(S_KNIGHT)
 	3	"Schwarzer Ork"	636
 	4	"Stolzer Ork-Zauberer"	634
 }
-Group	¸ÛÃ»ÇÑÁø¿õ±Íº´
+Group	ë©ì²­í•œì§„ì›…ê·€ë³‘
 {
 	Leader	"Mutiger gr. Ork"	651
 	Vnum	651
 	1	"Mutiger gr. Ork"	651
 	2	"Mutiger gr. Ork"	651
 }
-Group	Äù½ºÆ®¿ë_Áø¿õ±Í
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ì›…ê·€
 {
 	Leader	"Mutiger gr. Orksp?her"	652
 	Vnum	652
 	1	"Mutiger gr. Orksp?her"	652
 	2	"Mutiger gr. Orksp?her"	652
 }
-Group	Äù½ºÆ®¿ë_Áø¿õ±Í
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ì›…ê·€
 {
 	Leader	"Mutiger gr. Orkk?mpfer"	653
 	Vnum	653
 	1	"Mutiger gr. Orkk?mpfer"	653
 	2	"Mutiger gr. Orkk?mpfer"	653
 }
-Group	Äù½ºÆ®¿ë_Áø¿õ±Í
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ì›…ê·€
 {
 	Leader	"Mutiger gr. Orkzauberer"	654
 	Vnum	654
 	1	"Mutiger gr. Orkzauberer"	654
 	2	"Mutiger gr. Orkzauberer"	654
 }
-Group	Äù½ºÆ®¿ë_Áø¿õ±Í
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ì›…ê·€
 {
 	Leader	"Mutiger gr. Orkgeneral"	655
 	Vnum	655
 	1	"Mutiger gr. Orkgeneral"	655
 	2	"Mutiger gr. Orkgeneral"	655
 }
-Group	Äù½ºÆ®¿ë_Áø¿õ±Í
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ì›…ê·€
 {
 	Leader	"Mutiger Schw. Ork"	656
 	Vnum	656
 	1	"Mutiger Schw. Ork"	656
 	2	"Mutiger Schw. Ork"	656
 }
-Group	Äù½ºÆ®¿ë_Áø¿õ±Í
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ì›…ê·€
 {
 	Leader	"Mutiger Schw. Orkriese"	657
 	Vnum	657
 	1	"Mutiger Schw. Orkriese"	657
 	2	"Mutiger Schw. Orkriese"	657
 }
-Group	Äù½ºÆ®¿ë_Áø¿õ±Í
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ì›…ê·€
 {
 	Leader	Ork-Zauberer	604
 	Vnum	658
 	1	Ork-K?mpfer	603
 	2	Ork-Sp?her	602
 }
-Group	L44_¹Ğ±³³ªÇÑº´(PAWN)-¹Ğ±³ÃßÁ¾ÀÚ(PAWN)
+Group	L44_ë°€êµë‚˜í•œë³‘(PAWN)-ë°€êµì¶”ì¢…ì(PAWN)
 {
 	Leader	"Dunkler Arahan"	702
 	Vnum	701
 	1	"Dunkler Fanatiker"	701
 	2	"Dunkler Fanatiker"	701
 }
-Group	L44_¹Ğ±³³ªÇÑº´(PAWN)-¹Ğ±³³ªÇÑº´(PAWN)
+Group	L44_ë°€êµë‚˜í•œë³‘(PAWN)-ë°€êµë‚˜í•œë³‘(PAWN)
 {
 	Leader	"Dunkler Arahan"	702
 	Vnum	702
@@ -1121,7 +1121,7 @@ Group	L44_¹Ğ±³³ªÇÑº´(PAWN)-¹Ğ±³³ªÇÑº´(PAWN)
 	2	"Dunkler Fanatiker"	701
 	3	"Dunkler Fanatiker"	701
 }
-Group	L44_¹Ğ±³³ªÇÑº´(PAWN)-¹Ğ±³³ªÇÑº´(PAWN)
+Group	L44_ë°€êµë‚˜í•œë³‘(PAWN)-ë°€êµë‚˜í•œë³‘(PAWN)
 {
 	Leader	"Dunkler Arahan"	702
 	Vnum	703
@@ -1129,7 +1129,7 @@ Group	L44_¹Ğ±³³ªÇÑº´(PAWN)-¹Ğ±³³ªÇÑº´(PAWN)
 	2	"Hoher Arahan"	752
 	3	"Dunkler Fanatiker"	701
 }
-Group	L45_¹Ğ±³³ªÇÑÅõº´(PAWN)-¹Ğ±³³ªÇÑº´(PAWN)
+Group	L45_ë°€êµë‚˜í•œíˆ¬ë³‘(PAWN)-ë°€êµë‚˜í•œë³‘(PAWN)
 {
 	Leader	"Dunkler K?mpfer"	703
 	Vnum	704
@@ -1137,7 +1137,7 @@ Group	L45_¹Ğ±³³ªÇÑÅõº´(PAWN)-¹Ğ±³³ªÇÑº´(PAWN)
 	2	"Dunkler Fanatiker"	701
 	3	"Dunkler Fanatiker"	701
 }
-Group	L45_¹Ğ±³³ªÇÑÅõº´(PAWN)-¹Ğ±³³ªÇÑº´(PAWN)
+Group	L45_ë°€êµë‚˜í•œíˆ¬ë³‘(PAWN)-ë°€êµë‚˜í•œë³‘(PAWN)
 {
 	Leader	"Dunkler K?mpfer"	703
 	Vnum	705
@@ -1145,7 +1145,7 @@ Group	L45_¹Ğ±³³ªÇÑÅõº´(PAWN)-¹Ğ±³³ªÇÑº´(PAWN)
 	2	"Dunkler Arahan"	702
 	3	"Dunkler Arahan"	702
 }
-Group	L46_¹Ğ±³³ªÇÑÀå(S_PAWN)-¹Ğ±³³ªÇÑÅõº´(PAWN)
+Group	L46_ë°€êµë‚˜í•œì¥(S_PAWN)-ë°€êµë‚˜í•œíˆ¬ë³‘(PAWN)
 {
 	Leader	"Oberer dunkler Arahan"	704
 	Vnum	706
@@ -1153,7 +1153,7 @@ Group	L46_¹Ğ±³³ªÇÑÀå(S_PAWN)-¹Ğ±³³ªÇÑÅõº´(PAWN)
 	2	"Dunkler Arahan"	702
 	3	"Dunkler Arahan"	702
 }
-Group	L46_¹Ğ±³³ªÇÑÀå(S_PAWN)-¹Ğ±³³ªÇÑÅõº´(PAWN)
+Group	L46_ë°€êµë‚˜í•œì¥(S_PAWN)-ë°€êµë‚˜í•œíˆ¬ë³‘(PAWN)
 {
 	Leader	"Oberer dunkler Arahan"	704
 	Vnum	707
@@ -1161,7 +1161,7 @@ Group	L46_¹Ğ±³³ªÇÑÀå(S_PAWN)-¹Ğ±³³ªÇÑÅõº´(PAWN)
 	2	"Hoher Arahan-K?mpfer"	753
 	3	"Hoher  Beschw?rer"	757
 }
-Group	L31_¹Ğ±³ÁıÇàº´(S_PAWN)-¹Ğ±³ÁıÇàº´(S_PAWN)
+Group	L31_ë°€êµì§‘í–‰ë³‘(S_PAWN)-ë°€êµì§‘í–‰ë³‘(S_PAWN)
 {
 	Leader	"Dunkler Scharfrichter"	705
 	Vnum	708
@@ -1169,7 +1169,7 @@ Group	L31_¹Ğ±³ÁıÇàº´(S_PAWN)-¹Ğ±³ÁıÇàº´(S_PAWN)
 	2	"Hoher Ober-Arahan"	754
 	3	"Oberer dunkler Arahan"	704
 }
-Group	L31_¹Ğ±³ÁıÇàº´(S_PAWN)-¹Ğ±³ÁıÇàº´(S_PAWN)
+Group	L31_ë°€êµì§‘í–‰ë³‘(S_PAWN)-ë°€êµì§‘í–‰ë³‘(S_PAWN)
 {
 	Leader	"Dunkler Scharfrichter"	705
 	Vnum	709
@@ -1177,7 +1177,7 @@ Group	L31_¹Ğ±³ÁıÇàº´(S_PAWN)-¹Ğ±³ÁıÇàº´(S_PAWN)
 	2	"Oberer dunkler Arahan"	704
 	3	"Oberer dunkler Arahan"	704
 }
-Group	L33_¹Ğ±³°­¹Ú·É(S_PAWN)-¹Ğ±³ÁıÇàº´(S_PAWN)
+Group	L33_ë°€êµê°•ë°•ë ¹(S_PAWN)-ë°€êµì§‘í–‰ë³‘(S_PAWN)
 {
 	Leader	"Dunkler Peiniger"	706
 	Vnum	710
@@ -1185,7 +1185,7 @@ Group	L33_¹Ğ±³°­¹Ú·É(S_PAWN)-¹Ğ±³ÁıÇàº´(S_PAWN)
 	2	"Hoher Scharfrichter"	755
 	3	"Oberer dunkler Arahan"	704
 }
-Group	L33_¹Ğ±³°­¹Ú·É(S_PAWN)-¹Ğ±³°­¹Ú·É(S_PAWN)
+Group	L33_ë°€êµê°•ë°•ë ¹(S_PAWN)-ë°€êµê°•ë°•ë ¹(S_PAWN)
 {
 	Leader	"Dunkler Peiniger"	706
 	Vnum	711
@@ -1193,7 +1193,7 @@ Group	L33_¹Ğ±³°­¹Ú·É(S_PAWN)-¹Ğ±³°­¹Ú·É(S_PAWN)
 	2	"Dunkler Scharfrichter"	705
 	3	"Oberer dunkler Arahan"	704
 }
-Group	L36_¹Ğ±³¼ÒÈ¯·É(S_PAWN)-¹Ğ±³°­¹Ú·É(S_PAWN)
+Group	L36_ë°€êµì†Œí™˜ë ¹(S_PAWN)-ë°€êµê°•ë°•ë ¹(S_PAWN)
 {
 	Leader	"Dunkler Beschw?rer"	707
 	Vnum	712
@@ -1201,7 +1201,7 @@ Group	L36_¹Ğ±³¼ÒÈ¯·É(S_PAWN)-¹Ğ±³°­¹Ú·É(S_PAWN)
 	2	"Dunkler Scharfrichter"	705
 	3	"Dunkler Scharfrichter"	705
 }
-Group	L36_¹Ğ±³¼ÒÈ¯·É(S_PAWN)-¹Ğ±³¼ÒÈ¯·É(S_PAWN)
+Group	L36_ë°€êµì†Œí™˜ë ¹(S_PAWN)-ë°€êµì†Œí™˜ë ¹(S_PAWN)
 {
 	Leader	"Dunkler Beschw?rer"	707
 	Vnum	713
@@ -1209,14 +1209,14 @@ Group	L36_¹Ğ±³¼ÒÈ¯·É(S_PAWN)-¹Ğ±³¼ÒÈ¯·É(S_PAWN)
 	2	"Dunkler Peiniger"	706
 	3	"Dunkler Scharfrichter"	705
 }
-Group	L40_¹Ğ±³³ªÇÑº´(KNIGHT)-¹Ğ±³ÃßÁ¾ÀÚ(KNIGHT)
+Group	L40_ë°€êµë‚˜í•œë³‘(KNIGHT)-ë°€êµì¶”ì¢…ì(KNIGHT)
 {
 	Leader	"Stolzer dunkl. Arahan"	732
 	Vnum	714
 	1	"Stolzer dunkl. Fanatiker"	731
 	2	"Brutaler Fanatiker"	771
 }
-Group	L40_¹Ğ±³³ªÇÑº´(KNIGHT)-¹Ğ±³³ªÇÑº´(KNIGHT)
+Group	L40_ë°€êµë‚˜í•œë³‘(KNIGHT)-ë°€êµë‚˜í•œë³‘(KNIGHT)
 {
 	Leader	"Stolzer dunkl. Arahan"	732
 	Vnum	715
@@ -1224,7 +1224,7 @@ Group	L40_¹Ğ±³³ªÇÑº´(KNIGHT)-¹Ğ±³³ªÇÑº´(KNIGHT)
 	2	"Stolzer dunkl. Fanatiker"	731
 	3	"Stolzer dunkl. Fanatiker"	731
 }
-Group	L40_¹Ğ±³³ªÇÑº´(KNIGHT)-¹Ğ±³³ªÇÑº´(KNIGHT)
+Group	L40_ë°€êµë‚˜í•œë³‘(KNIGHT)-ë°€êµë‚˜í•œë³‘(KNIGHT)
 {
 	Leader	"Stolzer dunkl. Arahan"	732
 	Vnum	716
@@ -1232,7 +1232,7 @@ Group	L40_¹Ğ±³³ªÇÑº´(KNIGHT)-¹Ğ±³³ªÇÑº´(KNIGHT)
 	2	"Stolzer dunkl. Arahan"	732
 	3	"Stolzer dunkl. Fanatiker"	731
 }
-Group	L43_¹Ğ±³³ªÇÑÅõº´(KNIGHT)-¹Ğ±³³ªÇÑº´(KNIGHT)
+Group	L43_ë°€êµë‚˜í•œíˆ¬ë³‘(KNIGHT)-ë°€êµë‚˜í•œë³‘(KNIGHT)
 {
 	Leader	"Stolzer dunkl. K?mpfer"	733
 	Vnum	717
@@ -1240,7 +1240,7 @@ Group	L43_¹Ğ±³³ªÇÑÅõº´(KNIGHT)-¹Ğ±³³ªÇÑº´(KNIGHT)
 	2	"Brutaler Arahan"	772
 	3	"Stolzer dunkl. Fanatiker"	731
 }
-Group	L43_¹Ğ±³³ªÇÑÅõº´(KNIGHT)-¹Ğ±³³ªÇÑÅõº´(KNIGHT)
+Group	L43_ë°€êµë‚˜í•œíˆ¬ë³‘(KNIGHT)-ë°€êµë‚˜í•œíˆ¬ë³‘(KNIGHT)
 {
 	Leader	"Stolzer dunkl. K?mpfer"	733
 	Vnum	718
@@ -1248,7 +1248,7 @@ Group	L43_¹Ğ±³³ªÇÑÅõº´(KNIGHT)-¹Ğ±³³ªÇÑÅõº´(KNIGHT)
 	2	"Stolzer dunkl. Arahan"	732
 	3	"Stolzer dunkl. Fanatiker"	731
 }
-Group	L46_¹Ğ±³³ªÇÑÀå(S_KNIGHT)-¹Ğ±³³ªÇÑÅõº´(KNIGHT)
+Group	L46_ë°€êµë‚˜í•œì¥(S_KNIGHT)-ë°€êµë‚˜í•œíˆ¬ë³‘(KNIGHT)
 {
 	Leader	"Stolzer dunkl. Oberst"	734
 	Vnum	719
@@ -1256,7 +1256,7 @@ Group	L46_¹Ğ±³³ªÇÑÀå(S_KNIGHT)-¹Ğ±³³ªÇÑÅõº´(KNIGHT)
 	2	"Stolzer dunkl. Arahan"	732
 	3	"Stolzer dunkl. Fanatiker"	731
 }
-Group	L46_¹Ğ±³³ªÇÑÀå(S_KNIGHT)-¹Ğ±³³ªÇÑÀå(S_KNIGHT)
+Group	L46_ë°€êµë‚˜í•œì¥(S_KNIGHT)-ë°€êµë‚˜í•œì¥(S_KNIGHT)
 {
 	Leader	"Stolzer dunkl. Oberst"	734
 	Vnum	720
@@ -1264,7 +1264,7 @@ Group	L46_¹Ğ±³³ªÇÑÀå(S_KNIGHT)-¹Ğ±³³ªÇÑÀå(S_KNIGHT)
 	2	"Stolzer dunkl. K?mpfer"	733
 	3	"Stolzer dunkl. Arahan"	732
 }
-Group	L49_¹Ğ±³ÁıÇàº´(S_KNIGHT)-¹Ğ±³³ªÇÑÀå(S_KNIGHT)
+Group	L49_ë°€êµì§‘í–‰ë³‘(S_KNIGHT)-ë°€êµë‚˜í•œì¥(S_KNIGHT)
 {
 	Leader	"Stolzer dunkl. Sch?tze"	735
 	Vnum	721
@@ -1272,7 +1272,7 @@ Group	L49_¹Ğ±³ÁıÇàº´(S_KNIGHT)-¹Ğ±³³ªÇÑÀå(S_KNIGHT)
 	2	"Stolzer dunkl. K?mpfer"	733
 	3	"Brutaler  Arahan-K?mpfer"	773
 }
-Group	L49_¹Ğ±³ÁıÇàº´(S_KNIGHT)-¹Ğ±³ÁıÇàº´(S_KNIGHT)
+Group	L49_ë°€êµì§‘í–‰ë³‘(S_KNIGHT)-ë°€êµì§‘í–‰ë³‘(S_KNIGHT)
 {
 	Leader	"Stolzer dunkl. Sch?tze"	735
 	Vnum	722
@@ -1280,7 +1280,7 @@ Group	L49_¹Ğ±³ÁıÇàº´(S_KNIGHT)-¹Ğ±³ÁıÇàº´(S_KNIGHT)
 	2	"Stolzer dunkl. Oberst"	734
 	3	"Stolzer dunkl. K?mpfer"	733
 }
-Group	L34_¹Ğ±³°­¹Ú·É(S_KNIGHT)-¹Ğ±³ÁıÇàº´(S_KNIGHT)
+Group	L34_ë°€êµê°•ë°•ë ¹(S_KNIGHT)-ë°€êµì§‘í–‰ë³‘(S_KNIGHT)
 {
 	Leader	"Stolzer dunkl. Peiniger"	736
 	Vnum	723
@@ -1288,7 +1288,7 @@ Group	L34_¹Ğ±³°­¹Ú·É(S_KNIGHT)-¹Ğ±³ÁıÇàº´(S_KNIGHT)
 	2	"Stolzer dunkl. Oberst"	734
 	3	"Stolzer dunkl. Oberst"	734
 }
-Group	L34_¹Ğ±³°­¹Ú·É(S_KNIGHT)-¹Ğ±³°­¹Ú·É(S_KNIGHT)
+Group	L34_ë°€êµê°•ë°•ë ¹(S_KNIGHT)-ë°€êµê°•ë°•ë ¹(S_KNIGHT)
 {
 	Leader	"Stolzer dunkl. Peiniger"	736
 	Vnum	724
@@ -1296,7 +1296,7 @@ Group	L34_¹Ğ±³°­¹Ú·É(S_KNIGHT)-¹Ğ±³°­¹Ú·É(S_KNIGHT)
 	2	"Stolzer dunkl. Sch?tze"	735
 	3	"Stolzer dunkl. Sch?tze"	735
 }
-Group	L37_¹Ğ±³¼ÒÈ¯·É(S_KNIGHT)-¹Ğ±³°­¹Ú·É(S_KNIGHT)
+Group	L37_ë°€êµì†Œí™˜ë ¹(S_KNIGHT)-ë°€êµê°•ë°•ë ¹(S_KNIGHT)
 {
 	Leader	"Stolzer dunkl. Zauberer"	737
 	Vnum	725
@@ -1304,7 +1304,7 @@ Group	L37_¹Ğ±³¼ÒÈ¯·É(S_KNIGHT)-¹Ğ±³°­¹Ú·É(S_KNIGHT)
 	2	"Stolzer dunkl. Peiniger"	736
 	3	"Stolzer dunkl. Sch?tze"	735
 }
-Group	L37_¹Ğ±³¼ÒÈ¯·É(S_KNIGHT)-¹Ğ±³¼ÒÈ¯·É(S_KNIGHT)
+Group	L37_ë°€êµì†Œí™˜ë ¹(S_KNIGHT)-ë°€êµì†Œí™˜ë ¹(S_KNIGHT)
 {
 	Leader	"Stolzer dunkl. Zauberer"	737
 	Vnum	726
@@ -1312,7 +1312,7 @@ Group	L37_¹Ğ±³¼ÒÈ¯·É(S_KNIGHT)-¹Ğ±³¼ÒÈ¯·É(S_KNIGHT)
 	2	"Stolzer dunkl. Peiniger"	736
 	3	"Stolzer dunkl. Sch?tze"	735
 }
-Group	L40_¹Ğ±³±³ÁÖ(BOSS)-¹Ğ±³¼ÒÈ¯·É(S_KNIGHT)
+Group	L40_ë°€êµêµì£¼(BOSS)-ë°€êµì†Œí™˜ë ¹(S_KNIGHT)
 {
 	Leader	"Dunkler Anf?hrer"	791
 	Vnum	727
@@ -1321,42 +1321,42 @@ Group	L40_¹Ğ±³±³ÁÖ(BOSS)-¹Ğ±³¼ÒÈ¯·É(S_KNIGHT)
 	3	"Stolzer dunkl. Sch?tze"	735
 	4	"Stolzer dunkl. Sch?tze"	735
 }
-Group	Äù½ºÆ®¿ë_¹Ğ±³ÃßÁ¾ÀÚ
+Group	í€˜ìŠ¤íŠ¸ìš©_ë°€êµì¶”ì¢…ì
 {
 	Leader	"Hoher Fanatiker"	751
 	Vnum	751
 	1	"Hoher Fanatiker"	751
 	2	"Hoher Fanatiker"	751
 }
-Group	Äù½ºÆ®¿ë_Áø¹Ğ±³³ªÇÑÀå
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ë°€êµë‚˜í•œì¥
 {
 	Leader	"Brutaler Ober-Arahan"	774
 	Vnum	774
 	1	"Brutaler Ober-Arahan"	774
 	2	"Brutaler Ober-Arahan"	774
 }
-Group	Äù½ºÆ®¿ë_Áø¹Ğ±³ÁıÇàº´
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ë°€êµì§‘í–‰ë³‘
 {
 	Leader	"Brutaler Scharfrichter"	775
 	Vnum	775
 	1	"Brutaler Scharfrichter"	775
 	2	"Brutaler Scharfrichter"	775
 }
-Group	Äù½ºÆ®¿ë_Áø¹Ğ±³°­¹Ú·É
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ë°€êµê°•ë°•ë ¹
 {
 	Leader	"Brutaler Peiniger"	776
 	Vnum	776
 	1	"Brutaler Peiniger"	776
 	2	"Brutaler Peiniger"	776
 }
-Group	Äù½ºÆ®¿ë_Áø¹Ğ±³¼ÒÈ¯·É
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§„ë°€êµì†Œí™˜ë ¹
 {
 	Leader	"Brutaler Beschw?rer"	777
 	Vnum	777
 	1	"Brutaler Beschw?rer"	777
 	2	"Brutaler Beschw?rer"	777
 }
-Group	L48_±«Áú°¨¿°°ß(S_PAWN)-½Ã±Í(S_PAWN)
+Group	L48_ê´´ì§ˆê°ì—¼ê²¬(S_PAWN)-ì‹œê·€(S_PAWN)
 {
 	Leader	Plagenhund	902
 	Vnum	901
@@ -1364,7 +1364,7 @@ Group	L48_±«Áú°¨¿°°ß(S_PAWN)-½Ã±Í(S_PAWN)
 	2	Leichengeist	901
 	3	Leichengeist	901
 }
-Group	L48_±«Áú°¨¿°°ß(S_PAWN)-±«Áú°¨¿°°ß(S_PAWN)
+Group	L48_ê´´ì§ˆê°ì—¼ê²¬(S_PAWN)-ê´´ì§ˆê°ì—¼ê²¬(S_PAWN)
 {
 	Leader	Plagenhund	902
 	Vnum	902
@@ -1372,7 +1372,7 @@ Group	L48_±«Áú°¨¿°°ß(S_PAWN)-±«Áú°¨¿°°ß(S_PAWN)
 	2	Leichengeist	901
 	3	Leichengeist	901
 }
-Group	L48_±«Áú°¨¿°°ß(S_PAWN)-±«Áú°¨¿°°ß(S_PAWN)
+Group	L48_ê´´ì§ˆê°ì—¼ê²¬(S_PAWN)-ê´´ì§ˆê°ì—¼ê²¬(S_PAWN)
 {
 	Leader	Plagenhund	902
 	Vnum	903
@@ -1380,7 +1380,7 @@ Group	L48_±«Áú°¨¿°°ß(S_PAWN)-±«Áú°¨¿°°ß(S_PAWN)
 	2	Leichengeist	901
 	3	"W. Leichengeist"	931
 }
-Group	L50_±«Áú°¨¿°ÀÚ(S_PAWN)-±«Áú°¨¿°°ß(S_PAWN)
+Group	L50_ê´´ì§ˆê°ì—¼ì(S_PAWN)-ê´´ì§ˆê°ì—¼ê²¬(S_PAWN)
 {
 	Leader	Plagenmann	903
 	Vnum	904
@@ -1388,7 +1388,7 @@ Group	L50_±«Áú°¨¿°ÀÚ(S_PAWN)-±«Áú°¨¿°°ß(S_PAWN)
 	2	Plagenhund	902
 	3	Plagenhund	902
 }
-Group	L50_±«Áú°¨¿°ÀÚ(S_PAWN)-±«Áú°¨¿°ÀÚ(S_PAWN)
+Group	L50_ê´´ì§ˆê°ì—¼ì(S_PAWN)-ê´´ì§ˆê°ì—¼ì(S_PAWN)
 {
 	Leader	Plagenmann	903
 	Vnum	905
@@ -1396,7 +1396,7 @@ Group	L50_±«Áú°¨¿°ÀÚ(S_PAWN)-±«Áú°¨¿°ÀÚ(S_PAWN)
 	2	Plagenhund	902
 	3	Plagenhund	902
 }
-Group	L52_±«Áú°¨¿°º´(KNIGHT)-±«Áú°¨¿°ÀÚ(S_PAWN)
+Group	L52_ê´´ì§ˆê°ì—¼ë³‘(KNIGHT)-ê´´ì§ˆê°ì—¼ì(S_PAWN)
 {
 	Leader	Plagenschwertk?mpfer	904
 	Vnum	906
@@ -1405,7 +1405,7 @@ Group	L52_±«Áú°¨¿°º´(KNIGHT)-±«Áú°¨¿°ÀÚ(S_PAWN)
 	3	Plagenhund	902
 	4	Plagenhund	902
 }
-Group	L52_±«Áú°¨¿°º´(KNIGHT)-±«Áú°¨¿°º´(KNIGHT)
+Group	L52_ê´´ì§ˆê°ì—¼ë³‘(KNIGHT)-ê´´ì§ˆê°ì—¼ë³‘(KNIGHT)
 {
 	Leader	Plagenschwertk?mpfer	904
 	Vnum	907
@@ -1413,7 +1413,7 @@ Group	L52_±«Áú°¨¿°º´(KNIGHT)-±«Áú°¨¿°º´(KNIGHT)
 	2	Plagenmann	903
 	3	"W. Plagenmann"	933
 }
-Group	L53_±«Áú°¨¿°Ã¢º´(KNIGHT)-±«Áú°¨¿°º´(KNIGHT)
+Group	L53_ê´´ì§ˆê°ì—¼ì°½ë³‘(KNIGHT)-ê´´ì§ˆê°ì—¼ë³‘(KNIGHT)
 {
 	Leader	Plagenspeerk?mpfer	905
 	Vnum	908
@@ -1421,7 +1421,7 @@ Group	L53_±«Áú°¨¿°Ã¢º´(KNIGHT)-±«Áú°¨¿°º´(KNIGHT)
 	2	Plagenschwertk?mpfer	904
 	3	Plagenmann	903
 }
-Group	L53_±«Áú°¨¿°Ã¢º´(KNIGHT)-±«Áú°¨¿°Ã¢º´(KNIGHT)
+Group	L53_ê´´ì§ˆê°ì—¼ì°½ë³‘(KNIGHT)-ê´´ì§ˆê°ì—¼ì°½ë³‘(KNIGHT)
 {
 	Leader	Plagenspeerk?mpfer	905
 	Vnum	909
@@ -1429,21 +1429,21 @@ Group	L53_±«Áú°¨¿°Ã¢º´(KNIGHT)-±«Áú°¨¿°Ã¢º´(KNIGHT)
 	2	"W. Plagenk?mpfer"	934
 	3	Plagenschwertk?mpfer	904
 }
-Group	L54_±«Áú°¨¿°±Ã¼ö(KNIGHT)-±«Áú°¨¿°Ã¢º´(KNIGHT)
+Group	L54_ê´´ì§ˆê°ì—¼ê¶ìˆ˜(KNIGHT)-ê´´ì§ˆê°ì—¼ì°½ë³‘(KNIGHT)
 {
 	Leader	Plagenbogensch?tze	906
 	Vnum	910
 	1	Plagenspeerk?mpfer	905
 	2	Plagenschwertk?mpfer	904
 }
-Group	L54_±«Áú°¨¿°±Ã¼ö(KNIGHT)-±«Áú°¨¿°±Ã¼ö(KNIGHT)
+Group	L54_ê´´ì§ˆê°ì—¼ê¶ìˆ˜(KNIGHT)-ê´´ì§ˆê°ì—¼ê¶ìˆ˜(KNIGHT)
 {
 	Leader	Plagenbogensch?tze	906
 	Vnum	911
 	1	Plagenspeerk?mpfer	905
 	2	"W. Plagenspeerk?mpfer"	935
 }
-Group	L54_±«Áú°¨¿°´ëÀå(S_KNIGHT)-±«Áú°¨¿°±Ã¼ö(KNIGHT)
+Group	L54_ê´´ì§ˆê°ì—¼ëŒ€ì¥(S_KNIGHT)-ê´´ì§ˆê°ì—¼ê¶ìˆ˜(KNIGHT)
 {
 	Leader	Plagenanf?hrer	907
 	Vnum	912
@@ -1451,7 +1451,7 @@ Group	L54_±«Áú°¨¿°´ëÀå(S_KNIGHT)-±«Áú°¨¿°±Ã¼ö(KNIGHT)
 	2	Plagenspeerk?mpfer	905
 	3	Plagenspeerk?mpfer	905
 }
-Group	L54_±«Áú°¨¿°´ëÀå(S_KNIGHT)-±«Áú°¨¿°´ëÀå(S_KNIGHT)
+Group	L54_ê´´ì§ˆê°ì—¼ëŒ€ì¥(S_KNIGHT)-ê´´ì§ˆê°ì—¼ëŒ€ì¥(S_KNIGHT)
 {
 	Leader	Plagenanf?hrer	907
 	Vnum	913
@@ -1459,7 +1459,7 @@ Group	L54_±«Áú°¨¿°´ëÀå(S_KNIGHT)-±«Áú°¨¿°´ëÀå(S_KNIGHT)
 	2	Plagenbogensch?tze	906
 	3	Plagenbogensch?tze	906
 }
-Group	L55_±«Áú°¨¿°¾Ë(BOSS)-±«Áú°¨¿°´ëÀå(S_KNIGHT)
+Group	L55_ê´´ì§ˆê°ì—¼ì•Œ(BOSS)-ê´´ì§ˆê°ì—¼ëŒ€ì¥(S_KNIGHT)
 {
 	Leader	Plagenei	991
 	Vnum	914
@@ -1468,7 +1468,7 @@ Group	L55_±«Áú°¨¿°¾Ë(BOSS)-±«Áú°¨¿°´ëÀå(S_KNIGHT)
 	3	Plagenbogensch?tze	906
 	4	Plagenspeerk?mpfer	905
 }
-Group	L56_±«Áú°¨¿°¸Å°³Ã¼(BOSS)-±«Áú°¨¿°´ëÀå(S_KNIGHT)
+Group	L56_ê´´ì§ˆê°ì—¼ë§¤ê°œì²´(BOSS)-ê´´ì§ˆê°ì—¼ëŒ€ì¥(S_KNIGHT)
 {
 	Leader	Plagentr?ger	992
 	Vnum	915
@@ -1477,7 +1477,7 @@ Group	L56_±«Áú°¨¿°¸Å°³Ã¼(BOSS)-±«Áú°¨¿°´ëÀå(S_KNIGHT)
 	3	Plagenbogensch?tze	906
 	4	Plagenspeerk?mpfer	905
 }
-Group	L57_´ëÇü°¨¿°¸Å°³Ã¼(KING)-±«Áú°¨¿°´ëÀå(S_KNIGHT)
+Group	L57_ëŒ€í˜•ê°ì—¼ë§¤ê°œì²´(KING)-ê´´ì§ˆê°ì—¼ëŒ€ì¥(S_KNIGHT)
 {
 	Leader	"Riesiger Plagentr?ger"	993
 	Vnum	916
@@ -1486,7 +1486,7 @@ Group	L57_´ëÇü°¨¿°¸Å°³Ã¼(KING)-±«Áú°¨¿°´ëÀå(S_KNIGHT)
 	3	Plagenbogensch?tze	906
 	4	Plagenspeerk?mpfer	905
 }
-Group	L48_½Ã±Í(S_PAWN)-»ç±Íº´(PWAN)
+Group	L48_ì‹œê·€(S_PAWN)-ì‚¬ê·€ë³‘(PWAN)
 {
 	Leader	Leichengeist	901
 	Vnum	917
@@ -1495,7 +1495,7 @@ Group	L48_½Ã±Í(S_PAWN)-»ç±Íº´(PWAN)
 	3	D?monensoldat	1001
 	4	D?monensoldat	1001
 }
-Group	L48_½Ã±Í(S_PAWN)-»ç±Íº´(PWAN)
+Group	L48_ì‹œê·€(S_PAWN)-ì‚¬ê·€ë³‘(PWAN)
 {
 	Leader	Leichengeist	901
 	Vnum	918
@@ -1504,7 +1504,7 @@ Group	L48_½Ã±Í(S_PAWN)-»ç±Íº´(PWAN)
 	3	D?monensoldat	1001
 	4	D?monensoldat	1001
 }
-Group	L48_½Ã±Í(S_PAWN)-»ç±Íº´(PWAN)
+Group	L48_ì‹œê·€(S_PAWN)-ì‚¬ê·€ë³‘(PWAN)
 {
 	Leader	Leichengeist	901
 	Vnum	919
@@ -1513,21 +1513,21 @@ Group	L48_½Ã±Í(S_PAWN)-»ç±Íº´(PWAN)
 	3	D?monenbogensch?tze	1002
 	4	D?monensoldat	1001
 }
-Group	Äù½ºÆ®¿ë_±«Áú°¨¿°ÀÚ
+Group	í€˜ìŠ¤íŠ¸ìš©_ê´´ì§ˆê°ì—¼ì
 {
 	Leader	"W. Plagenmann"	933
 	Vnum	933
 	1	"W. Plagenmann"	933
 	2	"W. Plagenmann"	933
 }
-Group	Äù½ºÆ®¿ë_±«Áú°¨¿°±Ã¼ö
+Group	í€˜ìŠ¤íŠ¸ìš©_ê´´ì§ˆê°ì—¼ê¶ìˆ˜
 {
 	Leader	"W. Plagenbogensch?tze"	936
 	Vnum	936
 	1	"W. Plagenbogensch?tze"	936
 	2	"W. Plagenbogensch?tze"	936
 }
-Group	L60_»ç±Í±Ãº´(S_PAWN)-»ç±Íº´(S_PAWN)
+Group	L60_ì‚¬ê·€ê¶ë³‘(S_PAWN)-ì‚¬ê·€ë³‘(S_PAWN)
 {
 	Leader	D?monenbogensch?tze	1002
 	Vnum	1001
@@ -1536,7 +1536,7 @@ Group	L60_»ç±Í±Ãº´(S_PAWN)-»ç±Íº´(S_PAWN)
 	3	D?monensoldat	1001
 	4	D?monensoldat	1001
 }
-Group	L60_»ç±Í±Ãº´(S_PAWN)-»ç±Í±Ãº´(S_PAWN)
+Group	L60_ì‚¬ê·€ê¶ë³‘(S_PAWN)-ì‚¬ê·€ê¶ë³‘(S_PAWN)
 {
 	Leader	D?monenbogensch?tze	1002
 	Vnum	1002
@@ -1545,7 +1545,7 @@ Group	L60_»ç±Í±Ãº´(S_PAWN)-»ç±Í±Ãº´(S_PAWN)
 	3	D?monensoldat	1001
 	4	D?monensoldat	1001
 }
-Group	L60_»ç±Í±Ãº´(S_PAWN)-»ç±Í±Ãº´(S_PAWN)
+Group	L60_ì‚¬ê·€ê¶ë³‘(S_PAWN)-ì‚¬ê·€ê¶ë³‘(S_PAWN)
 {
 	Leader	D?monenbogensch?tze	1002
 	Vnum	1003
@@ -1554,7 +1554,7 @@ Group	L60_»ç±Í±Ãº´(S_PAWN)-»ç±Í±Ãº´(S_PAWN)
 	3	D?monensoldat	1001
 	4	D?monensoldat	1001
 }
-Group	L16_»ç±ÍÃ¢º´(S_PAWN)-»ç±Í±Ãº´(S_PAWN)
+Group	L16_ì‚¬ê·€ì°½ë³‘(S_PAWN)-ì‚¬ê·€ê¶ë³‘(S_PAWN)
 {
 	Leader	D?monenspeerk?mpfer	1003
 	Vnum	1004
@@ -1563,7 +1563,7 @@ Group	L16_»ç±ÍÃ¢º´(S_PAWN)-»ç±Í±Ãº´(S_PAWN)
 	3	D?monensoldat	1001
 	4	D?monensoldat	1001
 }
-Group	L16_»ç±ÍÃ¢º´(S_PAWN)-»ç±ÍÃ¢º´(S_PAWN)
+Group	L16_ì‚¬ê·€ì°½ë³‘(S_PAWN)-ì‚¬ê·€ì°½ë³‘(S_PAWN)
 {
 	Leader	D?monenspeerk?mpfer	1003
 	Vnum	1005
@@ -1572,7 +1572,7 @@ Group	L16_»ç±ÍÃ¢º´(S_PAWN)-»ç±ÍÃ¢º´(S_PAWN)
 	3	D?monenbogensch?tze	1002
 	4	D?monenbogensch?tze	1002
 }
-Group	L36_»ç±ÍÁÖ¼ú»ç(KNIGHT)-»ç±ÍÃ¢º´(S_PAWN)
+Group	L36_ì‚¬ê·€ì£¼ìˆ ì‚¬(KNIGHT)-ì‚¬ê·€ì°½ë³‘(S_PAWN)
 {
 	Leader	D?monenschamane	1004
 	Vnum	1006
@@ -1581,7 +1581,7 @@ Group	L36_»ç±ÍÁÖ¼ú»ç(KNIGHT)-»ç±ÍÃ¢º´(S_PAWN)
 	3	D?monenbogensch?tze	1002
 	4	D?monenbogensch?tze	1002
 }
-Group	L36_»ç±ÍÁÖ¼ú»ç(KNIGHT)-»ç±ÍÁÖ¼ú»ç(KNIGHT)
+Group	L36_ì‚¬ê·€ì£¼ìˆ ì‚¬(KNIGHT)-ì‚¬ê·€ì£¼ìˆ ì‚¬(KNIGHT)
 {
 	Leader	D?monenschamane	1004
 	Vnum	1007
@@ -1590,7 +1590,7 @@ Group	L36_»ç±ÍÁÖ¼ú»ç(KNIGHT)-»ç±ÍÁÖ¼ú»ç(KNIGHT)
 	3	D?monenspeerk?mpfer	1003
 	4	D?monenspeerk?mpfer	1003
 }
-Group	L43_Àü±Í±Ãº´(KNIGHT)-Àü±Íº´(KNIGHT)
+Group	L43_ì „ê·€ê¶ë³‘(KNIGHT)-ì „ê·€ë³‘(KNIGHT)
 {
 	Leader	"Gemeiner Bogensch?tze"	1032
 	Vnum	1008
@@ -1599,7 +1599,7 @@ Group	L43_Àü±Í±Ãº´(KNIGHT)-Àü±Íº´(KNIGHT)
 	3	"Gemeiner Soldat"	1031
 	4	"Gemeiner Soldat"	1031
 }
-Group	L43_Àü±Í±Ãº´(KNIGHT)-Àü±Í±Ãº´(KNIGHT)
+Group	L43_ì „ê·€ê¶ë³‘(KNIGHT)-ì „ê·€ê¶ë³‘(KNIGHT)
 {
 	Leader	"Gemeiner Bogensch?tze"	1032
 	Vnum	1009
@@ -1608,7 +1608,7 @@ Group	L43_Àü±Í±Ãº´(KNIGHT)-Àü±Í±Ãº´(KNIGHT)
 	3	"Gemeiner Soldat"	1031
 	4	"Gemeiner Soldat"	1031
 }
-Group	L43_Àü±Í±Ãº´(KNIGHT)-Àü±Í±Ãº´(KNIGHT)
+Group	L43_ì „ê·€ê¶ë³‘(KNIGHT)-ì „ê·€ê¶ë³‘(KNIGHT)
 {
 	Leader	"Gemeiner Bogensch?tze"	1032
 	Vnum	1010
@@ -1617,7 +1617,7 @@ Group	L43_Àü±Í±Ãº´(KNIGHT)-Àü±Í±Ãº´(KNIGHT)
 	3	"Gemeiner Soldat"	1031
 	4	"Gemeiner Soldat"	1031
 }
-Group	L45_Àü±ÍÃ¢º´(KNIGHT)-Àü±ÍÃ¢º´(KNIGHT)
+Group	L45_ì „ê·€ì°½ë³‘(KNIGHT)-ì „ê·€ì°½ë³‘(KNIGHT)
 {
 	Leader	"Gemeiner Speerk?mpfer"	1033
 	Vnum	1011
@@ -1626,7 +1626,7 @@ Group	L45_Àü±ÍÃ¢º´(KNIGHT)-Àü±ÍÃ¢º´(KNIGHT)
 	3	"Gemeiner Bogensch?tze"	1032
 	4	"Gemeiner Soldat"	1031
 }
-Group	L45_Àü±ÍÃ¢º´(KNIGHT)-Àü±ÍÃ¢º´(KNIGHT)
+Group	L45_ì „ê·€ì°½ë³‘(KNIGHT)-ì „ê·€ì°½ë³‘(KNIGHT)
 {
 	Leader	"Gemeiner Speerk?mpfer"	1033
 	Vnum	1012
@@ -1635,7 +1635,7 @@ Group	L45_Àü±ÍÃ¢º´(KNIGHT)-Àü±ÍÃ¢º´(KNIGHT)
 	3	"Gemeiner Bogensch?tze"	1032
 	4	"Gemeiner Bogensch?tze"	1032
 }
-Group	L47_Àü±ÍÁÖ¼ú»ç(KNIGHT)-Àü±ÍÃ¢º´(KNIGHT)
+Group	L47_ì „ê·€ì£¼ìˆ ì‚¬(KNIGHT)-ì „ê·€ì°½ë³‘(KNIGHT)
 {
 	Leader	"Gemeiner Schamane"	1034
 	Vnum	1013
@@ -1644,7 +1644,7 @@ Group	L47_Àü±ÍÁÖ¼ú»ç(KNIGHT)-Àü±ÍÃ¢º´(KNIGHT)
 	3	"Gemeiner Bogensch?tze"	1032
 	4	"Gemeiner Bogensch?tze"	1032
 }
-Group	L47_Àü±ÍÁÖ¼ú»ç(KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
+Group	L47_ì „ê·€ì£¼ìˆ ì‚¬(KNIGHT)-ì „ê·€ì£¼ìˆ ì‚¬(KNIGHT)
 {
 	Leader	"Gemeiner Schamane"	1034
 	Vnum	1014
@@ -1653,7 +1653,7 @@ Group	L47_Àü±ÍÁÖ¼ú»ç(KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
 	3	"Gemeiner Bogensch?tze"	1032
 	4	"Gemeiner Bogensch?tze"	1032
 }
-Group	L49_¿ø¸ÁÀÇ_¸Á·É(KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
+Group	L49_ì›ë§ì˜_ë§ë ¹(KNIGHT)-ì „ê·€ì£¼ìˆ ì‚¬(KNIGHT)
 {
 	Leader	"Geist des Grolls"	1035
 	Vnum	1015
@@ -1662,7 +1662,7 @@ Group	L49_¿ø¸ÁÀÇ_¸Á·É(KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
 	3	"Gemeiner Bogensch?tze"	1032
 	4	"Gemeiner Bogensch?tze"	1032
 }
-Group	L49_¿ø¸ÁÀÇ_¸Á·É(KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
+Group	L49_ì›ë§ì˜_ë§ë ¹(KNIGHT)-ì›ë§ì˜_ë§ë ¹(KNIGHT)
 {
 	Leader	"Geist des Grolls"	1035
 	Vnum	1016
@@ -1671,7 +1671,7 @@ Group	L49_¿ø¸ÁÀÇ_¸Á·É(KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
 	3	"Gemeiner Bogensch?tze"	1032
 	4	"Gemeiner Bogensch?tze"	1032
 }
-Group	L52_È¥µ·ÀÇ_¸Á·É(KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
+Group	L52_í˜¼ëˆì˜_ë§ë ¹(KNIGHT)-ì›ë§ì˜_ë§ë ¹(KNIGHT)
 {
 	Leader	"Geist des Chaos"	1036
 	Vnum	1017
@@ -1680,7 +1680,7 @@ Group	L52_È¥µ·ÀÇ_¸Á·É(KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
 	3	"Gemeiner Schamane"	1034
 	4	"Gemeiner Schamane"	1034
 }
-Group	L52_È¥µ·ÀÇ_¸Á·É(KNIGHT)-È¥µ·ÀÇ_¸Á·É(KNIGHT)
+Group	L52_í˜¼ëˆì˜_ë§ë ¹(KNIGHT)-í˜¼ëˆì˜_ë§ë ¹(KNIGHT)
 {
 	Leader	"Geist des Chaos"	1036
 	Vnum	1018
@@ -1689,7 +1689,7 @@ Group	L52_È¥µ·ÀÇ_¸Á·É(KNIGHT)-È¥µ·ÀÇ_¸Á·É(KNIGHT)
 	3	"Gemeiner Schamane"	1034
 	4	"Gemeiner Schamane"	1034
 }
-Group	L67_Àü±ÍÀå(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
+Group	L67_ì „ê·€ì¥(S_KNIGHT)-ì „ê·€ì£¼ìˆ ì‚¬(KNIGHT)
 {
 	Leader	"Gemeiner D?monenanf?hrer"	1037
 	Vnum	1019
@@ -1698,7 +1698,7 @@ Group	L67_Àü±ÍÀå(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
 	3	"Gemeiner Bogensch?tze"	1032
 	4	"Gemeiner Bogensch?tze"	1032
 }
-Group	L42_Áö¸¶Àå(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
+Group	L42_ì§€ë§ˆì¥(S_KNIGHT)-ì „ê·€ì£¼ìˆ ì‚¬(KNIGHT)
 {
 	Leader	Totenkopfschwertmeister	1038
 	Vnum	1020
@@ -1707,7 +1707,7 @@ Group	L42_Áö¸¶Àå(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
 	3	"Gemeiner Bogensch?tze"	1032
 	4	"Gemeiner Bogensch?tze"	1032
 }
-Group	L44_Àü·É»ç(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
+Group	L44_ì „ë ¹ì‚¬(S_KNIGHT)-ì „ê·€ì£¼ìˆ ì‚¬(KNIGHT)
 {
 	Leader	"Fliegender Totenkopf"	1039
 	Vnum	1021
@@ -1716,7 +1716,7 @@ Group	L44_Àü·É»ç(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
 	3	"Gemeiner Speerk?mpfer"	1033
 	4	"Gemeiner Speerk?mpfer"	1033
 }
-Group	L45_ºÒ»ç±Í(S_KNIGHT)-ºÒ»ç±Í(S_KNIGHT)
+Group	L45_ë¶ˆì‚¬ê·€(S_KNIGHT)-ë¶ˆì‚¬ê·€(S_KNIGHT)
 {
 	Leader	"Unsterblicher Geist"	1040
 	Vnum	1022
@@ -1725,7 +1725,7 @@ Group	L45_ºÒ»ç±Í(S_KNIGHT)-ºÒ»ç±Í(S_KNIGHT)
 	3	"Unsterblicher Geist"	1040
 	4	"Unsterblicher Geist"	1040
 }
-Group	L47_ÀçÈ°±«¹°(S_KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
+Group	L47_ì¬í™œê´´ë¬¼(S_KNIGHT)-ì›ë§ì˜_ë§ë ¹(KNIGHT)
 {
 	Leader	"D?monisches Tier"	1041
 	Vnum	1023
@@ -1734,7 +1734,7 @@ Group	L47_ÀçÈ°±«¹°(S_KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
 	3	"Geist des Grolls"	1035
 	4	"Geist des Chaos"	1036
 }
-Group	L69_»ç±Í¿Õ(BOSS)-Àü±ÍÀå(S_KNIGHT)
+Group	L69_ì‚¬ê·€ì™•(BOSS)-ì „ê·€ì¥(S_KNIGHT)
 {
 	Leader	D?monenk?nig	1091
 	Vnum	1024
@@ -1743,7 +1743,7 @@ Group	L69_»ç±Í¿Õ(BOSS)-Àü±ÍÀå(S_KNIGHT)
 	3	"Gemeiner Speerk?mpfer"	1033
 	4	"Gemeiner Speerk?mpfer"	1033
 }
-Group	L69_»ç±Í¿Õ(BOSS)-Àü±ÍÀå(S_KNIGHT)
+Group	L69_ì‚¬ê·€ì™•(BOSS)-ì „ê·€ì¥(S_KNIGHT)
 {
 	Leader	D?monenk?nig	1091
 	Vnum	1025
@@ -1752,7 +1752,7 @@ Group	L69_»ç±Í¿Õ(BOSS)-Àü±ÍÀå(S_KNIGHT)
 	3	"Fliegender Totenkopf"	1039
 	4	"Gemeiner Schamane"	1034
 }
-Group	L70_»ç±Í¿Õ(BOSS)-Àü±ÍÀå(S_KNIGHT)
+Group	L70_ì‚¬ê·€ì™•(BOSS)-ì „ê·€ì¥(S_KNIGHT)
 {
 	Leader	"Stolzer D?monenk?nig"	1092
 	Vnum	1026
@@ -1761,7 +1761,7 @@ Group	L70_»ç±Í¿Õ(BOSS)-Àü±ÍÀå(S_KNIGHT)
 	3	"Fliegender Totenkopf"	1039
 	4	"Gemeiner Schamane"	1034
 }
-Group	L42_Áö¸¶Àå(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
+Group	L42_ì§€ë§ˆì¥(S_KNIGHT)-ì „ê·€ì£¼ìˆ ì‚¬(KNIGHT)
 {
 	Leader	Totenkopfschwertmeister	1038
 	Vnum	1027
@@ -1770,7 +1770,7 @@ Group	L42_Áö¸¶Àå(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
 	3	"Gemeiner Bogensch?tze"	1032
 	4	"Gemeiner Bogensch?tze"	1032
 }
-Group	L44_Àü·É»ç(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
+Group	L44_ì „ë ¹ì‚¬(S_KNIGHT)-ì „ê·€ì£¼ìˆ ì‚¬(KNIGHT)
 {
 	Leader	"Unsterblicher Geist"	1040
 	Vnum	1028
@@ -1779,7 +1779,7 @@ Group	L44_Àü·É»ç(S_KNIGHT)-Àü±ÍÁÖ¼ú»ç(KNIGHT)
 	3	"Fliegender Totenkopf"	1039
 	4	Totenkopfschwertmeister	1038
 }
-Group	L45_ºÒ»ç±Í(S_KNIGHT)-ºÒ»ç±Í(S_KNIGHT)
+Group	L45_ë¶ˆì‚¬ê·€(S_KNIGHT)-ë¶ˆì‚¬ê·€(S_KNIGHT)
 {
 	Leader	"Unsterblicher Geist"	1040
 	Vnum	1029
@@ -1788,7 +1788,7 @@ Group	L45_ºÒ»ç±Í(S_KNIGHT)-ºÒ»ç±Í(S_KNIGHT)
 	3	"Unsterblicher Geist"	1040
 	4	"Unsterblicher Geist"	1040
 }
-Group	L47_ÀçÈ°±«¹°(S_KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
+Group	L47_ì¬í™œê´´ë¬¼(S_KNIGHT)-ì›ë§ì˜_ë§ë ¹(KNIGHT)
 {
 	Leader	"D?monisches Tier"	1041
 	Vnum	1030
@@ -1797,7 +1797,7 @@ Group	L47_ÀçÈ°±«¹°(S_KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
 	3	"Unsterblicher Geist"	1040
 	4	"Unsterblicher Geist"	1040
 }
-Group	L47_ÀçÈ°±«¹°(S_KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
+Group	L47_ì¬í™œê´´ë¬¼(S_KNIGHT)-ì›ë§ì˜_ë§ë ¹(KNIGHT)
 {
 	Leader	Sensenmann	1093
 	Vnum	1031
@@ -1806,14 +1806,14 @@ Group	L47_ÀçÈ°±«¹°(S_KNIGHT)-¿ø¸ÁÀÇ_¸Á·É(KNIGHT)
 	3	"Unsterblicher Geist"	1040
 	4	"Unsterblicher Geist"	1040
 }
-Group	L73_¾óÀ½»Ô¹ü°í·¡(S_PAWN)-ºù¸¶(S_PAWN)
+Group	L73_ì–¼ìŒë¿”ë²”ê³ ë˜(S_PAWN)-ë¹™ë§ˆ(S_PAWN)
 {
 	Leader	Eiskillerwal	1102
 	Vnum	1101
 	1	"Verzaubertes Eis"	1101
 	2	"Verzaubertes Eis"	1101
 }
-Group	L73_¾óÀ½»Ô¹ü°í·¡(S_PAWN)-¾óÀ½»Ô¹ü°í·¡(S_PAWN)
+Group	L73_ì–¼ìŒë¿”ë²”ê³ ë˜(S_PAWN)-ì–¼ìŒë¿”ë²”ê³ ë˜(S_PAWN)
 {
 	Leader	Eiskillerwal	1102
 	Vnum	1102
@@ -1821,7 +1821,7 @@ Group	L73_¾óÀ½»Ô¹ü°í·¡(S_PAWN)-¾óÀ½»Ô¹ü°í·¡(S_PAWN)
 	2	"Verzaubertes Eis"	1101
 	3	"Verzaubertes Eis"	1101
 }
-Group	L73_¾óÀ½»Ô¹ü°í·¡(S_PAWN)-¾óÀ½»Ô¹ü°í·¡(S_PAWN)
+Group	L73_ì–¼ìŒë¿”ë²”ê³ ë˜(S_PAWN)-ì–¼ìŒë¿”ë²”ê³ ë˜(S_PAWN)
 {
 	Leader	Eiskillerwal	1102
 	Vnum	1103
@@ -1829,7 +1829,7 @@ Group	L73_¾óÀ½»Ô¹ü°í·¡(S_PAWN)-¾óÀ½»Ô¹ü°í·¡(S_PAWN)
 	2	Eiskillerwal	1102
 	3	"Verzaubertes Eis"	1101
 }
-Group	L71_ºùÃæ(S_PAWN)-¾óÀ½»Ô¹ü°í·¡(S_PAWN)
+Group	L71_ë¹™ì¶©(S_PAWN)-ì–¼ìŒë¿”ë²”ê³ ë˜(S_PAWN)
 {
 	Leader	Eisinsekt	1103
 	Vnum	1104
@@ -1837,7 +1837,7 @@ Group	L71_ºùÃæ(S_PAWN)-¾óÀ½»Ô¹ü°í·¡(S_PAWN)
 	2	"Verzaubertes Eis"	1101
 	3	"Verzaubertes Eis"	1101
 }
-Group	L71_ºùÃæ(S_PAWN)-ºùÃæ(S_PAWN)
+Group	L71_ë¹™ì¶©(S_PAWN)-ë¹™ì¶©(S_PAWN)
 {
 	Leader	Eisinsekt	1103
 	Vnum	1105
@@ -1845,7 +1845,7 @@ Group	L71_ºùÃæ(S_PAWN)-ºùÃæ(S_PAWN)
 	2	Eiskillerwal	1102
 	3	"Verzaubertes Eis"	1101
 }
-Group	L72_¼³±¸(KNIGHT)-ºùÃæ(S_PAWN)
+Group	L72_ì„¤êµ¬(KNIGHT)-ë¹™ì¶©(S_PAWN)
 {
 	Leader	Eisl?we	1104
 	Vnum	1106
@@ -1853,14 +1853,14 @@ Group	L72_¼³±¸(KNIGHT)-ºùÃæ(S_PAWN)
 	2	Eiskillerwal	1102
 	3	"Verzaubertes Eis"	1101
 }
-Group	L72_¼³±¸(KNIGHT)-¼³±¸(KNIGHT)
+Group	L72_ì„¤êµ¬(KNIGHT)-ì„¤êµ¬(KNIGHT)
 {
 	Leader	Eisl?we	1104
 	Vnum	1107
 	1	Eisl?we	1104
 	2	Eisinsekt	1103
 }
-Group	L73_ºùÀÎ(KNIGHT)-¼³±¸(KNIGHT)
+Group	L73_ë¹™ì¸(KNIGHT)-ì„¤êµ¬(KNIGHT)
 {
 	Leader	"Frostiger Eismann"	1105
 	Vnum	1108
@@ -1869,7 +1869,7 @@ Group	L73_ºùÀÎ(KNIGHT)-¼³±¸(KNIGHT)
 	3	Eisinsekt	1103
 	4	"Verzaubertes Eis"	1101
 }
-Group	L73_ºùÀÎ(KNIGHT)-ºùÀÎ(KNIGHT)
+Group	L73_ë¹™ì¸(KNIGHT)-ë¹™ì¸(KNIGHT)
 {
 	Leader	"Frostiger Eismann"	1105
 	Vnum	1109
@@ -1877,7 +1877,7 @@ Group	L73_ºùÀÎ(KNIGHT)-ºùÀÎ(KNIGHT)
 	2	Eisl?we	1104
 	3	Eisl?we	1104
 }
-Group	L74_¼³°ÅÀÎ(KNIGHT)-ºùÀÎ(KNIGHT)
+Group	L74_ì„¤ê±°ì¸(KNIGHT)-ë¹™ì¸(KNIGHT)
 {
 	Leader	Yeti	1106
 	Vnum	1110
@@ -1886,7 +1886,7 @@ Group	L74_¼³°ÅÀÎ(KNIGHT)-ºùÀÎ(KNIGHT)
 	3	Eisinsekt	1103
 	4	Eisinsekt	1103
 }
-Group	L74_¼³°ÅÀÎ(KNIGHT)-¼³°ÅÀÎ(KNIGHT)
+Group	L74_ì„¤ê±°ì¸(KNIGHT)-ì„¤ê±°ì¸(KNIGHT)
 {
 	Leader	Yeti	1106
 	Vnum	1111
@@ -1895,7 +1895,7 @@ Group	L74_¼³°ÅÀÎ(KNIGHT)-¼³°ÅÀÎ(KNIGHT)
 	3	"Frostiger Eismann"	1105
 	4	Eisl?we	1104
 }
-Group	L75_¾óÀ½°í·½(S_KNIGHT)-¼³°ÅÀÎ(KNIGHT)
+Group	L75_ì–¼ìŒê³ ë ˜(S_KNIGHT)-ì„¤ê±°ì¸(KNIGHT)
 {
 	Leader	Eisgolem	1107
 	Vnum	1112
@@ -1904,7 +1904,7 @@ Group	L75_¾óÀ½°í·½(S_KNIGHT)-¼³°ÅÀÎ(KNIGHT)
 	3	Yeti	1106
 	4	Yeti	1106
 }
-Group	L75_¾óÀ½°í·½(S_KNIGHT)-¾óÀ½°í·½(S_KNIGHT)
+Group	L75_ì–¼ìŒê³ ë ˜(S_KNIGHT)-ì–¼ìŒê³ ë ˜(S_KNIGHT)
 {
 	Leader	Eisgolem	1107
 	Vnum	1113
@@ -1913,7 +1913,7 @@ Group	L75_¾óÀ½°í·½(S_KNIGHT)-¾óÀ½°í·½(S_KNIGHT)
 	3	Yeti	1106
 	4	Yeti	1106
 }
-Group	L67_±¸¹ÌÈ£(BOSS)-¾óÀ½°í·½(S_KNIGHT)
+Group	L67_êµ¬ë¯¸í˜¸(BOSS)-ì–¼ìŒê³ ë ˜(S_KNIGHT)
 {
 	Leader	Neunschwanz	1901
 	Vnum	1114
@@ -1922,7 +1922,7 @@ Group	L67_±¸¹ÌÈ£(BOSS)-¾óÀ½°í·½(S_KNIGHT)
 	3	Yeti	1106
 	4	"Verzaubertes Eis"	1101
 }
-Group	¼­ÇÑ»ê»ï°Å¸®1
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬1
 {
 	Leader	Eisinsekt	1153
 	Vnum	1151
@@ -1930,7 +1930,7 @@ Group	¼­ÇÑ»ê»ï°Å¸®1
 	2	"Eishorn Killerwal"	1152
 	3	"Eishorn Killerwal"	1152
 }
-Group	¼­ÇÑ»ê»ï°Å¸®2
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬2
 {
 	Leader	Eismann	1155
 	Vnum	1152
@@ -1938,7 +1938,7 @@ Group	¼­ÇÑ»ê»ï°Å¸®2
 	2	Seol-Gu	1154
 	3	Seol-Gu	1154
 }
-Group	¼­ÇÑ»ê»ï°Å¸®3
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬3
 {
 	Leader	Eisgolem	1157
 	Vnum	1153
@@ -1946,14 +1946,14 @@ Group	¼­ÇÑ»ê»ï°Å¸®3
 	2	Eisgigant	1156
 	3	Eisgigant	1156
 }
-Group	Äù½ºÆ®¿ë_ºù¸¶
+Group	í€˜ìŠ¤íŠ¸ìš©_ë¹™ë§ˆ
 {
 	Leader	"B?ses verzaubertes Eis"	1171
 	Vnum	1171
 	1	"B?ses verzaubertes Eis"	1171
 	2	"B?ses verzaubertes Eis"	1171
 }
-Group	L68_´ë¿ÕÀü°¥(S_PAWN)-ºñ¸¶±Í¾È(S_PAWN)
+Group	L68_ëŒ€ì™•ì „ê°ˆ(S_PAWN)-ë¹„ë§ˆê·€ì•ˆ(S_PAWN)
 {
 	Leader	K?nigsskorpion	2103
 	Vnum	1301
@@ -1961,7 +1961,7 @@ Group	L68_´ë¿ÕÀü°¥(S_PAWN)-ºñ¸¶±Í¾È(S_PAWN)
 	2	W?stenflugauge	2102
 	3	W?stenflugauge	2102
 }
-Group	L68_´ë¿ÕÀü°¥(S_PAWN)-´ë¿ÕÀü°¥(S_PAWN)
+Group	L68_ëŒ€ì™•ì „ê°ˆ(S_PAWN)-ëŒ€ì™•ì „ê°ˆ(S_PAWN)
 {
 	Leader	K?nigsskorpion	2103
 	Vnum	1302
@@ -1969,7 +1969,7 @@ Group	L68_´ë¿ÕÀü°¥(S_PAWN)-´ë¿ÕÀü°¥(S_PAWN)
 	2	W?stenflugauge	2102
 	3	W?stenflugauge	2102
 }
-Group	L68_´ë¿ÕÀü°¥(S_PAWN)-´ë¿ÕÀü°¥(S_PAWN)
+Group	L68_ëŒ€ì™•ì „ê°ˆ(S_PAWN)-ëŒ€ì™•ì „ê°ˆ(S_PAWN)
 {
 	Leader	K?nigsskorpion	2103
 	Vnum	1303
@@ -1977,7 +1977,7 @@ Group	L68_´ë¿ÕÀü°¥(S_PAWN)-´ë¿ÕÀü°¥(S_PAWN)
 	2	K?nigsskorpion	2103
 	3	W?stenflugauge	2102
 }
-Group	L66_Àü°¥ÀÎ°£(KNIGHT)-Àü°¥ÀÎ°£(KNIGHT)
+Group	L66_ì „ê°ˆì¸ê°„(KNIGHT)-ì „ê°ˆì¸ê°„(KNIGHT)
 {
 	Leader	"Junger Skorpionmann"	2104
 	Vnum	1304
@@ -1985,7 +1985,7 @@ Group	L66_Àü°¥ÀÎ°£(KNIGHT)-Àü°¥ÀÎ°£(KNIGHT)
 	2	K?nigsskorpion	2103
 	3	K?nigsskorpion	2103
 }
-Group	L67_Àü°¥±Ã¼ö(KNIGHT)-Àü°¥ÀÎ°£(KNIGHT)
+Group	L67_ì „ê°ˆê¶ìˆ˜(KNIGHT)-ì „ê°ˆì¸ê°„(KNIGHT)
 {
 	Leader	Skorpionbogensch?tze	2105
 	Vnum	1305
@@ -1993,7 +1993,7 @@ Group	L67_Àü°¥±Ã¼ö(KNIGHT)-Àü°¥ÀÎ°£(KNIGHT)
 	2	K?nigsskorpion	2103
 	3	K?nigsskorpion	2103
 }
-Group	L67_Àü°¥±Ã¼ö(KNIGHT)-Àü°¥±Ã¼ö(KNIGHT)
+Group	L67_ì „ê°ˆê¶ìˆ˜(KNIGHT)-ì „ê°ˆê¶ìˆ˜(KNIGHT)
 {
 	Leader	Skorpionbogensch?tze	2105
 	Vnum	1306
@@ -2001,7 +2001,7 @@ Group	L67_Àü°¥±Ã¼ö(KNIGHT)-Àü°¥±Ã¼ö(KNIGHT)
 	2	"Junger Skorpionmann"	2104
 	3	K?nigsskorpion	2103
 }
-Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç°Ëº´(KNIGHT)
+Group	L69_ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)-ë°˜ì¸ë°˜ì‚¬ê²€ë³‘(KNIGHT)
 {
 	Leader	Schlangenbogensch?tze	2107
 	Vnum	1307
@@ -2009,7 +2009,7 @@ Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç°Ëº´(KNIGHT)
 	2	Schlangenschwertk?mpfer	2106
 	3	Schlangenschwertk?mpfer	2106
 }
-Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
+Group	L69_ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)-ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)
 {
 	Leader	Schlangenbogensch?tze	2107
 	Vnum	1308
@@ -2017,14 +2017,14 @@ Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
 	2	Schlangenschwertk?mpfer	2106
 	3	Schlangenschwertk?mpfer	2106
 }
-Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
+Group	L69_ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)-ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)
 {
 	Leader	Schlangenbogensch?tze	2107
 	Vnum	1309
 	1	Schlangenschwertk?mpfer	2106
 	2	Schlangenschwertk?mpfer	2106
 }
-Group	L70_»ç¸·ÀÇ¹«¹ıÀÚ(S_KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
+Group	L70_ì‚¬ë§‰ì˜ë¬´ë²•ì(S_KNIGHT)-ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)
 {
 	Leader	W?stenbandit	2108
 	Vnum	1310
@@ -2033,278 +2033,278 @@ Group	L70_»ç¸·ÀÇ¹«¹ıÀÚ(S_KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
 	3	Skorpionbogensch?tze	2105
 	4	"Junger Skorpionmann"	2104
 }
-Group	L72_°Å´ë»ç¸·°ÅºÏ(BOSS)-»ç¸·ÀÇ¹«¹ıÀÚ(S_KNIGHT)
+Group	L72_ê±°ëŒ€ì‚¬ë§‰ê±°ë¶(BOSS)-ì‚¬ë§‰ì˜ë¬´ë²•ì(S_KNIGHT)
 {
-	Leader	"Gro©¬e W?stenschildkr?te"	2191
+	Leader	"GroÂ©Â¬e W?stenschildkr?te"	2191
 	Vnum	1311
 	1	W?stenbandit	2108
 	2	W?stenbandit	2108
 	3	Schlangenbogensch?tze	2107
 	4	Skorpionbogensch?tze	2105
 }
-Group	Äù½ºÆ®¿ë_Ã»¿ÍÀå
+Group	í€˜ìŠ¤íŠ¸ìš©_ì²­ì™€ì¥
 {
 	Leader	"Gr. Baumfrosch-Anf?hrer"	1332
 	Vnum	1332
 	1	"Gr. Baumfrosch-Anf?hrer"	1332
 	2	"Gr. Baumfrosch-Anf?hrer"	1332
 }
-Group	Åõ±Íº´
+Group	íˆ¬ê·€ë³‘
 {
 	Leader	Zerst?rer	1401
 	Vnum	1401
 }
-Group	Åõ±âÃ´ÈÄº´
+Group	íˆ¬ê¸°ì²™í›„ë³‘
 {
 	Leader	Axtk?mpfer	1402
 	Vnum	1402
 }
-Group	Åõ±ÍÃµÀå¼ö
+Group	íˆ¬ê·€ì²œì¥ìˆ˜
 {
 	Leader	Tausendk?mpfer	1403
 	Vnum	1403
 }
-Group	¼®ÀÎ
+Group	ì„ì¸
 {
 	Leader	Steingolem	1501
 	Vnum	1501
 }
-Group	Åõ¼®ÀÎ
+Group	íˆ¬ì„ì¸
 {
-	Leader	Steinbei©¬er	1502
+	Leader	SteinbeiÂ©Â¬er	1502
 	Vnum	1502
 }
-Group	°Å´ëÅõ¼®ÀÎ
+Group	ê±°ëŒ€íˆ¬ì„ì¸
 {
 	Leader	"Riesiger Felsengolem"	1503
 	Vnum	1503
 }
-Group	Åõ±ÍÀÏ²Û
+Group	íˆ¬ê·€ì¼ê¾¼
 {
 	Leader	"Oger Krieger"	1601
 	Vnum	1601
 }
-Group	Åõ±Í°¨Âûº´
+Group	íˆ¬ê·€ê°ì°°ë³‘
 {
 	Leader	"Oger Schl?chter"	1602
 	Vnum	1602
 }
-Group	Åõ±Í¹éÀå¼ö
+Group	íˆ¬ê·€ë°±ì¥ìˆ˜
 {
 	Leader	"Oger Berserker"	1603
 	Vnum	1603
 }
-Group	L72_»õ³¢°Å¹Ì(PAWN)-»õ³¢°Å¹Ì(PAWN)
+Group	L72_ìƒˆë¼ê±°ë¯¸(PAWN)-ìƒˆë¼ê±°ë¯¸(PAWN)
 {
 	Leader	Babyspinne	2001
 	Vnum	2001
 	1	Babyspinne	2001
 	2	Babyspinne	2001
 }
-Group	L73_µ¶°Å¹Ì(PAWN)-»õ³¢°Å¹Ì(PAWN)
+Group	L73_ë…ê±°ë¯¸(PAWN)-ìƒˆë¼ê±°ë¯¸(PAWN)
 {
 	Leader	Giftspinne	2002
 	Vnum	2002
 	1	Babyspinne	2001
 	2	Babyspinne	2001
 }
-Group	L73_µ¶°Å¹Ì(PAWN)-µ¶°Å¹Ì(PAWN)
+Group	L73_ë…ê±°ë¯¸(PAWN)-ë…ê±°ë¯¸(PAWN)
 {
 	Leader	Giftspinne	2002
 	Vnum	2003
 	1	Giftspinne	2002
 	2	Babyspinne	2001
 }
-Group	L74_ºÓÀºµ¶°Å¹Ì(S_PAWN)-µ¶°Å¹Ì(PAWN)
+Group	L74_ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)-ë…ê±°ë¯¸(PAWN)
 {
 	Leader	"Rote Giftspinne"	2003
 	Vnum	2004
 	1	Giftspinne	2002
 	2	Giftspinne	2002
 }
-Group	L74_ºÓÀºµ¶°Å¹Ì(S_PAWN)-ºÓÀºµ¶°Å¹Ì(S_PAWN)
+Group	L74_ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)-ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)
 {
 	Leader	"Rote Giftspinne"	2003
 	Vnum	2005
 	1	"Rote Giftspinne"	2003
 	2	Giftspinne	2002
 }
-Group	L75_Áı°Ô°Å¹Ì(S_PAWN)-ºÓÀºµ¶°Å¹Ì(S_PAWN)
+Group	L75_ì§‘ê²Œê±°ë¯¸(S_PAWN)-ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)
 {
 	Leader	Klauenspinne	2004
 	Vnum	2006
 	1	"Rote Giftspinne"	2003
 	2	"Rote Giftspinne"	2003
 }
-Group	L75_Áı°Ô°Å¹Ì(S_PAWN)-Áı°Ô°Å¹Ì(S_PAWN)
+Group	L75_ì§‘ê²Œê±°ë¯¸(S_PAWN)-ì§‘ê²Œê±°ë¯¸(S_PAWN)
 {
 	Leader	Klauenspinne	2004
 	Vnum	2007
 	1	Klauenspinne	2004
 	2	"Rote Giftspinne"	2003
 }
-Group	L74_º´Á¤°Å¹Ì(S_PAWN)-Áı°Ô°Å¹Ì(S_PAWN)
+Group	L74_ë³‘ì •ê±°ë¯¸(S_PAWN)-ì§‘ê²Œê±°ë¯¸(S_PAWN)
 {
 	Leader	Soldatenspinne	2005
 	Vnum	2008
 	1	Klauenspinne	2004
 	2	Klauenspinne	2004
 }
-Group	L74_º´Á¤°Å¹Ì(S_PAWN)-º´Á¤°Å¹Ì(S_PAWN)
+Group	L74_ë³‘ì •ê±°ë¯¸(S_PAWN)-ë³‘ì •ê±°ë¯¸(S_PAWN)
 {
 	Leader	Soldatenspinne	2005
 	Vnum	2009
 	1	Soldatenspinne	2005
 	2	Klauenspinne	2004
 }
-Group	L74_»õ³¢µ¶°Å¹Ì(KNIGHT)-»õ³¢µ¶°Å¹Ì(KNIGHT)
+Group	L74_ìƒˆë¼ë…ê±°ë¯¸(KNIGHT)-ìƒˆë¼ë…ê±°ë¯¸(KNIGHT)
 {
 	Leader	Babygiftspinne	2031
 	Vnum	2010
 	1	Babygiftspinne	2031
 	2	Babygiftspinne	2031
 }
-Group	L77_¸Íµ¶°Å¹Ì(KNIGHT)-»õ³¢µ¶°Å¹Ì(KNIGHT)
+Group	L77_ë§¹ë…ê±°ë¯¸(KNIGHT)-ìƒˆë¼ë…ê±°ë¯¸(KNIGHT)
 {
 	Leader	"T?dliche Giftspinne"	2032
 	Vnum	2011
 	1	Babygiftspinne	2031
 	2	Babygiftspinne	2031
 }
-Group	L77_¸Íµ¶°Å¹Ì(KNIGHT)-¸Íµ¶°Å¹Ì(KNIGHT)
+Group	L77_ë§¹ë…ê±°ë¯¸(KNIGHT)-ë§¹ë…ê±°ë¯¸(KNIGHT)
 {
 	Leader	"T?dliche Giftspinne"	2032
 	Vnum	2012
 	1	"T?dliche Giftspinne"	2032
 	2	Babygiftspinne	2031
 }
-Group	L62_ºÓÀº¸Íµ¶°Å¹Ì(S_KNIGHT)-¸Íµ¶°Å¹Ì(KNIGHT)
+Group	L62_ë¶‰ì€ë§¹ë…ê±°ë¯¸(S_KNIGHT)-ë§¹ë…ê±°ë¯¸(KNIGHT)
 {
 	Leader	"Rote w?tende Giftspinne"	2033
 	Vnum	2013
 	1	"T?dliche Giftspinne"	2032
 	2	"T?dliche Giftspinne"	2032
 }
-Group	L62_ºÓÀº¸Íµ¶°Å¹Ì(S_KNIGHT)-ºÓÀº¸Íµ¶°Å¹Ì(S_KNIGHT)
+Group	L62_ë¶‰ì€ë§¹ë…ê±°ë¯¸(S_KNIGHT)-ë¶‰ì€ë§¹ë…ê±°ë¯¸(S_KNIGHT)
 {
 	Leader	"Rote w?tende Giftspinne"	2033
 	Vnum	2014
 	1	"Rote w?tende Giftspinne"	2033
 	2	"T?dliche Giftspinne"	2032
 }
-Group	L63_Áı°Ôµ¶°Å¹Ì(S_KNIGHT)-ºÓÀº¸Íµ¶°Å¹Ì(S_KNIGHT)
+Group	L63_ì§‘ê²Œë…ê±°ë¯¸(S_KNIGHT)-ë¶‰ì€ë§¹ë…ê±°ë¯¸(S_KNIGHT)
 {
 	Leader	Klauengiftspinne	2034
 	Vnum	2015
 	1	"Rote w?tende Giftspinne"	2033
 	2	"Rote w?tende Giftspinne"	2033
 }
-Group	L63_Áı°Ôµ¶°Å¹Ì(S_KNIGHT)-Áı°Ôµ¶°Å¹Ì(S_KNIGHT)
+Group	L63_ì§‘ê²Œë…ê±°ë¯¸(S_KNIGHT)-ì§‘ê²Œë…ê±°ë¯¸(S_KNIGHT)
 {
 	Leader	Klauengiftspinne	2034
 	Vnum	2016
 	1	Klauengiftspinne	2034
 	2	"Rote w?tende Giftspinne"	2033
 }
-Group	L64_º´Á¤µ¶°Å¹Ì(S_KNIGHT)-Áı°Ôµ¶°Å¹Ì(S_KNIGHT)
+Group	L64_ë³‘ì •ë…ê±°ë¯¸(S_KNIGHT)-ì§‘ê²Œë…ê±°ë¯¸(S_KNIGHT)
 {
 	Leader	Soldatengiftspinne	2035
 	Vnum	2017
 	1	Klauengiftspinne	2034
 	2	Klauengiftspinne	2034
 }
-Group	L64_º´Á¤µ¶°Å¹Ì(S_KNIGHT)-º´Á¤µ¶°Å¹Ì(S_KNIGHT)
+Group	L64_ë³‘ì •ë…ê±°ë¯¸(S_KNIGHT)-ë³‘ì •ë…ê±°ë¯¸(S_KNIGHT)
 {
 	Leader	Soldatengiftspinne	2035
 	Vnum	2018
 	1	Soldatengiftspinne	2035
 	2	Klauengiftspinne	2034
 }
-Group	L64_¿©¿Õ°Å¹Ì(BOSS)-Áı°Ôµ¶°Å¹Ì(S_KNIGHT)
+Group	L64_ì—¬ì™•ê±°ë¯¸(BOSS)-ì§‘ê²Œë…ê±°ë¯¸(S_KNIGHT)
 {
 	Leader	K?niginnenspinne	2091
 	Vnum	2019
 	1	Klauengiftspinne	2034
 	2	Klauengiftspinne	2034
 }
-Group	L65_´ë¿Õ°Å¹Ì(KING)-º´Á¤µ¶°Å¹Ì(S_KNIGHT)
+Group	L65_ëŒ€ì™•ê±°ë¯¸(KING)-ë³‘ì •ë…ê±°ë¯¸(S_KNIGHT)
 {
 	Leader	K?nigsspinne	2092
 	Vnum	2020
 	1	Soldatengiftspinne	2035
 	2	Soldatengiftspinne	2035
 }
-Group	L64_º´Á¤µ¶°Å¹Ì(S_KNIGHT)-º´Á¤µ¶°Å¹Ì(S_KNIGHT)
+Group	L64_ë³‘ì •ë…ê±°ë¯¸(S_KNIGHT)-ë³‘ì •ë…ê±°ë¯¸(S_KNIGHT)
 {
 	Leader	"Stolze Soldat-Giftspinne"	2036
 	Vnum	2021
 	1	"Stolze Soldat-Giftspinne"	2036
 	2	Klauengiftspinne	2034
 }
-Group	L72_»õ³¢°Å¹Ì(PAWN)-»õ³¢°Å¹Ì(PAWN)
+Group	L72_ìƒˆë¼ê±°ë¯¸(PAWN)-ìƒˆë¼ê±°ë¯¸(PAWN)
 {
 	Leader	"Kleine Giftspinne"	2061
 	Vnum	2051
 	1	"Kleine Giftspinne"	2061
 	2	"Kleine Giftspinne"	2061
 }
-Group	L73_µ¶°Å¹Ì(PAWN)-»õ³¢°Å¹Ì(PAWN)
+Group	L73_ë…ê±°ë¯¸(PAWN)-ìƒˆë¼ê±°ë¯¸(PAWN)
 {
 	Leader	"T?dliche Giftspinne"	2062
 	Vnum	2052
 	1	"Kleine Giftspinne"	2061
 	2	"Kleine Giftspinne"	2061
 }
-Group	L73_µ¶°Å¹Ì(PAWN)-µ¶°Å¹Ì(PAWN)
+Group	L73_ë…ê±°ë¯¸(PAWN)-ë…ê±°ë¯¸(PAWN)
 {
 	Leader	"T?dliche Giftspinne"	2062
 	Vnum	2053
 	1	"T?dliche Giftspinne"	2062
 	2	"Kleine Giftspinne"	2061
 }
-Group	L74_ºÓÀºµ¶°Å¹Ì(S_PAWN)-µ¶°Å¹Ì(PAWN)
+Group	L74_ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)-ë…ê±°ë¯¸(PAWN)
 {
 	Leader	"Rote t?dliche Giftspinne"	2063
 	Vnum	2054
 	1	"T?dliche Giftspinne"	2062
 	2	"T?dliche Giftspinne"	2062
 }
-Group	L74_ºÓÀºµ¶°Å¹Ì(S_PAWN)-ºÓÀºµ¶°Å¹Ì(S_PAWN)
+Group	L74_ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)-ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)
 {
 	Leader	"Rote t?dliche Giftspinne"	2063
 	Vnum	2055
 	1	"Rote t?dliche Giftspinne"	2063
 	2	"T?dliche Giftspinne"	2062
 }
-Group	L75_Áı°Ô°Å¹Ì(S_PAWN)-ºÓÀºµ¶°Å¹Ì(S_PAWN)
+Group	L75_ì§‘ê²Œê±°ë¯¸(S_PAWN)-ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)
 {
 	Leader	Klauengiftspinne	2064
 	Vnum	2056
 	1	"Rote t?dliche Giftspinne"	2063
 	2	"Rote t?dliche Giftspinne"	2063
 }
-Group	L75_Áı°Ô°Å¹Ì(S_PAWN)-Áı°Ô°Å¹Ì(S_PAWN)
+Group	L75_ì§‘ê²Œê±°ë¯¸(S_PAWN)-ì§‘ê²Œê±°ë¯¸(S_PAWN)
 {
 	Leader	Klauengiftspinne	2064
 	Vnum	2057
 	1	Klauengiftspinne	2064
 	2	"Rote t?dliche Giftspinne"	2063
 }
-Group	L74_º´Á¤°Å¹Ì(S_PAWN)-Áı°Ô°Å¹Ì(S_PAWN)
+Group	L74_ë³‘ì •ê±°ë¯¸(S_PAWN)-ì§‘ê²Œê±°ë¯¸(S_PAWN)
 {
 	Leader	Soldatengiftspinne	2065
 	Vnum	2058
 	1	Klauengiftspinne	2064
 	2	Klauengiftspinne	2064
 }
-Group	L74_º´Á¤°Å¹Ì(S_PAWN)-º´Á¤°Å¹Ì(S_PAWN)
+Group	L74_ë³‘ì •ê±°ë¯¸(S_PAWN)-ë³‘ì •ê±°ë¯¸(S_PAWN)
 {
 	Leader	Soldatengiftspinne	2065
 	Vnum	2059
 	1	Soldatengiftspinne	2065
 	2	Klauengiftspinne	2064
 }
-Group	L68_´ë¿ÕÀü°¥(S_PAWN)-ºñ¸¶±Í¾È(S_PAWN)
+Group	L68_ëŒ€ì™•ì „ê°ˆ(S_PAWN)-ë¹„ë§ˆê·€ì•ˆ(S_PAWN)
 {
 	Leader	Schlangenschwertk?mpfer	2133
 	Vnum	2060
@@ -2312,7 +2312,7 @@ Group	L68_´ë¿ÕÀü°¥(S_PAWN)-ºñ¸¶±Í¾È(S_PAWN)
 	2	Skorpionbogensch?tze	2132
 	3	Skorpionbogensch?tze	2132
 }
-Group	L68_´ë¿ÕÀü°¥(S_PAWN)-´ë¿ÕÀü°¥(S_PAWN)
+Group	L68_ëŒ€ì™•ì „ê°ˆ(S_PAWN)-ëŒ€ì™•ì „ê°ˆ(S_PAWN)
 {
 	Leader	Schlangenschwertk?mpfer	2133
 	Vnum	2061
@@ -2320,7 +2320,7 @@ Group	L68_´ë¿ÕÀü°¥(S_PAWN)-´ë¿ÕÀü°¥(S_PAWN)
 	2	Skorpionbogensch?tze	2132
 	3	Skorpionbogensch?tze	2132
 }
-Group	L68_´ë¿ÕÀü°¥(S_PAWN)-´ë¿ÕÀü°¥(S_PAWN)
+Group	L68_ëŒ€ì™•ì „ê°ˆ(S_PAWN)-ëŒ€ì™•ì „ê°ˆ(S_PAWN)
 {
 	Leader	Schlangenschwertk?mpfer	2133
 	Vnum	2062
@@ -2328,7 +2328,7 @@ Group	L68_´ë¿ÕÀü°¥(S_PAWN)-´ë¿ÕÀü°¥(S_PAWN)
 	2	Schlangenschwertk?mpfer	2133
 	3	Skorpionbogensch?tze	2132
 }
-Group	L66_Àü°¥ÀÎ°£(KNIGHT)-Àü°¥ÀÎ°£(KNIGHT)
+Group	L66_ì „ê°ˆì¸ê°„(KNIGHT)-ì „ê°ˆì¸ê°„(KNIGHT)
 {
 	Leader	Schlangenbogensch?tze	2134
 	Vnum	2063
@@ -2336,7 +2336,7 @@ Group	L66_Àü°¥ÀÎ°£(KNIGHT)-Àü°¥ÀÎ°£(KNIGHT)
 	2	Schlangenschwertk?mpfer	2133
 	3	Schlangenschwertk?mpfer	2133
 }
-Group	L67_Àü°¥±Ã¼ö(KNIGHT)-Àü°¥ÀÎ°£(KNIGHT)
+Group	L67_ì „ê°ˆê¶ìˆ˜(KNIGHT)-ì „ê°ˆì¸ê°„(KNIGHT)
 {
 	Leader	W?stenbandit	2135
 	Vnum	2064
@@ -2344,7 +2344,7 @@ Group	L67_Àü°¥±Ã¼ö(KNIGHT)-Àü°¥ÀÎ°£(KNIGHT)
 	2	Schlangenschwertk?mpfer	2133
 	3	Schlangenschwertk?mpfer	2133
 }
-Group	L67_Àü°¥±Ã¼ö(KNIGHT)-Àü°¥±Ã¼ö(KNIGHT)
+Group	L67_ì „ê°ˆê¶ìˆ˜(KNIGHT)-ì „ê°ˆê¶ìˆ˜(KNIGHT)
 {
 	Leader	W?stenbandit	2135
 	Vnum	2065
@@ -2352,35 +2352,35 @@ Group	L67_Àü°¥±Ã¼ö(KNIGHT)-Àü°¥±Ã¼ö(KNIGHT)
 	2	Schlangenbogensch?tze	2134
 	3	Schlangenschwertk?mpfer	2133
 }
-Group	Äù½ºÆ®¿ë_»õ³¢°Å¹Ì
+Group	í€˜ìŠ¤íŠ¸ìš©_ìƒˆë¼ê±°ë¯¸
 {
 	Leader	"B?se Babygiftspinne"	2051
 	Vnum	4071
 	1	"B?se Babygiftspinne"	2051
 	2	"B?se Babygiftspinne"	2051
 }
-Group	Äù½ºÆ®¿ë_µ¶°Å¹Ì
+Group	í€˜ìŠ¤íŠ¸ìš©_ë…ê±°ë¯¸
 {
 	Leader	"B?se t?dl. Giftspinne"	2052
 	Vnum	4072
 	1	"B?se t?dl. Giftspinne"	2052
 	2	"B?se t?dl. Giftspinne"	2052
 }
-Group	Äù½ºÆ®¿ë_Áı°Ô°Å¹Ì
+Group	í€˜ìŠ¤íŠ¸ìš©_ì§‘ê²Œê±°ë¯¸
 {
 	Leader	"B?se rote Giftspinne"	2053
 	Vnum	4074
 	1	"B?se rote Giftspinne"	2053
 	2	"B?se rote Giftspinne"	2053
 }
-Group	Äù½ºÆ®¿ë_º´Á¤°Å¹Ì
+Group	í€˜ìŠ¤íŠ¸ìš©_ë³‘ì •ê±°ë¯¸
 {
 	Leader	"B?se Klauengiftspinne"	2054
 	Vnum	4075
 	1	"B?se Klauengiftspinne"	2054
 	2	"B?se Klauengiftspinne"	2054
 }
-Group	L56_Ã»¿Íº´(S_PAWN)-Ç®ÀÙ¸Ó¸®µµ±úºñ(S_PAWN)
+Group	L56_ì²­ì™€ë³‘(S_PAWN)-í’€ìë¨¸ë¦¬ë„ê¹¨ë¹„(S_PAWN)
 {
 	Leader	Baumfrosch-Soldat	1301
 	Vnum	2101
@@ -2388,7 +2388,7 @@ Group	L56_Ã»¿Íº´(S_PAWN)-Ç®ÀÙ¸Ó¸®µµ±úºñ(S_PAWN)
 	2	Buhmann	1303
 	3	Buhmann	1303
 }
-Group	L56_Ã»¿Íº´(S_PAWN)-Ã»¿Íº´(S_PAWN)
+Group	L56_ì²­ì™€ë³‘(S_PAWN)-ì²­ì™€ë³‘(S_PAWN)
 {
 	Leader	Baumfrosch-Soldat	1301
 	Vnum	2102
@@ -2396,7 +2396,7 @@ Group	L56_Ã»¿Íº´(S_PAWN)-Ã»¿Íº´(S_PAWN)
 	2	Buhmann	1303
 	3	Buhmann	1303
 }
-Group	L56_Ã»¿Íº´(S_PAWN)-Ã»¿Íº´(S_PAWN)
+Group	L56_ì²­ì™€ë³‘(S_PAWN)-ì²­ì™€ë³‘(S_PAWN)
 {
 	Leader	Baumfrosch-Soldat	1301
 	Vnum	2103
@@ -2404,14 +2404,14 @@ Group	L56_Ã»¿Íº´(S_PAWN)-Ã»¿Íº´(S_PAWN)
 	2	Baumfrosch-Soldat	1301
 	3	Buhmann	1303
 }
-Group	L58_Ã»¿ÍÀå(S_PAWN)-Ã»¿Íº´(S_PAWN)
+Group	L58_ì²­ì™€ì¥(S_PAWN)-ì²­ì™€ë³‘(S_PAWN)
 {
 	Leader	Baumfrosch-Anf?hrer	1302
 	Vnum	2104
 	1	Baumfrosch-Soldat	1301
 	2	Baumfrosch-Soldat	1301
 }
-Group	L58_Ã»¿ÍÀå(KNIGHT)-Ã»¿Íº´(S_PAWN)
+Group	L58_ì²­ì™€ì¥(KNIGHT)-ì²­ì™€ë³‘(S_PAWN)
 {
 	Leader	Baumfrosch-Anf?hrer	1302
 	Vnum	2105
@@ -2419,7 +2419,7 @@ Group	L58_Ã»¿ÍÀå(KNIGHT)-Ã»¿Íº´(S_PAWN)
 	2	Baumfrosch-Soldat	1301
 	3	Baumfrosch-Anf?hrer	1302
 }
-Group	L58_Ã»¿ÍÀå(KNIGHT)-Ã»¿ÍÀå(KNIGHT)
+Group	L58_ì²­ì™€ì¥(KNIGHT)-ì²­ì™€ì¥(KNIGHT)
 {
 	Leader	Baumfrosch-Anf?hrer	1302
 	Vnum	2106
@@ -2427,7 +2427,7 @@ Group	L58_Ã»¿ÍÀå(KNIGHT)-Ã»¿ÍÀå(KNIGHT)
 	2	Baumfrosch-Anf?hrer	1302
 	3	Baumfrosch-Anf?hrer	1302
 }
-Group	L60_¼ö±¸´ëÀå±º(KNIGHT)-Ã»¿ÍÀå(KNIGHT)
+Group	L60_ìˆ˜êµ¬ëŒ€ì¥êµ°(KNIGHT)-ì²­ì™€ì¥(KNIGHT)
 {
 	Leader	Ochsenfrosch-General	1305
 	Vnum	2107
@@ -2435,7 +2435,7 @@ Group	L60_¼ö±¸´ëÀå±º(KNIGHT)-Ã»¿ÍÀå(KNIGHT)
 	2	Baumfrosch-Anf?hrer	1302
 	3	Baumfrosch-Anf?hrer	1302
 }
-Group	L60_¼ö±¸´ëÀå±º(KNIGHT)-¼ö±¸´ëÀå±º(KNIGHT)
+Group	L60_ìˆ˜êµ¬ëŒ€ì¥êµ°(KNIGHT)-ìˆ˜êµ¬ëŒ€ì¥êµ°(KNIGHT)
 {
 	Leader	Ochsenfrosch-General	1305
 	Vnum	2108
@@ -2443,7 +2443,7 @@ Group	L60_¼ö±¸´ëÀå±º(KNIGHT)-¼ö±¸´ëÀå±º(KNIGHT)
 	2	Baumfrosch-Anf?hrer	1302
 	3	Baumfrosch-Anf?hrer	1302
 }
-Group	L74_´©··¹ü±Í(Boss)-¼ö±¸´ëÀå±º(KNIGHT)
+Group	L74_ëˆ„ë ë²”ê·€(Boss)-ìˆ˜êµ¬ëŒ€ì¥êµ°(KNIGHT)
 {
 	Leader	Ochsenfrosch-General	1305
 	Vnum	2109
@@ -2452,7 +2452,7 @@ Group	L74_´©··¹ü±Í(Boss)-¼ö±¸´ëÀå±º(KNIGHT)
 	3	Baumfrosch-Anf?hrer	1302
 	4	Baumfrosch-Anf?hrer	1302
 }
-Group	L74_´©··¹ü±Í(Boss)-¼ö±¸´ëÀå±º(KNIGHT)
+Group	L74_ëˆ„ë ë²”ê·€(Boss)-ìˆ˜êµ¬ëŒ€ì¥êµ°(KNIGHT)
 {
 	Leader	"Gelber Tigergeist"	1304
 	Vnum	2110
@@ -2468,21 +2468,21 @@ Group	Skopionmann
 	1	Skorpionbogensch?tze	2105
 	2	Skorpionbogensch?tze	2105
 }
-Group	Äù½ºÆ®¿ë_»ç¸·ÀÇ¹«¹ıÀÚ
+Group	í€˜ìŠ¤íŠ¸ìš©_ì‚¬ë§‰ì˜ë¬´ë²•ì
 {
 	Leader	"Starker W?stenbandit"	2158
 	Vnum	2158
 	1	"Starker W?stenbandit"	2158
 	2	"Starker W?stenbandit"	2158
 }
-Group	L57_È­·É(S_PAWN)-ÅõÁö¹üÁ¹°³(S_PAWN)
+Group	L57_í™”ë ¹(S_PAWN)-íˆ¬ì§€ë²”ì¡¸ê°œ(S_PAWN)
 {
 	Leader	Kampftigersklave	2201
 	Vnum	2201
 	1	Kampftigersklave	2201
 	2	Kampftigersklave	2201
 }
-Group	L59_ÅõÁö¹ü(KNIGHT)-ÅõÁö¹üÁ¹°³(S_PAWN)
+Group	L59_íˆ¬ì§€ë²”(KNIGHT)-íˆ¬ì§€ë²”ì¡¸ê°œ(S_PAWN)
 {
 	Leader	Flammengeist	2202
 	Vnum	2202
@@ -2490,7 +2490,7 @@ Group	L59_ÅõÁö¹ü(KNIGHT)-ÅõÁö¹üÁ¹°³(S_PAWN)
 	2	Kampftigersklave	2201
 	3	Kampftigersklave	2201
 }
-Group	L59_ÅõÁö¹ü(KNIGHT)-ÅõÁö¹ü(KNIGHT)
+Group	L59_íˆ¬ì§€ë²”(KNIGHT)-íˆ¬ì§€ë²”(KNIGHT)
 {
 	Leader	Flammengeist	2202
 	Vnum	2203
@@ -2498,7 +2498,7 @@ Group	L59_ÅõÁö¹ü(KNIGHT)-ÅõÁö¹ü(KNIGHT)
 	2	Kampftigersklave	2201
 	3	Kampftigersklave	2201
 }
-Group	L58_Âü¸¶ÀÎ(KNIGHT)-ÅõÁö¹ü(KNIGHT)
+Group	L58_ì°¸ë§ˆì¸(KNIGHT)-íˆ¬ì§€ë²”(KNIGHT)
 {
 	Leader	Kampftiger	2203
 	Vnum	2204
@@ -2506,7 +2506,7 @@ Group	L58_Âü¸¶ÀÎ(KNIGHT)-ÅõÁö¹ü(KNIGHT)
 	2	Flammengeist	2202
 	3	Flammengeist	2202
 }
-Group	L58_Âü¸¶ÀÎ(KNIGHT)-ÅõÁö¹ü(KNIGHT)
+Group	L58_ì°¸ë§ˆì¸(KNIGHT)-íˆ¬ì§€ë²”(KNIGHT)
 {
 	Leader	Flamme	2204
 	Vnum	2205
@@ -2514,7 +2514,7 @@ Group	L58_Âü¸¶ÀÎ(KNIGHT)-ÅõÁö¹ü(KNIGHT)
 	2	Kampftiger	2203
 	3	Kampftiger	2203
 }
-Group	L58_Âü¸¶ÀÎ(KNIGHT)-ÅõÁö¹ü(KNIGHT)
+Group	L58_ì°¸ë§ˆì¸(KNIGHT)-íˆ¬ì§€ë²”(KNIGHT)
 {
 	Leader	Flammenkrieger	2205
 	Vnum	2206
@@ -2524,7 +2524,7 @@ Group	L58_Âü¸¶ÀÎ(KNIGHT)-ÅõÁö¹ü(KNIGHT)
 	4	Kampftiger	2203
 	5	Kampftiger	2203
 }
-Group	L58_Âü¸¶ÀÎ(KNIGHT)-Âü¸¶ÀÎ(KNIGHT)
+Group	L58_ì°¸ë§ˆì¸(KNIGHT)-ì°¸ë§ˆì¸(KNIGHT)
 {
 	Leader	Flammenkrieger	2205
 	Vnum	2207
@@ -2534,7 +2534,7 @@ Group	L58_Âü¸¶ÀÎ(KNIGHT)-Âü¸¶ÀÎ(KNIGHT)
 	4	Kampftigersklave	2201
 	5	Kampftigersklave	2201
 }
-Group	L75_ÅÂÈ­¹«ÀÎ(S_KNIGHT)-Âü¸¶ÀÎ(KNIGHT)
+Group	L75_íƒœí™”ë¬´ì¸(S_KNIGHT)-ì°¸ë§ˆì¸(KNIGHT)
 {
 	Leader	Flammenkrieger	2205
 	Vnum	2208
@@ -2543,7 +2543,7 @@ Group	L75_ÅÂÈ­¹«ÀÎ(S_KNIGHT)-Âü¸¶ÀÎ(KNIGHT)
 	3	Kampftiger	2203
 	4	Kampftiger	2203
 }
-Group	L75_ÅÂÈ­¹«ÀÎ(S_KNIGHT)-ÅÂÈ­¹«ÀÎ(S_KNIGHT)
+Group	L75_íƒœí™”ë¬´ì¸(S_KNIGHT)-íƒœí™”ë¬´ì¸(S_KNIGHT)
 {
 	Leader	Flammenkrieger	2205
 	Vnum	2209
@@ -2552,7 +2552,7 @@ Group	L75_ÅÂÈ­¹«ÀÎ(S_KNIGHT)-ÅÂÈ­¹«ÀÎ(S_KNIGHT)
 	3	Flamme	2204
 	4	Flamme	2204
 }
-Group	L61_È­¿°¿Õ(BOSS)-ÅÂÈ­¹«ÀÎ(S_KNIGHT)
+Group	L61_í™”ì—¼ì™•(BOSS)-íƒœí™”ë¬´ì¸(S_KNIGHT)
 {
 	Leader	Flammenk?nig	2206
 	Vnum	2210
@@ -2561,7 +2561,7 @@ Group	L61_È­¿°¿Õ(BOSS)-ÅÂÈ­¹«ÀÎ(S_KNIGHT)
 	3	Flamme	2204
 	4	Flammengeist	2202
 }
-Group	L61_È­¿°¿Õ(BOSS)-ÅÂÈ­¹«ÀÎ(S_KNIGHT)
+Group	L61_í™”ì—¼ì™•(BOSS)-íƒœí™”ë¬´ì¸(S_KNIGHT)
 {
 	Leader	Flammenk?nig	2206
 	Vnum	2211
@@ -2572,7 +2572,7 @@ Group	L61_È­¿°¿Õ(BOSS)-ÅÂÈ­¹«ÀÎ(S_KNIGHT)
 	5	Flammengeist	2202
 	6	Flammengeist	2202
 }
-Group	L72_È­·æ(KING)-È­¿°¿Õ(BOSS)
+Group	L72_í™”ë£¡(KING)-í™”ì—¼ì™•(BOSS)
 {
 	Leader	"Roter Drache"	2291
 	Vnum	2212
@@ -2581,7 +2581,7 @@ Group	L72_È­·æ(KING)-È­¿°¿Õ(BOSS)
 	3	Flammengeist	2202
 	4	Flammengeist	2202
 }
-Group	¹ØµÕ±Í¸ñ
+Group	ë°‘ë‘¥ê·€ëª©
 {
 	Leader	Geisterbaumstumpf	2302
 	Vnum	2301
@@ -2589,7 +2589,7 @@ Group	¹ØµÕ±Í¸ñ
 	2	Geisterbaumstumpf	2302
 	3	Geisterbaumstumpf	2302
 }
-Group	¸ñ·É_¹ØµÕ±Í¸ñ
+Group	ëª©ë ¹_ë°‘ë‘¥ê·€ëª©
 {
 	Leader	Dryade	2303
 	Vnum	2302
@@ -2597,7 +2597,7 @@ Group	¸ñ·É_¹ØµÕ±Í¸ñ
 	2	Geisterbaumstumpf	2302
 	3	Geisterbaumstumpf	2302
 }
-Group	¸ñ·É_¹ØµÕ±Í¸ñ
+Group	ëª©ë ¹_ë°‘ë‘¥ê·€ëª©
 {
 	Leader	Dryade	2303
 	Vnum	2303
@@ -2605,14 +2605,14 @@ Group	¸ñ·É_¹ØµÕ±Í¸ñ
 	2	Geisterbaumstumpf	2302
 	3	Geisterbaumstumpf	2302
 }
-Group	¸ñ·É
+Group	ëª©ë ¹
 {
 	Leader	Dryade	2303
 	Vnum	2304
 	1	Dryade	2303
 	2	Dryade	2303
 }
-Group	È­·ù±Í¸ñ_¸ñ·É
+Group	í™”ë¥˜ê·€ëª©_ëª©ë ¹
 {
 	Leader	Geisterweide	2304
 	Vnum	2305
@@ -2622,7 +2622,7 @@ Group	È­·ù±Í¸ñ_¸ñ·É
 	4	Geisterbaumstumpf	2302
 	5	Geisterbaumstumpf	2302
 }
-Group	È­·ù±Í¸ñ_¹ØµÕ±Í¸ñ
+Group	í™”ë¥˜ê·€ëª©_ë°‘ë‘¥ê·€ëª©
 {
 	Leader	Geisterweide	2304
 	Vnum	2306
@@ -2631,7 +2631,7 @@ Group	È­·ù±Í¸ñ_¹ØµÕ±Í¸ñ
 	3	Geisterbaumstumpf	2302
 	4	Geisterbaumstumpf	2302
 }
-Group	È­·ù±Í¸ñ_¸ñ·É
+Group	í™”ë¥˜ê·€ëª©_ëª©ë ¹
 {
 	Leader	Geisterweide	2304
 	Vnum	2307
@@ -2640,7 +2640,7 @@ Group	È­·ù±Í¸ñ_¸ñ·É
 	3	Dryade	2303
 	4	Dryade	2303
 }
-Group	È­·ù±Í¸ñ_¸ñ·É
+Group	í™”ë¥˜ê·€ëª©_ëª©ë ¹
 {
 	Leader	Geisterweide	2304
 	Vnum	2308
@@ -2648,7 +2648,7 @@ Group	È­·ù±Í¸ñ_¸ñ·É
 	2	Geisterweide	2304
 	3	Geisterweide	2304
 }
-Group	Èæ±Í¸ñ_¸ñ·É
+Group	í‘ê·€ëª©_ëª©ë ¹
 {
 	Leader	"B?ser Baum"	2305
 	Vnum	2309
@@ -2658,7 +2658,7 @@ Group	Èæ±Í¸ñ_¸ñ·É
 	4	Geisterbaumstumpf	2302
 	5	Geisterbaumstumpf	2302
 }
-Group	Èæ±Í¸ñ_¹ØµÕ±Í¸ñ
+Group	í‘ê·€ëª©_ë°‘ë‘¥ê·€ëª©
 {
 	Leader	"B?ser Baum"	2305
 	Vnum	2310
@@ -2667,7 +2667,7 @@ Group	Èæ±Í¸ñ_¹ØµÕ±Í¸ñ
 	3	Geisterbaumstumpf	2302
 	4	Geisterbaumstumpf	2302
 }
-Group	Èæ±Í¸ñ_¸ñ·É
+Group	í‘ê·€ëª©_ëª©ë ¹
 {
 	Leader	"B?ser Baum"	2305
 	Vnum	2311
@@ -2676,7 +2676,7 @@ Group	Èæ±Í¸ñ_¸ñ·É
 	3	Dryade	2303
 	4	Dryade	2303
 }
-Group	Èæ±Í¸ñ_¸ñ·É
+Group	í‘ê·€ëª©_ëª©ë ¹
 {
 	Leader	"B?ser Baum"	2305
 	Vnum	2312
@@ -2685,7 +2685,7 @@ Group	Èæ±Í¸ñ_¸ñ·É
 	3	"B?ser Baum"	2305
 	4	"B?ser Baum"	2305
 }
-Group	Èæ±Í¸ñ_¸ñ·É
+Group	í‘ê·€ëª©_ëª©ë ¹
 {
 	Leader	"B?ser Baum"	2305
 	Vnum	2313
@@ -2693,7 +2693,7 @@ Group	Èæ±Í¸ñ_¸ñ·É
 	2	"B?ser Baum"	2305
 	3	"B?ser Baum"	2305
 }
-Group	°Å´ë±Í¸ñ
+Group	ê±°ëŒ€ê·€ëª©
 {
 	Leader	"Riesiger Geisterbaum"	2306
 	Vnum	2314
@@ -2707,7 +2707,7 @@ Group	°Å´ë±Í¸ñ
 	8	Dryade	2303
 	9	Dryade	2303
 }
-Group	¹ØµÕ±Í¸ñ
+Group	ë°‘ë‘¥ê·€ëª©
 {
 	Leader	"Roter Geisterbaumstumpf"	2312
 	Vnum	2320
@@ -2715,7 +2715,7 @@ Group	¹ØµÕ±Í¸ñ
 	2	"Roter Geisterbaumstumpf"	2312
 	3	"Roter Geisterbaumstumpf"	2312
 }
-Group	¹ØµÕ±Í¸ñ
+Group	ë°‘ë‘¥ê·€ëª©
 {
 	Leader	"Roter Geisterbaumstumpf"	2312
 	Vnum	2321
@@ -2723,7 +2723,7 @@ Group	¹ØµÕ±Í¸ñ
 	2	"Roter Geisterbaumstumpf"	2312
 	3	"Roter Geisterbaumstumpf"	2312
 }
-Group	¸ñ·É_¹ØµÕ±Í¸ñ
+Group	ëª©ë ¹_ë°‘ë‘¥ê·€ëª©
 {
 	Leader	"Rote Dryade"	2313
 	Vnum	2322
@@ -2731,7 +2731,7 @@ Group	¸ñ·É_¹ØµÕ±Í¸ñ
 	2	"Roter Geisterbaumstumpf"	2312
 	3	"Roter Geisterbaumstumpf"	2312
 }
-Group	¸ñ·É_¹ØµÕ±Í¸ñ
+Group	ëª©ë ¹_ë°‘ë‘¥ê·€ëª©
 {
 	Leader	"Rote Dryade"	2313
 	Vnum	2323
@@ -2739,14 +2739,14 @@ Group	¸ñ·É_¹ØµÕ±Í¸ñ
 	2	"Roter Geisterbaumstumpf"	2312
 	3	"Roter Geisterbaumstumpf"	2312
 }
-Group	¸ñ·É
+Group	ëª©ë ¹
 {
 	Leader	"Rote Dryade"	2313
 	Vnum	2324
 	1	"Rote Dryade"	2313
 	2	"Rote Dryade"	2313
 }
-Group	È­·ù±Í¸ñ_¸ñ·É
+Group	í™”ë¥˜ê·€ëª©_ëª©ë ¹
 {
 	Leader	"Rote Geisterweide"	2314
 	Vnum	2325
@@ -2756,7 +2756,7 @@ Group	È­·ù±Í¸ñ_¸ñ·É
 	4	"Roter Geisterbaumstumpf"	2312
 	5	"Roter Geisterbaumstumpf"	2312
 }
-Group	È­·ù±Í¸ñ_¹ØµÕ±Í¸ñ
+Group	í™”ë¥˜ê·€ëª©_ë°‘ë‘¥ê·€ëª©
 {
 	Leader	"Rote Geisterweide"	2314
 	Vnum	2326
@@ -2765,7 +2765,7 @@ Group	È­·ù±Í¸ñ_¹ØµÕ±Í¸ñ
 	3	"Roter Geisterbaumstumpf"	2312
 	4	"Roter Geisterbaumstumpf"	2312
 }
-Group	È­·ù±Í¸ñ_¸ñ·É
+Group	í™”ë¥˜ê·€ëª©_ëª©ë ¹
 {
 	Leader	"Rote Geisterweide"	2314
 	Vnum	2327
@@ -2774,7 +2774,7 @@ Group	È­·ù±Í¸ñ_¸ñ·É
 	3	"Rote Dryade"	2313
 	4	"Rote Dryade"	2313
 }
-Group	È­·ù±Í¸ñ_¸ñ·É
+Group	í™”ë¥˜ê·€ëª©_ëª©ë ¹
 {
 	Leader	"Rote Geisterweide"	2314
 	Vnum	2328
@@ -2782,7 +2782,7 @@ Group	È­·ù±Í¸ñ_¸ñ·É
 	2	"Rote Geisterweide"	2314
 	3	"Rote Geisterweide"	2314
 }
-Group	Èæ±Í¸ñ_¸ñ·É
+Group	í‘ê·€ëª©_ëª©ë ¹
 {
 	Leader	"Roter b?ser Baum"	2315
 	Vnum	2329
@@ -2792,7 +2792,7 @@ Group	Èæ±Í¸ñ_¸ñ·É
 	4	"Roter Geisterbaumstumpf"	2312
 	5	"Roter Geisterbaumstumpf"	2312
 }
-Group	Èæ±Í¸ñ_¹ØµÕ±Í¸ñ
+Group	í‘ê·€ëª©_ë°‘ë‘¥ê·€ëª©
 {
 	Leader	"Roter b?ser Baum"	2315
 	Vnum	2330
@@ -2801,7 +2801,7 @@ Group	Èæ±Í¸ñ_¹ØµÕ±Í¸ñ
 	3	"Roter Geisterbaumstumpf"	2312
 	4	"Roter Geisterbaumstumpf"	2312
 }
-Group	Èæ±Í¸ñ_¸ñ·É
+Group	í‘ê·€ëª©_ëª©ë ¹
 {
 	Leader	"Roter b?ser Baum"	2315
 	Vnum	2331
@@ -2810,7 +2810,7 @@ Group	Èæ±Í¸ñ_¸ñ·É
 	3	"Rote Dryade"	2313
 	4	"Rote Dryade"	2313
 }
-Group	Èæ±Í¸ñ_¸ñ·É
+Group	í‘ê·€ëª©_ëª©ë ¹
 {
 	Leader	"Roter b?ser Baum"	2315
 	Vnum	2332
@@ -2819,7 +2819,7 @@ Group	Èæ±Í¸ñ_¸ñ·É
 	3	"Roter b?ser Baum"	2315
 	4	"Roter b?ser Baum"	2315
 }
-Group	Èæ±Í¸ñ_¸ñ·É
+Group	í‘ê·€ëª©_ëª©ë ¹
 {
 	Leader	"Roter b?ser Baum"	2315
 	Vnum	2333
@@ -2827,14 +2827,14 @@ Group	Èæ±Í¸ñ_¸ñ·É
 	2	"Roter b?ser Baum"	2315
 	3	"Roter b?ser Baum"	2315
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡_ÃµÀÇºù¸¶
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì–¼ìŒë¿”ë²”ê³ ë˜_ì²œì˜ë¹™ë§ˆ
 {
 	Leader	Unterwelt-Eiskillerwal	1132
 	Vnum	2401
 	1	Unterwelt-Eissplitter	1131
 	2	Unterwelt-Eissplitter	1131
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì–¼ìŒë¿”ë²”ê³ ë˜_ì²œì˜ì–¼ìŒë¿”ë²”ê³ ë˜
 {
 	Leader	Unterwelt-Eiskillerwal	1132
 	Vnum	2402
@@ -2842,7 +2842,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡
 	2	Unterwelt-Eissplitter	1131
 	3	Unterwelt-Eissplitter	1131
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì–¼ìŒë¿”ë²”ê³ ë˜_ì²œì˜ì–¼ìŒë¿”ë²”ê³ ë˜
 {
 	Leader	Unterwelt-Eiskillerwal	1132
 	Vnum	2403
@@ -2850,7 +2850,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡
 	2	Unterwelt-Eiskillerwal	1132
 	3	Unterwelt-Eissplitter	1131
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÃæ_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë¹™ì¶©_ì²œì˜ì–¼ìŒë¿”ë²”ê³ ë˜
 {
 	Leader	Unterwelt-Eisinsekt	1133
 	Vnum	2404
@@ -2858,7 +2858,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÃæ_ÃµÀÇ¾óÀ½»Ô¹ü°í·¡
 	2	Unterwelt-Eissplitter	1131
 	3	Unterwelt-Eissplitter	1131
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÃæ_ÃµÀÇºùÃæ
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë¹™ì¶©_ì²œì˜ë¹™ì¶©
 {
 	Leader	Unterwelt-Eisinsekt	1133
 	Vnum	2405
@@ -2866,7 +2866,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÃæ_ÃµÀÇºùÃæ
 	2	Unterwelt-Eiskillerwal	1132
 	3	Unterwelt-Eissplitter	1131
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¼³±¸_ÃµÀÇºùÃæ
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì„¤êµ¬_ì²œì˜ë¹™ì¶©
 {
 	Leader	Unterwelt-Eisl?we	1134
 	Vnum	2406
@@ -2874,14 +2874,14 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¼³±¸_ÃµÀÇºùÃæ
 	2	Unterwelt-Eiskillerwal	1132
 	3	Unterwelt-Eissplitter	1131
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¼³±¸_ÃµÀÇ¼³±¸
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì„¤êµ¬_ì²œì˜ì„¤êµ¬
 {
 	Leader	Unterwelt-Eisl?we	1134
 	Vnum	2407
 	1	Unterwelt-Eisl?we	1134
 	2	Unterwelt-Eisinsekt	1133
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÀÎ_ÃµÀÇ¼³±¸
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë¹™ì¸_ì²œì˜ì„¤êµ¬
 {
 	Leader	Unterwelt-Eismann	1135
 	Vnum	2408
@@ -2890,7 +2890,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÀÎ_ÃµÀÇ¼³±¸
 	3	Unterwelt-Eisinsekt	1133
 	4	Unterwelt-Eissplitter	1131
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÀÎ_ÃµÀÇºùÀÎ
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë¹™ì¸_ì²œì˜ë¹™ì¸
 {
 	Leader	Unterwelt-Eismann	1135
 	Vnum	2409
@@ -2898,7 +2898,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÀÎ_ÃµÀÇºùÀÎ
 	2	Unterwelt-Eisl?we	1134
 	3	Unterwelt-Eisl?we	1134
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÀÎ_ÃµÀÇºùÀÎ
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë¹™ì¸_ì²œì˜ë¹™ì¸
 {
 	Leader	Unterwelt-Eismann	1135
 	Vnum	2409
@@ -2906,7 +2906,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇºùÀÎ_ÃµÀÇºùÀÎ
 	2	Unterwelt-Eisl?we	1134
 	3	Unterwelt-Eisl?we	1134
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¼³°ÅÀÎ_ÃµÀÇºùÀÎ
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì„¤ê±°ì¸_ì²œì˜ë¹™ì¸
 {
 	Leader	Unterwelt-Yeti	1136
 	Vnum	2410
@@ -2915,7 +2915,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¼³°ÅÀÎ_ÃµÀÇºùÀÎ
 	3	Unterwelt-Eisinsekt	1133
 	4	Unterwelt-Eisinsekt	1133
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¼³°ÅÀÎ_ÃµÀÇ¼³°ÅÀÎ
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì„¤ê±°ì¸_ì²œì˜ì„¤ê±°ì¸
 {
 	Leader	Unterwelt-Yeti	1136
 	Vnum	2411
@@ -2925,7 +2925,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¼³°ÅÀÎ_ÃµÀÇ¼³°ÅÀÎ
 	4	Unterwelt-Eismann	1135
 	5	Unterwelt-Eisl?we	1134
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¾óÀ½°í·½_ÃµÀÇºùÀÎ
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì–¼ìŒê³ ë ˜_ì²œì˜ë¹™ì¸
 {
 	Leader	Unterwelt-Eisgolem	1137
 	Vnum	2412
@@ -2935,7 +2935,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¾óÀ½°í·½_ÃµÀÇºùÀÎ
 	4	Unterwelt-Yeti	1136
 	5	Unterwelt-Yeti	1136
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¾óÀ½°í·½_ÃµÀÇ¾óÀ½°í·½
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì–¼ìŒê³ ë ˜_ì²œì˜ì–¼ìŒê³ ë ˜
 {
 	Leader	Unterwelt-Eisgolem	1137
 	Vnum	2413
@@ -2945,7 +2945,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¾óÀ½°í·½_ÃµÀÇ¾óÀ½°í·½
 	4	Unterwelt-Yeti	1136
 	5	Unterwelt-Yeti	1136
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇº´»ç_ÃµÀÇº´»ç
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë³‘ì‚¬_ì²œì˜ë³‘ì‚¬
 {
 	Leader	Setaou-K?mpfer	2401
 	Vnum	2414
@@ -2953,7 +2953,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇº´»ç_ÃµÀÇº´»ç
 	2	Setaou-K?mpfer	2401
 	3	Setaou-K?mpfer	2401
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ±Ãº´_ÃµÀÇº´»ç
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ê¶ë³‘_ì²œì˜ë³‘ì‚¬
 {
 	Leader	Setaou-J?ger	2402
 	Vnum	2415
@@ -2962,7 +2962,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ±Ãº´_ÃµÀÇº´»ç
 	3	Setaou-K?mpfer	2401
 	4	Setaou-K?mpfer	2401
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ±Ãº´_ÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ê¶ë³‘_ì²œì˜ê¶ë³‘
 {
 	Leader	Setaou-J?ger	2402
 	Vnum	2416
@@ -2971,7 +2971,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ±Ãº´_ÃµÀÇ±Ãº´
 	3	Setaou-K?mpfer	2401
 	4	Setaou-K?mpfer	2401
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¹ı»ç_ÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë²•ì‚¬_ì²œì˜ê¶ë³‘
 {
 	Leader	Setaou-Seherin	2403
 	Vnum	2417
@@ -2982,7 +2982,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¹ı»ç_ÃµÀÇ±Ãº´
 	5	Setaou-K?mpfer	2401
 	6	Setaou-K?mpfer	2401
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¹ı»ç_ÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë²•ì‚¬_ì²œì˜ê¶ë³‘
 {
 	Leader	Setaou-Seherin	2403
 	Vnum	2418
@@ -2993,7 +2993,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¹ı»ç_ÃµÀÇ±Ãº´
 	5	Setaou-K?mpfer	2401
 	6	Setaou-K?mpfer	2401
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇÀå¼ö_ÃµÀÇ¹ı»ç
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì¥ìˆ˜_ì²œì˜ë²•ì‚¬
 {
 	Leader	Setaou-Anf?hrer	2404
 	Vnum	2419
@@ -3003,7 +3003,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇÀå¼ö_ÃµÀÇ¹ı»ç
 	4	Setaou-K?mpfer	2401
 	5	Setaou-K?mpfer	2401
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇÀå¼ö_ÃµÀÇ¹ı»ç
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì¥ìˆ˜_ì²œì˜ë²•ì‚¬
 {
 	Leader	Setaou-Anf?hrer	2404
 	Vnum	2420
@@ -3015,7 +3015,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇÀå¼ö_ÃµÀÇ¹ı»ç
 	6	Setaou-K?mpfer	2401
 	7	Setaou-K?mpfer	2401
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇº´»ç_ÁøÃµÀÇº´»ç
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ë³‘ì‚¬_ì§„ì²œì˜ë³‘ì‚¬
 {
 	Leader	Setaou-Soldat	2411
 	Vnum	2421
@@ -3023,7 +3023,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇº´»ç_ÁøÃµÀÇº´»ç
 	2	Setaou-Soldat	2411
 	3	Setaou-Soldat	2411
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ±Ãº´_ÁøÃµÀÇº´»ç
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ê¶ë³‘_ì§„ì²œì˜ë³‘ì‚¬
 {
 	Leader	Setaou-Bogensch?tze	2412
 	Vnum	2422
@@ -3031,7 +3031,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ±Ãº´_ÁøÃµÀÇº´»ç
 	2	Setaou-Soldat	2411
 	3	Setaou-Soldat	2411
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ±Ãº´_ÁøÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ê¶ë³‘_ì§„ì²œì˜ê¶ë³‘
 {
 	Leader	Setaou-Bogensch?tze	2412
 	Vnum	2423
@@ -3039,7 +3039,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ±Ãº´_ÁøÃµÀÇ±Ãº´
 	2	Setaou-Soldat	2411
 	3	Setaou-Soldat	2411
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ¹ı»ç_ÁøÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ë²•ì‚¬_ì§„ì²œì˜ê¶ë³‘
 {
 	Leader	Setaou-Magistra	2413
 	Vnum	2424
@@ -3047,7 +3047,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ¹ı»ç_ÁøÃµÀÇ±Ãº´
 	2	Setaou-Soldat	2411
 	3	Setaou-Soldat	2411
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ¹ı»ç_ÁøÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ë²•ì‚¬_ì§„ì²œì˜ê¶ë³‘
 {
 	Leader	Setaou-Magistra	2413
 	Vnum	2425
@@ -3056,7 +3056,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ¹ı»ç_ÁøÃµÀÇ±Ãº´
 	3	Setaou-Soldat	2411
 	4	Setaou-Soldat	2411
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå¼ö_ÁøÃµÀÇ¹ı»ç
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ì¥ìˆ˜_ì§„ì²œì˜ë²•ì‚¬
 {
 	Leader	Setaou-Kommandant	2414
 	Vnum	2426
@@ -3066,7 +3066,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå¼ö_ÁøÃµÀÇ¹ı»ç
 	4	Setaou-Soldat	2411
 	5	Setaou-Soldat	2411
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå¼ö_ÁøÃµÀÇ¹ı»ç
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ì¥ìˆ˜_ì§„ì²œì˜ë²•ì‚¬
 {
 	Leader	Setaou-Kommandant	2414
 	Vnum	2427
@@ -3078,7 +3078,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå¼ö_ÁøÃµÀÇ¹ı»ç
 	6	Setaou-Soldat	2411
 	7	Setaou-Soldat	2411
 }
-Group	ÃµÀÇµ¿±¼2F_ÃµÀÇÀå±º_ÃµÀÇÀå¼ö
+Group	ì²œì˜ë™êµ´2F_ì²œì˜ì¥êµ°_ì²œì˜ì¥ìˆ˜
 {
 	Leader	Setaou-Hauptmann	2491
 	Vnum	2428
@@ -3090,7 +3090,7 @@ Group	ÃµÀÇµ¿±¼2F_ÃµÀÇÀå±º_ÃµÀÇÀå¼ö
 	6	Setaou-K?mpfer	2401
 	7	Setaou-K?mpfer	2401
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå±º_ÁøÃµÀÇÀå¼ö
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ì¥êµ°_ì§„ì²œì˜ì¥ìˆ˜
 {
 	Leader	Setaou-General	2492
 	Vnum	2429
@@ -3104,27 +3104,27 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå±º_ÁøÃµÀÇÀå¼ö
 }
 Group	skipia_map1_boss
 {
-	Leader	"Gro©¬e Eishexe"	1192
+	Leader	"GroÂ©Â¬e Eishexe"	1192
 	Vnum	2448
 	1	Unterwelt-Eisgolem	1137
 	2	Unterwelt-Eisgolem	1137
 	3	Unterwelt-Eisgolem	1137
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Schwacher Affensoldat"	5101
 	Vnum	5001
 	1	"Schwacher Affensoldat"	5101
 	2	"Schwacher Affensoldat"	5101
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Schwacher Affenwerfer"	5102
 	Vnum	5002
 	1	"Schwacher Affensoldat"	5101
 	2	"Schwacher Affensoldat"	5101
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Schwacher Affenwerfer"	5102
 	Vnum	5003
@@ -3132,7 +3132,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	"Schwacher Affensoldat"	5101
 	3	"Schwacher Affensoldat"	5101
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Schwacher Affenk?mpfer"	5103
 	Vnum	5004
@@ -3140,14 +3140,14 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	"Schwacher Affensoldat"	5101
 	3	"Schwacher Affensoldat"	5101
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Schwacher Affenk?mpfer"	5103
 	Vnum	5005
 	1	"Schwacher Affenk?mpfer"	5103
 	2	"Schwacher Affenk?mpfer"	5103
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Schwacher Affengeneral"	5104
 	Vnum	5006
@@ -3155,7 +3155,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	"Schwacher Affensoldat"	5101
 	3	"Schwacher Affensoldat"	5101
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Schwacher Affengeneral"	5104
 	Vnum	5007
@@ -3163,7 +3163,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	"Schwacher Affenk?mpfer"	5103
 	3	"Schwacher Affensoldat"	5101
 }
-Group	L25_ÀÌ»ê´ë¼º(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì´ì‚°ëŒ€ì„±(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Felsenaffe	5161
 	Vnum	5008
@@ -3174,21 +3174,21 @@ Group	L25_ÀÌ»ê´ë¼º(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	5	"Schwacher Affensoldat"	5101
 	6	"Schwacher Affensoldat"	5101
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Affensoldat	5111
 	Vnum	5009
 	1	Affensoldat	5111
 	2	Affensoldat	5111
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Affenwerfer	5112
 	Vnum	5010
 	1	Affensoldat	5111
 	2	Affensoldat	5111
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Affenwerfer	5112
 	Vnum	5011
@@ -3196,7 +3196,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	Affensoldat	5111
 	3	Affensoldat	5111
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Affenk?mpfer	5113
 	Vnum	5012
@@ -3204,14 +3204,14 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	Affensoldat	5111
 	3	Affensoldat	5111
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Affenk?mpfer	5113
 	Vnum	5013
 	1	Affenk?mpfer	5113
 	2	Affenk?mpfer	5113
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Affengeneral	5114
 	Vnum	5014
@@ -3219,7 +3219,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	Affensoldat	5111
 	3	Affensoldat	5111
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Affengeneral	5114
 	Vnum	5015
@@ -3227,14 +3227,14 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	Affenk?mpfer	5113
 	3	Affensoldat	5111
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Steinaffe	5115
 	Vnum	5016
 	1	Affengeneral	5114
 	2	Affengeneral	5114
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Affenanf?hrer	5116
 	Vnum	5017
@@ -3243,7 +3243,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	3	Affensoldat	5111
 	4	Affensoldat	5111
 }
-Group	L25_ÀÌ»ê´ë¼º(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì´ì‚°ëŒ€ì„±(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Gehender Affe"	5162
 	Vnum	5018
@@ -3253,21 +3253,21 @@ Group	L25_ÀÌ»ê´ë¼º(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	4	Affengeneral	5114
 	5	Affengeneral	5114
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Affensoldat"	5121
 	Vnum	5019
 	1	"Starker Affensoldat"	5121
 	2	"Starker Affensoldat"	5121
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Affenwerfer"	5122
 	Vnum	5020
 	1	"Starker Affensoldat"	5121
 	2	"Starker Affensoldat"	5121
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Affenwerfer"	5122
 	Vnum	5021
@@ -3275,7 +3275,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	"Starker Affensoldat"	5121
 	3	"Starker Affensoldat"	5121
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Affenk?mpfer"	5123
 	Vnum	5022
@@ -3283,14 +3283,14 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	"Starker Affensoldat"	5121
 	3	"Starker Affensoldat"	5121
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Affenk?mpfer"	5123
 	Vnum	5023
 	1	"Starker Affenk?mpfer"	5123
 	2	"Starker Affenk?mpfer"	5123
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Affengeneral"	5124
 	Vnum	5024
@@ -3298,7 +3298,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	"Starker Affensoldat"	5121
 	3	"Starker Affensoldat"	5121
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Affengeneral"	5124
 	Vnum	5025
@@ -3306,7 +3306,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	2	"Starker Affenk?mpfer"	5123
 	3	"Starker Affensoldat"	5121
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Steinaffe"	5125
 	Vnum	5026
@@ -3315,7 +3315,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	3	"Starker Affensoldat"	5121
 	4	"Starker Affensoldat"	5121
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Goldaffe"	5126
 	Vnum	5027
@@ -3324,7 +3324,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	3	"Starker Affensoldat"	5121
 	4	"Starker Affensoldat"	5121
 }
-Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì¡¸ê°œì›ìˆ­ì´(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	"Starker Affenanf?hrer"	5127
 	Vnum	5028
@@ -3334,7 +3334,7 @@ Group	L25_Á¹°³¿ø¼şÀÌ(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	4	"Starker Affensoldat"	5121
 	5	"Starker Affensoldat"	5121
 }
-Group	L25_Á¦Ãµ´ë¼º(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
+Group	L25_ì œì²œëŒ€ì„±(pawn)_ì¡¸ê°œì›ìˆ­ì´(S_pawn)
 {
 	Leader	Affen-Lord	5163
 	Vnum	5029
@@ -3345,49 +3345,49 @@ Group	L25_Á¦Ãµ´ë¼º(pawn)_Á¹°³¿ø¼şÀÌ(S_pawn)
 	5	"Starker Affengeneral"	5124
 	6	"Starker Affengeneral"	5124
 }
-Group	Äù½ºÆ®¿ë_»ó¼±µ¿¿øº´
+Group	í€˜ìŠ¤íŠ¸ìš©_ìƒì„ ë™ì›ë³‘
 {
 	Leader	"B?ser Affensoldat"	5151
 	Vnum	5151
 	1	"B?ser Affensoldat"	5151
 	2	"B?ser Affensoldat"	5151
 }
-Group	Äù½ºÆ®¿ë_»ó¼±µ¿Åõ¸¶¿øº´
+Group	í€˜ìŠ¤íŠ¸ìš©_ìƒì„ ë™íˆ¬ë§ˆì›ë³‘
 {
 	Leader	"B?ser Affenwerfer"	5152
 	Vnum	5152
 	1	"B?ser Affenwerfer"	5152
 	2	"B?ser Affenwerfer"	5152
 }
-Group	Äù½ºÆ®¿ë_»ó¼±µ¿±â¹«¿øº´
+Group	í€˜ìŠ¤íŠ¸ìš©_ìƒì„ ë™ê¸°ë¬´ì›ë³‘
 {
 	Leader	"B?ser Affenk?mpfer"	5153
 	Vnum	5153
 	1	"B?ser Affenk?mpfer"	5153
 	2	"B?ser Affenk?mpfer"	5153
 }
-Group	Äù½ºÆ®¿ë_»ó¼ºµ¿¿øÀå¼ö
+Group	í€˜ìŠ¤íŠ¸ìš©_ìƒì„±ë™ì›ì¥ìˆ˜
 {
 	Leader	"B?ser Affengeneral"	5154
 	Vnum	5154
 	1	"B?ser Affengeneral"	5154
 	2	"B?ser Affengeneral"	5154
 }
-Group	Äù½ºÆ®¿ë_»ó¼±µ¿µ¹¿ø¼şÀÌ
+Group	í€˜ìŠ¤íŠ¸ìš©_ìƒì„ ë™ëŒì›ìˆ­ì´
 {
 	Leader	"B?ser Steinaffe"	5155
 	Vnum	5155
 	1	"B?ser Steinaffe"	5155
 	2	"B?ser Steinaffe"	5155
 }
-Group	Äù½ºÆ®¿ë_»ó¼±µ¿±İ¿ø¼şÀÌ
+Group	í€˜ìŠ¤íŠ¸ìš©_ìƒì„ ë™ê¸ˆì›ìˆ­ì´
 {
 	Leader	"B?ser Goldaffe"	5156
 	Vnum	5156
 	1	"B?ser Goldaffe"	5156
 	2	"B?ser Goldaffe"	5156
 }
-Group	¿µºñ»ç¸·»ï°Å¸®1
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬1
 {
 	Leader	"K?nig Skorpion"	7013
 	Vnum	7011
@@ -3395,7 +3395,7 @@ Group	¿µºñ»ç¸·»ï°Å¸®1
 	2	Bi-Ma-Gui-An	7012
 	3	Bi-Ma-Gui-An	7012
 }
-Group	¿µºñ»ç¸·»ï°Å¸®2
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬2
 {
 	Leader	Schlangenschwertk?mpfer	7016
 	Vnum	7012
@@ -3403,7 +3403,7 @@ Group	¿µºñ»ç¸·»ï°Å¸®2
 	2	"Listiger Skorpionmann"	7014
 	3	"Listiger Skorpionmann"	7014
 }
-Group	¿µºñ»ç¸·»ï°Å¸®3
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬3
 {
 	Leader	W?stenbandit	7018
 	Vnum	7013
@@ -3411,7 +3411,7 @@ Group	¿µºñ»ç¸·»ï°Å¸®3
 	2	Schlangenschwertk?mpfer	7016
 	3	Schlangenschwertk?mpfer	7016
 }
-Group	¿µºñ»ç¸·»ï°Å¸®4
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬4
 {
 	Leader	W?stenbandit	7018
 	Vnum	7014
@@ -3419,7 +3419,7 @@ Group	¿µºñ»ç¸·»ï°Å¸®4
 	2	Schlangenbogensch?tze	7017
 	3	Schlangenbogensch?tze	7017
 }
-Group	µµ¿°È­Áö»ï°Å¸®1
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬1
 {
 	Leader	"Tu-Ji Rumtreiber"	7021
 	Vnum	7019
@@ -3427,7 +3427,7 @@ Group	µµ¿°È­Áö»ï°Å¸®1
 	2	"Tu-ji Soldat"	7019
 	3	"Tu-ji Soldat"	7019
 }
-Group	µµ¿°È­Áö»ï°Å¸®2
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬2
 {
 	Leader	Hwa-ryung	7020
 	Vnum	7020
@@ -3435,14 +3435,14 @@ Group	µµ¿°È­Áö»ï°Å¸®2
 	2	"Tu-ji Soldat"	7019
 	3	"Tu-ji Soldat"	7019
 }
-Group	µµ¿°È­Áö»ï°Å¸®3
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬3
 {
 	Leader	Cham-Ma	7022
 	Vnum	7021
 	1	"Tu-Ji Rumtreiber"	7021
 	2	Hwa-ryung	7020
 }
-Group	µµ¿°È­Áö»ï°Å¸®4
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬4
 {
 	Leader	Teawha-Mu	7023
 	Vnum	7022
@@ -3450,7 +3450,7 @@ Group	µµ¿°È­Áö»ï°Å¸®4
 	2	"Tu-Ji Rumtreiber"	7021
 	3	Hwa-ryung	7020
 }
-Group	L25_¸¸¿ìÀı_µé°³
+Group	L25_ë§Œìš°ì ˆ_ë“¤ê°œ
 {
 	Leader	Wildhund	8501
 	Vnum	8501
@@ -3458,7 +3458,7 @@ Group	L25_¸¸¿ìÀı_µé°³
 	2	Wildhund	8501
 	3	Wildhund	8501
 }
-Group	L25_¸¸¿ìÀı_¸ËµÅÁö
+Group	L25_ë§Œìš°ì ˆ_ë§·ë¼ì§€
 {
 	Leader	Keiler	8502
 	Vnum	8502
@@ -3466,7 +3466,7 @@ Group	L25_¸¸¿ìÀı_¸ËµÅÁö
 	2	Keiler	8502
 	3	Keiler	8502
 }
-Group	L25_¸¸¿ìÀı_°õ
+Group	L25_ë§Œìš°ì ˆ_ê³°
 {
 	Leader	B?r	8503
 	Vnum	8503
@@ -3474,15 +3474,15 @@ Group	L25_¸¸¿ìÀı_°õ
 	2	B?r	8503
 	3	B?r	8503
 }
-Group	L25_¸¸¿ìÀı_´ëÈ£
+Group	L25_ë§Œìš°ì ˆ_ëŒ€í˜¸
 {
-	Leader	"Wei©¬er Tiger"	8504
+	Leader	"WeiÂ©Â¬er Tiger"	8504
 	Vnum	8504
-	1	"Wei©¬er Tiger"	8504
-	2	"Wei©¬er Tiger"	8504
-	3	"Wei©¬er Tiger"	8504
+	1	"WeiÂ©Â¬er Tiger"	8504
+	2	"WeiÂ©Â¬er Tiger"	8504
+	3	"WeiÂ©Â¬er Tiger"	8504
 }
-Group	L25_¸¸¿ìÀı_°Å´ë_Èæ¿õ±Í
+Group	L25_ë§Œìš°ì ˆ_ê±°ëŒ€_í‘ì›…ê·€
 {
 	Leader	"Schwarzer Ork-Riese"	8505
 	Vnum	8505
@@ -3490,7 +3490,7 @@ Group	L25_¸¸¿ìÀı_°Å´ë_Èæ¿õ±Í
 	2	"Schwarzer Ork-Riese"	8505
 	3	"Schwarzer Ork-Riese"	8505
 }
-Group	L25_¸¸¿ìÀı_Ã»¿ÍÀå
+Group	L25_ë§Œìš°ì ˆ_ì²­ì™€ì¥
 {
 	Leader	Baumfrosch-Anf?hrer	8506
 	Vnum	8506
@@ -3498,7 +3498,7 @@ Group	L25_¸¸¿ìÀı_Ã»¿ÍÀå
 	2	Baumfrosch-Anf?hrer	8506
 	3	Baumfrosch-Anf?hrer	8506
 }
-Group	L25_¸¸¿ìÀı_»ç¸·ÀÇ¹«¹ıÀÚ
+Group	L25_ë§Œìš°ì ˆ_ì‚¬ë§‰ì˜ë¬´ë²•ì
 {
 	Leader	W?stenbandit	8507
 	Vnum	8507
@@ -3506,7 +3506,7 @@ Group	L25_¸¸¿ìÀı_»ç¸·ÀÇ¹«¹ıÀÚ
 	2	W?stenbandit	8507
 	3	W?stenbandit	8507
 }
-Group	L25_¸¸¿ìÀı_¹Ğ±³°­¹Ú·É
+Group	L25_ë§Œìš°ì ˆ_ë°€êµê°•ë°•ë ¹
 {
 	Leader	"Esoterischer Peiniger"	8508
 	Vnum	8508
@@ -3514,7 +3514,7 @@ Group	L25_¸¸¿ìÀı_¹Ğ±³°­¹Ú·É
 	2	"Esoterischer Peiniger"	8508
 	3	"Esoterischer Peiniger"	8508
 }
-Group	L25_¸¸¿ìÀı_¹Ğ±³¼ÒÈ¯·É
+Group	L25_ë§Œìš°ì ˆ_ë°€êµì†Œí™˜ë ¹
 {
 	Leader	"Esoterischer Beschw?rer"	8509
 	Vnum	8509
@@ -3522,7 +3522,7 @@ Group	L25_¸¸¿ìÀı_¹Ğ±³¼ÒÈ¯·É
 	2	"Esoterischer Beschw?rer"	8509
 	3	"Esoterischer Beschw?rer"	8509
 }
-Group	L25_¸¸¿ìÀı_ÅÂÈ­¹«ÀÎ
+Group	L25_ë§Œìš°ì ˆ_íƒœí™”ë¬´ì¸
 {
 	Leader	Flammenkrieger	8510
 	Vnum	8510
@@ -3530,7 +3530,7 @@ Group	L25_¸¸¿ìÀı_ÅÂÈ­¹«ÀÎ
 	2	Flammenkrieger	8510
 	3	Flammenkrieger	8510
 }
-Group	L25_¸¸¿ìÀı_¾óÀ½°í·½
+Group	L25_ë§Œìš°ì ˆ_ì–¼ìŒê³ ë ˜
 {
 	Leader	Eisgolem	8511
 	Vnum	8511
@@ -3538,127 +3538,127 @@ Group	L25_¸¸¿ìÀı_¾óÀ½°í·½
 	2	Eisgolem	8511
 	3	Eisgolem	8511
 }
-Group	°ø¼º¿ë°æºñº´Ã¢ÇÏ
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘ì°½í•˜
 {
 	Leader	"W?chter des Dorfplatzes"	11100
 	Vnum	9501
 	1	"W?chter des Dorfplatzes"	11100
 	2	"W?chter des Dorfplatzes"	11100
 }
-Group	°ø¼º¿ë°æºñº´È°ÇÏ
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘í™œí•˜
 {
 	Leader	Schlachtenverwalter	11101
 	Vnum	9502
 	1	Schlachtenverwalter	11101
 	2	Schlachtenverwalter	11101
 }
-Group	°ø¼º¿ë°æºñº´Ã¢ÇÏ
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘ì°½í•˜
 {
 	Leader	"W?chter des Dorfplatzes"	11102
 	Vnum	9511
 	1	"W?chter des Dorfplatzes"	11102
 	2	"W?chter des Dorfplatzes"	11102
 }
-Group	°ø¼º¿ë°æºñº´È°ÇÏ
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘í™œí•˜
 {
 	Leader	Schlachtenverwalter	11103
 	Vnum	9512
 	1	Schlachtenverwalter	11103
 	2	Schlachtenverwalter	11103
 }
-Group	°ø¼º¿ë°æºñº´Ã¢ÇÏ
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘ì°½í•˜
 {
 	Leader	"W?chter des Dorfplatzes"	11104
 	Vnum	9521
 	1	"W?chter des Dorfplatzes"	11104
 	2	"W?chter des Dorfplatzes"	11104
 }
-Group	°ø¼º¿ë°æºñº´È°ÇÏ
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘í™œí•˜
 {
 	Leader	Schlachtenverwalter	11105
 	Vnum	9522
 	1	Schlachtenverwalter	11105
 	2	Schlachtenverwalter	11105
 }
-Group	L70_±âÁØNPC(Boss)-¾Æ¶ó³à(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ì•„ë¼ë…€(Boss)
 {
 	Leader	.	20025
 	Vnum	11001
 	1	Aranyo	20002
 }
-Group	L70_±âÁØNPC(Boss)-¾ÆÀ¯(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ì•„ìœ (Boss)
 {
 	Leader	.	20025
 	Vnum	11002
 	1	Ah-Yu	20003
 }
-Group	L70_±âÁØNPC(Boss)-¾Æ¶ó³à(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ì•„ë¼ë…€(Boss)
 {
 	Leader	.	20025
 	Vnum	11003
 	1	Bettler	20004
 }
-Group	L70_±âÁØNPC(Boss)-¿¬³ªÈ¯(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ì—°ë‚˜í™˜(Boss)
 {
 	Leader	.	20025
 	Vnum	11004
 	1	Yonah	20005
 }
-Group	L70_±âÁØNPC(Boss)-¹Ì¸®³»(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ë¯¸ë¦¬ë‚´(Boss)
 {
 	Leader	.	20025
 	Vnum	11005
 	1	Mirine	20006
 }
-Group	L70_±âÁØNPC(Boss)-À»µÎÁö(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ì„ë‘ì§€(Boss)
 {
 	Leader	.	20025
 	Vnum	11006
 	1	Uriel	20011
 }
-Group	L70_±âÁØNPC(Boss)-Ã¥¹ú·¡(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ì±…ë²Œë˜(Boss)
 {
 	Leader	.	20025
 	Vnum	11007
 	1	Baek-Go	20018
 }
-Group	L70_±âÁØNPC(Boss)-¹î»ç°ø(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ë±ƒì‚¬ê³µ(Boss)
 {
 	Leader	.	20025
 	Vnum	12001
 	1	Yu-Rang	20012
 }
-Group	L70_±âÁØNPC(Boss)-¹î»ç°ø(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ë±ƒì‚¬ê³µ(Boss)
 {
 	Leader	.	20025
 	Vnum	12002
 	1	Taurean	20014
 }
-Group	L70_±âÁØNPC(Boss)-¹î»ç°ø(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ë±ƒì‚¬ê³µ(Boss)
 {
 	Leader	.	20025
 	Vnum	12003
 	1	Yu-Hwan	20017
 }
-Group	L70_±âÁØNPC(Boss)-¹î»ç°ø(Boss)
+Group	L70_ê¸°ì¤€NPC(Boss)-ë±ƒì‚¬ê³µ(Boss)
 {
 	Leader	.	20025
 	Vnum	12004
 	1	Yang-Shin	20019
 }
-Group	L70_´ÄÀºÇØÀû(Boss)-¹î»ç°ø(Boss)
+Group	L70_ëŠ™ì€í•´ì (Boss)-ë±ƒì‚¬ê³µ(Boss)
 {
 	Leader	.	20025
 	Vnum	12005
 	1	Ariyoung	20021
 }
-Group	L70_´ÄÀºÇØÀû(Boss)-¹î»ç°ø(Boss)
+Group	L70_ëŠ™ì€í•´ì (Boss)-ë±ƒì‚¬ê³µ(Boss)
 {
 	Leader	.	20025
 	Vnum	12006
 	1	Harang	20024
 }
-Group	L70_¸»(Boss)-Á¶¶û¸»(Boss)
+Group	L70_ë§(Boss)-ì¡°ë‘ë§(Boss)
 {
 	Leader	.	20025
 	Vnum	12007
@@ -3667,128 +3667,128 @@ Group	L70_¸»(Boss)-Á¶¶û¸»(Boss)
 	3	Pferd	20030
 	4	Pferd	20030
 }
-Group	´ÙÀÌ¾Æ¸óµå±¤¸Æ
+Group	ë‹¤ì´ì•„ëª¬ë“œê´‘ë§¥
 {
 	Leader	Diamantader	20047
 	Vnum	20047
 }
-Group	È£¹Ú±¤¸Æ
+Group	í˜¸ë°•ê´‘ë§¥
 {
 	Leader	Bernsteinader	20048
 	Vnum	20048
 }
-Group	È­¼®¸ñ±¤¸Æ
+Group	í™”ì„ëª©ê´‘ë§¥
 {
 	Leader	Fossilholzader	20049
 	Vnum	20049
 }
-Group	±¸¸®±¤¸Æ
+Group	êµ¬ë¦¬ê´‘ë§¥
 {
 	Leader	Kupferader	20050
 	Vnum	20050
 }
-Group	Àº¸Æ
+Group	ì€ë§¥
 {
 	Leader	Silberader	20051
 	Vnum	20051
 }
-Group	±İ¸Æ
+Group	ê¸ˆë§¥
 {
 	Leader	Goldader	20052
 	Vnum	20052
 }
-Group	¿Á¼®¸Æ
+Group	ì˜¥ì„ë§¥
 {
 	Leader	Jadeader	20053
 	Vnum	20053
 }
-Group	Èæ´Ü¼®¸Æ
+Group	í‘ë‹¨ì„ë§¥
 {
 	Leader	Ebenholzader	20054
 	Vnum	20054
 }
-Group	Á¶°³¹«´õ±â
+Group	ì¡°ê°œë¬´ë”ê¸°
 {
 	Leader	Muschelstapel	20055
 	Vnum	20055
 }
-Group	¹é±İ¸Æ
+Group	ë°±ê¸ˆë§¥
 {
-	Leader	Wei©¬goldader	20056
+	Leader	WeiÂ©Â¬goldader	20056
 	Vnum	20056
 }
-Group	¼öÁ¤¼®¸Æ
+Group	ìˆ˜ì •ì„ë§¥
 {
 	Leader	Kristallader	20057
 	Vnum	20057
 }
-Group	ÀÚ¼öÁ¤¼®¸Æ
+Group	ììˆ˜ì •ì„ë§¥
 {
 	Leader	Quarzader	20058
 	Vnum	20058
 }
-Group	Ãµ·ç±¤¸Æ
+Group	ì²œë£¨ê´‘ë§¥
 {
 	Leader	Himmelstr?nenader	20059
 	Vnum	20059
 }
-Group	°ø¼º¿ëº¸½º¸ó½ºÅÍ
+Group	ê³µì„±ìš©ë³´ìŠ¤ëª¬ìŠ¤í„°
 {
 	Leader	"Geister Orkf?hrer"	693
 	Vnum	30001
 }
-Group	°ø¼º¿ëº¸½º¸ó½ºÅÍ
+Group	ê³µì„±ìš©ë³´ìŠ¤ëª¬ìŠ¤í„°
 {
 	Leader	"Elite K?mpfer"	795
 	Vnum	30002
 }
-Group	°ø¼º¿ëº¸½º¸ó½ºÅÍ
+Group	ê³µì„±ìš©ë³´ìŠ¤ëª¬ìŠ¤í„°
 {
 	Leader	"Gemeiner D?monenk?nig"	1094
 	Vnum	30003
 }
-Group	°ø¼º¿ëº¸½º¸ó½ºÅÍ
+Group	ê³µì„±ìš©ë³´ìŠ¤ëª¬ìŠ¤í„°
 {
 	Leader	"Blauer Tod"	1095
 	Vnum	30004
 }
-Group	°ø¼º¿ëº¸½º¸ó½ºÅÍ
+Group	ê³µì„±ìš©ë³´ìŠ¤ëª¬ìŠ¤í„°
 {
 	Leader	"Elit?rer Neunschwanz"	1903
 	Vnum	30005
 }
-Group	°ø¼º¿ëº¸½º¸ó½ºÅÍ
+Group	ê³µì„±ìš©ë³´ìŠ¤ëª¬ìŠ¤í„°
 {
 	Leader	"B?ser gelber Tigergeist"	1307
 	Vnum	30006
 }
-Group	°ø¼º¿ëº¸½º¸ó½ºÅÍ
+Group	ê³µì„±ìš©ë³´ìŠ¤ëª¬ìŠ¤í„°
 {
 	Leader	"Dunkl. K?niginnenspinne"	2093
 	Vnum	30007
 }
-Group	°ø¼º¿ëº¸½º¸ó½ºÅÍ
+Group	ê³µì„±ìš©ë³´ìŠ¤ëª¬ìŠ¤í„°
 {
 	Leader	"Dunkle W?stenschildkr?te"	2192
 	Vnum	30008
 }
 Group	haunted_white_tiger_1
 {
-	Leader	"Verfl. wei©¬er Tiger"	144
+	Leader	"Verfl. weiÂ©Â¬er Tiger"	144
 	Vnum	30009
 	1	"Verfl. Tiger"	143
 	2	"Verfl. Tiger"	143
 }
 Group	haunted_white_tiger_2
 {
-	Leader	"Verfl. wei©¬er Tiger"	144
+	Leader	"Verfl. weiÂ©Â¬er Tiger"	144
 	Vnum	30010
-	1	"Verfl. wei©¬er Tiger"	144
-	2	"Verfl. wei©¬er Tiger"	144
-	3	"Verfl. wei©¬er Tiger"	144
-	4	"Verfl. wei©¬er Tiger"	144
+	1	"Verfl. weiÂ©Â¬er Tiger"	144
+	2	"Verfl. weiÂ©Â¬er Tiger"	144
+	3	"Verfl. weiÂ©Â¬er Tiger"	144
+	4	"Verfl. weiÂ©Â¬er Tiger"	144
 }
-Group	°Å´ë±Í¸ñ
+Group	ê±°ëŒ€ê·€ëª©
 {
 	Leader	Noname	2316
 	Vnum	2334
@@ -3802,7 +3802,7 @@ Group	°Å´ë±Í¸ñ
 	8	"Rote Dryade"	2313
 	9	"Rote Dryade"	2313
 }
-Group	ÃµÀÇµ¿±¼2F_¼ö·æ_ÁøÃµÀÇÀå±º
+Group	ì²œì˜ë™êµ´2F_ìˆ˜ë£¡_ì§„ì²œì˜ì¥êµ°
 {
 	Leader	Noname	2493
 	Vnum	2430
@@ -3812,7 +3812,7 @@ Group	ÃµÀÇµ¿±¼2F_¼ö·æ_ÁøÃµÀÇÀå±º
 	4	Setaou-Soldat	2411
 	5	Setaou-Soldat	2411
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇº´»ç_ÃµÀÇº´»ç
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë³‘ì‚¬_ì²œì˜ë³‘ì‚¬
 {
 	Leader	Noname	2431
 	Vnum	2431
@@ -3820,7 +3820,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇº´»ç_ÃµÀÇº´»ç
 	2	Noname	2431
 	3	Noname	2431
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ±Ãº´_ÃµÀÇº´»ç
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ê¶ë³‘_ì²œì˜ë³‘ì‚¬
 {
 	Leader	Noname	2432
 	Vnum	2432
@@ -3828,7 +3828,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ±Ãº´_ÃµÀÇº´»ç
 	2	Noname	2431
 	3	Noname	2431
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ±Ãº´_ÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ê¶ë³‘_ì²œì˜ê¶ë³‘
 {
 	Leader	Noname	2432
 	Vnum	2433
@@ -3836,7 +3836,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ±Ãº´_ÃµÀÇ±Ãº´
 	2	Noname	2431
 	3	Noname	2431
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¹ı»ç_ÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë²•ì‚¬_ì²œì˜ê¶ë³‘
 {
 	Leader	Noname	2433
 	Vnum	2434
@@ -3844,7 +3844,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¹ı»ç_ÃµÀÇ±Ãº´
 	2	Noname	2431
 	3	Noname	2431
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¹ı»ç_ÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ë²•ì‚¬_ì²œì˜ê¶ë³‘
 {
 	Leader	Noname	2433
 	Vnum	2435
@@ -3853,7 +3853,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇ¹ı»ç_ÃµÀÇ±Ãº´
 	3	Noname	2431
 	4	Noname	2431
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇÀå¼ö_ÃµÀÇ¹ı»ç
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì¥ìˆ˜_ì²œì˜ë²•ì‚¬
 {
 	Leader	Noname	2434
 	Vnum	2436
@@ -3863,7 +3863,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇÀå¼ö_ÃµÀÇ¹ı»ç
 	4	Noname	2431
 	5	Noname	2431
 }
-Group	ÃµÀÇµ¿±¼1F_ÃµÀÇÀå¼ö_ÃµÀÇ¹ı»ç
+Group	ì²œì˜ë™êµ´1F_ì²œì˜ì¥ìˆ˜_ì²œì˜ë²•ì‚¬
 {
 	Leader	Noname	2434
 	Vnum	2437
@@ -3875,7 +3875,7 @@ Group	ÃµÀÇµ¿±¼1F_ÃµÀÇÀå¼ö_ÃµÀÇ¹ı»ç
 	6	Noname	2431
 	7	Noname	2431
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇº´»ç_ÁøÃµÀÇº´»ç
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ë³‘ì‚¬_ì§„ì²œì˜ë³‘ì‚¬
 {
 	Leader	Noname	2451
 	Vnum	2438
@@ -3883,7 +3883,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇº´»ç_ÁøÃµÀÇº´»ç
 	2	Noname	2451
 	3	Noname	2451
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ±Ãº´_ÁøÃµÀÇº´»ç
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ê¶ë³‘_ì§„ì²œì˜ë³‘ì‚¬
 {
 	Leader	Noname	2452
 	Vnum	2439
@@ -3891,7 +3891,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ±Ãº´_ÁøÃµÀÇº´»ç
 	2	Noname	2451
 	3	Noname	2451
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ±Ãº´_ÁøÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ê¶ë³‘_ì§„ì²œì˜ê¶ë³‘
 {
 	Leader	Noname	2452
 	Vnum	2440
@@ -3899,7 +3899,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ±Ãº´_ÁøÃµÀÇ±Ãº´
 	2	Noname	2451
 	3	Noname	2451
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ¹ı»ç_ÁøÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ë²•ì‚¬_ì§„ì²œì˜ê¶ë³‘
 {
 	Leader	Noname	2453
 	Vnum	2441
@@ -3907,7 +3907,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ¹ı»ç_ÁøÃµÀÇ±Ãº´
 	2	Noname	2451
 	3	Noname	2451
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ¹ı»ç_ÁøÃµÀÇ±Ãº´
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ë²•ì‚¬_ì§„ì²œì˜ê¶ë³‘
 {
 	Leader	Noname	2453
 	Vnum	2442
@@ -3916,7 +3916,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇ¹ı»ç_ÁøÃµÀÇ±Ãº´
 	3	Noname	2451
 	4	Noname	2451
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå¼ö_ÁøÃµÀÇ¹ı»ç
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ì¥ìˆ˜_ì§„ì²œì˜ë²•ì‚¬
 {
 	Leader	Noname	2454
 	Vnum	2443
@@ -3926,7 +3926,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå¼ö_ÁøÃµÀÇ¹ı»ç
 	4	Noname	2451
 	5	Noname	2451
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå¼ö_ÁøÃµÀÇ¹ı»ç
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ì¥ìˆ˜_ì§„ì²œì˜ë²•ì‚¬
 {
 	Leader	Noname	2454
 	Vnum	2444
@@ -3938,7 +3938,7 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå¼ö_ÁøÃµÀÇ¹ı»ç
 	6	Noname	2451
 	7	Noname	2451
 }
-Group	ÃµÀÇµ¿±¼2F_ÃµÀÇÀå±º_ÃµÀÇÀå¼ö
+Group	ì²œì˜ë™êµ´2F_ì²œì˜ì¥êµ°_ì²œì˜ì¥ìˆ˜
 {
 	Leader	Noname	2494
 	Vnum	2445
@@ -3950,7 +3950,7 @@ Group	ÃµÀÇµ¿±¼2F_ÃµÀÇÀå±º_ÃµÀÇÀå¼ö
 	6	Noname	2431
 	7	Noname	2431
 }
-Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå±º_ÁøÃµÀÇÀå¼ö
+Group	ì²œì˜ë™êµ´2F_ì§„ì²œì˜ì¥êµ°_ì§„ì²œì˜ì¥ìˆ˜
 {
 	Leader	Noname	2495
 	Vnum	2446
@@ -3962,13 +3962,13 @@ Group	ÃµÀÇµ¿±¼2F_ÁøÃµÀÇÀå±º_ÁøÃµÀÇÀå¼ö
 	6	Noname	2451
 	7	Noname	2451
 }
-Group	ÃµÀÇµ¿±¼2F_¼ö·æ_ÁøÃµÀÇÀå±º
+Group	ì²œì˜ë™êµ´2F_ìˆ˜ë£¡_ì§„ì²œì˜ì¥êµ°
 {
 	Leader	Noname	2493
 	Vnum	2447
 	1	Noname	2493
 }
-Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç°Ëº´(KNIGHT)
+Group	L69_ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)-ë°˜ì¸ë°˜ì‚¬ê²€ë³‘(KNIGHT)
 {
 	Leader	Noname	2137
 	Vnum	2066
@@ -3976,7 +3976,7 @@ Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç°Ëº´(KNIGHT)
 	2	Noname	2136
 	3	Noname	2136
 }
-Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
+Group	L69_ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)-ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)
 {
 	Leader	Noname	2137
 	Vnum	2067
@@ -3984,14 +3984,14 @@ Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
 	2	Noname	2136
 	3	Noname	2136
 }
-Group	L69_¹İÀÎ¹İ»ç±Ãº´(KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
+Group	L69_ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)-ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)
 {
 	Leader	Noname	2137
 	Vnum	2068
 	1	Noname	2136
 	2	Noname	2136
 }
-Group	L70_»ç¸·ÀÇ¹«¹ıÀÚ(S_KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
+Group	L70_ì‚¬ë§‰ì˜ë¬´ë²•ì(S_KNIGHT)-ë°˜ì¸ë°˜ì‚¬ê¶ë³‘(KNIGHT)
 {
 	Leader	Noname	2138
 	Vnum	2069
@@ -4000,104 +4000,104 @@ Group	L70_»ç¸·ÀÇ¹«¹ıÀÚ(S_KNIGHT)-¹İÀÎ¹İ»ç±Ãº´(KNIGHT)
 	3	W?stenbandit	2135
 	4	Schlangenbogensch?tze	2134
 }
-Group	¼ö·æ¼®A
+Group	ìˆ˜ë£¡ì„A
 {
 	Leader	Noname	8031
 	Vnum	8031
 }
-Group	¼ö·æ¼®B
+Group	ìˆ˜ë£¡ì„B
 {
 	Leader	Noname	8032
 	Vnum	8032
 }
-Group	¼ö·æ¼®C
+Group	ìˆ˜ë£¡ì„C
 {
 	Leader	Noname	8033
 	Vnum	8033
 }
-Group	¼ö·æ¼®D
+Group	ìˆ˜ë£¡ì„D
 {
 	Leader	Noname	8034
 	Vnum	8034
 }
-Group	°ø¼º¿ë°æºñº´Ã¢Áß
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘ì°½ì¤‘
 {
 	Leader	Noname	11106
 	Vnum	9503
 	1	Noname	11106
 	2	Noname	11106
 }
-Group	°ø¼º¿ë°æºñº´È°Áß
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘í™œì¤‘
 {
 	Leader	Noname	11107
 	Vnum	9504
 	1	Noname	11107
 	2	Noname	11107
 }
-Group	°ø¼º¿ë°æºñº´Ã¢»ó
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘ì°½ìƒ
 {
 	Leader	Noname	11112
 	Vnum	9505
 	1	Noname	11112
 	2	Noname	11112
 }
-Group	°ø¼º¿ë°æºñº´È°»ó
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘í™œìƒ
 {
 	Leader	Noname	11113
 	Vnum	9506
 	1	Noname	11113
 	2	Noname	11113
 }
-Group	°ø¼º¿ë°æºñº´Ã¢Áß
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘ì°½ì¤‘
 {
 	Leader	Noname	11108
 	Vnum	9513
 	1	Noname	11108
 	2	Noname	11108
 }
-Group	°ø¼º¿ë°æºñº´È°Áß
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘í™œì¤‘
 {
 	Leader	Noname	11109
 	Vnum	9514
 	1	Noname	11109
 	2	Noname	11109
 }
-Group	°ø¼º¿ë°æºñº´Ã¢»ó
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘ì°½ìƒ
 {
 	Leader	Noname	11114
 	Vnum	9515
 	1	Noname	11114
 	2	Noname	11114
 }
-Group	°ø¼º¿ë°æºñº´È°»ó
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘í™œìƒ
 {
 	Leader	Noname	11115
 	Vnum	9516
 	1	Noname	11115
 	2	Noname	11115
 }
-Group	°ø¼º¿ë°æºñº´Ã¢Áß
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘ì°½ì¤‘
 {
 	Leader	Noname	11110
 	Vnum	9523
 	1	Noname	11110
 	2	Noname	11110
 }
-Group	°ø¼º¿ë°æºñº´È°Áß
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘í™œì¤‘
 {
 	Leader	Noname	11111
 	Vnum	9524
 	1	Noname	11111
 	2	Noname	11111
 }
-Group	°ø¼º¿ë°æºñº´Ã¢»ó
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘ì°½ìƒ
 {
 	Leader	Noname	11116
 	Vnum	9525
 	1	Noname	11116
 	2	Noname	11116
 }
-Group	°ø¼º¿ë°æºñº´È°»ó
+Group	ê³µì„±ìš©ê²½ë¹„ë³‘í™œìƒ
 {
 	Leader	Noname	11117
 	Vnum	9526
@@ -4128,9 +4128,9 @@ Group	Easter-Metin10_3
 Group	Easter-Metin10_4
 {
 	Vnum	9614
-	Leader	Weißer-EidBogensch?tzin	302
-	1	Weißer-EidBogensch?tzin	302
-	2	Weißer-EidBogensch?tzin	302
+	Leader	WeiÃŸer-EidBogensch?tzin	302
+	1	WeiÃŸer-EidBogensch?tzin	302
+	2	WeiÃŸer-EidBogensch?tzin	302
 }
 Group	Easter-Metin10_5
 {
@@ -4269,9 +4269,9 @@ Group	Easter-Metin50_3
 Group	Easter-Metin50_4
 {
 	Vnum	9654
-	Leader	Tu-GuiweißerKommander	7010
-	1	Tu-GuiweißerKommander	7010
-	2	Tu-GuiweißerKommander	7010
+	Leader	Tu-GuiweiÃŸerKommander	7010
+	1	Tu-GuiweiÃŸerKommander	7010
+	2	Tu-GuiweiÃŸerKommander	7010
 }
 Group	Easter-Metin50_5
 {
@@ -4442,2172 +4442,2172 @@ Group	Easter-Metin95_2
 	1	Setaou-Magistra	2413
 	2	Setaou-Magistra	2413
 }
-Group	¾Æ±Íµ¿±¼1-2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´1-2ì¸µìš©		
 {			
 	Vnum	2501	
-	Leader	¾Æ±Í	2501
-	1	¾Æ±Í	2501
-	2	¾Æ±Í	2501
-	3	¾Æ±Í	2501
+	Leader	ì•„ê·€	2501
+	1	ì•„ê·€	2501
+	2	ì•„ê·€	2501
+	3	ì•„ê·€	2501
 }			
-Group	¾Æ±Íµ¿±¼1-2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´1-2ì¸µìš©		
 {			
 	Vnum	2502	
-	Leader	¾Æ±Í°ß	2502
-	1	¾Æ±Í	2501
-	2	¾Æ±Í	2501
+	Leader	ì•„ê·€ê²¬	2502
+	1	ì•„ê·€	2501
+	2	ì•„ê·€	2501
 }			
 			
-Group	¾Æ±Íµ¿±¼1-2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´1-2ì¸µìš©		
 {			
 	Vnum	2503	
-	Leader	¾Æ±Í°ß	2502
-	1	¾Æ±Í°ß	2502
-	2	¾Æ±Í°ß	2502
-	3	¾Æ±Í°ß	2502
+	Leader	ì•„ê·€ê²¬	2502
+	1	ì•„ê·€ê²¬	2502
+	2	ì•„ê·€ê²¬	2502
+	3	ì•„ê·€ê²¬	2502
 }			
 			
-Group	¾Æ±Íµ¿±¼1-2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´1-2ì¸µìš©		
 {			
 	Vnum	2504	
-	Leader	¾Æ±Í°¨¿°ÀÚ	2503
-	1	¾Æ±Í°ß	2502
-	2	¾Æ±Í°ß	2502
+	Leader	ì•„ê·€ê°ì—¼ì	2503
+	1	ì•„ê·€ê²¬	2502
+	2	ì•„ê·€ê²¬	2502
 }			
 			
-Group	¾Æ±Íµ¿±¼1-2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´1-2ì¸µìš©		
 {			
 	Vnum	2505	
-	Leader	¾Æ±Í°¨¿°ÀÚ	2503
-	1	¾Æ±Í°¨¿°ÀÚ	2503
-	2	¾Æ±Í°¨¿°ÀÚ	2503
-	3	¾Æ±Í°¨¿°ÀÚ	2503
+	Leader	ì•„ê·€ê°ì—¼ì	2503
+	1	ì•„ê·€ê°ì—¼ì	2503
+	2	ì•„ê·€ê°ì—¼ì	2503
+	3	ì•„ê·€ê°ì—¼ì	2503
 }			
 			
-Group	¾Æ±Íµ¿±¼1-2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´1-2ì¸µìš©		
 {			
 	Vnum	2506	
-	Leader	¾Æ±Íµ¹°İº´	2504
-	1	¾Æ±Íµ¹°İº´	2504
-	2	¾Æ±Í°¨¿°ÀÚ	2503
-	3	¾Æ±Í°¨¿°ÀÚ	2503
+	Leader	ì•„ê·€ëŒê²©ë³‘	2504
+	1	ì•„ê·€ëŒê²©ë³‘	2504
+	2	ì•„ê·€ê°ì—¼ì	2503
+	3	ì•„ê·€ê°ì—¼ì	2503
 }			
 			
-Group	¾Æ±Íµ¿±¼1-2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´1-2ì¸µìš©		
 {			
 	Vnum	2506	
-	Leader	¾Æ±Íµ¹°İº´	2504
-	1	¾Æ±Íµ¹°İº´	2504
-	2	¾Æ±Íµ¹°İº´	2504
-	3	¾Æ±Íµ¹°İº´	2504
+	Leader	ì•„ê·€ëŒê²©ë³‘	2504
+	1	ì•„ê·€ëŒê²©ë³‘	2504
+	2	ì•„ê·€ëŒê²©ë³‘	2504
+	3	ì•„ê·€ëŒê²©ë³‘	2504
 }			
 			
-Group	¾Æ±Íµ¿±¼1-2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´1-2ì¸µìš©		
 {			
 	Vnum	2507	
-	Leader	¾Æ±Í°¨¿°Ã¢º´	2505
-	1	¾Æ±Íµ¹°İº´	2504
-	2	¾Æ±Íµ¹°İº´	2504
-	3	¾Æ±Íµ¹°İº´	2504
+	Leader	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
+	1	ì•„ê·€ëŒê²©ë³‘	2504
+	2	ì•„ê·€ëŒê²©ë³‘	2504
+	3	ì•„ê·€ëŒê²©ë³‘	2504
 }			
 			
-Group	¾Æ±Íµ¿±¼1-2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´1-2ì¸µìš©		
 {			
 	Vnum	2508	
-	Leader	¾Æ±Í°¨¿°Ã¢º´	2505
-	1	¾Æ±Í°¨¿°Ã¢º´	2505
-	2	¾Æ±Íµ¹°İº´	2504
-	3	¾Æ±Íµ¹°İº´	2504
+	Leader	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
+	1	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
+	2	ì•„ê·€ëŒê²©ë³‘	2504
+	3	ì•„ê·€ëŒê²©ë³‘	2504
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´2ì¸µìš©		
 {			
 	Vnum	2509	
-	Leader	¾Æ±Í°¨¿°Ã¢º´	2505
-	1	¾Æ±Í°¨¿°Ã¢º´	2505
-	2	¾Æ±Í°¨¿°Ã¢º´	2505
-	3	¾Æ±Í°¨¿°Ã¢º´	2505
+	Leader	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
+	1	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
+	2	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
+	3	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´2ì¸µìš©		
 {			
 	Vnum	2510	
-	Leader	¾Æ±Í±Ã¼ö	2506
-	1	¾Æ±Í±Ã¼ö	2506
-	2	¾Æ±Í°¨¿°Ã¢º´	2505
-	3	¾Æ±Í°¨¿°Ã¢º´	2505
+	Leader	ì•„ê·€ê¶ìˆ˜	2506
+	1	ì•„ê·€ê¶ìˆ˜	2506
+	2	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
+	3	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´2ì¸µìš©		
 {			
 	Vnum	2511	
-	Leader	¾Æ±Í±Ã¼ö	2506
-	1	¾Æ±Í±Ã¼ö	2506
-	2	¾Æ±Í±Ã¼ö	2506
-	3	¾Æ±Í±Ã¼ö	2506
+	Leader	ì•„ê·€ê¶ìˆ˜	2506
+	1	ì•„ê·€ê¶ìˆ˜	2506
+	2	ì•„ê·€ê¶ìˆ˜	2506
+	3	ì•„ê·€ê¶ìˆ˜	2506
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş¿ë		
+Group	ì•„ê·€ë™êµ´2ì¸µìš©		
 {			
 	Vnum	2512	
-	Leader	¾Æ±Í°¨¿°´ëÀå	2507
-	1	¾Æ±Í±Ã¼ö	2506
-	2	¾Æ±Í±Ã¼ö	2506
-	3	¾Æ±Í°¨¿°Ã¢º´	2505
-	4	¾Æ±Í°¨¿°Ã¢º´	2505
-	5	¾Æ±Í°¨¿°Ã¢º´	2505
+	Leader	ì•„ê·€ê°ì—¼ëŒ€ì¥	2507
+	1	ì•„ê·€ê¶ìˆ˜	2506
+	2	ì•„ê·€ê¶ìˆ˜	2506
+	3	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
+	4	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
+	5	ì•„ê·€ê°ì—¼ì°½ë³‘	2505
 }			
 			
-Group	¾Æ±Íµ¿±¼3Ãş¿ë		
+Group	ì•„ê·€ë™êµ´3ì¸µìš©		
 {			
 	Vnum	2513	
-	Leader	¾Æ±Íº´	2508
-	1	¾Æ±Íº´	2508
-	2	¾Æ±Íº´	2508
-	3	¾Æ±Íº´	2508
-	4	¾Æ±Íº´	2508
+	Leader	ì•„ê·€ë³‘	2508
+	1	ì•„ê·€ë³‘	2508
+	2	ì•„ê·€ë³‘	2508
+	3	ì•„ê·€ë³‘	2508
+	4	ì•„ê·€ë³‘	2508
 }			
 			
-Group	¾Æ±Íµ¿±¼3Ãş¿ë		
+Group	ì•„ê·€ë™êµ´3ì¸µìš©		
 {			
 	Vnum	2514	
-	Leader	¾Æ±Íº´	2508
-	1	¾Æ±Íº´	2508
-	2	¾Æ±Í±Ãº´	2509
-	3	¾Æ±Í±Ãº´	2509
-	4	¾Æ±Í±Ãº´	2509
+	Leader	ì•„ê·€ë³‘	2508
+	1	ì•„ê·€ë³‘	2508
+	2	ì•„ê·€ê¶ë³‘	2509
+	3	ì•„ê·€ê¶ë³‘	2509
+	4	ì•„ê·€ê¶ë³‘	2509
 }			
 			
-Group	¾Æ±Íµ¿±¼3Ãş¿ë		
+Group	ì•„ê·€ë™êµ´3ì¸µìš©		
 {			
 	Vnum	2515	
-	Leader	¾Æ±Í±Ãº´	2509
-	1	¾Æ±Íº´	2508
-	2	¾Æ±Íº´	2508
-	3	¾Æ±Íº´	2508
-	4	¾Æ±Íº´	2508
+	Leader	ì•„ê·€ê¶ë³‘	2509
+	1	ì•„ê·€ë³‘	2508
+	2	ì•„ê·€ë³‘	2508
+	3	ì•„ê·€ë³‘	2508
+	4	ì•„ê·€ë³‘	2508
 }			
 			
-Group	¾Æ±Íµ¿±¼3Ãş¿ë		
+Group	ì•„ê·€ë™êµ´3ì¸µìš©		
 {			
 	Vnum	2516	
-	Leader	¾Æ±Í±Ãº´	2509
-	1	¾Æ±Í±Ãº´	2509
-	2	¾Æ±Íº´	2508
-	3	¾Æ±Íº´	2508
-	4	¾Æ±Íº´	2508
+	Leader	ì•„ê·€ê¶ë³‘	2509
+	1	ì•„ê·€ê¶ë³‘	2509
+	2	ì•„ê·€ë³‘	2508
+	3	ì•„ê·€ë³‘	2508
+	4	ì•„ê·€ë³‘	2508
 }			
 			
-Group	¾Æ±Íµ¿±¼3Ãş¿ë		
+Group	ì•„ê·€ë™êµ´3ì¸µìš©		
 {			
 	Vnum	2517	
-	Leader	¾Æ±Í±Ãº´	2509
-	1	¾Æ±Í±Ãº´	2509
-	2	¾Æ±Í±Ãº´	2509
-	3	¾Æ±Íº´	2508
-	4	¾Æ±Íº´	2508
+	Leader	ì•„ê·€ê¶ë³‘	2509
+	1	ì•„ê·€ê¶ë³‘	2509
+	2	ì•„ê·€ê¶ë³‘	2509
+	3	ì•„ê·€ë³‘	2508
+	4	ì•„ê·€ë³‘	2508
 }			
 			
-Group	¾Æ±Íµ¿±¼3Ãş¿ë		
+Group	ì•„ê·€ë™êµ´3ì¸µìš©		
 {			
 	Vnum	2518	
-	Leader	¾Æ±ÍÃ¢º´	2510
-	1	¾Æ±Í±Ãº´	2509
-	2	¾Æ±Í±Ãº´	2509
-	3	¾Æ±Íº´	2508
-	4	¾Æ±Íº´	2508
+	Leader	ì•„ê·€ì°½ë³‘	2510
+	1	ì•„ê·€ê¶ë³‘	2509
+	2	ì•„ê·€ê¶ë³‘	2509
+	3	ì•„ê·€ë³‘	2508
+	4	ì•„ê·€ë³‘	2508
 }			
 			
-Group	¾Æ±Íµ¿±¼3Ãş¿ë		
+Group	ì•„ê·€ë™êµ´3ì¸µìš©		
 {			
 	Vnum	2519	
-	Leader	¾Æ±ÍÃ¢º´	2510
-	1	¾Æ±ÍÃ¢º´	2510
-	2	¾Æ±Í±Ãº´	2509
-	3	¾Æ±Í±Ãº´	2509
-	4	¾Æ±Í±Ãº´	2509
+	Leader	ì•„ê·€ì°½ë³‘	2510
+	1	ì•„ê·€ì°½ë³‘	2510
+	2	ì•„ê·€ê¶ë³‘	2509
+	3	ì•„ê·€ê¶ë³‘	2509
+	4	ì•„ê·€ê¶ë³‘	2509
 }			
 			
-Group	¾Æ±Íµ¿±¼4Ãş¿ë		
+Group	ì•„ê·€ë™êµ´4ì¸µìš©		
 {			
 	Vnum	2520	
-	Leader	¾Æ±ÍÁÖ¼ú»ç	2511
-	1	¾Æ±ÍÃ¢º´	2510
-	2	¾Æ±ÍÃ¢º´	2510
-	3	¾Æ±Í±Ãº´	2509
-	4	¾Æ±Í±Ãº´	2509
+	Leader	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	1	ì•„ê·€ì°½ë³‘	2510
+	2	ì•„ê·€ì°½ë³‘	2510
+	3	ì•„ê·€ê¶ë³‘	2509
+	4	ì•„ê·€ê¶ë³‘	2509
 }			
 			
-Group	¾Æ±Íµ¿±¼4-7Ãş¿ë		
+Group	ì•„ê·€ë™êµ´4-7ì¸µìš©		
 {			
 	Vnum	2521	
-	Leader	¾Æ±ÍÁÖ¼ú»ç	2511
-	1	¾Æ±ÍÁÖ¼ú»ç	2511
-	2	¾Æ±ÍÃ¢º´	2510
-	3	¾Æ±ÍÃ¢º´	2510
-	4	¾Æ±ÍÃ¢º´	2510
+	Leader	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	1	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	2	ì•„ê·€ì°½ë³‘	2510
+	3	ì•„ê·€ì°½ë³‘	2510
+	4	ì•„ê·€ì°½ë³‘	2510
 }			
 			
-Group	¾Æ±Íµ¿±¼4-7Ãş¿ë		
+Group	ì•„ê·€ë™êµ´4-7ì¸µìš©		
 {			
 	Vnum	2522	
-	Leader	¾Æ±Í°Ëº´	2512
-	1	¾Æ±Í°Ëº´	2512
-	2	¾Æ±ÍÁÖ¼ú»ç	2511
-	3	¾Æ±ÍÃ¢º´	2510
-	4	¾Æ±ÍÃ¢º´	2510
+	Leader	ì•„ê·€ê²€ë³‘	2512
+	1	ì•„ê·€ê²€ë³‘	2512
+	2	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	3	ì•„ê·€ì°½ë³‘	2510
+	4	ì•„ê·€ì°½ë³‘	2510
 }			
 			
-Group	¾Æ±Íµ¿±¼4-7Ãş¿ë		
+Group	ì•„ê·€ë™êµ´4-7ì¸µìš©		
 {			
 	Vnum	2523	
-	Leader	¾Æ±Í¸¶°Ë»ç	2513
-	1	¾Æ±Í°Ëº´	2512
-	2	¾Æ±Í°Ëº´	2512
-	3	¾Æ±ÍÁÖ¼ú»ç	2511
-	4	¾Æ±ÍÃ¢º´	2510
+	Leader	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	1	ì•„ê·€ê²€ë³‘	2512
+	2	ì•„ê·€ê²€ë³‘	2512
+	3	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	4	ì•„ê·€ì°½ë³‘	2510
 }			
 			
-Group	¾Æ±Íµ¿±¼4-7Ãş¿ë		
+Group	ì•„ê·€ë™êµ´4-7ì¸µìš©		
 {			
 	Vnum	2524	
-	Leader	¾Æ±Í¸¶°Ë»ç	2513
-	1	¾Æ±Í°Ëº´	2512
-	2	¾Æ±Í°Ëº´	2512
-	3	¾Æ±ÍÃ¢º´	2510
-	4	¾Æ±ÍÃ¢º´	2510
+	Leader	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	1	ì•„ê·€ê²€ë³‘	2512
+	2	ì•„ê·€ê²€ë³‘	2512
+	3	ì•„ê·€ì°½ë³‘	2510
+	4	ì•„ê·€ì°½ë³‘	2510
 }			
 			
-Group	¾Æ±Íµ¿±¼4-7Ãş¿ë		
+Group	ì•„ê·€ë™êµ´4-7ì¸µìš©		
 {			
 	Vnum	2525	
-	Leader	¾Æ±Í¸¶°Ë»ç	2513
-	1	¾Æ±Í¸¶°Ë»ç	2513
-	2	¾Æ±Í°Ëº´	2512
-	3	¾Æ±Í°Ëº´	2512
-	4	¾Æ±ÍÃ¢º´	2510
-	5	¾Æ±ÍÃ¢º´	2510
+	Leader	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	1	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	2	ì•„ê·€ê²€ë³‘	2512
+	3	ì•„ê·€ê²€ë³‘	2512
+	4	ì•„ê·€ì°½ë³‘	2510
+	5	ì•„ê·€ì°½ë³‘	2510
 }			
 			
-Group	¾Æ±Íµ¿±¼4-7Ãş¿ë		
+Group	ì•„ê·€ë™êµ´4-7ì¸µìš©		
 {			
 	Vnum	2526	
-	Leader	¾Æ±ÍÀå¼ö	2514
-	1	¾Æ±Í¸¶°Ë»ç	2513
-	2	¾Æ±Í¸¶°Ë»ç	2513
-	3	¾Æ±Í°Ëº´	2512
-	4	¾Æ±Í°Ëº´	2512
-	5	¾Æ±ÍÃ¢º´	2510
+	Leader	ì•„ê·€ì¥ìˆ˜	2514
+	1	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	2	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	3	ì•„ê·€ê²€ë³‘	2512
+	4	ì•„ê·€ê²€ë³‘	2512
+	5	ì•„ê·€ì°½ë³‘	2510
 }			
 			
-Group	¾Æ±Íµ¿±¼4-7Ãş¿ë		
+Group	ì•„ê·€ë™êµ´4-7ì¸µìš©		
 {			
 	Vnum	2527	
-	Leader	¾Æ±ÍÀå¼ö	2514
-	1	¾Æ±Í¸¶°Ë»ç	2513
-	2	¾Æ±Í¸¶°Ë»ç	2513
-	3	¾Æ±ÍÁÖ¼ú»ç	2511
-	4	¾Æ±ÍÁÖ¼ú»ç	2511
-	5	¾Æ±Í°Ëº´	2512
-	6	¾Æ±ÍÃ¢º´	2510
+	Leader	ì•„ê·€ì¥ìˆ˜	2514
+	1	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	2	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	3	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	4	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	5	ì•„ê·€ê²€ë³‘	2512
+	6	ì•„ê·€ì°½ë³‘	2510
 }			
 			
-Group	¾Æ±Íµ¿±¼5Ãş¿ë		
+Group	ì•„ê·€ë™êµ´5ì¸µìš©		
 {			
 	Vnum	2528	
-	Leader	¾Æ±Í¿Õ	2591
-	1	¾Æ±Í¸¶°Ë»ç	2513
-	2	¾Æ±Í¸¶°Ë»ç	2513
-	3	¾Æ±ÍÁÖ¼ú»ç	2511
-	4	¾Æ±Í°Ëº´	2512
-	5	¾Æ±Í°Ëº´	2512
-	6	¾Æ±ÍÃ¢º´	2510
-	7	¾Æ±Í±Ãº´	2509
-	8	¾Æ±Í±Ãº´	2509
+	Leader	ì•„ê·€ì™•	2591
+	1	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	2	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	3	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	4	ì•„ê·€ê²€ë³‘	2512
+	5	ì•„ê·€ê²€ë³‘	2512
+	6	ì•„ê·€ì°½ë³‘	2510
+	7	ì•„ê·€ê¶ë³‘	2509
+	8	ì•„ê·€ê¶ë³‘	2509
 }			
 			
-Group	¾Æ±Íµ¿±¼6Ãş¿ë		
+Group	ì•„ê·€ë™êµ´6ì¸µìš©		
 {			
 	Vnum	2529	
-	Leader	¾Æ°É	2597
-	1	¾Æ±Í¸¶°Ë»ç	2513
-	2	¾Æ±Í¸¶°Ë»ç	2513
-	3	¾Æ±ÍÁÖ¼ú»ç	2511
-	4	¾Æ±Í°Ëº´	2512
-	5	¾Æ±Í°Ëº´	2512
-	6	¾Æ±ÍÃ¢º´	2510
-	7	¾Æ±Í±Ãº´	2509
-	8	¾Æ±Í±Ãº´	2509
+	Leader	ì•„ê±¸	2597
+	1	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	2	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	3	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	4	ì•„ê·€ê²€ë³‘	2512
+	5	ì•„ê·€ê²€ë³‘	2512
+	6	ì•„ê·€ì°½ë³‘	2510
+	7	ì•„ê·€ê¶ë³‘	2509
+	8	ì•„ê·€ê¶ë³‘	2509
 }			
 			
-Group	¾Æ±Íµ¿±¼7Ãş¿ë		
+Group	ì•„ê·€ë™êµ´7ì¸µìš©		
 {			
 	Vnum	2530	
-	Leader	¾Æ±Í´ëÁ¦»ç¸¶ÈÖ	2598
-	1	¾Æ±Í¸¶°Ë»ç	2513
-	2	¾Æ±Í¸¶°Ë»ç	2513
-	3	¾Æ±ÍÁÖ¼ú»ç	2511
-	4	¾Æ±Í°Ëº´	2512
-	5	¾Æ±Í°Ëº´	2512
-	6	¾Æ±ÍÃ¢º´	2510
-	7	¾Æ±Í±Ãº´	2509
-	8	¾Æ±Í±Ãº´	2509
+	Leader	ì•„ê·€ëŒ€ì œì‚¬ë§ˆíœ˜	2598
+	1	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	2	ì•„ê·€ë§ˆê²€ì‚¬	2513
+	3	ì•„ê·€ì£¼ìˆ ì‚¬	2511
+	4	ì•„ê·€ê²€ë³‘	2512
+	5	ì•„ê·€ê²€ë³‘	2512
+	6	ì•„ê·€ì°½ë³‘	2510
+	7	ì•„ê·€ê¶ë³‘	2509
+	8	ì•„ê·€ê¶ë³‘	2509
 }			
 
-Group	¾Æ±Íµ¿±¼2Ãş½Ã±¸¹®		
+Group	ì•„ê·€ë™êµ´2ì¸µì‹œêµ¬ë¬¸		
 {			
 	Vnum	2551	
-	Leader	½Ã±¸¹®	30111
+	Leader	ì‹œêµ¬ë¬¸	30111
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş½Ã±¸¹®		
+Group	ì•„ê·€ë™êµ´2ì¸µì‹œêµ¬ë¬¸		
 {			
 	Vnum	2552	
-	Leader	½Ã±¸¹®	30112
+	Leader	ì‹œêµ¬ë¬¸	30112
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş½Ã±¸¹®		
+Group	ì•„ê·€ë™êµ´2ì¸µì‹œêµ¬ë¬¸		
 {			
 	Vnum	2553	
-	Leader	½Ã±¸¹®	30113
+	Leader	ì‹œêµ¬ë¬¸	30113
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş½Ã±¸¹®		
+Group	ì•„ê·€ë™êµ´2ì¸µì‹œêµ¬ë¬¸		
 {			
 	Vnum	2554	
-	Leader	½Ã±¸¹®	30114
+	Leader	ì‹œêµ¬ë¬¸	30114
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş½Ã±¸¹®		
+Group	ì•„ê·€ë™êµ´2ì¸µì‹œêµ¬ë¬¸		
 {			
 	Vnum	2555	
-	Leader	½Ã±¸¹®	30115
+	Leader	ì‹œêµ¬ë¬¸	30115
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş½Ã±¸¹®		
+Group	ì•„ê·€ë™êµ´2ì¸µì‹œêµ¬ë¬¸		
 {			
 	Vnum	2556	
-	Leader	½Ã±¸¹®	30116
+	Leader	ì‹œêµ¬ë¬¸	30116
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş½Ã±¸¹®		
+Group	ì•„ê·€ë™êµ´2ì¸µì‹œêµ¬ë¬¸		
 {			
 	Vnum	2557	
-	Leader	½Ã±¸¹®	30117
+	Leader	ì‹œêµ¬ë¬¸	30117
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş½Ã±¸¹®		
+Group	ì•„ê·€ë™êµ´2ì¸µì‹œêµ¬ë¬¸		
 {			
 	Vnum	2558	
-	Leader	½Ã±¸¹®	30118
+	Leader	ì‹œêµ¬ë¬¸	30118
 }			
 			
-Group	¾Æ±Íµ¿±¼2Ãş½Ã±¸¹®		
+Group	ì•„ê·€ë™êµ´2ì¸µì‹œêµ¬ë¬¸		
 {			
 	Vnum	2559	
-	Leader	½Ã±¸¹®	30119
+	Leader	ì‹œêµ¬ë¬¸	30119
 }			
-Group	µµ¿°È­Áö»ï°Å¸®1_1		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬1_1		
 {			
 	Vnum	7023	
-	Leader	ÅõÁö¹ü	7073
-	1	ÅõÁö¹üÁ¹°³	7071
-	2	ÅõÁö¹üÁ¹°³	7071
-	3	ÅõÁö¹üÁ¹°³	7071
+	Leader	íˆ¬ì§€ë²”	7073
+	1	íˆ¬ì§€ë²”ì¡¸ê°œ	7071
+	2	íˆ¬ì§€ë²”ì¡¸ê°œ	7071
+	3	íˆ¬ì§€ë²”ì¡¸ê°œ	7071
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®1_2		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬1_2		
 {			
 	Vnum	7024	
-	Leader	È­·É	7072
-	1	ÅõÁö¹üÁ¹°³	7071
-	2	ÅõÁö¹üÁ¹°³	7071
-	3	ÅõÁö¹üÁ¹°³	7071
+	Leader	í™”ë ¹	7072
+	1	íˆ¬ì§€ë²”ì¡¸ê°œ	7071
+	2	íˆ¬ì§€ë²”ì¡¸ê°œ	7071
+	3	íˆ¬ì§€ë²”ì¡¸ê°œ	7071
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®1_3		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬1_3		
 {			
 	Vnum	7025	
-	Leader	Âü¸¶ÀÎ	7074
-	1	ÅõÁö¹ü	7073
-	2	È­·É	7072
+	Leader	ì°¸ë§ˆì¸	7074
+	1	íˆ¬ì§€ë²”	7073
+	2	í™”ë ¹	7072
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®1_4		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬1_4		
 {			
 	Vnum	7026	
-	Leader	ÅÂÈ­¹«ÀÎ	7075
-	1	ÅõÁö¹ü	7073
-	2	ÅõÁö¹ü	7073
-	3	È­·É	7072
+	Leader	íƒœí™”ë¬´ì¸	7075
+	1	íˆ¬ì§€ë²”	7073
+	2	íˆ¬ì§€ë²”	7073
+	3	í™”ë ¹	7072
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®2_1		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬2_1		
 {			
 	Vnum	7027	
-	Leader	ÅõÁö¹ü	7076
-	1	ÅõÁö¹üÁ¹°³	7074
-	2	ÅõÁö¹üÁ¹°³	7074
-	3	ÅõÁö¹üÁ¹°³	7074
+	Leader	íˆ¬ì§€ë²”	7076
+	1	íˆ¬ì§€ë²”ì¡¸ê°œ	7074
+	2	íˆ¬ì§€ë²”ì¡¸ê°œ	7074
+	3	íˆ¬ì§€ë²”ì¡¸ê°œ	7074
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®2_2		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬2_2		
 {			
 	Vnum	7028	
-	Leader	È­·É	7077
-	1	ÅõÁö¹üÁ¹°³	7076
-	2	ÅõÁö¹üÁ¹°³	7076
-	3	ÅõÁö¹üÁ¹°³	7076
+	Leader	í™”ë ¹	7077
+	1	íˆ¬ì§€ë²”ì¡¸ê°œ	7076
+	2	íˆ¬ì§€ë²”ì¡¸ê°œ	7076
+	3	íˆ¬ì§€ë²”ì¡¸ê°œ	7076
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®2_3		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬2_3		
 {			
 	Vnum	7029	
-	Leader	Âü¸¶ÀÎ	7079
-	1	ÅõÁö¹ü	7078
-	2	È­·É	7077
+	Leader	ì°¸ë§ˆì¸	7079
+	1	íˆ¬ì§€ë²”	7078
+	2	í™”ë ¹	7077
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®2_4		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬2_4		
 {			
 	Vnum	7030	
-	Leader	ÅÂÈ­¹«ÀÎ	7080
-	1	ÅõÁö¹ü	7078
-	2	ÅõÁö¹ü	7078
-	3	È­·É	7077
+	Leader	íƒœí™”ë¬´ì¸	7080
+	1	íˆ¬ì§€ë²”	7078
+	2	íˆ¬ì§€ë²”	7078
+	3	í™”ë ¹	7077
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®3_1		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬3_1		
 {			
 	Vnum	7031	
-	Leader	ÅõÁö¹ü	7083
-	1	ÅõÁö¹üÁ¹°³	7081
-	2	ÅõÁö¹üÁ¹°³	7081
-	3	ÅõÁö¹üÁ¹°³	7081
+	Leader	íˆ¬ì§€ë²”	7083
+	1	íˆ¬ì§€ë²”ì¡¸ê°œ	7081
+	2	íˆ¬ì§€ë²”ì¡¸ê°œ	7081
+	3	íˆ¬ì§€ë²”ì¡¸ê°œ	7081
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®3_2		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬3_2		
 {			
 	Vnum	7032	
-	Leader	È­·É	7082
-	1	ÅõÁö¹üÁ¹°³	7081
-	2	ÅõÁö¹üÁ¹°³	7081
-	3	ÅõÁö¹üÁ¹°³	7081
+	Leader	í™”ë ¹	7082
+	1	íˆ¬ì§€ë²”ì¡¸ê°œ	7081
+	2	íˆ¬ì§€ë²”ì¡¸ê°œ	7081
+	3	íˆ¬ì§€ë²”ì¡¸ê°œ	7081
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®3_3		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬3_3		
 {			
 	Vnum	7033	
-	Leader	Âü¸¶ÀÎ	7084
-	1	ÅõÁö¹ü	7083
-	2	È­·É	7082
+	Leader	ì°¸ë§ˆì¸	7084
+	1	íˆ¬ì§€ë²”	7083
+	2	í™”ë ¹	7082
 }			
 			
-Group	µµ¿°È­Áö»ï°Å¸®3_4		
+Group	ë„ì—¼í™”ì§€ì‚¼ê±°ë¦¬3_4		
 {			
 	Vnum	7034	
-	Leader	ÅÂÈ­¹«ÀÎ	7085
-	1	ÅõÁö¹ü	7083
-	2	ÅõÁö¹ü	7083
-	3	È­·É	7082
+	Leader	íƒœí™”ë¬´ì¸	7085
+	1	íˆ¬ì§€ë²”	7083
+	2	íˆ¬ì§€ë²”	7083
+	3	í™”ë ¹	7082
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®1_1		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬1_1		
 {			
 	Vnum	7035	
-	Leader	´ë¿ÕÀü°¥	7051
-	1	´ë¿ÕÀü°¥	7051
-	2	ºñ¸¶±Í¾È	7050
-	3	ºñ¸¶±Í¾È	7050
+	Leader	ëŒ€ì™•ì „ê°ˆ	7051
+	1	ëŒ€ì™•ì „ê°ˆ	7051
+	2	ë¹„ë§ˆê·€ì•ˆ	7050
+	3	ë¹„ë§ˆê·€ì•ˆ	7050
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®1_2		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬1_2		
 {			
 	Vnum	7036	
-	Leader	¹İÀÎ¹İ»ç°Ëº´	7054
-	1	¹İÀÎ¹İ»ç°Ëº´	7054
-	2	Àü°¥ÀÎ°£	7052
-	3	Àü°¥ÀÎ°£	7052
+	Leader	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7054
+	1	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7054
+	2	ì „ê°ˆì¸ê°„	7052
+	3	ì „ê°ˆì¸ê°„	7052
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®1_3		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬1_3		
 {			
 	Vnum	7037	
-	Leader	»ç¸·ÀÇ¹«¹ıÀÚ	7056
-	1	»ç¸·ÀÇ¹«¹ıÀÚ	7056
-	2	¹İÀÎ¹İ»ç°Ëº´	7054
-	3	¹İÀÎ¹İ»ç°Ëº´	7054
+	Leader	ì‚¬ë§‰ì˜ë¬´ë²•ì	7056
+	1	ì‚¬ë§‰ì˜ë¬´ë²•ì	7056
+	2	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7054
+	3	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7054
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®1_4		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬1_4		
 {			
 	Vnum	7038	
-	Leader	»ç¸·ÀÇ¹«¹ıÀÚ	7056
-	1	»ç¸·ÀÇ¹«¹ıÀÚ	7056
-	2	¹İÀÎ¹İ»ç±Ãº´	7055
-	3	¹İÀÎ¹İ»ç±Ãº´	7055
+	Leader	ì‚¬ë§‰ì˜ë¬´ë²•ì	7056
+	1	ì‚¬ë§‰ì˜ë¬´ë²•ì	7056
+	2	ë°˜ì¸ë°˜ì‚¬ê¶ë³‘	7055
+	3	ë°˜ì¸ë°˜ì‚¬ê¶ë³‘	7055
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®2_1		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬2_1		
 {			
 	Vnum	7039	
-	Leader	´ë¿ÕÀü°¥	7058
-	1	´ë¿ÕÀü°¥	7058
-	2	ºñ¸¶±Í¾È	7057
-	3	ºñ¸¶±Í¾È	7057
+	Leader	ëŒ€ì™•ì „ê°ˆ	7058
+	1	ëŒ€ì™•ì „ê°ˆ	7058
+	2	ë¹„ë§ˆê·€ì•ˆ	7057
+	3	ë¹„ë§ˆê·€ì•ˆ	7057
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®2_2		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬2_2		
 {			
 	Vnum	7040	
-	Leader	¹İÀÎ¹İ»ç°Ëº´	7061
-	1	¹İÀÎ¹İ»ç°Ëº´	7061
-	2	Àü°¥ÀÎ°£	7059
-	3	Àü°¥ÀÎ°£	7059
+	Leader	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7061
+	1	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7061
+	2	ì „ê°ˆì¸ê°„	7059
+	3	ì „ê°ˆì¸ê°„	7059
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®2_3		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬2_3		
 {			
 	Vnum	7041	
-	Leader	»ç¸·ÀÇ¹«¹ıÀÚ	7063
-	1	»ç¸·ÀÇ¹«¹ıÀÚ	7063
-	2	¹İÀÎ¹İ»ç°Ëº´	7061
-	3	¹İÀÎ¹İ»ç°Ëº´	7061
+	Leader	ì‚¬ë§‰ì˜ë¬´ë²•ì	7063
+	1	ì‚¬ë§‰ì˜ë¬´ë²•ì	7063
+	2	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7061
+	3	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7061
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®2_4		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬2_4		
 {			
 	Vnum	7042	
-	Leader	»ç¸·ÀÇ¹«¹ıÀÚ	7063
-	1	»ç¸·ÀÇ¹«¹ıÀÚ	7063
-	2	¹İÀÎ¹İ»ç±Ãº´	7062
-	3	¹İÀÎ¹İ»ç±Ãº´	7062
+	Leader	ì‚¬ë§‰ì˜ë¬´ë²•ì	7063
+	1	ì‚¬ë§‰ì˜ë¬´ë²•ì	7063
+	2	ë°˜ì¸ë°˜ì‚¬ê¶ë³‘	7062
+	3	ë°˜ì¸ë°˜ì‚¬ê¶ë³‘	7062
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®3_1		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬3_1		
 {			
 	Vnum	7043	
-	Leader	´ë¿ÕÀü°¥	7065
-	1	´ë¿ÕÀü°¥	7065
-	2	ºñ¸¶±Í¾È	7064
-	3	ºñ¸¶±Í¾È	7064
+	Leader	ëŒ€ì™•ì „ê°ˆ	7065
+	1	ëŒ€ì™•ì „ê°ˆ	7065
+	2	ë¹„ë§ˆê·€ì•ˆ	7064
+	3	ë¹„ë§ˆê·€ì•ˆ	7064
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®3_2		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬3_2		
 {			
 	Vnum	7044	
-	Leader	¹İÀÎ¹İ»ç°Ëº´	7068
-	1	¹İÀÎ¹İ»ç°Ëº´	7068
-	2	Àü°¥ÀÎ°£	7066
-	3	Àü°¥ÀÎ°£	7066
+	Leader	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7068
+	1	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7068
+	2	ì „ê°ˆì¸ê°„	7066
+	3	ì „ê°ˆì¸ê°„	7066
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®3_3		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬3_3		
 {			
 	Vnum	7045	
-	Leader	»ç¸·ÀÇ¹«¹ıÀÚ	7070
-	1	»ç¸·ÀÇ¹«¹ıÀÚ	7070
-	2	¹İÀÎ¹İ»ç°Ëº´	7068
-	3	¹İÀÎ¹İ»ç°Ëº´	7068
+	Leader	ì‚¬ë§‰ì˜ë¬´ë²•ì	7070
+	1	ì‚¬ë§‰ì˜ë¬´ë²•ì	7070
+	2	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7068
+	3	ë°˜ì¸ë°˜ì‚¬ê²€ë³‘	7068
 }			
 			
-Group	¿µºñ»ç¸·»ï°Å¸®3_4		
+Group	ì˜ë¹„ì‚¬ë§‰ì‚¼ê±°ë¦¬3_4		
 {			
 	Vnum	7046	
-	Leader	»ç¸·ÀÇ¹«¹ıÀÚ	7070
-	1	»ç¸·ÀÇ¹«¹ıÀÚ	7070
-	2	¹İÀÎ¹İ»ç±Ãº´	7069
-	3	¹İÀÎ¹İ»ç±Ãº´	7069
+	Leader	ì‚¬ë§‰ì˜ë¬´ë²•ì	7070
+	1	ì‚¬ë§‰ì˜ë¬´ë²•ì	7070
+	2	ë°˜ì¸ë°˜ì‚¬ê¶ë³‘	7069
+	3	ë°˜ì¸ë°˜ì‚¬ê¶ë³‘	7069
 }			
 			
-Group	¼­ÇÑ»ê»ï°Å¸®1_1		
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬1_1		
 {			
 	Vnum	1154	
-	Leader	ºùÃæ	7031
-	1	ºùÃæ	7031
-	2	¾óÀ½»Ô¹ü°í·¡	7030
-	3	¾óÀ½»Ô¹ü°í·¡	7030
+	Leader	ë¹™ì¶©	7031
+	1	ë¹™ì¶©	7031
+	2	ì–¼ìŒë¿”ë²”ê³ ë˜	7030
+	3	ì–¼ìŒë¿”ë²”ê³ ë˜	7030
 }			
 			
-Group	¼­ÇÑ»ê»ï°Å¸®1_2		
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬1_2		
 {			
 	Vnum	1155	
-	Leader	ºùÀÎ	7033
-	1	ºùÀÎ	7033
-	2	¼³±¸	7032
-	3	¼³±¸	7032
+	Leader	ë¹™ì¸	7033
+	1	ë¹™ì¸	7033
+	2	ì„¤êµ¬	7032
+	3	ì„¤êµ¬	7032
 }			
 			
-Group	¼­ÇÑ»ê»ï°Å¸®1_3		
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬1_3		
 {			
 	Vnum	1156	
-	Leader	¾óÀ½°í·½	7035
-	1	¾óÀ½°í·½	7035
-	2	¼³°ÅÀÎ	7034
-	3	¼³°ÅÀÎ	7034
+	Leader	ì–¼ìŒê³ ë ˜	7035
+	1	ì–¼ìŒê³ ë ˜	7035
+	2	ì„¤ê±°ì¸	7034
+	3	ì„¤ê±°ì¸	7034
 }			
 			
-Group	¼­ÇÑ»ê»ï°Å¸®2_1		
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬2_1		
 {			
 	Vnum	1157	
-	Leader	ºùÃæ	7038
-	1	ºùÃæ	7038
-	2	¾óÀ½»Ô¹ü°í·¡	7037
-	3	¾óÀ½»Ô¹ü°í·¡	7037
+	Leader	ë¹™ì¶©	7038
+	1	ë¹™ì¶©	7038
+	2	ì–¼ìŒë¿”ë²”ê³ ë˜	7037
+	3	ì–¼ìŒë¿”ë²”ê³ ë˜	7037
 }			
 			
-Group	¼­ÇÑ»ê»ï°Å¸®2_2		
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬2_2		
 {			
 	Vnum	1158	
-	Leader	ºùÀÎ	7040
-	1	ºùÀÎ	7040
-	2	¼³±¸	7039
-	3	¼³±¸	7039
+	Leader	ë¹™ì¸	7040
+	1	ë¹™ì¸	7040
+	2	ì„¤êµ¬	7039
+	3	ì„¤êµ¬	7039
 }			
 			
-Group	¼­ÇÑ»ê»ï°Å¸®2_3		
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬2_3		
 {			
 	Vnum	1159	
-	Leader	¾óÀ½°í·½	7042
-	1	¾óÀ½°í·½	7042
-	2	¼³°ÅÀÎ	7041
-	3	¼³°ÅÀÎ	7041
+	Leader	ì–¼ìŒê³ ë ˜	7042
+	1	ì–¼ìŒê³ ë ˜	7042
+	2	ì„¤ê±°ì¸	7041
+	3	ì„¤ê±°ì¸	7041
 }			
 			
-Group	¼­ÇÑ»ê»ï°Å¸®3_1		
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬3_1		
 {			
 	Vnum	1160	
-	Leader	ºùÃæ	7045
-	1	ºùÃæ	7045
-	2	¾óÀ½»Ô¹ü°í·¡	7044
-	3	¾óÀ½»Ô¹ü°í·¡	7044
+	Leader	ë¹™ì¶©	7045
+	1	ë¹™ì¶©	7045
+	2	ì–¼ìŒë¿”ë²”ê³ ë˜	7044
+	3	ì–¼ìŒë¿”ë²”ê³ ë˜	7044
 }			
 			
-Group	¼­ÇÑ»ê»ï°Å¸®3_2		
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬3_2		
 {			
 	Vnum	1161	
-	Leader	ºùÀÎ	7047
-	1	ºùÀÎ	7047
-	2	¼³±¸	7046
-	3	¼³±¸	7046
+	Leader	ë¹™ì¸	7047
+	1	ë¹™ì¸	7047
+	2	ì„¤êµ¬	7046
+	3	ì„¤êµ¬	7046
 }			
 			
-Group	¼­ÇÑ»ê»ï°Å¸®3_3		
+Group	ì„œí•œì‚°ì‚¼ê±°ë¦¬3_3		
 {			
 	Vnum	1162	
-	Leader	¾óÀ½°í·½	7049
-	1	¾óÀ½°í·½	7049
-	2	¼³°ÅÀÎ	7048
-	3	¼³°ÅÀÎ	7048
+	Leader	ì–¼ìŒê³ ë ˜	7049
+	1	ì–¼ìŒê³ ë ˜	7049
+	2	ì„¤ê±°ì¸	7048
+	3	ì„¤ê±°ì¸	7048
 }			
 			
-Group	±Í¸ñ»ï°Å¸®1_1		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬1_1		
 {			
 	Vnum	2361	
-	Leader	¹ØµÕ±Í¸ñ	7086
-	1	¹ØµÕ±Í¸ñ	7086
-	2	¹ØµÕ±Í¸ñ	7086
-	3	¹ØµÕ±Í¸ñ	7086
+	Leader	ë°‘ë‘¥ê·€ëª©	7086
+	1	ë°‘ë‘¥ê·€ëª©	7086
+	2	ë°‘ë‘¥ê·€ëª©	7086
+	3	ë°‘ë‘¥ê·€ëª©	7086
 }			
 			
-Group	±Í¸ñ»ï°Å¸®1_2		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬1_2		
 {			
 	Vnum	2362	
-	Leader	¸ñ·É	7087
-	1	¹ØµÕ±Í¸ñ	7086
-	2	¹ØµÕ±Í¸ñ	7086
-	3	¹ØµÕ±Í¸ñ	7086
+	Leader	ëª©ë ¹	7087
+	1	ë°‘ë‘¥ê·€ëª©	7086
+	2	ë°‘ë‘¥ê·€ëª©	7086
+	3	ë°‘ë‘¥ê·€ëª©	7086
 }			
 			
-Group	±Í¸ñ»ï°Å¸®1_3		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬1_3		
 {			
 	Vnum	2363	
-	Leader	¸ñ·É	7087
-	1	¸ñ·É	7087
-	2	¹ØµÕ±Í¸ñ	7086
-	3	¹ØµÕ±Í¸ñ	7086
+	Leader	ëª©ë ¹	7087
+	1	ëª©ë ¹	7087
+	2	ë°‘ë‘¥ê·€ëª©	7086
+	3	ë°‘ë‘¥ê·€ëª©	7086
 }			
 			
-Group	±Í¸ñ»ï°Å¸®1_4		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬1_4		
 {			
 	Vnum	2364	
-	Leader	¸ñ·É	7087
-	1	¸ñ·É	7087
-	2	¸ñ·É	7087
+	Leader	ëª©ë ¹	7087
+	1	ëª©ë ¹	7087
+	2	ëª©ë ¹	7087
 }			
 			
-Group	±Í¸ñ»ï°Å¸®1_5		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬1_5		
 {			
 	Vnum	2365	
-	Leader	È­·ù±Í¸ñ	7088
-	1	¸ñ·É	7087
-	2	¸ñ·É	7087
-	3	¹ØµÕ±Í¸ñ	7086
-	4	¹ØµÕ±Í¸ñ	7086
-	5	¹ØµÕ±Í¸ñ	7086
+	Leader	í™”ë¥˜ê·€ëª©	7088
+	1	ëª©ë ¹	7087
+	2	ëª©ë ¹	7087
+	3	ë°‘ë‘¥ê·€ëª©	7086
+	4	ë°‘ë‘¥ê·€ëª©	7086
+	5	ë°‘ë‘¥ê·€ëª©	7086
 }			
 			
-Group	±Í¸ñ»ï°Å¸®1_6		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬1_6		
 {			
 	Vnum	2366	
-	Leader	È­·ù±Í¸ñ	7088
-	1	È­·ù±Í¸ñ	7088
-	2	¹ØµÕ±Í¸ñ	7086
-	3	¹ØµÕ±Í¸ñ	7086
-	4	¹ØµÕ±Í¸ñ	7086
+	Leader	í™”ë¥˜ê·€ëª©	7088
+	1	í™”ë¥˜ê·€ëª©	7088
+	2	ë°‘ë‘¥ê·€ëª©	7086
+	3	ë°‘ë‘¥ê·€ëª©	7086
+	4	ë°‘ë‘¥ê·€ëª©	7086
 }			
 			
-Group	±Í¸ñ»ï°Å¸®1_7		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬1_7		
 {			
 	Vnum	2367	
-	Leader	È­·ù±Í¸ñ	7088
-	1	È­·ù±Í¸ñ	7088
-	2	¸ñ·É	7087
-	3	¸ñ·É	7087
-	4	¸ñ·É	7087
+	Leader	í™”ë¥˜ê·€ëª©	7088
+	1	í™”ë¥˜ê·€ëª©	7088
+	2	ëª©ë ¹	7087
+	3	ëª©ë ¹	7087
+	4	ëª©ë ¹	7087
 }			
 			
-Group	±Í¸ñ»ï°Å¸®2_1		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬2_1		
 {			
 	Vnum	2368	
-	Leader	¹ØµÕ±Í¸ñ	7090
-	1	¹ØµÕ±Í¸ñ	7090
-	2	¹ØµÕ±Í¸ñ	7090
-	3	¹ØµÕ±Í¸ñ	7090
+	Leader	ë°‘ë‘¥ê·€ëª©	7090
+	1	ë°‘ë‘¥ê·€ëª©	7090
+	2	ë°‘ë‘¥ê·€ëª©	7090
+	3	ë°‘ë‘¥ê·€ëª©	7090
 }			
 			
-Group	±Í¸ñ»ï°Å¸®2_2		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬2_2		
 {			
 	Vnum	2369	
-	Leader	¸ñ·É	7091
-	1	¹ØµÕ±Í¸ñ	7090
-	2	¹ØµÕ±Í¸ñ	7090
-	3	¹ØµÕ±Í¸ñ	7090
+	Leader	ëª©ë ¹	7091
+	1	ë°‘ë‘¥ê·€ëª©	7090
+	2	ë°‘ë‘¥ê·€ëª©	7090
+	3	ë°‘ë‘¥ê·€ëª©	7090
 }			
 			
-Group	±Í¸ñ»ï°Å¸®2_3		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬2_3		
 {			
 	Vnum	2370	
-	Leader	¸ñ·É	7091
-	1	¸ñ·É	7091
-	2	¹ØµÕ±Í¸ñ	7090
-	3	¹ØµÕ±Í¸ñ	7090
+	Leader	ëª©ë ¹	7091
+	1	ëª©ë ¹	7091
+	2	ë°‘ë‘¥ê·€ëª©	7090
+	3	ë°‘ë‘¥ê·€ëª©	7090
 }			
 			
-Group	±Í¸ñ»ï°Å¸®2_4		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬2_4		
 {			
 	Vnum	2371	
-	Leader	¸ñ·É	7091
-	1	¸ñ·É	7091
-	2	¸ñ·É	7091
+	Leader	ëª©ë ¹	7091
+	1	ëª©ë ¹	7091
+	2	ëª©ë ¹	7091
 }			
 			
-Group	±Í¸ñ»ï°Å¸®2_5		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬2_5		
 {			
 	Vnum	2372	
-	Leader	È­·ù±Í¸ñ	7092
-	1	¸ñ·É	7091
-	2	¸ñ·É	7091
-	3	¹ØµÕ±Í¸ñ	7090
-	4	¹ØµÕ±Í¸ñ	7090
-	5	¹ØµÕ±Í¸ñ	7090
+	Leader	í™”ë¥˜ê·€ëª©	7092
+	1	ëª©ë ¹	7091
+	2	ëª©ë ¹	7091
+	3	ë°‘ë‘¥ê·€ëª©	7090
+	4	ë°‘ë‘¥ê·€ëª©	7090
+	5	ë°‘ë‘¥ê·€ëª©	7090
 }			
 			
-Group	±Í¸ñ»ï°Å¸®2_6		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬2_6		
 {			
 	Vnum	2373	
-	Leader	È­·ù±Í¸ñ	7092
-	1	È­·ù±Í¸ñ	7092
-	2	¹ØµÕ±Í¸ñ	7090
-	3	¹ØµÕ±Í¸ñ	7090
-	4	¹ØµÕ±Í¸ñ	7090
+	Leader	í™”ë¥˜ê·€ëª©	7092
+	1	í™”ë¥˜ê·€ëª©	7092
+	2	ë°‘ë‘¥ê·€ëª©	7090
+	3	ë°‘ë‘¥ê·€ëª©	7090
+	4	ë°‘ë‘¥ê·€ëª©	7090
 }			
 			
-Group	±Í¸ñ»ï°Å¸®2_7		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬2_7		
 {			
 	Vnum	2374	
-	Leader	È­·ù±Í¸ñ	7092
-	1	È­·ù±Í¸ñ	7092
-	2	¸ñ·É	7091
-	3	¸ñ·É	7091
-	4	¸ñ·É	7091
+	Leader	í™”ë¥˜ê·€ëª©	7092
+	1	í™”ë¥˜ê·€ëª©	7092
+	2	ëª©ë ¹	7091
+	3	ëª©ë ¹	7091
+	4	ëª©ë ¹	7091
 }			
 			
-Group	±Í¸ñ»ï°Å¸®3_1		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬3_1		
 {			
 	Vnum	2375	
-	Leader	¹ØµÕ±Í¸ñ	7094
-	1	¹ØµÕ±Í¸ñ	7094
-	2	¹ØµÕ±Í¸ñ	7094
-	3	¹ØµÕ±Í¸ñ	7094
+	Leader	ë°‘ë‘¥ê·€ëª©	7094
+	1	ë°‘ë‘¥ê·€ëª©	7094
+	2	ë°‘ë‘¥ê·€ëª©	7094
+	3	ë°‘ë‘¥ê·€ëª©	7094
 }			
 			
-Group	±Í¸ñ»ï°Å¸®3_2		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬3_2		
 {			
 	Vnum	2376	
-	Leader	¸ñ·É	7095
-	1	¹ØµÕ±Í¸ñ	7094
-	2	¹ØµÕ±Í¸ñ	7094
-	3	¹ØµÕ±Í¸ñ	7094
+	Leader	ëª©ë ¹	7095
+	1	ë°‘ë‘¥ê·€ëª©	7094
+	2	ë°‘ë‘¥ê·€ëª©	7094
+	3	ë°‘ë‘¥ê·€ëª©	7094
 }			
 			
-Group	±Í¸ñ»ï°Å¸®3_3		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬3_3		
 {			
 	Vnum	2377	
-	Leader	¸ñ·É	7095
-	1	¸ñ·É	7095
-	2	¹ØµÕ±Í¸ñ	7094
-	3	¹ØµÕ±Í¸ñ	7094
+	Leader	ëª©ë ¹	7095
+	1	ëª©ë ¹	7095
+	2	ë°‘ë‘¥ê·€ëª©	7094
+	3	ë°‘ë‘¥ê·€ëª©	7094
 }			
 			
-Group	±Í¸ñ»ï°Å¸®3_4		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬3_4		
 {			
 	Vnum	2378	
-	Leader	¸ñ·É	7095
-	1	¸ñ·É	7095
-	2	¸ñ·É	7095
+	Leader	ëª©ë ¹	7095
+	1	ëª©ë ¹	7095
+	2	ëª©ë ¹	7095
 }			
 			
-Group	±Í¸ñ»ï°Å¸®3_5		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬3_5		
 {			
 	Vnum	2379	
-	Leader	È­·ù±Í¸ñ	7096
-	1	¸ñ·É	7095
-	2	¸ñ·É	7095
-	3	¹ØµÕ±Í¸ñ	7094
-	4	¹ØµÕ±Í¸ñ	7094
-	5	¹ØµÕ±Í¸ñ	7094
+	Leader	í™”ë¥˜ê·€ëª©	7096
+	1	ëª©ë ¹	7095
+	2	ëª©ë ¹	7095
+	3	ë°‘ë‘¥ê·€ëª©	7094
+	4	ë°‘ë‘¥ê·€ëª©	7094
+	5	ë°‘ë‘¥ê·€ëª©	7094
 }			
 			
-Group	±Í¸ñ»ï°Å¸®3_6		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬3_6		
 {			
 	Vnum	2380	
-	Leader	È­·ù±Í¸ñ	7096
-	1	È­·ù±Í¸ñ	7096
-	2	¹ØµÕ±Í¸ñ	7094
-	3	¹ØµÕ±Í¸ñ	7094
-	4	¹ØµÕ±Í¸ñ	7094
+	Leader	í™”ë¥˜ê·€ëª©	7096
+	1	í™”ë¥˜ê·€ëª©	7096
+	2	ë°‘ë‘¥ê·€ëª©	7094
+	3	ë°‘ë‘¥ê·€ëª©	7094
+	4	ë°‘ë‘¥ê·€ëª©	7094
 }			
 			
-Group	±Í¸ñ»ï°Å¸®3_7		
+Group	ê·€ëª©ì‚¼ê±°ë¦¬3_7		
 {			
 	Vnum	2381	
-	Leader	È­·ù±Í¸ñ	7096
-	1	È­·ù±Í¸ñ	7096
-	2	¸ñ·É	7095
-	3	¸ñ·É	7095
-	4	¸ñ·É	7095
+	Leader	í™”ë¥˜ê·€ëª©	7096
+	1	í™”ë¥˜ê·€ëª©	7096
+	2	ëª©ë ¹	7095
+	3	ëª©ë ¹	7095
+	4	ëª©ë ¹	7095
 }			
-Group	°Å¹Ìµ¿±¼3Ãş_»õ³¢°Å¹Ì(PAWN)-»õ³¢°Å¹Ì(PAWN)		
+Group	ê±°ë¯¸ë™êµ´3ì¸µ_ìƒˆë¼ê±°ë¯¸(PAWN)-ìƒˆë¼ê±°ë¯¸(PAWN)		
 {			
 	Vnum	2071	
-	Leader	»õ³¢°Å¹Ì	2071
-	1	»õ³¢°Å¹Ì	2071
-	2	»õ³¢°Å¹Ì	2071
+	Leader	ìƒˆë¼ê±°ë¯¸	2071
+	1	ìƒˆë¼ê±°ë¯¸	2071
+	2	ìƒˆë¼ê±°ë¯¸	2071
 }			
 			
-Group	°Å¹Ìµ¿±¼3Ãş_µ¶°Å¹Ì(PAWN)-»õ³¢°Å¹Ì(PAWN)		
+Group	ê±°ë¯¸ë™êµ´3ì¸µ_ë…ê±°ë¯¸(PAWN)-ìƒˆë¼ê±°ë¯¸(PAWN)		
 {			
 	Vnum	2072	
-	Leader	µ¶°Å¹Ì	2072
-	1	»õ³¢°Å¹Ì	2071
-	2	»õ³¢°Å¹Ì	2071
+	Leader	ë…ê±°ë¯¸	2072
+	1	ìƒˆë¼ê±°ë¯¸	2071
+	2	ìƒˆë¼ê±°ë¯¸	2071
 }			
 			
-Group	°Å¹Ìµ¿±¼3Ãş_µ¶°Å¹Ì(PAWN)-µ¶°Å¹Ì(PAWN)		
+Group	ê±°ë¯¸ë™êµ´3ì¸µ_ë…ê±°ë¯¸(PAWN)-ë…ê±°ë¯¸(PAWN)		
 {			
 	Vnum	2073	
-	Leader	µ¶°Å¹Ì	2072
-	1	µ¶°Å¹Ì	2072
-	2	»õ³¢°Å¹Ì	2071
+	Leader	ë…ê±°ë¯¸	2072
+	1	ë…ê±°ë¯¸	2072
+	2	ìƒˆë¼ê±°ë¯¸	2071
 }			
 			
-Group	°Å¹Ìµ¿±¼3Ãş_ºÓÀºµ¶°Å¹Ì(S_PAWN)-µ¶°Å¹Ì(PAWN)		
+Group	ê±°ë¯¸ë™êµ´3ì¸µ_ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)-ë…ê±°ë¯¸(PAWN)		
 {			
 	Vnum	2074	
-	Leader	ºÓÀºµ¶°Å¹Ì	2073
-	1	µ¶°Å¹Ì	2072
-	2	µ¶°Å¹Ì	2072
+	Leader	ë¶‰ì€ë…ê±°ë¯¸	2073
+	1	ë…ê±°ë¯¸	2072
+	2	ë…ê±°ë¯¸	2072
 }			
 			
-Group	°Å¹Ìµ¿±¼3Ãş_ºÓÀºµ¶°Å¹Ì(S_PAWN)-ºÓÀºµ¶°Å¹Ì(S_PAWN)		
+Group	ê±°ë¯¸ë™êµ´3ì¸µ_ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)-ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)		
 {			
 	Vnum	2075	
-	Leader	ºÓÀºµ¶°Å¹Ì	2073
-	1	ºÓÀºµ¶°Å¹Ì	2073
-	2	µ¶°Å¹Ì	2072
+	Leader	ë¶‰ì€ë…ê±°ë¯¸	2073
+	1	ë¶‰ì€ë…ê±°ë¯¸	2073
+	2	ë…ê±°ë¯¸	2072
 }			
 			
-Group	°Å¹Ìµ¿±¼3Ãş_Áı°Ô°Å¹Ì(S_PAWN)-ºÓÀºµ¶°Å¹Ì(S_PAWN)		
+Group	ê±°ë¯¸ë™êµ´3ì¸µ_ì§‘ê²Œê±°ë¯¸(S_PAWN)-ë¶‰ì€ë…ê±°ë¯¸(S_PAWN)		
 {			
 	Vnum	2076	
-	Leader	Áı°Ô°Å¹Ì	2074
-	1	ºÓÀºµ¶°Å¹Ì	2073
-	2	ºÓÀºµ¶°Å¹Ì	2073
+	Leader	ì§‘ê²Œê±°ë¯¸	2074
+	1	ë¶‰ì€ë…ê±°ë¯¸	2073
+	2	ë¶‰ì€ë…ê±°ë¯¸	2073
 }			
 			
-Group	°Å¹Ìµ¿±¼3Ãş_Áı°Ô°Å¹Ì(S_PAWN)-Áı°Ô°Å¹Ì(S_PAWN)		
+Group	ê±°ë¯¸ë™êµ´3ì¸µ_ì§‘ê²Œê±°ë¯¸(S_PAWN)-ì§‘ê²Œê±°ë¯¸(S_PAWN)		
 {			
 	Vnum	2077	
-	Leader	Áı°Ô°Å¹Ì	2074
-	1	Áı°Ô°Å¹Ì	2074
-	2	ºÓÀºµ¶°Å¹Ì	2073
+	Leader	ì§‘ê²Œê±°ë¯¸	2074
+	1	ì§‘ê²Œê±°ë¯¸	2074
+	2	ë¶‰ì€ë…ê±°ë¯¸	2073
 }			
 			
-Group	°Å¹Ìµ¿±¼3Ãş_º´Á¤°Å¹Ì(S_PAWN)-Áı°Ô°Å¹Ì(S_PAWN)		
+Group	ê±°ë¯¸ë™êµ´3ì¸µ_ë³‘ì •ê±°ë¯¸(S_PAWN)-ì§‘ê²Œê±°ë¯¸(S_PAWN)		
 {			
 	Vnum	2078	
-	Leader	º´Á¤°Å¹Ì	2075
-	1	Áı°Ô°Å¹Ì	2074
-	2	Áı°Ô°Å¹Ì	2074
+	Leader	ë³‘ì •ê±°ë¯¸	2075
+	1	ì§‘ê²Œê±°ë¯¸	2074
+	2	ì§‘ê²Œê±°ë¯¸	2074
 }			
 			
-Group	°Å¹Ìµ¿±¼3Ãş_º´Á¤°Å¹Ì(S_PAWN)-º´Á¤°Å¹Ì(S_PAWN)		
+Group	ê±°ë¯¸ë™êµ´3ì¸µ_ë³‘ì •ê±°ë¯¸(S_PAWN)-ë³‘ì •ê±°ë¯¸(S_PAWN)		
 {			
 	Vnum	2079	
-	Leader	º´Á¤°Å¹Ì	2075
-	1	º´Á¤°Å¹Ì	2075
-	2	Áı°Ô°Å¹Ì	2074
+	Leader	ë³‘ì •ê±°ë¯¸	2075
+	1	ë³‘ì •ê±°ë¯¸	2075
+	2	ì§‘ê²Œê±°ë¯¸	2074
 }
 
-Group	¾Ç·æ±ºµµ_3001_³¶ÀÎÁ·Á¹°³		
+Group	ì•…ë£¡êµ°ë„_3001_ë‚­ì¸ì¡±ì¡¸ê°œ		
 {			
 	Vnum	3001	
-	Leader	³¶ÀÎÁ·Á¹°³	3001
-	1	³¶ÀÎÁ·Á¹°³	3001
-	2	³¶ÀÎÁ·Á¹°³	3001
+	Leader	ë‚­ì¸ì¡±ì¡¸ê°œ	3001
+	1	ë‚­ì¸ì¡±ì¡¸ê°œ	3001
+	2	ë‚­ì¸ì¡±ì¡¸ê°œ	3001
 }			
 			
-Group	¾Ç·æ±ºµµ_3002_³¶ÀÎÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3002_ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3002	
-	Leader	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	1	³¶ÀÎÁ·Á¹°³	3001
-	2	³¶ÀÎÁ·Á¹°³	3001
+	Leader	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	1	ë‚­ì¸ì¡±ì¡¸ê°œ	3001
+	2	ë‚­ì¸ì¡±ì¡¸ê°œ	3001
 }			
 			
-Group	¾Ç·æ±ºµµ_3003_³¶ÀÎÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3003_ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3003	
-	Leader	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	1	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	2	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
+	Leader	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	1	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	2	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
 }			
 			
-Group	¾Ç·æ±ºµµ_3004_³¶ÀÎÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3004_ë‚­ì¸ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3004	
-	Leader	³¶ÀÎÁ·¿ø°Å¸®	3003
-	1	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	2	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
+	Leader	ë‚­ì¸ì¡±ì›ê±°ë¦¬	3003
+	1	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	2	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
 }			
 			
-Group	¾Ç·æ±ºµµ_3005_³¶ÀÎÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3005_ë‚­ì¸ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3005	
-	Leader	³¶ÀÎÁ·¿ø°Å¸®	3003
-	1	³¶ÀÎÁ·¿ø°Å¸®	3003
-	2	³¶ÀÎÁ·¿ø°Å¸®	3003
+	Leader	ë‚­ì¸ì¡±ì›ê±°ë¦¬	3003
+	1	ë‚­ì¸ì¡±ì›ê±°ë¦¬	3003
+	2	ë‚­ì¸ì¡±ì›ê±°ë¦¬	3003
 }			
 			
-Group	¾Ç·æ±ºµµ_3006_³¶ÀÎÁ·Àå±º		
+Group	ì•…ë£¡êµ°ë„_3006_ë‚­ì¸ì¡±ì¥êµ°		
 {			
 	Vnum	3006	
-	Leader	³¶ÀÎÁ·Àå±º	3004
-	1	³¶ÀÎÁ·¿ø°Å¸®	3003
-	2	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	3	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
+	Leader	ë‚­ì¸ì¡±ì¥êµ°	3004
+	1	ë‚­ì¸ì¡±ì›ê±°ë¦¬	3003
+	2	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	3	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
 }			
 			
-Group	¾Ç·æ±ºµµ_3007_³¶ÀÎÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3007_ë‚­ì¸ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3007	
-	Leader	³¶ÀÎÁ·»ó±ŞÀå¼ö	3005
-	1	³¶ÀÎÁ·Àå±º	3004
-	2	³¶ÀÎÁ·Àå±º	3004
-	3	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	4	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
+	Leader	ë‚­ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3005
+	1	ë‚­ì¸ì¡±ì¥êµ°	3004
+	2	ë‚­ì¸ì¡±ì¥êµ°	3004
+	3	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	4	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
 }			
 			
-Group	¾Ç·æ±ºµµ_3008_³¶ÀÎÁ·º¸½º		
+Group	ì•…ë£¡êµ°ë„_3008_ë‚­ì¸ì¡±ë³´ìŠ¤		
 {			
 	Vnum	3008	
-	Leader	³¶ÀÎÁ·º¸½º	3090
-	1	³¶ÀÎÁ·»ó±ŞÀå¼ö	3005
-	2	³¶ÀÎÁ·»ó±ŞÀå¼ö	3005
-	3	³¶ÀÎÁ·Àå±º	3004
-	4	³¶ÀÎÁ·Àå±º	3004
-	5	³¶ÀÎÁ·Àå±º	3004
-	6	³¶ÀÎÁ·¿ø°Å¸®	3003
-	7	³¶ÀÎÁ·¿ø°Å¸®	3003
-	8	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	9	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	10	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	11	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
+	Leader	ë‚­ì¸ì¡±ë³´ìŠ¤	3090
+	1	ë‚­ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3005
+	2	ë‚­ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3005
+	3	ë‚­ì¸ì¡±ì¥êµ°	3004
+	4	ë‚­ì¸ì¡±ì¥êµ°	3004
+	5	ë‚­ì¸ì¡±ì¥êµ°	3004
+	6	ë‚­ì¸ì¡±ì›ê±°ë¦¬	3003
+	7	ë‚­ì¸ì¡±ì›ê±°ë¦¬	3003
+	8	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	9	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	10	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	11	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
 }			
 			
-Group	¾Ç·æ±ºµµ_3009_³¶ÀÎÁ·ÃÖÁ¾º¸½º		
+Group	ì•…ë£¡êµ°ë„_3009_ë‚­ì¸ì¡±ìµœì¢…ë³´ìŠ¤		
 {			
 	Vnum	3009	
-	Leader	³¶ÀÎÁ·ÃÖÁ¾º¸½º	3091
-	1	³¶ÀÎÁ·»ó±ŞÀå¼ö	3005
-	2	³¶ÀÎÁ·»ó±ŞÀå¼ö	3005
-	3	³¶ÀÎÁ·Àå±º	3004
-	4	³¶ÀÎÁ·Àå±º	3004
-	5	³¶ÀÎÁ·Àå±º	3004
-	6	³¶ÀÎÁ·¿ø°Å¸®	3003
-	7	³¶ÀÎÁ·¿ø°Å¸®	3003
-	8	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	9	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	10	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
-	11	³¶ÀÎÁ·»ó±ŞÁ¹°³	3002
+	Leader	ë‚­ì¸ì¡±ìµœì¢…ë³´ìŠ¤	3091
+	1	ë‚­ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3005
+	2	ë‚­ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3005
+	3	ë‚­ì¸ì¡±ì¥êµ°	3004
+	4	ë‚­ì¸ì¡±ì¥êµ°	3004
+	5	ë‚­ì¸ì¡±ì¥êµ°	3004
+	6	ë‚­ì¸ì¡±ì›ê±°ë¦¬	3003
+	7	ë‚­ì¸ì¡±ì›ê±°ë¦¬	3003
+	8	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	9	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	10	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
+	11	ë‚­ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3002
 }			
 			
-Group	¾Ç·æ±ºµµ_3011_¿Ü¾ÈÅõ±ÍÁ·Á¹°³		
+Group	ì•…ë£¡êµ°ë„_3011_ì™¸ì•ˆíˆ¬ê·€ì¡±ì¡¸ê°œ		
 {			
 	Vnum	3011	
-	Leader	¿Ü¾ÈÅõ±ÍÁ·Á¹°³	3101
-	1	¿Ü¾ÈÅõ±ÍÁ·Á¹°³	3101
-	2	¿Ü¾ÈÅõ±ÍÁ·Á¹°³	3101
+	Leader	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¡¸ê°œ	3101
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¡¸ê°œ	3101
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¡¸ê°œ	3101
 }			
 			
-Group	¾Ç·æ±ºµµ_3012_¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3012_ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3012	
-	Leader	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	1	¿Ü¾ÈÅõ±ÍÁ·Á¹°³	3101
-	2	¿Ü¾ÈÅõ±ÍÁ·Á¹°³	3101
+	Leader	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¡¸ê°œ	3101
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¡¸ê°œ	3101
 }			
 			
-Group	¾Ç·æ±ºµµ_3013_¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3013_ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3013	
-	Leader	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	1	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	2	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
+	Leader	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
 }			
 			
-Group	¾Ç·æ±ºµµ_3014_¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3014_ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3014	
-	Leader	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
-	1	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	2	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
+	Leader	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
 }			
 			
-Group	¾Ç·æ±ºµµ_3015_¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3015_ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3015	
-	Leader	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
-	1	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
-	2	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
+	Leader	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
 }			
 			
-Group	¾Ç·æ±ºµµ_3016_¿Ü¾ÈÅõ±ÍÁ·Àå±º		
+Group	ì•…ë£¡êµ°ë„_3016_ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°		
 {			
 	Vnum	3016	
-	Leader	¿Ü¾ÈÅõ±ÍÁ·Àå±º	3104
-	1	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
-	2	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	3	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
+	Leader	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°	3104
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	3	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
 }			
 			
-Group	¾Ç·æ±ºµµ_3017_¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3017_ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3017	
-	Leader	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÀå¼ö	3105
-	1	¿Ü¾ÈÅõ±ÍÁ·Àå±º	3104
-	2	¿Ü¾ÈÅõ±ÍÁ·Àå±º	3104
-	3	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	4	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
+	Leader	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¥ìˆ˜	3105
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°	3104
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°	3104
+	3	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	4	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
 }			
 			
-Group	¾Ç·æ±ºµµ_3018_¿Ü¾ÈÅõ±ÍÁ·º¸½º		
+Group	ì•…ë£¡êµ°ë„_3018_ì™¸ì•ˆíˆ¬ê·€ì¡±ë³´ìŠ¤		
 {			
 	Vnum	3018	
-	Leader	¿Ü¾ÈÅõ±ÍÁ·º¸½º	3190
-	1	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÀå¼ö	3105
-	2	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÀå¼ö	3105
-	3	¿Ü¾ÈÅõ±ÍÁ·Àå±º	3104
-	4	¿Ü¾ÈÅõ±ÍÁ·Àå±º	3104
-	5	¿Ü¾ÈÅõ±ÍÁ·Àå±º	3104
-	6	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
-	7	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
-	8	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	9	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	10	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	11	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
+	Leader	ì™¸ì•ˆíˆ¬ê·€ì¡±ë³´ìŠ¤	3190
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¥ìˆ˜	3105
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¥ìˆ˜	3105
+	3	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°	3104
+	4	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°	3104
+	5	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°	3104
+	6	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
+	7	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
+	8	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	9	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	10	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	11	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
 }			
 			
-Group	¾Ç·æ±ºµµ_3019_¿Ü¾ÈÅõ±ÍÁ·ÃÖÁ¾º¸½º		
+Group	ì•…ë£¡êµ°ë„_3019_ì™¸ì•ˆíˆ¬ê·€ì¡±ìµœì¢…ë³´ìŠ¤		
 {			
 	Vnum	3019	
-	Leader	¿Ü¾ÈÅõ±ÍÁ·ÃÖÁ¾º¸½º	3191
-	1	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÀå¼ö	3105
-	2	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÀå¼ö	3105
-	3	¿Ü¾ÈÅõ±ÍÁ·Àå±º	3104
-	4	¿Ü¾ÈÅõ±ÍÁ·Àå±º	3104
-	5	¿Ü¾ÈÅõ±ÍÁ·Àå±º	3104
-	6	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
-	7	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
-	8	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	9	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	10	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	11	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
+	Leader	ì™¸ì•ˆíˆ¬ê·€ì¡±ìµœì¢…ë³´ìŠ¤	3191
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¥ìˆ˜	3105
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¥ìˆ˜	3105
+	3	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°	3104
+	4	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°	3104
+	5	ì™¸ì•ˆíˆ¬ê·€ì¡±ì¥êµ°	3104
+	6	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
+	7	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
+	8	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	9	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	10	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	11	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
 }			
 			
-Group	¾Ç·æ±ºµµ_3021_¹üÀÍÁ·Á¹°³		
+Group	ì•…ë£¡êµ°ë„_3021_ë²”ìµì¡±ì¡¸ê°œ		
 {			
 	Vnum	3021	
-	Leader	¹üÀÍÁ·Á¹°³	3201
-	1	¹üÀÍÁ·Á¹°³	3201
-	2	¹üÀÍÁ·Á¹°³	3201
+	Leader	ë²”ìµì¡±ì¡¸ê°œ	3201
+	1	ë²”ìµì¡±ì¡¸ê°œ	3201
+	2	ë²”ìµì¡±ì¡¸ê°œ	3201
 }			
 			
-Group	¾Ç·æ±ºµµ_3022_¹üÀÍÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3022_ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3022	
-	Leader	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	1	¹üÀÍÁ·Á¹°³	3201
-	2	¹üÀÍÁ·Á¹°³	3201
+	Leader	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	1	ë²”ìµì¡±ì¡¸ê°œ	3201
+	2	ë²”ìµì¡±ì¡¸ê°œ	3201
 }			
 			
-Group	¾Ç·æ±ºµµ_3023_¹üÀÍÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3023_ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3023	
-	Leader	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	1	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	2	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
+	Leader	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	1	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	2	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
 }			
 			
-Group	¾Ç·æ±ºµµ_3024_¹üÀÍÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3024_ë²”ìµì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3024	
-	Leader	¹üÀÍÁ·¿ø°Å¸®	3203
-	1	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	2	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
+	Leader	ë²”ìµì¡±ì›ê±°ë¦¬	3203
+	1	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	2	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
 }			
 			
-Group	¾Ç·æ±ºµµ_3025_¹üÀÍÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3025_ë²”ìµì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3025	
-	Leader	¹üÀÍÁ·¿ø°Å¸®	3203
-	1	¹üÀÍÁ·¿ø°Å¸®	3203
-	2	¹üÀÍÁ·¿ø°Å¸®	3203
+	Leader	ë²”ìµì¡±ì›ê±°ë¦¬	3203
+	1	ë²”ìµì¡±ì›ê±°ë¦¬	3203
+	2	ë²”ìµì¡±ì›ê±°ë¦¬	3203
 }			
 			
-Group	¾Ç·æ±ºµµ_3026_¹üÀÍÁ·Àå±º		
+Group	ì•…ë£¡êµ°ë„_3026_ë²”ìµì¡±ì¥êµ°		
 {			
 	Vnum	3026	
-	Leader	¹üÀÍÁ·Àå±º	3204
-	1	¹üÀÍÁ·¿ø°Å¸®	3203
-	2	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	3	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
+	Leader	ë²”ìµì¡±ì¥êµ°	3204
+	1	ë²”ìµì¡±ì›ê±°ë¦¬	3203
+	2	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	3	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
 }			
 			
-Group	¾Ç·æ±ºµµ_3027_¹üÀÍÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3027_ë²”ìµì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3027	
-	Leader	¹üÀÍÁ·»ó±ŞÀå¼ö	3205
-	1	¹üÀÍÁ·Àå±º	3204
-	2	¹üÀÍÁ·Àå±º	3204
-	3	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	4	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
+	Leader	ë²”ìµì¡±ìƒê¸‰ì¥ìˆ˜	3205
+	1	ë²”ìµì¡±ì¥êµ°	3204
+	2	ë²”ìµì¡±ì¥êµ°	3204
+	3	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	4	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
 }			
 			
-Group	¾Ç·æ±ºµµ_3028_¹üÀÍÁ·º¸½º		
+Group	ì•…ë£¡êµ°ë„_3028_ë²”ìµì¡±ë³´ìŠ¤		
 {			
 	Vnum	3028	
-	Leader	¹üÀÍÁ·º¸½º	3290
-	1	¹üÀÍÁ·»ó±ŞÀå¼ö	3205
-	2	¹üÀÍÁ·»ó±ŞÀå¼ö	3205
-	3	¹üÀÍÁ·Àå±º	3204
-	4	¹üÀÍÁ·Àå±º	3204
-	5	¹üÀÍÁ·Àå±º	3204
-	6	¹üÀÍÁ·¿ø°Å¸®	3203
-	7	¹üÀÍÁ·¿ø°Å¸®	3203
-	8	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	9	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	10	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	11	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
+	Leader	ë²”ìµì¡±ë³´ìŠ¤	3290
+	1	ë²”ìµì¡±ìƒê¸‰ì¥ìˆ˜	3205
+	2	ë²”ìµì¡±ìƒê¸‰ì¥ìˆ˜	3205
+	3	ë²”ìµì¡±ì¥êµ°	3204
+	4	ë²”ìµì¡±ì¥êµ°	3204
+	5	ë²”ìµì¡±ì¥êµ°	3204
+	6	ë²”ìµì¡±ì›ê±°ë¦¬	3203
+	7	ë²”ìµì¡±ì›ê±°ë¦¬	3203
+	8	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	9	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	10	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	11	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
 }			
 			
-Group	¾Ç·æ±ºµµ_3029_¹üÀÍÁ·ÃÖÁ¾º¸½º		
+Group	ì•…ë£¡êµ°ë„_3029_ë²”ìµì¡±ìµœì¢…ë³´ìŠ¤		
 {			
 	Vnum	3029	
-	Leader	¹üÀÍÁ·ÃÖÁ¾º¸½º	3291
-	1	¹üÀÍÁ·»ó±ŞÀå¼ö	3205
-	2	¹üÀÍÁ·»ó±ŞÀå¼ö	3205
-	3	¹üÀÍÁ·Àå±º	3204
-	4	¹üÀÍÁ·Àå±º	3204
-	5	¹üÀÍÁ·Àå±º	3204
-	6	¹üÀÍÁ·¿ø°Å¸®	3203
-	7	¹üÀÍÁ·¿ø°Å¸®	3203
-	8	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	9	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	10	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
-	11	¹üÀÍÁ·»ó±ŞÁ¹°³	3202
+	Leader	ë²”ìµì¡±ìµœì¢…ë³´ìŠ¤	3291
+	1	ë²”ìµì¡±ìƒê¸‰ì¥ìˆ˜	3205
+	2	ë²”ìµì¡±ìƒê¸‰ì¥ìˆ˜	3205
+	3	ë²”ìµì¡±ì¥êµ°	3204
+	4	ë²”ìµì¡±ì¥êµ°	3204
+	5	ë²”ìµì¡±ì¥êµ°	3204
+	6	ë²”ìµì¡±ì›ê±°ë¦¬	3203
+	7	ë²”ìµì¡±ì›ê±°ë¦¬	3203
+	8	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	9	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	10	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
+	11	ë²”ìµì¡±ìƒê¸‰ì¡¸ê°œ	3202
 }			
 			
-Group	¾Ç·æ±ºµµ_3031_¸Á·®Á·Á¹°³		
+Group	ì•…ë£¡êµ°ë„_3031_ë§ëŸ‰ì¡±ì¡¸ê°œ		
 {			
 	Vnum	3031	
-	Leader	¸Á·®Á·Á¹°³	3301
-	1	¸Á·®Á·Á¹°³	3301
-	2	¸Á·®Á·Á¹°³	3301
+	Leader	ë§ëŸ‰ì¡±ì¡¸ê°œ	3301
+	1	ë§ëŸ‰ì¡±ì¡¸ê°œ	3301
+	2	ë§ëŸ‰ì¡±ì¡¸ê°œ	3301
 }			
 			
-Group	¾Ç·æ±ºµµ_3032_¸Á·®Á·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3032_ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3032	
-	Leader	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	1	¸Á·®Á·Á¹°³	3301
-	2	¸Á·®Á·Á¹°³	3301
+	Leader	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	1	ë§ëŸ‰ì¡±ì¡¸ê°œ	3301
+	2	ë§ëŸ‰ì¡±ì¡¸ê°œ	3301
 }			
 			
-Group	¾Ç·æ±ºµµ_3033_¸Á·®Á·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3033_ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3033	
-	Leader	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	1	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	2	¸Á·®Á·»ó±ŞÁ¹°³	3302
+	Leader	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	1	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	2	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
 }			
 			
-Group	¾Ç·æ±ºµµ_3034_¸Á·®Á·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3034_ë§ëŸ‰ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3034	
-	Leader	¸Á·®Á·¿ø°Å¸®	3303
-	1	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	2	¸Á·®Á·»ó±ŞÁ¹°³	3302
+	Leader	ë§ëŸ‰ì¡±ì›ê±°ë¦¬	3303
+	1	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	2	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
 }			
 			
-Group	¾Ç·æ±ºµµ_3035_¸Á·®Á·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3035_ë§ëŸ‰ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3035	
-	Leader	¸Á·®Á·¿ø°Å¸®	3303
-	1	¸Á·®Á·¿ø°Å¸®	3303
-	2	¸Á·®Á·¿ø°Å¸®	3303
+	Leader	ë§ëŸ‰ì¡±ì›ê±°ë¦¬	3303
+	1	ë§ëŸ‰ì¡±ì›ê±°ë¦¬	3303
+	2	ë§ëŸ‰ì¡±ì›ê±°ë¦¬	3303
 }			
 			
-Group	¾Ç·æ±ºµµ_3036_¸Á·®Á·Àå±º		
+Group	ì•…ë£¡êµ°ë„_3036_ë§ëŸ‰ì¡±ì¥êµ°		
 {			
 	Vnum	3036	
-	Leader	¸Á·®Á·Àå±º	3304
-	1	¸Á·®Á·¿ø°Å¸®	3303
-	2	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	3	¸Á·®Á·»ó±ŞÁ¹°³	3302
+	Leader	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	1	ë§ëŸ‰ì¡±ì›ê±°ë¦¬	3303
+	2	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	3	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
 }			
 			
-Group	¾Ç·æ±ºµµ_3037_¸Á·®Á·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3037_ë§ëŸ‰ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3037	
-	Leader	¸Á·®Á·»ó±ŞÀå¼ö	3305
-	1	¸Á·®Á·Àå±º	3304
-	2	¸Á·®Á·Àå±º	3304
-	3	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	4	¸Á·®Á·»ó±ŞÁ¹°³	3302
+	Leader	ë§ëŸ‰ì¡±ìƒê¸‰ì¥ìˆ˜	3305
+	1	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	2	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	3	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	4	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
 }			
 			
-Group	¾Ç·æ±ºµµ_3038_¸Á·®Á·º¸½º		
+Group	ì•…ë£¡êµ°ë„_3038_ë§ëŸ‰ì¡±ë³´ìŠ¤		
 {			
 	Vnum	3038	
-	Leader	¸Á·®Á·º¸½º	3390
-	1	¸Á·®Á·»ó±ŞÀå¼ö	3305
-	2	¸Á·®Á·»ó±ŞÀå¼ö	3305
-	3	¸Á·®Á·Àå±º	3304
-	4	¸Á·®Á·Àå±º	3304
-	5	¸Á·®Á·Àå±º	3304
-	6	¸Á·®Á·¿ø°Å¸®	3303
-	7	¸Á·®Á·¿ø°Å¸®	3303
-	8	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	9	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	10	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	11	¸Á·®Á·»ó±ŞÁ¹°³	3302
+	Leader	ë§ëŸ‰ì¡±ë³´ìŠ¤	3390
+	1	ë§ëŸ‰ì¡±ìƒê¸‰ì¥ìˆ˜	3305
+	2	ë§ëŸ‰ì¡±ìƒê¸‰ì¥ìˆ˜	3305
+	3	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	4	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	5	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	6	ë§ëŸ‰ì¡±ì›ê±°ë¦¬	3303
+	7	ë§ëŸ‰ì¡±ì›ê±°ë¦¬	3303
+	8	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	9	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	10	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	11	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
 }			
 			
-Group	¾Ç·æ±ºµµ_3039_¸Á·®Á·ÃÖÁ¾º¸½º		
+Group	ì•…ë£¡êµ°ë„_3039_ë§ëŸ‰ì¡±ìµœì¢…ë³´ìŠ¤		
 {			
 	Vnum	3039	
-	Leader	¸Á·®Á·ÃÖÁ¾º¸½º	3391
-	1	¸Á·®Á·»ó±ŞÀå¼ö	3305
-	2	¸Á·®Á·»ó±ŞÀå¼ö	3305
-	3	¸Á·®Á·Àå±º	3304
-	4	¸Á·®Á·Àå±º	3304
-	5	¸Á·®Á·Àå±º	3304
-	6	¸Á·®Á·¿ø°Å¸®	3303
-	7	¸Á·®Á·¿ø°Å¸®	3303
-	8	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	9	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	10	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	11	¸Á·®Á·»ó±ŞÁ¹°³	3302
+	Leader	ë§ëŸ‰ì¡±ìµœì¢…ë³´ìŠ¤	3391
+	1	ë§ëŸ‰ì¡±ìƒê¸‰ì¥ìˆ˜	3305
+	2	ë§ëŸ‰ì¡±ìƒê¸‰ì¥ìˆ˜	3305
+	3	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	4	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	5	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	6	ë§ëŸ‰ì¡±ì›ê±°ë¦¬	3303
+	7	ë§ëŸ‰ì¡±ì›ê±°ë¦¬	3303
+	8	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	9	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	10	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	11	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
 }			
 			
-Group	¾Ç·æ±ºµµ_3041_¾îÀÎÁ·Á¹°³		
+Group	ì•…ë£¡êµ°ë„_3041_ì–´ì¸ì¡±ì¡¸ê°œ		
 {			
 	Vnum	3041	
-	Leader	¾îÀÎÁ·Á¹°³	3401
-	1	¾îÀÎÁ·Á¹°³	3401
-	2	¾îÀÎÁ·Á¹°³	3401
+	Leader	ì–´ì¸ì¡±ì¡¸ê°œ	3401
+	1	ì–´ì¸ì¡±ì¡¸ê°œ	3401
+	2	ì–´ì¸ì¡±ì¡¸ê°œ	3401
 }			
 			
-Group	¾Ç·æ±ºµµ_3042_¾îÀÎÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3042_ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3042	
-	Leader	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	1	¾îÀÎÁ·Á¹°³	3401
-	2	¾îÀÎÁ·Á¹°³	3401
+	Leader	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	1	ì–´ì¸ì¡±ì¡¸ê°œ	3401
+	2	ì–´ì¸ì¡±ì¡¸ê°œ	3401
 }			
 			
-Group	¾Ç·æ±ºµµ_3043_¾îÀÎÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3043_ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3043	
-	Leader	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	1	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	2	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
+	Leader	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	1	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	2	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
 }			
 			
-Group	¾Ç·æ±ºµµ_3044_¾îÀÎÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3044_ì–´ì¸ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3044	
-	Leader	¾îÀÎÁ·¿ø°Å¸®	3403
-	1	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	2	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
+	Leader	ì–´ì¸ì¡±ì›ê±°ë¦¬	3403
+	1	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	2	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
 }			
 			
-Group	¾Ç·æ±ºµµ_3045_¾îÀÎÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3045_ì–´ì¸ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3045	
-	Leader	¾îÀÎÁ·¿ø°Å¸®	3403
-	1	¾îÀÎÁ·¿ø°Å¸®	3403
-	2	¾îÀÎÁ·¿ø°Å¸®	3403
+	Leader	ì–´ì¸ì¡±ì›ê±°ë¦¬	3403
+	1	ì–´ì¸ì¡±ì›ê±°ë¦¬	3403
+	2	ì–´ì¸ì¡±ì›ê±°ë¦¬	3403
 }			
 			
-Group	¾Ç·æ±ºµµ_3046_¾îÀÎÁ·Àå±º		
+Group	ì•…ë£¡êµ°ë„_3046_ì–´ì¸ì¡±ì¥êµ°		
 {			
 	Vnum	3046	
-	Leader	¾îÀÎÁ·Àå±º	3404
-	1	¾îÀÎÁ·¿ø°Å¸®	3403
-	2	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	3	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
+	Leader	ì–´ì¸ì¡±ì¥êµ°	3404
+	1	ì–´ì¸ì¡±ì›ê±°ë¦¬	3403
+	2	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	3	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
 }			
 			
-Group	¾Ç·æ±ºµµ_3047_¾îÀÎÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3047_ì–´ì¸ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3047	
-	Leader	¾îÀÎÁ·»ó±ŞÀå¼ö	3405
-	1	¾îÀÎÁ·Àå±º	3404
-	2	¾îÀÎÁ·Àå±º	3404
-	3	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	4	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
+	Leader	ì–´ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3405
+	1	ì–´ì¸ì¡±ì¥êµ°	3404
+	2	ì–´ì¸ì¡±ì¥êµ°	3404
+	3	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	4	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
 }			
 			
-Group	¾Ç·æ±ºµµ_3048_¾îÀÎÁ·º¸½º		
+Group	ì•…ë£¡êµ°ë„_3048_ì–´ì¸ì¡±ë³´ìŠ¤		
 {			
 	Vnum	3048	
-	Leader	¾îÀÎÁ·º¸½º	3490
-	1	¾îÀÎÁ·»ó±ŞÀå¼ö	3405
-	2	¾îÀÎÁ·»ó±ŞÀå¼ö	3405
-	3	¾îÀÎÁ·Àå±º	3404
-	4	¾îÀÎÁ·Àå±º	3404
-	5	¾îÀÎÁ·Àå±º	3404
-	6	¾îÀÎÁ·¿ø°Å¸®	3403
-	7	¾îÀÎÁ·¿ø°Å¸®	3403
-	8	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	9	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	10	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	11	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
+	Leader	ì–´ì¸ì¡±ë³´ìŠ¤	3490
+	1	ì–´ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3405
+	2	ì–´ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3405
+	3	ì–´ì¸ì¡±ì¥êµ°	3404
+	4	ì–´ì¸ì¡±ì¥êµ°	3404
+	5	ì–´ì¸ì¡±ì¥êµ°	3404
+	6	ì–´ì¸ì¡±ì›ê±°ë¦¬	3403
+	7	ì–´ì¸ì¡±ì›ê±°ë¦¬	3403
+	8	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	9	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	10	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	11	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
 }			
 			
-Group	¾Ç·æ±ºµµ_3049_¾îÀÎÁ·ÃÖÁ¾º¸½º		
+Group	ì•…ë£¡êµ°ë„_3049_ì–´ì¸ì¡±ìµœì¢…ë³´ìŠ¤		
 {			
 	Vnum	3049	
-	Leader	¾îÀÎÁ·ÃÖÁ¾º¸½º	3491
-	1	¾îÀÎÁ·»ó±ŞÀå¼ö	3405
-	2	¾îÀÎÁ·»ó±ŞÀå¼ö	3405
-	3	¾îÀÎÁ·Àå±º	3404
-	4	¾îÀÎÁ·Àå±º	3404
-	5	¾îÀÎÁ·Àå±º	3404
-	6	¾îÀÎÁ·¿ø°Å¸®	3403
-	7	¾îÀÎÁ·¿ø°Å¸®	3403
-	8	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	9	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	10	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
-	11	¾îÀÎÁ·»ó±ŞÁ¹°³	3402
+	Leader	ì–´ì¸ì¡±ìµœì¢…ë³´ìŠ¤	3491
+	1	ì–´ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3405
+	2	ì–´ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3405
+	3	ì–´ì¸ì¡±ì¥êµ°	3404
+	4	ì–´ì¸ì¡±ì¥êµ°	3404
+	5	ì–´ì¸ì¡±ì¥êµ°	3404
+	6	ì–´ì¸ì¡±ì›ê±°ë¦¬	3403
+	7	ì–´ì¸ì¡±ì›ê±°ë¦¬	3403
+	8	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	9	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	10	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
+	11	ì–´ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3402
 }			
 			
-Group	¾Ç·æ±ºµµ_3051_ºÓÀºµµÀû´ÜÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3051_ë¶‰ì€ë„ì ë‹¨ì¡¸ê°œ		
 {			
 	Vnum	3051	
-	Leader	ºÓÀºµµÀû´ÜÁ¹°³	3501
-	1	ºÓÀºµµÀû´ÜÁ¹°³	3501
-	2	ºÓÀºµµÀû´ÜÁ¹°³	3501
+	Leader	ë¶‰ì€ë„ì ë‹¨ì¡¸ê°œ	3501
+	1	ë¶‰ì€ë„ì ë‹¨ì¡¸ê°œ	3501
+	2	ë¶‰ì€ë„ì ë‹¨ì¡¸ê°œ	3501
 }			
 			
-Group	¾Ç·æ±ºµµ_3052_ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3052_ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3052	
-	Leader	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	1	ºÓÀºµµÀû´ÜÁ¹°³	3501
-	2	ºÓÀºµµÀû´ÜÁ¹°³	3501
+	Leader	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	1	ë¶‰ì€ë„ì ë‹¨ì¡¸ê°œ	3501
+	2	ë¶‰ì€ë„ì ë‹¨ì¡¸ê°œ	3501
 }			
 			
-Group	¾Ç·æ±ºµµ_3053_ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3053_ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3053	
-	Leader	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	1	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	2	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
+	Leader	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	1	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	2	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
 }			
 			
-Group	¾Ç·æ±ºµµ_3054_ºÓÀºµµÀû´Ü¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3054_ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬		
 {			
 	Vnum	3054	
-	Leader	ºÓÀºµµÀû´Ü¿ø°Å¸®	3503
-	1	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	2	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
+	Leader	ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬	3503
+	1	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	2	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
 }			
 			
-Group	¾Ç·æ±ºµµ_3055_ºÓÀºµµÀû´Ü¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3055_ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬		
 {			
 	Vnum	3055	
-	Leader	ºÓÀºµµÀû´Ü¿ø°Å¸®	3503
-	1	ºÓÀºµµÀû´Ü¿ø°Å¸®	3503
-	2	ºÓÀºµµÀû´Ü¿ø°Å¸®	3503
+	Leader	ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬	3503
+	1	ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬	3503
+	2	ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬	3503
 }			
 			
-Group	¾Ç·æ±ºµµ_3056_ºÓÀºµµÀû´ÜÀå±º		
+Group	ì•…ë£¡êµ°ë„_3056_ë¶‰ì€ë„ì ë‹¨ì¥êµ°		
 {			
 	Vnum	3056	
-	Leader	ºÓÀºµµÀû´ÜÀå±º	3504
-	1	ºÓÀºµµÀû´Ü¿ø°Å¸®	3503
-	2	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	3	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
+	Leader	ë¶‰ì€ë„ì ë‹¨ì¥êµ°	3504
+	1	ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬	3503
+	2	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	3	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
 }			
 			
-Group	¾Ç·æ±ºµµ_3057_ºÓÀºµµÀû´Ü»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3057_ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3057	
-	Leader	ºÓÀºµµÀû´Ü»ó±ŞÀå¼ö	3505
-	1	ºÓÀºµµÀû´ÜÀå±º	3504
-	2	ºÓÀºµµÀû´ÜÀå±º	3504
-	3	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	4	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
+	Leader	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¥ìˆ˜	3505
+	1	ë¶‰ì€ë„ì ë‹¨ì¥êµ°	3504
+	2	ë¶‰ì€ë„ì ë‹¨ì¥êµ°	3504
+	3	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	4	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
 }			
 			
-Group	¾Ç·æ±ºµµ_3058_ºÓÀºµµÀû´Üº¸½º		
+Group	ì•…ë£¡êµ°ë„_3058_ë¶‰ì€ë„ì ë‹¨ë³´ìŠ¤		
 {			
 	Vnum	3058	
-	Leader	ºÓÀºµµÀû´Üº¸½º	3590
-	1	ºÓÀºµµÀû´Ü»ó±ŞÀå¼ö	3505
-	2	ºÓÀºµµÀû´Ü»ó±ŞÀå¼ö	3505
-	3	ºÓÀºµµÀû´ÜÀå±º	3504
-	4	ºÓÀºµµÀû´ÜÀå±º	3504
-	5	ºÓÀºµµÀû´ÜÀå±º	3504
-	6	ºÓÀºµµÀû´Ü¿ø°Å¸®	3503
-	7	ºÓÀºµµÀû´Ü¿ø°Å¸®	3503
-	8	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	9	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	10	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	11	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
+	Leader	ë¶‰ì€ë„ì ë‹¨ë³´ìŠ¤	3590
+	1	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¥ìˆ˜	3505
+	2	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¥ìˆ˜	3505
+	3	ë¶‰ì€ë„ì ë‹¨ì¥êµ°	3504
+	4	ë¶‰ì€ë„ì ë‹¨ì¥êµ°	3504
+	5	ë¶‰ì€ë„ì ë‹¨ì¥êµ°	3504
+	6	ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬	3503
+	7	ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬	3503
+	8	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	9	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	10	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	11	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
 }			
 			
-Group	¾Ç·æ±ºµµ_3059_ºÓÀºµµÀû´ÜÃÖÁ¾º¸½º		
+Group	ì•…ë£¡êµ°ë„_3059_ë¶‰ì€ë„ì ë‹¨ìµœì¢…ë³´ìŠ¤		
 {			
 	Vnum	3059	
-	Leader	ºÓÀºµµÀû´ÜÃÖÁ¾º¸½º	3591
-	1	ºÓÀºµµÀû´Ü»ó±ŞÀå¼ö	3505
-	2	ºÓÀºµµÀû´Ü»ó±ŞÀå¼ö	3505
-	3	ºÓÀºµµÀû´ÜÀå±º	3504
-	4	ºÓÀºµµÀû´ÜÀå±º	3504
-	5	ºÓÀºµµÀû´ÜÀå±º	3504
-	6	ºÓÀºµµÀû´Ü¿ø°Å¸®	3503
-	7	ºÓÀºµµÀû´Ü¿ø°Å¸®	3503
-	8	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	9	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	10	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
-	11	ºÓÀºµµÀû´Ü»ó±ŞÁ¹°³	3502
+	Leader	ë¶‰ì€ë„ì ë‹¨ìµœì¢…ë³´ìŠ¤	3591
+	1	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¥ìˆ˜	3505
+	2	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¥ìˆ˜	3505
+	3	ë¶‰ì€ë„ì ë‹¨ì¥êµ°	3504
+	4	ë¶‰ì€ë„ì ë‹¨ì¥êµ°	3504
+	5	ë¶‰ì€ë„ì ë‹¨ì¥êµ°	3504
+	6	ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬	3503
+	7	ë¶‰ì€ë„ì ë‹¨ì›ê±°ë¦¬	3503
+	8	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	9	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	10	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
+	11	ë¶‰ì€ë„ì ë‹¨ìƒê¸‰ì¡¸ê°œ	3502
 }			
 			
-Group	¾Ç·æ±ºµµ_3061_ºÓÀºµµÀû´Ü2Á¹°³		
+Group	ì•…ë£¡êµ°ë„_3061_ë¶‰ì€ë„ì ë‹¨2ì¡¸ê°œ		
 {			
 	Vnum	3061	
-	Leader	ºÓÀºµµÀû´Ü2Á¹°³	3551
-	1	ºÓÀºµµÀû´Ü2Á¹°³	3551
-	2	ºÓÀºµµÀû´Ü2Á¹°³	3551
+	Leader	ë¶‰ì€ë„ì ë‹¨2ì¡¸ê°œ	3551
+	1	ë¶‰ì€ë„ì ë‹¨2ì¡¸ê°œ	3551
+	2	ë¶‰ì€ë„ì ë‹¨2ì¡¸ê°œ	3551
 }			
 			
-Group	¾Ç·æ±ºµµ_3062_ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3062_ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3062	
-	Leader	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	1	ºÓÀºµµÀû´Ü2Á¹°³	3551
-	2	ºÓÀºµµÀû´Ü2Á¹°³	3551
+	Leader	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	1	ë¶‰ì€ë„ì ë‹¨2ì¡¸ê°œ	3551
+	2	ë¶‰ì€ë„ì ë‹¨2ì¡¸ê°œ	3551
 }			
 			
-Group	¾Ç·æ±ºµµ_3063_ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3063_ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3063	
-	Leader	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	1	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	2	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
+	Leader	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	1	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	2	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
 }			
 			
-Group	¾Ç·æ±ºµµ_3064_ºÓÀºµµÀû´Ü2¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3064_ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬		
 {			
 	Vnum	3064	
-	Leader	ºÓÀºµµÀû´Ü2¿ø°Å¸®	3553
-	1	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	2	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
+	Leader	ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬	3553
+	1	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	2	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
 }			
 			
-Group	¾Ç·æ±ºµµ_3065_ºÓÀºµµÀû´Ü2¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3065_ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬		
 {			
 	Vnum	3065	
-	Leader	ºÓÀºµµÀû´Ü2¿ø°Å¸®	3553
-	1	ºÓÀºµµÀû´Ü2¿ø°Å¸®	3553
-	2	ºÓÀºµµÀû´Ü2¿ø°Å¸®	3553
+	Leader	ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬	3553
+	1	ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬	3553
+	2	ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬	3553
 }			
 			
-Group	¾Ç·æ±ºµµ_3066_ºÓÀºµµÀû´Ü2Àå±º		
+Group	ì•…ë£¡êµ°ë„_3066_ë¶‰ì€ë„ì ë‹¨2ì¥êµ°		
 {			
 	Vnum	3066	
-	Leader	ºÓÀºµµÀû´Ü2Àå±º	3554
-	1	ºÓÀºµµÀû´Ü2¿ø°Å¸®	3553
-	2	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	3	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
+	Leader	ë¶‰ì€ë„ì ë‹¨2ì¥êµ°	3554
+	1	ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬	3553
+	2	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	3	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
 }			
 			
-Group	¾Ç·æ±ºµµ_3067_ºÓÀºµµÀû´Ü2»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3067_ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3067	
-	Leader	ºÓÀºµµÀû´Ü2»ó±ŞÀå¼ö	3555
-	1	ºÓÀºµµÀû´Ü2Àå±º	3554
-	2	ºÓÀºµµÀû´Ü2Àå±º	3554
-	3	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	4	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
+	Leader	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¥ìˆ˜	3555
+	1	ë¶‰ì€ë„ì ë‹¨2ì¥êµ°	3554
+	2	ë¶‰ì€ë„ì ë‹¨2ì¥êµ°	3554
+	3	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	4	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
 }			
 			
-Group	¾Ç·æ±ºµµ_3068_ºÓÀºµµÀû´Ü2º¸½º		
+Group	ì•…ë£¡êµ°ë„_3068_ë¶‰ì€ë„ì ë‹¨2ë³´ìŠ¤		
 {			
 	Vnum	3068	
-	Leader	ºÓÀºµµÀû´Ü2º¸½º	3595
-	1	ºÓÀºµµÀû´Ü2»ó±ŞÀå¼ö	3555
-	2	ºÓÀºµµÀû´Ü2»ó±ŞÀå¼ö	3555
-	3	ºÓÀºµµÀû´Ü2Àå±º	3554
-	4	ºÓÀºµµÀû´Ü2Àå±º	3554
-	5	ºÓÀºµµÀû´Ü2Àå±º	3554
-	6	ºÓÀºµµÀû´Ü2¿ø°Å¸®	3553
-	7	ºÓÀºµµÀû´Ü2¿ø°Å¸®	3553
-	8	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	9	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	10	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	11	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
+	Leader	ë¶‰ì€ë„ì ë‹¨2ë³´ìŠ¤	3595
+	1	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¥ìˆ˜	3555
+	2	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¥ìˆ˜	3555
+	3	ë¶‰ì€ë„ì ë‹¨2ì¥êµ°	3554
+	4	ë¶‰ì€ë„ì ë‹¨2ì¥êµ°	3554
+	5	ë¶‰ì€ë„ì ë‹¨2ì¥êµ°	3554
+	6	ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬	3553
+	7	ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬	3553
+	8	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	9	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	10	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	11	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
 }			
 			
-Group	¾Ç·æ±ºµµ_3069_ºÓÀºµµÀû´Ü2ÃÖÁ¾º¸½º		
+Group	ì•…ë£¡êµ°ë„_3069_ë¶‰ì€ë„ì ë‹¨2ìµœì¢…ë³´ìŠ¤		
 {			
 	Vnum	3069	
-	Leader	ºÓÀºµµÀû´Ü2ÃÖÁ¾º¸½º	3596
-	1	ºÓÀºµµÀû´Ü2»ó±ŞÀå¼ö	3555
-	2	ºÓÀºµµÀû´Ü2»ó±ŞÀå¼ö	3555
-	3	ºÓÀºµµÀû´Ü2Àå±º	3554
-	4	ºÓÀºµµÀû´Ü2Àå±º	3554
-	5	ºÓÀºµµÀû´Ü2Àå±º	3554
-	6	ºÓÀºµµÀû´Ü2¿ø°Å¸®	3553
-	7	ºÓÀºµµÀû´Ü2¿ø°Å¸®	3553
-	8	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	9	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	10	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
-	11	ºÓÀºµµÀû´Ü2»ó±ŞÁ¹°³	3552
+	Leader	ë¶‰ì€ë„ì ë‹¨2ìµœì¢…ë³´ìŠ¤	3596
+	1	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¥ìˆ˜	3555
+	2	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¥ìˆ˜	3555
+	3	ë¶‰ì€ë„ì ë‹¨2ì¥êµ°	3554
+	4	ë¶‰ì€ë„ì ë‹¨2ì¥êµ°	3554
+	5	ë¶‰ì€ë„ì ë‹¨2ì¥êµ°	3554
+	6	ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬	3553
+	7	ë¶‰ì€ë„ì ë‹¨2ì›ê±°ë¦¬	3553
+	8	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	9	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	10	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
+	11	ë¶‰ì€ë„ì ë‹¨2ìƒê¸‰ì¡¸ê°œ	3552
 }			
 			
-Group	¾Ç·æ±ºµµ_3071_°©°¢·ùÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3071_ê°‘ê°ë¥˜ì¡¸ê°œ		
 {			
 	Vnum	3071	
-	Leader	°©°¢·ùÁ¹°³	3601
-	1	°©°¢·ùÁ¹°³	3601
-	2	°©°¢·ùÁ¹°³	3601
+	Leader	ê°‘ê°ë¥˜ì¡¸ê°œ	3601
+	1	ê°‘ê°ë¥˜ì¡¸ê°œ	3601
+	2	ê°‘ê°ë¥˜ì¡¸ê°œ	3601
 }			
 			
-Group	¾Ç·æ±ºµµ_3072_°©°¢·ù»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3072_ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3072	
-	Leader	°©°¢·ù»ó±ŞÁ¹°³	3602
-	1	°©°¢·ùÁ¹°³	3601
-	2	°©°¢·ùÁ¹°³	3601
+	Leader	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	1	ê°‘ê°ë¥˜ì¡¸ê°œ	3601
+	2	ê°‘ê°ë¥˜ì¡¸ê°œ	3601
 }			
 			
-Group	¾Ç·æ±ºµµ_3073_°©°¢·ù»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3073_ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3073	
-	Leader	°©°¢·ù»ó±ŞÁ¹°³	3602
-	1	°©°¢·ù»ó±ŞÁ¹°³	3602
-	2	°©°¢·ù»ó±ŞÁ¹°³	3602
+	Leader	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	1	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	2	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
 }			
 			
-Group	¾Ç·æ±ºµµ_3074_°©°¢·ù¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3074_ê°‘ê°ë¥˜ì›ê±°ë¦¬		
 {			
 	Vnum	3074	
-	Leader	°©°¢·ù¿ø°Å¸®	3603
-	1	°©°¢·ù»ó±ŞÁ¹°³	3602
-	2	°©°¢·ù»ó±ŞÁ¹°³	3602
+	Leader	ê°‘ê°ë¥˜ì›ê±°ë¦¬	3603
+	1	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	2	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
 }			
 			
-Group	¾Ç·æ±ºµµ_3075_°©°¢·ù¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3075_ê°‘ê°ë¥˜ì›ê±°ë¦¬		
 {			
 	Vnum	3075	
-	Leader	°©°¢·ù¿ø°Å¸®	3603
-	1	°©°¢·ù¿ø°Å¸®	3603
-	2	°©°¢·ù¿ø°Å¸®	3603
+	Leader	ê°‘ê°ë¥˜ì›ê±°ë¦¬	3603
+	1	ê°‘ê°ë¥˜ì›ê±°ë¦¬	3603
+	2	ê°‘ê°ë¥˜ì›ê±°ë¦¬	3603
 }			
 			
-Group	¾Ç·æ±ºµµ_3076_°©°¢·ùÀå±º		
+Group	ì•…ë£¡êµ°ë„_3076_ê°‘ê°ë¥˜ì¥êµ°		
 {			
 	Vnum	3076	
-	Leader	°©°¢·ùÀå±º	3604
-	1	°©°¢·ù¿ø°Å¸®	3603
-	2	°©°¢·ù»ó±ŞÁ¹°³	3602
-	3	°©°¢·ù»ó±ŞÁ¹°³	3602
+	Leader	ê°‘ê°ë¥˜ì¥êµ°	3604
+	1	ê°‘ê°ë¥˜ì›ê±°ë¦¬	3603
+	2	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	3	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
 }			
 			
-Group	¾Ç·æ±ºµµ_3077_°©°¢·ù»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3077_ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3077	
-	Leader	°©°¢·ù»ó±ŞÀå¼ö	3605
-	1	°©°¢·ùÀå±º	3604
-	2	°©°¢·ùÀå±º	3604
-	3	°©°¢·ù»ó±ŞÁ¹°³	3602
-	4	°©°¢·ù»ó±ŞÁ¹°³	3602
+	Leader	ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜	3605
+	1	ê°‘ê°ë¥˜ì¥êµ°	3604
+	2	ê°‘ê°ë¥˜ì¥êµ°	3604
+	3	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	4	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
 }			
 			
-Group	¾Ç·æ±ºµµ_3078_°©°¢·ù»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3078_ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3078	
-	Leader	°©°¢·ù»ó±ŞÀå¼ö	3690
-	1	°©°¢·ù»ó±ŞÀå¼ö	3605
-	2	°©°¢·ù»ó±ŞÀå¼ö	3605
-	3	°©°¢·ùÀå±º	3604
-	4	°©°¢·ùÀå±º	3604
-	5	°©°¢·ùÀå±º	3604
-	6	°©°¢·ù¿ø°Å¸®	3603
-	7	°©°¢·ù¿ø°Å¸®	3603
-	8	°©°¢·ù»ó±ŞÁ¹°³	3602
-	9	°©°¢·ù»ó±ŞÁ¹°³	3602
-	10	°©°¢·ù»ó±ŞÁ¹°³	3602
-	11	°©°¢·ù»ó±ŞÁ¹°³	3602
+	Leader	ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜	3690
+	1	ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜	3605
+	2	ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜	3605
+	3	ê°‘ê°ë¥˜ì¥êµ°	3604
+	4	ê°‘ê°ë¥˜ì¥êµ°	3604
+	5	ê°‘ê°ë¥˜ì¥êµ°	3604
+	6	ê°‘ê°ë¥˜ì›ê±°ë¦¬	3603
+	7	ê°‘ê°ë¥˜ì›ê±°ë¦¬	3603
+	8	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	9	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	10	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	11	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
 }			
 			
-Group	¾Ç·æ±ºµµ_3079_°©°¢·ù»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3079_ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3079	
-	Leader	°©°¢·ù»ó±ŞÀå¼ö	3691
-	1	°©°¢·ù»ó±ŞÀå¼ö	3605
-	2	°©°¢·ù»ó±ŞÀå¼ö	3605
-	3	°©°¢·ùÀå±º	3604
-	4	°©°¢·ùÀå±º	3604
-	5	°©°¢·ùÀå±º	3604
-	6	°©°¢·ù¿ø°Å¸®	3603
-	7	°©°¢·ù¿ø°Å¸®	3603
-	8	°©°¢·ù»ó±ŞÁ¹°³	3602
-	9	°©°¢·ù»ó±ŞÁ¹°³	3602
-	10	°©°¢·ù»ó±ŞÁ¹°³	3602
-	11	°©°¢·ù»ó±ŞÁ¹°³	3602
+	Leader	ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜	3691
+	1	ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜	3605
+	2	ê°‘ê°ë¥˜ìƒê¸‰ì¥ìˆ˜	3605
+	3	ê°‘ê°ë¥˜ì¥êµ°	3604
+	4	ê°‘ê°ë¥˜ì¥êµ°	3604
+	5	ê°‘ê°ë¥˜ì¥êµ°	3604
+	6	ê°‘ê°ë¥˜ì›ê±°ë¦¬	3603
+	7	ê°‘ê°ë¥˜ì›ê±°ë¦¬	3603
+	8	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	9	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	10	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
+	11	ê°‘ê°ë¥˜ìƒê¸‰ì¡¸ê°œ	3602
 }			
 			
-Group	¾Ç·æ±ºµµ_3081_°ÅÀÎÁ·Á¹°³		
+Group	ì•…ë£¡êµ°ë„_3081_ê±°ì¸ì¡±ì¡¸ê°œ		
 {			
 	Vnum	3081	
-	Leader	°ÅÀÎÁ·Á¹°³	3701
-	1	°ÅÀÎÁ·Á¹°³	3701
-	2	°ÅÀÎÁ·Á¹°³	3701
+	Leader	ê±°ì¸ì¡±ì¡¸ê°œ	3701
+	1	ê±°ì¸ì¡±ì¡¸ê°œ	3701
+	2	ê±°ì¸ì¡±ì¡¸ê°œ	3701
 }			
 			
-Group	¾Ç·æ±ºµµ_3082_°ÅÀÎÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3082_ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3082	
-	Leader	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	1	°ÅÀÎÁ·Á¹°³	3701
-	2	°ÅÀÎÁ·Á¹°³	3701
+	Leader	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	1	ê±°ì¸ì¡±ì¡¸ê°œ	3701
+	2	ê±°ì¸ì¡±ì¡¸ê°œ	3701
 }			
 			
-Group	¾Ç·æ±ºµµ_3083_°ÅÀÎÁ·»ó±ŞÁ¹°³		
+Group	ì•…ë£¡êµ°ë„_3083_ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ		
 {			
 	Vnum	3083	
-	Leader	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	1	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	2	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
+	Leader	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	1	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	2	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
 }			
 			
-Group	¾Ç·æ±ºµµ_3084_°ÅÀÎÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3084_ê±°ì¸ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3084	
-	Leader	°ÅÀÎÁ·¿ø°Å¸®	3703
-	1	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	2	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
+	Leader	ê±°ì¸ì¡±ì›ê±°ë¦¬	3703
+	1	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	2	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
 }			
 			
-Group	¾Ç·æ±ºµµ_3085_°ÅÀÎÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3085_ê±°ì¸ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3085	
-	Leader	°ÅÀÎÁ·¿ø°Å¸®	3703
-	1	°ÅÀÎÁ·¿ø°Å¸®	3703
-	2	°ÅÀÎÁ·¿ø°Å¸®	3703
+	Leader	ê±°ì¸ì¡±ì›ê±°ë¦¬	3703
+	1	ê±°ì¸ì¡±ì›ê±°ë¦¬	3703
+	2	ê±°ì¸ì¡±ì›ê±°ë¦¬	3703
 }			
 			
-Group	¾Ç·æ±ºµµ_3086_°ÅÀÎÁ·Àå±º		
+Group	ì•…ë£¡êµ°ë„_3086_ê±°ì¸ì¡±ì¥êµ°		
 {			
 	Vnum	3086	
-	Leader	°ÅÀÎÁ·Àå±º	3704
-	1	°ÅÀÎÁ·¿ø°Å¸®	3703
-	2	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	3	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
+	Leader	ê±°ì¸ì¡±ì¥êµ°	3704
+	1	ê±°ì¸ì¡±ì›ê±°ë¦¬	3703
+	2	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	3	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
 }			
 			
-Group	¾Ç·æ±ºµµ_3087_°ÅÀÎÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3087_ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3087	
-	Leader	°ÅÀÎÁ·»ó±ŞÀå¼ö	3705
-	1	°ÅÀÎÁ·Àå±º	3704
-	2	°ÅÀÎÁ·Àå±º	3704
-	3	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	4	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
+	Leader	ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3705
+	1	ê±°ì¸ì¡±ì¥êµ°	3704
+	2	ê±°ì¸ì¡±ì¥êµ°	3704
+	3	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	4	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
 }			
 			
-Group	¾Ç·æ±ºµµ_3088_°ÅÀÎÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3088_ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3088	
-	Leader	°ÅÀÎÁ·»ó±ŞÀå¼ö	3790
-	1	°ÅÀÎÁ·»ó±ŞÀå¼ö	3705
-	2	°ÅÀÎÁ·»ó±ŞÀå¼ö	3705
-	3	°ÅÀÎÁ·Àå±º	3704
-	4	°ÅÀÎÁ·Àå±º	3704
-	5	°ÅÀÎÁ·Àå±º	3704
-	6	°ÅÀÎÁ·¿ø°Å¸®	3703
-	7	°ÅÀÎÁ·¿ø°Å¸®	3703
-	8	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	9	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	10	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	11	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
+	Leader	ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3790
+	1	ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3705
+	2	ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3705
+	3	ê±°ì¸ì¡±ì¥êµ°	3704
+	4	ê±°ì¸ì¡±ì¥êµ°	3704
+	5	ê±°ì¸ì¡±ì¥êµ°	3704
+	6	ê±°ì¸ì¡±ì›ê±°ë¦¬	3703
+	7	ê±°ì¸ì¡±ì›ê±°ë¦¬	3703
+	8	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	9	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	10	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	11	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
 }			
 			
-Group	¾Ç·æ±ºµµ_3089_°ÅÀÎÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3089_ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3089	
-	Leader	°ÅÀÎÁ·»ó±ŞÀå¼ö	3791
-	1	°ÅÀÎÁ·»ó±ŞÀå¼ö	3705
-	2	°ÅÀÎÁ·»ó±ŞÀå¼ö	3705
-	3	°ÅÀÎÁ·Àå±º	3704
-	4	°ÅÀÎÁ·Àå±º	3704
-	5	°ÅÀÎÁ·Àå±º	3704
-	6	°ÅÀÎÁ·¿ø°Å¸®	3703
-	7	°ÅÀÎÁ·¿ø°Å¸®	3703
-	8	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	9	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	10	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
-	11	°ÅÀÎÁ·»ó±ŞÁ¹°³	3702
+	Leader	ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3791
+	1	ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3705
+	2	ê±°ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3705
+	3	ê±°ì¸ì¡±ì¥êµ°	3704
+	4	ê±°ì¸ì¡±ì¥êµ°	3704
+	5	ê±°ì¸ì¡±ì¥êµ°	3704
+	6	ê±°ì¸ì¡±ì›ê±°ë¦¬	3703
+	7	ê±°ì¸ì¡±ì›ê±°ë¦¬	3703
+	8	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	9	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	10	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
+	11	ê±°ì¸ì¡±ìƒê¸‰ì¡¸ê°œ	3702
 }			
 			
-Group	¾Ç·æ±ºµµ_3091_ÀúÀÎÁ·Á¹°³		
+Group	ì•…ë£¡êµ°ë„_3091_ì €ì¸ì¡±ì¡¸ê°œ		
 {			
 	Vnum	3091	
-	Leader	ÀúÀÎÁ·Á¹°³	3801
-	1	ÀúÀÎÁ·Á¹°³	3801
-	2	ÀúÀÎÁ·Á¹°³	3801
+	Leader	ì €ì¸ì¡±ì¡¸ê°œ	3801
+	1	ì €ì¸ì¡±ì¡¸ê°œ	3801
+	2	ì €ì¸ì¡±ì¡¸ê°œ	3801
 }			
 			
-Group	¾Ç·æ±ºµµ_3092_ÀúÀÎÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3092_ì €ì¸ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3092	
-	Leader	ÀúÀÎÁ·¿ø°Å¸®	3802
-	1	ÀúÀÎÁ·Á¹°³	3801
-	2	ÀúÀÎÁ·Á¹°³	3801
+	Leader	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	1	ì €ì¸ì¡±ì¡¸ê°œ	3801
+	2	ì €ì¸ì¡±ì¡¸ê°œ	3801
 }			
 			
-Group	¾Ç·æ±ºµµ_3093_ÀúÀÎÁ·¿ø°Å¸®		
+Group	ì•…ë£¡êµ°ë„_3093_ì €ì¸ì¡±ì›ê±°ë¦¬		
 {			
 	Vnum	3093	
-	Leader	ÀúÀÎÁ·¿ø°Å¸®	3802
-	1	ÀúÀÎÁ·¿ø°Å¸®	3802
-	2	ÀúÀÎÁ·¿ø°Å¸®	3802
+	Leader	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	1	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	2	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
 }			
 			
-Group	¾Ç·æ±ºµµ_3094_ÀúÀÎÁ·¸¶¹ı»ç		
+Group	ì•…ë£¡êµ°ë„_3094_ì €ì¸ì¡±ë§ˆë²•ì‚¬		
 {			
 	Vnum	3094	
-	Leader	ÀúÀÎÁ·¸¶¹ı»ç	3803
-	1	ÀúÀÎÁ·¿ø°Å¸®	3802
-	2	ÀúÀÎÁ·¿ø°Å¸®	3802
+	Leader	ì €ì¸ì¡±ë§ˆë²•ì‚¬	3803
+	1	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	2	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
 }			
 			
-Group	¾Ç·æ±ºµµ_3095_ÀúÀÎÁ·¸¶¹ı»ç		
+Group	ì•…ë£¡êµ°ë„_3095_ì €ì¸ì¡±ë§ˆë²•ì‚¬		
 {			
 	Vnum	3095	
-	Leader	ÀúÀÎÁ·¸¶¹ı»ç	3803
-	1	ÀúÀÎÁ·¸¶¹ı»ç	3803
-	2	ÀúÀÎÁ·¸¶¹ı»ç	3803
+	Leader	ì €ì¸ì¡±ë§ˆë²•ì‚¬	3803
+	1	ì €ì¸ì¡±ë§ˆë²•ì‚¬	3803
+	2	ì €ì¸ì¡±ë§ˆë²•ì‚¬	3803
 }			
 			
-Group	¾Ç·æ±ºµµ_3096_ÀúÀÎÁ·Àå¼ö		
+Group	ì•…ë£¡êµ°ë„_3096_ì €ì¸ì¡±ì¥ìˆ˜		
 {			
 	Vnum	3096	
-	Leader	ÀúÀÎÁ·Àå¼ö	3804
-	1	ÀúÀÎÁ·¸¶¹ı»ç	3803
-	2	ÀúÀÎÁ·¿ø°Å¸®	3802
-	3	ÀúÀÎÁ·¿ø°Å¸®	3802
+	Leader	ì €ì¸ì¡±ì¥ìˆ˜	3804
+	1	ì €ì¸ì¡±ë§ˆë²•ì‚¬	3803
+	2	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	3	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
 }			
 			
-Group	¾Ç·æ±ºµµ_3097_ÀúÀÎÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3097_ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3097	
-	Leader	ÀúÀÎÁ·»ó±ŞÀå¼ö	3805
-	1	ÀúÀÎÁ·Àå¼ö	3804
-	2	ÀúÀÎÁ·Àå¼ö	3804
-	3	ÀúÀÎÁ·¿ø°Å¸®	3802
-	4	ÀúÀÎÁ·¿ø°Å¸®	3802
+	Leader	ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3805
+	1	ì €ì¸ì¡±ì¥ìˆ˜	3804
+	2	ì €ì¸ì¡±ì¥ìˆ˜	3804
+	3	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	4	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
 }			
 			
-Group	¾Ç·æ±ºµµ_3098_ÀúÀÎÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3098_ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3098	
-	Leader	ÀúÀÎÁ·»ó±ŞÀå¼ö	3890
-	1	ÀúÀÎÁ·»ó±ŞÀå¼ö	3805
-	2	ÀúÀÎÁ·»ó±ŞÀå¼ö	3805
-	3	ÀúÀÎÁ·Àå¼ö	3804
-	4	ÀúÀÎÁ·Àå¼ö	3804
-	5	ÀúÀÎÁ·Àå¼ö	3804
-	6	ÀúÀÎÁ·¸¶¹ı»ç	3803
-	7	ÀúÀÎÁ·¸¶¹ı»ç	3803
-	8	ÀúÀÎÁ·¿ø°Å¸®	3802
-	9	ÀúÀÎÁ·¿ø°Å¸®	3802
-	10	ÀúÀÎÁ·¿ø°Å¸®	3802
-	11	ÀúÀÎÁ·¿ø°Å¸®	3802
+	Leader	ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3890
+	1	ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3805
+	2	ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3805
+	3	ì €ì¸ì¡±ì¥ìˆ˜	3804
+	4	ì €ì¸ì¡±ì¥ìˆ˜	3804
+	5	ì €ì¸ì¡±ì¥ìˆ˜	3804
+	6	ì €ì¸ì¡±ë§ˆë²•ì‚¬	3803
+	7	ì €ì¸ì¡±ë§ˆë²•ì‚¬	3803
+	8	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	9	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	10	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	11	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
 }			
 			
-Group	¾Ç·æ±ºµµ_3099_ÀúÀÎÁ·»ó±ŞÀå¼ö		
+Group	ì•…ë£¡êµ°ë„_3099_ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜		
 {			
 	Vnum	3099	
-	Leader	ÀúÀÎÁ·»ó±ŞÀå¼ö	3891
-	1	ÀúÀÎÁ·»ó±ŞÀå¼ö	3805
-	2	ÀúÀÎÁ·»ó±ŞÀå¼ö	3805
-	3	ÀúÀÎÁ·Àå¼ö	3804
-	4	ÀúÀÎÁ·Àå¼ö	3804
-	5	ÀúÀÎÁ·Àå¼ö	3804
-	6	ÀúÀÎÁ·¸¶¹ı»ç	3803
-	7	ÀúÀÎÁ·¸¶¹ı»ç	3803
-	8	ÀúÀÎÁ·¿ø°Å¸®	3802
-	9	ÀúÀÎÁ·¿ø°Å¸®	3802
-	10	ÀúÀÎÁ·¿ø°Å¸®	3802
-	11	ÀúÀÎÁ·¿ø°Å¸®	3802
+	Leader	ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3891
+	1	ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3805
+	2	ì €ì¸ì¡±ìƒê¸‰ì¥ìˆ˜	3805
+	3	ì €ì¸ì¡±ì¥ìˆ˜	3804
+	4	ì €ì¸ì¡±ì¥ìˆ˜	3804
+	5	ì €ì¸ì¡±ì¥ìˆ˜	3804
+	6	ì €ì¸ì¡±ë§ˆë²•ì‚¬	3803
+	7	ì €ì¸ì¡±ë§ˆë²•ì‚¬	3803
+	8	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	9	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	10	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
+	11	ì €ì¸ì¡±ì›ê±°ë¦¬	3802
 }			
 			
-Group	¾Ç·æ±ºµµ°æºñº´		
+Group	ì•…ë£¡êµ°ë„ê²½ë¹„ë³‘		
 {			
 	Vnum	12008	
 	Leader	.	20025
-	1	¿ëµÎ°÷°æºñº´	20373
+	1	ìš©ë‘ê³³ê²½ë¹„ë³‘	20373
 }			
 			
-Group	¾Ç·æ±ºµµQuestMobGroup001		
+Group	ì•…ë£¡êµ°ë„QuestMobGroup001		
 {			
 	Vnum	20001	
-	Leader	Áö¹«½Å¿Õ	3904
-	1	¿Ü¾ÈÅõ±ÍÁ·¿ø°Å¸®	3103
-	2	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
-	3	¿Ü¾ÈÅõ±ÍÁ·»ó±ŞÁ¹°³	3102
+	Leader	ì§€ë¬´ì‹ ì™•	3904
+	1	ì™¸ì•ˆíˆ¬ê·€ì¡±ì›ê±°ë¦¬	3103
+	2	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
+	3	ì™¸ì•ˆíˆ¬ê·€ì¡±ìƒê¸‰ì¡¸ê°œ	3102
 }			
 			
-Group	¾Ç·æ±ºµµQuestMobGroup002		
+Group	ì•…ë£¡êµ°ë„QuestMobGroup002		
 {			
 	Vnum	20002	
-	Leader	Ãµ¹«½Å³à	3905
-	1	¸Á·®Á·»ó±ŞÀå¼ö	3305
-	2	¸Á·®Á·Àå±º	3304
-	3	¸Á·®Á·Àå±º	3304
-	4	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	5	¸Á·®Á·»ó±ŞÁ¹°³	3302
+	Leader	ì²œë¬´ì‹ ë…€	3905
+	1	ë§ëŸ‰ì¡±ìƒê¸‰ì¥ìˆ˜	3305
+	2	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	3	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	4	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	5	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
 }			
 			
-Group	¾Ç·æ±ºµµQuestMobGroup003		
+Group	ì•…ë£¡êµ°ë„QuestMobGroup003		
 {			
 	Vnum	20003	
-	Leader	ÁøÃµ¹«½Å³à	3906
-	1	¸Á·®Á·»ó±ŞÀå¼ö	3305
-	2	¸Á·®Á·Àå±º	3304
-	3	¸Á·®Á·Àå±º	3304
-	4	¸Á·®Á·»ó±ŞÁ¹°³	3302
-	5	¸Á·®Á·»ó±ŞÁ¹°³	3302
+	Leader	ì§„ì²œë¬´ì‹ ë…€	3906
+	1	ë§ëŸ‰ì¡±ìƒê¸‰ì¥ìˆ˜	3305
+	2	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	3	ë§ëŸ‰ì¡±ì¥êµ°	3304
+	4	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
+	5	ë§ëŸ‰ì¡±ìƒê¸‰ì¡¸ê°œ	3302
 }			
 			
-Group	¾Ç·æ±ºµµQuestMobGroup004		
+Group	ì•…ë£¡êµ°ë„QuestMobGroup004		
 {			
 	Vnum	20004	
-	Leader	Èæ»ç´ÜÀå	3910
-	1	Èæ»ç´ë»ó±ŞÀå±º	3909
-	2	Èæ»ç´ëÀå¼ö	3908
-	3	Èæ»ç´ëÀå¼ö	3908
-	4	Èæ»ç´ë±Ã¼ö	3907
-	5	Èæ»ç´ë±Ã¼ö	3907
+	Leader	í‘ì‚¬ë‹¨ì¥	3910
+	1	í‘ì‚¬ëŒ€ìƒê¸‰ì¥êµ°	3909
+	2	í‘ì‚¬ëŒ€ì¥ìˆ˜	3908
+	3	í‘ì‚¬ëŒ€ì¥ìˆ˜	3908
+	4	í‘ì‚¬ëŒ€ê¶ìˆ˜	3907
+	5	í‘ì‚¬ëŒ€ê¶ìˆ˜	3907
 }			
 			
-Group	Ã·Á¤¼®±¤¸Æ		
+Group	ì²¨ì •ì„ê´‘ë§¥		
 {			
 	Vnum	30301	
-	Leader	Ã·Á¤¼®±¤¸Æ	30301
+	Leader	ì²¨ì •ì„ê´‘ë§¥	30301
 }			
 			
 			
-Group	È«¿Á±¤¸Æ		
+Group	í™ì˜¥ê´‘ë§¥		
 {			
 	Vnum	30302	
-	Leader	È«¿Á±¤¸Æ	30302
+	Leader	í™ì˜¥ê´‘ë§¥	30302
 }			
 			
 			
-Group	¼®·ù¼®±¤¸Æ		
+Group	ì„ë¥˜ì„ê´‘ë§¥		
 {			
 	Vnum	30303	
-	Leader	¼®·ù¼®±¤¸Æ	30303
+	Leader	ì„ë¥˜ì„ê´‘ë§¥	30303
 }			
 			
 			
-Group	³ìÁÖ¼®±¤¸Æ		
+Group	ë…¹ì£¼ì„ê´‘ë§¥		
 {			
 	Vnum	30304	
-	Leader	³ìÁÖ¼®±¤¸Æ	30304
+	Leader	ë…¹ì£¼ì„ê´‘ë§¥	30304
 }			
 			
 			
-Group	Ã»¿Á±¤¸Æ		
+Group	ì²­ì˜¥ê´‘ë§¥		
 {			
 	Vnum	30305	
-	Leader	Ã»¿Á±¤¸Æ	30305
+	Leader	ì²­ì˜¥ê´‘ë§¥	30305
 }			
 
-Group	Àû·æ¼º_6001_È­Á¤		
+Group	ì ë£¡ì„±_6001_í™”ì •		
 {			
 	Vnum	6001	
-	Leader	È­Á¤	6001
-	1	È­Á¤	6001
-	2	È­Á¤	6001
+	Leader	í™”ì •	6001
+	1	í™”ì •	6001
+	2	í™”ì •	6001
 }			
 			
-Group	Àû·æ¼º_6002_¿°Á¤		
+Group	ì ë£¡ì„±_6002_ì—¼ì •		
 {			
 	Vnum	6002	
-	Leader	¿°Á¤	6002
-	1	È­Á¤	6001
-	2	È­Á¤	6001
+	Leader	ì—¼ì •	6002
+	1	í™”ì •	6001
+	2	í™”ì •	6001
 }			
 			
-Group	Àû·æ¼º_6003_¿°Á¤		
+Group	ì ë£¡ì„±_6003_ì—¼ì •		
 {			
 	Vnum	6003	
-	Leader	¿°Á¤	6002
-	1	¿°Á¤	6002
-	2	¿°Á¤	6002
+	Leader	ì—¼ì •	6002
+	1	ì—¼ì •	6002
+	2	ì—¼ì •	6002
 }			
 			
-Group	Àû·æ¼º_6004_±Ø¿­Á¤		
+Group	ì ë£¡ì„±_6004_ê·¹ì—´ì •		
 {			
 	Vnum	6004	
-	Leader	±Ø¿­Á¤	6003
-	1	¿°Á¤	6002
-	2	¿°Á¤	6002
+	Leader	ê·¹ì—´ì •	6003
+	1	ì—¼ì •	6002
+	2	ì—¼ì •	6002
 }			
 			
-Group	Àû·æ¼º_6005_±Ø¿­Á¤		
+Group	ì ë£¡ì„±_6005_ê·¹ì—´ì •		
 {			
 	Vnum	6005	
-	Leader	±Ø¿­Á¤	6003
-	1	±Ø¿­Á¤	6003
-	2	±Ø¿­Á¤	6003
+	Leader	ê·¹ì—´ì •	6003
+	1	ê·¹ì—´ì •	6003
+	2	ê·¹ì—´ì •	6003
 }			
 			
-Group	Àû·æ¼º_6006_Ç÷È­Á¤		
+Group	ì ë£¡ì„±_6006_í˜ˆí™”ì •		
 {			
 	Vnum	6006	
-	Leader	Ç÷È­Á¤	6004
-	1	±Ø¿­Á¤	6003
-	2	¿°Á¤	6002
-	3	¿°Á¤	6002
+	Leader	í˜ˆí™”ì •	6004
+	1	ê·¹ì—´ì •	6003
+	2	ì—¼ì •	6002
+	3	ì—¼ì •	6002
 }			
 			
-Group	Àû·æ¼º_6007_È­¸¶		
+Group	ì ë£¡ì„±_6007_í™”ë§ˆ		
 {			
 	Vnum	6007	
-	Leader	È­¸¶	6005
-	1	Ç÷È­Á¤	6004
-	2	Ç÷È­Á¤	6004
-	3	¿°Á¤	6002
-	4	¿°Á¤	6002
+	Leader	í™”ë§ˆ	6005
+	1	í˜ˆí™”ì •	6004
+	2	í˜ˆí™”ì •	6004
+	3	ì—¼ì •	6002
+	4	ì—¼ì •	6002
 }			
 			
-Group	Àû·æ¼º_6008_¿°¸¶		
+Group	ì ë£¡ì„±_6008_ì—¼ë§ˆ		
 {			
 	Vnum	6008	
-	Leader	¿°¸¶	6006
-	1	È­¸¶	6005
-	2	Ç÷È­Á¤	6004
-	3	Ç÷È­Á¤	6004
+	Leader	ì—¼ë§ˆ	6006
+	1	í™”ë§ˆ	6005
+	2	í˜ˆí™”ì •	6004
+	3	í˜ˆí™”ì •	6004
 }			
 			
-Group	Àû·æ¼º_6009_È­±«		
+Group	ì ë£¡ì„±_6009_í™”ê´´		
 {			
 	Vnum	6009	
-	Leader	È­±«	6007
-	1	¿°¸¶	6006
-	2	¿°¸¶	6006
-	3	È­¸¶	6005
-	4	È­¸¶	6005
+	Leader	í™”ê´´	6007
+	1	ì—¼ë§ˆ	6006
+	2	ì—¼ë§ˆ	6006
+	3	í™”ë§ˆ	6005
+	4	í™”ë§ˆ	6005
 }			
 			
-Group	Àû·æ¼º_6010_¿°±«		
+Group	ì ë£¡ì„±_6010_ì—¼ê´´		
 {			
 	Vnum	6010	
-	Leader	¿°±«	6008
-	1	È­±«	6007
-	2	¿°¸¶	6006
-	3	¿°¸¶	6006
+	Leader	ì—¼ê´´	6008
+	1	í™”ê´´	6007
+	2	ì—¼ë§ˆ	6006
+	3	ì—¼ë§ˆ	6006
 }			
 			
-Group	Àû·æ¼º_6011_ÃÊ¿­±«		
+Group	ì ë£¡ì„±_6011_ì´ˆì—´ê´´		
 {			
 	Vnum	6011	
-	Leader	ÃÊ¿­±«	6009
-	1	¿°±«	6008
-	2	¿°±«	6008
-	3	È­±«	6007
-	4	È­±«	6007
+	Leader	ì´ˆì—´ê´´	6009
+	1	ì—¼ê´´	6008
+	2	ì—¼ê´´	6008
+	3	í™”ê´´	6007
+	4	í™”ê´´	6007
 }			
 			
-Group	Àû·æ¼º_6012_¾ß¸¶Ãµ		
+Group	ì ë£¡ì„±_6012_ì•¼ë§ˆì²œ		
 {			
 	Vnum	6012	
-	Leader	¾ß¸¶Ãµ	6091
-	1	ÃÊ¿­±«	6009
-	2	ÃÊ¿­±«	6009
-	3	¿°±«	6008
-	4	¿°±«	6008
-	5	¿°±«	6008
-	6	È­±«	6007
-	7	È­±«	6007
-	8	È­±«	6007
-	9	¿°¸¶	6006
-	10	¿°¸¶	6006
-	11	¿°¸¶	6006
+	Leader	ì•¼ë§ˆì²œ	6091
+	1	ì´ˆì—´ê´´	6009
+	2	ì´ˆì—´ê´´	6009
+	3	ì—¼ê´´	6008
+	4	ì—¼ê´´	6008
+	5	ì—¼ê´´	6008
+	6	í™”ê´´	6007
+	7	í™”ê´´	6007
+	8	í™”ê´´	6007
+	9	ì—¼ë§ˆ	6006
+	10	ì—¼ë§ˆ	6006
+	11	ì—¼ë§ˆ	6006
 }			
 			
-Group	¹é·æÁö¼º_6051_ºùÁ¤		
+Group	ë°±ë£¡ì§€ì„±_6051_ë¹™ì •		
 {			
 	Vnum	6051	
-	Leader	ºùÁ¤	6101
-	1	ºùÁ¤	6101
-	2	ºùÁ¤	6101
+	Leader	ë¹™ì •	6101
+	1	ë¹™ì •	6101
+	2	ë¹™ì •	6101
 }			
 			
-Group	¹é·æÁö¼º_6052_³ÃÁ¤		
+Group	ë°±ë£¡ì§€ì„±_6052_ëƒ‰ì •		
 {			
 	Vnum	6052	
-	Leader	³ÃÁ¤	6102
-	1	ºùÁ¤	6101
-	2	ºùÁ¤	6101
+	Leader	ëƒ‰ì •	6102
+	1	ë¹™ì •	6101
+	2	ë¹™ì •	6101
 }			
 			
-Group	¹é·æÁö¼º_6053_³ÃÁ¤		
+Group	ë°±ë£¡ì§€ì„±_6053_ëƒ‰ì •		
 {			
 	Vnum	6053	
-	Leader	³ÃÁ¤	6102
-	1	³ÃÁ¤	6102
-	2	³ÃÁ¤	6102
+	Leader	ëƒ‰ì •	6102
+	1	ëƒ‰ì •	6102
+	2	ëƒ‰ì •	6102
 }			
 			
-Group	¹é·æÁö¼º_6054_±ØºùÁ¤		
+Group	ë°±ë£¡ì§€ì„±_6054_ê·¹ë¹™ì •		
 {			
 	Vnum	6054	
-	Leader	±ØºùÁ¤	6103
-	1	³ÃÁ¤	6102
-	2	³ÃÁ¤	6102
+	Leader	ê·¹ë¹™ì •	6103
+	1	ëƒ‰ì •	6102
+	2	ëƒ‰ì •	6102
 }			
 			
-Group	¹é·æÁö¼º_6055_±ØºùÁ¤		
+Group	ë°±ë£¡ì§€ì„±_6055_ê·¹ë¹™ì •		
 {			
 	Vnum	6055	
-	Leader	±ØºùÁ¤	6103
-	1	±ØºùÁ¤	6103
-	2	±ØºùÁ¤	6103
+	Leader	ê·¹ë¹™ì •	6103
+	1	ê·¹ë¹™ì •	6103
+	2	ê·¹ë¹™ì •	6103
 }			
 			
-Group	¹é·æÁö¼º_6056_ÇÑºùÁ¤		
+Group	ë°±ë£¡ì§€ì„±_6056_í•œë¹™ì •		
 {			
 	Vnum	6056	
-	Leader	ÇÑºùÁ¤	6104
-	1	±ØºùÁ¤	6103
-	2	³ÃÁ¤	6102
-	3	³ÃÁ¤	6102
+	Leader	í•œë¹™ì •	6104
+	1	ê·¹ë¹™ì •	6103
+	2	ëƒ‰ì •	6102
+	3	ëƒ‰ì •	6102
 }			
 			
-Group	¹é·æÁö¼º_6057_ºù¸¶		
+Group	ë°±ë£¡ì§€ì„±_6057_ë¹™ë§ˆ		
 {			
 	Vnum	6057	
-	Leader	ºù¸¶	6105
-	1	ÇÑºùÁ¤	6104
-	2	ÇÑºùÁ¤	6104
-	3	³ÃÁ¤	6102
-	4	³ÃÁ¤	6102
+	Leader	ë¹™ë§ˆ	6105
+	1	í•œë¹™ì •	6104
+	2	í•œë¹™ì •	6104
+	3	ëƒ‰ì •	6102
+	4	ëƒ‰ì •	6102
 }			
 			
-Group	¹é·æÁö¼º_6058_³Ã¸¶		
+Group	ë°±ë£¡ì§€ì„±_6058_ëƒ‰ë§ˆ		
 {			
 	Vnum	6058	
-	Leader	³Ã¸¶	6106
-	1	ºù¸¶	6105
-	2	ÇÑºùÁ¤	6104
-	3	ÇÑºùÁ¤	6104
+	Leader	ëƒ‰ë§ˆ	6106
+	1	ë¹™ë§ˆ	6105
+	2	í•œë¹™ì •	6104
+	3	í•œë¹™ì •	6104
 }			
 			
-Group	¹é·æÁö¼º_6059_ºù±«		
+Group	ë°±ë£¡ì§€ì„±_6059_ë¹™ê´´		
 {			
 	Vnum	6059	
-	Leader	ºù±«	6107
-	1	³Ã¸¶	6106
-	2	³Ã¸¶	6106
-	3	ÇÑºùÁ¤	6104
-	4	ÇÑºùÁ¤	6104
+	Leader	ë¹™ê´´	6107
+	1	ëƒ‰ë§ˆ	6106
+	2	ëƒ‰ë§ˆ	6106
+	3	í•œë¹™ì •	6104
+	4	í•œë¹™ì •	6104
 }			
 			
-Group	¹é·æÁö¼º_6060_ºù¸¶		
+Group	ë°±ë£¡ì§€ì„±_6060_ë¹™ë§ˆ		
 {			
 	Vnum	6060	
-	Leader	ºù¸¶	6105
-	1	ÇÑºùÁ¤	6104
-	2	±ØºùÁ¤	6103
-	3	±ØºùÁ¤	6103
+	Leader	ë¹™ë§ˆ	6105
+	1	í•œë¹™ì •	6104
+	2	ê·¹ë¹™ì •	6103
+	3	ê·¹ë¹™ì •	6103
 }			
 			
-Group	¹é·æÁö¼º_6061_³Ã¸¶		
+Group	ë°±ë£¡ì§€ì„±_6061_ëƒ‰ë§ˆ		
 {			
 	Vnum	6061	
-	Leader	³Ã¸¶	6106
-	1	ºù¸¶	6105
-	2	ºù¸¶	6105
-	3	±ØºùÁ¤	6103
-	4	±ØºùÁ¤	6103
+	Leader	ëƒ‰ë§ˆ	6106
+	1	ë¹™ë§ˆ	6105
+	2	ë¹™ë§ˆ	6105
+	3	ê·¹ë¹™ì •	6103
+	4	ê·¹ë¹™ì •	6103
 }			
 			
-Group	¹é·æÁö¼º_6062_ÇÑ¸¶ÀÇ		
+Group	ë°±ë£¡ì§€ì„±_6062_í•œë§ˆì˜		
 {			
 	Vnum	6062	
-	Leader	ÇÑ¸¶ÀÇ	6191
-	1	ÃÊ³Ã±«	6109
-	2	ÃÊ³Ã±«	6109
-	3	³Ã±«	6108
-	4	³Ã±«	6108
-	5	³Ã±«	6108
-	6	ºù±«	6107
-	7	ºù±«	6107
-	8	³Ã¸¶	6106
-	9	³Ã¸¶	6106
-	10	³Ã¸¶	6106
-	11	³Ã¸¶	6106
+	Leader	í•œë§ˆì˜	6191
+	1	ì´ˆëƒ‰ê´´	6109
+	2	ì´ˆëƒ‰ê´´	6109
+	3	ëƒ‰ê´´	6108
+	4	ëƒ‰ê´´	6108
+	5	ëƒ‰ê´´	6108
+	6	ë¹™ê´´	6107
+	7	ë¹™ê´´	6107
+	8	ëƒ‰ë§ˆ	6106
+	9	ëƒ‰ë§ˆ	6106
+	10	ëƒ‰ë§ˆ	6106
+	11	ëƒ‰ë§ˆ	6106
 }			
 

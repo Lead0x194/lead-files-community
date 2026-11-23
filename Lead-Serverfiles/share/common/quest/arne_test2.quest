@@ -2,7 +2,7 @@ quest arne_test begin
 	state start begin
 		when login begin
 					NpcName=mob_name(20095) --SeonHae
---					notice("Script läuft.")
+--					notice("Script lÃ¤uft.")
 --					notice("Npc heisst: "..NpcName..". Right on!")
 --					notice(string.format("Geschlecht ist: %s", pc.get_sex()))
 --					mob.spawn(20095, 356, 483, 1, 1, 1)
@@ -93,7 +93,7 @@ end
 			
 			when button or info begin
 				say_title("Sprecht mit Seon-Hae")
-				say("Ihr habt einen alten Mann an der Brücke gesehen, der völlig aufgelöst ist und wahrscheinlich Hilfe braucht.")
+				say("Ihr habt einen alten Mann an der BrÃ¼cke gesehen, der vÃ¶llig aufgelÃ¶st ist und wahrscheinlich Hilfe braucht.")
 			end
 		
 
@@ -107,16 +107,16 @@ end
 		
 		  local MainMenuList = 
 		  		{
-		  		"Ziel Wählen",
-		  		"Menge Wählen",
-		  		"Zeit Wählen",
+		  		"Ziel WÃ¤hlen",
+		  		"Menge WÃ¤hlen",
+		  		"Zeit WÃ¤hlen",
 		  		"Quest Starten",
 		  		"Abbruch",
 		  		}
 		  local TargetMenuList =
 		  	{
 		  		"Wildhunde",
-		  		"Wölfe",
+		  		"WÃ¶lfe",
 		  		"Tiger",
 		  	}
 		  local AmountMenuList =
@@ -262,10 +262,10 @@ end
 --					BeenHere = 1					
 --				end
 --				say_title("Challenge")
---				local s = select("Ziel auswählen", "Anzahl auswählen", "Zeit auswählen")
+--				local s = select("Ziel auswÃ¤hlen", "Anzahl auswÃ¤hlen", "Zeit auswÃ¤hlen")
 --				if s == 1 then
---			 		say_title("Ziel auswählen")
---				 	local t = select("Wildhunde", "Wölfe", "Tiger")
+--			 		say_title("Ziel auswÃ¤hlen")
+--				 	local t = select("Wildhunde", "WÃ¶lfe", "Tiger")
 --				 	if t == 1 then
 --				 		TargetSelector = Target1 
 --				 		TargetChallenge = 1 
@@ -317,28 +317,28 @@ end
 --			
 --			when 20095.Chat."Dem alten Mann helfen" begin
 --			target.delete("__TARGET__")
---				say_title("Hilfe für Seon-Hae")
---				say("Wehe! Diese verflixten Kläffer! Hungrige Wildunde haben meinen kleinen Hund Fu verschlungen! Mit zwei Bissen war er weg, der arme Kleine!")
+--				say_title("Hilfe fÃ¼r Seon-Hae")
+--				say("Wehe! Diese verflixten KlÃ¤ffer! Hungrige Wildunde haben meinen kleinen Hund Fu verschlungen! Mit zwei Bissen war er weg, der arme Kleine!")
 --				wait()
---				say(string.format("Rächt meinen Fu! Erschlagt %s hungrige Wildhunde und seine kleine Hundeseele wird mit Genugtuung in das Geisterreich eingehen können! Der arme Kleine ...",HuntAmount))
+--				say(string.format("RÃ¤cht meinen Fu! Erschlagt %s hungrige Wildhunde und seine kleine Hundeseele wird mit Genugtuung in das Geisterreich eingehen kÃ¶nnen! Der arme Kleine ...",HuntAmount))
 --				set_state(hunting)
 --			end			
 --		
 --			when 20095.Chat."Dem alten Mann Ehre erweisen" begin
 --			target.delete("__TARGET__")
---				say_title("Tee für Seon-Hae")
---				say("*Der alte Mann Seon-Hae nickt euch zu, als ihr euch zur Begrüßung verbeugt. Er scheint von Sorgen geplagt.*")
+--				say_title("Tee fÃ¼r Seon-Hae")
+--				say("*Der alte Mann Seon-Hae nickt euch zu, als ihr euch zur BegrÃ¼ÃŸung verbeugt. Er scheint von Sorgen geplagt.*")
 --				wait()
---				say("*Die Tradition würde gebieten, ihm einen Glockenblumentee zu reichen. Dies demonstriert eure Achtung und beruhigt seine Seele.*")
+--				say("*Die Tradition wÃ¼rde gebieten, ihm einen Glockenblumentee zu reichen. Dies demonstriert eure Achtung und beruhigt seine Seele.*")
 --				wait()
---				say(string.format("*Sammelt %s Glockenblumen. Die Wildhunde erschnüffeln sie gere im Gras, von ihnen könnt ihr welche erbeuten.*", GatherAmount))
+--				say(string.format("*Sammelt %s Glockenblumen. Die Wildhunde erschnÃ¼ffeln sie gere im Gras, von ihnen kÃ¶nnt ihr welche erbeuten.*", GatherAmount))
 --				set_state(gather)
 --			end
 --		
 --		when 20095.Chat."Den alten Mann ausrauben" begin
 --			target.delete("__TARGET__")
---				say_title("Überfall auf Seon-Hae")
---				say("Rüpel! Ein alter Mann ist in Trauer um seinen besten Freund und ihr haltet ihm noch eine Klinge unter die Nase! Aber glaubt nur nicht das ihr damit davonkommt! Der Geist meines toten Hundes wird mir Schutz senden!")
+--				say_title("Ãœberfall auf Seon-Hae")
+--				say("RÃ¼pel! Ein alter Mann ist in Trauer um seinen besten Freund und ihr haltet ihm noch eine Klinge unter die Nase! Aber glaubt nur nicht das ihr damit davonkommt! Der Geist meines toten Hundes wird mir Schutz senden!")
 --				wait()
 --				say("Fass, Fu! Fass!")
 --				set_state(fighting)
@@ -421,12 +421,12 @@ end
 				q.set_title("Hundejagd")
 				notice("Erlege hungrige Wildhunde.")
 				send_letter("Erlegt hungrige Wildhunde.")
-				q.set_counter("Noch übrig", HuntAmount)
+				q.set_counter("Noch Ã¼brig", HuntAmount)
 			end
 			
 			when button or info begin
 				say_title("Erlege Wildhunde")
-				say(string.format("Erlegt %s hungrige Wildhunde um Fu zu rächen.", HuntAmount))
+				say(string.format("Erlegt %s hungrige Wildhunde um Fu zu rÃ¤chen.", HuntAmount))
 			end
 			
 			
@@ -438,7 +438,7 @@ end
 					q.set_counter_value(HuntAmount - pc.getqf("kill_count_1"))  
 					if HuntAmount == pc.getqf("kill_count_1") then
 						q.done()
-						notice("Das sollten genug Hunde gewesen sein, kehrt zu Seon-Hae zurück.")
+						notice("Das sollten genug Hunde gewesen sein, kehrt zu Seon-Hae zurÃ¼ck.")
 						set_state(back_to_npc)
 					end
 				end
@@ -448,8 +448,8 @@ end
 			state back_to_npc begin
 				when enter begin
 					q.start()
-					q.set_title("Zurück zu Seon-Hae")
-					send_letter("Zurück zu Seon-Hae")
+					q.set_title("ZurÃ¼ck zu Seon-Hae")
+					send_letter("ZurÃ¼ck zu Seon-Hae")
 					local v=find_npc_by_vnum(20095) -- Seon-Hae
 					if 0==v then
 					else
@@ -458,17 +458,17 @@ end
 				end
 				
 				when button or info begin
-					say_title("Zurück zu Seon-Hae")
-					say("Kehrt zu Seon-Hae zurück.")
+					say_title("ZurÃ¼ck zu Seon-Hae")
+					say("Kehrt zu Seon-Hae zurÃ¼ck.")
 				end
 				
 				when __TARGET2__.target.click begin
 					target.delete("__TARGET2__")
-						say("Gute Arbeit, ihr habt es den Biestern gezeigt! Mein kleiner Fu kann nun getrost ins Geisterreich übergehen.") -- white font text
+						say("Gute Arbeit, ihr habt es den Biestern gezeigt! Mein kleiner Fu kann nun getrost ins Geisterreich Ã¼bergehen.") -- white font text
 						wait()
-						say("Hier, dieses Geld hatte ich gespart um seine Leckereien zu kaufen. Ich schätze es gebührt euch.")
+						say("Hier, dieses Geld hatte ich gespart um seine Leckereien zu kaufen. Ich schÃ¤tze es gebÃ¼hrt euch.")
 						say_reward("Ihr erhaltet:")
-						say("Einen großen Beutel Yang")
+						say("Einen groÃŸen Beutel Yang")
 						q.done()
 						pc.change_money(10000)
 						pc.give_exp2(500)
@@ -482,7 +482,7 @@ end
 				q.set_title("Glockenblumen")
 				notice("Erlegt Wildhunde um Glockenblumen zu sammeln")
 				send_letter("Erlegt Wildhunde um Glockenblumen zu sammeln.")
-				q.set_counter("Noch übrig", GatherAmount)
+				q.set_counter("Noch Ã¼brig", GatherAmount)
 			end
 
 				when button or info begin
@@ -507,22 +507,22 @@ end
 --		state return_flowers
 --			when enter begin
 --				q.start()
---				q.set_title("Der Tee für Seon-Hae")
---				notice("Kehrt zu Seon-Hae zurück")
---				send_letter("Kehrt zu Seon-Hae zurück")
+--				q.set_title("Der Tee fÃ¼r Seon-Hae")
+--				notice("Kehrt zu Seon-Hae zurÃ¼ck")
+--				send_letter("Kehrt zu Seon-Hae zurÃ¼ck")
 --				if 0!=v then
 --					target.vid("__TARGET3__", v, "Seon-Hae")
 --				end
 --			end
 --
 --			when button or info begin
---				say_title("Glockenblumen für Seon-Hae")
---				say("Kehrt mit dne Glockenblumen zu Seon-Hae zurück.")
+--				say_title("Glockenblumen fÃ¼r Seon-Hae")
+--				say("Kehrt mit dne Glockenblumen zu Seon-Hae zurÃ¼ck.")
 --			end
 --			
 --			when __TARGET3__.target.click begin
 --				target.delete("__TARGET3__")
---				say("*Es dauert nicht lange, aus den Glockenblumen einen Tee zuzubereiten. Seon-Hae betrachtet euch wohlwollend als ihr ihm die Schale überreicht.*") -- white font text
+--				say("*Es dauert nicht lange, aus den Glockenblumen einen Tee zuzubereiten. Seon-Hae betrachtet euch wohlwollend als ihr ihm die Schale Ã¼berreicht.*") -- white font text
 --				wait()
 --				say("Das nenne ich gute Erziehung! Das war genau das,w as ich in dieser schweren Zeit brauchte. Ihr seid noch ein junger Mensch mit Manieren. Selten anzutreffen bei euch Abenteurern.")
 --				say_reward("*Seon-Hae steckt euch etwas zu:*")
@@ -568,7 +568,7 @@ end
 			
 			when button or info begin
 				say_title("Seon-Hae ausrauben")
-				say("Ihr habt Seon-Haes Wächter beseigt, nun ist es an der Zeit sich sein Geld zu schnappen.")
+				say("Ihr habt Seon-Haes WÃ¤chter beseigt, nun ist es an der Zeit sich sein Geld zu schnappen.")
 			end	
 			
 			when __TARGET2__.target.click begin
@@ -576,10 +576,10 @@ end
 					say_title("Das Geld von Seon-Ha")
 					say("Ihr... Ihr habt ihn erschlagen! Bitte, tut mir nicht das gleiche an, ihr sollt alles bekommen, was ich habe!") -- white font text
 					wait()
-					say("Da, nehmt meinen Besitz! Möge euch höchstpersönlich ein Metinstein auf den Kopf fallen, ehrloser Schurke!")
-					say_reward("Seon-Ha übergibt euch:")
+					say("Da, nehmt meinen Besitz! MÃ¶ge euch hÃ¶chstpersÃ¶nlich ein Metinstein auf den Kopf fallen, ehrloser Schurke!")
+					say_reward("Seon-Ha Ã¼bergibt euch:")
 					say_item_vnum(11)
-					say("und einen großen Beutel Yang")
+					say("und einen groÃŸen Beutel Yang")
 					q.done()
 					pc.change_money(10000)
 					pc.give_item2(11, 1)
@@ -590,10 +590,10 @@ end
 		
 --	 when 20095.Chat."Ziele festlegen" begin
 --		say_title("Challenge")
---		local s = select("Ziel auswählen", "Anzahl auswählen", "Zeit auswählen")
+--		local s = select("Ziel auswÃ¤hlen", "Anzahl auswÃ¤hlen", "Zeit auswÃ¤hlen")
 --		if s == 1 then
---	 		say_title("Ziel auswählen")
---		 	local t = select("Wildhunde", "Wölfe", "Tiger")
+--	 		say_title("Ziel auswÃ¤hlen")
+--		 	local t = select("Wildhunde", "WÃ¶lfe", "Tiger")
 --		 	if t == 1 then
 --		 		TargetSelector = Target1 
 --		 		TargetChallenge = 1 
@@ -730,7 +730,7 @@ end
 	
 	state challenge_success begin
 		when enter or login begin
-			notice(string.format("Du erhälst", Reward))
+			notice(string.format("Du erhÃ¤lst", Reward))
 			pc.change_money(Reward)
 			set_state(talk_seon)
 		end
