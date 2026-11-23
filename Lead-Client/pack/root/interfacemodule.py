@@ -1324,20 +1324,14 @@ class Interface(object):
 		else:
 			buttonImageFileName=iconName
 
-		if localeInfo.IsEUROPE():
-			if "highlight" == iconType:
-				btn.SetUpVisual("locale/ymir_ui/highlighted_quest.tga")
-				btn.SetOverVisual("locale/ymir_ui/highlighted_quest_r.tga")
-				btn.SetDownVisual("locale/ymir_ui/highlighted_quest_r.tga")
-			else:
-				btn.SetUpVisual(localeInfo.GetLetterCloseImageName())
-				btn.SetOverVisual(localeInfo.GetLetterOpenImageName())
-				btn.SetDownVisual(localeInfo.GetLetterOpenImageName())				
+		if "highlight" == iconType:
+			btn.SetUpVisual("locale/ymir_ui/highlighted_quest.tga")
+			btn.SetOverVisual("locale/ymir_ui/highlighted_quest_r.tga")
+			btn.SetDownVisual("locale/ymir_ui/highlighted_quest_r.tga")
 		else:
-			btn.SetUpVisual(buttonImageFileName)
-			btn.SetOverVisual(buttonImageFileName)
-			btn.SetDownVisual(buttonImageFileName)
-			btn.Flash()
+			btn.SetUpVisual(localeInfo.GetLetterCloseImageName())
+			btn.SetOverVisual(localeInfo.GetLetterOpenImageName())
+			btn.SetDownVisual(localeInfo.GetLetterOpenImageName())
 		# END_OF_QUEST_LETTER_IMAGE
 
 		if localeInfo.IsRTL():

@@ -33,55 +33,14 @@ VIRTUAL_KEY_ALPHABET_UPPERS  = r'{1234567890}?QWERTYUIOP|+ASDFGHJKL:~"ZXCVBNM<>'
 VIRTUAL_KEY_SYMBOLS    = '!@#$%^&*()_+|{}:"<>?~'
 VIRTUAL_KEY_NUMBERS    = "1234567890-=\[];',./`"
 
-__IS_ENGLISH	= "ENGLISH" == app.GetLocaleServiceName()	
-__IS_HONGKONG	= "HONGKONG" == app.GetLocaleServiceName()
-__IS_EUROPE		= "EUROPE" == app.GetLocaleServiceName()		
-__IS_CANADA		= "locale/ca" == app.GetLocalePath()
-__IS_SINGAPORE	= "locale/sg" == app.GetLocalePath()
-__IS_VIETNAM	= "locale/vn" == app.GetLocalePath()
 __IS_RTL		= "locale/ae" == app.GetLocalePath()
-__IS_WE_KOREA	= "locale/we_korea" == app.GetLocalePath()
-__IS_TAIWAN		= "locale/taiwan" == app.GetLocalePath()
 LOGIN_FAILURE_WRONG_SOCIALID = "ASDF"
 LOGIN_FAILURE_SHUTDOWN_TIME = "ASDF"
 
-if __IS_CANADA:
-	__IS_EUROPE = True
-
-def IsENGLISH():
-	global __IS_ENGLISH
-	return __IS_ENGLISH
-
-def IsHONGKONG():
-	global __IS_HONGKONG
-	return __IS_HONGKONG
-
-def IsTAIWAN():
-	return "locale/taiwan" == app.GetLocalePath()
-	
-def IsEUROPE():
-	global __IS_EUROPE
-	return __IS_EUROPE
-
-def IsCANADA():
-	global __IS_CANADA
-	return __IS_CANADA
-
-def IsVIETNAM():
-	global __IS_VIETNAM
-	return __IS_VIETNAM
-
-def IsSINGAPORE():
-	global __IS_SINGAPORE
-	return __IS_SINGAPORE
-	
 def IsRTL():
 	global __IS_RTL
 	return __IS_RTL
 
-def IsWE_KOREA():
-	return "locale/we_korea" == app.GetLocalePath()
-	
 def LoadLocaleData():
 	app.LoadLocaleData(app.GetLocalePath())
 
@@ -134,102 +93,16 @@ def LoadLocaleFile(srcFileName, localeDict):
 	
 all = ["locale","error"]
 
-if IsEUROPE():
-	FN_GM_MARK = "%s/effect/gm.mse"	% app.GetLocalePath()
-	LOCALE_FILE_NAME = "%s/locale_game.txt" % app.GetLocalePath()
-	constInfo.IN_GAME_SHOP_ENABLE = 0
-elif IsSINGAPORE() :
-	FN_GM_MARK = "%s/effect/gm.mse"	% app.GetLocalePath()
-	LOCALE_FILE_NAME = "%s/locale_game.txt" % app.GetLocalePath()
-	constInfo.IN_GAME_SHOP_ENABLE = 0
-elif IsTAIWAN():
-	APP_TITLE = "��III��"
-	FN_GM_MARK = "%s/effect/gm.mse"	% app.GetLocalePath()
-	LOCALE_FILE_NAME = "%s/locale_game.txt" % app.GetLocalePath()
-
-	constInfo.IN_GAME_SHOP_ENABLE = 1
-	
-else:
-	FN_GM_MARK = "%s/effect/gm.mse"	% app.GetLocalePath()
-	LOCALE_FILE_NAME = "%s/locale_game.txt" % app.GetLocalePath()
-
-	constInfo.IN_GAME_SHOP_ENABLE = 1
+FN_GM_MARK = "%s/effect/gm.mse"	% app.GetLocalePath()
+LOCALE_FILE_NAME = "%s/locale_game.txt" % app.GetLocalePath()
+constInfo.IN_GAME_SHOP_ENABLE = 0
 
 LoadLocaleFile(LOCALE_FILE_NAME, locals())
 
 ########################################################################################################
-dictSingleWord = {
-	"m":1, "n":1, "r":1, "M":1, "N":1, "R":1, "l":1, "L":1, "1":1, "3":1, "6":1, "7":1, "8":1, "0":1,
-}
-
-dictDoubleWord = {
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�v":1, "��":1, "��":1, "��":1, "�R":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "�x":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�m":1, "��":1, "��":1, "��":1, "�O":1, "��":1, "��":1, "��":1, "��":1, "�l":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�u":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "�X":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�o":1, "��":1, "��":1, "��":1, "�y":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�p":1,
-	"¥":1, "¹":1, "¼":1, "��":1, "��":1, "�c":1, "��":1, "��":1, "��":1, "��":1, "°":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�R":1, "��":1, "��":1, "�n":1,
-	"��":1, "í":1, "ó":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "ġ":1, "ä":1, "��":1, "ü":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "�M":1,
-	"ī":1, "ļ":1, "Ŀ":1, "��":1, "��":1, "��":1, "��":1, "ť":1, "ũ":1, "Ű":1, "ĳ":1, "�m":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1,
-	"Ÿ":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "Ʃ":1, "Ʈ":1, "Ƽ":1, "��":1, "�O":1, "��":1, "��":1, "��":1, "��":1, "��":1, "ơ":1, "��":1, "Ƣ":1, "Ʒ":1,
-	"��":1, "��":1, "��":1, "��":1, "��":1, "ǥ":1, "Ǫ":1, "ǻ":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "ǡ":1, "��":1, "Ǵ":1, "�R":1, "ǣ":1, "Ƕ":1, "�c":1,
-	"��":1, "��":1, "��":1, "��":1, "ȣ":1, "ȿ":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "��":1, "ȭ":1, "ȳ":1, "��":1, "��":1, "ȸ":1, "��":1, "��":1,
-}
-
 locale = mapping(
 )
 
-
-def GetAuxiliaryWordType(text):
-
-	textLength = len(text)
-
-	if textLength > 1:
-
-		singleWord = text[-1]
-
-		if (singleWord >= '0' and singleWord <= '9') or\
-			(singleWord >= 'a' and singleWord <= 'z') or\
-			(singleWord >= 'A' and singleWord <= 'Z'):
-			if not dictSingleWord.has_key(singleWord):
-				return 1
-
-		elif dictDoubleWord.has_key(text[-2:]):
-			return 1
-
-	return 0
-
-
-
-def CutMoneyString(sourceText, startIndex, endIndex, insertingText, backText):
-
-	sourceLength = len(sourceText)
-
-	if sourceLength < startIndex:
-		return backText
-
-	text = sourceText[max(0, sourceLength-endIndex):sourceLength-startIndex]
-
-	if not text:
-		return backText
-
-	if int(text) <= 0:
-		return backText
-
-	text = str(int(text))
-
-	if backText:
-		backText = " " + backText
-
-	return text + insertingText + backText
 
 def SecondToDHM(time):
 	if time < 60:
@@ -583,268 +456,56 @@ def GetLetterOpenImageName():
 def GetLetterCloseImageName():
 	return "season1/icon/scroll_close.tga"
 
-if 949 == app.GetDefaultCodePage():
-	def EUL(name):
-		if GetAuxiliaryWordType(name):
-			return "�� "
-		else:
-			return "�� "
+def DO_YOU_SELL_ITEM(sellItemName, sellItemCount, sellItemPrice):
+	if sellItemCount > 1 :
+		return DO_YOU_SELL_ITEM2 % (sellItemName, sellItemCount, NumberToMoneyString(sellItemPrice) )
+	else:
+		return DO_YOU_SELL_ITEM1 % (sellItemName, NumberToMoneyString(sellItemPrice) )
 
-	def I(name):
-		if GetAuxiliaryWordType(name):
-			return "�� "
-		else:
-			return "�� "
-
-	def DO_YOU_SELL_ITEM(sellItemName, sellItemCount, sellItemPrice):
-		name = sellItemName
-		if sellItemCount > 1:
-			name += " "
-			name += str(sellItemCount)
-			name += "��"
-
-		return name + EUL(name) + str(sellItemPrice) + "�ɿ� �Ľðڽ��ϱ�?"
-
-	def DO_YOU_BUY_ITEM(sellItemName, sellItemCount, sellItemPrice):
-		name = sellItemName
-		if sellItemCount > 1:
-			name += " "
-			name += str(sellItemCount)
-			name += "��"
-
-		return name + EUL(name) + str(sellItemPrice) + "�� ��ðڽ��ϱ�?"
-
-	def REFINE_FAILURE_CAN_NOT_ATTACH(attachedItemName):
-		return attachedItemName+EUL(attachedItemName)+"������ �� ���� �������Դϴ�"
-
-	def REFINE_FAILURE_NO_SOCKET(attachedItemName):
-		return attachedItemName+EUL(attachedItemName)+"������ �� �ִ� ������ �����ϴ�"	
-
-	def REFINE_FAILURE_NO_GOLD_SOCKET(attachedItemName):
-		return attachedItemName+EUL(attachedItemName)+"������ �� �ִ� Ȳ�� ������ �����ϴ�"	
-
-	def HOW_MANY_ITEM_DO_YOU_DROP(dropItemName, dropItemCount):
-		name = dropItemName
-		if dropItemCount > 1:
-			name += " "
-			name += str(dropItemCount)
-			name += "��"
-
-		return name+EUL(name)+"�����ðڽ��ϱ�?"
-
-	def NumberToMoneyString(number):
-		if number <= 0:
-			return "0��"
-
-		number = str(number)
-		result = CutMoneyString(number, 0, 4, "", "")
-		result = CutMoneyString(number, 4, 8, "��", result)
-		result = CutMoneyString(number, 8, 12, "��", result)
-		result = result + "��"
-
-		return result
-
-	def NumberToSecondaryCoinString(number):
-		if number <= 0:
-			return "0��"
-
-		number = str(number)
-		result = CutMoneyString(number, 0, 4, "", "")
-		result = CutMoneyString(number, 4, 8, "��", result)
-		result = CutMoneyString(number, 8, 12, "��", result)
-		result = result + "��"
-
-		return result
-
-	def FISHING_NOTIFY(isFish, fishName):
-		if isFish:
-			return fishName + I(fishName) + "�� �� �մϴ�."
-		else:
-			return fishName + I(fishName) + "�ɸ��� �մϴ�."
-
-	def FISHING_SUCCESS(isFish, fishName):
-		if isFish:
-			return fishName + EUL(fishName) + "��ҽ��ϴ�!"
-		else:
-			return fishName + EUL(fishName) + "������ϴ�!"
-
-elif 932 == app.GetDefaultCodePage():
-	def DO_YOU_SELL_ITEM(sellItemName, sellItemCount, sellItemPrice):
-		if sellItemCount > 1 :
-			return "%s %s �� %s�ɔ���܂����H" % ( sellItemName, sellItemCount, NumberToMoneyString(sellItemPrice) )
-		else:
-			return "%s �� %s�Ŕ���܂����H" % (sellItemName, NumberToMoneyString(sellItemPrice) )
-
-	def DO_YOU_BUY_ITEM(buyItemName, buyItemCount, buyItemPrice) :
-		if buyItemCount > 1 :
-			return "%s %s�� %s�Ŕ����܂����H" % ( buyItemName, buyItemCount, buyItemPrice )
-		else:
-			return "%s�� %s�Ŕ����܂����H" % ( buyItemName, buyItemPrice )
-			
-	def REFINE_FAILURE_CAN_NOT_ATTACH(attachedItemName) :
-		return "%s�𑕒��ł��Ȃ��A�C�e?�ł��B" % (attachedItemName)
-
-	def REFINE_FAILURE_NO_SOCKET(attachedItemName) :
-		return "%s�𑕒�����?�P�b�g������܂���B" % (attachedItemName)
-
-	def REFINE_FAILURE_NO_GOLD_SOCKET(attachedItemName) :
-		return "%s�𑕒��ł��鉩��?�P�b�g������܂���B" % (attachedItemName)
+def DO_YOU_BUY_ITEM(buyItemName, buyItemCount, buyItemPrice) :
+	if buyItemCount > 1 :
+		return DO_YOU_BUY_ITEM2 % ( buyItemName, buyItemCount, buyItemPrice )
+	else:
+		return DO_YOU_BUY_ITEM1 % ( buyItemName, buyItemPrice )
 		
-	def HOW_MANY_ITEM_DO_YOU_DROP(dropItemName, dropItemCount) :
-		if dropItemCount > 1 :
-			return "%s %d ���̂Ă܂����H" % (dropItemName, dropItemCount)
-		else :	
-			return "%s���̂Ă܂����H" % (dropItemName)
+def REFINE_FAILURE_CAN_NOT_ATTACH(attachedItemName) :
+	return REFINE_FAILURE_CAN_NOT_ATTACH0 % (attachedItemName)
 
-	def FISHING_NOTIFY(isFish, fishName) :
-		if isFish :
-			return "%s ���H�������悤�ł�" % ( fishName )
-		else :
-			return "%s �����������悤�ł�" % ( fishName )
+def REFINE_FAILURE_NO_SOCKET(attachedItemName) :
+	return REFINE_FAILURE_NO_SOCKET0 % (attachedItemName)
 
-	def FISHING_SUCCESS(isFish, fishName) :
-		if isFish :
-			return "%s ��߂܂��܂����I" % (fishName)
-		else :
-			return "%s ����ɓ���܂����I" % (fishName)
-			
-	def NumberToMoneyString(number) :
-		if number <= 0 :
-			return "0��"
+def REFINE_FAILURE_NO_GOLD_SOCKET(attachedItemName) :
+	return REFINE_FAILURE_NO_GOLD_SOCKET0 % (attachedItemName)
+	
+def HOW_MANY_ITEM_DO_YOU_DROP(dropItemName, dropItemCount) :
+	if dropItemCount > 1 :
+		return HOW_MANY_ITEM_DO_YOU_DROP2 % (dropItemName, dropItemCount)
+	else :	
+		return HOW_MANY_ITEM_DO_YOU_DROP1 % (dropItemName)
 
-		number = str(number)
-		result = CutMoneyString(number, 0, 4, "", "")
-		result = CutMoneyString(number, 4, 8, "��", result)
-		result = CutMoneyString(number, 8, 12, "��", result)
-		result = result + "��"
+def FISHING_NOTIFY(isFish, fishName) :
+	if isFish :
+		return FISHING_NOTIFY1 % ( fishName )
+	else :
+		return FISHING_NOTIFY2 % ( fishName )
 
-		return result
-	def NumberToSecondaryCoinString(number) :
-		if number <= 0 :
-			return "0jun"
-
-		number = str(number)
-		result = CutMoneyString(number, 0, 4, "", "")
-		result = CutMoneyString(number, 4, 8, "��", result)
-		result = CutMoneyString(number, 8, 12, "��", result)
-		result = result + "jun"
-
-		return result
-elif IsHONGKONG():
-	def DO_YOU_SELL_ITEM(sellItemName, sellItemCount, sellItemPrice):
-		if sellItemCount > 1 :
-			return DO_YOU_SELL_ITEM2 % (sellItemName, sellItemCount, NumberToMoneyString(sellItemPrice) )
-		else:
-			return DO_YOU_SELL_ITEM1 % (sellItemName, NumberToMoneyString(sellItemPrice) )
-
-	def DO_YOU_BUY_ITEM(buyItemName, buyItemCount, buyItemPrice) :
-		if buyItemCount > 1 :
-			return DO_YOU_BUY_ITEM2 % ( buyItemName, buyItemCount, buyItemPrice )
-		else:
-			return DO_YOU_BUY_ITEM1 % ( buyItemName, buyItemPrice )
-			
-	def REFINE_FAILURE_CAN_NOT_ATTACH(attachedItemName) :
-		return REFINE_FAILURE_CAN_NOT_ATTACH0 % (attachedItemName)
-
-	def REFINE_FAILURE_NO_SOCKET(attachedItemName) :
-		return REFINE_FAILURE_NO_SOCKET0 % (attachedItemName)
-
-	def REFINE_FAILURE_NO_GOLD_SOCKET(attachedItemName) :
-		return REFINE_FAILURE_NO_GOLD_SOCKET0 % (attachedItemName)
+def FISHING_SUCCESS(isFish, fishName) :
+	if isFish :
+		return FISHING_SUCCESS1 % (fishName)
+	else :
+		return FISHING_SUCCESS2 % (fishName)
 		
-	def HOW_MANY_ITEM_DO_YOU_DROP(dropItemName, dropItemCount) :
-		if dropItemCount > 1 :
-			return HOW_MANY_ITEM_DO_YOU_DROP2 % (dropItemName, dropItemCount)
-		else :	
-			return HOW_MANY_ITEM_DO_YOU_DROP1 % (dropItemName)
+def NumberToMoneyString(n) :
+	if n <= 0 :
+		return "0 %s" % (MONETARY_UNIT0)
 
-	def FISHING_NOTIFY(isFish, fishName) :
-		if isFish :
-			return FISHING_NOTIFY1 % ( fishName )
-		else :
-			return FISHING_NOTIFY2 % ( fishName )
+	return "%s %s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ]), MONETARY_UNIT0) 
 
-	def FISHING_SUCCESS(isFish, fishName) :
-		if isFish :
-			return FISHING_SUCCESS1 % (fishName)
-		else :
-			return FISHING_SUCCESS2 % (fishName)
-			
-	def NumberToMoneyString(number) :
-		if number <= 0 :
-			return "0 %s" % (MONETARY_UNIT0)
+def NumberToSecondaryCoinString(n) :
+	if n <= 0 :
+		return "0 %s" % (MONETARY_UNIT_JUN)
 
-		number = str(number)
-		result = CutMoneyString(number, 0, 4, 	"", "")
-		result = CutMoneyString(number, 4, 8, 	MONETARY_UNIT1, result)
-		result = CutMoneyString(number, 8, 12, 	MONETARY_UNIT2, result)
-		result = result + MONETARY_UNIT0
+	return "%s %s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ]), MONETARY_UNIT_JUN) 
 
-		return result
-
-	def NumberToSecondaryCoinString(number) :
-		if number <= 0 :
-			return "0 %s" % (MONETARY_UNIT_JUN)
-
-		number = str(number)
-		result = CutMoneyString(number, 0, 4, 	"", "")
-		result = CutMoneyString(number, 4, 8, 	MONETARY_UNIT1, result)
-		result = CutMoneyString(number, 8, 12, 	MONETARY_UNIT2, result)
-		result = result + MONETARY_UNIT_JUN
-
-		return result
-
-elif IsEUROPE() and not IsWE_KOREA():
-	def DO_YOU_SELL_ITEM(sellItemName, sellItemCount, sellItemPrice):
-		if sellItemCount > 1 :
-			return DO_YOU_SELL_ITEM2 % (sellItemName, sellItemCount, NumberToMoneyString(sellItemPrice) )
-		else:
-			return DO_YOU_SELL_ITEM1 % (sellItemName, NumberToMoneyString(sellItemPrice) )
-
-	def DO_YOU_BUY_ITEM(buyItemName, buyItemCount, buyItemPrice) :
-		if buyItemCount > 1 :
-			return DO_YOU_BUY_ITEM2 % ( buyItemName, buyItemCount, buyItemPrice )
-		else:
-			return DO_YOU_BUY_ITEM1 % ( buyItemName, buyItemPrice )
-			
-	def REFINE_FAILURE_CAN_NOT_ATTACH(attachedItemName) :
-		return REFINE_FAILURE_CAN_NOT_ATTACH0 % (attachedItemName)
-
-	def REFINE_FAILURE_NO_SOCKET(attachedItemName) :
-		return REFINE_FAILURE_NO_SOCKET0 % (attachedItemName)
-
-	def REFINE_FAILURE_NO_GOLD_SOCKET(attachedItemName) :
-		return REFINE_FAILURE_NO_GOLD_SOCKET0 % (attachedItemName)
-		
-	def HOW_MANY_ITEM_DO_YOU_DROP(dropItemName, dropItemCount) :
-		if dropItemCount > 1 :
-			return HOW_MANY_ITEM_DO_YOU_DROP2 % (dropItemName, dropItemCount)
-		else :	
-			return HOW_MANY_ITEM_DO_YOU_DROP1 % (dropItemName)
-
-	def FISHING_NOTIFY(isFish, fishName) :
-		if isFish :
-			return FISHING_NOTIFY1 % ( fishName )
-		else :
-			return FISHING_NOTIFY2 % ( fishName )
-
-	def FISHING_SUCCESS(isFish, fishName) :
-		if isFish :
-			return FISHING_SUCCESS1 % (fishName)
-		else :
-			return FISHING_SUCCESS2 % (fishName)
-			
-	def NumberToMoneyString(n) :
-		if n <= 0 :
-			return "0 %s" % (MONETARY_UNIT0)
-
-		return "%s %s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ]), MONETARY_UNIT0) 
-
-	def NumberToSecondaryCoinString(n) :
-		if n <= 0 :
-			return "0 %s" % (MONETARY_UNIT_JUN)
-
-		return "%s %s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ]), MONETARY_UNIT_JUN) 
-
-	def DottedNumber(n) :
-		return "%s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ])) 
+def DottedNumber(n) :
+	return "%s" % ('.'.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ])) 

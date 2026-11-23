@@ -25,14 +25,10 @@ DISABLE_GUILD_SKILL = False
 DISABLE_DECLARE_WAR = False
 
 def NumberToMoneyString(n):
-	return localeInfo.NumberToMoneyString(n)
+	if n <= 0 :
+		return "0"
 
-if (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/br"):
-	def NumberToMoneyString(n):
-		if n <= 0 :
-			return "0"
-
-		return "%s" % (','.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ]))
+	return "%s" % (','.join([ i-3<0 and str(n)[:i] or str(n)[i-3:i] for i in range(len(str(n))%3, len(str(n))+1, 3) if i ]))
 
 MATERIAL_STONE_INDEX = 0
 MATERIAL_LOG_INDEX = 1
@@ -827,18 +823,9 @@ class GuildWindow(ui.ScriptWindow):
 					"SKILL"			: self.PageWindow(self, uiScriptLocale.LOCALE_UISCRIPT_PATH + "guildwindow_guildskillpage.py"),
 					"GRADE"			: self.PageWindow(self, "uiscript/guildwindow_gradepage.py"),
 				}
-			elif localeInfo.IsEUROPE() and not app.GetLocalePath() == "locale/ca" :
-				self.pageWindow = {
-					"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage_eu.py"),
-					"BOARD"			: self.PageWindow(self, "uiscript/guildwindow_boardpage.py"),
-					"MEMBER"		: self.PageWindow(self, "uiscript/guildwindow_memberpage.py"),
-					"BASE_INFO"		: self.PageWindow(self, "uiscript/guildwindow_baseinfopage.py"),
-					"SKILL"			: self.PageWindow(self, "uiscript/guildwindow_guildskillpage.py"),
-					"GRADE"			: self.PageWindow(self, "uiscript/guildwindow_gradepage.py"),
-				}
 			else:
 				self.pageWindow = {
-					"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage.py"),
+					"GUILD_INFO"	: self.PageWindow(self, "uiscript/guildwindow_guildinfopage_eu.py"),
 					"BOARD"			: self.PageWindow(self, "uiscript/guildwindow_boardpage.py"),
 					"MEMBER"		: self.PageWindow(self, "uiscript/guildwindow_memberpage.py"),
 					"BASE_INFO"		: self.PageWindow(self, "uiscript/guildwindow_baseinfopage.py"),
@@ -1933,25 +1920,11 @@ class GuildWindow(ui.ScriptWindow):
 
 class BuildGuildBuildingWindow(ui.ScriptWindow):
 
-	if localeInfo.IsEUROPE():
-		GUILD_CATEGORY_LIST = (
-				("HEADQUARTER", localeInfo.GUILD_HEADQUARTER),
-				("FACILITY", 	localeInfo.GUILD_FACILITY),
-				("OBJECT", 	localeInfo.GUILD_OBJECT),
-			)
-	else:
-		try :
-			GUILD_CATEGORY_LIST = (
-					("HEADQUARTER", localeInfo.GUILD_HEADQUARTER),
-					("FACILITY", 	localeInfo.GUILD_FACILITY),
-					("OBJECT", 	localeInfo.GUILD_OBJECT),
-				)
-		except:
-			GUILD_CATEGORY_LIST = (
-					("HEADQUARTER", "Main Building"),
-					("FACILITY", "Facility"),
-					("OBJECT", "Object"),
-				)
+	GUILD_CATEGORY_LIST = (
+			("HEADQUARTER", localeInfo.GUILD_HEADQUARTER),
+			("FACILITY", 	localeInfo.GUILD_FACILITY),
+			("OBJECT", 	localeInfo.GUILD_OBJECT),
+		)
 
 	MODE_VIEW = 0
 	MODE_POSITIONING = 1
@@ -2382,14 +2355,9 @@ class BuildGuildBuildingWindow(ui.ScriptWindow):
 		self.needLogCount = int(materialList[MATERIAL_LOG_INDEX])
 		self.needPlywoodCount = int(materialList[MATERIAL_PLYWOOD_INDEX])
 
-		if (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/ca") and (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/br"):
-			self.buildingMaterialStoneValue.SetText(materialList[MATERIAL_STONE_INDEX])
-			self.buildingMaterialLogValue.SetText(materialList[MATERIAL_LOG_INDEX] )
-			self.buildingMaterialPlywoodValue.SetText(materialList[MATERIAL_PLYWOOD_INDEX])
-		else:
-			self.buildingMaterialStoneValue.SetText(materialList[MATERIAL_STONE_INDEX] + localeInfo.THING_COUNT)
-			self.buildingMaterialLogValue.SetText(materialList[MATERIAL_LOG_INDEX] + localeInfo.THING_COUNT)
-			self.buildingMaterialPlywoodValue.SetText(materialList[MATERIAL_PLYWOOD_INDEX] + localeInfo.THING_COUNT)
+		self.buildingMaterialStoneValue.SetText(materialList[MATERIAL_STONE_INDEX])
+		self.buildingMaterialLogValue.SetText(materialList[MATERIAL_LOG_INDEX] )
+		self.buildingMaterialPlywoodValue.SetText(materialList[MATERIAL_PLYWOOD_INDEX])
 		if self.__IsEnoughMoney():
 			self.buildingPriceValue.SetPackedFontColor(self.ENABLE_COLOR)
 		else:

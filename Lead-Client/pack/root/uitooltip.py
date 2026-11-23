@@ -207,10 +207,7 @@ class ToolTip(ui.ThinBoard):
 		return textLine
 
 	def AppendDescription(self, desc, limit, color = FONT_COLOR):
-		if localeInfo.IsEUROPE():
-			self.__AppendDescription_WesternLanguage(desc, color)
-		else:
-			self.__AppendDescription_EasternLanguage(desc, limit, color)
+		self.__AppendDescription_WesternLanguage(desc, color)
 
 	def __AppendDescription_EasternLanguage(self, description, characterLimitation, color=FONT_COLOR):
 		length = len(description)
