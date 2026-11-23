@@ -90,10 +90,10 @@ void SendBlockChatInfo(LPCHARACTER ch, int sec)
 		return;
 	}
 
-	long hour = sec / 3600;
+	int hour = sec / 3600;
 	sec -= hour * 3600;
 
-	long min = (sec / 60);
+	int min = (sec / 60);
 	sec -= min * 60;
 
 	char buf[128+1];
