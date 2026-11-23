@@ -105,7 +105,6 @@ window = {
 					)
 				},
 				{
-					## 툴팁을 띄우기 위한 윈도우
 					"name" : "HPGauge_Board",
 					"type" : "window",
 
@@ -150,7 +149,6 @@ window = {
 					),
 				},
 				{
-					## 툴팁을 띄우기 위한 윈도우
 					"name" : "SPGauge_Board",
 					"type" : "window",
 
@@ -195,7 +193,6 @@ window = {
 					),
 				},
 				{
-					## 툴팁을 띄우기 위한 윈도우
 					"name" : "STGauge_Board",
 					"type" : "window",
 
@@ -388,8 +385,6 @@ window = {
 			"children" :
 			(
 				{
-					# ExpandButton은 기존에 ChatButton이었으나, ChatButton의 효용성이 적다 판단하여
-					# ExpandButton으로 바뀐 것이다.
 					"name" : "ExpandButton",
 					"type" : "button",
 

@@ -14,7 +14,6 @@ window = {
 
 	"children" :
 	(
-		# ±â·Â
 		{
 			"name" : "EnergyGauge_Board",
 			"type" : "image",
