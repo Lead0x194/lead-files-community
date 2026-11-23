@@ -1,5 +1,6 @@
 ﻿#include "StdAfx.h"
 #include "PythonQuest.h"
+#include "Locale.h"
 
 void CPythonQuest::RegisterQuestInstance(const SQuestInstance & c_rQuestInstance)
 {
@@ -188,9 +189,14 @@ PyObject * questGetQuestData(PyObject * poSelf, PyObject * poArgs)
 		}
 	}
 
-	return Py_BuildValue("sNsi",	pQuestInstance->strTitle.c_str(),
+	std::string strTitle(pQuestInstance->strTitle);
+	std::string strCounterName(pQuestInstance->strCounterName);
+	LocaleService_ReplaceTags(strTitle);
+	LocaleService_ReplaceTags(strCounterName);
+
+	return Py_BuildValue("sNsi",	strTitle.c_str(),
 									Py_BuildHandle(pImage),
-									pQuestInstance->strCounterName.c_str(),
+									strCounterName.c_str(),
 									pQuestInstance->iCounterValue);
 }
 
@@ -230,7 +236,10 @@ PyObject * questGetQuestLastTime(PyObject * poSelf, PyObject * poArgs)
 //		iLastTime = int(CTimer::Instance().GetCurrentSecond()) - pQuestInstance->iStartTime;
 //	}
 
-	return Py_BuildValue("si", pQuestInstance->strClockName.c_str(), iLastTime);
+	std::string strClockName(pQuestInstance->strClockName);
+	LocaleService_ReplaceTags(strClockName);
+
+	return Py_BuildValue("si", strClockName.c_str(), iLastTime);
 }
 
 PyObject * questClear(PyObject * poSelf, PyObject * poArgs)
