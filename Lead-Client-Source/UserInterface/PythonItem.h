@@ -122,6 +122,11 @@ class CPythonItem : public CSingleton<CPythonItem>
 
 	protected:
 		TGroundItemInstanceMap				m_GroundItemInstanceMap;
+
+	public:
+		void	RefreshNames();
+
+	protected:
 		CDynamicPool<TGroundItemInstance>	m_GroundItemInstancePool;
 
 		DWORD m_dwDropItemEffectID;

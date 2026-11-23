@@ -1613,12 +1613,18 @@ class Interface(object):
 		self.__ShowWindows(self.wndGuildBuilding.wnds)
 		self.wndGuildBuilding = None
 
-	def __ChangeLanguage(self):
-		name = localeInfo.REQUESTED_LANGUAGE
-		localeInfo.REQUESTED_LANGUAGE = None
+	REBUILD_KEEP_OPEN_LIST = ("wndCharacter", "wndInventory", "wndDragonSoul", "wndMessenger", "wndGuild", "wndChatLog", "wndExpandedTaskBar")
 
-		if not localeInfo.SetLanguage(name):
-			return
+	def Rebuild(self):
+		openDict = {}
+		for windowName in self.REBUILD_KEEP_OPEN_LIST:
+			window = getattr(self, windowName, None)
+			if window and window.IsShow():
+				openDict[windowName] = window.GetGlobalPosition()
+
+		systemOptionPosition = None
+		if self.dlgSystem.IsSystemOptionOpen():
+			systemOptionPosition = self.dlgSystem.systemOptionDlg.GetGlobalPosition()
 
 		questButtonList = [(btn.index, btn.name, btn.iconType, btn.iconName) for btn in self.questButtonList]
 		partyMemberList = [(board.GetCharacterPID(), board.GetCharacterName(), board.GetCharacterVID()) for board in self.wndParty.partyMemberInfoBoardList]
@@ -1645,11 +1651,16 @@ class Interface(object):
 		self.RefreshQuest()
 		self.RefreshMessenger()
 
-	def BUILD_OnUpdate(self):
-		if localeInfo.REQUESTED_LANGUAGE:
-			self.__ChangeLanguage()
-			return
+		for windowName, position in openDict.items():
+			window = getattr(self, windowName, None)
+			if window:
+				window.SetPosition(*position)
+				window.Show()
 
+		if systemOptionPosition:
+			self.dlgSystem.OpenSystemOption().SetPosition(*systemOptionPosition)
+
+	def BUILD_OnUpdate(self):
 		if not self.wndGuildBuilding:
 			return
 

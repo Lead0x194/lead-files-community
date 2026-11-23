@@ -528,6 +528,7 @@ class AffectShower(ui.Window):
 				image.SetDescription(description)
 				image.SetDuration(duration)
 				image.SetAffect(affect)
+				image.descriptionValue = float(value)
 				if affect == chr.NEW_AFFECT_EXP_BONUS_EURO_FREE or\
 					affect == chr.NEW_AFFECT_EXP_BONUS_EURO_FREE_UNDER_15 or\
 					self.INFINITE_AFFECT_DURATION < duration:
@@ -593,7 +594,31 @@ class AffectShower(ui.Window):
 		if self.lovePointImage:
 			self.lovePointImage.OnUpdateLovePoint(lovePoint)
 
+	def RefreshDescription(self, affectDataDict):
+		for affect, image in self.affectImageDict.items():
+			if not affectDataDict.has_key(affect):
+				continue
+
+			description = affectDataDict[affect][0]
+
+			if image.IsSkillAffect():
+				skillIndex = player.AffectIndexToSkillIndex(affect)
+				if 0 != skillIndex:
+					description = skill.GetSkillName(skillIndex)
+				image.SetToolTipText(description, 0, 40)
+			elif affect == chr.NEW_AFFECT_AUTO_SP_RECOVERY or affect == chr.NEW_AFFECT_AUTO_HP_RECOVERY:
+				image.SetDescription(description)
+				image.UpdateAutoPotionDescription()
+			else:
+				image.SetDescription(description(image.descriptionValue))
+				image.UpdateDescription()
+
+		if self.horseImage:
+			self.SetHorseState(*self.horseState)
+
 	def SetHorseState(self, level, health, battery):
+		self.horseState = (level, health, battery)
+
 		if level==0:
 			self.horseImage=None
 		else:

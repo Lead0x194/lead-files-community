@@ -754,8 +754,26 @@ bool LoadLocaleTexts(const char* localePath)
 	snprintf(szFileName, sizeof(szFileName), "%s/itemdesc.txt", localePath);
 	CItemManager::Instance().LoadItemDesc(szFileName);
 
+	CPythonNonPlayer& rkNonPlayer = CPythonNonPlayer::Instance();
+	CPythonCharacterManager& rkChrMgr = CPythonCharacterManager::Instance();
+	std::vector<CInstanceBase*> kInstVector;
+	const char* c_szName;
+
+	for (CPythonCharacterManager::CharacterIterator i = rkChrMgr.CharacterInstanceBegin(); i != rkChrMgr.CharacterInstanceEnd(); ++i)
+	{
+		CInstanceBase* pkInst = *i;
+		if (!pkInst->IsPC() && rkNonPlayer.GetName(pkInst->GetRace(), &c_szName) && !strcmp(c_szName, pkInst->GetNameString()))
+			kInstVector.push_back(pkInst);
+	}
+
 	snprintf(szFileName, sizeof(szFileName), "%s/mob_names.txt", localePath);
-	CPythonNonPlayer::Instance().LoadNames(szFileName);
+	rkNonPlayer.LoadNames(szFileName);
+
+	for (CInstanceBase* pkInst : kInstVector)
+		if (rkNonPlayer.GetName(pkInst->GetRace(), &c_szName))
+			pkInst->ChangeName(c_szName);
+
+	CPythonItem::Instance().RefreshNames();
 
 	snprintf(szFileName, sizeof(szFileName), "%s/SkillDesc.txt", localePath);
 	return CPythonSkill::Instance().RegisterSkillDesc(szFileName);
