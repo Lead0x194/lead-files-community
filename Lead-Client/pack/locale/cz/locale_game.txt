@@ -1,0 +1,956 @@
+AFF_LOVE_POINT	Body za lásku: %d%%
+ALIGNMENT_NAME	Hodnost:
+ATTACK_ERROR_UNKNOWN	Neznámá chyba v útoku: %s
+CANNOT_ATTACK_DEST_IN_SAFE	Soupeř je příliš daleko.
+CANNOT_ATTACK_SELF_IN_SAFE	Odtud nemůžu zaútočit na nepřítele.
+CANNOT_EQUIP_IN_EXCHANGE	Když obchoduješ, nemůžeš měnit výzbroj.
+CANNOT_EQUIP_IN_SHOP	Když obchoduješ, nemůžeš měnit výzbroj.
+CANNOT_OPEN_PRIVATE_SHOP_IN_SAFE_AREA	Nemůžeš soukromý stánek otevřít na veřejném místě.
+CANNOT_SHOOT_DEST_IN_SAFE	Nepřítel je příliš daleko.
+CANNOT_SHOOT_EMPTY_ARROW	Potřebuji šíp.
+CANNOT_SHOOT_SELF_IN_SAFE	Odtud nemůžu zaútočit na nepřítele.
+CANNOT_SKILL_APPROACH	Jsem si jistý, že se už blíž nedostanu.
+CANNOT_SKILL_ATTACK	Nemůžu na to zaútočit.
+CANNOT_SKILL_BLUE	Nemůžeš použít Duši modrého vlka když je Duše purpurového vlka aktivní.
+CANNOT_SKILL_DEST_IN_SAFE	Soupeř je příliš daleko.
+CANNOT_SKILL_EQUIP_FISHING_ROD	Potřebuji rybářský prut.
+CANNOT_SKILL_HAVE_TO_RIDE	Potřebuji nejdřív koně, než to použiji.
+CANNOT_SKILL_NEED_EMPTY_BOTTLE	Nemám prázdnou láhev.
+CANNOT_SKILL_NEED_POISON_BOTTLE	Nemám láhev s jedem.
+CANNOT_SKILL_NEED_TARGET	Kdo je cíl?
+CANNOT_SKILL_NOT_ENOUGH_HP	Nemám dostatek ZB!
+CANNOT_SKILL_NOT_ENOUGH_SP	Nemám dostatek MB!
+CANNOT_SKILL_NOT_HORSE_SKILL	Když jedu na koni, tohle nemůžu použít.
+CANNOT_SKILL_NOT_MATCHABLE_WEAPON	Tuto schopnost nemůžu nasadit ve spojení s touto zbraní.
+CANNOT_SKILL_NOT_YET_LEARN	Tuto schopnost jsem se ještě nenaučil.
+CANNOT_SKILL_ONLY_FOR_ALLIANCE	To působí jen na členy skupiny.
+CANNOT_SKILL_ONLY_FOR_CORPSE	To působí jen na mrtvé.
+CANNOT_SKILL_RED	Nemůžeš použít Duši purpurového vlka když je Duše modrého vlka aktivní.
+CANNOT_SKILL_REMOVE_FISHING_ROD	Tuto schopnost nemůžu použít ve spojení s rybářským prutem.
+CANNOT_SKILL_SELF_IN_SAFE	Odtud nemůžu zaútočit.
+CANNOT_SKILL_USE_SELF	Toto nemůžu použít sám na sobě.
+CANNOT_SKILL_WAIT_COOLTIME	Tuto schopnost nemůžu zatím použít.
+CANNOT_USE	Toto nemůžeš použít.
+CANNOT_WHISPER_DEST_REFUSE	%s zablokoval šeptání.	SA
+CANNOT_WHISPER_NOT_LOGON	%s není online.	SA
+CANNOT_WHISPER_SELF_REFUSE	Nemůžeš s nikým šeptat, pokud jsi kompletně zablokoval šeptání.	SNA
+CHANNEL	Kanál
+CHANNELING_CANNOT_LOGOUT	Nemůžeš zpět na stránku s přihlášením.
+CHANNEL_EMPTY_SERVER	Žádný server
+CHANNEL_NORMAL	Kanál %d
+CHANNEL_NOTIFY_FULL	Tento kanál je plný! Zvol si prosím jiný.
+CHANNEL_NOT_FIND_INFO	Neobdržíš žádné informace z kanálu.
+CHANNEL_PVP	Volný souboj
+CHANNEL_SELECT_CHANNEL	Zvol si kanál
+CHANNEL_SELECT_REGION	Zvolit místo na vystavení účtenky
+CHANNEL_SELECT_SERVER	Zvolit server
+CHANNEL_TEST_SERVER	Vyzkoušet server
+CHANNEL_TEST_SERVER_ADDR	Test %s:%d
+CHARACTER_CREATE_MODE	Tvorba postavy
+CHARACTER_SELECT_MODE	Volba postavy
+CHAT_ALL	Všichni
+CHAT_BLOCK	Blokovat
+CHAT_GUILD	Cech
+CHAT_INFORMATION	Informace
+CHAT_INSULT_STRING	Věta obsahuje nepřípustná slova.
+CHAT_LOG	Zobrazit staré zprávy [L]
+CHAT_LOG_TITLE	Log chatu
+CHAT_NORMAL	Normální
+CHAT_NOTICE	Oznámení
+CHAT_PARTY	Skupina
+CHAT_SEND_CHAT	Poslat chat
+CHAT_SEND_MEMO	Poslat šepot [Shift+Enter]
+CHAT_SHOUT	Zavolat
+CHAT_SHOUT_LIMIT	Můžeš volat jenom každých 15 vteřin.
+CHAT_WHISPER	Šeptat
+COMB_ALREADY_APPEND	
+COMB_CANT_APPEND_ITEM	Tento předmět nelze použít.
+COMB_CANT_APPEND_SEALED_ITEM	Nelze použít předměty s duševním poutem.
+COMB_COST	Cena: %s
+COMB_IS_CONTINUE_PROCESS	Přeješ si pokračovat?
+COMB_NOTICE	Nemůžeš si otevřít soukromý stánek když obchoduješ s knihami.
+COMB_NOTICE_NOT_OPEN	Nemůžeš obchodovat s knihami, když máš otevřený soukromý stánek.
+COMB_NOT_ALL_SLOT_APPEND_ITEM	Na převod bonusů potřebuješ druhý kostým.
+COMB_NOT_FULL_BOOK	Ne, takhle obchody dělat nebudu. Jak jsem ti již řekl, budu s tebou obchodovat jen když mi nabídneš 10 knih.
+COMB_NOT_ITEM_IN_INVENTORY	Nemůžeš použít používaný předmět.
+COMB_NOT_MEDIUM_ITEM	Tento předmět nelze použít.
+COMB_WILL_REMOVE_MATERIAL	Kostým 2 bude zničen.
+CREATE_ERROR_GM_NAME	V názvu postavy nesmíš použít ,GM‘.
+CREATE_ERROR_INSULT_NAME	Toto jméno je nepřípustné.
+CREATE_ERROR_LIMIT_LEVEL	Tvá postava musí být alespoň úrovně 80.
+CREATE_ERROR_TIME_LIMIT	Postavu můžeš vytvořit pouze jednou za 30 vteřin.
+CREATE_ERROR_WRONG_STRING	Jméno tvé postavy nemůže obsahovat speciální znaky.
+CREATE_EXIST_SAME_NAME	Tento název je už zadán pro jinou postavu.
+CREATE_FAILURE	Nemůžeš vytvořit tuto postavu.
+CREATE_FULL	Nemůžeš vytvářet další postavy.
+CREATE_GM_NAME	GM
+CREATE_INPUT_NAME	Zadej jméno.
+CREATE_PLUS_STAT	Status-body jsou ještě k dispozici.
+DAY	D
+DONT_USE_ITEM_WHEN_SHOW_CONFIRM	Nemůžeš přesunout žádný předmět, když probíhá požadavek.
+DO_YOU_BUY_ITEM1	Chceš koupit %s za %s?
+DO_YOU_BUY_ITEM2	Chceš koupit %s %s za %s?
+DO_YOU_DROP_MONEY	Chceš nechat padnout %d Yang?
+DO_YOU_SELL_ITEM1	Chceš prodat %s za %s?
+DO_YOU_SELL_ITEM2	Chceš prodat %s %s za %s?
+DRAGON_SOUL_CANNOT_REFINE	Dračí kámen nelze zušlechtit.
+DRAGON_SOUL_CANNOT_REFINE_MORE	Dračí kámen je již na nejvyšší úrovni.
+DRAGON_SOUL_EQUIP_WARNING1	Je těžké odebrat Dračí kámen, jakmile je jednou přidán.
+DRAGON_SOUL_EQUIP_WARNING2	Opravdu si přeješ pokračovat?
+DRAGON_SOUL_EXPIRED	Propadlý Dračí kámen
+DRAGON_SOUL_INVALID_DRAGON_SOUL	Toto je špatný Dračí kámen.
+DRAGON_SOUL_IS_NOT_DRAGON_SOUL	Toto není Dračí kámen.
+DRAGON_SOUL_NOT_DRAGON_SOUL_REFINE_STONE	Toto není správný Dračí kámen.
+DRAGON_SOUL_NOT_ENOUGH_MATERIAL	Nemáš dostatek surovin pro zušlechtění.
+DRAGON_SOUL_NOT_MATCHED_SLOT	Do tohoto úchytu Dračí kámen nelze zasadit.
+DRAGON_SOUL_STEP_LEVEL1	Čirost: matná,
+DRAGON_SOUL_STEP_LEVEL2	Čirost: čistá,
+DRAGON_SOUL_STEP_LEVEL3	Čirost: bezchybná,
+DRAGON_SOUL_STEP_LEVEL4	Čirost: brilantní,
+DRAGON_SOUL_STEP_LEVEL5	Čirost: excelentní,
+DRAGON_SOUL_STRENGTH	Úroveň: +%d	SA
+DRAGON_SOUL_UNEQUIP_WARNING1	Během tohoto procesu může být Dračí kámen zničen.
+DRAGON_SOUL_UNEQUIP_WARNING2	Opravdu si přeješ pokračovat?
+DRAGON_SOUL_UNMATCHED_SLOT	Toto je špatný úchyt.
+DRAGON_SOUL_UNQUALIFIED	Ještě nemůžeš použít Dračí alchymii.
+DROP_ITEM_FAILURE_EQUIP_ITEM	Nemůžeš nechat spadnout vybavený předmět.
+DROP_ITEM_FAILURE_PRIVATE_SHOP	Nemůžeš nechat spadnout žádný předmět, když máš otevřený soukromý stánek.
+DROP_MONEY_FAILURE_1000_OVER	Můžeš nechat spadnout maximálně 999 Yangů.
+EMOTION_ANGRY	K zlosti
+EMOTION_ATTRACTIVE	Pokušení
+EMOTION_BANTER	Uštěpačný
+EMOTION_CHEERS_1	Jásot 1
+EMOTION_CHEERS_2	Jásot 2
+EMOTION_CHEERUP	Jásat
+EMOTION_CHOOSE_ONE	Zvol si cíl.
+EMOTION_CLAP	Potlesk
+EMOTION_CLAP_KISS	Pusa
+EMOTION_CONGRATULATION	Útěcha
+EMOTION_DANCE_1	Tanec 1
+EMOTION_DANCE_2	Tanec 2
+EMOTION_DANCE_3	Tanec 3
+EMOTION_DANCE_4	Tanec 4
+EMOTION_DANCE_5	Tanec 5
+EMOTION_DANCE_6	Gumsan Style
+EMOTION_FORGIVE	Odpuštění
+EMOTION_FRENCH_KISS	Líbání jazykem
+EMOTION_JOY	Radost
+EMOTION_SAD	Smutný
+EMOTION_SHY	Odmítnutí
+EMOTION_SLAP	Rána
+EMPIRE_A	Království Shinsoo
+EMPIRE_B	Království Chunjo
+EMPIRE_C	Království Jinno
+EMPIRE_SELECT_MODE	Volba království
+EXCHANGE_CANNOT_GIVE	S tímto předmětem se nedá obchodovat.
+EXCHANGE_CANT_EDIT_MONEY	Ted' nemůžeš změnit částku.
+EXCHANGE_FAILURE_EQUIP_ITEM	Vybavené předměty nemůžeš vyměnit.
+EXCHANGE_MONEY	Částka
+EXCHANGE_TITLE	Obchodovat s %s
+FISHING_FAILURE	Ztratil jsi návnadu na ryby.
+FISHING_NOTIFY1	Vypadá to, že %s zabralo.
+FISHING_NOTIFY2	Vypadá to, že na háčku je %s.
+FISHING_SUCCESS1	Chytil jsi %s!
+FISHING_SUCCESS2	Vytáhl jsi z vody %s!
+FISHING_UNKNOWN	Něco mi sebralo návnadu, ale nevím, co to bylo.
+FISHING_WRONG_PLACE	Tady nemůžu lovit ryby.
+FOR_FEMALE	Pro ženy
+FOR_MALE	Pro muže
+GAME_CANNOT_MINING	Když jedeš na koni, nemůžeš těžit nerostné suroviny.
+GAME_CANNOT_PICK_ITEM	Nemůžeš sebrat tento předmět, protože jsi ho neukořistil.
+GAME_INIT_ERROR_CURSOR	Myší kurzor nemohl být umístěn.
+GAME_INIT_ERROR_DIRECTX	Aby hra fungovala, musí být instalován DirectX 8.1.\nNainstaluj DirectX 8.1 nebo vyšší.
+GAME_INIT_ERROR_GRAPHICS_BAD_PERFORMANCE	Nebylo nalezeno žádné grafické vybavení, které tato hra vyžaduje.\nPřesvědči se, zda máš správně instalovanou VGA-kartu.
+GAME_INIT_ERROR_GRAPHICS_NOT_EXIST	Grafické zařízení nebylo nalezeno.\nPřesvědči se, zda máš k dispozici VGA-kartu.\nAlternativně můžeš zaktivovat zrychlení hardware.\n(Nastav zrychlení hardware na maximum v:\nOvládací panely-->Zobrazení-->Nastavení-->Rozšířené-->registrační karta Odstranění problémů)
+GAME_INIT_ERROR_GRAPHICS_NOT_SUPPORT_32BIT	Grafická karta tvého počítače nepodporuje modus okna ve 32bitovém módu.\nPřepni na 16bitový modus nebo použij celoplošné zobrazení.
+GAME_INIT_ERROR_ITEM_PROTO	Nejsou k dispozici žádné údaje o předmětech.\nNainstaluj hru znovu.
+GAME_INIT_ERROR_MAIN_WINDOW	Hlavní okno nemohlo být vytvořeno.
+GAME_INIT_ERROR_MOB_PROTO	Nejsou k dispozici žádné údaje o příšerách.\nNainstaluj hru znovu.
+GAME_INIT_ERROR_NETWORK	Nebylo vytvořeno spojení po síti.\nPřezkoušej připojení na internet.
+GAME_PICK_MONEY	Obdržel jsi %d Yangů.
+GUILDMARK_UPLOADER_ERROR_128_HEIGHT	Výška není 128 pixelů.
+GUILDMARK_UPLOADER_ERROR_12_HEIGHT	Výška není 12 pixelů.
+GUILDMARK_UPLOADER_ERROR_16_WIDTH	Šířka není 16 pixelů.
+GUILDMARK_UPLOADER_ERROR_64_WIDTH	Šířka není 64 pixelů.
+GUILDMARK_UPLOADER_ERROR_FILE_FORMAT	Hra nepodporuje tento obrázek.
+GUILDMARK_UPLOADER_ERROR_PATH	Přesuň soubory do složky metin2/upload.
+GUILDMARK_UPLOADER_ERROR_SELECT	Nebyl zvolen žádný obrazový soubor.
+GUILDWAR_CTF_TITLE	Zmocnit se praporu
+GUILDWAR_NORMAL_TITLE	Polní bitva
+GUILDWAR_QUESTION_LINE_1	Cech %s vyhlásil tvému cechu válku.
+GUILDWAR_QUESTION_LINE_2	Přijímáš? (%s)
+GUILDWAR_UNKNOWN_TITLE	...
+GUILDWAR_WARP_TITLE	Dějiště války cechů
+GUILD_BUILDING_GRADE	Hodnost
+GUILD_BUILDING_NAME	Název budovy
+GUILD_CANNOT_HEAL_GSP_ANYMORE	Energie dračího ducha je plně obnovena.
+GUILD_COMMENT	Psát
+GUILD_CREATE_ERROR_INSULT_NAME	Název cechu je nepřípustný.
+GUILD_DEFAULT_GRADE	Členové cechu
+GUILD_DELETE	Smazat
+GUILD_DEPOSIT	Deponovat
+GUILD_DO_YOU_HEAL_GSP	Chceš použít %d Yangů na obnovu %d jednotek Dračího ducha?
+GUILD_DO_YOU_JOIN	 tě pozval. Přeješ si vstoupit do cechu?
+GUILD_EMPTY_AREA	Planá země
+GUILD_ENEMY_GUILD_NAME	Název nepřátelského cechu
+GUILD_FACILITY	Vedlejší budova
+GUILD_GEM	Drahokam
+GUILD_HEADQUARTER	Hlavní budova
+GUILD_HEAL_GSP	Obnovit dračího ducha
+GUILD_INFO_ENEMY_GUILD_EMPTY	Žádná
+GUILD_MARK_NOT_ENOUGH_LEVEL	Je zapotřebí minimálně úrovně 3.
+GUILD_NAME	Název cechu
+GUILD_NOT_ENOUGH_MATERIAL	Nemáš dostatek stavebního materiálu pro tuto budovu.
+GUILD_NOT_ENOUGH_MONEY	Nemáš dostatek Yangů pro tuto budovu.
+GUILD_NO_NOTICE_PERMISSION	Nejsi oprávněn, zveřejňovat oznámení.
+GUILD_OBJECT	Objekty
+GUILD_OFFER_EXP	Zkušenost k investování
+GUILD_SHORT_EXP	Nedostatek zkušeností.
+GUILD_TILE_BASEINFO	Základní informace
+GUILD_TILE_BOARD	Tabule
+GUILD_TILE_GRADE	Administrace práv
+GUILD_TILE_INFO	Informace o cechu
+GUILD_TILE_MEMBER	Členové cechu
+GUILD_TILE_SKILL	Schopnosti  cechu
+GUILD_VILLAGE_01	Miryang
+GUILD_VILLAGE_02	Songpa
+GUILD_VILLAGE_03	Daeyami
+GUILD_WAR1	Oblast cechovních válek
+GUILD_WAR2	Oblast cechovních válek
+GUILD_WAR3	Oblast cechovních válek
+GUILD_WAR4	Oblast cechovních válek
+GUILD_WAR_LIMIT_30MIN	Čas: 30 minut
+GUILD_WAR_REWARD_POTION	Odměna: Vítěz obdrží elixíry
+GUILD_WAR_USE_BATTLE_MAP	Lokalita: dějiště cechovní války
+GUILD_WAR_USE_NORMAL_MAP	Lokalita: normální mapa
+GUILD_WAR_WIN_CHECK_SCORE	Nejvyšší výsledek vyhraje válku.
+GUILD_WAR_WIN_TAKE_AWAY_FLAG1	Zmocni se praporu protivníka
+GUILD_WAR_WIN_TAKE_AWAY_FLAG2	a doprav jej na vlastní základnu.
+GUILD_WAR_WIN_WIPE_OUT_GUILD	Přemož všechny soupeři, abys vyhrál.
+GUILD_WITHDRAW	Ústup
+GUILD_YOU_DO_NOT_JOIN	Nepatříš k žádnému cechu.
+HORSE_HEALTH0	Mrtvý
+HORSE_HEALTH1	Hladovějící
+HORSE_HEALTH2	Hladový
+HORSE_HEALTH3	Plný
+HORSE_LEVEL1	Normální kůň
+HORSE_LEVEL2	Opancéřovaný kůň
+HORSE_LEVEL3	Vojenský kůň
+HOUR	hod.
+HOW_MANY_ITEM_DO_YOU_DROP1	Chceš nechat padnout %s?
+HOW_MANY_ITEM_DO_YOU_DROP2	Chceš nechat padnout %s %d?
+INPUT_PRIVATE_CODE_DIALOG_DESCRIPTION	Zadat vymazávající kód ze správy kont.
+INPUT_PRIVATE_CODE_DIALOG_TITLE	Smazat postavu
+INVENTORY_DO_NOT_PACK_WARP_SCROLL	Pergamen se nedá dát dohromady.
+INVENTORY_REALLY_USE_ITEM	Použit předmět na tento předmět?
+JOB_ASSASSIN	Ninja
+JOB_ASSASSIN0	Amatérský ninja
+JOB_ASSASSIN1	Moc ninji
+JOB_ASSASSIN2	Nezemřelý
+JOB_SHAMAN	Šaman
+JOB_SHAMAN0	Amatérský šaman
+JOB_SHAMAN1	Moc draka
+JOB_SHAMAN2	Síla blesku
+JOB_SURA	Sura
+JOB_SURA0	Amatérský Sura
+JOB_SURA1	Moc faty morgány
+JOB_SURA2	Moc černé magie
+JOB_WARRIOR	Válečník
+JOB_WARRIOR0	Amatérský válečník
+JOB_WARRIOR1	Moc Arahanu
+JOB_WARRIOR2	Moc halapartny
+LEFT_TIME	Zbývající čas
+LOGIN_CONNECT_FAILURE	Chyba při spojení se serverem.
+LOGIN_CONNECT_SUCCESS	Byl jsi připojen na server.
+LOGIN_CONNETING	Budeš připojen na server...
+LOGIN_FAILURE_ALREAY	Tvé konto je už připojeno.
+LOGIN_FAILURE_BE_SAME_KEY	Problém s přihlášením
+LOGIN_FAILURE_BLOCK_ID	Konto je zablokováno.
+LOGIN_FAILURE_BLOCK_LOGIN	Prosím, zvolte si některý z jiných serverů!
+LOGIN_FAILURE_NOBILL	Konto nemá k dispozici žádnou hrací dobu.
+LOGIN_FAILURE_NOT_AVAIL	Konto není k dispozici.
+LOGIN_FAILURE_NOT_EXIST_ID	Konto neexistuje nebo je chybné heslo.
+LOGIN_FAILURE_REPAIR_ID	Právě se znovu zřizují předměty pro toto konto.
+LOGIN_FAILURE_SAMELOGIN	Někdo se připojil na tvůj účet.
+LOGIN_FAILURE_SHUTDOWN	Server zatím není přístupný.
+LOGIN_FAILURE_TOO_MANY_USER	Nemohl jsi navázat spojení, protože právě hraje příliš mnoho hráčů.
+LOGIN_FAILURE_UNKNOWN	Z neznámých důvodů jsi se nemohl přihlásit.
+LOGIN_FAILURE_WEB_BLOCK	Byl jsi na webové stránce zablokován. Prosím zkontroluj si e-maily.
+LOGIN_FAILURE_WRONG_PASSWORD	Chybné jméno nebo heslo.
+LOGIN_INPUT_ID	Zadej ID.
+LOGIN_INPUT_PASSWORD	Zadej heslo.
+LOGIN_PROCESSING	Přihlášení probíhá...
+MALL_CANNOT_INSERT	Tento předmět nemůžeš umístit.
+MALL_PASSWORD_TITLE	Heslo
+MAP_A1	Oblast Yongan
+MAP_A2	Údolí Seungryong
+MAP_A2_1	
+MAP_A3	Oblast Yayang
+MAP_AG	Jungrang
+MAP_B1	Oblast Joan
+MAP_B2	Údolí Imjů
+MAP_B3	Oblast Bokjung
+MAP_BAY	Nefritový záliv
+MAP_BAYBLACKSAND	Nefritový záliv
+MAP_BG	Waryong
+MAP_C1	Oblast Pyungmoo
+MAP_C2	Údolí Bangsanů
+MAP_C3	Oblast Bakra
+MAP_CAPE	Záliv dračího ohně
+MAP_CAPEDRAGONHEAD	Záliv dračího ohně
+MAP_CG	Imha
+MAP_DAWN	Útes Gautama
+MAP_DAWNMISTWOOD	Útes Gautama
+MAP_DESERT	Poušť Yongbi
+MAP_DEVILCATACOMB	Ďáblova katakomba
+MAP_DEVILTOWER1	Věž démonů
+MAP_DUEL	Oblast tréninkových bojů
+MAP_E	Kolonie
+MAP_EMPIREWAR01	Bitva na hradě
+MAP_EMPIREWAR02	Bitva na hradě
+MAP_EMPIREWAR03	Bitva na hradě
+MAP_FLAME	Doyyumhwan
+MAP_GUILD_01	Jungrang
+MAP_GUILD_02	Waryong
+MAP_GUILD_03	Imha
+MAP_HOLYPLACE_DESERT	Bitva království - Pouštní země
+MAP_HOLYPLACE_FLAME	Bitva království - Ohnivá země
+MAP_HOLYPLACE_ICE	Bitva království - Ledová země
+MAP_MILGYO	Chrám Hwang
+MAP_MILGYO_A	
+MAP_MONKEY_DUNGEON	Hasun Dong
+MAP_MONKEY_DUNGEON2	Jungsun Dong
+MAP_MONKEY_DUNGEON3	Sangsun Dong
+MAP_MONKEY_DUNGEON_11	Hasun Dong
+MAP_MONKEY_DUNGEON_12	Hasun Dong
+MAP_MONKEY_DUNGEON_13	Hasun Dong
+MAP_MT_THUNDER	Bouřné hory
+MAP_NUSLUCK	Země obrů
+MAP_NUSLUCK01	Země obrů
+MAP_N_DESERT_01	Poušť Yongbi
+MAP_N_DESERT_02	
+MAP_N_FLAME_01	Ohnivá země
+MAP_N_FLAME_02	
+MAP_N_FLAME_DUNGEON_01	Pevnost Červeného draka
+MAP_N_SNOWM_01	Hora Sohan
+MAP_N_SNOWM_02	
+MAP_N_SNOW_DUNGEON_01	Nemerova strážní věž
+MAP_N_THREEWAY	Údolí Seungryong
+MAP_OXEVENT	Soutež OX
+MAP_PATHWAY_DESERT_01	Bitva království - Pouštní země
+MAP_PATHWAY_DESERT_02	Bitva království - Pouštní země
+MAP_PATHWAY_DESERT_03	Bitva království - Pouštní země
+MAP_PATHWAY_FLAME_01	Bitva království - Ohnivá země
+MAP_PATHWAY_FLAME_02	Bitva království - Ohnivá země
+MAP_PATHWAY_FLAME_03	Bitva království - Ohnivá země
+MAP_PATHWAY_ICE_01	Bitva království - Ledová země
+MAP_PATHWAY_ICE_02	Země her
+MAP_PATHWAY_ICE_03	Bitva království - Ledová země
+MAP_SKELTOWER	Věž Gumsan
+MAP_SKIPIA_DUNGEON_01	Jeskyně vyhnanství
+MAP_SKIPIA_DUNGEON_011	
+MAP_SKIPIA_DUNGEON_012	
+MAP_SKIPIA_DUNGEON_013	
+MAP_SKIPIA_DUNGEON_02	Jeskyně vyhnanství 2
+MAP_SKIPIA_DUNGEON_021	
+MAP_SKIPIA_DUNGEON_022	
+MAP_SKIPIA_DUNGEON_023	
+MAP_SKIPIA_DUNGEON_BOSS	Dračí chrám
+MAP_SKIPIA_DUNGEON_BOSS_1	Pavoučí bludiště 1
+MAP_SKIPIA_DUNGEON_BOSS_2	Pavoučí bludiště 2
+MAP_SKIPIA_DUNGEON_BOSS_3	Pavoučí bludiště 3
+MAP_SNOW	Hora Sohan
+MAP_SPIDER	Kuahlo Dong
+MAP_SPIDERDUNGEON	Pavoučí bludiště 1
+MAP_SPIDERDUNGEON_02	Pavoučí bludiště 2
+MAP_SPIDERDUNGEON_02_1	Pavoučí bludiště 2
+MAP_SPIDERDUNGEON_03	Pavoučí bludiště 3
+MAP_SUNGZI	Bitva království
+MAP_SUNGZI_DESERT_01	Bitva království - Pouštní země
+MAP_SUNGZI_DESERT_HILL_01	Bitva království - Pouštní země
+MAP_SUNGZI_DESERT_HILL_02	Bitva království - Pouštní země
+MAP_SUNGZI_DESERT_HILL_03	Bitva království - Pouštní země
+MAP_SUNGZI_FLAME_HILL_01	Bitva království - Ohnivá země
+MAP_SUNGZI_FLAME_HILL_02	Bitva království - Ohnivá země
+MAP_SUNGZI_FLAME_HILL_03	Bitva království - Ohnivá země
+MAP_SUNGZI_SNOW	Bitva království - Ledová země
+MAP_SUNGZI_SNOW_PASS01	Bitva království - Ledová země
+MAP_SUNGZI_SNOW_PASS02	Bitva království - Ledová země
+MAP_SUNGZI_SNOW_PASS03	Bitva království - Ledová země
+MAP_T1	Oblast cechovních válek
+MAP_T2	Oblast cechovních válek
+MAP_T3	Oblast cechovních válek
+MAP_T4	Oblast cechovních válek
+MAP_TEMPLE	Chrám Hwang
+MAP_THUNDER	Bouřné hory
+MAP_TREE	Lungsam
+MAP_TRENT	Les duchů
+MAP_TRENT02	Červený les
+MAP_TRENT02_A	Červený les
+MAP_TRENT_A	
+MAP_WEDDING_01	Svatební oblast
+MAP_WL	Hadí pole
+MAP_WL_01	Hadí pole
+MESSENGER_ADD_FRIEND	Přidat přítele
+MESSENGER_DO_YOU_ACCEPT_ADD_FRIEND_1	%s tě přijímal za přítele.
+MESSENGER_DO_YOU_ACCEPT_ADD_FRIEND_2	Akceptovat?
+MESSENGER_DO_YOU_DELETE	Smazat?
+MESSENGER_DO_YOU_DELETE_PHONE_NUMBER	Chceš smazat číslo na mobil?
+MESSENGER_DO_YOU_MOVE	Chceš pokračovat?
+MESSENGER_EMPTY_LIST	Prázdný
+MESSENGER_FAMILY	Rodina
+MESSENGER_FRIEND	Přátelé
+MESSENGER_GUILD	Cech
+METIN_TEST	
+MINIMAP	Otevřít minimapu
+MINIMAP_CANNOT_SEE	Minimapu nelze zobrazit.
+MINIMAP_CAN_NOT_SHOW_AREAMAP	Vekou mapu nelze zobrazit.
+MINIMAP_DEC_SCALE	Oddálit
+MINIMAP_INC_SCALE	Přiblížit
+MINIMAP_OBSERVER_COUNT	%d divák
+MINIMAP_SHOW_AREAMAP	Velká mapa
+MINUTE	min
+MONETARY_UNIT0	Yang
+MONETARY_UNIT1	deset tisíc
+MONETARY_UNIT2	sto miliónů
+MONEY_INPUT_DIALOG_SELLPRICE	Prodejní cena:
+MOVE_ITEM_FAILURE_PRIVATE_SHOP	Nemůžeš přesunout tento předmět, když jsi otevřel soukromý stánek.
+MUSIC_EMPTY_MUSIC_LIST	Bez hudby v pozadí	
+MUSIC_METIN2_DEFAULT_THEMA	Standardní hudba Metin2
+MUSIC_NOT_SELECT_MUSIC	Nebyl zvolen hudební soubor.
+NEEFD_REST	Musíš si nejdřív odpočinout.
+NOT_YET_SUPPORT	Není podporováno.
+OPTION_PVPMODE_CANNOT_SET_GUILD_MODE	Pokud nenáležíš k žádnému cechu, nemůžeš zaktivovat cechovní modus.
+OPTION_PVPMODE_NOT_SUPPORT	Konfiguraci PvP-módu nemůžeš použít.
+OPTION_PVPMODE_PROTECT	Abys mohl přejít do PvP-módu, musíš dosáhnout minimálně úrovně %d.
+PARTY_ANSWER_TIMEOVER	Pozvání bylo odmítnuto.
+PARTY_BONUS_ATTACKER	Hodnota útoku: +%d	SA
+PARTY_BONUS_BERSERKER	Rychlost útoku: +%d	SA
+PARTY_BONUS_BUFFER	Trvání schopností: +%d	SA
+PARTY_BONUS_DEFENDER	Obrana: +%d	SA
+PARTY_BONUS_EXP	Bonus BZK: %d%%	SA
+PARTY_BONUS_SKILL_MASTER	Max. MB: +%d	SA
+PARTY_BONUS_TANKER	Max. ZB: +%d	SA
+PARTY_BREAK_UP	Zrušit skupinu
+PARTY_DO_YOU_ACCEPT	 by se rád přidal do skupiny.
+PARTY_DO_YOU_JOIN	 tě pozval do jeho skupiny. Přijmout?
+PARTY_EXP_DISTRIBUTION_MODE	Rozložení BZK
+PARTY_EXP_DISTRIBUTION_MODE_LEVEL	Podle úrovně
+PARTY_EXP_DISTRIBUTION_MODE_LEVEL_TOOLTIP	Vyšší úroveň obdrží více BZK.
+PARTY_EXP_DISTRIBUTION_MODE_PARITY	Rovnoměrné rozložení
+PARTY_EXP_DISTRIBUTION_MODE_PARITY_TOOLTIP	Všichni členové skupiny obdrží stejný počet BZK.
+PARTY_HEAL_ALL_MEMBER	Vše znovuobnovit
+PARTY_INCREASE_AREA_150	Dosah skupiny byl zvýšen o faktor 1,5.	SNA
+PARTY_INCREASE_AREA_200	Dosah skupiny byl zvýšen o faktor 2.	SNA
+PARTY_LEAVE	Opustit skupinu
+PARTY_LONGTIME_BONUS_EXP	Bonus za dlouhou hru skupiny: +%d%%	SA
+PARTY_MEMBER_OFFLINE	[Offline]
+PARTY_RECALL_MEMBER	Přivolat člena skupiny.
+PARTY_REGEN_BONUS	Bonus na regeneraci ZB a MB: +%d%%	SA
+PARTY_REQUEST_DENIED	Tvůj požadavek byl zamítnut.
+PARTY_SET_ATTACKER	Určit útočníka.
+PARTY_SET_BERSERKER	Určit zuřivce.
+PARTY_SET_BUFFER	Určit blokátora
+PARTY_SET_DEFENDER	Určit obránce.
+PARTY_SET_NORMAL	Odvolat nastavení.
+PARTY_SET_SKILL_MASTER	Určit mistra schopností.
+PARTY_SET_TANKER	Založit bojovníka zblízka.
+PARTY_SKILL_ATTACKER	Základní hodnota útoku útočníka +%.0f
+PARTY_SKILL_BERSERKER	Rychlost útoku zuřivce +%.0f
+PARTY_SKILL_BUFFER	Doba trvání schopností blokátora +%.0f
+PARTY_SKILL_DEFENDER	Obrana obránce +%.0f
+PARTY_SKILL_HP_REGEN	Regenerace ZB +%.0f%%
+PARTY_SKILL_PARTY_AREA	Dosah skupiny +%d%%
+PARTY_SKILL_SKILL_MASTER	Max. MB mistra schopností +%.0f
+PARTY_SKILL_SP_REGEN	Regenerace MB +%.0f%%
+PARTY_SKILL_TANKER	Max. ZB bojovník zblízka +%.0f
+PARTY_SKILL_WARP	Schopen, přivolat členy skupiny.
+PASSWORD_TITLE	Heslo ke skladišti
+PICK_ITEM_TITLE	Počet předmětů
+PICK_MONEY_TITLE	Částka
+PRIVATE_SHOP_CANNOT_SELL_ITEM	Tento předmět nemůžeš prodávat v soukromém stánku.
+PRIVATE_SHOP_CLOSE_QUESTION	Chceš zavřít soukromý stánek?
+PRIVATE_SHOP_INPUT_NAME_DIALOG_TITLE	Název soukromého stánku.
+PRIVATE_SHOP_INPUT_PRICE_DIALOG_TITLE	Cena
+PVP_LEVEL0	Rytířský
+PVP_LEVEL1	Vznešený
+PVP_LEVEL2	Dobrý
+PVP_LEVEL3	Přátelský
+PVP_LEVEL4	Neutrální
+PVP_LEVEL5	Agresivní
+PVP_LEVEL6	Úskočný
+PVP_LEVEL7	Zlomyslný
+PVP_LEVEL8	Krutý
+PVP_MODE_GUILD	Cechovní mód PvP byl zaktivován
+PVP_MODE_KILL	Mód volného PvP byl zaktivován
+PVP_MODE_NORMAL	Mír v PvP byl zaktivován
+PVP_MODE_PROTECT	Ochrana PvP byla aktivována.
+PVP_MODE_REVENGE	Agresivní PvP byl zaktivován.
+PVP_OPTION_KILL	Volno
+PVP_OPTION_NORMAL	Mír
+PVP_OPTION_PROTECT	Ochrana
+PVP_OPTION_REVENGE	Nepřátelský
+QUEST_APPEND	Byl získán nový úkol.
+QUEST_MIN	min.
+QUEST_SEC	sek.
+QUEST_TIMEOVER	Čas vypršel
+QUEST_UNLIMITED_TIME	Bez časového omezení
+QUEST_ZEROSEC	0 sek.
+QUICKSLOT_REGISTER_DISABLE_ITEM	Tento předmět nemůže být přidán k poli rychlého přístupu.
+RECEIVE_MESSAGE	%s ti poslal/a zprávu.
+REFINE_COST	Náklady na zlepšení: %s
+REFINE_DESTROY_WARNING	Předmět by se mohl zušlechtěním zničit.
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_1	Toto zvyšuje pravděpodobnost zlepšení,
+REFINE_DESTROY_WARNING_WITH_BONUS_PERCENT_2	ale v případě neúspěchu bude předmět zničen. Chceš pokračovat?
+REFINE_DOWN_GRADE_WARNING	Předmět by se mohl zušlechtěním zhoršit.
+REFINE_DO_YOU_SEPARATE_METIN	Chceš odstranit všechny kameny ducha?
+REFINE_FAILURE	Hmm, nojono - tak to neklaplo! Selhali jsme.
+REFINE_FAILURE_CAN_NOT_ATTACH	%s nelze přidat k předmětu.
+REFINE_FAILURE_EQUIP_ITEM	Nemůžeš vylepšovat používané předměty.
+REFINE_FAILURE_METIN_INSEPARABLE_ITEM	Nelze odstranit kámen ducha.
+REFINE_FAILURE_NEED_BETTER_SCROLL	Potřebuješ lepší pergamen zlepšování.
+REFINE_FAILURE_NO_GOLD_SOCKET	Neexistuje žádná úchytka ze zlata, do kterého lze přidat %s.
+REFINE_FAILURE_NO_MORE_SOCKET	Nemůžeš přidat žádné další úchytky.
+REFINE_FAILURE_NO_SOCKET0	Neexistuje žádná úchytka, do kterého lze přidat %s.
+REFINE_FAILURE_SOCKET_DISABLE_ITEM	K tomuto předmětu nelze přidat žádná úchytka.
+REFINE_FAILURE_UPGRADE_DISABLE_ITEM	Tento předmět nelze zlepšit.
+REFINE_SUCCESS	Toto zlepšení předmětu bylo úspěšné.
+REFINE_SUCCESS_PROBALITY	Šance na zlepšení: %d%%
+REFINE_WARNING2	Chceš pokračovat?
+SAFEBOX_ERROR	Zadal jsi špatné heslo.
+SAFEBOX_SELL_DISABLE_SAFEITEM	Nemůžeš prodat žádný z uložených předmětů.
+SAFEBOX_WRONG_PASSWORD	Hesla musí být identická.
+SCREENSHOT_SAVE1	je uložen v
+SCREENSHOT_SAVE2	Složka screenshotů
+SCREENSHOT_SAVE_FAILURE	Uložení screenshotu se nezdařilo.
+SECOND	sek
+SELECT_CAN_NOT_DELETE	Tuto postavu nemůžeš smazat.
+SELECT_CHANGED_NAME	Změnil jsi název postavy.
+SELECT_CHANGE_FAILURE_ALREADY_EXIST_NAME	Tento název postavy už existuje.
+SELECT_CHANGE_FAILURE_STRANGE_INDEX	Zkus to znovu.
+SELECT_CHANGE_FAILURE_STRANGE_NAME	Toto je špatný název postavy.
+SELECT_CHANGE_NAME_TITLE	Změnit název postavy
+SELECT_DELEING	Postava se maže
+SELECT_DELETED	Vymazání úspěšné.
+SELECT_DO_YOU_DELETE_REALLY	Chceš pokračovat?
+SELECT_EMPTY_SLOT	Toto je prázdné pole.
+SELECT_GM_NAME	GM
+SELECT_INPUT_CHANGING_NAME	Zadej nový název postavy.
+SELECT_NOT_JOIN_GUILD	Žádný cech
+SHOP_BUY_INFO	Zvol předmět, který chceš koupit, v obchodním okně.
+SHOP_CANNOT_SELL_EQUIPMENT	Vybavený předmět nemůžeš prodat.
+SHOP_CANNOT_SELL_ITEM	Tento předmět není na prodej.
+SHOP_ERROR_UNKNOWN	Neznámá chyba v obchodě: %s
+SHOP_INVALID_POS	Tento předmět není vhodný.
+SHOP_INVENTORY_FULL	V inventáři už není místo.
+SHOP_NOT_ENOUGH_MONEY	Nedostatek Yang
+SHOP_NOT_ENOUGH_MONEY_EX	Nemáš dostatek Yangů.
+SHOP_SELL_INFO	Zvol předmět, který chceš prodat, v okně inventáře.
+SHOP_SOLDOUT	Vyprodáno
+SHOT_ERROR_UNKNOWN	Neznámá chyba v útoku na dálku: %s
+SKILL_BLEEDING	Krvácení
+SKILL_BOHO	Reflektovat
+SKILL_BUDONG	Už se nepoužívá
+SKILL_CANNOT_LEVEL_UP_ANYMORE_BY_BOOK	Potřebuješ BZK, abys mohl získat tuto schopnost.
+SKILL_CANNOT_LEVEL_UP_ANYMORE_BY_STAT	Potřebuješ knihu, aby ses mohl naučit tuto schopnost.
+SKILL_CHEONGEUN	Silné tělo
+SKILL_CRITICAL	Kritický zásah
+SKILL_ENCHANT_POISON	Použít jed
+SKILL_EUNHYEONG	Neviditelný
+SKILL_FAINT	Bezvědomí
+SKILL_FIND_TRAP	Hledat past
+SKILL_FIRE	Spálit
+SKILL_FISHMIND	Koule na ryby je aktivní
+SKILL_GAMJI	Zachycení
+SKILL_GEOMGYEONG	Aura meče
+SKILL_GEONGON	SKILL_GEONGON se už nepoužívá
+SKILL_GICHEON	Pomoc draka
+SKILL_GIGONG	Rotace Chi
+SKILL_GONGPO	Strach
+SKILL_GRADE_NAME_GRAND_MASTER	%s velký mistr
+SKILL_GRADE_NAME_MASTER	%s mistr
+SKILL_GRADE_NAME_PERFECT_MASTER	%s perfektní mistr
+SKILL_GROUP_ASSASSIN_1	Čepel
+SKILL_GROUP_ASSASSIN_2	Luk
+SKILL_GROUP_HORSE	Jezdecké umění
+SKILL_GROUP_SHAMAN_1	Drak
+SKILL_GROUP_SHAMAN_2	Uzdravení
+SKILL_GROUP_SURA_1	Zbraně
+SKILL_GROUP_SURA_2	Magie
+SKILL_GROUP_WARRIOR_1	Tělo
+SKILL_GROUP_WARRIOR_2	Mentálně
+SKILL_GWIGEOM	Začarovaná čepel
+SKILL_GYEONGGONG	Polehoučku našlapovat
+SKILL_HEUKSIN	Tmavá ochrana
+SKILL_HOSIN	Požehnání
+SKILL_HWAYEOM	SKILL_HWAYEOM se už nepoužívá
+SKILL_HYEOLMA	SKILL_HYEOLMA se už nepoužívá
+SKILL_INC_ATKSPD	Rychlost útoku zvýšena
+SKILL_INC_MOVSPD	Rychlost pohybu zvýšena
+SKILL_INMA	SKILL_INMA se už nepoužívá
+SKILL_JEOJU	Kletba
+SKILL_JEONGEOP	Hojení
+SKILL_JEONGWI	Bojové zuření
+SKILL_JEONSINBANGEO	Plná obrana
+SKILL_JEONSINGONGGYEOK	Plný útok
+SKILL_JEUNGCHE	SKILL_JEUNGCHE se už nepoužívá
+SKILL_JEUNGHON	SKILL_JEUNGHON se už nepoužívá
+SKILL_JEUNGRYEOK	Útok +
+SKILL_JEUNGSOK	Rychlost +
+SKILL_JIGAM	SKILL_JIGAM se už nepoužívá
+SKILL_JIPJUNG	SKILL_JIPJUNG se už nepoužívá
+SKILL_JUMAGAP	Začarované brnění
+SKILL_JUMAGEOM	SKILL_JUMAGEOM se už nepoužívá
+SKILL_KWAEGEOM	SKILL_KWAEGEOM se už nepoužívá
+SKILL_KWAESOK	Rychlost
+SKILL_LEGBOUND	SKILL_LEGBOUND se už nepoužívá
+SKILL_MUSA	SKILL_MUSA se už nepoužívá
+SKILL_MUYEONG	Duch plamene
+SKILL_NEED_EMPTY_BOTTLE	Nemám žádnou prázdnou láhev
+SKILL_NEED_POISON_BOTTLE	Nemám žádnou láhev s jedem
+SKILL_ONLY_FOR_GUILD_WAR	Tuto schopnost můžeš použít jenom ve válce cechů.
+SKILL_PABEOP	Zrušit kouzlo
+SKILL_POWERFUL_STRIKE	Omračující útok
+SKILL_SEOMGWANG	Blesková bomba
+SKILL_SINCHAK	SKILL_SINCHAK se už nepoužívá
+SKILL_SLEEP	Spánek
+SKILL_SLOW	Pomalu
+SKILL_STUN	Omráčit
+SKILL_SUHO	Strážce
+SKILL_SUMMON_DESCRIPTION	Šance zaříkávání: %d%%
+SKILL_TOOLTIP_INT	Inteligence
+SKILL_TOOLTIP_LEVEL	Úroveň
+SKILL_TOXICDIE	Otrávení
+SKILL_TOXICPOWER	Hodnota útoku jedem zlepšena
+SKILL_TUSOK	Rána ducha
+SKILL_WONSIN	SKILL_WONSIN se už nepoužívá
+SKILL_YONGSIN	SKILL_YONGSIN se už nepoužívá
+STAT_MINUS_CON	Přizpůsobení vitality (zbývající šance: %d)
+STAT_MINUS_DEX	Přizpůsobení pohyblivosti (zbývající šance: %d)
+STAT_MINUS_INT	Přizpůsobení inteligence (zbývající šance: %d)
+STAT_MINUS_STR	Přizpůsobení síly (zbývající šance: %d)
+STAT_TOOLTIP_CON	ZB a obrana se zlepší
+STAT_TOOLTIP_DEX	Útok a vyhýbání se zlepší
+STAT_TOOLTIP_INT	Zvyšuje MB, útok magií a obranu
+STAT_TOOLTIP_STR	Hodnota útoku a poškození se zlepší
+SYMBOLLIST_TITLE	Nahlásit prapor cechu
+SYSTEM_OPTION_CPU_TILING_1	Modus CPU-Tiling může zvýšit rychlost slabšího počítače.
+SYSTEM_OPTION_CPU_TILING_2	Pokud se vyskytují problémy s grafikou, zvol ,Nastavení systému‘ nebo ,CONFIG.exe‘
+SYSTEM_OPTION_CPU_TILING_3	a přepni do GPU-Tiling módu
+SYSTEM_OPTION_GPU_TILING_1	Modus GPU-Tiling může na slabších počítačích běžet pomalu
+SYSTEM_OPTION_GPU_TILING_2	Pokud se vyskytují problémy s grafikou, zvol ,Nastavení systému‘ nebo ,CONFIG.exe‘
+SYSTEM_OPTION_GPU_TILING_3	a přepni do módu CPU-Tiling
+SYSTEM_OPTION_TILING_EXIT	Na změnu Tiling-módu musí hra být restartována.
+TARGET_BUTTON_ACCEPT_FIGHT	Souhlasit
+TARGET_BUTTON_AVENGE	Pomsta
+TARGET_BUTTON_BUILDING_DESTROY	Zničit
+TARGET_BUTTON_DISMOUNT	Sesednout
+TARGET_BUTTON_EMOTION_ALLOW	Emoce
+TARGET_BUTTON_EXCHANGE	Obchodování
+TARGET_BUTTON_EXCLUDE	Vyloučit
+TARGET_BUTTON_EXIT_OBSERVER	Ukončit divácký modus
+TARGET_BUTTON_FIGHT	Souboj
+TARGET_BUTTON_FRIEND	Přítel
+TARGET_BUTTON_INVITE_GUILD	Pozvánka od cechu
+TARGET_BUTTON_INVITE_PARTY	Pozvánka od skupiny
+TARGET_BUTTON_LEAVE_PARTY	Opustit skupinu
+TARGET_BUTTON_REQUEST_ENTER_PARTY	Přistoupit ke skupině
+TARGET_BUTTON_VIEW_EQUIPMENT	Výzbroj
+TARGET_BUTTON_WHISPER	Šeptat
+TARGET_LEVEL_BOSS	Boss
+TARGET_LEVEL_KING	Stupeň 5.
+TARGET_LEVEL_KNIGHT	Stupeň 3.
+TARGET_LEVEL_PAWN	Stupeň 1.
+TARGET_LEVEL_S_KNIGHT	Stupeň 4.
+TARGET_LEVEL_S_PAWN	Stupeň 2.
+TASKBAR_ATTACK	Zaútočit
+TASKBAR_AUTO	Útočit automaticky
+TASKBAR_CAMERA	Kamera
+TASKBAR_EXP	Zkušenost
+TASKBAR_HP	ZB
+TASKBAR_MOVE	Pohybovat
+TASKBAR_SKILL	Schopnost
+TASKBAR_SP	MB
+TASKBAR_ST	VB
+THING_COUNT	všichni
+TOOLTIP_ANTI_CRITICAL_PCT	Odolnost proti kritickým zásahům +%d%% 	SA
+TOOLTIP_ANTI_PENETRATE_PCT	Odolnost proti pronikavým zásahům +%d%% 	SA
+TOOLTIP_ANTI_SELL	Nemůže se prodávat v obchodě.
+TOOLTIP_APPLY_ACCEDRAIN_RATE	Absorpční poměr: %d%%	SA
+TOOLTIP_APPLY_ATTBONUS_ANIMAL	Silný proti zvířatům +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_ASSASSIN	Silný proti ninjům +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_DEVIL	Silný proti ďáblu +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_HUMAN	Silný proti pololidem +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_MILGYO	Silný proti ezoterikům +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_MONSTER	Silný proti příšerám +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_ORC	Silný proti Orkům +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_SHAMAN	Silný proti šamanům +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_SURA	Silný proti surům +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_UNDEAD	Silný proti nemrtvým +%d%%	SA
+TOOLTIP_APPLY_ATTBONUS_WARRIOR	Silný proti válečníkům +%d%%	SA
+TOOLTIP_APPLY_BLEEDING_PCT	Krvácivý útok + %d%%	SA
+TOOLTIP_APPLY_BLEEDING_REDUCE	Odolnost proti krvácivým útokům + %d%%	SA
+TOOLTIP_APPLY_BLOCK	Šance odvrátit tělesný útok %d%%	SA
+TOOLTIP_APPLY_COMBAT_SP_RECOVER	Každých 5 sek. obnovit MB v boji %d	SA
+TOOLTIP_APPLY_CRITICAL_PCT	+%d%% šance na kritický zásah	SA
+TOOLTIP_APPLY_DAMAGE_SP_RECOVER	%d%% šance dostat při zásahu MB nazpět	SA
+TOOLTIP_APPLY_DODGE	%d%% šance vyhnout se šípům	SA
+TOOLTIP_APPLY_EXP_DOUBLE_BONUS	%d%% šance na bonus BZK	SA
+TOOLTIP_APPLY_GOLD_DOUBLE_BONUS	%d%% šance pustit dvojnásobek Yangů	SA
+TOOLTIP_APPLY_IMMUNE_FALL	Imunní proti pádům	SNA
+TOOLTIP_APPLY_IMMUNE_SLOW	Ochrana proti zpomalení	SNA
+TOOLTIP_APPLY_IMMUNE_STUN	Ochrana proti bezvědomí	SNA
+TOOLTIP_APPLY_ITEM_DROP_BONUS	%d%% šance, nechat dvojnásobně spadnout předměty	SA
+TOOLTIP_APPLY_KILL_HP_RECOVER	%d%% šance obnovit ZB	SA
+TOOLTIP_APPLY_KILL_SP_RECOVER	%d%% šance obnovit MB	SA
+TOOLTIP_APPLY_MANA_BURN_PCT	%d%% šance převzít soupeřovy MB	SA
+TOOLTIP_APPLY_MAX_HP_PCT	Max. ZB +%d%% 	SA
+TOOLTIP_APPLY_MAX_SP_PCT	Max. MB +%d%% 	SA
+TOOLTIP_APPLY_NOAFFECT	Žádné následky
+TOOLTIP_APPLY_NO_DEATH_PENALTY	Neztratíš žádné zkušenostní body, pokud bude tvá postava oživena na místě, kde zemřela.	SNA
+TOOLTIP_APPLY_PENETRATE_PCT	+%d%% šance na pronikavý zásah	SA
+TOOLTIP_APPLY_POISON_PCT	Šance na otrávení: %d%%	SA
+TOOLTIP_APPLY_POISON_REDUCE	Odolnost vůči jedu %d%%	SA
+TOOLTIP_APPLY_POTION_BONUS	Lektvar %d%% nárůst efektu	SA
+TOOLTIP_APPLY_REFLECT_CURSE	%d%% šance odrazit kletbu	SA
+TOOLTIP_APPLY_REFLECT_MELEE	%d%% šance odrazit přímý tělesný útok	SA
+TOOLTIP_APPLY_RESIST_ASSASSIN	Šance na obranu proti útokům ninjů %d%%	SA
+TOOLTIP_APPLY_RESIST_BELL	Obrana proti zvonům %d%%	SA
+TOOLTIP_APPLY_RESIST_DAGGER	Obrana proti dýkám %d%%	SA
+TOOLTIP_APPLY_RESIST_FAN	Obrana proti vějířům %d%%	SA
+TOOLTIP_APPLY_RESIST_SHAMAN	Šance ubránit se proti útokům šamanů %d%%	SA
+TOOLTIP_APPLY_RESIST_SURA	Šance na obranu proti útokům surů %d%%	SA
+TOOLTIP_APPLY_RESIST_SWORD	Obrana proti mečům %d%%	SA
+TOOLTIP_APPLY_RESIST_TWOHAND	Obrana proti obouručním mečům %d%%	SA
+TOOLTIP_APPLY_RESIST_WARRIOR	Šance na obranu proti útokům válečníků %d%%	SA
+TOOLTIP_APPLY_RESIST_WIND	Odolnost proti větru %d%%	SA
+TOOLTIP_APPLY_SKILL_BOOK_BONUS	Šance při učení z knih je zlepšena o faktor 2,5	SNA
+TOOLTIP_APPLY_SKILL_BOOK_NO_DELAY	Pokud se učení nezdaří, můžeš hned číst ještě jednou.	SNA
+TOOLTIP_APPLY_SLOW_PCT	Šance na zpomalení: %d%%	SA
+TOOLTIP_APPLY_STEAL_HP	Poškození %d%% je absorbováno ZB.	SA
+TOOLTIP_APPLY_STEAL_SP	Poškození %d%% je absorbováno MB.	SA
+TOOLTIP_APPLY_STUN_PCT	Šance na bezvědomí: %d%%	SA
+TOOLTIP_ARMOR	Brnění
+TOOLTIP_ARROW	Šíp
+TOOLTIP_ASSASSIN	Ninja
+TOOLTIP_ATT_GRADE	Hodnota útoku +%d	SA
+TOOLTIP_ATT_SPEED	Rychlost útoku +%d%%	SA
+TOOLTIP_AUTO_POTION_HP	Elixír Slunce
+TOOLTIP_AUTO_POTION_REST	Zbývá: %.2f%%
+TOOLTIP_AUTO_POTION_SP	Elixír Měsíce
+TOOLTIP_AUTO_POTION_USING	Aktivní
+TOOLTIP_BOW_DISTANCE	Dosah luku +%dm	SA
+TOOLTIP_BUYPRICE	Cena: %s
+TOOLTIP_CAST_SPEED	Rychlost kouzla +%d%%	SA
+TOOLTIP_CON	Vitalita +%d	SA
+TOOLTIP_COSTUME_ATTR_BONUS	Bonus za kostým %d%%	SA
+TOOLTIP_DEF_GRADE	Obrana +%d	SA
+TOOLTIP_DEX	Pohyblivost +%d	SA
+TOOLTIP_DRAGON_SOUL_DECK1	Země	SNA
+TOOLTIP_DRAGON_SOUL_DECK2	Nebesa	SNA
+TOOLTIP_EAR	Náušnice
+TOOLTIP_ENERGY	Energie %d	SA
+TOOLTIP_ETC	atd.
+TOOLTIP_FISHINGROD_EXP	Body: %d / %d
+TOOLTIP_FISHINGROD_LEVEL	Úroveň: %d
+TOOLTIP_FISHINGROD_UPGRADE1	Dát rybářovi
+TOOLTIP_FISHINGROD_UPGRADE2	abys dostal
+TOOLTIP_FISHINGROD_UPGRADE3	zlepšenou udici
+TOOLTIP_FISH_LEN	Délka: %.2fcm
+TOOLTIP_HELMET	Přílba
+TOOLTIP_HP_REGEN	Obnovení ZB +%d%%	SA
+TOOLTIP_INT	Inteligence +%d	SA
+TOOLTIP_ITEM_ATT_GRADE	Hodnota útoku %d
+TOOLTIP_ITEM_ATT_POWER	Hodnota útoku %d - %d
+TOOLTIP_ITEM_ATT_POWER_ONE_ARG	Hodnota útoku %d
+TOOLTIP_ITEM_ATT_POWER_REFINE	Hodnota útoku %d - %d (+%d)
+TOOLTIP_ITEM_ATT_SPEED	Rychlost útoku %s
+TOOLTIP_ITEM_DEF_GRADE	Obrana %d
+TOOLTIP_ITEM_FAST	Rychle
+TOOLTIP_ITEM_LIMIT_CON	Horní hranice vitality: %d
+TOOLTIP_ITEM_LIMIT_DEX	Horní hranice pohyblivosti: %d
+TOOLTIP_ITEM_LIMIT_INT	Horní hranice inteligence: %d
+TOOLTIP_ITEM_LIMIT_LEVEL	Od úrovně: %d
+TOOLTIP_ITEM_LIMIT_STR	Horní hranice síly: %d
+TOOLTIP_ITEM_MAGIC_ATT_POWER	Magická hodnota útoku %d - %d
+TOOLTIP_ITEM_MAGIC_ATT_POWER_ONE_ARG	Magická hodnota útoku %d
+TOOLTIP_ITEM_MAGIC_DEF_POWER	Magická obrana %d
+TOOLTIP_ITEM_NORMAL	Normální
+TOOLTIP_ITEM_SLOW	Pomalu
+TOOLTIP_ITEM_VERY_FAST	Velmi rychle
+TOOLTIP_ITEM_VERY_SLOW	Velmi pomalu
+TOOLTIP_ITEM_WEARABLE_JOB	[ Lze vyzbrojit ]
+TOOLTIP_LOTTERY_STEP_NUMBER	%d
+TOOLTIP_LOTTO_NUMBER	Šťastné číslo: %d
+TOOLTIP_MAGIC_ATTBONUS_PER	Magický útok +%d%% 	SA
+TOOLTIP_MAGIC_ATT_GRADE	Magická hodnota útoku +%d	SA
+TOOLTIP_MAGIC_DEF_GRADE	Magická obrana +%d	SA
+TOOLTIP_MALL_ATTBONUS	Hodnota útoku  +%d%%	SA
+TOOLTIP_MALL_ATTBONUS_STATIC	Hodnota útoku +12~15 %	SNA
+TOOLTIP_MALL_AUTOLOOT	Yangy se automaticky sesbírají.	SNA
+TOOLTIP_MALL_DEFBONUS	Obrana +%d%%	SA
+TOOLTIP_MALL_DEFBONUS_STATIC	Obrana +12~15 %	SNA
+TOOLTIP_MALL_EXPBONUS	BZK +%d%%	SA
+TOOLTIP_MALL_EXPBONUS_STATIC	O 50 % víc BZK	SNA
+TOOLTIP_MALL_FISH_MIND	Šance ulovit rybu je zvýšena.	SNA
+TOOLTIP_MALL_GOLDBONUS	Šance na spadlé Yangy (%.1f)	SA
+TOOLTIP_MALL_GOLDBONUS_STATIC	Zdvojnásobí šanci na spadnutí Yangů	SNA
+TOOLTIP_MALL_ITEMBONUS	Šance ukořistit předměty (%.1f)	SA
+TOOLTIP_MALL_ITEMBONUS_STATIC	Zdvojnásobí šanci ukořistit předměty	SNA
+TOOLTIP_MALL_MARRIAGE_FAST	Body za lásku narůstají rychleji.	SNA
+TOOLTIP_MALL_SAFEBOX	Na skladě je k dispozici více místa.	SNA
+TOOLTIP_MAX_HP	Max. ZB +%d	SA
+TOOLTIP_MAX_HP_PCT	Max. ZB +%d%%	SA
+TOOLTIP_MAX_SP	Max. MB +%d	SA
+TOOLTIP_MAX_SP_PCT	Max. MB +%d%%	SA
+TOOLTIP_MAX_STAMINA	Max. vytrvalost +%d	SA
+TOOLTIP_MELEE_MAGIC_ATTBONUS_PER	Magický útok/útok zbraní  +%d%% 	SA
+TOOLTIP_MEMORIZED_POSITION	%s(%d, %d)
+TOOLTIP_MEMORIZED_POSITION_ERROR	Chyba v GPS(%d, %d)
+TOOLTIP_MOV_SPEED	Rychlost pohybu %d%%	SA
+TOOLTIP_NECK	Náhrdelník
+TOOLTIP_NEED_ALL_SP	Potřebné MB: max.
+TOOLTIP_NEED_GSP	Potřebný duch draka: %d
+TOOLTIP_NEED_HP	Potřebné ZB: %d
+TOOLTIP_NEED_HP_PER_SEC	ZB / sek:  %d
+TOOLTIP_NEED_SKILL_POINT	Potřebné SB:
+TOOLTIP_NEED_SP	Potřebné MB: %d
+TOOLTIP_NEED_SP_PER_SEC	MB / sek:  %d
+TOOLTIP_NEXT_SKILL_LEVEL_1	Příští úroveň: %d (max. %d)
+TOOLTIP_NEXT_SKILL_LEVEL_2	Příští úroveň: %d (max. %d-%d)
+TOOLTIP_NORMAL_HIT_DAMAGE_BONUS	Průměrná škoda %d%%	SA
+TOOLTIP_NORMAL_HIT_DEFEND_BONUS	Průměrná odolnost proti škodě %d%%	SA
+TOOLTIP_PARTY_INFO_GRADE_UP1	Více než %d členů skupiny
+TOOLTIP_PARTY_INFO_GRADE_UP2	Stupeň útoku +%d
+TOOLTIP_PARTY_INFO_GRADE_UP3	Stupeň obrany +%d
+TOOLTIP_PARTY_INFO_HEAL_18_LEVEL	Obnovit jednou za 60 min. ZB/MB všech členů skupiny.
+TOOLTIP_PARTY_INFO_HEAL_40_LEVEL	Jednou za 30 min. obnovit ZB/MB všech členů skupiny.
+TOOLTIP_PARTY_INFO_RECALL_12_LEVEL	Musíš počkat tři minuty po smrti členu skupiny.
+TOOLTIP_PARTY_INFO_RECALL_20_LEVEL	Můžeš kdykoliv zavolat k sobě členy skupiny na stejném serveru.
+TOOLTIP_PARTY_INFO_SET_ATTACKER	Stupeň útoku +(počet členů skupiny/2) Lze zvolit útočníky %d.
+TOOLTIP_PARTY_INFO_SET_TANKER	Stupeň obrany +(počet členů skupiny). Lze zvolit bojovníky zblízka 1.
+TOOLTIP_PARTY_SKILL_LEVEL	Aktuální úroveň: %d
+TOOLTIP_PARTY_TITLE_GRADE_UP	[Útok/obrana zlepšen(a)]
+TOOLTIP_PARTY_TITLE_HEAL	[Obnovit]
+TOOLTIP_PARTY_TITLE_INFO_BONUS_EXP	Pokud máš více než %d členů skupiny, obdržíš bonusové BZK %d%%.
+TOOLTIP_PARTY_TITLE_MEMBER_BONUS_EXP	[Bonusové BZK]
+TOOLTIP_PARTY_TITLE_RECALL	[Přivolat]
+TOOLTIP_PARTY_TITLE_SET_ATTACKER	[Určit útočníky]
+TOOLTIP_PARTY_TITLE_SET_TANKER	[Určit bojovníky zblízka]
+TOOLTIP_PICK_EXP	Body: %d / %d
+TOOLTIP_PICK_LEVEL	Úroveň: %d
+TOOLTIP_PICK_UPGRADE1	Dát dřevorubci
+TOOLTIP_PICK_UPGRADE2	abys dostal lepší
+TOOLTIP_PICK_UPGRADE3	kopáč.
+TOOLTIP_POTION_CURE	Dát negativní efekty do původního stavu.
+TOOLTIP_POTION_MIN	min.
+TOOLTIP_POTION_PLUS_ATTACK_SPEED	Rychlost útoku: +%d
+TOOLTIP_POTION_PLUS_HP_PERCENT	ZB: +%d%%
+TOOLTIP_POTION_PLUS_HP_POINT	ZB: +%d
+TOOLTIP_POTION_PLUS_MOVING_SPEED	Rychlost pohybu: +%d
+TOOLTIP_POTION_PLUS_SP_PERCENT	MB: +%d%%
+TOOLTIP_POTION_PLUS_SP_POINT	MB: +%d
+TOOLTIP_POTION_SEC	sek.
+TOOLTIP_POTION_TIME	Doba:
+TOOLTIP_REQUIREMENT_21_LEVEL	Musíš nejdřív dosáhnout úrovně 21
+TOOLTIP_REQUIREMENT_41_LEVEL	Musíš nejdřív dosáhnout úrovně 41
+TOOLTIP_REQUIREMENT_LEVEL	Musíš nejdřív dosáhnout úrovně %d
+TOOLTIP_REQUIREMENT_SKILL_LEVEL	Je zapotřebí %s úroveň %d
+TOOLTIP_REQUIREMENT_STAT_LEVEL	Je zapotřebí %s %d
+TOOLTIP_RESIST_BOW	Odolnost proti šípům %d%%	SA
+TOOLTIP_RESIST_DARK	Odolnost vůči temnotě +%d%% 	SA
+TOOLTIP_RESIST_EARTH	Odolnost Zemi +%d%% 	SA
+TOOLTIP_RESIST_ELEC	Odolnost proti blesku %d%%	SA
+TOOLTIP_RESIST_FIRE	Odolnost proti ohni %d%%	SA
+TOOLTIP_RESIST_ICE	Odolnost ledu +%d%% 	SA
+TOOLTIP_RESIST_MAGIC	Odolnost proti magii %d%%	SA
+TOOLTIP_REST_USABLE_COUNT	Zbývá: %d
+TOOLTIP_SEALED	Duševní pouto
+TOOLTIP_SELLPRICE	Cena: %s
+TOOLTIP_SHAMAN	Šaman
+TOOLTIP_SHIELD	Štít
+TOOLTIP_SHOES	Boty
+TOOLTIP_SKILL	Schopnost	SNA
+TOOLTIP_SKILLBOOK_NAME	Kniha schopností
+TOOLTIP_SKILL_AFFECT_ATT_GRADE	Hodnota útoku: +
+TOOLTIP_SKILL_AFFECT_ATT_POWER	Hodnota útoku:
+TOOLTIP_SKILL_AFFECT_ATT_SPEED	Rychlost útoku: +
+TOOLTIP_SKILL_AFFECT_DEF_GRADE	Obrana:
+TOOLTIP_SKILL_AFFECT_DODGE	Soupeřova hodnota útoku:
+TOOLTIP_SKILL_AFFECT_HEAL	Obnovit ZB:
+TOOLTIP_SKILL_AFFECT_MOV_SPEED	Rychlost pohybu: +
+TOOLTIP_SKILL_AFFECT_REFLECT_MELEE	Šance odrazit tělesný útok:
+TOOLTIP_SKILL_AFFECT_RESIST_NORMAL	Odolnost proti tělesné újmě:
+TOOLTIP_SKILL_COOL_TIME	Doba nabíjení:
+TOOLTIP_SKILL_DAMAGE_BONUS	Poškození schopností: %d%%	SA
+TOOLTIP_SKILL_DEFEND_BONUS	Odolnost proti poškození schopností %d%%	SA
+TOOLTIP_SKILL_DURATION	Doba: %d sek.
+TOOLTIP_SKILL_FORGET_BOOK_NAME	Kniha zapomnění
+TOOLTIP_SKILL_LEVEL	Aktuální úroveň: %d
+TOOLTIP_SKILL_LEVEL_MASTER	Aktuální úroveň: %d (mistr)
+TOOLTIP_SKILL_LEVEL_WITH_MAX	Aktuální úroveň: %d (max. %d)
+TOOLTIP_SOCKET_EMPTY	Prázdný
+TOOLTIP_SOCKET_REFINABLE_ITEM	[Předmět s úchytem]
+TOOLTIP_SP_REGEN	Obnovení MB +%d%%	SA
+TOOLTIP_STR	Síla +%d	SA
+TOOLTIP_SURA	Sura
+TOOLTIP_TIME_CHARGER_FIX	Čas nabíjení %d vteřin. 	SA
+TOOLTIP_TIME_CHARGER_PER	Čas nabíjení %d%%	SA
+TOOLTIP_UNIQUE	Jedinečný
+TOOLTIP_UNSEAL_LEFT_TIME	Zrušení duševního pouta za: %dH %dM
+TOOLTIP_WARRIOR	Válečník
+TOOLTIP_WEAPON	Zbraň
+TOOLTIP_WRISTLET	Náramek
+UI_ACCEPT	Přijmout
+UI_CANCEL	Zrušit
+UI_CLOSE	Zavřít
+UI_DEF_FONT	Tahoma:12
+UI_DEF_FONT_LARGE	Tahoma:14
+UI_DEF_FONT_SMALL	Tahoma:9
+UI_DENY	Odmítnout
+UI_ITEM	Předmět
+UI_LEFT_TIME	Zbývající čas: %d sek.
+UI_NEXT	Dále
+UI_NEXTPAGE	Další
+UI_NOCONTENTS	Bez obsahu
+UI_NONAME	Chybí jméno	
+UI_OK	OK
+UI_POS_UNKNOWN	Neznámé místo
+UI_PREVPAGE	zpět
+UI_UNKNOWN	Neznámý
+UPLOAD_MARK_CHECK_NEED_RECONNECT	Upload musí být proveden ještě jednou
+UPLOAD_MARK_UPLOAD_NEED_RECONNECT	Upload musí být proveden ještě jednou
+USE_ITEM_FAILURE_PRIVATE_SHOP	Pokud jsi otevřel soukromý stánek, nemůžeš použít tento předmět.
+USE_SKILL_ERROR_UNKNOWN	Neznámá chyba v schopnostech: %s
+TARGET_INFO_RESISTS	Odolnosti:
+TARGET_INFO_RESISTS_LINE0	Mec: %d%% Obourucní: %d%% Zvon: %d%%
+TARGET_INFO_RESISTS_LINE1	Oboustranné: %d%% Vejír: %d%% Luk: %d%%
+TARGET_INFO_REGEN_INFO	TP reg. %d%% každých %d sekund.
+TARGET_INFO_GOLD_MIN_MAX	Yang: %s ~ %s
+TARGET_INFO_DAMAGE	Útok: %s - %s
+TARGET_INFO_DEFENSE	Obrana: %s
+TARGET_INFO_EXP	Zkušenosti: %s
+TARGET_INFO_MAINRACE	Rasa: %s
+TARGET_INFO_MAX_HP	Max. život: %s
+TARGET_INFO_NO_ITEM_TEXT	Žádné položky k dispozici
+TARGET_INFO_NO_RACE	Žádná rasa
+TARGET_INFO_NEWRACE_INSECT	Hmyz
+TARGET_INFO_NEWRACE_FIRE	Ohnivé monstrum
+TARGET_INFO_NEWRACE_ICE	Ledové monstrum
+TARGET_INFO_NEWRACE_DESERT	Poušt
+TARGET_INFO_NEWRACE_TREE	Strom
+TARGET_INFO_RACE_ANIMAL	Zvírata
+TARGET_INFO_RACE_DARK	Odolnost proti temnote
+TARGET_INFO_RACE_DEVIL	Dábel
+TARGET_INFO_RACE_EARTH	Odolnost proti zemi
+TARGET_INFO_RACE_ELEC	Odolnost proti blesku 
+TARGET_INFO_RACE_FIRE	Odolnost proti ohni
+TARGET_INFO_RACE_HUMAN	Pololidé
+TARGET_INFO_RACE_ICE	Odolnost proti ledu
+TARGET_INFO_RACE_METIN	Metinový kámen
+TARGET_INFO_RACE_MILGYO	Esoterický 
+TARGET_INFO_RACE_ORC	Orkové
+TARGET_INFO_RACE_UNDEAD	Nemrtví
+TARGET_INFO_RACE_WIND	Odolnost proti vetru
+TARGET_INFO_STONE_NAME	Kámen duchu
+TARGET_INFO_SUBRACE	Podrasa: %s
