@@ -43,42 +43,37 @@ int check_name_independent(const char * str)
 	return 1;
 }
 
-int check_name_euckr(const char * str)
+int check_name_utf8(const char * str)
 {
-	int		code;
-	const char*	tmp;
-
-	if (!str || !*str)
+	if (!str || strlen(str) > CHARACTER_NAME_MAX_LEN)
 		return 0;
 
-	if ( strlen(str) < 2 || strlen(str) > 12 )
-		return 0;
+	int count = 0;
 
-	for (tmp = str; *tmp; ++tmp)
+	for (const unsigned char * tmp = (const unsigned char *) str; *tmp; ++count)
 	{
-		// If it is not in Korean and is blank, it is wrong.
-		if (isnhspace(*tmp))
+		if (*tmp < 0x80)
+		{
+			if (!isalnum(*tmp))
+				return 0;
+
+			++tmp;
+			continue;
+		}
+
+		if ((tmp[0] & 0xF0) != 0xE0 || (tmp[1] & 0xC0) != 0x80 || (tmp[2] & 0xC0) != 0x80)
 			return 0;
 
-		// It is suitable if it is a number and not Hangul. .
-		if (isnhdigit(*tmp))
-			continue;
+		const int code = ((tmp[0] & 0x0F) << 12) | ((tmp[1] & 0x3F) << 6) | (tmp[2] & 0x3F);
 
-		// It is suitable if it is in English and not Korean. .   
-		if (!ishan(*tmp) && isalpha(*tmp))
-			continue;
-
-		code = *tmp;
-		code += 256;
-
-		if (code < 176 || code > 200)
+		if (code < 0xAC00 || code > 0xD7A3)
 			return 0;
 
-		++tmp;
-
-		if (!*tmp)
-			break;
+		tmp += 3;
 	}
+
+	if (count < 2 || count > 12)
+		return 0;
 
 	return check_name_independent(str);
 }
@@ -118,7 +113,7 @@ void LocaleService_Init()
 void LocaleService_TransferDefaultSetting()
 {
 	if (!check_name)
-		check_name = check_name_euckr;
+		check_name = check_name_utf8;
 
 	if (!is_twobyte)
 		is_twobyte = is_twobyte_euckr;

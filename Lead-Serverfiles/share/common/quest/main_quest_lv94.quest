@@ -200,7 +200,7 @@ quest main_quest_lv94 begin
 		when REWARD1_ITEM2.use begin
 			pc.remove_item ( REWARD1_ITEM2, pc.count_item(REWARD1_ITEM2))	
 			
-			affect.add_collect_point(POINT_MAGIC_DEF_GRADE,AFFECT_MAGIC_DEF,60*30) --60³â	
+			affect.add_collect_point(POINT_MAGIC_DEF_GRADE,AFFECT_MAGIC_DEF,60*30) --60년	
 				
 			set_state (state2_1)
 		end

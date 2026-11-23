@@ -66,7 +66,7 @@ quest main_quest_lv94 begin
 		when 31032.use begin
 			pc.remove_item ( 31032, pc.count_item(31032))	
 			
-			affect.add_collect_point(POINT_MAGIC_DEF_GRADE,10,60*30) --60³â	
+			affect.add_collect_point(POINT_MAGIC_DEF_GRADE,10,60*30) --60년	
 				
 			set_state (state2_1)
 		end

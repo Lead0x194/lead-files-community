@@ -476,7 +476,7 @@ quest main_quest_flame_lv101 begin
 			pc.change_money( 156000)
 			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(71095),1))
 			pc.give_item2(71095, 1)
-			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(72016),1))  -- Á¦3ÀÇ ¼Õ
+			say_reward(string.format(gameforge.main_quest_lv60._210_sayReward, item_name(72016),1))  -- 제3의 손
 			pc.give_item2_select(72016)
 			item.set_socket(2, 60)
 			say()

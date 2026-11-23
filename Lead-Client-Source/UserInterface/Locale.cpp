@@ -13,8 +13,6 @@ std::string __SECURITY_KEY_STRING__ = LSS_SECURITY_KEY;
 
 char	MULTI_LOCALE_PATH[256]		= "locale/ymir";
 char	MULTI_LOCALE_NAME[256]		= "ymir";
-int		MULTI_LOCALE_CODE			= 949;
-int		MULTI_LOCALE_REPORT_PORT	= 10000;
 
 void LocaleService_LoadConfig(const char* fileName)
 {
@@ -26,17 +24,14 @@ void LocaleService_LoadConfig(const char* fileName)
 	{		
 		char	line[256];			
 		char	name[256];
-		int		code;
-		int		id;
 		if (fgets(line, sizeof(line)-1, fp))
 		{
 			line[sizeof(line)-1] = '\0';
-			sscanf_s(line, "%d %d %s", &id, &code, name, (unsigned)sizeof(name));
-
-			MULTI_LOCALE_REPORT_PORT		= id;
-			MULTI_LOCALE_CODE				= code;
-			strcpy_s(MULTI_LOCALE_NAME, sizeof(MULTI_LOCALE_NAME), name);
-			sprintf_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), "locale/%s", MULTI_LOCALE_NAME);
+			if (1 == sscanf_s(line, "%s", name, (unsigned)sizeof(name)))
+			{
+				strcpy_s(MULTI_LOCALE_NAME, sizeof(MULTI_LOCALE_NAME), name);
+				sprintf_s(MULTI_LOCALE_PATH, sizeof(MULTI_LOCALE_PATH), "locale/%s", MULTI_LOCALE_NAME);
+			}
 		}			
 		fclose(fp);
 	}
@@ -108,7 +103,7 @@ const char*	LocaleService_GetSecurityKey()
 }
 
 const char* LocaleService_GetName()				{ return LSS_EUROPE; }
-unsigned int LocaleService_GetCodePage()		{ return MULTI_LOCALE_CODE; }
+unsigned int LocaleService_GetCodePage()		{ return CP_UTF8; }
 const char*	LocaleService_GetLocaleName()		{ return MULTI_LOCALE_NAME; }
 const char*	LocaleService_GetLocalePath()		{ return MULTI_LOCALE_PATH; }
 
