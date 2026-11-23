@@ -1,15 +1,15 @@
 if get_time ( ) < pc . getqf ( "duration" ) then 
-say_title ( gameforge . collect_quest_lv94 . _050_say_title ) 
-say ( gameforge . collect_quest_lv94 . _160_say ) 
+say_title ( "[LC;573]" ) 
+say ( "[LC;584]" ) 
 return 
 end 
 if pc . count_item ( 30252 ) <= 0 then 
-say_title ( gameforge . collect_quest_lv94 . _050_say_title ) 
-say ( gameforge . collect_quest_lv94 . _170_say ) 
+say_title ( "[LC;573]" ) 
+say ( "[LC;585]" ) 
 return 
 end 
-say_title ( gameforge . collect_quest_lv94 . _050_say_title ) 
-say ( gameforge . collect_quest_lv94 . _180_say ) 
+say_title ( "[LC;573]" ) 
+say ( "[LC;586]" ) 
 pc . remove_item ( 30252 , 1 ) 
 if is_test_server ( ) then 
 pc . setqf ( "duration" , get_time ( ) + 2 ) 
@@ -28,20 +28,20 @@ if s <= pass_percent then
 if pc . getqf ( "collect_count" ) < 19 then 
 local index = pc . getqf ( "collect_count" ) + 1 
 pc . setqf ( "collect_count" , index ) 
-say_title ( gameforge . collect_quest_lv94 . _050_say_title ) 
-say ( gameforge . collect_quest_lv94 . _190_say ) 
-say ( string . format ( gameforge . collect_quest_lv94 . _200_say , 20 - pc . getqf ( "collect_count" ) ) ) 
-say ( gameforge . collect_quest_lv94 . _210_say ) 
+say_title ( "[LC;573]" ) 
+say ( "[LC;587]" ) 
+say ( string . format ( "[LC;588;%s]" , 20 - pc . getqf ( "collect_count" ) ) ) 
+say ( "[LC;589]" ) 
 pc . setqf ( "drink_drug" , 0 ) 
 return 
 end 
-say_title ( gameforge . collect_quest_lv94 . _050_say_title ) 
-say ( gameforge . collect_quest_lv94 . _250_say ) 
+say_title ( "[LC;573]" ) 
+say ( "[LC;594]" ) 
 pc . setqf ( "collect_count" , 0 ) 
 set_state ( "key_item" ) 
 else 
 pc . setqf ( "drink_drug" , 0 ) 
-say_title ( gameforge . collect_quest_lv94 . _050_say_title ) 
-say ( gameforge . collect_quest_lv94 . _240_say ) 
+say_title ( "[LC;573]" ) 
+say ( "[LC;593]" ) 
 return 
 end 

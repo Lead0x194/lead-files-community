@@ -1,20 +1,20 @@
-say_title ( gameforge . new_quest_lv43 . _021_say_title ) 
+say_title ( "[LC;5931]" ) 
 if pc . count_item ( new_quest_lv43_drop1 ) == 1 and pc . getqf ( "collect_count_1" ) < 1 then 
 target . delete ( "__TARGET3__" ) 
-say ( gameforge . new_quest_lv43 . _049_say ) 
-say ( gameforge . new_quest_lv43 . _050_say ) 
-say ( gameforge . new_quest_lv43 . _051_say ) 
+say ( "[LC;5947]" ) 
+say ( "[LC;5948]" ) 
+say ( "[LC;5949]" ) 
 wait ( ) 
-say_title ( gameforge . new_quest_lv43 . _052_say_title ) 
-say_reward ( string . format ( gameforge . new_quest_lv43 . _054_say_reward , new_quest_lv43_amountXp ) ) 
-say_reward ( string . format ( gameforge . new_quest_lv43 . _053_say_reward , new_quest_lv43_amountYang ) ) 
+say_title ( "[LC;5950]" ) 
+say_reward ( string . format ( "[LC;5952]" , new_quest_lv43_amountXp ) ) 
+say_reward ( string . format ( "[LC;5951]" , new_quest_lv43_amountYang ) ) 
 pc . change_money ( new_quest_lv43_amountYang ) 
 pc . give_exp2 ( new_quest_lv43_amountXp ) 
 pc . remove_item ( 30142 ) 
 q . done ( ) 
 set_state ( "__COMPLETE__" ) 
 else 
-say ( gameforge . new_quest_lv43 . _060_say ) 
+say ( "[LC;5953]" ) 
 set_state ( "start" ) 
 return 
 end 

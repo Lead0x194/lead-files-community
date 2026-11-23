@@ -9,12 +9,12 @@ end
 local today_item4_1_checked = pc . getqf ( "today_item4_1_checked" ) 
 if today_item4_1_checked >= 1 then 
 say_title ( mob_name ( 20380 ) ) 
-say ( gameforge . main_quest_lv91 . _500_say ) 
+say ( "[LC;4908]" ) 
 else 
 pc . remove_item ( 31019 , 1 ) 
 if number ( 1 , 100 ) <= 70 then 
 say_title ( mob_name ( 20380 ) ) 
-say ( gameforge . main_quest_lv91 . _510_say ) 
+say ( "[LC;4909]" ) 
 pc . setqf ( "item4_1_checked" , pc . getqf ( "item4_1_checked" ) + 1 ) 
 pc . setqf ( "today_item4_1_checked" , pc . getqf ( "today_item4_1_checked" ) + 1 ) 
 local remain = 3 - pc . getqf ( "item4_1_checked" ) 
@@ -26,22 +26,22 @@ if pc . getqf ( "item4_1_checked" ) >= 3 then
 pc . remove_item ( 31019 , pc . count_item ( 31019 ) ) 
 wait ( ) 
 say_title ( mob_name ( 20380 ) ) 
-say ( gameforge . main_quest_lv91 . _520_say ) 
+say ( "[LC;4910]" ) 
 wait ( ) 
 say_title ( locale . reward ) 
-say_reward ( string . format ( gameforge . main_quest_lv60 . _190_sayReward , 2.7874e+07 ) ) 
-say_reward ( string . format ( gameforge . main_quest_lv60 . _200_sayReward , 225000 ) ) 
+say_reward ( string . format ( "[LC;4537;%d]" , 2.7874e+07 ) ) 
+say_reward ( string . format ( "[LC;4538;%d]" , 225000 ) ) 
 say ( "" ) 
 pc . give_exp2 ( 2.7874e+07 ) 
 pc . change_money ( 225000 ) 
 set_state ( "state5_1" ) 
 q . set_counter_name ( "" ) 
 else 
-say ( string . format ( gameforge . main_quest_lv91 . _530_say , remain ) ) 
+say ( string . format ( "[LC;4911;%d]" , remain ) ) 
 end 
 else 
 say_title ( mob_name ( 20380 ) ) 
-say ( gameforge . main_quest_lv91 . _540_say ) 
+say ( "[LC;4912]" ) 
 end 
 end 
 end 

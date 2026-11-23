@@ -1,7 +1,7 @@
-say ( gameforge . oxevent . _310_say ) 
-local s = select ( gameforge . oxevent . _320_select , gameforge . locale . cancel ) 
+say ( "[LC;6475]" ) 
+local s = select ( "[LC;6476]" , "[LC;1891]" ) 
 if s == 1 then 
 oxevent . end_event_force ( ) 
 game . set_event_flag ( "ox_map_login_counter" , 0 ) 
-say ( gameforge . oxevent . _330_say ) 
+say ( "[LC;6477]" ) 
 end 

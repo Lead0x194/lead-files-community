@@ -1,5 +1,5 @@
 target . delete ( "__TARGET__" ) 
-say_reward ( gameforge . main_quest_lv60 . _140_sayReward ) 
+say_reward ( "[LC;4532]" ) 
 pc . give_item2 ( 31001 ) 
 say ( "" ) 
 set_state ( "quest2_end" ) 

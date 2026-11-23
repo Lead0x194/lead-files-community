@@ -1,16 +1,16 @@
 target . delete ( "__TARGET4__" ) 
-say_title ( gameforge . new_quest_lv29 . _082_say_title ) 
-say ( gameforge . new_quest_lv29 . _052_say ) 
+say_title ( "[LC;5849]" ) 
+say ( "[LC;5825]" ) 
 wait ( ) 
-say_title ( gameforge . new_quest_lv29 . _082_say_title ) 
-say ( gameforge . new_quest_lv29 . _053_say ) 
+say_title ( "[LC;5849]" ) 
+say ( "[LC;5826]" ) 
 local hayCount = pc . count_item ( 50054 ) 
 if hayCount < 6 then 
 new_quest_lv29_neededAmountDrop = 6 
 q . done ( ) 
 set_state ( "cutting_hay" ) 
 else 
-say ( gameforge . new_quest_lv29 . _065_1_say ) 
+say ( "[LC;5832]" ) 
 q . done ( ) 
 set_state ( "calming_yonah" ) 
 end 

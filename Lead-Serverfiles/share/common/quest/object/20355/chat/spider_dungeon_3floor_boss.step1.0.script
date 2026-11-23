@@ -1,4 +1,4 @@
 say_title ( mob_name ( 20355 ) ) 
-say ( gameforge . spider_dungeon_3floor_boss . _60_say ) 
+say ( "[LC;6960]" ) 
 set_state ( "step2" ) 
 pc . give_item2 ( 76019 ) 

@@ -1,24 +1,24 @@
-say ( gameforge . pre_event_heavens_cave . _20_say ) 
-say ( gameforge . pre_event_heavens_cave . _30_say ) 
+say ( "[LC;6683]" ) 
+say ( "[LC;6694]" ) 
 if pc . get_map_index ( ) == 3 then 
-say ( gameforge . pre_event_heavens_cave . _40_say ) 
+say ( "[LC;6698]" ) 
 elseif pc . get_map_index ( ) == 23 then 
-say ( gameforge . pre_event_heavens_cave . _50_say ) 
+say ( "[LC;6699]" ) 
 elseif pc . get_map_index ( ) == 43 then 
-say ( gameforge . pre_event_heavens_cave . _60_say ) 
+say ( "[LC;6700]" ) 
 end 
 wait ( ) 
-say ( gameforge . pre_event_heavens_cave . _70_say ) 
-say ( gameforge . pre_event_heavens_cave . _80_say ) 
+say ( "[LC;6701]" ) 
+say ( "[LC;6702]" ) 
 say_item_vnum ( 30178 ) 
 local maxlevel = pc . get_level ( ) 
 local glyphcount = 0 
 glyphcount = pc . count_item ( 30178 ) 
 if glyphcount > 0 then 
-local giveglyphstone = select ( gameforge . pre_event_heavens_cave . _90_1_select , gameforge . pre_event_heavens_cave . _90_2_select ) 
+local giveglyphstone = select ( "[LC;6703]" , "[LC;6704]" ) 
 if giveglyphstone == 1 then 
 say_pc_name ( ) 
-say ( gameforge . pre_event_heavens_cave . _100_say ) 
+say ( "[LC;6671]" ) 
 local pickpotion = 0 
 if pc . get_level ( ) < 24 and pc . get_level ( ) >= 20 then 
 pickpotion = math . random ( 0 , 8 ) 
@@ -75,21 +75,21 @@ else
 potion3amount = pc . count_item ( 30178 ) * 3 
 end 
 wait ( ) 
-say ( gameforge . pre_event_heavens_cave . _20_say ) 
-say ( gameforge . pre_event_heavens_cave . _110_say ) 
+say ( "[LC;6683]" ) 
+say ( "[LC;6673]" ) 
 say ( string . format ( "%dx" , potion1amount ) ) 
 say_item_vnum ( potion1 ) 
 say ( string . format ( "%dx" , potion2amount ) ) 
 say_item_vnum ( potion2 ) 
 wait ( ) 
-say ( string . format ( gameforge . pre_event_heavens_cave . _120_say , potion3amount ) ) 
+say ( string . format ( "[LC;6674;%d]" , potion3amount ) ) 
 say_item_vnum ( potion3 ) 
 local choosereward = 
 select ( 
 string . format ( "%d %s" , potion1amount , item_name ( potion1 ) ) , 
 string . format ( "%d %s" , potion2amount , item_name ( potion2 ) ) , 
 string . format ( "%d %s" , potion3amount , item_name ( potion3 ) ) , 
-gameforge . pre_event_heavens_cave . _130_4_select ) 
+"[LC;6675]" ) 
 if choosereward < 4 then 
 local glyphstones = pc . count_item ( 30178 ) 
 pc . remove_item ( 30178 , glyphstones ) 
@@ -100,27 +100,27 @@ if choosereward == 1 then pc . give_item2 ( potion1 , potion1amount )
 elseif choosereward == 2 then pc . give_item2 ( potion2 , potion2amount ) 
 elseif choosereward == 3 then pc . give_item2 ( potion3 , potion3amount ) 
 end 
-say ( gameforge . pre_event_heavens_cave . _20_say ) 
-say ( string . format ( gameforge . pre_event_heavens_cave . _140_say , glyphcount ) ) 
+say ( "[LC;6683]" ) 
+say ( string . format ( "[LC;6676;%d]" , glyphcount ) ) 
 say_pc_name ( ) 
-local eventstory = select ( gameforge . pre_event_heavens_cave . _150_1_select , gameforge . pre_event_heavens_cave . _150_2_select ) 
+local eventstory = select ( "[LC;6677]" , "[LC;6678]" ) 
 if eventstory == 1 then 
-say ( gameforge . pre_event_heavens_cave . _20_say ) 
-say ( gameforge . pre_event_heavens_cave . _160_say ) 
-say ( gameforge . pre_event_heavens_cave . _170_say ) 
-say ( gameforge . pre_event_heavens_cave . _180_say ) 
-say ( gameforge . pre_event_heavens_cave . _190_say ) 
-say ( gameforge . pre_event_heavens_cave . _200_say ) 
+say ( "[LC;6683]" ) 
+say ( "[LC;6679]" ) 
+say ( "[LC;6680]" ) 
+say ( nil ) 
+say ( "[LC;6681]" ) 
+say ( "[LC;6682]" ) 
 wait ( ) 
 if pc . getqf ( "goldstatus" ) == 0 then 
-say ( string . format ( gameforge . pre_event_heavens_cave . _210_say , item_name ( 30180 ) ) ) 
+say ( string . format ( "[LC;6684]" , item_name ( 30180 ) ) ) 
 say_item_vnum ( 30180 ) 
 pc . setqf ( "goldstatus" , 2 ) 
-say ( string . format ( gameforge . pre_event_heavens_cave . _220_say , mob_name ( 20009 ) , mob_name ( 9012 ) ) ) 
+say ( string . format ( "[LC;6685]" , mob_name ( 20009 ) , mob_name ( 9012 ) ) ) 
 wait ( ) 
-say ( gameforge . pre_event_heavens_cave . _230_say ) 
+say ( "[LC;6686]" ) 
 else 
-say ( gameforge . pre_event_heavens_cave . _240_say ) 
+say ( "[LC;6687]" ) 
 end 
 say_item_vnum ( 50626 ) 
 say_item_vnum ( 80008 ) 
@@ -131,7 +131,7 @@ say_item_vnum ( 80006 )
 say_item_vnum ( 80007 ) 
 end 
 else 
-say ( gameforge . pre_event_heavens_cave . _250_say ) 
+say ( "[LC;6688]" ) 
 end 
 else 
 end 

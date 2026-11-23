@@ -1,8 +1,8 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( 30228 ) > 0 then 
-say_title ( gameforge . collect_quest_lv94 . _050_say_title ) 
-say ( gameforge . collect_quest_lv94 . _340_say ) 
-local s = select ( gameforge . collect_quest_lv94 . _230_1_select , gameforge . collect_quest_lv94 . _230_2_select , gameforge . collect_quest_lv94 . _230_3_select ) 
+say_title ( "[LC;573]" ) 
+say ( "[LC;603]" ) 
+local s = select ( "[LC;590]" , "[LC;591]" , "[LC;592]" ) 
 if 1 == s then 
 affect . add_collect ( 1 , 1100 , 60 * 60 * 24 * 365 * 60 ) 
 pc . setqf ( "reward" , 1 ) 
@@ -22,7 +22,7 @@ set_quest_state ( "collect_quest_lv96" , "run" )
 set_state ( "__complete" ) 
 return 
 else 
-say_title ( gameforge . collect_quest_lv94 . _050_say_title ) 
-say ( gameforge . collect_quest_lv94 . _350_say ) 
+say_title ( "[LC;573]" ) 
+say ( "[LC;604]" ) 
 return 
 end 

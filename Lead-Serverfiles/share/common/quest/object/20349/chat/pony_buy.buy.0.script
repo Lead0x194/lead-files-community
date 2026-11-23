@@ -1,6 +1,6 @@
-say_title ( gameforge . pony_buy . _280_sayTitle ) 
-say ( gameforge . pony_buy . _290_say ) 
-local b = select ( gameforge . buy_fishrod . _40_select , gameforge . pony_buy . _300_select , gameforge . pony_buy . _140_select ) 
+say_title ( "[LC;6569]" ) 
+say ( "[LC;6570]" ) 
+local b = select ( "[LC;49]" , "[LC;6571]" , "[LC;6554]" ) 
 if 1 == b then 
 if pc . money >= 100000 then 
 char_log ( 0 , " HORSE_BUY" , "BEGIN" ) 
@@ -13,27 +13,27 @@ char_log ( 0 , " HORSE_BUY" , "INC horse_advance 1" )
 pc . give_item2 ( "50051" , 1 ) 
 char_log ( 0 , " HORSE_BUY" , "INC 50051 1" ) 
 char_log ( 0 , " HORSE_BUY" , "END" ) 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_buy . _310_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6573]" ) 
 setstate ( "start" ) 
 q . done ( ) 
 else 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_buy . _320_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6574]" ) 
 end 
 elseif 2 == b then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_buy . _330_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6575]" ) 
 elseif 3 == b then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_buy . _340_say ) 
-local b = select ( gameforge . locale . guild . yes , gameforge . pony_buy . _350_select ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6576]" ) 
+local b = select ( "[LC;2059]" , "[LC;6577]" ) 
 if 1 == b then 
 setstate ( "start" ) 
 elseif 2 == b then 
 else 
-say ( string . format ( gameforge . find_squareguard . _70_say , b ) ) 
+say ( string . format ( "[LC;1020;%s]" , b ) ) 
 end 
 else 
-say ( string . format ( gameforge . find_squareguard . _70_say , b ) ) 
+say ( string . format ( "[LC;1020;%s]" , b ) ) 
 end 

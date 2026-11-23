@@ -1,16 +1,16 @@
 if 52001 <= item . vnum and item . vnum <= 52005 or 52016 <= item . vnum and item . vnum <= 52020 or 52031 <= item . vnum and item . vnum <= 52035 or 52046 <= item . vnum and item . vnum <= 52050 or 52061 <= item . vnum and item . vnum <= 52065 or 52076 <= item . vnum and item . vnum <= 52080 or 52091 <= item . vnum and item . vnum <= 52095 then if pc . is_riding ( ) == true then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _32_say ) 
+say ( "[LC;8454]" ) 
 return 
 end 
 if count_item_range ( 38100 , 38102 ) >= 1 then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _34_say ) 
-local choice = select ( gameforge . training_mount . _35_select_1 , gameforge . training_mount . _35_select_2 , locale . cancel ) 
+say ( "[LC;8456]" ) 
+local choice = select ( "[LC;8457]" , "[LC;8458]" , locale . cancel ) 
 if choice == 3 then 
 return 
 elseif choice == 1 then 
-local option_select = select ( gameforge . training_mount . _36_select_1 , gameforge . training_mount . _36_select_2 , gameforge . training_mount . _36_select_3 , locale . cancel ) 
+local option_select = select ( "[LC;8459]" , "[LC;8460]" , "[LC;8461]" , locale . cancel ) 
 local information = { } 
 if option_select == 4 then 
 return 
@@ -20,7 +20,7 @@ if pc . count_item ( 38100 ) >= 1 then
 information = { 86400 * 7 , 38100 } 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _37_say ) 
+say ( "[LC;8463]" ) 
 return 
 end 
 elseif option_select == 2 then 
@@ -28,7 +28,7 @@ if pc . count_item ( 38101 ) >= 1 then
 information = { 86400 * 15 , 38101 } 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _37_say ) 
+say ( "[LC;8463]" ) 
 return 
 end 
 elseif option_select == 3 then 
@@ -36,7 +36,7 @@ if pc . count_item ( 38102 ) >= 1 then
 information = { 86400 * 30 , 38102 } 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _37_say ) 
+say ( "[LC;8463]" ) 
 return 
 end 
 end 
@@ -48,10 +48,10 @@ end
 end 
 if training_mount . check_list ( 50067 , 25 , 11 ) == 1 then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _20_say ) 
+say ( "[LC;8442]" ) 
 wait ( ) 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _22_say ) 
+say ( "[LC;8444]" ) 
 local remain_time = item . get_socket ( 0 ) 
 local old_vnum = item . get_vnum ( ) 
 local new_vnum = item . get_vnum ( ) + 5 
@@ -63,17 +63,17 @@ pc . remove_item ( 50067 , 1 )
 end 
  return end if 52006 <= item . vnum and item . vnum <= 52010 or 52021 <= item . vnum and item . vnum <= 52025 or 52036 <= item . vnum and item . vnum <= 52040 or 52051 <= item . vnum and item . vnum <= 52055 or 52081 <= item . vnum and item . vnum <= 52085 or 52066 <= item . vnum and item . vnum <= 52070 or 52096 <= item . vnum and item . vnum <= 52100 then if pc . is_riding ( ) == true then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _32_say ) 
+say ( "[LC;8454]" ) 
 return 
 end 
 if count_item_range ( 38100 , 38102 ) >= 1 then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _34_say ) 
-local choice = select ( gameforge . training_mount . _35_select_1 , gameforge . training_mount . _35_select_2 , locale . cancel ) 
+say ( "[LC;8456]" ) 
+local choice = select ( "[LC;8457]" , "[LC;8458]" , locale . cancel ) 
 if choice == 3 then 
 return 
 elseif choice == 1 then 
-local option_select = select ( gameforge . training_mount . _36_select_1 , gameforge . training_mount . _36_select_2 , gameforge . training_mount . _36_select_3 , locale . cancel ) 
+local option_select = select ( "[LC;8459]" , "[LC;8460]" , "[LC;8461]" , locale . cancel ) 
 local information = { } 
 if option_select == 4 then 
 return 
@@ -83,7 +83,7 @@ if pc . count_item ( 38100 ) >= 1 then
 information = { 86400 * 7 , 38100 } 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _37_say ) 
+say ( "[LC;8463]" ) 
 return 
 end 
 elseif option_select == 2 then 
@@ -91,7 +91,7 @@ if pc . count_item ( 38101 ) >= 1 then
 information = { 86400 * 15 , 38101 } 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _37_say ) 
+say ( "[LC;8463]" ) 
 return 
 end 
 elseif option_select == 3 then 
@@ -99,7 +99,7 @@ if pc . count_item ( 38102 ) >= 1 then
 information = { 86400 * 30 , 38102 } 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _37_say ) 
+say ( "[LC;8463]" ) 
 return 
 end 
 end 
@@ -111,10 +111,10 @@ end
 end 
 if training_mount . check_list ( 50068 , 45 , 20 ) == 1 then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _21_say ) 
+say ( "[LC;8443]" ) 
 wait ( ) 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _22_say ) 
+say ( "[LC;8444]" ) 
 local remain_time = item . get_socket ( 0 ) 
 local old_vnum = item . get_vnum ( ) 
 local new_vnum = item . get_vnum ( ) + 5 
@@ -126,16 +126,16 @@ pc . remove_item ( 50068 , 1 )
 end 
  return end if 52011 <= item . vnum and item . vnum <= 52015 or 52026 <= item . vnum and item . vnum <= 52031 or 52041 <= item . vnum and item . vnum <= 52045 or 52056 <= item . vnum and item . vnum <= 52061 or 52086 <= item . vnum and item . vnum <= 52091 or 52071 <= item . vnum and item . vnum <= 52075 or 52101 <= item . vnum and item . vnum <= 52105 then if pc . is_riding ( ) == true then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _32_say ) 
+say ( "[LC;8454]" ) 
 return 
 end 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _38_say ) 
-local choice = select ( gameforge . training_mount . _35_select_1 , locale . cancel ) 
+say ( "[LC;8464]" ) 
+local choice = select ( "[LC;8457]" , locale . cancel ) 
 if choice == 2 then 
 return 
 elseif choice == 1 then 
-local option_select = select ( gameforge . training_mount . _36_select_1 , gameforge . training_mount . _36_select_2 , gameforge . training_mount . _36_select_3 , gameforge . training_mount . _36_select_4 , locale . cancel ) 
+local option_select = select ( "[LC;8459]" , "[LC;8460]" , "[LC;8461]" , "[LC;8462]" , locale . cancel ) 
 local information = { } 
 if option_select == 5 then 
 return 
@@ -145,7 +145,7 @@ if pc . count_item ( 38100 ) >= 1 then
 information = { 86400 * 7 , 38100 } 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _37_say ) 
+say ( "[LC;8463]" ) 
 return 
 end 
 elseif option_select == 2 then 
@@ -153,7 +153,7 @@ if pc . count_item ( 38101 ) >= 1 then
 information = { 86400 * 15 , 38101 } 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _37_say ) 
+say ( "[LC;8463]" ) 
 return 
 end 
 elseif option_select == 3 then 
@@ -161,7 +161,7 @@ if pc . count_item ( 38102 ) >= 1 then
 information = { 86400 * 30 , 38102 } 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _37_say ) 
+say ( "[LC;8463]" ) 
 return 
 end 
 elseif option_select == 4 then 
@@ -169,7 +169,7 @@ local remain_time = item . get_socket ( 0 )
 local run_time = remain_time - get_time ( ) 
 if ( remain_time - get_time ( ) ) > 86400 then 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _39_say ) 
+say ( "[LC;8465]" ) 
 if is_test_server ( ) then 
 item . set_socket ( 0 , get_time ( ) + 86460 ) 
 end 
@@ -180,7 +180,7 @@ information = { training_mount . extraTime ( 2 ) , 50068 }
 pc . changegold ( - 200000 ) 
 else 
 say_title ( "" .. mob_name ( 20349 ) .. "" ) 
-say ( gameforge . training_mount . _40_say ) 
+say ( "[LC;8466]" ) 
 return 
 end 
 end 

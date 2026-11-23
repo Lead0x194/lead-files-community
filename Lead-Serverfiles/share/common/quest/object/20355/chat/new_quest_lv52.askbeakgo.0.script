@@ -1,22 +1,22 @@
-say_title ( gameforge . new_quest_lv52 . _054_say_title ) 
-say ( gameforge . new_quest_lv52 . _042_say ) 
-local doquest = select ( gameforge . new_quest_lv52 . _055_select , gameforge . subquest_12 . _50_select , gameforge . new_quest_lv75 . _290_2_select ) 
+say_title ( "[LC;5973]" ) 
+say ( "[LC;5962]" ) 
+local doquest = select ( "[LC;5975]" , "[LC;7304]" , "[LC;6200]" ) 
 if doquest == 1 then 
-say_title ( gameforge . new_quest_lv52 . _054_say_title ) 
-say ( gameforge . new_quest_lv52 . _056_say ) 
+say_title ( "[LC;5973]" ) 
+say ( "[LC;5976]" ) 
 elseif doquest == 3 then 
-say ( gameforge . subquest_06 . _60_say ) 
-local abortquest = select ( gameforge . subquest_06 . _70_select , gameforge . subquest_06 . _80_select ) 
+say ( "[LC;7170]" ) 
+local abortquest = select ( "[LC;7173]" , "[LC;7174]" ) 
 if abortquest == 1 then 
 pc . setqf ( "ghostsleft" , 0 ) 
 target . delete ( "__TARGET__" ) 
 set_state ( "__GIVEUP__" ) 
 else 
-say_title ( gameforge . new_quest_lv52 . _054_say_title ) 
-say ( gameforge . subquest_11 . _80_say ) 
+say_title ( "[LC;5973]" ) 
+say ( "[LC;7288]" ) 
 end 
 return 
 else 
-say_title ( gameforge . new_quest_lv52 . _054_say_title ) 
-say ( gameforge . new_quest_lv52 . _85_say ) 
+say_title ( "[LC;5973]" ) 
+say ( "[LC;6032]" ) 
 end 

@@ -1,9 +1,9 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv17 . _012_say_title ) 
+say_title ( "[LC;5631]" ) 
 if pc . getqf ( "collect_count" ) > 0 then 
-say_reward ( string . format ( gameforge . new_quest_lv17 . _092_say_reward , 5 - pc . getqf ( "collect_count" ) ) ) 
+say_reward ( string . format ( "[LC;5657;%s]" , 5 - pc . getqf ( "collect_count" ) ) ) 
 else 
-say ( gameforge . new_quest_lv17 . _110_say ) 
+say ( "[LC;5658]" ) 
 q . done ( ) 
 set_state ( "gotochaegirab" ) 
 end 

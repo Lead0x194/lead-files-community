@@ -1,13 +1,13 @@
 target . delete ( "__TARGET__" ) 
 if pc . getqf ( "heavens_cave_keyquest_Repeat" ) == 0 then 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _300_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1537]" ) 
 wait ( ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _310_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1538]" ) 
 else 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _320_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1539]" ) 
 end 
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( pc . getqf ( "heavens_cave_keyquest_FrozenTear" ) ) >= pc . getqf ( "heavens_cave_keyquest_NeededTearsAmount" ) and pc . count_item ( pc . getqf ( "heavens_cave_keyquest_VolcanicGlass" ) ) >= pc . getqf ( "heavens_cave_keyquest_NeededGlassAmount" ) then 

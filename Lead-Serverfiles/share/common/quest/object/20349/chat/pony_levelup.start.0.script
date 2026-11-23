@@ -1,25 +1,25 @@
 if pc . countitem ( "50050" ) < 1 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _530_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6636]" ) 
 setstate ( "need_item50050" ) 
 elseif get_time ( ) < pc . getqf ( "next_time" ) then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _540_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6637]" ) 
 elseif horse . get_stamina_pct ( ) <= 10 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _550_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6638]" ) 
 elseif horse . get_health_pct ( ) <= 10 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _560_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6639]" ) 
 elseif horse . get_level ( ) == 10 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _570_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6640]" ) 
 elseif horse . is_riding ( ) == 0 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _580_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6641]" ) 
 elseif ( horse . get_level ( ) >= 8 and horse . get_level ( ) <= 9 ) then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _590_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6642]" ) 
 if is_test_server ( ) then 
 pc . setqf ( "next_time" , get_time ( ) + 10 ) 
 else 
@@ -65,8 +65,8 @@ setstate ( "training_snow_yellow_step1" )
 end 
 end 
 elseif ( horse . get_level ( ) >= 6 and horse . get_level ( ) <= 7 ) then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _620_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6645]" ) 
 if is_test_server ( ) then 
 pc . setqf ( "next_time" , get_time ( ) + 10 ) 
 else 
@@ -116,8 +116,8 @@ setstate ( "training_desert_sky_step1" )
 end 
 end 
 elseif ( horse . get_level ( ) >= 3 and horse . get_level ( ) <= 5 ) then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _650_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6647]" ) 
 if is_test_server ( ) then 
 pc . setqf ( "next_time" , get_time ( ) + 10 ) 
 else 
@@ -197,8 +197,8 @@ end
 end 
 end 
 elseif ( horse . get_level ( ) >= 1 and horse . get_level ( ) <= 2 ) then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . pony_levelup . _680_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;6649]" ) 
 if is_test_server ( ) then 
 pc . setqf ( "next_time" , get_time ( ) + 10 ) 
 else 
@@ -278,5 +278,5 @@ end
 end 
 end 
 else 
-say ( gameforge . pony_levelup . _690_say ) 
+say ( "[LC;6650]" ) 
 end 

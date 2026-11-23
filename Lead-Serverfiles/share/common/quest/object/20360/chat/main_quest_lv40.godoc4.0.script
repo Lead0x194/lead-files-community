@@ -1,6 +1,6 @@
 target . delete ( "__TARGET1__" ) 
 say_pc_name ( ) 
-say ( gameforge . main_quest_lv40 . _180_say ) 
+say ( "[LC;4307]" ) 
 pc . setqf ( "click1" , 1 ) 
 if pc . getqf ( "click2" ) == 1 then 
 pc . setqf ( "click1" , 0 ) 
@@ -9,4 +9,4 @@ pc . give_item2 ( 30150 )
 set_state ( "gototeacher2" ) 
 return 
 end 
-say ( gameforge . main_quest_lv40 . _190_say ) 
+say ( "[LC;4308]" ) 

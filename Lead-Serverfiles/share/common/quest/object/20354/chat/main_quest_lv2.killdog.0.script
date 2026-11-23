@@ -1,10 +1,10 @@
-say_title ( gameforge . main_quest_lv1 . _60_sayTitle ) 
-say ( gameforge . main_quest_lv2 . _170_say ) 
+say_title ( "[LC;4066]" ) 
+say ( "[LC;4161]" ) 
 if pc . is_gm ( ) then 
 wait ( ) 
-say_title ( gameforge . main_quest_lv2 . _180_sayTitle ) 
-say ( gameforge . main_quest_lv2 . _182_say ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;4162]" ) 
+say ( "[LC;4163]" ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if s == 1 then 
 set_state ( "gototeacher2" ) 
 end 

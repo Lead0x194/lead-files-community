@@ -1,6 +1,6 @@
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _360_say ) 
-local b = select ( gameforge . horse_upgrade2 . _370_select , gameforge . horse_upgrade2 . _380_select , gameforge . horse_upgrade2 . _385_select ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1752]" ) 
+local b = select ( "[LC;1753]" , "[LC;1754]" , "[LC;1755]" ) 
 if 1 == b then 
 if pc . money >= 1e+06 then 
 if pc . countitem ( "50052" ) >= 1 then 
@@ -18,31 +18,31 @@ char_log ( 0 , "HORSE_UPGRADE2" , "INC 50053 1" )
 pc . give_item2 ( "50060" , 1 ) 
 char_log ( 0 , "HORSE_UPGRADE2" , "INC 50060 1" ) 
 char_log ( 0 , "HORSE_UPGRADE2" , "END" ) 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _390_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1756]" ) 
 setstate ( "start" ) 
 q . done ( ) 
 else 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _400_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1757]" ) 
 end 
 else 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _410_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1759]" ) 
 end 
 elseif 2 == b then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _420_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1760]" ) 
 elseif 3 == b then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _430_say ) 
-local b = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1761]" ) 
+local b = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 1 == b then 
 setstate ( "start" ) 
 elseif 2 == b then 
 else 
-say ( string . format ( gameforge . find_squareguard . _70_say , b ) ) 
+say ( string . format ( "[LC;1020;%s]" , b ) ) 
 end 
 else 
-say ( string . format ( gameforge . find_squareguard . _70_say , b ) ) 
+say ( string . format ( "[LC;1020;%s]" , b ) ) 
 end 

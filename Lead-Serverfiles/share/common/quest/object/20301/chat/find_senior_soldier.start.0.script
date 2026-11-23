@@ -1,11 +1,11 @@
 if not next_time_is_now ( ) then 
-say_title ( gameforge . find_senior_soldier . _20_sayTitle ) 
-say ( gameforge . find_senior_soldier . _30_say ) 
+say_title ( "[LC;991]" ) 
+say ( "[LC;993]" ) 
 else 
-say ( gameforge . find_senior_soldier . _40_say ) 
+say ( "[LC;994]" ) 
 wait ( ) 
-say_title ( gameforge . find_senior_soldier . _20_sayTitle ) 
-say ( gameforge . find_senior_soldier . _50_say ) 
+say_title ( "[LC;991]" ) 
+say ( "[LC;995]" ) 
 find_senior_soldier . save_target_cond ( ) 
 next_time_set ( time_hour_to_sec ( 1 ) , 10 ) 
 set_state ( "find" ) 

@@ -1,15 +1,15 @@
 target . delete ( "__TARGET4__" ) 
-say_title ( gameforge . new_quest_lv52 . _054_say_title ) 
+say_title ( "[LC;5973]" ) 
 local MorF = pc . get_sex ( ) 
 local isvalid = pc . getqf ( "ghostsleft" ) 
 if isvalid == 0 then 
 local reward = pc . getqf ( "lv52reward" ) 
-say ( string . format ( gameforge . new_quest_lv52 . _183_say_reward , item_name ( reward ) ) ) 
-say ( gameforge . new_quest_lv52 . _184_say_reward ) 
+say ( string . format ( "[LC;6026;%s]" , item_name ( reward ) ) ) 
+say ( "[LC;6027]" ) 
 if MorF == 0 then 
-say ( gameforge . new_quest_lv52 . _185_say_reward ) 
+say ( "[LC;6028]" ) 
 else 
-say ( gameforge . new_quest_lv52 . _186_say_reward ) 
+say ( "[LC;6029]" ) 
 end 
 pc . change_money ( 270000 ) 
 pc . give_exp2 ( 3.3e+06 ) 

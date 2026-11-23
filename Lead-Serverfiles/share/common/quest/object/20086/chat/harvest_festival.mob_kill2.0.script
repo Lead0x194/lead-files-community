@@ -1,8 +1,8 @@
 local quest_count = pc . getqf ( "harvest_festival_count" ) 
 local quest_complete = pc . getqf ( "harvest_festival_mob_complete" ) 
 if quest_count >= 10 then 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( gameforge . harvest_festival . _760_say ) 
+say_title ( "[LC;1442]" ) 
+say ( "[LC;1493]" ) 
 set_state ( "information" ) 
 return 
 end 
@@ -12,34 +12,34 @@ pc . setqf ( "harvest_festival_mob_complete" , 0 )
 pc . setqf ( "mob_kill1_count" , 0 ) 
 pc . setqf ( "mob_kill2_count" , 0 ) 
 local quest_count = pc . getqf ( "harvest_festival_count" ) 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( gameforge . harvest_festival . _770_say ) 
+say_title ( "[LC;1442]" ) 
+say ( "[LC;1494]" ) 
 wait ( ) 
 local rice_count = pc . getqf ( "rice_count" ) 
 local cake_count = pc . getqf ( "cake_count" ) 
 pc . setqf ( "rice_count" , rice_count + cake_count ) 
 pc . setqf ( "cake_count" , 0 ) 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( string . format ( gameforge . harvest_festival . _780_say , rice_count ) ) 
+say_title ( "[LC;1442]" ) 
+say ( string . format ( "[LC;1495;%s]" , rice_count ) ) 
 wait ( ) 
 if quest_count >= 10 then 
 char_log ( 0 , "EVENT_RECORD" , "harvest_festival clear" ) 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( gameforge . harvest_festival . _790_say ) 
+say_title ( "[LC;1442]" ) 
+say ( "[LC;1496]" ) 
 set_state ( "information" ) 
 return 
 else 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( gameforge . harvest_festival . _795_say ) 
+say_title ( "[LC;1442]" ) 
+say ( "[LC;1497]" ) 
 end 
-local replay_set = select ( gameforge . harvest_festival . _380_select , gameforge . harvest_festival . _390_select ) 
+local replay_set = select ( "[LC;1454]" , "[LC;1455]" ) 
 if replay_set == 2 then 
 set_state ( "information" ) 
 return 
 end 
 local current_count = quest_count + 1 
-say_title ( gameforge . harvest_festival . _260_sayTitle ) 
-say ( string . format ( gameforge . harvest_festival . _400_say , current_count ) ) 
+say_title ( "[LC;1442]" ) 
+say ( string . format ( "[LC;1456;%s]" , current_count ) ) 
 set_state ( "mob_kill1" ) 
 return 
 end 

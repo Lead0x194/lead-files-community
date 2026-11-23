@@ -1,28 +1,28 @@
 if pc . countitem ( diarypage ) > 1 and pc . countitem ( diarypage ) <= 3 then 
-say ( gameforge . new_quest_lv75 . _170_say ) 
-say ( gameforge . new_quest_lv75 . _171_say ) 
+say ( "[LC;6178]" ) 
+say ( "[LC;6179]" ) 
 elseif pc . countitem ( diarypage ) > 3 and pc . countitem ( diarypage ) <= 6 then 
-say ( gameforge . new_quest_lv75 . _172_say ) 
-say ( gameforge . new_quest_lv75 . _173_say ) 
-local story = select ( gameforge . new_quest_lv75 . _140_7_select , gameforge . new_quest_lv75 . _140_2_select ) 
+say ( "[LC;6180]" ) 
+say ( "[LC;6181]" ) 
+local story = select ( "[LC;6171]" , "[LC;6166]" ) 
 elseif pc . countitem ( diarypage ) > 6 and pc . countitem ( diarypage ) <= 9 then 
-say ( gameforge . new_quest_lv75 . _174_say ) 
-local story = select ( gameforge . new_quest_lv75 . _140_7_select , gameforge . new_quest_lv75 . _140_2_select , gameforge . new_quest_lv75 . _140_3_select ) 
+say ( "[LC;6182]" ) 
+local story = select ( "[LC;6171]" , "[LC;6166]" , "[LC;6167]" ) 
 elseif pc . countitem ( diarypage ) > 9 and pc . countitem ( diarypage ) <= 12 then 
-say ( gameforge . new_quest_lv75 . _175_say ) 
-say ( gameforge . new_quest_lv75 . _176_say ) 
-local story = select ( gameforge . new_quest_lv75 . _140_7_select , gameforge . new_quest_lv75 . _140_2_select , gameforge . new_quest_lv75 . _140_3_select , gameforge . new_quest_lv75 . _140_4_select ) 
+say ( "[LC;6183]" ) 
+say ( "[LC;6184]" ) 
+local story = select ( "[LC;6171]" , "[LC;6166]" , "[LC;6167]" , "[LC;6168]" ) 
 else 
-say ( gameforge . new_quest_lv75 . _177_say ) 
-say ( gameforge . new_quest_lv75 . _178_say ) 
-local story = select ( gameforge . new_quest_lv75 . _140_7_select , gameforge . new_quest_lv75 . _140_2_select , gameforge . new_quest_lv75 . _140_3_select , gameforge . new_quest_lv75 . _140_4_select , gameforge . new_quest_lv75 . _140_5_select ) 
+say ( "[LC;6185]" ) 
+say ( "[LC;6186]" ) 
+local story = select ( "[LC;6171]" , "[LC;6166]" , "[LC;6167]" , "[LC;6168]" , "[LC;6169]" ) 
 end 
 if story == 2 then 
-say ( gameforge . new_quest_lv75 . _160_1_say ) 
+say ( "[LC;6173]" ) 
 elseif story == 3 then 
-say ( gameforge . new_quest_lv75 . _160_2_say ) 
+say ( "[LC;6174]" ) 
 elseif story == 4 then 
-say ( gameforge . new_quest_lv75 . _160_3_say ) 
+say ( "[LC;6175]" ) 
 elseif story == 5 then 
-say ( gameforge . new_quest_lv75 . _160_4_say ) 
+say ( "[LC;6176]" ) 
 end 

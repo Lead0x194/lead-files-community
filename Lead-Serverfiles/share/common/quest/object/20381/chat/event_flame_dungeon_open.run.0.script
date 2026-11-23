@@ -1,15 +1,15 @@
-say ( gameforge . event_flame_dungeon_open . _050_say ) 
+say ( "[LC;867]" ) 
 wait ( ) 
 local t = pc . getqf ( "event_FD_time" ) 
 local killcount = pc . getqf ( "kill_done" ) 
 if killcount == 0 then 
-say ( gameforge . event_flame_dungeon_open . _080_say ) 
+say ( "[LC;870]" ) 
 elseif ( t == 0 ) or ( t + 86400 < get_global_time ( ) ) then 
-say ( gameforge . event_flame_dungeon_open . _060_say ) 
+say ( "[LC;868]" ) 
 pc . give_item2 ( 71173 , 1 ) 
 pc . give_item2 ( 71174 , 3 ) 
 pc . setqf ( "event_FD_time" , get_global_time ( ) ) 
 pc . setqf ( "kill_count_1" , 0 ) 
 else 
-say ( gameforge . event_flame_dungeon_open . _070_say ) 
+say ( "[LC;869]" ) 
 end 

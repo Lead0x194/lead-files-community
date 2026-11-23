@@ -1,34 +1,34 @@
 if horse . is_dead ( ) then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _20_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1735]" ) 
 elseif pc . level <= 49 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _30_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1746]" ) 
 elseif horse . get_level ( ) <= 19 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _40_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1758]" ) 
 elseif pc . countitem ( "50050" ) < 1 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _50_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1765]" ) 
 setstate ( "need_item50050" ) 
 elseif pc . countitem ( "50052" ) < 1 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _60_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1766]" ) 
 elseif horse . get_level ( ) == 20 and not horse . is_dead ( ) and pc . countitem ( "50050" ) >= 1 and pc . level >= 50 then 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _70_say ) 
-local b = select ( gameforge . find_brother_article . _90_select , gameforge . find_brother_article . _100_select ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1767]" ) 
+local b = select ( "[LC;971]" , "[LC;931]" ) 
 if 1 == b then 
 if pc . countitem ( "50050" ) >= 1 then 
 pc . removeitem ( "50050" , 1 ) 
 setstate ( "test" ) 
 end 
 elseif 2 == b then 
-say ( gameforge . horse_upgrade2 . _80_say ) 
+say ( "[LC;1768]" ) 
 else 
-say ( string . format ( gameforge . buy_fishrod . _80_say , b ) ) 
+say ( string . format ( "[LC;53;%s]" , b ) ) 
 end 
 else 
-say_title ( gameforge . horse_exchange_ticket . _20_sayTitle ) 
-say ( gameforge . horse_upgrade2 . _90_say ) 
+say_title ( "[LC;1558]" ) 
+say ( "[LC;1769]" ) 
 end 
