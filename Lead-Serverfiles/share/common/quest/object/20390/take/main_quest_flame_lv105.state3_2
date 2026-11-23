@@ -1,5 +1,5 @@
 if item . vnum == 31083 then item . remove ( ) 
-say_title ( gameforge . main_quest_flame_lv105 . _330_sayTitle ) 
-say ( gameforge . main_quest_flame_lv105 . _340_say ) 
+say_title ( "[LC;4015]" ) 
+say ( "[LC;4016]" ) 
 set_state ( "state3_3" ) 
  return end 

@@ -5,7 +5,7 @@ if d . getf ( "stone_count" ) <= 0 then
 d . setf ( "level" , 6 ) 
 d . clear_regen ( ) 
 d . regen_file ( "data/dungeon/deviltower6_regen.txt" ) 
-notice_multiline ( gameforge . deviltower_zone . _130_dNotice , d . notice ) 
+notice_multiline ( "[LC;681]" , d . notice ) 
 d . jump_all ( special . devil_tower [ 5 ] [ 1 ] , special . devil_tower [ 5 ] [ 2 ] ) 
 local server_arg = d . get_map_index ( ) 
 clear_server_timer ( "devil_stone5_fail1" , server_arg ) 
@@ -13,6 +13,6 @@ clear_server_timer ( "devil_stone5_fail2" , server_arg )
 clear_server_timer ( "devil_stone5_fail3" , server_arg ) 
 clear_server_timer ( "devil_stone5_fail" , server_arg ) 
 else 
-d . notice ( string . format ( gameforge . deviltower_zone . _140_dNotice , d . getf ( "stone_count" ) ) ) 
+d . notice ( string . format ( "[LC;682;%s]" , d . getf ( "stone_count" ) ) ) 
 end 
  return end 

@@ -1,24 +1,24 @@
 local setting = devilcatacomb_zone . setting ( ) 
 if d . getf ( "devilcatacomb_floor2_stone_clicked" ) == 0 then 
 if not devilcatacomb_zone . is_dc2_doors_clear ( ) then 
-say ( gameforge . devilcatacomb_zone . _220_say ) 
+say ( "[LC;657]" ) 
 wait ( ) 
 return 
 end 
-say ( gameforge . devilcatacomb_zone . _230_say ) 
+say ( "[LC;658]" ) 
 wait ( ) 
-say ( gameforge . devilcatacomb_zone . _240_say ) 
+say ( "[LC;659]" ) 
 wait ( ) 
-local s = select ( gameforge . devilcatacomb_zone . _150_select , gameforge . devilcatacomb_zone . _160_select ) 
+local s = select ( "[LC;649]" , "[LC;650]" ) 
 if s == 1 then 
 if d . getf ( "devilcatacomb_floor2_stone_clicked" ) == 0 then 
 d . setf ( "devilcatacomb_floor2_stone_clicked" , 1 ) 
 d . setqf2 ( "devilcatacomb_zone" , "last_exit_time" , get_global_time ( ) ) 
 d . set_item_group ( "reapers_credit" , 3 , setting . reapers_credit3 , 1 , setting . reapers_credit2 , 1 , setting . reapers_credit1 , 1 ) 
-d . say_diff_by_item_group ( "reapers_credit" , gameforge . devilcatacomb_zone . _250_say , gameforge . devilcatacomb_zone . _260_say ) 
+d . say_diff_by_item_group ( "reapers_credit" , "[LC;660]" , "[LC;661]" ) 
 timer ( "devilcatacomb_floor3_enter_timer" , 7 ) 
 end 
 end 
 else 
-say ( gameforge . devilcatacomb_zone . _270_say ) 
+say ( "[LC;662]" ) 
 end 

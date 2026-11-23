@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
 say_title ( mob_name ( 20393 ) ) 
-say ( gameforge . main_quest_flame_lv103 . _110_say ) 
+say ( "[LC;3895]" ) 
 set_state ( "state1_3" ) 

@@ -1,7 +1,7 @@
 game . set_event_flag ( "dragon_lair_timer_used" , 0 ) 
 if game . get_event_flag ( "dragon_lair_alive" ) == 1 then 
-notice_multiline ( gameforge . dragon_lair_access . _150_notice , notice_all ) 
+notice_multiline ( "[LC;724]" , notice_all ) 
 else 
-notice_multiline ( gameforge . dragon_lair_access . _160_notice , notice_all ) 
+notice_multiline ( "[LC;725]" , notice_all ) 
 end 
 dragon_lair_access . warp_all_from_lair ( ) 

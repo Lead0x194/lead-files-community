@@ -1,6 +1,6 @@
 if number ( 1 , 100 ) == 1 then 
 pc . give_item2 ( 31002 , 1 ) 
-say_reward ( gameforge . main_quest_lv60 . _270_sayReward ) 
+say_reward ( "[LC;4546]" ) 
 say ( "" ) 
 set_state ( "quest3_end1" ) 
 end 

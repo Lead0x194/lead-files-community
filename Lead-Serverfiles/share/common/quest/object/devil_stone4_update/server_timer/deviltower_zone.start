@@ -5,14 +5,14 @@ if d . getf ( "fakedead" .. i ) == 0 then
 if d . unique_get_hp_perc ( "fake" .. i ) < 50 then 
 d . purge_unique ( "fake" .. i ) 
 d . setf ( "fakedead" .. i , 1 ) 
-notice_multiline ( gameforge . deviltower_zone . _90_dNotice , d . notice ) 
+notice_multiline ( "[LC;704]" , d . notice ) 
 end 
 end 
 end 
 else 
 server_timer ( "devil_stone4_end" , 5 , get_server_timer_arg ( ) ) 
 d . purge ( ) 
-notice_multiline ( gameforge . deviltower_zone . _100_dNotice , d . notice ) 
+notice_multiline ( "[LC;677]" , d . notice ) 
 clear_server_timer ( "devil_stone4_fail1" , get_server_timer_arg ( ) ) 
 clear_server_timer ( "devil_stone4_fail2" , get_server_timer_arg ( ) ) 
 clear_server_timer ( "devil_stone4_fail" , get_server_timer_arg ( ) ) 

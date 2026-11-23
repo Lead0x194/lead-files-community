@@ -12,7 +12,7 @@ else
 if pet . count_summoned ( ) < 1 then 
 pet . summon ( mobVnum , petName , false ) 
 else 
-syschat ( gameforge . pet_system . _030_chat ) 
+syschat ( "[LC;6535]" ) 
 end 
 if spawn_effect_file_name ~= nil then 
 pet . spawn_effect ( mobVnum , spawn_effect_file_name ) 

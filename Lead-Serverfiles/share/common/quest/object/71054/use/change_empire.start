@@ -1,13 +1,13 @@
-say_title ( gameforge . change_empire . _10_npcChat ) 
-say ( gameforge . change_empire . _40_say ) 
+say_title ( "[LC;56]" ) 
+say ( "[LC;77]" ) 
 if get_time ( ) < pc . getqf ( "next_use_time" ) then 
-say_title ( gameforge . change_empire . _50_sayTitle ) 
-say_reward ( gameforge . change_empire . _60_sayReward ) 
+say_title ( "[LC;78]" ) 
+say_reward ( "[LC;79]" ) 
 if pc . is_gm ( ) then 
-say ( gameforge . change_empire . _70_say ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;80]" ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if s == 1 then 
-say ( gameforge . change_empire . _80_say ) 
+say ( "[LC;81]" ) 
 pc . setqf ( "next_use_time" , 0 ) 
 end 
 end 

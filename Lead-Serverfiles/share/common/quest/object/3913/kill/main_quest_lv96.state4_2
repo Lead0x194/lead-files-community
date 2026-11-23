@@ -1,7 +1,7 @@
 pc . setqf ( "kill_tree3" , 1 ) 
 if pc . getqf ( "kill_tree1" ) == 1 and pc . getqf ( "kill_tree2" ) == 1 and pc . getqf ( "kill_tree3" ) == 1 then 
-notice_multiline ( gameforge . main_quest_lv96 . _510_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv96 . _510_2_notice , notice ) 
+notice_multiline ( "[LC;5290]" , notice ) 
+notice_multiline ( "[LC;5291]" , notice ) 
 set_state ( "state4_3" ) 
 end 
 local remain1 = 1 - pc . getqf ( "kill_tree1" ) 

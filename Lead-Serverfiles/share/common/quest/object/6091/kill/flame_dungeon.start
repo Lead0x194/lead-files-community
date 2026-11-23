@@ -1,5 +1,5 @@
-if flame_dungeon . is_flamed ( d . get_map_index ( ) ) and d . getf ( "level" ) == 17 then notice_multiline ( gameforge . flame_dungeon . _550_notice , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _560_notice , d . notice ) 
+if flame_dungeon . is_flamed ( d . get_map_index ( ) ) and d . getf ( "level" ) == 17 then notice_multiline ( "[LC;1089]" , d . notice ) 
+notice_multiline ( "[LC;1090]" , d . notice ) 
 server_timer ( "dungeon_end_timer" , 60 , d . get_map_index ( ) ) 
 flame_dungeon . level_clear ( ) 
 if party . is_party ( ) then 

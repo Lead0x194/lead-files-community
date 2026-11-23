@@ -1,20 +1,20 @@
 if get_time ( ) > pc . getqf ( "next_time" ) or pc . getqf ( "next_time" ) == 0 then 
 pc . setqf ( "next_time" , get_time ( ) + 20 ) 
 local yang_amount_1 = item . get_socket ( 0 ) 
-say_title ( gameforge . is_yang . _010_sayTitle ) 
-say ( string . format ( gameforge . is_yang . _020_say , yang_amount_1 ) ) 
+say_title ( "[LC;1779]" ) 
+say ( string . format ( "[LC;1780;%s]" , yang_amount_1 ) ) 
 local choice = select ( locale . yes , locale . no ) 
 if choice == 2 then 
 return 
 end 
-say_title ( gameforge . is_yang . _010_sayTitle ) 
+say_title ( "[LC;1779]" ) 
 local current_gold = pc . get_gold ( ) 
 if current_gold + yang_amount_1 >= 2e+09 then 
-say ( gameforge . is_yang . _040_say ) 
+say ( "[LC;1782]" ) 
 else 
 local yang_amount_2 = item . get_socket ( 0 ) 
 if yang_amount_1 == yang_amount_2 then 
-say ( gameforge . is_yang . _030_say ) 
+say ( "[LC;1781]" ) 
 pc . changegold ( yang_amount_1 ) 
 item . remove ( ) 
 pc . setqf ( "next_time" , get_time ( ) + 20 ) 
@@ -23,5 +23,5 @@ char_log ( pc . get_player_id ( ) , "IS_YANG_HACK" , yang_amount_1 .. " not matc
 end 
 end 
 else 
-syschat ( string . format ( gameforge . is_yang . _050_syschat , pc . getqf ( "next_time" ) - get_time ( ) ) ) 
+syschat ( string . format ( "[LC;1783;%s]" , pc . getqf ( "next_time" ) - get_time ( ) ) ) 
 end 

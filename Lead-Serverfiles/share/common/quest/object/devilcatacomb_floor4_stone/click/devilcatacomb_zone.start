@@ -1,6 +1,6 @@
 local setting = devilcatacomb_zone . setting ( ) 
 local n = number ( 1 , 5 ) 
-say ( gameforge . devilcatacomb_zone . _300_say ) 
+say ( "[LC;665]" ) 
 wait ( ) 
 if ( is_test_server ( ) ) then 
 chat ( setting . devil_king_pos [ n ] [ 1 ] , setting . devil_king_pos [ n ] [ 2 ] ) 

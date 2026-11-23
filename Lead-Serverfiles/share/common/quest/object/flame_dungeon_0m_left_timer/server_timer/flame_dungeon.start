@@ -1,6 +1,6 @@
 local setting = flame_dungeon . setting ( ) 
 if d . select ( get_server_timer_arg ( ) ) then 
-notice_multiline ( gameforge . flame_dungeon . _190_notice , d . notice ) 
-notice_multiline ( gameforge . flame_dungeon . _200_notice , d . notice ) 
+notice_multiline ( "[LC;1057]" , d . notice ) 
+notice_multiline ( "[LC;1058]" , d . notice ) 
 server_timer ( "dungeon_end_timer" , 10 , d . get_map_index ( ) ) 
 end 

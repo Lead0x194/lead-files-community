@@ -1,10 +1,10 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( "30017" ) >= 1 then 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _200_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7256]" ) 
 wait ( ) 
-say_title ( gameforge . collect_herb_lv4 . _130_sayTitle ) 
-say_reward ( gameforge . subquest_10 . _210_sayReward ) 
+say_title ( "[LC;192]" ) 
+say_reward ( "[LC;7258]" ) 
 pc . remove_item ( "30017" , 1 ) 
 pc . give_exp2 ( 60000 ) 
 pc . change_money ( 10000 ) 
@@ -12,24 +12,24 @@ pc . give_item2 ( "50083" , 1 )
 clear_letter ( ) 
 set_state ( "__COMPLETE__" ) 
 else 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _220_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7259]" ) 
 say_item_vnum ( "30017" ) 
-local s = select ( gameforge . locale . levelup . prev_quest_go , gameforge . subquest_10 . _230_select ) 
+local s = select ( "[LC;2105]" , "[LC;7260]" ) 
 if 2 == s then 
-say ( gameforge . subquest_10 . _240_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7261]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _250_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7262]" ) 
 set_state ( "information" ) 
 return 
 end 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _260_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7263]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_10 . _270_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7264]" ) 
 end 

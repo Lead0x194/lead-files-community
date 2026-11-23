@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
 say_title ( pc . getname ( ) ) 
-say ( gameforge . spider_dungeon_3floor_boss . _90_say ) 
+say ( "[LC;6963]" ) 
 set_state ( "step3" ) 

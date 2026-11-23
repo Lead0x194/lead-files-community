@@ -1,22 +1,22 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_01 . _30_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;6987]" ) 
 say_item_vnum ( 30130 ) 
-say ( gameforge . subquest_01 . _40_say ) 
-local s = select ( gameforge . subquest_01 . _50_select , gameforge . subquest_01 . _60_select ) 
+say ( "[LC;6996]" ) 
+local s = select ( "[LC;6997]" , "[LC;6998]" ) 
 if 2 == s then 
-say ( gameforge . subquest_01 . _70_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;6999]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_01 . _80_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7000]" ) 
 return 
 end 
-say_title ( gameforge . find_squareguard . _130_sayTitle ) 
-say ( gameforge . subquest_01 . _90_say ) 
+say_title ( "[LC;1004]" ) 
+say ( "[LC;7001]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_01 . _100_sayTitle ) 
-say ( gameforge . subquest_01 . _110_say ) 
+say_title ( "[LC;6964]" ) 
+say ( "[LC;6966]" ) 
 set_state ( "to_yeonnahwan" ) 

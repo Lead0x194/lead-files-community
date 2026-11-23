@@ -1,13 +1,13 @@
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . energy_system . _040_say ) 
+say ( "[LC;801]" ) 
 wait ( ) 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . energy_system . _050_say ) 
+say ( "[LC;802]" ) 
 wait ( ) 
 if pc . get_level ( ) < 35 then 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . energy_system . _060_say ) 
+say ( "[LC;803]" ) 
 else 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . energy_system . _070_say ) 
+say ( "[LC;804]" ) 
 end 

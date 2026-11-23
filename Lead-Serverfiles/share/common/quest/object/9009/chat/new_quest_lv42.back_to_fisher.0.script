@@ -1,11 +1,11 @@
 target . delete ( "__TARGET5__" ) 
-say_title ( gameforge . new_quest_lv42 . _034_say_title ) 
+say_title ( "[LC;5883]" ) 
 if pc . count_item ( 30175 ) >= 2 then 
 pc . remove_item ( 30175 , 2 ) 
-say ( gameforge . new_quest_lv42 . _080_say ) 
-say_reward ( string . format ( gameforge . new_quest_lv42 . _081_say_reward , 500000 ) ) 
+say ( "[LC;5916]" ) 
+say_reward ( string . format ( "[LC;5917]" , 500000 ) ) 
 say_item_vnum ( 27868 ) 
-say_reward ( gameforge . new_quest_lv42 . _082_say_reward ) 
+say_reward ( "[LC;5918]" ) 
 pc . setqf ( "reward_given" , 1 ) 
 pc . change_money ( 500000 ) 
 pc . give_exp2 ( 750000 ) 
@@ -14,8 +14,8 @@ q . done ( )
 set_state ( "__COMPLETE__" ) 
 return 
 else 
-say ( gameforge . new_quest_lv42 . _083_say ) 
-say_reward ( gameforge . new_quest_lv42 . _084_say_reward ) 
+say ( "[LC;5919]" ) 
+say_reward ( "[LC;5920]" ) 
 q . done ( ) 
 set_state ( "goto_smith" ) 
 end 

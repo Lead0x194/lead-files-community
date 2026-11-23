@@ -2,7 +2,7 @@ if d . select ( get_server_timer_arg ( ) ) then
 local t = 3600 - ( get_global_time ( ) - d . getf ( "enter_time" ) ) 
 local t_r = math . mod ( t , 60 ) 
 local t_m = ( t - t_r ) / 60 
-d . notice ( gameforge . devilcatacomb_zone . _330_dNotice ) 
-d . notice ( string . format ( gameforge . devilcatacomb_zone . _20_say , t_m ) ) 
+d . notice ( "[LC;669]" ) 
+d . notice ( string . format ( "[LC;655;%s]" , t_m ) ) 
 d . set_warp_location ( 0 , 0 , 0 ) 
 end 

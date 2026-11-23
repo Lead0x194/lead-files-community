@@ -1,7 +1,7 @@
 if pc . count_item ( new_quest_lv80_figure ) >= 1 and math . random ( 1 , 1000 ) <= new_quest_lv80_dropProb then 
 pc . remove_item ( new_quest_lv80_figure , 1 ) 
 pc . give_item2 ( new_quest_lv80_ember ) 
-send_letter ( gameforge . new_quest_lv80 . _110_say_title ) 
+send_letter ( "[LC;6235]" ) 
 pc . setqf ( "notenchanted" , 0 ) 
 else 
 end 

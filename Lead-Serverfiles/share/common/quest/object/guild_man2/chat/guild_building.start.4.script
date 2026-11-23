@@ -7,19 +7,19 @@ return
 end 
 if game . get_event_flag ( "guild_withdraw_delay" ) * 86400 > 
 get_global_time ( ) - pc . getqf ( "new_withdraw_time" ) then 
-say_title ( gameforge . find_squareguard . _10_targetVid ) 
-say ( gameforge . guild_manage . _180_say ) 
+say_title ( "[LC;1001]" ) 
+say ( "[LC;1352]" ) 
 return 
 end 
 if game . get_event_flag ( "guild_disband_delay" ) * 86400 > 
 get_global_time ( ) - pc . getqf ( "new_withdraw_time" ) then 
-say_title ( gameforge . find_squareguard . _10_targetVid ) 
-say ( gameforge . guild_manage . _200_say ) 
+say_title ( "[LC;1001]" ) 
+say ( "[LC;1354]" ) 
 return 
 end 
-say_title ( gameforge . find_squareguard . _10_targetVid ) 
-say ( gameforge . guild_manage . _210_say ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;1001]" ) 
+say ( "[LC;1356]" ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if s == 2 then 
 return 
 end 
@@ -29,11 +29,11 @@ if not guild_create_item or pc . countitem ( guild_create_item ) > 0 then
 game . request_make_guild ( ) 
 end 
 else 
-say_title ( gameforge . find_squareguard . _10_targetVid ) 
-say ( gameforge . guild_manage . _220_say ) 
+say_title ( "[LC;1001]" ) 
+say ( "[LC;1357]" ) 
 return 
 end 
 else 
-say_title ( gameforge . find_squareguard . _10_targetVid ) 
-say ( gameforge . guild_manage . _230_say ) 
+say_title ( "[LC;1001]" ) 
+say ( "[LC;1358]" ) 
 end 

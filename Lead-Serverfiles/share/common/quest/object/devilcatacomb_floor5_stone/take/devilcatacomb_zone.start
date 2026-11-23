@@ -1,7 +1,7 @@
 local setting = devilcatacomb_zone . setting ( ) 
 if item . vnum == setting . unlock_stone then 
 item . remove ( ) 
-d . notice ( gameforge . devilcatacomb_zone . _310_dNotice ) 
+d . notice ( "[LC;667]" ) 
 d . clear_regen ( ) 
 d . purge ( ) 
 timer ( "devilcatacomb_floor6_timer" , 2 ) 

@@ -12,16 +12,16 @@ local index = pc . getqf ( "ghostsleft" ) - 1
 pc . setqf ( "ghostsleft" , index ) 
 if index == 3 then 
 letterindex = 1 
-send_letter ( gameforge . new_quest_lv52 . _170_send_letter ) 
-q . set_title ( gameforge . new_quest_lv52 . _030_set_title ) 
+send_letter ( "[LC;6019]" ) 
+q . set_title ( "[LC;5958]" ) 
 elseif index == 2 then 
 letterindex = 2 
-send_letter ( gameforge . new_quest_lv52 . _171_send_letter ) 
-q . set_title ( gameforge . new_quest_lv52 . _030_set_title ) 
+send_letter ( "[LC;6020]" ) 
+q . set_title ( "[LC;5958]" ) 
 elseif index == 1 then 
 letterindex = 3 
-send_letter ( gameforge . new_quest_lv52 . _172_send_letter ) 
-q . set_title ( gameforge . new_quest_lv52 . _030_set_title ) 
+send_letter ( "[LC;6021]" ) 
+q . set_title ( "[LC;5958]" ) 
 elseif index == 0 then 
 if pc . get_job ( ) == 0 then 
 if pc . get_skill_group ( ) == 1 then 
@@ -80,16 +80,16 @@ local index = pc . getqf ( "ghostsleft" ) - 1
 pc . setqf ( "ghostsleft" , index ) 
 if index == 3 then 
 letterindex = 1 
-send_letter ( gameforge . new_quest_lv52 . _170_send_letter ) 
-q . set_title ( gameforge . new_quest_lv52 . _030_set_title ) 
+send_letter ( "[LC;6019]" ) 
+q . set_title ( "[LC;5958]" ) 
 elseif index == 2 then 
 letterindex = 2 
-send_letter ( gameforge . new_quest_lv52 . _171_send_letter ) 
-q . set_title ( gameforge . new_quest_lv52 . _030_set_title ) 
+send_letter ( "[LC;6020]" ) 
+q . set_title ( "[LC;5958]" ) 
 elseif index == 1 then 
 letterindex = 3 
-send_letter ( gameforge . new_quest_lv52 . _172_send_letter ) 
-q . set_title ( gameforge . new_quest_lv52 . _030_set_title ) 
+send_letter ( "[LC;6021]" ) 
+q . set_title ( "[LC;5958]" ) 
 elseif index == 0 then 
 if pc . get_job ( ) == 0 then 
 if pc . get_skill_group ( ) == 1 then 

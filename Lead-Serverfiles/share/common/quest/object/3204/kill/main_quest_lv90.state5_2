@@ -3,8 +3,8 @@ if kill_count < 20 then
 pc . setqf ( "mob5_3_kill" , kill_count + 1 ) 
 local total_remain = main_quest_lv90 . kill_count ( ) 
 if total_remain == 0 then 
-notice_multiline ( gameforge . main_quest_lv90 . _780_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv90 . _780_2_notice , notice ) 
+notice_multiline ( "[LC;4834]" , notice ) 
+notice_multiline ( "[LC;4835]" , notice ) 
 set_state ( "state5_3" ) 
 end 
 end 

@@ -1,8 +1,8 @@
 local kill_count = pc . getqf ( "kill_count" ) + 1 
 pc . setqf ( "kill_count" , kill_count ) 
-q . set_counter ( gameforge . couple_ring . _75_say , couple_ring . get_rest_count ( ) ) ; 
+q . set_counter ( "[LC;629]" , couple_ring . get_rest_count ( ) ) ; 
 if couple_ring . is_completed ( ) then 
-say_title ( gameforge . couple_ring . _80_sayTitle ) 
-say ( gameforge . couple_ring . _90_say ) 
+say_title ( "[LC;630]" ) 
+say ( "[LC;631]" ) 
 set_state ( "report" ) 
 end 

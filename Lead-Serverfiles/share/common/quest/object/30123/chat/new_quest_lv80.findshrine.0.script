@@ -1,15 +1,15 @@
 target . delete ( "__TARGET3__" ) 
-say_title ( gameforge . new_quest_lv80 . _310_set_title ) 
-say ( string . format ( gameforge . new_quest_lv80 . _340_say , item_name ( new_quest_lv80_blackice ) ) ) 
-local sacrifice = select ( gameforge . new_quest_lv80 . _350_1_select , gameforge . new_quest_lv80 . _350_2_select ) 
+say_title ( "[LC;6255]" ) 
+say ( string . format ( "[LC;6258]" , item_name ( new_quest_lv80_blackice ) ) ) 
+local sacrifice = select ( "[LC;6259]" , "[LC;6260]" ) 
 if sacrifice == 1 and new_quest_lv80 . is_heavens_cave ( ) == 1 then 
 pc . remove_item ( new_quest_lv80_blackice , 1 ) 
-say ( gameforge . new_quest_lv80 . _360_say ) 
+say ( "[LC;6261]" ) 
 next_time_set ( 10 , 10 ) 
 set_state ( "aftermath" ) 
 elseif new_quest_lv80 . is_heavens_cave ( ) == 1 then 
-say ( gameforge . new_quest_lv80 . _370_say ) 
+say ( "[LC;6262]" ) 
 set_state ( "denial" ) 
 else 
-say ( gameforge . new_quest_lv80 . _380_say ) 
+say ( "[LC;6263]" ) 
 end 

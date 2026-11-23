@@ -5,8 +5,8 @@ pc . give_item2 ( 31034 , 1 )
 local remain1 = 9 - pc . count_item ( 31034 ) 
 q . set_counter_value ( remain1 ) 
 if pc . count_item ( 31034 ) >= 9 then 
-notice_multiline ( gameforge . main_quest_lv94 . _670_say_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv94 . _670_say_2_notice , notice ) 
+notice_multiline ( "[LC;5137]" , notice ) 
+notice_multiline ( "[LC;5138]" , notice ) 
 set_state ( "state5_3" ) 
 end 
 end 

@@ -3,12 +3,12 @@ if math . random ( 1 , 1000 ) <= pc . getqf ( "dropProb" ) then
 pc . give_item2 ( new_quest_lv29_drop ) 
 local qfindex = pc . getqf ( "hayIndex" ) - 1 
 pc . setqf ( "hayIndex" , qfindex ) 
-notice_multiline ( gameforge . new_quest_lv29 . _068_notice , notice ) 
+notice_multiline ( "[LC;5836]" , notice ) 
 if new_quest_lv29_neededAmountDrop <= pc . count_item ( new_quest_lv29_drop ) or pc . getqf ( "hayIndex" ) == 0 then 
 q . done ( ) 
 set_state ( "calming_yonah" ) 
 end 
 else 
-notice_multiline ( gameforge . new_quest_lv29 . _064_notice , notice ) 
+notice_multiline ( "[LC;5831]" , notice ) 
 end 
 end 

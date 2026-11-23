@@ -1,6 +1,6 @@
 if pc . is_polymorphed ( ) then 
 say ( "" ) 
-say ( gameforge . ride . _020_say ) 
+say ( "[LC;6801]" ) 
 say ( "" ) 
 elseif false == pc . is_riding ( ) then 
 if true == horse . is_summon ( ) then 
@@ -10,6 +10,6 @@ item . set_socket ( 2 , 60 * 24 * 365 * 60 )
 ride_upgradable . Ride ( item . vnum , 0 ) 
 else 
 say ( "" ) 
-say ( gameforge . ride . _030_say ) 
+say ( "[LC;6802]" ) 
 say ( "" ) 
 end 

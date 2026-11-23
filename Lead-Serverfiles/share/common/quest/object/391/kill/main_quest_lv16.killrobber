@@ -1,6 +1,6 @@
 if number ( 1 , 10 ) == 1 then 
 pc . give_item2 ( 30001 , 1 ) 
-say_title ( gameforge . main_quest_lv16 . _60_sendLetter ) 
-say ( gameforge . main_quest_lv16 . _75_say ) 
+say_title ( "[LC;4147]" ) 
+say ( "[LC;4149]" ) 
 set_state ( "gotoboss2" ) 
 end 

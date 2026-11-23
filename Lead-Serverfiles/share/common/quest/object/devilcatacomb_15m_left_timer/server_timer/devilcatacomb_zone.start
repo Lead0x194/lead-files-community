@@ -1,4 +1,4 @@
 if d . select ( get_server_timer_arg ( ) ) then 
-d . notice ( string . format ( gameforge . devilcatacomb_zone . _20_say , 15 ) ) 
+d . notice ( string . format ( "[LC;655;%s]" , 15 ) ) 
 server_timer ( "devilcatacomb_5m_left_timer" , 60 * 10 , get_server_timer_arg ( ) ) 
 end 

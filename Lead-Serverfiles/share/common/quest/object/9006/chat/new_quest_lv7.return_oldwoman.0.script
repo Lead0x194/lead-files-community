@@ -1,26 +1,26 @@
 target . delete ( "__TARGET6__" ) 
-say_title ( gameforge . new_quest_lv7 . _012_say_title ) 
+say_title ( "[LC;6081]" ) 
 if ( pc . count_item ( new_quest_lv7_drop1 ) < new_quest_lv7_AmountNeed1 or pc . count_item ( new_quest_lv7_drop2 ) < new_quest_lv7_AmountNeed2 or pc . count_item ( new_quest_lv7_drop3 ) < new_quest_lv7_AmountNeed3 ) then 
-say ( gameforge . new_quest_lv7 . _110_say ) 
-say_reward ( string . format ( gameforge . new_quest_lv7 . _085_say_reward , new_quest_lv7_AmountNeed1 - pc . count_item ( new_quest_lv7_drop1 ) ) ) 
-say_reward ( string . format ( gameforge . new_quest_lv7 . _086_say_reward , new_quest_lv7_AmountNeed2 - pc . count_item ( new_quest_lv7_drop2 ) ) ) 
-say_reward ( string . format ( gameforge . new_quest_lv7 . _087_say_reward , new_quest_lv7_AmountNeed3 - pc . count_item ( new_quest_lv7_drop3 ) ) ) 
-say ( gameforge . new_quest_lv7 . _081_say ) 
+say ( "[LC;6113]" ) 
+say_reward ( string . format ( "[LC;6105;%s]" , new_quest_lv7_AmountNeed1 - pc . count_item ( new_quest_lv7_drop1 ) ) ) 
+say_reward ( string . format ( "[LC;6106;%s]" , new_quest_lv7_AmountNeed2 - pc . count_item ( new_quest_lv7_drop2 ) ) ) 
+say_reward ( string . format ( "[LC;6107;%s]" , new_quest_lv7_AmountNeed3 - pc . count_item ( new_quest_lv7_drop3 ) ) ) 
+say ( "[LC;6098]" ) 
 set_state ( "collect_flowers" ) 
 else 
 pc . remove_item ( 30169 , 1 ) 
 pc . remove_item ( 30170 , 1 ) 
 pc . remove_item ( 30171 , 1 ) 
 pc . give_item2 ( 30172 ) 
-say ( gameforge . new_quest_lv7 . _115_say ) 
+say ( "[LC;6116]" ) 
 if pc . get_empire ( ) == 1 then 
-say_reward ( gameforge . new_quest_lv7 . _118_say_reward ) 
+say_reward ( "[LC;6119]" ) 
 end 
 if pc . get_empire ( ) == 2 then 
-say_reward ( gameforge . new_quest_lv7 . _116_say_reward ) 
+say_reward ( "[LC;6117]" ) 
 end 
 if pc . get_empire ( ) == 3 then 
-say_reward ( gameforge . new_quest_lv7 . _117_say_reward ) 
+say_reward ( "[LC;6118]" ) 
 end 
 q . done ( ) 
 set_state ( "find_empire" ) 

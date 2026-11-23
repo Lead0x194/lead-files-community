@@ -1,48 +1,48 @@
 if not npc . lock ( ) then 
-say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _430_say ) 
+say_title ( "[LC;5521]" ) 
+say ( "[LC;5522]" ) 
 return 
 end 
-say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _440_say ) 
+say_title ( "[LC;5521]" ) 
+say ( "[LC;5523]" ) 
 local sname = input ( ) 
 local u_vid = find_pc_by_name ( sname ) 
 local m_vid = pc . get_vid ( ) 
 if u_vid == 0 then 
-say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _450_say ) 
-say_reward ( string . format ( gameforge . marriage_manage . _200_sayReward , sname ) ) 
+say_title ( "[LC;5521]" ) 
+say ( "[LC;5524]" ) 
+say_reward ( string . format ( "[LC;5495;%s]" , sname ) ) 
 npc . unlock ( ) 
 return 
 end 
 if not npc . is_near_vid ( u_vid , 10 ) then 
-say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _460_say ) 
-say_reward ( string . format ( gameforge . marriage_manage . _470_sayReward , sname ) ) 
+say_title ( "[LC;5521]" ) 
+say ( "[LC;5525]" ) 
+say_reward ( string . format ( "[LC;5526;%s]" , sname ) ) 
 npc . unlock ( ) 
 return 
 end 
 if u_vid == m_vid then 
-say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _480_say ) 
+say_title ( "[LC;5521]" ) 
+say ( "[LC;5527]" ) 
 npc . unlock ( ) 
 return 
 end 
 if u_vid ~= marriage . find_married_vid ( ) then 
-say_title ( gameforge . marriage_manage . _490_sayTitle ) 
-say ( gameforge . marriage_manage . _500_say ) 
+say_title ( "[LC;5528]" ) 
+say ( "[LC;5529]" ) 
 npc . unlock ( ) 
 return 
 end 
-local ok_sign = confirm ( u_vid , string . format ( gameforge . marriage_manage . _365_confirm_chat , pc . name ) , 30 ) 
+local ok_sign = confirm ( u_vid , string . format ( "[LC;5514;%s]" , pc . name ) , 30 ) 
 if ok_sign ~= CONFIRM_OK then 
-say_title ( gameforge . marriage_manage . _490_sayTitle ) 
-say ( gameforge . marriage_manage . _510_say ) 
+say_title ( "[LC;5528]" ) 
+say ( "[LC;5531]" ) 
 npc . unlock ( ) 
 return 
 end 
-say_title ( gameforge . marriage_manage . _420_sayTitle ) 
-say ( gameforge . marriage_manage . _520_say ) 
+say_title ( "[LC;5521]" ) 
+say ( "[LC;5532]" ) 
 marriage . set_to_marriage ( ) 
-say ( gameforge . marriage_manage . _530_say ) 
+say ( "[LC;5533]" ) 
 npc . unlock ( ) 

@@ -12,7 +12,7 @@ dragon_lair_access . warp_to_lair ( )
 set_state ( "spawn_dragon" ) 
 else 
 pc . give_item2 ( settings . access_item , settings . access_item_amount ) 
-say_title ( gameforge . ghost_story . _010_sayTitle ) 
-say ( gameforge . dragon_lair_access . _120_say ) 
+say_title ( "[LC;1169]" ) 
+say ( "[LC;720]" ) 
 end 
 pc . setqf ( "password" , 0 ) 

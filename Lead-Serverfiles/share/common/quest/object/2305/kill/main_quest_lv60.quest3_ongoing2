@@ -2,7 +2,7 @@ if number ( 1 , 100 ) == 1 then
 local remain_item_prev = pc . getqf ( "remain_item" ) 
 pc . setqf ( "remain_item" , remain_item_prev - 1 ) 
 pc . give_item2 ( 31002 , 1 ) 
-notice ( string . format ( gameforge . main_quest_lv60 . _300_say , pc . getqf ( "remain_item" ) ) ) 
+notice ( string . format ( "[LC;4549;%d]" , pc . getqf ( "remain_item" ) ) ) 
 if pc . getqf ( "remain_item" ) == 0 then 
 set_state ( "quest3_end2" ) 
 end 

@@ -1,35 +1,35 @@
 local setting = event_ramadan . setting ( ) 
 if pc . count_item ( setting . bread ) == 0 then 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _80_say ) 
-local s = select ( gameforge . event_ramadan . _90_select_1 , gameforge . event_ramadan . _90_select_2 ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;928]" ) 
+local s = select ( "[LC;929]" , "[LC;930]" ) 
 if 2 == s then 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _100_say ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;893]" ) 
 return 
 end 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _110_say ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;894]" ) 
 wait ( ) 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _120_say ) 
-local s = select ( gameforge . event_ramadan . _130_select_1 , gameforge . event_ramadan . _130_select_2 ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;895]" ) 
+local s = select ( "[LC;896]" , "[LC;897]" ) 
 if 2 == s then 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _100_say ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;893]" ) 
 return 
 end 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _140_say ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;898]" ) 
 elseif pc . count_item ( setting . bread ) > 0 and pc . count_item ( setting . bread ) < 10 then 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _150_say ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;899]" ) 
 elseif pc . count_item ( setting . bread ) >= 10 then 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _160_say ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;900]" ) 
 wait ( ) 
-say_title ( gameforge . event_ramadan . _020_sayTitle ) 
-say ( gameforge . event_ramadan . _170_say ) 
+say_title ( "[LC;887]" ) 
+say ( "[LC;901]" ) 
 pc . give_item2 ( setting . candy , 1 ) 
 pc . remove_item ( setting . bread , 10 ) 
 end 

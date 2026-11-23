@@ -10,5 +10,5 @@ test_chat ( vid )
 d . set_unique ( "real" , vid ) 
 server_loop_timer ( "devil_stone4_update" , 10 , pc . get_map_index ( ) ) 
 server_timer ( "devil_stone4_fail1" , 5 * 60 , pc . get_map_index ( ) ) 
-notice_multiline ( gameforge . deviltower_zone . _50_dNotice , d . notice ) 
+notice_multiline ( "[LC;700]" , d . notice ) 
  return end 

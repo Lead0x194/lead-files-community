@@ -7,8 +7,8 @@ remain = 0
 end 
 q . set_counter_value ( remain ) 
 if pc . count_item ( 31026 ) >= 100 then 
-notice_multiline ( gameforge . main_quest_lv98 . _080_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv98 . _080_2_notice , notice ) 
+notice_multiline ( "[LC;5375]" , notice ) 
+notice_multiline ( "[LC;5376]" , notice ) 
 set_state ( "state1_3" ) 
 end 
 end 

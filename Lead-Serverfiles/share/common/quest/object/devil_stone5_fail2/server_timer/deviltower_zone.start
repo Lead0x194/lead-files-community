@@ -1,4 +1,4 @@
 if d . select ( get_server_timer_arg ( ) ) then 
-notice_multiline ( gameforge . deviltower_zone . _60_dNotice , d . notice ) 
+notice_multiline ( "[LC;701]" , d . notice ) 
 server_timer ( "devil_stone5_fail3" , 5 * 60 , get_server_timer_arg ( ) ) 
 end 

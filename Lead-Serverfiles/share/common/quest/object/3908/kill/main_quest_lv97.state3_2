@@ -1,6 +1,6 @@
 pc . setqf ( "mob3_2_kill" , pc . getqf ( "mob3_2_kill" ) + 1 ) 
 if main_quest_lv97 . kill_count ( ) == 0 then 
-notice_multiline ( gameforge . main_quest_lv97 . _690_1_notice , notice ) 
-notice_multiline ( gameforge . main_quest_lv97 . _690_2_notice , notice ) 
+notice_multiline ( "[LC;5364]" , notice ) 
+notice_multiline ( "[LC;5365]" , notice ) 
 set_state ( "state3_3" ) 
 end 

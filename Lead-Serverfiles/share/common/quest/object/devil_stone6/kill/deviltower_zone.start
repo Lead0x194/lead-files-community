@@ -1,7 +1,7 @@
 if pc . in_dungeon ( ) and pc . get_map_index ( ) >= 660000 and pc . get_map_index ( ) < 670000 and d . getf ( "level" ) == 6 then d . kill_all ( ) 
-notice_multiline ( gameforge . deviltower_zone . _150_dNotice , d . notice ) 
+notice_multiline ( "[LC;683]" , d . notice ) 
 d . check_eliminated ( ) 
-notice_multiline ( gameforge . deviltower_zone . _160_dNotice , d . notice ) 
+notice_multiline ( "[LC;684]" , d . notice ) 
 local reward_alchemist = { 20074 , 20075 , 20076 } 
 d . spawn_mob ( reward_alchemist [ number ( 1 , 3 ) ] , 425 , 216 ) ; 
 d . setqf2 ( "deviltower_zone" , "can_refine" , 1 ) 
