@@ -2,8 +2,6 @@
 #include "DBManager.h"
 #include "ClientManager.h"
 
-extern std::string g_stDatabaseCharset;
-
 CDBManager::CDBManager()
 {
 	Initialize();
@@ -100,7 +98,7 @@ int CDBManager::Connect(int iSlot, const char * db_address, const int db_port, c
 
 	sys_log(0, "CREATING DIRECT_SQL");
 	m_directSQL[iSlot] = new CAsyncSQL2;
-	if (!m_directSQL[iSlot]->Setup(db_address, user, pwd, db_name, g_stDatabaseCharset.c_str(), true, db_port))
+	if (!m_directSQL[iSlot]->Setup(db_address, user, pwd, db_name, true, db_port))
 	{
 		Clear();
 		return false;
@@ -109,7 +107,7 @@ int CDBManager::Connect(int iSlot, const char * db_address, const int db_port, c
 
 	sys_log(0, "CREATING MAIN_SQL");
 	m_mainSQL[iSlot] = new CAsyncSQL2;
-	if (!m_mainSQL[iSlot]->Setup(db_address, user, pwd, db_name, g_stDatabaseCharset.c_str(), false, db_port))
+	if (!m_mainSQL[iSlot]->Setup(db_address, user, pwd, db_name, false, db_port))
 	{
 		Clear();
 		return false;
@@ -117,7 +115,7 @@ int CDBManager::Connect(int iSlot, const char * db_address, const int db_port, c
 
 	sys_log(0, "CREATING ASYNC_SQL");
 	m_asyncSQL[iSlot] = new CAsyncSQL2;
-	if (!m_asyncSQL[iSlot]->Setup(db_address, user, pwd, db_name, g_stDatabaseCharset.c_str(), false, db_port))
+	if (!m_asyncSQL[iSlot]->Setup(db_address, user, pwd, db_name, false, db_port))
 	{
 		Clear();
 		return false;
@@ -161,28 +159,5 @@ unsigned long CDBManager::EscapeString(void *to, const void *from, unsigned long
 {
 	assert(iSlot < SQL_MAX_NUM);
 	return mysql_real_escape_string(m_directSQL[iSlot]->GetSQLHandle(), (char *) to, (const char *) from, length);
-}
-
-void CDBManager::SetLocale(const char * szLocale)
-{
-	const std::string stLocale(szLocale);
-	sys_log(0, "SetLocale start" );
-	for (int n = 0; n < SQL_MAX_NUM; ++n)
-	{
-		m_mainSQL[n]->SetLocale(stLocale);
-		m_directSQL[n]->SetLocale(stLocale);
-		m_asyncSQL[n]->SetLocale(stLocale);
-	}
-	sys_log(0, "End setlocale %s", szLocale);
-}
-
-void CDBManager::QueryLocaleSet()
-{
-	for (int n = 0; n < SQL_MAX_NUM; ++n)
-	{
-		m_mainSQL[n]->QueryLocaleSet();
-		m_directSQL[n]->QueryLocaleSet();
-		m_asyncSQL[n]->QueryLocaleSet();
-	}
 }
 

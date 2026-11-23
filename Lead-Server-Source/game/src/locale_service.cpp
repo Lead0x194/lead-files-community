@@ -16,8 +16,6 @@ extern set<string> 	g_setQuestObjectDir;
 string g_stServiceBasePath = "common";
 string g_stServiceMapPath = "common/map";
 
-string g_stDatabaseCharset = "utf8mb4";
-
 BYTE PK_PROTECT_LEVEL = 30;
 
 int utf8_char_length(const char * str)

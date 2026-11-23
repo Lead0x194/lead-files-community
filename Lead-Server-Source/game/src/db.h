@@ -145,13 +145,11 @@ class AccountDB : public singleton<AccountDB>
 
 		bool IsConnected();
 		bool Connect(const char * host, const int port, const char * user, const char * pwd, const char * db);
-		bool ConnectAsync(const char * host, const int port, const char * user, const char * pwd, const char * db, const char * locale);
+		bool ConnectAsync(const char * host, const int port, const char * user, const char * pwd, const char * db);
 
 		SQLMsg* DirectQuery(const char * query);		
 		void ReturnQuery(int iType, DWORD dwIdent, void * pvData, const char * c_pszFormat, ...);
 		void AsyncQuery(const char* query);
-
-		void SetLocale(const std::string & stLocale);
 
 		void Process();
 
