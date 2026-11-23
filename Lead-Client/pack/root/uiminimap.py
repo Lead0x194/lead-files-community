@@ -78,13 +78,6 @@ class AtlasWindow(ui.ScriptWindow):
 	def __del__(self):
 		ui.ScriptWindow.__del__(self)
 
-	def SetMapName(self, mapName):
-		if 949==app.GetDefaultCodePage():
-			try:
-				self.board.SetTitleName(localeInfo.MINIMAP_ZONE_NAME_DICT[mapName])
-			except:
-				pass
-
 	def LoadWindow(self):
 		try:
 			pyScrLoader = ui.PythonScriptLoader()
@@ -282,7 +275,6 @@ class MiniMap(ui.ScriptWindow):
 
 	def SetMapName(self, mapName):
 		self.mapName=mapName
-		self.AtlasWindow.SetMapName(mapName)
 
 		if self.CANNOT_SEE_INFO_MAP_DICT.has_key(mapName):
 			self.canSeeInfo = False

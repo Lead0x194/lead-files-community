@@ -91,7 +91,6 @@ class CharacterWindow(ui.ScriptWindow):
 		self.canUseHorseSkill = -1
 
 		self.toolTip = None
-		self.toolTipJob = None
 		self.toolTipAlignment = None
 		self.toolTipSkill = None
 
@@ -143,15 +142,9 @@ class CharacterWindow(ui.ScriptWindow):
 		
 	def __BindObject(self):
 		self.toolTip = uiToolTip.ToolTip()
-		self.toolTipJob = uiToolTip.ToolTip()
 		self.toolTipAlignment = uiToolTip.ToolTip(130)		
 
 		self.faceImage = self.GetChild("Face_Image")
-
-		faceSlot=self.GetChild("Face_Slot")
-		if 949 == app.GetDefaultCodePage():
-			faceSlot.SAFE_SetStringEvent("MOUSE_OVER_IN", self.__ShowJobToolTip)
-			faceSlot.SAFE_SetStringEvent("MOUSE_OVER_OUT", self.__HideJobToolTip)
 
 		self.statusPlusLabel = self.GetChild("Status_Plus_Label")
 		self.statusPlusValue = self.GetChild("Status_Plus_Value")		
@@ -356,7 +349,6 @@ class CharacterWindow(ui.ScriptWindow):
 			self.skillGroupButton[i].SetEvent(lambda arg=i: self.__SelectSkillGroup(arg))
 
 		self.RefreshQuest()
-		self.__HideJobToolTip()
 
 		for (tabKey, tabButton) in self.tabButtonDict.items():
 			tabButton.SetEvent(ui.__mem_func__(self.__OnClickTabButton), tabKey)
@@ -1006,34 +998,6 @@ class CharacterWindow(ui.ScriptWindow):
 				slotWindow.DeactivateSlot(slotIndex)
 				return
 
-	def __ShowJobToolTip(self):
-		self.toolTipJob.ShowToolTip()
-
-	def __HideJobToolTip(self):
-		self.toolTipJob.HideToolTip()
-
-	def __SetJobText(self, mainJob, subJob):
-		if player.GetStatus(player.LEVEL)<5:
-			subJob=0
-
-		if 949 == app.GetDefaultCodePage():
-			self.toolTipJob.ClearToolTip()
-
-			try:
-				jobInfoTitle=localeInfo.JOBINFO_TITLE[mainJob][subJob]
-				jobInfoData=localeInfo.JOBINFO_DATA_LIST[mainJob][subJob]
-			except IndexError:
-				print "uiCharacter.CharacterWindow.__SetJobText(mainJob=%d, subJob=%d)" % (mainJob, subJob)
-				return
-
-			self.toolTipJob.AutoAppendTextLine(jobInfoTitle)
-			self.toolTipJob.AppendSpace(5)
-
-			for jobInfoDataLine in jobInfoData:
-				self.toolTipJob.AutoAppendTextLine(jobInfoDataLine)
-
-			self.toolTipJob.AlignHorizonalCenter()
-
 	def __ShowAlignmentToolTip(self):
 		self.toolTipAlignment.ShowToolTip()
 
@@ -1066,9 +1030,6 @@ class CharacterWindow(ui.ScriptWindow):
 		group = net.GetMainActorSkillGroup()
 		empire = net.GetMainActorEmpire()
 
-		## Job Text
-		job = chr.RaceToJob(race)
-		self.__SetJobText(job, group)
 
 		## FaceImage
 		try:
