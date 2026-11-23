@@ -1,22 +1,22 @@
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _130_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6164]" ) 
 if pc . countitem ( diarypage ) > 3 and pc . countitem ( diarypage ) <= 6 then 
-story = select ( gameforge . new_quest_lv75 . _140_1_select , gameforge . new_quest_lv75 . _140_2_select ) 
+story = select ( "[LC;6165]" , "[LC;6166]" ) 
 elseif pc . countitem ( diarypage ) > 6 and pc . countitem ( diarypage ) <= 9 then 
-story = select ( gameforge . new_quest_lv75 . _140_1_select , gameforge . new_quest_lv75 . _140_2_select , gameforge . new_quest_lv75 . _140_3_select ) 
+story = select ( "[LC;6165]" , "[LC;6166]" , "[LC;6167]" ) 
 elseif pc . countitem ( diarypage ) > 9 and pc . countitem ( diarypage ) <= 12 then 
-story = select ( gameforge . new_quest_lv75 . _140_1_select , gameforge . new_quest_lv75 . _140_2_select , gameforge . new_quest_lv75 . _140_3_select , gameforge . new_quest_lv75 . _140_4_select ) 
+story = select ( "[LC;6165]" , "[LC;6166]" , "[LC;6167]" , "[LC;6168]" ) 
 elseif pc . countitem ( diarypage ) > 12 and pc . countitem ( diarypage ) <= 15 then 
-story = select ( gameforge . new_quest_lv75 . _140_1_select , gameforge . new_quest_lv75 . _140_2_select , gameforge . new_quest_lv75 . _140_3_select , gameforge . new_quest_lv75 . _140_4_select , gameforge . new_quest_lv75 . _140_5_select ) 
+story = select ( "[LC;6165]" , "[LC;6166]" , "[LC;6167]" , "[LC;6168]" , "[LC;6169]" ) 
 else 
-say ( gameforge . new_quest_lv75 . _150_say ) 
+say ( "[LC;6172]" ) 
 end 
 if story == 2 then 
-say ( gameforge . new_quest_lv75 . _160_1_say ) 
+say ( "[LC;6173]" ) 
 elseif story == 3 then 
-say ( gameforge . new_quest_lv75 . _160_2_say ) 
+say ( "[LC;6174]" ) 
 elseif story == 4 then 
-say ( gameforge . new_quest_lv75 . _160_3_say ) 
+say ( "[LC;6175]" ) 
 elseif story == 5 then 
-say ( gameforge . new_quest_lv75 . _160_4_say ) 
+say ( "[LC;6176]" ) 
 end 

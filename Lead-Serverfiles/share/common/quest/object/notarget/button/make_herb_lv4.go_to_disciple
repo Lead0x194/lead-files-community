@@ -1,4 +1,4 @@
-say_title ( gameforge . collect_herb_lv4 . _50_sayTitle ) 
-say ( gameforge . collect_herb_lv4 . _60_say ) 
+say_title ( "[LC;200]" ) 
+say ( "[LC;201]" ) 
 say_item_vnum ( 50701 ) 
-say_reward ( string . format ( gameforge . collect_herb_lv4 . _70_sayReward , pc . getqf ( "collect_count" ) ) ) 
+say_reward ( string . format ( "[LC;202;%s]" , pc . getqf ( "collect_count" ) ) ) 

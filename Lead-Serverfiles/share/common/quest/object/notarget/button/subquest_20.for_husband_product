@@ -1,8 +1,8 @@
 if pc . count_item ( 30161 ) >= 3 then 
-say_title ( gameforge . subquest_20 . _160_sayTitle ) 
-say ( gameforge . subquest_20 . _170_say ) 
+say_title ( "[LC;7512]" ) 
+say ( "[LC;7513]" ) 
 return 
 end 
-say_title ( gameforge . subquest_20 . _180_sayTitle ) 
-say ( gameforge . subquest_20 . _190_say ) 
-say_reward ( string . format ( gameforge . subquest_20 . _200_sayReward , pc . count_item ( 30161 ) ) ) 
+say_title ( "[LC;7514]" ) 
+say ( "[LC;7515]" ) 
+say_reward ( string . format ( "[LC;7516;%s]" , pc . count_item ( 30161 ) ) ) 

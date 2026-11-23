@@ -1,6 +1,6 @@
-say_title ( gameforge . new_quest_lv22 . _016_send_letter ) 
+say_title ( "[LC;5684]" ) 
 if get_time ( ) - pc . getqf ( "new_quest_lv22_startTime" ) <= new_quest_lv22_timeToFind then 
-say ( gameforge . new_quest_lv22 . _083_say ) 
+say ( "[LC;5723]" ) 
 else 
-say ( gameforge . new_quest_lv22 . _084_say ) 
+say ( "[LC;5724]" ) 
 end 

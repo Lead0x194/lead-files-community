@@ -1,5 +1,5 @@
-say_title ( gameforge . patrol_townaround . _420_makequestbutton ) 
-say_reward ( gameforge . patrol_townaround . _430_sayReward ) 
+say_title ( "[LC;6526]" ) 
+say_reward ( "[LC;6527]" ) 
 pc . give_exp2 ( 135 ) 
 set_quest_state ( "levelup" , "run" ) 
 setstate ( "__COMPLETE__" ) 

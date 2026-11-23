@@ -1,11 +1,11 @@
 local empire = pc . get_empire ( ) 
 if empire == 1 then 
-say_title ( gameforge . main_quest_lv55 . _10_sendLetter ) 
-say ( gameforge . main_quest_lv55 . _20_say ) 
+say_title ( "[LC;4459]" ) 
+say ( "[LC;4471]" ) 
 elseif empire == 2 then 
-say_title ( gameforge . main_quest_lv55 . _10_sendLetter ) 
-say ( gameforge . main_quest_lv55 . _30_say ) 
+say_title ( "[LC;4459]" ) 
+say ( "[LC;4482]" ) 
 elseif empire == 3 then 
-say_title ( gameforge . main_quest_lv55 . _10_sendLetter ) 
-say ( gameforge . main_quest_lv55 . _40_say ) 
+say_title ( "[LC;4459]" ) 
+say ( "[LC;4494]" ) 
 end 

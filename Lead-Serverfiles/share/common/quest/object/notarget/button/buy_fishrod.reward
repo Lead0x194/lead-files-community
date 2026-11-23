@@ -1,8 +1,8 @@
-say_title ( gameforge . buy_fishrod . _210_sayTitle ) 
-say ( gameforge . buy_fishrod . _220_say ) 
+say_title ( "[LC;44]" ) 
+say ( "[LC;45]" ) 
 if pc . countitem ( "27833" ) >= 5 then 
 pc . removeitem ( "27833" , 5 ) 
-say ( gameforge . buy_fishrod . _230_say ) 
+say ( "[LC;46]" ) 
 if pc . job == 0 then 
 local r = number ( 1 , 10 ) 
 if r == 1 then 
@@ -95,8 +95,8 @@ pc . give_item2 ( "07043" , 1 )
 end 
 end 
 else 
-say_title ( gameforge . buy_fishrod . _20_sayTitle ) 
-say ( gameforge . buy_fishrod . _240_say ) 
+say_title ( "[LC;43]" ) 
+say ( "[LC;47]" ) 
 end 
 setstate ( "__COMPLETE__" ) 
 q . done ( ) 

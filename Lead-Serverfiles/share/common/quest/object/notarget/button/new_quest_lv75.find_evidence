@@ -1,17 +1,17 @@
 local foundskel = pc . getqf ( "suraskel0" ) + pc . getqf ( "suraskel1" ) + pc . getqf ( "suraskel2" ) + pc . getqf ( "suraskel3" ) + pc . getqf ( "suraskel4" ) 
 if foundskel == 4 and pc . countitem ( diarypage ) == 0 then 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _021_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6147]" ) 
 elseif foundskel < 4 and pc . countitem ( diarypage ) == 0 then 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _022_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6148]" ) 
 elseif foundskel == 5 and pc . countitem ( diarypage ) > 0 then 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( string . format ( gameforge . new_quest_lv75 . _023_say , mob_name ( new_quest_lv75_mob ) ) ) 
+say_title ( "[LC;6146]" ) 
+say ( string . format ( "[LC;6149]" , mob_name ( new_quest_lv75_mob ) ) ) 
 elseif foundskel < 5 and pc . countitem ( diarypage ) > 0 then 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _024_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6150]" ) 
 else 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _025_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6151]" ) 
 end 

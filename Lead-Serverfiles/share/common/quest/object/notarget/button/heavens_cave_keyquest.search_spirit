@@ -1,31 +1,31 @@
 if pc . getqf ( "reachedspot" ) >= 1 then 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _330_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1540]" ) 
 return 
 else 
 if pc . get_map_index ( ) == 68 and pc . getqf ( "reachedspot" ) == 0 then 
 if pc . getqf ( "heavens_cave_keyquest_Repeat" ) == 0 then 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _340_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1542]" ) 
 wait ( ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _350_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1543]" ) 
 wait ( ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _360_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1544]" ) 
 say ( "" ) 
-say ( gameforge . heavens_cave_keyquest . _370_say ) 
+say ( "[LC;1545]" ) 
 wait ( ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( string . format ( gameforge . heavens_cave_keyquest . _380_say , pc . get_name ( ) ) ) 
+say_title ( "[LC;1507]" ) 
+say ( string . format ( "[LC;1546;%s]" , pc . get_name ( ) ) ) 
 else 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( gameforge . heavens_cave_keyquest . _390_say ) 
+say_title ( "[LC;1507]" ) 
+say ( "[LC;1547]" ) 
 wait ( ) 
-say_title ( gameforge . heavens_cave_keyquest . _020_npcChat ) 
-say ( string . format ( gameforge . heavens_cave_keyquest . _400_say , pc . get_name ( ) ) ) 
+say_title ( "[LC;1507]" ) 
+say ( string . format ( "[LC;1548;%s]" , pc . get_name ( ) ) ) 
 say ( "" ) 
-say ( gameforge . heavens_cave_keyquest . _410_say ) 
+say ( "[LC;1549]" ) 
 end 
 if pc . count_item ( pc . getqf ( "heavens_cave_keyquest_TearBottle" ) ) >= 1 then 
 pc . remove_item ( pc . getqf ( "heavens_cave_keyquest_TearBottle" ) , 1 ) 

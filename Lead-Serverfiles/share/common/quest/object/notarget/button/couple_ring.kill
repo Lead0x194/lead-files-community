@@ -1,3 +1,3 @@
-say_title ( gameforge . buy_fishrod . _210_sayTitle ) 
-say ( gameforge . couple_ring . _110_sayReward ) 
-say_reward ( string . format ( gameforge . couple_ring . _120_sayReward , couple_ring . get_rest_count ( ) ) ) 
+say_title ( "[LC;44]" ) 
+say ( "[LC;607]" ) 
+say_reward ( string . format ( "[LC;608;%s]" , couple_ring . get_rest_count ( ) ) ) 

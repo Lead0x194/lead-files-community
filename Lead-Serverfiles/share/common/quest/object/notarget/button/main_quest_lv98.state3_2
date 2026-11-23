@@ -1,7 +1,7 @@
-say_title ( gameforge . main_quest_lv98 . _610_sayTitle ) 
-say ( gameforge . main_quest_lv98 . _620_say ) 
+say_title ( "[LC;5418]" ) 
+say ( "[LC;5419]" ) 
 say ( "" ) 
-say ( gameforge . main_quest_lv98 . _680_counterName ) 
+say ( "[LC;5425]" ) 
 local remain1 = 50 - pc . getqf ( "mob3_1_kill" ) 
 if remain1 < 0 then 
 remain1 = 0 
@@ -11,4 +11,4 @@ if remain2 < 0 then
 remain2 = 0 
 end 
 q . set_counter_value ( remain1 + remain2 ) 
-say_reward ( string . format ( gameforge . main_quest_lv98 . _690_sayReward , mob_name ( 3805 ) , remain1 , mob_name ( 3890 ) , remain2 ) ) 
+say_reward ( string . format ( "[LC;5426;%s;%d;%s;%d]" , mob_name ( 3805 ) , remain1 , mob_name ( 3890 ) , remain2 ) ) 

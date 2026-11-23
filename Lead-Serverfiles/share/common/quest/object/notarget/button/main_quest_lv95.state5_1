@@ -3,13 +3,13 @@ addmapsignal ( 500 * 100 , 500 * 100 )
 addmapsignal ( 600 * 100 , 500 * 100 ) 
 addmapsignal ( 700 * 100 , 300 * 100 ) 
 end 
-say_title ( gameforge . main_quest_lv95 . _640_sayTitle ) 
-say ( gameforge . main_quest_lv95 . _650_say ) 
+say_title ( "[LC;5231]" ) 
+say ( "[LC;5232]" ) 
 say_item_vnum ( 31043 ) 
-say ( gameforge . main_quest_lv95 . _760_say ) 
+say ( "[LC;5242]" ) 
 local remain = 2 - pc . count_item ( 31043 ) 
 if remain < 0 then 
 remain = 0 
 end 
-say_reward ( string . format ( gameforge . main_quest_lv95 . _770_sayReward , item_name ( 31043 ) , remain ) ) 
+say_reward ( string . format ( "[LC;5243;%s;%d]" , item_name ( 31043 ) , remain ) ) 
 q . set_counter_value ( remain ) 

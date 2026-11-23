@@ -1,11 +1,11 @@
-say_title ( gameforge . main_quest_flame_lv104 . _280_notice ) 
-say ( gameforge . main_quest_flame_lv104 . _380_say ) 
-say ( gameforge . main_quest_lv97 . _670_counterName ) 
+say_title ( "[LC;3959]" ) 
+say ( "[LC;3969]" ) 
+say ( "[LC;5362]" ) 
 local remain1 = 100 - pc . count_item ( 50814 ) 
 if remain1 < 0 then 
 remain1 = 0 
 end 
-say ( string . format ( gameforge . main_quest_lv90 . _1190_say , item_name ( 50814 ) , remain1 ) ) 
+say ( string . format ( "[LC;4769;%s;%d]" , item_name ( 50814 ) , remain1 ) ) 
 say ( ) 
 q . set_counter_value ( remain1 ) 
 if remain1 == 0 then 

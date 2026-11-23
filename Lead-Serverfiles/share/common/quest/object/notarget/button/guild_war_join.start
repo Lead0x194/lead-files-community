@@ -1,14 +1,14 @@
 if ( pc . get_map_index ( ) ~= 71 and pc . get_map_index ( ) ~= 104 and pc . get_map_index ( ) ~= 72 and pc . get_map_index ( ) ~= 73 and pc . get_map_index ( ) ~= 208 ) and pc . get_map_index ( ) <= 200 then local e = guild . get_any_war ( ) 
 if e == 0 then 
-say ( gameforge . locale . guild . war_over ) 
+say ( "[LC;2055]" ) 
 else 
-say ( string . format ( gameforge . guild_war_join . _10_say , guild . name ( e ) ) ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( string . format ( "[LC;1386;%s]" , guild . name ( e ) ) ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if s == 1 then 
 guild . war_enter ( e ) 
 else 
 setskin ( NOWINDOW ) 
-makequestbutton ( gameforge . locale . guild . war_join_request ) 
+makequestbutton ( "[LC;2051]" ) 
 end 
 end 
  return end 

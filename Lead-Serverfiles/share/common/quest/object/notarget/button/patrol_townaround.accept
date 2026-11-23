@@ -1,7 +1,7 @@
 if pc . get_empire ( ) == 1 then 
-say_title ( gameforge . patrol_townaround . _370_makequestbutton ) 
+say_title ( "[LC;6518]" ) 
 if is_test_server ( ) then 
-local s = select ( gameforge . patrol_townaround . _380_select , gameforge . patrol_townaround . _385_select , gameforge . patrol_townaround . _390_select , gameforge . patrol_townaround . _395_select ) 
+local s = select ( "[LC;6519]" , "[LC;6520]" , "[LC;6521]" , "[LC;6522]" ) 
 if 1 == s then 
 setstate ( "patrol1_blue_step1" ) 
 elseif 2 == s then 
@@ -24,9 +24,9 @@ setstate ( "patrol1_purple_step1" )
 end 
 end 
 elseif pc . get_empire ( ) == 2 then 
-say_title ( gameforge . patrol_townaround . _400_makequestbutton ) 
+say_title ( "[LC;6523]" ) 
 if is_test_server ( ) then 
-local s = select ( gameforge . patrol_townaround . _380_select , gameforge . patrol_townaround . _385_select , gameforge . patrol_townaround . _390_select , gameforge . patrol_townaround . _395_select ) 
+local s = select ( "[LC;6519]" , "[LC;6520]" , "[LC;6521]" , "[LC;6522]" ) 
 if 1 == s then 
 setstate ( "patrol2_blue_step1" ) 
 elseif 2 == s then 
@@ -49,9 +49,9 @@ setstate ( "patrol2_purple_step1" )
 end 
 end 
 elseif pc . get_empire ( ) == 3 then 
-say_title ( gameforge . patrol_townaround . _410_makequestbutton ) 
+say_title ( "[LC;6525]" ) 
 if is_test_server ( ) then 
-local s = select ( gameforge . patrol_townaround . _380_select , gameforge . patrol_townaround . _385_select , gameforge . patrol_townaround . _390_select , gameforge . patrol_townaround . _395_select ) 
+local s = select ( "[LC;6519]" , "[LC;6520]" , "[LC;6521]" , "[LC;6522]" ) 
 if 1 == s then 
 setstate ( "patrol3_blue_step1" ) 
 elseif 2 == s then 

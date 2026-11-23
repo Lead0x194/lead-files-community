@@ -1,1 +1,1 @@
-say ( string . format ( gameforge . dragon_soul . _1100_say , pc . getf ( "dragon_soul" , "eye_left" ) ) ) 
+say ( string . format ( "[LC;772;%d]" , pc . getf ( "dragon_soul" , "eye_left" ) ) ) 

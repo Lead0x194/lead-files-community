@@ -1,4 +1,4 @@
-say_title ( gameforge . buy_fishrod . _210_sayTitle ) 
-say_reward ( gameforge . pony_buy . _70_sayReward ) 
+say_title ( "[LC;44]" ) 
+say_reward ( "[LC;6584]" ) 
 setstate ( "start" ) 
 q . done ( ) 

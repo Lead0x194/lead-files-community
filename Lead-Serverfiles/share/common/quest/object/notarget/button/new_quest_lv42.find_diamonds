@@ -1,9 +1,9 @@
-say_title ( gameforge . new_quest_lv42 . _037_send_letter ) 
-say ( gameforge . new_quest_lv42 . _066_say ) 
+say_title ( "[LC;5886]" ) 
+say ( "[LC;5906]" ) 
 say ( "" ) 
 if new_quest_lv42_neededAmountDrop1 <= pc . count_item ( new_quest_lv42_drop1 ) then 
-say ( gameforge . new_quest_lv42 . _063_say ) 
-say ( string . format ( gameforge . new_quest_lv42 . _067_say , get_map_name_by_number ( 1 ) ) ) 
+say ( "[LC;5903]" ) 
+say ( string . format ( "[LC;5907;%s]" , get_map_name_by_number ( 1 ) ) ) 
 else 
-say ( string . format ( gameforge . new_quest_lv42 . _062_say , new_quest_lv42_neededAmountDrop1 - pc . count_item ( new_quest_lv42_drop1 ) , mob_name ( new_quest_lv42_mob1 ) ) ) 
+say ( string . format ( "[LC;5902;%s]" , new_quest_lv42_neededAmountDrop1 - pc . count_item ( new_quest_lv42_drop1 ) , mob_name ( new_quest_lv42_mob1 ) ) ) 
 end 

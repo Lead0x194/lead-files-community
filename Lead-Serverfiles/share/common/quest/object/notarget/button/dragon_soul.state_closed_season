@@ -1,7 +1,7 @@
-say ( gameforge . dragon_soul . _1160_say ) 
+say ( "[LC;779]" ) 
 local today = math . floor ( get_global_time ( ) / 86400 ) 
 if today == pc . getf ( "dragon_soul" , "eye_timestamp" ) then 
-say ( gameforge . dragon_soul . _1170_say ) 
+say ( "[LC;780]" ) 
 else 
-say ( gameforge . dragon_soul . _1180_say ) 
+say ( "[LC;781]" ) 
 end 

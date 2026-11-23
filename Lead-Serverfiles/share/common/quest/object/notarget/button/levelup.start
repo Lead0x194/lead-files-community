@@ -5,31 +5,31 @@ if pc . getqf ( "complete" ) ~= lev then
 pc . setqf ( "complete" , lev ) 
 local s = pc . getqf ( "select" ) 
 if s == 0 then s = 1 end 
-say_title ( string . format ( gameforge . levelup . _50_sayTitle , lev ) ) 
-say ( gameforge . levelup . _60_say ) 
+say_title ( string . format ( "[LC;1829;%s]" , lev ) ) 
+say ( "[LC;1830]" ) 
 say ( "" ) 
 if lev <= 20 then 
 if lev <= table . getn ( special . levelup_reward1 ) then 
-pc . give_item ( gameforge . levelup . _64_give .. lev .. gameforge . levelup . _65_give , 
+pc . give_item ( "[LC;1831]" .. lev .. "[LC;1832]" , 
 special . levelup_reward1 [ lev ] [ pc . job + 1 ] ) 
 else 
 local v = number ( 1 , 100 ) 
 if v <= special . levelup_reward3 [ 1 ] [ 1 ] then 
-pc . give_item ( gameforge . levelup . _64_give .. lev .. gameforge . levelup . _65_give , special . levelup_reward3 [ 1 ] [ 2 ] , special . levelup_reward3 [ 1 ] [ 3 ] ) 
+pc . give_item ( "[LC;1831]" .. lev .. "[LC;1832]" , special . levelup_reward3 [ 1 ] [ 2 ] , special . levelup_reward3 [ 1 ] [ 3 ] ) 
 elseif v <= special . levelup_reward3 [ 2 ] [ 1 ] then 
-pc . give_item ( gameforge . levelup . _64_give .. lev .. gameforge . levelup . _65_give , special . levelup_reward3 [ 2 ] [ 2 ] , special . levelup_reward3 [ 2 ] [ 3 ] ) 
+pc . give_item ( "[LC;1831]" .. lev .. "[LC;1832]" , special . levelup_reward3 [ 2 ] [ 2 ] , special . levelup_reward3 [ 2 ] [ 3 ] ) 
 elseif v <= special . levelup_reward3 [ 3 ] [ 1 ] then 
-pc . give_item ( gameforge . levelup . _64_give .. lev .. gameforge . levelup . _65_give , special . levelup_reward3 [ 3 ] [ 2 ] , special . levelup_reward3 [ 3 ] [ 3 ] ) 
+pc . give_item ( "[LC;1831]" .. lev .. "[LC;1832]" , special . levelup_reward3 [ 3 ] [ 2 ] , special . levelup_reward3 [ 3 ] [ 3 ] ) 
 elseif v <= special . levelup_reward3 [ 4 ] [ 1 ] then 
-pc . give_item ( gameforge . levelup . _64_give .. lev .. gameforge . levelup . _65_give , special . levelup_reward3 [ 4 ] [ 2 ] , special . levelup_reward3 [ 4 ] [ 3 ] ) 
+pc . give_item ( "[LC;1831]" .. lev .. "[LC;1832]" , special . levelup_reward3 [ 4 ] [ 2 ] , special . levelup_reward3 [ 4 ] [ 3 ] ) 
 else 
-pc . give_item ( gameforge . levelup . _64_give .. lev .. gameforge . levelup . _65_give , special . levelup_reward3 [ 5 ] [ 2 ] , special . levelup_reward3 [ 5 ] [ 3 ] ) 
+pc . give_item ( "[LC;1831]" .. lev .. "[LC;1832]" , special . levelup_reward3 [ 5 ] [ 2 ] , special . levelup_reward3 [ 5 ] [ 3 ] ) 
 end 
 end 
-pc . give_exp_perc ( gameforge . levelup . _64_give .. lev .. gameforge . levelup . _66_give , lev , special . levelup_quest [ lev ] [ 5 ] ) 
+pc . give_exp_perc ( "[LC;1831]" .. lev .. "[LC;1833]" , lev , special . levelup_quest [ lev ] [ 5 ] ) 
 if lev == 12 or lev == 14 or lev == 16 or lev == 18 or lev == 20 then 
 pc . give_item2 ( 50083 ) 
-say_reward ( string . format ( gameforge . levelup . _70_sayReward , item_name ( 50083 ) ) ) 
+say_reward ( string . format ( "[LC;1834;%s]" , item_name ( 50083 ) ) ) 
 wait ( ) 
 end 
 else 
@@ -37,13 +37,13 @@ local ll = lev - 20
 if lev < 26 then 
 local n = table . getn ( special . levelup_reward_item_21 [ ll ] ) 
 local t = special . levelup_reward_item_21 [ ll ] [ number ( 1 , n ) ] 
-say_reward ( gameforge . levelup . _80_sayReward ) 
+say_reward ( "[LC;1835]" ) 
 if type ( t ) == "table" then 
 pc . give_item2 ( t [ 1 ] , t [ 2 ] ) 
-say_reward ( string . format ( gameforge . levelup . _90_sayReward , item_name ( t [ 1 ] ) .. " " .. t [ 2 ] ) ) 
+say_reward ( string . format ( "[LC;1836;%s]" , item_name ( t [ 1 ] ) .. " " .. t [ 2 ] ) ) 
 else 
 pc . give_item2 ( t ) 
-say_reward ( string . format ( gameforge . levelup . _100_sayReward , item_name ( t ) ) ) 
+say_reward ( string . format ( "[LC;1802;%s]" , item_name ( t ) ) ) 
 end 
 end 
 local reward_gold = special . levelup_reward_gold21 local reward_exp = special . levelup_reward_exp21 if lev >= 31 and lev <= 40 then 
@@ -56,7 +56,7 @@ local i = 0
 for i = 1 , table . getn ( reward_gold ) begin 
 if n < reward_gold [ i ] [ 2 ] then 
 pc . change_money ( reward_gold [ i ] [ 1 ] ) 
-say_reward ( string . format ( gameforge . levelup . _110_sayReward , reward_gold [ i ] [ 1 ] ) ) 
+say_reward ( string . format ( "[LC;1804;%s]" , reward_gold [ i ] [ 1 ] ) ) 
 break 
 else 
 n = n - reward_gold [ i ] [ 2 ] 
@@ -66,8 +66,8 @@ n = number ( 0 , 99 )
 i = 0 
 for i = 1 , table . getn ( reward_exp ) begin 
 if n < reward_exp [ i ] [ 2 ] then 
-pc . give_exp_perc ( gameforge . levelup . _64_give .. lev .. gameforge . levelup . _66_give , lev , reward_exp [ i ] [ 1 ] ) 
-say_reward ( string . format ( gameforge . levelup . _120_sayReward , reward_exp [ i ] [ 1 ] ) ) 
+pc . give_exp_perc ( "[LC;1831]" .. lev .. "[LC;1833]" , lev , reward_exp [ i ] [ 1 ] ) 
+say_reward ( string . format ( "[LC;1805;%s]" , reward_exp [ i ] [ 1 ] ) ) 
 break 
 else 
 n = n - reward_exp [ i ] [ 2 ] 
@@ -81,7 +81,7 @@ local old_lev = lev
 lev = lev + 1 
 if lev > 1 and lev < 90 and pc . level >= lev then 
 pc . setqf ( "buttonstate" , 2 ) 
-makequestbutton ( string . format ( gameforge . levelup . _130_makequestbutton , lev ) ) 
+makequestbutton ( string . format ( "[LC;1806;%s]" , lev ) ) 
 pc . setqf ( "current" , lev ) 
 pc . setqf ( "select" , 1 ) 
 pc . setqf ( "remain" , special . levelup_quest [ lev ] [ 2 ] ) 
@@ -96,11 +96,11 @@ local lev = pc . getqf ( "current" )
 if lev == 0 then 
 q . done ( ) 
 end 
-say_title ( gameforge . levelup . _140_sayTitle ) 
-say ( gameforge . levelup . _150_say ) 
+say_title ( "[LC;1807]" ) 
+say ( "[LC;1808]" ) 
 local sel = select ( 
-mob_name ( special . levelup_quest [ lev ] [ 1 ] ) .. " " .. special . levelup_quest [ lev ] [ 2 ] .. gameforge . levelup . _155_say , 
-mob_name ( special . levelup_quest [ lev ] [ 3 ] ) .. " " .. special . levelup_quest [ lev ] [ 4 ] .. gameforge . levelup . _155_say ) 
+mob_name ( special . levelup_quest [ lev ] [ 1 ] ) .. " " .. special . levelup_quest [ lev ] [ 2 ] .. "[LC;1809]" , 
+mob_name ( special . levelup_quest [ lev ] [ 3 ] ) .. " " .. special . levelup_quest [ lev ] [ 4 ] .. "[LC;1809]" ) 
 setskin ( SCROLL ) 
 setbgimage ( "level_bg.tga" ) 
 say ( "" ) 
@@ -109,9 +109,9 @@ say ( "" )
 pc . setqf ( "select" , sel ) 
 addimage ( 20 , 12 , special . levelup_img [ special . levelup_quest [ lev ] [ sel * 2 - 1 ] ] ) 
 setcolor ( 0 , 0 , 0 ) 
-say ( string . format ( gameforge . levelup . _20_say , mob_name ( special . levelup_quest [ lev ] [ sel * 2 - 1 ] ) ) ) 
-say ( string . format ( gameforge . levelup . _26_say , special . levelup_quest [ lev ] [ sel * 2 ] ) ) 
-say ( string . format ( gameforge . levelup . _27_say , special . levelup_quest [ lev ] [ 5 ] ) ) 
+say ( string . format ( "[LC;1817;%s]" , mob_name ( special . levelup_quest [ lev ] [ sel * 2 - 1 ] ) ) ) 
+say ( string . format ( "[LC;1824;%s]" , special . levelup_quest [ lev ] [ sel * 2 ] ) ) 
+say ( string . format ( "[LC;1825;%s]" , special . levelup_quest [ lev ] [ 5 ] ) ) 
 if lev <= table . getn ( special . levelup_reward1 ) then 
 raw_script ( ", " .. item_name ( special . levelup_reward1 [ lev ] [ pc . job + 1 ] ) ) 
 elseif lev > table . getn ( special . levelup_reward1 ) and lev < 26 then 
@@ -122,13 +122,13 @@ raw_script ( ", " .. locale . gold )
 end 
 raw_script ( newline ) 
 levelup . show_mob_pos ( lev ) 
-local s = select ( gameforge . levelup . _160_select ) 
+local s = select ( "[LC;1810]" ) 
 if s == 1 then 
 setskin ( NOWINDOW ) 
 pc . setqf ( "remain" , special . levelup_quest [ lev ] [ sel * 2 ] ) 
-syschat ( string . format ( gameforge . levelup . _170_chat , mob_name ( special . levelup_quest [ lev ] [ sel * 2 - 1 ] ) , " " .. special . levelup_quest [ lev ] [ sel * 2 ] ) ) 
-q . set_title ( string . format ( gameforge . levelup . _180_qSetTitle , mob_name ( special . levelup_quest [ lev ] [ sel * 2 - 1 ] ) ) ) 
-q . set_counter ( gameforge . levelup . _250_say , pc . getqf ( "remain" ) ) 
+syschat ( string . format ( "[LC;1811;%s]" , mob_name ( special . levelup_quest [ lev ] [ sel * 2 - 1 ] ) , " " .. special . levelup_quest [ lev ] [ sel * 2 ] ) ) 
+q . set_title ( string . format ( "[LC;1812;%s]" , mob_name ( special . levelup_quest [ lev ] [ sel * 2 - 1 ] ) ) ) 
+q . set_counter ( "[LC;1822]" , pc . getqf ( "remain" ) ) 
 q . start ( ) 
 end 
 setskin ( NOWINDOW ) 
@@ -138,9 +138,9 @@ local s = pc . getqf ( "select" )
 if s == 0 then s = 1 end 
 local lev = pc . getqf ( "current" ) 
 if lev ~= 0 then 
-say_title ( gameforge . levelup . _140_sayTitle ) 
-say ( string . format ( gameforge . levelup . _190_say , pc . getqf ( "remain" ) .. gameforge . levelup . _195_say .. mob_name ( special . levelup_quest [ lev ] [ s * 2 - 1 ] ) ) ) 
-local ss = select ( gameforge . levelup . _200_select , gameforge . locale . levelup . prev_quest_go ) 
+say_title ( "[LC;1807]" ) 
+say ( string . format ( "[LC;1813;%s]" , pc . getqf ( "remain" ) .. "[LC;1814]" .. mob_name ( special . levelup_quest [ lev ] [ s * 2 - 1 ] ) ) ) 
+local ss = select ( "[LC;1815]" , "[LC;2105]" ) 
 if ss == 1 then 
 setskin ( SCROLL ) 
 setbgimage ( "level_bg.tga" ) 
@@ -149,9 +149,9 @@ say ( "" )
 say ( "" ) 
 addimage ( 20 , 12 , special . levelup_img [ special . levelup_quest [ lev ] [ s * 2 - 1 ] ] ) 
 setcolor ( 0 , 0 , 0 ) 
-say ( string . format ( gameforge . levelup . _20_say , mob_name ( special . levelup_quest [ lev ] [ s * 2 - 1 ] ) ) ) 
-say ( string . format ( gameforge . levelup . _26_say , special . levelup_quest [ lev ] [ s * 2 ] ) ) 
-raw_script ( string . format ( gameforge . levelup . _27_say , special . levelup_quest [ lev ] [ 5 ] ) ) 
+say ( string . format ( "[LC;1817;%s]" , mob_name ( special . levelup_quest [ lev ] [ s * 2 - 1 ] ) ) ) 
+say ( string . format ( "[LC;1824;%s]" , special . levelup_quest [ lev ] [ s * 2 ] ) ) 
+raw_script ( string . format ( "[LC;1825;%s]" , special . levelup_quest [ lev ] [ 5 ] ) ) 
 say ( "" ) 
 if lev <= table . getn ( special . levelup_reward1 ) then 
 raw_script ( "," .. item_name ( special . levelup_reward1 [ lev ] [ pc . job + 1 ] ) ) 
@@ -162,13 +162,13 @@ if lev >= 21 then
 raw_script ( "," .. locale . gold ) 
 end 
 raw_script ( newline ) 
-select ( gameforge . locale . confirm ) 
+select ( "[LC;1919]" ) 
 setskin ( NOWINDOW ) 
 clearmapsignal ( ) 
 end 
 setskin ( NOWINDOW ) 
-q . set_title ( string . format ( gameforge . levelup . _180_qSetTitle , mob_name ( special . levelup_quest [ lev ] [ s * 2 - 1 ] ) ) ) 
-q . set_counter ( gameforge . levelup . _250_say , pc . getqf ( "remain" ) ) 
+q . set_title ( string . format ( "[LC;1812;%s]" , mob_name ( special . levelup_quest [ lev ] [ s * 2 - 1 ] ) ) ) 
+q . set_counter ( "[LC;1822]" , pc . getqf ( "remain" ) ) 
 q . start ( ) 
 end 
 end 

@@ -1,9 +1,9 @@
-say_title ( gameforge . new_quest_lv7 . _020_say_title ) 
-say ( gameforge . new_quest_lv7 . _131_say ) 
+say_title ( "[LC;6082]" ) 
+say ( "[LC;6124]" ) 
 if new_quest_lv7_DestMapIndex == 3 then 
-say_reward ( gameforge . new_quest_lv7 . _134_say_reward ) 
+say_reward ( "[LC;6127]" ) 
 elseif new_quest_lv7_DestMapIndex == 23 then 
-say_reward ( gameforge . new_quest_lv7 . _132_say_reward ) 
+say_reward ( "[LC;6125]" ) 
 elseif new_quest_lv7_DestMapIndex == 43 then 
-say_reward ( gameforge . new_quest_lv7 . _133_say_reward ) 
+say_reward ( "[LC;6126]" ) 
 end 
