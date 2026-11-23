@@ -20,12 +20,7 @@ SHOW_ONLY_ACTIVE_SKILL = False
 SHOW_LIMIT_SUPPORT_SKILL_LIST = []
 HIDE_SUPPORT_SKILL_POINT = False
 
-if localeInfo.IsYMIR():
-	SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140,141,142]
-	if not localeInfo.IsCHEONMA():
-		HIDE_SUPPORT_SKILL_POINT = True 
-		SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140,141,142]
-elif localeInfo.IsJAPAN() or   (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/ca") and (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/br"):
+if (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/ca") and (localeInfo.IsEUROPE() and app.GetLocalePath() != "locale/br"):
 	HIDE_SUPPORT_SKILL_POINT = True	
 	SHOW_LIMIT_SUPPORT_SKILL_LIST = [121, 122, 123, 124, 126, 127, 129, 128, 131, 137, 138, 139, 140]
 else:
@@ -393,7 +388,7 @@ class CharacterWindow(ui.ScriptWindow):
 		self.isLoaded = 1
 
 		try:
-			if localeInfo.IsARABIC() or localeInfo.IsVIETNAM() or localeInfo.IsJAPAN():
+			if localeInfo.IsARABIC():
 				self.__LoadScript(uiScriptLocale.LOCALE_UISCRIPT_PATH + "CharacterWindow.py")
 			else:
 				self.__LoadScript("UIScript/CharacterWindow.py")
@@ -1072,10 +1067,7 @@ class CharacterWindow(ui.ScriptWindow):
 
 				self.guildNameSlot.Hide()
 			else:
-				if localeInfo.IsJAPAN():
-					self.characterNameSlot.SetPosition(143, 34)
-				else:
-					self.characterNameSlot.SetPosition(153, 34)
+				self.characterNameSlot.SetPosition(153, 34)
 				self.guildNameSlot.Show()
 		except:
 			import exception

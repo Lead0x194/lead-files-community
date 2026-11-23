@@ -42,18 +42,11 @@ __IS_VIETNAM	= "locale/vn" == app.GetLocalePath()
 __IS_ARABIC		= "locale/ae" == app.GetLocalePath()
 __IS_WE_KOREA	= "locale/we_korea" == app.GetLocalePath()
 __IS_TAIWAN		= "locale/taiwan" == app.GetLocalePath()
-__IS_JAPAN		= "locale/japan" == app.GetLocalePath()	
 LOGIN_FAILURE_WRONG_SOCIALID = "ASDF"
 LOGIN_FAILURE_SHUTDOWN_TIME = "ASDF"
 
 if __IS_CANADA:
 	__IS_EUROPE = True
-
-def IsYMIR():
-	return "locale/ymir" == app.GetLocalePath()
-
-def IsJAPAN():
-	return "locale/japan" == app.GetLocalePath()
 
 def IsENGLISH():
 	global __IS_ENGLISH
@@ -89,26 +82,8 @@ def IsARABIC():
 def IsWE_KOREA():
 	return "locale/we_korea" == app.GetLocalePath()
 	
-# SUPPORT_NEW_KOREA_SERVER
 def LoadLocaleData():
-	if IsYMIR():
-		import net
-		SERVER = "�赵 ����"
-		if SERVER == net.GetServerInfo()[:len(SERVER)]:
-			app.SetCHEONMA(0)
-			app.LoadLocaleData("locale/we_korea")
-			constInfo.ADD_DEF_BONUS_ENABLE = 0
-		else:
-			app.SetCHEONMA(1)
-			app.LoadLocaleData("locale/ymir")
-			constInfo.ADD_DEF_BONUS_ENABLE = 1
-	else:
-		app.LoadLocaleData(app.GetLocalePath())
-
-def IsCHEONMA():
-	return IsYMIR()
-
-# END_OF_SUPPORT_NEW_KOREA_SERVER
+	app.LoadLocaleData(app.GetLocalePath())
 
 def mapping(**kwargs): return kwargs
 
@@ -819,7 +794,7 @@ elif IsHONGKONG():
 
 		return result
 
-elif IsEUROPE() and not IsWE_KOREA() and not IsYMIR():
+elif IsEUROPE() and not IsWE_KOREA():
 	def DO_YOU_SELL_ITEM(sellItemName, sellItemCount, sellItemPrice):
 		if sellItemCount > 1 :
 			return DO_YOU_SELL_ITEM2 % (sellItemName, sellItemCount, NumberToMoneyString(sellItemPrice) )
