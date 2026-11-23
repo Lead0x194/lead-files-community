@@ -1,7 +1,7 @@
 if get_time ( ) > pc . getqf ( "duration" ) then 
 if pc . count_item ( 30047 ) > 0 then 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
-say ( gameforge . collect_quest_lv40 . _150_say ) 
+say_title ( "[LC;138]" ) 
+say ( "[LC;265]" ) 
 pc . remove_item ( 30047 , 1 ) 
 pc . setqf ( "duration" , get_time ( ) + 60 * 60 * 22 ) 
 wait ( ) 
@@ -16,31 +16,31 @@ if s <= pass_percent then
 if pc . getqf ( "collect_count" ) < 14 then 
 local index = pc . getqf ( "collect_count" ) + 1 
 pc . setqf ( "collect_count" , index ) 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
-say ( string . format ( gameforge . collect_quest_lv40 . _160_say , 15 - pc . getqf ( "collect_count" ) ) ) 
+say_title ( "[LC;138]" ) 
+say ( string . format ( "[LC;266;%s]" , 15 - pc . getqf ( "collect_count" ) ) ) 
 pc . setqf ( "drink_drug" , 0 ) 
 return 
 end 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
-say ( gameforge . collect_quest_lv40 . _170_say ) 
+say_title ( "[LC;138]" ) 
+say ( "[LC;267]" ) 
 pc . setqf ( "collect_count" , 0 ) 
 pc . setqf ( "drink_drug" , 0 ) 
 pc . setqf ( "duration" , 0 ) 
 set_state ( "key_item" ) 
 return 
 else 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
-say ( gameforge . collect_quest_lv40 . _180_say ) 
+say_title ( "[LC;138]" ) 
+say ( "[LC;268]" ) 
 pc . setqf ( "drink_drug" , 0 ) 
 return 
 end 
 else 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
-say ( gameforge . collect_quest_lv40 . _190_say ) 
+say_title ( "[LC;138]" ) 
+say ( "[LC;269]" ) 
 return 
 end 
 else 
-say_title ( gameforge . collect_herb_lv10 . _50_sayTitle ) 
-say ( gameforge . collect_quest_lv40 . _200_say ) 
+say_title ( "[LC;138]" ) 
+say ( "[LC;270]" ) 
 return 
 end 

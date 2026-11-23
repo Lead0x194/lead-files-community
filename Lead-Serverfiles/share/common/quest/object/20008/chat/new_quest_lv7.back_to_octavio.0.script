@@ -1,15 +1,15 @@
 target . delete ( "__TARGET5__" ) 
-say_title ( gameforge . new_quest_lv7 . _020_say_title ) 
+say_title ( "[LC;6082]" ) 
 if npc . get_empire ( ) == pc . get_empire ( ) then 
 if soup then 
-say ( gameforge . new_quest_lv7 . _150_say ) 
+say ( "[LC;6137]" ) 
 end 
-say ( gameforge . new_quest_lv7 . _151_say ) 
-say ( gameforge . new_quest_lv7 . _152_say ) 
+say ( "[LC;6138]" ) 
+say ( "[LC;6139]" ) 
 local reward = new_quest_lv7 . reward ( ) 
 local reward_exp = new_quest_lv7 . reward_exp ( ) 
-say_reward ( string . format ( gameforge . new_quest_lv7 . _154_say_reward , reward_exp ) ) 
-say_reward ( string . format ( gameforge . new_quest_lv7 . _155_say_reward , reward ) ) 
+say_reward ( string . format ( "[LC;6141;%s]" , reward_exp ) ) 
+say_reward ( string . format ( "[LC;6142;%s]" , reward ) ) 
 pc . give_exp2 ( new_quest_lv7 . reward_exp ( ) ) 
 pc . change_money ( new_quest_lv7 . reward ( ) ) 
 local reward_item = "0" 
@@ -96,13 +96,13 @@ end
 end 
 if reward_item ~= "0" then 
 wait ( ) 
-say_reward ( gameforge . new_quest_lv7 . _153_say_reward ) 
+say_reward ( "[LC;6140]" ) 
 say_item_vnum ( reward_item ) 
 pc . give_item2 ( reward_item , 1 ) 
 end 
 set_state ( "__COMPLETE__" ) 
 else 
-say ( gameforge . new_quest_lv7 . _160_say ) 
-say ( gameforge . new_quest_lv7 . _165_say ) 
+say ( "[LC;6143]" ) 
+say ( "[LC;6144]" ) 
 soup = true 
 end 

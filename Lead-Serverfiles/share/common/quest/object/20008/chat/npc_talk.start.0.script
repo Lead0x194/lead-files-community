@@ -1,7 +1,7 @@
-say_title ( gameforge . npc_talk . _30_sayTitle ) 
-say ( gameforge . npc_talk . _40_say ) 
+say_title ( "[LC;6366]" ) 
+say ( "[LC;6377]" ) 
 if math . random ( 2 ) == 1 then 
 wait ( ) 
 say ( pc . get_name ( ) .. ":" ) 
-say ( gameforge . npc_talk . _50_say ) 
+say ( "[LC;6388]" ) 
 end 

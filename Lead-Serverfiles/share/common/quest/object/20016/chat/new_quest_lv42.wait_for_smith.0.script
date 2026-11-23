@@ -1,11 +1,11 @@
-say_title ( gameforge . new_quest_lv42 . _054_say_title ) 
+say_title ( "[LC;5899]" ) 
 if get_time ( ) - pc . getqf ( "diamond_duration" ) >= new_quest_lv42_timeToWait then 
-say ( gameforge . new_quest_lv42 . _074_say ) 
+say ( "[LC;5913]" ) 
 target . delete ( "__TARGET4__" ) 
 q . done ( ) 
 pc . give_item2 ( 30175 ) 
 pc . give_item2 ( 30175 ) 
 set_state ( "back_to_fisher" ) 
 else 
-say ( gameforge . new_quest_lv42 . _075_say ) 
+say ( "[LC;5914]" ) 
 end 

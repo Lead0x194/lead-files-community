@@ -1,25 +1,25 @@
 if pc . count_item ( new_quest_lv29_drop ) < new_quest_lv29_neededAmountDrop and pc . getqf ( "hayFromHarang" ) == 1 and pc . getqf ( "hayIndex" ) > 0 then 
 say_pc_name ( ) 
-say_reward ( gameforge . new_quest_lv29 . _075_say_reward ) 
+say_reward ( "[LC;5842]" ) 
 wait ( ) 
-say_title ( gameforge . new_quest_lv29 . _043_say_title ) 
-say ( gameforge . new_quest_lv29 . _076_say_reward ) 
+say_title ( "[LC;5818]" ) 
+say ( "[LC;5843]" ) 
 wait ( ) 
 say_pc_name ( ) 
-say_reward ( gameforge . new_quest_lv29 . _077_say_reward ) 
+say_reward ( "[LC;5844]" ) 
 wait ( ) 
-say_title ( gameforge . new_quest_lv29 . _043_say_title ) 
-say ( gameforge . new_quest_lv29 . _078_say_reward ) 
+say_title ( "[LC;5818]" ) 
+say ( "[LC;5845]" ) 
 pc . setqf ( "hayFromHarang" , 0 ) 
 pc . give_item2 ( new_quest_lv29_drop ) 
 local qfindex = pc . getqf ( "hayIndex" ) - 1 
 pc . setqf ( "hayIndex" , qfindex ) 
-notice_multiline ( string . format ( gameforge . new_quest_lv29 . _085_notice , new_quest_lv29_neededAmountDrop - pc . count_item ( new_quest_lv29_drop ) ) , notice ) 
+notice_multiline ( string . format ( "[LC;5852;%s]" , new_quest_lv29_neededAmountDrop - pc . count_item ( new_quest_lv29_drop ) ) , notice ) 
 if new_quest_lv29_neededAmountDrop <= pc . count_item ( new_quest_lv29_drop ) or pc . getqf ( "hayIndex" ) == 0 then 
 q . done ( ) 
 set_state ( "calming_yonah" ) 
 end 
 else 
-say_title ( gameforge . new_quest_lv29 . _043_say_title ) 
-say ( gameforge . new_quest_lv29 . _079_say_reward ) 
+say_title ( "[LC;5818]" ) 
+say ( "[LC;5846]" ) 
 end 

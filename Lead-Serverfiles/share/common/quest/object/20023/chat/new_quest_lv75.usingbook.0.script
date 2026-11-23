@@ -1,20 +1,20 @@
 if pc . count_item ( 30182 ) < 1 then 
-say ( gameforge . new_quest_lv75 . _310_say ) 
+say ( "[LC;6201]" ) 
 else 
-say_title ( gameforge . new_quest_lv75 . _020_set_title ) 
-say ( gameforge . new_quest_lv75 . _320_say ) 
-say ( gameforge . new_quest_lv75 . _330_say ) 
+say_title ( "[LC;6146]" ) 
+say ( "[LC;6202]" ) 
+say ( "[LC;6203]" ) 
 wait ( ) 
-say ( gameforge . new_quest_lv75 . _340_say ) 
-local sell = select ( gameforge . new_quest_lv75 . _350_1_select , gameforge . new_quest_lv75 . _350_2_select ) 
+say ( "[LC;6204]" ) 
+local sell = select ( "[LC;6205]" , "[LC;6206]" ) 
 if sell == 1 and pc . getqf ( "bargainsleft" ) > 0 then 
 local letmeout = 0 
 repeat 
-say ( gameforge . new_quest_lv75 . _360_say ) 
+say ( "[LC;6207]" ) 
 local pcgives = tonumber ( input ( ) ) 
 if pcgives < 1 or pcgives > 1e+09 or pc . getqf ( "bargainsleft" ) < 1 then 
-say ( gameforge . new_quest_lv75 . _370_say ) 
-local nobargain = select ( gameforge . new_quest_lv75 . _380_1_select , gameforge . new_quest_lv75 . _380_2_select ) 
+say ( "[LC;6208]" ) 
+local nobargain = select ( "[LC;6209]" , "[LC;6210]" ) 
 if nobargain == 1 then 
 pc . remove_item ( 30182 , 1 ) 
 pc . change_money ( 500000 ) 
@@ -22,19 +22,19 @@ pc . setqf ( "bargainsleft" , 0 )
 letmeout = 1 
 set_state ( "__COMPLETE__" ) 
 else 
-say ( gameforge . new_quest_lv75 . _390_say ) 
+say ( "[LC;6211]" ) 
 letmeout = 1 
 end 
 elseif pcgives >= 1 and pcgives <= 1e+09 and pcgives > averagebargain * 2 then 
-say ( gameforge . new_quest_lv75 . _400_say ) 
+say ( "[LC;6212]" ) 
 local npcmaxbargain = averagebargain + math . random ( 1 , 5 ) * 100000 
 local reducebargains = pc . getqf ( "bargainsleft" ) 
 reducebargains = reducebargains - 1 
 pc . setqf ( "bargainsleft" , reducebargains ) 
-say ( string . format ( gameforge . new_quest_lv75 . _410_say , npcmaxbargain ) ) 
-say ( gameforge . new_quest_lv75 . _420_say ) 
-if pc . getqf ( "bargainsleft" ) == 0 then say ( gameforge . new_quest_lv75 . _425_say ) end 
-local makebargain = select ( string . format ( gameforge . new_quest_lv75 . _430_1_select , npcmaxbargain ) , gameforge . new_quest_lv75 . _430_2_select ) 
+say ( string . format ( "[LC;6213;%s]" , npcmaxbargain ) ) 
+say ( "[LC;6214]" ) 
+if pc . getqf ( "bargainsleft" ) == 0 then say ( "[LC;6215]" ) end 
+local makebargain = select ( string . format ( "[LC;6216;%s]" , npcmaxbargain ) , "[LC;6217]" ) 
 if makebargain == 1 then 
 pc . remove_item ( 30182 , 1 ) 
 pc . change_money ( npcmaxbargain ) 
@@ -42,10 +42,10 @@ letmeout = 1
 pc . setqf ( "bargainsleft" , 0 ) 
 set_state ( "__COMPLETE__" ) 
 else 
-say ( gameforge . new_quest_lv75 . _440_say ) 
+say ( "[LC;6218]" ) 
 end 
 else 
-say ( gameforge . new_quest_lv75 . _450_say ) 
+say ( "[LC;6219]" ) 
 pc . remove_item ( 30182 , 1 ) 
 pc . change_money ( pcgives ) 
 pc . setqf ( "bargainsleft" , 0 ) 
@@ -54,17 +54,17 @@ set_state ( "__COMPLETE__" )
 end 
 until letmeout == 1 
 elseif sell == 1 and pc . getqf ( "bargainsleft" ) == 0 then 
-say ( gameforge . new_quest_lv75 . _460_say ) 
-say ( gameforge . new_quest_lv75 . _470_say ) 
-local nobargain = select ( gameforge . new_quest_lv75 . _380_1_select , gameforge . new_quest_lv75 . _380_2_select ) 
+say ( "[LC;6220]" ) 
+say ( "[LC;6221]" ) 
+local nobargain = select ( "[LC;6209]" , "[LC;6210]" ) 
 if nobargain == 1 then 
 pc . remove_item ( 30182 , 1 ) 
 pc . change_money ( 500000 ) 
 set_state ( "__COMPLETE__" ) 
 else 
-say ( gameforge . new_quest_lv75 . _480_say ) 
+say ( "[LC;6222]" ) 
 end 
 else 
-say ( gameforge . new_quest_lv75 . _490_say ) 
+say ( "[LC;6223]" ) 
 end 
 end 

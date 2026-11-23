@@ -1,40 +1,40 @@
 if npc . get_guild ( ) == pc . get_guild ( ) and pc . isguildmaster ( ) then say_npc ( ) 
-say ( gameforge . guild_building_melt . _130_say ) 
+say ( "[LC;1303]" ) 
 wait ( ) 
 if pc . get_gold ( ) < 3e+06 then 
-say ( gameforge . guild_building_melt . _140_say ) 
+say ( "[LC;1304]" ) 
 else 
 local sel = 0 
-local timetable1 = { gameforge . guild_building_melt . _180_say , 
-gameforge . guild_building_melt . _190_say , 
-gameforge . guild_building_melt . _200_say , 
-gameforge . guild_building_melt . _210_say , 
-gameforge . guild_building_melt . _220_say , 
-gameforge . guild_building_melt . _230_say , 
-gameforge . locale . levelup . prev_quest_go , 
-gameforge . guild_building_melt . _170_say } 
+local timetable1 = { "[LC;1308]" , 
+"[LC;1309]" , 
+"[LC;1310]" , 
+"[LC;1312]" , 
+"[LC;1313]" , 
+"[LC;1314]" , 
+"[LC;2105]" , 
+"[LC;1307]" } 
 local valuetable1 = { 14043 , 14045 , 14046 , 14047 , 14048 , 14049 , 1 , 3 } 
-local timetable2 = { gameforge . guild_building_melt . _240_say , 
-gameforge . guild_building_melt . _250_say , 
-gameforge . guild_building_melt . _260_say , 
-gameforge . guild_building_melt . _270_say , 
-gameforge . guild_building_melt . _280_say , 
-gameforge . locale . levelup . prev_quest_go , 
-gameforge . map_warp . _96_select , 
-gameforge . guild_building_melt . _170_say } 
+local timetable2 = { "[LC;1315]" , 
+"[LC;1316]" , 
+"[LC;1317]" , 
+"[LC;1318]" , 
+"[LC;1319]" , 
+"[LC;2105]" , 
+"[LC;5477]" , 
+"[LC;1307]" } 
 local valuetable2 = { 14050 , 10451 , 14052 , 14053 , 14054 , 2 , 0 , 3 } 
-local timetable3 = { gameforge . guild_building_melt . _290_say , 
+local timetable3 = { "[LC;1320]" , 
 "Soul crystal" , 
 "Rubin" , 
 "Garnet" , 
 "Smaragd" , 
 "Sapphire" , 
-gameforge . map_warp . _96_select , 
-gameforge . guild_building_melt . _170_say } 
+"[LC;5477]" , 
+"[LC;1307]" } 
 local valuetable3 = { 14055 , 26992 , 26993 , 26994 , 26995 , 26996 , 1 , 3 } 
 repeat 
 say_npc ( ) 
-say ( gameforge . guild_building_melt . _150_say ) 
+say ( "[LC;1305]" ) 
 if sel == 0 then 
 local s = select_table ( timetable1 ) 
 sel = valuetable1 [ s ] 
@@ -49,7 +49,7 @@ until sel > 2
 if sel ~= 3 then 
 npc_num = sel + 20060 - 14043 
 if npc_num == npc . get_race ( ) then 
-say ( gameforge . guild_building_melt . _160_say ) 
+say ( "[LC;1306]" ) 
 else 
 pc . changegold ( - 3e+06 ) 
 building . reconstruct ( sel ) 

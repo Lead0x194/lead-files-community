@@ -1,16 +1,16 @@
-say_title ( gameforge . npc_talk . _580_sayTitle ) 
-say ( gameforge . subquest_20 . _220_say ) 
-local s = select ( gameforge . subquest_20 . _230_select , gameforge . find_brother_article . _170_select ) 
+say_title ( "[LC;6396]" ) 
+say ( "[LC;7519]" ) 
+local s = select ( "[LC;7520]" , "[LC;939]" ) 
 if 2 == s then 
-say_title ( gameforge . npc_talk . _580_sayTitle ) 
-say ( gameforge . subquest_20 . _240_say ) 
-local r = select ( gameforge . subquest_20 . _250_select , gameforge . locale . guild . no ) 
+say_title ( "[LC;6396]" ) 
+say ( "[LC;7521]" ) 
+local r = select ( "[LC;7522]" , "[LC;2035]" ) 
 if 2 == r then 
-say ( gameforge . subquest_20 . _260_say ) 
+say ( "[LC;7523]" ) 
 return 
 end 
-say ( gameforge . subquest_20 . _270_say ) 
+say ( "[LC;7524]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say ( gameforge . subquest_20 . _280_say ) 
+say ( "[LC;7525]" ) 

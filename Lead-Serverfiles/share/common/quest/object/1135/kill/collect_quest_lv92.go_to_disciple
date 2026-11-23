@@ -1,5 +1,5 @@
 local s = number ( 1 , 200 ) 
 if s <= 1 then 
 pc . give_item2 ( 30251 , 1 ) 
-send_letter ( gameforge . collect_quest_lv92 . _140_send_letter ) 
+send_letter ( "[LC;556]" ) 
 end 

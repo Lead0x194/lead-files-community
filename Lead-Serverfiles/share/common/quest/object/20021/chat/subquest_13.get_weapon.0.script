@@ -1,9 +1,9 @@
 target . delete ( "__TARGET2__" ) 
 if pc . getqf ( "cloth_done" ) == 0 then 
-say_title ( gameforge . hair_shop . _20_sayTitle ) 
-say ( gameforge . subquest_13 . _230_say ) 
+say_title ( "[LC;1406]" ) 
+say ( "[LC;7324]" ) 
 pc . setqf ( "cloth_done" , 1 ) 
 end 
 if pc . getqf ( "cloth_done" ) == 2 then 
-say ( gameforge . subquest_13 . _240_say ) 
+say ( "[LC;7325]" ) 
 end 

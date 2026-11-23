@@ -1,5 +1,5 @@
-if npc . get_guild ( ) == pc . get_guild ( ) and pc . is_guild_master ( ) then say_title ( gameforge . guild_building_alter_of_power . _10_sayTitle ) 
-say ( gameforge . guild_building_alter_of_power . _170_say ) 
- return end if npc . get_guild ( ) == pc . get_guild ( ) and pc . is_guild_master ( ) ~= true then say_title ( gameforge . guild_building_alter_of_power . _10_sayTitle ) 
-say ( gameforge . guild_building_alter_of_power . _180_say ) 
+if npc . get_guild ( ) == pc . get_guild ( ) and pc . is_guild_master ( ) then say_title ( "[LC;1283]" ) 
+say ( "[LC;1290]" ) 
+ return end if npc . get_guild ( ) == pc . get_guild ( ) and pc . is_guild_master ( ) ~= true then say_title ( "[LC;1283]" ) 
+say ( "[LC;1291]" ) 
  return end 

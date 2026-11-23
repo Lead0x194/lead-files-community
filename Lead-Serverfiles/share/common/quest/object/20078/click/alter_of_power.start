@@ -1,16 +1,16 @@
-if npc . get_guild ( ) == pc . get_guild ( ) and pc . is_guild_master ( ) then say_title ( gameforge . guild_building_alter_of_power . _10_sayTitle ) 
-say ( gameforge . guild_building_alter_of_power . _120_say ) 
+if npc . get_guild ( ) == pc . get_guild ( ) and pc . is_guild_master ( ) then say_title ( "[LC;1283]" ) 
+say ( "[LC;1285]" ) 
 wait ( ) 
-say_title ( gameforge . guild_building_alter_of_power . _10_sayTitle ) 
-say ( gameforge . guild_building_alter_of_power . _130_say ) 
+say_title ( "[LC;1283]" ) 
+say ( "[LC;1286]" ) 
 if pc . getqf ( "build_level" ) < guild . level ( pc . get_guild ( ) ) or guild . level ( pc . get_guild ( ) ) >= 20 then 
-say ( gameforge . guild_building_alter_of_power . _140_say ) 
-say_reward ( gameforge . guild_building_alter_of_power . _150_sayReward ) 
-local s = select ( gameforge . guild_building_alter_of_power . _60_select , gameforge . guild_building_alter_of_power . _70_select ) 
+say ( "[LC;1287]" ) 
+say_reward ( "[LC;1288]" ) 
+local s = select ( "[LC;1296]" , "[LC;1297]" ) 
 if s == 1 then 
 if pc . count_item ( 90010 ) >= 15 and pc . count_item ( 90012 ) >= 20 and pc . count_item ( 90011 ) >= 15 and pc . get_gold ( ) >= 3e+07 then 
-say_title ( gameforge . guild_building_alter_of_power . _10_sayTitle ) 
-say ( gameforge . guild_building_alter_of_power . _160_say ) 
+say_title ( "[LC;1283]" ) 
+say ( "[LC;1289]" ) 
 building . reconstruct ( 14063 ) 
 pc . setqf ( "build_level" , guild . level ( pc . get_guild ( ) ) ) 
 char_log ( 0 , "GUILD_BUILDING" , "alter_of_power 14063 constructed" ) 
@@ -19,14 +19,14 @@ pc . remove_item ( "90010" , 15 )
 pc . remove_item ( "90011" , 20 ) 
 pc . remove_item ( "90012" , 20 ) 
 else 
-say_title ( gameforge . guild_building_alter_of_power . _10_sayTitle ) 
-say ( gameforge . guild_building_alter_of_power . _90_say ) 
+say_title ( "[LC;1283]" ) 
+say ( "[LC;1299]" ) 
 end 
 elseif s == 2 then 
-say_title ( gameforge . guild_building_alter_of_power . _10_sayTitle ) 
-say ( gameforge . guild_building_alter_of_power . _100_say ) 
+say_title ( "[LC;1283]" ) 
+say ( "[LC;1282]" ) 
 end 
 end 
- return end if npc . get_guild ( ) == pc . get_guild ( ) and pc . is_guild_master ( ) ~= true then say_title ( gameforge . guild_building_alter_of_power . _10_sayTitle ) 
-say ( gameforge . guild_building_alter_of_power . _180_say ) 
+ return end if npc . get_guild ( ) == pc . get_guild ( ) and pc . is_guild_master ( ) ~= true then say_title ( "[LC;1283]" ) 
+say ( "[LC;1291]" ) 
  return end 

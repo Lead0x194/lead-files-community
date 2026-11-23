@@ -1,7 +1,7 @@
 if pc . getqf ( "time" ) > 0 and pc . getqf ( "time" ) == game . get_event_flag ( "dragon_lair_time" ) then 
 dragon_lair_access . warp_to_lair ( ) 
 else 
-say_title ( gameforge . neutral_warp . _20_sayTitle ) 
-say ( gameforge . dragon_lair_access . _120_say ) 
+say_title ( "[LC;5599]" ) 
+say ( "[LC;720]" ) 
 set_state ( "start" ) 
 end 

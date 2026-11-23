@@ -1,21 +1,21 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . subquest_12 . _20_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;7301]" ) 
 wait ( ) 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . subquest_12 . _30_say ) 
-local s = select ( gameforge . subquest_12 . _40_select , gameforge . subquest_12 . _50_select ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;7302]" ) 
+local s = select ( "[LC;7303]" , "[LC;7304]" ) 
 if 2 == s then 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . subquest_12 . _90_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;7308]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . subquest_12 . _70_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;7306]" ) 
 return 
 end 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . subquest_12 . _80_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;7307]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 

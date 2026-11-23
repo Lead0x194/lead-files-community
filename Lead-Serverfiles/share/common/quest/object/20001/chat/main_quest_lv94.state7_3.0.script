@@ -9,7 +9,7 @@ if pc . count_item ( 31036 ) > 0 then
 local today_item7_1_checked = pc . getqf ( "today_item7_1_checked" ) 
 if today_item7_1_checked >= 10 then 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . main_quest_lv94 . _1000_say ) 
+say ( "[LC;5070]" ) 
 else 
 if number ( 1 , 100 ) <= 70 then 
 pc . remove_item ( 31036 , 1 ) 
@@ -24,19 +24,19 @@ end
 q . set_counter_value ( remain ) 
 if pc . getqf ( "total_item7_1_checked" ) >= 30 then 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . main_quest_lv94 . _1010_say ) 
+say ( "[LC;5072]" ) 
 set_state ( "state7_4" ) 
 else 
 say_title ( mob_name ( 20001 ) ) 
-say ( string . format ( gameforge . main_quest_lv94 . _980_say , 30 - pc . getqf ( "total_item7_1_checked" ) ) ) 
+say ( string . format ( "[LC;5171;%d]" , 30 - pc . getqf ( "total_item7_1_checked" ) ) ) 
 end 
 else 
 pc . remove_item ( 31036 , 1 ) 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . main_quest_lv94 . _990_say ) 
+say ( "[LC;5172]" ) 
 end 
 end 
 else 
 say_title ( mob_name ( 20001 ) ) 
-say ( gameforge . main_quest_lv94 . _1040_say ) 
+say ( "[LC;5075]" ) 
 end 

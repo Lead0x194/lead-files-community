@@ -1,12 +1,12 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( 30227 ) > 0 then 
 say ( mob_name ( 20084 ) ) 
-say ( gameforge . collect_quest_lv90 . _265_say ) 
+say ( "[LC;531]" ) 
 pc . remove_item ( 30227 , 1 ) 
 set_state ( "__reward" ) 
 else 
 say ( mob_name ( 20084 ) ) 
-say ( "" .. item_name ( 30227 ) .. gameforge . collect_quest_lv90 . _266_say ) 
+say ( "" .. item_name ( 30227 ) .. "[LC;532]" ) 
 say ( "" ) 
 return 
 end 

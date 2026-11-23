@@ -1,10 +1,10 @@
 local count = pc . getqf ( "state" ) + 1 
 if count <= 9 then 
 pc . setqf ( "state" , count ) 
-q . set_counter ( gameforge . main_quest_lv2 . _135_counter , 9 - count ) 
+q . set_counter ( "[LC;4157]" , 9 - count ) 
 if count == 9 then 
-say_title ( gameforge . main_quest_lv2 . _140_sayTitle ) 
-say ( gameforge . main_quest_lv2 . _150_sayReward ) 
+say_title ( "[LC;4158]" ) 
+say ( "[LC;4159]" ) 
 set_state ( "gototeacher2" ) 
 end 
 end 

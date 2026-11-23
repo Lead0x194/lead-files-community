@@ -1,9 +1,9 @@
 say_title ( mob_name ( 20001 ) ) 
 local today = math . floor ( get_global_time ( ) / 86400 ) 
 if today == pc . getf ( "dragon_soul" , "eye_timestamp" ) then 
-say ( gameforge . dragon_soul . _1130_say ) 
+say ( "[LC;776]" ) 
 else 
-say ( gameforge . dragon_soul . _1140_say ) 
+say ( "[LC;777]" ) 
 pc . setf ( "dragon_soul" , "eye_timestamp" , today ) 
 pc . setf ( "dragon_soul" , "eye_left" , 10 ) 
 set_state ( "state_farming" ) 

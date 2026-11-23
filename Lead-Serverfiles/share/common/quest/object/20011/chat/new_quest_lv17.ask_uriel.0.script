@@ -1,9 +1,9 @@
 target . delete ( "__TARGET2__" ) 
-say_title ( gameforge . new_quest_lv17 . _039_say_title ) 
-say ( gameforge . new_quest_lv17 . _051_say ) 
+say_title ( "[LC;5636]" ) 
+say ( "[LC;5642]" ) 
 say_item_vnum ( 30173 ) 
-say ( gameforge . new_quest_lv17 . _052_say ) 
-local s = select ( gameforge . new_quest_lv17 . _060_select ) 
+say ( "[LC;5643]" ) 
+local s = select ( "[LC;5644]" ) 
 if s == 1 then 
 clear_letter ( ) 
 q . done ( ) 

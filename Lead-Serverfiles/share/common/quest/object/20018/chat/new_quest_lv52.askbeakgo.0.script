@@ -1,12 +1,12 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv52 . _044_say_title ) 
-say ( gameforge . new_quest_lv52 . _041_say ) 
+say_title ( "[LC;5965]" ) 
+say ( "[LC;5961]" ) 
 q . done ( ) 
-local doquest = select ( gameforge . new_quest_lv52 . _042_select , gameforge . subquest_12 . _50_select ) 
+local doquest = select ( "[LC;5963]" , "[LC;7304]" ) 
 if doquest == 1 then 
 set_state ( "askyuhwan" ) 
 else 
-say_title ( gameforge . new_quest_lv52 . _044_say_title ) 
-say ( gameforge . new_quest_lv52 . _046_say ) 
+say_title ( "[LC;5965]" ) 
+say ( "[LC;5967]" ) 
 return 
 end 

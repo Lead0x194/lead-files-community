@@ -1,11 +1,11 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( 30224 ) > 0 then 
-say_title ( gameforge . collect_quest_lv60 . _50_sayTitle ) 
-say ( gameforge . collect_quest_lv70 . _250_say ) 
+say_title ( "[LC;365]" ) 
+say ( "[LC;388]" ) 
 pc . remove_item ( 30224 , 1 ) 
 set_state ( "__reward" ) 
 else 
-say_title ( gameforge . collect_quest_lv60 . _50_sayTitle ) 
-say ( gameforge . collect_quest_lv70 . _255_say ) 
+say_title ( "[LC;365]" ) 
+say ( "[LC;389]" ) 
 return 
 end 

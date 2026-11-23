@@ -1,31 +1,31 @@
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . upgrade_refine_scroll . _200_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;8478]" ) 
 wait ( ) 
 if pc . count_item ( 71025 ) == 0 then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . upgrade_refine_scroll . _210_say ) 
-say_item ( gameforge . upgrade_refine_scroll . _220_sayItem , 71025 , "" ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;8480]" ) 
+say_item ( "[LC;8481]" , 71025 , "" ) 
 wait ( ) 
 end 
 if pc . count_item ( 25040 ) == 0 then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . upgrade_refine_scroll . _230_say ) 
-say_item ( gameforge . upgrade_refine_scroll . _60_sayItem , 25040 , "" ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;8482]" ) 
+say_item ( "[LC;8490]" , 25040 , "" ) 
 wait ( ) 
 end 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . upgrade_refine_scroll . _240_say ) 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;8483]" ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 1 == s then 
 if pc . count_item ( 71025 ) > 0 and pc . count_item ( 25040 ) > 0 then 
 pc . remove_item ( 71025 ) 
 pc . remove_item ( 25040 ) 
 pc . give_item2 ( 70039 ) 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . upgrade_refine_scroll . _250_say ) 
-say_item ( gameforge . upgrade_refine_scroll . _260_sayItem , 70039 , "" ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;8484]" ) 
+say_item ( "[LC;8485]" , 70039 , "" ) 
 else 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . upgrade_refine_scroll . _270_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;8486]" ) 
 end 
 end 

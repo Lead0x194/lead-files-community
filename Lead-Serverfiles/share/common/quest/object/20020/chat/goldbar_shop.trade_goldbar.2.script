@@ -1,13 +1,13 @@
 if pc . get_level ( ) < 30 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _270_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1239]" ) 
 setstate ( "start" ) 
 return 
 end 
 if game . get_event_flag ( "gold_trade_enable" ) == 0 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _280_say ) 
-say_reward ( gameforge . goldbar . _290_sayReward ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1240]" ) 
+say_reward ( "[LC;1241]" ) 
 return 
 end 
 local nexttime = pc . getqf ( "gold_sell_next_time" ) 
@@ -17,25 +17,25 @@ if interval <= 0 then interval = 360 end
 if get_time ( ) < nexttime then 
 nexttime = ( nexttime / 60 ) - ( get_time ( ) / 60 ) 
 if nexttime >= 60 then 
-unit = gameforge . goldbar . _104_say nexttime = nexttime / 60 
+unit = "[LC;1219]" nexttime = nexttime / 60 
 math . ceil ( nexttime ) 
 else 
-unit = gameforge . goldbar . _108_say end 
+unit = "[LC;1220]" end 
 if nexttime < 1 then nexttime = 1 end 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _300_say ) 
-say ( string . format ( gameforge . goldbar . _310_say , nexttime , unit ) ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1242]" ) 
+say ( string . format ( "[LC;1244;%s;%s]" , nexttime , unit ) ) 
 else 
 if pc . count_item ( 80007 ) <= 0 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _320_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1245]" ) 
 else 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _330_say ) 
-local s = select ( gameforge . goldbar . _340_select , gameforge . goldbar . _350_select ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1246]" ) 
+local s = select ( "[LC;1247]" , "[LC;1248]" ) 
 if s == 1 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _360_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1249]" ) 
 local goldbar_count = pc . count_item ( 80007 ) 
 if goldbar_count >= 1 then 
 char_log ( 0 , "GOLDBARREN" , "VERKAUFEN(" .. goldbar_count .. ")" ) 
@@ -46,8 +46,8 @@ char_log ( 0 , "GOLDBARREN" , "SELL_HACK" )
 end 
 pc . setqf ( "gold_sell_next_time" , get_time ( ) + time_min_to_sec ( interval ) ) 
 elseif s == 2 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _370_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1250]" ) 
 end 
 end 
 end 

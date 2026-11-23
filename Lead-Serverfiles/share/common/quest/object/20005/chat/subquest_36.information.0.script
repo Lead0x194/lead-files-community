@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_01 . _140_sayTitle ) 
-say ( gameforge . subquest_36 . _30_say ) 
+say_title ( "[LC;6969]" ) 
+say ( "[LC;7990]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_01 . _140_sayTitle ) 
-say ( gameforge . subquest_36 . _40_say ) 
-local s = select ( gameforge . subquest_36 . _50_select , gameforge . subquest_36 . _60_select ) 
+say_title ( "[LC;6969]" ) 
+say ( "[LC;7991]" ) 
+local s = select ( "[LC;7992]" , "[LC;7993]" ) 
 if 2 == s then 
-say ( gameforge . subquest_26 . _210_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7714]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . subquest_01 . _140_sayTitle ) 
-say ( gameforge . subquest_36 . _70_say ) 
+say_title ( "[LC;6969]" ) 
+say ( "[LC;7994]" ) 
 return 
 end 
-say_title ( gameforge . subquest_01 . _140_sayTitle ) 
-say ( gameforge . subquest_36 . _80_say ) 
+say_title ( "[LC;6969]" ) 
+say ( "[LC;7995]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_01 . _140_sayTitle ) 
-say ( gameforge . subquest_36 . _90_say ) 
+say_title ( "[LC;6969]" ) 
+say ( "[LC;7996]" ) 
 set_state ( "for_horse" ) 

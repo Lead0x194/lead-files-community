@@ -1,19 +1,19 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv29 . _020_say_title ) 
-say ( gameforge . new_quest_lv29 . _021_say ) 
-say ( gameforge . new_quest_lv29 . _022_say ) 
+say_title ( "[LC;5800]" ) 
+say ( "[LC;5801]" ) 
+say ( "[LC;5802]" ) 
 local goto_npc = 20005 
-local accept = select ( gameforge . new_quest_lv29 . _023_1_select , gameforge . new_quest_lv29 . _023_2_select ) 
+local accept = select ( "[LC;5803]" , "[LC;5804]" ) 
 if accept == 1 then 
 local v = find_npc_by_vnum ( 20014 ) 
 if 0 ~= v then 
-target . vid ( "__TARGET2__" , v , gameforge . new_quest_lv29 . _030_target ) 
+target . vid ( "__TARGET2__" , v , "[LC;5806]" ) 
 end 
 set_state ( "find_taurean" ) 
 else 
-say ( gameforge . new_quest_lv29 . _024_say ) 
-say ( gameforge . subquest_06 . _60_say ) 
-local abortquest = select ( gameforge . subquest_06 . _70_select , gameforge . subquest_06 . _80_select ) 
+say ( "[LC;5805]" ) 
+say ( "[LC;7170]" ) 
+local abortquest = select ( "[LC;7173]" , "[LC;7174]" ) 
 if abortquest == 1 then 
 pc . setqf ( "hayIndex" , 0 ) 
 pc . setqf ( "hayFromHarang" , 0 ) 
@@ -26,7 +26,7 @@ set_state ( "__GIVEUP__" )
 else 
 local v = find_npc_by_vnum ( goto_npc ) 
 if 0 ~= v then 
-target . vid ( "__TARGET__" , v , gameforge . new_quest_lv29 . _010_target ) 
+target . vid ( "__TARGET__" , v , "[LC;5798]" ) 
 end 
 return 
 end 

@@ -4,13 +4,13 @@ drop = true
 local index = pc . getqf ( "new_quest_premium_lv4_collect_count_1" ) + 1 
 pc . setqf ( "new_quest_premium_lv4_collect_count_1" , index ) 
 pc . give_item2 ( pc . getqf ( "drop1" ) ) 
-notice_multiline ( gameforge . new_quest_premium_lv4 . _130_notice , notice ) 
+notice_multiline ( "[LC;6305]" , notice ) 
 if pc . getqf ( "neededAmountDrop1" ) == pc . getqf ( "new_quest_premium_lv4_collect_count_1" ) then 
-notice_multiline ( gameforge . new_quest_premium_lv4 . _140_notice , notice ) 
+notice_multiline ( "[LC;6306]" , notice ) 
 q . done ( ) 
 set_state ( "backto_trader" ) 
 end 
 else 
-notice_multiline ( gameforge . new_quest_premium_lv4 . _150_notice , notice ) 
+notice_multiline ( "[LC;6307]" , notice ) 
 end 
 end 

@@ -1,5 +1,5 @@
 target . delete ( "__TARGET3__" ) 
-say_title ( gameforge . subquest_32 . _270_sayTitle ) 
-say ( gameforge . subquest_32 . _280_say ) 
+say_title ( "[LC;7864]" ) 
+say ( "[LC;7865]" ) 
 pc . remove_item ( 30159 ) 
 pc . setqf ( "sil_done" , 2 ) 

@@ -1,6 +1,6 @@
 if pc . count_item ( 30025 ) > 0 and pc . count_item ( 30056 ) > 0 and pc . count_item ( 30057 ) > 0 and pc . count_item ( 30058 ) > 0 and pc . count_item ( 30059 ) > 0 and pc . count_item ( 30326 ) > 0 then 
 say_title ( mob_name ( 20011 ) ) 
-say ( gameforge . spider_dungeon_3floor_boss . _250_say ) 
+say ( "[LC;6940]" ) 
 pc . remove_item ( 30025 , 1 ) 
 pc . remove_item ( 30056 , 1 ) 
 pc . remove_item ( 30057 , 1 ) 
@@ -8,12 +8,12 @@ pc . remove_item ( 30058 , 1 )
 pc . remove_item ( 30059 , 1 ) 
 pc . remove_item ( 30326 , 1 ) 
 if math . random ( 1 , 2000 ) <= 1000 then 
-say ( gameforge . spider_dungeon_3floor_boss . _260_say ) 
+say ( "[LC;6941]" ) 
 pc . give_item2 ( 30324 , 1 ) 
 else 
-say ( gameforge . spider_dungeon_3floor_boss . _270_say ) 
+say ( "[LC;6942]" ) 
 end 
 else 
 say_title ( mob_name ( 20011 ) ) 
-say ( gameforge . spider_dungeon_3floor_boss . _280_say ) 
+say ( "[LC;6943]" ) 
 end 

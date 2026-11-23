@@ -1,29 +1,29 @@
-if item . vnum >= 29101 and item . vnum < 29110 and item . get_socket ( 0 ) ~= item . get_value ( 2 ) then say_title ( gameforge . mining . _10_sayTitle ) 
-say ( gameforge . mining . _20_say ) 
- return end if item . vnum >= 29101 and item . vnum < 29110 and item . get_socket ( 0 ) == item . get_value ( 2 ) then say_title ( gameforge . mining . _10_sayTitle ) 
-say ( string . format ( gameforge . mining . _30_say , item . get_level ( ) ) ) 
+if item . vnum >= 29101 and item . vnum < 29110 and item . get_socket ( 0 ) ~= item . get_value ( 2 ) then say_title ( "[LC;5585]" ) 
+say ( "[LC;5586]" ) 
+ return end if item . vnum >= 29101 and item . vnum < 29110 and item . get_socket ( 0 ) == item . get_value ( 2 ) then say_title ( "[LC;5585]" ) 
+say ( string . format ( "[LC;5587;%s]" , item . get_level ( ) ) ) 
 if item . get_value ( 3 ) == 100 then 
-say_title ( gameforge . mining . _10_sayTitle ) 
-say ( gameforge . mining . _40_say ) 
+say_title ( "[LC;5585]" ) 
+say ( "[LC;5588]" ) 
 else 
-say_title ( gameforge . mining . _10_sayTitle ) 
-say ( string . format ( gameforge . mining . _50_say , 100 - item . get_value ( 3 ) ) ) 
+say_title ( "[LC;5585]" ) 
+say ( string . format ( "[LC;5589;%s]" , 100 - item . get_value ( 3 ) ) ) 
 end 
-local s = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+local s = select ( "[LC;2059]" , "[LC;2035]" ) 
 if s == 2 then 
-say_title ( gameforge . mining . _10_sayTitle ) 
-say ( gameforge . mining . _55_say ) 
+say_title ( "[LC;5585]" ) 
+say ( "[LC;5590]" ) 
 return 
 end 
 local f = __refine_pick ( item . get_cell ( ) ) 
 if f == 2 then 
-say_title ( gameforge . mining . _10_sayTitle ) 
-say ( gameforge . mining . _60_say ) 
+say_title ( "[LC;5585]" ) 
+say ( "[LC;5591]" ) 
 elseif f == 1 then 
-say_title ( gameforge . mining . _10_sayTitle ) 
-say ( gameforge . mining . _70_say ) 
+say_title ( "[LC;5585]" ) 
+say ( "[LC;5592]" ) 
 else 
-say_title ( gameforge . mining . _10_sayTitle ) 
-say ( gameforge . mining . _80_say ) 
+say_title ( "[LC;5585]" ) 
+say ( "[LC;5593]" ) 
 end 
  return end 

@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_18 . _20_sayTitle ) 
-say ( gameforge . subquest_18 . _210_say ) 
+say_title ( "[LC;7453]" ) 
+say ( "[LC;7454]" ) 
 set_state ( "come_back" ) 

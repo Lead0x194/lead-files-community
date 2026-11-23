@@ -3,17 +3,17 @@ if math . random ( 1 , 100 ) <= new_quest_lv22_dropProb2 then
 drop = true 
 pc . give_item2 ( new_quest_lv22_drop2 ) 
 if new_quest_lv22_neededAmountDrop1 == pc . count_item ( new_quest_lv22_drop1 ) and new_quest_lv22_neededAmountDrop2 == pc . count_item ( new_quest_lv22_drop2 ) then 
-notice_multiline ( gameforge . new_quest_lv22 . _061_notice , notice ) 
+notice_multiline ( "[LC;5711]" , notice ) 
 q . done ( ) 
 set_state ( "back_to_baekgo" ) 
 else 
 if new_quest_lv22_neededAmountDrop2 == pc . count_item ( new_quest_lv22_drop2 ) then 
-notice_multiline ( string . format ( gameforge . new_quest_lv22 . _056_notice , new_quest_lv22_neededAmountDrop1 - pc . count_item ( new_quest_lv22_drop1 ) ) , notice ) 
+notice_multiline ( string . format ( "[LC;5707;%s]" , new_quest_lv22_neededAmountDrop1 - pc . count_item ( new_quest_lv22_drop1 ) ) , notice ) 
 else 
-notice_multiline ( string . format ( gameforge . new_quest_lv22 . _060_notice , new_quest_lv22_neededAmountDrop2 - pc . count_item ( new_quest_lv22_drop2 ) ) , notice ) 
+notice_multiline ( string . format ( "[LC;5710;%s]" , new_quest_lv22_neededAmountDrop2 - pc . count_item ( new_quest_lv22_drop2 ) ) , notice ) 
 end 
 end 
 else 
-notice_multiline ( gameforge . new_quest_lv22 . _062_notice , notice ) 
+notice_multiline ( "[LC;5712]" , notice ) 
 end 
 end 

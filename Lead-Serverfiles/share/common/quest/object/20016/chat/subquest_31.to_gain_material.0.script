@@ -3,46 +3,46 @@ local copper = pc . count_item ( 50604 )
 local pearl = pc . count_item ( 50609 ) 
 local ebony = pc . count_item ( 50608 ) 
 if copper < 100 or pearl < 100 or ebony < 100 then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_31 . _160_say ) 
-local s = select ( gameforge . subquest_31 . _170_select , gameforge . subquest_31 . _180_select ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7823]" ) 
+local s = select ( "[LC;7824]" , "[LC;7825]" ) 
 if 2 == s then 
-say ( gameforge . subquest_31 . _190_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7826]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_31 . _200_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7827]" ) 
 return 
 end 
-say_title ( gameforge . subquest_09 . _50_sayTitle ) 
-say ( gameforge . subquest_31 . _210_say ) 
+say_title ( "[LC;7240]" ) 
+say ( "[LC;7829]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_31 . _220_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7830]" ) 
 end 
 if copper >= 100 and pearl >= 100 and ebony >= 100 then 
-say ( gameforge . subquest_31 . _230_say ) 
-say_reward ( gameforge . subquest_31 . _240_sayReward ) 
+say ( "[LC;7831]" ) 
+say_reward ( "[LC;7832]" ) 
 pc . give_exp2 ( 200000 ) 
 pc . remove_item ( 50604 , 100 ) 
 pc . remove_item ( 50609 , 100 ) 
 pc . remove_item ( 50608 , 100 ) 
-say_reward ( gameforge . subquest_31 . _250_sayReward ) 
+say_reward ( "[LC;7833]" ) 
 pc . change_money ( 20000 ) 
 if pc . job == 0 then 
 pc . give_item2 ( 11233 , 1 ) 
-say_reward ( gameforge . subquest_31 . _260_sayReward ) 
+say_reward ( "[LC;7834]" ) 
 elseif pc . job == 1 then 
 pc . give_item2 ( 11433 , 1 ) 
-say_reward ( gameforge . subquest_31 . _270_sayReward ) 
+say_reward ( "[LC;7835]" ) 
 elseif pc . job == 2 then 
 pc . give_item2 ( 11633 , 1 ) 
-say_reward ( gameforge . subquest_31 . _280_sayReward ) 
+say_reward ( "[LC;7836]" ) 
 elseif pc . job == 3 then 
 pc . give_item2 ( 11833 , 1 ) 
-say_reward ( gameforge . subquest_31 . _290_sayReward ) 
+say_reward ( "[LC;7837]" ) 
 end 
 clear_letter ( ) 
 set_state ( "__COMPLETE__" ) 

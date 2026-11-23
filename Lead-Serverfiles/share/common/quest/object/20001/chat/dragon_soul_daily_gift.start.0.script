@@ -2,23 +2,23 @@ local event_id = game . get_event_flag ( "ds_dg_id" )
 if pc . getqf ( "event_id" ) ~= event_id then 
 say_title ( mob_name ( 20001 ) ) 
 if pc . level < 50 then 
-say ( gameforge . dragon_soul_daily_gift . _020_say ) 
+say ( "[LC;783]" ) 
 return 
 elseif 0 == ds . is_qualified ( ) then 
-say ( gameforge . dragon_soul_daily_gift . _030_say ) 
+say ( "[LC;784]" ) 
 return 
 else 
-say ( gameforge . dragon_soul_daily_gift . _040_say ) 
+say ( "[LC;785]" ) 
 pc . setqf ( "event_id" , event_id ) 
 wait ( ) 
 end 
 end 
 say_title ( mob_name ( 20001 ) ) 
 if 0 == get_today_count ( "dragon_soul_daily_gift" , "gift" ) then 
-say ( gameforge . dragon_soul_daily_gift . _050_say ) 
+say ( "[LC;786]" ) 
 local gift_vnum = game . get_event_flag ( "ds_dg_item" ) 
 pc . give_item2 ( gift_vnum ) 
 inc_today_count ( "dragon_soul_daily_gift" , "gift" ) 
 else 
-say ( gameforge . dragon_soul_daily_gift . _060_say ) 
+say ( "[LC;787]" ) 
 end 

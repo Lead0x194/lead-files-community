@@ -1,5 +1,5 @@
 local s = number ( 1 , 100 ) 
 if s <= 5 and pc . count_item ( "30150" ) == 0 then 
-say ( gameforge . main_quest_lv55 . _230_say ) 
+say ( "[LC;4474]" ) 
 set_state ( "takepaper" ) 
 end 

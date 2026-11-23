@@ -1,10 +1,10 @@
 local count = pc . getqf ( "state" ) + 1 
 if count <= 10 then 
 pc . setqf ( "state" , count ) 
-q . set_counter ( gameforge . main_quest_lv12 . _65_counter , 10 - count ) 
+q . set_counter ( "[LC;4104]" , 10 - count ) 
 if count == 10 then 
-say_title ( gameforge . buy_fishrod . _210_sayTitle ) 
-say_reward ( gameforge . main_quest_lv12 . _70_sayReward ) 
+say_title ( "[LC;44]" ) 
+say_reward ( "[LC;4105]" ) 
 set_state ( "gotoboss2" ) 
 end 
 end 

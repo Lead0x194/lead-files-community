@@ -1,31 +1,31 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( "30136" ) >= 1 then 
-say_title ( gameforge . main_quest_lv32 . _510_sayTitle ) 
-say ( gameforge . subquest_38 . _140_say ) 
+say_title ( "[LC;4275]" ) 
+say ( "[LC;8039]" ) 
 pc . remove_item ( "30136" , 1 ) 
-say_reward ( gameforge . subquest_38 . _150_sayReward ) 
+say_reward ( "[LC;8040]" ) 
 pc . give_exp2 ( 1.5e+06 ) 
-say_reward ( gameforge . subquest_38 . _160_sayReward ) 
+say_reward ( "[LC;8041]" ) 
 pc . give_item2 ( 70038 ) 
-say_reward ( gameforge . subquest_38 . _170_sayReward ) 
+say_reward ( "[LC;8042]" ) 
 pc . change_money ( 35000 ) 
 set_state ( "COMPLETE" ) 
 clear_letter ( ) 
 return 
 else 
-say_title ( gameforge . main_quest_lv32 . _510_sayTitle ) 
-say ( gameforge . subquest_38 . _180_say ) 
-local s = select ( gameforge . subquest_38 . _190_select , gameforge . subquest_24 . _200_select ) 
+say_title ( "[LC;4275]" ) 
+say ( "[LC;8043]" ) 
+local s = select ( "[LC;8044]" , "[LC;7632]" ) 
 if 2 == s then 
-say ( gameforge . subquest_37 . _50_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;8028]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 1 == a then 
-say_title ( gameforge . main_quest_lv32 . _510_sayTitle ) 
-say ( gameforge . subquest_38 . _200_say ) 
+say_title ( "[LC;4275]" ) 
+say ( "[LC;8045]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . main_quest_lv32 . _510_sayTitle ) 
-say ( gameforge . subquest_38 . _210_say ) 
+say_title ( "[LC;4275]" ) 
+say ( "[LC;8047]" ) 
 end 
 end 

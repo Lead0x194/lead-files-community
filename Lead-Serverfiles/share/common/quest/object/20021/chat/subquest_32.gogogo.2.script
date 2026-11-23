@@ -1,6 +1,6 @@
 target . delete ( "__TARGET1__" ) 
-say_title ( gameforge . subquest_32 . _220_sayTitle ) 
-say ( gameforge . subquest_32 . _240_say ) 
+say_title ( "[LC;7859]" ) 
+say ( "[LC;7861]" ) 
 pc . give_item2 ( 30140 ) 
 pc . setqf ( "sil_done" , 3 ) 
 if pc . count_item ( 30141 ) > 0 and pc . count_item ( 30139 ) >= 100 then 

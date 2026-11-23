@@ -1,24 +1,24 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . subquest_49 . _30_sayTitle ) 
-say ( gameforge . subquest_49 . _40_say ) 
+say_title ( "[LC;8370]" ) 
+say ( "[LC;8381]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_49 . _30_sayTitle ) 
-say ( gameforge . subquest_49 . _50_say ) 
-local s = select ( gameforge . subquest_46 . _50_select , gameforge . subquest_46 . _60_select ) 
+say_title ( "[LC;8370]" ) 
+say ( "[LC;8388]" ) 
+local s = select ( "[LC;8269]" , "[LC;8270]" ) 
 if 2 == s then 
-say_title ( gameforge . subquest_49 . _30_sayTitle ) 
-say ( gameforge . subquest_49 . _60_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say_title ( "[LC;8370]" ) 
+say ( "[LC;8389]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . npc_talk . _680_sayTitle ) 
-say ( gameforge . subquest_49 . _70_say ) 
+say_title ( "[LC;6407]" ) 
+say ( "[LC;8390]" ) 
 return 
 end 
-say_title ( gameforge . subquest_49 . _30_sayTitle ) 
-say ( gameforge . subquest_49 . _80_say ) 
+say_title ( "[LC;8370]" ) 
+say ( "[LC;8391]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_49 . _30_sayTitle ) 
-say ( gameforge . subquest_49 . _90_say ) 
+say_title ( "[LC;8370]" ) 
+say ( "[LC;8392]" ) 
 set_state ( "ask_to_youhwarang" ) 

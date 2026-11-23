@@ -1,13 +1,13 @@
 target . delete ( "__TARGET5__" ) 
-say_title ( gameforge . new_quest_lv28 . _038_say_title ) 
+say_title ( "[LC;5782]" ) 
 if pc . count_item ( new_quest_lv28_drop1 ) >= new_quest_lv28_neededAmountDrop1 then 
-say ( gameforge . new_quest_lv28 . _042_say ) 
-say ( gameforge . new_quest_lv28 . _043_say ) 
+say ( "[LC;5785]" ) 
+say ( "[LC;5786]" ) 
 pc . remove_item ( new_quest_lv28_drop1 , pc . count_item ( new_quest_lv28_drop1 ) ) 
 set_state ( "back_to_ahyu" ) 
 return 
 else 
-say ( gameforge . new_quest_lv28 . _044_say ) 
-say ( gameforge . new_quest_lv28 . _045_say_reward ) 
+say ( "[LC;5787]" ) 
+say ( "[LC;5788]" ) 
 set_state ( "hunting" ) 
 end 

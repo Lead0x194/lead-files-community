@@ -1,6 +1,6 @@
 local cur_kill_count = pc . getqf ( "kill_count" ) + 1 
 pc . setqf ( "kill_count" , cur_kill_count ) 
 if cur_kill_count >= number ( 10 , 50 ) then 
-send_letter ( gameforge . subquest_44 . _400_sendLetter ) 
+send_letter ( "[LC;8214]" ) 
 set_state ( "report_girl_lie" ) 
 end 

@@ -2,7 +2,7 @@ if pc . getqf ( "collect_count" ) >= 1 and math . random ( 1 , 5 ) < 4 then
 local index = pc . getqf ( "collect_count" ) - 1 
 pc . setqf ( "collect_count" , index ) 
 pc . give_item2 ( 30173 ) 
-notice_multiline ( gameforge . new_quest_lv17 . _074_notice , notice ) 
+notice_multiline ( "[LC;5652]" , notice ) 
 if pc . getqf ( "collect_count" ) <= 0 then 
 q . done ( ) 
 set_state ( "skins_to_wonda" ) 

@@ -1,11 +1,11 @@
-say_title ( gameforge . check_collect_reward . _020_say_title ) 
-say ( gameforge . check_collect_reward . _030_say ) 
+say_title ( "[LC;96]" ) 
+say ( "[LC;97]" ) 
 wait ( "" ) 
 say_pc_name ( ) 
-say ( gameforge . check_collect_reward . _040_say ) 
+say ( "[LC;98]" ) 
 wait ( "" ) 
-say_title ( gameforge . check_collect_reward . _020_say_title ) 
-say ( gameforge . check_collect_reward . _050_say ) 
+say_title ( "[LC;96]" ) 
+say ( "[LC;99]" ) 
 local value = "557528158" 
 local a = get_quest_state ( "collect_quest_lv30" ) 
 local b = get_quest_state ( "collect_quest_lv40" ) 
@@ -92,5 +92,5 @@ elseif reward == 3 then
 affect . add_collect ( apply . ATT_GRADE_BONUS , 50 , 60 * 60 * 24 * 365 * 60 ) 
 end 
 end 
-say_title ( gameforge . check_collect_reward . _020_say_title ) 
-say ( gameforge . check_collect_reward . _060_say ) 
+say_title ( "[LC;96]" ) 
+say ( "[LC;100]" ) 

@@ -1,10 +1,10 @@
 say_title ( mob_name ( 20075 ) ) 
-say ( gameforge . deviltower_zone . _190_say ) 
+say ( "[LC;686]" ) 
 wait ( ) 
 if pc . level >= 75 then 
 say_title ( mob_name ( 20075 ) ) 
-say ( gameforge . deviltower_zone . _200_say ) 
-local s = select ( gameforge . deviltower_zone . _210_select , gameforge . deviltower_zone . _220_select ) 
+say ( "[LC;687]" ) 
+local s = select ( "[LC;689]" , "[LC;690]" ) 
 if s == 3 then 
 pc . warp ( 590500 , 110900 ) 
 return 
@@ -18,7 +18,7 @@ d . purge ( )
 return 
 end 
 say_title ( mob_name ( 20075 ) ) 
-say ( gameforge . deviltower_zone . _230_say ) 
+say ( "[LC;691]" ) 
 wait ( ) 
 pc . warp ( 590500 , 110500 ) 
 return 

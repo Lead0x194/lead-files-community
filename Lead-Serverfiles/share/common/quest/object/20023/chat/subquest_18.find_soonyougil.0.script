@@ -1,18 +1,18 @@
 target . delete ( "__TARGET2_" ) 
-say_title ( gameforge . buy_fishrod . _210_sayTitle ) 
-say ( gameforge . subquest_18 . _140_say ) 
+say_title ( "[LC;44]" ) 
+say ( "[LC;7444]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_18 . _150_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7445]" ) 
 local s = select ( 
-gameforge . subquest_18 . _153_select , 
-gameforge . subquest_18 . _157_select ) 
+"[LC;7446]" , 
+"[LC;7447]" ) 
 if 1 == s then 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_18 . _160_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7448]" ) 
 set_state ( "report_true" ) 
 elseif 2 == s then 
-say_title ( gameforge . subquest_05 . _30_sayTitle ) 
-say ( gameforge . subquest_18 . _170_say ) 
+say_title ( "[LC;7093]" ) 
+say ( "[LC;7449]" ) 
 set_state ( "report_false" ) 
 end 

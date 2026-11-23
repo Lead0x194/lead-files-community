@@ -1,29 +1,29 @@
 target . delete ( "__TARGET__" ) 
 if pc . count_item ( "30162" ) >= 100 then 
-say_title ( gameforge . subquest_41 . _150_sayTitle ) 
-say ( gameforge . subquest_41 . _160_say ) 
+say_title ( "[LC;8143]" ) 
+say ( "[LC;8144]" ) 
 wait ( ) 
-say_title ( gameforge . subquest_41 . _150_sayTitle ) 
-say ( gameforge . subquest_41 . _170_say ) 
+say_title ( "[LC;8143]" ) 
+say ( "[LC;8145]" ) 
 pc . remove_item ( "30162" , 100 ) 
-say_reward ( gameforge . subquest_41 . _180_sayReward ) 
+say_reward ( "[LC;8146]" ) 
 pc . give_exp2 ( 2.1e+06 ) 
 set_quest_state ( "levelup" , "run" ) 
-say_reward ( gameforge . subquest_30 . _270_sayReward ) 
+say_reward ( "[LC;7806]" ) 
 pc . change_money ( 20000 ) 
 clear_letter ( ) 
 set_state ( "COMPLETE" ) 
 return 
 else 
-say_title ( gameforge . subquest_41 . _150_sayTitle ) 
-say ( gameforge . subquest_41 . _190_say ) 
-local s = select ( gameforge . subquest_26 . _330_select , gameforge . find_brother_article . _170_select ) 
+say_title ( "[LC;8143]" ) 
+say ( "[LC;8147]" ) 
+local s = select ( "[LC;7727]" , "[LC;939]" ) 
 if 2 == s then 
-say_title ( gameforge . subquest_41 . _150_sayTitle ) 
-say ( gameforge . subquest_41 . _200_say ) 
+say_title ( "[LC;8143]" ) 
+say ( "[LC;8148]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
-say_title ( gameforge . subquest_41 . _150_sayTitle ) 
-say ( gameforge . subquest_41 . _210_say ) 
+say_title ( "[LC;8143]" ) 
+say ( "[LC;8150]" ) 
 end 

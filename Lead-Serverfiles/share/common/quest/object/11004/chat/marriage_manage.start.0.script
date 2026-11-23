@@ -3,14 +3,14 @@ return
 end 
 local u_vid = marriage . find_married_vid ( ) 
 if u_vid == 0 or not npc . is_near_vid ( u_vid , 10 ) then 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _690_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5550]" ) 
 return 
 end 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _700_say ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5551]" ) 
 local MONEY_NEED_FOR_ONE = 500000 
-local s = select ( gameforge . horse_upgrade2 . _180_select , gameforge . marriage_manage . _710_select ) 
+local s = select ( "[LC;1732]" , "[LC;5553]" ) 
 if s == 1 then 
 local m_enough_money = pc . gold > MONEY_NEED_FOR_ONE 
 local m_have_ring = pc . countitem ( 70302 ) > 0 
@@ -19,38 +19,38 @@ local u_enough_money = pc . gold > MONEY_NEED_FOR_ONE
 local u_have_ring = pc . countitem ( 70302 ) > 0 
 pc . select ( old ) 
 if not m_have_ring then 
-say ( gameforge . marriage_manage . _720_say ) 
+say ( "[LC;5554]" ) 
 return ; 
 end 
 if not u_have_ring then 
-say ( gameforge . marriage_manage . _730_say ) 
+say ( "[LC;5555]" ) 
 return ; 
 end 
 if not m_enough_money then 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _740_say ) 
-say_reward ( string . format ( gameforge . marriage_manage . _750_sayReward , MONEY_NEED_FOR_ONE / 10000 ) ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5556]" ) 
+say_reward ( string . format ( "[LC;5557;%s]" , MONEY_NEED_FOR_ONE / 10000 ) ) 
 return ; 
 end 
 if not u_enough_money then 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _740_say ) 
-say_reward ( gameforge . marriage_manage . _760_sayReward ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5556]" ) 
+say_reward ( "[LC;5558]" ) 
 return ; 
 end 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _770_say ) 
-local c = select ( gameforge . horse_upgrade2 . _180_select , gameforge . marriage_manage . _780_select ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5559]" ) 
+local c = select ( "[LC;1732]" , "[LC;5560]" ) 
 if 2 == c then 
 say_pc_name ( ) 
-say ( gameforge . marriage_manage . _790_say ) 
+say ( "[LC;5561]" ) 
 wait ( ) 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _800_say ) 
-say_reward ( gameforge . marriage_manage . _810_sayReward ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5562]" ) 
+say_reward ( "[LC;5564]" ) 
 return 
 end 
-local ok_sign = confirm ( u_vid , pc . name .. gameforge . marriage_manage . _815_confirm_chat , 30 ) 
+local ok_sign = confirm ( u_vid , pc . name .. "[LC;5565]" , 30 ) 
 if ok_sign == CONFIRM_OK then 
 local m_enough_money = pc . gold > MONEY_NEED_FOR_ONE 
 local m_have_ring = pc . countitem ( 70302 ) > 0 
@@ -65,18 +65,18 @@ local old = pc . select ( u_vid )
 pc . removeitem ( 70302 , 1 ) 
 pc . change_money ( - MONEY_NEED_FOR_ONE ) 
 pc . select ( old ) 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _820_say ) 
-say_reward ( gameforge . marriage_manage . _810_sayReward ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5566]" ) 
+say_reward ( "[LC;5564]" ) 
 marriage . remove ( ) 
 else 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _830_say ) 
-say_reward ( gameforge . marriage_manage . _840_sayReward ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5567]" ) 
+say_reward ( "[LC;5568]" ) 
 end 
 else 
-say_title ( gameforge . find_squareguard . _30_sayTitle ) 
-say ( gameforge . marriage_manage . _850_say ) 
-say_reward ( gameforge . marriage_manage . _840_sayReward ) 
+say_title ( "[LC;1016]" ) 
+say ( "[LC;5569]" ) 
+say_reward ( "[LC;5568]" ) 
 end 
 end 

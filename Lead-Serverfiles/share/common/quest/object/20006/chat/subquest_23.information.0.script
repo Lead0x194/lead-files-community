@@ -1,23 +1,23 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . find_brother_article . _20_sayTitle ) 
-say ( gameforge . subquest_23 . _30_say ) 
+say_title ( "[LC;944]" ) 
+say ( "[LC;7604]" ) 
 wait ( ) 
-say_title ( gameforge . find_brother_article . _20_sayTitle ) 
-say ( gameforge . subquest_23 . _40_say ) 
-local s = select ( gameforge . find_brother_article . _90_select , gameforge . subquest_23 . _50_select ) 
+say_title ( "[LC;944]" ) 
+say ( "[LC;7615]" ) 
+local s = select ( "[LC;971]" , "[LC;7616]" ) 
 if 2 == s then 
-say ( gameforge . subquest_23 . _60_say ) 
-local a = select ( gameforge . locale . guild . yes , gameforge . locale . guild . no ) 
+say ( "[LC;7617]" ) 
+local a = select ( "[LC;2059]" , "[LC;2035]" ) 
 if 2 == a then 
-say_title ( gameforge . find_brother_article . _20_sayTitle ) 
-say ( gameforge . subquest_23 . _70_say ) 
+say_title ( "[LC;944]" ) 
+say ( "[LC;7618]" ) 
 return 
 end 
 say_pc_name ( ) 
-say ( gameforge . subquest_23 . _80_say ) 
+say ( "[LC;7619]" ) 
 set_state ( "__GIVEUP__" ) 
 return 
 end 
 say_pc_name ( ) 
-say ( gameforge . subquest_23 . _90_say ) 
+say ( "[LC;7620]" ) 
 set_state ( "to_youhwan" ) 

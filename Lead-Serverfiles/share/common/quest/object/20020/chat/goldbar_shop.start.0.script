@@ -1,40 +1,40 @@
 if pc . get_level ( ) < 30 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _30_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1243]" ) 
 wait ( ) 
-say_title ( gameforge . buy_fishrod . _210_sayTitle ) 
-say_reward ( gameforge . goldbar . _40_sayReward ) 
+say_title ( "[LC;44]" ) 
+say_reward ( "[LC;1251]" ) 
 return 
 end 
 if game . get_event_flag ( "gold_trade_enable" ) == 0 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _50_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1252]" ) 
 wait ( ) 
-say_title ( gameforge . buy_fishrod . _210_sayTitle ) 
-say_reward ( gameforge . goldbar . _60_sayReward ) 
+say_title ( "[LC;44]" ) 
+say_reward ( "[LC;1253]" ) 
 return 
 end 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _70_say ) 
-local s = select ( gameforge . goldbar . _80_select , gameforge . goldbar . _90_select ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1254]" ) 
+local s = select ( "[LC;1255]" , "[LC;1256]" ) 
 if s == 1 then 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _100_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1218]" ) 
 wait ( ) 
 local interval = game . get_event_flag ( "gold_trade_cycle" ) 
 local unit = "" 
 if interval <= 0 then interval = 360 end 
 if interval >= 60 then 
 interval = interval / 60 
-unit = gameforge . goldbar . _104_say math . ceil ( interval ) 
+unit = "[LC;1219]" math . ceil ( interval ) 
 else 
-unit = gameforge . goldbar . _108_say end 
+unit = "[LC;1220]" end 
 if interval < 1 then interval = 1 end 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( string . format ( gameforge . goldbar . _110_say , interval , unit ) ) 
-say ( gameforge . goldbar . _120_say ) 
+say_title ( "[LC;1232]" ) 
+say ( string . format ( "[LC;1222;%s;%s]" , interval , unit ) ) 
+say ( "[LC;1223]" ) 
 else 
-say_title ( gameforge . goldbar . _20_sayTitle ) 
-say ( gameforge . goldbar . _130_say ) 
+say_title ( "[LC;1232]" ) 
+say ( "[LC;1224]" ) 
 end 
 setstate ( "trade_goldbar" ) 

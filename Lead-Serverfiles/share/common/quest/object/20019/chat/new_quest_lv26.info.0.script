@@ -1,21 +1,21 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . new_quest_lv26 . _020_say_title ) 
-say ( gameforge . new_quest_lv26 . _025_say ) 
-local doquest = select ( gameforge . subquest_06 . _40_select , gameforge . subquest_12 . _50_select , gameforge . new_quest_lv75 . _290_2_select ) 
+say_title ( "[LC;5736]" ) 
+say ( "[LC;5739]" ) 
+local doquest = select ( "[LC;7148]" , "[LC;7304]" , "[LC;6200]" ) 
 if doquest == 1 then 
 set_state ( "find_nakajima" ) 
 elseif doquest == 3 then 
-say ( gameforge . subquest_06 . _60_say ) 
-local abortquest = select ( gameforge . subquest_06 . _70_select , gameforge . subquest_06 . _80_select ) 
+say ( "[LC;7170]" ) 
+local abortquest = select ( "[LC;7173]" , "[LC;7174]" ) 
 if abortquest == 1 then 
 set_state ( "__GIVEUP__" ) 
 else 
-say_title ( gameforge . new_quest_lv26 . _020_say_title ) 
-say ( gameforge . subquest_11 . _80_say ) 
+say_title ( "[LC;5736]" ) 
+say ( "[LC;7288]" ) 
 return 
 end 
 else 
-say_title ( gameforge . new_quest_lv26 . _020_say_title ) 
-say ( gameforge . subquest_11 . _80_say ) 
+say_title ( "[LC;5736]" ) 
+say ( "[LC;7288]" ) 
 return 
 end 

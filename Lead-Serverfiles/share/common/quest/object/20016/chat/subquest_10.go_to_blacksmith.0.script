@@ -1,4 +1,4 @@
 target . delete ( "__TARGET__" ) 
-say_title ( gameforge . blacksmith . _20_sayTitle ) 
-say ( gameforge . subquest_10 . _120_say ) 
+say_title ( "[LC;27]" ) 
+say ( "[LC;7248]" ) 
 set_state ( "ask_to_weaponshop" ) 
