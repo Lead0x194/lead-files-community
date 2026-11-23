@@ -56,8 +56,8 @@ enum
 	HEADER_CG_MESSENGER				= 67,
 
 	HEADER_CG_MALL_CHECKOUT			= 69,
-	HEADER_CG_SAFEBOX_CHECKIN			= 70,	// 아이템을 창고에 넣는다.
-	HEADER_CG_SAFEBOX_CHECKOUT			= 71,	// 아이템을 창고로 부터 빼온다.
+	HEADER_CG_SAFEBOX_CHECKIN			= 70,	// puts an item into the safebox.
+	HEADER_CG_SAFEBOX_CHECKOUT			= 71,	// takes an item out of the safebox.
 
 	HEADER_CG_PARTY_INVITE			= 72,
 	HEADER_CG_PARTY_INVITE_ANSWER		= 73,
@@ -275,7 +275,7 @@ enum
 	HEADER_GG_NOTICE				= 4,
 	HEADER_GG_SHUTDOWN				= 5,
 	HEADER_GG_GUILD				= 6,
-	HEADER_GG_DISCONNECT			= 7,	// 누군가의 접속을 강제로 끊을 때
+	HEADER_GG_DISCONNECT			= 7,	// used to force-disconnect someone
 	HEADER_GG_SHOUT				= 8,
 	HEADER_GG_SETUP				= 9,
 	HEADER_GG_MESSENGER_ADD                     = 10,
@@ -419,8 +419,8 @@ typedef struct packet_messenger_login
 typedef struct SPacketGGFindPosition
 {
 	BYTE header;
-	DWORD dwFromPID; // 저 위치로 워프하려는 사람
-	DWORD dwTargetPID; // 찾는 사람
+	DWORD dwFromPID; // the player who wants to warp to that position
+	DWORD dwTargetPID; // the player being searched for
 } TPacketGGFindPosition;
 
 typedef struct SPacketGGWarpCharacter
@@ -461,14 +461,14 @@ typedef struct SPacketGGBlockChat
 	int32_t	lBlockDuration;
 } TPacketGGBlockChat;
 
-/* 클라이언트 측에서 보내는 패킷 */
+/* Packets sent by the client */
 
 typedef struct command_text
 {
 	BYTE	bHeader;
 } TPacketCGText;
 
-/* 로그인 (1) */
+/* Login (1) */
 typedef struct command_handshake
 {
 	BYTE	bHeader;
@@ -545,7 +545,7 @@ typedef struct command_player_create_success
 	TSimplePlayer	player;
 } TPacketGCCharacterCreateSuccess;
 
-// 공격
+// Attack
 typedef struct command_attack
 {
 	BYTE	bHeader;
@@ -567,7 +567,7 @@ enum EMoveFuncType
 	FUNC_SKILL = 0x80,
 };
 
-// 이동
+// Move
 typedef struct command_move
 {
 	BYTE	bHeader;
@@ -586,22 +586,22 @@ typedef struct command_sync_position_element
 	int32_t	lY;
 } TPacketCGSyncPositionElement;
 
-// 위치 동기화
-typedef struct command_sync_position	// 가변 패킷
+// Position sync
+typedef struct command_sync_position	// variable-length packet
 {
 	BYTE	bHeader;
 	WORD	wSize;
 } TPacketCGSyncPosition;
 
-/* 채팅 (3) */
-typedef struct command_chat	// 가변 패킷
+/* Chat (3) */
+typedef struct command_chat	// variable-length packet
 {
 	BYTE	header;
 	WORD	size;
 	BYTE	type;
 } TPacketCGChat;
 
-/* 귓속말 */
+/* Whisper */
 typedef struct command_whisper
 {
 	BYTE	bHeader;
@@ -748,7 +748,7 @@ typedef struct command_quest_confirm
 } TPacketCGQuestConfirm;
 
 /*
- * 서버 측에서 보내는 패킷 
+ * Packets sent by the server
  */
 typedef struct packet_quest_confirm
 {
@@ -872,7 +872,7 @@ typedef struct packet_add_char
 	BYTE	bAttackSpeed;
 
 	BYTE	bStateFlag;
-	DWORD	dwAffectFlag[2];	// 효과
+	DWORD	dwAffectFlag[2];	// effects
 } TPacketGCCharacterAdd;
 
 typedef struct packet_char_additional_info
@@ -934,7 +934,7 @@ typedef struct packet_del_char
 	DWORD	id;
 } TPacketGCCharacterDelete;
 
-typedef struct packet_chat	// 가변 패킷
+typedef struct packet_chat	// variable-length packet
 {
 	BYTE	header;
 	WORD	size;
@@ -943,7 +943,7 @@ typedef struct packet_chat	// 가변 패킷
 	BYTE	bEmpire;
 } TPacketGCChat;
 
-typedef struct packet_whisper	// 가변 패킷
+typedef struct packet_whisper	// variable-length packet
 {
 	BYTE	bHeader;
 	WORD	wSize;
@@ -1167,7 +1167,7 @@ typedef struct packet_shop_start
 	struct packet_shop_item	items[SHOP_HOST_ITEM_MAX_NUM];
 } TPacketGCShopStart;
 
-typedef struct packet_shop_start_ex // 다음에 TSubPacketShopTab* shop_tabs 이 따라옴.
+typedef struct packet_shop_start_ex // followed by TSubPacketShopTab* shop_tabs.
 {
 	typedef struct sub_packet_shop_tab 
 	{
@@ -1190,7 +1190,7 @@ typedef struct packet_shop_update_price
 	GoldType iPrice;
 } TPacketGCShopUpdatePrice;
 
-typedef struct packet_shop	// 가변 패킷
+typedef struct packet_shop	// variable-length packet
 {
 	BYTE        header;
 	WORD	size; 
@@ -1275,7 +1275,7 @@ typedef struct packet_move
 	DWORD		dwDuration;
 } TPacketGCMove;
 
-// 소유권
+// Ownership
 typedef struct packet_ownership
 {
 	BYTE		bHeader;
@@ -1283,7 +1283,7 @@ typedef struct packet_ownership
 	DWORD		dwVictimVID;
 } TPacketGCOwnership;
 
-// 위치 동기화 패킷의 bCount 만큼 붙는 단위
+// Unit appended bCount times to the position sync packet
 typedef struct packet_sync_position_element
 {
 	DWORD	dwVID;
@@ -1291,11 +1291,11 @@ typedef struct packet_sync_position_element
 	int32_t	lY;
 } TPacketGCSyncPositionElement;
 
-// 위치 동기화
-typedef struct packet_sync_position	// 가변 패킷
+// Position sync
+typedef struct packet_sync_position	// variable-length packet
 {
 	BYTE	bHeader;
-	WORD	wSize;	// 개수 = (wSize - sizeof(TPacketGCSyncPosition)) / sizeof(TPacketGCSyncPositionElement) 
+	WORD	wSize;	// count = (wSize - sizeof(TPacketGCSyncPosition)) / sizeof(TPacketGCSyncPositionElement)
 } TPacketGCSyncPosition;
 
 typedef struct packet_fly
@@ -1330,7 +1330,7 @@ typedef struct packet_shoot
 typedef struct packet_duel_start
 {
 	BYTE	header;
-	WORD	wSize;	// DWORD가 몇개? 개수 = (wSize - sizeof(TPacketGCPVPList)) / 4
+	WORD	wSize;	// DWORD count; count = (wSize - sizeof(TPacketGCPVPList)) / 4
 } TPacketGCDuelStart;
 
 enum EPVPModes
@@ -1346,7 +1346,7 @@ typedef struct packet_pvp
 	BYTE        bHeader;
 	DWORD       dwVIDSrc;
 	DWORD       dwVIDDst;
-	BYTE        bMode;	// 0 이면 끔, 1이면 켬
+	BYTE        bMode;	// 0 = off, 1 = on
 } TPacketGCPvp;
 
 typedef struct command_use_skill
@@ -1687,7 +1687,7 @@ typedef struct packet_guild
 
 typedef struct packet_guild_sub_grade
 {
-	char grade_name[GUILD_GRADE_NAME_MAX_LEN+1]; // 8+1 길드장, 길드원 등의 이름
+	char grade_name[GUILD_GRADE_NAME_MAX_LEN+1]; // 8+1 names such as guild leader, guild member, etc.
 	BYTE auth_flag;
 } TPacketGCGuildSubGrade;
 
@@ -1784,7 +1784,7 @@ typedef struct packet_mark_idxlist
 	BYTE    header;
 	DWORD	bufSize;
 	WORD	count;
-	//뒤에 size * (WORD + WORD)만큼 데이터 붙음
+	//followed by size * (WORD + WORD) bytes of data
 } TPacketGCMarkIdxlist;
 
 typedef struct packet_mark_block
@@ -1793,7 +1793,7 @@ typedef struct packet_mark_block
 	DWORD	bufSize;
 	BYTE	imgIdx;
 	DWORD	count;
-	// 뒤에 64 x 48 x 픽셀크기(4바이트) = 12288만큼 데이터 붙음
+	// followed by 64 x 48 x pixel size (4 bytes) = 12288 bytes of data
 } TPacketGCMarkBlock;
 
 typedef struct command_symbol_upload
@@ -1954,8 +1954,8 @@ typedef struct SPacketGCRefineInformation
 	DWORD	src_vnum;
 	DWORD	result_vnum;
 	BYTE	material_count;
-	int		cost; // 소요 비용
-	int		prob; // 확률
+	int		cost; // cost
+	int		prob; // probability
 	TRefineMaterial materials[REFINE_MATERIAL_MAX_NUM];
 } TPacketGCRefineInformation;
 
@@ -2232,7 +2232,7 @@ typedef struct SPacketGCSpecificEffect
 	char effect_file[MAX_EFFECT_FILE_NAME];
 } TPacketGCSpecificEffect;
 
-// 용혼석
+// Dragon soul stone
 enum EDragonSoulRefineWindowRefineType
 {
 	DragonSoulRefineWindow_UPGRADE,

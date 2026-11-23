@@ -41,8 +41,8 @@ namespace building
 		long	lNPCX;
 		long	lNPCY;
 
-		DWORD	dwGroupVnum; // 같은 그룹은 하나만 건설가능
-		DWORD	dwDependOnGroupVnum; // 지어져 있어야하는 그룹
+		DWORD	dwGroupVnum; // only one building of the same group can be built
+		DWORD	dwDependOnGroupVnum; // group that must already be built
 	} TObjectProto;
 
 	typedef struct SObject
