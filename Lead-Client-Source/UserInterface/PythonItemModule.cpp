@@ -698,6 +698,7 @@ void initItem()
 	PyModule_AddIntConstant(poModule, "ITEM_ANTIFLAG_STACK",		CItemData::ITEM_ANTIFLAG_STACK);
 	PyModule_AddIntConstant(poModule, "ITEM_ANTIFLAG_MYSHOP",		CItemData::ITEM_ANTIFLAG_MYSHOP);
 
+	PyModule_AddIntConstant(poModule, "ITEM_FLAG_STACKABLE",		CItemData::ITEM_FLAG_STACKABLE);
 	PyModule_AddIntConstant(poModule, "ITEM_FLAG_RARE",				CItemData::ITEM_FLAG_RARE);
 	PyModule_AddIntConstant(poModule, "ITEM_FLAG_UNIQUE",			CItemData::ITEM_FLAG_UNIQUE);
 	PyModule_AddIntConstant(poModule, "ITEM_FLAG_CONFIRM_WHEN_USE",	CItemData::ITEM_FLAG_CONFIRM_WHEN_USE);

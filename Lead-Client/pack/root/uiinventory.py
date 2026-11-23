@@ -766,6 +766,9 @@ class InventoryWindow(ui.ScriptWindow):
 		if srcItemSlotPos == dstItemSlotPos:
 			return
 	         	
+		elif self.__IsMoveTarget(srcItemSlotPos, dstItemSlotPos):
+			self.__SendMoveItemPacket(srcItemSlotPos, dstItemSlotPos, 0)
+
 		elif item.IsRefineScroll(srcItemVID):
 			self.RefineItem(srcItemSlotPos, dstItemSlotPos)
 			self.wndItem.SetUseMode(False)
@@ -951,6 +954,8 @@ class InventoryWindow(ui.ScriptWindow):
 				attachedSlotPos = mouseModule.mouseController.GetAttachedSlotNumber()
 				attachedItemVNum = mouseModule.mouseController.GetAttachedItemIndex()
 				
+				self.wndItem.SetUseMode(self.__IsUsableItemToItem(attachedItemVNum, attachedSlotPos) and not self.__IsMoveTarget(attachedSlotPos, overSlotPosGlobal))
+
 				if self.__CanUseSrcItemToDstItem(attachedItemVNum, attachedSlotPos, overSlotPosGlobal):
 					self.wndItem.SetUsableItem(True)
 					self.ShowToolTip(overSlotPosGlobal)
@@ -958,6 +963,14 @@ class InventoryWindow(ui.ScriptWindow):
 				
 		self.ShowToolTip(overSlotPosGlobal)
 
+
+	def __IsMoveTarget(self, srcSlotPos, dstSlotPos):
+		"Its own slot or the same stackable item: dropping moves or stacks the item instead of using it"
+
+		if srcSlotPos == dstSlotPos:
+			return True
+
+		return player.GetItemIndex(srcSlotPos) == player.GetItemIndex(dstSlotPos) and player.GetItemFlags(dstSlotPos) & item.ITEM_FLAG_STACKABLE
 
 	def __IsUsableItemToItem(self, srcItemVNum, srcSlotPos):
 		"Is this an item that can be used on another item?"
