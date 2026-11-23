@@ -221,6 +221,21 @@ PyObject * systemIsShowDamage(PyObject * poSelf, PyObject * poArgs)
 	return Py_BuildValue("i", CPythonSystem::Instance().IsShowDamage());
 }
 
+PyObject * systemIsShowLanguageFlag(PyObject * poSelf, PyObject * poArgs)
+{
+	return Py_BuildValue("i", CPythonSystem::Instance().IsShowLanguageFlag());
+}
+
+PyObject * systemSetShowLanguageFlag(PyObject * poSelf, PyObject * poArgs)
+{
+	int iFlag;
+	if (!PyTuple_GetInteger(poArgs, 0, &iFlag))
+		return Py_BuildException();
+
+	CPythonSystem::Instance().SetShowLanguageFlag(iFlag);
+	return Py_BuildNone();
+}
+
 PyObject * systemIsShowSalesText(PyObject * poSelf, PyObject * poArgs)
 {
 	return Py_BuildValue("i", CPythonSystem::Instance().IsShowSalesText());
@@ -422,6 +437,8 @@ void initsystem()
 
 		{ "SetShowSalesTextFlag",		systemSetShowSalesTextFlag,		METH_VARARGS },
 		{ "IsShowSalesText",			systemIsShowSalesText,			METH_VARARGS },
+		{ "IsShowLanguageFlag",			systemIsShowLanguageFlag,		METH_VARARGS },
+		{ "SetShowLanguageFlag",		systemSetShowLanguageFlag,		METH_VARARGS },
 
 		{ "GetShadowLevel",				systemGetShadowLevel,			METH_VARARGS },
 		{ "SetShadowLevel",				systemSetShadowLevel,			METH_VARARGS },

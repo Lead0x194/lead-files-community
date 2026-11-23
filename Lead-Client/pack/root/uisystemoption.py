@@ -69,6 +69,7 @@ class OptionDialog(ui.ScriptWindow):
 			self.ctrlSoundVolume = GetObject("sound_volume_controller")			
 			self.cameraModeButtonList.append(GetObject("camera_short"))
 			self.cameraModeButtonList.append(GetObject("camera_long"))
+			self.languageFlagButtonList = [GetObject("language_flag_off"), GetObject("language_flag_on")]
 			self.fogModeButtonList.append(GetObject("fog_level0"))
 			self.fogModeButtonList.append(GetObject("fog_level1"))
 			self.fogModeButtonList.append(GetObject("fog_level2"))
@@ -101,6 +102,9 @@ class OptionDialog(ui.ScriptWindow):
 
 		self.cameraModeButtonList[0].SAFE_SetEvent(self.__OnClickCameraModeShortButton)
 		self.cameraModeButtonList[1].SAFE_SetEvent(self.__OnClickCameraModeLongButton)
+		self.languageFlagButtonList[0].SAFE_SetEvent(self.__SetLanguageFlag, 0)
+		self.languageFlagButtonList[1].SAFE_SetEvent(self.__SetLanguageFlag, 1)
+		self.__ClickRadioButton(self.languageFlagButtonList, systemSetting.IsShowLanguageFlag())
 
 		self.fogModeButtonList[0].SAFE_SetEvent(self.__OnClickFogModeLevel0Button)
 		self.fogModeButtonList[1].SAFE_SetEvent(self.__OnClickFogModeLevel1Button)
@@ -191,6 +195,10 @@ class OptionDialog(ui.ScriptWindow):
 	def __SetFogLevel(self, index):
 		constInfo.SET_FOG_LEVEL_INDEX(index)
 		self.__ClickRadioButton(self.fogModeButtonList, index)
+
+	def __SetLanguageFlag(self, flag):
+		systemSetting.SetShowLanguageFlag(flag)
+		self.__ClickRadioButton(self.languageFlagButtonList, flag)
 
 	def __OnClickCameraModeShortButton(self):
 		self.__SetCameraMode(0)

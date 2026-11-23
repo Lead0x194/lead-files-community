@@ -303,6 +303,7 @@ void CPythonSystem::SetDefaultConfig()
 	m_Config.bAlwaysShowName	= DEFAULT_VALUE_ALWAYS_SHOW_NAME;
 	m_Config.bShowDamage		= true;
 	m_Config.bShowSalesText		= true;
+	m_Config.bShowLanguageFlag	= true;
 }
 
 bool CPythonSystem::IsWindowed()
@@ -338,6 +339,16 @@ bool CPythonSystem::IsShowDamage()
 void CPythonSystem::SetShowDamageFlag(int iFlag)
 {
 	m_Config.bShowDamage = iFlag == 1 ? true : false;
+}
+
+bool CPythonSystem::IsShowLanguageFlag()
+{
+	return m_Config.bShowLanguageFlag;
+}
+
+void CPythonSystem::SetShowLanguageFlag(int iFlag)
+{
+	m_Config.bShowLanguageFlag = iFlag == 1 ? true : false;
 }
 
 bool CPythonSystem::IsShowSalesText()
@@ -450,6 +461,8 @@ bool CPythonSystem::LoadConfig()
 			m_Config.bAlwaysShowName = atoi(value) == 1 ? true : false;
 		else if (!_stricmp(command, "SHOW_DAMAGE"))
 			m_Config.bShowDamage = atoi(value) == 1 ? true : false;
+		else if (!_stricmp(command, "SHOW_LANGUAGE_FLAG"))
+			m_Config.bShowLanguageFlag = atoi(value) == 1 ? true : false;
 		else if (!_stricmp(command, "SHOW_SALESTEXT"))
 			m_Config.bShowSalesText = atoi(value) == 1 ? true : false;
 	}
@@ -526,6 +539,8 @@ bool CPythonSystem::SaveConfig()
 	fprintf(fp, "SOFTWARE_TILING		%d\n", m_Config.bSoftwareTiling);
 	fprintf(fp, "SHADOW_LEVEL			%d\n", m_Config.iShadowLevel);
 	fprintf(fp, "LANGUAGE			%s\n", LocaleService_GetLocaleName());
+	if (m_Config.bShowLanguageFlag == 0)
+		fprintf(fp, "SHOW_LANGUAGE_FLAG	%d\n", m_Config.bShowLanguageFlag);
 	fprintf(fp, "\n");
 
 	fclose(fp);

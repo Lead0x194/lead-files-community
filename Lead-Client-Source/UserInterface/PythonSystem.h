@@ -75,6 +75,7 @@ class CPythonSystem : public CSingleton<CPythonSystem>
 			bool			bAlwaysShowName;
 			bool			bShowDamage;
 			bool			bShowSalesText;
+			bool			bShowLanguageFlag;
 		} TConfig;
 
 	public:
@@ -119,6 +120,8 @@ class CPythonSystem : public CSingleton<CPythonSystem>
 		void							SetAlwaysShowNameFlag(int iFlag);
 		void							SetShowDamageFlag(int iFlag);
 		void							SetShowSalesTextFlag(int iFlag);
+		bool							IsShowLanguageFlag();
+		void							SetShowLanguageFlag(int iFlag);
 
 		// Window
 		void							SaveWindowStatus(int iIndex, int iVisible, int iMinimized, int ix, int iy, int iHeight);
