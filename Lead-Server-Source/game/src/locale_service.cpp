@@ -16,7 +16,7 @@ extern set<string> 	g_setQuestObjectDir;
 string g_stServiceBasePath = "common";
 string g_stServiceMapPath = "common/map";
 
-string g_stLocale = "euckr";
+string g_stLocale = "utf8mb4";
 
 BYTE PK_PROTECT_LEVEL = 30;
 

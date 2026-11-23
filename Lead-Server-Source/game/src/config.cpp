@@ -431,8 +431,6 @@ static bool __LoadConnectionDetailConfigurations(const char *configName)
 
 	LocaleService_Init();
 
-	// locale information COMMON SQL Set it to .
-	// For reference g_stLocale The information is LocaleService_Init() It is set internally .
 	fprintf(stdout, "Setting DB to locale %s\n", g_stLocale.c_str());
 
 	AccountDB::instance().SetLocale(g_stLocale);
