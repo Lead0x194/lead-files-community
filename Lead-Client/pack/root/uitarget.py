@@ -36,6 +36,18 @@ class TargetBoard(ui.ThinBoard):
 				self.SetSize(width, 32 + 5)
 				self.baseTextY = 0 
 
+			def __GetImageX(self):
+				if localeInfo.IsRTL():
+					return self.GetWidth() - self.image.GetWidth()
+
+				return 0
+
+			def __GetTextX(self):
+				if localeInfo.IsRTL():
+					return self.GetWidth() - self.image.GetWidth() - 5
+
+				return self.image.GetWidth() + 5
+
 			def LoadImage(self, image, name = None):
 				self.image.LoadImage(image)
 				
@@ -45,12 +57,12 @@ class TargetBoard(ui.ThinBoard):
 				calculatedHeight = max(32, imgHeight) + 5
 				self.SetSize(self.GetWidth(), calculatedHeight)
 				
-				self.image.SetPosition(0, (calculatedHeight - imgHeight) / 2)
+				self.image.SetPosition(self.__GetImageX(), (calculatedHeight - imgHeight) / 2)
 				self.baseTextY = (calculatedHeight - 15) / 2
 				
 				if name != None:
 					self.SetText(name)
-					self.nameLine.SetPosition(imgWidth + 5, self.baseTextY)
+					self.nameLine.SetPosition(self.__GetTextX(), self.baseTextY)
 
 			def SetText(self, text):
 				self.nameLine.SetText(text)
@@ -68,13 +80,13 @@ class TargetBoard(ui.ThinBoard):
 					0.0, 
 					0.0 - float(self.removeBottom) / fullHeight
 				)
-				self.image.SetPosition(0, -self.removeTop)
+				self.image.SetPosition(self.__GetImageX(), -self.removeTop)
 				
 				if self.nameLine:
 					imgWidth = self.image.GetWidth()
 				
 					currentTextY = self.baseTextY - self.removeTop
-					self.nameLine.SetPosition(imgWidth + 5, currentTextY)
+					self.nameLine.SetPosition(self.__GetTextX(), currentTextY)
 
 					currentVisibleHeight = fullHeight - self.removeTop - self.removeBottom
 					textHeight = 15 

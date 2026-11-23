@@ -22,6 +22,7 @@ public:
 		float right;
 		float bottom;
 		float advance;
+		float inkOffset;
 	} TCharacterInfomation;
 
 	typedef std::vector<TCharacterInfomation*>		TPCharacterInfomationVector;

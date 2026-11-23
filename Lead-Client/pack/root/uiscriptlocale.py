@@ -6,8 +6,6 @@ AUTOBAN_QUIZ_REST_TIME = "REST_TIME"
 
 OPTION_SHADOW = "SHADOW"
 
-CODEPAGE = str(app.GetDefaultCodePage())
-
 #CUBE_TITLE = "Cube Window"
 
 def LoadLocaleFile(srcFileName, localeDict):

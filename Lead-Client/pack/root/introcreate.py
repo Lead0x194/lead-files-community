@@ -17,8 +17,6 @@ import playerSettingModule
 import uiScriptLocale
 import uiToolTip
 
-LOCALE_PATH = "uiscript/"+uiScriptLocale.CODEPAGE+"_"
-
 MAN			= 0
 WOMAN		= 1
 SHAPE0		= 0

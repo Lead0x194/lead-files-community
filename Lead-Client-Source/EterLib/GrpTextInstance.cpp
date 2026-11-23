@@ -619,7 +619,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 					}
 				}
 
-				fFontSx = fCurX - 0.5f;
+				fFontSx = fCurX - 0.5f - pCurCharInfo->inkOffset;
 				fFontSy = fCurY - 0.5f;
 				fFontEx = fFontSx + fFontWidth;
 				fFontEy = fFontSy + fFontHeight;
@@ -717,7 +717,7 @@ void CGraphicTextInstance::Render(RECT * pClipRect)
 				}
 			}
 
-			fFontSx = fCurX - 0.5f;
+			fFontSx = fCurX - 0.5f - pCurCharInfo->inkOffset;
 			fFontSy = fCurY - 0.5f;
 			fFontEx = fFontSx + fFontWidth;
 			fFontEy = fFontSy + fFontHeight;

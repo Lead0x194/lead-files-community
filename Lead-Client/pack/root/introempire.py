@@ -8,8 +8,6 @@ import _weakref
 import localeInfo
 import uiScriptLocale
 
-LOCALE_PATH = "uiscript/"+uiScriptLocale.CODEPAGE+"_"
-
 class SelectEmpireWindow(ui.ScriptWindow):
 
 	EMPIRE_DESCRIPTION_TEXT_FILE_NAME = {	
